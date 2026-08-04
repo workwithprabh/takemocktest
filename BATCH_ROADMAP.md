@@ -3,6 +3,11 @@
 This file is the source of truth for autonomous/scheduled batch work on this repo.
 Every agent run (scheduled or manual) should read this file FIRST, before touching any code.
 
+Also read `SEO_PLAYBOOK.md` before writing any user-facing copy, FAQ, or question bank —
+it covers the current Google algorithm/E-E-A-T/AEO landscape, the writing-voice guide, and
+the student persona this site is written for. Its §6 checklist is required reading before
+any content batch, alongside the QC checklist below.
+
 ## What this project is
 
 TakeMockTest (takemocktest.com) is a Next.js 15 static-export mock-test site for Indian
