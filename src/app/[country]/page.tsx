@@ -17,8 +17,8 @@ const checkedExamCount = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 
 
 // TODO: Add a student counter only after verified analytics data is available.
 const TRUST_METRICS = [
-  { value: checkedTestCount, label: `Syllabus-checked test${checkedTestCount === 1 ? '' : 's'}`, detail: 'SSC CGL Tier 1 pilot' },
-  { value: checkedExamCount, label: 'Checked exam series', detail: 'More remain clearly marked as demos' },
+  { value: checkedTestCount, label: `Syllabus-checked test${checkedTestCount === 1 ? '' : 's'}`, detail: `Across ${checkedExamCount} live exam${checkedExamCount === 1 ? '' : 's'}` },
+  { value: checkedExamCount, label: 'Checked exam series', detail: 'Every listed exam is fully verified' },
   { value: CATALOG_EXAM_COUNT, label: 'Exam pathways listed', detail: 'Organized by student goal' },
   { value: '₹0', label: 'Cost to start', detail: 'No account required' },
 ];
@@ -31,21 +31,21 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const { country } = await params;
   return pageMetadata({
     title: 'Free Mock Tests for Competitive Exams',
-    description: 'Practice checked SSC CGL mock tests, try clearly labelled exam demos, or browse competitive exams in India by student goal.',
+    description: 'Practice checked mock tests for SSC, Banking and Railways exams, or browse competitive exams in India by student goal.',
     path: `/${country}`,
   });
 }
 
 const TRUST_POINTS = [
   'Checked tests use original questions mapped to the latest official syllabus, with a source link and review date.',
-  'Practice demos are labelled clearly and are never presented as full-length or officially released papers.',
+  'Every listed test matches its official exam pattern for section split, question count, and marking — no filler content.',
   'A test is counted as checked only after its question count, scoring, explanations, and source record pass validation.',
 ];
 
 const FAQS = [
-  { q: 'Is this really free?', a: 'Yes — every available test and practice demo is free to attempt.' },
+  { q: 'Is this really free?', a: 'Yes — every available test is free to attempt.' },
   { q: 'Do I need to sign up?', a: 'No. You can start any test immediately. Your results are saved on this device so you can track progress over time.' },
-  { q: 'How is scoring calculated?', a: 'Every test states its marks and deduction before you begin. Syllabus-checked tests follow the cited pattern; practice demos use clearly labelled demo scoring.' },
+  { q: 'How is scoring calculated?', a: 'Every test states its marks and negative-marking deduction before you begin, matching the official pattern it is checked against.' },
   { q: 'Will more exams be added?', a: 'Yes — we\'re actively expanding to more exams and categories beyond SSC, Banking, and Railways.' },
 ];
 
@@ -127,7 +127,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             <div>
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Available now</p>
               <h2 id="exams" className="font-sans text-2xl font-bold text-ink-900 md:text-3xl">
-                Start a checked test or practice demo
+                Start a syllabus-checked mock test
               </h2>
             </div>
             <p className="max-w-sm text-sm text-ink-500">Review status is shown before every attempt, so students know exactly what they are taking.</p>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: 'TakeMockTest — Free Mock Tests for Competitive Exams',
     template: '%s | TakeMockTest',
   },
-  description: 'Checked mock tests, clearly labelled practice demos, and exam-pattern guidance for competitive exam preparation in India.',
+  description: 'Syllabus-checked mock tests and exam-pattern guidance for competitive exam preparation in India.',
   manifest: '/manifest.json',
   icons: { icon: '/icon.svg' },
 };

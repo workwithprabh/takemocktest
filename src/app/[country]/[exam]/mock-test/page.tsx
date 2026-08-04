@@ -27,9 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
 }
 
 const FAQS = [
-  { q: 'Are these tests really free?', a: 'Yes — every available test and practice demo can be attempted without creating an account.' },
+  { q: 'Are these tests really free?', a: 'Yes — every available test can be attempted without creating an account.' },
   { q: 'What does syllabus-checked mean?', a: 'Its syllabus, scoring settings, question count, answer key, explanations, and source record passed the current review gate.' },
-  { q: 'What is a practice demo?', a: 'It is a small interface practice set, not a full mock or previous-year paper. Demo scoring is shown before it starts.' },
+  { q: 'How is scoring calculated?', a: 'Each test shows its marks per question and negative-marking deduction before you begin, matching the official pattern it is checked against.' },
 ];
 
 export default async function MockTestPage({ params }: { params: Promise<{ country: string; exam: string }> }) {
@@ -74,7 +74,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
           ]} />
           <h1 className="font-sans font-bold text-2xl md:text-3xl mb-2 text-ink-900">{exam.name} Mock Test {YEAR}</h1>
           <p className="text-ink-500 text-sm md:text-base max-w-xl">
-            Attempt checked full mocks and sectional tests, plus clearly labelled practice demos — no login required, with
+            Attempt checked full mocks, sectional tests, and quick timed practice — no login required, with
             instant results after every attempt.
           </p>
         </div>

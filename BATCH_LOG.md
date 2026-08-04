@@ -30,3 +30,26 @@ gap from Batch 9: SSC MTS's full mock had never gotten a `FULL_MOCK_FAQS` entry 
 alongside this batch's own FAQ entry.
 
 **Batch roadmap checkbox:** ticked in the same commit.
+
+## 2026-08-04 — Stale "practice demo" copy fix (quality-audit follow-up, live session)
+
+A full-site quality audit found that homepage and every exam mock-test hub page still
+referenced a "practice demo" content tier (FAQ answers, hero copy, trust metrics, meta
+descriptions). Root cause: the 3 legacy `kind:'practice', status:'demo'` scaffold entries
+were removed from all exams in earlier batches, and the batch workflow never creates new
+demo placeholders — so the copy had gone stale describing a feature that no longer exists
+anywhere on the live site.
+
+**Fixed** (real, user-visible copy only — left untouched the dormant per-status fallback
+branches in `TestRow.tsx`, `ExamCard.tsx`, and `test/[testId]/page.tsx`, which only render
+if a test's `status` is ever non-`'checked'` again — currently unreachable but harmless):
+- `src/app/layout.tsx` — default meta description.
+- `src/app/[country]/page.tsx` — hero heading, trust-metric details (now dynamically
+  reflect the live exam count instead of a hardcoded "SSC CGL Tier 1 pilot"), trust points,
+  FAQ answers, meta description.
+- `src/app/[country]/[exam]/mock-test/page.tsx` — hero paragraph, FAQ entries (swapped the
+  now-moot "What is a practice demo?" for a scoring-explainer FAQ).
+
+**Verified:** `npm run build` clean static export; browser walkthrough of the homepage and
+the IBPS RRB Office Assistant mock-test hub confirmed the new copy renders correctly and no
+"practice demo" string remains reachable in the live UI.
