@@ -23,7 +23,7 @@ in `src/lib/exams.ts` — the two must always match after your batch (a stale bu
 otherwise).
 
 **Live as of 2026-08-04:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
-rrb-group-d, sbi-po, rbi-assistant (9 exams).
+rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant (10 exams).
 
 ## The queue (Government Jobs cluster, in order)
 
@@ -32,7 +32,7 @@ skip ahead unless an exam turns out to be unsuitable for an MCQ mock test (see n
 in that case, leave a one-line note next to it in this file explaining why, and move to the
 next one in the same run.
 
-- [ ] IBPS RRB Office Assistant
+- [x] IBPS RRB Office Assistant
 - [ ] SSC GD Constable
 - [ ] IBPS RRB Officer Scale I
 - [ ] SBI Clerk

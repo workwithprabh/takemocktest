@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -48,7 +48,8 @@ for (const { file, questions } of banks) {
     : file.startsWith('rbi-assistant-prelims-english-language-') ? 30
     : file.startsWith('rbi-assistant-prelims-') ? 35
     : file.startsWith('ssc-mts-cbt-general-awareness-') || file.startsWith('ssc-mts-cbt-english-language-comprehension-') ? 25
-    : file.startsWith('ssc-mts-cbt-') ? 20 : 25;
+    : file.startsWith('ssc-mts-cbt-') ? 20
+    : file.startsWith('ibps-rrb-office-assistant-prelims-') ? 40 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

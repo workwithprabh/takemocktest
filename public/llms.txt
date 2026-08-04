@@ -15,6 +15,7 @@ Every checked question includes a source record (official notification/syllabus 
 - [SBI PO](https://takemocktest.com/in/sbi-po/mock-test): Prelims (1 full mock + 3 sectional tests), 20-minute sectional timers, qualifying stage only — Mains marks decide the final merit list
 - [RBI Assistant](https://takemocktest.com/in/rbi-assistant/mock-test): Prelims (1 full mock + 3 sectional tests), 20-minute sectional timers, qualifying stage only — Mains marks decide the final merit list
 - [SSC MTS & Havaldar](https://takemocktest.com/in/ssc-mts/mock-test): CBT (1 full mock + 4 sectional tests + 2 quick timed tests), two-session format — no negative marking in Session 1 (Numerical/Reasoning), 1 mark deducted per wrong answer in Session 2 (General Awareness/English)
+- [IBPS RRB Office Assistant](https://takemocktest.com/in/ibps-rrb-office-assistant/mock-test): Prelims (1 full mock + 2 sectional tests + 2 quick timed tests), single 45-minute combined timer (no sectional lock), qualifying stage only — Mains marks decide the final merit list
 
 ## Exam information pages
 

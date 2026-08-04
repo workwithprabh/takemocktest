@@ -7,7 +7,8 @@ export type ExamSlug =
   | 'rrb-group-d'
   | 'sbi-po'
   | 'rbi-assistant'
-  | 'ssc-mts';
+  | 'ssc-mts'
+  | 'ibps-rrb-office-assistant';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -75,6 +76,7 @@ const RBI_ASSISTANT_2026_NOTICE =
   'https://website.rbi.org.in/web/rbi/-/recruitment-for-the-post-of-assistant-panel-year-2025-in-reserve-bank-of-india';
 const SSC_MTS_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_mts_03082026.pdf';
+const IBPS_RRB_XIV_NOTICE = 'https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD-27.09.25.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -1630,6 +1632,100 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             checkedOn: '4 August 2026',
           },
         ],
+      },
+    ],
+  },
+  'ibps-rrb-office-assistant': {
+    slug: 'ibps-rrb-office-assistant',
+    name: 'IBPS RRB Office Assistant',
+    fullName: 'IBPS Common Recruitment Process for Regional Rural Banks — Office Assistant (Multipurpose)',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'prelims',
+        name: 'Prelims',
+        pattern: {
+          status: 'official',
+          cycle: 'CRP RRBs XIV',
+          sections: ['Reasoning', 'Numerical Ability'],
+          totalQuestions: 80,
+          totalMarks: 80,
+          duration: 45,
+          negativeMarking: 0.25,
+          timerNote: 'Composite 45 minutes for both sections combined — no sectional lock',
+          note: 'Candidates must clear both the sectional and overall cut-offs. Prelims marks are used only for shortlisting; the final merit list is decided by Mains.',
+          sectionBreakdown: [
+            { name: 'Reasoning', questions: 40, marks: 40, duration: 25 },
+            { name: 'Numerical Ability', questions: 40, marks: 40, duration: 20 },
+          ],
+          sourceUrl: IBPS_RRB_XIV_NOTICE,
+          checkedOn: '4 August 2026',
+        },
+        tests: [
+          {
+            id: 'prelims-full-mock-1',
+            name: 'Prelims Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 45,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            scoringNote: 'Both sections share one combined 45-minute timer — there is no sectional lock, unlike SBI PO or IBPS PO.',
+            checkedOn: '4 August 2026',
+          },
+          {
+            id: 'prelims-reasoning-sectional-1',
+            name: 'Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '4 August 2026',
+          },
+          {
+            id: 'prelims-numerical-ability-sectional-1',
+            name: 'Numerical Ability Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Numerical Ability',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '4 August 2026',
+          },
+          {
+            id: 'prelims-quick-10min',
+            name: 'Quick Test — 10 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 10,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '4 August 2026',
+          },
+          {
+            id: 'prelims-quick-15min',
+            name: 'Quick Test — 15 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 15,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '4 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'mains',
+        name: 'Mains',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Mains pattern is under review before this stage is published.',
+        },
+        tests: [],
       },
     ],
   },

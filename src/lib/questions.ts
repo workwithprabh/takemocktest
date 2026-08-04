@@ -57,6 +57,8 @@ import { SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1 } from './question-banks/s
 import { SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1 } from './question-banks/ssc-mts-cbt-reasoning-ability-problem-solving-1';
 import { SSC_MTS_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-mts-cbt-general-awareness-1';
 import { SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-mts-cbt-english-language-comprehension-1';
+import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-rrb-office-assistant-prelims-numerical-ability-1';
+import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-office-assistant-prelims-reasoning-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -245,6 +247,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-mts/cbt-reasoning-ability-sectional-1': SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1,
   'ssc-mts/cbt-general-awareness-sectional-1': SSC_MTS_CBT_GENERAL_AWARENESS_1,
   'ssc-mts/cbt-english-language-comprehension-sectional-1': SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1,
+  'ibps-rrb-office-assistant/prelims-full-mock-1': [
+    ...IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1,
+    ...IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
+  ],
+  'ibps-rrb-office-assistant/prelims-reasoning-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1,
+  'ibps-rrb-office-assistant/prelims-numerical-ability-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -339,8 +347,21 @@ const SSC_MTS_CBT_QUICK_TESTS: Record<string, Question[]> = {
   'ssc-mts/cbt-quick-15min': sscMtsQuickSlice(3, 2),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS);
-const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-'];
+const IBPS_RRB_OA_PRELIMS_POOLS: Record<string, Question[]> = {
+  'Reasoning': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1,
+  'Numerical Ability': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
+};
+const IBPS_RRB_OA_SECTION_ORDER = Object.keys(IBPS_RRB_OA_PRELIMS_POOLS);
+function ibpsRrbOaQuickSlice(perSection: number, offset: number): Question[] {
+  return IBPS_RRB_OA_SECTION_ORDER.flatMap((section) => IBPS_RRB_OA_PRELIMS_POOLS[section].slice(offset, offset + perSection));
+}
+const IBPS_RRB_OA_QUICK_TESTS: Record<string, Question[]> = {
+  'ibps-rrb-office-assistant/prelims-quick-10min': ibpsRrbOaQuickSlice(5, 0),
+  'ibps-rrb-office-assistant/prelims-quick-15min': ibpsRrbOaQuickSlice(8, 5),
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS);
+const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
   const isGenerated = GENERATED_TEST_ID_MARKERS.some((marker) => testId.includes(marker));
@@ -350,6 +371,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 90
     : testId.includes('ssc-mts')
       ? testId.includes('general-awareness') || testId.includes('english-language-comprehension') ? 25 : 20
+    : testId.includes('ibps-rrb-office-assistant/prelims-full-mock')
+    ? 80
+    : testId.includes('ibps-rrb-office-assistant')
+      ? 40
     : testId.includes('ibps-po/mains-full-mock')
     ? 170
     : testId.includes('tier-2-paper-1-objective-full-mock')
@@ -458,6 +483,10 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Reasoning Ability and Problem Solving', count: 20 },
     { section: 'General Awareness', count: 25 },
     { section: 'English Language and Comprehension', count: 25 },
+  ],
+  'ibps-rrb-office-assistant': [
+    { section: 'Reasoning', count: 40 },
+    { section: 'Numerical Ability', count: 40 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -649,5 +678,15 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'Which planet is known as the Red Planet?', options: ['Venus', 'Mars', 'Jupiter', 'Saturn'], correctIndex: 1, explanation: 'Mars is known as the Red Planet due to its reddish appearance.' },
     // English Language and Comprehension
     { section: 'English Language and Comprehension', question: 'Choose the correct synonym for "Brave".', options: ['Fearful', 'Courageous', 'Weak', 'Shy'], correctIndex: 1, explanation: '"Brave" means having courage, closest in meaning to "Courageous".' },
+  ],
+  'ibps-rrb-office-assistant': [
+    // Reasoning
+    { section: 'Reasoning', question: 'Complete the series: 2, 4, 8, 16, ?', options: ['20', '24', '28', '32'], correctIndex: 3, explanation: 'Each term is double the previous term: 16 × 2 = 32.' },
+    { section: 'Reasoning', question: 'Find the odd one out.', options: ['Cheque', 'Draft', 'Passbook', 'Banana'], correctIndex: 3, explanation: 'Cheque, Draft, and Passbook are banking documents; Banana is unrelated.' },
+    { section: 'Reasoning', question: '"Branch is to Bank as Classroom is to ___?"', options: ['Teacher', 'School', 'Student', 'Book'], correctIndex: 1, explanation: 'A branch is a unit of a bank; similarly, a classroom is a unit of a school.' },
+    // Numerical Ability
+    { section: 'Numerical Ability', question: 'What is 30% of 400?', options: ['110', '115', '120', '125'], correctIndex: 2, explanation: '30% of 400 = (30/100) × 400 = 120.' },
+    { section: 'Numerical Ability', question: 'What is the value of 7² + 6²?', options: ['80', '85', '90', '95'], correctIndex: 1, explanation: '49 + 36 = 85.' },
+    { section: 'Numerical Ability', question: 'A sum of ₹4,000 earns simple interest of ₹480 in 2 years. What is the rate of interest?', options: ['5%', '6%', '7%', '8%'], correctIndex: 1, explanation: 'Rate = (SI × 100) / (P × T) = (480 × 100) / (4000 × 2) = 6%.' },
   ],
 };

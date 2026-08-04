@@ -217,6 +217,48 @@ const RBI_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_MTS_CBT_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SSC MTS & Havaldar syllabus and pattern.',
+  },
+  {
+    question: 'How does the negative marking work?',
+    answer: 'SSC MTS has a two-session structure. Session 1 (Numerical and Mathematical Ability, Reasoning Ability and Problem Solving) has no negative marking. Session 2 (General Awareness, English Language and Comprehension) deducts 1 mark for each wrong answer. This mock combines both sessions under one continuous timer for practice; the real exam runs them as two separately timed sessions.',
+  },
+  {
+    question: 'Do Prelims marks count towards the final merit list?',
+    answer: 'Only candidates who qualify Session 1 have Session 2 evaluated, and both sessions together decide shortlisting for the Physical Efficiency Test (Havaldar) or final selection (MTS) — there is no separate Mains stage.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
+const IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official IBPS question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official IBPS RRB Office Assistant (Multipurpose) Prelims syllabus and pattern.',
+  },
+  {
+    question: 'Do Prelims marks count towards the final merit list?',
+    answer: 'No. IBPS RRB Office Assistant Prelims is qualifying in nature — candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains.',
+  },
+  {
+    question: 'How does the timer work?',
+    answer: 'Both sections (Reasoning and Numerical Ability) share one combined 45-minute timer — there is no sectional lock, unlike SBI PO or IBPS PO Prelims. You can move freely between questions from either section.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -226,6 +268,8 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rrb-group-d/cbt': RRB_GROUP_D_CBT_FULL_MOCK_FAQS,
   'sbi-po/prelims': SBI_PO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-assistant/prelims': RBI_ASSISTANT_PRELIMS_FULL_MOCK_FAQS,
+  'ssc-mts/cbt': SSC_MTS_CBT_FULL_MOCK_FAQS,
+  'ibps-rrb-office-assistant/prelims': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
