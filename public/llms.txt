@@ -1,0 +1,35 @@
+# TakeMockTest
+
+> TakeMockTest is a free, no-login mock-test platform for Indian competitive exam aspirants. It offers syllabus-checked practice tests with instant scoring, negative marking, section-wise and topic-wise result analysis, and a growing catalog of ~180 Indian competitive exams (government jobs, engineering, medical, banking, defence, teaching, and more).
+
+Every checked question includes a source record (official notification/syllabus reference, URL, and the date it was verified) — no fabricated or "leaked paper" claims. Results and progress are stored only on the visitor's own device (localStorage); there is no account system and no server-side tracking of attempts.
+
+## Mock tests with live, syllabus-checked content
+
+- [SSC CGL](https://takemocktest.com/in/ssc-cgl/mock-test): Tier 1 (3 full mocks, sectional tests, plus quick timed tests, difficulty-tiered practice, and topic drills — 45 tests total) and Tier 2 Paper 1 Objective (3 full mocks + sectional tests)
+- [SSC CHSL](https://takemocktest.com/in/ssc-chsl/mock-test): Tier 1 (1 full mock + 4 sectional tests), single 60-minute combined timer, qualifying stage only
+- [IBPS PO](https://takemocktest.com/in/ibps-po/mock-test): Prelims (1 full mock + sectional tests) and Mains (1 full mock covering the 170 objective questions + 4 sectional tests; the Descriptive Paper is excluded as it is not multiple-choice)
+- [IBPS Clerk](https://takemocktest.com/in/ibps-clerk/mock-test): Prelims (1 full mock + 3 sectional tests), 20-minute sectional timers, qualifying stage only — Mains marks decide the final merit list
+- [RRB NTPC](https://takemocktest.com/in/rrb-ntpc/mock-test): CBT 1 (1 full mock + 3 sectional tests), single 90-minute combined timer, qualifying stage only
+- [RRB Group D](https://takemocktest.com/in/rrb-group-d/mock-test): CBT (1 full mock + 4 sectional tests), single 90-minute combined timer, followed by a non-written Physical Efficiency Test
+- [SBI PO](https://takemocktest.com/in/sbi-po/mock-test): Prelims (1 full mock + 3 sectional tests), 20-minute sectional timers, qualifying stage only — Mains marks decide the final merit list
+- [RBI Assistant](https://takemocktest.com/in/rbi-assistant/mock-test): Prelims (1 full mock + 3 sectional tests), 20-minute sectional timers, qualifying stage only — Mains marks decide the final merit list
+- [SSC MTS & Havaldar](https://takemocktest.com/in/ssc-mts/mock-test): CBT (1 full mock + 4 sectional tests + 2 quick timed tests), two-session format — no negative marking in Session 1 (Numerical/Reasoning), 1 mark deducted per wrong answer in Session 2 (General Awareness/English)
+
+## Exam information pages
+
+Each of the exams above also has dedicated pages for exam pattern, syllabus, eligibility, selection process, admit card, answer key, result, cutoff, salary, and previous year papers, e.g. [SSC CGL exam pattern](https://takemocktest.com/in/ssc-cgl/exam-pattern).
+
+## Exam catalog
+
+[Browse all ~180 exams by category](https://takemocktest.com/in/exams) — Government Jobs, Engineering, Medical, Study Abroad, Management, University & Science, Defence, Law, Teaching, Commerce, and Design/Hospitality. Most catalog entries link to official government sources; only the exams listed above currently have live mock tests on this site.
+
+## Study resources
+
+[Blog](https://takemocktest.com/in/blog): original, evergreen exam-prep articles — building a study timetable, common SSC CGL mistakes, how negative marking works, exam-time time management, analyzing your mock-test performance, and choosing between IBPS PO and SSC CGL.
+
+## Other
+
+- [About](https://takemocktest.com/in/about)
+- [Privacy policy](https://takemocktest.com/in/privacy)
+- [Terms](https://takemocktest.com/in/terms)

@@ -1,0 +1,591 @@
+'use client';
+
+import { useEffect, useMemo, useRef, useState } from 'react';
+import Link from 'next/link';
+import OMRBubble from '@/components/OMRBubble';
+import ResultDetail from '@/components/ResultDetail';
+import type { Question } from '@/lib/questions';
+import {
+  AttemptResult,
+  QuestionResult,
+  clearAttemptDraft,
+  getAttemptDraft,
+  makeAttemptId,
+  saveAttempt,
+  saveAttemptDraft,
+} from '@/lib/attempts';
+
+type PaletteStatus = 'current' | 'answered' | 'markedAnswered' | 'marked' | 'notAnswered' | 'notVisited';
+
+function formatClock(sec: number) {
+  const m = Math.floor(sec / 60).toString().padStart(2, '0');
+  const s = Math.floor(sec % 60).toString().padStart(2, '0');
+  return `${m}:${s}`;
+}
+
+function ConfirmDialog({
+  open,
+  title,
+  onClose,
+  children,
+}: {
+  open: boolean;
+  title: string;
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
+  const ref = useRef<HTMLDialogElement>(null);
+
+  useEffect(() => {
+    const dialog = ref.current;
+    if (!dialog) return;
+    if (open && !dialog.open) dialog.showModal();
+    if (!open && dialog.open) dialog.close();
+  }, [open]);
+
+  return (
+    <dialog
+      ref={ref}
+      aria-labelledby={`${title.replaceAll(' ', '-').toLowerCase()}-title`}
+      onClose={onClose}
+      className="m-auto w-[calc(100%-2.5rem)] max-w-sm bg-white p-6 text-ink-900 backdrop:bg-ink-900/50"
+    >
+      <h2 id={`${title.replaceAll(' ', '-').toLowerCase()}-title`} className="mb-2 text-lg font-bold">
+        {title}
+      </h2>
+      {children}
+    </dialog>
+  );
+}
+
+export default function TestAttemptClient({
+  country,
+  examSlug,
+  examName,
+  duration,
+  sectionDuration,
+  sectionDurations,
+  marksPerCorrect,
+  negativeMarking,
+  testId,
+  testName,
+  questions,
+}: {
+  country: string;
+  examSlug: string;
+  examName: string;
+  duration: number;
+  sectionDuration?: number;
+  sectionDurations?: number[];
+  marksPerCorrect: number;
+  negativeMarking: number;
+  testId: string;
+  testName: string;
+  questions: Question[];
+}) {
+  const sections = useMemo(() => [...new Set(questions.map((question) => question.section))], [questions]);
+  const usesSectionTimer = Boolean((sectionDuration || sectionDurations?.length) && sections.length > 1);
+  const getSectionDuration = (sectionIndex: number) =>
+    sectionDurations?.[sectionIndex] ?? sectionDuration ?? duration;
+
+  const [phase, setPhase] = useState<'in-progress' | 'submitted'>('in-progress');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeSectionIndex, setActiveSectionIndex] = useState(0);
+  const [answers, setAnswers] = useState<(number | null)[]>(() => questions.map(() => null));
+  const [visited, setVisited] = useState<boolean[]>(() => questions.map((_, i) => i === 0));
+  const [marked, setMarked] = useState<boolean[]>(() => questions.map(() => false));
+  const [timeLeft, setTimeLeft] = useState(getSectionDuration(0) * 60);
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const [exitOpen, setExitOpen] = useState(false);
+  const [paletteOpen, setPaletteOpen] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+  const [result, setResult] = useState<AttemptResult | null>(null);
+  const submittedRef = useRef(false);
+  const answersRef = useRef(answers);
+  const activeSectionRef = useRef(0);
+  const elapsedRef = useRef(0);
+  const currentIndexRef = useRef(0);
+  const timeSpentRef = useRef(questions.map(() => 0));
+
+  useEffect(() => {
+    answersRef.current = answers;
+  }, [answers]);
+
+  const handleSubmit = () => {
+    if (submittedRef.current) return;
+    submittedRef.current = true;
+
+    let correct = 0;
+    let wrong = 0;
+    let unattempted = 0;
+    let score = 0;
+    let maxScore = 0;
+    const questionResults: QuestionResult[] = questions.map((q, i) => {
+      const selected = answersRef.current[i];
+      const questionMarks = q.marks ?? marksPerCorrect;
+      const penalty = q.negativeMarking ?? negativeMarking;
+      let questionScore = 0;
+      maxScore += questionMarks;
+      if (selected === null || selected === undefined) {
+        unattempted++;
+      } else if (selected === q.correctIndex) {
+        correct++;
+        questionScore = questionMarks;
+      } else {
+        wrong++;
+        questionScore = -penalty;
+      }
+      score += questionScore;
+      return {
+        id: q.id,
+        section: q.section,
+        topic: q.topic,
+        difficulty: q.difficulty,
+        question: q.question,
+        options: q.options,
+        correctIndex: q.correctIndex,
+        selectedIndex: selected ?? null,
+        marks: questionMarks,
+        score: questionScore,
+        timeSpentSec: timeSpentRef.current[i],
+        explanation: q.explanation,
+        source: q.source,
+      };
+    });
+
+    const attempt: AttemptResult = {
+      id: makeAttemptId(),
+      examSlug,
+      testId,
+      testName,
+      examName,
+      correct,
+      wrong,
+      unattempted,
+      totalQuestions: questions.length,
+      score: Number(score.toFixed(4)),
+      maxScore: Number(maxScore.toFixed(4)),
+      timeTakenSec: elapsedRef.current,
+      submittedAt: new Date().toISOString(),
+      questions: questionResults,
+    };
+    saveAttempt(attempt);
+    clearAttemptDraft(examSlug, testId);
+    setResult(attempt);
+    setConfirmOpen(false);
+    setPhase('submitted');
+  };
+
+  useEffect(() => {
+    const draft = getAttemptDraft(examSlug, testId);
+    const valid =
+      draft &&
+      draft.answers.length === questions.length &&
+      draft.visited.length === questions.length &&
+      draft.marked.length === questions.length &&
+      draft.timeSpentSec.length === questions.length;
+
+    if (valid) {
+      const offlineSeconds = Math.max(0, Math.floor((Date.now() - draft.savedAt) / 1000));
+      let nextSection = draft.activeSectionIndex;
+      let nextTimeLeft = draft.timeLeft - offlineSeconds;
+
+      if (usesSectionTimer) {
+        while (nextTimeLeft <= 0 && nextSection < sections.length - 1) {
+          nextSection += 1;
+          nextTimeLeft += getSectionDuration(nextSection) * 60;
+        }
+      }
+
+      const nextIndex =
+        nextSection === draft.activeSectionIndex
+          ? draft.currentIndex
+          : questions.findIndex((question) => question.section === sections[nextSection]);
+
+      answersRef.current = draft.answers;
+      activeSectionRef.current = nextSection;
+      currentIndexRef.current = Math.max(0, nextIndex);
+      elapsedRef.current = draft.elapsedSec + offlineSeconds;
+      timeSpentRef.current = draft.timeSpentSec;
+      setAnswers(draft.answers);
+      setVisited(draft.visited.map((wasVisited, index) => wasVisited || index === nextIndex));
+      setMarked(draft.marked);
+      setActiveSectionIndex(nextSection);
+      setCurrentIndex(Math.max(0, nextIndex));
+      setTimeLeft(Math.max(0, nextTimeLeft));
+
+      if (nextTimeLeft <= 0) {
+        setHydrated(true);
+        setTimeout(handleSubmit, 0);
+        return;
+      }
+    }
+
+    setHydrated(true);
+    // The test identity and question count are stable for the page lifetime.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated || phase !== 'in-progress') return;
+    saveAttemptDraft(examSlug, testId, {
+      answers,
+      visited,
+      marked,
+      currentIndex,
+      activeSectionIndex,
+      timeLeft,
+      elapsedSec: elapsedRef.current,
+      timeSpentSec: timeSpentRef.current,
+      savedAt: Date.now(),
+    });
+  }, [
+    activeSectionIndex,
+    answers,
+    currentIndex,
+    examSlug,
+    hydrated,
+    marked,
+    phase,
+    testId,
+    timeLeft,
+    visited,
+  ]);
+
+  useEffect(() => {
+    if (!hydrated || phase !== 'in-progress') return;
+    const warnBeforeLeaving = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    window.addEventListener('beforeunload', warnBeforeLeaving);
+    return () => window.removeEventListener('beforeunload', warnBeforeLeaving);
+  }, [hydrated, phase]);
+
+  useEffect(() => {
+    if (!hydrated || phase !== 'in-progress') return;
+    const interval = setInterval(() => {
+      elapsedRef.current += 1;
+      timeSpentRef.current[currentIndexRef.current] += 1;
+      setTimeLeft((t) => {
+        if (t <= 1) {
+          if (usesSectionTimer && activeSectionRef.current < sections.length - 1) {
+            const nextSection = activeSectionRef.current + 1;
+            const nextQuestion = questions.findIndex(
+              (question) => question.section === sections[nextSection],
+            );
+            activeSectionRef.current = nextSection;
+            currentIndexRef.current = nextQuestion;
+            setActiveSectionIndex(nextSection);
+            setCurrentIndex(nextQuestion);
+            setVisited((visitedQuestions) =>
+              visitedQuestions.map((visitedQuestion, index) =>
+                index === nextQuestion ? true : visitedQuestion,
+              ),
+            );
+            return getSectionDuration(nextSection) * 60;
+          }
+          clearInterval(interval);
+          handleSubmit();
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hydrated, phase]);
+
+  const retake = () => {
+    submittedRef.current = false;
+    setAnswers(questions.map(() => null));
+    setVisited(questions.map((_, i) => i === 0));
+    setMarked(questions.map(() => false));
+    setTimeLeft(getSectionDuration(0) * 60);
+    setActiveSectionIndex(0);
+    activeSectionRef.current = 0;
+    elapsedRef.current = 0;
+    currentIndexRef.current = 0;
+    timeSpentRef.current = questions.map(() => 0);
+    setCurrentIndex(0);
+    setResult(null);
+    clearAttemptDraft(examSlug, testId);
+    setPhase('in-progress');
+  };
+
+  if (!hydrated) {
+    return (
+      <div data-test-attempt className="mx-auto max-w-3xl px-5 py-8">
+        <h1 className="text-lg font-bold text-ink-900">Preparing your test…</h1>
+        <p className="mt-2 text-sm text-ink-500">Restoring any progress saved on this device.</p>
+      </div>
+    );
+  }
+
+  if (phase === 'submitted' && result) {
+    return (
+      <div className="max-w-3xl mx-auto px-5 py-6">
+        <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">{testName} — Results</h1>
+        <p className="text-ink-500 text-sm mb-6">{examName}</p>
+        <ResultDetail
+          attempt={result}
+          actions={
+            <>
+              <button
+                onClick={retake}
+                className="bg-ink-900 text-white text-sm font-semibold px-4 py-2.5 hover:bg-ink-700 transition"
+              >
+                Retake test
+              </button>
+              <Link
+                href={`/${country}/${examSlug}/mock-test`}
+                className="border border-ink-200 text-ink-900 text-sm font-semibold px-4 py-2.5 hover:border-ink-900 transition"
+              >
+                Back to mock tests
+              </Link>
+              <Link
+                href={`/${country}/results`}
+                className="border border-ink-200 text-ink-900 text-sm font-semibold px-4 py-2.5 hover:border-ink-900 transition"
+              >
+                View all results
+              </Link>
+            </>
+          }
+        />
+      </div>
+    );
+  }
+
+  const q = questions[currentIndex];
+  const activeSection = sections[activeSectionIndex] ?? q.section;
+  const activeQuestionIndices = questions.flatMap((question, index) =>
+    question.section === activeSection ? [index] : [],
+  );
+  const sectionStart = activeQuestionIndices[0] ?? 0;
+  const sectionEnd = activeQuestionIndices.at(-1) ?? questions.length - 1;
+  const attemptedCount = answers.filter((a) => a !== null).length;
+  const attemptedInSection = activeQuestionIndices.filter((index) => answers[index] !== null).length;
+  const markedCount = marked.filter(Boolean).length;
+
+  const goTo = (index: number) => {
+    if (usesSectionTimer && questions[index]?.section !== activeSection) return;
+    currentIndexRef.current = index;
+    setCurrentIndex(index);
+    setVisited((v) => v.map((val, i) => (i === index ? true : val)));
+  };
+
+  const paletteStatus = (i: number): PaletteStatus => {
+    if (i === currentIndex) return 'current';
+    if (marked[i] && answers[i] !== null) return 'markedAnswered';
+    if (marked[i]) return 'marked';
+    if (answers[i] !== null) return 'answered';
+    if (visited[i]) return 'notAnswered';
+    return 'notVisited';
+  };
+
+  // Monochrome tone ramp stands in for color-coding: darker/filled = more
+  // "done", outlined = visited-but-skipped, faint = untouched.
+  const paletteClasses: Record<PaletteStatus, string> = {
+    current: 'bg-ink-900 text-white border-ink-900',
+    answered: 'bg-ink-700 text-white border-ink-700',
+    markedAnswered: 'bg-ink-500 text-white border-ink-500',
+    marked: 'bg-ink-300 text-ink-900 border-ink-300',
+    notAnswered: 'bg-white text-ink-900 border-ink-900',
+    notVisited: 'bg-white text-ink-500 border-ink-200',
+  };
+
+  return (
+    <div data-test-attempt className="max-w-5xl mx-auto px-5 py-4">
+      <div className="sticky top-0 z-20 mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-ink-200 bg-ink-50/95 py-3 backdrop-blur">
+        <div className="min-w-0 flex-1">
+          <h1 className="font-sans font-bold text-base text-ink-900">{testName}</h1>
+          <p className="text-xs text-ink-500">{examName} · Progress saved on this device</p>
+        </div>
+        <div
+          aria-label={`${usesSectionTimer ? `Section ${activeSectionIndex + 1} of ${sections.length}, ` : ''}${formatClock(timeLeft)} remaining`}
+          className={`min-h-11 px-3 py-2 font-mono text-sm font-semibold ${
+            timeLeft <= 120 ? 'bg-ink-900 text-white' : 'bg-ink-100 text-ink-700'
+          }`}
+        >
+          {usesSectionTimer && (
+            <span className="mr-2 font-sans text-[10px] uppercase tracking-wide">
+              Section {activeSectionIndex + 1}/{sections.length}
+            </span>
+          )}
+          {formatClock(timeLeft)}
+        </div>
+        <div className="flex w-full gap-2 sm:w-auto">
+          <button
+            onClick={() => setExitOpen(true)}
+            className="min-h-11 flex-1 border border-ink-200 px-4 text-xs font-semibold text-ink-900 transition hover:border-ink-900 sm:flex-none"
+          >
+            Exit test
+          </button>
+          <button
+            onClick={() => setConfirmOpen(true)}
+            className="min-h-11 flex-1 bg-ink-900 px-4 text-xs font-semibold text-white transition hover:bg-ink-700 sm:flex-none"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex-1">
+          <div className="bg-white border border-ink-200 p-5">
+              <div className="text-xs font-semibold uppercase tracking-wide text-ink-500 mb-2">{q.section}</div>
+              <div id="current-question" className="text-sm font-medium mb-4 text-ink-900">
+                {currentIndex + 1}. {q.question}
+              </div>
+              <div role="radiogroup" aria-labelledby="current-question">
+                {q.options.map((opt, oi) => (
+                  <OMRBubble
+                    key={oi}
+                    letter={String.fromCharCode(65 + oi)}
+                    label={opt}
+                    selected={answers[currentIndex] === oi}
+                    onSelect={() =>
+                      setAnswers((a) => a.map((val, i) => (i === currentIndex ? oi : val)))
+                    }
+                  />
+                ))}
+              </div>
+          </div>
+
+          <div className="flex flex-wrap gap-2 mt-4">
+            <button
+              disabled={currentIndex === sectionStart}
+              onClick={() => goTo(currentIndex - 1)}
+              className="min-h-11 border border-ink-200 px-3.5 text-xs font-semibold text-ink-900 transition hover:border-ink-900 disabled:opacity-40"
+            >
+              Previous
+            </button>
+            <button
+              onClick={() => setAnswers((a) => a.map((val, i) => (i === currentIndex ? null : val)))}
+              className="min-h-11 border border-ink-200 px-3.5 text-xs font-semibold text-ink-900 transition hover:border-ink-900"
+            >
+              Clear response
+            </button>
+            <button
+              onClick={() => {
+                setMarked((m) => m.map((val, i) => (i === currentIndex ? true : val)));
+                if (currentIndex < sectionEnd) goTo(currentIndex + 1);
+              }}
+              className="min-h-11 border border-ink-200 px-3.5 text-xs font-semibold text-ink-900 transition hover:border-ink-900"
+            >
+              Mark for review &amp; next
+            </button>
+            <button
+              onClick={() => {
+                if (currentIndex < sectionEnd) goTo(currentIndex + 1);
+              }}
+              disabled={currentIndex === sectionEnd}
+              className="ml-auto min-h-11 bg-ink-900 px-4 text-xs font-semibold text-white transition hover:bg-ink-700 disabled:opacity-40"
+            >
+              Save &amp; next
+            </button>
+          </div>
+        </div>
+
+        <div className="flex-shrink-0 md:w-64">
+          <button
+            type="button"
+            aria-expanded={paletteOpen}
+            aria-controls="question-palette"
+            onClick={() => setPaletteOpen((open) => !open)}
+            className="flex min-h-11 w-full items-center justify-between border border-ink-200 bg-white px-4 text-sm font-semibold text-ink-900 md:hidden"
+          >
+            Question palette
+            <span aria-hidden="true">{paletteOpen ? '−' : '+'}</span>
+          </button>
+          <div
+            id="question-palette"
+            className={`${paletteOpen ? 'block' : 'hidden'} border border-t-0 border-ink-200 bg-white p-4 md:block md:border-t`}
+          >
+            {usesSectionTimer && (
+              <div className="text-xs font-semibold text-ink-900 mb-1">{activeSection}</div>
+            )}
+            <div className="text-xs font-semibold text-ink-500 mb-1">
+              {usesSectionTimer
+                ? `${attemptedInSection}/${activeQuestionIndices.length} in section · ${attemptedCount}/${questions.length} total`
+                : `${attemptedCount}/${questions.length} answered`}
+            </div>
+            {markedCount > 0 && <div className="text-xs text-ink-500 mb-3">{markedCount} marked for review</div>}
+            <div className="mt-3 grid grid-cols-5 gap-2">
+              {(usesSectionTimer ? activeQuestionIndices : questions.map((_, index) => index)).map((i) => (
+                <button
+                  key={i}
+                  onClick={() => goTo(i)}
+                  aria-current={i === currentIndex ? 'step' : undefined}
+                  aria-label={`Question ${i + 1}: ${paletteStatus(i).replace(/([A-Z])/g, ' $1').toLowerCase()}`}
+                  className={`h-11 w-11 border text-xs font-semibold transition ${paletteClasses[paletteStatus(i)]}`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 border-t border-ink-200 pt-3 text-[10px] text-ink-600">
+              {[
+                ['bg-ink-900 border-ink-900', 'Current'],
+                ['bg-ink-700 border-ink-700', 'Answered'],
+                ['bg-ink-300 border-ink-300', 'Review'],
+                ['bg-white border-ink-200', 'Unvisited'],
+              ].map(([tone, label]) => (
+                <div key={label} className="flex items-center gap-2">
+                  <span className={`h-3 w-3 border ${tone}`} aria-hidden="true" />
+                  {label}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ConfirmDialog open={confirmOpen} title="Submit test?" onClose={() => setConfirmOpen(false)}>
+        <p className="mb-4 text-sm text-ink-500">
+          You’ve answered <strong className="text-ink-900">{attemptedCount}</strong> of{' '}
+          <strong className="text-ink-900">{questions.length}</strong> questions
+          {questions.length - attemptedCount > 0 && (
+            <> — {questions.length - attemptedCount} will be marked unattempted.</>
+          )}
+        </p>
+        <div className="flex gap-3">
+          <button
+            autoFocus
+            onClick={() => setConfirmOpen(false)}
+            className="min-h-11 flex-1 border border-ink-200 px-4 text-sm font-semibold text-ink-900 transition hover:border-ink-900"
+          >
+            Keep working
+          </button>
+          <button
+            onClick={handleSubmit}
+            className="min-h-11 flex-1 bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700"
+          >
+            Submit
+          </button>
+        </div>
+      </ConfirmDialog>
+
+      <ConfirmDialog open={exitOpen} title="Exit this test?" onClose={() => setExitOpen(false)}>
+        <p className="mb-4 text-sm leading-6 text-ink-500">
+          Your answers and remaining time are saved on this device. Return to this test to resume.
+        </p>
+        <div className="flex gap-3">
+          <button
+            autoFocus
+            onClick={() => setExitOpen(false)}
+            className="min-h-11 flex-1 border border-ink-200 px-4 text-sm font-semibold text-ink-900 transition hover:border-ink-900"
+          >
+            Keep working
+          </button>
+          <Link
+            href={`/${country}/${examSlug}/mock-test`}
+            className="flex min-h-11 flex-1 items-center justify-center bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700"
+          >
+            Exit test
+          </Link>
+        </div>
+      </ConfirmDialog>
+    </div>
+  );
+}

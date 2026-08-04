@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+
+# next.js build output
+.next
+out
+tsconfig.tsbuildinfo
+
+# vercel
+.vercel
+
+# env files
+.env
+.env*.local
+
+# logs
+*.log
+.codex-pilot-*.log
+dev-*.err.log
+dev-*.out.log
+
+# editor/OS
+.DS_Store

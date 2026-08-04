@@ -1,0 +1,144 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import ts from 'typescript';
+
+const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
+const files = fs
+  .readdirSync(banksDir)
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt)-.+-\d+\.ts$/.test(file))
+  .sort();
+
+const banks = files.map((file) => {
+  const source = fs.readFileSync(path.join(banksDir, file), 'utf8');
+  const code = ts.transpileModule(source, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const runtimeModule = { exports: {} };
+  vm.runInNewContext(code, { module: runtimeModule, exports: runtimeModule.exports }, { filename: file });
+  const questions = Object.values(runtimeModule.exports).find(Array.isArray);
+  if (!questions) throw new Error(`${file} does not export a question array`);
+  return { file, questions };
+});
+
+const errors = [];
+const ids = new Set();
+const texts = new Set();
+
+for (const { file, questions } of banks) {
+  const expectedCount = file.startsWith('ssc-cgl-tier2-english-')
+    ? 45
+    : file.startsWith('ssc-cgl-tier2-computer-knowledge-')
+      ? 20
+    : file.startsWith('ssc-cgl-tier2-general-awareness-')
+      ? 25
+    : file.startsWith('ibps-po-prelims-english') || file.startsWith('ssc-cgl-tier2-')
+    ? 30
+    : file.startsWith('ibps-po-prelims-') ? 35
+    : file.startsWith('rrb-ntpc-cbt1-general-awareness-') ? 40
+    : file.startsWith('rrb-ntpc-cbt1-') ? 30
+    : file.startsWith('ibps-po-mains-general-awareness-') ? 50
+    : file.startsWith('ibps-po-mains-') ? 40
+    : file.startsWith('ibps-clerk-prelims-english-language-') ? 30
+    : file.startsWith('ibps-clerk-prelims-') ? 35
+    : file.startsWith('rrb-group-d-cbt-general-intelligence-reasoning-') ? 30
+    : file.startsWith('rrb-group-d-cbt-general-awareness-current-affairs-') ? 20
+    : file.startsWith('sbi-po-prelims-english-language-') ? 40
+    : file.startsWith('sbi-po-prelims-') ? 30
+    : file.startsWith('rbi-assistant-prelims-english-language-') ? 30
+    : file.startsWith('rbi-assistant-prelims-') ? 35
+    : file.startsWith('ssc-mts-cbt-general-awareness-') || file.startsWith('ssc-mts-cbt-english-language-comprehension-') ? 25
+    : file.startsWith('ssc-mts-cbt-') ? 20 : 25;
+  if (questions.length !== expectedCount) {
+    errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
+  }
+  if (file.startsWith('ibps-po-mains-')) {
+    const expectedMarks = file.startsWith('ibps-po-mains-general-awareness-')
+      ? 60
+      : file.startsWith('ibps-po-mains-english-')
+        ? 20
+        : 60;
+    const totalMarks = questions.reduce((total, question) => total + (question.marks ?? 0), 0);
+    if (Math.abs(totalMarks - expectedMarks) > 0.0001) {
+      errors.push(`${file}: expected ${expectedMarks} total marks, found ${totalMarks}`);
+    }
+  }
+  if (file.startsWith('ibps-po-prelims-')) {
+    const expectedMarks = file.includes('-reasoning-') ? 40 : 30;
+    const totalMarks = questions.reduce((total, question) => total + (question.marks ?? 0), 0);
+    if (Math.abs(totalMarks - expectedMarks) > 0.0001) {
+      errors.push(`${file}: expected ${expectedMarks} total marks, found ${totalMarks}`);
+    }
+    if (questions.some((question) => Math.abs(question.negativeMarking - question.marks / 4) > 0.0001)) {
+      errors.push(`${file}: every penalty must equal one-fourth of that question's marks`);
+    }
+  }
+  const answerCounts = [0, 1, 2, 3].map(
+    (answerIndex) => questions.filter((question) => question.correctIndex === answerIndex).length,
+  );
+  if (Math.max(...answerCounts) - Math.min(...answerCounts) > 3) {
+    errors.push(`${file}: answer positions are too predictable (${answerCounts.join('/')})`);
+  }
+  questions.forEach((question, index) => {
+    const label = `${file} question ${index + 1}`;
+    if (!question.id || ids.has(question.id)) errors.push(`${label}: missing or duplicate ID`);
+    if (!question.question || texts.has(question.question.trim().toLowerCase())) {
+      errors.push(`${label}: missing or duplicate question text`);
+    }
+    if (!Array.isArray(question.options) || question.options.length !== 4) {
+      errors.push(`${label}: must have exactly four options`);
+    } else if (new Set(question.options.map((option) => option.trim().toLowerCase())).size !== 4) {
+      errors.push(`${label}: has duplicate options`);
+    }
+    if (!Number.isInteger(question.correctIndex) || question.correctIndex < 0 || question.correctIndex > 3) {
+      errors.push(`${label}: invalid correctIndex`);
+    }
+    if (!question.explanation?.trim()) errors.push(`${label}: missing explanation`);
+    if (!question.topic?.trim() || !question.difficulty) errors.push(`${label}: missing topic or difficulty`);
+    if (question.marks !== undefined && (!(question.marks > 0) || !Number.isFinite(question.marks))) {
+      errors.push(`${label}: invalid marks`);
+    }
+    if (question.negativeMarking !== undefined && (question.negativeMarking < 0 || !Number.isFinite(question.negativeMarking))) {
+      errors.push(`${label}: invalid negative marking`);
+    }
+    if (!question.source?.reference || !question.source?.url?.startsWith('https://') || !question.source?.checkedOn) {
+      errors.push(`${label}: incomplete provenance`);
+    }
+    ids.add(question.id);
+    texts.add(question.question.trim().toLowerCase());
+  });
+}
+
+if (process.argv.includes('--dump')) {
+  const requestedBank = process.argv.find((argument) => argument.startsWith('--bank='))?.split('=')[1];
+  for (const { file, questions } of banks.filter((bank) => !requestedBank || bank.file.includes(requestedBank))) {
+    console.log(`\n## ${file}`);
+    questions.forEach((question, index) => {
+      const correct = question.options[question.correctIndex];
+      console.log(
+        `${index + 1}. [${question.id}] ${question.question}\n` +
+          `   Options: ${question.options.join(' | ')}\n` +
+          `   Key: ${correct}\n` +
+          `   Explanation: ${question.explanation}\n` +
+          `   Source: ${question.source.reference} — ${question.source.url}`,
+      );
+    });
+  }
+}
+
+if (errors.length) {
+  console.error(`Question-bank QA failed with ${errors.length} issue(s):`);
+  errors.forEach((error) => console.error(`- ${error}`));
+  process.exit(1);
+}
+
+const total = banks.reduce((sum, bank) => sum + bank.questions.length, 0);
+console.log(`Question-bank structure passed: ${banks.length} banks, ${total} questions, no duplicate IDs or text.`);
+for (const { file, questions } of banks) {
+  const answers = [0, 1, 2, 3].map((index) => questions.filter((question) => question.correctIndex === index).length);
+  const difficulties = Object.groupBy(questions, (question) => question.difficulty);
+  console.log(
+    `${file}: answers A/B/C/D ${answers.join('/')} · difficulty E/M/H ` +
+      `${difficulties.easy?.length || 0}/${difficulties.medium?.length || 0}/${difficulties.hard?.length || 0}`,
+  );
+}
