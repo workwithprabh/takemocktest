@@ -1,6 +1,6 @@
 import { EXAM_LIST, getExam } from '@/lib/exams';
 import { getQuestionsForTest } from '@/lib/questions';
-import { breadcrumbSchema, organizationSchema } from '@/lib/schema';
+import { breadcrumbSchema, organizationSchema, faqPageSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import MockTestTabs from './MockTestTabs';
@@ -58,6 +58,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
       { name: 'Mock Test', path: `/${country}/${exam.slug}/mock-test` },
     ]),
     organizationSchema(),
+    faqPageSchema(FAQS),
   ];
 
   return (

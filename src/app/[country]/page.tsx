@@ -5,7 +5,7 @@ import ExamCategoryCard from '@/components/ExamCategoryCard';
 import OMRBubble from '@/components/OMRBubble';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { CATALOG_EXAM_COUNT, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
-import { organizationSchema, websiteSchema } from '@/lib/schema';
+import { organizationSchema, websiteSchema, faqPageSchema } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, getLatestUpdates } from '@/lib/updates';
 import { getQuestionsForTest } from '@/lib/questions';
 import { pageMetadata } from '@/lib/metadata';
@@ -57,7 +57,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
     <div>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationSchema(), websiteSchema()]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationSchema(), websiteSchema(), faqPageSchema(FAQS)]) }}
       />
 
       <div className="overflow-hidden bg-white">

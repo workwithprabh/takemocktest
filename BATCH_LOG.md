@@ -100,3 +100,25 @@ voice rules — level, timer shape, negative marking, and what happens after the
 `llms.txt` line.
 
 **Batch roadmap checkbox:** ticked in the same commit.
+
+## 2026-08-05 — Post-Batch-11 SEO/AEO/GEO/UI-UX re-audit (live session)
+
+Re-audited the whole site applying `SEO_PLAYBOOK.md` for the first time. Found and fixed one
+real, site-wide AEO gap: the homepage and every exam's mock-test hub page (all 11 exams)
+render a visible FAQ block in the UI but never emitted `FAQPage` JSON-LD for it — only the
+per-test instructions page had FAQ schema. Added a reusable `faqPageSchema()` helper to
+`src/lib/schema.ts` and wired it into both pages. Verified via the built static export that
+`FAQPage` now appears in the JSON-LD on the homepage and on every exam's mock-test hub
+(spot-checked SSC GD Constable, IBPS PO, SSC CGL).
+
+Also checked: meta title/description length and uniqueness (consistent with existing
+pattern, no regressions), sitemap includes the new exam, `qa:site` (lint + qa:questions +
+qa:assets + build) passes clean end-to-end, and a mobile-viewport (375px) check of the
+mock-test hub and the heaviest interactive page (test attempt/palette) confirmed no
+horizontal overflow.
+
+Deferred to a later pass, not fixed now: title tags across the site sit at 70-75 characters,
+a little over Google's typical ~60-char SERP display cutoff — this is a pre-existing,
+site-wide pattern (not something this batch introduced) and changing it means touching the
+`pageMetadata()` title template used everywhere, which is a bigger, more deliberate change
+than an audit fix-in-place; flag for the user before doing it broadly.
