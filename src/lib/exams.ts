@@ -15,7 +15,8 @@ export type ExamSlug =
   | 'rrb-je'
   | 'upsc-cse'
   | 'rpf-constable'
-  | 'ssc-cpo';
+  | 'ssc-cpo'
+  | 'ibps-so';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -93,6 +94,7 @@ const RPF_CONSTABLE_2024_NOTICE =
   'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Constable-02-2024_English.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
+const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -2481,6 +2483,92 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           status: 'review-pending',
           sections: [],
           note: 'The Paper 2 (English Language and Comprehension) pattern is under review before this stage is published.',
+        },
+        tests: [],
+      },
+    ],
+  },
+  'ibps-so': {
+    slug: 'ibps-so',
+    name: 'IBPS SO',
+    fullName: 'Institute of Banking Personnel Selection — Specialist Officer, Scale I (IT Officer / Agriculture Field Officer / HR-Personnel Officer / Marketing Officer)',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'prelims',
+        name: 'Prelims',
+        pattern: {
+          status: 'official',
+          cycle: 'CRP SPL-XV',
+          sections: ['English Language', 'Reasoning', 'Quantitative Aptitude'],
+          totalQuestions: 150,
+          totalMarks: 125,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'This mock covers the Prelims pattern shared by the IT Officer, Agriculture Field Officer, HR/Personnel Officer, and Marketing Officer (Scale I) posts — the Law Officer and Rajbhasha Adhikari track substitutes General Awareness for Quantitative Aptitude instead. Candidates must qualify each of the three separately timed sections; Prelims marks are not carried forward to the final merit list. Shortlisted candidates appear for the Main Examination, which tests post-specific Professional Knowledge (60 questions/60 marks/45 minutes) instead of these general sections.',
+          sectionBreakdown: [
+            { name: 'English Language', questions: 50, marks: 25, duration: 40 },
+            { name: 'Reasoning', questions: 50, marks: 50, duration: 40 },
+            { name: 'Quantitative Aptitude', questions: 50, marks: 50, duration: 40 },
+          ],
+          timerNote: 'Each of the three sections has its own separately timed 40-minute window — sectional lock, no shifting unused time between sections. English Language questions carry 0.5 marks each (25 marks across 50 questions); Reasoning and Quantitative Aptitude questions carry 1 mark each.',
+          sourceUrl: IBPS_SO_2025_NOTICE,
+          checkedOn: '6 August 2026',
+        },
+        tests: [
+          {
+            id: 'prelims-full-mock-1',
+            name: 'Prelims Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            sectionDuration: 40,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 40,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-reasoning-sectional-1',
+            name: 'Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning',
+            duration: 40,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 40,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'mains',
+        name: 'Mains',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Main Examination pattern (post-specific Professional Knowledge) is under review before this stage is published.',
         },
         tests: [],
       },

@@ -455,6 +455,29 @@ const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const IBPS_SO_PRELIMS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official IBPS SO question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official IBPS SO Prelims syllabus and pattern.',
+  },
+  {
+    question: 'Is there a separate timer for each Prelims section?',
+    answer: 'Yes. Each of the three sections — English Language, Reasoning, and Quantitative Aptitude — has its own separately timed 40-minute window. You cannot shift unused time from one section to another.',
+  },
+  {
+    question: 'Why do English Language questions carry fewer marks?',
+    answer: 'Per the official pattern, the 50 English Language questions carry 25 total marks (0.5 marks each), while Reasoning and Quantitative Aptitude carry 1 mark per question. This mock reproduces that exact weighting.',
+  },
+  {
+    question: 'Does this cover every IBPS SO post?',
+    answer: 'This mock covers the Prelims pattern shared by IT Officer, Agriculture Field Officer, HR/Personnel Officer, and Marketing Officer (Scale I). The Law Officer and Rajbhasha Adhikari track uses General Awareness instead of Quantitative Aptitude, and is not covered here.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -474,6 +497,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'upsc-cse/paper-2': UPSC_CSE_PAPER2_FULL_MOCK_FAQS,
   'rpf-constable/cbt': RPF_CONSTABLE_CBT_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
+  'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

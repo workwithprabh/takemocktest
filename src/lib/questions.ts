@@ -92,6 +92,9 @@ import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-ban
 import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-1';
 import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-1';
 import { SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1 } from './question-banks/ssc-cpo-paper-1-english-comprehension-1';
+import { IBPS_SO_PRELIMS_REASONING_1 } from './question-banks/ibps-so-prelims-reasoning-1';
+import { IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-so-prelims-quantitative-aptitude-1';
+import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-so-prelims-english-language-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -368,6 +371,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-cpo/paper-1-general-knowledge-general-awareness-sectional-1': SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
   'ssc-cpo/paper-1-quantitative-aptitude-sectional-1': SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1,
   'ssc-cpo/paper-1-english-comprehension-sectional-1': SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1,
+  'ibps-so/prelims-full-mock-1': [
+    ...IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1,
+    ...IBPS_SO_PRELIMS_REASONING_1,
+    ...IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  ],
+  'ibps-so/prelims-english-language-sectional-1': IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1,
+  'ibps-so/prelims-reasoning-sectional-1': IBPS_SO_PRELIMS_REASONING_1,
+  'ibps-so/prelims-quantitative-aptitude-sectional-1': IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -548,6 +559,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
+    : testId.includes('ibps-so/prelims-full-mock')
+    ? 150
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -594,6 +607,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('arithmetic') ? 35
               : testId.includes('general-intelligence-reasoning') ? 35 : 50
           : testId.includes('ssc-cpo')
+            ? 50
+          : testId.includes('ibps-so')
             ? 50
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
@@ -716,6 +731,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General Knowledge and General Awareness', count: 50 },
     { section: 'Quantitative Aptitude', count: 50 },
     { section: 'English Comprehension', count: 50 },
+  ],
+  'ibps-so': [
+    { section: 'English Language', count: 50 },
+    { section: 'Reasoning', count: 50 },
+    { section: 'Quantitative Aptitude', count: 50 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -981,5 +1001,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Intelligence and Reasoning', question: 'Complete the series: 5, 10, 20, 40, ?', options: ['60', '70', '80', '90'], correctIndex: 2, explanation: 'Each term is double the previous term: 40 × 2 = 80.' },
     // Quantitative Aptitude
     { section: 'Quantitative Aptitude', question: 'What is 20% of 350?', options: ['60', '65', '70', '75'], correctIndex: 2, explanation: '20% of 350 = (20/100) × 350 = 70.' },
+  ],
+  'ibps-so': [
+    // Reasoning
+    { section: 'Reasoning', question: 'Complete the series: 4, 12, 36, 108, ?', options: ['216', '270', '324', '432'], correctIndex: 2, explanation: 'Each term is triple the previous term: 108 × 3 = 324.' },
+    // Quantitative Aptitude
+    { section: 'Quantitative Aptitude', question: 'What is 25% of 480?', options: ['110', '115', '120', '125'], correctIndex: 2, explanation: '25% of 480 = (25/100) × 480 = 120.' },
   ],
 };

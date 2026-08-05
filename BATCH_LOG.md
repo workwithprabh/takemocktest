@@ -414,3 +414,63 @@ enforces a sectional lock (`SECTION 1/4`, 29:58 countdown, question palette scop
 50/200 per section — confirmed this differs visibly from RPF/RRB JE's composite-timer UI),
 and a live attempt (1/200 correct) scored 1.00/200 with section-wise caps correctly summing
 50+50+50+50=200. Added a 5-question FAQ set and an `llms.txt` line.
+
+## 2026-08-06 — IBPS Specialist Officer (Batch 18, live session)
+
+Added IBPS SO Prelims: English Language (50 Q), Reasoning (50 Q), Quantitative Aptitude
+(50 Q) — wired into 1 full mock (150 Q, sectional-locked, three separately timed
+40-minute sections) + 3 sectionals. Covers the pattern shared by IT Officer, Agriculture
+Field Officer, HR/Personnel Officer, and Marketing Officer (Scale I) — the Law
+Officer/Rajbhasha Adhikari track substitutes General Awareness for Quantitative Aptitude
+and was not modeled.
+
+**Source:** IBPS's own CRP SPL-XV notification PDF (`Detailed-Advt.-CRP-SPL-XV_Final1.pdf`
+on ibps.in), parsed cleanly with plain `pdftotext` (no `-layout` flag — the `-layout` flag
+actually garbled this particular table's columns across multiple lines, the opposite of
+its usual benefit; worth trying both when the first parse looks scrambled). This directly
+contradicted two independent aggregator sources, which both claimed Prelims includes a
+4th "Professional Knowledge" section — the official PDF confirms Professional Knowledge is
+Mains-only (60Q/60 marks/45 min), and Prelims is just English/Reasoning/Quantitative
+Aptitude (or English/Reasoning/GA for Law Officer/Rajbhasha). Per the project rule that the
+exam body's own notification beats aggregators, went with the official 3-section Prelims
+pattern.
+
+**First fractional per-question marks case on the site:** English Language is 50Q for only
+25 marks (0.5 marks/question), while Reasoning and Quantitative Aptitude are 50Q/50 marks
+each (1 mark/question) — matching the official "one-fourth of that question's marks"
+penalty rule exactly (English negative marking = 0.125, Reasoning/QA = 0.25). Implemented
+via explicit per-question `marks`/`negativeMarking` overrides in the English bank (a
+pattern the engine already supported generically, previously exercised by IBPS PO Prelims'
+audit-script marks/4 check, just not yet used for a sub-1-mark case). Browser-verified the
+scoring engine handles this correctly: a single correct English answer scored exactly
+0.50/125.
+
+**Errors caught and fixed:**
+- 150Q is non-standard against the generic `full-mock ? 100` catchall — same recurring
+  lesson as UPSC CSAT/RPF Constable/SSC CPO: the new `expectedCount` branch had to be
+  inserted before the catchall in both `questions.ts` and `audit-question-banks.mjs`.
+- Heavy duplicate-collision rate against the already-saturated IBPS PO/Clerk, SBI PO/Clerk,
+  RBI Assistant Prelims banks (same generic Reasoning/English/Quant syllabus): 5 collisions
+  on the first `qa:questions` run, including two cross-file collisions against the *same
+  invented "unique" spelling-question phrasings* used to fix SSC CPO's collisions in the
+  previous batch — a reminder that phrasing invented to dodge one collision can itself
+  collide in a later batch once reused; picked fresh phrasing again rather than assuming
+  prior fixes are permanently safe.
+- Multiple self-caught arithmetic/logic errors during drafting (before `qa:questions` even
+  ran): a wrong-number-in-series item whose "wrong" number didn't actually break the stated
+  rule, a time-work question whose explanation computed 20 days but had `correctIndex`
+  pointing at 18, a percentage question with a non-clean division, and a duplicate-option
+  bug in a percentage compounding item — all caught by re-deriving each answer during
+  self-review rather than trusting the first draft, per the project's standing rule.
+- Answer-position rebalancing: all three banks started skewed (worst: Reasoning 28/12/6/4),
+  corrected to 12/13/12/13 using the same scratch `rebalance.mjs` script introduced in
+  Batch 17 — 57 total moves across the three files, applied in one script run.
+
+**Verified:** all 96 banks / 2,800 questions pass `qa:questions` clean; `npm run build`
+clean static export (new `/ibps-so` routes: 1 full mock + 3 sectionals). Browser walkthrough
+confirmed the mock-test hub renders a Prelims/Mains tab split (Mains correctly shown as
+"review pending"), the exam-pattern page's section table and fractional-marks note render
+correctly, the full mock genuinely enforces sectional lock (`SECTION 1/3`, 39:58 countdown,
+English Language first per the official section order), and a live attempt scored
+0.50/125 with section-wise caps summing correctly to 25.00+50.00+50.00=125. Added a
+5-question FAQ set and an `llms.txt` line.
