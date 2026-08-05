@@ -59,6 +59,10 @@ import { SSC_MTS_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-mts-cbt-ge
 import { SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-mts-cbt-english-language-comprehension-1';
 import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-rrb-office-assistant-prelims-numerical-ability-1';
 import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-office-assistant-prelims-reasoning-1';
+import { SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-gd-constable-cbe-general-intelligence-reasoning-1';
+import { SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1 } from './question-banks/ssc-gd-constable-cbe-general-knowledge-awareness-1';
+import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1 } from './question-banks/ssc-gd-constable-cbe-elementary-mathematics-1';
+import { SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1 } from './question-banks/ssc-gd-constable-cbe-english-hindi-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -253,6 +257,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'ibps-rrb-office-assistant/prelims-reasoning-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1,
   'ibps-rrb-office-assistant/prelims-numerical-ability-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
+  'ssc-gd-constable/cbe-full-mock-1': [
+    ...SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1,
+    ...SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
+    ...SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1,
+    ...SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1,
+  ],
+  'ssc-gd-constable/cbe-general-intelligence-reasoning-sectional-1': SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1,
+  'ssc-gd-constable/cbe-general-knowledge-awareness-sectional-1': SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
+  'ssc-gd-constable/cbe-elementary-mathematics-sectional-1': SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1,
+  'ssc-gd-constable/cbe-english-hindi-sectional-1': SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -360,8 +374,23 @@ const IBPS_RRB_OA_QUICK_TESTS: Record<string, Question[]> = {
   'ibps-rrb-office-assistant/prelims-quick-15min': ibpsRrbOaQuickSlice(8, 5),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS);
-const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-'];
+const SSC_GD_CONSTABLE_CBE_POOLS: Record<string, Question[]> = {
+  'General Intelligence and Reasoning': SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1,
+  'General Knowledge and General Awareness': SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
+  'Elementary Mathematics': SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1,
+  'English/Hindi': SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1,
+};
+const SSC_GD_CONSTABLE_CBE_SECTION_ORDER = Object.keys(SSC_GD_CONSTABLE_CBE_POOLS);
+function sscGdConstableQuickSlice(perSection: number, offset: number): Question[] {
+  return SSC_GD_CONSTABLE_CBE_SECTION_ORDER.flatMap((section) => SSC_GD_CONSTABLE_CBE_POOLS[section].slice(offset, offset + perSection));
+}
+const SSC_GD_CONSTABLE_CBE_QUICK_TESTS: Record<string, Question[]> = {
+  'ssc-gd-constable/cbe-quick-10min': sscGdConstableQuickSlice(3, 0),
+  'ssc-gd-constable/cbe-quick-15min': sscGdConstableQuickSlice(4, 3),
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS);
+const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
   const isGenerated = GENERATED_TEST_ID_MARKERS.some((marker) => testId.includes(marker));
@@ -379,6 +408,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 170
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
+    : testId.includes('ssc-gd-constable/cbe-full-mock')
+    ? 80
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -398,6 +429,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('english-language') ? 40 : 30
           : testId.includes('rbi-assistant')
             ? testId.includes('english-language') ? 30 : 35
+          : testId.includes('ssc-gd-constable')
+            ? 20
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -487,6 +520,12 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   'ibps-rrb-office-assistant': [
     { section: 'Reasoning', count: 40 },
     { section: 'Numerical Ability', count: 40 },
+  ],
+  'ssc-gd-constable': [
+    { section: 'General Intelligence and Reasoning', count: 20 },
+    { section: 'General Knowledge and General Awareness', count: 20 },
+    { section: 'Elementary Mathematics', count: 20 },
+    { section: 'English/Hindi', count: 20 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -688,5 +727,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Numerical Ability', question: 'What is 30% of 400?', options: ['110', '115', '120', '125'], correctIndex: 2, explanation: '30% of 400 = (30/100) × 400 = 120.' },
     { section: 'Numerical Ability', question: 'What is the value of 7² + 6²?', options: ['80', '85', '90', '95'], correctIndex: 1, explanation: '49 + 36 = 85.' },
     { section: 'Numerical Ability', question: 'A sum of ₹4,000 earns simple interest of ₹480 in 2 years. What is the rate of interest?', options: ['5%', '6%', '7%', '8%'], correctIndex: 1, explanation: 'Rate = (SI × 100) / (P × T) = (480 × 100) / (4000 × 2) = 6%.' },
+  ],
+  'ssc-gd-constable': [
+    // General Intelligence and Reasoning
+    { section: 'General Intelligence and Reasoning', question: 'Complete the series: 4, 8, 12, 16, ?', options: ['18', '20', '22', '24'], correctIndex: 1, explanation: 'Each term increases by 4: 16 + 4 = 20.' },
+    { section: 'General Intelligence and Reasoning', question: 'Find the odd one out.', options: ['Delhi', 'Mumbai', 'Chennai', 'India'], correctIndex: 3, explanation: 'Delhi, Mumbai, and Chennai are cities; India is a country.' },
+    // Elementary Mathematics
+    { section: 'Elementary Mathematics', question: 'What is 25% of 240?', options: ['50', '55', '60', '65'], correctIndex: 2, explanation: '25% of 240 = (25/100) × 240 = 60.' },
   ],
 };

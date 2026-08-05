@@ -259,6 +259,37 @@ const IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SSC Constable (GD) 2026 syllabus and pattern.',
+  },
+  {
+    question: 'How many questions and marks does the real CBE have?',
+    answer: '80 questions for 160 marks — 2 marks per question — split evenly across 4 sections of 20 questions each: General Intelligence and Reasoning, General Knowledge and General Awareness, Elementary Mathematics, and English/Hindi.',
+  },
+  {
+    question: 'How does the timer work?',
+    answer: 'All four sections share one combined 60-minute timer — there is no sectional lock. You can move freely between questions from any section during the attempt.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. 0.25 marks are deducted for each wrong answer. Unattempted questions score zero.',
+  },
+  {
+    question: 'What level are the questions set at?',
+    answer: "Matriculation (Class 10) level, per the official notice — noticeably more basic than a graduate-level exam like SSC CGL, so don't expect Tier-1-style difficulty here.",
+  },
+  {
+    question: 'Does clearing the CBE mean I get the job?',
+    answer: 'No. The CBE is only the first stage. Shortlisted candidates then go through a Physical Efficiency Test (PET), Physical Standard Test (PST), Detailed Medical Examination, and Document Verification — none of which are objective/written, so they are outside the scope of this mock.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -270,6 +301,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rbi-assistant/prelims': RBI_ASSISTANT_PRELIMS_FULL_MOCK_FAQS,
   'ssc-mts/cbt': SSC_MTS_CBT_FULL_MOCK_FAQS,
   'ibps-rrb-office-assistant/prelims': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS,
+  'ssc-gd-constable/cbe': SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

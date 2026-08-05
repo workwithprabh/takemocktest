@@ -40,7 +40,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('SSC CHSL', 'National', 'ssc-chsl'),
           exam('SSC MTS & Havaldar', 'National', 'ssc-mts'),
           exam('SSC CPO', 'National'),
-          exam('SSC GD Constable', 'National'),
+          exam('SSC GD Constable', 'National', 'ssc-gd-constable'),
           exam('SSC Junior Engineer', 'National'),
           exam('SSC Stenographer Grade C & D', 'National'),
           exam('SSC Combined Hindi Translators', 'National'),

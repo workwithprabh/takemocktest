@@ -27,8 +27,8 @@ Anything with a third argument (the liveSlug) is done. Cross-check against the E
 in `src/lib/exams.ts` — the two must always match after your batch (a stale build will fail
 otherwise).
 
-**Live as of 2026-08-04:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
-rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant (10 exams).
+**Live as of 2026-08-05:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
+rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable (11 exams).
 
 ## The queue (Government Jobs cluster, in order)
 
@@ -38,7 +38,7 @@ in that case, leave a one-line note next to it in this file explaining why, and 
 next one in the same run.
 
 - [x] IBPS RRB Office Assistant
-- [ ] SSC GD Constable
+- [x] SSC GD Constable
 - [ ] IBPS RRB Officer Scale I
 - [ ] SBI Clerk
 - [ ] RRB Junior Engineer / DMS / CMA

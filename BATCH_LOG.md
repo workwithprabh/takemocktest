@@ -53,3 +53,50 @@ if a test's `status` is ever non-`'checked'` again — currently unreachable but
 **Verified:** `npm run build` clean static export; browser walkthrough of the homepage and
 the IBPS RRB Office Assistant mock-test hub confirmed the new copy renders correctly and no
 "practice demo" string remains reachable in the live UI.
+
+## 2026-08-05 — SSC GD Constable (Batch 11, live session)
+
+Added SSC GD Constable CBE: General Intelligence and Reasoning (20 Q) + General Knowledge
+and General Awareness (20 Q) + Elementary Mathematics (20 Q) + English/Hindi (20 Q), wired
+into 1 full mock (80 Q, single combined 60-minute timer — no sectional lock) + 4 sectionals
++ 2 quick timed tests.
+
+**Source:** SSC's own Constable (GD) 2026 notification PDF (`notice_01122025.pdf`, dated
+1 December 2025 — parsed directly with `pdftotext`) — confirmed the exact official scheme
+table: 80 questions / 160 marks (2 marks each) / 60 minutes / 0.25 negative marking, 4 parts
+of 20 questions/40 marks each, Matriculation-level questions. Cross-checked against 3+
+independent aggregator sources before trusting the pattern.
+
+**Applied `SEO_PLAYBOOK.md` for the first time this batch** — and immediately hit its
+central warning in practice: the "obvious" pool of common GK facts, spelling words, and
+question-tag/grammar-stem clichés is now heavily saturated across the 10 existing exams'
+English/GA banks. Real collisions caught and fixed during `qa:questions`:
+- Math: a duplicate CI setup (₹6,000 at 20%, already used by IBPS RRB OA) needed a third,
+  genuinely distinct number set (₹15,000 at 8% → ₹2,496); an average, a rectangle-area, and
+  an HCF question all collided with existing SSC MTS/SSC CHSL/IBPS RRB OA questions on exact
+  number reuse.
+- Reasoning: two "classic" number-series patterns (doubling from 3, and the n²+1 pattern
+  from 2,5,10,17,26) turned out to already exist verbatim elsewhere.
+- English: the *generic instruction stems* themselves collided, not just the content —
+  "Choose the correctly spelled word.", "Choose the grammatically correct sentence.", and
+  "Which of the following sentences is grammatically correct?" are each already used once
+  elsewhere in the corpus, so reusing them (even with different options) triggered
+  duplicate-text detection. Classic spelling words (Receive, Definitely, Government,
+  Necessary, Occurred, Separate, Accommodate) and question-tag templates are all already
+  spoken for too. Resolution: replaced the colliding items entirely with genuinely different
+  vocabulary-in-context, voice, and subject-verb-agreement questions rather than hunting for
+  a 7th synonym of an already-used clichê — the more sustainable fix per the playbook's own
+  guidance on Scaled-Content-Abuse risk.
+- Answer-position balance also needed manual rebalancing in all 4 new banks (habitually
+  placed correct answers in the same 1-2 option slots) — fixed by reordering options (never
+  changing which value is correct) until each bank read 5/5/5/5 across A/B/C/D.
+
+**Verified:** all 68 banks / 1,870 questions pass `qa:questions` clean; `npm run build` clean
+static export (7 new routes: 1 full mock + 4 sectionals + 2 quick tests); browser walkthrough
+confirmed the combined 60-minute timer (no section lock), correct 2-marks-per-question
+scoring (1/80 → 2.00/160, each section capped at 40.00/40.00), and topic-wise breakdown all
+render correctly. Added a 7-question FAQ set (exam-specific facts per `SEO_PLAYBOOK.md`
+voice rules — level, timer shape, negative marking, and what happens after the CBE) and an
+`llms.txt` line.
+
+**Batch roadmap checkbox:** ticked in the same commit.

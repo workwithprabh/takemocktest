@@ -8,7 +8,8 @@ export type ExamSlug =
   | 'sbi-po'
   | 'rbi-assistant'
   | 'ssc-mts'
-  | 'ibps-rrb-office-assistant';
+  | 'ibps-rrb-office-assistant'
+  | 'ssc-gd-constable';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -77,6 +78,8 @@ const RBI_ASSISTANT_2026_NOTICE =
 const SSC_MTS_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_mts_03082026.pdf';
 const IBPS_RRB_XIV_NOTICE = 'https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD-27.09.25.pdf';
+const SSC_GD_CONSTABLE_2026_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -1726,6 +1729,113 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           note: 'The Mains pattern is under review before this stage is published.',
         },
         tests: [],
+      },
+    ],
+  },
+  'ssc-gd-constable': {
+    slug: 'ssc-gd-constable',
+    name: 'SSC GD Constable',
+    fullName: 'Staff Selection Commission — Constable (GD) in CAPFs, SSF and Rifleman (GD) in Assam Rifles',
+    category: 'SSC',
+    stages: [
+      {
+        id: 'cbe',
+        name: 'CBE',
+        pattern: {
+          status: 'official',
+          cycle: 'Constable (GD) Examination, 2026',
+          sections: ['General Intelligence and Reasoning', 'General Knowledge and General Awareness', 'Elementary Mathematics', 'English/Hindi'],
+          totalQuestions: 80,
+          totalMarks: 160,
+          duration: 60,
+          negativeMarking: 0.25,
+          note: 'Questions are of Matriculation (Class 10) level. The CBE is followed by a Physical Efficiency Test (PET)/Physical Standard Test (PST), Detailed Medical Examination, and Document Verification — none of which are written stages.',
+          sectionBreakdown: [
+            { name: 'General Intelligence and Reasoning', questions: 20, marks: 40, duration: 60 },
+            { name: 'General Knowledge and General Awareness', questions: 20, marks: 40, duration: 60 },
+            { name: 'Elementary Mathematics', questions: 20, marks: 40, duration: 60 },
+            { name: 'English/Hindi', questions: 20, marks: 40, duration: 60 },
+          ],
+          timerNote: 'Single 60-minute timer for all four sections combined (no sectional lock). Each question carries 2 marks.',
+          sourceUrl: SSC_GD_CONSTABLE_2026_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbe-full-mock-1',
+            name: 'CBE Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 60,
+            marksPerCorrect: 2,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbe-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 15,
+            marksPerCorrect: 2,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbe-general-knowledge-awareness-sectional-1',
+            name: 'General Knowledge and General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Knowledge and General Awareness',
+            duration: 15,
+            marksPerCorrect: 2,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbe-elementary-mathematics-sectional-1',
+            name: 'Elementary Mathematics Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Elementary Mathematics',
+            duration: 15,
+            marksPerCorrect: 2,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbe-english-hindi-sectional-1',
+            name: 'English/Hindi Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English/Hindi',
+            duration: 15,
+            marksPerCorrect: 2,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbe-quick-10min',
+            name: 'Quick Test — 10 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 10,
+            marksPerCorrect: 2,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbe-quick-15min',
+            name: 'Quick Test — 15 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 15,
+            marksPerCorrect: 2,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+        ],
       },
     ],
   },
