@@ -355,3 +355,62 @@ matches the official split, the full mock's single 90-minute composite timer sho
 sectional-lock UI, and a live attempt (1 correct / 0 wrong / 119 unattempted) scored
 1.00/120 with section-wise caps summing correctly to 35.00 + 35.00 + 50.00 = 120. Added a
 5-question FAQ set and an `llms.txt` line.
+
+## 2026-08-05 — SSC CPO (Batch 17, live session)
+
+Added SSC CPO Paper 1 (Sub-Inspector, Delhi Police and CAPFs): General Intelligence and
+Reasoning (50 Q), General Knowledge and General Awareness (50 Q), Quantitative Aptitude
+(50 Q), English Comprehension (50 Q) — wired into 1 full mock (200 Q, sectional-locked —
+each of the four sections has its own separately timed 30-minute window, no shifting unused
+time between sections) + 4 sectionals.
+
+**Source:** SSC's own ssc.gov.in result write-up for the CPO 2025 cycle (the same
+`Results/write-up...pdf` pattern already used for SSC MTS in Batch 9), which corroborated
+the 200-total-marks figure via its qualifying-marks math (UR cut-off 30% = 60 marks); the
+detailed section-wise breakdown (4×50Q/50 marks/30 min sectional lock, 0.25 negative
+marking) was cross-checked against 3 independent aggregator sources since the official
+Notice of Examination PDF isn't machine-readable — consistent with the project's standard
+fallback when the primary source can't be parsed directly.
+
+**Two-hundred-question full mock is this batch's non-standard-count case** — same lesson as
+UPSC CSAT (Batch 15, 80Q) and RPF Constable (Batch 16, 120Q): the new `expectedCount`
+branches (`questions.ts` runtime ternary and `audit-question-banks.mjs` build-time logic)
+had to be inserted before the generic `full-mock ? 100` fallback.
+
+**Sectional lock, not composite timer** — SSC CPO is the first SSC-family exam on this site
+with a genuine sectional lock (matching SBI Clerk's precedent, not the composite-timer
+pattern used by RRB JE, RPF Constable, or the other SSC exams already live). Modeled the
+`TestConfig` full-mock entry with `sectionDuration: 30` per the SBI Clerk template.
+
+**Errors caught and fixed:**
+- 12 duplicate-text collisions on the first `qa:questions` run — expected given how heavily
+  SSC CPO's four sections overlap with the already-deepened SSC CGL/CHSL corpus (12
+  cross-file collisions) plus a self-inflicted issue: 4 of the English bank's
+  Spelling-Correction items all used the identical literal question stem "Choose the
+  correctly spelled word." — since the QA script dedupes on exact question text globally,
+  identical stems collide with each other even when the options differ. Fixed by varying
+  each stem's phrasing ("Which of the following words is spelled correctly?", "Select the
+  correctly spelled word from the options given.", "Identify the correctly spelled word.",
+  "Pick the option with the correct spelling.") — a new pattern worth remembering for any
+  future bank with several items sharing a generic question template.
+- A genuine arithmetic slip caught during self-review, not by `qa:questions`: an
+  LCM/HCF item's correct answer (16) wasn't even among its own four options
+  (`['20','24','28','32']`) — caught by re-deriving the answer before finalizing, per the
+  project's standing rule to precompute math answers rather than trust them.
+- Answer-position rebalancing across all four 50-question banks: initial skews ranged from
+  8/24/11/3 (worst) to 11/15/22/2, all corrected to a clean 12/13/12/13 split. Given the
+  volume (46 individual moves across 4 files), used a small Node script
+  (`rebalance.mjs`, scratch-only) to swap option positions + `correctIndex` programmatically
+  from a moves list, rather than 46 manual edits — much faster and just as safe, since it
+  operates on exact line-scoped substrings rather than re-serializing the file. Worth reusing
+  for any future batch with a similarly large rebalancing pass.
+
+**Verified:** all 93 banks / 2,650 questions pass `qa:questions` clean; `npm run build`
+clean static export (new `/ssc-cpo` routes: 1 full mock + 4 sectionals, all 20
+`exam-pattern`/`syllabus`/etc. skeleton pages). Browser walkthrough confirmed the mock-test
+hub renders a Paper 1 / Paper 2 tab split (Paper 2 correctly shown as "review pending"),
+the exam-pattern page's section table matches the official split, the full mock genuinely
+enforces a sectional lock (`SECTION 1/4`, 29:58 countdown, question palette scoped to
+50/200 per section — confirmed this differs visibly from RPF/RRB JE's composite-timer UI),
+and a live attempt (1/200 correct) scored 1.00/200 with section-wise caps correctly summing
+50+50+50+50=200. Added a 5-question FAQ set and an `llms.txt` line.

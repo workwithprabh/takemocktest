@@ -14,7 +14,8 @@ export type ExamSlug =
   | 'sbi-clerk'
   | 'rrb-je'
   | 'upsc-cse'
-  | 'rpf-constable';
+  | 'rpf-constable'
+  | 'ssc-cpo';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -90,6 +91,8 @@ const RRB_JE_2025_NOTICE = 'https://web.archive.org/web/2025/https://www.rrbcdg.
 const UPSC_CSE_2026_NOTICE = 'https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf';
 const RPF_CONSTABLE_2024_NOTICE =
   'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Constable-02-2024_English.pdf';
+const SSC_CPO_2025_RESULT_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -2382,6 +2385,104 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             checkedOn: '5 August 2026',
           },
         ],
+      },
+    ],
+  },
+  'ssc-cpo': {
+    slug: 'ssc-cpo',
+    name: 'SSC CPO',
+    fullName: 'Staff Selection Commission — Central Police Organisation (Sub-Inspector in Delhi Police and CAPFs)',
+    category: 'SSC',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper 1',
+        pattern: {
+          status: 'official',
+          cycle: 'SSC CPO 2025',
+          sections: ['General Intelligence and Reasoning', 'General Knowledge and General Awareness', 'Quantitative Aptitude', 'English Comprehension'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'Paper 1 is a common screening CBT for Sub-Inspector (Executive) posts in Delhi Police and Sub-Inspector (GD) posts in the CAPFs. Candidates who clear Paper 1 proceed to a Physical Standard Test (PST) and Physical Endurance Test (PET), followed by Paper 2 (English Language and Comprehension) and a Detailed Medical Examination (DME).',
+          sectionBreakdown: [
+            { name: 'General Intelligence and Reasoning', questions: 50, marks: 50, duration: 30 },
+            { name: 'General Knowledge and General Awareness', questions: 50, marks: 50, duration: 30 },
+            { name: 'Quantitative Aptitude', questions: 50, marks: 50, duration: 30 },
+            { name: 'English Comprehension', questions: 50, marks: 50, duration: 30 },
+          ],
+          timerNote: 'Each of the four sections has its own separately timed 30-minute window — there is no shifting unused time between sections, unlike RPF Constable or RRB JE.',
+          sourceUrl: SSC_CPO_2025_RESULT_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'paper-1-full-mock-1',
+            name: 'Paper 1 Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            sectionDuration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-general-knowledge-general-awareness-sectional-1',
+            name: 'General Knowledge and General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Knowledge and General Awareness',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-english-comprehension-sectional-1',
+            name: 'English Comprehension Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Comprehension',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'paper-2',
+        name: 'Paper 2',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Paper 2 (English Language and Comprehension) pattern is under review before this stage is published.',
+        },
+        tests: [],
       },
     ],
   },

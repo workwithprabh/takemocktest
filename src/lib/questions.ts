@@ -88,6 +88,10 @@ import { UPSC_CSE_PAPER_2_NUMERACY_DATA_INTERPRETATION_1 } from './question-bank
 import { RPF_CONSTABLE_CBT_ARITHMETIC_1 } from './question-banks/rpf-constable-cbt-arithmetic-1';
 import { RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rpf-constable-cbt-general-intelligence-reasoning-1';
 import { RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-constable-cbt-general-awareness-1';
+import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-cpo-paper-1-general-intelligence-reasoning-1';
+import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-1';
+import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-1';
+import { SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1 } from './question-banks/ssc-cpo-paper-1-english-comprehension-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -354,6 +358,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rpf-constable/cbt-arithmetic-sectional-1': RPF_CONSTABLE_CBT_ARITHMETIC_1,
   'rpf-constable/cbt-general-intelligence-reasoning-sectional-1': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1,
   'rpf-constable/cbt-general-awareness-sectional-1': RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1,
+  'ssc-cpo/paper-1-full-mock-1': [
+    ...SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
+    ...SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
+    ...SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1,
+    ...SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1,
+  ],
+  'ssc-cpo/paper-1-general-intelligence-reasoning-sectional-1': SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
+  'ssc-cpo/paper-1-general-knowledge-general-awareness-sectional-1': SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
+  'ssc-cpo/paper-1-quantitative-aptitude-sectional-1': SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1,
+  'ssc-cpo/paper-1-english-comprehension-sectional-1': SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -532,6 +546,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 100
     : testId.includes('rpf-constable/cbt-full-mock')
     ? 120
+    : testId.includes('ssc-cpo/paper-1-full-mock')
+    ? 200
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -577,6 +593,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
           : testId.includes('rpf-constable')
             ? testId.includes('arithmetic') ? 35
               : testId.includes('general-intelligence-reasoning') ? 35 : 50
+          : testId.includes('ssc-cpo')
+            ? 50
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -692,6 +710,12 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Arithmetic', count: 35 },
     { section: 'General Intelligence and Reasoning', count: 35 },
     { section: 'General Awareness', count: 50 },
+  ],
+  'ssc-cpo': [
+    { section: 'General Intelligence and Reasoning', count: 50 },
+    { section: 'General Knowledge and General Awareness', count: 50 },
+    { section: 'Quantitative Aptitude', count: 50 },
+    { section: 'English Comprehension', count: 50 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -951,5 +975,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Arithmetic', question: 'What is 30% of 250?', options: ['65', '70', '75', '80'], correctIndex: 2, explanation: '30% of 250 = (30/100) × 250 = 75.' },
     // General Awareness
     { section: 'General Awareness', question: 'Who is the ceremonial Head of State of India?', options: ['Prime Minister', 'Vice-President', 'Chief Justice', 'President'], correctIndex: 3, explanation: 'The President of India is the ceremonial Head of State.' },
+  ],
+  'ssc-cpo': [
+    // General Intelligence and Reasoning
+    { section: 'General Intelligence and Reasoning', question: 'Complete the series: 5, 10, 20, 40, ?', options: ['60', '70', '80', '90'], correctIndex: 2, explanation: 'Each term is double the previous term: 40 × 2 = 80.' },
+    // Quantitative Aptitude
+    { section: 'Quantitative Aptitude', question: 'What is 20% of 350?', options: ['60', '65', '70', '75'], correctIndex: 2, explanation: '20% of 350 = (20/100) × 350 = 70.' },
   ],
 };

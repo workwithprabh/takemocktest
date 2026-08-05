@@ -432,6 +432,29 @@ const RPF_CONSTABLE_CBT_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC CPO question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SSC CPO Paper 1 syllabus and pattern.',
+  },
+  {
+    question: 'Is there a separate timer for each Paper 1 section?',
+    answer: 'Yes. Each of the four sections — General Intelligence and Reasoning, General Knowledge and General Awareness, Quantitative Aptitude, and English Comprehension — has its own separately timed 30-minute window. You cannot shift unused time from one section to another.',
+  },
+  {
+    question: 'What comes after Paper 1 in the selection process?',
+    answer: 'Candidates who clear Paper 1 proceed to a Physical Standard Test (PST) and Physical Endurance Test (PET), followed by Paper 2 (English Language and Comprehension) and a Detailed Medical Examination (DME).',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -450,6 +473,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'upsc-cse/paper-1': UPSC_CSE_PAPER1_FULL_MOCK_FAQS,
   'upsc-cse/paper-2': UPSC_CSE_PAPER2_FULL_MOCK_FAQS,
   'rpf-constable/cbt': RPF_CONSTABLE_CBT_FULL_MOCK_FAQS,
+  'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
