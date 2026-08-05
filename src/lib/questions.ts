@@ -85,6 +85,9 @@ import { UPSC_CSE_PAPER_2_LOGICAL_REASONING_1 } from './question-banks/upsc-cse-
 import { UPSC_CSE_PAPER_2_DECISION_MAKING_1 } from './question-banks/upsc-cse-paper-2-decision-making-1';
 import { UPSC_CSE_PAPER_2_MENTAL_ABILITY_1 } from './question-banks/upsc-cse-paper-2-mental-ability-1';
 import { UPSC_CSE_PAPER_2_NUMERACY_DATA_INTERPRETATION_1 } from './question-banks/upsc-cse-paper-2-numeracy-data-interpretation-1';
+import { RPF_CONSTABLE_CBT_ARITHMETIC_1 } from './question-banks/rpf-constable-cbt-arithmetic-1';
+import { RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rpf-constable-cbt-general-intelligence-reasoning-1';
+import { RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-constable-cbt-general-awareness-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -343,6 +346,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'upsc-cse/paper-2-decision-making-sectional-1': UPSC_CSE_PAPER_2_DECISION_MAKING_1,
   'upsc-cse/paper-2-mental-ability-sectional-1': UPSC_CSE_PAPER_2_MENTAL_ABILITY_1,
   'upsc-cse/paper-2-numeracy-data-interpretation-sectional-1': UPSC_CSE_PAPER_2_NUMERACY_DATA_INTERPRETATION_1,
+  'rpf-constable/cbt-full-mock-1': [
+    ...RPF_CONSTABLE_CBT_ARITHMETIC_1,
+    ...RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+    ...RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1,
+  ],
+  'rpf-constable/cbt-arithmetic-sectional-1': RPF_CONSTABLE_CBT_ARITHMETIC_1,
+  'rpf-constable/cbt-general-intelligence-reasoning-sectional-1': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'rpf-constable/cbt-general-awareness-sectional-1': RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -519,6 +530,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 80
     : testId.includes('upsc-cse/paper-1-full-mock')
     ? 100
+    : testId.includes('rpf-constable/cbt-full-mock')
+    ? 120
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -561,6 +574,9 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
                 : testId.includes('logical-reasoning') ? 22
                   : testId.includes('decision-making') ? 6
                     : testId.includes('mental-ability') ? 8 : 20
+          : testId.includes('rpf-constable')
+            ? testId.includes('arithmetic') ? 35
+              : testId.includes('general-intelligence-reasoning') ? 35 : 50
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -671,6 +687,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General Intelligence and Reasoning', count: 25 },
     { section: 'General Awareness', count: 15 },
     { section: 'General Science', count: 30 },
+  ],
+  'rpf-constable': [
+    { section: 'Arithmetic', count: 35 },
+    { section: 'General Intelligence and Reasoning', count: 35 },
+    { section: 'General Awareness', count: 50 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -924,5 +945,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'History of India and Indian National Movement', question: 'In which year was the Indian National Congress founded?', options: ['1875', '1885', '1895', '1905'], correctIndex: 1, explanation: 'The Indian National Congress was founded in 1885.' },
     // Basic numeracy and Data interpretation
     { section: 'Basic numeracy and Data interpretation', question: 'What is 20% of 250?', options: ['40', '45', '50', '55'], correctIndex: 2, explanation: '20% of 250 = (20/100) × 250 = 50.' },
+  ],
+  'rpf-constable': [
+    // Arithmetic
+    { section: 'Arithmetic', question: 'What is 30% of 250?', options: ['65', '70', '75', '80'], correctIndex: 2, explanation: '30% of 250 = (30/100) × 250 = 75.' },
+    // General Awareness
+    { section: 'General Awareness', question: 'Who is the ceremonial Head of State of India?', options: ['Prime Minister', 'Vice-President', 'Chief Justice', 'President'], correctIndex: 3, explanation: 'The President of India is the ceremonial Head of State.' },
   ],
 };

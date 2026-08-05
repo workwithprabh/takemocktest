@@ -13,7 +13,8 @@ export type ExamSlug =
   | 'ibps-rrb-officer-scale-1'
   | 'sbi-clerk'
   | 'rrb-je'
-  | 'upsc-cse';
+  | 'upsc-cse'
+  | 'rpf-constable';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -87,6 +88,8 @@ const SSC_GD_CONSTABLE_2026_NOTICE =
 const SBI_CLERK_2026_NOTICE = 'https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf';
 const RRB_JE_2025_NOTICE = 'https://web.archive.org/web/2025/https://www.rrbcdg.gov.in/uploads/2025/05-JE/052025JE-CEN.pdf';
 const UPSC_CSE_2026_NOTICE = 'https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf';
+const RPF_CONSTABLE_2024_NOTICE =
+  'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Constable-02-2024_English.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -2376,6 +2379,81 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             duration: 30,
             marksPerCorrect: 2.5,
             negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'rpf-constable': {
+    slug: 'rpf-constable',
+    name: 'RPF Constable',
+    fullName: 'Railway Protection Force — Constable',
+    category: 'Railways',
+    stages: [
+      {
+        id: 'cbt',
+        name: 'CBT',
+        pattern: {
+          status: 'official',
+          cycle: 'CEN No. RPF 02/2024',
+          sections: ['Arithmetic', 'General Intelligence and Reasoning', 'General Awareness'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 90,
+          negativeMarking: 0.333,
+          note: 'The CBT is a common screening stage for RPF Constable, RPF/RPSF. Candidates shortlisted on CBT performance proceed to a Physical Efficiency Test (PET) and Physical Measurement Test (PMT), both qualifying only, followed by Document Verification and a Medical Examination.',
+          sectionBreakdown: [
+            { name: 'Arithmetic', questions: 35, marks: 35, duration: 26 },
+            { name: 'General Intelligence and Reasoning', questions: 35, marks: 35, duration: 26 },
+            { name: 'General Awareness', questions: 50, marks: 50, duration: 38 },
+          ],
+          timerNote: 'Single 90-minute timer for all three sections combined (no sectional lock).',
+          sourceUrl: RPF_CONSTABLE_2024_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbt-full-mock-1',
+            name: 'CBT Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 90,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbt-arithmetic-sectional-1',
+            name: 'Arithmetic Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Arithmetic',
+            duration: 26,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbt-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 26,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbt-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 38,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
             checkedOn: '5 August 2026',
           },
         ],

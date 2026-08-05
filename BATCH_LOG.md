@@ -313,3 +313,45 @@ sectionals). Browser walkthrough confirmed both papers' single 120-minute compos
 (no "SECTION X/Y" lock UI), correct scoring on CSAT specifically (1/80 → 2.50/200, matching
 its non-standard 2.5-marks-per-question), and section-wise caps summing correctly to each
 paper's 200-mark total. Added two 5-question FAQ sets (one per paper) and an `llms.txt` line.
+
+## 2026-08-05 — RPF Constable (Batch 16, live session)
+
+Added RPF Constable CBT: Arithmetic (35 Q), General Intelligence and Reasoning (35 Q),
+General Awareness (50 Q), wired into 1 full mock (120 Q, single combined 90-minute timer —
+no sectional lock) + 3 sectionals matching official per-section durations (26/26/38 min).
+
+**Source:** Railway Recruitment Board Secunderabad's official CEN No. RPF 02/2024 notification
+PDF (parsed with `pdftotext -layout`, WebFetch used only to trigger the local download since
+it can't read binary PDFs directly) — confirmed the exact official table: Arithmetic 35Q/35
+marks/26 min, General Intelligence and Reasoning 35Q/35 marks/26 min, General Awareness
+50Q/50 marks/38 min, composite 90 min total, 1/3 negative marking.
+
+**Errors caught and fixed:**
+- The 120Q full-mock count is non-standard against most other exams' 100Q catchall — same
+  lesson as UPSC CSAT's 80Q in Batch 15: the new `expectedCount` branches (both in
+  `questions.ts`'s runtime ternary and `audit-question-banks.mjs`'s build-time logic) had to
+  be inserted *before* the generic `full-mock ? 100` fallback, or they'd silently intercept
+  and misvalidate the count.
+- **Highest duplicate-collision rate of the project so far.** RPF Constable's sections
+  overlap almost exactly with SSC GD Constable's (already heavily saturated against the rest
+  of the ~2,300-question corpus), so drafts collided repeatedly even after pre-checking
+  against the closest sibling bank. Took 3 full rounds against `qa:questions` to clear:
+  Round 1 caught 3 GI&R collisions against `rbi-assistant-prelims-reasoning-ability-1.ts`
+  (one replacement itself collided a second time before landing clean); Round 2 caught 5 more
+  against `rrb-je`, `rrb-ntpc`, `ssc-chsl`, and `ssc-mts` banks (two of those replacements
+  also needed a second attempt). Used the audit script's `--dump --bank=<name>` flag for the
+  first time this session to pull exact question text by bank name when the plain error
+  report's line numbers didn't map cleanly back to source lines — worth reaching for earlier
+  in future high-collision batches instead of only after the report proves hard to read.
+- Answer-position rebalancing needed an unusually large pass: General Awareness started at
+  8/31/10/1 (the worst skew seen this session) before ~18 option-reorder edits brought it to
+  13/13/12/12. Arithmetic and GI&R needed smaller corrective passes (7 and 9 edits).
+
+**Verified:** all 89 banks / 2,450 questions pass `qa:questions` clean (zero cross-file
+duplicate-text or duplicate-ID failures on the final run); `npm run build` clean static
+export. Browser walkthrough confirmed the mock-test hub renders all 4 tests as
+syllabus-checked with correct Q-counts/durations, the exam-pattern page's section table
+matches the official split, the full mock's single 90-minute composite timer shows no
+sectional-lock UI, and a live attempt (1 correct / 0 wrong / 119 unattempted) scored
+1.00/120 with section-wise caps summing correctly to 35.00 + 35.00 + 50.00 = 120. Added a
+5-question FAQ set and an `llms.txt` line.

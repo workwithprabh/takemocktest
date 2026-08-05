@@ -21,6 +21,7 @@ Every checked question includes a source record (official notification/syllabus 
 - [SBI Clerk](https://takemocktest.com/in/sbi-clerk/mock-test): Prelims (1 full mock + 3 sectional tests + 2 quick timed tests), 3 separately-timed 20-minute sections (English Language, Numerical Ability, Reasoning Ability) — sectional lock, not a combined timer — qualifying stage only, Mains marks decide the final merit list
 - [RRB Junior Engineer / DMS / CMA](https://takemocktest.com/in/rrb-je/mock-test): CBT 1 (1 full mock + 4 sectional tests), single 90-minute combined timer, common screening stage only — branch-specific CBT 2 decides the final merit list
 - [UPSC Civil Services Preliminary](https://takemocktest.com/in/upsc-cse/mock-test): GS Paper I (1 full mock + 7 sectional tests, 100Q/200 marks/120 min) and CSAT Paper II (1 full mock + 6 sectional tests, 80Q/200 marks/120 min, qualifying only at 33%) — both single-timer papers with no sectional lock
+- [RPF Constable](https://takemocktest.com/in/rpf-constable/mock-test): CBT (1 full mock + 3 sectional tests, 120Q/120 marks/90 min), single combined timer, 1/3 negative marking, followed by a non-written PET/PMT, document verification, and medical examination
 
 ## Exam information pages
 

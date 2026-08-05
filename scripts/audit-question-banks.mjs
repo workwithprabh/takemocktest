@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12])-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -70,7 +70,10 @@ for (const { file, questions } of banks) {
     : file.startsWith('upsc-cse-paper-2-logical-reasoning-') ? 22
     : file.startsWith('upsc-cse-paper-2-decision-making-') ? 6
     : file.startsWith('upsc-cse-paper-2-mental-ability-') ? 8
-    : file.startsWith('upsc-cse-paper-2-numeracy-data-interpretation-') ? 20 : 25;
+    : file.startsWith('upsc-cse-paper-2-numeracy-data-interpretation-') ? 20
+    : file.startsWith('rpf-constable-cbt-arithmetic-') ? 35
+    : file.startsWith('rpf-constable-cbt-general-intelligence-reasoning-') ? 35
+    : file.startsWith('rpf-constable-cbt-general-awareness-') ? 50 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

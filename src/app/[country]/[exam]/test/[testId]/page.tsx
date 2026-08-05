@@ -409,6 +409,29 @@ const UPSC_CSE_PAPER2_FULL_MOCK_FAQS = [
   },
 ];
 
+const RPF_CONSTABLE_CBT_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RPF question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RPF Constable CBT syllabus and pattern.',
+  },
+  {
+    question: 'Is there a separate timer for each CBT section?',
+    answer: 'No. RPF Constable CBT uses a single 90-minute timer for all three sections combined, with no sectional lock — you can move between Arithmetic, General Intelligence and Reasoning, and General Awareness questions freely.',
+  },
+  {
+    question: 'What comes after the CBT in the selection process?',
+    answer: 'Candidates who qualify the CBT proceed to a Physical Efficiency Test (PET) and Physical Measurement Test (PMT), both qualifying only, followed by Document Verification and a Medical Examination.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.333) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -426,6 +449,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rrb-je/cbt-1': RRB_JE_CBT1_FULL_MOCK_FAQS,
   'upsc-cse/paper-1': UPSC_CSE_PAPER1_FULL_MOCK_FAQS,
   'upsc-cse/paper-2': UPSC_CSE_PAPER2_FULL_MOCK_FAQS,
+  'rpf-constable/cbt': RPF_CONSTABLE_CBT_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
