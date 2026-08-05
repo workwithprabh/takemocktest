@@ -2152,7 +2152,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'GS Paper I',
         pattern: {
           status: 'official',
-          cycle: 'CSE 2026 (Examination Notice No. 05/2026-CSE)',
+          cycle: 'CSE 2026',
           sections: [
             'History of India and Indian National Movement',
             'Indian and World Geography',
@@ -2275,7 +2275,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'CSAT (Paper II)',
         pattern: {
           status: 'official',
-          cycle: 'CSE 2026 (Examination Notice No. 05/2026-CSE)',
+          cycle: 'CSE 2026',
           sections: [
             'Comprehension',
             'Interpersonal skills including communication skills',
