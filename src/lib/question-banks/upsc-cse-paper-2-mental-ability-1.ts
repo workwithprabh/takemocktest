@@ -1,0 +1,19 @@
+import type { Question } from '../questions';
+
+const source = {
+  kind: 'original' as const,
+  reference: 'Civil Services Examination, 2026 official notification (Examination Notice No. 05/2026-CSE) — Preliminary Examination, CSAT (General Studies Paper II) syllabus: General mental ability',
+  url: 'https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf',
+  checkedOn: '5 August 2026',
+};
+
+export const UPSC_CSE_PAPER_2_MENTAL_ABILITY_1: Question[] = [
+  { id: 'upsc-cse-p2-ma-001', section: 'General mental ability', topic: 'Calendar', difficulty: 'medium', question: 'If 1 January 2024 was a Monday, what day of the week was 1 January 2025?', options: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'], correctIndex: 1, explanation: '2024 is a leap year with 366 days. Since 366 mod 7 = 2, the day of the week advances by 2 from Monday, giving Wednesday.', source },
+  { id: 'upsc-cse-p2-ma-002', section: 'General mental ability', topic: 'Clock', difficulty: 'easy', question: 'What is the angle between the hour and minute hands of a clock at exactly 4:00?', options: ['90°', '100°', '110°', '120°'], correctIndex: 3, explanation: 'At 4:00, the hour hand is at 4 × 30° = 120° and the minute hand is at 0°, giving an angle of 120° between them.', source },
+  { id: 'upsc-cse-p2-ma-003', section: 'General mental ability', topic: 'Ages', difficulty: 'medium', question: "A father's present age is 3 times his son's present age. After 12 years, the father's age will be twice his son's age. What is the son's present age?", options: ['10 years', '12 years', '14 years', '16 years'], correctIndex: 1, explanation: 'Let the son\'s age be x, so the father\'s age is 3x. After 12 years: 3x + 12 = 2(x + 12), which gives x = 12.', source },
+  { id: 'upsc-cse-p2-ma-004', section: 'General mental ability', topic: 'Averages', difficulty: 'medium', question: 'The average of 5 consecutive even numbers is 24. What is the largest of these numbers?', options: ['26', '27', '28', '30'], correctIndex: 2, explanation: 'For 5 consecutive even numbers, the average equals the middle number, 24. The numbers are 20, 22, 24, 26, 28, so the largest is 28.', source },
+  { id: 'upsc-cse-p2-ma-005', section: 'General mental ability', topic: 'Number Patterns', difficulty: 'medium', question: 'Which of the following numbers does not belong with the others: 17, 19, 23, 27?', options: ['17', '19', '23', '27'], correctIndex: 3, explanation: '17, 19, and 23 are all prime numbers, while 27 (3 × 9) is composite.', source },
+  { id: 'upsc-cse-p2-ma-006', section: 'General mental ability', topic: 'Logical Puzzles', difficulty: 'hard', question: "In a two-digit number, the sum of the digits is 9. If the digits are reversed, the new number is 27 more than the original number. What is the original number?", options: ['27', '36', '45', '54'], correctIndex: 1, explanation: 'Let the digits be a and b, with a + b = 9. Reversing gives (10b + a) − (10a + b) = 9(b − a) = 27, so b − a = 3. Solving gives a = 3, b = 6, so the original number is 36.', source },
+  { id: 'upsc-cse-p2-ma-007', section: 'General mental ability', topic: 'Averages', difficulty: 'medium', question: 'A shopkeeper mixes 20 kg of rice costing ₹40/kg with 30 kg of rice costing ₹60/kg. What is the average cost per kg of the mixture?', options: ['₹48', '₹50', '₹52', '₹54'], correctIndex: 2, explanation: 'Total cost = (20 × 40) + (30 × 60) = 800 + 1,800 = ₹2,600 for 50 kg. Average cost = 2,600 ÷ 50 = ₹52 per kg.', source },
+  { id: 'upsc-cse-p2-ma-008', section: 'General mental ability', topic: 'Ratio and Proportion', difficulty: 'easy', question: 'A sum of ₹1,500 is divided among A, B, and C in the ratio 2:3:5. What is C\'s share?', options: ['₹500', '₹600', '₹700', '₹750'], correctIndex: 3, explanation: 'The total number of parts is 2 + 3 + 5 = 10. C\'s share = (5/10) × 1,500 = ₹750.', source },
+];

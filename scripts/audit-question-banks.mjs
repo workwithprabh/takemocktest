@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12])-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -57,7 +57,20 @@ for (const { file, questions } of banks) {
     : file.startsWith('rrb-je-cbt1-mathematics-') ? 30
     : file.startsWith('rrb-je-cbt1-general-intelligence-reasoning-') ? 25
     : file.startsWith('rrb-je-cbt1-general-awareness-') ? 15
-    : file.startsWith('rrb-je-cbt1-general-science-') ? 30 : 25;
+    : file.startsWith('rrb-je-cbt1-general-science-') ? 30
+    : file.startsWith('upsc-cse-paper-1-history-') ? 15
+    : file.startsWith('upsc-cse-paper-1-geography-') ? 15
+    : file.startsWith('upsc-cse-paper-1-polity-') ? 15
+    : file.startsWith('upsc-cse-paper-1-economy-') ? 15
+    : file.startsWith('upsc-cse-paper-1-environment-') ? 12
+    : file.startsWith('upsc-cse-paper-1-science-') ? 13
+    : file.startsWith('upsc-cse-paper-1-current-affairs-') ? 15
+    : file.startsWith('upsc-cse-paper-2-comprehension-') ? 18
+    : file.startsWith('upsc-cse-paper-2-interpersonal-skills-') ? 6
+    : file.startsWith('upsc-cse-paper-2-logical-reasoning-') ? 22
+    : file.startsWith('upsc-cse-paper-2-decision-making-') ? 6
+    : file.startsWith('upsc-cse-paper-2-mental-ability-') ? 8
+    : file.startsWith('upsc-cse-paper-2-numeracy-data-interpretation-') ? 20 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

@@ -363,6 +363,52 @@ const RRB_JE_CBT1_FULL_MOCK_FAQS = [
   },
 ];
 
+const UPSC_CSE_PAPER1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official UPSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official UPSC Civil Services Preliminary Examination syllabus for General Studies Paper I.',
+  },
+  {
+    question: 'Is GS Paper I divided into separately timed sections?',
+    answer: 'No. Like the real exam, GS Paper I uses a single 120-minute timer for the whole paper — there is no sectional lock between History, Geography, Polity, Economy, Environment, Science, and Current Affairs questions.',
+  },
+  {
+    question: 'Does UPSC publish an official question-wise split across GS Paper I topics?',
+    answer: "No. Unlike SSC or banking exams, UPSC does not publish a fixed number of questions per topic. The section-wise breakdown shown for this mock reflects how its questions are organized for practice, not an official UPSC-published distribution.",
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. Each question carries 2 marks, and a wrong answer deducts one-third (0.667) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do GS Paper I marks decide the final Prelims result?',
+    answer: 'Yes, in combination with CSAT. GS Paper I marks count towards the qualifying cut-off for the Main Examination, while CSAT (Paper II) is only qualifying at 33%.',
+  },
+];
+
+const UPSC_CSE_PAPER2_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official UPSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official UPSC CSAT (General Studies Paper II) syllabus.',
+  },
+  {
+    question: 'Is CSAT divided into separately timed sections?',
+    answer: 'No. Like the real exam, CSAT uses a single 120-minute timer for the whole paper — there is no sectional lock between Comprehension, Logical Reasoning, Decision Making, Mental Ability, and Numeracy questions.',
+  },
+  {
+    question: 'Does CSAT count towards the final Prelims merit?',
+    answer: 'No. CSAT (Paper II) is qualifying only — candidates must score at least 33% (66/200) to qualify for the Main Examination. It does not count towards the merit ranking; that is decided by GS Paper I.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. Each question carries 2.5 marks, and a wrong answer deducts one-third (0.833) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -378,6 +424,8 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ibps-rrb-officer-scale-1/prelims': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS,
   'sbi-clerk/prelims': SBI_CLERK_PRELIMS_FULL_MOCK_FAQS,
   'rrb-je/cbt-1': RRB_JE_CBT1_FULL_MOCK_FAQS,
+  'upsc-cse/paper-1': UPSC_CSE_PAPER1_FULL_MOCK_FAQS,
+  'upsc-cse/paper-2': UPSC_CSE_PAPER2_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

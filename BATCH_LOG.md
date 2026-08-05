@@ -244,3 +244,72 @@ question), a marked improvement over the trial-and-error approach used in earlie
 clean static export (5 new routes: 1 full mock + 4 sectionals). Added a 5-question FAQ set
 (explicitly noting the composite 90-minute timer, 1/3 negative marking, and that CBT-I is
 only a common screening stage ahead of a branch-specific CBT-II) and an `llms.txt` line.
+
+## 2026-08-05 — UPSC Civil Services Preliminary (Batch 15, live session)
+
+Added UPSC CSE Prelims — the first non-SSC/Banking/Railways exam on the site, and by far
+the largest single batch to date: GS Paper I (History 15Q, Geography 15Q, Polity 15Q,
+Economy 15Q, Environment 12Q, Science 13Q, Current Affairs 15Q = 100Q total) + CSAT Paper II
+(Comprehension 18Q, Interpersonal Skills 6Q, Logical Reasoning 22Q, Decision Making 6Q,
+Mental Ability 8Q, Numeracy & Data Interpretation 20Q = 80Q total), 180 original questions
+across 13 new bank files, wired into 2 full mocks + 13 sectionals.
+
+**Source:** UPSC's own Civil Services Examination, 2026 notification (Examination Notice
+No. 05/2026-CSE, dated 04.02.2026), fetched directly from `upsc.gov.in` and parsed with
+`pdftotext`. Confirmed directly from the PDF: both papers are objective/MCQ, 2 hours each,
+1/3 negative marking per wrong answer, no penalty for blanks; GS Paper I = 200 marks, CSAT
+Paper II = 200 marks and qualifying-only at 33% (66/200). The exact 100Q/80Q question counts
+and per-question mark values (2 marks for GS1, 2.5 for CSAT) are not spelled out in the
+notification text itself — these are cross-verified via 2 independent aggregator sources,
+consistent with each other and with the well-established, unchanged exam format.
+
+**Modeled as two stages, not sections:** unlike every prior exam on this site, GS Paper I
+and CSAT Paper II are genuinely separate objective papers (not sections within one combined
+timer), so they're modeled as two `TestStage` entries (`paper-1`, `paper-2`) under a single
+`upsc-cse` exam, following the precedent already set by SSC CGL Tier 1/Tier 2 and IBPS PO
+Prelims/Mains. Each paper uses its own single-timer composite pattern (120 min, no sectional
+lock) — required extending `fullMockLayouts`' existing special-case override mechanism (used
+for SSC CGL Tier 2 and IBPS PO Mains) to handle two different full-mock layouts under one
+exam slug, and adding explicit `upsc-cse/paper-1-full-mock`/`paper-2-full-mock` branches
+*before* the generic `full-mock ? 100` catchall in both `questions.ts` and the audit script
+(paper-2's 80Q would otherwise have been silently intercepted by that catchall).
+
+**New `category` value:** UPSC doesn't fit the existing `'SSC' | 'Banking' | 'Railways'`
+category type used for `ExamCard` badges, so added `'Civil Services'` to the union. Styled
+its badge using the `ink-*` monochrome tokens rather than adding a fourth off-system hex
+color family — flagging, not fixing, that the other three categories (`SSC`/`Banking`/
+`Railways`) still use hardcoded hex colors in `ExamCard.tsx`'s `CATEGORY_STYLES`, which
+appears to be a pre-existing gap from before the monochrome design sweep.
+
+**Honesty on the section-wise breakdown:** UPSC does not publish an official per-topic
+question split for either paper (unlike SSC/banking exams' official section tables). Rather
+than fabricate one, both stage patterns carry an explicit `note` on the exam-pattern page
+stating that the breakdown shown "reflects how this mock test's questions are organized,
+not an official UPSC-published distribution" — while still citing the real, verifiable
+facts (marks, duration, negative marking, qualifying threshold) as officially sourced.
+
+**UPSC-authentic question style:** leaned into UPSC's real "Consider the following
+statements... Which of the statements given above is/are correct?" and "assertion-reason"
+multi-statement format for a meaningful share of questions, rather than only direct-recall
+one-liners — both for authenticity to the actual exam's difficulty/style and because it
+naturally produced content distinct from the simpler direct-fact phrasing already used
+across the SSC/banking/railway General Awareness banks.
+
+**Collision handling:** GS Paper I's History/Geography/Polity/Economy/Science topics
+overlap heavily with existing SSC/banking/railway General Awareness content. Caught and
+replaced ~15 real collisions before finalizing, including several facts saturated 2-3× over
+already (Article 280/Finance Commission, Comptroller and Auditor-General/Article 148,
+Chandrayaan-3/LVM3, Aditya-L1/Lagrange point, Beriberi/Thiamine, Gaganyaan/LEO, "121, 144,
+169, 200" classification, a train-speed problem with the exact same numbers) — each
+replaced with a genuinely distinct fact/scenario rather than a reworded version of the same
+one. CSAT's content (passage-based comprehension, decision-making scenarios, data
+interpretation tables) is structurally original and had no meaningful collision risk.
+
+**Verified:** all 86 banks / 2,330 questions pass `qa:questions` clean (zero cross-file
+duplicate-text failures on the final run — only two within-file duplicates caught and fixed
+along the way, plus the expected first-pass answer-position rebalancing across all 13 new
+banks); `npm run build` clean static export (506 pages, 18 new routes: 2 full mocks + 13
+sectionals). Browser walkthrough confirmed both papers' single 120-minute composite timers
+(no "SECTION X/Y" lock UI), correct scoring on CSAT specifically (1/80 → 2.50/200, matching
+its non-standard 2.5-marks-per-question), and section-wise caps summing correctly to each
+paper's 200-mark total. Added two 5-question FAQ sets (one per paper) and an `llms.txt` line.

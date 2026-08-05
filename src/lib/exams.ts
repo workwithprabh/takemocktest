@@ -12,7 +12,8 @@ export type ExamSlug =
   | 'ssc-gd-constable'
   | 'ibps-rrb-officer-scale-1'
   | 'sbi-clerk'
-  | 'rrb-je';
+  | 'rrb-je'
+  | 'upsc-cse';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -61,7 +62,7 @@ export interface ExamConfig {
   slug: ExamSlug;
   name: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services';
   stages: TestStage[];
 }
 
@@ -85,6 +86,7 @@ const SSC_GD_CONSTABLE_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf';
 const SBI_CLERK_2026_NOTICE = 'https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf';
 const RRB_JE_2025_NOTICE = 'https://web.archive.org/web/2025/https://www.rrbcdg.gov.in/uploads/2025/05-JE/052025JE-CEN.pdf';
+const UPSC_CSE_2026_NOTICE = 'https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -2136,6 +2138,247 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           note: 'The branch-specific CBT 2 pattern is under review before this stage is published.',
         },
         tests: [],
+      },
+    ],
+  },
+  'upsc-cse': {
+    slug: 'upsc-cse',
+    name: 'UPSC CSE',
+    fullName: 'Union Public Service Commission — Civil Services Examination',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'GS Paper I',
+        pattern: {
+          status: 'official',
+          cycle: 'CSE 2026 (Examination Notice No. 05/2026-CSE)',
+          sections: [
+            'History of India and Indian National Movement',
+            'Indian and World Geography',
+            'Indian Polity and Governance',
+            'Economic and Social Development',
+            'Environmental Ecology, Bio-diversity and Climate Change',
+            'General Science',
+            'Current events of national and international importance',
+          ],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.667,
+          note: "GS Paper I marks count towards the qualifying threshold for the Main Examination. UPSC does not publish an official question-wise split across its syllabus topics — the breakdown below reflects how this mock test's questions are organized, not an official UPSC-published distribution.",
+          sectionBreakdown: [
+            { name: 'History of India and Indian National Movement', questions: 15, marks: 30, duration: 18 },
+            { name: 'Indian and World Geography', questions: 15, marks: 30, duration: 18 },
+            { name: 'Indian Polity and Governance', questions: 15, marks: 30, duration: 18 },
+            { name: 'Economic and Social Development', questions: 15, marks: 30, duration: 18 },
+            { name: 'Environmental Ecology, Bio-diversity and Climate Change', questions: 12, marks: 24, duration: 14 },
+            { name: 'General Science', questions: 13, marks: 26, duration: 16 },
+            { name: 'Current events of national and international importance', questions: 15, marks: 30, duration: 18 },
+          ],
+          timerNote: 'Single 120-minute timer for the whole paper — GS Paper I is not divided into separately timed sections.',
+          sourceUrl: UPSC_CSE_2026_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'paper-1-full-mock-1',
+            name: 'GS Paper I Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-history-sectional-1',
+            name: 'History Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'History of India and Indian National Movement',
+            duration: 18,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-geography-sectional-1',
+            name: 'Geography Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Indian and World Geography',
+            duration: 18,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-polity-sectional-1',
+            name: 'Polity Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Indian Polity and Governance',
+            duration: 18,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-economy-sectional-1',
+            name: 'Economy Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Economic and Social Development',
+            duration: 18,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-environment-sectional-1',
+            name: 'Environment Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Environmental Ecology, Bio-diversity and Climate Change',
+            duration: 14,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-science-sectional-1',
+            name: 'Science Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Science',
+            duration: 16,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-1-current-affairs-sectional-1',
+            name: 'Current Affairs Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Current events of national and international importance',
+            duration: 18,
+            marksPerCorrect: 2,
+            negativeMarking: 0.667,
+            checkedOn: '5 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'paper-2',
+        name: 'CSAT (Paper II)',
+        pattern: {
+          status: 'official',
+          cycle: 'CSE 2026 (Examination Notice No. 05/2026-CSE)',
+          sections: [
+            'Comprehension',
+            'Interpersonal skills including communication skills',
+            'Logical reasoning and analytical ability',
+            'Decision making and problem solving',
+            'General mental ability',
+            'Basic numeracy and Data interpretation',
+          ],
+          totalQuestions: 80,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.833,
+          note: "Paper II (CSAT) is qualifying only — candidates must score at least 33% (66/200) to qualify for the Main Examination; it does not count towards merit ranking. UPSC does not publish an official question-wise split across CSAT's syllabus topics — the breakdown below reflects how this mock test's questions are organized, not an official UPSC-published distribution.",
+          sectionBreakdown: [
+            { name: 'Comprehension', questions: 18, marks: 45, duration: 27 },
+            { name: 'Interpersonal skills including communication skills', questions: 6, marks: 15, duration: 9 },
+            { name: 'Logical reasoning and analytical ability', questions: 22, marks: 55, duration: 33 },
+            { name: 'Decision making and problem solving', questions: 6, marks: 15, duration: 9 },
+            { name: 'General mental ability', questions: 8, marks: 20, duration: 12 },
+            { name: 'Basic numeracy and Data interpretation', questions: 20, marks: 50, duration: 30 },
+          ],
+          timerNote: 'Single 120-minute timer for the whole paper — CSAT is not divided into separately timed sections.',
+          sourceUrl: UPSC_CSE_2026_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'paper-2-full-mock-1',
+            name: 'CSAT Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            marksPerCorrect: 2.5,
+            negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-2-comprehension-sectional-1',
+            name: 'Comprehension Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Comprehension',
+            duration: 27,
+            marksPerCorrect: 2.5,
+            negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-2-interpersonal-skills-sectional-1',
+            name: 'Interpersonal Skills Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Interpersonal skills including communication skills',
+            duration: 9,
+            marksPerCorrect: 2.5,
+            negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-2-logical-reasoning-sectional-1',
+            name: 'Logical Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Logical reasoning and analytical ability',
+            duration: 33,
+            marksPerCorrect: 2.5,
+            negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-2-decision-making-sectional-1',
+            name: 'Decision Making Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Decision making and problem solving',
+            duration: 9,
+            marksPerCorrect: 2.5,
+            negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-2-mental-ability-sectional-1',
+            name: 'Mental Ability Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General mental ability',
+            duration: 12,
+            marksPerCorrect: 2.5,
+            negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'paper-2-numeracy-data-interpretation-sectional-1',
+            name: 'Numeracy and Data Interpretation Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Basic numeracy and Data interpretation',
+            duration: 30,
+            marksPerCorrect: 2.5,
+            negativeMarking: 0.833,
+            checkedOn: '5 August 2026',
+          },
+        ],
       },
     ],
   },

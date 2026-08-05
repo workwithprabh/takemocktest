@@ -72,6 +72,19 @@ import { RRB_JE_CBT1_MATHEMATICS_1 } from './question-banks/rrb-je-cbt1-mathemat
 import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-1';
 import { RRB_JE_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-je-cbt1-general-awareness-1';
 import { RRB_JE_CBT1_GENERAL_SCIENCE_1 } from './question-banks/rrb-je-cbt1-general-science-1';
+import { UPSC_CSE_PAPER_1_HISTORY_1 } from './question-banks/upsc-cse-paper-1-history-1';
+import { UPSC_CSE_PAPER_1_GEOGRAPHY_1 } from './question-banks/upsc-cse-paper-1-geography-1';
+import { UPSC_CSE_PAPER_1_POLITY_1 } from './question-banks/upsc-cse-paper-1-polity-1';
+import { UPSC_CSE_PAPER_1_ECONOMY_1 } from './question-banks/upsc-cse-paper-1-economy-1';
+import { UPSC_CSE_PAPER_1_ENVIRONMENT_1 } from './question-banks/upsc-cse-paper-1-environment-1';
+import { UPSC_CSE_PAPER_1_SCIENCE_1 } from './question-banks/upsc-cse-paper-1-science-1';
+import { UPSC_CSE_PAPER_1_CURRENT_AFFAIRS_1 } from './question-banks/upsc-cse-paper-1-current-affairs-1';
+import { UPSC_CSE_PAPER_2_COMPREHENSION_1 } from './question-banks/upsc-cse-paper-2-comprehension-1';
+import { UPSC_CSE_PAPER_2_INTERPERSONAL_SKILLS_1 } from './question-banks/upsc-cse-paper-2-interpersonal-skills-1';
+import { UPSC_CSE_PAPER_2_LOGICAL_REASONING_1 } from './question-banks/upsc-cse-paper-2-logical-reasoning-1';
+import { UPSC_CSE_PAPER_2_DECISION_MAKING_1 } from './question-banks/upsc-cse-paper-2-decision-making-1';
+import { UPSC_CSE_PAPER_2_MENTAL_ABILITY_1 } from './question-banks/upsc-cse-paper-2-mental-ability-1';
+import { UPSC_CSE_PAPER_2_NUMERACY_DATA_INTERPRETATION_1 } from './question-banks/upsc-cse-paper-2-numeracy-data-interpretation-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -300,6 +313,36 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-je/cbt1-general-intelligence-reasoning-sectional-1': RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
   'rrb-je/cbt1-general-awareness-sectional-1': RRB_JE_CBT1_GENERAL_AWARENESS_1,
   'rrb-je/cbt1-general-science-sectional-1': RRB_JE_CBT1_GENERAL_SCIENCE_1,
+  'upsc-cse/paper-1-full-mock-1': [
+    ...UPSC_CSE_PAPER_1_HISTORY_1,
+    ...UPSC_CSE_PAPER_1_GEOGRAPHY_1,
+    ...UPSC_CSE_PAPER_1_POLITY_1,
+    ...UPSC_CSE_PAPER_1_ECONOMY_1,
+    ...UPSC_CSE_PAPER_1_ENVIRONMENT_1,
+    ...UPSC_CSE_PAPER_1_SCIENCE_1,
+    ...UPSC_CSE_PAPER_1_CURRENT_AFFAIRS_1,
+  ],
+  'upsc-cse/paper-1-history-sectional-1': UPSC_CSE_PAPER_1_HISTORY_1,
+  'upsc-cse/paper-1-geography-sectional-1': UPSC_CSE_PAPER_1_GEOGRAPHY_1,
+  'upsc-cse/paper-1-polity-sectional-1': UPSC_CSE_PAPER_1_POLITY_1,
+  'upsc-cse/paper-1-economy-sectional-1': UPSC_CSE_PAPER_1_ECONOMY_1,
+  'upsc-cse/paper-1-environment-sectional-1': UPSC_CSE_PAPER_1_ENVIRONMENT_1,
+  'upsc-cse/paper-1-science-sectional-1': UPSC_CSE_PAPER_1_SCIENCE_1,
+  'upsc-cse/paper-1-current-affairs-sectional-1': UPSC_CSE_PAPER_1_CURRENT_AFFAIRS_1,
+  'upsc-cse/paper-2-full-mock-1': [
+    ...UPSC_CSE_PAPER_2_COMPREHENSION_1,
+    ...UPSC_CSE_PAPER_2_INTERPERSONAL_SKILLS_1,
+    ...UPSC_CSE_PAPER_2_LOGICAL_REASONING_1,
+    ...UPSC_CSE_PAPER_2_DECISION_MAKING_1,
+    ...UPSC_CSE_PAPER_2_MENTAL_ABILITY_1,
+    ...UPSC_CSE_PAPER_2_NUMERACY_DATA_INTERPRETATION_1,
+  ],
+  'upsc-cse/paper-2-comprehension-sectional-1': UPSC_CSE_PAPER_2_COMPREHENSION_1,
+  'upsc-cse/paper-2-interpersonal-skills-sectional-1': UPSC_CSE_PAPER_2_INTERPERSONAL_SKILLS_1,
+  'upsc-cse/paper-2-logical-reasoning-sectional-1': UPSC_CSE_PAPER_2_LOGICAL_REASONING_1,
+  'upsc-cse/paper-2-decision-making-sectional-1': UPSC_CSE_PAPER_2_DECISION_MAKING_1,
+  'upsc-cse/paper-2-mental-ability-sectional-1': UPSC_CSE_PAPER_2_MENTAL_ABILITY_1,
+  'upsc-cse/paper-2-numeracy-data-interpretation-sectional-1': UPSC_CSE_PAPER_2_NUMERACY_DATA_INTERPRETATION_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -472,6 +515,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 80
     : testId.includes('ibps-rrb-officer-scale-1/prelims-full-mock')
     ? 80
+    : testId.includes('upsc-cse/paper-2-full-mock')
+    ? 80
+    : testId.includes('upsc-cse/paper-1-full-mock')
+    ? 100
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -501,6 +548,19 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('mathematics') ? 30
               : testId.includes('general-intelligence-reasoning') ? 25
                 : testId.includes('general-awareness') ? 15 : 30
+          : testId.includes('upsc-cse/paper-1')
+            ? testId.includes('history') ? 15
+              : testId.includes('geography') ? 15
+                : testId.includes('polity') ? 15
+                  : testId.includes('economy') ? 15
+                    : testId.includes('environment') ? 12
+                      : testId.includes('science') ? 13 : 15
+          : testId.includes('upsc-cse/paper-2')
+            ? testId.includes('comprehension') ? 18
+              : testId.includes('interpersonal-skills') ? 6
+                : testId.includes('logical-reasoning') ? 22
+                  : testId.includes('decision-making') ? 6
+                    : testId.includes('mental-ability') ? 8 : 20
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -626,12 +686,33 @@ const ibpsPoMainsLayout = [
   { section: 'English Language', count: 40 },
   { section: 'Data Analysis and Interpretation', count: 40 },
 ];
+const upscCsePaper1Layout = [
+  { section: 'History of India and Indian National Movement', count: 15 },
+  { section: 'Indian and World Geography', count: 15 },
+  { section: 'Indian Polity and Governance', count: 15 },
+  { section: 'Economic and Social Development', count: 15 },
+  { section: 'Environmental Ecology, Bio-diversity and Climate Change', count: 12 },
+  { section: 'General Science', count: 13 },
+  { section: 'Current events of national and international importance', count: 15 },
+];
+const upscCsePaper2Layout = [
+  { section: 'Comprehension', count: 18 },
+  { section: 'Interpersonal skills including communication skills', count: 6 },
+  { section: 'Logical reasoning and analytical ability', count: 22 },
+  { section: 'Decision making and problem solving', count: 6 },
+  { section: 'General mental ability', count: 8 },
+  { section: 'Basic numeracy and Data interpretation', count: 20 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
     : testId.includes('ibps-po/mains-full-mock')
       ? ibpsPoMainsLayout
-      : fullMockLayouts[testId.split('/')[0]];
+      : testId.includes('upsc-cse/paper-1-full-mock')
+        ? upscCsePaper1Layout
+        : testId.includes('upsc-cse/paper-2-full-mock')
+          ? upscCsePaper2Layout
+          : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -837,5 +918,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Mathematics', question: 'What is 25% of 320?', options: ['70', '75', '80', '85'], correctIndex: 2, explanation: '25% of 320 = (25/100) × 320 = 80.' },
     // General Science
     { section: 'General Science', question: 'What is the SI unit of energy?', options: ['Watt', 'Newton', 'Joule', 'Pascal'], correctIndex: 2, explanation: 'The joule is the SI unit of energy and work.' },
+  ],
+  'upsc-cse': [
+    // History of India and Indian National Movement
+    { section: 'History of India and Indian National Movement', question: 'In which year was the Indian National Congress founded?', options: ['1875', '1885', '1895', '1905'], correctIndex: 1, explanation: 'The Indian National Congress was founded in 1885.' },
+    // Basic numeracy and Data interpretation
+    { section: 'Basic numeracy and Data interpretation', question: 'What is 20% of 250?', options: ['40', '45', '50', '55'], correctIndex: 2, explanation: '20% of 250 = (20/100) × 250 = 50.' },
   ],
 };

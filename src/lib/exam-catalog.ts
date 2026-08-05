@@ -82,7 +82,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'UPSC & central services',
         exams: [
-          exam('UPSC Civil Services Preliminary', 'National'),
+          exam('UPSC Civil Services Preliminary', 'National', 'upsc-cse'),
           exam('UPSC Civil Services Main', 'National'),
           exam('UPSC Indian Forest Service', 'National'),
           exam('UPSC Engineering Services', 'National'),

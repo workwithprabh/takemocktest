@@ -34,6 +34,16 @@ const CATEGORY_STYLES = {
       </svg>
     ),
   },
+  'Civil Services': {
+    surface: 'bg-ink-100',
+    border: 'border-ink-300',
+    text: 'text-ink-700',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M12 3 3 7.5 12 12l9-4.5L12 3Zm-7 6v6c0 1.5 3 4 7 4s7-2.5 7-4V9M21 8v7" fill="none" stroke="currentColor" strokeWidth="1.7" />
+      </svg>
+    ),
+  },
 } as const;
 
 export default function ExamCard({ exam, country }: { exam: ExamConfig; country: string }) {
