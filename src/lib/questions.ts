@@ -65,6 +65,9 @@ import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1 } from './question-banks/
 import { SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1 } from './question-banks/ssc-gd-constable-cbe-english-hindi-1';
 import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-reasoning-1';
 import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-quantitative-aptitude-1';
+import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-clerk-prelims-english-language-1';
+import { SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/sbi-clerk-prelims-numerical-ability-1';
+import { SBI_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-clerk-prelims-reasoning-ability-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -275,6 +278,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'ibps-rrb-officer-scale-1/prelims-reasoning-sectional-1': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1,
   'ibps-rrb-officer-scale-1/prelims-quantitative-aptitude-sectional-1': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'sbi-clerk/prelims-full-mock-1': [
+    ...SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
+    ...SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
+    ...SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  ],
+  'sbi-clerk/prelims-english-language-sectional-1': SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
+  'sbi-clerk/prelims-numerical-ability-sectional-1': SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
+  'sbi-clerk/prelims-reasoning-ability-sectional-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -410,7 +421,21 @@ const IBPS_RRB_OS1_QUICK_TESTS: Record<string, Question[]> = {
   'ibps-rrb-officer-scale-1/prelims-quick-15min': ibpsRrbOs1QuickSlice(8, 5),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS);
+const SBI_CLERK_PRELIMS_POOLS: Record<string, Question[]> = {
+  'English Language': SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
+  'Numerical Ability': SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
+  'Reasoning Ability': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+};
+const SBI_CLERK_SECTION_ORDER = Object.keys(SBI_CLERK_PRELIMS_POOLS);
+function sbiClerkQuickSlice(perSection: number, offset: number): Question[] {
+  return SBI_CLERK_SECTION_ORDER.flatMap((section) => SBI_CLERK_PRELIMS_POOLS[section].slice(offset, offset + perSection));
+}
+const SBI_CLERK_QUICK_TESTS: Record<string, Question[]> = {
+  'sbi-clerk/prelims-quick-10min': sbiClerkQuickSlice(4, 0),
+  'sbi-clerk/prelims-quick-15min': sbiClerkQuickSlice(6, 4),
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -456,6 +481,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 20
           : testId.includes('ibps-rrb-officer-scale-1')
             ? 40
+          : testId.includes('sbi-clerk')
+            ? testId.includes('english-language') ? 30 : 35
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -555,6 +582,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   'ibps-rrb-officer-scale-1': [
     { section: 'Reasoning', count: 40 },
     { section: 'Quantitative Aptitude', count: 40 },
+  ],
+  'sbi-clerk': [
+    { section: 'English Language', count: 30 },
+    { section: 'Numerical Ability', count: 35 },
+    { section: 'Reasoning Ability', count: 35 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -769,5 +801,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Reasoning', question: 'Complete the series: 3, 9, 27, 81, ?', options: ['162', '216', '243', '324'], correctIndex: 2, explanation: 'Each term is triple the previous one: 81 × 3 = 243.' },
     // Quantitative Aptitude
     { section: 'Quantitative Aptitude', question: 'What is 18% of 500?', options: ['80', '85', '90', '95'], correctIndex: 2, explanation: '18% of 500 = (18/100) × 500 = 90.' },
+  ],
+  'sbi-clerk': [
+    // English Language
+    { section: 'English Language', question: "Choose the word most similar in meaning to 'SWIFT'.", options: ['Slow', 'Quick', 'Heavy', 'Quiet'], correctIndex: 1, explanation: "'Quick' is the closest synonym of 'swift'." },
+    // Numerical Ability
+    { section: 'Numerical Ability', question: 'What is 40% of 300?', options: ['100', '110', '120', '130'], correctIndex: 2, explanation: '40% of 300 = (40/100) × 300 = 120.' },
   ],
 };

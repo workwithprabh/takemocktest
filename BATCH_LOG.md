@@ -164,3 +164,37 @@ easier difficulty, per `SEO_PLAYBOOK.md`'s guidance to make every exam's copy ca
 that wouldn't be true with the exam swapped out) and an `llms.txt` line.
 
 **Batch roadmap checkbox:** ticked in the same commit.
+
+## 2026-08-05 — SBI Clerk (Batch 13, live session)
+
+Added SBI Clerk Prelims: English Language (30 Q) + Numerical Ability (35 Q) + Reasoning
+Ability (35 Q), wired into 1 full mock (100 Q, 3 sections each **separately timed 20
+minutes — sectional lock, not a composite timer**) + 3 sectionals + 2 quick timed tests.
+This is the first live exam on the site with a true sectional lock (`sectionDuration`)
+since SBI PO — every batch since Batch 9 had used the composite-timer pattern instead.
+
+**Source:** found the wrong PDF on the first attempt (an SBI Circle Based Officer
+advertisement dated 28 Jan 2026, coincidentally hosted at a similarly-named URL) —
+caught this by actually reading the parsed content ("Circle Based Officers", "JMGS-I")
+before trusting the numbers, then found and confirmed the correct one: SBI's own Junior
+Associate (Customer Support & Sales) 2025-26 advertisement, CRPD/CR/2025-26/06. Confirmed
+via `pdftotext`: Prelims = 100Q/100 marks/60 min total, English Language 30Q/30M/20min,
+Numerical Ability 35Q/35M/20min, Reasoning Ability 35Q/35M/20min, 0.25 negative marking.
+
+**Collision discipline held up well this time** — batch-grepped all 100 planned questions
+against the full corpus before writing any files, and `qa:questions` came back with **zero
+duplicate-text errors** on the first run (only answer-balance issues, which is expected and
+routine). Confirmed just how saturated common templates are: both idiom candidates
+("burn the midnight oil", "once in a blue moon") were already used 2-4× each and got
+replaced with original vocabulary-in-context items instead; a "Doctor is to Hospital"-style
+analogy and an "8, 27, 64, 100" classification item were avoided from the start based on
+Batch 11/12 lessons.
+
+**Verified:** all 69 banks / 2,050 questions pass `qa:questions` clean; `npm run build`
+clean static export (6 new routes: 1 full mock + 3 sectionals + 2 quick tests); browser
+walkthrough confirmed the sectional-lock UI (shows "SECTION 1/3", palette limited to the
+current section's questions, "X/30 in section · X/100 total" counter — a different and
+correctly distinct UI from the composite-timer exams) and correct 1-mark-per-question
+scoring (1/100 → 1.00/100, English Language section capped at 30.00/30.00). Added a
+5-question FAQ set (including an explicit call-out of the sectional-lock timer, since it's
+the first exam in several batches to use it) and an `llms.txt` line.

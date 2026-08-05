@@ -29,7 +29,7 @@ otherwise).
 
 **Live as of 2026-08-05:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
 rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
-ibps-rrb-officer-scale-1 (12 exams).
+ibps-rrb-officer-scale-1, sbi-clerk (13 exams).
 
 ## The queue (Government Jobs cluster, in order)
 
@@ -41,7 +41,7 @@ next one in the same run.
 - [x] IBPS RRB Office Assistant
 - [x] SSC GD Constable
 - [x] IBPS RRB Officer Scale I
-- [ ] SBI Clerk
+- [x] SBI Clerk
 - [ ] RRB Junior Engineer / DMS / CMA
 - [ ] UPSC Civil Services Preliminary
 - [ ] RPF Constable

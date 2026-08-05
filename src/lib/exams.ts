@@ -10,7 +10,8 @@ export type ExamSlug =
   | 'ssc-mts'
   | 'ibps-rrb-office-assistant'
   | 'ssc-gd-constable'
-  | 'ibps-rrb-officer-scale-1';
+  | 'ibps-rrb-officer-scale-1'
+  | 'sbi-clerk';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -81,6 +82,7 @@ const SSC_MTS_2025_RESULT_NOTICE =
 const IBPS_RRB_XIV_NOTICE = 'https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD-27.09.25.pdf';
 const SSC_GD_CONSTABLE_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf';
+const SBI_CLERK_2026_NOTICE = 'https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -1893,6 +1895,112 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             kind: 'sectional',
             status: 'checked',
             section: 'Quantitative Aptitude',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-quick-10min',
+            name: 'Quick Test — 10 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 10,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-quick-15min',
+            name: 'Quick Test — 15 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 15,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'mains',
+        name: 'Mains',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Mains pattern is under review before this stage is published.',
+        },
+        tests: [],
+      },
+    ],
+  },
+  'sbi-clerk': {
+    slug: 'sbi-clerk',
+    name: 'SBI Clerk',
+    fullName: 'State Bank of India — Junior Associate (Customer Support & Sales)',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'prelims',
+        name: 'Prelims',
+        pattern: {
+          status: 'official',
+          cycle: 'CRPD/CR/2025-26/06',
+          sections: ['English Language', 'Numerical Ability', 'Reasoning Ability'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 60,
+          negativeMarking: 0.25,
+          timerNote: '20 minutes per section',
+          note: 'Candidates must qualify each of the three separately timed sections. Prelims marks are used only for shortlisting; the final merit list is decided by Mains and a local-language test.',
+          sectionBreakdown: [
+            { name: 'English Language', questions: 30, marks: 30, duration: 20 },
+            { name: 'Numerical Ability', questions: 35, marks: 35, duration: 20 },
+            { name: 'Reasoning Ability', questions: 35, marks: 35, duration: 20 },
+          ],
+          sourceUrl: SBI_CLERK_2026_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'prelims-full-mock-1',
+            name: 'Prelims Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 60,
+            sectionDuration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-numerical-ability-sectional-1',
+            name: 'Numerical Ability Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Numerical Ability',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-reasoning-ability-sectional-1',
+            name: 'Reasoning Ability Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning Ability',
             duration: 20,
             marksPerCorrect: 1,
             negativeMarking: 0.25,

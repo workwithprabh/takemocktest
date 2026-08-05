@@ -18,6 +18,7 @@ Every checked question includes a source record (official notification/syllabus 
 - [IBPS RRB Office Assistant](https://takemocktest.com/in/ibps-rrb-office-assistant/mock-test): Prelims (1 full mock + 2 sectional tests + 2 quick timed tests), single 45-minute combined timer (no sectional lock), qualifying stage only — Mains marks decide the final merit list
 - [SSC GD Constable](https://takemocktest.com/in/ssc-gd-constable/mock-test): CBE (1 full mock + 4 sectional tests + 2 quick timed tests), single 60-minute combined timer, Matriculation-level questions, followed by a non-written PET/PST, medical exam, and document verification
 - [IBPS RRB Officer Scale I](https://takemocktest.com/in/ibps-rrb-officer-scale-1/mock-test): Prelims (1 full mock + 2 sectional tests + 2 quick timed tests), single 45-minute combined timer (no sectional lock), qualifying stage only — graduate-entry officer-level difficulty, higher than the IBPS RRB Office Assistant mock on this site
+- [SBI Clerk](https://takemocktest.com/in/sbi-clerk/mock-test): Prelims (1 full mock + 3 sectional tests + 2 quick timed tests), 3 separately-timed 20-minute sections (English Language, Numerical Ability, Reasoning Ability) — sectional lock, not a combined timer — qualifying stage only, Mains marks decide the final merit list
 
 ## Exam information pages
 

@@ -317,6 +317,29 @@ const IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS = [
   },
 ];
 
+const SBI_CLERK_PRELIMS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SBI question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SBI Junior Associate (Clerk) Prelims syllabus and pattern.',
+  },
+  {
+    question: 'How does the timer work?',
+    answer: 'Unlike the composite-timer exams on this site, SBI Clerk Prelims locks each of its 3 sections to its own 20-minute window — English Language, then Numerical Ability, then Reasoning Ability. You cannot move between sections or return to a completed one once its timer ends.',
+  },
+  {
+    question: 'Do Prelims marks count towards the final merit list?',
+    answer: 'No. SBI Clerk Prelims is qualifying only. The final merit list is decided by Mains marks alone, subject to clearing a local-language test.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -330,6 +353,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ibps-rrb-office-assistant/prelims': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS,
   'ssc-gd-constable/cbe': SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS,
   'ibps-rrb-officer-scale-1/prelims': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS,
+  'sbi-clerk/prelims': SBI_CLERK_PRELIMS_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
