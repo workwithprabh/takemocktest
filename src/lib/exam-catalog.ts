@@ -73,7 +73,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('RRB Group D / Level 1', 'National', 'rrb-group-d'),
           exam('RRB Assistant Loco Pilot', 'National'),
           exam('RRB Technician', 'National'),
-          exam('RRB Junior Engineer / DMS / CMA', 'National'),
+          exam('RRB Junior Engineer / DMS / CMA', 'National', 'rrb-je'),
           exam('RRB Paramedical Categories', 'National'),
           exam('RPF Sub-Inspector', 'National'),
           exam('RPF Constable', 'National'),

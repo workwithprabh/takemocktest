@@ -198,3 +198,49 @@ correctly distinct UI from the composite-timer exams) and correct 1-mark-per-que
 scoring (1/100 → 1.00/100, English Language section capped at 30.00/30.00). Added a
 5-question FAQ set (including an explicit call-out of the sectional-lock timer, since it's
 the first exam in several batches to use it) and an `llms.txt` line.
+
+## 2026-08-05 — RRB Junior Engineer / DMS / CMA (Batch 14, live session)
+
+Added RRB JE CBT-I: Mathematics (30 Q) + General Intelligence and Reasoning (25 Q) +
+General Awareness (15 Q) + General Science (30 Q), wired into 1 full mock (100 Q, single
+combined 90-minute timer — no sectional lock, matching the RRB NTPC/RRB Group D
+composite-timer pattern) + 4 sectionals.
+
+**Source:** RRB JE's current cycle (CEN 04/2026) has only a "tentative" detailed
+advertisement date (13 August 2026, after this batch's date) — no published notification
+yet. Used the most recent fully-published cycle instead: CEN No. 05/2025 (published 28 Oct
+2025), since exam pattern doesn't typically change cycle-to-cycle. Confirmed via
+`pdftotext`: CBT-I = 100Q/100 marks/90 min, Mathematics 30Q, General Intelligence and
+Reasoning 25Q, General Awareness 15Q, General Science 30Q, 0.333 negative marking — the
+section split was cross-checked against 2 independent aggregator sources (both consistent,
+summing correctly) since the primary PDF's table didn't extract cleanly with `-layout`.
+
+**RRBCDG link rot discovered:** the live URL for this notification
+(`rrbcdg.gov.in/uploads/2025/05-JE/052025JE-CEN.pdf`) 404s, and so does the landing page.
+Checked whether this was JE-specific — it isn't: the **already-live** RRB Group D source
+URL (`.../uploads/2025/09-LVL1/092025-CEN.pdf`, cited since Batch 5) now also 404s,
+pointing to a site-wide reorganization on rrbcdg.gov.in rather than a one-off broken link.
+Worked around it by citing the Wayback Machine snapshot
+(`web.archive.org/web/2025/https://www.rrbcdg.gov.in/uploads/2025/05-JE/052025JE-CEN.pdf`)
+instead, which still resolves to the correct 82-page PDF — first time this project has
+needed the Wayback fallback. **Flagging, not fixing:** the RRB Group D `sourceUrl` in
+`exams.ts` is now also a dead link and should get the same Wayback treatment in a future
+pass; out of scope for this one-exam-per-run batch.
+
+**Collision saturation, worse than usual:** RRB JE's CBT-I subjects are nearly identical to
+the already-live RRB Group D CBT (same 4 subjects: Mathematics, Reasoning, General
+Awareness, General Science), so dozens of first-draft questions collided on the initial
+grep pass — one number-series pattern ("2,6,12,20,30") collided **six separate times**
+across the corpus, and common GK facts (Article 32, Battle of Plassey, Quit India
+Movement, SI units of force/power/pressure, chemical symbols, "largest gland"/"smallest
+bone" trivia) were effectively exhausted. For General Science specifically, read the full
+text of the sibling `rrb-group-d-cbt-general-science-1.ts` bank directly to get its
+complete fact inventory, then deliberately picked facts not on that list — this produced
+only 1 duplicate-text failure out of 100 questions on the first `qa:questions` run (a
+"least populous state → Sikkim" GA question, replaced with a Sardar Sarovar Dam/Narmada
+question), a marked improvement over the trial-and-error approach used in earlier batches.
+
+**Verified:** all 73 banks / 2,150 questions pass `qa:questions` clean; `npm run build`
+clean static export (5 new routes: 1 full mock + 4 sectionals). Added a 5-question FAQ set
+(explicitly noting the composite 90-minute timer, 1/3 negative marking, and that CBT-I is
+only a common screening stage ahead of a branch-specific CBT-II) and an `llms.txt` line.

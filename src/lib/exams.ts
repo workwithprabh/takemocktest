@@ -11,7 +11,8 @@ export type ExamSlug =
   | 'ibps-rrb-office-assistant'
   | 'ssc-gd-constable'
   | 'ibps-rrb-officer-scale-1'
-  | 'sbi-clerk';
+  | 'sbi-clerk'
+  | 'rrb-je';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -83,6 +84,7 @@ const IBPS_RRB_XIV_NOTICE = 'https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV
 const SSC_GD_CONSTABLE_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf';
 const SBI_CLERK_2026_NOTICE = 'https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf';
+const RRB_JE_2025_NOTICE = 'https://web.archive.org/web/2025/https://www.rrbcdg.gov.in/uploads/2025/05-JE/052025JE-CEN.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -2035,6 +2037,103 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           status: 'review-pending',
           sections: [],
           note: 'The Mains pattern is under review before this stage is published.',
+        },
+        tests: [],
+      },
+    ],
+  },
+  'rrb-je': {
+    slug: 'rrb-je',
+    name: 'RRB Junior Engineer',
+    fullName: 'Railway Recruitment Board — Junior Engineer / Depot Material Superintendent / Chemical & Metallurgical Assistant',
+    category: 'Railways',
+    stages: [
+      {
+        id: 'cbt-1',
+        name: 'CBT 1',
+        pattern: {
+          status: 'official',
+          cycle: 'CEN No. 05/2025',
+          sections: ['Mathematics', 'General Intelligence and Reasoning', 'General Awareness', 'General Science'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 90,
+          negativeMarking: 0.333,
+          note: 'CBT 1 is a common screening test across all JE, DMS, and CMA posts. The CBT is followed by a 2nd Stage CBT (branch-specific technical questions), then Document Verification and a Medical Examination.',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 30, marks: 30, duration: 90 },
+            { name: 'General Intelligence and Reasoning', questions: 25, marks: 25, duration: 90 },
+            { name: 'General Awareness', questions: 15, marks: 15, duration: 90 },
+            { name: 'General Science', questions: 30, marks: 30, duration: 90 },
+          ],
+          timerNote: 'Single 90-minute timer for all four sections combined (no sectional lock).',
+          sourceUrl: RRB_JE_2025_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbt1-full-mock-1',
+            name: 'CBT 1 Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 90,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbt1-mathematics-sectional-1',
+            name: 'Mathematics Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Mathematics',
+            duration: 27,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbt1-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 23,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbt1-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 14,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'cbt1-general-science-sectional-1',
+            name: 'General Science Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Science',
+            duration: 27,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '5 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'cbt-2',
+        name: 'CBT 2',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The branch-specific CBT 2 pattern is under review before this stage is published.',
         },
         tests: [],
       },

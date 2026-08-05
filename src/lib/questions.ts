@@ -68,6 +68,10 @@ import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './ques
 import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-clerk-prelims-english-language-1';
 import { SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/sbi-clerk-prelims-numerical-ability-1';
 import { SBI_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-clerk-prelims-reasoning-ability-1';
+import { RRB_JE_CBT1_MATHEMATICS_1 } from './question-banks/rrb-je-cbt1-mathematics-1';
+import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-1';
+import { RRB_JE_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-je-cbt1-general-awareness-1';
+import { RRB_JE_CBT1_GENERAL_SCIENCE_1 } from './question-banks/rrb-je-cbt1-general-science-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -286,6 +290,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-clerk/prelims-english-language-sectional-1': SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
   'sbi-clerk/prelims-numerical-ability-sectional-1': SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
   'sbi-clerk/prelims-reasoning-ability-sectional-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'rrb-je/cbt1-full-mock-1': [
+    ...RRB_JE_CBT1_MATHEMATICS_1,
+    ...RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
+    ...RRB_JE_CBT1_GENERAL_AWARENESS_1,
+    ...RRB_JE_CBT1_GENERAL_SCIENCE_1,
+  ],
+  'rrb-je/cbt1-mathematics-sectional-1': RRB_JE_CBT1_MATHEMATICS_1,
+  'rrb-je/cbt1-general-intelligence-reasoning-sectional-1': RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-je/cbt1-general-awareness-sectional-1': RRB_JE_CBT1_GENERAL_AWARENESS_1,
+  'rrb-je/cbt1-general-science-sectional-1': RRB_JE_CBT1_GENERAL_SCIENCE_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -483,6 +497,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 40
           : testId.includes('sbi-clerk')
             ? testId.includes('english-language') ? 30 : 35
+          : testId.includes('rrb-je')
+            ? testId.includes('mathematics') ? 30
+              : testId.includes('general-intelligence-reasoning') ? 25
+                : testId.includes('general-awareness') ? 15 : 30
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -587,6 +605,12 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'English Language', count: 30 },
     { section: 'Numerical Ability', count: 35 },
     { section: 'Reasoning Ability', count: 35 },
+  ],
+  'rrb-je': [
+    { section: 'Mathematics', count: 30 },
+    { section: 'General Intelligence and Reasoning', count: 25 },
+    { section: 'General Awareness', count: 15 },
+    { section: 'General Science', count: 30 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -807,5 +831,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'English Language', question: "Choose the word most similar in meaning to 'SWIFT'.", options: ['Slow', 'Quick', 'Heavy', 'Quiet'], correctIndex: 1, explanation: "'Quick' is the closest synonym of 'swift'." },
     // Numerical Ability
     { section: 'Numerical Ability', question: 'What is 40% of 300?', options: ['100', '110', '120', '130'], correctIndex: 2, explanation: '40% of 300 = (40/100) × 300 = 120.' },
+  ],
+  'rrb-je': [
+    // Mathematics
+    { section: 'Mathematics', question: 'What is 25% of 320?', options: ['70', '75', '80', '85'], correctIndex: 2, explanation: '25% of 320 = (25/100) × 320 = 80.' },
+    // General Science
+    { section: 'General Science', question: 'What is the SI unit of energy?', options: ['Watt', 'Newton', 'Joule', 'Pascal'], correctIndex: 2, explanation: 'The joule is the SI unit of energy and work.' },
   ],
 };

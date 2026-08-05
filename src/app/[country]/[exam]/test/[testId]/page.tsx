@@ -340,6 +340,29 @@ const SBI_CLERK_PRELIMS_FULL_MOCK_FAQS = [
   },
 ];
 
+const RRB_JE_CBT1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RRB question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RRB Junior Engineer / DMS / CMA CBT-I syllabus and pattern.',
+  },
+  {
+    question: 'Is there a separate timer for each CBT-I section?',
+    answer: 'No. RRB JE CBT-I uses a single 90-minute timer for all four sections combined, with no sectional lock — you can move between Mathematics, General Intelligence and Reasoning, General Awareness, and General Science questions freely.',
+  },
+  {
+    question: 'Does CBT-I decide the final RRB JE merit list?',
+    answer: 'No. CBT-I is a common screening test used to shortlist candidates for CBT-II, which is discipline/branch-specific. The final merit is based on CBT-II, followed by Document Verification and a Medical Examination.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.333) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -354,6 +377,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-gd-constable/cbe': SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS,
   'ibps-rrb-officer-scale-1/prelims': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS,
   'sbi-clerk/prelims': SBI_CLERK_PRELIMS_FULL_MOCK_FAQS,
+  'rrb-je/cbt-1': RRB_JE_CBT1_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
