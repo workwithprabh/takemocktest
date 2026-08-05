@@ -9,7 +9,8 @@ export type ExamSlug =
   | 'rbi-assistant'
   | 'ssc-mts'
   | 'ibps-rrb-office-assistant'
-  | 'ssc-gd-constable';
+  | 'ssc-gd-constable'
+  | 'ibps-rrb-officer-scale-1';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -1836,6 +1837,98 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             checkedOn: '5 August 2026',
           },
         ],
+      },
+    ],
+  },
+  'ibps-rrb-officer-scale-1': {
+    slug: 'ibps-rrb-officer-scale-1',
+    name: 'IBPS RRB Officer Scale I',
+    fullName: 'Institute of Banking Personnel Selection — Regional Rural Banks, Officer Scale I (PO)',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'prelims',
+        name: 'Prelims',
+        pattern: {
+          status: 'official',
+          cycle: 'CRP RRBs XIV',
+          sections: ['Reasoning', 'Quantitative Aptitude'],
+          totalQuestions: 80,
+          totalMarks: 80,
+          duration: 45,
+          negativeMarking: 0.25,
+          timerNote: 'Composite 45 minutes for both sections combined — no sectional lock.',
+          sectionBreakdown: [
+            { name: 'Reasoning', questions: 40, marks: 40, duration: 25 },
+            { name: 'Quantitative Aptitude', questions: 40, marks: 40, duration: 20 },
+          ],
+          sourceUrl: IBPS_RRB_XIV_NOTICE,
+          checkedOn: '5 August 2026',
+        },
+        tests: [
+          {
+            id: 'prelims-full-mock-1',
+            name: 'Prelims Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 45,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-reasoning-sectional-1',
+            name: 'Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-quick-10min',
+            name: 'Quick Test — 10 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 10,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+          {
+            id: 'prelims-quick-15min',
+            name: 'Quick Test — 15 Minutes',
+            kind: 'quick',
+            status: 'checked',
+            duration: 15,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '5 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'mains',
+        name: 'Mains',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Mains pattern is under review before this stage is published.',
+        },
+        tests: [],
       },
     ],
   },

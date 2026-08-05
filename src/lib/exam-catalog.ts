@@ -53,7 +53,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('IBPS PO', 'National', 'ibps-po'),
           exam('IBPS Clerk / Customer Service Associate', 'National', 'ibps-clerk'),
           exam('IBPS Specialist Officer', 'National'),
-          exam('IBPS RRB Officer Scale I', 'National'),
+          exam('IBPS RRB Officer Scale I', 'National', 'ibps-rrb-officer-scale-1'),
           exam('IBPS RRB Office Assistant', 'National', 'ibps-rrb-office-assistant'),
           exam('SBI PO', 'National', 'sbi-po'),
           exam('SBI Clerk', 'National'),

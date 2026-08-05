@@ -122,3 +122,45 @@ a little over Google's typical ~60-char SERP display cutoff — this is a pre-ex
 site-wide pattern (not something this batch introduced) and changing it means touching the
 `pageMetadata()` title template used everywhere, which is a bigger, more deliberate change
 than an audit fix-in-place; flag for the user before doing it broadly.
+
+## 2026-08-05 — IBPS RRB Officer Scale I (Batch 12, live session)
+
+Added IBPS RRB Officer Scale I Prelims: Reasoning (40 Q) + Quantitative Aptitude (40 Q),
+wired into 1 full mock (80 Q, single combined 45-minute timer — no sectional lock, identical
+composite-timer shape to the already-live IBPS RRB Office Assistant) + 2 sectionals + 2 quick
+timed tests.
+
+**Source:** the exact same CRP-RRBs-XIV notification PDF already used for IBPS RRB Office
+Assistant — confirmed via `pdftotext` that it's a combined notification covering both Office
+Assistant and Officer Scale I/II/III. Officer Scale I Prelims: 80Q/80 marks/45 min composite,
+Reasoning (40Q/40M/25min) + Quantitative Aptitude (40Q/40M/20min), 0.25 negative marking.
+Content pitched at graduate/officer difficulty (IBPS PO Prelims-equivalent), noticeably
+harder than Office Assistant's clerical-level questions — called out explicitly in the FAQ.
+Mains (200Q, 5 sections, non-uniform per-section marks) exists in the same notification but,
+per established precedent (baseline = primary objective stage only), left as a
+`review-pending` stub for a future deepening pass.
+
+**Applied the `SEO_PLAYBOOK.md` collision lesson from Batch 11 proactively this time** —
+batch-grepped every planned question against the full corpus *before* writing the files,
+not after. Caught and fixed real collisions pre-emptively: several blood-relations riddles
+("pointing to X, the only son/daughter of my..." format) turned out to be one of the most
+saturated templates in the whole codebase (4+ existing variants), so blood-relations items
+were rewritten in a family-tree statement style instead of the "pointing to/introduced as X"
+riddle format entirely. Also swapped a "Doctor is to Hospital as Teacher is to ?" analogy
+(used 3× already) and an "8, 27, 64, 100" classification item (exact duplicate) for fresh
+alternatives. Despite this, `qa:questions` still caught 3 number-series questions in the
+reasoning bank that collided with existing RBI Assistant content — a reminder that even
+careful upfront checking misses items if the grep query itself doesn't cover every candidate
+question; all 3 were replaced with verified-clean alternatives. The quantitative aptitude
+bank's answer-position balance also needed rebalancing (10/7/16/7 → 10/10/10/10) by
+reordering options on 6 questions.
+
+**Verified:** all 66 banks / 1,950 questions pass `qa:questions` clean; `npm run build` clean
+static export (5 new routes: 1 full mock + 2 sectionals + 2 quick tests); browser walkthrough
+confirmed the combined 45-minute timer (no section lock) and correct 1-mark-per-question
+scoring (1/80 → 1.00/80, Reasoning section showing 1.00/40.00 matching the 40/40 split).
+Added a 6-question FAQ set (including an explicit comparison to the Office Assistant mock's
+easier difficulty, per `SEO_PLAYBOOK.md`'s guidance to make every exam's copy carry a fact
+that wouldn't be true with the exam swapped out) and an `llms.txt` line.
+
+**Batch roadmap checkbox:** ticked in the same commit.

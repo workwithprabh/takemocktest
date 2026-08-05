@@ -28,7 +28,8 @@ in `src/lib/exams.ts` — the two must always match after your batch (a stale bu
 otherwise).
 
 **Live as of 2026-08-05:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
-rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable (11 exams).
+rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
+ibps-rrb-officer-scale-1 (12 exams).
 
 ## The queue (Government Jobs cluster, in order)
 
@@ -39,7 +40,7 @@ next one in the same run.
 
 - [x] IBPS RRB Office Assistant
 - [x] SSC GD Constable
-- [ ] IBPS RRB Officer Scale I
+- [x] IBPS RRB Officer Scale I
 - [ ] SBI Clerk
 - [ ] RRB Junior Engineer / DMS / CMA
 - [ ] UPSC Civil Services Preliminary

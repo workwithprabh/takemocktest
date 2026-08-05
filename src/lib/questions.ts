@@ -63,6 +63,8 @@ import { SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1 } from './questio
 import { SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1 } from './question-banks/ssc-gd-constable-cbe-general-knowledge-awareness-1';
 import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1 } from './question-banks/ssc-gd-constable-cbe-elementary-mathematics-1';
 import { SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1 } from './question-banks/ssc-gd-constable-cbe-english-hindi-1';
+import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-reasoning-1';
+import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-quantitative-aptitude-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -267,6 +269,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-gd-constable/cbe-general-knowledge-awareness-sectional-1': SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
   'ssc-gd-constable/cbe-elementary-mathematics-sectional-1': SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1,
   'ssc-gd-constable/cbe-english-hindi-sectional-1': SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1,
+  'ibps-rrb-officer-scale-1/prelims-full-mock-1': [
+    ...IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1,
+    ...IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  ],
+  'ibps-rrb-officer-scale-1/prelims-reasoning-sectional-1': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1,
+  'ibps-rrb-officer-scale-1/prelims-quantitative-aptitude-sectional-1': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -389,7 +397,20 @@ const SSC_GD_CONSTABLE_CBE_QUICK_TESTS: Record<string, Question[]> = {
   'ssc-gd-constable/cbe-quick-15min': sscGdConstableQuickSlice(4, 3),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS);
+const IBPS_RRB_OS1_PRELIMS_POOLS: Record<string, Question[]> = {
+  'Reasoning': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1,
+  'Quantitative Aptitude': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1,
+};
+const IBPS_RRB_OS1_SECTION_ORDER = Object.keys(IBPS_RRB_OS1_PRELIMS_POOLS);
+function ibpsRrbOs1QuickSlice(perSection: number, offset: number): Question[] {
+  return IBPS_RRB_OS1_SECTION_ORDER.flatMap((section) => IBPS_RRB_OS1_PRELIMS_POOLS[section].slice(offset, offset + perSection));
+}
+const IBPS_RRB_OS1_QUICK_TESTS: Record<string, Question[]> = {
+  'ibps-rrb-officer-scale-1/prelims-quick-10min': ibpsRrbOs1QuickSlice(5, 0),
+  'ibps-rrb-officer-scale-1/prelims-quick-15min': ibpsRrbOs1QuickSlice(8, 5),
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -409,6 +430,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
     : testId.includes('ssc-gd-constable/cbe-full-mock')
+    ? 80
+    : testId.includes('ibps-rrb-officer-scale-1/prelims-full-mock')
     ? 80
     : testId.includes('full-mock')
     ? 100
@@ -431,6 +454,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('english-language') ? 30 : 35
           : testId.includes('ssc-gd-constable')
             ? 20
+          : testId.includes('ibps-rrb-officer-scale-1')
+            ? 40
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -526,6 +551,10 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General Knowledge and General Awareness', count: 20 },
     { section: 'Elementary Mathematics', count: 20 },
     { section: 'English/Hindi', count: 20 },
+  ],
+  'ibps-rrb-officer-scale-1': [
+    { section: 'Reasoning', count: 40 },
+    { section: 'Quantitative Aptitude', count: 40 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -734,5 +763,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Intelligence and Reasoning', question: 'Find the odd one out.', options: ['Delhi', 'Mumbai', 'Chennai', 'India'], correctIndex: 3, explanation: 'Delhi, Mumbai, and Chennai are cities; India is a country.' },
     // Elementary Mathematics
     { section: 'Elementary Mathematics', question: 'What is 25% of 240?', options: ['50', '55', '60', '65'], correctIndex: 2, explanation: '25% of 240 = (25/100) × 240 = 60.' },
+  ],
+  'ibps-rrb-officer-scale-1': [
+    // Reasoning
+    { section: 'Reasoning', question: 'Complete the series: 3, 9, 27, 81, ?', options: ['162', '216', '243', '324'], correctIndex: 2, explanation: 'Each term is triple the previous one: 81 × 3 = 243.' },
+    // Quantitative Aptitude
+    { section: 'Quantitative Aptitude', question: 'What is 18% of 500?', options: ['80', '85', '90', '95'], correctIndex: 2, explanation: '18% of 500 = (18/100) × 500 = 90.' },
   ],
 };

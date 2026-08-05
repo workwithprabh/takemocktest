@@ -290,6 +290,33 @@ const SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS = [
   },
 ];
 
+const IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official IBPS question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official IBPS RRB Officer Scale I (PO) Prelims syllabus and pattern.',
+  },
+  {
+    question: 'How is this different from the IBPS RRB Office Assistant mock on this site?',
+    answer: 'Same official notification and same composite-timer structure (80 questions, 45 minutes, no sectional lock), but the two posts are recruited separately with their own question difficulty — Officer Scale I is a graduate-entry officer post, so its Quantitative Aptitude and Reasoning questions are pitched noticeably harder than the Office Assistant (clerical) level.',
+  },
+  {
+    question: 'Do Prelims marks count towards the final merit list?',
+    answer: 'No. IBPS RRB Officer Scale I Prelims is qualifying only — candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains and, for this post, a subsequent interview.',
+  },
+  {
+    question: 'How does the timer work?',
+    answer: 'Both sections (Reasoning and Quantitative Aptitude) share one combined 45-minute timer — there is no sectional lock. You can move freely between questions from either section.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -302,6 +329,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-mts/cbt': SSC_MTS_CBT_FULL_MOCK_FAQS,
   'ibps-rrb-office-assistant/prelims': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS,
   'ssc-gd-constable/cbe': SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS,
+  'ibps-rrb-officer-scale-1/prelims': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
