@@ -22,7 +22,7 @@ const SECTIONS = [
     heading: 'Who this policy covers',
     body: [
       'This Privacy Policy explains how TakeMockTest ("we", "us") handles information in connection with this website. It is intended to comply with the principles of India\'s Digital Personal Data Protection Act, 2023 (DPDP Act).',
-      'Effective date: 30 July 2026.',
+      'Effective date: 6 August 2026.',
     ],
   },
   {
@@ -32,6 +32,7 @@ const SECTIONS = [
       'Test attempts and answers: when you take a mock test, your answers, score, and results are stored only in your own browser\'s local storage. This data is never transmitted to, or stored on, our servers — we have no visibility into your individual test attempts or scores.',
       `Direct contact: if you email us at ${SITE_EMAIL}, we receive your email address and message only so we can respond to your support, correction, or privacy request.`,
       'Standard technical logs: like most websites, our hosting provider automatically logs basic technical information (such as IP address, browser type, and pages requested) for security and performance purposes.',
+      'Analytics: we use Google Analytics to understand aggregated usage patterns — which pages are visited, approximate device type and location, and how visitors navigate the site — with IP addresses anonymized before storage. This tells us which exams and content are useful; it does not identify you individually, and it is never linked to your test answers or scores, which stay in your browser as described above. You can opt out using the Google Analytics Opt-out Browser Add-on or your browser\'s tracking-prevention settings.',
       'Advertising cookies: if and when this site displays third-party ads (e.g. Google AdSense), the ad provider may use cookies to serve relevant ads. We do not control these cookies directly — see the ad provider\'s own privacy policy for details, and use your browser settings or the ad provider\'s opt-out tools to manage them.',
     ],
   },
@@ -39,6 +40,7 @@ const SECTIONS = [
     heading: 'Why we process this information',
     body: [
       'To keep the site secure and working correctly (technical logs).',
+      'To understand which content and exams are actually useful to visitors, using aggregated, anonymized analytics.',
       'To respond to support, question-correction, and privacy requests that you choose to send by email.',
       'To support the site through advertising, where enabled, so it can remain free to use.',
       'We do not sell personal data, and we do not use your test results for any purpose beyond displaying them back to you in your own browser.',

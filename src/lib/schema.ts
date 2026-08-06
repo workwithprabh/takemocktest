@@ -1,6 +1,7 @@
 export const SITE_URL = 'https://takemocktest.com';
 export const SITE_NAME = 'TakeMockTest';
 export const SITE_EMAIL = 'info@takemocktest.com';
+export const GA_MEASUREMENT_ID = 'G-8D1KVR9GZJ';
 
 export function organizationSchema() {
   return {
