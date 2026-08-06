@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useDismissableMenu } from '@/lib/useDismissableMenu';
 
-// Mobile bottom tab bar — hidden on desktop (md:hidden), where the
+// Mobile bottom tab bar: hidden on desktop (md:hidden), where the
 // Header's horizontal nav takes over instead. Same routes, two layouts.
 export default function BottomNav({ country }: { country: string }) {
   const pathname = usePathname();

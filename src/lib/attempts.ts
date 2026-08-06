@@ -1,6 +1,6 @@
 // Client-side attempt history, persisted to localStorage. The site is a
 // fully static export (no backend), so "your results" live in the browser
-// rather than behind a shareable per-attempt URL — see the results page for
+// rather than behind a shareable per-attempt URL: see the results page for
 // how this is surfaced.
 
 import type { QuestionSource } from './questions';

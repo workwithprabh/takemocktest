@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
   return pageMetadata({
     title: hasCheckedTests
-      ? `${exam.name} — Free Mock Tests & Exam Pattern`
+      ? `${exam.name}: Free Mock Tests & Exam Pattern`
       : hasOfficialPattern
-        ? `${exam.name} — Exam Pattern, Syllabus & Eligibility`
-        : `${exam.name} — Practice Demo & Upcoming Resources`,
+        ? `${exam.name}: Exam Pattern, Syllabus & Eligibility`
+        : `${exam.name}: Practice Demo & Upcoming Resources`,
     description: hasCheckedTests
       ? `Practice checked ${exam.name} mock tests and review the verified exam pattern, timing, marks, and negative marking.`
       : hasOfficialPattern
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   });
 }
 
-// Exam landing page — the hub that links out to the four SEO page types
+// Exam landing page: the hub that links out to the four SEO page types
 // the research identified (mock-test, previous-year-papers, syllabus, exam-pattern).
 export default async function ExamOverviewPage({ params }: { params: Promise<{ country: string; exam: string }> }) {
   const { country, exam: examSlug } = await params;

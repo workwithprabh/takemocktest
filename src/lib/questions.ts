@@ -140,7 +140,7 @@ export function getQuestionsForTest(examSlug: string, testId: string): Question[
   return [...bank.slice(offset), ...bank.slice(0, offset)];
 }
 
-// Placeholder question bank — original practice questions, not sourced from
+// Placeholder question bank: original practice questions, not sourced from
 // any real paper. Replace with real content from the question bank once
 // wired in (see README). Sections match ExamConfig.sections exactly so the
 // results screen can group scores by section.
@@ -482,7 +482,7 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
-// same syllabus-checked question pools used above — no new content, no randomness
+// same syllabus-checked question pools used above: no new content, no randomness
 // (this stays a static export, so every build must produce the same slice).
 const SSC_CGL_TIER1_POOLS: Record<string, Question[]> = {
   'General Intelligence and Reasoning': [...SSC_CGL_TIER1_REASONING_1, ...SSC_CGL_TIER1_REASONING_2, ...SSC_CGL_TIER1_REASONING_3],
@@ -755,7 +755,7 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     throw new Error(`${testId} must contain exactly ${expectedCount} questions`);
   }
   if (isGenerated && questions.length < 4) {
-    throw new Error(`${testId} is a generated practice test with too few questions (${questions.length}) — check its topic/difficulty filter`);
+    throw new Error(`${testId} is a generated practice test with too few questions (${questions.length}): check its topic/difficulty filter`);
   }
   const ids = new Set<string>();
   const text = new Set<string>();
@@ -975,10 +975,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Quantitative Aptitude', question: 'What is the simple interest on ₹5000 at 8% per annum for 2 years?', options: ['₹600', '₹700', '₹800', '₹900'], correctIndex: 2, explanation: 'SI = (P × R × T) / 100 = (5000 × 8 × 2) / 100 = ₹800.' },
     { section: 'Quantitative Aptitude', question: 'What is the value of 12² − 8²?', options: ['60', '70', '80', '90'], correctIndex: 2, explanation: '144 − 64 = 80.' },
     // English
-    { section: 'English', question: 'Choose the correct synonym for "Abundant".', options: ['Scarce', 'Plentiful', 'Empty', 'Rare'], correctIndex: 1, explanation: '"Abundant" means existing in large quantities — "Plentiful" is the closest synonym.' },
+    { section: 'English', question: 'Choose the correct synonym for "Abundant".', options: ['Scarce', 'Plentiful', 'Empty', 'Rare'], correctIndex: 1, explanation: '"Abundant" means existing in large quantities: "Plentiful" is the closest synonym.' },
     { section: 'English', question: 'Choose the correct antonym for "Diligent".', options: ['Hardworking', 'Lazy', 'Careful', 'Active'], correctIndex: 1, explanation: '"Diligent" means hardworking, so its opposite is "Lazy".' },
     { section: 'English', question: 'Fill in the blank: "She ___ to the market every day."', options: ['go', 'goes', 'going', 'gone'], correctIndex: 1, explanation: 'Third-person singular subject "She" takes the verb form "goes" in present simple tense.' },
-    { section: 'English', question: 'Identify the correctly spelled word.', options: ['Recieve', 'Receive', 'Receeve', 'Receve'], correctIndex: 1, explanation: 'The correct spelling follows "i before e except after c" — "Receive".' },
+    { section: 'English', question: 'Identify the correctly spelled word.', options: ['Recieve', 'Receive', 'Receeve', 'Receve'], correctIndex: 1, explanation: 'The correct spelling follows "i before e except after c": "Receive".' },
     // Reasoning
     { section: 'Reasoning', question: 'Find the odd one out.', options: ['Apple', 'Banana', 'Carrot', 'Mango'], correctIndex: 2, explanation: 'Apple, Banana and Mango are fruits; Carrot is a vegetable.' },
     { section: 'Reasoning', question: 'Complete the series: 2, 4, 8, 16, ?', options: ['24', '28', '30', '32'], correctIndex: 3, explanation: 'Each term is double the previous one: 16 × 2 = 32.' },
@@ -992,7 +992,7 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   ],
   'ibps-po': [
     // English
-    { section: 'English', question: 'Choose the correct synonym for "Vigilant".', options: ['Careless', 'Watchful', 'Sleepy', 'Slow'], correctIndex: 1, explanation: '"Vigilant" means keeping careful watch — closest to "Watchful".' },
+    { section: 'English', question: 'Choose the correct synonym for "Vigilant".', options: ['Careless', 'Watchful', 'Sleepy', 'Slow'], correctIndex: 1, explanation: '"Vigilant" means keeping careful watch, closest to "Watchful".' },
     { section: 'English', question: 'Choose the correct antonym for "Optimistic".', options: ['Hopeful', 'Pessimistic', 'Cheerful', 'Positive'], correctIndex: 1, explanation: 'The opposite of "Optimistic" (hopeful) is "Pessimistic".' },
     { section: 'English', question: 'Fill in the blank: "He has been working here ___ 2019."', options: ['for', 'since', 'from', 'at'], correctIndex: 1, explanation: '"Since" is used with a specific starting point in time.' },
     { section: 'English', question: 'Identify the correctly spelled word.', options: ['Definately', 'Definitely', 'Definitly', 'Defenitely'], correctIndex: 1, explanation: 'The correct spelling is "Definitely".' },
@@ -1011,7 +1011,7 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Reasoning', question: 'If A means "+", B means "−", C means "×", and D means "÷", what is 8 C 4 A 2?', options: ['32', '34', '36', '38'], correctIndex: 1, explanation: '8 × 4 + 2 = 32 + 2 = 34.' },
     { section: 'Reasoning', question: 'Complete the letter series: A, C, E, G, ?', options: ['H', 'I', 'J', 'K'], correctIndex: 1, explanation: 'The series skips one letter each time: A, C, E, G, I.' },
     { section: 'Reasoning', question: 'Find the missing number: 7, 14, 21, 28, ?', options: ['30', '32', '35', '42'], correctIndex: 2, explanation: 'Each term increases by 7: 28 + 7 = 35.' },
-    { section: 'Reasoning', question: 'Statement: All cats are animals. All animals are living beings. Conclusion: All cats are living beings. Is this valid?', options: ['Valid', 'Invalid', 'Cannot be determined', 'Partially valid'], correctIndex: 0, explanation: 'This follows standard syllogism logic — the conclusion necessarily follows from both statements.' },
+    { section: 'Reasoning', question: 'Statement: All cats are animals. All animals are living beings. Conclusion: All cats are living beings. Is this valid?', options: ['Valid', 'Invalid', 'Cannot be determined', 'Partially valid'], correctIndex: 0, explanation: 'This follows standard syllogism logic: the conclusion necessarily follows from both statements.' },
   ],
   'rrb-ntpc': [
     // Mathematics
@@ -1026,7 +1026,7 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Intelligence & Reasoning', question: 'Find the odd one out.', options: ['Dog', 'Cat', 'Lion', 'Table'], correctIndex: 3, explanation: 'Dog, Cat and Lion are animals; Table is an object.' },
     { section: 'General Intelligence & Reasoning', question: 'If "RAIN" is coded as "SBJO" (each letter shifted +1), how is "SNOW" coded?', options: ['TOPX', 'TPOX', 'TOPW', 'SOPX'], correctIndex: 0, explanation: 'Shifting each letter by +1: S→T, N→O, O→P, W→X gives "TOPX".' },
     { section: 'General Intelligence & Reasoning', question: 'If Monday is coded as 1 and Tuesday as 2, what is Friday coded as?', options: ['4', '5', '6', '7'], correctIndex: 1, explanation: 'Counting from Monday=1: Tue=2, Wed=3, Thu=4, Fri=5.' },
-    { section: 'General Intelligence & Reasoning', question: 'Complete the series (first letters of months): J, F, M, A, M, ?', options: ['J', 'A', 'S', 'O'], correctIndex: 0, explanation: 'January, February, March, April, May, June — next letter is "J".' },
+    { section: 'General Intelligence & Reasoning', question: 'Complete the series (first letters of months): J, F, M, A, M, ?', options: ['J', 'A', 'S', 'O'], correctIndex: 0, explanation: 'January, February, March, April, May, June: next letter is "J".' },
     { section: 'General Intelligence & Reasoning', question: 'Which word does NOT belong with the others?', options: ['Apple', 'Orange', 'Potato', 'Banana'], correctIndex: 2, explanation: 'Apple, Orange and Banana are fruits; Potato is a vegetable.' },
     // General Awareness
     { section: 'General Awareness', question: 'The headquarters of Indian Railways is located in which city?', options: ['Mumbai', 'New Delhi', 'Kolkata', 'Chennai'], correctIndex: 1, explanation: 'Indian Railways is headquartered in New Delhi.' },

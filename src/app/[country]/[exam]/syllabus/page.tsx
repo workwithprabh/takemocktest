@@ -104,20 +104,20 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam) return {};
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Tier 1 Syllabus 2026 — Section-wise Topics',
+      title: 'SSC CGL Tier 1 Syllabus 2026: Section-wise Topics',
       description: 'Official SSC CGL Tier 1 syllabus for Reasoning, General Awareness, Quantitative Aptitude and English Comprehension, checked against the 2026 SSC notice.',
       path: '/in/ssc-cgl/syllabus',
     });
   }
   if (exam.slug === 'ibps-po') {
     return pageMetadata({
-      title: 'IBPS PO Prelims Syllabus 2026 — Topics & Section Pattern',
+      title: 'IBPS PO Prelims Syllabus 2026: Topics & Section Pattern',
       description: 'IBPS PO Prelims 2026 section pattern and a clearly labelled preparation topic map for English Language, Quantitative Aptitude, and Reasoning Ability.',
       path: '/in/ibps-po/syllabus',
     });
   }
   return pageMetadata({
-    title: `${exam.name} Syllabus ${new Date().getFullYear()} — Section-wise Topics`,
+    title: `${exam.name} Syllabus ${new Date().getFullYear()}: Section-wise Topics`,
     description: `${exam.name} syllabus sections being checked against current official documents before publication.`,
     path: `/in/${exam.slug}/syllabus`,
     noIndex: true,
@@ -164,7 +164,7 @@ export default async function SyllabusPage({ params }: { params: Promise<{ count
               <section key={section} className="border border-ink-200 bg-white p-5">
                 <h2 className="text-lg font-semibold text-ink-900">{section}</h2>
                 <ul className="mt-3 grid gap-2 text-sm leading-6 text-ink-500 sm:grid-cols-2">
-                  {topics.map((topic) => <li key={topic}>— {topic}</li>)}
+                  {topics.map((topic) => <li key={topic}>&bull; {topic}</li>)}
                 </ul>
               </section>
             ))}
@@ -196,7 +196,7 @@ export default async function SyllabusPage({ params }: { params: Promise<{ count
                   <span className="bg-ink-100 px-2 py-1 text-xs font-semibold text-ink-700">{pattern}</span>
                 </div>
                 <ul className="mt-3 grid gap-2 text-sm leading-6 text-ink-500 sm:grid-cols-2">
-                  {topics.map((topic) => <li key={topic}>— {topic}</li>)}
+                  {topics.map((topic) => <li key={topic}>&bull; {topic}</li>)}
                 </ul>
               </section>
             ))}

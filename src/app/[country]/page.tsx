@@ -38,15 +38,15 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
 
 const TRUST_POINTS = [
   'Checked tests use original questions mapped to the latest official syllabus, with a source link and review date.',
-  'Every listed test matches its official exam pattern for section split, question count, and marking — no filler content.',
+  'Every listed test matches its official exam pattern for section split, question count, and marking. No filler content.',
   'A test is counted as checked only after its question count, scoring, explanations, and source record pass validation.',
 ];
 
 const FAQS = [
-  { q: 'Is this really free?', a: 'Yes — every available test is free to attempt.' },
+  { q: 'Is this really free?', a: 'Yes, every available test is free to attempt.' },
   { q: 'Do I need to sign up?', a: 'No. You can start any test immediately. Your results are saved on this device so you can track progress over time.' },
   { q: 'How is scoring calculated?', a: 'Every test states its marks and negative-marking deduction before you begin, matching the official pattern it is checked against.' },
-  { q: 'Will more exams be added?', a: 'Yes — we\'re actively expanding to more exams and categories beyond SSC, Banking, and Railways.' },
+  { q: 'Will more exams be added?', a: 'Yes, we\'re actively expanding to more exams and categories beyond SSC, Banking, and Railways.' },
 ];
 
 export default async function HomePage({ params }: { params: Promise<{ country: string }> }) {

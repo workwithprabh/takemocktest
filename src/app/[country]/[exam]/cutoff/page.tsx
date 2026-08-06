@@ -64,14 +64,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
 
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Tier 1 Cutoff 2025 — Official Category-wise Marks',
+      title: 'SSC CGL Tier 1 Cutoff 2025: Official Category-wise Marks',
       description: 'Check the official SSC CGL Tier 1 2025 cutoff marks for JSO, Statistical Investigator Grade II, and all other posts, with shortlisted-candidate counts.',
       path: '/in/ssc-cgl/cutoff',
     });
   }
 
   return pageMetadata({
-    title: `${exam.name} Cutoff — Verification in Progress`,
+    title: `${exam.name} Cutoff: Verification in Progress`,
     description: `${exam.name} category-wise cutoff marks will be published after verification against the official result notice.`,
     path: `/in/${exam.slug}/cutoff`,
     noIndex: true,

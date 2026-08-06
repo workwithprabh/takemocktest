@@ -18,14 +18,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
 
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Answer Key 2025 — Tier 2 Final Key Status',
+      title: 'SSC CGL Answer Key 2025: Tier 2 Final Key Status',
       description: 'SSC uploaded the CGL 2025 Tier 2 final answer keys, response sheets, and marks on 17 June 2026. Check the official notice and access-window status.',
       path: '/in/ssc-cgl/answer-key',
     });
   }
 
   return pageMetadata({
-    title: `${exam.name} Answer Key — Verification in Progress`,
+    title: `${exam.name} Answer Key: Verification in Progress`,
     description: `${exam.name} answer-key dates and official links will be published after verification against the exam body's notices.`,
     path: `/in/${exam.slug}/answer-key`,
     noIndex: true,

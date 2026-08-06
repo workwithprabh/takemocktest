@@ -6,7 +6,7 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'TakeMockTest — Free Mock Tests for Competitive Exams',
+    default: 'TakeMockTest: Free Mock Tests for Competitive Exams',
     template: '%s | TakeMockTest',
   },
   description: 'Syllabus-checked mock tests and exam-pattern guidance for competitive exam preparation in India.',

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam) return {};
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Salary 2026 — Post-wise Pay Levels & Basic Pay',
+      title: 'SSC CGL Salary 2026: Post-wise Pay Levels & Basic Pay',
       description: 'Check the official SSC CGL 2026 pay levels and basic-pay ranges, plus a clear explanation of allowances, deductions, and why in-hand salary varies.',
       path: '/in/ssc-cgl/salary',
     });

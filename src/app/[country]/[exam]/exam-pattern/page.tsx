@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam) return {};
   const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
   return pageMetadata({
-    title: `${exam.name} Exam Pattern ${new Date().getFullYear()} — Marks & Duration`,
+    title: `${exam.name} Exam Pattern ${new Date().getFullYear()}: Marks & Duration`,
     description: `${exam.name} exam pattern: sections, marks, duration, and negative marking explained.`,
     path: `/in/${exam.slug}/exam-pattern`,
     noIndex: !hasOfficialPattern,

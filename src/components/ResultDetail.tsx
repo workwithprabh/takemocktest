@@ -241,13 +241,13 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
                       <div>
                         <dt className="text-ink-500">Accuracy</dt>
                         <dd className="mt-1 font-mono font-semibold text-ink-900">
-                          {accuracy === null ? '—' : `${accuracy}%`}
+                          {accuracy === null ? 'N/A' : `${accuracy}%`}
                         </dd>
                       </div>
                       <div>
                         <dt className="text-ink-500">Time</dt>
                         <dd className="mt-1 font-mono font-semibold text-ink-900">
-                          {stat.timeSpentSec > 0 ? formatTime(stat.timeSpentSec) : '—'}
+                          {stat.timeSpentSec > 0 ? formatTime(stat.timeSpentSec) : 'N/A'}
                         </dd>
                       </div>
                     </dl>

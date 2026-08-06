@@ -7,7 +7,7 @@ import ExamFinder from '@/components/ExamFinder';
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
   return pageMetadata({
-    title: 'All Exams in India — Browse Mock Tests by Goal',
+    title: 'All Exams in India: Browse Mock Tests by Goal',
     description: 'Browse government, engineering, medical, management, law, study abroad, teaching, defence, and professional exam categories.',
     path: `/${country}/exams`,
   });

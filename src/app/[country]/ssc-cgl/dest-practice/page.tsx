@@ -13,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
   return pageMetadata({
-    title: 'SSC CGL DEST Practice Test — 15 Minute Typing Test',
+    title: 'SSC CGL DEST Practice Test: 15 Minute Typing Test',
     description: 'Practice the SSC CGL Data Entry Speed Test with a 15-minute timer, an original passage, refresh-safe progress, and transparent typing indicators.',
     path: `/${country}/ssc-cgl/dest-practice`,
   });

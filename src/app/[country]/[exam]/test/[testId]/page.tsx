@@ -28,8 +28,8 @@ export async function generateMetadata({
   const conciseTestName = testName.replace(' Objective Full Mock Test', ' Mock Test');
   return pageMetadata({
     title: isFullMock
-      ? `${exam.name} ${conciseTestName} (${cycle}) — Free Online Test`
-      : `${exam.name} ${testName} — Instructions`,
+      ? `${exam.name} ${conciseTestName} (${cycle}): Free Online Test`
+      : `${exam.name} ${testName}: Instructions`,
     description: isFullMock
       ? `Attempt ${exam.name} ${testName}: ${questionCount} questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.`
       : `Review the timing, question count, and negative-marking instructions for ${exam.name} ${testName}.`,
@@ -71,11 +71,11 @@ const RRB_NTPC_CBT1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each CBT 1 section?',
-    answer: 'No. Unlike SSC CGL, RRB NTPC CBT 1 uses a single 90-minute timer for all three sections combined, with no sectional lock — you can move between Mathematics, Reasoning, and General Awareness questions freely.',
+    answer: 'No. Unlike SSC CGL, RRB NTPC CBT 1 uses a single 90-minute timer for all three sections combined, with no sectional lock: you can move between Mathematics, Reasoning, and General Awareness questions freely.',
   },
   {
     question: 'Do CBT 1 marks count towards the final RRB NTPC merit list?',
-    answer: 'No. CBT 1 is qualifying in nature — its marks are not carried forward. The final merit list is decided by CBT 2.',
+    answer: 'No. CBT 1 is qualifying in nature: its marks are not carried forward. The final merit list is decided by CBT 2.',
   },
   {
     question: 'Is there negative marking in RRB NTPC CBT 1?',
@@ -155,7 +155,7 @@ const RRB_GROUP_D_CBT_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each CBT section?',
-    answer: 'No. The RRB Group D CBT uses a single 90-minute timer for all four sections combined, with no sectional lock — you can move between General Science, Mathematics, Reasoning, and General Awareness questions freely.',
+    answer: 'No. The RRB Group D CBT uses a single 90-minute timer for all four sections combined, with no sectional lock: you can move between General Science, Mathematics, Reasoning, and General Awareness questions freely.',
   },
   {
     question: 'What comes after the CBT in the selection process?',
@@ -178,7 +178,7 @@ const SBI_PO_PRELIMS_FULL_MOCK_FAQS = [
   },
   {
     question: 'Do Prelims marks count towards the final SBI PO merit list?',
-    answer: 'No. SBI PO Prelims is qualifying in nature — Prelims marks are used only to shortlist candidates for Mains. The final merit list is decided by Mains and the interview stage.',
+    answer: 'No. SBI PO Prelims is qualifying in nature: Prelims marks are used only to shortlist candidates for Mains. The final merit list is decided by Mains and the interview stage.',
   },
   {
     question: 'How do the sectional timers work?',
@@ -201,7 +201,7 @@ const RBI_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
   },
   {
     question: 'Do Prelims marks count towards the final RBI Assistant merit list?',
-    answer: 'No. RBI Assistant Prelims is qualifying in nature — candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains and the Language Proficiency Test.',
+    answer: 'No. RBI Assistant Prelims is qualifying in nature: candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains and the Language Proficiency Test.',
   },
   {
     question: 'How do the sectional timers work?',
@@ -228,7 +228,7 @@ const SSC_MTS_CBT_FULL_MOCK_FAQS = [
   },
   {
     question: 'Do Prelims marks count towards the final merit list?',
-    answer: 'Only candidates who qualify Session 1 have Session 2 evaluated, and both sessions together decide shortlisting for the Physical Efficiency Test (Havaldar) or final selection (MTS) — there is no separate Mains stage.',
+    answer: 'Only candidates who qualify Session 1 have Session 2 evaluated, and both sessions together decide shortlisting for the Physical Efficiency Test (Havaldar) or final selection (MTS). There is no separate Mains stage.',
   },
   {
     question: 'Do I need an account to attempt the mock?',
@@ -243,11 +243,11 @@ const IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
   },
   {
     question: 'Do Prelims marks count towards the final merit list?',
-    answer: 'No. IBPS RRB Office Assistant Prelims is qualifying in nature — candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains.',
+    answer: 'No. IBPS RRB Office Assistant Prelims is qualifying in nature: candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains.',
   },
   {
     question: 'How does the timer work?',
-    answer: 'Both sections (Reasoning and Numerical Ability) share one combined 45-minute timer — there is no sectional lock, unlike SBI PO or IBPS PO Prelims. You can move freely between questions from either section.',
+    answer: 'Both sections (Reasoning and Numerical Ability) share one combined 45-minute timer: there is no sectional lock, unlike SBI PO or IBPS PO Prelims. You can move freely between questions from either section.',
   },
   {
     question: 'Is there negative marking?',
@@ -266,11 +266,11 @@ const SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS = [
   },
   {
     question: 'How many questions and marks does the real CBE have?',
-    answer: '80 questions for 160 marks — 2 marks per question — split evenly across 4 sections of 20 questions each: General Intelligence and Reasoning, General Knowledge and General Awareness, Elementary Mathematics, and English/Hindi.',
+    answer: '80 questions for 160 marks (2 marks per question), split evenly across 4 sections of 20 questions each: General Intelligence and Reasoning, General Knowledge and General Awareness, Elementary Mathematics, and English/Hindi.',
   },
   {
     question: 'How does the timer work?',
-    answer: 'All four sections share one combined 60-minute timer — there is no sectional lock. You can move freely between questions from any section during the attempt.',
+    answer: 'All four sections share one combined 60-minute timer: there is no sectional lock. You can move freely between questions from any section during the attempt.',
   },
   {
     question: 'Is there negative marking?',
@@ -278,11 +278,11 @@ const SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS = [
   },
   {
     question: 'What level are the questions set at?',
-    answer: "Matriculation (Class 10) level, per the official notice — noticeably more basic than a graduate-level exam like SSC CGL, so don't expect Tier-1-style difficulty here.",
+    answer: "Matriculation (Class 10) level, per the official notice: noticeably more basic than a graduate-level exam like SSC CGL, so don't expect Tier-1-style difficulty here.",
   },
   {
     question: 'Does clearing the CBE mean I get the job?',
-    answer: 'No. The CBE is only the first stage. Shortlisted candidates then go through a Physical Efficiency Test (PET), Physical Standard Test (PST), Detailed Medical Examination, and Document Verification — none of which are objective/written, so they are outside the scope of this mock.',
+    answer: 'No. The CBE is only the first stage. Shortlisted candidates then go through a Physical Efficiency Test (PET), Physical Standard Test (PST), Detailed Medical Examination, and Document Verification, none of which are objective/written, so they are outside the scope of this mock.',
   },
   {
     question: 'Do I need an account to attempt the mock?',
@@ -297,15 +297,15 @@ const IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS = [
   },
   {
     question: 'How is this different from the IBPS RRB Office Assistant mock on this site?',
-    answer: 'Same official notification and same composite-timer structure (80 questions, 45 minutes, no sectional lock), but the two posts are recruited separately with their own question difficulty — Officer Scale I is a graduate-entry officer post, so its Quantitative Aptitude and Reasoning questions are pitched noticeably harder than the Office Assistant (clerical) level.',
+    answer: 'Same official notification and same composite-timer structure (80 questions, 45 minutes, no sectional lock), but the two posts are recruited separately with their own question difficulty: Officer Scale I is a graduate-entry officer post, so its Quantitative Aptitude and Reasoning questions are pitched noticeably harder than the Office Assistant (clerical) level.',
   },
   {
     question: 'Do Prelims marks count towards the final merit list?',
-    answer: 'No. IBPS RRB Officer Scale I Prelims is qualifying only — candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains and, for this post, a subsequent interview.',
+    answer: 'No. IBPS RRB Officer Scale I Prelims is qualifying only: candidates must clear both the sectional and overall cut-offs. The final merit list is decided by Mains and, for this post, a subsequent interview.',
   },
   {
     question: 'How does the timer work?',
-    answer: 'Both sections (Reasoning and Quantitative Aptitude) share one combined 45-minute timer — there is no sectional lock. You can move freely between questions from either section.',
+    answer: 'Both sections (Reasoning and Quantitative Aptitude) share one combined 45-minute timer: there is no sectional lock. You can move freely between questions from either section.',
   },
   {
     question: 'Is there negative marking?',
@@ -324,7 +324,7 @@ const SBI_CLERK_PRELIMS_FULL_MOCK_FAQS = [
   },
   {
     question: 'How does the timer work?',
-    answer: 'Unlike the composite-timer exams on this site, SBI Clerk Prelims locks each of its 3 sections to its own 20-minute window — English Language, then Numerical Ability, then Reasoning Ability. You cannot move between sections or return to a completed one once its timer ends.',
+    answer: 'Unlike the composite-timer exams on this site, SBI Clerk Prelims locks each of its 3 sections to its own 20-minute window: English Language, then Numerical Ability, then Reasoning Ability. You cannot move between sections or return to a completed one once its timer ends.',
   },
   {
     question: 'Do Prelims marks count towards the final merit list?',
@@ -347,7 +347,7 @@ const RRB_JE_CBT1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each CBT-I section?',
-    answer: 'No. RRB JE CBT-I uses a single 90-minute timer for all four sections combined, with no sectional lock — you can move between Mathematics, General Intelligence and Reasoning, General Awareness, and General Science questions freely.',
+    answer: 'No. RRB JE CBT-I uses a single 90-minute timer for all four sections combined, with no sectional lock: you can move between Mathematics, General Intelligence and Reasoning, General Awareness, and General Science questions freely.',
   },
   {
     question: 'Does CBT-I decide the final RRB JE merit list?',
@@ -370,7 +370,7 @@ const UPSC_CSE_PAPER1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is GS Paper I divided into separately timed sections?',
-    answer: 'No. Like the real exam, GS Paper I uses a single 120-minute timer for the whole paper — there is no sectional lock between History, Geography, Polity, Economy, Environment, Science, and Current Affairs questions.',
+    answer: 'No. Like the real exam, GS Paper I uses a single 120-minute timer for the whole paper: there is no sectional lock between History, Geography, Polity, Economy, Environment, Science, and Current Affairs questions.',
   },
   {
     question: 'Does UPSC publish an official question-wise split across GS Paper I topics?',
@@ -393,11 +393,11 @@ const UPSC_CSE_PAPER2_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is CSAT divided into separately timed sections?',
-    answer: 'No. Like the real exam, CSAT uses a single 120-minute timer for the whole paper — there is no sectional lock between Comprehension, Logical Reasoning, Decision Making, Mental Ability, and Numeracy questions.',
+    answer: 'No. Like the real exam, CSAT uses a single 120-minute timer for the whole paper: there is no sectional lock between Comprehension, Logical Reasoning, Decision Making, Mental Ability, and Numeracy questions.',
   },
   {
     question: 'Does CSAT count towards the final Prelims merit?',
-    answer: 'No. CSAT (Paper II) is qualifying only — candidates must score at least 33% (66/200) to qualify for the Main Examination. It does not count towards the merit ranking; that is decided by GS Paper I.',
+    answer: 'No. CSAT (Paper II) is qualifying only: candidates must score at least 33% (66/200) to qualify for the Main Examination. It does not count towards the merit ranking; that is decided by GS Paper I.',
   },
   {
     question: 'Is there negative marking?',
@@ -416,7 +416,7 @@ const RPF_CONSTABLE_CBT_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each CBT section?',
-    answer: 'No. RPF Constable CBT uses a single 90-minute timer for all three sections combined, with no sectional lock — you can move between Arithmetic, General Intelligence and Reasoning, and General Awareness questions freely.',
+    answer: 'No. RPF Constable CBT uses a single 90-minute timer for all three sections combined, with no sectional lock: you can move between Arithmetic, General Intelligence and Reasoning, and General Awareness questions freely.',
   },
   {
     question: 'What comes after the CBT in the selection process?',
@@ -439,7 +439,7 @@ const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each Paper 1 section?',
-    answer: 'Yes. Each of the four sections — General Intelligence and Reasoning, General Knowledge and General Awareness, Quantitative Aptitude, and English Comprehension — has its own separately timed 30-minute window. You cannot shift unused time from one section to another.',
+    answer: 'Yes. Each of the four sections (General Intelligence and Reasoning, General Knowledge and General Awareness, Quantitative Aptitude, and English Comprehension) has its own separately timed 30-minute window. You cannot shift unused time from one section to another.',
   },
   {
     question: 'What comes after Paper 1 in the selection process?',
@@ -462,7 +462,7 @@ const IBPS_SO_PRELIMS_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each Prelims section?',
-    answer: 'Yes. Each of the three sections — English Language, Reasoning, and Quantitative Aptitude — has its own separately timed 40-minute window. You cannot shift unused time from one section to another.',
+    answer: 'Yes. Each of the three sections (English Language, Reasoning, and Quantitative Aptitude) has its own separately timed 40-minute window. You cannot shift unused time from one section to another.',
   },
   {
     question: 'Why do English Language questions carry fewer marks?',
@@ -485,11 +485,11 @@ const RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each Phase I section?',
-    answer: 'Yes. Each of the four sections — General Awareness, English Language, Quantitative Aptitude, and Reasoning — has its own separately timed window (25/25/25/45 minutes). You cannot shift unused time from one section to another.',
+    answer: 'Yes. Each of the four sections (General Awareness, English Language, Quantitative Aptitude, and Reasoning) has its own separately timed window (25/25/25/45 minutes). You cannot shift unused time from one section to another.',
   },
   {
     question: 'What comes after Phase I in the selection process?',
-    answer: 'Candidates who clear the minimum cut-off in each section, and in aggregate, proceed to Phase II, which tests Economic and Social Issues, English (Writing Skills), and Finance and Management — followed by an interview.',
+    answer: 'Candidates who clear the minimum cut-off in each section, and in aggregate, proceed to Phase II, which tests Economic and Social Issues, English (Writing Skills), and Finance and Management, followed by an interview.',
   },
   {
     question: 'Is there negative marking?',
@@ -508,11 +508,11 @@ const NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each Phase I section?',
-    answer: 'No. NABARD Phase I uses a single composite timer of 120 minutes for all eight sections combined, and you can move freely between sections — there is no sectional lock.',
+    answer: 'No. NABARD Phase I uses a single composite timer of 120 minutes for all eight sections combined, and you can move freely between sections: there is no sectional lock.',
   },
   {
     question: 'What is the difference between the qualifying and merit sections?',
-    answer: 'Reasoning, English Language, Computer Knowledge, Quantitative Aptitude, and Decision Making are qualifying only — you must clear a minimum cut-off, but marks in these sections do not count toward ranking. General Awareness, Economic and Social Issues, and Agriculture and Rural Development form the merit section, and marks scored here alone decide shortlisting for Phase II (Mains).',
+    answer: 'Reasoning, English Language, Computer Knowledge, Quantitative Aptitude, and Decision Making are qualifying only: you must clear a minimum cut-off, but marks in these sections do not count toward ranking. General Awareness, Economic and Social Issues, and Agriculture and Rural Development form the merit section, and marks scored here alone decide shortlisting for Phase II (Mains).',
   },
   {
     question: 'Is there negative marking?',
@@ -531,7 +531,7 @@ const SEBI_GRADE_A_PHASE_1_PAPER_1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each Paper 1 section?',
-    answer: 'No. Paper 1 uses a single composite timer of 60 minutes for all four sections combined — General Awareness, English Language, Quantitative Aptitude, and Test of Reasoning — and you can move freely between them. There is no sectional cut-off within Paper 1, only an overall cut-off of 30%.',
+    answer: 'No. Paper 1 uses a single composite timer of 60 minutes for all four sections combined (General Awareness, English Language, Quantitative Aptitude, and Test of Reasoning) and you can move freely between them. There is no sectional cut-off within Paper 1, only an overall cut-off of 30%.',
   },
   {
     question: 'How does Paper 1 relate to Paper 2?',
@@ -550,7 +550,7 @@ const SEBI_GRADE_A_PHASE_1_PAPER_1_FULL_MOCK_FAQS = [
 const SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official SEBI Grade A question paper?',
-    answer: 'No. It is an independent practice mock containing original questions covering the General stream Paper 2 syllabus — Commerce, Accountancy, Management, Finance, Costing, Companies Act, and Economics.',
+    answer: 'No. It is an independent practice mock containing original questions covering the General stream Paper 2 syllabus: Commerce, Accountancy, Management, Finance, Costing, Companies Act, and Economics.',
   },
   {
     question: 'Is there a separate timer for each Paper 2 subject?',
@@ -558,7 +558,7 @@ const SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS = [
   },
   {
     question: 'Does SEBI publish an official question split across these seven subjects?',
-    answer: "No. SEBI does not publish an official question-wise split for Paper 2's General stream subjects — the section breakdown on this site reflects how this mock test's questions are organised, not an official SEBI-published distribution.",
+    answer: "No. SEBI does not publish an official question-wise split for Paper 2's General stream subjects. The section breakdown on this site reflects how this mock test's questions are organised, not an official SEBI-published distribution.",
   },
   {
     question: 'Is there negative marking?',
@@ -577,11 +577,11 @@ const SIDBI_GRADE_A_B_PHASE_1_FULL_MOCK_FAQS = [
   },
   {
     question: 'Is there a separate timer for each Phase I section?',
-    answer: 'No. Phase I uses a single composite timer of 120 minutes for all seven sections combined, and you can move freely between sections — there is no sectional lock.',
+    answer: 'No. Phase I uses a single composite timer of 120 minutes for all seven sections combined, and you can move freely between sections: there is no sectional lock.',
   },
   {
     question: 'What is the difference between the qualifying and merit sections?',
-    answer: 'English Language, Reasoning Aptitude, Quantitative Aptitude, and Computer Knowledge are qualifying only — you must clear a minimum cut-off, but marks in these sections do not count toward ranking. General Awareness, MSMEs: Policy, Regulatory and Legal Framework — Finance and Management, and the Stream Specific Test form the merit section, worth 100 of the 200 marks, and marks scored here alone decide shortlisting for Phase II.',
+    answer: 'English Language, Reasoning Aptitude, Quantitative Aptitude, and Computer Knowledge are qualifying only: you must clear a minimum cut-off, but marks in these sections do not count toward ranking. General Awareness, MSMEs: Policy, Regulatory and Legal Framework; Finance and Management, and the Stream Specific Test form the merit section, worth 100 of the 200 marks, and marks scored here alone decide shortlisting for Phase II.',
   },
   {
     question: 'Is there negative marking?',
@@ -661,7 +661,7 @@ export default async function TestInstructionsPage({
           : test.kind === 'topic'
             ? `This is a focused ${questionCount}-question practice set on this ${test.section} topic, syllabus-checked the same as our full mocks.`
             : test.kind === 'quick'
-              ? `This is a ${test.duration}-minute quick test with ${questionCount} original questions mixed across ${coveredSections.length} ${stage.name} sections — a fast way to check your pace.`
+              ? `This is a ${test.duration}-minute quick test with ${questionCount} original questions mixed across ${coveredSections.length} ${stage.name} sections: a fast way to check your pace.`
               : `This is a ${questionCount}-question interface practice demo, not a full mock or previous-year paper.`,
     ...BASE_INSTRUCTIONS,
   ];

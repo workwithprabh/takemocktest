@@ -325,7 +325,7 @@ export default function TestAttemptClient({
   if (phase === 'submitted' && result) {
     return (
       <div className="max-w-3xl mx-auto px-5 py-6">
-        <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">{testName} — Results</h1>
+        <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">{testName}: Results</h1>
         <p className="text-ink-500 text-sm mb-6">{examName}</p>
         <ResultDetail
           attempt={result}
@@ -546,7 +546,7 @@ export default function TestAttemptClient({
           You’ve answered <strong className="text-ink-900">{attemptedCount}</strong> of{' '}
           <strong className="text-ink-900">{questions.length}</strong> questions
           {questions.length - attemptedCount > 0 && (
-            <> — {questions.length - attemptedCount} will be marked unattempted.</>
+            <>, {questions.length - attemptedCount} will be marked unattempted.</>
           )}
         </p>
         <div className="flex gap-3">

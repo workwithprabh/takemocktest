@@ -13,14 +13,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam) return {};
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Selection Process 2026 — Tier 1 to Final Merit',
+      title: 'SSC CGL Selection Process 2026: Tier 1 to Final Merit',
       description: 'Understand the SSC CGL 2026 selection process: Tier 1 shortlisting, Tier 2 papers, qualifying computer and data-entry tests, post preference, and document verification.',
       path: '/in/ssc-cgl/selection-process',
     });
   }
   if (exam.slug === 'ibps-po') {
     return pageMetadata({
-      title: 'IBPS PO Selection Process 2026 — Prelims to Allotment',
+      title: 'IBPS PO Selection Process 2026: Prelims to Allotment',
       description: 'Understand the official IBPS PO 2026 selection stages: Prelims, Mains, mandatory Personality Test, Common Interview, 80:20 final score, and provisional allotment.',
       path: '/in/ibps-po/selection-process',
     });

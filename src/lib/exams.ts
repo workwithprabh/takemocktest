@@ -109,7 +109,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
     slug: 'ssc-cgl',
     name: 'SSC CGL',
-    fullName: 'Staff Selection Commission — Combined Graduate Level',
+    fullName: 'Staff Selection Commission: Combined Graduate Level',
     category: 'SSC',
     stages: [
       {
@@ -586,7 +586,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'tier-1-quick-10min',
-            name: 'Quick Test — 10 Minutes',
+            name: 'Quick Test (10 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 10,
@@ -596,7 +596,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'tier-1-quick-15min',
-            name: 'Quick Test — 15 Minutes',
+            name: 'Quick Test (15 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 15,
@@ -606,7 +606,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'tier-1-quick-20min',
-            name: 'Quick Test — 20 Minutes',
+            name: 'Quick Test (20 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 20,
@@ -855,7 +855,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ibps-po': {
     slug: 'ibps-po',
     name: 'IBPS PO',
-    fullName: 'Institute of Banking Personnel Selection — Probationary Officer',
+    fullName: 'Institute of Banking Personnel Selection: Probationary Officer',
     category: 'Banking',
     stages: [
       {
@@ -1025,7 +1025,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'rrb-ntpc': {
     slug: 'rrb-ntpc',
     name: 'RRB NTPC',
-    fullName: 'Railway Recruitment Board — Non-Technical Popular Categories',
+    fullName: 'Railway Recruitment Board: Non-Technical Popular Categories',
     category: 'Railways',
     stages: [
       {
@@ -1039,7 +1039,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 100,
           duration: 90,
           negativeMarking: 0.333,
-          note: 'CBT 1 is qualifying only — its marks are not carried into the final merit list, which is decided by CBT 2. Pattern applies to both the Graduate (CEN 06/2025) and Undergraduate (CEN 07/2025) NTPC cycles.',
+          note: 'CBT 1 is qualifying only: its marks are not carried into the final merit list, which is decided by CBT 2. Pattern applies to both the Graduate (CEN 06/2025) and Undergraduate (CEN 07/2025) NTPC cycles.',
           sectionBreakdown: [
             { name: 'Mathematics', questions: 30, marks: 30, duration: 90 },
             { name: 'General Intelligence and Reasoning', questions: 30, marks: 30, duration: 90 },
@@ -1110,7 +1110,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-chsl': {
     slug: 'ssc-chsl',
     name: 'SSC CHSL',
-    fullName: 'Staff Selection Commission — Combined Higher Secondary Level',
+    fullName: 'Staff Selection Commission: Combined Higher Secondary Level',
     category: 'SSC',
     stages: [
       {
@@ -1205,7 +1205,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ibps-clerk': {
     slug: 'ibps-clerk',
     name: 'IBPS Clerk',
-    fullName: 'Institute of Banking Personnel Selection — Customer Service Associate (Clerk)',
+    fullName: 'Institute of Banking Personnel Selection: Customer Service Associate (Clerk)',
     category: 'Banking',
     stages: [
       {
@@ -1291,7 +1291,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'rrb-group-d': {
     slug: 'rrb-group-d',
     name: 'RRB Group D',
-    fullName: 'Railway Recruitment Board — Group D (Level 1 posts)',
+    fullName: 'Railway Recruitment Board: Group D (Level 1 posts)',
     category: 'Railways',
     stages: [
       {
@@ -1378,7 +1378,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'sbi-po': {
     slug: 'sbi-po',
     name: 'SBI PO',
-    fullName: 'State Bank of India — Probationary Officer',
+    fullName: 'State Bank of India: Probationary Officer',
     category: 'Banking',
     stages: [
       {
@@ -1464,7 +1464,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'rbi-assistant': {
     slug: 'rbi-assistant',
     name: 'RBI Assistant',
-    fullName: 'Reserve Bank of India — Assistant',
+    fullName: 'Reserve Bank of India: Assistant',
     category: 'Banking',
     stages: [
       {
@@ -1550,7 +1550,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-mts': {
     slug: 'ssc-mts',
     name: 'SSC MTS',
-    fullName: 'Staff Selection Commission — Multi-Tasking Staff & Havaldar',
+    fullName: 'Staff Selection Commission: Multi-Tasking Staff & Havaldar',
     category: 'SSC',
     stages: [
       {
@@ -1570,7 +1570,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           duration: 90,
           negativeMarking: '0 in Session 1, 1 in Session 2',
           timerNote: 'Two mandatory 45-minute sessions on the same day',
-          note: 'Session 1 (Numerical and Reasoning) carries no negative marking. Only candidates who qualify Session 1 have Session 2 (General Awareness and English) evaluated, where each wrong answer deducts 1 mark. This mock combines both sessions under one continuous timer for practice purposes — the real exam runs them as two separately timed, sequential sessions.',
+          note: 'Session 1 (Numerical and Reasoning) carries no negative marking. Only candidates who qualify Session 1 have Session 2 (General Awareness and English) evaluated, where each wrong answer deducts 1 mark. This mock combines both sessions under one continuous timer for practice purposes; the real exam runs them as two separately timed, sequential sessions.',
           sectionBreakdown: [
             { name: 'Numerical and Mathematical Ability', questions: 20, marks: 60, duration: 45 },
             { name: 'Reasoning Ability and Problem Solving', questions: 20, marks: 60, duration: 45 },
@@ -1638,7 +1638,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'cbt-quick-10min',
-            name: 'Quick Test — 10 Minutes',
+            name: 'Quick Test (10 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 10,
@@ -1649,7 +1649,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'cbt-quick-15min',
-            name: 'Quick Test — 15 Minutes',
+            name: 'Quick Test (15 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 15,
@@ -1665,7 +1665,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ibps-rrb-office-assistant': {
     slug: 'ibps-rrb-office-assistant',
     name: 'IBPS RRB Office Assistant',
-    fullName: 'IBPS Common Recruitment Process for Regional Rural Banks — Office Assistant (Multipurpose)',
+    fullName: 'IBPS Common Recruitment Process for Regional Rural Banks: Office Assistant (Multipurpose)',
     category: 'Banking',
     stages: [
       {
@@ -1679,7 +1679,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 80,
           duration: 45,
           negativeMarking: 0.25,
-          timerNote: 'Composite 45 minutes for both sections combined — no sectional lock',
+          timerNote: 'Composite 45 minutes for both sections combined, no sectional lock',
           note: 'Candidates must clear both the sectional and overall cut-offs. Prelims marks are used only for shortlisting; the final merit list is decided by Mains.',
           sectionBreakdown: [
             { name: 'Reasoning', questions: 40, marks: 40, duration: 25 },
@@ -1697,7 +1697,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             duration: 45,
             marksPerCorrect: 1,
             negativeMarking: 0.25,
-            scoringNote: 'Both sections share one combined 45-minute timer — there is no sectional lock, unlike SBI PO or IBPS PO.',
+            scoringNote: 'Both sections share one combined 45-minute timer: there is no sectional lock, unlike SBI PO or IBPS PO.',
             checkedOn: '4 August 2026',
           },
           {
@@ -1724,7 +1724,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'prelims-quick-10min',
-            name: 'Quick Test — 10 Minutes',
+            name: 'Quick Test (10 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 10,
@@ -1734,7 +1734,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'prelims-quick-15min',
-            name: 'Quick Test — 15 Minutes',
+            name: 'Quick Test (15 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 15,
@@ -1759,7 +1759,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-gd-constable': {
     slug: 'ssc-gd-constable',
     name: 'SSC GD Constable',
-    fullName: 'Staff Selection Commission — Constable (GD) in CAPFs, SSF and Rifleman (GD) in Assam Rifles',
+    fullName: 'Staff Selection Commission: Constable (GD) in CAPFs, SSF and Rifleman (GD) in Assam Rifles',
     category: 'SSC',
     stages: [
       {
@@ -1773,7 +1773,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 160,
           duration: 60,
           negativeMarking: 0.25,
-          note: 'Questions are of Matriculation (Class 10) level. The CBE is followed by a Physical Efficiency Test (PET)/Physical Standard Test (PST), Detailed Medical Examination, and Document Verification — none of which are written stages.',
+          note: 'Questions are of Matriculation (Class 10) level. The CBE is followed by a Physical Efficiency Test (PET)/Physical Standard Test (PST), Detailed Medical Examination, and Document Verification, none of which are written stages.',
           sectionBreakdown: [
             { name: 'General Intelligence and Reasoning', questions: 20, marks: 40, duration: 60 },
             { name: 'General Knowledge and General Awareness', questions: 20, marks: 40, duration: 60 },
@@ -1841,7 +1841,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'cbe-quick-10min',
-            name: 'Quick Test — 10 Minutes',
+            name: 'Quick Test (10 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 10,
@@ -1851,7 +1851,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'cbe-quick-15min',
-            name: 'Quick Test — 15 Minutes',
+            name: 'Quick Test (15 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 15,
@@ -1866,7 +1866,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ibps-rrb-officer-scale-1': {
     slug: 'ibps-rrb-officer-scale-1',
     name: 'IBPS RRB Officer Scale I',
-    fullName: 'Institute of Banking Personnel Selection — Regional Rural Banks, Officer Scale I (PO)',
+    fullName: 'Institute of Banking Personnel Selection: Regional Rural Banks, Officer Scale I (PO)',
     category: 'Banking',
     stages: [
       {
@@ -1880,7 +1880,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 80,
           duration: 45,
           negativeMarking: 0.25,
-          timerNote: 'Composite 45 minutes for both sections combined — no sectional lock.',
+          timerNote: 'Composite 45 minutes for both sections combined, no sectional lock.',
           sectionBreakdown: [
             { name: 'Reasoning', questions: 40, marks: 40, duration: 25 },
             { name: 'Quantitative Aptitude', questions: 40, marks: 40, duration: 20 },
@@ -1923,7 +1923,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'prelims-quick-10min',
-            name: 'Quick Test — 10 Minutes',
+            name: 'Quick Test (10 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 10,
@@ -1933,7 +1933,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'prelims-quick-15min',
-            name: 'Quick Test — 15 Minutes',
+            name: 'Quick Test (15 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 15,
@@ -1958,7 +1958,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'sbi-clerk': {
     slug: 'sbi-clerk',
     name: 'SBI Clerk',
-    fullName: 'State Bank of India — Junior Associate (Customer Support & Sales)',
+    fullName: 'State Bank of India: Junior Associate (Customer Support & Sales)',
     category: 'Banking',
     stages: [
       {
@@ -2029,7 +2029,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'prelims-quick-10min',
-            name: 'Quick Test — 10 Minutes',
+            name: 'Quick Test (10 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 10,
@@ -2039,7 +2039,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           },
           {
             id: 'prelims-quick-15min',
-            name: 'Quick Test — 15 Minutes',
+            name: 'Quick Test (15 Minutes)',
             kind: 'quick',
             status: 'checked',
             duration: 15,
@@ -2064,7 +2064,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'rrb-je': {
     slug: 'rrb-je',
     name: 'RRB Junior Engineer',
-    fullName: 'Railway Recruitment Board — Junior Engineer / Depot Material Superintendent / Chemical & Metallurgical Assistant',
+    fullName: 'Railway Recruitment Board: Junior Engineer / Depot Material Superintendent / Chemical & Metallurgical Assistant',
     category: 'Railways',
     stages: [
       {
@@ -2161,7 +2161,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'upsc-cse': {
     slug: 'upsc-cse',
     name: 'UPSC CSE',
-    fullName: 'Union Public Service Commission — Civil Services Examination',
+    fullName: 'Union Public Service Commission: Civil Services Examination',
     category: 'Civil Services',
     stages: [
       {
@@ -2183,7 +2183,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 200,
           duration: 120,
           negativeMarking: 0.667,
-          note: "GS Paper I marks count towards the qualifying threshold for the Main Examination. UPSC does not publish an official question-wise split across its syllabus topics — the breakdown below reflects how this mock test's questions are organized, not an official UPSC-published distribution.",
+          note: "GS Paper I marks count towards the qualifying threshold for the Main Examination. UPSC does not publish an official question-wise split across its syllabus topics: the breakdown below reflects how this mock test's questions are organized, not an official UPSC-published distribution.",
           sectionBreakdown: [
             { name: 'History of India and Indian National Movement', questions: 15, marks: 30, duration: 18 },
             { name: 'Indian and World Geography', questions: 15, marks: 30, duration: 18 },
@@ -2193,7 +2193,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'General Science', questions: 13, marks: 26, duration: 16 },
             { name: 'Current events of national and international importance', questions: 15, marks: 30, duration: 18 },
           ],
-          timerNote: 'Single 120-minute timer for the whole paper — GS Paper I is not divided into separately timed sections.',
+          timerNote: 'Single 120-minute timer for the whole paper: GS Paper I is not divided into separately timed sections.',
           sourceUrl: UPSC_CSE_2026_NOTICE,
           checkedOn: '5 August 2026',
         },
@@ -2305,7 +2305,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 200,
           duration: 120,
           negativeMarking: 0.833,
-          note: "Paper II (CSAT) is qualifying only — candidates must score at least 33% (66/200) to qualify for the Main Examination; it does not count towards merit ranking. UPSC does not publish an official question-wise split across CSAT's syllabus topics — the breakdown below reflects how this mock test's questions are organized, not an official UPSC-published distribution.",
+          note: "Paper II (CSAT) is qualifying only: candidates must score at least 33% (66/200) to qualify for the Main Examination; it does not count towards merit ranking. UPSC does not publish an official question-wise split across CSAT's syllabus topics: the breakdown below reflects how this mock test's questions are organized, not an official UPSC-published distribution.",
           sectionBreakdown: [
             { name: 'Comprehension', questions: 18, marks: 45, duration: 27 },
             { name: 'Interpersonal skills including communication skills', questions: 6, marks: 15, duration: 9 },
@@ -2314,7 +2314,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'General mental ability', questions: 8, marks: 20, duration: 12 },
             { name: 'Basic numeracy and Data interpretation', questions: 20, marks: 50, duration: 30 },
           ],
-          timerNote: 'Single 120-minute timer for the whole paper — CSAT is not divided into separately timed sections.',
+          timerNote: 'Single 120-minute timer for the whole paper: CSAT is not divided into separately timed sections.',
           sourceUrl: UPSC_CSE_2026_NOTICE,
           checkedOn: '5 August 2026',
         },
@@ -2402,7 +2402,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cpo': {
     slug: 'ssc-cpo',
     name: 'SSC CPO',
-    fullName: 'Staff Selection Commission — Central Police Organisation (Sub-Inspector in Delhi Police and CAPFs)',
+    fullName: 'Staff Selection Commission: Central Police Organisation (Sub-Inspector in Delhi Police and CAPFs)',
     category: 'SSC',
     stages: [
       {
@@ -2423,7 +2423,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'Quantitative Aptitude', questions: 50, marks: 50, duration: 30 },
             { name: 'English Comprehension', questions: 50, marks: 50, duration: 30 },
           ],
-          timerNote: 'Each of the four sections has its own separately timed 30-minute window — there is no shifting unused time between sections, unlike RPF Constable or RRB JE.',
+          timerNote: 'Each of the four sections has its own separately timed 30-minute window: there is no shifting unused time between sections, unlike RPF Constable or RRB JE.',
           sourceUrl: SSC_CPO_2025_RESULT_NOTICE,
           checkedOn: '5 August 2026',
         },
@@ -2500,7 +2500,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ibps-so': {
     slug: 'ibps-so',
     name: 'IBPS SO',
-    fullName: 'Institute of Banking Personnel Selection — Specialist Officer, Scale I (IT Officer / Agriculture Field Officer / HR-Personnel Officer / Marketing Officer)',
+    fullName: 'Institute of Banking Personnel Selection: Specialist Officer, Scale I (IT Officer / Agriculture Field Officer / HR-Personnel Officer / Marketing Officer)',
     category: 'Banking',
     stages: [
       {
@@ -2514,13 +2514,13 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 125,
           duration: 120,
           negativeMarking: 0.25,
-          note: 'This mock covers the Prelims pattern shared by the IT Officer, Agriculture Field Officer, HR/Personnel Officer, and Marketing Officer (Scale I) posts — the Law Officer and Rajbhasha Adhikari track substitutes General Awareness for Quantitative Aptitude instead. Candidates must qualify each of the three separately timed sections; Prelims marks are not carried forward to the final merit list. Shortlisted candidates appear for the Main Examination, which tests post-specific Professional Knowledge (60 questions/60 marks/45 minutes) instead of these general sections.',
+          note: 'This mock covers the Prelims pattern shared by the IT Officer, Agriculture Field Officer, HR/Personnel Officer, and Marketing Officer (Scale I) posts. The Law Officer and Rajbhasha Adhikari track substitutes General Awareness for Quantitative Aptitude instead. Candidates must qualify each of the three separately timed sections; Prelims marks are not carried forward to the final merit list. Shortlisted candidates appear for the Main Examination, which tests post-specific Professional Knowledge (60 questions/60 marks/45 minutes) instead of these general sections.',
           sectionBreakdown: [
             { name: 'English Language', questions: 50, marks: 25, duration: 40 },
             { name: 'Reasoning', questions: 50, marks: 50, duration: 40 },
             { name: 'Quantitative Aptitude', questions: 50, marks: 50, duration: 40 },
           ],
-          timerNote: 'Each of the three sections has its own separately timed 40-minute window — sectional lock, no shifting unused time between sections. English Language questions carry 0.5 marks each (25 marks across 50 questions); Reasoning and Quantitative Aptitude questions carry 1 mark each.',
+          timerNote: 'Each of the three sections has its own separately timed 40-minute window: sectional lock, no shifting unused time between sections. English Language questions carry 0.5 marks each (25 marks across 50 questions); Reasoning and Quantitative Aptitude questions carry 1 mark each.',
           sourceUrl: IBPS_SO_2025_NOTICE,
           checkedOn: '6 August 2026',
         },
@@ -2586,7 +2586,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'rbi-grade-b': {
     slug: 'rbi-grade-b',
     name: 'RBI Grade B',
-    fullName: 'Reserve Bank of India — Grade B Officer (DR), General Cadre',
+    fullName: 'Reserve Bank of India: Grade B Officer (DR), General Cadre',
     category: 'Banking',
     stages: [
       {
@@ -2600,14 +2600,14 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 200,
           duration: 120,
           negativeMarking: 0.25,
-          note: 'Phase I is an objective screening stage for the General cadre. Candidates must secure minimum marks separately in each section as well as in aggregate to be shortlisted for Phase II, which comprises Economic and Social Issues, English (Writing Skills), and Finance and Management — Phase I marks are not carried forward to the final merit list.',
+          note: 'Phase I is an objective screening stage for the General cadre. Candidates must secure minimum marks separately in each section as well as in aggregate to be shortlisted for Phase II, which comprises Economic and Social Issues, English (Writing Skills), and Finance and Management. Phase I marks are not carried forward to the final merit list.',
           sectionBreakdown: [
             { name: 'General Awareness', questions: 80, marks: 80, duration: 25 },
             { name: 'English Language', questions: 30, marks: 30, duration: 25 },
             { name: 'Quantitative Aptitude', questions: 30, marks: 30, duration: 25 },
             { name: 'Reasoning', questions: 60, marks: 60, duration: 45 },
           ],
-          timerNote: 'Each of the four sections has its own separately timed window (25/25/25/45 minutes) — sectional lock, no shifting unused time between sections.',
+          timerNote: 'Each of the four sections has its own separately timed window (25/25/25/45 minutes): sectional lock, no shifting unused time between sections.',
           sourceUrl: RBI_GRADE_B_2025_NOTICE,
           checkedOn: '6 August 2026',
         },
@@ -2684,7 +2684,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'nabard-grade-a': {
     slug: 'nabard-grade-a',
     name: 'NABARD Grade A',
-    fullName: 'National Bank for Agriculture and Rural Development — Assistant Manager, Grade A (RDBS, General)',
+    fullName: 'National Bank for Agriculture and Rural Development: Assistant Manager, Grade A (RDBS, General)',
     category: 'Banking',
     stages: [
       {
@@ -2718,7 +2718,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'Economic and Social Issues', questions: 40, marks: 40, duration: 120 },
             { name: 'Agriculture and Rural Development', questions: 40, marks: 40, duration: 120 },
           ],
-          timerNote: 'Single composite 120-minute timer for all eight tests combined — no sectional lock, you can move between sections freely.',
+          timerNote: 'Single composite 120-minute timer for all eight tests combined: no sectional lock, you can move between sections freely.',
           sourceUrl: NABARD_GRADE_A_2025_NOTICE,
           checkedOn: '6 August 2026',
         },
@@ -2838,12 +2838,12 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'sebi-grade-a': {
     slug: 'sebi-grade-a',
     name: 'SEBI Grade A',
-    fullName: 'Securities and Exchange Board of India — Officer Grade A (Assistant Manager), General Stream',
+    fullName: 'Securities and Exchange Board of India: Officer Grade A (Assistant Manager), General Stream',
     category: 'Banking',
     stages: [
       {
         id: 'phase-1-paper-1',
-        name: 'Phase I — Paper 1',
+        name: 'Phase I: Paper 1',
         pattern: {
           status: 'official',
           cycle: 'Officer Grade A 2025',
@@ -2852,14 +2852,14 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 100,
           duration: 60,
           negativeMarking: 0.3125,
-          note: 'Paper 1 is common to every stream and covers General Awareness (including some financial sector questions), English Language, Quantitative Aptitude, and Test of Reasoning. There is no sectional cut-off within Paper 1, only an overall cut-off of 30%. Paper 1 and Paper 2 are separately timed — once Paper 1 ends, Paper 2 begins as its own timed block (modelled here as a separate test).',
+          note: 'Paper 1 is common to every stream and covers General Awareness (including some financial sector questions), English Language, Quantitative Aptitude, and Test of Reasoning. There is no sectional cut-off within Paper 1, only an overall cut-off of 30%. Paper 1 and Paper 2 are separately timed: once Paper 1 ends, Paper 2 begins as its own timed block (modelled here as a separate test).',
           sectionBreakdown: [
             { name: 'General Awareness', questions: 20, marks: 25, duration: 60 },
             { name: 'English Language', questions: 20, marks: 25, duration: 60 },
             { name: 'Quantitative Aptitude', questions: 20, marks: 25, duration: 60 },
             { name: 'Test of Reasoning', questions: 20, marks: 25, duration: 60 },
           ],
-          timerNote: 'Single composite 60-minute timer for all four Paper 1 sections combined — no sectional lock, you can move between sections freely.',
+          timerNote: 'Single composite 60-minute timer for all four Paper 1 sections combined: no sectional lock, you can move between sections freely.',
           sourceUrl: SEBI_GRADE_A_2025_NOTICE,
           checkedOn: '6 August 2026',
         },
@@ -2922,7 +2922,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
       },
       {
         id: 'phase-1-paper-2',
-        name: 'Phase I — Paper 2 (General Stream)',
+        name: 'Phase I: Paper 2 (General Stream)',
         pattern: {
           status: 'official',
           cycle: 'Officer Grade A 2025',
@@ -2931,7 +2931,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 100,
           duration: 40,
           negativeMarking: 0.5,
-          note: 'Paper 2 tests subject knowledge specific to each recruitment stream. This mock covers the General stream syllabus — Commerce, Accountancy, Management, Finance, Costing, Companies Act, and Economics. SEBI does not publish an official question-wise split across these seven subjects — the breakdown below reflects how this mock test\'s questions are organised, not an official SEBI-published distribution. Paper 2 has its own overall cut-off of 40% and is timed separately from Paper 1.',
+          note: 'Paper 2 tests subject knowledge specific to each recruitment stream. This mock covers the General stream syllabus: Commerce, Accountancy, Management, Finance, Costing, Companies Act, and Economics. SEBI does not publish an official question-wise split across these seven subjects. The breakdown below reflects how this mock test\'s questions are organised, not an official SEBI-published distribution. Paper 2 has its own overall cut-off of 40% and is timed separately from Paper 1.',
           sectionBreakdown: [
             { name: 'Commerce', questions: 8, marks: 16, duration: 40 },
             { name: 'Accountancy', questions: 7, marks: 14, duration: 40 },
@@ -2941,7 +2941,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'Companies Act', questions: 6, marks: 12, duration: 40 },
             { name: 'Economics', questions: 7, marks: 14, duration: 40 },
           ],
-          timerNote: 'Single composite 40-minute timer for all General Stream subjects combined — no sectional lock, you can move between subjects freely.',
+          timerNote: 'Single composite 40-minute timer for all General Stream subjects combined: no sectional lock, you can move between subjects freely.',
           sourceUrl: SEBI_GRADE_A_2025_NOTICE,
           checkedOn: '6 August 2026',
         },
@@ -3050,7 +3050,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'sidbi-grade-a-b': {
     slug: 'sidbi-grade-a-b',
     name: 'SIDBI Grade A & B',
-    fullName: 'Small Industries Development Bank of India — Officer Grade A (Assistant Manager) & Grade B (Manager), General Stream',
+    fullName: 'Small Industries Development Bank of India: Officer Grade A (Assistant Manager) & Grade B (Manager), General Stream',
     category: 'Banking',
     stages: [
       {
@@ -3064,7 +3064,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 200,
           duration: 120,
           negativeMarking: 0.25,
-          note: 'Phase I is common to Grade A and Grade B (General Stream) and has seven sections split into two groups: English Language, Reasoning Aptitude, Quantitative Aptitude, and Computer Knowledge are qualifying only, while General Awareness, MSMEs: Policy, Regulatory and Legal Framework — Finance and Management, and the Stream Specific Test (the merit section, worth 100 of the 200 marks) decide the merit ranking used to shortlist candidates for Phase II.',
+          note: 'Phase I is common to Grade A and Grade B (General Stream) and has seven sections split into two groups: English Language, Reasoning Aptitude, Quantitative Aptitude, and Computer Knowledge are qualifying only, while General Awareness, MSMEs: Policy, Regulatory and Legal Framework; Finance and Management, and the Stream Specific Test (the merit section, worth 100 of the 200 marks) decide the merit ranking used to shortlist candidates for Phase II.',
           sectionBreakdown: [
             { name: 'English Language', questions: 30, marks: 30, duration: 120 },
             { name: 'Reasoning Aptitude', questions: 25, marks: 25, duration: 120 },
@@ -3074,7 +3074,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'MSMEs: Policy, Regulatory and Legal Framework; Finance and Management', questions: 30, marks: 30, duration: 120 },
             { name: 'Stream Specific Test', questions: 50, marks: 50, duration: 120 },
           ],
-          timerNote: 'Single composite 120-minute timer for all seven sections combined — no sectional lock, you can move between sections freely.',
+          timerNote: 'Single composite 120-minute timer for all seven sections combined: no sectional lock, you can move between sections freely.',
           sourceUrl: SIDBI_GRADE_A_B_2025_NOTICE,
           checkedOn: '6 August 2026',
         },
@@ -3183,7 +3183,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'rpf-constable': {
     slug: 'rpf-constable',
     name: 'RPF Constable',
-    fullName: 'Railway Protection Force — Constable',
+    fullName: 'Railway Protection Force: Constable',
     category: 'Railways',
     stages: [
       {

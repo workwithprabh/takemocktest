@@ -1,4 +1,4 @@
-// Single source of truth for the homepage "Latest Updates" feed — same
+// Single source of truth for the homepage "Latest Updates" feed: same
 // pattern as exams.ts. Add real, dated entries here as official
 // notifications/admit cards/results/answer keys/cutoffs are released.
 //
@@ -14,7 +14,7 @@ export interface UpdateEntry {
   link: string;
 }
 
-// All categories share the same monochrome badge treatment — distinguished
+// All categories share the same monochrome badge treatment: distinguished
 // by label only, per the site-wide badge/tag hierarchy rule.
 export const UPDATE_CATEGORY_STYLES: Record<UpdateCategory, string> = {
   Notification: 'bg-ink-100 text-ink-700',

@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import type { ReactNode } from 'react';
 
 // Shared shell for the simple per-exam info pages (admit card, result,
-// cutoff, answer key, eligibility, selection process, salary) — same
+// cutoff, answer key, eligibility, selection process, salary): same
 // pattern as the syllabus page: breadcrumb schema + a placeholder for real
 // content to be added once it's sourced from the official exam body.
 export default function ExamInfoPageContent({

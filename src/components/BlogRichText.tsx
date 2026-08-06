@@ -1,4 +1,4 @@
-// Parses a lightweight markdown-style link syntax — [label](/path) — inside blog
+// Parses a lightweight markdown-style link syntax, [label](/path), inside blog
 // paragraph text and renders it as a real Next.js <Link>, so blog content can
 // genuinely interlink to exam pages and other posts instead of being plain text.
 // Paths in blog.ts are written without the /:country prefix; it's added here.

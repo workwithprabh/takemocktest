@@ -17,14 +17,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
 
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Admit Card 2026 — Release Schedule and Documents',
-      description: 'SSC says CGL 2026 exam-city details will appear about 10 days before the exam and the admission certificate 2–3 days before. Check the official schedule and document list.',
+      title: 'SSC CGL Admit Card 2026: Release Schedule and Documents',
+      description: 'SSC says CGL 2026 exam-city details will appear about 10 days before the exam and the admission certificate 2 to 3 days before. Check the official schedule and document list.',
       path: '/in/ssc-cgl/admit-card',
     });
   }
 
   return pageMetadata({
-    title: `${exam.name} Admit Card — Verification in Progress`,
+    title: `${exam.name} Admit Card: Verification in Progress`,
     description: `${exam.name} admit-card dates and official links will be published after verification against the exam body's notices.`,
     path: `/in/${exam.slug}/admit-card`,
     noIndex: true,
@@ -67,15 +67,15 @@ export default async function AdmitCardPage({ params }: { params: Promise<{ coun
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500 mb-3">Official 2026 notice guidance</p>
         <h1 className="text-3xl sm:text-4xl font-bold text-ink-900 mb-3">SSC CGL Admit Card 2026</h1>
         <p className="text-ink-500 leading-7">
-          SSC calls the admit card an Admission Certificate. The official CGL 2026 notice says it will be available on the Commission&apos;s website 2–3 days before the examination.
+          SSC calls the admit card an Admission Certificate. The official CGL 2026 notice says it will be available on the Commission&apos;s website 2 to 3 days before the examination.
         </p>
       </header>
 
       <section className="grid md:grid-cols-3 gap-px bg-ink-200 border border-ink-200 mb-10" aria-label="Official release schedule">
         {[
-          ['Tier 1 schedule', 'August–September 2026', 'Tentative window in the official notice'],
+          ['Tier 1 schedule', 'August to September 2026', 'Tentative window in the official notice'],
           ['Exam city details', 'About 10 days before', 'Time table and city/centre information'],
-          ['Admission Certificate', '2–3 days before', 'Download and print from ssc.gov.in'],
+          ['Admission Certificate', '2 to 3 days before', 'Download and print from ssc.gov.in'],
         ].map(([label, value, note], index) => (
           <div key={label} className={index === 2 ? 'bg-ink-900 text-ink-50 p-5' : 'bg-white p-5'}>
             <p className={`text-xs font-semibold uppercase tracking-[0.14em] ${index === 2 ? 'text-ink-300' : 'text-ink-500'}`}>{label}</p>
@@ -139,7 +139,7 @@ export default async function AdmitCardPage({ params }: { params: Promise<{ coun
               When will the SSC CGL 2026 admit card be released?
               <span aria-hidden="true" className="text-ink-500 group-open:rotate-45">+</span>
             </summary>
-            <p className="text-sm leading-6 text-ink-500 mt-3 max-w-3xl">SSC&apos;s official notice says the Admission Certificate facility will be available 2–3 days before the examination.</p>
+            <p className="text-sm leading-6 text-ink-500 mt-3 max-w-3xl">SSC&apos;s official notice says the Admission Certificate facility will be available 2 to 3 days before the examination.</p>
           </details>
           <details className="group border-b border-ink-200 py-5">
             <summary className="cursor-pointer list-none font-semibold text-ink-900 flex items-center justify-between gap-4">
@@ -150,7 +150,7 @@ export default async function AdmitCardPage({ params }: { params: Promise<{ coun
           </details>
           <details className="group border-b border-ink-200 py-5">
             <summary className="cursor-pointer list-none font-semibold text-ink-900 flex items-center justify-between gap-4">
-              Is the August–September 2026 Tier 1 window final?
+              Is the August to September 2026 Tier 1 window final?
               <span aria-hidden="true" className="text-ink-500 group-open:rotate-45">+</span>
             </summary>
             <p className="text-sm leading-6 text-ink-500 mt-3 max-w-3xl">No. The examination notice labels that window tentative. Follow SSC&apos;s website for the exact schedule.</p>
@@ -161,7 +161,7 @@ export default async function AdmitCardPage({ params }: { params: Promise<{ coun
               <span aria-hidden="true" className="text-ink-500 group-open:rotate-45">+</span>
             </summary>
             <p className="text-sm leading-6 text-ink-500 mt-3 max-w-3xl">
-              Read the <a href={CGL_2026_NOTICE} target="_blank" rel="noreferrer" className="font-medium text-ink-900 underline underline-offset-4">official SSC CGL 2026 examination notice</a>, especially sections 14.4–14.10.
+              Read the <a href={CGL_2026_NOTICE} target="_blank" rel="noreferrer" className="font-medium text-ink-900 underline underline-offset-4">official SSC CGL 2026 examination notice</a>, especially sections 14.4 to 14.10.
             </p>
           </details>
         </div>

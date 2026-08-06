@@ -1,7 +1,7 @@
 import ResultsClient from './ResultsClient';
 import { pageMetadata } from '@/lib/metadata';
 
-// Personalized, localStorage-only content — nothing here is meaningful to a
+// Personalized, localStorage-only content: nothing here is meaningful to a
 // crawler, so keep it out of the index.
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;

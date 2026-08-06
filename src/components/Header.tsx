@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { EXAM_CATEGORIES, getCategoryExamCount } from '@/lib/exam-catalog';
 import { useDismissableMenu } from '@/lib/useDismissableMenu';
 
-// Site header — logo, primary nav, search. This is the internal-linking
+// Site header: logo, primary nav, search. This is the internal-linking
 // anchor Google uses to discover every exam/blog page beneath it.
 export default function Header({ country }: { country: string }) {
   const { open, setOpen, ref } = useDismissableMenu<HTMLDivElement>();

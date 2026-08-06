@@ -13,21 +13,21 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam) return {};
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Eligibility 2026 — Age Limit & Qualification',
+      title: 'SSC CGL Eligibility 2026: Age Limit & Qualification',
       description: 'Check SSC CGL 2026 eligibility: post-wise age limits, age relaxation, educational qualifications, nationality rules, and the qualification cut-off date.',
       path: '/in/ssc-cgl/eligibility',
     });
   }
   if (exam.slug === 'ibps-po') {
     return pageMetadata({
-      title: 'IBPS PO Eligibility 2026 — Age Limit & Qualification',
-      description: 'Check the official IBPS PO 2026 eligibility criteria: 20–30 year age limit, category relaxations, graduation requirement, citizenship rules, and cut-off dates.',
+      title: 'IBPS PO Eligibility 2026: Age Limit & Qualification',
+      description: 'Check the official IBPS PO 2026 eligibility criteria: 20 to 30 year age limit, category relaxations, graduation requirement, citizenship rules, and cut-off dates.',
       path: '/in/ibps-po/eligibility',
     });
   }
   return pageMetadata({
     title: `${exam.name} Eligibility Criteria ${new Date().getFullYear()}`,
-    description: `${exam.name} eligibility criteria — age limit, educational qualification, and nationality requirements.`,
+    description: `${exam.name} eligibility criteria: age limit, educational qualification, and nationality requirements.`,
     path: `/in/${exam.slug}/eligibility`,
     noIndex: true,
   });
@@ -52,8 +52,8 @@ export default async function EligibilityPage({ params }: { params: Promise<{ co
             <h2 className="mb-2 text-lg font-semibold text-ink-900">Eligibility at a glance</h2>
             <p>
               SSC CGL eligibility depends on the post you choose. Most posts require a bachelor&apos;s degree,
-              while the age limit falls within one of four post-specific bands. The crucial date for age and
-              educational qualification is <strong>1 August 2026</strong>.
+              while the age limit falls within one of four post-specific bands. Age and educational qualification
+              are both counted as on <strong>1 August 2026</strong>.
             </p>
           </section>
 
@@ -68,7 +68,7 @@ export default async function EligibilityPage({ params }: { params: Promise<{ co
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-ink-200">
-                  {['18–27 years', '20–30 years', '18–30 years', '18–32 years'].map((band) => (
+                  {['18 to 27 years', '20 to 30 years', '18 to 30 years', '18 to 32 years'].map((band) => (
                     <tr key={band}>
                       <td className="px-4 py-3 font-medium text-ink-900">{band}</td>
                       <td className="px-4 py-3">1 August 2026</td>

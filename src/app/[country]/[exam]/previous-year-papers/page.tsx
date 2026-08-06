@@ -46,14 +46,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
 
   if (exam.slug === 'ssc-cgl') {
     return pageMetadata({
-      title: 'SSC CGL Previous Year Paper Sources — Official SSC Records',
+      title: 'SSC CGL Previous Year Paper Sources: Official SSC Records',
       description: 'Browse verified SSC CGL Tier 1 and Tier 2 question-paper release notices from the official Staff Selection Commission archive, with access-window details.',
       path: '/in/ssc-cgl/previous-year-papers',
     });
   }
 
   return pageMetadata({
-    title: `${exam.name} Previous Year Papers — Verification in Progress`,
+    title: `${exam.name} Previous Year Papers: Verification in Progress`,
     description: `${exam.name} previous-year papers will be published after their source and shift details are verified.`,
     path: `/in/${exam.slug}/previous-year-papers`,
     noIndex: true,
@@ -99,7 +99,7 @@ export default async function PreviousYearPapersPage({ params }: { params: Promi
           <aside className="border border-ink-200 bg-ink-50 p-5 mb-8" aria-label="Availability note">
             <h2 className="font-semibold text-ink-900 mb-2">Read before opening a record</h2>
             <p className="text-sm leading-6 text-ink-500">
-              SSC issued each candidate&apos;s paper through a time-limited login window. Those windows are now closed, so the links below open the permanent official notices—not an active paper download. We will only host shift-wise papers after their source and answers can be independently verified.
+              SSC issued each candidate&apos;s paper through a time-limited login window. Those windows are now closed, so the links below open the permanent official notices, not an active paper download. We will only host shift-wise papers after their source and answers can be independently verified.
             </p>
           </aside>
 

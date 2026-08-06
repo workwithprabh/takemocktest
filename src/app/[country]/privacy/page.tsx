@@ -1,7 +1,7 @@
 // This is a good-faith draft aligned to India's Digital Personal Data
 // Protection Act, 2023 (DPDP Act) and written to accurately reflect what
 // this site actually does (no accounts, no server-side storage of test
-// data). It is a starting point, not legal advice — have it reviewed by a
+// data). It is a starting point, not legal advice: have it reviewed by a
 // qualified professional before relying on it for compliance.
 
 import { pageMetadata } from '@/lib/metadata';
@@ -26,14 +26,14 @@ const SECTIONS = [
     ],
   },
   {
-    heading: 'What we collect — and what we deliberately don\'t',
+    heading: 'What we collect, and what we deliberately don\'t',
     body: [
       'No account or sign-up is required to use TakeMockTest, and we do not collect personal data just to let you browse or take a mock test.',
-      'Test attempts and answers: when you take a mock test, your answers, score, and results are stored only in your own browser\'s local storage. This data is never transmitted to, or stored on, our servers — we have no visibility into your individual test attempts or scores.',
+      'Test attempts and answers: when you take a mock test, your answers, score, and results are stored only in your own browser\'s local storage. This data is never transmitted to, or stored on, our servers: we have no visibility into your individual test attempts or scores.',
       `Direct contact: if you email us at ${SITE_EMAIL}, we receive your email address and message only so we can respond to your support, correction, or privacy request.`,
       'Standard technical logs: like most websites, our hosting provider automatically logs basic technical information (such as IP address, browser type, and pages requested) for security and performance purposes.',
-      'Analytics: we use Google Analytics to understand aggregated usage patterns — which pages are visited, approximate device type and location, and how visitors navigate the site — with IP addresses anonymized before storage. This tells us which exams and content are useful; it does not identify you individually, and it is never linked to your test answers or scores, which stay in your browser as described above. You can opt out using the Google Analytics Opt-out Browser Add-on or your browser\'s tracking-prevention settings.',
-      'Advertising cookies: if and when this site displays third-party ads (e.g. Google AdSense), the ad provider may use cookies to serve relevant ads. We do not control these cookies directly — see the ad provider\'s own privacy policy for details, and use your browser settings or the ad provider\'s opt-out tools to manage them.',
+      'Analytics: we use Google Analytics to understand aggregated usage patterns (which pages are visited, approximate device type and location, and how visitors navigate the site) with IP addresses anonymized before storage. This tells us which exams and content are useful; it does not identify you individually, and it is never linked to your test answers or scores, which stay in your browser as described above. You can opt out using the Google Analytics Opt-out Browser Add-on or your browser\'s tracking-prevention settings.',
+      'Advertising cookies: if and when this site displays third-party ads (e.g. Google AdSense), the ad provider may use cookies to serve relevant ads. We do not control these cookies directly: see the ad provider\'s own privacy policy for details, and use your browser settings or the ad provider\'s opt-out tools to manage them.',
     ],
   },
   {
@@ -50,7 +50,7 @@ const SECTIONS = [
     heading: 'Your rights under the DPDP Act, 2023',
     body: [
       'Where applicable, you have the right to access information we hold about you, request correction or erasure, withdraw consent you\'ve previously given, and file a grievance if you believe your data has been mishandled. You may also nominate another individual to exercise these rights on your behalf in the event of your death or incapacity.',
-      'Because test data never leaves your device, most of these rights are already in your direct control — clearing your browser\'s local storage permanently deletes your test history.',
+      'Because test data never leaves your device, most of these rights are already in your direct control: clearing your browser\'s local storage permanently deletes your test history.',
     ],
   },
   {
