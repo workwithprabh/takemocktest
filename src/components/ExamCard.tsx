@@ -3,9 +3,9 @@ import { ExamConfig, getCheckedTestCount, getExamSections } from '@/lib/exams';
 
 const CATEGORY_STYLES = {
   SSC: {
-    surface: 'bg-[#EEF4FF]',
-    border: 'border-[#BFD2F5]',
-    text: 'text-[#244F9E]',
+    surface: 'bg-ink-100',
+    border: 'border-ink-300',
+    text: 'text-ink-700',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
         <path d="M5 19V9l7-4 7 4v10M3 19h18M8 11v5m4-5v5m4-5v5" fill="none" stroke="currentColor" strokeWidth="1.7" />
@@ -13,9 +13,9 @@ const CATEGORY_STYLES = {
     ),
   },
   Banking: {
-    surface: 'bg-[#FFF4E8]',
-    border: 'border-[#F1CFA8]',
-    text: 'text-[#8A4B08]',
+    surface: 'bg-ink-100',
+    border: 'border-ink-300',
+    text: 'text-ink-700',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
         <path d="m3 9 9-5 9 5M5 10h14M6 10v7m4-7v7m4-7v7m4-7v7M3 20h18" fill="none" stroke="currentColor" strokeWidth="1.7" />
@@ -23,9 +23,9 @@ const CATEGORY_STYLES = {
     ),
   },
   Railways: {
-    surface: 'bg-[#EAF7F3]',
-    border: 'border-[#B9DDD2]',
-    text: 'text-[#17624F]',
+    surface: 'bg-ink-100',
+    border: 'border-ink-300',
+    text: 'text-ink-700',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
         <path d="M7 4h10a2 2 0 0 1 2 2v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6a2 2 0 0 1 2-2Zm-2 8h14M8 8h8M8 21l2-3m6 0 2 3" fill="none" stroke="currentColor" strokeWidth="1.7" />
