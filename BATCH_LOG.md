@@ -2,6 +2,15 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-06 — Vercel auto-deploy pipeline fixed
+
+The Vercel↔GitHub connection had gone stale: pushes to `main` stopped triggering builds
+somewhere around Batch 18, with no error and no failed-deployment record, they just never
+reached Vercel at all. Root cause: the GitHub App's webhook trigger was set to `pull_request`
+only, which never fires on a direct push to `main` (this project pushes straight to `main`,
+no PRs). Fixed by reconnecting via Vercel's Connect (Beta) flow and explicitly enabling the
+`push` trigger event. This commit is the test push confirming it's fixed.
+
 ## 2026-08-06 — SIDBI Grade A & B (Batch 22, live session)
 
 Added SIDBI Grade A & B Phase I (General stream): English Language (30 Q), Reasoning
