@@ -118,6 +118,13 @@ import { SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_1 } from './question-banks/sebi-gr
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-costing-1';
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-companies-act-1';
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-economics-1';
+import { SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/sidbi-grade-a-b-phase-1-english-language-1';
+import { SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_1 } from './question-banks/sidbi-grade-a-b-phase-1-reasoning-aptitude-1';
+import { SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/sidbi-grade-a-b-phase-1-quantitative-aptitude-1';
+import { SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_1 } from './question-banks/sidbi-grade-a-b-phase-1-computer-knowledge-1';
+import { SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/sidbi-grade-a-b-phase-1-general-awareness-1';
+import { SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_1 } from './question-banks/sidbi-grade-a-b-phase-1-msme-policy-finance-1';
+import { SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1 } from './question-banks/sidbi-grade-a-b-phase-1-stream-specific-general-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -456,6 +463,22 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sebi-grade-a/phase-1-paper-2-costing-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_1,
   'sebi-grade-a/phase-1-paper-2-companies-act-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_1,
   'sebi-grade-a/phase-1-paper-2-economics-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_1,
+  'sidbi-grade-a-b/phase-1-full-mock-1': [
+    ...SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_1,
+    ...SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_1,
+    ...SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_1,
+    ...SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_1,
+    ...SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_1,
+    ...SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_1,
+    ...SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1,
+  ],
+  'sidbi-grade-a-b/phase-1-english-language-sectional-1': SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_1,
+  'sidbi-grade-a-b/phase-1-reasoning-aptitude-sectional-1': SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_1,
+  'sidbi-grade-a-b/phase-1-quantitative-aptitude-sectional-1': SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_1,
+  'sidbi-grade-a-b/phase-1-computer-knowledge-sectional-1': SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_1,
+  'sidbi-grade-a-b/phase-1-general-awareness-sectional-1': SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_1,
+  'sidbi-grade-a-b/phase-1-msme-policy-finance-sectional-1': SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_1,
+  'sidbi-grade-a-b/phase-1-stream-specific-sectional-1': SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -646,6 +669,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 80
     : testId.includes('sebi-grade-a/phase-1-paper-2-full-mock')
     ? 50
+    : testId.includes('sidbi-grade-a-b/phase-1-full-mock')
+    ? 200
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -713,6 +738,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
                         : testId.includes('economics') ? 7 : 7
           : testId.includes('sebi-grade-a')
             ? 20
+          : testId.includes('sidbi-grade-a-b')
+            ? testId.includes('english-language') ? 30
+              : testId.includes('reasoning-aptitude') ? 25
+                : testId.includes('quantitative-aptitude') ? 25
+                  : testId.includes('computer-knowledge') ? 20
+                    : testId.includes('general-awareness') ? 20
+                      : testId.includes('msme-policy-finance') ? 30
+                        : testId.includes('stream-specific') ? 50 : 25
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -855,6 +888,15 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General Awareness', count: 20 },
     { section: 'Economic and Social Issues', count: 40 },
     { section: 'Agriculture and Rural Development', count: 40 },
+  ],
+  'sidbi-grade-a-b': [
+    { section: 'English Language', count: 30 },
+    { section: 'Reasoning Aptitude', count: 25 },
+    { section: 'Quantitative Aptitude', count: 25 },
+    { section: 'Computer Knowledge', count: 20 },
+    { section: 'General Awareness', count: 20 },
+    { section: 'MSMEs: Policy, Regulatory and Legal Framework; Finance and Management', count: 30 },
+    { section: 'Stream Specific Test', count: 50 },
   ],
 };
 const sebiGradeAPaper1Layout = [
@@ -1163,5 +1205,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'Where is the head office of SEBI located?', options: ['New Delhi', 'Mumbai', 'Chennai', 'Kolkata'], correctIndex: 1, explanation: "SEBI's head office is located in the Bandra Kurla Complex, Mumbai." },
     // Commerce
     { section: 'Commerce', question: 'A cheque is an example of a:', options: ['Fixed Asset', 'Negotiable Instrument', 'Current Liability', 'Contingent Liability'], correctIndex: 1, explanation: 'A cheque is classified as a negotiable instrument under the Negotiable Instruments Act, 1881.' },
+  ],
+  'sidbi-grade-a-b': [
+    // General Awareness
+    { section: 'General Awareness', question: 'Where is the head office of SIDBI located?', options: ['New Delhi', 'Mumbai', 'Lucknow', 'Chennai'], correctIndex: 2, explanation: "SIDBI's head office is located in Lucknow, Uttar Pradesh." },
+    // Stream Specific Test
+    { section: 'Stream Specific Test', question: 'IRAC norms, which govern the classification of bank assets, stand for:', options: ['Interest Rate Adjustment Circular', 'Income Recognition and Asset Classification', 'Investment Regulation and Audit Compliance', 'Internal Risk Assessment Committee'], correctIndex: 1, explanation: 'IRAC stands for Income Recognition and Asset Classification.' },
   ],
 };

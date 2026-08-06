@@ -2,6 +2,75 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-06 — SIDBI Grade A & B (Batch 22, live session)
+
+Added SIDBI Grade A & B Phase I (General stream): English Language (30 Q), Reasoning
+Aptitude (25 Q), Quantitative Aptitude (25 Q), Computer Knowledge (20 Q), General Awareness
+(20 Q), MSMEs: Policy, Regulatory and Legal Framework — Finance and Management (30 Q),
+Stream Specific Test (50 Q) — wired into 1 full mock (200 Q/200 marks/120 min, single
+composite timer, no sectional lock) + 7 sectionals. Third exam on this site (after NABARD
+Grade A) with a qualifying/merit two-tier structure inside one combined paper: English
+Language, Reasoning Aptitude, Quantitative Aptitude, and Computer Knowledge are qualifying
+only, while General Awareness, MSMEs Policy/Finance/Management, and the Stream Specific Test
+form the 100-of-200-mark merit section that alone decides Phase II shortlisting — modelled
+as one `TestStage` (unlike SEBI's two-separate-papers structure) since SIDBI's Phase I is
+genuinely a single 120-minute paper.
+
+**Ambiguous primary-source PDF, resolved via cross-source triangulation (new technique for
+this project):** `pdftotext` in both `-layout` and plain mode produced a genuinely
+unparseable per-section marks table (questions summed cleanly to 200, but the exact marks
+split could be read multiple conflicting ways). Every prior batch has found at least one
+`pdftotext` mode clean; this was the first time both were ambiguous. Resolved by
+cross-checking two independent secondary sources (practicemock.com's clean table and
+edutap.in's "Merit Section: 100 marks, Non-Merit Section: 100 marks" figure) and confirming
+internal arithmetic consistency — both only make sense under a uniform 1-mark-per-question
+hypothesis with standard 0.25 negative marking, which is what was used.
+
+**Caught a live 2026 regulatory change via proactive fact-checking rather than trusting
+training-data memory:** RBI's collateral-free MSE loan limit, stable at ₹10 lakh since 2010,
+was raised to ₹20 lakh effective 1 April 2026 under the "Lending to MSME Sector (Amendment)
+Directions, 2026" — a targeted search caught this before the (otherwise stale) ₹10 lakh
+figure was written into a General Awareness question. Also used the 2025-revised MSME
+classification thresholds (2.5x/2x increase effective 1 April 2025) and the post-October-2022
+NBFC Scale-Based Regulation framework (₹1,000cr Base Layer threshold) rather than the older,
+now-superseded ₹500cr NBFC-ND-SI figure. Worth repeating as a standing lesson: every specific
+regulatory figure needs fresh verification, not recall, especially with this site's
+checkedOn dates running ahead of the model's training cutoff.
+
+**`rebalance.mjs`'s mixed-quote crash recurred** (same bug class first hit in the SEBI
+batch) — option arrays mixing single- and double-quoted strings broke the script's regex
+parser. Fixed by writing a more general, reusable `normalize-quotes.mjs` scratch script that
+parses `options: [...]` character-by-character respecting escapes and rewrites every element
+single-quoted, run against the 3 affected files (1 array in computer-knowledge, 1 in
+msme-policy-finance, 17 in stream-specific-general) before rerunning `rebalance.mjs`. Faster
+and more reusable than SEBI's ad hoc line-by-line fix.
+
+**Seven post-wiring QA issues, all fixed:** a duplicated misspelled option in an English
+spelling-correction question (authoring typo, same bug class as NABARD's earlier
+"Comission" duplicate); three cross-batch exact-duplicate collisions in the MSME
+Policy/Finance bank against SEBI's own Batch-21 Management and Costing banks (Fayol's
+functions, SWOT analysis, and "Contribution" in cost accounting — all generic textbook
+definitions, swapped for Delegation of Authority, PESTLE analysis, and Opportunity Cost);
+and three self-collisions within SIDBI's own Reasoning Aptitude bank, where all three
+Classification questions used the identical stem "Which of the following does not belong
+with the others?" (reworded to three distinct stems, one of which also turned out to
+already exist verbatim in SEBI's Batch-21 reasoning bank and needed a second pass). Flags a
+new collision class worth watching going forward: generic management/textbook-definition
+questions (Fayol, SWOT, PESTLE, Contribution, Opportunity Cost, Delegation) are now
+saturated across *multiple* Banking-category exams' Management/Finance sections, not just
+within a single exam's own corpus — future batches touching Management/Finance content
+should grep across the whole corpus, not just the current exam's existing banks.
+
+**Verified:** all 126 banks / 3,530 questions pass `qa:questions` clean, answer positions
+balanced per file, no duplicate IDs/text; `npm run build` clean static export (new
+`/sidbi-grade-a-b` routes: 1 full mock + 7 sectionals). Browser walkthrough confirmed the
+mock-test hub renders Phase I/Phase II tabs (Phase II correctly "review pending"), all 8
+tests listed with correct Q-counts/durations, the exam-pattern page matches the official
+qualifying/merit split, the full mock's composite 120-minute timer has no section-lock UI,
+free navigation jumps cleanly from Q1 to Q180 (Stream Specific Test) without resetting the
+timer, and the 200-question/200-mark/0.25-negative-marking scoring config checks out
+programmatically. Added a 5-question FAQ set and an `llms.txt` line.
+
 ## 2026-08-06 — SEBI Grade A (Batch 21, live session)
 
 Added SEBI Grade A Phase I: 11 original banks totalling 130 questions, modelled as two

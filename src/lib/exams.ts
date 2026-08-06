@@ -19,7 +19,8 @@ export type ExamSlug =
   | 'ibps-so'
   | 'rbi-grade-b'
   | 'nabard-grade-a'
-  | 'sebi-grade-a';
+  | 'sebi-grade-a'
+  | 'sidbi-grade-a-b';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -102,6 +103,7 @@ const RBI_GRADE_B_2025_NOTICE = 'https://opportunities.rbi.org.in/Scripts/bs_vie
 const NABARD_GRADE_A_2025_NOTICE =
   'https://www.nabard.org/auth/writereaddata/CareerNotices/0512255230Final Advertisement Grade A (RDBS, Legal, P&SS) 2025 (1).pdf';
 const SEBI_GRADE_A_2025_NOTICE = 'https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf';
+const SIDBI_GRADE_A_B_2025_NOTICE = 'https://www.sidbi.in/head/uploads/career_document/SIDBI_DETAILED_WEB_ADVT_2025.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -3040,6 +3042,139 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           status: 'review-pending',
           sections: [],
           note: 'The Phase II pattern varies significantly by stream and includes a mix of objective and descriptive papers (including English Writing Skills, tested for every stream). It is under review before this stage is published.',
+        },
+        tests: [],
+      },
+    ],
+  },
+  'sidbi-grade-a-b': {
+    slug: 'sidbi-grade-a-b',
+    name: 'SIDBI Grade A & B',
+    fullName: 'Small Industries Development Bank of India — Officer Grade A (Assistant Manager) & Grade B (Manager), General Stream',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'phase-1',
+        name: 'Phase I',
+        pattern: {
+          status: 'official',
+          cycle: 'Officers Grade A & B 2025-26',
+          sections: ['English Language', 'Reasoning Aptitude', 'Quantitative Aptitude', 'Computer Knowledge', 'General Awareness', 'MSMEs: Policy, Regulatory and Legal Framework; Finance and Management', 'Stream Specific Test'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'Phase I is common to Grade A and Grade B (General Stream) and has seven sections split into two groups: English Language, Reasoning Aptitude, Quantitative Aptitude, and Computer Knowledge are qualifying only, while General Awareness, MSMEs: Policy, Regulatory and Legal Framework — Finance and Management, and the Stream Specific Test (the merit section, worth 100 of the 200 marks) decide the merit ranking used to shortlist candidates for Phase II.',
+          sectionBreakdown: [
+            { name: 'English Language', questions: 30, marks: 30, duration: 120 },
+            { name: 'Reasoning Aptitude', questions: 25, marks: 25, duration: 120 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 25, duration: 120 },
+            { name: 'Computer Knowledge', questions: 20, marks: 20, duration: 120 },
+            { name: 'General Awareness', questions: 20, marks: 20, duration: 120 },
+            { name: 'MSMEs: Policy, Regulatory and Legal Framework; Finance and Management', questions: 30, marks: 30, duration: 120 },
+            { name: 'Stream Specific Test', questions: 50, marks: 50, duration: 120 },
+          ],
+          timerNote: 'Single composite 120-minute timer for all seven sections combined — no sectional lock, you can move between sections freely.',
+          sourceUrl: SIDBI_GRADE_A_B_2025_NOTICE,
+          checkedOn: '6 August 2026',
+        },
+        tests: [
+          {
+            id: 'phase-1-full-mock-1',
+            name: 'Phase I Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 18,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-reasoning-aptitude-sectional-1',
+            name: 'Reasoning Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning Aptitude',
+            duration: 15,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 15,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-computer-knowledge-sectional-1',
+            name: 'Computer Knowledge Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Computer Knowledge',
+            duration: 12,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 12,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-msme-policy-finance-sectional-1',
+            name: 'MSMEs Policy, Finance and Management Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'MSMEs: Policy, Regulatory and Legal Framework; Finance and Management',
+            duration: 18,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-stream-specific-sectional-1',
+            name: 'Stream Specific Test Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Stream Specific Test',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'phase-2',
+        name: 'Phase II',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'Phase II consists of a Descriptive English paper and a stream-specific paper combining objective and descriptive components. It is under review before this stage is published.',
         },
         tests: [],
       },

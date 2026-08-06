@@ -570,6 +570,29 @@ const SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS = [
   },
 ];
 
+const SIDBI_GRADE_A_B_PHASE_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SIDBI Grade A & B question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SIDBI Grade A & B Phase I (General stream) syllabus and pattern.',
+  },
+  {
+    question: 'Is there a separate timer for each Phase I section?',
+    answer: 'No. Phase I uses a single composite timer of 120 minutes for all seven sections combined, and you can move freely between sections — there is no sectional lock.',
+  },
+  {
+    question: 'What is the difference between the qualifying and merit sections?',
+    answer: 'English Language, Reasoning Aptitude, Quantitative Aptitude, and Computer Knowledge are qualifying only — you must clear a minimum cut-off, but marks in these sections do not count toward ranking. General Awareness, MSMEs: Policy, Regulatory and Legal Framework — Finance and Management, and the Stream Specific Test form the merit section, worth 100 of the 200 marks, and marks scored here alone decide shortlisting for Phase II.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark, across every section. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -594,6 +617,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'nabard-grade-a/phase-1': NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS,
   'sebi-grade-a/phase-1-paper-1': SEBI_GRADE_A_PHASE_1_PAPER_1_FULL_MOCK_FAQS,
   'sebi-grade-a/phase-1-paper-2': SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS,
+  'sidbi-grade-a-b/phase-1': SIDBI_GRADE_A_B_PHASE_1_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
