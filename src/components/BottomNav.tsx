@@ -2,11 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useDismissableMenu } from '@/lib/useDismissableMenu';
 
 // Mobile bottom tab bar — hidden on desktop (md:hidden), where the
 // Header's horizontal nav takes over instead. Same routes, two layouts.
 export default function BottomNav({ country }: { country: string }) {
   const pathname = usePathname();
+  const { open, setOpen, ref } = useDismissableMenu<HTMLDivElement>();
 
   const items = [
     { label: 'Home', href: `/${country}`, icon: 'M3 11l9-8 9 8M5 10v10h14V10' },
@@ -44,16 +46,26 @@ export default function BottomNav({ country }: { country: string }) {
           </Link>
         );
       })}
-      <details className="group relative flex-1 text-ink-300">
-        <summary className="flex min-h-12 cursor-pointer list-none flex-col items-center gap-1 text-xs font-medium group-open:text-ink-50">
+      <div ref={ref} className="relative flex-1">
+        <button
+          type="button"
+          onClick={() => setOpen((value) => !value)}
+          aria-expanded={open}
+          className={`flex min-h-12 w-full flex-col items-center gap-1 text-xs font-medium ${open ? 'text-ink-50' : 'text-ink-300'}`}
+        >
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <circle cx="5" cy="12" r="1.8" />
             <circle cx="12" cy="12" r="1.8" />
             <circle cx="19" cy="12" r="1.8" />
           </svg>
           More
-        </summary>
-        <div className="absolute bottom-full right-2 mb-3 w-52 border border-ink-700 bg-ink-900 p-2 shadow-2xl">
+        </button>
+        <div
+          aria-hidden={!open}
+          className={`absolute bottom-full right-2 mb-3 w-52 border border-ink-700 bg-ink-900 p-2 shadow-2xl transition duration-200 ease-out ${
+            open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-1 pointer-events-none'
+          }`}
+        >
           {[
             ['Study resources', `/${country}/blog`],
             ['About', `/${country}/about`],
@@ -61,12 +73,17 @@ export default function BottomNav({ country }: { country: string }) {
             ['Privacy policy', `/${country}/privacy`],
             ['Terms of service', `/${country}/terms`],
           ].map(([label, href]) => (
-            <Link key={href} href={href} className="block px-3 py-3 text-sm text-ink-200 hover:bg-ink-800 hover:text-white">
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setOpen(false)}
+              className="block px-3 py-3 text-sm text-ink-200 hover:bg-ink-800 hover:text-white"
+            >
               {label}
             </Link>
           ))}
         </div>
-      </details>
+      </div>
     </nav>
   );
 }
