@@ -2,6 +2,36 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-06 — LIC AAO (Batch 23, live session)
+
+Added LIC AAO (Generalist) Prelims: Reasoning Ability (35 Q), Quantitative Aptitude (35 Q),
+English Language (30 Q) — wired into 1 full mock (100 Q/100 marks/60 min) + 3 sectionals.
+
+**New pattern variant: a qualifying section inside a sectional-locked paper.** Every prior
+qualifying/merit split on this site was either a fully separate qualifying stage (RBI
+Assistant, SBI PO, SBI Clerk Prelims) or a qualifying section living inside a single
+composite-timer paper (NABARD, SIDBI Phase I). LIC AAO Prelims is neither: it is sectional
+locked (each of the three sections gets its own fixed 20-minute window, no moving between
+sections once a timer ends) *and* one of those three locked sections (English Language,
+30 marks) is qualifying only, its marks scored but excluded from the ranking that decides
+advancement to Mains. Only Reasoning Ability and Quantitative Aptitude (70 marks combined)
+count. Modelled with the existing `sectionDuration` sectional-lock mechanism plus a `note`
+on the stage pattern explaining the qualifying carve-out; no new schema field was needed.
+
+**Zero negative marking.** Unlike every other Banking Prelims paper on this site (which use
+0.25 negative marking), LIC AAO Prelims deducts nothing for a wrong answer, per the official
+2025-26 recruitment notification. Modelled as `negativeMarking: 0` throughout.
+
+**Collision-cascade lesson, reinforced a second time.** The first full-corpus collision pass
+found 16 collisions between newly written LIC AAO questions and the existing ~126-bank
+corpus (recycled CI figures, number-series patterns, and antonym word pairs are the most
+collision-prone question types on this site). Fixing those 16 introduced 5 *new* collisions,
+because the replacement numbers/words happened to already exist elsewhere in the corpus.
+A third full-corpus recheck was needed before the fixes actually landed clean. This confirms
+the standing project lesson: a replacement value chosen to dodge one collision is not
+verified safe until it is checked against the *entire* corpus, not just the one file it
+collided with. Ran the check three times total this batch; zero collisions on the final pass.
+
 ## 2026-08-06 — Vercel auto-deploy pipeline fixed
 
 The Vercel↔GitHub connection had gone stale: pushes to `main` stopped triggering builds

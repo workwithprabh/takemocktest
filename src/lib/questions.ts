@@ -125,6 +125,9 @@ import { SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_1 } from './question-banks/s
 import { SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/sidbi-grade-a-b-phase-1-general-awareness-1';
 import { SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_1 } from './question-banks/sidbi-grade-a-b-phase-1-msme-policy-finance-1';
 import { SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1 } from './question-banks/sidbi-grade-a-b-phase-1-stream-specific-general-1';
+import { LIC_AAO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/lic-aao-prelims-reasoning-ability-1';
+import { LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/lic-aao-prelims-quantitative-aptitude-1';
+import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/lic-aao-prelims-english-language-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -479,6 +482,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sidbi-grade-a-b/phase-1-general-awareness-sectional-1': SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_1,
   'sidbi-grade-a-b/phase-1-msme-policy-finance-sectional-1': SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_1,
   'sidbi-grade-a-b/phase-1-stream-specific-sectional-1': SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1,
+  'lic-aao/prelims-full-mock-1': [
+    ...LIC_AAO_PRELIMS_REASONING_ABILITY_1,
+    ...LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+    ...LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1,
+  ],
+  'lic-aao/prelims-reasoning-ability-sectional-1': LIC_AAO_PRELIMS_REASONING_ABILITY_1,
+  'lic-aao/prelims-quantitative-aptitude-sectional-1': LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'lic-aao/prelims-english-language-sectional-1': LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -746,6 +757,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
                     : testId.includes('general-awareness') ? 20
                       : testId.includes('msme-policy-finance') ? 30
                         : testId.includes('stream-specific') ? 50 : 25
+          : testId.includes('lic-aao')
+            ? testId.includes('english-language') ? 30 : 35
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -897,6 +910,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General Awareness', count: 20 },
     { section: 'MSMEs: Policy, Regulatory and Legal Framework; Finance and Management', count: 30 },
     { section: 'Stream Specific Test', count: 50 },
+  ],
+  'lic-aao': [
+    { section: 'Reasoning Ability', count: 35 },
+    { section: 'Quantitative Aptitude', count: 35 },
+    { section: 'English Language', count: 30 },
   ],
 };
 const sebiGradeAPaper1Layout = [
@@ -1211,5 +1229,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'Where is the head office of SIDBI located?', options: ['New Delhi', 'Mumbai', 'Lucknow', 'Chennai'], correctIndex: 2, explanation: "SIDBI's head office is located in Lucknow, Uttar Pradesh." },
     // Stream Specific Test
     { section: 'Stream Specific Test', question: 'IRAC norms, which govern the classification of bank assets, stand for:', options: ['Interest Rate Adjustment Circular', 'Income Recognition and Asset Classification', 'Investment Regulation and Audit Compliance', 'Internal Risk Assessment Committee'], correctIndex: 1, explanation: 'IRAC stands for Income Recognition and Asset Classification.' },
+  ],
+  'lic-aao': [
+    // Reasoning Ability
+    { section: 'Reasoning Ability', question: 'In a certain code, if MONEY is written as NPOFZ, how would BANK be written?', options: ['CBOL', 'CBOM', 'CBPL', 'DBOL'], correctIndex: 0, explanation: 'The code shifts each letter forward by one: B→C, A→B, N→O, K→L, giving CBOL.' },
+    // Quantitative Aptitude
+    { section: 'Quantitative Aptitude', question: 'A sum of ₹4,000 amounts to ₹4,600 in 3 years at simple interest. Find the rate of interest per annum.', options: ['4%', '5%', '6%', '7%'], correctIndex: 1, explanation: 'Simple interest = 4600 − 4000 = ₹600. Rate = (600 × 100) / (4000 × 3) = 5%.' },
   ],
 };

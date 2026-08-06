@@ -62,7 +62,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('NABARD Grade A', 'National', 'nabard-grade-a'),
           exam('SEBI Grade A', 'National', 'sebi-grade-a'),
           exam('SIDBI Grade A & B', 'National', 'sidbi-grade-a-b'),
-          exam('LIC AAO', 'National'),
+          exam('LIC AAO', 'National', 'lic-aao'),
           exam('NIACL Administrative Officer', 'National'),
         ],
       },

@@ -593,6 +593,29 @@ const SIDBI_GRADE_A_B_PHASE_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const LIC_AAO_PRELIMS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official LIC AAO question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official LIC AAO (Generalist) Prelims syllabus and pattern.',
+  },
+  {
+    question: 'Does the English Language section count toward my Prelims score?',
+    answer: 'It is scored, but those marks are not added to the Prelims ranking. Only Reasoning Ability and Quantitative Aptitude, worth 70 marks combined, decide who advances to Mains, so English Language is qualifying only.',
+  },
+  {
+    question: 'Is there a separate timer for each section?',
+    answer: 'Yes. Each of the three sections has its own fixed 20-minute window, and once a section timer ends you cannot go back to it: this is a sectional lock, unlike a single composite timer.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'No. LIC AAO Prelims carries zero negative marking, so a wrong answer costs nothing beyond the mark you missed. Unattempted questions also score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -618,6 +641,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'sebi-grade-a/phase-1-paper-1': SEBI_GRADE_A_PHASE_1_PAPER_1_FULL_MOCK_FAQS,
   'sebi-grade-a/phase-1-paper-2': SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS,
   'sidbi-grade-a-b/phase-1': SIDBI_GRADE_A_B_PHASE_1_FULL_MOCK_FAQS,
+  'lic-aao/prelims': LIC_AAO_PRELIMS_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

@@ -20,7 +20,8 @@ export type ExamSlug =
   | 'rbi-grade-b'
   | 'nabard-grade-a'
   | 'sebi-grade-a'
-  | 'sidbi-grade-a-b';
+  | 'sidbi-grade-a-b'
+  | 'lic-aao';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -104,6 +105,7 @@ const NABARD_GRADE_A_2025_NOTICE =
   'https://www.nabard.org/auth/writereaddata/CareerNotices/0512255230Final Advertisement Grade A (RDBS, Legal, P&SS) 2025 (1).pdf';
 const SEBI_GRADE_A_2025_NOTICE = 'https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf';
 const SIDBI_GRADE_A_B_2025_NOTICE = 'https://www.sidbi.in/head/uploads/career_document/SIDBI_DETAILED_WEB_ADVT_2025.pdf';
+const LIC_AAO_2025_NOTICE = 'https://www.licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -3252,6 +3254,92 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             checkedOn: '5 August 2026',
           },
         ],
+      },
+    ],
+  },
+  'lic-aao': {
+    slug: 'lic-aao',
+    name: 'LIC AAO',
+    fullName: 'Life Insurance Corporation of India: Assistant Administrative Officer (Generalist)',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'prelims',
+        name: 'Prelims',
+        pattern: {
+          status: 'official',
+          cycle: 'AAO (Generalist) Recruitment 2025-26',
+          sections: ['Reasoning Ability', 'Quantitative Aptitude', 'English Language'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 60,
+          negativeMarking: 0,
+          timerNote: '20 minutes per section',
+          note: 'English Language is a qualifying section only: it is scored, but those marks are not added to the Prelims ranking. Only Reasoning Ability and Quantitative Aptitude (70 marks combined) decide who advances to Mains, and there is no negative marking for a wrong answer anywhere in the paper.',
+          sectionBreakdown: [
+            { name: 'Reasoning Ability', questions: 35, marks: 35, duration: 20 },
+            { name: 'Quantitative Aptitude', questions: 35, marks: 35, duration: 20 },
+            { name: 'English Language', questions: 30, marks: 30, duration: 20 },
+          ],
+          sourceUrl: LIC_AAO_2025_NOTICE,
+          checkedOn: '6 August 2026',
+        },
+        tests: [
+          {
+            id: 'prelims-full-mock-1',
+            name: 'Prelims Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 60,
+            sectionDuration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-reasoning-ability-sectional-1',
+            name: 'Reasoning Ability Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning Ability',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0,
+            checkedOn: '6 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'mains',
+        name: 'Mains',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Mains pattern is under review before this stage is published.',
+        },
+        tests: [],
       },
     ],
   },
