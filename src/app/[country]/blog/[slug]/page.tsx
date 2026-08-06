@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { BLOG_POSTS, getBlogPost, getRelatedPosts } from '@/lib/blog';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
+import { BlogRichText } from '@/components/BlogRichText';
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
@@ -58,7 +59,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
         {post.body.map((block, i) => (
           <div key={i}>
             {block.heading && <h2 className="font-sans font-semibold text-lg mb-2 text-ink-900">{block.heading}</h2>}
-            <p className="text-sm text-ink-500 leading-relaxed">{block.paragraph}</p>
+            <p className="text-sm text-ink-500 leading-relaxed">
+              <BlogRichText text={block.paragraph} country={country} />
+            </p>
           </div>
         ))}
       </div>
