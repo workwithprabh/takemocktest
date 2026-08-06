@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { BLOG_POSTS, getBlogPost, getRelatedPosts } from '@/lib/blog';
-import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { articleSchema, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { BlogRichText } from '@/components/BlogRichText';
 
@@ -39,6 +39,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
       { name: 'Blog', path: `/${country}/blog` },
       { name: post.title, path: `/${country}/blog/${post.slug}` },
     ]),
+    ...(post.faqs && post.faqs.length > 0 ? [faqPageSchema(post.faqs)] : []),
   ];
 
   return (
@@ -65,6 +66,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
           </div>
         ))}
       </div>
+
+      {post.faqs && post.faqs.length > 0 && (
+        <div className="mt-12 pt-8 border-t border-ink-200">
+          <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Frequently asked questions</h2>
+          <div className="border border-ink-200 bg-white">
+            {post.faqs.map((faq) => (
+              <details key={faq.q} className="group border-b border-ink-200 p-4 last:border-b-0">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-semibold text-ink-900">
+                  {faq.q}
+                  <span className="text-lg font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
+                </summary>
+                <p className="mt-2 text-sm leading-relaxed text-ink-500">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
 
       {related.length > 0 && (
         <div className="mt-12 pt-8 border-t border-ink-200">

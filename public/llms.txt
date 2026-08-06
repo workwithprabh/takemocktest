@@ -40,7 +40,7 @@ Each of the exams above also has dedicated pages for exam pattern, syllabus, eli
 
 ## Study resources
 
-[Blog](https://takemocktest.com/in/blog): original, evergreen exam-prep articles — building a study timetable, common SSC CGL mistakes, how negative marking works, exam-time time management, analyzing your mock-test performance, and choosing between IBPS PO and SSC CGL.
+[Blog](https://takemocktest.com/in/blog): original, evergreen exam-prep articles, each with an FAQ section and internal links to the relevant exam pages. Covers building a study timetable, common SSC CGL mistakes, how negative marking works, exam-time time management, analyzing your mock-test performance, IBPS PO vs SSC CGL, sectional lock vs composite timer, qualifying vs merit sections in bank exams, a beginner's guide to banking exams in India, SSC vs Banking vs Railways, and RBI Grade B vs NABARD vs SEBI vs SIDBI.
 
 ## Other
 
