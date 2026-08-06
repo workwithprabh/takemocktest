@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12])-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -83,7 +83,15 @@ for (const { file, questions } of banks) {
     : file.startsWith('nabard-grade-a-phase-1-agriculture-and-rural-development-') ? 40
     : file.startsWith('nabard-grade-a-phase-1-english-language-') ? 30
     : file.startsWith('nabard-grade-a-phase-1-decision-making-') ? 10
-    : file.startsWith('nabard-grade-a-phase-1-') ? 20 : 25;
+    : file.startsWith('nabard-grade-a-phase-1-') ? 20
+    : file.startsWith('sebi-grade-a-phase-1-paper-2-commerce-') ? 8
+    : file.startsWith('sebi-grade-a-phase-1-paper-2-accountancy-') ? 7
+    : file.startsWith('sebi-grade-a-phase-1-paper-2-management-') ? 7
+    : file.startsWith('sebi-grade-a-phase-1-paper-2-finance-') ? 8
+    : file.startsWith('sebi-grade-a-phase-1-paper-2-costing-') ? 7
+    : file.startsWith('sebi-grade-a-phase-1-paper-2-companies-act-') ? 6
+    : file.startsWith('sebi-grade-a-phase-1-paper-2-economics-') ? 7
+    : file.startsWith('sebi-grade-a-phase-1-paper-1-') ? 20 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

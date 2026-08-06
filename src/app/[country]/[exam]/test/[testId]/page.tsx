@@ -524,6 +524,52 @@ const NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const SEBI_GRADE_A_PHASE_1_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SEBI Grade A question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SEBI Officer Grade A Phase I, Paper 1 syllabus and pattern, common to every stream.',
+  },
+  {
+    question: 'Is there a separate timer for each Paper 1 section?',
+    answer: 'No. Paper 1 uses a single composite timer of 60 minutes for all four sections combined — General Awareness, English Language, Quantitative Aptitude, and Test of Reasoning — and you can move freely between them. There is no sectional cut-off within Paper 1, only an overall cut-off of 30%.',
+  },
+  {
+    question: 'How does Paper 1 relate to Paper 2?',
+    answer: 'Paper 1 and Paper 2 are both part of Phase I but are separately timed blocks, modelled here as two separate tests. Paper 2 tests subject knowledge specific to your recruitment stream (this mock covers the General stream).',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. Each question in Paper 1 carries 1.25 marks, and a wrong answer deducts one-quarter of that (0.3125 marks). Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
+const SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SEBI Grade A question paper?',
+    answer: 'No. It is an independent practice mock containing original questions covering the General stream Paper 2 syllabus — Commerce, Accountancy, Management, Finance, Costing, Companies Act, and Economics.',
+  },
+  {
+    question: 'Is there a separate timer for each Paper 2 subject?',
+    answer: 'No. Paper 2 uses a single composite timer of 40 minutes for all seven General stream subjects combined, and you can move freely between them.',
+  },
+  {
+    question: 'Does SEBI publish an official question split across these seven subjects?',
+    answer: "No. SEBI does not publish an official question-wise split for Paper 2's General stream subjects — the section breakdown on this site reflects how this mock test's questions are organised, not an official SEBI-published distribution.",
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. Each question in Paper 2 carries 2 marks, and a wrong answer deducts one-quarter of that (0.5 marks). Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -546,6 +592,8 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,
   'nabard-grade-a/phase-1': NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS,
+  'sebi-grade-a/phase-1-paper-1': SEBI_GRADE_A_PHASE_1_PAPER_1_FULL_MOCK_FAQS,
+  'sebi-grade-a/phase-1-paper-2': SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

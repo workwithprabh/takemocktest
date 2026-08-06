@@ -107,6 +107,17 @@ import { NABARD_GRADE_A_PHASE_1_DECISION_MAKING_1 } from './question-banks/nabar
 import { NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/nabard-grade-a-phase-1-general-awareness-1';
 import { NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_1 } from './question-banks/nabard-grade-a-phase-1-economic-and-social-issues-1';
 import { NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_1 } from './question-banks/nabard-grade-a-phase-1-agriculture-and-rural-development-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_1 } from './question-banks/sebi-grade-a-phase-1-paper-1-general-awareness-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_1 } from './question-banks/sebi-grade-a-phase-1-paper-1-english-language-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/sebi-grade-a-phase-1-paper-1-quantitative-aptitude-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_REASONING_1 } from './question-banks/sebi-grade-a-phase-1-paper-1-reasoning-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_COMMERCE_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-commerce-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_ACCOUNTANCY_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-accountancy-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_MANAGEMENT_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-management-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-finance-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-costing-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-companies-act-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-economics-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -419,6 +430,32 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'nabard-grade-a/phase-1-general-awareness-sectional-1': NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_1,
   'nabard-grade-a/phase-1-economic-and-social-issues-sectional-1': NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_1,
   'nabard-grade-a/phase-1-agriculture-and-rural-development-sectional-1': NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_1,
+  'sebi-grade-a/phase-1-paper-1-full-mock-1': [
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_QUANTITATIVE_APTITUDE_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_REASONING_1,
+  ],
+  'sebi-grade-a/phase-1-paper-1-general-awareness-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_1,
+  'sebi-grade-a/phase-1-paper-1-english-language-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_1,
+  'sebi-grade-a/phase-1-paper-1-quantitative-aptitude-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_1_QUANTITATIVE_APTITUDE_1,
+  'sebi-grade-a/phase-1-paper-1-reasoning-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_1_REASONING_1,
+  'sebi-grade-a/phase-1-paper-2-full-mock-1': [
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_COMMERCE_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_ACCOUNTANCY_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_MANAGEMENT_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_1,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_1,
+  ],
+  'sebi-grade-a/phase-1-paper-2-commerce-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_COMMERCE_1,
+  'sebi-grade-a/phase-1-paper-2-accountancy-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_ACCOUNTANCY_1,
+  'sebi-grade-a/phase-1-paper-2-management-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_MANAGEMENT_1,
+  'sebi-grade-a/phase-1-paper-2-finance-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_1,
+  'sebi-grade-a/phase-1-paper-2-costing-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_1,
+  'sebi-grade-a/phase-1-paper-2-companies-act-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_1,
+  'sebi-grade-a/phase-1-paper-2-economics-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -605,6 +642,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('nabard-grade-a/phase-1-full-mock')
     ? 200
+    : testId.includes('sebi-grade-a/phase-1-paper-1-full-mock')
+    ? 80
+    : testId.includes('sebi-grade-a/phase-1-paper-2-full-mock')
+    ? 50
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -662,6 +703,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
               : testId.includes('agriculture-and-rural-development') ? 40
                 : testId.includes('english-language') ? 30
                   : testId.includes('decision-making') ? 10 : 20
+          : testId.includes('sebi-grade-a/phase-1-paper-2')
+            ? testId.includes('commerce') ? 8
+              : testId.includes('accountancy') ? 7
+                : testId.includes('management') ? 7
+                  : testId.includes('finance') ? 8
+                    : testId.includes('costing') ? 7
+                      : testId.includes('companies-act') ? 6
+                        : testId.includes('economics') ? 7 : 7
+          : testId.includes('sebi-grade-a')
+            ? 20
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -806,6 +857,21 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Agriculture and Rural Development', count: 40 },
   ],
 };
+const sebiGradeAPaper1Layout = [
+  { section: 'General Awareness', count: 20 },
+  { section: 'English Language', count: 20 },
+  { section: 'Quantitative Aptitude', count: 20 },
+  { section: 'Test of Reasoning', count: 20 },
+];
+const sebiGradeAPaper2Layout = [
+  { section: 'Commerce', count: 8 },
+  { section: 'Accountancy', count: 7 },
+  { section: 'Management', count: 7 },
+  { section: 'Finance', count: 8 },
+  { section: 'Costing', count: 7 },
+  { section: 'Companies Act', count: 6 },
+  { section: 'Economics', count: 7 },
+];
 const tierTwoPaperOneLayout = [
   { section: 'Mathematical Abilities', count: 30 },
   { section: 'Reasoning and General Intelligence', count: 30 },
@@ -845,7 +911,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
           ? upscCsePaper2Layout
-          : fullMockLayouts[testId.split('/')[0]];
+          : testId.includes('sebi-grade-a/phase-1-paper-1-full-mock')
+            ? sebiGradeAPaper1Layout
+            : testId.includes('sebi-grade-a/phase-1-paper-2-full-mock')
+              ? sebiGradeAPaper2Layout
+              : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1087,5 +1157,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'NABARD was established in which year?', options: ['1975', '1982', '1990', '1995'], correctIndex: 1, explanation: 'NABARD was established on 12 July 1982.' },
     // Agriculture and Rural Development
     { section: 'Agriculture and Rural Development', question: 'Which scheme provides an income support of ₹6,000 per year to eligible farmer families?', options: ['PM-KISAN', 'PMFBY', 'PMGSY', 'PMKSY'], correctIndex: 0, explanation: 'PM-KISAN provides ₹6,000 per year in three equal instalments to eligible farmer families.' },
+  ],
+  'sebi-grade-a': [
+    // General Awareness
+    { section: 'General Awareness', question: 'Where is the head office of SEBI located?', options: ['New Delhi', 'Mumbai', 'Chennai', 'Kolkata'], correctIndex: 1, explanation: "SEBI's head office is located in the Bandra Kurla Complex, Mumbai." },
+    // Commerce
+    { section: 'Commerce', question: 'A cheque is an example of a:', options: ['Fixed Asset', 'Negotiable Instrument', 'Current Liability', 'Contingent Liability'], correctIndex: 1, explanation: 'A cheque is classified as a negotiable instrument under the Negotiable Instruments Act, 1881.' },
   ],
 };

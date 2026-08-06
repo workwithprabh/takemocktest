@@ -2,6 +2,83 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-06 — SEBI Grade A (Batch 21, live session)
+
+Added SEBI Grade A Phase I: 11 original banks totalling 130 questions, modelled as two
+separately-timed papers within a single Phase I selection round — Paper 1 (General
+Awareness 20, English Language 20, Quantitative Aptitude 20, Test of Reasoning 20 = 80Q)
+and Paper 2, General stream (Commerce 8, Accountancy 7, Management 7, Finance 8, Costing 7,
+Companies Act 6, Economics 7 = 50Q). Wired as 2 separate `TestStage`s (`phase-1-paper-1`,
+`phase-1-paper-2`) rather than one combined stage, each with its own full mock + sectionals.
+
+**Source:** SEBI's own 2025 recruitment notification (`sebi.gov.in/sebi_data/careerfiles/
+oct-2025/1761782417659.pdf`), parsed with `pdftotext -layout`. The 2025 PDF gives marks,
+duration, and cut-offs per paper but not question counts — cross-verified those against
+SEBI's own 2023 Legal-stream "Information Handout" PDF (a different, more detailed document
+type this project hadn't used before — an actual candidate-facing exam-interface guide with
+a full pattern table), which confirmed the exact split still in force: Paper 1 80Q/100
+marks/60 min (20 each of GA/English/Quant/Reasoning), Paper 2 (stream-specific) 50Q/100
+marks/40 min. An even older 2018 pattern PDF was checked and correctly discarded — it
+described a since-abandoned 5-section/200Q single-paper structure, a reminder to always
+confirm which pattern *generation* a source PDF belongs to before trusting it.
+
+**New modelling decision — two genuinely separate papers, not one multi-section stage:**
+unlike RBI Grade B/SSC CPO/IBPS SO (one paper with several separately-locked sections),
+SEBI's own Paper 1 explicitly states "no sectional cut-off shall be there" — the four Paper 1
+subjects share one open 60-minute block with free movement, while Paper 1 and Paper 2
+themselves are the only real dividing line (separately timed, separate cut-offs: 30% / 40% /
+aggregate 40%). Modelled each paper as its own composite-timer `TestStage` (following the
+UPSC CSE GS Paper I / CSAT Paper II precedent for genuinely distinct objective papers) rather
+than force-fitting Paper 1's four subjects into individually-locked sections, which would
+have misrepresented the real exam's free-movement rule. Required an explicit
+`sebi-grade-a/phase-1-paper-1-full-mock` / `-paper-2-full-mock` branch in the full-mock
+section-order validator, mirroring how `upsc-cse/paper-1-full-mock` and `-paper-2-full-mock`
+are special-cased ahead of the generic per-exam-slug layout lookup.
+
+**Fractional marks, again:** Paper 1 questions carry 1.25 marks each (100 marks / 80
+questions) with 0.3125 negative marking; Paper 2 carries 2 marks each (100/50) with 0.5
+negative marking — both exact quarters per SEBI's stated "1/4th of marks assigned to the
+question" rule. Same `marksPerCorrect`/`negativeMarking` override mechanism introduced for
+IBPS SO in Batch 18 handled this without any engine changes.
+
+**Collision-avoidance:** Paper 2's seven General-stream subjects (Commerce, Accountancy,
+Management, Finance, Costing, Companies Act, Economics) are entirely new subject areas for
+this project — zero prior collision risk, similar to NABARD's Economic and Social Issues /
+Agriculture sections. Paper 1's GA/English/Quant/Reasoning sections used SEBI/stock-market/
+corporate-finance-flavoured content to reduce (not eliminate) collision risk against the
+now heavily-saturated generic-aptitude corpus.
+
+**Cross-file duplicate collisions caught by `qa:questions` (all against pre-existing corpus
+content):** a synonym ("PRUDENT"), an idiom ("cut corners"), a Compound Interest question,
+and an LCM question all collided with IBPS SO / IBPS RRB Officer Scale I banks — replaced
+with a different word/idiom/numbers. A GDP definition question collided with IBPS PO Mains
+General Awareness — reworded the question stem while keeping the same (correct) answer. Also
+caught two *self*-collisions within this batch's own banks: two Classification questions in
+the Reasoning bank both used the generic stem "Which of the following does not belong with
+the others?" (the dedup check keys purely on question text, not options, so identical stems
+collide even against each other) — reworded one to "Identify the odd one out from the
+following." A genuine authoring bug was also caught this way: a spelling-correction question
+had the same misspelling ("Comission") duplicated as two of its four options — the
+`qa:questions` "duplicate options" check flagged it directly.
+
+**Mixed-quote authoring bug:** several Paper 2 option arrays mixed single- and double-quoted
+strings (to avoid escaping apostrophes, e.g. `"The business's overall profitability"`) —
+harmless to TypeScript, but it silently breaks the `rebalance.mjs` scratch script's regex,
+which only matches single-quoted strings and undercounts the options array. The script
+throws a clear "expected 4 options, got N" error rather than corrupting the file, but the fix
+is to normalise every option string to single quotes with an escaped apostrophe (`'...\'s...'`)
+before running the script, not after — worth remembering as a pre-check for future batches
+with quote-heavy content (accountancy/finance definitions lean on possessives a lot).
+
+**Verified:** all 119 banks / 3,330 questions pass `qa:questions` clean (no duplicate IDs or
+text); `npm run build` clean static export with all 14 SEBI test routes present; browser
+walkthrough confirmed both papers' independent composite timers (60 min / 40 min, each with
+free cross-section navigation and no lock), and correct fractional scoring on both — Paper 1:
+1 correct (1.25) + 1 wrong (−0.3125) = 0.94/100; Paper 2: 1 correct (2.00) = 2.00/100 — with
+section-wise marks caps matching the official per-subject question counts on both papers.
+
+**Batch roadmap checkbox:** ticked in the same commit.
+
 ## 2026-08-06 — NABARD Grade A (Batch 20, live session)
 
 Added NABARD Grade A Phase I: 8 original banks totalling 200 questions — Reasoning (20),
