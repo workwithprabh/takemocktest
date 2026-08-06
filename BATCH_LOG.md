@@ -2,6 +2,52 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — NIACL AO (Batch 24, live session)
+
+Added NIACL Administrative Officer (Generalist), Scale I: Prelims (English Language 30 Q,
+Reasoning Ability 35 Q, Quantitative Aptitude 35 Q — 1 full mock, 100 Q/100 marks/60 min,
+sectional lock, 20 min/section) and Mains (Reasoning 50 Q, English Language 50 Q, General
+Awareness 50 Q, Quantitative Aptitude 50 Q — 1 full mock, 200 Q/200 marks/150 min, sectional
+lock, 40/40/30/40 min/section). 7 sectionals total across both stages, 0.25 negative marking
+throughout.
+
+**Prelims is fully qualifying, unlike LIC AAO's per-section split.** NIACL AO Prelims marks
+do not carry forward into the final merit list at all: the stage exists only to shortlist
+roughly 15x the vacancy count into Mains. This is a cleaner variant of the qualifying-section
+pattern established in the LIC AAO batch (where one section inside a locked paper was
+qualifying while the other two counted) — here the entire Prelims stage is qualifying, all
+three sections. Modelled with a stage-level `note` explaining the mechanics; no schema change
+needed.
+
+**Non-MCQ Descriptive Test exclusion, same precedent as IBPS PO Mains.** The Main Examination
+includes a separate 30-minute Descriptive Test (Letter Writing 10 + Essay 20 = 30 marks) that
+candidates must qualify but which does not count toward shortlisting or final selection. Since
+it is not multiple-choice, it is excluded from the mock entirely, consistent with how the IBPS
+PO Mains Descriptive Paper was handled. Final selection is the Main Examination objective
+score plus interview; Prelims marks play no role.
+
+**Two full-mock shapes under one exam slug.** NIACL AO is the second exam on this site (after
+SEBI Grade A) where a single exam has two full mocks with genuinely different shapes: Prelims
+(100 Q, 3 sections, uniform 20-min sectional lock) and Mains (200 Q, 4 sections, non-uniform
+40/40/30/40-min sectional lock via the `sectionDurations` array field). The generic
+`fullMockLayouts` lookup in `questions.ts` keys by exam slug only, so it breaks when one slug
+maps to two shapes. Fixed the same way as SEBI: named layout consts (`niaclAoPrelimsLayout`,
+`niaclAoMainsLayout`) with explicit `testId.includes(...)` checks ahead of the generic
+fallback in the validation loop.
+
+**Answer-balance oversight, caught by `qa:questions` not manual review.** Balanced the 4
+Mains banks against the audit script's "max-min across four answer positions must be ≤3"
+check while authoring them, but forgot to run the same check on the 3 Prelims banks until the
+official `npm run qa:questions` audit flagged all three as "too predictable" (English 5/15/10/0,
+Quant 1/7/27/0, Reasoning 17/8/7/3). Fixed by reordering each flagged question's `options`
+array and updating `correctIndex` to match, verified via a Node script reading each file with
+`ts.transpileModule` + `vm.runInContext`. Final distributions: English 7/8/8/7, Quant 9/9/9/8,
+Reasoning 8/9/9/9. Lesson: run the full balance check on every new file in a batch, not just
+the ones being actively worked on, before considering content-writing done.
+
+Full corpus after this batch: 136 question-bank files, 3,930 questions, zero duplicate IDs
+or text, zero answer-balance failures (`qa:questions` clean run).
+
 ## 2026-08-06 — LIC AAO (Batch 23, live session)
 
 Added LIC AAO (Generalist) Prelims: Reasoning Ability (35 Q), Quantitative Aptitude (35 Q),

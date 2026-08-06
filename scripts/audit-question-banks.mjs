@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -101,7 +101,10 @@ for (const { file, questions } of banks) {
     : file.startsWith('sidbi-grade-a-b-phase-1-stream-specific-general-') ? 50
     : file.startsWith('lic-aao-prelims-english-language-') ? 30
     : file.startsWith('lic-aao-prelims-quantitative-aptitude-') ? 35
-    : file.startsWith('lic-aao-prelims-reasoning-ability-') ? 35 : 25;
+    : file.startsWith('lic-aao-prelims-reasoning-ability-') ? 35
+    : file.startsWith('niacl-ao-prelims-english-language-') ? 30
+    : file.startsWith('niacl-ao-prelims-') ? 35
+    : file.startsWith('niacl-ao-mains-') ? 50 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

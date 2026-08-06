@@ -128,6 +128,13 @@ import { SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1 } from './question-ba
 import { LIC_AAO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/lic-aao-prelims-reasoning-ability-1';
 import { LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/lic-aao-prelims-quantitative-aptitude-1';
 import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/lic-aao-prelims-english-language-1';
+import { NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-prelims-english-language-1';
+import { NIACL_AO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/niacl-ao-prelims-reasoning-ability-1';
+import { NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/niacl-ao-prelims-quantitative-aptitude-1';
+import { NIACL_AO_MAINS_REASONING_1 } from './question-banks/niacl-ao-mains-reasoning-1';
+import { NIACL_AO_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-mains-english-language-1';
+import { NIACL_AO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/niacl-ao-mains-general-awareness-1';
+import { NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/niacl-ao-mains-quantitative-aptitude-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -490,6 +497,24 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'lic-aao/prelims-reasoning-ability-sectional-1': LIC_AAO_PRELIMS_REASONING_ABILITY_1,
   'lic-aao/prelims-quantitative-aptitude-sectional-1': LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1,
   'lic-aao/prelims-english-language-sectional-1': LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1,
+  'niacl-ao/prelims-full-mock-1': [
+    ...NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1,
+    ...NIACL_AO_PRELIMS_REASONING_ABILITY_1,
+    ...NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  ],
+  'niacl-ao/prelims-english-language-sectional-1': NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1,
+  'niacl-ao/prelims-reasoning-ability-sectional-1': NIACL_AO_PRELIMS_REASONING_ABILITY_1,
+  'niacl-ao/prelims-quantitative-aptitude-sectional-1': NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'niacl-ao/mains-full-mock-1': [
+    ...NIACL_AO_MAINS_REASONING_1,
+    ...NIACL_AO_MAINS_ENGLISH_LANGUAGE_1,
+    ...NIACL_AO_MAINS_GENERAL_AWARENESS_1,
+    ...NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_1,
+  ],
+  'niacl-ao/mains-reasoning-sectional-1': NIACL_AO_MAINS_REASONING_1,
+  'niacl-ao/mains-english-language-sectional-1': NIACL_AO_MAINS_ENGLISH_LANGUAGE_1,
+  'niacl-ao/mains-general-awareness-sectional-1': NIACL_AO_MAINS_GENERAL_AWARENESS_1,
+  'niacl-ao/mains-quantitative-aptitude-sectional-1': NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -682,6 +707,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 50
     : testId.includes('sidbi-grade-a-b/phase-1-full-mock')
     ? 200
+    : testId.includes('niacl-ao/mains-full-mock')
+    ? 200
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -759,6 +786,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
                         : testId.includes('stream-specific') ? 50 : 25
           : testId.includes('lic-aao')
             ? testId.includes('english-language') ? 30 : 35
+          : testId.includes('niacl-ao/prelims')
+            ? testId.includes('english-language') ? 30 : 35
+          : testId.includes('niacl-ao/mains')
+            ? 50
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -962,6 +993,17 @@ const upscCsePaper2Layout = [
   { section: 'General mental ability', count: 8 },
   { section: 'Basic numeracy and Data interpretation', count: 20 },
 ];
+const niaclAoPrelimsLayout = [
+  { section: 'English Language', count: 30 },
+  { section: 'Reasoning Ability', count: 35 },
+  { section: 'Quantitative Aptitude', count: 35 },
+];
+const niaclAoMainsLayout = [
+  { section: 'Reasoning', count: 50 },
+  { section: 'English Language', count: 50 },
+  { section: 'General Awareness', count: 50 },
+  { section: 'Quantitative Aptitude', count: 50 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -975,7 +1017,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
             ? sebiGradeAPaper1Layout
             : testId.includes('sebi-grade-a/phase-1-paper-2-full-mock')
               ? sebiGradeAPaper2Layout
-              : fullMockLayouts[testId.split('/')[0]];
+              : testId.includes('niacl-ao/prelims-full-mock')
+                ? niaclAoPrelimsLayout
+                : testId.includes('niacl-ao/mains-full-mock')
+                  ? niaclAoMainsLayout
+                  : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1235,5 +1281,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Reasoning Ability', question: 'In a certain code, if MONEY is written as NPOFZ, how would BANK be written?', options: ['CBOL', 'CBOM', 'CBPL', 'DBOL'], correctIndex: 0, explanation: 'The code shifts each letter forward by one: B→C, A→B, N→O, K→L, giving CBOL.' },
     // Quantitative Aptitude
     { section: 'Quantitative Aptitude', question: 'A sum of ₹4,000 amounts to ₹4,600 in 3 years at simple interest. Find the rate of interest per annum.', options: ['4%', '5%', '6%', '7%'], correctIndex: 1, explanation: 'Simple interest = 4600 − 4000 = ₹600. Rate = (600 × 100) / (4000 × 3) = 5%.' },
+  ],
+  'niacl-ao': [
+    // Reasoning Ability
+    { section: 'Reasoning Ability', question: 'In a certain code, if TRADE is written as USBEF, how would CLAIM be written?', options: ['DMBJN', 'DMBJM', 'CMBJN', 'DMAJN'], correctIndex: 0, explanation: 'The code shifts each letter forward by one: C→D, L→M, A→B, I→J, M→N, giving DMBJN.' },
+    // Quantitative Aptitude
+    { section: 'Quantitative Aptitude', question: 'A sum of ₹5,000 amounts to ₹5,750 in 3 years at simple interest. Find the rate of interest per annum.', options: ['4%', '5%', '6%', '7%'], correctIndex: 1, explanation: 'Simple interest = 5750 − 5000 = ₹750. Rate = (750 × 100) / (5000 × 3) = 5%.' },
   ],
 };

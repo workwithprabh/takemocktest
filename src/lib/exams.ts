@@ -21,7 +21,8 @@ export type ExamSlug =
   | 'nabard-grade-a'
   | 'sebi-grade-a'
   | 'sidbi-grade-a-b'
-  | 'lic-aao';
+  | 'lic-aao'
+  | 'niacl-ao';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -106,6 +107,7 @@ const NABARD_GRADE_A_2025_NOTICE =
 const SEBI_GRADE_A_2025_NOTICE = 'https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf';
 const SIDBI_GRADE_A_B_2025_NOTICE = 'https://www.sidbi.in/head/uploads/career_document/SIDBI_DETAILED_WEB_ADVT_2025.pdf';
 const LIC_AAO_2025_NOTICE = 'https://www.licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025';
+const NIACL_AO_2025_NOTICE = 'https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/RECRUITMENT%20OF%20_5_50%20ADMINISTRATIVE%20OFFICERS%20(GENERALISTS%20&%20SPECIALISTS)%20(SCALE-I)%20202_5.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -3340,6 +3342,163 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           note: 'The Mains pattern is under review before this stage is published.',
         },
         tests: [],
+      },
+    ],
+  },
+  'niacl-ao': {
+    slug: 'niacl-ao',
+    name: 'NIACL AO',
+    fullName: 'New India Assurance Co. Ltd: Administrative Officer (Generalist), Scale I',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'prelims',
+        name: 'Prelims',
+        pattern: {
+          status: 'official',
+          cycle: 'Recruitment of 550 Administrative Officers 2025',
+          sections: ['English Language', 'Reasoning Ability', 'Quantitative Aptitude'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 60,
+          negativeMarking: 0.25,
+          timerNote: '20 minutes per section',
+          note: 'Candidates must clear the qualifying cutoff in each section. Prelims is used only to shortlist roughly 15 times the number of vacancies for the Main Examination; Prelims marks do not carry forward into the final merit list, which is decided by the Main Examination objective score plus the interview.',
+          sectionBreakdown: [
+            { name: 'English Language', questions: 30, marks: 30, duration: 20 },
+            { name: 'Reasoning Ability', questions: 35, marks: 35, duration: 20 },
+            { name: 'Quantitative Aptitude', questions: 35, marks: 35, duration: 20 },
+          ],
+          sourceUrl: NIACL_AO_2025_NOTICE,
+          checkedOn: '6 August 2026',
+        },
+        tests: [
+          {
+            id: 'prelims-full-mock-1',
+            name: 'Prelims Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 60,
+            sectionDuration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-reasoning-ability-sectional-1',
+            name: 'Reasoning Ability Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning Ability',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'prelims-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'mains',
+        name: 'Mains',
+        pattern: {
+          status: 'official',
+          cycle: 'Recruitment of 550 Administrative Officers 2025',
+          sections: ['Reasoning', 'English Language', 'General Awareness', 'Quantitative Aptitude'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 150,
+          negativeMarking: 0.25,
+          timerNote: '40/40/30/40 minutes across the four sections respectively (sectional lock)',
+          note: 'This mock covers the Objective Test only (2.5 hours, sectional lock). The Main Examination also includes a separate 30-minute Descriptive Test (Letter Writing and Essay, 30 marks) which is not multiple-choice and is excluded here; candidates must qualify it, but it is not counted for shortlisting or final selection. Final selection is based on the consolidated Main Examination objective score plus interview marks; Prelims marks are not part of the final merit list.',
+          sectionBreakdown: [
+            { name: 'Reasoning', questions: 50, marks: 50, duration: 40 },
+            { name: 'English Language', questions: 50, marks: 50, duration: 40 },
+            { name: 'General Awareness', questions: 50, marks: 50, duration: 30 },
+            { name: 'Quantitative Aptitude', questions: 50, marks: 50, duration: 40 },
+          ],
+          sourceUrl: NIACL_AO_2025_NOTICE,
+          checkedOn: '6 August 2026',
+        },
+        tests: [
+          {
+            id: 'mains-full-mock-1',
+            name: 'Mains Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 150,
+            sectionDurations: [40, 40, 30, 40],
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            scoringNote: 'Objective Test only. The separate Descriptive Test (Letter Writing and Essay, 30 marks) is not multiple-choice and is not included in this mock or its scoring.',
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'mains-reasoning-sectional-1',
+            name: 'Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning',
+            duration: 40,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'mains-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 40,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'mains-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'mains-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 40,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+        ],
       },
     ],
   },

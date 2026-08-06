@@ -616,6 +616,56 @@ const LIC_AAO_PRELIMS_FULL_MOCK_FAQS = [
   },
 ];
 
+const NIACL_AO_PRELIMS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official NIACL AO question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official NIACL Administrative Officer (Generalist) Prelims syllabus and pattern.',
+  },
+  {
+    question: 'Do my Prelims marks count toward the final selection?',
+    answer: 'No. Prelims is used only to shortlist roughly 15 times the number of vacancies for the Main Examination. Prelims marks do not carry forward into the final merit list, which is decided by the Main Examination objective score plus the interview.',
+  },
+  {
+    question: 'Is there a separate timer for each section?',
+    answer: 'Yes. Each of the three sections, English Language, Reasoning Ability, and Quantitative Aptitude, has its own fixed 20-minute window, and once a section timer ends you cannot go back to it: this is a sectional lock, unlike a single composite timer.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark, in every section. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
+const NIACL_AO_MAINS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official NIACL AO question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official NIACL Administrative Officer (Generalist) Main Examination syllabus and pattern.',
+  },
+  {
+    question: 'Does this mock include the Descriptive Test?',
+    answer: 'No. The Main Examination also includes a separate 30-minute Descriptive Test (Letter Writing and Essay, 30 marks) that is not multiple-choice, so it is excluded from this mock. Candidates must qualify it, but it does not count toward shortlisting or final selection.',
+  },
+  {
+    question: 'Why do the four sections have different time limits?',
+    answer: 'The Main Examination gives Reasoning, English Language, and Quantitative Aptitude 40 minutes each, while General Awareness gets 30 minutes, for a combined 150 minutes across all four sections. Each section is sectional locked, so you cannot borrow time from one section for another.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark, in every section. Unattempted questions score zero.',
+  },
+  {
+    question: 'How is final selection decided?',
+    answer: 'Final selection is based on the consolidated Main Examination objective score plus interview marks. Prelims marks are not part of the final merit list.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -642,6 +692,8 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'sebi-grade-a/phase-1-paper-2': SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS,
   'sidbi-grade-a-b/phase-1': SIDBI_GRADE_A_B_PHASE_1_FULL_MOCK_FAQS,
   'lic-aao/prelims': LIC_AAO_PRELIMS_FULL_MOCK_FAQS,
+  'niacl-ao/prelims': NIACL_AO_PRELIMS_FULL_MOCK_FAQS,
+  'niacl-ao/mains': NIACL_AO_MAINS_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
