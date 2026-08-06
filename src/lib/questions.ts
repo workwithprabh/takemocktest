@@ -99,6 +99,14 @@ import { RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/rbi-gr
 import { RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-grade-b-phase-1-english-language-1';
 import { RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/rbi-grade-b-phase-1-quantitative-aptitude-1';
 import { RBI_GRADE_B_PHASE_1_REASONING_1 } from './question-banks/rbi-grade-b-phase-1-reasoning-1';
+import { NABARD_GRADE_A_PHASE_1_REASONING_1 } from './question-banks/nabard-grade-a-phase-1-reasoning-1';
+import { NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/nabard-grade-a-phase-1-english-language-1';
+import { NABARD_GRADE_A_PHASE_1_COMPUTER_KNOWLEDGE_1 } from './question-banks/nabard-grade-a-phase-1-computer-knowledge-1';
+import { NABARD_GRADE_A_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/nabard-grade-a-phase-1-quantitative-aptitude-1';
+import { NABARD_GRADE_A_PHASE_1_DECISION_MAKING_1 } from './question-banks/nabard-grade-a-phase-1-decision-making-1';
+import { NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/nabard-grade-a-phase-1-general-awareness-1';
+import { NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_1 } from './question-banks/nabard-grade-a-phase-1-economic-and-social-issues-1';
+import { NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_1 } from './question-banks/nabard-grade-a-phase-1-agriculture-and-rural-development-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -393,6 +401,24 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rbi-grade-b/phase-1-english-language-sectional-1': RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
   'rbi-grade-b/phase-1-quantitative-aptitude-sectional-1': RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1,
   'rbi-grade-b/phase-1-reasoning-sectional-1': RBI_GRADE_B_PHASE_1_REASONING_1,
+  'nabard-grade-a/phase-1-full-mock-1': [
+    ...NABARD_GRADE_A_PHASE_1_REASONING_1,
+    ...NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_1,
+    ...NABARD_GRADE_A_PHASE_1_COMPUTER_KNOWLEDGE_1,
+    ...NABARD_GRADE_A_PHASE_1_QUANTITATIVE_APTITUDE_1,
+    ...NABARD_GRADE_A_PHASE_1_DECISION_MAKING_1,
+    ...NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_1,
+    ...NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_1,
+    ...NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_1,
+  ],
+  'nabard-grade-a/phase-1-reasoning-sectional-1': NABARD_GRADE_A_PHASE_1_REASONING_1,
+  'nabard-grade-a/phase-1-english-language-sectional-1': NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_1,
+  'nabard-grade-a/phase-1-computer-knowledge-sectional-1': NABARD_GRADE_A_PHASE_1_COMPUTER_KNOWLEDGE_1,
+  'nabard-grade-a/phase-1-quantitative-aptitude-sectional-1': NABARD_GRADE_A_PHASE_1_QUANTITATIVE_APTITUDE_1,
+  'nabard-grade-a/phase-1-decision-making-sectional-1': NABARD_GRADE_A_PHASE_1_DECISION_MAKING_1,
+  'nabard-grade-a/phase-1-general-awareness-sectional-1': NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_1,
+  'nabard-grade-a/phase-1-economic-and-social-issues-sectional-1': NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_1,
+  'nabard-grade-a/phase-1-agriculture-and-rural-development-sectional-1': NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -577,6 +603,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 150
     : testId.includes('rbi-grade-b/phase-1-full-mock')
     ? 200
+    : testId.includes('nabard-grade-a/phase-1-full-mock')
+    ? 200
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -629,6 +657,11 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
           : testId.includes('rbi-grade-b')
             ? testId.includes('general-awareness') ? 80
               : testId.includes('reasoning') ? 60 : 30
+          : testId.includes('nabard-grade-a')
+            ? testId.includes('economic-and-social-issues') ? 40
+              : testId.includes('agriculture-and-rural-development') ? 40
+                : testId.includes('english-language') ? 30
+                  : testId.includes('decision-making') ? 10 : 20
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -761,6 +794,16 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'English Language', count: 30 },
     { section: 'Quantitative Aptitude', count: 30 },
     { section: 'Reasoning', count: 60 },
+  ],
+  'nabard-grade-a': [
+    { section: 'Reasoning', count: 20 },
+    { section: 'English Language', count: 30 },
+    { section: 'Computer Knowledge', count: 20 },
+    { section: 'Quantitative Aptitude', count: 20 },
+    { section: 'Decision Making', count: 10 },
+    { section: 'General Awareness', count: 20 },
+    { section: 'Economic and Social Issues', count: 40 },
+    { section: 'Agriculture and Rural Development', count: 40 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -1038,5 +1081,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'Which institution regulates monetary policy in India?', options: ['SEBI', 'Reserve Bank of India', 'NITI Aayog', 'Finance Ministry'], correctIndex: 1, explanation: 'The Reserve Bank of India regulates monetary policy through its Monetary Policy Committee.' },
     // Quantitative Aptitude
     { section: 'Quantitative Aptitude', question: 'What is 15% of 600?', options: ['80', '85', '90', '95'], correctIndex: 2, explanation: '15% of 600 = (15/100) × 600 = 90.' },
+  ],
+  'nabard-grade-a': [
+    // General Awareness
+    { section: 'General Awareness', question: 'NABARD was established in which year?', options: ['1975', '1982', '1990', '1995'], correctIndex: 1, explanation: 'NABARD was established on 12 July 1982.' },
+    // Agriculture and Rural Development
+    { section: 'Agriculture and Rural Development', question: 'Which scheme provides an income support of ₹6,000 per year to eligible farmer families?', options: ['PM-KISAN', 'PMFBY', 'PMGSY', 'PMKSY'], correctIndex: 0, explanation: 'PM-KISAN provides ₹6,000 per year in three equal instalments to eligible farmer families.' },
   ],
 };

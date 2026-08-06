@@ -17,7 +17,8 @@ export type ExamSlug =
   | 'rpf-constable'
   | 'ssc-cpo'
   | 'ibps-so'
-  | 'rbi-grade-b';
+  | 'rbi-grade-b'
+  | 'nabard-grade-a';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -97,6 +98,8 @@ const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
 const RBI_GRADE_B_2025_NOTICE = 'https://opportunities.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=4713';
+const NABARD_GRADE_A_2025_NOTICE =
+  'https://www.nabard.org/auth/writereaddata/CareerNotices/0512255230Final Advertisement Grade A (RDBS, Legal, P&SS) 2025 (1).pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -2669,6 +2672,160 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           status: 'review-pending',
           sections: [],
           note: 'The Phase II pattern (Economic and Social Issues, English Writing Skills, Finance and Management) is under review before this stage is published.',
+        },
+        tests: [],
+      },
+    ],
+  },
+  'nabard-grade-a': {
+    slug: 'nabard-grade-a',
+    name: 'NABARD Grade A',
+    fullName: 'National Bank for Agriculture and Rural Development — Assistant Manager, Grade A (RDBS, General)',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'phase-1',
+        name: 'Phase I',
+        pattern: {
+          status: 'official',
+          cycle: 'Grade A (RDBS) 2025',
+          sections: [
+            'Reasoning',
+            'English Language',
+            'Computer Knowledge',
+            'Quantitative Aptitude',
+            'Decision Making',
+            'General Awareness',
+            'Economic and Social Issues',
+            'Agriculture and Rural Development',
+          ],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'Phase I has eight tests split into two groups: Reasoning, English Language, Computer Knowledge, Quantitative Aptitude, and Decision Making are qualifying only, while General Awareness, Economic and Social Issues, and Agriculture and Rural Development (the three largest sections) decide the merit ranking used to shortlist candidates for the Mains examination. Candidates must still clear the minimum cut-off in every qualifying section to remain in contention.',
+          sectionBreakdown: [
+            { name: 'Reasoning', questions: 20, marks: 20, duration: 120 },
+            { name: 'English Language', questions: 30, marks: 30, duration: 120 },
+            { name: 'Computer Knowledge', questions: 20, marks: 20, duration: 120 },
+            { name: 'Quantitative Aptitude', questions: 20, marks: 20, duration: 120 },
+            { name: 'Decision Making', questions: 10, marks: 10, duration: 120 },
+            { name: 'General Awareness', questions: 20, marks: 20, duration: 120 },
+            { name: 'Economic and Social Issues', questions: 40, marks: 40, duration: 120 },
+            { name: 'Agriculture and Rural Development', questions: 40, marks: 40, duration: 120 },
+          ],
+          timerNote: 'Single composite 120-minute timer for all eight tests combined — no sectional lock, you can move between sections freely.',
+          sourceUrl: NABARD_GRADE_A_2025_NOTICE,
+          checkedOn: '6 August 2026',
+        },
+        tests: [
+          {
+            id: 'phase-1-full-mock-1',
+            name: 'Phase I Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-reasoning-sectional-1',
+            name: 'Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning',
+            duration: 12,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 18,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-computer-knowledge-sectional-1',
+            name: 'Computer Knowledge Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Computer Knowledge',
+            duration: 12,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 12,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-decision-making-sectional-1',
+            name: 'Decision Making Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Decision Making',
+            duration: 6,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 12,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-economic-and-social-issues-sectional-1',
+            name: 'Economic and Social Issues Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Economic and Social Issues',
+            duration: 24,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-agriculture-and-rural-development-sectional-1',
+            name: 'Agriculture and Rural Development Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Agriculture and Rural Development',
+            duration: 24,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'phase-2',
+        name: 'Phase II',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Mains examination pattern (General English, Economic and Social Issues, Agriculture and Rural Development) is under review before this stage is published.',
         },
         tests: [],
       },

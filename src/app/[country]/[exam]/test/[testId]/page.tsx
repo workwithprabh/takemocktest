@@ -501,6 +501,29 @@ const RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official NABARD Grade A question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official NABARD Grade A (RDBS, General) Phase I syllabus and pattern.',
+  },
+  {
+    question: 'Is there a separate timer for each Phase I section?',
+    answer: 'No. NABARD Phase I uses a single composite timer of 120 minutes for all eight sections combined, and you can move freely between sections — there is no sectional lock.',
+  },
+  {
+    question: 'What is the difference between the qualifying and merit sections?',
+    answer: 'Reasoning, English Language, Computer Knowledge, Quantitative Aptitude, and Decision Making are qualifying only — you must clear a minimum cut-off, but marks in these sections do not count toward ranking. General Awareness, Economic and Social Issues, and Agriculture and Rural Development form the merit section, and marks scored here alone decide shortlisting for Phase II (Mains).',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark, across every section. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -522,6 +545,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,
+  'nabard-grade-a/phase-1': NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

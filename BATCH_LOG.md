@@ -2,6 +2,78 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-06 — NABARD Grade A (Batch 20, live session)
+
+Added NABARD Grade A Phase I: 8 original banks totalling 200 questions — Reasoning (20),
+English Language (30), Computer Knowledge (20), Quantitative Aptitude (20), Decision Making
+(10), General Awareness (20), Economic and Social Issues (40), Agriculture and Rural
+Development (40) — wired into 1 full mock + 8 sectional tests.
+
+**Source:** NABARD's own advertisement PDF (`0512255230Final Advertisement Grade A (RDBS,
+Legal, P&SS) 2025 (1).pdf`), parsed directly with plain `pdftotext` (no `-layout` flag — that
+flag had scrambled a similar table for IBPS SO in an earlier batch, but here plain
+`pdftotext` gave the cleaner result; worth trying both when a table looks garbled). This
+resolved two conflicting automated WebFetch summaries — one described Phase II by mistake,
+the other undercounted the pattern as 3 sections/120Q/60 min — against the authoritative
+8-section/200Q/200-marks/120-min table with the exact per-section breakdown (20/30/20/20/
+10/20/40/40).
+
+**New pattern type for this project — qualifying/merit split within one paper:** unlike any
+prior exam, NABARD's Phase I has eight tests split into two tiers *inside the same objective
+paper*: Reasoning, English Language, Computer Knowledge, Quantitative Aptitude, and Decision
+Making are qualifying only (clear a minimum cut-off, but marks don't count toward ranking),
+while General Awareness, Economic and Social Issues, and Agriculture and Rural Development
+(the three largest sections) are the merit section whose marks alone decide Phase II
+shortlisting. This needed no scoring-engine changes — every question still carries a uniform
+1 mark and 0.25 negative marking — so it's captured purely in the pattern's `note` field and
+surfaced on the exam-pattern page and mock-test hub. Worth reusing this same modeling
+approach if a future exam (e.g. SEBI Grade A) turns out to have a similar split.
+
+**Timer:** single composite 120-minute timer across all eight sections (matching the RPF
+Constable / RRB JE precedent, not the SSC CPO / IBPS SO / RBI Grade B sectional-lock
+precedent) — confirmed in the browser walkthrough by jumping directly from question 1
+(Reasoning) to question 195 (Agriculture and Rural Development) mid-attempt with no lock and
+the same countdown continuing. Sectional practice tests use proportional slices of the
+120-minute total (rate = 0.6 min/question): 12/18/12/12/6/12/24/24, summing exactly to 120.
+
+**Collision-avoidance:** leaned into NABARD-specific rural-development, agricultural-policy,
+and cooperative-banking content for the two largest sections (Economic and Social Issues,
+Agriculture and Rural Development) — subject matter almost entirely untouched by the rest of
+the corpus — following the same strategy that worked for RPF Constable's Banking Awareness GA
+section and RBI Grade B's own approach.
+
+**Errors caught during self-review (before running `qa:questions`):** a self-contradictory
+circular-seating puzzle with two clues placing different people in the same seat (removed the
+conflicting clue); two reasoning items and one arithmetic item with leftover scratch-reasoning
+text and a `correctIndex` that didn't match the cleanly re-derived answer (Data Sufficiency,
+a distance puzzle, and a Compound Interest question); a coding-decoding question with a
+tense mismatch between the question and its code table; a stray invalid `topic2: ''` field
+left in from drafting. Consistent with this project's repeated finding that reasoning puzzles
+and arithmetic items are the highest-error-rate content types — always re-derive every answer
+before running the automated audit.
+
+**Cross-file duplicate collisions caught by `qa:questions` (all against pre-existing corpus
+content, all fixed by rewriting the newer NABARD side):** a number-series question identical
+to one in IBPS RRB Office Assistant Reasoning; a Compound Interest and a "sum of first N
+natural numbers" question identical to ones in RBI Grade B Quantitative Aptitude; an idiom,
+two spelling-correction prompts, and a negative-inversion sentence-improvement question
+identical to ones in RBI Grade B / SSC CPO English; and a "RBI was nationalised in which
+year" GA fact identical to one in SSC CPO General Awareness. All replaced with different,
+independently-verified content (different series, different numbers, different idiom,
+reworded spelling prompts, a double-superlative grammar item, and a Payments Bank GA fact) —
+answer-position rebalancing (via the `rebalance.mjs` scratch script) was re-verified afterward
+and all 8 banks still land on their target near-even splits.
+
+**Verified:** all 108 banks / 3,200 questions pass `qa:questions` clean (no duplicate IDs or
+text); `npm run build` clean static export with all 9 NABARD test routes present; browser
+walkthrough confirmed the mock-test hub (9 tests, correct Q-counts/durations, qualifying/merit
+note), the exam-pattern page (8-row section table), the composite no-lock timer, and correct
+scoring (1 correct + 1 wrong → 0.75/200, with the Agriculture and Rural Development section
+showing 1.00/40.00 and Reasoning showing -0.25/20.00 — matching the 1 mark / 0.25 negative
+marking rule and the official section-wise caps).
+
+**Batch roadmap checkbox:** ticked in the same commit.
+
 ## 2026-08-04 — IBPS RRB Office Assistant (Batch 10, live session)
 
 Added IBPS RRB Office Assistant Prelims: Reasoning (40 Q) + Numerical Ability (40 Q), wired

@@ -30,7 +30,7 @@ otherwise).
 **Live as of 2026-08-06:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
 rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
 ibps-rrb-officer-scale-1, sbi-clerk, rrb-je, upsc-cse, rpf-constable, ssc-cpo, ibps-so,
-rbi-grade-b (19 exams).
+rbi-grade-b, nabard-grade-a (20 exams).
 
 ## The queue (Government Jobs cluster, in order)
 
@@ -49,7 +49,7 @@ next one in the same run.
 - [x] SSC CPO
 - [x] IBPS Specialist Officer
 - [x] RBI Grade B
-- [ ] NABARD Grade A
+- [x] NABARD Grade A
 - [ ] SEBI Grade A
 - [ ] SIDBI Grade A & B
 - [ ] LIC AAO

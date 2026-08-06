@@ -59,7 +59,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('SBI Clerk', 'National', 'sbi-clerk'),
           exam('RBI Grade B', 'National', 'rbi-grade-b'),
           exam('RBI Assistant', 'National', 'rbi-assistant'),
-          exam('NABARD Grade A', 'National'),
+          exam('NABARD Grade A', 'National', 'nabard-grade-a'),
           exam('SEBI Grade A', 'National'),
           exam('SIDBI Grade A & B', 'National'),
           exam('LIC AAO', 'National'),
