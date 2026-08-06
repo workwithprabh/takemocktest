@@ -95,6 +95,10 @@ import { SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1 } from './question-banks/ssc-cp
 import { IBPS_SO_PRELIMS_REASONING_1 } from './question-banks/ibps-so-prelims-reasoning-1';
 import { IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-so-prelims-quantitative-aptitude-1';
 import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-so-prelims-english-language-1';
+import { RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/rbi-grade-b-phase-1-general-awareness-1';
+import { RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-grade-b-phase-1-english-language-1';
+import { RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/rbi-grade-b-phase-1-quantitative-aptitude-1';
+import { RBI_GRADE_B_PHASE_1_REASONING_1 } from './question-banks/rbi-grade-b-phase-1-reasoning-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -379,6 +383,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-so/prelims-english-language-sectional-1': IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1,
   'ibps-so/prelims-reasoning-sectional-1': IBPS_SO_PRELIMS_REASONING_1,
   'ibps-so/prelims-quantitative-aptitude-sectional-1': IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'rbi-grade-b/phase-1-full-mock-1': [
+    ...RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1,
+    ...RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
+    ...RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1,
+    ...RBI_GRADE_B_PHASE_1_REASONING_1,
+  ],
+  'rbi-grade-b/phase-1-general-awareness-sectional-1': RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1,
+  'rbi-grade-b/phase-1-english-language-sectional-1': RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
+  'rbi-grade-b/phase-1-quantitative-aptitude-sectional-1': RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1,
+  'rbi-grade-b/phase-1-reasoning-sectional-1': RBI_GRADE_B_PHASE_1_REASONING_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -561,6 +575,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('ibps-so/prelims-full-mock')
     ? 150
+    : testId.includes('rbi-grade-b/phase-1-full-mock')
+    ? 200
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -610,6 +626,9 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 50
           : testId.includes('ibps-so')
             ? 50
+          : testId.includes('rbi-grade-b')
+            ? testId.includes('general-awareness') ? 80
+              : testId.includes('reasoning') ? 60 : 30
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -736,6 +755,12 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'English Language', count: 50 },
     { section: 'Reasoning', count: 50 },
     { section: 'Quantitative Aptitude', count: 50 },
+  ],
+  'rbi-grade-b': [
+    { section: 'General Awareness', count: 80 },
+    { section: 'English Language', count: 30 },
+    { section: 'Quantitative Aptitude', count: 30 },
+    { section: 'Reasoning', count: 60 },
   ],
 };
 const tierTwoPaperOneLayout = [
@@ -1007,5 +1032,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Reasoning', question: 'Complete the series: 4, 12, 36, 108, ?', options: ['216', '270', '324', '432'], correctIndex: 2, explanation: 'Each term is triple the previous term: 108 × 3 = 324.' },
     // Quantitative Aptitude
     { section: 'Quantitative Aptitude', question: 'What is 25% of 480?', options: ['110', '115', '120', '125'], correctIndex: 2, explanation: '25% of 480 = (25/100) × 480 = 120.' },
+  ],
+  'rbi-grade-b': [
+    // General Awareness
+    { section: 'General Awareness', question: 'Which institution regulates monetary policy in India?', options: ['SEBI', 'Reserve Bank of India', 'NITI Aayog', 'Finance Ministry'], correctIndex: 1, explanation: 'The Reserve Bank of India regulates monetary policy through its Monetary Policy Committee.' },
+    // Quantitative Aptitude
+    { section: 'Quantitative Aptitude', question: 'What is 15% of 600?', options: ['80', '85', '90', '95'], correctIndex: 2, explanation: '15% of 600 = (15/100) × 600 = 90.' },
   ],
 };

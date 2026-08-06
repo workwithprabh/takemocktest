@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -75,7 +75,10 @@ for (const { file, questions } of banks) {
     : file.startsWith('rpf-constable-cbt-general-intelligence-reasoning-') ? 35
     : file.startsWith('rpf-constable-cbt-general-awareness-') ? 50
     : file.startsWith('ssc-cpo-paper-1-') ? 50
-    : file.startsWith('ibps-so-prelims-') ? 50 : 25;
+    : file.startsWith('ibps-so-prelims-') ? 50
+    : file.startsWith('rbi-grade-b-phase-1-general-awareness-') ? 80
+    : file.startsWith('rbi-grade-b-phase-1-reasoning-') ? 60
+    : file.startsWith('rbi-grade-b-phase-1-') ? 30 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

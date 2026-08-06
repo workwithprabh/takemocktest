@@ -16,7 +16,8 @@ export type ExamSlug =
   | 'upsc-cse'
   | 'rpf-constable'
   | 'ssc-cpo'
-  | 'ibps-so';
+  | 'ibps-so'
+  | 'rbi-grade-b';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -95,6 +96,7 @@ const RPF_CONSTABLE_2024_NOTICE =
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
+const RBI_GRADE_B_2025_NOTICE = 'https://opportunities.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=4713';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -2569,6 +2571,104 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           status: 'review-pending',
           sections: [],
           note: 'The Main Examination pattern (post-specific Professional Knowledge) is under review before this stage is published.',
+        },
+        tests: [],
+      },
+    ],
+  },
+  'rbi-grade-b': {
+    slug: 'rbi-grade-b',
+    name: 'RBI Grade B',
+    fullName: 'Reserve Bank of India — Grade B Officer (DR), General Cadre',
+    category: 'Banking',
+    stages: [
+      {
+        id: 'phase-1',
+        name: 'Phase I',
+        pattern: {
+          status: 'official',
+          cycle: 'RBISB/DA/03/2025-26',
+          sections: ['General Awareness', 'English Language', 'Quantitative Aptitude', 'Reasoning'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'Phase I is an objective screening stage for the General cadre. Candidates must secure minimum marks separately in each section as well as in aggregate to be shortlisted for Phase II, which comprises Economic and Social Issues, English (Writing Skills), and Finance and Management — Phase I marks are not carried forward to the final merit list.',
+          sectionBreakdown: [
+            { name: 'General Awareness', questions: 80, marks: 80, duration: 25 },
+            { name: 'English Language', questions: 30, marks: 30, duration: 25 },
+            { name: 'Quantitative Aptitude', questions: 30, marks: 30, duration: 25 },
+            { name: 'Reasoning', questions: 60, marks: 60, duration: 45 },
+          ],
+          timerNote: 'Each of the four sections has its own separately timed window (25/25/25/45 minutes) — sectional lock, no shifting unused time between sections.',
+          sourceUrl: RBI_GRADE_B_2025_NOTICE,
+          checkedOn: '6 August 2026',
+        },
+        tests: [
+          {
+            id: 'phase-1-full-mock-1',
+            name: 'Phase I Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            sectionDuration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-english-language-sectional-1',
+            name: 'English Language Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-quantitative-aptitude-sectional-1',
+            name: 'Quantitative Aptitude Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+          {
+            id: 'phase-1-reasoning-sectional-1',
+            name: 'Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning',
+            duration: 45,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '6 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'phase-2',
+        name: 'Phase II',
+        pattern: {
+          status: 'review-pending',
+          sections: [],
+          note: 'The Phase II pattern (Economic and Social Issues, English Writing Skills, Finance and Management) is under review before this stage is published.',
         },
         tests: [],
       },

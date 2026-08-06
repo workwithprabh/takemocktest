@@ -24,6 +24,7 @@ Every checked question includes a source record (official notification/syllabus 
 - [RPF Constable](https://takemocktest.com/in/rpf-constable/mock-test): CBT (1 full mock + 3 sectional tests, 120Q/120 marks/90 min), single combined timer, 1/3 negative marking, followed by a non-written PET/PMT, document verification, and medical examination
 - [SSC CPO](https://takemocktest.com/in/ssc-cpo/mock-test): Paper 1 (1 full mock + 4 sectional tests, 200Q/200 marks/120 min), sectional lock — each of the four sections has its own separately timed 30-minute window, 1/4 negative marking, followed by PST/PET, Paper 2 (English), and a medical examination
 - [IBPS SO](https://takemocktest.com/in/ibps-so/mock-test): Prelims (1 full mock + 3 sectional tests, 150Q/125 marks/120 min) for IT Officer, Agriculture Field Officer, HR/Personnel Officer, and Marketing Officer (Scale I) — sectional lock with three separately timed 40-minute sections; English Language questions carry 0.5 marks each while Reasoning and Quantitative Aptitude carry 1 mark each; qualifying stage only, Mains (Professional Knowledge) marks decide the final merit list
+- [RBI Grade B](https://takemocktest.com/in/rbi-grade-b/mock-test): Phase I (1 full mock + 4 sectional tests, 200Q/200 marks/120 min) for the General cadre — sectional lock with four separately timed windows (25/25/25/45 min), 1/4 negative marking; qualifying stage only, Phase II (Economic and Social Issues, English Writing Skills, Finance and Management) and interview decide the final merit list
 
 ## Exam information pages
 

@@ -474,3 +474,66 @@ correctly, the full mock genuinely enforces sectional lock (`SECTION 1/3`, 39:58
 English Language first per the official section order), and a live attempt scored
 0.50/125 with section-wise caps summing correctly to 25.00+50.00+50.00=125. Added a
 5-question FAQ set and an `llms.txt` line.
+
+## 2026-08-06 — RBI Grade B (Batch 19, live session)
+
+Added RBI Grade B Phase I (General cadre): General Awareness (80 Q), English Language
+(30 Q), Quantitative Aptitude (30 Q), Reasoning (60 Q) — wired into 1 full mock (200 Q,
+sectional-locked, four separately timed windows: 25/25/25/45 min) + 4 sectionals.
+
+**Source:** RBI's own notification (Advt. No. RBISB/DA/03/2025-26), fetched via a
+testbook-hosted re-upload of the official PDF (`opportunities.rbi.org.in`'s own page is
+CAPTCHA-gated and couldn't be fetched directly — using a third-party mirror of a primary
+source is an acceptable fallback when the origin blocks automated access, since the
+document content itself is still the authentic official text, verified by cross-checking
+its wording against the notification's known reference number). The official text
+confirmed "a single Paper for 200 marks... separate time will be allotted for each test"
+but did not publish the exact per-section question/mark/duration split (RBI defers that to
+a separate Information Handout closer to the exam) — the 80/30/30/60 breakdown was
+cross-checked against multiple independent aggregators that consistently agreed and summed
+correctly to the officially confirmed 200Q/200 marks/120 min.
+
+**General Awareness leaned heavily into Banking Awareness** (repo rate, CRR, SLR, NPA
+classification, MPC structure, Basel norms, NBFC vs bank distinctions, DICGC, MSF, PSL,
+Financial Stability Report, UPI/RuPay, KYC, negotiable instruments, IFSC, Banking
+Ombudsman, etc.) as the primary content strategy for this 80-question section — this topic
+area was almost entirely untouched by the rest of the corpus (RBI Assistant's Prelims has
+no GA section at all), giving a large genuinely original pool and substantially reducing
+collision risk compared to leaning on generic History/Geography/Polity facts, which are
+heavily saturated after 18 prior batches.
+
+**Errors caught and fixed (self-review, before qa:questions ran):** an unusually high
+number of items needed correction this batch — a seating-arrangement puzzle with an
+underdetermined answer (two people could occupy either of two open seats), a blood-relation
+question with a genuinely ambiguous chain of reasoning, two "letter-sum" coding items with
+arithmetic that didn't match the listed options, a data-sufficiency item whose explanation
+concluded a different answer than the one keyed, a broken multi-floor puzzle with
+self-contradictory constraints, a number-series item where the final computed value (446)
+wasn't among the options, and an awkward blood-relation question with no clean English
+term for its answer. All caught and rewritten during self-review; worth noting reasoning
+puzzles and letter-arithmetic items are the highest-error-rate question types in this
+project, consistent with prior batches' experience.
+
+**200Q is this batch's non-standard full-mock count** — same recurring lesson as every
+200Q+ batch this project has done: the `expectedCount` branch had to be inserted before the
+generic `full-mock ? 100` catchall in both `questions.ts` and `audit-question-banks.mjs`.
+
+**Two duplicate-text collisions**, both against pre-existing saturated banks (a "longest
+Indian coastline" GA fact already used in SSC CGL Tier 1, and a "sum of first 20 natural
+numbers" QA fact already used in SSC CPO) — both fixed by swapping to fresh content
+(a Banking Awareness fact for the former, a different sum-count for the latter) rather than
+just rewording, since the underlying facts themselves were already saturated 2-3× over.
+
+Answer-position rebalancing: all four banks started skewed (worst: General Awareness
+12/53/14/1), corrected to perfectly even splits (20/20/20/20 for GA; 15/15/15/15 for
+Reasoning; 8/7/8/7 for the two 30-question banks) using the scratch `rebalance.mjs` script
+— 47 total moves across the four files in two script runs.
+
+**Verified:** all 100 banks / 3,000 questions pass `qa:questions` clean; `npm run build`
+clean static export (new `/rbi-grade-b` routes: 1 full mock + 4 sectionals). Browser
+walkthrough confirmed the mock-test hub renders a Phase I/Phase II tab split (Phase II
+correctly shown as "review pending"), the exam-pattern table matches the official split,
+the full mock genuinely enforces sectional lock (`SECTION 1/4`, 24:58 countdown, General
+Awareness first per the official section order), and a live attempt scored 1.00/200 with
+section-wise caps correctly summing 80.00+30.00+30.00+60.00=200. Added a 5-question FAQ
+set and an `llms.txt` line.

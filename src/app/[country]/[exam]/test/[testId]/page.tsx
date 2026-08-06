@@ -478,6 +478,29 @@ const IBPS_SO_PRELIMS_FULL_MOCK_FAQS = [
   },
 ];
 
+const RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RBI Grade B question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RBI Grade B Phase I syllabus and pattern for the General cadre.',
+  },
+  {
+    question: 'Is there a separate timer for each Phase I section?',
+    answer: 'Yes. Each of the four sections — General Awareness, English Language, Quantitative Aptitude, and Reasoning — has its own separately timed window (25/25/25/45 minutes). You cannot shift unused time from one section to another.',
+  },
+  {
+    question: 'What comes after Phase I in the selection process?',
+    answer: 'Candidates who clear the minimum cut-off in each section, and in aggregate, proceed to Phase II, which tests Economic and Social Issues, English (Writing Skills), and Finance and Management — followed by an interview.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -498,6 +521,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rpf-constable/cbt': RPF_CONSTABLE_CBT_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
+  'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
