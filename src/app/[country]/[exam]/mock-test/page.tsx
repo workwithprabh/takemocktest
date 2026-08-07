@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam) return {};
   const hasCheckedTests = exam.stages.some((stage) => stage.tests.some((test) => test.status === 'checked'));
   return pageMetadata({
-    title: `${exam.name} Mock Test ${YEAR}, Practice Free Test Series`,
+    title: `${exam.shortName ?? exam.name} Mock Test ${YEAR}, Practice Free Test Series`,
     description: `Attempt free ${exam.name} practice tests with instant results and clearly labelled source-review status.`,
     path: `/in/${exam.slug}/mock-test`,
     noIndex: !hasCheckedTests,

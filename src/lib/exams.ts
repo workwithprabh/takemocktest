@@ -76,6 +76,8 @@ export interface TestStage {
 export interface ExamConfig {
   slug: ExamSlug;
   name: string;
+  /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
+  shortName?: string;
   fullName: string;
   category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services';
   stages: TestStage[];
@@ -2582,6 +2584,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-steno': {
     slug: 'ssc-steno',
     name: "SSC Stenographer Grade C & D",
+    shortName: 'SSC Stenographer',
     fullName: "Staff Selection Commission: Stenographer Grade 'C' and 'D'",
     category: 'SSC',
     stages: [
