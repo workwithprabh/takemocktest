@@ -26,7 +26,8 @@ export type ExamSlug =
   | 'rrb-alp'
   | 'rrb-technician'
   | 'rrb-paramedical'
-  | 'rpf-si';
+  | 'rpf-si'
+  | 'ssc-je';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -104,6 +105,8 @@ const RPF_CONSTABLE_2024_NOTICE =
   'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Constable-02-2024_English.pdf';
 const RPF_SI_2024_NOTICE =
   'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Sub-Inspector-01-2024_English.pdf';
+const SSC_JE_2025_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2025.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -2507,6 +2510,69 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           note: 'The Paper 2 (English Language and Comprehension) pattern is under review before this stage is published.',
         },
         tests: [],
+      },
+    ],
+  },
+  'ssc-je': {
+    slug: 'ssc-je',
+    name: 'SSC Junior Engineer',
+    fullName: 'Staff Selection Commission: Junior Engineer (Civil, Mechanical & Electrical)',
+    category: 'SSC',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper I',
+        pattern: {
+          status: 'official',
+          cycle: 'SSC JE 2025',
+          sections: ['General Intelligence and Reasoning', 'General Awareness'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'Paper I is common to every candidate regardless of engineering discipline. Paper II, the discipline-specific General Engineering paper (100 questions, 300 marks) for Civil & Structural, Electrical, or Mechanical Engineering depending on the candidate\'s notified stream, is not modeled on this site: the technical syllabus differs by discipline, so no single question bank would be accurate for every candidate. Both papers are Computer-Based, objective, multiple-choice, and their normalized scores together decide the final merit list; there is no separate descriptive paper.',
+          sectionBreakdown: [
+            { name: 'General Intelligence and Reasoning', questions: 50, marks: 50, duration: 60 },
+            { name: 'General Awareness', questions: 50, marks: 50, duration: 60 },
+          ],
+          timerNote: 'Single 120-minute timer for both sections combined (no sectional lock).',
+          sourceUrl: SSC_JE_2025_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'paper-1-full-mock-1',
+            name: 'Paper I Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'paper-1-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'paper-1-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '7 August 2026',
+          },
+        ],
       },
     ],
   },

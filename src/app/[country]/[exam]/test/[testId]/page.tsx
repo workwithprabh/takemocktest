@@ -455,6 +455,29 @@ const RPF_SI_CBT_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_JE_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC JE question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SSC Junior Engineer Paper I syllabus and pattern.',
+  },
+  {
+    question: 'Does this mock cover the Technical (General Engineering) section?',
+    answer: 'No. Paper I, covered here, is common to every candidate regardless of discipline. Paper II is the discipline-specific General Engineering paper (Civil & Structural, Electrical, or Mechanical, depending on your notified stream), and is not modeled on this site since the technical syllabus differs by discipline.',
+  },
+  {
+    question: 'Is Paper I only a qualifying stage, or does it count toward the final result?',
+    answer: 'Both Paper I and Paper II are Computer-Based, objective, multiple-choice papers, and their normalized scores together decide the final merit list. There is no separate descriptive paper.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts 0.25 marks. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official SSC CPO question paper?',
@@ -804,6 +827,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'upsc-cse/paper-2': UPSC_CSE_PAPER2_FULL_MOCK_FAQS,
   'rpf-constable/cbt': RPF_CONSTABLE_CBT_FULL_MOCK_FAQS,
   'rpf-si/cbt': RPF_SI_CBT_FULL_MOCK_FAQS,
+  'ssc-je/paper-1': SSC_JE_PAPER_1_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,

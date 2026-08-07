@@ -2,6 +2,50 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — SSC Junior Engineer (Batch 29, live session)
+
+Added SSC Junior Engineer: Paper I (General Intelligence and Reasoning 50Q,
+General Awareness 50Q, 1 full mock + 2 sectionals, 100Q/100 marks/120 min,
+single composite timer, 0.25 negative marking), per the official SSC JE 2025
+notification PDF.
+
+**Primary source corrected two wrong claims repeated across secondary
+aggregator sites.** Several sites (careerpower.in, adda247, testbook,
+sscadda) state that Paper I includes a 100-question Technical section, and
+that Paper II is a "descriptive" or "conventional" paper. Fetching and
+parsing the actual notification PDF (`pdftotext`, cross-checked in both
+layout and plain modes against a garbled table) disproved both: Paper I is
+only GI&R (50Q/50 marks) plus GA (50Q/50 marks), with no Technical
+component at all, and Paper II's own clause 13.3 states "Paper-I &
+Paper-II will consist of Objective Type, Multiple-Choice Questions only."
+Paper II (100Q/300 marks, discipline-specific General Engineering) is
+still excluded from this site since the syllabus varies by candidate's
+Civil, Electrical, or Mechanical stream, but the exclusion note now
+correctly describes it as objective, not descriptive, and both papers'
+normalized scores together decide the final merit list. This is a case
+study for always verifying against the primary source PDF rather than
+trusting aggregator claims wholesale, even when several of them agree with
+each other.
+
+Paper I turned out to be a clean, fully self-contained, single-stage
+pattern, no partial-paper exclusion needed the way RRB ALP and RRB
+Paramedical required, since the exclusion here only concerns the separate
+Paper II.
+
+Six initial cross-corpus collisions, resolved in one round. Both banks
+also needed answer-position rebalancing (GIR from an unbalanced starting
+distribution to 13/12/13/12; GA from 6/36/7/1 to 12/13/12/13), applied as
+direct option-array edits, plus one self-inflicted issue caught during
+writing: three General Intelligence questions reused the identical stem
+"Which of the following is different from the rest?", a within-file
+duplicate matching the SSC CPO Spelling-Correction pattern already
+documented in project memory; each was rewritten with a stem tied to its
+actual content.
+
+Full corpus after this batch: 160 question-bank files, 4,555 questions,
+zero duplicate IDs or text, zero answer-balance failures (`qa:questions`
+clean run).
+
 ## 2026-08-07 — RPF Sub-Inspector (Batch 28, live session)
 
 Added RPF Sub-Inspector: CBT (Arithmetic 35Q, General Intelligence and Reasoning

@@ -91,6 +91,8 @@ import { RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-cons
 import { RPF_SI_CBT_ARITHMETIC_1 } from './question-banks/rpf-si-cbt-arithmetic-1';
 import { RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rpf-si-cbt-general-intelligence-reasoning-1';
 import { RPF_SI_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-si-cbt-general-awareness-1';
+import { SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-je-paper-1-general-intelligence-reasoning-1';
+import { SSC_JE_PAPER_1_GENERAL_AWARENESS_1 } from './question-banks/ssc-je-paper-1-general-awareness-1';
 import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-cpo-paper-1-general-intelligence-reasoning-1';
 import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-1';
 import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-1';
@@ -431,6 +433,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rpf-si/cbt-arithmetic-sectional-1': RPF_SI_CBT_ARITHMETIC_1,
   'rpf-si/cbt-general-intelligence-reasoning-sectional-1': RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1,
   'rpf-si/cbt-general-awareness-sectional-1': RPF_SI_CBT_GENERAL_AWARENESS_1,
+  'ssc-je/paper-1-full-mock-1': [
+    ...SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
+    ...SSC_JE_PAPER_1_GENERAL_AWARENESS_1,
+  ],
+  'ssc-je/paper-1-general-intelligence-reasoning-sectional-1': SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
+  'ssc-je/paper-1-general-awareness-sectional-1': SSC_JE_PAPER_1_GENERAL_AWARENESS_1,
   'ssc-cpo/paper-1-full-mock-1': [
     ...SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
@@ -768,6 +776,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('rpf-si/cbt-full-mock')
     ? 120
+    : testId.includes('ssc-je/paper-1-full-mock')
+    ? 100
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
     : testId.includes('ibps-so/prelims-full-mock')
@@ -834,6 +844,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
           : testId.includes('rpf-si')
             ? testId.includes('arithmetic') ? 35
               : testId.includes('general-intelligence-reasoning') ? 35 : 50
+          : testId.includes('ssc-je')
+            ? 50
           : testId.includes('ssc-cpo')
             ? 50
           : testId.includes('ibps-so')
@@ -1007,6 +1019,10 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   'rpf-si': [
     { section: 'Arithmetic', count: 35 },
     { section: 'General Intelligence and Reasoning', count: 35 },
+    { section: 'General Awareness', count: 50 },
+  ],
+  'ssc-je': [
+    { section: 'General Intelligence and Reasoning', count: 50 },
     { section: 'General Awareness', count: 50 },
   ],
   'ssc-cpo': [
@@ -1380,6 +1396,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Arithmetic', question: 'What is 40% of 150?', options: ['50', '55', '60', '65'], correctIndex: 2, explanation: '40% of 150 = (40/100) × 150 = 60.' },
     // General Awareness
     { section: 'General Awareness', question: 'Which bird is the national bird of India?', options: ['Parrot', 'Peacock', 'Sparrow', 'Crane'], correctIndex: 1, explanation: 'The peacock is the national bird of India.' },
+  ],
+  'ssc-je': [
+    // General Intelligence and Reasoning
+    { section: 'General Intelligence and Reasoning', question: 'Which of the following numbers is a perfect square: 48, 64, 72, or 90?', options: ['48', '64', '72', '90'], correctIndex: 1, explanation: '64 = 8², a perfect square; the other three are not.' },
+    // General Awareness
+    { section: 'General Awareness', question: 'What is the capital of Jharkhand?', options: ['Patna', 'Ranchi', 'Bhubaneswar', 'Raipur'], correctIndex: 1, explanation: 'Ranchi is the capital of Jharkhand.' },
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
