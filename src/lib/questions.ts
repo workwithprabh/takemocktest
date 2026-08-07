@@ -142,6 +142,15 @@ import { RRB_ALP_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-alp-cbt1-
 import { RRB_ALP_CBT2_MATHEMATICS_1 } from './question-banks/rrb-alp-cbt2-mathematics-1';
 import { RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-alp-cbt2-general-intelligence-reasoning-1';
 import { RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_1 } from './question-banks/rrb-alp-cbt2-basic-science-engineering-1';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_1 } from './question-banks/rrb-technician-grade1-signal-general-awareness-1';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-technician-grade1-signal-general-intelligence-reasoning-1';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_1 } from './question-banks/rrb-technician-grade1-signal-computers-applications-1';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_MATHEMATICS_1 } from './question-banks/rrb-technician-grade1-signal-mathematics-1';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_BASIC_SCIENCE_ENGINEERING_1 } from './question-banks/rrb-technician-grade1-signal-basic-science-engineering-1';
+import { RRB_TECHNICIAN_GRADE3_MATHEMATICS_1 } from './question-banks/rrb-technician-grade3-mathematics-1';
+import { RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-technician-grade3-general-intelligence-reasoning-1';
+import { RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_1 } from './question-banks/rrb-technician-grade3-general-science-1';
+import { RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1 } from './question-banks/rrb-technician-grade3-general-awareness-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -540,6 +549,28 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-alp/cbt-2-mathematics-sectional-1': RRB_ALP_CBT2_MATHEMATICS_1,
   'rrb-alp/cbt-2-general-intelligence-reasoning-sectional-1': RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1,
   'rrb-alp/cbt-2-basic-science-engineering-sectional-1': RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_1,
+  'rrb-technician/grade-1-signal-full-mock-1': [
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_1,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_1,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_1,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_MATHEMATICS_1,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_BASIC_SCIENCE_ENGINEERING_1,
+  ],
+  'rrb-technician/grade-1-signal-general-awareness-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_1,
+  'rrb-technician/grade-1-signal-general-intelligence-reasoning-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-technician/grade-1-signal-computers-applications-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_1,
+  'rrb-technician/grade-1-signal-mathematics-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_MATHEMATICS_1,
+  'rrb-technician/grade-1-signal-basic-science-engineering-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_BASIC_SCIENCE_ENGINEERING_1,
+  'rrb-technician/grade-3-full-mock-1': [
+    ...RRB_TECHNICIAN_GRADE3_MATHEMATICS_1,
+    ...RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1,
+    ...RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_1,
+    ...RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1,
+  ],
+  'rrb-technician/grade-3-mathematics-sectional-1': RRB_TECHNICIAN_GRADE3_MATHEMATICS_1,
+  'rrb-technician/grade-3-general-intelligence-reasoning-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-technician/grade-3-general-science-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_1,
+  'rrb-technician/grade-3-general-awareness-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -824,6 +855,15 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
           : testId.includes('rrb-alp/cbt-2')
             ? testId.includes('mathematics') ? 25
               : testId.includes('general-intelligence-reasoning') ? 25 : 50
+          : testId.includes('rrb-technician/grade-1-signal')
+            ? testId.includes('general-awareness') ? 10
+              : testId.includes('general-intelligence-reasoning') ? 15
+                : testId.includes('computers-applications') ? 20
+                  : testId.includes('mathematics') ? 20 : 35
+          : testId.includes('rrb-technician/grade-3')
+            ? testId.includes('mathematics') ? 25
+              : testId.includes('general-intelligence-reasoning') ? 25
+                : testId.includes('general-science') ? 40 : 10
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -1049,6 +1089,19 @@ const rrbAlpCbt2Layout = [
   { section: 'General Intelligence and Reasoning', count: 25 },
   { section: 'Basic Science and Engineering', count: 50 },
 ];
+const rrbTechnicianGrade1SignalLayout = [
+  { section: 'General Awareness', count: 10 },
+  { section: 'General Intelligence and Reasoning', count: 15 },
+  { section: 'Basics of Computers and Applications', count: 20 },
+  { section: 'Mathematics', count: 20 },
+  { section: 'Basic Science and Engineering', count: 35 },
+];
+const rrbTechnicianGrade3Layout = [
+  { section: 'Mathematics', count: 25 },
+  { section: 'General Intelligence and Reasoning', count: 25 },
+  { section: 'General Science', count: 40 },
+  { section: 'General Awareness', count: 10 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1070,7 +1123,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                     ? rrbAlpCbt1Layout
                     : testId.includes('rrb-alp/cbt-2-full-mock')
                       ? rrbAlpCbt2Layout
-                      : fullMockLayouts[testId.split('/')[0]];
+                      : testId.includes('rrb-technician/grade-1-signal-full-mock')
+                        ? rrbTechnicianGrade1SignalLayout
+                        : testId.includes('rrb-technician/grade-3-full-mock')
+                          ? rrbTechnicianGrade3Layout
+                          : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1342,5 +1399,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Mathematics', question: 'What is 60% of 450?', options: ['260', '270', '280', '290'], correctIndex: 1, explanation: '60% of 450 = (60/100) × 450 = 270.' },
     // General Science
     { section: 'General Science', question: 'Which gas do humans primarily exhale during respiration?', options: ['Oxygen', 'Carbon Dioxide', 'Nitrogen', 'Hydrogen'], correctIndex: 1, explanation: 'Humans inhale oxygen and exhale carbon dioxide as a waste product of cellular respiration.' },
+  ],
+  'rrb-technician': [
+    // Mathematics
+    { section: 'Mathematics', question: 'What is 45% of 280?', options: ['116', '120', '126', '130'], correctIndex: 2, explanation: '45% of 280 = (45/100) × 280 = 126.' },
+    // General Science
+    { section: 'General Science', question: 'Which gauge is primarily used to measure very small diameters and thicknesses with high precision?', options: ['Screw gauge', 'Pressure gauge', 'Fuel gauge', 'Rain gauge'], correctIndex: 0, explanation: 'A screw gauge is a precision instrument used to measure very small diameters and thicknesses.' },
   ],
 };

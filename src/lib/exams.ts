@@ -23,7 +23,8 @@ export type ExamSlug =
   | 'sidbi-grade-a-b'
   | 'lic-aao'
   | 'niacl-ao'
-  | 'rrb-alp';
+  | 'rrb-alp'
+  | 'rrb-technician';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -110,6 +111,7 @@ const SIDBI_GRADE_A_B_2025_NOTICE = 'https://www.sidbi.in/head/uploads/career_do
 const LIC_AAO_2025_NOTICE = 'https://www.licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025';
 const NIACL_AO_2025_NOTICE = 'https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/RECRUITMENT%20OF%20_5_50%20ADMINISTRATIVE%20OFFICERS%20(GENERALISTS%20&%20SPECIALISTS)%20(SCALE-I)%20202_5.pdf';
 const RRB_ALP_2025_NOTICE = 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_01-2025_ALP.pdf';
+const RRB_TECHNICIAN_2025_NOTICE = 'https://rrbajmer.gov.in/Upload_PDF/Detailed%20CEN%202-2025_%20Technician%20Categories-638866538197092718.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -3650,6 +3652,184 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             status: 'checked',
             section: 'Basic Science and Engineering',
             duration: 45,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'rrb-technician': {
+    slug: 'rrb-technician',
+    name: 'RRB Technician',
+    fullName: 'Railway Recruitment Board: Technician Grade I Signal and Grade III',
+    category: 'Railways',
+    stages: [
+      {
+        id: 'grade-1-signal',
+        name: 'Grade I Signal CBT',
+        pattern: {
+          status: 'official',
+          cycle: 'Recruitment of Technician Grade I Signal and Grade III CEN 02/2025',
+          sections: ['General Awareness', 'General Intelligence and Reasoning', 'Basics of Computers and Applications', 'Mathematics', 'Basic Science and Engineering'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 90,
+          negativeMarking: 0.333,
+          note: 'There is only one CBT for this pay level: it directly decides shortlisting for Document Verification, which is limited to the number of notified vacancies. Minimum pass percentage: UR and EWS 40%, OBC (NCL) and SC 30%, ST 25%. The official notification labels this subject-wise question split as indicative; the question papers may vary.',
+          sectionBreakdown: [
+            { name: 'General Awareness', questions: 10, marks: 10, duration: 9 },
+            { name: 'General Intelligence and Reasoning', questions: 15, marks: 15, duration: 13 },
+            { name: 'Basics of Computers and Applications', questions: 20, marks: 20, duration: 18 },
+            { name: 'Mathematics', questions: 20, marks: 20, duration: 18 },
+            { name: 'Basic Science and Engineering', questions: 35, marks: 35, duration: 32 },
+          ],
+          timerNote: 'Single 90-minute timer for all five sections combined (no sectional lock).',
+          sourceUrl: RRB_TECHNICIAN_2025_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'grade-1-signal-full-mock-1',
+            name: 'Grade I Signal Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 90,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-1-signal-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 9,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-1-signal-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 13,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-1-signal-computers-applications-sectional-1',
+            name: 'Basics of Computers and Applications Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Basics of Computers and Applications',
+            duration: 18,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-1-signal-mathematics-sectional-1',
+            name: 'Mathematics Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Mathematics',
+            duration: 18,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-1-signal-basic-science-engineering-sectional-1',
+            name: 'Basic Science and Engineering Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Basic Science and Engineering',
+            duration: 32,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'grade-3',
+        name: 'Grade III CBT',
+        pattern: {
+          status: 'official',
+          cycle: 'Recruitment of Technician Grade I Signal and Grade III CEN 02/2025',
+          sections: ['Mathematics', 'General Intelligence and Reasoning', 'General Science', 'General Awareness'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 90,
+          negativeMarking: 0.333,
+          note: 'There is only one CBT for this pay level: it directly decides shortlisting for Document Verification, which is limited to the number of notified vacancies. Minimum pass percentage: UR and EWS 40%, OBC (NCL) and SC 30%, ST 25%. The official notification labels this subject-wise question split as indicative; the question papers may vary.',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 25, marks: 25, duration: 23 },
+            { name: 'General Intelligence and Reasoning', questions: 25, marks: 25, duration: 22 },
+            { name: 'General Science', questions: 40, marks: 40, duration: 36 },
+            { name: 'General Awareness', questions: 10, marks: 10, duration: 9 },
+          ],
+          timerNote: 'Single 90-minute timer for all four sections combined (no sectional lock).',
+          sourceUrl: RRB_TECHNICIAN_2025_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'grade-3-full-mock-1',
+            name: 'Grade III Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 90,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-3-mathematics-sectional-1',
+            name: 'Mathematics Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Mathematics',
+            duration: 23,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-3-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 22,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-3-general-science-sectional-1',
+            name: 'General Science Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Science',
+            duration: 36,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'grade-3-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 9,
             marksPerCorrect: 1,
             negativeMarking: 0.333,
             checkedOn: '7 August 2026',

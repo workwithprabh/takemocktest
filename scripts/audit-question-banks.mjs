@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -111,7 +111,16 @@ for (const { file, questions } of banks) {
     : file.startsWith('rrb-alp-cbt1-general-awareness-') ? 10
     : file.startsWith('rrb-alp-cbt2-mathematics-') ? 25
     : file.startsWith('rrb-alp-cbt2-general-intelligence-reasoning-') ? 25
-    : file.startsWith('rrb-alp-cbt2-basic-science-engineering-') ? 50 : 25;
+    : file.startsWith('rrb-alp-cbt2-basic-science-engineering-') ? 50
+    : file.startsWith('rrb-technician-grade1-signal-general-awareness-') ? 10
+    : file.startsWith('rrb-technician-grade1-signal-general-intelligence-reasoning-') ? 15
+    : file.startsWith('rrb-technician-grade1-signal-computers-applications-') ? 20
+    : file.startsWith('rrb-technician-grade1-signal-mathematics-') ? 20
+    : file.startsWith('rrb-technician-grade1-signal-basic-science-engineering-') ? 35
+    : file.startsWith('rrb-technician-grade3-mathematics-') ? 25
+    : file.startsWith('rrb-technician-grade3-general-intelligence-reasoning-') ? 25
+    : file.startsWith('rrb-technician-grade3-general-science-') ? 40
+    : file.startsWith('rrb-technician-grade3-general-awareness-') ? 10 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

@@ -2,6 +2,50 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — RRB Technician (Batch 26, live session)
+
+Added RRB Technician: Grade I Signal CBT (General Awareness 10 Q, General Intelligence and
+Reasoning 15 Q, Basics of Computers and Applications 20 Q, Mathematics 20 Q, Basic Science
+and Engineering 35 Q — 1 full mock, 100 Q/100 marks/90 min, single composite timer) and
+Grade III CBT (Mathematics 25 Q, General Intelligence and Reasoning 25 Q, General Science
+40 Q, General Awareness 10 Q — 1 full mock, 100 Q/100 marks/90 min, single composite timer).
+9 sectionals total across both stages, 1/3 negative marking, 200 questions overall, per the
+official CEN 02/2025 notification, which for once tabulated an exact subject-wise question
+count for both pay levels rather than leaving it to be inferred.
+
+**Simplest RRB selection process modeled so far.** Unlike ALP (CBT 1 screening + CBT 2 + Part
+B + CBAT), Technician has just one CBT per pay level: candidates equal to the number of
+notified vacancies are shortlisted directly for Document Verification from CBT marks and
+merit, with no second CBT and no skill test. This made the exam-pattern note far shorter than
+recent RRB batches, and meant every question written maps to marks that count in the final
+panel, none of it screening-only.
+
+**Two pay levels, two distinct syllabi under one CEN, modeled as two stages.** Grade I Signal
+and Grade III share the CEN number but have genuinely different subject lists: Grade I
+Signal's Mathematics syllabus is technical-college level (Quadratic Equations, Arithmetic
+Progression, Co-ordinate Geometry, Sets, Probability) versus Grade III's standard competitive-
+exam syllabus (BODMAS, LCM/HCF, Time and Work, Age Calculations), and Grade I Signal adds two
+subjects Grade III doesn't have at all (Basics of Computers and Applications, and an
+Electricity/Magnetism/Electronics-heavy Basic Science and Engineering going well past ALP's
+simpler version into Ohm's Law circuits, Faraday's Law, digital electronics, and CRO/transducer
+measurement). Modeled as two stages with named `fullMockLayouts` consts, same pattern as ALP's
+two-shape full mocks.
+
+**Lowest collision count of any RRB-family batch: 10, all fixed in one pass, zero cascade.**
+Writing fresh phrasing and numbers from the start (rather than reusing prior batches' patterns)
+kept the collision count well below ALP's 23, even with 200 new questions landing in the same
+saturated Math/Reasoning/GS/GA territory. Basics of Computers and Applications and the deeper
+Electricity/Electronics content in Basic Science and Engineering had almost no overlap with
+the existing corpus, similar to how RBI Grade B's Banking Awareness leaned into under-used
+territory in Batch 19.
+
+**HTTPS caught immediately this time.** After the ALP batch's provenance failure from a plain
+`http://` source URL, this batch's source URLs were written as `https://` from the first draft,
+and `qa:questions` reported zero provenance errors on the first run.
+
+Full corpus after this batch: 152 question-bank files, 4,305 questions, zero duplicate IDs
+or text, zero answer-balance failures (`qa:questions` clean run).
+
 ## 2026-08-07 — RRB Assistant Loco Pilot (Batch 25, live session)
 
 Added RRB ALP: CBT 1 (Mathematics 20 Q, Mental Ability 25 Q, General Science 20 Q, General

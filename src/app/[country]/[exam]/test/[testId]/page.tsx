@@ -716,6 +716,52 @@ const RRB_ALP_CBT2_FULL_MOCK_FAQS = [
   },
 ];
 
+const RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RRB Technician question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RRB Technician Grade I Signal CBT syllabus and pattern.',
+  },
+  {
+    question: 'Is there a second stage CBT for this post?',
+    answer: 'No. There is only one CBT for Technician Grade I Signal. It directly decides shortlisting for Document Verification, which is limited to the number of notified vacancies, so this single test is what determines your entire objective merit.',
+  },
+  {
+    question: 'Is there a separate timer for each section?',
+    answer: 'No. All five sections (General Awareness, General Intelligence and Reasoning, Basics of Computers and Applications, Mathematics, and Basic Science and Engineering) share a single 90-minute timer, so you can move freely between sections within the overall time limit.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.33) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
+const RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RRB Technician question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RRB Technician Grade III CBT syllabus and pattern.',
+  },
+  {
+    question: 'Is there a second stage CBT or a skill test for this post?',
+    answer: 'No. There is only one CBT for Technician Grade III, with no second-stage CBT or skill test. It directly decides shortlisting for Document Verification, which is limited to the number of notified vacancies.',
+  },
+  {
+    question: 'Is there a separate timer for each section?',
+    answer: 'No. All four sections (Mathematics, General Intelligence and Reasoning, General Science, and General Awareness) share a single 90-minute timer, so you can move freely between sections within the overall time limit.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.33) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -746,6 +792,8 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'niacl-ao/mains': NIACL_AO_MAINS_FULL_MOCK_FAQS,
   'rrb-alp/cbt-1': RRB_ALP_CBT1_FULL_MOCK_FAQS,
   'rrb-alp/cbt-2': RRB_ALP_CBT2_FULL_MOCK_FAQS,
+  'rrb-technician/grade-1-signal': RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS,
+  'rrb-technician/grade-3': RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
