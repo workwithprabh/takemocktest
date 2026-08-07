@@ -2,6 +2,51 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — SSC Stenographer Grade C & D (Batch 30, live session)
+
+Added SSC Stenographer Grade C & D: Computer Based Examination (General
+Intelligence and Reasoning 50Q, General Awareness 50Q, English Language and
+Comprehension 100Q, 1 full mock + 3 sectionals, 200Q/200 marks/120 min,
+single composite timer, 0.25 negative marking), per the official
+Stenographer Grade 'C' & 'D' Examination 2025 notification PDF. This is the
+largest single-exam content batch of the project so far, 200 original
+questions in one run, split roughly 15/12/12/11 across Error Spotting/Fill
+in the Blanks/Synonym/Antonym for the first half of the English section and
+8/8/8/6/6/6/5/3 across One-word Substitution/Idioms/Sentence Improvement/
+Para-jumbles/Active-Passive Voice/Direct-Indirect Speech/Reading
+Comprehension/Vocabulary in Context for the second half, the richest
+English Language topic spread built for this site yet.
+
+The Stenography Skill Test (10-minute dictation and transcription, 100 WPM
+for Grade C, 80 WPM for Grade D) is excluded since it is not a
+multiple-choice format, following the same non-MCQ-stage exclusion pattern
+as IBPS PO/NIACL AO's Descriptive Papers; the CBT's normalized score alone
+decides the Skill Test shortlist and final merit, so nothing is lost by
+excluding it from the mock.
+
+Twenty-five cross-corpus collisions across the reasoning and general
+awareness banks, resolved in two rounds after the first fix pass
+introduced three cascade collisions, the same pattern documented in
+earlier batches. Also caught a self-inflicted within-file duplicate: two
+pairs of General Intelligence questions reused the identical generic
+stems "Select the odd one out from the following:" and "Select the odd
+one out from the following units:", the same SSC CPO Spelling-Correction
+class of bug now seen a third time this project; each was given a
+distinct qualifying phrase. The English Language bank, being entirely new
+territory (grammar/vocabulary rather than reasoning or GK), had zero
+collisions on the first pass.
+
+All three new banks needed full answer-position rebalancing: General
+Intelligence and Reasoning from 20/5/15/10 to 13/12/12/13, General
+Awareness from 33/12/4/1 to 12/13/12/13, and English Language and
+Comprehension from 31/59/10/0 to a perfect 25/25/25/25, the largest single
+rebalancing pass of the project (40 option-array moves in the English
+file alone), done as direct option-array edits.
+
+Full corpus after this batch: 163 question-bank files, 4,755 questions,
+zero duplicate IDs or text, zero answer-balance failures (`qa:questions`
+clean run).
+
 ## 2026-08-07 — SSC Junior Engineer (Batch 29, live session)
 
 Added SSC Junior Engineer: Paper I (General Intelligence and Reasoning 50Q,

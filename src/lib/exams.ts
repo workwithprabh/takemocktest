@@ -27,7 +27,8 @@ export type ExamSlug =
   | 'rrb-technician'
   | 'rrb-paramedical'
   | 'rpf-si'
-  | 'ssc-je';
+  | 'ssc-je'
+  | 'ssc-steno';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -107,6 +108,8 @@ const RPF_SI_2024_NOTICE =
   'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Sub-Inspector-01-2024_English.pdf';
 const SSC_JE_2025_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2025.pdf';
+const SSC_STENO_2025_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2025.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -2567,6 +2570,81 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             kind: 'sectional',
             status: 'checked',
             section: 'General Awareness',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '7 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'ssc-steno': {
+    slug: 'ssc-steno',
+    name: "SSC Stenographer Grade C & D",
+    fullName: "Staff Selection Commission: Stenographer Grade 'C' and 'D'",
+    category: 'SSC',
+    stages: [
+      {
+        id: 'cbt',
+        name: 'Computer Based Examination',
+        pattern: {
+          status: 'official',
+          cycle: "Stenographer Grade 'C' & 'D' Examination 2025",
+          sections: ['General Intelligence and Reasoning', 'General Awareness', 'English Language and Comprehension'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: "Candidates who qualify the Computer Based Examination are shortlisted for a Skill Test in Stenography (a dictation and transcription test: 10 minutes at 100 WPM for Grade C, 80 WPM for Grade D), which is qualifying in nature and not modeled on this site since it is not a multiple-choice format. Marks scored in this Computer Based Examination, normalized across shifts, decide the Skill Test shortlist and the final merit.",
+          sectionBreakdown: [
+            { name: 'General Intelligence and Reasoning', questions: 50, marks: 50, duration: 30 },
+            { name: 'General Awareness', questions: 50, marks: 50, duration: 30 },
+            { name: 'English Language and Comprehension', questions: 100, marks: 100, duration: 60 },
+          ],
+          timerNote: 'Single 120-minute timer for all three sections combined (no sectional lock).',
+          sourceUrl: SSC_STENO_2025_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbt-full-mock-1',
+            name: 'CBT Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 30,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-english-language-comprehension-sectional-1',
+            name: 'English Language and Comprehension Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language and Comprehension',
             duration: 60,
             marksPerCorrect: 1,
             negativeMarking: 0.25,

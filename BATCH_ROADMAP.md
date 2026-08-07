@@ -31,7 +31,7 @@ otherwise).
 rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
 ibps-rrb-officer-scale-1, sbi-clerk, rrb-je, upsc-cse, rpf-constable, ssc-cpo, ibps-so,
 rbi-grade-b, nabard-grade-a, sebi-grade-a, sidbi-grade-a-b, lic-aao, niacl-ao, rrb-alp,
-rrb-technician, rrb-paramedical, rpf-si, ssc-je (29 exams).
+rrb-technician, rrb-paramedical, rpf-si, ssc-je, ssc-steno (30 exams).
 
 ## The queue (Government Jobs cluster, in order)
 
@@ -60,7 +60,7 @@ next one in the same run.
 - [x] RRB Paramedical Categories
 - [x] RPF Sub-Inspector
 - [x] SSC Junior Engineer
-- [ ] SSC Stenographer Grade C & D
+- [x] SSC Stenographer Grade C & D
 - [ ] SSC Combined Hindi Translators
 - [ ] SSC Selection Post
 

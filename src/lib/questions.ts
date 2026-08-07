@@ -93,6 +93,9 @@ import { RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rp
 import { RPF_SI_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-si-cbt-general-awareness-1';
 import { SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-je-paper-1-general-intelligence-reasoning-1';
 import { SSC_JE_PAPER_1_GENERAL_AWARENESS_1 } from './question-banks/ssc-je-paper-1-general-awareness-1';
+import { SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-steno-cbt-general-intelligence-reasoning-1';
+import { SSC_STENO_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-steno-cbt-general-awareness-1';
+import { SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-steno-cbt-english-language-comprehension-1';
 import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-cpo-paper-1-general-intelligence-reasoning-1';
 import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-1';
 import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-1';
@@ -439,6 +442,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'ssc-je/paper-1-general-intelligence-reasoning-sectional-1': SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
   'ssc-je/paper-1-general-awareness-sectional-1': SSC_JE_PAPER_1_GENERAL_AWARENESS_1,
+  'ssc-steno/cbt-full-mock-1': [
+    ...SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+    ...SSC_STENO_CBT_GENERAL_AWARENESS_1,
+    ...SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1,
+  ],
+  'ssc-steno/cbt-general-intelligence-reasoning-sectional-1': SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'ssc-steno/cbt-general-awareness-sectional-1': SSC_STENO_CBT_GENERAL_AWARENESS_1,
+  'ssc-steno/cbt-english-language-comprehension-sectional-1': SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1,
   'ssc-cpo/paper-1-full-mock-1': [
     ...SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
@@ -778,6 +789,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('ssc-je/paper-1-full-mock')
     ? 100
+    : testId.includes('ssc-steno/cbt-full-mock')
+    ? 200
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
     : testId.includes('ibps-so/prelims-full-mock')
@@ -846,6 +859,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
               : testId.includes('general-intelligence-reasoning') ? 35 : 50
           : testId.includes('ssc-je')
             ? 50
+          : testId.includes('ssc-steno')
+            ? testId.includes('english-language-comprehension') ? 100 : 50
           : testId.includes('ssc-cpo')
             ? 50
           : testId.includes('ibps-so')
@@ -1024,6 +1039,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   'ssc-je': [
     { section: 'General Intelligence and Reasoning', count: 50 },
     { section: 'General Awareness', count: 50 },
+  ],
+  'ssc-steno': [
+    { section: 'General Intelligence and Reasoning', count: 50 },
+    { section: 'General Awareness', count: 50 },
+    { section: 'English Language and Comprehension', count: 100 },
   ],
   'ssc-cpo': [
     { section: 'General Intelligence and Reasoning', count: 50 },
@@ -1402,6 +1422,14 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Intelligence and Reasoning', question: 'Which of the following numbers is a perfect square: 48, 64, 72, or 90?', options: ['48', '64', '72', '90'], correctIndex: 1, explanation: '64 = 8², a perfect square; the other three are not.' },
     // General Awareness
     { section: 'General Awareness', question: 'What is the capital of Jharkhand?', options: ['Patna', 'Ranchi', 'Bhubaneswar', 'Raipur'], correctIndex: 1, explanation: 'Ranchi is the capital of Jharkhand.' },
+  ],
+  'ssc-steno': [
+    // General Intelligence and Reasoning
+    { section: 'General Intelligence and Reasoning', question: 'Pen : Write :: Scissors : ?', options: ['Cut', 'Sew', 'Fold', 'Tear'], correctIndex: 0, explanation: 'A pen is used to write; scissors are used to cut.' },
+    // General Awareness
+    { section: 'General Awareness', question: 'Which is the smallest state in India by area?', options: ['Goa', 'Sikkim', 'Tripura', 'Manipur'], correctIndex: 0, explanation: 'Goa is the smallest state in India by area.' },
+    // English Language and Comprehension
+    { section: 'English Language and Comprehension', question: "Choose the word most similar in meaning to 'Genuine':", options: ['Fake', 'Authentic', 'Doubtful', 'Artificial'], correctIndex: 1, explanation: '"Genuine" means truly what it is said to be, closest in meaning to "authentic".' },
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

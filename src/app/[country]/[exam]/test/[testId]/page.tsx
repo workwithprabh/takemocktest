@@ -478,6 +478,29 @@ const SSC_JE_PAPER_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_STENO_CBT_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC Stenographer question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SSC Stenographer Grade C & D Computer Based Examination syllabus and pattern.',
+  },
+  {
+    question: 'Does this mock cover the Stenography Skill Test?',
+    answer: 'No. The Skill Test is a dictation and transcription exercise, not a multiple-choice format, so it cannot be modeled as an MCQ mock. This site covers only the Computer Based Examination, which decides who is shortlisted for the Skill Test.',
+  },
+  {
+    question: 'Is there a separate timer for each section?',
+    answer: 'No. All three sections, General Intelligence and Reasoning, General Awareness, and English Language and Comprehension, share a single 120-minute timer with no sectional lock, matching the official exam.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts 0.25 marks. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official SSC CPO question paper?',
@@ -828,6 +851,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rpf-constable/cbt': RPF_CONSTABLE_CBT_FULL_MOCK_FAQS,
   'rpf-si/cbt': RPF_SI_CBT_FULL_MOCK_FAQS,
   'ssc-je/paper-1': SSC_JE_PAPER_1_FULL_MOCK_FAQS,
+  'ssc-steno/cbt': SSC_STENO_CBT_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,
