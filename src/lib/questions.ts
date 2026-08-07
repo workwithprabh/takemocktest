@@ -151,6 +151,9 @@ import { RRB_TECHNICIAN_GRADE3_MATHEMATICS_1 } from './question-banks/rrb-techni
 import { RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-technician-grade3-general-intelligence-reasoning-1';
 import { RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_1 } from './question-banks/rrb-technician-grade3-general-science-1';
 import { RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1 } from './question-banks/rrb-technician-grade3-general-awareness-1';
+import { RRB_PARAMEDICAL_GENERAL_AWARENESS_1 } from './question-banks/rrb-paramedical-general-awareness-1';
+import { RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1 } from './question-banks/rrb-paramedical-general-arithmetic-reasoning-1';
+import { RRB_PARAMEDICAL_GENERAL_SCIENCE_1 } from './question-banks/rrb-paramedical-general-science-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -571,6 +574,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-technician/grade-3-general-intelligence-reasoning-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1,
   'rrb-technician/grade-3-general-science-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_1,
   'rrb-technician/grade-3-general-awareness-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1,
+  'rrb-paramedical/cbt-general-awareness-sectional-1': RRB_PARAMEDICAL_GENERAL_AWARENESS_1,
+  'rrb-paramedical/cbt-general-arithmetic-reasoning-sectional-1': RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1,
+  'rrb-paramedical/cbt-general-science-sectional-1': RRB_PARAMEDICAL_GENERAL_SCIENCE_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -864,6 +870,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('mathematics') ? 25
               : testId.includes('general-intelligence-reasoning') ? 25
                 : testId.includes('general-science') ? 40 : 10
+          : testId.includes('rrb-paramedical')
+            ? 10
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -1405,5 +1413,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Mathematics', question: 'What is 45% of 280?', options: ['116', '120', '126', '130'], correctIndex: 2, explanation: '45% of 280 = (45/100) × 280 = 126.' },
     // General Science
     { section: 'General Science', question: 'Which gauge is primarily used to measure very small diameters and thicknesses with high precision?', options: ['Screw gauge', 'Pressure gauge', 'Fuel gauge', 'Rain gauge'], correctIndex: 0, explanation: 'A screw gauge is a precision instrument used to measure very small diameters and thicknesses.' },
+  ],
+  'rrb-paramedical': [
+    // General Awareness
+    { section: 'General Awareness', question: 'Which body of the United Nations is primarily responsible for global public health matters?', options: ['UNESCO', 'World Health Organization', 'UNICEF', 'UNHCR'], correctIndex: 1, explanation: 'The World Health Organization (WHO) is the UN agency responsible for international public health.' },
+    // General Science
+    { section: 'General Science', question: 'Which of the following organs is primarily responsible for filtering waste from the blood in the human body?', options: ['Liver', 'Kidney', 'Lungs', 'Spleen'], correctIndex: 1, explanation: 'The kidneys filter waste products from the blood and excrete them as urine.' },
   ],
 };

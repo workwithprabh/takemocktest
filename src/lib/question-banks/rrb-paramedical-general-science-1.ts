@@ -1,0 +1,21 @@
+import type { Question } from '../questions';
+
+const source = {
+  kind: 'original' as const,
+  reference: 'RRB Paramedical Categories CEN 03/2025 official notification, CBT syllabus: General Science (up to 10th standard CBSE)',
+  url: 'https://rrbsecunderabad.gov.in/wp-content/uploads/2025/08/Final-CEN-03_2025-English.pdf',
+  checkedOn: '7 August 2026',
+};
+
+export const RRB_PARAMEDICAL_GENERAL_SCIENCE_1: Question[] = [
+  { id: 'rrb-pmed-gs-001', section: 'General Science', topic: 'Physics', difficulty: 'easy', question: 'Which of the following is the SI unit of electric resistance?', options: ['Farad', 'Henry', 'Ohm', 'Tesla'], correctIndex: 2, explanation: 'The ohm (Ω) is the SI unit of electric resistance.', source },
+  { id: 'rrb-pmed-gs-002', section: 'General Science', topic: 'Physics', difficulty: 'medium', question: 'Which type of mirror is used by dentists to get a magnified image of teeth?', options: ['Concave mirror', 'Convex mirror', 'Plane mirror', 'Parabolic mirror'], correctIndex: 0, explanation: 'A concave mirror produces a magnified image when the object is placed close to it, which is why dentists use concave mirrors to examine teeth.', source },
+  { id: 'rrb-pmed-gs-003', section: 'General Science', topic: 'Chemistry', difficulty: 'easy', question: 'What is the chemical symbol for calcium?', options: ['Ca', 'Cl', 'Cu', 'Co'], correctIndex: 0, explanation: 'The chemical symbol for calcium is Ca.', source },
+  { id: 'rrb-pmed-gs-004', section: 'General Science', topic: 'Chemistry', difficulty: 'medium', question: 'Which gas is commonly used in hospitals for anaesthesia during minor procedures?', options: ['Nitrous oxide', 'Oxygen', 'Carbon dioxide', 'Nitrogen'], correctIndex: 0, explanation: 'Nitrous oxide is commonly used as an anaesthetic and analgesic gas during minor medical and dental procedures.', source },
+  { id: 'rrb-pmed-gs-005', section: 'General Science', topic: 'Life Sciences', difficulty: 'easy', question: 'Which blood vessels carry oxygenated blood away from the heart to the rest of the body?', options: ['Veins', 'Capillaries', 'Arteries', 'Venules'], correctIndex: 2, explanation: 'Arteries carry oxygenated blood away from the heart to the rest of the body, with the pulmonary artery being the main exception.', source },
+  { id: 'rrb-pmed-gs-006', section: 'General Science', topic: 'Life Sciences', difficulty: 'medium', question: 'Which organ produces insulin to regulate blood sugar levels in the human body?', options: ['Liver', 'Kidney', 'Spleen', 'Pancreas'], correctIndex: 3, explanation: 'The pancreas produces insulin, a hormone that regulates blood sugar levels.', source },
+  { id: 'rrb-pmed-gs-007', section: 'General Science', topic: 'Life Sciences', difficulty: 'medium', question: 'Which vitamin is essential for proper blood clotting?', options: ['Vitamin A', 'Vitamin C', 'Vitamin D', 'Vitamin K'], correctIndex: 3, explanation: 'Vitamin K is essential for the synthesis of proteins required for normal blood clotting.', source },
+  { id: 'rrb-pmed-gs-008', section: 'General Science', topic: 'Physics', difficulty: 'medium', question: 'What is the normal body temperature of a healthy human, in degrees Celsius?', options: ['35°C', '37°C', '39°C', '41°C'], correctIndex: 1, explanation: 'The normal average body temperature of a healthy human is approximately 37°C (98.6°F).', source },
+  { id: 'rrb-pmed-gs-009', section: 'General Science', topic: 'Chemistry', difficulty: 'medium', question: 'What is the pH value of human blood under normal healthy conditions?', options: ['Around 5.5 (acidic)', 'Around 7.0 (neutral)', 'Around 7.4 (slightly alkaline)', 'Around 9.0 (strongly alkaline)'], correctIndex: 2, explanation: 'Human blood has a normal pH of approximately 7.4, which is slightly alkaline.', source },
+  { id: 'rrb-pmed-gs-010', section: 'General Science', topic: 'Life Sciences', difficulty: 'medium', question: 'Which part of the human brain is primarily responsible for coordinating balance and muscle movement?', options: ['Cerebrum', 'Cerebellum', 'Medulla oblongata', 'Hypothalamus'], correctIndex: 1, explanation: 'The cerebellum is primarily responsible for coordinating balance, posture, and voluntary muscle movement.', source },
+];

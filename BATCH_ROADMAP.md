@@ -31,7 +31,7 @@ otherwise).
 rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
 ibps-rrb-officer-scale-1, sbi-clerk, rrb-je, upsc-cse, rpf-constable, ssc-cpo, ibps-so,
 rbi-grade-b, nabard-grade-a, sebi-grade-a, sidbi-grade-a-b, lic-aao, niacl-ao, rrb-alp,
-rrb-technician (26 exams).
+rrb-technician, rrb-paramedical (27 exams).
 
 ## The queue (Government Jobs cluster, in order)
 
@@ -57,7 +57,7 @@ next one in the same run.
 - [x] NIACL Administrative Officer
 - [x] RRB Assistant Loco Pilot
 - [x] RRB Technician
-- [ ] RRB Paramedical Categories
+- [x] RRB Paramedical Categories
 - [ ] RPF Sub-Inspector
 - [ ] SSC Junior Engineer
 - [ ] SSC Stenographer Grade C & D

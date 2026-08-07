@@ -2,6 +2,43 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — RRB Paramedical Categories (Batch 27, live session)
+
+Added RRB Paramedical Categories: a single CBT stage (General Awareness 10 Q, General
+Arithmetic and General Intelligence and Reasoning combined into one 10-question section as per
+the official pattern, General Science 10 Q — 3 sectional tests, 1/3 negative marking), per the
+official CEN 03/2025 notification. Professional Ability, 70 of the 100 questions on the real
+exam, is not modeled.
+
+**First exam on this site with no full-length mock.** Professional Ability covers roughly 7 to
+9 distinct posts (Staff Nurse, Pharmacist, Laboratory Assistant, Radiographer, ECG Technician,
+and others), each with its own professional and technical syllabus. There is no common-syllabus
+content that would be accurate for every candidate under one MCQ bank, so building a "full mock"
+would mean either fabricating generic content and mislabeling it as Professional Ability, or
+picking one post's syllabus and silently misrepresenting the other 8. Both were rejected. I
+raised this with the user via `AskUserQuestion` before writing any content; the user's response
+("you tell me how it should be handeled") delegated the decision back to me rather than picking
+one of the three offered options, so I went with my own recommendation: build only the three
+sections common to every post, as sectional-only tests, with no full mock and a clear stage-level
+`note` explaining the exclusion and the 30-of-100 question coverage. Confirmed via code reading
+(and a mock-test hub page render) that the site's dynamic filter-tab logic in `TestListClient.tsx`
+degrades gracefully with zero full-length tests: the "Full mocks" tab and the filter bar itself
+simply don't render. FAQ schema is likewise not added for this exam, since the `FULL_MOCK_FAQS`
+mechanism on the test instructions page is gated to `kind: 'full-length'` tests specifically,
+which this exam correctly has none of.
+
+**Collided with the site's own earlier content from this same session.** Of 5 initial
+collisions, one (an SI-unit-of-electric-resistance question) re-collided a second time after
+its first rewrite, because the replacement phrasing happened to match content this same session
+had already written for RRB ALP's Basic Science and Engineering bank earlier in the day. A third,
+distinct phrasing (`'Which of the following is the SI unit of electric resistance?'`) finally
+cleared the full-corpus check. Reinforces the standing lesson that a replacement chosen to dodge
+one collision is not verified safe until it's checked against the entire corpus, including
+content written in the same session. 2 of 3 new bank files needed answer-position rebalancing.
+
+Full corpus after this batch: 155 question-bank files, 4,335 questions, zero duplicate IDs or
+text, zero answer-balance failures (`qa:questions` clean run).
+
 ## 2026-08-07 — RRB Technician (Batch 26, live session)
 
 Added RRB Technician: Grade I Signal CBT (General Awareness 10 Q, General Intelligence and

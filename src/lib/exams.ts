@@ -24,7 +24,8 @@ export type ExamSlug =
   | 'lic-aao'
   | 'niacl-ao'
   | 'rrb-alp'
-  | 'rrb-technician';
+  | 'rrb-technician'
+  | 'rrb-paramedical';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -112,6 +113,7 @@ const LIC_AAO_2025_NOTICE = 'https://www.licindia.in/recruitment-of-aao-generali
 const NIACL_AO_2025_NOTICE = 'https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/RECRUITMENT%20OF%20_5_50%20ADMINISTRATIVE%20OFFICERS%20(GENERALISTS%20&%20SPECIALISTS)%20(SCALE-I)%20202_5.pdf';
 const RRB_ALP_2025_NOTICE = 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_01-2025_ALP.pdf';
 const RRB_TECHNICIAN_2025_NOTICE = 'https://rrbajmer.gov.in/Upload_PDF/Detailed%20CEN%202-2025_%20Technician%20Categories-638866538197092718.pdf';
+const RRB_PARAMEDICAL_2025_NOTICE = 'https://rrbsecunderabad.gov.in/wp-content/uploads/2025/08/Final-CEN-03_2025-English.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -3829,6 +3831,72 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             kind: 'sectional',
             status: 'checked',
             section: 'General Awareness',
+            duration: 9,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'rrb-paramedical': {
+    slug: 'rrb-paramedical',
+    name: 'RRB Paramedical',
+    fullName: 'Railway Recruitment Board: Paramedical Categories',
+    category: 'Railways',
+    stages: [
+      {
+        id: 'cbt',
+        name: 'CBT',
+        pattern: {
+          status: 'official',
+          cycle: 'Recruitment of Paramedical Categories CEN 03/2025',
+          sections: ['Professional Ability', 'General Awareness', 'General Arithmetic, General Intelligence and Reasoning', 'General Science'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 90,
+          negativeMarking: 0.333,
+          note: 'Professional Ability (70 of the 100 questions) is not modeled here: RRB Paramedical covers roughly 7 to 9 distinct posts (Staff Nurse, Pharmacist, Laboratory Assistant, Radiographer, ECG Technician, and others), each with its own professional/technical syllabus, so there is no single common Professional Ability content that would be accurate for every candidate. This site only provides sectional practice for the three subjects common to every post: General Awareness, General Arithmetic and General Intelligence and Reasoning, and General Science (30 of the 100 questions). There is a single CBT for this recruitment: it directly decides shortlisting for Document Verification, limited to the number of notified vacancies. Minimum pass percentage: UR and EWS 40%, OBC 30%, SC 30%, ST 25%.',
+          sectionBreakdown: [
+            { name: 'Professional Ability', questions: 70, marks: 70, duration: 63 },
+            { name: 'General Awareness', questions: 10, marks: 10, duration: 9 },
+            { name: 'General Arithmetic, General Intelligence and Reasoning', questions: 10, marks: 10, duration: 9 },
+            { name: 'General Science', questions: 10, marks: 10, duration: 9 },
+          ],
+          timerNote: 'Single 90-minute timer for all sections combined (no sectional lock). This site provides sectional practice only for the three common subjects (30 of the 100 questions); Professional Ability is not covered.',
+          sourceUrl: RRB_PARAMEDICAL_2025_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbt-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 9,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-general-arithmetic-reasoning-sectional-1',
+            name: 'General Arithmetic, General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Arithmetic, General Intelligence and Reasoning',
+            duration: 9,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-general-science-sectional-1',
+            name: 'General Science Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Science',
             duration: 9,
             marksPerCorrect: 1,
             negativeMarking: 0.333,
