@@ -2,6 +2,39 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — RPF Sub-Inspector (Batch 28, live session)
+
+Added RPF Sub-Inspector: CBT (Arithmetic 35Q, General Intelligence and Reasoning
+35Q, General Awareness 50Q, 1 full mock + 3 sectionals, 120Q/120 marks/90 min,
+single composite timer, 1/3 negative marking), per the official CEN No. RPF
+01/2024 notification. Same section structure and CEN family as RPF Constable
+(already live), but the SI notification explicitly sets the standard at
+graduation level, so every question was written fresh at that level rather
+than reused from Constable's bank.
+
+The primary source PDF (CEN 01/2024, Sub-Inspector) confirmed the exact
+section split, 1/3 negative marking, and minimum pass percentages (UR/EWS/
+OBC-NCL 35%, SC/ST 30%), which differ from RPF Constable's own cutoffs, so
+these were written from the SI-specific document rather than assumed to
+match Constable.
+
+**Second-highest collision count this project after RPF Constable itself:**
+25 initial collisions against the saturated Arithmetic/GI&R/GA corpus,
+including several against RPF Constable's own bank (same syllabus, same
+CEN family). Took two rounds after the first fix pass introduced 6 new
+collisions, the same collision-cascade pattern documented in earlier
+batches, resolved by re-checking the full corpus after every fix pass
+rather than assuming one round was sufficient. All 3 banks also needed
+full answer-position rebalancing (arithmetic 2/9/20/4, GA 5/27/15/3,
+GI&R 6/14/11/4 before fixing), applied as direct option-array edits rather
+than a regex rebalance script, since the content includes currency symbols,
+exponents, and square-root signs that a naive comma-split regex would
+mishandle.
+
+Full corpus after this batch: 158 question-bank files, 4,455 questions,
+zero duplicate IDs or text, zero answer-balance failures (`qa:questions`
+clean run).
+
 ## 2026-08-07 — Blog Batch 3: rich content blocks (live session)
 
 Replaced the flat `{heading?, paragraph}` blog body shape with a tagged union

@@ -432,6 +432,29 @@ const RPF_CONSTABLE_CBT_FULL_MOCK_FAQS = [
   },
 ];
 
+const RPF_SI_CBT_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RPF question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RPF Sub-Inspector CBT syllabus and pattern.',
+  },
+  {
+    question: 'How is RPF SI CBT different from RPF Constable CBT?',
+    answer: 'Both use the same 120-question, 90-minute, three-section structure with 1/3 negative marking, but RPF SI questions are set at graduation level, since the post itself requires a bachelor\'s degree, while RPF Constable questions are set at a lower standard.',
+  },
+  {
+    question: 'What comes after the CBT in the selection process?',
+    answer: 'Candidates who qualify the CBT proceed to a Physical Efficiency Test (PET) and Physical Measurement Test (PMT), both qualifying only, followed by Document Verification.',
+  },
+  {
+    question: 'What is the minimum qualifying percentage in the CBT?',
+    answer: 'UR, EWS, and OBC-NCL candidates need 35%, while SC and ST candidates need 30%, as per the official CEN No. RPF 01/2024 notification.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official SSC CPO question paper?',
@@ -780,6 +803,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'upsc-cse/paper-1': UPSC_CSE_PAPER1_FULL_MOCK_FAQS,
   'upsc-cse/paper-2': UPSC_CSE_PAPER2_FULL_MOCK_FAQS,
   'rpf-constable/cbt': RPF_CONSTABLE_CBT_FULL_MOCK_FAQS,
+  'rpf-si/cbt': RPF_SI_CBT_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,

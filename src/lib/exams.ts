@@ -25,7 +25,8 @@ export type ExamSlug =
   | 'niacl-ao'
   | 'rrb-alp'
   | 'rrb-technician'
-  | 'rrb-paramedical';
+  | 'rrb-paramedical'
+  | 'rpf-si';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -101,6 +102,8 @@ const RRB_JE_2025_NOTICE = 'https://web.archive.org/web/2025/https://www.rrbcdg.
 const UPSC_CSE_2026_NOTICE = 'https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf';
 const RPF_CONSTABLE_2024_NOTICE =
   'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Constable-02-2024_English.pdf';
+const RPF_SI_2024_NOTICE =
+  'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Sub-Inspector-01-2024_English.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -3260,6 +3263,81 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             marksPerCorrect: 1,
             negativeMarking: 0.333,
             checkedOn: '5 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'rpf-si': {
+    slug: 'rpf-si',
+    name: 'RPF Sub-Inspector',
+    fullName: 'Railway Protection Force: Sub-Inspector',
+    category: 'Railways',
+    stages: [
+      {
+        id: 'cbt',
+        name: 'CBT',
+        pattern: {
+          status: 'official',
+          cycle: 'CEN No. RPF 01/2024',
+          sections: ['Arithmetic', 'General Intelligence and Reasoning', 'General Awareness'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 90,
+          negativeMarking: 0.333,
+          note: 'The CBT is a graduation-level screening stage for RPF/RPSF Sub-Inspector (Executive). Minimum pass percentage: UR, EWS and OBC-NCL 35%, SC and ST 30%. Candidates shortlisted on CBT performance proceed to a Physical Efficiency Test (PET) and Physical Measurement Test (PMT), both qualifying only, followed by Document Verification.',
+          sectionBreakdown: [
+            { name: 'Arithmetic', questions: 35, marks: 35, duration: 26 },
+            { name: 'General Intelligence and Reasoning', questions: 35, marks: 35, duration: 26 },
+            { name: 'General Awareness', questions: 50, marks: 50, duration: 38 },
+          ],
+          timerNote: 'Single 90-minute timer for all three sections combined (no sectional lock).',
+          sourceUrl: RPF_SI_2024_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbt-full-mock-1',
+            name: 'CBT Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 90,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-arithmetic-sectional-1',
+            name: 'Arithmetic Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Arithmetic',
+            duration: 26,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 26,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 38,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
           },
         ],
       },
