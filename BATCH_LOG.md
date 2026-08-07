@@ -2,6 +2,54 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — RRB Assistant Loco Pilot (Batch 25, live session)
+
+Added RRB ALP: CBT 1 (Mathematics 20 Q, Mental Ability 25 Q, General Science 20 Q, General
+Awareness 10 Q — 1 full mock, 75 Q/75 marks/60 min, single composite timer, screening only)
+and CBT 2 Part A (Mathematics 25 Q, General Intelligence and Reasoning 25 Q, Basic Science
+and Engineering 50 Q — 1 full mock, 100 Q/100 marks/90 min, single composite timer). 7
+sectionals total across both stages, 1/3 negative marking throughout, per the official CEN
+01/2025 notification.
+
+**First exam where a section is excluded for a reason other than "not multiple-choice."**
+CBT 2 Part B is a 75-question, 60-minute qualifying trade test, but its content is not a
+fixed common syllabus: each candidate answers questions from their own individual ITI trade
+or engineering discipline (Electrician, Fitter, Mechanic, and a dozen others), as assigned by
+the Directorate General of Training. Every prior non-MCQ or descriptive-paper exclusion on
+this site (IBPS PO Mains Descriptive, NIACL AO Mains Descriptive) was excluded because the
+format itself isn't MCQ; this is the first case where the content is trade-variable rather
+than a single shared syllabus, so it cannot be modeled as one general-purpose mock even
+though it IS technically multiple-choice. The subsequent Computer Based Aptitude Test (CBAT)
+was excluded for the more familiar reason: it's a psychometric battery (memory, following
+directions, perceptual speed), not a knowledge-based test.
+
+**Official notification omits per-subject question counts.** Unlike most CEN notifications,
+which tabulate exact questions-per-section, this one lists only the stage-level totals (CBT
+1: 75Q; CBT 2 Part A: 100Q) plus the syllabus topics per section, with no official breakdown
+of how many questions come from each subject. The per-subject split used here (CBT 1: Math
+20/Mental Ability 25/General Science 20/General Awareness 10; CBT 2 Part A: Math 25/GI&R
+25/Basic Science and Engineering 50) follows the pattern consistently reported across
+multiple independent secondary sources for actually-conducted CEN 01/2025 papers, cross-
+checked against each other since they didn't all agree on first pass (one source wrongly
+omitted General Awareness from CBT 1 entirely, contradicted by three others).
+
+**Highest single-batch collision count yet: 23, all fixed in one pass.** RRB ALP's
+Mathematics/Reasoning/General Science content overlaps heavily with the already-saturated
+RRB NTPC, RRB Group D, RRB JE, and RPF Constable banks. Fixed with fresh numbers/phrasing,
+verified via a from-scratch collision script; one cascade round found 2 new collisions from
+the first fix pass, resolved on the second recheck. Basic Science and Engineering is a new
+topic area for this site (Engineering Drawing, Units and Measurements, Basic Electricity,
+Levers and Simple Machines, Occupational Safety and Health) and had a much lower collision
+rate, similar to how RBI Grade B leaned into under-used Banking Awareness territory.
+
+**HTTPS enforcement caught by qa:questions, not by review.** The official source PDF is
+hosted at a plain `http://` URL; the audit script's provenance check requires `https://`.
+Confirmed the HTTPS variant of the same URL serves the identical file before switching all
+7 files' source URLs over.
+
+Full corpus after this batch: 143 question-bank files, 4,105 questions, zero duplicate IDs
+or text, zero answer-balance failures (`qa:questions` clean run).
+
 ## 2026-08-07 — NIACL AO (Batch 24, live session)
 
 Added NIACL Administrative Officer (Generalist), Scale I: Prelims (English Language 30 Q,

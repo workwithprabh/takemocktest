@@ -135,6 +135,13 @@ import { NIACL_AO_MAINS_REASONING_1 } from './question-banks/niacl-ao-mains-reas
 import { NIACL_AO_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-mains-english-language-1';
 import { NIACL_AO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/niacl-ao-mains-general-awareness-1';
 import { NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/niacl-ao-mains-quantitative-aptitude-1';
+import { RRB_ALP_CBT1_MATHEMATICS_1 } from './question-banks/rrb-alp-cbt1-mathematics-1';
+import { RRB_ALP_CBT1_MENTAL_ABILITY_1 } from './question-banks/rrb-alp-cbt1-mental-ability-1';
+import { RRB_ALP_CBT1_GENERAL_SCIENCE_1 } from './question-banks/rrb-alp-cbt1-general-science-1';
+import { RRB_ALP_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-alp-cbt1-general-awareness-1';
+import { RRB_ALP_CBT2_MATHEMATICS_1 } from './question-banks/rrb-alp-cbt2-mathematics-1';
+import { RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-alp-cbt2-general-intelligence-reasoning-1';
+import { RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_1 } from './question-banks/rrb-alp-cbt2-basic-science-engineering-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -515,6 +522,24 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'niacl-ao/mains-english-language-sectional-1': NIACL_AO_MAINS_ENGLISH_LANGUAGE_1,
   'niacl-ao/mains-general-awareness-sectional-1': NIACL_AO_MAINS_GENERAL_AWARENESS_1,
   'niacl-ao/mains-quantitative-aptitude-sectional-1': NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_1,
+  'rrb-alp/cbt-1-full-mock-1': [
+    ...RRB_ALP_CBT1_MATHEMATICS_1,
+    ...RRB_ALP_CBT1_MENTAL_ABILITY_1,
+    ...RRB_ALP_CBT1_GENERAL_SCIENCE_1,
+    ...RRB_ALP_CBT1_GENERAL_AWARENESS_1,
+  ],
+  'rrb-alp/cbt-1-mathematics-sectional-1': RRB_ALP_CBT1_MATHEMATICS_1,
+  'rrb-alp/cbt-1-mental-ability-sectional-1': RRB_ALP_CBT1_MENTAL_ABILITY_1,
+  'rrb-alp/cbt-1-general-science-sectional-1': RRB_ALP_CBT1_GENERAL_SCIENCE_1,
+  'rrb-alp/cbt-1-general-awareness-sectional-1': RRB_ALP_CBT1_GENERAL_AWARENESS_1,
+  'rrb-alp/cbt-2-full-mock-1': [
+    ...RRB_ALP_CBT2_MATHEMATICS_1,
+    ...RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1,
+    ...RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_1,
+  ],
+  'rrb-alp/cbt-2-mathematics-sectional-1': RRB_ALP_CBT2_MATHEMATICS_1,
+  'rrb-alp/cbt-2-general-intelligence-reasoning-sectional-1': RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-alp/cbt-2-basic-science-engineering-sectional-1': RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -709,6 +734,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('niacl-ao/mains-full-mock')
     ? 200
+    : testId.includes('rrb-alp/cbt-1-full-mock')
+    ? 75
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -790,6 +817,13 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('english-language') ? 30 : 35
           : testId.includes('niacl-ao/mains')
             ? 50
+          : testId.includes('rrb-alp/cbt-1')
+            ? testId.includes('mathematics') ? 20
+              : testId.includes('mental-ability') ? 25
+                : testId.includes('general-science') ? 20 : 10
+          : testId.includes('rrb-alp/cbt-2')
+            ? testId.includes('mathematics') ? 25
+              : testId.includes('general-intelligence-reasoning') ? 25 : 50
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -1004,6 +1038,17 @@ const niaclAoMainsLayout = [
   { section: 'General Awareness', count: 50 },
   { section: 'Quantitative Aptitude', count: 50 },
 ];
+const rrbAlpCbt1Layout = [
+  { section: 'Mathematics', count: 20 },
+  { section: 'Mental Ability', count: 25 },
+  { section: 'General Science', count: 20 },
+  { section: 'General Awareness', count: 10 },
+];
+const rrbAlpCbt2Layout = [
+  { section: 'Mathematics', count: 25 },
+  { section: 'General Intelligence and Reasoning', count: 25 },
+  { section: 'Basic Science and Engineering', count: 50 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1021,7 +1066,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                 ? niaclAoPrelimsLayout
                 : testId.includes('niacl-ao/mains-full-mock')
                   ? niaclAoMainsLayout
-                  : fullMockLayouts[testId.split('/')[0]];
+                  : testId.includes('rrb-alp/cbt-1-full-mock')
+                    ? rrbAlpCbt1Layout
+                    : testId.includes('rrb-alp/cbt-2-full-mock')
+                      ? rrbAlpCbt2Layout
+                      : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1287,5 +1336,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Reasoning Ability', question: 'In a certain code, if TRADE is written as USBEF, how would CLAIM be written?', options: ['DMBJN', 'DMBJM', 'CMBJN', 'DMAJN'], correctIndex: 0, explanation: 'The code shifts each letter forward by one: C→D, L→M, A→B, I→J, M→N, giving DMBJN.' },
     // Quantitative Aptitude
     { section: 'Quantitative Aptitude', question: 'A sum of ₹5,000 amounts to ₹5,750 in 3 years at simple interest. Find the rate of interest per annum.', options: ['4%', '5%', '6%', '7%'], correctIndex: 1, explanation: 'Simple interest = 5750 − 5000 = ₹750. Rate = (750 × 100) / (5000 × 3) = 5%.' },
+  ],
+  'rrb-alp': [
+    // Mathematics
+    { section: 'Mathematics', question: 'What is 60% of 450?', options: ['260', '270', '280', '290'], correctIndex: 1, explanation: '60% of 450 = (60/100) × 450 = 270.' },
+    // General Science
+    { section: 'General Science', question: 'Which gas do humans primarily exhale during respiration?', options: ['Oxygen', 'Carbon Dioxide', 'Nitrogen', 'Hydrogen'], correctIndex: 1, explanation: 'Humans inhale oxygen and exhale carbon dioxide as a waste product of cellular respiration.' },
   ],
 };

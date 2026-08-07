@@ -666,6 +666,56 @@ const NIACL_AO_MAINS_FULL_MOCK_FAQS = [
   },
 ];
 
+const RRB_ALP_CBT1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RRB ALP question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RRB Assistant Loco Pilot First Stage CBT syllabus and pattern.',
+  },
+  {
+    question: 'Do my CBT 1 marks count toward final selection?',
+    answer: 'No. CBT 1 is a screening exam only, and its marks are not counted while preparing the final panel. It is used solely to shortlist roughly 15 times the notified vacancies per RRB into CBT 2, based on normalized CBT 1 merit.',
+  },
+  {
+    question: 'Is there a separate timer for each section?',
+    answer: 'No. CBT 1 uses a single 60-minute timer for all four sections (Mathematics, Mental Ability, General Science, and General Awareness) combined, so you can move freely between sections within the overall time limit.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.33) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
+const RRB_ALP_CBT2_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official RRB ALP question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official RRB Assistant Loco Pilot Second Stage CBT Part A syllabus and pattern.',
+  },
+  {
+    question: 'Does this mock include Part B or the CBAT?',
+    answer: 'No. Part B is a separate 75-question, 60-minute qualifying test drawn from trade-specific syllabi that differ by each candidate\'s own ITI trade or engineering discipline, so it cannot be modeled as a single common-syllabus mock. The Computer Based Aptitude Test (CBAT) that follows is a psychometric battery, not a knowledge-based test, so it is also excluded here.',
+  },
+  {
+    question: 'Is there a separate timer for each section?',
+    answer: 'No. This mock covers Part A only, which uses a single 90-minute timer for all three sections (Mathematics, General Intelligence and Reasoning, and Basic Science and Engineering) combined.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.33) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'How is final selection decided?',
+    answer: 'Final merit is 70% weightage on Part A of CBT 2 plus 30% weightage on the CBAT score, among candidates who qualify Part B and the CBAT. CBT 1 marks play no role in the final panel.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -694,6 +744,8 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'lic-aao/prelims': LIC_AAO_PRELIMS_FULL_MOCK_FAQS,
   'niacl-ao/prelims': NIACL_AO_PRELIMS_FULL_MOCK_FAQS,
   'niacl-ao/mains': NIACL_AO_MAINS_FULL_MOCK_FAQS,
+  'rrb-alp/cbt-1': RRB_ALP_CBT1_FULL_MOCK_FAQS,
+  'rrb-alp/cbt-2': RRB_ALP_CBT2_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

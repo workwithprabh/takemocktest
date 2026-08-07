@@ -22,7 +22,8 @@ export type ExamSlug =
   | 'sebi-grade-a'
   | 'sidbi-grade-a-b'
   | 'lic-aao'
-  | 'niacl-ao';
+  | 'niacl-ao'
+  | 'rrb-alp';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -108,6 +109,7 @@ const SEBI_GRADE_A_2025_NOTICE = 'https://www.sebi.gov.in/sebi_data/careerfiles/
 const SIDBI_GRADE_A_B_2025_NOTICE = 'https://www.sidbi.in/head/uploads/career_document/SIDBI_DETAILED_WEB_ADVT_2025.pdf';
 const LIC_AAO_2025_NOTICE = 'https://www.licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025';
 const NIACL_AO_2025_NOTICE = 'https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/RECRUITMENT%20OF%20_5_50%20ADMINISTRATIVE%20OFFICERS%20(GENERALISTS%20&%20SPECIALISTS)%20(SCALE-I)%20202_5.pdf';
+const RRB_ALP_2025_NOTICE = 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_01-2025_ALP.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -3497,6 +3499,160 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             marksPerCorrect: 1,
             negativeMarking: 0.25,
             checkedOn: '6 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'rrb-alp': {
+    slug: 'rrb-alp',
+    name: 'RRB ALP',
+    fullName: 'Railway Recruitment Board: Assistant Loco Pilot',
+    category: 'Railways',
+    stages: [
+      {
+        id: 'cbt-1',
+        name: 'CBT 1',
+        pattern: {
+          status: 'official',
+          cycle: 'Recruitment of Assistant Loco Pilots CEN 01/2025',
+          sections: ['Mathematics', 'Mental Ability', 'General Science', 'General Awareness'],
+          totalQuestions: 75,
+          totalMarks: 75,
+          duration: 60,
+          negativeMarking: 0.333,
+          note: 'CBT 1 is a screening exam only: marks are not counted while preparing the final panel. Minimum pass percentage: UR and EWS 40%, OBC (NCL) and SC 30%, ST 25%. Roughly 15 times the notified vacancies per RRB are shortlisted into CBT 2 based on normalized CBT 1 merit.',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 20, marks: 20, duration: 16 },
+            { name: 'Mental Ability', questions: 25, marks: 25, duration: 20 },
+            { name: 'General Science', questions: 20, marks: 20, duration: 16 },
+            { name: 'General Awareness', questions: 10, marks: 10, duration: 8 },
+          ],
+          timerNote: 'Single 60-minute timer for all four sections combined (no sectional lock).',
+          sourceUrl: RRB_ALP_2025_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbt-1-full-mock-1',
+            name: 'CBT 1 Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-1-mathematics-sectional-1',
+            name: 'Mathematics Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Mathematics',
+            duration: 16,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-1-mental-ability-sectional-1',
+            name: 'Mental Ability Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Mental Ability',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-1-general-science-sectional-1',
+            name: 'General Science Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Science',
+            duration: 16,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-1-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 8,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+        ],
+      },
+      {
+        id: 'cbt-2',
+        name: 'CBT 2',
+        pattern: {
+          status: 'official',
+          cycle: 'Recruitment of Assistant Loco Pilots CEN 01/2025',
+          sections: ['Mathematics', 'General Intelligence and Reasoning', 'Basic Science and Engineering'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 90,
+          negativeMarking: 0.333,
+          note: "This mock covers Part A only (100 questions, 90 minutes). Part B is a separate 75-question, 60-minute qualifying test (minimum 35% to pass) drawn from trade-specific syllabi set by the Directorate General of Training, and the questions a candidate receives depend on their own ITI trade or engineering discipline, so it cannot be modeled as a single common-syllabus mock. Candidates who qualify Part B then take the Computer Based Aptitude Test (CBAT), a psychometric battery (memory, following directions, perceptual speed, and similar tests) with no negative marking, which is also excluded here since it is not a knowledge-based test. Final merit is 70% weightage on Part A of CBT 2 plus 30% weightage on the CBAT score, among candidates who qualify Part B and CBAT.",
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 25, marks: 25, duration: 22 },
+            { name: 'General Intelligence and Reasoning', questions: 25, marks: 25, duration: 23 },
+            { name: 'Basic Science and Engineering', questions: 50, marks: 50, duration: 45 },
+          ],
+          timerNote: 'Single 90-minute timer for all three Part A sections combined (no sectional lock). Part B and the CBAT are separate, later stages not covered by this mock.',
+          sourceUrl: RRB_ALP_2025_NOTICE,
+          checkedOn: '7 August 2026',
+        },
+        tests: [
+          {
+            id: 'cbt-2-full-mock-1',
+            name: 'CBT 2 Part A Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 90,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-2-mathematics-sectional-1',
+            name: 'Mathematics Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Mathematics',
+            duration: 22,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-2-general-intelligence-reasoning-sectional-1',
+            name: 'General Intelligence and Reasoning Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence and Reasoning',
+            duration: 23,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
+          },
+          {
+            id: 'cbt-2-basic-science-engineering-sectional-1',
+            name: 'Basic Science and Engineering Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Basic Science and Engineering',
+            duration: 45,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            checkedOn: '7 August 2026',
           },
         ],
       },

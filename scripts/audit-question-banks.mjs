@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -104,7 +104,14 @@ for (const { file, questions } of banks) {
     : file.startsWith('lic-aao-prelims-reasoning-ability-') ? 35
     : file.startsWith('niacl-ao-prelims-english-language-') ? 30
     : file.startsWith('niacl-ao-prelims-') ? 35
-    : file.startsWith('niacl-ao-mains-') ? 50 : 25;
+    : file.startsWith('niacl-ao-mains-') ? 50
+    : file.startsWith('rrb-alp-cbt1-mathematics-') ? 20
+    : file.startsWith('rrb-alp-cbt1-mental-ability-') ? 25
+    : file.startsWith('rrb-alp-cbt1-general-science-') ? 20
+    : file.startsWith('rrb-alp-cbt1-general-awareness-') ? 10
+    : file.startsWith('rrb-alp-cbt2-mathematics-') ? 25
+    : file.startsWith('rrb-alp-cbt2-general-intelligence-reasoning-') ? 25
+    : file.startsWith('rrb-alp-cbt2-basic-science-engineering-') ? 50 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }
