@@ -2,6 +2,47 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-07 — Blog Batch 3: rich content blocks (live session)
+
+Replaced the flat `{heading?, paragraph}` blog body shape with a tagged union
+(`BlogBlock` in `src/lib/blog.ts`): `paragraph`, `takeaways`, `list`,
+`callout`, `table`, and `diagram`. Rewrote all 11 existing posts to use it,
+preserving every original fact, internal link, and FAQ verbatim, restructured
+rather than rewritten.
+
+User feedback that prompted this: posts read as walls of paragraphs, and
+wanted "related photos" to make them more visually interesting. No stock
+photography went in. Two reasons: it would clash with the monochrome ink
+design system, and generic decorative stock photos of "students studying" are
+exactly the kind of empty content Google's E-E-A-T guidance treats as a mild
+negative signal now. Instead, built `src/components/blog/BlogDiagrams.tsx`,
+7 original inline SVG diagrams in the site's own ink-50..900 palette (weekly
+timetable grid, negative-marking number line, exam time-budget timeline,
+section-accuracy bar chart, sectional-lock vs composite-timer comparison,
+qualifying/merit funnel, banking-tier ladder) used across 7 of the 11 posts.
+Each diagram visualizes the actual concept the post explains, not decoration.
+correct/incorrect colors, reserved for the results screen, are never used in
+these. The other 4 posts (the head-to-head comparison and guide posts) use a
+`table` block instead, since tabular content extracts better for AEO than an
+illustration would.
+
+Every callout block is an exact excerpt from the same post's own paragraph
+text, not new invented copy, standard pull-quote practice. Every post now
+opens with a `takeaways` box (except the listicle post, which uses an
+ordered `list` instead) so a skimmer gets the answer before the detail.
+
+Also added a small monochrome category icon (4 icons, one per blog category)
+to the blog listing cards, so the index page isn't pure text either.
+
+Verification: `tsc --noEmit`, `npm run lint`, `npm run build` (full static
+export, 823 pages) all clean. Dash-scanned every new/changed file (zero
+em/en dashes). Browser-verified 3 posts covering all 6 new block types
+(takeaways, list, diagram, callout, table) plus the listing page; confirmed
+the diagram SVGs scale correctly on a 375px mobile viewport with no
+horizontal page overflow, and the table wrapper's `overflow-x-auto` doesn't
+force the page to scroll. No new console errors beyond the pre-existing
+favicon-class 404s.
+
 ## 2026-08-07 — RRB Paramedical Categories (Batch 27, live session)
 
 Added RRB Paramedical Categories: a single CBT stage (General Awareness 10 Q, General

@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { BLOG_POSTS, getBlogPost, getRelatedPosts } from '@/lib/blog';
 import { articleSchema, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
-import { BlogRichText } from '@/components/BlogRichText';
+import { BlogBody } from '@/components/blog/BlogBody';
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
@@ -56,16 +56,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
         {post.authorName} · {new Date(post.publishedAt).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })} · {post.readTimeMin} min read
       </div>
 
-      <div className="space-y-5">
-        {post.body.map((block, i) => (
-          <div key={i}>
-            {block.heading && <h2 className="font-sans font-semibold text-lg mb-2 text-ink-900">{block.heading}</h2>}
-            <p className="text-sm text-ink-500 leading-relaxed">
-              <BlogRichText text={block.paragraph} country={country} />
-            </p>
-          </div>
-        ))}
-      </div>
+      <BlogBody blocks={post.body} country={country} />
 
       {post.faqs && post.faqs.length > 0 && (
         <div className="mt-12 pt-8 border-t border-ink-200">
