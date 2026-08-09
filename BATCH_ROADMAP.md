@@ -69,9 +69,23 @@ UPSC Civil Services Main (descriptive/essay paper, not objective — likely skip
 it has any objective component worth mocking), State PSCs (many, lower individual traffic —
 tackle after the national-level exams above are done, same process).
 
-**After this cluster is exhausted:** move to the next category in `exam-catalog.ts` order
-(Engineering next, starting with JEE Main), using the same per-exam process below. Update
-this file with the new queue when you get there — don't leave it silently empty.
+## The queue (Engineering cluster, in order)
+
+- [x] JEE Main
+- [ ] JEE Advanced
+- [ ] BITSAT
+- [ ] VITEEE
+- [ ] SRMJEEE
+- [ ] Manipal Entrance Test
+- [ ] AEEE
+- [ ] KIITEE
+- [ ] COMEDK UGET
+- [ ] IIIT Hyderabad UGEE
+- [ ] JEE Main Paper 2: B.Arch and B.Planning
+- [ ] NATA
+
+After the national and institute entrances, continue with the state engineering entrances
+in `exam-catalog.ts` order. Keep the same one-exam-per-run process below.
 
 ## Baseline package (what "one exam" means)
 

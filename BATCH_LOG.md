@@ -2,6 +2,31 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-09 - JEE Main Paper 1 (Batch 33, live session)
+
+Added JEE Main 2026 Paper 1 for B.E. and B.Tech. admission with 25 Mathematics,
+25 Physics, and 25 Chemistry questions. Each subject bank contains 20
+multiple-choice questions and 5 numerical-value questions, matching the official
+75-question, 300-mark, 180-minute pattern. The package includes one full mock,
+three subject tests, and two mixed quick tests. Both question formats use +4 for a
+correct answer and -1 for an incorrect answer.
+
+Extended the shared attempt engine with integer-entry questions because converting
+JEE Section B into four-option questions would not reproduce the official response
+method. Numerical answers now persist with the attempt, score correctly after a
+refresh, appear in the result review, and are included in pre-filled issue reports.
+All older OMR-style tests continue to use the existing path.
+
+The first corpus audit caught one pair of algebraically different Physics distractors
+that became identical under the audit's case-insensitive comparison. One distractor
+was replaced before the clean run. All new MCQ banks have balanced answer positions
+of 5/5/5/5 and include hard-tagged material. The 15 numerical keys were checked
+separately with integer calculations.
+
+Full corpus after this batch: 171 question-bank files, 5,330 questions, zero
+duplicate IDs or text. Question QA, lint, asset QA, and the 983-page production
+build pass.
+
 ## 2026-08-09 - SSC Selection Post (Batch 32, live session)
 
 Added the three separate Phase XIV/2026 Selection Posts CBEs: Matriculation,

@@ -53,6 +53,13 @@ function performanceCue(correct: number, attempted: number, total: number) {
   return { label: 'Developing', className: 'bg-ink-100 text-ink-700' };
 }
 
+function isCorrectQuestion(question: QuestionResult) {
+  if (question.answerType === 'numerical') {
+    return question.selectedIndex !== null && Number(question.selectedIndex) === Number(question.correctValue);
+  }
+  return question.selectedIndex === question.correctIndex;
+}
+
 function QuestionIssueActions({
   attempt,
   question,
@@ -64,11 +71,14 @@ function QuestionIssueActions({
 }) {
   const [copied, setCopied] = useState(false);
   const questionId = question.id ?? `${attempt.testId}-question-${index + 1}`;
-  const selectedAnswer =
-    question.selectedIndex === null
-      ? 'Unattempted'
-      : `${String.fromCharCode(65 + question.selectedIndex)}. ${question.options[question.selectedIndex]}`;
-  const correctAnswer = `${String.fromCharCode(65 + question.correctIndex)}. ${question.options[question.correctIndex]}`;
+  const selectedAnswer = question.selectedIndex === null
+    ? 'Unattempted'
+    : question.answerType === 'numerical'
+      ? String(question.selectedIndex)
+      : `${String.fromCharCode(65 + Number(question.selectedIndex))}. ${question.options[Number(question.selectedIndex)]}`;
+  const correctAnswer = question.answerType === 'numerical'
+    ? String(question.correctValue)
+    : `${String.fromCharCode(65 + question.correctIndex)}. ${question.options[question.correctIndex]}`;
   const details = [
     'TakeMockTest question issue',
     `Question ID: ${questionId}`,
@@ -120,7 +130,7 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
   const sections = Array.from(new Set(attempt.questions.map((q) => q.section)));
   const sectionStats = sections.map((section) => {
     const qs = attempt.questions.filter((q) => q.section === section);
-    const correct = qs.filter((q) => q.selectedIndex === q.correctIndex).length;
+    const correct = qs.filter(isCorrectQuestion).length;
     const hasMarkData = qs.every((q) => typeof q.marks === 'number' && typeof q.score === 'number');
     const score = hasMarkData ? qs.reduce((total, q) => total + q.score!, 0) : 0;
     const maxScore = hasMarkData ? qs.reduce((total, q) => total + q.marks!, 0) : 0;
@@ -142,7 +152,7 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
       stat.timeSpentSec += question.timeSpentSec ?? 0;
       if (question.selectedIndex !== null) {
         stat.attempted += 1;
-        if (question.selectedIndex === question.correctIndex) stat.correct += 1;
+        if (isCorrectQuestion(question)) stat.correct += 1;
       }
       stats.set(key, stat);
       return stats;
@@ -264,7 +274,7 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
       <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Answer review</h2>
       <div className="space-y-3">
         {attempt.questions.map((q, i) => {
-          const isCorrect = q.selectedIndex === q.correctIndex;
+          const isCorrect = isCorrectQuestion(q);
           const isUnattempted = q.selectedIndex === null;
           return (
             <div
@@ -275,6 +285,16 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
             >
               <div className="text-xs font-semibold uppercase tracking-wide text-ink-500 mb-1">{q.section}</div>
               <div className="text-sm font-medium mb-2 text-ink-900">{i + 1}. {q.question}</div>
+              {q.answerType === 'numerical' ? (
+                <div className="grid gap-2 text-xs sm:grid-cols-2">
+                  <div className={isUnattempted ? 'bg-ink-100 px-2.5 py-2 font-semibold text-ink-700' : isCorrect ? 'bg-correct/10 px-2.5 py-2 font-semibold text-correct' : 'bg-incorrect/10 px-2.5 py-2 font-semibold text-incorrect'}>
+                    Your answer: {q.selectedIndex ?? 'Unattempted'}
+                  </div>
+                  <div className="bg-correct/10 px-2.5 py-2 font-semibold text-correct">
+                    Correct integer: {q.correctValue}
+                  </div>
+                </div>
+              ) : (
               <div className="text-xs space-y-1">
                 {q.options.map((opt, oi) => {
                   const isSelected = q.selectedIndex === oi;
@@ -296,6 +316,7 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
                   );
                 })}
               </div>
+              )}
               <div className="text-xs text-ink-500 mt-2 italic">{q.explanation}</div>
               <div className="mt-4 border-t border-ink-200 pt-3">
                 <div className="flex flex-wrap items-center gap-2 text-xs">

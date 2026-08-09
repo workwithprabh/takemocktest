@@ -5,6 +5,8 @@
 
 import type { QuestionSource } from './questions';
 
+export type AnswerValue = number | string | null;
+
 export interface QuestionResult {
   id?: string;
   section: string;
@@ -13,7 +15,9 @@ export interface QuestionResult {
   question: string;
   options: string[];
   correctIndex: number;
-  selectedIndex: number | null;
+  answerType?: 'mcq' | 'numerical';
+  correctValue?: string;
+  selectedIndex: AnswerValue;
   marks?: number;
   score?: number;
   timeSpentSec?: number;
@@ -39,7 +43,7 @@ export interface AttemptResult {
 }
 
 export interface AttemptDraft {
-  answers: (number | null)[];
+  answers: AnswerValue[];
   visited: boolean[];
   marked: boolean[];
   currentIndex: number;

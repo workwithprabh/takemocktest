@@ -30,7 +30,8 @@ export type ExamSlug =
   | 'ssc-je'
   | 'ssc-steno'
   | 'ssc-cht'
-  | 'ssc-selection-post';
+  | 'ssc-selection-post'
+  | 'jee-main';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -81,7 +82,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering';
   stages: TestStage[];
 }
 
@@ -118,6 +119,8 @@ const SSC_CHT_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cht_2026.pdf';
 const SSC_SELECTION_POST_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf';
+const JEE_MAIN_2026_BULLETIN =
+  'https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/11/202511021649722475.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4323,6 +4326,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           checkedOn: '9 August 2026',
         },
         tests: selectionPostTests('Graduation Level', 'graduation'),
+      },
+    ],
+  },
+  'jee-main': {
+    slug: 'jee-main',
+    name: 'JEE Main',
+    shortName: 'JEE Main',
+    fullName: 'Joint Entrance Examination Main: Paper 1 for B.E. and B.Tech.',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper 1 (B.E./B.Tech.)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 75,
+          totalMarks: 300,
+          duration: 180,
+          negativeMarking: 1,
+          timerNote: 'Single 180-minute timer for all three subjects; no sectional lock',
+          note: 'Each subject has 20 multiple-choice questions and 5 numerical-value questions. Section B answers use integer entry, and NTA applies +4 for a correct answer and -1 for an incorrect answer in both sections.',
+          sourceUrl: JEE_MAIN_2026_BULLETIN,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          { id: 'paper-1-full-mock-1', name: 'Paper 1 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-quick-30min', name: 'Mixed Quick Test (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-quick-60min', name: 'Mixed Quick Test (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+        ],
       },
     ],
   },

@@ -167,6 +167,9 @@ import { RRB_PARAMEDICAL_GENERAL_SCIENCE_1 } from './question-banks/rrb-paramedi
 import { SSC_SELECTION_POST_MATRICULATION_CBE_1 } from './question-banks/ssc-selection-post-matriculation-cbe-1';
 import { SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1 } from './question-banks/ssc-selection-post-higher-secondary-cbe-1';
 import { SSC_SELECTION_POST_GRADUATION_CBE_1 } from './question-banks/ssc-selection-post-graduation-cbe-1';
+import { JEE_MAIN_PAPER_1_MATHEMATICS_1 } from './question-banks/jee-main-paper-1-mathematics-1';
+import { JEE_MAIN_PAPER_1_PHYSICS_1 } from './question-banks/jee-main-paper-1-physics-1';
+import { JEE_MAIN_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-main-paper-1-chemistry-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -202,6 +205,8 @@ export interface Question {
   question: string;
   options: string[];
   correctIndex: number;
+  answerType?: 'mcq' | 'numerical';
+  correctValue?: string;
   marks?: number;
   negativeMarking?: number;
   explanation: string;
@@ -801,7 +806,21 @@ const SSC_SELECTION_POST_TESTS = {
   ...selectionPostLevelBanks('graduation', SSC_SELECTION_POST_GRADUATION_CBE_1),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS);
+const JEE_MAIN_BANKS = [JEE_MAIN_PAPER_1_MATHEMATICS_1, JEE_MAIN_PAPER_1_PHYSICS_1, JEE_MAIN_PAPER_1_CHEMISTRY_1];
+const jeeMainQuick = (mcqCount: number, numericalCount: number, offset: number) => JEE_MAIN_BANKS.flatMap((bank) => [
+  ...bank.slice(offset, offset + mcqCount),
+  ...bank.slice(20, 20 + numericalCount),
+]);
+const JEE_MAIN_TESTS: Record<string, Question[]> = {
+  'jee-main/paper-1-full-mock-1': JEE_MAIN_BANKS.flat(),
+  'jee-main/paper-1-mathematics-sectional-1': JEE_MAIN_PAPER_1_MATHEMATICS_1,
+  'jee-main/paper-1-physics-sectional-1': JEE_MAIN_PAPER_1_PHYSICS_1,
+  'jee-main/paper-1-chemistry-sectional-1': JEE_MAIN_PAPER_1_CHEMISTRY_1,
+  'jee-main/paper-1-quick-30min': jeeMainQuick(3, 1, 0),
+  'jee-main/paper-1-quick-60min': jeeMainQuick(6, 2, 6),
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, JEE_MAIN_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -840,6 +859,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('ssc-selection-post/') && testId.includes('full-mock')
     ? 100
+    : testId.includes('jee-main/paper-1-full-mock')
+    ? 75
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
     : testId.includes('ibps-so/prelims-full-mock')
@@ -914,6 +935,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 100
           : testId.includes('ssc-selection-post')
             ? 25
+          : testId.includes('jee-main')
+            ? 25
           : testId.includes('ssc-cpo')
             ? 50
           : testId.includes('ibps-so')
@@ -984,10 +1007,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
   for (const question of questions) {
     if (!question.id || ids.has(question.id)) throw new Error(`${testId} contains a missing or duplicate question ID`);
     if (text.has(question.question)) throw new Error(`${testId} contains a duplicate question`);
-    if (question.options.length !== 4) throw new Error(`${question.id} must contain four options`);
-    if (new Set(question.options).size !== 4) throw new Error(`${question.id} contains duplicate options`);
-    if (question.correctIndex < 0 || question.correctIndex >= question.options.length) {
-      throw new Error(`${question.id} has an invalid correct answer`);
+    if (question.answerType === 'numerical') {
+      if (question.options.length !== 0 || question.correctIndex !== -1 || !/^-?\d+$/.test(question.correctValue ?? '')) {
+        throw new Error(`${question.id} has an invalid numerical answer`);
+      }
+    } else {
+      if (question.options.length !== 4) throw new Error(`${question.id} must contain four options`);
+      if (new Set(question.options).size !== 4) throw new Error(`${question.id} contains duplicate options`);
+      if (question.correctIndex < 0 || question.correctIndex >= question.options.length) {
+        throw new Error(`${question.id} has an invalid correct answer`);
+      }
     }
     if (question.marks !== undefined && question.marks <= 0) {
       throw new Error(`${question.id} must have positive marks`);
@@ -1107,6 +1136,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General Awareness', count: 25 },
     { section: 'Quantitative Aptitude', count: 25 },
     { section: 'English Language', count: 25 },
+  ],
+  'jee-main': [
+    { section: 'Mathematics', count: 25 },
+    { section: 'Physics', count: 25 },
+    { section: 'Chemistry', count: 25 },
   ],
   'ssc-cpo': [
     { section: 'General Intelligence and Reasoning', count: 50 },
@@ -1503,6 +1537,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'Which institution conducts the SSC Selection Post examination?', options: ['Staff Selection Commission', 'Union Public Service Commission', 'Reserve Bank of India', 'National Testing Agency'], correctIndex: 0, explanation: 'The Staff Selection Commission conducts the Selection Posts Examination.' },
     { section: 'Quantitative Aptitude', question: 'What is 15% of 360?', options: ['45', '54', '60', '72'], correctIndex: 1, explanation: '15% of 360 = 54.' },
     { section: 'English Language', question: "Choose the antonym of 'temporary'.", options: ['Brief', 'Passing', 'Permanent', 'Short'], correctIndex: 2, explanation: 'Permanent is opposite in meaning to temporary.' },
+  ],
+  'jee-main': [
+    JEE_MAIN_PAPER_1_MATHEMATICS_1[0],
+    JEE_MAIN_PAPER_1_PHYSICS_1[0],
+    JEE_MAIN_PAPER_1_CHEMISTRY_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

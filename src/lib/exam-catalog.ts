@@ -130,7 +130,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'National & institute entrances',
         exams: [
-          exam('JEE Main', 'National'),
+          exam('JEE Main', 'National', 'jee-main'),
           exam('JEE Advanced', 'National'),
           exam('BITSAT', 'Institute'),
           exam('VITEEE', 'Institute'),

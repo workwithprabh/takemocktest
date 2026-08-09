@@ -6,6 +6,7 @@ import OMRBubble from '@/components/OMRBubble';
 import ResultDetail from '@/components/ResultDetail';
 import type { Question } from '@/lib/questions';
 import {
+  AnswerValue,
   AttemptResult,
   QuestionResult,
   clearAttemptDraft,
@@ -16,6 +17,13 @@ import {
 } from '@/lib/attempts';
 
 type PaletteStatus = 'current' | 'answered' | 'markedAnswered' | 'marked' | 'notAnswered' | 'notVisited';
+
+function isCorrectAnswer(question: Question, answer: AnswerValue) {
+  if (question.answerType === 'numerical') {
+    return typeof answer === 'string' && /^-?\d+$/.test(answer) && Number(answer) === Number(question.correctValue);
+  }
+  return answer === question.correctIndex;
+}
 
 function formatClock(sec: number) {
   const m = Math.floor(sec / 60).toString().padStart(2, '0');
@@ -91,7 +99,7 @@ export default function TestAttemptClient({
   const [phase, setPhase] = useState<'in-progress' | 'submitted'>('in-progress');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeSectionIndex, setActiveSectionIndex] = useState(0);
-  const [answers, setAnswers] = useState<(number | null)[]>(() => questions.map(() => null));
+  const [answers, setAnswers] = useState<AnswerValue[]>(() => questions.map(() => null));
   const [visited, setVisited] = useState<boolean[]>(() => questions.map((_, i) => i === 0));
   const [marked, setMarked] = useState<boolean[]>(() => questions.map(() => false));
   const [timeLeft, setTimeLeft] = useState(getSectionDuration(0) * 60);
@@ -128,7 +136,7 @@ export default function TestAttemptClient({
       maxScore += questionMarks;
       if (selected === null || selected === undefined) {
         unattempted++;
-      } else if (selected === q.correctIndex) {
+      } else if (isCorrectAnswer(q, selected)) {
         correct++;
         questionScore = questionMarks;
       } else {
@@ -144,6 +152,8 @@ export default function TestAttemptClient({
         question: q.question,
         options: q.options,
         correctIndex: q.correctIndex,
+        answerType: q.answerType,
+        correctValue: q.correctValue,
         selectedIndex: selected ?? null,
         marks: questionMarks,
         score: questionScore,
@@ -437,19 +447,46 @@ export default function TestAttemptClient({
               <div id="current-question" className="text-sm font-medium mb-4 text-ink-900">
                 {currentIndex + 1}. {q.question}
               </div>
-              <div role="radiogroup" aria-labelledby="current-question">
-                {q.options.map((opt, oi) => (
-                  <OMRBubble
-                    key={oi}
-                    letter={String.fromCharCode(65 + oi)}
-                    label={opt}
-                    selected={answers[currentIndex] === oi}
-                    onSelect={() =>
-                      setAnswers((a) => a.map((val, i) => (i === currentIndex ? oi : val)))
-                    }
+              {q.answerType === 'numerical' ? (
+                <div>
+                  <label htmlFor="numerical-answer" className="mb-2 block text-xs font-semibold text-ink-700">
+                    Enter the nearest integer
+                  </label>
+                  <input
+                    id="numerical-answer"
+                    type="text"
+                    inputMode="numeric"
+                    autoComplete="off"
+                    value={typeof answers[currentIndex] === 'string' ? answers[currentIndex] : ''}
+                    onChange={(event) => {
+                      const value = event.target.value.trim();
+                      if (!/^-?\d*$/.test(value)) return;
+                      setAnswers((current) => current.map((answer, index) =>
+                        index === currentIndex ? value || null : answer,
+                      ));
+                    }}
+                    className="min-h-12 w-full border border-ink-300 bg-white px-4 font-mono text-base text-ink-900 outline-none transition focus:border-ink-900 focus:ring-1 focus:ring-ink-900"
+                    aria-describedby="numerical-answer-note"
                   />
-                ))}
-              </div>
+                  <p id="numerical-answer-note" className="mt-2 text-xs leading-5 text-ink-500">
+                    Section B uses numerical-value answers. Do not enter units or symbols.
+                  </p>
+                </div>
+              ) : (
+                <div role="radiogroup" aria-labelledby="current-question">
+                  {q.options.map((opt, oi) => (
+                    <OMRBubble
+                      key={oi}
+                      letter={String.fromCharCode(65 + oi)}
+                      label={opt}
+                      selected={answers[currentIndex] === oi}
+                      onSelect={() =>
+                        setAnswers((a) => a.map((val, i) => (i === currentIndex ? oi : val)))
+                      }
+                    />
+                  ))}
+                </div>
+              )}
           </div>
 
           <div className="flex flex-wrap gap-2 mt-4">

@@ -877,6 +877,29 @@ const RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS = [
   },
 ];
 
+const JEE_MAIN_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JEE Main question paper?',
+    answer: 'No. It is an independent practice mock with 75 original questions mapped to the official JEE Main 2026 Paper 1 syllabus and pattern for B.E. and B.Tech. admission.',
+  },
+  {
+    question: 'What is the JEE Main Paper 1 pattern in this mock?',
+    answer: 'Paper 1 has 75 questions for 300 marks in 180 minutes. Mathematics, Physics, and Chemistry each contribute 25 questions and 100 marks under one combined timer.',
+  },
+  {
+    question: 'How are JEE Main numerical-value questions handled?',
+    answer: 'Fifteen questions use numerical entry, with 5 in each subject. Enter the nearest integer without units or symbols, matching the official Section B response method.',
+  },
+  {
+    question: 'Is there negative marking in JEE Main Paper 1?',
+    answer: 'Yes. Every correct answer earns 4 marks and every incorrect answer deducts 1 mark in both the multiple-choice and numerical-value sections. Unattempted questions score zero.',
+  },
+  {
+    question: 'Which JEE Main session score is used for ranking?',
+    answer: 'The best total NTA Score is considered when a candidate appears in more than one 2026 session. This practice result is a raw mock score, not an NTA percentile or rank prediction.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -916,6 +939,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rrb-alp/cbt-2': RRB_ALP_CBT2_FULL_MOCK_FAQS,
   'rrb-technician/grade-1-signal': RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS,
   'rrb-technician/grade-3': RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS,
+  'jee-main/paper-1': JEE_MAIN_PAPER_1_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
