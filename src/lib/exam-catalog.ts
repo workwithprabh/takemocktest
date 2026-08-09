@@ -44,7 +44,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('SSC Junior Engineer', 'National', 'ssc-je'),
           exam('SSC Stenographer Grade C & D', 'National', 'ssc-steno'),
           exam('SSC Combined Hindi Translators', 'National', 'ssc-cht'),
-          exam('SSC Selection Post', 'National'),
+          exam('SSC Selection Post', 'National', 'ssc-selection-post'),
         ],
       },
       {

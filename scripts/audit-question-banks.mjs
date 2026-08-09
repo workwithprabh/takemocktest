@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -81,6 +81,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('ssc-steno-cbt-english-language-comprehension-') ? 100
     : file.startsWith('ssc-steno-cbt-') ? 50
     : file.startsWith('ssc-cht-paper-1-') ? 100
+    : file.startsWith('ssc-selection-post-') ? 100
     : file.startsWith('ssc-cpo-paper-1-') ? 50
     : file.startsWith('ibps-so-prelims-') ? 50
     : file.startsWith('rbi-grade-b-phase-1-general-awareness-') ? 80
@@ -163,7 +164,7 @@ for (const { file, questions } of banks) {
     const label = `${file} question ${index + 1}`;
     if (!question.id || ids.has(question.id)) errors.push(`${label}: missing or duplicate ID`);
     if (!question.question || texts.has(question.question.trim().toLowerCase())) {
-      errors.push(`${label}: missing or duplicate question text`);
+      errors.push(`${label}: missing or duplicate question text (${JSON.stringify(question.question)})`);
     }
     if (!Array.isArray(question.options) || question.options.length !== 4) {
       errors.push(`${label}: must have exactly four options`);

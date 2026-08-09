@@ -29,7 +29,8 @@ export type ExamSlug =
   | 'rpf-si'
   | 'ssc-je'
   | 'ssc-steno'
-  | 'ssc-cht';
+  | 'ssc-cht'
+  | 'ssc-selection-post';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -115,6 +116,8 @@ const SSC_STENO_2025_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2025.pdf';
 const SSC_CHT_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cht_2026.pdf';
+const SSC_SELECTION_POST_2026_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -128,6 +131,19 @@ const NIACL_AO_2025_NOTICE = 'https://www.newindia.co.in/assets/docs/recruitment
 const RRB_ALP_2025_NOTICE = 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_01-2025_ALP.pdf';
 const RRB_TECHNICIAN_2025_NOTICE = 'https://rrbajmer.gov.in/Upload_PDF/Detailed%20CEN%202-2025_%20Technician%20Categories-638866538197092718.pdf';
 const RRB_PARAMEDICAL_2025_NOTICE = 'https://rrbsecunderabad.gov.in/wp-content/uploads/2025/08/Final-CEN-03_2025-English.pdf';
+
+function selectionPostTests(level: string, prefix: string): TestConfig[] {
+  const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn: '9 August 2026' };
+  return [
+    { id: `${prefix}-cbe-full-mock-1`, name: `${level} Full Mock Test 1`, kind: 'full-length', duration: 60, sectionDuration: 15, ...common },
+    { id: `${prefix}-cbe-general-intelligence-sectional-1`, name: 'General Intelligence Sectional Test 1', kind: 'sectional', section: 'General Intelligence', duration: 15, ...common },
+    { id: `${prefix}-cbe-general-awareness-sectional-1`, name: 'General Awareness Sectional Test 1', kind: 'sectional', section: 'General Awareness', duration: 15, ...common },
+    { id: `${prefix}-cbe-quantitative-aptitude-sectional-1`, name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', section: 'Quantitative Aptitude', duration: 15, ...common },
+    { id: `${prefix}-cbe-english-language-sectional-1`, name: 'English Language Sectional Test 1', kind: 'sectional', section: 'English Language', duration: 15, ...common },
+    { id: `${prefix}-cbe-quick-10min`, name: `${level} Quick Test (10 Minutes)`, kind: 'quick', duration: 10, ...common },
+    { id: `${prefix}-cbe-quick-15min`, name: `${level} Quick Test (15 Minutes)`, kind: 'quick', duration: 15, ...common },
+  ];
+}
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -4226,6 +4242,87 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             checkedOn: '9 August 2026',
           },
         ],
+      },
+    ],
+  },
+  'ssc-selection-post': {
+    slug: 'ssc-selection-post',
+    name: 'SSC Selection Post',
+    shortName: 'SSC Selection Post',
+    fullName: 'Staff Selection Commission: Phase XIV/2026 Selection Posts Examination',
+    category: 'SSC',
+    stages: [
+      {
+        id: 'matriculation',
+        name: 'Matriculation Level',
+        pattern: {
+          status: 'official',
+          cycle: 'Phase XIV/2026',
+          sections: ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 60,
+          negativeMarking: 0.5,
+          sectionBreakdown: [
+            { name: 'General Intelligence', questions: 25, marks: 50, duration: 15 },
+            { name: 'General Awareness', questions: 25, marks: 50, duration: 15 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 50, duration: 15 },
+            { name: 'English Language', questions: 25, marks: 50, duration: 15 },
+          ],
+          timerNote: 'Each part has its own 15-minute timer. Unused time cannot be moved to another part',
+          note: 'This is the CBE for posts requiring Matriculation. Figure-based non-verbal reasoning is approximated with text-compatible logic questions in this initial mock. Post-specific skill tests, where prescribed, are qualifying and are not modeled here.',
+          sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: selectionPostTests('Matriculation Level', 'matriculation'),
+      },
+      {
+        id: 'higher-secondary',
+        name: 'Higher Secondary (10+2) Level',
+        pattern: {
+          status: 'official',
+          cycle: 'Phase XIV/2026',
+          sections: ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 60,
+          negativeMarking: 0.5,
+          sectionBreakdown: [
+            { name: 'General Intelligence', questions: 25, marks: 50, duration: 15 },
+            { name: 'General Awareness', questions: 25, marks: 50, duration: 15 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 50, duration: 15 },
+            { name: 'English Language', questions: 25, marks: 50, duration: 15 },
+          ],
+          timerNote: 'Each part has its own 15-minute timer. Unused time cannot be moved to another part',
+          note: 'This is the separate CBE for posts requiring Higher Secondary (10+2). Post-specific skill tests, where prescribed, are qualifying and are not modeled here.',
+          sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: selectionPostTests('Higher Secondary Level', 'higher-secondary'),
+      },
+      {
+        id: 'graduation',
+        name: 'Graduation and Above Level',
+        pattern: {
+          status: 'official',
+          cycle: 'Phase XIV/2026',
+          sections: ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 60,
+          negativeMarking: 0.5,
+          sectionBreakdown: [
+            { name: 'General Intelligence', questions: 25, marks: 50, duration: 15 },
+            { name: 'General Awareness', questions: 25, marks: 50, duration: 15 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 50, duration: 15 },
+            { name: 'English Language', questions: 25, marks: 50, duration: 15 },
+          ],
+          timerNote: 'Each part has its own 15-minute timer. Unused time cannot be moved to another part',
+          note: 'General Intelligence, General Awareness and English are set at graduation level; Quantitative Aptitude remains at Class 10 level under the official syllabus. Post-specific skill tests, where prescribed, are qualifying and are not modeled here.',
+          sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: selectionPostTests('Graduation Level', 'graduation'),
       },
     ],
   },

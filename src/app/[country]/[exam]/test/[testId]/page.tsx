@@ -524,6 +524,29 @@ const SSC_CHT_PAPER_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC Selection Post question paper?',
+    answer: 'No. This is an independent practice mock with original questions mapped to the official Phase XIV/2026 Selection Posts syllabus and pattern.',
+  },
+  {
+    question: 'Which SSC Selection Post level should I attempt?',
+    answer: 'Choose the level stated for your post code: Matriculation, Higher Secondary (10+2), or Graduation and Above. SSC conducts a separate CBE for each minimum educational qualification level.',
+  },
+  {
+    question: 'How do the sectional timers work?',
+    answer: 'Each of the four parts has a separate 15-minute timer. When a part ends it locks, and unused time cannot be moved to another part.',
+  },
+  {
+    question: 'How is the SSC Selection Post CBE scored?',
+    answer: 'A correct answer earns 2 marks, a wrong answer deducts 0.50 marks, and an unattempted question scores zero.',
+  },
+  {
+    question: 'Does this mock include post-specific skill tests?',
+    answer: 'No. Typing, Data Entry or Computer Proficiency tests apply only to certain post codes and are qualifying unless the post details specify otherwise, so they are not included in this common CBE mock.',
+  },
+];
+
 const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official SSC CPO question paper?',
@@ -876,6 +899,9 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-je/paper-1': SSC_JE_PAPER_1_FULL_MOCK_FAQS,
   'ssc-steno/cbt': SSC_STENO_CBT_FULL_MOCK_FAQS,
   'ssc-cht/paper-1': SSC_CHT_PAPER_1_FULL_MOCK_FAQS,
+  'ssc-selection-post/matriculation': SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS,
+  'ssc-selection-post/higher-secondary': SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS,
+  'ssc-selection-post/graduation': SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,

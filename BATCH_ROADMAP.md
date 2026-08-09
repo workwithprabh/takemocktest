@@ -62,7 +62,7 @@ next one in the same run.
 - [x] SSC Junior Engineer
 - [x] SSC Stenographer Grade C & D
 - [x] SSC Combined Hindi Translators
-- [ ] SSC Selection Post
+- [x] SSC Selection Post
 
 **Not MCQ-friendly, evaluate case by case, may need to skip with a note:**
 UPSC Civil Services Main (descriptive/essay paper, not objective — likely skip or find if

@@ -164,6 +164,9 @@ import { RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1 } from './question-banks/rrb-
 import { RRB_PARAMEDICAL_GENERAL_AWARENESS_1 } from './question-banks/rrb-paramedical-general-awareness-1';
 import { RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1 } from './question-banks/rrb-paramedical-general-arithmetic-reasoning-1';
 import { RRB_PARAMEDICAL_GENERAL_SCIENCE_1 } from './question-banks/rrb-paramedical-general-science-1';
+import { SSC_SELECTION_POST_MATRICULATION_CBE_1 } from './question-banks/ssc-selection-post-matriculation-cbe-1';
+import { SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1 } from './question-banks/ssc-selection-post-higher-secondary-cbe-1';
+import { SSC_SELECTION_POST_GRADUATION_CBE_1 } from './question-banks/ssc-selection-post-graduation-cbe-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -778,7 +781,27 @@ const SSC_CHT_PAPER_1_QUICK_TESTS: Record<string, Question[]> = {
   'ssc-cht/paper-1-quick-20min': sscChtQuickSlice(10, 13),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS);
+const SSC_SELECTION_POST_SECTIONS = ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'];
+function selectionPostLevelBanks(prefix: string, bank: Question[]): Record<string, Question[]> {
+  const sections = Object.fromEntries(SSC_SELECTION_POST_SECTIONS.map((section) => [section, bank.filter((question) => question.section === section)]));
+  const mixed = (perSection: number, offset: number) => SSC_SELECTION_POST_SECTIONS.flatMap((section) => sections[section].slice(offset, offset + perSection));
+  return {
+    [`ssc-selection-post/${prefix}-cbe-full-mock-1`]: bank,
+    [`ssc-selection-post/${prefix}-cbe-general-intelligence-sectional-1`]: sections['General Intelligence'],
+    [`ssc-selection-post/${prefix}-cbe-general-awareness-sectional-1`]: sections['General Awareness'],
+    [`ssc-selection-post/${prefix}-cbe-quantitative-aptitude-sectional-1`]: sections['Quantitative Aptitude'],
+    [`ssc-selection-post/${prefix}-cbe-english-language-sectional-1`]: sections['English Language'],
+    [`ssc-selection-post/${prefix}-cbe-quick-10min`]: mixed(4, 0),
+    [`ssc-selection-post/${prefix}-cbe-quick-15min`]: mixed(6, 4),
+  };
+}
+const SSC_SELECTION_POST_TESTS = {
+  ...selectionPostLevelBanks('matriculation', SSC_SELECTION_POST_MATRICULATION_CBE_1),
+  ...selectionPostLevelBanks('higher-secondary', SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1),
+  ...selectionPostLevelBanks('graduation', SSC_SELECTION_POST_GRADUATION_CBE_1),
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -815,6 +838,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('ssc-cht/paper-1-full-mock')
     ? 200
+    : testId.includes('ssc-selection-post/') && testId.includes('full-mock')
+    ? 100
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
     : testId.includes('ibps-so/prelims-full-mock')
@@ -887,6 +912,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('english-language-comprehension') ? 100 : 50
           : testId.includes('ssc-cht')
             ? 100
+          : testId.includes('ssc-selection-post')
+            ? 25
           : testId.includes('ssc-cpo')
             ? 50
           : testId.includes('ibps-so')
@@ -1074,6 +1101,12 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   'ssc-cht': [
     { section: 'General Hindi', count: 100 },
     { section: 'General English', count: 100 },
+  ],
+  'ssc-selection-post': [
+    { section: 'General Intelligence', count: 25 },
+    { section: 'General Awareness', count: 25 },
+    { section: 'Quantitative Aptitude', count: 25 },
+    { section: 'English Language', count: 25 },
   ],
   'ssc-cpo': [
     { section: 'General Intelligence and Reasoning', count: 50 },
@@ -1464,6 +1497,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'ssc-cht': [
     { section: 'General Hindi', question: '‘अग्नि’ का उपयुक्त पर्यायवाची शब्द कौन-सा है?', options: ['अनल', 'अनिल', 'अचल', 'अंबर'], correctIndex: 0, explanation: '‘अनल’ का अर्थ अग्नि है।' },
     { section: 'General English', question: "Which word is closest in meaning to 'assiduous'?", options: ['Diligent', 'Careless', 'Intermittent', 'Reluctant'], correctIndex: 0, explanation: '“Assiduous” means showing persistent care and effort, so “diligent” is the closest synonym.' },
+  ],
+  'ssc-selection-post': [
+    { section: 'General Intelligence', question: 'Complete the series: 6, 12, 24, 48, ?', options: ['72', '84', '96', '108'], correctIndex: 2, explanation: 'Each term is twice the preceding term, so 48 x 2 = 96.' },
+    { section: 'General Awareness', question: 'Which institution conducts the SSC Selection Post examination?', options: ['Staff Selection Commission', 'Union Public Service Commission', 'Reserve Bank of India', 'National Testing Agency'], correctIndex: 0, explanation: 'The Staff Selection Commission conducts the Selection Posts Examination.' },
+    { section: 'Quantitative Aptitude', question: 'What is 15% of 360?', options: ['45', '54', '60', '72'], correctIndex: 1, explanation: '15% of 360 = 54.' },
+    { section: 'English Language', question: "Choose the antonym of 'temporary'.", options: ['Brief', 'Passing', 'Permanent', 'Short'], correctIndex: 2, explanation: 'Permanent is opposite in meaning to temporary.' },
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

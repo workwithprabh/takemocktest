@@ -2,6 +2,33 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-09 - SSC Selection Post (Batch 32, live session)
+
+Added the three separate Phase XIV/2026 Selection Posts CBEs: Matriculation,
+Higher Secondary (10+2), and Graduation and Above. Each level now has one
+100-question full mock, four 25-question sectional tests, and two mixed quick
+tests. Every full mock carries 200 marks, runs for 60 minutes with four locked
+15-minute sections, and deducts 0.50 marks for a wrong answer.
+
+Built 300 original questions across three level-specific banks. The four common
+sections are General Intelligence, General Awareness, Quantitative Aptitude,
+and English Language. The Graduation mock keeps Quantitative Aptitude at Class
+10 standard as the official notice requires, while its other sections are set
+at graduation level. The Matriculation mock clearly discloses that figure-based
+non-verbal items are represented by text-compatible logic questions in this
+initial release. Post-specific qualifying skill tests are not modeled because
+they vary by post code.
+
+The first corpus audit found 17 question-text collisions with earlier banks;
+all stems were rewritten. Manual review also corrected an inconsistent coding
+example, an alphabet-order answer, an ambiguous set relation, a wrong coded
+answer, an invalid number-series pattern, a remainder edge case, and an unclear
+reported-speech pronoun before the final audit.
+
+Full corpus after this batch: 168 question-bank files, 5,255 questions, zero
+duplicate IDs or text, and balanced answer positions of 25/25/25/25 in each new
+bank. Question QA, lint, and the 959-page production build all pass.
+
 ## 2026-08-09 - SSC Combined Hindi Translators (Batch 31, live session)
 
 Added SSC Combined Hindi Translators Paper I with 100 General Hindi and 100
