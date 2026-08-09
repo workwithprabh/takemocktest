@@ -61,7 +61,7 @@ next one in the same run.
 - [x] RPF Sub-Inspector
 - [x] SSC Junior Engineer
 - [x] SSC Stenographer Grade C & D
-- [ ] SSC Combined Hindi Translators
+- [x] SSC Combined Hindi Translators
 - [ ] SSC Selection Post
 
 **Not MCQ-friendly, evaluate case by case, may need to skip with a note:**

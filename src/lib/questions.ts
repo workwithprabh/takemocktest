@@ -96,6 +96,8 @@ import { SSC_JE_PAPER_1_GENERAL_AWARENESS_1 } from './question-banks/ssc-je-pape
 import { SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-steno-cbt-general-intelligence-reasoning-1';
 import { SSC_STENO_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-steno-cbt-general-awareness-1';
 import { SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-steno-cbt-english-language-comprehension-1';
+import { SSC_CHT_PAPER_1_GENERAL_HINDI_1 } from './question-banks/ssc-cht-paper-1-general-hindi-1';
+import { SSC_CHT_PAPER_1_GENERAL_ENGLISH_1 } from './question-banks/ssc-cht-paper-1-general-english-1';
 import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-cpo-paper-1-general-intelligence-reasoning-1';
 import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-1';
 import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-1';
@@ -450,6 +452,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-steno/cbt-general-intelligence-reasoning-sectional-1': SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1,
   'ssc-steno/cbt-general-awareness-sectional-1': SSC_STENO_CBT_GENERAL_AWARENESS_1,
   'ssc-steno/cbt-english-language-comprehension-sectional-1': SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1,
+  'ssc-cht/paper-1-full-mock-1': [
+    ...SSC_CHT_PAPER_1_GENERAL_HINDI_1,
+    ...SSC_CHT_PAPER_1_GENERAL_ENGLISH_1,
+  ],
+  'ssc-cht/paper-1-general-hindi-sectional-1': SSC_CHT_PAPER_1_GENERAL_HINDI_1,
+  'ssc-cht/paper-1-general-english-sectional-1': SSC_CHT_PAPER_1_GENERAL_ENGLISH_1,
   'ssc-cpo/paper-1-full-mock-1': [
     ...SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
@@ -756,8 +764,22 @@ const SBI_CLERK_QUICK_TESTS: Record<string, Question[]> = {
   'sbi-clerk/prelims-quick-15min': sbiClerkQuickSlice(6, 4),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS);
-const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-'];
+const SSC_CHT_PAPER_1_POOLS: Record<string, Question[]> = {
+  'General Hindi': SSC_CHT_PAPER_1_GENERAL_HINDI_1,
+  'General English': SSC_CHT_PAPER_1_GENERAL_ENGLISH_1,
+};
+const SSC_CHT_PAPER_1_SECTION_ORDER = Object.keys(SSC_CHT_PAPER_1_POOLS);
+function sscChtQuickSlice(perSection: number, offset: number): Question[] {
+  return SSC_CHT_PAPER_1_SECTION_ORDER.flatMap((section) => SSC_CHT_PAPER_1_POOLS[section].slice(offset, offset + perSection));
+}
+const SSC_CHT_PAPER_1_QUICK_TESTS: Record<string, Question[]> = {
+  'ssc-cht/paper-1-quick-10min': sscChtQuickSlice(5, 0),
+  'ssc-cht/paper-1-quick-15min': sscChtQuickSlice(8, 5),
+  'ssc-cht/paper-1-quick-20min': sscChtQuickSlice(10, 13),
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS);
+const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
   const isGenerated = GENERATED_TEST_ID_MARKERS.some((marker) => testId.includes(marker));
@@ -790,6 +812,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('ssc-je/paper-1-full-mock')
     ? 100
     : testId.includes('ssc-steno/cbt-full-mock')
+    ? 200
+    : testId.includes('ssc-cht/paper-1-full-mock')
     ? 200
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
@@ -861,6 +885,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 50
           : testId.includes('ssc-steno')
             ? testId.includes('english-language-comprehension') ? 100 : 50
+          : testId.includes('ssc-cht')
+            ? 100
           : testId.includes('ssc-cpo')
             ? 50
           : testId.includes('ibps-so')
@@ -1044,6 +1070,10 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General Intelligence and Reasoning', count: 50 },
     { section: 'General Awareness', count: 50 },
     { section: 'English Language and Comprehension', count: 100 },
+  ],
+  'ssc-cht': [
+    { section: 'General Hindi', count: 100 },
+    { section: 'General English', count: 100 },
   ],
   'ssc-cpo': [
     { section: 'General Intelligence and Reasoning', count: 50 },
@@ -1430,6 +1460,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'Which is the smallest state in India by area?', options: ['Goa', 'Sikkim', 'Tripura', 'Manipur'], correctIndex: 0, explanation: 'Goa is the smallest state in India by area.' },
     // English Language and Comprehension
     { section: 'English Language and Comprehension', question: "Choose the word most similar in meaning to 'Genuine':", options: ['Fake', 'Authentic', 'Doubtful', 'Artificial'], correctIndex: 1, explanation: '"Genuine" means truly what it is said to be, closest in meaning to "authentic".' },
+  ],
+  'ssc-cht': [
+    { section: 'General Hindi', question: '‘अग्नि’ का उपयुक्त पर्यायवाची शब्द कौन-सा है?', options: ['अनल', 'अनिल', 'अचल', 'अंबर'], correctIndex: 0, explanation: '‘अनल’ का अर्थ अग्नि है।' },
+    { section: 'General English', question: "Which word is closest in meaning to 'assiduous'?", options: ['Diligent', 'Careless', 'Intermittent', 'Reluctant'], correctIndex: 0, explanation: '“Assiduous” means showing persistent care and effort, so “diligent” is the closest synonym.' },
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

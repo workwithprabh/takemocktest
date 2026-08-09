@@ -28,7 +28,8 @@ export type ExamSlug =
   | 'rrb-paramedical'
   | 'rpf-si'
   | 'ssc-je'
-  | 'ssc-steno';
+  | 'ssc-steno'
+  | 'ssc-cht';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -112,6 +113,8 @@ const SSC_JE_2025_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2025.pdf';
 const SSC_STENO_2025_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2025.pdf';
+const SSC_CHT_2026_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cht_2026.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4126,6 +4129,101 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             marksPerCorrect: 1,
             negativeMarking: 0.333,
             checkedOn: '7 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'ssc-cht': {
+    slug: 'ssc-cht',
+    name: 'SSC Combined Hindi Translators',
+    shortName: 'SSC CHT',
+    fullName: 'Staff Selection Commission: Combined Hindi Translators Examination',
+    category: 'SSC',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper I',
+        pattern: {
+          status: 'official',
+          cycle: 'Combined Hindi Translators Examination 2026',
+          sections: ['General Hindi', 'General English'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'Paper II is a 200-mark descriptive paper with Hindi to English translation, English to Hindi translation, and one essay in each language. It is not modeled here because an MCQ interface cannot reproduce descriptive translation and essay writing accurately. Paper I marks are used to shortlist candidates for Paper II.',
+          sectionBreakdown: [
+            { name: 'General Hindi', questions: 100, marks: 100, duration: 60 },
+            { name: 'General English', questions: 100, marks: 100, duration: 60 },
+          ],
+          timerNote: 'Each part has its own 60-minute timer. Once a part closes, unused time cannot be moved to the other part.',
+          sourceUrl: SSC_CHT_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          {
+            id: 'paper-1-full-mock-1',
+            name: 'Paper I Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            sectionDuration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-general-hindi-sectional-1',
+            name: 'General Hindi Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Hindi',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-general-english-sectional-1',
+            name: 'General English Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General English',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-quick-10min',
+            name: 'Quick Test (10 Minutes)',
+            kind: 'quick',
+            status: 'checked',
+            duration: 10,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-quick-15min',
+            name: 'Quick Test (15 Minutes)',
+            kind: 'quick',
+            status: 'checked',
+            duration: 15,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-quick-20min',
+            name: 'Quick Test (20 Minutes)',
+            kind: 'quick',
+            status: 'checked',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
           },
         ],
       },

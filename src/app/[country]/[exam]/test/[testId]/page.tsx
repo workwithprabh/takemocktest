@@ -501,6 +501,29 @@ const SSC_STENO_CBT_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_CHT_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC Combined Hindi Translators question paper?',
+    answer: 'No. This is an independent practice mock with 200 original questions mapped to the official 2026 Paper I syllabus and pattern.',
+  },
+  {
+    question: 'Does SSC CHT Paper I have separate timers for Hindi and English?',
+    answer: 'Yes. General Hindi and General English each have a separate 60-minute timer, so unused time from one part cannot be shifted to the other part.',
+  },
+  {
+    question: 'How much negative marking applies in SSC CHT Paper I?',
+    answer: 'Each wrong answer deducts 0.25 marks. A correct answer earns 1 mark, while an unattempted question scores zero.',
+  },
+  {
+    question: 'Does this mock include SSC CHT Paper II translation and essays?',
+    answer: 'No. Paper II is a 200-mark descriptive test with two translation passages and one essay each in Hindi and English, so an MCQ interface cannot model it accurately.',
+  },
+  {
+    question: 'Do I need an account to attempt the SSC CHT mock?',
+    answer: 'No. You can start the 200-question Paper I mock without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official SSC CPO question paper?',
@@ -852,6 +875,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rpf-si/cbt': RPF_SI_CBT_FULL_MOCK_FAQS,
   'ssc-je/paper-1': SSC_JE_PAPER_1_FULL_MOCK_FAQS,
   'ssc-steno/cbt': SSC_STENO_CBT_FULL_MOCK_FAQS,
+  'ssc-cht/paper-1': SSC_CHT_PAPER_1_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,

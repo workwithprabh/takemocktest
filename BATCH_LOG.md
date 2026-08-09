@@ -2,6 +2,29 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-09 - SSC Combined Hindi Translators (Batch 31, live session)
+
+Added SSC Combined Hindi Translators Paper I with 100 General Hindi and 100
+General English questions. The package includes 1 full mock, 2 sectional
+tests, and 3 quick tests. The full mock follows the official 2026 pattern:
+200 questions, 200 marks, 120 minutes, separate 60-minute timers for each
+part, and a 0.25-mark deduction for every wrong answer.
+
+Paper II is deliberately excluded. It is a descriptive paper containing
+Hindi-to-English and English-to-Hindi translation plus one essay in each
+language, so the current multiple-choice interface cannot reproduce it
+accurately.
+
+The first automated audit passed with zero duplicate IDs or question text.
+Manual language review then caught two Hindi distractors that could also be
+accepted as valid synonyms and two English stems that needed tighter wording;
+all four were corrected before the final audit. Answer positions are balanced
+at 25/25/25/25 in both 100-question banks.
+
+Full corpus after this batch: 165 question-bank files, 4,955 questions, zero
+duplicate IDs or text, zero answer-balance failures. Question QA, lint, and the
+905-page production build all pass.
+
 ## 2026-08-07 — SSC Stenographer Grade C & D (Batch 30, live session)
 
 Added SSC Stenographer Grade C & D: Computer Based Examination (General
