@@ -72,7 +72,7 @@ tackle after the national-level exams above are done, same process).
 ## The queue (Engineering cluster, in order)
 
 - [x] JEE Main
-- [ ] JEE Advanced
+- [x] JEE Advanced
 - [ ] BITSAT
 - [ ] VITEEE
 - [ ] SRMJEEE

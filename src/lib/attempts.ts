@@ -5,7 +5,7 @@
 
 import type { QuestionSource } from './questions';
 
-export type AnswerValue = number | string | null;
+export type AnswerValue = number | number[] | string | null;
 
 export interface QuestionResult {
   id?: string;
@@ -15,11 +15,15 @@ export interface QuestionResult {
   question: string;
   options: string[];
   correctIndex: number;
-  answerType?: 'mcq' | 'numerical';
+  answerType?: 'mcq' | 'multi-select' | 'numerical';
   correctValue?: string;
+  correctIndices?: number[];
+  partialMarking?: boolean;
+  maxDecimalPlaces?: number;
   selectedIndex: AnswerValue;
   marks?: number;
   score?: number;
+  outcome?: 'correct' | 'partial' | 'wrong' | 'unattempted';
   timeSpentSec?: number;
   explanation: string;
   source?: QuestionSource;
@@ -32,6 +36,7 @@ export interface AttemptResult {
   testName: string;
   examName: string;
   correct: number;
+  partial?: number;
   wrong: number;
   unattempted: number;
   totalQuestions: number;

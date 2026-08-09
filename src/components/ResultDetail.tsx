@@ -54,8 +54,14 @@ function performanceCue(correct: number, attempted: number, total: number) {
 }
 
 function isCorrectQuestion(question: QuestionResult) {
+  if (question.outcome) return question.outcome === 'correct';
   if (question.answerType === 'numerical') {
     return question.selectedIndex !== null && Number(question.selectedIndex) === Number(question.correctValue);
+  }
+  if (question.answerType === 'multi-select') {
+    const selected = Array.isArray(question.selectedIndex) ? [...question.selectedIndex].sort() : [];
+    const correct = [...(question.correctIndices ?? [])].sort();
+    return selected.length === correct.length && selected.every((index, i) => index === correct[i]);
   }
   return question.selectedIndex === question.correctIndex;
 }
@@ -75,9 +81,13 @@ function QuestionIssueActions({
     ? 'Unattempted'
     : question.answerType === 'numerical'
       ? String(question.selectedIndex)
+      : question.answerType === 'multi-select'
+        ? (Array.isArray(question.selectedIndex) ? question.selectedIndex : []).map((index) => String.fromCharCode(65 + index)).join(', ')
       : `${String.fromCharCode(65 + Number(question.selectedIndex))}. ${question.options[Number(question.selectedIndex)]}`;
   const correctAnswer = question.answerType === 'numerical'
     ? String(question.correctValue)
+    : question.answerType === 'multi-select'
+      ? (question.correctIndices ?? []).map((index) => String.fromCharCode(65 + index)).join(', ')
     : `${String.fromCharCode(65 + question.correctIndex)}. ${question.options[question.correctIndex]}`;
   const details = [
     'TakeMockTest question issue',
@@ -170,11 +180,17 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
     <div>
       <div className="bg-white border border-ink-200 p-6 mb-6 flex flex-col sm:flex-row items-center gap-6">
         <ScoreRing percent={percent} />
-        <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-4 w-full text-center sm:text-left">
+        <div className={`flex-1 grid grid-cols-2 gap-4 w-full text-center sm:text-left ${attempt.partial ? 'sm:grid-cols-5' : 'sm:grid-cols-4'}`}>
           <div>
             <div className="text-xl font-mono font-bold text-correct">{attempt.correct}</div>
             <div className="text-xs text-ink-500">Correct</div>
           </div>
+          {Boolean(attempt.partial) && (
+            <div>
+              <div className="text-xl font-mono font-bold text-ink-600">{attempt.partial}</div>
+              <div className="text-xs text-ink-500">Partial</div>
+            </div>
+          )}
           <div>
             <div className="text-xl font-mono font-bold text-incorrect">{attempt.wrong}</div>
             <div className="text-xs text-ink-500">Wrong</div>
@@ -276,11 +292,12 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
         {attempt.questions.map((q, i) => {
           const isCorrect = isCorrectQuestion(q);
           const isUnattempted = q.selectedIndex === null;
+          const isPartial = q.outcome === 'partial';
           return (
             <div
               key={i}
               className={`border-[1.5px] p-4 ${
-                isUnattempted ? 'border-ink-200' : isCorrect ? 'border-correct/40 bg-correct/5' : 'border-incorrect/40 bg-incorrect/5'
+                isUnattempted ? 'border-ink-200' : isCorrect ? 'border-correct/40 bg-correct/5' : isPartial ? 'border-ink-400 bg-ink-100' : 'border-incorrect/40 bg-incorrect/5'
               }`}
             >
               <div className="text-xs font-semibold uppercase tracking-wide text-ink-500 mb-1">{q.section}</div>
@@ -291,14 +308,18 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
                     Your answer: {q.selectedIndex ?? 'Unattempted'}
                   </div>
                   <div className="bg-correct/10 px-2.5 py-2 font-semibold text-correct">
-                    Correct integer: {q.correctValue}
+                    Correct value: {q.correctValue}
                   </div>
                 </div>
               ) : (
               <div className="text-xs space-y-1">
                 {q.options.map((opt, oi) => {
-                  const isSelected = q.selectedIndex === oi;
-                  const isRight = q.correctIndex === oi;
+                  const isSelected = q.answerType === 'multi-select'
+                    ? Array.isArray(q.selectedIndex) && q.selectedIndex.includes(oi)
+                    : q.selectedIndex === oi;
+                  const isRight = q.answerType === 'multi-select'
+                    ? q.correctIndices?.includes(oi)
+                    : q.correctIndex === oi;
                   return (
                     <div
                       key={oi}

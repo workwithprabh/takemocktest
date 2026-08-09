@@ -31,7 +31,8 @@ export type ExamSlug =
   | 'ssc-steno'
   | 'ssc-cht'
   | 'ssc-selection-post'
-  | 'jee-main';
+  | 'jee-main'
+  | 'jee-advanced';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -121,6 +122,8 @@ const SSC_SELECTION_POST_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf';
 const JEE_MAIN_2026_BULLETIN =
   'https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/11/202511021649722475.pdf';
+const JEE_ADVANCED_2026_PAPER_1 = 'https://jeeadv.ac.in/documents/p1_english.pdf';
+const JEE_ADVANCED_2026_PAPER_2 = 'https://jeeadv.ac.in/documents/p2_english.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4359,6 +4362,61 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'paper-1-chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
           { id: 'paper-1-quick-30min', name: 'Mixed Quick Test (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
           { id: 'paper-1-quick-60min', name: 'Mixed Quick Test (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jee-advanced': {
+    slug: 'jee-advanced',
+    name: 'JEE Advanced',
+    shortName: 'JEE Advanced',
+    fullName: 'Joint Entrance Examination Advanced',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper 1',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 48,
+          totalMarks: 180,
+          duration: 180,
+          negativeMarking: 'Varies by question type',
+          timerNote: 'Single 180-minute timer; candidates may move freely across subjects',
+          note: 'Per subject: 4 single-correct questions (+3/-1), 4 multi-select questions (+4 with partial marks, -1 otherwise), 4 numerical-value questions (+4/0), and 4 matching-list questions (+4/-1). Both JEE Advanced papers are compulsory.',
+          sourceUrl: JEE_ADVANCED_2026_PAPER_1,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          { id: 'paper-1-full-mock-1', name: 'Paper 1 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Uses the exact JEE Advanced 2026 Paper 1 marking rules for each question type.', checkedOn: '9 August 2026' },
+          { id: 'paper-1-mathematics-sectional-1', name: 'Paper 1 Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-physics-sectional-1', name: 'Paper 1 Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-chemistry-sectional-1', name: 'Paper 1 Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+        ],
+      },
+      {
+        id: 'paper-2',
+        name: 'Paper 2',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 54,
+          totalMarks: 180,
+          duration: 180,
+          negativeMarking: 'Varies by question type',
+          timerNote: 'Single 180-minute timer; candidates may move freely across subjects',
+          note: 'Per subject: 4 single-correct questions (+3/-1), 5 multi-select questions (+4 with partial marks, -1 otherwise), 5 numerical-value questions (+4/0), and 4 stem-based numerical questions (+2/0). Both JEE Advanced papers are compulsory.',
+          sourceUrl: JEE_ADVANCED_2026_PAPER_2,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          { id: 'paper-2-full-mock-1', name: 'Paper 2 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Uses the exact JEE Advanced 2026 Paper 2 marking rules for each question type.', checkedOn: '9 August 2026' },
+          { id: 'paper-2-mathematics-sectional-1', name: 'Paper 2 Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-2-physics-sectional-1', name: 'Paper 2 Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-2-chemistry-sectional-1', name: 'Paper 2 Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
         ],
       },
     ],

@@ -2,6 +2,29 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-09 - JEE Advanced Papers 1 and 2 (Batch 34, live session)
+
+Added JEE Advanced 2026 Paper 1 and Paper 2 as separate compulsory stages. Paper 1
+contains 48 questions for 180 marks in 180 minutes; Paper 2 contains 54 questions
+for 180 marks in 180 minutes. Each stage has one full mock and three subject
+sectionals across Mathematics, Physics, and Chemistry.
+
+Extended the shared attempt engine only where the official format required it:
+multi-select OMR responses, official partial marking, decimal numerical entry,
+per-question marks and penalties, and a distinct partial-score result state. The
+existing single-choice and JEE Main integer-entry paths remain unchanged. Drafts
+continue to preserve every answer format and the timer across refreshes.
+
+Built six original subject banks totalling 102 questions. Paper 1 follows the exact
+per-subject mix of 4 single-correct, 4 multi-select, 4 numerical-value, and 4
+matching-list questions. Paper 2 follows the exact per-subject mix of 4
+single-correct, 5 multi-select, 5 numerical-value, and 4 stem-based numerical
+questions. Marks and negative marking are stored on every question.
+
+Full corpus after this batch: 177 question-bank files, 5,432 questions, zero
+duplicate IDs or text. Question QA, focused lint, type checking, and the 1,011-page
+production build pass.
+
 ## 2026-08-09 - JEE Main Paper 1 (Batch 33, live session)
 
 Added JEE Main 2026 Paper 1 for B.E. and B.Tech. admission with 25 Mathematics,

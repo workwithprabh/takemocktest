@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|jee-main-paper-1|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -83,6 +83,8 @@ for (const { file, questions } of banks) {
     : file.startsWith('ssc-cht-paper-1-') ? 100
     : file.startsWith('ssc-selection-post-') ? 100
     : file.startsWith('jee-main-paper-1-') ? 25
+    : file.startsWith('jee-advanced-paper-1-') ? 16
+    : file.startsWith('jee-advanced-paper-2-') ? 18
     : file.startsWith('ssc-cpo-paper-1-') ? 50
     : file.startsWith('ibps-so-prelims-') ? 50
     : file.startsWith('rbi-grade-b-phase-1-general-awareness-') ? 80
@@ -155,7 +157,7 @@ for (const { file, questions } of banks) {
       errors.push(`${file}: every penalty must equal one-fourth of that question's marks`);
     }
   }
-  const mcqQuestions = questions.filter((question) => question.answerType !== 'numerical');
+  const mcqQuestions = questions.filter((question) => !question.answerType || question.answerType === 'mcq');
   const answerCounts = [0, 1, 2, 3].map(
     (answerIndex) => mcqQuestions.filter((question) => question.correctIndex === answerIndex).length,
   );
@@ -169,8 +171,13 @@ for (const { file, questions } of banks) {
       errors.push(`${label}: missing or duplicate question text (${JSON.stringify(question.question)})`);
     }
     if (question.answerType === 'numerical') {
-      if (!Array.isArray(question.options) || question.options.length !== 0 || question.correctIndex !== -1 || !/^-?\d+$/.test(question.correctValue ?? '')) {
+      const valuePattern = question.maxDecimalPlaces ? /^-?\d+(?:\.\d{1,2})?$/ : /^-?\d+$/;
+      if (!Array.isArray(question.options) || question.options.length !== 0 || question.correctIndex !== -1 || !valuePattern.test(question.correctValue ?? '')) {
         errors.push(`${label}: invalid numerical answer`);
+      }
+    } else if (question.answerType === 'multi-select') {
+      if (!Array.isArray(question.options) || question.options.length !== 4 || new Set(question.options.map((option) => option.trim().toLowerCase())).size !== 4 || !question.correctIndices?.length || new Set(question.correctIndices).size !== question.correctIndices.length || question.correctIndices.some((answer) => !Number.isInteger(answer) || answer < 0 || answer > 3)) {
+        errors.push(`${label}: invalid multi-select answer`);
       }
     } else {
       if (!Array.isArray(question.options) || question.options.length !== 4) {
@@ -203,7 +210,11 @@ if (process.argv.includes('--dump')) {
   for (const { file, questions } of banks.filter((bank) => !requestedBank || bank.file.includes(requestedBank))) {
     console.log(`\n## ${file}`);
     questions.forEach((question, index) => {
-      const correct = question.answerType === 'numerical' ? question.correctValue : question.options[question.correctIndex];
+      const correct = question.answerType === 'numerical'
+        ? question.correctValue
+        : question.answerType === 'multi-select'
+          ? question.correctIndices.map((answer) => String.fromCharCode(65 + answer)).join(', ')
+          : question.options[question.correctIndex];
       console.log(
         `${index + 1}. [${question.id}] ${question.question}\n` +
           `   ${question.answerType === 'numerical' ? 'Numerical value entry' : `Options: ${question.options.join(' | ')}`}\n` +

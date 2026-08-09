@@ -900,6 +900,44 @@ const JEE_MAIN_PAPER_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JEE Advanced Paper 1?',
+    answer: 'No. It is an independent practice mock with 48 original questions mapped to the official JEE Advanced 2026 Paper 1 syllabus, question types, marks, and timing.',
+  },
+  {
+    question: 'What is the JEE Advanced Paper 1 pattern in this mock?',
+    answer: 'Paper 1 has 48 questions for 180 marks in 180 minutes. Each of Mathematics, Physics, and Chemistry contains 4 single-correct, 4 multi-select, 4 numerical-value, and 4 matching-list questions.',
+  },
+  {
+    question: 'How does partial marking work for multi-select questions?',
+    answer: 'Selecting every correct option earns 4 marks. A proper subset of only correct options earns marks equal to the number selected under the official partial-marking rule. Selecting any incorrect option deducts 1 mark.',
+  },
+  {
+    question: 'Are both JEE Advanced papers compulsory?',
+    answer: 'Yes. Candidates must appear in both Paper 1 and Paper 2 for their JEE Advanced result to be evaluated. This mock reports a raw practice score, not a rank prediction.',
+  },
+];
+
+const JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JEE Advanced Paper 2?',
+    answer: 'No. It is an independent practice mock with 54 original questions mapped to the official JEE Advanced 2026 Paper 2 syllabus, question types, marks, and timing.',
+  },
+  {
+    question: 'What is the JEE Advanced Paper 2 pattern in this mock?',
+    answer: 'Paper 2 has 54 questions for 180 marks in 180 minutes. Each subject contains 4 single-correct, 5 multi-select, 5 numerical-value, and 4 stem-based numerical questions.',
+  },
+  {
+    question: 'Do numerical-value questions have negative marking?',
+    answer: 'No. In the official 2026 Paper 2 pattern, the five standalone numerical questions per subject carry 4 marks each and the four stem-based numerical questions carry 2 marks each, with zero penalty for an incorrect answer.',
+  },
+  {
+    question: 'Does this score predict a JEE Advanced rank?',
+    answer: 'No. It is a raw practice score for this original mock. JEE Advanced rank depends on performance across both compulsory official papers and the applicable rank-list criteria.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -940,6 +978,8 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rrb-technician/grade-1-signal': RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS,
   'rrb-technician/grade-3': RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS,
   'jee-main/paper-1': JEE_MAIN_PAPER_1_FULL_MOCK_FAQS,
+  'jee-advanced/paper-1': JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS,
+  'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
@@ -1000,7 +1040,7 @@ export default async function TestInstructionsPage({
           '@type': 'Quiz',
           name: `${exam.name} ${test.name}`,
           description: isFullMock
-            ? `A free ${questionCount}-question ${exam.name} ${stage.name} practice mock with sectional timing and instant results.`
+            ? `A free ${questionCount}-question ${exam.name} ${stage.name} practice mock with ${test.sectionDuration || test.sectionDurations ? 'sectional timing' : 'one combined timer'} and instant results.`
             : `A free ${questionCount}-question ${exam.name} ${stage.name} practice test with instant results.`,
           url: `${SITE_URL}${pagePath}`,
           inLanguage: 'en-IN',

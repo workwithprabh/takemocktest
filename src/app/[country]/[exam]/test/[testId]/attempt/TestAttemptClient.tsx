@@ -20,9 +20,28 @@ type PaletteStatus = 'current' | 'answered' | 'markedAnswered' | 'marked' | 'not
 
 function isCorrectAnswer(question: Question, answer: AnswerValue) {
   if (question.answerType === 'numerical') {
-    return typeof answer === 'string' && /^-?\d+$/.test(answer) && Number(answer) === Number(question.correctValue);
+    return typeof answer === 'string' && answer !== '' && Number(answer) === Number(question.correctValue);
+  }
+  if (question.answerType === 'multi-select') {
+    const selected = Array.isArray(answer) ? [...answer].sort() : [];
+    const correct = [...(question.correctIndices ?? [])].sort();
+    return selected.length === correct.length && selected.every((index, i) => index === correct[i]);
   }
   return answer === question.correctIndex;
+}
+
+function scoreAnswer(question: Question, answer: AnswerValue, marks: number, penalty: number) {
+  if (answer === null || answer === undefined || (Array.isArray(answer) && answer.length === 0)) {
+    return { outcome: 'unattempted' as const, score: 0 };
+  }
+  if (isCorrectAnswer(question, answer)) return { outcome: 'correct' as const, score: marks };
+  if (question.answerType === 'multi-select' && question.partialMarking && Array.isArray(answer)) {
+    const correct = new Set(question.correctIndices ?? []);
+    if (answer.length > 0 && answer.every((index) => correct.has(index))) {
+      return { outcome: 'partial' as const, score: answer.length };
+    }
+  }
+  return { outcome: 'wrong' as const, score: -penalty };
 }
 
 function formatClock(sec: number) {
@@ -124,6 +143,7 @@ export default function TestAttemptClient({
     submittedRef.current = true;
 
     let correct = 0;
+    let partial = 0;
     let wrong = 0;
     let unattempted = 0;
     let score = 0;
@@ -132,16 +152,17 @@ export default function TestAttemptClient({
       const selected = answersRef.current[i];
       const questionMarks = q.marks ?? marksPerCorrect;
       const penalty = q.negativeMarking ?? negativeMarking;
-      let questionScore = 0;
+      const scored = scoreAnswer(q, selected, questionMarks, penalty);
+      const questionScore = scored.score;
       maxScore += questionMarks;
-      if (selected === null || selected === undefined) {
+      if (scored.outcome === 'unattempted') {
         unattempted++;
-      } else if (isCorrectAnswer(q, selected)) {
+      } else if (scored.outcome === 'correct') {
         correct++;
-        questionScore = questionMarks;
+      } else if (scored.outcome === 'partial') {
+        partial++;
       } else {
         wrong++;
-        questionScore = -penalty;
       }
       score += questionScore;
       return {
@@ -154,9 +175,13 @@ export default function TestAttemptClient({
         correctIndex: q.correctIndex,
         answerType: q.answerType,
         correctValue: q.correctValue,
+        correctIndices: q.correctIndices,
+        partialMarking: q.partialMarking,
+        maxDecimalPlaces: q.maxDecimalPlaces,
         selectedIndex: selected ?? null,
         marks: questionMarks,
         score: questionScore,
+        outcome: scored.outcome,
         timeSpentSec: timeSpentRef.current[i],
         explanation: q.explanation,
         source: q.source,
@@ -170,6 +195,7 @@ export default function TestAttemptClient({
       testName,
       examName,
       correct,
+      partial,
       wrong,
       unattempted,
       totalQuestions: questions.length,
@@ -450,17 +476,18 @@ export default function TestAttemptClient({
               {q.answerType === 'numerical' ? (
                 <div>
                   <label htmlFor="numerical-answer" className="mb-2 block text-xs font-semibold text-ink-700">
-                    Enter the nearest integer
+                    {q.maxDecimalPlaces ? 'Enter a numerical value (up to two decimal places)' : 'Enter the nearest integer'}
                   </label>
                   <input
                     id="numerical-answer"
                     type="text"
-                    inputMode="numeric"
+                    inputMode={q.maxDecimalPlaces ? 'decimal' : 'numeric'}
                     autoComplete="off"
                     value={typeof answers[currentIndex] === 'string' ? answers[currentIndex] : ''}
                     onChange={(event) => {
                       const value = event.target.value.trim();
-                      if (!/^-?\d*$/.test(value)) return;
+                      const pattern = q.maxDecimalPlaces ? /^-?\d*(?:\.\d{0,2})?$/ : /^-?\d*$/;
+                      if (!pattern.test(value)) return;
                       setAnswers((current) => current.map((answer, index) =>
                         index === currentIndex ? value || null : answer,
                       ));
@@ -469,8 +496,32 @@ export default function TestAttemptClient({
                     aria-describedby="numerical-answer-note"
                   />
                   <p id="numerical-answer-note" className="mt-2 text-xs leading-5 text-ink-500">
-                    Section B uses numerical-value answers. Do not enter units or symbols.
+                    Enter only the value, without units or symbols.
                   </p>
+                </div>
+              ) : q.answerType === 'multi-select' ? (
+                <div role="group" aria-labelledby="current-question" aria-describedby="multi-select-note">
+                  <p id="multi-select-note" className="mb-3 text-xs leading-5 text-ink-500">
+                    Select one or more options. Partial marks apply only when every selected option is correct.
+                  </p>
+                  {q.options.map((opt, oi) => {
+                    const selected = Array.isArray(answers[currentIndex]) && answers[currentIndex].includes(oi);
+                    return (
+                      <OMRBubble
+                        key={oi}
+                        letter={String.fromCharCode(65 + oi)}
+                        label={opt}
+                        selected={selected}
+                        multiple
+                        onSelect={() => setAnswers((current) => current.map((answer, index) => {
+                          if (index !== currentIndex) return answer;
+                          const choices = Array.isArray(answer) ? answer : [];
+                          const next = choices.includes(oi) ? choices.filter((choice) => choice !== oi) : [...choices, oi].sort();
+                          return next.length ? next : null;
+                        }))}
+                      />
+                    );
+                  })}
                 </div>
               ) : (
                 <div role="radiogroup" aria-labelledby="current-question">

@@ -170,6 +170,12 @@ import { SSC_SELECTION_POST_GRADUATION_CBE_1 } from './question-banks/ssc-select
 import { JEE_MAIN_PAPER_1_MATHEMATICS_1 } from './question-banks/jee-main-paper-1-mathematics-1';
 import { JEE_MAIN_PAPER_1_PHYSICS_1 } from './question-banks/jee-main-paper-1-physics-1';
 import { JEE_MAIN_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-main-paper-1-chemistry-1';
+import { JEE_ADVANCED_PAPER_1_MATHEMATICS_1 } from './question-banks/jee-advanced-paper-1-mathematics-1';
+import { JEE_ADVANCED_PAPER_1_PHYSICS_1 } from './question-banks/jee-advanced-paper-1-physics-1';
+import { JEE_ADVANCED_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-advanced-paper-1-chemistry-1';
+import { JEE_ADVANCED_PAPER_2_MATHEMATICS_1 } from './question-banks/jee-advanced-paper-2-mathematics-1';
+import { JEE_ADVANCED_PAPER_2_PHYSICS_1 } from './question-banks/jee-advanced-paper-2-physics-1';
+import { JEE_ADVANCED_PAPER_2_CHEMISTRY_1 } from './question-banks/jee-advanced-paper-2-chemistry-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -205,8 +211,11 @@ export interface Question {
   question: string;
   options: string[];
   correctIndex: number;
-  answerType?: 'mcq' | 'numerical';
+  answerType?: 'mcq' | 'multi-select' | 'numerical';
   correctValue?: string;
+  correctIndices?: number[];
+  partialMarking?: boolean;
+  maxDecimalPlaces?: number;
   marks?: number;
   negativeMarking?: number;
   explanation: string;
@@ -820,7 +829,20 @@ const JEE_MAIN_TESTS: Record<string, Question[]> = {
   'jee-main/paper-1-quick-60min': jeeMainQuick(6, 2, 6),
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, JEE_MAIN_TESTS);
+const JEE_ADVANCED_PAPER_1_BANKS = [JEE_ADVANCED_PAPER_1_MATHEMATICS_1, JEE_ADVANCED_PAPER_1_PHYSICS_1, JEE_ADVANCED_PAPER_1_CHEMISTRY_1];
+const JEE_ADVANCED_PAPER_2_BANKS = [JEE_ADVANCED_PAPER_2_MATHEMATICS_1, JEE_ADVANCED_PAPER_2_PHYSICS_1, JEE_ADVANCED_PAPER_2_CHEMISTRY_1];
+const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
+  'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
+  'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
+  'jee-advanced/paper-1-physics-sectional-1': JEE_ADVANCED_PAPER_1_PHYSICS_1,
+  'jee-advanced/paper-1-chemistry-sectional-1': JEE_ADVANCED_PAPER_1_CHEMISTRY_1,
+  'jee-advanced/paper-2-full-mock-1': JEE_ADVANCED_PAPER_2_BANKS.flat(),
+  'jee-advanced/paper-2-mathematics-sectional-1': JEE_ADVANCED_PAPER_2_MATHEMATICS_1,
+  'jee-advanced/paper-2-physics-sectional-1': JEE_ADVANCED_PAPER_2_PHYSICS_1,
+  'jee-advanced/paper-2-chemistry-sectional-1': JEE_ADVANCED_PAPER_2_CHEMISTRY_1,
+};
+
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -861,6 +883,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 100
     : testId.includes('jee-main/paper-1-full-mock')
     ? 75
+    : testId.includes('jee-advanced/paper-1-full-mock')
+    ? 48
+    : testId.includes('jee-advanced/paper-2-full-mock')
+    ? 54
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
     : testId.includes('ibps-so/prelims-full-mock')
@@ -989,6 +1015,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? testId.includes('mathematics') ? 25
               : testId.includes('general-intelligence-reasoning') ? 25
                 : testId.includes('general-science') ? 40 : 10
+          : testId.includes('jee-advanced/paper-1-')
+            ? 16
+          : testId.includes('jee-advanced/paper-2-')
+            ? 18
           : testId.includes('rrb-paramedical')
             ? 10
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
@@ -1008,8 +1038,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     if (!question.id || ids.has(question.id)) throw new Error(`${testId} contains a missing or duplicate question ID`);
     if (text.has(question.question)) throw new Error(`${testId} contains a duplicate question`);
     if (question.answerType === 'numerical') {
-      if (question.options.length !== 0 || question.correctIndex !== -1 || !/^-?\d+$/.test(question.correctValue ?? '')) {
+      const precision = question.maxDecimalPlaces ?? 0;
+      const valuePattern = precision > 0 ? /^-?\d+(?:\.\d{1,2})?$/ : /^-?\d+$/;
+      if (question.options.length !== 0 || question.correctIndex !== -1 || !valuePattern.test(question.correctValue ?? '')) {
         throw new Error(`${question.id} has an invalid numerical answer`);
+      }
+    } else if (question.answerType === 'multi-select') {
+      if (question.options.length !== 4 || new Set(question.options).size !== 4 || !question.correctIndices?.length || new Set(question.correctIndices).size !== question.correctIndices.length || question.correctIndices.some((index) => !Number.isInteger(index) || index < 0 || index > 3)) {
+        throw new Error(`${question.id} has an invalid multi-select answer`);
       }
     } else {
       if (question.options.length !== 4) throw new Error(`${question.id} must contain four options`);
@@ -1234,6 +1270,8 @@ const niaclAoPrelimsLayout = [
   { section: 'Reasoning Ability', count: 35 },
   { section: 'Quantitative Aptitude', count: 35 },
 ];
+const jeeAdvancedPaper1Layout = ['Mathematics', 'Physics', 'Chemistry'].map((section) => ({ section, count: 16 }));
+const jeeAdvancedPaper2Layout = ['Mathematics', 'Physics', 'Chemistry'].map((section) => ({ section, count: 18 }));
 const niaclAoMainsLayout = [
   { section: 'Reasoning', count: 50 },
   { section: 'English Language', count: 50 },
@@ -1267,6 +1305,10 @@ const rrbTechnicianGrade3Layout = [
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
+    : testId.includes('jee-advanced/paper-1-full-mock')
+      ? jeeAdvancedPaper1Layout
+      : testId.includes('jee-advanced/paper-2-full-mock')
+        ? jeeAdvancedPaper2Layout
     : testId.includes('ibps-po/mains-full-mock')
       ? ibpsPoMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
@@ -1542,6 +1584,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     JEE_MAIN_PAPER_1_MATHEMATICS_1[0],
     JEE_MAIN_PAPER_1_PHYSICS_1[0],
     JEE_MAIN_PAPER_1_CHEMISTRY_1[0],
+  ],
+  'jee-advanced': [
+    JEE_ADVANCED_PAPER_1_MATHEMATICS_1[0],
+    JEE_ADVANCED_PAPER_1_PHYSICS_1[0],
+    JEE_ADVANCED_PAPER_1_CHEMISTRY_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
