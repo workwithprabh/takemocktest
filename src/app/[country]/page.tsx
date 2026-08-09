@@ -4,7 +4,7 @@ import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
 import OMRBubble from '@/components/OMRBubble';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
-import { CATALOG_EXAM_COUNT, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
+import { CATALOG_EXAM_COUNT, EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { organizationSchema, websiteSchema, faqPageSchema } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, getLatestUpdates } from '@/lib/updates';
 import { getQuestionsForTest } from '@/lib/questions';
@@ -14,6 +14,9 @@ const previewQuestion = getQuestionsForTest('ssc-cgl', 'tier-1-quantitative-apti
 const previewOptionIndices = previewQuestion.correctIndex === 0 ? [0, 1] : [0, previewQuestion.correctIndex];
 const checkedTestCount = EXAM_LIST.reduce((total, exam) => total + getCheckedTestCount(exam), 0);
 const checkedExamCount = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0).length;
+const examSuggestions = Array.from(new Map(
+  EXAM_CATEGORIES.flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
+).values());
 const featuredExams = EXAM_LIST.slice(0, 6);
 
 // TODO: Add a student counter only after verified analytics data is available.
@@ -141,10 +144,16 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                   id="homepage-exam-search"
                   name="q"
                   type="search"
+                  list="available-exam-suggestions"
+                  autoComplete="off"
                   placeholder="Try SSC CGL, SBI Clerk, RRB NTPC..."
                   className="min-h-12 flex-1 border border-ink-600 bg-white px-4 text-sm text-ink-900 outline-none placeholder:text-ink-500 focus:border-white focus:ring-1 focus:ring-white"
                 />
-                <input type="hidden" name="availability" value="available" />
+                <datalist id="available-exam-suggestions">
+                  {examSuggestions.map((exam) => (
+                    <option key={exam.name} value={exam.name} label={exam.liveSlug ? 'Mock test available' : 'Listed — coming soon'} />
+                  ))}
+                </datalist>
                 <button type="submit" className="min-h-12 bg-white px-6 text-sm font-semibold text-ink-900 transition hover:bg-ink-100">
                   Find test
                 </button>
