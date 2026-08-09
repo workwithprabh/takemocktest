@@ -3,9 +3,8 @@ import { ExamConfig, getCheckedTestCount, getExamSections } from '@/lib/exams';
 
 const CATEGORY_STYLES = {
   SSC: {
-    surface: 'bg-ink-100',
-    border: 'border-ink-300',
-    text: 'text-ink-700',
+    surface: 'bg-[#FFF1D6]',
+    iconText: 'text-[#9A5B00]',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
         <path d="M5 19V9l7-4 7 4v10M3 19h18M8 11v5m4-5v5m4-5v5" fill="none" stroke="currentColor" strokeWidth="1.7" />
@@ -13,9 +12,8 @@ const CATEGORY_STYLES = {
     ),
   },
   Banking: {
-    surface: 'bg-ink-100',
-    border: 'border-ink-300',
-    text: 'text-ink-700',
+    surface: 'bg-[#E4F0FF]',
+    iconText: 'text-[#245B9B]',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
         <path d="m3 9 9-5 9 5M5 10h14M6 10v7m4-7v7m4-7v7m4-7v7M3 20h18" fill="none" stroke="currentColor" strokeWidth="1.7" />
@@ -23,9 +21,8 @@ const CATEGORY_STYLES = {
     ),
   },
   Railways: {
-    surface: 'bg-ink-100',
-    border: 'border-ink-300',
-    text: 'text-ink-700',
+    surface: 'bg-[#E3F3EA]',
+    iconText: 'text-[#2E7250]',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
         <path d="M7 4h10a2 2 0 0 1 2 2v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6a2 2 0 0 1 2-2Zm-2 8h14M8 8h8M8 21l2-3m6 0 2 3" fill="none" stroke="currentColor" strokeWidth="1.7" />
@@ -35,12 +32,20 @@ const CATEGORY_STYLES = {
     ),
   },
   'Civil Services': {
-    surface: 'bg-ink-100',
-    border: 'border-ink-300',
-    text: 'text-ink-700',
+    surface: 'bg-[#EEE8FF]',
+    iconText: 'text-[#654AA3]',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
         <path d="M12 3 3 7.5 12 12l9-4.5L12 3Zm-7 6v6c0 1.5 3 4 7 4s7-2.5 7-4V9M21 8v7" fill="none" stroke="currentColor" strokeWidth="1.7" />
+      </svg>
+    ),
+  },
+  Engineering: {
+    surface: 'bg-[#FFEAD8]',
+    iconText: 'text-[#9A4B10]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" fill="none" stroke="currentColor" strokeWidth="1.7" />
       </svg>
     ),
   },
@@ -55,30 +60,25 @@ export default function ExamCard({ exam, country }: { exam: ExamConfig; country:
     <Link
       href={`/${country}/${exam.slug}/mock-test`}
       aria-label={checkedTestCount > 0 ? `Open free ${exam.name} mock tests` : `Try the ${exam.name} test interface demo`}
-      className={`group flex min-h-56 flex-col border bg-white p-5 transition duration-200 hover:-translate-y-1 hover:border-ink-300 hover:shadow-xl hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900 ${style.border}`}
+      className="group flex min-h-44 flex-col border border-ink-300 bg-ink-50 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-ink-400 hover:bg-white hover:shadow-lg hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
     >
-      <div className="mb-5 flex items-start justify-between gap-3">
-        <div className={`flex h-12 w-12 items-center justify-center ${style.surface} ${style.text}`}>
+      <div className="mb-4 flex items-start justify-between gap-3">
+        <div className={`flex h-10 w-10 items-center justify-center ${style.surface} ${style.iconText}`}>
           {style.icon}
         </div>
-        <span className={`px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide ${style.surface} ${style.text}`}>
+        <span className="bg-ink-100 px-2 py-1 text-[10px] font-semibold uppercase tracking-wide text-ink-700">
           {exam.category}
         </span>
       </div>
 
-      <div className={`mb-1 font-sans text-xl font-bold ${style.text}`}>{exam.name}</div>
-      <p className="mb-5 text-sm leading-6 text-ink-500">
+      <div className="mb-1 font-sans text-lg font-bold text-ink-900">{exam.name}</div>
+      <p className="mb-4 text-xs leading-5 text-ink-500">
         {sectionCount} listed sections · {exam.stages.length} stages
       </p>
 
-      <div className="mt-auto flex items-center justify-between border-t border-ink-100 pt-4">
-        <span>
-          <span className="block text-sm font-semibold text-ink-900">
-            {checkedTestCount > 0 ? 'View tests' : 'Try demo'}
-          </span>
-          <span className="block text-xs text-ink-500">
-            {checkedTestCount > 0 ? `${checkedTestCount} syllabus-checked` : 'Practice demo only'}
-          </span>
+      <div className="mt-auto flex items-center justify-between border-t border-ink-200 pt-3">
+        <span className="text-xs font-semibold text-ink-700">
+          {checkedTestCount > 0 ? `${checkedTestCount} checked tests` : 'Practice demo'}
         </span>
         <span className="flex h-8 w-8 items-center justify-center bg-ink-900 text-white transition group-hover:translate-x-0.5" aria-hidden="true">
           →

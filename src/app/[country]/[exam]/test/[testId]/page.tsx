@@ -501,6 +501,52 @@ const SSC_STENO_CBT_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_CHT_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC Combined Hindi Translators question paper?',
+    answer: 'No. This is an independent practice mock with 200 original questions mapped to the official 2026 Paper I syllabus and pattern.',
+  },
+  {
+    question: 'Does SSC CHT Paper I have separate timers for Hindi and English?',
+    answer: 'Yes. General Hindi and General English each have a separate 60-minute timer, so unused time from one part cannot be shifted to the other part.',
+  },
+  {
+    question: 'How much negative marking applies in SSC CHT Paper I?',
+    answer: 'Each wrong answer deducts 0.25 marks. A correct answer earns 1 mark, while an unattempted question scores zero.',
+  },
+  {
+    question: 'Does this mock include SSC CHT Paper II translation and essays?',
+    answer: 'No. Paper II is a 200-mark descriptive test with two translation passages and one essay each in Hindi and English, so an MCQ interface cannot model it accurately.',
+  },
+  {
+    question: 'Do I need an account to attempt the SSC CHT mock?',
+    answer: 'No. You can start the 200-question Paper I mock without signing up, and the result is stored only on your current device.',
+  },
+];
+
+const SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC Selection Post question paper?',
+    answer: 'No. This is an independent practice mock with original questions mapped to the official Phase XIV/2026 Selection Posts syllabus and pattern.',
+  },
+  {
+    question: 'Which SSC Selection Post level should I attempt?',
+    answer: 'Choose the level stated for your post code: Matriculation, Higher Secondary (10+2), or Graduation and Above. SSC conducts a separate CBE for each minimum educational qualification level.',
+  },
+  {
+    question: 'How do the sectional timers work?',
+    answer: 'Each of the four parts has a separate 15-minute timer. When a part ends it locks, and unused time cannot be moved to another part.',
+  },
+  {
+    question: 'How is the SSC Selection Post CBE scored?',
+    answer: 'A correct answer earns 2 marks, a wrong answer deducts 0.50 marks, and an unattempted question scores zero.',
+  },
+  {
+    question: 'Does this mock include post-specific skill tests?',
+    answer: 'No. Typing, Data Entry or Computer Proficiency tests apply only to certain post codes and are qualifying unless the post details specify otherwise, so they are not included in this common CBE mock.',
+  },
+];
+
 const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official SSC CPO question paper?',
@@ -831,6 +877,67 @@ const RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS = [
   },
 ];
 
+const JEE_MAIN_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JEE Main question paper?',
+    answer: 'No. It is an independent practice mock with 75 original questions mapped to the official JEE Main 2026 Paper 1 syllabus and pattern for B.E. and B.Tech. admission.',
+  },
+  {
+    question: 'What is the JEE Main Paper 1 pattern in this mock?',
+    answer: 'Paper 1 has 75 questions for 300 marks in 180 minutes. Mathematics, Physics, and Chemistry each contribute 25 questions and 100 marks under one combined timer.',
+  },
+  {
+    question: 'How are JEE Main numerical-value questions handled?',
+    answer: 'Fifteen questions use numerical entry, with 5 in each subject. Enter the nearest integer without units or symbols, matching the official Section B response method.',
+  },
+  {
+    question: 'Is there negative marking in JEE Main Paper 1?',
+    answer: 'Yes. Every correct answer earns 4 marks and every incorrect answer deducts 1 mark in both the multiple-choice and numerical-value sections. Unattempted questions score zero.',
+  },
+  {
+    question: 'Which JEE Main session score is used for ranking?',
+    answer: 'The best total NTA Score is considered when a candidate appears in more than one 2026 session. This practice result is a raw mock score, not an NTA percentile or rank prediction.',
+  },
+];
+
+const JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JEE Advanced Paper 1?',
+    answer: 'No. It is an independent practice mock with 48 original questions mapped to the official JEE Advanced 2026 Paper 1 syllabus, question types, marks, and timing.',
+  },
+  {
+    question: 'What is the JEE Advanced Paper 1 pattern in this mock?',
+    answer: 'Paper 1 has 48 questions for 180 marks in 180 minutes. Each of Mathematics, Physics, and Chemistry contains 4 single-correct, 4 multi-select, 4 numerical-value, and 4 matching-list questions.',
+  },
+  {
+    question: 'How does partial marking work for multi-select questions?',
+    answer: 'Selecting every correct option earns 4 marks. A proper subset of only correct options earns marks equal to the number selected under the official partial-marking rule. Selecting any incorrect option deducts 1 mark.',
+  },
+  {
+    question: 'Are both JEE Advanced papers compulsory?',
+    answer: 'Yes. Candidates must appear in both Paper 1 and Paper 2 for their JEE Advanced result to be evaluated. This mock reports a raw practice score, not a rank prediction.',
+  },
+];
+
+const JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JEE Advanced Paper 2?',
+    answer: 'No. It is an independent practice mock with 54 original questions mapped to the official JEE Advanced 2026 Paper 2 syllabus, question types, marks, and timing.',
+  },
+  {
+    question: 'What is the JEE Advanced Paper 2 pattern in this mock?',
+    answer: 'Paper 2 has 54 questions for 180 marks in 180 minutes. Each subject contains 4 single-correct, 5 multi-select, 5 numerical-value, and 4 stem-based numerical questions.',
+  },
+  {
+    question: 'Do numerical-value questions have negative marking?',
+    answer: 'No. In the official 2026 Paper 2 pattern, the five standalone numerical questions per subject carry 4 marks each and the four stem-based numerical questions carry 2 marks each, with zero penalty for an incorrect answer.',
+  },
+  {
+    question: 'Does this score predict a JEE Advanced rank?',
+    answer: 'No. It is a raw practice score for this original mock. JEE Advanced rank depends on performance across both compulsory official papers and the applicable rank-list criteria.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -852,6 +959,10 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rpf-si/cbt': RPF_SI_CBT_FULL_MOCK_FAQS,
   'ssc-je/paper-1': SSC_JE_PAPER_1_FULL_MOCK_FAQS,
   'ssc-steno/cbt': SSC_STENO_CBT_FULL_MOCK_FAQS,
+  'ssc-cht/paper-1': SSC_CHT_PAPER_1_FULL_MOCK_FAQS,
+  'ssc-selection-post/matriculation': SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS,
+  'ssc-selection-post/higher-secondary': SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS,
+  'ssc-selection-post/graduation': SSC_SELECTION_POST_CBE_FULL_MOCK_FAQS,
   'ssc-cpo/paper-1': SSC_CPO_PAPER_1_FULL_MOCK_FAQS,
   'ibps-so/prelims': IBPS_SO_PRELIMS_FULL_MOCK_FAQS,
   'rbi-grade-b/phase-1': RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS,
@@ -866,6 +977,9 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rrb-alp/cbt-2': RRB_ALP_CBT2_FULL_MOCK_FAQS,
   'rrb-technician/grade-1-signal': RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS,
   'rrb-technician/grade-3': RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS,
+  'jee-main/paper-1': JEE_MAIN_PAPER_1_FULL_MOCK_FAQS,
+  'jee-advanced/paper-1': JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS,
+  'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
@@ -926,7 +1040,7 @@ export default async function TestInstructionsPage({
           '@type': 'Quiz',
           name: `${exam.name} ${test.name}`,
           description: isFullMock
-            ? `A free ${questionCount}-question ${exam.name} ${stage.name} practice mock with sectional timing and instant results.`
+            ? `A free ${questionCount}-question ${exam.name} ${stage.name} practice mock with ${test.sectionDuration || test.sectionDurations ? 'sectional timing' : 'one combined timer'} and instant results.`
             : `A free ${questionCount}-question ${exam.name} ${stage.name} practice test with instant results.`,
           url: `${SITE_URL}${pagePath}`,
           inLanguage: 'en-IN',

@@ -2,6 +2,104 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-09 - JEE Advanced Papers 1 and 2 (Batch 34, live session)
+
+Added JEE Advanced 2026 Paper 1 and Paper 2 as separate compulsory stages. Paper 1
+contains 48 questions for 180 marks in 180 minutes; Paper 2 contains 54 questions
+for 180 marks in 180 minutes. Each stage has one full mock and three subject
+sectionals across Mathematics, Physics, and Chemistry.
+
+Extended the shared attempt engine only where the official format required it:
+multi-select OMR responses, official partial marking, decimal numerical entry,
+per-question marks and penalties, and a distinct partial-score result state. The
+existing single-choice and JEE Main integer-entry paths remain unchanged. Drafts
+continue to preserve every answer format and the timer across refreshes.
+
+Built six original subject banks totalling 102 questions. Paper 1 follows the exact
+per-subject mix of 4 single-correct, 4 multi-select, 4 numerical-value, and 4
+matching-list questions. Paper 2 follows the exact per-subject mix of 4
+single-correct, 5 multi-select, 5 numerical-value, and 4 stem-based numerical
+questions. Marks and negative marking are stored on every question.
+
+Full corpus after this batch: 177 question-bank files, 5,432 questions, zero
+duplicate IDs or text. Question QA, focused lint, type checking, and the 1,011-page
+production build pass.
+
+## 2026-08-09 - JEE Main Paper 1 (Batch 33, live session)
+
+Added JEE Main 2026 Paper 1 for B.E. and B.Tech. admission with 25 Mathematics,
+25 Physics, and 25 Chemistry questions. Each subject bank contains 20
+multiple-choice questions and 5 numerical-value questions, matching the official
+75-question, 300-mark, 180-minute pattern. The package includes one full mock,
+three subject tests, and two mixed quick tests. Both question formats use +4 for a
+correct answer and -1 for an incorrect answer.
+
+Extended the shared attempt engine with integer-entry questions because converting
+JEE Section B into four-option questions would not reproduce the official response
+method. Numerical answers now persist with the attempt, score correctly after a
+refresh, appear in the result review, and are included in pre-filled issue reports.
+All older OMR-style tests continue to use the existing path.
+
+The first corpus audit caught one pair of algebraically different Physics distractors
+that became identical under the audit's case-insensitive comparison. One distractor
+was replaced before the clean run. All new MCQ banks have balanced answer positions
+of 5/5/5/5 and include hard-tagged material. The 15 numerical keys were checked
+separately with integer calculations.
+
+Full corpus after this batch: 171 question-bank files, 5,330 questions, zero
+duplicate IDs or text. Question QA, lint, asset QA, and the 983-page production
+build pass.
+
+## 2026-08-09 - SSC Selection Post (Batch 32, live session)
+
+Added the three separate Phase XIV/2026 Selection Posts CBEs: Matriculation,
+Higher Secondary (10+2), and Graduation and Above. Each level now has one
+100-question full mock, four 25-question sectional tests, and two mixed quick
+tests. Every full mock carries 200 marks, runs for 60 minutes with four locked
+15-minute sections, and deducts 0.50 marks for a wrong answer.
+
+Built 300 original questions across three level-specific banks. The four common
+sections are General Intelligence, General Awareness, Quantitative Aptitude,
+and English Language. The Graduation mock keeps Quantitative Aptitude at Class
+10 standard as the official notice requires, while its other sections are set
+at graduation level. The Matriculation mock clearly discloses that figure-based
+non-verbal items are represented by text-compatible logic questions in this
+initial release. Post-specific qualifying skill tests are not modeled because
+they vary by post code.
+
+The first corpus audit found 17 question-text collisions with earlier banks;
+all stems were rewritten. Manual review also corrected an inconsistent coding
+example, an alphabet-order answer, an ambiguous set relation, a wrong coded
+answer, an invalid number-series pattern, a remainder edge case, and an unclear
+reported-speech pronoun before the final audit.
+
+Full corpus after this batch: 168 question-bank files, 5,255 questions, zero
+duplicate IDs or text, and balanced answer positions of 25/25/25/25 in each new
+bank. Question QA, lint, and the 959-page production build all pass.
+
+## 2026-08-09 - SSC Combined Hindi Translators (Batch 31, live session)
+
+Added SSC Combined Hindi Translators Paper I with 100 General Hindi and 100
+General English questions. The package includes 1 full mock, 2 sectional
+tests, and 3 quick tests. The full mock follows the official 2026 pattern:
+200 questions, 200 marks, 120 minutes, separate 60-minute timers for each
+part, and a 0.25-mark deduction for every wrong answer.
+
+Paper II is deliberately excluded. It is a descriptive paper containing
+Hindi-to-English and English-to-Hindi translation plus one essay in each
+language, so the current multiple-choice interface cannot reproduce it
+accurately.
+
+The first automated audit passed with zero duplicate IDs or question text.
+Manual language review then caught two Hindi distractors that could also be
+accepted as valid synonyms and two English stems that needed tighter wording;
+all four were corrected before the final audit. Answer positions are balanced
+at 25/25/25/25 in both 100-question banks.
+
+Full corpus after this batch: 165 question-bank files, 4,955 questions, zero
+duplicate IDs or text, zero answer-balance failures. Question QA, lint, and the
+905-page production build all pass.
+
 ## 2026-08-07 — SSC Stenographer Grade C & D (Batch 30, live session)
 
 Added SSC Stenographer Grade C & D: Computer Based Examination (General

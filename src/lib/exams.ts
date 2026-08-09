@@ -28,7 +28,11 @@ export type ExamSlug =
   | 'rrb-paramedical'
   | 'rpf-si'
   | 'ssc-je'
-  | 'ssc-steno';
+  | 'ssc-steno'
+  | 'ssc-cht'
+  | 'ssc-selection-post'
+  | 'jee-main'
+  | 'jee-advanced';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -79,7 +83,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering';
   stages: TestStage[];
 }
 
@@ -112,6 +116,14 @@ const SSC_JE_2025_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2025.pdf';
 const SSC_STENO_2025_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2025.pdf';
+const SSC_CHT_2026_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cht_2026.pdf';
+const SSC_SELECTION_POST_2026_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf';
+const JEE_MAIN_2026_BULLETIN =
+  'https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/11/202511021649722475.pdf';
+const JEE_ADVANCED_2026_PAPER_1 = 'https://jeeadv.ac.in/documents/p1_english.pdf';
+const JEE_ADVANCED_2026_PAPER_2 = 'https://jeeadv.ac.in/documents/p2_english.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -125,6 +137,19 @@ const NIACL_AO_2025_NOTICE = 'https://www.newindia.co.in/assets/docs/recruitment
 const RRB_ALP_2025_NOTICE = 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_01-2025_ALP.pdf';
 const RRB_TECHNICIAN_2025_NOTICE = 'https://rrbajmer.gov.in/Upload_PDF/Detailed%20CEN%202-2025_%20Technician%20Categories-638866538197092718.pdf';
 const RRB_PARAMEDICAL_2025_NOTICE = 'https://rrbsecunderabad.gov.in/wp-content/uploads/2025/08/Final-CEN-03_2025-English.pdf';
+
+function selectionPostTests(level: string, prefix: string): TestConfig[] {
+  const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn: '9 August 2026' };
+  return [
+    { id: `${prefix}-cbe-full-mock-1`, name: `${level} Full Mock Test 1`, kind: 'full-length', duration: 60, sectionDuration: 15, ...common },
+    { id: `${prefix}-cbe-general-intelligence-sectional-1`, name: 'General Intelligence Sectional Test 1', kind: 'sectional', section: 'General Intelligence', duration: 15, ...common },
+    { id: `${prefix}-cbe-general-awareness-sectional-1`, name: 'General Awareness Sectional Test 1', kind: 'sectional', section: 'General Awareness', duration: 15, ...common },
+    { id: `${prefix}-cbe-quantitative-aptitude-sectional-1`, name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', section: 'Quantitative Aptitude', duration: 15, ...common },
+    { id: `${prefix}-cbe-english-language-sectional-1`, name: 'English Language Sectional Test 1', kind: 'sectional', section: 'English Language', duration: 15, ...common },
+    { id: `${prefix}-cbe-quick-10min`, name: `${level} Quick Test (10 Minutes)`, kind: 'quick', duration: 10, ...common },
+    { id: `${prefix}-cbe-quick-15min`, name: `${level} Quick Test (15 Minutes)`, kind: 'quick', duration: 15, ...common },
+  ];
+}
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -4127,6 +4152,271 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '7 August 2026',
           },
+        ],
+      },
+    ],
+  },
+  'ssc-cht': {
+    slug: 'ssc-cht',
+    name: 'SSC Combined Hindi Translators',
+    shortName: 'SSC CHT',
+    fullName: 'Staff Selection Commission: Combined Hindi Translators Examination',
+    category: 'SSC',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper I',
+        pattern: {
+          status: 'official',
+          cycle: 'Combined Hindi Translators Examination 2026',
+          sections: ['General Hindi', 'General English'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'Paper II is a 200-mark descriptive paper with Hindi to English translation, English to Hindi translation, and one essay in each language. It is not modeled here because an MCQ interface cannot reproduce descriptive translation and essay writing accurately. Paper I marks are used to shortlist candidates for Paper II.',
+          sectionBreakdown: [
+            { name: 'General Hindi', questions: 100, marks: 100, duration: 60 },
+            { name: 'General English', questions: 100, marks: 100, duration: 60 },
+          ],
+          timerNote: 'Each part has its own 60-minute timer. Once a part closes, unused time cannot be moved to the other part.',
+          sourceUrl: SSC_CHT_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          {
+            id: 'paper-1-full-mock-1',
+            name: 'Paper I Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            sectionDuration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-general-hindi-sectional-1',
+            name: 'General Hindi Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Hindi',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-general-english-sectional-1',
+            name: 'General English Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General English',
+            duration: 60,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-quick-10min',
+            name: 'Quick Test (10 Minutes)',
+            kind: 'quick',
+            status: 'checked',
+            duration: 10,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-quick-15min',
+            name: 'Quick Test (15 Minutes)',
+            kind: 'quick',
+            status: 'checked',
+            duration: 15,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+          {
+            id: 'paper-1-quick-20min',
+            name: 'Quick Test (20 Minutes)',
+            kind: 'quick',
+            status: 'checked',
+            duration: 20,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '9 August 2026',
+          },
+        ],
+      },
+    ],
+  },
+  'ssc-selection-post': {
+    slug: 'ssc-selection-post',
+    name: 'SSC Selection Post',
+    shortName: 'SSC Selection Post',
+    fullName: 'Staff Selection Commission: Phase XIV/2026 Selection Posts Examination',
+    category: 'SSC',
+    stages: [
+      {
+        id: 'matriculation',
+        name: 'Matriculation Level',
+        pattern: {
+          status: 'official',
+          cycle: 'Phase XIV/2026',
+          sections: ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 60,
+          negativeMarking: 0.5,
+          sectionBreakdown: [
+            { name: 'General Intelligence', questions: 25, marks: 50, duration: 15 },
+            { name: 'General Awareness', questions: 25, marks: 50, duration: 15 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 50, duration: 15 },
+            { name: 'English Language', questions: 25, marks: 50, duration: 15 },
+          ],
+          timerNote: 'Each part has its own 15-minute timer. Unused time cannot be moved to another part',
+          note: 'This is the CBE for posts requiring Matriculation. Figure-based non-verbal reasoning is approximated with text-compatible logic questions in this initial mock. Post-specific skill tests, where prescribed, are qualifying and are not modeled here.',
+          sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: selectionPostTests('Matriculation Level', 'matriculation'),
+      },
+      {
+        id: 'higher-secondary',
+        name: 'Higher Secondary (10+2) Level',
+        pattern: {
+          status: 'official',
+          cycle: 'Phase XIV/2026',
+          sections: ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 60,
+          negativeMarking: 0.5,
+          sectionBreakdown: [
+            { name: 'General Intelligence', questions: 25, marks: 50, duration: 15 },
+            { name: 'General Awareness', questions: 25, marks: 50, duration: 15 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 50, duration: 15 },
+            { name: 'English Language', questions: 25, marks: 50, duration: 15 },
+          ],
+          timerNote: 'Each part has its own 15-minute timer. Unused time cannot be moved to another part',
+          note: 'This is the separate CBE for posts requiring Higher Secondary (10+2). Post-specific skill tests, where prescribed, are qualifying and are not modeled here.',
+          sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: selectionPostTests('Higher Secondary Level', 'higher-secondary'),
+      },
+      {
+        id: 'graduation',
+        name: 'Graduation and Above Level',
+        pattern: {
+          status: 'official',
+          cycle: 'Phase XIV/2026',
+          sections: ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 60,
+          negativeMarking: 0.5,
+          sectionBreakdown: [
+            { name: 'General Intelligence', questions: 25, marks: 50, duration: 15 },
+            { name: 'General Awareness', questions: 25, marks: 50, duration: 15 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 50, duration: 15 },
+            { name: 'English Language', questions: 25, marks: 50, duration: 15 },
+          ],
+          timerNote: 'Each part has its own 15-minute timer. Unused time cannot be moved to another part',
+          note: 'General Intelligence, General Awareness and English are set at graduation level; Quantitative Aptitude remains at Class 10 level under the official syllabus. Post-specific skill tests, where prescribed, are qualifying and are not modeled here.',
+          sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
+          checkedOn: '9 August 2026',
+        },
+        tests: selectionPostTests('Graduation Level', 'graduation'),
+      },
+    ],
+  },
+  'jee-main': {
+    slug: 'jee-main',
+    name: 'JEE Main',
+    shortName: 'JEE Main',
+    fullName: 'Joint Entrance Examination Main: Paper 1 for B.E. and B.Tech.',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper 1 (B.E./B.Tech.)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 75,
+          totalMarks: 300,
+          duration: 180,
+          negativeMarking: 1,
+          timerNote: 'Single 180-minute timer for all three subjects; no sectional lock',
+          note: 'Each subject has 20 multiple-choice questions and 5 numerical-value questions. Section B answers use integer entry, and NTA applies +4 for a correct answer and -1 for an incorrect answer in both sections.',
+          sourceUrl: JEE_MAIN_2026_BULLETIN,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          { id: 'paper-1-full-mock-1', name: 'Paper 1 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-quick-30min', name: 'Mixed Quick Test (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-quick-60min', name: 'Mixed Quick Test (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jee-advanced': {
+    slug: 'jee-advanced',
+    name: 'JEE Advanced',
+    shortName: 'JEE Advanced',
+    fullName: 'Joint Entrance Examination Advanced',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'paper-1',
+        name: 'Paper 1',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 48,
+          totalMarks: 180,
+          duration: 180,
+          negativeMarking: 'Varies by question type',
+          timerNote: 'Single 180-minute timer; candidates may move freely across subjects',
+          note: 'Per subject: 4 single-correct questions (+3/-1), 4 multi-select questions (+4 with partial marks, -1 otherwise), 4 numerical-value questions (+4/0), and 4 matching-list questions (+4/-1). Both JEE Advanced papers are compulsory.',
+          sourceUrl: JEE_ADVANCED_2026_PAPER_1,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          { id: 'paper-1-full-mock-1', name: 'Paper 1 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Uses the exact JEE Advanced 2026 Paper 1 marking rules for each question type.', checkedOn: '9 August 2026' },
+          { id: 'paper-1-mathematics-sectional-1', name: 'Paper 1 Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-physics-sectional-1', name: 'Paper 1 Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-1-chemistry-sectional-1', name: 'Paper 1 Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+        ],
+      },
+      {
+        id: 'paper-2',
+        name: 'Paper 2',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 54,
+          totalMarks: 180,
+          duration: 180,
+          negativeMarking: 'Varies by question type',
+          timerNote: 'Single 180-minute timer; candidates may move freely across subjects',
+          note: 'Per subject: 4 single-correct questions (+3/-1), 5 multi-select questions (+4 with partial marks, -1 otherwise), 5 numerical-value questions (+4/0), and 4 stem-based numerical questions (+2/0). Both JEE Advanced papers are compulsory.',
+          sourceUrl: JEE_ADVANCED_2026_PAPER_2,
+          checkedOn: '9 August 2026',
+        },
+        tests: [
+          { id: 'paper-2-full-mock-1', name: 'Paper 2 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Uses the exact JEE Advanced 2026 Paper 2 marking rules for each question type.', checkedOn: '9 August 2026' },
+          { id: 'paper-2-mathematics-sectional-1', name: 'Paper 2 Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-2-physics-sectional-1', name: 'Paper 2 Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+          { id: 'paper-2-chemistry-sectional-1', name: 'Paper 2 Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
         ],
       },
     ],

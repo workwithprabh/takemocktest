@@ -7,11 +7,13 @@ export default function OMRBubble({
   label,
   selected,
   onSelect,
+  multiple = false,
 }: {
   letter: string;
   label: string;
   selected: boolean;
   onSelect?: () => void;
+  multiple?: boolean;
 }) {
   const className = `flex w-full items-center gap-3.5 border-[1.5px] p-3.5 mb-2.5 text-left transition ${
     onSelect ? 'cursor-pointer hover:border-ink-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink-900' : ''
@@ -38,7 +40,7 @@ export default function OMRBubble({
   return (
     <button
       type="button"
-      role="radio"
+      role={multiple ? 'checkbox' : 'radio'}
       aria-checked={selected}
       onClick={onSelect}
       className={className}

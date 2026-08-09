@@ -4,7 +4,7 @@ import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
 import OMRBubble from '@/components/OMRBubble';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
-import { CATALOG_EXAM_COUNT, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
+import { CATALOG_EXAM_COUNT, EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { organizationSchema, websiteSchema, faqPageSchema } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, getLatestUpdates } from '@/lib/updates';
 import { getQuestionsForTest } from '@/lib/questions';
@@ -14,6 +14,10 @@ const previewQuestion = getQuestionsForTest('ssc-cgl', 'tier-1-quantitative-apti
 const previewOptionIndices = previewQuestion.correctIndex === 0 ? [0, 1] : [0, previewQuestion.correctIndex];
 const checkedTestCount = EXAM_LIST.reduce((total, exam) => total + getCheckedTestCount(exam), 0);
 const checkedExamCount = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0).length;
+const examSuggestions = Array.from(new Map(
+  EXAM_CATEGORIES.flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
+).values());
+const featuredExams = EXAM_LIST.slice(0, 6);
 
 // TODO: Add a student counter only after verified analytics data is available.
 const TRUST_METRICS = [
@@ -122,42 +126,62 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
       </div>
 
       <div className="mx-auto max-w-6xl px-5 pb-12 pt-12 md:pb-20 md:pt-24">
-        <section aria-labelledby="exams" className="mb-14 scroll-mt-20 md:mb-20">
-          <div className="mb-7 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
-            <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Available now</p>
-              <h2 id="exams" className="font-sans text-2xl font-bold text-ink-900 md:text-3xl">
-                Start a syllabus-checked mock test
-              </h2>
+        <section id="exams" aria-labelledby="exam-finder-heading" className="mb-14 scroll-mt-20 md:mb-20">
+          <div className="bg-ink-900 px-5 py-7 text-white md:px-8 md:py-9">
+            <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-end">
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">
+                  {checkedExamCount} exam series available
+                </p>
+                <h2 id="exam-finder-heading" className="font-sans text-2xl font-bold md:text-3xl">Search your mock test</h2>
+                <p className="mt-2 max-w-md text-sm leading-6 text-ink-300">
+                  Search by exam name, or start with one of the popular series below.
+                </p>
+              </div>
+              <form action={`/${country}/exams`} className="flex flex-col gap-2 sm:flex-row">
+                <label className="sr-only" htmlFor="homepage-exam-search">Search mock tests by exam name</label>
+                <input
+                  id="homepage-exam-search"
+                  name="q"
+                  type="search"
+                  list="available-exam-suggestions"
+                  autoComplete="off"
+                  placeholder="Try SSC CGL, SBI Clerk, RRB NTPC..."
+                  className="min-h-12 flex-1 border border-ink-600 bg-white px-4 text-sm text-ink-900 outline-none placeholder:text-ink-500 focus:border-white focus:ring-1 focus:ring-white"
+                />
+                <datalist id="available-exam-suggestions">
+                  {examSuggestions.map((exam) => (
+                    <option key={exam.name} value={exam.name} label={exam.liveSlug ? 'Mock test available' : 'Listed — coming soon'} />
+                  ))}
+                </datalist>
+                <button type="submit" className="min-h-12 bg-white px-6 text-sm font-semibold text-ink-900 transition hover:bg-ink-100">
+                  Find test
+                </button>
+              </form>
             </div>
-            <p className="max-w-sm text-sm text-ink-500">Review status is shown before every attempt, so students know exactly what they are taking.</p>
           </div>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-            {EXAM_LIST.map((exam) => (
-              <ExamCard key={exam.slug} exam={exam} country={country} />
-            ))}
-          </div>
-        </section>
 
-        <section aria-labelledby="find-an-exam" className="mb-14 bg-ink-900 px-5 py-7 text-white md:mb-20 md:px-8">
-          <div className="grid gap-5 md:grid-cols-[0.75fr_1.25fr] md:items-end">
-            <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">180-exam directory</p>
-              <h2 id="find-an-exam" className="text-2xl font-bold">Find your exam by name</h2>
+          <div className="border border-t-0 border-ink-200 bg-white p-5 md:p-7">
+            <div className="mb-5 flex items-end justify-between gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Popular starting points</p>
+                <p className="mt-1 text-sm text-ink-500">Every series below is free and syllabus-checked.</p>
+              </div>
+              <Link href={`/${country}/exams?availability=available`} className="hidden text-sm font-semibold text-ink-900 hover:underline sm:inline-flex">
+                View all {checkedExamCount} series <span className="ml-2" aria-hidden="true">→</span>
+              </Link>
             </div>
-            <form action={`/${country}/exams`} className="flex flex-col gap-2 sm:flex-row">
-              <label className="sr-only" htmlFor="homepage-exam-search">Exam name</label>
-              <input
-                id="homepage-exam-search"
-                name="q"
-                type="search"
-                placeholder="Search SSC, JEE, NEET, CAT..."
-                className="min-h-12 flex-1 border border-ink-600 bg-white px-4 text-sm text-ink-900 outline-none placeholder:text-ink-500 focus:border-white focus:ring-1 focus:ring-white"
-              />
-              <button type="submit" className="min-h-12 bg-white px-5 text-sm font-semibold text-ink-900 hover:bg-ink-100">
-                Search exams
-              </button>
-            </form>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {featuredExams.map((exam) => (
+                <ExamCard key={exam.slug} exam={exam} country={country} />
+              ))}
+            </div>
+            <Link
+              href={`/${country}/exams?availability=available`}
+              className="mt-5 flex min-h-12 items-center justify-center border border-ink-200 px-4 text-sm font-semibold text-ink-900 sm:hidden"
+            >
+              View all {checkedExamCount} exam series
+            </Link>
           </div>
         </section>
 
