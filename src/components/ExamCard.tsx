@@ -55,30 +55,25 @@ export default function ExamCard({ exam, country }: { exam: ExamConfig; country:
     <Link
       href={`/${country}/${exam.slug}/mock-test`}
       aria-label={checkedTestCount > 0 ? `Open free ${exam.name} mock tests` : `Try the ${exam.name} test interface demo`}
-      className={`group flex min-h-56 flex-col border bg-white p-5 transition duration-200 hover:-translate-y-1 hover:border-ink-300 hover:shadow-xl hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900 ${style.border}`}
+      className={`group flex min-h-44 flex-col border bg-ink-50 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-ink-400 hover:bg-white hover:shadow-lg hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900 ${style.border}`}
     >
-      <div className="mb-5 flex items-start justify-between gap-3">
-        <div className={`flex h-12 w-12 items-center justify-center ${style.surface} ${style.text}`}>
+      <div className="mb-4 flex items-start justify-between gap-3">
+        <div className={`flex h-10 w-10 items-center justify-center ${style.surface} ${style.text}`}>
           {style.icon}
         </div>
-        <span className={`px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide ${style.surface} ${style.text}`}>
+        <span className={`px-2 py-1 text-[10px] font-semibold uppercase tracking-wide ${style.surface} ${style.text}`}>
           {exam.category}
         </span>
       </div>
 
-      <div className={`mb-1 font-sans text-xl font-bold ${style.text}`}>{exam.name}</div>
-      <p className="mb-5 text-sm leading-6 text-ink-500">
+      <div className={`mb-1 font-sans text-lg font-bold ${style.text}`}>{exam.name}</div>
+      <p className="mb-4 text-xs leading-5 text-ink-500">
         {sectionCount} listed sections · {exam.stages.length} stages
       </p>
 
-      <div className="mt-auto flex items-center justify-between border-t border-ink-100 pt-4">
-        <span>
-          <span className="block text-sm font-semibold text-ink-900">
-            {checkedTestCount > 0 ? 'View tests' : 'Try demo'}
-          </span>
-          <span className="block text-xs text-ink-500">
-            {checkedTestCount > 0 ? `${checkedTestCount} syllabus-checked` : 'Practice demo only'}
-          </span>
+      <div className="mt-auto flex items-center justify-between border-t border-ink-200 pt-3">
+        <span className="text-xs font-semibold text-ink-700">
+          {checkedTestCount > 0 ? `${checkedTestCount} checked tests` : 'Practice demo'}
         </span>
         <span className="flex h-8 w-8 items-center justify-center bg-ink-900 text-white transition group-hover:translate-x-0.5" aria-hidden="true">
           →
