@@ -106,7 +106,7 @@ function Block({ block }: { block: GuideBlock }) {
             {block.items.map((item) => (
               <div key={item.title} className="bg-white p-4">
                 <h3 className="font-semibold text-ink-900">{item.title}</h3>
-                <p className="mt-1">{item.text}</p>
+                <p className="mt-1"><RichText text={item.text} /></p>
               </div>
             ))}
           </div>
@@ -124,7 +124,7 @@ function Block({ block }: { block: GuideBlock }) {
                 <span className="text-sm font-semibold text-ink-400" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
                 <div>
                   <h3 className="font-semibold text-ink-900">{item.title}</h3>
-                  <p className="mt-1">{item.text}</p>
+                  <p className="mt-1"><RichText text={item.text} /></p>
                 </div>
               </li>
             ))}
