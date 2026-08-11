@@ -223,3 +223,42 @@ Every catalog entry exists whether or not it's live (there are ~180 catalog entr
 - `verification` (per `QUESTION_BANK_HANDOFF.md`'s question-bank schema) — the independent-review evidence. Useful for the coding agent's own confidence but not part of the runtime `Question` type; drop it when converting to the `.ts` bank file.
 - `schemaVersion`, `examSlug`, `section`, `bankNumber` at the wrapper level of `QUESTION_BANK_HANDOFF.md`'s "File 2" JSON — these are handoff-file metadata, not part of the `Question[]` array itself once imported.
 - Any `researchNotes` in the exam brief — informs the coding agent's understanding but isn't stored as a repository field; fold anything load-bearing into `StagePattern.note` if it needs to stay visible on the site.
+
+## 13. `ExamGuidePage` / `GuideBlock` (guide pages: syllabus, eligibility, selection-process, and eventually admit-card/answer-key/result/cutoff/salary/previous-year-papers, in `src/lib/exam-guides.ts`)
+
+As of 2026-08-11 only `syllabus`, `eligibility`, and `selection-process` have this structured format (SSC CGL and IBPS PO populated as the reference examples, migrated verbatim from their prior hand-coded pages). The other six guide-page types still render their pre-existing SSC-CGL-only hardcoded JSX in each page.tsx and are not yet data-driven — extend `GuidePageType` and `EXAM_GUIDES` the same way when content for those is ready, don't invent a parallel mechanism.
+
+```ts
+type GuidePageType = 'syllabus' | 'eligibility' | 'selection-process';
+
+interface ExamGuidePage {
+  title: string;       // meta <title>, no brand suffix needed (pageMetadata() adds it if there's budget)
+  description: string; // meta description
+  heading: string;      // page H1
+  blocks: GuideBlock[]; // page body, rendered top to bottom by src/components/GuideBlocks.tsx
+}
+
+type GuideBlock =
+  | { type: 'callout'; heading?: string; text: string }                                        // highlighted "at a glance" box
+  | { type: 'paragraph'; heading?: string; text: string; tone?: 'plain' | 'boxed' }             // plain section or bordered box
+  | { type: 'statCards'; heading?: string; note?: string; cards: { label: string; value: string }[] }
+  | { type: 'table'; heading?: string; note?: string; minWidth?: string; headers: string[]; rows: string[][] }
+  | { type: 'keyValueGrid'; heading?: string; note?: string; items: { label: string; value: string }[] } // e.g. age-relaxation categories
+  | { type: 'infoBlocks'; heading?: string; note?: string; items: { title: string; text: string }[] }    // e.g. per-post qualification rules
+  | { type: 'numberedStages'; heading?: string; items: { title: string; text: string }[] }               // auto-numbered 01, 02, 03...
+  | { type: 'topicSections'; sections: { section: string; pattern?: string; topics: string[] }[] }        // syllabus-specific: section name + optional pattern badge + bullet list
+  | { type: 'sourceNote'; heading: string; text: string; sourceLabel: string; sourceUrl: string; tone?: 'plain' | 'boxed' }; // closing "verify against official source" block
+```
+
+Text fields support one inline markup pattern: `**bold**` (e.g. a date or key number), rendered via `src/components/GuideBlocks.tsx`'s `RichText`. No other markdown, no links inside guide-block text (unlike blog paragraphs, which support `[label](/path)` via a separate `BlogRichText` component).
+
+| Field | Produced by | Never invent |
+|---|---|---|
+| `title`, `description`, `heading` | ChatGPT | — |
+| `blocks` content (all facts, numbers, dates, category names) | ChatGPT, from the official notification | Every number here needs the same source discipline as `StagePattern`/`Question.source` — no guessed age limits, relaxation years, or stage descriptions. |
+| Which `GuideBlock` type fits which content | ChatGPT proposes, coding agent may adjust the block-type choice at integration time if a better fit exists (this is a structural/presentation decision, not a factual one) | — |
+| `EXAM_GUIDES[examSlug][pageType]` registration, sitemap inclusion, `noIndex` removal | Coding agent, only after the page passes review | Never flip a page from placeholder to live without the content actually being source-checked. |
+
+**Repository-only**: nothing — this structure has no coding-agent-derived fields beyond registration.
+
+**Handoff-only**: none currently defined; unlike the question-bank package, a guide-page content package doesn't need a `verification` sidecar field baked into the JSON — the independent Hard QA report travels alongside as a separate file per the standard handoff convention (§11).

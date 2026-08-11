@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { BLOG_POSTS } from '@/lib/blog';
+import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
 
 export const dynamic = 'force-static';
@@ -47,11 +48,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       if (hasOfficialPattern) {
         entries.push({ url: `${base}/exam-pattern`, changeFrequency: 'monthly', priority: 0.6 });
       }
-      const verifiedGuides = exam.slug === 'ssc-cgl'
-        ? ['syllabus', 'eligibility', 'selection-process', 'salary', 'previous-year-papers', 'cutoff', 'result', 'answer-key', 'admit-card']
-        : exam.slug === 'ibps-po'
-          ? ['syllabus', 'eligibility', 'selection-process']
-          : [];
+      // Pages 4-9 (salary/previous-year-papers/cutoff/result/answer-key/admit-card)
+      // don't have a GuidePageType/EXAM_GUIDES entry yet — SSC CGL's own copy for
+      // those still lives directly in each page.tsx, unchanged by this refactor.
+      const sscCglOnlyGuides = exam.slug === 'ssc-cgl'
+        ? ['salary', 'previous-year-papers', 'cutoff', 'result', 'answer-key', 'admit-card']
+        : [];
+      const verifiedGuides = [...Object.keys(EXAM_GUIDES[exam.slug] ?? {}), ...sscCglOnlyGuides];
       for (const guide of verifiedGuides) {
         entries.push({ url: `${base}/${guide}`, changeFrequency: 'monthly', priority: 0.6 });
       }
