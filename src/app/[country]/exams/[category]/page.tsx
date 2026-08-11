@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CategoryIcon } from '@/components/ExamCategoryCard';
 import { EXAM_CATEGORIES, getCategoryExamCount, getExamCategory } from '@/lib/exam-catalog';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, itemListSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import ExamFinder from '@/components/ExamFinder';
 
@@ -31,6 +31,11 @@ export default async function ExamCategoryPage({
   const category = getExamCategory(categorySlug);
   if (!category) return notFound();
 
+  const liveExams = category.groups
+    .flatMap((group) => group.exams)
+    .filter((exam) => exam.liveSlug)
+    .map((exam) => ({ name: exam.name, path: `/${country}/${exam.liveSlug}/mock-test` }));
+
   return (
     <div className="mx-auto max-w-5xl px-5 py-10 md:py-14">
       <script
@@ -45,6 +50,12 @@ export default async function ExamCategoryPage({
           ),
         }}
       />
+      {liveExams.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema(liveExams)) }}
+        />
+      )}
 
       <Link href={`/${country}/exams`} className="mb-7 inline-flex items-center gap-2 text-sm font-semibold text-ink-600 hover:text-ink-900">
         <span aria-hidden="true">←</span> All exam categories

@@ -8,6 +8,16 @@ const SOCIAL_IMAGE = {
   alt: 'Students preparing for a competitive exam',
 };
 
+// Budget for the full rendered <title> tag, including the " | TakeMockTest"
+// suffix. The root layout's title.template appends the brand name to every
+// page, which by itself costs 16 characters — on a long, specific page title
+// that tax is what pushes it from "fine" to "truncates in search results."
+// Rather than editing hundreds of individual page titles to compensate, this
+// function decides per-page whether there's budget for the brand suffix, and
+// uses `title: { absolute }` to bypass the layout template when there isn't,
+// so the page's own specific title gets the full character budget instead.
+const MAX_TITLE_LENGTH = 60;
+
 export function pageMetadata({
   title,
   description,
@@ -19,8 +29,10 @@ export function pageMetadata({
   path: string;
   noIndex?: boolean;
 }): Metadata {
+  const withBrand = `${title} | ${SITE_NAME}`;
+  const finalTitle = withBrand.length <= MAX_TITLE_LENGTH ? withBrand : title;
   return {
-    title,
+    title: { absolute: finalTitle },
     description,
     alternates: { canonical: path },
     openGraph: {

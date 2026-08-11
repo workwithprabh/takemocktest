@@ -2,6 +2,7 @@ import { EXAM_LIST, getExam } from '@/lib/exams';
 import { getQuestionsForTest } from '@/lib/questions';
 import { breadcrumbSchema, organizationSchema, faqPageSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
+import { getPostsMentioningExam } from '@/lib/blog';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import MockTestTabs from './MockTestTabs';
 import { notFound } from 'next/navigation';
@@ -133,6 +134,29 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
             </div>
           ))}
         </div>
+
+        {(() => {
+          const relatedPosts = getPostsMentioningExam(exam.name);
+          if (relatedPosts.length === 0) return null;
+          return (
+            <div className="mb-14">
+              <h2 className="font-sans font-semibold text-lg mb-4 text-ink-900">From the blog</h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {relatedPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/${country}/blog/${post.slug}`}
+                    className="block border border-ink-200 bg-white p-4 hover:border-ink-400"
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-wider text-ink-500">{post.category}</p>
+                    <p className="mt-1 font-semibold text-sm text-ink-900">{post.title}</p>
+                    <p className="mt-1 text-xs text-ink-500">{post.readTimeMin} min read</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         <h2 className="font-sans font-semibold text-lg mb-4 text-ink-900">Frequently asked questions</h2>
         <div className="space-y-3">
