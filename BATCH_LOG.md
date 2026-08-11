@@ -2,6 +2,23 @@
 
 Dated entries appended by whoever completes a batch (live session or scheduled cloud agent).
 
+## 2026-08-11 - BITSAT 2026 Mathematics Variant (Batch 35, live session)
+
+Added BITSAT 2026 Mathematics Variant Full Mock 1 with 130 original questions for
+390 marks in 180 minutes under one composite timer. The five banks match the
+official split: Physics 30, Chemistry 30, English Proficiency 10, Logical
+Reasoning 20, and Mathematics 40. Every correct answer earns 3 marks, every
+incorrect answer deducts 1 mark, and unattempted questions score zero. The
+optional 12 extra questions are deliberately excluded from this standard mock.
+
+The independent Hard QA pass reviewed all 130 questions and corrected six
+question-record defects before integration: two English verification or
+explanation references, two Logical Reasoning wording or topic issues, one
+underdetermined Logical Reasoning mapping rule, and one Mathematics distractor
+that duplicated the correct value in an equivalent form. The final five
+repository banks exactly match the corrected Hard QA files, with no unresolved
+content or pattern issue.
+
 ## 2026-08-09 - JEE Advanced Papers 1 and 2 (Batch 34, live session)
 
 Added JEE Advanced 2026 Paper 1 and Paper 2 as separate compulsory stages. Paper 1

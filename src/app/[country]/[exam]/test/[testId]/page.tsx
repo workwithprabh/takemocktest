@@ -1197,7 +1197,7 @@ export default async function TestInstructionsPage({
             <p className="text-sm leading-7 text-ink-500">
               {usesQuestionLevelScoring
                 ? `Each question uses its assigned marks and penalty; together they total ${maxScore} marks.`
-                : `Correct answers earn ${test.marksPerCorrect} marks and wrong answers deduct ${test.negativeMarking} marks.`}{' '}
+                : `Correct answers earn ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'} and wrong answers deduct ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}.`}{' '}
               Unattempted questions score zero. After submitting, you receive section-wise and topic-wise
               accuracy, time spent, answer explanations, and source links.
             </p>
