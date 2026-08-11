@@ -144,3 +144,54 @@ Hard Research Gate in ChatGPT
 → Project status update
 
 A stage or variant must not be described as SERIES COMPLETE merely because one full mock has been published. Follow the approved test-series manifest and distinguish IN PROGRESS, LAUNCH COMPLETE, and SERIES COMPLETE accurately.
+
+## 11. Approved-content handoff
+
+Use a fixed, versioned file naming convention for every ChatGPT-approved artifact:
+
+`{exam-slug}-{stage-or-variant}-{deliverable}-v{n}-APPROVED.{ext}`
+
+Examples:
+
+- `bitsat-2026-mathematics-exam-brief-v1-APPROVED.json`
+- `bitsat-2026-mathematics-test-series-manifest-v1-APPROVED.json`
+- `bitsat-2026-mathematics-physics-sectional-01-v1-APPROVED.json`
+- `bitsat-2026-mathematics-launch-package-hard-qa-v1-APPROVED.md`
+
+Every correction increments the version. Never overwrite a previously reviewed version while keeping the same filename — a corrected file is `v2`, not a silent rewrite of `v1`. The coding agent integrates only the version explicitly identified as APPROVED by Hard QA.
+
+Delivery is normally by direct file upload to the coding-agent session. If repository-based handoff is useful, use a dedicated tracked folder: `content-inbox/` (see `content-inbox/README.md`). Do not leave handoff or status files as loose untracked files in the repository root — track them in Git.
+
+After successful integration, approved source files may be archived or removed from `content-inbox/`, but the integrated production content (the `.ts` bank files and `exams.ts`/`exam-catalog.ts` entries) remains the source the application actually uses.
+
+## 12. Cross-corpus collision reference
+
+ChatGPT cannot reliably detect collisions against the entire live repository without repository-derived context. After each exam or meaningful question-bank integration, the coding agent regenerates a lightweight collision-risk reference:
+
+```
+node scripts/generate-collision-reference.mjs
+```
+
+This produces `TAKEMOCKTEST_COLLISION_REFERENCE.json` (machine-readable) and `TAKEMOCKTEST_COLLISION_REFERENCE.md` (human-readable), covering topic saturation across exams, known risky generic-template stems (patterns that have historically caused duplication on this project), and cross-exam shared question openings. It does not reproduce the full question corpus.
+
+Attach the latest collision-reference file to ChatGPT Writer prompts for subjects that overlap already-live exams (Reasoning, Quantitative Aptitude, General Awareness/GK, and English are the highest-overlap subjects on this site per the current reference). Repository-level duplicate checking during integration (`npm run qa:questions`) remains mandatory regardless — the reference reduces rework, it does not replace the technical check.
+
+## 13. `TAKEMOCKTEST_CURRENT_STATUS.md` is the repository status source of truth
+
+`TAKEMOCKTEST_CURRENT_STATUS.md` is tracked in Git and updated from repository evidence, not from chat memory. The coding agent is the sole authority for repository-derived numbers: catalog entries, live mock-test entries, question-bank files, total questions, generated page counts, build status, deployed exams, and commit information.
+
+After an integration or deployment, the coding agent regenerates these counts directly from the repository (`npm run qa:questions`, `grep`/`git log`, or an equivalent) before updating the file. ChatGPT may use the file for project management and may recommend status changes, but must not hand-edit the repository-derived metrics themselves. The file always carries a last-updated date and, where practical, the commit it reflects.
+
+## 14. `BATCH_ROADMAP.md` and `README.md` ownership
+
+Documentation freshness is part of the coding agent's integration responsibilities.
+
+`BATCH_ROADMAP.md` is checked after every completed exam integration and updated whenever its live-exam counts, queue state, or completed-work list are affected.
+
+`README.md` is checked after every integration but only changed when the integration makes an existing statement inaccurate or materially outdated — no noisy README commits for every exam if nothing relevant changed.
+
+The same principle applies to `public/llms.txt`, catalog counts, live-test counts, setup instructions, architecture descriptions, and project-status claims anywhere in tracked documentation: nothing should knowingly remain stale after the coding agent has evidence that its claims are wrong.
+
+## 15. Content-schema alignment
+
+`TAKEMOCKTEST_CONTENT_SCHEMA.md` documents the repository-facing TypeScript structures (`ExamConfig`, `TestStage`, `StagePattern`, `TestConfig`, `Question`, `QuestionSource`, `CatalogExam`) that ChatGPT-approved artifacts should target, so integration is close to a direct import rather than a translation exercise. It complements, and does not replace, `QUESTION_BANK_HANDOFF.md`'s process and JSON-handoff conventions — read both together when preparing or reviewing a handoff package.

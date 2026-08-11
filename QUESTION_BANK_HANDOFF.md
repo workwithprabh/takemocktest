@@ -2,6 +2,8 @@
 
 Use this guide to prepare exam research and question banks in ChatGPT before handing validated files to Codex for integration. It is governed by [TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md](./TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md). The goal is high accuracy, clear provenance, and a repeatable review process. No AI workflow can guarantee 100 percent accuracy, so every bank must pass independent content review in ChatGPT and technical repository checks after integration.
 
+For the literal repository-side schema (`ExamConfig`, `TestStage`, `TestConfig`, `Question`, field-by-field required/optional/never-invent guidance), see [TAKEMOCKTEST_CONTENT_SCHEMA.md](./TAKEMOCKTEST_CONTENT_SCHEMA.md) and its machine-readable `TAKEMOCKTEST_CONTENT_SCHEMA.schema.json`. Before writing a bank for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English), also check the latest `TAKEMOCKTEST_COLLISION_REFERENCE.md` for topics and generic stems already saturated across the corpus.
+
 ## Who does what
 
 ### ChatGPT

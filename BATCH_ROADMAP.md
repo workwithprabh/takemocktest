@@ -27,11 +27,21 @@ Anything with a third argument (the liveSlug) is done. Cross-check against the E
 in `src/lib/exams.ts` — the two must always match after your batch (a stale build will fail
 otherwise).
 
-**Live as of 2026-08-07:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
+**Live as of 2026-08-11:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
 rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
 ibps-rrb-officer-scale-1, sbi-clerk, rrb-je, upsc-cse, rpf-constable, ssc-cpo, ibps-so,
 rbi-grade-b, nabard-grade-a, sebi-grade-a, sidbi-grade-a-b, lic-aao, niacl-ao, rrb-alp,
-rrb-technician, rrb-paramedical, rpf-si, ssc-je, ssc-steno (30 exams).
+rrb-technician, rrb-paramedical, rpf-si, ssc-je, ssc-steno, ssc-cht, ssc-selection-post,
+jee-main, jee-advanced, bitsat (35 exams). See `TAKEMOCKTEST_CURRENT_STATUS.md` for the
+authoritative up-to-date count — this line is a convenience summary and can drift; the
+grep command above and `TAKEMOCKTEST_CURRENT_STATUS.md` are the actual sources of truth.
+
+**Process note (2026-08-11):** exam content (research, writing, Hard QA) now runs through
+a separate ChatGPT pipeline per `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md`. This file's
+"baseline package" and "quality control" sections below describe the coding agent's
+integration-time responsibilities on an already-approved package, not independent content
+authorship — see that file and `QUESTION_BANK_HANDOFF.md`/`TAKEMOCKTEST_CONTENT_SCHEMA.md`
+before starting any new exam integration.
 
 ## The queue (Government Jobs cluster, in order)
 
