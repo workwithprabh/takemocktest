@@ -69,6 +69,16 @@ it goes stale fast.
   in `test/[testId]/page.tsx`): `Organization`, `WebSite`, `BreadcrumbList`, `Article`,
   `Quiz`, `FAQPage`. Keep extending `FAQPage` entries per exam (`FULL_MOCK_FAQS`) with real,
   exam-specific Q&A — this is also our best AEO lever (see §3).
+- **Externally validated (2026-08-11) via Google's Rich Results Test**: all JSON-LD parses
+  cleanly with zero errors on both a mock-test hub page (`Organization`/`BreadcrumbList`/
+  `FAQPage`) and a full-mock test-instructions page (`BreadcrumbList`/`Quiz`/`FAQPage`).
+  Google's tool reports only `Breadcrumbs`/`Organization` as "detected rich results" and
+  doesn't surface `Quiz` or `FAQPage` at all, even though both parse without error. This is
+  expected, not a bug: Google restricted FAQ rich-result eligibility in Aug 2023 to a narrow
+  allowlist of government/health sites, and `Quiz` rich results have similarly narrow
+  eligibility. Don't "fix" this by removing the markup, it's still valid semantic structured
+  data and may still inform AI answer-extraction (AEO/GEO, see §3) even without the visual
+  SERP rich-result treatment — only worth revisiting if Google's eligibility policy changes.
 
 ## 3. AEO / GEO (getting cited by AI Overviews, ChatGPT, Perplexity, etc.)
 
