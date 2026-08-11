@@ -1,21 +1,22 @@
 # TakeMockTest Question Bank Handoff
 
-Use this guide to prepare exam research and question banks in ChatGPT before handing validated files to Codex for integration. The goal is high accuracy, clear provenance, and a repeatable review process. No AI workflow can guarantee 100 percent accuracy, so every bank must pass both independent content review and the repository's automated checks.
+Use this guide to prepare exam research and question banks in ChatGPT before handing validated files to Codex for integration. It is governed by [TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md](./TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md). The goal is high accuracy, clear provenance, and a repeatable review process. No AI workflow can guarantee 100 percent accuracy, so every bank must pass independent content review in ChatGPT and technical repository checks after integration.
 
 ## Who does what
 
 ### ChatGPT
 
 - Researches the current exam pattern from official sources.
+- Produces the approved exam brief, test-series manifest, and SEO/AEO/GEO implementation specification.
 - Drafts original questions that match the official syllabus and difficulty.
 - Performs an independent question-by-question audit in a separate chat.
-- Returns structured JSON and a validation report.
+- Returns final structured JSON and a Hard QA PASS report.
 
 ### Codex
 
 - Converts approved JSON into the repository's TypeScript format.
-- Runs duplicate, schema, answer-balance, build, and browser checks.
-- Integrates UI and SEO changes without changing verified question content.
+- Runs schema, repository duplicate, configuration, build, and browser checks.
+- Implements the approved UI and SEO specification without repeating academic QA or changing verified question content.
 - Commits approved work to GitHub and prepares a preview for review.
 
 Keep one ChatGPT Project per exam family and separate chats for research, writing, and validation. Do not use one very long chat for every exam.
@@ -33,12 +34,13 @@ Keep one ChatGPT Project per exam family and separate chats for research, writin
 ## Production sequence
 
 1. Research and approve the exam brief.
-2. Write one section or one small bank at a time, normally 25 to 50 questions.
-3. Validate the bank in a fresh ChatGPT chat that did not write it.
-4. Resolve every failed or uncertain item. Never silently edit a doubtful answer.
-5. Hand the approved JSON and validation report to Codex.
-6. Codex runs repository QA, integrates the bank, and pushes it to GitHub.
-7. Review the preview before any live deployment.
+2. Approve the test-series manifest and SEO/AEO/GEO implementation specification.
+3. Write the planned question banks.
+4. Validate them in a fresh ChatGPT chat that did not write them.
+5. Resolve every failed or uncertain item. Never silently edit a doubtful answer.
+6. Hand the complete approved package and Hard QA PASS to Codex.
+7. Codex runs technical repository QA, integrates the package, and pushes it to GitHub.
+8. Review the preview before any live deployment.
 
 Do not draft a complete 100-question test before the exam brief has been reviewed. A wrong pattern would waste the entire bank.
 
@@ -174,7 +176,7 @@ Use primary official sources for every pattern claim. Produce only:
 Do not write questions yet. Do not use coaching sites as authority. Do not guess missing rules. Check that section totals, question totals, marks, duration, and negative marking agree mathematically.
 ```
 
-Send the resulting exam brief to Codex for approval before moving on.
+Approve the resulting exam brief inside the ChatGPT content workflow before moving on.
 
 ## Prompt B: write one question bank
 
@@ -215,27 +217,28 @@ Never silently fix a question. Explain every changed answer, option, question, o
 After validation, provide Codex with:
 
 1. The approved exam brief JSON.
-2. The final validated question-bank JSON.
-3. The independent validation report.
-4. Any official source files or direct links used.
+2. The approved test-series manifest.
+3. The final validated question-bank JSON.
+4. The independent Hard QA PASS report.
+5. The SEO/AEO/GEO implementation specification.
+6. Required routes, internal links, sitemap and `llms.txt` requirements.
+7. Any official source files or direct links used.
 
 Use this instruction:
 
 ```text
-Import this validated bank into TakeMockTest. Preserve the approved question content unless a repository check finds a specific issue. Run question QA, duplicate checks, build checks, and browser checks. Commit and push the result to GitHub. Prepare a preview for review, but do not deploy live until I approve it.
+Import this content-authoritative package into TakeMockTest without repeating academic QA or changing approved question content. Run technical schema, repository duplicate, configuration, build, and focused browser checks. If a suspected content defect appears, report its exact ID and issue without silently editing it. Commit and push the result to GitHub. Prepare a preview for review, but do not deploy live until I approve it.
 ```
 
 ## Codex acceptance checklist
 
-- Exact official section and total question counts.
-- Unique IDs and no duplicate or near-duplicate question text.
-- Four distinct options for every MCQ and valid answer indexes.
-- Correct marks, negative marking, and answer-type fields.
-- Balanced answer positions without a predictable pattern.
-- Every answer independently checked and every explanation consistent.
-- Source provenance present and honest.
-- No unresolved `needs-review` items.
+- Approved exam brief, manifest, Hard QA PASS, and implementation specification are present.
+- Configured sections, question totals, marks, negative marking, answer types, and timers match the approved package.
+- IDs, option counts, and answer indexes are structurally valid.
+- No duplicate IDs or question text against the existing repository.
+- No approved question, answer, explanation, or difficulty label was silently changed.
 - Repository question QA passes.
 - Production build passes.
-- Desktop and mobile test flows pass in the browser.
+- Focused desktop and mobile smoke tests pass in the browser.
+- Metadata, canonical, schema, internal links, sitemap, and `llms.txt` requirements are implemented.
 - Only reviewed files are committed to GitHub.
