@@ -167,6 +167,11 @@ import { RRB_PARAMEDICAL_GENERAL_SCIENCE_1 } from './question-banks/rrb-paramedi
 import { SSC_SELECTION_POST_MATRICULATION_CBE_1 } from './question-banks/ssc-selection-post-matriculation-cbe-1';
 import { SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1 } from './question-banks/ssc-selection-post-higher-secondary-cbe-1';
 import { SSC_SELECTION_POST_GRADUATION_CBE_1 } from './question-banks/ssc-selection-post-graduation-cbe-1';
+import { BITSAT_2026_MATHEMATICS_PHYSICS_1 } from './question-banks/bitsat-2026-mathematics-physics-1';
+import { BITSAT_2026_MATHEMATICS_CHEMISTRY_1 } from './question-banks/bitsat-2026-mathematics-chemistry-1';
+import { BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_1 } from './question-banks/bitsat-2026-mathematics-english-proficiency-1';
+import { BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_1 } from './question-banks/bitsat-2026-mathematics-logical-reasoning-1';
+import { BITSAT_2026_MATHEMATICS_MATHEMATICS_1 } from './question-banks/bitsat-2026-mathematics-mathematics-1';
 import { JEE_MAIN_PAPER_1_MATHEMATICS_1 } from './question-banks/jee-main-paper-1-mathematics-1';
 import { JEE_MAIN_PAPER_1_PHYSICS_1 } from './question-banks/jee-main-paper-1-physics-1';
 import { JEE_MAIN_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-main-paper-1-chemistry-1';
@@ -815,6 +820,17 @@ const SSC_SELECTION_POST_TESTS = {
   ...selectionPostLevelBanks('graduation', SSC_SELECTION_POST_GRADUATION_CBE_1),
 };
 
+const BITSAT_2026_MATHEMATICS_BANKS = [
+  BITSAT_2026_MATHEMATICS_PHYSICS_1,
+  BITSAT_2026_MATHEMATICS_CHEMISTRY_1,
+  BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_1,
+  BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_1,
+  BITSAT_2026_MATHEMATICS_MATHEMATICS_1,
+];
+const BITSAT_TESTS: Record<string, Question[]> = {
+  'bitsat/mathematics-full-mock-1': BITSAT_2026_MATHEMATICS_BANKS.flat(),
+};
+
 const JEE_MAIN_BANKS = [JEE_MAIN_PAPER_1_MATHEMATICS_1, JEE_MAIN_PAPER_1_PHYSICS_1, JEE_MAIN_PAPER_1_CHEMISTRY_1];
 const jeeMainQuick = (mcqCount: number, numericalCount: number, offset: number) => JEE_MAIN_BANKS.flatMap((bank) => [
   ...bank.slice(offset, offset + mcqCount),
@@ -842,7 +858,7 @@ const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-2-chemistry-sectional-1': JEE_ADVANCED_PAPER_2_CHEMISTRY_1,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -881,6 +897,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('ssc-selection-post/') && testId.includes('full-mock')
     ? 100
+    : testId.includes('bitsat/mathematics-full-mock')
+    ? 130
     : testId.includes('jee-main/paper-1-full-mock')
     ? 75
     : testId.includes('jee-advanced/paper-1-full-mock')
@@ -1177,6 +1195,13 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Mathematics', count: 25 },
     { section: 'Physics', count: 25 },
     { section: 'Chemistry', count: 25 },
+  ],
+  'bitsat': [
+    { section: 'Physics', count: 30 },
+    { section: 'Chemistry', count: 30 },
+    { section: 'English Proficiency', count: 10 },
+    { section: 'Logical Reasoning', count: 20 },
+    { section: 'Mathematics', count: 40 },
   ],
   'ssc-cpo': [
     { section: 'General Intelligence and Reasoning', count: 50 },
@@ -1580,6 +1605,7 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'Quantitative Aptitude', question: 'What is 15% of 360?', options: ['45', '54', '60', '72'], correctIndex: 1, explanation: '15% of 360 = 54.' },
     { section: 'English Language', question: "Choose the antonym of 'temporary'.", options: ['Brief', 'Passing', 'Permanent', 'Short'], correctIndex: 2, explanation: 'Permanent is opposite in meaning to temporary.' },
   ],
+  'bitsat': BITSAT_2026_MATHEMATICS_BANKS.flat(),
   'jee-main': [
     JEE_MAIN_PAPER_1_MATHEMATICS_1[0],
     JEE_MAIN_PAPER_1_PHYSICS_1[0],

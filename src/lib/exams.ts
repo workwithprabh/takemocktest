@@ -31,6 +31,7 @@ export type ExamSlug =
   | 'ssc-steno'
   | 'ssc-cht'
   | 'ssc-selection-post'
+  | 'bitsat'
   | 'jee-main'
   | 'jee-advanced';
 export type TestStatus = 'checked' | 'demo';
@@ -62,7 +63,7 @@ export interface StagePattern {
     name: string;
     questions: number;
     marks: number;
-    duration: number;
+    duration?: number;
   }[];
   timerNote?: string;
   note?: string;
@@ -120,6 +121,8 @@ const SSC_CHT_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cht_2026.pdf';
 const SSC_SELECTION_POST_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf';
+const BITSAT_2026_BROCHURE =
+  'https://admissions.bits-pilani.ac.in/FD/downloads/BITSAT-2026_brochure.pdf';
 const JEE_MAIN_2026_BULLETIN =
   'https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/11/202511021649722475.pdf';
 const JEE_ADVANCED_2026_PAPER_1 = 'https://jeeadv.ac.in/documents/p1_english.pdf';
@@ -4329,6 +4332,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           checkedOn: '9 August 2026',
         },
         tests: selectionPostTests('Graduation Level', 'graduation'),
+      },
+    ],
+  },
+  'bitsat': {
+    slug: 'bitsat',
+    name: 'BITSAT',
+    shortName: 'BITSAT',
+    fullName: 'BITS Admission Test 2026: Mathematics variant',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'mathematics',
+        name: 'Mathematics Variant',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'English Proficiency', 'Logical Reasoning', 'Mathematics'],
+          totalQuestions: 130,
+          totalMarks: 390,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 90 },
+            { name: 'Chemistry', questions: 30, marks: 90 },
+            { name: 'English Proficiency', questions: 10, marks: 30 },
+            { name: 'Logical Reasoning', questions: 20, marks: 60 },
+            { name: 'Mathematics', questions: 40, marks: 120 },
+          ],
+          timerNote: 'Single 180-minute timer across all five sections; no sectional timer or lock',
+          note: 'This is the standard 130-question Mathematics variant. Each correct answer earns 3 marks, each incorrect answer deducts 1 mark, and unattempted questions score zero. The optional 12 extra questions are not included.',
+          sourceUrl: BITSAT_2026_BROCHURE,
+          checkedOn: '11 August 2026',
+        },
+        tests: [
+          { id: 'mathematics-full-mock-1', name: 'Mathematics Variant Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '11 August 2026' },
+        ],
       },
     ],
   },

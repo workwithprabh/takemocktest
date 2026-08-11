@@ -73,7 +73,7 @@ tackle after the national-level exams above are done, same process).
 
 - [x] JEE Main
 - [x] JEE Advanced
-- [ ] BITSAT
+- [x] BITSAT
 - [ ] VITEEE
 - [ ] SRMJEEE
 - [ ] Manipal Entrance Test
