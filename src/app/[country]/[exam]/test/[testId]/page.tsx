@@ -900,6 +900,29 @@ const JEE_MAIN_PAPER_1_FULL_MOCK_FAQS = [
   },
 ];
 
+const BITSAT_MATHEMATICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official or previous-year BITSAT paper?',
+    answer: 'No. It is an independent practice mock with 130 original questions mapped to the official BITSAT 2026 Mathematics-variant syllabus and pattern.',
+  },
+  {
+    question: 'What is the BITSAT Mathematics pattern in this mock?',
+    answer: 'The standard paper has 130 questions for 390 marks in 180 minutes: Physics 30, Chemistry 30, English Proficiency 10, Logical Reasoning 20, and Mathematics 40.',
+  },
+  {
+    question: 'Can I move between BITSAT sections?',
+    answer: 'Yes. This mock uses one composite 180-minute timer with no sectional timer or lock, so you can move among all five sections and change answers before submission.',
+  },
+  {
+    question: 'How is BITSAT scoring calculated?',
+    answer: 'Each correct answer earns 3 marks, each incorrect answer deducts 1 mark, and an unattempted question scores zero. The standard maximum is 390 marks.',
+  },
+  {
+    question: 'Does this mock include the optional 12 extra questions?',
+    answer: 'No. Full Mock 1 contains only the standard 130-question Mathematics variant and does not implement the optional extra-question flow.',
+  },
+];
+
 const JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official JEE Advanced Paper 1?',
@@ -977,6 +1000,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'rrb-alp/cbt-2': RRB_ALP_CBT2_FULL_MOCK_FAQS,
   'rrb-technician/grade-1-signal': RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS,
   'rrb-technician/grade-3': RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS,
+  'bitsat/mathematics': BITSAT_MATHEMATICS_FULL_MOCK_FAQS,
   'jee-main/paper-1': JEE_MAIN_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-1': JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
@@ -1001,7 +1025,9 @@ export default async function TestInstructionsPage({
   const hasQuizSchema = isFullMock || test.kind === 'quick' || test.kind === 'topic' || test.kind === 'difficulty';
   const fullMockFaqs = isFullMock ? FULL_MOCK_FAQS[`${exam.slug}/${stage.id}`] : undefined;
   const usesQuestionLevelScoring = questions.some(
-    (question) => question.marks !== undefined || question.negativeMarking !== undefined,
+    (question) =>
+      (question.marks !== undefined && question.marks !== test.marksPerCorrect) ||
+      (question.negativeMarking !== undefined && question.negativeMarking !== test.negativeMarking),
   );
   const maxScore = Math.round(
     questions.reduce((total, question) => total + (question.marks ?? test.marksPerCorrect), 0) * 100,

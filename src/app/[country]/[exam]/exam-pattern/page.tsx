@@ -86,7 +86,7 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                             <td className="break-words px-2 py-2 font-medium text-ink-900 sm:px-3">{section.name}</td>
                             <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.questions}</td>
                             <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.marks}</td>
-                            <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.duration}</td>
+                            <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.duration ?? '—'}</td>
                           </tr>
                         ))}
                       </tbody>

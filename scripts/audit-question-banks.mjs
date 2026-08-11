@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|bitsat-2026-mathematics|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -82,6 +82,10 @@ for (const { file, questions } of banks) {
     : file.startsWith('ssc-steno-cbt-') ? 50
     : file.startsWith('ssc-cht-paper-1-') ? 100
     : file.startsWith('ssc-selection-post-') ? 100
+    : file.startsWith('bitsat-2026-mathematics-physics-') || file.startsWith('bitsat-2026-mathematics-chemistry-') ? 30
+    : file.startsWith('bitsat-2026-mathematics-english-proficiency-') ? 10
+    : file.startsWith('bitsat-2026-mathematics-logical-reasoning-') ? 20
+    : file.startsWith('bitsat-2026-mathematics-mathematics-') ? 40
     : file.startsWith('jee-main-paper-1-') ? 25
     : file.startsWith('jee-advanced-paper-1-') ? 16
     : file.startsWith('jee-advanced-paper-2-') ? 18

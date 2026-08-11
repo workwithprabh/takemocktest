@@ -397,14 +397,19 @@ export default function TestAttemptClient({
   const activeQuestionIndices = questions.flatMap((question, index) =>
     question.section === activeSection ? [index] : [],
   );
-  const sectionStart = activeQuestionIndices[0] ?? 0;
-  const sectionEnd = activeQuestionIndices.at(-1) ?? questions.length - 1;
+  const sectionStart = usesSectionTimer ? (activeQuestionIndices[0] ?? 0) : 0;
+  const sectionEnd = usesSectionTimer ? (activeQuestionIndices.at(-1) ?? questions.length - 1) : questions.length - 1;
   const attemptedCount = answers.filter((a) => a !== null).length;
   const attemptedInSection = activeQuestionIndices.filter((index) => answers[index] !== null).length;
   const markedCount = marked.filter(Boolean).length;
 
   const goTo = (index: number) => {
     if (usesSectionTimer && questions[index]?.section !== activeSection) return;
+    if (!usesSectionTimer) {
+      const nextSectionIndex = sections.indexOf(questions[index].section);
+      activeSectionRef.current = nextSectionIndex;
+      setActiveSectionIndex(nextSectionIndex);
+    }
     currentIndexRef.current = index;
     setCurrentIndex(index);
     setVisited((v) => v.map((val, i) => (i === index ? true : val)));
