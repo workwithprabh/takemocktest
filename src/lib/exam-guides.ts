@@ -35,6 +35,16 @@ const SSC_CGL_NOTICE_URL =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf';
 const IBPS_PO_NOTICE_URL =
   'https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf';
+const SSC_CHSL_NOTICE_URL =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2025.pdf';
+const SBI_PO_2026_NOTICE_URL =
+  'https://sbi.bank.in/documents/77530/57941/18062026_1_Detailed_Adv.2026.pdf/1f1a9532-8a2f-6e59-08a0-616d62a497b1?t=1781759726353';
+const IBPS_CLERK_NOTICE_URL =
+  'https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf';
+// The live rrbcdg.gov.in copy of this notice 404s (site migration in progress as of August 2026).
+// This is the same CEN 09/2025, verified by direct text extraction from an archived snapshot.
+const RRB_GROUP_D_CEN_URL =
+  'http://web.archive.org/web/20260411020321/https://www.rrbcdg.gov.in/uploads/2025/09-LVL1/092025-CEN.pdf';
 
 export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, ExamGuidePage>>>> = {
   'ssc-cgl': {
@@ -408,6 +418,775 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
           text: 'Confirm every stage in the',
           sourceLabel: 'official CRP PO/MT-XVI notification',
           sourceUrl: IBPS_PO_NOTICE_URL,
+        },
+      ],
+    },
+  },
+  'ssc-chsl': {
+    syllabus: {
+      title: 'SSC CHSL Tier 1 Syllabus 2025: Section-wise Topics',
+      description:
+        'SSC CHSL Tier 1 syllabus for General Intelligence, General Awareness, Quantitative Aptitude and English Language, based on the official 2025 notice.',
+      heading: 'SSC CHSL Tier 1 Syllabus 2025',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Tier 1 has four sections with 25 questions and 50 marks each. The paper contains **100 questions for 200 marks in 60 minutes**, with **0.50 mark deducted for each wrong answer**.',
+        },
+        {
+          type: 'callout',
+          text: 'The topic lists below follow the subject areas named in the official SSC CHSL 2025 notice. The same notice is the source for the Tier 1 question count, marks and negative marking.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'General Intelligence',
+              pattern: '25 questions · 50 marks',
+              topics: [
+                'Semantic and symbolic analogies',
+                'Figural analogy and classification',
+                'Number, semantic and figural series',
+                'Coding and decoding',
+                'Venn diagrams and space orientation',
+                'Problem solving, analysis and critical thinking',
+                'Drawing inferences',
+                'Emotional intelligence and social intelligence',
+                'Other verbal and non-verbal reasoning tasks listed in the notice',
+              ],
+            },
+            {
+              section: 'General Awareness',
+              pattern: '25 questions · 50 marks',
+              topics: [
+                'Current events',
+                'Everyday observations in their scientific aspect',
+                'India and neighbouring countries',
+                'History',
+                'Culture',
+                'Geography',
+                'Economic scene',
+                'General policy',
+                'Scientific research',
+              ],
+            },
+            {
+              section: 'Quantitative Aptitude',
+              pattern: '25 questions · 50 marks',
+              topics: [
+                'Number systems and computation',
+                'Percentages, ratio and proportion',
+                'Averages, interest, profit and loss',
+                'Discount, partnership, mixture and alligation',
+                'Time and distance, time and work',
+                'Algebra and elementary surds',
+                'Geometry and mensuration',
+                'Trigonometry and heights and distances',
+                'Statistical charts and graphical data',
+              ],
+            },
+            {
+              section: 'English Language',
+              pattern: '25 questions · 50 marks',
+              topics: [
+                'Spot the error',
+                'Fill in the blanks',
+                'Synonyms, homonyms and antonyms',
+                'Spelling and detecting misspelt words',
+                'Idioms and phrases',
+                'One-word substitution',
+                'Improvement of sentences',
+                'Active and passive voice',
+                'Direct and indirect speech',
+                'Shuffling of sentence parts and sentences',
+                'Cloze passage',
+                'Comprehension passage',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: Staff Selection Commission, Combined Higher Secondary (10+2) Level Examination, 2025 notice. This page reflects the current verified CHSL notice used by TakeMockTest.',
+          sourceLabel: 'View the official SSC CHSL 2025 notice',
+          sourceUrl: SSC_CHSL_NOTICE_URL,
+        },
+      ],
+    },
+    eligibility: {
+      title: 'SSC CHSL Eligibility 2025: Age Limit & Qualification',
+      description:
+        'Check SSC CHSL eligibility from the official 2025 notice: age limit, category relaxations, nationality conditions and 12th-pass qualification rules.',
+      heading: 'SSC CHSL Eligibility 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Eligibility at a glance',
+          text: 'The unrelaxed age limit is **18 to 27 years as on 1 January 2026**. For most posts, candidates need **12th Standard or an equivalent qualification** by **1 January 2026**.',
+        },
+        {
+          type: 'statCards',
+          heading: 'Age limit',
+          note: 'For the unrelaxed age band, the permitted date-of-birth range is 2 January 1999 to 1 January 2008, inclusive.',
+          cards: [
+            { label: 'Minimum age', value: '18 years' },
+            { label: 'Maximum age', value: '27 years' },
+            { label: 'Age cut-off', value: '1 January 2026' },
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Upper-age relaxation',
+          note: 'Additional conditions apply to the special categories listed in the official notice.',
+          items: [
+            { label: 'SC / ST', value: '5 years' },
+            { label: 'OBC', value: '3 years' },
+            { label: 'PwBD (UR)', value: '10 years' },
+            { label: 'PwBD (OBC)', value: '13 years' },
+            { label: 'PwBD (SC / ST)', value: '15 years' },
+            { label: 'Ex-servicemen', value: '3 years after deducting military service from actual age' },
+            { label: 'Defence personnel disabled in operations', value: '3 years; 8 years for SC / ST' },
+            {
+              label: 'Central Government civilian employees',
+              value: 'Up to 40 years; up to 45 years for SC / ST, subject to the service conditions in the notice',
+            },
+            {
+              label: 'Widows / divorced / judicially separated women not remarried',
+              value: 'Up to 35 years; up to 40 years for SC / ST',
+            },
+          ],
+        },
+        {
+          type: 'infoBlocks',
+          heading: 'Educational qualification',
+          note: 'Candidates appearing in the qualifying examination may apply, but they must possess the required qualification by 1 January 2026.',
+          items: [
+            {
+              title: 'LDC / JSA and most DEO posts',
+              text: '12th Standard or an equivalent examination from a recognised Board or University.',
+            },
+            {
+              title: 'Specified DEO / DEO Grade A posts',
+              text: '12th Standard in the Science stream with Mathematics as a subject, for the departments and posts identified in the official notice.',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Nationality',
+          text: 'The notice permits Indian citizens and specified eligible categories including subjects of Nepal or Bhutan and certain persons of Indian origin. Candidates in categories that require a Government of India eligibility certificate must satisfy that condition.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Age, qualification and nationality conditions can affect eligibility for a specific post. Confirm your position against the official SSC CHSL notice before applying.',
+          sourceLabel: 'View the official SSC CHSL 2025 notice',
+          sourceUrl: SSC_CHSL_NOTICE_URL,
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'SSC CHSL Selection Process 2025: Tier 1 to Final Selection',
+      description:
+        'Understand the SSC CHSL selection process from Tier 1 and Tier 2 through qualifying computer or skill tests, post preference and document verification.',
+      heading: 'SSC CHSL Selection Process 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: 'SSC CHSL uses Tier 1 for shortlisting and Tier 2 for the next stage of selection. Qualifying computer, skill or typing requirements apply as prescribed for the post.',
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Tier 1 computer-based examination',
+              text: 'Candidates take the Tier 1 computer-based paper. SSC uses the result and applicable cut-offs to shortlist candidates for Tier 2.',
+            },
+            {
+              title: 'Tier 2 examination',
+              text: 'Shortlisted candidates take Tier 2. The prescribed Tier 2 sections and modules must be completed as applicable under the official notice.',
+            },
+            {
+              title: 'Computer Knowledge Test and Skill Test / Typing Test',
+              text: 'The qualifying computer, skill or typing requirements apply according to the post. Candidates must meet the prescribed standard where that module is required.',
+            },
+            {
+              title: 'Final merit, post preference and document verification',
+              text: 'Final selection follows the applicable Tier 2 result and submitted post preferences. The allotted department verifies original eligibility and category documents before appointment.',
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Selection stages, qualifying modules and post-specific requirements are governed by the Staff Selection Commission notice and any later corrigenda.',
+          sourceLabel: 'View the official SSC CHSL 2025 notice',
+          sourceUrl: SSC_CHSL_NOTICE_URL,
+        },
+      ],
+    },
+  },
+  'sbi-po': {
+    syllabus: {
+      title: 'SBI PO Prelims Syllabus 2026: Sections & Topic Map',
+      description:
+        'SBI PO Prelims 2026 official section pattern plus a clearly labelled preparation topic map for English, Quantitative Aptitude and Reasoning Ability.',
+      heading: 'SBI PO Prelims Syllabus 2026',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'SBI PO Prelims has **100 questions for 100 marks in 60 minutes**. Each of the three sections is separately timed for **20 minutes**.',
+        },
+        {
+          type: 'callout',
+          text: "SBI officially publishes the section names, question counts, marks and timing. It does not publish an exhaustive chapter-by-chapter syllabus in the advertisement. The topic bullets below are a **TakeMockTest preparation map**, not an SBI-prescribed subtopic list.",
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'English Language',
+              pattern: '40 questions · 40 marks · 20 minutes',
+              topics: [
+                'Reading comprehension and contextual vocabulary',
+                'Cloze tests and fillers',
+                'Sentence correction and error detection',
+                'Para jumbles and sentence arrangement',
+                'Word usage, phrase replacement and grammar in context',
+              ],
+            },
+            {
+              section: 'Quantitative Aptitude',
+              pattern: '30 questions · 30 marks · 20 minutes',
+              topics: [
+                'Simplification and approximation',
+                'Number series and arithmetic relationships',
+                'Data interpretation',
+                'Percentage, ratio, average and partnership',
+                'Profit and loss, interest and mixture',
+                'Time and work, pipes, speed and distance',
+              ],
+            },
+            {
+              section: 'Reasoning Ability',
+              pattern: '30 questions · 30 marks · 20 minutes',
+              topics: [
+                'Seating arrangement and logic puzzles',
+                'Syllogism and inequalities',
+                'Coding-decoding and alphanumeric patterns',
+                'Blood relations and direction sense',
+                'Ranking, order and comparison',
+                'Data sufficiency and logical conditions',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'What comes after Prelims?',
+          text: 'The official advertisement also defines a Main Examination and a descriptive test, followed by Phase III. This page keeps the topic sections aligned to the three Prelims sections currently represented in the TakeMockTest exam configuration.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Official pattern source: State Bank of India, Probationary Officer recruitment advertisement CRPD/PO/2026-27/09.',
+          sourceLabel: 'View the official SBI PO 2026 advertisement',
+          sourceUrl: SBI_PO_2026_NOTICE_URL,
+        },
+      ],
+    },
+    eligibility: {
+      title: 'SBI PO Eligibility 2026: Age, Attempts & Qualification',
+      description:
+        'Check SBI PO 2026 eligibility: 21 to 30 year age limit, category relaxation, graduation requirement, citizenship and category-wise attempt limits.',
+      heading: 'SBI PO Eligibility 2026',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Eligibility at a glance',
+          text: 'Candidates must be **21 to 30 years old as on 1 April 2026** and hold a recognised graduation degree or an accepted equivalent qualification.',
+        },
+        {
+          type: 'statCards',
+          heading: 'Age limit',
+          note: 'For the unrelaxed age band, date of birth must fall from 2 April 1996 to 1 April 2005, inclusive.',
+          cards: [
+            { label: 'Minimum age', value: '21 years' },
+            { label: 'Maximum age', value: '30 years' },
+            { label: 'Age cut-off', value: '1 April 2026' },
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Upper-age relaxation',
+          note: 'The advertisement states that cumulative age relaxation is not allowed.',
+          items: [
+            { label: 'SC / ST', value: '5 years' },
+            { label: 'OBC (Non-Creamy Layer)', value: '3 years' },
+            { label: 'PwBD (UR / EWS)', value: '10 years' },
+            { label: 'PwBD (OBC)', value: '13 years' },
+            { label: 'PwBD (SC / ST)', value: '15 years' },
+            { label: 'Eligible Ex-servicemen / ECOs / SSCOs', value: '5 years, subject to the conditions in the advertisement' },
+          ],
+        },
+        {
+          type: 'infoBlocks',
+          heading: 'Educational qualification',
+          items: [
+            {
+              title: 'Graduation',
+              text: 'A graduation degree in any discipline from a recognised university or an equivalent qualification recognised by the Central Government.',
+            },
+            {
+              title: 'Final-year / final-semester candidates',
+              text: 'They may apply provisionally. If called for interview, they must produce proof that they passed graduation on or before **30 September 2026**.',
+            },
+            {
+              title: 'Integrated Dual Degree',
+              text: 'The passing date must be on or before **30 September 2026**.',
+            },
+            {
+              title: 'Professional qualifications',
+              text: 'The advertisement also accepts specified professional qualifications such as Medical, Engineering, Chartered Accountant and Cost Accountant.',
+            },
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Number of chances',
+          note: 'An appearance in the Main Examination counts as a chance. An appearance in the Preliminary Examination does not.',
+          items: [
+            { label: 'UR / EWS', value: '6 chances' },
+            { label: 'UR PwBD / EWS PwBD / OBC / OBC PwBD', value: '9 chances' },
+            { label: 'SC / SC PwBD / ST / ST PwBD', value: 'No restriction' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Nationality',
+          text: 'The SBI PO advertisement requires candidates to be **Indian citizens**.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: "Eligibility, relaxation and attempt-limit rules are taken from State Bank of India's CRPD/PO/2026-27/09 advertisement.",
+          sourceLabel: 'View the official SBI PO 2026 advertisement',
+          sourceUrl: SBI_PO_2026_NOTICE_URL,
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'SBI PO Selection Process 2026: Prelims, Mains & Interview',
+      description:
+        'SBI PO 2026 selection process explained from Preliminary and Main examinations through psychometric test, Group Exercise, Interview and final merit.',
+      heading: 'SBI PO Selection Process 2026',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: "SBI PO selection has three phases. Prelims is used for shortlisting, while the Main Examination and Phase III determine the final selection under SBI's prescribed scoring rules.",
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Phase I: Preliminary Examination',
+              text: 'Candidates take the online preliminary exam with separately timed English Language, Quantitative Aptitude and Reasoning Ability sections. Prelims marks are used for shortlisting and are not carried into final merit.',
+            },
+            {
+              title: 'Phase II: Main Examination',
+              text: 'Shortlisted candidates take the Main Examination, which includes objective tests and a descriptive test as specified in the advertisement.',
+            },
+            {
+              title: 'Phase III: Psychometric Test, Group Exercise and Interview',
+              text: 'Candidates shortlisted from Mains proceed to the psychometric assessment, Group Exercise and Interview stage.',
+            },
+            {
+              title: 'Final selection',
+              text: "Candidates must qualify Phase II and Phase III separately. SBI prepares the final merit list using the prescribed normalisation and weighting of the Main Examination and Phase III scores.",
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: State Bank of India Probationary Officer recruitment advertisement CRPD/PO/2026-27/09. Later notices or corrigenda should be checked before application.',
+          sourceLabel: 'View the official SBI PO 2026 advertisement',
+          sourceUrl: SBI_PO_2026_NOTICE_URL,
+        },
+      ],
+    },
+  },
+  'ibps-clerk': {
+    syllabus: {
+      title: 'IBPS Clerk Prelims Syllabus 2026: Sections & Topic Map',
+      description:
+        'IBPS Clerk CRP CSA-XVI Prelims pattern plus a clearly labelled preparation topic map for English Language, Numerical Ability and Reasoning Ability.',
+      heading: 'IBPS Clerk Prelims Syllabus 2026',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'CRP CSA-XVI Prelims contains **100 questions for 100 marks in 60 minutes**. English Language has 30 questions, while Numerical Ability and Reasoning Ability have 35 each. All three sections are separately timed for **20 minutes**.',
+        },
+        {
+          type: 'callout',
+          text: 'The IBPS notification specifies the official section pattern but does not provide an exhaustive chapter-by-chapter syllabus. The topic bullets below are a **TakeMockTest preparation map**, not an IBPS-prescribed subtopic list.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'English Language',
+              pattern: '30 questions · 30 marks · 20 minutes',
+              topics: [
+                'Reading comprehension and contextual vocabulary',
+                'Cloze tests and fillers',
+                'Error detection and sentence correction',
+                'Para jumbles and sentence arrangement',
+                'Word usage, phrase replacement and grammar in context',
+              ],
+            },
+            {
+              section: 'Numerical Ability',
+              pattern: '35 questions · 35 marks · 20 minutes',
+              topics: [
+                'Simplification and approximation',
+                'Number series and basic numerical relationships',
+                'Data interpretation',
+                'Percentage, ratio, average and partnership',
+                'Profit and loss, interest and mixture',
+                'Time and work, pipes, speed and distance',
+              ],
+            },
+            {
+              section: 'Reasoning Ability',
+              pattern: '35 questions · 35 marks · 20 minutes',
+              topics: [
+                'Seating arrangement and logic puzzles',
+                'Syllogism and inequalities',
+                'Coding-decoding and alphanumeric patterns',
+                'Blood relations and direction sense',
+                'Ranking, ordering and comparison',
+                'Logical conditions and data sufficiency',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Negative marking',
+          text: 'The notification deducts **0.25 mark for each wrong answer** in the Preliminary and Main examinations. There is no penalty for an unattempted question.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Official source: Institute of Banking Personnel Selection, CRP CSA-XVI notification for vacancies of 2027-28, verified by direct text extraction on 11 August 2026.',
+          sourceLabel: 'View the official IBPS CRP CSA-XVI notification',
+          sourceUrl: IBPS_CLERK_NOTICE_URL,
+        },
+      ],
+    },
+    eligibility: {
+      title: 'IBPS Clerk Eligibility 2026: Age Limit & Qualification',
+      description:
+        'Check IBPS Clerk CRP CSA-XVI eligibility: 20 to 28 year age limit, category relaxations, graduation, nationality, local language and computer literacy.',
+      heading: 'IBPS Clerk Eligibility 2026',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Eligibility at a glance',
+          text: 'Candidates must be **20 to 28 years old as on 1 August 2026** and must hold a recognised graduation degree by the registration cut-off in the notification.',
+        },
+        {
+          type: 'statCards',
+          heading: 'Age limit',
+          note: 'For the unrelaxed age band, date of birth must fall from 2 August 1998 to 1 August 2006, inclusive.',
+          cards: [
+            { label: 'Minimum age', value: '20 years' },
+            { label: 'Maximum age', value: '28 years' },
+            { label: 'Age cut-off', value: '1 August 2026' },
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Upper-age relaxation',
+          note: 'SC / ST / OBC (NCL) relaxation is cumulative with only one of the remaining relaxation categories, subject to the notification rules.',
+          items: [
+            { label: 'SC / ST', value: '5 years' },
+            { label: 'OBC (Non-Creamy Layer)', value: '3 years' },
+            { label: 'Persons with Benchmark Disabilities', value: '10 years' },
+            {
+              label: 'Ex-servicemen / Disabled Ex-servicemen',
+              value: 'Actual period of service plus 3 years; 8 years for Disabled Ex-servicemen belonging to SC / ST, subject to a maximum age of 50 years',
+            },
+            { label: 'Widows / divorced / legally separated women not remarried, General / EWS', value: 'Age concession up to 35 years' },
+            { label: 'Widows / divorced / legally separated women not remarried, OBC', value: 'Age concession up to 38 years' },
+            { label: 'Widows / divorced / legally separated women not remarried, SC / ST', value: 'Age concession up to 40 years' },
+          ],
+        },
+        {
+          type: 'infoBlocks',
+          heading: 'Educational and skill requirements',
+          items: [
+            {
+              title: 'Graduation',
+              text: 'A degree in any discipline from a recognised university or an equivalent qualification recognised by the Central Government. The result must have been declared on or before **21 August 2026**.',
+            },
+            {
+              title: 'Local-language proficiency',
+              text: 'Candidates must meet the local-language proficiency requirement for the State or Union Territory for which they apply.',
+            },
+            {
+              title: 'Computer literacy',
+              text: 'Candidates need basic computer literacy through a certificate, diploma or degree in computer operations, or by having studied Computer or Information Technology as a subject.',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Nationality',
+          text: 'Eligible categories include Indian citizens, subjects of Nepal or Bhutan, Tibetan refugees who arrived before **1 January 1962**, and specified persons of Indian origin who migrated from the countries listed in the notification. Where required, the candidate must hold the prescribed eligibility certificate.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Eligibility facts are from the CRP CSA-XVI notification, including the age cut-off, relaxation categories, graduation date, nationality, local-language requirement and computer-literacy condition.',
+          sourceLabel: 'View the official IBPS CRP CSA-XVI notification',
+          sourceUrl: IBPS_CLERK_NOTICE_URL,
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'IBPS Clerk Selection Process 2026: Prelims to Allotment',
+      description:
+        'IBPS Clerk CRP CSA-XVI selection process from qualifying Prelims to the Main Examination, local language test and provisional bank allotment.',
+      heading: 'IBPS Clerk Selection Process 2026',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: 'Prelims is a qualifying shortlisting stage. **Only Main Examination marks are used for final merit listing**, followed by the local-language requirement and provisional allotment.',
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Online Preliminary Examination',
+              text: 'Candidates take three separately timed objective sections. IBPS decides the qualifying cut-offs, and Prelims marks do not count toward final merit.',
+            },
+            {
+              title: 'Online Main Examination',
+              text: 'Candidates shortlisted from Prelims take the Main Examination. The Main score is the scored examination used for the final merit listing.',
+            },
+            {
+              title: 'Local Language Proficiency Test',
+              text: 'Candidates must satisfy the local-language proficiency requirement for the State or Union Territory to which they applied, according to the notification.',
+            },
+            {
+              title: 'Provisional allotment',
+              text: "IBPS makes provisional allotment to a Participating Bank on merit-cum-preference, subject to the Government's reservation policy and the other eligibility conditions in the notification.",
+            },
+          ],
+        },
+        {
+          type: 'table',
+          heading: 'Main Examination pattern',
+          note: 'These section totals are from the verified CRP CSA-XVI notification extraction.',
+          minWidth: '36rem',
+          headers: ['Section', 'Questions', 'Marks', 'Time'],
+          rows: [
+            ['General / Financial Awareness', '40', '50', '35 minutes'],
+            ['General English', '40', '40', '35 minutes'],
+            ['Reasoning Ability', '40', '60', '35 minutes'],
+            ['Quantitative Aptitude', '40', '50', '35 minutes'],
+            ['Total', '160', '200', '125 minutes'],
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: Institute of Banking Personnel Selection, CRP CSA-XVI notification for vacancies of 2027-28. The notification governs cut-offs, local-language requirements and provisional allotment.',
+          sourceLabel: 'View the official IBPS CRP CSA-XVI notification',
+          sourceUrl: IBPS_CLERK_NOTICE_URL,
+        },
+      ],
+    },
+  },
+  'rrb-group-d': {
+    syllabus: {
+      title: 'RRB Group D CBT Syllabus 2025: Section-wise Topics',
+      description:
+        'RRB Group D (Level 1) CBT syllabus for General Science, Mathematics, General Intelligence and Reasoning, and General Awareness, from the official CEN 09/2025 notice.',
+      heading: 'RRB Group D CBT Syllabus 2025',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'The CBT contains **100 questions of 1 mark each, in 90 minutes** (120 minutes for candidates eligible for a scribe). Each wrong answer deducts **1/3 mark**. The section-wise split is indicative, and the notice reserves scope for some variation in the actual paper.',
+        },
+        {
+          type: 'callout',
+          text: 'The topic lists below are illustrative, not exhaustive, exactly as the official CEN 09/2025 notice describes them.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'Mathematics',
+              pattern: '25 questions',
+              topics: [
+                'Number system, BODMAS, decimals and fractions',
+                'LCM, HCF, ratio and proportion, percentages',
+                'Mensuration, time and work, time and distance',
+                'Simple and compound interest, profit and loss',
+                'Algebra, geometry and trigonometry',
+                'Elementary statistics, square root, age calculations',
+                'Calendar, clock, pipes and cisterns',
+              ],
+            },
+            {
+              section: 'General Intelligence and Reasoning',
+              pattern: '30 questions',
+              topics: [
+                'Analogies, alphabetical and number series',
+                'Coding and decoding, mathematical operations',
+                'Relationships, syllogism, jumbling',
+                'Venn diagrams, data interpretation and sufficiency',
+                'Conclusions and decision making',
+                'Similarities and differences, analytical reasoning',
+                'Classification, directions',
+                'Statements, arguments and assumptions',
+              ],
+            },
+            {
+              section: 'General Science',
+              pattern: '25 questions',
+              topics: ['Physics, Chemistry and Life Sciences at 10th-standard (CBSE) level'],
+            },
+            {
+              section: 'General Awareness and Current Affairs',
+              pattern: '20 questions',
+              topics: ['Science and technology', 'Sports', 'Culture', 'Personalities', 'Economics', 'Politics and other subjects of importance'],
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: Ministry of Railways, Railway Recruitment Boards, Centralised Employment Notification (CEN) No. 09/2025 for Level-1 posts, verified by direct text extraction on 11 August 2026.',
+          sourceLabel: 'View the official CEN 09/2025 notice',
+          sourceUrl: RRB_GROUP_D_CEN_URL,
+        },
+      ],
+    },
+    eligibility: {
+      title: 'RRB Group D Eligibility 2025: Age Limit & Qualification',
+      description:
+        'Check RRB Group D (Level 1) eligibility from the official CEN 09/2025 notice: age limit by community, relaxation categories and educational qualification.',
+      heading: 'RRB Group D Eligibility 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Eligibility at a glance',
+          text: 'The age band is **18 to 33 years as on 1 January 2026**. This notice builds community-based relaxation directly into the permitted date-of-birth window, rather than adding a flat number of years afterward.',
+        },
+        {
+          type: 'table',
+          heading: 'Date-of-birth window by community',
+          note: 'Both dates are inclusive. The lower limit (oldest permitted birth date) already includes the applicable community relaxation.',
+          headers: ['Community', 'Not born earlier than', 'Not born after'],
+          rows: [
+            ['UR / EWS', '2 January 1993', '1 January 2008'],
+            ['OBC (Non-Creamy Layer)', '2 January 1990', '1 January 2008'],
+            ['SC / ST', '2 January 1988', '1 January 2008'],
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Further age relaxation',
+          note: 'These apply on top of the date-of-birth window above. A candidate gets the single largest relaxation they qualify for, not a combined total, except where the notice states otherwise.',
+          items: [
+            { label: 'Ex-servicemen with at least 6 months service', value: '3 to 10 years depending on category, after deducting service period from age' },
+            { label: 'Persons with Benchmark Disabilities (OBC-NCL)', value: '13 years' },
+            { label: 'Persons with Benchmark Disabilities (SC / ST)', value: '15 years' },
+            {
+              label: 'Serving Group C / erstwhile Group D railway staff, 3+ years service',
+              value: 'Maximum age 40 years (UR / EWS), 43 years (OBC-NCL), 45 years (SC / ST)',
+            },
+            { label: 'Quasi-administrative railway office staff', value: 'Relaxation up to length of service or 5 years, whichever is less' },
+            {
+              label: 'Widowed / divorced / judicially separated women, not remarried',
+              value: 'Maximum age 35 years (UR), 38 years (OBC-NCL), 40 years (SC / ST)',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Educational qualification',
+          text: 'Qualification requirements are post-specific, listed in the notice for each post, and must be held as of the application closing date, 2 March 2026. Candidates awaiting their final-exam result should not apply. A Diploma or Degree in Engineering is not accepted in place of Course Completed Act Apprenticeship or ITI for Level-1 posts unless the post specifically allows it.',
+        },
+        {
+          type: 'paragraph',
+          heading: 'Nationality',
+          text: 'The notice permits Indian citizens, citizens of Nepal, subjects of Bhutan, Tibetan refugees who arrived before **1 January 1962**, and specified persons of Indian origin who migrated from the countries named in the notice, each intending to settle permanently in India. Where a certificate of eligibility is required, it must be produced at Document Verification.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Age, relaxation and qualification rules are from the CEN 09/2025 notice and its post-parameter table (Annexure-A).',
+          sourceLabel: 'View the official CEN 09/2025 notice',
+          sourceUrl: RRB_GROUP_D_CEN_URL,
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'RRB Group D Selection Process 2025: CBT to Appointment',
+      description:
+        'RRB Group D (Level 1) selection process from the Computer Based Test through the Physical Efficiency Test, Document Verification and Medical Examination.',
+      heading: 'RRB Group D Selection Process 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: 'Selection has four stages. The Physical Efficiency Test is qualifying only, and shortlisting at each stage is based on merit in the previous one.',
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Computer Based Test (CBT)',
+              text: 'Candidates take the CBT. If the Railway Administration holds a second-stage CBT, the first stage may be treated as qualifying only for shortlisting purposes.',
+            },
+            {
+              title: 'Physical Efficiency Test (PET)',
+              text: 'Based on CBT merit, candidates are called for PET at roughly three times the community-wise vacancy count. PET is mandatory and qualifying in nature.',
+            },
+            {
+              title: 'Document Verification (DV)',
+              text: 'Shortlisted candidates undergo Document Verification of their identity, age, category and educational qualification documents.',
+            },
+            {
+              title: 'Medical Examination (ME)',
+              text: 'Candidates who clear Document Verification undergo the Medical Examination corresponding to the medical standard prescribed for the post.',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Minimum qualifying percentage',
+          text: 'For CBT shortlisting: UR 40%, EWS 40%, OBC (Non-Creamy Layer) 30%, SC 30%, ST 30%. These may be relaxed by 2 marks for PwBD candidates if there is a shortage of PwBD candidates against reserved vacancies.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Selection stages and qualifying criteria are from the CEN 09/2025 notice. Later corrigenda should be checked before applying.',
+          sourceLabel: 'View the official CEN 09/2025 notice',
+          sourceUrl: RRB_GROUP_D_CEN_URL,
         },
       ],
     },

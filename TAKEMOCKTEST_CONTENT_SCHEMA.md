@@ -226,7 +226,7 @@ Every catalog entry exists whether or not it's live (there are ~180 catalog entr
 
 ## 13. `ExamGuidePage` / `GuideBlock` (guide pages: syllabus, eligibility, selection-process, and eventually admit-card/answer-key/result/cutoff/salary/previous-year-papers, in `src/lib/exam-guides.ts`)
 
-As of 2026-08-11 only `syllabus`, `eligibility`, and `selection-process` have this structured format (SSC CGL and IBPS PO populated as the reference examples, migrated verbatim from their prior hand-coded pages). The other six guide-page types still render their pre-existing SSC-CGL-only hardcoded JSX in each page.tsx and are not yet data-driven — extend `GuidePageType` and `EXAM_GUIDES` the same way when content for those is ready, don't invent a parallel mechanism.
+As of 2026-08-11 only `syllabus`, `eligibility`, and `selection-process` have this structured format, populated for six exams: `ssc-cgl` and `ibps-po` (the original reference examples, migrated verbatim from their prior hand-coded pages), plus `ssc-chsl`, `sbi-po`, `ibps-clerk`, and `rrb-group-d` (Phase 2 batch 1, ChatGPT-authored and independently source-verified except `rrb-group-d`, which the coding agent drafted directly from its own primary-source extraction of the CEN 09/2025 notice). `rrb-ntpc` remains queued, blocked on a readable copy of its CEN 07/2025 notice. The other six guide-page types still render their pre-existing SSC-CGL-only hardcoded JSX in each page.tsx and are not yet data-driven — extend `GuidePageType` and `EXAM_GUIDES` the same way when content for those is ready, don't invent a parallel mechanism.
 
 ```ts
 type GuidePageType = 'syllabus' | 'eligibility' | 'selection-process';
