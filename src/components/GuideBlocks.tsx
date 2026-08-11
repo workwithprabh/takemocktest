@@ -149,6 +149,38 @@ function Block({ block }: { block: GuideBlock }) {
         </div>
       );
 
+    case 'recordCards':
+      return (
+        <section>
+          {block.heading && <h2 className="mb-3 text-lg font-semibold text-ink-900">{block.heading}</h2>}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {block.records.map((record, i) => (
+              <article key={i} className="flex min-h-56 flex-col border border-ink-200 bg-white p-5">
+                <span className="mb-5 inline-block w-fit bg-ink-100 px-2.5 py-1 text-xs font-semibold text-ink-700">{record.badge}</span>
+                <h3 className="mb-2 text-lg font-semibold text-ink-900">{record.title}</h3>
+                <dl className="mb-5 space-y-2 text-sm text-ink-500">
+                  {record.meta.map((m) => (
+                    <div key={m.label} className="flex gap-2">
+                      <dt className="font-medium text-ink-700">{m.label}:</dt>
+                      <dd>{m.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <a
+                  href={record.linkUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-auto inline-flex min-h-11 items-center justify-center border border-ink-200 px-4 py-2.5 text-sm font-semibold text-ink-900 hover:bg-ink-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900"
+                >
+                  {record.linkLabel} <span aria-hidden="true" className="ml-2">↗</span>
+                </a>
+              </article>
+            ))}
+          </div>
+          {block.note && <p className="mt-2 text-ink-500">{block.note}</p>}
+        </section>
+      );
+
     case 'sourceNote':
       return (
         <section className={block.tone === 'plain' ? 'border border-ink-200 bg-white p-5' : 'border border-ink-200 bg-ink-50 p-5'}>

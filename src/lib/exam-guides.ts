@@ -1,9 +1,15 @@
-// Data-driven content for the per-exam guide pages (syllabus, eligibility,
-// selection-process, and eventually admit-card/answer-key/result/cutoff/
-// salary/previous-year-papers). Each exam's guide content lives here as
-// data instead of a hardcoded `exam.slug === 'x' ? <JSX> : ...` branch in
-// every page.tsx, so adding a new exam's verified guide content is a data
-// change, not a code change per page.
+// Data-driven content for the per-exam guide pages: syllabus, eligibility,
+// selection-process, salary, and previous-year-papers. Each exam's guide
+// content lives here as data instead of a hardcoded
+// `exam.slug === 'x' ? <JSX> : ...` branch in every page.tsx, so adding a
+// new exam's verified guide content is a data change, not a code change
+// per page.
+//
+// admit-card/answer-key/result/cutoff stay hardcoded to SSC CGL directly in
+// their own page.tsx files rather than moving here: they're tied to one
+// exam cycle's exact dates and scores, not evergreen reference content, so
+// generalizing them means signing up for a per-exam-per-cycle refresh
+// commitment. Revisit only with a real plan for that maintenance load.
 //
 // Content authorship for new exams is the ChatGPT content pipeline's job
 // per TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md — this file's job is
@@ -20,7 +26,19 @@ export type GuideBlock =
   | { type: 'infoBlocks'; heading?: string; note?: string; items: { title: string; text: string }[] }
   | { type: 'numberedStages'; heading?: string; items: { title: string; text: string }[] }
   | { type: 'topicSections'; sections: { section: string; pattern?: string; topics: string[] }[] }
-  | { type: 'sourceNote'; heading: string; text: string; sourceLabel: string; sourceUrl: string; tone?: 'plain' | 'boxed' };
+  | { type: 'sourceNote'; heading: string; text: string; sourceLabel: string; sourceUrl: string; tone?: 'plain' | 'boxed' }
+  | {
+      type: 'recordCards';
+      heading?: string;
+      note?: string;
+      records: {
+        badge: string;
+        title: string;
+        meta: { label: string; value: string }[];
+        linkLabel: string;
+        linkUrl: string;
+      }[];
+    };
 
 export interface ExamGuidePage {
   title: string;
@@ -29,7 +47,7 @@ export interface ExamGuidePage {
   blocks: GuideBlock[];
 }
 
-export type GuidePageType = 'syllabus' | 'eligibility' | 'selection-process';
+export type GuidePageType = 'syllabus' | 'eligibility' | 'selection-process' | 'salary' | 'previous-year-papers';
 
 const SSC_CGL_NOTICE_URL =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf';
@@ -245,6 +263,122 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
           text: 'Selection rules can be changed by corrigenda. Confirm the current wording in the',
           sourceLabel: 'official SSC CGL 2026 notice',
           sourceUrl: SSC_CGL_NOTICE_URL,
+        },
+      ],
+    },
+    salary: {
+      title: 'SSC CGL Salary 2026: Post-wise Pay Levels & Basic Pay',
+      description:
+        'Check the official SSC CGL 2026 pay levels and basic-pay ranges, plus a clear explanation of allowances, deductions, and why in-hand salary varies.',
+      heading: 'SSC CGL Salary 2026',
+      blocks: [
+        {
+          type: 'paragraph',
+          heading: 'Salary at a glance',
+          tone: 'boxed',
+          text: 'SSC CGL posts are placed across Pay Levels 4 to 8 of the Central Government pay matrix. Your allotted post determines the pay level; city, allowances and deductions determine the final take-home amount.',
+        },
+        {
+          type: 'table',
+          heading: 'Official pay-level ranges',
+          note: 'These are pay-matrix basic-pay ranges, not monthly in-hand figures.',
+          headers: ['Pay level', 'Starting basic pay', 'Upper range'],
+          rows: [
+            ['Pay Level 8', '₹47,600', '₹1,51,100'],
+            ['Pay Level 7', '₹44,900', '₹1,42,400'],
+            ['Pay Level 6', '₹35,400', '₹1,12,400'],
+            ['Pay Level 5', '₹29,200', '₹92,300'],
+            ['Pay Level 4', '₹25,500', '₹81,100'],
+          ],
+        },
+        {
+          type: 'infoBlocks',
+          heading: 'How monthly salary is formed',
+          items: [
+            {
+              title: 'Added to basic pay',
+              text: 'Applicable Dearness Allowance, House Rent Allowance and Transport Allowance.',
+            },
+            {
+              title: 'Common deductions',
+              text: 'NPS contribution, CGHS or equivalent charges, income tax and other applicable deductions.',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Why we do not quote one in-hand salary',
+          tone: 'boxed',
+          text: 'A single figure would be misleading. Take-home pay changes with the post, place of posting, current allowance rates, government accommodation, tax position and deductions. Use the basic pay table for reliable comparison, then check the current departmental rules after allocation.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Confirm the pay level attached to each post in the',
+          sourceLabel: 'official SSC CGL 2026 notice',
+          sourceUrl: SSC_CGL_NOTICE_URL,
+          tone: 'boxed',
+        },
+      ],
+    },
+    'previous-year-papers': {
+      title: 'SSC CGL Previous Year Paper Sources: Official SSC Records',
+      description:
+        'Browse verified SSC CGL Tier 1 and Tier 2 question-paper release notices from the official Staff Selection Commission archive, with access-window details.',
+      heading: 'SSC CGL Previous Year Paper Sources',
+      blocks: [
+        {
+          type: 'paragraph',
+          heading: 'Read before opening a record',
+          tone: 'boxed',
+          text: 'SSC issued each candidate\'s paper through a time-limited login window. Those windows are now closed, so the links below open the permanent official notices, not an active paper download. We will only host shift-wise papers after their source and answers can be independently verified.',
+        },
+        {
+          type: 'recordCards',
+          heading: 'Official SSC release records',
+          note: '4 verified records, newest first.',
+          records: [
+            {
+              badge: 'Tier 2 · 2023',
+              title: 'Final answer keys with question papers',
+              meta: [
+                { label: 'Published', value: '16 Dec 2023' },
+                { label: 'Availability', value: 'Candidate access closed 5 Jan 2024' },
+              ],
+              linkLabel: 'Open official SSC notice',
+              linkUrl: 'https://ssc.nic.in/SSCFileServer/PortalManagement/UploadedFiles/Final_Answer_Key_CGLE2023_16122023.pdf',
+            },
+            {
+              badge: 'Tier 2 · 2022',
+              title: 'Final answer keys with question papers',
+              meta: [
+                { label: 'Published', value: '29 May 2023' },
+                { label: 'Availability', value: 'Candidate access closed 12 Jun 2023' },
+              ],
+              linkLabel: 'Open official SSC notice',
+              linkUrl: 'https://www.ssc.nic.in/SSCFileServer/PortalManagement/UploadedFiles/Write_up_final_answer_key_29052023.pdf',
+            },
+            {
+              badge: 'Tier 1 · 2022',
+              title: 'Final answer keys with question papers',
+              meta: [
+                { label: 'Published', value: '27 Feb 2023' },
+                { label: 'Availability', value: 'Candidate access closed 13 Mar 2023' },
+              ],
+              linkLabel: 'Open official SSC notice',
+              linkUrl: 'https://ssc.nic.in/SSCFileServer/PortalManagement/UploadedFiles/FinalAnswerkey_CGLE2022_tier1_27022023.pdf',
+            },
+            {
+              badge: 'Tier 1 · 2021',
+              title: 'Final answer keys with question papers',
+              meta: [
+                { label: 'Published', value: '14 Jul 2022' },
+                { label: 'Availability', value: 'Candidate access closed 12 Aug 2022' },
+              ],
+              linkLabel: 'Open official SSC notice',
+              linkUrl: 'https://doc.ssc.nic.in/SecAudit/SSCFileServer/PortalManagement/UploadedFiles/CGLE_2021_Tier_1_Final_Answer_key_14072022.pdf',
+            },
+          ],
         },
       ],
     },

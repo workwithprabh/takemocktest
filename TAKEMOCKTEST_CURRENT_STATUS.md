@@ -1,6 +1,6 @@
 # TakeMockTest Current Status
 
-Snapshot date: 2026-08-11. Verified against commit `a6a0e05` (Add guide pages for SSC CHSL, SBI PO, IBPS Clerk, RRB Group D).
+Snapshot date: 2026-08-12. Verified against commit `75df03e` (Add 8 general student-FAQ blog posts).
 
 This file is the live project dashboard. It is tracked in Git and updated only from repository evidence by the coding agent — see `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §13. ChatGPT may read it and recommend status changes, but must not hand-edit the repository-derived numbers below. Stable product rules belong in `TAKEMOCKTEST_MASTER_HANDOFF.md`.
 
@@ -50,6 +50,7 @@ Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluste
 - JEE Main Paper 1, JEE Advanced Papers 1 and 2, BITSAT 2026 Mathematics-variant Full Mock 1 (all 5 sections: Physics, Chemistry, English Proficiency, Logical Reasoning, Mathematics) — all imported, wired, and live
 - `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md`, `QUESTION_BANK_HANDOFF.md`, `TAKEMOCKTEST_CONTENT_SCHEMA.md` (+ machine-readable `.schema.json`), and `scripts/generate-collision-reference.mjs` establish the ChatGPT/coding-agent split and the handoff conventions
 - Data-driven guide pages (Syllabus, Eligibility, Selection-Process) live for 6 exams: `ssc-cgl`, `ibps-po` (original reference implementations), plus `ssc-chsl`, `sbi-po`, `ibps-clerk`, `rrb-group-d` (Phase 2 batch 1, Hard-QA-approved and integrated 11 August 2026, 12 pages). All indexable, canonical, in the sitemap, and rendering their approved content instead of the noindex placeholder. `rrb-ntpc` remains queued, blocked on a readable copy of its CEN notice. `GuideBlocks.tsx` had a rendering bug fixed in the same integration: `infoBlocks` and `numberedStages` were not applying the `**bold**` inline-markup parser other block types use, so approved content with bold dates rendered literal asterisks — now fixed for all block types.
+- `GuidePageType` extended to `salary` and `previous-year-papers` (12 August 2026). Both are now data-driven through `EXAM_GUIDES`/`GuideBlocks.tsx` instead of hardcoded per-exam JSX, with SSC CGL's existing content migrated in as the reference implementation (byte-for-byte content parity, breadcrumbs now render where they previously didn't). A new `recordCards` block type was added for previous-year-papers' dated-link cards. `admit-card`/`answer-key`/`cutoff`/`result` deliberately stay hardcoded SSC-CGL-only: they're tied to one exam cycle's exact dates and scores, not evergreen reference content, so generalizing them means a recurring per-exam-per-cycle content refresh, decided against for now (see the file's header comment for the reasoning). `sitemap.ts` updated to emit salary/previous-year-papers generically per exam instead of the SSC-CGL-only hardcoded list.
 
 ## 5. Current content priority
 

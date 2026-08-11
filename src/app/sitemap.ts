@@ -48,11 +48,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       if (hasOfficialPattern) {
         entries.push({ url: `${base}/exam-pattern`, changeFrequency: 'monthly', priority: 0.6 });
       }
-      // Pages 4-9 (salary/previous-year-papers/cutoff/result/answer-key/admit-card)
-      // don't have a GuidePageType/EXAM_GUIDES entry yet — SSC CGL's own copy for
-      // those still lives directly in each page.tsx, unchanged by this refactor.
+      // cutoff/result/answer-key/admit-card are cycle-specific (exact dates and
+      // scores tied to one exam year) and don't have a GuidePageType/EXAM_GUIDES
+      // entry yet — SSC CGL's own copy for those still lives directly in each
+      // page.tsx. salary and previous-year-papers are evergreen and now come
+      // from EXAM_GUIDES like syllabus/eligibility/selection-process.
       const sscCglOnlyGuides = exam.slug === 'ssc-cgl'
-        ? ['salary', 'previous-year-papers', 'cutoff', 'result', 'answer-key', 'admit-card']
+        ? ['cutoff', 'result', 'answer-key', 'admit-card']
         : [];
       const verifiedGuides = [...Object.keys(EXAM_GUIDES[exam.slug] ?? {}), ...sscCglOnlyGuides];
       for (const guide of verifiedGuides) {
