@@ -59,7 +59,7 @@ function Block({ block }: { block: GuideBlock }) {
         <section>
           {block.heading && <h2 className="mb-3 text-lg font-semibold text-ink-900">{block.heading}</h2>}
           <div className="overflow-x-auto border border-ink-200 bg-white">
-            <table className={block.minWidth === '34rem' ? 'w-full min-w-[34rem] text-left' : 'w-full text-left'}>
+            <table className="w-full text-left" style={block.minWidth ? { minWidth: block.minWidth } : undefined}>
               <thead className="border-b border-ink-200 bg-ink-50 text-ink-900">
                 <tr>
                   {block.headers.map((h) => (

@@ -66,6 +66,12 @@ const RRB_GROUP_D_ARCHIVED_CEN_URL =
 // The current official RRB listing page for this CEN, used where the page needs to point
 // readers at the live corrigenda trail rather than a point-in-time archived PDF.
 const RRB_GROUP_D_CURRENT_LISTING_URL = 'https://www.rrbcdg.gov.in/2025-09-level1.php';
+const SSC_MTS_NOTICE_URL =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf';
+const SSC_GD_CONSTABLE_NOTICE_URL =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf';
+const SBI_CLERK_2025_NOTICE_URL =
+  'https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf';
 
 export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, ExamGuidePage>>>> = {
   'ssc-cgl': {
@@ -1396,6 +1402,622 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
           text: 'Source: Railway Recruitment Boards, CEN 09/2025 for recruitment to Level-1 posts. Final selection requirements remain subject to the official notice and subsequent corrigenda.',
           sourceLabel: 'View archived official CEN 09/2025 notice',
           sourceUrl: RRB_GROUP_D_ARCHIVED_CEN_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+  },
+  'ssc-mts': {
+    syllabus: {
+      title: 'SSC MTS & Havaldar Syllabus 2025: CBE Topics & Pattern',
+      description:
+        'SSC MTS and Havaldar 2025 CBE syllabus for Numerical Ability, Reasoning, General Awareness and English, with the official two-session exam pattern.',
+      heading: 'SSC MTS & Havaldar Syllabus 2025',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'The Computer Based Examination has two mandatory sessions on the same day. Session I contains **40 questions for 120 marks in 45 minutes**. Session II contains **50 questions for 150 marks in 45 minutes**.',
+        },
+        {
+          type: 'callout',
+          text: 'There is **no negative marking in Session I**. In Session II, **1 mark is deducted for each wrong answer**. Both sessions are mandatory, and Session II starts immediately after Session I closes.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'Numerical and Mathematical Ability',
+              pattern: 'Session I · 20 questions · 60 marks',
+              topics: [
+                'Integers and whole numbers',
+                'LCM and HCF',
+                'Decimals and fractions',
+                'Relationship between numbers',
+                'Fundamental arithmetic operations and BODMAS',
+                'Percentage, ratio and proportion',
+                'Work and time',
+                'Direct and inverse proportion',
+                'Averages',
+                'Simple interest',
+                'Profit, loss and discount',
+                'Area and perimeter of basic geometric figures',
+                'Distance and time',
+                'Lines and angles',
+                'Simple graphs and data interpretation',
+                'Square and square roots',
+              ],
+            },
+            {
+              section: 'Reasoning Ability and Problem Solving',
+              pattern: 'Session I · 20 questions · 60 marks',
+              topics: [
+                'Alpha-numeric series',
+                'Coding and decoding',
+                'Analogy',
+                'Following directions',
+                'Similarities and differences',
+                'Jumbling',
+                'Problem solving and analysis',
+                'Non-verbal reasoning based on diagrams',
+                'Age calculations',
+                'Calendar and clock',
+              ],
+            },
+            {
+              section: 'General Awareness',
+              pattern: 'Session II · 25 questions · 75 marks',
+              topics: [
+                'Social Studies including History, Geography, Art and Culture, Civics and Economics',
+                'General Science up to 10th-standard level',
+                'Environmental Studies up to 10th-standard level',
+              ],
+            },
+            {
+              section: 'English Language and Comprehension',
+              pattern: 'Session II · 25 questions · 75 marks',
+              topics: [
+                'Basics of English Language',
+                'Vocabulary',
+                'Grammar',
+                'Sentence structure',
+                'Synonyms and antonyms',
+                'Correct usage',
+                'Simple paragraph comprehension',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: Staff Selection Commission, Multi-Tasking (Non-Technical) Staff and Havaldar (CBIC & CBN) Examination, 2025 notice. The notice gives the two-session CBE pattern and the indicative syllabus used on this page.',
+          sourceLabel: 'View the official SSC MTS & Havaldar 2025 notice',
+          sourceUrl: SSC_MTS_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    eligibility: {
+      title: 'SSC MTS & Havaldar Eligibility 2025: Age & Qualification',
+      description:
+        'Check SSC MTS and Havaldar 2025 eligibility: post-wise age limits, category relaxations, nationality rules and the Matriculation qualification cut-off.',
+      heading: 'SSC MTS & Havaldar Eligibility 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Eligibility at a glance',
+          text: 'Candidates must have passed **Matriculation or an equivalent examination by 1 August 2025**. The normal age band is **18 to 25 years for MTS**, while Havaldar and a few MTS posts use **18 to 27 years**, both measured on 1 August 2025.',
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Post-wise age limit',
+          items: [
+            {
+              label: 'MTS',
+              value: '18 to 25 years as on 1 August 2025; DOB 2 August 2000 to 1 August 2007 inclusive',
+            },
+            {
+              label: 'Havaldar and specified MTS posts',
+              value: '18 to 27 years as on 1 August 2025; DOB 2 August 1998 to 1 August 2007 inclusive',
+            },
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Upper-age relaxation',
+          note: 'The official notice contains the detailed certificate and service conditions for each relaxation category.',
+          items: [
+            { label: 'SC / ST', value: '5 years' },
+            { label: 'OBC', value: '3 years' },
+            { label: 'PwBD (UR / EWS)', value: '10 years' },
+            { label: 'PwBD (OBC)', value: '13 years' },
+            { label: 'PwBD (SC / ST)', value: '15 years' },
+            { label: 'Ex-servicemen', value: '3 years after deducting military service from actual age' },
+            { label: 'Defence personnel disabled in operations', value: '3 years; 8 years for SC / ST' },
+            {
+              label: 'Central Government civilian employees with the prescribed service',
+              value: 'Up to 40 years; up to 45 years for SC / ST',
+            },
+            {
+              label: 'Widows / divorced / judicially separated women not remarried',
+              value: 'Up to 35 years; up to 40 years for SC / ST',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Educational qualification',
+          tone: 'boxed',
+          text: 'Candidates must have passed the **Matriculation Examination or equivalent from a recognised Board on or before 1 August 2025**.',
+        },
+        {
+          type: 'paragraph',
+          heading: 'Nationality',
+          text: 'Eligible categories include citizens of India, subjects of Nepal or Bhutan, and specified persons of Indian origin who migrated from the countries listed in the notice with the intention of permanently settling in India. Candidates in the non-Indian-citizen categories require a Government of India eligibility certificate.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Age, nationality, qualification and relaxation rules are taken from the official SSC MTS and Havaldar 2025 notice. Confirm the conditions for your category and post before applying.',
+          sourceLabel: 'View the official SSC MTS & Havaldar 2025 notice',
+          sourceUrl: SSC_MTS_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'SSC MTS & Havaldar Selection Process 2025',
+      description:
+        'Understand the SSC MTS and Havaldar 2025 selection process: CBE Sessions I and II, Havaldar PET/PST, final merit, post allocation and document verification.',
+      heading: 'SSC MTS & Havaldar Selection Process 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: 'Both posts use the two-session Computer Based Examination. **MTS merit is based solely on Session II**, while Havaldar candidates must also qualify the Physical Efficiency Test and Physical Standard Test.',
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Computer Based Examination: Session I',
+              text: 'Session I is evaluated first, and Session II is evaluated only for candidates who qualify Session I. The minimum qualifying marks in each session are 30% for UR, 25% for OBC/EWS and 20% for all other categories.',
+            },
+            {
+              title: 'Computer Based Examination: Session II',
+              text: 'Session II is the merit-bearing part of the CBE. For MTS, the merit list is prepared solely from Session II performance. Havaldar shortlisting for PET/PST is also based on Session II performance.',
+            },
+            {
+              title: 'PET / PST for Havaldar only',
+              text: 'Havaldar candidates are shortlisted for the qualifying Physical Efficiency Test and Physical Standard Test, generally in a 1:7 vacancy-to-candidate ratio. A candidate who fails PET/PST is not considered for Havaldar but may remain in consideration for MTS according to CBE merit.',
+            },
+            {
+              title: 'Final merit and post allocation',
+              text: 'MTS final consideration uses Session II performance, submitted post-cum-State/UT/CCA preferences and the applicable age group. Havaldar final consideration uses Session II performance and submitted preferences and also requires PET/PST qualification.',
+            },
+            {
+              title: 'Document Verification',
+              text: 'After the final result, the allotted User Department or Organisation verifies original eligibility, category and educational documents before appointment.',
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: Staff Selection Commission MTS and Havaldar 2025 notice, including the CBE evaluation order, Havaldar PET/PST requirement, final merit rules and post-result document verification.',
+          sourceLabel: 'View the official SSC MTS & Havaldar 2025 notice',
+          sourceUrl: SSC_MTS_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+  },
+  'ssc-gd-constable': {
+    syllabus: {
+      title: 'SSC GD Constable Syllabus 2026: CBE Topics & Pattern',
+      description:
+        'SSC GD Constable 2026 CBE syllabus for Reasoning, General Awareness, Elementary Mathematics and English/Hindi, based on the official notice.',
+      heading: 'SSC GD Constable Syllabus 2026',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'The Computer Based Examination has **80 questions for 160 marks in 60 minutes**. Each of the four parts contains 20 questions for 40 marks, and **0.25 mark is deducted for each wrong answer**.',
+        },
+        {
+          type: 'callout',
+          text: 'The questions are of **Matriculation level**. The topic lists below follow the indicative syllabus published in the official SSC GD Constable 2026 notice.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'General Intelligence and Reasoning',
+              pattern: '20 questions · 40 marks',
+              topics: [
+                'Analogies',
+                'Similarities and differences',
+                'Spatial visualization and spatial orientation',
+                'Visual memory, discrimination and observation',
+                'Relationship concepts',
+                'Arithmetical reasoning',
+                'Figural classification',
+                'Arithmetic number series',
+                'Non-verbal series',
+                'Coding and decoding',
+              ],
+            },
+            {
+              section: 'General Knowledge and General Awareness',
+              pattern: '20 questions · 40 marks',
+              topics: [
+                'Current events',
+                'Everyday observations in their scientific aspect',
+                'India and neighbouring countries',
+                'Sports',
+                'History and culture',
+                'Geography',
+                'Economic scene',
+                'General polity and Indian Constitution',
+                'Scientific research',
+              ],
+            },
+            {
+              section: 'Elementary Mathematics',
+              pattern: '20 questions · 40 marks',
+              topics: [
+                'Number systems',
+                'Computation of whole numbers',
+                'Decimals and fractions',
+                'Relationships between numbers',
+                'Fundamental arithmetical operations',
+                'Percentages',
+                'Ratio and proportion',
+                'Averages',
+                'Interest',
+                'Profit and loss',
+                'Discount',
+                'Mensuration',
+                'Time and distance',
+                'Ratio and time',
+                'Time and work',
+              ],
+            },
+            {
+              section: 'English/Hindi',
+              pattern: '20 questions · 40 marks',
+              topics: [
+                'Basic understanding of English or Hindi',
+                'Basic comprehension',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: Staff Selection Commission, Constable (GD) in CAPFs and SSF and Rifleman (GD) in Assam Rifles Examination, 2026 notice. The official notice supplies the CBE pattern and indicative syllabus.',
+          sourceLabel: 'View the official SSC GD Constable 2026 notice',
+          sourceUrl: SSC_GD_CONSTABLE_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    eligibility: {
+      title: 'SSC GD Constable Eligibility 2026: Age & Qualification',
+      description:
+        'Check SSC GD Constable 2026 eligibility: 18 to 23 year age limit, category relaxations, Indian citizenship, domicile requirement and Class 10 qualification.',
+      heading: 'SSC GD Constable Eligibility 2026',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Eligibility at a glance',
+          text: 'Candidates must be **18 to 23 years old as on 1 January 2026**, must be **citizens of India**, and must have passed **Matriculation or Class 10 by 1 January 2026**.',
+        },
+        {
+          type: 'statCards',
+          heading: 'Age limit',
+          note: 'For the unrelaxed age band, candidates must have been born from 2 January 2003 to 1 January 2008, inclusive.',
+          cards: [
+            { label: 'Minimum age', value: '18 years' },
+            { label: 'Maximum age', value: '23 years' },
+            { label: 'Age cut-off', value: '1 January 2026' },
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Upper-age relaxation',
+          items: [
+            { label: 'SC / ST', value: '5 years' },
+            { label: 'OBC', value: '3 years' },
+            {
+              label: 'Ex-servicemen',
+              value: '3 years after deducting military service from actual age as on the reckoning date',
+            },
+            {
+              label: 'Children / dependents of victims killed in the 1984 riots, UR / EWS',
+              value: '5 years',
+            },
+            {
+              label: 'Children / dependents of victims killed in the 1984 riots, OBC',
+              value: '8 years',
+            },
+            {
+              label: 'Children / dependents of victims killed in the 1984 riots, SC / ST',
+              value: '10 years',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Educational qualification',
+          tone: 'boxed',
+          text: 'Candidates must have passed the **Matriculation or 10th Class Examination from a recognised Board or University on or before 1 January 2026**.',
+        },
+        {
+          type: 'paragraph',
+          heading: 'Nationality and domicile',
+          text: 'A candidate must be a **citizen of India**. Because most CAPF and Assam Rifles vacancies are filled State/UT/area-wise, candidates must submit the required domicile certificate or Permanent Resident Certificate for the State or UT claimed in the application.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Eligibility rules are taken from the official SSC GD Constable 2026 notice. Domicile, category and certificate requirements should be checked carefully before applying.',
+          sourceLabel: 'View the official SSC GD Constable 2026 notice',
+          sourceUrl: SSC_GD_CONSTABLE_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'SSC GD Constable Selection Process 2026',
+      description:
+        'SSC GD Constable 2026 selection process explained from the CBE through PET/PST, medical examination, document verification and final force allocation.',
+      heading: 'SSC GD Constable Selection Process 2026',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: 'The recruitment moves from the Computer Based Examination to **PET/PST**, then **Detailed Medical Examination, Review Medical Examination where applicable, and Document Verification**. Final selection and force allocation are based on CBE merit, including NCC bonus marks where applicable, plus force preferences, subject to qualifying the later stages.',
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Computer Based Examination',
+              text: 'Candidates first take the 160-mark CBE. SSC uses normalized CBE marks and applicable NCC bonus marks to shortlist candidates for the physical stage.',
+            },
+            {
+              title: 'Physical Efficiency Test and Physical Standard Test',
+              text: 'Candidates shortlisted from the CBE undergo PET and PST conducted by the CAPFs. These are qualifying requirements for continuing in the selection process.',
+            },
+            {
+              title: 'Detailed Medical Examination / Review Medical Examination and Document Verification',
+              text: 'Candidates who clear PET/PST are shortlisted for DME and DV. Review Medical Examination may follow where applicable. The CAPFs verify original eligibility and category documents alongside the medical stage.',
+            },
+            {
+              title: 'Final merit and force allocation',
+              text: 'Candidates who qualify the required physical, medical and document stages are considered for final merit. Force allocation uses CBE merit, including NCC bonus where applicable, together with the force preferences submitted in the application.',
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: Staff Selection Commission GD Constable 2026 notice. The recruitment sequence, qualifying physical and medical stages, document verification and force-allocation rules are governed by this notice.',
+          sourceLabel: 'View the official SSC GD Constable 2026 notice',
+          sourceUrl: SSC_GD_CONSTABLE_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+  },
+  'sbi-clerk': {
+    syllabus: {
+      title: 'SBI Clerk Prelims Syllabus 2025: Sections & Topic Map',
+      description:
+        'SBI Clerk 2025 Prelims official section pattern plus a clearly labelled preparation topic map for English, Numerical Ability and Reasoning Ability.',
+      heading: 'SBI Clerk Prelims Syllabus 2025',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'The SBI Junior Associate Preliminary Examination contains **100 questions for 100 marks in 60 minutes**, with three separately timed **20-minute sections**.',
+        },
+        {
+          type: 'callout',
+          text: 'SBI officially publishes the section names, question counts, marks and timing, but not an exhaustive chapter-by-chapter syllabus in this advertisement. The granular bullets below are a **TakeMockTest preparation map**, not an SBI-prescribed subtopic list.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'English Language',
+              pattern: '30 questions · 30 marks · 20 minutes',
+              topics: [
+                'Reading comprehension and contextual vocabulary',
+                'Cloze tests and fillers',
+                'Error detection and sentence correction',
+                'Para jumbles and sentence arrangement',
+                'Word usage, phrase replacement and grammar in context',
+              ],
+            },
+            {
+              section: 'Numerical Ability',
+              pattern: '35 questions · 35 marks · 20 minutes',
+              topics: [
+                'Simplification and approximation',
+                'Number series and numerical relationships',
+                'Data interpretation',
+                'Percentage, ratio, average and partnership',
+                'Profit and loss, interest and mixture',
+                'Time and work, pipes, speed and distance',
+              ],
+            },
+            {
+              section: 'Reasoning Ability',
+              pattern: '35 questions · 35 marks · 20 minutes',
+              topics: [
+                'Seating arrangement and logic puzzles',
+                'Syllogism and inequalities',
+                'Coding-decoding and alphanumeric patterns',
+                'Blood relations and direction sense',
+                'Ranking, ordering and comparison',
+                'Logical conditions and data sufficiency',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Negative marking',
+          text: 'For wrong answers in the objective tests, **one-fourth of the mark assigned to the question is deducted**.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Official pattern source: State Bank of India, Junior Associate (Customer Support & Sales) recruitment advertisement CRPD/CR/2025-26/06. The detailed topic bullets on this page are a TakeMockTest preparation map.',
+          sourceLabel: 'View the official SBI Junior Associate 2025 advertisement',
+          sourceUrl: SBI_CLERK_2025_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    eligibility: {
+      title: 'SBI Clerk Eligibility 2025: Age Limit & Qualification',
+      description:
+        'Check SBI Clerk 2025 eligibility: 20 to 28 year age limit, category relaxations, graduation cut-off, Indian citizenship and recruitment-project restrictions.',
+      heading: 'SBI Clerk Eligibility 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Eligibility at a glance',
+          text: 'Applicants must be **Indian citizens**, must be **20 to 28 years old as on 1 April 2025**, and must hold a recognised graduation qualification by **31 December 2025**.',
+        },
+        {
+          type: 'statCards',
+          heading: 'Age limit',
+          note: 'For the unrelaxed age band, date of birth must fall from 2 April 1997 to 1 April 2005, inclusive.',
+          cards: [
+            { label: 'Minimum age', value: '20 years' },
+            { label: 'Maximum age', value: '28 years' },
+            { label: 'Age cut-off', value: '1 April 2025' },
+          ],
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Upper-age relaxation',
+          note: 'The advertisement states that cumulative age relaxation is not available.',
+          items: [
+            { label: 'OBC', value: '3 years' },
+            { label: 'SC / ST', value: '5 years' },
+            { label: 'PwBD (General / EWS)', value: '10 years' },
+            { label: 'PwBD (OBC)', value: '13 years' },
+            { label: 'PwBD (SC / ST)', value: '15 years' },
+            {
+              label: 'Ex-servicemen / Disabled Ex-servicemen',
+              value: 'Actual defence service plus 3 years; 8 years for Disabled Ex-servicemen belonging to SC / ST, subject to maximum age 50',
+            },
+            {
+              label: 'Widows / divorced / judicially separated women not remarried',
+              value: '7 years, subject to maximum age 35 General/EWS, 38 OBC, 40 SC/ST',
+            },
+            {
+              label: 'Eligible trained SBI apprentices',
+              value: 'General/EWS 1 year; OBC 4 years; SC/ST 6 years; PwBD General/EWS 11 years; PwBD OBC 14 years; PwBD SC/ST 16 years',
+            },
+          ],
+        },
+        {
+          type: 'infoBlocks',
+          heading: 'Educational qualification',
+          items: [
+            {
+              title: 'Graduation',
+              text: 'A graduation degree in any discipline from a recognised university or an equivalent qualification recognised by the Central Government.',
+            },
+            {
+              title: 'Final-year / final-semester candidates',
+              text: 'They may apply provisionally, but if selected they must produce proof of having passed graduation on or before **31 December 2025**.',
+            },
+            {
+              title: 'Integrated Dual Degree',
+              text: 'The passing date on the IDD certificate must be on or before **31 December 2025**.',
+            },
+            {
+              title: 'Eligible matriculate Ex-servicemen',
+              text: 'The advertisement also recognises the specified Army, Navy or Air Force education certificates for qualifying Ex-servicemen who completed at least 15 years of service.',
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Recruitment-project restrictions',
+          text: 'Candidates apply for vacancies in **one State or Union Territory only** and may appear for the test only once under this recruitment project. This is a project-specific restriction, not a stated lifetime attempt cap.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Eligibility facts are taken from SBI recruitment advertisement CRPD/CR/2025-26/06, including age, category relaxation, graduation cut-off and the Indian-citizen requirement.',
+          sourceLabel: 'View the official SBI Junior Associate 2025 advertisement',
+          sourceUrl: SBI_CLERK_2025_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'SBI Clerk Selection Process 2025: Prelims to Final Selection',
+      description:
+        'SBI Clerk 2025 selection process from Prelims and Mains to the Local Language Proficiency Test and final State-wise merit.',
+      heading: 'SBI Clerk Selection Process 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: 'SBI Clerk selection uses an online Preliminary Examination and Main Examination, followed by the specified opted **Local Language Proficiency Test where applicable**. Preliminary marks are not added to final merit; the final aggregate is based on Main Examination marks, with the trained SBI apprentice bonus added where applicable.',
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Phase I: Preliminary Examination',
+              text: 'Candidates take the 100-mark Prelims with three separately timed sections. SBI prescribes no minimum qualifying marks for individual Prelims tests or for the aggregate. Candidates are shortlisted for Mains in descending order of aggregate Prelims marks, generally at about ten times the number of vacancies, subject to availability.',
+            },
+            {
+              title: 'Phase II: Main Examination',
+              text: 'Shortlisted candidates take the Main Examination. Candidates must meet the Bank-decided minimum aggregate qualifying percentage; no individual-subject minimum is prescribed. Preliminary marks are not carried forward. For eligible trained SBI apprentices, the advertisement adds a 5-mark bonus to the Main aggregate to arrive at the final aggregate score.',
+            },
+            {
+              title: 'Local Language Proficiency Test',
+              text: 'Provisionally selected candidates who cannot show Class 10 or Class 12 evidence of having studied the specified opted local language must qualify the language test before joining. Failure to demonstrate proficiency leads to disqualification.',
+            },
+            {
+              title: 'Provisional and final selection',
+              text: 'SBI prepares State-wise and category-wise merit from the final aggregate score, including the trained SBI apprentice bonus where applicable, subject to the applicable local-language requirement and verification of eligibility and application information.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          heading: 'Main Examination pattern',
+          note: 'The rows sum to the official Main Examination total: 190 questions, 200 marks and 160 minutes. The separate 5-mark trained SBI apprentice bonus, where applicable, is added after the Main aggregate and does not change the 200-mark exam pattern.',
+          minWidth: '38rem',
+          headers: ['Section', 'Questions', 'Marks', 'Time'],
+          rows: [
+            ['General / Financial Awareness', '50', '50', '35 minutes'],
+            ['General English', '40', '40', '35 minutes'],
+            ['Quantitative Aptitude', '50', '50', '45 minutes'],
+            ['Reasoning Ability & Computer Aptitude', '50', '60', '45 minutes'],
+            ['Total', '190', '200', '160 minutes'],
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Source: SBI Junior Associate recruitment advertisement CRPD/CR/2025-26/06. The Main pattern, qualifying and merit rules, trained SBI apprentice bonus, and local-language requirement on this page follow the official advertisement.',
+          sourceLabel: 'View the official SBI Junior Associate 2025 advertisement',
+          sourceUrl: SBI_CLERK_2025_NOTICE_URL,
           tone: 'plain',
         },
       ],

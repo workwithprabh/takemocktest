@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-11 from 182 bank files / 5562 questions.
+Generated: 2026-08-12 from 182 bank files / 5562 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
