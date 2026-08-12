@@ -7,22 +7,26 @@
 
 ## Status
 
-The `salary` and `previous-year-papers` guide-page types were previously hardcoded to SSC CGL only, in their own `page.tsx` files. They are now data-driven through `EXAM_GUIDES`, the same system already serving `syllabus`, `eligibility`, and `selection-process` for `ssc-cgl`, `ibps-po`, `ssc-chsl`, `sbi-po`, `ibps-clerk`, and `rrb-group-d`. SSC CGL's existing salary and previous-year-papers content was migrated into this system unchanged (content parity verified) as the reference implementation. This request is for the same treatment on other exams.
+The `salary` and `previous-year-papers` guide-page types were previously hardcoded to SSC CGL only, in their own `page.tsx` files. They are now data-driven through `EXAM_GUIDES`, the same system already serving `syllabus`, `eligibility`, and `selection-process`. As of 12 August 2026, 9 exams have those three guide types live: `ssc-cgl`, `ibps-po` (original reference implementations), `ssc-chsl`, `sbi-po`, `ibps-clerk`, `rrb-group-d` (Phase 2 batch 1), and `ssc-mts`, `ssc-gd-constable`, `sbi-clerk` (Phase 2 batch 2 ready3, just integrated). SSC CGL's existing salary and previous-year-papers content was migrated into this system unchanged (content parity verified) as the reference implementation. This request is for the same treatment on the other 8 exams.
 
 **Scope decision:** this batch covers only `salary` and `previous-year-papers`. `admit-card`, `answer-key`, `cutoff`, and `result` stay SSC-CGL-only for now: they're tied to one exam cycle's exact dates and scores (not evergreen reference content like syllabus), so generalizing them means committing to a refresh every exam cycle for every exam. That's a real decision with a real ongoing cost, not something to default into. Don't research or draft those four types in this batch.
 
-## Scope: 4 exams x 2 page types = 8 pages
+## Scope: 8 exams x 2 page types = 16 pages
 
-The 4 exams that already have live syllabus/eligibility/selection-process guide pages (Phase 2 batch 1), so they're the natural next step for the same treatment:
+Every exam that already has live syllabus/eligibility/selection-process guide pages, except `ssc-cgl` (already done):
 
 | Exam | Slug | Official source already on file |
 |---|---|---|
+| IBPS PO | `ibps-po` | `https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf` |
 | SSC CHSL | `ssc-chsl` | `https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2025.pdf` |
 | SBI PO | `sbi-po` | `https://sbi.bank.in/documents/77530/57941/18062026_1_Detailed_Adv.2026.pdf/1f1a9532-8a2f-6e59-08a0-616d62a497b1?t=1781759726353` |
 | IBPS Clerk | `ibps-clerk` | `https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf` |
 | RRB Group D | `rrb-group-d` | `https://www.rrbcdg.gov.in/2025-09-level1.php` (current listing) or the archived CEN at `https://web.archive.org/web/20260411020321/https://www.rrbcdg.gov.in/uploads/2025/09-LVL1/092025-CEN.pdf` |
+| SSC MTS & Havaldar | `ssc-mts` | `https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf` |
+| SSC GD Constable | `ssc-gd-constable` | `https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf` |
+| SBI Clerk | `sbi-clerk` | `https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf` |
 
-If batch 2 (SSC MTS, SSC GD Constable, SBI Clerk, IBPS RRB Office Assistant, RRB JE) has landed by the time this is picked up, treat those 5 as in scope too under the same rules, same source URLs already given in `CONTENT_REQUEST_GUIDE_PAGES_BATCH2.md`.
+If IBPS RRB Office Assistant, RRB JE, or RRB NTPC unblock and get their syllabus/eligibility/selection-process guides live before this batch is picked up, treat them as in scope too under the same rules.
 
 ### Salary pages
 
