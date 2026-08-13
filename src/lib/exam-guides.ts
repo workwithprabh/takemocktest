@@ -72,6 +72,8 @@ const SSC_GD_CONSTABLE_NOTICE_URL =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf';
 const SBI_CLERK_2025_NOTICE_URL =
   'https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf';
+const SSC_CPO_2025_NOTICE_URL =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2025.pdf';
 
 export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, ExamGuidePage>>>> = {
   'ssc-cgl': {
@@ -2018,6 +2020,206 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
           text: 'Source: SBI Junior Associate recruitment advertisement CRPD/CR/2025-26/06. The Main pattern, qualifying and merit rules, trained SBI apprentice bonus, and local-language requirement on this page follow the official advertisement.',
           sourceLabel: 'View the official SBI Junior Associate 2025 advertisement',
           sourceUrl: SBI_CLERK_2025_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+  },
+  'ssc-cpo': {
+    syllabus: {
+      title: 'SSC CPO Syllabus 2025: Paper 1 Section-wise Topics',
+      description:
+        'Check the official SSC CPO 2025 Paper 1 syllabus for Reasoning, General Awareness, Quantitative Aptitude and English Comprehension, with the Paper 1 pattern.',
+      heading: 'SSC CPO Syllabus 2025: Paper 1',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'SSC publishes an indicative syllabus for Paper 1 in the 2025 recruitment notice. Paper 1 has four separately timed sections with 50 questions and 50 marks each, giving a total of 200 questions for 200 marks in 2 hours.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'General Intelligence and Reasoning',
+              pattern: '50 questions, 50 marks, 30 minutes',
+              topics: [
+                'Semantic, symbolic, number and figural analogies and classification',
+                'Semantic, number and figural series',
+                'Coding and decoding, word building, numerical operations and symbolic operations',
+                'Problem solving, analysis, judgment and decision making',
+                'Spatial orientation and visualization, visual memory, discrimination and observation',
+                'Relationship concepts, arithmetical reasoning, Venn diagrams and drawing inferences',
+                'Punched-hole and pattern folding or unfolding, embedded figures and figural pattern work',
+                'Address, date and city matching, indexing, centre-code and roll-number classification',
+                'Critical thinking, emotional intelligence and social intelligence',
+              ],
+            },
+            {
+              section: 'General Knowledge and General Awareness',
+              pattern: '50 questions, 50 marks, 30 minutes',
+              topics: [
+                'General awareness of the environment and its application to society',
+                'Current events',
+                'Everyday observations and experience in their scientific aspect',
+                'India and neighbouring countries: history, culture, geography and economic scene',
+                'General polity and the Indian Constitution',
+                'Scientific research',
+              ],
+            },
+            {
+              section: 'Quantitative Aptitude',
+              pattern: '50 questions, 50 marks, 30 minutes',
+              topics: [
+                'Whole numbers, decimals, fractions and relationships between numbers',
+                'Percentage, ratio and proportion, square roots and averages',
+                'Interest, profit and loss, discount, partnership business, mixture and alligation',
+                'Time and distance, time and work',
+                'Basic algebraic identities, elementary surds and graphs of linear equations',
+                'Triangles, circles, quadrilaterals, regular polygons, congruence and similarity',
+                'Prism, cone, cylinder, sphere, hemisphere, rectangular parallelepiped and pyramids',
+                'Trigonometric ratios, degrees and radians, standard identities, complementary angles, heights and distances',
+                'Histogram, frequency polygon, bar diagram and pie chart',
+              ],
+            },
+            {
+              section: 'English Comprehension',
+              pattern: '50 questions, 50 marks, 30 minutes',
+              topics: [
+                'Understanding correct English',
+                'Basic comprehension',
+                'Writing ability',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Paper 2 comes later',
+          text: 'Candidates who qualify the physical stage take Paper 2, an English Language and Comprehension paper with 200 objective questions for 200 marks in 2 hours. The repository syllabus surface for this batch is aligned to the four Paper 1 section names above.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'The Paper 1 topics and examination pattern above follow the Staff Selection Commission notice for Sub-Inspector in Delhi Police and CAPFs Examination, 2025.',
+          sourceLabel: 'SSC CPO 2025 recruitment notice',
+          sourceUrl: SSC_CPO_2025_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    eligibility: {
+      title: 'SSC CPO Eligibility 2025: Age, Qualification and Relaxation',
+      description:
+        'Check SSC CPO 2025 eligibility: nationality, age 20 to 25, DOB range, category relaxations, bachelor degree requirement and Delhi Police driving-licence rule.',
+      heading: 'SSC CPO Eligibility 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'Age at a glance',
+          text: 'The standard SSC CPO 2025 age limit is **20 to 25 years as on August 1, 2025**. Eligible candidates must have been born from August 2, 2000 through August 1, 2005.',
+        },
+        {
+          type: 'keyValueGrid',
+          heading: 'Core eligibility',
+          items: [
+            { label: 'Age', value: '20 to 25 years as on August 1, 2025' },
+            { label: 'Date of birth', value: 'Born from August 2, 2000 through August 1, 2005' },
+            { label: 'Educational qualification', value: "Bachelor's degree from a recognized university or equivalent" },
+            { label: 'Qualification cut-off', value: 'Required qualification must be possessed by October 16, 2025, the closing date for applications' },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'Nationality',
+          text: 'A candidate must be a citizen of India, a subject of Nepal or a subject of Bhutan. Candidates who are subjects of Nepal or Bhutan require a Government of India certificate of eligibility before an appointment offer can be made.',
+        },
+        {
+          type: 'table',
+          heading: 'Age relaxation and special upper-age limits',
+          minWidth: '42rem',
+          headers: ['Category', 'Relaxation or upper age'],
+          rows: [
+            ['SC / ST', '5 years'],
+            ['OBC', '3 years'],
+            ['Ex-Servicemen', '3 years after deducting military service from actual age as on the application closing date'],
+            ['Widows, divorced women and judicially separated women not remarried, Delhi Police SI only', 'Up to 35 years'],
+            ['Same category, SC / ST, Delhi Police SI only', 'Up to 40 years'],
+            ['Delhi Police departmental candidates, UR / EWS, with at least 3 years regular continuous service', 'Up to 30 years'],
+            ['Delhi Police departmental candidates, OBC, with at least 3 years regular continuous service', 'Up to 33 years'],
+            ['Delhi Police departmental candidates, SC / ST, with at least 3 years regular continuous service', 'Up to 35 years'],
+          ],
+        },
+        {
+          type: 'infoBlocks',
+          heading: 'Qualification and post-specific conditions',
+          items: [
+            {
+              title: 'Bachelor degree requirement',
+              text: "A bachelor's degree from a recognized university or equivalent is required for all posts. Candidates awaiting a result could apply only if the qualifying result was declared and the qualification was possessed by October 16, 2025.",
+            },
+            {
+              title: 'Delhi Police SI, male candidates',
+              text: 'Male candidates need a valid driving licence for LMV, covering Motorcycle and Car, on the date fixed for the Physical Endurance and Measurement Tests to remain eligible for Sub-Inspector in Delhi Police. Without it, they remain eligible only for SI posts in CAPFs, subject to other conditions.',
+            },
+            {
+              title: 'Matriculate Ex-Servicemen route',
+              text: 'A Matriculate Ex-Serviceman with at least 15 years of Armed Forces service by the closing date can be considered only for Group C SI in Delhi Police posts reserved for Ex-Servicemen, subject to the notice conditions.',
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Verify before applying',
+          text: 'Eligibility and post-specific conditions above are taken from the full SSC CPO 2025 recruitment notice, not the result write-up previously cited for pattern data.',
+          sourceLabel: 'SSC CPO 2025 recruitment notice',
+          sourceUrl: SSC_CPO_2025_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'SSC CPO Selection Process 2025: Paper 1 to Final Allocation',
+      description:
+        'Understand SSC CPO 2025 selection: Paper 1, qualifying PST and PET, Paper 2, medical examination, document verification and final merit allocation.',
+      heading: 'SSC CPO Selection Process 2025',
+      blocks: [
+        {
+          type: 'callout',
+          heading: 'How selection works',
+          text: 'SSC CPO 2025 has Paper 1, a qualifying PST and PET stage, Paper 2, medical examination and document verification. There is no interview in the notified selection sequence.',
+        },
+        {
+          type: 'numberedStages',
+          heading: 'Stage-by-stage process',
+          items: [
+            {
+              title: 'Paper 1: merit-bearing computer-based examination',
+              text: 'Paper 1 has 200 objective questions for 200 marks in 2 hours, with four separately timed 30-minute parts. Each wrong answer deducts 0.25 marks. Minimum qualifying marks, before NCC bonus, are 30% for UR, 25% for OBC and EWS, and 20% for all other categories. Paper 1 performance, including applicable NCC bonus, is used to shortlist candidates for PST and PET and also contributes to final merit.',
+            },
+            {
+              title: 'Physical Standard Test and Physical Endurance Test',
+              text: 'PST and PET are mandatory and qualifying in nature, so they do not add marks to final merit. Ex-Servicemen are not required to undergo PET. Only candidates who qualify the physical stage proceed to Paper 2.',
+            },
+            {
+              title: 'Paper 2: English Language and Comprehension',
+              text: 'Paper 2 is an objective English Language and Comprehension examination with 200 questions for 200 marks in 2 hours. Wrong answers carry a 0.25-mark penalty. Paper 1 and Paper 2 performance, including applicable NCC bonus, is used to shortlist candidates for medical examination.',
+            },
+            {
+              title: 'DME or RME and Document Verification',
+              text: 'The Detailed Medical Examination, and Review Medical Examination where applicable, is mandatory but qualifying. Document Verification is conducted by the CAPFs before the final result, preferably along with the DME or RME stage, and candidates must produce the required original eligibility and category documents.',
+            },
+            {
+              title: 'Final merit and Post or Force allocation',
+              text: "Only candidates who qualify the medical and Document Verification stages are considered for final selection. SSC makes final selection and allocation from Paper 1 and Paper 2 performance, including applicable NCC bonus, together with the candidate's submitted Post or Force preferences.",
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'The stage order, qualifying rules and final-merit basis above follow the Staff Selection Commission notice for Sub-Inspector in Delhi Police and CAPFs Examination, 2025.',
+          sourceLabel: 'SSC CPO 2025 recruitment notice',
+          sourceUrl: SSC_CPO_2025_NOTICE_URL,
           tone: 'plain',
         },
       ],
