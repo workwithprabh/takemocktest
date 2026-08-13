@@ -1019,6 +1019,33 @@ const SRMJEEE_PCM_FULL_MOCK_FAQS = [
   },
 ];
 
+const AEEE_BTECH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official AEEE question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official AEEE 2026 syllabus and examination pattern.',
+  },
+  {
+    question: 'What is the AEEE 2026 B.Tech pattern in this mock?',
+    answer: 'The Full Mock has 100 questions for 300 marks in 150 minutes: Mathematics 40, Physics 25, Chemistry 20, Quantitative Aptitude 10, and English 5, all under one combined timer.',
+  },
+  {
+    question: 'Is there negative marking in AEEE 2026?',
+    answer: 'Yes. Each correct answer earns 3 marks and each incorrect answer deducts 1 mark. An unanswered question scores zero.',
+  },
+  {
+    question: 'What syllabus does this mock cover?',
+    answer: "The official AEEE 2026 page states State Board/CBSE scope and the official section names without publishing an exhaustive chapter-by-chapter syllabus. The granular topic labels used on these tests are a TakeMockTest preparation map, not an official AEEE subtopic breakdown.",
+  },
+  {
+    question: 'Are the sectional and quick-practice test timers official AEEE timings?',
+    answer: 'No. AEEE itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official AEEE sectional format.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -1064,6 +1091,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
   'viteee/mpcea': VITEEE_MPCEA_FULL_MOCK_FAQS,
   'srmjeee/pcm': SRMJEEE_PCM_FULL_MOCK_FAQS,
+  'aeee/btech': AEEE_BTECH_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

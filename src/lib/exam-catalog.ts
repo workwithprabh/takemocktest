@@ -136,7 +136,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('VITEEE', 'Institute', 'viteee'),
           exam('SRMJEEE', 'Institute', 'srmjeee'),
           exam('Manipal Entrance Test', 'Institute'),
-          exam('AEEE', 'Institute'),
+          exam('AEEE', 'Institute', 'aeee'),
           exam('KIITEE', 'Institute'),
           exam('COMEDK UGET', 'State'),
           exam('IIIT Hyderabad UGEE', 'Institute'),
