@@ -58,10 +58,6 @@ const SSC_TIER1_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 2 marks, a wrong answer deducts 0.5 marks, and an unattempted question scores zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RRB_NTPC_CBT1_FULL_MOCK_FAQS = [
@@ -81,10 +77,6 @@ const RRB_NTPC_CBT1_FULL_MOCK_FAQS = [
     question: 'Is there negative marking in RRB NTPC CBT 1?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.333) of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const IBPS_PO_MAINS_FULL_MOCK_FAQS = [
@@ -100,10 +92,6 @@ const IBPS_PO_MAINS_FULL_MOCK_FAQS = [
     question: 'How does scoring work for Mains?',
     answer: 'Each objective question carries a share of its section\'s official mark total, and each wrong answer deducts one-fourth of that question\'s marks. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const SSC_CHSL_TIER1_FULL_MOCK_FAQS = [
@@ -118,10 +106,6 @@ const SSC_CHSL_TIER1_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 2 marks, a wrong answer deducts 0.5 marks, and an unattempted question scores zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -142,10 +126,6 @@ const IBPS_CLERK_PRELIMS_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RRB_GROUP_D_CBT_FULL_MOCK_FAQS = [
@@ -164,10 +144,6 @@ const RRB_GROUP_D_CBT_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.333) of a mark. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -188,10 +164,6 @@ const SBI_PO_PRELIMS_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RBI_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
@@ -211,10 +183,6 @@ const RBI_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const SSC_MTS_CBT_FULL_MOCK_FAQS = [
@@ -229,10 +197,6 @@ const SSC_MTS_CBT_FULL_MOCK_FAQS = [
   {
     question: 'Do Prelims marks count towards the final merit list?',
     answer: 'Only candidates who qualify Session 1 have Session 2 evaluated, and both sessions together decide shortlisting for the Physical Efficiency Test (Havaldar) or final selection (MTS). There is no separate Mains stage.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -252,10 +216,6 @@ const IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -284,10 +244,6 @@ const SSC_GD_CONSTABLE_CBE_FULL_MOCK_FAQS = [
     question: 'Does clearing the CBE mean I get the job?',
     answer: 'No. The CBE is only the first stage. Shortlisted candidates then go through a Physical Efficiency Test (PET), Physical Standard Test (PST), Detailed Medical Examination, and Document Verification, none of which are objective/written, so they are outside the scope of this mock.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS = [
@@ -311,10 +267,6 @@ const IBPS_RRB_OFFICER_SCALE_1_PRELIMS_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const SBI_CLERK_PRELIMS_FULL_MOCK_FAQS = [
@@ -334,10 +286,6 @@ const SBI_CLERK_PRELIMS_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. Each correct answer earns 1 mark, and a wrong answer deducts one-fourth of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RRB_JE_CBT1_FULL_MOCK_FAQS = [
@@ -356,10 +304,6 @@ const RRB_JE_CBT1_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.333) of a mark. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -403,10 +347,6 @@ const UPSC_CSE_PAPER2_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. Each question carries 2.5 marks, and a wrong answer deducts one-third (0.833) of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RPF_CONSTABLE_CBT_FULL_MOCK_FAQS = [
@@ -425,10 +365,6 @@ const RPF_CONSTABLE_CBT_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.333) of a mark. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -449,10 +385,6 @@ const RPF_SI_CBT_FULL_MOCK_FAQS = [
     question: 'What is the minimum qualifying percentage in the CBT?',
     answer: 'UR, EWS, and OBC-NCL candidates need 35%, while SC and ST candidates need 30%, as per the official CEN No. RPF 01/2024 notification.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const SSC_JE_PAPER_1_FULL_MOCK_FAQS = [
@@ -472,10 +404,6 @@ const SSC_JE_PAPER_1_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts 0.25 marks. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const SSC_STENO_CBT_FULL_MOCK_FAQS = [
@@ -494,10 +422,6 @@ const SSC_STENO_CBT_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts 0.25 marks. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -564,10 +488,6 @@ const SSC_CPO_PAPER_1_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const IBPS_SO_PRELIMS_FULL_MOCK_FAQS = [
@@ -586,10 +506,6 @@ const IBPS_SO_PRELIMS_FULL_MOCK_FAQS = [
   {
     question: 'Does this cover every IBPS SO post?',
     answer: 'This mock covers the Prelims pattern shared by IT Officer, Agriculture Field Officer, HR/Personnel Officer, and Marketing Officer (Scale I). The Law Officer and Rajbhasha Adhikari track uses General Awareness instead of Quantitative Aptitude, and is not covered here.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -610,10 +526,6 @@ const RBI_GRADE_B_PHASE_1_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS = [
@@ -632,10 +544,6 @@ const NABARD_GRADE_A_PHASE_1_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark, across every section. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -656,10 +564,6 @@ const SEBI_GRADE_A_PHASE_1_PAPER_1_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. Each question in Paper 1 carries 1.25 marks, and a wrong answer deducts one-quarter of that (0.3125 marks). Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS = [
@@ -678,10 +582,6 @@ const SEBI_GRADE_A_PHASE_1_PAPER_2_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. Each question in Paper 2 carries 2 marks, and a wrong answer deducts one-quarter of that (0.5 marks). Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -702,10 +602,6 @@ const SIDBI_GRADE_A_B_PHASE_1_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark, across every section. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const LIC_AAO_PRELIMS_FULL_MOCK_FAQS = [
@@ -725,10 +621,6 @@ const LIC_AAO_PRELIMS_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'No. LIC AAO Prelims carries zero negative marking, so a wrong answer costs nothing beyond the mark you missed. Unattempted questions also score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const NIACL_AO_PRELIMS_FULL_MOCK_FAQS = [
@@ -747,10 +639,6 @@ const NIACL_AO_PRELIMS_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-quarter (0.25) of a mark, in every section. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -775,10 +663,6 @@ const NIACL_AO_MAINS_FULL_MOCK_FAQS = [
     question: 'How is final selection decided?',
     answer: 'Final selection is based on the consolidated Main Examination objective score plus interview marks. Prelims marks are not part of the final merit list.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RRB_ALP_CBT1_FULL_MOCK_FAQS = [
@@ -797,10 +681,6 @@ const RRB_ALP_CBT1_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.33) of a mark. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -825,10 +705,6 @@ const RRB_ALP_CBT2_FULL_MOCK_FAQS = [
     question: 'How is final selection decided?',
     answer: 'Final merit is 70% weightage on Part A of CBT 2 plus 30% weightage on the CBAT score, among candidates who qualify Part B and the CBAT. CBT 1 marks play no role in the final panel.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS = [
@@ -848,10 +724,6 @@ const RRB_TECHNICIAN_GRADE1_SIGNAL_FULL_MOCK_FAQS = [
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.33) of a mark. Unattempted questions score zero.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS = [
@@ -870,10 +742,6 @@ const RRB_TECHNICIAN_GRADE3_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.33) of a mark. Unattempted questions score zero.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 
@@ -982,10 +850,6 @@ const VITEEE_MPCEA_FULL_MOCK_FAQS = [
     question: 'Are the sectional and quick-practice test timers official VITEEE timings?',
     answer: 'No. VITEEE itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official VITEEE sectional format.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const SRMJEEE_PCM_FULL_MOCK_FAQS = [
@@ -1013,10 +877,6 @@ const SRMJEEE_PCM_FULL_MOCK_FAQS = [
     question: 'Are the sectional and quick-practice test timers official SRMJEEE timings?',
     answer: 'No. SRMJEEE itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official SRMJEEE sectional format.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const AEEE_BTECH_FULL_MOCK_FAQS = [
@@ -1040,10 +900,6 @@ const AEEE_BTECH_FULL_MOCK_FAQS = [
     question: 'Are the sectional and quick-practice test timers official AEEE timings?',
     answer: 'No. AEEE itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official AEEE sectional format.',
   },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
-  },
 ];
 
 const MET_BTECH_FULL_MOCK_FAQS = [
@@ -1066,10 +922,6 @@ const MET_BTECH_FULL_MOCK_FAQS = [
   {
     question: 'Are the sectional and quick-practice test timers official MET timings?',
     answer: 'No. MET itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official MET sectional format.',
-  },
-  {
-    question: 'Do I need an account to attempt the mock?',
-    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
   },
 ];
 

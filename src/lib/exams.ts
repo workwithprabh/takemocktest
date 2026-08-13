@@ -4668,7 +4668,7 @@ function articleFor(word: string): 'a' | 'an' {
   return /^[aeiou]/i.test(word) ? 'an' : 'a';
 }
 
-function describeSections(pattern: StagePattern): string {
+export function describeSections(pattern: StagePattern): string {
   if (pattern.sectionBreakdown && pattern.sectionBreakdown.length > 0) {
     return pattern.sectionBreakdown
       .map((s) => `${s.name} (${s.questions} question${s.questions === 1 ? '' : 's'}, ${s.marks} mark${s.marks === 1 ? '' : 's'})`)

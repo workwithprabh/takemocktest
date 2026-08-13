@@ -1,5 +1,6 @@
 import { EXAM_LIST, getExam } from '@/lib/exams';
 import { getQuestionsForTest } from '@/lib/questions';
+import { getMockTestFaqs } from '@/lib/exam-faqs';
 import { breadcrumbSchema, organizationSchema, faqPageSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { getPostsMentioningExam } from '@/lib/blog';
@@ -27,16 +28,12 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   });
 }
 
-const FAQS = [
-  { q: 'Are these tests really free?', a: 'Yes, every available test can be attempted without creating an account.' },
-  { q: 'What does syllabus-checked mean?', a: 'Its syllabus, scoring settings, question count, answer key, explanations, and source record passed the current review gate.' },
-  { q: 'How is scoring calculated?', a: 'Each test shows its marks per question and negative-marking deduction before you begin, matching the official pattern it is checked against.' },
-];
-
 export default async function MockTestPage({ params }: { params: Promise<{ country: string; exam: string }> }) {
   const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return notFound();
+
+  const FAQS = getMockTestFaqs(exam);
 
   const stages = exam.stages.map((stage) => ({
     id: stage.id,
@@ -59,7 +56,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
       { name: 'Mock Test', path: `/${country}/${exam.slug}/mock-test` },
     ]),
     organizationSchema(),
-    faqPageSchema(FAQS),
+    ...(FAQS.length > 0 ? [faqPageSchema(FAQS)] : []),
   ];
 
   return (
@@ -158,15 +155,19 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
           );
         })()}
 
-        <h2 className="font-sans font-semibold text-lg mb-4 text-ink-900">Frequently asked questions</h2>
-        <div className="space-y-3">
-          {FAQS.map((f) => (
-            <details key={f.q} className="bg-white border border-ink-200 p-4">
-              <summary className="font-medium text-sm cursor-pointer text-ink-900">{f.q}</summary>
-              <p className="text-sm text-ink-500 mt-2">{f.a}</p>
-            </details>
-          ))}
-        </div>
+        {FAQS.length > 0 && (
+          <>
+            <h2 className="font-sans font-semibold text-lg mb-4 text-ink-900">Frequently asked questions</h2>
+            <div className="space-y-3">
+              {FAQS.map((f) => (
+                <details key={f.q} className="bg-white border border-ink-200 p-4">
+                  <summary className="font-medium text-sm cursor-pointer text-ink-900">{f.q}</summary>
+                  <p className="text-sm text-ink-500 mt-2">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

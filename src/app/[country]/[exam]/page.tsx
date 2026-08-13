@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { EXAM_LIST, getCheckedTestCount, getExam, getExamOverviewCopy } from '@/lib/exams';
-import { breadcrumbSchema } from '@/lib/schema';
+import { getExamPatternFaqs, getExamFactFaqs } from '@/lib/exam-faqs';
+import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -61,19 +62,18 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
       : []),
   ];
 
+  const faqs = [...getExamPatternFaqs(exam), ...getExamFactFaqs(exam)];
+  const jsonLd = [
+    breadcrumbSchema([
+      { name: 'Home', path: `/${country}` },
+      { name: exam.name, path: `/${country}/${exam.slug}` },
+    ]),
+    ...(faqs.length > 0 ? [faqPageSchema(faqs.map((f) => ({ q: f.q, a: f.a })))] : []),
+  ];
+
   return (
     <div className="max-w-6xl mx-auto px-5 py-6">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumbSchema([
-              { name: 'Home', path: `/${country}` },
-              { name: exam.name, path: `/${country}/${exam.slug}` },
-            ])
-          ),
-        }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Breadcrumbs items={[
         { label: 'Home', href: `/${country}` },
         { label: 'Exams', href: `/${country}/exams` },
@@ -103,6 +103,20 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
           </Link>
         ))}
       </div>
+
+      {faqs.length > 0 && (
+        <div className="mt-12 max-w-2xl">
+          <h2 className="font-sans font-semibold text-lg mb-4 text-ink-900">Frequently asked questions</h2>
+          <div className="space-y-3">
+            {faqs.map((f) => (
+              <details key={f.q} className="bg-white border border-ink-200 p-4">
+                <summary className="font-medium text-sm cursor-pointer text-ink-900">{f.q}</summary>
+                <p className="text-sm text-ink-500 mt-2">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
