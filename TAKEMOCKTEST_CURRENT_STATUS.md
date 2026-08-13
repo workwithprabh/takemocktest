@@ -1,6 +1,6 @@
 # TakeMockTest Current Status
 
-Snapshot date: 2026-08-12. Verified against commit `10517f2` (Extend guide-page system to salary and previous-year-papers).
+Snapshot date: 2026-08-12. Verified against commit `566bfda` (Add content request brief: guide pages batch 3).
 
 This file is the live project dashboard. It is tracked in Git and updated only from repository evidence by the coding agent — see `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §13. ChatGPT may read it and recommend status changes, but must not hand-edit the repository-derived numbers below. Stable product rules belong in `TAKEMOCKTEST_MASTER_HANDOFF.md`.
 
@@ -15,13 +15,13 @@ This file is the live project dashboard. It is tracked in Git and updated only f
 ## 2. Verified corpus snapshot (repository-derived, this update)
 
 - Catalog entries (`exam-catalog.ts`): 180
-- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 35
-- Question-bank files (`src/lib/question-banks/*.ts`): 182
-- Questions: 5,562
-- `npm run qa:questions`: PASS — no duplicate IDs, no duplicate question text, valid schema
-- `npm run build`: PASS — 1,033 statically generated pages
+- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 36
+- Question-bank files (`src/lib/question-banks/*.ts`): 190
+- Questions: 5,887
+- `npm run qa:questions`: PASS — no duplicate IDs, no full duplicate questions (stem + options + answer), valid schema
+- `npm run build`: PASS — 1,061 statically generated pages
 
-## 3. Live exams (35)
+## 3. Live exams (36)
 
 SSC: ssc-cgl, ssc-chsl, ssc-mts, ssc-cpo, ssc-gd-constable, ssc-je, ssc-steno, ssc-cht, ssc-selection-post
 
@@ -31,9 +31,9 @@ Railways: rrb-ntpc, rrb-group-d, rrb-alp, rrb-technician, rrb-je, rrb-paramedica
 
 Civil Services: upsc-cse
 
-Engineering: jee-main, jee-advanced, bitsat
+Engineering: jee-main, jee-advanced, bitsat, viteee
 
-Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, and BITSAT (2026 Mathematics variant) are live; VITEEE, SRMJEEE, Manipal Entrance Test, AEEE, KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued.
+Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), and VITEEE (2026 MPCEA Mathematics stream) are live; SRMJEEE, Manipal Entrance Test, AEEE, KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued.
 
 ## 4. Major completed work
 
@@ -51,6 +51,7 @@ Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluste
 - `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md`, `QUESTION_BANK_HANDOFF.md`, `TAKEMOCKTEST_CONTENT_SCHEMA.md` (+ machine-readable `.schema.json`), and `scripts/generate-collision-reference.mjs` establish the ChatGPT/coding-agent split and the handoff conventions
 - Data-driven guide pages (Syllabus, Eligibility, Selection-Process) live for 9 exams: `ssc-cgl`, `ibps-po` (original reference implementations), `ssc-chsl`, `sbi-po`, `ibps-clerk`, `rrb-group-d` (Phase 2 batch 1, Hard-QA-approved and integrated 11 August 2026, 12 pages), plus `ssc-mts`, `ssc-gd-constable`, `sbi-clerk` (Phase 2 batch 2 ready3, Hard-QA-approved v2 packages, integrated 12 August 2026, 9 pages). All indexable, canonical, in the sitemap, and rendering their approved content instead of the noindex placeholder. `ibps-rrb-office-assistant`, `rrb-je`, and `rrb-ntpc` remain queued, blocked on readable official sources. `GuideBlocks.tsx` had two rendering bugs fixed across these integrations: (1) `infoBlocks` and `numberedStages` were not applying the `**bold**` inline-markup parser other block types use, so approved content with bold dates rendered literal asterisks; (2) the `table` block's `minWidth` field only actually applied when the value was the exact string `'34rem'` (a hardcoded Tailwind arbitrary-class check), silently doing nothing for any other value including SBI Clerk's `'38rem'` — now applied generically via inline style for any value.
 - `GuidePageType` extended to `salary` and `previous-year-papers` (12 August 2026). Both are now data-driven through `EXAM_GUIDES`/`GuideBlocks.tsx` instead of hardcoded per-exam JSX, with SSC CGL's existing content migrated in as the reference implementation (byte-for-byte content parity, breadcrumbs now render where they previously didn't). A new `recordCards` block type was added for previous-year-papers' dated-link cards. `admit-card`/`answer-key`/`cutoff`/`result` deliberately stay hardcoded SSC-CGL-only: they're tied to one exam cycle's exact dates and scores, not evergreen reference content, so generalizing them means a recurring per-exam-per-cycle content refresh, decided against for now (see the file's header comment for the reasoning). `sitemap.ts` updated to emit salary/previous-year-papers generically per exam instead of the SSC-CGL-only hardcoded list.
+- VITEEE 2026 MPCEA Mathematics stream full launch (12 August 2026): Full Mock (125Q/500 marks/150 min, official 2026 pattern), 5 sectionals, and 2 mixed quick-practice tests, 325 questions total, Hard-QA-approved. First exam to use the four-mark (+4/-1/0) scoring pattern alongside JEE Main/Advanced-style engineering formats. During integration, `npm run qa:questions` flagged 2 VITEEE questions whose generic instructional stem ("Choose the grammatically correct sentence.") matched pre-existing SSC CGL questions verbatim, even though the options/answer/explanation were genuinely different. On the site owner's explicit decision, the repository's duplicate-question rule changed as a result — see §6.
 
 ## 5. Current content priority
 
@@ -62,6 +63,7 @@ Not tracked here as a live in-flight table — the previous version of this file
 - Search Console indexing coverage should be monitored as the sitemap continues to expand.
 - Question corpus automation (`qa:questions`) checks structure, duplication, and provenance completeness. It does not replace independent subject-matter validation — that remains ChatGPT's Hard QA responsibility per the operating model.
 - The cross-corpus collision reference (`TAKEMOCKTEST_COLLISION_REFERENCE.md`/`.json`) is a risk-flagging aid, not an exhaustive duplicate check — `qa:questions` is still the authoritative technical gate.
+- **Duplicate-question detection is full-signature, not stem-only, since 12 August 2026.** `npm run qa:questions` flags a duplicate only when the stem, the options, and the answer all match an existing question. A shared generic instructional opener (e.g. "Choose the grammatically correct sentence.", "Choose the correctly punctuated sentence.") reused across unrelated exams with different options/answer/explanation is allowed. This is a deliberate site-owner decision, made when VITEEE's launch package hit the old stem-only rule on 2 of its 325 questions. `QUESTION_BANK_HANDOFF.md`'s Codex acceptance checklist reflects the updated rule.
 
 ## 7. Update protocol
 

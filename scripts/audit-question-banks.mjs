@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|bitsat-2026-mathematics|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|bitsat-2026-mathematics|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical|viteee-2026-mpcea)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -136,7 +136,15 @@ for (const { file, questions } of banks) {
     : file.startsWith('rrb-technician-grade3-general-intelligence-reasoning-') ? 25
     : file.startsWith('rrb-technician-grade3-general-science-') ? 40
     : file.startsWith('rrb-technician-grade3-general-awareness-') ? 10
-    : file.startsWith('rrb-paramedical-') ? 10 : 25;
+    : file.startsWith('rrb-paramedical-') ? 10
+    : file.startsWith('viteee-2026-mpcea-full-mock-') ? 125
+    : file.startsWith('viteee-2026-mpcea-mathematics-sectional-') ? 40
+    : file.startsWith('viteee-2026-mpcea-physics-sectional-') ? 35
+    : file.startsWith('viteee-2026-mpcea-chemistry-sectional-') ? 35
+    : file.startsWith('viteee-2026-mpcea-aptitude-sectional-') ? 10
+    : file.startsWith('viteee-2026-mpcea-english-sectional-') ? 5
+    : file.startsWith('viteee-2026-mpcea-mixed-quick-practice-30m-') ? 25
+    : file.startsWith('viteee-2026-mpcea-mixed-quick-practice-60m-') ? 50 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }
@@ -171,8 +179,23 @@ for (const { file, questions } of banks) {
   questions.forEach((question, index) => {
     const label = `${file} question ${index + 1}`;
     if (!question.id || ids.has(question.id)) errors.push(`${label}: missing or duplicate ID`);
-    if (!question.question || texts.has(question.question.trim().toLowerCase())) {
-      errors.push(`${label}: missing or duplicate question text (${JSON.stringify(question.question)})`);
+    // A duplicate is the full question (stem + options + answer) matching an
+    // existing one, not just a shared generic instructional stem (e.g. "Choose
+    // the grammatically correct sentence.") reused with different options/
+    // answer/explanation across unrelated exams. Reusing a boilerplate opener
+    // like that is fine; presenting the same question twice is not.
+    const answerSignature = question.answerType === 'numerical'
+      ? question.correctValue
+      : question.answerType === 'multi-select'
+        ? (question.correctIndices ?? []).slice().sort().join(',')
+        : question.correctIndex;
+    const questionSignature = [
+      question.question?.trim().toLowerCase(),
+      (question.options ?? []).map((option) => option.trim().toLowerCase()).join('|'),
+      answerSignature,
+    ].join('::');
+    if (!question.question || texts.has(questionSignature)) {
+      errors.push(`${label}: missing or duplicate question (${JSON.stringify(question.question)})`);
     }
     if (question.answerType === 'numerical') {
       const valuePattern = question.maxDecimalPlaces ? /^-?\d+(?:\.\d{1,2})?$/ : /^-?\d+$/;
@@ -205,7 +228,7 @@ for (const { file, questions } of banks) {
       errors.push(`${label}: incomplete provenance`);
     }
     ids.add(question.id);
-    texts.add(question.question.trim().toLowerCase());
+    texts.add(questionSignature);
   });
 }
 

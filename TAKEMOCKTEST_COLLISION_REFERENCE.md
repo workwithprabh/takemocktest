@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-12 from 182 bank files / 5562 questions.
+Generated: 2026-08-13 from 190 bank files / 5887 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -128,6 +128,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | find the one that does not | lic-aao, niacl-ao, rrb-alp, rrb-paramedical, rrb-technician, sidbi-grade (6) |
 | find the sum of the first | nabard-grade, rbi-grade, rrb-technician, sebi-grade, sidbi-grade, ssc-cpo (6) |
 | choose the correct indirect speech form | ibps-clerk, ibps-po, sbi-po, ssc-chsl, ssc-steno (5) |
+| a fair die is rolled once | ibps-clerk, ibps-po, ssc-cgl, ssc-selection, viteee-2026 (5) |
 | an article is sold at a | ibps-rrb, lic-aao, niacl-ao, rpf-constable, sbi-clerk (5) |
 | find the circumference of a circle | ibps-rrb, niacl-ao, rbi-grade, rpf-constable, rrb-technician (5) |
 | improve the underlined part he is | ibps-so, nabard-grade, niacl-ao, sidbi-grade, ssc-cpo (5) |
@@ -139,7 +140,6 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | arrange the parts to form a | ibps-clerk, ibps-po, sbi-po, ssc-steno (4) |
 | a can finish a job in | ibps-clerk, ibps-po, rrb-alp, ssc-cgl (4) |
 | how far does a car travel | ibps-clerk, ibps-po, rrb-group, sbi-po (4) |
-| a fair die is rolled once | ibps-clerk, ibps-po, ssc-cgl, ssc-selection (4) |
 | using 22 7 find the area | ibps-clerk, ibps-po, rrb-group, sbi-po (4) |
 | find the highest common factor of | ibps-clerk, ibps-po, rrb-group, sbi-po (4) |
 | find the least common multiple of | ibps-clerk, ibps-po, rrb-group, sbi-po (4) |

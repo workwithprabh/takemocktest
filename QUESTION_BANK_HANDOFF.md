@@ -237,7 +237,7 @@ Import this content-authoritative package into TakeMockTest without repeating ac
 - Approved exam brief, manifest, Hard QA PASS, and implementation specification are present.
 - Configured sections, question totals, marks, negative marking, answer types, and timers match the approved package.
 - IDs, option counts, and answer indexes are structurally valid.
-- No duplicate IDs or question text against the existing repository.
+- No duplicate IDs, and no full duplicate question (same stem, options, and answer) against the existing repository. Reusing a generic instructional stem (e.g. "Choose the grammatically correct sentence.") across unrelated exams is fine as long as the options and answer differ; the repository check compares stem + options + answer together, not the stem alone.
 - No approved question, answer, explanation, or difficulty label was silently changed.
 - Repository question QA passes.
 - Production build passes.

@@ -181,6 +181,14 @@ import { JEE_ADVANCED_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-advanced-
 import { JEE_ADVANCED_PAPER_2_MATHEMATICS_1 } from './question-banks/jee-advanced-paper-2-mathematics-1';
 import { JEE_ADVANCED_PAPER_2_PHYSICS_1 } from './question-banks/jee-advanced-paper-2-physics-1';
 import { JEE_ADVANCED_PAPER_2_CHEMISTRY_1 } from './question-banks/jee-advanced-paper-2-chemistry-1';
+import { VITEEE_2026_MPCEA_FULL_MOCK_1 } from './question-banks/viteee-2026-mpcea-full-mock-1';
+import { VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_1 } from './question-banks/viteee-2026-mpcea-mathematics-sectional-1';
+import { VITEEE_2026_MPCEA_PHYSICS_SECTIONAL_1 } from './question-banks/viteee-2026-mpcea-physics-sectional-1';
+import { VITEEE_2026_MPCEA_CHEMISTRY_SECTIONAL_1 } from './question-banks/viteee-2026-mpcea-chemistry-sectional-1';
+import { VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_1 } from './question-banks/viteee-2026-mpcea-aptitude-sectional-1';
+import { VITEEE_2026_MPCEA_ENGLISH_SECTIONAL_1 } from './question-banks/viteee-2026-mpcea-english-sectional-1';
+import { VITEEE_2026_MPCEA_MIXED_QUICK_PRACTICE_30M_1 } from './question-banks/viteee-2026-mpcea-mixed-quick-practice-30m-1';
+import { VITEEE_2026_MPCEA_MIXED_QUICK_PRACTICE_60M_1 } from './question-banks/viteee-2026-mpcea-mixed-quick-practice-60m-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -847,6 +855,17 @@ const JEE_MAIN_TESTS: Record<string, Question[]> = {
 
 const JEE_ADVANCED_PAPER_1_BANKS = [JEE_ADVANCED_PAPER_1_MATHEMATICS_1, JEE_ADVANCED_PAPER_1_PHYSICS_1, JEE_ADVANCED_PAPER_1_CHEMISTRY_1];
 const JEE_ADVANCED_PAPER_2_BANKS = [JEE_ADVANCED_PAPER_2_MATHEMATICS_1, JEE_ADVANCED_PAPER_2_PHYSICS_1, JEE_ADVANCED_PAPER_2_CHEMISTRY_1];
+const VITEEE_TESTS: Record<string, Question[]> = {
+  'viteee/full-mock-1': VITEEE_2026_MPCEA_FULL_MOCK_1,
+  'viteee/mathematics-sectional-1': VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_1,
+  'viteee/physics-sectional-1': VITEEE_2026_MPCEA_PHYSICS_SECTIONAL_1,
+  'viteee/chemistry-sectional-1': VITEEE_2026_MPCEA_CHEMISTRY_SECTIONAL_1,
+  'viteee/aptitude-sectional-1': VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_1,
+  'viteee/english-sectional-1': VITEEE_2026_MPCEA_ENGLISH_SECTIONAL_1,
+  'viteee/mixed-quick-practice-30m-1': VITEEE_2026_MPCEA_MIXED_QUICK_PRACTICE_30M_1,
+  'viteee/mixed-quick-practice-60m-1': VITEEE_2026_MPCEA_MIXED_QUICK_PRACTICE_60M_1,
+};
+
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
   'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
@@ -858,7 +877,7 @@ const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-2-chemistry-sectional-1': JEE_ADVANCED_PAPER_2_CHEMISTRY_1,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -923,6 +942,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('rrb-alp/cbt-1-full-mock')
     ? 75
+    : testId.includes('viteee/full-mock')
+    ? 125
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1039,6 +1060,20 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 18
           : testId.includes('rrb-paramedical')
             ? 10
+          : testId.includes('viteee/mathematics-sectional')
+            ? 40
+          : testId.includes('viteee/physics-sectional')
+            ? 35
+          : testId.includes('viteee/chemistry-sectional')
+            ? 35
+          : testId.includes('viteee/aptitude-sectional')
+            ? 10
+          : testId.includes('viteee/english-sectional')
+            ? 5
+          : testId.includes('viteee/mixed-quick-practice-30m')
+            ? 25
+          : testId.includes('viteee/mixed-quick-practice-60m')
+            ? 50
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -1088,6 +1123,13 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
 }
 
 const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
+  'viteee': [
+    { section: 'Mathematics', count: 40 },
+    { section: 'Physics', count: 35 },
+    { section: 'Chemistry', count: 35 },
+    { section: 'English', count: 5 },
+    { section: 'Aptitude', count: 10 },
+  ],
   'ssc-cgl': [
     { section: 'General Intelligence and Reasoning', count: 25 },
     { section: 'General Awareness', count: 25 },
@@ -1615,6 +1657,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     JEE_ADVANCED_PAPER_1_MATHEMATICS_1[0],
     JEE_ADVANCED_PAPER_1_PHYSICS_1[0],
     JEE_ADVANCED_PAPER_1_CHEMISTRY_1[0],
+  ],
+  'viteee': [
+    VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_1[0],
+    VITEEE_2026_MPCEA_PHYSICS_SECTIONAL_1[0],
+    VITEEE_2026_MPCEA_CHEMISTRY_SECTIONAL_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

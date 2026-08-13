@@ -961,6 +961,33 @@ const JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS = [
   },
 ];
 
+const VITEEE_MPCEA_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official VITEEE question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official VITEEE 2026 MPCEA syllabus and pattern.',
+  },
+  {
+    question: 'What is the VITEEE 2026 MPCEA pattern in this mock?',
+    answer: 'The Full Mock has 125 questions for 500 marks in 150 minutes: Mathematics 40, Physics 35, Chemistry 35, Aptitude 10, and English 5, all under one combined timer.',
+  },
+  {
+    question: 'Is there negative marking in VITEEE 2026?',
+    answer: 'Yes. Each correct answer earns 4 marks and each incorrect answer deducts 1 mark. An unattempted question, or one marked for review without an answer, scores zero. This is a change from 2025, when VITEEE carried no negative marking.',
+  },
+  {
+    question: 'Does this mock cover the BPCEA Biology stream?',
+    answer: 'No. This mock covers the MPCEA Mathematics stream only. BPCEA replaces the Mathematics section with Biology and is not modeled on this site.',
+  },
+  {
+    question: 'Are the sectional and quick-practice test timers official VITEEE timings?',
+    answer: 'No. VITEEE itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official VITEEE sectional format.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -1004,6 +1031,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'jee-main/paper-1': JEE_MAIN_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-1': JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
+  'viteee/mpcea': VITEEE_MPCEA_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({

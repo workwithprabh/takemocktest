@@ -33,7 +33,8 @@ export type ExamSlug =
   | 'ssc-selection-post'
   | 'bitsat'
   | 'jee-main'
-  | 'jee-advanced';
+  | 'jee-advanced'
+  | 'viteee';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -127,6 +128,7 @@ const JEE_MAIN_2026_BULLETIN =
   'https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/11/202511021649722475.pdf';
 const JEE_ADVANCED_2026_PAPER_1 = 'https://jeeadv.ac.in/documents/p1_english.pdf';
 const JEE_ADVANCED_2026_PAPER_2 = 'https://jeeadv.ac.in/documents/p2_english.pdf';
+const VITEEE_2026_ADMISSIONS_PAGE = 'https://viteee.vit.ac.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4456,6 +4458,49 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'paper-2-mathematics-sectional-1', name: 'Paper 2 Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
           { id: 'paper-2-physics-sectional-1', name: 'Paper 2 Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
           { id: 'paper-2-chemistry-sectional-1', name: 'Paper 2 Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+        ],
+      },
+    ],
+  },
+  'viteee': {
+    slug: 'viteee',
+    name: 'VITEEE',
+    shortName: 'VITEEE',
+    fullName: 'VIT Engineering Entrance Examination 2026: MPCEA Mathematics Stream',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'mpcea',
+        name: 'MPCEA Mathematics Stream',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'Aptitude', 'English'],
+          totalQuestions: 125,
+          totalMarks: 500,
+          duration: 150,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 40, marks: 160 },
+            { name: 'Physics', questions: 35, marks: 140 },
+            { name: 'Chemistry', questions: 35, marks: 140 },
+            { name: 'Aptitude', questions: 10, marks: 40 },
+            { name: 'English', questions: 5, marks: 20 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all five sections.',
+          note: 'This is the MPCEA Mathematics stream. Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question, or one marked for review without an answer, scores zero. The 2026 pattern introduced this negative-marking rule, replacing the no-negative-marking rule used in 2025. Sectional and mixed quick-practice tests use TakeMockTest-defined durations for focused practice, not an official VITEEE sectional format.',
+          sourceUrl: VITEEE_2026_ADMISSIONS_PAGE,
+          checkedOn: '12 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+          { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 42, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+          { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 42, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+          { id: 'aptitude-sectional-1', name: 'Aptitude Sectional Test 1', kind: 'sectional', section: 'Aptitude', status: 'checked', duration: 12, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', section: 'English', status: 'checked', duration: 6, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+          { id: 'mixed-quick-practice-30m-1', name: 'Mixed Quick Practice Test 1 (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+          { id: 'mixed-quick-practice-60m-1', name: 'Mixed Quick Practice Test 2 (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
         ],
       },
     ],

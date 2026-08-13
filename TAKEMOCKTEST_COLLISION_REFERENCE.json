@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-12",
+  "generatedAt": "2026-08-13",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 182,
-    "questions": 5562
+    "bankFiles": 190,
+    "questions": 5887
   },
   "topicSaturation": [
     {
@@ -2797,6 +2797,17 @@
       ]
     },
     {
+      "opening": "a fair die is rolled once",
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ssc-cgl",
+        "ssc-selection",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "an article is sold at a",
       "examCount": 5,
       "exams": [
@@ -2911,16 +2922,6 @@
         "ibps-po",
         "rrb-group",
         "sbi-po"
-      ]
-    },
-    {
-      "opening": "a fair die is rolled once",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ssc-cgl",
-        "ssc-selection"
       ]
     },
     {
@@ -3262,6 +3263,15 @@
       ]
     },
     {
+      "opening": "how many onto functions are there",
+      "examCount": 3,
+      "exams": [
+        "bitsat-2026",
+        "jee-advanced",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "choose the best connector the branch",
       "examCount": 3,
       "exams": [
@@ -3358,6 +3368,15 @@
         "ibps-po",
         "rrb-ntpc",
         "sbi-clerk"
+      ]
+    },
+    {
+      "opening": "if 1 january is a monday",
+      "examCount": 3,
+      "exams": [
+        "ibps-po",
+        "ssc-cgl",
+        "viteee-2026"
       ]
     },
     {
@@ -3838,6 +3857,14 @@
       ]
     },
     {
+      "opening": "what is the oxidation state of",
+      "examCount": 2,
+      "exams": [
+        "bitsat-2026",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "which word is closest in meaning",
       "examCount": 2,
       "exams": [
@@ -3870,11 +3897,11 @@
       ]
     },
     {
-      "opening": "how many onto functions are there",
+      "opening": "for a 1 2 3 4",
       "examCount": 2,
       "exams": [
         "bitsat-2026",
-        "jee-advanced"
+        "viteee-2026"
       ]
     },
     {
@@ -3883,6 +3910,38 @@
       "exams": [
         "bitsat-2026",
         "ssc-cgl"
+      ]
+    },
+    {
+      "opening": "the circle x 2 y 2",
+      "examCount": 2,
+      "exams": [
+        "bitsat-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "a line has direction ratios 2",
+      "examCount": 2,
+      "exams": [
+        "bitsat-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "what is the equation of the",
+      "examCount": 2,
+      "exams": [
+        "bitsat-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "for f x x 3 6x",
+      "examCount": 2,
+      "exams": [
+        "bitsat-2026",
+        "viteee-2026"
       ]
     },
     {
@@ -3899,6 +3958,14 @@
       "exams": [
         "bitsat-2026",
         "jee-main"
+      ]
+    },
+    {
+      "opening": "maximize z 3x 2y subject to",
+      "examCount": 2,
+      "exams": [
+        "bitsat-2026",
+        "viteee-2026"
       ]
     },
     {
@@ -4166,14 +4233,6 @@
       ]
     },
     {
-      "opening": "if 1 january is a monday",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "ssc-cgl"
-      ]
-    },
-    {
       "opening": "statements some books are journals all",
       "examCount": 2,
       "exams": [
@@ -4211,62 +4270,6 @@
       "exams": [
         "ibps-rrb",
         "rbi-assistant"
-      ]
-    },
-    {
-      "opening": "find the simple interest on 5",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "lic-aao"
-      ]
-    },
-    {
-      "opening": "an item marked at 1 200",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "rbi-assistant"
-      ]
-    },
-    {
-      "opening": "in a row of 30 students",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "ssc-chsl"
-      ]
-    },
-    {
-      "opening": "a shopkeeper marks an item 40",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "lic-aao"
-      ]
-    },
-    {
-      "opening": "at what rate percent per annum",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "ibps-so"
-      ]
-    },
-    {
-      "opening": "a can do a piece of",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "ssc-cpo"
-      ]
-    },
-    {
-      "opening": "two cars start from the same",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "ibps-so"
       ]
     }
   ]
