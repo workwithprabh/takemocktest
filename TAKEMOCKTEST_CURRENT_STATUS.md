@@ -1,6 +1,6 @@
 # TakeMockTest Current Status
 
-Snapshot date: 2026-08-13. Verified against commit `0816dc1` (VITEEE 2026 MPCEA full launch), plus the uncommitted SSC CPO guide-page integration described below.
+Snapshot date: 2026-08-13. Verified against commit `b079476` (Guide pages batch 3 partial: SSC CPO), plus the uncommitted SRMJEEE 2026 PCM full launch described below.
 
 This file is the live project dashboard. It is tracked in Git and updated only from repository evidence by the coding agent — see `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §13. ChatGPT may read it and recommend status changes, but must not hand-edit the repository-derived numbers below. Stable product rules belong in `TAKEMOCKTEST_MASTER_HANDOFF.md`.
 
@@ -15,13 +15,13 @@ This file is the live project dashboard. It is tracked in Git and updated only f
 ## 2. Verified corpus snapshot (repository-derived, this update)
 
 - Catalog entries (`exam-catalog.ts`): 180
-- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 36
-- Question-bank files (`src/lib/question-banks/*.ts`): 190
-- Questions: 5,887
+- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 37
+- Question-bank files (`src/lib/question-banks/*.ts`): 197
+- Questions: 6,225
 - `npm run qa:questions`: PASS — no duplicate IDs, no full duplicate questions (stem + options + answer), valid schema
-- `npm run build`: PASS — 1,061 statically generated pages
+- `npm run build`: PASS — 1,087 statically generated pages
 
-## 3. Live exams (36)
+## 3. Live exams (37)
 
 SSC: ssc-cgl, ssc-chsl, ssc-mts, ssc-cpo, ssc-gd-constable, ssc-je, ssc-steno, ssc-cht, ssc-selection-post
 
@@ -31,9 +31,9 @@ Railways: rrb-ntpc, rrb-group-d, rrb-alp, rrb-technician, rrb-je, rrb-paramedica
 
 Civil Services: upsc-cse
 
-Engineering: jee-main, jee-advanced, bitsat, viteee
+Engineering: jee-main, jee-advanced, bitsat, viteee, srmjeee
 
-Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), and VITEEE (2026 MPCEA Mathematics stream) are live; SRMJEEE, Manipal Entrance Test, AEEE, KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued.
+Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), VITEEE (2026 MPCEA Mathematics stream), and SRMJEEE (2026 PCM Mathematics route) are live; Manipal Entrance Test, AEEE, KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued.
 
 ## 4. Major completed work
 
@@ -53,6 +53,7 @@ Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluste
 - `GuidePageType` extended to `salary` and `previous-year-papers` (12 August 2026). Both are now data-driven through `EXAM_GUIDES`/`GuideBlocks.tsx` instead of hardcoded per-exam JSX, with SSC CGL's existing content migrated in as the reference implementation (byte-for-byte content parity, breadcrumbs now render where they previously didn't). A new `recordCards` block type was added for previous-year-papers' dated-link cards. `admit-card`/`answer-key`/`cutoff`/`result` deliberately stay hardcoded SSC-CGL-only: they're tied to one exam cycle's exact dates and scores, not evergreen reference content, so generalizing them means a recurring per-exam-per-cycle content refresh, decided against for now (see the file's header comment for the reasoning). `sitemap.ts` updated to emit salary/previous-year-papers generically per exam instead of the SSC-CGL-only hardcoded list.
 - **Guide pages batch 3 is partial, not complete (13 August 2026).** Of the 5 exams scoped in `CONTENT_REQUEST_GUIDE_PAGES_BATCH3.md`, only `ssc-cpo` passed Hard QA (0 unresolved issues) and is integrated and live. The other four are explicitly not integrated: `rbi-assistant` is blocked at Hard QA because its primary RBI source could not be independently re-verified (anti-bot challenge on the RBI opportunities site); `rbi-grade-b`, `ibps-so`, and `nabard-grade-a` are blocked earlier, at the research-gate stage, each on an unreadable current-cycle primary source. See `guide-pages-batch3-ready2-hard-qa-v1-FAIL.md` and `guide-pages-batch3-research-gate-v1.md` for the per-exam detail. Do not treat batch 3 as done until those four unblock.
 - VITEEE 2026 MPCEA Mathematics stream full launch (12 August 2026): Full Mock (125Q/500 marks/150 min, official 2026 pattern), 5 sectionals, and 2 mixed quick-practice tests, 325 questions total, Hard-QA-approved. First exam to use the four-mark (+4/-1/0) scoring pattern alongside JEE Main/Advanced-style engineering formats. During integration, `npm run qa:questions` flagged 2 VITEEE questions whose generic instructional stem ("Choose the grammatically correct sentence.") matched pre-existing SSC CGL questions verbatim, even though the options/answer/explanation were genuinely different. On the site owner's explicit decision, the repository's duplicate-question rule changed as a result — see §6.
+- SRMJEEE 2026 PCM Mathematics route full launch (13 August 2026): Full Mock (130Q/130 marks/150 min, official 2026 pattern), 4 sectionals, and 2 mixed quick-practice tests, 338 questions total, Hard-QA-approved (1 corrected item, 12 replaced items across the v2 banks). No negative marking, +1 per correct answer. The official syllabus names the fourth section `English & Aptitude` as one combined 20-question section with no published subtopic list, so its granular topic labels are documented in-app as a TakeMockTest preparation map, not an official SRM subtopic breakdown. The Mathematics/Biology alternative route is out of scope and not built.
 
 ## 5. Current content priority
 

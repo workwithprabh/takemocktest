@@ -34,7 +34,8 @@ export type ExamSlug =
   | 'bitsat'
   | 'jee-main'
   | 'jee-advanced'
-  | 'viteee';
+  | 'viteee'
+  | 'srmjeee';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -129,6 +130,8 @@ const JEE_MAIN_2026_BULLETIN =
 const JEE_ADVANCED_2026_PAPER_1 = 'https://jeeadv.ac.in/documents/p1_english.pdf';
 const JEE_ADVANCED_2026_PAPER_2 = 'https://jeeadv.ac.in/documents/p2_english.pdf';
 const VITEEE_2026_ADMISSIONS_PAGE = 'https://viteee.vit.ac.in/';
+const SRMJEEE_2026_EXAMINATION_PATTERN =
+  'https://static.npfs.co/accounts/171/documents/2025/11/3/abcba4bfc02e4317a76896919ae8c2f0_srmjeee-examination-pattern.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4501,6 +4504,47 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', section: 'English', status: 'checked', duration: 6, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
           { id: 'mixed-quick-practice-30m-1', name: 'Mixed Quick Practice Test 1 (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
           { id: 'mixed-quick-practice-60m-1', name: 'Mixed Quick Practice Test 2 (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '12 August 2026' },
+        ],
+      },
+    ],
+  },
+  'srmjeee': {
+    slug: 'srmjeee',
+    name: 'SRMJEEE',
+    shortName: 'SRMJEEE',
+    fullName: 'SRM Joint Engineering Entrance Examination 2026: PCM / Mathematics Route',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'pcm',
+        name: 'PCM / Mathematics Route',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics', 'English & Aptitude'],
+          totalQuestions: 130,
+          totalMarks: 130,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 35, marks: 35 },
+            { name: 'Chemistry', questions: 35, marks: 35 },
+            { name: 'Mathematics', questions: 40, marks: 40 },
+            { name: 'English & Aptitude', questions: 20, marks: 20 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all four sections.',
+          note: 'This is the PCM / Mathematics route (SRMJEEE also offers a Mathematics/Biology alternative for the fourth subject; that Biology route is not covered here). Each correct answer earns 1 mark and there is no negative marking for a wrong answer; an unanswered question scores zero. SRMJEEE 2026 is delivered as a Remote Proctored Online Mode examination. The official syllabus names the fourth section English & Aptitude as one combined section without a published subtopic split, so granular topic labels used in these tests are a TakeMockTest preparation map, not an official SRM subtopic list. Sectional and mixed quick-practice tests use TakeMockTest-defined durations for focused practice, not an official SRMJEEE sectional format.',
+          sourceUrl: SRMJEEE_2026_EXAMINATION_PATTERN,
+          checkedOn: '13 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 46, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'english-aptitude-sectional-1', name: 'English & Aptitude Sectional Test 1', kind: 'sectional', section: 'English & Aptitude', status: 'checked', duration: 23, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'mixed-quick-practice-30m-1', name: 'Mixed Quick Practice Test 1 (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'mixed-quick-practice-60m-1', name: 'Mixed Quick Practice Test 2 (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
         ],
       },
     ],

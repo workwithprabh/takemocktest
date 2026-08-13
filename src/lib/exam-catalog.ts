@@ -134,7 +134,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('JEE Advanced', 'National', 'jee-advanced'),
           exam('BITSAT', 'Institute', 'bitsat'),
           exam('VITEEE', 'Institute', 'viteee'),
-          exam('SRMJEEE', 'Institute'),
+          exam('SRMJEEE', 'Institute', 'srmjeee'),
           exam('Manipal Entrance Test', 'Institute'),
           exam('AEEE', 'Institute'),
           exam('KIITEE', 'Institute'),

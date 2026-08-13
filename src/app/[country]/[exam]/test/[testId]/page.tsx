@@ -988,6 +988,37 @@ const VITEEE_MPCEA_FULL_MOCK_FAQS = [
   },
 ];
 
+const SRMJEEE_PCM_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SRMJEEE question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SRMJEEE 2026 syllabus and examination pattern.',
+  },
+  {
+    question: 'What is the SRMJEEE 2026 PCM pattern in this mock?',
+    answer: 'The Full Mock has 130 questions for 130 marks in 150 minutes: Physics 35, Chemistry 35, Mathematics 40, and English & Aptitude 20, all under one combined timer.',
+  },
+  {
+    question: 'Is there negative marking in SRMJEEE 2026?',
+    answer: 'No. Each correct answer earns 1 mark and there is no deduction for a wrong answer. An unanswered question scores zero.',
+  },
+  {
+    question: 'Does this mock cover the Mathematics/Biology route?',
+    answer: 'This mock covers the PCM Mathematics route only. SRMJEEE also offers a Mathematics/Biology alternative for the fourth subject, which is not modeled on this site.',
+  },
+  {
+    question: 'What does the English & Aptitude section cover?',
+    answer: "SRM's official syllabus names English & Aptitude as one combined 20-question section without publishing a subtopic list. The granular topic labels used on these tests, such as vocabulary or numerical reasoning, are a TakeMockTest preparation map, not an official SRM subtopic breakdown.",
+  },
+  {
+    question: 'Are the sectional and quick-practice test timers official SRMJEEE timings?',
+    answer: 'No. SRMJEEE itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official SRMJEEE sectional format.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -1032,6 +1063,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'jee-advanced/paper-1': JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
   'viteee/mpcea': VITEEE_MPCEA_FULL_MOCK_FAQS,
+  'srmjeee/pcm': SRMJEEE_PCM_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
