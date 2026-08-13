@@ -111,7 +111,95 @@ export interface FactFaq extends Faq {
   checkedOn: string;
 }
 
-export const EXAM_FACT_FAQS: Partial<Record<string, FactFaq[]>> = {};
+// Batch 1: reused directly from this repo's own already Hard-QA-approved,
+// sourced `EXAM_GUIDES` eligibility pages (src/lib/exam-guides.ts) rather
+// than fresh research, since that content already carries an official
+// source and is verified. checkedOn reflects the date this reuse was
+// checked against the current EXAM_GUIDES content, not a fresh source
+// visit. Age/qualification bands are for the standard route only; see each
+// exam's /eligibility page for post-specific and relaxation detail.
+export const EXAM_FACT_FAQS: Partial<Record<string, FactFaq[]>> = {
+  'ssc-cgl': [
+    {
+      q: 'What is the age limit and qualification for SSC CGL?',
+      a: "SSC CGL eligibility depends on the post you choose. Most posts require a bachelor's degree, while the age limit falls within one of four post-specific bands (18-27, 20-30, 18-30, or 18-32 years), both counted as on 1 August 2026. See the eligibility page for the post-wise age band and age relaxation for reserved categories.",
+      sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'ibps-po': [
+    {
+      q: 'What is the age limit and qualification for IBPS PO?',
+      a: 'A candidate ordinarily needs a recognised graduation degree and must be between 20 and 30 years old. Age is measured on 1 July 2026, and the educational qualification must be held by 21 July 2026.',
+      sourceUrl: 'https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'ssc-chsl': [
+    {
+      q: 'What is the age limit and qualification for SSC CHSL?',
+      a: 'The unrelaxed age limit is 18 to 27 years as on 1 January 2026. For most posts, candidates need 12th Standard or an equivalent qualification by 1 January 2026.',
+      sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2025.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'sbi-po': [
+    {
+      q: 'What is the age limit and qualification for SBI PO?',
+      a: 'Candidates must be 21 to 30 years old as on 1 April 2026 and hold a recognised graduation degree or an accepted equivalent qualification.',
+      sourceUrl: 'https://sbi.bank.in/documents/77530/57941/18062026_1_Detailed_Adv.2026.pdf/1f1a9532-8a2f-6e59-08a0-616d62a497b1?t=1781759726353',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'ibps-clerk': [
+    {
+      q: 'What is the age limit and qualification for IBPS Clerk?',
+      a: 'Candidates must be 20 to 28 years old as on 1 August 2026 and must hold a recognised graduation degree by the registration cut-off in the notification.',
+      sourceUrl: 'https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'rrb-group-d': [
+    {
+      q: 'What is the age limit and qualification for RRB Group D?',
+      a: 'The base age band is 18 to 33 years as on 1 January 2026. Educational qualification is post-specific and must have been held by 2 March 2026, the qualification cut-off stated in the detailed CEN.',
+      sourceUrl: 'https://www.rrbcdg.gov.in/2025-09-level1.php',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'ssc-mts': [
+    {
+      q: 'What is the age limit and qualification for SSC MTS?',
+      a: 'Candidates must have passed Matriculation or an equivalent examination by 1 August 2025. The normal age band is 18 to 25 years for MTS, while Havaldar and a few MTS posts use 18 to 27 years, both measured on 1 August 2025.',
+      sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'ssc-gd-constable': [
+    {
+      q: 'What is the age limit and qualification for SSC GD Constable?',
+      a: 'Candidates must be 18 to 23 years old as on 1 January 2026, must be citizens of India, and must have passed Matriculation or Class 10 by 1 January 2026.',
+      sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_01122025.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'sbi-clerk': [
+    {
+      q: 'What is the age limit and qualification for SBI Clerk (Junior Associate)?',
+      a: 'Applicants must be Indian citizens, must be 20 to 28 years old as on 1 April 2025, and must hold a recognised graduation qualification by 31 December 2025.',
+      sourceUrl: 'https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+  'ssc-cpo': [
+    {
+      q: 'What is the age limit for SSC CPO?',
+      a: 'The standard SSC CPO 2025 age limit is 20 to 25 years as on 1 August 2025 (eligible candidates born between 2 August 2000 and 1 August 2005). Age relaxation applies for reserved categories, ex-servicemen, and specific Delhi Police departmental candidates; see the eligibility page for the full table.',
+      sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2025.pdf',
+      checkedOn: '13 August 2026',
+    },
+  ],
+};
 
 export function getExamFactFaqs(exam: ExamConfig): FactFaq[] {
   return EXAM_FACT_FAQS[exam.slug] ?? [];
