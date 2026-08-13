@@ -481,17 +481,21 @@ export default function TestAttemptClient({
               {q.answerType === 'numerical' ? (
                 <div>
                   <label htmlFor="numerical-answer" className="mb-2 block text-xs font-semibold text-ink-700">
-                    {q.maxDecimalPlaces ? 'Enter a numerical value (up to two decimal places)' : 'Enter the nearest integer'}
+                    {q.maxDecimalPlaces
+                      ? `Enter a numerical value (up to ${q.maxDecimalPlaces} decimal place${q.maxDecimalPlaces === 1 ? '' : 's'})`
+                      : 'Enter the numerical value'}
                   </label>
                   <input
                     id="numerical-answer"
                     type="text"
-                    inputMode={q.maxDecimalPlaces ? 'decimal' : 'numeric'}
+                    inputMode="decimal"
                     autoComplete="off"
                     value={typeof answers[currentIndex] === 'string' ? answers[currentIndex] : ''}
                     onChange={(event) => {
                       const value = event.target.value.trim();
-                      const pattern = q.maxDecimalPlaces ? /^-?\d*(?:\.\d{0,2})?$/ : /^-?\d*$/;
+                      const pattern = q.maxDecimalPlaces
+                        ? new RegExp(`^-?\\d*(?:\\.\\d{0,${q.maxDecimalPlaces}})?$`)
+                        : /^-?\d*(?:\.\d*)?$/;
                       if (!pattern.test(value)) return;
                       setAnswers((current) => current.map((answer, index) =>
                         index === currentIndex ? value || null : answer,

@@ -2,16 +2,17 @@
   "generatedAt": "2026-08-13",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 190,
-    "questions": 5887
+    "bankFiles": 212,
+    "questions": 6650
   },
   "topicSaturation": [
     {
       "section": "Quantitative Aptitude",
       "topic": "Profit and loss",
-      "questionCount": 44,
-      "examCount": 14,
+      "questionCount": 47,
+      "examCount": 15,
       "exams": [
+        "aeee-2026",
         "ibps-po",
         "ibps-rrb",
         "ibps-so",
@@ -31,9 +32,10 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Time and work",
-      "questionCount": 42,
-      "examCount": 14,
+      "questionCount": 45,
+      "examCount": 15,
       "exams": [
+        "aeee-2026",
         "ibps-po",
         "ibps-rrb",
         "ibps-so",
@@ -48,6 +50,28 @@
         "ssc-chsl",
         "ssc-cpo",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Quantitative Aptitude",
+      "topic": "Ratio and proportion",
+      "questionCount": 46,
+      "examCount": 14,
+      "exams": [
+        "aeee-2026",
+        "ibps-po",
+        "ibps-rrb",
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "sbi-po",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-cpo"
       ]
     },
     {
@@ -91,27 +115,6 @@
         "ssc-chsl",
         "ssc-cpo",
         "ssc-selection"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Ratio and proportion",
-      "questionCount": 43,
-      "examCount": 13,
-      "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sbi-po",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-cgl",
-        "ssc-chsl",
-        "ssc-cpo"
       ]
     },
     {
@@ -357,6 +360,25 @@
     },
     {
       "section": "Quantitative Aptitude",
+      "topic": "Data interpretation",
+      "questionCount": 30,
+      "examCount": 11,
+      "exams": [
+        "aeee-2026",
+        "ibps-po",
+        "ibps-rrb",
+        "ibps-so",
+        "nabard-grade",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-cgl",
+        "ssc-cpo",
+        "ssc-selection"
+      ]
+    },
+    {
+      "section": "Quantitative Aptitude",
       "topic": "Number System",
       "questionCount": 30,
       "examCount": 11,
@@ -427,24 +449,6 @@
         "ssc-je",
         "ssc-selection",
         "ssc-steno"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Data interpretation",
-      "questionCount": 28,
-      "examCount": 10,
-      "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "ibps-so",
-        "nabard-grade",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-cgl",
-        "ssc-cpo",
-        "ssc-selection"
       ]
     },
     {
@@ -530,6 +534,22 @@
         "sebi-grade",
         "sidbi-grade",
         "ssc-chsl"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Trigonometry",
+      "questionCount": 25,
+      "examCount": 8,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-main",
+        "met-2026",
+        "rrb-alp",
+        "rrb-ntpc",
+        "rrb-technician",
+        "srmjeee-2026"
       ]
     },
     {
@@ -835,6 +855,21 @@
       ]
     },
     {
+      "section": "Quantitative Aptitude",
+      "topic": "Number series",
+      "questionCount": 19,
+      "examCount": 7,
+      "exams": [
+        "aeee-2026",
+        "ibps-po",
+        "ibps-rrb",
+        "ibps-so",
+        "lic-aao",
+        "niacl-ao",
+        "sbi-po"
+      ]
+    },
+    {
       "section": "Reasoning Ability",
       "topic": "Analogy",
       "questionCount": 19,
@@ -950,6 +985,34 @@
       ]
     },
     {
+      "section": "Quantitative Aptitude",
+      "topic": "Time, speed and distance",
+      "questionCount": 22,
+      "examCount": 6,
+      "exams": [
+        "aeee-2026",
+        "ibps-rrb",
+        "lic-aao",
+        "niacl-ao",
+        "sbi-po",
+        "ssc-chsl"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Chemical kinetics",
+      "questionCount": 20,
+      "examCount": 6,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "Reasoning",
       "topic": "Puzzle",
       "questionCount": 18,
@@ -978,17 +1041,17 @@
       ]
     },
     {
-      "section": "Quantitative Aptitude",
-      "topic": "Number series",
-      "questionCount": 17,
+      "section": "Physics",
+      "topic": "Current electricity",
+      "questionCount": 14,
       "examCount": 6,
       "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "ibps-so",
-        "lic-aao",
-        "niacl-ao",
-        "sbi-po"
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
       ]
     },
     {
@@ -1003,6 +1066,48 @@
         "rrb-ntpc",
         "ssc-cpo",
         "ssc-gd"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Kinematics",
+      "questionCount": 12,
+      "examCount": 6,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Gravitation",
+      "questionCount": 12,
+      "examCount": 6,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Electrostatics",
+      "questionCount": 11,
+      "examCount": 6,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
       ]
     },
     {
@@ -1072,19 +1177,6 @@
       ]
     },
     {
-      "section": "Quantitative Aptitude",
-      "topic": "Time, Speed and Distance",
-      "questionCount": 20,
-      "examCount": 5,
-      "exams": [
-        "ibps-rrb",
-        "lic-aao",
-        "niacl-ao",
-        "sbi-po",
-        "ssc-chsl"
-      ]
-    },
-    {
       "section": "English Language",
       "topic": "Idioms",
       "questionCount": 19,
@@ -1121,6 +1213,19 @@
         "nabard-grade",
         "niacl-ao",
         "rbi-grade"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Solutions",
+      "questionCount": 16,
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
       ]
     },
     {
@@ -1267,6 +1372,19 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "Atomic structure",
+      "questionCount": 10,
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
       "section": "English Language",
       "topic": "Tense",
       "questionCount": 10,
@@ -1277,19 +1395,6 @@
         "sbi-clerk",
         "ssc-chsl",
         "ssc-selection"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Trigonometry",
-      "questionCount": 8,
-      "examCount": 5,
-      "exams": [
-        "bitsat-2026",
-        "jee-main",
-        "rrb-alp",
-        "rrb-ntpc",
-        "rrb-technician"
       ]
     },
     {
@@ -1319,6 +1424,18 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Algebra",
+      "questionCount": 21,
+      "examCount": 4,
+      "exams": [
+        "bitsat-2026",
+        "rrb-alp",
+        "rrb-technician",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "General Awareness",
       "topic": "Art and Culture",
       "questionCount": 21,
@@ -1328,6 +1445,18 @@
         "rpf-si",
         "ssc-cgl",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Vector algebra",
+      "questionCount": 19,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
       ]
     },
     {
@@ -1367,6 +1496,30 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "Coordination compounds",
+      "questionCount": 15,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Electrochemistry",
+      "questionCount": 15,
+      "examCount": 4,
+      "exams": [
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "Reasoning",
       "topic": "Ranking and Order",
       "questionCount": 15,
@@ -1403,6 +1556,18 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Three-dimensional geometry",
+      "questionCount": 12,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
       "section": "Numerical Ability",
       "topic": "Time and work",
       "questionCount": 12,
@@ -1415,6 +1580,18 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "Biomolecules",
+      "questionCount": 11,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced",
+        "jee-main",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "Numerical Ability",
       "topic": "Profit and loss",
       "questionCount": 11,
@@ -1424,6 +1601,30 @@
         "ibps-rrb",
         "rbi-assistant",
         "sbi-clerk"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Rotational motion",
+      "questionCount": 10,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Quantitative Aptitude",
+      "topic": "Averages",
+      "questionCount": 10,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "ibps-po",
+        "ibps-rrb",
+        "ssc-cpo"
       ]
     },
     {
@@ -1547,6 +1748,18 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "Thermodynamics",
+      "questionCount": 7,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Probability",
       "questionCount": 7,
@@ -1580,6 +1793,30 @@
         "rbi-grade",
         "rrb-ntpc",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Hydrocarbons",
+      "questionCount": 6,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Electromagnetic waves",
+      "questionCount": 6,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced",
+        "met-2026",
+        "srmjeee-2026"
       ]
     },
     {
@@ -1642,6 +1879,17 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Complex numbers and quadratic equations",
+      "questionCount": 23,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "General Science",
       "topic": "Life Sciences",
       "questionCount": 22,
@@ -1653,6 +1901,17 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Sets, relations and functions",
+      "questionCount": 21,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "English Language and Comprehension",
       "topic": "One-word substitution",
       "questionCount": 19,
@@ -1661,6 +1920,17 @@
         "ssc-cgl",
         "ssc-mts",
         "ssc-steno"
+      ]
+    },
+    {
+      "section": "Quantitative Aptitude",
+      "topic": "Simple and compound interest",
+      "questionCount": 16,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "lic-aao",
+        "niacl-ao"
       ]
     },
     {
@@ -1676,13 +1946,57 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Algebra",
-      "questionCount": 12,
+      "topic": "Integral calculus",
+      "questionCount": 15,
       "examCount": 3,
       "exams": [
+        "aeee-2026",
         "bitsat-2026",
-        "rrb-alp",
-        "rrb-technician"
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Matrices and determinants",
+      "questionCount": 14,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "p-block elements",
+      "questionCount": 13,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Differential equations",
+      "questionCount": 11,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Binomial theorem",
+      "questionCount": 9,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced",
+        "jee-main"
       ]
     },
     {
@@ -1730,6 +2044,28 @@
       ]
     },
     {
+      "section": "Physics",
+      "topic": "Work, energy and power",
+      "questionCount": 8,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Optics",
+      "questionCount": 8,
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "met-2026"
+      ]
+    },
+    {
       "section": "Numerical Ability",
       "topic": "Number system",
       "questionCount": 8,
@@ -1753,24 +2089,24 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Electrochemistry",
+      "topic": "Chemical bonding",
       "questionCount": 7,
       "examCount": 3,
       "exams": [
-        "bitsat-2026",
+        "aeee-2026",
         "jee-advanced",
         "jee-main"
       ]
     },
     {
-      "section": "Quantitative Aptitude",
-      "topic": "Averages",
+      "section": "Physics",
+      "topic": "Laws of motion",
       "questionCount": 7,
       "examCount": 3,
       "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "ssc-cpo"
+        "aeee-2026",
+        "jee-main",
+        "met-2026"
       ]
     },
     {
@@ -1818,17 +2154,6 @@
       ]
     },
     {
-      "section": "Physics",
-      "topic": "Current Electricity",
-      "questionCount": 6,
-      "examCount": 3,
-      "exams": [
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main"
-      ]
-    },
-    {
       "section": "Quantitative Aptitude",
       "topic": "Quadratic equations",
       "questionCount": 6,
@@ -1862,28 +2187,6 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Atomic Structure",
-      "questionCount": 5,
-      "examCount": 3,
-      "exams": [
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Chemical Kinetics",
-      "questionCount": 5,
-      "examCount": 3,
-      "exams": [
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main"
-      ]
-    },
-    {
       "section": "Mathematics",
       "topic": "Statistics",
       "questionCount": 5,
@@ -1892,17 +2195,6 @@
         "bitsat-2026",
         "jee-main",
         "rrb-technician"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Kinematics",
-      "questionCount": 5,
-      "examCount": 3,
-      "exams": [
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main"
       ]
     },
     {
@@ -1936,6 +2228,17 @@
         "ibps-po",
         "ssc-cgl",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Thermodynamics",
+      "questionCount": 5,
+      "examCount": 3,
+      "exams": [
+        "jee-advanced",
+        "jee-main",
+        "met-2026"
       ]
     },
     {
@@ -1983,17 +2286,6 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Thermodynamics",
-      "questionCount": 4,
-      "examCount": 3,
-      "exams": [
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main"
-      ]
-    },
-    {
       "section": "Reasoning Ability",
       "topic": "Symbol substitution",
       "questionCount": 4,
@@ -2013,6 +2305,17 @@
         "ibps-po",
         "ssc-cgl",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Capacitance",
+      "questionCount": 4,
+      "examCount": 3,
+      "exams": [
+        "jee-advanced",
+        "jee-main",
+        "srmjeee-2026"
       ]
     },
     {
@@ -2071,28 +2374,6 @@
       ]
     },
     {
-      "section": "Physics",
-      "topic": "Gravitation",
-      "questionCount": 3,
-      "examCount": 3,
-      "exams": [
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Electrostatics",
-      "questionCount": 3,
-      "examCount": 3,
-      "exams": [
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main"
-      ]
-    },
-    {
       "section": "English Language",
       "topic": "Articles",
       "questionCount": 3,
@@ -2134,6 +2415,39 @@
         "ibps-po",
         "ssc-cgl",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Projectile motion",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "jee-advanced",
+        "jee-main",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Photoelectric effect",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "jee-advanced",
+        "jee-main",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Semiconductors",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "jee-advanced",
+        "jee-main",
+        "srmjeee-2026"
       ]
     },
     {
@@ -2286,6 +2600,30 @@
   ],
   "sharedOpenings": [
     {
+      "opening": "two numbers are in the ratio",
+      "examCount": 18,
+      "exams": [
+        "aeee-2026",
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-rrb",
+        "niacl-ao",
+        "rbi-assistant",
+        "rbi-grade",
+        "rpf-constable",
+        "rpf-si",
+        "rrb-group",
+        "rrb-je",
+        "rrb-ntpc",
+        "sbi-clerk",
+        "sbi-po",
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-cpo",
+        "ssc-mts"
+      ]
+    },
+    {
       "opening": "find the next number in the",
       "examCount": 18,
       "exams": [
@@ -2331,29 +2669,6 @@
         "ssc-gd",
         "ssc-mts",
         "upsc-cse"
-      ]
-    },
-    {
-      "opening": "two numbers are in the ratio",
-      "examCount": 17,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-rrb",
-        "niacl-ao",
-        "rbi-assistant",
-        "rbi-grade",
-        "rpf-constable",
-        "rpf-si",
-        "rrb-group",
-        "rrb-je",
-        "rrb-ntpc",
-        "sbi-clerk",
-        "sbi-po",
-        "ssc-cgl",
-        "ssc-chsl",
-        "ssc-cpo",
-        "ssc-mts"
       ]
     },
     {
@@ -2444,6 +2759,37 @@
       ]
     },
     {
+      "opening": "choose the word closest in meaning",
+      "examCount": 10,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "met-2026",
+        "rbi-assistant",
+        "sbi-po",
+        "srmjeee-2026",
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-mts",
+        "ssc-selection"
+      ]
+    },
+    {
+      "opening": "what is the sum of the",
+      "examCount": 9,
+      "exams": [
+        "aeee-2026",
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-so",
+        "rbi-assistant",
+        "rpf-si",
+        "rrb-alp",
+        "rrb-ntpc",
+        "rrb-technician"
+      ]
+    },
+    {
       "opening": "choose the word that means a",
       "examCount": 9,
       "exams": [
@@ -2459,20 +2805,6 @@
       ]
     },
     {
-      "opening": "choose the word closest in meaning",
-      "examCount": 8,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-po",
-        "ssc-cgl",
-        "ssc-chsl",
-        "ssc-mts",
-        "ssc-selection"
-      ]
-    },
-    {
       "opening": "choose the word opposite in meaning",
       "examCount": 8,
       "exams": [
@@ -2484,20 +2816,6 @@
         "ssc-chsl",
         "ssc-cht",
         "ssc-mts"
-      ]
-    },
-    {
-      "opening": "what is the sum of the",
-      "examCount": 8,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-so",
-        "rbi-assistant",
-        "rpf-si",
-        "rrb-alp",
-        "rrb-ntpc",
-        "rrb-technician"
       ]
     },
     {
@@ -2543,6 +2861,32 @@
       ]
     },
     {
+      "opening": "a fair die is rolled once",
+      "examCount": 7,
+      "exams": [
+        "aeee-2026",
+        "ibps-clerk",
+        "ibps-po",
+        "srmjeee-2026",
+        "ssc-cgl",
+        "ssc-selection",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "a can complete a job in",
+      "examCount": 7,
+      "exams": [
+        "aeee-2026",
+        "ibps-rrb",
+        "ibps-so",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "ssc-cgl"
+      ]
+    },
+    {
       "opening": "what is the square root of",
       "examCount": 7,
       "exams": [
@@ -2579,6 +2923,19 @@
         "rrb-alp",
         "ssc-chsl",
         "ssc-gd"
+      ]
+    },
+    {
+      "opening": "find the sum of the first",
+      "examCount": 7,
+      "exams": [
+        "met-2026",
+        "nabard-grade",
+        "rbi-grade",
+        "rrb-technician",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-cpo"
       ]
     },
     {
@@ -2651,18 +3008,6 @@
         "rbi-grade",
         "sidbi-grade",
         "ssc-cpo"
-      ]
-    },
-    {
-      "opening": "a can complete a job in",
-      "examCount": 6,
-      "exams": [
-        "ibps-rrb",
-        "ibps-so",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "ssc-cgl"
       ]
     },
     {
@@ -2774,18 +3119,6 @@
       ]
     },
     {
-      "opening": "find the sum of the first",
-      "examCount": 6,
-      "exams": [
-        "nabard-grade",
-        "rbi-grade",
-        "rrb-technician",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-cpo"
-      ]
-    },
-    {
       "opening": "choose the correct indirect speech form",
       "examCount": 5,
       "exams": [
@@ -2797,14 +3130,14 @@
       ]
     },
     {
-      "opening": "a fair die is rolled once",
+      "opening": "a can finish a job in",
       "examCount": 5,
       "exams": [
         "ibps-clerk",
         "ibps-po",
-        "ssc-cgl",
-        "ssc-selection",
-        "viteee-2026"
+        "rrb-alp",
+        "srmjeee-2026",
+        "ssc-cgl"
       ]
     },
     {
@@ -2885,6 +3218,116 @@
       ]
     },
     {
+      "opening": "what is the oxidation state of",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "srmjeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "what is the coordination number of",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "what is the slope of the",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "srmjeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "what is the angle between the",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "rrb-alp",
+        "rrb-technician",
+        "upsc-cse"
+      ]
+    },
+    {
+      "opening": "what is the coefficient of x",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "opening": "choose the word that best completes",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "sbi-clerk",
+        "ssc-gd"
+      ]
+    },
+    {
+      "opening": "what is the value of sin",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "rrb-alp",
+        "rrb-ntpc",
+        "ssc-selection"
+      ]
+    },
+    {
+      "opening": "if a 1 2 3 and",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "rrb-technician",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "what is the maximum number of",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "ssc-cgl",
+        "ssc-mts"
+      ]
+    },
+    {
+      "opening": "a particle starts from rest with",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "the circle x 2 y 2",
+      "examCount": 4,
+      "exams": [
+        "bitsat-2026",
+        "met-2026",
+        "srmjeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "identify the part containing an error",
       "examCount": 4,
       "exams": [
@@ -2902,16 +3345,6 @@
         "ibps-po",
         "sbi-po",
         "ssc-steno"
-      ]
-    },
-    {
-      "opening": "a can finish a job in",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rrb-alp",
-        "ssc-cgl"
       ]
     },
     {
@@ -3245,12 +3678,111 @@
       ]
     },
     {
-      "opening": "what is the maximum number of",
+      "opening": "how many moles are present in",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "opening": "what is the molarity of a",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "if p a 0 6 p",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "srmjeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "in a galvanic cell oxidation occurs",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "what is the molecular shape of",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "opening": "how many geometrical isomers are possible",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "srmjeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "choose the correct completion by the",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "ibps-clerk",
+        "ibps-po"
+      ]
+    },
+    {
+      "opening": "if a 2 b 3 and",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "what is the equation of the",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "in the bohr model of hydrogen",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "find the next term 2 6",
+      "examCount": 3,
+      "exams": [
+        "aeee-2026",
+        "ibps-po",
+        "ssc-je"
+      ]
+    },
+    {
+      "opening": "which word is closest in meaning",
       "examCount": 3,
       "exams": [
         "bitsat-2026",
-        "ssc-cgl",
-        "ssc-mts"
+        "met-2026",
+        "ssc-cht"
       ]
     },
     {
@@ -3269,6 +3801,24 @@
         "bitsat-2026",
         "jee-advanced",
         "viteee-2026"
+      ]
+    },
+    {
+      "opening": "a line has direction ratios 2",
+      "examCount": 3,
+      "exams": [
+        "bitsat-2026",
+        "met-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "choose the correct article he is",
+      "examCount": 3,
+      "exams": [
+        "ibps-clerk",
+        "srmjeee-2026",
+        "ssc-mts"
       ]
     },
     {
@@ -3641,6 +4191,15 @@
       ]
     },
     {
+      "opening": "if cat is coded as dbu",
+      "examCount": 3,
+      "exams": [
+        "rbi-assistant",
+        "rrb-ntpc",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "opening": "in a class of 40 students",
       "examCount": 3,
       "exams": [
@@ -3794,24 +4353,6 @@
       ]
     },
     {
-      "opening": "what is the value of sin",
-      "examCount": 3,
-      "exams": [
-        "rrb-alp",
-        "rrb-ntpc",
-        "ssc-selection"
-      ]
-    },
-    {
-      "opening": "what is the angle between the",
-      "examCount": 3,
-      "exams": [
-        "rrb-alp",
-        "rrb-technician",
-        "upsc-cse"
-      ]
-    },
-    {
       "opening": "the sum of two numbers is",
       "examCount": 3,
       "exams": [
@@ -3857,419 +4398,235 @@
       ]
     },
     {
-      "opening": "what is the oxidation state of",
+      "opening": "a first order reaction has half",
       "examCount": 2,
       "exams": [
-        "bitsat-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "which word is closest in meaning",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "ssc-cht"
-      ]
-    },
-    {
-      "opening": "identify the item that does not",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "rrb-ntpc"
-      ]
-    },
-    {
-      "opening": "complete the series 3 8 15",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "what is the coefficient of x",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "jee-main"
-      ]
-    },
-    {
-      "opening": "for a 1 2 3 4",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "if tan theta 3 4 and",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "the circle x 2 y 2",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "a line has direction ratios 2",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "what is the equation of the",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "for f x x 3 6x",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "two fair dice are thrown what",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "a fair coin is tossed three",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "jee-main"
-      ]
-    },
-    {
-      "opening": "maximize z 3x 2y subject to",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "a 6 ohm resistor and a",
-      "examCount": 2,
-      "exams": [
-        "bitsat-2026",
+        "aeee-2026",
         "jee-advanced"
       ]
     },
     {
-      "opening": "choose the correct completion by the",
+      "opening": "across a period from left to",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ibps-po"
+        "aeee-2026",
+        "met-2026"
       ]
     },
     {
-      "opening": "choose the correct article he is",
+      "opening": "if a 1 2 3 4",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ssc-mts"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "improve the underlined part each of",
+      "opening": "what is the constant term in",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ibps-po"
+        "aeee-2026",
+        "met-2026"
       ]
     },
     {
-      "opening": "choose the correct word please your",
+      "opening": "for f x x 3 3x",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ssc-selection"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "read the statement many banks now",
+      "opening": "the differential equation dy dx 2y",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "sbi-po"
+        "aeee-2026",
+        "jee-main"
       ]
     },
     {
-      "opening": "find the compound interest on 6",
+      "opening": "evaluate integral from 0 to 1",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ibps-rrb"
+        "aeee-2026",
+        "met-2026"
       ]
     },
     {
-      "opening": "a invests 50 000 for 12",
+      "opening": "what is the moment of inertia",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ibps-po"
+        "aeee-2026",
+        "jee-main"
       ]
     },
     {
-      "opening": "in how many different ways can",
+      "opening": "a satellite in a circular orbit",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ibps-po"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "a person s income and expenditure",
+      "opening": "two point charges 2 microc and",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ibps-po"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "bee is to hive as bird",
+      "opening": "a nucleus has mass defect 0",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ssc-cpo"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "pointing to a girl a man",
+      "opening": "a 4 kg block on a",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "lic-aao"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "p is the son of q",
+      "opening": "an ideal gas absorbs 500 j",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "rrb-group"
+        "aeee-2026",
+        "met-2026"
       ]
     },
     {
-      "opening": "facing north a person turns 90",
+      "opening": "according to molecular orbital theory what",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "rpf-constable"
+        "aeee-2026",
+        "bitsat-2026"
       ]
     },
     {
-      "opening": "find the odd one out triangle",
+      "opening": "which compound gives a positive tollens",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ssc-chsl"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "if in a certain language river",
+      "opening": "what is the simple interest on",
       "examCount": 2,
       "exams": [
-        "ibps-clerk",
-        "ibps-po"
-      ]
-    },
-    {
-      "opening": "choose the correct active form of",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "ssc-steno"
-      ]
-    },
-    {
-      "opening": "identify the correctly spelled word from",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "niacl-ao"
-      ]
-    },
-    {
-      "opening": "the monetary policy committee mpc of",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "rbi-grade"
-      ]
-    },
-    {
-      "opening": "which regulatory body oversees the securities",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "niacl-ao"
-      ]
-    },
-    {
-      "opening": "a systematic investment plan sip allows",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "sebi-grade"
-      ]
-    },
-    {
-      "opening": "statements some cups are plates all",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "lic-aao"
-      ]
-    },
-    {
-      "opening": "a is the brother of b",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "rpf-si"
-      ]
-    },
-    {
-      "opening": "in a queue of 60 people",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "ibps-so"
-      ]
-    },
-    {
-      "opening": "five colleagues j k l m",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "niacl-ao"
-      ]
-    },
-    {
-      "opening": "choose the pair that has the",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
+        "aeee-2026",
         "ssc-cgl"
       ]
     },
     {
-      "opening": "choose the correct word hardly had",
+      "opening": "read the original passage a small",
       "examCount": 2,
       "exams": [
-        "ibps-po",
+        "aeee-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "if det a 3 for a",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "on the set 1 2 3",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "a line through 1 2 is",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "for the ellipse x 2 25",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026"
+      ]
+    },
+    {
+      "opening": "a solid sphere rolls without slipping",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
+        "jee-advanced"
+      ]
+    },
+    {
+      "opening": "which element has the highest first",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
+        "jee-main"
+      ]
+    },
+    {
+      "opening": "for a cell reaction with n",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "what is the difference between compound",
+      "examCount": 2,
+      "exams": [
+        "aeee-2026",
         "ssc-cgl"
       ]
     },
     {
-      "opening": "find the average of 18 24",
+      "opening": "in an election with only two",
       "examCount": 2,
       "exams": [
-        "ibps-po",
-        "sbi-clerk"
+        "aeee-2026",
+        "rrb-ntpc"
       ]
     },
     {
-      "opening": "what is x statement i x",
+      "opening": "a constant force of 10 n",
       "examCount": 2,
       "exams": [
-        "ibps-po",
-        "ssc-cgl"
+        "aeee-2026",
+        "viteee-2026"
       ]
     },
     {
-      "opening": "an article marked at 2 000",
+      "opening": "at a height equal to earth",
       "examCount": 2,
       "exams": [
-        "ibps-po",
-        "rrb-group"
+        "aeee-2026",
+        "srmjeee-2026"
       ]
     },
     {
-      "opening": "find the next term 2 6",
+      "opening": "one mole of an ideal gas",
       "examCount": 2,
       "exams": [
-        "ibps-po",
-        "ssc-je"
-      ]
-    },
-    {
-      "opening": "a is the sister of b",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "ssc-je"
-      ]
-    },
-    {
-      "opening": "five people stand in a row",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "statements some books are journals all",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "a person walks 6 km east",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "niacl-ao"
-      ]
-    },
-    {
-      "opening": "p is the mother of q",
-      "examCount": 2,
-      "exams": [
-        "ibps-po",
-        "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "find the lcm of 9 and",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "rpf-constable"
-      ]
-    },
-    {
-      "opening": "6 men can complete a task",
-      "examCount": 2,
-      "exams": [
-        "ibps-rrb",
-        "rbi-assistant"
+        "aeee-2026",
+        "viteee-2026"
       ]
     }
   ]

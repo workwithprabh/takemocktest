@@ -1,6 +1,6 @@
 # TakeMockTest Current Status
 
-Snapshot date: 2026-08-13. Verified against commit `7472566` (SEO audit fixes: www redirect + security headers), plus the uncommitted AEEE 2026 B.Tech full launch described below.
+Snapshot date: 2026-08-13. Verified against commit `7472566` (SEO audit fixes: www redirect + security headers), plus the uncommitted AEEE 2026 B.Tech and MET 2026 B.Tech full launches described below.
 
 This file is the live project dashboard. It is tracked in Git and updated only from repository evidence by the coding agent — see `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §13. ChatGPT may read it and recommend status changes, but must not hand-edit the repository-derived numbers below. Stable product rules belong in `TAKEMOCKTEST_MASTER_HANDOFF.md`.
 
@@ -15,13 +15,13 @@ This file is the live project dashboard. It is tracked in Git and updated only f
 ## 2. Verified corpus snapshot (repository-derived, this update)
 
 - Catalog entries (`exam-catalog.ts`): 180
-- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 38
-- Question-bank files (`src/lib/question-banks/*.ts`): 205
-- Questions: 6,485
+- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 39
+- Question-bank files (`src/lib/question-banks/*.ts`): 212
+- Questions: 6,650
 - `npm run qa:questions`: PASS — no duplicate IDs, no full duplicate questions (stem + options + answer), valid schema
-- `npm run build`: PASS — 1,115 statically generated pages
+- `npm run build`: PASS — 1,137 statically generated pages
 
-## 3. Live exams (38)
+## 3. Live exams (39)
 
 SSC: ssc-cgl, ssc-chsl, ssc-mts, ssc-cpo, ssc-gd-constable, ssc-je, ssc-steno, ssc-cht, ssc-selection-post
 
@@ -31,9 +31,9 @@ Railways: rrb-ntpc, rrb-group-d, rrb-alp, rrb-technician, rrb-je, rrb-paramedica
 
 Civil Services: upsc-cse
 
-Engineering: jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee
+Engineering: jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee, met
 
-Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), VITEEE (2026 MPCEA Mathematics stream), SRMJEEE (2026 PCM Mathematics route), and AEEE (2026 B.Tech) are live; Manipal Entrance Test, KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued.
+Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), VITEEE (2026 MPCEA Mathematics stream), SRMJEEE (2026 PCM Mathematics route), AEEE (2026 B.Tech), and MET (2026 B.Tech) are live; KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued.
 
 ## 4. Major completed work
 
@@ -55,6 +55,7 @@ Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluste
 - VITEEE 2026 MPCEA Mathematics stream full launch (12 August 2026): Full Mock (125Q/500 marks/150 min, official 2026 pattern), 5 sectionals, and 2 mixed quick-practice tests, 325 questions total, Hard-QA-approved. First exam to use the four-mark (+4/-1/0) scoring pattern alongside JEE Main/Advanced-style engineering formats. During integration, `npm run qa:questions` flagged 2 VITEEE questions whose generic instructional stem ("Choose the grammatically correct sentence.") matched pre-existing SSC CGL questions verbatim, even though the options/answer/explanation were genuinely different. On the site owner's explicit decision, the repository's duplicate-question rule changed as a result — see §6.
 - SRMJEEE 2026 PCM Mathematics route full launch (13 August 2026): Full Mock (130Q/130 marks/150 min, official 2026 pattern), 4 sectionals, and 2 mixed quick-practice tests, 338 questions total, Hard-QA-approved (1 corrected item, 12 replaced items across the v2 banks). No negative marking, +1 per correct answer. The official syllabus names the fourth section `English & Aptitude` as one combined 20-question section with no published subtopic list, so its granular topic labels are documented in-app as a TakeMockTest preparation map, not an official SRM subtopic breakdown. The Mathematics/Biology alternative route is out of scope and not built.
 - AEEE 2026 B.Tech full launch (13 August 2026): Full Mock (100Q/300 marks/150 min, official 2026 CBT pattern), 5 sectionals, and 2 mixed quick-practice tests, 260 questions total, Hard-QA-approved. +3 correct / -1 incorrect / 0 unanswered. During integration, `npm run qa:questions` (with the site's cross-corpus full-question-signature rule) flagged one genuine exact duplicate: `aeee-2026-btech-full-01-039` ("What is i cross j?", options `["i","j","-k","k"]`, correctIndex 3) was byte-identical to the already-live `srmjeee-2026-pcm-mathematics-sectional-01-002`, both writers independently reaching for the same standard textbook example. Per the operating model this was not silently edited; it was reported back to ChatGPT, which issued a v3 correction (`aeee-2026-btech-full-mock-01-v3-APPROVED.json`) replacing only that one question, verified surgical (99/100 questions byte-identical to v2, arithmetic/difficulty/answer-balance all preserved) before integration proceeded.
+- MET (Manipal Entrance Test) 2026 B.Tech full launch (13 August 2026): Full Mock (60Q/240 marks/120 min, official 2026 pattern), 4 sectionals, and 2 mixed quick-practice tests, 165 questions total, Hard-QA-approved (1 corrected item, 6 replaced items, 0 unresolved issues). Mathematics 20, Physics 15, Chemistry 15, English 10, mixing 45 MCQs (+4/-1/0) and 15 Numerical Answer Type questions (+4/0/0), the site's first launch package built around exact finite-decimal NAT answers (0.4, 1.1, 15.5, 96.5) without a `maxDecimalPlaces` field. The handoff flagged, and integration confirmed, that the generic numerical-answer validator in `src/lib/questions.ts` and `scripts/audit-question-banks.mjs` previously treated a NAT `correctValue` without `maxDecimalPlaces` as integer-only, and `TestAttemptClient.tsx` showed a false "Enter the nearest integer" label and blocked typing a decimal point in that case. Both were fixed generically (accept any signed integer or finite decimal when `maxDecimalPlaces` is absent, `maxDecimalPlaces` still caps decimal places when present, malformed values still rejected, no tolerance invented) rather than by adding a fabricated precision field to the approved MET content. `npm run qa:questions` passed clean (212 banks, 6,650 questions, no duplicate IDs or text) with no cross-corpus collision this time. Browser-verified end to end on the Chemistry Sectional test: a decimal NAT answer ("15.5") was typed, saved, and scored correctly against an unrounded `correctValue`.
 
 ## 5. Current content priority
 

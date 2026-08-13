@@ -32,7 +32,7 @@ rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
 ibps-rrb-officer-scale-1, sbi-clerk, rrb-je, upsc-cse, rpf-constable, ssc-cpo, ibps-so,
 rbi-grade-b, nabard-grade-a, sebi-grade-a, sidbi-grade-a-b, lic-aao, niacl-ao, rrb-alp,
 rrb-technician, rrb-paramedical, rpf-si, ssc-je, ssc-steno, ssc-cht, ssc-selection-post,
-jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee (38 exams). See `TAKEMOCKTEST_CURRENT_STATUS.md` for the
+jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee, met (39 exams). See `TAKEMOCKTEST_CURRENT_STATUS.md` for the
 authoritative up-to-date count — this line is a convenience summary and can drift; the
 grep command above and `TAKEMOCKTEST_CURRENT_STATUS.md` are the actual sources of truth.
 
@@ -87,7 +87,7 @@ tackle after the national-level exams above are done, same process).
 - [x] VITEEE
 - [x] SRMJEEE
 - [x] AEEE
-- [ ] Manipal Entrance Test
+- [x] Manipal Entrance Test
 - [ ] KIITEE
 - [ ] COMEDK UGET
 - [ ] IIIT Hyderabad UGEE

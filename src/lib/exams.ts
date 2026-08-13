@@ -36,7 +36,8 @@ export type ExamSlug =
   | 'jee-advanced'
   | 'viteee'
   | 'srmjeee'
-  | 'aeee';
+  | 'aeee'
+  | 'met';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -134,6 +135,8 @@ const VITEEE_2026_ADMISSIONS_PAGE = 'https://viteee.vit.ac.in/';
 const SRMJEEE_2026_EXAMINATION_PATTERN =
   'https://static.npfs.co/accounts/171/documents/2025/11/3/abcba4bfc02e4317a76896919ae8c2f0_srmjeee-examination-pattern.pdf';
 const AEEE_2026_ADMISSIONS_PAGE = 'https://aeee.amrita.edu/';
+const MET_2026_BTECH_SYLLABUS_PATTERN =
+  'https://evbab.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/btech_met_syllabus_2026.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4590,6 +4593,47 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', section: 'English', status: 'checked', duration: 8, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '13 August 2026' },
           { id: 'mixed-quick-practice-30m-1', name: 'Mixed Quick Practice Test 1 (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '13 August 2026' },
           { id: 'mixed-quick-practice-60m-1', name: 'Mixed Quick Practice Test 2 (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '13 August 2026' },
+        ],
+      },
+    ],
+  },
+  'met': {
+    slug: 'met',
+    name: 'MET',
+    shortName: 'MET',
+    fullName: 'Manipal Entrance Test 2026: B.Tech',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.Tech',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'English'],
+          totalQuestions: 60,
+          totalMarks: 240,
+          duration: 120,
+          negativeMarking: 'Varies by question type',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 20, marks: 80 },
+            { name: 'Physics', questions: 15, marks: 60 },
+            { name: 'Chemistry', questions: 15, marks: 60 },
+            { name: 'English', questions: 10, marks: 40 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all four sections.',
+          note: 'MET 2026 B.Tech has 45 Multiple Choice Questions and 15 Numerical Answer Type questions. Each correct MCQ earns 4 marks and each incorrect MCQ deducts 1 mark; each correct Numerical Answer Type question earns 4 marks with no deduction for a wrong or unanswered entry. English carries only MCQs. Sectional and mixed quick-practice tests use TakeMockTest-defined durations for focused practice, not an official MET sectional format.',
+          sourceUrl: MET_2026_BTECH_SYLLABUS_PATTERN,
+          checkedOn: '13 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0, with no deduction for a wrong or unanswered entry.', checkedOn: '13 August 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 40, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
+          { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
+          { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', section: 'English', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '13 August 2026' },
+          { id: 'mixed-quick-practice-30m-1', name: 'Mixed Quick Practice Test 1 (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
+          { id: 'mixed-quick-practice-60m-1', name: 'Mixed Quick Practice Test 2 (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
         ],
       },
     ],

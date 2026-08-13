@@ -1046,6 +1046,33 @@ const AEEE_BTECH_FULL_MOCK_FAQS = [
   },
 ];
 
+const MET_BTECH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official MET question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Manipal Entrance Test (MET) 2026 B.Tech syllabus and examination pattern.',
+  },
+  {
+    question: 'What is the MET 2026 B.Tech pattern in this mock?',
+    answer: 'The Full Mock has 60 questions for 240 marks in 120 minutes: Mathematics 20, Physics 15, Chemistry 15, and English 10, all under one combined timer.',
+  },
+  {
+    question: 'How is MET 2026 scored?',
+    answer: 'MET mixes two question types. Each correct Multiple Choice Question earns 4 marks and each incorrect one deducts 1 mark. Each correct Numerical Answer Type question earns 4 marks with no deduction for a wrong or unanswered entry. Unanswered questions of either type score zero.',
+  },
+  {
+    question: 'What are Numerical Answer Type questions?',
+    answer: 'These questions have no options. You type the exact numerical answer, such as an integer or a decimal like 0.4, instead of choosing from a list.',
+  },
+  {
+    question: 'Are the sectional and quick-practice test timers official MET timings?',
+    answer: 'No. MET itself does not publish separate sectional exams. The sectional and mixed quick-practice tests on this site use TakeMockTest-defined durations for focused practice, not an official MET sectional format.',
+  },
+  {
+    question: 'Do I need an account to attempt the mock?',
+    answer: 'No. You can start immediately without signing up, and the result is stored only on your current device.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
@@ -1092,6 +1119,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'viteee/mpcea': VITEEE_MPCEA_FULL_MOCK_FAQS,
   'srmjeee/pcm': SRMJEEE_PCM_FULL_MOCK_FAQS,
   'aeee/btech': AEEE_BTECH_FULL_MOCK_FAQS,
+  'met/btech': MET_BTECH_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
