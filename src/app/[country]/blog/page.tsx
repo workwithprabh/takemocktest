@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { BLOG_POSTS } from '@/lib/blog';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, organizationSchema, blogSchema } from '@/lib/schema';
 
 const CATEGORY_ICONS: Record<string, React.ReactNode> = {
   'Study Tips': (
@@ -39,8 +40,25 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
 export default async function BlogIndexPage({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
 
+  const jsonLd = [
+    breadcrumbSchema([
+      { name: 'Home', path: `/${country}` },
+      { name: 'Blog', path: `/${country}/blog` },
+    ]),
+    organizationSchema(),
+    blogSchema({
+      path: `/${country}/blog`,
+      posts: BLOG_POSTS.map((post) => ({
+        headline: post.title,
+        path: `/${country}/blog/${post.slug}`,
+        datePublished: post.publishedAt,
+      })),
+    }),
+  ];
+
   return (
     <div className="max-w-5xl mx-auto px-5 py-6">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">Study tips &amp; exam strategy</h1>
       <p className="text-ink-500 text-sm mb-8">
         Practical, evergreen advice for exam prep. No fluff, no fabricated news, just what actually helps you score better.

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { EXAM_LIST, getCheckedTestCount, getExam } from '@/lib/exams';
+import { EXAM_LIST, getCheckedTestCount, getExam, getExamOverviewCopy } from '@/lib/exams';
 import { breadcrumbSchema } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
@@ -81,10 +81,14 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
       ]} />
       <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">{exam.name}</h1>
       <p className="text-ink-500 text-sm mb-6">{exam.fullName}</p>
+      <p className="mb-3 max-w-2xl text-sm leading-6 text-ink-700">
+        {getExamOverviewCopy(exam) ??
+          (hasCheckedTests || hasOfficialPattern
+            ? 'Use the verified resources below.'
+            : 'A practice interface demo is available. Verified exam resources will be added only after their official source details are complete.')}
+      </p>
       <p className="mb-6 max-w-2xl text-sm leading-6 text-ink-500">
-        {hasCheckedTests || hasOfficialPattern
-          ? 'Use the verified resources below. Unfinished pages stay out of this navigation until their source details are complete.'
-          : 'A practice interface demo is available. Verified exam resources will be added only after their official source details are complete.'}
+        Unfinished pages stay out of this navigation until their source details are complete.
       </p>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">

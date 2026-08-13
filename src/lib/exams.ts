@@ -4661,6 +4661,81 @@ export function getCheckedTestCount(exam: ExamConfig): number {
   return exam.stages.flatMap((stage) => stage.tests).filter((test) => test.status === 'checked').length;
 }
 
+function articleFor(word: string): 'a' | 'an' {
+  // "SSC" is read letter by letter ("ess-ess-see"), a vowel sound, so it
+  // needs "an" despite starting with a written consonant.
+  if (word === 'SSC') return 'an';
+  return /^[aeiou]/i.test(word) ? 'an' : 'a';
+}
+
+function describeSections(pattern: StagePattern): string {
+  if (pattern.sectionBreakdown && pattern.sectionBreakdown.length > 0) {
+    return pattern.sectionBreakdown
+      .map((s) => `${s.name} (${s.questions} question${s.questions === 1 ? '' : 's'}, ${s.marks} mark${s.marks === 1 ? '' : 's'})`)
+      .join(', ');
+  }
+  return pattern.sections.length <= 6 ? pattern.sections.join(', ') : `${pattern.sections.length} sections`;
+}
+
+function describeNegativeMarking(negativeMarking: number | string | undefined): string {
+  if (typeof negativeMarking === 'number') {
+    return negativeMarking > 0
+      ? `Each incorrect answer deducts ${negativeMarking} mark${negativeMarking === 1 ? '' : 's'}, and an unanswered question scores zero.`
+      : 'There is no negative marking, and an unanswered question scores zero.';
+  }
+  if (typeof negativeMarking === 'string') {
+    return `Negative marking ${negativeMarking.toLowerCase()}; see the exam pattern page for the exact rules by question type.`;
+  }
+  return '';
+}
+
+// Short, source-cited descriptive paragraph for the exam hub page. Built
+// entirely from already Hard-QA-approved fields on ExamConfig (never invents
+// a new fact) so it stays accurate automatically as exams are added or their
+// pattern is re-checked. See TAKEMOCKTEST_CURRENT_STATUS.md SEO audit notes.
+export function getExamOverviewCopy(exam: ExamConfig): string | undefined {
+  const officialStages = exam.stages.filter((stage) => stage.pattern.status === 'official');
+  if (officialStages.length === 0) return undefined;
+
+  const checkedCount = getCheckedTestCount(exam);
+  const testsSentence = checkedCount > 0
+    ? ` TakeMockTest currently offers ${checkedCount} syllabus-checked practice test${checkedCount === 1 ? '' : 's'} for ${exam.name}.`
+    : '';
+
+  if (officialStages.length === 1) {
+    const pattern = officialStages[0].pattern;
+    const sizeClause = pattern.totalQuestions && pattern.totalMarks
+      ? ` with ${pattern.totalQuestions} questions worth ${pattern.totalMarks} marks`
+      : '';
+    const durationClause = pattern.duration ? ` in ${pattern.duration} minutes` : '';
+    const sections = describeSections(pattern);
+    const parts = [
+      `${exam.fullName} is ${articleFor(exam.category)} ${exam.category} exam${sizeClause}${durationClause}, split across ${sections}.`,
+      describeNegativeMarking(pattern.negativeMarking),
+      testsSentence,
+      pattern.checkedOn ? `Pattern checked against the official source on ${pattern.checkedOn}.` : '',
+    ];
+    return parts.filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+  }
+
+  const stageSummaries = officialStages.map((stage) => {
+    const p = stage.pattern;
+    const detail = p.totalQuestions && p.totalMarks
+      ? ` (${p.totalQuestions} questions, ${p.totalMarks} marks${p.duration ? `, ${p.duration} minutes` : ''})`
+      : '';
+    return `${stage.name}${detail}`;
+  });
+  const stageList = stageSummaries.length > 1
+    ? `${stageSummaries.slice(0, -1).join(', ')} and ${stageSummaries[stageSummaries.length - 1]}`
+    : stageSummaries[0];
+  const parts = [
+    `${exam.fullName} is conducted in ${officialStages.length} stages: ${stageList}.`,
+    testsSentence,
+    'Section-wise composition and negative-marking rules for each stage are shown on the exam pattern page, and every stage is checked against its own official source.',
+  ];
+  return parts.filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+}
+
 export const COUNTRIES = ['in'] as const;
 export type CountrySlug = (typeof COUNTRIES)[number];
 

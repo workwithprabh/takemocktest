@@ -7,13 +7,28 @@ import { SITE_URL } from '@/lib/schema';
 
 export const dynamic = 'force-static';
 
+// lastModified policy: only set it where a real per-URL content date is
+// tracked in code (blog posts' publishedAt, exam-pattern pages' and
+// full-mock test pages' checkedOn). Every other entry omits the field
+// rather than guess a date, so lastmod never appears unless it is accurate.
+// See TAKEMOCKTEST_CURRENT_STATUS.md SEO audit notes.
+function toLastModified(checkedOn?: string): Date | undefined {
+  return checkedOn ? new Date(checkedOn) : undefined;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
+  const latestPost = [...BLOG_POSTS].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1))[0];
 
   for (const country of COUNTRIES) {
     entries.push({ url: `${SITE_URL}/${country}`, changeFrequency: 'daily', priority: 1 });
     entries.push({ url: `${SITE_URL}/${country}/exams`, changeFrequency: 'weekly', priority: 0.9 });
-    entries.push({ url: `${SITE_URL}/${country}/blog`, changeFrequency: 'monthly', priority: 0.6 });
+    entries.push({
+      url: `${SITE_URL}/${country}/blog`,
+      lastModified: latestPost ? toLastModified(latestPost.publishedAt) : undefined,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    });
     for (const path of ['about', 'terms']) {
       entries.push({ url: `${SITE_URL}/${country}/${path}`, changeFrequency: 'yearly', priority: 0.3 });
     }
@@ -46,7 +61,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         entries.push({ url: `${base}/dest-practice`, changeFrequency: 'monthly', priority: 0.8 });
       }
       if (hasOfficialPattern) {
-        entries.push({ url: `${base}/exam-pattern`, changeFrequency: 'monthly', priority: 0.6 });
+        const officialPattern = exam.stages.find((stage) => stage.pattern.status === 'official')?.pattern;
+        entries.push({
+          url: `${base}/exam-pattern`,
+          lastModified: toLastModified(officialPattern?.checkedOn),
+          changeFrequency: 'monthly',
+          priority: 0.6,
+        });
       }
       // cutoff/result/answer-key/admit-card are cycle-specific (exact dates and
       // scores tied to one exam year) and don't have a GuidePageType/EXAM_GUIDES
@@ -64,6 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         if (test.kind === 'full-length' && test.status === 'checked') {
           entries.push({
             url: `${base}/test/${test.id}`,
+            lastModified: toLastModified(test.checkedOn),
             changeFrequency: 'monthly',
             priority: 0.8,
           });

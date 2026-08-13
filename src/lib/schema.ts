@@ -60,6 +60,21 @@ export function faqPageSchema(faqs: { q: string; a: string }[]) {
   };
 }
 
+export function blogSchema(opts: { path: string; posts: { headline: string; path: string; datePublished: string }[] }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: `${SITE_NAME} Blog`,
+    url: `${SITE_URL}${opts.path}`,
+    blogPost: opts.posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.headline,
+      url: `${SITE_URL}${post.path}`,
+      datePublished: post.datePublished,
+    })),
+  };
+}
+
 export function articleSchema(opts: {
   headline: string;
   datePublished: string;
