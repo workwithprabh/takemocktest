@@ -218,6 +218,10 @@ import { IELTS_ACADEMIC_READING_PASSAGE_3_1 } from './question-banks/ielts-acade
 import { IELTS_GENERAL_TRAINING_READING_SECTION_1_1 } from './question-banks/ielts-general-training-reading-section-1-1';
 import { IELTS_GENERAL_TRAINING_READING_SECTION_2_1 } from './question-banks/ielts-general-training-reading-section-2-1';
 import { IELTS_GENERAL_TRAINING_READING_SECTION_3_1 } from './question-banks/ielts-general-training-reading-section-3-1';
+import { TOEFL_READING_READ_IN_DAILY_LIFE_1 } from './question-banks/toefl-reading-read-in-daily-life-1';
+import { TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1 } from './question-banks/toefl-reading-read-an-academic-passage-1';
+import { PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1 } from './question-banks/pte-reading-multiple-choice-single-answer-1';
+import { PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1 } from './question-banks/pte-reading-multiple-choice-multiple-answers-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -686,6 +690,18 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ielts/general-training-reading-section-1-sectional-1': IELTS_GENERAL_TRAINING_READING_SECTION_1_1,
   'ielts/general-training-reading-section-2-sectional-1': IELTS_GENERAL_TRAINING_READING_SECTION_2_1,
   'ielts/general-training-reading-section-3-sectional-1': IELTS_GENERAL_TRAINING_READING_SECTION_3_1,
+  'toefl/reading-full-mock-1': [
+    ...TOEFL_READING_READ_IN_DAILY_LIFE_1,
+    ...TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1,
+  ],
+  'toefl/reading-read-in-daily-life-sectional-1': TOEFL_READING_READ_IN_DAILY_LIFE_1,
+  'toefl/reading-read-an-academic-passage-sectional-1': TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1,
+  'pte/reading-full-mock-1': [
+    ...PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1,
+    ...PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1,
+  ],
+  'pte/reading-multiple-choice-single-answer-sectional-1': PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1,
+  'pte/reading-multiple-choice-multiple-answers-sectional-1': PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1028,6 +1044,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 14
     : testId.includes('ielts')
     ? 13
+    : testId.includes('toefl/reading-full-mock')
+    ? 30
+    : testId.includes('toefl')
+    ? 15
+    : testId.includes('pte/reading-full-mock')
+    ? 20
+    : testId.includes('pte/reading-multiple-choice-single-answer')
+    ? 12
+    : testId.includes('pte/reading-multiple-choice-multiple-answers')
+    ? 8
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1527,6 +1553,14 @@ const ieltsGeneralTrainingReadingLayout = [
   { section: 'Section 2', count: 13 },
   { section: 'Section 3', count: 14 },
 ];
+const toeflReadingLayout = [
+  { section: 'Read in Daily Life', count: 15 },
+  { section: 'Read an Academic Passage', count: 15 },
+];
+const pteReadingLayout = [
+  { section: 'Multiple Choice: Single Answer', count: 12 },
+  { section: 'Multiple Choice: Multiple Answers', count: 8 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1560,7 +1594,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                             ? ieltsAcademicReadingLayout
                             : testId.includes('ielts/general-training-reading-full-mock')
                               ? ieltsGeneralTrainingReadingLayout
-                              : fullMockLayouts[testId.split('/')[0]];
+                              : testId.includes('toefl/reading-full-mock')
+                                ? toeflReadingLayout
+                                : testId.includes('pte/reading-full-mock')
+                                  ? pteReadingLayout
+                                  : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1843,6 +1881,14 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'ielts': [
     IELTS_ACADEMIC_READING_PASSAGE_1_1[0],
     IELTS_GENERAL_TRAINING_READING_SECTION_1_1[0],
+  ],
+  'toefl': [
+    TOEFL_READING_READ_IN_DAILY_LIFE_1[0],
+    TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1[0],
+  ],
+  'pte': [
+    PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1[0],
+    PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

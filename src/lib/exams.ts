@@ -38,7 +38,9 @@ export type ExamSlug =
   | 'srmjeee'
   | 'aeee'
   | 'met'
-  | 'ielts';
+  | 'ielts'
+  | 'toefl'
+  | 'pte';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -141,6 +143,8 @@ const MET_2026_BTECH_SYLLABUS_PATTERN =
 const IELTS_ACADEMIC_TEST_PAGE = 'https://ielts.org/take-a-test/test-types/ielts-academic-test';
 const IELTS_GENERAL_TRAINING_READING_PAGE =
   'https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading';
+const TOEFL_READING_PAGE = 'https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html';
+const PTE_READING_PAGE = 'https://www.pearsonpte.com/pte-academic/test-format/reading/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4702,6 +4706,74 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'general-training-reading-section-1-sectional-1', name: 'Section 1 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Section 1', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
           { id: 'general-training-reading-section-2-sectional-1', name: 'Section 2 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Section 2', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
           { id: 'general-training-reading-section-3-sectional-1', name: 'Section 3 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Section 3', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+        ],
+      },
+    ],
+  },
+  'toefl': {
+    slug: 'toefl',
+    name: 'TOEFL',
+    fullName: 'Test of English as a Foreign Language iBT: Reading',
+    category: 'English Proficiency',
+    stages: [
+      {
+        id: 'reading',
+        name: 'Reading',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Read in Daily Life', 'Read an Academic Passage'],
+          totalQuestions: 30,
+          totalMarks: 30,
+          duration: 30,
+          negativeMarking: 0,
+          note: 'Since 21 January 2026, the official TOEFL iBT Reading section uses a two-stage adaptive design with three task types worth up to 50 scored items across roughly 27-30 minutes: Complete the Words (a vocabulary/word-completion task where you type missing letters, worth about 30 of the 50 items), Read in Daily Life (short practical texts with comprehension questions), and Read an Academic Passage (short academic texts with comprehension questions). Complete the Words is not a multiple-choice format, so it is not included here. This practice mock uses a fixed, non-adaptive set of multiple-choice questions covering only Read in Daily Life and Read an Academic Passage, scored on raw correct count rather than the official 1-6 CEFR-aligned section score.',
+          sectionBreakdown: [
+            { name: 'Read in Daily Life', questions: 15, marks: 15 },
+            { name: 'Read an Academic Passage', questions: 15, marks: 15 },
+          ],
+          timerNote: 'Single composite 30-minute timer for both task types combined: no sectional lock. This is a TakeMockTest-defined duration for a fixed practice set, not a replica of the official adaptive router-plus-module timing',
+          sourceUrl: TOEFL_READING_PAGE,
+          checkedOn: '14 August 2026',
+        },
+        tests: [
+          { id: 'reading-full-mock-1', name: 'Reading Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 30, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 30 shown here; the official test reports a 1-6 CEFR-aligned section score instead.', checkedOn: '14 August 2026' },
+          { id: 'reading-read-in-daily-life-sectional-1', name: 'Read in Daily Life Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Read in Daily Life', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'reading-read-an-academic-passage-sectional-1', name: 'Read an Academic Passage Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Read an Academic Passage', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+        ],
+      },
+    ],
+  },
+  'pte': {
+    slug: 'pte',
+    name: 'PTE Academic',
+    fullName: 'Pearson Test of English Academic: Reading',
+    category: 'English Proficiency',
+    stages: [
+      {
+        id: 'reading',
+        name: 'Reading',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Multiple Choice: Single Answer', 'Multiple Choice: Multiple Answers'],
+          totalQuestions: 20,
+          totalMarks: 20,
+          duration: 25,
+          negativeMarking: 0,
+          note: 'The official PTE Academic Reading section is a single 32-41 minute timed block with 15-20 questions across five task types: Multiple Choice (Single Answer), Multiple Choice (Multiple Answers), Re-order Paragraphs, Reading: Fill in the Blanks, and Reading and Writing: Fill in the Blanks. Re-order Paragraphs uses drag-and-drop sequencing and both Fill in the Blanks types use dropdown word selection, formats this practice engine cannot render, so this mock covers only the two multiple-choice task types. PTE scores the full test on a 10-90 scale with its own proprietary partial-credit formula; this practice mock shows a raw score using this site\'s own partial-marking model instead (see each Multiple Answers test\'s scoring note), not PTE\'s official scaled score.',
+          sectionBreakdown: [
+            { name: 'Multiple Choice: Single Answer', questions: 12, marks: 12 },
+            { name: 'Multiple Choice: Multiple Answers', questions: 8, marks: 8 },
+          ],
+          timerNote: 'Single composite 25-minute timer for both task types combined: no sectional lock. This is a TakeMockTest-defined duration for this multiple-choice-only subset, not the official 32-41 minute full Reading section time',
+          sourceUrl: PTE_READING_PAGE,
+          checkedOn: '14 August 2026',
+        },
+        tests: [
+          { id: 'reading-full-mock-1', name: 'Reading Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 25, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Single Answer questions score +1/0. Multiple Answers questions award 1 mark for each correct option selected, as long as no incorrect option is included; including any incorrect option scores zero for that question. No negative marking beyond that. The official test uses a different, proprietary 10-90 scaled score.', checkedOn: '14 August 2026' },
+          { id: 'reading-multiple-choice-single-answer-sectional-1', name: 'Multiple Choice: Single Answer Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Multiple Choice: Single Answer', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'reading-multiple-choice-multiple-answers-sectional-1', name: 'Multiple Choice: Multiple Answers Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Multiple Choice: Multiple Answers', duration: 10, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Each question awards 1 mark for each correct option selected, as long as no incorrect option is included; including any incorrect option scores zero for that question.', checkedOn: '14 August 2026' },
         ],
       },
     ],
