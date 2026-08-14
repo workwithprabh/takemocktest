@@ -59,6 +59,15 @@ const CATEGORY_STYLES = {
       </svg>
     ),
   },
+  'Study Abroad': {
+    surface: 'bg-[#FDE8EE]',
+    iconText: 'text-[#B0355C]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M3 20h18M6 20V10l6-5 6 5v10M10 20v-6h4v6" fill="none" stroke="currentColor" strokeWidth="1.7" />
+      </svg>
+    ),
+  },
 } as const;
 
 export default function ExamCard({ exam, country }: { exam: ExamConfig; country: string }) {

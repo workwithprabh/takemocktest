@@ -40,7 +40,8 @@ export type ExamSlug =
   | 'met'
   | 'ielts'
   | 'toefl'
-  | 'pte';
+  | 'pte'
+  | 'sat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -91,7 +92,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad';
   stages: TestStage[];
 }
 
@@ -145,6 +146,8 @@ const IELTS_GENERAL_TRAINING_READING_PAGE =
   'https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading';
 const TOEFL_READING_PAGE = 'https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html';
 const PTE_READING_PAGE = 'https://www.pearsonpte.com/pte-academic/test-format/reading/';
+const SAT_STRUCTURE_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-test/structure';
+const SAT_READING_WRITING_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4774,6 +4777,74 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'reading-full-mock-1', name: 'Reading Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 25, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Single Answer questions score +1/0. Multiple Answers questions award 1 mark for each correct option selected, as long as no incorrect option is included; including any incorrect option scores zero for that question. No negative marking beyond that. The official test uses a different, proprietary 10-90 scaled score.', checkedOn: '14 August 2026' },
           { id: 'reading-multiple-choice-single-answer-sectional-1', name: 'Multiple Choice: Single Answer Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Multiple Choice: Single Answer', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
           { id: 'reading-multiple-choice-multiple-answers-sectional-1', name: 'Multiple Choice: Multiple Answers Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Multiple Choice: Multiple Answers', duration: 10, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Each question awards 1 mark for each correct option selected, as long as no incorrect option is included; including any incorrect option scores zero for that question.', checkedOn: '14 August 2026' },
+        ],
+      },
+    ],
+  },
+  'sat': {
+    slug: 'sat',
+    name: 'SAT',
+    fullName: 'Digital SAT',
+    category: 'Study Abroad',
+    stages: [
+      {
+        id: 'reading-and-writing',
+        name: 'Reading and Writing',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Craft and Structure', 'Information and Ideas', 'Standard English Conventions', 'Expression of Ideas'],
+          totalQuestions: 54,
+          totalMarks: 54,
+          duration: 64,
+          negativeMarking: 0,
+          note: 'The official Digital SAT Reading and Writing section is delivered as two adaptive 27-question modules (module 2\'s difficulty depends on module 1 performance), each passage followed by a single 4-option multiple-choice question. This practice mock uses a fixed, non-adaptive set of 54 questions covering all four official content domains, scored on raw correct count; the official test reports a scaled 200-800 section score instead.',
+          sectionBreakdown: [
+            { name: 'Craft and Structure', questions: 15, marks: 15 },
+            { name: 'Information and Ideas', questions: 14, marks: 14 },
+            { name: 'Standard English Conventions', questions: 14, marks: 14 },
+            { name: 'Expression of Ideas', questions: 11, marks: 11 },
+          ],
+          timerNote: 'Single composite 64-minute timer for all four domains combined: no sectional lock. This is a TakeMockTest-defined fixed-form timing, not a replica of the official two-module adaptive timing',
+          sourceUrl: SAT_READING_WRITING_PAGE,
+          checkedOn: '14 August 2026',
+        },
+        tests: [
+          { id: 'reading-and-writing-full-mock-1', name: 'Reading and Writing Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 64, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 54 shown here; the official test reports a scaled 200-800 section score instead.', checkedOn: '14 August 2026' },
+          { id: 'reading-and-writing-craft-and-structure-sectional-1', name: 'Craft and Structure Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Craft and Structure', duration: 18, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'reading-and-writing-information-and-ideas-sectional-1', name: 'Information and Ideas Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Information and Ideas', duration: 17, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'reading-and-writing-standard-english-conventions-sectional-1', name: 'Standard English Conventions Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Standard English Conventions', duration: 17, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'reading-and-writing-expression-of-ideas-sectional-1', name: 'Expression of Ideas Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Expression of Ideas', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+        ],
+      },
+      {
+        id: 'math',
+        name: 'Math',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Algebra', 'Advanced Math', 'Problem-Solving and Data Analysis', 'Geometry and Trigonometry'],
+          totalQuestions: 44,
+          totalMarks: 44,
+          duration: 70,
+          negativeMarking: 0,
+          note: 'The official Digital SAT Math section is delivered as two adaptive 22-question modules (module 2\'s difficulty depends on module 1 performance), with a calculator permitted throughout. Most questions are 4-option multiple choice; a few require typing in a numeric answer directly (student-produced response) instead of choosing from options. This practice mock uses a fixed, non-adaptive set of 44 questions covering all four official content domains, scored on raw correct count; the official test reports a scaled 200-800 section score instead.',
+          sectionBreakdown: [
+            { name: 'Algebra', questions: 15, marks: 15 },
+            { name: 'Advanced Math', questions: 15, marks: 15 },
+            { name: 'Problem-Solving and Data Analysis', questions: 7, marks: 7 },
+            { name: 'Geometry and Trigonometry', questions: 7, marks: 7 },
+          ],
+          timerNote: 'Single composite 70-minute timer for all four domains combined: no sectional lock. This is a TakeMockTest-defined fixed-form timing, not a replica of the official two-module adaptive timing',
+          sourceUrl: SAT_STRUCTURE_PAGE,
+          checkedOn: '14 August 2026',
+        },
+        tests: [
+          { id: 'math-full-mock-1', name: 'Math Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 70, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 44 shown here; the official test reports a scaled 200-800 section score instead.', checkedOn: '14 August 2026' },
+          { id: 'math-algebra-sectional-1', name: 'Algebra Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Algebra', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'math-advanced-math-sectional-1', name: 'Advanced Math Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Advanced Math', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'math-problem-solving-and-data-analysis-sectional-1', name: 'Problem-Solving and Data Analysis Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Problem-Solving and Data Analysis', duration: 11, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'math-geometry-and-trigonometry-sectional-1', name: 'Geometry and Trigonometry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Geometry and Trigonometry', duration: 11, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
         ],
       },
     ],

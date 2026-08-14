@@ -220,7 +220,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         exams: [
           exam('GRE General Test', 'International'),
           exam('GMAT', 'International'),
-          exam('SAT', 'International'),
+          exam('SAT', 'International', 'sat'),
           exam('ACT', 'International'),
           exam('LSAT', 'International'),
           exam('MCAT', 'International'),

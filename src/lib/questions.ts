@@ -222,6 +222,14 @@ import { TOEFL_READING_READ_IN_DAILY_LIFE_1 } from './question-banks/toefl-readi
 import { TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1 } from './question-banks/toefl-reading-read-an-academic-passage-1';
 import { PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1 } from './question-banks/pte-reading-multiple-choice-single-answer-1';
 import { PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1 } from './question-banks/pte-reading-multiple-choice-multiple-answers-1';
+import { SAT_READING_AND_WRITING_CRAFT_AND_STRUCTURE_1 } from './question-banks/sat-reading-and-writing-craft-and-structure-1';
+import { SAT_READING_AND_WRITING_INFORMATION_AND_IDEAS_1 } from './question-banks/sat-reading-and-writing-information-and-ideas-1';
+import { SAT_READING_AND_WRITING_STANDARD_ENGLISH_CONVENTIONS_1 } from './question-banks/sat-reading-and-writing-standard-english-conventions-1';
+import { SAT_READING_AND_WRITING_EXPRESSION_OF_IDEAS_1 } from './question-banks/sat-reading-and-writing-expression-of-ideas-1';
+import { SAT_MATH_ALGEBRA_1 } from './question-banks/sat-math-algebra-1';
+import { SAT_MATH_ADVANCED_MATH_1 } from './question-banks/sat-math-advanced-math-1';
+import { SAT_MATH_PROBLEM_SOLVING_AND_DATA_ANALYSIS_1 } from './question-banks/sat-math-problem-solving-and-data-analysis-1';
+import { SAT_MATH_GEOMETRY_AND_TRIGONOMETRY_1 } from './question-banks/sat-math-geometry-and-trigonometry-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -702,6 +710,26 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'pte/reading-multiple-choice-single-answer-sectional-1': PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1,
   'pte/reading-multiple-choice-multiple-answers-sectional-1': PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1,
+  'sat/reading-and-writing-full-mock-1': [
+    ...SAT_READING_AND_WRITING_CRAFT_AND_STRUCTURE_1,
+    ...SAT_READING_AND_WRITING_INFORMATION_AND_IDEAS_1,
+    ...SAT_READING_AND_WRITING_STANDARD_ENGLISH_CONVENTIONS_1,
+    ...SAT_READING_AND_WRITING_EXPRESSION_OF_IDEAS_1,
+  ],
+  'sat/reading-and-writing-craft-and-structure-sectional-1': SAT_READING_AND_WRITING_CRAFT_AND_STRUCTURE_1,
+  'sat/reading-and-writing-information-and-ideas-sectional-1': SAT_READING_AND_WRITING_INFORMATION_AND_IDEAS_1,
+  'sat/reading-and-writing-standard-english-conventions-sectional-1': SAT_READING_AND_WRITING_STANDARD_ENGLISH_CONVENTIONS_1,
+  'sat/reading-and-writing-expression-of-ideas-sectional-1': SAT_READING_AND_WRITING_EXPRESSION_OF_IDEAS_1,
+  'sat/math-full-mock-1': [
+    ...SAT_MATH_ALGEBRA_1,
+    ...SAT_MATH_ADVANCED_MATH_1,
+    ...SAT_MATH_PROBLEM_SOLVING_AND_DATA_ANALYSIS_1,
+    ...SAT_MATH_GEOMETRY_AND_TRIGONOMETRY_1,
+  ],
+  'sat/math-algebra-sectional-1': SAT_MATH_ALGEBRA_1,
+  'sat/math-advanced-math-sectional-1': SAT_MATH_ADVANCED_MATH_1,
+  'sat/math-problem-solving-and-data-analysis-sectional-1': SAT_MATH_PROBLEM_SOLVING_AND_DATA_ANALYSIS_1,
+  'sat/math-geometry-and-trigonometry-sectional-1': SAT_MATH_GEOMETRY_AND_TRIGONOMETRY_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1054,6 +1082,26 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 12
     : testId.includes('pte/reading-multiple-choice-multiple-answers')
     ? 8
+    : testId.includes('sat/reading-and-writing-full-mock')
+    ? 54
+    : testId.includes('sat/reading-and-writing-craft-and-structure')
+    ? 15
+    : testId.includes('sat/reading-and-writing-information-and-ideas')
+    ? 14
+    : testId.includes('sat/reading-and-writing-standard-english-conventions')
+    ? 14
+    : testId.includes('sat/reading-and-writing-expression-of-ideas')
+    ? 11
+    : testId.includes('sat/math-full-mock')
+    ? 44
+    : testId.includes('sat/math-algebra')
+    ? 15
+    : testId.includes('sat/math-advanced-math')
+    ? 15
+    : testId.includes('sat/math-problem-solving-and-data-analysis')
+    ? 7
+    : testId.includes('sat/math-geometry-and-trigonometry')
+    ? 7
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1561,6 +1609,18 @@ const pteReadingLayout = [
   { section: 'Multiple Choice: Single Answer', count: 12 },
   { section: 'Multiple Choice: Multiple Answers', count: 8 },
 ];
+const satReadingAndWritingLayout = [
+  { section: 'Craft and Structure', count: 15 },
+  { section: 'Information and Ideas', count: 14 },
+  { section: 'Standard English Conventions', count: 14 },
+  { section: 'Expression of Ideas', count: 11 },
+];
+const satMathLayout = [
+  { section: 'Algebra', count: 15 },
+  { section: 'Advanced Math', count: 15 },
+  { section: 'Problem-Solving and Data Analysis', count: 7 },
+  { section: 'Geometry and Trigonometry', count: 7 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1598,7 +1658,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                 ? toeflReadingLayout
                                 : testId.includes('pte/reading-full-mock')
                                   ? pteReadingLayout
-                                  : fullMockLayouts[testId.split('/')[0]];
+                                  : testId.includes('sat/reading-and-writing-full-mock')
+                                    ? satReadingAndWritingLayout
+                                    : testId.includes('sat/math-full-mock')
+                                      ? satMathLayout
+                                      : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1889,6 +1953,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'pte': [
     PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1[0],
     PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1[0],
+  ],
+  'sat': [
+    SAT_READING_AND_WRITING_CRAFT_AND_STRUCTURE_1[0],
+    SAT_MATH_ALGEBRA_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
