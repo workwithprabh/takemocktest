@@ -35,8 +35,10 @@ for (const { file, questions } of banks) {
     : file.startsWith('ibps-po-prelims-english') || file.startsWith('ssc-cgl-tier2-')
     ? 30
     : file.startsWith('ibps-po-prelims-') ? 35
-    : file.startsWith('rrb-ntpc-cbt1-general-awareness-') ? 40
-    : file.startsWith('rrb-ntpc-cbt1-') ? 30
+    : file.startsWith('rrb-ntpc-cbt1-full-mock-') ? 100
+    : file.startsWith('rrb-ntpc-cbt1-general-awareness-sectional-') ? 40
+    : file.startsWith('rrb-ntpc-cbt1-mathematics-sectional-') ? 30
+    : file.startsWith('rrb-ntpc-cbt1-general-intelligence-reasoning-sectional-') ? 30
     : file.startsWith('ibps-po-mains-general-awareness-') ? 50
     : file.startsWith('ibps-po-mains-') ? 40
     : file.startsWith('ibps-clerk-prelims-english-language-') ? 30

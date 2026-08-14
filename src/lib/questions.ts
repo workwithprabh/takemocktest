@@ -29,9 +29,10 @@ import { SSC_CGL_TIER2_COMPUTER_KNOWLEDGE_3 } from './question-banks/ssc-cgl-tie
 import { IBPS_PO_PRELIMS_ENGLISH_1 } from './question-banks/ibps-po-prelims-english-1';
 import { IBPS_PO_PRELIMS_QUANTITATIVE_1 } from './question-banks/ibps-po-prelims-quantitative-1';
 import { IBPS_PO_PRELIMS_REASONING_1 } from './question-banks/ibps-po-prelims-reasoning-1';
-import { RRB_NTPC_CBT1_MATHEMATICS_1 } from './question-banks/rrb-ntpc-cbt1-mathematics-1';
-import { RRB_NTPC_CBT1_REASONING_1 } from './question-banks/rrb-ntpc-cbt1-reasoning-1';
-import { RRB_NTPC_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-ntpc-cbt1-general-awareness-1';
+import { RRB_NTPC_CBT1_FULL_MOCK_1 } from './question-banks/rrb-ntpc-cbt1-full-mock-1';
+import { RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-mathematics-sectional-1';
+import { RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-general-intelligence-reasoning-sectional-1';
+import { RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-general-awareness-sectional-1';
 import { IBPS_PO_MAINS_REASONING_1 } from './question-banks/ibps-po-mains-reasoning-1';
 import { IBPS_PO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/ibps-po-mains-general-awareness-1';
 import { IBPS_PO_MAINS_ENGLISH_1 } from './question-banks/ibps-po-mains-english-1';
@@ -332,14 +333,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-cgl/tier-2-computer-knowledge-sectional-1': SSC_CGL_TIER2_COMPUTER_KNOWLEDGE_1,
   'ssc-cgl/tier-2-computer-knowledge-sectional-2': SSC_CGL_TIER2_COMPUTER_KNOWLEDGE_2,
   'ssc-cgl/tier-2-computer-knowledge-sectional-3': SSC_CGL_TIER2_COMPUTER_KNOWLEDGE_3,
-  'rrb-ntpc/cbt-1-full-mock-1': [
-    ...RRB_NTPC_CBT1_MATHEMATICS_1,
-    ...RRB_NTPC_CBT1_REASONING_1,
-    ...RRB_NTPC_CBT1_GENERAL_AWARENESS_1,
-  ],
-  'rrb-ntpc/cbt-1-mathematics-sectional-1': RRB_NTPC_CBT1_MATHEMATICS_1,
-  'rrb-ntpc/cbt-1-general-intelligence-reasoning-sectional-1': RRB_NTPC_CBT1_REASONING_1,
-  'rrb-ntpc/cbt-1-general-awareness-sectional-1': RRB_NTPC_CBT1_GENERAL_AWARENESS_1,
+  'rrb-ntpc/cbt-1-full-mock-1': RRB_NTPC_CBT1_FULL_MOCK_1,
+  'rrb-ntpc/cbt-1-mathematics-sectional-1': RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_1,
+  'rrb-ntpc/cbt-1-general-intelligence-reasoning-sectional-1': RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
+  'rrb-ntpc/cbt-1-general-awareness-sectional-1': RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_1,
   'ibps-po/mains-full-mock-1': [
     ...IBPS_PO_MAINS_REASONING_1,
     ...IBPS_PO_MAINS_GENERAL_AWARENESS_1,
