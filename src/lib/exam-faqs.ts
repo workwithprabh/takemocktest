@@ -278,6 +278,95 @@ export const EXAM_FACT_FAQS: Partial<Record<string, FactFaq[]>> = {
       checkedOn: '14 August 2026',
     },
   ],
+
+  // Batch 3: fresh research, 14 August 2026. Several PDFs here were only
+  // readable through the r.jina.ai text-extraction proxy (see
+  // project-takemocktest-bucket-b-pending.md); the underlying source is
+  // still the official document at sourceUrl, jina is just how the text
+  // was pulled out of it.
+  'ssc-cht': [
+    {
+      q: 'What is the age limit and qualification for SSC CHT?',
+      a: "The age limit is 18 to 30 years as on 1 August 2026. For junior-level posts, candidates need a master's degree in Hindi with English as a compulsory or elective subject (or the reverse combination), plus a recognised diploma or certificate in Hindi-English translation, or two years of translation experience. The senior-level post needs three years of translation experience instead of two.",
+      sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cht_2026.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'ssc-selection-post': [
+    {
+      q: 'What is the age limit and qualification for SSC Selection Post?',
+      a: 'Age limit and qualification are post-specific, set out post by post in the notification, since Selection Post covers many different posts and ministries at once. The exam itself runs in three tiers matching qualification level: Matriculation, Higher Secondary (10+2), and Graduation and above. Age is reckoned as on 1 January 2026.',
+      sourceUrl:
+        'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'ibps-so': [
+    {
+      q: 'What is the age limit and qualification for IBPS SO?',
+      a: 'The age band is 20 to 30 years as on 1 July 2025. Qualification depends on the specialist post: IT Officer needs a 4-year engineering/technology degree in a computer-related field (or an equivalent postgraduate degree), Agricultural Field Officer needs a 4-year degree in agriculture or a related field, Law Officer needs an LL.B with Bar Council enrolment, and other posts need a relevant graduate or postgraduate qualification as listed in the notification.',
+      sourceUrl: 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'ibps-rrb-officer-scale-1': [
+    {
+      q: 'What is the age limit and qualification for IBPS RRB Officer Scale I?',
+      a: "Candidates must be 18 to 30 years old as on 1 September 2025 and must hold a bachelor's degree in any discipline from a recognised university, along with proficiency in the local language of the Regional Rural Bank applied to.",
+      sourceUrl: 'https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD-27.09.25.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'ibps-rrb-office-assistant': [
+    {
+      q: 'What is the age limit and qualification for IBPS RRB Office Assistant?',
+      a: "Candidates must be 18 to 28 years old as on 1 September 2025 and must hold a bachelor's degree in any discipline from a recognised university, along with proficiency in the local language of the Regional Rural Bank applied to.",
+      sourceUrl: 'https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD-27.09.25.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'rrb-alp': [
+    {
+      q: 'What is the age limit and qualification for RRB ALP?',
+      a: 'The age band is 18 to 30 years as on 1 July 2025. Candidates need Matriculation plus an ITI in a specified trade, or Matriculation plus a completed apprenticeship in a specified trade, or a 3-year diploma (or degree) in Mechanical, Electrical, Electronics, or Automobile Engineering.',
+      sourceUrl: 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_01-2025_ALP.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'rrb-technician': [
+    {
+      q: 'What is the age limit for RRB Technician?',
+      a: 'The age band is 18 to 33 years for Technician Grade I Signal and 18 to 30 years for Technician Grade III, both reckoned as on 1 July 2025. Educational and technical qualification is post-specific, set out post by post in the notification.',
+      sourceUrl:
+        'https://rrbajmer.gov.in/Upload_PDF/Detailed%20CEN%202-2025_%20Technician%20Categories-638866538197092718.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'jee-advanced': [
+    {
+      q: 'What is the age limit and number of attempts for JEE Advanced?',
+      a: 'Candidates must have been born on or after 1 October 2001, with the cutoff relaxed to 1 October 1996 for SC, ST, and PwD candidates. A candidate can attempt JEE Advanced a maximum of two times, in two consecutive years.',
+      sourceUrl: 'https://jeeadv.ac.in/eligibility.html',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  srmjeee: [
+    {
+      q: 'What is the age limit and qualification for SRMJEEE?',
+      a: 'Candidates must have attained 16 years and 6 months of age by 31 July of the year they take the Class 12 board exam. They need a Class 12 pass with a minimum 60% aggregate across Physics (mandatory), Mathematics (mandatory), and one more subject from Chemistry, Biotechnology, Biology, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Botany and Zoology.',
+      sourceUrl: 'https://www.srmist.edu.in/b-tech-eligibility/',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  met: [
+    {
+      q: 'What is the age limit and qualification for MET B.Tech?',
+      a: 'MET has no stated age limit. Candidates need a Class 12 pass (or equivalent) with Physics, Mathematics, and English as compulsory subjects, plus one optional subject (Chemistry, Biotechnology, Biology, or a technical vocational subject), with a minimum 50% aggregate across Physics, Mathematics, and the optional subject.',
+      sourceUrl:
+        'https://manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
 };
 
 export function getExamFactFaqs(exam: ExamConfig): FactFaq[] {
