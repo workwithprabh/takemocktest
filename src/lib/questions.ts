@@ -212,6 +212,12 @@ import { MET_2026_BTECH_CHEMISTRY_SECTIONAL_1 } from './question-banks/met-2026-
 import { MET_2026_BTECH_ENGLISH_SECTIONAL_1 } from './question-banks/met-2026-btech-english-sectional-1';
 import { MET_2026_BTECH_MIXED_QUICK_PRACTICE_30M_1 } from './question-banks/met-2026-btech-mixed-quick-practice-30m-1';
 import { MET_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1 } from './question-banks/met-2026-btech-mixed-quick-practice-60m-1';
+import { IELTS_ACADEMIC_READING_PASSAGE_1_1 } from './question-banks/ielts-academic-reading-passage-1-1';
+import { IELTS_ACADEMIC_READING_PASSAGE_2_1 } from './question-banks/ielts-academic-reading-passage-2-1';
+import { IELTS_ACADEMIC_READING_PASSAGE_3_1 } from './question-banks/ielts-academic-reading-passage-3-1';
+import { IELTS_GENERAL_TRAINING_READING_SECTION_1_1 } from './question-banks/ielts-general-training-reading-section-1-1';
+import { IELTS_GENERAL_TRAINING_READING_SECTION_2_1 } from './question-banks/ielts-general-training-reading-section-2-1';
+import { IELTS_GENERAL_TRAINING_READING_SECTION_3_1 } from './question-banks/ielts-general-training-reading-section-3-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -664,6 +670,22 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-paramedical/cbt-general-awareness-sectional-1': RRB_PARAMEDICAL_GENERAL_AWARENESS_1,
   'rrb-paramedical/cbt-general-arithmetic-reasoning-sectional-1': RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1,
   'rrb-paramedical/cbt-general-science-sectional-1': RRB_PARAMEDICAL_GENERAL_SCIENCE_1,
+  'ielts/academic-reading-full-mock-1': [
+    ...IELTS_ACADEMIC_READING_PASSAGE_1_1,
+    ...IELTS_ACADEMIC_READING_PASSAGE_2_1,
+    ...IELTS_ACADEMIC_READING_PASSAGE_3_1,
+  ],
+  'ielts/academic-reading-passage-1-sectional-1': IELTS_ACADEMIC_READING_PASSAGE_1_1,
+  'ielts/academic-reading-passage-2-sectional-1': IELTS_ACADEMIC_READING_PASSAGE_2_1,
+  'ielts/academic-reading-passage-3-sectional-1': IELTS_ACADEMIC_READING_PASSAGE_3_1,
+  'ielts/general-training-reading-full-mock-1': [
+    ...IELTS_GENERAL_TRAINING_READING_SECTION_1_1,
+    ...IELTS_GENERAL_TRAINING_READING_SECTION_2_1,
+    ...IELTS_GENERAL_TRAINING_READING_SECTION_3_1,
+  ],
+  'ielts/general-training-reading-section-1-sectional-1': IELTS_GENERAL_TRAINING_READING_SECTION_1_1,
+  'ielts/general-training-reading-section-2-sectional-1': IELTS_GENERAL_TRAINING_READING_SECTION_2_1,
+  'ielts/general-training-reading-section-3-sectional-1': IELTS_GENERAL_TRAINING_READING_SECTION_3_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1000,6 +1022,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 100
     : testId.includes('met/full-mock')
     ? 60
+    : testId.includes('ielts/academic-reading-full-mock') || testId.includes('ielts/general-training-reading-full-mock')
+    ? 40
+    : testId.includes('ielts') && (testId.includes('passage-3') || testId.includes('section-3'))
+    ? 14
+    : testId.includes('ielts')
+    ? 13
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1489,6 +1517,16 @@ const rrbTechnicianGrade3Layout = [
   { section: 'General Science', count: 40 },
   { section: 'General Awareness', count: 10 },
 ];
+const ieltsAcademicReadingLayout = [
+  { section: 'Passage 1', count: 13 },
+  { section: 'Passage 2', count: 13 },
+  { section: 'Passage 3', count: 14 },
+];
+const ieltsGeneralTrainingReadingLayout = [
+  { section: 'Section 1', count: 13 },
+  { section: 'Section 2', count: 13 },
+  { section: 'Section 3', count: 14 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1518,7 +1556,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                         ? rrbTechnicianGrade1SignalLayout
                         : testId.includes('rrb-technician/grade-3-full-mock')
                           ? rrbTechnicianGrade3Layout
-                          : fullMockLayouts[testId.split('/')[0]];
+                          : testId.includes('ielts/academic-reading-full-mock')
+                            ? ieltsAcademicReadingLayout
+                            : testId.includes('ielts/general-training-reading-full-mock')
+                              ? ieltsGeneralTrainingReadingLayout
+                              : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1797,6 +1839,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     MET_2026_BTECH_MATHEMATICS_SECTIONAL_1[0],
     MET_2026_BTECH_PHYSICS_SECTIONAL_1[0],
     MET_2026_BTECH_CHEMISTRY_SECTIONAL_1[0],
+  ],
+  'ielts': [
+    IELTS_ACADEMIC_READING_PASSAGE_1_1[0],
+    IELTS_GENERAL_TRAINING_READING_SECTION_1_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

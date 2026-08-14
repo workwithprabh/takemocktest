@@ -37,7 +37,8 @@ export type ExamSlug =
   | 'viteee'
   | 'srmjeee'
   | 'aeee'
-  | 'met';
+  | 'met'
+  | 'ielts';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -88,7 +89,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency';
   stages: TestStage[];
 }
 
@@ -137,6 +138,9 @@ const SRMJEEE_2026_EXAMINATION_PATTERN =
 const AEEE_2026_ADMISSIONS_PAGE = 'https://aeee.amrita.edu/';
 const MET_2026_BTECH_SYLLABUS_PATTERN =
   'https://evbab.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/btech_met_syllabus_2026.pdf';
+const IELTS_ACADEMIC_TEST_PAGE = 'https://ielts.org/take-a-test/test-types/ielts-academic-test';
+const IELTS_GENERAL_TRAINING_READING_PAGE =
+  'https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4634,6 +4638,70 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', section: 'English', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '13 August 2026' },
           { id: 'mixed-quick-practice-30m-1', name: 'Mixed Quick Practice Test 1 (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
           { id: 'mixed-quick-practice-60m-1', name: 'Mixed Quick Practice Test 2 (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ielts': {
+    slug: 'ielts',
+    name: 'IELTS',
+    fullName: 'International English Language Testing System: Reading',
+    category: 'English Proficiency',
+    stages: [
+      {
+        id: 'academic-reading',
+        name: 'Academic Reading',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Passage 1', 'Passage 2', 'Passage 3'],
+          totalQuestions: 40,
+          totalMarks: 40,
+          duration: 60,
+          negativeMarking: 0,
+          note: 'IELTS Academic Reading has three passages of increasing difficulty, taken from books, journals, magazines and newspapers, worth 40 questions in total. There is no negative marking: each correct answer scores 1 mark, and the raw score out of 40 is later converted to a band score from 1 to 9 using IELTS\'s published conversion table. This practice test uses a multiple-choice format for every question so it can be scored instantly; the official test also uses other formats such as matching and sentence completion for the same reading skills.',
+          sectionBreakdown: [
+            { name: 'Passage 1', questions: 13, marks: 13 },
+            { name: 'Passage 2', questions: 13, marks: 13 },
+            { name: 'Passage 3', questions: 14, marks: 14 },
+          ],
+          timerNote: 'Single composite 60-minute timer for all three passages combined: no sectional lock, you can move between passages freely, the same as the real test',
+          sourceUrl: IELTS_ACADEMIC_TEST_PAGE,
+          checkedOn: '14 August 2026',
+        },
+        tests: [
+          { id: 'academic-reading-full-mock-1', name: 'Academic Reading Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 40 converts to a band score (1-9) using the official IELTS conversion table, not shown here.', checkedOn: '14 August 2026' },
+          { id: 'academic-reading-passage-1-sectional-1', name: 'Passage 1 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Passage 1', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'academic-reading-passage-2-sectional-1', name: 'Passage 2 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Passage 2', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'academic-reading-passage-3-sectional-1', name: 'Passage 3 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Passage 3', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+        ],
+      },
+      {
+        id: 'general-training-reading',
+        name: 'General Training Reading',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Section 1', 'Section 2', 'Section 3'],
+          totalQuestions: 40,
+          totalMarks: 40,
+          duration: 60,
+          negativeMarking: 0,
+          note: 'IELTS General Training Reading has three sections of increasing difficulty: Section 1 uses short social or survival texts (notices, advertisements, guides), Section 2 uses workplace-related texts, and Section 3 is one longer, general-interest text similar in style to the Academic test. There is no negative marking: each correct answer scores 1 mark, and the raw score out of 40 is later converted to a band score from 1 to 9. This practice test uses a multiple-choice format for every question so it can be scored instantly; the official test also uses other formats such as matching and sentence completion for the same reading skills.',
+          sectionBreakdown: [
+            { name: 'Section 1', questions: 13, marks: 13 },
+            { name: 'Section 2', questions: 13, marks: 13 },
+            { name: 'Section 3', questions: 14, marks: 14 },
+          ],
+          timerNote: 'Single composite 60-minute timer for all three sections combined: no sectional lock, you can move between sections freely, the same as the real test',
+          sourceUrl: IELTS_GENERAL_TRAINING_READING_PAGE,
+          checkedOn: '14 August 2026',
+        },
+        tests: [
+          { id: 'general-training-reading-full-mock-1', name: 'General Training Reading Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 40 converts to a band score (1-9) using the official IELTS conversion table, not shown here.', checkedOn: '14 August 2026' },
+          { id: 'general-training-reading-section-1-sectional-1', name: 'Section 1 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Section 1', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'general-training-reading-section-2-sectional-1', name: 'Section 2 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Section 2', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+          { id: 'general-training-reading-section-3-sectional-1', name: 'Section 3 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Section 3', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
         ],
       },
     ],
