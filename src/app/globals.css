@@ -1,5 +1,10 @@
-@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap');
+/* General Sans is loaded via a non-blocking <link rel="stylesheet"> in
+   src/app/layout.tsx's <head> instead of @import here: @import is
+   discovered only after this file downloads and parses, forcing a serial
+   render-blocking waterfall. A <link> in <head> is discovered immediately
+   by the browser's preload scanner and fetched in parallel. JetBrains Mono
+   is self-hosted via next/font/google in layout.tsx (zero external
+   request, no render blocking at all). */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

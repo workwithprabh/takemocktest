@@ -40,7 +40,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['"General Sans"', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'monospace'],
+        mono: ['var(--font-jetbrains-mono)', '"JetBrains Mono"', 'monospace'],
       },
     },
   },
