@@ -199,6 +199,85 @@ export const EXAM_FACT_FAQS: Partial<Record<string, FactFaq[]>> = {
       checkedOn: '13 August 2026',
     },
   ],
+
+  // Batch 2: fresh research against each exam's own official notification
+  // or admissions page, per the 2026-08-13 scoped exception. Age bands are
+  // for the unrelaxed general category unless stated otherwise; see each
+  // exam's eligibility page for relaxation and post-specific detail.
+  'upsc-cse': [
+    {
+      q: 'What is the age limit and qualification for UPSC CSE?',
+      a: 'A candidate must be 21 to 32 years old as on 1 August 2026 and must hold a graduate degree from a university incorporated by an Act of the central or state legislature, or an equivalent recognised qualification. The upper age limit is relaxable by 5 years for SC/ST, 3 years for OBC, and 10 years for PwBD candidates. General/EWS candidates get 6 attempts, OBC gets 9, and SC/ST candidates have no attempt limit.',
+      sourceUrl: 'https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'nabard-grade-a': [
+    {
+      q: 'What is the age limit and qualification for NABARD Grade A?',
+      a: "Candidates must be 21 to 30 years old as on 1 December 2025 and must hold a bachelor's degree in any discipline from a recognised university.",
+      sourceUrl:
+        'https://www.nabard.org/auth/writereaddata/CareerNotices/0512255230Final Advertisement Grade A (RDBS, Legal, P&SS) 2025 (1).pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'sebi-grade-a': [
+    {
+      q: 'What is the age limit and qualification for SEBI Grade A?',
+      a: "The upper age limit is 30 years as on 30 September 2025 (candidates must be born on or after 1 October 1995), relaxable by 5 years for SC/ST, 3 years for OBC, and 10 years for PwBD candidates. Candidates need a master's degree or a two-year postgraduate diploma in any discipline, or a bachelor's degree in law or engineering, or a CA/CFA/CS/cost accountant qualification.",
+      sourceUrl: 'https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'sidbi-grade-a-b': [
+    {
+      q: 'What is the age limit and qualification for SIDBI Grade A?',
+      a: "Candidates must be 21 to 30 years old as on 14 July 2025 (born between 14 July 1995 and 15 July 2004). Educational qualification is a graduation in Commerce, Economics, Mathematics, Statistics, Business Administration, or Engineering with a minimum 60% marks (50% for SC/ST/PwBD), or CS/CMA/CFA/CA, or a full-time two-year MBA/PGDM. Graduates under the first two routes also need two years of relevant post-qualification work experience.",
+      sourceUrl: 'https://www.sidbi.in/head/uploads/career_document/SIDBI_DETAILED_WEB_ADVT_2025.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'lic-aao': [
+    {
+      q: 'What is the age limit and qualification for LIC AAO (Generalist)?',
+      a: "Candidates must be 21 to 30 years old as on 1 August 2025 (born between 2 August 1995 and 1 August 2004) and must hold a bachelor's degree in any discipline from a recognised Indian university, with the result declared by 1 August 2025.",
+      sourceUrl: 'https://licindia.in/documents/d/guest/aao-generalist-notification-2025-final',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  'jee-main': [
+    {
+      q: 'What is the age limit and qualification for JEE Main?',
+      a: "There is no age limit for JEE Main. Candidates must have passed Class 12 (or an equivalent, including a 3-year AICTE diploma) in 2024 or 2025, or be appearing in 2026. There is no minimum marks requirement to sit the exam itself, though separate cutoffs apply for admission to NITs and other centrally funded institutes.",
+      sourceUrl:
+        'https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/11/202511021649722475.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  bitsat: [
+    {
+      q: 'What is the age limit and qualification for BITSAT?',
+      a: 'There is no age limit for BITSAT. For B.E. programmes (other than Environmental and Sustainability), candidates need Physics, Chemistry, and Mathematics as compulsory Class 12 subjects, with an aggregate of at least 75% across the three and at least 60% in each individually. B.Pharm. and a few other programmes use Physics, Chemistry, and Biology/Mathematics under the same aggregate rule.',
+      sourceUrl: 'https://admissions.bits-pilani.ac.in/FD/downloads/BITSAT-2026_brochure.pdf',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  viteee: [
+    {
+      q: 'What is the age limit and qualification for VITEEE?',
+      a: 'Candidates must be born on or after 1 July 2004. For the PCM stream, a minimum aggregate of 60% in Physics, Chemistry, and Mathematics is required, with not less than 50% in Mathematics; the PCB stream needs the same 60% aggregate with Biology in place of Mathematics and at least 50% in Biology. SC/ST candidates and applicants from a few northeastern states need a 50% aggregate instead of 60%.',
+      sourceUrl: 'https://viteee.vit.ac.in/',
+      checkedOn: '14 August 2026',
+    },
+  ],
+  aeee: [
+    {
+      q: 'What is the age limit and qualification for AEEE?',
+      a: 'AEEE has no stated age limit. Candidates need a Class 12 pass (or equivalent) with a minimum aggregate of 55% in Physics, Chemistry, and Mathematics, and at least 50% in each subject individually.',
+      sourceUrl: 'https://aeee.amrita.edu/',
+      checkedOn: '14 August 2026',
+    },
+  ],
 };
 
 export function getExamFactFaqs(exam: ExamConfig): FactFaq[] {
