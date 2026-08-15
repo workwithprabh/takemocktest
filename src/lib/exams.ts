@@ -42,7 +42,8 @@ export type ExamSlug =
   | 'toefl'
   | 'pte'
   | 'sat'
-  | 'gre';
+  | 'gre'
+  | 'act';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -150,6 +151,7 @@ const PTE_READING_PAGE = 'https://www.pearsonpte.com/pte-academic/test-format/re
 const SAT_STRUCTURE_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-test/structure';
 const SAT_READING_WRITING_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing';
 const GRE_QUANT_PAGE = 'https://www.ets.org/gre/test-takers/general-test/prepare/content/quantitative-reasoning.html';
+const ACT_FORMAT_PAGE = 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4881,6 +4883,126 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'quantitative-reasoning-full-mock-1', name: 'Quantitative Reasoning Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 35, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official test reports a scaled 130-170 section score instead.', checkedOn: '15 August 2026' },
           { id: 'quantitative-reasoning-quantitative-comparison-sectional-1', name: 'Quantitative Comparison Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Comparison', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'quantitative-reasoning-numeric-entry-sectional-1', name: 'Numeric Entry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numeric Entry', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'act': {
+    slug: 'act',
+    name: 'ACT',
+    fullName: 'Enhanced ACT',
+    category: 'Study Abroad',
+    stages: [
+      {
+        id: 'english',
+        name: 'English',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Usage and Mechanics', 'Rhetorical Skills'],
+          totalQuestions: 25,
+          totalMarks: 25,
+          duration: 18,
+          negativeMarking: 0,
+          note: 'Since the 2026 Enhanced ACT rollout, the official English section has 50 questions in 35 minutes, all 4-option multiple choice, testing grammar, punctuation, sentence structure, and rhetorical skills (organization, style, effectiveness) through passages with underlined or numbered portions. This mock is a TakeMockTest-defined shorter set: 25 questions in 18 minutes across the same two skill categories, for focused practice rather than the full official item count. There is no negative marking. This mock shows your raw score; the official test reports a scaled 1-36 score instead.',
+          sectionBreakdown: [
+            { name: 'Usage and Mechanics', questions: 13, marks: 13 },
+            { name: 'Rhetorical Skills', questions: 12, marks: 12 },
+          ],
+          timerNote: 'Single composite 18-minute timer for both categories combined: no sectional lock',
+          sourceUrl: ACT_FORMAT_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'english-full-mock-1', name: 'English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 18, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 25 shown here; the official test reports a scaled 1-36 score instead.', checkedOn: '15 August 2026' },
+          { id: 'english-usage-and-mechanics-sectional-1', name: 'Usage and Mechanics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Usage and Mechanics', duration: 9, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'english-rhetorical-skills-sectional-1', name: 'Rhetorical Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Rhetorical Skills', duration: 9, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+      {
+        id: 'math',
+        name: 'Math',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Pre-Algebra and Elementary Algebra', 'Intermediate Algebra and Coordinate Geometry', 'Plane Geometry and Trigonometry'],
+          totalQuestions: 24,
+          totalMarks: 24,
+          duration: 27,
+          negativeMarking: 0,
+          note: 'Since the 2026 Enhanced ACT rollout, the official Math section has 45 questions in 50 minutes, now 4-option multiple choice (reduced from the traditional 5 options). This mock is a TakeMockTest-defined shorter set: 24 questions in 27 minutes, for focused practice rather than the full official item count. A calculator is permitted throughout. The three content groupings used here (Pre-Algebra and Elementary Algebra, Intermediate Algebra and Coordinate Geometry, Plane Geometry and Trigonometry) are a TakeMockTest preparation map based on the traditional ACT Math content areas, not an official post-2026 reporting-category breakdown. There is no negative marking. This mock shows your raw score; the official test reports a scaled 1-36 score instead.',
+          sectionBreakdown: [
+            { name: 'Pre-Algebra and Elementary Algebra', questions: 10, marks: 10 },
+            { name: 'Intermediate Algebra and Coordinate Geometry', questions: 8, marks: 8 },
+            { name: 'Plane Geometry and Trigonometry', questions: 6, marks: 6 },
+          ],
+          timerNote: 'Single composite 27-minute timer for all three content areas combined: no sectional lock',
+          sourceUrl: ACT_FORMAT_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'math-full-mock-1', name: 'Math Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 27, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 24 shown here; the official test reports a scaled 1-36 score instead.', checkedOn: '15 August 2026' },
+          { id: 'math-pre-algebra-and-elementary-algebra-sectional-1', name: 'Pre-Algebra and Elementary Algebra Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Pre-Algebra and Elementary Algebra', duration: 11, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'math-intermediate-algebra-and-coordinate-geometry-sectional-1', name: 'Intermediate Algebra and Coordinate Geometry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Intermediate Algebra and Coordinate Geometry', duration: 9, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'math-plane-geometry-and-trigonometry-sectional-1', name: 'Plane Geometry and Trigonometry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Plane Geometry and Trigonometry', duration: 7, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+      {
+        id: 'reading',
+        name: 'Reading',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Literary Narrative', 'Social Science', 'Humanities', 'Natural Science'],
+          totalQuestions: 18,
+          totalMarks: 18,
+          duration: 20,
+          negativeMarking: 0,
+          note: 'Since the 2026 Enhanced ACT rollout, the official Reading section has 36 questions in 40 minutes, all 4-option multiple choice, across four passages of different types (Literary Narrative, Social Science, Humanities, Natural Science), each followed by around 9 questions. This mock is a TakeMockTest-defined shorter set: 18 questions in 20 minutes, four or five per passage type, for focused practice rather than the full official item count. There is no negative marking. This mock shows your raw score; the official test reports a scaled 1-36 score instead.',
+          sectionBreakdown: [
+            { name: 'Literary Narrative', questions: 5, marks: 5 },
+            { name: 'Social Science', questions: 5, marks: 5 },
+            { name: 'Humanities', questions: 4, marks: 4 },
+            { name: 'Natural Science', questions: 4, marks: 4 },
+          ],
+          timerNote: 'Single composite 20-minute timer for all four passages combined: no sectional lock',
+          sourceUrl: ACT_FORMAT_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'reading-full-mock-1', name: 'Reading Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 20, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 18 shown here; the official test reports a scaled 1-36 score instead.', checkedOn: '15 August 2026' },
+          { id: 'reading-literary-narrative-sectional-1', name: 'Literary Narrative Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Literary Narrative', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'reading-social-science-sectional-1', name: 'Social Science Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Social Science', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'reading-humanities-sectional-1', name: 'Humanities Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Humanities', duration: 4, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'reading-natural-science-sectional-1', name: 'Natural Science Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Natural Science', duration: 4, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+      {
+        id: 'science',
+        name: 'Science',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Data Representation', 'Research Summaries', 'Conflicting Viewpoints'],
+          totalQuestions: 18,
+          totalMarks: 18,
+          duration: 18,
+          negativeMarking: 0,
+          note: 'Since the 2026 Enhanced ACT rollout, Science is an optional section (officially 40 questions in 40 minutes, all 4-option multiple choice); students can take the college-reportable core (English, Math, Reading) without it. This mock is a TakeMockTest-defined shorter set: 18 questions in 18 minutes across the same three passage types, for focused practice rather than the full official item count. The section tests data interpretation and scientific reasoning from passages presenting data, experiments, or differing viewpoints, not memorized science facts. There is no negative marking. This mock shows your raw score; the official test reports a scaled 1-36 score instead.',
+          sectionBreakdown: [
+            { name: 'Data Representation', questions: 5, marks: 5 },
+            { name: 'Research Summaries', questions: 9, marks: 9 },
+            { name: 'Conflicting Viewpoints', questions: 4, marks: 4 },
+          ],
+          timerNote: 'Single composite 18-minute timer for all three passage types combined: no sectional lock',
+          sourceUrl: ACT_FORMAT_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'science-full-mock-1', name: 'Science Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 18, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 18 shown here; the official test reports a scaled 1-36 score instead.', checkedOn: '15 August 2026' },
+          { id: 'science-data-representation-sectional-1', name: 'Data Representation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Representation', duration: 5, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'science-research-summaries-sectional-1', name: 'Research Summaries Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Research Summaries', duration: 9, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'science-conflicting-viewpoints-sectional-1', name: 'Conflicting Viewpoints Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Conflicting Viewpoints', duration: 4, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],

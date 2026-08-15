@@ -15,13 +15,13 @@ This file is the live project dashboard. It is tracked in Git and updated only f
 ## 2. Verified corpus snapshot (repository-derived, this update)
 
 - Catalog entries (`exam-catalog.ts`): 180
-- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 44
-- Question-bank files (`src/lib/question-banks/*.ts`): 233
-- Questions: 6,998
+- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 46
+- Question-bank files (`src/lib/question-banks/*.ts`): 245
+- Questions: 7,083
 - `npm run qa:questions`: PASS — no duplicate IDs, no full duplicate questions (stem + options + answer), valid schema
-- `npm run build`: PASS — 1,142 statically generated pages
+- `npm run build`: PASS — clean static export
 
-## 3. Live exams (44)
+## 3. Live exams (45)
 
 SSC: ssc-cgl, ssc-chsl, ssc-mts, ssc-cpo, ssc-gd-constable, ssc-je, ssc-steno, ssc-cht, ssc-selection-post
 
@@ -35,9 +35,9 @@ Engineering: jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee, met
 
 English Proficiency: ielts, toefl, pte
 
-Study Abroad: sat, gre
+Study Abroad: sat, gre, act
 
-Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), VITEEE (2026 MPCEA Mathematics stream), SRMJEEE (2026 PCM Mathematics route), AEEE (2026 B.Tech), and MET (2026 B.Tech) are live; KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued. A new Study Abroad / English Proficiency cluster has started: IELTS Reading (Academic and General Training) is live; Listening, Writing, and Speaking are not covered (Listening needs real audio, which the current text-only engine and this environment's browser tooling cannot produce; Writing and Speaking are examiner-scored, not machine-gradable MCQ).
+Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), VITEEE (2026 MPCEA Mathematics stream), SRMJEEE (2026 PCM Mathematics route), AEEE (2026 B.Tech), and MET (2026 B.Tech) are live; KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued. A new Study Abroad / English Proficiency cluster has started: IELTS Reading (Academic and General Training) is live; Listening, Writing, and Speaking are not covered (Listening needs real audio, which the current text-only engine and this environment's browser tooling cannot produce; Writing and Speaking are examiner-scored, not machine-gradable MCQ). ACT (Enhanced ACT, 2026 redesign) is live across all 4 sections (English, Math, Reading, Science) at a TakeMockTest-defined shorter question count per section than the official test, disclosed in each section's pattern note; unlike SAT this is a deliberate scope reduction, not a format exclusion, since the redesigned ACT already uses 4-option multiple choice throughout with no format mismatch.
 
 ## 4. Major completed work
 

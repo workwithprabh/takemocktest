@@ -232,6 +232,18 @@ import { SAT_MATH_PROBLEM_SOLVING_AND_DATA_ANALYSIS_1 } from './question-banks/s
 import { SAT_MATH_GEOMETRY_AND_TRIGONOMETRY_1 } from './question-banks/sat-math-geometry-and-trigonometry-1';
 import { GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1 } from './question-banks/gre-quantitative-reasoning-quantitative-comparison-1';
 import { GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1 } from './question-banks/gre-quantitative-reasoning-numeric-entry-1';
+import { ACT_ENGLISH_USAGE_AND_MECHANICS_1 } from './question-banks/act-english-usage-and-mechanics-1';
+import { ACT_ENGLISH_RHETORICAL_SKILLS_1 } from './question-banks/act-english-rhetorical-skills-1';
+import { ACT_MATH_PRE_ALGEBRA_AND_ELEMENTARY_ALGEBRA_1 } from './question-banks/act-math-pre-algebra-and-elementary-algebra-1';
+import { ACT_MATH_INTERMEDIATE_ALGEBRA_AND_COORDINATE_GEOMETRY_1 } from './question-banks/act-math-intermediate-algebra-and-coordinate-geometry-1';
+import { ACT_MATH_PLANE_GEOMETRY_AND_TRIGONOMETRY_1 } from './question-banks/act-math-plane-geometry-and-trigonometry-1';
+import { ACT_READING_LITERARY_NARRATIVE_1 } from './question-banks/act-reading-literary-narrative-1';
+import { ACT_READING_SOCIAL_SCIENCE_1 } from './question-banks/act-reading-social-science-1';
+import { ACT_READING_HUMANITIES_1 } from './question-banks/act-reading-humanities-1';
+import { ACT_READING_NATURAL_SCIENCE_1 } from './question-banks/act-reading-natural-science-1';
+import { ACT_SCIENCE_DATA_REPRESENTATION_1 } from './question-banks/act-science-data-representation-1';
+import { ACT_SCIENCE_RESEARCH_SUMMARIES_1 } from './question-banks/act-science-research-summaries-1';
+import { ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1 } from './question-banks/act-science-conflicting-viewpoints-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -738,6 +750,38 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'gre/quantitative-reasoning-quantitative-comparison-sectional-1': GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1,
   'gre/quantitative-reasoning-numeric-entry-sectional-1': GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1,
+  'act/english-full-mock-1': [
+    ...ACT_ENGLISH_USAGE_AND_MECHANICS_1,
+    ...ACT_ENGLISH_RHETORICAL_SKILLS_1,
+  ],
+  'act/english-usage-and-mechanics-sectional-1': ACT_ENGLISH_USAGE_AND_MECHANICS_1,
+  'act/english-rhetorical-skills-sectional-1': ACT_ENGLISH_RHETORICAL_SKILLS_1,
+  'act/math-full-mock-1': [
+    ...ACT_MATH_PRE_ALGEBRA_AND_ELEMENTARY_ALGEBRA_1,
+    ...ACT_MATH_INTERMEDIATE_ALGEBRA_AND_COORDINATE_GEOMETRY_1,
+    ...ACT_MATH_PLANE_GEOMETRY_AND_TRIGONOMETRY_1,
+  ],
+  'act/math-pre-algebra-and-elementary-algebra-sectional-1': ACT_MATH_PRE_ALGEBRA_AND_ELEMENTARY_ALGEBRA_1,
+  'act/math-intermediate-algebra-and-coordinate-geometry-sectional-1': ACT_MATH_INTERMEDIATE_ALGEBRA_AND_COORDINATE_GEOMETRY_1,
+  'act/math-plane-geometry-and-trigonometry-sectional-1': ACT_MATH_PLANE_GEOMETRY_AND_TRIGONOMETRY_1,
+  'act/reading-full-mock-1': [
+    ...ACT_READING_LITERARY_NARRATIVE_1,
+    ...ACT_READING_SOCIAL_SCIENCE_1,
+    ...ACT_READING_HUMANITIES_1,
+    ...ACT_READING_NATURAL_SCIENCE_1,
+  ],
+  'act/reading-literary-narrative-sectional-1': ACT_READING_LITERARY_NARRATIVE_1,
+  'act/reading-social-science-sectional-1': ACT_READING_SOCIAL_SCIENCE_1,
+  'act/reading-humanities-sectional-1': ACT_READING_HUMANITIES_1,
+  'act/reading-natural-science-sectional-1': ACT_READING_NATURAL_SCIENCE_1,
+  'act/science-full-mock-1': [
+    ...ACT_SCIENCE_DATA_REPRESENTATION_1,
+    ...ACT_SCIENCE_RESEARCH_SUMMARIES_1,
+    ...ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1,
+  ],
+  'act/science-data-representation-sectional-1': ACT_SCIENCE_DATA_REPRESENTATION_1,
+  'act/science-research-summaries-sectional-1': ACT_SCIENCE_RESEARCH_SUMMARIES_1,
+  'act/science-conflicting-viewpoints-sectional-1': ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1116,6 +1160,38 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 12
     : testId.includes('gre/quantitative-reasoning-numeric-entry')
     ? 8
+    : testId.includes('act/english-full-mock')
+    ? 25
+    : testId.includes('act/english-usage-and-mechanics')
+    ? 13
+    : testId.includes('act/english-rhetorical-skills')
+    ? 12
+    : testId.includes('act/math-full-mock')
+    ? 24
+    : testId.includes('act/math-pre-algebra-and-elementary-algebra')
+    ? 10
+    : testId.includes('act/math-intermediate-algebra-and-coordinate-geometry')
+    ? 8
+    : testId.includes('act/math-plane-geometry-and-trigonometry')
+    ? 6
+    : testId.includes('act/reading-full-mock')
+    ? 18
+    : testId.includes('act/reading-literary-narrative')
+    ? 5
+    : testId.includes('act/reading-social-science')
+    ? 5
+    : testId.includes('act/reading-humanities')
+    ? 4
+    : testId.includes('act/reading-natural-science')
+    ? 4
+    : testId.includes('act/science-full-mock')
+    ? 18
+    : testId.includes('act/science-data-representation')
+    ? 5
+    : testId.includes('act/science-research-summaries')
+    ? 9
+    : testId.includes('act/science-conflicting-viewpoints')
+    ? 4
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1639,6 +1715,26 @@ const greQuantitativeReasoningLayout = [
   { section: 'Quantitative Comparison', count: 12 },
   { section: 'Numeric Entry', count: 8 },
 ];
+const actEnglishLayout = [
+  { section: 'Usage and Mechanics', count: 13 },
+  { section: 'Rhetorical Skills', count: 12 },
+];
+const actMathLayout = [
+  { section: 'Pre-Algebra and Elementary Algebra', count: 10 },
+  { section: 'Intermediate Algebra and Coordinate Geometry', count: 8 },
+  { section: 'Plane Geometry and Trigonometry', count: 6 },
+];
+const actReadingLayout = [
+  { section: 'Literary Narrative', count: 5 },
+  { section: 'Social Science', count: 5 },
+  { section: 'Humanities', count: 4 },
+  { section: 'Natural Science', count: 4 },
+];
+const actScienceLayout = [
+  { section: 'Data Representation', count: 5 },
+  { section: 'Research Summaries', count: 9 },
+  { section: 'Conflicting Viewpoints', count: 4 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1682,7 +1778,15 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                       ? satMathLayout
                                       : testId.includes('gre/quantitative-reasoning-full-mock')
                                         ? greQuantitativeReasoningLayout
-                                        : fullMockLayouts[testId.split('/')[0]];
+                                        : testId.includes('act/english-full-mock')
+                                          ? actEnglishLayout
+                                          : testId.includes('act/math-full-mock')
+                                            ? actMathLayout
+                                            : testId.includes('act/reading-full-mock')
+                                              ? actReadingLayout
+                                              : testId.includes('act/science-full-mock')
+                                                ? actScienceLayout
+                                                : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1981,6 +2085,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'gre': [
     GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1[0],
     GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1[0],
+  ],
+  'act': [
+    ACT_ENGLISH_USAGE_AND_MECHANICS_1[0],
+    ACT_MATH_PRE_ALGEBRA_AND_ELEMENTARY_ALGEBRA_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

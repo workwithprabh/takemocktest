@@ -1,0 +1,21 @@
+import type { Question } from '../questions';
+
+const source = {
+  kind: 'original' as const,
+  reference: 'Original ACT Math practice questions covering Pre-Algebra and Elementary Algebra content, in the 4-option multiple-choice format used since the 2026 Enhanced ACT Math section.',
+  url: 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html',
+  checkedOn: '15 August 2026',
+};
+
+export const ACT_MATH_PRE_ALGEBRA_AND_ELEMENTARY_ALGEBRA_1: Question[] = [
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-001', section: 'Pre-Algebra and Elementary Algebra', topic: 'Percentages', difficulty: 'easy', question: 'What is 40% of 85?', options: ['34', '30', '36', '32'], correctIndex: 0, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: '40% of 85 = 0.40 × 85 = 34.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-002', section: 'Pre-Algebra and Elementary Algebra', topic: 'Linear Equations', difficulty: 'easy', question: 'Solve for x: 3x − 7 = 20.', options: ['7', '9', '11', '13'], correctIndex: 1, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: '3x = 27, so x = 9.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-003', section: 'Pre-Algebra and Elementary Algebra', topic: 'Order of Operations', difficulty: 'easy', question: 'Evaluate: 6 + 4 × (5 − 2).', options: ['14', '16', '18', '20'], correctIndex: 2, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: '6 + 4 × 3 = 6 + 12 = 18.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-004', section: 'Pre-Algebra and Elementary Algebra', topic: 'Ratios', difficulty: 'medium', question: 'A recipe calls for flour and sugar in a ratio of 5:2. If 4 cups of sugar are used, how many cups of flour are needed?', options: ['6', '8', '9', '10'], correctIndex: 3, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: 'Flour/sugar = 5/2, so flour = (5/2) × 4 = 10 cups.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-005', section: 'Pre-Algebra and Elementary Algebra', topic: 'Exponents', difficulty: 'medium', question: 'Simplify: 2³ × 2⁴.', options: ['128', '64', '32', '256'], correctIndex: 0, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: '2³ × 2⁴ = 2⁷ = 128.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-006', section: 'Pre-Algebra and Elementary Algebra', topic: 'Integers', difficulty: 'easy', question: 'What is the value of −8 + 15 − 3?', options: ['2', '4', '6', '8'], correctIndex: 1, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: '−8 + 15 = 7, and 7 − 3 = 4.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-007', section: 'Pre-Algebra and Elementary Algebra', topic: 'Fractions', difficulty: 'medium', question: 'What is 3/4 + 1/6?', options: ['5/6', '7/8', '11/12', '13/12'], correctIndex: 2, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: 'Using a common denominator of 12: 9/12 + 2/12 = 11/12.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-008', section: 'Pre-Algebra and Elementary Algebra', topic: 'Algebraic Expressions', difficulty: 'medium', question: 'Simplify: 5(x + 3) − 2x.', options: ['3x + 3', '5x + 13', '3x + 13', '3x + 15'], correctIndex: 3, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: '5(x + 3) = 5x + 15, and 5x + 15 − 2x = 3x + 15.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-009', section: 'Pre-Algebra and Elementary Algebra', topic: 'Word Problems', difficulty: 'medium', question: 'Sam has twice as many books as Priya. Together they have 36 books. How many books does Priya have?', options: ['12', '14', '16', '18'], correctIndex: 0, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: 'Let Priya have p books; Sam has 2p. p + 2p = 36, so 3p = 36 and p = 12.', source },
+  { id: 'act-math-pre-algebra-and-elementary-algebra-01-010', section: 'Pre-Algebra and Elementary Algebra', topic: 'Percentages', difficulty: 'medium', question: 'A jacket originally priced $80 is on sale for 25% off. What is the sale price?', options: ['55', '60', '65', '70'], correctIndex: 1, answerType: 'mcq', marks: 1, negativeMarking: 0, explanation: '25% of 80 is 20, so the sale price is 80 − 20 = 60 dollars.', source },
+];
