@@ -46,7 +46,8 @@ export type ExamSlug =
   | 'act'
   | 'mcat'
   | 'oet'
-  | 'frm';
+  | 'frm'
+  | 'nism';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -158,6 +159,7 @@ const ACT_FORMAT_PAGE = 'https://www.act.org/content/act/en/products-and-service
 const MCAT_CARS_PAGE = 'https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview';
 const OET_READING_PART_C_PAGE = 'https://oet.com/en-us/post/reading-part-c-the-complete-guide';
 const FRM_PROGRAM_EXAMS_PAGE = 'https://www.garp.org/frm/program-exams';
+const NISM_SERIES_V_A_FAQ_PAGE = 'https://www.nism.ac.in/frequently-asked-questions-mutual-fund-distributors/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5111,6 +5113,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'part-1-quantitative-analysis-full-mock-1', name: 'Quantitative Analysis Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 48, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official exam reports only a pass/fail result, not a numeric score.', checkedOn: '15 August 2026' },
           { id: 'part-1-probability-and-distributions-sectional-1', name: 'Probability and Distributions Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Probability and Distributions', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'part-1-regression-and-estimation-sectional-1', name: 'Regression and Estimation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Regression and Estimation', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nism': {
+    slug: 'nism',
+    name: 'NISM',
+    fullName: 'NISM Series V-A: Mutual Fund Distributors Certification Examination',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'series-v-a-mutual-fund-distributors',
+        name: 'Series V-A: Mutual Fund Distributors',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['NAV and Returns Calculations', 'SIP and Growth Calculations'],
+          totalQuestions: 20,
+          totalMarks: 20,
+          duration: 24,
+          negativeMarking: 0,
+          note: 'The official NISM Series V-A exam has 100 questions of 1 mark each in 2 hours, with no negative marking and a 50% passing score, covering mutual fund concepts, regulation, taxation, and fund accounting and calculations. This mock covers only the calculation-based portion of the syllabus, NAV, returns, SIP, and compounding mathematics, since every answer there is independently verifiable by formula. It does not cover fund categorization rules, regulatory and compliance content, or taxation, since those change with SEBI and tax circulars and require accurate, current recall rather than calculation, the same content-risk boundary applied to this site\'s other finance and science-heavy sections. This mock matches a proportional 24-minute duration estimate for its 20 questions against the official 100-question, 120-minute exam. This mock shows a raw score; the official exam reports a percentage score against the 50% pass mark.',
+          sectionBreakdown: [
+            { name: 'NAV and Returns Calculations', questions: 10, marks: 10 },
+            { name: 'SIP and Growth Calculations', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single composite 24-minute timer for both topic areas combined: no sectional lock',
+          sourceUrl: NISM_SERIES_V_A_FAQ_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'series-v-a-mutual-fund-distributors-full-mock-1', name: 'Mutual Fund Distributors Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 24, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official exam reports a percentage score against a 50% pass mark instead.', checkedOn: '15 August 2026' },
+          { id: 'series-v-a-nav-and-returns-calculations-sectional-1', name: 'NAV and Returns Calculations Sectional Test 1', kind: 'sectional', status: 'checked', section: 'NAV and Returns Calculations', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'series-v-a-sip-and-growth-calculations-sectional-1', name: 'SIP and Growth Calculations Sectional Test 1', kind: 'sectional', status: 'checked', section: 'SIP and Growth Calculations', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],

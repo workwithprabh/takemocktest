@@ -452,7 +452,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         exams: [
           exam('CFA Level I, II & III', 'International'),
           exam('FRM Part I & II', 'International', 'frm'),
-          exam('NISM Certification Examinations', 'National'),
+          exam('NISM Certification Examinations', 'National', 'nism'),
         ],
       },
     ],

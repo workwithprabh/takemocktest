@@ -248,6 +248,7 @@ import { MCAT_CARS_HUMANITIES_1 } from './question-banks/mcat-cars-humanities-1'
 import { MCAT_CARS_SOCIAL_SCIENCES_1 } from './question-banks/mcat-cars-social-sciences-1';
 import { OET_READING_PART_C_1 } from './question-banks/oet-reading-part-c-combined-1';
 import { FRM_PART_1_QUANTITATIVE_ANALYSIS_1 } from './question-banks/frm-part-1-quantitative-analysis-combined-1';
+import { NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1 } from './question-banks/nism-series-v-a-mutual-fund-distributors-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -798,6 +799,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'frm/part-1-quantitative-analysis-full-mock-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1,
   'frm/part-1-probability-and-distributions-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Probability and Distributions'),
   'frm/part-1-regression-and-estimation-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Regression and Estimation'),
+  'nism/series-v-a-mutual-fund-distributors-full-mock-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1,
+  'nism/series-v-a-nav-and-returns-calculations-sectional-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1.filter((question) => question.section === 'NAV and Returns Calculations'),
+  'nism/series-v-a-sip-and-growth-calculations-sectional-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1.filter((question) => question.section === 'SIP and Growth Calculations'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1225,6 +1229,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('frm/part-1-probability-and-distributions')
     ? 10
     : testId.includes('frm/part-1-regression-and-estimation')
+    ? 10
+    : testId.includes('nism/series-v-a-mutual-fund-distributors-full-mock')
+    ? 20
+    : testId.includes('nism/series-v-a-nav-and-returns-calculations')
+    ? 10
+    : testId.includes('nism/series-v-a-sip-and-growth-calculations')
     ? 10
     : testId.includes('full-mock')
     ? 100
@@ -1781,6 +1791,10 @@ const frmPart1QuantitativeAnalysisLayout = [
   { section: 'Probability and Distributions', count: 10 },
   { section: 'Regression and Estimation', count: 10 },
 ];
+const nismSeriesVAMutualFundDistributorsLayout = [
+  { section: 'NAV and Returns Calculations', count: 10 },
+  { section: 'SIP and Growth Calculations', count: 10 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1838,7 +1852,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                     ? oetReadingPartCLayout
                                                     : testId.includes('frm/part-1-quantitative-analysis-full-mock')
                                                       ? frmPart1QuantitativeAnalysisLayout
-                                                      : fullMockLayouts[testId.split('/')[0]];
+                                                      : testId.includes('nism/series-v-a-mutual-fund-distributors-full-mock')
+                                                        ? nismSeriesVAMutualFundDistributorsLayout
+                                                        : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2153,6 +2169,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'frm': [
     FRM_PART_1_QUANTITATIVE_ANALYSIS_1[0],
     FRM_PART_1_QUANTITATIVE_ANALYSIS_1[10],
+  ],
+  'nism': [
+    NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1[0],
+    NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1[10],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
