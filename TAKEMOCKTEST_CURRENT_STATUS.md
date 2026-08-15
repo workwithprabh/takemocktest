@@ -15,13 +15,13 @@ This file is the live project dashboard. It is tracked in Git and updated only f
 ## 2. Verified corpus snapshot (repository-derived, this update)
 
 - Catalog entries (`exam-catalog.ts`): 180
-- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 47
-- Question-bank files (`src/lib/question-banks/*.ts`): 247
-- Questions: 7,107
+- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 48
+- Question-bank files (`src/lib/question-banks/*.ts`): 248
+- Questions: 7,123
 - `npm run qa:questions`: PASS — no duplicate IDs, no full duplicate questions (stem + options + answer), valid schema
 - `npm run build`: PASS — clean static export
 
-## 3. Live exams (46)
+## 3. Live exams (47)
 
 SSC: ssc-cgl, ssc-chsl, ssc-mts, ssc-cpo, ssc-gd-constable, ssc-je, ssc-steno, ssc-cht, ssc-selection-post
 
@@ -33,7 +33,7 @@ Civil Services: upsc-cse
 
 Engineering: jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee, met
 
-English Proficiency: ielts, toefl, pte
+English Proficiency: ielts, toefl, pte, oet
 
 Study Abroad: sat, gre, act, mcat
 

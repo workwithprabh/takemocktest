@@ -234,7 +234,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('TOEFL iBT', 'International', 'toefl'),
           exam('PTE Academic', 'International', 'pte'),
           exam('Duolingo English Test', 'International'),
-          exam('OET', 'International'),
+          exam('OET', 'International', 'oet'),
         ],
       },
     ],

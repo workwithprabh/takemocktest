@@ -246,6 +246,7 @@ import { ACT_SCIENCE_RESEARCH_SUMMARIES_1 } from './question-banks/act-science-r
 import { ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1 } from './question-banks/act-science-conflicting-viewpoints-1';
 import { MCAT_CARS_HUMANITIES_1 } from './question-banks/mcat-cars-humanities-1';
 import { MCAT_CARS_SOCIAL_SCIENCES_1 } from './question-banks/mcat-cars-social-sciences-1';
+import { OET_READING_PART_C_1 } from './question-banks/oet-reading-part-c-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -790,6 +791,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'mcat/critical-analysis-and-reasoning-skills-humanities-sectional-1': MCAT_CARS_HUMANITIES_1,
   'mcat/critical-analysis-and-reasoning-skills-social-sciences-sectional-1': MCAT_CARS_SOCIAL_SCIENCES_1,
+  'oet/reading-part-c-full-mock-1': OET_READING_PART_C_1,
+  'oet/reading-part-c-text-1-sectional-1': OET_READING_PART_C_1.filter((question) => question.section === 'Text 1'),
+  'oet/reading-part-c-text-2-sectional-1': OET_READING_PART_C_1.filter((question) => question.section === 'Text 2'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1206,6 +1210,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 12
     : testId.includes('mcat/critical-analysis-and-reasoning-skills-social-sciences')
     ? 12
+    : testId.includes('oet/reading-part-c-full-mock')
+    ? 16
+    : testId.includes('oet/reading-part-c-text-1')
+    ? 8
+    : testId.includes('oet/reading-part-c-text-2')
+    ? 8
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1753,6 +1763,10 @@ const mcatCarsLayout = [
   { section: 'Humanities', count: 12 },
   { section: 'Social Sciences', count: 12 },
 ];
+const oetReadingPartCLayout = [
+  { section: 'Text 1', count: 8 },
+  { section: 'Text 2', count: 8 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1806,7 +1820,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                 ? actScienceLayout
                                                 : testId.includes('mcat/critical-analysis-and-reasoning-skills-full-mock')
                                                   ? mcatCarsLayout
-                                                  : fullMockLayouts[testId.split('/')[0]];
+                                                  : testId.includes('oet/reading-part-c-full-mock')
+                                                    ? oetReadingPartCLayout
+                                                    : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2113,6 +2129,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'mcat': [
     MCAT_CARS_HUMANITIES_1[0],
     MCAT_CARS_SOCIAL_SCIENCES_1[0],
+  ],
+  'oet': [
+    OET_READING_PART_C_1[0],
+    OET_READING_PART_C_1[8],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

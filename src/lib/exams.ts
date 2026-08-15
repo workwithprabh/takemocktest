@@ -44,7 +44,8 @@ export type ExamSlug =
   | 'sat'
   | 'gre'
   | 'act'
-  | 'mcat';
+  | 'mcat'
+  | 'oet';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -154,6 +155,7 @@ const SAT_READING_WRITING_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on
 const GRE_QUANT_PAGE = 'https://www.ets.org/gre/test-takers/general-test/prepare/content/quantitative-reasoning.html';
 const ACT_FORMAT_PAGE = 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html';
 const MCAT_CARS_PAGE = 'https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview';
+const OET_READING_PART_C_PAGE = 'https://oet.com/en-us/post/reading-part-c-the-complete-guide';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5039,6 +5041,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'critical-analysis-and-reasoning-skills-full-mock-1', name: 'CARS Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 40, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 24 shown here; the official test reports a scaled 118-132 score per section instead.', checkedOn: '15 August 2026' },
           { id: 'critical-analysis-and-reasoning-skills-humanities-sectional-1', name: 'Humanities Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Humanities', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'critical-analysis-and-reasoning-skills-social-sciences-sectional-1', name: 'Social Sciences Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Social Sciences', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'oet': {
+    slug: 'oet',
+    name: 'OET',
+    fullName: 'OET (Occupational English Test)',
+    category: 'English Proficiency',
+    stages: [
+      {
+        id: 'reading-part-c',
+        name: 'Reading Part C',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Text 1', 'Text 2'],
+          totalQuestions: 16,
+          totalMarks: 16,
+          duration: 32,
+          negativeMarking: 0,
+          note: 'The official OET Reading sub-test has three parts sharing 60 minutes total: Part A (20 items in 15 minutes, matching, short answer, and sentence completion, all typed rather than multiple choice), Part B (6 short texts, one 3-option multiple-choice question each), and Part C (2 longer texts of around 800 words, 8 4-option multiple-choice questions each), with Parts B and C sharing a combined 45-minute allocation. This mock covers only Part C, the only part in the 4-option multiple-choice format this site supports: Part A is typed short-answer and matching rather than multiple choice, and Part B uses 3 answer options rather than 4. This mock matches the full official Part C question count (16 questions) with a proportional 32-minute duration estimate, since Parts B and C are not timed separately in the official test. Reading is identical across all 12 OET professions (nursing, medicine, dentistry, pharmacy, and others); only the Writing and Speaking sub-tests are profession-specific. There is no negative marking. This mock shows your raw score; the official test reports a scaled 0-500 score instead.',
+          sectionBreakdown: [
+            { name: 'Text 1', questions: 8, marks: 8 },
+            { name: 'Text 2', questions: 8, marks: 8 },
+          ],
+          timerNote: 'Single composite 32-minute timer for both texts combined: no sectional lock',
+          sourceUrl: OET_READING_PART_C_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'reading-part-c-full-mock-1', name: 'Reading Part C Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 32, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 16 shown here; the official test reports a scaled 0-500 score instead.', checkedOn: '15 August 2026' },
+          { id: 'reading-part-c-text-1-sectional-1', name: 'Text 1 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Text 1', duration: 16, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'reading-part-c-text-2-sectional-1', name: 'Text 2 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Text 2', duration: 16, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],
