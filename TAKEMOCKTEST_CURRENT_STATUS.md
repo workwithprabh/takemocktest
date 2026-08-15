@@ -15,13 +15,13 @@ This file is the live project dashboard. It is tracked in Git and updated only f
 ## 2. Verified corpus snapshot (repository-derived, this update)
 
 - Catalog entries (`exam-catalog.ts`): 180
-- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 48
-- Question-bank files (`src/lib/question-banks/*.ts`): 248
-- Questions: 7,123
+- Live catalog entries with a `liveSlug` (`exam-catalog.ts` × `exams.ts` `ExamSlug` union, both cross-checked and matching): 49
+- Question-bank files (`src/lib/question-banks/*.ts`): 249
+- Questions: 7,143
 - `npm run qa:questions`: PASS — no duplicate IDs, no full duplicate questions (stem + options + answer), valid schema
 - `npm run build`: PASS — clean static export
 
-## 3. Live exams (47)
+## 3. Live exams (48)
 
 SSC: ssc-cgl, ssc-chsl, ssc-mts, ssc-cpo, ssc-gd-constable, ssc-je, ssc-steno, ssc-cht, ssc-selection-post
 
@@ -36,8 +36,9 @@ Engineering: jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee, met
 English Proficiency: ielts, toefl, pte, oet
 
 Study Abroad: sat, gre, act, mcat
+Finance: frm
 
-Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), VITEEE (2026 MPCEA Mathematics stream), SRMJEEE (2026 PCM Mathematics route), AEEE (2026 B.Tech), and MET (2026 B.Tech) are live; KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued. A new Study Abroad / English Proficiency cluster has started: IELTS Reading (Academic and General Training) is live; Listening, Writing, and Speaking are not covered (Listening needs real audio, which the current text-only engine and this environment's browser tooling cannot produce; Writing and Speaking are examiner-scored, not machine-gradable MCQ). ACT (Enhanced ACT, 2026 redesign) is live across all 4 sections (English, Math, Reading, Science) at a TakeMockTest-defined shorter question count per section than the official test, disclosed in each section's pattern note; unlike SAT this is a deliberate scope reduction, not a format exclusion, since the redesigned ACT already uses 4-option multiple choice throughout with no format mismatch. MCAT is live for Critical Analysis and Reasoning Skills (CARS) only, deliberately excluding the exam's three science sections: LSAT was investigated and rejected first (5-answer-choice format, A-E, confirmed via LSAC's own sample questions), then MCAT was confirmed as 4-option throughout, but only CARS was built since it is pure reading comprehension with no outside science-fact dependency, unlike the Biological/Chemical/Psychological foundations sections.
+Government Jobs cluster (per `BATCH_ROADMAP.md`) is complete. Engineering cluster is in progress: JEE Main, JEE Advanced, BITSAT (2026 Mathematics variant), VITEEE (2026 MPCEA Mathematics stream), SRMJEEE (2026 PCM Mathematics route), AEEE (2026 B.Tech), and MET (2026 B.Tech) are live; KIITEE, COMEDK UGET, IIIT Hyderabad UGEE, JEE Main Paper 2 (B.Arch/B.Planning), and NATA remain queued. A new Study Abroad / English Proficiency cluster has started: IELTS Reading (Academic and General Training) is live; Listening, Writing, and Speaking are not covered (Listening needs real audio, which the current text-only engine and this environment's browser tooling cannot produce; Writing and Speaking are examiner-scored, not machine-gradable MCQ). ACT (Enhanced ACT, 2026 redesign) is live across all 4 sections (English, Math, Reading, Science) at a TakeMockTest-defined shorter question count per section than the official test, disclosed in each section's pattern note; unlike SAT this is a deliberate scope reduction, not a format exclusion, since the redesigned ACT already uses 4-option multiple choice throughout with no format mismatch. MCAT is live for Critical Analysis and Reasoning Skills (CARS) only, deliberately excluding the exam's three science sections: LSAT was investigated and rejected first (5-answer-choice format, A-E, confirmed via LSAC's own sample questions), then MCAT was confirmed as 4-option throughout, but only CARS was built since it is pure reading comprehension with no outside science-fact dependency, unlike the Biological/Chemical/Psychological foundations sections. OET is live for Reading Part C only (Parts A and B don't fit the 4-option MCQ engine). A new Finance cluster started with FRM: Duolingo English Test was investigated and rejected (no 4-option MCQ item type exists in its 13-question-type format), so the user was asked to pick the next test explicitly and chose FRM. Only Part I Quantitative Analysis is built, deliberately excluding the rest of Part I and all of Part II even though they share the same 4-option format, since those topic areas require risk-management/regulatory recall rather than calculation, the same content-risk boundary applied to MCAT's science sections. A new `Finance` category (`ExamConfig.category`) and matching `ExamCard` badge color/icon were added to support this cluster.
 
 ## 4. Major completed work
 

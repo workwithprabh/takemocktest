@@ -45,7 +45,8 @@ export type ExamSlug =
   | 'gre'
   | 'act'
   | 'mcat'
-  | 'oet';
+  | 'oet'
+  | 'frm';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -96,7 +97,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance';
   stages: TestStage[];
 }
 
@@ -156,6 +157,7 @@ const GRE_QUANT_PAGE = 'https://www.ets.org/gre/test-takers/general-test/prepare
 const ACT_FORMAT_PAGE = 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html';
 const MCAT_CARS_PAGE = 'https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview';
 const OET_READING_PART_C_PAGE = 'https://oet.com/en-us/post/reading-part-c-the-complete-guide';
+const FRM_PROGRAM_EXAMS_PAGE = 'https://www.garp.org/frm/program-exams';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5075,6 +5077,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'reading-part-c-full-mock-1', name: 'Reading Part C Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 32, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 16 shown here; the official test reports a scaled 0-500 score instead.', checkedOn: '15 August 2026' },
           { id: 'reading-part-c-text-1-sectional-1', name: 'Text 1 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Text 1', duration: 16, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'reading-part-c-text-2-sectional-1', name: 'Text 2 Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Text 2', duration: 16, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'frm': {
+    slug: 'frm',
+    name: 'FRM',
+    fullName: 'FRM (Financial Risk Manager)',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'part-1-quantitative-analysis',
+        name: 'Part I: Quantitative Analysis',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Probability and Distributions', 'Regression and Estimation'],
+          totalQuestions: 20,
+          totalMarks: 20,
+          duration: 48,
+          negativeMarking: 0,
+          note: 'The official FRM Part I exam has 100 equally weighted, 4-option multiple-choice questions in 4 hours, across four topic areas: Foundations of Risk Management, Quantitative Analysis, Financial Markets and Products, and Valuation and Risk Models. Quantitative Analysis carries roughly 20% weight, about 20 of the 100 questions. This mock covers only Quantitative Analysis, the one Part I topic area built entirely from probability, statistics, and regression, so every answer is independently checkable by calculation. The other three Part I topic areas, and every Part II topic area (Market Risk, Credit Risk, Operational Risk, Liquidity and Treasury Risk, Risk Management and Investment Management, and Current Issues in Financial Markets), require accurate recall of risk-management methodology, regulatory frameworks, and market practice, which this site is intentionally reserving for its standard content-review process rather than self-authoring. This mock matches Quantitative Analysis\'s approximate official question share (20 questions) with a proportional 48-minute duration estimate, since the topic areas are not timed separately in the official exam. There is no negative marking. This mock shows a raw score; the official exam reports only a pass/fail result with quartile-based topic feedback, not a numeric score.',
+          sectionBreakdown: [
+            { name: 'Probability and Distributions', questions: 10, marks: 10 },
+            { name: 'Regression and Estimation', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single composite 48-minute timer for both topic areas combined: no sectional lock',
+          sourceUrl: FRM_PROGRAM_EXAMS_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'part-1-quantitative-analysis-full-mock-1', name: 'Quantitative Analysis Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 48, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official exam reports only a pass/fail result, not a numeric score.', checkedOn: '15 August 2026' },
+          { id: 'part-1-probability-and-distributions-sectional-1', name: 'Probability and Distributions Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Probability and Distributions', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'part-1-regression-and-estimation-sectional-1', name: 'Regression and Estimation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Regression and Estimation', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],

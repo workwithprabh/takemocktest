@@ -247,6 +247,7 @@ import { ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1 } from './question-banks/act-scien
 import { MCAT_CARS_HUMANITIES_1 } from './question-banks/mcat-cars-humanities-1';
 import { MCAT_CARS_SOCIAL_SCIENCES_1 } from './question-banks/mcat-cars-social-sciences-1';
 import { OET_READING_PART_C_1 } from './question-banks/oet-reading-part-c-combined-1';
+import { FRM_PART_1_QUANTITATIVE_ANALYSIS_1 } from './question-banks/frm-part-1-quantitative-analysis-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -794,6 +795,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'oet/reading-part-c-full-mock-1': OET_READING_PART_C_1,
   'oet/reading-part-c-text-1-sectional-1': OET_READING_PART_C_1.filter((question) => question.section === 'Text 1'),
   'oet/reading-part-c-text-2-sectional-1': OET_READING_PART_C_1.filter((question) => question.section === 'Text 2'),
+  'frm/part-1-quantitative-analysis-full-mock-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1,
+  'frm/part-1-probability-and-distributions-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Probability and Distributions'),
+  'frm/part-1-regression-and-estimation-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Regression and Estimation'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1216,6 +1220,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 8
     : testId.includes('oet/reading-part-c-text-2')
     ? 8
+    : testId.includes('frm/part-1-quantitative-analysis-full-mock')
+    ? 20
+    : testId.includes('frm/part-1-probability-and-distributions')
+    ? 10
+    : testId.includes('frm/part-1-regression-and-estimation')
+    ? 10
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1767,6 +1777,10 @@ const oetReadingPartCLayout = [
   { section: 'Text 1', count: 8 },
   { section: 'Text 2', count: 8 },
 ];
+const frmPart1QuantitativeAnalysisLayout = [
+  { section: 'Probability and Distributions', count: 10 },
+  { section: 'Regression and Estimation', count: 10 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1822,7 +1836,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                   ? mcatCarsLayout
                                                   : testId.includes('oet/reading-part-c-full-mock')
                                                     ? oetReadingPartCLayout
-                                                    : fullMockLayouts[testId.split('/')[0]];
+                                                    : testId.includes('frm/part-1-quantitative-analysis-full-mock')
+                                                      ? frmPart1QuantitativeAnalysisLayout
+                                                      : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2133,6 +2149,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'oet': [
     OET_READING_PART_C_1[0],
     OET_READING_PART_C_1[8],
+  ],
+  'frm': [
+    FRM_PART_1_QUANTITATIVE_ANALYSIS_1[0],
+    FRM_PART_1_QUANTITATIVE_ANALYSIS_1[10],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
