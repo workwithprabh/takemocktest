@@ -244,6 +244,8 @@ import { ACT_READING_NATURAL_SCIENCE_1 } from './question-banks/act-reading-natu
 import { ACT_SCIENCE_DATA_REPRESENTATION_1 } from './question-banks/act-science-data-representation-1';
 import { ACT_SCIENCE_RESEARCH_SUMMARIES_1 } from './question-banks/act-science-research-summaries-1';
 import { ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1 } from './question-banks/act-science-conflicting-viewpoints-1';
+import { MCAT_CARS_HUMANITIES_1 } from './question-banks/mcat-cars-humanities-1';
+import { MCAT_CARS_SOCIAL_SCIENCES_1 } from './question-banks/mcat-cars-social-sciences-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -782,6 +784,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'act/science-data-representation-sectional-1': ACT_SCIENCE_DATA_REPRESENTATION_1,
   'act/science-research-summaries-sectional-1': ACT_SCIENCE_RESEARCH_SUMMARIES_1,
   'act/science-conflicting-viewpoints-sectional-1': ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1,
+  'mcat/critical-analysis-and-reasoning-skills-full-mock-1': [
+    ...MCAT_CARS_HUMANITIES_1,
+    ...MCAT_CARS_SOCIAL_SCIENCES_1,
+  ],
+  'mcat/critical-analysis-and-reasoning-skills-humanities-sectional-1': MCAT_CARS_HUMANITIES_1,
+  'mcat/critical-analysis-and-reasoning-skills-social-sciences-sectional-1': MCAT_CARS_SOCIAL_SCIENCES_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1192,6 +1200,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 9
     : testId.includes('act/science-conflicting-viewpoints')
     ? 4
+    : testId.includes('mcat/critical-analysis-and-reasoning-skills-full-mock')
+    ? 24
+    : testId.includes('mcat/critical-analysis-and-reasoning-skills-humanities')
+    ? 12
+    : testId.includes('mcat/critical-analysis-and-reasoning-skills-social-sciences')
+    ? 12
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1735,6 +1749,10 @@ const actScienceLayout = [
   { section: 'Research Summaries', count: 9 },
   { section: 'Conflicting Viewpoints', count: 4 },
 ];
+const mcatCarsLayout = [
+  { section: 'Humanities', count: 12 },
+  { section: 'Social Sciences', count: 12 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1786,7 +1804,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                               ? actReadingLayout
                                               : testId.includes('act/science-full-mock')
                                                 ? actScienceLayout
-                                                : fullMockLayouts[testId.split('/')[0]];
+                                                : testId.includes('mcat/critical-analysis-and-reasoning-skills-full-mock')
+                                                  ? mcatCarsLayout
+                                                  : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2089,6 +2109,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'act': [
     ACT_ENGLISH_USAGE_AND_MECHANICS_1[0],
     ACT_MATH_PRE_ALGEBRA_AND_ELEMENTARY_ALGEBRA_1[0],
+  ],
+  'mcat': [
+    MCAT_CARS_HUMANITIES_1[0],
+    MCAT_CARS_SOCIAL_SCIENCES_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

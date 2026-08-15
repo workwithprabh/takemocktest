@@ -6,7 +6,7 @@ import ts from 'typescript';
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const files = fs
   .readdirSync(banksDir)
-  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|bitsat-2026-mathematics|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical|viteee-2026-mpcea|srmjeee-2026-pcm|aeee-2026-btech|met-2026-btech|ielts-academic-reading|ielts-general-training-reading|toefl-reading|pte-reading|sat-reading-and-writing|sat-math|gre-quantitative-reasoning|act-english|act-math|act-reading|act-science)-.+-\d+\.ts$/.test(file))
+  .filter((file) => /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|rrb-ntpc-cbt1|rrb-group-d-cbt|sbi-po-prelims|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|rrb-je-cbt1|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|bitsat-2026-mathematics|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ibps-so-prelims|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sidbi-grade-a-b-phase-1|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical|viteee-2026-mpcea|srmjeee-2026-pcm|aeee-2026-btech|met-2026-btech|ielts-academic-reading|ielts-general-training-reading|toefl-reading|pte-reading|sat-reading-and-writing|sat-math|gre-quantitative-reasoning|act-english|act-math|act-reading|act-science|mcat-cars)-.+-\d+\.ts$/.test(file))
   .sort();
 
 const banks = files.map((file) => {
@@ -200,7 +200,9 @@ for (const { file, questions } of banks) {
     : file.startsWith('act-reading-natural-science-') ? 4
     : file.startsWith('act-science-data-representation-') ? 5
     : file.startsWith('act-science-research-summaries-') ? 9
-    : file.startsWith('act-science-conflicting-viewpoints-') ? 4 : 25;
+    : file.startsWith('act-science-conflicting-viewpoints-') ? 4
+    : file.startsWith('mcat-cars-humanities-') ? 12
+    : file.startsWith('mcat-cars-social-sciences-') ? 12 : 25;
   if (questions.length !== expectedCount) {
     errors.push(`${file}: expected ${expectedCount} questions, found ${questions.length}`);
   }

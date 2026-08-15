@@ -43,7 +43,8 @@ export type ExamSlug =
   | 'pte'
   | 'sat'
   | 'gre'
-  | 'act';
+  | 'act'
+  | 'mcat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -152,6 +153,7 @@ const SAT_STRUCTURE_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-t
 const SAT_READING_WRITING_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing';
 const GRE_QUANT_PAGE = 'https://www.ets.org/gre/test-takers/general-test/prepare/content/quantitative-reasoning.html';
 const ACT_FORMAT_PAGE = 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html';
+const MCAT_CARS_PAGE = 'https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5003,6 +5005,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'science-data-representation-sectional-1', name: 'Data Representation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Representation', duration: 5, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'science-research-summaries-sectional-1', name: 'Research Summaries Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Research Summaries', duration: 9, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'science-conflicting-viewpoints-sectional-1', name: 'Conflicting Viewpoints Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Conflicting Viewpoints', duration: 4, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'mcat': {
+    slug: 'mcat',
+    name: 'MCAT',
+    fullName: 'MCAT (Medical College Admission Test)',
+    category: 'Study Abroad',
+    stages: [
+      {
+        id: 'critical-analysis-and-reasoning-skills',
+        name: 'Critical Analysis and Reasoning Skills',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Humanities', 'Social Sciences'],
+          totalQuestions: 24,
+          totalMarks: 24,
+          duration: 40,
+          negativeMarking: 0,
+          note: 'The official CARS (Critical Analysis and Reasoning Skills) section has 53 questions across 9 short passages in 90 minutes, drawn equally from Humanities and Social Sciences disciplines (ethics, philosophy, history, political science, sociology, and related fields), all 4-option multiple choice answered strictly from the passage, with no outside subject knowledge required. This mock is a TakeMockTest-defined shorter set: 24 questions across 6 passages in 40 minutes, split evenly between the two disciplines, for focused practice rather than the full official item count. The other three MCAT sections, Biological and Biochemical Foundations of Living Systems, Chemical and Physical Foundations of Biological Systems, and Psychological, Social, and Biological Foundations of Behavior, are not included here: unlike CARS, where every answer is verifiable directly from the passage, those sections require rigorously fact-checked science content, which this site is intentionally reserving for its standard content-review process rather than self-authoring. There is no negative marking. This mock shows your raw score; the official test reports a scaled 118-132 score per section instead.',
+          sectionBreakdown: [
+            { name: 'Humanities', questions: 12, marks: 12 },
+            { name: 'Social Sciences', questions: 12, marks: 12 },
+          ],
+          timerNote: 'Single composite 40-minute timer for both disciplines combined: no sectional lock',
+          sourceUrl: MCAT_CARS_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'critical-analysis-and-reasoning-skills-full-mock-1', name: 'CARS Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 40, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 24 shown here; the official test reports a scaled 118-132 score per section instead.', checkedOn: '15 August 2026' },
+          { id: 'critical-analysis-and-reasoning-skills-humanities-sectional-1', name: 'Humanities Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Humanities', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'critical-analysis-and-reasoning-skills-social-sciences-sectional-1', name: 'Social Sciences Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Social Sciences', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],

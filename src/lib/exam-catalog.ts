@@ -223,7 +223,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('SAT', 'International', 'sat'),
           exam('ACT', 'International', 'act'),
           exam('LSAT', 'International'),
-          exam('MCAT', 'International'),
+          exam('MCAT', 'International', 'mcat'),
         ],
       },
       {
