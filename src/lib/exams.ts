@@ -48,7 +48,8 @@ export type ExamSlug =
   | 'oet'
   | 'frm'
   | 'nism'
-  | 'acet';
+  | 'acet'
+  | 'ca-foundation';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -162,6 +163,7 @@ const OET_READING_PART_C_PAGE = 'https://oet.com/en-us/post/reading-part-c-the-c
 const FRM_PROGRAM_EXAMS_PAGE = 'https://www.garp.org/frm/program-exams';
 const NISM_SERIES_V_A_FAQ_PAGE = 'https://www.nism.ac.in/frequently-asked-questions-mutual-fund-distributors/';
 const ACET_EXAM_STRUCTURE_PAGE = 'https://www.actuariesindia.org/acet-exam-structure';
+const CA_FOUNDATION_PAPER3_SYLLABUS_PAGE = 'https://www.icai.org/post/sm-foundation-p3-may2026';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5183,6 +5185,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'mathematics-and-statistics-full-mock-1', name: 'Mathematics and Statistics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 50, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official exam reports marks toward the qualifying cutoff instead.', checkedOn: '15 August 2026' },
           { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 25, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'statistics-sectional-1', name: 'Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics', duration: 25, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ca-foundation': {
+    slug: 'ca-foundation',
+    name: 'CA Foundation',
+    fullName: 'CA Foundation (Paper 3: Quantitative Aptitude)',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'quantitative-aptitude',
+        name: 'Quantitative Aptitude',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Business Mathematics', 'Logical Reasoning', 'Statistics'],
+          totalQuestions: 30,
+          totalMarks: 30,
+          duration: 36,
+          negativeMarking: 0.25,
+          note: 'The official ICAI CA Foundation Paper 3 (Quantitative Aptitude) has 100 objective-type questions for 100 marks in 2 hours, split as Business Mathematics 40, Logical Reasoning 20, and Statistics 40 marks, each question carrying 1 mark with 0.25 marks deducted per wrong answer. This mock is a TakeMockTest-defined shorter set: 30 questions in 36 minutes across the same three sections in the same proportion. Paper 4 (Business Economics) is not covered here since it leans on economics facts and current context that carry higher correctness risk for self-authored content. Papers 1 and 2 (Accounting and Business Laws) are not covered either since ICAI sets those as subjective, descriptive-answer papers, not multiple choice.',
+          sectionBreakdown: [
+            { name: 'Business Mathematics', questions: 12, marks: 12 },
+            { name: 'Logical Reasoning', questions: 6, marks: 6 },
+            { name: 'Statistics', questions: 12, marks: 12 },
+          ],
+          timerNote: 'Single composite 36-minute timer for all three sections combined: no sectional lock',
+          sourceUrl: CA_FOUNDATION_PAPER3_SYLLABUS_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'quantitative-aptitude-full-mock-1', name: 'Quantitative Aptitude Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 36, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: '0.25 marks deducted per wrong answer, matching the official Paper 3 scheme. Raw score out of 30 shown here; the official paper is out of 100.', checkedOn: '15 August 2026' },
+          { id: 'business-mathematics-sectional-1', name: 'Business Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Business Mathematics', duration: 14, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '15 August 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 7, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '15 August 2026' },
+          { id: 'statistics-sectional-1', name: 'Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics', duration: 14, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '15 August 2026' },
         ],
       },
     ],

@@ -435,7 +435,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Indian professional qualifications',
         exams: [
-          exam('CA Foundation', 'National'),
+          exam('CA Foundation', 'National', 'ca-foundation'),
           exam('CA Intermediate', 'National'),
           exam('CA Final', 'National'),
           exam('CSEET', 'National'),
