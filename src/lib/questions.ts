@@ -249,6 +249,7 @@ import { MCAT_CARS_SOCIAL_SCIENCES_1 } from './question-banks/mcat-cars-social-s
 import { OET_READING_PART_C_1 } from './question-banks/oet-reading-part-c-combined-1';
 import { FRM_PART_1_QUANTITATIVE_ANALYSIS_1 } from './question-banks/frm-part-1-quantitative-analysis-combined-1';
 import { NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1 } from './question-banks/nism-series-v-a-mutual-fund-distributors-combined-1';
+import { ACET_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/acet-mathematics-and-statistics-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -802,6 +803,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'nism/series-v-a-mutual-fund-distributors-full-mock-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1,
   'nism/series-v-a-nav-and-returns-calculations-sectional-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1.filter((question) => question.section === 'NAV and Returns Calculations'),
   'nism/series-v-a-sip-and-growth-calculations-sectional-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1.filter((question) => question.section === 'SIP and Growth Calculations'),
+  'acet/mathematics-and-statistics-full-mock-1': ACET_MATHEMATICS_AND_STATISTICS_1,
+  'acet/mathematics-sectional-1': ACET_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Mathematics'),
+  'acet/statistics-sectional-1': ACET_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Statistics'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1235,6 +1239,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('nism/series-v-a-nav-and-returns-calculations')
     ? 10
     : testId.includes('nism/series-v-a-sip-and-growth-calculations')
+    ? 10
+    : testId.includes('acet/mathematics-and-statistics-full-mock')
+    ? 20
+    : testId.includes('acet/mathematics-sectional')
+    ? 10
+    : testId.includes('acet/statistics-sectional')
     ? 10
     : testId.includes('full-mock')
     ? 100
@@ -1795,6 +1805,10 @@ const nismSeriesVAMutualFundDistributorsLayout = [
   { section: 'NAV and Returns Calculations', count: 10 },
   { section: 'SIP and Growth Calculations', count: 10 },
 ];
+const acetMathematicsAndStatisticsLayout = [
+  { section: 'Mathematics', count: 10 },
+  { section: 'Statistics', count: 10 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1854,7 +1868,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                       ? frmPart1QuantitativeAnalysisLayout
                                                       : testId.includes('nism/series-v-a-mutual-fund-distributors-full-mock')
                                                         ? nismSeriesVAMutualFundDistributorsLayout
-                                                        : fullMockLayouts[testId.split('/')[0]];
+                                                        : testId.includes('acet/mathematics-and-statistics-full-mock')
+                                                          ? acetMathematicsAndStatisticsLayout
+                                                          : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2173,6 +2189,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'nism': [
     NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1[0],
     NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1[10],
+  ],
+  'acet': [
+    ACET_MATHEMATICS_AND_STATISTICS_1[0],
+    ACET_MATHEMATICS_AND_STATISTICS_1[10],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

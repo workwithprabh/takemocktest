@@ -47,7 +47,8 @@ export type ExamSlug =
   | 'mcat'
   | 'oet'
   | 'frm'
-  | 'nism';
+  | 'nism'
+  | 'acet';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -160,6 +161,7 @@ const MCAT_CARS_PAGE = 'https://students-residents.aamc.org/whats-mcat-exam/crit
 const OET_READING_PART_C_PAGE = 'https://oet.com/en-us/post/reading-part-c-the-complete-guide';
 const FRM_PROGRAM_EXAMS_PAGE = 'https://www.garp.org/frm/program-exams';
 const NISM_SERIES_V_A_FAQ_PAGE = 'https://www.nism.ac.in/frequently-asked-questions-mutual-fund-distributors/';
+const ACET_EXAM_STRUCTURE_PAGE = 'https://www.actuariesindia.org/acet-exam-structure';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5147,6 +5149,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'series-v-a-mutual-fund-distributors-full-mock-1', name: 'Mutual Fund Distributors Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 24, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official exam reports a percentage score against a 50% pass mark instead.', checkedOn: '15 August 2026' },
           { id: 'series-v-a-nav-and-returns-calculations-sectional-1', name: 'NAV and Returns Calculations Sectional Test 1', kind: 'sectional', status: 'checked', section: 'NAV and Returns Calculations', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'series-v-a-sip-and-growth-calculations-sectional-1', name: 'SIP and Growth Calculations Sectional Test 1', kind: 'sectional', status: 'checked', section: 'SIP and Growth Calculations', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'acet': {
+    slug: 'acet',
+    name: 'ACET',
+    fullName: 'ACET (Actuarial Common Entrance Test)',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'mathematics-and-statistics',
+        name: 'Mathematics and Statistics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Statistics'],
+          totalQuestions: 20,
+          totalMarks: 20,
+          duration: 50,
+          negativeMarking: 0,
+          note: 'The official ACET exam has 70 4-option multiple-choice questions for 100 marks in 3 hours, with no negative marking, across five sections: Mathematics, Statistics, Data Interpretation, English, and Logical Reasoning (questions carry 1, 2, or 3 marks each). This mock currently covers the Mathematics and Statistics sections only, the two largest and most calculation-heavy in the official syllabus (algebra, calculus, permutations and combinations for Mathematics; probability, distributions, and correlation for Statistics), with every question worth 1 mark for simplicity. Data Interpretation, English, and Logical Reasoning are not yet built and may be added in a future update; unlike this site\'s other finance and science-heavy mocks, this is a coverage gap rather than a content-risk exclusion, since all five official ACET sections are calculation- or language-based rather than regulatory. This mock matches a proportional 50-minute duration estimate for its 20 questions against the official 70-question, 180-minute exam. This mock shows a raw score; the official exam reports marks toward the qualifying cutoff instead.',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 10, marks: 10 },
+            { name: 'Statistics', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single composite 50-minute timer for both sections combined: no sectional lock',
+          sourceUrl: ACET_EXAM_STRUCTURE_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'mathematics-and-statistics-full-mock-1', name: 'Mathematics and Statistics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 50, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official exam reports marks toward the qualifying cutoff instead.', checkedOn: '15 August 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 25, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'statistics-sectional-1', name: 'Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics', duration: 25, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],
