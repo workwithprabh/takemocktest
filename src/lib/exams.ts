@@ -41,7 +41,8 @@ export type ExamSlug =
   | 'ielts'
   | 'toefl'
   | 'pte'
-  | 'sat';
+  | 'sat'
+  | 'gre';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -148,6 +149,7 @@ const TOEFL_READING_PAGE = 'https://www.ets.org/toefl/test-takers/ibt/about/cont
 const PTE_READING_PAGE = 'https://www.pearsonpte.com/pte-academic/test-format/reading/';
 const SAT_STRUCTURE_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-test/structure';
 const SAT_READING_WRITING_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing';
+const GRE_QUANT_PAGE = 'https://www.ets.org/gre/test-takers/general-test/prepare/content/quantitative-reasoning.html';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -4845,6 +4847,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'math-advanced-math-sectional-1', name: 'Advanced Math Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Advanced Math', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
           { id: 'math-problem-solving-and-data-analysis-sectional-1', name: 'Problem-Solving and Data Analysis Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Problem-Solving and Data Analysis', duration: 11, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
           { id: 'math-geometry-and-trigonometry-sectional-1', name: 'Geometry and Trigonometry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Geometry and Trigonometry', duration: 11, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '14 August 2026' },
+        ],
+      },
+    ],
+  },
+  'gre': {
+    slug: 'gre',
+    name: 'GRE',
+    fullName: 'GRE General Test: Quantitative Reasoning',
+    category: 'Study Abroad',
+    stages: [
+      {
+        id: 'quantitative-reasoning',
+        name: 'Quantitative Reasoning',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Quantitative Comparison', 'Numeric Entry'],
+          totalQuestions: 20,
+          totalMarks: 20,
+          duration: 35,
+          negativeMarking: 0,
+          note: 'The official GRE Quantitative Reasoning measure has two section-adaptive sections (12 questions in 21 minutes, then 15 questions in 26 minutes, section 2\'s difficulty depending on section 1 performance), 27 questions in 47 minutes total, and mixes four question formats: Quantitative Comparison (always the same 4 fixed answer choices), Multiple Choice: Select One Answer Choice (5 answer choices), Multiple Choice: Select One or More Answer Choices, and Numeric Entry. This practice mock covers only Quantitative Comparison and Numeric Entry, the two formats that fit this site\'s multiple-choice/typed-answer engine cleanly; the 5-choice select-one and select-one-or-more formats, and Data Interpretation sets built on shared data, are not included. There is no negative marking. This mock shows your raw score; the official test reports a scaled 130-170 section score instead.',
+          sectionBreakdown: [
+            { name: 'Quantitative Comparison', questions: 12, marks: 12 },
+            { name: 'Numeric Entry', questions: 8, marks: 8 },
+          ],
+          timerNote: 'Single composite 35-minute timer for both question types combined: no sectional lock. This is a TakeMockTest-defined fixed-form timing for this narrower practice set, not a replica of the official section-adaptive timing',
+          sourceUrl: GRE_QUANT_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'quantitative-reasoning-full-mock-1', name: 'Quantitative Reasoning Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 35, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. Raw score out of 20 shown here; the official test reports a scaled 130-170 section score instead.', checkedOn: '15 August 2026' },
+          { id: 'quantitative-reasoning-quantitative-comparison-sectional-1', name: 'Quantitative Comparison Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Comparison', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'quantitative-reasoning-numeric-entry-sectional-1', name: 'Numeric Entry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numeric Entry', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],

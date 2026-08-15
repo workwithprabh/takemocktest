@@ -230,6 +230,8 @@ import { SAT_MATH_ALGEBRA_1 } from './question-banks/sat-math-algebra-1';
 import { SAT_MATH_ADVANCED_MATH_1 } from './question-banks/sat-math-advanced-math-1';
 import { SAT_MATH_PROBLEM_SOLVING_AND_DATA_ANALYSIS_1 } from './question-banks/sat-math-problem-solving-and-data-analysis-1';
 import { SAT_MATH_GEOMETRY_AND_TRIGONOMETRY_1 } from './question-banks/sat-math-geometry-and-trigonometry-1';
+import { GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1 } from './question-banks/gre-quantitative-reasoning-quantitative-comparison-1';
+import { GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1 } from './question-banks/gre-quantitative-reasoning-numeric-entry-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -730,6 +732,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sat/math-advanced-math-sectional-1': SAT_MATH_ADVANCED_MATH_1,
   'sat/math-problem-solving-and-data-analysis-sectional-1': SAT_MATH_PROBLEM_SOLVING_AND_DATA_ANALYSIS_1,
   'sat/math-geometry-and-trigonometry-sectional-1': SAT_MATH_GEOMETRY_AND_TRIGONOMETRY_1,
+  'gre/quantitative-reasoning-full-mock-1': [
+    ...GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1,
+    ...GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1,
+  ],
+  'gre/quantitative-reasoning-quantitative-comparison-sectional-1': GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1,
+  'gre/quantitative-reasoning-numeric-entry-sectional-1': GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1102,6 +1110,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 7
     : testId.includes('sat/math-geometry-and-trigonometry')
     ? 7
+    : testId.includes('gre/quantitative-reasoning-full-mock')
+    ? 20
+    : testId.includes('gre/quantitative-reasoning-quantitative-comparison')
+    ? 12
+    : testId.includes('gre/quantitative-reasoning-numeric-entry')
+    ? 8
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1621,6 +1635,10 @@ const satMathLayout = [
   { section: 'Problem-Solving and Data Analysis', count: 7 },
   { section: 'Geometry and Trigonometry', count: 7 },
 ];
+const greQuantitativeReasoningLayout = [
+  { section: 'Quantitative Comparison', count: 12 },
+  { section: 'Numeric Entry', count: 8 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1662,7 +1680,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                     ? satReadingAndWritingLayout
                                     : testId.includes('sat/math-full-mock')
                                       ? satMathLayout
-                                      : fullMockLayouts[testId.split('/')[0]];
+                                      : testId.includes('gre/quantitative-reasoning-full-mock')
+                                        ? greQuantitativeReasoningLayout
+                                        : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -1957,6 +1977,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'sat': [
     SAT_READING_AND_WRITING_CRAFT_AND_STRUCTURE_1[0],
     SAT_MATH_ALGEBRA_1[0],
+  ],
+  'gre': [
+    GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1[0],
+    GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

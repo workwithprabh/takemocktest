@@ -218,7 +218,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Admissions tests',
         exams: [
-          exam('GRE General Test', 'International'),
+          exam('GRE General Test', 'International', 'gre'),
           exam('GMAT', 'International'),
           exam('SAT', 'International', 'sat'),
           exam('ACT', 'International'),
