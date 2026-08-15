@@ -49,7 +49,8 @@ export type ExamSlug =
   | 'frm'
   | 'nism'
   | 'acet'
-  | 'ca-foundation';
+  | 'ca-foundation'
+  | 'cma-foundation';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -164,6 +165,7 @@ const FRM_PROGRAM_EXAMS_PAGE = 'https://www.garp.org/frm/program-exams';
 const NISM_SERIES_V_A_FAQ_PAGE = 'https://www.nism.ac.in/frequently-asked-questions-mutual-fund-distributors/';
 const ACET_EXAM_STRUCTURE_PAGE = 'https://www.actuariesindia.org/acet-exam-structure';
 const CA_FOUNDATION_PAPER3_SYLLABUS_PAGE = 'https://www.icai.org/post/sm-foundation-p3-may2026';
+const CMA_FOUNDATION_STUDY_MATERIALS_PAGE = 'https://icmai.in/ClntStudents/Foundation_Study_Materials';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5221,6 +5223,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'business-mathematics-sectional-1', name: 'Business Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Business Mathematics', duration: 14, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '15 August 2026' },
           { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 7, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '15 August 2026' },
           { id: 'statistics-sectional-1', name: 'Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics', duration: 14, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'cma-foundation': {
+    slug: 'cma-foundation',
+    name: 'CMA Foundation',
+    fullName: 'CMA Foundation (Paper 3: Business Mathematics and Statistics)',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'business-mathematics-and-statistics',
+        name: 'Business Mathematics and Statistics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Business Mathematics', 'Statistics'],
+          totalQuestions: 30,
+          totalMarks: 30,
+          duration: 36,
+          negativeMarking: 0,
+          note: 'The official ICMAI CMA Foundation Paper 3 (Fundamentals of Business Mathematics and Statistics) has 50 objective-type questions for 100 marks in 1 hour, with no negative marking, weighted roughly 40% Business Mathematics (Arithmetic, Algebra, Calculus) and 60% Statistics (data representation, central tendency and dispersion, correlation and regression, probability, index numbers and time series). This mock is a TakeMockTest-defined shorter set: 30 questions in 36 minutes across the same two sections in the same 40:60 proportion. Paper 1 (Fundamentals of Business Laws and Business Communication), Paper 2 (Fundamentals of Financial and Cost Accounting), and Paper 4 (Fundamentals of Business Economics and Management) are not covered here since they lean on legal, accounting-standard, economics, or management facts that carry higher correctness risk for self-authored content than pure calculation.',
+          sectionBreakdown: [
+            { name: 'Business Mathematics', questions: 12, marks: 12 },
+            { name: 'Statistics', questions: 18, marks: 18 },
+          ],
+          timerNote: 'Single composite 36-minute timer for both sections combined: no sectional lock',
+          sourceUrl: CMA_FOUNDATION_STUDY_MATERIALS_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'business-mathematics-and-statistics-full-mock-1', name: 'Business Mathematics and Statistics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 36, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official Paper 3 scheme. Raw score out of 30 shown here; the official paper is out of 100.', checkedOn: '15 August 2026' },
+          { id: 'business-mathematics-sectional-1', name: 'Business Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Business Mathematics', duration: 14, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+          { id: 'statistics-sectional-1', name: 'Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics', duration: 22, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
         ],
       },
     ],

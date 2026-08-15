@@ -251,6 +251,7 @@ import { FRM_PART_1_QUANTITATIVE_ANALYSIS_1 } from './question-banks/frm-part-1-
 import { NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1 } from './question-banks/nism-series-v-a-mutual-fund-distributors-combined-1';
 import { ACET_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/acet-mathematics-and-statistics-combined-1';
 import { CA_FOUNDATION_QUANTITATIVE_APTITUDE_1 } from './question-banks/ca-foundation-quantitative-aptitude-combined-1';
+import { CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/cma-foundation-business-mathematics-and-statistics-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -811,6 +812,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ca-foundation/business-mathematics-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Business Mathematics'),
   'ca-foundation/logical-reasoning-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Logical Reasoning'),
   'ca-foundation/statistics-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Statistics'),
+  'cma-foundation/business-mathematics-and-statistics-full-mock-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1,
+  'cma-foundation/business-mathematics-sectional-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Business Mathematics'),
+  'cma-foundation/statistics-sectional-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Statistics'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1259,6 +1263,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 6
     : testId.includes('ca-foundation/statistics-sectional')
     ? 12
+    : testId.includes('cma-foundation/business-mathematics-and-statistics-full-mock')
+    ? 30
+    : testId.includes('cma-foundation/business-mathematics-sectional')
+    ? 12
+    : testId.includes('cma-foundation/statistics-sectional')
+    ? 18
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1827,6 +1837,10 @@ const caFoundationQuantitativeAptitudeLayout = [
   { section: 'Logical Reasoning', count: 6 },
   { section: 'Statistics', count: 12 },
 ];
+const cmaFoundationBusinessMathematicsAndStatisticsLayout = [
+  { section: 'Business Mathematics', count: 12 },
+  { section: 'Statistics', count: 18 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1890,7 +1904,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                           ? acetMathematicsAndStatisticsLayout
                                                           : testId.includes('ca-foundation/quantitative-aptitude-full-mock')
                                                             ? caFoundationQuantitativeAptitudeLayout
-                                                            : fullMockLayouts[testId.split('/')[0]];
+                                                            : testId.includes('cma-foundation/business-mathematics-and-statistics-full-mock')
+                                                              ? cmaFoundationBusinessMathematicsAndStatisticsLayout
+                                                              : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2217,6 +2233,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'ca-foundation': [
     CA_FOUNDATION_QUANTITATIVE_APTITUDE_1[0],
     CA_FOUNDATION_QUANTITATIVE_APTITUDE_1[18],
+  ],
+  'cma-foundation': [
+    CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1[0],
+    CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1[12],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
