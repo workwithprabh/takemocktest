@@ -50,7 +50,8 @@ export type ExamSlug =
   | 'nism'
   | 'acet'
   | 'ca-foundation'
-  | 'cma-foundation';
+  | 'cma-foundation'
+  | 'nda';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -101,7 +102,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence';
   stages: TestStage[];
 }
 
@@ -166,6 +167,7 @@ const NISM_SERIES_V_A_FAQ_PAGE = 'https://www.nism.ac.in/frequently-asked-questi
 const ACET_EXAM_STRUCTURE_PAGE = 'https://www.actuariesindia.org/acet-exam-structure';
 const CA_FOUNDATION_PAPER3_SYLLABUS_PAGE = 'https://www.icai.org/post/sm-foundation-p3-may2026';
 const CMA_FOUNDATION_STUDY_MATERIALS_PAGE = 'https://icmai.in/ClntStudents/Foundation_Study_Materials';
+const NDA_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5257,6 +5259,68 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'business-mathematics-and-statistics-full-mock-1', name: 'Business Mathematics and Statistics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 36, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official Paper 3 scheme. Raw score out of 30 shown here; the official paper is out of 100.', checkedOn: '15 August 2026' },
           { id: 'business-mathematics-sectional-1', name: 'Business Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Business Mathematics', duration: 14, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'statistics-sectional-1', name: 'Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics', duration: 22, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nda': {
+    slug: 'nda',
+    name: 'NDA',
+    fullName: 'NDA (National Defence Academy and Naval Academy Examination)',
+    category: 'Defence',
+    stages: [
+      {
+        id: 'mathematics',
+        name: 'Mathematics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Algebra and Trigonometry', 'Calculus and Vectors', 'Geometry, Statistics and Probability'],
+          totalQuestions: 18,
+          totalMarks: 45,
+          duration: 23,
+          negativeMarking: 0.83,
+          note: 'The official UPSC NDA Mathematics paper has 120 questions for 300 marks in 2 hours 30 minutes, each question carrying 2.5 marks with one-third (0.83) deducted per wrong answer. This mock is a TakeMockTest-defined shorter set: 18 questions in 23 minutes across the same syllabus areas in proportion.',
+          sectionBreakdown: [
+            { name: 'Algebra and Trigonometry', questions: 6, marks: 15 },
+            { name: 'Calculus and Vectors', questions: 6, marks: 15 },
+            { name: 'Geometry, Statistics and Probability', questions: 6, marks: 15 },
+          ],
+          timerNote: 'Single composite 23-minute timer for all three sections combined: no sectional lock',
+          sourceUrl: NDA_EXAMINATION_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'mathematics-full-mock-1', name: 'Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 23, marksPerCorrect: 2.5, negativeMarking: 0.83, scoringNote: 'One-third (0.83) of the 2.5 marks deducted per wrong answer, matching the official Mathematics paper scheme. Raw score out of 45 shown here; the official paper is out of 300.', checkedOn: '15 August 2026' },
+          { id: 'algebra-and-trigonometry-sectional-1', name: 'Algebra and Trigonometry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Algebra and Trigonometry', duration: 8, marksPerCorrect: 2.5, negativeMarking: 0.83, checkedOn: '15 August 2026' },
+          { id: 'calculus-and-vectors-sectional-1', name: 'Calculus and Vectors Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Calculus and Vectors', duration: 8, marksPerCorrect: 2.5, negativeMarking: 0.83, checkedOn: '15 August 2026' },
+          { id: 'geometry-statistics-and-probability-sectional-1', name: 'Geometry, Statistics and Probability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Geometry, Statistics and Probability', duration: 7, marksPerCorrect: 2.5, negativeMarking: 0.83, checkedOn: '15 August 2026' },
+        ],
+      },
+      {
+        id: 'general-ability-test-english',
+        name: 'General Ability Test: English',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Grammar and Usage', 'Vocabulary and Comprehension'],
+          totalQuestions: 12,
+          totalMarks: 48,
+          duration: 12,
+          negativeMarking: 1.33,
+          note: 'The official UPSC NDA General Ability Test (GAT) has 150 questions for 600 marks in 2 hours 30 minutes, split into English (50 questions, 200 marks) and General Knowledge (100 questions, 400 marks covering Physics, Chemistry, General Science, History, Geography, and Current Events), each question carrying 4 marks with one-third (1.33) deducted per wrong answer. This mock covers the English portion only, a TakeMockTest-defined shorter set: 12 questions in 12 minutes across grammar, usage, vocabulary, and comprehension. General Knowledge is not covered, since it depends on science and current-affairs facts that carry higher correctness risk for self-authored content.',
+          sectionBreakdown: [
+            { name: 'Grammar and Usage', questions: 6, marks: 24 },
+            { name: 'Vocabulary and Comprehension', questions: 6, marks: 24 },
+          ],
+          timerNote: 'Single composite 12-minute timer for both sections combined: no sectional lock',
+          sourceUrl: NDA_EXAMINATION_PAGE,
+          checkedOn: '15 August 2026',
+        },
+        tests: [
+          { id: 'general-ability-test-english-full-mock-1', name: 'General Ability Test: English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 12, marksPerCorrect: 4, negativeMarking: 1.33, scoringNote: 'One-third (1.33) of the 4 marks deducted per wrong answer, matching the official GAT scheme. Raw score out of 48 shown here; the official English portion is out of 200 (within a 600-mark GAT paper that also covers General Knowledge, not included here).', checkedOn: '15 August 2026' },
+          { id: 'grammar-and-usage-sectional-1', name: 'Grammar and Usage Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Grammar and Usage', duration: 6, marksPerCorrect: 4, negativeMarking: 1.33, checkedOn: '15 August 2026' },
+          { id: 'vocabulary-and-comprehension-sectional-1', name: 'Vocabulary and Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Vocabulary and Comprehension', duration: 6, marksPerCorrect: 4, negativeMarking: 1.33, checkedOn: '15 August 2026' },
         ],
       },
     ],

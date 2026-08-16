@@ -77,6 +77,15 @@ const CATEGORY_STYLES = {
       </svg>
     ),
   },
+  Defence: {
+    surface: 'bg-[#E6EFE0]',
+    iconText: 'text-[#3D6B35]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Zm0 4 4.5 2v3c0 3-1.9 5-4.5 5.5C9.4 17 7.5 15 7.5 12V9L12 7Z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
+  },
 } as const;
 
 export default function ExamCard({ exam, country }: { exam: ExamConfig; country: string }) {

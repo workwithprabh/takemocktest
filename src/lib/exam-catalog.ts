@@ -330,7 +330,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Officer entry',
         exams: [
-          exam('UPSC NDA & Naval Academy', 'National'),
+          exam('UPSC NDA & Naval Academy', 'National', 'nda'),
           exam('UPSC Combined Defence Services', 'National'),
           exam('UPSC CAPF Assistant Commandant', 'National'),
           exam('AFCAT', 'National'),

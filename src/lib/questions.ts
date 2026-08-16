@@ -252,6 +252,8 @@ import { NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1 } from './question-banks/nis
 import { ACET_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/acet-mathematics-and-statistics-combined-1';
 import { CA_FOUNDATION_QUANTITATIVE_APTITUDE_1 } from './question-banks/ca-foundation-quantitative-aptitude-combined-1';
 import { CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/cma-foundation-business-mathematics-and-statistics-combined-1';
+import { NDA_MATHEMATICS_1 } from './question-banks/nda-mathematics-combined-1';
+import { NDA_GENERAL_ABILITY_TEST_ENGLISH_1 } from './question-banks/nda-general-ability-test-english-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -815,6 +817,13 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'cma-foundation/business-mathematics-and-statistics-full-mock-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1,
   'cma-foundation/business-mathematics-sectional-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Business Mathematics'),
   'cma-foundation/statistics-sectional-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Statistics'),
+  'nda/mathematics-full-mock-1': NDA_MATHEMATICS_1,
+  'nda/algebra-and-trigonometry-sectional-1': NDA_MATHEMATICS_1.filter((question) => question.section === 'Algebra and Trigonometry'),
+  'nda/calculus-and-vectors-sectional-1': NDA_MATHEMATICS_1.filter((question) => question.section === 'Calculus and Vectors'),
+  'nda/geometry-statistics-and-probability-sectional-1': NDA_MATHEMATICS_1.filter((question) => question.section === 'Geometry, Statistics and Probability'),
+  'nda/general-ability-test-english-full-mock-1': NDA_GENERAL_ABILITY_TEST_ENGLISH_1,
+  'nda/grammar-and-usage-sectional-1': NDA_GENERAL_ABILITY_TEST_ENGLISH_1.filter((question) => question.section === 'Grammar and Usage'),
+  'nda/vocabulary-and-comprehension-sectional-1': NDA_GENERAL_ABILITY_TEST_ENGLISH_1.filter((question) => question.section === 'Vocabulary and Comprehension'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1269,6 +1278,20 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 12
     : testId.includes('cma-foundation/statistics-sectional')
     ? 18
+    : testId.includes('nda/mathematics-full-mock')
+    ? 18
+    : testId.includes('nda/algebra-and-trigonometry-sectional')
+    ? 6
+    : testId.includes('nda/calculus-and-vectors-sectional')
+    ? 6
+    : testId.includes('nda/geometry-statistics-and-probability-sectional')
+    ? 6
+    : testId.includes('nda/general-ability-test-english-full-mock')
+    ? 12
+    : testId.includes('nda/grammar-and-usage-sectional')
+    ? 6
+    : testId.includes('nda/vocabulary-and-comprehension-sectional')
+    ? 6
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1841,6 +1864,15 @@ const cmaFoundationBusinessMathematicsAndStatisticsLayout = [
   { section: 'Business Mathematics', count: 12 },
   { section: 'Statistics', count: 18 },
 ];
+const ndaMathematicsLayout = [
+  { section: 'Algebra and Trigonometry', count: 6 },
+  { section: 'Calculus and Vectors', count: 6 },
+  { section: 'Geometry, Statistics and Probability', count: 6 },
+];
+const ndaGeneralAbilityTestEnglishLayout = [
+  { section: 'Grammar and Usage', count: 6 },
+  { section: 'Vocabulary and Comprehension', count: 6 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1906,7 +1938,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                             ? caFoundationQuantitativeAptitudeLayout
                                                             : testId.includes('cma-foundation/business-mathematics-and-statistics-full-mock')
                                                               ? cmaFoundationBusinessMathematicsAndStatisticsLayout
-                                                              : fullMockLayouts[testId.split('/')[0]];
+                                                              : testId.includes('nda/mathematics-full-mock')
+                                                                ? ndaMathematicsLayout
+                                                                : testId.includes('nda/general-ability-test-english-full-mock')
+                                                                  ? ndaGeneralAbilityTestEnglishLayout
+                                                                  : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2237,6 +2273,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'cma-foundation': [
     CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1[0],
     CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1[12],
+  ],
+  'nda': [
+    NDA_MATHEMATICS_1[0],
+    NDA_GENERAL_ABILITY_TEST_ENGLISH_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
