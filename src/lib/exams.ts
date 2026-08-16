@@ -55,7 +55,9 @@ export type ExamSlug =
   | 'cds'
   | 'afcat'
   | 'territorial-army'
-  | 'inet';
+  | 'inet'
+  | 'agniveer-vayu'
+  | 'navy-ssr';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -176,6 +178,8 @@ const CDS_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/Combined%20Defenc
 const AFCAT_OFFICIAL_PAGE = 'https://afcat.cdac.in/';
 const TERRITORIAL_ARMY_OFFICIAL_PAGE = 'https://territorialarmy.in/page/5';
 const INET_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
+const AGNIVEER_VAYU_OFFICIAL_PAGE = 'https://agnipathvayu.cdac.in/';
+const NAVY_SSR_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5495,6 +5499,74 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-and-reasoning-numerical-ability-full-mock-1', name: 'English and Reasoning & Numerical Ability Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 29, marksPerCorrect: 4, negativeMarking: 1, scoringNote: '1 mark deducted per wrong answer, matching the official INET scheme. Raw score out of 96 shown here; the official exam is out of 400 across all four sections.', checkedOn: '16 August 2026' },
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 14, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
           { id: 'reasoning-and-numerical-ability-sectional-1', name: 'Reasoning and Numerical Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning and Numerical Ability', duration: 15, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'agniveer-vayu': {
+    slug: 'agniveer-vayu',
+    name: 'Agniveer Vayu',
+    fullName: 'Indian Air Force Agniveer Vayu',
+    category: 'Defence',
+    stages: [
+      {
+        id: 'english-and-mathematics',
+        name: 'English and Mathematics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English', 'Mathematics'],
+          totalQuestions: 27,
+          totalMarks: 27,
+          duration: 23,
+          negativeMarking: 0.25,
+          note: 'The official Agniveer Vayu written test (for candidates opting into both the Science and Other than Science streams) has 100 questions for 100 marks in 85 minutes, 1 mark per correct answer and 0.25 marks deducted per wrong answer: English (20 questions), Physics (25 questions), Mathematics (25 questions), and Reasoning and General Awareness or RAGA (30 questions). This mock covers English and Mathematics only, in the same proportion: 27 questions (12 English, 15 Mathematics) in 23 minutes. Physics is not covered, since it depends on scientific facts and formulas that carry higher correctness risk for self-authored content. Reasoning and General Awareness is excluded outright, since the Air Force officially bundles logic-based Reasoning together with General Awareness facts as a single RAGA section with no published internal question-count split, so the two cannot be honestly separated.',
+          sectionBreakdown: [
+            { name: 'English', questions: 12, marks: 12 },
+            { name: 'Mathematics', questions: 15, marks: 15 },
+          ],
+          timerNote: 'Single composite 23-minute timer for both sections combined: no sectional lock, matching the official test\'s single continuous session',
+          sourceUrl: AGNIVEER_VAYU_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'english-and-mathematics-full-mock-1', name: 'English and Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 23, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: '0.25 marks deducted per wrong answer, matching the official Agniveer Vayu scheme. Raw score out of 27 shown here; the official exam is out of 100 across all four sections.', checkedOn: '16 August 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 13, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'navy-ssr': {
+    slug: 'navy-ssr',
+    name: 'Navy SSR',
+    fullName: 'Indian Navy Agniveer SSR',
+    category: 'Defence',
+    stages: [
+      {
+        id: 'english-and-mathematics',
+        name: 'English and Mathematics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English', 'Mathematics'],
+          totalQuestions: 24,
+          totalMarks: 24,
+          duration: 14,
+          negativeMarking: 0.25,
+          note: 'The official Indian Navy Agniveer SSR written test has 100 questions for 100 marks in 60 minutes, 1 mark per correct answer and 0.25 marks deducted per wrong answer, across four equal sections of 25 questions each: Science, Mathematics, English, and General Knowledge. This mock covers English and Mathematics only, in the same equal proportion: 24 questions (12 each) in 14 minutes. Science and General Knowledge are excluded, since both depend on facts that carry higher correctness risk for self-authored content. This mock is scoped to the SSR (Senior Secondary Recruit) pattern specifically. The separate MR (Matric Recruit) track has a shorter, differently structured test and is not covered here.',
+          sectionBreakdown: [
+            { name: 'English', questions: 12, marks: 12 },
+            { name: 'Mathematics', questions: 12, marks: 12 },
+          ],
+          timerNote: 'Single composite 14-minute timer for both sections combined: no sectional lock, matching the official test\'s single continuous session',
+          sourceUrl: NAVY_SSR_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'english-and-mathematics-full-mock-1', name: 'English and Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 14, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: '0.25 marks deducted per wrong answer, matching the official Navy SSR scheme. Raw score out of 24 shown here; the official exam is out of 100 across all four sections.', checkedOn: '16 August 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 7, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 7, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
         ],
       },
     ],

@@ -342,8 +342,8 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         name: 'Agniveer & other entries',
         exams: [
           exam('Indian Army Agniveer Common Entrance Examination', 'National'),
-          exam('Indian Navy Agniveer SSR & MR', 'National'),
-          exam('Indian Air Force Agniveervayu', 'National'),
+          exam('Indian Navy Agniveer SSR & MR', 'National', 'navy-ssr'),
+          exam('Indian Air Force Agniveervayu', 'National', 'agniveer-vayu'),
           exam('Indian Coast Guard CGEPT', 'National'),
         ],
       },

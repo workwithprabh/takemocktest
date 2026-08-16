@@ -259,6 +259,8 @@ import { CDS_ENGLISH_1 } from './question-banks/cds-english-combined-1';
 import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_1 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-1';
 import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1 } from './question-banks/territorial-army-reasoning-and-english-combined-1';
 import { INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1 } from './question-banks/inet-english-and-reasoning-numerical-ability-combined-1';
+import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/agniveer-vayu-english-and-mathematics-combined-1';
+import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/navy-ssr-english-and-mathematics-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -846,6 +848,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'inet/english-and-reasoning-numerical-ability-full-mock-1': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1,
   'inet/english-sectional-1': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1.filter((question) => question.section === 'English'),
   'inet/reasoning-and-numerical-ability-sectional-1': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1.filter((question) => question.section === 'Reasoning and Numerical Ability'),
+  'agniveer-vayu/english-and-mathematics-full-mock-1': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1,
+  'agniveer-vayu/english-sectional-1': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'English'),
+  'agniveer-vayu/mathematics-sectional-1': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'Mathematics'),
+  'navy-ssr/english-and-mathematics-full-mock-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1,
+  'navy-ssr/english-sectional-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'English'),
+  'navy-ssr/mathematics-sectional-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'Mathematics'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1347,6 +1355,18 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('inet/english-sectional')
     ? 12
     : testId.includes('inet/reasoning-and-numerical-ability-sectional')
+    ? 12
+    : testId.includes('agniveer-vayu/english-and-mathematics-full-mock')
+    ? 27
+    : testId.includes('agniveer-vayu/english-sectional')
+    ? 12
+    : testId.includes('agniveer-vayu/mathematics-sectional')
+    ? 15
+    : testId.includes('navy-ssr/english-and-mathematics-full-mock')
+    ? 24
+    : testId.includes('navy-ssr/english-sectional')
+    ? 12
+    : testId.includes('navy-ssr/mathematics-sectional')
     ? 12
     : testId.includes('full-mock')
     ? 100
@@ -1951,6 +1971,14 @@ const inetEnglishAndReasoningNumericalAbilityLayout = [
   { section: 'English', count: 12 },
   { section: 'Reasoning and Numerical Ability', count: 12 },
 ];
+const agniveerVayuEnglishAndMathematicsLayout = [
+  { section: 'English', count: 12 },
+  { section: 'Mathematics', count: 15 },
+];
+const navySsrEnglishAndMathematicsLayout = [
+  { section: 'English', count: 12 },
+  { section: 'Mathematics', count: 12 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -2030,7 +2058,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                           ? territorialArmyReasoningAndEnglishLayout
                                                                           : testId.includes('inet/english-and-reasoning-numerical-ability-full-mock')
                                                                             ? inetEnglishAndReasoningNumericalAbilityLayout
-                                                                            : fullMockLayouts[testId.split('/')[0]];
+                                                                            : testId.includes('agniveer-vayu/english-and-mathematics-full-mock')
+                                                                              ? agniveerVayuEnglishAndMathematicsLayout
+                                                                              : testId.includes('navy-ssr/english-and-mathematics-full-mock')
+                                                                                ? navySsrEnglishAndMathematicsLayout
+                                                                                : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2381,6 +2413,14 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'inet': [
     INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1[0],
     INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1[12],
+  ],
+  'agniveer-vayu': [
+    AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1[0],
+    AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1[12],
+  ],
+  'navy-ssr': [
+    NAVY_SSR_ENGLISH_AND_MATHEMATICS_1[0],
+    NAVY_SSR_ENGLISH_AND_MATHEMATICS_1[12],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
