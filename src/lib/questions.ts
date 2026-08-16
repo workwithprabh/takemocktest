@@ -261,6 +261,7 @@ import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1 } from './question-banks/terri
 import { INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1 } from './question-banks/inet-english-and-reasoning-numerical-ability-combined-1';
 import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/agniveer-vayu-english-and-mathematics-combined-1';
 import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/navy-ssr-english-and-mathematics-combined-1';
+import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1 } from './question-banks/clat-english-legal-logical-quantitative-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -854,6 +855,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'navy-ssr/english-and-mathematics-full-mock-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1,
   'navy-ssr/english-sectional-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'English'),
   'navy-ssr/mathematics-sectional-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'Mathematics'),
+  'clat/english-legal-logical-quantitative-full-mock-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1,
+  'clat/english-language-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'English Language'),
+  'clat/legal-reasoning-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Legal Reasoning'),
+  'clat/logical-reasoning-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Logical Reasoning'),
+  'clat/quantitative-techniques-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Quantitative Techniques'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1368,6 +1374,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 12
     : testId.includes('navy-ssr/mathematics-sectional')
     ? 12
+    : testId.includes('clat/english-legal-logical-quantitative-full-mock')
+    ? 30
+    : testId.includes('clat/english-language-sectional')
+    ? 8
+    : testId.includes('clat/legal-reasoning-sectional')
+    ? 10
+    : testId.includes('clat/logical-reasoning-sectional')
+    ? 8
+    : testId.includes('clat/quantitative-techniques-sectional')
+    ? 4
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1979,6 +1995,12 @@ const navySsrEnglishAndMathematicsLayout = [
   { section: 'English', count: 12 },
   { section: 'Mathematics', count: 12 },
 ];
+const clatEnglishLegalLogicalQuantitativeLayout = [
+  { section: 'English Language', count: 8 },
+  { section: 'Legal Reasoning', count: 10 },
+  { section: 'Logical Reasoning', count: 8 },
+  { section: 'Quantitative Techniques', count: 4 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -2062,7 +2084,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                               ? agniveerVayuEnglishAndMathematicsLayout
                                                                               : testId.includes('navy-ssr/english-and-mathematics-full-mock')
                                                                                 ? navySsrEnglishAndMathematicsLayout
-                                                                                : fullMockLayouts[testId.split('/')[0]];
+                                                                                : testId.includes('clat/english-legal-logical-quantitative-full-mock')
+                                                                                  ? clatEnglishLegalLogicalQuantitativeLayout
+                                                                                  : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2421,6 +2445,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'navy-ssr': [
     NAVY_SSR_ENGLISH_AND_MATHEMATICS_1[0],
     NAVY_SSR_ENGLISH_AND_MATHEMATICS_1[12],
+  ],
+  'clat': [
+    CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[0],
+    CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[8],
+    CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[18],
+    CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[26],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

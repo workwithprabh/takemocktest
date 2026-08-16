@@ -364,7 +364,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Law admissions',
         exams: [
-          exam('CLAT UG', 'National'),
+          exam('CLAT UG', 'National', 'clat'),
           exam('CLAT PG', 'National'),
           exam('AILET UG', 'Institute'),
           exam('AILET PG', 'Institute'),

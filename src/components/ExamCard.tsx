@@ -86,6 +86,15 @@ const CATEGORY_STYLES = {
       </svg>
     ),
   },
+  Law: {
+    surface: 'bg-[#F3E8DC]',
+    iconText: 'text-[#8B5A2B]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M12 3v18M6 21h12M12 6 5 9l2.5 6h-5L5 9m7-3 7 3-2.5 6h5L19 9m-7-3v3" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
+  },
 } as const;
 
 export default function ExamCard({ exam, country }: { exam: ExamConfig; country: string }) {

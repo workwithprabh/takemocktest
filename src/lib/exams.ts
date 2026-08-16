@@ -57,7 +57,8 @@ export type ExamSlug =
   | 'territorial-army'
   | 'inet'
   | 'agniveer-vayu'
-  | 'navy-ssr';
+  | 'navy-ssr'
+  | 'clat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -108,7 +109,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence' | 'Law';
   stages: TestStage[];
 }
 
@@ -180,6 +181,7 @@ const TERRITORIAL_ARMY_OFFICIAL_PAGE = 'https://territorialarmy.in/page/5';
 const INET_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
 const AGNIVEER_VAYU_OFFICIAL_PAGE = 'https://agnipathvayu.cdac.in/';
 const NAVY_SSR_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
+const CLAT_OFFICIAL_PAGE = 'https://consortiumofnlus.ac.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5567,6 +5569,44 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-and-mathematics-full-mock-1', name: 'English and Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 14, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: '0.25 marks deducted per wrong answer, matching the official Navy SSR scheme. Raw score out of 24 shown here; the official exam is out of 100 across all four sections.', checkedOn: '16 August 2026' },
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 7, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
           { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 7, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'clat': {
+    slug: 'clat',
+    name: 'CLAT',
+    fullName: 'CLAT (Common Law Admission Test)',
+    category: 'Law',
+    stages: [
+      {
+        id: 'english-legal-logical-quantitative',
+        name: 'English, Legal Reasoning, Logical Reasoning and Quantitative Techniques',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English Language', 'Legal Reasoning', 'Logical Reasoning', 'Quantitative Techniques'],
+          totalQuestions: 30,
+          totalMarks: 30,
+          duration: 30,
+          negativeMarking: 0.25,
+          note: 'The official CLAT UG written test has 120 questions for 120 marks in 2 hours, 1 mark per correct answer and 0.25 marks deducted per wrong answer, across five sections: English Language (24 questions), Current Affairs and General Knowledge (28 questions), Legal Reasoning (30 questions), Logical Reasoning (26 questions), and Quantitative Techniques (12 questions). This mock covers English Language, Legal Reasoning, Logical Reasoning, and Quantitative Techniques, in close to the same proportion: 30 questions (8 English, 10 Legal Reasoning, 8 Logical Reasoning, 4 Quantitative Techniques) in 30 minutes. Every Legal Reasoning question here states its own legal principle and facts in the passage, so it can be answered from the passage alone, with no prior knowledge of law required, matching the official CLAT format. Current Affairs and General Knowledge is not covered, since it depends on facts that carry higher correctness risk for self-authored content.',
+          sectionBreakdown: [
+            { name: 'English Language', questions: 8, marks: 8 },
+            { name: 'Legal Reasoning', questions: 10, marks: 10 },
+            { name: 'Logical Reasoning', questions: 8, marks: 8 },
+            { name: 'Quantitative Techniques', questions: 4, marks: 4 },
+          ],
+          timerNote: 'Single composite 30-minute timer for all four sections combined: no sectional lock, matching the official test\'s single continuous session',
+          sourceUrl: CLAT_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'english-legal-logical-quantitative-full-mock-1', name: 'English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 30, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: '0.25 marks deducted per wrong answer, matching the official CLAT scheme. Raw score out of 30 shown here; the official exam is out of 120 across all five sections.', checkedOn: '16 August 2026' },
+          { id: 'english-language-sectional-1', name: 'English Language Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Language', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'legal-reasoning-sectional-1', name: 'Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Reasoning', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'quantitative-techniques-sectional-1', name: 'Quantitative Techniques Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Techniques', duration: 4, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
         ],
       },
     ],
