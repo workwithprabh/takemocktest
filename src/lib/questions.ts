@@ -262,6 +262,7 @@ import { INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1 } from './question-banks
 import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/agniveer-vayu-english-and-mathematics-combined-1';
 import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/navy-ssr-english-and-mathematics-combined-1';
 import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1 } from './question-banks/clat-english-legal-logical-quantitative-combined-1';
+import { AILET_ENGLISH_AND_LOGICAL_REASONING_1 } from './question-banks/ailet-english-and-logical-reasoning-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -860,6 +861,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'clat/legal-reasoning-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Legal Reasoning'),
   'clat/logical-reasoning-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Logical Reasoning'),
   'clat/quantitative-techniques-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Quantitative Techniques'),
+  'ailet/english-and-logical-reasoning-full-mock-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1,
+  'ailet/english-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'English'),
+  'ailet/logical-reasoning-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'Logical Reasoning'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1384,6 +1388,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 8
     : testId.includes('clat/quantitative-techniques-sectional')
     ? 4
+    : testId.includes('ailet/english-and-logical-reasoning-full-mock')
+    ? 24
+    : testId.includes('ailet/english-sectional')
+    ? 10
+    : testId.includes('ailet/logical-reasoning-sectional')
+    ? 14
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2001,6 +2011,10 @@ const clatEnglishLegalLogicalQuantitativeLayout = [
   { section: 'Logical Reasoning', count: 8 },
   { section: 'Quantitative Techniques', count: 4 },
 ];
+const ailetEnglishAndLogicalReasoningLayout = [
+  { section: 'English', count: 10 },
+  { section: 'Logical Reasoning', count: 14 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -2086,7 +2100,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                 ? navySsrEnglishAndMathematicsLayout
                                                                                 : testId.includes('clat/english-legal-logical-quantitative-full-mock')
                                                                                   ? clatEnglishLegalLogicalQuantitativeLayout
-                                                                                  : fullMockLayouts[testId.split('/')[0]];
+                                                                                  : testId.includes('ailet/english-and-logical-reasoning-full-mock')
+                                                                                    ? ailetEnglishAndLogicalReasoningLayout
+                                                                                    : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2451,6 +2467,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[8],
     CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[18],
     CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[26],
+  ],
+  'ailet': [
+    AILET_ENGLISH_AND_LOGICAL_REASONING_1[0],
+    AILET_ENGLISH_AND_LOGICAL_REASONING_1[10],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

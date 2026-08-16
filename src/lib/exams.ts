@@ -58,7 +58,8 @@ export type ExamSlug =
   | 'inet'
   | 'agniveer-vayu'
   | 'navy-ssr'
-  | 'clat';
+  | 'clat'
+  | 'ailet';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -182,6 +183,7 @@ const INET_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-
 const AGNIVEER_VAYU_OFFICIAL_PAGE = 'https://agnipathvayu.cdac.in/';
 const NAVY_SSR_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
 const CLAT_OFFICIAL_PAGE = 'https://consortiumofnlus.ac.in/';
+const AILET_OFFICIAL_PAGE = 'https://nationallawuniversitydelhi.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5607,6 +5609,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'legal-reasoning-sectional-1', name: 'Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Reasoning', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
           { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
           { id: 'quantitative-techniques-sectional-1', name: 'Quantitative Techniques Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Techniques', duration: 4, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ailet': {
+    slug: 'ailet',
+    name: 'AILET',
+    fullName: 'AILET (All India Law Entrance Test)',
+    category: 'Law',
+    stages: [
+      {
+        id: 'english-and-logical-reasoning',
+        name: 'English and Logical Reasoning',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English', 'Logical Reasoning'],
+          totalQuestions: 24,
+          totalMarks: 24,
+          duration: 19,
+          negativeMarking: 0.25,
+          note: 'The official AILET UG written test has 150 questions for 150 marks in 2 hours, 1 mark per correct answer and 0.25 marks deducted per wrong answer, across three sections: English Language (50 questions), Logical Reasoning (70 questions), and Current Affairs and General Knowledge (30 questions). This mock covers English and Logical Reasoning only, in the same 5:7 proportion as the official exam: 24 questions (10 English, 14 Logical Reasoning) in 19 minutes. Current Affairs and General Knowledge is not covered, since it depends on facts that carry higher correctness risk for self-authored content.',
+          sectionBreakdown: [
+            { name: 'English', questions: 10, marks: 10 },
+            { name: 'Logical Reasoning', questions: 14, marks: 14 },
+          ],
+          timerNote: 'Single composite 19-minute timer for both sections combined: no sectional lock, matching the official test\'s single continuous session',
+          sourceUrl: AILET_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'english-and-logical-reasoning-full-mock-1', name: 'English and Logical Reasoning Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 19, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: '0.25 marks deducted per wrong answer, matching the official AILET scheme. Raw score out of 24 shown here; the official exam is out of 150 across all three sections.', checkedOn: '16 August 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 11, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
         ],
       },
     ],
