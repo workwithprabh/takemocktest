@@ -53,7 +53,8 @@ export type ExamSlug =
   | 'cma-foundation'
   | 'nda'
   | 'cds'
-  | 'afcat';
+  | 'afcat'
+  | 'territorial-army';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -172,6 +173,7 @@ const CMA_FOUNDATION_STUDY_MATERIALS_PAGE = 'https://icmai.in/ClntStudents/Found
 const NDA_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination';
 const CDS_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination';
 const AFCAT_OFFICIAL_PAGE = 'https://afcat.cdac.in/';
+const TERRITORIAL_ARMY_OFFICIAL_PAGE = 'https://territorialarmy.in/page/5';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5423,6 +5425,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'verbal-ability-sectional-1', name: 'Verbal Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability', duration: 10, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
           { id: 'numerical-ability-sectional-1', name: 'Numerical Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numerical Ability', duration: 10, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
           { id: 'reasoning-and-military-aptitude-sectional-1', name: 'Reasoning and Military Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning and Military Aptitude', duration: 9, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'territorial-army': {
+    slug: 'territorial-army',
+    name: 'Territorial Army',
+    fullName: 'Territorial Army (TA Officer Entrance Examination)',
+    category: 'Defence',
+    stages: [
+      {
+        id: 'reasoning-and-english',
+        name: 'Reasoning and English',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Reasoning', 'English'],
+          totalQuestions: 21,
+          totalMarks: 21,
+          duration: 25,
+          negativeMarking: 0.33,
+          note: 'The official Territorial Army written exam has 100 questions for 100 marks in 2 hours, split as Reasoning (40 questions, 40 marks), General Knowledge (30 questions, 30 marks), and English (30 questions, 30 marks), with one-third (0.33) deducted per wrong answer. There is no Mathematics section in the current exam cycle. This mock covers Reasoning and English only, in the same 40:30 proportion: 21 questions (12 Reasoning, 9 English) in 25 minutes. General Knowledge is not covered, since it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content.',
+          sectionBreakdown: [
+            { name: 'Reasoning', questions: 12, marks: 12 },
+            { name: 'English', questions: 9, marks: 9 },
+          ],
+          timerNote: 'Single composite 25-minute timer for both sections combined: no sectional lock, matching the official exam\'s single continuous session',
+          sourceUrl: TERRITORIAL_ARMY_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'reasoning-and-english-full-mock-1', name: 'Reasoning and English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 25, marksPerCorrect: 1, negativeMarking: 0.33, scoringNote: 'One-third (0.33) of a mark deducted per wrong answer, matching the official scheme. Raw score out of 21 shown here; the official exam is out of 100 across all three sections.', checkedOn: '16 August 2026' },
+          { id: 'reasoning-sectional-1', name: 'Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning', duration: 14, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 11, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
         ],
       },
     ],

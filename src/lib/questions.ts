@@ -257,6 +257,7 @@ import { NDA_GENERAL_ABILITY_TEST_ENGLISH_1 } from './question-banks/nda-general
 import { CDS_ELEMENTARY_MATHEMATICS_1 } from './question-banks/cds-elementary-mathematics-combined-1';
 import { CDS_ENGLISH_1 } from './question-banks/cds-english-combined-1';
 import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_1 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-1';
+import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1 } from './question-banks/territorial-army-reasoning-and-english-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -838,6 +839,9 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'afcat/verbal-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Verbal Ability'),
   'afcat/numerical-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Numerical Ability'),
   'afcat/reasoning-and-military-aptitude-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Reasoning and Military Aptitude'),
+  'territorial-army/reasoning-and-english-full-mock-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1,
+  'territorial-army/reasoning-sectional-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1.filter((question) => question.section === 'Reasoning'),
+  'territorial-army/english-sectional-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1.filter((question) => question.section === 'English'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1328,6 +1332,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 8
     : testId.includes('afcat/reasoning-and-military-aptitude-sectional')
     ? 8
+    : testId.includes('territorial-army/reasoning-and-english-full-mock')
+    ? 21
+    : testId.includes('territorial-army/reasoning-sectional')
+    ? 12
+    : testId.includes('territorial-army/english-sectional')
+    ? 9
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1923,6 +1933,10 @@ const afcatVerbalNumericalAndReasoningLayout = [
   { section: 'Numerical Ability', count: 8 },
   { section: 'Reasoning and Military Aptitude', count: 8 },
 ];
+const territorialArmyReasoningAndEnglishLayout = [
+  { section: 'Reasoning', count: 12 },
+  { section: 'English', count: 9 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1998,7 +2012,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                       ? cdsEnglishLayout
                                                                       : testId.includes('afcat/verbal-numerical-and-reasoning-full-mock')
                                                                         ? afcatVerbalNumericalAndReasoningLayout
-                                                                        : fullMockLayouts[testId.split('/')[0]];
+                                                                        : testId.includes('territorial-army/reasoning-and-english-full-mock')
+                                                                          ? territorialArmyReasoningAndEnglishLayout
+                                                                          : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2341,6 +2357,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'afcat': [
     AFCAT_VERBAL_NUMERICAL_AND_REASONING_1[0],
     AFCAT_VERBAL_NUMERICAL_AND_REASONING_1[16],
+  ],
+  'territorial-army': [
+    TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1[0],
+    TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1[12],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
