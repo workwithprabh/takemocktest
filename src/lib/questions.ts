@@ -268,6 +268,7 @@ import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1 } from './question-banks
 import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-1';
 import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1';
 import { CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-qtdi-logical-reasoning-language-comprehension-combined-1';
+import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -891,6 +892,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'cmat/quantitative-techniques-and-data-interpretation-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Quantitative Techniques and Data Interpretation'),
   'cmat/logical-reasoning-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Logical Reasoning'),
   'cmat/language-comprehension-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Language Comprehension'),
+  'nmat/language-logical-reasoning-quantitative-full-mock-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1,
+  'nmat/language-skills-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Language Skills'),
+  'nmat/logical-reasoning-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Logical Reasoning'),
+  'nmat/quantitative-skills-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Quantitative Skills'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1465,6 +1470,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 20
     : testId.includes('cmat/language-comprehension-sectional')
     ? 20
+    : testId.includes('nmat/language-logical-reasoning-quantitative-full-mock')
+    ? 36
+    : testId.includes('nmat/language-skills-sectional')
+    ? 12
+    : testId.includes('nmat/logical-reasoning-sectional')
+    ? 12
+    : testId.includes('nmat/quantitative-skills-sectional')
+    ? 12
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2113,6 +2126,11 @@ const catVarcDilrQaLayout = [
   { section: 'Data Interpretation and Logical Reasoning', count: 11 },
   { section: 'Quantitative Aptitude', count: 11 },
 ];
+const nmatLanguageLogicalReasoningQuantitativeLayout = [
+  { section: 'Language Skills', count: 12 },
+  { section: 'Logical Reasoning', count: 12 },
+  { section: 'Quantitative Skills', count: 12 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -2208,7 +2226,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                           ? mhCetLaw3YearLegalLogicalEnglishLayout
                                                                                           : testId.includes('cat/varc-dilr-qa-full-mock')
                                                                                             ? catVarcDilrQaLayout
-                                                                                            : fullMockLayouts[testId.split('/')[0]];
+                                                                                            : testId.includes('nmat/language-logical-reasoning-quantitative-full-mock')
+                                                                                              ? nmatLanguageLogicalReasoningQuantitativeLayout
+                                                                                              : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2604,6 +2624,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[0],
     CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[20],
     CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[40],
+  ],
+  'nmat': [
+    NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1[0],
+    NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1[12],
+    NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1[24],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

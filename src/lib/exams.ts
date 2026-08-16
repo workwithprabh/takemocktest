@@ -64,7 +64,8 @@ export type ExamSlug =
   | 'mh-cet-law'
   | 'mh-cet-law-3-year'
   | 'cat'
-  | 'cmat';
+  | 'cmat'
+  | 'nmat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -194,6 +195,7 @@ const MH_CET_LAW_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const MH_CET_LAW_3_YEAR_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const CAT_OFFICIAL_PAGE = 'https://iimcat.ac.in/';
 const CMAT_OFFICIAL_PAGE = 'https://cmat.nta.nic.in/';
+const NMAT_OFFICIAL_PAGE = 'https://www.mba.com/exams/nmat';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5837,6 +5839,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'quantitative-techniques-and-data-interpretation-sectional-1', name: 'Quantitative Techniques and Data Interpretation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Techniques and Data Interpretation', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
           { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
           { id: 'language-comprehension-sectional-1', name: 'Language Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Comprehension', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nmat': {
+    slug: 'nmat',
+    name: 'NMAT',
+    fullName: 'NMAT by GMAC',
+    category: 'Management',
+    stages: [
+      {
+        id: 'language-logical-reasoning-quantitative',
+        name: 'Language Skills, Logical Reasoning and Quantitative Skills',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Language Skills', 'Logical Reasoning', 'Quantitative Skills'],
+          totalQuestions: 36,
+          totalMarks: 108,
+          duration: 45,
+          negativeMarking: 0,
+          note: 'The official NMAT by GMAC has 108 questions for 324 marks (+3 for each correct answer, no negative marking) in 120 minutes, across three equal 36-question sections: Language Skills, Logical Reasoning, and Quantitative Skills. Each section has its own fixed time limit with no carryover between sections: Language Skills 28 minutes, Logical Reasoning 40 minutes, Quantitative Skills 52 minutes. The official exam also lets candidates choose the order of the three sections before starting; this mock always uses a fixed order (Language Skills, then Logical Reasoning, then Quantitative Skills) since the engine does not support a pre-test section-order choice. This mock covers all three sections in equal proportion: 36 questions (12 per section), with the same three separately timed sectional locks, scaled down proportionally (10, 15, and 20 minutes), and the same +3/no-penalty marking scheme. All three sections are skill-based (vocabulary and comprehension, logical puzzles, and calculation), not fact-recall, so no section needed excluding for content-risk reasons, the cleanest content-risk profile of any Management exam on this site so far.',
+          sectionBreakdown: [
+            { name: 'Language Skills', questions: 12, marks: 36, duration: 10 },
+            { name: 'Logical Reasoning', questions: 12, marks: 36, duration: 15 },
+            { name: 'Quantitative Skills', questions: 12, marks: 36, duration: 20 },
+          ],
+          timerNote: 'Three separately timed sectional locks (10, 15, and 20 minutes), in fixed order (Language Skills, then Logical Reasoning, then Quantitative Skills): once a section\'s time runs out or you move on, you cannot return to it, matching the official NMAT\'s fixed per-section time limits with no time carryover',
+          sourceUrl: NMAT_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'language-logical-reasoning-quantitative-full-mock-1', name: 'Language Skills, Logical Reasoning and Quantitative Skills Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 45, sectionDurations: [10, 15, 20], marksPerCorrect: 3, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'language-skills-sectional-1', name: 'Language Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Skills', duration: 10, marksPerCorrect: 3, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 15, marksPerCorrect: 3, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'quantitative-skills-sectional-1', name: 'Quantitative Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Skills', duration: 20, marksPerCorrect: 3, negativeMarking: 0, checkedOn: '16 August 2026' },
         ],
       },
     ],
