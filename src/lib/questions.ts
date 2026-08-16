@@ -254,6 +254,8 @@ import { CA_FOUNDATION_QUANTITATIVE_APTITUDE_1 } from './question-banks/ca-found
 import { CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/cma-foundation-business-mathematics-and-statistics-combined-1';
 import { NDA_MATHEMATICS_1 } from './question-banks/nda-mathematics-combined-1';
 import { NDA_GENERAL_ABILITY_TEST_ENGLISH_1 } from './question-banks/nda-general-ability-test-english-combined-1';
+import { CDS_ELEMENTARY_MATHEMATICS_1 } from './question-banks/cds-elementary-mathematics-combined-1';
+import { CDS_ENGLISH_1 } from './question-banks/cds-english-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -824,6 +826,13 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'nda/general-ability-test-english-full-mock-1': NDA_GENERAL_ABILITY_TEST_ENGLISH_1,
   'nda/grammar-and-usage-sectional-1': NDA_GENERAL_ABILITY_TEST_ENGLISH_1.filter((question) => question.section === 'Grammar and Usage'),
   'nda/vocabulary-and-comprehension-sectional-1': NDA_GENERAL_ABILITY_TEST_ENGLISH_1.filter((question) => question.section === 'Vocabulary and Comprehension'),
+  'cds/elementary-mathematics-full-mock-1': CDS_ELEMENTARY_MATHEMATICS_1,
+  'cds/arithmetic-sectional-1': CDS_ELEMENTARY_MATHEMATICS_1.filter((question) => question.section === 'Arithmetic'),
+  'cds/algebra-and-trigonometry-sectional-1': CDS_ELEMENTARY_MATHEMATICS_1.filter((question) => question.section === 'Algebra and Trigonometry'),
+  'cds/geometry-and-mensuration-sectional-1': CDS_ELEMENTARY_MATHEMATICS_1.filter((question) => question.section === 'Geometry and Mensuration'),
+  'cds/english-full-mock-1': CDS_ENGLISH_1,
+  'cds/grammar-and-usage-sectional-1': CDS_ENGLISH_1.filter((question) => question.section === 'Grammar and Usage'),
+  'cds/vocabulary-and-comprehension-sectional-1': CDS_ENGLISH_1.filter((question) => question.section === 'Vocabulary and Comprehension'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1291,6 +1300,20 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('nda/grammar-and-usage-sectional')
     ? 6
     : testId.includes('nda/vocabulary-and-comprehension-sectional')
+    ? 6
+    : testId.includes('cds/elementary-mathematics-full-mock')
+    ? 18
+    : testId.includes('cds/arithmetic-sectional')
+    ? 6
+    : testId.includes('cds/algebra-and-trigonometry-sectional')
+    ? 6
+    : testId.includes('cds/geometry-and-mensuration-sectional')
+    ? 6
+    : testId.includes('cds/english-full-mock')
+    ? 12
+    : testId.includes('cds/grammar-and-usage-sectional')
+    ? 6
+    : testId.includes('cds/vocabulary-and-comprehension-sectional')
     ? 6
     : testId.includes('full-mock')
     ? 100
@@ -1873,6 +1896,15 @@ const ndaGeneralAbilityTestEnglishLayout = [
   { section: 'Grammar and Usage', count: 6 },
   { section: 'Vocabulary and Comprehension', count: 6 },
 ];
+const cdsElementaryMathematicsLayout = [
+  { section: 'Arithmetic', count: 6 },
+  { section: 'Algebra and Trigonometry', count: 6 },
+  { section: 'Geometry and Mensuration', count: 6 },
+];
+const cdsEnglishLayout = [
+  { section: 'Grammar and Usage', count: 6 },
+  { section: 'Vocabulary and Comprehension', count: 6 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1942,7 +1974,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                 ? ndaMathematicsLayout
                                                                 : testId.includes('nda/general-ability-test-english-full-mock')
                                                                   ? ndaGeneralAbilityTestEnglishLayout
-                                                                  : fullMockLayouts[testId.split('/')[0]];
+                                                                  : testId.includes('cds/elementary-mathematics-full-mock')
+                                                                    ? cdsElementaryMathematicsLayout
+                                                                    : testId.includes('cds/english-full-mock')
+                                                                      ? cdsEnglishLayout
+                                                                      : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2277,6 +2313,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'nda': [
     NDA_MATHEMATICS_1[0],
     NDA_GENERAL_ABILITY_TEST_ENGLISH_1[0],
+  ],
+  'cds': [
+    CDS_ELEMENTARY_MATHEMATICS_1[0],
+    CDS_ENGLISH_1[0],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

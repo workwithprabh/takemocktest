@@ -51,7 +51,8 @@ export type ExamSlug =
   | 'acet'
   | 'ca-foundation'
   | 'cma-foundation'
-  | 'nda';
+  | 'nda'
+  | 'cds';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -168,6 +169,7 @@ const ACET_EXAM_STRUCTURE_PAGE = 'https://www.actuariesindia.org/acet-exam-struc
 const CA_FOUNDATION_PAPER3_SYLLABUS_PAGE = 'https://www.icai.org/post/sm-foundation-p3-may2026';
 const CMA_FOUNDATION_STUDY_MATERIALS_PAGE = 'https://icmai.in/ClntStudents/Foundation_Study_Materials';
 const NDA_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination';
+const CDS_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5321,6 +5323,68 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'general-ability-test-english-full-mock-1', name: 'General Ability Test: English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 12, marksPerCorrect: 4, negativeMarking: 1.33, scoringNote: 'One-third (1.33) of the 4 marks deducted per wrong answer, matching the official GAT scheme. Raw score out of 48 shown here; the official English portion is out of 200 (within a 600-mark GAT paper that also covers General Knowledge, not included here).', checkedOn: '15 August 2026' },
           { id: 'grammar-and-usage-sectional-1', name: 'Grammar and Usage Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Grammar and Usage', duration: 6, marksPerCorrect: 4, negativeMarking: 1.33, checkedOn: '15 August 2026' },
           { id: 'vocabulary-and-comprehension-sectional-1', name: 'Vocabulary and Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Vocabulary and Comprehension', duration: 6, marksPerCorrect: 4, negativeMarking: 1.33, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'cds': {
+    slug: 'cds',
+    name: 'CDS',
+    fullName: 'CDS (Combined Defence Services Examination)',
+    category: 'Defence',
+    stages: [
+      {
+        id: 'elementary-mathematics',
+        name: 'Elementary Mathematics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Arithmetic', 'Algebra and Trigonometry', 'Geometry and Mensuration'],
+          totalQuestions: 18,
+          totalMarks: 18,
+          duration: 22,
+          negativeMarking: 0.33,
+          note: 'The official UPSC CDS Elementary Mathematics paper has 100 questions for 100 marks in 2 hours, each question carrying 1 mark with one-third (0.33) deducted per wrong answer. This mock is a TakeMockTest-defined shorter set: 18 questions in 22 minutes across the same syllabus areas in proportion.',
+          sectionBreakdown: [
+            { name: 'Arithmetic', questions: 6, marks: 6 },
+            { name: 'Algebra and Trigonometry', questions: 6, marks: 6 },
+            { name: 'Geometry and Mensuration', questions: 6, marks: 6 },
+          ],
+          timerNote: 'Single composite 22-minute timer for all three sections combined: no sectional lock',
+          sourceUrl: CDS_EXAMINATION_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'elementary-mathematics-full-mock-1', name: 'Elementary Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 22, marksPerCorrect: 1, negativeMarking: 0.33, scoringNote: 'One-third (0.33) of a mark deducted per wrong answer, matching the official Elementary Mathematics scheme. Raw score out of 18 shown here; the official paper is out of 100.', checkedOn: '16 August 2026' },
+          { id: 'arithmetic-sectional-1', name: 'Arithmetic Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Arithmetic', duration: 7, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
+          { id: 'algebra-and-trigonometry-sectional-1', name: 'Algebra and Trigonometry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Algebra and Trigonometry', duration: 7, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
+          { id: 'geometry-and-mensuration-sectional-1', name: 'Geometry and Mensuration Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Geometry and Mensuration', duration: 8, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
+        ],
+      },
+      {
+        id: 'english',
+        name: 'English',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Grammar and Usage', 'Vocabulary and Comprehension'],
+          totalQuestions: 12,
+          totalMarks: 12,
+          duration: 12,
+          negativeMarking: 0.33,
+          note: 'The official UPSC CDS English paper has 120 questions for 100 marks in 2 hours (roughly 0.83 marks per correct answer), with one-third (0.33) deducted per wrong answer. This mock is a TakeMockTest-defined shorter set: 12 questions in 12 minutes across grammar, usage, vocabulary, and comprehension, scored at a clean 1 mark per question rather than the official fractional value.',
+          sectionBreakdown: [
+            { name: 'Grammar and Usage', questions: 6, marks: 6 },
+            { name: 'Vocabulary and Comprehension', questions: 6, marks: 6 },
+          ],
+          timerNote: 'Single composite 12-minute timer for both sections combined: no sectional lock',
+          sourceUrl: CDS_EXAMINATION_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'english-full-mock-1', name: 'English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 12, marksPerCorrect: 1, negativeMarking: 0.33, scoringNote: 'One-third (0.33) of a mark deducted per wrong answer, matching the official negative-marking ratio. Raw score out of 12 shown here; the official paper is out of 100 across 120 questions.', checkedOn: '16 August 2026' },
+          { id: 'grammar-and-usage-sectional-1', name: 'Grammar and Usage Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Grammar and Usage', duration: 6, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
+          { id: 'vocabulary-and-comprehension-sectional-1', name: 'Vocabulary and Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Vocabulary and Comprehension', duration: 6, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
         ],
       },
     ],
