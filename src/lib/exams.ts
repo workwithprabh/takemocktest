@@ -65,7 +65,8 @@ export type ExamSlug =
   | 'mh-cet-law-3-year'
   | 'cat'
   | 'cmat'
-  | 'nmat';
+  | 'nmat'
+  | 'snap';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -196,6 +197,7 @@ const MH_CET_LAW_3_YEAR_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const CAT_OFFICIAL_PAGE = 'https://iimcat.ac.in/';
 const CMAT_OFFICIAL_PAGE = 'https://cmat.nta.nic.in/';
 const NMAT_OFFICIAL_PAGE = 'https://www.mba.com/exams/nmat';
+const SNAP_OFFICIAL_PAGE = 'https://www.snaptest.org/snap-exam-syllabus.html';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5875,6 +5877,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'language-skills-sectional-1', name: 'Language Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Skills', duration: 10, marksPerCorrect: 3, negativeMarking: 0, checkedOn: '16 August 2026' },
           { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 15, marksPerCorrect: 3, negativeMarking: 0, checkedOn: '16 August 2026' },
           { id: 'quantitative-skills-sectional-1', name: 'Quantitative Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Skills', duration: 20, marksPerCorrect: 3, negativeMarking: 0, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'snap': {
+    slug: 'snap',
+    name: 'SNAP',
+    fullName: 'Symbiosis National Aptitude Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'general-english-analytical-logical-reasoning-quantitative-di-ds',
+        name: 'General English, Analytical and Logical Reasoning, and Quantitative, Data Interpretation and Data Sufficiency',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General English', 'Analytical and Logical Reasoning', 'Quantitative, Data Interpretation and Data Sufficiency'],
+          totalQuestions: 60,
+          totalMarks: 60,
+          duration: 60,
+          negativeMarking: 0.25,
+          note: 'The official SNAP (conducted by Symbiosis International, Deemed University) has 60 questions for 60 marks in 60 minutes, +1 for each correct answer and -0.25 for a wrong one, with no sectional time limit: candidates may attempt any section in any order. It is split across three sections: General English (15Q), Analytical and Logical Reasoning (25Q), and Quantitative, Data Interpretation and Data Sufficiency (20Q). This mock matches the official pattern exactly, all 60 questions across the same three sections with the same single composite timer and no sectional lock. SNAP dropped its separate General Knowledge and Current Affairs section in 2020 and has not reinstated one since, so unlike CMAT and most other Management exams on this site, no section needed excluding for content-risk reasons: every official SNAP section is language- or reasoning-based with zero fact-recall dependency.',
+          sectionBreakdown: [
+            { name: 'General English', questions: 15, marks: 15, duration: 15 },
+            { name: 'Analytical and Logical Reasoning', questions: 25, marks: 25, duration: 25 },
+            { name: 'Quantitative, Data Interpretation and Data Sufficiency', questions: 20, marks: 20, duration: 20 },
+          ],
+          timerNote: 'Single composite 60-minute timer for all three sections combined: no sectional lock, matching the official test\'s own rule that candidates may attempt any section in any order',
+          sourceUrl: SNAP_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'general-english-analytical-logical-reasoning-quantitative-di-ds-full-mock-1', name: 'General English, Analytical and Logical Reasoning, and Quantitative, DI and DS Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'general-english-sectional-1', name: 'General English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General English', duration: 15, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'analytical-and-logical-reasoning-sectional-1', name: 'Analytical and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical and Logical Reasoning', duration: 25, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+          { id: 'quantitative-di-ds-sectional-1', name: 'Quantitative, DI and DS Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative, Data Interpretation and Data Sufficiency', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
         ],
       },
     ],

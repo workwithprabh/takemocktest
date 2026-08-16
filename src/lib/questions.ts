@@ -269,6 +269,7 @@ import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-c
 import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1';
 import { CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-qtdi-logical-reasoning-language-comprehension-combined-1';
 import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-1';
+import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -896,6 +897,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'nmat/language-skills-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Language Skills'),
   'nmat/logical-reasoning-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Logical Reasoning'),
   'nmat/quantitative-skills-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Quantitative Skills'),
+  'snap/general-english-analytical-logical-reasoning-quantitative-di-ds-full-mock-1': SNAP_ENGLISH_REASONING_QUANT_1,
+  'snap/general-english-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'General English'),
+  'snap/analytical-and-logical-reasoning-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'Analytical and Logical Reasoning'),
+  'snap/quantitative-di-ds-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'Quantitative, Data Interpretation and Data Sufficiency'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1478,6 +1483,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 12
     : testId.includes('nmat/quantitative-skills-sectional')
     ? 12
+    : testId.includes('snap/general-english-analytical-logical-reasoning-quantitative-di-ds-full-mock')
+    ? 60
+    : testId.includes('snap/general-english-sectional')
+    ? 15
+    : testId.includes('snap/analytical-and-logical-reasoning-sectional')
+    ? 25
+    : testId.includes('snap/quantitative-di-ds-sectional')
+    ? 20
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1706,6 +1719,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Quantitative Techniques and Data Interpretation', count: 20 },
     { section: 'Logical Reasoning', count: 20 },
     { section: 'Language Comprehension', count: 20 },
+  ],
+  'snap': [
+    { section: 'General English', count: 15 },
+    { section: 'Analytical and Logical Reasoning', count: 25 },
+    { section: 'Quantitative, Data Interpretation and Data Sufficiency', count: 20 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2629,6 +2647,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1[0],
     NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1[12],
     NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1[24],
+  ],
+  'snap': [
+    SNAP_ENGLISH_REASONING_QUANT_1[0],
+    SNAP_ENGLISH_REASONING_QUANT_1[15],
+    SNAP_ENGLISH_REASONING_QUANT_1[40],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
