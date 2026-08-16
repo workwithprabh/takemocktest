@@ -267,6 +267,7 @@ import { SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1 } from './question-banks/slat-l
 import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1 } from './question-banks/mh-cet-law-legal-logical-english-mathematics-combined-1';
 import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-1';
 import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1';
+import { CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-qtdi-logical-reasoning-language-comprehension-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -886,6 +887,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'cat/verbal-ability-and-reading-comprehension-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
   'cat/data-interpretation-and-logical-reasoning-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
   'cat/quantitative-aptitude-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Quantitative Aptitude'),
+  'cmat/qtdi-logical-reasoning-language-comprehension-full-mock-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1,
+  'cmat/quantitative-techniques-and-data-interpretation-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Quantitative Techniques and Data Interpretation'),
+  'cmat/logical-reasoning-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Logical Reasoning'),
+  'cmat/language-comprehension-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Language Comprehension'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1452,6 +1457,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 11
     : testId.includes('cat/quantitative-aptitude-sectional')
     ? 11
+    : testId.includes('cmat/qtdi-logical-reasoning-language-comprehension-full-mock')
+    ? 60
+    : testId.includes('cmat/quantitative-techniques-and-data-interpretation-sectional')
+    ? 20
+    : testId.includes('cmat/logical-reasoning-sectional')
+    ? 20
+    : testId.includes('cmat/language-comprehension-sectional')
+    ? 20
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1676,6 +1689,11 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
 }
 
 const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
+  'cmat': [
+    { section: 'Quantitative Techniques and Data Interpretation', count: 20 },
+    { section: 'Logical Reasoning', count: 20 },
+    { section: 'Language Comprehension', count: 20 },
+  ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
     { section: 'Physics', count: 35 },
@@ -2581,6 +2599,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     CAT_VARC_DILR_QA_1[0],
     CAT_VARC_DILR_QA_1[12],
     CAT_VARC_DILR_QA_1[23],
+  ],
+  'cmat': [
+    CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[0],
+    CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[20],
+    CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[40],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

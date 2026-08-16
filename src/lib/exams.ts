@@ -63,7 +63,8 @@ export type ExamSlug =
   | 'slat'
   | 'mh-cet-law'
   | 'mh-cet-law-3-year'
-  | 'cat';
+  | 'cat'
+  | 'cmat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -192,6 +193,7 @@ const SLAT_OFFICIAL_PAGE = 'https://www.slat-test.org/';
 const MH_CET_LAW_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const MH_CET_LAW_3_YEAR_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const CAT_OFFICIAL_PAGE = 'https://iimcat.ac.in/';
+const CMAT_OFFICIAL_PAGE = 'https://cmat.nta.nic.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5799,6 +5801,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'verbal-ability-and-reading-comprehension-sectional-1', name: 'Verbal Ability and Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability and Reading Comprehension', duration: 20, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
           { id: 'data-interpretation-and-logical-reasoning-sectional-1', name: 'Data Interpretation and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Interpretation and Logical Reasoning', duration: 20, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
           { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 20, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'cmat': {
+    slug: 'cmat',
+    name: 'CMAT',
+    fullName: 'Common Management Admission Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'qtdi-logical-reasoning-language-comprehension',
+        name: 'Quantitative Techniques and DI, Logical Reasoning, Language Comprehension',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Quantitative Techniques and Data Interpretation', 'Logical Reasoning', 'Language Comprehension'],
+          totalQuestions: 60,
+          totalMarks: 240,
+          duration: 108,
+          negativeMarking: 1,
+          note: 'The official CMAT (conducted by NTA) has 100 questions for 400 marks in 180 minutes, 4 marks per correct answer and -1 for a wrong one, with no sectional time limit, across five equal 20-question sections: Quantitative Techniques and Data Interpretation, Logical Reasoning, Language Comprehension, General Awareness, and Innovation and Entrepreneurship. This mock covers the three reasoning- and language-based sections in full official proportion: 60 questions (20 Quantitative Techniques and Data Interpretation, 20 Logical Reasoning, 20 Language Comprehension), with the same single composite timer and no sectional lock, and the same +4/-1 marking scheme. General Awareness is not covered, since it depends on facts that carry higher correctness risk for self-authored content. Innovation and Entrepreneurship is also not covered: its official syllabus tests definitional and conceptual business-terminology recall (for example, the difference between incremental and disruptive innovation, or terms like MVP and Lean Startup) rather than reasoning applied to a stated scenario, the same content-risk boundary that excluded CA Foundation and CMA Foundation\'s management and business-law papers.',
+          sectionBreakdown: [
+            { name: 'Quantitative Techniques and Data Interpretation', questions: 20, marks: 80, duration: 36 },
+            { name: 'Logical Reasoning', questions: 20, marks: 80, duration: 36 },
+            { name: 'Language Comprehension', questions: 20, marks: 80, duration: 36 },
+          ],
+          timerNote: 'Single composite 108-minute timer for all three sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: CMAT_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'qtdi-logical-reasoning-language-comprehension-full-mock-1', name: 'Quantitative Techniques and DI, Logical Reasoning, Language Comprehension Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 108, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'quantitative-techniques-and-data-interpretation-sectional-1', name: 'Quantitative Techniques and Data Interpretation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Techniques and Data Interpretation', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'language-comprehension-sectional-1', name: 'Language Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Comprehension', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
         ],
       },
     ],
