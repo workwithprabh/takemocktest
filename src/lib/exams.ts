@@ -62,7 +62,8 @@ export type ExamSlug =
   | 'ailet'
   | 'slat'
   | 'mh-cet-law'
-  | 'mh-cet-law-3-year';
+  | 'mh-cet-law-3-year'
+  | 'cat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -113,7 +114,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence' | 'Law';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence' | 'Law' | 'Management';
   stages: TestStage[];
 }
 
@@ -190,6 +191,7 @@ const AILET_OFFICIAL_PAGE = 'https://nationallawuniversitydelhi.in/';
 const SLAT_OFFICIAL_PAGE = 'https://www.slat-test.org/';
 const MH_CET_LAW_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const MH_CET_LAW_3_YEAR_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
+const CAT_OFFICIAL_PAGE = 'https://iimcat.ac.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5761,6 +5763,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'legal-aptitude-and-legal-reasoning-sectional-1', name: 'Legal Aptitude and Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Aptitude and Legal Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
           { id: 'logical-and-analytical-reasoning-sectional-1', name: 'Logical and Analytical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical and Analytical Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 10, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'cat': {
+    slug: 'cat',
+    name: 'CAT',
+    fullName: 'Common Admission Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'varc-dilr-qa',
+        name: 'VARC, DILR and QA',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Verbal Ability and Reading Comprehension', 'Data Interpretation and Logical Reasoning', 'Quantitative Aptitude'],
+          totalQuestions: 34,
+          totalMarks: 102,
+          duration: 60,
+          negativeMarking: 1,
+          note: 'The IIMs do not publish a fixed official CAT pattern in advance. Based on the most recently conducted exam, CAT 2025 (corroborated across multiple independent exam-analysis sources), the test has 68 questions for 204 marks in 120 minutes, across three sections: Verbal Ability and Reading Comprehension (24 questions), Data Interpretation and Logical Reasoning (22 questions), and Quantitative Aptitude (22 questions). Each section is a separately timed 40-minute block with a hard sectional lock: once a section ends or you move on, you cannot return to it. Each question mixes two formats: Multiple Choice Questions, worth +3 for a correct answer and -1 for a wrong one, and Type In The Answer (TITA) questions with no options, worth +3 for a correct answer and no penalty for a wrong one. This mock covers all three sections in close to the same proportion as the official exam: 34 questions (12 Verbal Ability and Reading Comprehension, 11 Data Interpretation and Logical Reasoning, 11 Quantitative Aptitude), with the same three separately timed sectional locks (20 minutes each here) and the same +3/-1 MCQ and +3/no-penalty TITA marking scheme. TITA questions here are represented as a numeric-entry field, the same format used for GRE Quantitative Reasoning\'s Numeric Entry questions on this site. All three sections are skill-based (verbal reasoning, data interpretation, logical puzzles, and calculation), not fact-recall, so no section needed excluding for content-risk reasons.',
+          sectionBreakdown: [
+            { name: 'Verbal Ability and Reading Comprehension', questions: 12, marks: 36, duration: 20 },
+            { name: 'Data Interpretation and Logical Reasoning', questions: 11, marks: 33, duration: 20 },
+            { name: 'Quantitative Aptitude', questions: 11, marks: 33, duration: 20 },
+          ],
+          timerNote: 'Three separately timed 20-minute sectional locks, in fixed order (VARC, then DILR, then QA): once a section\'s time runs out or you move on, you cannot return to it, matching the official CAT\'s hard sectional-lock format',
+          sourceUrl: CAT_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'varc-dilr-qa-full-mock-1', name: 'VARC, DILR and QA Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, sectionDuration: 20, marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'MCQs carry +3 for a correct answer and -1 for a wrong one; numeric-entry (TITA) questions carry +3 for a correct answer and no penalty for a wrong one, matching the official CAT scheme.', checkedOn: '16 August 2026' },
+          { id: 'verbal-ability-and-reading-comprehension-sectional-1', name: 'Verbal Ability and Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability and Reading Comprehension', duration: 20, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'data-interpretation-and-logical-reasoning-sectional-1', name: 'Data Interpretation and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Interpretation and Logical Reasoning', duration: 20, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 20, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
         ],
       },
     ],

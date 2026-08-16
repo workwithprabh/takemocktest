@@ -255,7 +255,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'MBA entrances',
         exams: [
-          exam('CAT', 'National'),
+          exam('CAT', 'National', 'cat'),
           exam('XAT', 'National'),
           exam('CMAT', 'National'),
           exam('MAT', 'National'),

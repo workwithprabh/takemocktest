@@ -266,6 +266,7 @@ import { AILET_ENGLISH_AND_LOGICAL_REASONING_1 } from './question-banks/ailet-en
 import { SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1 } from './question-banks/slat-logical-legal-analytical-reading-combined-1';
 import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1 } from './question-banks/mh-cet-law-legal-logical-english-mathematics-combined-1';
 import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-1';
+import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -881,6 +882,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'mh-cet-law-3-year/legal-aptitude-and-legal-reasoning-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'Legal Aptitude and Legal Reasoning'),
   'mh-cet-law-3-year/logical-and-analytical-reasoning-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'Logical and Analytical Reasoning'),
   'mh-cet-law-3-year/english-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'English'),
+  'cat/varc-dilr-qa-full-mock-1': CAT_VARC_DILR_QA_1,
+  'cat/verbal-ability-and-reading-comprehension-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
+  'cat/data-interpretation-and-logical-reasoning-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
+  'cat/quantitative-aptitude-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Quantitative Aptitude'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1439,6 +1444,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 6
     : testId.includes('mh-cet-law-3-year/english-sectional')
     ? 10
+    : testId.includes('cat/varc-dilr-qa-full-mock')
+    ? 34
+    : testId.includes('cat/verbal-ability-and-reading-comprehension-sectional')
+    ? 12
+    : testId.includes('cat/data-interpretation-and-logical-reasoning-sectional')
+    ? 11
+    : testId.includes('cat/quantitative-aptitude-sectional')
+    ? 11
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2077,6 +2090,11 @@ const mhCetLaw3YearLegalLogicalEnglishLayout = [
   { section: 'Logical and Analytical Reasoning', count: 6 },
   { section: 'English', count: 10 },
 ];
+const catVarcDilrQaLayout = [
+  { section: 'Verbal Ability and Reading Comprehension', count: 12 },
+  { section: 'Data Interpretation and Logical Reasoning', count: 11 },
+  { section: 'Quantitative Aptitude', count: 11 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -2170,7 +2188,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                         ? mhCetLawLegalLogicalEnglishMathematicsLayout
                                                                                         : testId.includes('mh-cet-law-3-year/legal-logical-english-full-mock')
                                                                                           ? mhCetLaw3YearLegalLogicalEnglishLayout
-                                                                                          : fullMockLayouts[testId.split('/')[0]];
+                                                                                          : testId.includes('cat/varc-dilr-qa-full-mock')
+                                                                                            ? catVarcDilrQaLayout
+                                                                                            : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2556,6 +2576,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1[0],
     MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1[6],
     MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1[12],
+  ],
+  'cat': [
+    CAT_VARC_DILR_QA_1[0],
+    CAT_VARC_DILR_QA_1[12],
+    CAT_VARC_DILR_QA_1[23],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
