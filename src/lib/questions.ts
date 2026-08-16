@@ -263,6 +263,7 @@ import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/agnive
 import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/navy-ssr-english-and-mathematics-combined-1';
 import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1 } from './question-banks/clat-english-legal-logical-quantitative-combined-1';
 import { AILET_ENGLISH_AND_LOGICAL_REASONING_1 } from './question-banks/ailet-english-and-logical-reasoning-combined-1';
+import { SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1 } from './question-banks/slat-logical-legal-analytical-reading-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -864,6 +865,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ailet/english-and-logical-reasoning-full-mock-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1,
   'ailet/english-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'English'),
   'ailet/logical-reasoning-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'Logical Reasoning'),
+  'slat/logical-legal-analytical-reading-full-mock-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1,
+  'slat/logical-reasoning-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Logical Reasoning'),
+  'slat/legal-reasoning-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Legal Reasoning'),
+  'slat/analytical-reasoning-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Analytical Reasoning'),
+  'slat/reading-comprehension-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Reading Comprehension'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1394,6 +1400,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 10
     : testId.includes('ailet/logical-reasoning-sectional')
     ? 14
+    : testId.includes('slat/logical-legal-analytical-reading-full-mock')
+    ? 24
+    : testId.includes('slat/logical-reasoning-sectional')
+    ? 6
+    : testId.includes('slat/legal-reasoning-sectional')
+    ? 6
+    : testId.includes('slat/analytical-reasoning-sectional')
+    ? 6
+    : testId.includes('slat/reading-comprehension-sectional')
+    ? 6
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2015,6 +2031,12 @@ const ailetEnglishAndLogicalReasoningLayout = [
   { section: 'English', count: 10 },
   { section: 'Logical Reasoning', count: 14 },
 ];
+const slatLogicalLegalAnalyticalReadingLayout = [
+  { section: 'Logical Reasoning', count: 6 },
+  { section: 'Legal Reasoning', count: 6 },
+  { section: 'Analytical Reasoning', count: 6 },
+  { section: 'Reading Comprehension', count: 6 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -2102,7 +2124,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                   ? clatEnglishLegalLogicalQuantitativeLayout
                                                                                   : testId.includes('ailet/english-and-logical-reasoning-full-mock')
                                                                                     ? ailetEnglishAndLogicalReasoningLayout
-                                                                                    : fullMockLayouts[testId.split('/')[0]];
+                                                                                    : testId.includes('slat/logical-legal-analytical-reading-full-mock')
+                                                                                      ? slatLogicalLegalAnalyticalReadingLayout
+                                                                                      : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2471,6 +2495,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'ailet': [
     AILET_ENGLISH_AND_LOGICAL_REASONING_1[0],
     AILET_ENGLISH_AND_LOGICAL_REASONING_1[10],
+  ],
+  'slat': [
+    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[0],
+    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[6],
+    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[12],
+    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[18],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

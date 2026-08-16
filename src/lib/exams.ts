@@ -59,7 +59,8 @@ export type ExamSlug =
   | 'agniveer-vayu'
   | 'navy-ssr'
   | 'clat'
-  | 'ailet';
+  | 'ailet'
+  | 'slat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -184,6 +185,7 @@ const AGNIVEER_VAYU_OFFICIAL_PAGE = 'https://agnipathvayu.cdac.in/';
 const NAVY_SSR_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
 const CLAT_OFFICIAL_PAGE = 'https://consortiumofnlus.ac.in/';
 const AILET_OFFICIAL_PAGE = 'https://nationallawuniversitydelhi.in/';
+const SLAT_OFFICIAL_PAGE = 'https://www.slat-test.org/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5643,6 +5645,44 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-and-logical-reasoning-full-mock-1', name: 'English and Logical Reasoning Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 19, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: '0.25 marks deducted per wrong answer, matching the official AILET scheme. Raw score out of 24 shown here; the official exam is out of 150 across all three sections.', checkedOn: '16 August 2026' },
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
           { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 11, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'slat': {
+    slug: 'slat',
+    name: 'SLAT',
+    fullName: 'SLAT (Symbiosis Law Admission Test)',
+    category: 'Law',
+    stages: [
+      {
+        id: 'logical-legal-analytical-reading',
+        name: 'Logical Reasoning, Legal Reasoning, Analytical Reasoning and Reading Comprehension',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Logical Reasoning', 'Legal Reasoning', 'Analytical Reasoning', 'Reading Comprehension'],
+          totalQuestions: 24,
+          totalMarks: 24,
+          duration: 24,
+          negativeMarking: 0,
+          note: 'The official SLAT written test has 60 questions for 60 marks in 60 minutes, 1 mark per correct answer, no negative marking, across five equal sections of 12 questions each: Logical Reasoning, Legal Reasoning, Analytical Reasoning, Reading Comprehension, and General Knowledge. This mock covers Logical Reasoning, Legal Reasoning, Analytical Reasoning, and Reading Comprehension only, in the same equal proportion: 24 questions (6 per section) in 24 minutes. Every Legal Reasoning question here states its own legal principle and facts in the passage, matching SLAT\'s own stated design that the section tests logical deduction from a given principle rather than memorised law. General Knowledge is not covered, since it depends on facts that carry higher correctness risk for self-authored content.',
+          sectionBreakdown: [
+            { name: 'Logical Reasoning', questions: 6, marks: 6 },
+            { name: 'Legal Reasoning', questions: 6, marks: 6 },
+            { name: 'Analytical Reasoning', questions: 6, marks: 6 },
+            { name: 'Reading Comprehension', questions: 6, marks: 6 },
+          ],
+          timerNote: 'Single composite 24-minute timer for all four sections combined: no sectional lock, matching the official test\'s single continuous session',
+          sourceUrl: SLAT_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'logical-legal-analytical-reading-full-mock-1', name: 'Logical Reasoning, Legal Reasoning, Analytical Reasoning and Reading Comprehension Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 24, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official SLAT scheme. Raw score out of 24 shown here; the official exam is out of 60 across all five sections.', checkedOn: '16 August 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'legal-reasoning-sectional-1', name: 'Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'analytical-reasoning-sectional-1', name: 'Analytical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reading Comprehension', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
         ],
       },
     ],
