@@ -54,7 +54,8 @@ export type ExamSlug =
   | 'nda'
   | 'cds'
   | 'afcat'
-  | 'territorial-army';
+  | 'territorial-army'
+  | 'inet';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -174,6 +175,7 @@ const NDA_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/National%20Defenc
 const CDS_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination';
 const AFCAT_OFFICIAL_PAGE = 'https://afcat.cdac.in/';
 const TERRITORIAL_ARMY_OFFICIAL_PAGE = 'https://territorialarmy.in/page/5';
+const INET_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5459,6 +5461,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'reasoning-and-english-full-mock-1', name: 'Reasoning and English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 25, marksPerCorrect: 1, negativeMarking: 0.33, scoringNote: 'One-third (0.33) of a mark deducted per wrong answer, matching the official scheme. Raw score out of 21 shown here; the official exam is out of 100 across all three sections.', checkedOn: '16 August 2026' },
           { id: 'reasoning-sectional-1', name: 'Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning', duration: 14, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 11, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'inet': {
+    slug: 'inet',
+    name: 'INET',
+    fullName: 'INET (Indian Navy Entrance Test)',
+    category: 'Defence',
+    stages: [
+      {
+        id: 'english-and-reasoning-numerical-ability',
+        name: 'English and Reasoning & Numerical Ability',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English', 'Reasoning and Numerical Ability'],
+          totalQuestions: 24,
+          totalMarks: 96,
+          duration: 29,
+          negativeMarking: 1,
+          note: 'The official INET written exam has 100 questions for 400 marks in 2 hours, across four equal sections (25 questions, 100 marks each, 4 marks per correct answer, 1 mark deducted per wrong answer): English, Reasoning and Numerical Ability, General Science and Mathematical Aptitude, and General Knowledge, each requiring a separate 40% qualifying minimum. This mock covers English and Reasoning and Numerical Ability only, in the same equal proportion: 24 questions (12 each) in 29 minutes. General Science and Mathematical Aptitude is not covered, since the Navy officially bundles calculation-safe Mathematical Aptitude together with General Science facts as a single section with no published internal question-count split, so the two cannot be honestly separated. General Knowledge is excluded outright, since it depends on facts that carry higher correctness risk for self-authored content.',
+          sectionBreakdown: [
+            { name: 'English', questions: 12, marks: 48 },
+            { name: 'Reasoning and Numerical Ability', questions: 12, marks: 48 },
+          ],
+          timerNote: 'Single composite 29-minute timer for both sections combined: no sectional lock, matching the official exam\'s single continuous session',
+          sourceUrl: INET_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'english-and-reasoning-numerical-ability-full-mock-1', name: 'English and Reasoning & Numerical Ability Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 29, marksPerCorrect: 4, negativeMarking: 1, scoringNote: '1 mark deducted per wrong answer, matching the official INET scheme. Raw score out of 96 shown here; the official exam is out of 400 across all four sections.', checkedOn: '16 August 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 14, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'reasoning-and-numerical-ability-sectional-1', name: 'Reasoning and Numerical Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning and Numerical Ability', duration: 15, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
         ],
       },
     ],
