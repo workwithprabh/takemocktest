@@ -369,7 +369,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('AILET UG', 'Institute', 'ailet'),
           exam('AILET PG', 'Institute'),
           exam('SLAT', 'Institute', 'slat'),
-          exam('MH CET Law: 5 Year LLB', 'State'),
+          exam('MH CET Law: 5 Year LLB', 'State', 'mh-cet-law'),
           exam('MH CET Law: 3 Year LLB', 'State'),
           exam('AP LAWCET', 'State'),
           exam('TG LAWCET', 'State'),

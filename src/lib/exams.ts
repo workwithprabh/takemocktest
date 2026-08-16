@@ -60,7 +60,8 @@ export type ExamSlug =
   | 'navy-ssr'
   | 'clat'
   | 'ailet'
-  | 'slat';
+  | 'slat'
+  | 'mh-cet-law';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -186,6 +187,7 @@ const NAVY_SSR_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/select
 const CLAT_OFFICIAL_PAGE = 'https://consortiumofnlus.ac.in/';
 const AILET_OFFICIAL_PAGE = 'https://nationallawuniversitydelhi.in/';
 const SLAT_OFFICIAL_PAGE = 'https://www.slat-test.org/';
+const MH_CET_LAW_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5683,6 +5685,44 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'legal-reasoning-sectional-1', name: 'Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
           { id: 'analytical-reasoning-sectional-1', name: 'Analytical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
           { id: 'reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reading Comprehension', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'mh-cet-law': {
+    slug: 'mh-cet-law',
+    name: 'MH CET Law',
+    fullName: 'MH CET Law (5-Year LLB)',
+    category: 'Law',
+    stages: [
+      {
+        id: 'legal-logical-english-mathematics',
+        name: 'Legal Aptitude, Logical Reasoning, English and Mathematics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Legal Aptitude and Legal Reasoning', 'Logical and Analytical Reasoning', 'English Language', 'Mathematics Aptitude'],
+          totalQuestions: 24,
+          totalMarks: 24,
+          duration: 24,
+          negativeMarking: 0,
+          note: 'The official MH CET Law (5-Year LLB) written test has 120 questions for 120 marks in 2 hours, 1 mark per correct answer, no negative marking, across five sections: Legal Aptitude and Legal Reasoning (32 questions), General Knowledge and Current Affairs (24 questions), Logical and Analytical Reasoning (32 questions), English Language (24 questions), and Mathematics Aptitude (8 questions). This mock covers Legal Aptitude and Legal Reasoning, Logical and Analytical Reasoning, English Language, and Mathematics Aptitude, in the same 4:4:3:1 proportion as the official exam: 24 questions (8 Legal Aptitude and Legal Reasoning, 8 Logical and Analytical Reasoning, 6 English, 2 Mathematics). Every Legal Aptitude and Legal Reasoning question here states its own legal principle and facts in the passage, matching the official syllabus description that the section tests how a candidate applies legal propositions to facts, not memorised law. General Knowledge and Current Affairs is not covered, since it depends on facts that carry higher correctness risk for self-authored content.',
+          sectionBreakdown: [
+            { name: 'Legal Aptitude and Legal Reasoning', questions: 8, marks: 8 },
+            { name: 'Logical and Analytical Reasoning', questions: 8, marks: 8 },
+            { name: 'English Language', questions: 6, marks: 6 },
+            { name: 'Mathematics Aptitude', questions: 2, marks: 2 },
+          ],
+          timerNote: 'Single composite 24-minute timer for all four sections combined: no sectional lock, matching the official test\'s single continuous session',
+          sourceUrl: MH_CET_LAW_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'legal-logical-english-mathematics-full-mock-1', name: 'Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 24, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official MH CET Law scheme. Raw score out of 24 shown here; the official exam is out of 120 across all five sections.', checkedOn: '16 August 2026' },
+          { id: 'legal-aptitude-and-legal-reasoning-sectional-1', name: 'Legal Aptitude and Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Aptitude and Legal Reasoning', duration: 8, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'logical-and-analytical-reasoning-sectional-1', name: 'Logical and Analytical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical and Analytical Reasoning', duration: 8, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'english-language-sectional-1', name: 'English Language Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Language', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'mathematics-aptitude-sectional-1', name: 'Mathematics Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics Aptitude', duration: 2, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
         ],
       },
     ],
