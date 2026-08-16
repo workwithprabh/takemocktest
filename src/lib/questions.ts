@@ -265,6 +265,7 @@ import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1 } from './question-banks/clat
 import { AILET_ENGLISH_AND_LOGICAL_REASONING_1 } from './question-banks/ailet-english-and-logical-reasoning-combined-1';
 import { SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1 } from './question-banks/slat-logical-legal-analytical-reading-combined-1';
 import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1 } from './question-banks/mh-cet-law-legal-logical-english-mathematics-combined-1';
+import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -876,6 +877,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'mh-cet-law/logical-and-analytical-reasoning-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'Logical and Analytical Reasoning'),
   'mh-cet-law/english-language-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'English Language'),
   'mh-cet-law/mathematics-aptitude-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'Mathematics Aptitude'),
+  'mh-cet-law-3-year/legal-logical-english-full-mock-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1,
+  'mh-cet-law-3-year/legal-aptitude-and-legal-reasoning-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'Legal Aptitude and Legal Reasoning'),
+  'mh-cet-law-3-year/logical-and-analytical-reasoning-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'Logical and Analytical Reasoning'),
+  'mh-cet-law-3-year/english-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'English'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1426,6 +1431,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 6
     : testId.includes('mh-cet-law/mathematics-aptitude-sectional')
     ? 2
+    : testId.includes('mh-cet-law-3-year/legal-logical-english-full-mock')
+    ? 22
+    : testId.includes('mh-cet-law-3-year/legal-aptitude-and-legal-reasoning-sectional')
+    ? 6
+    : testId.includes('mh-cet-law-3-year/logical-and-analytical-reasoning-sectional')
+    ? 6
+    : testId.includes('mh-cet-law-3-year/english-sectional')
+    ? 10
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2059,6 +2072,11 @@ const mhCetLawLegalLogicalEnglishMathematicsLayout = [
   { section: 'English Language', count: 6 },
   { section: 'Mathematics Aptitude', count: 2 },
 ];
+const mhCetLaw3YearLegalLogicalEnglishLayout = [
+  { section: 'Legal Aptitude and Legal Reasoning', count: 6 },
+  { section: 'Logical and Analytical Reasoning', count: 6 },
+  { section: 'English', count: 10 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -2150,7 +2168,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                       ? slatLogicalLegalAnalyticalReadingLayout
                                                                                       : testId.includes('mh-cet-law/legal-logical-english-mathematics-full-mock')
                                                                                         ? mhCetLawLegalLogicalEnglishMathematicsLayout
-                                                                                        : fullMockLayouts[testId.split('/')[0]];
+                                                                                        : testId.includes('mh-cet-law-3-year/legal-logical-english-full-mock')
+                                                                                          ? mhCetLaw3YearLegalLogicalEnglishLayout
+                                                                                          : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2531,6 +2551,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1[8],
     MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1[16],
     MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1[22],
+  ],
+  'mh-cet-law-3-year': [
+    MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1[0],
+    MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1[6],
+    MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1[12],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning
