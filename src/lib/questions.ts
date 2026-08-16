@@ -256,6 +256,7 @@ import { NDA_MATHEMATICS_1 } from './question-banks/nda-mathematics-combined-1';
 import { NDA_GENERAL_ABILITY_TEST_ENGLISH_1 } from './question-banks/nda-general-ability-test-english-combined-1';
 import { CDS_ELEMENTARY_MATHEMATICS_1 } from './question-banks/cds-elementary-mathematics-combined-1';
 import { CDS_ENGLISH_1 } from './question-banks/cds-english-combined-1';
+import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_1 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -833,6 +834,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'cds/english-full-mock-1': CDS_ENGLISH_1,
   'cds/grammar-and-usage-sectional-1': CDS_ENGLISH_1.filter((question) => question.section === 'Grammar and Usage'),
   'cds/vocabulary-and-comprehension-sectional-1': CDS_ENGLISH_1.filter((question) => question.section === 'Vocabulary and Comprehension'),
+  'afcat/verbal-numerical-and-reasoning-full-mock-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1,
+  'afcat/verbal-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Verbal Ability'),
+  'afcat/numerical-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Numerical Ability'),
+  'afcat/reasoning-and-military-aptitude-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Reasoning and Military Aptitude'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1315,6 +1320,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 6
     : testId.includes('cds/vocabulary-and-comprehension-sectional')
     ? 6
+    : testId.includes('afcat/verbal-numerical-and-reasoning-full-mock')
+    ? 24
+    : testId.includes('afcat/verbal-ability-sectional')
+    ? 8
+    : testId.includes('afcat/numerical-ability-sectional')
+    ? 8
+    : testId.includes('afcat/reasoning-and-military-aptitude-sectional')
+    ? 8
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1905,6 +1918,11 @@ const cdsEnglishLayout = [
   { section: 'Grammar and Usage', count: 6 },
   { section: 'Vocabulary and Comprehension', count: 6 },
 ];
+const afcatVerbalNumericalAndReasoningLayout = [
+  { section: 'Verbal Ability', count: 8 },
+  { section: 'Numerical Ability', count: 8 },
+  { section: 'Reasoning and Military Aptitude', count: 8 },
+];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
@@ -1978,7 +1996,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                     ? cdsElementaryMathematicsLayout
                                                                     : testId.includes('cds/english-full-mock')
                                                                       ? cdsEnglishLayout
-                                                                      : fullMockLayouts[testId.split('/')[0]];
+                                                                      : testId.includes('afcat/verbal-numerical-and-reasoning-full-mock')
+                                                                        ? afcatVerbalNumericalAndReasoningLayout
+                                                                        : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -2317,6 +2337,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'cds': [
     CDS_ELEMENTARY_MATHEMATICS_1[0],
     CDS_ENGLISH_1[0],
+  ],
+  'afcat': [
+    AFCAT_VERBAL_NUMERICAL_AND_REASONING_1[0],
+    AFCAT_VERBAL_NUMERICAL_AND_REASONING_1[16],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

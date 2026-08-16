@@ -52,7 +52,8 @@ export type ExamSlug =
   | 'ca-foundation'
   | 'cma-foundation'
   | 'nda'
-  | 'cds';
+  | 'cds'
+  | 'afcat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -170,6 +171,7 @@ const CA_FOUNDATION_PAPER3_SYLLABUS_PAGE = 'https://www.icai.org/post/sm-foundat
 const CMA_FOUNDATION_STUDY_MATERIALS_PAGE = 'https://icmai.in/ClntStudents/Foundation_Study_Materials';
 const NDA_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination';
 const CDS_EXAMINATION_PAGE = 'https://upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination';
+const AFCAT_OFFICIAL_PAGE = 'https://afcat.cdac.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5385,6 +5387,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-full-mock-1', name: 'English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 12, marksPerCorrect: 1, negativeMarking: 0.33, scoringNote: 'One-third (0.33) of a mark deducted per wrong answer, matching the official negative-marking ratio. Raw score out of 12 shown here; the official paper is out of 100 across 120 questions.', checkedOn: '16 August 2026' },
           { id: 'grammar-and-usage-sectional-1', name: 'Grammar and Usage Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Grammar and Usage', duration: 6, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
           { id: 'vocabulary-and-comprehension-sectional-1', name: 'Vocabulary and Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Vocabulary and Comprehension', duration: 6, marksPerCorrect: 1, negativeMarking: 0.33, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'afcat': {
+    slug: 'afcat',
+    name: 'AFCAT',
+    fullName: 'AFCAT (Air Force Common Admission Test)',
+    category: 'Defence',
+    stages: [
+      {
+        id: 'verbal-numerical-and-reasoning',
+        name: 'Verbal, Numerical and Reasoning',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Verbal Ability', 'Numerical Ability', 'Reasoning and Military Aptitude'],
+          totalQuestions: 24,
+          totalMarks: 72,
+          duration: 29,
+          negativeMarking: 1,
+          note: 'The official AFCAT has 100 questions for 300 marks in 2 hours, across four equally weighted sections (75 marks each): General Awareness, Verbal Ability in English, Numerical Ability, and Reasoning and Military Aptitude Test, each question carrying 3 marks with 1 mark deducted per wrong answer. This mock covers the three non-General-Awareness sections in the same proportion: 24 questions in 29 minutes. General Awareness is not covered, since it depends on general-knowledge facts that carry higher correctness risk for self-authored content. The "Military Aptitude" portion tested here is spatial and direction-sense reasoning, not military factual knowledge.',
+          sectionBreakdown: [
+            { name: 'Verbal Ability', questions: 8, marks: 24 },
+            { name: 'Numerical Ability', questions: 8, marks: 24 },
+            { name: 'Reasoning and Military Aptitude', questions: 8, marks: 24 },
+          ],
+          timerNote: 'Single composite 29-minute timer for all three sections combined: no sectional lock, matching the official exam\'s single continuous window',
+          sourceUrl: AFCAT_OFFICIAL_PAGE,
+          checkedOn: '16 August 2026',
+        },
+        tests: [
+          { id: 'verbal-numerical-and-reasoning-full-mock-1', name: 'Verbal, Numerical and Reasoning Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 29, marksPerCorrect: 3, negativeMarking: 1, scoringNote: '1 mark deducted per wrong answer, matching the official AFCAT scheme. Raw score out of 72 shown here; the official test is out of 300 across all four sections.', checkedOn: '16 August 2026' },
+          { id: 'verbal-ability-sectional-1', name: 'Verbal Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability', duration: 10, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'numerical-ability-sectional-1', name: 'Numerical Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numerical Ability', duration: 10, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'reasoning-and-military-aptitude-sectional-1', name: 'Reasoning and Military Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning and Military Aptitude', duration: 9, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '16 August 2026' },
         ],
       },
     ],
