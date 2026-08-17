@@ -32,3 +32,17 @@ body {
   from { transform: scale(0.92); opacity: 0.6; }
   to { transform: scale(1); opacity: 1; }
 }
+
+@keyframes status-ring {
+  75%, 100% { transform: scale(2.4); opacity: 0; }
+}
+
+.status-ring {
+  animation: status-ring 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-ring {
+    animation: none;
+  }
+}

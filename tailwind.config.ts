@@ -1,8 +1,7 @@
 import type { Config } from 'tailwindcss';
 
-// Monochrome design system — a single-hue ink tonal ramp plus two
-// functional colors reserved strictly for the test-results screen
-// (correct/incorrect). No other color exists in this palette.
+// Ink remains the site foundation. Action, live and attention are reserved
+// semantic accents for interactive controls and time-sensitive exam states.
 const config: Config = {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
@@ -32,6 +31,27 @@ const config: Config = {
           700: '#1B2340',
           800: '#101730',
           900: '#0A0F20',
+        },
+        action: {
+          50: '#EEF4FF',
+          100: '#DCE8FF',
+          600: '#2457D6',
+          700: '#1D46AD',
+          800: '#173987',
+        },
+        live: {
+          50: '#EAF8F4',
+          100: '#CDEDE3',
+          600: '#087A63',
+          700: '#06624F',
+          800: '#044A3C',
+        },
+        attention: {
+          50: '#FFF7E6',
+          100: '#FDE8B2',
+          600: '#B85C00',
+          700: '#8F4500',
+          800: '#703600',
         },
         // Reserved for the test-results screen only (score breakdown,
         // right/wrong indicators) — never for buttons, links, or badges.
