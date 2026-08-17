@@ -14,6 +14,7 @@ export interface ExamCycle {
   sourceName: string;
   sourceUrl: string;
   primaryAction: { label: string; href: string };
+  nextEvent: { label: string; startsAt: string; endsAt: string };
   lifecycle: { label: string; state: CycleState }[];
   importantDates: {
     label: string;
@@ -52,6 +53,11 @@ const EXAM_CYCLES: Partial<Record<ExamSlug, ExamCycle>> = {
     sourceName: 'Union Public Service Commission',
     sourceUrl: UPSC_MAINS_2026,
     primaryAction: { label: 'View official timetable', href: UPSC_MAINS_TIMETABLE_2026 },
+    nextEvent: {
+      label: 'Main Examination',
+      startsAt: '2026-08-21T09:00:00+05:30',
+      endsAt: '2026-08-30T17:30:00+05:30',
+    },
     lifecycle: [
       { label: 'Notification', state: 'Completed' },
       { label: 'Application', state: 'Completed' },
