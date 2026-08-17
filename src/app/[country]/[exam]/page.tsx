@@ -5,6 +5,7 @@ import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getUpdatesForExam } from '@/lib/updates';
 
 export function generateStaticParams() {
   return EXAM_LIST.map((exam) => ({ exam: exam.slug }));
@@ -41,6 +42,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
 
   const hasCheckedTests = getCheckedTestCount(exam) > 0;
   const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
+  const latestExamUpdates = getUpdatesForExam(exam.slug, 3);
   const links = [
     {
       href: 'mock-test',
@@ -103,6 +105,30 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
           </Link>
         ))}
       </div>
+
+      {latestExamUpdates.length > 0 && (
+        <section className="mt-12" aria-labelledby="exam-updates-heading">
+          <div className="mb-4 flex items-end justify-between gap-4">
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">Official-source summaries</p>
+              <h2 id="exam-updates-heading" className="text-lg font-bold text-ink-900">Latest {exam.name} updates</h2>
+            </div>
+            <Link href={`/${country}/exam-updates?exam=${exam.slug}`} className="text-sm font-semibold text-ink-900 hover:underline">View all</Link>
+          </div>
+          <div className="divide-y divide-ink-200 border border-ink-200 bg-white">
+            {latestExamUpdates.map((update) => (
+              <Link key={update.slug} href={`/${country}/exam-updates/${update.slug}`} className="grid gap-2 px-4 py-4 transition hover:bg-ink-50 sm:grid-cols-[110px_1fr_auto] sm:items-center">
+                <time dateTime={update.publishedAt} className="text-xs font-semibold text-ink-500">{formatUpdateDate(update.publishedAt)}</time>
+                <span>
+                  <span className={`mr-2 px-2 py-1 text-[10px] font-semibold ${UPDATE_CATEGORY_STYLES[update.category]}`}>{update.category}</span>
+                  <span className="text-sm font-semibold text-ink-900">{update.headline}</span>
+                </span>
+                <span className="text-ink-500" aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {faqs.length > 0 && (
         <div className="mt-12 max-w-2xl">

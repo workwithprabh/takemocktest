@@ -67,6 +67,7 @@ export default function BottomNav({ country }: { country: string }) {
           }`}
         >
           {[
+            ['Exam updates', `/${country}/exam-updates`],
             ['Study resources', `/${country}/blog`],
             ['About', `/${country}/about`],
             ['Contact', `/${country}/contact`],

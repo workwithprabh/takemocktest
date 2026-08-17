@@ -6,7 +6,7 @@ import OMRBubble from '@/components/OMRBubble';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { CATALOG_EXAM_COUNT, EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { organizationSchema, websiteSchema, faqPageSchema } from '@/lib/schema';
-import { UPDATE_CATEGORY_STYLES, getLatestUpdates } from '@/lib/updates';
+import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
 import { getQuestionsForTest } from '@/lib/questions';
 import { pageMetadata } from '@/lib/metadata';
 
@@ -218,28 +218,36 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         </section>
 
         {latestUpdates.length > 0 && (
-          <>
-            <div className="mb-6">
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Stay informed</p>
-              <h2 className="font-sans text-2xl font-bold text-ink-900">Latest exam updates</h2>
+          <section className="mb-20" aria-labelledby="latest-updates-heading">
+            <div className="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Verified at the official source</p>
+                <h2 id="latest-updates-heading" className="font-sans text-2xl font-bold text-ink-900 md:text-3xl">Latest exam updates</h2>
+                <p className="mt-2 max-w-2xl text-sm leading-6 text-ink-500">Important notices connected to the exam page and practice resource you need next.</p>
+              </div>
+              <Link href={`/${country}/exam-updates`} className="text-sm font-semibold text-ink-900 hover:underline">View all updates</Link>
             </div>
-            <div className="mb-20 divide-y divide-ink-200 border border-ink-200 bg-white">
+            <div className="divide-y divide-ink-200 border border-ink-200 bg-white">
               {latestUpdates.map((update) => (
-                <a
-                  key={update.id}
-                  href={update.link}
-                  className="group flex flex-col gap-2 px-4 py-4 transition hover:bg-ink-50 sm:flex-row sm:items-center sm:gap-4 sm:px-5"
+                <Link
+                  key={update.slug}
+                  href={`/${country}/exam-updates/${update.slug}`}
+                  className="group grid gap-3 px-4 py-4 transition hover:bg-ink-50 sm:grid-cols-[105px_1fr_auto] sm:items-center sm:px-5"
                 >
-                  <span className={`w-fit flex-shrink-0 px-2 py-1 text-xs font-semibold ${UPDATE_CATEGORY_STYLES[update.category]}`}>
-                    {update.category}
+                  <time dateTime={update.publishedAt} className="text-xs font-semibold text-ink-500">{formatUpdateDate(update.publishedAt)}</time>
+                  <span>
+                    <span className="mb-1.5 flex flex-wrap items-center gap-2">
+                      <span className={`px-2 py-1 text-[10px] font-semibold ${UPDATE_CATEGORY_STYLES[update.category]}`}>{update.category}</span>
+                      <span className="text-xs font-semibold text-ink-700">{update.examName}</span>
+                    </span>
+                    <span className="block text-sm font-semibold leading-5 text-ink-900 group-hover:underline">{update.headline}</span>
+                    <span className="mt-1 block text-xs text-ink-500">Source: {update.sourceName}</span>
                   </span>
-                  <span className="flex-1 text-sm font-medium text-ink-900 group-hover:underline">{update.headline}</span>
-                  <span className="flex-shrink-0 text-xs text-ink-500">{update.date}</span>
-                  <span className="hidden text-ink-500 sm:block" aria-hidden="true">→</span>
-                </a>
+                  <span className="hidden h-9 w-9 items-center justify-center bg-ink-900 text-white sm:flex" aria-hidden="true">→</span>
+                </Link>
               ))}
             </div>
-          </>
+          </section>
         )}
 
         <div className="mb-20 grid gap-7 bg-ink-900 px-6 py-8 text-white md:grid-cols-[0.8fr_1.2fr] md:gap-12 md:px-10 md:py-10">

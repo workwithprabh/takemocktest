@@ -4,6 +4,7 @@ import { EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { BLOG_POSTS } from '@/lib/blog';
 import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
+import { UPDATES } from '@/lib/updates';
 
 export const dynamic = 'force-static';
 
@@ -23,6 +24,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const country of COUNTRIES) {
     entries.push({ url: `${SITE_URL}/${country}`, changeFrequency: 'daily', priority: 1 });
     entries.push({ url: `${SITE_URL}/${country}/exams`, changeFrequency: 'weekly', priority: 0.9 });
+    entries.push({ url: `${SITE_URL}/${country}/exam-updates`, changeFrequency: 'daily', priority: 0.8 });
+    for (const update of UPDATES) {
+      entries.push({
+        url: `${SITE_URL}/${country}/exam-updates/${update.slug}`,
+        lastModified: update.modifiedAt,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    }
     entries.push({
       url: `${SITE_URL}/${country}/blog`,
       lastModified: latestPost ? toLastModified(latestPost.publishedAt) : undefined,
