@@ -66,7 +66,8 @@ export type ExamSlug =
   | 'cat'
   | 'cmat'
   | 'nmat'
-  | 'snap';
+  | 'snap'
+  | 'atma';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -198,6 +199,7 @@ const CAT_OFFICIAL_PAGE = 'https://iimcat.ac.in/';
 const CMAT_OFFICIAL_PAGE = 'https://cmat.nta.nic.in/';
 const NMAT_OFFICIAL_PAGE = 'https://www.mba.com/exams/nmat';
 const SNAP_OFFICIAL_PAGE = 'https://www.snaptest.org/snap-exam-syllabus.html';
+const ATMA_OFFICIAL_PAGE = 'https://apply.atmaaims.com/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5913,6 +5915,48 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'general-english-sectional-1', name: 'General English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General English', duration: 15, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
           { id: 'analytical-and-logical-reasoning-sectional-1', name: 'Analytical and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical and Logical Reasoning', duration: 25, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
           { id: 'quantitative-di-ds-sectional-1', name: 'Quantitative, DI and DS Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative, Data Interpretation and Data Sufficiency', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
+        ],
+      },
+    ],
+  },
+  'atma': {
+    slug: 'atma',
+    name: 'ATMA',
+    fullName: 'AIMS Test for Management Admissions',
+    category: 'Management',
+    stages: [
+      {
+        id: 'analytical-reasoning-verbal-quantitative-skills',
+        name: 'Analytical Reasoning Skills, Verbal Skills, and Quantitative Skills',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Analytical Reasoning Skills I', 'Analytical Reasoning Skills II', 'Verbal Skills I', 'Verbal Skills II', 'Quantitative Skills I', 'Quantitative Skills II'],
+          totalQuestions: 60,
+          totalMarks: 60,
+          duration: 60,
+          negativeMarking: 0.25,
+          note: 'The official ATMA (conducted by AIMS, the Association of Indian Management Schools) has 180 questions for 180 marks in 3 hours, +1 for each correct answer and -0.25 for a wrong one, across six equal 30-question sections: Analytical Reasoning Skills I and II, Verbal Skills I and II, and Quantitative Skills I and II. Each of the six sections has its own fixed 30-minute time limit with no carryover: once a section ends, you cannot return to it. This mock covers all six sections in equal proportion, scaled down to 10 questions per section (60 questions total) with the same six 10-minute sectional locks and the same +1/-0.25 marking scheme. All six sections are skill-based (logical reasoning, vocabulary and comprehension, calculation), not fact-recall, so no section needed excluding for content-risk reasons.',
+          sectionBreakdown: [
+            { name: 'Analytical Reasoning Skills I', questions: 10, marks: 10, duration: 10 },
+            { name: 'Analytical Reasoning Skills II', questions: 10, marks: 10, duration: 10 },
+            { name: 'Verbal Skills I', questions: 10, marks: 10, duration: 10 },
+            { name: 'Verbal Skills II', questions: 10, marks: 10, duration: 10 },
+            { name: 'Quantitative Skills I', questions: 10, marks: 10, duration: 10 },
+            { name: 'Quantitative Skills II', questions: 10, marks: 10, duration: 10 },
+          ],
+          timerNote: 'Six separately timed sectional locks (10 minutes each), in fixed order (Analytical Reasoning Skills I and II, then Verbal Skills I and II, then Quantitative Skills I and II): once a section\'s time runs out or you move on, you cannot return to it, matching the official ATMA\'s fixed 30-minute-per-section time limit with no carryover, scaled down proportionally',
+          sourceUrl: ATMA_OFFICIAL_PAGE,
+          checkedOn: '17 August 2026',
+        },
+        tests: [
+          { id: 'analytical-reasoning-verbal-quantitative-skills-full-mock-1', name: 'Analytical Reasoning Skills, Verbal Skills, and Quantitative Skills Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, sectionDuration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
+          { id: 'analytical-reasoning-skills-1-sectional-1', name: 'Analytical Reasoning Skills I Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical Reasoning Skills I', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
+          { id: 'analytical-reasoning-skills-2-sectional-1', name: 'Analytical Reasoning Skills II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical Reasoning Skills II', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
+          { id: 'verbal-skills-1-sectional-1', name: 'Verbal Skills I Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Skills I', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
+          { id: 'verbal-skills-2-sectional-1', name: 'Verbal Skills II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Skills II', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
+          { id: 'quantitative-skills-1-sectional-1', name: 'Quantitative Skills I Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Skills I', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
+          { id: 'quantitative-skills-2-sectional-1', name: 'Quantitative Skills II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Skills II', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
         ],
       },
     ],

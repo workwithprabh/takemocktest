@@ -270,6 +270,7 @@ import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1
 import { CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-qtdi-logical-reasoning-language-comprehension-combined-1';
 import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-1';
 import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
+import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -901,6 +902,13 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'snap/general-english-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'General English'),
   'snap/analytical-and-logical-reasoning-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'Analytical and Logical Reasoning'),
   'snap/quantitative-di-ds-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'Quantitative, Data Interpretation and Data Sufficiency'),
+  'atma/analytical-reasoning-verbal-quantitative-skills-full-mock-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1,
+  'atma/analytical-reasoning-skills-1-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Analytical Reasoning Skills I'),
+  'atma/analytical-reasoning-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Analytical Reasoning Skills II'),
+  'atma/verbal-skills-1-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Verbal Skills I'),
+  'atma/verbal-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Verbal Skills II'),
+  'atma/quantitative-skills-1-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Quantitative Skills I'),
+  'atma/quantitative-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Quantitative Skills II'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1491,6 +1499,20 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 25
     : testId.includes('snap/quantitative-di-ds-sectional')
     ? 20
+    : testId.includes('atma/analytical-reasoning-verbal-quantitative-skills-full-mock')
+    ? 60
+    : testId.includes('atma/analytical-reasoning-skills-1-sectional')
+    ? 10
+    : testId.includes('atma/analytical-reasoning-skills-2-sectional')
+    ? 10
+    : testId.includes('atma/verbal-skills-1-sectional')
+    ? 10
+    : testId.includes('atma/verbal-skills-2-sectional')
+    ? 10
+    : testId.includes('atma/quantitative-skills-1-sectional')
+    ? 10
+    : testId.includes('atma/quantitative-skills-2-sectional')
+    ? 10
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1724,6 +1746,14 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'General English', count: 15 },
     { section: 'Analytical and Logical Reasoning', count: 25 },
     { section: 'Quantitative, Data Interpretation and Data Sufficiency', count: 20 },
+  ],
+  'atma': [
+    { section: 'Analytical Reasoning Skills I', count: 10 },
+    { section: 'Analytical Reasoning Skills II', count: 10 },
+    { section: 'Verbal Skills I', count: 10 },
+    { section: 'Verbal Skills II', count: 10 },
+    { section: 'Quantitative Skills I', count: 10 },
+    { section: 'Quantitative Skills II', count: 10 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2652,6 +2682,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     SNAP_ENGLISH_REASONING_QUANT_1[0],
     SNAP_ENGLISH_REASONING_QUANT_1[15],
     SNAP_ENGLISH_REASONING_QUANT_1[40],
+  ],
+  'atma': [
+    ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[0],
+    ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[20],
+    ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[40],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

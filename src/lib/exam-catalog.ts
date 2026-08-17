@@ -261,7 +261,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('MAT', 'National'),
           exam('NMAT by GMAC', 'National', 'nmat'),
           exam('SNAP', 'Institute', 'snap'),
-          exam('ATMA', 'National'),
+          exam('ATMA', 'National', 'atma'),
           exam('MICAT', 'Institute'),
           exam('IBSAT', 'Institute'),
           exam('MAH MBA CET', 'State'),
