@@ -263,7 +263,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('SNAP', 'Institute', 'snap'),
           exam('ATMA', 'National', 'atma'),
           exam('MICAT', 'Institute'),
-          exam('IBSAT', 'Institute'),
+          exam('IBSAT', 'Institute', 'ibsat'),
           exam('MAH MBA CET', 'State'),
           exam('TANCET MBA', 'State'),
           exam('KMAT Karnataka', 'State'),

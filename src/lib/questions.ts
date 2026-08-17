@@ -271,6 +271,7 @@ import { CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1 } from './question
 import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-1';
 import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
+import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -909,6 +910,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'atma/verbal-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Verbal Skills II'),
   'atma/quantitative-skills-1-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Quantitative Skills I'),
   'atma/quantitative-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Quantitative Skills II'),
+  'ibsat/verbal-ability-reading-comprehension-quantitative-aptitude-data-adequacy-and-di-full-mock-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1,
+  'ibsat/verbal-ability-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Verbal Ability'),
+  'ibsat/reading-comprehension-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Reading Comprehension'),
+  'ibsat/quantitative-aptitude-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Quantitative Aptitude'),
+  'ibsat/data-adequacy-and-di-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Data Adequacy and Data Interpretation'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1513,6 +1519,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 10
     : testId.includes('atma/quantitative-skills-2-sectional')
     ? 10
+    : testId.includes('ibsat/verbal-ability-reading-comprehension-quantitative-aptitude-data-adequacy-and-di-full-mock')
+    ? 70
+    : testId.includes('ibsat/verbal-ability-sectional')
+    ? 25
+    : testId.includes('ibsat/reading-comprehension-sectional')
+    ? 15
+    : testId.includes('ibsat/quantitative-aptitude-sectional')
+    ? 15
+    : testId.includes('ibsat/data-adequacy-and-di-sectional')
+    ? 15
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1754,6 +1770,12 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Verbal Skills II', count: 10 },
     { section: 'Quantitative Skills I', count: 10 },
     { section: 'Quantitative Skills II', count: 10 },
+  ],
+  'ibsat': [
+    { section: 'Verbal Ability', count: 25 },
+    { section: 'Reading Comprehension', count: 15 },
+    { section: 'Quantitative Aptitude', count: 15 },
+    { section: 'Data Adequacy and Data Interpretation', count: 15 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2687,6 +2709,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[0],
     ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[20],
     ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[40],
+  ],
+  'ibsat': [
+    IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],
+    IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[25],
+    IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[55],
   ],
   'ssc-cpo': [
     // General Intelligence and Reasoning

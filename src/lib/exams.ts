@@ -67,7 +67,8 @@ export type ExamSlug =
   | 'cmat'
   | 'nmat'
   | 'snap'
-  | 'atma';
+  | 'atma'
+  | 'ibsat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -200,6 +201,7 @@ const CMAT_OFFICIAL_PAGE = 'https://cmat.nta.nic.in/';
 const NMAT_OFFICIAL_PAGE = 'https://www.mba.com/exams/nmat';
 const SNAP_OFFICIAL_PAGE = 'https://www.snaptest.org/snap-exam-syllabus.html';
 const ATMA_OFFICIAL_PAGE = 'https://apply.atmaaims.com/';
+const IBSAT_OFFICIAL_PAGE = 'https://general.ibsindia.org/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5957,6 +5959,44 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'verbal-skills-2-sectional-1', name: 'Verbal Skills II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Skills II', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
           { id: 'quantitative-skills-1-sectional-1', name: 'Quantitative Skills I Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Skills I', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
           { id: 'quantitative-skills-2-sectional-1', name: 'Quantitative Skills II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Skills II', duration: 10, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '17 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ibsat': {
+    slug: 'ibsat',
+    name: 'IBSAT',
+    fullName: 'ICFAI Business Studies Aptitude Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'verbal-ability-reading-comprehension-quantitative-aptitude-data-adequacy-and-di',
+        name: 'Verbal Ability, Reading Comprehension, Quantitative Aptitude, and Data Adequacy and Data Interpretation',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Verbal Ability', 'Reading Comprehension', 'Quantitative Aptitude', 'Data Adequacy and Data Interpretation'],
+          totalQuestions: 70,
+          totalMarks: 70,
+          duration: 60,
+          negativeMarking: 0,
+          note: 'The official IBSAT (conducted by ICFAI Business School) has 140 questions for 140 marks in 120 minutes, 1 mark for each correct answer and no negative marking, with no sectional time limit, across four sections: Verbal Ability (50Q), Reading Comprehension (30Q), Quantitative Aptitude (30Q), and Data Adequacy and Data Interpretation (30Q). This mock covers all four sections in the same proportion, scaled to half: 70 questions (25 Verbal Ability, 15 Reading Comprehension, 15 Quantitative Aptitude, 15 Data Adequacy and Data Interpretation), with the same single composite timer, no sectional lock, and the same +1/no-penalty marking scheme. All four sections are skill-based (vocabulary and grammar, passage-based comprehension, calculation, data logic), not fact-recall, so no section needed excluding for content-risk reasons.',
+          sectionBreakdown: [
+            { name: 'Verbal Ability', questions: 25, marks: 25, duration: 21 },
+            { name: 'Reading Comprehension', questions: 15, marks: 15, duration: 13 },
+            { name: 'Quantitative Aptitude', questions: 15, marks: 15, duration: 13 },
+            { name: 'Data Adequacy and Data Interpretation', questions: 15, marks: 15, duration: 13 },
+          ],
+          timerNote: 'Single composite 60-minute timer for all four sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: IBSAT_OFFICIAL_PAGE,
+          checkedOn: '17 August 2026',
+        },
+        tests: [
+          { id: 'verbal-ability-reading-comprehension-quantitative-aptitude-data-adequacy-and-di-full-mock-1', name: 'Verbal Ability, Reading Comprehension, Quantitative Aptitude, and Data Adequacy and DI Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
+          { id: 'verbal-ability-sectional-1', name: 'Verbal Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability', duration: 21, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
+          { id: 'reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reading Comprehension', duration: 13, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
+          { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 13, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
+          { id: 'data-adequacy-and-di-sectional-1', name: 'Data Adequacy and DI Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Adequacy and Data Interpretation', duration: 13, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
         ],
       },
     ],
