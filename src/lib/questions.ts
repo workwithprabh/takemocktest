@@ -273,6 +273,7 @@ import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-en
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
 import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
+import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -921,6 +922,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'mat/intelligence-critical-reasoning-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Intelligence and Critical Reasoning'),
   'mat/mathematical-skills-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Mathematical Skills'),
   'mat/data-analysis-sufficiency-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Data Analysis and Sufficiency'),
+  'micat/verbal-ability-quantitative-ability-and-data-interpretation-divergent-and-convergent-thinking-full-mock-1': MICAT_VA_QADI_DCT_1,
+  'micat/verbal-ability-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Verbal Ability'),
+  'micat/quantitative-ability-data-interpretation-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
+  'micat/divergent-convergent-thinking-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Divergent and Convergent Thinking'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1545,6 +1550,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 10
     : testId.includes('mat/data-analysis-sufficiency-sectional')
     ? 10
+    : testId.includes('micat/verbal-ability-quantitative-ability-and-data-interpretation-divergent-and-convergent-thinking-full-mock')
+    ? 60
+    : testId.includes('micat/verbal-ability-sectional')
+    ? 20
+    : testId.includes('micat/quantitative-ability-data-interpretation-sectional')
+    ? 20
+    : testId.includes('micat/divergent-convergent-thinking-sectional')
+    ? 20
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1798,6 +1811,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Intelligence and Critical Reasoning', count: 10 },
     { section: 'Mathematical Skills', count: 10 },
     { section: 'Data Analysis and Sufficiency', count: 10 },
+  ],
+  'micat': [
+    { section: 'Verbal Ability', count: 20 },
+    { section: 'Quantitative Ability and Data Interpretation', count: 20 },
+    { section: 'Divergent and Convergent Thinking', count: 20 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2737,6 +2755,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     MAT_LANGUAGE_REASONING_QUANT_DATA_1[10],
     MAT_LANGUAGE_REASONING_QUANT_DATA_1[20],
     MAT_LANGUAGE_REASONING_QUANT_DATA_1[30],
+  ],
+  'micat': [
+    MICAT_VA_QADI_DCT_1[0],
+    MICAT_VA_QADI_DCT_1[20],
+    MICAT_VA_QADI_DCT_1[40],
   ],
   'ibsat': [
     IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],

@@ -69,7 +69,8 @@ export type ExamSlug =
   | 'snap'
   | 'atma'
   | 'ibsat'
-  | 'mat';
+  | 'mat'
+  | 'micat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -204,6 +205,7 @@ const SNAP_OFFICIAL_PAGE = 'https://www.snaptest.org/snap-exam-syllabus.html';
 const ATMA_OFFICIAL_PAGE = 'https://apply.atmaaims.com/';
 const IBSAT_OFFICIAL_PAGE = 'https://general.ibsindia.org/';
 const MAT_OFFICIAL_PAGE = 'https://mat.aima.in/';
+const MICAT_OFFICIAL_PAGE = 'https://www.mica.ac.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6037,6 +6039,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'intelligence-critical-reasoning-sectional-1', name: 'Intelligence and Critical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Intelligence and Critical Reasoning', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
           { id: 'mathematical-skills-sectional-1', name: 'Mathematical Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematical Skills', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
           { id: 'data-analysis-sufficiency-sectional-1', name: 'Data Analysis and Sufficiency Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Analysis and Sufficiency', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+        ],
+      },
+    ],
+  },
+  'micat': {
+    slug: 'micat',
+    name: 'MICAT',
+    fullName: 'MICA Admission Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'verbal-ability-quantitative-ability-and-data-interpretation-divergent-and-convergent-thinking',
+        name: 'Verbal Ability, Quantitative Ability and Data Interpretation, and Divergent and Convergent Thinking',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Verbal Ability', 'Quantitative Ability and Data Interpretation', 'Divergent and Convergent Thinking'],
+          totalQuestions: 60,
+          totalMarks: 60,
+          duration: 60,
+          negativeMarking: 0.25,
+          note: 'The official MICAT (conducted by MICA, Ahmedabad) has three sections: Section A is a Psychometric Test (150 questions, qualifying only, no scored right or wrong answer), Section B is a Descriptive Test (4 subjective, essay-style questions), and Section C is an Aptitude Test with 80 questions for 80 marks in 80 minutes, 1 mark for each correct answer and 0.25 negative marking for each wrong answer, across four equal 20-question sub-sections: Verbal Ability, Quantitative Ability and Data Interpretation, General Awareness, and Divergent and Convergent Thinking. Sections A and B have no auto-gradable multiple-choice answer and are not covered by this mock. Within Section C, General Awareness is not covered, since its official syllabus tests current-affairs and business fact recall rather than reasoning applied to a stated scenario, the same content-risk boundary applied to MAT\'s Economic and Business Environment section. This mock covers the three remaining skill-based sub-sections at their official scale: 60 questions (20 per section), with the same single composite timer and the same +1/-0.25 marking scheme.',
+          sectionBreakdown: [
+            { name: 'Verbal Ability', questions: 20, marks: 20, duration: 20 },
+            { name: 'Quantitative Ability and Data Interpretation', questions: 20, marks: 20, duration: 20 },
+            { name: 'Divergent and Convergent Thinking', questions: 20, marks: 20, duration: 20 },
+          ],
+          timerNote: 'Single composite 60-minute timer for all three sections combined: no sectional lock, matching Section C\'s single combined time allocation on the official paper',
+          sourceUrl: MICAT_OFFICIAL_PAGE,
+          checkedOn: '18 August 2026',
+        },
+        tests: [
+          { id: 'verbal-ability-quantitative-ability-and-data-interpretation-divergent-and-convergent-thinking-full-mock-1', name: 'Verbal Ability, Quantitative Ability and Data Interpretation, and Divergent and Convergent Thinking Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'verbal-ability-sectional-1', name: 'Verbal Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'quantitative-ability-data-interpretation-sectional-1', name: 'Quantitative Ability and Data Interpretation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Ability and Data Interpretation', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'divergent-convergent-thinking-sectional-1', name: 'Divergent and Convergent Thinking Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Divergent and Convergent Thinking', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
         ],
       },
     ],
