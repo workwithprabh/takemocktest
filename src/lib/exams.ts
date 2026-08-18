@@ -68,7 +68,8 @@ export type ExamSlug =
   | 'nmat'
   | 'snap'
   | 'atma'
-  | 'ibsat';
+  | 'ibsat'
+  | 'mat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -202,6 +203,7 @@ const NMAT_OFFICIAL_PAGE = 'https://www.mba.com/exams/nmat';
 const SNAP_OFFICIAL_PAGE = 'https://www.snaptest.org/snap-exam-syllabus.html';
 const ATMA_OFFICIAL_PAGE = 'https://apply.atmaaims.com/';
 const IBSAT_OFFICIAL_PAGE = 'https://general.ibsindia.org/';
+const MAT_OFFICIAL_PAGE = 'https://mat.aima.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -5997,6 +5999,44 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reading Comprehension', duration: 13, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
           { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 13, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
           { id: 'data-adequacy-and-di-sectional-1', name: 'Data Adequacy and DI Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Adequacy and Data Interpretation', duration: 13, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '17 August 2026' },
+        ],
+      },
+    ],
+  },
+  'mat': {
+    slug: 'mat',
+    name: 'MAT',
+    fullName: 'Management Aptitude Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'language-comprehension-intelligence-critical-reasoning-mathematical-skills-data-analysis-sufficiency',
+        name: 'Language Comprehension, Intelligence and Critical Reasoning, Mathematical Skills, and Data Analysis and Sufficiency',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Language Comprehension', 'Intelligence and Critical Reasoning', 'Mathematical Skills', 'Data Analysis and Sufficiency'],
+          totalQuestions: 40,
+          totalMarks: 40,
+          duration: 32,
+          negativeMarking: 0.25,
+          note: 'The official MAT (conducted by AIMA) has 150 questions for 150 marks in 120 minutes, 1 mark for each correct answer and 0.25 negative marking for each wrong answer, with no sectional time limit, across five equal 30-question sections: Language Comprehension, Intelligence and Critical Reasoning, Mathematical Skills, Data Analysis and Sufficiency, and Economic and Business Environment. This mock covers the four skill-based sections in the same proportion, scaled down: 40 questions (10 per section), with the same single composite timer, no sectional lock, and the same +1/-0.25 marking scheme. Economic and Business Environment is not covered, since its official syllabus tests business and economics fact recall rather than reasoning applied to a stated scenario, the same content-risk boundary applied to CMAT\'s Innovation and Entrepreneurship section and CA Foundation\'s Business Economics paper.',
+          sectionBreakdown: [
+            { name: 'Language Comprehension', questions: 10, marks: 10, duration: 8 },
+            { name: 'Intelligence and Critical Reasoning', questions: 10, marks: 10, duration: 8 },
+            { name: 'Mathematical Skills', questions: 10, marks: 10, duration: 8 },
+            { name: 'Data Analysis and Sufficiency', questions: 10, marks: 10, duration: 8 },
+          ],
+          timerNote: 'Single composite 32-minute timer for all four sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: MAT_OFFICIAL_PAGE,
+          checkedOn: '18 August 2026',
+        },
+        tests: [
+          { id: 'language-comprehension-intelligence-critical-reasoning-mathematical-skills-data-analysis-sufficiency-full-mock-1', name: 'Language Comprehension, Intelligence and Critical Reasoning, Mathematical Skills, and Data Analysis and Sufficiency Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 32, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'language-comprehension-sectional-1', name: 'Language Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Comprehension', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'intelligence-critical-reasoning-sectional-1', name: 'Intelligence and Critical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Intelligence and Critical Reasoning', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'mathematical-skills-sectional-1', name: 'Mathematical Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematical Skills', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'data-analysis-sufficiency-sectional-1', name: 'Data Analysis and Sufficiency Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Analysis and Sufficiency', duration: 8, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
         ],
       },
     ],

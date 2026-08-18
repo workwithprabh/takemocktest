@@ -272,6 +272,7 @@ import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks
 import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
 import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
+import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -915,6 +916,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibsat/reading-comprehension-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Reading Comprehension'),
   'ibsat/quantitative-aptitude-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Quantitative Aptitude'),
   'ibsat/data-adequacy-and-di-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Data Adequacy and Data Interpretation'),
+  'mat/language-comprehension-intelligence-critical-reasoning-mathematical-skills-data-analysis-sufficiency-full-mock-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1,
+  'mat/language-comprehension-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Language Comprehension'),
+  'mat/intelligence-critical-reasoning-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Intelligence and Critical Reasoning'),
+  'mat/mathematical-skills-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Mathematical Skills'),
+  'mat/data-analysis-sufficiency-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Data Analysis and Sufficiency'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1529,6 +1535,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 15
     : testId.includes('ibsat/data-adequacy-and-di-sectional')
     ? 15
+    : testId.includes('mat/language-comprehension-intelligence-critical-reasoning-mathematical-skills-data-analysis-sufficiency-full-mock')
+    ? 40
+    : testId.includes('mat/language-comprehension-sectional')
+    ? 10
+    : testId.includes('mat/intelligence-critical-reasoning-sectional')
+    ? 10
+    : testId.includes('mat/mathematical-skills-sectional')
+    ? 10
+    : testId.includes('mat/data-analysis-sufficiency-sectional')
+    ? 10
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1776,6 +1792,12 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Reading Comprehension', count: 15 },
     { section: 'Quantitative Aptitude', count: 15 },
     { section: 'Data Adequacy and Data Interpretation', count: 15 },
+  ],
+  'mat': [
+    { section: 'Language Comprehension', count: 10 },
+    { section: 'Intelligence and Critical Reasoning', count: 10 },
+    { section: 'Mathematical Skills', count: 10 },
+    { section: 'Data Analysis and Sufficiency', count: 10 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2709,6 +2731,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[0],
     ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[20],
     ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1[40],
+  ],
+  'mat': [
+    MAT_LANGUAGE_REASONING_QUANT_DATA_1[0],
+    MAT_LANGUAGE_REASONING_QUANT_DATA_1[10],
+    MAT_LANGUAGE_REASONING_QUANT_DATA_1[20],
+    MAT_LANGUAGE_REASONING_QUANT_DATA_1[30],
   ],
   'ibsat': [
     IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],
