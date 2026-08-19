@@ -274,6 +274,7 @@ import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './questi
 import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
+import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -926,6 +927,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'micat/verbal-ability-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Verbal Ability'),
   'micat/quantitative-ability-data-interpretation-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
   'micat/divergent-convergent-thinking-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Divergent and Convergent Thinking'),
+  'tancet-mba/business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english-full-mock-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1,
+  'tancet-mba/business-situations-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Business Situations'),
+  'tancet-mba/reading-comprehension-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Reading Comprehension'),
+  'tancet-mba/quantitative-aptitude-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Quantitative Aptitude'),
+  'tancet-mba/data-sufficiency-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Data Sufficiency'),
+  'tancet-mba/general-english-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'General English'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1558,6 +1565,18 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 20
     : testId.includes('micat/divergent-convergent-thinking-sectional')
     ? 20
+    : testId.includes('tancet-mba/business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english-full-mock')
+    ? 100
+    : testId.includes('tancet-mba/business-situations-sectional')
+    ? 20
+    : testId.includes('tancet-mba/reading-comprehension-sectional')
+    ? 20
+    : testId.includes('tancet-mba/quantitative-aptitude-sectional')
+    ? 20
+    : testId.includes('tancet-mba/data-sufficiency-sectional')
+    ? 20
+    : testId.includes('tancet-mba/general-english-sectional')
+    ? 20
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1816,6 +1835,13 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Verbal Ability', count: 20 },
     { section: 'Quantitative Ability and Data Interpretation', count: 20 },
     { section: 'Divergent and Convergent Thinking', count: 20 },
+  ],
+  'tancet-mba': [
+    { section: 'Business Situations', count: 20 },
+    { section: 'Reading Comprehension', count: 20 },
+    { section: 'Quantitative Aptitude', count: 20 },
+    { section: 'Data Sufficiency', count: 20 },
+    { section: 'General English', count: 20 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2760,6 +2786,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     MICAT_VA_QADI_DCT_1[0],
     MICAT_VA_QADI_DCT_1[20],
     MICAT_VA_QADI_DCT_1[40],
+  ],
+  'tancet-mba': [
+    TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1[0],
+    TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1[30],
+    TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1[60],
+    TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1[90],
   ],
   'ibsat': [
     IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],

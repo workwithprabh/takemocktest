@@ -70,7 +70,8 @@ export type ExamSlug =
   | 'atma'
   | 'ibsat'
   | 'mat'
-  | 'micat';
+  | 'micat'
+  | 'tancet-mba';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -206,6 +207,7 @@ const ATMA_OFFICIAL_PAGE = 'https://apply.atmaaims.com/';
 const IBSAT_OFFICIAL_PAGE = 'https://general.ibsindia.org/';
 const MAT_OFFICIAL_PAGE = 'https://mat.aima.in/';
 const MICAT_OFFICIAL_PAGE = 'https://www.mica.ac.in/';
+const TANCET_OFFICIAL_PAGE = 'https://tancet.annauniv.edu/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6075,6 +6077,46 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'verbal-ability-sectional-1', name: 'Verbal Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
           { id: 'quantitative-ability-data-interpretation-sectional-1', name: 'Quantitative Ability and Data Interpretation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Ability and Data Interpretation', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
           { id: 'divergent-convergent-thinking-sectional-1', name: 'Divergent and Convergent Thinking Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Divergent and Convergent Thinking', duration: 20, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tancet-mba': {
+    slug: 'tancet-mba',
+    name: 'TANCET MBA',
+    fullName: 'Tamil Nadu Common Entrance Test for MBA',
+    category: 'Management',
+    stages: [
+      {
+        id: 'business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english',
+        name: 'Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency, and General English',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Business Situations', 'Reading Comprehension', 'Quantitative Aptitude', 'Data Sufficiency', 'General English'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 120,
+          negativeMarking: 0.25,
+          note: 'The official TANCET MBA (conducted by Anna University) has 100 questions for 100 marks in 120 minutes, 1 mark for each correct answer and 0.25 negative marking for each wrong answer, with no sectional time limit, across five equal 20-question sections: Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency, and General English. This mock covers all five sections at their official scale: 100 questions (20 per section), with the same single composite timer and the same +1/-0.25 marking scheme. Business Situations tests analytical judgment and decision-making applied to a described business scenario or case, not memorized business facts, so all five sections are skill-based and no section needed excluding for content-risk reasons.',
+          sectionBreakdown: [
+            { name: 'Business Situations', questions: 20, marks: 20, duration: 24 },
+            { name: 'Reading Comprehension', questions: 20, marks: 20, duration: 24 },
+            { name: 'Quantitative Aptitude', questions: 20, marks: 20, duration: 24 },
+            { name: 'Data Sufficiency', questions: 20, marks: 20, duration: 24 },
+            { name: 'General English', questions: 20, marks: 20, duration: 24 },
+          ],
+          timerNote: 'Single composite 120-minute timer for all five sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: TANCET_OFFICIAL_PAGE,
+          checkedOn: '18 August 2026',
+        },
+        tests: [
+          { id: 'business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english-full-mock-1', name: 'Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency, and General English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'business-situations-sectional-1', name: 'Business Situations Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Business Situations', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reading Comprehension', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'data-sufficiency-sectional-1', name: 'Data Sufficiency Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Sufficiency', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+          { id: 'general-english-sectional-1', name: 'General English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General English', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
         ],
       },
     ],
