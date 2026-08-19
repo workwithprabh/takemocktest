@@ -275,6 +275,7 @@ import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-ba
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
 import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
+import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-karnataka-language-mathematical-basic-aptitude-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -933,6 +934,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'tancet-mba/quantitative-aptitude-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Quantitative Aptitude'),
   'tancet-mba/data-sufficiency-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Data Sufficiency'),
   'tancet-mba/general-english-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'General English'),
+  'kmat-karnataka/language-comprehension-mathematical-skills-basic-aptitude-full-mock-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1,
+  'kmat-karnataka/language-comprehension-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Language Comprehension'),
+  'kmat-karnataka/mathematical-skills-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Mathematical Skills'),
+  'kmat-karnataka/basic-aptitude-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Basic Aptitude'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1577,6 +1582,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 20
     : testId.includes('tancet-mba/general-english-sectional')
     ? 20
+    : testId.includes('kmat-karnataka/language-comprehension-mathematical-skills-basic-aptitude-full-mock')
+    ? 120
+    : testId.includes('kmat-karnataka/language-comprehension-sectional')
+    ? 40
+    : testId.includes('kmat-karnataka/mathematical-skills-sectional')
+    ? 40
+    : testId.includes('kmat-karnataka/basic-aptitude-sectional')
+    ? 40
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1842,6 +1855,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Quantitative Aptitude', count: 20 },
     { section: 'Data Sufficiency', count: 20 },
     { section: 'General English', count: 20 },
+  ],
+  'kmat-karnataka': [
+    { section: 'Language Comprehension', count: 40 },
+    { section: 'Mathematical Skills', count: 40 },
+    { section: 'Basic Aptitude', count: 40 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2792,6 +2810,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1[30],
     TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1[60],
     TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1[90],
+  ],
+  'kmat-karnataka': [
+    KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[0],
+    KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[40],
+    KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[80],
   ],
   'ibsat': [
     IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],

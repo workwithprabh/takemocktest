@@ -266,7 +266,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('IBSAT', 'Institute', 'ibsat'),
           exam('MAH MBA CET', 'State'),
           exam('TANCET MBA', 'State', 'tancet-mba'),
-          exam('KMAT Karnataka', 'State'),
+          exam('KMAT Karnataka', 'State', 'kmat-karnataka'),
         ],
       },
       {

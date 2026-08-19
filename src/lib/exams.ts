@@ -71,7 +71,8 @@ export type ExamSlug =
   | 'ibsat'
   | 'mat'
   | 'micat'
-  | 'tancet-mba';
+  | 'tancet-mba'
+  | 'kmat-karnataka';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -208,6 +209,7 @@ const IBSAT_OFFICIAL_PAGE = 'https://general.ibsindia.org/';
 const MAT_OFFICIAL_PAGE = 'https://mat.aima.in/';
 const MICAT_OFFICIAL_PAGE = 'https://www.mica.ac.in/';
 const TANCET_OFFICIAL_PAGE = 'https://tancet.annauniv.edu/';
+const KMAT_KARNATAKA_OFFICIAL_PAGE = 'https://www.kmatindia.com/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6117,6 +6119,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
           { id: 'data-sufficiency-sectional-1', name: 'Data Sufficiency Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Sufficiency', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
           { id: 'general-english-sectional-1', name: 'General English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General English', duration: 24, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '18 August 2026' },
+        ],
+      },
+    ],
+  },
+  'kmat-karnataka': {
+    slug: 'kmat-karnataka',
+    name: 'KMAT Karnataka',
+    fullName: 'Karnataka Management Aptitude Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'language-comprehension-mathematical-skills-basic-aptitude',
+        name: 'Language Comprehension, Mathematical Skills, and Basic Aptitude',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Language Comprehension', 'Mathematical Skills', 'Basic Aptitude'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 0,
+          note: 'The official KMAT Karnataka (conducted by the Karnataka Private Post Graduate Colleges Association) has 120 questions for 120 marks in 120 minutes, 1 mark for each correct answer and no negative marking, with no sectional time limit, across three equal 40-question sections: Language Comprehension, Mathematical Skills, and Basic Aptitude. This mock covers all three sections at their official scale: 120 questions (40 per section), with the same single composite timer and the same +1/no-penalty marking scheme. All three sections are skill-based (grammar, vocabulary, and reading comprehension; arithmetic and quantitative calculation; logical and abstract reasoning), not fact-recall, so no section needed excluding for content-risk reasons.',
+          sectionBreakdown: [
+            { name: 'Language Comprehension', questions: 40, marks: 40, duration: 40 },
+            { name: 'Mathematical Skills', questions: 40, marks: 40, duration: 40 },
+            { name: 'Basic Aptitude', questions: 40, marks: 40, duration: 40 },
+          ],
+          timerNote: 'Single composite 120-minute timer for all three sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: KMAT_KARNATAKA_OFFICIAL_PAGE,
+          checkedOn: '19 August 2026',
+        },
+        tests: [
+          { id: 'language-comprehension-mathematical-skills-basic-aptitude-full-mock-1', name: 'Language Comprehension, Mathematical Skills, and Basic Aptitude Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '19 August 2026' },
+          { id: 'language-comprehension-sectional-1', name: 'Language Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Comprehension', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '19 August 2026' },
+          { id: 'mathematical-skills-sectional-1', name: 'Mathematical Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematical Skills', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '19 August 2026' },
+          { id: 'basic-aptitude-sectional-1', name: 'Basic Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Basic Aptitude', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '19 August 2026' },
         ],
       },
     ],
