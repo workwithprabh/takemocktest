@@ -39,6 +39,7 @@ export type ExamSlug =
   | 'aeee'
   | 'met'
   | 'comedk-uget'
+  | 'iiit-hyderabad-ugee'
   | 'ielts'
   | 'toefl'
   | 'pte'
@@ -175,6 +176,7 @@ const AEEE_2026_ADMISSIONS_PAGE = 'https://aeee.amrita.edu/';
 const MET_2026_BTECH_SYLLABUS_PATTERN =
   'https://evbab.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/btech_met_syllabus_2026.pdf';
 const COMEDK_UGET_2026_NOTIFICATION = 'https://comedk.org/about-uget-and-notification-2026';
+const IIIT_HYDERABAD_UGEE_2026_PROCESS_PAGE = 'https://ugadmissions.iiit.ac.in/ugee-process/';
 const IELTS_ACADEMIC_TEST_PAGE = 'https://ielts.org/take-a-test/test-types/ielts-academic-test';
 const IELTS_GENERAL_TRAINING_READING_PAGE =
   'https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading';
@@ -4748,6 +4750,41 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
           { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
           { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+        ],
+      },
+    ],
+  },
+  'iiit-hyderabad-ugee': {
+    slug: 'iiit-hyderabad-ugee',
+    name: 'IIIT Hyderabad UGEE',
+    shortName: 'IIIT Hyderabad UGEE',
+    fullName: 'IIIT Hyderabad UGEE 2026: Undergraduate Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'ugee',
+        name: 'Undergraduate Entrance Examination',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['SUPR', 'REAP'],
+          totalQuestions: 90,
+          totalMarks: 140,
+          duration: 180,
+          negativeMarking: '25% of each question’s own marks (SUPR -0.25, REAP -0.5)',
+          sectionBreakdown: [
+            { name: 'SUPR', questions: 40, marks: 40, duration: 60 },
+            { name: 'REAP', questions: 50, marks: 100, duration: 120 },
+          ],
+          timerNote: 'Two officially confirmed section timers within a single 180-minute Full Mock: SUPR (Subject Proficiency Test) 60 minutes, then REAP (Research Aptitude Test) 120 minutes, each section locking when its timer ends. This locking sequence is TakeMockTest platform behavior; IIIT Hyderabad’s own computer-based-test navigation between sections was not independently verified during research. Sectional tests use the same official section timings on their own',
+          note: 'UGEE is computer-based with a total duration of 180 minutes, officially split into SUPR (60 minutes) and REAP (120 minutes), both with 25% negative marking. Candidates are first filtered on SUPR performance, then ranked on REAP score for interview shortlisting; the final admission offer is based solely on interview performance. The syllabus is Class 11/12 Physics, Mathematics and Chemistry, and REAP specifically emphasizes critical and creative thinking beyond direct syllabus recall. The current public IIIT Hyderabad UGEE page does not publish an exact question count or marks-per-question scale for the current cycle: this mock’s SUPR (40 questions, +1/-0.25) and REAP (50 questions, +2/-0.5) counts and marking values are corroborated from consistent secondary sources, not an official IIITH publication. TakeMockTest format adaptation. Official UGEE sample materials include item formats not reproduced exactly by this mock interface.',
+          sourceUrl: IIIT_HYDERABAD_UGEE_2026_PROCESS_PAGE,
+          checkedOn: '19 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, sectionDurations: [60, 120], marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'SUPR questions score +1/-0.25 each. REAP questions score +2/-0.5 each. Both are 25% negative marking on that question’s own marks.', checkedOn: '19 August 2026' },
+          { id: 'supr-sectional-1', name: 'SUPR Sectional Test 1', kind: 'sectional', section: 'SUPR', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '19 August 2026' },
+          { id: 'reap-sectional-1', name: 'REAP Sectional Test 1', kind: 'sectional', section: 'REAP', status: 'checked', duration: 120, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn: '19 August 2026' },
         ],
       },
     ],

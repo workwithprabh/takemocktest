@@ -194,6 +194,9 @@ import { COMEDK_UGET_2026_BTECH_FULL_MOCK_1 } from './question-banks/comedk-uget
 import { COMEDK_UGET_2026_BTECH_PHYSICS_SECTIONAL_1 } from './question-banks/comedk-uget-2026-btech-physics-sectional-1';
 import { COMEDK_UGET_2026_BTECH_CHEMISTRY_SECTIONAL_1 } from './question-banks/comedk-uget-2026-btech-chemistry-sectional-1';
 import { COMEDK_UGET_2026_BTECH_MATHEMATICS_SECTIONAL_1 } from './question-banks/comedk-uget-2026-btech-mathematics-sectional-1';
+import { IIIT_HYDERABAD_UGEE_2026_FULL_MOCK_1 } from './question-banks/iiit-hyderabad-ugee-2026-full-mock-1';
+import { IIIT_HYDERABAD_UGEE_2026_SUPR_SECTIONAL_1 } from './question-banks/iiit-hyderabad-ugee-2026-supr-sectional-1';
+import { IIIT_HYDERABAD_UGEE_2026_REAP_SECTIONAL_1 } from './question-banks/iiit-hyderabad-ugee-2026-reap-sectional-1';
 import { SRMJEEE_2026_PCM_FULL_MOCK_1 } from './question-banks/srmjeee-2026-pcm-full-mock-1';
 import { SRMJEEE_2026_PCM_PHYSICS_SECTIONAL_1 } from './question-banks/srmjeee-2026-pcm-physics-sectional-1';
 import { SRMJEEE_2026_PCM_CHEMISTRY_SECTIONAL_1 } from './question-banks/srmjeee-2026-pcm-chemistry-sectional-1';
@@ -1174,6 +1177,11 @@ const COMEDK_UGET_TESTS: Record<string, Question[]> = {
   'comedk-uget/chemistry-sectional-1': COMEDK_UGET_2026_BTECH_CHEMISTRY_SECTIONAL_1,
   'comedk-uget/mathematics-sectional-1': COMEDK_UGET_2026_BTECH_MATHEMATICS_SECTIONAL_1,
 };
+const IIIT_HYDERABAD_UGEE_TESTS: Record<string, Question[]> = {
+  'iiit-hyderabad-ugee/full-mock-1': IIIT_HYDERABAD_UGEE_2026_FULL_MOCK_1,
+  'iiit-hyderabad-ugee/supr-sectional-1': IIIT_HYDERABAD_UGEE_2026_SUPR_SECTIONAL_1,
+  'iiit-hyderabad-ugee/reap-sectional-1': IIIT_HYDERABAD_UGEE_2026_REAP_SECTIONAL_1,
+};
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
   'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
@@ -1216,7 +1224,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/mixed-quick-practice-60m-1': MET_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -1291,6 +1299,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 60
     : testId.includes('comedk-uget/full-mock')
     ? 180
+    : testId.includes('iiit-hyderabad-ugee/full-mock')
+    ? 90
     : testId.includes('ielts/academic-reading-full-mock') || testId.includes('ielts/general-training-reading-full-mock')
     ? 40
     : testId.includes('ielts') && (testId.includes('passage-3') || testId.includes('section-3'))
@@ -1789,6 +1799,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 60
           : testId.includes('comedk-uget/mathematics-sectional')
             ? 60
+          : testId.includes('iiit-hyderabad-ugee/supr-sectional')
+            ? 40
+          : testId.includes('iiit-hyderabad-ugee/reap-sectional')
+            ? 50
           : testId.includes('tier-2-mathematical-abilities') || testId.includes('tier-2-reasoning-general-intelligence')
             ? 30
             : testId.includes('tier-2-english-language-comprehension')
@@ -1927,6 +1941,10 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Physics', count: 60 },
     { section: 'Chemistry', count: 60 },
     { section: 'Mathematics', count: 60 },
+  ],
+  'iiit-hyderabad-ugee': [
+    { section: 'SUPR', count: 40 },
+    { section: 'REAP', count: 50 },
   ],
   'ssc-cgl': [
     { section: 'General Intelligence and Reasoning', count: 25 },
@@ -2707,6 +2725,10 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     COMEDK_UGET_2026_BTECH_PHYSICS_SECTIONAL_1[0],
     COMEDK_UGET_2026_BTECH_CHEMISTRY_SECTIONAL_1[0],
     COMEDK_UGET_2026_BTECH_MATHEMATICS_SECTIONAL_1[0],
+  ],
+  'iiit-hyderabad-ugee': [
+    IIIT_HYDERABAD_UGEE_2026_SUPR_SECTIONAL_1[0],
+    IIIT_HYDERABAD_UGEE_2026_REAP_SECTIONAL_1[0],
   ],
   'ielts': [
     IELTS_ACADEMIC_READING_PASSAGE_1_1[0],
