@@ -144,9 +144,19 @@ short aside, and a period to just start a new sentence. Number ranges get spelle
 
 ## 5. Student persona — who is actually reading this
 
-Indian government/competitive-exam aspirants (SSC, Banking/IBPS, Railways/RRB and similar).
-Grounded in how this segment is actually served today (Testbook, Adda247, PhysicsWallah,
-Gradeup, Telegram/WhatsApp study groups):
+This was originally written as a single persona (Indian government/competitive-exam
+aspirants: SSC, Banking/IBPS, Railways/RRB) because that was the entire catalog at the
+time. As of August 2026 the catalog spans 11 categories (Government Jobs, Engineering,
+Medical, Study Abroad, Management, University & Science, Defence, Law, Teaching & Research,
+Commerce & Professional, Design & Hospitality), and blog content now covers several of
+them too, not just Government Jobs. The traits below still hold across every vertical, a
+CLAT aspirant and an SSC CGL aspirant are equally mobile-first and equally anxious about
+accuracy, so treat this section as the shared baseline persona, not a Government-Jobs-only
+one. What differs by vertical is the *specific* comparison anxiety (which MBA entrance,
+which English test, which state law CET) and the exam vocabulary that needs to stay exact,
+not the underlying behavior. Grounded in how each segment is actually served today
+(Testbook, Adda247, PhysicsWallah, Gradeup, Telegram/WhatsApp study groups for Government
+Jobs; a more scattered mix of coaching-institute blogs and forums for the other verticals):
 
 - **Mobile-first, often on a budget connection.** Most study sessions happen on a phone,
   frequently between classes/work/commute, not at a desk. Page weight and load speed aren't
