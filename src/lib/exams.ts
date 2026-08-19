@@ -38,6 +38,7 @@ export type ExamSlug =
   | 'srmjeee'
   | 'aeee'
   | 'met'
+  | 'comedk-uget'
   | 'ielts'
   | 'toefl'
   | 'pte'
@@ -173,6 +174,7 @@ const SRMJEEE_2026_EXAMINATION_PATTERN =
 const AEEE_2026_ADMISSIONS_PAGE = 'https://aeee.amrita.edu/';
 const MET_2026_BTECH_SYLLABUS_PATTERN =
   'https://evbab.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/btech_met_syllabus_2026.pdf';
+const COMEDK_UGET_2026_NOTIFICATION = 'https://comedk.org/about-uget-and-notification-2026';
 const IELTS_ACADEMIC_TEST_PAGE = 'https://ielts.org/take-a-test/test-types/ielts-academic-test';
 const IELTS_GENERAL_TRAINING_READING_PAGE =
   'https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading';
@@ -4709,6 +4711,43 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', section: 'English', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '13 August 2026' },
           { id: 'mixed-quick-practice-30m-1', name: 'Mixed Quick Practice Test 1 (30 Minutes)', kind: 'quick', status: 'checked', duration: 30, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
           { id: 'mixed-quick-practice-60m-1', name: 'Mixed Quick Practice Test 2 (60 Minutes)', kind: 'quick', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'MCQs score +4/-1/0. Numerical Answer Type questions score +4/0/0.', checkedOn: '13 August 2026' },
+        ],
+      },
+    ],
+  },
+  'comedk-uget': {
+    slug: 'comedk-uget',
+    name: 'COMEDK UGET',
+    shortName: 'COMEDK UGET',
+    fullName: 'COMEDK UGET 2026: B.E./B.Tech (PCM)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.E./B.Tech (PCM)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 180,
+          totalMarks: 180,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 60, marks: 60 },
+            { name: 'Chemistry', questions: 60, marks: 60 },
+            { name: 'Mathematics', questions: 60, marks: 60 },
+          ],
+          timerNote: 'Single 180-minute TakeMockTest practice timer for the Full Mock, covering all three sections. COMEDK UGET 2026’s official notification and brochure do not publish a numeric session duration in readable public text, so this timer is a TakeMockTest-defined practice duration, not an official COMEDK figure.',
+          note: 'Each correct answer earns 1 mark, with no negative marking and no deduction for an unattempted question. Sectional tests use TakeMockTest-defined durations for focused practice, not an official COMEDK UGET sectional format.',
+          sourceUrl: COMEDK_UGET_2026_NOTIFICATION,
+          checkedOn: '13 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '13 August 2026' },
         ],
       },
     ],
