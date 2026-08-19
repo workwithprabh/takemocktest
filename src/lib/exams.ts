@@ -72,7 +72,8 @@ export type ExamSlug =
   | 'mat'
   | 'micat'
   | 'tancet-mba'
-  | 'kmat-karnataka';
+  | 'kmat-karnataka'
+  | 'jipmat';
 export type TestStatus = 'checked' | 'demo';
 
 export interface TestConfig {
@@ -210,6 +211,7 @@ const MAT_OFFICIAL_PAGE = 'https://mat.aima.in/';
 const MICAT_OFFICIAL_PAGE = 'https://www.mica.ac.in/';
 const TANCET_OFFICIAL_PAGE = 'https://tancet.annauniv.edu/';
 const KMAT_KARNATAKA_OFFICIAL_PAGE = 'https://www.kmatindia.com/';
+const JIPMAT_OFFICIAL_PAGE = 'https://jipmat.nta.ac.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6155,6 +6157,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'language-comprehension-sectional-1', name: 'Language Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Comprehension', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '19 August 2026' },
           { id: 'mathematical-skills-sectional-1', name: 'Mathematical Skills Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematical Skills', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '19 August 2026' },
           { id: 'basic-aptitude-sectional-1', name: 'Basic Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Basic Aptitude', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '19 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jipmat': {
+    slug: 'jipmat',
+    name: 'JIPMAT',
+    fullName: 'Joint Integrated Programme in Management Admission Test',
+    category: 'Management',
+    stages: [
+      {
+        id: 'quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension',
+        name: 'Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Quantitative Aptitude', 'Data Interpretation and Logical Reasoning', 'Verbal Ability and Reading Comprehension'],
+          totalQuestions: 45,
+          totalMarks: 180,
+          duration: 69,
+          negativeMarking: 1,
+          note: 'The official JIPMAT (conducted by the National Testing Agency for IIM Bodh Gaya and IIM Jammu) has 100 questions for 400 marks in 150 minutes, 4 marks for each correct answer and 1 mark negative for each wrong answer, with no sectional time limit, across three sections: Quantitative Aptitude (33Q), Data Interpretation and Logical Reasoning (33Q), and Verbal Ability and Reading Comprehension (34Q). This mock covers all three sections in the same proportion, scaled to roughly half: 45 questions (15 per section), with the same single composite timer, no sectional lock, and the same +4/-1 marking scheme. All three sections are skill-based (quantitative calculation, data interpretation and logical puzzles, vocabulary and reading comprehension), not fact-recall, so no section needed excluding for content-risk reasons.',
+          sectionBreakdown: [
+            { name: 'Quantitative Aptitude', questions: 15, marks: 60, duration: 23 },
+            { name: 'Data Interpretation and Logical Reasoning', questions: 15, marks: 60, duration: 23 },
+            { name: 'Verbal Ability and Reading Comprehension', questions: 15, marks: 60, duration: 23 },
+          ],
+          timerNote: 'Single composite 69-minute timer for all three sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: JIPMAT_OFFICIAL_PAGE,
+          checkedOn: '19 August 2026',
+        },
+        tests: [
+          { id: 'quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-1', name: 'Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 69, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
+          { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
+          { id: 'data-interpretation-logical-reasoning-sectional-1', name: 'Data Interpretation and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Interpretation and Logical Reasoning', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
+          { id: 'verbal-ability-reading-comprehension-sectional-1', name: 'Verbal Ability and Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability and Reading Comprehension', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
         ],
       },
     ],

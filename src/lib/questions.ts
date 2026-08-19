@@ -276,6 +276,7 @@ import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-langua
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
 import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
 import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-karnataka-language-mathematical-basic-aptitude-combined-1';
+import { JIPMAT_QA_DILR_VARC_1 } from './question-banks/jipmat-qa-dilr-varc-combined-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -938,6 +939,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'kmat-karnataka/language-comprehension-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Language Comprehension'),
   'kmat-karnataka/mathematical-skills-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Mathematical Skills'),
   'kmat-karnataka/basic-aptitude-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Basic Aptitude'),
+  'jipmat/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-1': JIPMAT_QA_DILR_VARC_1,
+  'jipmat/quantitative-aptitude-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Quantitative Aptitude'),
+  'jipmat/data-interpretation-logical-reasoning-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
+  'jipmat/verbal-ability-reading-comprehension-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -1590,6 +1595,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 40
     : testId.includes('kmat-karnataka/basic-aptitude-sectional')
     ? 40
+    : testId.includes('jipmat/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock')
+    ? 45
+    : testId.includes('jipmat/quantitative-aptitude-sectional')
+    ? 15
+    : testId.includes('jipmat/data-interpretation-logical-reasoning-sectional')
+    ? 15
+    : testId.includes('jipmat/verbal-ability-reading-comprehension-sectional')
+    ? 15
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -1860,6 +1873,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Language Comprehension', count: 40 },
     { section: 'Mathematical Skills', count: 40 },
     { section: 'Basic Aptitude', count: 40 },
+  ],
+  'jipmat': [
+    { section: 'Quantitative Aptitude', count: 15 },
+    { section: 'Data Interpretation and Logical Reasoning', count: 15 },
+    { section: 'Verbal Ability and Reading Comprehension', count: 15 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -2815,6 +2833,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[0],
     KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[40],
     KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[80],
+  ],
+  'jipmat': [
+    JIPMAT_QA_DILR_VARC_1[0],
+    JIPMAT_QA_DILR_VARC_1[15],
+    JIPMAT_QA_DILR_VARC_1[30],
   ],
   'ibsat': [
     IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],
