@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
-import OMRBubble from '@/components/OMRBubble';
+import HeroQuestionPreview from '@/components/HeroQuestionPreview';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { CATALOG_EXAM_COUNT, EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
@@ -11,7 +11,6 @@ import { getQuestionsForTest } from '@/lib/questions';
 import { pageMetadata } from '@/lib/metadata';
 
 const previewQuestion = getQuestionsForTest('ssc-cgl', 'tier-1-quantitative-aptitude-sectional-1')[0];
-const previewOptionIndices = previewQuestion.correctIndex === 0 ? [0, 1] : [0, previewQuestion.correctIndex];
 const checkedTestCount = EXAM_LIST.reduce((total, exam) => total + getCheckedTestCount(exam), 0);
 const checkedExamCount = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0).length;
 const examSuggestions = Array.from(new Map(
@@ -102,25 +101,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
               </div>
             </div>
 
-            <div className="relative -mt-8 ml-5 hidden border border-ink-200 bg-white p-4 shadow-xl shadow-ink-900/10 sm:ml-auto sm:mr-5 sm:block sm:max-w-sm md:absolute md:-bottom-10 md:right-5 md:ml-0 md:mr-0 md:w-[84%]">
-              <div className="mb-2 flex items-center justify-between gap-3">
-                <span className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">
-                  Live question preview
-                </span>
-                <span className="bg-ink-100 px-2 py-1 text-[10px] font-semibold text-ink-700">
-                  {previewQuestion.section}
-                </span>
-              </div>
-              <div className="mb-3 text-sm font-medium text-ink-900">{previewQuestion.question}</div>
-              {previewOptionIndices.map((optionIndex) => (
-                <OMRBubble
-                  key={optionIndex}
-                  letter={String.fromCharCode(65 + optionIndex)}
-                  label={previewQuestion.options[optionIndex]}
-                  selected={optionIndex === previewQuestion.correctIndex}
-                />
-              ))}
-            </div>
+            <HeroQuestionPreview question={previewQuestion} country={country} />
           </div>
         </div>
       </div>
