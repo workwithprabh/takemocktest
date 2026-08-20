@@ -40,6 +40,7 @@ export type ExamSlug =
   | 'met'
   | 'comedk-uget'
   | 'iiit-hyderabad-ugee'
+  | 'jee-main-paper-2'
   | 'ielts'
   | 'toefl'
   | 'pte'
@@ -4545,6 +4546,55 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'paper-2-mathematics-sectional-1', name: 'Paper 2 Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
           { id: 'paper-2-physics-sectional-1', name: 'Paper 2 Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
           { id: 'paper-2-chemistry-sectional-1', name: 'Paper 2 Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '9 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jee-main-paper-2': {
+    slug: 'jee-main-paper-2',
+    name: 'JEE Main Paper 2',
+    shortName: 'JEE Main Paper 2',
+    fullName: 'Joint Entrance Examination Main: Paper 2 (B.Arch and B.Planning)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'paper-2a',
+        name: 'Paper 2A (B.Arch)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Aptitude Test'],
+          totalQuestions: 75,
+          totalMarks: 300,
+          duration: 180,
+          negativeMarking: 1,
+          timerNote: 'Single 180-minute PLATFORM-DEFINED practice timer covering Mathematics and Aptitude Test; NTA does not publish a separate official time limit for only these two parts',
+          note: 'Objective-only practice: Mathematics (20 multiple-choice questions plus 5 numerical-value questions) and Aptitude Test (50 multiple-choice questions). The official 2026 B.Arch paper also includes a 100-mark offline pen-and-paper Drawing Test, which is excluded here since it requires human evaluation and cannot be auto-graded. Some official Aptitude Test tasks are visual; this text-only adaptation does not reproduce them exactly.',
+          sourceUrl: JEE_MAIN_2026_BULLETIN,
+          checkedOn: '19 August 2026',
+        },
+        tests: [
+          { id: 'paper-2a-objective-practice-1', name: 'Paper 2A B.Arch Objective Practice Test 1', kind: 'practice', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
+        ],
+      },
+      {
+        id: 'paper-2b',
+        name: 'Paper 2B (B.Planning)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Aptitude Test', 'Planning'],
+          totalQuestions: 100,
+          totalMarks: 400,
+          duration: 180,
+          negativeMarking: 1,
+          timerNote: 'Single 180-minute timer, official NTA duration; no sectional lock',
+          note: 'Complete official B.Planning objective structure: Mathematics (20 multiple-choice questions plus 5 numerical-value questions), Aptitude Test (50 multiple-choice questions), and Planning (25 multiple-choice questions). Some official Aptitude Test tasks are visual; this text-only adaptation does not reproduce them exactly.',
+          sourceUrl: JEE_MAIN_2026_BULLETIN,
+          checkedOn: '19 August 2026',
+        },
+        tests: [
+          { id: 'paper-2b-full-mock-1', name: 'Paper 2B B.Planning Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
         ],
       },
     ],

@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-19 from 285 bank files / 8772 questions.
+Generated: 2026-08-20 from 287 bank files / 8947 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -33,8 +33,8 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | General Awareness | Indian Polity | 69 | nabard-grade, rbi-grade, rpf-constable, rrb-paramedical, rrb-technician, ssc-cgl, ssc-je, ssc-mts, ssc-selection, ssc-steno (10) |
 | Quantitative Aptitude | Time, speed and distance | 27 | aeee-2026, cat-varc, ibps-rrb, ibsat-verbal, jipmat-qa, lic-aao, niacl-ao, sbi-po, ssc-chsl, tancet-mba (10) |
 | General Awareness | Geography | 46 | nabard-grade, niacl-ao, rpf-si, rrb-alp, rrb-technician, ssc-chsl, ssc-je, ssc-selection, ssc-steno (9) |
+| Mathematics | Trigonometry | 29 | aeee-2026, agniveer-vayu, bitsat-2026, jee-main, met-2026, navy-ssr, rrb-alp, rrb-technician, srmjeee-2026 (9) |
 | Quantitative Aptitude | Simplification | 26 | ibps-po, ibps-rrb, ibps-so, ibsat-verbal, lic-aao, niacl-ao, rbi-grade, sbi-po, ssc-selection (9) |
-| Mathematics | Trigonometry | 25 | aeee-2026, agniveer-vayu, bitsat-2026, jee-main, met-2026, navy-ssr, rrb-alp, rrb-technician, srmjeee-2026 (9) |
 | English Language | Reading comprehension | 25 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sidbi-grade (9) |
 | English Language | Active and passive voice | 21 | ibps-clerk, ibps-po, ibps-so, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-chsl (9) |
 | English Language | Direct and indirect speech | 11 | ibps-clerk, ibps-po, ibps-so, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-chsl (9) |
@@ -101,9 +101,9 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a can complete a task in | ibps-rrb, ibsat-verbal, jipmat-qa, kmat-karnataka, mat-language, rbi-grade, rpf-si, rrb-group, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sbi-po, snap-general, ssc-mts, tancet-mba, upsc-cse (17) |
 | choose the word that means a | afcat-verbal, agniveer-vayu, cds-english, ibps-clerk, ibps-po, inet-english, lic-aao, navy-ssr, nda-general, niacl-ao, rbi-assistant, sbi-po, ssc-chsl, ssc-mts, ssc-steno, territorial-army (16) |
 | find the area of a rectangle | ibps-rrb, lic-aao, niacl-ao, rbi-assistant, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-technician, sbi-po, ssc-chsl, ssc-gd, ssc-mts (13) |
+| what is the sum of the | acet-mathematics, aeee-2026, gre-quantitative, ibps-clerk, ibps-po, ibps-so, jee-main, rbi-assistant, rpf-si, rrb-alp, rrb-technician (11) |
 | choose the correct passive voice of | agniveer-vayu, cds-english, ibps-so, inet-english, nabard-grade, navy-ssr, nda-general, rbi-grade, sebi-grade, sidbi-grade, ssc-cpo (11) |
 | choose the word most opposite in | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, ssc-cpo, ssc-gd, ssc-steno (11) |
-| what is the sum of the | acet-mathematics, aeee-2026, gre-quantitative, ibps-clerk, ibps-po, ibps-so, rbi-assistant, rpf-si, rrb-alp, rrb-technician (10) |
 | which of the following is a | bitsat-2026, comedk-uget, rpf-constable, rrb-alp, rrb-group, rrb-technician, sebi-grade, sidbi-grade, ssc-gd, ssc-je (10) |
 | find the sum of the first | ca-foundation, cma-foundation, ibsat-verbal, met-2026, nabard-grade, rbi-grade, rrb-technician, sebi-grade, sidbi-grade, ssc-cpo (10) |
 | according to the passage above what | ailet-english, atma-analytical, cat-varc, clat-english, cmat-qtdi, ibsat-verbal, jipmat-qa, kmat-karnataka, tancet-mba (9) |
@@ -142,6 +142,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | identify the segment with an error | ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cpo (6) |
 | choose the one word for a | ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cpo (6) |
 | choose the correct indirect speech the | ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cpo (6) |
+| what is the primary purpose of | ibsat-verbal, jee-main, jipmat-qa, nabard-grade, rrb-alp, tancet-mba (6) |
 | choose the sentence with correct subject | kmat-karnataka, mat-language, met-2026, micat-va, tancet-mba, viteee-2026 (6) |
 | five friends p q r s | lic-aao, mat-language, rbi-assistant, rpf-constable, rpf-si, ssc-cpo (6) |
 | find the missing term in the | lic-aao, niacl-ao, rrb-alp, rrb-technician, sebi-grade, sidbi-grade (6) |
@@ -151,4 +152,3 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | what does the idiom to hit | afcat-verbal, agniveer-vayu, sbi-po, snap-general, ssc-mts (5) |
 | find the area of a circle | agniveer-vayu, atma-analytical, cds-elementary, ssc-chsl, ssc-selection (5) |
 | in the passage above the word | ailet-english, clat-english, mh-cet, slat-logical, tancet-mba (5) |
-| what does the idiom to be | atma-analytical, cmat-qtdi, kmat-karnataka, rbi-assistant, territorial-army (5) |

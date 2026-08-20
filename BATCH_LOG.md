@@ -1247,3 +1247,68 @@ the full mock genuinely enforces sectional lock (`SECTION 1/4`, 24:58 countdown,
 Awareness first per the official section order), and a live attempt scored 1.00/200 with
 section-wise caps correctly summing 80.00+30.00+30.00+60.00=200. Added a 5-question FAQ
 set and an `llms.txt` line.
+
+## 2026-08-20 - JEE Main Paper 2: B.Arch and B.Planning (coding-agent integration, live session)
+
+Integrated a ChatGPT-approved, independently Hard-QA'd content package delivered as
+`JEE_MAIN_2026_PAPER2_STAGE1_FINAL_APPROVED_CLEAN_HANDOFF_2.zip` (exam brief, test-series
+manifest, Hard QA report and register, source register, writer handoff notes). Content Hard
+QA: PASS, 0 unresolved issues (Writer v5; 1 of 175 questions corrected from v4 with an
+independent re-solve recorded in the register, the other 174 byte-identical).
+
+New exam: `jee-main-paper-2`, opening the catalog's previously-queued "JEE Main Paper 2:
+B.Arch & B.Planning" entry. Two stages:
+
+- Paper 2A (B.Arch) Objective Practice Test 1: 75Q/300 represented marks/180 min,
+  `kind: 'practice'`, PLATFORM-DEFINED timer (NTA does not publish a separate time limit for
+  only Mathematics + Aptitude). Mathematics 25 (20 MCQ + 5 numerical-value), Aptitude Test
+  50 MCQ. The official 100-mark offline pen-and-paper Drawing Test is excluded (requires
+  human evaluation, not auto-gradable).
+- Paper 2B (B.Planning) Full Mock Test 1: 100Q/400 marks/180 min, `kind: 'full-length'`,
+  OFFICIAL-VERIFIED NTA duration. Complete official structure: Mathematics 25, Aptitude Test
+  50, Planning 25.
+
+Both stages score +4/-1/0, numerical answers to the nearest integer, matching the official
+JEE Main scheme already used elsewhere on the site.
+
+**Errors caught and fixed (integration-side, technical only, no content edits):**
+- The per-testId expected-question-count validator in `questions.ts` (separate from the
+  full-mock section-layout validator) defaulted any unmatched sectional/practice test ID to
+  25 questions. Paper 2A's real 75-question count silently failed this check at build time
+  until explicit branches were added for both new test IDs
+  (`jee-main-paper-2/paper-2a-objective-practice` -> 75,
+  `jee-main-paper-2/paper-2b-full-mock` -> 100). This is a different validator from the
+  `fullMockLayouts` section-contiguity one documented in earlier entries; worth flagging for
+  future non-standard-count batches since it isn't covered by the existing "150Q catchall"
+  lesson.
+- Added `fullMockLayouts['jee-main-paper-2']` (Mathematics 25 / Aptitude Test 50 / Planning
+  25) so Paper 2B's full-mock section-contiguity check could validate, following the
+  CMAT/SNAP/IBSAT fallback-record precedent rather than a bespoke ternary branch.
+- `scripts/audit-question-banks.mjs`: the existing `jee-(?:main|advanced)-paper-[12]`
+  filename-prefix regex already matched the new `jee-main-paper-2-2a-...` /
+  `jee-main-paper-2-2b-...` filenames with no regex change needed; only two new
+  `expectedCount` branches (75, 100) were added.
+- Added a `JEE_MAIN_PAPER_2_PAPER_2B_FULL_MOCK_FAQS` block (5 exam-specific Q&A) and
+  registered it in `FULL_MOCK_FAQS['jee-main-paper-2/paper-2b']`; Paper 2A has no FAQ block
+  since `kind: 'practice'` tests don't render the FAQ section (matches
+  `isFullMock = test.kind === 'full-length'`).
+- Also caught and fixed two stale-documentation items unrelated to this batch while updating
+  status files: `BATCH_ROADMAP.md`'s Engineering queue still showed COMEDK UGET and IIIT
+  Hyderabad UGEE as unchecked despite both being live since 19 August, and
+  `TAKEMOCKTEST_CURRENT_STATUS.md` §3's Engineering exam list was missing both slugs
+  entirely. Both fixed in this batch's commit.
+
+**Verified:** `npm run qa:questions` passed clean (287 banks, 8,947 questions, no duplicate
+IDs or text against the full corpus, matching the Hard QA package's originality claim).
+`npm run build`, `npm run lint`, and `npm run qa:assets` all passed clean. `npm run
+qa:onpage-seo` passed clean with zero advisories against any of the new exam's pages.
+`node scripts/generate-collision-reference.mjs` regenerated clean. Browser-verified end to
+end via Playwright against the static export: mock-test hub renders both stages' patterns
+correctly; exam-pattern page surfaces the Drawing-Test exclusion and PLATFORM-DEFINED
+disclosure; a Paper 2A attempt (1 correct MCQ + 1 correct numerical-value answer) scored
+exactly 8.00/300 with a correct 8.00/100.00 Mathematics / 0.00/200.00 Aptitude Test
+section-wise split; a Paper 2B attempt (1 deliberately wrong MCQ) scored exactly -1.00/400
+with a correct -1.00/100.00 Mathematics / 0.00/200.00 Aptitude Test / 0.00/100.00 Planning
+split, confirming both negative marking and the three-way section split sum to 400; the
+Planning section was independently confirmed present and correctly labeled at question 76
+of the full mock. Added a 5-question FAQ set and an `llms.txt` line.

@@ -89,9 +89,9 @@ tackle after the national-level exams above are done, same process).
 - [x] AEEE
 - [x] Manipal Entrance Test
 - [ ] KIITEE
-- [ ] COMEDK UGET
-- [ ] IIIT Hyderabad UGEE
-- [ ] JEE Main Paper 2: B.Arch and B.Planning
+- [x] COMEDK UGET
+- [x] IIIT Hyderabad UGEE
+- [x] JEE Main Paper 2: B.Arch and B.Planning
 - [ ] NATA
 
 After the national and institute entrances, continue with the state engineering entrances

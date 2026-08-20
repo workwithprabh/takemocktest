@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-19",
+  "generatedAt": "2026-08-20",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 285,
-    "questions": 8772
+    "bankFiles": 287,
+    "questions": 8947
   },
   "topicSaturation": [
     {
@@ -489,6 +489,23 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Trigonometry",
+      "questionCount": 29,
+      "examCount": 9,
+      "exams": [
+        "aeee-2026",
+        "agniveer-vayu",
+        "bitsat-2026",
+        "jee-main",
+        "met-2026",
+        "navy-ssr",
+        "rrb-alp",
+        "rrb-technician",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "Quantitative Aptitude",
       "topic": "Simplification",
       "questionCount": 26,
@@ -503,23 +520,6 @@
         "rbi-grade",
         "sbi-po",
         "ssc-selection"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Trigonometry",
-      "questionCount": 25,
-      "examCount": 9,
-      "exams": [
-        "aeee-2026",
-        "agniveer-vayu",
-        "bitsat-2026",
-        "jee-main",
-        "met-2026",
-        "navy-ssr",
-        "rrb-alp",
-        "rrb-technician",
-        "srmjeee-2026"
       ]
     },
     {
@@ -1342,6 +1342,19 @@
     },
     {
       "section": "Mathematics",
+      "topic": "Complex numbers and quadratic equations",
+      "questionCount": 31,
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "comedk-uget",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
       "topic": "Algebra",
       "questionCount": 23,
       "examCount": 5,
@@ -1836,12 +1849,24 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Complex numbers and quadratic equations",
-      "questionCount": 27,
+      "topic": "Sets, relations and functions",
+      "questionCount": 25,
       "examCount": 4,
       "exams": [
         "aeee-2026",
-        "comedk-uget",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Vector algebra",
+      "questionCount": 21,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
         "met-2026",
         "srmjeee-2026"
       ]
@@ -1884,24 +1909,48 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Vector algebra",
+      "topic": "Permutations and combinations",
       "questionCount": 19,
       "examCount": 4,
       "exams": [
         "aeee-2026",
+        "comedk-uget",
         "jee-main",
-        "met-2026",
-        "srmjeee-2026"
+        "met-2026"
       ]
     },
     {
       "section": "Mathematics",
       "topic": "Differential equations",
-      "questionCount": 17,
+      "questionCount": 19,
       "examCount": 4,
       "exams": [
         "aeee-2026",
         "comedk-uget",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Integral calculus",
+      "questionCount": 18,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-main",
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Coordinate geometry",
+      "questionCount": 16,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "agniveer-vayu",
         "jee-main",
         "met-2026"
       ]
@@ -1916,6 +1965,18 @@
         "nabard-grade",
         "niacl-ao",
         "rbi-grade"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Binomial theorem",
+      "questionCount": 14,
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "comedk-uget",
+        "jee-advanced",
+        "jee-main"
       ]
     },
     {
@@ -1940,18 +2001,6 @@
         "comedk-uget",
         "jee-main",
         "met-2026"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Binomial theorem",
-      "questionCount": 11,
-      "examCount": 4,
-      "exams": [
-        "aeee-2026",
-        "comedk-uget",
-        "jee-advanced",
-        "jee-main"
       ]
     },
     {
@@ -2278,13 +2327,13 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Sets, relations and functions",
-      "questionCount": 21,
+      "topic": "Matrices and determinants",
+      "questionCount": 19,
       "examCount": 3,
       "exams": [
         "aeee-2026",
-        "met-2026",
-        "srmjeee-2026"
+        "jee-main",
+        "met-2026"
       ]
     },
     {
@@ -2343,39 +2392,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Permutations and combinations",
-      "questionCount": 15,
-      "examCount": 3,
-      "exams": [
-        "aeee-2026",
-        "comedk-uget",
-        "met-2026"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Integral calculus",
-      "questionCount": 15,
-      "examCount": 3,
-      "exams": [
-        "aeee-2026",
-        "bitsat-2026",
-        "met-2026"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Matrices and determinants",
-      "questionCount": 14,
-      "examCount": 3,
-      "exams": [
-        "aeee-2026",
-        "jee-main",
-        "met-2026"
-      ]
-    },
-    {
       "section": "General English",
       "topic": "Idioms and Phrases",
       "questionCount": 14,
@@ -2420,17 +2436,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Coordinate geometry",
-      "questionCount": 11,
-      "examCount": 3,
-      "exams": [
-        "aeee-2026",
-        "agniveer-vayu",
-        "met-2026"
-      ]
-    },
-    {
       "section": "Physics",
       "topic": "Units and measurements",
       "questionCount": 11,
@@ -2449,6 +2454,17 @@
       "exams": [
         "bitsat-2026",
         "comedk-uget",
+        "met-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Sequence and Series",
+      "questionCount": 11,
+      "examCount": 3,
+      "exams": [
+        "comedk-uget",
+        "jee-main",
         "met-2026"
       ]
     },
@@ -3643,6 +3659,23 @@
       ]
     },
     {
+      "opening": "what is the sum of the",
+      "examCount": 11,
+      "exams": [
+        "acet-mathematics",
+        "aeee-2026",
+        "gre-quantitative",
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-so",
+        "jee-main",
+        "rbi-assistant",
+        "rpf-si",
+        "rrb-alp",
+        "rrb-technician"
+      ]
+    },
+    {
       "opening": "choose the correct passive voice of",
       "examCount": 11,
       "exams": [
@@ -3674,22 +3707,6 @@
         "ssc-cpo",
         "ssc-gd",
         "ssc-steno"
-      ]
-    },
-    {
-      "opening": "what is the sum of the",
-      "examCount": 10,
-      "exams": [
-        "acet-mathematics",
-        "aeee-2026",
-        "gre-quantitative",
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-so",
-        "rbi-assistant",
-        "rpf-si",
-        "rrb-alp",
-        "rrb-technician"
       ]
     },
     {
@@ -4190,6 +4207,18 @@
       ]
     },
     {
+      "opening": "what is the primary purpose of",
+      "examCount": 6,
+      "exams": [
+        "ibsat-verbal",
+        "jee-main",
+        "jipmat-qa",
+        "nabard-grade",
+        "rrb-alp",
+        "tancet-mba"
+      ]
+    },
+    {
       "opening": "choose the sentence with correct subject",
       "examCount": 6,
       "exams": [
@@ -4323,6 +4352,17 @@
         "ibps-so",
         "niacl-ao",
         "rbi-grade"
+      ]
+    },
+    {
+      "opening": "the circle x 2 y 2",
+      "examCount": 5,
+      "exams": [
+        "bitsat-2026",
+        "jee-main",
+        "met-2026",
+        "srmjeee-2026",
+        "viteee-2026"
       ]
     },
     {
@@ -4476,17 +4516,6 @@
         "kmat-karnataka",
         "ssc-cgl",
         "ssc-cpo",
-        "tancet-mba"
-      ]
-    },
-    {
-      "opening": "what is the primary purpose of",
-      "examCount": 5,
-      "exams": [
-        "ibsat-verbal",
-        "jipmat-qa",
-        "nabard-grade",
-        "rrb-alp",
         "tancet-mba"
       ]
     },
@@ -4747,16 +4776,6 @@
         "cat-varc",
         "rrb-je",
         "ssc-chsl"
-      ]
-    },
-    {
-      "opening": "the circle x 2 y 2",
-      "examCount": 4,
-      "exams": [
-        "bitsat-2026",
-        "met-2026",
-        "srmjeee-2026",
-        "viteee-2026"
       ]
     },
     {
@@ -5418,6 +5437,15 @@
       ]
     },
     {
+      "opening": "for f x x 3 6x",
+      "examCount": 3,
+      "exams": [
+        "bitsat-2026",
+        "jee-main",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "what is the area enclosed between",
       "examCount": 3,
       "exams": [
@@ -5658,15 +5686,6 @@
         "ibps-po",
         "rbi-grade",
         "sidbi-grade"
-      ]
-    },
-    {
-      "opening": "the pradhan mantri jan dhan yojana",
-      "examCount": 3,
-      "exams": [
-        "ibps-po",
-        "nabard-grade",
-        "ssc-cpo"
       ]
     }
   ]

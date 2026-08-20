@@ -91,6 +91,8 @@ for (const { file, questions } of banks) {
     : file.startsWith('jee-main-paper-1-') ? 25
     : file.startsWith('jee-advanced-paper-1-') ? 16
     : file.startsWith('jee-advanced-paper-2-') ? 18
+    : file.startsWith('jee-main-paper-2-2a-objective-practice-') ? 75
+    : file.startsWith('jee-main-paper-2-2b-full-mock-') ? 100
     : file.startsWith('ssc-cpo-paper-1-') ? 50
     : file.startsWith('ibps-so-prelims-') ? 50
     : file.startsWith('rbi-grade-b-phase-1-general-awareness-') ? 80

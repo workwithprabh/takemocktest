@@ -829,6 +829,29 @@ const JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS = [
   },
 ];
 
+const JEE_MAIN_PAPER_2_PAPER_2B_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JEE Main Paper 2 question paper?',
+    answer: 'No. It is an independent practice mock with original questions mapped to the official JEE Main 2026 Paper 2B (B.Planning) syllabus, question types, marks, and timing.',
+  },
+  {
+    question: 'What is the JEE Main Paper 2B (B.Planning) pattern in this mock?',
+    answer: 'Paper 2B has 100 questions for 400 marks in 180 minutes: Mathematics 25 (20 multiple-choice plus 5 numerical-value), Aptitude Test 50, and Planning 25, all under one combined timer, matching the complete official B.Planning objective structure.',
+  },
+  {
+    question: 'How is JEE Main Paper 2B scored?',
+    answer: 'Every question, multiple-choice or numerical-value, follows the same rule: +4 for a correct answer, -1 for an incorrect answer, and 0 for an unattempted question. Numerical-value answers are evaluated to the nearest integer.',
+  },
+  {
+    question: 'Does this site also cover Paper 2A (B.Arch)?',
+    answer: 'Yes, as a separate Objective Practice test covering only Mathematics and Aptitude Test. The official B.Arch paper also includes a 100-mark offline pen-and-paper Drawing Test, which is not included since it requires human evaluation and cannot be auto-graded.',
+  },
+  {
+    question: 'Are the visual Aptitude Test tasks reproduced exactly?',
+    answer: 'Not always. Some official Aptitude Test tasks in the real JEE Main Paper 2 are visual or figure-based. This is a text-only practice interface, so those specific visual tasks are adapted rather than reproduced exactly.',
+  },
+];
+
 const VITEEE_MPCEA_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official VITEEE question paper?',
@@ -968,6 +991,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'jee-main/paper-1': JEE_MAIN_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-1': JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
+  'jee-main-paper-2/paper-2b': JEE_MAIN_PAPER_2_PAPER_2B_FULL_MOCK_FAQS,
   'viteee/mpcea': VITEEE_MPCEA_FULL_MOCK_FAQS,
   'srmjeee/pcm': SRMJEEE_PCM_FULL_MOCK_FAQS,
   'aeee/btech': AEEE_BTECH_FULL_MOCK_FAQS,
