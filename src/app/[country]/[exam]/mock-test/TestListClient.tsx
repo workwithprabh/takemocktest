@@ -24,7 +24,11 @@ export default function TestListClient({
   tests: TestItem[];
 }) {
   const [scores, setScores] = useState<Record<string, string>>({});
-  const [filter, setFilter] = useState<'all' | TestItem['kind']>('all');
+  // Land on Full Mocks by default when the exam has one: that's the single
+  // highest-intent action, and exams with many sectional/topic tests (SSC
+  // CGL alone has 44) otherwise bury it in an undifferentiated flat list.
+  const hasFullLength = tests.some((test) => test.kind === 'full-length');
+  const [filter, setFilter] = useState<'all' | TestItem['kind']>(hasFullLength ? 'full-length' : 'all');
 
   useEffect(() => {
     const next: Record<string, string> = {};

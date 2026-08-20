@@ -35,20 +35,29 @@ export interface UpdateEntry {
   actions: string[];
 }
 
+// Three semantic groups, mapped to the site's existing reserved tokens
+// (tailwind.config.ts: action/live/attention, "reserved for interactive
+// controls and time-sensitive exam states") rather than one flat gray tag
+// for all 13 types. Deadline-driven updates get attention (amber), a
+// published outcome gets live (teal), general process updates get action
+// (blue). Same visual weight and shape as before, just differentiated.
 export const UPDATE_CATEGORY_STYLES: Record<UpdateCategory, string> = {
-  Notification: 'bg-ink-100 text-ink-700',
-  Application: 'bg-ink-100 text-ink-700',
-  'Exam Date': 'bg-ink-100 text-ink-700',
-  Schedule: 'bg-ink-100 text-ink-700',
-  Corrigendum: 'bg-ink-100 text-ink-700',
-  'City Intimation': 'bg-ink-100 text-ink-700',
-  'Admit Card': 'bg-ink-100 text-ink-700',
-  'Answer Key': 'bg-ink-100 text-ink-700',
-  'Response Sheet': 'bg-ink-100 text-ink-700',
-  Result: 'bg-ink-100 text-ink-700',
-  Scorecard: 'bg-ink-100 text-ink-700',
-  Cutoff: 'bg-ink-100 text-ink-700',
-  Counselling: 'bg-ink-100 text-ink-700',
+  // Act now: something you must do or watch for a fixed date.
+  'Admit Card': 'bg-attention-50 text-attention-600',
+  'Exam Date': 'bg-attention-50 text-attention-600',
+  'City Intimation': 'bg-attention-50 text-attention-600',
+  Application: 'bg-attention-50 text-attention-600',
+  // An outcome has been published.
+  Result: 'bg-live-50 text-live-600',
+  Scorecard: 'bg-live-50 text-live-600',
+  Cutoff: 'bg-live-50 text-live-600',
+  'Answer Key': 'bg-live-50 text-live-600',
+  'Response Sheet': 'bg-live-50 text-live-600',
+  // General process/informational updates.
+  Notification: 'bg-action-50 text-action-600',
+  Schedule: 'bg-action-50 text-action-600',
+  Corrigendum: 'bg-action-50 text-action-600',
+  Counselling: 'bg-action-50 text-action-600',
 };
 
 export const UPDATES: UpdateEntry[] = [

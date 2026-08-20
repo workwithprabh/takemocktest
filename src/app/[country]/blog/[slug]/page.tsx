@@ -4,6 +4,7 @@ import { BLOG_POSTS, getBlogPost, getRelatedPosts } from '@/lib/blog';
 import { articleSchema, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { BlogBody } from '@/components/blog/BlogBody';
+import { getBlogCategoryStyle } from '@/components/blog/BlogCategoryStyle';
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
@@ -26,6 +27,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
   if (!post) return notFound();
 
   const related = getRelatedPosts(post);
+  const style = getBlogCategoryStyle(post.category);
 
   const jsonLd = [
     articleSchema({
@@ -46,9 +48,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
     <div className="max-w-2xl mx-auto px-5 py-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="text-xs text-ink-500 mb-3">
+      <div className="text-xs text-ink-500 mb-4">
         <Link href={`/${country}/blog`} className="underline hover:text-ink-900 transition">Blog</Link>
-        {' / '}{post.category}
+      </div>
+
+      <div className={`relative mb-6 flex h-28 items-end overflow-hidden border border-ink-200 bg-gradient-to-br ${style.band} px-5 py-4`}>
+        <span className={`absolute right-4 top-4 h-12 w-12 opacity-40 ${style.iconText}`}>{style.icon}</span>
+        <span className="inline-flex items-center gap-1.5 border border-ink-200 bg-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-ink-700">
+          <span className={`h-3.5 w-3.5 ${style.iconText}`}>{style.icon}</span>
+          {post.category}
+        </span>
       </div>
 
       <h1 className="font-sans font-bold text-2xl mb-2 text-ink-900">{post.title}</h1>
@@ -79,16 +88,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
         <div className="mt-12 pt-8 border-t border-ink-200">
           <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Related reading</h2>
           <div className="space-y-3">
-            {related.map((r) => (
-              <Link
-                key={r.slug}
-                href={`/${country}/blog/${r.slug}`}
-                className="block bg-white border border-ink-200 p-4 hover:border-ink-900 transition"
-              >
-                <div className="font-sans font-semibold text-sm text-ink-900">{r.title}</div>
-                <div className="text-xs text-ink-500 mt-1">{r.excerpt}</div>
-              </Link>
-            ))}
+            {related.map((r) => {
+              const rStyle = getBlogCategoryStyle(r.category);
+              return (
+                <Link
+                  key={r.slug}
+                  href={`/${country}/blog/${r.slug}`}
+                  className="flex items-start gap-3 bg-white border border-ink-200 p-4 hover:border-ink-900 transition"
+                >
+                  <span className={`flex h-9 w-9 flex-shrink-0 items-center justify-center p-2 ${rStyle.surface} ${rStyle.iconText}`}>{rStyle.icon}</span>
+                  <div>
+                    <div className="font-sans font-semibold text-sm text-ink-900">{r.title}</div>
+                    <div className="text-xs text-ink-500 mt-1">{r.excerpt}</div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}

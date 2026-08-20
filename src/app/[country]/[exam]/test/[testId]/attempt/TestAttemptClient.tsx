@@ -445,7 +445,7 @@ export default function TestAttemptClient({
         <div
           aria-label={`${usesSectionTimer ? `Section ${activeSectionIndex + 1} of ${sections.length}, ` : ''}${formatClock(timeLeft)} remaining`}
           className={`min-h-11 px-3 py-2 font-mono text-sm font-semibold ${
-            timeLeft <= 120 ? 'bg-ink-900 text-white' : 'bg-ink-100 text-ink-700'
+            timeLeft <= 120 ? 'bg-attention-600 text-white' : 'bg-ink-100 text-ink-700'
           }`}
         >
           {usesSectionTimer && (

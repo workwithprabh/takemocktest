@@ -3,22 +3,35 @@
 import { useState } from 'react';
 import { AttemptResult, QuestionResult } from '@/lib/attempts';
 
+// Same 80%/50% tiering the "Strong" / "Review" performance badges below
+// already use (see performanceCue), so the ring's color and the topic
+// badges read as one consistent scale rather than two separate systems.
+// correct/incorrect are the two colors tailwind.config.ts reserves
+// specifically for this screen; this is that reservation put to use.
+function scoreTierColor(percent: number) {
+  if (percent >= 80) return '#3F6B4E'; // correct
+  if (percent < 40) return '#8C3A2E'; // incorrect
+  return '#B85C00'; // attention-600
+}
+
 function ScoreRing({ percent }: { percent: number }) {
   const size = 128;
   const stroke = 12;
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percent / 100) * circumference;
+  const arcColor = scoreTierColor(percent);
 
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="-rotate-90">
-      <circle cx={size / 2} cy={size / 2} r={radius} stroke="#C9CEDD" strokeWidth={stroke} fill="none" />
+      <circle cx={size / 2} cy={size / 2} r={radius} stroke="#E7E9F0" strokeWidth={stroke} fill="none" />
       <circle
         cx={size / 2}
         cy={size / 2}
         r={radius}
-        stroke="#0A0F20"
+        stroke={arcColor}
         strokeWidth={stroke}
+        strokeLinecap="round"
         fill="none"
         strokeDasharray={circumference}
         strokeDashoffset={offset}
@@ -213,28 +226,29 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
 
       <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Section-wise performance</h2>
       <div className="space-y-3 mb-8">
-        {sectionStats.map((s) => (
-          <div key={s.section}>
-            <div className="flex justify-between text-xs mb-1">
-              <span className="font-medium text-ink-900">{s.section}</span>
-              <span className="text-ink-500">
-                {s.hasMarkData
-                  ? `${s.score.toFixed(2)}/${s.maxScore.toFixed(2)} marks · ${s.correct}/${s.total} correct`
-                  : `${s.correct}/${s.total}`}
-              </span>
+        {sectionStats.map((s) => {
+          const sectionPercent = s.hasMarkData && s.maxScore > 0
+            ? Math.max(0, Math.min(100, (s.score / s.maxScore) * 100))
+            : s.total > 0 ? (s.correct / s.total) * 100 : 0;
+          return (
+            <div key={s.section}>
+              <div className="flex justify-between text-xs mb-1">
+                <span className="font-medium text-ink-900">{s.section}</span>
+                <span className="text-ink-500">
+                  {s.hasMarkData
+                    ? `${s.score.toFixed(2)}/${s.maxScore.toFixed(2)} marks · ${s.correct}/${s.total} correct`
+                    : `${s.correct}/${s.total}`}
+                </span>
+              </div>
+              <div className="h-2 bg-ink-100 overflow-hidden">
+                <div
+                  className="h-full transition-all duration-500"
+                  style={{ width: `${sectionPercent}%`, backgroundColor: scoreTierColor(sectionPercent) }}
+                />
+              </div>
             </div>
-            <div className="h-2 bg-ink-200 overflow-hidden">
-              <div
-                className="h-full bg-ink-900"
-                style={{
-                  width: `${s.hasMarkData && s.maxScore > 0
-                    ? Math.max(0, Math.min(100, (s.score / s.maxScore) * 100))
-                    : s.total > 0 ? (s.correct / s.total) * 100 : 0}%`,
-                }}
-              />
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Topic-wise analysis</h2>

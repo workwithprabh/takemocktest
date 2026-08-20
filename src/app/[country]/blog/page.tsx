@@ -2,31 +2,7 @@ import Link from 'next/link';
 import { BLOG_POSTS } from '@/lib/blog';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, organizationSchema, blogSchema } from '@/lib/schema';
-
-const CATEGORY_ICONS: Record<string, React.ReactNode> = {
-  'Study Tips': (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
-      <path d="M9 11l2 2 4-4M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" strokeWidth="1.7" />
-    </svg>
-  ),
-  'Exam Strategy': (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
-      <path d="M12 2v20M4 6h16M4 6c0 4 3.5 6 8 6s8-2 8-6M4 18h16" fill="none" stroke="currentColor" strokeWidth="1.7" />
-    </svg>
-  ),
-  'Mock Tests': (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
-      <path d="M4 4h16v16H4z" fill="none" stroke="currentColor" strokeWidth="1.7" />
-      <path d="M8 9h8M8 13h5" stroke="currentColor" strokeWidth="1.7" />
-    </svg>
-  ),
-  'Exam Guides': (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
-      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z" fill="none" stroke="currentColor" strokeWidth="1.7" />
-      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" strokeWidth="1.7" />
-    </svg>
-  ),
-};
+import { getBlogCategoryStyle } from '@/components/blog/BlogCategoryStyle';
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
@@ -65,27 +41,36 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {BLOG_POSTS.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/${country}/blog/${post.slug}`}
-            className="bg-white border border-ink-200 p-5 hover:shadow-lg hover:shadow-ink-900/10 hover:-translate-y-0.5 transition"
-          >
-            <div className="flex items-center gap-2 text-ink-900">
-              {CATEGORY_ICONS[post.category]}
-              <span className="text-xs font-semibold uppercase tracking-wide text-ink-500">
-                {post.category}
-              </span>
-            </div>
-            <h2 className="font-sans font-semibold text-base mt-2 mb-2 text-ink-900">{post.title}</h2>
-            <p className="text-xs text-ink-500 mb-3 line-clamp-3">{post.excerpt}</p>
-            <div className="text-xs text-ink-500">
-              {new Date(post.publishedAt).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })}
-              {' · '}
-              {post.readTimeMin} min read
-            </div>
-          </Link>
-        ))}
+        {BLOG_POSTS.map((post) => {
+          const style = getBlogCategoryStyle(post.category);
+          return (
+            <Link
+              key={post.slug}
+              href={`/${country}/blog/${post.slug}`}
+              className="group flex flex-col border border-ink-200 bg-white overflow-hidden transition hover:-translate-y-0.5 hover:border-ink-300 hover:shadow-lg hover:shadow-ink-900/10"
+            >
+              <div className={`relative flex items-end bg-gradient-to-br ${style.band} px-4 py-3 h-20`}>
+                <span className={`absolute right-3 top-3 h-8 w-8 opacity-40 ${style.iconText}`}>{style.icon}</span>
+                <span className={`inline-flex items-center gap-1.5 border border-ink-200 bg-white px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-ink-700`}>
+                  <span className={`h-3.5 w-3.5 ${style.iconText}`}>{style.icon}</span>
+                  {post.category}
+                </span>
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h2 className="font-sans font-semibold text-base mb-2 text-ink-900">{post.title}</h2>
+                <p className="text-xs text-ink-500 mb-3 line-clamp-3">{post.excerpt}</p>
+                <div className="mt-auto flex items-center justify-between text-xs text-ink-500">
+                  <span>
+                    {new Date(post.publishedAt).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })}
+                    {' · '}
+                    {post.readTimeMin} min read
+                  </span>
+                  <span className={`font-semibold ${style.iconText} opacity-0 transition group-hover:opacity-100`}>Read →</span>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
