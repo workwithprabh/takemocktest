@@ -1192,12 +1192,13 @@ function blockText(block: BlogBlock): string {
 // being written — it surfaces existing coverage instead of inventing a
 // "related posts" list. Ranked by mention count.
 export function getPostsMentioningExam(examName: string, limit = 2): BlogPost[] {
-  const needle = examName.toLowerCase();
+  const escaped = examName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(`\\b${escaped}\\b`, 'gi');
   const scored = BLOG_POSTS.map((post) => {
-    const haystack = [post.title, post.excerpt, ...post.body.map(blockText), ...(post.faqs ?? []).map((f) => `${f.q} ${f.a}`)]
-      .join(' ')
-      .toLowerCase();
-    const count = haystack.split(needle).length - 1;
+    const haystack = [post.title, post.excerpt, ...post.body.map(blockText), ...(post.faqs ?? []).map((f) => `${f.q} ${f.a}`)].join(
+      ' '
+    );
+    const count = haystack.match(pattern)?.length ?? 0;
     return { post, count };
   }).filter((entry) => entry.count > 0);
   scored.sort((a, b) => b.count - a.count);
