@@ -852,6 +852,29 @@ const JEE_MAIN_PAPER_2_PAPER_2B_FULL_MOCK_FAQS = [
   },
 ];
 
+const NATA_MATHEMATICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official NATA question paper?',
+    answer: 'No. It is an independent practice mock with original questions covering the NATA 2026 Mathematics topic list.',
+  },
+  {
+    question: 'What does this mock cover, and what does it leave out?',
+    answer: 'This mock covers only the Mathematics portion of NATA: 20 questions for 40 marks in 30 minutes. The official exam also has an offline Drawing and Composition Test, which cannot be auto-graded, and a General Aptitude section that mixes visual, spatial, and general-knowledge content with reasoning content with no clean published split, so neither is included here.',
+  },
+  {
+    question: 'Is there negative marking?',
+    answer: 'No. NATA has no negative marking, and this mock matches that: +2 for a correct answer, 0 for an incorrect or unattempted one.',
+  },
+  {
+    question: 'Why does this exam show a review-pending pattern instead of official?',
+    answer: 'The official nata.in and coa.gov.in sources could not be independently accessed while building this mock, so the 20-question, 40-mark Mathematics figure is drawn from corroborating secondary sources rather than a directly verified primary document. The Mathematics topic list itself (Algebra, Trigonometry, Coordinate Geometry, Calculus, Mensuration, Vectors and 3D Geometry, Matrices, Probability) is consistently corroborated.',
+  },
+  {
+    question: 'Is the 30-minute timer an official NATA duration?',
+    answer: 'No. NATA does not publish a separate time limit for Mathematics alone within its combined Aptitude Test. The 30-minute timer is a TakeMockTest practice estimate, not an official figure.',
+  },
+];
+
 const VITEEE_MPCEA_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official VITEEE question paper?',
@@ -992,6 +1015,7 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'jee-advanced/paper-1': JEE_ADVANCED_PAPER_1_FULL_MOCK_FAQS,
   'jee-advanced/paper-2': JEE_ADVANCED_PAPER_2_FULL_MOCK_FAQS,
   'jee-main-paper-2/paper-2b': JEE_MAIN_PAPER_2_PAPER_2B_FULL_MOCK_FAQS,
+  'nata/mathematics': NATA_MATHEMATICS_FULL_MOCK_FAQS,
   'viteee/mpcea': VITEEE_MPCEA_FULL_MOCK_FAQS,
   'srmjeee/pcm': SRMJEEE_PCM_FULL_MOCK_FAQS,
   'aeee/btech': AEEE_BTECH_FULL_MOCK_FAQS,

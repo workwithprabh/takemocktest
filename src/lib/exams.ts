@@ -41,6 +41,7 @@ export type ExamSlug =
   | 'comedk-uget'
   | 'iiit-hyderabad-ugee'
   | 'jee-main-paper-2'
+  | 'nata'
   | 'ielts'
   | 'toefl'
   | 'pte'
@@ -4595,6 +4596,35 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'paper-2b-full-mock-1', name: 'Paper 2B B.Planning Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nata': {
+    slug: 'nata',
+    name: 'NATA',
+    shortName: 'NATA',
+    fullName: 'National Aptitude Test in Architecture',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'mathematics',
+        name: 'Mathematics',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics'],
+          totalQuestions: 20,
+          totalMarks: 40,
+          duration: 30,
+          negativeMarking: 0,
+          timerNote: 'Single 30-minute PLATFORM-DEFINED timer, a TakeMockTest practice estimate, not an official standalone Mathematics-only duration',
+          note: 'The official NATA 2026 exam has two parts: an offline Drawing and Composition Test (Part A) and a computer-based Aptitude Test (Part B) combining Mathematics and General Aptitude, totalling 200 marks over 3 hours with no negative marking. This mock covers Mathematics only. Part A (Drawing) is excluded since it is a hand-drawn, human-evaluated offline test and cannot be auto-graded. Part B\'s General Aptitude component is also excluded: secondary sources describe it as a bundle of visual perception, spatial ability, architectural awareness, general knowledge, and reasoning content with no clean published split between its safely self-authorable reasoning portion and its factual-recall or diagram-dependent portion, the same bundled-content exclusion already applied to INET and Agniveer Vayu\'s combined Reasoning/General Awareness sections. This exam\'s official nata.in and coa.gov.in sources could not be independently accessed while researching this mock (network access to both was unavailable), so the 20-question, 40-mark Mathematics figure used here is drawn from secondary-source corroboration rather than a directly verified primary document, and this pattern is marked review-pending rather than official until it can be directly re-checked against the official information bulletin. The Mathematics topic list itself (Algebra, Trigonometry, Coordinate Geometry, Calculus, Mensuration, Vectors and 3D Geometry, Matrices, Probability) is consistently corroborated across independent sources.',
+          sourceUrl: 'https://www.nata.in/',
+          checkedOn: '20 August 2026',
+        },
+        tests: [
+          { id: 'mathematics-full-mock-1', name: 'Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 30, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'No negative marking, matching NATA\'s official scheme.', checkedOn: '20 August 2026' },
         ],
       },
     ],

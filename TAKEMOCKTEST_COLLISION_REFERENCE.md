@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-20 from 287 bank files / 8947 questions.
+Generated: 2026-08-20 from 288 bank files / 8967 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -31,9 +31,9 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | Quantitative Aptitude | Data interpretation | 30 | aeee-2026, ibps-po, ibps-rrb, ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cgl, ssc-cpo, ssc-selection (11) |
 | General Intelligence and Reasoning | Direction Sense | 30 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
 | General Awareness | Indian Polity | 69 | nabard-grade, rbi-grade, rpf-constable, rrb-paramedical, rrb-technician, ssc-cgl, ssc-je, ssc-mts, ssc-selection, ssc-steno (10) |
+| Mathematics | Trigonometry | 32 | aeee-2026, agniveer-vayu, bitsat-2026, jee-main, met-2026, nata-mathematics, navy-ssr, rrb-alp, rrb-technician, srmjeee-2026 (10) |
 | Quantitative Aptitude | Time, speed and distance | 27 | aeee-2026, cat-varc, ibps-rrb, ibsat-verbal, jipmat-qa, lic-aao, niacl-ao, sbi-po, ssc-chsl, tancet-mba (10) |
 | General Awareness | Geography | 46 | nabard-grade, niacl-ao, rpf-si, rrb-alp, rrb-technician, ssc-chsl, ssc-je, ssc-selection, ssc-steno (9) |
-| Mathematics | Trigonometry | 29 | aeee-2026, agniveer-vayu, bitsat-2026, jee-main, met-2026, navy-ssr, rrb-alp, rrb-technician, srmjeee-2026 (9) |
 | Quantitative Aptitude | Simplification | 26 | ibps-po, ibps-rrb, ibps-so, ibsat-verbal, lic-aao, niacl-ao, rbi-grade, sbi-po, ssc-selection (9) |
 | English Language | Reading comprehension | 25 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sidbi-grade (9) |
 | English Language | Active and passive voice | 21 | ibps-clerk, ibps-po, ibps-so, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-chsl (9) |
@@ -41,8 +41,10 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | General Awareness | General Science | 58 | rbi-grade, rpf-constable, rpf-si, rrb-je, ssc-chsl, ssc-je, ssc-mts, ssc-steno (8) |
 | General Awareness | Indian Economy | 48 | rbi-grade, rpf-constable, rrb-je, rrb-ntpc, rrb-paramedical, rrb-technician, ssc-cgl, ssc-mts (8) |
 | General Awareness | History | 31 | niacl-ao, rrb-alp, rrb-paramedical, rrb-technician, ssc-chsl, ssc-je, ssc-selection, ssc-steno (8) |
+| Mathematics | Probability | 22 | agniveer-vayu, bitsat-2026, comedk-uget, jee-advanced, jee-main, nata-mathematics, navy-ssr, rrb-technician (8) |
 | Quantitative Aptitude | Time and Distance | 21 | ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cgl, ssc-cpo, ssc-selection (8) |
 | Quantitative Aptitude | Number series | 20 | aeee-2026, ibps-po, ibps-rrb, ibps-so, lic-aao, niacl-ao, sbi-po, tancet-mba (8) |
+| Mathematics | Mensuration | 19 | agniveer-vayu, nata-mathematics, navy-ssr, rrb-alp, rrb-group, rrb-je, rrb-ntpc, rrb-technician (8) |
 | General Awareness | Indian Geography | 49 | rbi-grade, rpf-constable, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-mts (7) |
 | Reasoning | Coding-decoding | 33 | ibps-po, ibps-rrb, ibps-so, nabard-grade, niacl-ao, rbi-grade, territorial-army (7) |
 | Reasoning | Syllogism | 32 | ibps-po, ibps-rrb, ibps-so, nabard-grade, niacl-ao, rbi-grade, territorial-army (7) |
@@ -67,9 +69,7 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | Reasoning Ability | Direction sense | 22 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 | Reasoning Ability | Classification | 21 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 | English Language | Spelling Correction | 21 | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sebi-grade, sidbi-grade (7) |
-| Mathematics | Probability | 20 | agniveer-vayu, bitsat-2026, comedk-uget, jee-advanced, jee-main, navy-ssr, rrb-technician (7) |
 | Physics | Kinematics | 19 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, srmjeee-2026 (7) |
-| Reasoning Ability | Analogy | 19 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 
 ## Risky generic-template stems
 
@@ -130,6 +130,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | what is the area of a | act-math, ibsat-verbal, rpf-si, ssc-cgl, ssc-selection, tancet-mba (6) |
 | read the passage and answer the | act-reading, ielts-academic, mcat-cars, pte-reading, ssc-cgl, toefl-reading (6) |
 | fill in the blank he was | afcat-verbal, atma-analytical, cds-english, kmat-karnataka, tancet-mba, territorial-army (6) |
+| find the area of a circle | agniveer-vayu, atma-analytical, cds-elementary, nata-mathematics, ssc-chsl, ssc-selection (6) |
 | fill in the blank the committee | atma-analytical, mat-language, mh-cet, navy-ssr, rbi-grade, ssc-cpo (6) |
 | the average of 5 numbers is | cds-elementary, lic-aao, niacl-ao, rbi-assistant, ssc-gd, tancet-mba (6) |
 | identify the correctly spelled word from | cds-english, ibps-po, inet-english, nda-general, niacl-ao, territorial-army (6) |
@@ -148,7 +149,6 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | find the missing term in the | lic-aao, niacl-ao, rrb-alp, rrb-technician, sebi-grade, sidbi-grade (6) |
 | find the one that does not | lic-aao, niacl-ao, rrb-alp, rrb-paramedical, rrb-technician, sidbi-grade (6) |
 | in how many ways can 4 | acet-mathematics, cmat-qtdi, ibsat-verbal, snap-general, tancet-mba (5) |
+| if a 1 2 3 4 | aeee-2026, agniveer-vayu, comedk-uget, nata-mathematics, srmjeee-2026 (5) |
 | what is the angle between the | aeee-2026, rrb-alp, rrb-technician, snap-general, upsc-cse (5) |
 | what does the idiom to hit | afcat-verbal, agniveer-vayu, sbi-po, snap-general, ssc-mts (5) |
-| find the area of a circle | agniveer-vayu, atma-analytical, cds-elementary, ssc-chsl, ssc-selection (5) |
-| in the passage above the word | ailet-english, clat-english, mh-cet, slat-logical, tancet-mba (5) |

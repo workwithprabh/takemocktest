@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-20",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 287,
-    "questions": 8947
+    "bankFiles": 288,
+    "questions": 8967
   },
   "topicSaturation": [
     {
@@ -454,6 +454,24 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Trigonometry",
+      "questionCount": 32,
+      "examCount": 10,
+      "exams": [
+        "aeee-2026",
+        "agniveer-vayu",
+        "bitsat-2026",
+        "jee-main",
+        "met-2026",
+        "nata-mathematics",
+        "navy-ssr",
+        "rrb-alp",
+        "rrb-technician",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "Quantitative Aptitude",
       "topic": "Time, speed and distance",
       "questionCount": 27,
@@ -486,23 +504,6 @@
         "ssc-je",
         "ssc-selection",
         "ssc-steno"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Trigonometry",
-      "questionCount": 29,
-      "examCount": 9,
-      "exams": [
-        "aeee-2026",
-        "agniveer-vayu",
-        "bitsat-2026",
-        "jee-main",
-        "met-2026",
-        "navy-ssr",
-        "rrb-alp",
-        "rrb-technician",
-        "srmjeee-2026"
       ]
     },
     {
@@ -622,6 +623,22 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Probability",
+      "questionCount": 22,
+      "examCount": 8,
+      "exams": [
+        "agniveer-vayu",
+        "bitsat-2026",
+        "comedk-uget",
+        "jee-advanced",
+        "jee-main",
+        "nata-mathematics",
+        "navy-ssr",
+        "rrb-technician"
+      ]
+    },
+    {
       "section": "Quantitative Aptitude",
       "topic": "Time and Distance",
       "questionCount": 21,
@@ -651,6 +668,22 @@
         "niacl-ao",
         "sbi-po",
         "tancet-mba"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Mensuration",
+      "questionCount": 19,
+      "examCount": 8,
+      "exams": [
+        "agniveer-vayu",
+        "nata-mathematics",
+        "navy-ssr",
+        "rrb-alp",
+        "rrb-group",
+        "rrb-je",
+        "rrb-ntpc",
+        "rrb-technician"
       ]
     },
     {
@@ -1014,21 +1047,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Probability",
-      "questionCount": 20,
-      "examCount": 7,
-      "exams": [
-        "agniveer-vayu",
-        "bitsat-2026",
-        "comedk-uget",
-        "jee-advanced",
-        "jee-main",
-        "navy-ssr",
-        "rrb-technician"
-      ]
-    },
-    {
       "section": "Physics",
       "topic": "Kinematics",
       "questionCount": 19,
@@ -1074,21 +1092,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Mensuration",
-      "questionCount": 17,
-      "examCount": 7,
-      "exams": [
-        "agniveer-vayu",
-        "navy-ssr",
-        "rrb-alp",
-        "rrb-group",
-        "rrb-je",
-        "rrb-ntpc",
-        "rrb-technician"
-      ]
-    },
-    {
       "section": "Physics",
       "topic": "Gravitation",
       "questionCount": 14,
@@ -1130,6 +1133,20 @@
         "rrb-je",
         "rrb-technician",
         "ssc-mts"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Algebra",
+      "questionCount": 26,
+      "examCount": 6,
+      "exams": [
+        "acet-mathematics",
+        "bitsat-2026",
+        "nata-mathematics",
+        "rrb-alp",
+        "rrb-technician",
+        "srmjeee-2026"
       ]
     },
     {
@@ -1214,6 +1231,20 @@
         "rrb-je",
         "rrb-ntpc",
         "rrb-technician"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Matrices",
+      "questionCount": 15,
+      "examCount": 6,
+      "exams": [
+        "acet-mathematics",
+        "agniveer-vayu",
+        "comedk-uget",
+        "jee-advanced",
+        "jee-main",
+        "nata-mathematics"
       ]
     },
     {
@@ -1354,19 +1385,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Algebra",
-      "questionCount": 23,
-      "examCount": 5,
-      "exams": [
-        "acet-mathematics",
-        "bitsat-2026",
-        "rrb-alp",
-        "rrb-technician",
-        "srmjeee-2026"
-      ]
-    },
-    {
       "section": "Chemistry",
       "topic": "Coordination compounds",
       "questionCount": 23,
@@ -1416,6 +1434,19 @@
         "jee-advanced",
         "jee-main",
         "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Coordinate geometry",
+      "questionCount": 19,
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "agniveer-vayu",
+        "jee-main",
+        "met-2026",
+        "nata-mathematics"
       ]
     },
     {
@@ -1559,19 +1590,6 @@
         "rrb-je",
         "rrb-ntpc",
         "rrb-technician"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Matrices",
-      "questionCount": 13,
-      "examCount": 5,
-      "exams": [
-        "acet-mathematics",
-        "agniveer-vayu",
-        "comedk-uget",
-        "jee-advanced",
-        "jee-main"
       ]
     },
     {
@@ -1939,18 +1957,6 @@
       "exams": [
         "aeee-2026",
         "bitsat-2026",
-        "jee-main",
-        "met-2026"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Coordinate geometry",
-      "questionCount": 16,
-      "examCount": 4,
-      "exams": [
-        "aeee-2026",
-        "agniveer-vayu",
         "jee-main",
         "met-2026"
       ]
@@ -4063,6 +4069,18 @@
       ]
     },
     {
+      "opening": "find the area of a circle",
+      "examCount": 6,
+      "exams": [
+        "agniveer-vayu",
+        "atma-analytical",
+        "cds-elementary",
+        "nata-mathematics",
+        "ssc-chsl",
+        "ssc-selection"
+      ]
+    },
+    {
       "opening": "fill in the blank the committee",
       "examCount": 6,
       "exams": [
@@ -4278,6 +4296,17 @@
       ]
     },
     {
+      "opening": "if a 1 2 3 4",
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "agniveer-vayu",
+        "comedk-uget",
+        "nata-mathematics",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "opening": "what is the angle between the",
       "examCount": 5,
       "exams": [
@@ -4297,17 +4326,6 @@
         "sbi-po",
         "snap-general",
         "ssc-mts"
-      ]
-    },
-    {
-      "opening": "find the area of a circle",
-      "examCount": 5,
-      "exams": [
-        "agniveer-vayu",
-        "atma-analytical",
-        "cds-elementary",
-        "ssc-chsl",
-        "ssc-selection"
       ]
     },
     {
@@ -4659,16 +4677,6 @@
       ]
     },
     {
-      "opening": "if a 1 2 3 4",
-      "examCount": 4,
-      "exams": [
-        "aeee-2026",
-        "agniveer-vayu",
-        "comedk-uget",
-        "srmjeee-2026"
-      ]
-    },
-    {
       "opening": "what is the coefficient of x",
       "examCount": 4,
       "exams": [
@@ -4746,6 +4754,16 @@
         "atma-analytical",
         "ca-foundation",
         "cat-varc"
+      ]
+    },
+    {
+      "opening": "find the distance between the points",
+      "examCount": 4,
+      "exams": [
+        "agniveer-vayu",
+        "nata-mathematics",
+        "nda-mathematics",
+        "rrb-technician"
       ]
     },
     {
@@ -5149,6 +5167,15 @@
       ]
     },
     {
+      "opening": "find the magnitude of the vector",
+      "examCount": 3,
+      "exams": [
+        "acet-mathematics",
+        "nata-mathematics",
+        "nda-mathematics"
+      ]
+    },
+    {
       "opening": "for the data set 2 4",
       "examCount": 3,
       "exams": [
@@ -5353,15 +5380,6 @@
         "agniveer-vayu",
         "nda-mathematics",
         "ssc-cpo"
-      ]
-    },
-    {
-      "opening": "find the distance between the points",
-      "examCount": 3,
-      "exams": [
-        "agniveer-vayu",
-        "nda-mathematics",
-        "rrb-technician"
       ]
     },
     {
@@ -5677,15 +5695,6 @@
         "ibps-po",
         "ssc-cgl",
         "ssc-steno"
-      ]
-    },
-    {
-      "opening": "a non banking financial company nbfc",
-      "examCount": 3,
-      "exams": [
-        "ibps-po",
-        "rbi-grade",
-        "sidbi-grade"
       ]
     }
   ]

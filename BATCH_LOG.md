@@ -1312,3 +1312,65 @@ with a correct -1.00/100.00 Mathematics / 0.00/200.00 Aptitude Test / 0.00/100.0
 split, confirming both negative marking and the three-way section split sum to 400; the
 Planning section was independently confirmed present and correctly labeled at question 76
 of the full mock. Added a 5-question FAQ set and an `llms.txt` line.
+
+## 2026-08-20 - NATA Mathematics (coding-agent-authored, live session)
+
+User's explicit pick while the ChatGPT content pipeline was occupied on another exam,
+the same scoped, one-off exception previously used for IELTS/SAT/TOEFL/PTE/GRE and the
+RRB NTPC 9-question repair.
+
+**Research blocker, reported before proceeding:** this environment's network egress
+policy blocks `nata.in`, `coa.gov.in`, and every secondary aggregator tried (Careers360,
+Wikipedia) with `403`/`EGRESS_BLOCKED`, confirmed via both the fetch tool and a direct
+`curl` (403 CONNECT tunnel failure). Only web-search snippets were reachable, and those
+snippets conflicted with each other on Part B's exact question count (40, 45, and 50 all
+appeared across different sources) and on whether Mathematics is reliably separable from
+General Aptitude in the current cycle. This was reported to the site owner via
+AskUserQuestion rather than guessed past; the owner chose "proceed on best-available
+secondary data, disclose uncertain parts as review-pending."
+
+**Scope built:** new `nata` exam, single stage, Mathematics only: 20Q/40 marks/30 min
+platform-defined timer, +2/0 scoring (no negative marking, well-corroborated across every
+source consulted). `StagePattern.status: 'review-pending'`, the first live exam on the site
+to use this status, since the 20-question/40-mark figure traces to only one weakly
+corroborated aggregator match rather than a directly verified primary document. The
+Mathematics topic list (Algebra, Trigonometry, Coordinate Geometry, Calculus, Mensuration,
+Vectors and 3D Geometry, Matrices, Probability) is consistently corroborated and used as-is.
+
+**Excluded, both disclosed in the pattern note:**
+- Part A (Drawing and Composition Test): offline, hand-drawn, human-evaluated, not
+  auto-gradable. Same reasoning as JEE Main Paper 2A's Drawing Test exclusion.
+- Part B's General Aptitude component: secondary sources describe it as a bundle of visual
+  perception, spatial ability, architectural awareness, general knowledge, and reasoning
+  content with no clean published split between the safely self-authorable reasoning
+  portion and the factual-recall/diagram-dependent portion. Same bundled-content exclusion
+  pattern already used for INET and Agniveer Vayu's combined Reasoning/General Awareness
+  sections.
+
+20 original questions, each hand-verified by direct calculation before writing (arithmetic,
+trigonometric identities, calculus, matrix operations, probability) rather than trusted on
+a first pass. Answer positions balanced exactly 5/5/5/5 across A/B/C/D. Difficulty mix:
+8 easy, 8 medium, 4 hard.
+
+**Integration, technical only:** added an `expectedCount` branch in `questions.ts` (20,
+since the generic sectional/practice fallback defaults to 25) and a
+`fullMockLayouts['nata']` entry for the section-contiguity check, both following direct
+precedent from FRM Part I's own partial-slice build (a single full-mock test covering only
+one safely-buildable component of a larger official exam). Added `nata` to
+`audit-question-banks.mjs`'s filename-prefix regex alternation (initially added as
+`nata-mathematics`, which under-matched against the `-.+-\d+\.ts$` suffix requirement since
+the filename only had one remaining hyphen after that longer prefix; corrected to the
+shorter `nata` prefix, verified against the regex directly in Node before commit).
+
+**Verified:** `npm run qa:questions` passed clean (288 banks, 8,967 questions, no duplicate
+IDs or text against the full corpus, confirming no accidental collision from self-authored
+content). `npm run build`, `npm run lint`, and `npm run qa:assets` all passed clean.
+`npm run qa:onpage-seo` passed clean with zero advisories against any of the new exam's
+pages. Collision reference regenerated clean. Browser-verified end to end via Playwright
+against the static export: the exam-pattern page renders the "Review pending" status label
+and the full disclosure text correctly; the test-instructions page shows the correct 20
+Questions / 30 min / +2 pattern; a Mathematics attempt (1 correct MCQ, 1 deliberately wrong
+MCQ, 18 unattempted) scored exactly 2.00/40.00 with the wrong answer drawing zero
+deduction, confirming the no-negative-marking rule; topic-wise breakdown rendered
+correctly. Added a 5-question FAQ set (including one FAQ explaining the review-pending
+status itself) and an `llms.txt` line.

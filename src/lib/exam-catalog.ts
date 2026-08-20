@@ -141,7 +141,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('COMEDK UGET', 'State', 'comedk-uget'),
           exam('IIIT Hyderabad UGEE', 'Institute', 'iiit-hyderabad-ugee'),
           exam('JEE Main Paper 2: B.Arch & B.Planning', 'National', 'jee-main-paper-2'),
-          exam('NATA', 'National'),
+          exam('NATA', 'National', 'nata'),
         ],
       },
       {
