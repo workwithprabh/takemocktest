@@ -1,5 +1,5 @@
 import { ExamConfig } from '@/lib/exams';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import type { ReactNode } from 'react';
 
@@ -29,7 +29,7 @@ export default function ExamInfoPageContent({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             breadcrumbSchema([
               { name: 'Home', path: `/${country}` },
               { name: exam.name, path: `/${country}/${exam.slug}` },

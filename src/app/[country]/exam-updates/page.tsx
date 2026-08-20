@@ -1,6 +1,6 @@
 import UpdateFinder from '@/components/UpdateFinder';
 import { pageMetadata } from '@/lib/metadata';
-import { breadcrumbSchema, itemListSchema } from '@/lib/schema';
+import { breadcrumbSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATES, getLatestUpdates } from '@/lib/updates';
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
@@ -30,7 +30,7 @@ export default async function ExamUpdatesPage({ params }: { params: Promise<{ co
 
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
       <div className="border-b border-ink-800 bg-ink-900 text-white">
         <div className="mx-auto max-w-6xl px-5 py-12 md:py-16">

@@ -3,6 +3,20 @@ export const SITE_NAME = 'TakeMockTest';
 export const SITE_EMAIL = 'info@takemocktest.com';
 export const GA_MEASUREMENT_ID = 'G-8D1KVR9GZJ';
 
+// Every JSON-LD block on the site is rendered via
+// dangerouslySetInnerHTML={{ __html: jsonLdHtml(data) }} inside a
+// <script type="application/ld+json"> tag. Plain JSON.stringify doesn't
+// escape "<", so a literal "</script>" inside any string value (a blog
+// title, an exam name) would close the script tag early and let whatever
+// follows in the JSON be parsed as HTML. All schema data here comes from
+// this repo's own authored content, not user input, so it isn't currently
+// exploitable, but escaping is free and keeps that true if that ever
+// changes. The resulting string is still valid, parseable JSON: escaping
+// "<" as "<" only affects how it looks in an HTML/script context.
+export function jsonLdHtml(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, '\\u003c');
+}
+
 export function organizationSchema() {
   return {
     '@context': 'https://schema.org',

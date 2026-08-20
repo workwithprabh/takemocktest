@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { EXAM_LIST, getExam } from '@/lib/exams';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 import { pageMetadata } from '@/lib/metadata';
@@ -54,7 +54,7 @@ export default async function AnswerKeyPage({ params }: { params: Promise<{ coun
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             breadcrumbSchema([
               { name: 'Home', path: `/${country}` },
               { name: exam.name, path: `/${country}/${exam.slug}` },

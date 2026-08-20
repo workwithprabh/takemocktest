@@ -1,7 +1,7 @@
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { COUNTRIES } from '@/lib/exams';
 import { pageMetadata } from '@/lib/metadata';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import DestPracticeClient from './DestPracticeClient';
 
 const SOURCE_URL = 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf';
@@ -27,7 +27,7 @@ export default async function DestPracticePage({ params }: { params: Promise<{ c
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema([
+          __html: jsonLdHtml(breadcrumbSchema([
             { name: 'Home', path: `/${country}` },
             { name: 'SSC CGL', path: `/${country}/ssc-cgl` },
             { name: 'Mock tests', path: `/${country}/ssc-cgl/mock-test` },

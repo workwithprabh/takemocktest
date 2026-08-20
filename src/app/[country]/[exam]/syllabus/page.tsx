@@ -1,6 +1,6 @@
 import { EXAM_LIST, getExam, getExamSections } from '@/lib/exams';
 import { getExamGuide } from '@/lib/exam-guides';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import GuideBlocks from '@/components/GuideBlocks';
@@ -37,7 +37,7 @@ export default async function SyllabusPage({ params }: { params: Promise<{ count
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             breadcrumbSchema([
               { name: 'Home', path: `/${country}` },
               { name: exam.name, path: `/${country}/${exam.slug}` },

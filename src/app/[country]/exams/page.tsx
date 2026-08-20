@@ -1,6 +1,6 @@
 import ExamCategoryCard from '@/components/ExamCategoryCard';
 import { CATALOG_EXAM_COUNT, EXAM_CATEGORIES } from '@/lib/exam-catalog';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import ExamFinder from '@/components/ExamFinder';
 
@@ -21,7 +21,7 @@ export default async function AllExamsPage({ params }: { params: Promise<{ count
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             breadcrumbSchema([
               { name: 'Home', path: `/${country}` },
               { name: 'All exams', path: `/${country}/exams` },

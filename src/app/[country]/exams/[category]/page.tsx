@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CategoryIcon } from '@/components/ExamCategoryCard';
 import { EXAM_CATEGORIES, getCategoryExamCount, getExamCategory } from '@/lib/exam-catalog';
-import { breadcrumbSchema, itemListSchema } from '@/lib/schema';
+import { breadcrumbSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import ExamFinder from '@/components/ExamFinder';
 
@@ -41,7 +41,7 @@ export default async function ExamCategoryPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
+          __html: jsonLdHtml(
             breadcrumbSchema([
               { name: 'Home', path: `/${country}` },
               { name: 'All exams', path: `/${country}/exams` },
@@ -53,7 +53,7 @@ export default async function ExamCategoryPage({
       {liveExams.length > 0 && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema(liveExams)) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(itemListSchema(liveExams)) }}
         />
       )}
 

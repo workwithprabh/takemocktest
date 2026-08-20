@@ -1,7 +1,7 @@
 import { EXAM_LIST, getExam } from '@/lib/exams';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
-import { breadcrumbSchema, organizationSchema, faqPageSchema } from '@/lib/schema';
+import { breadcrumbSchema, organizationSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { getPostsMentioningExam } from '@/lib/blog';
 import { getBlogCategoryStyle } from '@/components/blog/BlogCategoryStyle';
@@ -62,7 +62,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
 
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
       {/* Hero block: light tint to separate the page header from the content below */}
       <div className="bg-ink-50 border-b border-ink-200">

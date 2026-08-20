@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getExam, getCheckedTestCount } from '@/lib/exams';
 import { pageMetadata } from '@/lib/metadata';
-import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { articleSchema, breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, UPDATES, formatUpdateDate, getUpdate, getUpdatesForExam } from '@/lib/updates';
 
 export function generateStaticParams() {
@@ -45,7 +45,7 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-6 md:py-10">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
       <Breadcrumbs items={[
         { label: 'Home', href: `/${country}` },
         { label: 'Exam updates', href: `/${country}/exam-updates` },

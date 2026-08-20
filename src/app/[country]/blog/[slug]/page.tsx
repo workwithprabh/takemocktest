@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { BLOG_POSTS, getBlogPost, getRelatedPosts } from '@/lib/blog';
-import { articleSchema, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+import { articleSchema, breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { BlogBody } from '@/components/blog/BlogBody';
 import { getBlogCategoryStyle } from '@/components/blog/BlogCategoryStyle';
@@ -46,7 +46,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
 
   return (
     <div className="max-w-2xl mx-auto px-5 py-6">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
       <div className="text-xs text-ink-500 mb-4">
         <Link href={`/${country}/blog`} className="underline hover:text-ink-900 transition">Blog</Link>

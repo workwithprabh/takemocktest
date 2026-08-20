@@ -3,7 +3,7 @@ import { EXAM_LIST, getExam, getAllTestSlugs, getTestConfig, testIdToName } from
 import { getQuestionsForTest } from '@/lib/questions';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
-import { breadcrumbSchema, SITE_NAME, SITE_URL } from '@/lib/schema';
+import { breadcrumbSchema, SITE_NAME, SITE_URL, jsonLdHtml } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export function generateStaticParams() {
@@ -1059,7 +1059,7 @@ export default async function TestInstructionsPage({
   return (
     <div className="max-w-2xl mx-auto px-5 py-6">
       {jsonLd && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
       )}
       <Breadcrumbs items={[
         { label: 'Home', href: `/${country}` },

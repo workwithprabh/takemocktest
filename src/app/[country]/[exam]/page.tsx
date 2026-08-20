@@ -6,7 +6,7 @@ import { getExamCycle, type CycleState } from '@/lib/exam-cycles';
 import { getExamPatternFaqs, getExamFactFaqs } from '@/lib/exam-faqs';
 import { EXAM_LIST, getCheckedTestCount, getExam, getExamOverviewCopy } from '@/lib/exams';
 import { pageMetadata } from '@/lib/metadata';
-import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getUpdatesForExam, type UpdateCategory } from '@/lib/updates';
 
 const CYCLE_STATE_STYLES: Record<CycleState, string> = {
@@ -119,7 +119,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
 
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
       <header className={`border-b border-ink-200 ${currentCycle ? 'bg-gradient-to-br from-action-50 via-ink-50 to-live-50' : 'bg-ink-50'}`}>
         <div className="mx-auto max-w-6xl px-5 py-7 md:py-10">
