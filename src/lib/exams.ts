@@ -79,7 +79,8 @@ export type ExamSlug =
   | 'kmat-karnataka'
   | 'jipmat'
   | 'mht-cet'
-  | 'wbjee';
+  | 'wbjee'
+  | 'ap-eapcet';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -237,6 +238,7 @@ const MHT_CET_2026_BROCHURE =
   'https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-11.04.2026.pdf';
 const WBJEE_2026_BULLETIN =
   'https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2026/03/202603101506582412.pdf';
+const AP_EAPCET_OFFICIAL_PAGE = 'https://cets.apsche.ap.gov.in/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6438,6 +6440,39 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'engineering-full-mock-1', name: 'WBJEE 2026 Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 240, timingGroups: [{ sections: ['Mathematics'], duration: 120 }, { sections: ['Physics', 'Chemistry'], duration: 120 }], marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Category 1 questions award 1 mark (-0.25 wrong), Category 2 award 2 marks (-0.5 wrong), and Category 3 multi-select questions award up to 2 marks with no negative marking and proportional partial credit. Paper I (Mathematics) gets 120 minutes and auto-submits; Paper II (Physics and Chemistry) then gets a separate 120 minutes with no return to Paper I.', checkedOn: '21 August 2026' },
           { id: 'engineering-mathematics-paper-1-practice-1', name: 'WBJEE 2026 Mathematics Paper I Practice Test 1', kind: 'practice', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Category 1 questions award 1 mark (-0.25 wrong), Category 2 award 2 marks (-0.5 wrong), and Category 3 multi-select questions award up to 2 marks with no negative marking and proportional partial credit. A standalone practice version of the official Paper I (Mathematics) with the full 120-minute working time.', checkedOn: '21 August 2026' },
           { id: 'engineering-physics-chemistry-paper-2-practice-1', name: 'WBJEE 2026 Physics and Chemistry Paper II Practice Test 1', kind: 'practice', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Category 1 questions award 1 mark (-0.25 wrong), Category 2 award 2 marks (-0.5 wrong), and Category 3 multi-select questions award up to 2 marks with no negative marking and proportional partial credit. A standalone practice version of the official Paper II with free navigation across Physics and Chemistry for the full 120-minute working time.', checkedOn: '21 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ap-eapcet': {
+    slug: 'ap-eapcet',
+    name: 'AP EAPCET',
+    fullName: 'Andhra Pradesh Engineering, Agriculture and Pharmacy Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering',
+        name: 'Engineering',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 40,
+          totalMarks: 40,
+          duration: 45,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 20, marks: 20 },
+            { name: 'Physics', questions: 10, marks: 10 },
+            { name: 'Chemistry', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single composite 45-minute timer for all three subjects combined: no sectional lock, matching the official exam\'s own single continuous timer',
+          note: 'The official AP EAPCET Engineering stream paper has 160 questions for 160 marks in 180 minutes: Mathematics (80 questions), Physics (40 questions), and Chemistry (40 questions), each correct answer worth 1 mark with no negative marking, a single continuous timer with no sectional lock. This mock covers all three subjects in the same 2:1:1 proportion as the official exam: 40 questions (20 Mathematics, 10 Physics, 10 Chemistry), with the same no-negative-marking scoring and a single composite timer. This exam\'s official cets.apsche.ap.gov.in source could not be independently accessed while researching this mock (network access to the domain was unavailable), so the 160-question, 160-mark, 180-minute, no-negative-marking pattern used here is drawn from consistent corroboration across multiple independent secondary sources rather than a directly verified primary document, and this pattern is marked review-pending rather than official until it can be directly re-checked against the official information bulletin. The Mathematics, Physics, and Chemistry topic areas used here are standard Class 11/12 syllabus topics, consistently corroborated across independent sources.',
+          sourceUrl: AP_EAPCET_OFFICIAL_PAGE,
+          checkedOn: '21 August 2026',
+        },
+        tests: [
+          { id: 'engineering-full-mock-1', name: 'Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 45, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official AP EAPCET scheme. Raw score out of 40 shown here; the official exam is out of 160 across Mathematics, Physics, and Chemistry.', checkedOn: '21 August 2026' },
         ],
       },
     ],
