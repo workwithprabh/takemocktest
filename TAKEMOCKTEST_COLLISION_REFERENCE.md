@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-21 from 291 bank files / 9267 questions.
+Generated: 2026-08-21 from 294 bank files / 9577 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -23,6 +23,7 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | General Awareness | Sports | 38 | nabard-grade, niacl-ao, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-paramedical, rrb-technician, ssc-mts, ssc-selection, ssc-steno (12) |
 | General Intelligence and Reasoning | Number Series | 53 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
 | General Intelligence and Reasoning | Coding-Decoding | 37 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
+| Mathematics | Trigonometry | 35 | aeee-2026, agniveer-vayu, bitsat-2026, jee-main, met-2026, nata-mathematics, navy-ssr, rrb-alp, rrb-technician, srmjeee-2026, wbjee-engineering (11) |
 | Quantitative Aptitude | Average | 35 | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-selection (11) |
 | General Intelligence and Reasoning | Classification | 35 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
 | General Intelligence and Reasoning | Analogy | 32 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
@@ -31,25 +32,27 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | Quantitative Aptitude | Data interpretation | 30 | aeee-2026, ibps-po, ibps-rrb, ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cgl, ssc-cpo, ssc-selection (11) |
 | General Intelligence and Reasoning | Direction Sense | 30 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
 | General Awareness | Indian Polity | 69 | nabard-grade, rbi-grade, rpf-constable, rrb-paramedical, rrb-technician, ssc-cgl, ssc-je, ssc-mts, ssc-selection, ssc-steno (10) |
-| Mathematics | Trigonometry | 32 | aeee-2026, agniveer-vayu, bitsat-2026, jee-main, met-2026, nata-mathematics, navy-ssr, rrb-alp, rrb-technician, srmjeee-2026 (10) |
+| Mathematics | Probability | 31 | agniveer-vayu, bitsat-2026, comedk-uget, jee-advanced, jee-main, mht-cet, nata-mathematics, navy-ssr, rrb-technician, wbjee-engineering (10) |
 | Quantitative Aptitude | Time, speed and distance | 27 | aeee-2026, cat-varc, ibps-rrb, ibsat-verbal, jipmat-qa, lic-aao, niacl-ao, sbi-po, ssc-chsl, tancet-mba (10) |
 | General Awareness | Geography | 46 | nabard-grade, niacl-ao, rpf-si, rrb-alp, rrb-technician, ssc-chsl, ssc-je, ssc-selection, ssc-steno (9) |
+| Chemistry | Chemical kinetics | 39 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (9) |
+| Physics | Electrostatics | 36 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (9) |
+| Physics | Current electricity | 34 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (9) |
 | Quantitative Aptitude | Simplification | 26 | ibps-po, ibps-rrb, ibps-so, ibsat-verbal, lic-aao, niacl-ao, rbi-grade, sbi-po, ssc-selection (9) |
 | English Language | Reading comprehension | 25 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sidbi-grade (9) |
-| Mathematics | Probability | 24 | agniveer-vayu, bitsat-2026, comedk-uget, jee-advanced, jee-main, mht-cet, nata-mathematics, navy-ssr, rrb-technician (9) |
 | English Language | Active and passive voice | 21 | ibps-clerk, ibps-po, ibps-so, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-chsl (9) |
+| Physics | Gravitation | 19 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (9) |
 | English Language | Direct and indirect speech | 11 | ibps-clerk, ibps-po, ibps-so, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-chsl (9) |
 | General Awareness | General Science | 58 | rbi-grade, rpf-constable, rpf-si, rrb-je, ssc-chsl, ssc-je, ssc-mts, ssc-steno (8) |
 | General Awareness | Indian Economy | 48 | rbi-grade, rpf-constable, rrb-je, rrb-ntpc, rrb-paramedical, rrb-technician, ssc-cgl, ssc-mts (8) |
-| Chemistry | Chemical kinetics | 35 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026 (8) |
-| Physics | Electrostatics | 31 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026 (8) |
 | General Awareness | History | 31 | niacl-ao, rrb-alp, rrb-paramedical, rrb-technician, ssc-chsl, ssc-je, ssc-selection, ssc-steno (8) |
-| Physics | Current electricity | 30 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026 (8) |
+| Mathematics | Matrices | 25 | acet-mathematics, agniveer-vayu, comedk-uget, jee-advanced, jee-main, mht-cet, nata-mathematics, wbjee-engineering (8) |
+| Physics | Kinematics | 23 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, srmjeee-2026, wbjee-engineering (8) |
 | Quantitative Aptitude | Time and Distance | 21 | ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cgl, ssc-cpo, ssc-selection (8) |
 | Quantitative Aptitude | Number series | 20 | aeee-2026, ibps-po, ibps-rrb, ibps-so, lic-aao, niacl-ao, sbi-po, tancet-mba (8) |
 | Mathematics | Mensuration | 19 | agniveer-vayu, nata-mathematics, navy-ssr, rrb-alp, rrb-group, rrb-je, rrb-ntpc, rrb-technician (8) |
-| Physics | Gravitation | 16 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026 (8) |
 | General Awareness | Indian Geography | 49 | rbi-grade, rpf-constable, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-mts (7) |
+| Chemistry | Electrochemistry | 37 | bitsat-2026, comedk-uget, jee-advanced, jee-main, mht-cet, srmjeee-2026, wbjee-engineering (7) |
 | Reasoning | Coding-decoding | 33 | ibps-po, ibps-rrb, ibps-so, nabard-grade, niacl-ao, rbi-grade, territorial-army (7) |
 | Reasoning | Syllogism | 32 | ibps-po, ibps-rrb, ibps-so, nabard-grade, niacl-ao, rbi-grade, territorial-army (7) |
 | Chemistry | Solutions | 30 | aeee-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026 (7) |
@@ -61,15 +64,12 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | Reasoning | Direction sense | 28 | ibps-po, ibps-rrb, ibps-so, nabard-grade, niacl-ao, rbi-grade, territorial-army (7) |
 | English Language | Synonyms | 28 | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sebi-grade, sidbi-grade (7) |
 | English Language | Synonym | 27 | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-selection (7) |
+| Chemistry | Biomolecules | 26 | aeee-2026, comedk-uget, jee-advanced, jee-main, mht-cet, srmjeee-2026, wbjee-engineering (7) |
 | Reasoning Ability | Number series | 25 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 | English Language | One Word Substitution | 25 | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sebi-grade, sidbi-grade (7) |
 | English Language | One-word substitution | 24 | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-selection (7) |
 | English Language | Idioms and Phrases | 24 | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sebi-grade, sidbi-grade (7) |
 | English Language | Error spotting | 23 | ibps-clerk, ibps-po, lic-aao, niacl-ao, sbi-clerk, sbi-po, ssc-selection (7) |
-| Reasoning Ability | Blood relations | 23 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
-| Reasoning Ability | Syllogism | 23 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
-| Reasoning Ability | Direction sense | 22 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
-| Mathematics | Matrices | 21 | acet-mathematics, agniveer-vayu, comedk-uget, jee-advanced, jee-main, mht-cet, nata-mathematics (7) |
 
 ## Risky generic-template stems
 
@@ -132,6 +132,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | fill in the blank he was | afcat-verbal, atma-analytical, cds-english, kmat-karnataka, tancet-mba, territorial-army (6) |
 | find the area of a circle | agniveer-vayu, atma-analytical, cds-elementary, nata-mathematics, ssc-chsl, ssc-selection (6) |
 | fill in the blank the committee | atma-analytical, mat-language, mh-cet, navy-ssr, rbi-grade, ssc-cpo (6) |
+| the circle x 2 y 2 | bitsat-2026, jee-main, met-2026, srmjeee-2026, viteee-2026, wbjee-engineering (6) |
 | the average of 5 numbers is | cds-elementary, lic-aao, niacl-ao, rbi-assistant, ssc-gd, tancet-mba (6) |
 | identify the correctly spelled word from | cds-english, ibps-po, inet-english, nda-general, niacl-ao, territorial-army (6) |
 | the average of 6 numbers is | gre-quantitative, ibps-rrb, kmat-karnataka, rpf-constable, rpf-si, tancet-mba (6) |
@@ -150,5 +151,4 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | find the one that does not | lic-aao, niacl-ao, rrb-alp, rrb-paramedical, rrb-technician, sidbi-grade (6) |
 | in how many ways can 4 | acet-mathematics, cmat-qtdi, ibsat-verbal, snap-general, tancet-mba (5) |
 | what is the distance between the | act-math, iiit-hyderabad, met-2026, mht-cet, viteee-2026 (5) |
-| what is the coordination number of | aeee-2026, jee-main, met-2026, mht-cet, srmjeee-2026 (5) |
-| if a 1 2 3 4 | aeee-2026, agniveer-vayu, comedk-uget, nata-mathematics, srmjeee-2026 (5) |
+| how many moles are present in | aeee-2026, jee-main, met-2026, mht-cet, wbjee-engineering (5) |

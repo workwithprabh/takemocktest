@@ -39,7 +39,11 @@ function scoreAnswer(question: Question, answer: AnswerValue, marks: number, pen
   if (question.answerType === 'multi-select' && question.partialMarking && Array.isArray(answer)) {
     const correct = new Set(question.correctIndices ?? []);
     if (answer.length > 0 && answer.every((index) => correct.has(index))) {
-      return { outcome: 'partial' as const, score: answer.length };
+      const score =
+        question.partialCreditMode === 'proportional'
+          ? (marks * answer.length) / correct.size
+          : answer.length;
+      return { outcome: 'partial' as const, score };
     }
   }
   return { outcome: 'wrong' as const, score: -penalty };

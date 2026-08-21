@@ -78,7 +78,8 @@ export type ExamSlug =
   | 'tancet-mba'
   | 'kmat-karnataka'
   | 'jipmat'
-  | 'mht-cet';
+  | 'mht-cet'
+  | 'wbjee';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -234,6 +235,8 @@ const KMAT_KARNATAKA_OFFICIAL_PAGE = 'https://www.kmatindia.com/';
 const JIPMAT_OFFICIAL_PAGE = 'https://jipmat.nta.ac.in/';
 const MHT_CET_2026_BROCHURE =
   'https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-11.04.2026.pdf';
+const WBJEE_2026_BULLETIN =
+  'https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2026/03/202603101506582412.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6400,6 +6403,41 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'pcm-full-mock-1', name: 'MHT CET 2026 PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Physics and Chemistry award 1 mark each per correct answer; Mathematics awards 2. No negative marking. Physics and Chemistry share the first 90 minutes and auto-submit as a group; Mathematics then gets a separate 90 minutes with no return to the first group.', checkedOn: '20 August 2026' },
           { id: 'pcm-physics-chemistry-group-1', name: 'MHT CET 2026 Physics + Chemistry Group Practice Test 1', kind: 'practice', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. A standalone practice version of the official Physics + Chemistry group with free navigation across both subjects for the full 90 minutes; the complete PCM exam feeds this same group directly into a following Mathematics group, covered separately by the Full Mock.', checkedOn: '20 August 2026' },
           { id: 'pcm-mathematics-sectional-1', name: 'MHT CET 2026 Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Each correct answer awards 2 marks, matching the official Mathematics group. No negative marking.', checkedOn: '20 August 2026' },
+        ],
+      },
+    ],
+  },
+  'wbjee': {
+    slug: 'wbjee',
+    name: 'WBJEE',
+    fullName: 'West Bengal Joint Entrance Examination: Engineering, Technology, Pharmacy and Architecture',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering',
+        name: 'Engineering',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 155,
+          totalMarks: 200,
+          duration: 240,
+          negativeMarking: 'Category-dependent: -0.25 in Category 1, -0.5 in Category 2, none in Category 3',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 75, marks: 100 },
+            { name: 'Physics', questions: 40, marks: 50 },
+            { name: 'Chemistry', questions: 40, marks: 50 },
+          ],
+          timerNote: 'Two separately timed official papers, not one free 240-minute clock: Paper I (Mathematics) gets 120 minutes and auto-submits as a group, then Paper II (Physics and Chemistry, free navigation between the two) gets a separate 120 minutes with no return to Paper I. The official exam schedule includes a 1-hour gap between papers on exam day; this mock does not add that idle gap as working time.',
+          note: 'TakeMockTest online practice adaptation of the official WBJEE 2026 OMR question and scoring pattern. WBJEE uses three scoring categories across all three subjects: Category 1 (single correct option, +1 correct, -0.25 wrong), Category 2 (single correct option, +2 correct, -0.5 wrong), and Category 3 (multi-select, one or more correct options, maximum +2 with no negative marking; selecting a non-empty subset of only correct options, without the full set, earns proportional partial credit of 2 times selected-correct divided by total-correct; selecting any incorrect option scores 0). On exam day this is delivered as two OMR papers: Paper I Mathematics (75 questions, 100 marks, 120 minutes) and Paper II Physics and Chemistry (80 questions, 100 marks, 120 minutes), with a 1-hour gap between them.',
+          sourceUrl: WBJEE_2026_BULLETIN,
+          checkedOn: '21 August 2026',
+        },
+        tests: [
+          { id: 'engineering-full-mock-1', name: 'WBJEE 2026 Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 240, timingGroups: [{ sections: ['Mathematics'], duration: 120 }, { sections: ['Physics', 'Chemistry'], duration: 120 }], marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Category 1 questions award 1 mark (-0.25 wrong), Category 2 award 2 marks (-0.5 wrong), and Category 3 multi-select questions award up to 2 marks with no negative marking and proportional partial credit. Paper I (Mathematics) gets 120 minutes and auto-submits; Paper II (Physics and Chemistry) then gets a separate 120 minutes with no return to Paper I.', checkedOn: '21 August 2026' },
+          { id: 'engineering-mathematics-paper-1-practice-1', name: 'WBJEE 2026 Mathematics Paper I Practice Test 1', kind: 'practice', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Category 1 questions award 1 mark (-0.25 wrong), Category 2 award 2 marks (-0.5 wrong), and Category 3 multi-select questions award up to 2 marks with no negative marking and proportional partial credit. A standalone practice version of the official Paper I (Mathematics) with the full 120-minute working time.', checkedOn: '21 August 2026' },
+          { id: 'engineering-physics-chemistry-paper-2-practice-1', name: 'WBJEE 2026 Physics and Chemistry Paper II Practice Test 1', kind: 'practice', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Category 1 questions award 1 mark (-0.25 wrong), Category 2 award 2 marks (-0.5 wrong), and Category 3 multi-select questions award up to 2 marks with no negative marking and proportional partial credit. A standalone practice version of the official Paper II with free navigation across Physics and Chemistry for the full 120-minute working time.', checkedOn: '21 August 2026' },
         ],
       },
     ],
