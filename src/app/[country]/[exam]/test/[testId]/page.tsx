@@ -1090,6 +1090,25 @@ const IELTS_ACADEMIC_READING_FULL_MOCK_FAQS = [
   },
 ];
 
+const IELTS_GENERAL_TRAINING_READING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this official IELTS content?',
+    answer: 'No. It is an independent practice mock containing original passages and questions mapped to the official IELTS General Training Reading format and scoring rules.',
+  },
+  {
+    question: 'How many correct answers do I need for a Band 7 in IELTS General Training Reading?',
+    answer: 'Roughly 34 to 35 correct answers out of 40, a higher bar than Academic Reading\'s 30 to 32, since General Training\'s texts are considered easier overall.',
+  },
+  {
+    question: 'Is there negative marking in IELTS Reading?',
+    answer: 'No. Each correct answer scores 1 mark, with no deduction for a wrong or unattempted question. Your raw score out of 40 is then converted to a band score from 1 to 9.',
+  },
+  {
+    question: 'What is the difference between IELTS Academic and General Training Reading?',
+    answer: 'Section 1 uses short social or survival texts such as notices, advertisements, and guides, Section 2 uses workplace-related texts, and Section 3 is one longer, general-interest text similar in style to the Academic test. Academic Reading instead uses three passages drawn from books, journals, and academic sources throughout.',
+  },
+];
+
 const SAT_READING_AND_WRITING_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official Digital SAT question paper?',
@@ -1109,6 +1128,29 @@ const SAT_READING_AND_WRITING_FULL_MOCK_FAQS = [
   },
 ];
 
+const SAT_MATH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official Digital SAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Digital SAT Math content domains and format.',
+  },
+  {
+    question: 'Can I use a calculator on the Digital SAT Math section?',
+    answer: 'Yes, throughout the entire section. This is a change from the older paper SAT, which had a no-calculator Math portion.',
+  },
+  {
+    question: 'Does the Digital SAT Math section have typed-answer questions, or is it all multiple choice?',
+    answer: 'Mostly multiple choice, but a portion require typing in a numeric answer directly, known as student-produced response questions, instead of choosing from options. This mock includes both formats.',
+  },
+  {
+    question: 'Is there negative marking on the Digital SAT?',
+    answer: 'No. There is no penalty for a wrong or unattempted answer, so it is always worth attempting every question.',
+  },
+  {
+    question: 'How is Digital SAT Math scored?',
+    answer: 'The official test reports a scaled score between 200 and 800 for the section, calculated from your adaptive performance across two modules. This mock shows your raw score out of 44 instead, since it does not replicate the official adaptive-difficulty scaling.',
+  },
+];
+
 const GRE_QUANTITATIVE_REASONING_FULL_MOCK_FAQS = [
   {
     question: 'Is this official GRE content?',
@@ -1125,6 +1167,82 @@ const GRE_QUANTITATIVE_REASONING_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking on the GRE?',
     answer: 'No. There is no penalty for a wrong or unattempted answer on the GRE Quantitative Reasoning section.',
+  },
+];
+
+const TOEFL_READING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this official TOEFL content?',
+    answer: 'No. It is an independent practice mock containing original passages and questions mapped to the official TOEFL iBT Reading section format, as redesigned since 21 January 2026.',
+  },
+  {
+    question: 'What is Complete the Words in TOEFL Reading, and why isn\'t it in this mock?',
+    answer: 'Complete the Words is a vocabulary task where you type in missing letters or word fragments to complete partially shown words, worth about 30 of the section\'s 50 scored items. It is not a multiple-choice format, so it isn\'t included here; this mock covers the Read in Daily Life and Read an Academic Passage task types instead.',
+  },
+  {
+    question: 'Is there negative marking on TOEFL Reading?',
+    answer: 'No. Each correct answer earns a point, with no deduction for a wrong or unattempted question.',
+  },
+  {
+    question: 'How is TOEFL Reading scored?',
+    answer: 'The official test reports a 1 to 6 score aligned to CEFR levels, with an additional comparable 0 to 120 score also shown during the two-year transition period after the January 2026 redesign. This mock shows your raw correct count out of 30 instead.',
+  },
+];
+
+const PTE_READING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this official PTE content?',
+    answer: 'No. It is an independent practice mock containing original passages and questions mapped to the official PTE Academic Reading task types and scoring rules.',
+  },
+  {
+    question: 'Why does this mock only cover 2 of PTE Reading\'s 5 task types?',
+    answer: 'The official section has five task types: Multiple Choice (Single Answer), Multiple Choice (Multiple Answers), Re-order Paragraphs, and two Fill in the Blanks formats. Re-order Paragraphs uses drag-and-drop sequencing and both Fill in the Blanks types use dropdown word selection, formats this practice engine cannot render, so this mock covers only the two multiple-choice types.',
+  },
+  {
+    question: 'How is the Multiple Choice: Multiple Answers question scored in this mock?',
+    answer: 'You earn 1 mark for each correct option you select, as long as you don\'t include any incorrect option. Including even one incorrect option scores zero for that entire question, this site\'s own scoring model rather than PTE\'s official proprietary partial-credit formula.',
+  },
+  {
+    question: 'Is there negative marking in PTE Reading?',
+    answer: 'No penalty beyond the Multiple Answers scoring rule above. A wrong Single Answer choice, or an unattempted question, simply scores zero.',
+  },
+];
+
+const MCAT_CARS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this official MCAT content?',
+    answer: 'No. It is an independent practice mock containing original passages and questions mapped to the official MCAT CARS (Critical Analysis and Reasoning Skills) format.',
+  },
+  {
+    question: 'Why does this mock only cover CARS and not the other three MCAT sections?',
+    answer: 'CARS is the one MCAT section answerable strictly from its own passage, with no outside science knowledge required. The other three sections, covering Biological, Chemical and Physical, and Psychological and Social Foundations, require rigorously fact-checked science content, which this site is intentionally reserving for its standard content-review process rather than self-authoring.',
+  },
+  {
+    question: 'Is there negative marking on MCAT CARS?',
+    answer: 'No. Each correct answer earns a point, with no deduction for a wrong or unattempted question.',
+  },
+  {
+    question: 'How is MCAT CARS scored?',
+    answer: 'The official test reports a scaled score from 118 to 132 for the section, with 125 as the midpoint. This mock shows your raw correct count out of 24 instead.',
+  },
+];
+
+const OET_READING_PART_C_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this official OET content?',
+    answer: 'No. It is an independent practice mock containing original texts and questions mapped to the official OET Reading Part C format.',
+  },
+  {
+    question: 'Why does this mock only cover Part C of OET Reading?',
+    answer: 'The Reading sub-test has three parts: Part A is typed short-answer and matching rather than multiple choice, and Part B uses 3 answer options per question rather than 4. Part C is the only part in the 4-option multiple-choice format this site supports, and this mock matches its full official question count.',
+  },
+  {
+    question: 'Can this mock\'s score predict my OET Grade B?',
+    answer: 'Not on its own. OET grades are based on all 42 marks across Parts A, B, and C combined, and this mock covers only Part C\'s 16 marks. A strong Part C score is a good sign, but it can\'t substitute for practicing Parts A and B as well.',
+  },
+  {
+    question: 'Is there negative marking on OET Reading?',
+    answer: 'No. Each correct answer earns a point, with no deduction for a wrong or unattempted question.',
   },
 ];
 
@@ -1182,8 +1300,14 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'comedk-uget/btech': COMEDK_UGET_BTECH_FULL_MOCK_FAQS,
   'iiit-hyderabad-ugee/ugee': IIIT_HYDERABAD_UGEE_FULL_MOCK_FAQS,
   'ielts/academic-reading': IELTS_ACADEMIC_READING_FULL_MOCK_FAQS,
+  'ielts/general-training-reading': IELTS_GENERAL_TRAINING_READING_FULL_MOCK_FAQS,
   'sat/reading-and-writing': SAT_READING_AND_WRITING_FULL_MOCK_FAQS,
+  'sat/math': SAT_MATH_FULL_MOCK_FAQS,
   'gre/quantitative-reasoning': GRE_QUANTITATIVE_REASONING_FULL_MOCK_FAQS,
+  'toefl/reading': TOEFL_READING_FULL_MOCK_FAQS,
+  'pte/reading': PTE_READING_FULL_MOCK_FAQS,
+  'mcat/critical-analysis-and-reasoning-skills': MCAT_CARS_FULL_MOCK_FAQS,
+  'oet/reading-part-c': OET_READING_PART_C_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
