@@ -68,6 +68,29 @@ const SSC_TIER1_FULL_MOCK_FAQS = [
   },
 ];
 
+const SSC_CGL_TIER2_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SSC CGL Tier 2 syllabus and pattern.',
+  },
+  {
+    question: 'What is the SSC CGL Tier 2 negative marking scheme?',
+    answer: 'A wrong answer deducts 1 mark in every module this mock covers: Mathematical Abilities, Reasoning and General Intelligence, English Language and Comprehension, General Awareness, and Computer Knowledge Test. Unattempted questions score zero.',
+  },
+  {
+    question: 'How many questions are there in SSC CGL Tier 2, and how long is the exam?',
+    answer: '150 questions for 450 marks in 135 minutes, across five sectionally locked modules: Mathematical Abilities (30 questions, 30 minutes), Reasoning and General Intelligence (30 questions, 30 minutes), English Language and Comprehension (45 questions, 40 minutes), General Awareness (25 questions, 20 minutes), and Computer Knowledge Test (20 questions, 15 minutes).',
+  },
+  {
+    question: 'Does this mock include the Data Entry Speed Test (DEST)?',
+    answer: 'No. DEST is a separate 15-minute typing test, qualifying in nature, required only for specific posts. It is not a multiple-choice format, so it is not simulated here; this mock covers the five objective modules only.',
+  },
+  {
+    question: 'Can I move between modules in SSC CGL Tier 2, or is each one timed separately?',
+    answer: 'Each module has its own fixed timer, matching the official sectional lock. Once a module\'s timer ends, it closes automatically and you move to the next one; unused time cannot be carried over.',
+  },
+];
+
 const RRB_NTPC_CBT1_FULL_MOCK_FAQS = [
   {
     question: 'Is this an official RRB NTPC question paper?',
@@ -1006,8 +1029,108 @@ const MET_BTECH_FULL_MOCK_FAQS = [
   },
 ];
 
+const COMEDK_UGET_BTECH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official COMEDK question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official COMEDK UGET 2026 B.E./B.Tech (PCM) syllabus and pattern.',
+  },
+  {
+    question: 'Is there negative marking in COMEDK UGET?',
+    answer: 'No. Each correct answer earns 1 mark, and there is no deduction for a wrong or unattempted question.',
+  },
+  {
+    question: 'Can I move freely between Physics, Chemistry, and Mathematics in COMEDK UGET?',
+    answer: 'Yes. The official exam has no sectional time limit, so you can attempt any section in any order within the full duration. This mock\'s separate sectional tests exist only for focused single-subject practice.',
+  },
+  {
+    question: 'How many questions are there in COMEDK UGET, and how are the marks split?',
+    answer: '180 questions for 180 marks, split evenly across Physics, Chemistry, and Mathematics at 60 questions each.',
+  },
+  {
+    question: 'How long is the COMEDK UGET exam?',
+    answer: 'This mock uses a 180-minute (3-hour) practice timer, matching what is widely and consistently reported for the exam. COMEDK\'s own 2026 notification and brochure do not state a numeric session duration in readable public text, so this figure is a TakeMockTest practice duration, not a direct official citation.',
+  },
+];
+
+const IIIT_HYDERABAD_UGEE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official IIIT Hyderabad question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official IIIT Hyderabad UGEE 2026 syllabus and pattern.',
+  },
+  {
+    question: 'Is there negative marking in IIIT Hyderabad UGEE?',
+    answer: 'Yes. Both sections use 25% negative marking on that question\'s own marks: SUPR questions score +1/-0.25, and REAP questions score +2/-0.5.',
+  },
+  {
+    question: 'What is the difference between SUPR and REAP in IIIT Hyderabad UGEE?',
+    answer: 'SUPR (Subject Proficiency Test) covers Class 11/12 Physics, Mathematics, and Chemistry syllabus recall, in a 60-minute, 40-question section. REAP (Research Aptitude Test) is a 120-minute, 50-question section that emphasizes critical and creative thinking beyond direct syllabus recall, worth more marks per question.',
+  },
+  {
+    question: 'How does IIIT Hyderabad UGEE decide the final admission offer?',
+    answer: 'SUPR performance is used to filter candidates first, then REAP score ranks the shortlisted candidates for an interview. The final admission offer is based on interview performance alone, not directly on the UGEE score.',
+  },
+];
+
+const IELTS_ACADEMIC_READING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this official IELTS content?',
+    answer: 'No. It is an independent practice mock containing original passages and questions mapped to the official IELTS Academic Reading format and scoring rules.',
+  },
+  {
+    question: 'How many correct answers do I need for a Band 7 in IELTS Academic Reading?',
+    answer: 'Roughly 30 to 32 correct answers out of 40, based on the published IELTS Academic Reading conversion table. The exact cutoff can shift slightly between test versions, but this range stays stable across cycles.',
+  },
+  {
+    question: 'Is there negative marking in IELTS Reading?',
+    answer: 'No. Each correct answer scores 1 mark, with no deduction for a wrong or unattempted question. Your raw score out of 40 is then converted to a band score from 1 to 9.',
+  },
+  {
+    question: 'Does this mock use the same question formats as the real IELTS Reading test?',
+    answer: 'Not entirely. Every question here is multiple-choice, so it can be scored instantly. The official test also uses formats such as matching and sentence completion for the same reading skills, which are not reproduced in this practice interface.',
+  },
+];
+
+const SAT_READING_AND_WRITING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official Digital SAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Digital SAT Reading and Writing content domains and format.',
+  },
+  {
+    question: 'Is the Digital SAT Reading and Writing section adaptive?',
+    answer: 'Yes. The official section is delivered as two 27-question modules, and how you perform on the first module determines the difficulty of the second. This mock uses a fixed, non-adaptive set of 54 questions instead, so every test-taker sees the same difficulty mix.',
+  },
+  {
+    question: 'Is there negative marking on the Digital SAT?',
+    answer: 'No. There is no penalty for a wrong or unattempted answer, so it is always worth attempting every question.',
+  },
+  {
+    question: 'How is Digital SAT Reading and Writing scored?',
+    answer: 'The official test reports a scaled score between 200 and 800 for the section, calculated from your adaptive performance across both modules. This mock shows your raw score out of 54 instead, since it does not replicate the official adaptive-difficulty scaling.',
+  },
+];
+
+const GRE_QUANTITATIVE_REASONING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this official GRE content?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official GRE Quantitative Reasoning format and scoring rules.',
+  },
+  {
+    question: 'Is the GRE Quantitative Reasoning section adaptive?',
+    answer: 'Yes, at the section level. Your performance on the first Quantitative Reasoning section determines whether your second section is easier or harder, which in turn caps or unlocks the top of the 130 to 170 score scale.',
+  },
+  {
+    question: 'What does this mock leave out from the real GRE Quant section?',
+    answer: 'The official section also uses 5-choice Multiple Choice: Select One Answer Choice questions, Multiple Choice: Select One or More Answer Choices questions, and Data Interpretation sets built on shared data or tables. This mock covers only Quantitative Comparison and Numeric Entry, the two formats that fit this site\'s engine cleanly.',
+  },
+  {
+    question: 'Is there negative marking on the GRE?',
+    answer: 'No. There is no penalty for a wrong or unattempted answer on the GRE Quantitative Reasoning section.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
+  'ssc-cgl/tier-2': SSC_CGL_TIER2_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
   'ibps-po/prelims': IBPS_PO_PRELIMS_FULL_MOCK_FAQS,
   'ibps-po/mains': IBPS_PO_MAINS_FULL_MOCK_FAQS,
@@ -1056,6 +1179,11 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'srmjeee/pcm': SRMJEEE_PCM_FULL_MOCK_FAQS,
   'aeee/btech': AEEE_BTECH_FULL_MOCK_FAQS,
   'met/btech': MET_BTECH_FULL_MOCK_FAQS,
+  'comedk-uget/btech': COMEDK_UGET_BTECH_FULL_MOCK_FAQS,
+  'iiit-hyderabad-ugee/ugee': IIIT_HYDERABAD_UGEE_FULL_MOCK_FAQS,
+  'ielts/academic-reading': IELTS_ACADEMIC_READING_FULL_MOCK_FAQS,
+  'sat/reading-and-writing': SAT_READING_AND_WRITING_FULL_MOCK_FAQS,
+  'gre/quantitative-reasoning': GRE_QUANTITATIVE_REASONING_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
