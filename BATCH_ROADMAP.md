@@ -95,6 +95,9 @@ tackle after the national-level exams above are done, same process).
 - [x] NATA (Mathematics only, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 - [x] MHT CET (PCM group, official 90+90 timing-group pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the new generic `timingGroups` mechanism)
 - [x] WBJEE (Engineering, official 120+120 two-paper timing-group pattern reusing MHT CET's `timingGroups` mechanism, plus a new proportional Category 3 partial-marking mode — see TAKEMOCKTEST_CURRENT_STATUS.md)
+- [ ] KEAM — investigated and rejected: official paper uses 5 answer options per question (A-E), not 4, incompatible with this site's 4-option MCQ engine (same class of rejection as XAT/MAH MBA CET)
+- [x] AP EAPCET (Engineering, coding-agent-authored while ChatGPT worked on KCET, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
+- [x] KCET (Engineering, official 80+80+80 three-paper timing-group pattern reusing MHT CET's `timingGroups` mechanism unchanged for a three-group case — see TAKEMOCKTEST_CURRENT_STATUS.md)
 
 After the national and institute entrances, continue with the state engineering entrances
 in `exam-catalog.ts` order. Keep the same one-exam-per-run process below.
