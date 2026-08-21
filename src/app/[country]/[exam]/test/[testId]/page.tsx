@@ -51,12 +51,20 @@ const SSC_TIER1_FULL_MOCK_FAQS = [
     answer: 'No. It is an independent practice mock containing original questions mapped to the official SSC CGL Tier 1 syllabus and pattern.',
   },
   {
-    question: 'How do the sectional timers work?',
-    answer: 'Each of the four sections has 15 minutes. When a section ends, it locks automatically and the next section begins.',
+    question: 'What is the SSC CGL Tier 1 negative marking scheme?',
+    answer: 'A correct answer earns 2 marks, and a wrong answer deducts 0.5 marks. Four wrong answers cancel out one full correct answer. Unattempted questions score zero.',
   },
   {
-    question: 'Is there negative marking?',
-    answer: 'Yes. A correct answer earns 2 marks, a wrong answer deducts 0.5 marks, and an unattempted question scores zero.',
+    question: 'How many questions are there in SSC CGL Tier 1, and how long is the exam?',
+    answer: '100 questions for 200 marks in 60 minutes, split across four sections of 25 questions each: General Intelligence and Reasoning, General Awareness, Quantitative Aptitude, and English Comprehension.',
+  },
+  {
+    question: 'Can I move between sections in SSC CGL Tier 1, or is each one timed separately?',
+    answer: 'Each section has its own fixed 15-minute timer. Once a section\'s timer ends, it locks automatically and you move to the next one; unused time from one section cannot be carried over to another.',
+  },
+  {
+    question: 'Do SSC CGL Tier 1 marks count towards the final selection?',
+    answer: 'No. Tier 1 is qualifying in nature: you need to clear the Tier 1 cutoff to advance, but your final SSC CGL merit is decided by Tier 2, not by your Tier 1 score.',
   },
 ];
 
@@ -76,6 +84,33 @@ const RRB_NTPC_CBT1_FULL_MOCK_FAQS = [
   {
     question: 'Is there negative marking in RRB NTPC CBT 1?',
     answer: 'Yes. A correct answer earns 1 mark, and a wrong answer deducts one-third (0.333) of a mark. Unattempted questions score zero.',
+  },
+  {
+    question: 'Does RRB NTPC CBT 1 use normalization across shifts?',
+    answer: 'Yes, when CBT 1 runs across multiple shifts, RRB normalizes each candidate\'s raw score to account for difficulty differences between shifts, so someone in a harder shift isn\'t disadvantaged against someone in an easier one. This mock scores your raw marks directly, since normalization depends on the actual shift-wide difficulty spread on exam day, which no practice test can reproduce.',
+  },
+];
+
+const IBPS_PO_PRELIMS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official IBPS question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official IBPS PO Prelims syllabus and pattern.',
+  },
+  {
+    question: 'What is the IBPS PO Prelims negative marking scheme?',
+    answer: 'Each wrong answer deducts one-fourth of that question\'s marks. Unattempted questions score zero.',
+  },
+  {
+    question: 'Do I need to clear a sectional cutoff in IBPS PO Prelims, or just the overall score?',
+    answer: 'Both. IBPS PO Prelims has three separately timed sections, English Language, Quantitative Aptitude, and Reasoning Ability, and you must clear the qualifying cutoff in each one individually, not just the combined total.',
+  },
+  {
+    question: 'How many questions are there in IBPS PO Prelims, and how are the marks split?',
+    answer: '100 questions for 100 marks in 60 minutes: English Language (30 questions, 30 marks), Quantitative Aptitude (35 questions, 30 marks), and Reasoning Ability (35 questions, 40 marks). The marks are not split evenly across sections even though two of them have the same number of questions.',
+  },
+  {
+    question: 'Do IBPS PO Prelims marks count towards the final selection?',
+    answer: 'No. Prelims is qualifying only, used to shortlist candidates for Mains. Your final IBPS PO score is based on Mains plus the interview, not on your Prelims marks.',
   },
 ];
 
@@ -974,6 +1009,7 @@ const MET_BTECH_FULL_MOCK_FAQS = [
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'rrb-ntpc/cbt-1': RRB_NTPC_CBT1_FULL_MOCK_FAQS,
+  'ibps-po/prelims': IBPS_PO_PRELIMS_FULL_MOCK_FAQS,
   'ibps-po/mains': IBPS_PO_MAINS_FULL_MOCK_FAQS,
   'ssc-chsl/tier-1': SSC_CHSL_TIER1_FULL_MOCK_FAQS,
   'ibps-clerk/prelims': IBPS_CLERK_PRELIMS_FULL_MOCK_FAQS,
