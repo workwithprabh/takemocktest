@@ -1246,6 +1246,120 @@ const OET_READING_PART_C_FULL_MOCK_FAQS = [
   },
 ];
 
+const ACT_ENGLISH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official ACT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Enhanced ACT English section format.',
+  },
+  {
+    question: 'How many questions does the official ACT English section have?',
+    answer: '50 questions in 35 minutes, testing grammar, punctuation, sentence structure, and rhetorical skills. This mock is a shorter 25-question set across the same two skill categories, for focused practice rather than the full official item count.',
+  },
+  {
+    question: 'Does the ACT English score count toward my Composite score?',
+    answer: 'Yes. Your Composite score is the average of your English, Math, and Reading scaled scores, rounded to the nearest whole number.',
+  },
+  {
+    question: 'Is there negative marking on the ACT?',
+    answer: 'No. There is no penalty for a wrong or unattempted answer, so it is always worth attempting every question.',
+  },
+];
+
+const ACT_MATH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official ACT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Enhanced ACT Math section format.',
+  },
+  {
+    question: 'Can I use a calculator on the ACT Math section?',
+    answer: 'Yes, a calculator is permitted throughout the entire section.',
+  },
+  {
+    question: 'How many answer choices does ACT Math use now?',
+    answer: '4, reduced from the traditional 5 as part of the 2026 Enhanced ACT rollout, matching this site\'s multiple-choice format exactly.',
+  },
+  {
+    question: 'Does the ACT Math score count toward my Composite score?',
+    answer: 'Yes. Your Composite score is the average of your English, Math, and Reading scaled scores, rounded to the nearest whole number.',
+  },
+];
+
+const ACT_READING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official ACT question paper?',
+    answer: 'No. It is an independent practice mock containing original passages and questions mapped to the official Enhanced ACT Reading section format.',
+  },
+  {
+    question: 'What passage types does the ACT Reading section cover?',
+    answer: 'Four types: Literary Narrative, Social Science, Humanities, and Natural Science, each followed by its own set of questions in the official test.',
+  },
+  {
+    question: 'Does the ACT Reading score count toward my Composite score?',
+    answer: 'Yes. Your Composite score is the average of your English, Math, and Reading scaled scores, rounded to the nearest whole number.',
+  },
+  {
+    question: 'Is there negative marking on the ACT?',
+    answer: 'No. There is no penalty for a wrong or unattempted answer, so it is always worth attempting every question.',
+  },
+];
+
+const ACT_SCIENCE_FULL_MOCK_FAQS = [
+  {
+    question: 'Do I need to take the ACT Science section?',
+    answer: 'For most colleges, no. Since the 2026 Enhanced ACT rollout, Science is optional and does not factor into your Composite score. Only a small number of schools, including Georgetown, Boston University, Marquette, Pomona, and East Carolina, along with the U.S. service academies, generally expect it, so check your target colleges\' current testing policy directly.',
+  },
+  {
+    question: 'Does the ACT Science score count toward my Composite score?',
+    answer: 'No. Composite is calculated only from English, Math, and Reading. Science is still scored on the same 1 to 36 scale and reported separately when taken.',
+  },
+  {
+    question: 'What does the ACT Science section actually test?',
+    answer: 'Data interpretation and scientific reasoning from passages presenting data, experiments, or differing viewpoints, not memorized science facts.',
+  },
+  {
+    question: 'Is this an official ACT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Enhanced ACT Science section format.',
+  },
+];
+
+const FRM_PART_1_QUANTITATIVE_ANALYSIS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official GARP question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official FRM Part I Quantitative Analysis syllabus.',
+  },
+  {
+    question: 'Why does this mock cover only Quantitative Analysis, not the whole FRM Part I exam?',
+    answer: 'Quantitative Analysis is the one Part I topic area built entirely from probability, statistics, and regression, so every answer is independently checkable by calculation. The other three topic areas, and every Part II topic area, require accurate recall of risk-management methodology, regulatory frameworks, and market practice, which this site is intentionally reserving for its standard content-review process.',
+  },
+  {
+    question: 'How is the FRM exam actually scored?',
+    answer: 'GARP does not disclose a numeric score or exact passing threshold. Both FRM exams are reported as pass or fail only, with quartile feedback (1st being the top quartile, 4th the bottom) for each topic area so you can see your relative strengths and weaknesses.',
+  },
+  {
+    question: 'Is there negative marking on the FRM exam?',
+    answer: 'No. There is no penalty for a wrong or unattempted answer, so it is always worth attempting every question.',
+  },
+];
+
+const NISM_SERIES_V_A_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official NISM question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official NISM Series V-A syllabus.',
+  },
+  {
+    question: 'What is the passing score for NISM Series V-A?',
+    answer: '50%. The official exam has 100 questions of 1 mark each in 2 hours, and you need 50 marks to pass.',
+  },
+  {
+    question: 'How long is a NISM Series V-A certificate valid?',
+    answer: '3 years from the date you pass the exam. You can renew it either by retaking and passing the exam again, or by completing NISM\'s Continuing Professional Education programme within the final 12 months before it expires.',
+  },
+  {
+    question: 'Why does this mock cover only NAV and SIP calculations, not the full syllabus?',
+    answer: 'Those are the calculation-based portion of the syllabus, where every answer is independently verifiable by formula. Fund categorization rules, regulatory and compliance content, and taxation are excluded, since those change with SEBI and tax circulars and require accurate, current recall rather than calculation.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'ssc-cgl/tier-2': SSC_CGL_TIER2_FULL_MOCK_FAQS,
@@ -1308,6 +1422,12 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'pte/reading': PTE_READING_FULL_MOCK_FAQS,
   'mcat/critical-analysis-and-reasoning-skills': MCAT_CARS_FULL_MOCK_FAQS,
   'oet/reading-part-c': OET_READING_PART_C_FULL_MOCK_FAQS,
+  'act/english': ACT_ENGLISH_FULL_MOCK_FAQS,
+  'act/math': ACT_MATH_FULL_MOCK_FAQS,
+  'act/reading': ACT_READING_FULL_MOCK_FAQS,
+  'act/science': ACT_SCIENCE_FULL_MOCK_FAQS,
+  'frm/part-1-quantitative-analysis': FRM_PART_1_QUANTITATIVE_ANALYSIS_FULL_MOCK_FAQS,
+  'nism/series-v-a-mutual-fund-distributors': NISM_SERIES_V_A_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
