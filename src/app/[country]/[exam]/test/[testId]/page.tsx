@@ -1588,6 +1588,310 @@ const NAVY_SSR_ENGLISH_AND_MATHEMATICS_FULL_MOCK_FAQS = [
   },
 ];
 
+const CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official CLAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official CLAT UG syllabus.',
+  },
+  {
+    question: 'How many law universities accept CLAT scores?',
+    answer: 'Over 20 National Law Universities across India use the CLAT score for centralised admission and counselling to their undergraduate programmes, alongside many other private law colleges that also accept the score.',
+  },
+  {
+    question: 'Why does this mock exclude Current Affairs, including General Knowledge?',
+    answer: 'Current Affairs is one of CLAT\'s five official sections, but it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'What is the CLAT negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const AILET_ENGLISH_AND_LOGICAL_REASONING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official AILET question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official AILET syllabus.',
+  },
+  {
+    question: 'Does a CLAT score work for admission to National Law University Delhi?',
+    answer: 'No. National Law University Delhi runs its own separate admission test, AILET, and does not accept CLAT scores for its undergraduate programme.',
+  },
+  {
+    question: 'Why does this mock exclude General Knowledge and Current Affairs?',
+    answer: 'General Knowledge and Current Affairs is one of AILET\'s official sections, but it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'What is the AILET negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SLAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Symbiosis Law Admission Test syllabus.',
+  },
+  {
+    question: 'Is there an interview or writing round after SLAT?',
+    answer: 'Yes. SLAT is followed by a Personal Interaction and Writing Ability Test, both of which factor into final selection alongside the SLAT score.',
+  },
+  {
+    question: 'Why does this mock exclude General Knowledge?',
+    answer: 'General Knowledge is one of SLAT\'s five official sections, but it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'Does SLAT have negative marking?',
+    answer: 'No. There is no negative marking in SLAT, so every question can be safely attempted.',
+  },
+];
+
+const MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official MH CET Law question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official MH CET Law 5-Year LLB syllabus.',
+  },
+  {
+    question: 'Who should take the 5-year MH CET Law instead of the 3-year one?',
+    answer: 'Candidates who have just completed Class 12 and want to enrol directly into the 5-year integrated LLB programme take this version. Graduates seeking the 3-year LLB take the separate 3-year MH CET Law exam instead.',
+  },
+  {
+    question: 'Why does this mock exclude General Knowledge?',
+    answer: 'General Knowledge is one of MH CET Law\'s five official sections, but it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'Does MH CET Law have negative marking?',
+    answer: 'No. There is no negative marking in MH CET Law, so every question can be safely attempted.',
+  },
+];
+
+const MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official MH CET Law (3-Year) question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official MH CET Law 3-Year LLB syllabus.',
+  },
+  {
+    question: 'Who is eligible for the 3-year MH CET Law?',
+    answer: 'Graduates from any recognised bachelor\'s degree who want to pursue a 3-year LLB programme take this exam. It is a separate test from the 5-year MH CET Law, which is for Class 12 candidates.',
+  },
+  {
+    question: 'Why does this mock exclude General Knowledge?',
+    answer: 'General Knowledge is one of MH CET Law\'s four official sections, but it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'Does MH CET Law (3-Year) have negative marking?',
+    answer: 'No. There is no negative marking in MH CET Law, so every question can be safely attempted.',
+  },
+];
+
+const CAT_VARC_DILR_QA_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official CAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official CAT syllabus.',
+  },
+  {
+    question: 'Does a CAT score directly decide IIM admission, or does something else matter too?',
+    answer: 'The CAT percentile only gets you shortlisted. Final IIM admission also weighs Written Ability Test and Personal Interview performance, academic record, and work experience, which vary by institute.',
+  },
+  {
+    question: 'How is the CAT score converted into a percentile?',
+    answer: 'CAT is held across multiple sessions, or slots, each with a different question set. Raw scores are normalised across slots before being converted to a percentile, so a percentile is comparable across the whole candidate pool even though the actual questions differ by slot.',
+  },
+  {
+    question: 'What is the CAT negative marking scheme for this mock?',
+    answer: 'MCQs carry -1 for a wrong answer, matching the official CAT scheme. Numeric-entry (TITA) questions carry no penalty for a wrong answer, since they cannot be guessed from options the way MCQs can.',
+  },
+];
+
+const CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official CMAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official CMAT syllabus.',
+  },
+  {
+    question: 'Why does this mock exclude Innovation and Entrepreneurship?',
+    answer: 'Innovation and Entrepreneurship is one of CMAT\'s official sections, but it depends on general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'Is CMAT accepted by colleges outside Maharashtra?',
+    answer: 'Yes. CMAT is a national-level exam conducted by the National Testing Agency, and its score is accepted by AICTE-approved MBA colleges across India, not only within a single state.',
+  },
+  {
+    question: 'What is the CMAT negative marking scheme?',
+    answer: 'Each wrong answer deducts 1 mark. There is no deduction for an unattempted question.',
+  },
+];
+
+const NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official NMAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official NMAT by GMAC syllabus.',
+  },
+  {
+    question: 'How many times can I attempt NMAT?',
+    answer: 'Up to 3 times in one testing cycle, with at least 15 days required between consecutive attempts. Only your best score across all attempts is sent to the colleges you choose.',
+  },
+  {
+    question: 'Does NMAT have negative marking?',
+    answer: 'No. There is no negative marking in NMAT, so every question can be safely attempted.',
+  },
+  {
+    question: 'Are the three NMAT sections timed separately?',
+    answer: 'Yes. Each of the three sections, Language Skills, Quantitative Skills, and Logical Reasoning, has its own fixed time limit, and you cannot borrow time from one section for another.',
+  },
+];
+
+const SNAP_GENERAL_ENGLISH_ANALYTICAL_LOGICAL_REASONING_QUANTITATIVE_DI_DS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official SNAP question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official SNAP syllabus.',
+  },
+  {
+    question: 'How many times can I attempt SNAP?',
+    answer: 'Up to 3 times in one admission cycle, across separately scheduled test days. Symbiosis institutes consider the best of your SNAP scores when shortlisting for the next stage.',
+  },
+  {
+    question: 'How many institutes accept the SNAP score?',
+    answer: 'SNAP is accepted by around 17 Symbiosis International institutes across their various postgraduate management programmes, each running its own further shortlisting and selection process.',
+  },
+  {
+    question: 'What is the SNAP negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official ATMA question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official ATMA syllabus.',
+  },
+  {
+    question: 'How many times a year is ATMA held?',
+    answer: 'ATMA is conducted 4 to 5 times a year by the Association of Indian Management Schools, giving candidates multiple sittings to attempt and improve their score within the same admission cycle.',
+  },
+  {
+    question: 'How many colleges accept the ATMA score?',
+    answer: 'Over 500 AIMS member and affiliated business schools across India accept the ATMA score for their postgraduate management admissions.',
+  },
+  {
+    question: 'What is the ATMA negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const IBSAT_VERBAL_ABILITY_READING_COMPREHENSION_QUANTITATIVE_APTITUDE_DATA_ADEQUACY_AND_DI_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official IBSAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official IBSAT syllabus.',
+  },
+  {
+    question: 'Which colleges accept the IBSAT score?',
+    answer: 'IBSAT is accepted only by the IBS Business Schools, a network of 9 campuses across India, for admission to their integrated and standalone MBA programmes.',
+  },
+  {
+    question: 'What happens after IBSAT, is the score final?',
+    answer: 'No. Shortlisted candidates also go through a Personal Interaction and, at some campuses, a group activity or presentation, before final admission and scholarship decisions are made.',
+  },
+  {
+    question: 'Does IBSAT have negative marking?',
+    answer: 'No. There is no negative marking in IBSAT, so every question can be safely attempted.',
+  },
+];
+
+const MAT_LANGUAGE_COMPREHENSION_INTELLIGENCE_CRITICAL_REASONING_MATHEMATICAL_SKILLS_DATA_ANALYSIS_SUFFICIENCY_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official MAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official MAT syllabus.',
+  },
+  {
+    question: 'How many times a year is MAT held, and in what modes?',
+    answer: 'MAT is conducted 4 times a year by AIMA, and each session offers a choice of Paper-Based Test, Computer-Based Test, or Internet-Based Test, letting candidates pick whichever mode and date suits them.',
+  },
+  {
+    question: 'Why does this mock exclude Indian and Global Environment?',
+    answer: 'Indian and Global Environment is one of MAT\'s official sections, but it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'What is the MAT negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const MICAT_VERBAL_ABILITY_QUANTITATIVE_ABILITY_AND_DATA_INTERPRETATION_DIVERGENT_AND_CONVERGENT_THINKING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official MICAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official MICAT syllabus.',
+  },
+  {
+    question: 'Do I need another exam score before I can take MICAT?',
+    answer: 'Yes. MICAT is only open to candidates who have a valid CAT, XAT, GMAT, or CMAT score, so it isn\'t a fully standalone admission test on its own.',
+  },
+  {
+    question: 'How many times a year is MICAT held?',
+    answer: 'MICAT is conducted twice a year, in December and January, giving candidates two separate sittings within the same admission cycle.',
+  },
+  {
+    question: 'What is the MICAT negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const TANCET_MBA_BUSINESS_SITUATIONS_READING_COMPREHENSION_QUANTITATIVE_APTITUDE_DATA_SUFFICIENCY_GENERAL_ENGLISH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official TANCET MBA question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official TANCET MBA syllabus.',
+  },
+  {
+    question: 'Which colleges accept the TANCET MBA score?',
+    answer: 'Over 80 MBA colleges affiliated to Anna University across Tamil Nadu accept the TANCET score, with admission through the university\'s centralised counselling process.',
+  },
+  {
+    question: 'Does TANCET MBA have negative marking?',
+    answer: 'No. There is no negative marking in TANCET MBA, so every question can be safely attempted.',
+  },
+  {
+    question: 'How many marks does each TANCET MBA question carry?',
+    answer: 'Each correct answer carries 1 mark, and the paper has no sectional cutoffs, only a combined score across all sections.',
+  },
+];
+
+const KMAT_KARNATAKA_LANGUAGE_COMPREHENSION_MATHEMATICAL_SKILLS_BASIC_APTITUDE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official KMAT Karnataka question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official KMAT Karnataka syllabus.',
+  },
+  {
+    question: 'How many times a year is KMAT Karnataka held?',
+    answer: 'KMAT Karnataka is conducted twice a year by the Karnataka Private Post Graduate Colleges Association, giving candidates two separate sittings within the same admission cycle.',
+  },
+  {
+    question: 'How many colleges accept the KMAT Karnataka score?',
+    answer: 'Over 200 MBA and MCA colleges across Karnataka accept the KMAT Karnataka score for their postgraduate admissions.',
+  },
+  {
+    question: 'Does KMAT Karnataka have negative marking?',
+    answer: 'No. There is no negative marking in KMAT Karnataka, so every question can be safely attempted.',
+  },
+];
+
+const JIPMAT_QUANTITATIVE_APTITUDE_DATA_INTERPRETATION_LOGICAL_REASONING_VERBAL_ABILITY_READING_COMPREHENSION_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official JIPMAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official JIPMAT syllabus.',
+  },
+  {
+    question: 'Which institutes accept the JIPMAT score?',
+    answer: 'A single JIPMAT score is used for admission to the 5-year Integrated Programme in Management at both IIM Bodh Gaya and IIM Jammu, the only two IIMs offering this undergraduate-entry programme.',
+  },
+  {
+    question: 'Is the JIPMAT score the only thing that decides admission?',
+    answer: 'No. Shortlisted candidates also go through Profile-Based Shortlisting or Written Ability Test and Personal Interview rounds, which factor into final selection alongside the JIPMAT score.',
+  },
+  {
+    question: 'What is the JIPMAT negative marking scheme?',
+    answer: 'Each wrong answer deducts 1 mark. There is no deduction for an unattempted question.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'ssc-cgl/tier-2': SSC_CGL_TIER2_FULL_MOCK_FAQS,
@@ -1668,6 +1972,22 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'inet/english-and-reasoning-numerical-ability': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_FULL_MOCK_FAQS,
   'agniveer-vayu/english-and-mathematics': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_FULL_MOCK_FAQS,
   'navy-ssr/english-and-mathematics': NAVY_SSR_ENGLISH_AND_MATHEMATICS_FULL_MOCK_FAQS,
+  'clat/english-legal-logical-quantitative': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_FULL_MOCK_FAQS,
+  'ailet/english-and-logical-reasoning': AILET_ENGLISH_AND_LOGICAL_REASONING_FULL_MOCK_FAQS,
+  'slat/logical-legal-analytical-reading': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_FULL_MOCK_FAQS,
+  'mh-cet-law/legal-logical-english-mathematics': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_FULL_MOCK_FAQS,
+  'mh-cet-law-3-year/legal-logical-english': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_FULL_MOCK_FAQS,
+  'cat/varc-dilr-qa': CAT_VARC_DILR_QA_FULL_MOCK_FAQS,
+  'cmat/qtdi-logical-reasoning-language-comprehension': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_FULL_MOCK_FAQS,
+  'nmat/language-logical-reasoning-quantitative': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_FULL_MOCK_FAQS,
+  'snap/general-english-analytical-logical-reasoning-quantitative-di-ds': SNAP_GENERAL_ENGLISH_ANALYTICAL_LOGICAL_REASONING_QUANTITATIVE_DI_DS_FULL_MOCK_FAQS,
+  'atma/analytical-reasoning-verbal-quantitative-skills': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_FULL_MOCK_FAQS,
+  'ibsat/verbal-ability-reading-comprehension-quantitative-aptitude-data-adequacy-and-di': IBSAT_VERBAL_ABILITY_READING_COMPREHENSION_QUANTITATIVE_APTITUDE_DATA_ADEQUACY_AND_DI_FULL_MOCK_FAQS,
+  'mat/language-comprehension-intelligence-critical-reasoning-mathematical-skills-data-analysis-sufficiency': MAT_LANGUAGE_COMPREHENSION_INTELLIGENCE_CRITICAL_REASONING_MATHEMATICAL_SKILLS_DATA_ANALYSIS_SUFFICIENCY_FULL_MOCK_FAQS,
+  'micat/verbal-ability-quantitative-ability-and-data-interpretation-divergent-and-convergent-thinking': MICAT_VERBAL_ABILITY_QUANTITATIVE_ABILITY_AND_DATA_INTERPRETATION_DIVERGENT_AND_CONVERGENT_THINKING_FULL_MOCK_FAQS,
+  'tancet-mba/business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english': TANCET_MBA_BUSINESS_SITUATIONS_READING_COMPREHENSION_QUANTITATIVE_APTITUDE_DATA_SUFFICIENCY_GENERAL_ENGLISH_FULL_MOCK_FAQS,
+  'kmat-karnataka/language-comprehension-mathematical-skills-basic-aptitude': KMAT_KARNATAKA_LANGUAGE_COMPREHENSION_MATHEMATICAL_SKILLS_BASIC_APTITUDE_FULL_MOCK_FAQS,
+  'jipmat/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension': JIPMAT_QUANTITATIVE_APTITUDE_DATA_INTERPRETATION_LOGICAL_REASONING_VERBAL_ABILITY_READING_COMPREHENSION_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
