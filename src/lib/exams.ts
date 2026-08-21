@@ -77,8 +77,21 @@ export type ExamSlug =
   | 'micat'
   | 'tancet-mba'
   | 'kmat-karnataka'
-  | 'jipmat';
+  | 'jipmat'
+  | 'mht-cet';
 export type TestStatus = 'checked' | 'demo';
+
+// A generic multi-section timing window: one or more Question.section values
+// that share a single countdown, auto-submitting into the next group (or
+// ending the test, if last) when time runs out, with no way back into an
+// already-submitted group. `sectionDuration`/`sectionDurations` below only
+// model a 1-section-per-window timer; this covers exams (e.g. MHT CET, where
+// Physics and Chemistry share one 90-minute window before Mathematics gets
+// its own 90 minutes) where a window spans more than one section.
+export interface TimingGroup {
+  sections: string[];
+  duration: number;
+}
 
 export interface TestConfig {
   id: string;
@@ -88,6 +101,7 @@ export interface TestConfig {
   duration: number;
   sectionDuration?: number;
   sectionDurations?: number[];
+  timingGroups?: TimingGroup[];
   marksPerCorrect: number;
   negativeMarking: number;
   scoringNote?: string;
@@ -218,6 +232,8 @@ const MICAT_OFFICIAL_PAGE = 'https://www.mica.ac.in/';
 const TANCET_OFFICIAL_PAGE = 'https://tancet.annauniv.edu/';
 const KMAT_KARNATAKA_OFFICIAL_PAGE = 'https://www.kmatindia.com/';
 const JIPMAT_OFFICIAL_PAGE = 'https://jipmat.nta.ac.in/';
+const MHT_CET_2026_BROCHURE =
+  'https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-11.04.2026.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6349,6 +6365,41 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
           { id: 'data-interpretation-logical-reasoning-sectional-1', name: 'Data Interpretation and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Interpretation and Logical Reasoning', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
           { id: 'verbal-ability-reading-comprehension-sectional-1', name: 'Verbal Ability and Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability and Reading Comprehension', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
+        ],
+      },
+    ],
+  },
+  'mht-cet': {
+    slug: 'mht-cet',
+    name: 'MHT CET',
+    fullName: 'Maharashtra Common Entrance Test (PCM group)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'pcm',
+        name: 'PCM',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 150,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 50, marks: 50 },
+            { name: 'Chemistry', questions: 50, marks: 50 },
+            { name: 'Mathematics', questions: 50, marks: 100 },
+          ],
+          timerNote: 'Two-part official timer, not one free 180-minute clock: Physics and Chemistry share a single 90-minute window that auto-submits as a group, followed by a separate 90-minute Mathematics window with no return to Physics or Chemistry afterward.',
+          note: 'CBT: 150 four-option single-correct MCQs across Physics (50), Chemistry (50), and Mathematics (50), 200 marks total, no negative marking. Physics and Chemistry each award 1 mark per correct answer; Mathematics awards 2. Class 11 makes up roughly 20% of each subject\'s syllabus weightage and Class 12 the remaining 80%, corroborated across current secondary sources (Careers360, Shiksha) rather than confirmed to an exact official per-shift quota.',
+          sourceUrl: MHT_CET_2026_BROCHURE,
+          checkedOn: '20 August 2026',
+        },
+        tests: [
+          { id: 'pcm-full-mock-1', name: 'MHT CET 2026 PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Physics and Chemistry award 1 mark each per correct answer; Mathematics awards 2. No negative marking. Physics and Chemistry share the first 90 minutes and auto-submit as a group; Mathematics then gets a separate 90 minutes with no return to the first group.', checkedOn: '20 August 2026' },
+          { id: 'pcm-physics-chemistry-group-1', name: 'MHT CET 2026 Physics + Chemistry Group Practice Test 1', kind: 'practice', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. A standalone practice version of the official Physics + Chemistry group with free navigation across both subjects for the full 90 minutes; the complete PCM exam feeds this same group directly into a following Mathematics group, covered separately by the Full Mock.', checkedOn: '20 August 2026' },
+          { id: 'pcm-mathematics-sectional-1', name: 'MHT CET 2026 Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Each correct answer awards 2 marks, matching the official Mathematics group. No negative marking.', checkedOn: '20 August 2026' },
         ],
       },
     ],

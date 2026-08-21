@@ -147,7 +147,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'State engineering entrances',
         exams: [
-          exam('MHT CET', 'State'),
+          exam('MHT CET', 'State', 'mht-cet'),
           exam('WBJEE', 'State'),
           exam('KCET', 'State'),
           exam('KEAM', 'State'),

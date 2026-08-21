@@ -48,6 +48,7 @@ export default async function TestAttemptPage({
       duration={test.duration}
       sectionDuration={test.sectionDuration}
       sectionDurations={test.sectionDurations}
+      timingGroups={test.timingGroups}
       marksPerCorrect={test.marksPerCorrect}
       negativeMarking={test.negativeMarking}
       testId={testId}

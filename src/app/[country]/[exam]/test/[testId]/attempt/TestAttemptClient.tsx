@@ -5,6 +5,7 @@ import Link from 'next/link';
 import OMRBubble from '@/components/OMRBubble';
 import ResultDetail from '@/components/ResultDetail';
 import type { Question } from '@/lib/questions';
+import type { TimingGroup } from '@/lib/exams';
 import {
   AnswerValue,
   AttemptResult,
@@ -92,6 +93,7 @@ export default function TestAttemptClient({
   duration,
   sectionDuration,
   sectionDurations,
+  timingGroups,
   marksPerCorrect,
   negativeMarking,
   testId,
@@ -104,6 +106,7 @@ export default function TestAttemptClient({
   duration: number;
   sectionDuration?: number;
   sectionDurations?: number[];
+  timingGroups?: TimingGroup[];
   marksPerCorrect: number;
   negativeMarking: number;
   testId: string;
@@ -111,9 +114,19 @@ export default function TestAttemptClient({
   questions: Question[];
 }) {
   const sections = useMemo(() => [...new Set(questions.map((question) => question.section))], [questions]);
-  const usesSectionTimer = Boolean((sectionDuration || sectionDurations?.length) && sections.length > 1);
-  const getSectionDuration = (sectionIndex: number) =>
-    sectionDurations?.[sectionIndex] ?? sectionDuration ?? duration;
+  // A "group" is one timer window: usually a single section (the historical
+  // sectionDuration/sectionDurations model, one section per window), but
+  // timingGroups lets several sections share one window instead (e.g. MHT
+  // CET's Physics + Chemistry sharing 90 minutes before Mathematics gets its
+  // own 90). Falling back to one section per group when timingGroups is unset
+  // reproduces the old behavior exactly, so every existing exam is unaffected.
+  const groups = useMemo<string[][]>(
+    () => (timingGroups?.length ? timingGroups.map((group) => group.sections) : sections.map((section) => [section])),
+    [timingGroups, sections],
+  );
+  const usesSectionTimer = Boolean(timingGroups?.length) || Boolean((sectionDuration || sectionDurations?.length) && sections.length > 1);
+  const getGroupDuration = (groupIndex: number) =>
+    timingGroups?.length ? (timingGroups[groupIndex]?.duration ?? duration) : (sectionDurations?.[groupIndex] ?? sectionDuration ?? duration);
 
   const [phase, setPhase] = useState<'in-progress' | 'submitted'>('in-progress');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -121,7 +134,7 @@ export default function TestAttemptClient({
   const [answers, setAnswers] = useState<AnswerValue[]>(() => questions.map(() => null));
   const [visited, setVisited] = useState<boolean[]>(() => questions.map((_, i) => i === 0));
   const [marked, setMarked] = useState<boolean[]>(() => questions.map(() => false));
-  const [timeLeft, setTimeLeft] = useState(getSectionDuration(0) * 60);
+  const [timeLeft, setTimeLeft] = useState(getGroupDuration(0) * 60);
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [exitOpen, setExitOpen] = useState(false);
   const [paletteOpen, setPaletteOpen] = useState(false);
@@ -227,16 +240,16 @@ export default function TestAttemptClient({
       let nextTimeLeft = draft.timeLeft - offlineSeconds;
 
       if (usesSectionTimer) {
-        while (nextTimeLeft <= 0 && nextSection < sections.length - 1) {
+        while (nextTimeLeft <= 0 && nextSection < groups.length - 1) {
           nextSection += 1;
-          nextTimeLeft += getSectionDuration(nextSection) * 60;
+          nextTimeLeft += getGroupDuration(nextSection) * 60;
         }
       }
 
       const nextIndex =
         nextSection === draft.activeSectionIndex
           ? draft.currentIndex
-          : questions.findIndex((question) => question.section === sections[nextSection]);
+          : questions.findIndex((question) => groups[nextSection].includes(question.section));
 
       answersRef.current = draft.answers;
       activeSectionRef.current = nextSection;
@@ -305,10 +318,10 @@ export default function TestAttemptClient({
       timeSpentRef.current[currentIndexRef.current] += 1;
       setTimeLeft((t) => {
         if (t <= 1) {
-          if (usesSectionTimer && activeSectionRef.current < sections.length - 1) {
+          if (usesSectionTimer && activeSectionRef.current < groups.length - 1) {
             const nextSection = activeSectionRef.current + 1;
             const nextQuestion = questions.findIndex(
-              (question) => question.section === sections[nextSection],
+              (question) => groups[nextSection].includes(question.section),
             );
             activeSectionRef.current = nextSection;
             currentIndexRef.current = nextQuestion;
@@ -319,7 +332,7 @@ export default function TestAttemptClient({
                 index === nextQuestion ? true : visitedQuestion,
               ),
             );
-            return getSectionDuration(nextSection) * 60;
+            return getGroupDuration(nextSection) * 60;
           }
           clearInterval(interval);
           handleSubmit();
@@ -337,7 +350,7 @@ export default function TestAttemptClient({
     setAnswers(questions.map(() => null));
     setVisited(questions.map((_, i) => i === 0));
     setMarked(questions.map(() => false));
-    setTimeLeft(getSectionDuration(0) * 60);
+    setTimeLeft(getGroupDuration(0) * 60);
     setActiveSectionIndex(0);
     activeSectionRef.current = 0;
     elapsedRef.current = 0;
@@ -393,9 +406,9 @@ export default function TestAttemptClient({
   }
 
   const q = questions[currentIndex];
-  const activeSection = sections[activeSectionIndex] ?? q.section;
+  const activeGroupSections = groups[activeSectionIndex] ?? [q.section];
   const activeQuestionIndices = questions.flatMap((question, index) =>
-    question.section === activeSection ? [index] : [],
+    activeGroupSections.includes(question.section) ? [index] : [],
   );
   const sectionStart = usesSectionTimer ? (activeQuestionIndices[0] ?? 0) : 0;
   const sectionEnd = usesSectionTimer ? (activeQuestionIndices.at(-1) ?? questions.length - 1) : questions.length - 1;
@@ -404,7 +417,7 @@ export default function TestAttemptClient({
   const markedCount = marked.filter(Boolean).length;
 
   const goTo = (index: number) => {
-    if (usesSectionTimer && questions[index]?.section !== activeSection) return;
+    if (usesSectionTimer && !activeGroupSections.includes(questions[index]?.section)) return;
     if (!usesSectionTimer) {
       const nextSectionIndex = sections.indexOf(questions[index].section);
       activeSectionRef.current = nextSectionIndex;
@@ -443,14 +456,14 @@ export default function TestAttemptClient({
           <p className="text-xs text-ink-500">{examName} · Progress saved on this device</p>
         </div>
         <div
-          aria-label={`${usesSectionTimer ? `Section ${activeSectionIndex + 1} of ${sections.length}, ` : ''}${formatClock(timeLeft)} remaining`}
+          aria-label={`${usesSectionTimer ? `Section ${activeSectionIndex + 1} of ${groups.length}, ` : ''}${formatClock(timeLeft)} remaining`}
           className={`min-h-11 px-3 py-2 font-mono text-sm font-semibold ${
             timeLeft <= 120 ? 'bg-attention-600 text-white' : 'bg-ink-100 text-ink-700'
           }`}
         >
           {usesSectionTimer && (
             <span className="mr-2 font-sans text-[10px] uppercase tracking-wide">
-              Section {activeSectionIndex + 1}/{sections.length}
+              Section {activeSectionIndex + 1}/{groups.length}
             </span>
           )}
           {formatClock(timeLeft)}
@@ -600,7 +613,7 @@ export default function TestAttemptClient({
             className={`${paletteOpen ? 'block' : 'hidden'} border border-t-0 border-ink-200 bg-white p-4 md:block md:border-t`}
           >
             {usesSectionTimer && (
-              <div className="text-xs font-semibold text-ink-900 mb-1">{activeSection}</div>
+              <div className="text-xs font-semibold text-ink-900 mb-1">{activeGroupSections.join(' + ')}</div>
             )}
             <div className="text-xs font-semibold text-ink-500 mb-1">
               {usesSectionTimer

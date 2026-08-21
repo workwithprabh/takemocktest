@@ -200,6 +200,9 @@ import { IIIT_HYDERABAD_UGEE_2026_REAP_SECTIONAL_1 } from './question-banks/iiit
 import { JEE_MAIN_PAPER_2_2A_OBJECTIVE_PRACTICE_1 } from './question-banks/jee-main-paper-2-2a-objective-practice-1';
 import { JEE_MAIN_PAPER_2_2B_FULL_MOCK_1 } from './question-banks/jee-main-paper-2-2b-full-mock-1';
 import { NATA_MATHEMATICS_1 } from './question-banks/nata-mathematics-1';
+import { MHT_CET_PCM_FULL_MOCK_1 } from './question-banks/mht-cet-pcm-full-mock-1';
+import { MHT_CET_PCM_PHYSICS_CHEMISTRY_GROUP_1 } from './question-banks/mht-cet-pcm-physics-chemistry-group-1';
+import { MHT_CET_PCM_MATHEMATICS_SECTIONAL_1 } from './question-banks/mht-cet-pcm-mathematics-sectional-1';
 import { SRMJEEE_2026_PCM_FULL_MOCK_1 } from './question-banks/srmjeee-2026-pcm-full-mock-1';
 import { SRMJEEE_2026_PCM_PHYSICS_SECTIONAL_1 } from './question-banks/srmjeee-2026-pcm-physics-sectional-1';
 import { SRMJEEE_2026_PCM_CHEMISTRY_SECTIONAL_1 } from './question-banks/srmjeee-2026-pcm-chemistry-sectional-1';
@@ -1192,6 +1195,11 @@ const JEE_MAIN_PAPER_2_TESTS: Record<string, Question[]> = {
 const NATA_TESTS: Record<string, Question[]> = {
   'nata/mathematics-full-mock-1': NATA_MATHEMATICS_1,
 };
+const MHT_CET_TESTS: Record<string, Question[]> = {
+  'mht-cet/pcm-full-mock-1': MHT_CET_PCM_FULL_MOCK_1,
+  'mht-cet/pcm-physics-chemistry-group-1': MHT_CET_PCM_PHYSICS_CHEMISTRY_GROUP_1,
+  'mht-cet/pcm-mathematics-sectional-1': MHT_CET_PCM_MATHEMATICS_SECTIONAL_1,
+};
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
   'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
@@ -1234,7 +1242,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/mixed-quick-practice-60m-1': MET_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -1317,6 +1325,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 100
     : testId.includes('nata/mathematics-full-mock')
     ? 20
+    : testId.includes('mht-cet/pcm-full-mock')
+    ? 150
+    : testId.includes('mht-cet/pcm-physics-chemistry-group')
+    ? 100
+    : testId.includes('mht-cet/pcm-mathematics-sectional')
+    ? 50
     : testId.includes('ielts/academic-reading-full-mock') || testId.includes('ielts/general-training-reading-full-mock')
     ? 40
     : testId.includes('ielts') && (testId.includes('passage-3') || testId.includes('section-3'))
@@ -1969,6 +1983,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   ],
   'nata': [
     { section: 'Mathematics', count: 20 },
+  ],
+  'mht-cet': [
+    { section: 'Physics', count: 50 },
+    { section: 'Chemistry', count: 50 },
+    { section: 'Mathematics', count: 50 },
   ],
   'ssc-cgl': [
     { section: 'General Intelligence and Reasoning', count: 25 },
@@ -2760,6 +2779,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   ],
   'nata': [
     NATA_MATHEMATICS_1[0],
+  ],
+  'mht-cet': [
+    MHT_CET_PCM_FULL_MOCK_1[0],
+    MHT_CET_PCM_PHYSICS_CHEMISTRY_GROUP_1[0],
+    MHT_CET_PCM_MATHEMATICS_SECTIONAL_1[0],
   ],
   'ielts': [
     IELTS_ACADEMIC_READING_PASSAGE_1_1[0],

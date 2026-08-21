@@ -93,6 +93,7 @@ tackle after the national-level exams above are done, same process).
 - [x] IIIT Hyderabad UGEE
 - [x] JEE Main Paper 2: B.Arch and B.Planning
 - [x] NATA (Mathematics only, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
+- [x] MHT CET (PCM group, official 90+90 timing-group pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the new generic `timingGroups` mechanism)
 
 After the national and institute entrances, continue with the state engineering entrances
 in `exam-catalog.ts` order. Keep the same one-exam-per-run process below.
