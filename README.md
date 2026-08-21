@@ -4,7 +4,7 @@ TakeMockTest (takemocktest.com) is a free, no-login mock-test platform for India
 
 Every checked question carries a source record (official notification/syllabus reference, URL, and the date it was verified) — no fabricated or "leaked paper" claims. Results and progress are stored only on the visitor's own device (`localStorage`); there is no account system and no server-side tracking of attempts.
 
-83 exams are currently live with real mock tests. See `TAKEMOCKTEST_CURRENT_STATUS.md` for the authoritative current count and `public/llms.txt` for a per-exam summary.
+84 exams are currently live with real mock tests. See `TAKEMOCKTEST_CURRENT_STATUS.md` for the authoritative current count and `public/llms.txt` for a per-exam summary.
 
 ## How content and code are divided
 

@@ -80,7 +80,8 @@ export type ExamSlug =
   | 'jipmat'
   | 'mht-cet'
   | 'wbjee'
-  | 'ap-eapcet';
+  | 'ap-eapcet'
+  | 'kcet';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -239,6 +240,7 @@ const MHT_CET_2026_BROCHURE =
 const WBJEE_2026_BULLETIN =
   'https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2026/03/202603101506582412.pdf';
 const AP_EAPCET_OFFICIAL_PAGE = 'https://cets.apsche.ap.gov.in/';
+const KCET_2026_KEA_PORTAL = 'https://cetonline.karnataka.gov.in/kea/ugcet2026';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6473,6 +6475,42 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'engineering-full-mock-1', name: 'Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 45, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official AP EAPCET scheme. Raw score out of 40 shown here; the official exam is out of 160 across Mathematics, Physics, and Chemistry.', checkedOn: '21 August 2026' },
+        ],
+      },
+    ],
+  },
+  'kcet': {
+    slug: 'kcet',
+    name: 'KCET',
+    fullName: 'Karnataka Common Entrance Test (Engineering / Karnataka UGCET)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering',
+        name: 'Engineering',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 180,
+          totalMarks: 180,
+          duration: 240,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 60, marks: 60 },
+            { name: 'Chemistry', questions: 60, marks: 60 },
+            { name: 'Mathematics', questions: 60, marks: 60 },
+          ],
+          timerNote: 'Three separately timed official subject papers, not one free 240-minute clock: Physics gets 80 minutes and auto-submits, then Chemistry gets a separate 80 minutes with no return to Physics, then Mathematics gets a final separate 80 minutes with no return to Physics or Chemistry. The official exam schedule spreads these three papers across two exam days with non-working gaps between them; this mock does not add those idle gaps as working time.',
+          note: 'TakeMockTest online practice adaptation of the official KCET (Karnataka UGCET) 2026 OMR subject papers. Each subject paper has 60 four-option single-correct MCQs for 60 marks in 80 minutes, +1 per correct answer, no negative marking, and no credit for a question with more than one marked answer. The current KEA UGCET 2026 portal, its 2026 bulletin, its Physics/Chemistry/Mathematics syllabus PDFs, and its bell-timing document are directly confirmed to exist and be currently published (OFFICIAL-VERIFIED), but this exact question-count, marks, duration, scoring, and subject-session-schedule pattern could not be machine-read directly from the official bulletin PDF in this environment; it is corroborated across a mirror of the current KEA bulletin and two independent Careers360 pages (CORROBORATED-SECONDARY). Combining the three separately scheduled subject sessions into one 240-working-minute mock with three locked 80-minute timing groups, and omitting the real-world idle gaps between sessions, is a disclosed platform adaptation (PLATFORM-DEFINED), not an official format.',
+          sourceUrl: KCET_2026_KEA_PORTAL,
+          checkedOn: '21 August 2026',
+        },
+        tests: [
+          { id: 'engineering-full-mock-1', name: 'KCET 2026 Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 240, timingGroups: [{ sections: ['Physics'], duration: 80 }, { sections: ['Chemistry'], duration: 80 }, { sections: ['Mathematics'], duration: 80 }], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Each correct answer awards 1 mark. No negative marking. TakeMockTest online practice adaptation of the KCET 2026 OMR subject papers. The official Engineering subjects are conducted in separate 80-minute sessions; this combined mock preserves three separate 80-minute working windows but does not reproduce the real-world idle gaps between sessions.', checkedOn: '21 August 2026' },
+          { id: 'engineering-physics-paper-practice-1', name: 'KCET 2026 Physics Paper Practice Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 80, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest online practice adaptation of one official KCET 2026 80-minute OMR subject paper.', checkedOn: '21 August 2026' },
+          { id: 'engineering-chemistry-paper-practice-1', name: 'KCET 2026 Chemistry Paper Practice Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 80, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest online practice adaptation of one official KCET 2026 80-minute OMR subject paper.', checkedOn: '21 August 2026' },
+          { id: 'engineering-mathematics-paper-practice-1', name: 'KCET 2026 Mathematics Paper Practice Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 80, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest online practice adaptation of one official KCET 2026 80-minute OMR subject paper.', checkedOn: '21 August 2026' },
         ],
       },
     ],
