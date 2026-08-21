@@ -1493,6 +1493,101 @@ const CDS_ENGLISH_FULL_MOCK_FAQS = [
   },
 ];
 
+const AFCAT_VERBAL_NUMERICAL_AND_REASONING_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official AFCAT question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official AFCAT Verbal Ability, Numerical Ability, and Reasoning and Military Aptitude syllabus.',
+  },
+  {
+    question: 'Does the AFCAT qualifying cutoff differ by branch?',
+    answer: 'Yes. Flying, Ground Duty Technical, and Ground Duty Non-Technical each have their own cutoff, which shifts year to year based on the number of applicants, paper difficulty, and vacancies in that branch.',
+  },
+  {
+    question: 'Why does this mock exclude General Awareness?',
+    answer: 'General Awareness is one of AFCAT\'s four official sections, but it depends on general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'What is the AFCAT negative marking scheme?',
+    answer: 'Each question carries 3 marks, and a wrong answer deducts 1 mark. There is no deduction for an unattempted question.',
+  },
+];
+
+const TERRITORIAL_ARMY_REASONING_AND_ENGLISH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official Territorial Army question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Territorial Army Officer written exam syllabus.',
+  },
+  {
+    question: 'Who is eligible for Territorial Army officer recruitment?',
+    answer: 'Unlike full-time defence academies, Territorial Army is a part-time commission for graduates who are already gainfully employed, aged 18 to 42, alongside their regular civilian job.',
+  },
+  {
+    question: 'Why does this mock exclude General Knowledge?',
+    answer: 'General Knowledge is one of the official written exam\'s three sections, but it depends on current-affairs and general-knowledge facts that carry higher correctness risk for self-authored content, so it isn\'t included here.',
+  },
+  {
+    question: 'What is the Territorial Army negative marking scheme?',
+    answer: 'Each wrong answer deducts one-third of that question\'s marks, about 0.33 marks per question here. There is no deduction for an unattempted question.',
+  },
+];
+
+const INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official INET question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official INET English and Reasoning and Numerical Ability syllabus.',
+  },
+  {
+    question: 'Do I need to qualify in every INET section separately, or just the overall score?',
+    answer: 'Every section separately. You need at least 40% in each of INET\'s four sections to be considered for SSB shortlisting, not just a strong combined total.',
+  },
+  {
+    question: 'How much does the SSB interview count toward final INET selection?',
+    answer: 'Equally with the written exam. The final merit list combines INET and SSB scores with 50% weightage each.',
+  },
+  {
+    question: 'Why does this mock exclude General Science and Mathematical Aptitude?',
+    answer: 'The Navy officially bundles calculation-safe Mathematical Aptitude together with General Science facts as a single section with no published internal question-count split, so the two can\'t be honestly separated.',
+  },
+];
+
+const AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official Agniveer Vayu question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Agniveer Vayu English and Mathematics syllabus.',
+  },
+  {
+    question: 'What happens after the Agniveer Vayu written exam?',
+    answer: 'Shortlisted candidates move to Phase 2: eligibility verification, a Physical Fitness Test, and Adaptability Tests I and II. Candidates who clear Phase 2 then undergo a medical examination.',
+  },
+  {
+    question: 'Why does this mock exclude Physics and Reasoning and General Awareness?',
+    answer: 'Physics depends on scientific facts and formulas that carry higher correctness risk for self-authored content. Reasoning and General Awareness (RAGA) is excluded outright, since the Air Force bundles logic-based Reasoning together with General Awareness facts as one section with no published internal split.',
+  },
+  {
+    question: 'What is the Agniveer Vayu negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const NAVY_SSR_ENGLISH_AND_MATHEMATICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official Navy SSR question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official Indian Navy Agniveer SSR English and Mathematics syllabus.',
+  },
+  {
+    question: 'What happens after the Navy SSR written exam?',
+    answer: 'A Physical Fitness Test and initial medical exam are conducted on the same day as the written test for qualifying candidates. Those who clear both then undergo a final medical examination at INS Chilka before the merit list is prepared.',
+  },
+  {
+    question: 'Why does this mock cover only the SSR track, not MR?',
+    answer: 'This mock is scoped specifically to the SSR (Senior Secondary Recruit) pattern. The separate MR (Matric Recruit) track has a shorter, differently structured test and isn\'t covered here.',
+  },
+  {
+    question: 'What is the Navy SSR negative marking scheme?',
+    answer: 'Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'ssc-cgl/tier-2': SSC_CGL_TIER2_FULL_MOCK_FAQS,
@@ -1568,6 +1663,11 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'nda/general-ability-test-english': NDA_GENERAL_ABILITY_TEST_ENGLISH_FULL_MOCK_FAQS,
   'cds/elementary-mathematics': CDS_ELEMENTARY_MATHEMATICS_FULL_MOCK_FAQS,
   'cds/english': CDS_ENGLISH_FULL_MOCK_FAQS,
+  'afcat/verbal-numerical-and-reasoning': AFCAT_VERBAL_NUMERICAL_AND_REASONING_FULL_MOCK_FAQS,
+  'territorial-army/reasoning-and-english': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_FULL_MOCK_FAQS,
+  'inet/english-and-reasoning-numerical-ability': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_FULL_MOCK_FAQS,
+  'agniveer-vayu/english-and-mathematics': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_FULL_MOCK_FAQS,
+  'navy-ssr/english-and-mathematics': NAVY_SSR_ENGLISH_AND_MATHEMATICS_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
