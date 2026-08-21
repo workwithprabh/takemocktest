@@ -1360,6 +1360,139 @@ const NISM_SERIES_V_A_FULL_MOCK_FAQS = [
   },
 ];
 
+const ACET_MATHEMATICS_AND_STATISTICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official IAI question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official ACET Mathematics and Statistics syllabus.',
+  },
+  {
+    question: 'What is the passing score for ACET?',
+    answer: '50 out of 100 marks. ACET reports only a pass or fail result, with no rank list, percentile, or merit order.',
+  },
+  {
+    question: 'Why does this mock cover only Mathematics and Statistics, not the full ACET syllabus?',
+    answer: 'These are the two largest and most calculation-heavy of ACET\'s five official sections. Data Interpretation, English, and Logical Reasoning aren\'t built yet: unlike this site\'s other finance mocks, this is a coverage gap to close later, not a content-risk exclusion, since every ACET section is calculation- or language-based rather than regulatory.',
+  },
+  {
+    question: 'Is there negative marking on ACET?',
+    answer: 'No. Each correct answer earns a point, with no deduction for a wrong or unattempted question.',
+  },
+];
+
+const CA_FOUNDATION_QUANTITATIVE_APTITUDE_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official ICAI question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official CA Foundation Paper 3 (Quantitative Aptitude) syllabus.',
+  },
+  {
+    question: 'What are the CA Foundation passing marks?',
+    answer: 'You need at least 40% in each of the four papers and 50% aggregate across all four combined. Both conditions must be met in the same attempt: clearing every paper individually isn\'t enough if your aggregate falls short.',
+  },
+  {
+    question: 'Is there negative marking in CA Foundation Paper 3?',
+    answer: 'Yes. Each wrong answer deducts 0.25 marks. There is no deduction for an unattempted question.',
+  },
+  {
+    question: 'Why doesn\'t this mock cover CA Foundation\'s other three papers?',
+    answer: 'Paper 4 (Business Economics) leans on economics facts and current context that carry higher correctness risk for self-authored content. Papers 1 and 2 (Accounting and Business Laws) are subjective, descriptive-answer papers, not multiple choice, so they don\'t fit this site\'s format at all.',
+  },
+];
+
+const CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official ICMAI question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official CMA Foundation Paper 3 (Fundamentals of Business Mathematics and Statistics) syllabus.',
+  },
+  {
+    question: 'What are the CMA Foundation passing marks?',
+    answer: 'You need at least 40% in each of the four papers and 50% aggregate across all four combined, the same dual condition ICAI uses for CA Foundation.',
+  },
+  {
+    question: 'Is there an exemption if I score well in one CMA Foundation paper?',
+    answer: 'No. Unlike some other ICMAI and ICAI levels, there is no paper-wise exemption or carry-forward at the Foundation level. If your aggregate falls short, you reappear for all four papers again, even the ones you individually passed.',
+  },
+  {
+    question: 'Is there negative marking in CMA Foundation?',
+    answer: 'No. Each correct answer earns a point, with no deduction for a wrong or unattempted question.',
+  },
+];
+
+const NDA_MATHEMATICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official UPSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official NDA Mathematics syllabus.',
+  },
+  {
+    question: 'Do Mathematics and the General Ability Test carry equal weightage in NDA?',
+    answer: 'No. Mathematics is worth 300 marks, while the General Ability Test is worth 600 marks, twice as much, even though both are compulsory papers in the written exam.',
+  },
+  {
+    question: 'What is the minimum qualifying score in NDA Mathematics?',
+    answer: '25%, meaning at least 75 out of 300 marks. You need to clear this sectional minimum in Mathematics separately from the General Ability Test\'s own minimum.',
+  },
+  {
+    question: 'What is the NDA Mathematics negative marking scheme?',
+    answer: 'Each question carries 2.5 marks, and a wrong answer deducts one-third of that, about 0.83 marks. There is no deduction for an unattempted question.',
+  },
+];
+
+const NDA_GENERAL_ABILITY_TEST_ENGLISH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official UPSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official NDA General Ability Test English syllabus.',
+  },
+  {
+    question: 'Why does this mock cover only the English portion of NDA\'s General Ability Test?',
+    answer: 'The official GAT paper is English (200 marks) plus General Knowledge (400 marks, covering Physics, Chemistry, General Science, History, Geography, and Current Events). Only the English portion is included here, since General Knowledge depends on science and current-affairs facts that carry higher correctness risk for self-authored content.',
+  },
+  {
+    question: 'What is the minimum qualifying score in NDA\'s General Ability Test?',
+    answer: '25%, meaning at least 150 out of 600 marks, cleared separately from the Mathematics paper\'s own 25% minimum.',
+  },
+  {
+    question: 'Does the SSB interview matter as much as the written exam for NDA?',
+    answer: 'Yes. The SSB interview is worth 900 marks, exactly matching the written exam\'s 900-mark total (300 Mathematics plus 600 GAT), and both stages carry equal weight in the final merit list.',
+  },
+];
+
+const CDS_ELEMENTARY_MATHEMATICS_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official UPSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official CDS Elementary Mathematics syllabus.',
+  },
+  {
+    question: 'Does the CDS Elementary Mathematics paper apply to every academy?',
+    answer: 'No. IMA, INA, and AFA candidates take Elementary Mathematics, English, and General Knowledge, each worth 100 marks. OTA (Officers Training Academy) candidates skip Mathematics entirely and only take English and General Knowledge.',
+  },
+  {
+    question: 'What is the CDS Elementary Mathematics negative marking scheme?',
+    answer: 'Each wrong answer deducts one-third of that question\'s marks, about 0.33 marks per question here. There is no deduction for an unattempted question.',
+  },
+  {
+    question: 'Is there a sectional cutoff in CDS?',
+    answer: 'Yes, in practice. While UPSC doesn\'t publish a fixed passing mark, candidates typically need to clear a sectional cutoff in each paper as well as an overall aggregate cutoff that varies by academy and year.',
+  },
+];
+
+const CDS_ENGLISH_FULL_MOCK_FAQS = [
+  {
+    question: 'Is this an official UPSC question paper?',
+    answer: 'No. It is an independent practice mock containing original questions mapped to the official CDS English syllabus.',
+  },
+  {
+    question: 'Is CDS English the same for OTA and the other academies?',
+    answer: 'Yes. English and General Knowledge are common to all four academies (IMA, INA, AFA, and OTA). Only Elementary Mathematics differs, since OTA candidates don\'t take it at all.',
+  },
+  {
+    question: 'What is the CDS English negative marking scheme?',
+    answer: 'Each wrong answer deducts one-third of that question\'s marks, about 0.33 marks per question here. There is no deduction for an unattempted question.',
+  },
+  {
+    question: 'Why is this mock scored at 1 mark per question when the official paper isn\'t?',
+    answer: 'The official CDS English paper has 120 questions for 100 marks, roughly 0.83 marks per correct answer. This mock uses a clean 1 mark per question instead for simplicity, since the official fractional value doesn\'t change how you should approach the questions.',
+  },
+];
+
 const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'ssc-cgl/tier-1': SSC_TIER1_FULL_MOCK_FAQS,
   'ssc-cgl/tier-2': SSC_CGL_TIER2_FULL_MOCK_FAQS,
@@ -1428,6 +1561,13 @@ const FULL_MOCK_FAQS: Record<string, typeof SSC_TIER1_FULL_MOCK_FAQS> = {
   'act/science': ACT_SCIENCE_FULL_MOCK_FAQS,
   'frm/part-1-quantitative-analysis': FRM_PART_1_QUANTITATIVE_ANALYSIS_FULL_MOCK_FAQS,
   'nism/series-v-a-mutual-fund-distributors': NISM_SERIES_V_A_FULL_MOCK_FAQS,
+  'acet/mathematics-and-statistics': ACET_MATHEMATICS_AND_STATISTICS_FULL_MOCK_FAQS,
+  'ca-foundation/quantitative-aptitude': CA_FOUNDATION_QUANTITATIVE_APTITUDE_FULL_MOCK_FAQS,
+  'cma-foundation/business-mathematics-and-statistics': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_FULL_MOCK_FAQS,
+  'nda/mathematics': NDA_MATHEMATICS_FULL_MOCK_FAQS,
+  'nda/general-ability-test-english': NDA_GENERAL_ABILITY_TEST_ENGLISH_FULL_MOCK_FAQS,
+  'cds/elementary-mathematics': CDS_ELEMENTARY_MATHEMATICS_FULL_MOCK_FAQS,
+  'cds/english': CDS_ENGLISH_FULL_MOCK_FAQS,
 };
 
 export default async function TestInstructionsPage({
