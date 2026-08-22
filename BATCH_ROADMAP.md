@@ -98,6 +98,7 @@ tackle after the national-level exams above are done, same process).
 - [ ] KEAM — investigated and rejected: official paper uses 5 answer options per question (A-E), not 4, incompatible with this site's 4-option MCQ engine (same class of rejection as XAT/MAH MBA CET)
 - [x] AP EAPCET (Engineering, coding-agent-authored while ChatGPT worked on KCET, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 - [x] KCET (Engineering, official 80+80+80 three-paper timing-group pattern reusing MHT CET's `timingGroups` mechanism unchanged for a three-group case — see TAKEMOCKTEST_CURRENT_STATUS.md)
+- [x] TG EAPCET (Engineering, 160/80/80 Mathematics/Physics/Chemistry pattern, one unrestricted 180-minute timer, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 
 After the national and institute entrances, continue with the state engineering entrances
 in `exam-catalog.ts` order. Keep the same one-exam-per-run process below.

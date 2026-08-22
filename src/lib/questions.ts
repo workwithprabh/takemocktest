@@ -245,6 +245,9 @@ import { WBJEE_ENGINEERING_PHYSICS_CHEMISTRY_PAPER_2_PRACTICE_1 } from './questi
 import { AP_EAPCET_ENGINEERING_FULL_MOCK_1 } from './question-banks/ap-eapcet-engineering-full-mock-1';
 import { AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1 } from './question-banks/ap-eapcet-engineering-mathematics-sectional-1';
 import { AP_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1 } from './question-banks/ap-eapcet-engineering-physics-chemistry-sectional-1';
+import { TG_EAPCET_ENGINEERING_FULL_MOCK_1 } from './question-banks/tg-eapcet-engineering-full-mock-1';
+import { TG_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1 } from './question-banks/tg-eapcet-engineering-mathematics-sectional-1';
+import { TG_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1 } from './question-banks/tg-eapcet-engineering-physics-chemistry-sectional-1';
 import { KCET_ENGINEERING_FULL_MOCK_1 } from './question-banks/kcet-engineering-full-mock-1';
 import { KCET_ENGINEERING_PHYSICS_PAPER_PRACTICE_1 } from './question-banks/kcet-engineering-physics-paper-practice-1';
 import { KCET_ENGINEERING_CHEMISTRY_PAPER_PRACTICE_1 } from './question-banks/kcet-engineering-chemistry-paper-practice-1';
@@ -1358,6 +1361,11 @@ const AP_EAPCET_TESTS: Record<string, Question[]> = {
   'ap-eapcet/engineering-mathematics-sectional-1': AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1,
   'ap-eapcet/engineering-physics-chemistry-sectional-1': AP_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1,
 };
+const TG_EAPCET_TESTS: Record<string, Question[]> = {
+  'tg-eapcet/engineering-full-mock-1': TG_EAPCET_ENGINEERING_FULL_MOCK_1,
+  'tg-eapcet/engineering-mathematics-sectional-1': TG_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1,
+  'tg-eapcet/engineering-physics-chemistry-sectional-1': TG_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1,
+};
 const KCET_TESTS: Record<string, Question[]> = {
   'kcet/engineering-full-mock-1': KCET_ENGINEERING_FULL_MOCK_1,
   'kcet/engineering-physics-paper-practice-1': KCET_ENGINEERING_PHYSICS_PAPER_PRACTICE_1,
@@ -1406,7 +1414,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/mixed-quick-practice-60m-1': MET_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -1504,6 +1512,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('ap-eapcet/engineering-full-mock')
     ? 160
     : testId.includes('ap-eapcet/engineering-mathematics-sectional') || testId.includes('ap-eapcet/engineering-physics-chemistry-sectional')
+    ? 80
+    : testId.includes('tg-eapcet/engineering-full-mock')
+    ? 160
+    : testId.includes('tg-eapcet/engineering-mathematics-sectional') || testId.includes('tg-eapcet/engineering-physics-chemistry-sectional')
     ? 80
     : testId.includes('kcet/engineering-full-mock')
     ? 180
@@ -2173,6 +2185,11 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Chemistry', count: 40 },
   ],
   'ap-eapcet': [
+    { section: 'Mathematics', count: 80 },
+    { section: 'Physics', count: 40 },
+    { section: 'Chemistry', count: 40 },
+  ],
+  'tg-eapcet': [
     { section: 'Mathematics', count: 80 },
     { section: 'Physics', count: 40 },
     { section: 'Chemistry', count: 40 },
@@ -2987,6 +3004,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     AP_EAPCET_ENGINEERING_FULL_MOCK_1[0],
     AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1[0],
     AP_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1[0],
+  ],
+  'tg-eapcet': [
+    TG_EAPCET_ENGINEERING_FULL_MOCK_1[0],
+    TG_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1[0],
+    TG_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1[0],
   ],
   'kcet': [
     KCET_ENGINEERING_FULL_MOCK_1[0],
