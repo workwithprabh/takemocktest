@@ -61,6 +61,10 @@ import { RRB_GROUP_D_CBT_GENERAL_SCIENCE_1 } from './question-banks/rrb-group-d-
 import { RRB_GROUP_D_CBT_MATHEMATICS_1 } from './question-banks/rrb-group-d-cbt-mathematics-1';
 import { RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-group-d-cbt-general-intelligence-reasoning-1';
 import { RRB_GROUP_D_CBT_GENERAL_AWARENESS_CURRENT_AFFAIRS_1 } from './question-banks/rrb-group-d-cbt-general-awareness-current-affairs-1';
+import { RRB_GROUP_D_CBT_GENERAL_SCIENCE_2 } from './question-banks/rrb-group-d-cbt-general-science-2';
+import { RRB_GROUP_D_CBT_MATHEMATICS_2 } from './question-banks/rrb-group-d-cbt-mathematics-2';
+import { RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rrb-group-d-cbt-general-intelligence-reasoning-2';
+import { RRB_GROUP_D_CBT_GENERAL_AWARENESS_CURRENT_AFFAIRS_2 } from './question-banks/rrb-group-d-cbt-general-awareness-current-affairs-2';
 import { SBI_PO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-po-prelims-english-language-1';
 import { SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/sbi-po-prelims-quantitative-aptitude-1';
 import { SBI_PO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-po-prelims-reasoning-ability-1';
@@ -83,6 +87,10 @@ import { SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1 } from './questio
 import { SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1 } from './question-banks/ssc-gd-constable-cbe-general-knowledge-awareness-1';
 import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1 } from './question-banks/ssc-gd-constable-cbe-elementary-mathematics-1';
 import { SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1 } from './question-banks/ssc-gd-constable-cbe-english-hindi-1';
+import { SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/ssc-gd-constable-cbe-general-intelligence-reasoning-2';
+import { SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_2 } from './question-banks/ssc-gd-constable-cbe-general-knowledge-awareness-2';
+import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_2 } from './question-banks/ssc-gd-constable-cbe-elementary-mathematics-2';
+import { SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_2 } from './question-banks/ssc-gd-constable-cbe-english-hindi-2';
 import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-reasoning-1';
 import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-quantitative-aptitude-1';
 import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-clerk-prelims-english-language-1';
@@ -167,6 +175,9 @@ import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/lic-aao-pre
 import { NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-prelims-english-language-1';
 import { NIACL_AO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/niacl-ao-prelims-reasoning-ability-1';
 import { NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/niacl-ao-prelims-quantitative-aptitude-1';
+import { NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/niacl-ao-prelims-english-language-2';
+import { NIACL_AO_PRELIMS_REASONING_ABILITY_2 } from './question-banks/niacl-ao-prelims-reasoning-ability-2';
+import { NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/niacl-ao-prelims-quantitative-aptitude-2';
 import { NIACL_AO_MAINS_REASONING_1 } from './question-banks/niacl-ao-mains-reasoning-1';
 import { NIACL_AO_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-mains-english-language-1';
 import { NIACL_AO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/niacl-ao-mains-general-awareness-1';
@@ -530,6 +541,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-group-d/cbt-mathematics-sectional-1': RRB_GROUP_D_CBT_MATHEMATICS_1,
   'rrb-group-d/cbt-general-intelligence-reasoning-sectional-1': RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_1,
   'rrb-group-d/cbt-general-awareness-current-affairs-sectional-1': RRB_GROUP_D_CBT_GENERAL_AWARENESS_CURRENT_AFFAIRS_1,
+  'rrb-group-d/cbt-full-mock-2': [
+    ...RRB_GROUP_D_CBT_GENERAL_SCIENCE_2,
+    ...RRB_GROUP_D_CBT_MATHEMATICS_2,
+    ...RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+    ...RRB_GROUP_D_CBT_GENERAL_AWARENESS_CURRENT_AFFAIRS_2,
+  ],
+  'rrb-group-d/cbt-general-science-sectional-2': RRB_GROUP_D_CBT_GENERAL_SCIENCE_2,
+  'rrb-group-d/cbt-mathematics-sectional-2': RRB_GROUP_D_CBT_MATHEMATICS_2,
+  'rrb-group-d/cbt-general-intelligence-reasoning-sectional-2': RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-group-d/cbt-general-awareness-current-affairs-sectional-2': RRB_GROUP_D_CBT_GENERAL_AWARENESS_CURRENT_AFFAIRS_2,
   'sbi-po/prelims-full-mock-1': [
     ...SBI_PO_PRELIMS_ENGLISH_LANGUAGE_1,
     ...SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_1,
@@ -588,6 +609,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-gd-constable/cbe-general-knowledge-awareness-sectional-1': SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
   'ssc-gd-constable/cbe-elementary-mathematics-sectional-1': SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1,
   'ssc-gd-constable/cbe-english-hindi-sectional-1': SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_1,
+  'ssc-gd-constable/cbe-full-mock-2': [
+    ...SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_2,
+    ...SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_2,
+    ...SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_2,
+    ...SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_2,
+  ],
+  'ssc-gd-constable/cbe-general-intelligence-reasoning-sectional-2': SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_2,
+  'ssc-gd-constable/cbe-general-knowledge-awareness-sectional-2': SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_2,
+  'ssc-gd-constable/cbe-elementary-mathematics-sectional-2': SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_2,
+  'ssc-gd-constable/cbe-english-hindi-sectional-2': SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_2,
   'ibps-rrb-officer-scale-1/prelims-full-mock-1': [
     ...IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1,
     ...IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1,
@@ -798,6 +829,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'niacl-ao/prelims-english-language-sectional-1': NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1,
   'niacl-ao/prelims-reasoning-ability-sectional-1': NIACL_AO_PRELIMS_REASONING_ABILITY_1,
   'niacl-ao/prelims-quantitative-aptitude-sectional-1': NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'niacl-ao/prelims-full-mock-2': [
+    ...NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_2,
+    ...NIACL_AO_PRELIMS_REASONING_ABILITY_2,
+    ...NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_2,
+  ],
+  'niacl-ao/prelims-english-language-sectional-2': NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_2,
+  'niacl-ao/prelims-reasoning-ability-sectional-2': NIACL_AO_PRELIMS_REASONING_ABILITY_2,
+  'niacl-ao/prelims-quantitative-aptitude-sectional-2': NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_2,
   'niacl-ao/mains-full-mock-1': [
     ...NIACL_AO_MAINS_REASONING_1,
     ...NIACL_AO_MAINS_ENGLISH_LANGUAGE_1,

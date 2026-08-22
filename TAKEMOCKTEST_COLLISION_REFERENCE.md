@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-22 from 326 bank files / 11057 questions.
+Generated: 2026-08-22 from 337 bank files / 11337 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -10,32 +10,32 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 
 | Section | Topic | Questions | Exams |
 |---|---|---:|---|
-| Quantitative Aptitude | Profit and loss | 63 | aeee-2026, cat-varc, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (19) |
-| Quantitative Aptitude | Ratio and proportion | 62 | aeee-2026, cat-varc, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, tancet-mba (18) |
-| Quantitative Aptitude | Time and work | 58 | aeee-2026, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (18) |
-| Quantitative Aptitude | Percentage | 67 | cat-varc, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (17) |
+| Quantitative Aptitude | Profit and loss | 66 | aeee-2026, cat-varc, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (19) |
+| Quantitative Aptitude | Ratio and proportion | 66 | aeee-2026, cat-varc, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, tancet-mba (18) |
+| Quantitative Aptitude | Time and work | 61 | aeee-2026, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (18) |
+| Quantitative Aptitude | Percentage | 72 | cat-varc, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (17) |
 | Quantitative Aptitude | Simple Interest | 31 | cat-varc, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (16) |
-| Quantitative Aptitude | Mensuration | 52 | cat-varc, ibps-po, ibps-rrb, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection (15) |
+| Quantitative Aptitude | Mensuration | 54 | cat-varc, ibps-po, ibps-rrb, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection (15) |
 | Quantitative Aptitude | Number System | 42 | cat-varc, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (15) |
 | Quantitative Aptitude | Compound interest | 27 | ibps-po, ibps-rrb, ibps-so, ibsat-verbal, jipmat-qa, nabard-grade, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-cpo, ssc-selection, tancet-mba (15) |
-| English Language | Sentence improvement | 42 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, ssc-selection (13) |
-| English Language | Cloze test | 52 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade (12) |
+| English Language | Sentence improvement | 44 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, ssc-selection (13) |
+| English Language | Cloze test | 54 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade (12) |
 | Mathematics | Probability | 39 | agniveer-vayu, ap-eapcet, bitsat-2026, comedk-uget, jee-advanced, jee-main, kcet-engineering, mht-cet, nata-mathematics, navy-ssr, rrb-technician, wbjee-engineering (12) |
 | General Awareness | Sports | 38 | nabard-grade, niacl-ao, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-paramedical, rrb-technician, ssc-mts, ssc-selection, ssc-steno (12) |
-| General Intelligence and Reasoning | Number Series | 53 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
+| General Intelligence and Reasoning | Number Series | 61 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
 | Chemistry | Chemical kinetics | 48 | aeee-2026, ap-eapcet, bitsat-2026, comedk-uget, jee-advanced, jee-main, kcet-engineering, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (11) |
 | Physics | Current electricity | 46 | aeee-2026, ap-eapcet, bitsat-2026, comedk-uget, jee-advanced, jee-main, kcet-engineering, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (11) |
-| Quantitative Aptitude | Time, speed and distance | 41 | aeee-2026, cat-varc, ibps-po, ibps-rrb, ibsat-verbal, jipmat-qa, lic-aao, niacl-ao, sbi-po, ssc-chsl, tancet-mba (11) |
-| Quantitative Aptitude | Average | 41 | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-selection (11) |
-| General Intelligence and Reasoning | Coding-Decoding | 37 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
-| English Language | Reading comprehension | 36 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sidbi-grade (11) |
+| Quantitative Aptitude | Time, speed and distance | 44 | aeee-2026, cat-varc, ibps-po, ibps-rrb, ibsat-verbal, jipmat-qa, lic-aao, niacl-ao, sbi-po, ssc-chsl, tancet-mba (11) |
+| Quantitative Aptitude | Average | 44 | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cgl, ssc-chsl, ssc-selection (11) |
+| General Intelligence and Reasoning | Coding-Decoding | 43 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
+| General Intelligence and Reasoning | Classification | 41 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
+| English Language | Reading comprehension | 38 | ibps-clerk, ibps-po, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sidbi-grade (11) |
+| General Intelligence and Reasoning | Blood Relations | 37 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
+| General Intelligence and Reasoning | Analogy | 36 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
+| General Intelligence and Reasoning | Syllogism | 36 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-ntpc, rrb-technician, ssc-cgl, ssc-cpo, ssc-je, ssc-steno (11) |
 | Mathematics | Trigonometry | 35 | aeee-2026, agniveer-vayu, bitsat-2026, jee-main, met-2026, nata-mathematics, navy-ssr, rrb-alp, rrb-technician, srmjeee-2026, wbjee-engineering (11) |
-| General Intelligence and Reasoning | Classification | 35 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
-| General Intelligence and Reasoning | Syllogism | 33 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-ntpc, rrb-technician, ssc-cgl, ssc-cpo, ssc-je, ssc-steno (11) |
+| General Intelligence and Reasoning | Direction Sense | 35 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
 | Quantitative Aptitude | Data interpretation | 32 | aeee-2026, ibps-po, ibps-rrb, ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cgl, ssc-cpo, ssc-selection (11) |
-| General Intelligence and Reasoning | Analogy | 32 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
-| General Intelligence and Reasoning | Blood Relations | 32 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
-| General Intelligence and Reasoning | Direction Sense | 30 | rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-cpo, ssc-gd, ssc-je, ssc-steno (11) |
 | English Language | Active and passive voice | 28 | ibps-clerk, ibps-po, ibps-so, nabard-grade, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, ssc-chsl (11) |
 | Physics | Gravitation | 26 | aeee-2026, ap-eapcet, bitsat-2026, comedk-uget, jee-advanced, jee-main, kcet-engineering, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (11) |
 | English Language | Direct and indirect speech | 17 | ibps-clerk, ibps-po, ibps-so, nabard-grade, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, ssc-chsl (11) |
@@ -44,32 +44,32 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | General Awareness | Geography | 53 | nabard-grade, niacl-ao, rpf-si, rrb-alp, rrb-technician, ssc-chsl, ssc-je, ssc-selection, ssc-steno (9) |
 | Chemistry | Electrochemistry | 46 | ap-eapcet, bitsat-2026, comedk-uget, jee-advanced, jee-main, kcet-engineering, mht-cet, srmjeee-2026, wbjee-engineering (9) |
 | Chemistry | Solutions | 43 | aeee-2026, ap-eapcet, comedk-uget, jee-advanced, jee-main, kcet-engineering, met-2026, mht-cet, srmjeee-2026 (9) |
+| Quantitative Aptitude | Simplification | 39 | ibps-po, ibps-rrb, ibps-so, ibsat-verbal, lic-aao, niacl-ao, rbi-grade, sbi-po, ssc-selection (9) |
 | Physics | Electrostatics | 36 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, mht-cet, srmjeee-2026, wbjee-engineering (9) |
 | Chemistry | Biomolecules | 35 | aeee-2026, ap-eapcet, comedk-uget, jee-advanced, jee-main, kcet-engineering, mht-cet, srmjeee-2026, wbjee-engineering (9) |
-| Quantitative Aptitude | Simplification | 34 | ibps-po, ibps-rrb, ibps-so, ibsat-verbal, lic-aao, niacl-ao, rbi-grade, sbi-po, ssc-selection (9) |
 | Chemistry | Hydrocarbons | 24 | aeee-2026, ap-eapcet, comedk-uget, jee-advanced, jee-main, kcet-engineering, met-2026, mht-cet, wbjee-engineering (9) |
 | General Awareness | General Science | 62 | rbi-grade, rpf-constable, rpf-si, rrb-je, ssc-chsl, ssc-je, ssc-mts, ssc-steno (8) |
 | General Awareness | Indian Economy | 49 | rbi-grade, rpf-constable, rrb-je, rrb-ntpc, rrb-paramedical, rrb-technician, ssc-cgl, ssc-mts (8) |
 | Mathematics | Differential equations | 46 | aeee-2026, ap-eapcet, comedk-uget, jee-main, kcet-engineering, met-2026, mht-cet, wbjee-engineering (8) |
 | Chemistry | Coordination compounds | 38 | aeee-2026, ap-eapcet, comedk-uget, jee-main, kcet-engineering, met-2026, mht-cet, srmjeee-2026 (8) |
+| English Language | Error spotting | 36 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po, ssc-selection (8) |
 | General Awareness | History | 35 | niacl-ao, rrb-alp, rrb-paramedical, rrb-technician, ssc-chsl, ssc-je, ssc-selection, ssc-steno (8) |
-| English Language | Error spotting | 33 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po, ssc-selection (8) |
-| Quantitative Aptitude | Number series | 28 | aeee-2026, ibps-po, ibps-rrb, ibps-so, lic-aao, niacl-ao, sbi-po, tancet-mba (8) |
+| Quantitative Aptitude | Number series | 31 | aeee-2026, ibps-po, ibps-rrb, ibps-so, lic-aao, niacl-ao, sbi-po, tancet-mba (8) |
 | Physics | Laws of motion | 25 | aeee-2026, ap-eapcet, comedk-uget, jee-main, kcet-engineering, met-2026, mht-cet, wbjee-engineering (8) |
+| Mathematics | Mensuration | 24 | agniveer-vayu, nata-mathematics, navy-ssr, rrb-alp, rrb-group, rrb-je, rrb-ntpc, rrb-technician (8) |
 | Physics | Kinematics | 23 | aeee-2026, bitsat-2026, comedk-uget, jee-advanced, jee-main, met-2026, srmjeee-2026, wbjee-engineering (8) |
-| Mathematics | Mensuration | 21 | agniveer-vayu, nata-mathematics, navy-ssr, rrb-alp, rrb-group, rrb-je, rrb-ntpc, rrb-technician (8) |
 | Physics | Thermodynamics | 21 | ap-eapcet, comedk-uget, jee-advanced, jee-main, kcet-engineering, met-2026, mht-cet, wbjee-engineering (8) |
 | Quantitative Aptitude | Time and Distance | 21 | ibps-so, nabard-grade, rbi-grade, sebi-grade, sidbi-grade, ssc-cgl, ssc-cpo, ssc-selection (8) |
 | Physics | Electromagnetic waves | 14 | aeee-2026, ap-eapcet, comedk-uget, jee-advanced, kcet-engineering, met-2026, srmjeee-2026, wbjee-engineering (8) |
-| Reasoning Ability | Number series | 60 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
-| Reasoning Ability | Coding-decoding | 52 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
+| Reasoning Ability | Number series | 62 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
+| Reasoning Ability | Coding-decoding | 57 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
+| Reasoning Ability | Blood relations | 52 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 | General Awareness | Indian Geography | 49 | rbi-grade, rpf-constable, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-mts (7) |
-| Reasoning Ability | Blood relations | 48 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 | English Language | Antonym | 46 | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-selection (7) |
+| Reasoning Ability | Direction sense | 45 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 | English Language | Synonym | 44 | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-selection (7) |
 | English Language | One-word substitution | 42 | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-selection (7) |
-| Reasoning Ability | Direction sense | 41 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
-| Reasoning Ability | Syllogism | 37 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
+| Reasoning Ability | Syllogism | 41 | ibps-clerk, ibps-po, lic-aao, niacl-ao, rbi-assistant, sbi-clerk, sbi-po (7) |
 
 ## Risky generic-template stems
 
@@ -78,12 +78,12 @@ These stem patterns have caused real duplication on this project before (within 
 | Pattern | Matches | Exams | Risk |
 |---|---:|---|---|
 | odd-one-out / classification | 8 | atma-analytical, jipmat-qa, kmat-karnataka, rpf-si, rrb-alp, rrb-technician | high |
-| spelling correction | 33 | afcat-verbal, agniveer-vayu, ailet-english, cds-english, ibps-clerk, ibps-po, ibps-so, inet-english, lic-aao, mh-cet, nabard-grade, navy-ssr, nda-general, niacl-ao, rbi-assistant, rbi-grade, sbi-po, ssc-cgl, ssc-cpo, ssc-mts, territorial-army | high |
-| SI unit lookup | 24 | ap-eapcet, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-je | high |
-| capital-city lookup | 6 | niacl-ao, rrb-ntpc, ssc-cgl, ssc-gd, ssc-selection, upsc-cse | high |
-| currency lookup | 2 | rrb-je, ssc-gd | medium |
-| synonym/antonym instruction | 218 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, cmat-qtdi, ibps-clerk, ibps-po, ibps-so, ibsat-verbal, inet-english, jipmat-qa, kmat-karnataka, lic-aao, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-steno, tancet-mba, territorial-army | high |
-| blood relation generic opener | 33 | ca-foundation, ibps-po, ibps-so, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
+| spelling correction | 35 | afcat-verbal, agniveer-vayu, ailet-english, cds-english, ibps-clerk, ibps-po, ibps-so, inet-english, lic-aao, mh-cet, nabard-grade, navy-ssr, nda-general, niacl-ao, rbi-assistant, rbi-grade, sbi-po, ssc-cgl, ssc-cpo, ssc-mts, territorial-army | high |
+| SI unit lookup | 28 | ap-eapcet, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-je | high |
+| capital-city lookup | 7 | niacl-ao, rrb-ntpc, ssc-cgl, ssc-gd, ssc-selection, upsc-cse | high |
+| currency lookup | 3 | rrb-je, ssc-gd | medium |
+| synonym/antonym instruction | 234 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, cmat-qtdi, ibps-clerk, ibps-po, ibps-so, ibsat-verbal, inet-english, jipmat-qa, kmat-karnataka, lic-aao, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-steno, tancet-mba, territorial-army | high |
+| blood relation generic opener | 34 | ca-foundation, ibps-po, ibps-so, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
 | analogy colon-format | 8 | ssc-steno | low |
 
 ## Shared question openings (2+ exam families, first 6 words)
@@ -115,6 +115,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | identify the part of the sentence | agniveer-vayu, cmat-qtdi, ibsat-verbal, lic-aao, micat-va, niacl-ao, sbi-clerk, ssc-steno (8) |
 | find the next letter in the | atma-analytical, cmat-qtdi, kmat-karnataka, nmat-language, rbi-assistant, sbi-clerk, snap-general, ssc-steno (8) |
 | select the word that means a | atma-analytical, ibsat-verbal, jipmat-qa, kmat-karnataka, mat-language, micat-va, snap-general, tancet-mba (8) |
+| the average of 6 numbers is | gre-quantitative, ibps-rrb, kmat-karnataka, niacl-ao, rpf-constable, rpf-si, ssc-gd, tancet-mba (8) |
 | choose the correct passive form of | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-cgl, ssc-chsl, ssc-steno (8) |
 | introducing a man a woman said | ibps-rrb, ibps-so, inet-english, jipmat-qa, niacl-ao, rbi-grade, sidbi-grade, ssc-cpo (8) |
 | fill in the blank by the | ibps-so, nabard-grade, navy-ssr, nda-general, rbi-grade, sbi-clerk, sidbi-grade, ssc-cpo (8) |
@@ -122,8 +123,10 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | what is the si unit of | rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-chsl, ssc-je (8) |
 | what is the slope of the | act-math, aeee-2026, met-2026, mht-cet, sat-math, srmjeee-2026, viteee-2026 (7) |
 | what does the idiom to hit | afcat-verbal, agniveer-vayu, ibps-clerk, sbi-clerk, sbi-po, snap-general, ssc-mts (7) |
+| pointing to a man a woman | ca-foundation, lic-aao, niacl-ao, rbi-assistant, rrb-group, ssc-chsl, ssc-je (7) |
 | find the circumference of a circle | cds-elementary, ibps-rrb, kmat-karnataka, niacl-ao, rbi-grade, rpf-constable, rrb-technician (7) |
 | choose the correct indirect speech form | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-steno (7) |
+| find the simple interest on 7 | ibps-clerk, ibps-rrb, niacl-ao, rrb-alp, rrb-group, rrb-paramedical, sbi-clerk (7) |
 | one pipe fills a tank in | ibps-clerk, ibps-po, rbi-assistant, rrb-group, sbi-po, ssc-cgl, ssc-selection (7) |
 | what is the square root of | ibps-clerk, ibps-po, rrb-alp, rrb-group, rrb-technician, sbi-po, ssc-chsl (7) |
 | find the average of the first | ibps-clerk, ibps-po, ibps-rrb, inet-english, rbi-assistant, sbi-clerk, sbi-po (7) |
@@ -147,8 +150,5 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | find the area of a circle | agniveer-vayu, atma-analytical, cds-elementary, nata-mathematics, ssc-chsl, ssc-selection (6) |
 | fill in the blank the committee | atma-analytical, mat-language, mh-cet, navy-ssr, rbi-grade, ssc-cpo (6) |
 | the circle x 2 y 2 | bitsat-2026, jee-main, met-2026, srmjeee-2026, viteee-2026, wbjee-engineering (6) |
-| pointing to a man a woman | ca-foundation, lic-aao, rbi-assistant, rrb-group, ssc-chsl, ssc-je (6) |
 | the average of 5 numbers is | cds-elementary, lic-aao, niacl-ao, rbi-assistant, ssc-gd, tancet-mba (6) |
 | identify the correctly spelled word from | cds-english, ibps-po, inet-english, nda-general, niacl-ao, territorial-army (6) |
-| the average of 6 numbers is | gre-quantitative, ibps-rrb, kmat-karnataka, rpf-constable, rpf-si, tancet-mba (6) |
-| arrange the parts to form a | ibps-clerk, ibps-po, rbi-assistant, sbi-clerk, sbi-po, ssc-steno (6) |
