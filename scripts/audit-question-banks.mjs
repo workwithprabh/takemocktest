@@ -100,7 +100,9 @@ for (const { file, questions } of banks) {
     : file.startsWith('wbjee-engineering-full-mock-') ? 155
     : file.startsWith('wbjee-engineering-mathematics-paper-1-practice-') ? 75
     : file.startsWith('wbjee-engineering-physics-chemistry-paper-2-practice-') ? 80
-    : file.startsWith('ap-eapcet-engineering-full-mock-') ? 40
+    : file.startsWith('ap-eapcet-engineering-full-mock-') ? 160
+    : file.startsWith('ap-eapcet-engineering-mathematics-sectional-') ? 80
+    : file.startsWith('ap-eapcet-engineering-physics-chemistry-sectional-') ? 80
     : file.startsWith('kcet-engineering-full-mock-') ? 180
     : file.startsWith('kcet-engineering-physics-paper-practice-') ? 60
     : file.startsWith('kcet-engineering-chemistry-paper-practice-') ? 60

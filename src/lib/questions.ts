@@ -222,6 +222,8 @@ import { WBJEE_ENGINEERING_FULL_MOCK_1 } from './question-banks/wbjee-engineerin
 import { WBJEE_ENGINEERING_MATHEMATICS_PAPER_1_PRACTICE_1 } from './question-banks/wbjee-engineering-mathematics-paper-1-practice-1';
 import { WBJEE_ENGINEERING_PHYSICS_CHEMISTRY_PAPER_2_PRACTICE_1 } from './question-banks/wbjee-engineering-physics-chemistry-paper-2-practice-1';
 import { AP_EAPCET_ENGINEERING_FULL_MOCK_1 } from './question-banks/ap-eapcet-engineering-full-mock-1';
+import { AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1 } from './question-banks/ap-eapcet-engineering-mathematics-sectional-1';
+import { AP_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1 } from './question-banks/ap-eapcet-engineering-physics-chemistry-sectional-1';
 import { KCET_ENGINEERING_FULL_MOCK_1 } from './question-banks/kcet-engineering-full-mock-1';
 import { KCET_ENGINEERING_PHYSICS_PAPER_PRACTICE_1 } from './question-banks/kcet-engineering-physics-paper-practice-1';
 import { KCET_ENGINEERING_CHEMISTRY_PAPER_PRACTICE_1 } from './question-banks/kcet-engineering-chemistry-paper-practice-1';
@@ -1278,6 +1280,8 @@ const WBJEE_TESTS: Record<string, Question[]> = {
 };
 const AP_EAPCET_TESTS: Record<string, Question[]> = {
   'ap-eapcet/engineering-full-mock-1': AP_EAPCET_ENGINEERING_FULL_MOCK_1,
+  'ap-eapcet/engineering-mathematics-sectional-1': AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1,
+  'ap-eapcet/engineering-physics-chemistry-sectional-1': AP_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1,
 };
 const KCET_TESTS: Record<string, Question[]> = {
   'kcet/engineering-full-mock-1': KCET_ENGINEERING_FULL_MOCK_1,
@@ -1423,7 +1427,9 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('wbjee/engineering-physics-chemistry-paper-2-practice')
     ? 80
     : testId.includes('ap-eapcet/engineering-full-mock')
-    ? 40
+    ? 160
+    : testId.includes('ap-eapcet/engineering-mathematics-sectional') || testId.includes('ap-eapcet/engineering-physics-chemistry-sectional')
+    ? 80
     : testId.includes('kcet/engineering-full-mock')
     ? 180
     : testId.includes('kcet/engineering-physics-paper-practice') || testId.includes('kcet/engineering-chemistry-paper-practice') || testId.includes('kcet/engineering-mathematics-paper-practice')
@@ -2092,9 +2098,9 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Chemistry', count: 40 },
   ],
   'ap-eapcet': [
-    { section: 'Mathematics', count: 20 },
-    { section: 'Physics', count: 10 },
-    { section: 'Chemistry', count: 10 },
+    { section: 'Mathematics', count: 80 },
+    { section: 'Physics', count: 40 },
+    { section: 'Chemistry', count: 40 },
   ],
   'kcet': [
     { section: 'Physics', count: 60 },
@@ -2904,6 +2910,8 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   ],
   'ap-eapcet': [
     AP_EAPCET_ENGINEERING_FULL_MOCK_1[0],
+    AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1[0],
+    AP_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1[0],
   ],
   'kcet': [
     KCET_ENGINEERING_FULL_MOCK_1[0],
