@@ -93,6 +93,8 @@ import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_2 } from './question-banks/
 import { SSC_GD_CONSTABLE_CBE_ENGLISH_HINDI_2 } from './question-banks/ssc-gd-constable-cbe-english-hindi-2';
 import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-reasoning-1';
 import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-rrb-officer-scale-1-prelims-quantitative-aptitude-1';
+import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_2 } from './question-banks/ibps-rrb-officer-scale-1-prelims-reasoning-2';
+import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/ibps-rrb-officer-scale-1-prelims-quantitative-aptitude-2';
 import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-clerk-prelims-english-language-1';
 import { SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/sbi-clerk-prelims-numerical-ability-1';
 import { SBI_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-clerk-prelims-reasoning-ability-1';
@@ -103,6 +105,10 @@ import { RRB_JE_CBT1_MATHEMATICS_1 } from './question-banks/rrb-je-cbt1-mathemat
 import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-1';
 import { RRB_JE_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-je-cbt1-general-awareness-1';
 import { RRB_JE_CBT1_GENERAL_SCIENCE_1 } from './question-banks/rrb-je-cbt1-general-science-1';
+import { RRB_JE_CBT1_MATHEMATICS_2 } from './question-banks/rrb-je-cbt1-mathematics-2';
+import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-2';
+import { RRB_JE_CBT1_GENERAL_AWARENESS_2 } from './question-banks/rrb-je-cbt1-general-awareness-2';
+import { RRB_JE_CBT1_GENERAL_SCIENCE_2 } from './question-banks/rrb-je-cbt1-general-science-2';
 import { UPSC_CSE_PAPER_1_HISTORY_1 } from './question-banks/upsc-cse-paper-1-history-1';
 import { UPSC_CSE_PAPER_1_GEOGRAPHY_1 } from './question-banks/upsc-cse-paper-1-geography-1';
 import { UPSC_CSE_PAPER_1_POLITY_1 } from './question-banks/upsc-cse-paper-1-polity-1';
@@ -124,6 +130,8 @@ import { RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rp
 import { RPF_SI_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-si-cbt-general-awareness-1';
 import { SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-je-paper-1-general-intelligence-reasoning-1';
 import { SSC_JE_PAPER_1_GENERAL_AWARENESS_1 } from './question-banks/ssc-je-paper-1-general-awareness-1';
+import { SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/ssc-je-paper-1-general-intelligence-reasoning-2';
+import { SSC_JE_PAPER_1_GENERAL_AWARENESS_2 } from './question-banks/ssc-je-paper-1-general-awareness-2';
 import { SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-steno-cbt-general-intelligence-reasoning-1';
 import { SSC_STENO_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-steno-cbt-general-awareness-1';
 import { SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-steno-cbt-english-language-comprehension-1';
@@ -628,6 +636,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'ibps-rrb-officer-scale-1/prelims-reasoning-sectional-1': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1,
   'ibps-rrb-officer-scale-1/prelims-quantitative-aptitude-sectional-1': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'ibps-rrb-officer-scale-1/prelims-full-mock-2': [
+    ...IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_2,
+    ...IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_2,
+  ],
+  'ibps-rrb-officer-scale-1/prelims-reasoning-sectional-2': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_2,
+  'ibps-rrb-officer-scale-1/prelims-quantitative-aptitude-sectional-2': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_2,
   'sbi-clerk/prelims-full-mock-1': [
     ...SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
     ...SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
@@ -654,6 +668,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-je/cbt1-general-intelligence-reasoning-sectional-1': RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
   'rrb-je/cbt1-general-awareness-sectional-1': RRB_JE_CBT1_GENERAL_AWARENESS_1,
   'rrb-je/cbt1-general-science-sectional-1': RRB_JE_CBT1_GENERAL_SCIENCE_1,
+  'rrb-je/cbt1-full-mock-2': [
+    ...RRB_JE_CBT1_MATHEMATICS_2,
+    ...RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_2,
+    ...RRB_JE_CBT1_GENERAL_AWARENESS_2,
+    ...RRB_JE_CBT1_GENERAL_SCIENCE_2,
+  ],
+  'rrb-je/cbt1-mathematics-sectional-2': RRB_JE_CBT1_MATHEMATICS_2,
+  'rrb-je/cbt1-general-intelligence-reasoning-sectional-2': RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-je/cbt1-general-awareness-sectional-2': RRB_JE_CBT1_GENERAL_AWARENESS_2,
+  'rrb-je/cbt1-general-science-sectional-2': RRB_JE_CBT1_GENERAL_SCIENCE_2,
   'upsc-cse/paper-1-full-mock-1': [
     ...UPSC_CSE_PAPER_1_HISTORY_1,
     ...UPSC_CSE_PAPER_1_GEOGRAPHY_1,
@@ -706,6 +730,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'ssc-je/paper-1-general-intelligence-reasoning-sectional-1': SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
   'ssc-je/paper-1-general-awareness-sectional-1': SSC_JE_PAPER_1_GENERAL_AWARENESS_1,
+  'ssc-je/paper-1-full-mock-2': [
+    ...SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2,
+    ...SSC_JE_PAPER_1_GENERAL_AWARENESS_2,
+  ],
+  'ssc-je/paper-1-general-intelligence-reasoning-sectional-2': SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2,
+  'ssc-je/paper-1-general-awareness-sectional-2': SSC_JE_PAPER_1_GENERAL_AWARENESS_2,
   'ssc-steno/cbt-full-mock-1': [
     ...SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_STENO_CBT_GENERAL_AWARENESS_1,
