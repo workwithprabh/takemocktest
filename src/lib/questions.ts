@@ -36,6 +36,9 @@ import { RRB_NTPC_CBT1_FULL_MOCK_1 } from './question-banks/rrb-ntpc-cbt1-full-m
 import { RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-mathematics-sectional-1';
 import { RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-general-intelligence-reasoning-sectional-1';
 import { RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-general-awareness-sectional-1';
+import { RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt1-mathematics-sectional-2';
+import { RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt1-general-intelligence-reasoning-sectional-2';
+import { RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt1-general-awareness-sectional-2';
 import { IBPS_PO_MAINS_REASONING_1 } from './question-banks/ibps-po-mains-reasoning-1';
 import { IBPS_PO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/ibps-po-mains-general-awareness-1';
 import { IBPS_PO_MAINS_ENGLISH_1 } from './question-banks/ibps-po-mains-english-1';
@@ -44,6 +47,10 @@ import { SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_1 } from './question-banks/ssc-chsl
 import { SSC_CHSL_TIER1_ENGLISH_LANGUAGE_1 } from './question-banks/ssc-chsl-tier1-english-language-1';
 import { SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-chsl-tier1-quantitative-aptitude-1';
 import { SSC_CHSL_TIER1_GENERAL_AWARENESS_1 } from './question-banks/ssc-chsl-tier1-general-awareness-1';
+import { SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_2 } from './question-banks/ssc-chsl-tier1-general-intelligence-2';
+import { SSC_CHSL_TIER1_ENGLISH_LANGUAGE_2 } from './question-banks/ssc-chsl-tier1-english-language-2';
+import { SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_2 } from './question-banks/ssc-chsl-tier1-quantitative-aptitude-2';
+import { SSC_CHSL_TIER1_GENERAL_AWARENESS_2 } from './question-banks/ssc-chsl-tier1-general-awareness-2';
 import { IBPS_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/ibps-clerk-prelims-reasoning-ability-1';
 import { IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-clerk-prelims-numerical-ability-1';
 import { IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-clerk-prelims-english-language-1';
@@ -154,6 +161,9 @@ import { SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1 } from './question-ba
 import { LIC_AAO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/lic-aao-prelims-reasoning-ability-1';
 import { LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/lic-aao-prelims-quantitative-aptitude-1';
 import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/lic-aao-prelims-english-language-1';
+import { LIC_AAO_PRELIMS_REASONING_ABILITY_2 } from './question-banks/lic-aao-prelims-reasoning-ability-2';
+import { LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/lic-aao-prelims-quantitative-aptitude-2';
+import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/lic-aao-prelims-english-language-2';
 import { NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-prelims-english-language-1';
 import { NIACL_AO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/niacl-ao-prelims-reasoning-ability-1';
 import { NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/niacl-ao-prelims-quantitative-aptitude-1';
@@ -456,6 +466,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-ntpc/cbt-1-mathematics-sectional-1': RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_1,
   'rrb-ntpc/cbt-1-general-intelligence-reasoning-sectional-1': RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
   'rrb-ntpc/cbt-1-general-awareness-sectional-1': RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_1,
+  'rrb-ntpc/cbt-1-full-mock-2': [
+    ...RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_2,
+    ...RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2,
+    ...RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_2,
+  ],
+  'rrb-ntpc/cbt-1-mathematics-sectional-2': RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_2,
+  'rrb-ntpc/cbt-1-general-intelligence-reasoning-sectional-2': RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2,
+  'rrb-ntpc/cbt-1-general-awareness-sectional-2': RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_2,
   'ibps-po/mains-full-mock-1': [
     ...IBPS_PO_MAINS_REASONING_1,
     ...IBPS_PO_MAINS_GENERAL_AWARENESS_1,
@@ -476,6 +494,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-chsl/tier-1-general-awareness-sectional-1': SSC_CHSL_TIER1_GENERAL_AWARENESS_1,
   'ssc-chsl/tier-1-quantitative-aptitude-sectional-1': SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_1,
   'ssc-chsl/tier-1-english-language-sectional-1': SSC_CHSL_TIER1_ENGLISH_LANGUAGE_1,
+  'ssc-chsl/tier-1-full-mock-2': [
+    ...SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_2,
+    ...SSC_CHSL_TIER1_GENERAL_AWARENESS_2,
+    ...SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_2,
+    ...SSC_CHSL_TIER1_ENGLISH_LANGUAGE_2,
+  ],
+  'ssc-chsl/tier-1-general-intelligence-sectional-2': SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_2,
+  'ssc-chsl/tier-1-general-awareness-sectional-2': SSC_CHSL_TIER1_GENERAL_AWARENESS_2,
+  'ssc-chsl/tier-1-quantitative-aptitude-sectional-2': SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_2,
+  'ssc-chsl/tier-1-english-language-sectional-2': SSC_CHSL_TIER1_ENGLISH_LANGUAGE_2,
   'ibps-clerk/prelims-full-mock-1': [
     ...IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
     ...IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
@@ -754,6 +782,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'lic-aao/prelims-reasoning-ability-sectional-1': LIC_AAO_PRELIMS_REASONING_ABILITY_1,
   'lic-aao/prelims-quantitative-aptitude-sectional-1': LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1,
   'lic-aao/prelims-english-language-sectional-1': LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1,
+  'lic-aao/prelims-full-mock-2': [
+    ...LIC_AAO_PRELIMS_REASONING_ABILITY_2,
+    ...LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_2,
+    ...LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_2,
+  ],
+  'lic-aao/prelims-reasoning-ability-sectional-2': LIC_AAO_PRELIMS_REASONING_ABILITY_2,
+  'lic-aao/prelims-quantitative-aptitude-sectional-2': LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_2,
+  'lic-aao/prelims-english-language-sectional-2': LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_2,
   'niacl-ao/prelims-full-mock-1': [
     ...NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1,
     ...NIACL_AO_PRELIMS_REASONING_ABILITY_1,
