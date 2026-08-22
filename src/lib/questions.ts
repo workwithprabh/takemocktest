@@ -81,8 +81,14 @@ import { SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1 } from './question-banks/s
 import { SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1 } from './question-banks/ssc-mts-cbt-reasoning-ability-problem-solving-1';
 import { SSC_MTS_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-mts-cbt-general-awareness-1';
 import { SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-mts-cbt-english-language-comprehension-1';
+import { SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_2 } from './question-banks/ssc-mts-cbt-numerical-mathematical-ability-2';
+import { SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_2 } from './question-banks/ssc-mts-cbt-reasoning-ability-problem-solving-2';
+import { SSC_MTS_CBT_GENERAL_AWARENESS_2 } from './question-banks/ssc-mts-cbt-general-awareness-2';
+import { SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_2 } from './question-banks/ssc-mts-cbt-english-language-comprehension-2';
 import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-rrb-office-assistant-prelims-numerical-ability-1';
 import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-office-assistant-prelims-reasoning-1';
+import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/ibps-rrb-office-assistant-prelims-numerical-ability-2';
+import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_2 } from './question-banks/ibps-rrb-office-assistant-prelims-reasoning-2';
 import { SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-gd-constable-cbe-general-intelligence-reasoning-1';
 import { SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1 } from './question-banks/ssc-gd-constable-cbe-general-knowledge-awareness-1';
 import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1 } from './question-banks/ssc-gd-constable-cbe-elementary-mathematics-1';
@@ -125,6 +131,9 @@ import { UPSC_CSE_PAPER_2_NUMERACY_DATA_INTERPRETATION_1 } from './question-bank
 import { RPF_CONSTABLE_CBT_ARITHMETIC_1 } from './question-banks/rpf-constable-cbt-arithmetic-1';
 import { RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rpf-constable-cbt-general-intelligence-reasoning-1';
 import { RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-constable-cbt-general-awareness-1';
+import { RPF_CONSTABLE_CBT_ARITHMETIC_2 } from './question-banks/rpf-constable-cbt-arithmetic-2';
+import { RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rpf-constable-cbt-general-intelligence-reasoning-2';
+import { RPF_CONSTABLE_CBT_GENERAL_AWARENESS_2 } from './question-banks/rpf-constable-cbt-general-awareness-2';
 import { RPF_SI_CBT_ARITHMETIC_1 } from './question-banks/rpf-si-cbt-arithmetic-1';
 import { RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rpf-si-cbt-general-intelligence-reasoning-1';
 import { RPF_SI_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-si-cbt-general-awareness-1';
@@ -604,12 +613,28 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-mts/cbt-reasoning-ability-sectional-1': SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1,
   'ssc-mts/cbt-general-awareness-sectional-1': SSC_MTS_CBT_GENERAL_AWARENESS_1,
   'ssc-mts/cbt-english-language-comprehension-sectional-1': SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1,
+  'ssc-mts/cbt-full-mock-2': [
+    ...SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_2,
+    ...SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_2,
+    ...SSC_MTS_CBT_GENERAL_AWARENESS_2,
+    ...SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_2,
+  ],
+  'ssc-mts/cbt-numerical-ability-sectional-2': SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_2,
+  'ssc-mts/cbt-reasoning-ability-sectional-2': SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_2,
+  'ssc-mts/cbt-general-awareness-sectional-2': SSC_MTS_CBT_GENERAL_AWARENESS_2,
+  'ssc-mts/cbt-english-language-comprehension-sectional-2': SSC_MTS_CBT_ENGLISH_LANGUAGE_COMPREHENSION_2,
   'ibps-rrb-office-assistant/prelims-full-mock-1': [
     ...IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1,
     ...IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
   ],
   'ibps-rrb-office-assistant/prelims-reasoning-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1,
   'ibps-rrb-office-assistant/prelims-numerical-ability-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
+  'ibps-rrb-office-assistant/prelims-full-mock-2': [
+    ...IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_2,
+    ...IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2,
+  ],
+  'ibps-rrb-office-assistant/prelims-reasoning-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_2,
+  'ibps-rrb-office-assistant/prelims-numerical-ability-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2,
   'ssc-gd-constable/cbe-full-mock-1': [
     ...SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
@@ -716,6 +741,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rpf-constable/cbt-arithmetic-sectional-1': RPF_CONSTABLE_CBT_ARITHMETIC_1,
   'rpf-constable/cbt-general-intelligence-reasoning-sectional-1': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1,
   'rpf-constable/cbt-general-awareness-sectional-1': RPF_CONSTABLE_CBT_GENERAL_AWARENESS_1,
+  'rpf-constable/cbt-full-mock-2': [
+    ...RPF_CONSTABLE_CBT_ARITHMETIC_2,
+    ...RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+    ...RPF_CONSTABLE_CBT_GENERAL_AWARENESS_2,
+  ],
+  'rpf-constable/cbt-arithmetic-sectional-2': RPF_CONSTABLE_CBT_ARITHMETIC_2,
+  'rpf-constable/cbt-general-intelligence-reasoning-sectional-2': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rpf-constable/cbt-general-awareness-sectional-2': RPF_CONSTABLE_CBT_GENERAL_AWARENESS_2,
   'rpf-si/cbt-full-mock-1': [
     ...RPF_SI_CBT_ARITHMETIC_1,
     ...RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1,
