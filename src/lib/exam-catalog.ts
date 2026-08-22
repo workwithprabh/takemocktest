@@ -152,7 +152,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('KCET', 'State', 'kcet'),
           exam('KEAM', 'State'),
           exam('AP EAPCET', 'State', 'ap-eapcet'),
-          exam('TG EAPCET', 'State'),
+          exam('TG EAPCET', 'State', 'tg-eapcet'),
           exam('GUJCET', 'State'),
           exam('OJEE', 'State'),
           exam('BCECE', 'State'),

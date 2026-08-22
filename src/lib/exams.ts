@@ -81,7 +81,8 @@ export type ExamSlug =
   | 'mht-cet'
   | 'wbjee'
   | 'ap-eapcet'
-  | 'kcet';
+  | 'kcet'
+  | 'tg-eapcet';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -241,6 +242,7 @@ const WBJEE_2026_BULLETIN =
   'https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2026/03/202603101506582412.pdf';
 const AP_EAPCET_2026_INSTRUCTION_BOOKLET = 'https://cets.apsche.ap.gov.in/EAPCET/PDF/APEAPCET2026_Instruction_Booklet_Engineering_V2.pdf';
 const KCET_2026_KEA_PORTAL = 'https://cetonline.karnataka.gov.in/kea/ugcet2026';
+const TG_EAPCET_2026_SYLLABUS = 'https://eapcet.tgche.ac.in/TGEAPCET/Doc2026/Syllabus-E.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -6993,6 +6995,41 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'engineering-full-mock-1', name: 'Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking and no deduction for unattempted questions, matching the official AP EAPCET 2026 scheme. One unrestricted 180-minute timer with no subject locking: time may be used freely across Mathematics, Physics, and Chemistry.', checkedOn: '22 August 2026' },
           { id: 'engineering-mathematics-sectional-1', name: 'Mathematics Sectional Practice Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest Mathematics sectional practice: AP EAPCET 2026 does not publish a separate official Mathematics section timer, so the 90-minute timer here is a TakeMockTest practice setting.', checkedOn: '22 August 2026' },
           { id: 'engineering-physics-chemistry-sectional-1', name: 'Physics and Chemistry Sectional Practice Test 1', kind: 'practice', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest Physics and Chemistry sectional practice, free navigation across both subjects: AP EAPCET 2026 does not publish a separate official Physics/Chemistry timer, so the 90-minute timer here is a TakeMockTest practice setting.', checkedOn: '22 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tg-eapcet': {
+    slug: 'tg-eapcet',
+    name: 'TG EAPCET',
+    fullName: 'Telangana Engineering, Agriculture and Pharmacy Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering',
+        name: 'Engineering',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 160,
+          totalMarks: 160,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 80, marks: 80 },
+            { name: 'Physics', questions: 40, marks: 40 },
+            { name: 'Chemistry', questions: 40, marks: 40 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer for all three subjects combined, with no sectional lock: candidates may move freely across Mathematics, Physics, and Chemistry and use time from any subject anywhere in the test.',
+          note: 'The official TG EAPCET 2026 Engineering CBT portal, its CBT identity, its exam dates, and its published syllabus are directly confirmed (OFFICIAL-VERIFIED). The exact 160-question, 160-mark, 180-minute pattern used here (Mathematics 80, Physics 40, Chemistry 40, four-option single-correct MCQs, 1 mark per correct answer, no negative marking) is corroborated across a mirror of the official information booklet and an independent paper-analysis source rather than machine-read directly from a current official document in this environment (CORROBORATED-CURRENT-SECONDARY), so this pattern is marked review-pending rather than official until it can be independently re-verified against a current official source. TakeMockTest\'s Full Mock reproduces this pattern: 160 questions in the same 80/40/40 split, one free 180-minute timer, no negative marking. A Mathematics Sectional Practice Test (80 questions) and a combined Physics and Chemistry Sectional Practice Test (80 questions, 40 each) are also available; TG EAPCET does not publish separate official section timers, so their 90-minute timers are TakeMockTest practice settings (PLATFORM-DEFINED), not official figures. The official CBT displays every question bilingually, in English plus either Telugu or Urdu depending on the candidate\'s choice (CORROBORATED-CURRENT-SECONDARY); TakeMockTest\'s question content is English-only (PLATFORM-DEFINED), a disclosed practice adaptation rather than a bilingual reproduction.',
+          sourceUrl: TG_EAPCET_2026_SYLLABUS,
+          checkedOn: '22 August 2026',
+        },
+        tests: [
+          { id: 'engineering-full-mock-1', name: 'Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking and no deduction for unattempted questions, matching the TG EAPCET 2026 scheme. One unrestricted 180-minute timer with no subject locking: time may be used freely across Mathematics, Physics, and Chemistry.', checkedOn: '22 August 2026' },
+          { id: 'engineering-mathematics-sectional-1', name: 'Mathematics Sectional Practice Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest Mathematics sectional practice: TG EAPCET 2026 does not publish a separate official Mathematics section timer, so the 90-minute timer here is a TakeMockTest practice setting.', checkedOn: '22 August 2026' },
+          { id: 'engineering-physics-chemistry-sectional-1', name: 'Physics and Chemistry Sectional Practice Test 1', kind: 'practice', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest Physics and Chemistry sectional practice, free navigation across both subjects: TG EAPCET 2026 does not publish a separate official Physics/Chemistry timer, so the 90-minute timer here is a TakeMockTest practice setting.', checkedOn: '22 August 2026' },
         ],
       },
     ],
