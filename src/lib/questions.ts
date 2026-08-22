@@ -29,6 +29,9 @@ import { SSC_CGL_TIER2_COMPUTER_KNOWLEDGE_3 } from './question-banks/ssc-cgl-tie
 import { IBPS_PO_PRELIMS_ENGLISH_1 } from './question-banks/ibps-po-prelims-english-1';
 import { IBPS_PO_PRELIMS_QUANTITATIVE_1 } from './question-banks/ibps-po-prelims-quantitative-1';
 import { IBPS_PO_PRELIMS_REASONING_1 } from './question-banks/ibps-po-prelims-reasoning-1';
+import { IBPS_PO_PRELIMS_ENGLISH_2 } from './question-banks/ibps-po-prelims-english-2';
+import { IBPS_PO_PRELIMS_QUANTITATIVE_2 } from './question-banks/ibps-po-prelims-quantitative-2';
+import { IBPS_PO_PRELIMS_REASONING_2 } from './question-banks/ibps-po-prelims-reasoning-2';
 import { RRB_NTPC_CBT1_FULL_MOCK_1 } from './question-banks/rrb-ntpc-cbt1-full-mock-1';
 import { RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-mathematics-sectional-1';
 import { RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt1-general-intelligence-reasoning-sectional-1';
@@ -367,6 +370,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-po/prelims-english-language-sectional-1': IBPS_PO_PRELIMS_ENGLISH_1,
   'ibps-po/prelims-quantitative-aptitude-sectional-1': IBPS_PO_PRELIMS_QUANTITATIVE_1,
   'ibps-po/prelims-reasoning-ability-sectional-1': IBPS_PO_PRELIMS_REASONING_1,
+  'ibps-po/prelims-full-mock-2': [
+    ...IBPS_PO_PRELIMS_ENGLISH_2,
+    ...IBPS_PO_PRELIMS_QUANTITATIVE_2,
+    ...IBPS_PO_PRELIMS_REASONING_2,
+  ],
+  'ibps-po/prelims-english-language-sectional-2': IBPS_PO_PRELIMS_ENGLISH_2,
+  'ibps-po/prelims-quantitative-aptitude-sectional-2': IBPS_PO_PRELIMS_QUANTITATIVE_2,
+  'ibps-po/prelims-reasoning-ability-sectional-2': IBPS_PO_PRELIMS_REASONING_2,
   'ssc-cgl/tier-1-full-mock-1': [
     ...SSC_CGL_TIER1_REASONING_1,
     ...SSC_CGL_TIER1_GENERAL_AWARENESS_1,
