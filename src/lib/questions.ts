@@ -51,6 +51,9 @@ import { RRB_GROUP_D_CBT_GENERAL_AWARENESS_CURRENT_AFFAIRS_1 } from './question-
 import { SBI_PO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-po-prelims-english-language-1';
 import { SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/sbi-po-prelims-quantitative-aptitude-1';
 import { SBI_PO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-po-prelims-reasoning-ability-1';
+import { SBI_PO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/sbi-po-prelims-english-language-2';
+import { SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/sbi-po-prelims-quantitative-aptitude-2';
+import { SBI_PO_PRELIMS_REASONING_ABILITY_2 } from './question-banks/sbi-po-prelims-reasoning-ability-2';
 import { RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-assistant-prelims-english-language-1';
 import { RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/rbi-assistant-prelims-numerical-ability-1';
 import { RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1 } from './question-banks/rbi-assistant-prelims-reasoning-ability-1';
@@ -477,6 +480,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-po/prelims-english-language-sectional-1': SBI_PO_PRELIMS_ENGLISH_LANGUAGE_1,
   'sbi-po/prelims-quantitative-aptitude-sectional-1': SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_1,
   'sbi-po/prelims-reasoning-ability-sectional-1': SBI_PO_PRELIMS_REASONING_ABILITY_1,
+  'sbi-po/prelims-full-mock-2': [
+    ...SBI_PO_PRELIMS_ENGLISH_LANGUAGE_2,
+    ...SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_2,
+    ...SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  ],
+  'sbi-po/prelims-english-language-sectional-2': SBI_PO_PRELIMS_ENGLISH_LANGUAGE_2,
+  'sbi-po/prelims-quantitative-aptitude-sectional-2': SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_2,
+  'sbi-po/prelims-reasoning-ability-sectional-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
   'rbi-assistant/prelims-full-mock-1': [
     ...RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1,
     ...RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
