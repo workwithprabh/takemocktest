@@ -239,7 +239,7 @@ const MHT_CET_2026_BROCHURE =
   'https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-11.04.2026.pdf';
 const WBJEE_2026_BULLETIN =
   'https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2026/03/202603101506582412.pdf';
-const AP_EAPCET_OFFICIAL_PAGE = 'https://cets.apsche.ap.gov.in/';
+const AP_EAPCET_2026_INSTRUCTION_BOOKLET = 'https://cets.apsche.ap.gov.in/EAPCET/PDF/APEAPCET2026_Instruction_Booklet_Engineering_V2.pdf';
 const KCET_2026_KEA_PORTAL = 'https://cetonline.karnataka.gov.in/kea/ugcet2026';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
@@ -6679,25 +6679,27 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         id: 'engineering',
         name: 'Engineering',
         pattern: {
-          status: 'review-pending',
+          status: 'official',
           cycle: '2026',
           sections: ['Mathematics', 'Physics', 'Chemistry'],
-          totalQuestions: 40,
-          totalMarks: 40,
-          duration: 45,
+          totalQuestions: 160,
+          totalMarks: 160,
+          duration: 180,
           negativeMarking: 0,
           sectionBreakdown: [
-            { name: 'Mathematics', questions: 20, marks: 20 },
-            { name: 'Physics', questions: 10, marks: 10 },
-            { name: 'Chemistry', questions: 10, marks: 10 },
+            { name: 'Mathematics', questions: 80, marks: 80 },
+            { name: 'Physics', questions: 40, marks: 40 },
+            { name: 'Chemistry', questions: 40, marks: 40 },
           ],
-          timerNote: 'Single composite 45-minute timer for all three subjects combined: no sectional lock, matching the official exam\'s own single continuous timer',
-          note: 'The official AP EAPCET Engineering stream paper has 160 questions for 160 marks in 180 minutes: Mathematics (80 questions), Physics (40 questions), and Chemistry (40 questions), each correct answer worth 1 mark with no negative marking, a single continuous timer with no sectional lock. This mock covers all three subjects in the same 2:1:1 proportion as the official exam: 40 questions (20 Mathematics, 10 Physics, 10 Chemistry), with the same no-negative-marking scoring and a single composite timer. This exam\'s official cets.apsche.ap.gov.in source could not be independently accessed while researching this mock (network access to the domain was unavailable), so the 160-question, 160-mark, 180-minute, no-negative-marking pattern used here is drawn from consistent corroboration across multiple independent secondary sources rather than a directly verified primary document, and this pattern is marked review-pending rather than official until it can be directly re-checked against the official information bulletin. The Mathematics, Physics, and Chemistry topic areas used here are standard Class 11/12 syllabus topics, consistently corroborated across independent sources.',
-          sourceUrl: AP_EAPCET_OFFICIAL_PAGE,
-          checkedOn: '21 August 2026',
+          timerNote: 'Single unrestricted 180-minute timer for all three subjects combined, with no sectional lock: candidates may move freely across Mathematics, Physics, and Chemistry and use time from any subject anywhere in the test, matching the official CBT\'s own single continuous timer.',
+          note: 'The official AP EAPCET 2026 Engineering CBT has 160 four-option single-correct MCQs for 160 marks in 180 minutes: Mathematics (80 questions), Physics (40 questions), and Chemistry (40 questions), each correct answer worth 1 mark with no negative marking and no deduction for unattempted questions, delivered under one unrestricted timer with no subject locking. This is directly confirmed by the official AP EAPCET 2026 portal, its Engineering Instruction Booklet, its Important CBT Instructions document, and its official 2026 master question papers. TakeMockTest\'s Full Mock reproduces this exactly: 160 questions in the same 80/40/40 split, one free 180-minute timer, no negative marking. A Mathematics Sectional Practice Test (80 questions) and a combined Physics and Chemistry Sectional Practice Test (80 questions, 40 each) are also available; AP EAPCET does not publish separate official section timers, so their 90-minute timers are TakeMockTest practice settings, not official figures. The official CBT displays every question in both English and Telugu; TakeMockTest\'s question content is English-only, a disclosed practice adaptation rather than a bilingual reproduction.',
+          sourceUrl: AP_EAPCET_2026_INSTRUCTION_BOOKLET,
+          checkedOn: '22 August 2026',
         },
         tests: [
-          { id: 'engineering-full-mock-1', name: 'Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 45, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official AP EAPCET scheme. Raw score out of 40 shown here; the official exam is out of 160 across Mathematics, Physics, and Chemistry.', checkedOn: '21 August 2026' },
+          { id: 'engineering-full-mock-1', name: 'Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking and no deduction for unattempted questions, matching the official AP EAPCET 2026 scheme. One unrestricted 180-minute timer with no subject locking: time may be used freely across Mathematics, Physics, and Chemistry.', checkedOn: '22 August 2026' },
+          { id: 'engineering-mathematics-sectional-1', name: 'Mathematics Sectional Practice Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest Mathematics sectional practice: AP EAPCET 2026 does not publish a separate official Mathematics section timer, so the 90-minute timer here is a TakeMockTest practice setting.', checkedOn: '22 August 2026' },
+          { id: 'engineering-physics-chemistry-sectional-1', name: 'Physics and Chemistry Sectional Practice Test 1', kind: 'practice', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest Physics and Chemistry sectional practice, free navigation across both subjects: AP EAPCET 2026 does not publish a separate official Physics/Chemistry timer, so the 90-minute timer here is a TakeMockTest practice setting.', checkedOn: '22 August 2026' },
         ],
       },
     ],
