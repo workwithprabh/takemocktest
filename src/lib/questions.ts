@@ -81,6 +81,9 @@ import { IBPS_RRB_OFFICER_SCALE_1_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './ques
 import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-clerk-prelims-english-language-1';
 import { SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/sbi-clerk-prelims-numerical-ability-1';
 import { SBI_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-clerk-prelims-reasoning-ability-1';
+import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/sbi-clerk-prelims-english-language-2';
+import { SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/sbi-clerk-prelims-numerical-ability-2';
+import { SBI_CLERK_PRELIMS_REASONING_ABILITY_2 } from './question-banks/sbi-clerk-prelims-reasoning-ability-2';
 import { RRB_JE_CBT1_MATHEMATICS_1 } from './question-banks/rrb-je-cbt1-mathematics-1';
 import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-1';
 import { RRB_JE_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-je-cbt1-general-awareness-1';
@@ -569,6 +572,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-clerk/prelims-english-language-sectional-1': SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
   'sbi-clerk/prelims-numerical-ability-sectional-1': SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
   'sbi-clerk/prelims-reasoning-ability-sectional-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'sbi-clerk/prelims-full-mock-2': [
+    ...SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_2,
+    ...SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_2,
+    ...SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
+  ],
+  'sbi-clerk/prelims-english-language-sectional-2': SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_2,
+  'sbi-clerk/prelims-numerical-ability-sectional-2': SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_2,
+  'sbi-clerk/prelims-reasoning-ability-sectional-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
   'rrb-je/cbt1-full-mock-1': [
     ...RRB_JE_CBT1_MATHEMATICS_1,
     ...RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
