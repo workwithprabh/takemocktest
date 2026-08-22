@@ -44,6 +44,9 @@ import { SSC_CHSL_TIER1_GENERAL_AWARENESS_1 } from './question-banks/ssc-chsl-ti
 import { IBPS_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/ibps-clerk-prelims-reasoning-ability-1';
 import { IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-clerk-prelims-numerical-ability-1';
 import { IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-clerk-prelims-english-language-1';
+import { IBPS_CLERK_PRELIMS_REASONING_ABILITY_2 } from './question-banks/ibps-clerk-prelims-reasoning-ability-2';
+import { IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/ibps-clerk-prelims-numerical-ability-2';
+import { IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-clerk-prelims-english-language-2';
 import { RRB_GROUP_D_CBT_GENERAL_SCIENCE_1 } from './question-banks/rrb-group-d-cbt-general-science-1';
 import { RRB_GROUP_D_CBT_MATHEMATICS_1 } from './question-banks/rrb-group-d-cbt-mathematics-1';
 import { RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-group-d-cbt-general-intelligence-reasoning-1';
@@ -462,6 +465,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-clerk/prelims-english-language-sectional-1': IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
   'ibps-clerk/prelims-numerical-ability-sectional-1': IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
   'ibps-clerk/prelims-reasoning-ability-sectional-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'ibps-clerk/prelims-full-mock-2': [
+    ...IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_2,
+    ...IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_2,
+    ...IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
+  ],
+  'ibps-clerk/prelims-english-language-sectional-2': IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_2,
+  'ibps-clerk/prelims-numerical-ability-sectional-2': IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_2,
+  'ibps-clerk/prelims-reasoning-ability-sectional-2': IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
   'rrb-group-d/cbt-full-mock-1': [
     ...RRB_GROUP_D_CBT_GENERAL_SCIENCE_1,
     ...RRB_GROUP_D_CBT_MATHEMATICS_1,
