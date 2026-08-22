@@ -63,6 +63,9 @@ import { SBI_PO_PRELIMS_REASONING_ABILITY_2 } from './question-banks/sbi-po-prel
 import { RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-assistant-prelims-english-language-1';
 import { RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/rbi-assistant-prelims-numerical-ability-1';
 import { RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1 } from './question-banks/rbi-assistant-prelims-reasoning-ability-1';
+import { RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/rbi-assistant-prelims-english-language-2';
+import { RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/rbi-assistant-prelims-numerical-ability-2';
+import { RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2 } from './question-banks/rbi-assistant-prelims-reasoning-ability-2';
 import { SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1 } from './question-banks/ssc-mts-cbt-numerical-mathematical-ability-1';
 import { SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1 } from './question-banks/ssc-mts-cbt-reasoning-ability-problem-solving-1';
 import { SSC_MTS_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-mts-cbt-general-awareness-1';
@@ -518,6 +521,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rbi-assistant/prelims-english-language-sectional-1': RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1,
   'rbi-assistant/prelims-numerical-ability-sectional-1': RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
   'rbi-assistant/prelims-reasoning-ability-sectional-1': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1,
+  'rbi-assistant/prelims-full-mock-2': [
+    ...RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_2,
+    ...RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2,
+    ...RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
+  ],
+  'rbi-assistant/prelims-english-language-sectional-2': RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_2,
+  'rbi-assistant/prelims-numerical-ability-sectional-2': RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2,
+  'rbi-assistant/prelims-reasoning-ability-sectional-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
   'ssc-mts/cbt-full-mock-1': [
     ...SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1,
     ...SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1,
