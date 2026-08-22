@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-22",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 308,
-    "questions": 10277
+    "bankFiles": 311,
+    "questions": 10377
   },
   "topicSaturation": [
     {
@@ -206,7 +206,7 @@
     {
       "section": "English Language",
       "topic": "Sentence improvement",
-      "questionCount": 38,
+      "questionCount": 39,
       "examCount": 13,
       "exams": [
         "ibps-clerk",
@@ -227,7 +227,7 @@
     {
       "section": "English Language",
       "topic": "Cloze test",
-      "questionCount": 44,
+      "questionCount": 47,
       "examCount": 12,
       "exams": [
         "ibps-clerk",
@@ -586,6 +586,24 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Reading comprehension",
+      "questionCount": 32,
+      "examCount": 10,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-assistant",
+        "rbi-grade",
+        "sbi-po",
+        "sidbi-grade"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Matrices",
       "questionCount": 30,
@@ -601,6 +619,42 @@
         "mht-cet",
         "nata-mathematics",
         "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Active and passive voice",
+      "questionCount": 26,
+      "examCount": 10,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-so",
+        "nabard-grade",
+        "rbi-assistant",
+        "rbi-grade",
+        "sbi-po",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-chsl"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Direct and indirect speech",
+      "questionCount": 15,
+      "examCount": 10,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-so",
+        "nabard-grade",
+        "rbi-assistant",
+        "rbi-grade",
+        "sbi-po",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-chsl"
       ]
     },
     {
@@ -655,23 +709,6 @@
       ]
     },
     {
-      "section": "English Language",
-      "topic": "Reading comprehension",
-      "questionCount": 30,
-      "examCount": 9,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sbi-po",
-        "sidbi-grade"
-      ]
-    },
-    {
       "section": "Quantitative Aptitude",
       "topic": "Simplification",
       "questionCount": 29,
@@ -689,23 +726,6 @@
       ]
     },
     {
-      "section": "English Language",
-      "topic": "Active and passive voice",
-      "questionCount": 25,
-      "examCount": 9,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-so",
-        "nabard-grade",
-        "rbi-grade",
-        "sbi-po",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-chsl"
-      ]
-    },
-    {
       "section": "Physics",
       "topic": "Kinematics",
       "questionCount": 24,
@@ -720,23 +740,6 @@
         "met-2026",
         "srmjeee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Direct and indirect speech",
-      "questionCount": 14,
-      "examCount": 9,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-so",
-        "nabard-grade",
-        "rbi-grade",
-        "sbi-po",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-chsl"
       ]
     },
     {
@@ -817,6 +820,22 @@
         "ssc-je",
         "ssc-selection",
         "ssc-steno"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Error spotting",
+      "questionCount": 28,
+      "examCount": 8,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po",
+        "ssc-selection"
       ]
     },
     {
@@ -916,6 +935,21 @@
       ]
     },
     {
+      "section": "Reasoning Ability",
+      "topic": "Number series",
+      "questionCount": 51,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
+      ]
+    },
+    {
       "section": "General Awareness",
       "topic": "Indian Geography",
       "questionCount": 49,
@@ -932,23 +966,8 @@
     },
     {
       "section": "Reasoning Ability",
-      "topic": "Number series",
-      "questionCount": 44,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
       "topic": "Coding-decoding",
-      "questionCount": 41,
+      "questionCount": 44,
       "examCount": 7,
       "exams": [
         "ibps-clerk",
@@ -963,7 +982,37 @@
     {
       "section": "English Language",
       "topic": "Antonym",
-      "questionCount": 37,
+      "questionCount": 40,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po",
+        "ssc-chsl",
+        "ssc-selection"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Blood relations",
+      "questionCount": 40,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Synonym",
+      "questionCount": 38,
       "examCount": 7,
       "exams": [
         "ibps-clerk",
@@ -991,23 +1040,8 @@
       ]
     },
     {
-      "section": "Reasoning Ability",
-      "topic": "Blood relations",
-      "questionCount": 36,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
-      ]
-    },
-    {
       "section": "English Language",
-      "topic": "Synonym",
+      "topic": "One-word substitution",
       "questionCount": 35,
       "examCount": 7,
       "exams": [
@@ -1018,6 +1052,21 @@
         "sbi-po",
         "ssc-chsl",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Direction sense",
+      "questionCount": 34,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
       ]
     },
     {
@@ -1036,21 +1085,6 @@
       ]
     },
     {
-      "section": "English Language",
-      "topic": "One-word substitution",
-      "questionCount": 32,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po",
-        "ssc-chsl",
-        "ssc-selection"
-      ]
-    },
-    {
       "section": "Reasoning",
       "topic": "Syllogism",
       "questionCount": 32,
@@ -1067,7 +1101,7 @@
     },
     {
       "section": "Reasoning Ability",
-      "topic": "Direction sense",
+      "topic": "Classification",
       "questionCount": 31,
       "examCount": 7,
       "exams": [
@@ -1082,23 +1116,8 @@
     },
     {
       "section": "Reasoning Ability",
-      "topic": "Classification",
-      "questionCount": 29,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
       "topic": "Syllogism",
-      "questionCount": 29,
+      "questionCount": 31,
       "examCount": 7,
       "exams": [
         "ibps-clerk",
@@ -1201,24 +1220,9 @@
       ]
     },
     {
-      "section": "English Language",
-      "topic": "Error spotting",
-      "questionCount": 27,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "niacl-ao",
-        "sbi-clerk",
-        "sbi-po",
-        "ssc-selection"
-      ]
-    },
-    {
       "section": "Reasoning Ability",
       "topic": "Analogy",
-      "questionCount": 25,
+      "questionCount": 27,
       "examCount": 7,
       "exams": [
         "ibps-clerk",
@@ -1436,6 +1440,20 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Spelling",
+      "questionCount": 25,
+      "examCount": 6,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-po",
+        "ssc-chsl",
+        "ssc-selection"
+      ]
+    },
+    {
       "section": "Physics",
       "topic": "Optics",
       "questionCount": 24,
@@ -1447,20 +1465,6 @@
         "met-2026",
         "mht-cet",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Spelling",
-      "questionCount": 24,
-      "examCount": 6,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-po",
-        "ssc-chsl",
-        "ssc-selection"
       ]
     },
     {
@@ -1632,6 +1636,20 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Preposition",
+      "questionCount": 13,
+      "examCount": 6,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-clerk",
+        "ssc-chsl",
+        "ssc-selection"
+      ]
+    },
+    {
       "section": "Quantitative Aptitude",
       "topic": "Algebra",
       "questionCount": 12,
@@ -1662,7 +1680,7 @@
     {
       "section": "English Language",
       "topic": "Vocabulary in context",
-      "questionCount": 10,
+      "questionCount": 11,
       "examCount": 6,
       "exams": [
         "ibps-clerk",
@@ -1744,7 +1762,7 @@
     {
       "section": "English Language",
       "topic": "Idioms",
-      "questionCount": 28,
+      "questionCount": 31,
       "examCount": 5,
       "exams": [
         "ibps-clerk",
@@ -1752,6 +1770,19 @@
         "rbi-assistant",
         "sbi-po",
         "ssc-chsl"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Ranking",
+      "questionCount": 31,
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
       ]
     },
     {
@@ -1781,19 +1812,6 @@
       ]
     },
     {
-      "section": "Reasoning Ability",
-      "topic": "Ranking",
-      "questionCount": 26,
-      "examCount": 5,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
-      ]
-    },
-    {
       "section": "Chemistry",
       "topic": "Equilibrium",
       "questionCount": 21,
@@ -1804,6 +1822,19 @@
         "comedk-uget",
         "kcet-engineering",
         "met-2026"
+      ]
+    },
+    {
+      "section": "Numerical Ability",
+      "topic": "Simplification",
+      "questionCount": 21,
+      "examCount": 5,
+      "exams": [
+        "afcat-verbal",
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk"
       ]
     },
     {
@@ -1873,7 +1904,7 @@
     },
     {
       "section": "Numerical Ability",
-      "topic": "Simplification",
+      "topic": "Percentage",
       "questionCount": 19,
       "examCount": 5,
       "exams": [
@@ -1925,8 +1956,34 @@
     },
     {
       "section": "Numerical Ability",
-      "topic": "Percentage",
+      "topic": "Ratio and Proportion",
       "questionCount": 17,
+      "examCount": 5,
+      "exams": [
+        "afcat-verbal",
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk"
+      ]
+    },
+    {
+      "section": "Numerical Ability",
+      "topic": "Time and Work",
+      "questionCount": 17,
+      "examCount": 5,
+      "exams": [
+        "afcat-verbal",
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk"
+      ]
+    },
+    {
+      "section": "Numerical Ability",
+      "topic": "Profit and Loss",
+      "questionCount": 16,
       "examCount": 5,
       "exams": [
         "afcat-verbal",
@@ -1950,19 +2007,6 @@
       ]
     },
     {
-      "section": "Numerical Ability",
-      "topic": "Time and Work",
-      "questionCount": 15,
-      "examCount": 5,
-      "exams": [
-        "afcat-verbal",
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk"
-      ]
-    },
-    {
       "section": "Mathematics",
       "topic": "Straight Lines",
       "questionCount": 15,
@@ -1976,6 +2020,19 @@
       ]
     },
     {
+      "section": "Reasoning Ability",
+      "topic": "Alphabet series",
+      "questionCount": 15,
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-po"
+      ]
+    },
+    {
       "section": "Physics",
       "topic": "Wave optics",
       "questionCount": 15,
@@ -1986,32 +2043,6 @@
         "kcet-engineering",
         "mht-cet",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Numerical Ability",
-      "topic": "Ratio and Proportion",
-      "questionCount": 14,
-      "examCount": 5,
-      "exams": [
-        "afcat-verbal",
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk"
-      ]
-    },
-    {
-      "section": "Numerical Ability",
-      "topic": "Profit and Loss",
-      "questionCount": 14,
-      "examCount": 5,
-      "exams": [
-        "afcat-verbal",
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk"
       ]
     },
     {
@@ -2081,14 +2112,14 @@
     },
     {
       "section": "Reasoning Ability",
-      "topic": "Alphabet series",
+      "topic": "Alphanumeric series",
       "questionCount": 13,
       "examCount": 5,
       "exams": [
         "ibps-clerk",
-        "lic-aao",
-        "niacl-ao",
+        "ibps-po",
         "rbi-assistant",
+        "sbi-clerk",
         "sbi-po"
       ]
     },
@@ -2107,13 +2138,26 @@
     },
     {
       "section": "English Language",
-      "topic": "Preposition",
+      "topic": "Para-jumbles",
       "questionCount": 12,
       "examCount": 5,
       "exams": [
         "ibps-clerk",
         "ibps-po",
-        "sbi-clerk",
+        "rbi-assistant",
+        "sbi-po",
+        "ssc-chsl"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Subject-verb agreement",
+      "questionCount": 12,
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
         "ssc-chsl",
         "ssc-selection"
       ]
@@ -2171,32 +2215,6 @@
       ]
     },
     {
-      "section": "English Language",
-      "topic": "Para-jumbles",
-      "questionCount": 11,
-      "examCount": 5,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-po",
-        "ssc-chsl"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Alphanumeric series",
-      "questionCount": 11,
-      "examCount": 5,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
-      ]
-    },
-    {
       "section": "Mathematics",
       "topic": "Ratio and Proportion",
       "questionCount": 11,
@@ -2249,6 +2267,19 @@
       ]
     },
     {
+      "section": "Numerical Ability",
+      "topic": "Compound Interest",
+      "questionCount": 8,
+      "examCount": 5,
+      "exams": [
+        "afcat-verbal",
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk"
+      ]
+    },
+    {
       "section": "Reasoning",
       "topic": "Seating arrangement",
       "questionCount": 8,
@@ -2259,19 +2290,6 @@
         "nabard-grade",
         "niacl-ao",
         "rbi-grade"
-      ]
-    },
-    {
-      "section": "Numerical Ability",
-      "topic": "Compound Interest",
-      "questionCount": 7,
-      "examCount": 5,
-      "exams": [
-        "afcat-verbal",
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk"
       ]
     },
     {
@@ -2449,6 +2467,18 @@
       ]
     },
     {
+      "section": "Numerical Ability",
+      "topic": "Time, speed and distance",
+      "questionCount": 17,
+      "examCount": 4,
+      "exams": [
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk"
+      ]
+    },
+    {
       "section": "Physics",
       "topic": "Units and measurements",
       "questionCount": 16,
@@ -2458,6 +2488,30 @@
         "comedk-uget",
         "kcet-engineering",
         "met-2026"
+      ]
+    },
+    {
+      "section": "Numerical Ability",
+      "topic": "Number series",
+      "questionCount": 16,
+      "examCount": 4,
+      "exams": [
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk"
+      ]
+    },
+    {
+      "section": "Numerical Ability",
+      "topic": "Mensuration",
+      "questionCount": 16,
+      "examCount": 4,
+      "exams": [
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk"
       ]
     },
     {
@@ -2509,30 +2563,6 @@
       ]
     },
     {
-      "section": "Numerical Ability",
-      "topic": "Number series",
-      "questionCount": 13,
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk"
-      ]
-    },
-    {
-      "section": "Numerical Ability",
-      "topic": "Time, speed and distance",
-      "questionCount": 13,
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk"
-      ]
-    },
-    {
       "section": "Physics",
       "topic": "Alternating current",
       "questionCount": 13,
@@ -2569,39 +2599,15 @@
       ]
     },
     {
-      "section": "Numerical Ability",
-      "topic": "Mensuration",
-      "questionCount": 12,
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk"
-      ]
-    },
-    {
       "section": "English Language",
       "topic": "Connectors",
-      "questionCount": 11,
+      "questionCount": 12,
       "examCount": 4,
       "exams": [
         "ibps-clerk",
         "ibps-po",
         "rbi-assistant",
         "sbi-po"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Subject-verb agreement",
-      "questionCount": 11,
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ssc-chsl",
-        "ssc-selection"
       ]
     },
     {
@@ -2614,6 +2620,18 @@
         "jee-advanced",
         "kcet-engineering",
         "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Symbol substitution",
+      "questionCount": 10,
+      "examCount": 4,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-po"
       ]
     },
     {
@@ -2691,25 +2709,13 @@
     {
       "section": "Numerical Ability",
       "topic": "Simple interest",
-      "questionCount": 8,
+      "questionCount": 9,
       "examCount": 4,
       "exams": [
         "ibps-clerk",
         "ibps-rrb",
         "rbi-assistant",
         "sbi-clerk"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Symbol substitution",
-      "questionCount": 8,
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-po"
       ]
     },
     {
@@ -2770,6 +2776,30 @@
         "rrb-ntpc",
         "rrb-technician",
         "ssc-cgl"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Question tags",
+      "questionCount": 6,
+      "examCount": 4,
+      "exams": [
+        "ibps-clerk",
+        "rbi-assistant",
+        "sbi-po",
+        "ssc-chsl"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Puzzle",
+      "questionCount": 6,
+      "examCount": 4,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-po"
       ]
     },
     {
@@ -2854,18 +2884,6 @@
         "ca-foundation",
         "cmat-qtdi",
         "nmat-language"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Puzzle",
-      "questionCount": 5,
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-po"
       ]
     },
     {
@@ -3138,6 +3156,17 @@
       ]
     },
     {
+      "section": "Numerical Ability",
+      "topic": "Data interpretation",
+      "questionCount": 10,
+      "examCount": 3,
+      "exams": [
+        "ibps-clerk",
+        "rbi-assistant",
+        "sbi-clerk"
+      ]
+    },
+    {
       "section": "Chemistry",
       "topic": "d- and f-block elements",
       "questionCount": 9,
@@ -3157,6 +3186,17 @@
         "ailet-english",
         "cmat-qtdi",
         "nmat-language"
+      ]
+    },
+    {
+      "section": "Numerical Ability",
+      "topic": "Average",
+      "questionCount": 9,
+      "examCount": 3,
+      "exams": [
+        "ibps-clerk",
+        "ibps-rrb",
+        "rbi-assistant"
       ]
     },
     {
@@ -3311,17 +3351,6 @@
         "cmat-qtdi",
         "kmat-karnataka",
         "mat-language"
-      ]
-    },
-    {
-      "section": "Numerical Ability",
-      "topic": "Average",
-      "questionCount": 7,
-      "examCount": 3,
-      "exams": [
-        "ibps-clerk",
-        "ibps-rrb",
-        "rbi-assistant"
       ]
     },
     {
@@ -3586,17 +3615,6 @@
         "cmat-qtdi",
         "nmat-language",
         "slat-logical"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Question tags",
-      "questionCount": 5,
-      "examCount": 3,
-      "exams": [
-        "ibps-clerk",
-        "sbi-po",
-        "ssc-chsl"
       ]
     },
     {
@@ -4028,7 +4046,7 @@
     },
     {
       "pattern": "synonym/antonym instruction",
-      "matchCount": 196,
+      "matchCount": 199,
       "examCount": 38,
       "exams": [
         "afcat-verbal",
@@ -4437,6 +4455,21 @@
       ]
     },
     {
+      "opening": "a fair die is rolled once",
+      "examCount": 9,
+      "exams": [
+        "aeee-2026",
+        "ca-foundation",
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "srmjeee-2026",
+        "ssc-cgl",
+        "ssc-selection",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "according to the passage above what",
       "examCount": 9,
       "exams": [
@@ -4482,17 +4515,17 @@
       ]
     },
     {
-      "opening": "a fair die is rolled once",
+      "opening": "what is the volume of a",
       "examCount": 8,
       "exams": [
-        "aeee-2026",
-        "ca-foundation",
+        "act-math",
         "ibps-clerk",
         "ibps-po",
-        "srmjeee-2026",
-        "ssc-cgl",
-        "ssc-selection",
-        "viteee-2026"
+        "rbi-assistant",
+        "rpf-si",
+        "rrb-group",
+        "sbi-po",
+        "ssc-cgl"
       ]
     },
     {
@@ -4593,19 +4626,6 @@
       ]
     },
     {
-      "opening": "what is the volume of a",
-      "examCount": 7,
-      "exams": [
-        "act-math",
-        "ibps-clerk",
-        "ibps-po",
-        "rpf-si",
-        "rrb-group",
-        "sbi-po",
-        "ssc-cgl"
-      ]
-    },
-    {
       "opening": "how many moles are present in",
       "examCount": 7,
       "exams": [
@@ -4642,6 +4662,32 @@
         "rbi-grade",
         "rpf-constable",
         "rrb-technician"
+      ]
+    },
+    {
+      "opening": "choose the correct passive form of",
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-po",
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-steno"
+      ]
+    },
+    {
+      "opening": "one pipe fills a tank in",
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "rrb-group",
+        "sbi-po",
+        "ssc-cgl",
+        "ssc-selection"
       ]
     },
     {
@@ -4904,14 +4950,26 @@
       ]
     },
     {
-      "opening": "choose the correct passive form of",
+      "opening": "choose the correct indirect speech form",
       "examCount": 6,
       "exams": [
         "ibps-clerk",
         "ibps-po",
+        "rbi-assistant",
         "sbi-po",
-        "ssc-cgl",
         "ssc-chsl",
+        "ssc-steno"
+      ]
+    },
+    {
+      "opening": "choose the word that means one",
+      "examCount": 6,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "rbi-assistant",
+        "sbi-po",
         "ssc-steno"
       ]
     },
@@ -4937,18 +4995,6 @@
         "rrb-alp",
         "srmjeee-2026",
         "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "one pipe fills a tank in",
-      "examCount": 6,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rrb-group",
-        "sbi-po",
-        "ssc-cgl",
-        "ssc-selection"
       ]
     },
     {
@@ -5338,25 +5384,58 @@
       ]
     },
     {
-      "opening": "choose the correct indirect speech form",
+      "opening": "identify the part containing an error",
       "examCount": 5,
       "exams": [
         "ibps-clerk",
         "ibps-po",
+        "rbi-assistant",
         "sbi-po",
-        "ssc-chsl",
+        "ssc-cgl"
+      ]
+    },
+    {
+      "opening": "arrange the parts to form a",
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-po",
         "ssc-steno"
       ]
     },
     {
-      "opening": "choose the word that means one",
+      "opening": "how far does a car travel",
       "examCount": 5,
       "exams": [
         "ibps-clerk",
         "ibps-po",
-        "lic-aao",
-        "sbi-po",
-        "ssc-steno"
+        "rbi-assistant",
+        "rrb-group",
+        "sbi-po"
+      ]
+    },
+    {
+      "opening": "using 22 7 find the area",
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "rrb-group",
+        "sbi-po"
+      ]
+    },
+    {
+      "opening": "a shopkeeper sells an article at",
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "rrb-group",
+        "sbi-po"
       ]
     },
     {
@@ -5584,6 +5663,16 @@
       ]
     },
     {
+      "opening": "choose the correct completion by the",
+      "examCount": 4,
+      "exams": [
+        "aeee-2026",
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant"
+      ]
+    },
+    {
       "opening": "choose the word that best completes",
       "examCount": 4,
       "exams": [
@@ -5804,43 +5893,13 @@
       ]
     },
     {
-      "opening": "identify the part containing an error",
+      "opening": "choose the correct completion each of",
       "examCount": 4,
       "exams": [
         "ibps-clerk",
         "ibps-po",
-        "sbi-po",
+        "rbi-assistant",
         "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "arrange the parts to form a",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "sbi-po",
-        "ssc-steno"
-      ]
-    },
-    {
-      "opening": "how far does a car travel",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rrb-group",
-        "sbi-po"
-      ]
-    },
-    {
-      "opening": "using 22 7 find the area",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rrb-group",
-        "sbi-po"
       ]
     },
     {
@@ -5864,16 +5923,6 @@
       ]
     },
     {
-      "opening": "a shopkeeper sells an article at",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rrb-group",
-        "sbi-po"
-      ]
-    },
-    {
       "opening": "find the simple interest on 9",
       "examCount": 4,
       "exams": [
@@ -5881,6 +5930,16 @@
         "ibps-rrb",
         "rrb-group",
         "rrb-technician"
+      ]
+    },
+    {
+      "opening": "facing north a person turns 90",
+      "examCount": 4,
+      "exams": [
+        "ibps-clerk",
+        "rbi-assistant",
+        "rpf-constable",
+        "sbi-po"
       ]
     },
     {
@@ -6370,15 +6429,6 @@
       ]
     },
     {
-      "opening": "choose the correct completion by the",
-      "examCount": 3,
-      "exams": [
-        "aeee-2026",
-        "ibps-clerk",
-        "ibps-po"
-      ]
-    },
-    {
       "opening": "if det a 3 for a",
       "examCount": 3,
       "exams": [
@@ -6430,24 +6480,6 @@
         "aeee-2026",
         "rrb-alp",
         "ssc-selection"
-      ]
-    },
-    {
-      "opening": "a committee of 3 is chosen",
-      "examCount": 3,
-      "exams": [
-        "aeee-2026",
-        "jee-main",
-        "kcet-engineering"
-      ]
-    },
-    {
-      "opening": "for the ellipse x 2 25",
-      "examCount": 3,
-      "exams": [
-        "aeee-2026",
-        "bitsat-2026",
-        "comedk-uget"
       ]
     }
   ]
