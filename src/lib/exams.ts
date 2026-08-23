@@ -257,17 +257,23 @@ const RRB_ALP_2025_NOTICE = 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_
 const RRB_TECHNICIAN_2025_NOTICE = 'https://rrbajmer.gov.in/Upload_PDF/Detailed%20CEN%202-2025_%20Technician%20Categories-638866538197092718.pdf';
 const RRB_PARAMEDICAL_2025_NOTICE = 'https://rrbsecunderabad.gov.in/wp-content/uploads/2025/08/Final-CEN-03_2025-English.pdf';
 
-function selectionPostTests(level: string, prefix: string): TestConfig[] {
-  const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn: '9 August 2026' };
-  return [
-    { id: `${prefix}-cbe-full-mock-1`, name: `${level} Full Mock Test 1`, kind: 'full-length', duration: 60, sectionDuration: 15, ...common },
-    { id: `${prefix}-cbe-general-intelligence-sectional-1`, name: 'General Intelligence Sectional Test 1', kind: 'sectional', section: 'General Intelligence', duration: 15, ...common },
-    { id: `${prefix}-cbe-general-awareness-sectional-1`, name: 'General Awareness Sectional Test 1', kind: 'sectional', section: 'General Awareness', duration: 15, ...common },
-    { id: `${prefix}-cbe-quantitative-aptitude-sectional-1`, name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', section: 'Quantitative Aptitude', duration: 15, ...common },
-    { id: `${prefix}-cbe-english-language-sectional-1`, name: 'English Language Sectional Test 1', kind: 'sectional', section: 'English Language', duration: 15, ...common },
-    { id: `${prefix}-cbe-quick-10min`, name: `${level} Quick Test (10 Minutes)`, kind: 'quick', duration: 10, ...common },
-    { id: `${prefix}-cbe-quick-15min`, name: `${level} Quick Test (15 Minutes)`, kind: 'quick', duration: 15, ...common },
+function selectionPostTests(level: string, prefix: string, testNumber = 1, checkedOn = '9 August 2026'): TestConfig[] {
+  const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn };
+  const n = testNumber;
+  const tests: TestConfig[] = [
+    { id: `${prefix}-cbe-full-mock-${n}`, name: `${level} Full Mock Test ${n}`, kind: 'full-length', duration: 60, sectionDuration: 15, ...common },
+    { id: `${prefix}-cbe-general-intelligence-sectional-${n}`, name: `General Intelligence Sectional Test ${n}`, kind: 'sectional', section: 'General Intelligence', duration: 15, ...common },
+    { id: `${prefix}-cbe-general-awareness-sectional-${n}`, name: `General Awareness Sectional Test ${n}`, kind: 'sectional', section: 'General Awareness', duration: 15, ...common },
+    { id: `${prefix}-cbe-quantitative-aptitude-sectional-${n}`, name: `Quantitative Aptitude Sectional Test ${n}`, kind: 'sectional', section: 'Quantitative Aptitude', duration: 15, ...common },
+    { id: `${prefix}-cbe-english-language-sectional-${n}`, name: `English Language Sectional Test ${n}`, kind: 'sectional', section: 'English Language', duration: 15, ...common },
   ];
+  if (testNumber === 1) {
+    tests.push(
+      { id: `${prefix}-cbe-quick-10min`, name: `${level} Quick Test (10 Minutes)`, kind: 'quick', duration: 10, ...common },
+      { id: `${prefix}-cbe-quick-15min`, name: `${level} Quick Test (15 Minutes)`, kind: 'quick', duration: 15, ...common },
+    );
+  }
+  return tests;
 }
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
@@ -3806,6 +3812,61 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '6 August 2026',
           },
+          {
+            id: 'phase-1-full-mock-2',
+            name: 'Phase I Full Mock Test 2',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 120,
+            sectionDuration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '23 August 2026',
+          },
+          {
+            id: 'phase-1-general-awareness-sectional-2',
+            name: 'General Awareness Sectional Test 2',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '23 August 2026',
+          },
+          {
+            id: 'phase-1-english-language-sectional-2',
+            name: 'English Language Sectional Test 2',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'English Language',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '23 August 2026',
+          },
+          {
+            id: 'phase-1-quantitative-aptitude-sectional-2',
+            name: 'Quantitative Aptitude Sectional Test 2',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Quantitative Aptitude',
+            duration: 25,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '23 August 2026',
+          },
+          {
+            id: 'phase-1-reasoning-sectional-2',
+            name: 'Reasoning Sectional Test 2',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'Reasoning',
+            duration: 45,
+            marksPerCorrect: 1,
+            negativeMarking: 0.25,
+            checkedOn: '23 August 2026',
+          },
         ],
       },
       {
@@ -5713,7 +5774,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
           checkedOn: '9 August 2026',
         },
-        tests: selectionPostTests('Matriculation Level', 'matriculation'),
+        tests: [
+          ...selectionPostTests('Matriculation Level', 'matriculation'),
+          ...selectionPostTests('Matriculation Level', 'matriculation', 2, '23 August 2026'),
+        ],
       },
       {
         id: 'higher-secondary',
@@ -5737,7 +5801,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
           checkedOn: '9 August 2026',
         },
-        tests: selectionPostTests('Higher Secondary Level', 'higher-secondary'),
+        tests: [
+          ...selectionPostTests('Higher Secondary Level', 'higher-secondary'),
+          ...selectionPostTests('Higher Secondary Level', 'higher-secondary', 2, '23 August 2026'),
+        ],
       },
       {
         id: 'graduation',
@@ -5761,7 +5828,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           sourceUrl: SSC_SELECTION_POST_2026_NOTICE,
           checkedOn: '9 August 2026',
         },
-        tests: selectionPostTests('Graduation Level', 'graduation'),
+        tests: [
+          ...selectionPostTests('Graduation Level', 'graduation'),
+          ...selectionPostTests('Graduation Level', 'graduation', 2, '23 August 2026'),
+        ],
       },
     ],
   },

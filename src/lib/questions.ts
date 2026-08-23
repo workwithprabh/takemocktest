@@ -176,6 +176,10 @@ import { RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/rbi-gr
 import { RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-grade-b-phase-1-english-language-1';
 import { RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/rbi-grade-b-phase-1-quantitative-aptitude-1';
 import { RBI_GRADE_B_PHASE_1_REASONING_1 } from './question-banks/rbi-grade-b-phase-1-reasoning-1';
+import { RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_2 } from './question-banks/rbi-grade-b-phase-1-general-awareness-2';
+import { RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_2 } from './question-banks/rbi-grade-b-phase-1-english-language-2';
+import { RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_2 } from './question-banks/rbi-grade-b-phase-1-quantitative-aptitude-2';
+import { RBI_GRADE_B_PHASE_1_REASONING_2 } from './question-banks/rbi-grade-b-phase-1-reasoning-2';
 import { NABARD_GRADE_A_PHASE_1_REASONING_1 } from './question-banks/nabard-grade-a-phase-1-reasoning-1';
 import { NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/nabard-grade-a-phase-1-english-language-1';
 import { NABARD_GRADE_A_PHASE_1_COMPUTER_KNOWLEDGE_1 } from './question-banks/nabard-grade-a-phase-1-computer-knowledge-1';
@@ -260,6 +264,9 @@ import { RRB_PARAMEDICAL_GENERAL_SCIENCE_1 } from './question-banks/rrb-paramedi
 import { SSC_SELECTION_POST_MATRICULATION_CBE_1 } from './question-banks/ssc-selection-post-matriculation-cbe-1';
 import { SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1 } from './question-banks/ssc-selection-post-higher-secondary-cbe-1';
 import { SSC_SELECTION_POST_GRADUATION_CBE_1 } from './question-banks/ssc-selection-post-graduation-cbe-1';
+import { SSC_SELECTION_POST_MATRICULATION_CBE_2 } from './question-banks/ssc-selection-post-matriculation-cbe-2';
+import { SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_2 } from './question-banks/ssc-selection-post-higher-secondary-cbe-2';
+import { SSC_SELECTION_POST_GRADUATION_CBE_2 } from './question-banks/ssc-selection-post-graduation-cbe-2';
 import { BITSAT_2026_MATHEMATICS_PHYSICS_1 } from './question-banks/bitsat-2026-mathematics-physics-1';
 import { BITSAT_2026_MATHEMATICS_CHEMISTRY_1 } from './question-banks/bitsat-2026-mathematics-chemistry-1';
 import { BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_1 } from './question-banks/bitsat-2026-mathematics-english-proficiency-1';
@@ -900,6 +907,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rbi-grade-b/phase-1-english-language-sectional-1': RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
   'rbi-grade-b/phase-1-quantitative-aptitude-sectional-1': RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1,
   'rbi-grade-b/phase-1-reasoning-sectional-1': RBI_GRADE_B_PHASE_1_REASONING_1,
+  'rbi-grade-b/phase-1-full-mock-2': [
+    ...RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_2,
+    ...RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_2,
+    ...RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_2,
+    ...RBI_GRADE_B_PHASE_1_REASONING_2,
+  ],
+  'rbi-grade-b/phase-1-general-awareness-sectional-2': RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_2,
+  'rbi-grade-b/phase-1-english-language-sectional-2': RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_2,
+  'rbi-grade-b/phase-1-quantitative-aptitude-sectional-2': RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_2,
+  'rbi-grade-b/phase-1-reasoning-sectional-2': RBI_GRADE_B_PHASE_1_REASONING_2,
   'nabard-grade-a/phase-1-full-mock-1': [
     ...NABARD_GRADE_A_PHASE_1_REASONING_1,
     ...NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_1,
@@ -1473,23 +1490,30 @@ const SSC_CHT_PAPER_1_QUICK_TESTS: Record<string, Question[]> = {
 };
 
 const SSC_SELECTION_POST_SECTIONS = ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'];
-function selectionPostLevelBanks(prefix: string, bank: Question[]): Record<string, Question[]> {
+function selectionPostLevelBanks(prefix: string, bank: Question[], testNumber = 1): Record<string, Question[]> {
   const sections = Object.fromEntries(SSC_SELECTION_POST_SECTIONS.map((section) => [section, bank.filter((question) => question.section === section)]));
   const mixed = (perSection: number, offset: number) => SSC_SELECTION_POST_SECTIONS.flatMap((section) => sections[section].slice(offset, offset + perSection));
-  return {
-    [`ssc-selection-post/${prefix}-cbe-full-mock-1`]: bank,
-    [`ssc-selection-post/${prefix}-cbe-general-intelligence-sectional-1`]: sections['General Intelligence'],
-    [`ssc-selection-post/${prefix}-cbe-general-awareness-sectional-1`]: sections['General Awareness'],
-    [`ssc-selection-post/${prefix}-cbe-quantitative-aptitude-sectional-1`]: sections['Quantitative Aptitude'],
-    [`ssc-selection-post/${prefix}-cbe-english-language-sectional-1`]: sections['English Language'],
-    [`ssc-selection-post/${prefix}-cbe-quick-10min`]: mixed(4, 0),
-    [`ssc-selection-post/${prefix}-cbe-quick-15min`]: mixed(6, 4),
+  const n = testNumber;
+  const banks: Record<string, Question[]> = {
+    [`ssc-selection-post/${prefix}-cbe-full-mock-${n}`]: bank,
+    [`ssc-selection-post/${prefix}-cbe-general-intelligence-sectional-${n}`]: sections['General Intelligence'],
+    [`ssc-selection-post/${prefix}-cbe-general-awareness-sectional-${n}`]: sections['General Awareness'],
+    [`ssc-selection-post/${prefix}-cbe-quantitative-aptitude-sectional-${n}`]: sections['Quantitative Aptitude'],
+    [`ssc-selection-post/${prefix}-cbe-english-language-sectional-${n}`]: sections['English Language'],
   };
+  if (testNumber === 1) {
+    banks[`ssc-selection-post/${prefix}-cbe-quick-10min`] = mixed(4, 0);
+    banks[`ssc-selection-post/${prefix}-cbe-quick-15min`] = mixed(6, 4);
+  }
+  return banks;
 }
 const SSC_SELECTION_POST_TESTS = {
   ...selectionPostLevelBanks('matriculation', SSC_SELECTION_POST_MATRICULATION_CBE_1),
   ...selectionPostLevelBanks('higher-secondary', SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1),
   ...selectionPostLevelBanks('graduation', SSC_SELECTION_POST_GRADUATION_CBE_1),
+  ...selectionPostLevelBanks('matriculation', SSC_SELECTION_POST_MATRICULATION_CBE_2, 2),
+  ...selectionPostLevelBanks('higher-secondary', SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_2, 2),
+  ...selectionPostLevelBanks('graduation', SSC_SELECTION_POST_GRADUATION_CBE_2, 2),
 };
 
 const BITSAT_2026_MATHEMATICS_BANKS = [
