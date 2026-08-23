@@ -137,6 +137,9 @@ import { RPF_CONSTABLE_CBT_GENERAL_AWARENESS_2 } from './question-banks/rpf-cons
 import { RPF_SI_CBT_ARITHMETIC_1 } from './question-banks/rpf-si-cbt-arithmetic-1';
 import { RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rpf-si-cbt-general-intelligence-reasoning-1';
 import { RPF_SI_CBT_GENERAL_AWARENESS_1 } from './question-banks/rpf-si-cbt-general-awareness-1';
+import { RPF_SI_CBT_ARITHMETIC_2 } from './question-banks/rpf-si-cbt-arithmetic-2';
+import { RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rpf-si-cbt-general-intelligence-reasoning-2';
+import { RPF_SI_CBT_GENERAL_AWARENESS_2 } from './question-banks/rpf-si-cbt-general-awareness-2';
 import { SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-je-paper-1-general-intelligence-reasoning-1';
 import { SSC_JE_PAPER_1_GENERAL_AWARENESS_1 } from './question-banks/ssc-je-paper-1-general-awareness-1';
 import { SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/ssc-je-paper-1-general-intelligence-reasoning-2';
@@ -150,9 +153,16 @@ import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-ban
 import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-1';
 import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-1';
 import { SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1 } from './question-banks/ssc-cpo-paper-1-english-comprehension-1';
+import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/ssc-cpo-paper-1-general-intelligence-reasoning-2';
+import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_2 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-2';
+import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_2 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-2';
+import { SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_2 } from './question-banks/ssc-cpo-paper-1-english-comprehension-2';
 import { IBPS_SO_PRELIMS_REASONING_1 } from './question-banks/ibps-so-prelims-reasoning-1';
 import { IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-so-prelims-quantitative-aptitude-1';
 import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-so-prelims-english-language-1';
+import { IBPS_SO_PRELIMS_REASONING_2 } from './question-banks/ibps-so-prelims-reasoning-2';
+import { IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/ibps-so-prelims-quantitative-aptitude-2';
+import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-so-prelims-english-language-2';
 import { RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/rbi-grade-b-phase-1-general-awareness-1';
 import { RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-grade-b-phase-1-english-language-1';
 import { RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/rbi-grade-b-phase-1-quantitative-aptitude-1';
@@ -757,6 +767,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rpf-si/cbt-arithmetic-sectional-1': RPF_SI_CBT_ARITHMETIC_1,
   'rpf-si/cbt-general-intelligence-reasoning-sectional-1': RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1,
   'rpf-si/cbt-general-awareness-sectional-1': RPF_SI_CBT_GENERAL_AWARENESS_1,
+  'rpf-si/cbt-full-mock-2': [
+    ...RPF_SI_CBT_ARITHMETIC_2,
+    ...RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+    ...RPF_SI_CBT_GENERAL_AWARENESS_2,
+  ],
+  'rpf-si/cbt-arithmetic-sectional-2': RPF_SI_CBT_ARITHMETIC_2,
+  'rpf-si/cbt-general-intelligence-reasoning-sectional-2': RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rpf-si/cbt-general-awareness-sectional-2': RPF_SI_CBT_GENERAL_AWARENESS_2,
   'ssc-je/paper-1-full-mock-1': [
     ...SSC_JE_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_JE_PAPER_1_GENERAL_AWARENESS_1,
@@ -793,6 +811,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-cpo/paper-1-general-knowledge-general-awareness-sectional-1': SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
   'ssc-cpo/paper-1-quantitative-aptitude-sectional-1': SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1,
   'ssc-cpo/paper-1-english-comprehension-sectional-1': SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_1,
+  'ssc-cpo/paper-1-full-mock-2': [
+    ...SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2,
+    ...SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_2,
+    ...SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_2,
+    ...SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_2,
+  ],
+  'ssc-cpo/paper-1-general-intelligence-reasoning-sectional-2': SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2,
+  'ssc-cpo/paper-1-general-knowledge-general-awareness-sectional-2': SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_2,
+  'ssc-cpo/paper-1-quantitative-aptitude-sectional-2': SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_2,
+  'ssc-cpo/paper-1-english-comprehension-sectional-2': SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_2,
   'ibps-so/prelims-full-mock-1': [
     ...IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1,
     ...IBPS_SO_PRELIMS_REASONING_1,
@@ -801,6 +829,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-so/prelims-english-language-sectional-1': IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1,
   'ibps-so/prelims-reasoning-sectional-1': IBPS_SO_PRELIMS_REASONING_1,
   'ibps-so/prelims-quantitative-aptitude-sectional-1': IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'ibps-so/prelims-full-mock-2': [
+    ...IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_2,
+    ...IBPS_SO_PRELIMS_REASONING_2,
+    ...IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_2,
+  ],
+  'ibps-so/prelims-english-language-sectional-2': IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_2,
+  'ibps-so/prelims-reasoning-sectional-2': IBPS_SO_PRELIMS_REASONING_2,
+  'ibps-so/prelims-quantitative-aptitude-sectional-2': IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_2,
   'rbi-grade-b/phase-1-full-mock-1': [
     ...RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1,
     ...RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
