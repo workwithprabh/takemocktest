@@ -43,6 +43,10 @@ import { IBPS_PO_MAINS_REASONING_1 } from './question-banks/ibps-po-mains-reason
 import { IBPS_PO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/ibps-po-mains-general-awareness-1';
 import { IBPS_PO_MAINS_ENGLISH_1 } from './question-banks/ibps-po-mains-english-1';
 import { IBPS_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1 } from './question-banks/ibps-po-mains-data-analysis-interpretation-1';
+import { IBPS_PO_MAINS_REASONING_2 } from './question-banks/ibps-po-mains-reasoning-2';
+import { IBPS_PO_MAINS_GENERAL_AWARENESS_2 } from './question-banks/ibps-po-mains-general-awareness-2';
+import { IBPS_PO_MAINS_ENGLISH_2 } from './question-banks/ibps-po-mains-english-2';
+import { IBPS_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_2 } from './question-banks/ibps-po-mains-data-analysis-interpretation-2';
 import { SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_1 } from './question-banks/ssc-chsl-tier1-general-intelligence-1';
 import { SSC_CHSL_TIER1_ENGLISH_LANGUAGE_1 } from './question-banks/ssc-chsl-tier1-english-language-1';
 import { SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-chsl-tier1-quantitative-aptitude-1';
@@ -152,6 +156,8 @@ import { SSC_STENO_CBT_GENERAL_AWARENESS_2 } from './question-banks/ssc-steno-cb
 import { SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_2 } from './question-banks/ssc-steno-cbt-english-language-comprehension-2';
 import { SSC_CHT_PAPER_1_GENERAL_HINDI_1 } from './question-banks/ssc-cht-paper-1-general-hindi-1';
 import { SSC_CHT_PAPER_1_GENERAL_ENGLISH_1 } from './question-banks/ssc-cht-paper-1-general-english-1';
+import { SSC_CHT_PAPER_1_GENERAL_HINDI_2 } from './question-banks/ssc-cht-paper-1-general-hindi-2';
+import { SSC_CHT_PAPER_1_GENERAL_ENGLISH_2 } from './question-banks/ssc-cht-paper-1-general-english-2';
 import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-cpo-paper-1-general-intelligence-reasoning-1';
 import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-1';
 import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-1';
@@ -239,6 +245,15 @@ import { RRB_TECHNICIAN_GRADE3_MATHEMATICS_1 } from './question-banks/rrb-techni
 import { RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-technician-grade3-general-intelligence-reasoning-1';
 import { RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_1 } from './question-banks/rrb-technician-grade3-general-science-1';
 import { RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1 } from './question-banks/rrb-technician-grade3-general-awareness-1';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_2 } from './question-banks/rrb-technician-grade1-signal-general-awareness-2';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rrb-technician-grade1-signal-general-intelligence-reasoning-2';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_2 } from './question-banks/rrb-technician-grade1-signal-computers-applications-2';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_MATHEMATICS_2 } from './question-banks/rrb-technician-grade1-signal-mathematics-2';
+import { RRB_TECHNICIAN_GRADE1_SIGNAL_BASIC_SCIENCE_ENGINEERING_2 } from './question-banks/rrb-technician-grade1-signal-basic-science-engineering-2';
+import { RRB_TECHNICIAN_GRADE3_MATHEMATICS_2 } from './question-banks/rrb-technician-grade3-mathematics-2';
+import { RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rrb-technician-grade3-general-intelligence-reasoning-2';
+import { RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_2 } from './question-banks/rrb-technician-grade3-general-science-2';
+import { RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_2 } from './question-banks/rrb-technician-grade3-general-awareness-2';
 import { RRB_PARAMEDICAL_GENERAL_AWARENESS_1 } from './question-banks/rrb-paramedical-general-awareness-1';
 import { RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1 } from './question-banks/rrb-paramedical-general-arithmetic-reasoning-1';
 import { RRB_PARAMEDICAL_GENERAL_SCIENCE_1 } from './question-banks/rrb-paramedical-general-science-1';
@@ -539,6 +554,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-po/mains-general-awareness-sectional-1': IBPS_PO_MAINS_GENERAL_AWARENESS_1,
   'ibps-po/mains-english-language-sectional-1': IBPS_PO_MAINS_ENGLISH_1,
   'ibps-po/mains-data-analysis-interpretation-sectional-1': IBPS_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1,
+  'ibps-po/mains-full-mock-2': [
+    ...IBPS_PO_MAINS_REASONING_2,
+    ...IBPS_PO_MAINS_GENERAL_AWARENESS_2,
+    ...IBPS_PO_MAINS_ENGLISH_2,
+    ...IBPS_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_2,
+  ],
+  'ibps-po/mains-reasoning-sectional-2': IBPS_PO_MAINS_REASONING_2,
+  'ibps-po/mains-general-awareness-sectional-2': IBPS_PO_MAINS_GENERAL_AWARENESS_2,
+  'ibps-po/mains-english-language-sectional-2': IBPS_PO_MAINS_ENGLISH_2,
+  'ibps-po/mains-data-analysis-interpretation-sectional-2': IBPS_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_2,
   'ssc-chsl/tier-1-full-mock-1': [
     ...SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_1,
     ...SSC_CHSL_TIER1_GENERAL_AWARENESS_1,
@@ -823,6 +848,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'ssc-cht/paper-1-general-hindi-sectional-1': SSC_CHT_PAPER_1_GENERAL_HINDI_1,
   'ssc-cht/paper-1-general-english-sectional-1': SSC_CHT_PAPER_1_GENERAL_ENGLISH_1,
+  'ssc-cht/paper-1-full-mock-2': [
+    ...SSC_CHT_PAPER_1_GENERAL_HINDI_2,
+    ...SSC_CHT_PAPER_1_GENERAL_ENGLISH_2,
+  ],
+  'ssc-cht/paper-1-general-hindi-sectional-2': SSC_CHT_PAPER_1_GENERAL_HINDI_2,
+  'ssc-cht/paper-1-general-english-sectional-2': SSC_CHT_PAPER_1_GENERAL_ENGLISH_2,
   'ssc-cpo/paper-1-full-mock-1': [
     ...SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_1,
@@ -1029,6 +1060,18 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-technician/grade-1-signal-computers-applications-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_1,
   'rrb-technician/grade-1-signal-mathematics-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_MATHEMATICS_1,
   'rrb-technician/grade-1-signal-basic-science-engineering-sectional-1': RRB_TECHNICIAN_GRADE1_SIGNAL_BASIC_SCIENCE_ENGINEERING_1,
+  'rrb-technician/grade-1-signal-full-mock-2': [
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_2,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_2,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_2,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_MATHEMATICS_2,
+    ...RRB_TECHNICIAN_GRADE1_SIGNAL_BASIC_SCIENCE_ENGINEERING_2,
+  ],
+  'rrb-technician/grade-1-signal-general-awareness-sectional-2': RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_2,
+  'rrb-technician/grade-1-signal-general-intelligence-reasoning-sectional-2': RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-technician/grade-1-signal-computers-applications-sectional-2': RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_2,
+  'rrb-technician/grade-1-signal-mathematics-sectional-2': RRB_TECHNICIAN_GRADE1_SIGNAL_MATHEMATICS_2,
+  'rrb-technician/grade-1-signal-basic-science-engineering-sectional-2': RRB_TECHNICIAN_GRADE1_SIGNAL_BASIC_SCIENCE_ENGINEERING_2,
   'rrb-technician/grade-3-full-mock-1': [
     ...RRB_TECHNICIAN_GRADE3_MATHEMATICS_1,
     ...RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1,
@@ -1039,6 +1082,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-technician/grade-3-general-intelligence-reasoning-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_1,
   'rrb-technician/grade-3-general-science-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_1,
   'rrb-technician/grade-3-general-awareness-sectional-1': RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_1,
+  'rrb-technician/grade-3-full-mock-2': [
+    ...RRB_TECHNICIAN_GRADE3_MATHEMATICS_2,
+    ...RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_2,
+    ...RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_2,
+    ...RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_2,
+  ],
+  'rrb-technician/grade-3-mathematics-sectional-2': RRB_TECHNICIAN_GRADE3_MATHEMATICS_2,
+  'rrb-technician/grade-3-general-intelligence-reasoning-sectional-2': RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-technician/grade-3-general-science-sectional-2': RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_2,
+  'rrb-technician/grade-3-general-awareness-sectional-2': RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_2,
   'rrb-paramedical/cbt-general-awareness-sectional-1': RRB_PARAMEDICAL_GENERAL_AWARENESS_1,
   'rrb-paramedical/cbt-general-arithmetic-reasoning-sectional-1': RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1,
   'rrb-paramedical/cbt-general-science-sectional-1': RRB_PARAMEDICAL_GENERAL_SCIENCE_1,
