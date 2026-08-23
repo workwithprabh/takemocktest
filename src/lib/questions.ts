@@ -147,6 +147,9 @@ import { SSC_JE_PAPER_1_GENERAL_AWARENESS_2 } from './question-banks/ssc-je-pape
 import { SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-steno-cbt-general-intelligence-reasoning-1';
 import { SSC_STENO_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-steno-cbt-general-awareness-1';
 import { SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-steno-cbt-english-language-comprehension-1';
+import { SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/ssc-steno-cbt-general-intelligence-reasoning-2';
+import { SSC_STENO_CBT_GENERAL_AWARENESS_2 } from './question-banks/ssc-steno-cbt-general-awareness-2';
+import { SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_2 } from './question-banks/ssc-steno-cbt-english-language-comprehension-2';
 import { SSC_CHT_PAPER_1_GENERAL_HINDI_1 } from './question-banks/ssc-cht-paper-1-general-hindi-1';
 import { SSC_CHT_PAPER_1_GENERAL_ENGLISH_1 } from './question-banks/ssc-cht-paper-1-general-english-1';
 import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-cpo-paper-1-general-intelligence-reasoning-1';
@@ -209,6 +212,10 @@ import { NIACL_AO_MAINS_REASONING_1 } from './question-banks/niacl-ao-mains-reas
 import { NIACL_AO_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-mains-english-language-1';
 import { NIACL_AO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/niacl-ao-mains-general-awareness-1';
 import { NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/niacl-ao-mains-quantitative-aptitude-1';
+import { NIACL_AO_MAINS_REASONING_2 } from './question-banks/niacl-ao-mains-reasoning-2';
+import { NIACL_AO_MAINS_ENGLISH_LANGUAGE_2 } from './question-banks/niacl-ao-mains-english-language-2';
+import { NIACL_AO_MAINS_GENERAL_AWARENESS_2 } from './question-banks/niacl-ao-mains-general-awareness-2';
+import { NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_2 } from './question-banks/niacl-ao-mains-quantitative-aptitude-2';
 import { RRB_ALP_CBT1_MATHEMATICS_1 } from './question-banks/rrb-alp-cbt1-mathematics-1';
 import { RRB_ALP_CBT1_MENTAL_ABILITY_1 } from './question-banks/rrb-alp-cbt1-mental-ability-1';
 import { RRB_ALP_CBT1_GENERAL_SCIENCE_1 } from './question-banks/rrb-alp-cbt1-general-science-1';
@@ -216,6 +223,13 @@ import { RRB_ALP_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-alp-cbt1-
 import { RRB_ALP_CBT2_MATHEMATICS_1 } from './question-banks/rrb-alp-cbt2-mathematics-1';
 import { RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-alp-cbt2-general-intelligence-reasoning-1';
 import { RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_1 } from './question-banks/rrb-alp-cbt2-basic-science-engineering-1';
+import { RRB_ALP_CBT1_MATHEMATICS_2 } from './question-banks/rrb-alp-cbt1-mathematics-2';
+import { RRB_ALP_CBT1_MENTAL_ABILITY_2 } from './question-banks/rrb-alp-cbt1-mental-ability-2';
+import { RRB_ALP_CBT1_GENERAL_SCIENCE_2 } from './question-banks/rrb-alp-cbt1-general-science-2';
+import { RRB_ALP_CBT1_GENERAL_AWARENESS_2 } from './question-banks/rrb-alp-cbt1-general-awareness-2';
+import { RRB_ALP_CBT2_MATHEMATICS_2 } from './question-banks/rrb-alp-cbt2-mathematics-2';
+import { RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rrb-alp-cbt2-general-intelligence-reasoning-2';
+import { RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_2 } from './question-banks/rrb-alp-cbt2-basic-science-engineering-2';
 import { RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_1 } from './question-banks/rrb-technician-grade1-signal-general-awareness-1';
 import { RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-technician-grade1-signal-general-intelligence-reasoning-1';
 import { RRB_TECHNICIAN_GRADE1_SIGNAL_COMPUTERS_APPLICATIONS_1 } from './question-banks/rrb-technician-grade1-signal-computers-applications-1';
@@ -795,6 +809,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-steno/cbt-general-intelligence-reasoning-sectional-1': SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1,
   'ssc-steno/cbt-general-awareness-sectional-1': SSC_STENO_CBT_GENERAL_AWARENESS_1,
   'ssc-steno/cbt-english-language-comprehension-sectional-1': SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_1,
+  'ssc-steno/cbt-full-mock-2': [
+    ...SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+    ...SSC_STENO_CBT_GENERAL_AWARENESS_2,
+    ...SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_2,
+  ],
+  'ssc-steno/cbt-general-intelligence-reasoning-sectional-2': SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'ssc-steno/cbt-general-awareness-sectional-2': SSC_STENO_CBT_GENERAL_AWARENESS_2,
+  'ssc-steno/cbt-english-language-comprehension-sectional-2': SSC_STENO_CBT_ENGLISH_LANGUAGE_COMPREHENSION_2,
   'ssc-cht/paper-1-full-mock-1': [
     ...SSC_CHT_PAPER_1_GENERAL_HINDI_1,
     ...SSC_CHT_PAPER_1_GENERAL_ENGLISH_1,
@@ -949,6 +971,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'niacl-ao/mains-english-language-sectional-1': NIACL_AO_MAINS_ENGLISH_LANGUAGE_1,
   'niacl-ao/mains-general-awareness-sectional-1': NIACL_AO_MAINS_GENERAL_AWARENESS_1,
   'niacl-ao/mains-quantitative-aptitude-sectional-1': NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_1,
+  'niacl-ao/mains-full-mock-2': [
+    ...NIACL_AO_MAINS_REASONING_2,
+    ...NIACL_AO_MAINS_ENGLISH_LANGUAGE_2,
+    ...NIACL_AO_MAINS_GENERAL_AWARENESS_2,
+    ...NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_2,
+  ],
+  'niacl-ao/mains-reasoning-sectional-2': NIACL_AO_MAINS_REASONING_2,
+  'niacl-ao/mains-english-language-sectional-2': NIACL_AO_MAINS_ENGLISH_LANGUAGE_2,
+  'niacl-ao/mains-general-awareness-sectional-2': NIACL_AO_MAINS_GENERAL_AWARENESS_2,
+  'niacl-ao/mains-quantitative-aptitude-sectional-2': NIACL_AO_MAINS_QUANTITATIVE_APTITUDE_2,
   'rrb-alp/cbt-1-full-mock-1': [
     ...RRB_ALP_CBT1_MATHEMATICS_1,
     ...RRB_ALP_CBT1_MENTAL_ABILITY_1,
@@ -959,6 +991,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-alp/cbt-1-mental-ability-sectional-1': RRB_ALP_CBT1_MENTAL_ABILITY_1,
   'rrb-alp/cbt-1-general-science-sectional-1': RRB_ALP_CBT1_GENERAL_SCIENCE_1,
   'rrb-alp/cbt-1-general-awareness-sectional-1': RRB_ALP_CBT1_GENERAL_AWARENESS_1,
+  'rrb-alp/cbt-1-full-mock-2': [
+    ...RRB_ALP_CBT1_MATHEMATICS_2,
+    ...RRB_ALP_CBT1_MENTAL_ABILITY_2,
+    ...RRB_ALP_CBT1_GENERAL_SCIENCE_2,
+    ...RRB_ALP_CBT1_GENERAL_AWARENESS_2,
+  ],
+  'rrb-alp/cbt-1-mathematics-sectional-2': RRB_ALP_CBT1_MATHEMATICS_2,
+  'rrb-alp/cbt-1-mental-ability-sectional-2': RRB_ALP_CBT1_MENTAL_ABILITY_2,
+  'rrb-alp/cbt-1-general-science-sectional-2': RRB_ALP_CBT1_GENERAL_SCIENCE_2,
+  'rrb-alp/cbt-1-general-awareness-sectional-2': RRB_ALP_CBT1_GENERAL_AWARENESS_2,
   'rrb-alp/cbt-2-full-mock-1': [
     ...RRB_ALP_CBT2_MATHEMATICS_1,
     ...RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1,
@@ -967,6 +1009,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-alp/cbt-2-mathematics-sectional-1': RRB_ALP_CBT2_MATHEMATICS_1,
   'rrb-alp/cbt-2-general-intelligence-reasoning-sectional-1': RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1,
   'rrb-alp/cbt-2-basic-science-engineering-sectional-1': RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_1,
+  'rrb-alp/cbt-2-full-mock-2': [
+    ...RRB_ALP_CBT2_MATHEMATICS_2,
+    ...RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_2,
+    ...RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_2,
+  ],
+  'rrb-alp/cbt-2-mathematics-sectional-2': RRB_ALP_CBT2_MATHEMATICS_2,
+  'rrb-alp/cbt-2-general-intelligence-reasoning-sectional-2': RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-alp/cbt-2-basic-science-engineering-sectional-2': RRB_ALP_CBT2_BASIC_SCIENCE_ENGINEERING_2,
   'rrb-technician/grade-1-signal-full-mock-1': [
     ...RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_AWARENESS_1,
     ...RRB_TECHNICIAN_GRADE1_SIGNAL_GENERAL_INTELLIGENCE_REASONING_1,
