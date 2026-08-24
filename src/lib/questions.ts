@@ -310,6 +310,12 @@ import { JEE_ADVANCED_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-advanced-
 import { JEE_ADVANCED_PAPER_2_MATHEMATICS_1 } from './question-banks/jee-advanced-paper-2-mathematics-1';
 import { JEE_ADVANCED_PAPER_2_PHYSICS_1 } from './question-banks/jee-advanced-paper-2-physics-1';
 import { JEE_ADVANCED_PAPER_2_CHEMISTRY_1 } from './question-banks/jee-advanced-paper-2-chemistry-1';
+import { JEE_ADVANCED_PAPER_1_MATHEMATICS_2 } from './question-banks/jee-advanced-paper-1-mathematics-2';
+import { JEE_ADVANCED_PAPER_1_PHYSICS_2 } from './question-banks/jee-advanced-paper-1-physics-2';
+import { JEE_ADVANCED_PAPER_1_CHEMISTRY_2 } from './question-banks/jee-advanced-paper-1-chemistry-2';
+import { JEE_ADVANCED_PAPER_2_MATHEMATICS_2 } from './question-banks/jee-advanced-paper-2-mathematics-2';
+import { JEE_ADVANCED_PAPER_2_PHYSICS_2 } from './question-banks/jee-advanced-paper-2-physics-2';
+import { JEE_ADVANCED_PAPER_2_CHEMISTRY_2 } from './question-banks/jee-advanced-paper-2-chemistry-2';
 import { VITEEE_2026_MPCEA_FULL_MOCK_1 } from './question-banks/viteee-2026-mpcea-full-mock-1';
 import { VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_1 } from './question-banks/viteee-2026-mpcea-mathematics-sectional-1';
 import { VITEEE_2026_MPCEA_PHYSICS_SECTIONAL_1 } from './question-banks/viteee-2026-mpcea-physics-sectional-1';
@@ -1637,6 +1643,8 @@ const JEE_MAIN_TESTS: Record<string, Question[]> = {
 
 const JEE_ADVANCED_PAPER_1_BANKS = [JEE_ADVANCED_PAPER_1_MATHEMATICS_1, JEE_ADVANCED_PAPER_1_PHYSICS_1, JEE_ADVANCED_PAPER_1_CHEMISTRY_1];
 const JEE_ADVANCED_PAPER_2_BANKS = [JEE_ADVANCED_PAPER_2_MATHEMATICS_1, JEE_ADVANCED_PAPER_2_PHYSICS_1, JEE_ADVANCED_PAPER_2_CHEMISTRY_1];
+const JEE_ADVANCED_PAPER_1_BANKS_2 = [JEE_ADVANCED_PAPER_1_MATHEMATICS_2, JEE_ADVANCED_PAPER_1_PHYSICS_2, JEE_ADVANCED_PAPER_1_CHEMISTRY_2];
+const JEE_ADVANCED_PAPER_2_BANKS_2 = [JEE_ADVANCED_PAPER_2_MATHEMATICS_2, JEE_ADVANCED_PAPER_2_PHYSICS_2, JEE_ADVANCED_PAPER_2_CHEMISTRY_2];
 const VITEEE_TESTS: Record<string, Question[]> = {
   'viteee/full-mock-1': VITEEE_2026_MPCEA_FULL_MOCK_1,
   'viteee/mathematics-sectional-1': VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_1,
@@ -1701,6 +1709,14 @@ const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-2-mathematics-sectional-1': JEE_ADVANCED_PAPER_2_MATHEMATICS_1,
   'jee-advanced/paper-2-physics-sectional-1': JEE_ADVANCED_PAPER_2_PHYSICS_1,
   'jee-advanced/paper-2-chemistry-sectional-1': JEE_ADVANCED_PAPER_2_CHEMISTRY_1,
+  'jee-advanced/paper-1-full-mock-2': JEE_ADVANCED_PAPER_1_BANKS_2.flat(),
+  'jee-advanced/paper-1-mathematics-sectional-2': JEE_ADVANCED_PAPER_1_MATHEMATICS_2,
+  'jee-advanced/paper-1-physics-sectional-2': JEE_ADVANCED_PAPER_1_PHYSICS_2,
+  'jee-advanced/paper-1-chemistry-sectional-2': JEE_ADVANCED_PAPER_1_CHEMISTRY_2,
+  'jee-advanced/paper-2-full-mock-2': JEE_ADVANCED_PAPER_2_BANKS_2.flat(),
+  'jee-advanced/paper-2-mathematics-sectional-2': JEE_ADVANCED_PAPER_2_MATHEMATICS_2,
+  'jee-advanced/paper-2-physics-sectional-2': JEE_ADVANCED_PAPER_2_PHYSICS_2,
+  'jee-advanced/paper-2-chemistry-sectional-2': JEE_ADVANCED_PAPER_2_CHEMISTRY_2,
 };
 
 const SRMJEEE_TESTS: Record<string, Question[]> = {
