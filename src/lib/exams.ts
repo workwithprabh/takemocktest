@@ -6193,6 +6193,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'mathematics-full-mock-1', name: 'Mathematics Variant Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '11 August 2026' },
+          { id: 'mathematics-full-mock-2', name: 'Mathematics Variant Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '24 August 2026' },
         ],
       },
     ],
