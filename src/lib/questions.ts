@@ -301,6 +301,9 @@ import { BITSAT_2026_MATHEMATICS_MATHEMATICS_1 } from './question-banks/bitsat-2
 import { JEE_MAIN_PAPER_1_MATHEMATICS_1 } from './question-banks/jee-main-paper-1-mathematics-1';
 import { JEE_MAIN_PAPER_1_PHYSICS_1 } from './question-banks/jee-main-paper-1-physics-1';
 import { JEE_MAIN_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-main-paper-1-chemistry-1';
+import { JEE_MAIN_PAPER_1_MATHEMATICS_2 } from './question-banks/jee-main-paper-1-mathematics-2';
+import { JEE_MAIN_PAPER_1_PHYSICS_2 } from './question-banks/jee-main-paper-1-physics-2';
+import { JEE_MAIN_PAPER_1_CHEMISTRY_2 } from './question-banks/jee-main-paper-1-chemistry-2';
 import { JEE_ADVANCED_PAPER_1_MATHEMATICS_1 } from './question-banks/jee-advanced-paper-1-mathematics-1';
 import { JEE_ADVANCED_PAPER_1_PHYSICS_1 } from './question-banks/jee-advanced-paper-1-physics-1';
 import { JEE_ADVANCED_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-advanced-paper-1-chemistry-1';
@@ -1618,6 +1621,7 @@ const jeeMainQuick = (mcqCount: number, numericalCount: number, offset: number) 
   ...bank.slice(offset, offset + mcqCount),
   ...bank.slice(20, 20 + numericalCount),
 ]);
+const JEE_MAIN_BANKS_2 = [JEE_MAIN_PAPER_1_MATHEMATICS_2, JEE_MAIN_PAPER_1_PHYSICS_2, JEE_MAIN_PAPER_1_CHEMISTRY_2];
 const JEE_MAIN_TESTS: Record<string, Question[]> = {
   'jee-main/paper-1-full-mock-1': JEE_MAIN_BANKS.flat(),
   'jee-main/paper-1-mathematics-sectional-1': JEE_MAIN_PAPER_1_MATHEMATICS_1,
@@ -1625,6 +1629,10 @@ const JEE_MAIN_TESTS: Record<string, Question[]> = {
   'jee-main/paper-1-chemistry-sectional-1': JEE_MAIN_PAPER_1_CHEMISTRY_1,
   'jee-main/paper-1-quick-30min': jeeMainQuick(3, 1, 0),
   'jee-main/paper-1-quick-60min': jeeMainQuick(6, 2, 6),
+  'jee-main/paper-1-full-mock-2': JEE_MAIN_BANKS_2.flat(),
+  'jee-main/paper-1-mathematics-sectional-2': JEE_MAIN_PAPER_1_MATHEMATICS_2,
+  'jee-main/paper-1-physics-sectional-2': JEE_MAIN_PAPER_1_PHYSICS_2,
+  'jee-main/paper-1-chemistry-sectional-2': JEE_MAIN_PAPER_1_CHEMISTRY_2,
 };
 
 const JEE_ADVANCED_PAPER_1_BANKS = [JEE_ADVANCED_PAPER_1_MATHEMATICS_1, JEE_ADVANCED_PAPER_1_PHYSICS_1, JEE_ADVANCED_PAPER_1_CHEMISTRY_1];
