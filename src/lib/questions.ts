@@ -298,6 +298,11 @@ import { BITSAT_2026_MATHEMATICS_CHEMISTRY_1 } from './question-banks/bitsat-202
 import { BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_1 } from './question-banks/bitsat-2026-mathematics-english-proficiency-1';
 import { BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_1 } from './question-banks/bitsat-2026-mathematics-logical-reasoning-1';
 import { BITSAT_2026_MATHEMATICS_MATHEMATICS_1 } from './question-banks/bitsat-2026-mathematics-mathematics-1';
+import { BITSAT_2026_MATHEMATICS_PHYSICS_2 } from './question-banks/bitsat-2026-mathematics-physics-2';
+import { BITSAT_2026_MATHEMATICS_CHEMISTRY_2 } from './question-banks/bitsat-2026-mathematics-chemistry-2';
+import { BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_2 } from './question-banks/bitsat-2026-mathematics-english-proficiency-2';
+import { BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_2 } from './question-banks/bitsat-2026-mathematics-logical-reasoning-2';
+import { BITSAT_2026_MATHEMATICS_MATHEMATICS_2 } from './question-banks/bitsat-2026-mathematics-mathematics-2';
 import { JEE_MAIN_PAPER_1_MATHEMATICS_1 } from './question-banks/jee-main-paper-1-mathematics-1';
 import { JEE_MAIN_PAPER_1_PHYSICS_1 } from './question-banks/jee-main-paper-1-physics-1';
 import { JEE_MAIN_PAPER_1_CHEMISTRY_1 } from './question-banks/jee-main-paper-1-chemistry-1';
@@ -1618,8 +1623,16 @@ const BITSAT_2026_MATHEMATICS_BANKS = [
   BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_1,
   BITSAT_2026_MATHEMATICS_MATHEMATICS_1,
 ];
+const BITSAT_2026_MATHEMATICS_BANKS_2 = [
+  BITSAT_2026_MATHEMATICS_PHYSICS_2,
+  BITSAT_2026_MATHEMATICS_CHEMISTRY_2,
+  BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_2,
+  BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_2,
+  BITSAT_2026_MATHEMATICS_MATHEMATICS_2,
+];
 const BITSAT_TESTS: Record<string, Question[]> = {
   'bitsat/mathematics-full-mock-1': BITSAT_2026_MATHEMATICS_BANKS.flat(),
+  'bitsat/mathematics-full-mock-2': BITSAT_2026_MATHEMATICS_BANKS_2.flat(),
 };
 
 const JEE_MAIN_BANKS = [JEE_MAIN_PAPER_1_MATHEMATICS_1, JEE_MAIN_PAPER_1_PHYSICS_1, JEE_MAIN_PAPER_1_CHEMISTRY_1];
