@@ -225,6 +225,13 @@ import { SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_1 } from './question-banks/s
 import { SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/sidbi-grade-a-b-phase-1-general-awareness-1';
 import { SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_1 } from './question-banks/sidbi-grade-a-b-phase-1-msme-policy-finance-1';
 import { SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1 } from './question-banks/sidbi-grade-a-b-phase-1-stream-specific-general-1';
+import { SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_2 } from './question-banks/sidbi-grade-a-b-phase-1-english-language-2';
+import { SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_2 } from './question-banks/sidbi-grade-a-b-phase-1-reasoning-aptitude-2';
+import { SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_2 } from './question-banks/sidbi-grade-a-b-phase-1-quantitative-aptitude-2';
+import { SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_2 } from './question-banks/sidbi-grade-a-b-phase-1-computer-knowledge-2';
+import { SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_2 } from './question-banks/sidbi-grade-a-b-phase-1-general-awareness-2';
+import { SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_2 } from './question-banks/sidbi-grade-a-b-phase-1-msme-policy-finance-2';
+import { SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_2 } from './question-banks/sidbi-grade-a-b-phase-1-stream-specific-general-2';
 import { LIC_AAO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/lic-aao-prelims-reasoning-ability-1';
 import { LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/lic-aao-prelims-quantitative-aptitude-1';
 import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/lic-aao-prelims-english-language-1';
@@ -1040,6 +1047,22 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sidbi-grade-a-b/phase-1-general-awareness-sectional-1': SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_1,
   'sidbi-grade-a-b/phase-1-msme-policy-finance-sectional-1': SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_1,
   'sidbi-grade-a-b/phase-1-stream-specific-sectional-1': SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_1,
+  'sidbi-grade-a-b/phase-1-full-mock-2': [
+    ...SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_2,
+    ...SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_2,
+    ...SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_2,
+    ...SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_2,
+    ...SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_2,
+    ...SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_2,
+    ...SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_2,
+  ],
+  'sidbi-grade-a-b/phase-1-english-language-sectional-2': SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_2,
+  'sidbi-grade-a-b/phase-1-reasoning-aptitude-sectional-2': SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_2,
+  'sidbi-grade-a-b/phase-1-quantitative-aptitude-sectional-2': SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_2,
+  'sidbi-grade-a-b/phase-1-computer-knowledge-sectional-2': SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_2,
+  'sidbi-grade-a-b/phase-1-general-awareness-sectional-2': SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_2,
+  'sidbi-grade-a-b/phase-1-msme-policy-finance-sectional-2': SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_2,
+  'sidbi-grade-a-b/phase-1-stream-specific-sectional-2': SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_2,
   'lic-aao/prelims-full-mock-1': [
     ...LIC_AAO_PRELIMS_REASONING_ABILITY_1,
     ...LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1,
