@@ -2,14 +2,14 @@
   "generatedAt": "2026-08-24",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 414,
-    "questions": 14472
+    "bankFiles": 422,
+    "questions": 14672
   },
   "topicSaturation": [
     {
       "section": "Quantitative Aptitude",
       "topic": "Profit and loss",
-      "questionCount": 90,
+      "questionCount": 92,
       "examCount": 19,
       "exams": [
         "aeee-2026",
@@ -36,7 +36,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Ratio and proportion",
-      "questionCount": 87,
+      "questionCount": 89,
       "examCount": 18,
       "exams": [
         "aeee-2026",
@@ -62,7 +62,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Time and work",
-      "questionCount": 84,
+      "questionCount": 86,
       "examCount": 18,
       "exams": [
         "aeee-2026",
@@ -88,7 +88,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Percentage",
-      "questionCount": 97,
+      "questionCount": 99,
       "examCount": 17,
       "exams": [
         "cat-varc",
@@ -113,7 +113,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Simple Interest",
-      "questionCount": 46,
+      "questionCount": 48,
       "examCount": 16,
       "exams": [
         "cat-varc",
@@ -137,7 +137,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Mensuration",
-      "questionCount": 76,
+      "questionCount": 77,
       "examCount": 15,
       "exams": [
         "cat-varc",
@@ -160,7 +160,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Number System",
-      "questionCount": 60,
+      "questionCount": 62,
       "examCount": 15,
       "exams": [
         "cat-varc",
@@ -183,7 +183,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Compound interest",
-      "questionCount": 35,
+      "questionCount": 36,
       "examCount": 15,
       "exams": [
         "ibps-po",
@@ -206,7 +206,7 @@
     {
       "section": "English Language",
       "topic": "Sentence improvement",
-      "questionCount": 60,
+      "questionCount": 62,
       "examCount": 13,
       "exams": [
         "ibps-clerk",
@@ -248,7 +248,7 @@
     {
       "section": "General Awareness",
       "topic": "Sports",
-      "questionCount": 76,
+      "questionCount": 77,
       "examCount": 12,
       "exams": [
         "nabard-grade",
@@ -268,7 +268,7 @@
     {
       "section": "English Language",
       "topic": "Cloze test",
-      "questionCount": 70,
+      "questionCount": 73,
       "examCount": 12,
       "exams": [
         "ibps-clerk",
@@ -288,7 +288,7 @@
     {
       "section": "English Language",
       "topic": "Reading comprehension",
-      "questionCount": 51,
+      "questionCount": 53,
       "examCount": 12,
       "exams": [
         "ibps-clerk",
@@ -423,6 +423,25 @@
       ]
     },
     {
+      "section": "Quantitative Aptitude",
+      "topic": "Average",
+      "questionCount": 64,
+      "examCount": 11,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "sbi-po",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-selection"
+      ]
+    },
+    {
       "section": "General Intelligence and Reasoning",
       "topic": "Analogy",
       "questionCount": 63,
@@ -439,25 +458,6 @@
         "ssc-gd",
         "ssc-je",
         "ssc-steno"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Average",
-      "questionCount": 62,
-      "examCount": 11,
-      "exams": [
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sbi-po",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-cgl",
-        "ssc-chsl",
-        "ssc-selection"
       ]
     },
     {
@@ -539,7 +539,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Data interpretation",
-      "questionCount": 49,
+      "questionCount": 51,
       "examCount": 11,
       "exams": [
         "aeee-2026",
@@ -577,7 +577,7 @@
     {
       "section": "English Language",
       "topic": "Active and passive voice",
-      "questionCount": 38,
+      "questionCount": 41,
       "examCount": 11,
       "exams": [
         "ibps-clerk",
@@ -615,7 +615,7 @@
     {
       "section": "English Language",
       "topic": "Direct and indirect speech",
-      "questionCount": 22,
+      "questionCount": 23,
       "examCount": 11,
       "exams": [
         "ibps-clerk",
@@ -634,7 +634,7 @@
     {
       "section": "General Awareness",
       "topic": "Indian Polity",
-      "questionCount": 112,
+      "questionCount": 113,
       "examCount": 10,
       "exams": [
         "nabard-grade",
@@ -741,7 +741,7 @@
     {
       "section": "General Awareness",
       "topic": "Geography",
-      "questionCount": 75,
+      "questionCount": 76,
       "examCount": 9,
       "exams": [
         "nabard-grade",
@@ -971,6 +971,22 @@
       ]
     },
     {
+      "section": "Quantitative Aptitude",
+      "topic": "Time and Distance",
+      "questionCount": 36,
+      "examCount": 8,
+      "exams": [
+        "ibps-so",
+        "nabard-grade",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-cgl",
+        "ssc-cpo",
+        "ssc-selection"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Permutations and combinations",
       "questionCount": 34,
@@ -984,22 +1000,6 @@
         "met-2026",
         "mht-cet",
         "tg-eapcet"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Time and Distance",
-      "questionCount": 34,
-      "examCount": 8,
-      "exams": [
-        "ibps-so",
-        "nabard-grade",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-cgl",
-        "ssc-cpo",
-        "ssc-selection"
       ]
     },
     {
@@ -1100,7 +1100,7 @@
     {
       "section": "Reasoning",
       "topic": "Coding-decoding",
-      "questionCount": 63,
+      "questionCount": 65,
       "examCount": 7,
       "exams": [
         "ibps-po",
@@ -1130,7 +1130,7 @@
     {
       "section": "Reasoning",
       "topic": "Syllogism",
-      "questionCount": 60,
+      "questionCount": 62,
       "examCount": 7,
       "exams": [
         "ibps-po",
@@ -1158,6 +1158,21 @@
       ]
     },
     {
+      "section": "Reasoning",
+      "topic": "Blood relations",
+      "questionCount": 57,
+      "examCount": 7,
+      "exams": [
+        "ibps-po",
+        "ibps-rrb",
+        "ibps-so",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "territorial-army"
+      ]
+    },
+    {
       "section": "English Language",
       "topic": "Antonym",
       "questionCount": 55,
@@ -1174,7 +1189,7 @@
     },
     {
       "section": "Reasoning",
-      "topic": "Blood relations",
+      "topic": "Direction sense",
       "questionCount": 55,
       "examCount": 7,
       "exams": [
@@ -1185,6 +1200,51 @@
         "niacl-ao",
         "rbi-grade",
         "territorial-army"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Antonyms",
+      "questionCount": 55,
+      "examCount": 7,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Fill in the Blanks",
+      "questionCount": 55,
+      "examCount": 7,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Synonyms",
+      "questionCount": 54,
+      "examCount": 7,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade"
       ]
     },
     {
@@ -1203,36 +1263,6 @@
       ]
     },
     {
-      "section": "Reasoning",
-      "topic": "Direction sense",
-      "questionCount": 53,
-      "examCount": 7,
-      "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "ibps-so",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "territorial-army"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Antonyms",
-      "questionCount": 53,
-      "examCount": 7,
-      "exams": [
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade"
-      ]
-    },
-    {
       "section": "Reasoning Ability",
       "topic": "Blood relations",
       "questionCount": 52,
@@ -1245,21 +1275,6 @@
         "rbi-assistant",
         "sbi-clerk",
         "sbi-po"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Synonyms",
-      "questionCount": 52,
-      "examCount": 7,
-      "exams": [
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade"
       ]
     },
     {
@@ -1279,21 +1294,6 @@
     },
     {
       "section": "English Language",
-      "topic": "Fill in the Blanks",
-      "questionCount": 51,
-      "examCount": 7,
-      "exams": [
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade"
-      ]
-    },
-    {
-      "section": "English Language",
       "topic": "One-word substitution",
       "questionCount": 48,
       "examCount": 7,
@@ -1305,6 +1305,21 @@
         "sbi-po",
         "ssc-chsl",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "One Word Substitution",
+      "questionCount": 47,
+      "examCount": 7,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade"
       ]
     },
     {
@@ -1324,23 +1339,8 @@
     },
     {
       "section": "English Language",
-      "topic": "One Word Substitution",
-      "questionCount": 44,
-      "examCount": 7,
-      "exams": [
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade"
-      ]
-    },
-    {
-      "section": "English Language",
       "topic": "Idioms and Phrases",
-      "questionCount": 42,
+      "questionCount": 45,
       "examCount": 7,
       "exams": [
         "ibps-so",
@@ -1365,6 +1365,21 @@
         "rbi-assistant",
         "sbi-clerk",
         "sbi-po"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Spelling Correction",
+      "questionCount": 40,
+      "examCount": 7,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade"
       ]
     },
     {
@@ -1395,21 +1410,6 @@
         "ssc-gd",
         "ssc-je",
         "ssc-steno"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Spelling Correction",
-      "questionCount": 38,
-      "examCount": 7,
-      "exams": [
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade"
       ]
     },
     {
@@ -1580,7 +1580,7 @@
     {
       "section": "Reasoning",
       "topic": "Classification",
-      "questionCount": 44,
+      "questionCount": 46,
       "examCount": 6,
       "exams": [
         "ibps-rrb",
@@ -1622,7 +1622,7 @@
     {
       "section": "Reasoning",
       "topic": "Puzzle",
-      "questionCount": 35,
+      "questionCount": 36,
       "examCount": 6,
       "exams": [
         "ibps-po",
@@ -2040,7 +2040,7 @@
     {
       "section": "Reasoning",
       "topic": "Number series",
-      "questionCount": 38,
+      "questionCount": 40,
       "examCount": 5,
       "exams": [
         "ibps-po",
@@ -2048,6 +2048,32 @@
         "nabard-grade",
         "niacl-ao",
         "territorial-army"
+      ]
+    },
+    {
+      "section": "Reasoning",
+      "topic": "Inequality",
+      "questionCount": 38,
+      "examCount": 5,
+      "exams": [
+        "ibps-rrb",
+        "ibps-so",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade"
+      ]
+    },
+    {
+      "section": "Reasoning",
+      "topic": "Alphanumeric series",
+      "questionCount": 37,
+      "examCount": 5,
+      "exams": [
+        "ibps-po",
+        "ibps-rrb",
+        "ibps-so",
+        "nabard-grade",
+        "rbi-grade"
       ]
     },
     {
@@ -2077,32 +2103,6 @@
       ]
     },
     {
-      "section": "Reasoning",
-      "topic": "Alphanumeric series",
-      "questionCount": 36,
-      "examCount": 5,
-      "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "ibps-so",
-        "nabard-grade",
-        "rbi-grade"
-      ]
-    },
-    {
-      "section": "Reasoning",
-      "topic": "Inequality",
-      "questionCount": 36,
-      "examCount": 5,
-      "exams": [
-        "ibps-rrb",
-        "ibps-so",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade"
-      ]
-    },
-    {
       "section": "Numerical Ability",
       "topic": "Simplification",
       "questionCount": 30,
@@ -2116,6 +2116,32 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Spot the Error",
+      "questionCount": 29,
+      "examCount": 5,
+      "exams": [
+        "ibps-so",
+        "nabard-grade",
+        "rbi-grade",
+        "sebi-grade",
+        "sidbi-grade"
+      ]
+    },
+    {
+      "section": "Reasoning",
+      "topic": "Data sufficiency",
+      "questionCount": 28,
+      "examCount": 5,
+      "exams": [
+        "ibps-po",
+        "ibps-so",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade"
+      ]
+    },
+    {
       "section": "Chemistry",
       "topic": "Alcohols, phenols and ethers",
       "questionCount": 27,
@@ -2126,19 +2152,6 @@
         "kcet-engineering",
         "mht-cet",
         "srmjeee-2026"
-      ]
-    },
-    {
-      "section": "Reasoning",
-      "topic": "Data sufficiency",
-      "questionCount": 27,
-      "examCount": 5,
-      "exams": [
-        "ibps-po",
-        "ibps-so",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade"
       ]
     },
     {
@@ -2165,19 +2178,6 @@
         "ibps-rrb",
         "rbi-assistant",
         "sbi-clerk"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Spot the Error",
-      "questionCount": 26,
-      "examCount": 5,
-      "exams": [
-        "ibps-so",
-        "nabard-grade",
-        "rbi-grade",
-        "sebi-grade",
-        "sidbi-grade"
       ]
     },
     {
@@ -2350,6 +2350,19 @@
       ]
     },
     {
+      "section": "Reasoning",
+      "topic": "Seating arrangement",
+      "questionCount": 16,
+      "examCount": 5,
+      "exams": [
+        "ibps-po",
+        "ibps-so",
+        "nabard-grade",
+        "niacl-ao",
+        "rbi-grade"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Parabola",
       "questionCount": 15,
@@ -2373,19 +2386,6 @@
         "rbi-assistant",
         "sbi-clerk",
         "sbi-po"
-      ]
-    },
-    {
-      "section": "Reasoning",
-      "topic": "Seating arrangement",
-      "questionCount": 15,
-      "examCount": 5,
-      "exams": [
-        "ibps-po",
-        "ibps-so",
-        "nabard-grade",
-        "niacl-ao",
-        "rbi-grade"
       ]
     },
     {
@@ -2663,7 +2663,7 @@
     {
       "section": "Reasoning",
       "topic": "Ranking and Order",
-      "questionCount": 28,
+      "questionCount": 30,
       "examCount": 4,
       "exams": [
         "ibps-so",
@@ -3263,7 +3263,7 @@
     {
       "section": "General Awareness",
       "topic": "Banking Awareness",
-      "questionCount": 76,
+      "questionCount": 78,
       "examCount": 3,
       "exams": [
         "nabard-grade",
@@ -3635,6 +3635,17 @@
       ]
     },
     {
+      "section": "General Awareness",
+      "topic": "International Organisations",
+      "questionCount": 11,
+      "examCount": 3,
+      "exams": [
+        "nabard-grade",
+        "rbi-grade",
+        "ssc-selection"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Simplification",
       "questionCount": 11,
@@ -3734,17 +3745,6 @@
       ]
     },
     {
-      "section": "General Awareness",
-      "topic": "International Organisations",
-      "questionCount": 10,
-      "examCount": 3,
-      "exams": [
-        "nabard-grade",
-        "rbi-grade",
-        "ssc-selection"
-      ]
-    },
-    {
       "section": "Chemistry",
       "topic": "d- and f-block elements",
       "questionCount": 9,
@@ -3797,6 +3797,17 @@
         "ibsat-verbal",
         "slat-logical",
         "tancet-mba"
+      ]
+    },
+    {
+      "section": "General Awareness",
+      "topic": "Government Schemes",
+      "questionCount": 9,
+      "examCount": 3,
+      "exams": [
+        "nabard-grade",
+        "rbi-grade",
+        "sidbi-grade"
       ]
     },
     {
@@ -3918,17 +3929,6 @@
         "jee-advanced",
         "jee-main",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "General Awareness",
-      "topic": "Government Schemes",
-      "questionCount": 8,
-      "examCount": 3,
-      "exams": [
-        "nabard-grade",
-        "rbi-grade",
-        "sidbi-grade"
       ]
     },
     {
@@ -4306,6 +4306,17 @@
       ]
     },
     {
+      "section": "General Awareness",
+      "topic": "Financial Regulators",
+      "questionCount": 4,
+      "examCount": 3,
+      "exams": [
+        "nabard-grade",
+        "sebi-grade",
+        "sidbi-grade"
+      ]
+    },
+    {
       "section": "Statistics",
       "topic": "Mean",
       "questionCount": 3,
@@ -4425,17 +4436,6 @@
         "jee-main",
         "wbjee-engineering"
       ]
-    },
-    {
-      "section": "General Awareness",
-      "topic": "Financial Regulators",
-      "questionCount": 3,
-      "examCount": 3,
-      "exams": [
-        "nabard-grade",
-        "sebi-grade",
-        "sidbi-grade"
-      ]
     }
   ],
   "genericTemplates": [
@@ -4455,7 +4455,7 @@
     },
     {
       "pattern": "spelling correction",
-      "matchCount": 46,
+      "matchCount": 47,
       "examCount": 21,
       "exams": [
         "afcat-verbal",
@@ -4531,7 +4531,7 @@
     },
     {
       "pattern": "synonym/antonym instruction",
-      "matchCount": 298,
+      "matchCount": 302,
       "examCount": 39,
       "exams": [
         "afcat-verbal",
@@ -4578,7 +4578,7 @@
     },
     {
       "pattern": "blood relation generic opener",
-      "matchCount": 42,
+      "matchCount": 43,
       "examCount": 24,
       "exams": [
         "ca-foundation",
@@ -4888,6 +4888,24 @@
       ]
     },
     {
+      "opening": "which of the following is a",
+      "examCount": 12,
+      "exams": [
+        "bitsat-2026",
+        "comedk-uget",
+        "nabard-grade",
+        "rpf-constable",
+        "rpf-si",
+        "rrb-alp",
+        "rrb-group",
+        "rrb-technician",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-gd",
+        "ssc-je"
+      ]
+    },
+    {
       "opening": "choose the word most opposite in",
       "examCount": 12,
       "exams": [
@@ -4920,23 +4938,6 @@
         "sebi-grade",
         "sidbi-grade",
         "ssc-cpo"
-      ]
-    },
-    {
-      "opening": "which of the following is a",
-      "examCount": 11,
-      "exams": [
-        "bitsat-2026",
-        "comedk-uget",
-        "rpf-constable",
-        "rpf-si",
-        "rrb-alp",
-        "rrb-group",
-        "rrb-technician",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-gd",
-        "ssc-je"
       ]
     },
     {
@@ -6622,6 +6623,17 @@
       ]
     },
     {
+      "opening": "improve the underlined part she is",
+      "examCount": 5,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "ssc-cpo"
+      ]
+    },
+    {
       "opening": "the average of 8 numbers is",
       "examCount": 5,
       "exams": [
@@ -6707,6 +6719,17 @@
         "rrb-alp",
         "rrb-ntpc",
         "rrb-technician"
+      ]
+    },
+    {
+      "opening": "which indian state is the largest",
+      "examCount": 5,
+      "exams": [
+        "nabard-grade",
+        "niacl-ao",
+        "rpf-si",
+        "ssc-je",
+        "ssc-mts"
       ]
     },
     {
@@ -7130,26 +7153,6 @@
         "ibps-clerk",
         "ibps-po",
         "rrb-group",
-        "sbi-po"
-      ]
-    },
-    {
-      "opening": "find the next term 4 9",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ssc-cpo",
-        "ssc-selection"
-      ]
-    },
-    {
-      "opening": "pointing to a girl a man",
-      "examCount": 4,
-      "exams": [
-        "ibps-clerk",
-        "lic-aao",
-        "niacl-ao",
         "sbi-po"
       ]
     }

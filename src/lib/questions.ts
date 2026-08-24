@@ -188,6 +188,14 @@ import { NABARD_GRADE_A_PHASE_1_DECISION_MAKING_1 } from './question-banks/nabar
 import { NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/nabard-grade-a-phase-1-general-awareness-1';
 import { NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_1 } from './question-banks/nabard-grade-a-phase-1-economic-and-social-issues-1';
 import { NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_1 } from './question-banks/nabard-grade-a-phase-1-agriculture-and-rural-development-1';
+import { NABARD_GRADE_A_PHASE_1_REASONING_2 } from './question-banks/nabard-grade-a-phase-1-reasoning-2';
+import { NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_2 } from './question-banks/nabard-grade-a-phase-1-english-language-2';
+import { NABARD_GRADE_A_PHASE_1_COMPUTER_KNOWLEDGE_2 } from './question-banks/nabard-grade-a-phase-1-computer-knowledge-2';
+import { NABARD_GRADE_A_PHASE_1_QUANTITATIVE_APTITUDE_2 } from './question-banks/nabard-grade-a-phase-1-quantitative-aptitude-2';
+import { NABARD_GRADE_A_PHASE_1_DECISION_MAKING_2 } from './question-banks/nabard-grade-a-phase-1-decision-making-2';
+import { NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_2 } from './question-banks/nabard-grade-a-phase-1-general-awareness-2';
+import { NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_2 } from './question-banks/nabard-grade-a-phase-1-economic-and-social-issues-2';
+import { NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_2 } from './question-banks/nabard-grade-a-phase-1-agriculture-and-rural-development-2';
 import { SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_1 } from './question-banks/sebi-grade-a-phase-1-paper-1-general-awareness-1';
 import { SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_1 } from './question-banks/sebi-grade-a-phase-1-paper-1-english-language-1';
 import { SEBI_GRADE_A_PHASE_1_PAPER_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/sebi-grade-a-phase-1-paper-1-quantitative-aptitude-1';
@@ -946,6 +954,24 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'nabard-grade-a/phase-1-general-awareness-sectional-1': NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_1,
   'nabard-grade-a/phase-1-economic-and-social-issues-sectional-1': NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_1,
   'nabard-grade-a/phase-1-agriculture-and-rural-development-sectional-1': NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_1,
+  'nabard-grade-a/phase-1-full-mock-2': [
+    ...NABARD_GRADE_A_PHASE_1_REASONING_2,
+    ...NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_2,
+    ...NABARD_GRADE_A_PHASE_1_COMPUTER_KNOWLEDGE_2,
+    ...NABARD_GRADE_A_PHASE_1_QUANTITATIVE_APTITUDE_2,
+    ...NABARD_GRADE_A_PHASE_1_DECISION_MAKING_2,
+    ...NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_2,
+    ...NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_2,
+    ...NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_2,
+  ],
+  'nabard-grade-a/phase-1-reasoning-sectional-2': NABARD_GRADE_A_PHASE_1_REASONING_2,
+  'nabard-grade-a/phase-1-english-language-sectional-2': NABARD_GRADE_A_PHASE_1_ENGLISH_LANGUAGE_2,
+  'nabard-grade-a/phase-1-computer-knowledge-sectional-2': NABARD_GRADE_A_PHASE_1_COMPUTER_KNOWLEDGE_2,
+  'nabard-grade-a/phase-1-quantitative-aptitude-sectional-2': NABARD_GRADE_A_PHASE_1_QUANTITATIVE_APTITUDE_2,
+  'nabard-grade-a/phase-1-decision-making-sectional-2': NABARD_GRADE_A_PHASE_1_DECISION_MAKING_2,
+  'nabard-grade-a/phase-1-general-awareness-sectional-2': NABARD_GRADE_A_PHASE_1_GENERAL_AWARENESS_2,
+  'nabard-grade-a/phase-1-economic-and-social-issues-sectional-2': NABARD_GRADE_A_PHASE_1_ECONOMIC_AND_SOCIAL_ISSUES_2,
+  'nabard-grade-a/phase-1-agriculture-and-rural-development-sectional-2': NABARD_GRADE_A_PHASE_1_AGRICULTURE_AND_RURAL_DEVELOPMENT_2,
   'sebi-grade-a/phase-1-paper-1-full-mock-1': [
     ...SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_1,
     ...SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_1,
