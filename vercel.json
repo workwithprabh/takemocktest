@@ -1,6 +1,7 @@
 {
   "redirects": [
     { "source": "/", "destination": "/in", "permanent": true },
+    { "source": "/index.html", "destination": "/in", "permanent": true },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.takemocktest.com" }],
