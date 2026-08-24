@@ -199,6 +199,17 @@ import { SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_1 } from './question-banks/sebi-gr
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-costing-1';
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-companies-act-1';
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_1 } from './question-banks/sebi-grade-a-phase-1-paper-2-economics-1';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_2 } from './question-banks/sebi-grade-a-phase-1-paper-1-general-awareness-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_2 } from './question-banks/sebi-grade-a-phase-1-paper-1-english-language-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_QUANTITATIVE_APTITUDE_2 } from './question-banks/sebi-grade-a-phase-1-paper-1-quantitative-aptitude-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_1_REASONING_2 } from './question-banks/sebi-grade-a-phase-1-paper-1-reasoning-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_COMMERCE_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-commerce-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_ACCOUNTANCY_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-accountancy-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_MANAGEMENT_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-management-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-finance-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-costing-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-companies-act-2';
+import { SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-economics-2';
 import { SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/sidbi-grade-a-b-phase-1-english-language-1';
 import { SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_1 } from './question-banks/sidbi-grade-a-b-phase-1-reasoning-aptitude-1';
 import { SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/sidbi-grade-a-b-phase-1-quantitative-aptitude-1';
@@ -961,6 +972,32 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sebi-grade-a/phase-1-paper-2-costing-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_1,
   'sebi-grade-a/phase-1-paper-2-companies-act-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_1,
   'sebi-grade-a/phase-1-paper-2-economics-sectional-1': SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_1,
+  'sebi-grade-a/phase-1-paper-1-full-mock-2': [
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_QUANTITATIVE_APTITUDE_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_1_REASONING_2,
+  ],
+  'sebi-grade-a/phase-1-paper-1-general-awareness-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_1_GENERAL_AWARENESS_2,
+  'sebi-grade-a/phase-1-paper-1-english-language-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_1_ENGLISH_LANGUAGE_2,
+  'sebi-grade-a/phase-1-paper-1-quantitative-aptitude-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_1_QUANTITATIVE_APTITUDE_2,
+  'sebi-grade-a/phase-1-paper-1-reasoning-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_1_REASONING_2,
+  'sebi-grade-a/phase-1-paper-2-full-mock-2': [
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_COMMERCE_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_ACCOUNTANCY_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_MANAGEMENT_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_2,
+    ...SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_2,
+  ],
+  'sebi-grade-a/phase-1-paper-2-commerce-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_COMMERCE_2,
+  'sebi-grade-a/phase-1-paper-2-accountancy-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_ACCOUNTANCY_2,
+  'sebi-grade-a/phase-1-paper-2-management-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_MANAGEMENT_2,
+  'sebi-grade-a/phase-1-paper-2-finance-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_2,
+  'sebi-grade-a/phase-1-paper-2-costing-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_2,
+  'sebi-grade-a/phase-1-paper-2-companies-act-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_2,
+  'sebi-grade-a/phase-1-paper-2-economics-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_2,
   'sidbi-grade-a-b/phase-1-full-mock-1': [
     ...SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_1,
     ...SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_1,
