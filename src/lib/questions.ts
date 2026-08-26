@@ -483,6 +483,12 @@ import { AMU_BTECH_2026_FULL_MOCK_1 } from './question-banks/amu-btech-2026-full
 import { ASSAM_CEE_2026_MATHEMATICS_1 } from './question-banks/assam-cee-2026-mathematics-1';
 import { ASSAM_CEE_2026_PHYSICS_1 } from './question-banks/assam-cee-2026-physics-1';
 import { ASSAM_CEE_2026_CHEMISTRY_1 } from './question-banks/assam-cee-2026-chemistry-1';
+import { BITS_HD_2026_ME_CS_FULL_MOCK_1 } from './question-banks/bits-hd-2026-me-cs-full-mock-1';
+import { BITS_HD_2026_ME_CS_FULL_MOCK_2 } from './question-banks/bits-hd-2026-me-cs-full-mock-2';
+import { CG_PET_2026_PHYSICS_1 } from './question-banks/cg-pet-2026-physics-1';
+import { CG_PET_2026_CHEMISTRY_1 } from './question-banks/cg-pet-2026-chemistry-1';
+import { CG_PET_2026_MATHEMATICS_1 } from './question-banks/cg-pet-2026-mathematics-1';
+import { BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1 } from './question-banks/bcece-2026-pcm-engineering-full-mock-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -1785,6 +1791,20 @@ const ASSAM_CEE_TESTS: Record<string, Question[]> = {
     ...ASSAM_CEE_2026_CHEMISTRY_1,
   ],
 };
+const BITS_HD_TESTS: Record<string, Question[]> = {
+  'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,
+  'bits-hd/me-cs-full-mock-2': BITS_HD_2026_ME_CS_FULL_MOCK_2,
+};
+const CG_PET_TESTS: Record<string, Question[]> = {
+  'cg-pet/full-mock-1': [
+    ...CG_PET_2026_PHYSICS_1,
+    ...CG_PET_2026_CHEMISTRY_1,
+    ...CG_PET_2026_MATHEMATICS_1,
+  ],
+};
+const BCECE_TESTS: Record<string, Question[]> = {
+  'bcece/pcm-engineering-full-mock-1': BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1,
+};
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
   'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
@@ -1851,7 +1871,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -2284,6 +2304,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 15
     : testId.includes('assam-cee/full-mock')
     ? 120
+    : testId.includes('cg-pet/full-mock')
+    ? 150
+    : testId.includes('bcece/pcm-engineering-full-mock')
+    ? 300
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2579,6 +2603,21 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Mathematics', count: 40 },
     { section: 'Physics', count: 40 },
     { section: 'Chemistry', count: 40 },
+  ],
+  'bits-hd': [
+    { section: 'Core Mathematics', count: 15 },
+    { section: 'English Language Skills & Logical Reasoning', count: 15 },
+    { section: 'Computer Science', count: 70 },
+  ],
+  'cg-pet': [
+    { section: 'Physics', count: 50 },
+    { section: 'Chemistry', count: 50 },
+    { section: 'Mathematics', count: 50 },
+  ],
+  'bcece': [
+    { section: 'Physics', count: 100 },
+    { section: 'Chemistry', count: 100 },
+    { section: 'Mathematics', count: 100 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -3704,5 +3743,20 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     ASSAM_CEE_2026_MATHEMATICS_1[0],
     ASSAM_CEE_2026_PHYSICS_1[0],
     ASSAM_CEE_2026_CHEMISTRY_1[0],
+  ],
+  'bits-hd': [
+    BITS_HD_2026_ME_CS_FULL_MOCK_1[0],
+    BITS_HD_2026_ME_CS_FULL_MOCK_1[15],
+    BITS_HD_2026_ME_CS_FULL_MOCK_1[30],
+  ],
+  'cg-pet': [
+    CG_PET_2026_PHYSICS_1[0],
+    CG_PET_2026_CHEMISTRY_1[0],
+    CG_PET_2026_MATHEMATICS_1[0],
+  ],
+  'bcece': [
+    BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[0],
+    BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[100],
+    BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[200],
   ],
 };

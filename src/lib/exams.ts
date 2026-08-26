@@ -84,7 +84,10 @@ export type ExamSlug =
   | 'kcet'
   | 'tg-eapcet'
   | 'amu-btech'
-  | 'assam-cee';
+  | 'assam-cee'
+  | 'bits-hd'
+  | 'cg-pet'
+  | 'bcece';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -247,6 +250,9 @@ const KCET_2026_KEA_PORTAL = 'https://cetonline.karnataka.gov.in/kea/ugcet2026';
 const TG_EAPCET_2026_SYLLABUS = 'https://eapcet.tgche.ac.in/TGEAPCET/Doc2026/Syllabus-E.pdf';
 const AMU_BTECH_2026_GUIDE_TO_ADMISSIONS = 'https://amucontrollerexams.com/uploads/files/c7cabd0dcdcb3d7793446b0ea7c88a49.pdf';
 const ASSAM_CEE_2026_BROCHURE = 'https://astu.formsrec.in/pdf/Final%20Brochure%20CEE-2026.pdf';
+const BITS_HD_2026_27_BROCHURE = 'https://admissions.bits-pilani.ac.in/HD/downloads/HD_Brochure_2026_27.pdf';
+const CG_PET_2026_ONLINE_PAGE = 'https://vyapamcg.cgstate.gov.in/Post?PostID=PET26ONLINE';
+const BCECE_2026_ADVERTISEMENT_NOTICE = 'https://bceceboard.bihar.gov.in/pdf_Adv/ADV_BCECE26_01.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -8377,6 +8383,109 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '24 August 2026' },
+        ],
+      },
+    ],
+  },
+  'bits-hd': {
+    slug: 'bits-hd',
+    name: 'BITS HD',
+    shortName: 'BITS HD',
+    fullName: 'BITS Higher Degree 2026-27: M.E. Computer Science',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'me-computer-science-2026',
+        name: 'BITS HD 2026 M.E. Computer Science',
+        pattern: {
+          status: 'official',
+          cycle: '2026-27',
+          sections: ['Core Mathematics', 'English Language Skills & Logical Reasoning', 'Computer Science'],
+          totalQuestions: 100,
+          totalMarks: 300,
+          duration: 150,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Core Mathematics', questions: 15, marks: 45 },
+            { name: 'English Language Skills & Logical Reasoning', questions: 15, marks: 45 },
+            { name: 'Computer Science', questions: 70, marks: 210 },
+          ],
+          timerNote: 'Two-part official timer, not one free 150-minute clock: Test I (Core Mathematics and English Language Skills & Logical Reasoning, free navigation between the two) gets a single 45-minute window that auto-submits as a group, followed by a separate 105-minute Computer Science Test II window with no return to Test I afterward.',
+          note: 'TakeMockTest combined online practice adaptation for the BITS HD 2026 M.E. Computer Science test pathway (one of several BITS Higher Degree disciplines; only M.E. Computer Science is covered here). BITS Pilani officially conducts Test I (30 questions, 45 minutes: Core Mathematics 15, English Language Skills & Logical Reasoning 15) and Computer Science Test II (70 questions, 105 minutes) as two separate papers; this site combines both into a single online attempt with two locked timing groups and no time borrowing, preserving the two official working windows rather than opening one free 150-minute clock. Every question awards 3 marks for a correct answer and deducts 1 mark for an incorrect answer; an unattempted question scores zero.',
+          sourceUrl: BITS_HD_2026_27_BROCHURE,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'me-cs-full-mock-1', name: 'BITS HD 2026 M.E. Computer Science Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, timingGroups: [{ sections: ['Core Mathematics', 'English Language Skills & Logical Reasoning'], duration: 45 }, { sections: ['Computer Science'], duration: 105 }], marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'Every question awards 3 marks for a correct answer and deducts 1 mark for an incorrect answer; an unattempted question scores zero. Test I (Core Mathematics and English Language Skills & Logical Reasoning) shares the first 45 minutes with free navigation between the two sections and auto-submits as a group; Computer Science Test II then gets a separate 105 minutes with no return to Test I.', checkedOn: '26 August 2026' },
+          { id: 'me-cs-full-mock-2', name: 'BITS HD 2026 M.E. Computer Science Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 150, timingGroups: [{ sections: ['Core Mathematics', 'English Language Skills & Logical Reasoning'], duration: 45 }, { sections: ['Computer Science'], duration: 105 }], marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'Every question awards 3 marks for a correct answer and deducts 1 mark for an incorrect answer; an unattempted question scores zero. Test I (Core Mathematics and English Language Skills & Logical Reasoning) shares the first 45 minutes with free navigation between the two sections and auto-submits as a group; Computer Science Test II then gets a separate 105 minutes with no return to Test I.', checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'cg-pet': {
+    slug: 'cg-pet',
+    name: 'CG PET',
+    shortName: 'CG PET',
+    fullName: 'Chhattisgarh Pre Engineering Test 2026',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'entrance-test',
+        name: 'Entrance Test',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 50, marks: 50 },
+            { name: 'Chemistry', questions: 50, marks: 50 },
+            { name: 'Mathematics', questions: 50, marks: 50 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all three subjects.',
+          note: 'CG PET (Chhattisgarh Pre Engineering Test) is conducted by CG Vyapam for B.Tech admission to engineering colleges in Chhattisgarh. The 150-question total and the 50/50/50 Physics/Chemistry/Mathematics split are confirmed against the current CG Vyapam PET26 exam page. The 180-minute duration and the no-negative-marking scoring rule are corroborated across multiple current secondary sources rather than machine-read directly from the official instructions PDF, which this site could not fetch directly either, so this pattern is marked review-pending pending independent re-verification. Each correct answer earns 1 mark; there is no deduction for a wrong answer, and an unanswered question also scores zero.',
+          sourceUrl: CG_PET_2026_ONLINE_PAGE,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'bcece': {
+    slug: 'bcece',
+    name: 'BCECE',
+    shortName: 'BCECE',
+    fullName: 'BCECE 2026 PCM Engineering Vacant-Seat Route',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'pcm-engineering-2026',
+        name: 'BCECE 2026 PCM Engineering Vacant-Seat Route',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 300,
+          totalMarks: 1200,
+          duration: 270,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 100, marks: 400 },
+            { name: 'Chemistry', questions: 100, marks: 400 },
+            { name: 'Mathematics', questions: 100, marks: 400 },
+          ],
+          timerNote: 'Three-part official timer, not one free 270-minute clock: Physics gets a 90-minute window that auto-submits, then Chemistry gets a separate 90 minutes with no return to Physics, then Mathematics gets a final separate 90 minutes with no return to either earlier subject.',
+          note: 'TakeMockTest practice for the BCECE 2026 PCM engineering vacant-seat route. Regular first-year Bihar Government B.E./B.Tech counselling is conducted through UGEAC using JEE Main 2026; BCECE PCM is relevant to the later counselling route for remaining engineering vacancies, not the primary admission route. BCECEB’s current 2026 exam and counselling activity, the BCECE 2026 application notice, the 30/31 May 2026 examination dates, and the current BCECE syllabus publication are directly confirmed. The exact 100/100/100 question split, 90-minute-per-subject durations, and +4/-1 scoring are corroborated across current secondary sources rather than independently verified from a current official machine-readable document, which this site could not fetch directly either, so this pattern is marked review-pending pending independent re-verification. BCECE is conducted as an offline OMR paper; current 2026 pattern sources report English and Hindi question-paper availability, while this mock is TakeMockTest English-language online practice. Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question scores zero.',
+          sourceUrl: BCECE_2026_ADVERTISEMENT_NOTICE,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'pcm-engineering-full-mock-1', name: 'BCECE 2026 PCM Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 270, timingGroups: [{ sections: ['Physics'], duration: 90 }, { sections: ['Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question scores zero. Physics, Chemistry, and Mathematics are each separately timed 90-minute windows with no time borrowing and no return to a completed subject.', checkedOn: '26 August 2026' },
         ],
       },
     ],
