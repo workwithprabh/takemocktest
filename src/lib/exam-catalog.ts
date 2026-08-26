@@ -143,6 +143,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('JEE Main Paper 2: B.Arch & B.Planning', 'National', 'jee-main-paper-2'),
           exam('NATA', 'National', 'nata'),
           exam('AMU B.Tech.', 'Institute', 'amu-btech'),
+          exam('CUSAT CAT', 'Institute', 'cusat-cat'),
         ],
       },
       {
@@ -165,7 +166,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Postgraduate & careers',
         exams: [
-          exam('GATE', 'National'),
+          exam('GATE', 'National', 'gate'),
           exam('BITS HD', 'Institute', 'bits-hd'),
         ],
       },
@@ -175,6 +176,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       { label: 'JEE Advanced', url: 'https://jeeadv.ac.in/' },
       { label: 'BITSAT', url: 'https://admissions.bits-pilani.ac.in/BITSAT_LP/' },
       { label: 'COMEDK', url: 'https://www.comedk.org/' },
+      { label: 'CUSAT Admissions', url: 'https://admissions.cusat.ac.in/' },
     ],
   },
   {

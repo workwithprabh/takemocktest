@@ -87,7 +87,9 @@ export type ExamSlug =
   | 'assam-cee'
   | 'bits-hd'
   | 'cg-pet'
-  | 'bcece';
+  | 'bcece'
+  | 'cusat-cat'
+  | 'gate';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -253,6 +255,8 @@ const ASSAM_CEE_2026_BROCHURE = 'https://astu.formsrec.in/pdf/Final%20Brochure%2
 const BITS_HD_2026_27_BROCHURE = 'https://admissions.bits-pilani.ac.in/HD/downloads/HD_Brochure_2026_27.pdf';
 const CG_PET_2026_ONLINE_PAGE = 'https://vyapamcg.cgstate.gov.in/Post?PostID=PET26ONLINE';
 const BCECE_2026_ADVERTISEMENT_NOTICE = 'https://bceceboard.bihar.gov.in/pdf_Adv/ADV_BCECE26_01.pdf';
+const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const GATE_2026_INFORMATION_BROCHURE = 'https://gate2026.iitg.ac.in/doc/IB/GATE2026-IB-10102025.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -8486,6 +8490,74 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'pcm-engineering-full-mock-1', name: 'BCECE 2026 PCM Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 270, timingGroups: [{ sections: ['Physics'], duration: 90 }, { sections: ['Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question scores zero. Physics, Chemistry, and Mathematics are each separately timed 90-minute windows with no time borrowing and no return to a completed subject.', checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'cusat-cat': {
+    slug: 'cusat-cat',
+    name: 'CUSAT CAT',
+    shortName: 'CUSAT CAT',
+    fullName: 'CUSAT CAT 2026 B.Tech (Test Code 101)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-2026',
+        name: 'CUSAT CAT 2026 B.Tech',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 225,
+          totalMarks: 900,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 90, marks: 360 },
+            { name: 'Physics', questions: 75, marks: 300 },
+            { name: 'Chemistry', questions: 60, marks: 240 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer with free navigation across all three subjects; no subject locking or timing groups.',
+          note: 'The official CUSAT CAT 2026 B.Tech Test Code 101 pattern is 225 questions in 180 minutes with Mathematics 90, Physics 75, and Chemistry 60, scored +4 for a correct answer and -1 for an incorrect answer, within the Plus Two (Class 11-12) syllabus. This covers only B.Tech Test Code 101, not CUSAT’s separate B.Tech Marine Engineering route or its lateral-entry B.Tech admission test. The detailed chapter balance used in these questions is a TakeMockTest practice control map within the official syllabus, not an official CUSAT chapter-wise weightage.',
+          sourceUrl: CUSAT_CAT_2026_PROSPECTUS,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'btech-full-mock-1', name: 'CUSAT CAT 2026 B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question scores zero. One unrestricted 180-minute timer covers all 225 questions with free navigation across Mathematics, Physics, and Chemistry; there is no subject locking.', checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'gate': {
+    slug: 'gate',
+    name: 'GATE',
+    shortName: 'GATE',
+    fullName: 'GATE 2026: Computer Science and Information Technology (CS)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'cs-2026',
+        name: 'GATE 2026 Computer Science (CS)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Aptitude', 'Computer Science and Information Technology'],
+          totalQuestions: 65,
+          totalMarks: 100,
+          duration: 180,
+          negativeMarking: 'Mixed by question type and mark value: 1-mark MCQ -1/3, 2-mark MCQ -2/3, MSQ and Numerical Answer Type (NAT) questions carry no negative marking',
+          sectionBreakdown: [
+            { name: 'General Aptitude', questions: 10, marks: 15 },
+            { name: 'Computer Science and Information Technology', questions: 55, marks: 85 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer covering both General Aptitude and the CS paper, with free navigation between them; there is no subject locking or separate timing group.',
+          note: 'TakeMockTest currently provides GATE 2026 practice for Computer Science and Information Technology (CS) only, not other GATE papers. Each mock has 65 questions for 100 marks: General Aptitude (10 questions, 15 marks), Engineering Mathematics (13 marks within the CS paper), and Core CS (72 marks within the CS paper), across 30 one-mark and 35 two-mark questions. Three question types appear: MCQ (single correct option; 1-mark wrong answers deduct 1/3 mark, 2-mark wrong answers deduct 2/3 mark), MSQ (multi-select; one or more correct options, full credit only for the exact correct set, zero credit for an incomplete or incorrect selection, no negative marking and no partial credit), and Numerical Answer Type or NAT (a typed numeric value, no negative marking). The official GATE 2026 CBT interface provides an on-screen virtual scientific calculator; this platform does not currently reproduce that calculator, so questions are written to be solvable without one.',
+          sourceUrl: GATE_2026_INFORMATION_BROCHURE,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'cs-full-mock-1', name: 'GATE 2026 CS Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Mixed question-level scoring: MCQ correct answers earn 1 or 2 marks per question with a 1/3 or 2/3 mark deduction for a wrong answer; MSQ questions earn full credit only for selecting the exact correct set, with no partial credit and no negative marking; Numerical Answer Type (NAT) questions earn full credit for the exact numeric answer, with no negative marking. One unrestricted 180-minute timer with free navigation between General Aptitude and the CS paper; no subject locking. This platform does not currently reproduce the official on-screen virtual scientific calculator.', checkedOn: '26 August 2026' },
+          { id: 'cs-full-mock-2', name: 'GATE 2026 CS Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Mixed question-level scoring: MCQ correct answers earn 1 or 2 marks per question with a 1/3 or 2/3 mark deduction for a wrong answer; MSQ questions earn full credit only for selecting the exact correct set, with no partial credit and no negative marking; Numerical Answer Type (NAT) questions earn full credit for the exact numeric answer, with no negative marking. One unrestricted 180-minute timer with free navigation between General Aptitude and the CS paper; no subject locking. This platform does not currently reproduce the official on-screen virtual scientific calculator.', checkedOn: '26 August 2026' },
         ],
       },
     ],

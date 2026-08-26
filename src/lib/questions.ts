@@ -489,6 +489,9 @@ import { CG_PET_2026_PHYSICS_1 } from './question-banks/cg-pet-2026-physics-1';
 import { CG_PET_2026_CHEMISTRY_1 } from './question-banks/cg-pet-2026-chemistry-1';
 import { CG_PET_2026_MATHEMATICS_1 } from './question-banks/cg-pet-2026-mathematics-1';
 import { BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1 } from './question-banks/bcece-2026-pcm-engineering-full-mock-1';
+import { CUSAT_CAT_2026_BTECH_FULL_MOCK_1 } from './question-banks/cusat-cat-2026-btech-full-mock-1';
+import { GATE_2026_CS_FULL_MOCK_1 } from './question-banks/gate-2026-cs-full-mock-1';
+import { GATE_2026_CS_FULL_MOCK_2 } from './question-banks/gate-2026-cs-full-mock-2';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -1805,6 +1808,13 @@ const CG_PET_TESTS: Record<string, Question[]> = {
 const BCECE_TESTS: Record<string, Question[]> = {
   'bcece/pcm-engineering-full-mock-1': BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1,
 };
+const CUSAT_CAT_TESTS: Record<string, Question[]> = {
+  'cusat-cat/btech-full-mock-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1,
+};
+const GATE_TESTS: Record<string, Question[]> = {
+  'gate/cs-full-mock-1': GATE_2026_CS_FULL_MOCK_1,
+  'gate/cs-full-mock-2': GATE_2026_CS_FULL_MOCK_2,
+};
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
   'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
@@ -1871,7 +1881,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -2308,6 +2318,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 150
     : testId.includes('bcece/pcm-engineering-full-mock')
     ? 300
+    : testId.includes('cusat-cat/btech-full-mock')
+    ? 225
+    : testId.includes('gate/cs-full-mock')
+    ? 65
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2618,6 +2632,15 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Physics', count: 100 },
     { section: 'Chemistry', count: 100 },
     { section: 'Mathematics', count: 100 },
+  ],
+  'cusat-cat': [
+    { section: 'Mathematics', count: 90 },
+    { section: 'Physics', count: 75 },
+    { section: 'Chemistry', count: 60 },
+  ],
+  'gate': [
+    { section: 'General Aptitude', count: 10 },
+    { section: 'Computer Science and Information Technology', count: 55 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -3758,5 +3781,15 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[0],
     BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[100],
     BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[200],
+  ],
+  'cusat-cat': [
+    CUSAT_CAT_2026_BTECH_FULL_MOCK_1[0],
+    CUSAT_CAT_2026_BTECH_FULL_MOCK_1[90],
+    CUSAT_CAT_2026_BTECH_FULL_MOCK_1[165],
+  ],
+  'gate': [
+    GATE_2026_CS_FULL_MOCK_1[0],
+    GATE_2026_CS_FULL_MOCK_1[11],
+    GATE_2026_CS_FULL_MOCK_1[12],
   ],
 };
