@@ -144,6 +144,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('NATA', 'National', 'nata'),
           exam('AMU B.Tech.', 'Institute', 'amu-btech'),
           exam('CUSAT CAT', 'Institute', 'cusat-cat'),
+          exam('JAIN JET', 'Institute', 'jain-jet'),
         ],
       },
       {
@@ -155,7 +156,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('KEAM', 'State'),
           exam('AP EAPCET', 'State', 'ap-eapcet'),
           exam('TG EAPCET', 'State', 'tg-eapcet'),
-          exam('GUJCET', 'State'),
+          exam('GUJCET', 'State', 'gujcet'),
           exam('OJEE', 'State'),
           exam('BCECE', 'State', 'bcece'),
           exam('JCECE', 'State'),

@@ -89,7 +89,9 @@ export type ExamSlug =
   | 'cg-pet'
   | 'bcece'
   | 'cusat-cat'
-  | 'gate';
+  | 'gate'
+  | 'gujcet'
+  | 'jain-jet';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -257,6 +259,8 @@ const CG_PET_2026_ONLINE_PAGE = 'https://vyapamcg.cgstate.gov.in/Post?PostID=PET
 const BCECE_2026_ADVERTISEMENT_NOTICE = 'https://bceceboard.bihar.gov.in/pdf_Adv/ADV_BCECE26_01.pdf';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
 const GATE_2026_INFORMATION_BROCHURE = 'https://gate2026.iitg.ac.in/doc/IB/GATE2026-IB-10102025.pdf';
+const GSHSEB_BOARD_PORTAL = 'https://www.gsebeservice.com/web/';
+const JAIN_JET_2026_BTECH_ADMISSIONS_PAGE = 'https://set.jainuniversity.ac.in/btech-admissions-in-bangalore';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -8558,6 +8562,79 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         tests: [
           { id: 'cs-full-mock-1', name: 'GATE 2026 CS Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Mixed question-level scoring: MCQ correct answers earn 1 or 2 marks per question with a 1/3 or 2/3 mark deduction for a wrong answer; MSQ questions earn full credit only for selecting the exact correct set, with no partial credit and no negative marking; Numerical Answer Type (NAT) questions earn full credit for the exact numeric answer, with no negative marking. One unrestricted 180-minute timer with free navigation between General Aptitude and the CS paper; no subject locking. This platform does not currently reproduce the official on-screen virtual scientific calculator.', checkedOn: '26 August 2026' },
           { id: 'cs-full-mock-2', name: 'GATE 2026 CS Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Mixed question-level scoring: MCQ correct answers earn 1 or 2 marks per question with a 1/3 or 2/3 mark deduction for a wrong answer; MSQ questions earn full credit only for selecting the exact correct set, with no partial credit and no negative marking; Numerical Answer Type (NAT) questions earn full credit for the exact numeric answer, with no negative marking. One unrestricted 180-minute timer with free navigation between General Aptitude and the CS paper; no subject locking. This platform does not currently reproduce the official on-screen virtual scientific calculator.', checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'gujcet': {
+    slug: 'gujcet',
+    name: 'GUJCET',
+    shortName: 'GUJCET',
+    fullName: 'GUJCET 2026: Engineering (PCM)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering',
+        name: 'Engineering',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 180,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 40, marks: 40 },
+            { name: 'Chemistry', questions: 40, marks: 40 },
+            { name: 'Mathematics', questions: 40, marks: 40 },
+          ],
+          timerNote: 'Two-part official timer, not one free 180-minute clock: Physics and Chemistry share a single 120-minute window with free navigation between the two that auto-submits as a group, followed by a separate 60-minute Mathematics window with no return to Physics or Chemistry afterward.',
+          note: 'TakeMockTest English-language online practice adaptation. GUJCET is conducted by the Gujarat Secondary and Higher Secondary Education Board as an offline OMR examination; the official 2026 Physics and Chemistry paper window is 120 minutes and Mathematics has a separate 60-minute window, both directly confirmed. The exact 40/40/40 question split and the +1/-0.25 scoring are corroborated across current secondary sources rather than independently machine-verified from a current official document, so this pattern is marked review-pending pending independent re-verification. Each correct answer earns 1 mark and each incorrect answer deducts 0.25 marks; an unanswered question scores zero.',
+          sourceUrl: GSHSEB_BOARD_PORTAL,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'engineering-full-mock-1', name: 'GUJCET 2026 Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 120 }, { sections: ['Mathematics'], duration: 60 }], marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Each correct answer earns 1 mark and each incorrect answer deducts 0.25 marks; an unanswered question scores zero. Physics and Chemistry share the first 120 minutes with free navigation between the two and auto-submit as a group; Mathematics then gets a separate 60 minutes with no return to the first group.', checkedOn: '26 August 2026' },
+          { id: 'engineering-physics-chemistry-paper-practice-1', name: 'GUJCET 2026 Physics + Chemistry Paper Practice Test 1', kind: 'practice', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Each correct answer earns 1 mark and each incorrect answer deducts 0.25 marks; an unanswered question scores zero. A standalone practice version of the official Physics + Chemistry paper with free navigation across both subjects for the full 120 minutes; the complete Engineering exam feeds this same paper directly into a following Mathematics paper, covered separately by the Full Mock.', checkedOn: '26 August 2026' },
+          { id: 'engineering-mathematics-paper-practice-1', name: 'GUJCET 2026 Mathematics Paper Practice Test 1', kind: 'practice', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Each correct answer earns 1 mark and each incorrect answer deducts 0.25 marks; an unanswered question scores zero. A standalone practice version of the official Mathematics paper with the full 60-minute working time.', checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jain-jet': {
+    slug: 'jain-jet',
+    name: 'JAIN JET',
+    shortName: 'JAIN JET',
+    fullName: 'JAIN Entrance Test (B.Tech)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.Tech',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics', 'Aptitude', 'Logical Reasoning', 'English'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 30 },
+            { name: 'Chemistry', questions: 30, marks: 30 },
+            { name: 'Mathematics', questions: 30, marks: 30 },
+            { name: 'Aptitude', questions: 15, marks: 15 },
+            { name: 'Logical Reasoning', questions: 15, marks: 15 },
+            { name: 'English', questions: 30, marks: 30 },
+          ],
+          timerNote: 'Single unrestricted 150-minute timer with free navigation across all six sections; no subject locking or timing groups.',
+          note: 'JAIN University’s own live B.Tech admissions pattern page controls this six-section structure and its 30/30/30/15/15/30 marks split, all questions mandatory, no negative marking. The official 2026 JET model paper confirms 150 questions numbered through 150 with four-option choices, but groups its last 30 sample questions under one broad "Logical Reasoning" heading; that sample grouping does not override the live admissions table’s separate Aptitude (15) and Logical Reasoning (15) split used here. Every correct answer earns 1 mark; there is no deduction for a wrong answer, and an unanswered question also scores zero.',
+          sourceUrl: JAIN_JET_2026_BTECH_ADMISSIONS_PAGE,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '26 August 2026' },
         ],
       },
     ],
