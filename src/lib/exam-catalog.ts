@@ -142,6 +142,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('IIIT Hyderabad UGEE', 'Institute', 'iiit-hyderabad-ugee'),
           exam('JEE Main Paper 2: B.Arch & B.Planning', 'National', 'jee-main-paper-2'),
           exam('NATA', 'National', 'nata'),
+          exam('AMU B.Tech.', 'Institute', 'amu-btech'),
         ],
       },
       {
@@ -157,6 +158,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('OJEE', 'State'),
           exam('BCECE', 'State'),
           exam('JCECE', 'State'),
+          exam('Assam CEE', 'State', 'assam-cee'),
         ],
       },
       {

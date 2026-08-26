@@ -479,6 +479,10 @@ import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined
 import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
 import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-karnataka-language-mathematical-basic-aptitude-combined-1';
 import { JIPMAT_QA_DILR_VARC_1 } from './question-banks/jipmat-qa-dilr-varc-combined-1';
+import { AMU_BTECH_2026_FULL_MOCK_1 } from './question-banks/amu-btech-2026-full-mock-1';
+import { ASSAM_CEE_2026_MATHEMATICS_1 } from './question-banks/assam-cee-2026-mathematics-1';
+import { ASSAM_CEE_2026_PHYSICS_1 } from './question-banks/assam-cee-2026-physics-1';
+import { ASSAM_CEE_2026_CHEMISTRY_1 } from './question-banks/assam-cee-2026-chemistry-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -1771,6 +1775,16 @@ const KCET_TESTS: Record<string, Question[]> = {
   'kcet/engineering-chemistry-paper-practice-2': KCET_ENGINEERING_CHEMISTRY_PAPER_PRACTICE_2,
   'kcet/engineering-mathematics-paper-practice-2': KCET_ENGINEERING_MATHEMATICS_PAPER_PRACTICE_2,
 };
+const AMU_BTECH_TESTS: Record<string, Question[]> = {
+  'amu-btech/full-mock-1': AMU_BTECH_2026_FULL_MOCK_1,
+};
+const ASSAM_CEE_TESTS: Record<string, Question[]> = {
+  'assam-cee/full-mock-1': [
+    ...ASSAM_CEE_2026_MATHEMATICS_1,
+    ...ASSAM_CEE_2026_PHYSICS_1,
+    ...ASSAM_CEE_2026_CHEMISTRY_1,
+  ],
+};
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
   'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
@@ -1837,7 +1851,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -2268,6 +2282,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 15
     : testId.includes('jipmat/verbal-ability-reading-comprehension-sectional')
     ? 15
+    : testId.includes('assam-cee/full-mock')
+    ? 120
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2553,6 +2569,16 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Quantitative Aptitude', count: 15 },
     { section: 'Data Interpretation and Logical Reasoning', count: 15 },
     { section: 'Verbal Ability and Reading Comprehension', count: 15 },
+  ],
+  'amu-btech': [
+    { section: 'Chemistry', count: 34 },
+    { section: 'Physics', count: 33 },
+    { section: 'Mathematics', count: 33 },
+  ],
+  'assam-cee': [
+    { section: 'Mathematics', count: 40 },
+    { section: 'Physics', count: 40 },
+    { section: 'Chemistry', count: 40 },
   ],
   'viteee': [
     { section: 'Mathematics', count: 40 },
@@ -3668,5 +3694,15 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     { section: 'General Awareness', question: 'Which body of the United Nations is primarily responsible for global public health matters?', options: ['UNESCO', 'World Health Organization', 'UNICEF', 'UNHCR'], correctIndex: 1, explanation: 'The World Health Organization (WHO) is the UN agency responsible for international public health.' },
     // General Science
     { section: 'General Science', question: 'Which of the following organs is primarily responsible for filtering waste from the blood in the human body?', options: ['Liver', 'Kidney', 'Lungs', 'Spleen'], correctIndex: 1, explanation: 'The kidneys filter waste products from the blood and excrete them as urine.' },
+  ],
+  'amu-btech': [
+    AMU_BTECH_2026_FULL_MOCK_1[0],
+    AMU_BTECH_2026_FULL_MOCK_1[34],
+    AMU_BTECH_2026_FULL_MOCK_1[67],
+  ],
+  'assam-cee': [
+    ASSAM_CEE_2026_MATHEMATICS_1[0],
+    ASSAM_CEE_2026_PHYSICS_1[0],
+    ASSAM_CEE_2026_CHEMISTRY_1[0],
   ],
 };

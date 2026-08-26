@@ -82,7 +82,9 @@ export type ExamSlug =
   | 'wbjee'
   | 'ap-eapcet'
   | 'kcet'
-  | 'tg-eapcet';
+  | 'tg-eapcet'
+  | 'amu-btech'
+  | 'assam-cee';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -243,6 +245,8 @@ const WBJEE_2026_BULLETIN =
 const AP_EAPCET_2026_INSTRUCTION_BOOKLET = 'https://cets.apsche.ap.gov.in/EAPCET/PDF/APEAPCET2026_Instruction_Booklet_Engineering_V2.pdf';
 const KCET_2026_KEA_PORTAL = 'https://cetonline.karnataka.gov.in/kea/ugcet2026';
 const TG_EAPCET_2026_SYLLABUS = 'https://eapcet.tgche.ac.in/TGEAPCET/Doc2026/Syllabus-E.pdf';
+const AMU_BTECH_2026_GUIDE_TO_ADMISSIONS = 'https://amucontrollerexams.com/uploads/files/c7cabd0dcdcb3d7793446b0ea7c88a49.pdf';
+const ASSAM_CEE_2026_BROCHURE = 'https://astu.formsrec.in/pdf/Final%20Brochure%20CEE-2026.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -8310,6 +8314,69 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'engineering-physics-paper-practice-2', name: 'KCET 2026 Physics Paper Practice Test 2', kind: 'sectional', status: 'checked', section: 'Physics', duration: 80, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest online practice adaptation of one official KCET 2026 80-minute OMR subject paper.', checkedOn: '24 August 2026' },
           { id: 'engineering-chemistry-paper-practice-2', name: 'KCET 2026 Chemistry Paper Practice Test 2', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 80, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest online practice adaptation of one official KCET 2026 80-minute OMR subject paper.', checkedOn: '24 August 2026' },
           { id: 'engineering-mathematics-paper-practice-2', name: 'KCET 2026 Mathematics Paper Practice Test 2', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 80, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. TakeMockTest online practice adaptation of one official KCET 2026 80-minute OMR subject paper.', checkedOn: '24 August 2026' },
+        ],
+      },
+    ],
+  },
+  'amu-btech': {
+    slug: 'amu-btech',
+    name: 'AMU B.Tech.',
+    shortName: 'AMU B.Tech.',
+    fullName: 'Aligarh Muslim University B.Tech. Admission Test 2026-27',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'admission-test',
+        name: 'Admission Test',
+        pattern: {
+          status: 'official',
+          cycle: '2026-27',
+          sections: ['Chemistry', 'Physics', 'Mathematics'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 120,
+          negativeMarking: 0.25,
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all three subjects.',
+          note: 'AMU’s official Guide to Admissions sets 100 questions across Chemistry, Physics and Mathematics, 100 total marks, a 120-minute duration and OMR-based delivery, but does not publish a per-subject question split. The 34 Chemistry, 33 Physics, 33 Mathematics split used in this mock is a TakeMockTest pacing structure, not an AMU-published breakdown. Each correct answer earns 1 mark and each incorrect answer deducts 0.25 marks; an unanswered question scores zero.',
+          sourceUrl: AMU_BTECH_2026_GUIDE_TO_ADMISSIONS,
+          checkedOn: '24 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '24 August 2026' },
+        ],
+      },
+    ],
+  },
+  'assam-cee': {
+    slug: 'assam-cee',
+    name: 'Assam CEE',
+    shortName: 'Assam CEE',
+    fullName: 'Assam Combined Entrance Examination (CEE) 2026',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'entrance-test',
+        name: 'Entrance Test',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 40, marks: 160 },
+            { name: 'Physics', questions: 40, marks: 160 },
+            { name: 'Chemistry', questions: 40, marks: 160 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all three subjects.',
+          note: 'Assam CEE 2026 is conducted by Assam Science and Technology University for B.Tech admission to colleges of Assam, based on the ASSEB Division-II (Higher Secondary) syllabus. Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question, and a question with multiple marked responses, scores zero. The official exam is delivered as an OMR paper in English and Assamese; this Stage 1 mock is presented in English only as a TakeMockTest platform choice.',
+          sourceUrl: ASSAM_CEE_2026_BROCHURE,
+          checkedOn: '24 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '24 August 2026' },
         ],
       },
     ],
