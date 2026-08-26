@@ -75,6 +75,9 @@ import { SBI_PO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-po-prel
 import { SBI_PO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/sbi-po-prelims-english-language-2';
 import { SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/sbi-po-prelims-quantitative-aptitude-2';
 import { SBI_PO_PRELIMS_REASONING_ABILITY_2 } from './question-banks/sbi-po-prelims-reasoning-ability-2';
+import { SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_1 } from './question-banks/sbi-po-mains-reasoning-computer-aptitude-1';
+import { SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1 } from './question-banks/sbi-po-mains-data-analysis-interpretation-1';
+import { SBI_PO_MAINS_ENGLISH_1 } from './question-banks/sbi-po-mains-english-1';
 import { RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-assistant-prelims-english-language-1';
 import { RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/rbi-assistant-prelims-numerical-ability-1';
 import { RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1 } from './question-banks/rbi-assistant-prelims-reasoning-ability-1';
@@ -758,6 +761,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-po/prelims-english-language-sectional-2': SBI_PO_PRELIMS_ENGLISH_LANGUAGE_2,
   'sbi-po/prelims-quantitative-aptitude-sectional-2': SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_2,
   'sbi-po/prelims-reasoning-ability-sectional-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  'sbi-po/mains-full-mock-1': [
+    ...SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_1,
+    ...SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1,
+    ...SBI_PO_MAINS_ENGLISH_1,
+  ],
+  'sbi-po/mains-reasoning-computer-aptitude-sectional-1': SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_1,
+  'sbi-po/mains-data-analysis-interpretation-sectional-1': SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1,
+  'sbi-po/mains-english-language-sectional-1': SBI_PO_MAINS_ENGLISH_1,
   'rbi-assistant/prelims-full-mock-1': [
     ...RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1,
     ...RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
@@ -1970,6 +1981,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
       ? 40
     : testId.includes('ibps-po/mains-full-mock')
     ? 170
+    : testId.includes('sbi-po/mains-full-mock')
+    ? 110
+    : testId.includes('sbi-po/mains-reasoning-computer-aptitude-sectional')
+    ? 40
+    : testId.includes('sbi-po/mains-data-analysis-interpretation-sectional')
+    ? 30
+    : testId.includes('sbi-po/mains-english-language-sectional')
+    ? 40
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
     : testId.includes('ssc-gd-constable/cbe-full-mock')
@@ -3019,6 +3038,11 @@ const ibpsPoMainsLayout = [
   { section: 'English Language', count: 40 },
   { section: 'Data Analysis and Interpretation', count: 40 },
 ];
+const sbiPoMainsLayout = [
+  { section: 'Reasoning & Computer Aptitude', count: 40 },
+  { section: 'Data Analysis and Interpretation', count: 30 },
+  { section: 'English Language', count: 40 },
+];
 const upscCsePaper1Layout = [
   { section: 'History of India and Indian National Movement', count: 15 },
   { section: 'Indian and World Geography', count: 15 },
@@ -3241,6 +3265,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? jeeAdvancedPaper2Layout
     : testId.includes('ibps-po/mains-full-mock')
       ? ibpsPoMainsLayout
+      : testId.includes('sbi-po/mains-full-mock')
+        ? sbiPoMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
