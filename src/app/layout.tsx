@@ -51,6 +51,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${GA_MEASUREMENT_ID}', { anonymize_ip: true });
           `}
         </Script>
+        {/* Google Preferred Sources: renders an "Add to Preferred Sources"
+            button wherever a [google-add-preferred-source-btn] element
+            appears (see Footer). No schema/meta tag needed.
+            https://developers.google.com/search/docs/appearance/preferred-sources */}
+        <Script src="https://news.google.com/swg/js/v1/publisher.js" strategy="afterInteractive" />
       </body>
     </html>
   );
