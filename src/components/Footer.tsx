@@ -53,6 +53,13 @@ export default function Footer({ country }: { country: string }) {
           </ul>
         </div>
       </div>
+      <div className="flex justify-center pb-6 px-5">
+        {/* Google-rendered "Add to Preferred Sources" button; see layout.tsx
+            for the loader script. google-add-preferred-source-btn is a
+            non-standard attribute the Google script looks for, so it's
+            passed via a typed spread rather than a literal JSX prop. */}
+        <div {...{ 'google-add-preferred-source-btn': '', 'data-theme': 'dark' } as React.HTMLAttributes<HTMLDivElement>} />
+      </div>
       <div className="text-center text-xs text-ink-300 pb-2 px-5">
         © {new Date().getFullYear()} TakeMockTest. All questions are original or sourced from officially released papers.
       </div>
