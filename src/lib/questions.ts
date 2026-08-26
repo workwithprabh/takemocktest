@@ -507,6 +507,16 @@ import { SAEEE_2026_CHEMISTRY_1 } from './question-banks/saeee-2026-chemistry-1'
 import { SITEEE_2026_PHYSICS_1 } from './question-banks/siteee-2026-physics-1';
 import { SITEEE_2026_CHEMISTRY_1 } from './question-banks/siteee-2026-chemistry-1';
 import { SITEEE_2026_MATHEMATICS_1 } from './question-banks/siteee-2026-mathematics-1';
+import { SPECIAL_OJEE_2026_BTECH_PHYSICS_FULL_MOCK_1 } from './question-banks/special-ojee-2026-btech-physics-full-mock-1';
+import { SPECIAL_OJEE_2026_BTECH_CHEMISTRY_FULL_MOCK_1 } from './question-banks/special-ojee-2026-btech-chemistry-full-mock-1';
+import { SPECIAL_OJEE_2026_BTECH_MATHEMATICS_FULL_MOCK_1 } from './question-banks/special-ojee-2026-btech-mathematics-full-mock-1';
+import { SPECIAL_OJEE_2026_BTECH_PHYSICS_SECTIONAL_1 } from './question-banks/special-ojee-2026-btech-physics-sectional-1';
+import { SPECIAL_OJEE_2026_BTECH_CHEMISTRY_SECTIONAL_1 } from './question-banks/special-ojee-2026-btech-chemistry-sectional-1';
+import { SPECIAL_OJEE_2026_BTECH_MATHEMATICS_SECTIONAL_1 } from './question-banks/special-ojee-2026-btech-mathematics-sectional-1';
+import { UPESEAT_2026_MATHEMATICS_1 } from './question-banks/upeseat-2026-mathematics-1';
+import { UPESEAT_2026_PHYSICS_1 } from './question-banks/upeseat-2026-physics-1';
+import { UPESEAT_2026_CHEMISTRY_1 } from './question-banks/upeseat-2026-chemistry-1';
+import { UPESEAT_2026_ENGLISH_1 } from './question-banks/upeseat-2026-english-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -1859,6 +1869,24 @@ const SITEEE_TESTS: Record<string, Question[]> = {
     ...SITEEE_2026_MATHEMATICS_1,
   ],
 };
+const OJEE_TESTS: Record<string, Question[]> = {
+  'ojee/special-btech-full-mock-1': [
+    ...SPECIAL_OJEE_2026_BTECH_PHYSICS_FULL_MOCK_1,
+    ...SPECIAL_OJEE_2026_BTECH_CHEMISTRY_FULL_MOCK_1,
+    ...SPECIAL_OJEE_2026_BTECH_MATHEMATICS_FULL_MOCK_1,
+  ],
+  'ojee/special-btech-physics-sectional-1': SPECIAL_OJEE_2026_BTECH_PHYSICS_SECTIONAL_1,
+  'ojee/special-btech-chemistry-sectional-1': SPECIAL_OJEE_2026_BTECH_CHEMISTRY_SECTIONAL_1,
+  'ojee/special-btech-mathematics-sectional-1': SPECIAL_OJEE_2026_BTECH_MATHEMATICS_SECTIONAL_1,
+};
+const UPESEAT_TESTS: Record<string, Question[]> = {
+  'upeseat/full-mock-1': [
+    ...UPESEAT_2026_MATHEMATICS_1,
+    ...UPESEAT_2026_PHYSICS_1,
+    ...UPESEAT_2026_CHEMISTRY_1,
+    ...UPESEAT_2026_ENGLISH_1,
+  ],
+};
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
   'jee-advanced/paper-1-mathematics-sectional-1': JEE_ADVANCED_PAPER_1_MATHEMATICS_1,
@@ -1925,7 +1953,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -2378,6 +2406,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 150
     : testId.includes('siteee/full-mock')
     ? 60
+    : testId.includes('ojee/special-btech-full-mock')
+    ? 60
+    : testId.includes('ojee/special-btech-physics-sectional') || testId.includes('ojee/special-btech-chemistry-sectional') || testId.includes('ojee/special-btech-mathematics-sectional')
+    ? 20
+    : testId.includes('upeseat/full-mock')
+    ? 125
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2944,6 +2978,17 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Reasoning Ability', count: 35 },
     { section: 'Quantitative Aptitude', count: 35 },
     { section: 'English Language', count: 30 },
+  ],
+  'ojee': [
+    { section: 'Physics', count: 20 },
+    { section: 'Chemistry', count: 20 },
+    { section: 'Mathematics', count: 20 },
+  ],
+  'upeseat': [
+    { section: 'Mathematics', count: 35 },
+    { section: 'Physics', count: 35 },
+    { section: 'Chemistry', count: 35 },
+    { section: 'English Language Comprehension', count: 20 },
   ],
 };
 const sebiGradeAPaper1Layout = [
@@ -3890,5 +3935,16 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     SITEEE_2026_PHYSICS_1[0],
     SITEEE_2026_CHEMISTRY_1[0],
     SITEEE_2026_MATHEMATICS_1[0],
+  ],
+  'ojee': [
+    SPECIAL_OJEE_2026_BTECH_PHYSICS_FULL_MOCK_1[0],
+    SPECIAL_OJEE_2026_BTECH_CHEMISTRY_FULL_MOCK_1[0],
+    SPECIAL_OJEE_2026_BTECH_MATHEMATICS_FULL_MOCK_1[0],
+  ],
+  'upeseat': [
+    UPESEAT_2026_MATHEMATICS_1[0],
+    UPESEAT_2026_PHYSICS_1[0],
+    UPESEAT_2026_CHEMISTRY_1[0],
+    UPESEAT_2026_ENGLISH_1[0],
   ],
 };

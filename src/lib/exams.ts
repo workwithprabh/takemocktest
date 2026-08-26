@@ -93,7 +93,9 @@ export type ExamSlug =
   | 'gujcet'
   | 'jain-jet'
   | 'saeee'
-  | 'siteee';
+  | 'siteee'
+  | 'ojee'
+  | 'upeseat';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -265,6 +267,9 @@ const GSHSEB_BOARD_PORTAL = 'https://www.gsebeservice.com/web/';
 const JAIN_JET_2026_BTECH_ADMISSIONS_PAGE = 'https://set.jainuniversity.ac.in/btech-admissions-in-bangalore';
 const SAEEE_2026_OFFICIAL_PAGE = 'https://saeee2026.sathyabama.ac.in/';
 const SITEEE_2026_STRUCTURE_PAGE = 'https://www.set-test.org/structure';
+const SPECIAL_OJEE_2026_PATTERN_NOTICE =
+  'https://cdnbbsr.s3waas.gov.in/s36832a7b24bc06775d02b7406880b93fc/uploads/2026/06/202606161888862187.pdf';
+const UPESEAT_2026_ADMISSION_ALERTS_PAGE = 'https://www.upes.ac.in/admissions/admission-alerts/upeseat';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -8707,6 +8712,78 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '24 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ojee': {
+    slug: 'ojee',
+    name: 'OJEE',
+    shortName: 'OJEE',
+    fullName: 'Odisha Joint Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'special-btech-2026',
+        name: '2nd/Special OJEE 2026 B.Tech',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 60,
+          totalMarks: 240,
+          duration: 60,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 20, marks: 80 },
+            { name: 'Chemistry', questions: 20, marks: 80 },
+            { name: 'Mathematics', questions: 20, marks: 80 },
+          ],
+          timerNote: 'Single unrestricted 60-minute timer across all three subjects; no subject locking, free navigation.',
+          note: 'Regular first-year Odisha B.Tech admission uses JEE Main 2026, not the main OJEE examination. This stage covers the later 2nd/Special OJEE 2026 B.Tech entrance, used only to prepare a merit list for vacant B.Tech seats remaining after JEE Main / first-round counselling. The official 2nd/Special OJEE pattern notice confirms a computer-based test, English medium, four-option single-correct MCQs, +4/-1/0 scoring, and a syllabus matching JEE Main 2026 (four-option MCQ format only, not JEE Main’s numerical-answer questions).',
+          sourceUrl: SPECIAL_OJEE_2026_PATTERN_NOTICE,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'special-btech-full-mock-1', name: '2nd/Special OJEE 2026 B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Single unrestricted 60-minute timer shared across Physics, Chemistry and Mathematics; no subject locking. Covers the 2nd/Special OJEE 2026 vacant-seat B.Tech entrance, not the regular JEE-Main-based first-year Odisha B.Tech admission route.', checkedOn: '26 August 2026' },
+          { id: 'special-btech-physics-sectional-1', name: '2nd/Special OJEE 2026 B.Tech Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'TakeMockTest Physics sectional practice. 2nd/Special OJEE 2026 B.Tech uses one overall 60-minute timer and does not publish a separate Physics timer; this 20-minute sectional timer is a TakeMockTest practice setting.', checkedOn: '26 August 2026' },
+          { id: 'special-btech-chemistry-sectional-1', name: '2nd/Special OJEE 2026 B.Tech Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'TakeMockTest Chemistry sectional practice. 2nd/Special OJEE 2026 B.Tech uses one overall 60-minute timer and does not publish a separate Chemistry timer; this 20-minute sectional timer is a TakeMockTest practice setting.', checkedOn: '26 August 2026' },
+          { id: 'special-btech-mathematics-sectional-1', name: '2nd/Special OJEE 2026 B.Tech Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'TakeMockTest Mathematics sectional practice. 2nd/Special OJEE 2026 B.Tech uses one overall 60-minute timer and does not publish a separate Mathematics timer; this 20-minute sectional timer is a TakeMockTest practice setting.', checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'upeseat': {
+    slug: 'upeseat',
+    name: 'UPESEAT',
+    shortName: 'UPESEAT',
+    fullName: 'UPES Engineering Aptitude Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-pcm',
+        name: 'B.Tech PCM',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'English Language Comprehension'],
+          totalQuestions: 125,
+          totalMarks: 125,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 35, marks: 35 },
+            { name: 'Physics', questions: 35, marks: 35 },
+            { name: 'Chemistry', questions: 35, marks: 35 },
+            { name: 'English Language Comprehension', questions: 20, marks: 20 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer across all sections; no subject locking.',
+          note: 'The current live UPESEAT 2026 page confirms the online, 120-minute, 125-question structure (Mathematics/Biology 35, Physics 35, Chemistry 35, English Language Comprehension 20); this PCM stage uses the Mathematics track (Biology 0) and does not imply every UPESEAT candidate takes Mathematics. The zero-negative-marking rule and the +1-per-correct/125-maximum scoring are not separately restated on that current page; they trace to a prior official UPES candidate guide (2024 cycle) for the same 35/35/35/20 online structure, corroborated by multiple current secondary sources checked this session, but not independently re-confirmed on the current 2026 primary source, so they are treated here as TakeMockTest platform-defined scoring rather than an officially re-confirmed 2026 rule.',
+          sourceUrl: UPESEAT_2026_ADMISSION_ALERTS_PAGE,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, scoringNote: '+1 per correct answer and the 125 mock maximum are TakeMockTest platform-defined scoring, not a rule separately restated on the current live UPESEAT 2026 page; no negative marking traces to a prior official UPES candidate guide (2024 cycle), corroborated by current secondary sources.', checkedOn: '26 August 2026' },
         ],
       },
     ],

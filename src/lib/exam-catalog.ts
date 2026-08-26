@@ -147,6 +147,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('JAIN JET', 'Institute', 'jain-jet'),
           exam('SAEEE', 'Institute', 'saeee'),
           exam('SITEEE', 'Institute', 'siteee'),
+          exam('UPESEAT', 'Institute', 'upeseat'),
         ],
       },
       {
@@ -159,7 +160,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('AP EAPCET', 'State', 'ap-eapcet'),
           exam('TG EAPCET', 'State', 'tg-eapcet'),
           exam('GUJCET', 'State', 'gujcet'),
-          exam('OJEE', 'State'),
+          exam('OJEE', 'State', 'ojee'),
           exam('BCECE', 'State', 'bcece'),
           exam('JCECE', 'State'),
           exam('Assam CEE', 'State', 'assam-cee'),
