@@ -39,6 +39,8 @@ import { RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_1 } from './question-banks/rr
 import { RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt1-mathematics-sectional-2';
 import { RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt1-general-intelligence-reasoning-sectional-2';
 import { RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt1-general-awareness-sectional-2';
+import { RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt2-mathematics-sectional-1';
+import { RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt2-general-intelligence-reasoning-sectional-1';
 import { IBPS_PO_MAINS_REASONING_1 } from './question-banks/ibps-po-mains-reasoning-1';
 import { IBPS_PO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/ibps-po-mains-general-awareness-1';
 import { IBPS_PO_MAINS_ENGLISH_1 } from './question-banks/ibps-po-mains-english-1';
@@ -672,6 +674,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-ntpc/cbt-1-mathematics-sectional-2': RRB_NTPC_CBT1_MATHEMATICS_SECTIONAL_2,
   'rrb-ntpc/cbt-1-general-intelligence-reasoning-sectional-2': RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2,
   'rrb-ntpc/cbt-1-general-awareness-sectional-2': RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_2,
+  'rrb-ntpc/cbt-2-full-mock-1': [
+    ...RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_1,
+    ...RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
+  ],
+  'rrb-ntpc/cbt-2-mathematics-sectional-1': RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_1,
+  'rrb-ntpc/cbt-2-general-intelligence-reasoning-sectional-1': RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
   'ibps-po/mains-full-mock-1': [
     ...IBPS_PO_MAINS_REASONING_1,
     ...IBPS_PO_MAINS_GENERAL_AWARENESS_1,
@@ -2038,6 +2046,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 40
     : testId.includes('ibps-clerk/mains-english-language-sectional')
     ? 40
+    : testId.includes('rrb-ntpc/cbt-2-full-mock')
+    ? 70
+    : testId.includes('rrb-ntpc/cbt-2-mathematics-sectional')
+    ? 35
+    : testId.includes('rrb-ntpc/cbt-2-general-intelligence-reasoning-sectional')
+    ? 35
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
     : testId.includes('ssc-gd-constable/cbe-full-mock')
@@ -3097,6 +3111,10 @@ const ibpsClerkMainsLayout = [
   { section: 'Quantitative Aptitude', count: 40 },
   { section: 'English Language', count: 40 },
 ];
+const rrbNtpcCbt2Layout = [
+  { section: 'Mathematics', count: 35 },
+  { section: 'General Intelligence and Reasoning', count: 35 },
+];
 const upscCsePaper1Layout = [
   { section: 'History of India and Indian National Movement', count: 15 },
   { section: 'Indian and World Geography', count: 15 },
@@ -3323,6 +3341,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? sbiPoMainsLayout
       : testId.includes('ibps-clerk/mains-full-mock')
         ? ibpsClerkMainsLayout
+      : testId.includes('rrb-ntpc/cbt-2-full-mock')
+        ? rrbNtpcCbt2Layout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
