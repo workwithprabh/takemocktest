@@ -388,6 +388,32 @@ import { MET_2026_BTECH_CHEMISTRY_SECTIONAL_1 } from './question-banks/met-2026-
 import { MET_2026_BTECH_ENGLISH_SECTIONAL_1 } from './question-banks/met-2026-btech-english-sectional-1';
 import { MET_2026_BTECH_MIXED_QUICK_PRACTICE_30M_1 } from './question-banks/met-2026-btech-mixed-quick-practice-30m-1';
 import { MET_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1 } from './question-banks/met-2026-btech-mixed-quick-practice-60m-1';
+import { VITEEE_2026_MPCEA_FULL_MOCK_2 } from './question-banks/viteee-2026-mpcea-full-mock-2';
+import { VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-mathematics-sectional-2';
+import { VITEEE_2026_MPCEA_PHYSICS_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-physics-sectional-2';
+import { VITEEE_2026_MPCEA_CHEMISTRY_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-chemistry-sectional-2';
+import { VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-aptitude-sectional-2';
+import { VITEEE_2026_MPCEA_ENGLISH_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-english-sectional-2';
+import { COMEDK_UGET_2026_BTECH_FULL_MOCK_2 } from './question-banks/comedk-uget-2026-btech-full-mock-2';
+import { COMEDK_UGET_2026_BTECH_PHYSICS_SECTIONAL_2 } from './question-banks/comedk-uget-2026-btech-physics-sectional-2';
+import { COMEDK_UGET_2026_BTECH_CHEMISTRY_SECTIONAL_2 } from './question-banks/comedk-uget-2026-btech-chemistry-sectional-2';
+import { COMEDK_UGET_2026_BTECH_MATHEMATICS_SECTIONAL_2 } from './question-banks/comedk-uget-2026-btech-mathematics-sectional-2';
+import { SRMJEEE_2026_PCM_FULL_MOCK_2 } from './question-banks/srmjeee-2026-pcm-full-mock-2';
+import { SRMJEEE_2026_PCM_PHYSICS_SECTIONAL_2 } from './question-banks/srmjeee-2026-pcm-physics-sectional-2';
+import { SRMJEEE_2026_PCM_CHEMISTRY_SECTIONAL_2 } from './question-banks/srmjeee-2026-pcm-chemistry-sectional-2';
+import { SRMJEEE_2026_PCM_MATHEMATICS_SECTIONAL_2 } from './question-banks/srmjeee-2026-pcm-mathematics-sectional-2';
+import { SRMJEEE_2026_PCM_ENGLISH_APTITUDE_SECTIONAL_2 } from './question-banks/srmjeee-2026-pcm-english-aptitude-sectional-2';
+import { AEEE_2026_BTECH_FULL_MOCK_2 } from './question-banks/aeee-2026-btech-full-mock-2';
+import { AEEE_2026_BTECH_MATHEMATICS_SECTIONAL_2 } from './question-banks/aeee-2026-btech-mathematics-sectional-2';
+import { AEEE_2026_BTECH_PHYSICS_SECTIONAL_2 } from './question-banks/aeee-2026-btech-physics-sectional-2';
+import { AEEE_2026_BTECH_CHEMISTRY_SECTIONAL_2 } from './question-banks/aeee-2026-btech-chemistry-sectional-2';
+import { AEEE_2026_BTECH_QUANTITATIVE_APTITUDE_SECTIONAL_2 } from './question-banks/aeee-2026-btech-quantitative-aptitude-sectional-2';
+import { AEEE_2026_BTECH_ENGLISH_SECTIONAL_2 } from './question-banks/aeee-2026-btech-english-sectional-2';
+import { MET_2026_BTECH_FULL_MOCK_2 } from './question-banks/met-2026-btech-full-mock-2';
+import { MET_2026_BTECH_MATHEMATICS_SECTIONAL_2 } from './question-banks/met-2026-btech-mathematics-sectional-2';
+import { MET_2026_BTECH_PHYSICS_SECTIONAL_2 } from './question-banks/met-2026-btech-physics-sectional-2';
+import { MET_2026_BTECH_CHEMISTRY_SECTIONAL_2 } from './question-banks/met-2026-btech-chemistry-sectional-2';
+import { MET_2026_BTECH_ENGLISH_SECTIONAL_2 } from './question-banks/met-2026-btech-english-sectional-2';
 import { IELTS_ACADEMIC_READING_PASSAGE_1_1 } from './question-banks/ielts-academic-reading-passage-1-1';
 import { IELTS_ACADEMIC_READING_PASSAGE_2_1 } from './question-banks/ielts-academic-reading-passage-2-1';
 import { IELTS_ACADEMIC_READING_PASSAGE_3_1 } from './question-banks/ielts-academic-reading-passage-3-1';
@@ -1678,6 +1704,12 @@ const VITEEE_TESTS: Record<string, Question[]> = {
   'viteee/english-sectional-1': VITEEE_2026_MPCEA_ENGLISH_SECTIONAL_1,
   'viteee/mixed-quick-practice-30m-1': VITEEE_2026_MPCEA_MIXED_QUICK_PRACTICE_30M_1,
   'viteee/mixed-quick-practice-60m-1': VITEEE_2026_MPCEA_MIXED_QUICK_PRACTICE_60M_1,
+  'viteee/full-mock-2': VITEEE_2026_MPCEA_FULL_MOCK_2,
+  'viteee/mathematics-sectional-2': VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_2,
+  'viteee/physics-sectional-2': VITEEE_2026_MPCEA_PHYSICS_SECTIONAL_2,
+  'viteee/chemistry-sectional-2': VITEEE_2026_MPCEA_CHEMISTRY_SECTIONAL_2,
+  'viteee/aptitude-sectional-2': VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_2,
+  'viteee/english-sectional-2': VITEEE_2026_MPCEA_ENGLISH_SECTIONAL_2,
 };
 
 const COMEDK_UGET_TESTS: Record<string, Question[]> = {
@@ -1685,6 +1717,10 @@ const COMEDK_UGET_TESTS: Record<string, Question[]> = {
   'comedk-uget/physics-sectional-1': COMEDK_UGET_2026_BTECH_PHYSICS_SECTIONAL_1,
   'comedk-uget/chemistry-sectional-1': COMEDK_UGET_2026_BTECH_CHEMISTRY_SECTIONAL_1,
   'comedk-uget/mathematics-sectional-1': COMEDK_UGET_2026_BTECH_MATHEMATICS_SECTIONAL_1,
+  'comedk-uget/full-mock-2': COMEDK_UGET_2026_BTECH_FULL_MOCK_2,
+  'comedk-uget/physics-sectional-2': COMEDK_UGET_2026_BTECH_PHYSICS_SECTIONAL_2,
+  'comedk-uget/chemistry-sectional-2': COMEDK_UGET_2026_BTECH_CHEMISTRY_SECTIONAL_2,
+  'comedk-uget/mathematics-sectional-2': COMEDK_UGET_2026_BTECH_MATHEMATICS_SECTIONAL_2,
 };
 const IIIT_HYDERABAD_UGEE_TESTS: Record<string, Question[]> = {
   'iiit-hyderabad-ugee/full-mock-1': IIIT_HYDERABAD_UGEE_2026_FULL_MOCK_1,
@@ -1762,6 +1798,11 @@ const SRMJEEE_TESTS: Record<string, Question[]> = {
   'srmjeee/english-aptitude-sectional-1': SRMJEEE_2026_PCM_ENGLISH_APTITUDE_SECTIONAL_1,
   'srmjeee/mixed-quick-practice-30m-1': SRMJEEE_2026_PCM_MIXED_QUICK_PRACTICE_30M_1,
   'srmjeee/mixed-quick-practice-60m-1': SRMJEEE_2026_PCM_MIXED_QUICK_PRACTICE_60M_1,
+  'srmjeee/full-mock-2': SRMJEEE_2026_PCM_FULL_MOCK_2,
+  'srmjeee/physics-sectional-2': SRMJEEE_2026_PCM_PHYSICS_SECTIONAL_2,
+  'srmjeee/chemistry-sectional-2': SRMJEEE_2026_PCM_CHEMISTRY_SECTIONAL_2,
+  'srmjeee/mathematics-sectional-2': SRMJEEE_2026_PCM_MATHEMATICS_SECTIONAL_2,
+  'srmjeee/english-aptitude-sectional-2': SRMJEEE_2026_PCM_ENGLISH_APTITUDE_SECTIONAL_2,
 };
 
 const AEEE_TESTS: Record<string, Question[]> = {
@@ -1773,6 +1814,12 @@ const AEEE_TESTS: Record<string, Question[]> = {
   'aeee/english-sectional-1': AEEE_2026_BTECH_ENGLISH_SECTIONAL_1,
   'aeee/mixed-quick-practice-30m-1': AEEE_2026_BTECH_MIXED_QUICK_PRACTICE_30M_1,
   'aeee/mixed-quick-practice-60m-1': AEEE_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1,
+  'aeee/full-mock-2': AEEE_2026_BTECH_FULL_MOCK_2,
+  'aeee/mathematics-sectional-2': AEEE_2026_BTECH_MATHEMATICS_SECTIONAL_2,
+  'aeee/physics-sectional-2': AEEE_2026_BTECH_PHYSICS_SECTIONAL_2,
+  'aeee/chemistry-sectional-2': AEEE_2026_BTECH_CHEMISTRY_SECTIONAL_2,
+  'aeee/quantitative-aptitude-sectional-2': AEEE_2026_BTECH_QUANTITATIVE_APTITUDE_SECTIONAL_2,
+  'aeee/english-sectional-2': AEEE_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
 const MET_TESTS: Record<string, Question[]> = {
@@ -1783,6 +1830,11 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-1': MET_2026_BTECH_ENGLISH_SECTIONAL_1,
   'met/mixed-quick-practice-30m-1': MET_2026_BTECH_MIXED_QUICK_PRACTICE_30M_1,
   'met/mixed-quick-practice-60m-1': MET_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1,
+  'met/full-mock-2': MET_2026_BTECH_FULL_MOCK_2,
+  'met/mathematics-sectional-2': MET_2026_BTECH_MATHEMATICS_SECTIONAL_2,
+  'met/physics-sectional-2': MET_2026_BTECH_PHYSICS_SECTIONAL_2,
+  'met/chemistry-sectional-2': MET_2026_BTECH_CHEMISTRY_SECTIONAL_2,
+  'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
 Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS);
