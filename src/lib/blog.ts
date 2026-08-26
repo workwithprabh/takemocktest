@@ -1546,6 +1546,631 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'How is the final merit list decided for SSC Stenographer?', a: 'CBT marks, normalized across shifts, decide both the Skill Test shortlist and the final merit, for both Grade C and Grade D.' },
     ],
   },
+  {
+  "slug": "cg-pet-vs-bcece-two-state-engineering-routes",
+  "title": "CG PET vs BCECE: Two State Engineering Routes That Work Completely Differently",
+  "excerpt": "One has zero negative marking and a single free-roam timer. The other locks you into three separate subject windows with a full mark deducted per wrong answer. Knowing which one you are actually training for matters.",
+  "category": "Exam Guides",
+  "readTimeMin": 6,
+  "publishedAt": "2026-08-26",
+  "authorName": "TakeMockTest Editorial",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "CG PET and BCECE both sit under \"state engineering entrance exam,\" and that label hides how differently the two are actually built. CG PET (Chhattisgarh Pre Engineering Test) is Chhattisgarh's own state route into its engineering colleges. BCECE, at least the PCM route covered here, is not Bihar's primary engineering admission path at all: that is UGEAC, run on JEE Main 2026 scores. BCECE PCM exists for remaining engineering vacancies once the primary counselling round is done, a genuinely different role than CG PET's."
+    },
+    {
+      "type": "takeaways",
+      "items": [
+        "CG PET has no negative marking at all: +1 for correct, 0 for wrong or unanswered, across 150 questions in 180 minutes.",
+        "BCECE PCM deducts a full mark per wrong answer across 300 questions worth 1,200 marks, more than triple CG PET's paper length.",
+        "CG PET uses one free-roam 180-minute timer with no subject locking. BCECE PCM locks you into Physics, then Chemistry, then Mathematics, 90 minutes each, with no way back once a subject's window closes.",
+        "BCECE PCM is a vacant-seat route, not Bihar's primary engineering admission path; that is UGEAC, run on JEE Main 2026 scores."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "CG PET vs BCECE PCM at a glance",
+      "headers": [
+        "",
+        "CG PET",
+        "BCECE PCM"
+      ],
+      "rows": [
+        [
+          "Questions",
+          "150",
+          "300"
+        ],
+        [
+          "Total marks",
+          "150",
+          "1,200"
+        ],
+        [
+          "Duration",
+          "180 minutes, one timer",
+          "270 minutes, three locked 90-minute windows"
+        ],
+        [
+          "Scoring",
+          "+1 correct, 0 wrong",
+          "+4 correct, -1 wrong"
+        ],
+        [
+          "Subject navigation",
+          "Free, across all three subjects",
+          "Locked: Physics then Chemistry then Mathematics, no return"
+        ],
+        [
+          "Role",
+          "Chhattisgarh's own state entrance",
+          "Bihar's vacant-seat route after UGEAC/JEE Main counselling"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "heading": "CG PET: no penalty, no lock, straightforward pacing",
+      "text": "CG PET's 150 questions split evenly across Physics, Chemistry, and Mathematics, 50 each, and the entire paper sits under one 180-minute timer with free movement between all three subjects. With zero negative marking, an educated guess never costs you anything beyond the time spent, which changes how you should approach a question you are not fully sure of compared to almost every other exam on this site."
+    },
+    {
+      "type": "paragraph",
+      "heading": "BCECE PCM: three papers wearing one exam's name",
+      "text": "BCECE PCM's 300 questions (100 each in Physics, Chemistry, Mathematics) are worth 4 marks correct and lose 1 mark wrong, the same scoring shape as JEE Main. What actually separates it from a normal single-timer mock is the three-part lock: Physics gets its own 90 minutes and auto-submits when time runs out, then Chemistry gets a fresh 90 minutes with no way back into Physics, then Mathematics closes the paper the same way. You cannot bank spare time from a subject you finish early and spend it on the next one."
+    },
+    {
+      "type": "callout",
+      "text": "BCECE PCM's three 90-minute windows do not let you borrow time between subjects. Finishing Physics in 70 minutes gives you nothing extra in Chemistry."
+    },
+    {
+      "type": "paragraph",
+      "heading": "Why the vacant-seat distinction matters",
+      "text": "If you are a Bihar-based PCM student, BCECE PCM is not where your primary engineering-admission attempt should go. UGEAC, which uses your JEE Main 2026 rank, is the regular first-year counselling route into Bihar's government engineering colleges. BCECE PCM sits alongside it for seats that remain unfilled once that primary process finishes, worth preparing for as a genuine backup rather than a first-choice plan."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice tests for both are on this site: [CG PET](/cg-pet/mock-test) and [BCECE](/bcece/mock-test), both under the [engineering exams directory](/exams/engineering). If locked subject timers are new to you, [sectional lock vs composite timer](/blog/sectional-lock-vs-composite-timer) covers the general strategy shift a locked format demands."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is BCECE the main way to get into a Bihar government engineering college?",
+      "a": "No. The primary route is UGEAC, which uses JEE Main 2026 scores for the regular first-year counselling. BCECE PCM is a separate route for engineering seats that remain vacant after that primary counselling round, worth preparing for as a backup, not a first-choice plan."
+    },
+    {
+      "q": "Does CG PET have negative marking?",
+      "a": "No. CG PET awards 1 mark for a correct answer and deducts nothing for a wrong or unanswered one, across 150 questions in 180 minutes."
+    },
+    {
+      "q": "Can I move between Physics, Chemistry, and Mathematics freely in BCECE PCM?",
+      "a": "No, and this is the biggest structural difference from CG PET. BCECE PCM locks you into Physics for 90 minutes, then Chemistry for a separate 90 minutes with no return to Physics, then Mathematics for a final 90 minutes, with no time borrowed between any of the three windows."
+    },
+    {
+      "q": "Which exam has more questions, CG PET or BCECE?",
+      "a": "BCECE PCM, by a wide margin: 300 questions worth 1,200 marks, against CG PET's 150 questions worth 150 marks. BCECE PCM's paper is exactly twice as long and worth eight times the marks."
+    }
+  ]
+},
+  {
+  "slug": "bits-hd-vs-gate-cs-which-to-prepare-for",
+  "title": "BITS HD vs GATE CS: Which Should You Actually Prepare For?",
+  "excerpt": "One gets you an M.E. seat at a single university. The other opens doors across every IIT, NIT, and public-sector recruiter in the country, using a scoring system three times more complicated. Here is what separates them.",
+  "category": "Exam Guides",
+  "readTimeMin": 7,
+  "publishedAt": "2026-08-26",
+  "authorName": "TakeMockTest Editorial",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Both BITS HD and GATE test Computer Science at the postgraduate-entry level, and both matter if you are eyeing an M.E. or M.Tech seat. What they are actually for is not the same thing. BITS HD is BITS Pilani's own admission test, valid for a seat at BITS specifically. GATE is a national exam whose score is portable across IITs, NITs, IIITs, and central PSU recruitment drives, which is exactly why its scoring is far more complicated than BITS HD's straightforward multiple-choice format."
+    },
+    {
+      "type": "takeaways",
+      "items": [
+        "BITS HD's M.E. Computer Science paper is 100 questions, all single-correct multiple-choice, scored a flat +3 correct and -1 wrong.",
+        "GATE CS mixes three question types in one paper: MCQ (fractional negative marking, -1/3 or -2/3 depending on marks), MSQ (multi-select, no partial credit), and NAT (typed numerical answer, no negative marking at all).",
+        "BITS HD locks you into two timed windows, a 45-minute Test I then a separate 105-minute Computer Science Test II. GATE CS runs on one unrestricted 180-minute timer with free movement across the whole paper.",
+        "A GATE score is portable across IITs, NITs, IIITs, and PSU recruitment; a BITS HD score is specific to BITS Pilani's own M.E. programme."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "BITS HD (M.E. Computer Science) vs GATE CS",
+      "headers": [
+        "",
+        "BITS HD",
+        "GATE CS"
+      ],
+      "rows": [
+        [
+          "Questions",
+          "100 (30 + 70, two locked papers)",
+          "65"
+        ],
+        [
+          "Marks",
+          "300",
+          "100"
+        ],
+        [
+          "Duration",
+          "150 minutes, two locked windows (45 + 105)",
+          "180 minutes, one unrestricted timer"
+        ],
+        [
+          "Question types",
+          "Single-correct MCQ only",
+          "MCQ, MSQ (multi-select), and NAT (numerical)"
+        ],
+        [
+          "Scoring",
+          "Flat +3 correct, -1 wrong",
+          "Mixed: MCQ -1/3 or -2/3, MSQ and NAT no penalty"
+        ],
+        [
+          "Where the score counts",
+          "BITS Pilani's own M.E. admission only",
+          "Portable: IITs, NITs, IIITs, PSU recruitment"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "heading": "BITS HD: simpler format, one specific destination",
+      "text": "Every BITS HD M.E. Computer Science question is single-correct multiple-choice, +3 for a right answer and -1 for a wrong one, no exceptions by question type or mark value. The paper itself is split into two officially separate tests: Test I (30 questions, Core Mathematics and English Language Skills & Logical Reasoning, 45 minutes) and Computer Science Test II (70 questions, 105 minutes), and once Test I's window closes, there is no going back into it. What you get for clearing it, though, is a seat specifically at BITS Pilani, not a portable score you can use anywhere else."
+    },
+    {
+      "type": "paragraph",
+      "heading": "GATE CS: harder scoring, wider reach",
+      "text": "GATE CS packs three distinct answer formats into 65 questions: MCQ, where a 1-mark wrong answer costs 1/3 mark and a 2-mark wrong answer costs 2/3 mark; MSQ, a multi-select format where you only get credit for selecting the exact correct set, nothing for a partial match and nothing lost for a wrong guess; and NAT, a typed numerical answer with no negative marking either way. That mixed scoring means your guessing strategy has to change question by question, something BITS HD's single flat scheme never asks of you. In exchange, a GATE score works far beyond one university: it is the entry point for M.Tech admission at IITs, NITs, and IIITs, and PSUs use it directly in their own recruitment shortlisting."
+    },
+    {
+      "type": "callout",
+      "text": "GATE CS's negative marking changes by question type and mark value in the same paper. BITS HD stays a flat +3/-1 throughout. Practicing one does not automatically prepare you for the other's guessing math."
+    },
+    {
+      "type": "paragraph",
+      "heading": "Deciding between the two",
+      "text": "If BITS Pilani's M.E. programme is specifically where you want to land, BITS HD is the direct route and its format is genuinely easier to prepare for: one question type, one scoring rule, no numerical-entry or multi-select traps. If you want a score that keeps your options open across multiple institutes or a PSU recruitment path, GATE CS is the one to prioritize, and its mixed scoring is worth practicing specifically rather than assuming general MCQ practice covers it. Many candidates end up preparing for both since the core Computer Science syllabus overlaps heavily, but the exam-day guessing strategy for each needs to stay separate in your head."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice tests: [BITS HD](/bits-hd/mock-test) and [GATE](/gate/mock-test), both under the [engineering exams directory](/exams/engineering). For the general math behind when a guess is worth the risk, see [understanding negative marking](/blog/understanding-negative-marking)."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a GATE score valid for admission anywhere other than the exam itself?",
+      "a": "Yes, that is GATE's main advantage over an institute-specific test like BITS HD. A GATE CS score is used for M.Tech admission across IITs, NITs, and IIITs, and directly in recruitment shortlisting by several central public sector undertakings."
+    },
+    {
+      "q": "Does BITS HD use the same question types as GATE?",
+      "a": "No. BITS HD's M.E. Computer Science paper is entirely single-correct multiple-choice, scored a flat +3 for correct and -1 for wrong. GATE CS mixes three types in one paper: MCQ, MSQ (multi-select, no partial credit), and NAT (typed numerical answer, no negative marking)."
+    },
+    {
+      "q": "Which exam has a stricter timer structure?",
+      "a": "BITS HD. It locks you into a 45-minute Test I followed by a separate 105-minute Computer Science Test II, with no way back into Test I once its window closes. GATE CS runs on one unrestricted 180-minute timer with free movement across the entire paper."
+    },
+    {
+      "q": "Can I prepare for both BITS HD and GATE CS at the same time?",
+      "a": "Yes, since the core Computer Science syllabus overlaps heavily between the two. What needs separate practice is each exam's scoring behavior: BITS HD's flat +3/-1 versus GATE CS's mixed MCQ/MSQ/NAT rules, since the right guessing strategy is not the same on both."
+    }
+  ]
+},
+  {
+  "slug": "amu-btech-admission-test-pattern-and-scoring",
+  "title": "AMU B.Tech. Admission Test 2026-27: Pattern, Scoring, and the One Number Nobody Officially Publishes",
+  "excerpt": "AMU's own Guide to Admissions confirms 100 questions, 100 marks, and 120 minutes across Chemistry, Physics, and Mathematics. What it does not confirm is how many questions come from each subject, and any source that claims otherwise is guessing.",
+  "category": "Exam Guides",
+  "readTimeMin": 5,
+  "publishedAt": "2026-08-26",
+  "authorName": "TakeMockTest Editorial",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Aligarh Muslim University runs its own B.Tech. Admission Test rather than accepting JEE Main scores, and its Guide to Admissions is unusually specific about the overall shape of the paper: 100 questions, 100 marks, 120 minutes, split across Chemistry, Physics, and Mathematics, delivered OMR-based. What it does not specify, anywhere in the official document, is how those 100 questions divide between the three subjects."
+    },
+    {
+      "type": "takeaways",
+      "items": [
+        "100 questions, 100 marks, 120 minutes, across Chemistry, Physics, and Mathematics: all four figures are directly confirmed in AMU's Guide to Admissions.",
+        "AMU does not publish an official per-subject question count. Any exact split you see quoted, including this site's own 34/33/33, is a practice structure, not an official figure.",
+        "Scoring is +1 for a correct answer and -0.25 for a wrong one, a gentler penalty than the -1 many other engineering entrances use.",
+        "The paper runs under one unrestricted 120-minute timer with free movement across all three subjects; there is no subject locking."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "What is officially confirmed vs practice-only",
+      "headers": [
+        "Detail",
+        "Status"
+      ],
+      "rows": [
+        [
+          "100 total questions, 100 total marks, 120 minutes",
+          "Official (AMU Guide to Admissions)"
+        ],
+        [
+          "Chemistry, Physics, Mathematics as the three subjects",
+          "Official (AMU Guide to Admissions)"
+        ],
+        [
+          "+1 correct, -0.25 wrong",
+          "Official (AMU Guide to Admissions)"
+        ],
+        [
+          "Exact question count per subject",
+          "Not published officially; this site uses a 34/33/33 split for pacing only"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "heading": "The 100/100/120 shell is solid, official-verified detail",
+      "text": "AMU's Guide to Admissions is direct about the core numbers: 100 objective questions worth 100 marks, answered inside a single 120-minute window, testing Chemistry, Physics, and Mathematics from the Class 12 syllabus. The scoring, +1 for a correct answer and -0.25 for an incorrect one, is also stated plainly, a lighter penalty than the -1 you would face on CUSAT CAT, BCECE, or Assam CEE, all of which also test PCM."
+    },
+    {
+      "type": "paragraph",
+      "heading": "The one number that is not published anywhere",
+      "text": "What AMU's official material stops short of is a subject-wise breakdown: it never states how many of the 100 questions come from Chemistry versus Physics versus Mathematics. This site's mock uses a 34 Chemistry, 33 Physics, 33 Mathematics split, and we say so directly on the exam pattern page rather than presenting it as an official figure, because it is not one. It is a practice-control structure built to keep the mock roughly balanced, nothing more."
+    },
+    {
+      "type": "callout",
+      "text": "If a source (including this one) hands you an exact per-subject question count for AMU B.Tech. without flagging it as unofficial, treat that number as an estimate, not a fact you can plan your subject-wise time budget around too rigidly."
+    },
+    {
+      "type": "paragraph",
+      "heading": "What this means for your prep",
+      "text": "Since the exact split is not fixed, do not build a rigid per-subject time budget around any single source's number, this site's included. Prepare all three subjects to a comparable level instead, and rely on the free-navigation 120-minute timer (there is no subject locking here, unlike several other newly added engineering entrances) to move at your own pace between them on exam day rather than a pre-planned subject order."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice under the exact +1/-0.25 scoring on [AMU B.Tech. mock tests](/amu-btech/mock-test), part of the [engineering exams directory](/exams/engineering). For how a lighter negative-marking penalty should change your guessing decisions compared to a -1 exam, see [understanding negative marking](/blog/understanding-negative-marking)."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many questions does AMU B.Tech. Admission Test have from each subject?",
+      "a": "AMU's official Guide to Admissions does not publish a subject-wise split, only the total: 100 questions across Chemistry, Physics, and Mathematics combined. Any specific per-subject number, including the 34/33/33 split used on this site, is a practice estimate, not an official figure."
+    },
+    {
+      "q": "What is the negative marking for AMU B.Tech. Admission Test?",
+      "a": "0.25 marks are deducted for each wrong answer, and 1 mark is awarded for each correct one. There is no deduction for an unanswered question."
+    },
+    {
+      "q": "Is the AMU B.Tech. Admission Test timed by subject, or one combined timer?",
+      "a": "One combined, unrestricted 120-minute timer covers all 100 questions across all three subjects, with free movement between Chemistry, Physics, and Mathematics. There is no subject locking."
+    },
+    {
+      "q": "Does AMU B.Tech. admission use JEE Main scores?",
+      "a": "No. AMU conducts its own B.Tech. Admission Test rather than using JEE Main as its admission criterion."
+    }
+  ]
+},
+  {
+  "slug": "assam-cee-2026-exam-pattern-explained",
+  "title": "Assam CEE 2026 Exam Pattern Explained: 120 Questions, +4/-1, and a State Syllabus JEE Main Does Not Test",
+  "excerpt": "Assam CEE looks like a smaller JEE Main on paper: same +4/-1 scoring shape, same three PCM subjects. The syllabus underneath is different, and that is the detail most first-time candidates miss.",
+  "category": "Exam Guides",
+  "readTimeMin": 6,
+  "publishedAt": "2026-08-26",
+  "authorName": "TakeMockTest Editorial",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Assam CEE, the Assam Combined Entrance Examination, is run by Assam Science and Technology University for B.Tech admission to engineering colleges across Assam. It shares JEE Main's +4/-1 scoring shape and its three PCM subjects, which makes it easy to assume the two exams test the same material. They do not: Assam CEE is built on the Assam State School Education Board's Division-II Higher Secondary syllabus, not the NCERT-aligned syllabus JEE Main draws from, and that gap matters more than the shared scoring pattern suggests."
+    },
+    {
+      "type": "takeaways",
+      "items": [
+        "120 questions, 480 marks, 180 minutes, split equally across Mathematics, Physics, and Chemistry: 40 questions and 160 marks each.",
+        "+4 for a correct answer, -1 for a wrong one, an unanswered question scores zero, and a question with more than one marked response also scores zero.",
+        "The official exam runs on the ASSEB Division-II Higher Secondary syllabus, not the NCERT-aligned syllabus JEE Main tests. Assam-board students have a natural edge; CBSE-only students need deliberate syllabus-gap prep.",
+        "The official paper is delivered in English and Assamese; this site's mock is English-only, a platform choice rather than a format the real exam offers."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Assam CEE 2026 at a glance",
+      "headers": [
+        "Detail",
+        "Figure"
+      ],
+      "rows": [
+        [
+          "Total questions",
+          "120 (40 Mathematics, 40 Physics, 40 Chemistry)"
+        ],
+        [
+          "Total marks",
+          "480 (160 per subject)"
+        ],
+        [
+          "Duration",
+          "180 minutes, one timer, free navigation"
+        ],
+        [
+          "Scoring",
+          "+4 correct, -1 wrong, 0 unanswered"
+        ],
+        [
+          "Syllabus basis",
+          "ASSEB Division-II (Higher Secondary), not NCERT"
+        ],
+        [
+          "Conducting body",
+          "Assam Science and Technology University"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "heading": "The scoring looks familiar, the syllabus is not",
+      "text": "Mathematics, Physics, and Chemistry each contribute 40 questions worth 160 marks, for 120 questions and 480 marks total, and every subject uses the identical +4/-1 scoring rule. A question with more than one response marked also scores zero, treated the same as a wrong answer rather than an outright disqualification. On paper this reads almost like a compressed JEE Main. The syllabus underneath is where the resemblance stops: Assam CEE draws from the Assam State School Education Board's own Division-II Higher Secondary curriculum, a state board syllabus, not the NCERT-aligned material JEE Main is built on."
+    },
+    {
+      "type": "callout",
+      "text": "A student who has only studied the NCERT/CBSE syllabus for JEE Main should not assume that preparation transfers directly to Assam CEE. The underlying board syllabus is different, even though the question count, scoring, and subject split look similar."
+    },
+    {
+      "type": "paragraph",
+      "heading": "One combined timer, no subject locking",
+      "text": "All 120 questions sit under a single 180-minute timer with free movement across Mathematics, Physics, and Chemistry, the same open-navigation format as JEE Main and unlike the locked three-window structure BCECE PCM uses for its own PCM paper. You can leave a subject mid-way and come back to it later in the same 180 minutes without losing access."
+    },
+    {
+      "type": "paragraph",
+      "heading": "English and Assamese, in practice",
+      "text": "The official Assam CEE paper is offered in English and Assamese. This site's mock is presented in English only, a deliberate platform choice rather than a claim that the real exam is English-only, worth knowing if you plan to sit the actual paper in Assamese."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice under the real scoring rule on [Assam CEE mock tests](/assam-cee/mock-test), part of the [engineering exams directory](/exams/engineering). If you are weighing Assam CEE against a national option, [JEE Main, BITSAT, or a state CET](/blog/jee-main-vs-bitsat-vs-state-cets-engineering-prep) covers how the broader marking-scheme landscape compares."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Assam CEE's syllabus the same as JEE Main's?",
+      "a": "No. Assam CEE is built on the Assam State School Education Board's Division-II Higher Secondary syllabus, a state board curriculum, while JEE Main draws from the NCERT-aligned syllabus. The scoring pattern looks similar (both use +4/-1), but the underlying material is not the same."
+    },
+    {
+      "q": "What happens if I mark more than one answer for a question in Assam CEE?",
+      "a": "It scores zero, treated the same as a wrong answer rather than disqualifying the attempt outright. An unanswered question also scores zero."
+    },
+    {
+      "q": "Can I take Assam CEE in Assamese?",
+      "a": "Yes, the official exam is offered in English and Assamese. This site's mock test is presented in English only, a platform choice, not a limitation of the real exam."
+    },
+    {
+      "q": "Does Assam CEE lock subjects like BCECE does?",
+      "a": "No. Assam CEE runs under one combined 180-minute timer with free movement across Mathematics, Physics, and Chemistry, closer to JEE Main's open-navigation format than BCECE PCM's three locked 90-minute subject windows."
+    }
+  ]
+},
+  {
+  "slug": "cusat-cat-2026-what-to-expect",
+  "title": "CUSAT CAT 2026: 225 Questions, One Free-Roam Timer, and Under 48 Seconds a Question",
+  "excerpt": "CUSAT CAT packs more questions into its 180 minutes than almost any other engineering entrance on this site, but gives you complete freedom to move between them. That combination changes how you should pace the exam.",
+  "category": "Exam Guides",
+  "readTimeMin": 5,
+  "publishedAt": "2026-08-26",
+  "authorName": "TakeMockTest Editorial",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "CUSAT CAT, the Cochin University of Science and Technology Common Admission Test, is the B.Tech Test Code 101 route into CUSAT's own engineering programmes, separate from CUSAT's B.Tech Marine Engineering test and its lateral-entry B.Tech admission route, neither of which this site covers. What stands out about Test Code 101's format is sheer density: 225 questions in 180 minutes works out to just under 48 seconds per question on average, tighter than most other entrance exams on this site, and there is no subject locking at all to slow you down further."
+    },
+    {
+      "type": "takeaways",
+      "items": [
+        "225 questions, 900 marks, 180 minutes: Mathematics 90, Physics 75, Chemistry 60.",
+        "+4 for a correct answer, -1 for a wrong one, the same shape as JEE Main.",
+        "One unrestricted timer for the whole paper, with free navigation across all three subjects and no subject locking.",
+        "225 questions in 180 minutes averages under 48 seconds a question, tighter pacing than most comparable state and institute entrances."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "CUSAT CAT 2026 B.Tech (Test Code 101)",
+      "headers": [
+        "Detail",
+        "Figure"
+      ],
+      "rows": [
+        [
+          "Total questions",
+          "225 (Mathematics 90, Physics 75, Chemistry 60)"
+        ],
+        [
+          "Total marks",
+          "900"
+        ],
+        [
+          "Duration",
+          "180 minutes, one unrestricted timer"
+        ],
+        [
+          "Scoring",
+          "+4 correct, -1 wrong"
+        ],
+        [
+          "Subject locking",
+          "None: free navigation across all three subjects"
+        ],
+        [
+          "Syllabus basis",
+          "Plus Two (Class 11-12) syllabus"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "heading": "The pacing math is the real story here",
+      "text": "Mathematics carries the most weight at 90 questions, followed by Physics at 75 and Chemistry at 60, for 225 questions and 900 marks total, all inside one 180-minute window. Divide that out and you get roughly 0.8 minutes, under 48 seconds, per question on average, tighter than CG PET's 150-question paper (72 seconds a question) or Assam CEE's 120-question paper (90 seconds a question). If your current exam prep has trained you to spend a comfortable minute or more per question, CUSAT CAT will feel noticeably rushed until you adjust."
+    },
+    {
+      "type": "callout",
+      "text": "225 questions in 180 minutes leaves under 48 seconds per question on average. That is tighter than CG PET or Assam CEE, and worth timing yourself against specifically before exam day."
+    },
+    {
+      "type": "paragraph",
+      "heading": "No subject locking, which is a genuine advantage here",
+      "text": "Unlike BCECE PCM's locked three-window structure or BITS HD's two-part timer, CUSAT CAT's current 2026 pattern uses a single unrestricted 180-minute timer with free movement between Mathematics, Physics, and Chemistry. Given the tight per-question pace, that freedom matters: you can park a slow question, clear faster ones in another subject, and come back, rather than losing time stuck inside a locked subject window you cannot leave."
+    },
+    {
+      "type": "paragraph",
+      "heading": "One test code among several",
+      "text": "CUSAT runs more than one entrance test under the CAT name. Test Code 101, the one this site covers, is specifically the B.Tech route. CUSAT's B.Tech Marine Engineering test and its lateral-entry B.Tech admission test are separate exams with their own patterns, not covered here, so confirm which test code applies to your target programme before assuming this pattern is the one you need."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice the real pace on [CUSAT CAT mock tests](/cusat-cat/mock-test), part of the [engineering exams directory](/exams/engineering). For general strategy on trading speed against accuracy under a tight per-question budget, see [speed vs accuracy in timed tests](/blog/speed-vs-accuracy-in-timed-tests)."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much time do I have per question in CUSAT CAT?",
+      "a": "On average, under 48 seconds. The paper has 225 questions inside a single 180-minute timer, tighter pacing than most other engineering entrances on this site."
+    },
+    {
+      "q": "Does CUSAT CAT lock you into one subject at a time?",
+      "a": "No. The current 2026 pattern uses one unrestricted 180-minute timer with free navigation across Mathematics, Physics, and Chemistry. There is no subject locking or separate timing window for any subject."
+    },
+    {
+      "q": "Does CUSAT CAT Test Code 101 cover CUSAT's Marine Engineering admission test too?",
+      "a": "No. Test Code 101 is specifically the B.Tech route. CUSAT's B.Tech Marine Engineering test and its lateral-entry B.Tech admission test are separate exams with their own patterns."
+    },
+    {
+      "q": "What is the negative marking for CUSAT CAT?",
+      "a": "+4 for a correct answer and -1 for a wrong one, the same scoring shape as JEE Main."
+    }
+  ]
+},
+  {
+  "slug": "engineering-entrance-exams-beyond-jee-main-2026-roundup",
+  "title": "Seven Engineering Entrance Exams Beyond JEE Main You Might Not Know About",
+  "excerpt": "JEE Main and BITSAT dominate the conversation, but a minority-institution admission test, three state CETs, a vacant-seat backup route, and two postgraduate exams round out this site's engineering coverage. Here is what each one actually is.",
+  "category": "Exam Guides",
+  "readTimeMin": 8,
+  "publishedAt": "2026-08-26",
+  "authorName": "TakeMockTest Editorial",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Most engineering-entrance conversations stop at JEE Main, JEE Advanced, and BITSAT, and understandably so, they cover the largest number of seats. Seven more exams on this site fill in the rest of the picture: one central university's own admission test, three state entrance exams, one vacant-seat backup route, and two postgraduate exams. None of them are interchangeable with each other, and knowing what each one is actually for saves you from preparing for the wrong thing."
+    },
+    {
+      "type": "takeaways",
+      "items": [
+        "AMU B.Tech. Admission Test is Aligarh Muslim University's own exam, not JEE-Main-based: 100 questions, +1/-0.25, and no officially published per-subject split.",
+        "Assam CEE, CG PET, and CUSAT CAT are each a state or institute's own primary engineering entrance, with three very different formats: locked timer, free timer, and no-negative-marking respectively.",
+        "BCECE PCM is not Bihar's main engineering route (that is UGEAC, via JEE Main); it exists for vacant seats after the primary counselling round.",
+        "BITS HD and GATE CS both test Computer Science at the postgraduate level, but a BITS HD score only counts at BITS Pilani while a GATE score is portable across IITs, NITs, IIITs, and PSU recruitment."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Seven exams, seven different shapes",
+      "headers": [
+        "Exam",
+        "Questions",
+        "Scoring",
+        "Timer"
+      ],
+      "rows": [
+        [
+          "AMU B.Tech.",
+          "100",
+          "+1 / -0.25",
+          "One 120-min timer, free navigation"
+        ],
+        [
+          "Assam CEE",
+          "120",
+          "+4 / -1",
+          "One 180-min timer, free navigation"
+        ],
+        [
+          "CG PET",
+          "150",
+          "+1 / 0 (no negative marking)",
+          "One 180-min timer, free navigation"
+        ],
+        [
+          "CUSAT CAT",
+          "225",
+          "+4 / -1",
+          "One 180-min timer, free navigation"
+        ],
+        [
+          "BCECE PCM",
+          "300",
+          "+4 / -1",
+          "Three locked 90-min windows"
+        ],
+        [
+          "BITS HD (M.E. CS)",
+          "100",
+          "+3 / -1",
+          "Two locked windows (45 + 105 min)"
+        ],
+        [
+          "GATE CS",
+          "65",
+          "Mixed by question type",
+          "One 180-min timer, free navigation"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "heading": "AMU B.Tech.: a central university's own gate",
+      "text": "Aligarh Muslim University runs its own B.Tech. Admission Test rather than accepting JEE Main scores: 100 questions across Chemistry, Physics, and Mathematics, 120 minutes, +1 for a correct answer and -0.25 for a wrong one. AMU's official material confirms the total question count but never publishes how those questions split by subject, worth knowing before you trust any source's exact per-subject number, this site's included. See [AMU B.Tech. pattern explained](/blog/amu-btech-admission-test-pattern-and-scoring) for the full detail."
+    },
+    {
+      "type": "paragraph",
+      "heading": "Three state entrances, three different formats",
+      "text": "Assam CEE (120 questions, +4/-1, ASSEB Division-II state-board syllabus rather than NCERT), CG PET (150 questions, no negative marking at all), and CUSAT CAT (225 questions, the tightest pacing of the seven at under 48 seconds a question) are each a state or institute's own primary route into its engineering colleges. All three run on a single free-navigation timer, but the scoring and pacing differ enough that treating them as interchangeable prep would be a mistake. [Assam CEE explained](/blog/assam-cee-2026-exam-pattern-explained) and [CUSAT CAT explained](/blog/cusat-cat-2026-what-to-expect) cover each in detail."
+    },
+    {
+      "type": "paragraph",
+      "heading": "BCECE PCM: a backup route, not a first choice",
+      "text": "BCECE PCM is easy to mistake for Bihar's main engineering entrance. It is not: the regular first-year route into Bihar's government engineering colleges is UGEAC, using JEE Main 2026 scores. BCECE PCM covers seats that remain vacant once that primary counselling finishes, a genuine backup worth preparing for, but not where a Bihar-based PCM student's main effort should go. It also runs the strictest timer structure of any exam on this list: three locked 90-minute subject windows with zero time borrowed between them. See [CG PET vs BCECE](/blog/cg-pet-vs-bcece-two-state-engineering-routes) for the full comparison against a free-timer state exam."
+    },
+    {
+      "type": "callout",
+      "text": "BCECE PCM and BITS HD are the two locked-timer exams on this list. Every other exam here uses one free-navigation timer for the whole paper."
+    },
+    {
+      "type": "paragraph",
+      "heading": "Two postgraduate exams, two very different reaches",
+      "text": "BITS HD and GATE CS both sit at the postgraduate Computer Science level, but they are not substitutes for each other. BITS HD's M.E. Computer Science paper is a straightforward 100-question, all-MCQ format, +3/-1, valid for a seat at BITS Pilani specifically. GATE CS mixes MCQ, multi-select, and numerical-answer questions with fractional negative marking, and a GATE score is portable across IITs, NITs, IIITs, and PSU recruitment drives. [BITS HD vs GATE CS](/blog/bits-hd-vs-gate-cs-which-to-prepare-for) breaks down which one to prioritize."
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice tests for all seven are live now: [AMU B.Tech.](/amu-btech/mock-test), [Assam CEE](/assam-cee/mock-test), [CG PET](/cg-pet/mock-test), [CUSAT CAT](/cusat-cat/mock-test), [BCECE](/bcece/mock-test), [BITS HD](/bits-hd/mock-test), and [GATE](/gate/mock-test), all under the [engineering exams directory](/exams/engineering). For the mainstream national and institute exams these sit alongside, see [JEE Main, BITSAT, or a state CET](/blog/jee-main-vs-bitsat-vs-state-cets-engineering-prep)."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which of these seven exams is the primary engineering entrance for its state or institution?",
+      "a": "AMU B.Tech., Assam CEE, CG PET, and CUSAT CAT are each their institution's or state's own primary route. BCECE PCM is the exception: Bihar's primary route is UGEAC, using JEE Main scores, and BCECE PCM covers vacant seats after that."
+    },
+    {
+      "q": "Which of these exams have no subject locking?",
+      "a": "AMU B.Tech., Assam CEE, CG PET, CUSAT CAT, and GATE CS all run on one free-navigation timer with no subject locking. BCECE PCM and BITS HD are the two exceptions, both using locked timing windows per subject or test."
+    },
+    {
+      "q": "Is a GATE CS score usable outside of one specific university?",
+      "a": "Yes. A GATE CS score is portable across IITs, NITs, and IIITs for M.Tech admission, and several PSUs use it directly in recruitment. A BITS HD score, by contrast, is specific to BITS Pilani's own M.E. programme."
+    },
+    {
+      "q": "Which of these seven exams has no negative marking?",
+      "a": "CG PET is the only one: +1 for a correct answer, 0 for a wrong or unanswered one. Every other exam on this list deducts marks for at least some wrong answers."
+    }
+  ]
+},
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
