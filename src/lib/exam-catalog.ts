@@ -145,6 +145,8 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('AMU B.Tech.', 'Institute', 'amu-btech'),
           exam('CUSAT CAT', 'Institute', 'cusat-cat'),
           exam('JAIN JET', 'Institute', 'jain-jet'),
+          exam('SAEEE', 'Institute', 'saeee'),
+          exam('SITEEE', 'Institute', 'siteee'),
         ],
       },
       {

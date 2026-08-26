@@ -91,7 +91,9 @@ export type ExamSlug =
   | 'cusat-cat'
   | 'gate'
   | 'gujcet'
-  | 'jain-jet';
+  | 'jain-jet'
+  | 'saeee'
+  | 'siteee';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -261,6 +263,8 @@ const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Pro
 const GATE_2026_INFORMATION_BROCHURE = 'https://gate2026.iitg.ac.in/doc/IB/GATE2026-IB-10102025.pdf';
 const GSHSEB_BOARD_PORTAL = 'https://www.gsebeservice.com/web/';
 const JAIN_JET_2026_BTECH_ADMISSIONS_PAGE = 'https://set.jainuniversity.ac.in/btech-admissions-in-bangalore';
+const SAEEE_2026_OFFICIAL_PAGE = 'https://saeee2026.sathyabama.ac.in/';
+const SITEEE_2026_STRUCTURE_PAGE = 'https://www.set-test.org/structure';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -8635,6 +8639,74 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'saeee': {
+    slug: 'saeee',
+    name: 'SAEEE',
+    shortName: 'SAEEE',
+    fullName: 'Sathyabama All India Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-pcm',
+        name: 'B.E./B.Tech PCM',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 60,
+          totalMarks: 60,
+          duration: 60,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 20, marks: 20 },
+            { name: 'Physics', questions: 20, marks: 20 },
+            { name: 'Chemistry', questions: 20, marks: 20 },
+          ],
+          timerNote: 'Single unrestricted 60-minute timer with free navigation across all three subjects; no subject locking.',
+          note: 'The official SAEEE pattern lists Mathematics/Biology as the alternative first subject; this TakeMockTest stage is the PCM route (Mathematics, not Biology). Sathyabama Institute of Science and Technology conducts SAEEE online, based on the Class 12 syllabus. Each correct answer earns 1 mark; there is no deduction for a wrong answer, and an unanswered question also scores zero.',
+          sourceUrl: SAEEE_2026_OFFICIAL_PAGE,
+          checkedOn: '25 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '25 August 2026' },
+        ],
+      },
+    ],
+  },
+  'siteee': {
+    slug: 'siteee',
+    name: 'SITEEE',
+    shortName: 'SITEEE',
+    fullName: 'SIT Engineering Entrance Exam',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'entrance-test',
+        name: 'Entrance Test',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 60,
+          totalMarks: 120,
+          duration: 60,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 15, marks: 30 },
+            { name: 'Chemistry', questions: 15, marks: 30 },
+            { name: 'Mathematics', questions: 30, marks: 60 },
+          ],
+          timerNote: 'Single unrestricted 60-minute timer with free navigation across all three subjects; no subject locking.',
+          note: 'Symbiosis Institute of Technology conducts SITEEE as a computer-based test on the CBSE Class 11-12 Physics, Chemistry, and Mathematics syllabus, all sections mandatory, no negative marking. The official structure publishes 60 questions for 120 marks (Physics 15/30, Chemistry 15/30, Mathematics 30/60), implying 2 marks per correct answer; the official material does not separately publish a fixed four-option count, so the four-option format used here is a TakeMockTest platform representation rather than a directly confirmed SIU rule.',
+          sourceUrl: SITEEE_2026_STRUCTURE_PAGE,
+          checkedOn: '24 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '24 August 2026' },
         ],
       },
     ],
