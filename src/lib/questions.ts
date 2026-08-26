@@ -61,6 +61,9 @@ import { IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-cle
 import { IBPS_CLERK_PRELIMS_REASONING_ABILITY_2 } from './question-banks/ibps-clerk-prelims-reasoning-ability-2';
 import { IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/ibps-clerk-prelims-numerical-ability-2';
 import { IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-clerk-prelims-english-language-2';
+import { IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1 } from './question-banks/ibps-clerk-mains-reasoning-computer-aptitude-1';
+import { IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-clerk-mains-quantitative-aptitude-1';
+import { IBPS_CLERK_MAINS_ENGLISH_1 } from './question-banks/ibps-clerk-mains-english-1';
 import { RRB_GROUP_D_CBT_GENERAL_SCIENCE_1 } from './question-banks/rrb-group-d-cbt-general-science-1';
 import { RRB_GROUP_D_CBT_MATHEMATICS_1 } from './question-banks/rrb-group-d-cbt-mathematics-1';
 import { RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-group-d-cbt-general-intelligence-reasoning-1';
@@ -725,6 +728,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-clerk/prelims-english-language-sectional-2': IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_2,
   'ibps-clerk/prelims-numerical-ability-sectional-2': IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_2,
   'ibps-clerk/prelims-reasoning-ability-sectional-2': IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'ibps-clerk/mains-full-mock-1': [
+    ...IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1,
+    ...IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_1,
+    ...IBPS_CLERK_MAINS_ENGLISH_1,
+  ],
+  'ibps-clerk/mains-reasoning-computer-aptitude-sectional-1': IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1,
+  'ibps-clerk/mains-quantitative-aptitude-sectional-1': IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_1,
+  'ibps-clerk/mains-english-language-sectional-1': IBPS_CLERK_MAINS_ENGLISH_1,
   'rrb-group-d/cbt-full-mock-1': [
     ...RRB_GROUP_D_CBT_GENERAL_SCIENCE_1,
     ...RRB_GROUP_D_CBT_MATHEMATICS_1,
@@ -2004,6 +2015,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 30
     : testId.includes('sbi-po/mains-english-language-sectional')
     ? 40
+    : testId.includes('ibps-clerk/mains-full-mock')
+    ? 130
+    : testId.includes('ibps-clerk/mains-reasoning-computer-aptitude-sectional')
+    ? 50
+    : testId.includes('ibps-clerk/mains-quantitative-aptitude-sectional')
+    ? 40
+    : testId.includes('ibps-clerk/mains-english-language-sectional')
+    ? 40
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
     : testId.includes('ssc-gd-constable/cbe-full-mock')
@@ -3058,6 +3077,11 @@ const sbiPoMainsLayout = [
   { section: 'Data Analysis and Interpretation', count: 30 },
   { section: 'English Language', count: 40 },
 ];
+const ibpsClerkMainsLayout = [
+  { section: 'Reasoning Ability & Computer Aptitude', count: 50 },
+  { section: 'Quantitative Aptitude', count: 40 },
+  { section: 'English Language', count: 40 },
+];
 const upscCsePaper1Layout = [
   { section: 'History of India and Indian National Movement', count: 15 },
   { section: 'Indian and World Geography', count: 15 },
@@ -3282,6 +3306,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
       ? ibpsPoMainsLayout
       : testId.includes('sbi-po/mains-full-mock')
         ? sbiPoMainsLayout
+      : testId.includes('ibps-clerk/mains-full-mock')
+        ? ibpsClerkMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
