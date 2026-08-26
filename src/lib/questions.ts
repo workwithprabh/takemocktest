@@ -355,6 +355,17 @@ import { KCET_ENGINEERING_FULL_MOCK_1 } from './question-banks/kcet-engineering-
 import { KCET_ENGINEERING_PHYSICS_PAPER_PRACTICE_1 } from './question-banks/kcet-engineering-physics-paper-practice-1';
 import { KCET_ENGINEERING_CHEMISTRY_PAPER_PRACTICE_1 } from './question-banks/kcet-engineering-chemistry-paper-practice-1';
 import { KCET_ENGINEERING_MATHEMATICS_PAPER_PRACTICE_1 } from './question-banks/kcet-engineering-mathematics-paper-practice-1';
+import { MHT_CET_PCM_FULL_MOCK_2 } from './question-banks/mht-cet-pcm-full-mock-2';
+import { MHT_CET_PCM_MATHEMATICS_SECTIONAL_2 } from './question-banks/mht-cet-pcm-mathematics-sectional-2';
+import { WBJEE_ENGINEERING_FULL_MOCK_2 } from './question-banks/wbjee-engineering-full-mock-2';
+import { AP_EAPCET_ENGINEERING_FULL_MOCK_2 } from './question-banks/ap-eapcet-engineering-full-mock-2';
+import { AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_2 } from './question-banks/ap-eapcet-engineering-mathematics-sectional-2';
+import { TG_EAPCET_ENGINEERING_FULL_MOCK_2 } from './question-banks/tg-eapcet-engineering-full-mock-2';
+import { TG_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_2 } from './question-banks/tg-eapcet-engineering-mathematics-sectional-2';
+import { KCET_ENGINEERING_FULL_MOCK_2 } from './question-banks/kcet-engineering-full-mock-2';
+import { KCET_ENGINEERING_PHYSICS_PAPER_PRACTICE_2 } from './question-banks/kcet-engineering-physics-paper-practice-2';
+import { KCET_ENGINEERING_CHEMISTRY_PAPER_PRACTICE_2 } from './question-banks/kcet-engineering-chemistry-paper-practice-2';
+import { KCET_ENGINEERING_MATHEMATICS_PAPER_PRACTICE_2 } from './question-banks/kcet-engineering-mathematics-paper-practice-2';
 import { SRMJEEE_2026_PCM_FULL_MOCK_1 } from './question-banks/srmjeee-2026-pcm-full-mock-1';
 import { SRMJEEE_2026_PCM_PHYSICS_SECTIONAL_1 } from './question-banks/srmjeee-2026-pcm-physics-sectional-1';
 import { SRMJEEE_2026_PCM_CHEMISTRY_SECTIONAL_1 } from './question-banks/srmjeee-2026-pcm-chemistry-sectional-1';
@@ -1691,27 +1702,38 @@ const MHT_CET_TESTS: Record<string, Question[]> = {
   'mht-cet/pcm-full-mock-1': MHT_CET_PCM_FULL_MOCK_1,
   'mht-cet/pcm-physics-chemistry-group-1': MHT_CET_PCM_PHYSICS_CHEMISTRY_GROUP_1,
   'mht-cet/pcm-mathematics-sectional-1': MHT_CET_PCM_MATHEMATICS_SECTIONAL_1,
+  'mht-cet/pcm-full-mock-2': MHT_CET_PCM_FULL_MOCK_2,
+  'mht-cet/pcm-mathematics-sectional-2': MHT_CET_PCM_MATHEMATICS_SECTIONAL_2,
 };
 const WBJEE_TESTS: Record<string, Question[]> = {
   'wbjee/engineering-full-mock-1': WBJEE_ENGINEERING_FULL_MOCK_1,
   'wbjee/engineering-mathematics-paper-1-practice-1': WBJEE_ENGINEERING_MATHEMATICS_PAPER_1_PRACTICE_1,
   'wbjee/engineering-physics-chemistry-paper-2-practice-1': WBJEE_ENGINEERING_PHYSICS_CHEMISTRY_PAPER_2_PRACTICE_1,
+  'wbjee/engineering-full-mock-2': WBJEE_ENGINEERING_FULL_MOCK_2,
 };
 const AP_EAPCET_TESTS: Record<string, Question[]> = {
   'ap-eapcet/engineering-full-mock-1': AP_EAPCET_ENGINEERING_FULL_MOCK_1,
   'ap-eapcet/engineering-mathematics-sectional-1': AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1,
   'ap-eapcet/engineering-physics-chemistry-sectional-1': AP_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1,
+  'ap-eapcet/engineering-full-mock-2': AP_EAPCET_ENGINEERING_FULL_MOCK_2,
+  'ap-eapcet/engineering-mathematics-sectional-2': AP_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_2,
 };
 const TG_EAPCET_TESTS: Record<string, Question[]> = {
   'tg-eapcet/engineering-full-mock-1': TG_EAPCET_ENGINEERING_FULL_MOCK_1,
   'tg-eapcet/engineering-mathematics-sectional-1': TG_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_1,
   'tg-eapcet/engineering-physics-chemistry-sectional-1': TG_EAPCET_ENGINEERING_PHYSICS_CHEMISTRY_SECTIONAL_1,
+  'tg-eapcet/engineering-full-mock-2': TG_EAPCET_ENGINEERING_FULL_MOCK_2,
+  'tg-eapcet/engineering-mathematics-sectional-2': TG_EAPCET_ENGINEERING_MATHEMATICS_SECTIONAL_2,
 };
 const KCET_TESTS: Record<string, Question[]> = {
   'kcet/engineering-full-mock-1': KCET_ENGINEERING_FULL_MOCK_1,
   'kcet/engineering-physics-paper-practice-1': KCET_ENGINEERING_PHYSICS_PAPER_PRACTICE_1,
   'kcet/engineering-chemistry-paper-practice-1': KCET_ENGINEERING_CHEMISTRY_PAPER_PRACTICE_1,
   'kcet/engineering-mathematics-paper-practice-1': KCET_ENGINEERING_MATHEMATICS_PAPER_PRACTICE_1,
+  'kcet/engineering-full-mock-2': KCET_ENGINEERING_FULL_MOCK_2,
+  'kcet/engineering-physics-paper-practice-2': KCET_ENGINEERING_PHYSICS_PAPER_PRACTICE_2,
+  'kcet/engineering-chemistry-paper-practice-2': KCET_ENGINEERING_CHEMISTRY_PAPER_PRACTICE_2,
+  'kcet/engineering-mathematics-paper-practice-2': KCET_ENGINEERING_MATHEMATICS_PAPER_PRACTICE_2,
 };
 const JEE_ADVANCED_TESTS: Record<string, Question[]> = {
   'jee-advanced/paper-1-full-mock-1': JEE_ADVANCED_PAPER_1_BANKS.flat(),
