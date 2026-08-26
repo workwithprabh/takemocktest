@@ -3,9 +3,8 @@ import { EXAM_LIST, getCheckedTestCount } from '@/lib/exams';
 import { EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { SITE_EMAIL } from '@/lib/schema';
 
-// Footer is the internal-linking workhorse (per the competitor research):
-// every exam + the AdSense-required static pages live here so Google can
-// crawl deep pages from any point on the site.
+// Keep the footer compact; the exam directory remains the crawlable source
+// of truth as the catalogue grows.
 export default function Footer({ country }: { country: string }) {
   const examsWithCheckedTests = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0);
 
@@ -13,13 +12,14 @@ export default function Footer({ country }: { country: string }) {
     <footer className="bg-ink-900 mt-16 pb-20 lg:pb-0">
       <div className="max-w-6xl mx-auto px-5 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
         <div>
-          <h2 className="font-sans font-semibold mb-3 text-ink-50">Available mock tests</h2>
+          <h2 className="font-sans font-semibold mb-3 text-ink-50">Popular mock tests</h2>
           <ul className="space-y-2 text-ink-300">
-            {examsWithCheckedTests.map((exam) => (
+            {examsWithCheckedTests.slice(0, 6).map((exam) => (
               <li key={exam.slug}>
                 <div><Link href={`/${country}/${exam.slug}/mock-test`} className="hover:text-ink-50 transition">{exam.name} Mock Test</Link></div>
               </li>
             ))}
+            <li><Link href={`/${country}/exams`} className="font-semibold text-ink-50 hover:text-ink-300 transition">View all mock tests →</Link></li>
           </ul>
         </div>
         <div>
