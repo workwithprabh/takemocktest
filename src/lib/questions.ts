@@ -190,6 +190,10 @@ import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-so-pre
 import { IBPS_SO_PRELIMS_REASONING_2 } from './question-banks/ibps-so-prelims-reasoning-2';
 import { IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/ibps-so-prelims-quantitative-aptitude-2';
 import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-so-prelims-english-language-2';
+import { IBPS_SO_MAINS_ENGLISH_1 } from './question-banks/ibps-so-mains-english-1';
+import { IBPS_SO_MAINS_REASONING_1 } from './question-banks/ibps-so-mains-reasoning-1';
+import { IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-so-mains-quantitative-aptitude-1';
+import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_IT_1 } from './question-banks/ibps-so-mains-professional-knowledge-it-1';
 import { RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/rbi-grade-b-phase-1-general-awareness-1';
 import { RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-grade-b-phase-1-english-language-1';
 import { RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/rbi-grade-b-phase-1-quantitative-aptitude-1';
@@ -1086,6 +1090,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-so/prelims-english-language-sectional-2': IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_2,
   'ibps-so/prelims-reasoning-sectional-2': IBPS_SO_PRELIMS_REASONING_2,
   'ibps-so/prelims-quantitative-aptitude-sectional-2': IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_2,
+  'ibps-so/mains-full-mock-1': [
+    ...IBPS_SO_MAINS_ENGLISH_1,
+    ...IBPS_SO_MAINS_REASONING_1,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_IT_1,
+  ],
+  'ibps-so/mains-english-sectional-1': IBPS_SO_MAINS_ENGLISH_1,
+  'ibps-so/mains-reasoning-sectional-1': IBPS_SO_MAINS_REASONING_1,
+  'ibps-so/mains-quantitative-aptitude-sectional-1': IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1,
+  'ibps-so/mains-professional-knowledge-it-sectional-1': IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_IT_1,
   'rbi-grade-b/phase-1-full-mock-1': [
     ...RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1,
     ...RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
@@ -2145,6 +2159,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 50
     : testId.includes('sbi-clerk/mains-reasoning-computer-aptitude-sectional')
     ? 50
+    : testId.includes('ibps-so/mains-full-mock')
+    ? 100
+    : testId.includes('ibps-so/mains-english-sectional')
+    ? 25
+    : testId.includes('ibps-so/mains-reasoning-sectional')
+    ? 25
+    : testId.includes('ibps-so/mains-quantitative-aptitude-sectional')
+    ? 25
+    : testId.includes('ibps-so/mains-professional-knowledge-it-sectional')
+    ? 25
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
     : testId.includes('ssc-gd-constable/cbe-full-mock')
@@ -3235,6 +3259,12 @@ const sbiClerkMainsLayout = [
   { section: 'Quantitative Aptitude', count: 50 },
   { section: 'Reasoning Ability & Computer Aptitude', count: 50 },
 ];
+const ibpsSoMainsLayout = [
+  { section: 'English Language', count: 25 },
+  { section: 'Reasoning', count: 25 },
+  { section: 'Quantitative Aptitude', count: 25 },
+  { section: 'Professional Knowledge', count: 25 },
+];
 const upscCsePaper1Layout = [
   { section: 'History of India and Indian National Movement', count: 15 },
   { section: 'Indian and World Geography', count: 15 },
@@ -3467,6 +3497,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? sscChslTier2Layout
       : testId.includes('sbi-clerk/mains-full-mock')
         ? sbiClerkMainsLayout
+      : testId.includes('ibps-so/mains-full-mock')
+        ? ibpsSoMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
