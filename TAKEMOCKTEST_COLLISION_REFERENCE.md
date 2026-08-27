@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-27 from 529 bank files / 19954 questions.
+Generated: 2026-08-27 from 533 bank files / 20069 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -78,12 +78,12 @@ These stem patterns have caused real duplication on this project before (within 
 | Pattern | Matches | Exams | Risk |
 |---|---:|---|---|
 | odd-one-out / classification | 12 | atma-analytical, jipmat-qa, kmat-karnataka, rpf-si, rrb-alp, rrb-technician | high |
-| spelling correction | 54 | afcat-verbal, agniveer-vayu, ailet-english, bits-hd, cds-english, ibps-clerk, ibps-po, ibps-so, inet-english, jain-jet, lic-aao, mh-cet, nabard-grade, navy-ssr, nda-general, niacl-ao, rbi-assistant, rbi-grade, sbi-po, ssc-cgl, ssc-cpo, ssc-mts, territorial-army | high |
+| spelling correction | 56 | afcat-verbal, agniveer-vayu, ailet-english, bits-hd, cds-english, ibps-clerk, ibps-po, ibps-so, inet-english, jain-jet, lic-aao, mh-cet, nabard-grade, navy-ssr, nda-general, niacl-ao, rbi-assistant, rbi-grade, sbi-po, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, territorial-army | high |
 | SI unit lookup | 54 | ap-eapcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
 | capital-city lookup | 10 | niacl-ao, rrb-ntpc, rrb-technician, ssc-cgl, ssc-gd, ssc-selection, upsc-cse | high |
 | currency lookup | 4 | niacl-ao, rrb-je, ssc-gd | high |
 | synonym/antonym instruction | 309 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, cmat-qtdi, ibps-clerk, ibps-po, ibps-so, ibsat-verbal, inet-english, jain-jet, jipmat-qa, kmat-karnataka, lic-aao, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-selection, ssc-steno, tancet-mba, territorial-army, upeseat-2026 | high |
-| blood relation generic opener | 47 | ca-foundation, ibps-clerk, ibps-po, ibps-rrb, ibps-so, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
+| blood relation generic opener | 48 | ca-foundation, ibps-clerk, ibps-po, ibps-rrb, ibps-so, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
 | analogy colon-format | 17 | ssc-steno | low |
 
 ## Shared question openings (2+ exam families, first 6 words)
@@ -98,21 +98,22 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | two numbers are in the ratio | aeee-2026, afcat-verbal, cat-varc, ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, kmat-karnataka, niacl-ao, nmat-language, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-group, rrb-je, sbi-clerk, sbi-po, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts (23) |
 | choose the word most similar in | atma-analytical, cmat-qtdi, ibps-so, ibsat-verbal, jipmat-qa, kmat-karnataka, lic-aao, mat-language, micat-va, nabard-grade, niacl-ao, nmat-language, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, snap-general, ssc-cpo, ssc-gd, ssc-selection, ssc-steno, tancet-mba (22) |
 | choose the word closest in meaning | afcat-verbal, agniveer-vayu, cds-english, gate-2026, ibps-clerk, ibps-po, inet-english, jain-jet, met-2026, navy-ssr, nda-general, rbi-assistant, sbi-po, srmjeee-2026, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, ssc-selection, territorial-army (20) |
+| which of the following is a | assam-cee, bitsat-2026, comedk-uget, gate-2026, ibps-clerk, jee-main, kcet-engineering, nabard-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sebi-grade, sidbi-grade, special-ojee, ssc-chsl, ssc-gd, ssc-je, viteee-2026 (20) |
 | a can complete a task in | ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, jipmat-qa, kmat-karnataka, mat-language, rbi-grade, rpf-si, rrb-group, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sbi-po, snap-general, ssc-cpo, ssc-mts, tancet-mba, upsc-cse (20) |
-| which of the following is a | assam-cee, bitsat-2026, comedk-uget, gate-2026, ibps-clerk, jee-main, kcet-engineering, nabard-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sebi-grade, sidbi-grade, special-ojee, ssc-gd, ssc-je, viteee-2026 (19) |
 | what is the sum of the | acet-mathematics, aeee-2026, gre-quantitative, ibps-clerk, ibps-po, ibps-rrb, ibps-so, jee-main, kcet-engineering, mht-cet, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-technician, srmjeee-2026, ssc-cpo (17) |
 | choose the word that means a | afcat-verbal, agniveer-vayu, cds-english, ibps-clerk, ibps-po, inet-english, lic-aao, navy-ssr, nda-general, niacl-ao, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-mts, ssc-steno, territorial-army (17) |
 | find the area of a rectangle | ibps-clerk, ibps-po, ibps-rrb, lic-aao, niacl-ao, rbi-assistant, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-technician, sbi-clerk, sbi-po, ssc-chsl, ssc-gd, ssc-mts, ssc-selection (17) |
 | a fair die is rolled once | aeee-2026, bcece-2026, ca-foundation, cg-pet, cusat-cat, ibps-clerk, ibps-po, met-2026, mht-cet, rbi-assistant, srmjeee-2026, ssc-cgl, ssc-selection, viteee-2026 (14) |
-| choose the correct passive voice of | agniveer-vayu, cds-english, ibps-clerk, ibps-so, inet-english, nabard-grade, navy-ssr, nda-general, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-cpo (13) |
+| choose the correct passive voice of | agniveer-vayu, cds-english, ibps-clerk, ibps-so, inet-english, nabard-grade, navy-ssr, nda-general, rbi-grade, sbi-po, sebi-grade, sidbi-grade, ssc-chsl, ssc-cpo (14) |
 | if a 1 2 3 4 | aeee-2026, agniveer-vayu, assam-cee, cg-pet, comedk-uget, gujcet-2026, jain-jet, kcet-engineering, mht-cet, nata-mathematics, srmjeee-2026, tg-eapcet (12) |
 | what is the maximum number of | aeee-2026, amu-btech, ap-eapcet, bitsat-2026, jee-main, kcet-engineering, mht-cet, srmjeee-2026, ssc-cgl, ssc-mts, viteee-2026, wbjee-engineering (12) |
 | a can complete a job in | aeee-2026, cds-elementary, ibps-clerk, ibps-rrb, ibps-so, lic-aao, niacl-ao, rbi-assistant, rrb-ntpc, sbi-po, srmjeee-2026, ssc-cgl (12) |
+| find the sum of the first | ca-foundation, cma-foundation, ibsat-verbal, jee-main, met-2026, nabard-grade, rbi-grade, rrb-technician, sebi-grade, sidbi-grade, ssc-chsl, ssc-cpo (12) |
 | choose the word most opposite in | ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, ssc-cpo, ssc-gd, ssc-mts, ssc-steno (12) |
 | a 4 kg block on a | aeee-2026, ap-eapcet, cg-pet, cusat-cat, iiit-hyderabad, kcet-engineering, mht-cet, saeee-2026, srmjeee-2026, tg-eapcet, wbjee-engineering (11) |
 | a convex lens of focal length | ap-eapcet, bcece-2026, cg-pet, comedk-uget, gujcet-2026, jee-advanced, kcet-engineering, mht-cet, srmjeee-2026, tg-eapcet, viteee-2026 (11) |
 | which of the following is the | ap-eapcet, kcet-engineering, rpf-constable, rrb-paramedical, rrb-technician, sat-math, sidbi-grade, ssc-cpo, upsc-cse, viteee-2026, wbjee-engineering (11) |
-| find the sum of the first | ca-foundation, cma-foundation, ibsat-verbal, jee-main, met-2026, nabard-grade, rbi-grade, rrb-technician, sebi-grade, sidbi-grade, ssc-cpo (11) |
+| find the area of a triangle | cds-elementary, ibps-rrb, kmat-karnataka, navy-ssr, rbi-grade, rpf-constable, rpf-si, rrb-alp, sbi-po, ssc-chsl, ssc-cpo (11) |
 | find the perimeter of a square | ibps-clerk, ibps-rrb, lic-aao, niacl-ao, rbi-assistant, rpf-constable, rpf-si, rrb-alp, ssc-chsl, ssc-gd, ssc-selection (11) |
 | which of the following numbers does | ibps-rrb, mh-cet, rpf-constable, rpf-si, rrb-je, sbi-clerk, ssc-cpo, ssc-gd, ssc-je, ssc-mts, upsc-cse (11) |
 | which article of the indian constitution | nabard-grade, niacl-ao, rbi-grade, rpf-constable, rpf-si, rrb-group, ssc-cpo, ssc-je, ssc-mts, ssc-selection, ssc-steno (11) |
@@ -122,7 +123,8 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a 2 kg body moving at | amu-btech, ap-eapcet, assam-cee, bcece-2026, comedk-uget, cusat-cat, kcet-engineering, special-ojee, srmjeee-2026, wbjee-engineering (10) |
 | in young s double slit experiment | assam-cee, comedk-uget, cusat-cat, jee-advanced, kcet-engineering, met-2026, mht-cet, special-ojee, viteee-2026, wbjee-engineering (10) |
 | which of the following best describes | bitsat-2026, ibps-clerk, ibps-po, ibsat-verbal, rbi-grade, rrb-technician, sbi-po, srmjeee-2026, ssc-je, wbjee-engineering (10) |
-| find the area of a triangle | cds-elementary, ibps-rrb, kmat-karnataka, navy-ssr, rbi-grade, rpf-constable, rpf-si, rrb-alp, sbi-po, ssc-cpo (10) |
+| which of the following is an | comedk-uget, kcet-engineering, nabard-grade, rbi-grade, rrb-alp, rrb-technician, sbi-po, ssc-cgl, ssc-chsl, viteee-2026 (10) |
+| doctor is to hospital as teacher | ibps-po, kmat-karnataka, rbi-assistant, rrb-ntpc, sbi-po, srmjeee-2026, ssc-chsl, ssc-je, ssc-selection, territorial-army (10) |
 | introducing a man a woman said | ibps-rrb, ibps-so, inet-english, jipmat-qa, niacl-ao, rbi-grade, rrb-ntpc, sebi-grade, sidbi-grade, ssc-cpo (10) |
 | what is the volume of a | act-math, ibps-clerk, ibps-po, rbi-assistant, rpf-si, rrb-group, sbi-clerk, sbi-po, ssc-cgl (9) |
 | what is the coordination number of | aeee-2026, ap-eapcet, jain-jet, kcet-engineering, met-2026, mht-cet, srmjeee-2026, viteee-2026, wbjee-engineering (9) |
@@ -130,13 +132,14 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a can finish a job in | aeee-2026, ibps-clerk, ibps-po, micat-va, rrb-alp, srmjeee-2026, ssc-cgl, ssc-mts, ssc-selection (9) |
 | a cell of emf 12 v | aeee-2026, amu-btech, ap-eapcet, assam-cee, bcece-2026, gujcet-2026, kcet-engineering, siteee-2026, wbjee-engineering (9) |
 | a radioactive sample has a half | aeee-2026, amu-btech, assam-cee, bitsat-2026, comedk-uget, kcet-engineering, met-2026, mht-cet, srmjeee-2026 (9) |
+| what does the idiom to hit | afcat-verbal, agniveer-vayu, ibps-clerk, sbi-clerk, sbi-po, snap-general, srmjeee-2026, ssc-chsl, ssc-mts (9) |
+| pen is to write as knife | afcat-verbal, ibps-clerk, jipmat-qa, lic-aao, rbi-assistant, rrb-ntpc, srmjeee-2026, ssc-chsl, ssc-je (9) |
 | according to the passage above what | ailet-english, atma-analytical, cat-varc, clat-english, cmat-qtdi, ibsat-verbal, jipmat-qa, kmat-karnataka, tancet-mba (9) |
 | a 5 kg block on a | amu-btech, ap-eapcet, assam-cee, bcece-2026, jee-main, kcet-engineering, special-ojee, tg-eapcet, wbjee-engineering (9) |
+| find the circumference of a circle | cds-elementary, ibps-rrb, kmat-karnataka, niacl-ao, rbi-grade, rpf-constable, rpf-si, rrb-technician, ssc-chsl (9) |
 | based on the passage above which | cmat-qtdi, ibsat-verbal, jipmat-qa, kmat-karnataka, mat-language, micat-va, nmat-language, snap-general, tancet-mba (9) |
-| which of the following is an | comedk-uget, kcet-engineering, nabard-grade, rbi-grade, rrb-alp, rrb-technician, sbi-po, ssc-cgl, viteee-2026 (9) |
 | the average of 6 numbers is | gre-quantitative, ibps-rrb, kmat-karnataka, niacl-ao, rpf-constable, rpf-si, sbi-po, ssc-gd, tancet-mba (9) |
 | what is the primary purpose of | ibps-po, ibsat-verbal, jee-main, jipmat-qa, nabard-grade, niacl-ao, rrb-alp, rrb-technician, tancet-mba (9) |
-| doctor is to hospital as teacher | ibps-po, kmat-karnataka, rbi-assistant, rrb-ntpc, sbi-po, srmjeee-2026, ssc-je, ssc-selection, territorial-army (9) |
 | a trader buys an item for | ibps-rrb, jipmat-qa, kmat-karnataka, rrb-paramedical, rrb-technician, sbi-po, ssc-chsl, ssc-mts, tancet-mba (9) |
 | fill in the blank by the | ibps-so, nabard-grade, navy-ssr, nda-general, rbi-grade, sbi-clerk, sidbi-grade, ssc-cpo, upeseat-2026 (9) |
 | if a 1 b 2 c | rbi-grade, rpf-constable, rpf-si, ssc-cgl, ssc-cpo, ssc-je, ssc-mts, ssc-steno, upsc-cse (9) |
@@ -148,7 +151,4 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | what is the value of sin | aeee-2026, kcet-engineering, mht-cet, rrb-alp, rrb-technician, srmjeee-2026, ssc-cpo, ssc-selection (8) |
 | for what value of k is | aeee-2026, cusat-cat, gujcet-2026, jain-jet, kcet-engineering, mht-cet, upeseat-2026, wbjee-engineering (8) |
 | one mole of an ideal gas | aeee-2026, amu-btech, bcece-2026, cusat-cat, gujcet-2026, iiit-hyderabad, tg-eapcet, viteee-2026 (8) |
-| what does the idiom to hit | afcat-verbal, agniveer-vayu, ibps-clerk, sbi-clerk, sbi-po, snap-general, srmjeee-2026, ssc-mts (8) |
-| pen is to write as knife | afcat-verbal, ibps-clerk, jipmat-qa, lic-aao, rbi-assistant, rrb-ntpc, srmjeee-2026, ssc-je (8) |
-| identify the part of the sentence | agniveer-vayu, cmat-qtdi, ibsat-verbal, lic-aao, micat-va, niacl-ao, sbi-clerk, ssc-steno (8) |
-| a wire of length 2 m | ap-eapcet, cg-pet, cusat-cat, kcet-engineering, mht-cet, srmjeee-2026, tg-eapcet, viteee-2026 (8) |
+| the average of 5 numbers is | aeee-2026, cds-elementary, lic-aao, niacl-ao, rbi-assistant, ssc-chsl, ssc-gd, tancet-mba (8) |

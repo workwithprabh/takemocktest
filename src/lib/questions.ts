@@ -57,6 +57,10 @@ import { SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_2 } from './question-banks/ssc-chsl
 import { SSC_CHSL_TIER1_ENGLISH_LANGUAGE_2 } from './question-banks/ssc-chsl-tier1-english-language-2';
 import { SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_2 } from './question-banks/ssc-chsl-tier1-quantitative-aptitude-2';
 import { SSC_CHSL_TIER1_GENERAL_AWARENESS_2 } from './question-banks/ssc-chsl-tier1-general-awareness-2';
+import { SSC_CHSL_TIER2_MATHEMATICAL_ABILITIES_1 } from './question-banks/ssc-chsl-tier2-mathematical-abilities-1';
+import { SSC_CHSL_TIER2_REASONING_GENERAL_INTELLIGENCE_1 } from './question-banks/ssc-chsl-tier2-reasoning-general-intelligence-1';
+import { SSC_CHSL_TIER2_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-chsl-tier2-english-language-comprehension-1';
+import { SSC_CHSL_TIER2_COMPUTER_KNOWLEDGE_1 } from './question-banks/ssc-chsl-tier2-computer-knowledge-1';
 import { IBPS_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/ibps-clerk-prelims-reasoning-ability-1';
 import { IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-clerk-prelims-numerical-ability-1';
 import { IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-clerk-prelims-english-language-1';
@@ -723,6 +727,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-chsl/tier-1-general-awareness-sectional-2': SSC_CHSL_TIER1_GENERAL_AWARENESS_2,
   'ssc-chsl/tier-1-quantitative-aptitude-sectional-2': SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_2,
   'ssc-chsl/tier-1-english-language-sectional-2': SSC_CHSL_TIER1_ENGLISH_LANGUAGE_2,
+  'ssc-chsl/tier-2-full-mock-1': [
+    ...SSC_CHSL_TIER2_MATHEMATICAL_ABILITIES_1,
+    ...SSC_CHSL_TIER2_REASONING_GENERAL_INTELLIGENCE_1,
+    ...SSC_CHSL_TIER2_ENGLISH_LANGUAGE_COMPREHENSION_1,
+    ...SSC_CHSL_TIER2_COMPUTER_KNOWLEDGE_1,
+  ],
+  'ssc-chsl/tier-2-mathematical-abilities-sectional-1': SSC_CHSL_TIER2_MATHEMATICAL_ABILITIES_1,
+  'ssc-chsl/tier-2-reasoning-general-intelligence-sectional-1': SSC_CHSL_TIER2_REASONING_GENERAL_INTELLIGENCE_1,
+  'ssc-chsl/tier-2-english-language-comprehension-sectional-1': SSC_CHSL_TIER2_ENGLISH_LANGUAGE_COMPREHENSION_1,
+  'ssc-chsl/tier-2-computer-knowledge-sectional-1': SSC_CHSL_TIER2_COMPUTER_KNOWLEDGE_1,
   'ibps-clerk/prelims-full-mock-1': [
     ...IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
     ...IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
@@ -2078,6 +2092,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 35
     : testId.includes('rrb-ntpc/cbt-2-general-intelligence-reasoning-sectional')
     ? 35
+    : testId.includes('ssc-chsl/tier-2-full-mock')
+    ? 115
+    : testId.includes('ssc-chsl/tier-2-mathematical-abilities-sectional')
+    ? 30
+    : testId.includes('ssc-chsl/tier-2-reasoning-general-intelligence-sectional')
+    ? 30
+    : testId.includes('ssc-chsl/tier-2-english-language-comprehension-sectional')
+    ? 40
+    : testId.includes('ssc-chsl/tier-2-computer-knowledge-sectional')
+    ? 15
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
     : testId.includes('ssc-gd-constable/cbe-full-mock')
@@ -3141,6 +3165,12 @@ const rrbNtpcCbt2Layout = [
   { section: 'Mathematics', count: 35 },
   { section: 'General Intelligence and Reasoning', count: 35 },
 ];
+const sscChslTier2Layout = [
+  { section: 'Mathematical Abilities', count: 30 },
+  { section: 'Reasoning and General Intelligence', count: 30 },
+  { section: 'English Language and Comprehension', count: 40 },
+  { section: 'Computer Knowledge Test', count: 15 },
+];
 const upscCsePaper1Layout = [
   { section: 'History of India and Indian National Movement', count: 15 },
   { section: 'Indian and World Geography', count: 15 },
@@ -3369,6 +3399,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? ibpsClerkMainsLayout
       : testId.includes('rrb-ntpc/cbt-2-full-mock')
         ? rrbNtpcCbt2Layout
+      : testId.includes('ssc-chsl/tier-2-full-mock')
+        ? sscChslTier2Layout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')

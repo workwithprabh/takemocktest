@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-27",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 529,
-    "questions": 19954
+    "bankFiles": 533,
+    "questions": 20069
   },
   "topicSaturation": [
     {
@@ -4301,6 +4301,18 @@
       ]
     },
     {
+      "section": "English Language and Comprehension",
+      "topic": "One-word substitution",
+      "questionCount": 32,
+      "examCount": 4,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-mts",
+        "ssc-steno"
+      ]
+    },
+    {
       "section": "Reasoning",
       "topic": "Ranking and Order",
       "questionCount": 30,
@@ -4310,6 +4322,18 @@
         "nabard-grade",
         "niacl-ao",
         "rbi-grade"
+      ]
+    },
+    {
+      "section": "English Language and Comprehension",
+      "topic": "Sentence improvement",
+      "questionCount": 29,
+      "examCount": 4,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-mts",
+        "ssc-steno"
       ]
     },
     {
@@ -4804,6 +4828,17 @@
       ]
     },
     {
+      "section": "English Language and Comprehension",
+      "topic": "Reading comprehension",
+      "questionCount": 59,
+      "examCount": 3,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-steno"
+      ]
+    },
+    {
       "section": "General Science",
       "topic": "Life Sciences",
       "questionCount": 40,
@@ -4816,23 +4851,34 @@
     },
     {
       "section": "English Language and Comprehension",
-      "topic": "One-word substitution",
-      "questionCount": 29,
+      "topic": "Synonym",
+      "questionCount": 35,
       "examCount": 3,
       "exams": [
-        "ssc-cgl",
+        "ssc-chsl",
         "ssc-mts",
         "ssc-steno"
       ]
     },
     {
       "section": "English Language and Comprehension",
-      "topic": "Sentence improvement",
-      "questionCount": 26,
+      "topic": "Antonym",
+      "questionCount": 33,
+      "examCount": 3,
+      "exams": [
+        "ssc-chsl",
+        "ssc-mts",
+        "ssc-steno"
+      ]
+    },
+    {
+      "section": "English Language and Comprehension",
+      "topic": "Fill in the blanks",
+      "questionCount": 30,
       "examCount": 3,
       "exams": [
         "ssc-cgl",
-        "ssc-mts",
+        "ssc-chsl",
         "ssc-steno"
       ]
     },
@@ -4870,6 +4916,17 @@
       ]
     },
     {
+      "section": "English Language and Comprehension",
+      "topic": "Idioms",
+      "questionCount": 23,
+      "examCount": 3,
+      "exams": [
+        "ssc-chsl",
+        "ssc-mts",
+        "ssc-steno"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Limits and Derivatives",
       "questionCount": 22,
@@ -4878,6 +4935,17 @@
         "bcece-2026",
         "comedk-uget",
         "kcet-engineering"
+      ]
+    },
+    {
+      "section": "English Language and Comprehension",
+      "topic": "Active and passive voice",
+      "questionCount": 21,
+      "examCount": 3,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-steno"
       ]
     },
     {
@@ -4900,6 +4968,17 @@
         "rrb-alp",
         "rrb-ntpc",
         "rrb-technician"
+      ]
+    },
+    {
+      "section": "English Language and Comprehension",
+      "topic": "Direct and indirect speech",
+      "questionCount": 18,
+      "examCount": 3,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-steno"
       ]
     },
     {
@@ -6020,8 +6099,8 @@
     },
     {
       "pattern": "spelling correction",
-      "matchCount": 54,
-      "examCount": 23,
+      "matchCount": 56,
+      "examCount": 24,
       "exams": [
         "afcat-verbal",
         "agniveer-vayu",
@@ -6043,6 +6122,7 @@
         "rbi-grade",
         "sbi-po",
         "ssc-cgl",
+        "ssc-chsl",
         "ssc-cpo",
         "ssc-mts",
         "territorial-army"
@@ -6151,7 +6231,7 @@
     },
     {
       "pattern": "blood relation generic opener",
-      "matchCount": 47,
+      "matchCount": 48,
       "examCount": 26,
       "exams": [
         "ca-foundation",
@@ -6380,6 +6460,32 @@
       ]
     },
     {
+      "opening": "which of the following is a",
+      "examCount": 20,
+      "exams": [
+        "assam-cee",
+        "bitsat-2026",
+        "comedk-uget",
+        "gate-2026",
+        "ibps-clerk",
+        "jee-main",
+        "kcet-engineering",
+        "nabard-grade",
+        "rpf-constable",
+        "rpf-si",
+        "rrb-alp",
+        "rrb-group",
+        "rrb-technician",
+        "sebi-grade",
+        "sidbi-grade",
+        "special-ojee",
+        "ssc-chsl",
+        "ssc-gd",
+        "ssc-je",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "a can complete a task in",
       "examCount": 20,
       "exams": [
@@ -6403,31 +6509,6 @@
         "ssc-mts",
         "tancet-mba",
         "upsc-cse"
-      ]
-    },
-    {
-      "opening": "which of the following is a",
-      "examCount": 19,
-      "exams": [
-        "assam-cee",
-        "bitsat-2026",
-        "comedk-uget",
-        "gate-2026",
-        "ibps-clerk",
-        "jee-main",
-        "kcet-engineering",
-        "nabard-grade",
-        "rpf-constable",
-        "rpf-si",
-        "rrb-alp",
-        "rrb-group",
-        "rrb-technician",
-        "sebi-grade",
-        "sidbi-grade",
-        "special-ojee",
-        "ssc-gd",
-        "ssc-je",
-        "viteee-2026"
       ]
     },
     {
@@ -6521,7 +6602,7 @@
     },
     {
       "opening": "choose the correct passive voice of",
-      "examCount": 13,
+      "examCount": 14,
       "exams": [
         "agniveer-vayu",
         "cds-english",
@@ -6535,6 +6616,7 @@
         "sbi-po",
         "sebi-grade",
         "sidbi-grade",
+        "ssc-chsl",
         "ssc-cpo"
       ]
     },
@@ -6590,6 +6672,24 @@
         "sbi-po",
         "srmjeee-2026",
         "ssc-cgl"
+      ]
+    },
+    {
+      "opening": "find the sum of the first",
+      "examCount": 12,
+      "exams": [
+        "ca-foundation",
+        "cma-foundation",
+        "ibsat-verbal",
+        "jee-main",
+        "met-2026",
+        "nabard-grade",
+        "rbi-grade",
+        "rrb-technician",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-chsl",
+        "ssc-cpo"
       ]
     },
     {
@@ -6662,19 +6762,19 @@
       ]
     },
     {
-      "opening": "find the sum of the first",
+      "opening": "find the area of a triangle",
       "examCount": 11,
       "exams": [
-        "ca-foundation",
-        "cma-foundation",
-        "ibsat-verbal",
-        "jee-main",
-        "met-2026",
-        "nabard-grade",
+        "cds-elementary",
+        "ibps-rrb",
+        "kmat-karnataka",
+        "navy-ssr",
         "rbi-grade",
-        "rrb-technician",
-        "sebi-grade",
-        "sidbi-grade",
+        "rpf-constable",
+        "rpf-si",
+        "rrb-alp",
+        "sbi-po",
+        "ssc-chsl",
         "ssc-cpo"
       ]
     },
@@ -6827,19 +6927,35 @@
       ]
     },
     {
-      "opening": "find the area of a triangle",
+      "opening": "which of the following is an",
       "examCount": 10,
       "exams": [
-        "cds-elementary",
-        "ibps-rrb",
-        "kmat-karnataka",
-        "navy-ssr",
+        "comedk-uget",
+        "kcet-engineering",
+        "nabard-grade",
         "rbi-grade",
-        "rpf-constable",
-        "rpf-si",
         "rrb-alp",
+        "rrb-technician",
         "sbi-po",
-        "ssc-cpo"
+        "ssc-cgl",
+        "ssc-chsl",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "doctor is to hospital as teacher",
+      "examCount": 10,
+      "exams": [
+        "ibps-po",
+        "kmat-karnataka",
+        "rbi-assistant",
+        "rrb-ntpc",
+        "sbi-po",
+        "srmjeee-2026",
+        "ssc-chsl",
+        "ssc-je",
+        "ssc-selection",
+        "territorial-army"
       ]
     },
     {
@@ -6949,6 +7065,36 @@
       ]
     },
     {
+      "opening": "what does the idiom to hit",
+      "examCount": 9,
+      "exams": [
+        "afcat-verbal",
+        "agniveer-vayu",
+        "ibps-clerk",
+        "sbi-clerk",
+        "sbi-po",
+        "snap-general",
+        "srmjeee-2026",
+        "ssc-chsl",
+        "ssc-mts"
+      ]
+    },
+    {
+      "opening": "pen is to write as knife",
+      "examCount": 9,
+      "exams": [
+        "afcat-verbal",
+        "ibps-clerk",
+        "jipmat-qa",
+        "lic-aao",
+        "rbi-assistant",
+        "rrb-ntpc",
+        "srmjeee-2026",
+        "ssc-chsl",
+        "ssc-je"
+      ]
+    },
+    {
       "opening": "according to the passage above what",
       "examCount": 9,
       "exams": [
@@ -6979,6 +7125,21 @@
       ]
     },
     {
+      "opening": "find the circumference of a circle",
+      "examCount": 9,
+      "exams": [
+        "cds-elementary",
+        "ibps-rrb",
+        "kmat-karnataka",
+        "niacl-ao",
+        "rbi-grade",
+        "rpf-constable",
+        "rpf-si",
+        "rrb-technician",
+        "ssc-chsl"
+      ]
+    },
+    {
       "opening": "based on the passage above which",
       "examCount": 9,
       "exams": [
@@ -6991,21 +7152,6 @@
         "nmat-language",
         "snap-general",
         "tancet-mba"
-      ]
-    },
-    {
-      "opening": "which of the following is an",
-      "examCount": 9,
-      "exams": [
-        "comedk-uget",
-        "kcet-engineering",
-        "nabard-grade",
-        "rbi-grade",
-        "rrb-alp",
-        "rrb-technician",
-        "sbi-po",
-        "ssc-cgl",
-        "viteee-2026"
       ]
     },
     {
@@ -7036,21 +7182,6 @@
         "rrb-alp",
         "rrb-technician",
         "tancet-mba"
-      ]
-    },
-    {
-      "opening": "doctor is to hospital as teacher",
-      "examCount": 9,
-      "exams": [
-        "ibps-po",
-        "kmat-karnataka",
-        "rbi-assistant",
-        "rrb-ntpc",
-        "sbi-po",
-        "srmjeee-2026",
-        "ssc-je",
-        "ssc-selection",
-        "territorial-army"
       ]
     },
     {
@@ -7211,31 +7342,17 @@
       ]
     },
     {
-      "opening": "what does the idiom to hit",
+      "opening": "the average of 5 numbers is",
       "examCount": 8,
       "exams": [
-        "afcat-verbal",
-        "agniveer-vayu",
-        "ibps-clerk",
-        "sbi-clerk",
-        "sbi-po",
-        "snap-general",
-        "srmjeee-2026",
-        "ssc-mts"
-      ]
-    },
-    {
-      "opening": "pen is to write as knife",
-      "examCount": 8,
-      "exams": [
-        "afcat-verbal",
-        "ibps-clerk",
-        "jipmat-qa",
+        "aeee-2026",
+        "cds-elementary",
         "lic-aao",
+        "niacl-ao",
         "rbi-assistant",
-        "rrb-ntpc",
-        "srmjeee-2026",
-        "ssc-je"
+        "ssc-chsl",
+        "ssc-gd",
+        "tancet-mba"
       ]
     },
     {
@@ -7295,17 +7412,17 @@
       ]
     },
     {
-      "opening": "find the circumference of a circle",
+      "opening": "find the volume of a cube",
       "examCount": 8,
       "exams": [
         "cds-elementary",
         "ibps-rrb",
-        "kmat-karnataka",
+        "ibps-so",
         "niacl-ao",
-        "rbi-grade",
         "rpf-constable",
         "rpf-si",
-        "rrb-technician"
+        "rrb-alp",
+        "ssc-chsl"
       ]
     },
     {
@@ -7449,6 +7566,34 @@
       ]
     },
     {
+      "opening": "improve the underlined part he is",
+      "examCount": 8,
+      "exams": [
+        "ibps-so",
+        "lic-aao",
+        "nabard-grade",
+        "niacl-ao",
+        "sbi-clerk",
+        "sidbi-grade",
+        "ssc-chsl",
+        "ssc-cpo"
+      ]
+    },
+    {
+      "opening": "five friends p q r s",
+      "examCount": 8,
+      "exams": [
+        "lic-aao",
+        "mat-language",
+        "rbi-assistant",
+        "rpf-constable",
+        "rpf-si",
+        "sbi-po",
+        "ssc-chsl",
+        "ssc-cpo"
+      ]
+    },
+    {
       "opening": "what is the chemical symbol for",
       "examCount": 8,
       "exams": [
@@ -7567,6 +7712,19 @@
       ]
     },
     {
+      "opening": "if a b 2 3 and",
+      "examCount": 7,
+      "exams": [
+        "aeee-2026",
+        "ibps-so",
+        "kmat-karnataka",
+        "lic-aao",
+        "rrb-ntpc",
+        "ssc-chsl",
+        "ssc-cpo"
+      ]
+    },
+    {
       "opening": "what is the equation of the",
       "examCount": 7,
       "exams": [
@@ -7629,19 +7787,6 @@
         "ssc-cgl",
         "ssc-selection",
         "upsc-cse"
-      ]
-    },
-    {
-      "opening": "the average of 5 numbers is",
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "cds-elementary",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "ssc-gd",
-        "tancet-mba"
       ]
     },
     {
@@ -7762,19 +7907,6 @@
       ]
     },
     {
-      "opening": "find the volume of a cube",
-      "examCount": 7,
-      "exams": [
-        "cds-elementary",
-        "ibps-rrb",
-        "ibps-so",
-        "niacl-ao",
-        "rpf-constable",
-        "rpf-si",
-        "rrb-alp"
-      ]
-    },
-    {
       "opening": "a satellite moves in a circular",
       "examCount": 7,
       "exams": [
@@ -7798,6 +7930,32 @@
         "niacl-ao",
         "snap-general",
         "ssc-cpo"
+      ]
+    },
+    {
+      "opening": "in a class of 40 students",
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-rrb",
+        "ibps-so",
+        "jain-jet",
+        "rbi-assistant",
+        "ssc-chsl",
+        "upsc-cse"
+      ]
+    },
+    {
+      "opening": "what is the primary function of",
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "nabard-grade",
+        "rbi-grade",
+        "rrb-alp",
+        "rrb-ntpc",
+        "rrb-technician",
+        "ssc-chsl"
       ]
     },
     {
@@ -7892,19 +8050,6 @@
       ]
     },
     {
-      "opening": "improve the underlined part he is",
-      "examCount": 7,
-      "exams": [
-        "ibps-so",
-        "lic-aao",
-        "nabard-grade",
-        "niacl-ao",
-        "sbi-clerk",
-        "sidbi-grade",
-        "ssc-cpo"
-      ]
-    },
-    {
       "opening": "fill in the blank she is",
       "examCount": 7,
       "exams": [
@@ -7915,19 +8060,6 @@
         "ssc-cpo",
         "ssc-gd",
         "tancet-mba"
-      ]
-    },
-    {
-      "opening": "five friends p q r s",
-      "examCount": 7,
-      "exams": [
-        "lic-aao",
-        "mat-language",
-        "rbi-assistant",
-        "rpf-constable",
-        "rpf-si",
-        "sbi-po",
-        "ssc-cpo"
       ]
     },
     {
@@ -8099,18 +8231,6 @@
         "comedk-uget",
         "viteee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "if a b 2 3 and",
-      "examCount": 6,
-      "exams": [
-        "aeee-2026",
-        "ibps-so",
-        "kmat-karnataka",
-        "lic-aao",
-        "rrb-ntpc",
-        "ssc-cpo"
       ]
     },
     {
@@ -8414,18 +8534,6 @@
       ]
     },
     {
-      "opening": "in a class of 40 students",
-      "examCount": 6,
-      "exams": [
-        "ibps-clerk",
-        "ibps-rrb",
-        "ibps-so",
-        "jain-jet",
-        "rbi-assistant",
-        "upsc-cse"
-      ]
-    },
-    {
       "opening": "in a code each letter is",
       "examCount": 6,
       "exams": [
@@ -8435,18 +8543,6 @@
         "ssc-cgl",
         "ssc-selection",
         "viteee-2026"
-      ]
-    },
-    {
-      "opening": "what is the primary function of",
-      "examCount": 6,
-      "exams": [
-        "ibps-clerk",
-        "nabard-grade",
-        "rbi-grade",
-        "rrb-alp",
-        "rrb-ntpc",
-        "rrb-technician"
       ]
     },
     {
@@ -8558,6 +8654,18 @@
       ]
     },
     {
+      "opening": "an article is sold at a",
+      "examCount": 6,
+      "exams": [
+        "ibps-rrb",
+        "lic-aao",
+        "niacl-ao",
+        "rpf-constable",
+        "sbi-clerk",
+        "ssc-chsl"
+      ]
+    },
+    {
       "opening": "find the lcm of 18 and",
       "examCount": 6,
       "exams": [
@@ -8639,6 +8747,18 @@
         "sebi-grade",
         "slat-logical",
         "ssc-je"
+      ]
+    },
+    {
+      "opening": "statements all pens are pencils all",
+      "examCount": 6,
+      "exams": [
+        "lic-aao",
+        "rbi-assistant",
+        "rpf-constable",
+        "rrb-ntpc",
+        "ssc-chsl",
+        "territorial-army"
       ]
     },
     {
@@ -8837,6 +8957,17 @@
       ]
     },
     {
+      "opening": "choose the word most nearly opposite",
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "ibps-clerk",
+        "sbi-po",
+        "srmjeee-2026",
+        "ssc-chsl"
+      ]
+    },
+    {
       "opening": "if det a 3 for a",
       "examCount": 5,
       "exams": [
@@ -8955,39 +9086,6 @@
         "mh-cet",
         "slat-logical",
         "tancet-mba"
-      ]
-    },
-    {
-      "opening": "water flows steadily through a horizontal",
-      "examCount": 5,
-      "exams": [
-        "amu-btech",
-        "bitsat-2026",
-        "iiit-hyderabad",
-        "jain-jet",
-        "kcet-engineering"
-      ]
-    },
-    {
-      "opening": "two point charges q and q",
-      "examCount": 5,
-      "exams": [
-        "amu-btech",
-        "bitsat-2026",
-        "comedk-uget",
-        "cusat-cat",
-        "kcet-engineering"
-      ]
-    },
-    {
-      "opening": "evaluate integral from 0 to pi",
-      "examCount": 5,
-      "exams": [
-        "amu-btech",
-        "ap-eapcet",
-        "bitsat-2026",
-        "mht-cet",
-        "wbjee-engineering"
       ]
     }
   ]
