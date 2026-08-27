@@ -74,7 +74,7 @@ export function faqPageSchema(faqs: { q: string; a: string }[]) {
   };
 }
 
-export function blogSchema(opts: { path: string; posts: { headline: string; path: string; datePublished: string }[] }) {
+export function blogSchema(opts: { path: string; posts: { headline: string; path: string; datePublished: string; image?: string }[] }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Blog',
@@ -85,6 +85,7 @@ export function blogSchema(opts: { path: string; posts: { headline: string; path
       headline: post.headline,
       url: `${SITE_URL}${post.path}`,
       datePublished: post.datePublished,
+      image: post.image ? `${SITE_URL}${post.image}` : undefined,
     })),
   };
 }
@@ -94,11 +95,15 @@ export function articleSchema(opts: {
   datePublished: string;
   dateModified: string;
   authorName: string;
+  path: string;
+  image?: string;
 }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: opts.headline,
+    mainEntityOfPage: `${SITE_URL}${opts.path}`,
+    image: opts.image ? `${SITE_URL}${opts.image}` : undefined,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
     author: { '@type': 'Organization', name: opts.authorName, url: `${SITE_URL}/in/about` },
