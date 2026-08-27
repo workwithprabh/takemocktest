@@ -266,6 +266,7 @@ import { SIDBI_GRADE_A_B_PHASE_1_COMPUTER_KNOWLEDGE_2 } from './question-banks/s
 import { SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_2 } from './question-banks/sidbi-grade-a-b-phase-1-general-awareness-2';
 import { SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_2 } from './question-banks/sidbi-grade-a-b-phase-1-msme-policy-finance-2';
 import { SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_2 } from './question-banks/sidbi-grade-a-b-phase-1-stream-specific-general-2';
+import { SIDBI_GRADE_A_B_PHASE_2_MSME_FINANCE_CREDIT_MANAGEMENT_1 } from './question-banks/sidbi-grade-a-b-phase-2-msme-finance-credit-management-1';
 import { LIC_AAO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/lic-aao-prelims-reasoning-ability-1';
 import { LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/lic-aao-prelims-quantitative-aptitude-1';
 import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/lic-aao-prelims-english-language-1';
@@ -1285,6 +1286,8 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sidbi-grade-a-b/phase-1-general-awareness-sectional-2': SIDBI_GRADE_A_B_PHASE_1_GENERAL_AWARENESS_2,
   'sidbi-grade-a-b/phase-1-msme-policy-finance-sectional-2': SIDBI_GRADE_A_B_PHASE_1_MSME_POLICY_FINANCE_2,
   'sidbi-grade-a-b/phase-1-stream-specific-sectional-2': SIDBI_GRADE_A_B_PHASE_1_STREAM_SPECIFIC_GENERAL_2,
+  'sidbi-grade-a-b/phase-2-full-mock-1': SIDBI_GRADE_A_B_PHASE_2_MSME_FINANCE_CREDIT_MANAGEMENT_1,
+  'sidbi-grade-a-b/phase-2-msme-finance-credit-management-sectional-1': SIDBI_GRADE_A_B_PHASE_2_MSME_FINANCE_CREDIT_MANAGEMENT_1,
   'lic-aao/prelims-full-mock-1': [
     ...LIC_AAO_PRELIMS_REASONING_ABILITY_1,
     ...LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_1,
@@ -2288,6 +2291,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 50
     : testId.includes('sidbi-grade-a-b/phase-1-full-mock')
     ? 200
+    : testId.includes('sidbi-grade-a-b/phase-2-full-mock')
+    ? 50
     : testId.includes('niacl-ao/mains-full-mock')
     ? 200
     : testId.includes('rrb-alp/cbt-1-full-mock')
@@ -2770,6 +2775,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
                         : testId.includes('economics') ? 7 : 7
           : testId.includes('sebi-grade-a')
             ? 20
+          : testId.includes('sidbi-grade-a-b/phase-2')
+            ? 50
           : testId.includes('sidbi-grade-a-b')
             ? testId.includes('english-language') ? 30
               : testId.includes('reasoning-aptitude') ? 25
@@ -3357,6 +3364,9 @@ const licAaoMainsLayout = [
   { section: 'Data Analysis and Interpretation', count: 30 },
   { section: 'Insurance and Financial Market Awareness', count: 30 },
 ];
+const sidbiGradeABPhase2Layout = [
+  { section: 'MSME Finance and Credit Management', count: 50 },
+];
 const ibpsRrbOs1MainsLayout = [
   { section: 'Reasoning', count: 40 },
   { section: 'Quantitative Aptitude', count: 40 },
@@ -3605,6 +3615,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? rbiAssistantMainsLayout
       : testId.includes('lic-aao/mains-full-mock')
         ? licAaoMainsLayout
+      : testId.includes('sidbi-grade-a-b/phase-2-full-mock')
+        ? sidbiGradeABPhase2Layout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')

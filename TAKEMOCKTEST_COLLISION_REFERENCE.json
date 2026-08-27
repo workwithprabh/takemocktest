@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-27",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 563,
-    "questions": 21199
+    "bankFiles": 564,
+    "questions": 21249
   },
   "topicSaturation": [
     {
@@ -6885,6 +6885,25 @@
       ]
     },
     {
+      "opening": "which of the following best describes",
+      "examCount": 13,
+      "exams": [
+        "bitsat-2026",
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-rrb",
+        "ibsat-verbal",
+        "rbi-assistant",
+        "rbi-grade",
+        "rrb-technician",
+        "sbi-po",
+        "sidbi-grade",
+        "srmjeee-2026",
+        "ssc-je",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "opening": "if a 1 2 3 4",
       "examCount": 12,
       "exams": [
@@ -6936,24 +6955,6 @@
         "sbi-po",
         "srmjeee-2026",
         "ssc-cgl"
-      ]
-    },
-    {
-      "opening": "which of the following best describes",
-      "examCount": 12,
-      "exams": [
-        "bitsat-2026",
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-rrb",
-        "ibsat-verbal",
-        "rbi-assistant",
-        "rbi-grade",
-        "rrb-technician",
-        "sbi-po",
-        "srmjeee-2026",
-        "ssc-je",
-        "wbjee-engineering"
       ]
     },
     {
@@ -8026,6 +8027,20 @@
       ]
     },
     {
+      "opening": "which of the following is not",
+      "examCount": 8,
+      "exams": [
+        "kcet-engineering",
+        "mh-cet",
+        "rbi-grade",
+        "sbi-clerk",
+        "sebi-grade",
+        "sidbi-grade",
+        "slat-logical",
+        "ssc-je"
+      ]
+    },
+    {
       "opening": "five friends p q r s",
       "examCount": 8,
       "exams": [
@@ -8467,19 +8482,6 @@
         "ssc-cpo",
         "ssc-gd",
         "tancet-mba"
-      ]
-    },
-    {
-      "opening": "which of the following is not",
-      "examCount": 7,
-      "exams": [
-        "kcet-engineering",
-        "mh-cet",
-        "rbi-grade",
-        "sbi-clerk",
-        "sebi-grade",
-        "slat-logical",
-        "ssc-je"
       ]
     },
     {
