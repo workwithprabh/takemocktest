@@ -96,6 +96,10 @@ import { RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1 } from './question-banks/rbi-
 import { RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/rbi-assistant-prelims-english-language-2';
 import { RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/rbi-assistant-prelims-numerical-ability-2';
 import { RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2 } from './question-banks/rbi-assistant-prelims-reasoning-ability-2';
+import { RBI_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-assistant-mains-english-language-1';
+import { RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_1 } from './question-banks/rbi-assistant-mains-numerical-ability-1';
+import { RBI_ASSISTANT_MAINS_REASONING_ABILITY_1 } from './question-banks/rbi-assistant-mains-reasoning-ability-1';
+import { RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1 } from './question-banks/rbi-assistant-mains-computer-knowledge-1';
 import { SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1 } from './question-banks/ssc-mts-cbt-numerical-mathematical-ability-1';
 import { SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1 } from './question-banks/ssc-mts-cbt-reasoning-ability-problem-solving-1';
 import { SSC_MTS_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-mts-cbt-general-awareness-1';
@@ -852,6 +856,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rbi-assistant/prelims-english-language-sectional-2': RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_2,
   'rbi-assistant/prelims-numerical-ability-sectional-2': RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2,
   'rbi-assistant/prelims-reasoning-ability-sectional-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
+  'rbi-assistant/mains-full-mock-1': [
+    ...RBI_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1,
+    ...RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_1,
+    ...RBI_ASSISTANT_MAINS_REASONING_ABILITY_1,
+    ...RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1,
+  ],
+  'rbi-assistant/mains-english-language-sectional-1': RBI_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1,
+  'rbi-assistant/mains-numerical-ability-sectional-1': RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_1,
+  'rbi-assistant/mains-reasoning-ability-sectional-1': RBI_ASSISTANT_MAINS_REASONING_ABILITY_1,
+  'rbi-assistant/mains-computer-knowledge-sectional-1': RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1,
   'ssc-mts/cbt-full-mock-1': [
     ...SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1,
     ...SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1,
@@ -2205,6 +2219,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 80
     : testId.includes('ibps-rrb-officer-scale-1/mains-full-mock')
     ? 160
+    : testId.includes('rbi-assistant/mains-full-mock')
+    ? 160
+    : testId.includes('rbi-assistant/mains-english-language-sectional')
+    ? 40
+    : testId.includes('rbi-assistant/mains-numerical-ability-sectional')
+    ? 40
+    : testId.includes('rbi-assistant/mains-reasoning-ability-sectional')
+    ? 40
+    : testId.includes('rbi-assistant/mains-computer-knowledge-sectional')
+    ? 40
     : testId.includes('ibps-rrb-officer-scale-1/prelims-full-mock')
     ? 80
     : testId.includes('upsc-cse/paper-2-full-mock')
@@ -3303,6 +3327,12 @@ const ibpsRrbOaMainsLayout = [
   { section: 'Computer Knowledge', count: 40 },
   { section: 'English Language', count: 40 },
 ];
+const rbiAssistantMainsLayout = [
+  { section: 'English Language', count: 40 },
+  { section: 'Numerical Ability', count: 40 },
+  { section: 'Reasoning Ability', count: 40 },
+  { section: 'Computer Knowledge', count: 40 },
+];
 const ibpsRrbOs1MainsLayout = [
   { section: 'Reasoning', count: 40 },
   { section: 'Quantitative Aptitude', count: 40 },
@@ -3547,6 +3577,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? ibpsRrbOaMainsLayout
       : testId.includes('ibps-rrb-officer-scale-1/mains-full-mock')
         ? ibpsRrbOs1MainsLayout
+      : testId.includes('rbi-assistant/mains-full-mock')
+        ? rbiAssistantMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
