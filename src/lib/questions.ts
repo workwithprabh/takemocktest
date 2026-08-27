@@ -272,6 +272,9 @@ import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/lic-aao-pre
 import { LIC_AAO_PRELIMS_REASONING_ABILITY_2 } from './question-banks/lic-aao-prelims-reasoning-ability-2';
 import { LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/lic-aao-prelims-quantitative-aptitude-2';
 import { LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/lic-aao-prelims-english-language-2';
+import { LIC_AAO_MAINS_REASONING_ABILITY_1 } from './question-banks/lic-aao-mains-reasoning-ability-1';
+import { LIC_AAO_MAINS_DATA_ANALYSIS_INTERPRETATION_1 } from './question-banks/lic-aao-mains-data-analysis-interpretation-1';
+import { LIC_AAO_MAINS_INSURANCE_FINANCIAL_MARKET_AWARENESS_1 } from './question-banks/lic-aao-mains-insurance-financial-market-awareness-1';
 import { NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/niacl-ao-prelims-english-language-1';
 import { NIACL_AO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/niacl-ao-prelims-reasoning-ability-1';
 import { NIACL_AO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/niacl-ao-prelims-quantitative-aptitude-1';
@@ -1298,6 +1301,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'lic-aao/prelims-reasoning-ability-sectional-2': LIC_AAO_PRELIMS_REASONING_ABILITY_2,
   'lic-aao/prelims-quantitative-aptitude-sectional-2': LIC_AAO_PRELIMS_QUANTITATIVE_APTITUDE_2,
   'lic-aao/prelims-english-language-sectional-2': LIC_AAO_PRELIMS_ENGLISH_LANGUAGE_2,
+  'lic-aao/mains-full-mock-1': [
+    ...LIC_AAO_MAINS_REASONING_ABILITY_1,
+    ...LIC_AAO_MAINS_DATA_ANALYSIS_INTERPRETATION_1,
+    ...LIC_AAO_MAINS_INSURANCE_FINANCIAL_MARKET_AWARENESS_1,
+  ],
+  'lic-aao/mains-reasoning-ability-sectional-1': LIC_AAO_MAINS_REASONING_ABILITY_1,
+  'lic-aao/mains-data-analysis-interpretation-sectional-1': LIC_AAO_MAINS_DATA_ANALYSIS_INTERPRETATION_1,
+  'lic-aao/mains-insurance-financial-market-awareness-sectional-1': LIC_AAO_MAINS_INSURANCE_FINANCIAL_MARKET_AWARENESS_1,
   'niacl-ao/prelims-full-mock-1': [
     ...NIACL_AO_PRELIMS_ENGLISH_LANGUAGE_1,
     ...NIACL_AO_PRELIMS_REASONING_ABILITY_1,
@@ -2229,6 +2240,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 40
     : testId.includes('rbi-assistant/mains-computer-knowledge-sectional')
     ? 40
+    : testId.includes('lic-aao/mains-full-mock')
+    ? 90
+    : testId.includes('lic-aao/mains-reasoning-ability-sectional')
+    ? 30
+    : testId.includes('lic-aao/mains-data-analysis-interpretation-sectional')
+    ? 30
+    : testId.includes('lic-aao/mains-insurance-financial-market-awareness-sectional')
+    ? 30
     : testId.includes('ibps-rrb-officer-scale-1/prelims-full-mock')
     ? 80
     : testId.includes('upsc-cse/paper-2-full-mock')
@@ -3333,6 +3352,11 @@ const rbiAssistantMainsLayout = [
   { section: 'Reasoning Ability', count: 40 },
   { section: 'Computer Knowledge', count: 40 },
 ];
+const licAaoMainsLayout = [
+  { section: 'Reasoning Ability', count: 30 },
+  { section: 'Data Analysis and Interpretation', count: 30 },
+  { section: 'Insurance and Financial Market Awareness', count: 30 },
+];
 const ibpsRrbOs1MainsLayout = [
   { section: 'Reasoning', count: 40 },
   { section: 'Quantitative Aptitude', count: 40 },
@@ -3579,6 +3603,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? ibpsRrbOs1MainsLayout
       : testId.includes('rbi-assistant/mains-full-mock')
         ? rbiAssistantMainsLayout
+      : testId.includes('lic-aao/mains-full-mock')
+        ? licAaoMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
