@@ -80,6 +80,9 @@ import { SBI_PO_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-po-prel
 import { SBI_PO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/sbi-po-prelims-english-language-2';
 import { SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_2 } from './question-banks/sbi-po-prelims-quantitative-aptitude-2';
 import { SBI_PO_PRELIMS_REASONING_ABILITY_2 } from './question-banks/sbi-po-prelims-reasoning-ability-2';
+import { SBI_PO_PRELIMS_ENGLISH_LANGUAGE_3 } from './question-banks/sbi-po-prelims-english-language-3';
+import { SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_3 } from './question-banks/sbi-po-prelims-quantitative-aptitude-3';
+import { SBI_PO_PRELIMS_REASONING_ABILITY_3 } from './question-banks/sbi-po-prelims-reasoning-ability-3';
 import { SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_1 } from './question-banks/sbi-po-mains-reasoning-computer-aptitude-1';
 import { SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1 } from './question-banks/sbi-po-mains-data-analysis-interpretation-1';
 import { SBI_PO_MAINS_ENGLISH_1 } from './question-banks/sbi-po-mains-english-1';
@@ -780,6 +783,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-po/prelims-english-language-sectional-2': SBI_PO_PRELIMS_ENGLISH_LANGUAGE_2,
   'sbi-po/prelims-quantitative-aptitude-sectional-2': SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_2,
   'sbi-po/prelims-reasoning-ability-sectional-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  'sbi-po/prelims-full-mock-3': [
+    ...SBI_PO_PRELIMS_ENGLISH_LANGUAGE_3,
+    ...SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_3,
+    ...SBI_PO_PRELIMS_REASONING_ABILITY_3,
+  ],
+  'sbi-po/prelims-english-language-sectional-3': SBI_PO_PRELIMS_ENGLISH_LANGUAGE_3,
+  'sbi-po/prelims-quantitative-aptitude-sectional-3': SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_3,
+  'sbi-po/prelims-reasoning-ability-sectional-3': SBI_PO_PRELIMS_REASONING_ABILITY_3,
   'sbi-po/mains-full-mock-1': [
     ...SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_1,
     ...SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1,
@@ -1695,6 +1706,21 @@ const IBPS_PO_QUICK_TESTS: Record<string, Question[]> = {
   'ibps-po/prelims-quick-20min': ibpsPoPrelimsQuickSlice(8, 10),
 };
 
+const SBI_PO_PRELIMS_POOLS: Record<string, Question[]> = {
+  'English Language': SBI_PO_PRELIMS_ENGLISH_LANGUAGE_1,
+  'Quantitative Aptitude': SBI_PO_PRELIMS_QUANTITATIVE_APTITUDE_1,
+  'Reasoning Ability': SBI_PO_PRELIMS_REASONING_ABILITY_1,
+};
+const SBI_PO_PRELIMS_SECTION_ORDER = Object.keys(SBI_PO_PRELIMS_POOLS);
+function sbiPoPrelimsQuickSlice(perSection: number, offset: number): Question[] {
+  return SBI_PO_PRELIMS_SECTION_ORDER.flatMap((section) => SBI_PO_PRELIMS_POOLS[section].slice(offset, offset + perSection));
+}
+const SBI_PO_QUICK_TESTS: Record<string, Question[]> = {
+  'sbi-po/prelims-quick-10min': sbiPoPrelimsQuickSlice(4, 0),
+  'sbi-po/prelims-quick-15min': sbiPoPrelimsQuickSlice(6, 4),
+  'sbi-po/prelims-quick-20min': sbiPoPrelimsQuickSlice(8, 10),
+};
+
 const IBPS_CLERK_PRELIMS_POOLS: Record<string, Question[]> = {
   'English Language': IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
   'Numerical Ability': IBPS_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
@@ -2013,7 +2039,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
