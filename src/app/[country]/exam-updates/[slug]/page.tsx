@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     title: update.headline,
     description: update.summary,
     path: `/${country}/exam-updates/${update.slug}`,
+    openGraphType: 'article',
   });
 }
 
@@ -35,6 +36,7 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
       datePublished: update.publishedAt,
       dateModified: update.modifiedAt,
       authorName: 'TakeMockTest',
+      path: `/${country}/exam-updates/${update.slug}`,
     }),
     breadcrumbSchema([
       { name: 'Home', path: `/${country}` },

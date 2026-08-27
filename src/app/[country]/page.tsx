@@ -63,12 +63,12 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         dangerouslySetInnerHTML={{ __html: jsonLdHtml([organizationSchema(), websiteSchema(), faqPageSchema(FAQS)]) }}
       />
 
-      <div className="overflow-hidden bg-white">
+      <div className="overflow-hidden bg-gradient-to-br from-ink-50 via-white to-action-50">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[0.92fr_1.08fr] md:items-center md:py-20">
           <div>
-            <div className="mb-5 inline-flex items-center gap-2 bg-ink-100 px-3 py-2 text-xs font-semibold text-ink-700">
-              <span className="h-2 w-2 bg-ink-900" aria-hidden="true" />
-              Practice without signing up
+            <div className="mb-5 inline-flex items-center gap-2 border border-action-100 bg-action-50 px-3 py-2 text-xs font-semibold text-action-700">
+              <span className="h-2 w-2 bg-action-600" aria-hidden="true" />
+              Free practice · No sign-up
             </div>
             <h1 className="mb-5 max-w-xl font-sans text-4xl font-bold leading-[1.08] tracking-[-0.035em] text-ink-900 md:text-6xl">
               Your exam prep starts with the right mock test
@@ -80,24 +80,24 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
               href="#exams"
               className="inline-flex min-h-12 items-center gap-3 bg-ink-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-ink-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
             >
-              Choose your exam <span aria-hidden="true">→</span>
+              Start practicing free <span aria-hidden="true">→</span>
             </a>
             <p className="mt-4 text-xs text-ink-500">Free to attempt · No login required</p>
           </div>
 
           <div className="relative">
-            <div className="relative aspect-[16/10] overflow-hidden bg-ink-100 md:aspect-[4/3]">
+            <div className="relative aspect-[16/10] overflow-hidden border border-ink-200 bg-ink-100 shadow-2xl shadow-ink-900/10 md:aspect-[4/3]">
               <Image
-                src="/images/students-preparing-for-exams.webp"
-                alt="Two students preparing for a competitive exam together"
+                src="/images/students-taking-online-mock-test.webp"
+                alt="Two Indian students practicing a competitive-exam mock test with a laptop and OMR sheet"
                 fill
                 priority
                 sizes="(min-width: 768px) 52vw, 100vw"
                 className="object-cover"
               />
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-900/45 to-transparent" aria-hidden="true" />
-              <div className="absolute bottom-4 left-4 bg-white px-3 py-2 text-xs font-semibold text-ink-900 shadow-lg">
-                Built for focused practice
+              <div className="absolute bottom-4 left-4 border border-white/60 bg-white px-3 py-2 text-xs font-semibold text-ink-900 shadow-lg">
+                Real questions · Instant results
               </div>
             </div>
 

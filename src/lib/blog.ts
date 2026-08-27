@@ -25,6 +25,13 @@ export interface BlogFaq {
   a: string;
 }
 
+export interface BlogImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -33,6 +40,7 @@ export interface BlogPost {
   readTimeMin: number;
   publishedAt: string;
   authorName: string;
+  image?: BlogImage;
   body: BlogBlock[];
   faqs?: BlogFaq[];
 }
@@ -46,6 +54,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-01-10',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/how-to-build-a-study-timetable.webp',
+      alt: 'Indian student planning a weekly competitive-exam study timetable at a desk',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Most students don\'t fail because they lack a timetable. They fail because they build one that\'s impossible to follow. A study plan only works if it survives contact with a normal week: college, sleep, and the occasional bad day.' },
       { type: 'takeaways', items: [
@@ -79,6 +93,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-01-17',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-cgl-preparation-mistakes.webp',
+      alt: 'SSC CGL aspirant reviewing an overcrowded study plan and practice papers',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC CGL preparation mistakes tend to repeat across batches, not because the exam changes, but because the same habits keep tripping up new aspirants. Here are five worth checking yourself against.' },
       { type: 'list', ordered: true, heading: 'The five mistakes at a glance', items: [
@@ -111,6 +131,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 4,
     publishedAt: '2026-01-24',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/understanding-negative-marking.webp',
+      alt: 'Student filling an OMR answer sheet beside a calculator',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Negative marking means an incorrect answer costs you marks, not just a missed opportunity. So the right strategy isn\'t "always attempt everything" or "never guess," it\'s somewhere in between, and the math is simple once you see it.' },
       { type: 'takeaways', items: [
@@ -146,6 +172,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-01-31',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/time-management-during-exam.webp',
+      alt: 'Student taking a timed mock test beside an analog clock',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'It\'s common to know the material well and still lose marks purely to poor time allocation: spending too long on one tough question while easier ones go unanswered. A little structure fixes most of this.' },
       { type: 'takeaways', items: [
@@ -177,6 +209,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-02-07',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/analyze-mock-test-performance.webp',
+      alt: 'Student reviewing section-wise mock-test performance on a laptop',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'It\'s easy to check a mock test score, feel a brief reaction, and move on to the next one. That skips the part that actually improves your next attempt: understanding why each mark was lost.' },
       { type: 'takeaways', items: [
@@ -209,6 +247,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-02-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ibps-po-vs-ssc-cgl.webp',
+      alt: 'Student comparing banking and government-exam preparation paths at a study desk',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Many aspirants prepare for both IBPS PO and SSC CGL at once, and the overlap in subjects (Quantitative Aptitude, Reasoning, English) makes that reasonable. But if you have to prioritize one, it helps to know how they actually differ.' },
       { type: 'table', heading: 'SSC CGL Tier 1 vs IBPS PO Prelims at a glance', headers: ['', 'SSC CGL Tier 1', 'IBPS PO Prelims'], rows: [
