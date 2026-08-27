@@ -252,6 +252,13 @@ import { SEBI_GRADE_A_PHASE_1_PAPER_2_FINANCE_2 } from './question-banks/sebi-gr
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-costing-2';
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-companies-act-2';
 import { SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_2 } from './question-banks/sebi-grade-a-phase-1-paper-2-economics-2';
+import { SEBI_GRADE_A_PHASE_2_PAPER_2_COMMERCE_1 } from './question-banks/sebi-grade-a-phase-2-paper-2-commerce-1';
+import { SEBI_GRADE_A_PHASE_2_PAPER_2_ACCOUNTANCY_1 } from './question-banks/sebi-grade-a-phase-2-paper-2-accountancy-1';
+import { SEBI_GRADE_A_PHASE_2_PAPER_2_MANAGEMENT_1 } from './question-banks/sebi-grade-a-phase-2-paper-2-management-1';
+import { SEBI_GRADE_A_PHASE_2_PAPER_2_FINANCE_1 } from './question-banks/sebi-grade-a-phase-2-paper-2-finance-1';
+import { SEBI_GRADE_A_PHASE_2_PAPER_2_COSTING_1 } from './question-banks/sebi-grade-a-phase-2-paper-2-costing-1';
+import { SEBI_GRADE_A_PHASE_2_PAPER_2_COMPANIES_ACT_1 } from './question-banks/sebi-grade-a-phase-2-paper-2-companies-act-1';
+import { SEBI_GRADE_A_PHASE_2_PAPER_2_ECONOMICS_1 } from './question-banks/sebi-grade-a-phase-2-paper-2-economics-1';
 import { SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/sidbi-grade-a-b-phase-1-english-language-1';
 import { SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_1 } from './question-banks/sidbi-grade-a-b-phase-1-reasoning-aptitude-1';
 import { SIDBI_GRADE_A_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/sidbi-grade-a-b-phase-1-quantitative-aptitude-1';
@@ -1254,6 +1261,22 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sebi-grade-a/phase-1-paper-2-costing-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_COSTING_2,
   'sebi-grade-a/phase-1-paper-2-companies-act-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_COMPANIES_ACT_2,
   'sebi-grade-a/phase-1-paper-2-economics-sectional-2': SEBI_GRADE_A_PHASE_1_PAPER_2_ECONOMICS_2,
+  'sebi-grade-a/phase-2-paper-2-full-mock-1': [
+    ...SEBI_GRADE_A_PHASE_2_PAPER_2_COMMERCE_1,
+    ...SEBI_GRADE_A_PHASE_2_PAPER_2_ACCOUNTANCY_1,
+    ...SEBI_GRADE_A_PHASE_2_PAPER_2_MANAGEMENT_1,
+    ...SEBI_GRADE_A_PHASE_2_PAPER_2_FINANCE_1,
+    ...SEBI_GRADE_A_PHASE_2_PAPER_2_COSTING_1,
+    ...SEBI_GRADE_A_PHASE_2_PAPER_2_COMPANIES_ACT_1,
+    ...SEBI_GRADE_A_PHASE_2_PAPER_2_ECONOMICS_1,
+  ],
+  'sebi-grade-a/phase-2-paper-2-commerce-sectional-1': SEBI_GRADE_A_PHASE_2_PAPER_2_COMMERCE_1,
+  'sebi-grade-a/phase-2-paper-2-accountancy-sectional-1': SEBI_GRADE_A_PHASE_2_PAPER_2_ACCOUNTANCY_1,
+  'sebi-grade-a/phase-2-paper-2-management-sectional-1': SEBI_GRADE_A_PHASE_2_PAPER_2_MANAGEMENT_1,
+  'sebi-grade-a/phase-2-paper-2-finance-sectional-1': SEBI_GRADE_A_PHASE_2_PAPER_2_FINANCE_1,
+  'sebi-grade-a/phase-2-paper-2-costing-sectional-1': SEBI_GRADE_A_PHASE_2_PAPER_2_COSTING_1,
+  'sebi-grade-a/phase-2-paper-2-companies-act-sectional-1': SEBI_GRADE_A_PHASE_2_PAPER_2_COMPANIES_ACT_1,
+  'sebi-grade-a/phase-2-paper-2-economics-sectional-1': SEBI_GRADE_A_PHASE_2_PAPER_2_ECONOMICS_1,
   'sidbi-grade-a-b/phase-1-full-mock-1': [
     ...SIDBI_GRADE_A_B_PHASE_1_ENGLISH_LANGUAGE_1,
     ...SIDBI_GRADE_A_B_PHASE_1_REASONING_APTITUDE_1,
@@ -2289,6 +2312,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 80
     : testId.includes('sebi-grade-a/phase-1-paper-2-full-mock')
     ? 50
+    : testId.includes('sebi-grade-a/phase-2-paper-2-full-mock')
+    ? 100
     : testId.includes('sidbi-grade-a-b/phase-1-full-mock')
     ? 200
     : testId.includes('sidbi-grade-a-b/phase-2-full-mock')
@@ -2773,6 +2798,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
                     : testId.includes('costing') ? 7
                       : testId.includes('companies-act') ? 6
                         : testId.includes('economics') ? 7 : 7
+          : testId.includes('sebi-grade-a/phase-2-paper-2')
+            ? testId.includes('commerce') ? 16
+              : testId.includes('accountancy') ? 14
+                : testId.includes('management') ? 14
+                  : testId.includes('finance') ? 16
+                    : testId.includes('costing') ? 14
+                      : testId.includes('companies-act') ? 12
+                        : testId.includes('economics') ? 14 : 14
           : testId.includes('sebi-grade-a')
             ? 20
           : testId.includes('sidbi-grade-a-b/phase-2')
@@ -3303,6 +3336,15 @@ const sebiGradeAPaper2Layout = [
   { section: 'Companies Act', count: 6 },
   { section: 'Economics', count: 7 },
 ];
+const sebiGradeAPhase2Paper2Layout = [
+  { section: 'Commerce', count: 16 },
+  { section: 'Accountancy', count: 14 },
+  { section: 'Management', count: 14 },
+  { section: 'Finance', count: 16 },
+  { section: 'Costing', count: 14 },
+  { section: 'Companies Act', count: 12 },
+  { section: 'Economics', count: 14 },
+];
 const tierTwoPaperOneLayout = [
   { section: 'Mathematical Abilities', count: 30 },
   { section: 'Reasoning and General Intelligence', count: 30 },
@@ -3625,6 +3667,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
             ? sebiGradeAPaper1Layout
             : testId.includes('sebi-grade-a/phase-1-paper-2-full-mock')
               ? sebiGradeAPaper2Layout
+              : testId.includes('sebi-grade-a/phase-2-paper-2-full-mock')
+                ? sebiGradeAPhase2Paper2Layout
               : testId.includes('niacl-ao/prelims-full-mock')
                 ? niaclAoPrelimsLayout
                 : testId.includes('niacl-ao/mains-full-mock')
