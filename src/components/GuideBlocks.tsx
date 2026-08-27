@@ -90,7 +90,7 @@ function Block({ block }: { block: GuideBlock }) {
             {block.items.map((item) => (
               <li key={item.label} className="bg-white p-4">
                 <span className="block font-semibold text-ink-900">{item.label}</span>
-                <span className="text-ink-500">{item.value}</span>
+                <span className="text-ink-700">{item.value}</span>
               </li>
             ))}
           </ul>
@@ -141,7 +141,7 @@ function Block({ block }: { block: GuideBlock }) {
                 <h2 className="text-lg font-semibold text-ink-900">{section}</h2>
                 {pattern && <span className="bg-ink-100 px-2 py-1 text-xs font-semibold text-ink-700">{pattern}</span>}
               </div>
-              <ul className="mt-3 grid gap-2 text-sm leading-6 text-ink-500 sm:grid-cols-2">
+              <ul className="mt-3 grid gap-2 text-sm leading-6 text-ink-700 sm:grid-cols-2">
                 {topics.map((topic) => <li key={topic}>&bull; {topic}</li>)}
               </ul>
             </section>
@@ -158,7 +158,7 @@ function Block({ block }: { block: GuideBlock }) {
               <article key={i} className="flex min-h-56 flex-col border border-ink-200 bg-white p-5">
                 <span className="mb-5 inline-block w-fit bg-ink-100 px-2.5 py-1 text-xs font-semibold text-ink-700">{record.badge}</span>
                 <h3 className="mb-2 text-lg font-semibold text-ink-900">{record.title}</h3>
-                <dl className="mb-5 space-y-2 text-sm text-ink-500">
+                <dl className="mb-5 space-y-2 text-sm text-ink-700">
                   {record.meta.map((m) => (
                     <div key={m.label} className="flex gap-2">
                       <dt className="font-medium text-ink-700">{m.label}:</dt>

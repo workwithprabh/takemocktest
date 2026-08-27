@@ -1,9 +1,9 @@
 import { EXAM_LIST, getExam, getExamSections } from '@/lib/exams';
 import { getExamGuide } from '@/lib/exam-guides';
-import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import GuideBlocks from '@/components/GuideBlocks';
+import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 
 export function generateStaticParams() {
   return EXAM_LIST.map((exam) => ({ exam: exam.slug }));
@@ -33,36 +33,19 @@ export default async function SyllabusPage({ params }: { params: Promise<{ count
   const guide = getExamGuide(examSlug, 'syllabus');
 
   return (
-    <div className="max-w-4xl mx-auto px-5 py-6">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: jsonLdHtml(
-            breadcrumbSchema([
-              { name: 'Home', path: `/${country}` },
-              { name: exam.name, path: `/${country}/${exam.slug}` },
-              { name: 'Syllabus', path: `/${country}/${exam.slug}/syllabus` },
-            ])
-          ),
-        }}
-      />
-      <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">
-        {guide ? guide.heading : `${exam.name} Syllabus`}
-      </h1>
+    <ExamInfoPageContent country={country} exam={exam} pageName="Syllabus" pageSlug="syllabus" heading={guide?.heading}>
       {guide ? (
-        <div className="mt-3">
-          <GuideBlocks blocks={guide.blocks} />
-        </div>
+        <GuideBlocks blocks={guide.blocks} />
       ) : (
-        <div className="mt-6 space-y-4">
+        <div className="space-y-4">
           {sections.map((section) => (
-            <div key={section} className="bg-white border border-ink-200 p-4">
-              <div className="font-sans font-semibold text-sm mb-1 text-ink-900">{section}</div>
-              <div className="text-xs text-ink-500">Detailed topic coverage is being verified before publication.</div>
+            <div key={section} className="border border-ink-200 bg-white p-4">
+              <div className="mb-1 font-sans text-sm font-semibold text-ink-900">{section}</div>
+              <div className="text-xs leading-5 text-ink-700">Detailed topic coverage is being verified before publication.</div>
             </div>
           ))}
         </div>
       )}
-    </div>
+    </ExamInfoPageContent>
   );
 }
