@@ -126,6 +126,9 @@ import { SBI_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-cler
 import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/sbi-clerk-prelims-english-language-2';
 import { SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/sbi-clerk-prelims-numerical-ability-2';
 import { SBI_CLERK_PRELIMS_REASONING_ABILITY_2 } from './question-banks/sbi-clerk-prelims-reasoning-ability-2';
+import { SBI_CLERK_MAINS_ENGLISH_1 } from './question-banks/sbi-clerk-mains-english-1';
+import { SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/sbi-clerk-mains-quantitative-aptitude-1';
+import { SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1 } from './question-banks/sbi-clerk-mains-reasoning-computer-aptitude-1';
 import { RRB_JE_CBT1_MATHEMATICS_1 } from './question-banks/rrb-je-cbt1-mathematics-1';
 import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-1';
 import { RRB_JE_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-je-cbt1-general-awareness-1';
@@ -917,6 +920,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-clerk/prelims-english-language-sectional-2': SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_2,
   'sbi-clerk/prelims-numerical-ability-sectional-2': SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_2,
   'sbi-clerk/prelims-reasoning-ability-sectional-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'sbi-clerk/mains-full-mock-1': [
+    ...SBI_CLERK_MAINS_ENGLISH_1,
+    ...SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_1,
+    ...SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1,
+  ],
+  'sbi-clerk/mains-english-sectional-1': SBI_CLERK_MAINS_ENGLISH_1,
+  'sbi-clerk/mains-quantitative-aptitude-sectional-1': SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_1,
+  'sbi-clerk/mains-reasoning-computer-aptitude-sectional-1': SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1,
   'rrb-je/cbt1-full-mock-1': [
     ...RRB_JE_CBT1_MATHEMATICS_1,
     ...RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
@@ -2126,6 +2137,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 40
     : testId.includes('ssc-chsl/tier-2-computer-knowledge-sectional')
     ? 15
+    : testId.includes('sbi-clerk/mains-full-mock')
+    ? 140
+    : testId.includes('sbi-clerk/mains-english-sectional')
+    ? 40
+    : testId.includes('sbi-clerk/mains-quantitative-aptitude-sectional')
+    ? 50
+    : testId.includes('sbi-clerk/mains-reasoning-computer-aptitude-sectional')
+    ? 50
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
     : testId.includes('ssc-gd-constable/cbe-full-mock')
@@ -3211,6 +3230,11 @@ const sscChslTier2Layout = [
   { section: 'English Language and Comprehension', count: 40 },
   { section: 'Computer Knowledge Test', count: 15 },
 ];
+const sbiClerkMainsLayout = [
+  { section: 'General English', count: 40 },
+  { section: 'Quantitative Aptitude', count: 50 },
+  { section: 'Reasoning Ability & Computer Aptitude', count: 50 },
+];
 const upscCsePaper1Layout = [
   { section: 'History of India and Indian National Movement', count: 15 },
   { section: 'Indian and World Geography', count: 15 },
@@ -3441,6 +3465,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? rrbNtpcCbt2Layout
       : testId.includes('ssc-chsl/tier-2-full-mock')
         ? sscChslTier2Layout
+      : testId.includes('sbi-clerk/mains-full-mock')
+        ? sbiClerkMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
