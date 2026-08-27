@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import UpdateFinder from '@/components/UpdateFinder';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
@@ -9,6 +10,12 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     title: 'Latest Exam Notifications, Admit Cards & Results',
     description: 'Track verified exam notifications, schedules, admit cards, answer keys, results and cutoffs with links to official sources and relevant mock tests.',
     path: `/${country}/exam-updates`,
+    image: {
+      url: '/images/latest-exam-updates-india.webp',
+      width: 1280,
+      height: 720,
+      alt: 'Indian student checking an exam notification and noting an important date',
+    },
   });
 }
 
@@ -33,24 +40,39 @@ export default async function ExamUpdatesPage({ params }: { params: Promise<{ co
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
       <div className="border-b border-ink-800 bg-ink-900 text-white">
-        <div className="mx-auto max-w-6xl px-5 py-12 md:py-16">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">Official-source summaries</p>
-          <h1 className="max-w-4xl text-3xl font-bold tracking-tight md:text-5xl">Latest exam notifications, admit cards and results</h1>
-          <p className="mt-5 max-w-3xl text-base leading-7 text-ink-300 md:text-lg">
-            Find the update that affects your exam, verify it at the official source, and move directly into the right preparation resource.
-          </p>
-          <div className="mt-8 grid max-w-3xl grid-cols-3 border border-ink-700">
-            {[
-              [updates.length, 'Verified updates'],
-              [examCount, 'Exams covered'],
-              [sourceCount, 'Official authorities'],
-            ].map(([value, label]) => (
-              <div key={label} className="border-r border-ink-700 px-3 py-4 last:border-r-0 sm:px-5">
-                <div className="text-xl font-bold text-white md:text-2xl">{value}</div>
-                <div className="mt-1 text-[11px] leading-4 text-ink-300 sm:text-xs">{label}</div>
-              </div>
-            ))}
+        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-16">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-ink-200">Official-source summaries</p>
+            <h1 className="max-w-4xl text-3xl font-bold tracking-tight md:text-5xl">Latest exam notifications, admit cards and results</h1>
+            <p className="mt-5 max-w-3xl text-base leading-7 text-ink-200 md:text-lg">
+              Find the update that affects your exam, verify it at the official source, and move directly into the right preparation resource.
+            </p>
+            <div className="mt-8 grid max-w-3xl grid-cols-3 border border-ink-700">
+              {[
+                [updates.length, 'Verified updates'],
+                [examCount, 'Exams covered'],
+                [sourceCount, 'Official authorities'],
+              ].map(([value, label]) => (
+                <div key={label} className="border-r border-ink-700 px-3 py-4 last:border-r-0 sm:px-5">
+                  <div className="text-xl font-bold text-white md:text-2xl">{value}</div>
+                  <div className="mt-1 text-[11px] leading-4 text-ink-200 sm:text-xs">{label}</div>
+                </div>
+              ))}
+            </div>
           </div>
+          <figure className="relative aspect-video overflow-hidden border border-ink-700 bg-ink-800">
+            <Image
+              src="/images/latest-exam-updates-india.webp"
+              alt="Indian student checking an exam notification and noting an important date"
+              fill
+              priority
+              sizes="(min-width: 768px) 45vw, 100vw"
+              className="object-cover"
+            />
+            <figcaption className="absolute bottom-0 left-0 bg-live-700 px-3 py-2 text-xs font-semibold text-white">
+              Checked against official sources
+            </figcaption>
+          </figure>
         </div>
       </div>
 

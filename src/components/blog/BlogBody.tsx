@@ -9,14 +9,14 @@ import type { BlogBlock } from '@/lib/blog';
 
 export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: string }) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {blocks.map((block, i) => {
         switch (block.type) {
           case 'paragraph':
             return (
               <div key={i}>
-                {block.heading && <h2 className="font-sans font-semibold text-lg mb-2 text-ink-900">{block.heading}</h2>}
-                <p className="text-sm text-ink-500 leading-relaxed">
+                {block.heading && <h2 className="mb-3 font-sans text-xl font-semibold text-ink-900">{block.heading}</h2>}
+                <p className="text-base leading-7 text-ink-700">
                   <BlogRichText text={block.text} country={country} />
                 </p>
               </div>
@@ -28,7 +28,7 @@ export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: st
                 <div className="text-xs font-semibold uppercase tracking-wide text-ink-900 mb-2">Key takeaways</div>
                 <ul className="space-y-1.5">
                   {block.items.map((item, j) => (
-                    <li key={j} className="flex gap-2.5 text-sm text-ink-700 leading-snug">
+                    <li key={j} className="flex gap-2.5 text-[15px] leading-6 text-ink-700">
                       <span className="mt-1.5 h-1.5 w-1.5 bg-ink-900 shrink-0" aria-hidden="true" />
                       {item}
                     </li>
@@ -40,11 +40,11 @@ export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: st
           case 'list':
             return (
               <div key={i}>
-                {block.heading && <h2 className="font-sans font-semibold text-lg mb-2 text-ink-900">{block.heading}</h2>}
+                {block.heading && <h2 className="mb-3 font-sans text-xl font-semibold text-ink-900">{block.heading}</h2>}
                 {block.ordered ? (
                   <ol className="space-y-1.5">
                     {block.items.map((item, j) => (
-                      <li key={j} className="flex gap-2.5 text-sm text-ink-500 leading-snug">
+                      <li key={j} className="flex gap-2.5 text-base leading-7 text-ink-700">
                         <span className="font-semibold text-ink-900 shrink-0">{j + 1}.</span>
                         {item}
                       </li>
@@ -53,7 +53,7 @@ export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: st
                 ) : (
                   <ul className="space-y-1.5">
                     {block.items.map((item, j) => (
-                      <li key={j} className="flex gap-2.5 text-sm text-ink-500 leading-snug">
+                      <li key={j} className="flex gap-2.5 text-base leading-7 text-ink-700">
                         <span className="mt-1.5 h-1.5 w-1.5 border border-ink-900 shrink-0" aria-hidden="true" />
                         {item}
                       </li>
@@ -73,7 +73,7 @@ export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: st
           case 'table':
             return (
               <div key={i}>
-                {block.heading && <h2 className="font-sans font-semibold text-lg mb-2 text-ink-900">{block.heading}</h2>}
+                {block.heading && <h2 className="mb-3 font-sans text-xl font-semibold text-ink-900">{block.heading}</h2>}
                 <div className="overflow-x-auto border border-ink-200">
                   <table className="w-full text-sm border-collapse">
                     <thead>
@@ -87,7 +87,7 @@ export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: st
                       {block.rows.map((row, r) => (
                         <tr key={r} className={r % 2 === 1 ? 'bg-ink-50' : 'bg-white'}>
                           {row.map((cell, c) => (
-                            <td key={c} className="text-ink-500 px-3 py-2 border-t border-ink-200 align-top">{cell}</td>
+                            <td key={c} className="border-t border-ink-200 px-3 py-3 align-top text-ink-700">{cell}</td>
                           ))}
                         </tr>
                       ))}

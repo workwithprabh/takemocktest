@@ -68,7 +68,7 @@ export default async function ExamCategoryPage({
         <div>
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Exam pathway</p>
           <h1 className="mb-2 text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">{category.name}</h1>
-          <p className="max-w-2xl text-sm leading-6 text-ink-500">{category.description}</p>
+          <p className="max-w-2xl text-sm leading-6 text-ink-700">{category.description}</p>
         </div>
         <div className="border-l-0 border-ink-200 md:border-l md:pl-8">
           <div className="text-3xl font-bold text-ink-900">{getCategoryExamCount(category)}</div>
@@ -80,7 +80,7 @@ export default async function ExamCategoryPage({
 
       <section className="mt-12 border border-ink-200 bg-ink-50 p-5" aria-labelledby="research-sources">
         <h2 id="research-sources" className="mb-2 text-sm font-bold text-ink-900">Official sources reviewed</h2>
-        <p className="mb-3 text-xs leading-5 text-ink-500">Exam names were checked against examination bodies and official admissions or recruitment portals. Schedules and eligibility can change, so always confirm details with the conducting body.</p>
+        <p className="mb-3 text-xs leading-5 text-ink-700">Exam names were checked against examination bodies and official admissions or recruitment portals. Schedules and eligibility can change, so always confirm details with the conducting body.</p>
         <div className="flex flex-wrap gap-x-5 gap-y-2">
           {category.sources.map((source) => (
             <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="text-xs font-semibold text-ink-700 underline underline-offset-4 hover:text-ink-900">

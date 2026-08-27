@@ -56,7 +56,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
     <article className="mx-auto max-w-4xl px-5 py-8 md:py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
-      <nav aria-label="Breadcrumb" className="mb-6 text-xs text-ink-500">
+      <nav aria-label="Breadcrumb" className="mb-6 text-xs text-ink-600">
         <Link href={`/${country}/blog`} className="underline transition hover:text-ink-900">Preparation library</Link>
       </nav>
 
@@ -66,8 +66,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
           {post.category}
         </span>
         <h1 className="max-w-3xl font-sans text-3xl font-bold leading-[1.08] tracking-[-0.03em] text-ink-900 md:text-5xl">{post.title}</h1>
-        <p className="mt-5 max-w-2xl text-base leading-7 text-ink-500">{post.excerpt}</p>
-        <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-ink-200 pt-4 text-xs text-ink-500">
+        <p className="mt-5 max-w-2xl text-base leading-7 text-ink-700">{post.excerpt}</p>
+        <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-ink-200 pt-4 text-xs text-ink-600">
           <span className="font-semibold text-ink-700">{post.authorName}</span>
           <span aria-hidden="true">·</span>
           <time dateTime={post.publishedAt}>{new Date(post.publishedAt).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
@@ -99,7 +99,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
         <section aria-labelledby="practice-cta-heading" className="mt-12 border border-action-100 bg-action-50 p-5 md:flex md:items-center md:justify-between md:gap-6">
           <div>
             <h2 id="practice-cta-heading" className="font-sans text-base font-semibold text-ink-900">Put the strategy into practice</h2>
-            <p className="mt-1 text-sm leading-6 text-ink-500">Choose a checked mock test and apply what you learned while the idea is fresh.</p>
+            <p className="mt-1 text-sm leading-6 text-ink-700">Choose a checked mock test and apply what you learned while the idea is fresh.</p>
           </div>
           <Link href={`/${country}/exams?availability=available`} className="mt-4 inline-flex min-h-11 shrink-0 items-center bg-action-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-action-800 md:mt-0">
             Find a mock test →
@@ -116,7 +116,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
                     {faq.q}
                     <span className="text-lg font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
                   </summary>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-500">{faq.a}</p>
+                  <p className="mt-2 text-sm leading-6 text-ink-700">{faq.a}</p>
                 </details>
               ))}
             </div>
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
                     )}
                     <span className="p-4">
                       <span className="block font-sans text-sm font-semibold text-ink-900 group-hover:underline">{relatedPost.title}</span>
-                      <span className="mt-1 block text-xs leading-5 text-ink-500">{relatedPost.excerpt}</span>
+                      <span className="mt-1 block text-xs leading-5 text-ink-600">{relatedPost.excerpt}</span>
                     </span>
                   </Link>
                 );

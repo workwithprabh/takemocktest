@@ -45,7 +45,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
       <header className="mb-9 max-w-3xl md:mb-12">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-action-700">Preparation library</p>
         <h1 className="font-sans text-3xl font-bold tracking-[-0.025em] text-ink-900 md:text-5xl">Study tips &amp; exam strategy</h1>
-        <p className="mt-4 max-w-2xl text-sm leading-6 text-ink-500 md:text-base">
+        <p className="mt-4 max-w-2xl text-sm leading-6 text-ink-700 md:text-base">
           Practical, evergreen advice for exam prep. No fluff, no fabricated news, just what actually helps you score better.
         </p>
       </header>
@@ -111,8 +111,8 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
                       {post.category}
                     </span>
                     <h3 className="font-sans text-base font-semibold leading-snug text-ink-900 group-hover:underline">{post.title}</h3>
-                    <p className="mt-2 line-clamp-3 text-xs leading-5 text-ink-500">{post.excerpt}</p>
-                    <div className="mt-auto flex items-center justify-between pt-5 text-xs text-ink-500">
+                    <p className="mt-2 line-clamp-3 text-xs leading-5 text-ink-700">{post.excerpt}</p>
+                    <div className="mt-auto flex items-center justify-between pt-5 text-xs text-ink-600">
                       <span>{post.readTimeMin} min read</span>
                       <span className="font-semibold text-ink-900" aria-hidden="true">→</span>
                     </div>
@@ -128,7 +128,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
         <div className="mb-6">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Browse by topic</p>
           <h2 id="all-guides-heading" className="font-sans text-2xl font-bold text-ink-900">All {BLOG_POSTS.length} preparation guides</h2>
-          <p className="mt-2 text-sm text-ink-500">Open a topic to scan every guide without scrolling through one long card wall.</p>
+          <p className="mt-2 text-sm text-ink-700">Open a topic to scan every guide without scrolling through one long card wall.</p>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           {categories.map((category) => {

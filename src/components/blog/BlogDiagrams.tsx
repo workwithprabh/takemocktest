@@ -85,10 +85,10 @@ function NegativeMarkingMath() {
         <g key={p.label}>
           <circle cx={scale(p.v)} cy={y} r="6" fill={INK[900]} />
           <text x={scale(p.v)} y={y - 16} fontSize="13" fill={INK[900]} textAnchor="middle" fontWeight="600">{p.label}</text>
-          <text x={scale(p.v)} y={y + 28} fontSize="10" fill={INK[500]} textAnchor="middle">{p.sub}</text>
+          <text x={scale(p.v)} y={y + 28} fontSize="10" fill={INK[700]} textAnchor="middle">{p.sub}</text>
         </g>
       ))}
-      <text x={(x0 + x1) / 2} y="140" fontSize="10" fill={INK[300]} textAnchor="middle">Example ratio shown: 1 mark per question, 0.25 deducted for a wrong answer</text>
+      <text x={(x0 + x1) / 2} y="140" fontSize="10" fill={INK[500]} textAnchor="middle">Example ratio shown: 1 mark per question, 0.25 deducted for a wrong answer</text>
     </svg>
   );
 }
@@ -240,7 +240,7 @@ export function BlogDiagram({ id, caption }: { id: BlogDiagramId; caption: strin
   return (
     <figure className="border border-ink-200 bg-white p-4">
       <Diagram />
-      <figcaption className="text-xs text-ink-500 mt-3 text-center">{caption}</figcaption>
+      <figcaption className="mt-3 text-center text-xs leading-5 text-ink-700">{caption}</figcaption>
     </figure>
   );
 }
