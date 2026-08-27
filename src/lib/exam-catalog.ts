@@ -148,6 +148,8 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('SAEEE', 'Institute', 'saeee'),
           exam('SITEEE', 'Institute', 'siteee'),
           exam('UPESEAT', 'Institute', 'upeseat'),
+          exam('NMIMS-CET', 'Institute', 'nmims-cet'),
+          exam('BV-BTECH', 'Institute', 'bv-btech'),
         ],
       },
       {

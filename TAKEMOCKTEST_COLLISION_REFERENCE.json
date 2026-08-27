@@ -2,21 +2,22 @@
   "generatedAt": "2026-08-27",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 533,
-    "questions": 20069
+    "bankFiles": 541,
+    "questions": 20389
   },
   "topicSaturation": [
     {
       "section": "Physics",
       "topic": "Current electricity",
-      "questionCount": 120,
-      "examCount": 22,
+      "questionCount": 126,
+      "examCount": 24,
       "exams": [
         "aeee-2026",
         "ap-eapcet",
         "assam-cee",
         "bcece-2026",
         "bitsat-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
         "cusat-cat",
@@ -27,6 +28,70 @@
         "kcet-engineering",
         "met-2026",
         "mht-cet",
+        "nmims-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Chemical kinetics",
+      "questionCount": 112,
+      "examCount": 24,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "gujcet-2026",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "nmims-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Gravitation",
+      "questionCount": 79,
+      "examCount": 23,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "nmims-cet",
         "saeee-2026",
         "siteee-2026",
         "special-ojee",
@@ -67,51 +132,21 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Chemical kinetics",
-      "questionCount": 109,
-      "examCount": 22,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "assam-cee",
-        "bcece-2026",
-        "bitsat-2026",
-        "cg-pet",
-        "comedk-uget",
-        "cusat-cat",
-        "gujcet-2026",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Gravitation",
-      "questionCount": 75,
+      "section": "Mathematics",
+      "topic": "Differential equations",
+      "questionCount": 110,
       "examCount": 21,
       "exams": [
         "aeee-2026",
+        "amu-btech",
         "ap-eapcet",
         "assam-cee",
         "bcece-2026",
-        "bitsat-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
         "cusat-cat",
         "jain-jet",
-        "jee-advanced",
         "jee-main",
         "kcet-engineering",
         "met-2026",
@@ -127,15 +162,102 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Differential equations",
-      "questionCount": 108,
-      "examCount": 20,
+      "topic": "Permutations and combinations",
+      "questionCount": 99,
+      "examCount": 21,
       "exams": [
         "aeee-2026",
         "amu-btech",
         "ap-eapcet",
         "assam-cee",
         "bcece-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Solutions",
+      "questionCount": 92,
+      "examCount": 21,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bcece-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "gujcet-2026",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Laws of motion",
+      "questionCount": 75,
+      "examCount": 21,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "bcece-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "nmims-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Hydrocarbons",
+      "questionCount": 67,
+      "examCount": 21,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bcece-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
         "cusat-cat",
@@ -144,9 +266,38 @@
         "kcet-engineering",
         "met-2026",
         "mht-cet",
+        "nmims-cet",
         "saeee-2026",
         "siteee-2026",
         "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Electrochemistry",
+      "questionCount": 102,
+      "examCount": 20,
+      "exams": [
+        "ap-eapcet",
+        "assam-cee",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "gujcet-2026",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "mht-cet",
+        "saeee-2026",
+        "siteee-2026",
         "srmjeee-2026",
         "tg-eapcet",
         "upeseat-2026",
@@ -182,13 +333,39 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Permutations and combinations",
-      "questionCount": 95,
+      "section": "Physics",
+      "topic": "Electrostatics",
+      "questionCount": 84,
       "examCount": 20,
       "exams": [
         "aeee-2026",
         "amu-btech",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "mht-cet",
+        "nmims-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Thermodynamics",
+      "questionCount": 70,
+      "examCount": 20,
+      "exams": [
         "ap-eapcet",
         "assam-cee",
         "bcece-2026",
@@ -201,24 +378,83 @@
         "kcet-engineering",
         "met-2026",
         "mht-cet",
+        "nmims-cet",
         "saeee-2026",
         "siteee-2026",
         "special-ojee",
         "srmjeee-2026",
         "tg-eapcet",
-        "upeseat-2026"
+        "upeseat-2026",
+        "wbjee-engineering"
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Solutions",
-      "questionCount": 90,
+      "section": "Mathematics",
+      "topic": "Trigonometry",
+      "questionCount": 66,
       "examCount": 20,
       "exams": [
         "aeee-2026",
-        "ap-eapcet",
+        "agniveer-vayu",
+        "assam-cee",
+        "bitsat-2026",
+        "bv-btech",
+        "cg-pet",
+        "cusat-cat",
+        "jain-jet",
+        "jee-main",
+        "met-2026",
+        "nata-mathematics",
+        "navy-ssr",
+        "nmims-cet",
+        "rrb-alp",
+        "rrb-technician",
+        "saeee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Kinematics",
+      "questionCount": 64,
+      "examCount": 20,
+      "exams": [
+        "aeee-2026",
+        "amu-btech",
         "assam-cee",
         "bcece-2026",
+        "bitsat-2026",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "mht-cet",
+        "nmims-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Electromagnetic induction",
+      "questionCount": 59,
+      "examCount": 20,
+      "exams": [
+        "amu-btech",
+        "ap-eapcet",
+        "assam-cee",
+        "bitsat-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
         "cusat-cat",
@@ -227,10 +463,9 @@
         "jee-advanced",
         "jee-main",
         "kcet-engineering",
-        "met-2026",
         "mht-cet",
+        "saeee-2026",
         "siteee-2026",
-        "special-ojee",
         "srmjeee-2026",
         "tg-eapcet",
         "upeseat-2026",
@@ -265,33 +500,6 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Electrochemistry",
-      "questionCount": 100,
-      "examCount": 19,
-      "exams": [
-        "ap-eapcet",
-        "assam-cee",
-        "bcece-2026",
-        "bitsat-2026",
-        "cg-pet",
-        "comedk-uget",
-        "cusat-cat",
-        "gujcet-2026",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
       "section": "Quantitative Aptitude",
       "topic": "Time and work",
       "questionCount": 95,
@@ -316,6 +524,33 @@
         "ssc-cpo",
         "ssc-selection",
         "tancet-mba"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Coordination compounds",
+      "questionCount": 87,
+      "examCount": 19,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bcece-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "gujcet-2026",
+        "jain-jet",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "nmims-cet",
+        "siteee-2026",
+        "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026"
       ]
     },
     {
@@ -346,124 +581,16 @@
       ]
     },
     {
-      "section": "Physics",
-      "topic": "Laws of motion",
-      "questionCount": 70,
-      "examCount": 19,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "bcece-2026",
-        "cg-pet",
-        "comedk-uget",
-        "cusat-cat",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Thermodynamics",
-      "questionCount": 67,
-      "examCount": 19,
-      "exams": [
-        "ap-eapcet",
-        "assam-cee",
-        "bcece-2026",
-        "cg-pet",
-        "comedk-uget",
-        "cusat-cat",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
       "section": "Chemistry",
-      "topic": "Hydrocarbons",
-      "questionCount": 63,
+      "topic": "Biomolecules",
+      "questionCount": 72,
       "examCount": 19,
       "exams": [
         "aeee-2026",
         "ap-eapcet",
         "assam-cee",
         "bcece-2026",
-        "cg-pet",
-        "comedk-uget",
-        "cusat-cat",
-        "jain-jet",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Kinematics",
-      "questionCount": 62,
-      "examCount": 19,
-      "exams": [
-        "aeee-2026",
-        "amu-btech",
-        "assam-cee",
-        "bcece-2026",
-        "bitsat-2026",
-        "cg-pet",
-        "comedk-uget",
-        "cusat-cat",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "met-2026",
-        "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Electromagnetic induction",
-      "questionCount": 56,
-      "examCount": 19,
-      "exams": [
-        "amu-btech",
-        "ap-eapcet",
-        "assam-cee",
-        "bitsat-2026",
-        "cg-pet",
+        "bv-btech",
         "comedk-uget",
         "cusat-cat",
         "gujcet-2026",
@@ -473,7 +600,7 @@
         "kcet-engineering",
         "mht-cet",
         "saeee-2026",
-        "siteee-2026",
+        "special-ojee",
         "srmjeee-2026",
         "tg-eapcet",
         "upeseat-2026",
@@ -507,26 +634,52 @@
       ]
     },
     {
-      "section": "Physics",
-      "topic": "Electrostatics",
-      "questionCount": 80,
+      "section": "Mathematics",
+      "topic": "Applications of derivatives",
+      "questionCount": 99,
       "examCount": 18,
       "exams": [
         "aeee-2026",
         "amu-btech",
+        "ap-eapcet",
+        "assam-cee",
         "bcece-2026",
-        "bitsat-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "jain-jet",
+        "kcet-engineering",
+        "mht-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Sequences and series",
+      "questionCount": 76,
+      "examCount": 18,
+      "exams": [
+        "aeee-2026",
+        "amu-btech",
+        "assam-cee",
+        "bcece-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
         "cusat-cat",
         "jain-jet",
         "jee-advanced",
         "jee-main",
-        "met-2026",
+        "kcet-engineering",
         "mht-cet",
         "saeee-2026",
         "siteee-2026",
-        "special-ojee",
         "srmjeee-2026",
         "upeseat-2026",
         "wbjee-engineering"
@@ -560,58 +713,6 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Biomolecules",
-      "questionCount": 70,
-      "examCount": 18,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "assam-cee",
-        "bcece-2026",
-        "comedk-uget",
-        "cusat-cat",
-        "gujcet-2026",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "mht-cet",
-        "saeee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Trigonometry",
-      "questionCount": 59,
-      "examCount": 18,
-      "exams": [
-        "aeee-2026",
-        "agniveer-vayu",
-        "assam-cee",
-        "bitsat-2026",
-        "cg-pet",
-        "cusat-cat",
-        "jain-jet",
-        "jee-main",
-        "met-2026",
-        "nata-mathematics",
-        "navy-ssr",
-        "rrb-alp",
-        "rrb-technician",
-        "saeee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Chemistry",
       "topic": "Surface Chemistry",
       "questionCount": 54,
       "examCount": 18,
@@ -637,23 +738,49 @@
       ]
     },
     {
+      "section": "Physics",
+      "topic": "Alternating Current",
+      "questionCount": 51,
+      "examCount": 18,
+      "exams": [
+        "ap-eapcet",
+        "assam-cee",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
+        "cusat-cat",
+        "gujcet-2026",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "mht-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "section": "Mathematics",
-      "topic": "Applications of derivatives",
-      "questionCount": 95,
+      "topic": "Straight lines",
+      "questionCount": 73,
       "examCount": 17,
       "exams": [
-        "aeee-2026",
         "amu-btech",
         "ap-eapcet",
         "assam-cee",
         "bcece-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
         "cusat-cat",
         "jain-jet",
+        "jee-advanced",
+        "jee-main",
         "kcet-engineering",
-        "mht-cet",
-        "saeee-2026",
         "siteee-2026",
         "srmjeee-2026",
         "tg-eapcet",
@@ -663,63 +790,15 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Coordination compounds",
-      "questionCount": 84,
-      "examCount": 17,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "assam-cee",
-        "bcece-2026",
-        "cg-pet",
-        "comedk-uget",
-        "gujcet-2026",
-        "jain-jet",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "siteee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Sequences and series",
-      "questionCount": 72,
-      "examCount": 17,
-      "exams": [
-        "aeee-2026",
-        "amu-btech",
-        "assam-cee",
-        "bcece-2026",
-        "cg-pet",
-        "comedk-uget",
-        "cusat-cat",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
-        "srmjeee-2026",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Alternating Current",
-      "questionCount": 48,
+      "topic": "States of Matter",
+      "questionCount": 47,
       "examCount": 17,
       "exams": [
         "ap-eapcet",
         "assam-cee",
-        "cg-pet",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
         "comedk-uget",
         "cusat-cat",
         "gujcet-2026",
@@ -728,8 +807,6 @@
         "jee-main",
         "kcet-engineering",
         "mht-cet",
-        "saeee-2026",
-        "siteee-2026",
         "srmjeee-2026",
         "tg-eapcet",
         "upeseat-2026",
@@ -762,21 +839,21 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Straight lines",
+      "topic": "Complex numbers",
       "questionCount": 69,
       "examCount": 16,
       "exams": [
         "amu-btech",
         "ap-eapcet",
         "assam-cee",
-        "bcece-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
-        "cusat-cat",
+        "gujcet-2026",
         "jain-jet",
         "jee-advanced",
         "jee-main",
-        "kcet-engineering",
+        "mht-cet",
         "siteee-2026",
         "srmjeee-2026",
         "tg-eapcet",
@@ -809,6 +886,30 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "p-block elements",
+      "questionCount": 54,
+      "examCount": 16,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bcece-2026",
+        "bv-btech",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "special-ojee",
+        "srmjeee-2026",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "section": "Quantitative Aptitude",
       "topic": "Simple Interest",
       "questionCount": 52,
@@ -830,6 +931,30 @@
         "ssc-cpo",
         "ssc-selection",
         "tancet-mba"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Atomic structure",
+      "questionCount": 49,
+      "examCount": 16,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bitsat-2026",
+        "cg-pet",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "special-ojee",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
       ]
     },
     {
@@ -857,24 +982,71 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "States of Matter",
-      "questionCount": 45,
+      "section": "Physics",
+      "topic": "Rotational motion",
+      "questionCount": 44,
       "examCount": 16,
       "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "assam-cee",
+        "bitsat-2026",
+        "cg-pet",
+        "cusat-cat",
+        "jain-jet",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "special-ojee",
+        "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Electromagnetic waves",
+      "questionCount": 41,
+      "examCount": 16,
+      "exams": [
+        "aeee-2026",
         "ap-eapcet",
         "assam-cee",
         "bcece-2026",
+        "bv-btech",
+        "comedk-uget",
+        "cusat-cat",
+        "gujcet-2026",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "special-ojee",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Vectors",
+      "questionCount": 67,
+      "examCount": 15,
+      "exams": [
+        "acet-mathematics",
+        "assam-cee",
+        "bcece-2026",
         "bitsat-2026",
+        "bv-btech",
         "comedk-uget",
         "cusat-cat",
         "gujcet-2026",
         "jain-jet",
         "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
         "mht-cet",
-        "srmjeee-2026",
+        "siteee-2026",
         "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
@@ -882,24 +1054,24 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Complex numbers",
-      "questionCount": 65,
+      "topic": "Three-dimensional geometry",
+      "questionCount": 60,
       "examCount": 15,
       "exams": [
+        "aeee-2026",
         "amu-btech",
-        "ap-eapcet",
         "assam-cee",
+        "bcece-2026",
+        "bv-btech",
         "cg-pet",
         "comedk-uget",
+        "cusat-cat",
         "gujcet-2026",
         "jain-jet",
-        "jee-advanced",
         "jee-main",
-        "mht-cet",
+        "met-2026",
+        "saeee-2026",
         "siteee-2026",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
         "wbjee-engineering"
       ]
     },
@@ -928,45 +1100,22 @@
     },
     {
       "section": "Chemistry",
-      "topic": "p-block elements",
+      "topic": "Chemical bonding",
       "questionCount": 52,
       "examCount": 15,
       "exams": [
         "aeee-2026",
         "ap-eapcet",
         "assam-cee",
-        "bcece-2026",
-        "cusat-cat",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "special-ojee",
-        "srmjeee-2026",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Atomic structure",
-      "questionCount": 47,
-      "examCount": 15,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "assam-cee",
-        "bitsat-2026",
+        "bv-btech",
         "cg-pet",
         "cusat-cat",
         "jain-jet",
         "jee-advanced",
         "jee-main",
-        "met-2026",
+        "mht-cet",
         "saeee-2026",
-        "special-ojee",
+        "srmjeee-2026",
         "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
@@ -990,29 +1139,6 @@
         "mht-cet",
         "siteee-2026",
         "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Rotational motion",
-      "questionCount": 43,
-      "examCount": 15,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "assam-cee",
-        "bitsat-2026",
-        "cg-pet",
-        "cusat-cat",
-        "jain-jet",
-        "jee-main",
-        "met-2026",
-        "saeee-2026",
-        "siteee-2026",
-        "special-ojee",
         "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
@@ -1065,70 +1191,48 @@
       ]
     },
     {
-      "section": "Physics",
-      "topic": "Electromagnetic waves",
-      "questionCount": 38,
+      "section": "Chemistry",
+      "topic": "Polymers",
+      "questionCount": 35,
       "examCount": 15,
       "exams": [
-        "aeee-2026",
+        "amu-btech",
         "ap-eapcet",
-        "assam-cee",
         "bcece-2026",
-        "comedk-uget",
-        "cusat-cat",
-        "gujcet-2026",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Vectors",
-      "questionCount": 63,
-      "examCount": 14,
-      "exams": [
-        "acet-mathematics",
-        "assam-cee",
-        "bcece-2026",
-        "bitsat-2026",
         "comedk-uget",
         "cusat-cat",
         "gujcet-2026",
         "jain-jet",
-        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
         "mht-cet",
-        "siteee-2026",
+        "nmims-cet",
+        "srmjeee-2026",
         "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Three-dimensional geometry",
-      "questionCount": 56,
+      "section": "Physics",
+      "topic": "Work, energy and power",
+      "questionCount": 57,
       "examCount": 14,
       "exams": [
         "aeee-2026",
-        "amu-btech",
-        "assam-cee",
         "bcece-2026",
         "cg-pet",
         "comedk-uget",
         "cusat-cat",
-        "gujcet-2026",
         "jain-jet",
         "jee-main",
+        "kcet-engineering",
         "met-2026",
+        "mht-cet",
+        "nmims-cet",
         "saeee-2026",
-        "siteee-2026",
-        "wbjee-engineering"
+        "special-ojee",
+        "srmjeee-2026"
       ]
     },
     {
@@ -1155,44 +1259,22 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Chemical bonding",
-      "questionCount": 50,
-      "examCount": 14,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "assam-cee",
-        "cg-pet",
-        "cusat-cat",
-        "jain-jet",
-        "jee-advanced",
-        "jee-main",
-        "mht-cet",
-        "saeee-2026",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Polymers",
+      "topic": "Redox reactions",
       "questionCount": 34,
       "examCount": 14,
       "exams": [
         "amu-btech",
-        "ap-eapcet",
+        "assam-cee",
         "bcece-2026",
+        "bv-btech",
         "comedk-uget",
         "cusat-cat",
-        "gujcet-2026",
         "jain-jet",
         "jee-main",
         "kcet-engineering",
         "mht-cet",
+        "siteee-2026",
         "srmjeee-2026",
-        "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
       ]
@@ -1219,24 +1301,24 @@
       ]
     },
     {
-      "section": "Physics",
-      "topic": "Work, energy and power",
-      "questionCount": 54,
+      "section": "Mathematics",
+      "topic": "Vector algebra",
+      "questionCount": 70,
       "examCount": 13,
       "exams": [
         "aeee-2026",
-        "bcece-2026",
+        "ap-eapcet",
         "cg-pet",
         "comedk-uget",
-        "cusat-cat",
-        "jain-jet",
         "jee-main",
         "kcet-engineering",
         "met-2026",
-        "mht-cet",
+        "nmims-cet",
         "saeee-2026",
         "special-ojee",
-        "srmjeee-2026"
+        "srmjeee-2026",
+        "tg-eapcet",
+        "wbjee-engineering"
       ]
     },
     {
@@ -1283,6 +1365,48 @@
     },
     {
       "section": "Physics",
+      "topic": "Units and measurements",
+      "questionCount": 50,
+      "examCount": 13,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "bv-btech",
+        "comedk-uget",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "siteee-2026",
+        "special-ojee",
+        "tg-eapcet",
+        "upeseat-2026"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Amines",
+      "questionCount": 39,
+      "examCount": 13,
+      "exams": [
+        "assam-cee",
+        "bv-btech",
+        "comedk-uget",
+        "cusat-cat",
+        "jain-jet",
+        "jee-main",
+        "kcet-engineering",
+        "mht-cet",
+        "saeee-2026",
+        "siteee-2026",
+        "srmjeee-2026",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
       "topic": "Oscillations",
       "questionCount": 37,
       "examCount": 13,
@@ -1304,22 +1428,22 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Redox reactions",
-      "questionCount": 32,
+      "topic": "Chemistry in everyday life",
+      "questionCount": 30,
       "examCount": 13,
       "exams": [
         "amu-btech",
-        "assam-cee",
+        "ap-eapcet",
         "bcece-2026",
+        "bv-btech",
         "comedk-uget",
         "cusat-cat",
-        "jain-jet",
-        "jee-main",
+        "gujcet-2026",
         "kcet-engineering",
         "mht-cet",
-        "siteee-2026",
+        "nmims-cet",
         "srmjeee-2026",
-        "upeseat-2026",
+        "tg-eapcet",
         "wbjee-engineering"
       ]
     },
@@ -1384,26 +1508,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Vector algebra",
-      "questionCount": 69,
-      "examCount": 12,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "cg-pet",
-        "comedk-uget",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "saeee-2026",
-        "special-ojee",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "wbjee-engineering"
-      ]
-    },
-    {
       "section": "Quantitative Aptitude",
       "topic": "Time, speed and distance",
       "questionCount": 58,
@@ -1464,42 +1568,42 @@
       ]
     },
     {
-      "section": "Physics",
-      "topic": "Units and measurements",
-      "questionCount": 47,
+      "section": "Mathematics",
+      "topic": "Differentiation",
+      "questionCount": 50,
       "examCount": 12,
       "exams": [
-        "aeee-2026",
+        "acet-mathematics",
+        "amu-btech",
         "ap-eapcet",
-        "comedk-uget",
+        "assam-cee",
+        "bv-btech",
         "jain-jet",
         "jee-advanced",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "siteee-2026",
-        "special-ojee",
+        "mht-cet",
+        "srmjeee-2026",
         "tg-eapcet",
-        "upeseat-2026"
+        "upeseat-2026",
+        "wbjee-engineering"
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Amines",
-      "questionCount": 37,
+      "section": "Physics",
+      "topic": "Optics",
+      "questionCount": 50,
       "examCount": 12,
       "exams": [
-        "assam-cee",
+        "aeee-2026",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
         "comedk-uget",
-        "cusat-cat",
-        "jain-jet",
-        "jee-main",
-        "kcet-engineering",
+        "jee-advanced",
+        "met-2026",
         "mht-cet",
+        "nmims-cet",
         "saeee-2026",
-        "siteee-2026",
-        "srmjeee-2026",
-        "upeseat-2026",
+        "special-ojee",
         "wbjee-engineering"
       ]
     },
@@ -1696,6 +1800,25 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Matrices and determinants",
+      "questionCount": 50,
+      "examCount": 11,
+      "exams": [
+        "aeee-2026",
+        "cusat-cat",
+        "gujcet-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "special-ojee",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "section": "English Language",
       "topic": "Active and passive voice",
       "questionCount": 50,
@@ -1735,25 +1858,6 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Differentiation",
-      "questionCount": 46,
-      "examCount": 11,
-      "exams": [
-        "acet-mathematics",
-        "amu-btech",
-        "ap-eapcet",
-        "assam-cee",
-        "jain-jet",
-        "jee-advanced",
-        "mht-cet",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Mathematics",
       "topic": "Inverse trigonometric functions",
       "questionCount": 39,
       "examCount": 11,
@@ -1768,6 +1872,25 @@
         "mht-cet",
         "srmjeee-2026",
         "tg-eapcet",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Ionic Equilibrium",
+      "questionCount": 33,
+      "examCount": 11,
+      "exams": [
+        "ap-eapcet",
+        "assam-cee",
+        "bv-btech",
+        "cg-pet",
+        "jain-jet",
+        "jee-advanced",
+        "jee-main",
+        "mht-cet",
+        "tg-eapcet",
+        "upeseat-2026",
         "wbjee-engineering"
       ]
     },
@@ -1792,8 +1915,8 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Chemistry in everyday life",
-      "questionCount": 26,
+      "topic": "Environmental chemistry",
+      "questionCount": 20,
       "examCount": 11,
       "exams": [
         "amu-btech",
@@ -1801,12 +1924,12 @@
         "bcece-2026",
         "comedk-uget",
         "cusat-cat",
-        "gujcet-2026",
+        "jee-main",
         "kcet-engineering",
         "mht-cet",
+        "nmims-cet",
         "srmjeee-2026",
-        "tg-eapcet",
-        "wbjee-engineering"
+        "tg-eapcet"
       ]
     },
     {
@@ -1865,35 +1988,17 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Matrices and determinants",
-      "questionCount": 48,
+      "topic": "Coordinate geometry",
+      "questionCount": 46,
       "examCount": 10,
       "exams": [
         "aeee-2026",
+        "agniveer-vayu",
         "cusat-cat",
-        "gujcet-2026",
-        "jee-advanced",
         "jee-main",
         "met-2026",
-        "saeee-2026",
-        "special-ojee",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Optics",
-      "questionCount": 44,
-      "examCount": 10,
-      "exams": [
-        "aeee-2026",
-        "bcece-2026",
-        "bitsat-2026",
-        "comedk-uget",
-        "jee-advanced",
-        "met-2026",
-        "mht-cet",
+        "nata-mathematics",
+        "nmims-cet",
         "saeee-2026",
         "special-ojee",
         "wbjee-engineering"
@@ -1901,16 +2006,34 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Ionic Equilibrium",
+      "topic": "Solid State",
       "questionCount": 31,
       "examCount": 10,
       "exams": [
         "ap-eapcet",
+        "bcece-2026",
+        "bv-btech",
+        "cg-pet",
+        "jee-advanced",
+        "kcet-engineering",
+        "mht-cet",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Chemical Equilibrium",
+      "questionCount": 23,
+      "examCount": 10,
+      "exams": [
+        "ap-eapcet",
         "assam-cee",
+        "bv-btech",
         "cg-pet",
         "jain-jet",
         "jee-advanced",
-        "jee-main",
         "mht-cet",
         "tg-eapcet",
         "upeseat-2026",
@@ -1919,20 +2042,20 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Environmental chemistry",
-      "questionCount": 19,
+      "topic": "s-Block elements",
+      "questionCount": 20,
       "examCount": 10,
       "exams": [
         "amu-btech",
         "ap-eapcet",
         "bcece-2026",
-        "comedk-uget",
-        "cusat-cat",
+        "bv-btech",
         "jee-main",
         "kcet-engineering",
         "mht-cet",
         "srmjeee-2026",
-        "tg-eapcet"
+        "tg-eapcet",
+        "wbjee-engineering"
       ]
     },
     {
@@ -2021,6 +2144,23 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "Alcohols, phenols and ethers",
+      "questionCount": 49,
+      "examCount": 9,
+      "exams": [
+        "aeee-2026",
+        "bcece-2026",
+        "bv-btech",
+        "comedk-uget",
+        "cusat-cat",
+        "jee-main",
+        "kcet-engineering",
+        "mht-cet",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "Quantitative Aptitude",
       "topic": "Number series",
       "questionCount": 48,
@@ -2035,23 +2175,6 @@
         "niacl-ao",
         "sbi-po",
         "tancet-mba"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Coordinate geometry",
-      "questionCount": 43,
-      "examCount": 9,
-      "exams": [
-        "aeee-2026",
-        "agniveer-vayu",
-        "cusat-cat",
-        "jee-main",
-        "met-2026",
-        "nata-mathematics",
-        "saeee-2026",
-        "special-ojee",
-        "wbjee-engineering"
       ]
     },
     {
@@ -2090,19 +2213,19 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Solid State",
-      "questionCount": 29,
+      "topic": "d- and f-block elements",
+      "questionCount": 23,
       "examCount": 9,
       "exams": [
-        "ap-eapcet",
+        "aeee-2026",
         "bcece-2026",
-        "cg-pet",
-        "jee-advanced",
-        "kcet-engineering",
+        "bv-btech",
+        "cusat-cat",
+        "jee-main",
+        "met-2026",
         "mht-cet",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "wbjee-engineering"
+        "siteee-2026",
+        "special-ojee"
       ]
     },
     {
@@ -2157,23 +2280,6 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Chemical Equilibrium",
-      "questionCount": 21,
-      "examCount": 9,
-      "exams": [
-        "ap-eapcet",
-        "assam-cee",
-        "cg-pet",
-        "jain-jet",
-        "jee-advanced",
-        "mht-cet",
-        "tg-eapcet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
       "section": "Physics",
       "topic": "Kinetic Theory",
       "questionCount": 19,
@@ -2192,19 +2298,19 @@
     },
     {
       "section": "Chemistry",
-      "topic": "s-Block elements",
+      "topic": "Chemical Thermodynamics",
       "questionCount": 18,
       "examCount": 9,
       "exams": [
-        "amu-btech",
-        "ap-eapcet",
-        "bcece-2026",
+        "bv-btech",
+        "cg-pet",
+        "comedk-uget",
         "jee-main",
-        "kcet-engineering",
+        "met-2026",
         "mht-cet",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "wbjee-engineering"
+        "nmims-cet",
+        "siteee-2026",
+        "special-ojee"
       ]
     },
     {
@@ -2273,15 +2379,15 @@
     },
     {
       "section": "Chemistry",
-      "topic": "Alcohols, phenols and ethers",
-      "questionCount": 47,
+      "topic": "Aldehydes, ketones and carboxylic acids",
+      "questionCount": 48,
       "examCount": 8,
       "exams": [
         "aeee-2026",
         "bcece-2026",
+        "bv-btech",
         "comedk-uget",
         "cusat-cat",
-        "jee-main",
         "kcet-engineering",
         "mht-cet",
         "srmjeee-2026"
@@ -2301,6 +2407,38 @@
         "saeee-2026",
         "special-ojee",
         "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Chemical Bonding and Molecular Structure",
+      "questionCount": 46,
+      "examCount": 8,
+      "exams": [
+        "bcece-2026",
+        "bitsat-2026",
+        "comedk-uget",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "nmims-cet",
+        "special-ojee"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Integral calculus",
+      "questionCount": 44,
+      "examCount": 8,
+      "exams": [
+        "aeee-2026",
+        "bitsat-2026",
+        "jee-advanced",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "special-ojee"
       ]
     },
     {
@@ -2368,6 +2506,54 @@
       ]
     },
     {
+      "section": "Physics",
+      "topic": "Dual Nature of Radiation and Matter",
+      "questionCount": 34,
+      "examCount": 8,
+      "exams": [
+        "ap-eapcet",
+        "bv-btech",
+        "comedk-uget",
+        "gujcet-2026",
+        "kcet-engineering",
+        "mht-cet",
+        "siteee-2026",
+        "tg-eapcet"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Indefinite Integration",
+      "questionCount": 32,
+      "examCount": 8,
+      "exams": [
+        "assam-cee",
+        "bv-btech",
+        "cg-pet",
+        "cusat-cat",
+        "gujcet-2026",
+        "jain-jet",
+        "mht-cet",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Linear programming",
+      "questionCount": 31,
+      "examCount": 8,
+      "exams": [
+        "amu-btech",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
+        "comedk-uget",
+        "kcet-engineering",
+        "mht-cet",
+        "siteee-2026"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Functions",
       "questionCount": 30,
@@ -2400,6 +2586,22 @@
       ]
     },
     {
+      "section": "Physics",
+      "topic": "Atoms and Nuclei",
+      "questionCount": 26,
+      "examCount": 8,
+      "exams": [
+        "bcece-2026",
+        "bv-btech",
+        "comedk-uget",
+        "cusat-cat",
+        "jee-main",
+        "met-2026",
+        "saeee-2026",
+        "special-ojee"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Ellipse",
       "questionCount": 24,
@@ -2411,6 +2613,38 @@
         "cg-pet",
         "jee-main",
         "tg-eapcet",
+        "upeseat-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Electronic Devices",
+      "questionCount": 24,
+      "examCount": 8,
+      "exams": [
+        "bcece-2026",
+        "bitsat-2026",
+        "comedk-uget",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "special-ojee"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Magnetism",
+      "questionCount": 23,
+      "examCount": 8,
+      "exams": [
+        "aeee-2026",
+        "bv-btech",
+        "cusat-cat",
+        "jain-jet",
+        "jee-advanced",
+        "mht-cet",
         "upeseat-2026",
         "wbjee-engineering"
       ]
@@ -2432,19 +2666,19 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "d- and f-block elements",
-      "questionCount": 21,
+      "section": "Physics",
+      "topic": "Kinetic theory of gases",
+      "questionCount": 17,
       "examCount": 8,
       "exams": [
-        "aeee-2026",
-        "bcece-2026",
-        "cusat-cat",
+        "amu-btech",
+        "comedk-uget",
         "jee-main",
         "met-2026",
         "mht-cet",
-        "siteee-2026",
-        "special-ojee"
+        "nmims-cet",
+        "special-ojee",
+        "srmjeee-2026"
       ]
     },
     {
@@ -2705,36 +2939,6 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Aldehydes, ketones and carboxylic acids",
-      "questionCount": 46,
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "bcece-2026",
-        "comedk-uget",
-        "cusat-cat",
-        "kcet-engineering",
-        "mht-cet",
-        "srmjeee-2026"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Chemical Bonding and Molecular Structure",
-      "questionCount": 44,
-      "examCount": 7,
-      "exams": [
-        "bcece-2026",
-        "bitsat-2026",
-        "comedk-uget",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "special-ojee"
-      ]
-    },
-    {
       "section": "Reasoning Ability",
       "topic": "Syllogism",
       "questionCount": 44,
@@ -2747,21 +2951,6 @@
         "rbi-assistant",
         "sbi-clerk",
         "sbi-po"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Integral calculus",
-      "questionCount": 42,
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "bitsat-2026",
-        "jee-advanced",
-        "jee-main",
-        "met-2026",
-        "saeee-2026",
-        "special-ojee"
       ]
     },
     {
@@ -2871,6 +3060,36 @@
     },
     {
       "section": "Mathematics",
+      "topic": "Definite Integration",
+      "questionCount": 34,
+      "examCount": 7,
+      "exams": [
+        "assam-cee",
+        "bv-btech",
+        "cg-pet",
+        "gujcet-2026",
+        "jain-jet",
+        "mht-cet",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Structure of Atom",
+      "questionCount": 33,
+      "examCount": 7,
+      "exams": [
+        "bcece-2026",
+        "bv-btech",
+        "comedk-uget",
+        "kcet-engineering",
+        "mht-cet",
+        "siteee-2026",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
       "topic": "Continuity and Differentiability",
       "questionCount": 32,
       "examCount": 7,
@@ -2882,21 +3101,6 @@
         "jee-main",
         "kcet-engineering",
         "siteee-2026"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Dual Nature of Radiation and Matter",
-      "questionCount": 31,
-      "examCount": 7,
-      "exams": [
-        "ap-eapcet",
-        "comedk-uget",
-        "gujcet-2026",
-        "kcet-engineering",
-        "mht-cet",
-        "siteee-2026",
-        "tg-eapcet"
       ]
     },
     {
@@ -2916,32 +3120,17 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Indefinite Integration",
+      "topic": "Three Dimensional Geometry",
       "questionCount": 28,
       "examCount": 7,
       "exams": [
-        "assam-cee",
-        "cg-pet",
-        "cusat-cat",
-        "gujcet-2026",
-        "jain-jet",
-        "mht-cet",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Linear programming",
-      "questionCount": 27,
-      "examCount": 7,
-      "exams": [
-        "amu-btech",
-        "bcece-2026",
-        "bitsat-2026",
         "comedk-uget",
+        "jee-main",
         "kcet-engineering",
         "mht-cet",
-        "siteee-2026"
+        "nmims-cet",
+        "special-ojee",
+        "srmjeee-2026"
       ]
     },
     {
@@ -2961,76 +3150,31 @@
     },
     {
       "section": "Physics",
-      "topic": "Atoms and Nuclei",
+      "topic": "Oscillations and waves",
+      "questionCount": 23,
+      "examCount": 7,
+      "exams": [
+        "aeee-2026",
+        "bcece-2026",
+        "comedk-uget",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "special-ojee"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Magnetic Effects of Current and Magnetism",
       "questionCount": 23,
       "examCount": 7,
       "exams": [
         "bcece-2026",
         "comedk-uget",
-        "cusat-cat",
         "jee-main",
         "met-2026",
+        "nmims-cet",
         "saeee-2026",
-        "special-ojee"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Electronic Devices",
-      "questionCount": 22,
-      "examCount": 7,
-      "exams": [
-        "bcece-2026",
-        "bitsat-2026",
-        "comedk-uget",
-        "jee-main",
-        "met-2026",
-        "saeee-2026",
-        "special-ojee"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Magnetism",
-      "questionCount": 20,
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "cusat-cat",
-        "jain-jet",
-        "jee-advanced",
-        "mht-cet",
-        "upeseat-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Kinetic theory of gases",
-      "questionCount": 16,
-      "examCount": 7,
-      "exams": [
-        "amu-btech",
-        "comedk-uget",
-        "jee-main",
-        "met-2026",
-        "mht-cet",
-        "special-ojee",
-        "srmjeee-2026"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Chemical thermodynamics",
-      "questionCount": 15,
-      "examCount": 7,
-      "exams": [
-        "cg-pet",
-        "comedk-uget",
-        "jee-main",
-        "met-2026",
-        "mht-cet",
-        "siteee-2026",
         "special-ojee"
       ]
     },
@@ -3209,20 +3353,6 @@
       ]
     },
     {
-      "section": "Chemistry",
-      "topic": "Structure of Atom",
-      "questionCount": 31,
-      "examCount": 6,
-      "exams": [
-        "bcece-2026",
-        "comedk-uget",
-        "kcet-engineering",
-        "mht-cet",
-        "siteee-2026",
-        "srmjeee-2026"
-      ]
-    },
-    {
       "section": "Mathematics",
       "topic": "Number System",
       "questionCount": 31,
@@ -3266,20 +3396,6 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Definite Integration",
-      "questionCount": 30,
-      "examCount": 6,
-      "exams": [
-        "assam-cee",
-        "cg-pet",
-        "gujcet-2026",
-        "jain-jet",
-        "mht-cet",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Mathematics",
       "topic": "Time and Work",
       "questionCount": 29,
       "examCount": 6,
@@ -3308,6 +3424,20 @@
     },
     {
       "section": "Mathematics",
+      "topic": "Statistics and Probability",
+      "questionCount": 27,
+      "examCount": 6,
+      "exams": [
+        "bcece-2026",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "special-ojee"
+      ]
+    },
+    {
+      "section": "Mathematics",
       "topic": "Circle",
       "questionCount": 26,
       "examCount": 6,
@@ -3318,20 +3448,6 @@
         "cg-pet",
         "mht-cet",
         "tg-eapcet"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Three Dimensional Geometry",
-      "questionCount": 26,
-      "examCount": 6,
-      "exams": [
-        "comedk-uget",
-        "jee-main",
-        "kcet-engineering",
-        "mht-cet",
-        "special-ojee",
-        "srmjeee-2026"
       ]
     },
     {
@@ -3388,34 +3504,6 @@
         "rrb-je",
         "ssc-cpo",
         "ssc-gd"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Oscillations and waves",
-      "questionCount": 21,
-      "examCount": 6,
-      "exams": [
-        "aeee-2026",
-        "bcece-2026",
-        "comedk-uget",
-        "met-2026",
-        "saeee-2026",
-        "special-ojee"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Magnetic Effects of Current and Magnetism",
-      "questionCount": 21,
-      "examCount": 6,
-      "exams": [
-        "bcece-2026",
-        "comedk-uget",
-        "jee-main",
-        "met-2026",
-        "saeee-2026",
-        "special-ojee"
       ]
     },
     {
@@ -3797,19 +3885,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Statistics and Probability",
-      "questionCount": 25,
-      "examCount": 5,
-      "exams": [
-        "bcece-2026",
-        "jee-main",
-        "met-2026",
-        "saeee-2026",
-        "special-ojee"
-      ]
-    },
-    {
       "section": "Numerical Ability",
       "topic": "Time and Work",
       "questionCount": 23,
@@ -3901,6 +3976,19 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Mathematical Induction",
+      "questionCount": 18,
+      "examCount": 5,
+      "exams": [
+        "ap-eapcet",
+        "bcece-2026",
+        "nmims-cet",
+        "tg-eapcet",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "section": "Physics",
       "topic": "Motion in a Plane",
       "questionCount": 18,
@@ -3911,6 +3999,19 @@
         "kcet-engineering",
         "mht-cet",
         "tg-eapcet"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Sequence and Series",
+      "questionCount": 18,
+      "examCount": 5,
+      "exams": [
+        "comedk-uget",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "special-ojee"
       ]
     },
     {
@@ -4054,6 +4155,19 @@
         "sbi-clerk",
         "sbi-po",
         "ssc-chsl"
+      ]
+    },
+    {
+      "section": "Physics",
+      "topic": "Properties of Solids and Liquids",
+      "questionCount": 10,
+      "examCount": 5,
+      "exams": [
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "saeee-2026",
+        "special-ojee"
       ]
     },
     {
@@ -4386,6 +4500,18 @@
     },
     {
       "section": "Mathematics",
+      "topic": "Limit, Continuity and Differentiability",
+      "questionCount": 22,
+      "examCount": 4,
+      "exams": [
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "special-ojee"
+      ]
+    },
+    {
+      "section": "Mathematics",
       "topic": "Pair of Straight Lines",
       "questionCount": 21,
       "examCount": 4,
@@ -4469,30 +4595,6 @@
       ]
     },
     {
-      "section": "Mathematics",
-      "topic": "Mathematical Induction",
-      "questionCount": 17,
-      "examCount": 4,
-      "exams": [
-        "ap-eapcet",
-        "bcece-2026",
-        "tg-eapcet",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Sequence and Series",
-      "questionCount": 17,
-      "examCount": 4,
-      "exams": [
-        "comedk-uget",
-        "jee-main",
-        "met-2026",
-        "special-ojee"
-      ]
-    },
-    {
       "section": "General Intelligence and Reasoning",
       "topic": "Statement-Conclusion",
       "questionCount": 16,
@@ -4565,6 +4667,18 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "Classification of Elements and Periodicity in Properties",
+      "questionCount": 12,
+      "examCount": 4,
+      "exams": [
+        "comedk-uget",
+        "met-2026",
+        "nmims-cet",
+        "special-ojee"
+      ]
+    },
+    {
       "section": "English Language",
       "topic": "Para jumbles",
       "questionCount": 12,
@@ -4586,6 +4700,18 @@
         "ibps-rrb",
         "rbi-assistant",
         "sbi-clerk"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Redox Reactions and Electrochemistry",
+      "questionCount": 12,
+      "examCount": 4,
+      "exams": [
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "special-ojee"
       ]
     },
     {
@@ -4638,14 +4764,14 @@
     },
     {
       "section": "Physics",
-      "topic": "Properties of Solids and Liquids",
-      "questionCount": 9,
+      "topic": "Thermal Physics",
+      "questionCount": 8,
       "examCount": 4,
       "exams": [
-        "jee-main",
-        "met-2026",
-        "saeee-2026",
-        "special-ojee"
+        "bv-btech",
+        "jain-jet",
+        "jee-advanced",
+        "wbjee-engineering"
       ]
     },
     {
@@ -4718,6 +4844,18 @@
         "jee-main",
         "mht-cet",
         "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Chemistry",
+      "topic": "Principles Related to Practical Chemistry",
+      "questionCount": 6,
+      "examCount": 4,
+      "exams": [
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "special-ojee"
       ]
     },
     {
@@ -4946,17 +5084,6 @@
         "ssc-cgl",
         "ssc-chsl",
         "ssc-steno"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Limit, Continuity and Differentiability",
-      "questionCount": 19,
-      "examCount": 3,
-      "exams": [
-        "jee-main",
-        "met-2026",
-        "special-ojee"
       ]
     },
     {
@@ -5191,6 +5318,17 @@
       ]
     },
     {
+      "section": "Physics",
+      "topic": "Rotational Dynamics",
+      "questionCount": 11,
+      "examCount": 3,
+      "exams": [
+        "bv-btech",
+        "mht-cet",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "section": "Arithmetic",
       "topic": "Profit and Loss",
       "questionCount": 11,
@@ -5221,17 +5359,6 @@
         "ibsat-verbal",
         "slat-logical",
         "tancet-mba"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Redox Reactions and Electrochemistry",
-      "questionCount": 11,
-      "examCount": 3,
-      "exams": [
-        "jee-main",
-        "met-2026",
-        "special-ojee"
       ]
     },
     {
@@ -5298,17 +5425,6 @@
         "cmat-qtdi",
         "kmat-karnataka",
         "mat-language"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Classification of Elements and Periodicity in Properties",
-      "questionCount": 10,
-      "examCount": 3,
-      "exams": [
-        "comedk-uget",
-        "met-2026",
-        "special-ojee"
       ]
     },
     {
@@ -5565,6 +5681,17 @@
       ]
     },
     {
+      "section": "Chemistry",
+      "topic": "Basic Principles of Organic Chemistry",
+      "questionCount": 7,
+      "examCount": 3,
+      "exams": [
+        "bv-btech",
+        "jee-main",
+        "mht-cet"
+      ]
+    },
+    {
       "section": "Language Comprehension",
       "topic": "Vocabulary: Antonym",
       "questionCount": 7,
@@ -5715,17 +5842,6 @@
       "exams": [
         "jain-jet",
         "mht-cet",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Physics",
-      "topic": "Thermal Physics",
-      "questionCount": 5,
-      "examCount": 3,
-      "exams": [
-        "jain-jet",
-        "jee-advanced",
         "wbjee-engineering"
       ]
     },
@@ -5908,17 +6024,6 @@
     {
       "section": "Chemistry",
       "topic": "Organic Compounds Containing Halogens",
-      "questionCount": 4,
-      "examCount": 3,
-      "exams": [
-        "jee-main",
-        "met-2026",
-        "special-ojee"
-      ]
-    },
-    {
-      "section": "Chemistry",
-      "topic": "Principles Related to Practical Chemistry",
       "questionCount": 4,
       "examCount": 3,
       "exams": [
@@ -6378,7 +6483,7 @@
     },
     {
       "opening": "two numbers are in the ratio",
-      "examCount": 23,
+      "examCount": 24,
       "exams": [
         "aeee-2026",
         "afcat-verbal",
@@ -6390,6 +6495,7 @@
         "kmat-karnataka",
         "niacl-ao",
         "nmat-language",
+        "nmims-cet",
         "rbi-assistant",
         "rbi-grade",
         "rpf-constable",
@@ -6711,6 +6817,23 @@
       ]
     },
     {
+      "opening": "what is the slope of the",
+      "examCount": 11,
+      "exams": [
+        "act-math",
+        "aeee-2026",
+        "jain-jet",
+        "jee-main",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "nmims-cet",
+        "sat-math",
+        "srmjeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "a 4 kg block on a",
       "examCount": 11,
       "exams": [
@@ -6725,6 +6848,23 @@
         "srmjeee-2026",
         "tg-eapcet",
         "wbjee-engineering"
+      ]
+    },
+    {
+      "opening": "in the bohr model of hydrogen",
+      "examCount": 11,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "bcece-2026",
+        "bv-btech",
+        "cg-pet",
+        "gujcet-2026",
+        "jee-advanced",
+        "kcet-engineering",
+        "mht-cet",
+        "srmjeee-2026",
+        "tg-eapcet"
       ]
     },
     {
@@ -6844,38 +6984,6 @@
         "ssc-cpo",
         "ssc-je",
         "ssc-selection"
-      ]
-    },
-    {
-      "opening": "what is the slope of the",
-      "examCount": 10,
-      "exams": [
-        "act-math",
-        "aeee-2026",
-        "jain-jet",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "sat-math",
-        "srmjeee-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "in the bohr model of hydrogen",
-      "examCount": 10,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "bcece-2026",
-        "cg-pet",
-        "gujcet-2026",
-        "jee-advanced",
-        "kcet-engineering",
-        "mht-cet",
-        "srmjeee-2026",
-        "tg-eapcet"
       ]
     },
     {
@@ -7001,6 +7109,36 @@
         "mht-cet",
         "srmjeee-2026",
         "viteee-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "opening": "what is the angle between the",
+      "examCount": 9,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "bv-btech",
+        "kcet-engineering",
+        "mht-cet",
+        "rrb-alp",
+        "rrb-technician",
+        "snap-general",
+        "upsc-cse"
+      ]
+    },
+    {
+      "opening": "what is the coefficient of x",
+      "examCount": 9,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "bitsat-2026",
+        "bv-btech",
+        "kcet-engineering",
+        "met-2026",
+        "srmjeee-2026",
+        "upeseat-2026",
         "wbjee-engineering"
       ]
     },
@@ -7258,31 +7396,31 @@
       ]
     },
     {
-      "opening": "what is the angle between the",
+      "opening": "what is the oxidation state of",
       "examCount": 8,
       "exams": [
         "aeee-2026",
-        "ap-eapcet",
-        "kcet-engineering",
-        "mht-cet",
-        "rrb-alp",
-        "rrb-technician",
-        "snap-general",
-        "upsc-cse"
+        "bitsat-2026",
+        "jee-main",
+        "nmims-cet",
+        "srmjeee-2026",
+        "upeseat-2026",
+        "viteee-2026",
+        "wbjee-engineering"
       ]
     },
     {
-      "opening": "what is the coefficient of x",
+      "opening": "what is the order of the",
       "examCount": 8,
       "exams": [
         "aeee-2026",
-        "ap-eapcet",
-        "bitsat-2026",
+        "bv-btech",
+        "jee-main",
         "kcet-engineering",
         "met-2026",
+        "mht-cet",
         "srmjeee-2026",
-        "upeseat-2026",
-        "wbjee-engineering"
+        "viteee-2026"
       ]
     },
     {
@@ -7314,6 +7452,20 @@
       ]
     },
     {
+      "opening": "what is the equation of the",
+      "examCount": 8,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "bitsat-2026",
+        "bv-btech",
+        "kcet-engineering",
+        "mht-cet",
+        "srmjeee-2026",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "for what value of k is",
       "examCount": 8,
       "exams": [
@@ -7339,6 +7491,20 @@
         "iiit-hyderabad",
         "tg-eapcet",
         "viteee-2026"
+      ]
+    },
+    {
+      "opening": "a string fixed at both ends",
+      "examCount": 8,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "bcece-2026",
+        "bitsat-2026",
+        "bv-btech",
+        "cusat-cat",
+        "jee-main",
+        "mht-cet"
       ]
     },
     {
@@ -7409,6 +7575,34 @@
         "micat-va",
         "snap-general",
         "tancet-mba"
+      ]
+    },
+    {
+      "opening": "the circle x 2 y 2",
+      "examCount": 8,
+      "exams": [
+        "bitsat-2026",
+        "jee-main",
+        "met-2026",
+        "nmims-cet",
+        "srmjeee-2026",
+        "tg-eapcet",
+        "viteee-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
+      "opening": "a satellite moves in a circular",
+      "examCount": 8,
+      "exams": [
+        "bv-btech",
+        "cg-pet",
+        "cusat-cat",
+        "iiit-hyderabad",
+        "kcet-engineering",
+        "met-2026",
+        "mht-cet",
+        "siteee-2026"
       ]
     },
     {
@@ -7621,15 +7815,15 @@
       ]
     },
     {
-      "opening": "what is the oxidation state of",
+      "opening": "across a period from left to",
       "examCount": 7,
       "exams": [
         "aeee-2026",
-        "bitsat-2026",
-        "jee-main",
-        "srmjeee-2026",
-        "upeseat-2026",
-        "viteee-2026",
+        "ap-eapcet",
+        "cg-pet",
+        "kcet-engineering",
+        "met-2026",
+        "nmims-cet",
         "wbjee-engineering"
       ]
     },
@@ -7686,19 +7880,6 @@
       ]
     },
     {
-      "opening": "what is the order of the",
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "jee-main",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "srmjeee-2026",
-        "viteee-2026"
-      ]
-    },
-    {
       "opening": "in the reaction zn cu2 zn2",
       "examCount": 7,
       "exams": [
@@ -7725,19 +7906,6 @@
       ]
     },
     {
-      "opening": "what is the equation of the",
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "bitsat-2026",
-        "kcet-engineering",
-        "mht-cet",
-        "srmjeee-2026",
-        "viteee-2026"
-      ]
-    },
-    {
       "opening": "a spring of force constant 200",
       "examCount": 7,
       "exams": [
@@ -7761,19 +7929,6 @@
         "kcet-engineering",
         "srmjeee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "a string fixed at both ends",
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "bcece-2026",
-        "bitsat-2026",
-        "cusat-cat",
-        "jee-main",
-        "mht-cet"
       ]
     },
     {
@@ -7855,19 +8010,6 @@
       ]
     },
     {
-      "opening": "the circle x 2 y 2",
-      "examCount": 7,
-      "exams": [
-        "bitsat-2026",
-        "jee-main",
-        "met-2026",
-        "srmjeee-2026",
-        "tg-eapcet",
-        "viteee-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
       "opening": "a line has direction ratios 2",
       "examCount": 7,
       "exams": [
@@ -7904,19 +8046,6 @@
         "ssc-cpo",
         "ssc-selection",
         "tancet-mba"
-      ]
-    },
-    {
-      "opening": "a satellite moves in a circular",
-      "examCount": 7,
-      "exams": [
-        "cg-pet",
-        "cusat-cat",
-        "iiit-hyderabad",
-        "kcet-engineering",
-        "met-2026",
-        "mht-cet",
-        "siteee-2026"
       ]
     },
     {
@@ -8138,18 +8267,6 @@
       ]
     },
     {
-      "opening": "across a period from left to",
-      "examCount": 6,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "cg-pet",
-        "kcet-engineering",
-        "met-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
       "opening": "if p a 0 6 p",
       "examCount": 6,
       "exams": [
@@ -8266,6 +8383,18 @@
         "jain-jet",
         "jee-main",
         "special-ojee",
+        "viteee-2026"
+      ]
+    },
+    {
+      "opening": "if a 1 2 3 and",
+      "examCount": 6,
+      "exams": [
+        "aeee-2026",
+        "bv-btech",
+        "met-2026",
+        "mht-cet",
+        "rrb-technician",
         "viteee-2026"
       ]
     },
@@ -8858,6 +8987,17 @@
       ]
     },
     {
+      "opening": "what is the constant term in",
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "kcet-engineering",
+        "met-2026",
+        "nmims-cet",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "opening": "a random variable x takes values",
       "examCount": 5,
       "exams": [
@@ -8990,6 +9130,28 @@
       ]
     },
     {
+      "opening": "what is the determinant of the",
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "jee-main",
+        "kcet-engineering",
+        "nmims-cet",
+        "srmjeee-2026"
+      ]
+    },
+    {
+      "opening": "what is the general solution of",
+      "examCount": 5,
+      "exams": [
+        "aeee-2026",
+        "bv-btech",
+        "kcet-engineering",
+        "mht-cet",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "opening": "in how many ways can 5",
       "examCount": 5,
       "exams": [
@@ -8998,17 +9160,6 @@
         "kcet-engineering",
         "mht-cet",
         "srmjeee-2026"
-      ]
-    },
-    {
-      "opening": "if a 1 2 3 and",
-      "examCount": 5,
-      "exams": [
-        "aeee-2026",
-        "met-2026",
-        "mht-cet",
-        "rrb-technician",
-        "viteee-2026"
       ]
     },
     {
@@ -9053,39 +9204,6 @@
         "jee-main",
         "mht-cet",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "the work function of a metal",
-      "examCount": 5,
-      "exams": [
-        "aeee-2026",
-        "comedk-uget",
-        "jee-advanced",
-        "kcet-engineering",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "in a p n junction diode",
-      "examCount": 5,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "bitsat-2026",
-        "kcet-engineering",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "in the passage above the word",
-      "examCount": 5,
-      "exams": [
-        "ailet-english",
-        "clat-english",
-        "mh-cet",
-        "slat-logical",
-        "tancet-mba"
       ]
     }
   ]

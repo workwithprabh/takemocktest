@@ -95,7 +95,9 @@ export type ExamSlug =
   | 'saeee'
   | 'siteee'
   | 'ojee'
-  | 'upeseat';
+  | 'upeseat'
+  | 'nmims-cet'
+  | 'bv-btech';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -270,6 +272,8 @@ const SITEEE_2026_STRUCTURE_PAGE = 'https://www.set-test.org/structure';
 const SPECIAL_OJEE_2026_PATTERN_NOTICE =
   'https://cdnbbsr.s3waas.gov.in/s36832a7b24bc06775d02b7406880b93fc/uploads/2026/06/202606161888862187.pdf';
 const UPESEAT_2026_ADMISSION_ALERTS_PAGE = 'https://www.upes.ac.in/admissions/admission-alerts/upeseat';
+const NMIMS_CET_2026_HANDOUT = 'https://engineering.nmims.edu/wp-content/uploads/2024/06/NPAT_NCET_MST_NLAT2026-For-SF.pdf';
+const BV_BTECH_2026_BROCHURE = 'https://www.bvuniversity.edu.in/Uploads/moduleimg/14397imguf_Information-Brochure-BVDU-BTECH-2026FINAL.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -9157,6 +9161,76 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, scoringNote: '+1 per correct answer and the 125 mock maximum are TakeMockTest platform-defined scoring, not a rule separately restated on the current live UPESEAT 2026 page; no negative marking traces to a prior official UPES candidate guide (2024 cycle), corroborated by current secondary sources.', checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nmims-cet': {
+    slug: 'nmims-cet',
+    name: 'NMIMS-CET',
+    shortName: 'NMIMS-CET',
+    fullName: 'NMIMS Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-pcm',
+        name: 'B.Tech PCM',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics', 'Logical Intelligence', 'Verbal Reasoning'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 30, duration: 30 },
+            { name: 'Chemistry', questions: 30, marks: 30, duration: 30 },
+            { name: 'Mathematics', questions: 30, marks: 30, duration: 30 },
+            { name: 'Logical Intelligence', questions: 20, marks: 20, duration: 20 },
+            { name: 'Verbal Reasoning', questions: 10, marks: 10, duration: 10 },
+          ],
+          timerNote: 'The official 2026 handout publishes 30/30/30/20/10 per-section time allocations, but that table alone does not establish locked sectional navigation or forced auto-submit, so this mock uses a single unrestricted 120-minute timer across all sections.',
+          note: 'The current NMIMS-CET 2026 handout confirms a computer-based test with five sections (Physics, Chemistry, Mathematics/Biology, Logical Intelligence, Verbal Reasoning), 120 questions, 120 marks, 120 minutes, four-option single-correct MCQs, +1 per correct answer, and no negative marking. This PCM stage uses the Mathematics track (Biology 0) and does not imply every NMIMS-CET candidate takes Mathematics.',
+          sourceUrl: NMIMS_CET_2026_HANDOUT,
+          checkedOn: '26 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'bv-btech': {
+    slug: 'bv-btech',
+    name: 'BV-BTECH',
+    shortName: 'BV-BTECH',
+    fullName: 'Bharati Vidyapeeth B.Tech Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.Tech',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 80, marks: 80 },
+            { name: 'Physics', questions: 60, marks: 60 },
+            { name: 'Chemistry', questions: 60, marks: 60 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer across all sections; no subject locking.',
+          note: 'The current BV-BTECH 2026 Information Brochure confirms a centre-based, English-medium test of 200 four-option MCQs (Mathematics 80, Physics 60, Chemistry 60) for 200 marks in 180 minutes, one correct/most appropriate answer per question, +1 per correct answer, and no negative marking.',
+          sourceUrl: BV_BTECH_2026_BROCHURE,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '27 August 2026' },
         ],
       },
     ],
