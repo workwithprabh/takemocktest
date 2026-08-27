@@ -108,6 +108,10 @@ import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './questio
 import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1 } from './question-banks/ibps-rrb-office-assistant-prelims-reasoning-1';
 import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2 } from './question-banks/ibps-rrb-office-assistant-prelims-numerical-ability-2';
 import { IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_2 } from './question-banks/ibps-rrb-office-assistant-prelims-reasoning-2';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_1 } from './question-banks/ibps-rrb-office-assistant-mains-reasoning-1';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-rrb-office-assistant-mains-numerical-ability-1';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-rrb-office-assistant-mains-english-language-1';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1 } from './question-banks/ibps-rrb-office-assistant-mains-computer-knowledge-1';
 import { SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-gd-constable-cbe-general-intelligence-reasoning-1';
 import { SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1 } from './question-banks/ssc-gd-constable-cbe-general-knowledge-awareness-1';
 import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1 } from './question-banks/ssc-gd-constable-cbe-elementary-mathematics-1';
@@ -876,6 +880,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'ibps-rrb-office-assistant/prelims-reasoning-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_2,
   'ibps-rrb-office-assistant/prelims-numerical-ability-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_2,
+  'ibps-rrb-office-assistant/mains-full-mock-1': [
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_1,
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_1,
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1,
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1,
+  ],
+  'ibps-rrb-office-assistant/mains-reasoning-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_1,
+  'ibps-rrb-office-assistant/mains-numerical-ability-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_1,
+  'ibps-rrb-office-assistant/mains-computer-knowledge-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1,
+  'ibps-rrb-office-assistant/mains-english-language-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1,
   'ssc-gd-constable/cbe-full-mock-1': [
     ...SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
@@ -2115,6 +2129,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
       ? testId.includes('general-awareness') || testId.includes('english-language-comprehension') ? 25 : 20
     : testId.includes('ibps-rrb-office-assistant/prelims-full-mock')
     ? 80
+    : testId.includes('ibps-rrb-office-assistant/mains-full-mock')
+    ? 160
     : testId.includes('ibps-rrb-office-assistant')
       ? 40
     : testId.includes('ibps-po/mains-full-mock')
@@ -3265,6 +3281,12 @@ const ibpsSoMainsLayout = [
   { section: 'Quantitative Aptitude', count: 25 },
   { section: 'Professional Knowledge', count: 25 },
 ];
+const ibpsRrbOaMainsLayout = [
+  { section: 'Reasoning', count: 40 },
+  { section: 'Numerical Ability', count: 40 },
+  { section: 'Computer Knowledge', count: 40 },
+  { section: 'English Language', count: 40 },
+];
 const upscCsePaper1Layout = [
   { section: 'History of India and Indian National Movement', count: 15 },
   { section: 'Indian and World Geography', count: 15 },
@@ -3499,6 +3521,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? sbiClerkMainsLayout
       : testId.includes('ibps-so/mains-full-mock')
         ? ibpsSoMainsLayout
+      : testId.includes('ibps-rrb-office-assistant/mains-full-mock')
+        ? ibpsRrbOaMainsLayout
       : testId.includes('upsc-cse/paper-1-full-mock')
         ? upscCsePaper1Layout
         : testId.includes('upsc-cse/paper-2-full-mock')
