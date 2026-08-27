@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-27 from 563 bank files / 21199 questions.
+Generated: 2026-08-27 from 564 bank files / 21249 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -106,10 +106,10 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | find the area of a rectangle | ibps-clerk, ibps-po, ibps-rrb, lic-aao, niacl-ao, rbi-assistant, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-technician, sbi-clerk, sbi-po, ssc-chsl, ssc-gd, ssc-mts, ssc-selection (17) |
 | a fair die is rolled once | aeee-2026, bcece-2026, ca-foundation, cg-pet, cusat-cat, ibps-clerk, ibps-po, met-2026, mht-cet, rbi-assistant, srmjeee-2026, ssc-cgl, ssc-selection, viteee-2026 (14) |
 | choose the word most opposite in | ibps-rrb, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, ssc-cpo, ssc-gd, ssc-mts, ssc-steno (14) |
+| which of the following best describes | bitsat-2026, ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, rbi-assistant, rbi-grade, rrb-technician, sbi-po, sidbi-grade, srmjeee-2026, ssc-je, wbjee-engineering (13) |
 | if a 1 2 3 4 | aeee-2026, agniveer-vayu, assam-cee, cg-pet, comedk-uget, gujcet-2026, jain-jet, kcet-engineering, mht-cet, nata-mathematics, srmjeee-2026, tg-eapcet (12) |
 | what is the maximum number of | aeee-2026, amu-btech, ap-eapcet, bitsat-2026, jee-main, kcet-engineering, mht-cet, srmjeee-2026, ssc-cgl, ssc-mts, viteee-2026, wbjee-engineering (12) |
 | a can complete a job in | aeee-2026, cds-elementary, ibps-clerk, ibps-rrb, ibps-so, lic-aao, niacl-ao, rbi-assistant, rrb-ntpc, sbi-po, srmjeee-2026, ssc-cgl (12) |
-| which of the following best describes | bitsat-2026, ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, rbi-assistant, rbi-grade, rrb-technician, sbi-po, srmjeee-2026, ssc-je, wbjee-engineering (12) |
 | find the sum of the first | ca-foundation, cma-foundation, ibsat-verbal, jee-main, met-2026, nabard-grade, rbi-grade, rrb-technician, sebi-grade, sidbi-grade, ssc-chsl, ssc-cpo (12) |
 | which of the following is an | comedk-uget, ibps-rrb, kcet-engineering, nabard-grade, rbi-grade, rrb-alp, rrb-technician, sbi-clerk, sbi-po, ssc-cgl, ssc-chsl, viteee-2026 (12) |
 | what is the slope of the | act-math, aeee-2026, jain-jet, jee-main, kcet-engineering, met-2026, mht-cet, nmims-cet, sat-math, srmjeee-2026, viteee-2026 (11) |
