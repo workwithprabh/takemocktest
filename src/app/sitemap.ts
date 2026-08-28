@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: post.publishedAt,
         changeFrequency: 'yearly',
         priority: 0.5,
+        images: post.image ? [`${SITE_URL}${post.image.src}`] : undefined,
       });
     }
     for (const category of EXAM_CATEGORIES) {
