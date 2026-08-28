@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-28",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 575,
-    "questions": 21549
+    "bankFiles": 578,
+    "questions": 21624
   },
   "topicSaturation": [
     {
@@ -6685,7 +6685,7 @@
     },
     {
       "opening": "which of the following is a",
-      "examCount": 22,
+      "examCount": 23,
       "exams": [
         "assam-cee",
         "bitsat-2026",
@@ -6693,6 +6693,7 @@
         "gate-2026",
         "ibps-clerk",
         "ibps-rrb",
+        "ibps-so",
         "jee-main",
         "kcet-engineering",
         "nabard-grade",
