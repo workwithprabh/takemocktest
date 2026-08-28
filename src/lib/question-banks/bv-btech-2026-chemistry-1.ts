@@ -56,12 +56,12 @@ export const BV_BTECH_2026_CHEMISTRY_1: Question[] = [
     "difficulty": "medium",
     "question": "A volumetric pipette is rinsed only with distilled water and then used, while still wet, to deliver an analyte for titration. If the result is calculated from the nominal pipette volume, what bias is most likely in the reported analyte concentration?",
     "options": [
-      "Too high, because extra analyte remains in the pipette",
       "Too low, because residual water dilutes the aliquot before delivery",
+      "Too high, because extra analyte remains in the pipette",
       "No bias, because distilled water contains no solute",
       "Unpredictable, because the pipette volume becomes zero"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
