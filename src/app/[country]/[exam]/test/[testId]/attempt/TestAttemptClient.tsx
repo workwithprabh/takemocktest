@@ -377,9 +377,10 @@ export default function TestAttemptClient({
 
   if (phase === 'submitted' && result) {
     return (
-      <div className="max-w-3xl mx-auto px-5 py-6">
-        <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">{testName}: Results</h1>
-        <p className="text-ink-500 text-sm mb-6">{examName}</p>
+      <div className="mx-auto max-w-5xl px-5 py-8 sm:py-12">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">Attempt complete</p>
+        <h1 className="text-3xl font-bold leading-tight text-ink-900">{testName}: Results</h1>
+        <p className="mb-8 mt-2 text-sm text-ink-700">{examName}</p>
         <ResultDetail
           attempt={result}
           actions={
@@ -453,13 +454,18 @@ export default function TestAttemptClient({
   };
 
   return (
-    <div data-test-attempt className="max-w-5xl mx-auto px-5 py-4">
-      <div className="sticky top-0 z-20 mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-ink-200 bg-ink-50/95 py-3 backdrop-blur">
+    <div data-test-attempt className="mx-auto max-w-6xl px-4 py-3 sm:px-5">
+      <header className="sticky top-0 z-20 mb-5 border border-ink-200 bg-white/95 backdrop-blur">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3">
         <div className="min-w-0 flex-1">
-          <h1 className="font-sans font-bold text-base text-ink-900">{testName}</h1>
-          <p className="text-xs text-ink-500">{examName} · Progress saved on this device</p>
+          <h1 className="truncate text-sm font-bold text-ink-900 sm:text-base">{testName}</h1>
+          <p className="mt-0.5 text-xs text-ink-600">
+            Question {currentIndex + 1} of {questions.length} · {attemptedCount} answered
+            {markedCount > 0 ? ` · ${markedCount} for review` : ''}
+          </p>
         </div>
         <div
+          role="timer"
           aria-label={`${usesSectionTimer ? `Section ${activeSectionIndex + 1} of ${groups.length}, ` : ''}${formatClock(timeLeft)} remaining`}
           className={`min-h-11 px-3 py-2 font-mono text-sm font-semibold ${
             timeLeft <= 120 ? 'bg-attention-600 text-white' : 'bg-ink-100 text-ink-700'
@@ -483,17 +489,27 @@ export default function TestAttemptClient({
             onClick={() => setConfirmOpen(true)}
             className="min-h-11 flex-1 bg-ink-900 px-4 text-xs font-semibold text-white transition hover:bg-ink-700 sm:flex-none"
           >
-            Submit
+            Submit test
           </button>
         </div>
-      </div>
+        </div>
+        <div className="h-1 bg-ink-100" aria-hidden="true">
+          <div
+            className="h-full bg-action-700 transition-[width]"
+            style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
+          />
+        </div>
+      </header>
 
       <div className="flex flex-col md:flex-row gap-6">
         <div className="flex-1">
-          <div className="bg-white border border-ink-200 p-5">
-              <div className="text-xs font-semibold uppercase tracking-wide text-ink-500 mb-2">{q.section}</div>
-              <div id="current-question" className="text-sm font-medium mb-4 text-ink-900">
-                {currentIndex + 1}. {q.question}
+          <div className="border border-ink-200 bg-white p-5 sm:p-7">
+              <div className="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-ink-200 pb-3">
+                <span className="text-xs font-semibold uppercase tracking-wide text-ink-500">{q.section}</span>
+                <span className="text-xs font-semibold text-ink-700">Question {currentIndex + 1}</span>
+              </div>
+              <div id="current-question" className="mb-6 text-base font-medium leading-7 text-ink-900 sm:text-lg">
+                {q.question}
               </div>
               {q.answerType === 'numerical' ? (
                 <div>
@@ -619,12 +635,12 @@ export default function TestAttemptClient({
             {usesSectionTimer && (
               <div className="text-xs font-semibold text-ink-900 mb-1">{activeGroupSections.join(' + ')}</div>
             )}
-            <div className="text-xs font-semibold text-ink-500 mb-1">
+            <div className="mb-1 text-xs font-semibold text-ink-700">
               {usesSectionTimer
                 ? `${attemptedInSection}/${activeQuestionIndices.length} in section · ${attemptedCount}/${questions.length} total`
                 : `${attemptedCount}/${questions.length} answered`}
             </div>
-            {markedCount > 0 && <div className="text-xs text-ink-500 mb-3">{markedCount} marked for review</div>}
+            {markedCount > 0 && <div className="mb-3 text-xs text-ink-600">{markedCount} marked for review</div>}
             <div className="mt-3 grid grid-cols-5 gap-2">
               {(usesSectionTimer ? activeQuestionIndices : questions.map((_, index) => index)).map((i) => (
                 <button
@@ -656,7 +672,7 @@ export default function TestAttemptClient({
       </div>
 
       <ConfirmDialog open={confirmOpen} title="Submit test?" onClose={() => setConfirmOpen(false)}>
-        <p className="mb-4 text-sm text-ink-500">
+        <p className="mb-4 text-sm text-ink-700">
           You’ve answered <strong className="text-ink-900">{attemptedCount}</strong> of{' '}
           <strong className="text-ink-900">{questions.length}</strong> questions
           {questions.length - attemptedCount > 0 && (
@@ -681,7 +697,7 @@ export default function TestAttemptClient({
       </ConfirmDialog>
 
       <ConfirmDialog open={exitOpen} title="Exit this test?" onClose={() => setExitOpen(false)}>
-        <p className="mb-4 text-sm leading-6 text-ink-500">
+        <p className="mb-4 text-sm leading-6 text-ink-700">
           Your answers and remaining time are saved on this device. Return to this test to resume.
         </p>
         <div className="flex gap-3">

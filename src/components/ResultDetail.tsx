@@ -23,7 +23,15 @@ function ScoreRing({ percent }: { percent: number }) {
   const arcColor = scoreTierColor(percent);
 
   return (
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="-rotate-90">
+    <svg
+      width={size}
+      height={size}
+      viewBox={`0 0 ${size} ${size}`}
+      className="-rotate-90"
+      role="img"
+      aria-label={`Overall score ${Math.round(percent)} percent`}
+    >
+      <title>Overall score: {Math.round(percent)}%</title>
       <circle cx={size / 2} cy={size / 2} r={radius} stroke="#E7E9F0" strokeWidth={stroke} fill="none" />
       <circle
         cx={size / 2}
@@ -191,7 +199,7 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
 
   return (
     <div>
-      <div className="bg-white border border-ink-200 p-6 mb-6 flex flex-col sm:flex-row items-center gap-6">
+      <div className="mb-6 flex flex-col items-center gap-6 border border-ink-200 bg-white p-6 sm:flex-row sm:p-8">
         <ScoreRing percent={percent} />
         <div className={`flex-1 grid grid-cols-2 gap-4 w-full text-center sm:text-left ${attempt.partial ? 'sm:grid-cols-5' : 'sm:grid-cols-4'}`}>
           <div>
@@ -219,19 +227,19 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between gap-2 mb-6 text-xs text-ink-500">
+      <div className="mb-8 flex flex-wrap items-center justify-between gap-2 border-b border-ink-200 pb-5 text-xs text-ink-600">
         <span>Time taken: {formatTime(attempt.timeTakenSec)}</span>
         <span>Submitted {new Date(attempt.submittedAt).toLocaleString()}</span>
       </div>
 
-      <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Section-wise performance</h2>
-      <div className="space-y-3 mb-8">
+      <h2 className="mb-4 text-xl font-bold text-ink-900">Section-wise performance</h2>
+      <div className="mb-10 grid gap-3 sm:grid-cols-2">
         {sectionStats.map((s) => {
           const sectionPercent = s.hasMarkData && s.maxScore > 0
             ? Math.max(0, Math.min(100, (s.score / s.maxScore) * 100))
             : s.total > 0 ? (s.correct / s.total) * 100 : 0;
           return (
-            <div key={s.section}>
+            <div key={s.section} className="border border-ink-200 bg-white p-4">
               <div className="flex justify-between text-xs mb-1">
                 <span className="font-medium text-ink-900">{s.section}</span>
                 <span className="text-ink-500">
@@ -251,71 +259,95 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
         })}
       </div>
 
-      <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Topic-wise analysis</h2>
-      <div className="space-y-6 mb-8">
-        {sections.map((section) => (
-          <section key={section} aria-labelledby={`topics-${section.replaceAll(' ', '-').toLowerCase()}`}>
-            <h3
-              id={`topics-${section.replaceAll(' ', '-').toLowerCase()}`}
-              className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500"
-            >
-              {section}
-            </h3>
-            <div className="grid gap-2 sm:grid-cols-2">
-              {topicStats.filter((stat) => stat.section === section).map((stat) => {
-                const accuracy = stat.attempted > 0 ? Math.round((stat.correct / stat.attempted) * 100) : null;
-                const cue = performanceCue(stat.correct, stat.attempted, stat.total);
-                return (
-                  <div key={stat.topic} className="border border-ink-200 bg-white p-3">
-                    <div className="mb-3 flex items-start justify-between gap-3">
-                      <span className="text-sm font-semibold text-ink-900">{stat.topic}</span>
-                      <span className={`px-2 py-1 text-[10px] font-semibold uppercase tracking-wide ${cue.className}`}>
-                        {cue.label}
-                      </span>
+      <details className="group mb-10 border border-ink-200 bg-white">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5">
+          <span>
+            <span className="block text-xl font-bold text-ink-900">Topic-wise analysis</span>
+            <span className="mt-1 block text-xs text-ink-600">Open the detailed accuracy and time breakdown.</span>
+          </span>
+          <span className="text-xl text-ink-500 group-open:rotate-45" aria-hidden="true">+</span>
+        </summary>
+        <div className="space-y-6 border-t border-ink-200 p-5">
+          {sections.map((section) => (
+            <section key={section} aria-labelledby={`topics-${section.replaceAll(' ', '-').toLowerCase()}`}>
+              <h3
+                id={`topics-${section.replaceAll(' ', '-').toLowerCase()}`}
+                className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-500"
+              >
+                {section}
+              </h3>
+              <div className="grid gap-2 sm:grid-cols-2">
+                {topicStats.filter((stat) => stat.section === section).map((stat) => {
+                  const accuracy = stat.attempted > 0 ? Math.round((stat.correct / stat.attempted) * 100) : null;
+                  const cue = performanceCue(stat.correct, stat.attempted, stat.total);
+                  return (
+                    <div key={stat.topic} className="border border-ink-200 bg-ink-50 p-3">
+                      <div className="mb-3 flex items-start justify-between gap-3">
+                        <span className="text-sm font-semibold text-ink-900">{stat.topic}</span>
+                        <span className={`px-2 py-1 text-[10px] font-semibold uppercase tracking-wide ${cue.className}`}>
+                          {cue.label}
+                        </span>
+                      </div>
+                      <dl className="grid grid-cols-3 gap-2 text-xs">
+                        <div>
+                          <dt className="text-ink-500">Correct</dt>
+                          <dd className="mt-1 font-mono font-semibold text-ink-900">{stat.correct}/{stat.total}</dd>
+                        </div>
+                        <div>
+                          <dt className="text-ink-500">Accuracy</dt>
+                          <dd className="mt-1 font-mono font-semibold text-ink-900">
+                            {accuracy === null ? 'N/A' : `${accuracy}%`}
+                          </dd>
+                        </div>
+                        <div>
+                          <dt className="text-ink-500">Time</dt>
+                          <dd className="mt-1 font-mono font-semibold text-ink-900">
+                            {stat.timeSpentSec > 0 ? formatTime(stat.timeSpentSec) : 'N/A'}
+                          </dd>
+                        </div>
+                      </dl>
                     </div>
-                    <dl className="grid grid-cols-3 gap-2 text-xs">
-                      <div>
-                        <dt className="text-ink-500">Correct</dt>
-                        <dd className="mt-1 font-mono font-semibold text-ink-900">{stat.correct}/{stat.total}</dd>
-                      </div>
-                      <div>
-                        <dt className="text-ink-500">Accuracy</dt>
-                        <dd className="mt-1 font-mono font-semibold text-ink-900">
-                          {accuracy === null ? 'N/A' : `${accuracy}%`}
-                        </dd>
-                      </div>
-                      <div>
-                        <dt className="text-ink-500">Time</dt>
-                        <dd className="mt-1 font-mono font-semibold text-ink-900">
-                          {stat.timeSpentSec > 0 ? formatTime(stat.timeSpentSec) : 'N/A'}
-                        </dd>
-                      </div>
-                    </dl>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-        ))}
-      </div>
+                  );
+                })}
+              </div>
+            </section>
+          ))}
+        </div>
+      </details>
 
       {actions && <div className="flex flex-wrap gap-3 mb-8">{actions}</div>}
 
-      <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Answer review</h2>
+      <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 className="text-xl font-bold text-ink-900">Answer review</h2>
+          <p className="mt-1 text-xs text-ink-600">Open any question to see the correct answer, explanation, and source.</p>
+        </div>
+        <span className="text-xs font-semibold text-ink-700">{attempt.totalQuestions} questions</span>
+      </div>
       <div className="space-y-3">
         {attempt.questions.map((q, i) => {
           const isCorrect = isCorrectQuestion(q);
           const isUnattempted = q.selectedIndex === null;
           const isPartial = q.outcome === 'partial';
           return (
-            <div
+            <details
               key={i}
-              className={`border-[1.5px] p-4 ${
-                isUnattempted ? 'border-ink-200' : isCorrect ? 'border-correct/40 bg-correct/5' : isPartial ? 'border-ink-400 bg-ink-100' : 'border-incorrect/40 bg-incorrect/5'
+              className={`group border-[1.5px] ${
+                isUnattempted ? 'border-ink-200 bg-white' : isCorrect ? 'border-correct/40 bg-correct/5' : isPartial ? 'border-ink-400 bg-ink-100' : 'border-incorrect/40 bg-incorrect/5'
               }`}
             >
-              <div className="text-xs font-semibold uppercase tracking-wide text-ink-500 mb-1">{q.section}</div>
-              <div className="text-sm font-medium mb-2 text-ink-900">{i + 1}. {q.question}</div>
+              <summary className="flex cursor-pointer list-none items-start justify-between gap-4 p-4 focus-visible:outline-offset-[-2px]">
+                <span>
+                  <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-ink-500">{q.section}</span>
+                  <span className="block text-sm font-medium leading-6 text-ink-900">{i + 1}. {q.question}</span>
+                </span>
+                <span className={`flex-none px-2 py-1 text-[10px] font-semibold uppercase tracking-wide ${
+                  isUnattempted ? 'bg-ink-100 text-ink-700' : isCorrect ? 'bg-correct/10 text-correct' : isPartial ? 'bg-ink-200 text-ink-700' : 'bg-incorrect/10 text-incorrect'
+                }`}>
+                  {isUnattempted ? 'Unattempted' : isCorrect ? 'Correct' : isPartial ? 'Partial' : 'Wrong'}
+                </span>
+              </summary>
+              <div className="border-t border-ink-200 p-4">
               {q.answerType === 'numerical' ? (
                 <div className="grid gap-2 text-xs sm:grid-cols-2">
                   <div className={isUnattempted ? 'bg-ink-100 px-2.5 py-2 font-semibold text-ink-700' : isCorrect ? 'bg-correct/10 px-2.5 py-2 font-semibold text-correct' : 'bg-incorrect/10 px-2.5 py-2 font-semibold text-incorrect'}>
@@ -342,7 +374,7 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
                           ? 'bg-correct/10 text-correct font-semibold'
                           : isSelected
                           ? 'bg-incorrect/10 text-incorrect font-semibold'
-                          : 'text-ink-500'
+                          : 'text-ink-700'
                       }`}
                     >
                       {String.fromCharCode(65 + oi)}. {opt}
@@ -352,19 +384,19 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
                 })}
               </div>
               )}
-              <div className="text-xs text-ink-500 mt-2 italic">{q.explanation}</div>
+              <div className="mt-3 text-sm leading-6 text-ink-700"><strong className="text-ink-900">Explanation:</strong> {q.explanation}</div>
               <div className="mt-4 border-t border-ink-200 pt-3">
                 <div className="flex flex-wrap items-center gap-2 text-xs">
                   <span className="bg-ink-100 px-2 py-1 font-semibold text-ink-700">
                     {q.source?.kind === 'official-paper' ? 'Official paper question' : q.source ? 'Original practice question' : 'Demo question'}
                   </span>
-                  {q.topic && <span className="text-ink-500">{q.topic}</span>}
-                  {q.difficulty && <span className="capitalize text-ink-500">{q.difficulty}</span>}
-                  {(q.timeSpentSec ?? 0) > 0 && <span className="text-ink-500">Time: {formatTime(q.timeSpentSec!)}</span>}
-                  <span className="text-ink-500">ID: {q.id ?? `${attempt.testId}-question-${i + 1}`}</span>
+                  {q.topic && <span className="text-ink-600">{q.topic}</span>}
+                  {q.difficulty && <span className="capitalize text-ink-600">{q.difficulty}</span>}
+                  {(q.timeSpentSec ?? 0) > 0 && <span className="text-ink-600">Time: {formatTime(q.timeSpentSec!)}</span>}
+                  <span className="text-ink-600">ID: {q.id ?? `${attempt.testId}-question-${i + 1}`}</span>
                 </div>
                 {q.source ? (
-                  <p className="mt-2 text-xs leading-5 text-ink-500">
+                  <p className="mt-2 text-xs leading-5 text-ink-700">
                     {q.source.reference}. Checked {q.source.checkedOn}.{' '}
                     <a
                       href={q.source.url}
@@ -376,16 +408,17 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
                     </a>
                   </p>
                 ) : (
-                  <p className="mt-2 text-xs leading-5 text-ink-500">
+                  <p className="mt-2 text-xs leading-5 text-ink-700">
                     This demo question predates published provenance details.
                   </p>
                 )}
                 <div className="mt-3 flex flex-wrap items-center gap-3">
                   <QuestionIssueActions attempt={attempt} question={q} index={i} />
-                  <span className="text-xs text-ink-500">Opens a pre-filled email to info@takemocktest.com.</span>
+                  <span className="text-xs text-ink-600">Opens a pre-filled email to info@takemocktest.com.</span>
                 </div>
               </div>
-            </div>
+              </div>
+            </details>
           );
         })}
       </div>

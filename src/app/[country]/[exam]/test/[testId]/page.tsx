@@ -2073,7 +2073,7 @@ export default async function TestInstructionsPage({
     : null;
 
   return (
-    <div className="max-w-2xl mx-auto px-5 py-6">
+    <div className="mx-auto max-w-5xl px-5 py-8 sm:py-12">
       {jsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
       )}
@@ -2083,77 +2083,83 @@ export default async function TestInstructionsPage({
         { label: 'Mock tests', href: `/${country}/${exam.slug}/mock-test` },
         { label: test.name },
       ]} />
-      <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">{test.name}</h1>
-      <p className="text-ink-500 text-sm mb-6">{exam.name} · {exam.fullName}</p>
-
-      <div className="mb-4 border border-ink-200 bg-ink-50 p-4">
-        <div className="text-sm font-semibold text-ink-900">
-          {test.status === 'checked' ? 'Syllabus-checked original practice' : 'Practice demo'}
-        </div>
-        <p className="mt-1 text-xs leading-5 text-ink-500">
-          {test.status === 'checked'
-            ? `Mapped to the official ${stage.name} syllabus and answer-checked on ${test.checkedOn}.`
-            : 'This small set demonstrates the test interface and uses demo scoring. It is not an exam-accurate full mock.'}
-        </p>
-        {test.scoringNote && (
-          <p className="mt-2 border-t border-ink-200 pt-2 text-xs leading-5 text-ink-500">
-            <strong className="text-ink-900">Scoring note:</strong> {test.scoringNote}
-          </p>
-        )}
-        {test.status === 'checked' && stage.pattern.sourceUrl && (
-          <a href={stage.pattern.sourceUrl} target="_blank" rel="noreferrer" className="mt-2 inline-block text-xs font-semibold text-ink-900 underline">
-            View official syllabus source
-          </a>
-        )}
+      <div className="mb-8 max-w-3xl">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">Free online practice test</p>
+        <h1 className="text-3xl font-bold leading-tight text-ink-900 sm:text-4xl">{test.name}</h1>
+        <p className="mt-3 text-sm leading-6 text-ink-700">{exam.name} · {exam.fullName}</p>
       </div>
 
-      <div className="bg-white border border-ink-200 p-5 grid grid-cols-2 gap-4 mb-6 text-center sm:grid-cols-4">
-        <div>
-          <div className="font-sans font-bold text-lg text-ink-900">{questionCount}</div>
-          <div className="text-xs text-ink-500">Questions</div>
-        </div>
-        <div>
-          <div className="font-sans font-bold text-lg text-ink-900">{test.duration} min</div>
-          <div className="text-xs text-ink-500">Duration</div>
-        </div>
-        <div>
-          <div className="font-sans font-bold text-lg text-ink-900">
-            {usesQuestionLevelScoring ? 'By question' : `+${test.marksPerCorrect}`}
-          </div>
-          <div className="text-xs text-ink-500">Per correct answer</div>
-        </div>
-        <div>
-          <div className="font-sans font-bold text-lg text-ink-900">
-            {usesQuestionLevelScoring ? 'By question' : `−${test.negativeMarking}`}
-          </div>
-          <div className="text-xs text-ink-500">Per wrong answer</div>
-        </div>
+      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
+          <section className="border border-ink-200 bg-white p-5 lg:col-start-1" aria-labelledby="test-readiness">
+            <div className="flex items-start gap-3">
+              <span className="mt-0.5 flex h-8 w-8 flex-none items-center justify-center bg-live-100 text-sm font-bold text-live-800" aria-hidden="true">✓</span>
+              <div>
+                <h2 id="test-readiness" className="text-sm font-semibold text-ink-900">
+                  {test.status === 'checked' ? 'Syllabus-checked original practice' : 'Practice demo'}
+                </h2>
+                <p className="mt-1 text-sm leading-6 text-ink-700">
+                  {test.status === 'checked'
+                    ? `Mapped to the official ${stage.name} syllabus and answer-checked on ${test.checkedOn}.`
+                    : 'This small set demonstrates the test interface and uses demo scoring. It is not an exam-accurate full mock.'}
+                </p>
+                {test.status === 'checked' && stage.pattern.sourceUrl && (
+                  <a href={stage.pattern.sourceUrl} target="_blank" rel="noreferrer" className="mt-2 inline-block text-xs font-semibold text-action-700 underline underline-offset-2">
+                    View official syllabus source
+                  </a>
+                )}
+              </div>
+            </div>
+            {test.scoringNote && (
+              <p className="mt-4 border-t border-ink-200 pt-4 text-xs leading-5 text-ink-700">
+                <strong className="text-ink-900">Scoring note:</strong> {test.scoringNote}
+              </p>
+            )}
+          </section>
+
+        <aside className="border border-ink-200 bg-white p-5 lg:sticky lg:top-24 lg:col-start-2 lg:row-span-2 lg:row-start-1" aria-label="Test summary">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Test summary</p>
+          <dl className="mt-4 grid grid-cols-2 border border-ink-200">
+            {[
+              ['Questions', String(questionCount)],
+              ['Duration', `${test.duration} min`],
+              ['Correct', usesQuestionLevelScoring ? 'By question' : `+${test.marksPerCorrect}`],
+              ['Wrong', usesQuestionLevelScoring ? 'By question' : `−${test.negativeMarking}`],
+            ].map(([label, value]) => (
+              <div key={label} className="border-b border-r border-ink-200 p-3 even:border-r-0 [&:nth-last-child(-n+2)]:border-b-0">
+                <dt className="text-[11px] text-ink-500">{label}</dt>
+                <dd className="mt-1 text-base font-bold text-ink-900">{value}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-4 text-xs leading-5 text-ink-600">Your progress is saved on this device while the test is active.</p>
+          <Link
+            href={`/${country}/${exam.slug}/test/${testId}/attempt`}
+            className="mt-5 flex min-h-12 items-center justify-center bg-action-700 px-4 text-sm font-semibold text-white transition hover:bg-action-800"
+          >
+            Start test <span className="ml-2" aria-hidden="true">→</span>
+          </Link>
+        </aside>
+
+        <section className="lg:col-start-1" aria-labelledby="test-instructions">
+          <h2 id="test-instructions" className="mb-4 text-xl font-bold text-ink-900">Before you begin</h2>
+          <ol className="space-y-3">
+            {instructions.map((item, i) => (
+              <li key={i} className="flex gap-3 border-b border-ink-200 pb-3 text-sm leading-6 text-ink-700 last:border-0">
+                <span className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center bg-ink-100 text-[11px] font-bold text-ink-700">
+                  {i + 1}
+                </span>
+                {item}
+              </li>
+            ))}
+          </ol>
+        </section>
       </div>
-
-      <h2 className="font-sans font-semibold text-sm mb-3 text-ink-900">Instructions</h2>
-      <ul className="space-y-2.5 mb-8">
-        {instructions.map((item, i) => (
-          <li key={i} className="flex gap-2.5 text-sm text-ink-500">
-            <span className="flex-shrink-0 w-5 h-5 bg-ink-100 text-ink-700 text-[11px] font-bold flex items-center justify-center mt-0.5">
-              {i + 1}
-            </span>
-            {item}
-          </li>
-        ))}
-      </ul>
-
-      <Link
-        href={`/${country}/${exam.slug}/test/${testId}/attempt`}
-        className="block text-center bg-ink-900 text-white font-semibold text-sm px-4 py-3.5 hover:bg-ink-700 transition"
-      >
-        Start test
-      </Link>
 
       {isFullMock && (
-        <div className="mt-12 border-t border-ink-200 pt-10">
+        <div className="mt-14 border-t border-ink-200 pt-10">
           <section className="mb-10">
             <h2 className="mb-3 text-xl font-bold text-ink-900">About this {exam.name} {stage.name} mock test</h2>
-            <p className="text-sm leading-7 text-ink-500">
+            <p className="text-sm leading-7 text-ink-700">
               This free mock contains {questionCount} original practice questions mapped to the {exam.name}{' '}
               {stage.name} syllabus and pattern. Every checked answer includes an explanation and a source record.
             </p>
@@ -2165,7 +2171,7 @@ export default async function TestInstructionsPage({
               {coveredSections.map((section, sectionIndex) => (
                 <div key={section} className="border border-ink-200 bg-white p-4">
                   <h3 className="text-sm font-semibold text-ink-900">{section}</h3>
-                  <p className="mt-1 text-xs leading-5 text-ink-500">
+                  <p className="mt-1 text-xs leading-5 text-ink-700">
                     {questions.filter((question) => question.section === section).length} questions
                     {test.sectionDurations?.[sectionIndex]
                       ? ` · ${test.sectionDurations[sectionIndex]} minutes`
@@ -2178,7 +2184,7 @@ export default async function TestInstructionsPage({
 
           <section className="mb-10">
             <h2 className="mb-3 text-xl font-bold text-ink-900">Scoring and result analysis</h2>
-            <p className="text-sm leading-7 text-ink-500">
+            <p className="text-sm leading-7 text-ink-700">
               {usesQuestionLevelScoring
                 ? `Each question uses its assigned marks and penalty; together they total ${maxScore} marks.`
                 : `Correct answers earn ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'} and wrong answers deduct ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}.`}{' '}
@@ -2202,7 +2208,7 @@ export default async function TestInstructionsPage({
                 {fullMockFaqs.map((faq) => (
                   <details key={faq.question} className="border border-ink-200 bg-white p-4">
                     <summary className="cursor-pointer text-sm font-semibold text-ink-900">{faq.question}</summary>
-                    <p className="mt-2 text-sm leading-6 text-ink-500">{faq.answer}</p>
+                    <p className="mt-2 text-sm leading-6 text-ink-700">{faq.answer}</p>
                   </details>
                 ))}
               </div>
