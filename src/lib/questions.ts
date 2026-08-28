@@ -149,6 +149,11 @@ import { RRB_JE_CBT1_MATHEMATICS_2 } from './question-banks/rrb-je-cbt1-mathemat
 import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_2 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-2';
 import { RRB_JE_CBT1_GENERAL_AWARENESS_2 } from './question-banks/rrb-je-cbt1-general-awareness-2';
 import { RRB_JE_CBT1_GENERAL_SCIENCE_2 } from './question-banks/rrb-je-cbt1-general-science-2';
+import { RRB_JE_CBT2_PHYSICS_CHEMISTRY_1 } from './question-banks/rrb-je-cbt2-physics-chemistry-1';
+import { RRB_JE_CBT2_COMPUTERS_1 } from './question-banks/rrb-je-cbt2-computers-1';
+import { RRB_JE_CBT2_ENVIRONMENT_1 } from './question-banks/rrb-je-cbt2-environment-1';
+import { RRB_JE_CBT2_TECHNICAL_CIVIL_1 } from './question-banks/rrb-je-cbt2-technical-civil-1';
+import { RRB_JE_CBT2_TECHNICAL_MECHANICAL_1 } from './question-banks/rrb-je-cbt2-technical-mechanical-1';
 import { UPSC_CSE_PAPER_1_HISTORY_1 } from './question-banks/upsc-cse-paper-1-history-1';
 import { UPSC_CSE_PAPER_1_GEOGRAPHY_1 } from './question-banks/upsc-cse-paper-1-geography-1';
 import { UPSC_CSE_PAPER_1_POLITY_1 } from './question-banks/upsc-cse-paper-1-polity-1';
@@ -1012,6 +1017,23 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-je/cbt1-general-intelligence-reasoning-sectional-2': RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_2,
   'rrb-je/cbt1-general-awareness-sectional-2': RRB_JE_CBT1_GENERAL_AWARENESS_2,
   'rrb-je/cbt1-general-science-sectional-2': RRB_JE_CBT1_GENERAL_SCIENCE_2,
+  'rrb-je/cbt2-full-mock-civil-1': [
+    ...RRB_JE_CBT2_TECHNICAL_CIVIL_1,
+    ...RRB_JE_CBT2_PHYSICS_CHEMISTRY_1,
+    ...RRB_JE_CBT2_COMPUTERS_1,
+    ...RRB_JE_CBT2_ENVIRONMENT_1,
+  ],
+  'rrb-je/cbt2-technical-abilities-civil-sectional-1': RRB_JE_CBT2_TECHNICAL_CIVIL_1,
+  'rrb-je/cbt2-full-mock-mechanical-1': [
+    ...RRB_JE_CBT2_TECHNICAL_MECHANICAL_1,
+    ...RRB_JE_CBT2_PHYSICS_CHEMISTRY_1,
+    ...RRB_JE_CBT2_COMPUTERS_1,
+    ...RRB_JE_CBT2_ENVIRONMENT_1,
+  ],
+  'rrb-je/cbt2-technical-abilities-mechanical-sectional-1': RRB_JE_CBT2_TECHNICAL_MECHANICAL_1,
+  'rrb-je/cbt2-physics-chemistry-sectional-1': RRB_JE_CBT2_PHYSICS_CHEMISTRY_1,
+  'rrb-je/cbt2-computers-sectional-1': RRB_JE_CBT2_COMPUTERS_1,
+  'rrb-je/cbt2-environment-sectional-1': RRB_JE_CBT2_ENVIRONMENT_1,
   'upsc-cse/paper-1-full-mock-1': [
     ...UPSC_CSE_PAPER_1_HISTORY_1,
     ...UPSC_CSE_PAPER_1_GEOGRAPHY_1,
@@ -2762,6 +2784,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('bv-btech/full-mock')
     ? 200
+    : testId.includes('rrb-je/cbt2-full-mock')
+    ? 135
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -2787,6 +2811,11 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 40
           : testId.includes('sbi-clerk')
             ? testId.includes('english-language') ? 30 : 35
+          : testId.includes('rrb-je/cbt2')
+            ? testId.includes('technical-abilities') ? 100
+              : testId.includes('physics-chemistry') ? 15
+                : testId.includes('computers') ? 10
+                  : testId.includes('environment') ? 10 : 10
           : testId.includes('rrb-je')
             ? testId.includes('mathematics') ? 30
               : testId.includes('general-intelligence-reasoning') ? 25
@@ -3392,6 +3421,18 @@ const sebiGradeAPhase2Paper2Layout = [
 const sscCpoPaper2Layout = [
   { section: 'English Language and Comprehension', count: 200 },
 ];
+const rrbJeCbt2CivilLayout = [
+  { section: 'Technical Abilities', count: 100 },
+  { section: 'Physics and Chemistry', count: 15 },
+  { section: 'Basics of Computers and Applications', count: 10 },
+  { section: 'Basics of Environment and Pollution Control', count: 10 },
+];
+const rrbJeCbt2MechanicalLayout = [
+  { section: 'Technical Abilities', count: 100 },
+  { section: 'Physics and Chemistry', count: 15 },
+  { section: 'Basics of Computers and Applications', count: 10 },
+  { section: 'Basics of Environment and Pollution Control', count: 10 },
+];
 const tierTwoPaperOneLayout = [
   { section: 'Mathematical Abilities', count: 30 },
   { section: 'Reasoning and General Intelligence', count: 30 },
@@ -3718,6 +3759,10 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                 ? sebiGradeAPhase2Paper2Layout
               : testId.includes('ssc-cpo/paper-2-full-mock')
                 ? sscCpoPaper2Layout
+              : testId.includes('rrb-je/cbt2-full-mock-civil')
+                ? rrbJeCbt2CivilLayout
+              : testId.includes('rrb-je/cbt2-full-mock-mechanical')
+                ? rrbJeCbt2MechanicalLayout
               : testId.includes('niacl-ao/prelims-full-mock')
                 ? niaclAoPrelimsLayout
                 : testId.includes('niacl-ao/mains-full-mock')

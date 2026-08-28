@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-28",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 578,
-    "questions": 21624
+    "bankFiles": 583,
+    "questions": 21859
   },
   "topicSaturation": [
     {
@@ -3911,7 +3911,7 @@
     {
       "section": "Reasoning",
       "topic": "Number series",
-      "questionCount": 40,
+      "questionCount": 39,
       "examCount": 5,
       "exams": [
         "ibps-po",
@@ -6376,7 +6376,7 @@
     },
     {
       "pattern": "SI unit lookup",
-      "matchCount": 54,
+      "matchCount": 56,
       "examCount": 17,
       "exams": [
         "ap-eapcet",
@@ -6655,6 +6655,36 @@
       ]
     },
     {
+      "opening": "which of the following is a",
+      "examCount": 24,
+      "exams": [
+        "assam-cee",
+        "bitsat-2026",
+        "comedk-uget",
+        "gate-2026",
+        "ibps-clerk",
+        "ibps-rrb",
+        "ibps-so",
+        "jee-main",
+        "kcet-engineering",
+        "nabard-grade",
+        "rpf-constable",
+        "rpf-si",
+        "rrb-alp",
+        "rrb-group",
+        "rrb-je",
+        "rrb-technician",
+        "sbi-clerk",
+        "sebi-grade",
+        "sidbi-grade",
+        "special-ojee",
+        "ssc-chsl",
+        "ssc-gd",
+        "ssc-je",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "choose the word closest in meaning",
       "examCount": 23,
       "exams": [
@@ -6681,35 +6711,6 @@
         "ssc-mts",
         "ssc-selection",
         "territorial-army"
-      ]
-    },
-    {
-      "opening": "which of the following is a",
-      "examCount": 23,
-      "exams": [
-        "assam-cee",
-        "bitsat-2026",
-        "comedk-uget",
-        "gate-2026",
-        "ibps-clerk",
-        "ibps-rrb",
-        "ibps-so",
-        "jee-main",
-        "kcet-engineering",
-        "nabard-grade",
-        "rpf-constable",
-        "rpf-si",
-        "rrb-alp",
-        "rrb-group",
-        "rrb-technician",
-        "sbi-clerk",
-        "sebi-grade",
-        "sidbi-grade",
-        "special-ojee",
-        "ssc-chsl",
-        "ssc-gd",
-        "ssc-je",
-        "viteee-2026"
       ]
     },
     {

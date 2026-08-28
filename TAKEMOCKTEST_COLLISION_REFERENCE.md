@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-28 from 578 bank files / 21624 questions.
+Generated: 2026-08-28 from 583 bank files / 21859 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -79,7 +79,7 @@ These stem patterns have caused real duplication on this project before (within 
 |---|---:|---|---|
 | odd-one-out / classification | 12 | atma-analytical, jipmat-qa, kmat-karnataka, rpf-si, rrb-alp, rrb-technician | high |
 | spelling correction | 56 | afcat-verbal, agniveer-vayu, ailet-english, bits-hd, cds-english, ibps-clerk, ibps-po, ibps-so, inet-english, jain-jet, lic-aao, mh-cet, nabard-grade, navy-ssr, nda-general, niacl-ao, rbi-assistant, rbi-grade, sbi-po, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, territorial-army | high |
-| SI unit lookup | 54 | ap-eapcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
+| SI unit lookup | 56 | ap-eapcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
 | capital-city lookup | 10 | niacl-ao, rrb-ntpc, rrb-technician, ssc-cgl, ssc-gd, ssc-selection, upsc-cse | high |
 | currency lookup | 4 | niacl-ao, rrb-je, ssc-gd | high |
 | synonym/antonym instruction | 364 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, cmat-qtdi, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, inet-english, jain-jet, jipmat-qa, kmat-karnataka, lic-aao, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-selection, ssc-steno, tancet-mba, territorial-army, upeseat-2026 | high |
@@ -96,8 +96,8 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | find the next number in the | atma-analytical, cmat-qtdi, ibps-rrb, jipmat-qa, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, nmat-language, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sebi-grade, sidbi-grade, snap-general, srmjeee-2026, ssc-cpo, ssc-gd, ssc-je, ssc-mts, tancet-mba, upsc-cse (28) |
 | which of the following does not | afcat-verbal, ailet-english, ap-eapcet, atma-analytical, ibps-rrb, ibps-so, inet-english, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-technician, sbi-clerk, sebi-grade, snap-general, ssc-cpo, ssc-gd, ssc-je, ssc-mts, territorial-army, upsc-cse, viteee-2026 (27) |
 | two numbers are in the ratio | aeee-2026, afcat-verbal, cat-varc, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, kmat-karnataka, niacl-ao, nmat-language, nmims-cet, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-group, rrb-je, sbi-clerk, sbi-po, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts (25) |
+| which of the following is a | assam-cee, bitsat-2026, comedk-uget, gate-2026, ibps-clerk, ibps-rrb, ibps-so, jee-main, kcet-engineering, nabard-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, sbi-clerk, sebi-grade, sidbi-grade, special-ojee, ssc-chsl, ssc-gd, ssc-je, viteee-2026 (24) |
 | choose the word closest in meaning | afcat-verbal, agniveer-vayu, cds-english, gate-2026, ibps-clerk, ibps-po, ibps-rrb, ibps-so, inet-english, jain-jet, met-2026, navy-ssr, nda-general, rbi-assistant, sbi-clerk, sbi-po, srmjeee-2026, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, ssc-selection, territorial-army (23) |
-| which of the following is a | assam-cee, bitsat-2026, comedk-uget, gate-2026, ibps-clerk, ibps-rrb, ibps-so, jee-main, kcet-engineering, nabard-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sbi-clerk, sebi-grade, sidbi-grade, special-ojee, ssc-chsl, ssc-gd, ssc-je, viteee-2026 (23) |
 | choose the word most similar in | atma-analytical, cmat-qtdi, ibps-so, ibsat-verbal, jipmat-qa, kmat-karnataka, lic-aao, mat-language, micat-va, nabard-grade, niacl-ao, nmat-language, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, snap-general, ssc-cpo, ssc-gd, ssc-selection, ssc-steno, tancet-mba (22) |
 | a can complete a task in | ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, jipmat-qa, kmat-karnataka, mat-language, rbi-grade, rpf-si, rrb-group, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sbi-po, snap-general, ssc-cpo, ssc-mts, tancet-mba, upsc-cse (20) |
 | choose the word that means a | afcat-verbal, agniveer-vayu, cds-english, ibps-clerk, ibps-po, ibps-rrb, inet-english, lic-aao, navy-ssr, nda-general, niacl-ao, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-mts, ssc-steno, territorial-army (18) |
