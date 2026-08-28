@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -74,6 +75,12 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
         : `Try the ${exam.name} test interface demo. Verified exam resources will be published after official source checks are complete.`,
     path: `/in/${exam.slug}`,
     noIndex: !hasCheckedTests && !hasOfficialPattern,
+    image: {
+      url: '/images/students-taking-online-mock-test.webp',
+      width: 1200,
+      height: 900,
+      alt: `Student preparing with an online ${exam.name} mock test`,
+    },
   });
 }
 
@@ -128,11 +135,11 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
             { label: 'Exams', href: `/${country}/exams` },
             { label: exam.name },
           ]} />
-          <div className={`grid gap-7 ${currentCycle ? 'lg:grid-cols-[minmax(0,1fr)_360px] lg:items-stretch' : ''}`}>
+          <div className={`grid gap-7 lg:items-stretch ${currentCycle ? 'lg:grid-cols-[minmax(0,1fr)_360px]' : 'lg:grid-cols-[minmax(0,1fr)_380px]'}`}>
             <div className="flex flex-col justify-center">
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">{exam.category}</p>
               <h1 className="text-3xl font-bold leading-tight tracking-tight text-ink-900 md:text-5xl">{exam.name}</h1>
-              <p className="mt-3 max-w-2xl text-sm leading-6 text-ink-500 md:text-base">{exam.fullName}</p>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-ink-700 md:text-base">{exam.fullName}</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link href={`/${country}/${exam.slug}/mock-test`} className={`inline-flex min-h-11 items-center gap-2 px-5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 ${currentCycle ? 'bg-action-700 hover:bg-action-800 focus-visible:outline-action-700' : 'bg-ink-900 hover:bg-ink-700 focus-visible:outline-ink-900'}`}>
                   <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="m6 4 10 6-10 6V4Z" /></svg>
@@ -175,6 +182,21 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                   Verified from {currentCycle.sourceName} on <time dateTime={currentCycle.checkedOn}>{formatUpdateDate(currentCycle.checkedOn)}</time>.
                 </p>
               </section>
+            )}
+            {!currentCycle && (
+              <figure className="relative min-h-64 overflow-hidden border border-ink-200 bg-white">
+                <Image
+                  src="/images/students-taking-online-mock-test.webp"
+                  alt={`Student preparing with an online ${exam.name} mock test`}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 380px, 100vw"
+                  className="object-cover"
+                />
+                <figcaption className="absolute bottom-0 left-0 bg-ink-900 px-3 py-2 text-xs font-semibold text-white">
+                  Free practice · no login required
+                </figcaption>
+              </figure>
             )}
           </div>
         </div>
@@ -275,7 +297,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
               <div>
                 <p className={`text-xs font-semibold uppercase tracking-[0.14em] ${currentCycle ? 'text-action-700' : 'text-ink-500'}`}>Practice by test group</p>
                 <h2 id="mock-tests-heading" className="mt-1 text-xl font-bold text-ink-900">{exam.name} mock tests</h2>
-                {currentCycle?.practiceScope && <p className="mt-2 max-w-2xl text-sm text-ink-500">{currentCycle.practiceScope}</p>}
+                {currentCycle?.practiceScope && <p className="mt-2 max-w-2xl text-sm leading-6 text-ink-700">{currentCycle.practiceScope}</p>}
               </div>
             </div>
             <Link href={`/${country}/${exam.slug}/mock-test`} className={`text-sm font-semibold hover:underline ${currentCycle ? 'text-action-800' : 'text-ink-900'}`}>View all tests →</Link>
@@ -351,7 +373,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                     <h3 className="text-sm font-bold text-ink-900">{outcome.label}</h3>
                     <span className={`px-2 py-1 text-[10px] font-semibold ${outcome.status === 'Published' ? 'bg-live-50 text-live-800' : 'bg-ink-100 text-ink-700'}`}>{outcome.status}</span>
                   </div>
-                  <p className="mt-3 text-sm leading-6 text-ink-500">{outcome.detail}</p>
+                  <p className="mt-3 text-sm leading-6 text-ink-700">{outcome.detail}</p>
                   {outcome.href && <a href={outcome.href} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm font-semibold text-live-800 hover:underline">View official result ↗</a>}
                 </div>
               ))}
@@ -371,7 +393,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
             {links.map((link) => (
               <Link key={link.href} href={`/${country}/${exam.slug}/${link.href}`} className={`group border bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md ${currentCycle ? 'border-action-100 hover:border-action-600 hover:bg-action-50 hover:shadow-action-800/10' : 'border-ink-200 hover:border-ink-900 hover:bg-ink-50 hover:shadow-ink-900/10'}`}>
                 <h3 className="text-sm font-semibold text-ink-900">{link.label}</h3>
-                <p className="mt-1 text-xs leading-5 text-ink-500">{link.desc}</p>
+                <p className="mt-1 text-xs leading-5 text-ink-700">{link.desc}</p>
                 <span className={`mt-4 inline-block text-sm font-semibold transition group-hover:translate-x-1 ${currentCycle ? 'text-action-700' : 'text-ink-700'}`} aria-hidden="true">→</span>
               </Link>
             ))}
@@ -393,7 +415,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
               {faqs.map((faq) => (
                 <details key={faq.q} className="border border-ink-200 bg-white p-4">
                   <summary className="cursor-pointer text-sm font-medium text-ink-900">{faq.q}</summary>
-                  <p className="mt-2 text-sm leading-6 text-ink-500">{faq.a}</p>
+                  <p className="mt-2 text-sm leading-6 text-ink-700">{faq.a}</p>
                 </details>
               ))}
             </div>

@@ -1,8 +1,7 @@
 import { EXAM_LIST, getExam } from '@/lib/exams';
-import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 
 export function generateStaticParams() {
   return EXAM_LIST.map((exam) => ({ exam: exam.slug }));
@@ -27,28 +26,10 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
   if (!exam) return notFound();
 
   return (
-    <div className="max-w-4xl mx-auto px-5 py-6">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: jsonLdHtml(
-            breadcrumbSchema([
-              { name: 'Home', path: `/${country}` },
-              { name: exam.name, path: `/${country}/${exam.slug}` },
-              { name: 'Exam Pattern', path: `/${country}/${exam.slug}/exam-pattern` },
-            ])
-          ),
-        }}
-      />
-      <Breadcrumbs items={[
-        { label: 'Home', href: `/${country}` },
-        { label: exam.name, href: `/${country}/${exam.slug}` },
-        { label: 'Exam pattern' },
-      ]} />
-      <h1 className="font-sans font-bold text-2xl mb-1 text-ink-900">{exam.name} Exam Pattern</h1>
-      <p className="mt-2 text-sm text-ink-500">Each stage is checked separately so one stage cannot inherit another stage&apos;s scoring rules.</p>
+    <ExamInfoPageContent country={country} exam={exam} pageName="Exam Pattern" pageSlug="exam-pattern">
+      <p className="mb-6 text-sm leading-6 text-ink-700">Each stage is checked separately so one stage cannot inherit another stage&apos;s scoring rules.</p>
 
-      <div className="mt-6 space-y-5">
+      <div className="space-y-5">
         {exam.stages.map((stage) => (
           <section key={stage.id} className="border border-ink-200 bg-white p-5" aria-labelledby={`${stage.id}-pattern`}>
             <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
@@ -62,11 +43,11 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
               <>
                 <table className="w-full text-sm border-collapse">
                   <tbody>
-                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-500">Questions</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalQuestions}</td></tr>
-                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-500">Total marks</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalMarks}</td></tr>
-                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-500">Duration</td><td className="py-2 font-medium text-ink-900">{stage.pattern.duration} minutes</td></tr>
-                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-500">Negative marking</td><td className="py-2 font-medium text-ink-900">{stage.pattern.negativeMarking} per wrong answer</td></tr>
-                    <tr><td className="py-2 text-ink-500">Sections</td><td className="py-2 font-medium text-ink-900">{stage.pattern.sections.join(', ')}</td></tr>
+                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Questions</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalQuestions}</td></tr>
+                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Total marks</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalMarks}</td></tr>
+                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Duration</td><td className="py-2 font-medium text-ink-900">{stage.pattern.duration} minutes</td></tr>
+                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Negative marking</td><td className="py-2 font-medium text-ink-900">{stage.pattern.negativeMarking} per wrong answer</td></tr>
+                    <tr><td className="py-2 text-ink-700">Sections</td><td className="py-2 font-medium text-ink-900">{stage.pattern.sections.join(', ')}</td></tr>
                   </tbody>
                 </table>
                 {stage.pattern.sectionBreakdown && (
@@ -93,8 +74,8 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                     </table>
                   </div>
                 )}
-                {stage.pattern.timerNote && <p className="mt-3 text-xs text-ink-500">Timing: {stage.pattern.timerNote}.</p>}
-                {stage.pattern.note && <p className="mt-2 text-xs text-ink-500">{stage.pattern.note}</p>}
+                {stage.pattern.timerNote && <p className="mt-3 text-xs leading-5 text-ink-700">Timing: {stage.pattern.timerNote}.</p>}
+                {stage.pattern.note && <p className="mt-2 text-xs leading-5 text-ink-700">{stage.pattern.note}</p>}
                 {stage.pattern.sourceUrl && (
                   <a href={stage.pattern.sourceUrl} target="_blank" rel="noreferrer" className="mt-3 inline-block text-xs font-semibold text-ink-900 underline">
                     Official source · checked {stage.pattern.checkedOn}
@@ -102,11 +83,11 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                 )}
               </>
             ) : (
-              <p className="text-sm text-ink-500">{stage.pattern.note}</p>
+              <p className="text-sm leading-6 text-ink-700">{stage.pattern.note}</p>
             )}
           </section>
         ))}
       </div>
-    </div>
+    </ExamInfoPageContent>
   );
 }

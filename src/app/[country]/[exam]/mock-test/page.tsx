@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { EXAM_LIST, getExam } from '@/lib/exams';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
@@ -26,6 +27,12 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     description: `Attempt free ${exam.name} practice tests with instant results and clearly labelled source-review status.`,
     path: `/in/${exam.slug}/mock-test`,
     noIndex: !hasCheckedTests,
+    image: {
+      url: '/images/students-taking-online-mock-test.webp',
+      width: 1200,
+      height: 900,
+      alt: `Student taking an online ${exam.name} mock test`,
+    },
   });
 }
 
@@ -64,24 +71,39 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
-      {/* Hero block: light tint to separate the page header from the content below */}
-      <div className="bg-ink-50 border-b border-ink-200">
-        <div className="max-w-4xl mx-auto px-5 py-8 md:py-10">
-          <Breadcrumbs items={[
-            { label: 'Home', href: `/${country}` },
-            { label: exam.name, href: `/${country}/${exam.slug}` },
-            { label: 'Mock tests' },
-          ]} />
-          <h1 className="font-sans font-bold text-2xl md:text-3xl mb-2 text-ink-900">{exam.name} Mock Test {YEAR}</h1>
-          <p className="text-ink-500 text-sm md:text-base max-w-xl">
-            Attempt checked full mocks, sectional tests, and quick timed practice, no login required, with
-            instant results after every attempt.
-          </p>
+      <div className="border-b border-ink-200 bg-ink-50">
+        <div className="mx-auto grid max-w-6xl gap-7 px-5 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-10">
+          <div>
+            <Breadcrumbs items={[
+              { label: 'Home', href: `/${country}` },
+              { label: exam.name, href: `/${country}/${exam.slug}` },
+              { label: 'Mock tests' },
+            ]} />
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-action-700">Free practice series</p>
+            <h1 className="font-sans text-3xl font-bold tracking-tight text-ink-900 md:text-5xl">{exam.name} Mock Test {YEAR}</h1>
+            <p className="mt-4 max-w-xl text-sm leading-6 text-ink-700 md:text-base">
+              Attempt checked full mocks, sectional tests, and quick timed practice. No login is required, and every attempt ends with an instant result.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="#tests" className="inline-flex min-h-11 items-center bg-ink-900 px-5 text-sm font-semibold text-white">Choose a test ↓</a>
+              <Link href={`/${country}/${exam.slug}`} className="inline-flex min-h-11 items-center border border-ink-200 bg-white px-5 text-sm font-semibold text-ink-900 hover:border-ink-900">Exam overview</Link>
+            </div>
+          </div>
+          <figure className="relative aspect-[4/3] overflow-hidden border border-ink-200 bg-white md:max-h-[330px]">
+            <Image
+              src="/images/students-taking-online-mock-test.webp"
+              alt={`Student taking an online ${exam.name} mock test`}
+              fill
+              priority
+              sizes="(min-width: 768px) 45vw, 100vw"
+              className="object-cover"
+            />
+          </figure>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-5 py-10">
-        <div className="bg-white border border-ink-200 mb-14">
+      <div className="mx-auto max-w-4xl px-5 py-10">
+        <div id="tests" className="mb-14 scroll-mt-24 border border-ink-200 bg-white">
           <MockTestTabs country={country} examSlug={exam.slug} stages={stages} />
         </div>
 
@@ -115,11 +137,11 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
                     <div><span className="text-ink-500">Marks:</span> <strong>{stage.pattern.totalMarks}</strong></div>
                     <div><span className="text-ink-500">Duration:</span> <strong>{stage.pattern.duration} minutes</strong></div>
                   </div>
-                  <p className="mt-3 text-sm text-ink-500">
+                  <p className="mt-3 text-sm leading-6 text-ink-700">
                     {stage.pattern.sections.join(' · ')}. Negative marking: {stage.pattern.negativeMarking} per wrong answer.
                     {stage.pattern.timerNote ? ` ${stage.pattern.timerNote}.` : ''}
                   </p>
-                  {stage.pattern.note && <p className="mt-2 text-xs text-ink-500">{stage.pattern.note}</p>}
+                  {stage.pattern.note && <p className="mt-2 text-xs leading-5 text-ink-700">{stage.pattern.note}</p>}
                   {stage.pattern.sourceUrl && (
                     <a href={stage.pattern.sourceUrl} className="mt-3 inline-block text-xs font-semibold text-ink-900 underline" target="_blank" rel="noreferrer">
                       Official source · checked {stage.pattern.checkedOn}
@@ -127,7 +149,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
                   )}
                 </>
               ) : (
-                <p className="text-sm text-ink-500">{stage.pattern.note}</p>
+                <p className="text-sm leading-6 text-ink-700">{stage.pattern.note}</p>
               )}
             </div>
           ))}
@@ -169,7 +191,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
               {FAQS.map((f) => (
                 <details key={f.q} className="bg-white border border-ink-200 p-4">
                   <summary className="font-medium text-sm cursor-pointer text-ink-900">{f.q}</summary>
-                  <p className="text-sm text-ink-500 mt-2">{f.a}</p>
+                  <p className="mt-2 text-sm leading-6 text-ink-700">{f.a}</p>
                 </details>
               ))}
             </div>
