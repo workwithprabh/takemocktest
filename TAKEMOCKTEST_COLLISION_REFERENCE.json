@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-27",
+  "generatedAt": "2026-08-28",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 571,
-    "questions": 21349
+    "bankFiles": 575,
+    "questions": 21549
   },
   "topicSaturation": [
     {
@@ -3896,6 +3896,19 @@
       ]
     },
     {
+      "section": "English Language and Comprehension",
+      "topic": "Sentence improvement",
+      "questionCount": 45,
+      "examCount": 5,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-cpo",
+        "ssc-mts",
+        "ssc-steno"
+      ]
+    },
+    {
       "section": "Reasoning",
       "topic": "Number series",
       "questionCount": 40,
@@ -4468,6 +4481,30 @@
       ]
     },
     {
+      "section": "English Language and Comprehension",
+      "topic": "Reading comprehension",
+      "questionCount": 69,
+      "examCount": 4,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-cpo",
+        "ssc-steno"
+      ]
+    },
+    {
+      "section": "English Language and Comprehension",
+      "topic": "Fill in the blanks",
+      "questionCount": 50,
+      "examCount": 4,
+      "exams": [
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-cpo",
+        "ssc-steno"
+      ]
+    },
+    {
       "section": "General Awareness",
       "topic": "Static GK",
       "questionCount": 42,
@@ -4531,18 +4568,6 @@
       "section": "English Language and Comprehension",
       "topic": "One-word substitution",
       "questionCount": 32,
-      "examCount": 4,
-      "exams": [
-        "ssc-cgl",
-        "ssc-chsl",
-        "ssc-mts",
-        "ssc-steno"
-      ]
-    },
-    {
-      "section": "English Language and Comprehension",
-      "topic": "Sentence improvement",
-      "questionCount": 29,
       "examCount": 4,
       "exams": [
         "ssc-cgl",
@@ -5103,17 +5128,6 @@
       ]
     },
     {
-      "section": "English Language and Comprehension",
-      "topic": "Reading comprehension",
-      "questionCount": 59,
-      "examCount": 3,
-      "exams": [
-        "ssc-cgl",
-        "ssc-chsl",
-        "ssc-steno"
-      ]
-    },
-    {
       "section": "General Science",
       "topic": "Life Sciences",
       "questionCount": 40,
@@ -5143,17 +5157,6 @@
       "exams": [
         "ssc-chsl",
         "ssc-mts",
-        "ssc-steno"
-      ]
-    },
-    {
-      "section": "English Language and Comprehension",
-      "topic": "Fill in the blanks",
-      "questionCount": 30,
-      "examCount": 3,
-      "exams": [
-        "ssc-cgl",
-        "ssc-chsl",
         "ssc-steno"
       ]
     },
@@ -5210,6 +5213,17 @@
         "bcece-2026",
         "comedk-uget",
         "kcet-engineering"
+      ]
+    },
+    {
+      "section": "English Language and Comprehension",
+      "topic": "Cloze test",
+      "questionCount": 22,
+      "examCount": 3,
+      "exams": [
+        "ssc-chsl",
+        "ssc-cpo",
+        "ssc-mts"
       ]
     },
     {
@@ -6413,7 +6427,7 @@
     },
     {
       "pattern": "synonym/antonym instruction",
-      "matchCount": 324,
+      "matchCount": 364,
       "examCount": 42,
       "exams": [
         "afcat-verbal",
@@ -8082,6 +8096,19 @@
       ]
     },
     {
+      "opening": "read the passage and answer the",
+      "examCount": 7,
+      "exams": [
+        "act-reading",
+        "ielts-academic",
+        "mcat-cars",
+        "pte-reading",
+        "ssc-cgl",
+        "ssc-cpo",
+        "toefl-reading"
+      ]
+    },
+    {
       "opening": "how many moles are present in",
       "examCount": 7,
       "exams": [
@@ -8534,18 +8561,6 @@
         "rrb-technician",
         "ssc-mts",
         "ssc-steno"
-      ]
-    },
-    {
-      "opening": "read the passage and answer the",
-      "examCount": 6,
-      "exams": [
-        "act-reading",
-        "ielts-academic",
-        "mcat-cars",
-        "pte-reading",
-        "ssc-cgl",
-        "toefl-reading"
       ]
     },
     {
