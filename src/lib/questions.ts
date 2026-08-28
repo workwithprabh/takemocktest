@@ -210,6 +210,9 @@ import { IBPS_SO_MAINS_ENGLISH_1 } from './question-banks/ibps-so-mains-english-
 import { IBPS_SO_MAINS_REASONING_1 } from './question-banks/ibps-so-mains-reasoning-1';
 import { IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-so-mains-quantitative-aptitude-1';
 import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_IT_1 } from './question-banks/ibps-so-mains-professional-knowledge-it-1';
+import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_AGRICULTURE_1 } from './question-banks/ibps-so-mains-professional-knowledge-agriculture-1';
+import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_HR_1 } from './question-banks/ibps-so-mains-professional-knowledge-hr-1';
+import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_MARKETING_1 } from './question-banks/ibps-so-mains-professional-knowledge-marketing-1';
 import { RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1 } from './question-banks/rbi-grade-b-phase-1-general-awareness-1';
 import { RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-grade-b-phase-1-english-language-1';
 import { RBI_GRADE_B_PHASE_1_QUANTITATIVE_APTITUDE_1 } from './question-banks/rbi-grade-b-phase-1-quantitative-aptitude-1';
@@ -1169,6 +1172,27 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-so/mains-reasoning-sectional-1': IBPS_SO_MAINS_REASONING_1,
   'ibps-so/mains-quantitative-aptitude-sectional-1': IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1,
   'ibps-so/mains-professional-knowledge-it-sectional-1': IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_IT_1,
+  'ibps-so/mains-full-mock-agriculture-1': [
+    ...IBPS_SO_MAINS_ENGLISH_1,
+    ...IBPS_SO_MAINS_REASONING_1,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_AGRICULTURE_1,
+  ],
+  'ibps-so/mains-professional-knowledge-agriculture-sectional-1': IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_AGRICULTURE_1,
+  'ibps-so/mains-full-mock-hr-1': [
+    ...IBPS_SO_MAINS_ENGLISH_1,
+    ...IBPS_SO_MAINS_REASONING_1,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_HR_1,
+  ],
+  'ibps-so/mains-professional-knowledge-hr-sectional-1': IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_HR_1,
+  'ibps-so/mains-full-mock-marketing-1': [
+    ...IBPS_SO_MAINS_ENGLISH_1,
+    ...IBPS_SO_MAINS_REASONING_1,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_MARKETING_1,
+  ],
+  'ibps-so/mains-professional-knowledge-marketing-sectional-1': IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_MARKETING_1,
   'rbi-grade-b/phase-1-full-mock-1': [
     ...RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1,
     ...RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
@@ -2264,7 +2288,7 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 25
     : testId.includes('ibps-so/mains-quantitative-aptitude-sectional')
     ? 25
-    : testId.includes('ibps-so/mains-professional-knowledge-it-sectional')
+    : testId.includes('ibps-so/mains-professional-knowledge-')
     ? 25
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? 150
