@@ -196,6 +196,10 @@ import { SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2 } from './question-ban
 import { SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_2 } from './question-banks/ssc-cpo-paper-1-general-knowledge-general-awareness-2';
 import { SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_2 } from './question-banks/ssc-cpo-paper-1-quantitative-aptitude-2';
 import { SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_2 } from './question-banks/ssc-cpo-paper-1-english-comprehension-2';
+import { SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_1 } from './question-banks/ssc-cpo-paper-2-english-language-comprehension-1';
+import { SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_2 } from './question-banks/ssc-cpo-paper-2-english-language-comprehension-2';
+import { SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_3 } from './question-banks/ssc-cpo-paper-2-english-language-comprehension-3';
+import { SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_4 } from './question-banks/ssc-cpo-paper-2-english-language-comprehension-4';
 import { IBPS_SO_PRELIMS_REASONING_1 } from './question-banks/ibps-so-prelims-reasoning-1';
 import { IBPS_SO_PRELIMS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-so-prelims-quantitative-aptitude-1';
 import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-so-prelims-english-language-1';
@@ -1127,6 +1131,18 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-cpo/paper-1-general-knowledge-general-awareness-sectional-2': SSC_CPO_PAPER_1_GENERAL_KNOWLEDGE_GENERAL_AWARENESS_2,
   'ssc-cpo/paper-1-quantitative-aptitude-sectional-2': SSC_CPO_PAPER_1_QUANTITATIVE_APTITUDE_2,
   'ssc-cpo/paper-1-english-comprehension-sectional-2': SSC_CPO_PAPER_1_ENGLISH_COMPREHENSION_2,
+  'ssc-cpo/paper-2-full-mock-1': [
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_1,
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_2,
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_3,
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_4,
+  ],
+  'ssc-cpo/paper-2-english-language-comprehension-sectional-1': [
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_1,
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_2,
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_3,
+    ...SSC_CPO_PAPER_2_ENGLISH_LANGUAGE_COMPREHENSION_4,
+  ],
   'ibps-so/prelims-full-mock-1': [
     ...IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_1,
     ...IBPS_SO_PRELIMS_REASONING_1,
@@ -2302,6 +2318,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 54
     : testId.includes('ssc-cpo/paper-1-full-mock')
     ? 200
+    : testId.includes('ssc-cpo/paper-2-full-mock')
+    ? 200
     : testId.includes('ibps-so/prelims-full-mock')
     ? 150
     : testId.includes('rbi-grade-b/phase-1-full-mock')
@@ -2778,6 +2796,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
             ? 25
           : testId.includes('jee-main')
             ? 25
+          : testId.includes('ssc-cpo/paper-2')
+            ? 200
           : testId.includes('ssc-cpo')
             ? 50
           : testId.includes('ibps-so')
@@ -3345,6 +3365,9 @@ const sebiGradeAPhase2Paper2Layout = [
   { section: 'Companies Act', count: 12 },
   { section: 'Economics', count: 14 },
 ];
+const sscCpoPaper2Layout = [
+  { section: 'English Language and Comprehension', count: 200 },
+];
 const tierTwoPaperOneLayout = [
   { section: 'Mathematical Abilities', count: 30 },
   { section: 'Reasoning and General Intelligence', count: 30 },
@@ -3669,6 +3692,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
               ? sebiGradeAPaper2Layout
               : testId.includes('sebi-grade-a/phase-2-paper-2-full-mock')
                 ? sebiGradeAPhase2Paper2Layout
+              : testId.includes('ssc-cpo/paper-2-full-mock')
+                ? sscCpoPaper2Layout
               : testId.includes('niacl-ao/prelims-full-mock')
                 ? niaclAoPrelimsLayout
                 : testId.includes('niacl-ao/mains-full-mock')
