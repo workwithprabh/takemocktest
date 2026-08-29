@@ -214,6 +214,9 @@ import { IBPS_SO_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-so-pre
 import { IBPS_SO_MAINS_ENGLISH_1 } from './question-banks/ibps-so-mains-english-1';
 import { IBPS_SO_MAINS_REASONING_1 } from './question-banks/ibps-so-mains-reasoning-1';
 import { IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-so-mains-quantitative-aptitude-1';
+import { IBPS_SO_MAINS_ENGLISH_2 } from './question-banks/ibps-so-mains-english-2';
+import { IBPS_SO_MAINS_REASONING_2 } from './question-banks/ibps-so-mains-reasoning-2';
+import { IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_2 } from './question-banks/ibps-so-mains-quantitative-aptitude-2';
 import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_IT_1 } from './question-banks/ibps-so-mains-professional-knowledge-it-1';
 import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_AGRICULTURE_1 } from './question-banks/ibps-so-mains-professional-knowledge-agriculture-1';
 import { IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_HR_1 } from './question-banks/ibps-so-mains-professional-knowledge-hr-1';
@@ -1224,6 +1227,33 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
     ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_MARKETING_1,
   ],
   'ibps-so/mains-professional-knowledge-marketing-sectional-1': IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_MARKETING_1,
+  'ibps-so/mains-full-mock-2': [
+    ...IBPS_SO_MAINS_ENGLISH_2,
+    ...IBPS_SO_MAINS_REASONING_2,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_2,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_IT_1,
+  ],
+  'ibps-so/mains-english-sectional-2': IBPS_SO_MAINS_ENGLISH_2,
+  'ibps-so/mains-reasoning-sectional-2': IBPS_SO_MAINS_REASONING_2,
+  'ibps-so/mains-quantitative-aptitude-sectional-2': IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_2,
+  'ibps-so/mains-full-mock-agriculture-2': [
+    ...IBPS_SO_MAINS_ENGLISH_2,
+    ...IBPS_SO_MAINS_REASONING_2,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_2,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_AGRICULTURE_1,
+  ],
+  'ibps-so/mains-full-mock-hr-2': [
+    ...IBPS_SO_MAINS_ENGLISH_2,
+    ...IBPS_SO_MAINS_REASONING_2,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_2,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_HR_1,
+  ],
+  'ibps-so/mains-full-mock-marketing-2': [
+    ...IBPS_SO_MAINS_ENGLISH_2,
+    ...IBPS_SO_MAINS_REASONING_2,
+    ...IBPS_SO_MAINS_QUANTITATIVE_APTITUDE_2,
+    ...IBPS_SO_MAINS_PROFESSIONAL_KNOWLEDGE_MARKETING_1,
+  ],
   'rbi-grade-b/phase-1-full-mock-1': [
     ...RBI_GRADE_B_PHASE_1_GENERAL_AWARENESS_1,
     ...RBI_GRADE_B_PHASE_1_ENGLISH_LANGUAGE_1,
