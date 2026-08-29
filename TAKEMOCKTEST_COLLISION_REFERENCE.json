@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-29",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 592,
-    "questions": 22099
+    "bankFiles": 595,
+    "questions": 22209
   },
   "topicSaturation": [
     {
@@ -1222,7 +1222,7 @@
     {
       "section": "English Language",
       "topic": "Sentence improvement",
-      "questionCount": 88,
+      "questionCount": 91,
       "examCount": 14,
       "exams": [
         "ibps-clerk",
@@ -1310,7 +1310,7 @@
     {
       "section": "English Language",
       "topic": "Cloze test",
-      "questionCount": 109,
+      "questionCount": 113,
       "examCount": 13,
       "exams": [
         "ibps-clerk",
@@ -1331,7 +1331,7 @@
     {
       "section": "English Language",
       "topic": "Reading comprehension",
-      "questionCount": 103,
+      "questionCount": 110,
       "examCount": 13,
       "exams": [
         "ibps-clerk",
@@ -1700,7 +1700,7 @@
     {
       "section": "English Language",
       "topic": "Fill in the blanks",
-      "questionCount": 77,
+      "questionCount": 79,
       "examCount": 11,
       "exams": [
         "ibps-clerk",
@@ -1776,7 +1776,7 @@
     {
       "section": "English Language",
       "topic": "Idioms and phrases",
-      "questionCount": 63,
+      "questionCount": 65,
       "examCount": 11,
       "exams": [
         "ibps-clerk",
@@ -1850,6 +1850,25 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Active and passive voice",
+      "questionCount": 56,
+      "examCount": 11,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-so",
+        "nabard-grade",
+        "rbi-assistant",
+        "rbi-grade",
+        "sbi-clerk",
+        "sbi-po",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-chsl"
+      ]
+    },
+    {
       "section": "General Intelligence and Reasoning",
       "topic": "Direction Sense",
       "questionCount": 55,
@@ -1866,25 +1885,6 @@
         "ssc-gd",
         "ssc-je",
         "ssc-steno"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Active and passive voice",
-      "questionCount": 54,
-      "examCount": 11,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-so",
-        "nabard-grade",
-        "rbi-assistant",
-        "rbi-grade",
-        "sbi-clerk",
-        "sbi-po",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-chsl"
       ]
     },
     {
@@ -1945,6 +1945,25 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Direct and indirect speech",
+      "questionCount": 34,
+      "examCount": 11,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-so",
+        "nabard-grade",
+        "rbi-assistant",
+        "rbi-grade",
+        "sbi-clerk",
+        "sbi-po",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-chsl"
+      ]
+    },
+    {
       "section": "Chemistry",
       "topic": "Ionic Equilibrium",
       "questionCount": 33,
@@ -1961,25 +1980,6 @@
         "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Direct and indirect speech",
-      "questionCount": 32,
-      "examCount": 11,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-so",
-        "nabard-grade",
-        "rbi-assistant",
-        "rbi-grade",
-        "sbi-clerk",
-        "sbi-po",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-chsl"
       ]
     },
     {
@@ -2022,7 +2022,7 @@
     {
       "section": "English Language",
       "topic": "Error spotting",
-      "questionCount": 77,
+      "questionCount": 80,
       "examCount": 10,
       "exams": [
         "ibps-clerk",
@@ -2181,8 +2181,8 @@
     },
     {
       "section": "English Language",
-      "topic": "Antonym",
-      "questionCount": 74,
+      "topic": "One-word substitution",
+      "questionCount": 75,
       "examCount": 9,
       "exams": [
         "ibps-clerk",
@@ -2198,8 +2198,8 @@
     },
     {
       "section": "English Language",
-      "topic": "One-word substitution",
-      "questionCount": 73,
+      "topic": "Antonym",
+      "questionCount": 74,
       "examCount": 9,
       "exams": [
         "ibps-clerk",
@@ -2997,7 +2997,7 @@
     {
       "section": "English Language",
       "topic": "Spelling",
-      "questionCount": 42,
+      "questionCount": 44,
       "examCount": 7,
       "exams": [
         "ibps-clerk",
@@ -3145,6 +3145,21 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Vocabulary in context",
+      "questionCount": 32,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-rrb",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po",
+        "ssc-selection"
+      ]
+    },
+    {
       "section": "Chemistry",
       "topic": "d and f Block Elements",
       "questionCount": 30,
@@ -3157,21 +3172,6 @@
         "mht-cet",
         "srmjeee-2026",
         "tg-eapcet"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Vocabulary in context",
-      "questionCount": 29,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-rrb",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po",
-        "ssc-selection"
       ]
     },
     {
@@ -4026,6 +4026,19 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Connectors",
+      "questionCount": 26,
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
+      ]
+    },
+    {
       "section": "Chemistry",
       "topic": "Organic chemistry basic principles",
       "questionCount": 25,
@@ -4036,19 +4049,6 @@
         "bcece-2026",
         "kcet-engineering",
         "tg-eapcet"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Connectors",
-      "questionCount": 24,
-      "examCount": 5,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
       ]
     },
     {
@@ -4104,6 +4104,19 @@
       ]
     },
     {
+      "section": "English Language",
+      "topic": "Para jumbles",
+      "questionCount": 20,
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-so",
+        "lic-aao",
+        "niacl-ao",
+        "sbi-po"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Mathematical Induction",
       "questionCount": 18,
@@ -4144,19 +4157,6 @@
     },
     {
       "section": "English Language",
-      "topic": "Para jumbles",
-      "questionCount": 18,
-      "examCount": 5,
-      "exams": [
-        "ibps-clerk",
-        "ibps-so",
-        "lic-aao",
-        "niacl-ao",
-        "sbi-po"
-      ]
-    },
-    {
-      "section": "English Language",
       "topic": "Tense",
       "questionCount": 18,
       "examCount": 5,
@@ -4164,6 +4164,19 @@
         "ibps-clerk",
         "ibps-po",
         "sbi-clerk",
+        "ssc-chsl",
+        "ssc-selection"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Sentence correction",
+      "questionCount": 16,
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "sbi-po",
         "ssc-chsl",
         "ssc-selection"
       ]
@@ -4179,19 +4192,6 @@
         "jee-advanced",
         "saeee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Sentence correction",
-      "questionCount": 14,
-      "examCount": 5,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "sbi-po",
-        "ssc-chsl",
-        "ssc-selection"
       ]
     },
     {
@@ -4218,6 +4218,19 @@
         "ibps-rrb",
         "rbi-assistant",
         "sbi-clerk"
+      ]
+    },
+    {
+      "section": "English Language",
+      "topic": "Word usage",
+      "questionCount": 12,
+      "examCount": 5,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
       ]
     },
     {
@@ -4257,19 +4270,6 @@
         "jain-jet",
         "jee-advanced",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "English Language",
-      "topic": "Word usage",
-      "questionCount": 10,
-      "examCount": 5,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
       ]
     },
     {
@@ -6344,7 +6344,7 @@
     },
     {
       "pattern": "spelling correction",
-      "matchCount": 58,
+      "matchCount": 59,
       "examCount": 24,
       "exams": [
         "afcat-verbal",
@@ -6477,7 +6477,7 @@
     },
     {
       "pattern": "blood relation generic opener",
-      "matchCount": 55,
+      "matchCount": 56,
       "examCount": 27,
       "exams": [
         "ca-foundation",
