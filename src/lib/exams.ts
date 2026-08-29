@@ -126,6 +126,15 @@ export interface TestConfig {
   scoringNote?: string;
   section?: string;
   checkedOn?: string;
+  // Set when this test's questions are referenced from a different exam's own
+  // bank rather than written natively for this exam (cross-exam content
+  // sharing, scoped to genuinely exam-agnostic content like pure Reasoning —
+  // see REASONING_SHARE_SOURCES below). Value is the source exam's slug.
+  // Tests with this set are deliberately excluded from the exam's primary
+  // mock-test list and surfaced only via that exam's "Explore Similar Tests"
+  // page, so a student focused on one exam never sees another exam's content
+  // mixed into their own native test list.
+  sharedFrom?: ExamSlug;
 }
 
 export interface StagePattern {
@@ -303,6 +312,60 @@ function selectionPostTests(level: string, prefix: string, testNumber = 1, check
       { id: `${prefix}-cbe-quick-10min`, name: `${level} Quick Test (10 Minutes)`, kind: 'quick', duration: 10, ...common },
       { id: `${prefix}-cbe-quick-15min`, name: `${level} Quick Test (15 Minutes)`, kind: 'quick', duration: 15, ...common },
     );
+  }
+  return tests;
+}
+
+// Cross-exam Reasoning-sharing pilot, first extended beyond a single pair
+// (see the SSC CGL -> SSC CHSL pilot above): a cluster of Banking Prelims
+// exams whose Reasoning Ability section shares an identical official spec
+// (+1/-0.25, 20-minute sectional), confirmed from each exam's own live
+// TestConfig, not assumed from the section name. Only Reasoning is shared,
+// never Quant/English/GA, since those vary meaningfully by exam tier.
+//
+// IBPS PO is deliberately a receiver only, never a source: its own Reasoning
+// banks carry a per-question `marks: 8/7` / `negativeMarking` override (an
+// IBPS-PO-specific scoring nuance baked into the question data itself), which
+// would silently override the receiving exam's own flat scoring if reused
+// elsewhere — a real inconsistency caught before wiring, not a theoretical
+// one. The other five exams' banks carry no such override, so they score
+// correctly under any of the six exams' own flat marksPerCorrect/negativeMarking.
+//
+// Each generated test is deliberately excluded from its exam's primary
+// mock-test list (see `sharedFrom` on TestConfig) and surfaced only via that
+// exam's "Explore Similar Tests" page, so a student focused on one exam never
+// sees another exam's content mixed into their own native test list.
+const REASONING_SHARE_SOURCES: { exam: ExamSlug; examName: string; bankTestCount: number }[] = [
+  { exam: 'ibps-clerk', examName: 'IBPS Clerk', bankTestCount: 2 },
+  { exam: 'sbi-po', examName: 'SBI PO', bankTestCount: 3 },
+  { exam: 'rbi-assistant', examName: 'RBI Assistant', bankTestCount: 2 },
+  { exam: 'sbi-clerk', examName: 'SBI Clerk', bankTestCount: 2 },
+  { exam: 'niacl-ao', examName: 'NIACL AO', bankTestCount: 2 },
+];
+// Exported for the "Explore Similar Tests" page (generateStaticParams + the
+// CTA's visibility check on the main mock-test hub — only these six exams
+// show that link).
+export const REASONING_SHARE_RECEIVERS: ExamSlug[] = ['ibps-po', 'ibps-clerk', 'sbi-po', 'rbi-assistant', 'sbi-clerk', 'niacl-ao'];
+
+function sharedReasoningTests(forExam: ExamSlug): TestConfig[] {
+  const tests: TestConfig[] = [];
+  for (const { exam, examName, bankTestCount } of REASONING_SHARE_SOURCES) {
+    if (exam === forExam) continue;
+    for (let n = 1; n <= bankTestCount; n++) {
+      tests.push({
+        id: `prelims-reasoning-shared-${exam}-${n}`,
+        name: `Reasoning Ability Practice (${examName} Bank) ${n}`,
+        kind: 'sectional',
+        status: 'checked',
+        section: 'Reasoning Ability',
+        duration: 20,
+        marksPerCorrect: 1,
+        negativeMarking: 0.25,
+        sharedFrom: exam,
+        scoringNote: `This test draws from ${examName}'s own Reasoning Ability sectional bank, since pure logical-reasoning content is not tied to one exam's specific syllabus the way Quantitative Aptitude, English, or General Awareness are. All six exams in this Banking Prelims cluster share an identical Reasoning spec (+1/-0.25, 20 minutes); marks and timing here match this exam's own official Prelims pattern exactly.`,
+        checkedOn: '29 August 2026',
+      });
+    }
   }
   return tests;
 }
@@ -1206,6 +1269,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '26 August 2026',
           },
+          ...sharedReasoningTests('ibps-po'),
         ],
       },
       {
@@ -1918,6 +1982,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '26 August 2026',
           },
+          ...sharedReasoningTests('ibps-clerk'),
         ],
       },
       {
@@ -2316,6 +2381,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '26 August 2026',
           },
+          ...sharedReasoningTests('sbi-po'),
         ],
       },
       {
@@ -2509,6 +2575,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '22 August 2026',
           },
+          ...sharedReasoningTests('rbi-assistant'),
         ],
       },
       {
@@ -3455,6 +3522,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '5 August 2026',
           },
+          ...sharedReasoningTests('sbi-clerk'),
         ],
       },
       {
@@ -6329,6 +6397,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '22 August 2026',
           },
+          ...sharedReasoningTests('niacl-ao'),
         ],
       },
       {
@@ -9992,7 +10061,15 @@ export function getExamSections(exam: ExamConfig): string[] {
 }
 
 export function getCheckedTestCount(exam: ExamConfig): number {
-  return exam.stages.flatMap((stage) => stage.tests).filter((test) => test.status === 'checked').length;
+  // Excludes sharedFrom tests deliberately: this count feeds the "N tests"
+  // figures shown on the exam overview page, ExamCard, and site-wide totals,
+  // which should reflect what a student sees in this exam's own primary
+  // mock-test list, not tests only reachable via "Explore Similar Tests".
+  return exam.stages.flatMap((stage) => stage.tests).filter((test) => test.status === 'checked' && !test.sharedFrom).length;
+}
+
+export function getSharedTests(exam: ExamConfig): TestConfig[] {
+  return exam.stages.flatMap((stage) => stage.tests).filter((test) => Boolean(test.sharedFrom));
 }
 
 function articleFor(word: string): 'a' | 'an' {

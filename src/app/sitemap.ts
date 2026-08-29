@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
+import { EXAM_LIST, COUNTRIES, getCheckedTestCount, getSharedTests } from '@/lib/exams';
 import { EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { BLOG_POSTS } from '@/lib/blog';
 import { EXAM_GUIDES } from '@/lib/exam-guides';
@@ -67,6 +67,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
       if (hasCheckedTests) {
         entries.push({ url: `${base}/mock-test`, changeFrequency: 'weekly', priority: 0.9 });
+      }
+      if (getSharedTests(exam).length > 0) {
+        entries.push({ url: `${base}/similar-tests`, changeFrequency: 'monthly', priority: 0.5 });
       }
       if (exam.slug === 'ssc-cgl') {
         entries.push({ url: `${base}/dest-practice`, changeFrequency: 'monthly', priority: 0.8 });

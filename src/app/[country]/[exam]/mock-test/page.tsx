@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { EXAM_LIST, getExam } from '@/lib/exams';
+import { EXAM_LIST, getExam, getSharedTests } from '@/lib/exams';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
 import { breadcrumbSchema, organizationSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
@@ -46,7 +46,11 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
   const stages = exam.stages.map((stage) => ({
     id: stage.id,
     name: stage.name,
-    tests: stage.tests.map((test) => ({
+    // sharedFrom tests are deliberately excluded from this exam's primary
+    // list — they're real, checked, scored tests, but a student focused on
+    // this exam should never see another exam's content mixed into their own
+    // native test list. They're surfaced only via "Explore Similar Tests".
+    tests: stage.tests.filter((test) => !test.sharedFrom).map((test) => ({
       testId: test.id,
       name: test.name,
       kind: test.kind,
@@ -56,6 +60,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
       checkedOn: test.checkedOn,
     })),
   }));
+  const sharedTests = getSharedTests(exam);
 
   const jsonLd = [
     breadcrumbSchema([
@@ -106,6 +111,21 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
         <div id="tests" className="mb-14 scroll-mt-24 border border-ink-200 bg-white">
           <MockTestTabs country={country} examSlug={exam.slug} stages={stages} />
         </div>
+
+        {sharedTests.length > 0 && (
+          <section className="mb-14 border border-ink-200 bg-ink-50 p-5 md:flex md:items-center md:justify-between md:gap-6" aria-labelledby="similar-tests-heading">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-ink-500">Want more practice?</p>
+              <h2 id="similar-tests-heading" className="mt-1 text-lg font-bold text-ink-900">Explore Similar Tests</h2>
+              <p className="mt-2 max-w-xl text-sm text-ink-500">
+                {sharedTests.length} additional Reasoning tests from exams that share {exam.name}&apos;s exact scoring pattern, each still scored using {exam.name}&apos;s own marking scheme.
+              </p>
+            </div>
+            <Link href={`/${country}/${exam.slug}/similar-tests`} className="mt-4 inline-flex min-h-11 items-center bg-ink-900 px-5 text-sm font-semibold text-ink-50 md:mt-0">
+              Explore Similar Tests →
+            </Link>
+          </section>
+        )}
 
         {exam.slug === 'ssc-cgl' && (
           <section className="mb-14 border border-ink-200 bg-ink-50 p-5 md:flex md:items-center md:justify-between md:gap-6" aria-labelledby="dest-practice-heading">

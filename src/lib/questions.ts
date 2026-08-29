@@ -1739,6 +1739,63 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'jipmat/quantitative-aptitude-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Quantitative Aptitude'),
   'jipmat/data-interpretation-logical-reasoning-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
   'jipmat/verbal-ability-reading-comprehension-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
+  // Cross-exam Reasoning-sharing cluster (see sharedReasoningTests in exams.ts):
+  // each receiver exam references the same five source banks below, not copies.
+  'ibps-po/prelims-reasoning-shared-ibps-clerk-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'ibps-po/prelims-reasoning-shared-ibps-clerk-2': IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'ibps-po/prelims-reasoning-shared-sbi-po-1': SBI_PO_PRELIMS_REASONING_ABILITY_1,
+  'ibps-po/prelims-reasoning-shared-sbi-po-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  'ibps-po/prelims-reasoning-shared-sbi-po-3': SBI_PO_PRELIMS_REASONING_ABILITY_3,
+  'ibps-po/prelims-reasoning-shared-rbi-assistant-1': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1,
+  'ibps-po/prelims-reasoning-shared-rbi-assistant-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
+  'ibps-po/prelims-reasoning-shared-sbi-clerk-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'ibps-po/prelims-reasoning-shared-sbi-clerk-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'ibps-po/prelims-reasoning-shared-niacl-ao-1': NIACL_AO_PRELIMS_REASONING_ABILITY_1,
+  'ibps-po/prelims-reasoning-shared-niacl-ao-2': NIACL_AO_PRELIMS_REASONING_ABILITY_2,
+  'ibps-clerk/prelims-reasoning-shared-sbi-po-1': SBI_PO_PRELIMS_REASONING_ABILITY_1,
+  'ibps-clerk/prelims-reasoning-shared-sbi-po-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  'ibps-clerk/prelims-reasoning-shared-sbi-po-3': SBI_PO_PRELIMS_REASONING_ABILITY_3,
+  'ibps-clerk/prelims-reasoning-shared-rbi-assistant-1': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1,
+  'ibps-clerk/prelims-reasoning-shared-rbi-assistant-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
+  'ibps-clerk/prelims-reasoning-shared-sbi-clerk-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'ibps-clerk/prelims-reasoning-shared-sbi-clerk-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'ibps-clerk/prelims-reasoning-shared-niacl-ao-1': NIACL_AO_PRELIMS_REASONING_ABILITY_1,
+  'ibps-clerk/prelims-reasoning-shared-niacl-ao-2': NIACL_AO_PRELIMS_REASONING_ABILITY_2,
+  'sbi-po/prelims-reasoning-shared-ibps-clerk-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'sbi-po/prelims-reasoning-shared-ibps-clerk-2': IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'sbi-po/prelims-reasoning-shared-rbi-assistant-1': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1,
+  'sbi-po/prelims-reasoning-shared-rbi-assistant-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
+  'sbi-po/prelims-reasoning-shared-sbi-clerk-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'sbi-po/prelims-reasoning-shared-sbi-clerk-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'sbi-po/prelims-reasoning-shared-niacl-ao-1': NIACL_AO_PRELIMS_REASONING_ABILITY_1,
+  'sbi-po/prelims-reasoning-shared-niacl-ao-2': NIACL_AO_PRELIMS_REASONING_ABILITY_2,
+  'rbi-assistant/prelims-reasoning-shared-ibps-clerk-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'rbi-assistant/prelims-reasoning-shared-ibps-clerk-2': IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'rbi-assistant/prelims-reasoning-shared-sbi-po-1': SBI_PO_PRELIMS_REASONING_ABILITY_1,
+  'rbi-assistant/prelims-reasoning-shared-sbi-po-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  'rbi-assistant/prelims-reasoning-shared-sbi-po-3': SBI_PO_PRELIMS_REASONING_ABILITY_3,
+  'rbi-assistant/prelims-reasoning-shared-sbi-clerk-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'rbi-assistant/prelims-reasoning-shared-sbi-clerk-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'rbi-assistant/prelims-reasoning-shared-niacl-ao-1': NIACL_AO_PRELIMS_REASONING_ABILITY_1,
+  'rbi-assistant/prelims-reasoning-shared-niacl-ao-2': NIACL_AO_PRELIMS_REASONING_ABILITY_2,
+  'sbi-clerk/prelims-reasoning-shared-ibps-clerk-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'sbi-clerk/prelims-reasoning-shared-ibps-clerk-2': IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'sbi-clerk/prelims-reasoning-shared-sbi-po-1': SBI_PO_PRELIMS_REASONING_ABILITY_1,
+  'sbi-clerk/prelims-reasoning-shared-sbi-po-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  'sbi-clerk/prelims-reasoning-shared-sbi-po-3': SBI_PO_PRELIMS_REASONING_ABILITY_3,
+  'sbi-clerk/prelims-reasoning-shared-rbi-assistant-1': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1,
+  'sbi-clerk/prelims-reasoning-shared-rbi-assistant-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
+  'sbi-clerk/prelims-reasoning-shared-niacl-ao-1': NIACL_AO_PRELIMS_REASONING_ABILITY_1,
+  'sbi-clerk/prelims-reasoning-shared-niacl-ao-2': NIACL_AO_PRELIMS_REASONING_ABILITY_2,
+  'niacl-ao/prelims-reasoning-shared-ibps-clerk-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'niacl-ao/prelims-reasoning-shared-ibps-clerk-2': IBPS_CLERK_PRELIMS_REASONING_ABILITY_2,
+  'niacl-ao/prelims-reasoning-shared-sbi-po-1': SBI_PO_PRELIMS_REASONING_ABILITY_1,
+  'niacl-ao/prelims-reasoning-shared-sbi-po-2': SBI_PO_PRELIMS_REASONING_ABILITY_2,
+  'niacl-ao/prelims-reasoning-shared-sbi-po-3': SBI_PO_PRELIMS_REASONING_ABILITY_3,
+  'niacl-ao/prelims-reasoning-shared-rbi-assistant-1': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1,
+  'niacl-ao/prelims-reasoning-shared-rbi-assistant-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
+  'niacl-ao/prelims-reasoning-shared-sbi-clerk-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
+  'niacl-ao/prelims-reasoning-shared-sbi-clerk-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -2803,6 +2860,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
         ? testId.includes('general-awareness') ? 50
           : testId.includes('english-language') ? 40
             : testId.includes('data-analysis-interpretation') ? 40 : 40
+        // Cross-exam Reasoning-sharing cluster: checked before the bare
+        // per-exam catch-alls below, since these test IDs embed a source
+        // exam slug (e.g. 'sbi-po') that would otherwise false-positive
+        // match an unrelated exam's own catch-all branch.
+        : testId.includes('prelims-reasoning-shared-sbi-po')
+          ? 30
+          : testId.includes('prelims-reasoning-shared')
+            ? 35
         : testId.includes('ibps-po')
           ? testId.includes('english-language') ? 30 : 35
           : testId.includes('ibps-clerk')
