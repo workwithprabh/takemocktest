@@ -506,6 +506,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/coaching-vs-self-study.webp',
+      alt: 'Indian student comparing online coaching with self-study materials',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Coaching versus self-study gets debated endlessly in exam-prep circles, usually as if one side is universally right. It is not that simple. The better question is which parts of your preparation genuinely need external structure and which you can handle on your own.' },
       { type: 'paragraph', heading: 'What coaching is actually good for', text: 'A structured coaching program is most useful for subjects where you do not know what you do not know: unfamiliar reasoning question types, an unfamiliar exam pattern, or a subject you have never studied at this depth before. It also helps if you know you will not build a study habit without an external schedule and deadlines. A batch of peers preparing for the same exam can also surface strategy details, cutoff trends, and pattern changes faster than studying alone.' },
@@ -535,6 +541,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/how-to-handle-exam-day-anxiety.webp',
+      alt: 'Indian student taking a calming breath before entering an exam hall',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Telling someone to "just stay calm" on exam day is not advice, it is a wish. The more useful question is what is actually causing the anxiety, because most of it traces back to unfamiliarity rather than the questions themselves.' },
       { type: 'paragraph', heading: 'Familiarity is the real fix, not willpower', text: 'A lot of exam-day nerves come from facing something for the first time under real stakes: the interface, the on-screen timer counting down, the palette showing which questions you have attempted. If your first experience with a live countdown timer is on exam day itself, some of that anxiety is simply your brain reacting to something genuinely new. Taking full-length [mock tests](/exams) under real timed conditions well before the actual exam removes a big chunk of that unfamiliarity, because by exam day the format itself is no longer a surprise.' },
@@ -564,6 +576,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/preparing-for-exams-while-working-a-job.webp',
+      alt: 'Indian professional studying for a government exam after work',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'A lot of exam-prep advice online assumes you have no other commitments, which is not true for the many aspirants preparing while holding down a full-time job. The plan has to look different, and comparing yourself to someone with eight free hours a day is not useful.' },
       { type: 'paragraph', heading: 'Your real budget is smaller, plan around it', text: 'Between work, commute, and basic rest, most working aspirants have somewhere between one and three genuine study hours on a weekday, concentrated early morning, late evening, or both. Weekends carry more of the real weight, often three to five hours a day if used deliberately. Building your plan around this real number instead of an aspirational one is the same principle covered in [how to build a study timetable that actually works](/blog/how-to-build-a-study-timetable), just with a tighter weekday budget.' },
@@ -593,6 +611,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/document-verification-what-to-expect.webp',
+      alt: 'Indian candidate organizing certificates for document verification',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Every year, some candidates who clear the written stages of a government exam still get rejected later, not because of anything on the paper, but because of a document mismatch at verification. It is one of the most avoidable ways to lose a result you already earned.' },
       { type: 'paragraph', heading: 'What Document Verification actually is', text: 'After the written and, where applicable, interview stages, shortlisted candidates are called to physically produce original documents that support everything declared in the application: identity, date of birth, educational qualification, and category or reservation claims where relevant. Officials compare these originals against the online application and against each other. This stage typically comes after the last written or interview stage in an exam\'s [selection process](/exams), and the exact requirements are always listed in that specific exam\'s official notification.' },
@@ -622,6 +646,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/age-limit-and-attempts-explained.webp',
+      alt: 'Indian aspirant planning exam eligibility dates and attempts',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Age limits and number of attempts get confused constantly: a surprising number of aspirants assume every competitive exam caps how many times you can attempt it, the way a couple of well-known exams do. Most government exams in India do not work that way at all: they cap your age, not your attempt count.' },
       { type: 'paragraph', heading: 'Two different kinds of limits', text: 'Age-limited exams let you apply as many times as you want, as long as you fall within the eligible age band for that year\'s notification. Most SSC, Banking, and Railways exams work this way: there is no attempt cap on paper, only an age window, though in practice the age window itself limits how many times the notification comes around while you remain eligible. A smaller number of exams, most notably UPSC Civil Services, cap the actual number of attempts a candidate is allowed, separately from the age limit, with the exact cap varying by category.' },
@@ -651,6 +681,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/should-you-take-a-drop-year.webp',
+      alt: 'Indian student considering a dedicated year for exam preparation',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'A drop year, stepping away from a job or further study to prepare full-time, sounds like it should obviously help: more hours, no divided attention. In practice it helps some aspirants and genuinely hurts others, depending on factors that have nothing to do with how badly you want to clear the exam.' },
       { type: 'paragraph', heading: 'When a drop year tends to help', text: 'It tends to work well if you have already tested your own discipline, for example by managing a real study schedule alongside college or a job and seeing it actually stick, and if you have a clear, specific gap in preparation that more focused time would close: an unfinished syllabus, mock test scores that are close to cutoff but not there yet, or a subject you have never had time to properly attempt. A drop year with a specific, named goal behind it tends to go better than one taken simply because "more time should help."' },
