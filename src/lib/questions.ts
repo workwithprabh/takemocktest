@@ -70,6 +70,9 @@ import { IBPS_CLERK_PRELIMS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-cle
 import { IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1 } from './question-banks/ibps-clerk-mains-reasoning-computer-aptitude-1';
 import { IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-clerk-mains-quantitative-aptitude-1';
 import { IBPS_CLERK_MAINS_ENGLISH_1 } from './question-banks/ibps-clerk-mains-english-1';
+import { IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_2 } from './question-banks/ibps-clerk-mains-reasoning-computer-aptitude-2';
+import { IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_2 } from './question-banks/ibps-clerk-mains-quantitative-aptitude-2';
+import { IBPS_CLERK_MAINS_ENGLISH_2 } from './question-banks/ibps-clerk-mains-english-2';
 import { RRB_GROUP_D_CBT_GENERAL_SCIENCE_1 } from './question-banks/rrb-group-d-cbt-general-science-1';
 import { RRB_GROUP_D_CBT_MATHEMATICS_1 } from './question-banks/rrb-group-d-cbt-mathematics-1';
 import { RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-group-d-cbt-general-intelligence-reasoning-1';
@@ -826,6 +829,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-clerk/mains-reasoning-computer-aptitude-sectional-1': IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1,
   'ibps-clerk/mains-quantitative-aptitude-sectional-1': IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_1,
   'ibps-clerk/mains-english-language-sectional-1': IBPS_CLERK_MAINS_ENGLISH_1,
+  'ibps-clerk/mains-full-mock-2': [
+    ...IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_2,
+    ...IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_2,
+    ...IBPS_CLERK_MAINS_ENGLISH_2,
+  ],
+  'ibps-clerk/mains-reasoning-computer-aptitude-sectional-2': IBPS_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_2,
+  'ibps-clerk/mains-quantitative-aptitude-sectional-2': IBPS_CLERK_MAINS_QUANTITATIVE_APTITUDE_2,
+  'ibps-clerk/mains-english-language-sectional-2': IBPS_CLERK_MAINS_ENGLISH_2,
   'rrb-group-d/cbt-full-mock-1': [
     ...RRB_GROUP_D_CBT_GENERAL_SCIENCE_1,
     ...RRB_GROUP_D_CBT_MATHEMATICS_1,
