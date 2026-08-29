@@ -146,6 +146,10 @@ import { IBPS_RRB_OFFICER_SCALE_1_MAINS_REASONING_1 } from './question-banks/ibp
 import { IBPS_RRB_OFFICER_SCALE_1_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/ibps-rrb-officer-scale-1-mains-quantitative-aptitude-1';
 import { IBPS_RRB_OFFICER_SCALE_1_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-rrb-officer-scale-1-mains-english-language-1';
 import { IBPS_RRB_OFFICER_SCALE_1_MAINS_COMPUTER_KNOWLEDGE_1 } from './question-banks/ibps-rrb-officer-scale-1-mains-computer-knowledge-1';
+import { IBPS_RRB_OFFICER_SCALE_1_MAINS_REASONING_2 } from './question-banks/ibps-rrb-officer-scale-1-mains-reasoning-2';
+import { IBPS_RRB_OFFICER_SCALE_1_MAINS_QUANTITATIVE_APTITUDE_2 } from './question-banks/ibps-rrb-officer-scale-1-mains-quantitative-aptitude-2';
+import { IBPS_RRB_OFFICER_SCALE_1_MAINS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-rrb-officer-scale-1-mains-english-language-2';
+import { IBPS_RRB_OFFICER_SCALE_1_MAINS_COMPUTER_KNOWLEDGE_2 } from './question-banks/ibps-rrb-officer-scale-1-mains-computer-knowledge-2';
 import { SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/sbi-clerk-prelims-english-language-1';
 import { SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/sbi-clerk-prelims-numerical-ability-1';
 import { SBI_CLERK_PRELIMS_REASONING_ABILITY_1 } from './question-banks/sbi-clerk-prelims-reasoning-ability-1';
@@ -1041,6 +1045,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-rrb-officer-scale-1/mains-quantitative-aptitude-sectional-1': IBPS_RRB_OFFICER_SCALE_1_MAINS_QUANTITATIVE_APTITUDE_1,
   'ibps-rrb-officer-scale-1/mains-computer-knowledge-sectional-1': IBPS_RRB_OFFICER_SCALE_1_MAINS_COMPUTER_KNOWLEDGE_1,
   'ibps-rrb-officer-scale-1/mains-english-language-sectional-1': IBPS_RRB_OFFICER_SCALE_1_MAINS_ENGLISH_LANGUAGE_1,
+  'ibps-rrb-officer-scale-1/mains-full-mock-2': [
+    ...IBPS_RRB_OFFICER_SCALE_1_MAINS_REASONING_2,
+    ...IBPS_RRB_OFFICER_SCALE_1_MAINS_QUANTITATIVE_APTITUDE_2,
+    ...IBPS_RRB_OFFICER_SCALE_1_MAINS_COMPUTER_KNOWLEDGE_2,
+    ...IBPS_RRB_OFFICER_SCALE_1_MAINS_ENGLISH_LANGUAGE_2,
+  ],
+  'ibps-rrb-officer-scale-1/mains-reasoning-sectional-2': IBPS_RRB_OFFICER_SCALE_1_MAINS_REASONING_2,
+  'ibps-rrb-officer-scale-1/mains-quantitative-aptitude-sectional-2': IBPS_RRB_OFFICER_SCALE_1_MAINS_QUANTITATIVE_APTITUDE_2,
+  'ibps-rrb-officer-scale-1/mains-computer-knowledge-sectional-2': IBPS_RRB_OFFICER_SCALE_1_MAINS_COMPUTER_KNOWLEDGE_2,
+  'ibps-rrb-officer-scale-1/mains-english-language-sectional-2': IBPS_RRB_OFFICER_SCALE_1_MAINS_ENGLISH_LANGUAGE_2,
   'sbi-clerk/prelims-full-mock-1': [
     ...SBI_CLERK_PRELIMS_ENGLISH_LANGUAGE_1,
     ...SBI_CLERK_PRELIMS_NUMERICAL_ABILITY_1,
