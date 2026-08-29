@@ -179,7 +179,7 @@ export const BLOG_POSTS: BlogPost[] = [
       height: 720,
     },
     body: [
-      { type: 'paragraph', text: 'It\'s common to know the material well and still lose marks purely to poor time allocation: spending too long on one tough question while easier ones go unanswered. A little structure fixes most of this.' },
+      { type: 'paragraph', text: 'Time management during the exam is often the real skill gap, not subject knowledge: it\'s common to know the material well and still lose marks purely to poor time allocation, spending too long on one tough question while easier ones go unanswered. A little structure fixes most of this.' },
       { type: 'takeaways', items: [
         'On your first pass, only answer what you can solve in 30 to 40 seconds; mark the rest and move on.',
         'Check your progress against the clock at section-level checkpoints, not just at the end.',
@@ -284,7 +284,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'Roughly nine of the exams on this site lock you into each section with its own individual clock, while about twelve hand you one combined timer for the entire paper and let you move between sections however you like. Mixing up which one your exam uses (and practicing for the wrong one) is a common, avoidable mistake.' },
+      { type: 'paragraph', text: 'Sectional lock and composite timer are the two timing formats you\'ll run into on this site: roughly nine exams use a sectional lock, locking you into each section with its own individual clock, while about twelve use a composite timer, one combined clock for the entire paper that lets you move between sections however you like. Mixing up which one your exam uses (and practicing for the wrong one) is a common, avoidable mistake.' },
       { type: 'takeaways', items: [
         'Sectional lock: each section has its own fixed window, and unused time never carries over.',
         'Composite timer: one clock for the whole paper, split however you like.',
@@ -441,7 +441,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'Students ask this constantly, and most answers online just throw out a round number like 20 or 50 with no reasoning behind it. The honest answer is that the count matters far less than what you do with each attempt.' },
+      { type: 'paragraph', text: 'How many mock tests you should take is one of the most common questions aspirants ask, and most answers online just throw out a round number like 20 or 50 with no reasoning behind it. The honest answer is that the count matters far less than what you do with each attempt.' },
       { type: 'takeaways', items: [
         'Volume without review teaches you nothing new after the first handful of attempts.',
         'Track section-wise accuracy across attempts, not just your overall score.',
@@ -587,7 +587,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'A surprising number of aspirants assume every competitive exam caps how many times you can attempt it, the way a couple of well-known exams do. Most government exams in India do not work that way at all: they cap your age, not your attempt count.' },
+      { type: 'paragraph', text: 'Age limits and number of attempts get confused constantly: a surprising number of aspirants assume every competitive exam caps how many times you can attempt it, the way a couple of well-known exams do. Most government exams in India do not work that way at all: they cap your age, not your attempt count.' },
       { type: 'paragraph', heading: 'Two different kinds of limits', text: 'Age-limited exams let you apply as many times as you want, as long as you fall within the eligible age band for that year\'s notification. Most SSC, Banking, and Railways exams work this way: there is no attempt cap on paper, only an age window, though in practice the age window itself limits how many times the notification comes around while you remain eligible. A smaller number of exams, most notably UPSC Civil Services, cap the actual number of attempts a candidate is allowed, separately from the age limit, with the exact cap varying by category.' },
       { type: 'takeaways', items: [
         'Most SSC, Banking, and Railways exams cap your age, not your number of attempts.',
@@ -705,7 +705,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'Ask two toppers of the same exam how they managed their time and you will often get opposite answers. One attempted almost every question and accepted a few careless errors. The other attempted fewer questions but got nearly all of them right. Both can score well on the same paper, because the right balance depends on your exam\'s scoring rules and your own accuracy, not on a single universal rule.' },
+      { type: 'paragraph', text: 'Speed vs accuracy in timed tests plays out differently for every topper: ask two toppers of the same exam how they managed their time and you will often get opposite answers. One attempted almost every question and accepted a few careless errors. The other attempted fewer questions but got nearly all of them right. Both can score well on the same paper, because the right balance depends on your exam\'s scoring rules and your own accuracy, not on a single universal rule.' },
       { type: 'paragraph', heading: 'Why this is a real trade-off, not a mindset problem', text: 'Every additional question you attempt in a fixed time window either comes from time you would have spent double-checking an earlier answer, or from time you would have spent leaving a genuinely uncertain question blank. Speed without accuracy converts more time into wrong answers; accuracy without speed converts time into fewer attempted questions. Neither failure mode is about willpower. Both are about where you are actually spending your limited minutes.' },
       { type: 'table', heading: 'Two default strategies, compared', headers: ['', 'Attempt more, accept some errors', 'Attempt fewer, protect accuracy'], rows: [
         ['Works best when', 'Little to no negative marking, or a low per-question penalty', 'Meaningful negative marking or unusually tough sectional cutoffs'],
@@ -739,7 +739,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'Reviewing a single mock test tells you what went wrong on that one test. An error log, a running record you keep across every test you take, tells you what keeps going wrong. That distinction matters, because a mistake that shows up once is noise; a mistake that shows up in four out of your last five tests is a pattern worth fixing directly.' },
+      { type: 'paragraph', text: 'An error log, a running record you keep across every test you take, tells you what keeps going wrong, which is different from reviewing a single mock test, which only tells you what went wrong on that one test. That distinction matters, because a mistake that shows up once is noise; a mistake that shows up in four out of your last five tests is a pattern worth fixing directly.' },
       { type: 'paragraph', heading: 'What actually belongs in an error log', text: 'Keep it simple enough that you will actually maintain it: for every question you got wrong or left blank, note the topic, why you missed it in one short phrase (calculation slip, misread the question, did not know the concept, ran out of time), and the date. That third field, the reason, is what turns a list of wrong answers into a diagnostic tool.' },
       { type: 'table', heading: 'Four common reasons, and what each one actually needs', headers: ['Reason you missed it', 'What it usually means', 'What actually fixes it'], rows: [
         ['Did not know the concept', 'A real gap in preparation', 'Go back to the topic and relearn it, not just note the correct answer'],
@@ -867,7 +867,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'Every year, some candidates who prepared well enough to clear an exam are turned away at the gate for reasons that had nothing to do with their preparation: a phone in a pocket, an admit card only saved on a phone screen, a photo ID that does not match the name on the application. None of that is about knowledge. It is entirely avoidable with a checklist you run through the night before, not the morning of.' },
+      { type: 'paragraph', text: 'An exam day checklist exists because every year, some candidates who prepared well enough to clear an exam are turned away at the gate for reasons that had nothing to do with their preparation: a phone in a pocket, an admit card only saved on a phone screen, a photo ID that does not match the name on the application. None of that is about knowledge. It is entirely avoidable with a checklist you run through the night before, not the morning of.' },
       { type: 'takeaways', items: [
         'Print your admit card; a digital copy on your phone is not accepted at most exam centres.',
         'Bring a valid photo ID that matches the name on your application exactly, not a nickname or a shortened version.',
@@ -962,7 +962,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'A well-documented finding in memory research is that most new information fades fast without reinforcement: a large share of what you study today, if reviewed only once, is gone within days. Spaced repetition is simply reviewing material again at increasing intervals instead of once, and it is one of the highest-return habits an aspirant can build into an otherwise ordinary study routine.' },
+      { type: 'paragraph', text: 'Spaced repetition, reviewing material again at increasing intervals instead of just once, is one of the highest-return habits an aspirant can build into an otherwise ordinary study routine. It works because of a well-documented finding in memory research: most new information fades fast without reinforcement, and a large share of what you study today, if reviewed only once, is gone within days.' },
       { type: 'paragraph', heading: 'Why a single review session is not enough', text: 'Reading a topic once, understanding it in the moment, and moving on feels like progress, and in the short term it is. But memory without reinforcement decays quickly, and by the time you circle back weeks later during revision, much of it needs to be relearned almost from scratch. That relearning is wasted effort you could have avoided with two or three short review sessions spread out over the weeks in between instead of one long session up front.' },
       { type: 'takeaways', items: [
         'Review new material again within a day or two of first learning it, not weeks later.',
@@ -992,7 +992,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'Most MBA aspirants in India do not sit one entrance exam, they sit four or five in the same admission cycle, because different institutes accept different scores. CAT is the one everyone has heard of, but the others are not lesser versions of it. Each mixes question count, timing, and marking scheme differently enough that a strategy built for one can actively hurt you on another.' },
+      { type: 'paragraph', text: 'CAT, MAT, CMAT, and the various state MBA CETs are rarely a choice between one exam and another: most MBA aspirants in India do not sit just one entrance exam, they sit four or five in the same admission cycle, because different institutes accept different scores. CAT is the one everyone has heard of, but the others are not lesser versions of it. Each mixes question count, timing, and marking scheme differently enough that a strategy built for one can actively hurt you on another.' },
       { type: 'takeaways', items: [
         'CAT and NMAT lock you into a section once you leave it or the clock runs out; MAT, SNAP, IBSAT, TANCET MBA, and KMAT Karnataka let you move freely between sections.',
         'Negative marking ranges from none at all (NMAT, IBSAT, KMAT Karnataka) to a full mark deducted per wrong answer (CMAT, JIPMAT), which changes how freely you should guess.',
@@ -1065,7 +1065,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
     body: [
-      { type: 'paragraph', text: 'Unlike MBA or engineering entrances, where you often pick the exam that suits your prep style, defence entries are decided mostly by two things you cannot change through study: your age and education stage, and which service and entry route you want. NDA is for candidates still in or just finishing Class 12; CDS and AFCAT are for graduates; the Agniveer written tests sit alongside a physical and medical process most other exams on this list do not have at all.' },
+      { type: 'paragraph', text: 'NDA, CDS, and AFCAT are matched to candidates by two things you cannot change through study, rather than by which exam suits your prep style the way MBA or engineering entrances are: your age and education stage, and which service and entry route you want. NDA is for candidates still in or just finishing Class 12; CDS and AFCAT are for graduates; the Agniveer written tests sit alongside a physical and medical process most other exams on this list do not have at all.' },
       { type: 'takeaways', items: [
         'NDA is for unmarried candidates after Class 12, roughly 16.5 to 19.5 years old; CDS and AFCAT require a completed or nearly completed degree.',
         'AFCAT and INET both carry a section-wise qualifying minimum, so a strong overall score is not enough if you fail one section outright.',
@@ -1872,7 +1872,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "body": [
     {
       "type": "paragraph",
-      "text": "Aligarh Muslim University runs its own B.Tech. Admission Test rather than accepting JEE Main scores, and its Guide to Admissions is unusually specific about the overall shape of the paper: 100 questions, 100 marks, 120 minutes, split across Chemistry, Physics, and Mathematics, delivered OMR-based. What it does not specify, anywhere in the official document, is how those 100 questions divide between the three subjects."
+      "text": "AMU (Aligarh Muslim University) runs its own B.Tech. Admission Test rather than accepting JEE Main scores, and its Guide to Admissions is unusually specific about the overall shape of the paper: 100 questions, 100 marks, 120 minutes, split across Chemistry, Physics, and Mathematics, delivered OMR-based. What it does not specify, anywhere in the official document, is how those 100 questions divide between the three subjects."
     },
     {
       "type": "takeaways",
