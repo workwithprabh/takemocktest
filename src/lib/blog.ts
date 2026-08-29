@@ -680,6 +680,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/understanding-cutoffs-and-percentile.webp',
+      alt: 'Indian aspirant reviewing mock-test score patterns and comparison charts',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Ask ten aspirants what score they need and most will quote a single number from last year\'s cutoff. That number is a useful reference point, but treating it as a fixed target misunderstands how cutoffs actually get decided.' },
       { type: 'paragraph', heading: 'A cutoff is decided after the fact, not set in advance', text: 'A cutoff is not a pre-announced pass mark. It is the score of the last candidate selected, decided after the exam based on how many vacancies exist, how many candidates appeared, and how the paper played out that year. The same exam can have a noticeably different cutoff two years running even with a similar syllabus, simply because vacancy count or applicant volume shifted.' },
@@ -710,6 +716,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/revising-in-the-final-week-before-your-exam.webp',
+      alt: 'Indian student revising practice questions during the final week before an exam',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Most aspirants treat the final week as extra study time and try to squeeze in one more topic they never quite finished. That instinct usually works against you. The last week has one job: make what you already know faster and more reliable, not add to the pile of things you know.' },
       { type: 'paragraph', heading: 'Stop learning new topics, start consolidating', text: 'A topic you are seeing for the first time this week is more likely to cost you time on exam day than earn you marks. Even if you technically follow the concept once, you will not be fast or confident applying it under a countdown timer, and hesitation on one question eats into the time you needed for questions you already had covered.' },
@@ -740,6 +752,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/speed-vs-accuracy-in-timed-tests.webp',
+      alt: 'Indian student balancing speed and accuracy during a timed mock test',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Speed vs accuracy in timed tests plays out differently for every topper: ask two toppers of the same exam how they managed their time and you will often get opposite answers. One attempted almost every question and accepted a few careless errors. The other attempted fewer questions but got nearly all of them right. Both can score well on the same paper, because the right balance depends on your exam\'s scoring rules and your own accuracy, not on a single universal rule.' },
       { type: 'paragraph', heading: 'Why this is a real trade-off, not a mindset problem', text: 'Every additional question you attempt in a fixed time window either comes from time you would have spent double-checking an earlier answer, or from time you would have spent leaving a genuinely uncertain question blank. Speed without accuracy converts more time into wrong answers; accuracy without speed converts time into fewer attempted questions. Neither failure mode is about willpower. Both are about where you are actually spending your limited minutes.' },
@@ -774,6 +792,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/how-to-build-an-error-log.webp',
+      alt: 'Indian student recording recurring mock-test mistakes in an error log',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'An error log, a running record you keep across every test you take, tells you what keeps going wrong, which is different from reviewing a single mock test, which only tells you what went wrong on that one test. That distinction matters, because a mistake that shows up once is noise; a mistake that shows up in four out of your last five tests is a pattern worth fixing directly.' },
       { type: 'paragraph', heading: 'What actually belongs in an error log', text: 'Keep it simple enough that you will actually maintain it: for every question you got wrong or left blank, note the topic, why you missed it in one short phrase (calculation slip, misread the question, did not know the concept, ran out of time), and the date. That third field, the reason, is what turns a list of wrong answers into a diagnostic tool.' },
@@ -809,6 +833,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/group-study-vs-solo-study.webp',
+      alt: 'Three Indian aspirants discussing a difficult practice question together',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Group study and solo study rarely fail for the reasons people expect. Group study does not fail because groups are inherently distracting, and solo study does not fail because studying alone is inherently lonely. Both fail when they are applied to the wrong kind of task. The more useful question is not which one is better overall, but which parts of your prep actually benefit from another person being there.' },
       { type: 'paragraph', heading: 'Tasks that genuinely benefit from a group', text: 'Explaining a concept out loud to someone else, and having them push back with questions, exposes gaps that silent reading does not. If you cannot explain why an answer is correct in your own words to another person, you likely do not understand it as well as you think. Group settings are also useful for splitting up broad-syllabus subjects like general awareness, where each person tracking a different area and sharing summaries covers more ground than one person alone.' },
@@ -838,6 +868,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/sectional-practice-or-full-mocks.webp',
+      alt: 'Indian student comparing a sectional practice booklet with a full mock paper',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Opening a test series and seeing both sectional tests and full mocks listed leaves a lot of aspirants defaulting to whichever one they took last time, without much thought about which one their preparation actually needs right now. The two serve different purposes, and picking between them is really a question about what you are trying to find out this week.' },
       { type: 'paragraph', heading: 'What a sectional test is actually good for', text: 'A sectional test isolates one part of the exam and lets you drill it without the rest of the paper competing for your time and attention. That makes it the right choice right after you have identified a specific weak section, whether from an error log or a full mock review, and want to work on it directly without three other sections diluting the practice.' },
