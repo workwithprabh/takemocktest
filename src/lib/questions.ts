@@ -106,6 +106,10 @@ import { RBI_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-ass
 import { RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_1 } from './question-banks/rbi-assistant-mains-numerical-ability-1';
 import { RBI_ASSISTANT_MAINS_REASONING_ABILITY_1 } from './question-banks/rbi-assistant-mains-reasoning-ability-1';
 import { RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1 } from './question-banks/rbi-assistant-mains-computer-knowledge-1';
+import { RBI_ASSISTANT_MAINS_ENGLISH_LANGUAGE_2 } from './question-banks/rbi-assistant-mains-english-language-2';
+import { RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_2 } from './question-banks/rbi-assistant-mains-numerical-ability-2';
+import { RBI_ASSISTANT_MAINS_REASONING_ABILITY_2 } from './question-banks/rbi-assistant-mains-reasoning-ability-2';
+import { RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_2 } from './question-banks/rbi-assistant-mains-computer-knowledge-2';
 import { SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1 } from './question-banks/ssc-mts-cbt-numerical-mathematical-ability-1';
 import { SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1 } from './question-banks/ssc-mts-cbt-reasoning-ability-problem-solving-1';
 import { SSC_MTS_CBT_GENERAL_AWARENESS_1 } from './question-banks/ssc-mts-cbt-general-awareness-1';
@@ -926,6 +930,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rbi-assistant/mains-numerical-ability-sectional-1': RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_1,
   'rbi-assistant/mains-reasoning-ability-sectional-1': RBI_ASSISTANT_MAINS_REASONING_ABILITY_1,
   'rbi-assistant/mains-computer-knowledge-sectional-1': RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1,
+  'rbi-assistant/mains-full-mock-2': [
+    ...RBI_ASSISTANT_MAINS_ENGLISH_LANGUAGE_2,
+    ...RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_2,
+    ...RBI_ASSISTANT_MAINS_REASONING_ABILITY_2,
+    ...RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_2,
+  ],
+  'rbi-assistant/mains-english-language-sectional-2': RBI_ASSISTANT_MAINS_ENGLISH_LANGUAGE_2,
+  'rbi-assistant/mains-numerical-ability-sectional-2': RBI_ASSISTANT_MAINS_NUMERICAL_ABILITY_2,
+  'rbi-assistant/mains-reasoning-ability-sectional-2': RBI_ASSISTANT_MAINS_REASONING_ABILITY_2,
+  'rbi-assistant/mains-computer-knowledge-sectional-2': RBI_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_2,
   'ssc-mts/cbt-full-mock-1': [
     ...SSC_MTS_CBT_NUMERICAL_MATHEMATICAL_ABILITY_1,
     ...SSC_MTS_CBT_REASONING_ABILITY_PROBLEM_SOLVING_1,
