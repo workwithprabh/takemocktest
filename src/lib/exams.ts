@@ -7248,6 +7248,17 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           {
+            id: 'cbt-full-mock-1',
+            name: 'CBT Full Mock Test 1',
+            kind: 'full-length',
+            status: 'checked',
+            duration: 27,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            scoringNote: 'This mock covers the three subjects common to every RRB Paramedical post (General Awareness, General Arithmetic and General Intelligence and Reasoning, and General Science — 30 of the 100 official questions). Professional Ability (70 questions) is not included, since it differs by post and has no single common syllabus; see the pattern note above.',
+            checkedOn: '29 August 2026',
+          },
+          {
             id: 'cbt-general-awareness-sectional-1',
             name: 'General Awareness Sectional Test 1',
             kind: 'sectional',

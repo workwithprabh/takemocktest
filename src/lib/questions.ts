@@ -1522,6 +1522,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-technician/grade-3-general-intelligence-reasoning-sectional-2': RRB_TECHNICIAN_GRADE3_GENERAL_INTELLIGENCE_REASONING_2,
   'rrb-technician/grade-3-general-science-sectional-2': RRB_TECHNICIAN_GRADE3_GENERAL_SCIENCE_2,
   'rrb-technician/grade-3-general-awareness-sectional-2': RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_2,
+  'rrb-paramedical/cbt-full-mock-1': [
+    ...RRB_PARAMEDICAL_GENERAL_AWARENESS_1,
+    ...RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1,
+    ...RRB_PARAMEDICAL_GENERAL_SCIENCE_1,
+  ],
   'rrb-paramedical/cbt-general-awareness-sectional-1': RRB_PARAMEDICAL_GENERAL_AWARENESS_1,
   'rrb-paramedical/cbt-general-arithmetic-reasoning-sectional-1': RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1,
   'rrb-paramedical/cbt-general-science-sectional-1': RRB_PARAMEDICAL_GENERAL_SCIENCE_1,
@@ -2901,6 +2906,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('rrb-je/cbt2-full-mock')
     ? 135
+    : testId.includes('rrb-paramedical/cbt-full-mock')
+    ? 30
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -3152,6 +3159,11 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
 }
 
 const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
+  'rrb-paramedical': [
+    { section: 'General Awareness', count: 10 },
+    { section: 'General Arithmetic, General Intelligence and Reasoning', count: 10 },
+    { section: 'General Science', count: 10 },
+  ],
   'nmims-cet': [
     { section: 'Physics', count: 30 },
     { section: 'Chemistry', count: 30 },
