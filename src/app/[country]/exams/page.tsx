@@ -24,7 +24,7 @@ export default async function AllExamsPage({ params }: { params: Promise<{ count
   const { country } = await params;
 
   return (
-    <div className="mx-auto max-w-6xl px-5 py-10 md:py-14">
+    <div className="mx-auto max-w-6xl px-5 py-7 md:py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -37,15 +37,15 @@ export default async function AllExamsPage({ params }: { params: Promise<{ count
         }}
       />
 
-      <section className="mb-10 overflow-hidden border border-ink-200 bg-white md:grid md:grid-cols-[1.05fr_0.95fr]" aria-labelledby="exam-directory-heading">
-        <div className="flex flex-col justify-center p-6 md:p-10">
+      <section className="mb-6 overflow-hidden border border-ink-200 bg-white md:grid md:min-h-72 md:grid-cols-[1.15fr_0.85fr]" aria-labelledby="exam-directory-heading">
+        <div className="flex flex-col justify-center p-6 md:p-9">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-action-700">India exam directory</p>
-          <h1 id="exam-directory-heading" className="mb-4 text-3xl font-bold tracking-tight text-ink-900 md:text-5xl">Find the right exam for your goal</h1>
-          <p className="text-base leading-7 text-ink-700">
+          <h1 id="exam-directory-heading" className="mb-3 text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">Find the right exam for your goal</h1>
+          <p className="max-w-2xl text-sm leading-6 text-ink-700 md:text-base md:leading-7">
             Explore {CATALOG_EXAM_COUNT} recurring national, state, institute, and international tests commonly taken by students in India. Exam names are listed now; new question banks will be added carefully over time.
           </p>
         </div>
-        <figure className="relative min-h-64 border-t border-ink-200 bg-ink-100 md:min-h-[360px] md:border-l md:border-t-0">
+        <figure className="relative min-h-36 border-t border-ink-200 bg-ink-100 sm:min-h-48 md:min-h-72 md:border-l md:border-t-0">
           <Image
             src="/images/exam-directory-india.webp"
             alt="Indian students comparing competitive exam pathways at a study table"
@@ -56,10 +56,6 @@ export default async function AllExamsPage({ params }: { params: Promise<{ count
           />
         </figure>
       </section>
-
-      <div className="mb-8 border border-ink-200 bg-ink-50 px-5 py-4 text-sm leading-6 text-ink-600">
-        <strong className="text-ink-900">Availability is clearly marked.</strong> “Available” means a working mock-test series exists on TakeMockTest. Other exam names are cataloged for planned expansion and do not yet claim to have questions.
-      </div>
 
       <ExamFinder categories={EXAM_CATEGORIES} country={country}>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

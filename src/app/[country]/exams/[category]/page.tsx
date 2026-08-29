@@ -61,8 +61,8 @@ export default async function ExamCategoryPage({
         <span aria-hidden="true">←</span> All exam categories
       </Link>
 
-      <div className="mb-10 grid gap-5 border border-ink-200 bg-white p-6 md:grid-cols-[auto_1fr_auto] md:items-center md:p-8">
-        <div className="flex h-14 w-14 items-center justify-center bg-ink-100 text-ink-800">
+      <div className="mb-7 grid gap-5 border border-ink-200 bg-white p-6 md:grid-cols-[auto_1fr_auto] md:items-center md:p-8">
+        <div className="flex h-14 w-14 items-center justify-center border border-action-100 bg-action-50 text-action-700">
           <CategoryIcon name={category.icon} />
         </div>
         <div>
@@ -70,9 +70,15 @@ export default async function ExamCategoryPage({
           <h1 className="mb-2 text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">{category.name}</h1>
           <p className="max-w-2xl text-sm leading-6 text-ink-700">{category.description}</p>
         </div>
-        <div className="border-l-0 border-ink-200 md:border-l md:pl-8">
-          <div className="text-3xl font-bold text-ink-900">{getCategoryExamCount(category)}</div>
-          <div className="text-xs font-medium text-ink-500">exams listed</div>
+        <div className="grid grid-cols-2 divide-x divide-ink-200 border-t border-ink-200 pt-4 md:border-l md:border-t-0 md:pl-8 md:pt-0">
+          <div className="pr-5">
+            <div className="text-2xl font-bold text-ink-900">{getCategoryExamCount(category)}</div>
+            <div className="text-xs font-medium text-ink-500">exams listed</div>
+          </div>
+          <div className="pl-5">
+            <div className="text-2xl font-bold text-action-700">{liveExams.length}</div>
+            <div className="text-xs font-medium text-ink-500">mock tests live</div>
+          </div>
         </div>
       </div>
 

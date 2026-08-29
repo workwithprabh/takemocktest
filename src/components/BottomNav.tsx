@@ -13,7 +13,7 @@ export default function BottomNav({ country }: { country: string }) {
   const items = [
     { label: 'Home', href: `/${country}`, icon: 'M3 11l9-8 9 8M5 10v10h14V10' },
     { label: 'Tests', href: `/${country}#exams`, icon: 'M5 4h14v16H5zM8 9h8M8 13h5' },
-    { label: 'Browse', href: `/${country}/exams`, icon: 'M4 4h11a2 2 0 012 2v14l-7-3-7 3V6a2 2 0 012-2z' },
+    { label: 'Find exam', href: `/${country}/exams`, icon: 'M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z' },
     { label: 'Results', href: `/${country}/results`, icon: 'M4 20V10M12 20V4M20 20v-7' },
   ];
 
@@ -27,7 +27,7 @@ export default function BottomNav({ country }: { country: string }) {
         const active =
           item.label === 'Tests'
             ? pathname.includes('/mock-test') || pathname.includes('/test/')
-            : item.label === 'Browse'
+            : item.label === 'Find exam'
               ? pathname.startsWith(`/${country}/exams`)
               : pathname === item.href;
         return (
@@ -60,30 +60,27 @@ export default function BottomNav({ country }: { country: string }) {
           </svg>
           More
         </button>
-        <div
-          aria-hidden={!open}
-          className={`absolute bottom-full right-2 mb-3 w-52 border border-ink-700 bg-ink-900 p-2 shadow-2xl transition duration-200 ease-out ${
-            open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-1 pointer-events-none'
-          }`}
-        >
-          {[
-            ['Exam updates', `/${country}/exam-updates`],
-            ['Study resources', `/${country}/blog`],
-            ['About', `/${country}/about`],
-            ['Contact', `/${country}/contact`],
-            ['Privacy policy', `/${country}/privacy`],
-            ['Terms of service', `/${country}/terms`],
-          ].map(([label, href]) => (
-            <Link
-              key={href}
-              href={href}
-              onClick={() => setOpen(false)}
-              className="block px-3 py-3 text-sm text-ink-200 hover:bg-ink-800 hover:text-white"
-            >
-              {label}
-            </Link>
-          ))}
-        </div>
+        {open && (
+          <div className="absolute bottom-full right-2 mb-3 w-52 border border-ink-700 bg-ink-900 p-2 shadow-2xl">
+            {[
+              ['Exam updates', `/${country}/exam-updates`],
+              ['Study resources', `/${country}/blog`],
+              ['About', `/${country}/about`],
+              ['Contact', `/${country}/contact`],
+              ['Privacy policy', `/${country}/privacy`],
+              ['Terms of service', `/${country}/terms`],
+            ].map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setOpen(false)}
+                className="block px-3 py-3 text-sm text-ink-200 hover:bg-ink-800 hover:text-white"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </nav>
   );
