@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-29",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 599,
-    "questions": 22369
+    "bankFiles": 602,
+    "questions": 22509
   },
   "topicSaturation": [
     {
@@ -279,7 +279,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Ratio and proportion",
-      "questionCount": 109,
+      "questionCount": 111,
       "examCount": 20,
       "exams": [
         "aeee-2026",
@@ -307,7 +307,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Time and work",
-      "questionCount": 108,
+      "questionCount": 111,
       "examCount": 20,
       "exams": [
         "aeee-2026",
@@ -531,7 +531,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Percentage",
-      "questionCount": 120,
+      "questionCount": 123,
       "examCount": 19,
       "exams": [
         "cat-varc",
@@ -769,7 +769,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Mensuration",
-      "questionCount": 96,
+      "questionCount": 99,
       "examCount": 17,
       "exams": [
         "cat-varc",
@@ -819,7 +819,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Simple Interest",
-      "questionCount": 57,
+      "questionCount": 59,
       "examCount": 17,
       "exams": [
         "cat-varc",
@@ -987,6 +987,30 @@
       ]
     },
     {
+      "section": "Quantitative Aptitude",
+      "topic": "Compound interest",
+      "questionCount": 46,
+      "examCount": 16,
+      "exams": [
+        "ibps-po",
+        "ibps-rrb",
+        "ibps-so",
+        "ibsat-verbal",
+        "jipmat-qa",
+        "nabard-grade",
+        "rbi-grade",
+        "sbi-clerk",
+        "sbi-po",
+        "sebi-grade",
+        "sidbi-grade",
+        "ssc-cgl",
+        "ssc-chsl",
+        "ssc-cpo",
+        "ssc-selection",
+        "tancet-mba"
+      ]
+    },
+    {
       "section": "Physics",
       "topic": "Rotational motion",
       "questionCount": 44,
@@ -1008,30 +1032,6 @@
         "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Compound interest",
-      "questionCount": 44,
-      "examCount": 16,
-      "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "ibps-so",
-        "ibsat-verbal",
-        "jipmat-qa",
-        "nabard-grade",
-        "rbi-grade",
-        "sbi-clerk",
-        "sbi-po",
-        "sebi-grade",
-        "sidbi-grade",
-        "ssc-cgl",
-        "ssc-chsl",
-        "ssc-cpo",
-        "ssc-selection",
-        "tancet-mba"
       ]
     },
     {
@@ -1352,7 +1352,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Data interpretation",
-      "questionCount": 89,
+      "questionCount": 99,
       "examCount": 13,
       "exams": [
         "aeee-2026",
@@ -1373,7 +1373,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Average",
-      "questionCount": 76,
+      "questionCount": 78,
       "examCount": 13,
       "exams": [
         "ibps-rrb",
@@ -1719,7 +1719,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Simplification",
-      "questionCount": 70,
+      "questionCount": 73,
       "examCount": 11,
       "exams": [
         "ibps-clerk",
@@ -2058,7 +2058,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Number series",
-      "questionCount": 61,
+      "questionCount": 64,
       "examCount": 10,
       "exams": [
         "aeee-2026",
@@ -3267,7 +3267,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Probability",
-      "questionCount": 10,
+      "questionCount": 12,
       "examCount": 7,
       "exams": [
         "ibps-clerk",
@@ -3508,6 +3508,20 @@
       ]
     },
     {
+      "section": "Quantitative Aptitude",
+      "topic": "Quadratic equations",
+      "questionCount": 28,
+      "examCount": 6,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-rrb",
+        "ibps-so",
+        "sbi-clerk",
+        "ssc-cgl"
+      ]
+    },
+    {
       "section": "Reasoning Ability",
       "topic": "Alphanumeric series",
       "questionCount": 28,
@@ -3547,20 +3561,6 @@
         "cg-pet",
         "mht-cet",
         "tg-eapcet"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Quadratic equations",
-      "questionCount": 25,
-      "examCount": 6,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-rrb",
-        "ibps-so",
-        "sbi-clerk",
-        "ssc-cgl"
       ]
     },
     {
@@ -3818,7 +3818,7 @@
     {
       "section": "Quantitative Aptitude",
       "topic": "Permutation and combination",
-      "questionCount": 8,
+      "questionCount": 10,
       "examCount": 6,
       "exams": [
         "ibps-clerk",
@@ -4312,6 +4312,19 @@
       ]
     },
     {
+      "section": "Quantitative Aptitude",
+      "topic": "Boats and streams",
+      "questionCount": 9,
+      "examCount": 5,
+      "exams": [
+        "ibps-po",
+        "ibps-rrb",
+        "sbi-clerk",
+        "ssc-cgl",
+        "ssc-selection"
+      ]
+    },
+    {
       "section": "Chemistry",
       "topic": "Thermochemistry",
       "questionCount": 8,
@@ -4400,19 +4413,6 @@
         "srmjeee-2026",
         "upeseat-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Boats and streams",
-      "questionCount": 7,
-      "examCount": 5,
-      "exams": [
-        "ibps-po",
-        "ibps-rrb",
-        "sbi-clerk",
-        "ssc-cgl",
-        "ssc-selection"
       ]
     },
     {
@@ -4589,6 +4589,18 @@
       ]
     },
     {
+      "section": "General English",
+      "topic": "One-word substitution",
+      "questionCount": 30,
+      "examCount": 4,
+      "exams": [
+        "sbi-clerk",
+        "snap-general",
+        "ssc-cht",
+        "tancet-mba"
+      ]
+    },
+    {
       "section": "Numerical Ability",
       "topic": "Mensuration",
       "questionCount": 28,
@@ -4610,18 +4622,6 @@
         "rpf-si",
         "ssc-cgl",
         "ssc-selection"
-      ]
-    },
-    {
-      "section": "General English",
-      "topic": "One-word substitution",
-      "questionCount": 27,
-      "examCount": 4,
-      "exams": [
-        "sbi-clerk",
-        "snap-general",
-        "ssc-cht",
-        "tancet-mba"
       ]
     },
     {
@@ -5163,7 +5163,7 @@
     {
       "section": "General English",
       "topic": "Fill in the blanks",
-      "questionCount": 25,
+      "questionCount": 28,
       "examCount": 3,
       "exams": [
         "sbi-clerk",
@@ -5404,6 +5404,17 @@
     },
     {
       "section": "Quantitative Aptitude",
+      "topic": "Time speed distance",
+      "questionCount": 13,
+      "examCount": 3,
+      "exams": [
+        "ibps-rrb",
+        "ibps-so",
+        "sbi-clerk"
+      ]
+    },
+    {
+      "section": "Quantitative Aptitude",
       "topic": "Trigonometry",
       "questionCount": 13,
       "examCount": 3,
@@ -5433,6 +5444,17 @@
         "bitsat-2026",
         "jee-advanced",
         "wbjee-engineering"
+      ]
+    },
+    {
+      "section": "Quantitative Aptitude",
+      "topic": "Profit loss and discount",
+      "questionCount": 12,
+      "examCount": 3,
+      "exams": [
+        "ibps-rrb",
+        "ibps-so",
+        "sbi-clerk"
       ]
     },
     {
@@ -5612,17 +5634,6 @@
       ]
     },
     {
-      "section": "Quantitative Aptitude",
-      "topic": "Time speed distance",
-      "questionCount": 10,
-      "examCount": 3,
-      "exams": [
-        "ibps-rrb",
-        "ibps-so",
-        "sbi-clerk"
-      ]
-    },
-    {
       "section": "Chemistry",
       "topic": "Some Basic Concepts in Chemistry",
       "questionCount": 10,
@@ -5664,17 +5675,6 @@
         "cusat-cat",
         "srmjeee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Quantitative Aptitude",
-      "topic": "Profit loss and discount",
-      "questionCount": 9,
-      "examCount": 3,
-      "exams": [
-        "ibps-rrb",
-        "ibps-so",
-        "sbi-clerk"
       ]
     },
     {
@@ -6477,7 +6477,7 @@
     },
     {
       "pattern": "blood relation generic opener",
-      "matchCount": 57,
+      "matchCount": 58,
       "examCount": 27,
       "exams": [
         "ca-foundation",
@@ -8107,6 +8107,20 @@
       ]
     },
     {
+      "opening": "in a class of 50 students",
+      "examCount": 8,
+      "exams": [
+        "lic-aao",
+        "rbi-assistant",
+        "rbi-grade",
+        "rpf-constable",
+        "rrb-group",
+        "sbi-clerk",
+        "slat-logical",
+        "ssc-cpo"
+      ]
+    },
+    {
       "opening": "what is the chemical symbol for",
       "examCount": 8,
       "exams": [
@@ -8248,6 +8262,19 @@
         "sbi-po",
         "srmjeee-2026",
         "ssc-chsl"
+      ]
+    },
+    {
+      "opening": "in how many ways can 5",
+      "examCount": 7,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "ibps-clerk",
+        "kcet-engineering",
+        "mht-cet",
+        "sbi-clerk",
+        "srmjeee-2026"
       ]
     },
     {
@@ -8550,19 +8577,6 @@
       ]
     },
     {
-      "opening": "in a class of 50 students",
-      "examCount": 7,
-      "exams": [
-        "lic-aao",
-        "rbi-assistant",
-        "rbi-grade",
-        "rpf-constable",
-        "rrb-group",
-        "slat-logical",
-        "ssc-cpo"
-      ]
-    },
-    {
       "opening": "who was the founder of the",
       "examCount": 7,
       "exams": [
@@ -8719,18 +8733,6 @@
         "jee-main",
         "special-ojee",
         "viteee-2026"
-      ]
-    },
-    {
-      "opening": "in how many ways can 5",
-      "examCount": 6,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "ibps-clerk",
-        "kcet-engineering",
-        "mht-cet",
-        "srmjeee-2026"
       ]
     },
     {

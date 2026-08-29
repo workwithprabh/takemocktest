@@ -151,6 +151,9 @@ import { SBI_CLERK_PRELIMS_REASONING_ABILITY_2 } from './question-banks/sbi-cler
 import { SBI_CLERK_MAINS_ENGLISH_1 } from './question-banks/sbi-clerk-mains-english-1';
 import { SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_1 } from './question-banks/sbi-clerk-mains-quantitative-aptitude-1';
 import { SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1 } from './question-banks/sbi-clerk-mains-reasoning-computer-aptitude-1';
+import { SBI_CLERK_MAINS_ENGLISH_2 } from './question-banks/sbi-clerk-mains-english-2';
+import { SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_2 } from './question-banks/sbi-clerk-mains-quantitative-aptitude-2';
+import { SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_2 } from './question-banks/sbi-clerk-mains-reasoning-computer-aptitude-2';
 import { RRB_JE_CBT1_MATHEMATICS_1 } from './question-banks/rrb-je-cbt1-mathematics-1';
 import { RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/rrb-je-cbt1-general-intelligence-reasoning-1';
 import { RRB_JE_CBT1_GENERAL_AWARENESS_1 } from './question-banks/rrb-je-cbt1-general-awareness-1';
@@ -1048,6 +1051,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-clerk/mains-english-sectional-1': SBI_CLERK_MAINS_ENGLISH_1,
   'sbi-clerk/mains-quantitative-aptitude-sectional-1': SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_1,
   'sbi-clerk/mains-reasoning-computer-aptitude-sectional-1': SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_1,
+  'sbi-clerk/mains-full-mock-2': [
+    ...SBI_CLERK_MAINS_ENGLISH_2,
+    ...SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_2,
+    ...SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_2,
+  ],
+  'sbi-clerk/mains-english-sectional-2': SBI_CLERK_MAINS_ENGLISH_2,
+  'sbi-clerk/mains-quantitative-aptitude-sectional-2': SBI_CLERK_MAINS_QUANTITATIVE_APTITUDE_2,
+  'sbi-clerk/mains-reasoning-computer-aptitude-sectional-2': SBI_CLERK_MAINS_REASONING_COMPUTER_APTITUDE_2,
   'rrb-je/cbt1-full-mock-1': [
     ...RRB_JE_CBT1_MATHEMATICS_1,
     ...RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
