@@ -126,6 +126,10 @@ import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_1 } from './question-banks/ib
 import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_1 } from './question-banks/ibps-rrb-office-assistant-mains-numerical-ability-1';
 import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1 } from './question-banks/ibps-rrb-office-assistant-mains-english-language-1';
 import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1 } from './question-banks/ibps-rrb-office-assistant-mains-computer-knowledge-1';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_2 } from './question-banks/ibps-rrb-office-assistant-mains-reasoning-2';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_2 } from './question-banks/ibps-rrb-office-assistant-mains-numerical-ability-2';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_2 } from './question-banks/ibps-rrb-office-assistant-mains-english-language-2';
+import { IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_2 } from './question-banks/ibps-rrb-office-assistant-mains-computer-knowledge-2';
 import { SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1 } from './question-banks/ssc-gd-constable-cbe-general-intelligence-reasoning-1';
 import { SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1 } from './question-banks/ssc-gd-constable-cbe-general-knowledge-awareness-1';
 import { SSC_GD_CONSTABLE_CBE_ELEMENTARY_MATHEMATICS_1 } from './question-banks/ssc-gd-constable-cbe-elementary-mathematics-1';
@@ -985,6 +989,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-rrb-office-assistant/mains-numerical-ability-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_1,
   'ibps-rrb-office-assistant/mains-computer-knowledge-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_1,
   'ibps-rrb-office-assistant/mains-english-language-sectional-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_1,
+  'ibps-rrb-office-assistant/mains-full-mock-2': [
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_2,
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_2,
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_2,
+    ...IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_2,
+  ],
+  'ibps-rrb-office-assistant/mains-reasoning-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_2,
+  'ibps-rrb-office-assistant/mains-numerical-ability-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_MAINS_NUMERICAL_ABILITY_2,
+  'ibps-rrb-office-assistant/mains-computer-knowledge-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_MAINS_COMPUTER_KNOWLEDGE_2,
+  'ibps-rrb-office-assistant/mains-english-language-sectional-2': IBPS_RRB_OFFICE_ASSISTANT_MAINS_ENGLISH_LANGUAGE_2,
   'ssc-gd-constable/cbe-full-mock-1': [
     ...SSC_GD_CONSTABLE_CBE_GENERAL_INTELLIGENCE_REASONING_1,
     ...SSC_GD_CONSTABLE_CBE_GENERAL_KNOWLEDGE_AWARENESS_1,
