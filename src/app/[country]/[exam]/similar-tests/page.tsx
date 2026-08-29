@@ -68,10 +68,10 @@ export default async function SimilarTestsPage({ params }: { params: Promise<{ c
 
       <div className="mt-6 border border-ink-200 bg-ink-50 p-5">
         <p className="text-sm leading-6 text-ink-700">
-          These tests draw from exams that share {exam.name}&apos;s exact Reasoning Ability spec — same marks per question, same negative marking, same time per question — confirmed from each exam&apos;s own official pattern, not assumed from a section name. They&apos;re sourced from {sourceExamNames.join(', ')}, all in the same Banking Prelims tier as {exam.name}.
+          These tests draw from exams whose Reasoning section shares {exam.name}&apos;s exact official spec for that test — same marks per question, same negative marking, same time per question — confirmed from each exam&apos;s own official pattern, not assumed from a section name. They&apos;re sourced from {sourceExamNames.join(', ')}.
         </p>
         <p className="mt-3 text-sm leading-6 text-ink-700">
-          <strong className="text-ink-900">Scoring stays {exam.name}&apos;s own:</strong> clicking into any test below still scores using {exam.name}&apos;s official marking scheme (+1 per correct answer, −0.25 per wrong answer, 20 minutes). Only the questions are shared — nothing about how this counts toward your {exam.name} prep changes.
+          <strong className="text-ink-900">Scoring stays {exam.name}&apos;s own:</strong> clicking into any test below still scores using the marking scheme shown on that test (matching {exam.name}&apos;s own official pattern for that section). Only the questions are shared — nothing about how this counts toward your {exam.name} prep changes.
         </p>
       </div>
 

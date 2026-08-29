@@ -1796,6 +1796,32 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'niacl-ao/prelims-reasoning-shared-rbi-assistant-2': RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_2,
   'niacl-ao/prelims-reasoning-shared-sbi-clerk-1': SBI_CLERK_PRELIMS_REASONING_ABILITY_1,
   'niacl-ao/prelims-reasoning-shared-sbi-clerk-2': SBI_CLERK_PRELIMS_REASONING_ABILITY_2,
+  // Four more cross-exam Reasoning-sharing clusters (see buildSharedReasoningTests
+  // in exams.ts): Railways CBT, RRB NTPC CBT-1/Group D, SSC Tier 2, IBPS RRB Prelims/Mains.
+  'rrb-ntpc/cbt-2-rwcbt-reasoning-shared-rpf-constable-1': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-ntpc/cbt-2-rwcbt-reasoning-shared-rpf-constable-2': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-ntpc/cbt-2-rwcbt-reasoning-shared-rpf-si-1': RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-ntpc/cbt-2-rwcbt-reasoning-shared-rpf-si-2': RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rpf-constable/cbt-rwcbt-reasoning-shared-rrb-ntpc-1': RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
+  'rpf-constable/cbt-rwcbt-reasoning-shared-rpf-si-1': RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'rpf-constable/cbt-rwcbt-reasoning-shared-rpf-si-2': RPF_SI_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rpf-si/cbt-rwcbt-reasoning-shared-rrb-ntpc-1': RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
+  'rpf-si/cbt-rwcbt-reasoning-shared-rpf-constable-1': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'rpf-si/cbt-rwcbt-reasoning-shared-rpf-constable-2': RPF_CONSTABLE_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-ntpc/cbt-1-rwcbt1-reasoning-shared-rrb-group-d-1': RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-ntpc/cbt-1-rwcbt1-reasoning-shared-rrb-group-d-2': RRB_GROUP_D_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-group-d/cbt-rwcbt1-reasoning-shared-rrb-ntpc-1': RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
+  'rrb-group-d/cbt-rwcbt1-reasoning-shared-rrb-ntpc-2': RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2,
+  'ssc-cgl/tier-2-ssct2-reasoning-shared-ssc-chsl-1': SSC_CHSL_TIER2_REASONING_GENERAL_INTELLIGENCE_1,
+  'ssc-chsl/tier-2-ssct2-reasoning-shared-ssc-cgl-1': SSC_CGL_TIER2_REASONING_1,
+  'ssc-chsl/tier-2-ssct2-reasoning-shared-ssc-cgl-2': SSC_CGL_TIER2_REASONING_2,
+  'ssc-chsl/tier-2-ssct2-reasoning-shared-ssc-cgl-3': SSC_CGL_TIER2_REASONING_3,
+  'ibps-rrb-office-assistant/prelims-ibpsrrbp-reasoning-shared-ibps-rrb-officer-scale-1-1': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_1,
+  'ibps-rrb-office-assistant/prelims-ibpsrrbp-reasoning-shared-ibps-rrb-officer-scale-1-2': IBPS_RRB_OFFICER_SCALE_1_PRELIMS_REASONING_2,
+  'ibps-rrb-officer-scale-1/prelims-ibpsrrbp-reasoning-shared-ibps-rrb-office-assistant-1': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_1,
+  'ibps-rrb-officer-scale-1/prelims-ibpsrrbp-reasoning-shared-ibps-rrb-office-assistant-2': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_2,
+  'ibps-rrb-office-assistant/mains-ibpsrrbm-reasoning-shared-ibps-rrb-officer-scale-1-1': IBPS_RRB_OFFICER_SCALE_1_MAINS_REASONING_1,
+  'ibps-rrb-officer-scale-1/mains-ibpsrrbm-reasoning-shared-ibps-rrb-office-assistant-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_1,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -2316,6 +2342,29 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
   const isGenerated = GENERATED_TEST_ID_MARKERS.some((marker) => testId.includes(marker));
   const expectedCount = isGenerated
     ? questions.length
+    // Cross-exam Reasoning-sharing clusters (see buildSharedReasoningTests /
+    // sharedReasoningTests in exams.ts): checked at the very top of this
+    // chain, before any bare per-exam catch-all, since these test IDs embed
+    // a source exam's slug (e.g. 'rrb-ntpc', 'sbi-po') that would otherwise
+    // false-positive match that exam's own catch-all further down — several
+    // of which sit surprisingly early in this chain. Each cluster uses a
+    // distinct idInfix so none of these six branches can collide with each
+    // other. sbi-po needs its own branch (30, not the Banking cluster's
+    // otherwise-uniform 35) since its own native banks are 30 questions.
+    : testId.includes('prelims-reasoning-shared-sbi-po')
+    ? 30
+    : testId.includes('prelims-reasoning-shared')
+    ? 35
+    : testId.includes('rwcbt-reasoning-shared')
+    ? 35
+    : testId.includes('rwcbt1-reasoning-shared')
+    ? 30
+    : testId.includes('ssct2-reasoning-shared')
+    ? 30
+    : testId.includes('ibpsrrbp-reasoning-shared')
+    ? 40
+    : testId.includes('ibpsrrbm-reasoning-shared')
+    ? 40
     : testId.includes('ssc-mts/cbt-full-mock')
     ? 90
     : testId.includes('ssc-mts')
@@ -2860,14 +2909,6 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
         ? testId.includes('general-awareness') ? 50
           : testId.includes('english-language') ? 40
             : testId.includes('data-analysis-interpretation') ? 40 : 40
-        // Cross-exam Reasoning-sharing cluster: checked before the bare
-        // per-exam catch-alls below, since these test IDs embed a source
-        // exam slug (e.g. 'sbi-po') that would otherwise false-positive
-        // match an unrelated exam's own catch-all branch.
-        : testId.includes('prelims-reasoning-shared-sbi-po')
-          ? 30
-          : testId.includes('prelims-reasoning-shared')
-            ? 35
         : testId.includes('ibps-po')
           ? testId.includes('english-language') ? 30 : 35
           : testId.includes('ibps-clerk')

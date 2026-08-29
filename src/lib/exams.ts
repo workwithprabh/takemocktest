@@ -342,10 +342,6 @@ const REASONING_SHARE_SOURCES: { exam: ExamSlug; examName: string; bankTestCount
   { exam: 'sbi-clerk', examName: 'SBI Clerk', bankTestCount: 2 },
   { exam: 'niacl-ao', examName: 'NIACL AO', bankTestCount: 2 },
 ];
-// Exported for the "Explore Similar Tests" page (generateStaticParams + the
-// CTA's visibility check on the main mock-test hub — only these six exams
-// show that link).
-export const REASONING_SHARE_RECEIVERS: ExamSlug[] = ['ibps-po', 'ibps-clerk', 'sbi-po', 'rbi-assistant', 'sbi-clerk', 'niacl-ao'];
 
 function sharedReasoningTests(forExam: ExamSlug): TestConfig[] {
   const tests: TestConfig[] = [];
@@ -369,6 +365,130 @@ function sharedReasoningTests(forExam: ExamSlug): TestConfig[] {
   }
   return tests;
 }
+
+// Generalized version of the pattern above, for four more verified clusters
+// (Railways CBT; RRB NTPC CBT-1 + Group D; SSC Tier 2; IBPS RRB Prelims and
+// Mains) found via a full scan of all exams' official Reasoning specs, each
+// confirmed against actual per-question data (not just TestConfig defaults)
+// before wiring — the same discipline that caught IBPS PO's per-question
+// override above. `idInfix` is a token unique to each cluster, embedded in
+// every generated test ID, so the runtime expectedCount validator (see
+// questions.ts) can distinguish clusters by substring without any risk of
+// colliding with `prelims-reasoning-shared` (the Banking cluster's own
+// infix) or with each other.
+interface ReasoningCluster {
+  idInfix: string;
+  clusterLabel: string;
+  section: string;
+  duration: number;
+  marksPerCorrect: number;
+  negativeMarking: number;
+  members: { exam: ExamSlug; examName: string; bankTestCount: number; testIdPrefix: string }[];
+}
+
+function buildSharedReasoningTests(cluster: ReasoningCluster, forExam: ExamSlug): TestConfig[] {
+  const forExamPrefix = cluster.members.find((m) => m.exam === forExam)?.testIdPrefix;
+  if (!forExamPrefix) return [];
+  const tests: TestConfig[] = [];
+  for (const { exam, examName, bankTestCount } of cluster.members) {
+    if (exam === forExam) continue;
+    for (let n = 1; n <= bankTestCount; n++) {
+      tests.push({
+        id: `${forExamPrefix}-${cluster.idInfix}-${exam}-${n}`,
+        name: `${cluster.section} Practice (${examName} Bank) ${n}`,
+        kind: 'sectional',
+        status: 'checked',
+        section: cluster.section,
+        duration: cluster.duration,
+        marksPerCorrect: cluster.marksPerCorrect,
+        negativeMarking: cluster.negativeMarking,
+        sharedFrom: exam,
+        scoringNote: `This test draws from ${examName}'s own ${cluster.section} sectional bank, since pure logical-reasoning content is not tied to one exam's specific syllabus the way Quantitative Aptitude, English, or General Awareness are. This ${cluster.clusterLabel} cluster shares an identical Reasoning spec (${cluster.marksPerCorrect} mark${cluster.marksPerCorrect === 1 ? '' : 's'} per correct answer, ${cluster.negativeMarking} negative marking, ${cluster.duration} minutes); marks and timing here match this exam's own official pattern exactly.`,
+        checkedOn: '29 August 2026',
+      });
+    }
+  }
+  return tests;
+}
+
+const RAILWAYS_CBT_CLUSTER: ReasoningCluster = {
+  idInfix: 'rwcbt-reasoning-shared',
+  clusterLabel: 'Railways CBT',
+  section: 'General Intelligence and Reasoning',
+  duration: 26,
+  marksPerCorrect: 1,
+  negativeMarking: 0.333,
+  members: [
+    { exam: 'rrb-ntpc', examName: 'RRB NTPC', bankTestCount: 1, testIdPrefix: 'cbt-2' },
+    { exam: 'rpf-constable', examName: 'RPF Constable', bankTestCount: 2, testIdPrefix: 'cbt' },
+    { exam: 'rpf-si', examName: 'RPF SI', bankTestCount: 2, testIdPrefix: 'cbt' },
+  ],
+};
+
+const RRB_NTPC_CBT1_GROUP_D_CLUSTER: ReasoningCluster = {
+  idInfix: 'rwcbt1-reasoning-shared',
+  clusterLabel: 'RRB NTPC CBT-1 / Group D',
+  section: 'General Intelligence and Reasoning',
+  duration: 27,
+  marksPerCorrect: 1,
+  negativeMarking: 0.333,
+  members: [
+    { exam: 'rrb-ntpc', examName: 'RRB NTPC', bankTestCount: 2, testIdPrefix: 'cbt-1' },
+    { exam: 'rrb-group-d', examName: 'RRB Group D', bankTestCount: 2, testIdPrefix: 'cbt' },
+  ],
+};
+
+const SSC_TIER2_REASONING_CLUSTER: ReasoningCluster = {
+  idInfix: 'ssct2-reasoning-shared',
+  clusterLabel: 'SSC Tier 2',
+  section: 'Reasoning and General Intelligence',
+  duration: 30,
+  marksPerCorrect: 3,
+  negativeMarking: 1,
+  members: [
+    { exam: 'ssc-cgl', examName: 'SSC CGL', bankTestCount: 3, testIdPrefix: 'tier-2' },
+    { exam: 'ssc-chsl', examName: 'SSC CHSL', bankTestCount: 1, testIdPrefix: 'tier-2' },
+  ],
+};
+
+const IBPS_RRB_PRELIMS_REASONING_CLUSTER: ReasoningCluster = {
+  idInfix: 'ibpsrrbp-reasoning-shared',
+  clusterLabel: 'IBPS RRB Prelims',
+  section: 'Reasoning',
+  duration: 25,
+  marksPerCorrect: 1,
+  negativeMarking: 0.25,
+  members: [
+    { exam: 'ibps-rrb-office-assistant', examName: 'IBPS RRB Office Assistant', bankTestCount: 2, testIdPrefix: 'prelims' },
+    { exam: 'ibps-rrb-officer-scale-1', examName: 'IBPS RRB Officer Scale 1', bankTestCount: 2, testIdPrefix: 'prelims' },
+  ],
+};
+
+const IBPS_RRB_MAINS_REASONING_CLUSTER: ReasoningCluster = {
+  idInfix: 'ibpsrrbm-reasoning-shared',
+  clusterLabel: 'IBPS RRB Mains',
+  section: 'Reasoning',
+  duration: 30,
+  marksPerCorrect: 1.25,
+  negativeMarking: 0.3125,
+  members: [
+    { exam: 'ibps-rrb-office-assistant', examName: 'IBPS RRB Office Assistant', bankTestCount: 1, testIdPrefix: 'mains' },
+    { exam: 'ibps-rrb-officer-scale-1', examName: 'IBPS RRB Officer Scale 1', bankTestCount: 1, testIdPrefix: 'mains' },
+  ],
+};
+
+// Exported for the "Explore Similar Tests" page (generateStaticParams) and
+// documentation purposes. The page's own CTA-visibility check on the main
+// mock-test hub uses `getSharedTests(exam).length > 0` generically instead,
+// so it needs no update as more clusters are added — only this list (used
+// solely for static-path generation) has to stay in sync with the clusters
+// defined above.
+export const REASONING_SHARE_RECEIVERS: ExamSlug[] = [
+  'ibps-po', 'ibps-clerk', 'sbi-po', 'rbi-assistant', 'sbi-clerk', 'niacl-ao',
+  'rrb-ntpc', 'rpf-constable', 'rpf-si', 'rrb-group-d',
+  'ssc-cgl', 'ssc-chsl',
+  'ibps-rrb-office-assistant', 'ibps-rrb-officer-scale-1',
+];
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -1113,6 +1233,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 1,
             checkedOn: '3 August 2026',
           },
+          ...buildSharedReasoningTests(SSC_TIER2_REASONING_CLUSTER, 'ssc-cgl'),
         ],
       },
     ],
@@ -1538,6 +1659,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '22 August 2026',
           },
+          ...buildSharedReasoningTests(RRB_NTPC_CBT1_GROUP_D_CLUSTER, 'rrb-ntpc'),
         ],
       },
       {
@@ -1595,6 +1717,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '26 August 2026',
           },
+          ...buildSharedReasoningTests(RAILWAYS_CBT_CLUSTER, 'rrb-ntpc'),
         ],
       },
     ],
@@ -1832,6 +1955,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 1,
             checkedOn: '27 August 2026',
           },
+          ...buildSharedReasoningTests(SSC_TIER2_REASONING_CLUSTER, 'ssc-chsl'),
         ],
       },
     ],
@@ -2187,6 +2311,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '22 August 2026',
           },
+          ...buildSharedReasoningTests(RRB_NTPC_CBT1_GROUP_D_CLUSTER, 'rrb-group-d'),
         ],
       },
     ],
@@ -2945,6 +3070,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '4 August 2026',
           },
+          ...buildSharedReasoningTests(IBPS_RRB_PRELIMS_REASONING_CLUSTER, 'ibps-rrb-office-assistant'),
         ],
       },
       {
@@ -3026,6 +3152,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '27 August 2026',
           },
+          ...buildSharedReasoningTests(IBPS_RRB_MAINS_REASONING_CLUSTER, 'ibps-rrb-office-assistant'),
         ],
       },
     ],
@@ -3301,6 +3428,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '5 August 2026',
           },
+          ...buildSharedReasoningTests(IBPS_RRB_PRELIMS_REASONING_CLUSTER, 'ibps-rrb-officer-scale-1'),
         ],
       },
       {
@@ -3382,6 +3510,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '27 August 2026',
           },
+          ...buildSharedReasoningTests(IBPS_RRB_MAINS_REASONING_CLUSTER, 'ibps-rrb-officer-scale-1'),
         ],
       },
     ],
@@ -5969,6 +6098,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '22 August 2026',
           },
+          ...buildSharedReasoningTests(RAILWAYS_CBT_CLUSTER, 'rpf-constable'),
         ],
       },
     ],
@@ -6087,6 +6217,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '22 August 2026',
           },
+          ...buildSharedReasoningTests(RAILWAYS_CBT_CLUSTER, 'rpf-si'),
         ],
       },
     ],
