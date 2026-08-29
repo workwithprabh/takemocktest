@@ -93,6 +93,9 @@ import { SBI_PO_PRELIMS_REASONING_ABILITY_3 } from './question-banks/sbi-po-prel
 import { SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_1 } from './question-banks/sbi-po-mains-reasoning-computer-aptitude-1';
 import { SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1 } from './question-banks/sbi-po-mains-data-analysis-interpretation-1';
 import { SBI_PO_MAINS_ENGLISH_1 } from './question-banks/sbi-po-mains-english-1';
+import { SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_2 } from './question-banks/sbi-po-mains-reasoning-computer-aptitude-2';
+import { SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_2 } from './question-banks/sbi-po-mains-data-analysis-interpretation-2';
+import { SBI_PO_MAINS_ENGLISH_2 } from './question-banks/sbi-po-mains-english-2';
 import { RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1 } from './question-banks/rbi-assistant-prelims-english-language-1';
 import { RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1 } from './question-banks/rbi-assistant-prelims-numerical-ability-1';
 import { RBI_ASSISTANT_PRELIMS_REASONING_ABILITY_1 } from './question-banks/rbi-assistant-prelims-reasoning-ability-1';
@@ -889,6 +892,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'sbi-po/mains-reasoning-computer-aptitude-sectional-1': SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_1,
   'sbi-po/mains-data-analysis-interpretation-sectional-1': SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_1,
   'sbi-po/mains-english-language-sectional-1': SBI_PO_MAINS_ENGLISH_1,
+  'sbi-po/mains-full-mock-2': [
+    ...SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_2,
+    ...SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_2,
+    ...SBI_PO_MAINS_ENGLISH_2,
+  ],
+  'sbi-po/mains-reasoning-computer-aptitude-sectional-2': SBI_PO_MAINS_REASONING_COMPUTER_APTITUDE_2,
+  'sbi-po/mains-data-analysis-interpretation-sectional-2': SBI_PO_MAINS_DATA_ANALYSIS_INTERPRETATION_2,
+  'sbi-po/mains-english-language-sectional-2': SBI_PO_MAINS_ENGLISH_2,
   'rbi-assistant/prelims-full-mock-1': [
     ...RBI_ASSISTANT_PRELIMS_ENGLISH_LANGUAGE_1,
     ...RBI_ASSISTANT_PRELIMS_NUMERICAL_ABILITY_1,
