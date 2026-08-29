@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-29",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 610,
-    "questions": 22829
+    "bankFiles": 612,
+    "questions": 22889
   },
   "topicSaturation": [
     {
@@ -2815,6 +2815,21 @@
       ]
     },
     {
+      "section": "Reasoning Ability",
+      "topic": "Coding-decoding",
+      "questionCount": 74,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
+      ]
+    },
+    {
       "section": "Reasoning",
       "topic": "Blood relations",
       "questionCount": 73,
@@ -2827,21 +2842,6 @@
         "niacl-ao",
         "rbi-grade",
         "territorial-army"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Coding-decoding",
-      "questionCount": 71,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
       ]
     },
     {
@@ -2876,6 +2876,21 @@
     },
     {
       "section": "Reasoning Ability",
+      "topic": "Blood relations",
+      "questionCount": 65,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
       "topic": "Number series",
       "questionCount": 64,
       "examCount": 7,
@@ -2891,8 +2906,23 @@
     },
     {
       "section": "Reasoning Ability",
-      "topic": "Blood relations",
-      "questionCount": 63,
+      "topic": "Direction sense",
+      "questionCount": 58,
+      "examCount": 7,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Syllogism",
+      "questionCount": 58,
       "examCount": 7,
       "exams": [
         "ibps-clerk",
@@ -2920,21 +2950,6 @@
       ]
     },
     {
-      "section": "Reasoning Ability",
-      "topic": "Direction sense",
-      "questionCount": 56,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
-      ]
-    },
-    {
       "section": "English Language",
       "topic": "Synonyms",
       "questionCount": 56,
@@ -2947,21 +2962,6 @@
         "rbi-grade",
         "sebi-grade",
         "sidbi-grade"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Syllogism",
-      "questionCount": 55,
-      "examCount": 7,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
       ]
     },
     {
@@ -3356,7 +3356,7 @@
     {
       "section": "Reasoning Ability",
       "topic": "Ranking",
-      "questionCount": 49,
+      "questionCount": 51,
       "examCount": 6,
       "exams": [
         "ibps-clerk",
@@ -3438,6 +3438,20 @@
       ]
     },
     {
+      "section": "Reasoning Ability",
+      "topic": "Puzzle",
+      "questionCount": 32,
+      "examCount": 6,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
+      ]
+    },
+    {
       "section": "Reasoning",
       "topic": "Seating arrangement",
       "questionCount": 32,
@@ -3463,6 +3477,20 @@
         "ibps-so",
         "sbi-clerk",
         "ssc-cgl"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Alphanumeric series",
+      "questionCount": 31,
+      "examCount": 6,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "lic-aao",
+        "rbi-assistant",
+        "sbi-clerk",
+        "sbi-po"
       ]
     },
     {
@@ -3536,20 +3564,6 @@
       ]
     },
     {
-      "section": "Reasoning Ability",
-      "topic": "Alphanumeric series",
-      "questionCount": 28,
-      "examCount": 6,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
-      ]
-    },
-    {
       "section": "Mathematics",
       "topic": "Statistics and Probability",
       "questionCount": 27,
@@ -3575,20 +3589,6 @@
         "cg-pet",
         "mht-cet",
         "tg-eapcet"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Puzzle",
-      "questionCount": 24,
-      "examCount": 6,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "lic-aao",
-        "rbi-assistant",
-        "sbi-clerk",
-        "sbi-po"
       ]
     },
     {
@@ -4661,6 +4661,18 @@
       ]
     },
     {
+      "section": "Reasoning Ability",
+      "topic": "Inequality",
+      "questionCount": 23,
+      "examCount": 4,
+      "exams": [
+        "lic-aao",
+        "niacl-ao",
+        "rbi-assistant",
+        "sbi-clerk"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Limit, Continuity and Differentiability",
       "questionCount": 22,
@@ -4706,18 +4718,6 @@
         "tg-eapcet",
         "upeseat-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Inequality",
-      "questionCount": 20,
-      "examCount": 4,
-      "exams": [
-        "lic-aao",
-        "niacl-ao",
-        "rbi-assistant",
-        "sbi-clerk"
       ]
     },
     {
@@ -5425,6 +5425,28 @@
       ]
     },
     {
+      "section": "Reasoning Ability",
+      "topic": "Alphabet test",
+      "questionCount": 13,
+      "examCount": 3,
+      "exams": [
+        "ibps-po",
+        "lic-aao",
+        "rbi-assistant"
+      ]
+    },
+    {
+      "section": "Reasoning Ability",
+      "topic": "Data sufficiency",
+      "questionCount": 13,
+      "examCount": 3,
+      "exams": [
+        "ibps-po",
+        "lic-aao",
+        "rbi-assistant"
+      ]
+    },
+    {
       "section": "Quantitative Aptitude",
       "topic": "Trigonometry",
       "questionCount": 13,
@@ -5510,28 +5532,6 @@
         "cds-elementary",
         "rpf-constable",
         "rpf-si"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Alphabet test",
-      "questionCount": 11,
-      "examCount": 3,
-      "exams": [
-        "ibps-po",
-        "lic-aao",
-        "rbi-assistant"
-      ]
-    },
-    {
-      "section": "Reasoning Ability",
-      "topic": "Data sufficiency",
-      "questionCount": 11,
-      "examCount": 3,
-      "exams": [
-        "ibps-po",
-        "lic-aao",
-        "rbi-assistant"
       ]
     },
     {
@@ -8094,20 +8094,6 @@
       ]
     },
     {
-      "opening": "five friends p q r s",
-      "examCount": 8,
-      "exams": [
-        "lic-aao",
-        "mat-language",
-        "rbi-assistant",
-        "rpf-constable",
-        "rpf-si",
-        "sbi-po",
-        "ssc-chsl",
-        "ssc-cpo"
-      ]
-    },
-    {
       "opening": "in a class of 50 students",
       "examCount": 8,
       "exams": [
@@ -8118,6 +8104,20 @@
         "rrb-group",
         "sbi-clerk",
         "slat-logical",
+        "ssc-cpo"
+      ]
+    },
+    {
+      "opening": "five friends p q r s",
+      "examCount": 8,
+      "exams": [
+        "lic-aao",
+        "mat-language",
+        "rbi-assistant",
+        "rpf-constable",
+        "rpf-si",
+        "sbi-po",
+        "ssc-chsl",
         "ssc-cpo"
       ]
     },
