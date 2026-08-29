@@ -1670,6 +1670,18 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.5,
             checkedOn: '22 August 2026',
           },
+          {
+            id: 'tier-1-general-intelligence-sectional-3',
+            name: 'General Intelligence Sectional Test 3',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Intelligence',
+            duration: 15,
+            marksPerCorrect: 2,
+            negativeMarking: 0.5,
+            scoringNote: 'This sectional draws from a shared Reasoning practice bank also used for SSC CGL: pure logical-reasoning content (number series, coding-decoding, syllogism, and similar) is not tied to one exam\'s specific syllabus the way Quantitative Aptitude, English, or General Awareness are. Marks, timing, and negative marking match SSC CHSL\'s own official Tier 1 pattern exactly.',
+            checkedOn: '29 August 2026',
+          },
         ],
       },
       {

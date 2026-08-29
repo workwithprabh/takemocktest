@@ -777,6 +777,15 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ssc-chsl/tier-1-general-awareness-sectional-2': SSC_CHSL_TIER1_GENERAL_AWARENESS_2,
   'ssc-chsl/tier-1-quantitative-aptitude-sectional-2': SSC_CHSL_TIER1_QUANTITATIVE_APTITUDE_2,
   'ssc-chsl/tier-1-english-language-sectional-2': SSC_CHSL_TIER1_ENGLISH_LANGUAGE_2,
+  // Cross-exam Reasoning-sharing pilot: reuses SSC CGL Tier 1's Reasoning
+  // Sectional 3 bank rather than duplicating new content, since pure
+  // logical-reasoning questions (series, coding-decoding, syllogism) are not
+  // tied to either exam's specific syllabus the way Quant/GA/English are.
+  // Section label remapped to CHSL's own naming ("General Intelligence", not
+  // CGL's "General Intelligence and Reasoning"); every other field (IDs,
+  // question text, options, explanations) is untouched. See the test's
+  // scoringNote in exams.ts for the disclosure shown to students.
+  'ssc-chsl/tier-1-general-intelligence-sectional-3': SSC_CGL_TIER1_REASONING_3.map((question) => ({ ...question, section: 'General Intelligence' })),
   'ssc-chsl/tier-2-full-mock-1': [
     ...SSC_CHSL_TIER2_MATHEMATICAL_ABILITIES_1,
     ...SSC_CHSL_TIER2_REASONING_GENERAL_INTELLIGENCE_1,
