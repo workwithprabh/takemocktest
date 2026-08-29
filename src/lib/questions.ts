@@ -152,6 +152,9 @@ import { RRB_JE_CBT1_GENERAL_SCIENCE_2 } from './question-banks/rrb-je-cbt1-gene
 import { RRB_JE_CBT2_PHYSICS_CHEMISTRY_1 } from './question-banks/rrb-je-cbt2-physics-chemistry-1';
 import { RRB_JE_CBT2_COMPUTERS_1 } from './question-banks/rrb-je-cbt2-computers-1';
 import { RRB_JE_CBT2_ENVIRONMENT_1 } from './question-banks/rrb-je-cbt2-environment-1';
+import { RRB_JE_CBT2_PHYSICS_CHEMISTRY_2 } from './question-banks/rrb-je-cbt2-physics-chemistry-2';
+import { RRB_JE_CBT2_COMPUTERS_2 } from './question-banks/rrb-je-cbt2-computers-2';
+import { RRB_JE_CBT2_ENVIRONMENT_2 } from './question-banks/rrb-je-cbt2-environment-2';
 import { RRB_JE_CBT2_TECHNICAL_CIVIL_1 } from './question-banks/rrb-je-cbt2-technical-civil-1';
 import { RRB_JE_CBT2_TECHNICAL_MECHANICAL_1 } from './question-banks/rrb-je-cbt2-technical-mechanical-1';
 import { UPSC_CSE_PAPER_1_HISTORY_1 } from './question-banks/upsc-cse-paper-1-history-1';
@@ -1046,6 +1049,21 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-je/cbt2-physics-chemistry-sectional-1': RRB_JE_CBT2_PHYSICS_CHEMISTRY_1,
   'rrb-je/cbt2-computers-sectional-1': RRB_JE_CBT2_COMPUTERS_1,
   'rrb-je/cbt2-environment-sectional-1': RRB_JE_CBT2_ENVIRONMENT_1,
+  'rrb-je/cbt2-full-mock-civil-2': [
+    ...RRB_JE_CBT2_TECHNICAL_CIVIL_1,
+    ...RRB_JE_CBT2_PHYSICS_CHEMISTRY_2,
+    ...RRB_JE_CBT2_COMPUTERS_2,
+    ...RRB_JE_CBT2_ENVIRONMENT_2,
+  ],
+  'rrb-je/cbt2-full-mock-mechanical-2': [
+    ...RRB_JE_CBT2_TECHNICAL_MECHANICAL_1,
+    ...RRB_JE_CBT2_PHYSICS_CHEMISTRY_2,
+    ...RRB_JE_CBT2_COMPUTERS_2,
+    ...RRB_JE_CBT2_ENVIRONMENT_2,
+  ],
+  'rrb-je/cbt2-physics-chemistry-sectional-2': RRB_JE_CBT2_PHYSICS_CHEMISTRY_2,
+  'rrb-je/cbt2-computers-sectional-2': RRB_JE_CBT2_COMPUTERS_2,
+  'rrb-je/cbt2-environment-sectional-2': RRB_JE_CBT2_ENVIRONMENT_2,
   'upsc-cse/paper-1-full-mock-1': [
     ...UPSC_CSE_PAPER_1_HISTORY_1,
     ...UPSC_CSE_PAPER_1_GEOGRAPHY_1,

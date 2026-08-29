@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-29 from 586 bank files / 21934 questions.
+Generated: 2026-08-29 from 589 bank files / 21969 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -79,7 +79,7 @@ These stem patterns have caused real duplication on this project before (within 
 |---|---:|---|---|
 | odd-one-out / classification | 12 | atma-analytical, jipmat-qa, kmat-karnataka, rpf-si, rrb-alp, rrb-technician | high |
 | spelling correction | 56 | afcat-verbal, agniveer-vayu, ailet-english, bits-hd, cds-english, ibps-clerk, ibps-po, ibps-so, inet-english, jain-jet, lic-aao, mh-cet, nabard-grade, navy-ssr, nda-general, niacl-ao, rbi-assistant, rbi-grade, sbi-po, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, territorial-army | high |
-| SI unit lookup | 56 | ap-eapcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
+| SI unit lookup | 60 | ap-eapcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
 | capital-city lookup | 10 | niacl-ao, rrb-ntpc, rrb-technician, ssc-cgl, ssc-gd, ssc-selection, upsc-cse | high |
 | currency lookup | 4 | niacl-ao, rrb-je, ssc-gd | high |
 | synonym/antonym instruction | 364 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, cmat-qtdi, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, inet-english, jain-jet, jipmat-qa, kmat-karnataka, lic-aao, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-selection, ssc-steno, tancet-mba, territorial-army, upeseat-2026 | high |
@@ -107,11 +107,11 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a fair die is rolled once | aeee-2026, bcece-2026, ca-foundation, cg-pet, cusat-cat, ibps-clerk, ibps-po, met-2026, mht-cet, rbi-assistant, srmjeee-2026, ssc-cgl, ssc-selection, viteee-2026 (14) |
 | choose the word most opposite in | ibps-rrb, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, ssc-cpo, ssc-gd, ssc-mts, ssc-steno (14) |
 | which of the following best describes | bitsat-2026, ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, rbi-assistant, rbi-grade, rrb-technician, sbi-po, sidbi-grade, srmjeee-2026, ssc-je, wbjee-engineering (13) |
+| which of the following is an | comedk-uget, ibps-rrb, kcet-engineering, nabard-grade, rbi-grade, rrb-alp, rrb-je, rrb-technician, sbi-clerk, sbi-po, ssc-cgl, ssc-chsl, viteee-2026 (13) |
 | if a 1 2 3 4 | aeee-2026, agniveer-vayu, assam-cee, cg-pet, comedk-uget, gujcet-2026, jain-jet, kcet-engineering, mht-cet, nata-mathematics, srmjeee-2026, tg-eapcet (12) |
 | what is the maximum number of | aeee-2026, amu-btech, ap-eapcet, bitsat-2026, jee-main, kcet-engineering, mht-cet, srmjeee-2026, ssc-cgl, ssc-mts, viteee-2026, wbjee-engineering (12) |
 | a can complete a job in | aeee-2026, cds-elementary, ibps-clerk, ibps-rrb, ibps-so, lic-aao, niacl-ao, rbi-assistant, rrb-ntpc, sbi-po, srmjeee-2026, ssc-cgl (12) |
 | find the sum of the first | ca-foundation, cma-foundation, ibsat-verbal, jee-main, met-2026, nabard-grade, rbi-grade, rrb-technician, sebi-grade, sidbi-grade, ssc-chsl, ssc-cpo (12) |
-| which of the following is an | comedk-uget, ibps-rrb, kcet-engineering, nabard-grade, rbi-grade, rrb-alp, rrb-technician, sbi-clerk, sbi-po, ssc-cgl, ssc-chsl, viteee-2026 (12) |
 | what is the slope of the | act-math, aeee-2026, jain-jet, jee-main, kcet-engineering, met-2026, mht-cet, nmims-cet, sat-math, srmjeee-2026, viteee-2026 (11) |
 | a 4 kg block on a | aeee-2026, ap-eapcet, cg-pet, cusat-cat, iiit-hyderabad, kcet-engineering, mht-cet, saeee-2026, srmjeee-2026, tg-eapcet, wbjee-engineering (11) |
 | in the bohr model of hydrogen | aeee-2026, ap-eapcet, bcece-2026, bv-btech, cg-pet, gujcet-2026, jee-advanced, kcet-engineering, mht-cet, srmjeee-2026, tg-eapcet (11) |

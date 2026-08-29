@@ -2,8 +2,8 @@
   "generatedAt": "2026-08-29",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 586,
-    "questions": 21934
+    "bankFiles": 589,
+    "questions": 21969
   },
   "topicSaturation": [
     {
@@ -6376,7 +6376,7 @@
     },
     {
       "pattern": "SI unit lookup",
-      "matchCount": 56,
+      "matchCount": 60,
       "examCount": 17,
       "exams": [
         "ap-eapcet",
@@ -6920,6 +6920,25 @@
       ]
     },
     {
+      "opening": "which of the following is an",
+      "examCount": 13,
+      "exams": [
+        "comedk-uget",
+        "ibps-rrb",
+        "kcet-engineering",
+        "nabard-grade",
+        "rbi-grade",
+        "rrb-alp",
+        "rrb-je",
+        "rrb-technician",
+        "sbi-clerk",
+        "sbi-po",
+        "ssc-cgl",
+        "ssc-chsl",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "if a 1 2 3 4",
       "examCount": 12,
       "exams": [
@@ -6989,24 +7008,6 @@
         "sidbi-grade",
         "ssc-chsl",
         "ssc-cpo"
-      ]
-    },
-    {
-      "opening": "which of the following is an",
-      "examCount": 12,
-      "exams": [
-        "comedk-uget",
-        "ibps-rrb",
-        "kcet-engineering",
-        "nabard-grade",
-        "rbi-grade",
-        "rrb-alp",
-        "rrb-technician",
-        "sbi-clerk",
-        "sbi-po",
-        "ssc-cgl",
-        "ssc-chsl",
-        "viteee-2026"
       ]
     },
     {
