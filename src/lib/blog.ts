@@ -283,6 +283,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/sectional-lock-vs-composite-timer.webp',
+      alt: 'Indian student practicing a timed mock test with a sectional timer and stopwatch',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Sectional lock and composite timer are the two timing formats you\'ll run into on this site: roughly nine exams use a sectional lock, locking you into each section with its own individual clock, while about twelve use a composite timer, one combined clock for the entire paper that lets you move between sections however you like. Mixing up which one your exam uses (and practicing for the wrong one) is a common, avoidable mistake.' },
       { type: 'takeaways', items: [
@@ -322,6 +328,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/qualifying-vs-merit-sections-banking-exams.webp',
+      alt: 'Banking exam aspirant comparing qualifying and merit mock-test sections',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'It\'s common knowledge that Prelims is usually "qualifying" and Mains decides the real merit list. [SBI PO Prelims](/sbi-po/exam-pattern), for instance, works exactly this way. Less well known is that a few exams split qualifying and merit *within a single paper*, and getting this wrong wastes hours of preparation on sections that were never going to move your rank.' },
       { type: 'takeaways', items: [
@@ -352,6 +364,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 8,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/beginners-guide-banking-exams-india.webp',
+      alt: 'Indian student organizing a beginner study plan for banking exams',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'If you\'ve searched "best bank exam for beginners," you\'ve probably seen IBPS, SBI, and RBI mentioned as if picking between them is a single decision. It isn\'t: they sit at different levels, recruit differently, and (once you go past the clerk/PO tier) test genuinely different subject knowledge. This site currently hosts mock tests for twelve banking-family exams; here\'s how they actually fit together.' },
       { type: 'takeaways', items: [
@@ -382,6 +400,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-vs-banking-vs-railways.webp',
+      alt: 'Indian aspirant comparing SSC, banking, and railway exam pathways',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC, Banking, and Railways are the three most common entry points into a government career in India, and most comparisons stop at job perks: pay, postings, travel benefits. Less discussed is that the exams themselves test you in genuinely different ways, and that difference is worth weighing before you commit months of preparation to one.' },
       { type: 'table', heading: 'SSC vs Banking vs Railways at a glance', headers: ['', 'Typical timer', 'Tests General Awareness?'], rows: [
@@ -411,6 +435,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 8,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/rbi-nabard-sebi-sidbi-exam-comparison.webp',
+      alt: 'Indian aspirant comparing finance and development regulator exam paths',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'RBI Grade B, NABARD Grade A, SEBI Grade A, and SIDBI Grade A & B sit a level above the clerk/PO banking tier: all four are direct-recruit officer roles at a financial regulator or development bank, and their Phase I syllabi overlap enough that many aspirants prepare for more than one at once.' },
       { type: 'table', heading: 'Phase I structure at a glance', headers: ['Exam', 'Timer', 'Qualifying/merit split?'], rows: [
@@ -440,6 +470,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/how-many-mock-tests-to-take.webp',
+      alt: 'Indian student scheduling mock-test attempts on a study calendar',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'How many mock tests you should take is one of the most common questions aspirants ask, and most answers online just throw out a round number like 20 or 50 with no reasoning behind it. The honest answer is that the count matters far less than what you do with each attempt.' },
       { type: 'takeaways', items: [
