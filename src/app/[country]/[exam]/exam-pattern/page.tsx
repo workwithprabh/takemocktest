@@ -27,7 +27,7 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
 
   return (
     <ExamInfoPageContent country={country} exam={exam} pageName="Exam Pattern" pageSlug="exam-pattern">
-      <p className="mb-6 text-sm leading-6 text-ink-700">Each stage is checked separately so one stage cannot inherit another stage&apos;s scoring rules.</p>
+      <p className="mb-6 text-sm leading-6 text-ink-700">The {exam.name} exam pattern below is checked stage by stage, so one stage cannot inherit another stage&apos;s scoring rules.</p>
 
       <div className="space-y-5">
         {exam.stages.map((stage) => (

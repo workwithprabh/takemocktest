@@ -82,7 +82,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-action-700">Free practice series</p>
             <h1 className="font-sans text-3xl font-bold tracking-tight text-ink-900 md:text-5xl">{exam.name} Mock Test {YEAR}</h1>
             <p className="mt-4 max-w-xl text-sm leading-6 text-ink-700 md:text-base">
-              Attempt checked full mocks, sectional tests, and quick timed practice. No login is required, and every attempt ends with an instant result.
+              Attempt checked {exam.name} full mocks, sectional tests, and quick timed practice. No login is required, and every attempt ends with an instant result.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#tests" className="inline-flex min-h-11 items-center bg-ink-900 px-5 text-sm font-semibold text-white">Choose a test ↓</a>
