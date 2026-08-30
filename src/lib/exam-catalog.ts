@@ -154,6 +154,8 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('IMU-CET', 'Institute', 'imu-cet'),
           exam('KLEEE', 'Institute', 'kleee'),
           exam('ATIT', 'Institute', 'atit'),
+          exam('LPUNEST', 'Institute', 'lpunest'),
+          exam('NERIST NEE', 'Institute', 'nerist-nee'),
         ],
       },
       {
@@ -168,6 +170,8 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('GUJCET', 'State', 'gujcet'),
           exam('OJEE', 'State', 'ojee'),
           exam('AP POLYCET', 'State', 'ap-polycet'),
+          exam('AP ECET', 'State', 'ap-ecet'),
+          exam('AP PGECET', 'State', 'ap-pgecet'),
           exam('BCECE', 'State', 'bcece'),
           exam('JCECE', 'State'),
           exam('Assam CEE', 'State', 'assam-cee'),
