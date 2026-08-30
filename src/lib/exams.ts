@@ -97,7 +97,12 @@ export type ExamSlug =
   | 'ojee'
   | 'upeseat'
   | 'nmims-cet'
-  | 'bv-btech';
+  | 'bv-btech'
+  | 'chandigarh-cucet'
+  | 'imu-cet'
+  | 'kleee'
+  | 'ap-polycet'
+  | 'atit';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -283,6 +288,11 @@ const SPECIAL_OJEE_2026_PATTERN_NOTICE =
 const UPESEAT_2026_ADMISSION_ALERTS_PAGE = 'https://www.upes.ac.in/admissions/admission-alerts/upeseat';
 const NMIMS_CET_2026_HANDOUT = 'https://engineering.nmims.edu/wp-content/uploads/2024/06/NPAT_NCET_MST_NLAT2026-For-SF.pdf';
 const BV_BTECH_2026_BROCHURE = 'https://www.bvuniversity.edu.in/Uploads/moduleimg/14397imguf_Information-Brochure-BVDU-BTECH-2026FINAL.pdf';
+const CHANDIGARH_CUCET_2026_QUESTION_PAPER_PAGE = 'https://cucet.cuchd.in/question-paper.php?L_mx_Visit_Source=www.cuchd.in%2F';
+const IMU_CET_2026_PROSPECTUS = 'https://www.imu.edu.in/imunew/uploads/files/admissions/2026/Prospectus_2026-27_24022026.pdf';
+const KLEEE_2026_OFFICIAL_PAGE = 'https://admissions.kluniversity.in/';
+const AP_POLYCET_2026_SBTET_PORTAL = 'https://apsbtet.ap.gov.in/';
+const ATIT_2026_ICFAITECH_BTECH_PAGE = 'https://www.ifheindia.org/icfaitech-school-hyderabad/icfaitech/ugprograms/btech';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -10685,6 +10695,182 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'chandigarh-cucet': {
+    slug: 'chandigarh-cucet',
+    name: 'CUCET',
+    shortName: 'CUCET',
+    fullName: 'Chandigarh University Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'non-medical-pcm',
+        name: '10+2 Non-Medical PCM',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English', 'Physics', 'Chemistry', 'Mathematics', 'Aptitude'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'English', questions: 10, marks: 10 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+            { name: 'Mathematics', questions: 25, marks: 25 },
+            { name: 'Aptitude', questions: 15, marks: 15 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all five sections; no sectional lock.',
+          note: "Chandigarh University's official CUCET question-paper page confirms the 10+2 Non-Medical PCM route as 100 four-option MCQs (English 10, Physics 25, Chemistry 25, Mathematics 25, Aptitude 15) for 100 marks in 120 minutes, +1 per correct answer and no negative marking. The official Non-Medical pattern lists a fifth 25-question module as 'Chemistry/Computers'; this mock deliberately models the Chemistry route rather than the Computers route.",
+          sourceUrl: CHANDIGARH_CUCET_2026_QUESTION_PAPER_PAGE,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'imu-cet': {
+    slug: 'imu-cet',
+    name: 'IMU-CET',
+    shortName: 'IMU-CET',
+    fullName: 'Indian Maritime University Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'ug-technical',
+        name: 'UG Technical',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026-27',
+          sections: ['English', 'General Aptitude', 'Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'English', questions: 40, marks: 40 },
+            { name: 'General Aptitude', questions: 40, marks: 40 },
+            { name: 'Physics', questions: 50, marks: 50 },
+            { name: 'Chemistry', questions: 20, marks: 20 },
+            { name: 'Mathematics', questions: 50, marks: 50 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all five sections; no sectional lock.',
+          note: "IMU-CET 2026's official prospectus directly confirms 200 MCQs across English, General Aptitude, Physics, Chemistry and Mathematics with 0.25 marks deducted per wrong answer. The 40/40/50/20/50 per-section split is an official-linked model rather than a figure machine-read directly from the prospectus text, and the 180-minute duration and +1-per-correct/200-max scoring are corroborated from current secondary sources rather than the prospectus itself, so this pattern is marked review-pending pending independent re-verification. An unanswered question scores zero.",
+          sourceUrl: IMU_CET_2026_PROSPECTUS,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'kleee': {
+    slug: 'kleee',
+    name: 'KLEEE',
+    shortName: 'KLEEE',
+    fullName: 'KL Engineering Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-pcm',
+        name: 'B.Tech PCM',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 75,
+          totalMarks: 75,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 25, marks: 25 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all three subjects.',
+          note: "KL University's current KLEEE 2026 page directly confirms a Mathematics/Physics/Chemistry test of 25 questions each (75 total) at JEE difficulty level in 180 minutes. The current 2026 page does not itself state the marking scheme or option count: four-option MCQs and no negative marking come from KL University's own historical KLEEE model question paper, and +1 per correct answer with a 75-point mock maximum is corroborated from current secondary sources, so this pattern is marked review-pending pending independent re-verification. An unanswered question scores zero.",
+          sourceUrl: KLEEE_2026_OFFICIAL_PAGE,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'btech-pcm-full-mock-1', name: 'B.Tech PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ap-polycet': {
+    slug: 'ap-polycet',
+    name: 'AP POLYCET',
+    shortName: 'AP POLYCET',
+    fullName: 'Andhra Pradesh Polytechnic Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'polytechnic',
+        name: 'POLYCET',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 50 },
+            { name: 'Physics', questions: 40, marks: 40 },
+            { name: 'Chemistry', questions: 30, marks: 30 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all three subjects.',
+          note: "AP POLYCET 2026 is conducted by the State Board of Technical Education and Training, Andhra Pradesh (SBTET AP), for admission to polytechnic diploma courses on the AP SSC (Class X) syllabus. This mock's 120-question, 50/40/30 Mathematics/Physics/Chemistry pattern for 120 marks in 120 minutes, +1 per correct answer and no negative marking, is drawn from the official 2026 information brochure; the direct POLYCET/SBTET portals timed out during verification, so the brochure content was accessed and cross-checked through a mirror host rather than fetched directly, and this pattern is marked review-pending pending a successful direct-portal re-fetch. An unanswered question scores zero.",
+          sourceUrl: AP_POLYCET_2026_SBTET_PORTAL,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'polytechnic-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'atit': {
+    slug: 'atit',
+    name: 'ATIT',
+    shortName: 'ATIT',
+    fullName: 'Admission Test for IcfaiTech',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.Tech',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'English', 'Logical Reasoning'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 35, marks: 35 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 20, marks: 20 },
+            { name: 'English', questions: 20, marks: 20 },
+            { name: 'Logical Reasoning', questions: 20, marks: 20 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all five sections; no sectional lock.',
+          note: "IcfaiTech's current B.Tech admissions page directly confirms ATIT 2026 as 120 four-option MCQs (Mathematics 35, Physics 25, Chemistry 20, English 20, Logical Reasoning 20) for 120 marks in 120 minutes. The current page does not itself state the marking scheme: +1 per correct answer is inferred from the official structure and corroborated by current sources, while zero negative marking and the four-option format are corroborated from current secondary sources rather than the admissions page itself, so this pattern is marked review-pending pending independent re-verification. An unanswered question scores zero.",
+          sourceUrl: ATIT_2026_ICFAITECH_BTECH_PAGE,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
         ],
       },
     ],
