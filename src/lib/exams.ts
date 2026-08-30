@@ -102,7 +102,21 @@ export type ExamSlug =
   | 'imu-cet'
   | 'kleee'
   | 'ap-polycet'
-  | 'atit';
+  | 'atit'
+  | 'ap-ecet'
+  | 'ap-pgecet'
+  | 'lpunest'
+  | 'nerist-nee'
+  | 'bihar-dcece'
+  | 'hp-pat'
+  | 'iemjee'
+  | 'jeecup'
+  | 'mit-wpu-cet'
+  | 'jharkhand-pece'
+  | 'kiitee'
+  | 'puleet'
+  | 'tg-ecet'
+  | 'tg-polycet';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -293,6 +307,21 @@ const IMU_CET_2026_PROSPECTUS = 'https://www.imu.edu.in/imunew/uploads/files/adm
 const KLEEE_2026_OFFICIAL_PAGE = 'https://admissions.kluniversity.in/';
 const AP_POLYCET_2026_SBTET_PORTAL = 'https://apsbtet.ap.gov.in/';
 const ATIT_2026_ICFAITECH_BTECH_PAGE = 'https://www.ifheindia.org/icfaitech-school-hyderabad/icfaitech/ugprograms/btech';
+const AP_ECET_2026_INSTRUCTION_BOOKLET_V3 = 'https://cets.apsche.ap.gov.in/ECET/PDF/APECET2026_InstructionBooklet_V3.pdf';
+const AP_PGECET_2026_CSIT_MASTER_PAPER = 'https://cets.apsche.ap.gov.in/PGECET/PDF/EXAM_PAPER/CS_QP_2026_APRIL_28_SHIFT2.pdf';
+const LPUNEST_2026_QUESTION_PAPER_PATTERN_PAGE = 'https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php';
+const NERIST_NEE_2026_INFORMATION_BROCHURE = 'https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf';
+const BIHAR_DCECE_2026_BCECEB_PORTAL = 'https://bceceboard.bihar.gov.in/DCECEIndex.php';
+const HP_PAT_2026_PROSPECTUS = 'https://www.hptechboard.com/storage/files/1/PAT_LEET_2026/PAT%202026%20Prospectus_.pdf';
+const IEMJEE_2026_OFFICIAL_PAGE = 'https://iem.edu.in/iemjee-2026/';
+const JEECUP_2026_INFORMATION_BROCHURE = 'https://jeecup.admissions.nic.in/document/information-brochure-for-upjee-2026/';
+const MIT_WPU_CET_2026_OFFICIAL_PAGE = 'https://mitwpu.edu.in/mit-wpu-cet-2026';
+const JHARKHAND_PECE_2026_EXAMINATION_SCHEME = 'https://polycet.jceceb.org.in/Public/ExaminationScheme';
+const KIITEE_2026_INFORMATION_BROCHURE = 'https://kiitee.kiit.ac.in/wp-content/uploads/2026/02/Information-Brochure-2026.pdf';
+const OJEE_2026_LE_TECH_DIPLOMA_BROCHURE = 'https://ojee.nic.in/document/information-brochure-for-ojee-2026/';
+const PULEET_2026_PROSPECTUS = 'https://puleet.puchd.ac.in/pdf/puleet2026.pdf';
+const TG_ECET_2026_SYLLABUS_PAGE = 'https://ecet.tgche.ac.in/UI/Syllabus.aspx';
+const TG_POLYCET_2026_INSTRUCTION_BOOKLET = 'https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -1683,7 +1712,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 120,
           duration: 90,
           negativeMarking: 0.333,
-          note: 'Consistently confirmed across multiple independent current sources: CBT 2 is 120 questions for 120 marks in 90 minutes, with the same Mathematics (35), General Intelligence and Reasoning (35), and General Awareness (50) structure across every 7th CPC pay level (Level 2 through Level 6) and both the Graduate and Undergraduate NTPC cycles — separate CBT 2 exams are conducted per level with graded difficulty, not a different question/marks structure. Unlike CBT 1, CBT 2 marks are carried into the final merit list. This site\'s content covers Mathematics and General Intelligence and Reasoning only (70 of the 120 official questions); General Awareness is not built, since it needs current, fact-checked content rather than internally-verifiable calculation or logical reasoning.',
+          note: 'Consistently confirmed across multiple independent current sources: CBT 2 is 120 questions for 120 marks in 90 minutes, with the same Mathematics (35), General Intelligence and Reasoning (35), and General Awareness (50) structure across every 7th CPC pay level (Level 2 through Level 6) and both the Graduate and Undergraduate NTPC cycles — separate CBT 2 exams are conducted per level with graded difficulty, not a different question/marks structure; the section-wise split is indicative rather than a fixed per-topic guarantee. Unlike CBT 1, CBT 2 marks are carried into the final merit list.',
           sectionBreakdown: [
             { name: 'Mathematics', questions: 35, marks: 35 },
             { name: 'General Intelligence and Reasoning', questions: 35, marks: 35 },
@@ -1699,11 +1728,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             name: 'CBT 2 Full Mock Test 1',
             kind: 'full-length',
             status: 'checked',
-            duration: 53,
+            duration: 90,
             marksPerCorrect: 1,
             negativeMarking: 0.333,
-            scoringNote: 'This mock covers Mathematics and General Intelligence and Reasoning only (70 of the 120 official questions), with a proportionally scaled 53-minute timer (70/120 of the official 90 minutes). General Awareness (the remaining 50 questions) is not included, since it needs current, fact-checked content rather than self-authored practice.',
-            checkedOn: '26 August 2026',
+            checkedOn: '30 August 2026',
           },
           {
             id: 'cbt-2-mathematics-sectional-1',
@@ -1726,6 +1754,18 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             marksPerCorrect: 1,
             negativeMarking: 0.333,
             checkedOn: '26 August 2026',
+          },
+          {
+            id: 'cbt-2-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 38,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            scoringNote: 'The official CBT 2 uses a single 90-minute composite timer with no separate General Awareness time limit; the 38-minute duration here is a platform-proportional practice timing (50/120 of the official 90 minutes), not an official sectional timer.',
+            checkedOn: '30 August 2026',
           },
           {
             id: 'cbt-2-full-mock-2',
@@ -10592,6 +10632,31 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'special-btech-mathematics-sectional-1', name: '2nd/Special OJEE 2026 B.Tech Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'TakeMockTest Mathematics sectional practice. 2nd/Special OJEE 2026 B.Tech uses one overall 60-minute timer and does not publish a separate Mathematics timer; this 20-minute sectional timer is a TakeMockTest practice setting.', checkedOn: '26 August 2026' },
         ],
       },
+      {
+        id: 'le-tech-diploma-2026',
+        name: 'OJEE 2026 LE-Tech (Diploma)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Engineering Mathematics', 'Engineering Mechanics', 'Basic Electrical and Electronics Engineering'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Engineering Mathematics', questions: 40, marks: 160 },
+            { name: 'Engineering Mechanics', questions: 40, marks: 160 },
+            { name: 'Basic Electrical and Electronics Engineering', questions: 40, marks: 160 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'OJEE 2026 LE-Tech (Diploma) is the regular lateral-entry route for Diploma holders into the second year of a B.Tech programme, distinct from the 2nd/Special OJEE B.Tech vacant-seat entrance above. The current official 2026 information brochure and syllabus directly confirm 120 four-option MCQs (Engineering Mathematics 40, Engineering Mechanics 40, Basic Electrical and Electronics Engineering 40, itself split Basic Electrical Engineering 20 / Basic Electronics Engineering 20) for 480 marks in 120 minutes, +4 per correct answer and -1 per wrong answer.',
+          sourceUrl: OJEE_2026_LE_TECH_DIPLOMA_BROCHURE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'le-tech-diploma-full-mock-1', name: 'LE-Tech (Diploma) Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '29 August 2026' },
+        ],
+      },
     ],
   },
   'upeseat': {
@@ -10871,6 +10936,486 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ap-ecet': {
+    slug: 'ap-ecet',
+    name: 'AP ECET',
+    shortName: 'AP ECET',
+    fullName: 'Andhra Pradesh Engineering Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'cse-diploma',
+        name: 'Computer Science and Engineering',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'Computer Science and Engineering'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 50 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+            { name: 'Computer Science and Engineering', questions: 100, marks: 100 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "AP ECET is the lateral-entry route for Diploma Holders directly into the second year of a B.Tech Computer Science and Engineering programme, distinct from a Class XI-XII freshman engineering entrance. The current official Instruction Booklet confirms 200 four-option MCQs (Mathematics 50, Physics 25, Chemistry 25, Computer Science and Engineering 100) for 200 marks in 180 minutes, +1 per correct answer with no negative marking. The Computer Science and Engineering section spans 13 diploma-level units (Digital Electronics, Software Engineering, Computer Organisation and Microprocessors, Data Structures through C, Computer Networks and Cyber Security, Operating Systems, DBMS, Java Programming, Web Technologies, Big-data and Cloud Computing, Android Programming, Internet of Things, and Python Programming).",
+          sourceUrl: AP_ECET_2026_INSTRUCTION_BOOKLET_V3,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'cse-diploma-full-mock-1', name: 'CSE Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ap-pgecet': {
+    slug: 'ap-pgecet',
+    name: 'AP PGECET',
+    shortName: 'AP PGECET',
+    fullName: 'Andhra Pradesh Post Graduate Engineering Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'csit',
+        name: 'Computer Science & Information Technology',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Computer Science & Information Technology'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Computer Science & Information Technology', questions: 120, marks: 120 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock; no sectional lock.',
+          note: 'The current official CS & IT master question paper directly confirms 120 four-option MCQs for 120 marks in 120 minutes, +1 per correct answer with no negative marking. The official material does not publish a per-topic question distribution; the 19-domain topic allocation used in this mock is a TakeMockTest editorial balance, not official APPGECET weightage.',
+          sourceUrl: AP_PGECET_2026_CSIT_MASTER_PAPER,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'csit-full-mock-1', name: 'CS & IT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'lpunest': {
+    slug: 'lpunest',
+    name: 'LPUNEST',
+    shortName: 'LPUNEST',
+    fullName: 'Lovely Professional University National Entrance and Scholarship Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-pcm',
+        name: 'B.Tech PCM',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics', 'English'],
+          totalQuestions: 100,
+          totalMarks: 400,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 25, marks: 100 },
+            { name: 'Chemistry', questions: 25, marks: 100 },
+            { name: 'Mathematics', questions: 25, marks: 100 },
+            { name: 'English', questions: 25, marks: 100 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "LPU's official question-paper pattern page labels its subject distribution 'approximate' rather than a fixed guarantee, and this mock preserves that caveat. The PCM route (Physics, Chemistry, Mathematics) deliberately selects Mathematics over Biology; each PCM section is 25 questions split 20 multiple-choice plus 5 numerical fill-in-the-blank, while English is built as 25 multiple-choice questions since the current pattern table gives English 25 questions without an English-specific fill-in-the-blank subdivision. Every question carries 4 marks with no negative marking, for 400 total marks in 150 minutes.",
+          sourceUrl: LPUNEST_2026_QUESTION_PAPER_PATTERN_PAGE,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'btech-pcm-full-mock-1', name: 'B.Tech PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 0, checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nerist-nee': {
+    slug: 'nerist-nee',
+    name: 'NERIST NEE',
+    shortName: 'NERIST NEE',
+    fullName: 'NERIST Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'nee-ii-pcm-et',
+        name: 'NEE-II PCM Engineering & Technology',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 115,
+          totalMarks: 150,
+          duration: 180,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 35, marks: 45 },
+            { name: 'Chemistry', questions: 35, marks: 45 },
+            { name: 'Mathematics', questions: 45, marks: 60 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) mixes one-mark and two-mark questions within each subject: 25 one-mark and 10 two-mark questions each in Physics and Chemistry, and 30 one-mark and 15 two-mark questions in Mathematics (80 one-mark and 35 two-mark questions overall). Every wrong answer is deducted 25% of the marks that question carries — a wrong one-mark question loses 0.25 and a wrong two-mark question loses 0.5, not a flat rate — while an unanswered question always scores zero.",
+          sourceUrl: NERIST_NEE_2026_INFORMATION_BROCHURE,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Marks and negative marking vary by question and are set per-question (1-mark questions score +1/-0.25, 2-mark questions score +2/-0.5), overriding these test-level defaults which apply to 1-mark questions only.', checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'bihar-dcece': {
+    slug: 'bihar-dcece',
+    name: 'Bihar DCECE',
+    shortName: 'Bihar DCECE',
+    fullName: 'Diploma Certificate Entrance Competitive Examination — Polytechnic Engineering',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'pe-polytechnic-engineering',
+        name: 'PE Polytechnic Engineering',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 90,
+          totalMarks: 450,
+          duration: 135,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 150 },
+            { name: 'Chemistry', questions: 30, marks: 150 },
+            { name: 'Mathematics', questions: 30, marks: 150 },
+          ],
+          timerNote: 'Single 135-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: "Bihar DCECE 2026 PE Polytechnic Engineering is conducted by the Bihar Combined Entrance Competitive Examination Board (BCECEB) for admission to Polytechnic Engineering diploma courses. The current 2026 BCECEB DCECE[PE/PM/PMM] cycle is directly confirmed live, but the official prospectus PDF (roughly 18.86 MB) exceeds this project's web-extraction size limit, so its detailed pattern table could not be independently rendered. The 90-question (Physics 30, Chemistry 30, Mathematics 30) shell for 450 marks in 135 minutes, +5 per correct answer and no negative marking, is therefore carried as a controlled Stage-1 model from consistent current-cycle sourcing rather than a directly-extracted pattern table, and is marked review-pending until a direct extraction succeeds. An unanswered question scores zero.",
+          sourceUrl: BIHAR_DCECE_2026_BCECEB_PORTAL,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'pe-polytechnic-engineering-full-mock-1', name: 'PE Polytechnic Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 135, marksPerCorrect: 5, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'hp-pat': {
+    slug: 'hp-pat',
+    name: 'HP PAT',
+    shortName: 'HP PAT',
+    fullName: 'Himachal Pradesh Polytechnic Admission Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'first-year-polytechnic',
+        name: 'First Year Polytechnic',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'English'],
+          totalQuestions: 150,
+          totalMarks: 600,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 200 },
+            { name: 'Physics', questions: 50, marks: 200 },
+            { name: 'Chemistry', questions: 30, marks: 120 },
+            { name: 'English', questions: 20, marks: 80 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: 'HP PAT 2026 (Himachal Pradesh Polytechnic Admission Test) is conducted by the Himachal Pradesh Takniki Shiksha Board for admission to first-year Polytechnic diploma courses after Class 10. The current official 2026 prospectus directly confirms 150 four-option MCQs (Mathematics 50, Physics 50, Chemistry 30, English 20) for 600 marks in 180 minutes, +4 per correct answer and -1 per wrong answer, at the official NCERT/Class-10 Appendix-II syllabus level. An unanswered question scores zero.',
+          sourceUrl: HP_PAT_2026_PROSPECTUS,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'first-year-polytechnic-full-mock-1', name: 'First Year Polytechnic Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'iemjee': {
+    slug: 'iemjee',
+    name: 'IEMJEE',
+    shortName: 'IEMJEE',
+    fullName: 'IEM Joint Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-online',
+        name: 'B.Tech Online',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 90,
+          totalMarks: 360,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 120 },
+            { name: 'Chemistry', questions: 30, marks: 120 },
+            { name: 'Mathematics', questions: 30, marks: 120 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: "IEMJEE 2026 B.Tech Online models the current official ONLINE-mode sitting only (IEM's B.Tech admissions page also offers a separate 3-hour offline sitting, not built here): 90 Physics/Chemistry/Mathematics questions (30 each) for 360 marks in a single 120-minute composite timer, +4 per correct answer and -1 per wrong answer. The official page does not explicitly state the number of response options or confirm all-MCQ composition; this mock's four-option single-correct rendering is a TakeMockTest platform representation, not itself confirmed by direct official evidence, so the pattern is marked review-pending. This follows the explicit IEMJEE 90-question shell, not JEE Main-style numerical-answer questions. An unanswered question scores zero.",
+          sourceUrl: IEMJEE_2026_OFFICIAL_PAGE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'btech-online-full-mock-1', name: 'B.Tech Online Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jeecup': {
+    slug: 'jeecup',
+    name: 'JEECUP',
+    shortName: 'JEECUP',
+    fullName: 'Joint Entrance Examination Council, Uttar Pradesh — UPJEE(P)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'group-a-engineering-technology',
+        name: 'Group A Engineering & Technology',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics & Chemistry'],
+          totalQuestions: 100,
+          totalMarks: 400,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 200 },
+            { name: 'Physics & Chemistry', questions: 50, marks: 200 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering both sections; no sectional lock.',
+          note: "JEECUP / UPJEE(P) 2026 Group A Engineering & Technology is conducted by the Joint Entrance Examination Council, Uttar Pradesh for admission to Group A polytechnic diploma courses. The current official 2026 brochure directly fixes Mathematics at 50% and Physics & Chemistry jointly at 50% of the paper; it does not publish an internal Physics-versus-Chemistry split, so the combined 50-question section is kept as a single 'Physics & Chemistry' section rather than an invented 25/25 split. 100 four-option MCQs for 400 marks in 150 minutes, +4 per correct answer with no negative marking. An unanswered question scores zero.",
+          sourceUrl: JEECUP_2026_INFORMATION_BROCHURE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'group-a-engineering-technology-full-mock-1', name: 'Group A Engineering & Technology Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'mit-wpu-cet': {
+    slug: 'mit-wpu-cet',
+    name: 'MIT-WPU CET',
+    shortName: 'MIT-WPU CET',
+    fullName: 'MIT World Peace University Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-after-10th',
+        name: 'B.Tech After 10th',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Basic Mathematics', 'Basic English', 'Physics', 'Chemistry'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 90,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Basic Mathematics', questions: 25, marks: 25 },
+            { name: 'Basic English', questions: 25, marks: 25 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+          ],
+          timerNote: 'Single 90-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "MIT-WPU CET 2026 B.Tech After 10th is a Class-10-entry CBT route, distinct from a standard 10+2 engineering entrance. The current official page directly confirms the CBT identity, 90-minute duration, 100 CBT marks split 25 each across Basic Mathematics, Basic English, Physics and Chemistry, and a separately-scored 50-mark/15-minute Personal Interaction (not built here, and not merged into this timer). The current official material does not explicitly state the real paper's exact question count or negative-marking rule; a 2024 official continuity source confirms 100 objective questions with no negative marking, so this mock's 100-question/four-option/+1/0 implementation is a controlled TakeMockTest model rather than a directly-confirmed current-official mechanic, marked review-pending. An unanswered question scores zero.",
+          sourceUrl: MIT_WPU_CET_2026_OFFICIAL_PAGE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'btech-after-10th-full-mock-1', name: 'B.Tech After 10th CBT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jharkhand-pece': {
+    slug: 'jharkhand-pece',
+    name: 'Jharkhand PECE',
+    shortName: 'Jharkhand PECE',
+    fullName: 'Jharkhand Polytechnic Entrance Competitive Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'polytechnic-engineering',
+        name: 'Polytechnic Engineering',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 150,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 50, marks: 50 },
+            { name: 'Chemistry', questions: 50, marks: 50 },
+            { name: 'Mathematics', questions: 50, marks: 50 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'Jharkhand PECE 2026 is conducted by the Jharkhand Combined Entrance Competitive Examination Board (JCECEB) for admission to polytechnic diploma courses on the Secondary (Class X) syllabus. The current official JCECEB Syllabus and Scheme of Examination directly confirms an offline OMR-based exam: 150 four-option MCQs (Physics 50, Chemistry 50, Mathematics 50) for 150 marks in 150 minutes, +1 per correct answer and -0.25 per wrong answer. This mock is an online practice simulation of that offline structure. An unanswered question scores zero.',
+          sourceUrl: JHARKHAND_PECE_2026_EXAMINATION_SCHEME,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'polytechnic-engineering-full-mock-1', name: 'Polytechnic Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'kiitee': {
+    slug: 'kiitee',
+    name: 'KIITEE',
+    shortName: 'KIITEE',
+    fullName: 'Kalinga Institute of Industrial Technology Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.Tech',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 150,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 40, marks: 160 },
+            { name: 'Chemistry', questions: 40, marks: 160 },
+            { name: 'Mathematics', questions: 40, marks: 160 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all three sections; no sectional lock, free movement between sections.',
+          note: 'KIITEE 2026 B.Tech is confirmed directly by the current official 2026 Information Brochure: 120 four-option MCQs (Physics 40, Chemistry 40, Mathematics 40) for 480 marks in 150 minutes, +4 per correct answer and -1 per wrong answer, one composite timer with free movement between sections and no sectional lock. An unanswered question scores zero.',
+          sourceUrl: KIITEE_2026_INFORMATION_BROCHURE,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'puleet': {
+    slug: 'puleet',
+    name: 'PULEET',
+    shortName: 'PULEET',
+    fullName: 'Panjab University Lateral Engineering Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering-lateral-entry',
+        name: 'Engineering Lateral Entry',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Engineering', 'Physics', 'Chemistry', 'Mathematics', 'General Aptitude and Communication Skills'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 100,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'General Engineering', questions: 60, marks: 60 },
+            { name: 'Physics', questions: 10, marks: 10 },
+            { name: 'Chemistry', questions: 10, marks: 10 },
+            { name: 'Mathematics', questions: 10, marks: 10 },
+            { name: 'General Aptitude and Communication Skills', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single 100-minute timer for the Full Mock, covering all five sections; no sectional lock.',
+          note: 'PULEET 2026 is Panjab University’s lateral-entry route for Diploma and eligible D.Voc. candidates into the second year of a B.E. programme, distinct from a Class-12/JEE freshman engineering entrance. The current official 2026 prospectus directly confirms 100 four-option MCQs (General Engineering 60, split Basic Electrical Engineering/Basic Electronics/Programming Fundamentals/Fundamentals of Mechanical Engineering/Fundamentals of Civil Engineering/Fundamentals of Chemical Engineering 10 each; plus Physics 10, Chemistry 10, Mathematics 10, General Aptitude and Communication Skills 10) for 100 marks in 100 minutes, +1 per correct answer and -0.25 per wrong answer.',
+          sourceUrl: PULEET_2026_PROSPECTUS,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'engineering-lateral-entry-full-mock-1', name: 'Engineering Lateral Entry Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 100, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tg-ecet': {
+    slug: 'tg-ecet',
+    name: 'TG ECET',
+    shortName: 'TG ECET',
+    fullName: 'Telangana Engineering Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'cse-diploma',
+        name: 'Computer Science and Engineering',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'Computer Science and Engineering'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 50 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+            { name: 'Computer Science and Engineering', questions: 100, marks: 100 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "TG ECET is the Diploma-holder lateral-entry route into B.Tech Computer Science and Engineering, distinct from a Class XI-XII/JEE-style freshman entrance. The current official TG ECET identity, lateral-entry purpose, the 50/25/25/100 section shell, 200 total marks and 180-minute duration are direct-official; the detailed Mathematics/Physics/Chemistry/CSE syllabus and the repaired ten-unit CSE content map (Digital Electronics, Computer Architecture, C Programming and Data Structures, Object Oriented Programming through C++, Relational Database Management Systems, Computer Hardware & Networking, Operating Systems, Java Programming, Python Programming, Web Technologies) are current-cycle mirror sources; no negative marking is current-secondary evidence. The exact 10-questions-per-CSE-unit split is a TakeMockTest editorial balance, not official weightage, so this pattern is marked review-pending.",
+          sourceUrl: TG_ECET_2026_SYLLABUS_PAGE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'cse-diploma-full-mock-1', name: 'CSE Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tg-polycet': {
+    slug: 'tg-polycet',
+    name: 'TG POLYCET',
+    shortName: 'TG POLYCET',
+    fullName: 'Telangana Polytechnic Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'mpc-polytechnic',
+        name: 'MPC Polytechnic',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 60, marks: 60 },
+            { name: 'Physics', questions: 30, marks: 30 },
+            { name: 'Chemistry', questions: 30, marks: 30 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'The current official physical TG POLYCET 2026 paper contains 150 questions: Mathematics 60, Physics 30, Chemistry 30, and a separate Biology 30 for candidates seeking the agriculture/veterinary/horticulture route. The same official booklet separately generates an MPC Rank out of 120 marks for Polytechnic (Engineering) admissions. This mock is therefore a platform-defined 120-question MPC-filtered simulation aligned to that official MPC rank, covering only Mathematics, Physics and Chemistry — it is not a claim that the complete physical official paper contains only 120 questions. No negative marking is corroborated-secondary evidence, since the retrieved direct-official pattern text did not itself expose that clause.',
+          sourceUrl: TG_POLYCET_2026_INSTRUCTION_BOOKLET,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'mpc-full-mock-1', name: 'MPC Polytechnic Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
         ],
       },
     ],
