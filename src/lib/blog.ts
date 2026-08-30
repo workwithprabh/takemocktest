@@ -1393,6 +1393,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-21',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/sat-vs-act-choosing-your-us-admission-test.webp',
+      alt: 'Indian student comparing digital and paper-based US admission test formats',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Colleges that accept both the SAT and the ACT generally say they have no preference between the two, and official concordance tables exist specifically so an admissions office can compare a score on one against a score on the other. But the two tests are not built the same way, and the differences change how you should prepare more than most students expect.' },
       { type: 'takeaways', items: [
@@ -1430,6 +1436,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-21',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/rrb-ntpc-vs-group-d-vs-je-vs-alp-choosing-your-railway-exam.webp',
+      alt: 'Indian railway aspirant comparing four qualification-based job pathways',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'RRB NTPC, Group D, Junior Engineer, and Assistant Loco Pilot are often discussed together as "the railway exams," but which of the four you are even eligible for is usually decided before you open a single practice paper. Your existing qualification, Class 10 pass, ITI, diploma, or degree, narrows the field first; exam difficulty is a secondary concern.' },
       { type: 'takeaways', items: [
@@ -1466,6 +1478,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-cgl-vs-chsl-vs-mts-choosing-the-right-ssc-exam.webp',
+      alt: 'Indian SSC aspirant matching education levels to exam options',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC CGL, SSC CHSL, and SSC MTS are often grouped together as "the SSC exams," but they are not interchangeable options you pick between freely. Your current educational qualification decides which of the three you can even apply for, and once you are in the exam hall, MTS in particular runs on a structure the other two do not share at all.' },
       { type: 'takeaways', items: [
@@ -1501,6 +1519,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/oet-vs-ielts-choosing-your-healthcare-english-test.webp',
+      alt: 'Indian healthcare professional comparing clinical and general English test formats',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Nurses, doctors, dentists, and pharmacists applying to work abroad are usually choosing between two English tests: OET, built specifically around healthcare communication, and IELTS, a general-purpose test accepted far more broadly. Both are recognised by major healthcare regulators, so the real question is not which test is "better," it is which one actually fits what you need the score for.' },
       { type: 'takeaways', items: [
@@ -1537,6 +1561,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/mht-cet-vs-jee-main-maharashtra-engineering-admission.webp',
+      alt: 'Indian engineering aspirant comparing Maharashtra and national admission routes',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Most Maharashtra engineering aspirants end up sitting both MHT CET and JEE Main, and it is worth understanding why: the two scores unlock genuinely different pools of seats, not the same pool through two different doors. Getting this backward, assuming a strong JEE Main score alone secures a Maharashtra state college seat, is one of the more common and costly misunderstandings in engineering admissions.' },
       { type: 'takeaways', items: [
@@ -1572,6 +1602,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/lic-aao-vs-niacl-ao-choosing-your-insurance-sector-exam.webp',
+      alt: 'Indian insurance officer aspirant comparing two sector exam pathways',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'LIC AAO and NIACL AO get grouped together as "insurance sector exams," and their Prelims papers do look nearly identical at a glance, both 100 questions for 100 marks in 60 minutes with a sectional lock. But LIC and NIACL sit on different sides of the insurance industry, life versus general insurance, and their Prelims papers score wrong answers differently, a real distinction hidden underneath the surface similarity.' },
       { type: 'takeaways', items: [
