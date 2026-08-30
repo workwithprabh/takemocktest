@@ -627,6 +627,21 @@ import { JHARKHAND_PECE_2026_MATHEMATICS_1 } from './question-banks/jharkhand-pe
 import { KIITEE_2026_PHYSICS_1 } from './question-banks/kiitee-2026-physics-1';
 import { KIITEE_2026_CHEMISTRY_1 } from './question-banks/kiitee-2026-chemistry-1';
 import { KIITEE_2026_MATHEMATICS_1 } from './question-banks/kiitee-2026-mathematics-1';
+import { OJEE_2026_LE_TECH_DIPLOMA_ENGINEERING_MATHEMATICS_1 } from './question-banks/ojee-2026-le-tech-diploma-engineering-mathematics-1';
+import { OJEE_2026_LE_TECH_DIPLOMA_ENGINEERING_MECHANICS_1 } from './question-banks/ojee-2026-le-tech-diploma-engineering-mechanics-1';
+import { OJEE_2026_LE_TECH_DIPLOMA_BASIC_ELECTRICAL_ELECTRONICS_ENGINEERING_1 } from './question-banks/ojee-2026-le-tech-diploma-basic-electrical-electronics-engineering-1';
+import { PULEET_2026_GENERAL_ENGINEERING_1 } from './question-banks/puleet-2026-general-engineering-1';
+import { PULEET_2026_PHYSICS_1 } from './question-banks/puleet-2026-physics-1';
+import { PULEET_2026_CHEMISTRY_1 } from './question-banks/puleet-2026-chemistry-1';
+import { PULEET_2026_MATHEMATICS_1 } from './question-banks/puleet-2026-mathematics-1';
+import { PULEET_2026_GENERAL_APTITUDE_COMMUNICATION_SKILLS_1 } from './question-banks/puleet-2026-general-aptitude-communication-skills-1';
+import { TG_ECET_2026_MATHEMATICS_1 } from './question-banks/tg-ecet-2026-mathematics-1';
+import { TG_ECET_2026_PHYSICS_1 } from './question-banks/tg-ecet-2026-physics-1';
+import { TG_ECET_2026_CHEMISTRY_1 } from './question-banks/tg-ecet-2026-chemistry-1';
+import { TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1 } from './question-banks/tg-ecet-2026-computer-science-engineering-1';
+import { TG_POLYCET_2026_MATHEMATICS_1 } from './question-banks/tg-polycet-2026-mathematics-1';
+import { TG_POLYCET_2026_PHYSICS_1 } from './question-banks/tg-polycet-2026-physics-1';
+import { TG_POLYCET_2026_CHEMISTRY_1 } from './question-banks/tg-polycet-2026-chemistry-1';
 import { BITS_HD_2026_ME_CS_FULL_MOCK_1 } from './question-banks/bits-hd-2026-me-cs-full-mock-1';
 import { BITS_HD_2026_ME_CS_FULL_MOCK_2 } from './question-banks/bits-hd-2026-me-cs-full-mock-2';
 import { CG_PET_2026_PHYSICS_1 } from './question-banks/cg-pet-2026-physics-1';
@@ -2504,6 +2519,30 @@ const KIITEE_TESTS: Record<string, Question[]> = {
     ...KIITEE_2026_MATHEMATICS_1,
   ],
 };
+const PULEET_TESTS: Record<string, Question[]> = {
+  'puleet/engineering-lateral-entry-full-mock-1': [
+    ...PULEET_2026_GENERAL_ENGINEERING_1,
+    ...PULEET_2026_PHYSICS_1,
+    ...PULEET_2026_CHEMISTRY_1,
+    ...PULEET_2026_MATHEMATICS_1,
+    ...PULEET_2026_GENERAL_APTITUDE_COMMUNICATION_SKILLS_1,
+  ],
+};
+const TG_ECET_TESTS: Record<string, Question[]> = {
+  'tg-ecet/cse-diploma-full-mock-1': [
+    ...TG_ECET_2026_MATHEMATICS_1,
+    ...TG_ECET_2026_PHYSICS_1,
+    ...TG_ECET_2026_CHEMISTRY_1,
+    ...TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1,
+  ],
+};
+const TG_POLYCET_TESTS: Record<string, Question[]> = {
+  'tg-polycet/mpc-full-mock-1': [
+    ...TG_POLYCET_2026_MATHEMATICS_1,
+    ...TG_POLYCET_2026_PHYSICS_1,
+    ...TG_POLYCET_2026_CHEMISTRY_1,
+  ],
+};
 const BITS_HD_TESTS: Record<string, Question[]> = {
   'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,
   'bits-hd/me-cs-full-mock-2': BITS_HD_2026_ME_CS_FULL_MOCK_2,
@@ -2563,6 +2602,11 @@ const OJEE_TESTS: Record<string, Question[]> = {
   'ojee/special-btech-physics-sectional-1': SPECIAL_OJEE_2026_BTECH_PHYSICS_SECTIONAL_1,
   'ojee/special-btech-chemistry-sectional-1': SPECIAL_OJEE_2026_BTECH_CHEMISTRY_SECTIONAL_1,
   'ojee/special-btech-mathematics-sectional-1': SPECIAL_OJEE_2026_BTECH_MATHEMATICS_SECTIONAL_1,
+  'ojee/le-tech-diploma-full-mock-1': [
+    ...OJEE_2026_LE_TECH_DIPLOMA_ENGINEERING_MATHEMATICS_1,
+    ...OJEE_2026_LE_TECH_DIPLOMA_ENGINEERING_MECHANICS_1,
+    ...OJEE_2026_LE_TECH_DIPLOMA_BASIC_ELECTRICAL_ELECTRONICS_ENGINEERING_1,
+  ],
 };
 const UPESEAT_TESTS: Record<string, Question[]> = {
   'upeseat/full-mock-1': [
@@ -2654,7 +2698,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3260,6 +3304,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 150
     : testId.includes('kiitee/btech-full-mock')
     ? 120
+    : testId.includes('ojee/le-tech-diploma-full-mock')
+    ? 120
+    : testId.includes('puleet/engineering-lateral-entry-full-mock')
+    ? 100
+    : testId.includes('tg-ecet/cse-diploma-full-mock')
+    ? 200
+    : testId.includes('tg-polycet/mpc-full-mock')
+    ? 120
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -3614,6 +3666,24 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Physics', count: 40 },
     { section: 'Chemistry', count: 40 },
     { section: 'Mathematics', count: 40 },
+  ],
+  'puleet': [
+    { section: 'General Engineering', count: 60 },
+    { section: 'Physics', count: 10 },
+    { section: 'Chemistry', count: 10 },
+    { section: 'Mathematics', count: 10 },
+    { section: 'General Aptitude and Communication Skills', count: 10 },
+  ],
+  'tg-ecet': [
+    { section: 'Mathematics', count: 50 },
+    { section: 'Physics', count: 25 },
+    { section: 'Chemistry', count: 25 },
+    { section: 'Computer Science and Engineering', count: 100 },
+  ],
+  'tg-polycet': [
+    { section: 'Mathematics', count: 60 },
+    { section: 'Physics', count: 30 },
+    { section: 'Chemistry', count: 30 },
   ],
   'cmat': [
     { section: 'Quantitative Techniques and Data Interpretation', count: 20 },
@@ -4031,6 +4101,11 @@ const rrbNtpcCbt2FullMock1Layout = [
   { section: 'General Intelligence and Reasoning', count: 35 },
   { section: 'General Awareness', count: 50 },
 ];
+const ojeeLeTechDiplomaFullMockLayout = [
+  { section: 'Engineering Mathematics', count: 40 },
+  { section: 'Engineering Mechanics', count: 40 },
+  { section: 'Basic Electrical and Electronics Engineering', count: 40 },
+];
 const sscChslTier2Layout = [
   { section: 'Mathematical Abilities', count: 30 },
   { section: 'Reasoning and General Intelligence', count: 30 },
@@ -4306,6 +4381,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
         ? ibpsClerkMainsLayout
       : testId.includes('rrb-ntpc/cbt-2-full-mock-1')
         ? rrbNtpcCbt2FullMock1Layout
+      : testId.includes('ojee/le-tech-diploma-full-mock')
+        ? ojeeLeTechDiplomaFullMockLayout
       : testId.includes('rrb-ntpc/cbt-2-full-mock')
         ? rrbNtpcCbt2Layout
       : testId.includes('ssc-chsl/tier-2-full-mock')
@@ -5063,6 +5140,24 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     KIITEE_2026_PHYSICS_1[0],
     KIITEE_2026_CHEMISTRY_1[0],
     KIITEE_2026_MATHEMATICS_1[0],
+  ],
+  'puleet': [
+    PULEET_2026_GENERAL_ENGINEERING_1[0],
+    PULEET_2026_PHYSICS_1[0],
+    PULEET_2026_CHEMISTRY_1[0],
+    PULEET_2026_MATHEMATICS_1[0],
+    PULEET_2026_GENERAL_APTITUDE_COMMUNICATION_SKILLS_1[0],
+  ],
+  'tg-ecet': [
+    TG_ECET_2026_MATHEMATICS_1[0],
+    TG_ECET_2026_PHYSICS_1[0],
+    TG_ECET_2026_CHEMISTRY_1[0],
+    TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1[0],
+  ],
+  'tg-polycet': [
+    TG_POLYCET_2026_MATHEMATICS_1[0],
+    TG_POLYCET_2026_PHYSICS_1[0],
+    TG_POLYCET_2026_CHEMISTRY_1[0],
   ],
   'bits-hd': [
     BITS_HD_2026_ME_CS_FULL_MOCK_1[0],

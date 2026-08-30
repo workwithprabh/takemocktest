@@ -4,49 +4,49 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
   {
     "id": "nerist-nee-2026-ma-001",
     "section": "Mathematics",
-    "topic": "Sets",
+    "topic": "Sets, Relations and Functions",
     "difficulty": "easy",
-    "question": "Let A = {1,2,3,4} and B = {3,4,5}. What is n(A union B)?",
+    "question": "If A={1,2,3,4} and B={3,4,5}, how many elements are in A\u222aB?",
     "options": [
+      "5",
       "3",
       "4",
-      "5",
       "7"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "A union B = {1,2,3,4,5}, which has 5 elements.",
+    "explanation": "A\u222aB={1,2,3,4,5}, which has 5 elements.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-002",
     "section": "Mathematics",
-    "topic": "Relations and Functions",
-    "difficulty": "medium",
-    "question": "If f(x) = 2x - 1 and g(x) = x^2 + 1, what is (f o g)(2)?",
+    "topic": "Sets, Relations and Functions",
+    "difficulty": "easy",
+    "question": "For f(x)=2x\u22123, what is f\u207b\u00b9(5)?",
     "options": [
+      "1",
+      "3",
       "5",
-      "7",
-      "9",
-      "11"
+      "4"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "g(2) = 5, so f(g(2)) = f(5) = 2(5) - 1 = 9.",
+    "explanation": "Set 2x\u22123=5, giving x=4. Thus f\u207b\u00b9(5)=4.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -54,47 +54,47 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Complex Numbers",
     "difficulty": "easy",
-    "question": "What is the modulus of 3 - 4i?",
+    "question": "What is |3\u22124i|?",
     "options": [
-      "5",
       "1",
       "7",
-      "25"
+      "25",
+      "5"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "|3 - 4i| = sqrt(3^2 + (-4)^2) = 5.",
+    "explanation": "|3\u22124i|=\u221a(3\u00b2+4\u00b2)=5.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-004",
     "section": "Mathematics",
-    "topic": "Theory of Quadratic Equation",
-    "difficulty": "medium",
-    "question": "If alpha and beta are the roots of 2x^2 - 5x + 3 = 0, what is 1/alpha + 1/beta?",
+    "topic": "Quadratic Equations",
+    "difficulty": "easy",
+    "question": "The roots of x\u00b2\u22127x+10=0 are \u03b1 and \u03b2. What is \u03b1\u00b2+\u03b2\u00b2?",
     "options": [
-      "2/3",
-      "5/3",
-      "3/5",
-      "5/2"
+      "9",
+      "29",
+      "39",
+      "49"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "alpha + beta = 5/2 and alpha beta = 3/2. Therefore 1/alpha + 1/beta = (alpha + beta)/(alpha beta) = 5/3.",
+    "explanation": "\u03b1+\u03b2=7 and \u03b1\u03b2=10. Hence \u03b1\u00b2+\u03b2\u00b2=(\u03b1+\u03b2)\u00b2\u22122\u03b1\u03b2=49\u221220=29.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -102,167 +102,167 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Sequences and Series",
     "difficulty": "easy",
-    "question": "An arithmetic progression begins 7, 11, 15, ... . What is its 20th term?",
+    "question": "An arithmetic progression has seventh term 31 and common difference 4. What is its twelfth term?",
     "options": [
-      "79",
-      "87",
-      "83",
-      "91"
+      "47",
+      "55",
+      "51",
+      "59"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "a20 = 7 + 19(4) = 83.",
+    "explanation": "a\u2081\u2082=a\u2087+5d=31+20=51.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-006",
     "section": "Mathematics",
     "topic": "Sequences and Series",
-    "difficulty": "medium",
-    "question": "A geometric progression begins 3, 6, 12, ... . What is the sum of its first 8 terms?",
+    "difficulty": "easy",
+    "question": "Find the sum to infinity of the geometric series 12+6+3+\u2026",
     "options": [
-      "381",
-      "510",
-      "765",
-      "768"
+      "24",
+      "18",
+      "21",
+      "30"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "S8 = 3(2^8 - 1)/(2 - 1) = 3 x 255 = 765.",
+    "explanation": "Here a=12 and r=1/2. S\u221e=a/(1\u2212r)=12/(1/2)=24.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-007",
     "section": "Mathematics",
     "topic": "Permutations and Combinations",
-    "difficulty": "medium",
-    "question": "How many distinct arrangements can be made from the six different letters in the word TRIAGE?",
+    "difficulty": "easy",
+    "question": "What is the value of 5P3?",
     "options": [
-      "120",
-      "720",
-      "360",
-      "1440"
+      "10",
+      "60",
+      "20",
+      "120"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "All six letters are distinct, so the number of arrangements is 6! = 720.",
+    "explanation": "5P3=5!/(5\u22123)!=5\u00d74\u00d73=60.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-008",
     "section": "Mathematics",
-    "topic": "Permutations and Combinations",
-    "difficulty": "easy",
-    "question": "How many ways are there to choose 3 students from a group of 8?",
-    "options": [
-      "24",
-      "56",
-      "40",
-      "336"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "The number of selections is C(8,3) = 8 x 7 x 6/(3 x 2 x 1) = 56.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-009",
-    "section": "Mathematics",
-    "topic": "Mathematical Induction",
-    "difficulty": "medium",
-    "question": "Which expression is divisible by 6 for every positive integer n?",
-    "options": [
-      "n(n+1)",
-      "n^2+n+1",
-      "n(n+1)(n+2)",
-      "n(n+2)"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "Among three consecutive integers, one is divisible by 3 and at least one is even. Their product is therefore divisible by 6.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-010",
-    "section": "Mathematics",
     "topic": "Binomial Theorem",
-    "difficulty": "medium",
-    "question": "What is the coefficient of x^3 in (2 + x)^5?",
+    "difficulty": "easy",
+    "question": "What is the coefficient of x\u00b3 in (1+2x)\u2075?",
     "options": [
-      "10",
       "40",
-      "20",
+      "160",
+      "320",
       "80"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "The x^3 term is C(5,3)2^2 x^3, so the coefficient is 10 x 4 = 40.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-011",
-    "section": "Mathematics",
-    "topic": "Matrices and Determinants",
-    "difficulty": "medium",
-    "question": "What is the determinant of the matrix [[2,1],[5,3]]?",
-    "options": [
-      "-1",
-      "5",
-      "6",
-      "1"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "The determinant is 2 x 3 - 1 x 5 = 1.",
+    "explanation": "The x\u00b3 term is C(5,3)(2x)\u00b3=10\u00d78x\u00b3=80x\u00b3.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-009",
+    "section": "Mathematics",
+    "topic": "Mathematical Logic",
+    "difficulty": "easy",
+    "question": "Which expression is logically equivalent to the negation of (p AND q)?",
+    "options": [
+      "(NOT p) OR (NOT q)",
+      "(NOT p) AND (NOT q)",
+      "p OR q",
+      "p AND (NOT q)"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "De Morgan\u2019s law gives \u00ac(p\u2227q)=\u00acp\u2228\u00acq.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-010",
+    "section": "Mathematics",
+    "topic": "Matrices and Determinants",
+    "difficulty": "easy",
+    "question": "What is the determinant of the matrix [[2,1],[3,2]]?",
+    "options": [
+      "\u22121",
+      "4",
+      "1",
+      "7"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "det=2\u00b72\u22121\u00b73=1.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-011",
+    "section": "Mathematics",
+    "topic": "Boolean Algebra",
+    "difficulty": "easy",
+    "question": "In Boolean algebra, simplify x+xy.",
+    "options": [
+      "y",
+      "x",
+      "xy",
+      "x+y"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "By the absorption law, x+xy=x.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -270,343 +270,127 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Trigonometry",
     "difficulty": "easy",
-    "question": "If theta is acute and sin theta = 3/5, what is cos 2theta?",
+    "question": "For an acute angle \u03b8, tan\u03b8=3/4. What is sin\u03b8?",
     "options": [
-      "7/25",
-      "-7/25",
-      "16/25",
-      "24/25"
+      "4/5",
+      "3/4",
+      "3/5",
+      "4/3"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "cos 2theta = 1 - 2sin^2 theta = 1 - 18/25 = 7/25.",
+    "explanation": "Use a 3-4-5 right triangle: opposite=3, adjacent=4, hypotenuse=5, so sin\u03b8=3/5.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-013",
     "section": "Mathematics",
-    "topic": "Inverse Trigonometric Functions",
+    "topic": "Vectors",
     "difficulty": "medium",
-    "question": "What is tan^-1(1) + tan^-1(1/2)?",
+    "question": "Find (2,\u22121,3)\u00b7(1,4,\u22122).",
     "options": [
-      "tan^-1(1/3)",
-      "tan^-1(3)",
-      "pi/2",
-      "pi"
+      "\u22128",
+      "\u22124",
+      "4",
+      "8"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "Using tan(A+B) = (1 + 1/2)/(1 - 1/2) = 3. Both angles are positive and their sum is less than pi/2, so the sum is tan^-1(3).",
+    "explanation": "Dot product=2(1)+(\u22121)(4)+3(\u22122)=2\u22124\u22126=\u22128.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-014",
     "section": "Mathematics",
     "topic": "Coordinate Geometry",
-    "difficulty": "easy",
-    "question": "What is the slope of the line through (2,-1) and (5,8)?",
+    "difficulty": "medium",
+    "question": "Find the perpendicular distance from (3,\u22122) to the line 4x\u22123y+5=0.",
     "options": [
-      "3",
-      "1",
-      "2",
-      "9"
+      "13/5",
+      "17/5",
+      "23/7",
+      "23/5"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "Slope = [8 - (-1)]/(5 - 2) = 9/3 = 3.",
+    "explanation": "Distance=|4(3)\u22123(\u22122)+5|/\u221a(4\u00b2+(\u22123)\u00b2)=23/5.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-015",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry",
+    "topic": "Circles",
     "difficulty": "medium",
-    "question": "What is the radius of the circle x^2 + y^2 - 6x + 8y + 9 = 0?",
+    "question": "For the circle x\u00b2+y\u00b2\u22126x+8y+9=0, what is the radius?",
     "options": [
       "3",
       "5",
-      "8",
-      "4"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "Completing squares gives (x - 3)^2 + (y + 4)^2 = 16, so the radius is 4.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-016",
-    "section": "Mathematics",
-    "topic": "Coordinate Geometry",
-    "difficulty": "medium",
-    "question": "For the parabola y^2 = 12x, what are the coordinates of its focus?",
-    "options": [
-      "(0,3)",
-      "(6,0)",
-      "(0,6)",
-      "(3,0)"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "Comparing y^2 = 4ax with y^2 = 12x gives a = 3. The focus is (a,0) = (3,0).",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-017",
-    "section": "Mathematics",
-    "topic": "Coordinate Geometry",
-    "difficulty": "medium",
-    "question": "What is the eccentricity of the ellipse x^2/25 + y^2/9 = 1?",
-    "options": [
-      "4/5",
-      "3/5",
-      "5/4",
-      "16/25"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "Here a = 5 and b = 3, so c = sqrt(a^2 - b^2) = 4. Eccentricity e = c/a = 4/5.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-018",
-    "section": "Mathematics",
-    "topic": "Limits",
-    "difficulty": "easy",
-    "question": "Evaluate lim as x approaches 3 of (x^2 - 9)/(x - 3).",
-    "options": [
-      "0",
-      "3",
-      "6",
-      "9"
+      "4",
+      "8"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "For x not equal to 3, the expression simplifies to x + 3. The limit is therefore 6.",
+    "explanation": "Completing squares: (x\u22123)\u00b2+(y+4)\u00b2=16, so radius=4.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
-    "id": "nerist-nee-2026-ma-019",
+    "id": "nerist-nee-2026-ma-016",
     "section": "Mathematics",
-    "topic": "Continuity",
-    "difficulty": "medium",
-    "question": "Define f(x) = (x^2 - 1)/(x - 1) for x not equal to 1, and f(1) = k. What value of k makes f continuous at x = 1?",
+    "topic": "Conic Sections",
+    "difficulty": "easy",
+    "question": "What is the eccentricity of a parabola?",
     "options": [
-      "0",
       "1",
-      "3",
+      "0",
+      "1/2",
       "2"
     ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "For x not equal to 1, f(x) = x + 1. Its limit at x = 1 is 2, so continuity requires k = 2.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-020",
-    "section": "Mathematics",
-    "topic": "Differential Calculus",
-    "difficulty": "easy",
-    "question": "If y = x^2 ln x, what is dy/dx at x = 1?",
-    "options": [
-      "1",
-      "0",
-      "2",
-      "e"
-    ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "dy/dx = 2x ln x + x. At x = 1, ln 1 = 0, so dy/dx = 1.",
+    "explanation": "By definition, every parabola has eccentricity 1.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
-    "id": "nerist-nee-2026-ma-021",
+    "id": "nerist-nee-2026-ma-017",
     "section": "Mathematics",
-    "topic": "Applications of Derivatives",
-    "difficulty": "medium",
-    "question": "For 0 <= x <= 10, what is the maximum value of f(x) = x(10 - x)?",
-    "options": [
-      "25",
-      "10",
-      "20",
-      "50"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "f(x) = 10x - x^2 is a downward-opening parabola. Its vertex is at x = 5, where f(5) = 25.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-022",
-    "section": "Mathematics",
-    "topic": "Integral Calculus",
+    "topic": "Three-Dimensional Geometry",
     "difficulty": "easy",
-    "question": "Which is an antiderivative of 3x^2 - 4x + 1?",
-    "options": [
-      "x^3 - 4x^2 + x + C",
-      "x^3 - 2x^2 + x + C",
-      "3x^3 - 2x^2 + x + C",
-      "x^3 - 2x + C"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "Integrating term by term gives x^3 - 2x^2 + x + C.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-023",
-    "section": "Mathematics",
-    "topic": "Integral Calculus",
-    "difficulty": "medium",
-    "question": "Evaluate integral from 0 to 2 of x(2 - x) dx.",
-    "options": [
-      "4/3",
-      "2/3",
-      "2",
-      "8/3"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "Integral of 2x - x^2 is x^2 - x^3/3. Evaluating from 0 to 2 gives 4 - 8/3 = 4/3.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-024",
-    "section": "Mathematics",
-    "topic": "Integral Calculus",
-    "difficulty": "medium",
-    "question": "What is the area between y = x and y = x^2 from x = 0 to x = 1?",
-    "options": [
-      "1/3 square unit",
-      "1/2 square unit",
-      "2/3 square unit",
-      "1/6 square unit"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "On [0,1], x is above x^2. Area = integral_0^1 (x - x^2) dx = 1/2 - 1/3 = 1/6.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-025",
-    "section": "Mathematics",
-    "topic": "Differential Equations",
-    "difficulty": "medium",
-    "question": "The differential equation dy/dx = 2xy satisfies y(0) = 3. What is y(1)?",
-    "options": [
-      "e",
-      "3e",
-      "2e",
-      "3/e"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "Separate variables: dy/y = 2x dx. Thus ln y = x^2 + C, so y = Ce^(x^2). Since y(0)=3, C=3 and y(1)=3e.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-026",
-    "section": "Mathematics",
-    "topic": "Coordinate Geometry (3D)",
-    "difficulty": "easy",
-    "question": "What is the distance between the points (1,2,3) and (4,6,3)?",
+    "question": "What is the distance between points (1,2,3) and (4,6,3)?",
     "options": [
       "3",
       "4",
@@ -617,180 +401,396 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "Distance = sqrt[(4-1)^2 + (6-2)^2 + (3-3)^2] = sqrt(9+16) = 5.",
+    "explanation": "Distance=\u221a[(3)\u00b2+(4)\u00b2+0\u00b2]=5.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
-    "id": "nerist-nee-2026-ma-027",
+    "id": "nerist-nee-2026-ma-018",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry (3D)",
-    "difficulty": "medium",
-    "question": "Which vector is normal to the plane 2x - y + 2z = 9?",
-    "options": [
-      "(2,1,2)",
-      "(1,-2,2)",
-      "(2,-1,2)",
-      "(2,-1,-2)"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0.25,
-    "explanation": "The coefficients of x, y and z in a plane equation give a normal vector, so a normal is (2,-1,2).",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-028",
-    "section": "Mathematics",
-    "topic": "Probability",
+    "topic": "Limits",
     "difficulty": "easy",
-    "question": "Two fair dice are rolled. What is the probability that their sum is 9?",
+    "question": "Evaluate lim(x\u21920) sin(5x)/x.",
     "options": [
-      "1/6",
-      "1/12",
-      "5/36",
-      "1/9"
+      "0",
+      "1",
+      "25",
+      "5"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "The favourable ordered pairs are (3,6), (4,5), (5,4), and (6,3), four out of 36 outcomes. Thus probability = 4/36 = 1/9.",
+    "explanation": "sin(5x)/x=5\u00b7sin(5x)/(5x), whose limit is 5.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
-    "id": "nerist-nee-2026-ma-029",
+    "id": "nerist-nee-2026-ma-019",
     "section": "Mathematics",
-    "topic": "Probability",
+    "topic": "Differentiation",
     "difficulty": "medium",
-    "question": "A card is drawn from a standard 52-card deck. Given that it is a face card, what is the probability that it is a king?",
+    "question": "If y=x\u00b3e\u02e3, what is dy/dx at x=1?",
     "options": [
-      "1/4",
-      "4/13",
-      "1/13",
-      "1/3"
+      "4e",
+      "e",
+      "3e",
+      "6e"
     ],
-    "correctIndex": 3,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "There are 12 face cards, of which 4 are kings. Conditional probability = 4/12 = 1/3.",
+    "explanation": "dy/dx=e\u02e3(3x\u00b2+x\u00b3). At x=1 this is e(3+1)=4e.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
-    "id": "nerist-nee-2026-ma-030",
+    "id": "nerist-nee-2026-ma-020",
     "section": "Mathematics",
-    "topic": "Probability",
+    "topic": "Applications of Derivatives",
     "difficulty": "medium",
-    "question": "In three independent trials, the probability of success on each trial is 0.4. What is the probability of exactly two successes?",
+    "question": "What is the minimum value of f(x)=x\u00b2\u22126x+11?",
     "options": [
-      "0.064",
-      "0.288",
-      "0.240",
-      "0.432"
+      "2",
+      "\u22122",
+      "3",
+      "11"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "f(x)=(x\u22123)\u00b2+2, so its minimum is 2 at x=3.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-021",
+    "section": "Mathematics",
+    "topic": "Indefinite Integrals",
+    "difficulty": "easy",
+    "question": "Evaluate \u222b(3x\u00b2+2) dx.",
+    "options": [
+      "3x\u00b3+2x+C",
+      "x\u00b3+2x+C",
+      "x\u00b3+x\u00b2+C",
+      "6x+2+C"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0.25,
-    "explanation": "The binomial probability is C(3,2)(0.4)^2(0.6) = 3 x 0.16 x 0.6 = 0.288.",
+    "explanation": "Integrating termwise gives x\u00b3+2x+C.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-022",
+    "section": "Mathematics",
+    "topic": "Definite Integrals",
+    "difficulty": "medium",
+    "question": "Evaluate \u222b\u2080\u00b2 (x+1) dx.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "[x\u00b2/2+x]_0\u00b2=2+2=4.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-023",
+    "section": "Mathematics",
+    "topic": "Differential Equations",
+    "difficulty": "easy",
+    "question": "Solve dy/dx=3y in general form.",
+    "options": [
+      "y=3Ce^x",
+      "y=Ce^(3x)",
+      "y=Cx\u00b3",
+      "y=C+3x"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "Separating variables gives dy/y=3dx, hence ln|y|=3x+C and y=Ce^(3x).",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-024",
+    "section": "Mathematics",
+    "topic": "Statics and Dynamics",
+    "difficulty": "easy",
+    "question": "Two forces of 6 N and 8 N act at right angles. What is the magnitude of their resultant?",
+    "options": [
+      "10 N",
+      "2 N",
+      "14 N",
+      "48 N"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "By Pythagoras, R=\u221a(6\u00b2+8\u00b2)=10 N.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-025",
+    "section": "Mathematics",
+    "topic": "Probability",
+    "difficulty": "easy",
+    "question": "A bag contains 4 red and 6 blue balls. One ball is drawn at random. What is the probability it is red?",
+    "options": [
+      "1/5",
+      "3/5",
+      "2/3",
+      "2/5"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "There are 10 balls total and 4 are red, so probability=4/10=2/5.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-026",
+    "section": "Mathematics",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "question": "If P(A)=0.6, P(B)=0.5 and P(A\u2229B)=0.3, find P(A\u222aB).",
+    "options": [
+      "0.2",
+      "0.3",
+      "0.8",
+      "1.1"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "P(A\u222aB)=P(A)+P(B)\u2212P(A\u2229B)=0.6+0.5\u22120.3=0.8.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-027",
+    "section": "Mathematics",
+    "topic": "Sets, Relations and Functions",
+    "difficulty": "medium",
+    "question": "The function f(x)=x\u00b2 is restricted to domain x\u22650. Which statement is correct?",
+    "options": [
+      "It is one-to-one and onto all real numbers",
+      "It is many-to-one onto [0,\u221e)",
+      "It is one-to-one and onto [0,\u221e)",
+      "It is neither one-to-one nor onto [0,\u221e)"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "On x\u22650, x\u00b2 is strictly increasing, so it is one-to-one, and every nonnegative y has preimage \u221ay, so the range is [0,\u221e).",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-028",
+    "section": "Mathematics",
+    "topic": "Matrices and Determinants",
+    "difficulty": "medium",
+    "question": "A is a 2\u00d72 matrix with det(A)=\u22123. What is det(2A)?",
+    "options": [
+      "\u22126",
+      "\u22123",
+      "12",
+      "\u221212"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "For a 2\u00d72 matrix, det(kA)=k\u00b2det(A). Thus det(2A)=4(\u22123)=\u221212.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-029",
+    "section": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": "medium",
+    "question": "If sin\u03b8+cos\u03b8=\u221a(3/2), what is sin2\u03b8?",
+    "options": [
+      "\u22121/2",
+      "1/2",
+      "\u221a3/2",
+      "1"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "Squaring gives 1+2sin\u03b8cos\u03b8=3/2. Since sin2\u03b8=2sin\u03b8cos\u03b8, sin2\u03b8=1/2.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-030",
+    "section": "Mathematics",
+    "topic": "Vectors",
+    "difficulty": "medium",
+    "question": "Vectors a=(1,2,0) and b=(2,0,3) form adjacent sides of a parallelogram. What is its area?",
+    "options": [
+      "\u221a29",
+      "\u221a49",
+      "61",
+      "\u221a61"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0.25,
+    "explanation": "a\u00d7b=(6,\u22123,\u22124); its magnitude is \u221a(36+9+16)=\u221a61.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-031",
     "section": "Mathematics",
     "topic": "Complex Numbers",
-    "difficulty": "medium",
-    "question": "Which pair gives the two non-real roots of z^3 = -8?",
+    "difficulty": "hard",
+    "question": "A nonzero complex number z satisfies z+4/z=4. What is |z\u22122|?",
     "options": [
-      "-1 + i sqrt(3) and -1 - i sqrt(3)",
-      "2i and -2i",
-      "1 + i sqrt(3) and 1 - i sqrt(3)",
-      "2 + i sqrt(3) and 2 - i sqrt(3)"
+      "1",
+      "0",
+      "2",
+      "4"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "The cube roots of -8 have modulus 2 and arguments pi/3, pi, and 5pi/3. The non-real roots are 2(cos pi/3 +/- i sin pi/3) = 1 +/- i sqrt(3).",
+    "explanation": "Multiplying by z gives z\u00b2\u22124z+4=0=(z\u22122)\u00b2, so z=2 and |z\u22122|=0.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-032",
     "section": "Mathematics",
-    "topic": "Theory of Quadratic Equation",
-    "difficulty": "medium",
-    "question": "If alpha and beta are the roots of x^2 - (k+2)x + 2k = 0 and |alpha - beta| = 2, which values of k satisfy this condition?",
+    "topic": "Quadratic Equations",
+    "difficulty": "hard",
+    "question": "Two positive roots of a quadratic differ by 1 and have product 12. What is their sum?",
     "options": [
-      "k = 2 only",
-      "k = -2 or 2",
-      "k = 1 or 3",
-      "k = 0 or 4"
+      "5",
+      "7",
+      "6",
+      "8"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "The squared difference of the roots equals the discriminant: (alpha-beta)^2 = (k+2)^2 - 8k = (k-2)^2. Requiring |alpha-beta| = 2 gives |k-2| = 2, so k = 0 or 4.",
+    "explanation": "Let the roots be r and r+1. Then r(r+1)=12, giving r=3 for positive roots. The roots are 3 and 4, sum 7.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-033",
     "section": "Mathematics",
     "topic": "Sequences and Series",
-    "difficulty": "medium",
-    "question": "The sum of the first n terms of a sequence is S_n = 3n^2 + 2n. What is the 20th term?",
+    "difficulty": "hard",
+    "question": "Evaluate S = \u03a3 from n=1 to 8 of (3n+2)/2^n.",
     "options": [
-      "119",
-      "116",
-      "120",
-      "122"
+      "31/4",
+      "127/16",
+      "63/8",
+      "255/32"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "a_n = S_n - S_(n-1) = 6n - 1. Thus a_20 = 120 - 1 = 119.",
+    "explanation": "Use \u03a3(n/2^n) from n=1 to N = 2\u2212(N+2)/2^N and \u03a3(1/2^n) from n=1 to N = 1\u22121/2^N. For N=8, \u03a3(n/2^n)=2\u221210/256=251/128 and \u03a3(1/2^n)=255/256. Therefore S=3(251/128)+2(255/256)=753/128+255/128 =1008/128=63/8.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -798,23 +798,23 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Permutations and Combinations",
     "difficulty": "hard",
-    "question": "Five distinct men and four distinct women are to stand in a row so that no two women are adjacent. How many arrangements are possible?",
+    "question": "How many 5-digit numbers can be formed without repetition from the digits {0,1,3,4,6,8} that are divisible by 4?",
     "options": [
-      "43200",
-      "14400",
-      "28800",
-      "86400"
+      "228",
+      "180",
+      "216",
+      "240"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "Arrange the 5 men in 5! ways. There are 6 gaps around them; choose 4 for the women and arrange the women in 4! ways. Total = 5! C(6,4) 4! = 120 x 15 x 24 = 43200.",
+    "explanation": "A number is divisible by 4 when its last two digits form a multiple of 4. Valid endings are 04,08,16,36,40,48,60,64,68,80,84. Five endings use 0, leaving 4 nonzero digits for the first three places: 4P3=24 each. Six endings do not use 0; among the four remaining digits, one is 0, so valid 3-digit prefixes are 4P3\u22123P2=24\u22126=18 each. Total=5\u00b724+6\u00b718=228.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -822,23 +822,23 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Binomial Theorem",
     "difficulty": "hard",
-    "question": "What is the constant term in the expansion of (x^2 + 2/x)^6?",
+    "question": "In the expansion of (2+x)\u2078, what is the ratio of the coefficient of x\u00b3 to the coefficient of x\u00b2?",
     "options": [
-      "240",
-      "120",
-      "180",
-      "480"
+      "1/2",
+      "2",
+      "1",
+      "4"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "The general term using r factors of 2/x has x-power 2(6-r)-r = 12-3r. For a constant term, r=4. Its coefficient is C(6,4)2^4 = 15 x 16 = 240.",
+    "explanation": "Coeff(x\u00b3)=C(8,3)2\u2075=56\u00b732=1792. Coeff(x\u00b2)=C(8,2)2\u2076=28\u00b764=1792. Ratio=1.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -846,119 +846,119 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Matrices and Determinants",
     "difficulty": "hard",
-    "question": "Let A = [[1,2],[3,4]]. What is det(A^2 - 5A + 2I)?",
+    "question": "For A=[[1,2],[3,5]], what is the sum of all four entries of A\u207b\u00b9?",
     "options": [
-      "4",
-      "8",
-      "32",
-      "16"
+      "\u22121",
+      "0",
+      "1",
+      "3"
     ],
-    "correctIndex": 3,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "A has trace 5 and determinant -2, so Cayley-Hamilton gives A^2 - 5A - 2I = 0. Therefore A^2 - 5A + 2I = 4I, whose determinant is 4^2 = 16.",
+    "explanation": "det A=5\u22126=\u22121. Thus A\u207b\u00b9=\u2212[[5,\u22122],[\u22123,1]]=[[-5,2],[3,\u22121]], whose entries sum to \u22121.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-037",
     "section": "Mathematics",
     "topic": "Trigonometry",
-    "difficulty": "medium",
-    "question": "How many solutions does 2cos^2 x - cos x - 1 = 0 have in 0 <= x < 2pi?",
+    "difficulty": "hard",
+    "question": "If sec \u03b8 + tan \u03b8 = 11/4 and the trigonometric functions are defined, what is sin \u03b8?",
     "options": [
-      "3",
-      "1",
-      "4",
-      "2"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 2,
-    "negativeMarking": 0.5,
-    "explanation": "Factor as (2cos x + 1)(cos x - 1) = 0. In the interval, cos x = -1/2 gives x = 2pi/3, 4pi/3, and cos x = 1 gives x = 0. Hence there are 3 solutions.",
-    "source": {
-      "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
-      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
-    }
-  },
-  {
-    "id": "nerist-nee-2026-ma-038",
-    "section": "Mathematics",
-    "topic": "Coordinate Geometry",
-    "difficulty": "medium",
-    "question": "For what values of c is the line 3x + 4y + c = 0 tangent to the circle x^2 + y^2 - 4x + 6y - 12 = 0?",
-    "options": [
-      "c = 25 or -25",
-      "c = 19 or -31",
-      "c = 31 or -19",
-      "c = 6 or -6"
+      "88/137",
+      "21/29",
+      "105/137",
+      "11/29"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "The circle has centre (2,-3) and radius 5. Tangency requires |3(2)+4(-3)+c|/5 = 5, so |c-6| = 25. Hence c = 31 or -19.",
+    "explanation": "(sec\u03b8+tan\u03b8)(sec\u03b8\u2212tan\u03b8)=1, so sec\u03b8\u2212tan\u03b8=4/11. Adding and subtracting gives sec\u03b8=137/88 and tan\u03b8=105/88. Therefore sin\u03b8=tan\u03b8/sec\u03b8=105/137.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
+    }
+  },
+  {
+    "id": "nerist-nee-2026-ma-038",
+    "section": "Mathematics",
+    "topic": "Circles",
+    "difficulty": "hard",
+    "question": "A circle has its centre on the x-axis and passes through (1,2) and (5,2). What is its radius?",
+    "options": [
+      "\u221a8",
+      "2",
+      "\u221a5",
+      "4"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 2,
+    "negativeMarking": 0.5,
+    "explanation": "The centre lies on the perpendicular bisector of the chord joining the two points, x=3, and on y=0, so centre=(3,0). Radius=\u221a[(3\u22121)\u00b2+(0\u22122)\u00b2]=\u221a8.",
+    "source": {
+      "kind": "original",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
+      "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-039",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry",
-    "difficulty": "medium",
-    "question": "The point P = (2, 3sqrt(3)/2) lies on the ellipse x^2/16 + y^2/9 = 1. What is the x-intercept of the tangent to the ellipse at P?",
+    "topic": "Three-Dimensional Geometry",
+    "difficulty": "hard",
+    "question": "Find the perpendicular distance from P(1,2,3) to the plane 2x\u2212y+2z\u22129=0.",
     "options": [
-      "4",
-      "8",
-      "6",
-      "16"
+      "1/3",
+      "2/3",
+      "4/3",
+      "1"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "The tangent at (x1,y1) is xx1/16 + yy1/9 = 1. Setting y=0 and x1=2 gives 2x/16=1, so x=8.",
+    "explanation": "Distance=|2(1)\u22122+2(3)\u22129|/\u221a(2\u00b2+(\u22121)\u00b2+2\u00b2)=3/3=1.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-040",
     "section": "Mathematics",
-    "topic": "Limits",
+    "topic": "Limits and Continuity",
     "difficulty": "hard",
-    "question": "Evaluate lim as x approaches 0 of [e^x - 1 - x]/x^2.",
+    "question": "For what value of a is f continuous at x=2 if f(x)=3ax\u22122 for x<2 and f(x)=x\u00b2+a for x\u22652?",
     "options": [
-      "0",
-      "1/2",
+      "4/5",
       "1",
-      "2"
+      "6/5",
+      "3/2"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "Using e^x = 1 + x + x^2/2 + higher-order terms, the numerator is x^2/2 + higher-order terms. Dividing by x^2 gives the limit 1/2.",
+    "explanation": "Continuity requires the left limit 6a\u22122 to equal f(2)=4+a. Thus 5a=6 and a=6/5.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -966,95 +966,95 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Applications of Derivatives",
     "difficulty": "hard",
-    "question": "On the interval 0 <= x <= 4, what is the maximum value of f(x) = x^2(4 - x)?",
+    "question": "A point P lies on the parabola y=x\u00b2+1. What is the least possible distance from P to the point (0,4)?",
     "options": [
-      "64/9",
-      "128/27",
-      "256/27",
-      "32/3"
+      "\u221a2",
+      "\u221a11/2",
+      "\u221a3",
+      "3/2"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "f'(x) = 8x - 3x^2 = x(8-3x). The interior critical point is x=8/3. Evaluating gives (64/9)(4/3) = 256/27, larger than the endpoint values.",
+    "explanation": "Let t=x\u00b2\u22650. Squared distance is D\u00b2=x\u00b2+(x\u00b2\u22123)\u00b2=t+(t\u22123)\u00b2=t\u00b2\u22125t+9. Its minimum occurs at t=5/2, giving D\u00b2=11/4, hence D=\u221a11/2.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-042",
     "section": "Mathematics",
-    "topic": "Integral Calculus",
-    "difficulty": "medium",
-    "question": "Evaluate integral from 0 to pi/2 of sin^3 x cos^2 x dx.",
+    "topic": "Definite Integrals",
+    "difficulty": "hard",
+    "question": "Evaluate \u222b\u2080\u00b9 x/(1+x\u00b2) dx.",
     "options": [
-      "1/15",
-      "1/6",
-      "4/15",
-      "2/15"
+      "ln2",
+      "1/2",
+      "1\u2212ln2",
+      "(1/2)ln2"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "Write sin^3 x = sin x(1-cos^2 x). With u=cos x, the integral becomes integral_0^1 (u^2-u^4) du = 1/3 - 1/5 = 2/15.",
+    "explanation": "Let u=1+x\u00b2, du=2x dx. The integral is (1/2)ln(1+x\u00b2)|\u2080\u00b9=(1/2)ln2.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-043",
     "section": "Mathematics",
     "topic": "Differential Equations",
-    "difficulty": "medium",
-    "question": "Solve dy/dx + y = e^x with y(0)=0. What is y(ln 2)?",
+    "difficulty": "hard",
+    "question": "The differential equation y\u2032+y=e\u02e3 satisfies y(0)=0. What is y(ln2)?",
     "options": [
+      "1/4",
       "1/2",
       "1",
-      "3/4",
-      "3/2"
+      "3/4"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "Using integrating factor e^x, d(ye^x)/dx = e^(2x). Hence y = (e^x - e^-x)/2. At x=ln2, y = (2 - 1/2)/2 = 3/4.",
+    "explanation": "Using integrating factor e\u02e3, (ye\u02e3)\u2032=e^{2x}. With y(0)=0, y=(e\u02e3\u2212e^\u2212x)/2. At x=ln2, y=(2\u22121/2)/2=3/4.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
     "id": "nerist-nee-2026-ma-044",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry (3D)",
+    "topic": "Statics and Dynamics",
     "difficulty": "hard",
-    "question": "A line has direction ratios (2,1,2), and a plane has normal vector (1,2,2). If alpha is the acute angle between the line and the plane, what is sin alpha?",
+    "question": "A projectile is launched at 25 m/s on level ground. Taking g=10 m/s\u00b2, its range is 31.25 m. Which pair gives the possible launch angles between 0\u00b0 and 90\u00b0?",
     "options": [
-      "1/9",
-      "8/9",
-      "4/9",
-      "sqrt(8)/9"
+      "30\u00b0 and 60\u00b0",
+      "15\u00b0 and 75\u00b0",
+      "22.5\u00b0 and 67.5\u00b0",
+      "45\u00b0 only"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "For angle alpha between a line and a plane, sin alpha = |d dot n|/(|d||n|). Here d dot n = 8 and both magnitudes are 3, so sin alpha = 8/9.",
+    "explanation": "R=u\u00b2sin2\u03b8/g=62.5 sin2\u03b8. Thus sin2\u03b8=31.25/62.5=1/2. Hence 2\u03b8=30\u00b0 or 150\u00b0, giving \u03b8=15\u00b0 or 75\u00b0.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   },
   {
@@ -1062,23 +1062,23 @@ export const NERIST_NEE_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Probability",
     "difficulty": "hard",
-    "question": "A box is chosen at random from two boxes. Box A contains 2 red and 3 blue balls; Box B contains 4 red and 1 blue ball. A red ball is drawn. What is the probability that Box B was chosen?",
+    "question": "Box P is chosen with probability 1/2 and contains 2 red and 6 blue balls. Box Q is chosen with probability 1/3 and contains 5 red and 5 blue balls. Box R is chosen with probability 1/6 and contains 9 red and 3 blue balls. One ball is drawn from the chosen box and is red. What is the probability that Box Q was chosen?",
     "options": [
       "1/3",
+      "3/8",
       "1/2",
-      "4/5",
-      "2/3"
+      "2/5"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0.5,
-    "explanation": "By Bayes' theorem, P(B|R) = [0.5(4/5)]/[0.5(2/5)+0.5(4/5)] = (2/5)/(3/5) = 2/3.",
+    "explanation": "P(red)=(1/2)(2/8)+(1/3)(5/10)+(1/6)(9/12) =1/8+1/6+1/8=5/12. P(Q and red)=(1/3)(1/2)=1/6. Hence P(Q|red)=(1/6)/(5/12)=2/5.",
     "source": {
       "kind": "original",
-      "reference": "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) official brochure and syllabus",
+      "reference": "NERIST NEE 2026 current official NEE-II PCM Engineering & Technology brochure and syllabus",
       "url": "https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     }
   }
 ];
