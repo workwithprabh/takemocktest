@@ -1142,6 +1142,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ielts-vs-toefl-vs-pte-picking-your-english-test.webp',
+      alt: 'Indian study-abroad aspirant comparing paper, audio, and speaking test formats',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'IELTS, TOEFL, and PTE all exist to answer the same question for a university admissions office: can this applicant study in English? None of them is objectively harder than the others, and picking one over another based on rumors about difficulty is usually the wrong reason. The real differences are format, delivery, and which universities on your shortlist actually accept which test.' },
       { type: 'takeaways', items: [
@@ -1172,6 +1178,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/nda-vs-cds-vs-afcat-choosing-your-defence-entry.webp',
+      alt: 'Indian defence aspirant comparing education-stage entry pathways',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'NDA, CDS, and AFCAT are matched to candidates by two things you cannot change through study, rather than by which exam suits your prep style the way MBA or engineering entrances are: your age and education stage, and which service and entry route you want. NDA is for candidates still in or just finishing Class 12; CDS and AFCAT are for graduates; the Agniveer written tests sit alongside a physical and medical process most other exams on this list do not have at all.' },
       { type: 'takeaways', items: [
@@ -1210,6 +1222,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/clat-vs-ailet-vs-state-law-cets-first-timers-guide.webp',
+      alt: 'Indian law aspirant comparing passage-based entrance-test formats',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'CLAT gets most of the attention because it is the single gateway to the National Law Universities, but it is not the only law entrance worth preparing for, and it is not even the one with the most Legal Reasoning questions on this list. If you are applying to more than one law school, which most serious candidates do, the section weightings below decide how you should split your prep time, not just your target score.' },
       { type: 'takeaways', items: [
@@ -1247,6 +1265,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ca-foundation-vs-cma-foundation-which-to-start-with.webp',
+      alt: 'Indian commerce student comparing accounting and cost-management study paths',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'CA Foundation and CMA Foundation both sit at the entry point of a commerce professional career, run by ICAI and ICMAI respectively, and both include a quantitative paper that trips up students who assume it is just school-level math. The two papers are not the same length, the same duration, or weighted the same way, and neither is a smaller or easier version of the other.' },
       { type: 'takeaways', items: [
@@ -1282,6 +1306,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/jee-main-vs-bitsat-vs-state-cets-engineering-prep.webp',
+      alt: 'Indian engineering aspirant comparing three entrance-test formats',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Most engineering aspirants in India sit JEE Main as a baseline and then add one or more institute or state exams depending on where they are actually likely to get a seat. The marking schemes across these exams are not a minor footnote, they range from no penalty for a wrong answer to a full mark deducted, and one exam mixes multiple-choice questions with numerical-entry answers that behave completely differently under guessing.' },
       { type: 'takeaways', items: [
@@ -1321,6 +1351,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-20',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/nata-vs-jee-main-paper-2-choosing-your-barch-entry.webp',
+      alt: 'Indian architecture aspirant comparing drawing and computer-based aptitude preparation',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Most first-time B.Arch aspirants assume NATA is the one universal architecture entrance exam. It is not. The Council of Architecture requires either NATA or JEE Main Paper 2 for B.Arch admission, not both at once, and which one you actually need depends entirely on which colleges you are targeting. A small handful of IITs sit outside this rule altogether.' },
       { type: 'takeaways', items: [
