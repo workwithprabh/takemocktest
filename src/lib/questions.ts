@@ -41,6 +41,8 @@ import { RRB_NTPC_CBT1_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2 } from './ques
 import { RRB_NTPC_CBT1_GENERAL_AWARENESS_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt1-general-awareness-sectional-2';
 import { RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt2-mathematics-sectional-1';
 import { RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1 } from './question-banks/rrb-ntpc-cbt2-general-intelligence-reasoning-sectional-1';
+import { RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt2-mathematics-sectional-2';
+import { RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2 } from './question-banks/rrb-ntpc-cbt2-general-intelligence-reasoning-sectional-2';
 import { IBPS_PO_MAINS_REASONING_1 } from './question-banks/ibps-po-mains-reasoning-1';
 import { IBPS_PO_MAINS_GENERAL_AWARENESS_1 } from './question-banks/ibps-po-mains-general-awareness-1';
 import { IBPS_PO_MAINS_ENGLISH_1 } from './question-banks/ibps-po-mains-english-1';
@@ -766,6 +768,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'rrb-ntpc/cbt-2-mathematics-sectional-1': RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_1,
   'rrb-ntpc/cbt-2-general-intelligence-reasoning-sectional-1': RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_1,
+  'rrb-ntpc/cbt-2-full-mock-2': [
+    ...RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_2,
+    ...RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2,
+  ],
+  'rrb-ntpc/cbt-2-mathematics-sectional-2': RRB_NTPC_CBT2_MATHEMATICS_SECTIONAL_2,
+  'rrb-ntpc/cbt-2-general-intelligence-reasoning-sectional-2': RRB_NTPC_CBT2_GENERAL_INTELLIGENCE_REASONING_SECTIONAL_2,
   'ibps-po/mains-full-mock-1': [
     ...IBPS_PO_MAINS_REASONING_1,
     ...IBPS_PO_MAINS_GENERAL_AWARENESS_1,
