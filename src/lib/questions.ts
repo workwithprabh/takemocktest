@@ -617,6 +617,16 @@ import { IEMJEE_2026_CHEMISTRY_1 } from './question-banks/iemjee-2026-chemistry-
 import { IEMJEE_2026_MATHEMATICS_1 } from './question-banks/iemjee-2026-mathematics-1';
 import { JEECUP_2026_GROUP_A_MATHEMATICS_1 } from './question-banks/jeecup-2026-group-a-mathematics-1';
 import { JEECUP_2026_GROUP_A_PHYSICS_CHEMISTRY_1 } from './question-banks/jeecup-2026-group-a-physics-chemistry-1';
+import { MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_MATHEMATICS_1 } from './question-banks/mit-wpu-cet-2026-btech-after-10th-basic-mathematics-1';
+import { MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_ENGLISH_1 } from './question-banks/mit-wpu-cet-2026-btech-after-10th-basic-english-1';
+import { MIT_WPU_CET_2026_BTECH_AFTER_10TH_PHYSICS_1 } from './question-banks/mit-wpu-cet-2026-btech-after-10th-physics-1';
+import { MIT_WPU_CET_2026_BTECH_AFTER_10TH_CHEMISTRY_1 } from './question-banks/mit-wpu-cet-2026-btech-after-10th-chemistry-1';
+import { JHARKHAND_PECE_2026_PHYSICS_1 } from './question-banks/jharkhand-pece-2026-physics-1';
+import { JHARKHAND_PECE_2026_CHEMISTRY_1 } from './question-banks/jharkhand-pece-2026-chemistry-1';
+import { JHARKHAND_PECE_2026_MATHEMATICS_1 } from './question-banks/jharkhand-pece-2026-mathematics-1';
+import { KIITEE_2026_PHYSICS_1 } from './question-banks/kiitee-2026-physics-1';
+import { KIITEE_2026_CHEMISTRY_1 } from './question-banks/kiitee-2026-chemistry-1';
+import { KIITEE_2026_MATHEMATICS_1 } from './question-banks/kiitee-2026-mathematics-1';
 import { BITS_HD_2026_ME_CS_FULL_MOCK_1 } from './question-banks/bits-hd-2026-me-cs-full-mock-1';
 import { BITS_HD_2026_ME_CS_FULL_MOCK_2 } from './question-banks/bits-hd-2026-me-cs-full-mock-2';
 import { CG_PET_2026_PHYSICS_1 } from './question-banks/cg-pet-2026-physics-1';
@@ -2472,6 +2482,28 @@ const JEECUP_TESTS: Record<string, Question[]> = {
     ...JEECUP_2026_GROUP_A_PHYSICS_CHEMISTRY_1,
   ],
 };
+const MIT_WPU_CET_TESTS: Record<string, Question[]> = {
+  'mit-wpu-cet/btech-after-10th-full-mock-1': [
+    ...MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_MATHEMATICS_1,
+    ...MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_ENGLISH_1,
+    ...MIT_WPU_CET_2026_BTECH_AFTER_10TH_PHYSICS_1,
+    ...MIT_WPU_CET_2026_BTECH_AFTER_10TH_CHEMISTRY_1,
+  ],
+};
+const JHARKHAND_PECE_TESTS: Record<string, Question[]> = {
+  'jharkhand-pece/polytechnic-engineering-full-mock-1': [
+    ...JHARKHAND_PECE_2026_PHYSICS_1,
+    ...JHARKHAND_PECE_2026_CHEMISTRY_1,
+    ...JHARKHAND_PECE_2026_MATHEMATICS_1,
+  ],
+};
+const KIITEE_TESTS: Record<string, Question[]> = {
+  'kiitee/btech-full-mock-1': [
+    ...KIITEE_2026_PHYSICS_1,
+    ...KIITEE_2026_CHEMISTRY_1,
+    ...KIITEE_2026_MATHEMATICS_1,
+  ],
+};
 const BITS_HD_TESTS: Record<string, Question[]> = {
   'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,
   'bits-hd/me-cs-full-mock-2': BITS_HD_2026_ME_CS_FULL_MOCK_2,
@@ -2622,7 +2654,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3222,6 +3254,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 90
     : testId.includes('jeecup/group-a-engineering-technology-full-mock')
     ? 100
+    : testId.includes('mit-wpu-cet/btech-after-10th-full-mock')
+    ? 100
+    : testId.includes('jharkhand-pece/polytechnic-engineering-full-mock')
+    ? 150
+    : testId.includes('kiitee/btech-full-mock')
+    ? 120
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -3560,6 +3598,22 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   'jeecup': [
     { section: 'Mathematics', count: 50 },
     { section: 'Physics & Chemistry', count: 50 },
+  ],
+  'mit-wpu-cet': [
+    { section: 'Basic Mathematics', count: 25 },
+    { section: 'Basic English', count: 25 },
+    { section: 'Physics', count: 25 },
+    { section: 'Chemistry', count: 25 },
+  ],
+  'jharkhand-pece': [
+    { section: 'Physics', count: 50 },
+    { section: 'Chemistry', count: 50 },
+    { section: 'Mathematics', count: 50 },
+  ],
+  'kiitee': [
+    { section: 'Physics', count: 40 },
+    { section: 'Chemistry', count: 40 },
+    { section: 'Mathematics', count: 40 },
   ],
   'cmat': [
     { section: 'Quantitative Techniques and Data Interpretation', count: 20 },
@@ -4993,6 +5047,22 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'jeecup': [
     JEECUP_2026_GROUP_A_MATHEMATICS_1[0],
     JEECUP_2026_GROUP_A_PHYSICS_CHEMISTRY_1[0],
+  ],
+  'mit-wpu-cet': [
+    MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_MATHEMATICS_1[0],
+    MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_ENGLISH_1[0],
+    MIT_WPU_CET_2026_BTECH_AFTER_10TH_PHYSICS_1[0],
+    MIT_WPU_CET_2026_BTECH_AFTER_10TH_CHEMISTRY_1[0],
+  ],
+  'jharkhand-pece': [
+    JHARKHAND_PECE_2026_PHYSICS_1[0],
+    JHARKHAND_PECE_2026_CHEMISTRY_1[0],
+    JHARKHAND_PECE_2026_MATHEMATICS_1[0],
+  ],
+  'kiitee': [
+    KIITEE_2026_PHYSICS_1[0],
+    KIITEE_2026_CHEMISTRY_1[0],
+    KIITEE_2026_MATHEMATICS_1[0],
   ],
   'bits-hd': [
     BITS_HD_2026_ME_CS_FULL_MOCK_1[0],

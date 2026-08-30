@@ -137,7 +137,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('SRMJEEE', 'Institute', 'srmjeee'),
           exam('Manipal Entrance Test', 'Institute', 'met'),
           exam('AEEE', 'Institute', 'aeee'),
-          exam('KIITEE', 'Institute'),
+          exam('KIITEE', 'Institute', 'kiitee'),
           exam('COMEDK UGET', 'State', 'comedk-uget'),
           exam('IIIT Hyderabad UGEE', 'Institute', 'iiit-hyderabad-ugee'),
           exam('JEE Main Paper 2: B.Arch & B.Planning', 'National', 'jee-main-paper-2'),
@@ -157,6 +157,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('LPUNEST', 'Institute', 'lpunest'),
           exam('NERIST NEE', 'Institute', 'nerist-nee'),
           exam('IEMJEE', 'Institute', 'iemjee'),
+          exam('MIT-WPU CET', 'Institute', 'mit-wpu-cet'),
         ],
       },
       {
@@ -180,6 +181,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('CG PET', 'State', 'cg-pet'),
           exam('HP PAT', 'State', 'hp-pat'),
           exam('JEECUP', 'State', 'jeecup'),
+          exam('Jharkhand PECE', 'State', 'jharkhand-pece'),
         ],
       },
       {

@@ -4,961 +4,961 @@ export const AP_POLYCET_2026_PHYSICS_1: Question[] = [
   {
     "id": "ap-polycet-2026-ph-001",
     "section": "Physics",
-    "topic": "Light - Reflection",
-    "difficulty": "easy",
-    "question": "A ray of light strikes a plane mirror at an angle of incidence of 35\u00b0. The angle of reflection is:",
+    "topic": "Heat",
+    "difficulty": "medium",
+    "question": "A 0.50 kg sample of water is heated from 24\u00b0C to 34\u00b0C. Taking the specific heat of water as 4200 J kg^-1 \u00b0C^-1, how much heat is absorbed?",
     "options": [
-      "145\u00b0",
-      "70\u00b0",
-      "35\u00b0",
-      "55\u00b0"
+      "21000 J",
+      "42000 J",
+      "10500 J",
+      "4200 J"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "By the law of reflection, the angle of reflection equals the angle of incidence. Hence it is 35\u00b0.",
+    "explanation": "Q=mc\u0394T=0.50\u00d74200\u00d710=21000 J.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-002",
     "section": "Physics",
-    "topic": "Light - Reflection",
-    "difficulty": "easy",
-    "question": "The image formed by a plane mirror is:",
+    "topic": "Heat",
+    "difficulty": "medium",
+    "question": "Equal masses of the same liquid at 82\u00b0C and 18\u00b0C are mixed in an insulated container. What is the final temperature?",
     "options": [
-      "virtual, inverted and diminished",
-      "real, erect and of the same size",
-      "real, inverted and enlarged",
-      "virtual, erect and of the same size as the object"
+      "32\u00b0C",
+      "50\u00b0C",
+      "64\u00b0C",
+      "100\u00b0C"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A plane mirror forms a virtual, erect, laterally inverted image of the same size as the object.",
+    "explanation": "For equal masses of the same substance with no heat loss, the equilibrium temperature is the average: (82+18)/2=50\u00b0C.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-003",
     "section": "Physics",
-    "topic": "Light - Spherical Mirrors",
-    "difficulty": "medium",
-    "question": "An object is placed 30 cm in front of a concave mirror whose focal length has magnitude 15 cm. The image is formed:",
+    "topic": "Heat",
+    "difficulty": "easy",
+    "question": "During melting of a pure solid at its melting point, supplied heat mainly increases the substance's _____.",
     "options": [
-      "30 cm behind the mirror",
-      "30 cm in front of the mirror",
-      "60 cm in front of the mirror",
-      "15 cm in front of the mirror"
+      "mass",
+      "density only",
+      "potential energy",
+      "temperature"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The object is at twice the focal length (2f). A concave mirror forms a real image at 2f, so the image is 30 cm in front of the mirror.",
+    "explanation": "During a phase change at constant temperature, latent heat changes molecular potential energy rather than temperature.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-004",
     "section": "Physics",
-    "topic": "Light - Spherical Mirrors",
+    "topic": "Heat",
     "difficulty": "easy",
-    "question": "For every position of a real object in front of a convex mirror, the image is:",
+    "question": "Which material is the best conductor of heat among these?",
     "options": [
-      "virtual, inverted and enlarged",
-      "real and of the same size",
-      "real, inverted and enlarged",
-      "virtual, erect and diminished"
+      "Plastic",
+      "Air",
+      "Wood",
+      "Copper"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A convex mirror always forms a virtual, erect and diminished image of a real object.",
+    "explanation": "Metals such as copper conduct heat much better than wood, plastic or air.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-005",
     "section": "Physics",
-    "topic": "Light - Refraction through Lenses",
+    "topic": "Heat",
     "difficulty": "medium",
-    "question": "A real object is placed 30 cm from a convex lens of focal length 20 cm. The real image distance is:",
+    "question": "A thermometer reads 68\u00b0F. What is the corresponding Celsius temperature?",
     "options": [
-      "60 cm",
-      "12 cm",
-      "24 cm",
-      "50 cm"
+      "20\u00b0C",
+      "32\u00b0C",
+      "36\u00b0C",
+      "10\u00b0C"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Using magnitudes for a real object and real image, 1/f = 1/v + 1/u. Thus 1/v=1/20\u22121/30=1/60, so v=60 cm.",
+    "explanation": "C=(F\u221232)\u00d75/9=(68\u221232)\u00d75/9=20\u00b0C.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-006",
     "section": "Physics",
-    "topic": "Light - Refraction",
-    "difficulty": "easy",
-    "question": "The refractive index of a transparent medium is 1.5. If the speed of light in vacuum is 3\u00d710\u2078 m/s, its speed in the medium is:",
+    "topic": "Heat",
+    "difficulty": "medium",
+    "question": "A 0.20 kg metal block of specific heat 400 J kg^-1 \u00b0C^-1 cools from 100\u00b0C to 30\u00b0C. How much heat does it release?",
     "options": [
-      "4.5\u00d710\u2078 m/s",
-      "2\u00d710\u2078 m/s",
-      "1.5\u00d710\u2078 m/s",
-      "3\u00d710\u2078 m/s"
+      "11200 J",
+      "5600 J",
+      "8000 J",
+      "2800 J"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "n=c/v, so v=c/n=(3\u00d710\u2078)/1.5=2\u00d710\u2078 m/s.",
+    "explanation": "Q=mc\u0394T=0.20\u00d7400\u00d770=5600 J.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-007",
     "section": "Physics",
-    "topic": "Light - Refraction",
-    "difficulty": "medium",
-    "question": "A ray passes from air into glass and bends towards the normal. Which quantity definitely decreases on entering the glass?",
+    "topic": "Heat",
+    "difficulty": "easy",
+    "question": "Why does water boil at a temperature below 100\u00b0C on a high mountain?",
     "options": [
-      "number of wavefronts emitted per second",
-      "frequency and wavelength both remain unchanged",
-      "frequency of light",
-      "speed of light"
+      "Gravity is absent",
+      "Specific heat becomes zero",
+      "Atmospheric pressure is lower",
+      "Water has higher density"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "On entering an optically denser medium, light slows down. Its frequency remains unchanged, while its wavelength decreases.",
+    "explanation": "Boiling occurs when vapour pressure equals external pressure. Lower atmospheric pressure lowers the boiling temperature.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-008",
     "section": "Physics",
-    "topic": "Light - Refraction",
-    "difficulty": "medium",
-    "question": "If the refractive index of medium B with respect to medium A is 4/3, then the ratio speed in A : speed in B is:",
+    "topic": "Heat",
+    "difficulty": "easy",
+    "question": "Why does evaporation from wet skin produce a cooling sensation?",
     "options": [
-      "1:1",
-      "16:9",
-      "3:4",
-      "4:3"
+      "The liquid gains mass",
+      "Air stops moving",
+      "The skin produces latent heat",
+      "Higher-energy molecules escape, lowering the average energy of those left"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Relative refractive index nBA=vA/vB=4/3. Therefore vA:vB=4:3.",
+    "explanation": "Evaporation preferentially removes more energetic molecules, so the remaining liquid and skin cool.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-009",
     "section": "Physics",
-    "topic": "Light - Lenses",
-    "difficulty": "easy",
-    "question": "The power of a convex lens of focal length 0.50 m is:",
+    "topic": "Reflection of Light",
+    "difficulty": "hard",
+    "question": "A 3.5 cm tall object is placed 35 cm in front of a concave mirror of focal length 14 cm. What is the image height and orientation?",
     "options": [
-      "\u22122 D",
-      "+2 D",
-      "+0.5 D",
-      "\u22120.5 D"
+      "7/3 cm, inverted",
+      "3.5 cm, inverted",
+      "7 cm, inverted",
+      "7/3 cm, erect"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Power P=1/f in metres. Thus P=1/0.50=+2 dioptres for a convex lens.",
+    "explanation": "With f=\u221214 cm and u=\u221235 cm, 1/v=1/f\u22121/u=\u22121/14+1/35=\u22123/70, so v=\u221270/3 cm. Magnification m=\u2212v/u=\u22122/3. Hence image height=|m|\u00d73.5=7/3 cm and the negative magnification means inverted.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-010",
     "section": "Physics",
-    "topic": "Human Eye",
+    "topic": "Reflection of Light",
     "difficulty": "easy",
-    "question": "Myopia is commonly corrected using a:",
+    "question": "Which description is always true for an image formed by a convex mirror?",
     "options": [
-      "concave lens",
-      "plane glass plate",
-      "convex lens",
-      "cylindrical mirror"
+      "Real and same size",
+      "Virtual, erect and diminished",
+      "Real, inverted and enlarged",
+      "Virtual and inverted"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "A convex mirror always forms a virtual, erect and diminished image behind the mirror.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-011",
+    "section": "Physics",
+    "topic": "Refraction of Light",
+    "difficulty": "medium",
+    "question": "An object and a screen are fixed 84 cm apart. A convex lens placed between them, 35 cm from the object, forms a sharp real image on the screen. What is the focal length of the lens?",
+    "options": [
+      "17.5 cm",
+      "19.6 cm",
+      "245/12 cm",
+      "24.5 cm"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The object distance magnitude is 35 cm and the image distance is 84\u221235=49 cm. For a real object and real image, 1/f=1/35+1/49=(7+5)/245=12/245. Therefore f=245/12 cm.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-012",
+    "section": "Physics",
+    "topic": "Refraction of Light",
+    "difficulty": "easy",
+    "question": "Light travels at 2.25\u00d710^8 m/s in medium X and at 1.80\u00d710^8 m/s in medium Y. What is the refractive index of Y with respect to X?",
+    "options": [
+      "4/5",
+      "9/8",
+      "3/2",
+      "5/4"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The refractive index of Y relative to X is n_YX=v_X/v_Y. Thus n_YX=(2.25\u00d710^8)/(1.80\u00d710^8)=2.25/1.80=1.25=5/4.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-013",
+    "section": "Physics",
+    "topic": "Refraction of Light",
+    "difficulty": "medium",
+    "question": "For light entering a medium from air, sin i=0.60 and sin r=0.40. What is the refractive index of the medium?",
+    "options": [
+      "1.5",
+      "0.67",
+      "1.0",
+      "2.4"
     ],
     "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "By Snell's law for air to medium, n=sin i/sin r=0.60/0.40=1.5.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-014",
+    "section": "Physics",
+    "topic": "Refraction of Light",
+    "difficulty": "medium",
+    "question": "The same monochromatic ray enters media X and Y from air at the same non-zero angle of incidence. Its angles of refraction are 32\u00b0 in X and 24\u00b0 in Y. Which statement is correct?",
+    "options": [
+      "Light has larger speed but the same wavelength in Y as in X.",
+      "Light has smaller speed and smaller wavelength in Y than in X.",
+      "Light has the same speed in both media but a smaller frequency in Y.",
+      "Light has smaller speed and smaller wavelength in X than in Y."
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "For the same incidence angle, the smaller refraction angle in Y means Y has the larger refractive index. Hence light travels more slowly in Y. Frequency stays unchanged on refraction, so \u03bb=v/f is also smaller in Y.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-015",
+    "section": "Physics",
+    "topic": "Refraction of Light",
+    "difficulty": "medium",
+    "question": "A transparent material has refractive index \u221a2 relative to air. What is its critical angle for light going from the material to air?",
+    "options": [
+      "60\u00b0",
+      "30\u00b0",
+      "45\u00b0",
+      "90\u00b0"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "sin C=1/n=1/\u221a2, so C=45\u00b0.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-016",
+    "section": "Physics",
+    "topic": "Refraction of Light",
+    "difficulty": "easy",
+    "question": "A ray passing through a parallel-sided glass slab emerges _____.",
+    "options": [
+      "perpendicular to the incident ray",
+      "with no refraction at either surface",
+      "along the normal in every case",
+      "parallel to the incident ray but laterally displaced"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Refraction at the two parallel faces produces a lateral shift, but the emergent ray is parallel to the incident ray.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-017",
+    "section": "Physics",
+    "topic": "Lenses",
+    "difficulty": "hard",
+    "question": "An object is 24 cm from a convex lens of focal length 16 cm. What is the image distance?",
+    "options": [
+      "48 cm",
+      "24 cm",
+      "40 cm",
+      "9.6 cm"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "For a convex lens, 1/f=1/v\u22121/u. With f=16 cm and u=\u221224 cm, 1/v=1/16\u22121/24=1/48, so v=48 cm.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-018",
+    "section": "Physics",
+    "topic": "Lenses",
+    "difficulty": "hard",
+    "question": "A concave lens has focal length 18 cm in magnitude. An object is 36 cm in front of it. Where is the image?",
+    "options": [
+      "54 cm in front of the lens",
+      "12 cm in front of the lens",
+      "12 cm behind the lens",
+      "36 cm behind the lens"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "For f=\u221218 cm and u=\u221236 cm, 1/v\u22121/u=1/f gives 1/v+1/36=\u22121/18, so 1/v=\u22121/12 and v=\u221212 cm.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-019",
+    "section": "Physics",
+    "topic": "Human Eye and Colourful World",
+    "difficulty": "easy",
+    "question": "Which lens is used to correct myopia?",
+    "options": [
+      "Cylindrical mirror",
+      "Plane glass plate",
+      "Concave lens",
+      "Convex lens"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
     "explanation": "A concave lens diverges incoming rays so that a myopic eye can focus distant objects on the retina.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-011",
-    "section": "Physics",
-    "topic": "Human Eye",
-    "difficulty": "easy",
-    "question": "Hypermetropia is commonly corrected using a:",
-    "options": [
-      "concave lens",
-      "prism only",
-      "convex lens",
-      "plane mirror"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "A convex lens converges rays before they enter the eye and helps a hypermetropic eye focus nearby objects on the retina.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-012",
-    "section": "Physics",
-    "topic": "Human Eye and Colourful World",
-    "difficulty": "medium",
-    "question": "White light splits into different colours while passing through a prism mainly because:",
-    "options": [
-      "the prism absorbs only red light",
-      "different colours are refracted by different amounts",
-      "reflection changes each colour into a new colour",
-      "all colours travel at exactly the same speed in glass"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The refractive index of glass depends on wavelength, so different colours bend by different amounts and separate.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-013",
-    "section": "Physics",
-    "topic": "Human Eye and Colourful World",
-    "difficulty": "easy",
-    "question": "The sky appears blue mainly due to:",
-    "options": [
-      "dispersion only inside raindrops",
-      "greater scattering of shorter wavelengths by the atmosphere",
-      "absorption of all blue light by air",
-      "reflection of ocean water"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Shorter wavelengths such as blue are scattered more strongly by small particles and molecules in the atmosphere.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-014",
-    "section": "Physics",
-    "topic": "Human Eye and Colourful World",
-    "difficulty": "medium",
-    "question": "A rainbow is observed when sunlight in raindrops undergoes:",
-    "options": [
-      "only absorption",
-      "only reflection",
-      "only diffraction",
-      "refraction, dispersion and internal reflection"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Sunlight is refracted and dispersed on entering a drop, internally reflected, and refracted again on leaving it.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-015",
-    "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "easy",
-    "question": "If 24 C of charge flows through a conductor in 6 s, the current is:",
-    "options": [
-      "4 A",
-      "144 A",
-      "18 A",
-      "0.25 A"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Current I=Q/t=24/6=4 A.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-016",
-    "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "easy",
-    "question": "A 6 \u03a9 resistor is connected across a 12 V source. The current through it is:",
-    "options": [
-      "72 A",
-      "6 A",
-      "2 A",
-      "0.5 A"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "By Ohm's law, I=V/R=12/6=2 A.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-017",
-    "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "easy",
-    "question": "Two resistors of 4 \u03a9 and 6 \u03a9 are connected in series. Their equivalent resistance is:",
-    "options": [
-      "24 \u03a9",
-      "10 \u03a9",
-      "2.4 \u03a9",
-      "5 \u03a9"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Series resistances add directly: R=4+6=10 \u03a9.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-018",
-    "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "medium",
-    "question": "Two resistors of 6 \u03a9 and 3 \u03a9 are connected in parallel. Their equivalent resistance is:",
-    "options": [
-      "4.5 \u03a9",
-      "2 \u03a9",
-      "3 \u03a9",
-      "9 \u03a9"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "1/R=1/6+1/3=3/6=1/2, so R=2 \u03a9.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-019",
-    "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "easy",
-    "question": "An electrical device operates at 12 V and draws 2 A. Its power is:",
-    "options": [
-      "14 W",
-      "144 W",
-      "6 W",
-      "24 W"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Electrical power P=VI=12\u00d72=24 W.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-020",
     "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "medium",
-    "question": "A 1 kW heater is used for 2 hours. The electrical energy consumed is:",
+    "topic": "Human Eye and Colourful World",
+    "difficulty": "easy",
+    "question": "Which lens is commonly used to correct hypermetropia?",
     "options": [
-      "0.5 kWh",
-      "1 kWh",
-      "3 kWh",
-      "2 kWh"
+      "Prism only",
+      "Concave lens",
+      "Plane mirror",
+      "Convex lens"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Energy in kWh = power in kW \u00d7 time in hours = 1\u00d72 = 2 kWh.",
+    "explanation": "A convex lens adds convergence for a hypermetropic eye, helping focus nearby objects on the retina.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-021",
     "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "medium",
-    "question": "A current of 2 A passes through a 5 \u03a9 resistor for 3 minutes. The heat produced is:",
+    "topic": "Human Eye and Colourful World",
+    "difficulty": "easy",
+    "question": "The least distance of distinct vision for a normal adult eye is approximately _____.",
     "options": [
-      "7200 J",
-      "60 J",
-      "3600 J",
-      "1200 J"
+      "25 cm",
+      "100 cm",
+      "50 cm",
+      "2.5 cm"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Joule heat H=I\u00b2Rt=2\u00b2\u00d75\u00d7(3\u00d760)=4\u00d75\u00d7180=3600 J.",
+    "explanation": "The normal near point is conventionally taken as about 25 cm.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-022",
     "section": "Physics",
-    "topic": "Electricity",
+    "topic": "Human Eye and Colourful World",
     "difficulty": "medium",
-    "question": "A wire is replaced by another of the same material whose length is doubled and cross-sectional area is halved. Its resistance becomes:",
+    "question": "In a glass prism, which visible colour generally deviates the most?",
     "options": [
-      "8 times the original",
-      "2 times the original",
-      "4 times the original",
-      "half the original"
+      "Red",
+      "Violet",
+      "Yellow",
+      "Green"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "R=\u03c1L/A. Doubling L gives \u00d72 and halving A gives another \u00d72, so the new resistance is 4R.",
+    "explanation": "The refractive index of glass is greatest for violet light, so violet deviates the most.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-023",
     "section": "Physics",
-    "topic": "Electricity",
+    "topic": "Human Eye and Colourful World",
     "difficulty": "medium",
-    "question": "The resistivity of a conductor primarily depends on:",
+    "question": "Which combination of effects is mainly responsible for formation of a rainbow in raindrops?",
     "options": [
-      "the material and its temperature",
-      "only its length",
-      "its length and area but not material",
-      "only its cross-sectional area"
+      "Conduction and convection",
+      "Only reflection from cloud tops",
+      "Refraction, dispersion and internal reflection",
+      "Only diffraction"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Resistivity is a material property that changes with temperature; it does not depend on the conductor's dimensions.",
+    "explanation": "Sunlight is refracted and dispersed on entering droplets, internally reflected, and refracted again on leaving.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-024",
     "section": "Physics",
-    "topic": "Domestic Electric Circuits",
-    "difficulty": "easy",
-    "question": "The main purpose of a fuse in an electric circuit is to:",
+    "topic": "Human Eye and Colourful World",
+    "difficulty": "medium",
+    "question": "Why does the clear daytime sky appear blue?",
     "options": [
-      "increase the supply voltage",
-      "make all appliances consume equal power",
-      "store electrical charge",
-      "break the circuit when current becomes excessive"
+      "Blue light travels fastest in vacuum",
+      "The Sun emits only blue light",
+      "Air absorbs only red light",
+      "Shorter wavelengths are scattered more strongly"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A fuse melts when current exceeds a safe value, opening the circuit and protecting wiring and appliances.",
+    "explanation": "Rayleigh scattering is much stronger for shorter visible wavelengths, making scattered skylight predominantly blue.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-025",
     "section": "Physics",
-    "topic": "Magnetic Effects of Electric Current",
+    "topic": "Electric Current",
     "difficulty": "easy",
-    "question": "The direction of the magnetic field around a straight current-carrying conductor is found using the:",
+    "question": "A 7 \u03a9 resistor is connected across 21 V. What current flows through it?",
     "options": [
-      "law of reflection",
-      "right-hand thumb rule",
-      "Snell's law",
-      "Fleming's left-hand rule only"
+      "3 A",
+      "147 A",
+      "7 A",
+      "1/3 A"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The right-hand thumb rule gives the circular direction of magnetic field lines around a straight current-carrying conductor.",
+    "explanation": "By Ohm's law, I=V/R=21/7=3 A.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-026",
     "section": "Physics",
-    "topic": "Magnetic Effects of Electric Current",
-    "difficulty": "medium",
-    "question": "Inside a long current-carrying solenoid, the magnetic field is approximately:",
+    "topic": "Electric Current",
+    "difficulty": "easy",
+    "question": "What is the equivalent resistance of 4 \u03a9 and 6 \u03a9 connected in series?",
     "options": [
-      "uniform and parallel to its axis",
-      "strongly random in direction",
-      "circular around each end only",
-      "zero everywhere"
+      "2.4 \u03a9",
+      "10 \u03a9",
+      "24 \u03a9",
+      "5 \u03a9"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Closely spaced field lines inside a long solenoid indicate an approximately uniform field directed along its axis.",
+    "explanation": "Series resistances add directly: 4+6=10 \u03a9.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-027",
     "section": "Physics",
-    "topic": "Magnetic Effects of Electric Current",
+    "topic": "Electric Current",
     "difficulty": "medium",
-    "question": "Fleming's left-hand rule is used to find the direction of:",
+    "question": "What is the equivalent resistance of 8 \u03a9 and 12 \u03a9 connected in parallel?",
     "options": [
-      "reflected light from a mirror",
-      "heat flow through a resistor",
-      "force on a current-carrying conductor in a magnetic field",
-      "induced current in a generator"
+      "20 \u03a9",
+      "5 \u03a9",
+      "4.8 \u03a9",
+      "10 \u03a9"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Fleming's left-hand rule relates magnetic field, current and force for the motor effect.",
+    "explanation": "1/R=1/8+1/12=5/24, so R=24/5=4.8 \u03a9.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-028",
     "section": "Physics",
-    "topic": "Electromagnetic Induction",
-    "difficulty": "medium",
-    "question": "An electric current can be induced in a coil by:",
+    "topic": "Electric Current",
+    "difficulty": "hard",
+    "question": "A heating coil of resistance 125 \u03a9 is operated first at 250 V and then at 200 V. By how much does its power decrease?",
     "options": [
-      "keeping both coil and magnet perfectly stationary",
-      "connecting the coil only to a resistor while the magnetic field stays unchanged",
-      "changing the magnetic field linked with the coil",
-      "heating the coil without any changing magnetic field"
+      "80 W",
+      "320 W",
+      "500 W",
+      "180 W"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Electromagnetic induction occurs when the magnetic field linked with a coil changes, for example by moving a magnet relative to the coil.",
+    "explanation": "At 250 V, P1=V\u00b2/R=250\u00b2/125=500 W. At 200 V, P2=200\u00b2/125=320 W. The decrease is 500\u2212320=180 W.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-029",
     "section": "Physics",
-    "topic": "Electric Generator",
+    "topic": "Electric Current",
     "difficulty": "easy",
-    "question": "An electric generator converts:",
+    "question": "A 1.0 kW heater runs for 3 hours. How much electrical energy does it use?",
     "options": [
-      "electrical energy into mechanical energy",
-      "chemical energy directly into sound energy",
-      "light energy directly into magnetic energy",
-      "mechanical energy into electrical energy"
+      "3 kWh",
+      "1 kWh",
+      "3000 kWh",
+      "0.33 kWh"
     ],
-    "correctIndex": 3,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A generator uses electromagnetic induction to convert mechanical work into electrical energy.",
+    "explanation": "Energy=power\u00d7time=1.0 kW\u00d73 h=3 kWh.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-030",
     "section": "Physics",
-    "topic": "Electric Motor",
-    "difficulty": "easy",
-    "question": "An electric motor works mainly on the principle that:",
+    "topic": "Electric Current",
+    "difficulty": "hard",
+    "question": "A wire's length is doubled while its cross-sectional area is halved, with material unchanged. Its resistance becomes _____.",
     "options": [
-      "a current-carrying conductor in a magnetic field experiences a force",
-      "a stationary charge always produces a magnetic field",
-      "resistance is independent of temperature",
-      "a prism disperses white light"
+      "1/4 times",
+      "4 times",
+      "1/2 times",
+      "2 times"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The magnetic force on a current-carrying conductor produces torque and hence rotation in a motor.",
+    "explanation": "R=\u03c1L/A. Replacing L by 2L and A by A/2 multiplies R by 4.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-031",
     "section": "Physics",
-    "topic": "Domestic Electric Circuits",
+    "topic": "Electric Current",
     "difficulty": "easy",
-    "question": "Household appliances are connected in parallel mainly so that:",
+    "question": "A safety fuse in a household circuit should be connected in the _____.",
     "options": [
-      "each appliance gets the supply voltage and can be switched independently",
-      "one failed appliance switches off all others",
-      "total resistance always becomes infinite",
-      "the same current must flow through every appliance"
+      "live and neutral wires in parallel",
+      "earth wire only",
+      "live wire in series with the circuit",
+      "neutral wire in parallel"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Parallel branches receive the same supply voltage, and opening one branch does not interrupt the others.",
+    "explanation": "A fuse must interrupt the live supply when current is excessive, so it is placed in series in the live wire.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-032",
     "section": "Physics",
-    "topic": "Domestic Electric Circuits",
-    "difficulty": "medium",
-    "question": "Earthing an appliance with a metal body helps protect a user because it:",
-    "options": [
-      "prevents any current from entering the appliance",
-      "raises the metal body to a high voltage",
-      "provides a low-resistance path for leakage current to the ground",
-      "replaces the need for insulation in all wires"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "If a fault makes the metal body live, the earth wire provides a low-resistance path so protective devices can operate and shock risk is reduced.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-033",
-    "section": "Physics",
-    "topic": "Light - Spherical Mirrors",
-    "difficulty": "medium",
-    "question": "A concave mirror forms a real inverted image that is half the size of the object. The magnitude of magnification is:",
-    "options": [
-      "2",
-      "1",
-      "0.5",
-      "\u22122"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Magnification magnitude is image size/object size. Half-size means |m|=1/2=0.5.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-034",
-    "section": "Physics",
-    "topic": "Light - Refraction through Lenses",
-    "difficulty": "medium",
-    "question": "A convex lens forms a real image three times the height of the object. If the object height is 2 cm, the image height in magnitude is:",
-    "options": [
-      "6 cm",
-      "9 cm",
-      "3 cm",
-      "1.5 cm"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Magnification magnitude = image height/object height = 3, so image height = 3\u00d72 = 6 cm.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-035",
-    "section": "Physics",
-    "topic": "Light - Refraction",
-    "difficulty": "medium",
-    "question": "Light travels at 2.4\u00d710\u2078 m/s in a transparent material. Taking c = 3.0\u00d710\u2078 m/s, the refractive index is:",
-    "options": [
-      "1.50",
-      "2.40",
-      "1.25",
-      "0.80"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "n=c/v=(3.0\u00d710\u2078)/(2.4\u00d710\u2078)=1.25.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-036",
-    "section": "Physics",
-    "topic": "Electricity",
-    "difficulty": "medium",
-    "question": "A 4 \u03a9 resistor and a 8 \u03a9 resistor are connected in series across 24 V. The current in the circuit is:",
-    "options": [
-      "6 A",
-      "2 A",
-      "1 A",
-      "3 A"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Equivalent resistance is 4+8=12 \u03a9. Hence I=V/R=24/12=2 A.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ph-037",
-    "section": "Physics",
-    "topic": "Electricity",
+    "topic": "Electric Current",
     "difficulty": "hard",
-    "question": "A 4 \u03a9 resistor and a 12 \u03a9 resistor are connected in parallel, and this combination is in series with a 2 \u03a9 resistor. The total resistance is:",
+    "question": "A 1.5 A current flows through an 8 \u03a9 resistor for 12 s. How much heat is produced?",
     "options": [
-      "8 \u03a9",
-      "18 \u03a9",
-      "3 \u03a9",
-      "5 \u03a9"
+      "72 J",
+      "288 J",
+      "144 J",
+      "216 J"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The parallel pair has resistance (4\u00d712)/(4+12)=48/16=3 \u03a9. Adding the 2 \u03a9 series resistor gives 5 \u03a9.",
+    "explanation": "Joule heat H=I\u00b2Rt=(1.5)\u00b2\u00d78\u00d712=2.25\u00d796=216 J.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ph-038",
+    "id": "ap-polycet-2026-ph-033",
     "section": "Physics",
-    "topic": "Light - Refraction through Lenses",
-    "difficulty": "hard",
-    "question": "A convex lens of focal length 10 cm forms a real image 15 cm from the lens. The object distance in magnitude is:",
+    "topic": "Electromagnetism",
+    "difficulty": "easy",
+    "question": "The magnetic field lines around a long straight current-carrying conductor are _____.",
     "options": [
-      "25 cm",
-      "30 cm",
-      "12 cm",
-      "6 cm"
+      "concentric circles",
+      "ellipses with the wire at one focus",
+      "straight parallel lines",
+      "radial lines"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The field around a straight conductor forms concentric circles centred on the wire.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-034",
+    "section": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "easy",
+    "question": "Fleming's left-hand rule is used to determine the direction of _____.",
+    "options": [
+      "induced current in a generator",
+      "force on a current-carrying conductor in a magnetic field",
+      "heat flow in a resistor",
+      "refraction in a lens"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For a real object and real image, 1/f=1/v+1/u. Thus 1/u=1/10\u22121/15=1/30, so u=30 cm.",
+    "explanation": "The left-hand rule relates magnetic field, current and force for the motor effect.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-035",
+    "section": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "easy",
+    "question": "An electric generator primarily converts _____.",
+    "options": [
+      "light into mechanical energy only",
+      "electrical energy into chemical energy",
+      "mechanical energy into electrical energy",
+      "heat into mass"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "A generator uses electromagnetic induction to convert mechanical rotation into electrical energy.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-036",
+    "section": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "medium",
+    "question": "The magnetic field pattern of a long current-carrying solenoid resembles that of a _____.",
+    "options": [
+      "plane mirror",
+      "charged sphere",
+      "convex lens",
+      "bar magnet"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "A solenoid has distinct north and south ends and a field pattern similar to a bar magnet.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-037",
+    "section": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "medium",
+    "question": "If the current through a straight conductor is reversed, what happens to its magnetic field?",
+    "options": [
+      "Its direction reverses",
+      "It becomes an electric field only",
+      "Its magnitude becomes zero permanently",
+      "Its direction is unchanged"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The right-hand thumb rule shows that reversing current reverses the direction of the circular magnetic field.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ph-038",
+    "section": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "medium",
+    "question": "When a bar magnet is moved rapidly into a coil connected to a galvanometer, the galvanometer deflects because _____.",
+    "options": [
+      "the magnet creates electric charge from nothing",
+      "a changing magnetic flux induces an emf",
+      "the coil becomes hotter by friction",
+      "the coil's resistance becomes zero"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Faraday's law states that a changing magnetic flux through a coil induces an emf and hence current in a closed circuit.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-039",
     "section": "Physics",
-    "topic": "Electricity",
+    "topic": "Electromagnetism",
     "difficulty": "medium",
-    "question": "A 6 \u03a9 resistor and a 3 \u03a9 resistor are connected in parallel across 12 V. The total current drawn from the source is:",
+    "question": "The magnetic force on a straight current-carrying wire is greatest when the wire is _____.",
     "options": [
-      "6 A",
-      "2 A",
-      "4 A",
-      "8 A"
+      "outside every magnetic field",
+      "parallel to the magnetic field",
+      "perpendicular to the magnetic field",
+      "at 0\u00b0 to the field"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Equivalent resistance is 2 \u03a9. Therefore total current I=12/2=6 A.",
+    "explanation": "F=BIL sin\u03b8, which is maximum at \u03b8=90\u00b0.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ph-040",
     "section": "Physics",
-    "topic": "Light - Spherical Mirrors",
-    "difficulty": "medium",
-    "question": "An object is placed at the centre of curvature of a concave mirror. The image formed is:",
+    "topic": "Electromagnetism",
+    "difficulty": "easy",
+    "question": "An electric motor converts electrical energy mainly into _____.",
     "options": [
-      "real, inverted and of the same size",
-      "virtual, erect and enlarged",
-      "virtual, inverted and of the same size",
-      "real, erect and diminished"
+      "gravitational potential energy only",
+      "chemical energy",
+      "nuclear energy",
+      "mechanical energy"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For an object at the centre of curvature of a concave mirror, the image forms at the centre of curvature, real, inverted and equal in size.",
+    "explanation": "A motor uses magnetic force on current-carrying conductors to produce mechanical motion.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   }
 ];

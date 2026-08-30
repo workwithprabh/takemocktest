@@ -4,586 +4,582 @@ export const LPUNEST_2026_CHEMISTRY_1: Question[] = [
   {
     "id": "lpunest-2026-ch-001",
     "section": "Chemistry",
-    "topic": "Some Basic Concepts in Chemistry",
-    "difficulty": "medium",
-    "question": "Aluminium burns according to 4Al + 3O2 -> 2Al2O3. What mass of O2 is required to react completely with 5.4 g of Al? Use Al = 27 g/mol and O = 16 g/mol.",
+    "topic": "Mole concept and stoichiometry",
+    "difficulty": "easy",
+    "question": "When 4.6 g of sodium reacts completely with excess water, how many moles of hydrogen gas are formed? (Molar mass of Na = 23 g mol^-1)",
+    "options": [
+      "0.05 mol",
+      "0.20 mol",
+      "0.10 mol",
+      "0.40 mol"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "5.4 g Al is 0.20 mol. The equation requires (3/4)*0.20=0.15 mol O2, whose mass is 0.15*32=4.8 g.",
+    "explanation": "4.6 g Na = 0.20 mol. From 2Na + 2H2O \u2192 2NaOH + H2, 2 mol Na produce 1 mol H2, so H2 = 0.10 mol.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "4.8 g",
-      "3.2 g",
-      "6.4 g",
-      "9.6 g"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-002",
     "section": "Chemistry",
-    "topic": "Atomic Structure",
+    "topic": "Atomic structure",
     "difficulty": "easy",
-    "question": "How many orbitals are present in the shell with principal quantum number n = 4?",
+    "question": "What is the maximum number of electrons that can occupy all orbitals of the 3d subshell?",
+    "options": [
+      "5",
+      "6",
+      "10",
+      "14"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "The total number of orbitals in a shell is n^2. For n=4, this is 16.",
+    "explanation": "A d subshell has five orbitals, and each orbital holds at most two electrons. Therefore the maximum is 10.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "4",
-      "8",
-      "16",
-      "32"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-003",
     "section": "Chemistry",
-    "topic": "Chemical Bonding and Molecular Structure",
+    "topic": "Chemical bonding and molecular structure",
     "difficulty": "medium",
-    "question": "According to molecular orbital theory, why is O2 paramagnetic?",
+    "question": "According to VSEPR theory, the molecular shape of ClF3 is",
+    "options": [
+      "trigonal planar",
+      "tetrahedral",
+      "linear",
+      "T-shaped"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "The MO configuration of O2 places two electrons singly in the degenerate pi* antibonding orbitals, producing paramagnetism.",
+    "explanation": "ClF3 has five electron domains around Cl: three bonding pairs and two lone pairs. In a trigonal-bipyramidal electron arrangement, the two lone pairs occupy equatorial positions, giving a T-shaped molecule.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "It has one unpaired electron in a sigma bonding orbital",
-      "All its electrons are paired but it has a permanent dipole",
-      "It contains an O-O ionic bond",
-      "It has two unpaired electrons in antibonding pi orbitals"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-004",
     "section": "Chemistry",
-    "topic": "Chemical Thermodynamics",
-    "difficulty": "hard",
-    "question": "A reaction has Delta H degrees = +24 kJ/mol and Delta S degrees = +80 J mol^-1 K^-1. At 350 K, what is Delta G degrees and what does it predict under standard conditions?",
+    "topic": "Chemical thermodynamics",
+    "difficulty": "easy",
+    "question": "For the processes A \u2192 B, \u0394H = +40 kJ mol^-1 and B \u2192 C, \u0394H = -70 kJ mol^-1. The enthalpy change for A \u2192 C is",
+    "options": [
+      "-110 kJ mol^-1",
+      "+30 kJ mol^-1",
+      "+110 kJ mol^-1",
+      "-30 kJ mol^-1"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Convert Delta S degrees to 0.080 kJ mol^-1 K^-1. Then Delta G degrees = Delta H degrees - T Delta S degrees = 24 - 350(0.080) = 24 - 28 = -4 kJ/mol. Negative Delta G degrees predicts spontaneity under standard conditions.",
+    "explanation": "By Hess's law, \u0394H(A\u2192C)=\u0394H(A\u2192B)+\u0394H(B\u2192C)=40-70=-30 kJ mol^-1.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "+4 kJ/mol; non-spontaneous",
-      "-4 kJ/mol; spontaneous",
-      "+52 kJ/mol; non-spontaneous",
-      "-52 kJ/mol; spontaneous"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-005",
     "section": "Chemistry",
     "topic": "Solutions",
-    "difficulty": "easy",
-    "question": "A solution contains 1 mol of solute and 4 mol of solvent. What is the mole fraction of the solute?",
+    "difficulty": "hard",
+    "question": "A solution is prepared by dissolving 9.0 g glucose (molar mass 180 g mol^-1) in 90 g water. The mole fraction of glucose is closest to",
+    "options": [
+      "0.0010",
+      "0.0099",
+      "0.0500",
+      "0.1000"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Mole fraction of solute = 1/(1+4)=0.20.",
+    "explanation": "Moles glucose = 9/180=0.05; moles water = 90/18=5.00. Mole fraction glucose = 0.05/5.05 \u2248 0.0099.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "0.25",
-      "0.40",
-      "0.20",
-      "0.80"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-006",
     "section": "Chemistry",
-    "topic": "Equilibrium",
-    "difficulty": "easy",
-    "question": "For N2O4(g) <=> 2NO2(g), what is the effect of increasing pressure at constant temperature?",
+    "topic": "Chemical equilibrium",
+    "difficulty": "medium",
+    "question": "For a reaction at a fixed temperature, the reaction quotient Q is smaller than the equilibrium constant K. The reaction will initially proceed",
+    "options": [
+      "in the reverse direction",
+      "in the forward direction",
+      "with no net change",
+      "only if a catalyst is added"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Higher pressure favours the side with fewer moles of gas. N2O4 side has one mole versus two on the NO2 side, so equilibrium shifts left.",
+    "explanation": "When Q<K, the system must form more products to reach equilibrium, so the net reaction proceeds forward.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "Equilibrium shifts toward N2O4",
-      "Equilibrium shifts toward NO2",
-      "The equilibrium constant increases",
-      "No equilibrium shift occurs"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-007",
     "section": "Chemistry",
-    "topic": "Redox Reactions and Electrochemistry - II",
-    "difficulty": "medium",
-    "question": "Given E degrees(Cu2+/Cu) = +0.34 V and E degrees(Zn2+/Zn) = -0.76 V, what is the standard emf of a Zn-Cu galvanic cell?",
+    "topic": "Ionic equilibrium",
+    "difficulty": "easy",
+    "question": "The pH of a 1.0\u00d710^-3 M solution of a strong monoprotic acid is",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "11"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Ecell degrees = Ecathode degrees - Eanode degrees = 0.34 - (-0.76)=1.10 V.",
+    "explanation": "For a strong monoprotic acid, [H+] = 10^-3 M. Thus pH = -log10(10^-3)=3.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "0.42 V",
-      "0.76 V",
-      "1.52 V",
-      "1.10 V"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-008",
     "section": "Chemistry",
-    "topic": "Chemical Kinetics",
+    "topic": "Electrochemistry",
     "difficulty": "medium",
-    "question": "For a first-order reaction, what happens to the half-life if the rate constant is doubled while temperature and all other conditions are otherwise represented by the new k?",
+    "question": "Given E\u00b0(Cu2+/Cu)=+0.34 V and E\u00b0(Zn2+/Zn)=-0.76 V, the standard emf of the Zn-Cu galvanic cell is",
+    "options": [
+      "0.42 V",
+      "0.76 V",
+      "1.10 V",
+      "1.44 V"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "For a first-order reaction, t_1/2 = ln2/k. Doubling k halves the half-life.",
+    "explanation": "Cu is the cathode and Zn the anode. E\u00b0cell = E\u00b0cathode - E\u00b0anode = 0.34 - (-0.76)=1.10 V.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "It doubles",
-      "It becomes four times",
-      "It becomes half",
-      "It remains unchanged"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-009",
     "section": "Chemistry",
-    "topic": "Classification of Elements and Periodicity in Properties",
-    "difficulty": "medium",
-    "question": "Which comparison correctly reflects the well-known first-ionization-enthalpy exception across Period 3?",
+    "topic": "Chemical kinetics",
+    "difficulty": "easy",
+    "question": "For a first-order reaction, the half-life",
+    "options": [
+      "is independent of initial concentration",
+      "increases with initial concentration",
+      "decreases with initial concentration",
+      "is zero at high temperature"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Al loses a 3p electron, which is easier to remove than the 3s electron removed from Mg. Hence the first ionization enthalpy of Mg is slightly higher than that of Al.",
+    "explanation": "For a first-order reaction, t1/2 = 0.693/k, so it does not depend on the initial concentration.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "Al has a higher first ionization enthalpy than Mg",
-      "Na has a higher first ionization enthalpy than Mg",
-      "Cl has a lower first ionization enthalpy than S",
-      "Mg has a higher first ionization enthalpy than Al"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-010",
     "section": "Chemistry",
-    "topic": "p-Block Elements",
+    "topic": "Periodicity",
     "difficulty": "medium",
-    "question": "What is the molecular geometry of XeF4?",
+    "question": "Among Na, Mg, Al and Si, which has the highest first ionization enthalpy?",
+    "options": [
+      "Na",
+      "Si",
+      "Mg",
+      "Al"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "XeF4 has six electron pairs around Xe, with two lone pairs opposite each other in an octahedral electron-pair arrangement, leaving a square-planar molecular shape.",
+    "explanation": "Across Period 3, ionization enthalpy generally rises. Although Al is lower than Mg because its electron is removed from 3p, Si is higher than all three listed elements.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "Tetrahedral",
-      "Square planar",
-      "Trigonal bipyramidal",
-      "Square pyramidal"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-011",
     "section": "Chemistry",
-    "topic": "d- and f-Block Elements",
+    "topic": "p-block elements",
     "difficulty": "medium",
-    "question": "How many unpaired electrons are present in a high-spin Mn2+ ion?",
+    "question": "Which statement about BF3 is correct?",
+    "options": [
+      "It is pyramidal and electron-rich.",
+      "It is tetrahedral with one lone pair on boron.",
+      "It is trigonal planar and electron-deficient.",
+      "It is linear with complete octets on all atoms."
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Mn is [Ar]3d5 4s2. Mn2+ loses the two 4s electrons, giving high-spin 3d5 with five unpaired electrons.",
+    "explanation": "Boron in BF3 is sp2 hybridized and trigonal planar. It has only six electrons around boron, so BF3 is electron-deficient.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "1",
-      "5",
-      "3",
-      "4"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-012",
     "section": "Chemistry",
-    "topic": "Co-ordination Compounds",
-    "difficulty": "medium",
-    "question": "What is the oxidation state of chromium in [Cr(NH3)6]Cl3?",
+    "topic": "p-block elements",
+    "difficulty": "easy",
+    "question": "Which hydrogen halide is the strongest acid in aqueous solution?",
+    "options": [
+      "HF",
+      "HI",
+      "HCl",
+      "HBr"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "The complex cation [Cr(NH3)6]3+ has overall charge +3 because there are three Cl- counter-ions outside the coordination sphere. NH3 is a neutral ligand, so chromium's oxidation state equals the cation's charge, +3.",
+    "explanation": "Acid strength of hydrogen halides increases down Group 17 as the H-X bond weakens; HI is the strongest.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "+1",
-      "+2",
-      "+3",
-      "+4"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-013",
     "section": "Chemistry",
-    "topic": "Purification and Characterization of Organic Compounds",
+    "topic": "d- and f-block elements",
     "difficulty": "easy",
-    "question": "Chromatographic separation is possible mainly because components of a mixture differ in their",
+    "question": "The oxidation state of manganese in MnO4^- is",
+    "options": [
+      "+7",
+      "+2",
+      "+4",
+      "+6"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Chromatography separates components because they distribute or adsorb differently between a stationary phase and a moving phase.",
+    "explanation": "Let Mn be x. Then x + 4(-2) = -1, giving x = +7.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "relative affinities for the stationary and mobile phases",
-      "atomic numbers only",
-      "boiling points only in every form of chromatography",
-      "numbers of covalent bonds"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-014",
     "section": "Chemistry",
-    "topic": "Some Basic Principles of Organic Chemistry - II",
+    "topic": "Coordination compounds",
     "difficulty": "medium",
-    "question": "Among simple alkyl carbocations, which order of stability is generally correct?",
+    "question": "The oxidation state of cobalt in [Co(NH3)5Cl]Cl2 is",
+    "options": [
+      "+1",
+      "+2",
+      "+4",
+      "+3"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Hyperconjugation and the +I effect of alkyl groups stabilize carbocations, so greater alkyl substitution generally gives greater stability.",
+    "explanation": "The complex cation has charge +2. NH3 is neutral and coordinated Cl is -1, so x-1=+2 and x=+3.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "primary > secondary > tertiary",
-      "tertiary > secondary > primary",
-      "secondary > primary > tertiary",
-      "primary > tertiary > secondary"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-015",
     "section": "Chemistry",
-    "topic": "Hydrocarbons - I",
-    "difficulty": "medium",
-    "question": "Reductive ozonolysis of 2-methylpropene gives which pair of carbonyl compounds?",
+    "topic": "Purification of organic compounds",
+    "difficulty": "easy",
+    "question": "Which technique is most suitable for separating two miscible liquids whose boiling points differ substantially?",
+    "options": [
+      "Filtration",
+      "Sublimation",
+      "Crystallization",
+      "Distillation"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Cleavage of CH2=C(CH3)2 gives HCHO from the terminal CH2 carbon and (CH3)2CO from the substituted carbon.",
+    "explanation": "Distillation separates miscible liquids based on a sufficient difference in boiling points.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "Propanone and methanal",
-      "Ethanal and ethanal",
-      "Propanal and methanal",
-      "Propanone and ethanal"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-016",
     "section": "Chemistry",
-    "topic": "Organic Compounds Containing Halogens",
+    "topic": "Organic reaction intermediates",
     "difficulty": "medium",
-    "question": "Which substrate generally undergoes an SN1 reaction fastest under comparable polar protic conditions?",
+    "question": "Which carbocation is generally the most stable?",
+    "options": [
+      "(CH3)3C+",
+      "CH3+",
+      "CH3CH2+",
+      "(CH3)2CH+"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "SN1 rate is controlled by carbocation formation. Tertiary carbocations are much more stabilized than primary or methyl carbocations, while vinyl carbocations are strongly unfavourable.",
+    "explanation": "Alkyl groups stabilize carbocations by +I effect and hyperconjugation. Thus tertiary > secondary > primary > methyl.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "A methyl halide",
-      "A primary alkyl halide",
-      "A vinyl halide",
-      "A tertiary alkyl halide"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-017",
     "section": "Chemistry",
-    "topic": "Organic Compounds Containing Oxygen - I",
+    "topic": "Hydrocarbons",
     "difficulty": "medium",
-    "question": "Phenol is more acidic than ethanol mainly because",
+    "question": "Reductive ozonolysis of propene, CH3-CH=CH2, gives",
+    "options": [
+      "methanal and methanone",
+      "methanal and ethanal",
+      "ethanal and propanone",
+      "two molecules of ethanal"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Deprotonation of phenol gives phenoxide, whose negative charge is delocalized by resonance over the aromatic ring. Ethoxide lacks comparable resonance stabilization.",
+    "explanation": "Cleavage of the C=C bond in propene gives CH3CHO from the substituted carbon and HCHO from the terminal CH2 carbon.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "the O-H bond in phenol is ionic",
-      "ethanol cannot form hydrogen bonds",
-      "the phenoxide ion is resonance-stabilized",
-      "phenol contains more hydrogen atoms"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-018",
     "section": "Chemistry",
-    "topic": "Organic Compounds Containing Oxygen - II",
+    "topic": "Haloalkanes",
     "difficulty": "medium",
-    "question": "Which compound can undergo the Cannizzaro reaction because it has no alpha hydrogen?",
+    "question": "Which substrate is expected to undergo an SN1 reaction most readily under comparable conditions?",
+    "options": [
+      "CH3Cl",
+      "CH3CH2Cl",
+      "(CH3)2CHCl",
+      "(CH3)3CCl"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Benzaldehyde has no alpha carbon bearing hydrogen next to the carbonyl group, so it can undergo Cannizzaro disproportionation in strong base.",
+    "explanation": "SN1 rate depends strongly on carbocation stability. Tert-butyl chloride forms a tertiary carbocation and reacts most readily.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "Propanal",
-      "Butanal",
-      "Propanone",
-      "Benzaldehyde"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-019",
     "section": "Chemistry",
-    "topic": "Organic Compounds Containing Nitrogen",
+    "topic": "Alcohols and phenols",
     "difficulty": "medium",
-    "question": "At 0-5 C, aniline reacts with nitrous acid to form mainly",
+    "question": "Phenol is more acidic than ethanol mainly because",
+    "options": [
+      "phenol has a larger molar mass",
+      "ethanol contains more hydrogen atoms",
+      "phenoxide ion is resonance-stabilized",
+      "the O-H bond in phenol is nonpolar"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Primary aromatic amines such as aniline are diazotized by nitrous acid at 0-5 C to form relatively stable arenediazonium salts.",
+    "explanation": "Loss of H+ from phenol gives phenoxide, whose negative charge is delocalized by resonance. Ethoxide lacks this resonance stabilization.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "nitrobenzene",
-      "benzenediazonium salt",
-      "benzamide",
-      "phenyl isocyanate"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-020",
     "section": "Chemistry",
-    "topic": "Bio Molecules",
-    "difficulty": "hard",
-    "question": "Why is sucrose classified as a non-reducing sugar?",
+    "topic": "Biomolecules",
+    "difficulty": "easy",
+    "question": "The linkage joining two amino-acid residues in a polypeptide chain is called a",
+    "options": [
+      "peptide bond",
+      "glycosidic bond",
+      "phosphodiester bond",
+      "hydrogen bond"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "In sucrose, the anomeric carbon of glucose and the anomeric carbon of fructose are both involved in the glycosidic linkage, leaving no free hemiacetal or hemiketal group for reducing behaviour.",
+    "explanation": "A peptide bond is the -CO-NH- linkage formed between the carboxyl group of one amino acid and the amino group of another.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "Both anomeric carbons are tied up in the glycosidic bond",
-      "It contains no oxygen atoms",
-      "It is made only of amino acids",
-      "It cannot dissolve in water"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ch-021",
     "section": "Chemistry",
-    "topic": "Some Basic Concepts in Chemistry",
-    "difficulty": "easy",
-    "question": "Enter the number of moles of oxygen atoms present in 0.50 mol of O3.",
+    "topic": "Solutions",
+    "difficulty": "medium",
+    "question": "A 160 mL solution of a solute at 0.35 mol L^-1 is mixed with 240 mL of the same solute at 0.15 mol L^-1. Assume volumes are additive. Find the molarity of the mixture in mol L^-1. Report the numerical value to two decimal places.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "1.5",
     "answerType": "numerical",
-    "maxDecimalPlaces": 1,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Each mole of O3 contains 3 mol of oxygen atoms. Therefore 0.50 mol O3 contains 0.50*3=1.50 mol oxygen atoms.",
+    "explanation": "Total moles = 0.160\u00d70.35 + 0.240\u00d70.15 = 0.056 + 0.036 = 0.092 mol. Total volume = 0.400 L, so molarity = 0.092/0.400 = 0.23 mol L^-1.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "0.23",
+    "maxDecimalPlaces": 2
   },
   {
     "id": "lpunest-2026-ch-022",
     "section": "Chemistry",
-    "topic": "Chemical Thermodynamics",
+    "topic": "Chemical kinetics",
     "difficulty": "medium",
-    "question": "For a reaction at 300 K, use Delta G degrees = -RT ln K. Take R = 8 J mol^-1 K^-1 and ln K = 1. Enter Delta G degrees in kJ/mol.",
+    "question": "For a reaction with rate law r = k[A]^2[B], the rate is 0.12 mol L^-1 s^-1 at a certain composition and temperature. If [A] is doubled and [B] is halved at the same temperature, find the new rate in mol L^-1 s^-1. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "-2.4",
     "answerType": "numerical",
-    "maxDecimalPlaces": 1,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Delta G degrees = -(8)(300)(1) = -2400 J/mol = -2.4 kJ/mol.",
+    "explanation": "The rate changes by 2^2\u00d7(1/2)=2. Therefore the new rate is 0.12\u00d72=0.24 mol L^-1 s^-1.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "0.24"
   },
   {
     "id": "lpunest-2026-ch-023",
     "section": "Chemistry",
-    "topic": "Solutions",
-    "difficulty": "medium",
-    "question": "A dilute non-electrolyte solution has concentration 0.25 mol/L at 300 K. Use R = 0.08 L atm mol^-1 K^-1. Enter its osmotic pressure in atm.",
+    "topic": "Electrochemistry",
+    "difficulty": "easy",
+    "question": "A total charge of 193000 C passes through an electrolytic cell. Taking one Faraday as 96500 C mol^-1 of electrons, find the number of moles of electrons transferred. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "6",
     "answerType": "numerical",
-    "maxDecimalPlaces": 0,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "For a non-electrolyte, pi=CRT=(0.25)(0.08)(300)=6 atm.",
+    "explanation": "Moles of electrons = Q/F = 193000/96500 = 2.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "2"
   },
   {
     "id": "lpunest-2026-ch-024",
     "section": "Chemistry",
-    "topic": "Chemical Kinetics",
+    "topic": "Hydrocarbons",
     "difficulty": "easy",
-    "question": "For a reaction, doubling the concentration of A while B is fixed doubles the rate, while doubling B at fixed A quadruples the rate. The rate is 0.15 mol L^-1 s^-1 at [A]=a and [B]=b. Enter the rate in mol L^-1 s^-1 when [A]=2a and [B]=3b.",
+    "question": "Find the total number of sigma bonds in one molecule of ethyne, H-C\u2261C-H. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "2.7",
     "answerType": "numerical",
-    "maxDecimalPlaces": 1,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "The observations imply first order in A and second order in B, so rate is proportional to [A][B]^2. The new rate is 0.15*2*(3^2) = 2.7 mol L^-1 s^-1.",
+    "explanation": "Each C-H bond is one sigma bond and the C\u2261C triple bond contains one sigma bond. Total sigma bonds = 2 + 1 = 3.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "3"
   },
   {
     "id": "lpunest-2026-ch-025",
     "section": "Chemistry",
-    "topic": "Redox Reactions and Electrochemistry - II",
-    "difficulty": "hard",
-    "question": "A conductivity cell containing a 0.020 mol L^-1 electrolyte has resistance 500 ohm and cell constant 1.5 cm^-1. Enter the molar conductivity in S cm^2 mol^-1.",
+    "topic": "Biomolecules",
+    "difficulty": "easy",
+    "question": "A linear pentapeptide contains five amino-acid residues. Find the number of peptide bonds in the chain. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "150",
     "answerType": "numerical",
-    "maxDecimalPlaces": 0,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Conductivity is kappa = cell constant/resistance = 1.5/500 = 0.003 S cm^-1. Molar conductivity is kappa*1000/c = 0.003*1000/0.020 = 150 S cm^2 mol^-1.",
+    "explanation": "A linear chain of n amino-acid residues contains n-1 peptide bonds. For n=5, the number is 4.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "4"
   }
 ];
