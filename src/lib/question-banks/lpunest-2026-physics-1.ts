@@ -4,586 +4,581 @@ export const LPUNEST_2026_PHYSICS_1: Question[] = [
   {
     "id": "lpunest-2026-ph-001",
     "section": "Physics",
-    "topic": "Physics and Measurement",
+    "topic": "Physics and measurement",
     "difficulty": "easy",
-    "question": "If a physical quantity is defined as pressure multiplied by volume, which other physical quantity has the same dimensions?",
+    "question": "Which physical quantity has dimensions [M L^2 T^-2]?",
+    "options": [
+      "Torque",
+      "Pressure",
+      "Surface tension",
+      "Linear momentum"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Pressure has dimensions of force per area. Multiplying by volume gives force times length, which has the dimensions of work or energy.",
+    "explanation": "Torque = force \u00d7 perpendicular distance. Since force has dimensions [M L T^-2], torque has [M L^2 T^-2].",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "Energy",
-      "Force",
-      "Power",
-      "Momentum"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-002",
     "section": "Physics",
-    "topic": "Laws of Motion",
+    "topic": "Laws of motion",
     "difficulty": "medium",
-    "question": "A car can just negotiate a level circular road of radius R at speed v when the coefficient of friction is mu. If the radius is doubled and the coefficient of friction is halved, what is the new limiting speed?",
+    "question": "A car moves on a level circular road of radius 40 m at 12 m/s. Taking g = 10 m/s^2, the minimum coefficient of friction needed to avoid skidding is",
+    "options": [
+      "0.18",
+      "0.24",
+      "0.36",
+      "0.48"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "For a level curve, v_max = sqrt(mu R g). Replacing R by 2R and mu by mu/2 leaves the product mu R unchanged, so the limiting speed remains v.",
+    "explanation": "Friction supplies centripetal force: \u03bcmg = mv^2/r. Thus \u03bc = v^2/(rg) = 144/(40\u00d710) = 0.36.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "v/2",
-      "v",
-      "sqrt(2) v",
-      "2v"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-003",
     "section": "Physics",
-    "topic": "Work, Energy and Power",
+    "topic": "Work, energy and power",
     "difficulty": "medium",
-    "question": "A 3 kg block starts from rest on a horizontal surface. A constant horizontal force of 20 N acts over 10 m while friction opposes the motion with 5 N. What speed does the block attain?",
+    "question": "A 1 kg block is released from rest against a horizontal spring of force constant 200 N/m compressed by 0.10 m on a frictionless surface. Its speed when the spring reaches natural length is closest to",
+    "options": [
+      "1.0 m/s",
+      "1.4 m/s",
+      "2.0 m/s",
+      "2.8 m/s"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Net work is (20-5)*10 = 150 J. Thus (1/2)*3*v^2 = 150, giving v^2 = 100 and v = 10 m/s.",
+    "explanation": "By energy conservation, (1/2)kx^2 = (1/2)mv^2, so v = x\u221a(k/m) = 0.10\u221a200 \u2248 1.41 m/s.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "5 m/s",
-      "sqrt(50) m/s",
-      "10 m/s",
-      "15 m/s"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-004",
     "section": "Physics",
-    "topic": "Rotational Motion",
-    "difficulty": "hard",
-    "question": "A thin square frame of side a has total mass M distributed uniformly along its four sides. What is its moment of inertia about an axis through the centre and perpendicular to the plane?",
+    "topic": "Rotational motion",
+    "difficulty": "easy",
+    "question": "A rotating student reduces her moment of inertia from 6 kg m^2 to 2 kg m^2 without external torque. Her angular speed becomes",
+    "options": [
+      "three times its initial value",
+      "one-third of its initial value",
+      "unchanged",
+      "twice its initial value"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "For each side, I about the central perpendicular axis is (M/4)(a^2/12 + a^2/4) = M a^2/12. Four sides give I = M a^2/3.",
+    "explanation": "Angular momentum I\u03c9 is conserved. Therefore \u03c9_f/\u03c9_i = I_i/I_f = 6/2 = 3.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "M a^2/3",
-      "M a^2/6",
-      "M a^2/2",
-      "2 M a^2/3"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-005",
     "section": "Physics",
     "topic": "Kinematics",
-    "difficulty": "medium",
-    "question": "Particle A has velocity (6 i + 2 j) m/s and particle B has velocity (2 i - j) m/s. What is the magnitude of the velocity of A relative to B?",
+    "difficulty": "easy",
+    "question": "A projectile is launched at 20 m/s making 30\u00b0 with the horizontal. Taking g = 10 m/s^2, the time taken to reach its highest point is",
+    "options": [
+      "1.0 s",
+      "0.5 s",
+      "1.5 s",
+      "2.0 s"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "v_A - v_B = 4 i + 3 j, whose magnitude is sqrt(4^2+3^2)=5 m/s.",
+    "explanation": "Initial vertical speed is 20 sin30\u00b0 = 10 m/s. At the top v_y = 0, so t = u_y/g = 10/10 = 1 s.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "5 m/s",
-      "3 m/s",
-      "4 m/s",
-      "7 m/s"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-006",
     "section": "Physics",
     "topic": "Gravitation",
     "difficulty": "easy",
-    "question": "At a height equal to Earth's radius above the surface, what is the acceleration due to gravity in terms of its surface value g? Neglect Earth's rotation.",
+    "question": "At a height equal to Earth's radius above the surface, the acceleration due to gravity is approximately",
+    "options": [
+      "g/2",
+      "g/4",
+      "g/3",
+      "g/8"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "The distance from Earth's centre becomes 2R. Since g varies as 1/r^2, the new value is g*(R/2R)^2 = g/4.",
+    "explanation": "Distance from Earth's centre becomes 2R, and g varies as 1/r^2. Hence g' = g(R/2R)^2 = g/4.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "g/2",
-      "g/3",
-      "g/4",
-      "g/8"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-007",
     "section": "Physics",
-    "topic": "Oscillations and Waves",
-    "difficulty": "easy",
-    "question": "In simple harmonic motion of amplitude A, what fraction of the total mechanical energy is kinetic when the displacement is A/2?",
+    "topic": "Oscillations and waves",
+    "difficulty": "medium",
+    "question": "A string fixed at both ends is 1.2 m long. If transverse waves travel on it at 240 m/s, its fundamental frequency is",
+    "options": [
+      "100 Hz",
+      "50 Hz",
+      "150 Hz",
+      "200 Hz"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Potential energy fraction is x^2/A^2 = 1/4. Hence the kinetic energy fraction is 1-1/4 = 3/4.",
+    "explanation": "For the fundamental mode, \u03bb = 2L = 2.4 m. Hence f = v/\u03bb = 240/2.4 = 100 Hz.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "1/4",
-      "1/2",
-      "sqrt(3)/2",
-      "3/4"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-008",
     "section": "Physics",
-    "topic": "Properties of Solids and Liquids",
-    "difficulty": "medium",
-    "question": "Water flows steadily through a horizontal pipe. Its speed is 4 m/s in a narrow section and 2 m/s in a wider section. Taking water density as 1000 kg/m^3, by how much is the pressure in the wider section greater?",
+    "topic": "Properties of fluids",
+    "difficulty": "easy",
+    "question": "Water flows steadily through a pipe. If the cross-sectional area decreases from 6 cm^2 to 2 cm^2, the speed of flow in the narrower part becomes",
+    "options": [
+      "one-third",
+      "unchanged",
+      "three times",
+      "nine times"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Bernoulli's equation at equal height gives P_wide-P_narrow = (1/2)rho(4^2-2^2) = 500*12 = 6000 Pa.",
+    "explanation": "For incompressible steady flow, A_1v_1 = A_2v_2. Thus v_2/v_1 = 6/2 = 3.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "2000 Pa",
-      "4000 Pa",
-      "6000 Pa",
-      "8000 Pa"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-009",
     "section": "Physics",
-    "topic": "Properties of Solids and Liquids - Thermal Physics",
-    "difficulty": "medium",
-    "question": "Two portions of water, 0.20 kg at 20 C and 0.10 kg at 80 C, are mixed in an insulated container. Neglecting the container's heat capacity, what is the final temperature?",
+    "topic": "Calorimetry",
+    "difficulty": "hard",
+    "question": "A 0.20 kg metal block of specific heat 400 J kg^-1 K^-1 at 80\u00b0C is placed in 0.10 kg water of specific heat 4200 J kg^-1 K^-1 at 20\u00b0C. Neglecting heat loss, the final temperature is closest to",
+    "options": [
+      "24.8\u00b0C",
+      "35.0\u00b0C",
+      "40.0\u00b0C",
+      "29.6\u00b0C"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "For the same substance, the final temperature is the mass-weighted average: (0.20*20+0.10*80)/0.30 = 40 C.",
+    "explanation": "Heat lost = heat gained: (0.20\u00d7400)(80-T) = (0.10\u00d74200)(T-20). Thus 80(80-T)=420(T-20), giving T=29.6\u00b0C.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "40 C",
-      "30 C",
-      "45 C",
-      "50 C"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-010",
     "section": "Physics",
     "topic": "Thermodynamics",
     "difficulty": "easy",
-    "question": "A gas absorbs 500 J of heat and does 200 J of work on its surroundings. What is the change in its internal energy?",
+    "question": "A gas absorbs 500 J of heat and does 180 J of work on its surroundings. The increase in its internal energy is",
+    "options": [
+      "180 J",
+      "500 J",
+      "320 J",
+      "680 J"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Using the first law with work done by the system positive, Delta U = Q-W = 500-200 = +300 J.",
+    "explanation": "Using \u0394U = Q - W with work done by the gas positive, \u0394U = 500 - 180 = 320 J.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "+700 J",
-      "-300 J",
-      "-700 J",
-      "+300 J"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-011",
     "section": "Physics",
-    "topic": "Kinetic Theory of Gases",
-    "difficulty": "medium",
-    "question": "For an ideal diatomic gas at ordinary temperatures, vibrational modes are neglected. What is the ratio gamma = C_p/C_v?",
+    "topic": "Kinetic theory of gases",
+    "difficulty": "easy",
+    "question": "For the same ideal gas, the absolute temperature is increased from 300 K to 1200 K. The rms speed of its molecules becomes",
+    "options": [
+      "half",
+      "four times",
+      "twice",
+      "unchanged"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "A diatomic molecule has five active degrees of freedom, so C_v=5R/2 and C_p=7R/2. Therefore gamma=7/5.",
+    "explanation": "For a given gas, v_rms \u221d \u221aT. Therefore the factor is \u221a(1200/300)=\u221a4=2.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "5/3",
-      "4/3",
-      "9/7",
-      "7/5"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-012",
     "section": "Physics",
-    "topic": "Electrostatics - II",
+    "topic": "Electrostatics",
     "difficulty": "medium",
-    "question": "A parallel-plate capacitor is charged and then disconnected from the battery. A dielectric of constant k completely fills the space between the plates. How does the stored electrostatic energy change?",
+    "question": "A charged parallel-plate capacitor is disconnected from the battery. A dielectric of relative permittivity 2 is then completely inserted between the plates. The electrostatic energy stored becomes",
+    "options": [
+      "twice",
+      "four times",
+      "unchanged",
+      "half"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "After disconnection the charge stays fixed. Since capacitance becomes kC and U=Q^2/(2C), the energy becomes U/k.",
+    "explanation": "After disconnection, charge Q remains constant. Since C doubles, U = Q^2/(2C) becomes half.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "It becomes k times its initial value",
-      "It becomes 1/k of its initial value",
-      "It remains unchanged",
-      "It becomes 1/k^2 of its initial value"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-013",
     "section": "Physics",
-    "topic": "Current Electricity",
+    "topic": "Current electricity",
     "difficulty": "medium",
-    "question": "A cell has emf 12 V and internal resistance 1 ohm. It is connected to a 5 ohm resistor. What is the terminal voltage of the cell while current flows?",
+    "question": "A 6 \u03a9 resistor and a 3 \u03a9 resistor are connected in parallel, and this combination is connected in series with a 4 \u03a9 resistor across a 12 V battery of negligible internal resistance. The circuit current is",
+    "options": [
+      "1 A",
+      "2 A",
+      "3 A",
+      "4 A"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "The current is 12/(5+1)=2 A. Terminal voltage is E-Ir = 12-2*1 = 10 V.",
+    "explanation": "The parallel equivalent is (6\u00d73)/(6+3)=2 \u03a9. Total resistance = 2+4=6 \u03a9, so I=12/6=2 A.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "2 V",
-      "6 V",
-      "12 V",
-      "10 V"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-014",
     "section": "Physics",
-    "topic": "Magnetic Effects of Current and Magnetism",
+    "topic": "Magnetic effects of current",
     "difficulty": "medium",
-    "question": "A charged particle moves perpendicular to a uniform magnetic field. If both its speed and the magnitude of its charge are doubled while mass and field remain unchanged, how does the radius of its circular path change?",
+    "question": "A charge of 2 \u03bcC moves at 3\u00d710^4 m/s perpendicular to a uniform magnetic field of 0.5 T. The magnetic force on it is",
+    "options": [
+      "0.003 N",
+      "0.3 N",
+      "3 N",
+      "0.03 N"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "The magnetic radius is r=mv/(|q|B). Doubling both v and |q| leaves their ratio unchanged.",
+    "explanation": "F=qvB = 2\u00d710^-6 \u00d7 3\u00d710^4 \u00d7 0.5 = 3\u00d710^-2 N = 0.03 N.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "It doubles",
-      "It remains unchanged",
-      "It halves",
-      "It becomes four times"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-015",
     "section": "Physics",
-    "topic": "Atoms and Nuclei",
+    "topic": "Magnetism",
     "difficulty": "medium",
-    "question": "Why can energy be released when a heavy nucleus undergoes fission into medium-mass nuclei?",
+    "question": "A magnetic dipole of moment 0.40 A m^2 makes an angle of 30\u00b0 with a uniform magnetic field of 0.50 T. The torque on it is",
+    "options": [
+      "0.05 N m",
+      "0.10 N m",
+      "0.20 N m",
+      "0.40 N m"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Medium-mass nuclei generally have greater binding energy per nucleon than very heavy nuclei. The increase in total binding energy appears as released energy.",
+    "explanation": "\u03c4 = mB sin\u03b8 = 0.40\u00d70.50\u00d7sin30\u00b0 = 0.10 N m.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "The products have more protons than the parent",
-      "The total number of nucleons increases",
-      "Rest mass is exactly conserved with no mass defect",
-      "The products have a higher binding energy per nucleon"
-    ],
-    "correctIndex": 3
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-016",
     "section": "Physics",
-    "topic": "Dual Nature of Matter and Radiation",
-    "difficulty": "hard",
-    "question": "A metal has threshold frequency 5 x 10^14 Hz. Light of frequency 8 x 10^14 Hz produces photoelectrons with maximum kinetic energy K. What maximum kinetic energy will light of frequency 11 x 10^14 Hz produce?",
+    "topic": "Ray optics",
+    "difficulty": "medium",
+    "question": "A biconvex lens is made of a transparent material whose refractive index is slightly lower than that of the surrounding transparent liquid. For paraxial rays, the immersed lens behaves as",
+    "options": [
+      "a converging lens with increased positive power",
+      "a converging lens with reduced positive power",
+      "a lens of zero power in every case",
+      "a diverging lens"
+    ],
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Einstein's equation gives K_max=h(nu-nu_0). The excess frequency changes from 3 x 10^14 to 6 x 10^14 Hz, so the maximum kinetic energy doubles.",
+    "explanation": "In the lens-maker relation for a surrounding medium, the factor (n_lens/n_medium - 1) is negative here. For a biconvex shape the curvature factor is positive, so the optical power is negative: the lens is diverging.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "K/2",
-      "2K",
-      "3K/2",
-      "3K"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-017",
     "section": "Physics",
-    "topic": "Optics - I",
+    "topic": "Wave optics",
     "difficulty": "medium",
-    "question": "A monochromatic ray travels from glass into air. At an incidence angle C in the glass, the refracted ray just grazes the interface. What happens if the incidence angle in the glass is increased above C?",
+    "question": "In a single-slit diffraction setup, the wavelength is changed from 480 nm to 600 nm and the slit width from 0.30 mm to 0.45 mm, with the screen distance unchanged. The new width of the central maximum is",
+    "options": [
+      "2/3 of the original width",
+      "5/6 of the original width",
+      "6/5 of the original width",
+      "3/2 of the original width"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "C is the critical angle for the glass-air interface. For incidence from the denser medium at an angle greater than C, no refracted ray propagates into air and total internal reflection occurs.",
+    "explanation": "The central-maximum width is proportional to \u03bb/a. Hence W2/W1=(600/480)(0.30/0.45)=(5/4)(2/3)=5/6.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "The ray refracts into air and bends toward the normal",
-      "The ray undergoes total internal reflection",
-      "The ray emerges along the normal",
-      "The light frequency becomes zero"
-    ],
-    "correctIndex": 1
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-018",
     "section": "Physics",
-    "topic": "Optics - II",
+    "topic": "Electromagnetic induction",
     "difficulty": "medium",
-    "question": "In Young's double-slit experiment, light of wavelength 600 nm is used with slit separation 0.50 mm and screen distance 1.5 m. What is the fringe width?",
+    "question": "A straight conducting rod moves through a uniform magnetic field. In each trial the rod is oriented parallel to v\u00d7B, so the motional emf is BLv sin\u03b8, where \u03b8 is the angle between v and B. Initially \u03b8=90\u00b0. In a second trial the speed is doubled and \u03b8=30\u00b0, while B and L are unchanged. The ratio of the second emf to the first is",
+    "options": [
+      "1/2",
+      "1",
+      "\u221a3",
+      "2"
+    ],
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Fringe width beta=lambda D/d = (600e-9*1.5)/(0.50e-3)=1.8e-3 m = 1.8 mm.",
+    "explanation": "E2/E1 = [2v sin30\u00b0]/[v sin90\u00b0] = 2\u00d7(1/2)=1. The induced emf is unchanged.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "1.8 mm",
-      "0.9 mm",
-      "1.2 mm",
-      "3.6 mm"
-    ],
-    "correctIndex": 0
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-019",
     "section": "Physics",
-    "topic": "Electromagnetic Induction and Alternating Currents",
-    "difficulty": "medium",
-    "question": "A square conducting loop of side 0.20 m and resistance 0.40 ohm moves at 3.0 m/s perpendicular to the straight boundary of a uniform 0.50 T magnetic field. While the loop is partly leaving the field, what is the magnitude of the magnetic force opposing its motion? Neglect self-inductance.",
+    "topic": "Electronic devices",
+    "difficulty": "easy",
+    "question": "A Zener diode used as a voltage regulator is normally operated",
+    "options": [
+      "in forward bias below threshold",
+      "with zero bias only",
+      "in reverse bias near breakdown",
+      "as an open circuit in forward bias"
+    ],
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "During partial exit, the motional emf is E = B l v = 0.50*0.20*3.0 = 0.30 V. The induced current is I = E/R = 0.30/0.40 = 0.75 A. The side of length l still in the field experiences a horizontal force F = B I l = 0.50*0.75*0.20 = 0.075 N, opposing the motion by Lenz's law.",
+    "explanation": "A Zener regulator operates in reverse bias in its breakdown region, where voltage remains nearly constant over a range of current.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "0.025 N",
-      "0.050 N",
-      "0.075 N",
-      "0.150 N"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-020",
     "section": "Physics",
-    "topic": "Electronic Devices - II",
-    "difficulty": "medium",
-    "question": "For a two-input NAND gate, for which input pair is the output 0?",
+    "topic": "Electromagnetic waves",
+    "difficulty": "easy",
+    "question": "Which region of the electromagnetic spectrum has frequency lower than visible light but higher than microwaves?",
+    "options": [
+      "Infrared",
+      "Gamma rays",
+      "Ultraviolet",
+      "X-rays"
+    ],
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "A NAND gate is the negation of AND. AND is 1 only for inputs (1,1), so NAND is 0 only for (1,1).",
+    "explanation": "Infrared lies between microwaves and visible light in the electromagnetic spectrum.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    },
-    "options": [
-      "(0, 0)",
-      "(0, 1)",
-      "(1, 1)",
-      "(1, 0)"
-    ],
-    "correctIndex": 2
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    }
   },
   {
     "id": "lpunest-2026-ph-021",
     "section": "Physics",
     "topic": "Kinematics",
     "difficulty": "easy",
-    "question": "An object starts from rest in a straight line. It accelerates uniformly at 6 m/s^2 for 2 s and then decelerates uniformly at 2 m/s^2 for the next 3 s. Enter the total displacement in metres over the 5 s interval.",
+    "question": "A projectile is launched at 20 m/s at 45\u00b0 to the horizontal. Take g = 10 m/s^2. Find its horizontal range in metres. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "39",
     "answerType": "numerical",
-    "maxDecimalPlaces": 0,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "In the first 2 s, s1 = (1/2)*6*(2^2) = 12 m and the speed becomes 12 m/s. In the next 3 s, s2 = 12*3 - (1/2)*2*(3^2) = 27 m. Total displacement = 12 + 27 = 39 m.",
+    "explanation": "R = u^2 sin(2\u03b8)/g = 20^2\u00d7sin90\u00b0/10 = 40 m.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "40"
   },
   {
     "id": "lpunest-2026-ph-022",
     "section": "Physics",
-    "topic": "Electrostatics - II",
-    "difficulty": "medium",
-    "question": "A 5 microfarad capacitor stores 9 millijoules of electrostatic energy. Enter the potential difference across it in volts.",
+    "topic": "Current electricity",
+    "difficulty": "easy",
+    "question": "A steady current of 3 A flows through a conductor for 40 s. Find the charge transferred in coulombs. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "60",
     "answerType": "numerical",
-    "maxDecimalPlaces": 0,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Using U = (1/2)CV^2, V^2 = 2U/C = 2*9*10^-3/(5*10^-6) = 3600. Hence V = 60 V.",
+    "explanation": "Q = It = 3\u00d740 = 120 C.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "120"
   },
   {
     "id": "lpunest-2026-ph-023",
     "section": "Physics",
-    "topic": "Current Electricity",
+    "topic": "Ray optics",
     "difficulty": "easy",
-    "question": "An 8 ohm resistor is connected directly across an ideal 16 V source. Enter the power dissipated by the resistor in watts.",
+    "question": "Two thin lenses of powers +5 D and -2 D are kept in contact. Find the power of the combination in dioptres. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "32",
     "answerType": "numerical",
-    "maxDecimalPlaces": 0,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "P=V^2/R=16^2/8=256/8=32 W.",
+    "explanation": "For lenses in contact, powers add: P = 5 + (-2) = 3 D.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "3"
   },
   {
     "id": "lpunest-2026-ph-024",
     "section": "Physics",
-    "topic": "Optics - I",
+    "topic": "Alternating current and transformers",
     "difficulty": "medium",
-    "question": "A ray enters a stack of plane-parallel transparent media from air and finally travels in a medium of refractive index 5/3. If the sine of its angle to the normal in air is 5/6, enter the sine of its angle to the normal in the final medium.",
+    "question": "An ideal transformer has primary-to-secondary turns ratio 4:1 and is connected to a 240 V AC supply. A 12 \u03a9 resistor is connected across the secondary. Find the current drawn from the primary in amperes. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "0.5",
     "answerType": "numerical",
-    "maxDecimalPlaces": 1,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "Across parallel interfaces, n sin(theta) is conserved. Thus 1*(5/6) = (5/3) sin(theta_final), giving sin(theta_final) = 1/2 = 0.5.",
+    "explanation": "The secondary voltage is 240\u00d7(1/4)=60 V, so the load current is 60/12=5 A. For an ideal transformer, input power equals output power: 240 I_p = 60\u00d75, giving I_p=1.25 A.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "1.25"
   },
   {
     "id": "lpunest-2026-ph-025",
     "section": "Physics",
-    "topic": "Dual Nature of Matter and Radiation",
+    "topic": "Atoms and nuclei",
     "difficulty": "medium",
-    "question": "For a photon, use hc = 1240 eV nm. Enter the photon energy in eV for wavelength 620 nm.",
+    "question": "In a simplified fusion calculation, two identical nuclei each have mass number 17 and binding energy per nucleon 7.75 MeV. They combine to form one nucleus of mass number 33 with binding energy per nucleon 8.35 MeV, while one neutron remains free. Find the energy released in MeV. Enter the numerical value only.",
     "options": [],
     "correctIndex": -1,
-    "correctValue": "2",
     "answerType": "numerical",
-    "maxDecimalPlaces": 0,
     "marks": 4,
     "negativeMarking": 0,
-    "explanation": "E=hc/lambda=1240/620=2 eV exactly with the supplied value of hc.",
+    "explanation": "Initial total binding energy = 2\u00d717\u00d77.75 = 263.50 MeV. The free neutron has zero nuclear binding energy, while the mass-33 product has total binding energy 33\u00d78.35 = 275.55 MeV. Energy released = 275.55 \u2212 263.50 = 12.05 MeV.",
     "source": {
       "kind": "original",
-      "reference": "LPUNEST B.Tech 2026 official question-paper pattern and syllabus",
-      "url": "https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php",
-      "checkedOn": "2026-08-27"
-    }
+      "reference": "LPUNEST 2026 B.Tech official syllabus and paper pattern",
+      "url": "https://www.lpu.in/nest/btech/syllabus.php",
+      "checkedOn": "2026-08-28"
+    },
+    "correctValue": "12.05"
   }
 ];

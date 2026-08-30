@@ -110,7 +110,10 @@ export type ExamSlug =
   | 'bihar-dcece'
   | 'hp-pat'
   | 'iemjee'
-  | 'jeecup';
+  | 'jeecup'
+  | 'mit-wpu-cet'
+  | 'jharkhand-pece'
+  | 'kiitee';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -309,6 +312,9 @@ const BIHAR_DCECE_2026_BCECEB_PORTAL = 'https://bceceboard.bihar.gov.in/DCECEInd
 const HP_PAT_2026_PROSPECTUS = 'https://www.hptechboard.com/storage/files/1/PAT_LEET_2026/PAT%202026%20Prospectus_.pdf';
 const IEMJEE_2026_OFFICIAL_PAGE = 'https://iem.edu.in/iemjee-2026/';
 const JEECUP_2026_INFORMATION_BROCHURE = 'https://jeecup.admissions.nic.in/document/information-brochure-for-upjee-2026/';
+const MIT_WPU_CET_2026_OFFICIAL_PAGE = 'https://mitwpu.edu.in/mit-wpu-cet-2026';
+const JHARKHAND_PECE_2026_EXAMINATION_SCHEME = 'https://polycet.jceceb.org.in/Public/ExaminationScheme';
+const KIITEE_2026_INFORMATION_BROCHURE = 'https://kiitee.kiit.ac.in/wp-content/uploads/2026/02/Information-Brochure-2026.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -11170,6 +11176,109 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'group-a-engineering-technology-full-mock-1', name: 'Group A Engineering & Technology Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'mit-wpu-cet': {
+    slug: 'mit-wpu-cet',
+    name: 'MIT-WPU CET',
+    shortName: 'MIT-WPU CET',
+    fullName: 'MIT World Peace University Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-after-10th',
+        name: 'B.Tech After 10th',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Basic Mathematics', 'Basic English', 'Physics', 'Chemistry'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 90,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Basic Mathematics', questions: 25, marks: 25 },
+            { name: 'Basic English', questions: 25, marks: 25 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+          ],
+          timerNote: 'Single 90-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "MIT-WPU CET 2026 B.Tech After 10th is a Class-10-entry CBT route, distinct from a standard 10+2 engineering entrance. The current official page directly confirms the CBT identity, 90-minute duration, 100 CBT marks split 25 each across Basic Mathematics, Basic English, Physics and Chemistry, and a separately-scored 50-mark/15-minute Personal Interaction (not built here, and not merged into this timer). The current official material does not explicitly state the real paper's exact question count or negative-marking rule; a 2024 official continuity source confirms 100 objective questions with no negative marking, so this mock's 100-question/four-option/+1/0 implementation is a controlled TakeMockTest model rather than a directly-confirmed current-official mechanic, marked review-pending. An unanswered question scores zero.",
+          sourceUrl: MIT_WPU_CET_2026_OFFICIAL_PAGE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'btech-after-10th-full-mock-1', name: 'B.Tech After 10th CBT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jharkhand-pece': {
+    slug: 'jharkhand-pece',
+    name: 'Jharkhand PECE',
+    shortName: 'Jharkhand PECE',
+    fullName: 'Jharkhand Polytechnic Entrance Competitive Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'polytechnic-engineering',
+        name: 'Polytechnic Engineering',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 150,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 50, marks: 50 },
+            { name: 'Chemistry', questions: 50, marks: 50 },
+            { name: 'Mathematics', questions: 50, marks: 50 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'Jharkhand PECE 2026 is conducted by the Jharkhand Combined Entrance Competitive Examination Board (JCECEB) for admission to polytechnic diploma courses on the Secondary (Class X) syllabus. The current official JCECEB Syllabus and Scheme of Examination directly confirms an offline OMR-based exam: 150 four-option MCQs (Physics 50, Chemistry 50, Mathematics 50) for 150 marks in 150 minutes, +1 per correct answer and -0.25 per wrong answer. This mock is an online practice simulation of that offline structure. An unanswered question scores zero.',
+          sourceUrl: JHARKHAND_PECE_2026_EXAMINATION_SCHEME,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'polytechnic-engineering-full-mock-1', name: 'Polytechnic Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'kiitee': {
+    slug: 'kiitee',
+    name: 'KIITEE',
+    shortName: 'KIITEE',
+    fullName: 'Kalinga Institute of Industrial Technology Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.Tech',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 150,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 40, marks: 160 },
+            { name: 'Chemistry', questions: 40, marks: 160 },
+            { name: 'Mathematics', questions: 40, marks: 160 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all three sections; no sectional lock, free movement between sections.',
+          note: 'KIITEE 2026 B.Tech is confirmed directly by the current official 2026 Information Brochure: 120 four-option MCQs (Physics 40, Chemistry 40, Mathematics 40) for 480 marks in 150 minutes, +4 per correct answer and -1 per wrong answer, one composite timer with free movement between sections and no sectional lock. An unanswered question scores zero.',
+          sourceUrl: KIITEE_2026_INFORMATION_BROCHURE,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '28 August 2026' },
         ],
       },
     ],

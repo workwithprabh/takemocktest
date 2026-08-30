@@ -5,24 +5,24 @@ export const AP_POLYCET_2026_CHEMISTRY_1: Question[] = [
     "id": "ap-polycet-2026-ch-001",
     "section": "Chemistry",
     "topic": "Chemical Reactions and Equations",
-    "difficulty": "easy",
-    "question": "The balanced coefficients of Fe, O\u2082 and Fe\u2082O\u2083 in the equation Fe + O\u2082 \u2192 Fe\u2082O\u2083 are:",
+    "difficulty": "hard",
+    "question": "Which equation is correctly balanced for the formation of aluminium oxide?",
     "options": [
-      "4, 3, 2",
-      "3, 2, 1",
-      "2, 3, 1",
-      "2, 1, 1"
+      "4Al + 3O\u2082 \u2192 2Al\u2082O\u2083",
+      "2Al + 3O\u2082 \u2192 2Al\u2082O\u2083",
+      "Al + O\u2082 \u2192 AlO\u2082",
+      "2Al + O\u2082 \u2192 Al\u2082O\u2083"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Balancing iron and oxygen gives 4Fe + 3O\u2082 \u2192 2Fe\u2082O\u2083, so the coefficients are 4, 3 and 2.",
+    "explanation": "The balanced equation must contain 4 Al atoms and 6 O atoms on both sides: 4Al+3O\u2082\u21922Al\u2082O\u2083.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
@@ -30,23 +30,23 @@ export const AP_POLYCET_2026_CHEMISTRY_1: Question[] = [
     "section": "Chemistry",
     "topic": "Chemical Reactions and Equations",
     "difficulty": "easy",
-    "question": "The reaction CaCO\u2083 \u2192 CaO + CO\u2082 on heating is a:",
+    "question": "When calcium oxide reacts with water to form calcium hydroxide, the reaction is best classified as a _____.",
     "options": [
+      "displacement reaction",
       "combination reaction",
       "decomposition reaction",
-      "neutralization reaction",
-      "displacement reaction"
+      "double displacement reaction only"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "One compound breaks into two simpler substances, so it is a decomposition reaction.",
+    "explanation": "Two reactants combine to form one main product, Ca(OH)\u2082, so it is a combination reaction.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
@@ -54,276 +54,36 @@ export const AP_POLYCET_2026_CHEMISTRY_1: Question[] = [
     "section": "Chemistry",
     "topic": "Chemical Reactions and Equations",
     "difficulty": "medium",
-    "question": "In the reaction CuO + H\u2082 \u2192 Cu + H\u2082O, the substance that is reduced is:",
+    "question": "In CuO + H\u2082 \u2192 Cu + H\u2082O, which substance is reduced?",
     "options": [
       "Cu",
-      "CuO",
       "H\u2082",
+      "CuO",
       "H\u2082O"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "CuO loses oxygen to form Cu, so CuO is reduced. Hydrogen gains oxygen and is oxidized.",
+    "explanation": "CuO loses oxygen and Cu\u00b2\u207a is converted to Cu, so CuO is reduced.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ch-004",
     "section": "Chemistry",
     "topic": "Chemical Reactions and Equations",
-    "difficulty": "medium",
-    "question": "Which observation most clearly indicates the formation of a gas during a chemical reaction?",
-    "options": [
-      "a solid remaining unchanged",
-      "no temperature change",
-      "a constant colour with no other change",
-      "bubbling or effervescence"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Visible bubbling or effervescence is direct evidence that a gas is being produced.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-005",
-    "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
     "difficulty": "easy",
-    "question": "A solution with pH 3 is:",
+    "question": "Rusting of iron requires oxygen and _____.",
     "options": [
-      "neutral",
-      "basic",
-      "necessarily a salt solution",
-      "acidic"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "A pH below 7 indicates an acidic solution.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-006",
-    "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "easy",
-    "question": "During neutralisation, dilute hydrochloric acid is added to sodium hydroxide solution. Which ionic change directly produces water?",
-    "options": [
-      "H\u207a + OH\u207b \u2192 H\u2082O",
-      "Na\u207a + Cl\u207b \u2192 NaCl",
-      "H\u207a + Cl\u207b \u2192 HCl",
-      "Na\u207a + OH\u207b \u2192 NaOH"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "In aqueous neutralisation, H\u207a ions from the acid combine with OH\u207b ions from the base: H\u207a + OH\u207b \u2192 H\u2082O. Na\u207a and Cl\u207b remain spectator ions in solution.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-007",
-    "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "easy",
-    "question": "An acid reacting completely with a base generally forms:",
-    "options": [
-      "only hydrogen gas",
-      "a metal and water",
-      "salt and water",
-      "only oxygen gas"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Acid-base neutralization produces a salt and water.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-008",
-    "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "easy",
-    "question": "The chemical formula of baking soda is:",
-    "options": [
-      "CaCO\u2083",
-      "NaHCO\u2083",
-      "Na\u2082CO\u2083",
-      "NaOH"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Baking soda is sodium hydrogen carbonate, whose formula is NaHCO\u2083.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-009",
-    "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "easy",
-    "question": "The formula commonly used for bleaching powder is:",
-    "options": [
-      "CaOCl\u2082",
-      "CaCO\u2083",
-      "Ca(OH)\u2082",
-      "NaCl"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Bleaching powder is commonly represented by the formula CaOCl\u2082 at this level.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-010",
-    "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "medium",
-    "question": "Plaster of Paris has the formula:",
-    "options": [
-      "CaCO\u2083",
-      "CaSO\u2084\u00b7\u00bdH\u2082O",
-      "CaO",
-      "CaSO\u2084\u00b72H\u2082O"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Plaster of Paris is calcium sulphate hemihydrate, CaSO\u2084\u00b7\u00bdH\u2082O.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-011",
-    "section": "Chemistry",
-    "topic": "Metals and Non-metals",
-    "difficulty": "easy",
-    "question": "When sodium reacts with water, one of the products is:",
-    "options": [
-      "carbon dioxide",
-      "chlorine gas",
-      "nitrogen gas",
-      "hydrogen gas"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Sodium reacts with water to form sodium hydroxide and hydrogen gas.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-012",
-    "section": "Chemistry",
-    "topic": "Metals and Non-metals",
-    "difficulty": "easy",
-    "question": "When a zinc strip is placed in copper sulphate solution, zinc:",
-    "options": [
-      "does not react because copper is more reactive",
-      "displaces copper from the solution",
-      "forms only zinc metal again",
-      "is displaced by copper"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Zinc is more reactive than copper, so Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-013",
-    "section": "Chemistry",
-    "topic": "Metals and Non-metals",
-    "difficulty": "medium",
-    "question": "Ionic compounds generally have high melting points because:",
-    "options": [
-      "their ions have no charge",
-      "strong electrostatic forces hold oppositely charged ions together",
-      "they are always gases at room temperature",
-      "they contain only weak intermolecular forces"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Large electrostatic attractions between oppositely charged ions require substantial energy to overcome.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-014",
-    "section": "Chemistry",
-    "topic": "Metals and Non-metals",
-    "difficulty": "easy",
-    "question": "Rusting of iron requires the presence of:",
-    "options": [
-      "hydrogen and sunlight",
-      "only carbon dioxide",
-      "only nitrogen",
-      "oxygen and water"
+      "carbon dioxide only",
+      "dry vacuum",
+      "nitrogen only",
+      "water or moisture"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -332,393 +92,633 @@ export const AP_POLYCET_2026_CHEMISTRY_1: Question[] = [
     "explanation": "Iron rusts when both oxygen and moisture are available.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-005",
+    "section": "Chemistry",
+    "topic": "Chemical Reactions and Equations",
+    "difficulty": "easy",
+    "question": "Rancidity in fatty foods can be slowed most directly by _____.",
+    "options": [
+      "limiting contact with oxygen",
+      "storing in open sunlight",
+      "adding more water",
+      "heating continuously"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Rancidity is mainly oxidation of fats; reducing oxygen exposure slows it.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-006",
+    "section": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "easy",
+    "question": "A solution with pH 3 is _____.",
+    "options": [
+      "necessarily a salt solution",
+      "acidic",
+      "neutral",
+      "basic"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "pH below 7 indicates an acidic solution.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-007",
+    "section": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "hard",
+    "question": "If the hydrogen-ion concentration of a solution is 10^-4 mol L^-1, what is its pH?",
+    "options": [
+      "6",
+      "2",
+      "4",
+      "10"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "pH=\u2212log[H\u207a]=\u2212log(10^-4)=4.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-008",
+    "section": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "easy",
+    "question": "Phenolphthalein is colourless in an acidic solution and becomes ____ in a basic solution.",
+    "options": [
+      "black",
+      "green",
+      "orange",
+      "pink"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Phenolphthalein is colourless in acid and pink in base.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-009",
+    "section": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "medium",
+    "question": "Which salt is commonly known as baking soda?",
+    "options": [
+      "NaHCO\u2083",
+      "NaCl",
+      "Na\u2082CO\u2083\u00b710H\u2082O",
+      "CaOCl\u2082"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Baking soda is sodium hydrogen carbonate, NaHCO\u2083.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-010",
+    "section": "Chemistry",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "medium",
+    "question": "Which gas is released when dilute hydrochloric acid reacts with sodium carbonate?",
+    "options": [
+      "O\u2082",
+      "CO\u2082",
+      "H\u2082",
+      "Cl\u2082"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Acid + carbonate produces salt, water and carbon dioxide.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-011",
+    "section": "Chemistry",
+    "topic": "Structure of Atom",
+    "difficulty": "easy",
+    "question": "An atom has atomic number 13. How many electrons are present in a neutral atom?",
+    "options": [
+      "26",
+      "39",
+      "13",
+      "10"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "For a neutral atom, number of electrons equals atomic number, so it has 13 electrons.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-012",
+    "section": "Chemistry",
+    "topic": "Structure of Atom",
+    "difficulty": "medium",
+    "question": "The electronic configuration 2,8,7 corresponds to an element with valency _____.",
+    "options": [
+      "7",
+      "2",
+      "8",
+      "1"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The atom needs one electron to complete its outer shell, so its valency is 1.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-013",
+    "section": "Chemistry",
+    "topic": "Structure of Atom",
+    "difficulty": "easy",
+    "question": "Atoms of the same element having different numbers of neutrons are called _____.",
+    "options": [
+      "isotopes",
+      "molecules",
+      "isobars",
+      "ions"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Isotopes have the same atomic number but different mass numbers because their neutron counts differ.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-014",
+    "section": "Chemistry",
+    "topic": "Periodic Classification",
+    "difficulty": "medium",
+    "question": "Across a period from left to right, atomic radius generally _____.",
+    "options": [
+      "first becomes infinite",
+      "decreases",
+      "increases",
+      "remains exactly constant"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Increasing nuclear charge pulls electrons closer across a period, so atomic radius generally decreases.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ch-015",
     "section": "Chemistry",
-    "topic": "Metals and Non-metals",
-    "difficulty": "medium",
-    "question": "Which oxide is amphoteric?",
+    "topic": "Periodic Classification",
+    "difficulty": "easy",
+    "question": "Elements in the same group of the modern periodic table usually have the same number of _____.",
     "options": [
-      "SO\u2082",
-      "Al\u2082O\u2083",
-      "CO\u2082",
-      "Na\u2082O"
+      "total nucleons",
+      "neutron shells",
+      "valence electrons",
+      "isotopes"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Aluminium oxide reacts with both acids and bases, so it is amphoteric.",
+    "explanation": "Similar valence-electron configurations give elements in a group similar chemical properties.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ch-016",
     "section": "Chemistry",
-    "topic": "Metals and Non-metals",
-    "difficulty": "medium",
-    "question": "A metal that is more reactive than hydrogen can generally:",
+    "topic": "Periodic Classification",
+    "difficulty": "hard",
+    "question": "Which element among Na, Mg, Al and Si is expected to have the largest atomic radius in the same period?",
     "options": [
-      "be displaced by hydrogen from every compound",
-      "convert every acid directly into a base",
-      "displace hydrogen from dilute acids",
-      "never react with acids"
+      "Si",
+      "Al",
+      "Mg",
+      "Na"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Metals above hydrogen in the reactivity series can displace hydrogen from suitable dilute acids.",
+    "explanation": "Atomic radius generally decreases across a period, so the leftmost element Na is largest among these.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ch-017",
     "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
+    "topic": "Chemical Bonding",
     "difficulty": "easy",
-    "question": "Carbon usually forms four covalent bonds because its valency is:",
+    "question": "The bond in sodium chloride is mainly _____.",
     "options": [
-      "1",
-      "8",
-      "4",
-      "2"
+      "ionic",
+      "metallic only",
+      "non-polar covalent",
+      "hydrogen"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Carbon has four valence electrons and commonly achieves a stable configuration by sharing four pairs of electrons, giving valency 4.",
+    "explanation": "Na transfers an electron to Cl, producing oppositely charged ions held by electrostatic attraction.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ch-018",
     "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
+    "topic": "Chemical Bonding",
     "difficulty": "medium",
-    "question": "Successive members of a homologous series usually differ by:",
+    "question": "In a covalent bond, atoms primarily achieve stability by _____.",
     "options": [
-      "a \u2212CH\u2082\u2212 unit",
-      "a \u2212CH\u2083 unit",
-      "two carbon atoms and no hydrogens",
-      "one oxygen atom only"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Adjacent members of a homologous series differ in molecular formula by CH\u2082.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-019",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "easy",
-    "question": "A saturated hydrocarbon contains:",
-    "options": [
-      "at least one C\u2261C bond",
-      "no carbon-hydrogen bonds",
-      "at least one C=C bond",
-      "only single bonds between carbon atoms"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Saturated hydrocarbons have only single carbon-carbon bonds.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-020",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "medium",
-    "question": "Ethene decolourises bromine water because ethene:",
-    "options": [
-      "is unsaturated and undergoes an addition reaction",
-      "is an ionic compound",
-      "contains no carbon atoms",
-      "is a strong base"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The C=C double bond in ethene undergoes addition with bromine, causing the bromine colour to disappear.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-021",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "medium",
-    "question": "When ethanol reacts with sodium metal, the gas evolved is:",
-    "options": [
-      "hydrogen",
-      "chlorine",
-      "carbon dioxide",
-      "oxygen"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Ethanol reacts with sodium to form sodium ethoxide and hydrogen gas.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-022",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "medium",
-    "question": "Ethanoic acid reacts with sodium hydrogen carbonate to release:",
-    "options": [
-      "oxygen",
-      "nitrogen",
-      "carbon dioxide",
-      "hydrogen chloride"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "An acid reacts with a hydrogen carbonate to form salt, water and carbon dioxide.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-023",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "medium",
-    "question": "Ethanol reacts with ethanoic acid in the presence of concentrated sulphuric acid to form mainly:",
-    "options": [
-      "methane and carbon dioxide",
-      "sodium ethanoate and water",
-      "ethyl ethanoate and water",
-      "ethene and hydrogen"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "This is esterification: ethanol + ethanoic acid \u2192 ethyl ethanoate + water, with concentrated sulphuric acid as catalyst/dehydrating agent.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-024",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "medium",
-    "question": "In water, soap molecules form micelles with:",
-    "options": [
-      "both heads and tails completely outside water",
-      "no organized arrangement at all",
-      "ionic heads directed inward and tails towards water",
-      "hydrophobic tails directed inward and ionic heads towards water"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "In a micelle, non-polar hydrocarbon tails gather away from water while ionic heads remain in contact with water.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-025",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "easy",
-    "question": "Soap forms scum readily in hard water mainly because hard water contains:",
-    "options": [
-      "calcium and magnesium ions",
-      "dissolved oxygen only",
-      "only sodium ions",
-      "only chloride ions"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Calcium and magnesium ions form insoluble salts with soap, producing scum.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-026",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "easy",
-    "question": "The functional group \u2212OH is characteristic of:",
-    "options": [
-      "aldehydes",
-      "carboxylic acids",
-      "alcohols",
-      "alkenes"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The hydroxyl group \u2212OH is the characteristic functional group of alcohols.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-027",
-    "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "medium",
-    "question": "The compound CH\u2083CH\u2082CH\u2082OH is named:",
-    "options": [
-      "ethene",
-      "propan-1-ol",
-      "propanone",
-      "propanoic acid"
+      "destroying valence shells",
+      "sharing electron pairs",
+      "sharing protons",
+      "transferring neutrons"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "It has a three-carbon chain (propane) with an \u2212OH group on carbon 1, so its name is propan-1-ol.",
+    "explanation": "Covalent bonds form when atoms share one or more pairs of valence electrons.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ch-028",
+    "id": "ap-polycet-2026-ch-019",
     "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "easy",
-    "question": "Complete combustion of methane in sufficient oxygen produces:",
+    "topic": "Chemical Bonding",
+    "difficulty": "medium",
+    "question": "Magnesium forms Mg\u00b2\u207a mainly by _____.",
     "options": [
-      "carbon and hydrogen",
-      "ethanol and oxygen",
-      "carbon dioxide and water",
-      "carbon monoxide only"
+      "gaining two protons",
+      "sharing four neutrons",
+      "losing two valence electrons",
+      "gaining two electrons"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Complete combustion is CH\u2084 + 2O\u2082 \u2192 CO\u2082 + 2H\u2082O.",
+    "explanation": "Mg has two valence electrons and forms Mg\u00b2\u207a by losing both.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ch-029",
+    "id": "ap-polycet-2026-ch-020",
     "section": "Chemistry",
-    "topic": "Carbon and its Compounds",
-    "difficulty": "medium",
-    "question": "The ability of carbon atoms to link with one another to form long chains and rings is called:",
+    "topic": "Metallurgy",
+    "difficulty": "easy",
+    "question": "Which method is commonly used to concentrate sulphide ores?",
     "options": [
-      "catenation",
-      "galvanization",
-      "neutralization",
-      "calcination"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Catenation is the self-linking property of carbon that allows chains, branches and rings to form.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ch-030",
-    "section": "Chemistry",
-    "topic": "Chemical Reactions and Equations",
-    "difficulty": "hard",
-    "question": "In the thermite reaction Fe\u2082O\u2083 + 2Al \u2192 Al\u2082O\u2083 + 2Fe, which statement is correct?",
-    "options": [
-      "both Al and Fe\u2082O\u2083 are reduced",
-      "Al is reduced and Fe\u2082O\u2083 is oxidized",
-      "neither substance undergoes redox change",
-      "Al is oxidized and Fe\u2082O\u2083 is reduced"
+      "simple filtration only",
+      "fractional distillation",
+      "chromatography",
+      "froth flotation"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Al gains oxygen to form Al\u2082O\u2083, so Al is oxidized. Fe\u2082O\u2083 loses oxygen to form Fe, so Fe\u2082O\u2083 is reduced.",
+    "explanation": "Froth flotation exploits differences in wetting and is commonly used for sulphide ores.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-021",
+    "section": "Chemistry",
+    "topic": "Metallurgy",
+    "difficulty": "medium",
+    "question": "Roasting is generally carried out by heating an ore strongly in _____.",
+    "options": [
+      "excess air or oxygen",
+      "water only",
+      "liquid nitrogen",
+      "complete absence of air"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Roasting heats an ore, especially a sulphide ore, in excess air or oxygen.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-022",
+    "section": "Chemistry",
+    "topic": "Metallurgy",
+    "difficulty": "medium",
+    "question": "Calcination differs from roasting because calcination is usually done in _____.",
+    "options": [
+      "chlorine gas",
+      "limited or no air",
+      "excess oxygen only",
+      "steam at all times"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Calcination heats an ore in limited or no air, while roasting uses excess air/oxygen.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-023",
+    "section": "Chemistry",
+    "topic": "Metallurgy",
+    "difficulty": "medium",
+    "question": "In electrolytic refining of copper, impure copper is used as the _____.",
+    "options": [
+      "electrolyte",
+      "cathode",
+      "anode",
+      "salt bridge"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The impure metal is the anode; pure metal is deposited on the cathode.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-024",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "easy",
+    "question": "Successive members of a homologous series differ by _____.",
+    "options": [
+      "H\u2082O",
+      "CO\u2082",
+      "CH\u2084",
+      "CH\u2082"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Adjacent homologues differ by one \u2212CH\u2082\u2212 unit, corresponding to 14 u in molecular mass.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-025",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "medium",
+    "question": "Which functional group is present in ethanol?",
+    "options": [
+      "\u2212OH",
+      "\u2212CO\u2212",
+      "\u2212COOH",
+      "\u2212CHO"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Ethanol is an alcohol and contains the hydroxyl group \u2212OH.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-026",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "medium",
+    "question": "Ethanoic acid reacts with sodium hydrogen carbonate to release _____.",
+    "options": [
+      "chlorine",
+      "carbon dioxide",
+      "oxygen only",
+      "ammonia"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Acids react with hydrogen carbonates to form a salt, water and CO\u2082.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-027",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "easy",
+    "question": "Complete combustion of a hydrocarbon produces mainly carbon dioxide and _____.",
+    "options": [
+      "sodium chloride",
+      "hydrogen chloride",
+      "water",
+      "nitrogen"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Complete combustion converts carbon to CO\u2082 and hydrogen to H\u2082O.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-028",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "medium",
+    "question": "Saponification is the reaction used to make soap by reacting fats or oils with a strong _____.",
+    "options": [
+      "metal carbonate only",
+      "acid only",
+      "oxidising gas",
+      "base"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Fats/oils undergo alkaline hydrolysis with a strong base such as NaOH to form soap and glycerol.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-029",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "medium",
+    "question": "An open-chain hydrocarbon contains three carbon atoms and exactly one carbon-carbon double bond. What is its molecular formula?",
+    "options": [
+      "C\u2083H\u2086",
+      "C\u2083H\u2088",
+      "CH\u2084",
+      "C\u2083H\u2084"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "An acyclic mono-alkene follows CnH2n. For n=3, the formula is C\u2083H\u2086.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ch-030",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "hard",
+    "question": "An organic compound contains two carbon atoms and has the functional group \u2212COOH. Which molecular formula fits it?",
+    "options": [
+      "C\u2082H\u2085OH",
+      "CH\u2083COOH",
+      "C\u2082H\u2086",
+      "CH\u2083CHO"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "A two-carbon carboxylic acid is ethanoic acid, written CH\u2083COOH.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   }
 ];

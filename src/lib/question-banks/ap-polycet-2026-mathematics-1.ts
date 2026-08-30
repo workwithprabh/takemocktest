@@ -5,24 +5,24 @@ export const AP_POLYCET_2026_MATHEMATICS_1: Question[] = [
     "id": "ap-polycet-2026-ma-001",
     "section": "Mathematics",
     "topic": "Real Numbers",
-    "difficulty": "easy",
-    "question": "The HCF of 84 and 126 is:",
+    "difficulty": "hard",
+    "question": "A workshop has 414 blue washers and 690 white washers. It wants to make the greatest possible number of identical kits, using all washers, with each kit containing the same number of each colour. How many kits can be made?",
     "options": [
-      "28",
-      "63",
-      "42",
-      "21"
+      "138",
+      "92",
+      "276",
+      "69"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "84 = 2\u00b2\u00d73\u00d77 and 126 = 2\u00d73\u00b2\u00d77. The common prime factors with least powers give HCF = 2\u00d73\u00d77 = 42.",
+    "explanation": "The greatest number of identical kits is HCF(414,690). Euclid's algorithm gives 690\u2212414=276, 414\u2212276=138, and 276=2\u00d7138, so the HCF is 138.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
@@ -30,1175 +30,1175 @@ export const AP_POLYCET_2026_MATHEMATICS_1: Question[] = [
     "section": "Mathematics",
     "topic": "Real Numbers",
     "difficulty": "easy",
-    "question": "When 437 is divided by 19, the quotient and remainder are respectively:",
+    "question": "Which number is irrational?",
     "options": [
-      "22 and 19",
-      "23 and 0",
-      "23 and 18",
-      "22 and 18"
+      "0.125",
+      "\u221a7",
+      "22/7",
+      "\u221a49"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "19\u00d723 = 437, so 437 = 19\u00d723 + 0. Hence the quotient is 23 and the remainder is 0.",
+    "explanation": "\u221a7 is irrational because 7 is not a perfect square; the other three values are rational.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-003",
     "section": "Mathematics",
-    "topic": "Real Numbers",
+    "topic": "Sets",
     "difficulty": "medium",
-    "question": "Which of the following is irrational?",
+    "question": "In a group of 54 students, 31 like algebra, 27 like geometry and 9 like neither. How many like both algebra and geometry?",
     "options": [
-      "0.375",
-      "\u221a49 \u2212 \u221a16",
-      "7/11",
-      "\u221a18 \u2212 \u221a8"
+      "22",
+      "17",
+      "13",
+      "9"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "\u221a18 \u2212 \u221a8 = 3\u221a2 \u2212 2\u221a2 = \u221a2, which is irrational. The other three values are rational.",
+    "explanation": "Students liking at least one =54\u22129=45. By inclusion-exclusion, 31+27\u2212both=45, so both=13.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-004",
     "section": "Mathematics",
-    "topic": "Sets",
+    "topic": "Polynomials",
     "difficulty": "easy",
-    "question": "If A = {1, 3, 5, 7} and B = {3, 6, 7, 9}, then A \u2229 B is:",
+    "question": "For the quadratic polynomial x\u00b2\u22127x+10, which pair gives its zeroes?",
     "options": [
-      "{3, 7}",
-      "{3, 6, 7, 9}",
-      "{1, 5}",
-      "{1, 3, 5, 6, 7, 9}"
+      "\u22121 and \u221210",
+      "1 and 10",
+      "\u22122 and \u22125",
+      "2 and 5"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The intersection contains elements common to both sets. Only 3 and 7 occur in both A and B.",
+    "explanation": "x\u00b2\u22127x+10=(x\u22122)(x\u22125), so the zeroes are 2 and 5.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-005",
     "section": "Mathematics",
-    "topic": "Sets",
+    "topic": "Polynomials",
     "difficulty": "medium",
-    "question": "In a group of 48 students, 29 like chess, 24 like carrom, and 11 like both. How many like at least one of the two games?",
+    "question": "When P(x)=x\u00b3\u22124x+1 is divided by x\u22122, what is the remainder?",
     "options": [
-      "37",
-      "42",
-      "53",
-      "18"
+      "1",
+      "\u22121",
+      "3",
+      "9"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Using n(C\u222aD)=n(C)+n(D)\u2212n(C\u2229D), the number is 29+24\u221211=42.",
+    "explanation": "By the remainder theorem, the remainder is P(2)=8\u22128+1=1.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-006",
     "section": "Mathematics",
-    "topic": "Polynomials",
+    "topic": "Pair of Linear Equations",
     "difficulty": "easy",
-    "question": "If x \u2212 4 is a factor of p(x) = x\u00b2 \u2212 kx + 12, then k equals:",
+    "question": "Solve 2x+y=11 and x\u2212y=1. What is x?",
     "options": [
+      "3",
       "4",
-      "7",
-      "16",
-      "8"
+      "5",
+      "6"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "By the factor theorem, p(4)=0. Thus 16\u22124k+12=0, so 4k=28 and k=7.",
+    "explanation": "From x\u2212y=1, y=x\u22121. Then 2x+x\u22121=11, so 3x=12 and x=4.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-007",
     "section": "Mathematics",
-    "topic": "Polynomials",
+    "topic": "Pair of Linear Equations",
     "difficulty": "medium",
-    "question": "The sum and product of the zeros of 3x\u00b2 \u2212 11x + 6 are respectively:",
+    "question": "The equations 2x+3y=7 and 4x+6y=15 have which type of solution?",
     "options": [
-      "11/3 and 2",
-      "11 and 6",
-      "\u221211/3 and 2",
-      "11/3 and \u22122"
+      "Two distinct solutions",
+      "Infinitely many solutions",
+      "No solution",
+      "Exactly one solution"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For ax\u00b2+bx+c, sum of zeros = \u2212b/a and product = c/a. Here they are 11/3 and 6/3=2.",
+    "explanation": "The x and y coefficients are proportional, but the constants are not: 2/4=3/6\u22607/15. Hence the lines are parallel and distinct.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-008",
     "section": "Mathematics",
-    "topic": "Polynomials",
-    "difficulty": "medium",
-    "question": "The remainder when 2x\u00b3 \u2212 5x\u00b2 + 4x \u2212 7 is divided by x \u2212 2 is:",
+    "topic": "Quadratic Equations",
+    "difficulty": "easy",
+    "question": "For the quadratic equation x\u00b2\u221211x+k=0, the two roots differ by 3. What is k?",
     "options": [
-      "\u22123",
-      "\u22121",
-      "3",
-      "1"
+      "18",
+      "24",
+      "32",
+      "28"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "By the remainder theorem, substitute x=2: 2(8)\u22125(4)+8\u22127 = 16\u221220+8\u22127 = \u22123.",
+    "explanation": "Let the larger root be r and the smaller root s. Then r+s=11 and r\u2212s=3, so r=7 and s=4. Their product is k=rs=28.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-009",
     "section": "Mathematics",
-    "topic": "Pair of Linear Equations",
-    "difficulty": "easy",
-    "question": "The solution of x + y = 11 and x \u2212 y = 3 is:",
+    "topic": "Quadratic Equations",
+    "difficulty": "medium",
+    "question": "How many real roots does 3x\u00b2\u22124x+2=0 have?",
     "options": [
-      "x = 8, y = 3",
-      "x = 7, y = 4",
-      "x = 6, y = 5",
-      "x = 4, y = 7"
+      "0",
+      "1",
+      "3",
+      "2"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Adding the equations gives 2x=14, so x=7. Then y=11\u22127=4.",
+    "explanation": "The discriminant is (\u22124)\u00b2\u22124(3)(2)=16\u221224=\u22128<0, so there are no real roots.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-010",
     "section": "Mathematics",
-    "topic": "Pair of Linear Equations",
-    "difficulty": "medium",
-    "question": "For what value of k do the equations 2x + 3y = 7 and 4x + 6y = k have infinitely many solutions?",
+    "topic": "Arithmetic Progressions",
+    "difficulty": "easy",
+    "question": "The AP 9, 14, 19, ... has common difference 5. What is its 23rd term?",
     "options": [
-      "7",
-      "21",
-      "10",
-      "14"
+      "129",
+      "119",
+      "114",
+      "124"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For infinitely many solutions, the second equation must be exactly twice the first. Hence k=2\u00d77=14.",
+    "explanation": "a23=9+(23\u22121)5=9+110=119.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-011",
     "section": "Mathematics",
-    "topic": "Pair of Linear Equations",
-    "difficulty": "hard",
-    "question": "A two-digit number is 27 more than the number obtained by reversing its digits. The sum of its digits is 11. The number is:",
+    "topic": "Arithmetic Progressions",
+    "difficulty": "medium",
+    "question": "Find the sum of the first 18 terms of the AP 6, 10, 14, ... .",
     "options": [
-      "74",
-      "65",
-      "47",
-      "83"
+      "756",
+      "702",
+      "720",
+      "684"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Let tens digit be x and units digit be y. Then 9(x\u2212y)=27, so x\u2212y=3, and x+y=11. Hence x=7, y=4, giving 74.",
+    "explanation": "S18=18/2[2(6)+17(4)]=9(12+68)=720.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-012",
     "section": "Mathematics",
-    "topic": "Quadratic Equations",
+    "topic": "Coordinate Geometry",
     "difficulty": "easy",
-    "question": "The roots of x\u00b2 \u2212 9x + 20 = 0 are:",
+    "question": "P(5,2) is the midpoint of A(\u22121,7) and B(x,y). What are the coordinates of B?",
     "options": [
-      "2 and 10",
-      "1 and 20",
-      "\u22124 and \u22125",
-      "4 and 5"
+      "(9, \u22123)",
+      "(11, 1)",
+      "(9, \u22121)",
+      "(11, \u22123)"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "x\u00b2\u22129x+20=(x\u22124)(x\u22125), so the roots are 4 and 5.",
+    "explanation": "Using the midpoint formula, (\u22121+x)/2=5 gives x=11, and (7+y)/2=2 gives y=\u22123. Hence B=(11,\u22123).",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-013",
     "section": "Mathematics",
-    "topic": "Quadratic Equations",
-    "difficulty": "medium",
-    "question": "The equation 2x\u00b2 + 5x + 4 = 0 has:",
+    "topic": "Coordinate Geometry",
+    "difficulty": "hard",
+    "question": "What is the distance between (2,\u22121) and (8,7)?",
     "options": [
-      "one root equal to 0",
-      "two distinct rational roots",
-      "two equal real roots",
-      "no real roots"
+      "10",
+      "\u221a80",
+      "8",
+      "12"
     ],
-    "correctIndex": 3,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Its discriminant is b\u00b2\u22124ac = 25\u221232 = \u22127<0, so there are no real roots.",
+    "explanation": "Distance=\u221a[(8\u22122)\u00b2+(7+1)\u00b2]=\u221a(36+64)=10.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-014",
     "section": "Mathematics",
-    "topic": "Quadratic Equations",
-    "difficulty": "medium",
-    "question": "A quadratic equation whose roots are 3 and \u22122 is:",
+    "topic": "Coordinate Geometry",
+    "difficulty": "hard",
+    "question": "Point P divides A(1,2) and B(7,8) internally in the ratio AP:PB=2:1. What are the coordinates of P?",
     "options": [
-      "x\u00b2 + 5x + 6 = 0",
-      "x\u00b2 \u2212 x \u2212 6 = 0",
-      "x\u00b2 \u2212 5x \u2212 6 = 0",
-      "x\u00b2 + x \u2212 6 = 0"
+      "(6, 7)",
+      "(5, 6)",
+      "(4, 5)",
+      "(3, 4)"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The equation is (x\u22123)(x+2)=0, which expands to x\u00b2\u2212x\u22126=0.",
+    "explanation": "Section formula gives P=((1\u00d71+2\u00d77)/3,(1\u00d72+2\u00d78)/3)=(5,6).",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-015",
     "section": "Mathematics",
-    "topic": "Arithmetic Progressions",
-    "difficulty": "easy",
-    "question": "The 18th term of the AP 7, 11, 15, ... is:",
+    "topic": "Coordinate Geometry",
+    "difficulty": "medium",
+    "question": "Find the area of the triangle with vertices (0,0), (6,0) and (2,4).",
     "options": [
-      "71",
-      "68",
-      "79",
-      "75"
+      "8 square units",
+      "16 square units",
+      "12 square units",
+      "24 square units"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Here a=7 and d=4. a\u2081\u2088=a+17d=7+68=75.",
+    "explanation": "Taking base 6 on the x-axis and height 4, area=1/2\u00d76\u00d74=12.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-016",
     "section": "Mathematics",
-    "topic": "Arithmetic Progressions",
+    "topic": "Similar Triangles",
     "difficulty": "medium",
-    "question": "The sum of the first 20 terms of the AP 5, 8, 11, ... is:",
+    "question": "Two similar triangles have corresponding side ratio 3:5. What is the ratio of their areas?",
     "options": [
-      "670",
-      "610",
-      "700",
-      "640"
+      "3:5",
+      "6:10",
+      "27:125",
+      "9:25"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "a=5, d=3. S\u2082\u2080=20/2[2(5)+19(3)]=10(67)=670.",
+    "explanation": "Areas of similar triangles are proportional to the squares of corresponding sides: 3\u00b2:5\u00b2=9:25.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-017",
     "section": "Mathematics",
-    "topic": "Arithmetic Progressions",
-    "difficulty": "medium",
-    "question": "In an AP, the 6th term is 19 and the 11th term is 34. Its common difference is:",
+    "topic": "Tangents and Circles",
+    "difficulty": "hard",
+    "question": "From a point P, a tangent PT is drawn to a circle of radius 13 cm with OP=15 cm. Find PT.",
     "options": [
-      "2",
-      "5",
-      "3",
-      "15"
+      "2\u221a14 cm",
+      "8 cm",
+      "14 cm",
+      "\u221a56/2 cm"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "a+5d=19 and a+10d=34. Subtracting gives 5d=15, so d=3.",
+    "explanation": "OT\u22a5PT, so PT=\u221a(OP\u00b2\u2212OT\u00b2)=\u221a(225\u2212169)=\u221a56=2\u221a14.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-018",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry",
+    "topic": "Tangents and Circles",
     "difficulty": "easy",
-    "question": "The distance between the points (2, 3) and (8, 11) is:",
+    "question": "At the point of contact, a tangent to a circle is perpendicular to the _____.",
     "options": [
-      "14",
-      "10",
-      "8",
-      "12"
+      "chord through the centre",
+      "radius through the contact point",
+      "secant through any point",
+      "diameter not through the point"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Distance = \u221a[(8\u22122)\u00b2+(11\u22123)\u00b2] = \u221a(36+64)=\u221a100=10.",
+    "explanation": "A tangent is perpendicular to the radius drawn to the point of contact.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-019",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry",
-    "difficulty": "easy",
-    "question": "The midpoint of the line segment joining (\u22124, 6) and (10, 2) is:",
+    "topic": "Circles",
+    "difficulty": "medium",
+    "question": "ABCD is a cyclic quadrilateral. If \u2220A=(3x+8)\u00b0 and \u2220C=(5x\u22124)\u00b0, what is x?",
     "options": [
-      "(3, 4)",
-      "(3, 2)",
-      "(\u22127, 4)",
-      "(7, 8)"
+      "20",
+      "21",
+      "22",
+      "23"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Midpoint = ((\u22124+10)/2, (6+2)/2) = (3,4).",
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary. Thus (3x+8)+(5x\u22124)=180, so 8x+4=180 and x=22.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-020",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry",
-    "difficulty": "medium",
-    "question": "The point that divides the segment joining A(1, 2) and B(7, 8) internally in the ratio 2:1 is:",
+    "topic": "Trigonometry",
+    "difficulty": "easy",
+    "question": "If sin \u03b8=5/13 and \u03b8 is acute, what is cos \u03b8?",
     "options": [
-      "(3, 4)",
-      "(4, 5)",
-      "(5, 6)",
-      "(6, 7)"
+      "13/12",
+      "5/12",
+      "8/13",
+      "12/13"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For AP:PB=2:1, the point is ((2\u00d77+1\u00d71)/3, (2\u00d78+1\u00d72)/3)=(5,6).",
+    "explanation": "For an acute angle, cos\u03b8=\u221a(1\u221225/169)=12/13.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-021",
     "section": "Mathematics",
-    "topic": "Coordinate Geometry",
+    "topic": "Trigonometry",
     "difficulty": "medium",
-    "question": "The area of the triangle with vertices (1, 1), (5, 1) and (3, 6) is:",
+    "question": "If sec \u03b8=17/15 and \u03b8 is acute, what is tan \u03b8?",
     "options": [
-      "10 square units",
-      "20 square units",
-      "8 square units",
-      "12 square units"
+      "8/15",
+      "8/17",
+      "15/8",
+      "17/8"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The base from (1,1) to (5,1) has length 4 and the perpendicular height is 5. Area = 1/2\u00d74\u00d75=10 square units.",
+    "explanation": "tan\u00b2\u03b8=sec\u00b2\u03b8\u22121=289/225\u22121=64/225, so tan\u03b8=8/15.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-022",
     "section": "Mathematics",
-    "topic": "Similar Triangles",
+    "topic": "Trigonometry",
     "difficulty": "easy",
-    "question": "Two similar triangles have corresponding side lengths in the ratio 3:5. The ratio of their areas is:",
+    "question": "For an angle where cos \u03b8\u22600, (1\u2212sin\u00b2\u03b8)/cos\u00b2\u03b8 equals _____.",
     "options": [
-      "6:10",
-      "27:125",
-      "9:25",
-      "3:5"
+      "tan\u00b2\u03b8",
+      "1",
+      "sin\u00b2\u03b8",
+      "0"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Areas of similar triangles are proportional to the squares of corresponding sides, so the ratio is 3\u00b2:5\u00b2=9:25.",
+    "explanation": "Because 1\u2212sin\u00b2\u03b8=cos\u00b2\u03b8, the quotient is 1.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-023",
     "section": "Mathematics",
-    "topic": "Similar Triangles",
+    "topic": "Applications of Trigonometry",
     "difficulty": "medium",
-    "question": "In triangle ABC, D lies on AB and E lies on AC with DE \u2225 BC. If AD = 4 cm, DB = 6 cm and AE = 5 cm, then EC is:",
+    "question": "From a point 14\u221a3 m from the foot of a vertical pole, the angle of elevation of its top is 30\u00b0. What is the pole's height?",
     "options": [
-      "7.5 cm",
-      "10 cm",
-      "8 cm",
-      "6 cm"
+      "42 m",
+      "7 m",
+      "14 m",
+      "14\u221a3 m"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "By the basic proportionality theorem, AD/DB = AE/EC. Thus 4/6=5/EC, so EC=7.5 cm.",
+    "explanation": "tan30\u00b0=h/(14\u221a3)=1/\u221a3, so h=14 m.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-024",
     "section": "Mathematics",
-    "topic": "Triangles",
-    "difficulty": "medium",
-    "question": "A right triangle has hypotenuse 13 cm and one leg 5 cm. The other leg is:",
+    "topic": "Applications of Trigonometry",
+    "difficulty": "hard",
+    "question": "Two observation points on the same straight line with a tower are 20 m apart. The nearer point sees the top at 60\u00b0 and the farther point at 30\u00b0. Find the tower height.",
     "options": [
-      "12 cm",
-      "10 cm",
-      "18 cm",
-      "8 cm"
+      "10 m",
+      "20 m",
+      "20\u221a3 m",
+      "10\u221a3 m"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "By Pythagoras, the other leg = \u221a(13\u00b2\u22125\u00b2)=\u221a(169\u221225)=\u221a144=12 cm.",
+    "explanation": "Let nearer distance be x. Then h=x\u221a3=(x+20)/\u221a3, so 3x=x+20, x=10 and h=10\u221a3.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-025",
     "section": "Mathematics",
-    "topic": "Tangents to a Circle",
+    "topic": "Mensuration",
     "difficulty": "easy",
-    "question": "At the point of contact, a tangent to a circle is:",
+    "question": "A rectangular sheet is 24 cm by 15 cm. A square of side 6 cm is cut from one corner. What area of the sheet remains?",
     "options": [
-      "parallel to the radius",
-      "equal to the diameter",
-      "perpendicular to the radius through that point",
-      "a chord through the centre"
+      "324 cm\u00b2",
+      "300 cm\u00b2",
+      "318 cm\u00b2",
+      "330 cm\u00b2"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A tangent to a circle is perpendicular to the radius drawn to the point of contact.",
+    "explanation": "Original area=24\u00d715=360 cm\u00b2. The removed square has area 6\u00b2=36 cm\u00b2. Remaining area=360\u221236=324 cm\u00b2.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-026",
     "section": "Mathematics",
-    "topic": "Tangents to a Circle",
+    "topic": "Mensuration",
     "difficulty": "medium",
-    "question": "From an external point P, tangents PA and PB are drawn to a circle. If PA = 8.4 cm, then PB equals:",
+    "question": "A sector of a circle has radius 16 cm and central angle 135\u00b0. What is its perimeter in exact form?",
     "options": [
-      "cannot be determined",
-      "8.4 cm",
-      "16.8 cm",
-      "4.2 cm"
+      "96\u03c0 cm",
+      "32 + 12\u03c0 cm",
+      "16 + 12\u03c0 cm",
+      "32 + 24\u03c0 cm"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Tangents drawn from the same external point to a circle have equal lengths, so PB=PA=8.4 cm.",
+    "explanation": "Arc length=(135/360)\u00d72\u03c0\u00d716=(3/8)\u00d732\u03c0=12\u03c0 cm. Adding the two radii gives perimeter=32+12\u03c0 cm.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-027",
     "section": "Mathematics",
-    "topic": "Circles",
+    "topic": "Mensuration",
     "difficulty": "medium",
-    "question": "A circular metal lid has radius 25 cm. A straight brace forms a chord 14 cm long. The perpendicular distance from the centre of the lid to the brace is:",
+    "question": "A cone has radius 5 cm and height 12 cm. What is its volume?",
     "options": [
-      "32 cm",
-      "24 cm",
-      "7 cm",
-      "18 cm"
+      "300\u03c0 cm\u00b3",
+      "60\u03c0 cm\u00b3",
+      "100\u03c0 cm\u00b3",
+      "120\u03c0 cm\u00b3"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The perpendicular from the centre bisects the 14 cm chord, giving a half-chord of 7 cm. Hence d=\u221a(25\u00b2\u22127\u00b2)=\u221a576=24 cm.",
+    "explanation": "V=1/3\u03c0r\u00b2h=1/3\u03c0\u00d725\u00d712=100\u03c0 cm\u00b3.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-028",
     "section": "Mathematics",
-    "topic": "Trigonometry",
+    "topic": "Mensuration",
     "difficulty": "easy",
-    "question": "For an acute angle \u03b8 in a right triangle, if the opposite side is 6 cm and the hypotenuse is 10 cm, then sin \u03b8 is:",
+    "question": "What is the curved surface area of a cylinder of radius 7 cm and height 9 cm?",
     "options": [
-      "3/5",
-      "3/4",
-      "5/3",
-      "4/5"
+      "98\u03c0 cm\u00b2",
+      "252\u03c0 cm\u00b2",
+      "63\u03c0 cm\u00b2",
+      "126\u03c0 cm\u00b2"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "sin \u03b8 = opposite/hypotenuse = 6/10 = 3/5.",
+    "explanation": "Curved surface area=2\u03c0rh=2\u03c0\u00d77\u00d79=126\u03c0 cm\u00b2.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-029",
     "section": "Mathematics",
-    "topic": "Trigonometry",
+    "topic": "Mensuration",
     "difficulty": "medium",
-    "question": "If tan \u03b8 = 3/4 for an acute angle \u03b8, then sec \u03b8 is:",
+    "question": "What is the total surface area of a solid hemisphere of radius 5 cm, including its circular base?",
     "options": [
-      "5/3",
-      "5/4",
-      "3/5",
-      "4/5"
+      "75\u03c0 cm\u00b2",
+      "100\u03c0 cm\u00b2",
+      "25\u03c0 cm\u00b2",
+      "50\u03c0 cm\u00b2"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Take opposite=3 and adjacent=4; the hypotenuse is 5. Hence sec \u03b8 = hypotenuse/adjacent = 5/4.",
+    "explanation": "Total surface area of a hemisphere=3\u03c0r\u00b2=3\u03c0\u00d725=75\u03c0 cm\u00b2.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-030",
     "section": "Mathematics",
-    "topic": "Trigonometry",
-    "difficulty": "medium",
-    "question": "If A is an acute angle and sin A = cos 35\u00b0, then A equals:",
-    "options": [
-      "55\u00b0",
-      "45\u00b0",
-      "35\u00b0",
-      "65\u00b0"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "cos 35\u00b0 = sin(90\u00b0\u221235\u00b0)=sin55\u00b0. Since A is acute, A=55\u00b0.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-031",
-    "section": "Mathematics",
-    "topic": "Applications of Trigonometry",
-    "difficulty": "easy",
-    "question": "A pole casts a shadow 12 m long when the angle of elevation of the Sun is 45\u00b0. The height of the pole is:",
-    "options": [
-      "6 m",
-      "24 m",
-      "12\u221a2 m",
-      "12 m"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "tan45\u00b0 = height/shadow = 1, so height=12 m.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-032",
-    "section": "Mathematics",
-    "topic": "Applications of Trigonometry",
+    "topic": "Mensuration",
     "difficulty": "hard",
-    "question": "From a point P on level ground, the base of a lamp post is 10 m away and the base of a signal mast is 30 m away along the same straight line. The angles of elevation of their tops are 45\u00b0 and 30\u00b0 respectively. How much taller is the mast than the lamp post?",
+    "question": "A solid toy consists of a cylinder of radius 3 cm and height 11 cm, surmounted by a cone of the same radius. Its total volume is 135\u03c0 cm\u00b3. What is the slant height of the conical part?",
     "options": [
-      "10(\u221a3 + 1) m",
-      "10(\u221a3 \u2212 1) m",
-      "20 m",
-      "10/\u221a3 m"
+      "3\u221a10 cm",
+      "3\u221a17 cm",
+      "6\u221a5 cm",
+      "12 cm"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Lamp height=10tan45\u00b0=10 m. Mast height=30tan30\u00b0=30/\u221a3=10\u221a3 m. Difference=10\u221a3\u221210=10(\u221a3\u22121) m.",
+    "explanation": "The cylinder volume is \u03c0(3\u00b2)(11)=99\u03c0 cm\u00b3, so the cone volume is 135\u03c0\u221299\u03c0=36\u03c0 cm\u00b3. If the cone height is h, then (1/3)\u03c0(3\u00b2)h=36\u03c0, giving 3\u03c0h=36\u03c0 and h=12 cm. Hence the slant height is \u221a(3\u00b2+12\u00b2)=\u221a153=3\u221a17 cm.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-033",
-    "section": "Mathematics",
-    "topic": "Areas Related to Circles",
-    "difficulty": "medium",
-    "question": "Using \u03c0 = 22/7, the area of a sector of radius 14 cm and central angle 90\u00b0 is:",
-    "options": [
-      "616 cm\u00b2",
-      "44 cm\u00b2",
-      "154 cm\u00b2",
-      "308 cm\u00b2"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Sector area = 90/360 \u00d7 \u03c0r\u00b2 = 1/4\u00d722/7\u00d7196 = 154 cm\u00b2.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-034",
-    "section": "Mathematics",
-    "topic": "Mensuration",
-    "difficulty": "easy",
-    "question": "The curved surface area of a cone of radius 7 cm and slant height 10 cm, using \u03c0 = 22/7, is:",
-    "options": [
-      "440 cm\u00b2",
-      "770 cm\u00b2",
-      "220 cm\u00b2",
-      "154 cm\u00b2"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Curved surface area of a cone is \u03c0rl = 22/7\u00d77\u00d710 = 220 cm\u00b2.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-035",
-    "section": "Mathematics",
-    "topic": "Mensuration",
-    "difficulty": "medium",
-    "question": "A cylinder has radius 3 cm and height 10 cm. Its volume is:",
-    "options": [
-      "90\u03c0 cm\u00b3",
-      "180\u03c0 cm\u00b3",
-      "60\u03c0 cm\u00b3",
-      "30\u03c0 cm\u00b3"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Volume = \u03c0r\u00b2h = \u03c0\u00d73\u00b2\u00d710 = 90\u03c0 cm\u00b3.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-036",
-    "section": "Mathematics",
-    "topic": "Mensuration",
-    "difficulty": "medium",
-    "question": "The total surface area of a sphere of radius 6 cm is:",
-    "options": [
-      "216\u03c0 cm\u00b2",
-      "72\u03c0 cm\u00b2",
-      "144\u03c0 cm\u00b2",
-      "36\u03c0 cm\u00b2"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Surface area of a sphere is 4\u03c0r\u00b2 = 4\u03c0\u00d736 = 144\u03c0 cm\u00b2.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-037",
-    "section": "Mathematics",
-    "topic": "Mensuration",
-    "difficulty": "hard",
-    "question": "A solid hemisphere of radius 3 cm is melted and recast into a cone of radius 3 cm. The height of the cone is:",
-    "options": [
-      "6 cm",
-      "9 cm",
-      "2 cm",
-      "3 cm"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Equating volumes: (2/3)\u03c0(3\u00b3) = (1/3)\u03c0(3\u00b2)h. This gives 18\u03c0=3\u03c0h, so h=6 cm.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-038",
+    "id": "ap-polycet-2026-ma-031",
     "section": "Mathematics",
     "topic": "Statistics",
     "difficulty": "easy",
-    "question": "The mean of 8, 12, 15, 9 and 16 is:",
-    "options": [
-      "13",
-      "11",
-      "12",
-      "10"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The sum is 60 and there are 5 observations, so mean=60/5=12.",
-    "source": {
-      "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "ap-polycet-2026-ma-039",
-    "section": "Mathematics",
-    "topic": "Statistics",
-    "difficulty": "easy",
-    "question": "The median of 4, 7, 9, 11, 13, 18, 20 is:",
+    "question": "Find the mean of 6, 8, 10, 12 and 14.",
     "options": [
       "9",
-      "13",
       "12",
+      "10",
       "11"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The sum is 50 and there are 5 values, so mean=10.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-032",
+    "section": "Mathematics",
+    "topic": "Statistics",
+    "difficulty": "easy",
+    "question": "Find the median of 3, 5, 7, 9, 15 and 18.",
+    "options": [
+      "9",
+      "10",
+      "7",
+      "8"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "There are 7 ordered observations, so the median is the 4th value, which is 11.",
+    "explanation": "For six ordered values, median is the average of the 3rd and 4th values: (7+9)/2=8.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-040",
+    "id": "ap-polycet-2026-ma-033",
     "section": "Mathematics",
     "topic": "Statistics",
     "difficulty": "medium",
-    "question": "If the mean is 24 and the median is 26, then the empirical relation Mode \u2248 3 Median \u2212 2 Mean gives the mode as:",
+    "question": "The values 4, 6, 8, 8, 9, 9, 9, 12 have which mode?",
     "options": [
-      "26",
-      "22",
-      "30",
-      "28"
+      "9",
+      "12",
+      "8.5",
+      "8"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "9 occurs three times, more frequently than any other value.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-034",
+    "section": "Mathematics",
+    "topic": "Probability",
+    "difficulty": "easy",
+    "question": "A fair die is rolled once. What is the probability of getting a prime number?",
+    "options": [
+      "2/3",
+      "1/2",
+      "1/3",
+      "5/6"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Prime faces are 2,3,5: three favourable outcomes out of six, so probability=1/2.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-035",
+    "section": "Mathematics",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "question": "Two fair coins are tossed. What is the probability of getting exactly one head?",
+    "options": [
+      "1",
+      "1/4",
+      "1/2",
+      "3/4"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Mode \u2248 3(26)\u22122(24)=78\u221248=30.",
+    "explanation": "The equally likely outcomes are HH, HT, TH, TT. Exactly one head occurs in HT and TH: 2/4=1/2.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-041",
+    "id": "ap-polycet-2026-ma-036",
     "section": "Mathematics",
     "topic": "Probability",
     "difficulty": "easy",
-    "question": "A fair die is rolled once. The probability of getting a prime number is:",
+    "question": "One card is drawn from a standard 52-card deck. What is the probability that it is red?",
     "options": [
-      "1/3",
-      "2/3",
-      "5/6",
+      "1/26",
+      "1/4",
+      "3/4",
       "1/2"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Prime outcomes are 2, 3 and 5: 3 favourable outcomes out of 6. Probability=3/6=1/2.",
+    "explanation": "There are 26 red cards among 52, so probability=26/52=1/2.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-042",
+    "id": "ap-polycet-2026-ma-037",
     "section": "Mathematics",
     "topic": "Probability",
-    "difficulty": "medium",
-    "question": "One card is drawn at random from a standard deck of 52 cards. The probability that it is a red king is:",
+    "difficulty": "easy",
+    "question": "If P(A)=0.37, what is P(not A)?",
     "options": [
-      "1/13",
-      "2/13",
-      "1/26",
-      "1/4"
+      "0.63",
+      "1.37",
+      "0.73",
+      "0.37"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "There are 2 red kings among 52 cards, so the probability is 2/52=1/26.",
+    "explanation": "Complementary probabilities add to 1, so P(not A)=1\u22120.37=0.63.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-043",
+    "id": "ap-polycet-2026-ma-038",
     "section": "Mathematics",
-    "topic": "Probability",
-    "difficulty": "medium",
-    "question": "Two fair coins are tossed together. The probability of getting exactly one head is:",
+    "topic": "Quadratic Equations",
+    "difficulty": "hard",
+    "question": "A rectangle has width x cm and length (x+3) cm. Its area is 40 cm\u00b2. What is its length?",
     "options": [
-      "3/4",
-      "1/2",
-      "1",
-      "1/4"
+      "13 cm",
+      "8 cm",
+      "10 cm",
+      "5 cm"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The equally likely outcomes are HH, HT, TH, TT. Exactly one head occurs in HT and TH, so probability=2/4=1/2.",
+    "explanation": "x(x+3)=40 gives x\u00b2+3x\u221240=0=(x\u22125)(x+8). Positive width x=5, so length=8 cm.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-044",
+    "id": "ap-polycet-2026-ma-039",
     "section": "Mathematics",
-    "topic": "Quadratic Equations",
+    "topic": "Real Numbers",
     "difficulty": "medium",
-    "question": "The product of two consecutive positive integers is 210. The smaller integer is:",
+    "question": "What is the greatest positive integer that divides 203, 293 and 473 leaving the same remainder in each case?",
     "options": [
-      "10",
-      "15",
-      "14",
-      "13"
+      "45",
+      "135",
+      "90",
+      "180"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Let the smaller integer be n. Then n(n+1)=210, so n\u00b2+n\u2212210=0=(n\u221214)(n+15). The positive solution is n=14.",
+    "explanation": "A common divisor leaving the same remainder must divide the pairwise differences. The differences include 293\u2212203=90 and 473\u2212293=180. HCF(90,180)=90. Indeed each number leaves remainder 23 on division by 90.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-045",
+    "id": "ap-polycet-2026-ma-040",
     "section": "Mathematics",
-    "topic": "Arithmetic Progressions",
-    "difficulty": "medium",
-    "question": "At a repair workshop, the number of components checked in successive 10-minute slots forms an AP. The first slot has 23 components, and each later slot has 4 more than the previous one. In which slot are 71 components checked?",
+    "topic": "Real Numbers",
+    "difficulty": "easy",
+    "question": "Which statement must be true about the decimal expansion of a rational number?",
     "options": [
-      "11th",
-      "12th",
-      "14th",
-      "13th"
+      "It always terminates",
+      "It is always non-terminating and non-repeating",
+      "It never repeats",
+      "It terminates or eventually repeats"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "If the slot number is n, then 23+(n\u22121)\u00d74=71. Thus (n\u22121)\u00d74=48, so n\u22121=12 and n=13. Therefore, 71 components are checked in the 13th slot.",
+    "explanation": "A rational number has a decimal expansion that either terminates or is non-terminating recurring.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-046",
+    "id": "ap-polycet-2026-ma-041",
+    "section": "Mathematics",
+    "topic": "Sets",
+    "difficulty": "medium",
+    "question": "For two finite sets A and B, n(A)=28, n(B)=23 and n(A\u222aB)=41. How many elements belong to exactly one of A or B?",
+    "options": [
+      "31",
+      "21",
+      "41",
+      "20"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "n(A\u2229B)=28+23\u221241=10. Elements in exactly one set=(28\u221210)+(23\u221210)=18+13=31.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-042",
     "section": "Mathematics",
     "topic": "Polynomials",
     "difficulty": "medium",
-    "question": "If x + 2 is a factor of x\u00b3 + ax\u00b2 \u2212 4x + 12, then a is:",
+    "question": "If x=2 is a zero of x\u00b2+kx\u221212, what is k?",
     "options": [
-      "\u22125",
-      "\u22123",
-      "3",
-      "7"
+      "\u22124",
+      "4",
+      "2",
+      "8"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Substitute x=\u22122: \u22128+4a+8+12=0, so 4a+12=0 and a=\u22123.",
+    "explanation": "Substitute x=2: 4+2k\u221212=0, so 2k=8 and k=4.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-047",
+    "id": "ap-polycet-2026-ma-043",
     "section": "Mathematics",
     "topic": "Pair of Linear Equations",
     "difficulty": "medium",
-    "question": "The equations 3x + ky = 9 and 6x + 8y = 18 represent the same line when k equals:",
+    "question": "Two numbers have sum 46 and differ by 8. What is the larger number?",
     "options": [
-      "2",
+      "19",
+      "31",
+      "27",
+      "23"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Let larger x and smaller y. x+y=46, x\u2212y=8. Adding gives 2x=54, so x=27.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-044",
+    "section": "Mathematics",
+    "topic": "Arithmetic Progressions",
+    "difficulty": "medium",
+    "question": "An arithmetic progression has 12 terms. The sum of the terms in odd-numbered positions is 156 and the sum of the terms in even-numbered positions is 180. What is its common difference?",
+    "options": [
+      "3",
+      "5",
       "6",
-      "8",
       "4"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For the same line, coefficient ratios must match: 3/6=k/8=9/18=1/2. Thus k=4.",
+    "explanation": "For 12 terms, the odd-position sum is 6a+30d and the even-position sum is 6a+36d. Their difference is 6d=180\u2212156=24, so d=4.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "ap-polycet-2026-ma-048",
+    "id": "ap-polycet-2026-ma-045",
     "section": "Mathematics",
-    "topic": "Trigonometry",
+    "topic": "Coordinate Geometry",
     "difficulty": "hard",
-    "question": "If sin \u03b8 + cos \u03b8 = \u221a(3/2) for an acute angle \u03b8, then sin 2\u03b8 equals:",
+    "question": "For what value of k are the points (1,2), (3,6) and (5,k) collinear?",
     "options": [
-      "1/4",
-      "1/2",
-      "1",
-      "\u221a3/2"
+      "10",
+      "8",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Slope from first to second is 2. Collinearity requires (k\u22126)/(5\u22123)=2, so k\u22126=4 and k=10.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-046",
+    "section": "Mathematics",
+    "topic": "Similar Triangles",
+    "difficulty": "medium",
+    "question": "A triangle with sides 6 cm, 8 cm and 10 cm is similar to a larger triangle with scale factor 3/2. What is the larger triangle's perimeter?",
+    "options": [
+      "48 cm",
+      "36 cm",
+      "30 cm",
+      "24 cm"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Squaring gives 1+2sin\u03b8cos\u03b8=3/2. Hence 2sin\u03b8cos\u03b8=1/2, and sin2\u03b8=1/2.",
+    "explanation": "Original perimeter=24 cm. Multiplying by 3/2 gives 36 cm.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-047",
+    "section": "Mathematics",
+    "topic": "Trigonometry",
+    "difficulty": "easy",
+    "question": "If sin A=cos35\u00b0 and A is acute, what is A?",
+    "options": [
+      "45\u00b0",
+      "35\u00b0",
+      "55\u00b0",
+      "65\u00b0"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "cos35\u00b0=sin(90\u00b0\u221235\u00b0)=sin55\u00b0. For acute A, A=55\u00b0.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "ap-polycet-2026-ma-048",
+    "section": "Mathematics",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "question": "A metal sphere of radius 6 cm is melted and recast into identical solid cylinders, each of radius 2 cm and height 9 cm. How many cylinders are formed?",
+    "options": [
+      "6",
+      "7",
+      "9",
+      "8"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Sphere volume=(4/3)\u03c0(6\u00b3)=288\u03c0 cm\u00b3. Each cylinder has volume \u03c0(2\u00b2)(9)=36\u03c0 cm\u00b3. Number formed=288\u03c0/36\u03c0=8.",
+    "source": {
+      "kind": "original",
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-049",
     "section": "Mathematics",
-    "topic": "Mensuration",
+    "topic": "Statistics",
     "difficulty": "medium",
-    "question": "A cylindrical vessel of radius 7 cm contains water to a height of 8 cm. Using \u03c0 = 22/7, the volume of water is:",
+    "question": "The mean of 2, 4, 6, 8 and x is 6. What is x?",
     "options": [
-      "616 cm\u00b3",
-      "2464 cm\u00b3",
-      "1540 cm\u00b3",
-      "1232 cm\u00b3"
+      "10",
+      "12",
+      "6",
+      "8"
     ],
-    "correctIndex": 3,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Volume=\u03c0r\u00b2h=22/7\u00d749\u00d78=1232 cm\u00b3.",
+    "explanation": "Total required sum=5\u00d76=30. Known sum=20, so x=10.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "ap-polycet-2026-ma-050",
     "section": "Mathematics",
-    "topic": "Statistics",
-    "difficulty": "medium",
-    "question": "The mean of five numbers 12, 18, x, 24 and 31 is 21. The value of x is:",
+    "topic": "Probability",
+    "difficulty": "easy",
+    "question": "One card is chosen at random from cards numbered 1 to 18. What is the probability that its number is a multiple of 4 but not a multiple of 6?",
     "options": [
-      "21",
-      "22",
-      "19",
-      "20"
+      "2/9",
+      "1/6",
+      "1/3",
+      "1/4"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A mean of 21 for 5 numbers gives total 105. The known total is 12+18+24+31=85, so x=105\u221285=20.",
+    "explanation": "Multiples of 4 are 4, 8, 12 and 16. Excluding numbers also divisible by 6 removes 12, leaving 3 favourable cards out of 18. Probability=3/18=1/6.",
     "source": {
       "kind": "original",
-      "reference": "AP POLYCET 2026 official SBTET Andhra Pradesh brochure and SSC March 2026 syllabus framework",
-      "url": "https://apsbtet.ap.gov.in/",
-      "checkedOn": "2026-08-28"
+      "reference": "AP POLYCET 2026 official SBTET AP information brochure",
+      "url": "https://polycetap.ap.gov.in/",
+      "checkedOn": "2026-08-30"
     }
   }
 ];
