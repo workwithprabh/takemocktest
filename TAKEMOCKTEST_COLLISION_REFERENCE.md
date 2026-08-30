@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-08-29 from 612 bank files / 22889 questions.
+Generated: 2026-08-30 from 614 bank files / 22959 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -54,7 +54,7 @@ Avoid reusing the exact same fact/setup for these (section, topic) pairs without
 | Mathematics | Limits | 56 | amu-btech, ap-eapcet, assam-cee, cg-pet, cusat-cat, gujcet-2026, jain-jet, jee-advanced, jee-main, mht-cet, siteee-2026, srmjeee-2026, tg-eapcet, upeseat-2026, wbjee-engineering (15) |
 | Chemistry | Chemical bonding | 52 | aeee-2026, ap-eapcet, assam-cee, bv-btech, cg-pet, cusat-cat, jain-jet, jee-advanced, jee-main, mht-cet, saeee-2026, srmjeee-2026, tg-eapcet, upeseat-2026, wbjee-engineering (15) |
 | Physics | Waves | 45 | ap-eapcet, assam-cee, bitsat-2026, comedk-uget, cusat-cat, jain-jet, jee-advanced, jee-main, kcet-engineering, mht-cet, siteee-2026, srmjeee-2026, tg-eapcet, upeseat-2026, wbjee-engineering (15) |
-| Mathematics | Statistics | 43 | agniveer-vayu, assam-cee, bitsat-2026, cg-pet, comedk-uget, cusat-cat, jain-jet, jee-main, kcet-engineering, rrb-ntpc, rrb-technician, siteee-2026, srmjeee-2026, upeseat-2026, wbjee-engineering (15) |
+| Mathematics | Statistics | 44 | agniveer-vayu, assam-cee, bitsat-2026, cg-pet, comedk-uget, cusat-cat, jain-jet, jee-main, kcet-engineering, rrb-ntpc, rrb-technician, siteee-2026, srmjeee-2026, upeseat-2026, wbjee-engineering (15) |
 | Chemistry | Polymers | 35 | amu-btech, ap-eapcet, bcece-2026, comedk-uget, cusat-cat, gujcet-2026, jain-jet, jee-main, kcet-engineering, mht-cet, nmims-cet, srmjeee-2026, tg-eapcet, upeseat-2026, wbjee-engineering (15) |
 | English Language | Sentence improvement | 100 | ibps-clerk, ibps-po, ibps-rrb, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, ssc-selection (14) |
 | Physics | Work, energy and power | 57 | aeee-2026, bcece-2026, cg-pet, comedk-uget, cusat-cat, jain-jet, jee-main, kcet-engineering, met-2026, mht-cet, nmims-cet, saeee-2026, special-ojee, srmjeee-2026 (14) |
@@ -127,6 +127,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | in a certain code each letter | aeee-2026, cmat-qtdi, ibps-rrb, ibps-so, jipmat-qa, kmat-karnataka, lic-aao, rbi-assistant, rpf-constable, upsc-cse (10) |
 | a 2 kg body moving at | amu-btech, ap-eapcet, assam-cee, bcece-2026, comedk-uget, cusat-cat, kcet-engineering, special-ojee, srmjeee-2026, wbjee-engineering (10) |
 | in young s double slit experiment | assam-cee, comedk-uget, cusat-cat, jee-advanced, kcet-engineering, met-2026, mht-cet, special-ojee, viteee-2026, wbjee-engineering (10) |
+| if a b 3 4 and | cma-foundation, ibps-clerk, ibps-rrb, ibps-so, lic-aao, niacl-ao, rpf-constable, rpf-si, rrb-ntpc, sbi-po (10) |
 | the average of 6 numbers is | gre-quantitative, ibps-rrb, kmat-karnataka, niacl-ao, rpf-constable, rpf-si, sbi-clerk, sbi-po, ssc-gd, tancet-mba (10) |
 | in a class of 45 students | ibps-clerk, ibps-po, ibps-rrb, ibps-so, lic-aao, rbi-assistant, rbi-grade, rrb-group, rrb-je, sbi-clerk (10) |
 | what is the primary purpose of | ibps-po, ibps-so, ibsat-verbal, jee-main, jipmat-qa, nabard-grade, niacl-ao, rrb-alp, rrb-technician, tancet-mba (10) |
@@ -148,7 +149,6 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a 5 kg block on a | amu-btech, ap-eapcet, assam-cee, bcece-2026, jee-main, kcet-engineering, special-ojee, tg-eapcet, wbjee-engineering (9) |
 | pointing to a man a woman | ca-foundation, ibps-rrb, lic-aao, niacl-ao, rbi-assistant, rrb-group, sbi-clerk, ssc-chsl, ssc-je (9) |
 | find the circumference of a circle | cds-elementary, ibps-rrb, kmat-karnataka, niacl-ao, rbi-grade, rpf-constable, rpf-si, rrb-technician, ssc-chsl (9) |
-| if a b 3 4 and | cma-foundation, ibps-clerk, ibps-rrb, ibps-so, lic-aao, niacl-ao, rpf-constable, rpf-si, sbi-po (9) |
 | based on the passage above which | cmat-qtdi, ibsat-verbal, jipmat-qa, kmat-karnataka, mat-language, micat-va, nmat-language, snap-general, tancet-mba (9) |
 | improve the underlined part he is | ibps-clerk, ibps-so, lic-aao, nabard-grade, niacl-ao, sbi-clerk, sidbi-grade, ssc-chsl, ssc-cpo (9) |
 | a trader buys an item for | ibps-rrb, jipmat-qa, kmat-karnataka, rrb-paramedical, rrb-technician, sbi-po, ssc-chsl, ssc-mts, tancet-mba (9) |
