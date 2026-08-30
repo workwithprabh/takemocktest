@@ -106,7 +106,11 @@ export type ExamSlug =
   | 'ap-ecet'
   | 'ap-pgecet'
   | 'lpunest'
-  | 'nerist-nee';
+  | 'nerist-nee'
+  | 'bihar-dcece'
+  | 'hp-pat'
+  | 'iemjee'
+  | 'jeecup';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -301,6 +305,10 @@ const AP_ECET_2026_INSTRUCTION_BOOKLET_V3 = 'https://cets.apsche.ap.gov.in/ECET/
 const AP_PGECET_2026_CSIT_MASTER_PAPER = 'https://cets.apsche.ap.gov.in/PGECET/PDF/EXAM_PAPER/CS_QP_2026_APRIL_28_SHIFT2.pdf';
 const LPUNEST_2026_QUESTION_PAPER_PATTERN_PAGE = 'https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php';
 const NERIST_NEE_2026_INFORMATION_BROCHURE = 'https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf';
+const BIHAR_DCECE_2026_BCECEB_PORTAL = 'https://bceceboard.bihar.gov.in/DCECEIndex.php';
+const HP_PAT_2026_PROSPECTUS = 'https://www.hptechboard.com/storage/files/1/PAT_LEET_2026/PAT%202026%20Prospectus_.pdf';
+const IEMJEE_2026_OFFICIAL_PAGE = 'https://iem.edu.in/iemjee-2026/';
+const JEECUP_2026_INFORMATION_BROCHURE = 'https://jeecup.admissions.nic.in/document/information-brochure-for-upjee-2026/';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -11026,6 +11034,142 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Marks and negative marking vary by question and are set per-question (1-mark questions score +1/-0.25, 2-mark questions score +2/-0.5), overriding these test-level defaults which apply to 1-mark questions only.', checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'bihar-dcece': {
+    slug: 'bihar-dcece',
+    name: 'Bihar DCECE',
+    shortName: 'Bihar DCECE',
+    fullName: 'Diploma Certificate Entrance Competitive Examination — Polytechnic Engineering',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'pe-polytechnic-engineering',
+        name: 'PE Polytechnic Engineering',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 90,
+          totalMarks: 450,
+          duration: 135,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 150 },
+            { name: 'Chemistry', questions: 30, marks: 150 },
+            { name: 'Mathematics', questions: 30, marks: 150 },
+          ],
+          timerNote: 'Single 135-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: "Bihar DCECE 2026 PE Polytechnic Engineering is conducted by the Bihar Combined Entrance Competitive Examination Board (BCECEB) for admission to Polytechnic Engineering diploma courses. The current 2026 BCECEB DCECE[PE/PM/PMM] cycle is directly confirmed live, but the official prospectus PDF (roughly 18.86 MB) exceeds this project's web-extraction size limit, so its detailed pattern table could not be independently rendered. The 90-question (Physics 30, Chemistry 30, Mathematics 30) shell for 450 marks in 135 minutes, +5 per correct answer and no negative marking, is therefore carried as a controlled Stage-1 model from consistent current-cycle sourcing rather than a directly-extracted pattern table, and is marked review-pending until a direct extraction succeeds. An unanswered question scores zero.",
+          sourceUrl: BIHAR_DCECE_2026_BCECEB_PORTAL,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'pe-polytechnic-engineering-full-mock-1', name: 'PE Polytechnic Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 135, marksPerCorrect: 5, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'hp-pat': {
+    slug: 'hp-pat',
+    name: 'HP PAT',
+    shortName: 'HP PAT',
+    fullName: 'Himachal Pradesh Polytechnic Admission Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'first-year-polytechnic',
+        name: 'First Year Polytechnic',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'English'],
+          totalQuestions: 150,
+          totalMarks: 600,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 200 },
+            { name: 'Physics', questions: 50, marks: 200 },
+            { name: 'Chemistry', questions: 30, marks: 120 },
+            { name: 'English', questions: 20, marks: 80 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: 'HP PAT 2026 (Himachal Pradesh Polytechnic Admission Test) is conducted by the Himachal Pradesh Takniki Shiksha Board for admission to first-year Polytechnic diploma courses after Class 10. The current official 2026 prospectus directly confirms 150 four-option MCQs (Mathematics 50, Physics 50, Chemistry 30, English 20) for 600 marks in 180 minutes, +4 per correct answer and -1 per wrong answer, at the official NCERT/Class-10 Appendix-II syllabus level. An unanswered question scores zero.',
+          sourceUrl: HP_PAT_2026_PROSPECTUS,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'first-year-polytechnic-full-mock-1', name: 'First Year Polytechnic Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'iemjee': {
+    slug: 'iemjee',
+    name: 'IEMJEE',
+    shortName: 'IEMJEE',
+    fullName: 'IEM Joint Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-online',
+        name: 'B.Tech Online',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 90,
+          totalMarks: 360,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 120 },
+            { name: 'Chemistry', questions: 30, marks: 120 },
+            { name: 'Mathematics', questions: 30, marks: 120 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: "IEMJEE 2026 B.Tech Online models the current official ONLINE-mode sitting only (IEM's B.Tech admissions page also offers a separate 3-hour offline sitting, not built here): 90 Physics/Chemistry/Mathematics questions (30 each) for 360 marks in a single 120-minute composite timer, +4 per correct answer and -1 per wrong answer. The official page does not explicitly state the number of response options or confirm all-MCQ composition; this mock's four-option single-correct rendering is a TakeMockTest platform representation, not itself confirmed by direct official evidence, so the pattern is marked review-pending. This follows the explicit IEMJEE 90-question shell, not JEE Main-style numerical-answer questions. An unanswered question scores zero.",
+          sourceUrl: IEMJEE_2026_OFFICIAL_PAGE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'btech-online-full-mock-1', name: 'B.Tech Online Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jeecup': {
+    slug: 'jeecup',
+    name: 'JEECUP',
+    shortName: 'JEECUP',
+    fullName: 'Joint Entrance Examination Council, Uttar Pradesh — UPJEE(P)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'group-a-engineering-technology',
+        name: 'Group A Engineering & Technology',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics & Chemistry'],
+          totalQuestions: 100,
+          totalMarks: 400,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 200 },
+            { name: 'Physics & Chemistry', questions: 50, marks: 200 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering both sections; no sectional lock.',
+          note: "JEECUP / UPJEE(P) 2026 Group A Engineering & Technology is conducted by the Joint Entrance Examination Council, Uttar Pradesh for admission to Group A polytechnic diploma courses. The current official 2026 brochure directly fixes Mathematics at 50% and Physics & Chemistry jointly at 50% of the paper; it does not publish an internal Physics-versus-Chemistry split, so the combined 50-question section is kept as a single 'Physics & Chemistry' section rather than an invented 25/25 split. 100 four-option MCQs for 400 marks in 150 minutes, +4 per correct answer with no negative marking. An unanswered question scores zero.",
+          sourceUrl: JEECUP_2026_INFORMATION_BROCHURE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'group-a-engineering-technology-full-mock-1', name: 'Group A Engineering & Technology Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 0, checkedOn: '29 August 2026' },
         ],
       },
     ],
