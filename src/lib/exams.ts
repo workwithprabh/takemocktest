@@ -102,7 +102,11 @@ export type ExamSlug =
   | 'imu-cet'
   | 'kleee'
   | 'ap-polycet'
-  | 'atit';
+  | 'atit'
+  | 'ap-ecet'
+  | 'ap-pgecet'
+  | 'lpunest'
+  | 'nerist-nee';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -293,6 +297,10 @@ const IMU_CET_2026_PROSPECTUS = 'https://www.imu.edu.in/imunew/uploads/files/adm
 const KLEEE_2026_OFFICIAL_PAGE = 'https://admissions.kluniversity.in/';
 const AP_POLYCET_2026_SBTET_PORTAL = 'https://apsbtet.ap.gov.in/';
 const ATIT_2026_ICFAITECH_BTECH_PAGE = 'https://www.ifheindia.org/icfaitech-school-hyderabad/icfaitech/ugprograms/btech';
+const AP_ECET_2026_INSTRUCTION_BOOKLET_V3 = 'https://cets.apsche.ap.gov.in/ECET/PDF/APECET2026_InstructionBooklet_V3.pdf';
+const AP_PGECET_2026_CSIT_MASTER_PAPER = 'https://cets.apsche.ap.gov.in/PGECET/PDF/EXAM_PAPER/CS_QP_2026_APRIL_28_SHIFT2.pdf';
+const LPUNEST_2026_QUESTION_PAPER_PATTERN_PAGE = 'https://www.lpu.in/nest/btech/question-paper-pattern-for-lpunest.php';
+const NERIST_NEE_2026_INFORMATION_BROCHURE = 'https://nerist.ac.in/wp-content/uploads/2026/01/Information-Brochure-NEE-2026-.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -1683,7 +1691,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 120,
           duration: 90,
           negativeMarking: 0.333,
-          note: 'Consistently confirmed across multiple independent current sources: CBT 2 is 120 questions for 120 marks in 90 minutes, with the same Mathematics (35), General Intelligence and Reasoning (35), and General Awareness (50) structure across every 7th CPC pay level (Level 2 through Level 6) and both the Graduate and Undergraduate NTPC cycles — separate CBT 2 exams are conducted per level with graded difficulty, not a different question/marks structure. Unlike CBT 1, CBT 2 marks are carried into the final merit list. This site\'s content covers Mathematics and General Intelligence and Reasoning only (70 of the 120 official questions); General Awareness is not built, since it needs current, fact-checked content rather than internally-verifiable calculation or logical reasoning.',
+          note: 'Consistently confirmed across multiple independent current sources: CBT 2 is 120 questions for 120 marks in 90 minutes, with the same Mathematics (35), General Intelligence and Reasoning (35), and General Awareness (50) structure across every 7th CPC pay level (Level 2 through Level 6) and both the Graduate and Undergraduate NTPC cycles — separate CBT 2 exams are conducted per level with graded difficulty, not a different question/marks structure; the section-wise split is indicative rather than a fixed per-topic guarantee. Unlike CBT 1, CBT 2 marks are carried into the final merit list.',
           sectionBreakdown: [
             { name: 'Mathematics', questions: 35, marks: 35 },
             { name: 'General Intelligence and Reasoning', questions: 35, marks: 35 },
@@ -1699,11 +1707,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             name: 'CBT 2 Full Mock Test 1',
             kind: 'full-length',
             status: 'checked',
-            duration: 53,
+            duration: 90,
             marksPerCorrect: 1,
             negativeMarking: 0.333,
-            scoringNote: 'This mock covers Mathematics and General Intelligence and Reasoning only (70 of the 120 official questions), with a proportionally scaled 53-minute timer (70/120 of the official 90 minutes). General Awareness (the remaining 50 questions) is not included, since it needs current, fact-checked content rather than self-authored practice.',
-            checkedOn: '26 August 2026',
+            checkedOn: '30 August 2026',
           },
           {
             id: 'cbt-2-mathematics-sectional-1',
@@ -1726,6 +1733,18 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             marksPerCorrect: 1,
             negativeMarking: 0.333,
             checkedOn: '26 August 2026',
+          },
+          {
+            id: 'cbt-2-general-awareness-sectional-1',
+            name: 'General Awareness Sectional Test 1',
+            kind: 'sectional',
+            status: 'checked',
+            section: 'General Awareness',
+            duration: 38,
+            marksPerCorrect: 1,
+            negativeMarking: 0.333,
+            scoringNote: 'The official CBT 2 uses a single 90-minute composite timer with no separate General Awareness time limit; the 38-minute duration here is a platform-proportional practice timing (50/120 of the official 90 minutes), not an official sectional timer.',
+            checkedOn: '30 August 2026',
           },
           {
             id: 'cbt-2-full-mock-2',
@@ -10871,6 +10890,142 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ap-ecet': {
+    slug: 'ap-ecet',
+    name: 'AP ECET',
+    shortName: 'AP ECET',
+    fullName: 'Andhra Pradesh Engineering Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'cse-diploma',
+        name: 'Computer Science and Engineering',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'Computer Science and Engineering'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 50 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+            { name: 'Computer Science and Engineering', questions: 100, marks: 100 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "AP ECET is the lateral-entry route for Diploma Holders directly into the second year of a B.Tech Computer Science and Engineering programme, distinct from a Class XI-XII freshman engineering entrance. The current official Instruction Booklet confirms 200 four-option MCQs (Mathematics 50, Physics 25, Chemistry 25, Computer Science and Engineering 100) for 200 marks in 180 minutes, +1 per correct answer with no negative marking. The Computer Science and Engineering section spans 13 diploma-level units (Digital Electronics, Software Engineering, Computer Organisation and Microprocessors, Data Structures through C, Computer Networks and Cyber Security, Operating Systems, DBMS, Java Programming, Web Technologies, Big-data and Cloud Computing, Android Programming, Internet of Things, and Python Programming).",
+          sourceUrl: AP_ECET_2026_INSTRUCTION_BOOKLET_V3,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'cse-diploma-full-mock-1', name: 'CSE Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ap-pgecet': {
+    slug: 'ap-pgecet',
+    name: 'AP PGECET',
+    shortName: 'AP PGECET',
+    fullName: 'Andhra Pradesh Post Graduate Engineering Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'csit',
+        name: 'Computer Science & Information Technology',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Computer Science & Information Technology'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Computer Science & Information Technology', questions: 120, marks: 120 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock; no sectional lock.',
+          note: 'The current official CS & IT master question paper directly confirms 120 four-option MCQs for 120 marks in 120 minutes, +1 per correct answer with no negative marking. The official material does not publish a per-topic question distribution; the 19-domain topic allocation used in this mock is a TakeMockTest editorial balance, not official APPGECET weightage.',
+          sourceUrl: AP_PGECET_2026_CSIT_MASTER_PAPER,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'csit-full-mock-1', name: 'CS & IT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'lpunest': {
+    slug: 'lpunest',
+    name: 'LPUNEST',
+    shortName: 'LPUNEST',
+    fullName: 'Lovely Professional University National Entrance and Scholarship Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech-pcm',
+        name: 'B.Tech PCM',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics', 'English'],
+          totalQuestions: 100,
+          totalMarks: 400,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 25, marks: 100 },
+            { name: 'Chemistry', questions: 25, marks: 100 },
+            { name: 'Mathematics', questions: 25, marks: 100 },
+            { name: 'English', questions: 25, marks: 100 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "LPU's official question-paper pattern page labels its subject distribution 'approximate' rather than a fixed guarantee, and this mock preserves that caveat. The PCM route (Physics, Chemistry, Mathematics) deliberately selects Mathematics over Biology; each PCM section is 25 questions split 20 multiple-choice plus 5 numerical fill-in-the-blank, while English is built as 25 multiple-choice questions since the current pattern table gives English 25 questions without an English-specific fill-in-the-blank subdivision. Every question carries 4 marks with no negative marking, for 400 total marks in 150 minutes.",
+          sourceUrl: LPUNEST_2026_QUESTION_PAPER_PATTERN_PAGE,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'btech-pcm-full-mock-1', name: 'B.Tech PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 0, checkedOn: '27 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nerist-nee': {
+    slug: 'nerist-nee',
+    name: 'NERIST NEE',
+    shortName: 'NERIST NEE',
+    fullName: 'NERIST Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'nee-ii-pcm-et',
+        name: 'NEE-II PCM Engineering & Technology',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 115,
+          totalMarks: 150,
+          duration: 180,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 35, marks: 45 },
+            { name: 'Chemistry', questions: 35, marks: 45 },
+            { name: 'Mathematics', questions: 45, marks: 60 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: "NERIST NEE-II 2026 PCM Engineering & Technology (Paper Code 20) mixes one-mark and two-mark questions within each subject: 25 one-mark and 10 two-mark questions each in Physics and Chemistry, and 30 one-mark and 15 two-mark questions in Mathematics (80 one-mark and 35 two-mark questions overall). Every wrong answer is deducted 25% of the marks that question carries — a wrong one-mark question loses 0.25 and a wrong two-mark question loses 0.5, not a flat rate — while an unanswered question always scores zero.",
+          sourceUrl: NERIST_NEE_2026_INFORMATION_BROCHURE,
+          checkedOn: '27 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Marks and negative marking vary by question and are set per-question (1-mark questions score +1/-0.25, 2-mark questions score +2/-0.5), overriding these test-level defaults which apply to 1-mark questions only.', checkedOn: '27 August 2026' },
         ],
       },
     ],
