@@ -113,7 +113,10 @@ export type ExamSlug =
   | 'jeecup'
   | 'mit-wpu-cet'
   | 'jharkhand-pece'
-  | 'kiitee';
+  | 'kiitee'
+  | 'puleet'
+  | 'tg-ecet'
+  | 'tg-polycet';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -315,6 +318,10 @@ const JEECUP_2026_INFORMATION_BROCHURE = 'https://jeecup.admissions.nic.in/docum
 const MIT_WPU_CET_2026_OFFICIAL_PAGE = 'https://mitwpu.edu.in/mit-wpu-cet-2026';
 const JHARKHAND_PECE_2026_EXAMINATION_SCHEME = 'https://polycet.jceceb.org.in/Public/ExaminationScheme';
 const KIITEE_2026_INFORMATION_BROCHURE = 'https://kiitee.kiit.ac.in/wp-content/uploads/2026/02/Information-Brochure-2026.pdf';
+const OJEE_2026_LE_TECH_DIPLOMA_BROCHURE = 'https://ojee.nic.in/document/information-brochure-for-ojee-2026/';
+const PULEET_2026_PROSPECTUS = 'https://puleet.puchd.ac.in/pdf/puleet2026.pdf';
+const TG_ECET_2026_SYLLABUS_PAGE = 'https://ecet.tgche.ac.in/UI/Syllabus.aspx';
+const TG_POLYCET_2026_INSTRUCTION_BOOKLET = 'https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf';
 const SSC_CPO_2025_RESULT_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/Results/write-up%20CPO%202025.pdf';
 const IBPS_SO_2025_NOTICE = 'https://www.ibps.in/wp-content/uploads/Detailed-Advt.-CRP-SPL-XV_Final1.pdf';
@@ -10625,6 +10632,31 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'special-btech-mathematics-sectional-1', name: '2nd/Special OJEE 2026 B.Tech Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 20, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'TakeMockTest Mathematics sectional practice. 2nd/Special OJEE 2026 B.Tech uses one overall 60-minute timer and does not publish a separate Mathematics timer; this 20-minute sectional timer is a TakeMockTest practice setting.', checkedOn: '26 August 2026' },
         ],
       },
+      {
+        id: 'le-tech-diploma-2026',
+        name: 'OJEE 2026 LE-Tech (Diploma)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Engineering Mathematics', 'Engineering Mechanics', 'Basic Electrical and Electronics Engineering'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Engineering Mathematics', questions: 40, marks: 160 },
+            { name: 'Engineering Mechanics', questions: 40, marks: 160 },
+            { name: 'Basic Electrical and Electronics Engineering', questions: 40, marks: 160 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'OJEE 2026 LE-Tech (Diploma) is the regular lateral-entry route for Diploma holders into the second year of a B.Tech programme, distinct from the 2nd/Special OJEE B.Tech vacant-seat entrance above. The current official 2026 information brochure and syllabus directly confirm 120 four-option MCQs (Engineering Mathematics 40, Engineering Mechanics 40, Basic Electrical and Electronics Engineering 40, itself split Basic Electrical Engineering 20 / Basic Electronics Engineering 20) for 480 marks in 120 minutes, +4 per correct answer and -1 per wrong answer.',
+          sourceUrl: OJEE_2026_LE_TECH_DIPLOMA_BROCHURE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'le-tech-diploma-full-mock-1', name: 'LE-Tech (Diploma) Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '29 August 2026' },
+        ],
+      },
     ],
   },
   'upeseat': {
@@ -11279,6 +11311,111 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'puleet': {
+    slug: 'puleet',
+    name: 'PULEET',
+    shortName: 'PULEET',
+    fullName: 'Panjab University Lateral Engineering Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering-lateral-entry',
+        name: 'Engineering Lateral Entry',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Engineering', 'Physics', 'Chemistry', 'Mathematics', 'General Aptitude and Communication Skills'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 100,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'General Engineering', questions: 60, marks: 60 },
+            { name: 'Physics', questions: 10, marks: 10 },
+            { name: 'Chemistry', questions: 10, marks: 10 },
+            { name: 'Mathematics', questions: 10, marks: 10 },
+            { name: 'General Aptitude and Communication Skills', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single 100-minute timer for the Full Mock, covering all five sections; no sectional lock.',
+          note: 'PULEET 2026 is Panjab University’s lateral-entry route for Diploma and eligible D.Voc. candidates into the second year of a B.E. programme, distinct from a Class-12/JEE freshman engineering entrance. The current official 2026 prospectus directly confirms 100 four-option MCQs (General Engineering 60, split Basic Electrical Engineering/Basic Electronics/Programming Fundamentals/Fundamentals of Mechanical Engineering/Fundamentals of Civil Engineering/Fundamentals of Chemical Engineering 10 each; plus Physics 10, Chemistry 10, Mathematics 10, General Aptitude and Communication Skills 10) for 100 marks in 100 minutes, +1 per correct answer and -0.25 per wrong answer.',
+          sourceUrl: PULEET_2026_PROSPECTUS,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'engineering-lateral-entry-full-mock-1', name: 'Engineering Lateral Entry Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 100, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tg-ecet': {
+    slug: 'tg-ecet',
+    name: 'TG ECET',
+    shortName: 'TG ECET',
+    fullName: 'Telangana Engineering Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'cse-diploma',
+        name: 'Computer Science and Engineering',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'Computer Science and Engineering'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 50 },
+            { name: 'Physics', questions: 25, marks: 25 },
+            { name: 'Chemistry', questions: 25, marks: 25 },
+            { name: 'Computer Science and Engineering', questions: 100, marks: 100 },
+          ],
+          timerNote: 'Single 180-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: "TG ECET is the Diploma-holder lateral-entry route into B.Tech Computer Science and Engineering, distinct from a Class XI-XII/JEE-style freshman entrance. The current official TG ECET identity, lateral-entry purpose, the 50/25/25/100 section shell, 200 total marks and 180-minute duration are direct-official; the detailed Mathematics/Physics/Chemistry/CSE syllabus and the repaired ten-unit CSE content map (Digital Electronics, Computer Architecture, C Programming and Data Structures, Object Oriented Programming through C++, Relational Database Management Systems, Computer Hardware & Networking, Operating Systems, Java Programming, Python Programming, Web Technologies) are current-cycle mirror sources; no negative marking is current-secondary evidence. The exact 10-questions-per-CSE-unit split is a TakeMockTest editorial balance, not official weightage, so this pattern is marked review-pending.",
+          sourceUrl: TG_ECET_2026_SYLLABUS_PAGE,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'cse-diploma-full-mock-1', name: 'CSE Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tg-polycet': {
+    slug: 'tg-polycet',
+    name: 'TG POLYCET',
+    shortName: 'TG POLYCET',
+    fullName: 'Telangana Polytechnic Common Entrance Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'mpc-polytechnic',
+        name: 'MPC Polytechnic',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 60, marks: 60 },
+            { name: 'Physics', questions: 30, marks: 30 },
+            { name: 'Chemistry', questions: 30, marks: 30 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'The current official physical TG POLYCET 2026 paper contains 150 questions: Mathematics 60, Physics 30, Chemistry 30, and a separate Biology 30 for candidates seeking the agriculture/veterinary/horticulture route. The same official booklet separately generates an MPC Rank out of 120 marks for Polytechnic (Engineering) admissions. This mock is therefore a platform-defined 120-question MPC-filtered simulation aligned to that official MPC rank, covering only Mathematics, Physics and Chemistry — it is not a claim that the complete physical official paper contains only 120 questions. No negative marking is corroborated-secondary evidence, since the retrieved direct-official pattern text did not itself expose that clause.',
+          sourceUrl: TG_POLYCET_2026_INSTRUCTION_BOOKLET,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'mpc-full-mock-1', name: 'MPC Polytechnic Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
         ],
       },
     ],
