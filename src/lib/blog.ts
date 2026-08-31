@@ -2015,6 +2015,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 7,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/bits-hd-vs-gate-cs-which-to-prepare-for.webp",
+    "alt": "Indian computer-science aspirant comparing a focused admission folder with several postgraduate pathways",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2121,6 +2127,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/amu-btech-admission-test-pattern-and-scoring.webp",
+    "alt": "Engineering aspirant reviewing an admission guide beside three subject notebooks and an OMR practice sheet",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2212,6 +2224,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/assam-cee-2026-exam-pattern-explained.webp",
+    "alt": "Assam engineering aspirant cross-checking state-board study books with physics, chemistry and mathematics notes",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2311,6 +2329,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/cusat-cat-2026-what-to-expect.webp",
+    "alt": "Indian engineering aspirant practicing rapid question navigation on a laptop with three subject workbooks",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2410,6 +2434,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 8,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/engineering-entrance-exams-beyond-jee-main-2026-roundup.webp",
+    "alt": "Engineering aspirant organizing seven unlabelled entrance-exam folders around a central study plan",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
