@@ -981,8 +981,8 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
     image: {
-      src: '/images/blog/exam-day-checklist-what-to-carry.webp',
-      alt: 'Indian student checking permitted items for exam day',
+      src: '/images/blog/exam-day-checklist-what-to-carry-v2.webp',
+      alt: 'Indian student reviewing printed papers in a navy folder before exam day',
       width: 1280,
       height: 720,
     },
