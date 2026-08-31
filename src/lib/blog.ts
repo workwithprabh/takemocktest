@@ -944,6 +944,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/preparing-general-awareness-without-drowning-in-current-affairs.webp',
+      alt: 'Indian aspirant organizing static General Awareness and current-affairs study',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'General Awareness gets written off as "too random to prepare for" more than any other section, and it is usually the section aspirants start latest and study least deliberately. That is a mistake: static GK, the fixed, unchanging facts of history, geography, polity, and science, is entirely learnable, and it is what actually separates a strong GA score from a weak one, not how many current-affairs capsules you skimmed last week.' },
       { type: 'paragraph', heading: 'Static GK and current affairs are two different subjects, not one', text: 'Static GK does not change: the year the Reserve Bank of India was established, the constitutional article covering Fundamental Rights, the capital of a state. You can learn it once, revise it on a schedule, and it stays correct. Current affairs is the opposite: a scheme announced last month, an appointment made last week, a report released this quarter. Studying both the same way, as one undifferentiated pile of facts to memorize once, is why current affairs feels overwhelming and static GK feels neglected even though it is the easier of the two to actually master.' },
@@ -974,6 +980,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 4,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/exam-day-checklist-what-to-carry.webp',
+      alt: 'Indian student checking permitted items for exam day',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'An exam day checklist exists because every year, some candidates who prepared well enough to clear an exam are turned away at the gate for reasons that had nothing to do with their preparation: a phone in a pocket, an admit card only saved on a phone screen, a photo ID that does not match the name on the application. None of that is about knowledge. It is entirely avoidable with a checklist you run through the night before, not the morning of.' },
       { type: 'takeaways', items: [
@@ -1009,6 +1021,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/building-vocabulary-without-rote-memorization.webp',
+      alt: 'Indian student building vocabulary through reading and word families',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Sitting down with a list of a thousand words and their meanings is the most common way aspirants try to build vocabulary for the English section, and it is also one of the least effective. Words memorized in isolation, without context, fade fast, and the exam rarely tests a word\'s dictionary definition anyway; it tests whether you can recognize how that word is being used in a sentence.' },
       { type: 'paragraph', heading: 'Why isolated word lists fade so quickly', text: 'A word learned as an entry on a list, disconnected from any sentence or context, has almost nothing anchoring it in memory. You can recognize it for a day or two, then it blurs into every other word on the same list. Words learned through reading, where you see them used, guess the meaning from context, and then confirm it, stick because they are attached to something: a sentence, an idea, a moment of figuring it out yourself.' },
@@ -1039,6 +1057,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/how-to-read-an-exam-notification.webp',
+      alt: 'Indian aspirant reviewing an official exam notification carefully',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'The official notification is the single most authoritative document for any exam, and also the one most aspirants skim once and never open again. That is a mistake: notifications regularly change from one cycle to the next, in ways that directly affect eligibility, the exam pattern, or important dates, and a detail missed on page 14 does not stop mattering just because you did not read that far.' },
       { type: 'paragraph', heading: 'Start with eligibility, before anything else', text: 'Age limits, educational qualification, and any category-specific relaxations are usually stated early in the notification, and they are worth confirming even if you have applied for a similar exam before, since the exact age band and cutoff dates are set fresh each cycle and do change. Reading this section first avoids the worst outcome: preparing for months for an exam you were never eligible for in the first place.' },
@@ -1069,6 +1093,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/spaced-repetition-how-to-actually-remember-what-you-study.webp',
+      alt: 'Indian student scheduling spaced-repetition review cards',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Spaced repetition, reviewing material again at increasing intervals instead of just once, is one of the highest-return habits an aspirant can build into an otherwise ordinary study routine. It works because of a well-documented finding in memory research: most new information fades fast without reinforcement, and a large share of what you study today, if reviewed only once, is gone within days.' },
       { type: 'paragraph', heading: 'Why a single review session is not enough', text: 'Reading a topic once, understanding it in the moment, and moving on feels like progress, and in the short term it is. But memory without reinforcement decays quickly, and by the time you circle back weeks later during revision, much of it needs to be relearned almost from scratch. That relearning is wasted effort you could have avoided with two or three short review sessions spread out over the weeks in between instead of one long session up front.' },
@@ -1099,6 +1129,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/cat-vs-mat-vs-cmat-choosing-your-mba-entrance.webp',
+      alt: 'Indian MBA aspirant comparing several entrance-exam formats',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'CAT, MAT, CMAT, and the various state MBA CETs are rarely a choice between one exam and another: most MBA aspirants in India do not sit just one entrance exam, they sit four or five in the same admission cycle, because different institutes accept different scores. CAT is the one everyone has heard of, but the others are not lesser versions of it. Each mixes question count, timing, and marking scheme differently enough that a strategy built for one can actively hurt you on another.' },
       { type: 'takeaways', items: [
