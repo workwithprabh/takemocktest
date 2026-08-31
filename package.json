@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings=0",
     "qa:questions": "node scripts/audit-question-banks.mjs",
     "qa:assets": "node scripts/audit-site.mjs",
+    "qa:updates": "node scripts/check-exam-updates.mjs",
     "qa:onpage-seo": "node scripts/audit-onpage-seo.mjs",
     "collision-reference": "node scripts/generate-collision-reference.mjs",
     "qa:site": "npm run lint && npm run qa:questions && npm run qa:assets && npm run build && npm run qa:onpage-seo"

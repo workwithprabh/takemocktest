@@ -25,6 +25,8 @@ export interface UpdateEntry {
   headline: string;
   summary: string;
   publishedAt: string;
+  // Use "Added" for our summary of an undated official page, never invent a notice date.
+  dateLabel?: 'Added';
   modifiedAt: string;
   status: string;
   sourceName: string;
@@ -43,10 +45,10 @@ export interface UpdateEntry {
 // (blue). Same visual weight and shape as before, just differentiated.
 export const UPDATE_CATEGORY_STYLES: Record<UpdateCategory, string> = {
   // Act now: something you must do or watch for a fixed date.
-  'Admit Card': 'bg-attention-50 text-attention-600',
-  'Exam Date': 'bg-attention-50 text-attention-600',
-  'City Intimation': 'bg-attention-50 text-attention-600',
-  Application: 'bg-attention-50 text-attention-600',
+  'Admit Card': 'bg-attention-50 text-attention-700',
+  'Exam Date': 'bg-attention-50 text-attention-700',
+  'City Intimation': 'bg-attention-50 text-attention-700',
+  Application: 'bg-attention-50 text-attention-700',
   // An outcome has been published.
   Result: 'bg-live-50 text-live-600',
   Scorecard: 'bg-live-50 text-live-600',
@@ -61,6 +63,122 @@ export const UPDATE_CATEGORY_STYLES: Record<UpdateCategory, string> = {
 };
 
 export const UPDATES: UpdateEntry[] = [
+  {
+    slug: 'ibps-rrb-14-officer-reserve-list-august-2026',
+    examSlug: 'ibps-rrb-officer-scale-1',
+    examName: 'IBPS RRB Officer Scale I',
+    goal: 'Government Jobs',
+    category: 'Result',
+    headline: 'IBPS RRB XIV: Officer reserve-list allotment links published',
+    summary: 'IBPS lists provisional reserve-list allotment links for Officer Scales I, II and III under CRP RRBs-XIV. Choose the link for your applied scale on the official page.',
+    publishedAt: '2026-08-31',
+    modifiedAt: '2026-08-31',
+    status: 'Result published',
+    sourceName: 'Institute of Banking Personnel Selection',
+    sourceUrl: 'https://www.ibps.in/index.php/rural-bank-xiv/',
+    sourceCheckedOn: '2026-08-31',
+    sourceReference: 'Regional Rural Banks XIV: reserve-list allotment entries dated 31 August 2026',
+    actions: [
+      'Open the official Regional Rural Banks XIV page and choose the allotment link for your officer scale.',
+      'Read the accompanying reserve-list notification before interpreting your allotment status. This notice does not announce a new application window.',
+    ],
+  },
+  {
+    slug: 'mat-september-2026-registration-and-test-dates',
+    examSlug: 'mat',
+    examName: 'MAT',
+    goal: 'Management & Business',
+    category: 'Application',
+    headline: 'MAT September 2026: separate PBT and CBT registration deadlines',
+    summary: 'AIMA lists PBT registration closing on 7 September and CBT on 14 September. The tests are scheduled for 13 and 20 September respectively.',
+    publishedAt: '2026-08-31',
+    dateLabel: 'Added',
+    modifiedAt: '2026-08-31',
+    status: 'Schedule published',
+    sourceName: 'All India Management Association',
+    sourceUrl: 'https://www.aima.in/content/testing-and-assessment/mat/mat',
+    sourceCheckedOn: '2026-08-31',
+    sourceReference: 'Information to Candidates for MAT September 2026; undated official page. Summary added on 31 August 2026.',
+    importantDates: [
+      { label: 'PBT registration deadline', date: '2026-09-07' },
+      { label: 'PBT admit card scheduled from', date: '2026-09-10T17:00:00+05:30' },
+      { label: 'PBT examination', date: '2026-09-13' },
+      { label: 'CBT registration deadline', date: '2026-09-14' },
+      { label: 'CBT admit card scheduled from', date: '2026-09-17T17:00:00+05:30' },
+      { label: 'CBT examination', date: '2026-09-20' },
+    ],
+    actions: [
+      'Choose Paper Based Test (PBT) or Computer Based Test (CBT) and confirm its separate registration deadline on AIMA.',
+      'Use the registration link on the official AIMA page. Where no closing time is specified, do not assume registration remains available until midnight.',
+      'Admit-card dates are scheduled availability dates, not a claim that cards are already released. Follow the date, time and venue printed on your own card.',
+    ],
+  },
+  {
+    slug: 'gate-2027-registration-opening-awaited',
+    examSlug: 'gate',
+    examName: 'GATE',
+    goal: 'Engineering & Technology',
+    category: 'Schedule',
+    headline: 'GATE 2027: opening date awaited; revised registration deadlines',
+    summary: 'GATE 2027 registration opening is TBA. IIT Madras lists 27 September for regular closure and 5 October with a late fee; dates may change.',
+    publishedAt: '2026-08-31',
+    dateLabel: 'Added',
+    modifiedAt: '2026-08-31',
+    status: 'Opening date awaited',
+    sourceName: 'IIT Madras — GATE 2027',
+    sourceUrl: 'https://gate2027.iitm.ac.in/important_dates',
+    sourceCheckedOn: '2026-08-31',
+    sourceReference: 'GATE 2027 Important Dates: opening date TBA; all listed dates liable to change. Undated page, checked on 31 August 2026.',
+    importantDates: [
+      { label: 'Regular registration closes (subject to change)', date: '2026-09-27' },
+      { label: 'Late-fee registration closes (subject to change)', date: '2026-10-05' },
+    ],
+    actions: [
+      'Recheck the GOAPS opening date on the official GATE 2027 website. A listed closing date does not mean registration is already open.',
+      'Read the current eligibility, document requirements and revised syllabus on the official site before applying.',
+      'Existing practice resources are not a claim of alignment with every GATE 2027 syllabus revision; compare the current official syllabus first.',
+    ],
+  },
+  {
+    slug: 'ibps-po-16-vacancy-corrigendum-august-2026',
+    examSlug: 'ibps-po',
+    examName: 'IBPS PO',
+    goal: 'Government Jobs',
+    category: 'Corrigendum',
+    headline: 'IBPS PO XVI: corrigendum and updated vacancy document listed',
+    summary: 'IBPS has listed a 27 August corrigendum and updated vacancy annexure for CRP PO/MTs-XVI. Use the revised documents alongside the original recruitment notification.',
+    publishedAt: '2026-08-27',
+    modifiedAt: '2026-08-31',
+    status: 'Correction published',
+    sourceName: 'Institute of Banking Personnel Selection',
+    sourceUrl: 'https://www.ibps.in/index.php/management-trainees-xvi/',
+    sourceCheckedOn: '2026-08-31',
+    sourceReference: 'PO/MTs XVI: corrigendum and updated vacancies entries dated 27 August 2026',
+    actions: [
+      'Open the two entries dated 27 August 2026 on the official PO/MTs XVI page.',
+      'Read the revised annexure for the bank and category relevant to you. This summary does not infer vacancy totals or changes to eligibility.',
+    ],
+  },
+  {
+    slug: 'ibps-so-16-vacancy-corrigendum-august-2026',
+    examSlug: 'ibps-so',
+    examName: 'IBPS SO',
+    goal: 'Government Jobs',
+    category: 'Corrigendum',
+    headline: 'IBPS SO XVI: corrigendum and updated vacancy document listed',
+    summary: 'IBPS lists a 27 August corrigendum and updated vacancy annexure for CRP SPL-XVI. Check the revised documents for your specialist post.',
+    publishedAt: '2026-08-27',
+    modifiedAt: '2026-08-31',
+    status: 'Correction published',
+    sourceName: 'Institute of Banking Personnel Selection',
+    sourceUrl: 'https://www.ibps.in/index.php/specialist-officers-xvi/',
+    sourceCheckedOn: '2026-08-31',
+    sourceReference: 'Specialist Officers XVI: corrigendum and updated vacancies entries dated 27 August 2026',
+    actions: [
+      'Use the official Specialist Officers XVI page to open the corrigendum and vacancy annexure dated 27 August 2026.',
+      'Check your specialist post and category in the revised documents; do not treat an older vacancy table as the latest version.',
+    ],
+  },
   {
     slug: 'ibps-po-crp-16-prelims-call-letter-2026',
     examSlug: 'ibps-po',
@@ -110,11 +228,11 @@ export const UPDATES: UpdateEntry[] = [
     headline: 'UPSC publishes the Civil Services Main Examination 2026 timetable',
     summary: 'The Union Public Service Commission published the written Main Examination timetable, with papers scheduled for 21–23 and 29–30 August 2026.',
     publishedAt: '2026-07-10',
-    modifiedAt: '2026-07-10',
-    status: 'Exam upcoming',
+    modifiedAt: '2026-08-31',
+    status: 'Scheduled dates passed',
     sourceName: 'Union Public Service Commission',
     sourceUrl: 'https://www.upsc.gov.in/sites/default/files/TT-CSM-2026-Engl-100726.pdf',
-    sourceCheckedOn: '2026-08-17',
+    sourceCheckedOn: '2026-08-31',
     sourceReference: 'Civil Services (Main) Examination, 2026 timetable uploaded on 10 July 2026',
     importantDates: [
       { label: 'Main examination begins', date: '2026-08-21' },
@@ -122,7 +240,7 @@ export const UPDATES: UpdateEntry[] = [
     ],
     actions: [
       'Open the official timetable and confirm the date and session for each paper you will take.',
-      'Use the remaining preparation time for stage-appropriate timed practice and revision.',
+      'The listed final examination date has passed. Check later official UPSC notices for the next stage; this timetable is not a result announcement.',
     ],
   },
   {
@@ -257,8 +375,8 @@ export const UPDATES: UpdateEntry[] = [
     headline: 'UPSC publishes the CDS II 2026 examination notification',
     summary: 'The Union Public Service Commission published the Combined Defence Services Examination (II), 2026 notification and examination schedule.',
     publishedAt: '2026-05-20',
-    modifiedAt: '2026-05-20',
-    status: 'Exam upcoming',
+    modifiedAt: '2026-08-31',
+    status: 'Schedule published',
     sourceName: 'Union Public Service Commission',
     sourceUrl: 'https://www.upsc.gov.in/exams-related-info/exam-notification/archives',
     sourceCheckedOn: '2026-08-17',
@@ -281,8 +399,8 @@ export const UPDATES: UpdateEntry[] = [
     headline: 'UPSC publishes the NDA and NA II 2026 notification',
     summary: 'UPSC published the National Defence Academy and Naval Academy Examination (II), 2026 notification with the application and examination schedule.',
     publishedAt: '2026-05-20',
-    modifiedAt: '2026-05-20',
-    status: 'Exam upcoming',
+    modifiedAt: '2026-08-31',
+    status: 'Schedule published',
     sourceName: 'Union Public Service Commission',
     sourceUrl: 'https://www.upsc.gov.in/exams-related-info/exam-notification/archives',
     sourceCheckedOn: '2026-08-17',
@@ -326,8 +444,8 @@ export const UPDATES: UpdateEntry[] = [
     headline: 'SSC announces the Phase XIV/2026 Selection Posts exam dates',
     summary: 'The Staff Selection Commission released the exam date notice for the Phase XIV/2026 Selection Posts Computer Based Examination, scheduling the CBE across three shifts a day between 16 and 26 September 2026. The date-wise, shift-wise schedule is to follow separately.',
     publishedAt: '2026-08-21',
-    modifiedAt: '2026-08-21',
-    status: 'Exam upcoming',
+    modifiedAt: '2026-08-31',
+    status: 'Schedule published',
     sourceName: 'Staff Selection Commission',
     sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf',
     sourceCheckedOn: '2026-08-24',
@@ -350,8 +468,8 @@ export const UPDATES: UpdateEntry[] = [
     headline: "SSC opens a new recruitment cycle for Stenographer Grade 'C' and 'D', 2026",
     summary: "The Staff Selection Commission published the notice of advertisement for a new Stenographer Grade 'C' and 'D' Examination, 2026 cycle, distinct from the concluded 2025 cycle. The Computer Based Examination is scheduled for 9 to 12 September 2026.",
     publishedAt: '2026-04-24',
-    modifiedAt: '2026-04-24',
-    status: 'Exam upcoming',
+    modifiedAt: '2026-08-31',
+    status: 'Schedule published',
     sourceName: 'Staff Selection Commission',
     sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2026.pdf',
     sourceCheckedOn: '2026-08-24',
@@ -365,7 +483,32 @@ export const UPDATES: UpdateEntry[] = [
 ];
 
 export function formatUpdateDate(date: string): string {
-  return new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(date));
+  return new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(new Date(date));
+}
+
+export function formatUpdateDateTime(date: string): string {
+  if (!date.includes('T')) return formatUpdateDate(date);
+  const time = new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kolkata' }).format(new Date(date));
+  return `${formatUpdateDate(date)}, ${time} IST`;
+}
+
+export function filterUpdates(updates: UpdateEntry[], filters: { query: string; exam: string; category: string; goal: string }): UpdateEntry[] {
+  const needle = filters.query.trim().toLowerCase();
+  const namedExam = updates.find((update) => update.examName.toLowerCase() === needle)?.examSlug;
+  return updates.filter((update) => (namedExam ? update.examSlug === namedExam : !needle || [update.examName, update.headline, update.summary, update.sourceName]
+    .some((value) => value.toLowerCase().includes(needle)))
+    && (filters.exam === 'all' || update.examSlug === filters.exam)
+    && (filters.category === 'all' || update.category === filters.category)
+    && (filters.goal === 'all' || update.goal === filters.goal));
+}
+
+export function getUpcomingUpdateDates(updates: UpdateEntry[], now: number, limit = 4) {
+  return updates.flatMap((update) => (update.importantDates ?? []).map((item) => ({ ...item, update })))
+    // A date-only notice has no published closing time. Keep its calendar day
+    // visible in India, but never turn it into an invented midnight deadline.
+    .filter((item) => new Date(item.date.includes('T') ? item.date : `${item.date}T23:59:59.999+05:30`).getTime() >= now)
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+    .slice(0, limit);
 }
 
 export function getLatestUpdates(limit = 5): UpdateEntry[] {

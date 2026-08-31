@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { getExam, getCheckedTestCount } from '@/lib/exams';
 import { pageMetadata } from '@/lib/metadata';
 import { articleSchema, breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
-import { UPDATE_CATEGORY_STYLES, UPDATES, formatUpdateDate, getUpdate, getUpdatesForExam } from '@/lib/updates';
+import { UPDATE_CATEGORY_STYLES, UPDATES, formatUpdateDate, formatUpdateDateTime, getUpdate, getUpdatesForExam } from '@/lib/updates';
 
 export function generateStaticParams() {
   return UPDATES.map((update) => ({ slug: update.slug }));
@@ -59,27 +59,32 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <span className={`px-2 py-1 text-xs font-semibold ${UPDATE_CATEGORY_STYLES[update.category]}`}>{update.category}</span>
             <Link href={`/${country}/${update.examSlug}`} className="text-xs font-semibold text-ink-700 hover:underline">{update.examName}</Link>
-            <span className="text-xs text-ink-400">{update.status}</span>
+            <span className="text-xs text-ink-600">{update.status} · As checked {formatUpdateDate(update.sourceCheckedOn)}</span>
           </div>
-          <h1 className="max-w-4xl text-3xl font-bold leading-tight tracking-tight text-ink-900 md:text-5xl">{update.headline}</h1>
+          <h1 className="max-w-4xl text-3xl font-bold leading-tight tracking-tight text-ink-900 md:text-4xl">{update.headline}</h1>
           <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink-500">
-            <span>Published <time dateTime={update.publishedAt}>{formatUpdateDate(update.publishedAt)}</time></span>
+            <span>{update.dateLabel ?? 'Published'} <time dateTime={update.publishedAt}>{formatUpdateDate(update.publishedAt)}</time></span>
             <span>Source checked <time dateTime={update.sourceCheckedOn}>{formatUpdateDate(update.sourceCheckedOn)}</time></span>
           </div>
 
-          <p className="mt-8 border-l-4 border-ink-900 bg-ink-50 px-5 py-4 text-base leading-7 text-ink-700 md:text-lg">{update.summary}</p>
+          <div className="mt-5 flex flex-wrap items-center gap-3">
+            <a href={update.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center gap-4 bg-action-700 px-4 py-3 text-sm font-semibold text-white hover:bg-action-800">View official notice <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a>
+            {update.importantDates?.length ? <a href="#important-dates-heading" className="inline-flex min-h-12 items-center border border-ink-200 px-4 text-sm font-semibold text-ink-900 hover:border-action-700">Jump to dates ↓</a> : null}
+          </div>
+          <p className="mt-6 border-l-4 border-action-700 bg-action-50 px-5 py-4 text-base leading-7 text-ink-800">{update.summary}</p>
 
           {update.importantDates && update.importantDates.length > 0 && (
             <section className="mt-10" aria-labelledby="important-dates-heading">
-              <h2 id="important-dates-heading" className="mb-4 text-xl font-bold text-ink-900">Important dates</h2>
+              <h2 id="important-dates-heading" className="mb-4 scroll-mt-24 text-xl font-bold text-ink-900">Important dates</h2>
               <div className="border border-ink-200 bg-white">
                 {update.importantDates.map((item) => (
                   <div key={item.label} className="grid gap-1 border-b border-ink-200 px-4 py-4 last:border-b-0 sm:grid-cols-[220px_1fr]">
                     <span className="text-sm font-semibold text-ink-900">{item.label}</span>
-                    <time dateTime={item.date} className="text-sm text-ink-600">{formatUpdateDate(item.date)}</time>
+                    <time dateTime={item.date} className="text-sm font-semibold text-ink-900">{formatUpdateDateTime(item.date)}</time>
                   </div>
                 ))}
               </div>
+              <p className="mt-3 text-xs leading-5 text-ink-600">Times are shown in IST when the authority specifies them. A date without a time does not imply a midnight deadline. Recheck the official source for changes.</p>
             </section>
           )}
 
@@ -117,8 +122,8 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">Official source</p>
             <div className="mt-3 text-sm font-bold text-ink-900">{update.sourceName}</div>
             {update.sourceReference && <p className="mt-2 text-xs leading-5 text-ink-500">{update.sourceReference}</p>}
-            <a href={update.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-4 flex min-h-11 items-center justify-between bg-ink-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-ink-700">
-              View official notice <span aria-hidden="true">↗</span>
+            <a href={update.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-4 flex min-h-11 items-center justify-between bg-action-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-action-800">
+              Open source website <span aria-hidden="true">↗</span>
             </a>
             <p className="mt-3 text-[11px] leading-5 text-ink-500">Always complete applications, downloads and objections on the official authority website.</p>
           </div>
