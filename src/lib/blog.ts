@@ -1644,6 +1644,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/why-this-site-gives-you-two-full-mock-tests.webp',
+      alt: 'Two mock-test folders separated by a revision notebook, planner and practice cards',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Most exams on this site now offer a Full Mock Test 1 and a Full Mock Test 2, and it is tempting to treat the second one as just more practice volume, something to burn through the same evening you finish the first. That wastes most of what a second attempt is actually good for.' },
       { type: 'takeaways', items: [
@@ -1674,6 +1680,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-selection-post-one-cbe-three-qualification-levels.webp',
+      alt: 'Indian aspirant practicing on a laptop beside three study binders and a mathematics notebook',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC Selection Post fills a wide range of Group B (Non-Gazetted) and Group C posts across central government ministries and departments in a single recruitment cycle, run separately at three qualification levels: Matriculation, Higher Secondary (10+2), and Graduation and Above. Unlike SSC CGL or CHSL, which each target a defined set of posts at one qualification level, Selection Post spans posts and levels together, and which level you sit depends entirely on the specific post\'s own minimum qualification, not personal preference.' },
       { type: 'takeaways', items: [
@@ -1708,6 +1720,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/rrb-technician-grade-1-signal-vs-grade-3.webp',
+      alt: 'Circuit board, laptop and science-study tools with a model passenger train',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'RRB Technician recruitment covers Grade I Signal and Grade III together under one notice, and unlike RRB NTPC or JE, there is no second CBT stage for either grade: the single Computer Based Test directly decides shortlisting for Document Verification, limited to the number of notified vacancies. The two grades share that single-CBT structure and overall scale, but the actual subject mix inside the paper is genuinely different.' },
       { type: 'takeaways', items: [
@@ -1744,6 +1762,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-stenographer-grade-c-vs-grade-d.webp',
+      alt: 'Indian stenography aspirant listening through headphones while practicing laptop transcription',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC Stenographer recruits for both Grade C and Grade D posts through one shared Computer Based Examination. If you are deciding how to prepare, the written stage gives you no reason to split your prep by grade at all, the CBT itself does not change; what changes is a dictation speed requirement in the Skill Test that follows it.' },
       { type: 'takeaways', items: [
@@ -1778,6 +1802,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-28',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/rrb-je-cbt2-civil-vs-mechanical.webp',
+      alt: 'Truss bridge model and structural drawings beside mechanical gears and a caliper',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'RRB JE CBT 2 is most often searched with one specific question attached: is Civil or Mechanical actually easier? It deserves a direct answer: no reliable one exists. Relative difficulty depends on cutoffs, vacancy counts, and the applicant pool in a given recruitment cycle, all of which shift with every notification and none of which this site tracks as live data. What does not shift cycle to cycle is the structure of the Technical Abilities section itself, and that structure tells you something genuinely useful about how to prepare, even without a difficulty verdict attached to it.' },
       { type: 'takeaways', items: [
@@ -1837,6 +1867,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/cg-pet-vs-bcece-two-state-engineering-routes.webp",
+    "alt": "Indian engineering aspirant organizing a combined study folder and three subject notebooks",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
