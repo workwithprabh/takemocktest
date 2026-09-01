@@ -89,6 +89,7 @@ export default async function SimilarTestsPage({ params }: { params: Promise<{ c
                     name={test.name}
                     questions={getQuestionsForTest(exam.slug, test.id).length}
                     minutes={test.duration}
+                    kind={test.kind}
                     contentStatus={test.status}
                     checkedOn={test.checkedOn}
                   />

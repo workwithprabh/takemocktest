@@ -61,6 +61,9 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
     })),
   }));
   const sharedTests = getSharedTests(exam);
+  const listedTests = stages.flatMap((stage) => stage.tests);
+  const checkedTestCount = listedTests.filter((test) => test.contentStatus === 'checked').length;
+  const fullMockCount = listedTests.filter((test) => test.kind === 'full-length').length;
 
   const jsonLd = [
     breadcrumbSchema([
@@ -77,7 +80,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }} />
 
       <div className="border-b border-ink-200 bg-ink-50">
-        <div className="mx-auto grid max-w-6xl gap-7 px-5 py-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-10">
+        <div className="mx-auto grid max-w-6xl gap-6 px-5 py-7 md:grid-cols-[1.15fr_0.85fr] md:items-center md:py-8">
           <div>
             <Breadcrumbs items={[
               { label: 'Home', href: `/${country}` },
@@ -93,8 +96,22 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
               <a href="#tests" className="inline-flex min-h-11 items-center bg-ink-900 px-5 text-sm font-semibold text-white">Choose a test ↓</a>
               <Link href={`/${country}/${exam.slug}`} className="inline-flex min-h-11 items-center border border-ink-200 bg-white px-5 text-sm font-semibold text-ink-900 hover:border-ink-900">Exam overview</Link>
             </div>
+            <dl className="mt-6 grid max-w-xl grid-cols-3 border-l border-t border-ink-200 bg-white">
+              <div className="border-b border-r border-ink-200 p-3">
+                <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Checked tests</dt>
+                <dd className="mt-1 text-lg font-bold text-ink-900">{checkedTestCount}</dd>
+              </div>
+              <div className="border-b border-r border-ink-200 p-3">
+                <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Full mocks</dt>
+                <dd className="mt-1 text-lg font-bold text-ink-900">{fullMockCount}</dd>
+              </div>
+              <div className="border-b border-r border-ink-200 p-3">
+                <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Login</dt>
+                <dd className="mt-1 text-sm font-bold text-ink-900">Not required</dd>
+              </div>
+            </dl>
           </div>
-          <figure className="relative aspect-[4/3] overflow-hidden border border-ink-200 bg-white md:max-h-[330px]">
+          <figure className="relative hidden aspect-[16/10] overflow-hidden border border-ink-200 bg-white md:block md:max-h-[290px]">
             <Image
               src="/images/students-taking-online-mock-test.webp"
               alt={`Student taking an online ${exam.name} mock test`}
@@ -107,7 +124,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
         </div>
       </div>
 
-      <div className="mx-auto max-w-4xl px-5 py-10">
+      <div className="mx-auto max-w-5xl px-5 py-8 md:py-10">
         <div id="tests" className="mb-14 scroll-mt-24 border border-ink-200 bg-white">
           <MockTestTabs country={country} examSlug={exam.slug} stages={stages} />
         </div>

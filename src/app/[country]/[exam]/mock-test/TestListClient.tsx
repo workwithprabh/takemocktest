@@ -77,6 +77,7 @@ export default function TestListClient({
           name={t.name}
           questions={t.questions}
           minutes={t.minutes}
+          kind={t.kind}
           contentStatus={t.contentStatus}
           checkedOn={t.checkedOn}
           status={scores[t.testId] ? 'done' : 'new'}
