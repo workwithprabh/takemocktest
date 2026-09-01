@@ -80,20 +80,20 @@ export default function ExamFinder({
   return (
     <div>
       <section className="mb-7 border border-ink-200 bg-white" aria-labelledby="exam-finder-title">
-        <div className="flex flex-col gap-3 border-b border-ink-200 bg-ink-900 px-4 py-4 text-white sm:flex-row sm:items-end sm:justify-between md:px-5">
+        <div className="flex items-end justify-between gap-4 border-b border-ink-200 bg-ink-900 px-4 py-4 text-white md:px-5">
           <div>
             <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-300">Exam finder</p>
-            <h2 id="exam-finder-title" className="text-xl font-bold">
-              {mode === 'all' ? 'Search the full exam directory' : 'Find an exam in this category'}
+            <h2 id="exam-finder-title" className="text-lg font-bold md:text-xl">
+              {mode === 'all' ? 'Search exams' : 'Find an exam in this category'}
             </h2>
           </div>
-          <p className="text-xs text-ink-300">
-            {rows.length} listed <span aria-hidden="true">·</span> {liveCount} with mock tests
+          <p className="shrink-0 text-right text-xs text-ink-300">
+            {rows.length} listed<br />{liveCount} with tests
           </p>
         </div>
         <div className="p-4 md:p-5">
-        <div className={`grid gap-3 ${mode === 'all' ? 'md:grid-cols-[1fr_220px_180px]' : 'md:grid-cols-[1fr_180px]'}`}>
-          <label className="block">
+        <div className={`grid gap-3 ${mode === 'all' ? 'grid-cols-2 md:grid-cols-[1fr_220px_180px]' : 'md:grid-cols-[1fr_180px]'}`}>
+          <label className={mode === 'all' ? 'col-span-2 block md:col-span-1' : 'block'}>
             <span className="mb-1.5 block text-xs font-semibold text-ink-700">Search exam name</span>
             <input
               type="search"
@@ -101,16 +101,16 @@ export default function ExamFinder({
               onChange={(event) => setQuery(event.target.value)}
               placeholder={mode === 'all' ? 'Try SSC, JEE, NEET, CAT...' : 'Type an exam name...'}
               autoComplete="off"
-              className="min-h-11 w-full border border-ink-200 bg-white px-3 text-sm text-ink-900 outline-none placeholder:text-ink-500 focus:border-ink-900 focus:ring-1 focus:ring-ink-900"
+              className="min-h-11 min-w-0 w-full border border-ink-200 bg-white px-3 text-sm text-ink-900 outline-none placeholder:text-ink-500 focus:border-ink-900 focus:ring-1 focus:ring-ink-900"
             />
           </label>
           {mode === 'all' && (
-            <label className="block">
+            <label className="block min-w-0">
               <span className="mb-1.5 block text-xs font-semibold text-ink-700">Goal</span>
               <select
                 value={categorySlug}
                 onChange={(event) => setCategorySlug(event.target.value)}
-                className="min-h-11 w-full border border-ink-200 bg-white px-3 text-sm text-ink-900 outline-none focus:border-ink-900 focus:ring-1 focus:ring-ink-900"
+                className="min-h-11 min-w-0 w-full border border-ink-200 bg-white px-3 text-sm text-ink-900 outline-none focus:border-ink-900 focus:ring-1 focus:ring-ink-900"
               >
                 <option value="all">All goals</option>
                 {categories.map((category) => (
@@ -119,23 +119,23 @@ export default function ExamFinder({
               </select>
             </label>
           )}
-          <label className="block">
+          <label className="block min-w-0">
             <span className="mb-1.5 block text-xs font-semibold text-ink-700">Availability</span>
             <select
               value={availability}
               onChange={(event) => setAvailability(event.target.value)}
-              className="min-h-11 w-full border border-ink-200 bg-white px-3 text-sm text-ink-900 outline-none focus:border-ink-900 focus:ring-1 focus:ring-ink-900"
+              className="min-h-11 min-w-0 w-full border border-ink-200 bg-white px-3 text-sm text-ink-900 outline-none focus:border-ink-900 focus:ring-1 focus:ring-ink-900"
             >
-              <option value="all">All listed exams</option>
-              <option value="available">Mock tests available</option>
+              <option value="all">All exams</option>
+              <option value="available">Tests available</option>
             </select>
           </label>
         </div>
-        <div className="mt-3 flex items-center justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-ink-500" aria-live="polite">
+        <div className="mt-3 flex items-start justify-between gap-4">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-600" aria-live="polite">
             <span>{showResults ? `${filtered.length} matching exams` : `Search ${rows.length} exam names or browse by goal below.`}</span>
-            <span className="inline-flex items-center gap-1.5"><span className="h-2 w-2 bg-action-600" aria-hidden="true" /> Mock tests available</span>
-            <span className="inline-flex items-center gap-1.5"><span className="h-2 w-2 border border-ink-400" aria-hidden="true" /> Listed for expansion</span>
+            <span className="inline-flex items-center gap-1.5"><span className="h-2 w-2 bg-action-600" aria-hidden="true" /> Tests available</span>
+            <span className="inline-flex items-center gap-1.5"><span className="h-2 w-2 border border-ink-400" aria-hidden="true" /> Listed only</span>
           </div>
           {hasActiveFilters && (
             <button

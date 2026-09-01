@@ -55,7 +55,12 @@ export default function ExamCategoryCard({
         <CategoryIcon name={category.icon} />
       </div>
       <Heading className={compact ? 'text-sm font-semibold leading-5 text-ink-900 group-hover:underline' : 'mb-2 text-lg font-bold text-ink-900'}>{category.name}</Heading>
-      {!compact && (
+      {compact ? (
+        <div className="mt-auto flex items-center justify-between border-t border-ink-100 pt-2.5 text-xs">
+          <span className="text-ink-600">{getCategoryExamCount(category)} exams</span>
+          <span className="font-semibold text-action-700 transition group-hover:translate-x-0.5" aria-hidden="true">→</span>
+        </div>
+      ) : (
         <>
           <p className="mb-4 text-sm leading-6 text-ink-500">{category.description}</p>
           <div className="mb-5 flex flex-wrap gap-1.5">

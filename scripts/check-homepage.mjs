@@ -38,6 +38,10 @@ assert.match(html, /<title>Free Mock Tests for Competitive Exams/);
 assert.match(html, /<link rel="canonical" href="https:\/\/takemocktest.com\/in"/);
 
 const directory = fs.readFileSync('out/in/exams.html', 'utf8');
+const directoryMain = directory.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];
+assert(directoryMain, 'Exam directory main content must render');
 assert(directory.includes('SSC, banking, railways, civil services, regulators, and state recruitment exams.'));
-assert(directory.includes('min-h-64'), 'The full directory keeps its detailed category cards');
-console.log('Homepage checks passed: section order, search, compact cards, mobile notice limit, FAQs, metadata and schema.');
+assert(directoryMain.includes('Choose your preparation goal'));
+assert.equal((directoryMain.match(/min-h-32 gap-3 p-4/g) || []).length, 11, 'The full directory shows all compact goal cards');
+assert(!directoryMain.includes('min-h-64'), 'The full directory must not regress to tall category cards');
+console.log('Homepage checks passed: section order, search, compact cards, mobile notice limit, directory layout, FAQs, metadata and schema.');
