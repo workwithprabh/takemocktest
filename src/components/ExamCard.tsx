@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ExamConfig, getCheckedTestCount, getExamSections } from '@/lib/exams';
+import { ExamConfig, getCheckedTestCount } from '@/lib/exams';
 
 const CATEGORY_STYLES = {
   SSC: {
@@ -108,37 +108,24 @@ const CATEGORY_STYLES = {
 
 export default function ExamCard({ exam, country }: { exam: ExamConfig; country: string }) {
   const style = CATEGORY_STYLES[exam.category];
-  const sectionCount = getExamSections(exam).length;
   const checkedTestCount = getCheckedTestCount(exam);
 
   return (
     <Link
       href={`/${country}/${exam.slug}/mock-test`}
       aria-label={checkedTestCount > 0 ? `Open free ${exam.name} mock tests` : `Try the ${exam.name} test interface demo`}
-      className="group flex min-h-44 flex-col border border-ink-300 bg-ink-50 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-ink-400 hover:bg-white hover:shadow-lg hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
+      className="group flex min-h-20 items-center gap-3 border border-ink-200 bg-white p-4 transition duration-200 hover:border-action-600 hover:bg-action-50/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
     >
-      <div className="mb-4 flex items-start justify-between gap-3">
-        <div className={`flex h-10 w-10 items-center justify-center ${style.surface} ${style.iconText}`}>
-          {style.icon}
-        </div>
-        <span className="bg-ink-100 px-2 py-1 text-[10px] font-semibold uppercase tracking-wide text-ink-700">
-          {exam.category}
-        </span>
+      <div className={`flex h-10 w-10 shrink-0 items-center justify-center ${style.surface} ${style.iconText}`}>
+        {style.icon}
       </div>
-
-      <div className="mb-1 font-sans text-lg font-bold text-ink-900">{exam.name}</div>
-      <p className="mb-4 text-xs leading-5 text-ink-500">
-        {sectionCount} listed sections · {exam.stages.length} stages
-      </p>
-
-      <div className="mt-auto flex items-center justify-between border-t border-ink-200 pt-3">
-        <span className="text-xs font-semibold text-ink-700">
+      <div className="min-w-0 flex-1">
+        <h3 className="text-base font-semibold text-ink-900 group-hover:underline">{exam.name}</h3>
+        <p className="mt-1 text-xs text-ink-600">
           {checkedTestCount > 0 ? `${checkedTestCount} checked tests` : 'Practice demo'}
-        </span>
-        <span className="flex h-8 w-8 items-center justify-center bg-ink-900 text-white transition group-hover:translate-x-0.5" aria-hidden="true">
-          →
-        </span>
+        </p>
       </div>
+      <span className="text-lg text-action-700 transition group-hover:translate-x-0.5" aria-hidden="true">→</span>
     </Link>
   );
 }
