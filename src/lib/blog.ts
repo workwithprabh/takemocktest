@@ -2015,6 +2015,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 7,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/bits-hd-vs-gate-cs-which-to-prepare-for.webp",
+    "alt": "Indian computer-science aspirant comparing a focused admission folder with several postgraduate pathways",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2121,6 +2127,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/amu-btech-admission-test-pattern-and-scoring.webp",
+    "alt": "Engineering aspirant reviewing an admission guide beside three subject notebooks and an OMR practice sheet",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2212,6 +2224,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/assam-cee-2026-exam-pattern-explained.webp",
+    "alt": "Assam engineering aspirant cross-checking state-board study books with physics, chemistry and mathematics notes",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2311,6 +2329,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/cusat-cat-2026-what-to-expect.webp",
+    "alt": "Indian engineering aspirant practicing rapid question navigation on a laptop with three subject workbooks",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2410,6 +2434,12 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 8,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "image": {
+    "src": "/images/blog/engineering-entrance-exams-beyond-jee-main-2026-roundup.webp",
+    "alt": "Engineering aspirant organizing seven unlabelled entrance-exam folders around a central study plan",
+    "width": 1280,
+    "height": 720
+  },
   "body": [
     {
       "type": "paragraph",
@@ -2534,6 +2564,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/rrb-paramedical-cbt-pattern-what-this-site-can-and-cannot-cover.webp',
+      alt: 'Paramedical aspirant comparing shared aptitude practice with separate healthcare study materials',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'RRB Paramedical recruits for roughly seven to nine distinct posts, Staff Nurse, Pharmacist, Laboratory Assistant, Radiographer, ECG Technician, and others, all under a single Computer Based Test with one shared name. That shared name hides a real structural problem for anyone building generic practice material: 70 of the 100 questions test Professional Ability, and Professional Ability is not one syllabus. It is a different, post-specific technical syllabus for every single post on the list.' },
       { type: 'takeaways', items: [
@@ -2570,6 +2606,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-gd-constable-cbe-pattern-speed-over-difficulty.webp',
+      alt: 'SSC GD aspirant practicing a computer-based test beside rough-work notes and an hourglass',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC GD Constable\'s Computer Based Examination looks approachable on paper: every question is set at Matriculation (Class 10) level, well within reach for most candidates who cleared school. What the syllabus difficulty hides is the pace the paper actually demands: 80 questions in 60 minutes, with no sectional lock to fall back on if one section runs long.' },
       { type: 'takeaways', items: [
@@ -2605,6 +2647,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-cpo-paper-1-vs-paper-2-same-marks-different-shape.webp',
+      alt: 'Two balanced study workspaces comparing multiple subject notebooks with focused language preparation',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC CPO candidates sit two separately named papers, and it is easy to assume the one that comes later, after a Physical Standard Test and Physical Endurance Test, matters less. It doesn\'t. Paper 1 and Paper 2 each carry 200 marks, and they are built to completely different shapes: Paper 1 locks you into four separate 30-minute sections, while Paper 2 is a single, uninterrupted 120-minute paper on English Language and Comprehension alone.' },
       { type: 'takeaways', items: [
@@ -2641,6 +2689,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/ssc-je-paper-1-only-a-quarter-of-the-exam.webp',
+      alt: 'Engineering aspirant studying general aptitude beside civil, electrical and mechanical learning materials',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC JE recruits Junior Engineers across Civil, Mechanical, and Electrical disciplines through two Computer-Based papers, and the two are not close to equal weight. Paper I, General Intelligence and Reasoning plus General Awareness, is worth 100 marks. Paper II, the discipline-specific General Engineering paper, is worth 300. This site currently covers only Paper I, and the honest reason is straightforward: Paper II\'s technical syllabus is different for every discipline, so no single question bank could represent Civil, Mechanical, and Electrical candidates accurately at once.' },
       { type: 'takeaways', items: [
@@ -2676,6 +2730,12 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    image: {
+      src: '/images/blog/rpf-constable-vs-rpf-si-same-cbt-different-post.webp',
+      alt: 'Two railway-recruitment aspirants comparing preparation notes in a station-side study space',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'RPF Constable and RPF Sub-Inspector are recruited through separate notifications for a genuinely different post, but their Computer Based Tests are, structurally, the same exam. Same 120 questions, same 120 marks, same 90-minute composite timer, same three-section split, same 1/3 negative marking. If you are trying to decide which one to prepare for, or whether to apply to both, the written-test preparation itself barely changes between them.' },
       { type: 'takeaways', items: [
