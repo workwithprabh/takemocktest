@@ -11,18 +11,158 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.5.22
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 73s
+
+
+Retrying 1/3...
+
+
+Retrying 1/3...
+
+
+Retrying 1/3...
+
+
+Retrying 1/3...
+
+
+Retrying 1/3...
+
+
+Retrying 1/3...
+ ✓ Compiled successfully in 75s
    Linting and checking validity of types ...
    Collecting page data ...
-[Error: Failed to collect configuration for /[country]/[exam]/mock-test] {
-  [cause]: Error: iiser-iat/iat-full-mock-1 must contain exactly 100 questions
-      at 25230 (.next/server/chunks/4270.js:432:6337473)
-      at c (.next/server/webpack-runtime.js:1:127)
-      at 50460 (.next/server/app/[country]/[exam]/mock-test/page.js:2:11280)
-      at Function.c (.next/server/webpack-runtime.js:1:127)
-}
+   Generating static pages (0/3506) ...
+   Generating static pages (876/3506) 
+   Generating static pages (1752/3506) 
+   Generating static pages (2629/3506) 
+ ✓ Generating static pages (3506/3506)
+   Finalizing page optimization ...
+   Collecting build traces ...
+   Exporting (0/2) ...
+ ✓ Exporting (2/2)
 
-> Build error occurred
-[Error: Failed to collect page data for /[country]/[exam]/mock-test] {
-  type: 'Error'
-}
+Route (app)                                                               Size  First Load JS
+┌ ○ /_not-found                                                          995 B         104 kB
+├ ● /[country]                                                           175 B         111 kB
+├   └ /in
+├ ● /[country]/[exam]                                                    841 B         112 kB
+├   ├ /in/ssc-cgl
+├   ├ /in/ibps-po
+├   ├ /in/rrb-ntpc
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/admit-card                                         194 B         106 kB
+├   ├ /in/ssc-cgl/admit-card
+├   ├ /in/ibps-po/admit-card
+├   ├ /in/rrb-ntpc/admit-card
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/answer-key                                         194 B         106 kB
+├   ├ /in/ssc-cgl/answer-key
+├   ├ /in/ibps-po/answer-key
+├   ├ /in/rrb-ntpc/answer-key
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/cutoff                                             194 B         106 kB
+├   ├ /in/ssc-cgl/cutoff
+├   ├ /in/ibps-po/cutoff
+├   ├ /in/rrb-ntpc/cutoff
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/eligibility                                        194 B         106 kB
+├   ├ /in/ssc-cgl/eligibility
+├   ├ /in/ibps-po/eligibility
+├   ├ /in/rrb-ntpc/eligibility
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/exam-pattern                                       194 B         106 kB
+├   ├ /in/ssc-cgl/exam-pattern
+├   ├ /in/ibps-po/exam-pattern
+├   ├ /in/rrb-ntpc/exam-pattern
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/mock-test                                        1.88 kB         113 kB
+├   ├ /in/ssc-cgl/mock-test
+├   ├ /in/ibps-po/mock-test
+├   ├ /in/rrb-ntpc/mock-test
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/previous-year-papers                               194 B         106 kB
+├   ├ /in/ssc-cgl/previous-year-papers
+├   ├ /in/ibps-po/previous-year-papers
+├   ├ /in/rrb-ntpc/previous-year-papers
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/result                                             194 B         106 kB
+├   ├ /in/ssc-cgl/result
+├   ├ /in/ibps-po/result
+├   ├ /in/rrb-ntpc/result
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/salary                                             194 B         106 kB
+├   ├ /in/ssc-cgl/salary
+├   ├ /in/ibps-po/salary
+├   ├ /in/rrb-ntpc/salary
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/selection-process                                  194 B         106 kB
+├   ├ /in/ssc-cgl/selection-process
+├   ├ /in/ibps-po/selection-process
+├   ├ /in/rrb-ntpc/selection-process
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/similar-tests                                      194 B         106 kB
+├   ├ /in/ibps-po/similar-tests
+├   ├ /in/ibps-clerk/similar-tests
+├   ├ /in/sbi-po/similar-tests
+├   └ [+11 more paths]
+├ ● /[country]/[exam]/syllabus                                           194 B         106 kB
+├   ├ /in/ssc-cgl/syllabus
+├   ├ /in/ibps-po/syllabus
+├   ├ /in/rrb-ntpc/syllabus
+├   └ [+116 more paths]
+├ ● /[country]/[exam]/test/[testId]                                      194 B         106 kB
+├   ├ /in/ssc-cgl/test/tier-1-full-mock-1
+├   ├ /in/ssc-cgl/test/tier-1-full-mock-2
+├   ├ /in/ssc-cgl/test/tier-1-full-mock-3
+├   └ [+977 more paths]
+├ ● /[country]/[exam]/test/[testId]/attempt                            5.39 kB         115 kB
+├   ├ /in/ssc-cgl/test/tier-1-full-mock-1/attempt
+├   ├ /in/ssc-cgl/test/tier-1-full-mock-2/attempt
+├   ├ /in/ssc-cgl/test/tier-1-full-mock-3/attempt
+├   └ [+977 more paths]
+├ ● /[country]/about                                                     162 B         106 kB
+├   └ /in/about
+├ ● /[country]/blog                                                      173 B         111 kB
+├   └ /in/blog
+├ ● /[country]/blog/[slug]                                               175 B         111 kB
+├   ├ /in/blog/how-to-build-a-study-timetable
+├   ├ /in/blog/common-ssc-cgl-preparation-mistakes
+├   ├ /in/blog/understanding-negative-marking
+├   └ [+55 more paths]
+├ ● /[country]/contact                                                   138 B         103 kB
+├   └ /in/contact
+├ ● /[country]/exam-updates                                            3.87 kB         115 kB
+├   └ /in/exam-updates
+├ ● /[country]/exam-updates/[slug]                                       194 B         106 kB
+├   ├ /in/exam-updates/ibps-rrb-14-officer-reserve-list-august-2026
+├   ├ /in/exam-updates/mat-september-2026-registration-and-test-dates
+├   ├ /in/exam-updates/gate-2027-registration-opening-awaited
+├   └ [+16 more paths]
+├ ● /[country]/exams                                                   2.29 kB         113 kB
+├   └ /in/exams
+├ ● /[country]/exams/[category]                                        2.28 kB         108 kB
+├   ├ /in/exams/government-jobs
+├   ├ /in/exams/engineering
+├   ├ /in/exams/medical
+├   └ [+8 more paths]
+├ ● /[country]/privacy                                                   138 B         103 kB
+├   └ /in/privacy
+├ ● /[country]/results                                                 1.38 kB         111 kB
+├   └ /in/results
+├ ● /[country]/ssc-cgl/dest-practice                                   3.66 kB         110 kB
+├   └ /in/ssc-cgl/dest-practice
+├ ● /[country]/terms                                                     138 B         103 kB
+├   └ /in/terms
+├ ○ /robots.txt                                                          138 B         103 kB
+├ ○ /sitemap.xml                                                         138 B         103 kB
+└ ○ /theme-1                                                             138 B         103 kB
++ First Load JS shared by all                                           103 kB
+  ├ chunks/255-4b47ed5fdada8e4c.js                                     46.4 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js                                54.2 kB
+  └ other shared chunks (total)                                        1.93 kB
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
