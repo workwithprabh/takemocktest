@@ -1,0 +1,90 @@
+from pathlib import Path
+import json,re,hashlib
+
+p=Path('src/lib/exams.ts'); s=p.read_text()
+if "| 'iiser-iat';" not in s:
+    s=s.replace("  | 'tg-polycet';", "  | 'tg-polycet'\n  | 'iiser-iat';")
+if "'University & Science'" not in s.split('stages: TestStage[];')[0]:
+    s=s.replace("'Law' | 'Management';", "'Law' | 'Management' | 'University & Science';")
+if 'const IISER_IAT_2026_BROCHURE' not in s:
+    s=s.replace("const SSC_CGL_2026_NOTICE =", "const IISER_IAT_2026_BROCHURE = 'https://app.iiseradmission.in/assets/pdfs/IB_IAT_2026_ENG.pdf';\nconst SSC_CGL_2026_NOTICE =")
+if "  'iiser-iat': {" not in s:
+    entry="""  'iiser-iat': {
+    slug: 'iiser-iat',
+    name: 'IISER Aptitude Test',
+    shortName: 'IISER IAT',
+    fullName: 'IISER Aptitude Test',
+    category: 'University & Science',
+    stages: [{
+      id: 'aptitude-test',
+      name: 'Aptitude Test',
+      pattern: {
+        status: 'official', cycle: 'IAT 2026',
+        sections: ['Biology', 'Chemistry', 'Mathematics', 'Physics'],
+        totalQuestions: 60, totalMarks: 240, duration: 180, negativeMarking: 1,
+        sectionBreakdown: [
+          { name: 'Biology', questions: 15, marks: 60 },
+          { name: 'Chemistry', questions: 15, marks: 60 },
+          { name: 'Mathematics', questions: 15, marks: 60 },
+          { name: 'Physics', questions: 15, marks: 60 },
+        ],
+        timerNote: 'Single 180-minute timer for all four sections combined; no sectional lock.',
+        note: 'IAT 2026 uses 60 multiple-choice questions across Biology, Chemistry, Mathematics and Physics, with 15 questions per subject. Each correct answer earns 4 marks, each wrong answer deducts 1 mark, and an unanswered question scores zero.',
+        sourceUrl: IISER_IAT_2026_BROCHURE,
+        checkedOn: '31 August 2026',
+      },
+      tests: [{ id: 'iat-full-mock-1', name: 'IAT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' }],
+    }],
+  },
+"""
+    s=s.replace("  'tg-polycet': {", entry+"  'tg-polycet': {")
+p.write_text(s)
+
+p=Path('src/lib/questions.ts'); s=p.read_text()
+if 'IISER_IAT_2026_BIOLOGY_1' not in s:
+    imports="""import { IISER_IAT_2026_BIOLOGY_1 } from './question-banks/iiser-iat-2026-biology-1';
+import { IISER_IAT_2026_CHEMISTRY_1 } from './question-banks/iiser-iat-2026-chemistry-1';
+import { IISER_IAT_2026_MATHEMATICS_1 } from './question-banks/iiser-iat-2026-mathematics-1';
+import { IISER_IAT_2026_PHYSICS_1 } from './question-banks/iiser-iat-2026-physics-1';
+"""
+    s=s.replace("import { SSC_CGL_TIER1_ENGLISH_1 }", imports+"import { SSC_CGL_TIER1_ENGLISH_1 }")
+if "'iiser-iat/iat-full-mock-1'" not in s:
+    mapping="""  'iiser-iat/iat-full-mock-1': [
+    ...IISER_IAT_2026_BIOLOGY_1,
+    ...IISER_IAT_2026_CHEMISTRY_1,
+    ...IISER_IAT_2026_MATHEMATICS_1,
+    ...IISER_IAT_2026_PHYSICS_1,
+  ],
+"""
+    s=s.replace("  'ibps-po/prelims-full-mock-1': [", mapping+"  'ibps-po/prelims-full-mock-1': [")
+p.write_text(s)
+
+p=Path('src/lib/exam-catalog.ts'); s=p.read_text()
+s=s.replace("exam('IISER Aptitude Test', 'National'),", "exam('IISER Aptitude Test', 'National', 'iiser-iat'),")
+p.write_text(s)
+
+subjects=['biology','chemistry','mathematics','physics']; rows=[]
+for subject in subjects:
+    t=Path(f'src/lib/question-banks/iiser-iat-2026-{subject}-1.ts').read_text()
+    m=re.search(r'=\s*(\[.*\])\s+satisfies Question\[\];',t,re.S)
+    assert m, subject
+    bank=json.loads(m.group(1)); assert len(bank)==15, (subject,len(bank)); rows += bank
+assert len(rows)==60 and len({r['id'] for r in rows})==60
+from collections import Counter
+assert Counter(r['section'] for r in rows)==Counter({'Biology':15,'Chemistry':15,'Mathematics':15,'Physics':15})
+assert all(r['marks']==4 and r['negativeMarking']==1 and r['answerType']=='mcq' for r in rows)
+parts=[]
+for r in sorted(rows,key=lambda x:x['id']):
+    h=hashlib.sha256(json.dumps(r,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
+    parts.append(r['id']+':'+h)
+ledger_digest=hashlib.sha256('\n'.join(parts).encode()).hexdigest()
+assert ledger_digest=='64c013f8ca637d1806f64d54d3b3ef1b1a6ad18e5b3a96bd636b08f6b3818d8e', ledger_digest
+exams=Path('src/lib/exams.ts').read_text(); catalog=Path('src/lib/exam-catalog.ts').read_text(); qs=Path('src/lib/questions.ts').read_text()
+assert exams.count("slug: 'iiser-iat'")==1
+assert "id: 'aptitude-test'" in exams and "id: 'iat-full-mock-1'" in exams
+assert "duration: 180, marksPerCorrect: 4, negativeMarking: 1" in exams
+segment=exams[exams.index("  'iiser-iat': {"):exams.index("  'tg-polycet': {")]
+assert 'sectionDuration' not in segment and 'sectionDurations' not in segment and 'timingGroups' not in segment
+assert catalog.count("exam('IISER Aptitude Test', 'National', 'iiser-iat')")==1
+assert qs.count("'iiser-iat/iat-full-mock-1'")==1
+print('IISER production integrity: 60/60 canonical preservation; shell and routing exact.')
