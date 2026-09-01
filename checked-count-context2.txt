@@ -1,0 +1,240 @@
+4655-    { section: 'Reasoning Ability', question: 'Complete the series: 3, 7, 15, 31, ?', options: ['47', '55', '63', '71'], correctIndex: 2, explanation: 'Each term is double the previous term plus 1: 31 × 2 + 1 = 63.' },
+4656:    { section: 'Reasoning Ability', question: 'Find the odd one out.', options: ['Savings', 'Current', 'Fixed Deposit', 'Passbook'], correctIndex: 3, explanation: 'Savings, Current, and Fixed Deposit are types of bank accounts; a Passbook is a document, not an account type.' },
+4657-    { section: 'Reasoning Ability', question: '"Coin is to Mint as Note is to ___?"', options: ['Wallet', 'Press', 'Vault', 'Ledger'], correctIndex: 1, explanation: 'A coin is manufactured at a mint; similarly, a currency note is printed at a press.' },
+4658-  ],
+4659-  'ssc-mts': [
+4660-    // Numerical and Mathematical Ability
+4661:    { section: 'Numerical and Mathematical Ability', question: 'What is 20% of 350?', options: ['60', '65', '70', '75'], correctIndex: 2, explanation: '20% of 350 = (20/100) × 350 = 70.' },
+4662-    { section: 'Numerical and Mathematical Ability', question: 'What is the value of 8² − 3²?', options: ['50', '55', '60', '65'], correctIndex: 1, explanation: '64 − 9 = 55.' },
+4663-    { section: 'Numerical and Mathematical Ability', question: 'Find the average of 4, 8, 12, and 16.', options: ['8', '9', '10', '11'], correctIndex: 2, explanation: 'Sum = 40, and 40 ÷ 4 = 10.' },
+4664-    // Reasoning Ability and Problem Solving
+4665-    { section: 'Reasoning Ability and Problem Solving', question: 'Complete the series: 1, 3, 6, 10, 15, ?', options: ['18', '19', '20', '21'], correctIndex: 3, explanation: 'Each term adds one more than the previous addition (+2, +3, +4, +5, +6): 15 + 6 = 21.' },
+4666-    { section: 'Reasoning Ability and Problem Solving', question: 'Find the odd one out.', options: ['Circle', 'Square', 'Triangle', 'Colour'], correctIndex: 3, explanation: 'Circle, Square, and Triangle are shapes; Colour is not a shape.' },
+4667-    { section: 'Reasoning Ability and Problem Solving', question: '"Fish is to Water as Bird is to ___?"', options: ['Nest', 'Sky', 'Tree', 'Cage'], correctIndex: 1, explanation: 'A fish lives in water; similarly, a bird lives and flies in the sky.' },
+4668-    // General Awareness
+4669-    { section: 'General Awareness', question: 'What is the capital of India?', options: ['Mumbai', 'Kolkata', 'New Delhi', 'Chennai'], correctIndex: 2, explanation: 'New Delhi is the capital of India.' },
+4670-    { section: 'General Awareness', question: 'Which planet is known as the Red Planet?', options: ['Venus', 'Mars', 'Jupiter', 'Saturn'], correctIndex: 1, explanation: 'Mars is known as the Red Planet due to its reddish appearance.' },
+4671-    // English Language and Comprehension
+4672-    { section: 'English Language and Comprehension', question: 'Choose the correct synonym for "Brave".', options: ['Fearful', 'Courageous', 'Weak', 'Shy'], correctIndex: 1, explanation: '"Brave" means having courage, closest in meaning to "Courageous".' },
+4673-  ],
+4674-  'ibps-rrb-office-assistant': [
+4675-    // Reasoning
+4676-    { section: 'Reasoning', question: 'Complete the series: 2, 4, 8, 16, ?', options: ['20', '24', '28', '32'], correctIndex: 3, explanation: 'Each term is double the previous term: 16 × 2 = 32.' },
+4677-    { section: 'Reasoning', question: 'Find the odd one out.', options: ['Cheque', 'Draft', 'Passbook', 'Banana'], correctIndex: 3, explanation: 'Cheque, Draft, and Passbook are banking documents; Banana is unrelated.' },
+4678-    { section: 'Reasoning', question: '"Branch is to Bank as Classroom is to ___?"', options: ['Teacher', 'School', 'Student', 'Book'], correctIndex: 1, explanation: 'A branch is a unit of a bank; similarly, a classroom is a unit of a school.' },
+4679-    // Numerical Ability
+4680:    { section: 'Numerical Ability', question: 'What is 30% of 400?', options: ['110', '115', '120', '125'], correctIndex: 2, explanation: '30% of 400 = (30/100) × 400 = 120.' },
+4681-    { section: 'Numerical Ability', question: 'What is the value of 7² + 6²?', options: ['80', '85', '90', '95'], correctIndex: 1, explanation: '49 + 36 = 85.' },
+4682:    { section: 'Numerical Ability', question: 'A sum of ₹4,000 earns simple interest of ₹480 in 2 years. What is the rate of interest?', options: ['5%', '6%', '7%', '8%'], correctIndex: 1, explanation: 'Rate = (SI × 100) / (P × T) = (480 × 100) / (4000 × 2) = 6%.' },
+4683-  ],
+4684-  'ssc-gd-constable': [
+4685-    // General Intelligence and Reasoning
+4686-    { section: 'General Intelligence and Reasoning', question: 'Complete the series: 4, 8, 12, 16, ?', options: ['18', '20', '22', '24'], correctIndex: 1, explanation: 'Each term increases by 4: 16 + 4 = 20.' },
+4687:    { section: 'General Intelligence and Reasoning', question: 'Find the odd one out.', options: ['Delhi', 'Mumbai', 'Chennai', 'India'], correctIndex: 3, explanation: 'Delhi, Mumbai, and Chennai are cities; India is a country.' },
+4688-    // Elementary Mathematics
+4689:    { section: 'Elementary Mathematics', question: 'What is 25% of 240?', options: ['50', '55', '60', '65'], correctIndex: 2, explanation: '25% of 240 = (25/100) × 240 = 60.' },
+4690-  ],
+4691-  'ibps-rrb-officer-scale-1': [
+4692-    // Reasoning
+4693-    { section: 'Reasoning', question: 'Complete the series: 3, 9, 27, 81, ?', options: ['162', '216', '243', '324'], correctIndex: 2, explanation: 'Each term is triple the previous one: 81 × 3 = 243.' },
+4694-    // Quantitative Aptitude
+4695:    { section: 'Quantitative Aptitude', question: 'What is 18% of 500?', options: ['80', '85', '90', '95'], correctIndex: 2, explanation: '18% of 500 = (18/100) × 500 = 90.' },
+4696-  ],
+4697-  'sbi-clerk': [
+4698-    // English Language
+4699-    { section: 'English Language', question: "Choose the word most similar in meaning to 'SWIFT'.", options: ['Slow', 'Quick', 'Heavy', 'Quiet'], correctIndex: 1, explanation: "'Quick' is the closest synonym of 'swift'." },
+4700-    // Numerical Ability
+4701:    { section: 'Numerical Ability', question: 'What is 40% of 300?', options: ['100', '110', '120', '130'], correctIndex: 2, explanation: '40% of 300 = (40/100) × 300 = 120.' },
+4702-  ],
+4703-  'rrb-je': [
+4704-    // Mathematics
+4705:    { section: 'Mathematics', question: 'What is 25% of 320?', options: ['70', '75', '80', '85'], correctIndex: 2, explanation: '25% of 320 = (25/100) × 320 = 80.' },
+4706-    // General Science
+4707-    { section: 'General Science', question: 'What is the SI unit of energy?', options: ['Watt', 'Newton', 'Joule', 'Pascal'], correctIndex: 2, explanation: 'The joule is the SI unit of energy and work.' },
+4708-  ],
+4709-  'upsc-cse': [
+4710-    // History of India and Indian National Movement
+4711-    { section: 'History of India and Indian National Movement', question: 'In which year was the Indian National Congress founded?', options: ['1875', '1885', '1895', '1905'], correctIndex: 1, explanation: 'The Indian National Congress was founded in 1885.' },
+4712-    // Basic numeracy and Data interpretation
+4713:    { section: 'Basic numeracy and Data interpretation', question: 'What is 20% of 250?', options: ['40', '45', '50', '55'], correctIndex: 2, explanation: '20% of 250 = (20/100) × 250 = 50.' },
+4714-  ],
+4715-  'rpf-constable': [
+4716-    // Arithmetic
+4717:    { section: 'Arithmetic', question: 'What is 30% of 250?', options: ['65', '70', '75', '80'], correctIndex: 2, explanation: '30% of 250 = (30/100) × 250 = 75.' },
+4718-    // General Awareness
+4719-    { section: 'General Awareness', question: 'Who is the ceremonial Head of State of India?', options: ['Prime Minister', 'Vice-President', 'Chief Justice', 'President'], correctIndex: 3, explanation: 'The President of India is the ceremonial Head of State.' },
+4720-  ],
+4721-  'rpf-si': [
+4722-    // Arithmetic
+4723:    { section: 'Arithmetic', question: 'What is 40% of 150?', options: ['50', '55', '60', '65'], correctIndex: 2, explanation: '40% of 150 = (40/100) × 150 = 60.' },
+4724-    // General Awareness
+4725-    { section: 'General Awareness', question: 'Which bird is the national bird of India?', options: ['Parrot', 'Peacock', 'Sparrow', 'Crane'], correctIndex: 1, explanation: 'The peacock is the national bird of India.' },
+4726-  ],
+4727-  'ssc-je': [
+4728-    // General Intelligence and Reasoning
+4729-    { section: 'General Intelligence and Reasoning', question: 'Which of the following numbers is a perfect square: 48, 64, 72, or 90?', options: ['48', '64', '72', '90'], correctIndex: 1, explanation: '64 = 8², a perfect square; the other three are not.' },
+4730-    // General Awareness
+4731-    { section: 'General Awareness', question: 'What is the capital of Jharkhand?', options: ['Patna', 'Ranchi', 'Bhubaneswar', 'Raipur'], correctIndex: 1, explanation: 'Ranchi is the capital of Jharkhand.' },
+4732-  ],
+4733-  'ssc-steno': [
+4734-    // General Intelligence and Reasoning
+4735-    { section: 'General Intelligence and Reasoning', question: 'Pen : Write :: Scissors : ?', options: ['Cut', 'Sew', 'Fold', 'Tear'], correctIndex: 0, explanation: 'A pen is used to write; scissors are used to cut.' },
+4736-    // General Awareness
+4737-    { section: 'General Awareness', question: 'Which is the smallest state in India by area?', options: ['Goa', 'Sikkim', 'Tripura', 'Manipur'], correctIndex: 0, explanation: 'Goa is the smallest state in India by area.' },
+4738-    // English Language and Comprehension
+4739-    { section: 'English Language and Comprehension', question: "Choose the word most similar in meaning to 'Genuine':", options: ['Fake', 'Authentic', 'Doubtful', 'Artificial'], correctIndex: 1, explanation: '"Genuine" means truly what it is said to be, closest in meaning to "authentic".' },
+4740-  ],
+4741-  'ssc-cht': [
+4742-    { section: 'General Hindi', question: '‘अग्नि’ का उपयुक्त पर्यायवाची शब्द कौन-सा है?', options: ['अनल', 'अनिल', 'अचल', 'अंबर'], correctIndex: 0, explanation: '‘अनल’ का अर्थ अग्नि है।' },
+4743-    { section: 'General English', question: "Which word is closest in meaning to 'assiduous'?", options: ['Diligent', 'Careless', 'Intermittent', 'Reluctant'], correctIndex: 0, explanation: '“Assiduous” means showing persistent care and effort, so “diligent” is the closest synonym.' },
+4744-  ],
+4745-  'ssc-selection-post': [
+4746-    { section: 'General Intelligence', question: 'Complete the series: 6, 12, 24, 48, ?', options: ['72', '84', '96', '108'], correctIndex: 2, explanation: 'Each term is twice the preceding term, so 48 x 2 = 96.' },
+4747-    { section: 'General Awareness', question: 'Which institution conducts the SSC Selection Post examination?', options: ['Staff Selection Commission', 'Union Public Service Commission', 'Reserve Bank of India', 'National Testing Agency'], correctIndex: 0, explanation: 'The Staff Selection Commission conducts the Selection Posts Examination.' },
+4748-    { section: 'Quantitative Aptitude', question: 'What is 15% of 360?', options: ['45', '54', '60', '72'], correctIndex: 1, explanation: '15% of 360 = 54.' },
+--
+4972-  ],
+4973-  'kmat-karnataka': [
+4974-    KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[0],
+4975-    KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[40],
+4976-    KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[80],
+4977-  ],
+4978-  'jipmat': [
+4979-    JIPMAT_QA_DILR_VARC_1[0],
+4980-    JIPMAT_QA_DILR_VARC_1[15],
+4981-    JIPMAT_QA_DILR_VARC_1[30],
+4982-  ],
+4983-  'ibsat': [
+4984-    IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],
+4985-    IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[25],
+4986-    IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[55],
+4987-  ],
+4988-  'ssc-cpo': [
+4989-    // General Intelligence and Reasoning
+4990-    { section: 'General Intelligence and Reasoning', question: 'Complete the series: 5, 10, 20, 40, ?', options: ['60', '70', '80', '90'], correctIndex: 2, explanation: 'Each term is double the previous term: 40 × 2 = 80.' },
+4991-    // Quantitative Aptitude
+4992:    { section: 'Quantitative Aptitude', question: 'What is 20% of 350?', options: ['60', '65', '70', '75'], correctIndex: 2, explanation: '20% of 350 = (20/100) × 350 = 70.' },
+4993-  ],
+4994-  'ibps-so': [
+4995-    // Reasoning
+4996-    { section: 'Reasoning', question: 'Complete the series: 4, 12, 36, 108, ?', options: ['216', '270', '324', '432'], correctIndex: 2, explanation: 'Each term is triple the previous term: 108 × 3 = 324.' },
+4997-    // Quantitative Aptitude
+4998:    { section: 'Quantitative Aptitude', question: 'What is 25% of 480?', options: ['110', '115', '120', '125'], correctIndex: 2, explanation: '25% of 480 = (25/100) × 480 = 120.' },
+4999-  ],
+5000-  'rbi-grade-b': [
+5001-    // General Awareness
+5002-    { section: 'General Awareness', question: 'Which institution regulates monetary policy in India?', options: ['SEBI', 'Reserve Bank of India', 'NITI Aayog', 'Finance Ministry'], correctIndex: 1, explanation: 'The Reserve Bank of India regulates monetary policy through its Monetary Policy Committee.' },
+5003-    // Quantitative Aptitude
+5004:    { section: 'Quantitative Aptitude', question: 'What is 15% of 600?', options: ['80', '85', '90', '95'], correctIndex: 2, explanation: '15% of 600 = (15/100) × 600 = 90.' },
+5005-  ],
+5006-  'nabard-grade-a': [
+5007-    // General Awareness
+5008-    { section: 'General Awareness', question: 'NABARD was established in which year?', options: ['1975', '1982', '1990', '1995'], correctIndex: 1, explanation: 'NABARD was established on 12 July 1982.' },
+5009-    // Agriculture and Rural Development
+5010-    { section: 'Agriculture and Rural Development', question: 'Which scheme provides an income support of ₹6,000 per year to eligible farmer families?', options: ['PM-KISAN', 'PMFBY', 'PMGSY', 'PMKSY'], correctIndex: 0, explanation: 'PM-KISAN provides ₹6,000 per year in three equal instalments to eligible farmer families.' },
+5011-  ],
+5012-  'sebi-grade-a': [
+5013-    // General Awareness
+5014-    { section: 'General Awareness', question: 'Where is the head office of SEBI located?', options: ['New Delhi', 'Mumbai', 'Chennai', 'Kolkata'], correctIndex: 1, explanation: "SEBI's head office is located in the Bandra Kurla Complex, Mumbai." },
+5015-    // Commerce
+5016-    { section: 'Commerce', question: 'A cheque is an example of a:', options: ['Fixed Asset', 'Negotiable Instrument', 'Current Liability', 'Contingent Liability'], correctIndex: 1, explanation: 'A cheque is classified as a negotiable instrument under the Negotiable Instruments Act, 1881.' },
+5017-  ],
+5018-  'sidbi-grade-a-b': [
+5019-    // General Awareness
+5020-    { section: 'General Awareness', question: 'Where is the head office of SIDBI located?', options: ['New Delhi', 'Mumbai', 'Lucknow', 'Chennai'], correctIndex: 2, explanation: "SIDBI's head office is located in Lucknow, Uttar Pradesh." },
+5021-    // Stream Specific Test
+5022-    { section: 'Stream Specific Test', question: 'IRAC norms, which govern the classification of bank assets, stand for:', options: ['Interest Rate Adjustment Circular', 'Income Recognition and Asset Classification', 'Investment Regulation and Audit Compliance', 'Internal Risk Assessment Committee'], correctIndex: 1, explanation: 'IRAC stands for Income Recognition and Asset Classification.' },
+5023-  ],
+5024-  'lic-aao': [
+5025-    // Reasoning Ability
+5026-    { section: 'Reasoning Ability', question: 'In a certain code, if MONEY is written as NPOFZ, how would BANK be written?', options: ['CBOL', 'CBOM', 'CBPL', 'DBOL'], correctIndex: 0, explanation: 'The code shifts each letter forward by one: B→C, A→B, N→O, K→L, giving CBOL.' },
+5027-    // Quantitative Aptitude
+5028:    { section: 'Quantitative Aptitude', question: 'A sum of ₹4,000 amounts to ₹4,600 in 3 years at simple interest. Find the rate of interest per annum.', options: ['4%', '5%', '6%', '7%'], correctIndex: 1, explanation: 'Simple interest = 4600 − 4000 = ₹600. Rate = (600 × 100) / (4000 × 3) = 5%.' },
+5029-  ],
+5030-  'niacl-ao': [
+5031-    // Reasoning Ability
+5032-    { section: 'Reasoning Ability', question: 'In a certain code, if TRADE is written as USBEF, how would CLAIM be written?', options: ['DMBJN', 'DMBJM', 'CMBJN', 'DMAJN'], correctIndex: 0, explanation: 'The code shifts each letter forward by one: C→D, L→M, A→B, I→J, M→N, giving DMBJN.' },
+5033-    // Quantitative Aptitude
+5034:    { section: 'Quantitative Aptitude', question: 'A sum of ₹5,000 amounts to ₹5,750 in 3 years at simple interest. Find the rate of interest per annum.', options: ['4%', '5%', '6%', '7%'], correctIndex: 1, explanation: 'Simple interest = 5750 − 5000 = ₹750. Rate = (750 × 100) / (5000 × 3) = 5%.' },
+5035-  ],
+5036-  'rrb-alp': [
+5037-    // Mathematics
+5038:    { section: 'Mathematics', question: 'What is 60% of 450?', options: ['260', '270', '280', '290'], correctIndex: 1, explanation: '60% of 450 = (60/100) × 450 = 270.' },
+5039-    // General Science
+5040-    { section: 'General Science', question: 'Which gas do humans primarily exhale during respiration?', options: ['Oxygen', 'Carbon Dioxide', 'Nitrogen', 'Hydrogen'], correctIndex: 1, explanation: 'Humans inhale oxygen and exhale carbon dioxide as a waste product of cellular respiration.' },
+5041-  ],
+5042-  'rrb-technician': [
+5043-    // Mathematics
+5044:    { section: 'Mathematics', question: 'What is 45% of 280?', options: ['116', '120', '126', '130'], correctIndex: 2, explanation: '45% of 280 = (45/100) × 280 = 126.' },
+5045-    // General Science
+5046-    { section: 'General Science', question: 'Which gauge is primarily used to measure very small diameters and thicknesses with high precision?', options: ['Screw gauge', 'Pressure gauge', 'Fuel gauge', 'Rain gauge'], correctIndex: 0, explanation: 'A screw gauge is a precision instrument used to measure very small diameters and thicknesses.' },
+5047-  ],
+5048-  'rrb-paramedical': [
+5049-    // General Awareness
+5050-    { section: 'General Awareness', question: 'Which body of the United Nations is primarily responsible for global public health matters?', options: ['UNESCO', 'World Health Organization', 'UNICEF', 'UNHCR'], correctIndex: 1, explanation: 'The World Health Organization (WHO) is the UN agency responsible for international public health.' },
+5051-    // General Science
+5052-    { section: 'General Science', question: 'Which of the following organs is primarily responsible for filtering waste from the blood in the human body?', options: ['Liver', 'Kidney', 'Lungs', 'Spleen'], correctIndex: 1, explanation: 'The kidneys filter waste products from the blood and excrete them as urine.' },
+5053-  ],
+5054-  'amu-btech': [
+5055-    AMU_BTECH_2026_FULL_MOCK_1[0],
+5056-    AMU_BTECH_2026_FULL_MOCK_1[34],
+5057-    AMU_BTECH_2026_FULL_MOCK_1[67],
+5058-  ],
+5059-  'assam-cee': [
+5060-    ASSAM_CEE_2026_MATHEMATICS_1[0],
+5061-    ASSAM_CEE_2026_PHYSICS_1[0],
+5062-    ASSAM_CEE_2026_CHEMISTRY_1[0],
+5063-  ],
+5064-  'chandigarh-cucet': [
+5065-    CHANDIGARH_CUCET_2026_ENGLISH_1[0],
+5066-    CHANDIGARH_CUCET_2026_PHYSICS_1[0],
+5067-    CHANDIGARH_CUCET_2026_MATHEMATICS_1[0],
+5068-  ],
+5069-  'imu-cet': [
+--
+5154-    TG_ECET_2026_CHEMISTRY_1[0],
+5155-    TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1[0],
+5156-  ],
+5157-  'tg-polycet': [
+5158-    TG_POLYCET_2026_MATHEMATICS_1[0],
+5159-    TG_POLYCET_2026_PHYSICS_1[0],
+5160-    TG_POLYCET_2026_CHEMISTRY_1[0],
+5161-  ],
+5162-  'bits-hd': [
+5163-    BITS_HD_2026_ME_CS_FULL_MOCK_1[0],
+5164-    BITS_HD_2026_ME_CS_FULL_MOCK_1[15],
+5165-    BITS_HD_2026_ME_CS_FULL_MOCK_1[30],
+5166-  ],
+5167-  'cg-pet': [
+5168-    CG_PET_2026_PHYSICS_1[0],
+5169-    CG_PET_2026_CHEMISTRY_1[0],
+5170-    CG_PET_2026_MATHEMATICS_1[0],
+5171-  ],
+5172-  'bcece': [
+5173-    BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[0],
+5174:    BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[100],
+5175-    BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[200],
+5176-  ],
+5177-  'cusat-cat': [
+5178-    CUSAT_CAT_2026_BTECH_FULL_MOCK_1[0],
+5179-    CUSAT_CAT_2026_BTECH_FULL_MOCK_1[90],
+5180-    CUSAT_CAT_2026_BTECH_FULL_MOCK_1[165],
+5181-  ],
+5182-  'gate': [
+5183-    GATE_2026_CS_FULL_MOCK_1[0],
+5184-    GATE_2026_CS_FULL_MOCK_1[11],
+5185-    GATE_2026_CS_FULL_MOCK_1[12],
+5186-  ],
+5187-  'gujcet': [
+5188-    GUJCET_2026_ENGINEERING_FULL_MOCK_1[0],
+5189-    GUJCET_2026_ENGINEERING_FULL_MOCK_1[40],
+5190-    GUJCET_2026_ENGINEERING_FULL_MOCK_1[80],
+5191-  ],
+5192-  'jain-jet': [
+5193-    JAIN_JET_2026_PHYSICS_1[0],
+5194-    JAIN_JET_2026_APTITUDE_1[0],
+5195-    JAIN_JET_2026_ENGLISH_1[0],
+5196-  ],
+5197-  'saeee': [
+5198-    SAEEE_2026_MATHEMATICS_1[0],
+5199-    SAEEE_2026_PHYSICS_1[0],
