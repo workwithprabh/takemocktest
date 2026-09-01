@@ -1,0 +1,146 @@
+name: Recover P2 IISER IAT 2026
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/recover-p2-iiser.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Reconcile current partial integration
+        run: |
+          python scripts/coding-agent-iiser.py
+          python scripts/coding-agent-iiser-fix.py
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript
+        run: npx tsc --noEmit
+
+      - name: Question QA before collision regeneration
+        run: npm run qa:questions
+
+      - name: Regenerate collision reference
+        run: npm run collision-reference
+
+      - name: Question QA after collision regeneration
+        run: npm run qa:questions
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Asset QA
+        run: npm run qa:assets
+
+      - name: Build
+        run: npm run build
+
+      - name: On-page SEO QA
+        run: npm run qa:onpage-seo
+
+      - name: Site QA
+        run: npm run qa:site
+
+      - name: Frozen-record and product integrity recheck
+        run: |
+          python scripts/coding-agent-iiser.py
+          python scripts/coding-agent-iiser-fix.py
+          git diff --exit-code -- src/lib/question-banks/iiser-iat-2026-biology-1.ts src/lib/question-banks/iiser-iat-2026-chemistry-1.ts src/lib/question-banks/iiser-iat-2026-mathematics-1.ts src/lib/question-banks/iiser-iat-2026-physics-1.ts
+
+      - name: Runtime smoke checks
+        shell: bash
+        run: |
+          npm start -- -p 3100 > /tmp/iiser-runtime.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:3100/in/iiser-iat/mock-test >/tmp/iiser-mock.html; then break; fi
+            sleep 1
+          done
+          curl -fsS http://127.0.0.1:3100/in/iiser-iat >/tmp/iiser-home.html
+          curl -fsS http://127.0.0.1:3100/in/exams/university-science >/tmp/iiser-catalog.html
+          grep -qi 'IISER Aptitude Test' /tmp/iiser-mock.html
+          grep -qi 'IISER Aptitude Test' /tmp/iiser-home.html
+          grep -qi 'IISER Aptitude Test' /tmp/iiser-catalog.html
+          grep -qi 'IAT Full Mock Test 1' /tmp/iiser-mock.html
+          grep -Eq '180|3 hours' /tmp/iiser-mock.html
+
+      - name: Commit reconciled IISER production integration
+        shell: bash
+        run: |
+          if ! git diff --quiet; then
+            git config user.name 'TakeMockTest Coding Agent'
+            git config user.email 'actions@users.noreply.github.com'
+            git add -A
+            git commit -m 'Integrate IISER IAT 2026 Pipeline V2'
+            git push origin HEAD:main
+          fi
+          echo "FINAL_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Create compact Coding Result package contents
+        shell: bash
+        run: |
+          mkdir -p /tmp/coding-result
+          cat > /tmp/coding-result/CODING_RESULT.json <<EOF
+          {
+            "schemaVersion": 2,
+            "pipelineVersion": "2.0",
+            "batchId": "P2-2026-08-31-B01",
+            "jobId": "P2-2026-08-31-B01-J001-IISER_IAT_2026",
+            "exam": "IISER IAT 2026",
+            "status": "PASS",
+            "repository": "workwithprabh/takemocktest",
+            "branch": "main",
+            "repositoryCommit": "${FINAL_SHA}",
+            "approvedRecordPreservation": "60/60",
+            "approvedRecordLedgerDigest": "64c013f8ca637d1806f64d54d3b3ef1b1a6ad18e5b3a96bd636b08f6b3818d8e",
+            "productIdentity": {"slug":"iiser-iat","stage":"aptitude-test","test":"iat-full-mock-1"},
+            "shell": {"questions":60,"marks":240,"minutes":180,"marksPerCorrect":4,"negativeMarking":1,"sections":{"Biology":15,"Chemistry":15,"Mathematics":15,"Physics":15}},
+            "qa": ["typescript","qa:questions-before","collision-reference-regenerate","qa:questions-after","lint","assets","build","onpage-seo","site","runtime-smoke","frozen-record-integrity"],
+            "sourceInput": "P2_IISER_IAT_2026_MAIN_BRAIN_PASS_CODING_2026-08-31.zip",
+            "completedOn": "2026-09-01"
+          }
+          EOF
+          cat > /tmp/coding-result/CODING_RESULT.md <<EOF
+          # Pipeline V2 Batch 01 Coding Result — IISER IAT 2026
+
+          PASS. Current main was reconciled rather than duplicated. All 60 Main-Brain-approved records are preserved exactly. Four banks are integrated as 15 Biology + 15 Chemistry + 15 Mathematics + 15 Physics questions. Product identity is iiser-iat / aptitude-test / iat-full-mock-1 with one shared 180-minute timer and +4/-1 scoring.
+
+          Full Coding QA passed: TypeScript, question-bank QA before and after collision-reference regeneration, lint, assets, production build, on-page SEO, site QA, runtime route/product smoke checks, and frozen-record integrity recheck.
+
+          Repository commit: ${FINAL_SHA}
+          EOF
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('/tmp/coding-result')
+          files=[]
+          for name in ['CODING_RESULT.json','CODING_RESULT.md']:
+              b=(root/name).read_bytes()
+              files.append({'file':name,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+          manifest={'schemaVersion':2,'stage':'CODING_RESULT','status':'PASS','jobId':'P2-2026-08-31-B01-J001-IISER_IAT_2026','files':files}
+          (root/'PACKAGE_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          PY
+
+      - name: Upload compact Coding Result artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: p2-iiser-iat-2026-coding-result
+          path: /tmp/coding-result/*
+          if-no-files-found: error
+          retention-days: 7
