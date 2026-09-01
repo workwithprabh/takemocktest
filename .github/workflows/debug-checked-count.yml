@@ -1,0 +1,21 @@
+name: Debug Checked Count
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Capture validator context
+        shell: bash
+        run: |
+          grep -n -B 12 -A 20 "must contain exactly 100 questions" src/lib/questions.ts > checked-count-context.txt || true
+          cat checked-count-context.txt
+          git config user.name 'TakeMockTest Coding Agent'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -f checked-count-context.txt
+          git commit -m 'Capture checked test count validator'
+          git push
