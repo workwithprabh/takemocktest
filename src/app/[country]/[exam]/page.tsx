@@ -151,6 +151,20 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                   </Link>
                 )}
               </div>
+              <dl className="mt-6 grid max-w-2xl grid-cols-3 border-l border-t border-ink-200 bg-white">
+                <div className="border-b border-r border-ink-200 p-3 md:p-4">
+                  <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Checked tests</dt>
+                  <dd className="mt-1 text-lg font-bold text-ink-900">{checkedTestCount}</dd>
+                </div>
+                <div className="border-b border-r border-ink-200 p-3 md:p-4">
+                  <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Test groups</dt>
+                  <dd className="mt-1 text-lg font-bold text-ink-900">{exam.stages.length}</dd>
+                </div>
+                <div className="border-b border-r border-ink-200 p-3 md:p-4">
+                  <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Pattern</dt>
+                  <dd className="mt-1 text-lg font-bold text-ink-900">{officialStages[0]?.pattern.cycle ?? 'Review'}</dd>
+                </div>
+              </dl>
             </div>
 
             {currentCycle && (
@@ -203,44 +217,17 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
       </header>
 
       <main className="mx-auto max-w-6xl px-5 py-8 md:py-12">
-        <nav aria-label={`${exam.name} page sections`} className={`mb-10 overflow-x-auto border-y bg-white shadow-sm ${currentCycle ? 'border-action-100' : 'border-ink-200'}`}>
+        <nav aria-label={`${exam.name} page sections`} className={`sticky top-[60px] z-10 mb-10 overflow-x-auto border-y bg-white shadow-sm ${currentCycle ? 'border-action-100' : 'border-ink-200'}`}>
           <div className="flex min-w-max">
             {currentCycle && <a href="#dates" className="border-b-2 border-transparent px-4 py-3 text-sm font-semibold text-action-800 transition hover:border-action-600 hover:bg-action-50">Dates</a>}
             <a href="#mock-tests" className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>Mock tests</a>
+            {hasOfficialPattern && <Link href={`/${country}/${exam.slug}/exam-pattern`} className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>Pattern</Link>}
             {latestExamUpdates.length > 0 && <a href="#updates" className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>Updates</a>}
             {currentCycle && <a href="#results" className="border-b-2 border-transparent px-4 py-3 text-sm font-semibold text-action-800 transition hover:border-action-600 hover:bg-action-50">Results</a>}
             <a href="#resources" className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>Resources</a>
             {faqs.length > 0 && <a href="#faq" className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>FAQ</a>}
           </div>
         </nav>
-
-        <section aria-labelledby="snapshot-heading">
-          <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">At a glance</p>
-              <h2 id="snapshot-heading" className="mt-1 text-xl font-bold text-ink-900">{exam.name} snapshot</h2>
-            </div>
-            {currentCycle && <span className="inline-flex items-center gap-1.5 bg-live-50 px-2.5 py-1.5 text-xs font-semibold text-live-800"><span className="h-1.5 w-1.5 bg-live-600" aria-hidden="true" />Source checked {formatUpdateDate(currentCycle.checkedOn)}</span>}
-          </div>
-          <dl className="grid border-l border-t border-ink-200 sm:grid-cols-2 lg:grid-cols-4">
-            <div className={`border-b border-r border-ink-200 bg-white p-4 ${currentCycle ? 'border-t-4 border-t-action-600' : ''}`}>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-ink-500">Exam cycle</dt>
-              <dd className="mt-2 text-lg font-bold text-ink-900">{currentCycle?.label ?? officialStages[0]?.pattern.cycle ?? 'Official review'}</dd>
-            </div>
-            <div className={`border-b border-r border-ink-200 bg-white p-4 ${currentCycle ? 'border-t-4 border-t-live-600' : ''}`}>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-ink-500">{currentCycle ? 'Current stage' : 'First listed test group'}</dt>
-              <dd className="mt-2 text-lg font-bold text-ink-900">{currentCycle?.currentStage ?? exam.stages[0]?.name}</dd>
-            </div>
-            <div className={`border-b border-r border-ink-200 bg-white p-4 ${currentCycle ? 'border-t-4 border-t-attention-600' : ''}`}>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-ink-500">Verified test patterns</dt>
-              <dd className="mt-2 text-lg font-bold text-ink-900">{officialStages.length} of {exam.stages.length} groups</dd>
-            </div>
-            <div className={`border-b border-r border-ink-200 bg-white p-4 ${currentCycle ? 'border-t-4 border-t-action-600' : ''}`}>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-ink-500">Practice available</dt>
-              <dd className="mt-2 text-lg font-bold text-ink-900">{checkedTestCount} checked tests</dd>
-            </div>
-          </dl>
-        </section>
 
         {currentCycle && (
           <>
