@@ -1,0 +1,30 @@
+name: Debug IISER Build
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: python scripts/coding-agent-iiser.py
+      - run: python scripts/coding-agent-iiser-fix.py
+      - run: npm ci
+      - name: Capture build
+        shell: bash
+        run: |
+          set +e
+          npm run build > coding-iiser-build.txt 2>&1
+          code=$?
+          tail -n 120 coding-iiser-build.txt
+          git config user.name 'TakeMockTest Coding Agent'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -f coding-iiser-build.txt
+          git commit -m 'Capture IISER build output'
+          git push
+          exit $code
