@@ -1,0 +1,31 @@
+name: Debug IISER TSC
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: python scripts/coding-agent-iiser.py
+      - run: npm ci
+      - name: Capture typecheck
+        shell: bash
+        run: |
+          set +e
+          npx tsc --noEmit > coding-iiser-tsc.log 2>&1
+          code=$?
+          cat coding-iiser-tsc.log
+          if [ $code -ne 0 ]; then
+            git config user.name 'TakeMockTest Coding Agent'
+            git config user.email 'actions@users.noreply.github.com'
+            git add coding-iiser-tsc.log
+            git commit -m 'Capture IISER typecheck failure'
+            git push
+            exit $code
+          fi
