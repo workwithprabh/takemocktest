@@ -63,15 +63,23 @@ jobs:
           python scripts/coding-agent-iiser-fix.py
           git diff --exit-code -- src/lib/question-banks/iiser-iat-2026-biology-1.ts src/lib/question-banks/iiser-iat-2026-chemistry-1.ts src/lib/question-banks/iiser-iat-2026-mathematics-1.ts src/lib/question-banks/iiser-iat-2026-physics-1.ts
 
-      - name: Start production server for runtime smoke
+      - name: Start production server
         shell: bash
         run: |
-          nohup npm start -- -p 3100 >/tmp/iiser-runtime.log 2>&1 &
+          nohup npx next start -p 3100 >/tmp/iiser-runtime.log 2>&1 &
           echo $! >/tmp/iiser-runtime.pid
           for i in {1..60}; do
-            if curl -fsS http://127.0.0.1:3100/in/iiser-iat/mock-test >/tmp/iiser-mock.html; then exit 0; fi
+            if curl -fsS http://127.0.0.1:3100/ >/tmp/iiser-root.html; then
+              exit 0
+            fi
+            if ! kill -0 "$(cat /tmp/iiser-runtime.pid)" 2>/dev/null; then
+              echo 'Next.js production server exited before readiness.'
+              cat /tmp/iiser-runtime.log
+              exit 1
+            fi
             sleep 1
           done
+          echo 'Next.js production server did not become ready.'
           cat /tmp/iiser-runtime.log
           exit 1
 
