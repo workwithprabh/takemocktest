@@ -1,0 +1,111 @@
+name: TakeMockTest Batch 02 Coding
+
+on:
+  push:
+    branches:
+      - agent/p2-batch02-coding
+
+permissions:
+  contents: write
+
+jobs:
+  integrate-and-qa:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Unpack staged coding payload
+        run: |
+          base64 -d scripts/batch02-payload.b64 > /tmp/batch02-payload.tar.gz
+          tar -xzf /tmp/batch02-payload.tar.gz
+          rm -f scripts/batch02-payload.b64
+      - name: Install
+        run: npm ci
+      - name: Apply AILET LL.M.
+        run: |
+          git fetch origin main
+          echo "AILET current main: $(git rev-parse origin/main)"
+          node scripts/apply-batch02-coding.mjs AILET
+          npx tsc --noEmit
+          npm run qa:questions
+          node scripts/check-batch02-products.mjs AILET
+      - name: Apply SLAT 2026
+        run: |
+          git fetch origin main
+          echo "SLAT current main: $(git rev-parse origin/main)"
+          node scripts/apply-batch02-coding.mjs SLAT
+          npx tsc --noEmit
+          npm run qa:questions
+          node scripts/check-batch02-products.mjs SLAT
+      - name: Apply JIPMAT 2026
+        run: |
+          git fetch origin main
+          echo "JIPMAT current main: $(git rev-parse origin/main)"
+          node scripts/apply-batch02-coding.mjs JIPMAT
+          npx tsc --noEmit
+          npm run qa:questions
+          node scripts/check-batch02-products.mjs JIPMAT
+      - name: Apply ICAR AIEEA PG Agronomy
+        run: |
+          git fetch origin main
+          echo "ICAR current main: $(git rev-parse origin/main)"
+          node scripts/apply-batch02-coding.mjs ICAR
+          npx tsc --noEmit
+          npm run qa:questions
+          node scripts/check-batch02-products.mjs ICAR
+      - name: Collision refresh and question recheck
+        run: |
+          npm run collision-reference
+          npm run qa:questions
+          node scripts/check-batch02-products.mjs ALL
+      - name: Lint
+        run: npm run lint
+      - name: Assets
+        run: npm run qa:assets
+      - name: Build
+        run: npm run build
+      - name: On-page SEO
+        run: npm run qa:onpage-seo
+      - name: Full site QA
+        run: npm run qa:site
+      - name: Capture QA report
+        run: |
+          mkdir -p /tmp/tmt-batch02
+          {
+            echo "Pipeline V2 Batch 02 Coding QA PASS"
+            echo "Branch: $GITHUB_REF_NAME"
+            echo "Workflow source commit: $GITHUB_SHA"
+            echo "Current main: $(git rev-parse origin/main)"
+            echo "Resulting tree before commit:"
+            git status --short
+            echo
+            echo "Collision reference:"
+            node -e "const x=require('./TAKEMOCKTEST_COLLISION_REFERENCE.json'); console.log(JSON.stringify({generatedAt:x.generatedAt,corpus:x.corpus},null,2))"
+          } > /tmp/tmt-batch02/QA_REPORT.txt
+          cp /tmp/tmt-batch02/QA_REPORT.txt CODING_BATCH02_QA_REPORT.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: takemocktest-batch02-coding-qa
+          path: /tmp/tmt-batch02/QA_REPORT.txt
+      - name: Remove temporary coding runner
+        run: |
+          rm -f scripts/apply-batch02-coding.mjs
+          rm -f scripts/check-batch02-products.mjs
+          rm -f scripts/batch02-approved-ledgers.json
+          rm -f .github/workflows/tmt-batch02-coding.yml
+          rm -f scripts/batch02-payload.b64
+      - name: Commit verified integration
+        run: |
+          git config user.name "TakeMockTest Coding Agent"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Integrate Pipeline V2 Batch 02 approved mocks"
+          git push origin HEAD:${GITHUB_REF_NAME}
