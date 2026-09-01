@@ -36,10 +36,12 @@ export default function ExamCategoryCard({
   category,
   country,
   headingLevel = 'h3',
+  compact = false,
 }: {
   category: ExamCatalogCategory;
   country: string;
   headingLevel?: 'h2' | 'h3';
+  compact?: boolean;
 }) {
   const examples = category.groups.flatMap((group) => group.exams).slice(0, 3);
   const Heading = headingLevel;
@@ -47,22 +49,26 @@ export default function ExamCategoryCard({
   return (
     <Link
       href={`/${country}/exams/${category.slug}`}
-      className="group flex min-h-64 flex-col border border-ink-200 bg-white p-5 transition hover:-translate-y-1 hover:border-ink-300 hover:shadow-xl hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
+      className={`group flex flex-col border border-ink-200 bg-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900 ${compact ? 'min-h-32 gap-3 p-4 hover:border-action-600 hover:bg-action-50/40' : 'min-h-64 p-5 hover:-translate-y-1 hover:border-ink-300 hover:shadow-xl hover:shadow-ink-900/10'}`}
     >
-      <div className={`mb-5 flex h-12 w-12 items-center justify-center border ${TONES[category.tone]}`}>
+      <div className={`flex items-center justify-center border ${TONES[category.tone]} ${compact ? 'h-9 w-9' : 'mb-5 h-12 w-12'}`}>
         <CategoryIcon name={category.icon} />
       </div>
-      <Heading className="mb-2 text-lg font-bold text-ink-900">{category.name}</Heading>
-      <p className="mb-4 text-sm leading-6 text-ink-500">{category.description}</p>
-      <div className="mb-5 flex flex-wrap gap-1.5">
-        {examples.map((item) => (
-          <span key={item.name} className="bg-ink-100 px-2 py-1 text-xs font-medium text-ink-700">{item.name}</span>
-        ))}
-      </div>
-      <div className="mt-auto flex items-center justify-between border-t border-ink-100 pt-4">
-        <span className="text-xs font-semibold text-ink-500">{getCategoryExamCount(category)} exams listed</span>
-        <span className="text-sm font-semibold text-ink-900 transition group-hover:translate-x-0.5" aria-hidden="true">→</span>
-      </div>
+      <Heading className={compact ? 'text-sm font-semibold leading-5 text-ink-900 group-hover:underline' : 'mb-2 text-lg font-bold text-ink-900'}>{category.name}</Heading>
+      {!compact && (
+        <>
+          <p className="mb-4 text-sm leading-6 text-ink-500">{category.description}</p>
+          <div className="mb-5 flex flex-wrap gap-1.5">
+            {examples.map((item) => (
+              <span key={item.name} className="bg-ink-100 px-2 py-1 text-xs font-medium text-ink-700">{item.name}</span>
+            ))}
+          </div>
+          <div className="mt-auto flex items-center justify-between border-t border-ink-100 pt-4">
+            <span className="text-xs font-semibold text-ink-500">{getCategoryExamCount(category)} exams listed</span>
+            <span className="text-sm font-semibold text-ink-900 transition group-hover:translate-x-0.5" aria-hidden="true">→</span>
+          </div>
+        </>
+      )}
     </Link>
   );
 }

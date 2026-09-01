@@ -2,30 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
-import HeroQuestionPreview from '@/components/HeroQuestionPreview';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
-import { CATALOG_EXAM_COUNT, EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
+import { EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
-import { getQuestionsForTest } from '@/lib/questions';
 import { pageMetadata } from '@/lib/metadata';
 
-const previewQuestion = getQuestionsForTest('ssc-cgl', 'tier-1-quantitative-aptitude-sectional-1')[0];
-const checkedTestCount = EXAM_LIST.reduce((total, exam) => total + getCheckedTestCount(exam), 0);
-const checkedExamCount = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0).length;
 const examSuggestions = Array.from(new Map(
   EXAM_CATEGORIES.flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
 ).values());
-const featuredExams = EXAM_LIST.slice(0, 6);
+const featuredExams = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0).slice(0, 6);
 
-// TODO: Add a student counter only after verified analytics data is available.
-const TRUST_METRICS = [
-  { value: checkedTestCount, label: `Syllabus-checked test${checkedTestCount === 1 ? '' : 's'}`, detail: `Across ${checkedExamCount} live exam${checkedExamCount === 1 ? '' : 's'}` },
-  { value: checkedExamCount, label: 'Checked exam series', detail: 'Every listed exam is fully verified' },
-  { value: CATALOG_EXAM_COUNT, label: 'Exam pathways listed', detail: 'Organized by student goal' },
-  { value: '₹0', label: 'Cost to start', detail: 'No account required' },
-];
-
+// TODO: Add student feedback only when real, permissioned feedback is available.
 export function generateStaticParams() {
   return COUNTRIES.map((country) => ({ country }));
 }
@@ -40,9 +28,8 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
 }
 
 const TRUST_POINTS = [
-  'Checked tests use original questions mapped to the latest official syllabus, with a source link and review date.',
-  'Every listed test matches its official exam pattern for section split, question count, and marking. No filler content.',
-  'A test is counted as checked only after its question count, scoring, explanations, and source record pass validation.',
+  'Check each test’s source references and review status before starting.',
+  'Review the scoring rules before you start, and answer explanations after you finish.',
 ];
 
 const FAQS = [
@@ -63,206 +50,140 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         dangerouslySetInnerHTML={{ __html: jsonLdHtml([organizationSchema(), websiteSchema(), faqPageSchema(FAQS)]) }}
       />
 
-      <div className="overflow-hidden bg-gradient-to-br from-ink-50 via-white to-action-50">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[0.92fr_1.08fr] md:items-center md:py-20">
+      <section aria-labelledby="home-heading" className="border-b border-ink-200 bg-gradient-to-br from-ink-50 via-white to-action-50">
+        <div className="mx-auto grid max-w-6xl gap-6 px-5 py-7 md:py-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-12 lg:py-12">
           <div>
-            <div className="mb-5 inline-flex items-center gap-2 border border-action-100 bg-action-50 px-3 py-2 text-xs font-semibold text-action-700">
-              <span className="h-2 w-2 bg-action-600" aria-hidden="true" />
-              Free practice · No sign-up
-            </div>
-            <h1 className="mb-5 max-w-xl font-sans text-4xl font-bold leading-[1.08] tracking-[-0.035em] text-ink-900 md:text-6xl">
-              Your exam prep starts with the right mock test
+            <h1 id="home-heading" className="max-w-xl text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-ink-900 md:text-5xl">
+              Find your next mock test
             </h1>
-            <p className="mb-7 max-w-xl text-base leading-7 text-ink-500 md:text-lg">
-              Find the right exam pathway, attempt available mock tests, and understand every section with instant results.
+            <p className="mt-3 max-w-lg text-base leading-6 text-ink-600">
+              Choose your exam, practice at your pace, and review your answers.
             </p>
-            <a
-              href="#exams"
-              className="inline-flex min-h-12 items-center gap-3 bg-ink-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-ink-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
-            >
-              Start practicing free <span aria-hidden="true">→</span>
-            </a>
-            <p className="mt-4 text-xs text-ink-500">Free to attempt · No login required</p>
-          </div>
-
-          <div className="relative">
-            <div className="relative aspect-[16/10] overflow-hidden border border-ink-200 bg-ink-100 shadow-2xl shadow-ink-900/10 md:aspect-[4/3]">
-              <Image
-                src="/images/students-taking-online-mock-test.webp"
-                alt="Two Indian students practicing a competitive-exam mock test with a laptop and OMR sheet"
-                fill
-                priority
-                sizes="(min-width: 768px) 52vw, 100vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-900/45 to-transparent" aria-hidden="true" />
-              <div className="absolute bottom-4 left-4 border border-white/60 bg-white px-3 py-2 text-xs font-semibold text-ink-900 shadow-lg">
-                Real questions · Instant results
-              </div>
-            </div>
-
-            <HeroQuestionPreview question={previewQuestion} country={country} />
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-6xl px-5 pb-12 pt-12 md:pb-20 md:pt-24">
-        <section id="exams" aria-labelledby="exam-finder-heading" className="mb-14 scroll-mt-20 md:mb-20">
-          <div className="bg-ink-900 px-5 py-7 text-white md:px-8 md:py-9">
-            <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-end">
-              <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">
-                  {checkedExamCount} exam series available
-                </p>
-                <h2 id="exam-finder-heading" className="font-sans text-2xl font-bold md:text-3xl">Search your mock test</h2>
-                <p className="mt-2 max-w-md text-sm leading-6 text-ink-300">
-                  Search by exam name, or start with one of the popular series below.
-                </p>
-              </div>
-              <form action={`/${country}/exams`} className="flex flex-col gap-2 sm:flex-row">
-                <label className="sr-only" htmlFor="homepage-exam-search">Search mock tests by exam name</label>
+            <form action={`/${country}/exams`} role="search" aria-label="Find a mock test" className="mt-6">
+              <label className="mb-2 block text-sm font-semibold text-ink-900" htmlFor="homepage-exam-search">Search your mock test</label>
+              <div className="flex gap-2">
                 <input
                   id="homepage-exam-search"
                   name="q"
                   type="search"
                   list="available-exam-suggestions"
                   autoComplete="off"
-                  placeholder="Try SSC CGL, SBI Clerk, RRB NTPC..."
-                  className="min-h-12 flex-1 border border-ink-600 bg-white px-4 text-sm text-ink-900 outline-none placeholder:text-ink-500 focus:border-white focus:ring-1 focus:ring-white"
+                  placeholder="Try SSC CGL, JEE, IELTS..."
+                  className="min-h-12 min-w-0 flex-1 border border-ink-300 bg-white px-3 text-base text-ink-900 placeholder:text-ink-500 focus:border-action-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-action-700"
                 />
                 <datalist id="available-exam-suggestions">
                   {examSuggestions.map((exam) => (
                     <option key={exam.name} value={exam.name} label={exam.liveSlug ? 'Mock test available' : 'Listed — coming soon'} />
                   ))}
                 </datalist>
-                <button type="submit" className="min-h-12 bg-white px-6 text-sm font-semibold text-ink-900 transition hover:bg-ink-100">
+                <button type="submit" className="min-h-12 shrink-0 bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900">
                   Find test
                 </button>
-              </form>
-            </div>
+              </div>
+              <p className="mt-3 text-xs font-medium text-ink-600">Free practice · No sign-up</p>
+            </form>
           </div>
 
-          <div className="border border-t-0 border-ink-200 bg-white p-5 md:p-7">
-            <div className="mb-5 flex items-end justify-between gap-4">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Popular starting points</p>
-                <p className="mt-1 text-sm text-ink-500">Every series below is free and syllabus-checked.</p>
-              </div>
-              <Link href={`/${country}/exams?availability=available`} className="hidden text-sm font-semibold text-ink-900 hover:underline sm:inline-flex">
-                View all {checkedExamCount} series <span className="ml-2" aria-hidden="true">→</span>
-              </Link>
+          <div className="relative">
+            <div className="relative aspect-[2.4/1] overflow-hidden border border-ink-200 bg-ink-100 lg:aspect-[4/3]">
+              <Image
+                src="/images/students-taking-online-mock-test.webp"
+                alt="Two Indian students practicing a competitive-exam mock test with a laptop and OMR sheet"
+                fill
+                priority
+                sizes="(min-width: 1152px) 490px, (min-width: 1024px) 45vw, 100vw"
+                className="object-cover object-[center_40%]"
+              />
             </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {featuredExams.map((exam) => (
-                <ExamCard key={exam.slug} exam={exam} country={country} />
-              ))}
-            </div>
-            <Link
-              href={`/${country}/exams?availability=available`}
-              className="mt-5 flex min-h-12 items-center justify-center border border-ink-200 px-4 text-sm font-semibold text-ink-900 sm:hidden"
-            >
-              View all {checkedExamCount} exam series
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-6xl space-y-10 px-5 py-8 md:space-y-14 md:py-12">
+        <section id="exams" aria-labelledby="popular-tests-heading" className="scroll-mt-24">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+            <h2 id="popular-tests-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Popular mock tests</h2>
+            <Link href={`/${country}/exams?availability=available`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+              View all tests <span aria-hidden="true">→</span>
             </Link>
           </div>
-        </section>
-
-        <section aria-label="What is available today" className="mb-14 border border-ink-200 bg-white md:mb-20">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4">
-            {TRUST_METRICS.map((metric) => (
-              <div key={metric.label} className="border-b border-ink-200 px-5 py-5 last:border-b-0 sm:border-b-0 sm:border-r sm:last:border-r-0 md:px-7 md:py-6">
-                <div className="mb-1 text-3xl font-bold tracking-tight text-ink-900">{metric.value}</div>
-                <div className="text-sm font-semibold text-ink-900">{metric.label}</div>
-                <div className="mt-1 text-xs text-ink-500">{metric.detail}</div>
-              </div>
+          <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredExams.map((exam) => (
+              <ExamCard key={exam.slug} exam={exam} country={country} />
             ))}
           </div>
-          <p className="border-t border-ink-200 bg-ink-50 px-5 py-2.5 text-xs text-ink-500 md:px-7">
-            Checked-test counts update only after a test passes the validation gate.
-          </p>
         </section>
 
-        <section id="exam-categories" className="mb-20 scroll-mt-20">
-          <div className="mb-7 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-            <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Explore by goal</p>
-              <h2 className="font-sans text-2xl font-bold text-ink-900 md:text-3xl">What are you preparing for?</h2>
-            </div>
-            <Link href={`/${country}/exams`} className="inline-flex items-center gap-2 text-sm font-semibold text-ink-900 hover:underline">
-              Browse all {CATALOG_EXAM_COUNT} exams <span aria-hidden="true">→</span>
+        <section id="exam-categories" aria-labelledby="exam-categories-heading" className="scroll-mt-24">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+            <h2 id="exam-categories-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Browse by goal</h2>
+            <Link href={`/${country}/exams`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+              All categories <span aria-hidden="true">→</span>
             </Link>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
             {FEATURED_EXAM_CATEGORIES.map((category) => (
-              <ExamCategoryCard key={category.slug} category={category} country={country} />
+              <ExamCategoryCard key={category.slug} category={category} country={country} compact />
             ))}
           </div>
         </section>
 
         {latestUpdates.length > 0 && (
-          <section className="mb-20" aria-labelledby="latest-updates-heading">
-            <div className="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-              <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Verified at the official source</p>
-                <h2 id="latest-updates-heading" className="font-sans text-2xl font-bold text-ink-900 md:text-3xl">Latest exam updates</h2>
-                <p className="mt-2 max-w-2xl text-sm leading-6 text-ink-500">Important notices connected to the exam page and practice resource you need next.</p>
-              </div>
-              <Link href={`/${country}/exam-updates`} className="text-sm font-semibold text-ink-900 hover:underline">View all updates</Link>
+          <section aria-labelledby="latest-updates-heading">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+              <h2 id="latest-updates-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Latest exam updates</h2>
+              <Link href={`/${country}/exam-updates`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+                View all updates <span aria-hidden="true">→</span>
+              </Link>
             </div>
             <div className="divide-y divide-ink-200 border border-ink-200 bg-white">
-              {latestUpdates.map((update) => (
+              {latestUpdates.map((update, index) => (
                 <Link
                   key={update.slug}
                   href={`/${country}/exam-updates/${update.slug}`}
-                  className="group grid gap-3 px-4 py-4 transition hover:bg-ink-50 sm:grid-cols-[105px_1fr_auto] sm:items-center sm:px-5"
+                  className={`group items-center gap-4 p-4 transition hover:bg-action-50/40 focus-visible:relative focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700 ${index >= 3 ? 'hidden md:flex' : 'flex'}`}
                 >
-                  <time dateTime={update.publishedAt} className="text-xs font-semibold text-ink-500">{formatUpdateDate(update.publishedAt)}</time>
-                  <span>
-                    <span className="mb-1.5 flex flex-wrap items-center gap-2">
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1">
                       <span className={`px-2 py-1 text-[10px] font-semibold ${UPDATE_CATEGORY_STYLES[update.category]}`}>{update.category}</span>
-                      <span className="text-xs font-semibold text-ink-700">{update.examName}</span>
-                    </span>
+                      <time dateTime={update.publishedAt} className="text-xs text-ink-600">{formatUpdateDate(update.publishedAt)}</time>
+                    </div>
                     <span className="block text-sm font-semibold leading-5 text-ink-900 group-hover:underline">{update.headline}</span>
-                    <span className="mt-1 block text-xs text-ink-500">Source: {update.sourceName}</span>
-                  </span>
-                  <span className="hidden h-9 w-9 items-center justify-center bg-ink-900 text-white sm:flex" aria-hidden="true">→</span>
+                    <span className="mt-1.5 block text-xs text-ink-600">Source: {update.sourceName}</span>
+                  </div>
+                  <span className="shrink-0 text-lg text-action-700" aria-hidden="true">→</span>
                 </Link>
               ))}
             </div>
           </section>
         )}
 
-        <div className="mb-20 grid gap-7 bg-ink-900 px-6 py-8 text-white md:grid-cols-[0.8fr_1.2fr] md:gap-12 md:px-10 md:py-10">
-          <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">Trust and transparency</p>
-            <h2 className="font-sans text-2xl font-bold">How TakeMockTest questions are made</h2>
+        <section aria-labelledby="trust-heading" className="border-l-2 border-action-600 bg-action-50 px-5 py-5 md:flex md:items-start md:gap-8 md:p-6">
+          <div className="md:w-1/3 md:shrink-0">
+            <h2 id="trust-heading" className="text-lg font-bold text-ink-900">Know what you’re practicing</h2>
+            <Link href={`/${country}/about`} className="mt-1 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline underline-offset-4">
+              How we make our tests <span aria-hidden="true">→</span>
+            </Link>
           </div>
-          <ul className="space-y-4">
-            {TRUST_POINTS.map((point) => (
-              <li key={point} className="flex gap-3 text-sm leading-6 text-ink-200">
-                <span className="mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center border border-ink-400 text-[11px] font-bold text-white" aria-hidden="true">
-                  ✓
-                </span>
-                <span>{point}</span>
-              </li>
-            ))}
+          <ul className="list-disc space-y-2 pl-4 text-sm leading-6 text-ink-700">
+            {TRUST_POINTS.map((point) => <li key={point}>{point}</li>)}
           </ul>
-        </div>
+        </section>
 
-        <div className="mb-6">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Need to know</p>
-          <h2 className="font-sans text-2xl font-bold text-ink-900">Frequently asked questions</h2>
-        </div>
-        <div className="border border-ink-200 bg-white">
-          {FAQS.map((faq) => (
-            <details key={faq.q} className="group border-b border-ink-200 p-5 last:border-b-0">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-semibold text-ink-900">
-                {faq.q}
-                <span className="text-xl font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
-              </summary>
-              <p className="mt-3 max-w-3xl text-sm leading-6 text-ink-500">{faq.a}</p>
-            </details>
-          ))}
-        </div>
+        <section aria-labelledby="faq-heading">
+          <h2 id="faq-heading" className="mb-4 text-xl font-bold text-ink-900 md:text-2xl">Frequently asked questions</h2>
+          <div className="border border-ink-200 bg-white">
+            {FAQS.map((faq) => (
+              <details key={faq.q} className="group border-b border-ink-200 last:border-b-0">
+                <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold text-ink-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700">
+                  {faq.q}
+                  <span className="text-xl font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
+                </summary>
+                <p className="max-w-3xl px-4 pb-4 text-sm leading-6 text-ink-600">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
