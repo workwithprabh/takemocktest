@@ -1,0 +1,30 @@
+name: Inspect Batch02 Payload
+on:
+  push:
+    branches: [main]
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - name: Inspect staged payload
+        shell: bash
+        run: |
+          git fetch origin agent/p2-batch02-coding-v2
+          for group in payload tail; do
+            git ls-tree -r --name-only origin/agent/p2-batch02-coding-v2 | grep "scripts/batch02-$group.part" | sort | while read f; do git show origin/agent/p2-batch02-coding-v2:"$f"; done > /tmp/$group.b64
+            base64 -d /tmp/$group.b64 > /tmp/$group.bin
+            echo "=== $group ==="
+            file /tmp/$group.bin
+            python - <<PY
+import gzip, pathlib
+p=pathlib.Path('/tmp/$group.bin')
+try:
+ d=gzip.decompress(p.read_bytes())
+ print('decompressed bytes',len(d))
+ print(d[:4000].decode('utf-8','replace'))
+except Exception as e: print('gzip error',e)
+PY
+          done
+          exit 1
