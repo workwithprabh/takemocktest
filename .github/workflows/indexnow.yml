@@ -1,0 +1,36 @@
+name: Submit sitemap to IndexNow
+
+# Runs from GitHub's network deliberately — the coding-agent sandbox that
+# ships most changes to this repo has its outbound network egress blocked
+# for external domains (including api.indexnow.org), so the actual
+# submission has to happen here, not from a local dev/agent run.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (generates out/sitemap.xml)
+        run: npm run build
+
+      - name: Submit sitemap URLs to IndexNow
+        run: npm run seo:indexnow -- --all

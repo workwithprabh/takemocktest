@@ -12,7 +12,16 @@ const root = process.cwd();
 const publicDir = path.join(root, 'public');
 const srcDir = path.join(root, 'src');
 
-const IGNORED = new Set(['manifest.json', 'robots.txt', 'sitemap.xml', 'llms.txt']);
+const IGNORED = new Set([
+  'manifest.json',
+  'robots.txt',
+  'sitemap.xml',
+  'llms.txt',
+  // IndexNow key file: verified by search engines fetching it directly at
+  // the site root, not by any link from our own HTML. See
+  // scripts/submit-indexnow.mjs, which is the file's only "reference".
+  '5d3651bc7c75f66a65365b1071aa9686.txt',
+]);
 
 function walk(dir) {
   const out = [];
