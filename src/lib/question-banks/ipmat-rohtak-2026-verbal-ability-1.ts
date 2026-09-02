@@ -2,963 +2,963 @@ import type { Question } from '../questions';
 
 export const IPMAT_ROHTAK_2026_VERBAL_ABILITY_1: Question[] = [
   {
-    "id": "ipmat-rohtak-2026-va-001",
+    "id": "ipmat-rohtak-2026-verbal-ability-001",
     "section": "Verbal Ability",
-    "topic": "Subject-verb agreement",
-    "difficulty": "easy",
-    "question": "Choose the grammatically correct sentence.",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "question": "Passage: A city library tested a “quiet first hour” in one reading room. During that hour, staff postponed non-urgent announcements and moved group orientation sessions elsewhere. The rule did not ban conversation entirely; visitors could still ask staff for help and could speak briefly when necessary. After six weeks, surveys showed that regular users valued the predictability more than absolute silence. The library therefore kept the policy but added clearer signs explaining its limited scope. What did regular users value most?",
     "options": [
-      "The list of items have been on the desk.",
-      "The list of items are on the desk.",
-      "The list of items were on the desk.",
-      "The list of items is on the desk."
+      "Absolute silence",
+      "Longer opening hours",
+      "More orientation sessions",
+      "Predictability"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The subject is singular “list,” so the verb should be “is.”",
+    "explanation": "The passage explicitly says regular users valued predictability more than absolute silence.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-002",
+    "id": "ipmat-rohtak-2026-verbal-ability-002",
     "section": "Verbal Ability",
-    "topic": "Tense",
-    "difficulty": "easy",
-    "question": "Choose the sentence that correctly describes an action completed before another past action.",
-    "options": [
-      "She leaves before the meeting started.",
-      "She has left before the meeting started.",
-      "She had left before the meeting started.",
-      "She was leaving before the meeting starts."
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Past perfect “had left” correctly marks the earlier of two past actions.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-003",
-    "section": "Verbal Ability",
-    "topic": "Pronouns",
+    "topic": "Reading Comprehension",
     "difficulty": "medium",
-    "question": "Choose the sentence with clear and correct pronoun reference.",
+    "question": "Passage: A city library tested a “quiet first hour” in one reading room. During that hour, staff postponed non-urgent announcements and moved group orientation sessions elsewhere. The rule did not ban conversation entirely; visitors could still ask staff for help and could speak briefly when necessary. After six weeks, surveys showed that regular users valued the predictability more than absolute silence. The library therefore kept the policy but added clearer signs explaining its limited scope. Which activity was moved elsewhere during the quiet hour?",
     "options": [
-      "Anita told Meera, “I am upset.”",
-      "When Anita met Meera, she said that she was upset.",
-      "After Anita called Meera, this upset her.",
-      "When Anita spoke to Meera, she was upset."
+      "Group orientation sessions",
+      "Emergency announcements",
+      "Individual reading",
+      "Brief questions to staff"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The direct quotation makes the speaker and pronoun reference unambiguous.",
+    "explanation": "Group orientation sessions were relocated.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-004",
+    "id": "ipmat-rohtak-2026-verbal-ability-003",
     "section": "Verbal Ability",
-    "topic": "Parallelism",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "question": "Passage: A city library tested a “quiet first hour” in one reading room. During that hour, staff postponed non-urgent announcements and moved group orientation sessions elsewhere. The rule did not ban conversation entirely; visitors could still ask staff for help and could speak briefly when necessary. After six weeks, surveys showed that regular users valued the predictability more than absolute silence. The library therefore kept the policy but added clearer signs explaining its limited scope. The policy allowed visitors to",
+    "options": [
+      "hold long meetings freely",
+      "play audio without headphones",
+      "ask staff for help when needed",
+      "ignore all signs"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The passage explicitly permits asking staff for help.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-004",
+    "section": "Verbal Ability",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard",
+    "question": "Passage: A city library tested a “quiet first hour” in one reading room. During that hour, staff postponed non-urgent announcements and moved group orientation sessions elsewhere. The rule did not ban conversation entirely; visitors could still ask staff for help and could speak briefly when necessary. After six weeks, surveys showed that regular users valued the predictability more than absolute silence. The library therefore kept the policy but added clearer signs explaining its limited scope. Why were clearer signs added?",
+    "options": [
+      "To advertise a new café",
+      "To prohibit all speaking",
+      "To shorten the quiet hour",
+      "To explain that the policy had a limited rather than absolute scope"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The retained policy needed clearer communication of what it did and did not restrict.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-005",
+    "section": "Verbal Ability",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "question": "Passage: A city library tested a “quiet first hour” in one reading room. During that hour, staff postponed non-urgent announcements and moved group orientation sessions elsewhere. The rule did not ban conversation entirely; visitors could still ask staff for help and could speak briefly when necessary. After six weeks, surveys showed that regular users valued the predictability more than absolute silence. The library therefore kept the policy but added clearer signs explaining its limited scope. Which statement best summarizes the experiment?",
+    "options": [
+      "The library banned conversation throughout the day",
+      "A targeted quiet-period rule was retained after users responded positively to its predictability",
+      "The experiment failed because users demanded total silence",
+      "The library replaced staff assistance with signs"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The summary captures the limited rule, positive response, and retention.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-006",
+    "section": "Verbal Ability",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "question": "Passage: A small manufacturer began publishing a weekly production forecast to its suppliers. The forecast was not a purchase order and carried no guarantee, but it showed likely demand ranges for the next six weeks. Suppliers initially complained that ranges were less convenient than single-number estimates. After several months, however, they adjusted staffing and inventory more cautiously and reported fewer emergency shipments. The manufacturer concluded that openly communicating uncertainty could be more useful than presenting a precise figure that changed repeatedly. What was the forecast explicitly not?",
+    "options": [
+      "A weekly document",
+      "A demand estimate",
+      "A purchase order",
+      "A six-week view"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The passage states that it was not a purchase order.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-007",
+    "section": "Verbal Ability",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "question": "Passage: A small manufacturer began publishing a weekly production forecast to its suppliers. The forecast was not a purchase order and carried no guarantee, but it showed likely demand ranges for the next six weeks. Suppliers initially complained that ranges were less convenient than single-number estimates. After several months, however, they adjusted staffing and inventory more cautiously and reported fewer emergency shipments. The manufacturer concluded that openly communicating uncertainty could be more useful than presenting a precise figure that changed repeatedly. What benefit did suppliers later report?",
+    "options": [
+      "Guaranteed orders",
+      "Higher selling prices",
+      "No need for inventory",
+      "Fewer emergency shipments"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "They reported fewer emergency shipments after adapting to the ranges.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-008",
+    "section": "Verbal Ability",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard",
+    "question": "Passage: A small manufacturer began publishing a weekly production forecast to its suppliers. The forecast was not a purchase order and carried no guarantee, but it showed likely demand ranges for the next six weeks. Suppliers initially complained that ranges were less convenient than single-number estimates. After several months, however, they adjusted staffing and inventory more cautiously and reported fewer emergency shipments. The manufacturer concluded that openly communicating uncertainty could be more useful than presenting a precise figure that changed repeatedly. What broader conclusion did the manufacturer draw?",
+    "options": [
+      "All forecasts should use one number",
+      "Communicating uncertainty can be more useful than unstable false precision",
+      "Suppliers dislike any information about demand",
+      "Purchase orders should never be issued"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The last sentence contrasts useful uncertainty with a precise number that repeatedly changes.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-009",
+    "section": "Verbal Ability",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "question": "Passage: A small manufacturer began publishing a weekly production forecast to its suppliers. The forecast was not a purchase order and carried no guarantee, but it showed likely demand ranges for the next six weeks. Suppliers initially complained that ranges were less convenient than single-number estimates. After several months, however, they adjusted staffing and inventory more cautiously and reported fewer emergency shipments. The manufacturer concluded that openly communicating uncertainty could be more useful than presenting a precise figure that changed repeatedly. Why did suppliers initially dislike demand ranges?",
+    "options": [
+      "Ranges were less convenient than single-number estimates",
+      "They were legally binding",
+      "They covered only one day",
+      "They eliminated staffing decisions"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The passage gives inconvenience relative to single-number estimates as the complaint.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-010",
+    "section": "Verbal Ability",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard",
+    "question": "Passage: A small manufacturer began publishing a weekly production forecast to its suppliers. The forecast was not a purchase order and carried no guarantee, but it showed likely demand ranges for the next six weeks. Suppliers initially complained that ranges were less convenient than single-number estimates. After several months, however, they adjusted staffing and inventory more cautiously and reported fewer emergency shipments. The manufacturer concluded that openly communicating uncertainty could be more useful than presenting a precise figure that changed repeatedly. Which inference is best supported?",
+    "options": [
+      "A wider numerical range always means lower demand",
+      "Emergency shipments are caused only by forecasting",
+      "Suppliers preferred no forecast at all",
+      "The value of a forecast can depend on how honestly it represents uncertainty"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The passage supports calibrated uncertainty, not the absolute claims.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-011",
+    "section": "Verbal Ability",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "question": "Which sentence has correct subject-verb agreement?",
+    "options": [
+      "Each of the reports is complete.",
+      "Each of the reports are complete.",
+      "Each of the report are complete.",
+      "Each reports is complete."
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "“Each” is singular, so it takes “is”.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-012",
+    "section": "Verbal Ability",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "question": "Which sentence correctly uses the past perfect?",
+    "options": [
+      "By the time the bus arrived, we finish breakfast.",
+      "By the time the bus arrived, we had finished breakfast.",
+      "By the time the bus arrived, we have finished breakfast.",
+      "By the time the bus arrives yesterday, we had finish breakfast."
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The earlier past action is expressed with “had finished”.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-013",
+    "section": "Verbal Ability",
+    "topic": "Grammar",
     "difficulty": "medium",
     "question": "Choose the sentence with correct parallel structure.",
     "options": [
-      "The role requires to plan, negotiating, and reports.",
-      "The role requires planning, negotiation, and to report.",
-      "The role requires planning, to negotiate, and reporting.",
-      "The role requires planning, negotiating, and reporting."
+      "The role requires planning, to coordinate and reporting.",
+      "The role requires planning, coordinating and reporting.",
+      "The role requires to plan, coordinating and report.",
+      "The role requires planning, coordinate and to report."
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "All three items are parallel gerunds: planning, negotiating, reporting.",
+    "explanation": "All three items are parallel gerunds.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-005",
+    "id": "ipmat-rohtak-2026-verbal-ability-014",
     "section": "Verbal Ability",
-    "topic": "Modifiers",
+    "topic": "Grammar",
     "difficulty": "medium",
-    "question": "Choose the sentence in which the opening modifier clearly refers to the correct subject.",
+    "question": "Which sentence uses the article correctly?",
     "options": [
-      "Walking through the lobby, the lights were bright.",
-      "Walking through the lobby, the artwork impressed Riya.",
-      "Walking through the lobby, Riya admired the artwork.",
-      "Walking through the lobby, there was artwork everywhere."
+      "She earned a MBA before joining the firm.",
+      "She earned an MBA before joining a firm university.",
+      "She earned an MBA before joining the firm.",
+      "She earned the MBA before joining firm."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Riya is the person doing the walking, so the modifier correctly attaches to “Riya.”",
+    "explanation": "“MBA” begins with a vowel sound, so “an” is appropriate.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-006",
+    "id": "ipmat-rohtak-2026-verbal-ability-015",
     "section": "Verbal Ability",
-    "topic": "Prepositions",
+    "topic": "Grammar",
     "difficulty": "easy",
-    "question": "Choose the best word to complete the sentence: “The committee agreed ___ the revised timeline.”",
+    "question": "Which sentence is correctly punctuated?",
     "options": [
-      "on",
-      "for",
-      "at",
-      "by"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The standard expression is “agree on” a plan or timeline.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-007",
-    "section": "Verbal Ability",
-    "topic": "Articles",
-    "difficulty": "easy",
-    "question": "Choose the correct completion: “He waited for ___ hour before meeting ___ European consultant.”",
-    "options": [
-      "an; an",
-      "a; an",
-      "a; a",
-      "an; a"
+      "After the meeting the team, revised the plan.",
+      "After, the meeting the team revised the plan.",
+      "After the meeting the, team revised the plan.",
+      "After the meeting, the team revised the plan."
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "“Hour” begins with a vowel sound, so it takes “an.” “European” begins with a consonant /y/ sound, so it takes “a.”",
+    "explanation": "An introductory phrase is naturally followed by a comma.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-008",
+    "id": "ipmat-rohtak-2026-verbal-ability-016",
     "section": "Verbal Ability",
-    "topic": "Conjunctions",
+    "topic": "Grammar",
     "difficulty": "medium",
-    "question": "Choose the best connector: “The proposal was ambitious, ___ it remained financially realistic.”",
+    "question": "Which sentence correctly uses “fewer” and “less”?",
     "options": [
-      "because",
-      "unless",
-      "therefore",
-      "yet"
+      "The revised process used less forms and fewer paper.",
+      "The revised process used fewer forms and less paper.",
+      "The revised process used fewer paper and less forms.",
+      "The revised process used less forms and less papers."
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "“Yet” expresses the contrast between ambitious and financially realistic.",
+    "explanation": "“Fewer” modifies countable forms; “less” modifies uncountable paper.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-009",
+    "id": "ipmat-rohtak-2026-verbal-ability-017",
     "section": "Verbal Ability",
-    "topic": "Sentence correction",
+    "topic": "Grammar",
     "difficulty": "medium",
-    "question": "Which revision is best? “Neither the manager nor the analysts was ready to present.”",
+    "question": "Which sentence correctly expresses a condition contrary to present fact?",
     "options": [
-      "Neither the manager nor the analysts were ready to present.",
-      "Neither the manager or the analysts were ready to present.",
-      "Neither the manager nor the analysts is ready to present.",
-      "Neither manager nor analysts was ready to present."
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "With neither/nor, the verb commonly agrees with the nearer subject; “analysts” is plural, so “were.”",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-010",
-    "section": "Verbal Ability",
-    "topic": "Punctuation",
-    "difficulty": "medium",
-    "question": "Choose the correctly punctuated sentence.",
-    "options": [
-      "The report covered three areas, pricing, demand, and retention.",
-      "The report covered three areas pricing; demand; and retention.",
-      "The report covered three areas: pricing, demand, and retention.",
-      "The report covered three areas; pricing, demand, and retention."
+      "If the office was closer, I will walk yesterday.",
+      "If the office is closer, I would walked.",
+      "If the office were closer, I would walk.",
+      "If the office were closer, I will walked."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A colon correctly introduces the list after a complete clause.",
+    "explanation": "Formal hypothetical present uses “were” and “would” + base verb.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-011",
+    "id": "ipmat-rohtak-2026-verbal-ability-018",
     "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
+    "topic": "Grammar",
     "difficulty": "medium",
-    "question": "In the sentence “The director gave a concise summary that omitted every unnecessary detail,” the word “concise” most nearly means:",
+    "question": "Which sentence correctly places the modifier?",
     "options": [
-      "technical",
+      "Walking to the station, the new mural was noticed by Mira.",
+      "Walking to the station, Mira noticed the new mural.",
+      "The new mural, walking to the station, Mira noticed.",
+      "Walking, the station noticed Mira and the mural."
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The opening participial phrase logically modifies Mira.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-019",
+    "section": "Verbal Ability",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "question": "Which sentence correctly uses the comparative form?",
+    "options": [
+      "This route is more shorter than the old one.",
+      "This route is shortest than the old one.",
+      "This route is shorter than the old one.",
+      "This route is short than the old one."
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The comparative of “short” is “shorter”.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-020",
+    "section": "Verbal Ability",
+    "topic": "Grammar",
+    "difficulty": "hard",
+    "question": "Which sentence correctly uses “hardly ... when”?",
+    "options": [
+      "Hardly the presentation had begun than the projector failed.",
+      "Hardly had the presentation begun than the projector failed.",
+      "Hardly did the presentation began when the projector failed.",
+      "Hardly had the presentation begun when the projector failed."
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The standard construction is “Hardly had ... when ...”.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-021",
+    "section": "Verbal Ability",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "question": "The word closest in meaning to “concise” is",
+    "options": [
+      "uncertain",
+      "ornate",
       "brief",
-      "repetitive",
-      "uncertain"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "“Concise” means brief while still expressing the essential points.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-012",
-    "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
-    "difficulty": "medium",
-    "question": "In the sentence “The evidence was compelling enough to change the committee’s view,” “compelling” most nearly means:",
-    "options": [
-      "confusing",
-      "incomplete",
-      "persuasive",
-      "familiar"
+      "delayed"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Here “compelling” means strongly persuasive or convincing.",
+    "explanation": "Concise means brief and to the point.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-013",
+    "id": "ipmat-rohtak-2026-verbal-ability-022",
     "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
+    "topic": "Vocabulary",
     "difficulty": "easy",
-    "question": "In the sentence “The team adopted a pragmatic approach, choosing the option that worked best under current constraints,” “pragmatic” means:",
+    "question": "The word closest in meaning to “mitigate” is",
     "options": [
-      "traditional",
-      "practical",
-      "idealistic",
-      "secretive"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A pragmatic approach is practical and focused on what works.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-014",
-    "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
-    "difficulty": "medium",
-    "question": "In the sentence “The market remained volatile, with prices changing sharply from day to day,” “volatile” means:",
-    "options": [
-      "stable",
-      "regulated",
-      "unpredictable",
-      "profitable"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Volatile describes rapid, unpredictable change.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-015",
-    "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
-    "difficulty": "medium",
-    "question": "In the sentence “Her explanation was plausible, though not yet proven,” “plausible” means:",
-    "options": [
-      "certainly false",
-      "legally binding",
-      "highly detailed",
-      "apparently reasonable"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Plausible means believable or apparently reasonable, without implying proof.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-016",
-    "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
-    "difficulty": "medium",
-    "question": "In the sentence “The policy was revised to mitigate the risk of delayed deliveries,” “mitigate” means:",
-    "options": [
-      "ignore",
-      "reduce",
-      "increase",
-      "measure"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "To mitigate a risk is to lessen or reduce it.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-017",
-    "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
-    "difficulty": "hard",
-    "question": "In the sentence “The consultant’s recommendation was provisional and could change after the audit,” “provisional” most nearly means:",
-    "options": [
-      "expensive",
-      "unanimous",
-      "temporary",
-      "confidential"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Provisional means temporary or subject to later confirmation or change.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-018",
-    "section": "Verbal Ability",
-    "topic": "Vocabulary in context",
-    "difficulty": "hard",
-    "question": "In the sentence “The two reports are broadly consistent, although they diverge on the cause of the decline,” “diverge” means:",
-    "options": [
-      "summarize",
-      "agree completely",
-      "depend",
-      "differ"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "To diverge is to move apart in position or opinion; here the reports differ on the cause.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-019",
-    "section": "Verbal Ability",
-    "topic": "Para-jumble",
-    "difficulty": "medium",
-    "question": "Arrange the sentences into the most logical order. P: The team first mapped the customer journey. Q: It then identified the longest waiting points. R: Finally, it redesigned those steps and tested the changes. S: The project aimed to reduce checkout delays.",
-    "options": [
-      "P-S-R-Q",
-      "Q-P-S-R",
-      "S-P-Q-R",
-      "S-Q-P-R"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "S introduces the aim, P begins the process, Q follows from the mapping, and R gives the final action.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-020",
-    "section": "Verbal Ability",
-    "topic": "Para-jumble",
-    "difficulty": "medium",
-    "question": "Arrange the sentences logically. P: As a result, fewer urgent requests arrived by email. Q: The company published a searchable help centre. R: Before that, basic questions often reached support agents. S: Customers could now find routine answers themselves.",
-    "options": [
-      "Q-S-R-P",
-      "R-S-Q-P",
-      "R-Q-S-P",
-      "Q-R-P-S"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "R establishes the earlier problem, Q introduces the change, S explains its effect on customers, and P gives the resulting reduction in email.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-021",
-    "section": "Verbal Ability",
-    "topic": "Para-jumble",
-    "difficulty": "hard",
-    "question": "Arrange the sentences logically. P: This made comparisons between teams misleading. Q: The analyst therefore converted every figure to the same monthly basis. R: Some teams reported weekly numbers, while others reported monthly totals. S: Only then did the overall pattern become clear.",
-    "options": [
-      "R-P-Q-S",
-      "Q-R-P-S",
-      "P-R-S-Q",
-      "R-Q-P-S"
+      "reduce the severity of",
+      "predict exactly",
+      "make permanent",
+      "ignore completely"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "R states the inconsistency, P explains the problem it caused, Q gives the remedy, and S gives the outcome.",
+    "explanation": "To mitigate is to make something less severe.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-022",
+    "id": "ipmat-rohtak-2026-verbal-ability-023",
     "section": "Verbal Ability",
-    "topic": "Para-jumble",
+    "topic": "Vocabulary",
     "difficulty": "medium",
-    "question": "Arrange the sentences logically. P: The first prototype failed during a heat test. Q: Engineers traced the failure to a weak adhesive. R: They replaced the adhesive and repeated the test. S: The second prototype completed the test successfully.",
+    "question": "The word opposite in meaning to “scarce” is",
     "options": [
-      "R-Q-P-S",
-      "Q-P-S-R",
-      "P-R-Q-S",
-      "P-Q-R-S"
+      "fragile",
+      "costly",
+      "abundant",
+      "hidden"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Scarce means limited; abundant is the antonym.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-024",
+    "section": "Verbal Ability",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "question": "In “The committee reached a unanimous decision,” “unanimous” means",
+    "options": [
+      "agreed by everyone",
+      "made in secret",
+      "reached quickly",
+      "legally binding"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Unanimous means all participants agree.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-025",
+    "section": "Verbal Ability",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "question": "“Pragmatic” most nearly means",
+    "options": [
+      "purely theoretical",
+      "focused on practical results",
+      "deliberately confusing",
+      "unwilling to act"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Pragmatic emphasizes practical consequences and workable action.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-026",
+    "section": "Verbal Ability",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "question": "Choose the correctly spelled word meaning “occurring from time to time.”",
+    "options": [
+      "ocassional",
+      "occasionel",
+      "occasional",
+      "occassional"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "“Occasional” is the correct spelling.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-027",
+    "section": "Verbal Ability",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "question": "The phrase “a double-edged sword” most nearly describes something that",
+    "options": [
+      "is impossible to use",
+      "has both benefits and drawbacks",
+      "has only financial value",
+      "must be kept secret"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The idiom denotes something with both positive and negative effects.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-028",
+    "section": "Verbal Ability",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "question": "In “Her explanation was plausible,” “plausible” means",
+    "options": [
+      "seemingly reasonable",
+      "obviously false",
+      "unnecessarily long",
+      "mathematically exact"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Plausible means believable or apparently reasonable.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-029",
+    "section": "Verbal Ability",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "question": "The antonym of “expand” is",
+    "options": [
+      "explain",
+      "explore",
+      "extend",
+      "contract"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The natural sequence is failure, diagnosis, repair/retest, success.",
+    "explanation": "Contract can mean become smaller, the opposite of expand.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-023",
+    "id": "ipmat-rohtak-2026-verbal-ability-030",
     "section": "Verbal Ability",
-    "topic": "Para-jumble",
+    "topic": "Vocabulary",
     "difficulty": "medium",
-    "question": "Arrange the sentences logically. P: Yet the initial data did not show why. Q: Customer returns had risen for three months. R: Interviews later revealed confusion about sizing. S: The company then rewrote the size guide.",
+    "question": "“Meticulous” most nearly means",
     "options": [
-      "Q-P-R-S",
+      "quick to forget",
+      "unwilling to learn",
+      "very careful about details",
+      "easily distracted"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Meticulous describes great attention to detail.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-031",
+    "section": "Verbal Ability",
+    "topic": "Critical Reasoning",
+    "difficulty": "medium",
+    "question": "Claim: A college should add more bicycle racks because many students currently lock bicycles to railings. Which fact most strengthens the claim?",
+    "options": [
+      "Existing bicycle racks are full on most weekdays.",
+      "The college library bought new chairs.",
+      "Some students own cars.",
+      "Railings were painted last year."
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Full existing racks directly support unmet bicycle-parking demand.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-032",
+    "section": "Verbal Ability",
+    "topic": "Critical Reasoning",
+    "difficulty": "hard",
+    "question": "A company says remote work increased output because monthly output rose after remote work began. Which fact most weakens the causal claim?",
+    "options": [
+      "Employees received new email signatures.",
+      "The company also installed a new automated production system that month.",
+      "The office lease continued.",
+      "Managers held weekly meetings."
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "A simultaneous automation change is a strong alternative cause of higher output.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-033",
+    "section": "Verbal Ability",
+    "topic": "Para Completion",
+    "difficulty": "medium",
+    "question": "“The town planted shade trees along the busiest walking route. Temperatures on the pavement fell during afternoon measurements. ______.” Which sentence best completes the paragraph?",
+    "options": [
+      "Therefore all roads should be closed permanently.",
+      "Trees make nighttime temperatures irrelevant.",
+      "No further measurement is ever needed.",
+      "The result suggests small design changes can improve pedestrian comfort."
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The completion follows cautiously from the described intervention and observation.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-034",
+    "section": "Verbal Ability",
+    "topic": "Para Jumble",
+    "difficulty": "medium",
+    "question": "Arrange the ideas logically: P: The team then tested two prototypes. Q: First, it interviewed users about the problem. R: Finally, it selected the simpler design. S: The project began with a broad question.",
+    "options": [
+      "Q-S-R-P",
       "P-Q-S-R",
-      "Q-R-P-S",
-      "R-Q-P-S"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Q states the problem, P notes the missing explanation, R supplies the cause, and S gives the response.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-024",
-    "section": "Verbal Ability",
-    "topic": "Para-jumble",
-    "difficulty": "hard",
-    "question": "Arrange the sentences logically. P: That distinction changed the team’s decision. Q: At first, the survey seemed to show low demand. R: A closer look revealed that most negative responses came from people outside the target segment. S: Within the target segment, interest was actually high.",
-    "options": [
-      "S-Q-R-P",
-      "Q-S-R-P",
-      "R-Q-P-S",
-      "Q-R-S-P"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Q gives the initial impression, R refines the evidence, S states the corrected target-segment finding, and P gives the consequence.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-025",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - main idea",
-    "difficulty": "medium",
-    "question": "Passage: A clothing brand tested a repair service in two cities. Customers could bring damaged garments to a store, where minor repairs were completed for a small fee. The company expected the service to generate modest direct revenue, but its larger goal was to learn whether repair options affected customer loyalty. After six months, repair users were more likely than similar non-users to make another purchase. However, the trial did not establish whether the repair service itself caused the higher repeat-purchase rate; customers who chose repairs may already have been more attached to the brand. What is the main point of the passage?",
-    "options": [
-      "All customers preferred repair to replacement.",
-      "The trial suggested a link with loyalty but did not prove causation.",
-      "The repair service was highly profitable.",
-      "The company ended the service after six months."
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The passage reports an association between repair use and repeat purchase, while explicitly warning that causation was not established.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-026",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - inference",
-    "difficulty": "hard",
-    "question": "Passage: A clothing brand tested a repair service in two cities. Customers could bring damaged garments to a store, where minor repairs were completed for a small fee. The company expected the service to generate modest direct revenue, but its larger goal was to learn whether repair options affected customer loyalty. After six months, repair users were more likely than similar non-users to make another purchase. However, the trial did not establish whether the repair service itself caused the higher repeat-purchase rate; customers who chose repairs may already have been more attached to the brand. Which inference is most justified?",
-    "options": [
-      "Non-users were prevented from making repeat purchases.",
-      "Repair users definitely became loyal because of the service.",
-      "The service reduced garment prices.",
-      "Pre-existing brand attachment could partly explain the observed difference."
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The final sentence states that repair users may already have been more attached to the brand, which is a possible confounder.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-027",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - detail",
-    "difficulty": "easy",
-    "question": "Passage: A clothing brand tested a repair service in two cities. Customers could bring damaged garments to a store, where minor repairs were completed for a small fee. The company expected the service to generate modest direct revenue, but its larger goal was to learn whether repair options affected customer loyalty. After six months, repair users were more likely than similar non-users to make another purchase. However, the trial did not establish whether the repair service itself caused the higher repeat-purchase rate; customers who chose repairs may already have been more attached to the brand. What was the company’s larger goal in running the trial?",
-    "options": [
-      "To replace all damaged garments for free",
-      "To test whether repair options were associated with customer loyalty",
-      "To eliminate retail stores",
-      "To reduce manufacturing time"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The passage says the larger goal was to learn whether repair options affected customer loyalty.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-028",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - method",
-    "difficulty": "hard",
-    "question": "Passage: A clothing brand tested a repair service in two cities. Customers could bring damaged garments to a store, where minor repairs were completed for a small fee. The company expected the service to generate modest direct revenue, but its larger goal was to learn whether repair options affected customer loyalty. After six months, repair users were more likely than similar non-users to make another purchase. However, the trial did not establish whether the repair service itself caused the higher repeat-purchase rate; customers who chose repairs may already have been more attached to the brand. Which follow-up design would best test whether the repair service itself causes higher repeat purchasing?",
-    "options": [
-      "Randomly offer the repair service to some otherwise similar eligible customers and compare later purchasing",
-      "Compare repair users with all customers in a different country",
-      "Measure repair revenue for another month",
-      "Ask repair users whether they like the brand"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Random assignment best separates the effect of the service from pre-existing customer differences.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-029",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - main idea",
-    "difficulty": "medium",
-    "question": "Passage: A city library noticed that evening study rooms were often full while some daytime rooms remained unused. Instead of simply building more rooms, the library tested a reservation system that released unused bookings after a short grace period. The change increased the number of students who could use the existing rooms in the evening. It also revealed that a small share of users had been reserving rooms far in advance and then not arriving. The library concluded that capacity problems can sometimes be eased by improving allocation before expanding physical space. What central lesson does the passage emphasize?",
-    "options": [
-      "Libraries should close during the day.",
-      "Allocation improvements can sometimes increase effective capacity without adding space.",
-      "Advance reservations should always be banned.",
-      "Study rooms are more important than books."
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The passage concludes that better allocation can ease capacity pressure before physical expansion is necessary.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-030",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - detail",
-    "difficulty": "easy",
-    "question": "Passage: A city library noticed that evening study rooms were often full while some daytime rooms remained unused. Instead of simply building more rooms, the library tested a reservation system that released unused bookings after a short grace period. The change increased the number of students who could use the existing rooms in the evening. It also revealed that a small share of users had been reserving rooms far in advance and then not arriving. The library concluded that capacity problems can sometimes be eased by improving allocation before expanding physical space. What did the reservation system do with unused bookings?",
-    "options": [
-      "Charged a penalty immediately",
-      "Released them after a short grace period",
-      "Converted them into group bookings",
-      "Moved them to daytime"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The passage explicitly says unused bookings were released after a short grace period.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-031",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - inference",
-    "difficulty": "medium",
-    "question": "Passage: A city library noticed that evening study rooms were often full while some daytime rooms remained unused. Instead of simply building more rooms, the library tested a reservation system that released unused bookings after a short grace period. The change increased the number of students who could use the existing rooms in the evening. It also revealed that a small share of users had been reserving rooms far in advance and then not arriving. The library concluded that capacity problems can sometimes be eased by improving allocation before expanding physical space. What problem did the trial uncover?",
-    "options": [
-      "Some users reserved rooms but did not show up.",
-      "Students refused to use reservations.",
-      "Evening users preferred smaller rooms.",
-      "Daytime rooms were permanently closed."
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The trial revealed that some users booked far ahead and then did not arrive.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-032",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - application",
-    "difficulty": "hard",
-    "question": "Passage: A city library noticed that evening study rooms were often full while some daytime rooms remained unused. Instead of simply building more rooms, the library tested a reservation system that released unused bookings after a short grace period. The change increased the number of students who could use the existing rooms in the evening. It also revealed that a small share of users had been reserving rooms far in advance and then not arriving. The library concluded that capacity problems can sometimes be eased by improving allocation before expanding physical space. Which action most closely follows the library’s reasoning in another setting?",
-    "options": [
-      "A clinic first improves scheduling and cancellation handling before adding consultation rooms.",
-      "A clinic reduces all appointment lengths by half.",
-      "A clinic buys a new building before checking appointment no-shows.",
-      "A clinic stops accepting advance appointments."
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The analogous approach is to improve allocation of existing capacity before investing in more physical capacity.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-033",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - main idea",
-    "difficulty": "medium",
-    "question": "Passage: A product team used an automated model to rank feature requests by predicted revenue impact. The model was useful because it processed more historical data than any individual manager could review. Still, the team did not treat the ranking as a final decision. Some high-ranked requests depended on outdated assumptions, while several lower-ranked requests addressed new regulatory requirements absent from the historical data. The team therefore used the model as one input, combining it with current context and human judgment. Which statement best captures the passage?",
-    "options": [
-      "Automated rankings should replace managers.",
-      "Models can inform decisions but may require contextual human review.",
-      "Historical data is useless for product decisions.",
-      "Regulatory requirements can always be predicted from revenue data."
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The passage values the model’s scale while showing why current context and judgment are still needed.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-034",
-    "section": "Verbal Ability",
-    "topic": "Reading comprehension - detail",
-    "difficulty": "easy",
-    "question": "Passage: A product team used an automated model to rank feature requests by predicted revenue impact. The model was useful because it processed more historical data than any individual manager could review. Still, the team did not treat the ranking as a final decision. Some high-ranked requests depended on outdated assumptions, while several lower-ranked requests addressed new regulatory requirements absent from the historical data. The team therefore used the model as one input, combining it with current context and human judgment. Why were some lower-ranked requests important?",
-    "options": [
-      "They were cheaper to build.",
-      "Managers personally preferred them.",
-      "They addressed new regulatory requirements.",
-      "They had the highest historical revenue."
+      "S-Q-P-R",
+      "S-P-Q-R"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The passage states that several lower-ranked requests addressed new regulatory requirements missing from historical data.",
+    "explanation": "A project begins with the question, then user research, prototype testing, and selection.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-035",
+    "id": "ipmat-rohtak-2026-verbal-ability-035",
     "section": "Verbal Ability",
-    "topic": "Reading comprehension - inference",
-    "difficulty": "hard",
-    "question": "Passage: A product team used an automated model to rank feature requests by predicted revenue impact. The model was useful because it processed more historical data than any individual manager could review. Still, the team did not treat the ranking as a final decision. Some high-ranked requests depended on outdated assumptions, while several lower-ranked requests addressed new regulatory requirements absent from the historical data. The team therefore used the model as one input, combining it with current context and human judgment. What limitation of the model is illustrated?",
+    "topic": "Inference",
+    "difficulty": "medium",
+    "question": "A survey found that users who received a reminder were more likely to renew, but reminder recipients had also been selected because they were previously active. What caution is appropriate?",
     "options": [
-      "It cannot process large datasets.",
-      "It always ranks old requests first.",
-      "It cannot estimate revenue impact.",
-      "It may miss important factors not represented in historical data."
+      "The reminder definitely caused every renewal.",
+      "The observed association may partly reflect prior activity rather than the reminder alone.",
+      "Prior activity cannot affect renewal.",
+      "The survey proves reminders are useless."
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Selection on prior activity is a confounder, so causal attribution should be cautious.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-verbal-ability-036",
+    "section": "Verbal Ability",
+    "topic": "Sentence Improvement",
+    "difficulty": "medium",
+    "question": "Choose the best revision: “The manager discussed about the proposal with the team.”",
+    "options": [
+      "The manager discussed about proposal to the team.",
+      "The manager did discussion about the proposal with team.",
+      "The manager discussed on the proposal with the team.",
+      "The manager discussed the proposal with the team."
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The regulatory requirements were absent from the training history, showing that relevant new factors can be missed.",
+    "explanation": "“Discuss” is transitive and does not take “about” before its object.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-036",
+    "id": "ipmat-rohtak-2026-verbal-ability-037",
     "section": "Verbal Ability",
-    "topic": "Reading comprehension - tone",
+    "topic": "Critical Reasoning",
     "difficulty": "medium",
-    "question": "Passage: A product team used an automated model to rank feature requests by predicted revenue impact. The model was useful because it processed more historical data than any individual manager could review. Still, the team did not treat the ranking as a final decision. Some high-ranked requests depended on outdated assumptions, while several lower-ranked requests addressed new regulatory requirements absent from the historical data. The team therefore used the model as one input, combining it with current context and human judgment. The author’s attitude toward the model is best described as:",
+    "question": "A bookstore extends opening hours on Fridays and sees Friday revenue rise. Which comparison would best help assess whether the extra hours caused the rise?",
     "options": [
-      "balanced and conditional",
-      "indifferent",
-      "uncritically enthusiastic",
-      "completely dismissive"
+      "Friday revenue in comparable weeks before the extension, adjusted for major promotions",
+      "The color of the store sign",
+      "Monday weather in another city",
+      "The number of pages in bestselling books"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The model is described as useful, but not sufficient on its own, which is a balanced, conditional view.",
+    "explanation": "A comparable baseline and promotion control are relevant to causal assessment.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-037",
+    "id": "ipmat-rohtak-2026-verbal-ability-038",
     "section": "Verbal Ability",
-    "topic": "Critical verbal reasoning",
-    "difficulty": "hard",
-    "question": "Argument: “Our newsletter open rate rose after we shortened the subject lines, so shorter subject lines caused the improvement.” Which option identifies the main reasoning weakness?",
-    "options": [
-      "It does not state the exact subject-line length.",
-      "It assumes causation from a before-and-after association without ruling out other changes.",
-      "It discusses email rather than social media.",
-      "The argument uses percentages instead of counts."
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A simple before-and-after association does not establish that the subject-line change caused the improvement; other factors may have changed.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-va-038",
-    "section": "Verbal Ability",
-    "topic": "Sentence logic",
+    "topic": "Summary",
     "difficulty": "medium",
-    "question": "Choose the sentence that most logically completes the paragraph: “The pilot store attracted more visitors than expected. However, visitor numbers alone did not show whether the concept was commercially viable. ______”",
+    "question": "A memo argues that fewer meetings can improve focus, but warns that eliminating all synchronous discussion may slow decisions requiring rapid coordination. Which summary is best?",
     "options": [
-      "Therefore, the store removed all price tags.",
-      "The pilot had no need for financial data.",
-      "Therefore, the team also examined conversion rates and average purchase value.",
-      "Visitors always buy something when they enter a store."
+      "All meetings should be abolished.",
+      "More meetings always improve focus.",
+      "Synchronous communication never affects decision speed.",
+      "Reduce unnecessary meetings while retaining synchronous discussion where coordination benefits justify it."
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Commercial viability requires measures beyond footfall, such as conversion and purchase value.",
+    "explanation": "The memo advocates selective reduction, not an absolute ban.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-039",
+    "id": "ipmat-rohtak-2026-verbal-ability-039",
     "section": "Verbal Ability",
-    "topic": "Critical verbal reasoning",
-    "difficulty": "hard",
-    "question": "Which statement most weakens the claim “Employees who attend optional training are promoted more often, so the training causes promotion”?",
+    "topic": "Tone",
+    "difficulty": "medium",
+    "question": "“The proposal is promising, but the evidence is still too limited to justify a company-wide rollout.” The tone is best described as",
     "options": [
-      "Employees who volunteer for training already tend to have higher performance ratings.",
-      "Promotions are announced quarterly.",
-      "The training sessions are held on Fridays.",
-      "The company offers several training topics."
+      "cautiously supportive",
+      "hostile",
+      "celebratory",
+      "indifferent"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Pre-existing higher performance among volunteers provides an alternative explanation for their higher promotion rate.",
+    "explanation": "It recognizes promise while withholding full endorsement pending more evidence.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-va-040",
+    "id": "ipmat-rohtak-2026-verbal-ability-040",
     "section": "Verbal Ability",
-    "topic": "Sentence completion",
-    "difficulty": "medium",
-    "question": "Choose the best completion: “The forecast is useful for planning, but it should be updated regularly because ______.”",
+    "topic": "Argument Structure",
+    "difficulty": "hard",
+    "question": "“Demand rose after the price cut. However, a competitor also closed during the same week. Therefore we cannot attribute the entire rise to price alone.” The final sentence primarily",
     "options": [
-      "older forecasts are legally invalid",
-      "conditions and assumptions can change over time",
-      "planning never requires data",
-      "forecasts are always exact"
+      "limits a causal conclusion by identifying a competing explanation",
+      "restates the price cut as a definition",
+      "claims demand did not rise",
+      "proves the competitor closure had no effect"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Forecasts depend on assumptions and conditions that can change, so regular updating is sensible.",
+    "explanation": "The competitor closure is offered as an alternative explanation, making a single-cause claim unwarranted.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];

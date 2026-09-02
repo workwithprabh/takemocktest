@@ -2,963 +2,963 @@ import type { Question } from '../questions';
 
 export const IPMAT_ROHTAK_2026_LOGICAL_REASONING_1: Question[] = [
   {
-    "id": "ipmat-rohtak-2026-lr-001",
+    "id": "ipmat-rohtak-2026-logical-reasoning-001",
     "section": "Logical Reasoning",
-    "topic": "Ordering",
-    "difficulty": "easy",
-    "question": "Four prototypes P, Q, R and S are reviewed one at a time. Q is reviewed after P but before R, and S is reviewed after R. Which prototype must be reviewed first?",
-    "options": [
-      "R",
-      "P",
-      "Q",
-      "S"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The constraints force P before Q before R before S, so P is first.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-002",
-    "section": "Logical Reasoning",
-    "topic": "Linear arrangement",
+    "topic": "Graph Reasoning",
     "difficulty": "medium",
-    "question": "Five interns J, K, L, M and N sit in a row facing north. L sits in the middle. J sits immediately left of K. N sits at the far right. M sits immediately right of L. Who sits at the far left?",
+    "question": "A lab has five stations P, Q, R, S and T. Direct sample transfers are allowed only P→Q, P→R, Q→S, R→S and S→T. A sample may pass through intermediate stations. From P, which station is not reachable?",
     "options": [
-      "L",
-      "M",
-      "J",
-      "K"
+      "Only Q",
+      "Only R",
+      "None; all four other stations are reachable",
+      "T"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "L=3, M=4 and N=5. The only seats left are 1 and 2, and J must be immediately left of K, so J=1 and K=2.",
+    "explanation": "P reaches Q and R directly, S through either Q or R, and T through S.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-003",
+    "id": "ipmat-rohtak-2026-logical-reasoning-002",
     "section": "Logical Reasoning",
-    "topic": "Direction sense",
-    "difficulty": "easy",
-    "question": "A runner goes 6 km east, turns left and goes 4 km, then turns left and goes 6 km. Where is the runner relative to the starting point?",
-    "options": [
-      "4 km south",
-      "6 km north",
-      "6 km west",
-      "4 km north"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The 6 km east and 6 km west legs cancel, leaving 4 km north.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-004",
-    "section": "Logical Reasoning",
-    "topic": "Family relationships",
+    "topic": "Graph Reasoning",
     "difficulty": "medium",
-    "question": "Meera is the sister of Rohan. Rohan is the father of Dev, and Dev is the brother of Anya. How is Meera related to Anya?",
+    "question": "A lab has five stations P, Q, R, S and T. Direct sample transfers are allowed only P→Q, P→R, Q→S, R→S and S→T. A sample may pass through intermediate stations. Which station can receive a sample directly from both Q and R?",
     "options": [
-      "Aunt",
-      "Sister",
-      "Cousin",
-      "Grandmother"
+      "S",
+      "P",
+      "Q",
+      "T"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Rohan is Anya's father because Dev and Anya are siblings. Meera is Rohan's sister, so Meera is Anya's aunt.",
+    "explanation": "Both Q→S and R→S are allowed direct transfers.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-005",
+    "id": "ipmat-rohtak-2026-logical-reasoning-003",
+    "section": "Logical Reasoning",
+    "topic": "Graph Reasoning",
+    "difficulty": "medium",
+    "question": "A lab has five stations P, Q, R, S and T. Direct sample transfers are allowed only P→Q, P→R, Q→S, R→S and S→T. A sample may pass through intermediate stations. What is the minimum number of transfers needed to move a sample from P to T?",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "A shortest path is P→Q→S→T or P→R→S→T: three transfers.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-004",
+    "section": "Logical Reasoning",
+    "topic": "Graph Reasoning",
+    "difficulty": "medium",
+    "question": "A lab has five stations P, Q, R, S and T. Direct sample transfers are allowed only P→Q, P→R, Q→S, R→S and S→T. A sample may pass through intermediate stations. If the link S→T is unavailable, which station becomes unreachable from P?",
+    "options": [
+      "Q",
+      "R",
+      "S",
+      "T"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "All paths to T end with S→T; the other stations remain reachable.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-005",
+    "section": "Logical Reasoning",
+    "topic": "Graph Reasoning",
+    "difficulty": "hard",
+    "question": "A lab has five stations P, Q, R, S and T. Direct sample transfers are allowed only P→Q, P→R, Q→S, R→S and S→T. A sample may pass through intermediate stations. A new direct link T→P is added. What structural feature is created?",
+    "options": [
+      "A disconnected component",
+      "A directed cycle",
+      "A source with no incoming link",
+      "A graph with no path from T"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "P→Q→S→T→P (and similarly through R) forms a directed cycle.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-006",
+    "section": "Logical Reasoning",
+    "topic": "Scheduling Logic",
+    "difficulty": "medium",
+    "question": "Five tasks—draft, review, budget, pilot and launch—follow these rules: review starts after draft; pilot starts after both review and budget; launch starts after pilot. Draft and budget may start independently. Which task must finish immediately before launch can start?",
+    "options": [
+      "Draft",
+      "Pilot",
+      "Review",
+      "Budget"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The rule directly requires launch after pilot.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-007",
+    "section": "Logical Reasoning",
+    "topic": "Scheduling Logic",
+    "difficulty": "medium",
+    "question": "Five tasks—draft, review, budget, pilot and launch—follow these rules: review starts after draft; pilot starts after both review and budget; launch starts after pilot. Draft and budget may start independently. Which two tasks may begin without waiting for another listed task?",
+    "options": [
+      "Draft and review",
+      "Review and budget",
+      "Budget and pilot",
+      "Draft and budget"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Only draft and budget have no prerequisite stated.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-008",
+    "section": "Logical Reasoning",
+    "topic": "Scheduling Logic",
+    "difficulty": "hard",
+    "question": "Five tasks—draft, review, budget, pilot and launch—follow these rules: review starts after draft; pilot starts after both review and budget; launch starts after pilot. Draft and budget may start independently. If budget is delayed but draft and review finish, which task is blocked next?",
+    "options": [
+      "Draft",
+      "Pilot",
+      "Review",
+      "Launch only"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Pilot requires both review and budget; a delayed budget therefore blocks pilot (and consequently launch).",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-009",
+    "section": "Logical Reasoning",
+    "topic": "Scheduling Logic",
+    "difficulty": "medium",
+    "question": "Five tasks—draft, review, budget, pilot and launch—follow these rules: review starts after draft; pilot starts after both review and budget; launch starts after pilot. Draft and budget may start independently. Which ordering is valid?",
+    "options": [
+      "Budget, Draft, Review, Pilot, Launch",
+      "Draft, Pilot, Review, Budget, Launch",
+      "Review, Draft, Budget, Pilot, Launch",
+      "Draft, Review, Pilot, Budget, Launch"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The valid order respects draft→review, both review & budget→pilot, then pilot→launch.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-010",
+    "section": "Logical Reasoning",
+    "topic": "Scheduling Logic",
+    "difficulty": "hard",
+    "question": "Five tasks—draft, review, budget, pilot and launch—follow these rules: review starts after draft; pilot starts after both review and budget; launch starts after pilot. Draft and budget may start independently. What is the minimum number of prerequisite links that must be completed before pilot can start, counting direct prerequisite relations only?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Pilot has two direct prerequisites: review and budget.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-011",
+    "section": "Logical Reasoning",
+    "topic": "Data Logic",
+    "difficulty": "medium",
+    "question": "Four prototypes W, X, Y and Z were scored on speed and reliability: W=(8,6), X=(6,9), Y=(7,7), Z=(9,5). A prototype dominates another only if it is at least as high on both measures and strictly higher on at least one. Which prototype dominates Y?",
+    "options": [
+      "W",
+      "X",
+      "None",
+      "Z"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Each of W, X and Z is higher on one measure but lower on the other relative to Y.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-012",
+    "section": "Logical Reasoning",
+    "topic": "Data Logic",
+    "difficulty": "medium",
+    "question": "Four prototypes W, X, Y and Z were scored on speed and reliability: W=(8,6), X=(6,9), Y=(7,7), Z=(9,5). A prototype dominates another only if it is at least as high on both measures and strictly higher on at least one. Which prototype has the highest speed score?",
+    "options": [
+      "W",
+      "Z",
+      "X",
+      "Y"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Z has speed 9, the largest.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-013",
+    "section": "Logical Reasoning",
+    "topic": "Data Logic",
+    "difficulty": "medium",
+    "question": "Four prototypes W, X, Y and Z were scored on speed and reliability: W=(8,6), X=(6,9), Y=(7,7), Z=(9,5). A prototype dominates another only if it is at least as high on both measures and strictly higher on at least one. Which prototype has the highest reliability score?",
+    "options": [
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "X has reliability 9, the largest.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-014",
+    "section": "Logical Reasoning",
+    "topic": "Data Logic",
+    "difficulty": "hard",
+    "question": "Four prototypes W, X, Y and Z were scored on speed and reliability: W=(8,6), X=(6,9), Y=(7,7), Z=(9,5). A prototype dominates another only if it is at least as high on both measures and strictly higher on at least one. If a combined score is speed + reliability, which prototype has the highest total?",
+    "options": [
+      "X",
+      "W",
+      "Y",
+      "Z"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Totals are W=14, X=15, Y=14 and Z=14; X is highest.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-015",
+    "section": "Logical Reasoning",
+    "topic": "Data Logic",
+    "difficulty": "medium",
+    "question": "Four prototypes W, X, Y and Z were scored on speed and reliability: W=(8,6), X=(6,9), Y=(7,7), Z=(9,5). A prototype dominates another only if it is at least as high on both measures and strictly higher on at least one. If reliability is weighted twice as much as speed, which prototype has the largest weighted score speed+2×reliability?",
+    "options": [
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Weighted scores: W=20, X=24, Y=21, Z=19; X is largest.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-016",
+    "section": "Logical Reasoning",
+    "topic": "State Transitions",
+    "difficulty": "medium",
+    "question": "A control panel has switches A, B and C, initially all OFF. Command α toggles A and B; command β toggles B and C; command γ toggles A and C. Toggling changes OFF to ON and ON to OFF. Starting from all OFF, after α then β, which switches are ON?",
+    "options": [
+      "A and B only",
+      "B and C only",
+      "A and C only",
+      "All three"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "After α: A,B ON. After β: B turns OFF and C ON, leaving A and C ON.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-017",
+    "section": "Logical Reasoning",
+    "topic": "State Transitions",
+    "difficulty": "medium",
+    "question": "A control panel has switches A, B and C, initially all OFF. Command α toggles A and B; command β toggles B and C; command γ toggles A and C. Toggling changes OFF to ON and ON to OFF. Starting from all OFF, after α then α, the final state is",
+    "options": [
+      "all OFF",
+      "A and B ON",
+      "B and C ON",
+      "A and C ON"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The same two switches are toggled twice, returning to the initial state.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-018",
+    "section": "Logical Reasoning",
+    "topic": "State Transitions",
+    "difficulty": "hard",
+    "question": "A control panel has switches A, B and C, initially all OFF. Command α toggles A and B; command β toggles B and C; command γ toggles A and C. Toggling changes OFF to ON and ON to OFF. Starting from all OFF, after α, β and γ once each, the final state is",
+    "options": [
+      "only A ON",
+      "only B ON",
+      "all ON",
+      "all OFF"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Each switch is toggled exactly twice across α,β,γ, so all return OFF.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-019",
+    "section": "Logical Reasoning",
+    "topic": "State Transitions",
+    "difficulty": "medium",
+    "question": "A control panel has switches A, B and C, initially all OFF. Command α toggles A and B; command β toggles B and C; command γ toggles A and C. Toggling changes OFF to ON and ON to OFF. Starting from all OFF, which single command leaves B OFF?",
+    "options": [
+      "α",
+      "γ",
+      "β",
+      "No command does"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "γ toggles A and C but not B, so B remains OFF.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-020",
+    "section": "Logical Reasoning",
+    "topic": "State Transitions",
+    "difficulty": "hard",
+    "question": "A control panel has switches A, B and C, initially all OFF. Command α toggles A and B; command β toggles B and C; command γ toggles A and C. Toggling changes OFF to ON and ON to OFF. Starting from all OFF, which two-command sequence leaves only A and C ON?",
+    "options": [
+      "α followed by γ",
+      "β followed by γ",
+      "γ followed by γ",
+      "α followed by β"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "αβ leaves A,C ON; αγ leaves B,C ON; βγ leaves A,B ON; γγ returns all OFF.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-021",
+    "section": "Logical Reasoning",
+    "topic": "State Transformation",
+    "difficulty": "medium",
+    "question": "A four-bit display starts as 1011. Operation F flips the first and third bits, counting from the left, and operation R reverses the order of all four bits. What is the display after F followed by R?",
+    "options": [
+      "0001",
+      "0010",
+      "0100",
+      "1000"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Applying F to 1011 flips positions 1 and 3, giving 0001. Reversing 0001 gives 1000.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-022",
+    "section": "Logical Reasoning",
+    "topic": "Directed Networks",
+    "difficulty": "medium",
+    "question": "A one-way shuttle map has links P→Q, P→S, Q→R and S→R. Which stop can be reached from P by two different routes of exactly two links each?",
+    "options": [
+      "Q",
+      "R",
+      "S",
+      "P"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "There are exactly two two-link routes from P to R: P→Q→R and P→S→R. No other listed stop has two such routes.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-023",
+    "section": "Logical Reasoning",
+    "topic": "Letter Logic",
+    "difficulty": "medium",
+    "question": "If each letter in MANGO is shifted one position backward in the alphabet, the code becomes",
+    "options": [
+      "LZNFM",
+      "NBOPH",
+      "LZMGO",
+      "LZMFN"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "M→L, A→Z, N→M, G→F, O→N.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-024",
     "section": "Logical Reasoning",
     "topic": "Syllogism",
     "difficulty": "medium",
-    "question": "Statements: All ceramic cups are reusable. Some reusable items are fragile. No fragile item is metal. Which conclusion is definitely valid?",
+    "question": "All analysts are readers. Some readers are musicians. Which conclusion is definitely valid?",
     "options": [
-      "No ceramic cup is metal",
-      "Some ceramic cups are fragile",
-      "Some reusable items are not metal",
-      "All reusable items are ceramic cups"
+      "Some analysts are musicians",
+      "All musicians are analysts",
+      "Some musicians are readers",
+      "No reader is an analyst"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Some reusable items are fragile, and no fragile item is metal; therefore those reusable items are not metal.",
+    "explanation": "“Some readers are musicians” converts to “some musicians are readers”; no analyst-musician overlap is forced.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-006",
+    "id": "ipmat-rohtak-2026-logical-reasoning-025",
     "section": "Logical Reasoning",
-    "topic": "Set reasoning",
+    "topic": "Syllogism",
     "difficulty": "medium",
-    "question": "Every member of Group X is in Group Y. No member of Group Y is in Group Z. Which statement must be true?",
+    "question": "No ceramic item is flexible. Some prototypes are flexible. What must follow?",
     "options": [
-      "All Z are X",
-      "No X are Z",
-      "Some X are Z",
-      "Some Y are X"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Since X is a subset of Y and Y is disjoint from Z, X must also be disjoint from Z.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-007",
-    "section": "Logical Reasoning",
-    "topic": "Conditional logic",
-    "difficulty": "medium",
-    "question": "A studio rule says: if a design is approved, then its cost sheet is signed. Design D has an unsigned cost sheet. What follows logically?",
-    "options": [
-      "Nothing can be inferred",
-      "D was rejected for cost reasons",
-      "D is not approved",
-      "D is approved"
+      "No prototype is ceramic",
+      "All prototypes are flexible",
+      "Some prototypes are not ceramic",
+      "Some ceramic items are prototypes"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "By contraposition, if the cost sheet is not signed, the design was not approved.",
+    "explanation": "The flexible prototypes cannot be ceramic, so at least some prototypes are not ceramic.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-008",
+    "id": "ipmat-rohtak-2026-logical-reasoning-026",
     "section": "Logical Reasoning",
-    "topic": "Scheduling",
+    "topic": "Direction Sense",
     "difficulty": "medium",
-    "question": "A meeting must be held on one of Monday, Tuesday, Wednesday or Thursday. It cannot be Monday. If it is Wednesday, Priya cannot attend. Priya must attend. Thursday is already booked. On which day must the meeting be held?",
+    "question": "Kavya walks 4 km south, 7 km east, 1 km north and 3 km west. Her final position from the start is",
     "options": [
-      "Thursday",
-      "Tuesday",
-      "Wednesday",
-      "Monday"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Monday is excluded, Wednesday would exclude required attendee Priya, and Thursday is booked. Tuesday remains.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-009",
-    "section": "Logical Reasoning",
-    "topic": "Coding rule",
-    "difficulty": "medium",
-    "question": "A label code is made by writing the last letter of a word first, then the first letter, then the remaining letters in their original order. Under this rule, how is MANGO coded?",
-    "options": [
-      "OGMAN",
-      "OMANG",
-      "OMAGN",
-      "OAMNG"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "MANGO → last O, first M, then remaining A N G: OMANG.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-010",
-    "section": "Logical Reasoning",
-    "topic": "Number pattern",
-    "difficulty": "medium",
-    "question": "Which number should come next in the sequence 12, 19, 31, 50, 78, 117, ...?",
-    "options": [
-      "169",
-      "165",
-      "171",
-      "175"
+      "4 km east and 3 km south",
+      "3 km east and 4 km south",
+      "4 km west and 3 km north",
+      "10 km east and 5 km south"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The successive increases are 7, 12, 19, 28 and 39. These are 2²+3, 3²+3, 4²+3, 5²+3 and 6²+3. The next increase is 7²+3=52, so the next term is 117+52=169.",
+    "explanation": "Net east=7−3=4 km; net south=4−1=3 km.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-011",
-    "section": "Logical Reasoning",
-    "topic": "Pattern reasoning",
-    "difficulty": "easy",
-    "question": "A sequence of symbols repeats every four positions as circle, triangle, square, star. Which symbol is at position 18?",
-    "options": [
-      "Square",
-      "Circle",
-      "Star",
-      "Triangle"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "18 leaves remainder 2 when divided by 4, so it matches the second symbol, triangle.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-012",
-    "section": "Logical Reasoning",
-    "topic": "Process logic",
-    "difficulty": "medium",
-    "question": "A machine transforms an input number by first adding 3, then doubling the result, then subtracting 4. If the output is 20, what was the input?",
-    "options": [
-      "9",
-      "8",
-      "7",
-      "6"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Let input x. 2(x+3)−4=20, so 2x+2=20, giving x=9.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-013",
+    "id": "ipmat-rohtak-2026-logical-reasoning-027",
     "section": "Logical Reasoning",
     "topic": "Ranking",
-    "difficulty": "medium",
-    "question": "Mira is 12th from the left in a row. She moves 7 places to the right and is then 15th from the right. How many people are in the row?",
+    "difficulty": "easy",
+    "question": "In a list of 36 candidates, Dev is 11th from the top. His rank from the bottom is",
     "options": [
-      "34",
-      "32",
-      "35",
-      "33"
+      "25th",
+      "27th",
+      "28th",
+      "26th"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "After moving 7 places right, Mira is 19th from the left. Total people = 19+15−1 = 33.",
+    "explanation": "36−11+1=26.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-014",
+    "id": "ipmat-rohtak-2026-logical-reasoning-028",
     "section": "Logical Reasoning",
-    "topic": "Assumption",
-    "difficulty": "medium",
-    "question": "Claim: “The company should extend customer-support hours because many users contact support after 6 p.m.” Which assumption is required?",
+    "topic": "Data Sufficiency",
+    "difficulty": "hard",
+    "question": "Is n even? I: n is divisible by 6. II: n is divisible by 3.",
     "options": [
-      "All users prefer phone support",
-      "Some after-6 p.m. demand is currently unmet",
-      "Extended hours always increase profit",
-      "Support staff never work remotely"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The recommendation depends on the idea that after-6 p.m. demand exists and is not adequately served now.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-015",
-    "section": "Logical Reasoning",
-    "topic": "Conclusion",
-    "difficulty": "medium",
-    "question": "A survey found that every respondent who used the new checkout completed payment in under four minutes. Rohan used the new checkout. Which conclusion follows?",
-    "options": [
-      "Rohan used a credit card",
-      "Rohan bought more than one item",
-      "Rohan completed payment in under four minutes",
-      "Rohan preferred the new checkout"
+      "Statement II alone is sufficient",
+      "Both together are necessary",
+      "Statement I alone is sufficient",
+      "Neither statement is sufficient"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The universal survey statement applies directly to Rohan; the other details are not given.",
+    "explanation": "Divisibility by 6 guarantees evenness; divisibility by 3 does not.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-016",
+    "id": "ipmat-rohtak-2026-logical-reasoning-029",
     "section": "Logical Reasoning",
-    "topic": "Cause and effect",
+    "topic": "Statement-Assumption",
     "difficulty": "medium",
-    "question": "After a shop moved its pickup counter closer to the entrance, average pickup time fell, while staffing and order volume stayed unchanged. Which explanation is most directly supported?",
+    "question": "Proposal: “Extend the library closing time during examination week.” Which assumption is most necessary?",
     "options": [
-      "Staff became more experienced overnight",
-      "Customers bought fewer items",
-      "Orders became simpler",
-      "The shorter walking route reduced pickup time"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "With staffing and volume unchanged, the location change directly reduces the customer movement needed for pickup.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-017",
-    "section": "Logical Reasoning",
-    "topic": "Data sufficiency",
-    "difficulty": "hard",
-    "question": "What is the value of x? Statement I: x + y = 18. Statement II: x − y = 4. Choose the correct sufficiency judgment.",
-    "options": [
-      "Both together are sufficient, neither alone is sufficient",
-      "II alone is sufficient",
-      "Even both together are insufficient",
-      "I alone is sufficient"
+      "Some students need study access later than the current closing time",
+      "Every student studies only in the library",
+      "Electricity after closing is free",
+      "No staff member has any other duty"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Each statement alone has infinitely many pairs. Together, adding gives 2x=22, so x=11.",
+    "explanation": "The proposal addresses a need only if some students value access beyond current hours.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-018",
+    "id": "ipmat-rohtak-2026-logical-reasoning-030",
     "section": "Logical Reasoning",
-    "topic": "Distribution puzzle",
+    "topic": "Statement-Conclusion",
     "difficulty": "medium",
-    "question": "Three awards—Gold, Silver and Bronze—go to P, Q and R, one each. P does not get Gold. Q does not get Bronze. R gets Silver. Who gets Gold?",
+    "question": "All orders placed before noon were dispatched today. Order K was not dispatched today. If the statement is true, what follows?",
     "options": [
-      "Cannot be determined",
-      "R",
-      "P",
-      "Q"
+      "Order K was cancelled",
+      "Order K was placed after midnight",
+      "No orders were dispatched",
+      "Order K was not placed before noon"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "R=Silver. Remaining Gold/Bronze go to P/Q. P cannot Gold, so P=Bronze and Q=Gold.",
+    "explanation": "By contraposition, not dispatched implies it was not among orders placed before noon.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-019",
+    "id": "ipmat-rohtak-2026-logical-reasoning-031",
     "section": "Logical Reasoning",
-    "topic": "Matching",
-    "difficulty": "hard",
-    "question": "Three consultants A, B and C each lead one project: retail, logistics or media. A does not lead retail. B does not lead media. The logistics project is led by C. Which project does A lead?",
+    "topic": "Analogy",
+    "difficulty": "easy",
+    "question": "Blueprint : Building :: Score : ?",
     "options": [
-      "Retail",
-      "Media",
-      "Cannot be determined",
-      "Logistics"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "C=logistics. A cannot retail, so among remaining retail/media A must be media. B then retail.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-020",
-    "section": "Logical Reasoning",
-    "topic": "Route logic",
-    "difficulty": "medium",
-    "question": "A courier can travel from Hub H to Store S only through either junction J or junction K. The road H–J is closed and there is no connection between J and K. Which route is still possible?",
-    "options": [
-      "H–K–S only",
-      "H–J–S only",
-      "Neither route",
-      "Both routes"
+      "Music performance",
+      "Painter",
+      "Audience",
+      "Ticket"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The J route is blocked at H–J, while the K route remains available.",
+    "explanation": "A blueprint guides realization of a building; a score guides realization of a musical performance.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-021",
+    "id": "ipmat-rohtak-2026-logical-reasoning-032",
     "section": "Logical Reasoning",
-    "topic": "Calendar reasoning",
-    "difficulty": "medium",
-    "question": "A workshop is held every third day starting on a Monday. On which day of the week is the fourth workshop held?",
+    "topic": "Odd One Out",
+    "difficulty": "easy",
+    "question": "Which is the odd one out?",
     "options": [
-      "Tuesday",
-      "Monday",
-      "Wednesday",
-      "Sunday"
+      "Cube",
+      "Square",
+      "Rectangle",
+      "Rhombus"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Cube is three-dimensional; the others are plane figures.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-033",
+    "section": "Logical Reasoning",
+    "topic": "Set Reasoning",
+    "difficulty": "medium",
+    "question": "Of 70 participants, 42 use app A, 35 use app B and 18 use both. How many use neither?",
+    "options": [
+      "7",
+      "13",
+      "11",
+      "17"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Adding three days each time gives Monday, Thursday, Sunday, Wednesday. The fourth workshop is Wednesday.",
+    "explanation": "At least one=42+35−18=59; neither=70−59=11.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-022",
+    "id": "ipmat-rohtak-2026-logical-reasoning-034",
     "section": "Logical Reasoning",
-    "topic": "Truth and lie",
+    "topic": "Conditional Logic",
     "difficulty": "hard",
-    "question": "Exactly one of two statements is true. A says, “B is lying.” B says, “A and I are both telling the truth.” Who is telling the truth?",
+    "question": "If a file is encrypted, access requires a key. Access to file F did not require a key. Which conclusion follows under the rule?",
     "options": [
-      "Both",
-      "B only",
-      "Neither",
-      "A only"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "If B were true, then both would be true, contradicting “exactly one.” So B is false. Then A’s statement that B is lying is true.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-023",
-    "section": "Logical Reasoning",
-    "topic": "Selection constraints",
-    "difficulty": "hard",
-    "question": "A committee of three must be chosen from A, B, C, D and E. If A is chosen, B must also be chosen. C and D cannot both be chosen. E must be chosen. Which committee is valid?",
-    "options": [
-      "A, C, E",
-      "B, C, E",
-      "A, D, E",
-      "C, D, E"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A requires B, so the first two are invalid. C and D cannot both appear, so option 4 is invalid. B,C,E is valid.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-024",
-    "section": "Logical Reasoning",
-    "topic": "Grouping",
-    "difficulty": "medium",
-    "question": "Six files P, Q, R, S, T and U are split into two groups of three. P and Q must be together. R and S must be in different groups. If P, Q and R are in Group 1, which set is Group 2?",
-    "options": [
-      "P, T, U",
-      "R, S, T",
-      "Q, S, U",
-      "S, T, U"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Group 1 is P,Q,R. The remaining files S,T,U form Group 2, and R/S are separated as required.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-025",
-    "section": "Logical Reasoning",
-    "topic": "Sequence constraints",
-    "difficulty": "medium",
-    "question": "Five presentations P, Q, R, S and T are scheduled once each. Q is immediately after P. T is before P. R is after S. S is not first. Which order is possible?",
-    "options": [
-      "T, S, R, P, Q",
-      "S, R, T, Q, P",
-      "T, P, Q, R, S",
-      "P, Q, T, S, R"
+      "File F was not encrypted",
+      "File F was public",
+      "The key was lost",
+      "All unencrypted files are public"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Option 1 satisfies all constraints: Q is immediately after P, T is before P, R is after S, and S is not first. Each other option violates at least one stated constraint.",
+    "explanation": "Contraposition of encrypted→key-required gives no-key-required→not-encrypted.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-026",
+    "id": "ipmat-rohtak-2026-logical-reasoning-035",
     "section": "Logical Reasoning",
-    "topic": "Logical consistency",
+    "topic": "Counting Logic",
     "difficulty": "medium",
-    "question": "Which pair of statements can both be true?",
-    "options": [
-      "Some A are B; No A are B",
-      "All A are B; No A are B, with at least one A",
-      "All A are B; Some A are not B",
-      "Some A are B; Some A are not B"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "It is logically possible for some A to be B and other A not to be B. The other pairs contradict each other.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-027",
-    "section": "Logical Reasoning",
-    "topic": "Inference",
-    "difficulty": "medium",
-    "question": "All premium orders receive tracking. Some tracked orders arrive the same day. Which statement is guaranteed?",
-    "options": [
-      "Premium orders are tracked",
-      "No non-premium order is tracked",
-      "Some premium orders arrive the same day",
-      "Every tracked order is premium"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The first statement directly guarantees that every premium order is tracked. No further overlap is forced.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-028",
-    "section": "Logical Reasoning",
-    "topic": "Circular arrangement",
-    "difficulty": "hard",
-    "question": "Four people A, B, C and D sit around a circular table facing the centre. A sits opposite C. B sits immediately clockwise from A. Who sits immediately clockwise from C?",
-    "options": [
-      "C",
-      "D",
-      "B",
-      "A"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Place A, then B clockwise. C is opposite A. The remaining seat is D, which lies immediately clockwise from C.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-029",
-    "section": "Logical Reasoning",
-    "topic": "Network reasoning",
-    "difficulty": "medium",
-    "question": "A network has direct links A–B, B–C, C–D and A–D. Which node can be reached from B in exactly one direct link?",
-    "options": [
-      "A and C",
-      "C and D",
-      "D only",
-      "A and D"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "B has direct links only to A and C.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-030",
-    "section": "Logical Reasoning",
-    "topic": "Counting arrangements",
-    "difficulty": "medium",
-    "question": "A four-digit access code uses each of the digits 2, 4, 6 and 8 exactly once. How many such codes begin with 2?",
+    "question": "A three-digit code uses distinct digits chosen from {1,2,3,4}. How many such codes are possible?",
     "options": [
       "12",
-      "6",
-      "4",
-      "8"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Fix 2 first. The remaining 3 digits can be arranged in 3! = 6 ways.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-031",
-    "section": "Logical Reasoning",
-    "topic": "Transformation rule",
-    "difficulty": "medium",
-    "question": "A device maps 4→19, 6→39 and 8→67. Which rule fits all three mappings?",
-    "options": [
-      "2n²−13",
-      "n²+2n−5",
-      "n²+3",
-      "n²+n−1"
+      "18",
+      "24",
+      "36"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "4²+3=19, 6²+3=39 and 8²+3=67.",
+    "explanation": "Choose and order 3 of 4 digits: 4P3=24.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-032",
+    "id": "ipmat-rohtak-2026-logical-reasoning-036",
     "section": "Logical Reasoning",
-    "topic": "Symbol operations",
+    "topic": "Clock Reasoning",
     "difficulty": "medium",
-    "question": "Suppose △ means “add 5” and ○ means “multiply by 2”. Starting from 7, what is the result of applying △ and then ○?",
-    "options": [
-      "19",
-      "24",
-      "28",
-      "26"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "7+5=12, then 12×2=24.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-033",
-    "section": "Logical Reasoning",
-    "topic": "Team assignment",
-    "difficulty": "hard",
-    "question": "Four teams A, B, C and D present in four slots. A is before B. C is immediately after A. D is not last. Which order is possible?",
-    "options": [
-      "D, A, B, C",
-      "C, A, D, B",
-      "A, B, C, D",
-      "A, C, D, B"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A,C must be consecutive in that order; A must also precede B. Option 1 satisfies this and D is not last.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-034",
-    "section": "Logical Reasoning",
-    "topic": "Relative ages",
-    "difficulty": "medium",
-    "question": "K is older than L. M is younger than K but older than L. N is older than K. Who is the second oldest?",
-    "options": [
-      "K",
-      "L",
-      "M",
-      "N"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Order is N > K > M > L, so K is second oldest.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-035",
-    "section": "Logical Reasoning",
-    "topic": "Clock reasoning",
-    "difficulty": "medium",
-    "question": "At exactly 3:00, what is the smaller angle between the hour and minute hands of a clock?",
+    "question": "At 3:30, the smaller angle between the hour and minute hands is",
     "options": [
       "60°",
-      "150°",
       "90°",
-      "120°"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "At 3:00 the minute hand is at 12 and the hour hand at 3, a right angle of 90°.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-036",
-    "section": "Logical Reasoning",
-    "topic": "Binary choices",
-    "difficulty": "medium",
-    "question": "A customer chooses exactly one plan, Basic or Plus, and exactly one billing cycle, Monthly or Annual. How many distinct combinations are possible?",
-    "options": [
-      "2",
-      "6",
-      "4",
-      "3"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "There are 2 plan choices × 2 billing choices = 4 combinations.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-037",
-    "section": "Logical Reasoning",
-    "topic": "Table deduction",
-    "difficulty": "medium",
-    "question": "Three stores have different closing times: 8 p.m., 9 p.m. and 10 p.m. Store R closes later than Store S. Store T closes at 9 p.m. Store R does not close at 9 p.m. When does Store S close?",
-    "options": [
-      "8 p.m.",
-      "9 p.m.",
-      "10 p.m.",
-      "Cannot be determined"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "T=9. R is later than S and not 9, so R=10. Therefore S=8.",
-    "source": {
-      "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ipmat-rohtak-2026-lr-038",
-    "section": "Logical Reasoning",
-    "topic": "Arrangement",
-    "difficulty": "hard",
-    "question": "Six books A, B, C, D, E and F are placed on a shelf. A is immediately before B. C is at the far left. F is at the far right. D is somewhere after B. Which pair could occupy positions 2 and 3 respectively?",
-    "options": [
-      "D, E",
-      "E, D",
-      "B, A",
-      "A, B"
+      "105°",
+      "75°"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "C is position 1 and F position 6. A,B can occupy 2,3 while leaving D after B. The reversed pair violates A immediately before B; D,E at 2,3 can still maybe possible but then A,B must 4,5 and D before? D only after B would fail because D=2. E,D at 2,3 gives D before possible A,B 4,5, so D not after B. Thus only A,B.",
+    "explanation": "Minute hand=180°. Hour hand=3.5×30=105°. Difference=75°.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-039",
+    "id": "ipmat-rohtak-2026-logical-reasoning-037",
     "section": "Logical Reasoning",
-    "topic": "Critical reasoning - strengthen",
-    "difficulty": "hard",
-    "question": "A company believes offering a free trial will increase paid subscriptions. Which finding most strengthens the belief?",
+    "topic": "Calendar Reasoning",
+    "difficulty": "medium",
+    "question": "If 1 July is a Wednesday, what day is 1 August of the same year?",
     "options": [
-      "Some users cancel after a year",
-      "The service has three pricing tiers",
-      "In a pilot, users randomly offered a trial subscribed at a higher rate than similar users not offered one",
-      "Most current subscribers use the service weekly"
+      "Friday",
+      "Sunday",
+      "Saturday",
+      "Monday"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A randomized pilot directly links the trial offer to a higher subscription rate, strongly supporting the causal claim.",
+    "explanation": "July has 31 days, shifting weekday by 3: Wednesday→Saturday.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ipmat-rohtak-2026-lr-040",
+    "id": "ipmat-rohtak-2026-logical-reasoning-038",
     "section": "Logical Reasoning",
-    "topic": "Critical reasoning - weaken",
-    "difficulty": "hard",
-    "question": "A manager argues that a new meeting format caused productivity to rise because productivity was higher in the month after the format was introduced. Which fact most weakens the argument?",
+    "topic": "Binary Logic",
+    "difficulty": "medium",
+    "question": "A statement is true exactly when two switches have the same state. Which pair makes the statement false?",
     "options": [
-      "The new meetings are shorter",
-      "The format uses a fixed agenda",
-      "A major seasonal sales surge occurred in the same month",
-      "Most employees attended the meetings"
+      "ON, ON",
+      "ON, OFF",
+      "OFF, OFF",
+      "Either same-state pair"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The condition is equality; ON/OFF are different, so the statement is false.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-039",
+    "section": "Logical Reasoning",
+    "topic": "Cause and Effect",
+    "difficulty": "medium",
+    "question": "A firm shortened a form from 18 fields to 8, while all other onboarding steps stayed unchanged. Completion rates rose immediately. Which inference is best supported?",
+    "options": [
+      "The shorter form guarantees every applicant is qualified",
+      "Advertising caused the rise",
+      "Form length may have been a barrier to completion",
+      "All eight remaining fields are unnecessary"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A seasonal surge is an alternative cause for the productivity increase, weakening attribution to the meeting format.",
+    "explanation": "With other steps unchanged, the timing supports form length as a plausible barrier, not the stronger claims.",
     "source": {
       "kind": "original",
-      "reference": "IIM Rohtak official IPM Admission 2026-31 — IPM Aptitude Test pattern",
-      "url": "https://www.iimrohtak.ac.in/ipm-admission.php",
-      "checkedOn": "2026-08-31"
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ipmat-rohtak-2026-logical-reasoning-040",
+    "section": "Logical Reasoning",
+    "topic": "Critical Reasoning",
+    "difficulty": "hard",
+    "question": "A café claims a new layout reduced waiting because average queue time fell. Which additional fact most weakens that claim?",
+    "options": [
+      "The new layout uses the same furniture",
+      "Staff liked the new layout",
+      "The café changed its wall color",
+      "Customer volume fell by 60% during the measurement period"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "A large fall in demand could explain shorter queues independently of the layout.",
+    "source": {
+      "kind": "original",
+      "reference": "IIM Rohtak IPM Batch 08 Admission Prospectus 2026",
+      "url": "https://www.iimrohtak.ac.in/panel/assets/images/prospectus/17689678733505.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];

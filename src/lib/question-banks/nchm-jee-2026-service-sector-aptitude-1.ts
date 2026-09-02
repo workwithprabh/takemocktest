@@ -2,723 +2,723 @@ import type { Question } from '../questions';
 
 export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
   {
-    "id": "nchm-jee-2026-ss-001",
+    "id": "nchm-jee-2026-service-sector-001",
     "section": "Aptitude for Service Sector",
-    "topic": "Guest complaint handling",
+    "topic": "Guest Complaint",
     "difficulty": "medium",
-    "question": "A guest says the room air-conditioning is not cooling and looks tired after a long journey. What should the front-desk associate do first?",
+    "question": "A guest reports that a room is noisy and is visibly tired. What should the front-desk associate do first?",
     "options": [
-      "Acknowledge the inconvenience, confirm immediate assistance, and offer a practical interim option such as another room if available.",
-      "Explain that maintenance normally takes an hour and ask the guest to wait.",
-      "Ask the guest to return after checking out.",
-      "Tell the guest to call maintenance directly."
+      "Explain that noise is unavoidable before listening",
+      "Promise a free suite without checking availability",
+      "Ask the guest to post the complaint online",
+      "Acknowledge the concern, clarify the immediate need, and check realistic remedies"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The best response combines empathy, ownership, prompt action and a guest-centred interim solution.",
+    "explanation": "Good service recovery starts with listening and acknowledgement, then offers feasible remedies based on facts.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-002",
+    "id": "nchm-jee-2026-service-sector-002",
     "section": "Aptitude for Service Sector",
-    "topic": "Service recovery",
-    "difficulty": "medium",
-    "question": "A restaurant serves a guest the wrong main course. The guest has not started eating it. What is the best response?",
+    "topic": "Food Allergy",
+    "difficulty": "hard",
+    "question": "A diner says they have a severe nut allergy and asks whether a dessert is safe. The server is unsure. What is the best response?",
     "options": [
-      "Remove it without comment and bring the correct dish later.",
-      "Apologise, confirm the correct order, arrange a prompt replacement, and keep the guest informed.",
-      "Tell the guest the kitchen is busy and suggest eating the dish served.",
-      "Blame the order-taking system."
+      "Guess based on the dessert name",
+      "Pause the order and verify ingredients/cross-contact risk with the responsible kitchen team",
+      "Say it is probably safe because nuts are not visible",
+      "Remove visible nuts and serve it"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Effective service recovery acknowledges the error, confirms the need, fixes it promptly and communicates clearly without shifting blame.",
+    "explanation": "Allergy safety requires verified ingredient and cross-contact information, not guesses or cosmetic removal.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-003",
+    "id": "nchm-jee-2026-service-sector-003",
+    "section": "Aptitude for Service Sector",
+    "topic": "Queue Management",
+    "difficulty": "medium",
+    "question": "A check-in queue suddenly doubles after a delayed coach arrives. What is the best immediate response?",
+    "options": [
+      "Triage simple needs, open available capacity, and keep waiting guests informed",
+      "Stop acknowledging guests until the queue shrinks",
+      "Process only VIPs and ignore everyone else",
+      "Ask all guests to return the next day"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Capacity activation, triage and communication reduce uncertainty and waiting harm.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-004",
+    "section": "Aptitude for Service Sector",
+    "topic": "Service Recovery",
+    "difficulty": "medium",
+    "question": "A restaurant serves the wrong main course. The guest has limited time. What is the best first action?",
+    "options": [
+      "Argue that the guest may have ordered incorrectly",
+      "Hide the plate and wait",
+      "Offer dessert before addressing the main course",
+      "Apologize, confirm the correct order and offer the fastest safe replacement option"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The error should be acknowledged and corrected with the guest’s time constraint in mind.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-005",
+    "section": "Aptitude for Service Sector",
+    "topic": "Privacy",
+    "difficulty": "hard",
+    "question": "A caller asks for the room number of a named guest. The hotel cannot verify the caller’s identity or consent. What should staff do?",
+    "options": [
+      "Give the room number because the caller knows the guest’s name",
+      "Confirm whether the guest is alone",
+      "Do not disclose the room number; offer a privacy-preserving way to contact the guest if policy allows",
+      "Read out the guest’s booking details"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Guest location and booking details are sensitive; disclosure should follow privacy and verification policy.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-006",
     "section": "Aptitude for Service Sector",
     "topic": "Accessibility",
     "difficulty": "medium",
-    "question": "A guest using a wheelchair asks whether a meeting room is easily accessible. What is the most appropriate response?",
+    "question": "A wheelchair user finds that a temporary display narrows the accessible route. The most appropriate response is to",
     "options": [
-      "Say all rooms are accessible without checking.",
-      "Ask another guest whether the room is accessible.",
-      "Describe verified access details such as step-free route and doorway/lift availability, and offer assistance if requested.",
-      "Suggest the guest avoid the meeting."
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Accurate, verified accessibility information respects autonomy and avoids unsupported assurances.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-004",
-    "section": "Aptitude for Service Sector",
-    "topic": "Confidentiality",
-    "difficulty": "hard",
-    "question": "A caller asks for the room number of a well-known guest and says the guest is expecting them. What should the employee do?",
-    "options": [
-      "Post the caller’s request in a public staff group.",
-      "Refuse rudely and end the call.",
-      "Give the room number because the caller knows the guest’s name.",
-      "Protect the room number and follow the hotel’s verified-contact procedure, such as offering to connect the call without disclosing the number."
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Guest privacy requires withholding room details while still offering a secure channel for legitimate contact.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-005",
-    "section": "Aptitude for Service Sector",
-    "topic": "Queue management",
-    "difficulty": "medium",
-    "question": "A sudden coach arrival creates a long check-in queue. Which action is most service-oriented?",
-    "options": [
-      "Acknowledge waiting guests, deploy available trained staff to triage/check documents, and give realistic wait information.",
-      "Serve only guests who complain loudly.",
-      "Ask the entire coach group to return the next morning.",
-      "Continue at the same pace without acknowledging the delay."
+      "remove or reposition the obstruction promptly and confirm a clear route",
+      "ask the guest to use a staff-only staircase",
+      "explain that the display is temporary and leave it",
+      "offer a discount instead of restoring access"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Good queue management combines acknowledgement, resource deployment, orderly triage and transparent expectations.",
+    "explanation": "Accessibility barriers should be removed; compensation does not replace access.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-006",
+    "id": "nchm-jee-2026-service-sector-007",
     "section": "Aptitude for Service Sector",
-    "topic": "Professional communication",
+    "topic": "Lost Property",
+    "difficulty": "medium",
+    "question": "A wallet is found in a lounge. What should an employee do?",
+    "options": [
+      "Keep it at the reception desk unlogged",
+      "Post a photo of its contents on social media",
+      "Take cash out to identify the owner",
+      "Follow the property log and secure handover procedure"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Controlled logging and secure custody protect the owner and the organization.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-008",
+    "section": "Aptitude for Service Sector",
+    "topic": "Upselling",
     "difficulty": "easy",
-    "question": "A guest asks a question you do not know the answer to. What is the best response?",
+    "question": "Which upselling approach is most appropriate?",
     "options": [
-      "Say “I don’t know” and walk away.",
-      "Tell the guest you will verify the information, check an authorised source or colleague, and return with the answer promptly.",
-      "Ask the guest to search online.",
-      "Invent a likely answer to appear confident."
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Professional service values accuracy and ownership over guessing.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-007",
-    "section": "Aptitude for Service Sector",
-    "topic": "Cultural sensitivity",
-    "difficulty": "medium",
-    "question": "A guest requests a dietary arrangement linked to religious practice. What should the service employee do?",
-    "options": [
-      "Assume the exact restrictions based on the guest’s religion.",
-      "Tell the guest all dishes are the same.",
-      "Ask respectful, specific questions about the guest’s requirements and confirm what the kitchen can safely provide.",
-      "Discuss the guest’s religion loudly with other diners."
+      "Hide the lower-priced option",
+      "State that an upgrade is mandatory when it is not",
+      "Offer a relevant upgrade transparently and accept a refusal without pressure",
+      "Repeat the offer until the guest agrees"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Respectful clarification avoids stereotypes and allows the team to meet the actual stated requirement.",
+    "explanation": "Ethical upselling is relevant, truthful and non-coercive.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-008",
+    "id": "nchm-jee-2026-service-sector-009",
     "section": "Aptitude for Service Sector",
-    "topic": "Teamwork",
+    "topic": "Cultural Sensitivity",
+    "difficulty": "medium",
+    "question": "A guest’s dietary practice is unfamiliar to a server. The best response is to",
+    "options": [
+      "make jokes about the practice",
+      "assume it is identical to another diet",
+      "promise compliance without checking",
+      "ask respectful clarifying questions and verify suitable options"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Respectful clarification and verification avoid stereotypes and unsafe assumptions.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-010",
+    "section": "Aptitude for Service Sector",
+    "topic": "Team Communication",
+    "difficulty": "medium",
+    "question": "Housekeeping discovers a maintenance leak before room release. What is the best action?",
+    "options": [
+      "Block or flag the room through the proper channel and alert maintenance/front desk",
+      "Mark the room clean and hope the leak stops",
+      "Tell only the next shift verbally with no record",
+      "Place a towel over the leak and release the room"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Accurate cross-department status prevents assigning an unready room.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-011",
+    "section": "Aptitude for Service Sector",
+    "topic": "Revenue and Trust",
+    "difficulty": "medium",
+    "question": "A guest asks whether a quoted rate includes taxes. The employee should",
+    "options": [
+      "avoid answering until payment",
+      "state clearly what is included and what will be added",
+      "quote only the base rate even if taxes are mandatory",
+      "say all fees are optional"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Transparent pricing supports informed consent and trust.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-012",
+    "section": "Aptitude for Service Sector",
+    "topic": "Emergency Response",
+    "difficulty": "hard",
+    "question": "A guest collapses in the lobby. What is the best immediate service response?",
+    "options": [
+      "Move the guest to a private room before calling anyone",
+      "Offer food first without assessment",
+      "Ask bystanders to diagnose the condition",
+      "Activate the property’s emergency/medical protocol and summon trained help"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Medical emergencies require prompt activation of trained assistance and established protocol.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-013",
+    "section": "Aptitude for Service Sector",
+    "topic": "Telephone Etiquette",
     "difficulty": "easy",
-    "question": "A colleague is handling an unexpected rush at the reception while your own assigned task can safely wait for ten minutes. What is the best action?",
+    "question": "When transferring a caller, good practice is to",
     "options": [
-      "Ignore the rush because it is not your station.",
-      "Take over the desk without telling anyone.",
-      "Leave the property until the rush ends.",
-      "Offer appropriate help after briefly coordinating with the colleague or supervisor."
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Service teams should support one another while coordinating roles so that responsibility remains clear.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-009",
-    "section": "Aptitude for Service Sector",
-    "topic": "Hygiene judgement",
-    "difficulty": "medium",
-    "question": "You notice a serving tray has a visible food stain just before it is taken to a table. What should you do?",
-    "options": [
-      "Replace or properly clean and sanitise the tray before service.",
-      "Turn the stained side away from the guest.",
-      "Use it because the stain is small.",
-      "Wipe it quickly with your sleeve."
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Visible contamination requires proper cleaning/sanitisation or replacement, not concealment.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-010",
-    "section": "Aptitude for Service Sector",
-    "topic": "Lost property",
-    "difficulty": "medium",
-    "question": "A wallet is found in a hotel corridor. What is the best immediate action?",
-    "options": [
-      "Leave it where it was found.",
-      "Follow the property’s lost-and-found procedure, recording and securing it promptly.",
-      "Open it and post the owner’s identification online.",
-      "Keep it at the desk with no record."
+      "transfer silently to any department",
+      "explain the transfer and confirm the destination when possible",
+      "keep the caller on hold indefinitely",
+      "disconnect if the requested person is busy"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A documented secure lost-and-found process protects the guest and the property.",
+    "explanation": "A brief explanation and accurate transfer reduce confusion and repeat effort.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-011",
+    "id": "nchm-jee-2026-service-sector-014",
     "section": "Aptitude for Service Sector",
-    "topic": "Upselling ethics",
+    "topic": "Handling Delay",
     "difficulty": "medium",
-    "question": "A guest asks for the cheapest room that meets their need for a quiet stay. What is the best sales approach?",
+    "question": "A room will be ready 30 minutes later than promised. What is the best approach?",
     "options": [
-      "Push the most expensive suite regardless of need.",
-      "Avoid mentioning prices.",
-      "Recommend the lowest-priced suitable option and explain any relevant alternatives without pressure.",
-      "Say quiet rooms are available only to premium guests."
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Ethical selling matches the guest’s stated need and budget, while transparently presenting alternatives.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-012",
-    "section": "Aptitude for Service Sector",
-    "topic": "Handling delay",
-    "difficulty": "medium",
-    "question": "A guest’s airport pickup will be 20 minutes late because of traffic. What should the hotel do?",
-    "options": [
-      "Cancel the pickup without notice.",
-      "Say nothing until the guest complains.",
-      "Claim the driver is already there.",
-      "Inform the guest as soon as possible, give the revised estimate, apologise, and offer a practical contact point or alternative if needed."
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Proactive, honest communication reduces uncertainty and supports service recovery.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-013",
-    "section": "Aptitude for Service Sector",
-    "topic": "Safety priority",
-    "difficulty": "hard",
-    "question": "A guest insists on entering an area temporarily closed because of an electrical hazard. What should the employee do?",
-    "options": [
-      "Politely but firmly prevent entry, explain the safety restriction, and offer a safe alternative route or space.",
-      "Ignore the situation.",
-      "Let the guest decide after signing a note.",
-      "Allow entry because the guest has paid."
+      "Inform the guest proactively, give a realistic update and offer appropriate waiting support",
+      "Wait for the guest to complain",
+      "give an unrealistically early time",
+      "avoid recording the delay"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Safety controls override convenience; the response should be firm, respectful and solution-oriented.",
+    "explanation": "Proactive, accurate communication manages expectations and enables service recovery.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-014",
+    "id": "nchm-jee-2026-service-sector-015",
     "section": "Aptitude for Service Sector",
-    "topic": "Fairness",
-    "difficulty": "medium",
-    "question": "Two guests arrive at the desk at nearly the same time, but one tries to bypass the queue by demanding immediate attention. What is the best response?",
-    "options": [
-      "Serve the louder guest first.",
-      "Maintain the fair queue while briefly acknowledging the urgent guest and checking whether there is a genuine emergency.",
-      "Argue about manners for several minutes.",
-      "Refuse service to both guests."
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Fairness should be preserved while genuine emergencies can be identified through brief triage.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-015",
-    "section": "Aptitude for Service Sector",
-    "topic": "Service personalisation",
-    "difficulty": "medium",
-    "question": "A returning guest mentions that they prefer a room away from the lift. The preference is permitted to be recorded under the hotel’s policy. What is the best action?",
-    "options": [
-      "Promise a specific room even if inventory is uncertain.",
-      "Tell other guests about the preference.",
-      "Record or confirm the preference appropriately and try to allocate a suitable room without guaranteeing what is unavailable.",
-      "Ignore the preference because it is not a complaint."
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Appropriate preference recording supports personalisation while avoiding false guarantees or privacy breaches.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-016",
-    "section": "Aptitude for Service Sector",
-    "topic": "Handling payment issue",
-    "difficulty": "hard",
-    "question": "A card payment appears to fail, but the guest shows a bank message indicating a debit. What should the cashier do?",
-    "options": [
-      "Ignore the transaction and let the guest leave without any record.",
-      "Accuse the guest of showing a false message.",
-      "Charge the card repeatedly until one payment succeeds.",
-      "Follow the payment-verification procedure, avoid duplicate charging, explain the check to the guest, and escalate if needed."
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The priority is accurate verification and prevention of duplicate charging, with transparent escalation.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-017",
-    "section": "Aptitude for Service Sector",
-    "topic": "Complaint escalation",
-    "difficulty": "medium",
-    "question": "A guest raises a problem that is outside your authority to resolve. What is the best action?",
-    "options": [
-      "Take ownership of the communication, explain that you will involve the authorised colleague, and make a proper handover.",
-      "Close the complaint as unresolved.",
-      "Promise a remedy you cannot authorise.",
-      "Tell the guest to find a manager alone."
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A warm handover preserves ownership without exceeding authority.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-018",
-    "section": "Aptitude for Service Sector",
-    "topic": "Telephone etiquette",
+    "topic": "Service Standards",
     "difficulty": "easy",
-    "question": "When answering a professional service call, which opening is most appropriate?",
+    "question": "Which behaviour best demonstrates professional grooming in a guest-facing role?",
     "options": [
-      "“Who is this?” before any greeting.",
-      "A clear greeting that identifies the property/department and the employee, followed by an offer to help.",
-      "Silence until the caller speaks twice.",
-      "“Yes?”"
+      "using strong fragrance to ensure guests notice staff",
+      "Following the property’s clean, safe and role-appropriate grooming standard",
+      "ignoring hygiene if the uniform is correct",
+      "wearing unsafe accessories near food equipment"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A clear identification and offer of assistance is professional and efficient.",
+    "explanation": "Professional grooming should meet hygiene, safety and organizational standards.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-019",
+    "id": "nchm-jee-2026-service-sector-016",
     "section": "Aptitude for Service Sector",
-    "topic": "Special request",
+    "topic": "Conflict De-escalation",
     "difficulty": "medium",
-    "question": "A guest asks for a late checkout, but room demand is high and availability is uncertain. What should the employee do?",
+    "question": "Two guests are arguing loudly in a common area. A staff member should first",
     "options": [
-      "Guarantee the late checkout immediately.",
-      "Avoid answering until checkout time.",
-      "Check availability and policy, explain any conditions or charges clearly, and offer the closest feasible alternative if unavailable.",
-      "Say late checkout is never possible."
+      "shout louder than both guests",
+      "record the argument for entertainment",
+      "approach calmly, set respectful boundaries and seek to separate the immediate dispute if safe",
+      "take sides before hearing anything"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The response should verify availability and policy, set accurate expectations, and offer alternatives.",
+    "explanation": "Calm boundary-setting and safe de-escalation are preferable to escalation or public exposure.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-020",
+    "id": "nchm-jee-2026-service-sector-017",
     "section": "Aptitude for Service Sector",
-    "topic": "Feedback handling",
+    "topic": "Data Accuracy",
     "difficulty": "easy",
-    "question": "A guest gives a constructive suggestion rather than a complaint. What is the best response?",
+    "question": "A guest corrects the spelling of their name on a booking. Staff should",
     "options": [
-      "Argue that the existing process is better.",
-      "Offer compensation automatically.",
-      "Dismiss it because no service failure occurred.",
-      "Thank the guest, record the feedback through the appropriate channel, and avoid promising changes you cannot guarantee."
+      "keep the old spelling to avoid work",
+      "create a second duplicate booking",
+      "write the correction on scrap paper only",
+      "update the authorized record and verify the corrected spelling"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Constructive feedback should be acknowledged and documented without unsupported promises.",
+    "explanation": "Accurate authorized records prevent downstream service and identity errors.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-021",
+    "id": "nchm-jee-2026-service-sector-018",
     "section": "Aptitude for Service Sector",
-    "topic": "Food allergy communication",
-    "difficulty": "hard",
-    "question": "A guest says they have a severe nut allergy and asks whether a dessert is safe. What should the server do?",
-    "options": [
-      "Verify ingredients and cross-contact controls with the authorised kitchen process before giving an answer; if safety cannot be assured, say so clearly and suggest safer alternatives.",
-      "Remove visible nuts and serve it.",
-      "Say it looks nut-free.",
-      "Tell the guest allergies are their own responsibility."
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Allergy information must be verified, including cross-contact risk; appearance is not enough.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-022",
-    "section": "Aptitude for Service Sector",
-    "topic": "Handling language barrier",
+    "topic": "Service Personalization",
     "difficulty": "medium",
-    "question": "A guest and employee are struggling to understand each other. What is the best approach?",
+    "question": "A returning guest’s profile notes a preference for a quiet room, subject to availability. The best use of this information is to",
     "options": [
-      "End the conversation.",
-      "Use clear simple language, visual/written support or an approved translation aid, and confirm understanding respectfully.",
-      "Speak much louder in the same words.",
-      "Pretend to understand and proceed."
+      "announce the preference publicly",
+      "consider the preference when assigning the room without guaranteeing what is unavailable",
+      "treat the preference as a medical requirement",
+      "ignore all stored preferences"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Multiple respectful communication channels improve understanding without embarrassing the guest.",
+    "explanation": "Personalization should use relevant stored preferences while respecting availability and privacy.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-023",
+    "id": "nchm-jee-2026-service-sector-019",
     "section": "Aptitude for Service Sector",
-    "topic": "Overbooking response",
+    "topic": "Housekeeping Safety",
     "difficulty": "hard",
-    "question": "A confirmed guest arrives but no room of the booked category is available because of an operational error. What is the best first principle?",
+    "question": "A cleaner sees an unlabeled liquid in a bottle near cleaning supplies. The safest action is to",
     "options": [
-      "Offer a lower room without explanation.",
-      "Ask the guest to negotiate with other hotels alone.",
-      "Acknowledge the confirmed booking and inconvenience, take ownership, and follow the property’s authorised recovery/alternative-accommodation procedure.",
-      "Deny that a reservation exists."
+      "smell it closely to identify it",
+      "mix it with another cleaner",
+      "isolate it and follow chemical-identification/safety procedure before use",
+      "use a small amount on a guest-room surface"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A confirmed booking failure requires ownership, transparent acknowledgement and authorised recovery steps.",
+    "explanation": "Unknown chemicals should not be guessed at, mixed or used.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-024",
+    "id": "nchm-jee-2026-service-sector-020",
     "section": "Aptitude for Service Sector",
-    "topic": "Housekeeping privacy",
+    "topic": "Food Service",
     "difficulty": "medium",
-    "question": "A “Do Not Disturb” sign is displayed on a guest room door and there is no emergency. What should staff generally do?",
+    "question": "A hot buffet item has been outside the property’s safe holding standard for an unknown time. Staff should",
     "options": [
-      "Remove the sign.",
-      "Enter quietly without knocking.",
-      "Ask another guest to check the room.",
-      "Respect the sign and follow the property’s defined procedure for deferred service or later contact."
+      "reheat it briefly and return it without checking",
+      "mix it into a fresh batch",
+      "serve it quickly before it cools",
+      "remove it from service and follow food-safety disposal/verification procedure"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Privacy signals should be respected except under defined safety/emergency procedures.",
+    "explanation": "Unknown time-temperature exposure is a food-safety risk and requires policy-based corrective action.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-025",
+    "id": "nchm-jee-2026-service-sector-021",
     "section": "Aptitude for Service Sector",
-    "topic": "Professional appearance",
+    "topic": "Complaint Ownership",
+    "difficulty": "medium",
+    "question": "A guest tells a bell attendant about a billing error that belongs to front office. The attendant should",
+    "options": [
+      "say “not my department” and walk away",
+      "ask the guest to repeat the story to several departments",
+      "take ownership of connecting the guest to the right colleague and pass on the context",
+      "promise to change the bill personally without authority"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Warm handoff and context transfer reduce effort while respecting role authority.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-022",
+    "section": "Aptitude for Service Sector",
+    "topic": "Service Design",
+    "difficulty": "medium",
+    "question": "Guests repeatedly ask where breakfast is served. The best long-term improvement is to",
+    "options": [
+      "tell staff to answer faster but change nothing",
+      "remove breakfast information entirely",
+      "fix the information gap in pre-arrival/check-in/signage channels and monitor whether questions fall",
+      "ask guests to search online themselves"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Recurring questions often signal a design problem; improving information at the right touchpoints reduces repeat demand.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-023",
+    "section": "Aptitude for Service Sector",
+    "topic": "Guest Feedback",
     "difficulty": "easy",
-    "question": "Why is a neat professional appearance important in a service role?",
+    "question": "A negative review identifies a specific, verifiable housekeeping issue. The best internal response is to",
     "options": [
-      "It supports hygiene, trust and a consistent professional impression.",
-      "It guarantees technical competence.",
-      "It allows staff to ignore communication skills.",
-      "It is more important than guest safety."
+      "investigate the process failure and correct it rather than focusing only on the rating",
+      "delete all internal records of the stay",
+      "reward staff for disputing the guest",
+      "assume every online complaint is false"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Appearance does not replace competence, but it contributes to hygiene, trust and professional presentation.",
+    "explanation": "Specific feedback can reveal a process defect that should be verified and corrected.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-026",
+    "id": "nchm-jee-2026-service-sector-024",
     "section": "Aptitude for Service Sector",
-    "topic": "Local recommendation",
-    "difficulty": "medium",
-    "question": "A guest asks for a nearby attraction suitable for an elderly parent with limited walking ability. What is the best response?",
+    "topic": "Reservation Ethics",
+    "difficulty": "hard",
+    "question": "The property is oversold and cannot honor one confirmed booking. What is the most ethical response?",
     "options": [
-      "Say all attractions are equally accessible.",
-      "Ask about mobility needs, give verified accessibility/transport information, and present suitable choices.",
-      "Recommend the most famous attraction without considering access.",
-      "Refuse to recommend anything."
+      "pretend the reservation never existed",
+      "Follow the approved relocation/service-recovery policy transparently and minimize guest harm",
+      "blame the guest for arriving",
+      "hide the oversell until all nearby hotels close"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Good recommendations are needs-based and rely on verified practical information.",
+    "explanation": "Oversell recovery should be honest, policy-based and focused on suitable alternatives and harm reduction.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-ss-027",
+    "id": "nchm-jee-2026-service-sector-025",
     "section": "Aptitude for Service Sector",
-    "topic": "Cash handling",
+    "topic": "Service Timing",
     "difficulty": "medium",
-    "question": "At shift end, the cash drawer is short by a small amount. What should the cashier do?",
+    "question": "A guest asks for a 6:00 a.m. wake-up call. The best operational practice is to",
     "options": [
-      "Replace the amount privately and tell no one.",
-      "Change a receipt to make the totals match.",
-      "Report the discrepancy and follow the reconciliation procedure honestly.",
-      "Ignore it because the amount is small."
+      "record it in the authorized system, confirm the time and follow the property’s execution/check process",
+      "rely on memory only",
+      "set it for 6:00 p.m. without confirming",
+      "write it on an unshared personal note"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Time-critical requests need accurate confirmation and a reliable shared execution process.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-026",
+    "section": "Aptitude for Service Sector",
+    "topic": "Cash Handling",
+    "difficulty": "medium",
+    "question": "A cashier’s till is short at closing. What should happen?",
+    "options": [
+      "Follow reconciliation and reporting procedure; do not conceal or privately replace the discrepancy without authorization",
+      "alter a receipt to force the balance",
+      "hide the shortage from the supervisor",
+      "borrow cash from a guest wallet"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Controlled reconciliation protects financial integrity and enables investigation.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-027",
+    "section": "Aptitude for Service Sector",
+    "topic": "Inclusive Service",
+    "difficulty": "medium",
+    "question": "A guest communicates slowly because of a speech disability. The best response is to",
+    "options": [
+      "finish every sentence for the guest",
+      "allow time, listen respectfully and ask the guest’s preferred communication method if needed",
+      "speak only to the guest’s companion",
+      "pretend to understand unclear details"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Inclusive service centers the guest and avoids rushing or bypassing them.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-028",
+    "section": "Aptitude for Service Sector",
+    "topic": "Environmental Practice",
+    "difficulty": "easy",
+    "question": "Which action best supports waste reduction without reducing guest choice?",
+    "options": [
+      "remove all drinking water",
+      "Offer clearly labeled refill/reuse options and make participation easy",
+      "hide waste bins",
+      "reuse single-use hygiene items between guests"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Convenient voluntary reuse systems can reduce waste while preserving service and hygiene.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-029",
+    "section": "Aptitude for Service Sector",
+    "topic": "Service Metrics",
+    "difficulty": "medium",
+    "question": "A hotel wants to reduce check-in waiting time. Which measure is most directly useful?",
+    "options": [
+      "Time from joining the queue to completion of check-in",
+      "number of lobby plants",
+      "average room size",
+      "staff shoe size"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The metric directly measures the delay the improvement targets.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-service-sector-030",
+    "section": "Aptitude for Service Sector",
+    "topic": "Professional Boundaries",
+    "difficulty": "medium",
+    "question": "A guest offers an employee a valuable personal gift in return for bypassing a policy. The employee should",
+    "options": [
+      "accept and keep the arrangement secret",
+      "change the policy for that guest only",
+      "decline the improper exchange and follow the property’s ethics/escalation policy",
+      "ask for a more expensive gift"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Cash discrepancies require transparent reporting and documented reconciliation; concealment undermines controls.",
+    "explanation": "Policies should not be bypassed in exchange for personal benefit.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-028",
-    "section": "Aptitude for Service Sector",
-    "topic": "Conflict de-escalation",
-    "difficulty": "hard",
-    "question": "Two guests begin arguing loudly in a common area. What is the best initial service response if there is no immediate physical threat?",
-    "options": [
-      "Take sides with the guest who speaks first.",
-      "Record the argument for social media.",
-      "Shout over both guests.",
-      "Approach calmly, set respectful boundaries, try to separate the discussion from other guests, and call appropriate support if escalation continues."
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Calm boundary-setting and appropriate support can de-escalate while protecting other guests and staff.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-029",
-    "section": "Aptitude for Service Sector",
-    "topic": "Sustainability communication",
-    "difficulty": "medium",
-    "question": "A hotel offers optional linen reuse to reduce water and energy use. How should staff present the programme?",
-    "options": [
-      "Explain the option and its purpose accurately, while respecting the guest’s choice.",
-      "Tell guests participation is mandatory when it is not.",
-      "Claim the programme has no operational benefit.",
-      "Hide clean linen from guests who decline."
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Optional sustainability programmes should be communicated honestly and without coercion.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-ss-030",
-    "section": "Aptitude for Service Sector",
-    "topic": "Prioritisation",
-    "difficulty": "hard",
-    "question": "At the same moment, a guest asks for restaurant directions, another reports smoke smell in a corridor, and a phone begins ringing. What should the employee prioritise?",
-    "options": [
-      "The restaurant directions because that guest arrived first.",
-      "The potential smoke hazard, while quickly alerting appropriate safety support and then managing the other requests.",
-      "Whichever task is easiest.",
-      "The ringing phone."
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A potential safety hazard takes priority over routine service requests, while other requests should be acknowledged as soon as possible.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];

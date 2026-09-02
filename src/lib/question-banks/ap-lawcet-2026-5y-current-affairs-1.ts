@@ -2,86 +2,158 @@ import type { Question } from '../questions';
 
 export const AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1: Question[] = [
   {
-    "id": "ap-lawcet-2026-5y-ca-001",
+    "id": "ap-lawcet-2026-5y-current-affairs-001",
     "section": "Current Affairs",
-    "topic": "Awards",
+    "topic": "Current Affairs — National Awards",
     "difficulty": "easy",
-    "question": "At the 98th Academy Awards held in 2026, which film won Best Picture?",
+    "question": "How many Padma Awards were approved for 2026, counting a duo case as one award?",
     "options": [
-      "Sinners",
-      "Hamnet",
-      "F1",
-      "One Battle after Another"
+      "121",
+      "131",
+      "126",
+      "141"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The Academy listed One Battle after Another as the 2026 Best Picture winner.",
+    "explanation": "The 2026 Padma Awards announcement listed 131 awards in total.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-002",
+    "id": "ap-lawcet-2026-5y-current-affairs-002",
     "section": "Current Affairs",
-    "topic": "Music awards",
-    "difficulty": "easy",
-    "question": "Which artist won the 2026 Grammy Award for Album of the Year with 'DeB\u00cd TiRAR M\u00e1S FOToS'?",
+    "topic": "Current Affairs — National Awards",
+    "difficulty": "medium",
+    "question": "How many Padma Vibhushan awards were in the 2026 Padma Awards list?",
     "options": [
-      "Kendrick Lamar",
-      "Taylor Swift",
-      "Bad Bunny",
-      "Billie Eilish"
+      "5",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The 2026 list comprised 5 Padma Vibhushan awards.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-003",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — National Awards",
+    "difficulty": "medium",
+    "question": "How many Padma Bhushan awards were announced for 2026?",
+    "options": [
+      "13",
+      "10",
+      "15",
+      "18"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The 2026 Padma list included 13 Padma Bhushan awards.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-004",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — National Awards",
+    "difficulty": "medium",
+    "question": "How many Padma Shri awards were announced for 2026?",
+    "options": [
+      "103",
+      "118",
+      "113",
+      "123"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Bad Bunny won Album of the Year at the 68th Grammy Awards for DeB\u00cd TiRAR M\u00e1S FOToS.",
+    "explanation": "The 2026 Padma list included 113 Padma Shri awards.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-003",
+    "id": "ap-lawcet-2026-5y-current-affairs-005",
     "section": "Current Affairs",
-    "topic": "Tennis",
-    "difficulty": "easy",
-    "question": "Who won the men's singles title at the Australian Open 2026?",
+    "topic": "Current Affairs — National Awards",
+    "difficulty": "medium",
+    "question": "According to the 2026 Padma Awards announcement, how many awardees were women?",
     "options": [
-      "Jannik Sinner",
-      "Novak Djokovic",
-      "Alexander Zverev",
-      "Carlos Alcaraz"
+      "15",
+      "17",
+      "21",
+      "19"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Carlos Alcaraz was the Australian Open 2026 men's singles champion.",
+    "explanation": "The official announcement stated that 19 of the awardees were women.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-004",
+    "id": "ap-lawcet-2026-5y-current-affairs-006",
     "section": "Current Affairs",
-    "topic": "Tennis",
+    "topic": "Current Affairs — Tennis",
     "difficulty": "easy",
-    "question": "Who won the women's singles title at the Australian Open 2026?",
+    "question": "Who won the Australian Open 2026 men’s singles title?",
+    "options": [
+      "Novak Djokovic",
+      "Jannik Sinner",
+      "Carlos Alcaraz",
+      "Alexander Zverev"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Carlos Alcaraz defeated Novak Djokovic in the 2026 men’s final.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-007",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Tennis",
+    "difficulty": "easy",
+    "question": "Who won the Australian Open 2026 women’s singles title?",
     "options": [
       "Aryna Sabalenka",
-      "Iga \u015awi\u0105tek",
+      "Iga Świątek",
       "Coco Gauff",
       "Elena Rybakina"
     ],
@@ -89,380 +161,500 @@ export const AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1: Question[] = [
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Elena Rybakina won the Australian Open 2026 women's singles title.",
+    "explanation": "Elena Rybakina defeated Aryna Sabalenka to win the 2026 women’s title.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-005",
+    "id": "ap-lawcet-2026-5y-current-affairs-008",
     "section": "Current Affairs",
-    "topic": "Cricket",
-    "difficulty": "easy",
-    "question": "Which team won the ICC Men's T20 World Cup 2026?",
+    "topic": "Current Affairs — Tennis",
+    "difficulty": "medium",
+    "question": "Whom did Carlos Alcaraz defeat in the Australian Open 2026 men’s singles final?",
     "options": [
-      "New Zealand",
-      "India",
-      "Australia",
-      "South Africa"
+      "Jannik Sinner",
+      "Novak Djokovic",
+      "Daniil Medvedev",
+      "Alexander Zverev"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "India defeated New Zealand in the final on 8 March 2026 and retained the T20 World Cup.",
+    "explanation": "Alcaraz defeated Novak Djokovic in four sets in the final.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-006",
+    "id": "ap-lawcet-2026-5y-current-affairs-009",
     "section": "Current Affairs",
-    "topic": "Cricket",
+    "topic": "Current Affairs — Tennis",
     "difficulty": "medium",
-    "question": "India defeated which team in the final of the ICC Men's T20 World Cup 2026?",
+    "question": "Whom did Elena Rybakina defeat in the Australian Open 2026 women’s singles final?",
     "options": [
-      "England",
-      "South Africa",
-      "New Zealand",
-      "Pakistan"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "New Zealand were India's opponents in the 2026 T20 World Cup final.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-007",
-    "section": "Current Affairs",
-    "topic": "Cricket",
-    "difficulty": "easy",
-    "question": "Which country won its first ICC Women's Cricket World Cup title in 2025?",
-    "options": [
-      "India",
-      "South Africa",
-      "Sri Lanka",
-      "Pakistan"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Host nation India beat South Africa in the final to win its maiden Women's Cricket World Cup title.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-008",
-    "section": "Current Affairs",
-    "topic": "Cricket",
-    "difficulty": "medium",
-    "question": "Which team finished runner-up to India at the ICC Women's Cricket World Cup 2025?",
-    "options": [
-      "Australia",
-      "South Africa",
-      "England",
-      "New Zealand"
+      "Iga Świątek",
+      "Aryna Sabalenka",
+      "Coco Gauff",
+      "Madison Keys"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "South Africa lost the 2025 final to India by 52 runs.",
+    "explanation": "Rybakina beat Aryna Sabalenka in three sets.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-009",
+    "id": "ap-lawcet-2026-5y-current-affairs-010",
     "section": "Current Affairs",
-    "topic": "National events",
-    "difficulty": "medium",
-    "question": "The chief guests for India's Republic Day Parade in 2026 were Antonio Costa and Ursula von der Leyen, representing which regional organisation?",
-    "options": [
-      "ASEAN",
-      "European Union",
-      "African Union",
-      "SAARC"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Antonio Costa was President of the European Council and Ursula von der Leyen President of the European Commission, making the European Union the represented regional organisation.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-010",
-    "section": "Current Affairs",
-    "topic": "Nobel Prize",
-    "difficulty": "easy",
-    "question": "Who received the Nobel Peace Prize for 2025?",
-    "options": [
-      "Narges Mohammadi",
-      "Ant\u00f3nio Guterres",
-      "Maria Corina Machado",
-      "Sviatlana Tsikhanouskaya"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The Norwegian Nobel Committee awarded the 2025 Peace Prize to Venezuelan democracy advocate Maria Corina Machado.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-011",
-    "section": "Current Affairs",
-    "topic": "Nobel Prize",
-    "difficulty": "easy",
-    "question": "The Nobel Prize in Literature 2025 was awarded to which author?",
-    "options": [
-      "Han Kang",
-      "L\u00e1szl\u00f3 Krasznahorkai",
-      "Salman Rushdie",
-      "Olga Tokarczuk"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The Swedish Academy awarded the 2025 Literature Nobel to Hungarian author L\u00e1szl\u00f3 Krasznahorkai.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-012",
-    "section": "Current Affairs",
-    "topic": "Nobel Prize",
-    "difficulty": "medium",
-    "question": "John Clarke, Michel H. Devoret and John M. Martinis shared the 2025 Nobel Prize in which field?",
-    "options": [
-      "Physics",
-      "Chemistry",
-      "Economic Sciences",
-      "Physiology or Medicine"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "They received the 2025 Physics Nobel for macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-013",
-    "section": "Current Affairs",
-    "topic": "Nobel Prize",
-    "difficulty": "medium",
-    "question": "The 2025 Nobel Prize in Chemistry recognised the development of",
-    "options": [
-      "metal\u2013organic frameworks",
-      "mRNA vaccines",
-      "CRISPR gene editing",
-      "lithium-ion batteries"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Susumu Kitagawa, Richard Robson and Omar M. Yaghi were awarded for development of metal\u2013organic frameworks.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-014",
-    "section": "Current Affairs",
-    "topic": "Nobel Prize",
-    "difficulty": "medium",
-    "question": "The 2025 Nobel Prize in Physiology or Medicine recognised discoveries concerning",
-    "options": [
-      "plate tectonics",
-      "gravitational waves",
-      "peripheral immune tolerance",
-      "quantum dots"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Mary E. Brunkow, Fred Ramsdell and Shimon Sakaguchi were honoured for discoveries concerning peripheral immune tolerance.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-015",
-    "section": "Current Affairs",
-    "topic": "Nobel Prize",
+    "topic": "Current Affairs — Tennis",
     "difficulty": "hard",
-    "question": "Joel Mokyr, Philippe Aghion and Peter Howitt shared the 2025 prize in Economic Sciences for work centred on",
+    "question": "Carlos Alcaraz’s Australian Open 2026 victory completed which career achievement?",
     "options": [
-      "auction design",
-      "bank runs",
-      "behavioural nudges",
-      "innovation-driven economic growth"
+      "A calendar-year Golden Slam",
+      "A doubles career Grand Slam",
+      "A Davis Cup clean sweep",
+      "A career Grand Slam"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The 2025 economic sciences prize recognised explanations of innovation-driven growth, including creative destruction.",
+    "explanation": "The Australian Open was the missing major needed for Alcaraz to complete a career Grand Slam.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-016",
+    "id": "ap-lawcet-2026-5y-current-affairs-011",
     "section": "Current Affairs",
-    "topic": "Literary awards",
+    "topic": "Current Affairs — Music",
     "difficulty": "easy",
-    "question": "Which novel won the Booker Prize 2025?",
+    "question": "Which artist won Album of the Year at the 2026 Grammy Awards?",
     "options": [
-      "Flesh",
-      "Heart Lamp",
-      "Orbital",
-      "The Safekeep"
+      "Kendrick Lamar",
+      "Bad Bunny",
+      "Lady Gaga",
+      "Sabrina Carpenter"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "David Szalay's novel Flesh won the 2025 Booker Prize.",
+    "explanation": "Bad Bunny won Album of the Year at the 68th Grammy Awards.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-017",
+    "id": "ap-lawcet-2026-5y-current-affairs-012",
     "section": "Current Affairs",
-    "topic": "Literary awards",
-    "difficulty": "easy",
-    "question": "Who wrote the Booker Prize 2025-winning novel 'Flesh'?",
+    "topic": "Current Affairs — Music",
+    "difficulty": "medium",
+    "question": "Which album won Album of the Year at the 2026 Grammys?",
     "options": [
-      "Percival Everett",
-      "Samantha Harvey",
-      "David Szalay",
-      "Max Porter"
+      "GNX",
+      "MAYHEM",
+      "DeBÍ TiRAR MáS FOToS",
+      "SWAG"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Flesh is by David Szalay.",
+    "explanation": "Bad Bunny’s DeBÍ TiRAR MáS FOToS won Album of the Year.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-018",
+    "id": "ap-lawcet-2026-5y-current-affairs-013",
     "section": "Current Affairs",
-    "topic": "Literary awards",
+    "topic": "Current Affairs — Music",
     "difficulty": "easy",
-    "question": "Which work won the International Booker Prize 2025?",
+    "question": "Which recording won Record of the Year at the 2026 Grammys?",
     "options": [
-      "Heart Lamp",
-      "Flesh",
-      "Kairos",
-      "Tomb of Sand"
+      "WILDFLOWER",
+      "Abracadabra",
+      "DtMF",
+      "luther"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "“luther” won Record of the Year.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-014",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Music",
+    "difficulty": "medium",
+    "question": "The 2026 Grammy Record of the Year “luther” was credited to which artists?",
+    "options": [
+      "Bad Bunny and Rosalía",
+      "Lady Gaga and Bruno Mars",
+      "Billie Eilish and FINNEAS",
+      "Kendrick Lamar and SZA"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "“luther” is by Kendrick Lamar with SZA.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-015",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Music",
+    "difficulty": "medium",
+    "question": "Which song won Song of the Year at the 2026 Grammy Awards?",
+    "options": [
+      "WILDFLOWER",
+      "luther",
+      "APT.",
+      "Golden"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Heart Lamp by Banu Mushtaq, translated by Deepa Bhasthi, won the International Booker Prize 2025.",
+    "explanation": "The Grammy winners list names WILDFLOWER as Song of the Year.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-019",
+    "id": "ap-lawcet-2026-5y-current-affairs-016",
     "section": "Current Affairs",
-    "topic": "Literary awards",
+    "topic": "Current Affairs — Music",
     "difficulty": "medium",
-    "question": "The International Booker Prize 2025 winner 'Heart Lamp' was translated into English from which language?",
+    "question": "Who won Best New Artist at the 2026 Grammy Awards?",
     "options": [
-      "Malayalam",
-      "Marathi",
-      "Kannada",
-      "Bengali"
+      "Olivia Dean",
+      "Doechii",
+      "Chappell Roan",
+      "Leon Thomas"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Olivia Dean won Best New Artist at the 2026 Grammys.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-017",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Cinema",
+    "difficulty": "easy",
+    "question": "Which film won Best Picture at the 98th Academy Awards in 2026?",
+    "options": [
+      "Sinners",
+      "Hamnet",
+      "Marty Supreme",
+      "One Battle after Another"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "One Battle after Another won Best Picture at the 98th Academy Awards.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-018",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Cinema",
+    "difficulty": "medium",
+    "question": "Who won the 2026 Academy Award for Directing?",
+    "options": [
+      "Ryan Coogler",
+      "Paul Thomas Anderson",
+      "Chloé Zhao",
+      "Josh Safdie"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Paul Thomas Anderson won Directing for One Battle after Another.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-019",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Cinema",
+    "difficulty": "medium",
+    "question": "Who won the 2026 Academy Award for Actor in a Leading Role?",
+    "options": [
+      "Michael B. Jordan",
+      "Timothée Chalamet",
+      "Leonardo DiCaprio",
+      "Wagner Moura"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Michael B. Jordan won Actor in a Leading Role for Sinners.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-020",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Cinema",
+    "difficulty": "medium",
+    "question": "Who won the 2026 Academy Award for Actress in a Leading Role?",
+    "options": [
+      "Emma Stone",
+      "Rose Byrne",
+      "Jessie Buckley",
+      "Renate Reinsve"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Heart Lamp was translated from Kannada by Deepa Bhasthi.",
+    "explanation": "Jessie Buckley won Actress in a Leading Role for Hamnet.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-020",
+    "id": "ap-lawcet-2026-5y-current-affairs-021",
     "section": "Current Affairs",
-    "topic": "Heritage",
+    "topic": "Current Affairs — Cinema",
     "difficulty": "medium",
-    "question": "The Maratha Military Landscapes of India, inscribed on UNESCO's World Heritage List in 2025, became India's which numbered World Heritage property?",
+    "question": "Which film won Animated Feature Film at the 98th Academy Awards?",
+    "options": [
+      "Zootopia 2",
+      "KPop Demon Hunters",
+      "Elio",
+      "Arco"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "KPop Demon Hunters won Animated Feature Film.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-022",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Cricket",
+    "difficulty": "easy",
+    "question": "Which team won the ICC Men’s Champions Trophy 2025?",
+    "options": [
+      "New Zealand",
+      "Australia",
+      "South Africa",
+      "India"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "India defeated New Zealand in the final to win the 2025 Champions Trophy.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-023",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Cricket",
+    "difficulty": "medium",
+    "question": "Which team finished runner-up in the ICC Men’s Champions Trophy 2025?",
+    "options": [
+      "Australia",
+      "Pakistan",
+      "New Zealand",
+      "South Africa"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "New Zealand lost the final to India and finished runner-up.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-024",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Cricket",
+    "difficulty": "medium",
+    "question": "The ICC Men’s Champions Trophy 2025 final between India and New Zealand was played in which city?",
+    "options": [
+      "Lahore",
+      "Karachi",
+      "Abu Dhabi",
+      "Dubai"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The final was played at Dubai International Stadium.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-025",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Space",
+    "difficulty": "easy",
+    "question": "NISAR is a joint Earth-observation mission of ISRO and which other space agency?",
+    "options": [
+      "ESA",
+      "JAXA",
+      "NASA",
+      "Roscosmos"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "NISAR is jointly developed by NASA and ISRO.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-026",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Space",
+    "difficulty": "medium",
+    "question": "On which date was NISAR launched in 2025?",
+    "options": [
+      "25 June 2025",
+      "30 July 2025",
+      "15 August 2025",
+      "2 October 2025"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "NISAR launched on 30 July 2025 from Satish Dhawan Space Centre.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-027",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Health and Culture",
+    "difficulty": "easy",
+    "question": "What was the theme of International Day of Yoga 2025?",
+    "options": [
+      "Yoga for One Earth, One Health",
+      "Yoga for Humanity",
+      "Yoga for Self and Society",
+      "Yoga for Peace and Progress"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The 2025 theme was “Yoga for One Earth, One Health.”",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-current-affairs-028",
+    "section": "Current Affairs",
+    "topic": "Current Affairs — Heritage",
+    "difficulty": "medium",
+    "question": "The 2025 inscription of the Maratha Military Landscapes made it India’s which numbered World Heritage property?",
     "options": [
       "44th",
       "42nd",
@@ -473,252 +665,60 @@ export const AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1: Question[] = [
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "UNESCO described the inscription as India's 44th World Heritage property.",
+    "explanation": "UNESCO described it as India’s 44th World Heritage property.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-021",
+    "id": "ap-lawcet-2026-5y-current-affairs-029",
     "section": "Current Affairs",
-    "topic": "Heritage",
+    "topic": "Current Affairs — Heritage",
     "difficulty": "medium",
-    "question": "How many major fortifications form the UNESCO World Heritage property 'Maratha Military Landscapes of India'?",
+    "question": "How many major fortifications form the Maratha Military Landscapes of India serial World Heritage property?",
     "options": [
-      "12",
-      "8",
       "10",
+      "11",
+      "12",
       "14"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The serial property comprises 12 major fortifications, mostly in Maharashtra and one in Tamil Nadu.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-022",
-    "section": "Current Affairs",
-    "topic": "Space",
-    "difficulty": "easy",
-    "question": "Which Indian astronaut became the first Indian to travel to the International Space Station in 2025?",
-    "options": [
-      "Rakesh Sharma",
-      "Prasanth Balakrishnan Nair",
-      "Angad Pratap",
-      "Shubhanshu Shukla"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Group Captain Shubhanshu Shukla travelled to the ISS on 25 June 2025.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-023",
-    "section": "Current Affairs",
-    "topic": "Space",
-    "difficulty": "medium",
-    "question": "Shubhanshu Shukla's 2025 mission to the International Space Station was part of",
-    "options": [
-      "Artemis II",
-      "Axiom-4",
-      "Gaganyaan G1",
-      "Crew-10"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "He flew as part of Axiom Mission 4.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-024",
-    "section": "Current Affairs",
-    "topic": "Space",
-    "difficulty": "easy",
-    "question": "NISAR, launched in July 2025, is a joint Earth-observation mission of ISRO and",
-    "options": [
-      "ESA",
-      "JAXA",
-      "Roscosmos",
-      "NASA"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "NISAR stands for NASA-ISRO Synthetic Aperture Radar and is a joint NASA-ISRO mission.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-025",
-    "section": "Current Affairs",
-    "topic": "Space",
-    "difficulty": "medium",
-    "question": "Which Indian launch vehicle placed NISAR into orbit on 30 July 2025?",
-    "options": [
-      "PSLV-C60",
-      "LVM3-M5",
-      "SSLV-D3",
-      "GSLV-F16"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "ISRO launched NISAR aboard GSLV-F16 from Sriharikota.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-026",
-    "section": "Current Affairs",
-    "topic": "Space",
-    "difficulty": "medium",
-    "question": "India became the fourth country to demonstrate space docking in January 2025 through which mission?",
-    "options": [
-      "Aditya-L1",
-      "SpaDeX",
-      "XPoSat",
-      "Chandrayaan-3"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The Space Docking Experiment, SpaDeX, successfully docked two spacecraft on 16 January 2025.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-027",
-    "section": "Current Affairs",
-    "topic": "Appointments",
-    "difficulty": "easy",
-    "question": "Who took charge as India's 26th Chief Election Commissioner in February 2025?",
-    "options": [
-      "Rajiv Kumar",
-      "Vivek Joshi",
-      "Gyanesh Kumar",
-      "Sukhbir Singh Sandhu"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Gyanesh Kumar took charge as the 26th Chief Election Commissioner on 19 February 2025.",
+    "explanation": "The UNESCO property includes twelve major fortifications.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-ca-028",
+    "id": "ap-lawcet-2026-5y-current-affairs-030",
     "section": "Current Affairs",
-    "topic": "Appointments",
-    "difficulty": "easy",
-    "question": "Who assumed charge as Chairman of ISRO in January 2025?",
+    "topic": "Current Affairs — Space",
+    "difficulty": "medium",
+    "question": "What was Shubhanshu Shukla’s crew role on Axiom Mission 4, launched in June 2025?",
     "options": [
-      "S. Somanath",
-      "V. Narayanan",
-      "K. Sivan",
-      "A. S. Kiran Kumar"
+      "Commander",
+      "Flight surgeon",
+      "Pilot",
+      "Ground controller"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Dr V. Narayanan assumed charge as Chairman, ISRO in January 2025.",
+    "explanation": "ISRO identifies Shubhanshu Shukla as the Ax-04 mission pilot.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-029",
-    "section": "Current Affairs",
-    "topic": "Judiciary",
-    "difficulty": "easy",
-    "question": "Who was sworn in as Chief Justice of India on 24 November 2025?",
-    "options": [
-      "Justice Surya Kant",
-      "Justice B. R. Gavai",
-      "Justice Sanjiv Khanna",
-      "Justice Vikram Nath"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Justice Surya Kant was sworn in as Chief Justice of India on 24 November 2025.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-ca-030",
-    "section": "Current Affairs",
-    "topic": "International events",
-    "difficulty": "easy",
-    "question": "Expo 2025, which ran from April to October 2025, was hosted in which Japanese city-region?",
-    "options": [
-      "Tokyo",
-      "Osaka, Kansai",
-      "Sapporo",
-      "Nagoya"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Expo 2025 was officially titled Expo 2025 Osaka, Kansai, Japan.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];

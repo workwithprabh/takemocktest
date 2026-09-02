@@ -232,7 +232,13 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('AIIMS BSc Nursing Entrance', 'Institute'),
           exam('AIIMS NORCET', 'National'),
           exam('GPAT', 'National'),
-          exam('NIPER JEE', 'National'),
+          exam('NIPER JEE', 'National', 'niper-jee'),
+        ],
+      },
+      {
+        name: 'AYUSH postgraduate entrance',
+        exams: [
+          exam('AIAPGET', 'National', 'aiapget'),
         ],
       },
     ],
@@ -330,8 +336,8 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         name: 'University admissions',
         exams: [
           exam('CUET UG', 'National', 'cuet-ug'),
-          exam('CUET PG', 'National'),
-          exam('ICAR AIEEA PG', 'National'),
+          exam('CUET PG', 'National', 'cuet-pg'),
+          exam('ICAR AIEEA PG', 'National', 'icar-aieea-pg'),
           exam('JAM', 'National'),
         ],
       },
@@ -412,7 +418,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Professional & judiciary',
         exams: [
-          exam('All India Bar Examination', 'National'),
+          exam('All India Bar Examination', 'National', 'aibe'),
           exam('State Judicial Services Examinations', 'State'),
         ],
       },
@@ -434,7 +440,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         name: 'Eligibility & research',
         exams: [
           exam('CTET', 'National', 'ctet'),
-          exam('UGC NET', 'National'),
+          exam('UGC NET', 'National', 'ugc-net'),
           exam('CSIR UGC NET', 'National'),
           exam('State Eligibility Test / SLET', 'State'),
           exam('DBT BET', 'National'),

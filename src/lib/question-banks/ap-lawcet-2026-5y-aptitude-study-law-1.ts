@@ -4,1441 +4,1441 @@ export const AP_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1: Question[] = [
   {
     "id": "ap-lawcet-2026-5y-law-001",
     "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
+    "topic": "Constitutional Basics",
     "difficulty": "easy",
-    "question": "Which writ is primarily used to require that a person held in allegedly unlawful detention be brought before a court?",
+    "question": "Which constitutional remedy is specifically used to require that a detained person be produced before a court so the legality of detention can be examined?",
     "options": [
       "Mandamus",
-      "Habeas corpus",
+      "Certiorari",
       "Quo warranto",
-      "Certiorari"
+      "Habeas corpus"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Habeas corpus is the classic remedy against unlawful detention.",
+    "explanation": "Habeas corpus is the writ associated with judicial examination of detention.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-002",
     "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
+    "topic": "Constitutional Basics",
     "difficulty": "easy",
-    "question": "Article 32 of the Constitution is directly associated with the right to approach which court for enforcement of Fundamental Rights?",
+    "question": "Article 14 of the Constitution of India primarily guarantees which principle?",
     "options": [
-      "Supreme Court of India",
-      "District Court only",
-      "Election Commission",
-      "Finance Commission"
+      "Equality before law and equal protection of laws",
+      "Freedom of trade only",
+      "Right to constitutional amendment",
+      "Universal adult education only"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Article 32 guarantees the right to move the Supreme Court for enforcement of Fundamental Rights.",
+    "explanation": "Article 14 concerns equality before law and equal protection of laws.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-003",
     "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
-    "difficulty": "medium",
-    "question": "Compared with Article 32, the writ jurisdiction of High Courts under Article 226 is broader because High Courts may issue writs",
-    "options": [
-      "only in criminal trials",
-      "only after Supreme Court permission",
-      "only against private contracts",
-      "for Fundamental Rights and for other legal purposes"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Article 226 empowers High Courts to issue writs for Fundamental Rights and for other purposes.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-law-004",
-    "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
+    "topic": "Constitutional Basics",
     "difficulty": "easy",
-    "question": "Which statement about Directive Principles of State Policy is correct?",
+    "question": "Article 21 protects life and personal liberty except according to what?",
     "options": [
-      "They are directly enforceable like Fundamental Rights",
-      "They apply only during a national emergency",
-      "They are ordinary parliamentary rules",
-      "They are non-justiciable principles intended to guide governance"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Directive Principles guide the State but are not directly enforceable by courts.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-law-005",
-    "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
-    "difficulty": "easy",
-    "question": "Fundamental Duties are listed principally in",
-    "options": [
-      "Article 14",
-      "Article 32",
-      "Article 51A",
-      "Article 368"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Article 51A sets out the Fundamental Duties.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-law-006",
-    "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
-    "difficulty": "medium",
-    "question": "Which House of Parliament is a continuing body and is not subject to dissolution?",
-    "options": [
-      "Lok Sabha",
-      "Rajya Sabha",
-      "Both Houses",
-      "Neither House"
+      "Executive convenience alone",
+      "Procedure established by law",
+      "Private contract alone",
+      "A newspaper notice"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Rajya Sabha is a permanent chamber; one-third of its members retire periodically.",
+    "explanation": "Article 21 uses the expression “procedure established by law.”",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-law-007",
+    "id": "ap-lawcet-2026-5y-law-004",
     "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
-    "difficulty": "easy",
-    "question": "The normal term of the Lok Sabha, unless sooner dissolved, is",
+    "topic": "Legal Method",
+    "difficulty": "medium",
+    "question": "In a judicial decision, the ratio decidendi is best understood as what?",
     "options": [
-      "four years",
-      "six years",
-      "five years",
-      "seven years"
+      "Every factual detail in the case",
+      "A judge’s biography",
+      "The legal principle necessary for the decision",
+      "The list of advocates only"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The Constitution provides a normal five-year term, subject to constitutional exceptions.",
+    "explanation": "Ratio decidendi is the legal reasoning or principle necessary to the decision and relevant to precedent.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-law-008",
+    "id": "ap-lawcet-2026-5y-law-005",
     "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
+    "topic": "Legal Method",
     "difficulty": "medium",
-    "question": "A Bill is certified as a Money Bill in the Lok Sabha by the",
+    "question": "An obiter dictum in a judgment is generally best described as what?",
     "options": [
-      "Speaker of the Lok Sabha",
-      "President of India",
-      "Chairman of the Rajya Sabha",
-      "Comptroller and Auditor General"
+      "The binding statutory text itself",
+      "The formal court fee",
+      "An observation not necessary to the decision",
+      "The final decree only"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The Speaker's certification determines whether a Bill is a Money Bill.",
+    "explanation": "Obiter dicta are observations not essential to the ratio of the decision.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "ap-lawcet-2026-5y-law-009",
+    "id": "ap-lawcet-2026-5y-law-006",
     "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional law",
-    "difficulty": "medium",
-    "question": "The doctrine of basic structure means that Parliament's amending power",
-    "options": [
-      "does not exist",
-      "extends only to schedules",
-      "requires approval of every State for every amendment",
-      "may amend the Constitution but cannot destroy its basic structure"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The basic-structure doctrine limits the amending power so the Constitution's basic features cannot be abrogated.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-law-010",
-    "section": "Aptitude for the Study of Law",
-    "topic": "Administrative law",
+    "topic": "Natural Justice",
     "difficulty": "easy",
-    "question": "The maxim audi alteram partem expresses which principle?",
+    "question": "The maxim audi alteram partem expresses which rule of natural justice?",
     "options": [
-      "No one should be judge in their own cause",
-      "Ignorance of law is no excuse",
-      "The thing speaks for itself",
+      "No one should judge their own cause",
+      "Ignorance of law is an excuse",
+      "Every promise is enforceable",
       "Hear the other side"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Audi alteram partem is the natural-justice requirement to give an affected person a fair opportunity to be heard.",
+    "explanation": "Audi alteram partem requires a fair opportunity to be heard.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-law-007",
+    "section": "Aptitude for the Study of Law",
+    "topic": "Natural Justice",
+    "difficulty": "easy",
+    "question": "The maxim nemo judex in causa sua is directed against what?",
+    "options": [
+      "Delay in filing a suit",
+      "Lack of consideration",
+      "Double taxation",
+      "Bias in decision-making"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The maxim means no one should be a judge in their own cause and addresses bias.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-law-008",
+    "section": "Aptitude for the Study of Law",
+    "topic": "Law of Torts",
+    "difficulty": "easy",
+    "question": "Negligence in tort law ordinarily involves a duty of care, breach, causation and what further element?",
+    "options": [
+      "A written contract in every case",
+      "Damage",
+      "A criminal conviction",
+      "Parliamentary privilege"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Actionable negligence ordinarily requires legally recognized damage resulting from breach.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-law-009",
+    "section": "Aptitude for the Study of Law",
+    "topic": "Law of Torts",
+    "difficulty": "medium",
+    "question": "Private nuisance most directly concerns unreasonable interference with a person’s use or enjoyment of what?",
+    "options": [
+      "A voting booth",
+      "A patent application only",
+      "Land",
+      "A criminal sentence"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Private nuisance traditionally protects interests connected with the use or enjoyment of land.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-law-010",
+    "section": "Aptitude for the Study of Law",
+    "topic": "Contract Basics",
+    "difficulty": "easy",
+    "question": "A valid acceptance in contract law must ordinarily correspond to what?",
+    "options": [
+      "An unrelated advertisement",
+      "A court judgment in another dispute",
+      "A later rumour",
+      "The offer"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Acceptance must be responsive to the offer and communicate assent according to applicable rules.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-011",
     "section": "Aptitude for the Study of Law",
-    "topic": "Administrative law",
+    "topic": "Contract Basics",
     "difficulty": "easy",
-    "question": "The maxim nemo judex in causa sua is aimed primarily at preventing",
+    "question": "In basic contract terminology, consideration is best described as what?",
     "options": [
-      "delay",
-      "delegated legislation",
-      "bias in decision-making",
-      "public-interest litigation"
+      "Something of legal value exchanged for a promise",
+      "A criminal punishment",
+      "A judicial precedent",
+      "A tax assessment only"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "It means no one should judge their own cause, guarding against bias.",
+    "explanation": "Consideration is the value or detriment exchanged in support of a promise, subject to legal rules.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-012",
     "section": "Aptitude for the Study of Law",
-    "topic": "Legal reasoning",
+    "topic": "Property and Possession",
     "difficulty": "easy",
-    "question": "Which term refers to the legal principle necessary for a court's decision and capable of operating as precedent?",
+    "question": "A lease most commonly involves transfer of a right to enjoy immovable property for what?",
     "options": [
-      "Ratio decidendi",
-      "Obiter dictum",
-      "Affidavit",
-      "Caveat"
+      "Permanent citizenship",
+      "A certain time or under an agreed tenure in return for consideration",
+      "A criminal sentence",
+      "A voting right"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Ratio decidendi is the rule of law necessary to the decision; obiter observations are not the binding ratio.",
+    "explanation": "A lease transfers a right to enjoy property for a term/tenure subject to its legal conditions and consideration.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-013",
     "section": "Aptitude for the Study of Law",
-    "topic": "Legal reasoning",
+    "topic": "Remedies",
     "difficulty": "easy",
-    "question": "Stare decisis is most closely connected with",
+    "question": "An injunction is a court order that commonly does what?",
     "options": [
-      "secret evidence",
-      "following binding precedent",
-      "tax assessment",
-      "executive privilege"
+      "Automatically amends the Constitution",
+      "Requires or restrains specified conduct",
+      "Registers every company",
+      "Elects a mayor"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Stare decisis is the doctrine of adhering to precedent within the judicial hierarchy.",
+    "explanation": "An injunction is a judicial remedy directing a person to do or refrain from specified acts.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-014",
     "section": "Aptitude for the Study of Law",
-    "topic": "Contract law",
-    "difficulty": "medium",
-    "question": "Under Indian contract law, consideration for a promise may generally move from",
+    "topic": "Criminal Law Basics",
+    "difficulty": "easy",
+    "question": "The term mens rea refers most closely to what?",
     "options": [
-      "the promisee only",
-      "the promisee or any other person",
-      "the promisor only",
-      "a court only"
+      "The mental element of an offence",
+      "The physical courtroom",
+      "The name of a statute",
+      "A civil court fee"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Indian law permits consideration to move from the promisee or any other person, subject to the other requirements of a valid contract.",
+    "explanation": "Mens rea refers to the legally relevant mental state accompanying prohibited conduct.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-015",
     "section": "Aptitude for the Study of Law",
-    "topic": "Contract law",
-    "difficulty": "easy",
-    "question": "An agreement made by a person who is a minor is generally treated in Indian contract law as",
+    "topic": "Criminal Procedure Basics",
+    "difficulty": "medium",
+    "question": "Bail most directly concerns what?",
     "options": [
-      "automatically enforceable",
-      "a criminal offence by itself",
-      "valid only if oral",
-      "void from the beginning"
+      "Transfer of ownership in land",
+      "Release from custody subject to legal conditions while proceedings continue",
+      "Registration of a trademark",
+      "A final finding of civil liability"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A minor is incompetent to contract; a minor's agreement is generally void ab initio.",
+    "explanation": "Bail concerns conditional release from custody pending or during criminal proceedings.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-016",
     "section": "Aptitude for the Study of Law",
-    "topic": "Tort law",
+    "topic": "Defamation",
     "difficulty": "easy",
-    "question": "The phrase volenti non fit injuria is most closely associated with which defence in tort?",
+    "question": "The law of defamation primarily protects a person’s interest in what?",
     "options": [
-      "Mistake of law",
-      "Consent to the risk",
-      "Double jeopardy",
-      "Res judicata"
+      "Weather information",
+      "Reputation",
+      "Land measurement only",
+      "Election scheduling"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The maxim refers to voluntary acceptance of a known risk.",
+    "explanation": "Defamation law protects reputation against legally actionable false statements, subject to defences and limits.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-017",
     "section": "Aptitude for the Study of Law",
-    "topic": "Tort law",
-    "difficulty": "medium",
-    "question": "An employer may be liable for a tort committed by an employee in the course of employment under the doctrine of",
+    "topic": "Legal Institutions",
+    "difficulty": "easy",
+    "question": "Which is the highest court in the judicial hierarchy of India?",
     "options": [
-      "promissory estoppel",
-      "res judicata",
-      "vicarious liability",
-      "sovereign immunity"
+      "District Court",
+      "National Green Tribunal",
+      "Lok Adalat",
+      "Supreme Court of India"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Vicarious liability can make an employer answer for an employee's tort committed in the course of employment.",
+    "explanation": "The Supreme Court of India is the apex court.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-018",
     "section": "Aptitude for the Study of Law",
-    "topic": "Criminal law",
-    "difficulty": "easy",
-    "question": "In elementary criminal-law analysis, actus reus refers mainly to",
+    "topic": "Public Law",
+    "difficulty": "medium",
+    "question": "A public authority gives a person a hearing, considers the relevant material, and records reasons. Which public-law value is most directly served?",
     "options": [
-      "the prohibited external act or conduct",
-      "the judge's reasoning",
-      "a civil remedy",
-      "the accused's social status"
+      "Retrospective punishment",
+      "Secret delegation",
+      "Private inheritance",
+      "Procedural fairness"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Actus reus is the external conduct element of an offence, while mens rea concerns the required mental element.",
+    "explanation": "Hearing relevant material and giving reasons are central features associated with procedural fairness.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-019",
     "section": "Aptitude for the Study of Law",
-    "topic": "Environmental law",
+    "topic": "Legal Reasoning",
     "difficulty": "medium",
-    "question": "Which principle places the financial burden of preventing or remedying pollution primarily on the person responsible for causing it?",
+    "question": "A legal rule is described as “prospective.” What does that ordinarily mean?",
     "options": [
-      "Separation of powers",
-      "Polluter pays principle",
-      "Ejusdem generis",
-      "Indoor management"
+      "It operates for the future rather than changing completed past conduct",
+      "It applies only outside India",
+      "It has no legal effect",
+      "It is always unwritten"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The polluter pays principle requires the polluter to bear pollution-control and remediation costs.",
+    "explanation": "Prospective operation is forward-looking rather than retroactively altering completed conduct.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-020",
     "section": "Aptitude for the Study of Law",
-    "topic": "Public international law",
-    "difficulty": "easy",
-    "question": "Pacta sunt servanda expresses the principle that",
+    "topic": "Principle–Fact: Negligence",
+    "difficulty": "medium",
+    "question": "Principle: A person is liable for negligence when they owe a duty of reasonable care, breach it, and the breach foreseeably causes damage. Fact: A café manager knows a floor tile is loose, ignores it for a week, and a customer trips on that tile and breaks a wrist. Applying only the principle, what follows?",
     "options": [
-      "treaties in force are to be performed in good faith",
-      "all borders are temporary",
-      "custom can never create law",
-      "international courts automatically override constitutions"
+      "There is no liability because the customer entered voluntarily",
+      "Liability arises only if the tile was intentionally loosened",
+      "The café manager is liable for negligence",
+      "There is no liability because property damage did not occur"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Pacta sunt servanda is the foundational treaty-law principle that agreements in force are to be performed in good faith.",
+    "explanation": "Known danger plus failure to take reasonable care foreseeably caused personal injury, satisfying the stated principle.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-021",
     "section": "Aptitude for the Study of Law",
-    "topic": "Negligence",
+    "topic": "Principle–Fact: Negligence",
     "difficulty": "medium",
-    "question": "Principle: A person is negligent when they fail to take reasonable care against a foreseeable risk and that failure causes damage. Facts: A caf\u00e9 employee mops a tiled entrance, leaves it wet without any warning sign, and a customer immediately slips and fractures a wrist. On these facts, the strongest conclusion is",
+    "question": "Principle: Negligence requires damage caused by the defendant’s breach. Fact: A driver carelessly parks across a marked lane, but the obstruction is removed before anyone suffers injury, loss or damage. Under the principle, which conclusion is best?",
     "options": [
-      "the caf\u00e9 is never liable for conditions on its floor",
-      "there can be liability only if the customer had bought food",
-      "negligence is indicated because a foreseeable slipping risk was left unmarked",
-      "the incident is automatically a crime"
+      "The driver must be liable because carelessness alone is enough",
+      "The driver is liable only for defamation",
+      "Damage is presumed whenever a lane is blocked",
+      "The stated negligence rule is not satisfied because no damage occurred"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A freshly wet tiled entrance presents a foreseeable slipping risk; leaving it without warning can be a failure of reasonable care that causes the injury.",
+    "explanation": "The stated principle expressly requires damage caused by breach; none occurred in the facts.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-022",
     "section": "Aptitude for the Study of Law",
-    "topic": "Negligence",
+    "topic": "Principle–Fact: Consent",
     "difficulty": "medium",
-    "question": "Principle: Negligence requires foreseeable harm. Facts: A library stores books normally on secure shelves. An unforeseeable, unprecedented meteorite strikes the roof and knocks a book onto a visitor. Which conclusion best follows from the principle?",
+    "question": "Principle: Valid consent to a physical contact exists when a competent person freely agrees to that specific contact after understanding its basic nature. Fact: Riya freely agrees to a routine blood-pressure cuff but expressly refuses an injection; the worker gives the injection anyway. Applying the principle, the injection is",
     "options": [
-      "The library is negligent merely because injury occurred",
-      "The visitor must always compensate the library",
-      "The event creates a contract automatically",
-      "The absence of a reasonably foreseeable risk weakens a negligence claim"
+      "Validly consented to because she entered the clinic",
+      "Validly consented to because both acts are medical",
+      "Outside the scope of Riya’s consent",
+      "Automatically consented to by agreeing to the cuff"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Negligence is not strict liability for every accident; the stated principle requires a foreseeable risk.",
+    "explanation": "Her consent was specific and expressly excluded the injection.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-023",
     "section": "Aptitude for the Study of Law",
-    "topic": "Duty of care",
+    "topic": "Principle–Fact: Trespass",
     "difficulty": "medium",
-    "question": "Principle: A driver must use reasonable care toward road users who may foreseeably be affected. Facts: Kiran sends a text while driving through a crowded market and hits a cyclist. Which element is most clearly established by the texting conduct?",
+    "question": "Principle: A person commits trespass to land if, without permission or other lawful authority, they intentionally enter land possessed by another. Fact: Dev deliberately climbs a locked boundary fence into Mira’s garden merely to take a shortcut, without permission. Dev",
     "options": [
-      "A valid contractual offer",
-      "A breach of the duty of reasonable care",
-      "Judicial immunity",
-      "Consent by the cyclist"
+      "Does not trespass because he intended only a shortcut",
+      "Does not trespass unless he damages a plant",
+      "Commits trespass only if he stays overnight",
+      "Commits trespass under the stated principle"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Texting while driving through a crowded area is a strong instance of failing to use reasonable care toward foreseeable road users.",
+    "explanation": "Dev intentionally entered possessed land without permission or authority.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-024",
     "section": "Aptitude for the Study of Law",
-    "topic": "Consent",
-    "difficulty": "medium",
-    "question": "Principle: Valid consent to a risk must be free and informed. Facts: A sports instructor hides a serious known equipment defect from a participant, who signs a general risk form and is injured because of the defect. Which is the best analysis?",
+    "topic": "Principle–Fact: Nuisance",
+    "difficulty": "hard",
+    "question": "Principle: A person is liable in private nuisance if their unreasonable use of land substantially interferes with a neighbour’s ordinary use and enjoyment of land. Fact: Every night for a month, a workshop operates an outdoor siren beside a residential boundary from midnight to 2 a.m., preventing the neighbour from sleeping. The best application is",
     "options": [
-      "The signature necessarily proves informed consent to the hidden defect",
-      "Consent is irrelevant in every sports case",
-      "Concealment of the known defect undermines informed consent to that specific risk",
-      "The participant becomes the equipment owner"
+      "There is no liability because sound is never an interference with land",
+      "There is no liability because the workshop owns its land",
+      "Liability exists only if the neighbour sells the house",
+      "The workshop is liable under the stated nuisance principle"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A person cannot knowingly accept a specific material risk that was deliberately concealed from them.",
+    "explanation": "Persistent nighttime noise substantially interfering with ordinary residential use fits the stated principle.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-025",
     "section": "Aptitude for the Study of Law",
-    "topic": "Contract formation",
+    "topic": "Principle–Fact: Defamation",
     "difficulty": "medium",
-    "question": "Principle: An offer must show a willingness to be bound on acceptance; a mere invitation to negotiate is not itself an offer. Facts: A shop displays a laptop with a price tag. Tara points to it and says she accepts the displayed price, but the shop has already reserved the item. Under the principle, the display is best treated as",
+    "question": "Principle: A person is liable for defamation if they publish to a third person a false statement of fact that harms another’s reputation, unless a stated defence applies. Fact: Knowing it is false, Arun emails a client that Beena forged company accounts; the client cancels Beena’s contract. No defence applies. Arun",
     "options": [
-      "a completed sale",
-      "an invitation to customers to make an offer",
-      "a court order",
-      "an acceptance by Tara"
+      "Is liable for defamation under the principle",
+      "Is not liable because email is private between two people",
+      "Is not liable unless the statement appears in a newspaper",
+      "Is liable only if Beena is physically injured"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Ordinary displays are generally invitations to offer, allowing the shop to decide whether to accept a customer's offer.",
+    "explanation": "The false factual allegation was communicated to a third person and harmed reputation; no defence applies.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-026",
     "section": "Aptitude for the Study of Law",
-    "topic": "Contract formation",
+    "topic": "Principle–Fact: Offer",
     "difficulty": "medium",
-    "question": "Principle: Acceptance must correspond to the offer; a purported acceptance that changes a material term is a counter-offer. Facts: Dev offers to sell a bicycle for \u20b98,000. Isha replies, 'I accept if you include a new helmet at the same price.' Her reply is",
+    "question": "Principle: An offer is a definite proposal intended to become binding on acceptance; a mere invitation to negotiate is not an offer. Fact: A message says, “I may sell my bicycle for around ₹8,000; tell me if you are interested.” Under the principle, the message is best classified as",
     "options": [
-      "an unconditional acceptance",
-      "a counter-offer",
-      "a completed transfer of ownership",
-      "void only because it is written"
+      "A definite offer already capable of immediate acceptance",
+      "An invitation to negotiate",
+      "A completed contract",
+      "An acceptance of an earlier offer"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Adding a new helmet as a condition changes the terms, so the reply is a counter-offer rather than an unqualified acceptance.",
+    "explanation": "The language is tentative and invites further discussion rather than immediate binding acceptance.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-027",
     "section": "Aptitude for the Study of Law",
-    "topic": "Contract law",
+    "topic": "Principle–Fact: Acceptance",
     "difficulty": "medium",
-    "question": "Principle: A promise obtained by coercion does not reflect free consent. Facts: X threatens to unlawfully damage Y's shop unless Y signs a sale agreement immediately. Y signs because of the threat. The key defect is",
+    "question": "Principle: If an offer requires acceptance by email before 6 p.m., an attempted acceptance sent by another method is ineffective unless the offeror waives the requirement. Fact: An offer requires email acceptance before 6 p.m. Priya posts a letter at 4 p.m.; no waiver occurs. Under the principle",
     "options": [
-      "lack of free consent due to coercion",
-      "absence of handwriting",
-      "lack of a witness in every contract",
-      "the fact that property is involved"
+      "There is no effective acceptance",
+      "The postal letter is necessarily effective",
+      "A contract exists because Priya acted before 6 p.m.",
+      "The offer becomes an advertisement"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The unlawful threat is used to obtain Y's consent, so the consent is not free under the stated principle.",
+    "explanation": "The stated principle makes the specified email method controlling absent waiver.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-028",
     "section": "Aptitude for the Study of Law",
-    "topic": "Contract law",
+    "topic": "Principle–Fact: Revocation",
     "difficulty": "medium",
-    "question": "Principle: Fraud includes a knowingly false material statement made to induce another to contract. Facts: A seller knows a car was submerged in a flood but tells a buyer, 'It has never suffered water damage,' intending the buyer to rely on the statement. This most directly indicates",
+    "question": "Principle: An offer may be revoked before effective acceptance if the revocation is communicated to the offeree. Fact: At 10 a.m. Sam offers to sell a camera. At noon Sam communicates revocation to Tara. Tara attempts acceptance at 1 p.m. The result is",
     "options": [
-      "a valid disclaimer",
-      "fraudulent misrepresentation",
-      "consideration moving from a stranger",
-      "a constitutional amendment"
+      "A contract because the original offer can never be revoked",
+      "A contract because Tara accepted the same day",
+      "No contract because the offer was revoked before acceptance",
+      "No contract only if Tara gives a reason"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The seller knowingly makes a false material representation to induce the transaction, fitting the stated fraud principle.",
+    "explanation": "The communicated revocation occurred before the attempted acceptance.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-029",
     "section": "Aptitude for the Study of Law",
-    "topic": "Contract remedies",
+    "topic": "Principle–Fact: Consideration",
     "difficulty": "medium",
-    "question": "Principle: Contract damages normally aim to place the injured party, so far as money can, in the position performance would have produced, subject to remoteness and mitigation. Facts: A supplier wrongfully fails to deliver goods, and the buyer reasonably purchases substitutes at a \u20b96,000 higher price. The most direct compensatory measure is",
+    "question": "Principle: Under this problem, a promise is enforceable only if the promisee gives or promises something of legal value in exchange. Fact: N says, “Next month I will gift you ₹5,000,” and P gives or promises nothing in return. Under the principle, the promise is",
     "options": [
-      "\u20b90 because substitute goods were found",
-      "automatic imprisonment of the supplier",
-      "the reasonable \u20b96,000 extra cost",
-      "transfer of the supplier's business"
+      "Enforceable because every promise is a contract",
+      "Enforceable because money is involved",
+      "Automatically a criminal obligation",
+      "Not enforceable for want of consideration"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The reasonable extra cover cost directly measures the buyer's loss from non-performance.",
+    "explanation": "The stated rule requires exchanged legal value, and none is given or promised by P.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-030",
     "section": "Aptitude for the Study of Law",
-    "topic": "Tort nuisance",
+    "topic": "Principle–Fact: Agency",
     "difficulty": "medium",
-    "question": "Principle: Private nuisance concerns substantial and unreasonable interference with another's use or enjoyment of land. Facts: A factory runs an exceptionally loud machine every night beside a residential home, repeatedly preventing sleep. This is most naturally analysed as",
+    "question": "Principle: A principal is bound by a contract made by an agent acting within the authority the principal actually granted. Fact: A shop owner authorizes Mira to buy up to 20 chairs at no more than ₹2,000 each. Mira buys 15 chairs at ₹1,900 each in the owner’s name. The owner is",
     "options": [
-      "private nuisance",
-      "habeas corpus",
-      "consideration",
-      "copyright registration"
+      "Not bound because only owners can ever contract",
+      "Not bound because 15 is less than 20",
+      "Bound by the purchase under the stated principle",
+      "Bound only if the seller knew Mira personally"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Repeated substantial noise affecting use and enjoyment of neighbouring land fits the nuisance principle.",
+    "explanation": "Mira acted within both the quantity and price limits of actual authority.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-031",
     "section": "Aptitude for the Study of Law",
-    "topic": "Defamation",
+    "topic": "Principle–Fact: Bailment",
     "difficulty": "medium",
-    "question": "Principle: Defamation requires publication of a defamatory statement about the claimant to at least one third person, subject to defences. Facts: A sends B a private note containing a false insult about B, and nobody else sees it. Which element is missing on these facts?",
+    "question": "Principle: A bailee must take the same reasonable care of entrusted goods that a prudent person would take of similar goods. Fact: A repair shop leaves a customer’s laptop overnight on an unlocked pavement despite having a secure storeroom; it is stolen. Applying the principle",
     "options": [
-      "A written statement",
-      "Reference to B",
-      "Publication to a third person",
-      "A communication"
+      "There is no breach because ownership stayed with the customer",
+      "There is no breach unless the thief is identified",
+      "The customer became the bailee",
+      "The repair shop breached its duty of care"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A communication only to the person defamed lacks publication to a third person, a core requirement of defamation.",
+    "explanation": "Leaving the laptop unsecured despite an available storeroom falls below the stated reasonable-care standard.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-032",
     "section": "Aptitude for the Study of Law",
-    "topic": "Vicarious liability",
+    "topic": "Principle–Fact: Vicarious Liability",
     "difficulty": "medium",
-    "question": "Principle: An employer may be vicariously liable for an employee's tort committed in the course of employment. Facts: A delivery driver negligently hits a pedestrian while making the employer's scheduled deliveries. The principle most strongly supports",
+    "question": "Principle: An employer is liable for an employee’s tort committed in the course of assigned work, but not for a purely personal act wholly unrelated to work. Fact: While making an assigned delivery, an employee negligently knocks over a pedestrian with the delivery cart. The employer",
     "options": [
-      "automatic immunity for the driver",
-      "possible employer liability as well as driver liability",
-      "liability only if the pedestrian was a customer",
-      "no civil claim because the driver was working"
+      "Is never liable for an employee’s negligence",
+      "Is not liable because the employee used a cart",
+      "Is liable under the stated principle",
+      "Is liable only if the pedestrian is also an employee"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The negligent driving occurred while carrying out assigned deliveries, placing it within the course of employment for the stated rule.",
+    "explanation": "The negligent act occurred while carrying out the assigned delivery.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-033",
     "section": "Aptitude for the Study of Law",
-    "topic": "Strict liability",
-    "difficulty": "hard",
-    "question": "Principle: A person who, for their own purposes, accumulates a dangerous thing likely to do mischief if it escapes may face strict liability when it escapes, subject to recognised defences. Facts: A company stores a large artificial reservoir of corrosive liquid; through no fault alleged here, the liquid escapes onto neighbouring land and causes damage. Which doctrine is most directly implicated by the principle?",
+    "topic": "Principle–Fact: Strict Rule",
+    "difficulty": "medium",
+    "question": "Principle: A facility that stores a specially dangerous chemical is liable for physical damage caused when that chemical escapes, even if reasonable care was used, unless the damage was caused solely by the claimant. Fact: Chemical escapes after a flawless tank unexpectedly fractures and damages a neighbour’s wall; the neighbour did nothing to cause it. The facility",
     "options": [
-      "Res judicata",
-      "Promissory estoppel",
-      "Double jeopardy",
-      "Strict liability for escape of a dangerous thing"
+      "Is not liable because reasonable care was used",
+      "Is liable under the stated principle",
+      "Is not liable because the fracture was unexpected",
+      "Is liable only if an employee acted intentionally"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The facts mirror the elements stated: accumulation, dangerous thing, escape, and resulting damage.",
+    "explanation": "The synthetic rule imposes liability for escape despite reasonable care, and the sole-claimant-cause exception does not apply.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-034",
     "section": "Aptitude for the Study of Law",
-    "topic": "Natural justice",
-    "difficulty": "medium",
-    "question": "Principle: A decision-maker should not decide a matter in which they have a direct financial interest. Facts: A licensing officer owns 40% of a company competing with the applicant and personally decides to reject the applicant's licence. The clearest concern is",
+    "topic": "Principle–Fact: Necessity",
+    "difficulty": "hard",
+    "question": "Principle: Under this problem, intentional interference with another’s property is justified by necessity only when it is reasonably required to prevent an imminent and substantially greater harm, and no less harmful practical option exists. Fact: To stop a fast-spreading kitchen fire from reaching occupied rooms, a rescuer breaks a locked glass door because no other immediate entry is possible. The interference is",
     "options": [
-      "lack of territorial jurisdiction because companies are involved",
-      "absence of consideration",
-      "bias contrary to natural justice",
-      "parliamentary privilege"
+      "Never justified because property was damaged",
+      "Unjustified because the rescuer lacked ownership",
+      "Justified only if the glass had no value",
+      "Justified by necessity under the stated principle"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A substantial financial interest in a competitor creates a direct bias concern under nemo judex in causa sua.",
+    "explanation": "Breaking the door was reasonably required to avert a greater imminent danger with no practical less harmful option.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-035",
     "section": "Aptitude for the Study of Law",
-    "topic": "Natural justice",
+    "topic": "Principle–Fact: Private Defence",
     "difficulty": "medium",
-    "question": "Principle: Before an authority imposes a serious adverse decision based on disputed allegations, the affected person should ordinarily receive notice and a fair chance to respond. Facts: A university expels a student for alleged cheating without telling the student the allegation or seeking any response. The principle points most directly to",
+    "question": "Principle: Defensive force is justified only to the extent reasonably necessary to stop an imminent unlawful attack; force used after the attack has clearly ended is not defensive. Fact: An attacker drops the stick, retreats, and runs away. The former target then chases the attacker for two streets and strikes them. The later strike is",
     "options": [
-      "a denial of the right to be heard",
-      "a valid waiver of every hearing",
-      "strict criminal liability",
-      "a completed contract"
+      "Automatically justified because an attack occurred earlier",
+      "Not justified by the stated defence principle",
+      "Justified because pursuit is always defensive",
+      "Justified only because the weapon was a stick"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "No notice or opportunity to answer a serious allegation breaches the hearing limb of natural justice under the stated principle.",
+    "explanation": "Once the attack clearly ended and the attacker retreated, the later pursuit strike was not necessary to stop an imminent attack.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-036",
     "section": "Aptitude for the Study of Law",
-    "topic": "Administrative law",
+    "topic": "Principle–Fact: Mistake",
     "difficulty": "medium",
-    "question": "Principle: Delegated legislation must stay within the authority granted by the parent statute. Facts: A statute authorises rules only about application forms, but a ministry rule creates a new imprisonment penalty. The strongest challenge is that the rule",
+    "question": "Principle: Under this problem, a person is excused when they honestly and reasonably act on a mistake of fact that, if true, would make the act lawful. A mistake of law gives no excuse. Fact: A guard reasonably believes a visitor is holding the guard’s own identical umbrella after the rack tags were swapped, and retrieves it. If the believed fact were true, retrieval would be lawful. The guard",
     "options": [
-      "must be valid because ministries cannot exceed authority",
-      "is a constitutional amendment",
-      "is protected by double jeopardy",
-      "may be ultra vires the parent statute"
+      "Has only a mistake of law",
+      "Falls within the stated mistake-of-fact excuse",
+      "Cannot rely on any mistake because umbrellas are property",
+      "Is excused only if the visitor agrees later"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Creating a penal power outside the statute's delegated subject may exceed the parent authority and be ultra vires.",
+    "explanation": "The mistake concerns a fact—ownership—and is stated to be honest, reasonable, and legally exculpatory if true.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-037",
     "section": "Aptitude for the Study of Law",
-    "topic": "Constitutional equality",
+    "topic": "Principle–Fact: Undue Influence",
     "difficulty": "medium",
-    "question": "Principle: Equality permits reasonable classification if it is based on an intelligible differentia connected rationally with the law's objective. Facts: A scholarship for students from remote islands gives travel support because those students face unusually high travel costs. Which is the best analysis under the principle?",
+    "question": "Principle: A transaction is voidable under this problem when one party dominates the will of another because of a relationship of trust and uses that position to obtain a grossly unfair benefit. Fact: A financial adviser trusted by an elderly client pressures the client to sell a valuable asset to the adviser for one-tenth of its market value. The transaction is",
     "options": [
-      "Any classification is automatically unconstitutional",
-      "The classification may be valid if remoteness is intelligibly linked to travel-cost relief",
-      "Only age-based classifications are allowed",
-      "The scholarship violates equality because benefits must always be identical"
+      "Automatically fair because it is in writing",
+      "Unaffected because advisers can always buy client assets",
+      "Valid solely because some money was paid",
+      "Voidable under the stated principle"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The geographical distinction is intelligible and directly connected to the objective of offsetting unusually high travel costs.",
+    "explanation": "The facts state a trust relationship, dominance, pressure, and a grossly unfair benefit.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-038",
     "section": "Aptitude for the Study of Law",
-    "topic": "Freedom of speech",
+    "topic": "Principle–Fact: Equality",
     "difficulty": "medium",
-    "question": "Principle: Freedom of speech is constitutionally protected but may be subject to constitutionally permitted reasonable restrictions. Which statement best reflects the principle?",
+    "question": "Principle: A classification is valid under this problem only if it rests on an intelligible distinction and that distinction has a rational connection to the rule’s objective. Fact: A city limits entry to a fragile archive room to persons carrying food solely because it says this protects documents from food damage. The classification",
     "options": [
-      "Speech is absolute in every circumstance",
-      "Every criticism of government is automatically unlawful",
-      "Protection of speech and constitutionally authorised restrictions must both be considered",
-      "Only printed speech is protected"
+      "Fails because the distinction works against the stated objective",
+      "Is valid because every classification is valid",
+      "Is valid because food always protects documents",
+      "Fails only if the archive is privately owned"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The constitutional scheme protects speech while also recognising specified grounds for reasonable restriction.",
+    "explanation": "Allowing food-carriers while excluding others has no rational connection to protecting documents from food damage.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-039",
     "section": "Aptitude for the Study of Law",
-    "topic": "Personal liberty",
-    "difficulty": "medium",
-    "question": "Principle: A deprivation of personal liberty must follow legally valid procedure consistent with constitutional requirements. Facts: An officer detains a person for weeks solely because of personal dislike, without invoking any lawful authority. The strongest constitutional objection concerns",
+    "topic": "Principle–Fact: Equality",
+    "difficulty": "hard",
+    "question": "Principle: A classification is valid if it uses an intelligible distinction rationally connected to its objective. Fact: A laboratory bars visitors without required protective eyewear from a hazardous test room to reduce eye injuries. The rule",
     "options": [
-      "copyright",
-      "personal liberty and legality of the detention",
-      "company incorporation",
-      "tax residency"
+      "Fails because visitors can never be classified",
+      "Fails because safety is not an objective",
+      "Satisfies the stated classification test",
+      "Satisfies the test only if everyone is barred"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Detention without lawful authority directly raises personal-liberty and due-process concerns.",
+    "explanation": "Possession of required protective eyewear is an intelligible distinction directly connected to eye safety.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-040",
     "section": "Aptitude for the Study of Law",
-    "topic": "Writs",
+    "topic": "Principle–Fact: Hearing",
     "difficulty": "medium",
-    "question": "Principle: Mandamus commands a public authority to perform a public duty it has unlawfully failed to perform. Facts: A statutory licensing board refuses even to consider a complete application although the statute requires it to decide such applications. The most relevant writ is",
+    "question": "Principle: Before cancelling a licence for alleged misconduct, an authority must give the licensee notice of the allegation and a meaningful chance to respond, unless an emergency exception stated in the rule applies. Fact: With no emergency, an authority cancels Noor’s licence without telling Noor the allegation. The cancellation",
     "options": [
-      "Habeas corpus",
-      "Quo warranto",
-      "Prohibition against Parliament",
-      "Mandamus"
+      "Complies because notice is optional",
+      "Complies because a licence can never involve fairness",
+      "Breaches the stated hearing requirement",
+      "Breaches the rule only if Noor proves innocence first"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Mandamus is directed at failure by a public authority to perform a legally required public duty.",
+    "explanation": "No emergency exists, yet notice and opportunity to respond were omitted.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-041",
     "section": "Aptitude for the Study of Law",
-    "topic": "Writs",
+    "topic": "Principle–Fact: Bias",
     "difficulty": "medium",
-    "question": "Principle: Quo warranto can test whether a person lawfully holds a substantive public office. Facts: A person occupies a statutory public post despite clearly lacking a mandatory qualification for that office. The most directly relevant writ is",
+    "question": "Principle: A decision-maker must not decide a dispute in which they have a direct financial interest. Fact: A committee member owns 40% of a company bidding for the contract the member is deciding. Under the principle, the member",
     "options": [
-      "Habeas corpus",
-      "Mandamus to a private friend",
-      "Quo warranto",
-      "Certiorari against a contract"
+      "May decide because ownership is irrelevant",
+      "Must not decide the bid",
+      "Must decide because shareholders are experts",
+      "May decide if the company submits the lowest bid"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Quo warranto challenges the legal authority by which a person holds a public office.",
+    "explanation": "A 40% ownership interest is a direct financial interest in the outcome.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-042",
     "section": "Aptitude for the Study of Law",
-    "topic": "Judicial review",
-    "difficulty": "medium",
-    "question": "Principle: Certiorari may quash a decision of an inferior court or tribunal made without jurisdiction or in breach of natural justice. Facts: A tribunal decides a matter the statute expressly places outside its powers. The most relevant remedy is",
+    "topic": "Principle–Fact: Relevant Considerations",
+    "difficulty": "hard",
+    "question": "Principle: A public power must be used only for the purpose for which it was granted and on relevant considerations. Fact: A statute permits temporary street closure only to address immediate safety hazards. An officer closes a safe street solely to punish a shopkeeper for criticism. The closure",
     "options": [
-      "A money bill",
-      "A private treaty",
-      "Certiorari",
-      "Parliamentary adjournment"
+      "Is valid because officers may use any purpose",
+      "Misuses the power under the stated principle",
+      "Is valid because criticism is a safety hazard by definition",
+      "Is invalid only if the shopkeeper owns the street"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A jurisdictional excess by a tribunal is a classic ground for certiorari.",
+    "explanation": "The closure serves punishment, not the safety purpose for which the power was granted.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-043",
     "section": "Aptitude for the Study of Law",
-    "topic": "Criminal responsibility",
+    "topic": "Principle–Fact: Reasons",
     "difficulty": "medium",
-    "question": "Principle: Criminal liability ordinarily requires a prohibited act together with the mental state required by the offence. Facts: A statute expressly creates strict liability for a narrowly defined regulatory offence. Which statement follows?",
+    "question": "Principle: Where this rule applies, an authority must disclose a brief statement of the decisive reasons for rejecting an application. Fact: The authority writes only “Rejected” and provides no reasons. The authority",
     "options": [
-      "The statute may dispense with a mental-state requirement for that regulatory offence",
-      "Mens rea can never matter in criminal law",
-      "Strict liability automatically makes the law unconstitutional",
-      "Only civil courts can apply the statute"
+      "Has complied because one word is always a reason",
+      "Has complied if the applicant can guess the reasons",
+      "Need not comply because applications are private contracts",
+      "Has not complied with the stated rule"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Although mens rea is ordinarily important, a valid statute may expressly impose strict liability for a specified regulatory offence.",
+    "explanation": "“Rejected” states the outcome but not the decisive reasons required by the principle.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-044",
     "section": "Aptitude for the Study of Law",
-    "topic": "Mistake",
-    "difficulty": "medium",
-    "question": "Principle: Ignorance of law generally does not excuse unlawful conduct, while an honest mistake of fact may matter where it negatives a required mental element. Facts: R takes a suitcase honestly believing it is his identical suitcase. This fact is most relevant because it may negate",
+    "topic": "Principle–Fact: Legitimate Expectation",
+    "difficulty": "hard",
+    "question": "Principle: Under this problem, a public authority that has consistently followed a clear published procedure must ordinarily consider giving affected persons a fair opportunity to comment before abruptly abandoning it, unless an overriding public interest requires immediate change. Fact: For ten years a board published draft route changes for comment; with no urgency, it secretly changes all routes overnight. The best application is",
     "options": [
-      "the physical act of taking",
-      "a required dishonest intention",
-      "the existence of property",
-      "the jurisdiction of every court"
+      "The board failed the stated procedural expectation",
+      "The board complied because past procedure never matters",
+      "The board must keep every route forever",
+      "The rule applies only to criminal trials"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "An honest factual mistake about ownership can negate dishonest intent even though the physical taking occurred.",
+    "explanation": "The long, clear practice created the stated procedural expectation, and no urgency or overriding interest is given.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-045",
     "section": "Aptitude for the Study of Law",
-    "topic": "Private defence",
+    "topic": "Principle–Fact: Contract Damages",
     "difficulty": "medium",
-    "question": "Principle: Defensive force must be necessary and proportionate to the threat as legally understood. Facts: After an attacker drops a stick and runs away, the threatened person chases the attacker for two kilometres and seriously injures them solely in revenge. The principle most strongly suggests",
+    "question": "Principle: Damages for breach compensate loss caused by the breach, but the claimant must take reasonable steps to avoid avoidable additional loss. Fact: After a supplier wrongfully cancels, the buyer can immediately obtain identical goods nearby for ₹100 more but refuses and waits until they cost ₹1,000 more without reason. Under the principle",
     "options": [
-      "all retaliatory force is private defence",
-      "distance never matters",
-      "private defence applies only to property",
-      "the later revenge is not justified as necessary defensive force"
+      "The buyer automatically receives every later loss",
+      "The buyer receives no damages at all",
+      "The buyer may be denied the avoidable part of the later loss",
+      "The supplier can never be liable for breach"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Once the immediate threat has ended, a revenge pursuit is not necessary defensive force under the stated principle.",
+    "explanation": "The duty described requires reasonable mitigation, so avoidable additional loss may not be recoverable.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-046",
     "section": "Aptitude for the Study of Law",
-    "topic": "Attempt",
+    "topic": "Principle–Fact: Liquidated Sum",
     "difficulty": "medium",
-    "question": "Principle: Mere preparation is generally distinct from an attempt, which requires conduct sufficiently proximate to committing the offence. Facts: P buys ordinary rope intending someday to use it in a theft but takes no step toward any identified property. On the principle alone, P's conduct is best described as",
+    "question": "Principle: Under this problem, a contract term requiring a fixed sum on breach is enforceable only to the extent it is a reasonable pre-estimate of likely loss, not a punishment grossly out of proportion to possible loss. Fact: Late return of a ₹500 access card triggers a ₹5,00,000 charge although likely loss is at most ₹1,000. The fixed sum is",
     "options": [
-      "mere preparation",
-      "completed theft",
-      "automatic attempt",
-      "civil defamation"
+      "Automatically enforceable because it is written",
+      "A reasonable pre-estimate by definition",
+      "Punitive and not enforceable under the stated principle",
+      "Enforceable only because the card has a number"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Buying a common item without a proximate step toward a specific theft remains preparatory on the stated facts.",
+    "explanation": "The stipulated amount is grossly disproportionate to the stated likely loss and therefore punitive under the synthetic rule.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-047",
     "section": "Aptitude for the Study of Law",
-    "topic": "Property law",
-    "difficulty": "easy",
-    "question": "Which transaction most characteristically transfers ownership of property in exchange for a price?",
+    "topic": "Principle–Fact: Causation",
+    "difficulty": "hard",
+    "question": "Principle: A defendant is liable for damage only if the damage would not have occurred but for the defendant’s breach, unless the rule states another test. Fact: A courier delivers a package one day late, but a lightning strike had already destroyed the recipient’s warehouse before the promised delivery time; the claimed warehouse loss would have occurred anyway. The courier",
     "options": [
-      "Lease",
-      "Licence",
-      "Bailment",
-      "Sale"
+      "Did not cause the warehouse loss under the stated test",
+      "Caused the loss because any late delivery causes all later loss",
+      "Caused the lightning strike",
+      "Is liable because causation is irrelevant"
     ],
-    "correctIndex": 3,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A sale transfers ownership for a price; a lease transfers a right to enjoy for a term, while licence and bailment do not transfer ownership.",
+    "explanation": "The warehouse loss would have occurred even without the late delivery, so but-for causation fails.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-048",
     "section": "Aptitude for the Study of Law",
-    "topic": "Property law",
-    "difficulty": "medium",
-    "question": "Principle: A lease grants a right to enjoy property for a certain time in return for consideration, without transferring ownership itself. Facts: Owner O lets T occupy a flat for two years for monthly rent. The arrangement is most naturally a",
+    "topic": "Principle–Fact: Remoteness",
+    "difficulty": "hard",
+    "question": "Principle: Under this problem, damages are recoverable only for a type of loss that was reasonably foreseeable when the duty was breached. Fact: A clerk delays mailing a routine form by one hour; unknown to anyone, the form contained a lottery code that would have won a remote private contest closing that hour. The lost prize was not reasonably foreseeable. The prize loss is",
     "options": [
-      "lease",
-      "sale",
-      "gift of ownership",
-      "mortgage by deposit"
+      "Automatically recoverable because the delay was real",
+      "Foreseeable because all letters contain lottery codes",
+      "Too remote under the stated principle",
+      "Recoverable only if the clerk dislikes lotteries"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The limited right to enjoy the flat for a term against rent fits the lease principle.",
+    "explanation": "The stated test excludes types of loss that were not reasonably foreseeable at breach.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-049",
     "section": "Aptitude for the Study of Law",
-    "topic": "Company law",
-    "difficulty": "easy",
-    "question": "The doctrine of separate legal personality means that a registered company is generally",
+    "topic": "Principle–Fact: Defamation Defence",
+    "difficulty": "medium",
+    "question": "Principle: Under this problem, truth is a complete defence to a defamation claim based solely on falsity and reputational harm. Fact: A newspaper accurately reports, with proof, that a public company was fined by a regulator; the report harms the company’s reputation. The newspaper",
     "options": [
-      "legally identical to every shareholder",
-      "a legal person distinct from its shareholders",
-      "incapable of owning property",
-      "automatically a government department"
+      "Has the stated truth defence",
+      "Is liable because reputational harm always defeats truth",
+      "Is liable because companies cannot be reported on",
+      "Has a defence only if the company approves publication"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A company has a legal personality separate from its members, subject to recognised exceptions.",
+    "explanation": "The fact states the report is accurate and the synthetic rule makes truth a complete defence.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-050",
     "section": "Aptitude for the Study of Law",
-    "topic": "Company law",
+    "topic": "Principle–Fact: Occupier Safety",
     "difficulty": "medium",
-    "question": "Principle: An agent acting within actual authority can bind the principal in dealings covered by that authority. Facts: A company authorises its purchasing manager to order office supplies up to \u20b91 lakh; the manager orders \u20b960,000 of ordinary office supplies. The company is",
+    "question": "Principle: An occupier must take reasonable care to warn lawful visitors of concealed dangers the occupier knows about and visitors are unlikely to discover themselves. Fact: A museum knows a dark stair has a hidden broken step, gives no warning, and a lawful visitor falls there. The museum",
     "options": [
-      "never bound because only directors can contract",
-      "bound only if every shareholder signs",
-      "automatically dissolved",
-      "generally bound by the authorised order"
+      "Does not breach because stairs are always obvious",
+      "Does not breach unless the visitor bought a souvenir",
+      "Breaches the stated duty",
+      "Breaches only if the step was deliberately broken"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The manager acts within the express subject and monetary limit of actual authority.",
+    "explanation": "The danger was known, concealed, unlikely to be discovered, and no warning was given.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-051",
     "section": "Aptitude for the Study of Law",
-    "topic": "Consumer law",
+    "topic": "Principle–Fact: Licence",
     "difficulty": "medium",
-    "question": "Principle: A consumer who receives a defective product may have statutory remedies against unfair or deficient supply. Facts: A sealed electric kettle fails on first normal use because of a manufacturing defect. Which legal area is most directly engaged?",
+    "question": "Principle: A personal licence permits use of premises but, under this problem, creates no transferable property interest unless the agreement expressly says otherwise. Fact: A theatre gives Ravi a personal one-night kiosk licence that says nothing about transfer. Ravi tries to sell the “property right” permanently to Tara. Under the principle",
     "options": [
-      "Consumer protection",
-      "Election law",
-      "Public international law",
-      "Constitutional amendment procedure"
+      "Ravi has no transferable property interest to sell",
+      "Ravi owns the theatre",
+      "The one-night licence becomes a permanent lease automatically",
+      "Tara acquires title merely by paying Ravi"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A defective consumer product supplied in commerce is a standard consumer-protection issue.",
+    "explanation": "The synthetic licence is personal and non-transferable absent express provision.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-052",
     "section": "Aptitude for the Study of Law",
-    "topic": "Evidence",
-    "difficulty": "easy",
-    "question": "In ordinary criminal adjudication, the prosecution bears the burden of proving guilt",
+    "topic": "Principle–Fact: Easement",
+    "difficulty": "medium",
+    "question": "Principle: Under this problem, an easement is a right benefiting one parcel of land by allowing a limited use of another parcel; it does not transfer ownership of the other parcel. Fact: Plot A has a registered right of way across Plot B. The owner of A claims the right of way makes A the owner of Plot B. The claim is",
     "options": [
-      "only on balance of probabilities in every case",
-      "with no evidence if suspicion is strong",
-      "by a public opinion poll",
-      "beyond reasonable doubt"
+      "Correct because every right of way transfers ownership",
+      "Incorrect under the stated principle",
+      "Correct if the path is used daily",
+      "Incorrect only if Plot B is vacant"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The general criminal standard is proof beyond reasonable doubt.",
+    "explanation": "The stated principle gives a limited use right, not ownership of Plot B.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-053",
     "section": "Aptitude for the Study of Law",
-    "topic": "Evidence",
+    "topic": "Principle–Fact: Company Personality",
     "difficulty": "medium",
-    "question": "Principle: Relevant evidence is evidence that tends to make a fact in issue more or less probable, subject to exclusionary rules. Facts: In a dispute over whether a traffic light was red, a clear time-stamped video of that light at the collision moment is",
+    "question": "Principle: A registered company is a legal person separate from its shareholders; company property belongs to the company, not directly to shareholders. Fact: N owns 70% of the shares and tries to sell a company-owned van personally without company authority. N",
     "options": [
-      "relevant to the colour of the light",
-      "irrelevant because it is electronic",
-      "automatically conclusive of every issue",
-      "a contract"
+      "Cannot treat the van as personal property merely because of share ownership",
+      "Owns 70% of every company asset directly",
+      "May sell all company property without authority",
+      "Becomes the company itself"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The video directly bears on a fact in issue: the signal colour at the relevant time.",
+    "explanation": "Separate legal personality means the van belongs to the company, not directly to N.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-054",
     "section": "Aptitude for the Study of Law",
-    "topic": "Legal maxims",
-    "difficulty": "easy",
-    "question": "The maxim ubi jus ibi remedium conveys the idea that",
+    "topic": "Principle–Fact: Director Authority",
+    "difficulty": "hard",
+    "question": "Principle: Under this problem, a company is bound by a director’s transaction only if the director had actual authority or the company created a reasonable appearance of authority on which the third party relied. Fact: A director privately orders a luxury boat unrelated to company business after the board expressly denied authority, and the seller knows of the denial. The company",
     "options": [
-      "where there is a legal right, the law ordinarily provides a remedy for its violation",
-      "every moral wrong is a crime",
-      "judges may ignore statutes",
-      "all contracts require registration"
+      "Is not bound under the stated principle",
+      "Is bound because the buyer is a director",
+      "Is bound because all directors have unlimited apparent authority",
+      "Is bound because the seller wants payment"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The maxim links recognised legal rights with remedies for their infringement.",
+    "explanation": "There is no actual authority, no reasonable appearance overriding the seller’s knowledge, and the seller knows authority was denied.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-055",
     "section": "Aptitude for the Study of Law",
-    "topic": "Legal maxims",
-    "difficulty": "easy",
-    "question": "Ignorantia juris non excusat is commonly translated as",
+    "topic": "Principle–Fact: Environmental Precaution",
+    "difficulty": "medium",
+    "question": "Principle: Under this problem, where an activity presents a credible risk of serious environmental harm, lack of complete scientific certainty does not by itself justify postponing proportionate preventive measures. Fact: Reliable studies show a credible risk that a planned discharge could irreversibly poison a wetland, though the exact probability is uncertain. The authority",
     "options": [
-      "no one is judge in their own cause",
-      "hear the other side",
-      "ignorance of law is no excuse",
-      "the act speaks for itself"
+      "Must wait until harm actually occurs",
+      "May adopt proportionate preventive measures despite uncertainty",
+      "Must ignore all scientific evidence unless probability is exactly 100%",
+      "May act only if the wetland is privately owned"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The maxim expresses the general rule that ignorance of law is not an excuse.",
+    "explanation": "The stated precautionary principle permits proportionate prevention despite incomplete certainty where serious harm is credibly threatened.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-056",
     "section": "Aptitude for the Study of Law",
-    "topic": "Civil procedure",
+    "topic": "Principle–Fact: Polluter Pays",
     "difficulty": "medium",
-    "question": "Principle: Res judicata prevents parties from re-litigating a matter that has already been finally decided between them by a competent court, subject to legal requirements. Facts: The same parties seek a second final adjudication of the identical issue already finally decided. The principle raised is",
+    "question": "Principle: Under this problem, a person who causes proven pollution must bear reasonable costs of preventing, controlling and remedying that pollution. Fact: A factory’s identified discharge contaminates a pond and requires cleanup. The factory",
     "options": [
-      "res judicata",
-      "habeas corpus",
-      "strict liability",
-      "consideration"
+      "Has no responsibility because cleanup benefits others",
+      "Pays only if it owns the pond",
+      "Must pay an unrelated criminal fine instead of cleanup",
+      "Must bear reasonable pollution-control and cleanup costs"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The situation fits the anti-re-litigation function of res judicata.",
+    "explanation": "The synthetic polluter-pays rule assigns reasonable prevention/control/remedy costs to the proven polluter.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-057",
     "section": "Aptitude for the Study of Law",
-    "topic": "Remedies",
+    "topic": "Principle–Fact: Workplace Safety",
     "difficulty": "medium",
-    "question": "Principle: An injunction is an equitable court order requiring a person to do or refrain from doing a specified act. A court order restraining a builder from entering disputed land pending trial is",
+    "question": "Principle: An employer must take reasonable precautions against workplace hazards it knows or ought reasonably to know. Fact: A warehouse repeatedly receives written reports that a loading-platform guardrail is loose but does nothing; a worker falls when it gives way. The employer",
     "options": [
-      "a treaty",
-      "a criminal conviction",
-      "an injunction",
-      "a money bill"
+      "Breached the stated safety duty",
+      "Did not breach because reports are never knowledge",
+      "Did not breach unless the worker owned the platform",
+      "Breached only if the fall happened outside work hours"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The order restrains specified conduct and is therefore injunctive relief.",
+    "explanation": "Repeated reports establish knowledge of a hazard, and failure to take reasonable precautions is a breach.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
     "id": "ap-lawcet-2026-5y-law-058",
     "section": "Aptitude for the Study of Law",
-    "topic": "Arbitration",
+    "topic": "Principle–Fact: Collective Rule",
     "difficulty": "medium",
-    "question": "Principle: Arbitration is a consensual method in which parties agree to submit disputes to a private adjudicatory process. Which document most directly supports the arbitrator's authority?",
+    "question": "Principle: Under this problem, an employer may not retaliate against a worker solely because the worker lawfully participates in a protected collective grievance process. Fact: An employer admits it dismissed Leena only because she joined a protected grievance meeting. Under the principle, the dismissal",
     "options": [
-      "A newspaper advertisement",
-      "A criminal charge sheet",
-      "A passport",
-      "An arbitration agreement between the parties"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Arbitral jurisdiction is founded on the parties' arbitration agreement.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-law-059",
-    "section": "Aptitude for the Study of Law",
-    "topic": "Public interest litigation",
-    "difficulty": "medium",
-    "question": "Public interest litigation in India is associated with a relaxation of traditional standing rules mainly to",
-    "options": [
-      "abolish all filing requirements",
-      "replace every criminal trial",
-      "allow anonymous legislation",
-      "permit genuine public-spirited litigation concerning public injury or disadvantaged groups"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "PIL relaxed strict locus standi to facilitate judicial consideration of genuine public wrongs and access-to-justice concerns.",
-    "source": {
-      "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "ap-lawcet-2026-5y-law-060",
-    "section": "Aptitude for the Study of Law",
-    "topic": "Right to Information",
-    "difficulty": "medium",
-    "question": "The Right to Information framework is best described as creating",
-    "options": [
-      "an unlimited right to every private conversation",
-      "a ban on government records",
-      "a general right to seek information from public authorities subject to statutory exemptions",
-      "a right available only to judges"
+      "Is valid because meetings are never protected",
+      "Is valid because dismissal needs no reason under this problem",
+      "Violates the stated non-retaliation rule",
+      "Violates the rule only if Leena chaired the meeting"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "RTI promotes access to information held by public authorities but contains defined exemptions and procedures.",
+    "explanation": "The sole admitted reason is protected participation, exactly what the synthetic rule prohibits.",
     "source": {
       "kind": "original",
-      "reference": "AP LAWCET 2026 official Instruction Booklet \u2014 5-Year LL.B. scope",
-      "url": "https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
-      "checkedOn": "2026-08-31"
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-law-059",
+    "section": "Aptitude for the Study of Law",
+    "topic": "Principle–Fact: Treaty Rule",
+    "difficulty": "hard",
+    "question": "Principle: Under this problem, a treaty binds State X only after X completes the treaty’s stated ratification requirement; signature alone shows intent to consider ratification but does not create the treaty obligation. Fact: X signs but never ratifies. Under the stated principle, X",
+    "options": [
+      "Is not yet bound by the treaty obligation",
+      "Is bound fully by signature alone",
+      "Is automatically expelled from international society",
+      "Is bound only if another State ratifies"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The synthetic rule makes ratification, not signature alone, the condition for treaty obligation.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "ap-lawcet-2026-5y-law-060",
+    "section": "Aptitude for the Study of Law",
+    "topic": "Principle–Fact: Custom",
+    "difficulty": "hard",
+    "question": "Principle: Under this problem, an international custom requires a general and consistent State practice followed from a sense of legal obligation. Fact: States often exchange holiday greetings, but they do so only from courtesy and deny any legal duty. The greetings",
+    "options": [
+      "Form a binding custom because repetition alone is enough",
+      "Do not satisfy the stated custom test",
+      "Form a treaty automatically",
+      "Become custom only because they occur annually"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The facts lack the required sense of legal obligation even if the practice is repeated.",
+    "source": {
+      "kind": "original",
+      "reference": "AP LAWCET & AP PGLCET 2026 official Instruction Booklet V2",
+      "url": "https://cets.apsche.ap.gov.in/LAWCET/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];

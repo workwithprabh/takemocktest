@@ -2,2163 +2,2163 @@ import type { Question } from '../questions';
 
 export const NEET_UG_2026_BIOLOGY_1: Question[] = [
   {
-    "id": "neet-ug-2026-bi-001",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Taxonomy",
+    "id": "neet-ug-2026-biology-001",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Cell Structure",
     "difficulty": "easy",
-    "question": "In binomial nomenclature, the first word of a scientific name denotes the",
+    "question": "The ribosomes typically found free in the cytosol of prokaryotic cells are",
     "options": [
-      "genus",
-      "order",
-      "species epithet",
-      "family"
+      "70S",
+      "80S",
+      "60S",
+      "90S"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A binomial name consists of the genus name followed by the specific epithet.",
+    "explanation": "Prokaryotic cytosolic ribosomes are 70S, made of 50S and 30S subunits.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-002",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Taxonomy",
-    "difficulty": "medium",
-    "question": "Which taxonomic category includes related genera but is narrower than an order?",
+    "id": "neet-ug-2026-biology-002",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Cell Organelles",
+    "difficulty": "easy",
+    "question": "Cristae are folds of the",
     "options": [
-      "class",
-      "family",
-      "species",
-      "phylum"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The hierarchy is species < genus < family < order < class < phylum/division < kingdom.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-003",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Biological Classification",
-    "difficulty": "medium",
-    "question": "A unicellular eukaryote with a flexible pellicle and both photosynthetic and heterotrophic modes is most characteristically represented by",
-    "options": [
-      "Nostoc",
-      "Rhizopus",
-      "Euglena",
-      "Marchantia"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Euglena is a protist with a pellicle; it can photosynthesize and can also obtain nutrition heterotrophically.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-004",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Biological Classification",
-    "difficulty": "medium",
-    "question": "Which feature is shared by archaea but helps distinguish many of them from typical eubacteria?",
-    "options": [
-      "cell walls made of cellulose",
-      "a membrane-bound nucleus",
-      "80S cytoplasmic ribosomes only",
-      "cell membranes with distinctive ether-linked lipids"
+      "outer mitochondrial membrane",
+      "Golgi cisternae",
+      "nuclear envelope only",
+      "inner mitochondrial membrane"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Archaeal membranes characteristically contain ether-linked lipids; archaea still lack a membrane-bound nucleus.",
+    "explanation": "The inner mitochondrial membrane forms cristae that increase surface area for oxidative phosphorylation.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-005",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Plant Kingdom",
-    "difficulty": "easy",
-    "question": "The dominant, independent plant body in bryophytes is the",
-    "options": [
-      "gametophyte",
-      "sporophyte",
-      "zygote",
-      "endosperm"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Bryophytes have a dominant gametophyte; the sporophyte remains attached to and nutritionally dependent on it.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-006",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Plant Kingdom",
+    "id": "neet-ug-2026-biology-003",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Golgi Apparatus",
     "difficulty": "medium",
-    "question": "Heterospory, a feature linked with the evolution of seed habit, occurs in",
+    "question": "In a typical Golgi stack, newly synthesized material from the ER is received mainly at the",
     "options": [
-      "Chara",
-      "Selaginella",
-      "Funaria",
-      "Spirogyra"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Selaginella is a heterosporous pteridophyte producing microspores and megaspores.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-007",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Animal Kingdom",
-    "difficulty": "medium",
-    "question": "An animal that is triploblastic, bilaterally symmetrical and acoelomate is most likely a member of",
-    "options": [
-      "Cnidaria",
-      "Annelida",
-      "Platyhelminthes",
-      "Echinodermata"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Flatworms (Platyhelminthes) are triploblastic bilateral animals lacking a true body cavity.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-008",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Animal Kingdom",
-    "difficulty": "medium",
-    "question": "Which combination correctly characterizes echinoderms?",
-    "options": [
-      "adult bilateral symmetry and nephridia",
-      "jointed appendages and Malpighian tubules",
-      "cnidoblasts and gastrovascular cavity",
-      "adult radial symmetry and a water vascular system"
+      "trans face",
+      "middle lamella",
+      "nucleolus",
+      "cis face"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Adult echinoderms are typically radially symmetrical and possess a unique water vascular system.",
+    "explanation": "The cis face is the receiving side oriented toward the ER; the trans face is the shipping side.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-009",
-    "section": "Biology",
-    "topic": "Diversity in Living World \u2014 Viruses and Lichens",
-    "difficulty": "medium",
-    "question": "In a lichen association, the fungal partner primarily provides",
-    "options": [
-      "shelter and absorption of water and minerals",
-      "nitrogen fixation in every lichen",
-      "photosynthetic carbohydrates",
-      "motile gametes"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The mycobiont provides structural support and helps absorb water/minerals, whereas the photosynthetic partner supplies organic food.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-010",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Plant Morphology",
+    "id": "neet-ug-2026-biology-004",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Lysosomes",
     "difficulty": "easy",
-    "question": "A leaf in which the lamina is divided into leaflets but the axillary bud is present only at the base of the whole leaf is",
+    "question": "Lysosomes are especially rich in",
     "options": [
-      "sessile by definition",
-      "compound",
-      "a phylloclade",
-      "simple"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "In a compound leaf, incisions reach the midrib/rachis and leaflets lack axillary buds; the bud occurs at the leaf base.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-011",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Plant Morphology",
-    "difficulty": "medium",
-    "question": "The edible swollen underground structure of potato is classified as a stem because it bears",
-    "options": [
-      "a single terminal root meristem",
-      "root hairs and a root cap",
-      "nodes, internodes and axillary buds",
-      "only adventitious roots"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Potato tuber shows stem characters such as nodes (eyes), internodes and buds.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-012",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Plant Anatomy",
-    "difficulty": "medium",
-    "question": "In a typical dicot root, xylem and phloem are arranged",
-    "options": [
-      "bicollaterally around pith",
-      "conjoint and collateral in the same bundle",
-      "as scattered closed bundles",
-      "radially on different radii"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Root vascular tissue is radial: xylem and phloem occur on alternate radii.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-013",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Plant Anatomy",
-    "difficulty": "medium",
-    "question": "Which tissue is most directly responsible for increase in girth during secondary growth of a dicot stem?",
-    "options": [
-      "vascular cambium",
-      "protoderm",
-      "apical meristem",
-      "root cap"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The vascular cambium produces secondary xylem inward and secondary phloem outward, increasing stem girth.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-014",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Animal Tissues",
-    "difficulty": "easy",
-    "question": "The epithelium lining the alveoli of lungs is predominantly",
-    "options": [
-      "transitional epithelium",
-      "simple squamous epithelium",
-      "stratified squamous epithelium",
-      "cuboidal epithelium with keratin"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The thin simple squamous lining minimizes diffusion distance for respiratory gases.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-015",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Animal Tissues",
-    "difficulty": "medium",
-    "question": "Intercalated discs are a characteristic feature of",
-    "options": [
-      "skeletal muscle fibres only",
-      "smooth muscle",
-      "cardiac muscle",
-      "dense regular connective tissue"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Cardiac muscle cells are joined by intercalated discs that support mechanical and electrical coupling.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-016",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Frog",
-    "difficulty": "medium",
-    "question": "In an adult frog, oxygenated and deoxygenated blood are not completely separated in the heart because it has",
-    "options": [
-      "one atrium and one ventricle",
-      "two ventricles and no atria",
-      "four completely separated chambers",
-      "two atria and one ventricle"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The amphibian heart has two atria opening into a single ventricle, so some mixing is possible.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-017",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Cockroach",
-    "difficulty": "medium",
-    "question": "In cockroach, respiratory gases are delivered directly to tissues mainly through the",
-    "options": [
-      "tracheal system",
-      "gills connected to haemolymph",
-      "closed blood capillaries",
-      "nephridia"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The tracheal system branches into fine tracheoles that deliver gases directly to tissues; haemolymph is not the main respiratory carrier.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-018",
-    "section": "Biology",
-    "topic": "Structural Organisation \u2014 Plant Families",
-    "difficulty": "hard",
-    "question": "A flower is zygomorphic, papilionaceous, has diadelphous stamens and a monocarpellary superior ovary. It is characteristic of",
-    "options": [
-      "Solanaceae",
-      "Fabaceae",
-      "Brassicaceae",
-      "Liliaceae"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Papilionaceous corolla and commonly diadelphous (9+1) stamens are characteristic features of Fabaceae.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-019",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Cell Theory",
-    "difficulty": "easy",
-    "question": "Which statement is consistent with modern cell theory?",
-    "options": [
-      "every cell contains chloroplasts",
-      "all cells possess a cell wall",
-      "new cells arise from pre-existing cells",
-      "viruses are cellular organisms"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Virchow\u2019s extension of cell theory states that cells arise from pre-existing cells.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-020",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Cell Organelles",
-    "difficulty": "medium",
-    "question": "A eukaryotic cell that actively secretes large amounts of protein would be expected to contain abundant",
-    "options": [
-      "lysosomes only",
-      "smooth ER only and no ribosomes",
-      "centrioles as the main synthetic organelles",
-      "rough endoplasmic reticulum and Golgi apparatus"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Secreted proteins are synthesized on rough ER-bound ribosomes and processed/sorted through the Golgi apparatus.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-021",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Cell Organelles",
-    "difficulty": "medium",
-    "question": "The inner mitochondrial membrane is extensively folded into cristae mainly to",
-    "options": [
-      "increase surface area for electron transport and ATP synthesis",
-      "synthesize cellulose",
-      "perform glycolysis",
-      "store chromosomal DNA in the nucleus"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Respiratory electron carriers and ATP synthase are located in the inner mitochondrial membrane; cristae increase its functional area.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-022",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Biomolecules",
-    "difficulty": "medium",
-    "question": "A peptide bond is formed between the",
-    "options": [
-      "ribose units of adjacent amino acids",
-      "carboxyl group of one amino acid and amino group of another",
-      "phosphate groups of two amino acids",
-      "two sulfhydryl groups only"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Condensation between a carboxyl group and an amino group forms the \u2013CO\u2013NH\u2013 peptide linkage.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-023",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Enzymes",
-    "difficulty": "medium",
-    "question": "An enzyme-catalysed reaction reaches a plateau in rate as substrate concentration becomes very high because",
-    "options": [
-      "activation energy becomes infinite",
-      "substrate molecules stop moving",
-      "most enzyme active sites become occupied",
-      "the enzyme changes the equilibrium constant"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "At high substrate concentration the enzyme approaches saturation; nearly all active sites are occupied and Vmax is approached.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-024",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Cell Cycle",
-    "difficulty": "medium",
-    "question": "DNA replication in the eukaryotic cell cycle occurs during",
-    "options": [
-      "G\u2081 phase only",
-      "G\u2082 phase only",
-      "metaphase",
-      "S phase of interphase"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The S (synthesis) phase is the period of nuclear DNA replication.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-025",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Mitosis",
-    "difficulty": "medium",
-    "question": "Sister chromatids separate and move toward opposite poles during",
-    "options": [
-      "anaphase of mitosis",
-      "metaphase",
-      "telophase only",
-      "prophase"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Centromeres split at anaphase, allowing sister chromatids to migrate to opposite spindle poles.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-026",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Meiosis",
-    "difficulty": "hard",
-    "question": "Crossing over between homologous chromosomes most directly occurs during which stage of meiotic prophase I?",
-    "options": [
-      "diakinesis",
-      "pachytene",
-      "diplotene",
-      "leptotene"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Synapsis is established by zygotene, and crossing over occurs during pachytene; chiasmata become visible later in diplotene.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-027",
-    "section": "Biology",
-    "topic": "Cell Structure and Function \u2014 Cell Membrane",
-    "difficulty": "medium",
-    "question": "The selectively permeable nature of the plasma membrane is most directly related to its",
-    "options": [
-      "cellulose microfibrils only",
-      "peptidoglycan layer",
-      "phospholipid bilayer with embedded proteins",
-      "nucleosomal histones"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The fluid-mosaic membrane consists mainly of a phospholipid bilayer and proteins; this organization permits selective movement of substances across the cell boundary.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-028",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Photosynthesis",
-    "difficulty": "easy",
-    "question": "The oxygen released during oxygenic photosynthesis is derived directly from",
-    "options": [
+      "acid hydrolases",
+      "ribosomal RNA polymerase",
       "chlorophyll",
-      "carbon dioxide",
-      "glucose",
-      "water"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Photolysis of water at photosystem II supplies electrons and releases O\u2082.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-029",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Photosynthesis",
-    "difficulty": "medium",
-    "question": "In C\u2084 plants, the initial stable product of CO\u2082 fixation in mesophyll cells is a",
-    "options": [
-      "four-carbon compound",
-      "five-carbon sugar only",
-      "six-carbon glucose molecule directly",
-      "two-carbon compound"
+      "DNA helicase only"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "PEP carboxylase initially fixes CO\u2082 into oxaloacetate, a four-carbon compound.",
+    "explanation": "Lysosomes contain hydrolytic enzymes active in an acidic lumen.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-030",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Photosynthesis",
-    "difficulty": "medium",
-    "question": "Photorespiration is minimized in C\u2084 plants mainly because",
-    "options": [
-      "RuBisCO is absent from bundle-sheath cells",
-      "CO\u2082 is concentrated around RuBisCO in bundle-sheath cells",
-      "stomata remain permanently closed",
-      "oxygen is never present in leaves"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The C\u2084 pathway spatially concentrates CO\u2082 around RuBisCO, reducing its oxygenase reaction and therefore photorespiration.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-031",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Respiration",
-    "difficulty": "medium",
-    "question": "In aerobic respiration, the majority of ATP is generated by",
-    "options": [
-      "conversion of pyruvate to acetyl-CoA only",
-      "glycolysis alone",
-      "oxidative phosphorylation",
-      "lactate fermentation"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Most ATP in aerobic respiration is produced through the electron transport chain and chemiosmotic oxidative phosphorylation.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-032",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Respiration",
-    "difficulty": "medium",
-    "question": "During alcoholic fermentation in yeast, pyruvate is ultimately converted mainly into",
-    "options": [
-      "glucose and water",
-      "acetyl-CoA and oxygen",
-      "lactate only",
-      "ethanol and carbon dioxide"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Yeast decarboxylates pyruvate to acetaldehyde and then reduces it to ethanol, releasing CO\u2082.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-033",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Growth and Development",
+    "id": "neet-ug-2026-biology-005",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Cell Cycle",
     "difficulty": "easy",
-    "question": "The plant hormone most closely associated with promotion of cell elongation in shoots and apical dominance is",
+    "question": "DNA replication in a normal eukaryotic cell cycle occurs during",
     "options": [
-      "auxin",
-      "ethylene only",
-      "cytokinin only",
-      "abscisic acid"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Auxins promote shoot cell elongation and contribute to apical dominance.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-034",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Growth and Development",
-    "difficulty": "medium",
-    "question": "A seed kept under suitable moisture and temperature conditions remains dormant because of inhibitory hormonal influence. Which hormone is most associated with maintaining such dormancy?",
-    "options": [
-      "auxin",
-      "abscisic acid",
-      "cytokinin",
-      "gibberellin"
+      "G1 phase only",
+      "S phase",
+      "G2 phase only",
+      "M phase"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Abscisic acid promotes and maintains seed dormancy, whereas gibberellins often help break dormancy and promote germination.",
+    "explanation": "The S phase is the DNA-synthesis phase.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-035",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Photosynthesis",
-    "difficulty": "medium",
-    "question": "During cyclic photophosphorylation in a plant chloroplast, which product is formed without net formation of NADPH or O\u2082?",
+    "id": "neet-ug-2026-biology-006",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Meiosis",
+    "difficulty": "easy",
+    "question": "Crossing over between homologous chromosomes occurs mainly during",
     "options": [
-      "NADPH",
-      "glucose directly",
-      "ATP",
-      "O\u2082"
+      "leptotene only",
+      "pachytene of prophase I",
+      "metaphase II",
+      "telophase I"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Synapsed homologues exchange segments during pachytene.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-007",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plant Cytokinesis",
+    "difficulty": "easy",
+    "question": "Cytokinesis in a typical plant cell proceeds by formation of a",
+    "options": [
+      "cleavage furrow from the outside inward",
+      "contractile ring of bacterial flagellin",
+      "cell plate",
+      "new centriole pair only"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Cyclic electron flow around photosystem I generates a proton gradient and ATP, but does not split water or reduce NADP\u207a, so no net O\u2082 or NADPH is formed.",
+    "explanation": "Golgi-derived vesicles form a cell plate that develops into the new partition wall.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-036",
-    "section": "Biology",
-    "topic": "Plant Physiology \u2014 Respiration",
+    "id": "neet-ug-2026-biology-008",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Cytoskeleton",
+    "difficulty": "easy",
+    "question": "Spindle fibres that move chromosomes are composed primarily of",
+    "options": [
+      "cellulose fibres",
+      "actin only with no tubulin",
+      "microtubules",
+      "chitin"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The mitotic spindle is a microtubule-based structure.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-009",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plasma Membrane",
+    "difficulty": "easy",
+    "question": "The fluid-mosaic model describes the plasma membrane as",
+    "options": [
+      "proteins embedded in or associated with a fluid lipid bilayer",
+      "a rigid cellulose sheet",
+      "a protein monolayer with no lipids",
+      "a DNA-protein membrane"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The model emphasizes lateral mobility of lipids and many proteins in a bilayer.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-010",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Osmosis",
+    "difficulty": "easy",
+    "question": "A healthy plant cell placed in a hypotonic solution generally becomes",
+    "options": [
+      "turgid",
+      "plasmolysed",
+      "flaccid because water leaves",
+      "dehydrated immediately"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Water enters by osmosis, and the cell wall limits expansion, producing turgor.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-011",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Enzymes",
+    "difficulty": "easy",
+    "question": "Enzymes accelerate biochemical reactions mainly by",
+    "options": [
+      "making ΔG of the overall reaction more negative",
+      "lowering activation energy",
+      "changing the equilibrium constant",
+      "being consumed stoichiometrically"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Catalysts provide a lower-activation-energy pathway without changing equilibrium thermodynamics.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-012",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Enzyme Kinetics",
     "difficulty": "hard",
-    "question": "A germinating seed is using stored fat as its principal respiratory substrate. Its respiratory quotient is expected to be",
+    "question": "For a simple competitive inhibitor, increasing inhibitor concentration typically causes",
     "options": [
-      "greater than 2",
-      "equal to 1 in every case",
-      "exactly zero",
-      "less than 1"
+      "a decrease in Km and Vmax",
+      "an increase in Vmax only",
+      "no change in either kinetic parameter under all conditions",
+      "an increase in apparent Km with unchanged Vmax"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Fats require proportionally more oxygen for oxidation than the carbon dioxide they release, so their respiratory quotient CO\u2082/O\u2082 is generally less than 1.",
+    "explanation": "Competitive inhibition can be overcome at high substrate concentration, so Vmax remains while apparent Km rises.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-037",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Locomotion and Movement",
+    "id": "neet-ug-2026-biology-013",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Nucleic Acids",
     "difficulty": "easy",
-    "question": "During contraction of a skeletal-muscle sarcomere, which band retains essentially the same length?",
+    "question": "A DNA nucleotide contains",
     "options": [
-      "A band",
-      "H zone",
-      "I band",
-      "distance between successive Z lines"
+      "deoxyribose, phosphate and a nitrogenous base",
+      "ribose, glycerol and an amino acid",
+      "deoxyribose and a fatty acid only",
+      "glucose, phosphate and cholesterol"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The A band corresponds to the length of thick filaments and stays essentially constant, while the I band, H zone and sarcomere length decrease during contraction.",
+    "explanation": "DNA nucleotides consist of deoxyribose sugar, phosphate and one nitrogenous base.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-038",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Locomotion and Movement",
-    "difficulty": "medium",
-    "question": "In skeletal muscle, the rise in cytosolic Ca\u00b2\u207a initiates contraction primarily because Ca\u00b2\u207a binds to",
+    "id": "neet-ug-2026-biology-014",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "RNA",
+    "difficulty": "easy",
+    "question": "Which nitrogenous base occurs in RNA in place of thymine?",
     "options": [
-      "acetylcholinesterase",
+      "guanine",
+      "uracil",
+      "cytosine",
+      "adenine"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "RNA generally uses uracil where DNA uses thymine.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-015",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Carbohydrates",
+    "difficulty": "easy",
+    "question": "The main storage polysaccharide in animals is",
+    "options": [
+      "cellulose",
+      "glycogen",
+      "chitin",
+      "pectin"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Animals store glucose mainly as glycogen, especially in liver and muscle.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-016",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Carbohydrates",
+    "difficulty": "medium",
+    "question": "Cellulose differs from starch chiefly because cellulose contains",
+    "options": [
+      "only fructose monomers",
+      "peptide linkages",
+      "phosphodiester linkages",
+      "β-glucose linkages"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Cellulose is built mainly from β-D-glucose residues joined by β(1→4) bonds.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-017",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Proteins",
+    "difficulty": "easy",
+    "question": "The covalent linkage formed between the carboxyl group of one amino acid and amino group of another is a",
+    "options": [
+      "peptide bond",
+      "glycosidic bond",
+      "phosphodiester bond",
+      "ester bond between two sugars"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Condensation between amino acids forms an amide linkage called a peptide bond.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-018",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Stomatal Movement",
+    "difficulty": "medium",
+    "question": "During stomatal opening, guard cells typically accumulate ions such as K⁺, causing their water potential to become",
+    "options": [
+      "more negative, favouring water entry",
+      "more positive, forcing water out",
+      "unchanged in every case",
+      "equal to dry air"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Solute accumulation lowers water potential; water enters and guard cells become turgid.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-019",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "C4 Photosynthesis",
+    "difficulty": "medium",
+    "question": "The first stable four-carbon product formed during initial CO₂ fixation in many C4 plants is",
+    "options": [
+      "3-phosphoglycerate",
+      "oxaloacetate",
+      "ribulose-1,5-bisphosphate",
+      "pyruvate only"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "PEP carboxylase initially fixes CO₂ to form oxaloacetate.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-020",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Photosynthesis",
+    "difficulty": "easy",
+    "question": "The Calvin cycle takes place mainly in the chloroplast",
+    "options": [
+      "thylakoid lumen",
+      "outer envelope only",
+      "stroma",
+      "granal air spaces"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Calvin-cycle enzymes are located in the stroma.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-021",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Photosystems",
+    "difficulty": "easy",
+    "question": "Photolysis of water is associated directly with",
+    "options": [
+      "Photosystem I only",
+      "the Calvin cycle carboxylation step",
+      "mitochondrial complex IV",
+      "Photosystem II"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The oxygen-evolving complex of PSII splits water.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-022",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Photophosphorylation",
+    "difficulty": "medium",
+    "question": "Cyclic electron flow around Photosystem I produces",
+    "options": [
+      "NADPH and O₂ but no ATP",
+      "ATP without net NADPH formation or O₂ evolution",
+      "only O₂",
+      "glucose directly"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Cyclic flow returns electrons to the electron-transport chain, generating a proton gradient and ATP but not NADPH or oxygen.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-023",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Water Transport",
+    "difficulty": "easy",
+    "question": "The cohesion-tension mechanism is most directly associated with ascent of sap through",
+    "options": [
+      "phloem only",
+      "epidermis only",
+      "xylem",
+      "cambium only"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Transpiration creates tension transmitted through cohesive water columns in xylem.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-024",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plant Transport",
+    "difficulty": "easy",
+    "question": "Long-distance transport of water and mineral ions from roots is mainly through",
+    "options": [
+      "xylem",
+      "phloem",
+      "cork",
+      "pith"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Xylem conducts water and dissolved minerals upward through the plant.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-025",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Phloem Transport",
+    "difficulty": "medium",
+    "question": "In the pressure-flow model, sucrose generally moves through phloem from",
+    "options": [
+      "sink to source only",
+      "xylem vessel to atmosphere directly",
+      "root cap to stomata without loading",
+      "source to sink"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Sugars are loaded at sources and unloaded at sinks, creating pressure-driven mass flow.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-026",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Nitrogen Fixation",
+    "difficulty": "medium",
+    "question": "The enzyme complex nitrogenase is characteristically sensitive to",
+    "options": [
+      "nitrogen gas",
+      "ATP",
+      "oxygen",
+      "reduced ferredoxin"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Nitrogenase is inactivated by oxygen, so nitrogen-fixing systems protect it from high O₂.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-027",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plant Hormones",
+    "difficulty": "easy",
+    "question": "Apical dominance is most strongly associated with",
+    "options": [
+      "ethylene only",
+      "abscisic acid only",
+      "auxin",
+      "cytokinin absence in all tissues"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Auxin from the shoot apex suppresses outgrowth of many axillary buds.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-028",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plant Hormones",
+    "difficulty": "easy",
+    "question": "Bolting in rosette plants can be promoted by",
+    "options": [
+      "abscisic acid",
+      "ethylene only in every species",
+      "salicylic acid only",
+      "gibberellins"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Gibberellins promote stem elongation and can induce bolting.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-029",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plant Hormones",
+    "difficulty": "easy",
+    "question": "A hormone strongly associated with stomatal closure during water stress is",
+    "options": [
+      "abscisic acid",
+      "gibberellic acid",
+      "auxin",
+      "cytokinin"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "ABA accumulates during drought and promotes guard-cell responses that close stomata.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-030",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plant Hormones",
+    "difficulty": "easy",
+    "question": "Fruit ripening in many climacteric fruits is promoted by",
+    "options": [
+      "ethylene",
+      "auxin exclusively",
+      "abscisic acid exclusively",
+      "cytokinin exclusively"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Ethylene is a gaseous hormone central to ripening of many climacteric fruits.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-031",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Microsporogenesis",
+    "difficulty": "easy",
+    "question": "A microspore mother cell undergoing meiosis gives rise to",
+    "options": [
+      "two diploid pollen grains",
+      "one triploid endosperm",
+      "a tetrad of haploid microspores",
+      "four diploid ovules"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Meiosis of a diploid microspore mother cell produces four haploid microspores.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-032",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Embryo Sac",
+    "difficulty": "medium",
+    "question": "A typical mature angiosperm embryo sac is",
+    "options": [
+      "8-celled and 8-nucleate",
+      "4-celled and 4-nucleate",
+      "7-celled and 8-nucleate",
+      "2-celled and 3-nucleate"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The common Polygonum-type embryo sac has seven cells and eight nuclei.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-033",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Double Fertilization",
+    "difficulty": "easy",
+    "question": "Syngamy plus triple fusion in an angiosperm is collectively called",
+    "options": [
+      "apomixis",
+      "parthenocarpy",
+      "polyembryony",
+      "double fertilization"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "One male gamete fuses with egg and the other with polar nuclei/central cell.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-034",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Endosperm",
+    "difficulty": "easy",
+    "question": "The primary endosperm nucleus in a typical angiosperm is usually",
+    "options": [
+      "haploid",
+      "diploid",
+      "tetraploid in every species",
+      "triploid"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Fusion of one male gamete with two polar nuclei produces a 3n primary endosperm nucleus.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-035",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Apomixis",
+    "difficulty": "easy",
+    "question": "Apomixis is seed formation",
+    "options": [
+      "only after double fertilization",
+      "only in gymnosperms",
+      "without fertilization",
+      "only after grafting"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Apomictic seed formation bypasses normal fertilization.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-036",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Plant Breeding",
+    "difficulty": "easy",
+    "question": "In artificial hybridization, removal of anthers from a bisexual flower before they shed pollen is called",
+    "options": [
+      "bagging",
+      "emasculation",
+      "grafting",
+      "scarification"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Emasculation prevents self-pollination in the chosen female parent.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-037",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Mendelian Genetics",
+    "difficulty": "easy",
+    "question": "A test cross of an individual showing a dominant phenotype is made with",
+    "options": [
+      "a homozygous dominant individual",
+      "a homozygous recessive individual",
+      "any F1 individual only",
+      "an unrelated species"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The recessive tester reveals whether the dominant-phenotype individual carries a recessive allele.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-038",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Incomplete Dominance",
+    "difficulty": "easy",
+    "question": "In incomplete dominance, the F1 phenotype is typically",
+    "options": [
+      "intermediate between the two parental phenotypes",
+      "identical to the dominant parent",
+      "identical to the recessive parent",
+      "absent entirely"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Neither allele is completely dominant, so the heterozygote is phenotypically intermediate.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-039",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Dihybrid Cross",
+    "difficulty": "easy",
+    "question": "For two independently assorting genes with complete dominance, the classic F2 phenotypic ratio is",
+    "options": [
+      "3:1",
+      "1:2:1",
+      "9:7",
+      "9:3:3:1"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Independent assortment of two heterozygous loci yields 9:3:3:1 phenotypes.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-040",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Linkage",
+    "difficulty": "medium",
+    "question": "Strong linkage between two genes generally causes the observed recombination frequency to be",
+    "options": [
+      "less than 50%",
+      "exactly 100%",
+      "greater than 75%",
+      "unrelated to chromosomal distance"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Linked genes on the same chromosome show recombination below the 50% expected for independent assortment.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-041",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "DNA Replication",
+    "difficulty": "easy",
+    "question": "Semiconservative DNA replication means each daughter DNA molecule contains",
+    "options": [
+      "two entirely parental strands",
+      "two entirely new strands only",
+      "a mixture of DNA and RNA strands permanently",
+      "one parental strand and one newly synthesized strand"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Each product duplex retains one strand from the parental DNA.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-042",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "DNA Replication",
+    "difficulty": "easy",
+    "question": "The enzyme that synthesizes a new DNA strand by adding deoxyribonucleotides is",
+    "options": [
+      "RNA polymerase",
+      "DNA polymerase",
+      "ligase only with no polymerase",
+      "pepsin"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "DNA polymerases catalyse template-directed DNA synthesis.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-043",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Transcription",
+    "difficulty": "easy",
+    "question": "RNA synthesis from a DNA template is catalysed by",
+    "options": [
+      "DNA ligase",
+      "reverse transcriptase in all cells exclusively",
+      "RNA polymerase",
+      "aminoacyl-tRNA synthetase"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "RNA polymerase reads DNA and polymerizes RNA.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-044",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Translation",
+    "difficulty": "easy",
+    "question": "Protein synthesis from an mRNA template occurs on",
+    "options": [
+      "ribosomes",
+      "lysosomes",
+      "centrosomes",
+      "peroxisomes"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Ribosomes decode mRNA and catalyse peptide-bond formation.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-045",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Gene Regulation",
+    "difficulty": "medium",
+    "question": "The lac operon of E. coli is classically described as",
+    "options": [
+      "a permanently inactive operon",
+      "a repressible amino-acid biosynthesis operon",
+      "an inducible operon",
+      "a eukaryotic enhancer"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Presence of lactose/allolactose relieves repression, inducing genes for lactose utilization.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-046",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Genetic Code",
+    "difficulty": "easy",
+    "question": "Degeneracy of the genetic code means",
+    "options": [
+      "one codon always specifies many amino acids",
+      "codons contain only two bases",
+      "every amino acid has exactly one codon",
+      "more than one codon can specify the same amino acid"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Most amino acids are encoded by multiple synonymous codons.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-047",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Mutations",
+    "difficulty": "medium",
+    "question": "Insertion of one nucleotide into a protein-coding sequence is most likely to cause",
+    "options": [
+      "no change to reading frame",
+      "a whole-chromosome inversion automatically",
+      "a frameshift downstream of the insertion",
+      "only a silent mutation"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "A one-base insertion changes the grouping of subsequent codons unless compensated.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-048",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Population Genetics",
+    "difficulty": "medium",
+    "question": "At Hardy–Weinberg equilibrium, if allele A has frequency p and allele a has frequency q, the frequency of AA is",
+    "options": [
+      "2pq",
+      "q²",
+      "p²",
+      "p+q"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Random mating gives genotype frequencies p², 2pq and q².",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-049",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Evolution",
+    "difficulty": "medium",
+    "question": "A founder effect is a form of genetic drift that occurs when",
+    "options": [
+      "natural selection stops mutation",
+      "all individuals migrate equally",
+      "gene flow becomes infinite",
+      "a new population is established by a small number of individuals"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "A small founding sample carries only part of the source population’s genetic variation.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-050",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Evolution",
+    "difficulty": "easy",
+    "question": "Wings of birds and insects are often used as an example of analogous structures because they",
+    "options": [
+      "have identical embryonic origin",
+      "perform similar functions but arose from different structural origins",
+      "are inherited from the same recent winged ancestor",
+      "are nonfunctional vestiges"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Analogy reflects convergent evolution of similar functions from different origins.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-051",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Ecological Succession",
+    "difficulty": "easy",
+    "question": "Primary succession begins on a site that initially lacks",
+    "options": [
+      "sunlight",
+      "any mineral material",
+      "all microbes under every condition",
+      "a developed soil layer"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Primary succession begins on newly exposed substrates where developed soil is absent.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-052",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Ecosystem Energy Flow",
+    "difficulty": "easy",
+    "question": "If producers capture 10,000 kJ and about 10% is transferred to the next trophic level, primary consumers receive about",
+    "options": [
+      "1,000 kJ",
+      "10,000 kJ",
+      "100 kJ",
+      "9,000 kJ"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The 10% approximation gives 0.10×10,000=1,000 kJ.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-053",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Ecological Pyramids",
+    "difficulty": "easy",
+    "question": "The pyramid of energy in an ecosystem is",
+    "options": [
+      "always inverted",
+      "always upright",
+      "horizontal in all aquatic systems",
+      "unrelated to trophic level"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Energy decreases at successive trophic levels because much is lost as heat and metabolism.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-054",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Primary Productivity",
+    "difficulty": "medium",
+    "question": "Net primary productivity (NPP) equals",
+    "options": [
+      "GPP plus plant respiration",
+      "GPP minus plant respiration",
+      "consumer production minus GPP",
+      "respiration minus GPP"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "NPP=GPP−R, the biomass/energy remaining after autotrophic respiration.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-055",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Species Interactions",
+    "difficulty": "easy",
+    "question": "An interaction in which both species benefit is",
+    "options": [
+      "predation",
+      "amensalism",
+      "mutualism",
+      "competition"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Mutualism provides net benefit to both interacting species.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-056",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Species Interactions",
+    "difficulty": "easy",
+    "question": "In commensalism, the usual sign convention for the two species is",
+    "options": [
+      "+/+",
+      "+/0",
+      "−/−",
+      "+/−"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "One species benefits while the other is neither significantly helped nor harmed.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-057",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Environmental Issues",
+    "difficulty": "easy",
+    "question": "Progressive increase in concentration of a persistent pollutant at higher trophic levels is called",
+    "options": [
+      "eutrophication",
+      "succession",
+      "nitrogen fixation",
+      "biomagnification"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Persistent pollutants can become increasingly concentrated along a food chain.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-058",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Environmental Issues",
+    "difficulty": "easy",
+    "question": "Excess nutrient enrichment of a lake that triggers algal blooms is called",
+    "options": [
+      "eutrophication",
+      "desertification",
+      "biomagnification",
+      "primary succession"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "High nutrient loading promotes excessive algal growth and oxygen depletion.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-059",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Blood",
+    "difficulty": "easy",
+    "question": "Mature human erythrocytes normally lack a",
+    "options": [
+      "plasma membrane",
+      "haemoglobin",
+      "cytoplasm",
+      "nucleus"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Mature mammalian red blood cells lose the nucleus, increasing space for haemoglobin.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-060",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Blood",
+    "difficulty": "easy",
+    "question": "The major respiratory pigment of human red blood cells is",
+    "options": [
+      "myoglobin only",
+      "chlorophyll",
+      "haemoglobin",
+      "haemocyanin"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Haemoglobin reversibly binds oxygen in erythrocytes.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-061",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Cardiac Physiology",
+    "difficulty": "easy",
+    "question": "The normal pacemaker of the human heart is the",
+    "options": [
+      "sinoatrial node",
+      "atrioventricular node",
+      "bundle of His",
+      "Purkinje fibres"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The SA node initiates the normal heartbeat rhythm.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-062",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Cardiac Output",
+    "difficulty": "easy",
+    "question": "Cardiac output is the product of",
+    "options": [
+      "blood pressure and heart rate",
+      "stroke volume and blood viscosity",
+      "heart rate and stroke volume",
+      "heart rate and lung capacity"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "CO=heart rate×stroke volume.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-063",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Excretion",
+    "difficulty": "easy",
+    "question": "Ultrafiltration of blood in the nephron occurs primarily at the",
+    "options": [
+      "glomerulus",
+      "loop of Henle",
+      "collecting duct",
+      "ureter"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Hydrostatic pressure drives filtration across glomerular capillaries into Bowman’s capsule.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-064",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Hormonal Control of Kidney",
+    "difficulty": "medium",
+    "question": "ADH increases water reabsorption mainly by increasing water permeability of the",
+    "options": [
+      "glomerular capillaries only",
+      "distal nephron and collecting ducts",
+      "renal artery only",
+      "proximal tubule exclusively with no distal effect"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "ADH promotes aquaporin insertion in late distal tubule/collecting duct cells.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-065",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Endocrine System",
+    "difficulty": "easy",
+    "question": "Insulin generally causes blood glucose concentration to",
+    "options": [
+      "increase",
+      "decrease",
+      "remain fixed after every meal",
+      "oscillate independently of metabolism"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Insulin promotes cellular glucose uptake and storage, lowering blood glucose.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-066",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Endocrine System",
+    "difficulty": "easy",
+    "question": "Glucagon generally acts to",
+    "options": [
+      "raise blood glucose",
+      "lower blood glucose strongly after fasting",
+      "block all glycogen breakdown",
+      "prevent hepatic glucose release"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Glucagon promotes hepatic glycogenolysis and gluconeogenesis.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-067",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Thyroid",
+    "difficulty": "easy",
+    "question": "Iodine is an essential component of",
+    "options": [
+      "insulin",
+      "adrenaline",
+      "growth hormone",
+      "thyroid hormones"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "T3 and T4 contain iodine atoms.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-068",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Calcium Homeostasis",
+    "difficulty": "easy",
+    "question": "Parathyroid hormone tends to",
+    "options": [
+      "decrease blood Ca²⁺ concentration",
+      "increase blood Ca²⁺ concentration",
+      "eliminate all bone resorption",
+      "block renal calcium reabsorption"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "PTH raises plasma calcium through effects on bone, kidney and vitamin-D activation.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-069",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Nervous System",
+    "difficulty": "easy",
+    "question": "At a typical chemical synapse, the signal crosses the synaptic cleft mainly by",
+    "options": [
+      "direct flow of DNA",
+      "movement of whole nuclei",
+      "continuous cytoplasm in every synapse",
+      "neurotransmitter molecules"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Neurotransmitters are released presynaptically and bind postsynaptic receptors.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-070",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Myelination",
+    "difficulty": "easy",
+    "question": "In the peripheral nervous system, myelin is formed by",
+    "options": [
+      "astrocytes",
+      "microglia",
+      "Schwann cells",
+      "ependymal cells"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Schwann cells myelinate peripheral axons; oligodendrocytes perform this role in the CNS.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-071",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Muscle Contraction",
+    "difficulty": "medium",
+    "question": "In skeletal muscle, Ca²⁺ initiates contraction by binding to",
+    "options": [
+      "myosin ATPase active site only",
       "troponin",
-      "myosin light chain in place of ATP",
+      "actin DNA",
       "collagen"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Ca\u00b2\u207a binds troponin, shifting tropomyosin away from actin's myosin-binding sites and permitting cross-bridge cycling.",
+    "explanation": "Ca²⁺ binding to troponin shifts tropomyosin and exposes myosin-binding sites on actin.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-039",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Breathing and Exchange of Gases",
+    "id": "neet-ug-2026-biology-072",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Sarcomere",
     "difficulty": "medium",
-    "question": "Most carbon dioxide is transported in human blood in the form of",
+    "question": "During contraction of a skeletal-muscle sarcomere, the length of the A band",
     "options": [
-      "carbaminohaemoglobin only",
-      "dissolved CO\u2082 only",
-      "bicarbonate ions",
-      "carbon monoxide"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The majority of CO\u2082 is converted to bicarbonate, largely within red blood cells, and transported in plasma.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-040",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Breathing and Exchange of Gases",
-    "difficulty": "medium",
-    "question": "A rightward shift of the oxyhaemoglobin dissociation curve is favoured by",
-    "options": [
-      "decreased CO\u2082 and increased pH",
-      "lower temperature only",
-      "absence of tissue metabolism",
-      "increased CO\u2082 and increased H\u207a concentration"
+      "becomes zero",
+      "doubles",
+      "always increases",
+      "remains essentially constant"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Higher CO\u2082/H\u207a lowers haemoglobin affinity for O\u2082 (Bohr effect), facilitating oxygen unloading in active tissues.",
+    "explanation": "The A band corresponds to thick-filament length, which does not shorten; overlap changes.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-041",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Body Fluids and Circulation",
-    "difficulty": "medium",
-    "question": "The pacemaker that normally initiates each heartbeat is the",
-    "options": [
-      "sinoatrial node",
-      "atrioventricular valve",
-      "bundle of His",
-      "Purkinje fibres only"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The sinoatrial node has the highest intrinsic firing rate and normally initiates cardiac excitation.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-042",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Body Fluids and Circulation",
-    "difficulty": "medium",
-    "question": "Which vessel carries oxygenated blood from the lungs to the heart?",
-    "options": [
-      "hepatic portal vein",
-      "pulmonary veins",
-      "superior vena cava",
-      "pulmonary arteries"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Pulmonary veins return oxygenated blood from lungs to the left atrium.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-043",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Excretory Products and Elimination",
-    "difficulty": "medium",
-    "question": "In a nephron, most filtered glucose is normally reabsorbed in the",
-    "options": [
-      "descending limb only",
-      "Bowman\u2019s capsule",
-      "proximal convoluted tubule",
-      "collecting duct only"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The proximal tubule reabsorbs essentially all filtered glucose under normal plasma glucose levels via cotransport mechanisms.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-044",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Neural Control and Coordination",
-    "difficulty": "medium",
-    "question": "Saltatory conduction in myelinated axons occurs because action potentials are regenerated mainly at the",
-    "options": [
-      "dendritic spines",
-      "synaptic vesicles",
-      "myelin internodes only",
-      "nodes of Ranvier"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Voltage-gated channels are concentrated at nodes of Ranvier, so impulses effectively jump from node to node.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-045",
-    "section": "Biology",
-    "topic": "Human Physiology \u2014 Chemical Coordination",
-    "difficulty": "hard",
-    "question": "A fall in blood calcium concentration stimulates secretion of",
-    "options": [
-      "parathyroid hormone",
-      "insulin",
-      "melatonin",
-      "calcitonin only"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Parathyroid hormone raises blood Ca\u00b2\u207a by promoting bone resorption, renal calcium retention and vitamin-D-mediated intestinal absorption.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-046",
-    "section": "Biology",
-    "topic": "Reproduction \u2014 Flowering Plants",
+    "id": "neet-ug-2026-biology-073",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Digestion",
     "difficulty": "easy",
-    "question": "Double fertilization in angiosperms produces a diploid zygote and a",
+    "question": "Pepsin functions mainly in the",
     "options": [
-      "haploid endosperm nucleus",
-      "triploid primary endosperm nucleus",
-      "diploid pollen grain",
-      "tetraploid embryo sac"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "One male gamete fuses with the egg to form the diploid zygote; the other fuses with two polar nuclei to form the usually triploid primary endosperm nucleus.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-047",
-    "section": "Biology",
-    "topic": "Reproduction \u2014 Flowering Plants",
-    "difficulty": "medium",
-    "question": "The pollen tube usually enters an angiosperm ovule through the",
-    "options": [
-      "integument at any random point",
-      "funicle wall only",
-      "micropyle",
-      "chalaza only"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "In porogamy, the common condition, the pollen tube enters through the micropyle and releases the male gametes into the embryo sac.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-048",
-    "section": "Biology",
-    "topic": "Reproduction \u2014 Flowering Plants",
-    "difficulty": "medium",
-    "question": "Apomixis is agriculturally useful because it can",
-    "options": [
-      "convert all plants into polyploids",
-      "prevent seed formation completely",
-      "force meiosis in all somatic cells",
-      "produce seeds without fertilization and preserve a favourable hybrid genotype"
+      "mouth",
+      "large intestine",
+      "gall bladder",
+      "stomach"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Apomictic seed formation bypasses fertilization and can maintain hybrid combinations across generations.",
+    "explanation": "Pepsin is activated in the acidic stomach and digests proteins.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-049",
-    "section": "Biology",
-    "topic": "Reproduction \u2014 Human Reproduction",
+    "id": "neet-ug-2026-biology-074",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Digestive Secretions",
     "difficulty": "easy",
-    "question": "In humans, fertilization normally occurs in the",
+    "question": "Bile contributes to digestion mainly by",
     "options": [
-      "ampullary-isthmic region of the oviduct",
-      "ovary cortex",
-      "vagina",
-      "uterine cervix"
+      "emulsifying fats and aiding their absorption",
+      "providing a powerful protease",
+      "hydrolysing starch directly",
+      "digesting DNA with pepsin"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The usual site of sperm-ovum fusion is the ampullary-isthmic junction of the fallopian tube.",
+    "explanation": "Bile salts emulsify lipids and support micelle formation; bile contains no digestive enzyme.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-050",
-    "section": "Biology",
-    "topic": "Reproduction \u2014 Human Reproduction",
-    "difficulty": "medium",
-    "question": "The LH surge in a normal menstrual cycle most directly triggers",
-    "options": [
-      "implantation",
-      "ovulation",
-      "menstruation immediately",
-      "milk secretion"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A mid-cycle surge of luteinizing hormone induces rupture of the mature follicle and ovulation.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-051",
-    "section": "Biology",
-    "topic": "Reproduction \u2014 Human Reproduction",
-    "difficulty": "medium",
-    "question": "After ovulation, the ruptured Graafian follicle primarily transforms into the",
-    "options": [
-      "endometrium",
-      "zona pellucida",
-      "corpus luteum",
-      "corpus callosum"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Follicular cells luteinize after ovulation to form the progesterone-secreting corpus luteum.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-052",
-    "section": "Biology",
-    "topic": "Reproductive Health",
-    "difficulty": "medium",
-    "question": "A contraceptive method that also reduces the risk of transmission of many sexually transmitted infections is",
-    "options": [
-      "vasectomy after healing as an STI barrier",
-      "copper IUD only",
-      "oral contraceptive pills only",
-      "condom use"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Barrier condoms reduce exchange of body fluids and therefore help prevent both pregnancy and many STIs.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-053",
-    "section": "Biology",
-    "topic": "Reproductive Health",
-    "difficulty": "medium",
-    "question": "In IVF followed by embryo transfer, fertilization occurs",
-    "options": [
-      "outside the body under laboratory conditions",
-      "only in the cervix",
-      "inside the ovary",
-      "only in the uterus"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "In vitro fertilization means gametes are fertilized outside the body, after which an embryo is transferred to the reproductive tract.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-054",
-    "section": "Biology",
-    "topic": "Reproductive Health",
-    "difficulty": "hard",
-    "question": "Amniocentesis is medically useful for prenatal diagnosis, but its misuse for sex determination is prohibited mainly because it can promote",
-    "options": [
-      "failure of all prenatal genetic tests",
-      "sex-selective abortion and a distorted sex ratio",
-      "spontaneous cloning",
-      "universal infertility"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Prenatal diagnostic techniques can detect fetal conditions, but sex determination for selection can enable female foeticide and demographic imbalance.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-055",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Mendelian Genetics",
+    "id": "neet-ug-2026-biology-075",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Digestive Enzymes",
     "difficulty": "easy",
-    "question": "In a monohybrid cross between two heterozygotes Aa \u00d7 Aa, the expected genotypic ratio is",
+    "question": "Trypsin is secreted by the pancreas initially as",
     "options": [
-      "3 AA : 1 aa",
-      "9:3:3:1",
-      "1 AA : 2 Aa : 1 aa",
-      "1 Aa : 1 aa"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Each parent produces A and a gametes equally; combining them gives AA, Aa, Aa and aa.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-056",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Mendelian Genetics",
-    "difficulty": "medium",
-    "question": "A test cross is performed by crossing an individual showing a dominant phenotype with",
-    "options": [
-      "a homozygous dominant individual",
-      "only another heterozygote",
-      "any unrelated species",
-      "a homozygous recessive individual"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The recessive tester reveals whether the dominant-phenotype individual contributes a recessive allele in its gametes.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-057",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Chromosomal Basis",
-    "difficulty": "medium",
-    "question": "Genes located close together on the same chromosome tend to be inherited together because of",
-    "options": [
-      "linkage",
-      "genetic drift only",
-      "translation",
-      "independent assortment without exception"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Physical proximity on a chromosome reduces the probability that crossing over separates the genes, producing linkage.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-058",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Molecular Basis of Inheritance",
-    "difficulty": "medium",
-    "question": "DNA polymerases synthesize a new DNA strand in the",
-    "options": [
-      "3\u2032 to 5\u2032 direction only",
-      "5\u2032 to 3\u2032 direction",
-      "either direction without restriction",
-      "5\u2032 to 5\u2032 direction"
+      "pepsinogen",
+      "trypsinogen",
+      "chymotrypsin itself only",
+      "amylase precursor"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Polymerases add nucleotides to a free 3\u2032-OH, so the growing strand extends 5\u2032\u21923\u2032.",
+    "explanation": "The inactive zymogen trypsinogen is activated in the small intestine.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-059",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Molecular Basis of Inheritance",
-    "difficulty": "medium",
-    "question": "In the lac operon, lactose availability promotes expression partly because the inducer binds to the",
-    "options": [
-      "structural genes and destroys them",
-      "promoter and permanently deletes it",
-      "repressor and reduces its ability to bind the operator",
-      "RNA polymerase and blocks transcription"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The inducer (allolactose) binds the lac repressor, decreasing operator binding and permitting transcription.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-060",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Molecular Basis of Inheritance",
-    "difficulty": "hard",
-    "question": "A coding DNA strand contains the sequence 5\u2032-ATG GAA TTT-3\u2032. Ignoring further codons, the corresponding mRNA sequence is",
-    "options": [
-      "5\u2032-TAC CTT AAA-3\u2032",
-      "3\u2032-AUG GAA UUU-5\u2032",
-      "5\u2032-UAC CUU AAA-3\u2032",
-      "5\u2032-AUG GAA UUU-3\u2032"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "mRNA matches the coding DNA strand in the 5\u2032\u21923\u2032 direction except that uracil replaces thymine.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-061",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Evolution",
-    "difficulty": "medium",
-    "question": "Natural selection acts directly on",
-    "options": [
-      "heritable phenotypic variation affecting reproductive success",
-      "mutations only after they become beneficial",
-      "future needs of organisms",
-      "acquired characters regardless of inheritance"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Individuals differ in heritable traits, and those differences can alter survival/reproduction; selection therefore acts on phenotypes with a heritable basis.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-062",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Population Genetics",
-    "difficulty": "medium",
-    "question": "In Hardy-Weinberg equilibrium for two alleles A and a with frequencies p and q, the expected heterozygote frequency is",
-    "options": [
-      "q\u00b2",
-      "2pq",
-      "p+q",
-      "p\u00b2"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Random mating under Hardy-Weinberg conditions gives genotype frequencies p\u00b2, 2pq and q\u00b2.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-063",
-    "section": "Biology",
-    "topic": "Genetics and Evolution \u2014 Human Evolution",
-    "difficulty": "medium",
-    "question": "The similarity of the basic pentadactyl limb plan in humans, whales and bats is best interpreted as evidence of",
-    "options": [
-      "convergent evolution producing analogous organs",
-      "inheritance of acquired use only",
-      "divergent evolution from a common ancestral structure",
-      "absence of evolutionary relationship"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The same underlying structural plan modified for different functions is homology and supports divergent evolution from common ancestry.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-064",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Human Health and Disease",
+    "id": "neet-ug-2026-biology-076",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Absorption",
     "difficulty": "easy",
-    "question": "Antibodies are secreted mainly by",
+    "question": "Villi and microvilli in the small intestine primarily increase",
     "options": [
+      "acid secretion",
+      "gas exchange with alveoli",
+      "surface area for absorption",
+      "urine concentration"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Their extensive folds enlarge the absorptive epithelial surface.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-077",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Respiration",
+    "difficulty": "medium",
+    "question": "Pulmonary surfactant is secreted mainly by",
+    "options": [
+      "type II alveolar cells",
+      "red blood cells",
+      "type I alveolar cells only",
+      "ciliated cells of the trachea exclusively"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Type II pneumocytes secrete surfactant, reducing alveolar surface tension.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-078",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Gas Transport",
+    "difficulty": "medium",
+    "question": "A rise in CO₂ and H⁺ in actively respiring tissue shifts the haemoglobin–O₂ dissociation curve",
+    "options": [
+      "to the right",
+      "to the left",
+      "upward with no affinity change",
+      "into a straight line"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The Bohr effect lowers haemoglobin’s O₂ affinity, facilitating oxygen unloading.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-079",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Immunity",
+    "difficulty": "easy",
+    "question": "Long-lived immune memory after many infections or vaccines is associated with",
+    "options": [
+      "mature erythrocytes",
       "platelets",
+      "neutrophils only with no lymphocyte role",
+      "memory lymphocytes"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Memory B and T cells support faster, stronger secondary responses.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-080",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Immunity",
+    "difficulty": "easy",
+    "question": "Antibodies are secreted in large amounts by",
+    "options": [
+      "red blood cells",
+      "plasma cells",
+      "mast cells only",
+      "platelets"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Activated B cells can differentiate into antibody-secreting plasma cells.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-081",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "HIV/AIDS",
+    "difficulty": "easy",
+    "question": "HIV preferentially targets cells expressing CD4, especially",
+    "options": [
       "erythrocytes",
-      "neutrophils only",
-      "plasma cells derived from B lymphocytes"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Activated B cells differentiate into plasma cells, which synthesize and secrete immunoglobulins.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-065",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Human Health and Disease",
-    "difficulty": "medium",
-    "question": "Vaccination protects primarily by generating",
-    "options": [
-      "immunological memory against specific antigens",
-      "loss of all lymphocytes",
-      "permanent nonspecific fever",
-      "antibiotic molecules inside red blood cells"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Vaccines stimulate adaptive immune responses and memory cells that respond rapidly upon later exposure to the pathogen.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-066",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Human Health and Disease",
-    "difficulty": "medium",
-    "question": "HIV progressively weakens adaptive immunity mainly by infecting and depleting",
-    "options": [
-      "osteocytes",
-      "CD4\u207a helper T cells",
+      "helper T lymphocytes",
       "platelets",
-      "mature erythrocytes"
+      "mature skeletal muscle fibres"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "HIV targets cells expressing CD4, especially helper T lymphocytes, undermining coordination of immune responses.",
+    "explanation": "CD4+ helper T cells are major targets of HIV.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-067",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Microbes in Human Welfare",
+    "id": "neet-ug-2026-biology-082",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Vaccination",
     "difficulty": "easy",
-    "question": "Lactobacillus species are useful in curd formation because they produce",
+    "question": "Vaccination generally produces",
     "options": [
-      "urea",
-      "methane only",
-      "lactic acid",
-      "oxygen gas"
+      "passive innate immunity",
+      "only nonspecific inflammation with no memory",
+      "active acquired immunity",
+      "genetic immunity transferred from parent"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Lactic acid bacteria ferment lactose and acidify milk, helping coagulate milk proteins and form curd.",
+    "explanation": "Vaccines stimulate the recipient’s own adaptive immune response and memory.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-068",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Microbes in Human Welfare",
-    "difficulty": "medium",
-    "question": "In sewage treatment, the biological oxygen demand of effluent falls substantially during secondary treatment because",
-    "options": [
-      "chlorination creates glucose",
-      "oxygen is removed from water completely",
-      "all salts precipitate as metals",
-      "microbial flocs oxidize much of the organic matter"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Aerobic microbial communities consume biodegradable organic matter, reducing the oxygen demand of the treated effluent.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-069",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Microbes in Human Welfare",
-    "difficulty": "medium",
-    "question": "Biogas is rich in methane largely because of the activity of",
-    "options": [
-      "methanogenic archaea",
-      "viruses",
-      "diatoms",
-      "cyanobacteria only"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Methanogens such as Methanobacterium produce methane under anaerobic conditions in digesters and ruminant guts.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-070",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Microbes in Human Welfare",
-    "difficulty": "medium",
-    "question": "A fungus used as a biological control agent against several plant pathogens is",
-    "options": [
-      "Lactobacillus",
-      "Trichoderma",
-      "Plasmodium",
-      "Methanobacterium"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Species of Trichoderma are used in biological control because they can suppress or antagonize a range of plant-pathogenic fungi.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-071",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Microbes in Human Welfare",
-    "difficulty": "medium",
-    "question": "Rhizobium-based inoculants are useful in legume cultivation mainly because the bacteria can",
-    "options": [
-      "replace photosynthesis in the host plant",
-      "convert nitrate directly into atmospheric nitrogen as their main benefit",
-      "fix atmospheric nitrogen symbiotically in root nodules",
-      "produce methane in leaf stomata"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Rhizobium forms a symbiosis with legume roots and fixes atmospheric N\u2082 into forms that enter plant nitrogen metabolism.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-072",
-    "section": "Biology",
-    "topic": "Biology and Human Welfare \u2014 Cancer",
-    "difficulty": "hard",
-    "question": "A major difference between a benign and a malignant tumour is that malignant cells are more likely to",
-    "options": [
-      "remain permanently encapsulated",
-      "stop dividing completely",
-      "differentiate into normal tissue in every case",
-      "invade neighbouring tissues and metastasize"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Malignant tumours can invade surrounding tissues and spread to distant sites through metastasis; benign tumours are generally localized.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-073",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Principles and Processes",
+    "id": "neet-ug-2026-biology-083",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Spermatogenesis",
     "difficulty": "easy",
-    "question": "Restriction endonucleases are useful in recombinant DNA technology because they",
+    "question": "Spermatogenesis occurs in the",
     "options": [
-      "cut DNA at specific recognition sequences",
-      "replicate whole cells",
-      "join DNA fragments without any enzyme",
-      "translate mRNA into protein"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Restriction enzymes recognize particular DNA sequences and cleave phosphodiester bonds at or near those sites.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-074",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Principles and Processes",
-    "difficulty": "medium",
-    "question": "DNA ligase is used during recombinant DNA construction to",
-    "options": [
-      "unwind DNA permanently",
-      "join DNA fragments by forming phosphodiester bonds",
-      "degrade all vector DNA",
-      "synthesize RNA primers only"
+      "epididymal lumen only",
+      "seminiferous tubules of testes",
+      "prostate gland",
+      "vas deferens wall only"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "DNA ligase seals breaks in the sugar-phosphate backbone and can join compatible DNA fragments.",
+    "explanation": "The seminiferous epithelium contains developing male germ cells and supporting Sertoli cells.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-075",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Principles and Processes",
-    "difficulty": "medium",
-    "question": "A selectable marker in a cloning vector is useful because it helps",
-    "options": [
-      "replace the origin of replication",
-      "increase chromosome number in every cell",
-      "identify cells that have taken up the vector",
-      "make DNA invisible"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Marker genes, such as antibiotic-resistance genes in appropriate experimental systems, allow selection of transformants carrying the vector.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-076",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Principles and Processes",
-    "difficulty": "medium",
-    "question": "PCR amplifies a chosen DNA region through repeated cycles that include denaturation, primer annealing and",
-    "options": [
-      "protein glycosylation",
-      "translation by ribosomes",
-      "meiosis",
-      "extension by a thermostable DNA polymerase"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "After primers anneal, a heat-stable DNA polymerase extends them to synthesize new DNA strands.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-077",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Principles and Processes",
-    "difficulty": "hard",
-    "question": "Two PCR reactions use the same template DNA, polymerase and nucleotides but different primer pairs. What most directly determines which segment of the template is amplified?",
-    "options": [
-      "The positions where the two primers anneal on opposite template strands",
-      "The total chromosome number of the organism",
-      "The colour of the reaction tube",
-      "Whether translation occurs after PCR"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "PCR amplification is bounded by the primer-binding sites. A primer pair that anneals to different flanking sequences defines a different target segment for amplification.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-078",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Applications",
+    "id": "neet-ug-2026-biology-084",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Menstrual Cycle",
     "difficulty": "easy",
-    "question": "Bt cotton is engineered to express proteins originally derived from",
+    "question": "Ovulation in a typical menstrual cycle is triggered chiefly by a surge of",
     "options": [
-      "Saccharomyces cerevisiae",
-      "Bacillus thuringiensis",
-      "Penicillium notatum",
-      "Rhizobium leguminosarum"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Bt genes originate from the bacterium Bacillus thuringiensis and encode insecticidal crystal proteins.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-079",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Applications",
-    "difficulty": "medium",
-    "question": "A transgenic farm animal engineered to express a human therapeutic protein specifically in its milk is being used primarily as",
-    "options": [
-      "a method for eliminating all inherited variation",
-      "a substitute for DNA cloning in every experiment",
-      "a biological system for production of a recombinant protein",
-      "an organism in which transcription has been stopped"
+      "prolactin",
+      "thyroxine",
+      "LH",
+      "aldosterone"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Transgenic animals can be designed to express useful recombinant proteins in particular tissues or secretions, allowing biological production of therapeutic molecules.",
+    "explanation": "A mid-cycle LH surge induces ovulation.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-080",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Applications",
-    "difficulty": "medium",
-    "question": "Gene therapy aims most directly to",
-    "options": [
-      "replace all proteins with carbohydrates",
-      "eliminate inheritance from all populations",
-      "create antibodies without genes",
-      "correct or compensate for a disease-causing genetic defect in patient cells"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Gene therapy introduces, modifies or regulates genetic material to restore or compensate for defective gene function.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-081",
-    "section": "Biology",
-    "topic": "Biotechnology \u2014 Biosafety and Ethics",
-    "difficulty": "medium",
-    "question": "A key reason for regulating genetically modified organisms before environmental release is to assess",
-    "options": [
-      "possible ecological and health risks",
-      "whether DNA contains any carbon",
-      "whether natural selection stops",
-      "whether all organisms become sterile"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Biosafety evaluation considers unintended effects such as gene flow, non-target impacts and potential health risks before release.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-082",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Organisms and Populations",
+    "id": "neet-ug-2026-biology-085",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Ovarian Cycle",
     "difficulty": "easy",
-    "question": "A relationship in which both interacting species benefit is called",
+    "question": "After ovulation, the ruptured follicle develops into the",
     "options": [
-      "amensalism",
-      "mutualism",
-      "predation",
-      "competition"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "In mutualism, each species gains a benefit from the interaction.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-083",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Organisms and Populations",
-    "difficulty": "medium",
-    "question": "In logistic population growth, the growth rate slows as population size approaches",
-    "options": [
-      "zero resource use",
-      "the mutation rate",
-      "the carrying capacity",
-      "the trophic level"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Density-dependent limitation increases near carrying capacity K, reducing per-capita population growth.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-084",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Ecosystem",
-    "difficulty": "medium",
-    "question": "If decomposer activity in an ecosystem were drastically reduced while other components initially remained present, which process would be most directly impaired?",
-    "options": [
-      "Diffusion of oxygen through the atmosphere",
-      "Capture of sunlight by chlorophyll in every producer",
-      "Formation of gametes in all consumers",
-      "Breakdown of detritus and return of mineral nutrients to the abiotic pool"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Decomposers mineralize organic matter in detritus, returning inorganic nutrients to soil or water. Suppressing them directly slows decomposition and nutrient recycling.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-085",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Ecosystem",
-    "difficulty": "medium",
-    "question": "Net primary productivity is equal to",
-    "options": [
-      "gross primary productivity minus plant respiration",
-      "consumer respiration minus decomposition",
-      "gross primary productivity plus plant respiration",
-      "secondary productivity plus detritus"
+      "corpus luteum",
+      "primary follicle",
+      "zona pellucida",
+      "endometrium"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "NPP = GPP \u2212 R, where R is respiratory energy loss by producers.",
+    "explanation": "Luteinization forms the corpus luteum, which secretes progesterone.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-086",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Biodiversity and Conservation",
+    "id": "neet-ug-2026-biology-086",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Human Fertilization",
     "difficulty": "medium",
-    "question": "Species confined naturally to a particular geographical region are described as",
+    "question": "In humans, fertilization normally occurs near the",
     "options": [
-      "invasive by definition",
-      "endemic",
-      "domesticated",
-      "cosmopolitan"
+      "cervix",
+      "ampullary-isthmic junction of the oviduct",
+      "uterine fundus only",
+      "vagina"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Endemic species have a naturally restricted geographical distribution.",
+    "explanation": "The ampullary-isthmic region is the usual site where sperm meets the ovulated secondary oocyte.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-087",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Biodiversity and Conservation",
-    "difficulty": "medium",
-    "question": "Protecting an entire natural habitat along with its interacting species is an example of",
-    "options": [
-      "ex situ conservation only",
-      "artificial selection",
-      "in situ conservation",
-      "gene cloning"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "In situ conservation protects species within their natural ecosystems, for example in protected areas.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-088",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Ecosystem",
+    "id": "neet-ug-2026-biology-087",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Pregnancy Hormones",
     "difficulty": "easy",
-    "question": "Decomposition of plant litter generally proceeds fastest under conditions that are",
+    "question": "A hormone produced early by trophoblastic/placental tissue and detected in many pregnancy tests is",
     "options": [
-      "permanently frozen and water-free",
-      "completely anoxic in every case",
-      "cold and extremely dry",
-      "warm and moist with adequate oxygen"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Decomposer activity and enzymatic breakdown are generally favoured by warm, moist and aerated conditions, whereas cold or dryness slows decomposition.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-bi-089",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Organisms and Populations",
-    "difficulty": "medium",
-    "question": "Two species use the same limiting resource in the same habitat for many generations. If one consistently eliminates the other from that niche, the outcome illustrates",
-    "options": [
-      "competitive exclusion",
-      "mutualism",
-      "commensalism",
-      "primary productivity"
+      "hCG",
+      "FSH",
+      "TSH",
+      "ADH"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The competitive-exclusion principle predicts that species with essentially identical limiting-resource requirements cannot coexist indefinitely if one is consistently the superior competitor.",
+    "explanation": "Human chorionic gonadotropin rises after implantation and supports the corpus luteum early in pregnancy.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-bi-090",
-    "section": "Biology",
-    "topic": "Ecology \u2014 Biodiversity and Conservation",
-    "difficulty": "hard",
-    "question": "In the species-area relationship written as log S = log C + Z log A, the coefficient Z represents",
+    "id": "neet-ug-2026-biology-088",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Female Reproduction",
+    "difficulty": "easy",
+    "question": "During the early follicular phase, FSH primarily promotes",
     "options": [
-      "the mutation rate per generation",
-      "the slope of the line on a log-log plot of species richness against area",
-      "the trophic transfer efficiency",
-      "the carrying capacity of every population"
+      "milk ejection",
+      "uterine contraction at labour",
+      "spermiation",
+      "growth of ovarian follicles"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Taking logarithms of S = C A^Z gives a straight line with slope Z when log species richness is plotted against log area.",
+    "explanation": "FSH supports follicular development and granulosa-cell function.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-089",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "Biotechnology",
+    "difficulty": "easy",
+    "question": "Restriction endonucleases recognize specific DNA sequences that are often",
+    "options": [
+      "composed only of uracil",
+      "random proteins",
+      "palindromic",
+      "long chains of amino acids"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Many restriction enzymes bind short sequences with dyad symmetry/palindromic character.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-biology-090",
+    "section": "Biology (Botany & Zoology)",
+    "topic": "PCR",
+    "difficulty": "easy",
+    "question": "The heat-stable DNA polymerase classically used in PCR is",
+    "options": [
+      "DNA ligase",
+      "RNA polymerase II",
+      "Taq polymerase",
+      "reverse transcriptase only"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Taq polymerase from Thermus aquaticus tolerates repeated high-temperature denaturation cycles.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];
