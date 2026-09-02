@@ -125,7 +125,9 @@ export type ExamSlug =
   | 'tjee'
   | 'uttarakhand-jeep'
   | 'neet-ug'
-  | 'nift';
+  | 'nift'
+  | 'wb-jelet'
+  | 'vtueee';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -353,6 +355,8 @@ const TJEE_2026_SYLLABUS_PDF = 'https://tbjee.tripura.gov.in/sites/default/files
 const UTTARAKHAND_JEEP_2026_BROCHURE = 'https://www.ubterjeep.co.in/Documents/Brochure.pdf';
 const NEET_UG_2026_ADMISSION_BULLETIN = 'https://neet.nta.nic.in/admission-bulletin/';
 const NIFT_2026_INFORMATION_BULLETIN = 'https://www.nift.ac.in/sites/default/files/inline-files/NTA-Information-Bulletin-2026.pdf';
+const WB_JELET_2026_INFORMATION_BULLETIN = 'https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2026/03/20260318287108702.pdf';
+const VTUEEE_2026_BTECH_ADMISSIONS_PAGE = 'https://www.veltech.edu.in/btech-admissions/';
 
 function selectionPostTests(level: string, prefix: string, testNumber = 1, checkedOn = '9 August 2026'): TestConfig[] {
   const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn };
@@ -11745,6 +11749,73 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'bftech-gat-full-mock-1', name: 'B.FTech GAT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Section A — Communication Ability & English Comprehension', 'Section A — Quantitative Ability', 'Section A — Analytical & Logical Ability', 'Section A — General Knowledge & Current Affairs'], duration: 120 }, { sections: ['Section B — Quantitative Ability', 'Section B — Analytical & Logical Ability', 'Section B — Case Study'], duration: 60 }], marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '31 August 2026' },
+        ],
+      },
+    ],
+  },
+  'wb-jelet': {
+    slug: 'wb-jelet',
+    name: 'WB JELET',
+    fullName: 'West Bengal Joint Entrance Lateral Entry Test',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'paper-1-engineering-lateral',
+        name: 'Paper-I Engineering/Technology Lateral Entry',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry', 'Fundamentals of Electrical & Electronics Engineering'],
+          totalQuestions: 100,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 'Varies by question category',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 40, marks: 50 },
+            { name: 'Physics', questions: 30, marks: 35 },
+            { name: 'Chemistry', questions: 20, marks: 25 },
+            { name: 'Fundamentals of Electrical & Electronics Engineering', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: 'JELET-2026 Paper-I is the lateral-entry route for Diploma in Engineering/Technology, B.Sc., D.Voc. and B.Voc. candidates; Paper-II (Diploma Pharmacy) is out of scope. Each section mixes Category-1 (single-correct MCQ, +1 correct/-0.25 wrong) and Category-2 (multi-select, +2 for selecting all and only the correct options, 0 for selecting any incorrect option, and 2 × selectedCorrect / totalActuallyCorrect for a proper correct-only subset, with no negative marking) questions: Mathematics 30+10, Physics 25+5, Chemistry 15+5, and Fundamentals of Electrical & Electronics Engineering 10+0.',
+          sourceUrl: WB_JELET_2026_INFORMATION_BULLETIN,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'paper-1-full-mock-1', name: 'Paper-I Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'Category-1 questions (single-correct) score +1 correct / -0.25 wrong. Category-2 questions (multi-select) score +2 for selecting all and only the correct options, 0 for selecting any incorrect option, and a proportional 2 × selectedCorrect / totalActuallyCorrect for a correct-only subset, with no negative marking.', checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'vtueee': {
+    slug: 'vtueee',
+    name: 'VTUEEE',
+    fullName: 'Vel Tech Undergraduate Engineering Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'btech',
+        name: 'B.Tech',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 90,
+          totalMarks: 360,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 120 },
+            { name: 'Chemistry', questions: 30, marks: 120 },
+            { name: 'Mathematics', questions: 30, marks: 120 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'The current Vel Tech B.Tech admissions page and the current VTUEEE 2026 brochure directly confirm the 2026 cycle identity and phase schedule but do not themselves state the exact 90-question / 30-30-30 / 180-minute / +4/-1 scheme; that shell is corroborated across multiple independent current secondary sources and matches the historical VTUEEE pattern, so it is used here as a corroborated-current-secondary shell rather than current-direct-official. The subject syllabus PDFs the official page links to are historical VTUEEE-2019 files, not current 2026 syllabus documents.',
+          sourceUrl: VTUEEE_2026_BTECH_ADMISSIONS_PAGE,
+          checkedOn: '28 August 2026',
+        },
+        tests: [
+          { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '28 August 2026' },
         ],
       },
     ],
