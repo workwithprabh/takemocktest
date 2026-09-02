@@ -2,1083 +2,1083 @@ import type { Question } from '../questions';
 
 export const NEET_UG_2026_CHEMISTRY_1: Question[] = [
   {
-    "id": "neet-ug-2026-ch-001",
+    "id": "neet-ug-2026-chemistry-001",
     "section": "Chemistry",
-    "topic": "Some Basic Concepts in Chemistry",
+    "topic": "Mole Concept",
     "difficulty": "easy",
-    "question": "A sample contains 0.25 mol of O\u2082 molecules. The amount of oxygen atoms present is",
+    "question": "How many moles are present in 4.4 g of CO₂? (Molar mass 44 g mol⁻¹)",
     "options": [
-      "0.50 mol",
-      "1.00 mol",
-      "0.125 mol",
-      "0.25 mol"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Each O\u2082 molecule contains two O atoms, so 0.25 mol O\u2082 corresponds to 0.50 mol O atoms.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-002",
-    "section": "Chemistry",
-    "topic": "Some Basic Concepts in Chemistry",
-    "difficulty": "medium",
-    "question": "Aluminium reacts with oxygen according to 4Al + 3O\u2082 \u2192 2Al\u2082O\u2083. If 0.50 mol Al is mixed with 0.30 mol O\u2082 and allowed to react completely, the amount of Al\u2082O\u2083 formed is",
-    "options": [
-      "0.15 mol",
-      "0.20 mol",
-      "0.30 mol",
-      "0.25 mol"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "For 0.30 mol O\u2082, the stoichiometric amount of Al required is (4/3)(0.30)=0.40 mol, so O\u2082 is limiting. From 3 mol O\u2082 \u2192 2 mol Al\u2082O\u2083, product formed = (2/3)(0.30)=0.20 mol.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-003",
-    "section": "Chemistry",
-    "topic": "Atomic Structure",
-    "difficulty": "medium",
-    "question": "A subshell contains five orbitals and belongs to the lowest principal shell in which such a subshell can exist. The values of n and l are respectively",
-    "options": [
-      "2 and 1",
-      "3 and 1",
-      "3 and 2",
-      "4 and 2"
+      "0.01 mol",
+      "1.0 mol",
+      "0.10 mol",
+      "10 mol"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A subshell with five orbitals has 2l+1=5, so l=2 (a d subshell). The smallest allowed principal quantum number is n=l+1=3.",
+    "explanation": "Moles=mass/molar mass=4.4/44=0.10 mol.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-004",
+    "id": "neet-ug-2026-chemistry-002",
+    "section": "Chemistry",
+    "topic": "Stoichiometry",
+    "difficulty": "medium",
+    "question": "For 2H₂ + O₂ → 2H₂O, 3 mol H₂ is mixed with 1 mol O₂. The maximum amount of H₂O formed is",
+    "options": [
+      "1 mol",
+      "3 mol",
+      "4 mol",
+      "2 mol"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "1 mol O₂ consumes 2 mol H₂ and produces 2 mol H₂O; O₂ is limiting.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-003",
+    "section": "Chemistry",
+    "topic": "Stoichiometry of Combustion",
+    "difficulty": "medium",
+    "question": "Complete combustion of 0.15 mol of a hydrocarbon CₓHᵧ produces 0.60 mol CO₂ and consumes 0.90 mol O₂. The molecular formula of the hydrocarbon is",
+    "options": [
+      "C₃H₈",
+      "C₄H₈",
+      "C₄H₁₀",
+      "C₅H₁₂"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "CO₂ formed per mole of hydrocarbon gives x = 0.60/0.15 = 4. Oxygen required per mole is 0.90/0.15 = 6, so x + y/4 = 6. Thus 4 + y/4 = 6, giving y = 8 and C₄H₈.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-004",
     "section": "Chemistry",
     "topic": "Atomic Structure",
-    "difficulty": "medium",
-    "question": "For a hydrogen-like ion, the energy of an electron in the second Bohr orbit is \u221213.6 eV. The nuclear charge Z is",
+    "difficulty": "easy",
+    "question": "For electromagnetic radiation, photon energy is directly proportional to",
     "options": [
-      "4",
-      "3",
+      "frequency",
+      "wavelength",
+      "square of wavelength",
+      "inverse square of frequency"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "E=hν.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-005",
+    "section": "Chemistry",
+    "topic": "Hydrogen Spectrum",
+    "difficulty": "easy",
+    "question": "The transition n=3 to n=2 in hydrogen belongs to the",
+    "options": [
+      "Balmer series",
+      "Lyman series",
+      "Paschen series",
+      "Brackett series"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Transitions ending at n=2 form the Balmer series.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-006",
+    "section": "Chemistry",
+    "topic": "Atomic Structure",
+    "difficulty": "easy",
+    "question": "The maximum number of electrons that can occupy the shell with principal quantum number n=3 is",
+    "options": [
+      "8",
+      "9",
+      "32",
+      "18"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Maximum shell capacity is 2n²=18.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-007",
+    "section": "Chemistry",
+    "topic": "Periodicity",
+    "difficulty": "medium",
+    "question": "Among Na, Mg, Al and Si, which has the highest first ionization enthalpy?",
+    "options": [
+      "Na",
+      "Mg",
+      "Si",
+      "Al"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Across period 3 the general trend increases; Si exceeds Mg and Al, while Al shows the known dip below Mg.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-008",
+    "section": "Chemistry",
+    "topic": "Periodicity",
+    "difficulty": "easy",
+    "question": "Which order of atomic radii is correct for period-3 elements Na, Mg, Al and Si?",
+    "options": [
+      "Si > Al > Mg > Na",
+      "Na > Al > Mg > Si",
+      "Na > Mg > Al > Si",
+      "Mg > Na > Si > Al"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Atomic radius generally decreases from left to right across a period.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-009",
+    "section": "Chemistry",
+    "topic": "Chemical Bonding",
+    "difficulty": "easy",
+    "question": "The hybridization of boron in BF₃ is",
+    "options": [
+      "sp",
+      "sp²",
+      "sp³",
+      "dsp²"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "BF₃ has three sigma bonds and trigonal-planar electron geometry, corresponding to sp².",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-010",
+    "section": "Chemistry",
+    "topic": "Chemical Bonding",
+    "difficulty": "easy",
+    "question": "The molecular shape of NH₃ is",
+    "options": [
+      "trigonal pyramidal",
+      "trigonal planar",
+      "tetrahedral",
+      "bent"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Four electron pairs surround N, with one lone pair; molecular geometry is trigonal pyramidal.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-011",
+    "section": "Chemistry",
+    "topic": "Molecular Orbital Theory",
+    "difficulty": "medium",
+    "question": "The bond order of O₂ according to molecular orbital theory is",
+    "options": [
       "1",
+      "1.5",
+      "2.5",
       "2"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "For a hydrogen-like species, E_n = \u221213.6 Z\u00b2/n\u00b2 eV. At n=2, \u221213.6 = \u221213.6 Z\u00b2/4, so Z\u00b2=4 and Z=2.",
+    "explanation": "Bond order=(bonding−antibonding electrons)/2=2 for O₂.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-005",
+    "id": "neet-ug-2026-chemistry-012",
     "section": "Chemistry",
-    "topic": "Chemical Bonding and Molecular Structure",
+    "topic": "Molecular Polarity",
     "difficulty": "easy",
-    "question": "Which molecule has a trigonal pyramidal molecular shape?",
+    "question": "CO₂ has polar C=O bonds but zero net dipole moment because the molecule is",
     "options": [
-      "NH\u2083",
-      "CO\u2082",
-      "CH\u2084",
-      "BF\u2083"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "NH\u2083 has three bond pairs and one lone pair around nitrogen, giving trigonal pyramidal shape.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-006",
-    "section": "Chemistry",
-    "topic": "Chemical Bonding and Molecular Structure",
-    "difficulty": "medium",
-    "question": "A homonuclear second-period diatomic molecule is diamagnetic with bond order 2. If one electron is added to its next available bonding molecular orbital, which result is consistent with the usual MO ordering for B\u2082, C\u2082 and N\u2082?",
-    "options": [
-      "Bond order becomes 1.5 and it remains diamagnetic",
-      "Bond order becomes 2.5 and it becomes paramagnetic",
-      "Bond order remains 2 and it becomes paramagnetic",
-      "Bond order becomes 2.5 and it remains diamagnetic"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The neutral molecule described is C\u2082 in the usual light-diatomic MO ordering. Its next available orbital is bonding \u03c32p. Adding one electron increases bond order by 1/2 and leaves that orbital singly occupied, so the anion has bond order 2.5 and is paramagnetic.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-007",
-    "section": "Chemistry",
-    "topic": "Chemical Bonding and Molecular Structure",
-    "difficulty": "medium",
-    "question": "Which interaction is primarily responsible for the unusually high boiling point of water compared with H\u2082S?",
-    "options": [
-      "Metallic bonding",
-      "Intramolecular coordinate bonding",
-      "Intermolecular hydrogen bonding",
-      "Ionic bonding"
+      "bent",
+      "tetrahedral",
+      "linear and symmetric",
+      "trigonal pyramidal"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Water molecules form an extensive intermolecular hydrogen-bond network, requiring extra energy to separate them.",
+    "explanation": "The two equal bond dipoles oppose exactly in a linear molecule.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-008",
+    "id": "neet-ug-2026-chemistry-013",
     "section": "Chemistry",
-    "topic": "Chemical Thermodynamics",
+    "topic": "Thermochemistry",
     "difficulty": "medium",
-    "question": "For a reaction at constant temperature and pressure, \u0394H = \u221260 kJ mol\u207b\u00b9 and \u0394S = \u2212100 J mol\u207b\u00b9 K\u207b\u00b9. At 300 K, \u0394G is",
+    "question": "For a reaction, ΔH = −80 kJ mol⁻¹. Which statement is correct?",
     "options": [
-      "\u221290 kJ mol\u207b\u00b9",
-      "+30 kJ mol\u207b\u00b9",
-      "0 kJ mol\u207b\u00b9",
-      "\u221230 kJ mol\u207b\u00b9"
+      "The reaction is endothermic",
+      "Heat is absorbed from surroundings at constant pressure",
+      "The reaction is exothermic",
+      "The products must have higher enthalpy than reactants"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Negative reaction enthalpy means heat is released at constant pressure.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-014",
+    "section": "Chemistry",
+    "topic": "Chemical Equilibrium",
+    "difficulty": "easy",
+    "question": "For an endothermic equilibrium, raising temperature shifts equilibrium predominantly toward",
+    "options": [
+      "reactants",
+      "neither side under any condition",
+      "only the side with fewer moles",
+      "products"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "\u0394G=\u0394H\u2212T\u0394S = \u221260 \u2212 300(\u22120.100) = \u221230 kJ mol\u207b\u00b9.",
+    "explanation": "Heat acts like a reactant for an endothermic forward reaction; increasing temperature favors products.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-009",
+    "id": "neet-ug-2026-chemistry-015",
     "section": "Chemistry",
-    "topic": "Chemical Thermodynamics",
+    "topic": "Thermodynamics",
     "difficulty": "medium",
-    "question": "A system absorbs 250 J of heat while 70 J of work is done on the system. Using \u0394U = q + w, its internal-energy change is",
+    "question": "For a reaction at fixed temperature, K>1. The standard Gibbs energy change ΔG° is",
     "options": [
-      "+320 J",
-      "+180 J",
-      "\u2212320 J",
-      "\u2212180 J"
+      "positive",
+      "zero for every K>1",
+      "unrelated to K",
+      "negative"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Here q=+250 J and w=+70 J because work is done on the system. Thus \u0394U=+320 J.",
+    "explanation": "ΔG°=−RT lnK; for K>1, lnK>0 so ΔG°<0.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-010",
+    "id": "neet-ug-2026-chemistry-016",
     "section": "Chemistry",
-    "topic": "Solutions",
+    "topic": "Equilibrium Constant",
     "difficulty": "medium",
-    "question": "A 0.10 molal aqueous solution of a non-electrolyte has freezing-point depression \u0394T_f. If another solution of the same solute is 0.25 molal under dilute-solution conditions, its depression is approximately",
+    "question": "For A ⇌ 2B, equilibrium concentrations are [A]=0.50 M and [B]=1.0 M. Kc equals",
     "options": [
-      "6.25\u0394T_f",
-      "2.5\u0394T_f",
-      "1.5\u0394T_f",
-      "0.4\u0394T_f"
+      "0.5",
+      "2.0",
+      "1.0",
+      "4.0"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "For the same non-electrolyte and solvent, \u0394T_f = K_f m, so the ratio is 0.25/0.10 = 2.5.",
+    "explanation": "Kc=[B]²/[A]=1²/0.5=2.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-011",
+    "id": "neet-ug-2026-chemistry-017",
     "section": "Chemistry",
-    "topic": "Solutions",
-    "difficulty": "medium",
-    "question": "Equal volumes of 0.20 M glucose and 0.10 M glucose are mixed. Assuming additive volumes, the final glucose concentration is",
+    "topic": "Ionic Equilibrium",
+    "difficulty": "easy",
+    "question": "The pH of 1.0×10⁻³ M HCl at 25°C, assuming complete dissociation, is",
     "options": [
-      "0.20 M",
-      "0.10 M",
-      "0.15 M",
-      "0.30 M"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "If each volume is V, total moles are 0.20V+0.10V=0.30V and total volume is 2V, giving 0.15 M.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-012",
-    "section": "Chemistry",
-    "topic": "Equilibrium",
-    "difficulty": "medium",
-    "question": "For the reaction A(g) \u21cc 2B(g), the equilibrium constant K_c is 4. If at some instant [A]=1.0 M and [B]=1.0 M, the reaction quotient Q_c is",
-    "options": [
+      "2",
       "4",
-      "2",
-      "1/4",
-      "1"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Q_c=[B]\u00b2/[A]=(1.0)\u00b2/1.0=1. Since Q<K, the forward reaction would be favoured, but the asked value is 1.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-013",
-    "section": "Chemistry",
-    "topic": "Equilibrium",
-    "difficulty": "medium",
-    "question": "A buffer contains a weak acid HA and its salt NaA. If [A\u207b] is twice [HA], then relative to pK_a the pH is",
-    "options": [
-      "pK_a + log 2",
-      "pK_a",
-      "2pK_a",
-      "pK_a \u2212 log 2"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Henderson-Hasselbalch gives pH=pK_a+log([A\u207b]/[HA])=pK_a+log2.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-014",
-    "section": "Chemistry",
-    "topic": "Equilibrium",
-    "difficulty": "medium",
-    "question": "A weak acid HA is in aqueous equilibrium, HA \u21cc H\u207a + A\u207b. If a soluble salt containing A\u207b is added at constant temperature, which change is expected after equilibrium is re-established?",
-    "options": [
-      "The ionization of HA increases and [H\u207a] rises",
-      "The ionization of HA decreases and [H\u207a] falls",
-      "The equilibrium constant K_a increases",
-      "All HA is forced to ionize completely"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Added A\u207b is a common ion. By Le Chatelier\u2019s principle the dissociation equilibrium shifts toward HA, reducing its ionization and lowering [H\u207a]. K_a itself is unchanged at fixed temperature.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-015",
-    "section": "Chemistry",
-    "topic": "Redox Reactions and Electrochemistry",
-    "difficulty": "medium",
-    "question": "In acidic medium, one MnO\u2084\u207b ion is reduced to Mn\u00b2\u207a. The number of electrons accepted per manganese atom is",
-    "options": [
-      "2",
-      "7",
-      "5",
+      "11",
       "3"
     ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Mn changes from oxidation state +7 in MnO\u2084\u207b to +2 in Mn\u00b2\u207a, so it gains 5 electrons.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-016",
-    "section": "Chemistry",
-    "topic": "Redox Reactions and Electrochemistry",
-    "difficulty": "medium",
-    "question": "For a spontaneous galvanic cell under standard conditions, which statement must be true?",
-    "options": [
-      "E\u00b0cell is negative and \u0394G\u00b0 is negative",
-      "E\u00b0cell is positive and \u0394G\u00b0 is positive",
-      "Both E\u00b0cell and \u0394G\u00b0 are zero",
-      "E\u00b0cell is positive and \u0394G\u00b0 is negative"
-    ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "\u0394G\u00b0 = \u2212nFE\u00b0cell. A spontaneous standard cell has \u0394G\u00b0<0, hence E\u00b0cell>0.",
+    "explanation": "pH=−log(10⁻3)=3.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-017",
+    "id": "neet-ug-2026-chemistry-018",
     "section": "Chemistry",
-    "topic": "Redox Reactions and Electrochemistry",
-    "difficulty": "medium",
-    "question": "When the concentration of all ions in an ideal electrochemical cell is changed away from standard conditions, the cell potential is related to the reaction quotient Q by the Nernst equation. Increasing Q at fixed temperature generally makes E_cell",
-    "options": [
-      "smaller",
-      "larger",
-      "exactly zero",
-      "unchanged in every cell"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "E=E\u00b0\u2212(RT/nF)lnQ, so increasing Q lowers E at fixed temperature.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-018",
-    "section": "Chemistry",
-    "topic": "Chemical Kinetics",
-    "difficulty": "medium",
-    "question": "A catalyst is added to a reversible reaction at fixed temperature. Which statement is correct?",
-    "options": [
-      "It changes the reaction enthalpy",
-      "It speeds up both forward and reverse reactions without changing the equilibrium constant",
-      "It makes the equilibrium constant zero",
-      "It increases only the forward rate and increases K"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A catalyst provides lower-activation-energy pathways for both directions. It changes how quickly equilibrium is reached, but not \u0394G\u00b0 or the equilibrium constant at a fixed temperature.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-019",
-    "section": "Chemistry",
-    "topic": "Chemical Kinetics",
-    "difficulty": "hard",
-    "question": "A reaction has rate law r = k[A]\u00b2[B]. If [A] is halved and [B] is doubled, the rate becomes",
-    "options": [
-      "unchanged",
-      "one-fourth",
-      "half the original rate",
-      "double"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Rate factor = (1/2)\u00b2\u00d72 = 1/2.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-020",
-    "section": "Chemistry",
-    "topic": "Classification of Elements and Periodicity",
+    "topic": "Buffers",
     "difficulty": "easy",
-    "question": "Across a period from left to right, the first ionization enthalpy generally",
+    "question": "For a buffer containing equal concentrations of a weak acid HA and its salt A⁻, the pH is",
     "options": [
-      "decreases steadily to zero",
-      "becomes negative",
-      "remains exactly constant",
-      "increases"
+      "equal to 7 in every case",
+      "twice pKa",
+      "zero",
+      "equal to pKa"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Effective nuclear charge generally rises across a period, so removal of an electron usually requires more energy, with known exceptions.",
+    "explanation": "Henderson–Hasselbalch gives pH=pKa+log([A⁻]/[HA])=pKa.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-021",
+    "id": "neet-ug-2026-chemistry-019",
     "section": "Chemistry",
-    "topic": "Classification of Elements and Periodicity",
+    "topic": "Solubility Product",
     "difficulty": "medium",
-    "question": "Which pair correctly represents the usual size relation for the same element?",
+    "question": "If the molar solubility of CaF₂ in pure water is s, its Ksp is",
     "options": [
-      "cation < atom < anion",
-      "anion < atom < cation",
-      "atom < cation < anion",
-      "cation < anion < atom"
+      "4s³",
+      "s²",
+      "2s²",
+      "8s³"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Cations are smaller than their parent atoms because of electron loss and stronger effective attraction; anions are larger because of added electron-electron repulsion.",
+    "explanation": "[Ca²⁺]=s and [F⁻]=2s, so Ksp=s(2s)²=4s³.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-022",
+    "id": "neet-ug-2026-chemistry-020",
     "section": "Chemistry",
-    "topic": "p-Block Elements",
-    "difficulty": "medium",
-    "question": "In Group 15, the stability of the +5 oxidation state generally decreases down the group mainly because of",
+    "topic": "Redox Chemistry",
+    "difficulty": "easy",
+    "question": "The oxidation state of chromium in K₂Cr₂O₇ is",
     "options": [
-      "increasing electronegativity",
-      "the inert-pair effect",
-      "decreasing atomic size",
-      "increasing first ionization enthalpy"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The inert-pair effect makes the ns\u00b2 electron pair less available for bonding down heavier p-block groups, stabilizing lower oxidation states.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-023",
-    "section": "Chemistry",
-    "topic": "p-Block Elements",
-    "difficulty": "medium",
-    "question": "Which oxide is expected to be the most acidic?",
-    "options": [
-      "MgO",
-      "Na\u2082O",
-      "Cl\u2082O\u2087",
-      "Al\u2082O\u2083"
+      "+3",
+      "+4",
+      "+6",
+      "+7"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Cl\u2082O\u2087 is the anhydride of strong acid HClO\u2084 and is strongly acidic; Na\u2082O and MgO are basic, Al\u2082O\u2083 amphoteric.",
+    "explanation": "2(+1)+2x+7(−2)=0 gives x=+6.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-024",
+    "id": "neet-ug-2026-chemistry-021",
     "section": "Chemistry",
-    "topic": "d- and f-Block Elements",
-    "difficulty": "medium",
-    "question": "The characteristic colour of many transition-metal ions is commonly associated with",
+    "topic": "Electrochemistry",
+    "difficulty": "easy",
+    "question": "At the anode of a galvanic cell, the process is",
     "options": [
-      "metallic bonding in solution",
-      "complete absence of d electrons",
-      "nuclear spin only",
-      "electronic transitions involving partially filled d orbitals"
+      "reduction",
+      "neutralization",
+      "oxidation",
+      "precipitation only"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Partially filled d levels can be split by ligand fields; absorption associated with electronic transitions often produces visible colour.",
+    "explanation": "Oxidation occurs at the anode in both galvanic and electrolytic cells.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-025",
+    "id": "neet-ug-2026-chemistry-022",
     "section": "Chemistry",
-    "topic": "d- and f-Block Elements",
-    "difficulty": "medium",
-    "question": "The gradual decrease in atomic and ionic radii across the lanthanoid series is called",
+    "topic": "Electrochemistry",
+    "difficulty": "easy",
+    "question": "For a galvanic cell, the standard cell potential is calculated as",
     "options": [
-      "lanthanoid contraction",
-      "inert-pair effect",
-      "actinoid expansion",
-      "diagonal relationship"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Poor shielding by 4f electrons causes a progressive increase in effective nuclear charge and contraction of radii across the lanthanoids.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-026",
-    "section": "Chemistry",
-    "topic": "Coordination Compounds",
-    "difficulty": "medium",
-    "question": "In an octahedral complex [Co(en)(NH\u2083)\u2083(SCN)]\u00b2\u207a, the thiocyanate ligand is S-bonded in one sample and N-bonded in another, while the composition and all other connectivity remain unchanged. The two samples are",
-    "options": [
-      "coordination isomers",
-      "linkage isomers",
-      "ionisation isomers",
-      "geometrical isomers"
+      "E°anode − E°cathode",
+      "E°cathode − E°anode",
+      "E°cathode + E°anode in every convention",
+      "zero for a spontaneous cell"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "SCN\u207b is an ambidentate ligand and can coordinate through S or N. Complexes that differ only in the donor atom used by the same ambidentate ligand are linkage isomers.",
+    "explanation": "Using standard reduction potentials, E°cell=E°cathode−E°anode.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-027",
+    "id": "neet-ug-2026-chemistry-023",
     "section": "Chemistry",
-    "topic": "Coordination Compounds",
-    "difficulty": "hard",
-    "question": "An octahedral metal ion has a d\u2076 configuration. If the octahedral splitting energy is greater than the electron-pairing energy, how many unpaired d electrons are expected?",
+    "topic": "Electrolysis",
+    "difficulty": "medium",
+    "question": "A charge of one faraday passes through an electrolytic cell. The amount of substance discharged is",
     "options": [
-      "2",
-      "4",
+      "one mole in every case",
+      "one gram in every case",
+      "one gram-equivalent",
+      "two gram-equivalents"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "One faraday transfers one mole of electrons and discharges one equivalent amount.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-024",
+    "section": "Chemistry",
+    "topic": "Chemical Kinetics",
+    "difficulty": "easy",
+    "question": "For a first-order reaction, the half-life is",
+    "options": [
+      "directly proportional to initial concentration",
+      "independent of initial concentration",
+      "inversely proportional to initial concentration",
+      "zero at high concentration"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "t1/2=ln2/k for first order.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-025",
+    "section": "Chemistry",
+    "topic": "Reaction Order",
+    "difficulty": "easy",
+    "question": "For a reaction involving one reactant A, doubling [A] doubles the initial rate while other conditions are fixed. The observed order in A is",
+    "options": [
+      "1",
       "0",
-      "6"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "When \u0394_o exceeds pairing energy, a d\u2076 ion adopts the low-spin arrangement t\u2082g\u2076e_g\u2070. All six d electrons are paired, so there are no unpaired electrons.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-028",
-    "section": "Chemistry",
-    "topic": "Purification and Characterisation of Organic Compounds",
-    "difficulty": "easy",
-    "question": "Which separation technique is especially useful for separating components based on different adsorption or partition behaviour between stationary and mobile phases?",
-    "options": [
-      "Simple filtration",
-      "Decantation",
-      "Sublimation only",
-      "Chromatography"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Chromatography separates components because they interact differently with stationary and mobile phases.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-029",
-    "section": "Chemistry",
-    "topic": "Some Basic Principles of Organic Chemistry",
-    "difficulty": "medium",
-    "question": "Which intermediate is most stabilized by resonance?",
-    "options": [
-      "benzyl carbocation, C\u2086H\u2085CH\u2082\u207a",
-      "methyl carbocation",
-      "ethyl carbocation",
-      "tert-butyl carbanion"
+      "2",
+      "3"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The benzyl carbocation delocalizes positive charge over the aromatic ring through resonance.",
+    "explanation": "Rate∝[A]^n and 2^n=2, hence n=1.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-030",
-    "section": "Chemistry",
-    "topic": "Some Basic Principles of Organic Chemistry",
-    "difficulty": "medium",
-    "question": "An electron-withdrawing \u2212NO\u2082 group attached to a benzene ring shows a strong",
-    "options": [
-      "+I and +R effect",
-      "\u2212I and \u2212R effect",
-      "+I and \u2212R effect",
-      "\u2212I and +R effect"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The nitro group withdraws electron density inductively and by resonance, so it exhibits both \u2212I and \u2212R effects.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-031",
-    "section": "Chemistry",
-    "topic": "Hydrocarbons",
-    "difficulty": "medium",
-    "question": "One mole of an alkene reacts completely with one mole of H\u2082 over a suitable catalyst. The product is",
-    "options": [
-      "an alkyne",
-      "an aldehyde",
-      "the corresponding alkane",
-      "an alcohol"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Catalytic hydrogenation adds H\u2082 across the C=C bond, converting an alkene into the corresponding alkane.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-032",
-    "section": "Chemistry",
-    "topic": "Hydrocarbons",
-    "difficulty": "medium",
-    "question": "Which reagent most directly distinguishes ethene from ethane at room temperature?",
-    "options": [
-      "distilled water",
-      "dilute HCl only",
-      "aqueous NaCl",
-      "bromine water"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Ethene decolourises bromine water by addition across the double bond; ethane does not react under these conditions.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-033",
-    "section": "Chemistry",
-    "topic": "Organic Compounds Containing Halogens",
-    "difficulty": "medium",
-    "question": "Which substrate is expected to undergo an S_N1 reaction most readily in a polar protic solvent?",
-    "options": [
-      "tert-butyl chloride",
-      "methyl chloride",
-      "ethyl chloride",
-      "vinyl chloride"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "S_N1 rate depends strongly on carbocation stability; tert-butyl chloride forms a relatively stable tertiary carbocation.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-034",
-    "section": "Chemistry",
-    "topic": "Organic Compounds Containing Oxygen",
-    "difficulty": "medium",
-    "question": "Which alcohol is oxidized to a ketone under ordinary controlled oxidation conditions?",
-    "options": [
-      "propan-1-ol",
-      "propan-2-ol",
-      "2-methylpropan-2-ol",
-      "methanol"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Secondary alcohols oxidize to ketones; propan-2-ol gives propanone.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-035",
-    "section": "Chemistry",
-    "topic": "Organic Compounds Containing Oxygen",
-    "difficulty": "medium",
-    "question": "Phenol is more acidic than cyclohexanol mainly because",
-    "options": [
-      "phenol has no O\u2013H bond",
-      "phenol cannot form hydrogen bonds",
-      "the phenoxide ion is resonance stabilized",
-      "cyclohexanol is aromatic"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Deprotonation of phenol gives phenoxide, where negative charge is delocalized by resonance. Alkoxide from cyclohexanol lacks comparable resonance stabilization.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-036",
-    "section": "Chemistry",
-    "topic": "Organic Compounds Containing Oxygen",
-    "difficulty": "hard",
-    "question": "An aldehyde gives a positive Tollens test because the aldehyde is oxidized while Ag\u207a is reduced. The organic product under the basic test conditions is primarily",
-    "options": [
-      "a ketone",
-      "an ether",
-      "an alkene",
-      "a carboxylate ion"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Aldehydes are oxidized to the corresponding carboxylate in the alkaline Tollens reagent while silver(I) is reduced to metallic silver.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-037",
-    "section": "Chemistry",
-    "topic": "Organic Compounds Containing Nitrogen",
-    "difficulty": "medium",
-    "question": "Aniline is less basic than cyclohexylamine mainly because the lone pair on nitrogen in aniline is",
-    "options": [
-      "delocalized into the benzene ring",
-      "absent",
-      "protonated even before acid is added",
-      "locked in a triple bond"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Resonance delocalization makes the aniline nitrogen lone pair less available to accept a proton than in an aliphatic amine.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-038",
-    "section": "Chemistry",
-    "topic": "Organic Compounds Containing Nitrogen",
-    "difficulty": "medium",
-    "question": "Primary aromatic amines react with nitrous acid at 0\u20135 \u00b0C to form",
-    "options": [
-      "Grignard reagents",
-      "diazonium salts",
-      "ethers only",
-      "alkanes"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Diazotization of primary aromatic amines at low temperature gives arenediazonium salts.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-039",
-    "section": "Chemistry",
-    "topic": "Biomolecules",
-    "difficulty": "easy",
-    "question": "The monomer units of proteins are",
-    "options": [
-      "fatty acids only",
-      "monosaccharides",
-      "\u03b1-amino acids",
-      "nucleotides"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Proteins are polypeptides formed by peptide-bond linkage of \u03b1-amino acids.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-040",
-    "section": "Chemistry",
-    "topic": "Biomolecules",
-    "difficulty": "medium",
-    "question": "Which statement distinguishes DNA from RNA in the usual cellular forms?",
-    "options": [
-      "RNA always has two antiparallel strands",
-      "DNA contains uracil in place of thymine in all cells",
-      "DNA contains no phosphate groups",
-      "DNA contains deoxyribose, whereas RNA contains ribose"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "The pentose sugar in DNA is 2-deoxyribose; RNA contains ribose. Other structural differences are not accurately represented by the distractors.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-041",
-    "section": "Chemistry",
-    "topic": "Principles Related to Practical Chemistry",
-    "difficulty": "medium",
-    "question": "During an acid-base titration, the most suitable indicator is chosen mainly so that its colour-change range",
-    "options": [
-      "falls within the steep pH change near the equivalence point",
-      "is always above pH 12",
-      "matches the initial pH exactly",
-      "is always below pH 2"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A useful indicator changes colour over the rapid pH transition around equivalence, minimizing endpoint error.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-042",
-    "section": "Chemistry",
-    "topic": "Principles Related to Practical Chemistry",
-    "difficulty": "medium",
-    "question": "A precipitate forms when aqueous AgNO\u2083 is added to a solution containing chloride ions. The precipitate is",
-    "options": [
-      "Ag\u2082Cl",
-      "AgCl",
-      "AgCl\u2082",
-      "Ag\u2082O"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Ag\u207a and Cl\u207b combine in a 1:1 ratio to form sparingly soluble silver chloride, AgCl.",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-043",
-    "section": "Chemistry",
-    "topic": "Equilibrium",
-    "difficulty": "hard",
-    "question": "For a weak acid HA of concentration C and dissociation constant K_a, when dissociation is small, the hydrogen-ion concentration is approximately",
-    "options": [
-      "C/K_a",
-      "K_a C",
-      "\u221a(K_a C)",
-      "K_a/C"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "For HA \u21cc H\u207a + A\u207b with small ionization x, K_a\u2248x\u00b2/C, hence x=[H\u207a]\u2248\u221a(K_aC).",
-    "source": {
-      "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
-    }
-  },
-  {
-    "id": "neet-ug-2026-ch-044",
+    "id": "neet-ug-2026-chemistry-026",
     "section": "Chemistry",
     "topic": "Solutions",
-    "difficulty": "hard",
-    "question": "A semipermeable membrane separates pure solvent from a dilute solution. At equilibrium under an applied pressure equal to the osmotic pressure, the net solvent flow is",
+    "difficulty": "easy",
+    "question": "Adding a nonvolatile solute to an ideal volatile solvent causes the solvent vapour pressure to",
     "options": [
-      "from solution to solvent only",
-      "independent of applied pressure",
-      "from solvent to solution at maximum rate",
-      "zero"
+      "increase",
+      "remain exactly unchanged",
+      "become zero for any solute amount",
+      "decrease"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Osmotic pressure is the external pressure required to stop osmosis, so the net solvent flow vanishes at that applied pressure.",
+    "explanation": "Raoult’s law gives p=xsolvent p°, and xsolvent<1 after solute addition.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "neet-ug-2026-ch-045",
+    "id": "neet-ug-2026-chemistry-027",
     "section": "Chemistry",
-    "topic": "Chemical Kinetics",
-    "difficulty": "medium",
-    "question": "A catalyst accelerates a reaction primarily by",
+    "topic": "Solutions",
+    "difficulty": "easy",
+    "question": "A solution containing 1 mol solute in 1 kg solvent has molality",
     "options": [
-      "providing an alternative pathway with lower activation energy",
-      "changing the equilibrium constant permanently",
-      "increasing the reaction enthalpy",
-      "increasing the energies of all products"
+      "0.5 m",
+      "1 m",
+      "2 m",
+      "1 M necessarily"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Molality is moles of solute per kg of solvent.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-028",
+    "section": "Chemistry",
+    "topic": "Colligative Properties",
+    "difficulty": "easy",
+    "question": "For a dilute solution, osmotic pressure is represented by",
+    "options": [
+      "π = iMRT",
+      "π = MRT/i",
+      "π = iRT/M",
+      "π = iMR/T"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "A catalyst lowers the activation barrier by offering an alternative mechanism. It does not change \u0394H or the equilibrium constant.",
+    "explanation": "For dilute solutions, van’t Hoff relation is π=iMRT.",
     "source": {
       "kind": "original",
-      "reference": "NEET (UG)-2026 official NTA Information Bulletin and NMC-notified syllabus",
-      "url": "https://neet.nta.nic.in/admission-bulletin/",
-      "checkedOn": "2026-08-30"
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-029",
+    "section": "Chemistry",
+    "topic": "d-Block Elements",
+    "difficulty": "medium",
+    "question": "Many transition-metal ions are coloured mainly because of",
+    "options": [
+      "electronic transitions involving d orbitals",
+      "complete absence of d electrons",
+      "only nuclear transitions",
+      "ionic size alone"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Partly filled d subshells permit electronic transitions that absorb visible light.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-030",
+    "section": "Chemistry",
+    "topic": "d-Block Elements",
+    "difficulty": "easy",
+    "question": "Zn²⁺ salts are often colourless because Zn²⁺ has",
+    "options": [
+      "a d⁵ configuration",
+      "a d¹⁰ configuration",
+      "no electrons at all",
+      "a half-filled p subshell"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Zn²⁺ is 3d¹⁰, so ordinary d–d transitions are unavailable.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-031",
+    "section": "Chemistry",
+    "topic": "f-Block Elements",
+    "difficulty": "easy",
+    "question": "The gradual decrease in atomic/ionic radii across the lanthanoid series is called",
+    "options": [
+      "actinoid expansion",
+      "lanthanoid contraction",
+      "inert-pair effect",
+      "diagonal relationship"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Poor shielding by 4f electrons causes lanthanoid contraction.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-032",
+    "section": "Chemistry",
+    "topic": "Coordination Chemistry",
+    "difficulty": "easy",
+    "question": "The coordination number of Co in [Co(NH₃)₆]³⁺ is",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "9"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Six monodentate NH₃ ligands coordinate to Co.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-033",
+    "section": "Chemistry",
+    "topic": "Coordination Chemistry",
+    "difficulty": "medium",
+    "question": "The compound [Cu(NH₃)₄]SO₄ is named",
+    "options": [
+      "tetraamminecopper(II) sulfate",
+      "tetraaminecopper(I) sulfate",
+      "copper(II) tetraammonium sulfate",
+      "tetraamminecopper(IV) sulfate"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "NH₃ is named ammine; sulfate is 2−, so copper is +2.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-034",
+    "section": "Chemistry",
+    "topic": "Organic Reaction Mechanisms",
+    "difficulty": "medium",
+    "question": "Which substrate generally undergoes an SN1 reaction most readily under comparable polar-protic conditions?",
+    "options": [
+      "a tertiary alkyl halide",
+      "a primary alkyl halide",
+      "a methyl halide",
+      "a vinyl halide"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "SN1 rate depends on carbocation stability; tertiary carbocations are generally most stable among these.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-035",
+    "section": "Chemistry",
+    "topic": "Electronic Effects",
+    "difficulty": "easy",
+    "question": "The nitro group (−NO₂) attached to a carbon chain shows a strong",
+    "options": [
+      "+I effect",
+      "only hyperconjugation donation",
+      "metallic effect",
+      "−I effect"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The electronegative nitro group withdraws electron density inductively.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-036",
+    "section": "Chemistry",
+    "topic": "Aromatic Compounds",
+    "difficulty": "easy",
+    "question": "A characteristic reaction type of benzene is",
+    "options": [
+      "nucleophilic addition across every C=C bond",
+      "free-radical polymerization under ordinary conditions",
+      "simple SN2 at a ring carbon",
+      "electrophilic aromatic substitution"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Benzene usually preserves aromaticity by substitution rather than addition.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-037",
+    "section": "Chemistry",
+    "topic": "Hydrocarbons",
+    "difficulty": "easy",
+    "question": "Addition of HBr to propene in the absence of peroxide gives mainly",
+    "options": [
+      "1-bromopropane",
+      "2-bromopropane",
+      "1,2-dibromopropane",
+      "2-bromopropene"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Normal Markovnikov addition places Br at the more substituted carbon.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-038",
+    "section": "Chemistry",
+    "topic": "Hydrocarbons",
+    "difficulty": "medium",
+    "question": "The peroxide effect in addition of hydrogen halides to alkenes is characteristically observed with",
+    "options": [
+      "HBr",
+      "HCl",
+      "HI",
+      "HF"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The radical anti-Markovnikov peroxide effect is effective for HBr.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-039",
+    "section": "Chemistry",
+    "topic": "Alcohols",
+    "difficulty": "easy",
+    "question": "Controlled oxidation of a primary alcohol first gives mainly",
+    "options": [
+      "a ketone",
+      "an alkane",
+      "an aldehyde",
+      "an amide"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Primary alcohols oxidize first to aldehydes and, under stronger conditions, further to acids.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-040",
+    "section": "Chemistry",
+    "topic": "Phenols",
+    "difficulty": "medium",
+    "question": "Phenol is more acidic than ethanol mainly because",
+    "options": [
+      "ethoxide ion is aromatic",
+      "phenol has no O–H bond",
+      "ethanol is a stronger acid due to hyperconjugation",
+      "phenoxide ion is resonance-stabilized"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The conjugate base phenoxide delocalizes negative charge over the aromatic ring.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-041",
+    "section": "Chemistry",
+    "topic": "Aldehydes",
+    "difficulty": "easy",
+    "question": "A typical positive Tollens’ test for an aldehyde produces",
+    "options": [
+      "a silver mirror or silver deposit",
+      "a blue precipitate of CuSO₄",
+      "hydrogen gas",
+      "a green chlorine colour"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Tollens’ reagent is reduced to metallic silver by many aldehydes.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-042",
+    "section": "Chemistry",
+    "topic": "Carboxylic Acids",
+    "difficulty": "easy",
+    "question": "A carboxylic acid reacts with an alcohol in acid medium to form mainly",
+    "options": [
+      "an amide without any other reagent",
+      "an alkane",
+      "an ester",
+      "a nitrile"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Fischer esterification gives an ester and water.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-043",
+    "section": "Chemistry",
+    "topic": "Amines",
+    "difficulty": "medium",
+    "question": "Aniline is less basic than a typical aliphatic amine mainly because the nitrogen lone pair in aniline is",
+    "options": [
+      "absent",
+      "delocalized into the benzene ring",
+      "locked in a triple bond",
+      "converted into a proton permanently"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Resonance delocalization makes the lone pair less available for protonation.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-044",
+    "section": "Chemistry",
+    "topic": "Biomolecules",
+    "difficulty": "easy",
+    "question": "Glucose is classified as",
+    "options": [
+      "a non-reducing disaccharide",
+      "a reducing sugar",
+      "an amino acid",
+      "a triglyceride"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Glucose can reduce mild oxidizing reagents because it can access an aldehydic open-chain form.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "neet-ug-2026-chemistry-045",
+    "section": "Chemistry",
+    "topic": "Biomolecules",
+    "difficulty": "easy",
+    "question": "The linkage joining amino-acid residues in proteins is the",
+    "options": [
+      "peptide bond",
+      "glycosidic bond",
+      "phosphodiester bond",
+      "disulfide bond exclusively"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "A peptide bond is the amide linkage –CO–NH– formed between amino acids.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NEET (UG) 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];

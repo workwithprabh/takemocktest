@@ -554,11 +554,19 @@ import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/agnive
 import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/navy-ssr-english-and-mathematics-combined-1';
 import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1 } from './question-banks/clat-english-legal-logical-quantitative-combined-1';
 import { AILET_ENGLISH_AND_LOGICAL_REASONING_1 } from './question-banks/ailet-english-and-logical-reasoning-combined-1';
-import { SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1 } from './question-banks/slat-logical-legal-analytical-reading-combined-1';
+import { SLAT_2026_LOGICAL_REASONING_1 } from './question-banks/slat-2026-logical-reasoning-1';
+import { SLAT_2026_LEGAL_REASONING_1 } from './question-banks/slat-2026-legal-reasoning-1';
+import { SLAT_2026_ANALYTICAL_REASONING_1 } from './question-banks/slat-2026-analytical-reasoning-1';
+import { SLAT_2026_READING_COMPREHENSION_1 } from './question-banks/slat-2026-reading-comprehension-1';
+import { SLAT_2026_GENERAL_KNOWLEDGE_1 } from './question-banks/slat-2026-general-knowledge-1';
 import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1 } from './question-banks/mh-cet-law-legal-logical-english-mathematics-combined-1';
 import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-1';
 import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1';
-import { CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-qtdi-logical-reasoning-language-comprehension-combined-1';
+import { CMAT_2026_QUANTITATIVE_TECHNIQUES_DATA_INTERPRETATION_1 } from './question-banks/cmat-2026-quantitative-techniques-data-interpretation-1';
+import { CMAT_2026_LOGICAL_REASONING_1 } from './question-banks/cmat-2026-logical-reasoning-1';
+import { CMAT_2026_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-2026-language-comprehension-1';
+import { CMAT_2026_GENERAL_AWARENESS_1 } from './question-banks/cmat-2026-general-awareness-1';
+import { CMAT_2026_INNOVATION_ENTREPRENEURSHIP_1 } from './question-banks/cmat-2026-innovation-entrepreneurship-1';
 import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-1';
 import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
@@ -567,7 +575,9 @@ import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-langua
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
 import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
 import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-karnataka-language-mathematical-basic-aptitude-combined-1';
-import { JIPMAT_QA_DILR_VARC_1 } from './question-banks/jipmat-qa-dilr-varc-combined-1';
+import { JIPMAT_2026_QUANTITATIVE_APTITUDE_1 } from './question-banks/jipmat-2026-quantitative-aptitude-1';
+import { JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_1 } from './question-banks/jipmat-2026-data-interpretation-logical-reasoning-1';
+import { JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_1 } from './question-banks/jipmat-2026-verbal-ability-reading-comprehension-1';
 import { AMU_BTECH_2026_FULL_MOCK_1 } from './question-banks/amu-btech-2026-full-mock-1';
 import { ASSAM_CEE_2026_MATHEMATICS_1 } from './question-banks/assam-cee-2026-mathematics-1';
 import { ASSAM_CEE_2026_PHYSICS_1 } from './question-banks/assam-cee-2026-physics-1';
@@ -684,18 +694,13 @@ import { NMIMS_CET_2026_VERBAL_REASONING_1 } from './question-banks/nmims-cet-20
 import { BV_BTECH_2026_MATHEMATICS_1 } from './question-banks/bv-btech-2026-mathematics-1';
 import { BV_BTECH_2026_PHYSICS_1 } from './question-banks/bv-btech-2026-physics-1';
 import { BV_BTECH_2026_CHEMISTRY_1 } from './question-banks/bv-btech-2026-chemistry-1';
-import { CTET_2026_PAPER_1_CHILD_DEVELOPMENT_PEDAGOGY_1 } from './question-banks/ctet-2026-paper-1-child-development-pedagogy-1';
-import { CTET_2026_PAPER_1_MATHEMATICS_1 } from './question-banks/ctet-2026-paper-1-mathematics-1';
-import { CTET_2026_PAPER_1_ENVIRONMENTAL_STUDIES_1 } from './question-banks/ctet-2026-paper-1-environmental-studies-1';
-import { CTET_2026_PAPER_1_LANGUAGE_1_ENGLISH_1 } from './question-banks/ctet-2026-paper-1-language-1-english-1';
-import { CTET_2026_PAPER_1_LANGUAGE_2_HINDI_1 } from './question-banks/ctet-2026-paper-1-language-2-hindi-1';
 import { CUET_UG_2026_ENGLISH_1 } from './question-banks/cuet-ug-2026-english-1';
 import { IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_1 } from './question-banks/ipmat-rohtak-2026-quantitative-ability-1';
 import { IPMAT_ROHTAK_2026_LOGICAL_REASONING_1 } from './question-banks/ipmat-rohtak-2026-logical-reasoning-1';
 import { IPMAT_ROHTAK_2026_VERBAL_ABILITY_1 } from './question-banks/ipmat-rohtak-2026-verbal-ability-1';
-import { NCHM_JEE_2026_NUMERICAL_ANALYTICAL_1 } from './question-banks/nchm-jee-2026-numerical-analytical-1';
+import { NCHM_JEE_2026_NUMERICAL_ANALYTICAL_APTITUDE_1 } from './question-banks/nchm-jee-2026-numerical-analytical-aptitude-1';
 import { NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1 } from './question-banks/nchm-jee-2026-reasoning-logical-deduction-1';
-import { NCHM_JEE_2026_GK_CURRENT_AFFAIRS_1 } from './question-banks/nchm-jee-2026-gk-current-affairs-1';
+import { NCHM_JEE_2026_GENERAL_KNOWLEDGE_CURRENT_AFFAIRS_1 } from './question-banks/nchm-jee-2026-general-knowledge-current-affairs-1';
 import { NCHM_JEE_2026_ENGLISH_LANGUAGE_1 } from './question-banks/nchm-jee-2026-english-language-1';
 import { NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1 } from './question-banks/nchm-jee-2026-service-sector-aptitude-1';
 import { CG_PPT_2026_PHYSICS_1 } from './question-banks/cg-ppt-2026-physics-1';
@@ -724,7 +729,7 @@ import { VTUEEE_2026_PHYSICS_1 } from './question-banks/vtueee-2026-physics-1';
 import { VTUEEE_2026_CHEMISTRY_1 } from './question-banks/vtueee-2026-chemistry-1';
 import { VTUEEE_2026_MATHEMATICS_1 } from './question-banks/vtueee-2026-mathematics-1';
 import { CLAT_2026_PG_LEGAL_COMPREHENSION_1 } from './question-banks/clat-2026-pg-legal-comprehension-1';
-import { AP_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1 } from './question-banks/ap-lawcet-2026-5y-gk-mental-ability-1';
+import { AP_LAWCET_2026_5Y_GENERAL_KNOWLEDGE_MENTAL_ABILITY_1 } from './question-banks/ap-lawcet-2026-5y-general-knowledge-mental-ability-1';
 import { AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1 } from './question-banks/ap-lawcet-2026-5y-current-affairs-1';
 import { AP_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1 } from './question-banks/ap-lawcet-2026-5y-aptitude-study-law-1';
 import { TG_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1 } from './question-banks/tg-lawcet-2026-5y-gk-mental-ability-1';
@@ -734,6 +739,20 @@ import { IISER_IAT_2026_BIOLOGY_1 } from './question-banks/iiser-iat-2026-biolog
 import { IISER_IAT_2026_CHEMISTRY_1 } from './question-banks/iiser-iat-2026-chemistry-1';
 import { IISER_IAT_2026_MATHEMATICS_1 } from './question-banks/iiser-iat-2026-mathematics-1';
 import { IISER_IAT_2026_PHYSICS_1 } from './question-banks/iiser-iat-2026-physics-1';
+import { AILET_2026_LLM_LAW_1 } from './question-banks/ailet-2026-llm-law-1';
+import { CTET_SEP_2026_PAPER1_CHILD_DEVELOPMENT_PEDAGOGY_1 } from './question-banks/ctet-sep-2026-paper1-child-development-pedagogy-1';
+import { CTET_SEP_2026_PAPER1_MATHEMATICS_1 } from './question-banks/ctet-sep-2026-paper1-mathematics-1';
+import { CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1 } from './question-banks/ctet-sep-2026-paper1-environmental-studies-1';
+import { CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1 } from './question-banks/ctet-sep-2026-paper1-language-i-english-1';
+import { CTET_SEP_2026_PAPER1_LANGUAGE_II_HINDI_1 } from './question-banks/ctet-sep-2026-paper1-language-ii-hindi-1';
+import { AIBE_XXI_2026_FULL_BANK_1 } from './question-banks/aibe-xxi-2026-full-bank-1';
+import { NIPER_JEE_2026_MASTERS_SECTION_A_1 } from './question-banks/niper-jee-2026-masters-section-a-1';
+import { NIPER_JEE_2026_MASTERS_SECTION_B_1 } from './question-banks/niper-jee-2026-masters-section-b-1';
+import { AIAPGET_2026_HOMOEOPATHY_1 } from './question-banks/aiapget-2026-homoeopathy-1';
+import { UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1 } from './question-banks/ugc-net-june-2026-paper-1-teaching-research-aptitude-1';
+import { UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1 } from './question-banks/ugc-net-june-2026-computer-science-applications-1';
+import { CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_1 } from './question-banks/cuet-pg-2026-coqp12-general-management-1';
+import { ICAR_AIEEA_PG_2026_AGRONOMY_1 } from './question-banks/icar-aieea-pg-2026-agronomy-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -1941,11 +1960,19 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ailet/english-and-logical-reasoning-full-mock-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1,
   'ailet/english-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'English'),
   'ailet/logical-reasoning-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'Logical Reasoning'),
-  'slat/logical-legal-analytical-reading-full-mock-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1,
-  'slat/logical-reasoning-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Logical Reasoning'),
-  'slat/legal-reasoning-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Legal Reasoning'),
-  'slat/analytical-reasoning-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Analytical Reasoning'),
-  'slat/reading-comprehension-sectional-1': SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1.filter((question) => question.section === 'Reading Comprehension'),
+  'ailet/llm-full-mock-1': AILET_2026_LLM_LAW_1,
+  'slat/logical-legal-analytical-reading-full-mock-1': [
+    ...SLAT_2026_LOGICAL_REASONING_1,
+    ...SLAT_2026_LEGAL_REASONING_1,
+    ...SLAT_2026_ANALYTICAL_REASONING_1,
+    ...SLAT_2026_READING_COMPREHENSION_1,
+    ...SLAT_2026_GENERAL_KNOWLEDGE_1,
+  ],
+  'slat/logical-reasoning-sectional-1': SLAT_2026_LOGICAL_REASONING_1,
+  'slat/legal-reasoning-sectional-1': SLAT_2026_LEGAL_REASONING_1,
+  'slat/analytical-reasoning-sectional-1': SLAT_2026_ANALYTICAL_REASONING_1,
+  'slat/reading-comprehension-sectional-1': SLAT_2026_READING_COMPREHENSION_1,
+  'slat/general-knowledge-sectional-1': SLAT_2026_GENERAL_KNOWLEDGE_1,
   'mh-cet-law/legal-logical-english-mathematics-full-mock-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1,
   'mh-cet-law/legal-aptitude-and-legal-reasoning-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'Legal Aptitude and Legal Reasoning'),
   'mh-cet-law/logical-and-analytical-reasoning-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'Logical and Analytical Reasoning'),
@@ -1959,10 +1986,18 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'cat/verbal-ability-and-reading-comprehension-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
   'cat/data-interpretation-and-logical-reasoning-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
   'cat/quantitative-aptitude-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Quantitative Aptitude'),
-  'cmat/qtdi-logical-reasoning-language-comprehension-full-mock-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1,
-  'cmat/quantitative-techniques-and-data-interpretation-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Quantitative Techniques and Data Interpretation'),
-  'cmat/logical-reasoning-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Logical Reasoning'),
-  'cmat/language-comprehension-sectional-1': CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1.filter((question) => question.section === 'Language Comprehension'),
+  'cmat/qtdi-logical-reasoning-language-comprehension-full-mock-1': [
+    ...CMAT_2026_QUANTITATIVE_TECHNIQUES_DATA_INTERPRETATION_1,
+    ...CMAT_2026_LOGICAL_REASONING_1,
+    ...CMAT_2026_LANGUAGE_COMPREHENSION_1,
+    ...CMAT_2026_GENERAL_AWARENESS_1,
+    ...CMAT_2026_INNOVATION_ENTREPRENEURSHIP_1,
+  ],
+  'cmat/quantitative-techniques-and-data-interpretation-sectional-1': CMAT_2026_QUANTITATIVE_TECHNIQUES_DATA_INTERPRETATION_1,
+  'cmat/logical-reasoning-sectional-1': CMAT_2026_LOGICAL_REASONING_1,
+  'cmat/language-comprehension-sectional-1': CMAT_2026_LANGUAGE_COMPREHENSION_1,
+  'cmat/general-awareness-sectional-1': CMAT_2026_GENERAL_AWARENESS_1,
+  'cmat/innovation-entrepreneurship-sectional-1': CMAT_2026_INNOVATION_ENTREPRENEURSHIP_1,
   'nmat/language-logical-reasoning-quantitative-full-mock-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1,
   'nmat/language-skills-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Language Skills'),
   'nmat/logical-reasoning-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Logical Reasoning'),
@@ -2002,10 +2037,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'kmat-karnataka/language-comprehension-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Language Comprehension'),
   'kmat-karnataka/mathematical-skills-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Mathematical Skills'),
   'kmat-karnataka/basic-aptitude-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Basic Aptitude'),
-  'jipmat/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-1': JIPMAT_QA_DILR_VARC_1,
-  'jipmat/quantitative-aptitude-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Quantitative Aptitude'),
-  'jipmat/data-interpretation-logical-reasoning-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
-  'jipmat/verbal-ability-reading-comprehension-sectional-1': JIPMAT_QA_DILR_VARC_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
+  'jipmat/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-1': [
+    ...JIPMAT_2026_QUANTITATIVE_APTITUDE_1,
+    ...JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_1,
+    ...JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_1,
+  ],
+  'jipmat/quantitative-aptitude-sectional-1': JIPMAT_2026_QUANTITATIVE_APTITUDE_1,
+  'jipmat/data-interpretation-logical-reasoning-sectional-1': JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_1,
+  'jipmat/verbal-ability-reading-comprehension-sectional-1': JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_1,
   // Cross-exam Reasoning-sharing cluster (see sharedReasoningTests in exams.ts):
   // each receiver exam references the same five source banks below, not copies.
   'ibps-po/prelims-reasoning-shared-ibps-clerk-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
@@ -2595,11 +2634,11 @@ const TG_POLYCET_TESTS: Record<string, Question[]> = {
 };
 const CTET_TESTS: Record<string, Question[]> = {
   'ctet/paper-1-primary-en-hi-full-mock-1': [
-    ...CTET_2026_PAPER_1_CHILD_DEVELOPMENT_PEDAGOGY_1,
-    ...CTET_2026_PAPER_1_MATHEMATICS_1,
-    ...CTET_2026_PAPER_1_ENVIRONMENTAL_STUDIES_1,
-    ...CTET_2026_PAPER_1_LANGUAGE_1_ENGLISH_1,
-    ...CTET_2026_PAPER_1_LANGUAGE_2_HINDI_1,
+    ...CTET_SEP_2026_PAPER1_CHILD_DEVELOPMENT_PEDAGOGY_1,
+    ...CTET_SEP_2026_PAPER1_MATHEMATICS_1,
+    ...CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1,
+    ...CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1,
+    ...CTET_SEP_2026_PAPER1_LANGUAGE_II_HINDI_1,
   ],
 };
 const CUET_UG_TESTS: Record<string, Question[]> = {
@@ -2614,9 +2653,9 @@ const IPMAT_ROHTAK_TESTS: Record<string, Question[]> = {
 };
 const NCHM_JEE_TESTS: Record<string, Question[]> = {
   'nchm-jee/bsc-hha-full-mock-1': [
-    ...NCHM_JEE_2026_NUMERICAL_ANALYTICAL_1,
+    ...NCHM_JEE_2026_NUMERICAL_ANALYTICAL_APTITUDE_1,
     ...NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1,
-    ...NCHM_JEE_2026_GK_CURRENT_AFFAIRS_1,
+    ...NCHM_JEE_2026_GENERAL_KNOWLEDGE_CURRENT_AFFAIRS_1,
     ...NCHM_JEE_2026_ENGLISH_LANGUAGE_1,
     ...NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1,
   ],
@@ -2679,7 +2718,7 @@ const CLAT_PG_TESTS: Record<string, Question[]> = {
 };
 const AP_LAWCET_TESTS: Record<string, Question[]> = {
   'ap-lawcet/5-year-llb-full-mock-1': [
-    ...AP_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1,
+    ...AP_LAWCET_2026_5Y_GENERAL_KNOWLEDGE_MENTAL_ABILITY_1,
     ...AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1,
     ...AP_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1,
   ],
@@ -2698,6 +2737,30 @@ const IISER_IAT_TESTS: Record<string, Question[]> = {
     ...IISER_IAT_2026_MATHEMATICS_1,
     ...IISER_IAT_2026_PHYSICS_1,
   ],
+};
+const AIBE_TESTS: Record<string, Question[]> = {
+  'aibe/full-bank-full-mock-1': AIBE_XXI_2026_FULL_BANK_1,
+};
+const NIPER_JEE_TESTS: Record<string, Question[]> = {
+  'niper-jee/masters-full-mock-1': [
+    ...NIPER_JEE_2026_MASTERS_SECTION_A_1,
+    ...NIPER_JEE_2026_MASTERS_SECTION_B_1,
+  ],
+};
+const AIAPGET_TESTS: Record<string, Question[]> = {
+  'aiapget/homoeopathy-full-mock-1': AIAPGET_2026_HOMOEOPATHY_1,
+};
+const UGC_NET_TESTS: Record<string, Question[]> = {
+  'ugc-net/computer-science-applications-full-mock-1': [
+    ...UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1,
+    ...UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1,
+  ],
+};
+const CUET_PG_TESTS: Record<string, Question[]> = {
+  'cuet-pg/coqp12-general-management-full-mock-1': CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_1,
+};
+const ICAR_AIEEA_PG_TESTS: Record<string, Question[]> = {
+  'icar-aieea-pg/agronomy-full-mock-1': ICAR_AIEEA_PG_2026_AGRONOMY_1,
 };
 const BITS_HD_TESTS: Record<string, Question[]> = {
   'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,
@@ -2854,7 +2917,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3265,15 +3328,19 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('ailet/logical-reasoning-sectional')
     ? 14
     : testId.includes('slat/logical-legal-analytical-reading-full-mock')
-    ? 24
+    ? 60
     : testId.includes('slat/logical-reasoning-sectional')
-    ? 6
+    ? 12
     : testId.includes('slat/legal-reasoning-sectional')
-    ? 6
+    ? 12
     : testId.includes('slat/analytical-reasoning-sectional')
-    ? 6
+    ? 12
     : testId.includes('slat/reading-comprehension-sectional')
-    ? 6
+    ? 12
+    : testId.includes('slat/general-knowledge-sectional')
+    ? 12
+    : testId.includes('ailet/llm-full-mock')
+    ? 100
     : testId.includes('mh-cet-law/legal-logical-english-mathematics-full-mock')
     ? 24
     : testId.includes('mh-cet-law/legal-aptitude-and-legal-reasoning-sectional')
@@ -3301,12 +3368,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('cat/quantitative-aptitude-sectional')
     ? 11
     : testId.includes('cmat/qtdi-logical-reasoning-language-comprehension-full-mock')
-    ? 60
+    ? 100
     : testId.includes('cmat/quantitative-techniques-and-data-interpretation-sectional')
     ? 20
     : testId.includes('cmat/logical-reasoning-sectional')
     ? 20
     : testId.includes('cmat/language-comprehension-sectional')
+    ? 20
+    : testId.includes('cmat/general-awareness-sectional')
+    ? 20
+    : testId.includes('cmat/innovation-entrepreneurship-sectional')
     ? 20
     : testId.includes('nmat/language-logical-reasoning-quantitative-full-mock')
     ? 36
@@ -3387,13 +3458,13 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('kmat-karnataka/basic-aptitude-sectional')
     ? 40
     : testId.includes('jipmat/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock')
-    ? 45
+    ? 100
     : testId.includes('jipmat/quantitative-aptitude-sectional')
-    ? 15
+    ? 33
     : testId.includes('jipmat/data-interpretation-logical-reasoning-sectional')
-    ? 15
+    ? 33
     : testId.includes('jipmat/verbal-ability-reading-comprehension-sectional')
-    ? 15
+    ? 34
     : testId.includes('assam-cee/full-mock')
     ? 120
     : testId.includes('cg-pet/full-mock')
@@ -3498,6 +3569,18 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('iiser-iat/iat-full-mock')
     ? 60
+    : testId.includes('aibe/full-bank-full-mock')
+    ? 100
+    : testId.includes('niper-jee/masters-full-mock')
+    ? 200
+    : testId.includes('aiapget/homoeopathy-full-mock')
+    ? 120
+    : testId.includes('ugc-net/computer-science-applications-full-mock')
+    ? 150
+    : testId.includes('cuet-pg/coqp12-general-management-full-mock')
+    ? 75
+    : testId.includes('icar-aieea-pg/agronomy-full-mock')
+    ? 120
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -3875,8 +3958,8 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Child Development and Pedagogy', count: 30 },
     { section: 'Mathematics', count: 30 },
     { section: 'Environmental Studies', count: 30 },
-    { section: 'Language I (English)', count: 30 },
-    { section: 'Language II (Hindi)', count: 30 },
+    { section: 'Language I — English', count: 30 },
+    { section: 'Language II — Hindi', count: 30 },
   ],
   'cuet-ug': [
     { section: 'English', count: 50 },
@@ -3910,7 +3993,7 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
   'neet-ug': [
     { section: 'Physics', count: 45 },
     { section: 'Chemistry', count: 45 },
-    { section: 'Biology', count: 90 },
+    { section: 'Biology (Botany & Zoology)', count: 90 },
   ],
   'nift': [
     { section: 'Section A — Communication Ability & English Comprehension', count: 40 },
@@ -3948,10 +4031,32 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Mathematics', count: 15 },
     { section: 'Physics', count: 15 },
   ],
+  'aibe': [
+    { section: 'AIBE XXI — mixed 19-subject syllabus', count: 100 },
+  ],
+  'niper-jee': [
+    { section: 'Section A — General English, Aptitude, Reasoning, General Knowledge, etc.', count: 80 },
+    { section: 'Section B — mainly B.Pharm. syllabus', count: 120 },
+  ],
+  'aiapget': [
+    { section: 'Homoeopathy', count: 120 },
+  ],
+  'ugc-net': [
+    { section: 'Paper I — Teaching & Research Aptitude', count: 50 },
+    { section: 'Paper II — Computer Science and Applications', count: 100 },
+  ],
+  'cuet-pg': [
+    { section: 'General Paper (MBA etc.)', count: 75 },
+  ],
+  'icar-aieea-pg': [
+    { section: 'Agronomy', count: 120 },
+  ],
   'cmat': [
     { section: 'Quantitative Techniques and Data Interpretation', count: 20 },
     { section: 'Logical Reasoning', count: 20 },
     { section: 'Language Comprehension', count: 20 },
+    { section: 'General Awareness', count: 20 },
+    { section: 'Innovation & Entrepreneurship', count: 20 },
   ],
   'snap': [
     { section: 'General English', count: 15 },
@@ -3996,9 +4101,9 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Basic Aptitude', count: 40 },
   ],
   'jipmat': [
-    { section: 'Quantitative Aptitude', count: 15 },
-    { section: 'Data Interpretation and Logical Reasoning', count: 15 },
-    { section: 'Verbal Ability and Reading Comprehension', count: 15 },
+    { section: 'Quantitative Aptitude', count: 33 },
+    { section: 'Data Interpretation and Logical Reasoning', count: 33 },
+    { section: 'Verbal Ability and Reading Comprehension', count: 34 },
   ],
   'amu-btech': [
     { section: 'Chemistry', count: 34 },
@@ -4605,11 +4710,15 @@ const ailetEnglishAndLogicalReasoningLayout = [
   { section: 'English', count: 10 },
   { section: 'Logical Reasoning', count: 14 },
 ];
+const ailetLlmLayout = [
+  { section: 'Law', count: 100 },
+];
 const slatLogicalLegalAnalyticalReadingLayout = [
-  { section: 'Logical Reasoning', count: 6 },
-  { section: 'Legal Reasoning', count: 6 },
-  { section: 'Analytical Reasoning', count: 6 },
-  { section: 'Reading Comprehension', count: 6 },
+  { section: 'Logical Reasoning', count: 12 },
+  { section: 'Legal Reasoning', count: 12 },
+  { section: 'Analytical Reasoning', count: 12 },
+  { section: 'Reading Comprehension', count: 12 },
+  { section: 'General Knowledge', count: 12 },
 ];
 const mhCetLawLegalLogicalEnglishMathematicsLayout = [
   { section: 'Legal Aptitude and Legal Reasoning', count: 8 },
@@ -4757,6 +4866,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                     ? clatPgLayout
                                                                                   : testId.includes('ailet/english-and-logical-reasoning-full-mock')
                                                                                     ? ailetEnglishAndLogicalReasoningLayout
+                                                                                    : testId.includes('ailet/llm-full-mock')
+                                                                                      ? ailetLlmLayout
                                                                                     : testId.includes('slat/logical-legal-analytical-reading-full-mock')
                                                                                       ? slatLogicalLegalAnalyticalReadingLayout
                                                                                       : testId.includes('mh-cet-law/legal-logical-english-mathematics-full-mock')
@@ -5179,12 +5290,14 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'ailet': [
     AILET_ENGLISH_AND_LOGICAL_REASONING_1[0],
     AILET_ENGLISH_AND_LOGICAL_REASONING_1[10],
+    AILET_2026_LLM_LAW_1[0],
   ],
   'slat': [
-    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[0],
-    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[6],
-    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[12],
-    SLAT_LOGICAL_LEGAL_ANALYTICAL_READING_1[18],
+    SLAT_2026_LOGICAL_REASONING_1[0],
+    SLAT_2026_LEGAL_REASONING_1[0],
+    SLAT_2026_ANALYTICAL_REASONING_1[0],
+    SLAT_2026_READING_COMPREHENSION_1[0],
+    SLAT_2026_GENERAL_KNOWLEDGE_1[0],
   ],
   'mh-cet-law': [
     MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1[0],
@@ -5203,9 +5316,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     CAT_VARC_DILR_QA_1[23],
   ],
   'cmat': [
-    CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[0],
-    CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[20],
-    CMAT_QTDI_LOGICAL_REASONING_LANGUAGE_COMPREHENSION_1[40],
+    CMAT_2026_QUANTITATIVE_TECHNIQUES_DATA_INTERPRETATION_1[0],
+    CMAT_2026_LOGICAL_REASONING_1[0],
+    CMAT_2026_LANGUAGE_COMPREHENSION_1[0],
+    CMAT_2026_GENERAL_AWARENESS_1[0],
+    CMAT_2026_INNOVATION_ENTREPRENEURSHIP_1[0],
   ],
   'nmat': [
     NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1[0],
@@ -5245,9 +5360,9 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1[80],
   ],
   'jipmat': [
-    JIPMAT_QA_DILR_VARC_1[0],
-    JIPMAT_QA_DILR_VARC_1[15],
-    JIPMAT_QA_DILR_VARC_1[30],
+    JIPMAT_2026_QUANTITATIVE_APTITUDE_1[0],
+    JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_1[0],
+    JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_1[0],
   ],
   'ibsat': [
     IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1[0],
@@ -5497,11 +5612,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     BV_BTECH_2026_CHEMISTRY_1[0],
   ],
   'ctet': [
-    CTET_2026_PAPER_1_CHILD_DEVELOPMENT_PEDAGOGY_1[0],
-    CTET_2026_PAPER_1_MATHEMATICS_1[0],
-    CTET_2026_PAPER_1_ENVIRONMENTAL_STUDIES_1[0],
-    CTET_2026_PAPER_1_LANGUAGE_1_ENGLISH_1[0],
-    CTET_2026_PAPER_1_LANGUAGE_2_HINDI_1[0],
+    CTET_SEP_2026_PAPER1_CHILD_DEVELOPMENT_PEDAGOGY_1[0],
+    CTET_SEP_2026_PAPER1_MATHEMATICS_1[0],
+    CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1[0],
+    CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1[0],
+    CTET_SEP_2026_PAPER1_LANGUAGE_II_HINDI_1[0],
   ],
   'cuet-ug': [
     CUET_UG_2026_ENGLISH_1[0],
@@ -5513,9 +5628,9 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     IPMAT_ROHTAK_2026_VERBAL_ABILITY_1[0],
   ],
   'nchm-jee': [
-    NCHM_JEE_2026_NUMERICAL_ANALYTICAL_1[0],
+    NCHM_JEE_2026_NUMERICAL_ANALYTICAL_APTITUDE_1[0],
     NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1[0],
-    NCHM_JEE_2026_GK_CURRENT_AFFAIRS_1[0],
+    NCHM_JEE_2026_GENERAL_KNOWLEDGE_CURRENT_AFFAIRS_1[0],
     NCHM_JEE_2026_ENGLISH_LANGUAGE_1[0],
     NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1[0],
   ],
@@ -5559,7 +5674,7 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     VTUEEE_2026_MATHEMATICS_1[0],
   ],
   'ap-lawcet': [
-    AP_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1[0],
+    AP_LAWCET_2026_5Y_GENERAL_KNOWLEDGE_MENTAL_ABILITY_1[0],
     AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1[0],
     AP_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1[0],
   ],
@@ -5573,5 +5688,25 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     IISER_IAT_2026_CHEMISTRY_1[0],
     IISER_IAT_2026_MATHEMATICS_1[0],
     IISER_IAT_2026_PHYSICS_1[0],
+  ],
+  'aibe': [
+    AIBE_XXI_2026_FULL_BANK_1[0],
+  ],
+  'niper-jee': [
+    NIPER_JEE_2026_MASTERS_SECTION_A_1[0],
+    NIPER_JEE_2026_MASTERS_SECTION_B_1[0],
+  ],
+  'aiapget': [
+    AIAPGET_2026_HOMOEOPATHY_1[0],
+  ],
+  'ugc-net': [
+    UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1[0],
+    UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1[0],
+  ],
+  'cuet-pg': [
+    CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_1[0],
+  ],
+  'icar-aieea-pg': [
+    ICAR_AIEEA_PG_2026_AGRONOMY_1[0],
   ],
 };

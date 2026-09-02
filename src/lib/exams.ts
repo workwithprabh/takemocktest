@@ -130,7 +130,13 @@ export type ExamSlug =
   | 'vtueee'
   | 'ap-lawcet'
   | 'tg-lawcet'
-  | 'iiser-iat';
+  | 'iiser-iat'
+  | 'aibe'
+  | 'niper-jee'
+  | 'aiapget'
+  | 'ugc-net'
+  | 'cuet-pg'
+  | 'icar-aieea-pg';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -279,11 +285,12 @@ const AGNIVEER_VAYU_OFFICIAL_PAGE = 'https://agnipathvayu.cdac.in/';
 const NAVY_SSR_OFFICIAL_PAGE = 'https://www.joinindiannavy.gov.in/en/page/selection-procedure.html';
 const CLAT_OFFICIAL_PAGE = 'https://consortiumofnlus.ac.in/';
 const AILET_OFFICIAL_PAGE = 'https://nationallawuniversitydelhi.in/';
-const SLAT_OFFICIAL_PAGE = 'https://www.slat-test.org/';
+const AILET_2026_LLM_MASTER_NOTIFICATION = 'https://nationallawuniversitydelhi.in/notification/Master_Notification_with_APPENDIX-I,II,III_and_IV.pdf';
+const SLAT_2026_TEST_DAY_GUIDE = 'https://www.slat-test.org/images/pdf/SLAT-2026-test-day.pdf';
 const MH_CET_LAW_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const MH_CET_LAW_3_YEAR_OFFICIAL_PAGE = 'https://cetcell.mahacet.org/';
 const CAT_OFFICIAL_PAGE = 'https://iimcat.ac.in/';
-const CMAT_OFFICIAL_PAGE = 'https://cmat.nta.nic.in/';
+const CMAT_2026_INFORMATION_BULLETIN = 'https://cdnbbsr.s3waas.gov.in/s3a381c2c35c9157f6b67fd07d5a200ae1/uploads/2025/10/202510171049586023.pdf';
 const NMAT_OFFICIAL_PAGE = 'https://www.mba.com/exams/nmat';
 const SNAP_OFFICIAL_PAGE = 'https://www.snaptest.org/snap-exam-syllabus.html';
 const ATMA_OFFICIAL_PAGE = 'https://apply.atmaaims.com/';
@@ -292,7 +299,7 @@ const MAT_OFFICIAL_PAGE = 'https://mat.aima.in/';
 const MICAT_OFFICIAL_PAGE = 'https://www.mica.ac.in/';
 const TANCET_OFFICIAL_PAGE = 'https://tancet.annauniv.edu/';
 const KMAT_KARNATAKA_OFFICIAL_PAGE = 'https://www.kmatindia.com/';
-const JIPMAT_OFFICIAL_PAGE = 'https://jipmat.nta.ac.in/';
+const JIPMAT_2026_INFORMATION_BULLETIN = 'https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2026/04/20260416666062493.pdf';
 const MHT_CET_2026_BROCHURE =
   'https://cetcell.mahacet.org/wp-content/uploads/2023/12/MHT-CET-2026-Information-Brochure-Updated-on-11.04.2026.pdf';
 const WBJEE_2026_BULLETIN =
@@ -364,6 +371,12 @@ const CLAT_PG_2026_QUESTION_FORMAT = 'https://clat2026.consortiumofnlus.ac.in/cl
 const AP_LAWCET_2026_INSTRUCTION_BOOKLET = 'https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf';
 const TG_LAWCET_2026_INSTRUCTION_BOOKLET = 'https://lawcet.tgche.ac.in/Documents/LAWCET%20Instruction%20Booklet%20_2026.pdf';
 const IISER_IAT_2026_INFORMATION_BROCHURE = 'https://app.iiseradmission.in/assets/pdfs/IB_IAT_2026_ENG.pdf';
+const AIBE_XXI_2026_OFFICIAL_PAGE = 'https://www.allindiabarexamination.com/';
+const NIPER_JEE_2026_MASTERS_BROCHURE = 'https://www.niper.gov.in/niperjee2026/include/Masters_Brochure.pdf';
+const AIAPGET_2026_NCH_RULES_PAGE = 'https://www.nch.org.in/nch-gazetted-rules-and-regulations';
+const UGC_NET_JUNE_2026_SYLLABUS_PAGE = 'https://www.ugcnetonline.in/syllabus-new.php';
+const CUET_PG_2026_SYLLABUS_PAGE = 'https://exams.nta.nic.in/cuet-pg/syllabus/common/';
+const ICAR_AIEEA_PG_2026_AGRONOMY_SYLLABUS = 'https://www.icar.org.in/sites/default/files/Circulars/Syllabus%20AIEEA%20%28PG%29.pdf';
 
 function selectionPostTests(level: string, prefix: string, testNumber = 1, checkedOn = '9 August 2026'): TestConfig[] {
   const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn };
@@ -9563,6 +9576,29 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 11, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
         ],
       },
+      {
+        id: 'llm',
+        name: 'LL.M. (One Year)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Law'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 120,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Law', questions: 100, marks: 100 },
+          ],
+          timerNote: 'Single composite 120-minute timer for the Full Mock; no sectional lock, representing the official AILET LL.M. offline OMR test.',
+          note: 'AILET LL.M. (One Year) is a separate offline OMR test from AILET UG, with 100 questions for 100 marks in 2 hours, +1 correct and -0.25 wrong. All 100 questions are newly authored across broad doctrinal branches of law (Constitutional Law, Contract, Torts, Criminal Law, Administrative Law, Jurisprudence, Public International Law, Property Law, Family Law, Company Law, Environmental Law, Intellectual Property, Evidence, Civil Procedure, and Alternative Dispute Resolution), each applying a stated legal principle to a self-contained scenario rather than requiring memorised case names, section numbers, or dates — the same safety property as CLAT PG\'s resolved format. This resolves an earlier rejection of AILET LL.M. in this project\'s history, which had assumed the paper explicitly tests LLB-level legal-knowledge recall with no safe reasoning-only format available.',
+          sourceUrl: AILET_2026_LLM_MASTER_NOTIFICATION,
+          checkedOn: '31 August 2026',
+        },
+        tests: [
+          { id: 'llm-full-mock-1', name: 'LL.M. (One Year) Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '31 August 2026' },
+        ],
+      },
     ],
   },
   'slat': {
@@ -9573,32 +9609,34 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
     stages: [
       {
         id: 'logical-legal-analytical-reading',
-        name: 'Logical Reasoning, Legal Reasoning, Analytical Reasoning and Reading Comprehension',
+        name: 'Logical Reasoning, Legal Reasoning, Analytical Reasoning, Reading Comprehension and General Knowledge',
         pattern: {
           status: 'official',
           cycle: '2026',
-          sections: ['Logical Reasoning', 'Legal Reasoning', 'Analytical Reasoning', 'Reading Comprehension'],
-          totalQuestions: 24,
-          totalMarks: 24,
-          duration: 24,
+          sections: ['Logical Reasoning', 'Legal Reasoning', 'Analytical Reasoning', 'Reading Comprehension', 'General Knowledge'],
+          totalQuestions: 60,
+          totalMarks: 60,
+          duration: 60,
           negativeMarking: 0,
-          note: 'The official SLAT written test has 60 questions for 60 marks in 60 minutes, 1 mark per correct answer, no negative marking, across five equal sections of 12 questions each: Logical Reasoning, Legal Reasoning, Analytical Reasoning, Reading Comprehension, and General Knowledge. This mock covers Logical Reasoning, Legal Reasoning, Analytical Reasoning, and Reading Comprehension only, in the same equal proportion: 24 questions (6 per section) in 24 minutes. Every Legal Reasoning question here states its own legal principle and facts in the passage, matching SLAT\'s own stated design that the section tests logical deduction from a given principle rather than memorised law. General Knowledge is not covered, since it depends on facts that carry higher correctness risk for self-authored content.',
+          note: 'The official SLAT written test has 60 questions for 60 marks in 60 minutes, 1 mark per correct answer, no negative marking, across five equal sections of 12 questions each: Logical Reasoning, Legal Reasoning, Analytical Reasoning, Reading Comprehension, and General Knowledge, with free navigation between sections and no sectional lock. This mock now covers all five sections at full official scale. Every Legal Reasoning question here states its own legal principle and facts in the passage, matching SLAT\'s own stated design that the section tests logical deduction from a given principle rather than memorised law. General Knowledge was excluded from an earlier build of this mock as content-risk; that exclusion is lifted here because the delivered General Knowledge bank is entirely static, evergreen fact recall (constitutional articles, geography, science, history, international institutions) with no current-events dependency.',
           sectionBreakdown: [
-            { name: 'Logical Reasoning', questions: 6, marks: 6 },
-            { name: 'Legal Reasoning', questions: 6, marks: 6 },
-            { name: 'Analytical Reasoning', questions: 6, marks: 6 },
-            { name: 'Reading Comprehension', questions: 6, marks: 6 },
+            { name: 'Logical Reasoning', questions: 12, marks: 12 },
+            { name: 'Legal Reasoning', questions: 12, marks: 12 },
+            { name: 'Analytical Reasoning', questions: 12, marks: 12 },
+            { name: 'Reading Comprehension', questions: 12, marks: 12 },
+            { name: 'General Knowledge', questions: 12, marks: 12 },
           ],
-          timerNote: 'Single composite 24-minute timer for all four sections combined: no sectional lock, matching the official test\'s single continuous session',
-          sourceUrl: SLAT_OFFICIAL_PAGE,
-          checkedOn: '16 August 2026',
+          timerNote: 'Single composite 60-minute timer for all five sections combined, with free navigation between sections: no sectional lock, matching the official test\'s single continuous session',
+          sourceUrl: SLAT_2026_TEST_DAY_GUIDE,
+          checkedOn: '31 August 2026',
         },
         tests: [
-          { id: 'logical-legal-analytical-reading-full-mock-1', name: 'Logical Reasoning, Legal Reasoning, Analytical Reasoning and Reading Comprehension Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 24, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking, matching the official SLAT scheme. Raw score out of 24 shown here; the official exam is out of 60 across all five sections.', checkedOn: '16 August 2026' },
-          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
-          { id: 'legal-reasoning-sectional-1', name: 'Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
-          { id: 'analytical-reasoning-sectional-1', name: 'Analytical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical Reasoning', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
-          { id: 'reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reading Comprehension', duration: 6, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '16 August 2026' },
+          { id: 'logical-legal-analytical-reading-full-mock-1', name: 'Logical Reasoning, Legal Reasoning, Analytical Reasoning, Reading Comprehension and General Knowledge Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+          { id: 'legal-reasoning-sectional-1', name: 'Legal Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Legal Reasoning', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+          { id: 'analytical-reasoning-sectional-1', name: 'Analytical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Analytical Reasoning', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+          { id: 'reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reading Comprehension', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+          { id: 'general-knowledge-sectional-1', name: 'General Knowledge Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Knowledge', duration: 12, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
         ],
       },
     ],
@@ -9721,30 +9759,34 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
     stages: [
       {
         id: 'qtdi-logical-reasoning-language-comprehension',
-        name: 'Quantitative Techniques and DI, Logical Reasoning, Language Comprehension',
+        name: 'Quantitative Techniques and DI, Logical Reasoning, Language Comprehension, General Awareness and Innovation & Entrepreneurship',
         pattern: {
           status: 'official',
           cycle: '2026',
-          sections: ['Quantitative Techniques and Data Interpretation', 'Logical Reasoning', 'Language Comprehension'],
-          totalQuestions: 60,
-          totalMarks: 240,
-          duration: 108,
+          sections: ['Quantitative Techniques and Data Interpretation', 'Logical Reasoning', 'Language Comprehension', 'General Awareness', 'Innovation & Entrepreneurship'],
+          totalQuestions: 100,
+          totalMarks: 400,
+          duration: 180,
           negativeMarking: 1,
-          note: 'The official CMAT (conducted by NTA) has 100 questions for 400 marks in 180 minutes, 4 marks per correct answer and -1 for a wrong one, with no sectional time limit, across five equal 20-question sections: Quantitative Techniques and Data Interpretation, Logical Reasoning, Language Comprehension, General Awareness, and Innovation and Entrepreneurship. This mock covers the three reasoning- and language-based sections in full official proportion: 60 questions (20 Quantitative Techniques and Data Interpretation, 20 Logical Reasoning, 20 Language Comprehension), with the same single composite timer and no sectional lock, and the same +4/-1 marking scheme. General Awareness is not covered, since it depends on facts that carry higher correctness risk for self-authored content. Innovation and Entrepreneurship is also not covered: its official syllabus tests definitional and conceptual business-terminology recall (for example, the difference between incremental and disruptive innovation, or terms like MVP and Lean Startup) rather than reasoning applied to a stated scenario, the same content-risk boundary that excluded CA Foundation and CMA Foundation\'s management and business-law papers.',
+          note: 'The official CMAT (conducted by NTA) has 100 questions for 400 marks in 180 minutes, 4 marks per correct answer and -1 for a wrong one, with no sectional time limit, across five equal 20-question sections: Quantitative Techniques and Data Interpretation, Logical Reasoning, Language Comprehension, General Awareness, and Innovation and Entrepreneurship. This mock now covers all five sections at full official scale. General Awareness and Innovation & Entrepreneurship were excluded from an earlier build of this mock as content-risk; that exclusion is lifted here because the General Awareness bank is entirely static, evergreen general-knowledge fact recall (constitutional articles, geography, science constants, historical monuments, international-institution headquarters) with no current-events dependency, and the Innovation & Entrepreneurship bank applies definitions to stated scenarios and short calculations (break-even, contribution, working capital) rather than testing bare terminology recall, unlike the format this project had earlier assumed for both sections.',
           sectionBreakdown: [
             { name: 'Quantitative Techniques and Data Interpretation', questions: 20, marks: 80, duration: 36 },
             { name: 'Logical Reasoning', questions: 20, marks: 80, duration: 36 },
             { name: 'Language Comprehension', questions: 20, marks: 80, duration: 36 },
+            { name: 'General Awareness', questions: 20, marks: 80, duration: 36 },
+            { name: 'Innovation & Entrepreneurship', questions: 20, marks: 80, duration: 36 },
           ],
-          timerNote: 'Single composite 108-minute timer for all three sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
-          sourceUrl: CMAT_OFFICIAL_PAGE,
-          checkedOn: '16 August 2026',
+          timerNote: 'Single composite 180-minute timer for all five sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: CMAT_2026_INFORMATION_BULLETIN,
+          checkedOn: '1 September 2026',
         },
         tests: [
-          { id: 'qtdi-logical-reasoning-language-comprehension-full-mock-1', name: 'Quantitative Techniques and DI, Logical Reasoning, Language Comprehension Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 108, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
-          { id: 'quantitative-techniques-and-data-interpretation-sectional-1', name: 'Quantitative Techniques and Data Interpretation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Techniques and Data Interpretation', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
-          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
-          { id: 'language-comprehension-sectional-1', name: 'Language Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Comprehension', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '16 August 2026' },
+          { id: 'qtdi-logical-reasoning-language-comprehension-full-mock-1', name: 'Quantitative Techniques and DI, Logical Reasoning, Language Comprehension, General Awareness and Innovation & Entrepreneurship Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'quantitative-techniques-and-data-interpretation-sectional-1', name: 'Quantitative Techniques and Data Interpretation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Techniques and Data Interpretation', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'language-comprehension-sectional-1', name: 'Language Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Comprehension', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'general-awareness-sectional-1', name: 'General Awareness Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Awareness', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'innovation-entrepreneurship-sectional-1', name: 'Innovation & Entrepreneurship Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Innovation & Entrepreneurship', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
         ],
       },
     ],
@@ -10064,25 +10106,25 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           status: 'official',
           cycle: '2026',
           sections: ['Quantitative Aptitude', 'Data Interpretation and Logical Reasoning', 'Verbal Ability and Reading Comprehension'],
-          totalQuestions: 45,
-          totalMarks: 180,
-          duration: 69,
+          totalQuestions: 100,
+          totalMarks: 400,
+          duration: 150,
           negativeMarking: 1,
-          note: 'The official JIPMAT (conducted by the National Testing Agency for IIM Bodh Gaya and IIM Jammu) has 100 questions for 400 marks in 150 minutes, 4 marks for each correct answer and 1 mark negative for each wrong answer, with no sectional time limit, across three sections: Quantitative Aptitude (33Q), Data Interpretation and Logical Reasoning (33Q), and Verbal Ability and Reading Comprehension (34Q). This mock covers all three sections in the same proportion, scaled to roughly half: 45 questions (15 per section), with the same single composite timer, no sectional lock, and the same +4/-1 marking scheme. All three sections are skill-based (quantitative calculation, data interpretation and logical puzzles, vocabulary and reading comprehension), not fact-recall, so no section needed excluding for content-risk reasons.',
+          note: 'The official JIPMAT (conducted by the National Testing Agency for IIM Bodh Gaya and IIM Jammu) has 100 questions for 400 marks in 150 minutes, 4 marks for each correct answer and 1 mark negative for each wrong answer, with no sectional time limit, across three sections: Quantitative Aptitude (33Q), Data Interpretation and Logical Reasoning (33Q), and Verbal Ability and Reading Comprehension (34Q). This mock now covers all three sections at full official scale, replacing an earlier proportionally-scaled 45-question shell. All three sections are skill-based (quantitative calculation, data interpretation and logical puzzles, vocabulary and reading comprehension), not fact-recall, so no section needed excluding for content-risk reasons.',
           sectionBreakdown: [
-            { name: 'Quantitative Aptitude', questions: 15, marks: 60, duration: 23 },
-            { name: 'Data Interpretation and Logical Reasoning', questions: 15, marks: 60, duration: 23 },
-            { name: 'Verbal Ability and Reading Comprehension', questions: 15, marks: 60, duration: 23 },
+            { name: 'Quantitative Aptitude', questions: 33, marks: 132, duration: 50 },
+            { name: 'Data Interpretation and Logical Reasoning', questions: 33, marks: 132, duration: 50 },
+            { name: 'Verbal Ability and Reading Comprehension', questions: 34, marks: 136, duration: 50 },
           ],
-          timerNote: 'Single composite 69-minute timer for all three sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
-          sourceUrl: JIPMAT_OFFICIAL_PAGE,
-          checkedOn: '19 August 2026',
+          timerNote: 'Single composite 150-minute timer for all three sections combined: no sectional lock, matching the official test\'s own no-sectional-time-limit rule',
+          sourceUrl: JIPMAT_2026_INFORMATION_BULLETIN,
+          checkedOn: '31 August 2026',
         },
         tests: [
-          { id: 'quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-1', name: 'Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 69, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
-          { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
-          { id: 'data-interpretation-logical-reasoning-sectional-1', name: 'Data Interpretation and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Interpretation and Logical Reasoning', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
-          { id: 'verbal-ability-reading-comprehension-sectional-1', name: 'Verbal Ability and Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability and Reading Comprehension', duration: 23, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '19 August 2026' },
+          { id: 'quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-1', name: 'Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
+          { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 50, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
+          { id: 'data-interpretation-logical-reasoning-sectional-1', name: 'Data Interpretation and Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Interpretation and Logical Reasoning', duration: 50, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
+          { id: 'verbal-ability-reading-comprehension-sectional-1', name: 'Verbal Ability and Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability and Reading Comprehension', duration: 50, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
         ],
       },
     ],
@@ -11484,7 +11526,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         pattern: {
           status: 'official',
           cycle: '2026',
-          sections: ['Child Development and Pedagogy', 'Mathematics', 'Environmental Studies', 'Language I (English)', 'Language II (Hindi)'],
+          sections: ['Child Development and Pedagogy', 'Mathematics', 'Environmental Studies', 'Language I — English', 'Language II — Hindi'],
           totalQuestions: 150,
           totalMarks: 150,
           duration: 150,
@@ -11493,16 +11535,16 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'Child Development and Pedagogy', questions: 30, marks: 30 },
             { name: 'Mathematics', questions: 30, marks: 30 },
             { name: 'Environmental Studies', questions: 30, marks: 30 },
-            { name: 'Language I (English)', questions: 30, marks: 30 },
-            { name: 'Language II (Hindi)', questions: 30, marks: 30 },
+            { name: 'Language I — English', questions: 30, marks: 30 },
+            { name: 'Language II — Hindi', questions: 30, marks: 30 },
           ],
           timerNote: 'Single 150-minute timer for the Full Mock, covering all five sections; no sectional lock.',
           note: 'Official Paper I substructure: Child Development and Pedagogy is 15 Child Development + 5 Inclusive Education/Special Needs + 10 Learning & Pedagogy; Mathematics and Environmental Studies are each 15 content + 15 pedagogy; both languages are each 15 comprehension + 15 pedagogy — this mock keeps the five official section arrays without splitting them into unsupported runtime sub-sections. Language I and Language II are candidate-selected on the actual CTET form and must differ; this Full Mock uses the English (Language I) + Hindi (Language II) pair as its selected combination, not a universal CTET requirement. CBSE postponed the original 6 September 2026 sitting and reopened applications through 1 September 2026; the revised examination date is to be announced.',
           sourceUrl: CTET_2026_INFORMATION_BULLETIN,
-          checkedOn: '2 September 2026',
+          checkedOn: '1 September 2026',
         },
         tests: [
-          { id: 'paper-1-primary-en-hi-full-mock-1', name: 'Paper I Primary Stage Full Mock Test 1 (English I + Hindi II)', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'paper-1-primary-en-hi-full-mock-1', name: 'Paper I Primary Stage Full Mock Test 1 (English I + Hindi II)', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '1 September 2026' },
         ],
       },
     ],
@@ -11717,7 +11759,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         pattern: {
           status: 'official',
           cycle: '2026',
-          sections: ['Physics', 'Chemistry', 'Biology'],
+          sections: ['Physics', 'Chemistry', 'Biology (Botany & Zoology)'],
           totalQuestions: 180,
           totalMarks: 720,
           duration: 180,
@@ -11725,15 +11767,15 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           sectionBreakdown: [
             { name: 'Physics', questions: 45, marks: 180 },
             { name: 'Chemistry', questions: 45, marks: 180 },
-            { name: 'Biology', questions: 90, marks: 360 },
+            { name: 'Biology (Botany & Zoology)', questions: 90, marks: 360 },
           ],
           timerNote: 'Single unrestricted 180-minute practice timer for the Full Mock, covering all three sections; no sectional lock.',
-          note: 'Official Biology is labelled Biology (Botany & Zoology); no mandatory internal 45/45 Botany-versus-Zoology split is claimed or built. The actual NEET (UG) 2026 examination is pen-and-paper; this is an online practice simulation of that pen-and-paper exam, not a claim that the official exam itself is CBT/online.',
+          note: 'No mandatory internal 45/45 Botany-versus-Zoology split is claimed or built within Biology. The actual NEET (UG) 2026 examination is pen-and-paper; this is an online practice simulation of that pen-and-paper exam, not a claim that the official exam itself is CBT/online.',
           sourceUrl: NEET_UG_2026_ADMISSION_BULLETIN,
-          checkedOn: '30 August 2026',
+          checkedOn: '1 September 2026',
         },
         tests: [
-          { id: 'neet-ug-full-mock-1', name: 'NEET UG Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '30 August 2026' },
+          { id: 'neet-ug-full-mock-1', name: 'NEET UG Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
         ],
       },
     ],
@@ -11875,10 +11917,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           timerNote: 'Single composite 90-minute timer for the Full Mock, covering all three sections; no sectional lock.',
           note: 'This launch covers only the AP LAWCET 5-Year LL.B. route; the 3-Year LL.B. and AP PGLCET (LL.M.) routes are separate products and not part of this mock. No negative marking, confirmed from the official 2026 question-paper preview.',
           sourceUrl: AP_LAWCET_2026_INSTRUCTION_BOOKLET,
-          checkedOn: '31 August 2026',
+          checkedOn: '1 September 2026',
         },
         tests: [
-          { id: '5-year-llb-full-mock-1', name: '5-Year LL.B. Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+          { id: '5-year-llb-full-mock-1', name: '5-Year LL.B. Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '1 September 2026' },
         ],
       },
     ],
@@ -11946,6 +11988,194 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'iat-full-mock-1', name: 'IAT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
+        ],
+      },
+    ],
+  },
+  'aibe': {
+    slug: 'aibe',
+    name: 'AIBE',
+    fullName: 'All India Bar Examination XXI (AIBE XXI) 2026',
+    category: 'Law',
+    stages: [
+      {
+        id: 'full-bank',
+        name: 'AIBE XXI',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['AIBE XXI — mixed 19-subject syllabus'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'AIBE XXI — mixed 19-subject syllabus', questions: 100, marks: 100 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer for the Full Mock; no sectional lock, representing the official offline pen-and-paper OMR test.',
+          note: 'AIBE XXI is the Bar Council of India\'s bar-enrolment qualifying exam, testing law applicable as of the exam date across 19 subjects (Constitutional Law, CrPC, CPC, IPC, Evidence Act, Family Law, Contract and Property Laws, Tort Law, ADR, PIL, Professional Ethics, Labour Law, Taxation, Administrative Law, Company Law, Environmental Law, Cyber Law, Land Acquisition, and Intellectual Property Laws), 100 questions for 100 marks in 3 hours, +1 correct with no negative marking. Every question applies a stated legal principle to a self-contained scenario rather than requiring memorised section numbers, case names, or dates, resolving an earlier rejection of AIBE in this project\'s history, which had assumed the paper has no reasoning format at all. The real exam permits bare acts as a reference during the test; that is an exam-day resource control, not a basis for lookup-only or trivia-only questions here.',
+          sourceUrl: AIBE_XXI_2026_OFFICIAL_PAGE,
+          checkedOn: '1 September 2026',
+        },
+        tests: [
+          { id: 'full-bank-full-mock-1', name: 'AIBE XXI Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '1 September 2026' },
+        ],
+      },
+    ],
+  },
+  'niper-jee': {
+    slug: 'niper-jee',
+    name: 'NIPER JEE',
+    fullName: 'NIPER Joint Entrance Examination 2026 — Master\'s Programme',
+    category: 'Medical',
+    stages: [
+      {
+        id: 'masters',
+        name: 'Master\'s Programme',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Section A — General English, Aptitude, Reasoning, General Knowledge, etc.', 'Section B — mainly B.Pharm. syllabus'],
+          totalQuestions: 200,
+          totalMarks: 100,
+          duration: 150,
+          negativeMarking: 0.125,
+          sectionBreakdown: [
+            { name: 'Section A — General English, Aptitude, Reasoning, General Knowledge, etc.', questions: 80, marks: 40 },
+            { name: 'Section B — mainly B.Pharm. syllabus', questions: 120, marks: 60 },
+          ],
+          timerNote: 'Single composite 150-minute timer for the Full Mock, covering both sections; no sectional lock.',
+          note: 'NIPER JEE 2026 Master\'s Programme is the common CBT for M.S.(Pharm.), M.Pharm., M.Tech.(Pharm.) and MBA(Pharm.) admission across the National Institutes of Pharmaceutical Education and Research, 200 questions for 100 marks in 150 minutes, +0.5 correct and -0.125 wrong. Section A covers General English, Aptitude, Reasoning and General Knowledge as the official brochure states; Section B is mainly B.Pharm. syllabus. The Ph.D. paper and post-CBT GD/PI/counselling stages are separate processes and not part of this mock.',
+          sourceUrl: NIPER_JEE_2026_MASTERS_BROCHURE,
+          checkedOn: '1 September 2026',
+        },
+        tests: [
+          { id: 'masters-full-mock-1', name: 'Master\'s Programme Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 0.5, negativeMarking: 0.125, checkedOn: '1 September 2026' },
+        ],
+      },
+    ],
+  },
+  'aiapget': {
+    slug: 'aiapget',
+    name: 'AIAPGET',
+    fullName: 'All India AYUSH Postgraduate Entrance Test 2026',
+    category: 'Medical',
+    stages: [
+      {
+        id: 'homoeopathy',
+        name: 'Homoeopathy',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Homoeopathy'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Homoeopathy', questions: 120, marks: 480 },
+          ],
+          timerNote: 'Single composite 120-minute timer for the Full Mock; no sectional lock.',
+          note: 'AIAPGET is the NTA-conducted entrance test for AYUSH postgraduate courses across Ayurveda, Siddha, Unani and Homoeopathy. This launch covers the Homoeopathy stream only, based on the National Commission for Homoeopathy\'s graduate curriculum boundary: 120 questions for 480 marks in 2 hours, +4 correct and -1 wrong. Ayurveda, Siddha and Unani streams, and NEET PG, are separate products and not part of this mock.',
+          sourceUrl: AIAPGET_2026_NCH_RULES_PAGE,
+          checkedOn: '1 September 2026',
+        },
+        tests: [
+          { id: 'homoeopathy-full-mock-1', name: 'Homoeopathy Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+        ],
+      },
+    ],
+  },
+  'ugc-net': {
+    slug: 'ugc-net',
+    name: 'UGC NET',
+    fullName: 'UGC NET June 2026 — Computer Science and Applications (087)',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'computer-science-applications',
+        name: 'Computer Science and Applications',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Paper I — Teaching & Research Aptitude', 'Paper II — Computer Science and Applications'],
+          totalQuestions: 150,
+          totalMarks: 300,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Paper I — Teaching & Research Aptitude', questions: 50, marks: 100 },
+            { name: 'Paper II — Computer Science and Applications', questions: 100, marks: 200 },
+          ],
+          timerNote: 'Single composite 180-minute timer for the Full Mock, covering both papers with no break between them; no sectional lock.',
+          note: 'UGC NET is a large multi-subject eligibility test for Assistant Professor and Junior Research Fellowship; this launch covers the Computer Science and Applications (subject code 087) paper combination only. Paper I (Teaching & Research Aptitude) is common to every subject; Paper II here is Computer Science and Applications specifically, not Commerce, Management, or CSIR UGC NET\'s science subjects. 150 questions for 300 marks in 3 hours, +2 per correct answer, no negative marking, with one single countdown rather than two separate paper timers.',
+          sourceUrl: UGC_NET_JUNE_2026_SYLLABUS_PAGE,
+          checkedOn: '1 September 2026',
+        },
+        tests: [
+          { id: 'computer-science-applications-full-mock-1', name: 'Computer Science and Applications Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '1 September 2026' },
+        ],
+      },
+    ],
+  },
+  'cuet-pg': {
+    slug: 'cuet-pg',
+    name: 'CUET PG',
+    fullName: 'Common University Entrance Test (PG) 2026',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'coqp12-general-management',
+        name: 'COQP12 General Paper (MBA etc.)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Paper (MBA etc.)'],
+          totalQuestions: 75,
+          totalMarks: 300,
+          duration: 90,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'General Paper (MBA etc.)', questions: 75, marks: 300 },
+          ],
+          timerNote: 'Single composite 90-minute timer for the Full Mock; no sectional lock.',
+          note: 'CUET (PG) is one paper within a much larger multi-subject postgraduate entrance test administered across many domain-specific papers. This launch covers only the COQP12 General Paper (used for MBA and other management-adjacent postgraduate admissions): 75 questions for 300 marks in 90 minutes, +4 correct and -1 wrong, all questions compulsory. Official medium is English/Hindi; this mock is English-only as a platform-defined delivery choice, not a claim that the official exam itself is English-only. Other CUET PG subject/domain papers are separate products and not part of this mock.',
+          sourceUrl: CUET_PG_2026_SYLLABUS_PAGE,
+          checkedOn: '1 September 2026',
+        },
+        tests: [
+          { id: 'coqp12-general-management-full-mock-1', name: 'COQP12 General Paper Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+        ],
+      },
+    ],
+  },
+  'icar-aieea-pg': {
+    slug: 'icar-aieea-pg',
+    name: 'ICAR AIEEA PG',
+    fullName: 'ICAR All India Entrance Examination for Admission (PG) 2026',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'agronomy',
+        name: 'Agronomy',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Agronomy'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Agronomy', questions: 120, marks: 480 },
+          ],
+          timerNote: 'Single composite 120-minute timer for the Full Mock; no sectional lock.',
+          note: 'ICAR AIEEA (PG) is the NTA-conducted entrance test for postgraduate admission to agricultural universities across several major subject groups. This launch covers the Agronomy subject (Major Subject Group 05, Sub-subject 5.1) only: 120 questions for 480 marks in 2 hours, +4 correct and -1 wrong. Other ICAR PG major subject groups and the separate ICAR AICE JRF/SRF Ph.D. exam are not part of this mock.',
+          sourceUrl: ICAR_AIEEA_PG_2026_AGRONOMY_SYLLABUS,
+          checkedOn: '31 August 2026',
+        },
+        tests: [
+          { id: 'agronomy-full-mock-1', name: 'Agronomy Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
         ],
       },
     ],

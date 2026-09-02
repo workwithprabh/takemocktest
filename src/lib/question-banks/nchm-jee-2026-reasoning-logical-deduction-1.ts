@@ -2,363 +2,363 @@ import type { Question } from '../questions';
 
 export const NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1: Question[] = [
   {
-    "id": "nchm-jee-2026-lr-001",
+    "id": "nchm-jee-2026-reasoning-logical-001",
     "section": "Reasoning and Logical Deduction",
-    "topic": "Number series",
-    "difficulty": "easy",
-    "question": "Find the next number in the series: 11, 14, 28, 32, 64, 69, ?",
+    "topic": "Symbol Operations",
+    "difficulty": "medium",
+    "question": "A hotel console shows the three-letter code ABC. Operation R swaps the first two letters. Operation S moves the last letter to the front. Starting from ABC, what code appears after applying R, then S, then R?",
     "options": [
-      "138",
-      "134",
-      "142",
-      "128"
+      "CAB",
+      "BAC",
+      "CBA",
+      "BCA"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "ABC becomes BAC after R, then CBA after S, then BCA after the final R. Hence BCA is the unique result.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-reasoning-logical-002",
+    "section": "Reasoning and Logical Deduction",
+    "topic": "Ordering",
+    "difficulty": "medium",
+    "question": "Four service calls W, X, Y and Z are handled one at a time. X is handled immediately after W, Z is handled before Y, and W is not first. Which order can satisfy all three conditions?",
+    "options": [
+      "Z, W, X, Y",
+      "W, X, Y, Z",
+      "Z, X, W, Y",
+      "Y, W, X, Z"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The operations alternate: +3, ×2, +4, ×2, +5, ×2. Therefore the next term is 69×2 = 138.",
+    "explanation": "Z, W, X, Y satisfies all conditions: X is immediately after W, Z is before Y, and W is second rather than first. Each other option violates at least one condition.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-002",
-    "section": "Reasoning and Logical Deduction",
-    "topic": "Coding-decoding",
-    "difficulty": "easy",
-    "question": "In a code, each letter is replaced by the next letter of the alphabet. If HOTEL is coded as IPUFM, how is GUEST coded?",
-    "options": [
-      "HUFST",
-      "HVFTU",
-      "HVFST",
-      "IVFTU"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Applying the same +1 shift gives G→H, U→V, E→F, S→T, T→U: HVFTU.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-lr-003",
+    "id": "nchm-jee-2026-reasoning-logical-003",
     "section": "Reasoning and Logical Deduction",
     "topic": "Syllogism",
     "difficulty": "medium",
-    "question": "Statements: All concierges are employees. Some employees are graduates. No graduate is an intern. Which conclusion definitely follows?",
+    "question": "Statements: All suites are rooms. Some rooms are renovated. Which conclusion must follow?",
     "options": [
-      "Some concierges are graduates",
-      "All employees are graduates",
-      "Some employees are not interns",
-      "No concierge is an intern"
+      "Some renovated things are rooms",
+      "Some suites are renovated",
+      "No suite is renovated",
+      "All renovated things are suites"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "The second statement directly says some rooms are renovated; equivalently, some renovated things are rooms. No relation between suites and the renovated subset is forced.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-reasoning-logical-004",
+    "section": "Reasoning and Logical Deduction",
+    "topic": "Direction Sense",
+    "difficulty": "medium",
+    "question": "Mira walks 5 m north, 3 m east, 2 m south and 3 m west. Where is she relative to her starting point?",
+    "options": [
+      "3 m south",
+      "5 m north",
+      "3 m north",
+      "2 m east"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Some employees are graduates, and no graduate is an intern. Therefore those graduate employees are employees who are not interns. The other conclusions need not follow.",
+    "explanation": "East-west movement cancels; net north movement is 5−2=3 m.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-004",
-    "section": "Reasoning and Logical Deduction",
-    "topic": "Direction sense",
-    "difficulty": "medium",
-    "question": "Mira walks 5 km north, turns right and walks 3 km, then turns right and walks 2 km. In which direction is she from her starting point?",
-    "options": [
-      "South-east",
-      "West",
-      "North-west",
-      "North-east"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Her final displacement is 3 km east and 3 km north of the start, so she is to the north-east.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-lr-005",
+    "id": "nchm-jee-2026-reasoning-logical-005",
     "section": "Reasoning and Logical Deduction",
     "topic": "Ranking",
     "difficulty": "easy",
-    "question": "In a queue of 38 applicants, Riya is 12th from the front. Sameer is 9 places behind Riya. What is Sameer’s rank from the back?",
+    "question": "In a queue of 28 people, Arjun is 9th from the front. His position from the back is",
     "options": [
-      "18th",
-      "16th",
-      "17th",
-      "19th"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "Sameer is 21st from the front. Rank from the back = 38−21+1 = 18th.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-lr-006",
-    "section": "Reasoning and Logical Deduction",
-    "topic": "Linear arrangement",
-    "difficulty": "hard",
-    "question": "Five counters P, Q, R, S and T are placed in a row. R is immediately to the right of Q. T is at the left end. P is not next to T. S is to the right of R. Which counter must be in the middle?",
-    "options": [
-      "P",
-      "R",
-      "S",
-      "Q"
+      "19th",
+      "20th",
+      "21st",
+      "22nd"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "T is first. Since Q-R must be consecutive and S is right of R, the only placement satisfying P not next to T is T,Q,R,S,P. Thus R is in the middle.",
+    "explanation": "Position from back=28−9+1=20.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-007",
+    "id": "nchm-jee-2026-reasoning-logical-006",
     "section": "Reasoning and Logical Deduction",
-    "topic": "Blood relations",
+    "topic": "Coding",
     "difficulty": "medium",
-    "question": "Aarav says, “The woman in the photograph is the daughter of my mother’s only sister.” How is the woman related to Aarav?",
+    "question": "A code maps each letter to the letter two places ahead in the alphabet, wrapping after Z. Under this rule, HOTEL becomes",
     "options": [
-      "Aunt",
-      "Niece",
-      "Cousin",
-      "Sister"
+      "JQVGN",
+      "JQXGN",
+      "IPUFM",
+      "JQWGN"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "H→J, O→Q, T→V, E→G, L→N.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-reasoning-logical-007",
+    "section": "Reasoning and Logical Deduction",
+    "topic": "Blood Relations",
+    "difficulty": "medium",
+    "question": "Riya says, “The man in the photograph is the only son of my mother’s only daughter.” If Riya is her mother’s only daughter, the man is Riya’s",
+    "options": [
+      "brother",
+      "father",
+      "uncle",
+      "son"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "Her mother’s only daughter is Riya; the only son of Riya is her son.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-reasoning-logical-008",
+    "section": "Reasoning and Logical Deduction",
+    "topic": "Seating Arrangement",
+    "difficulty": "hard",
+    "question": "Four guests J, K, L and M sit in a row facing north. J is immediately left of K. L is at the left end. M is not next to L. Which order is possible?",
+    "options": [
+      "L, M, J, K",
+      "L, J, K, M",
+      "J, K, M, L",
+      "M, L, J, K"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "L must be first. M cannot be second, and J must be immediately left of K. L-J-K-M satisfies all conditions.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-reasoning-logical-009",
+    "section": "Reasoning and Logical Deduction",
+    "topic": "Statement-Assumption",
+    "difficulty": "medium",
+    "question": "Statement: “The hotel should place reusable water stations on every guest floor to reduce single-use plastic bottles.” Which assumption is most necessary?",
+    "options": [
+      "Every guest already carries a metal bottle",
+      "Plastic bottles are illegal",
+      "At least some guests will use conveniently available refill stations",
+      "Water stations cost nothing to maintain"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "Aarav’s mother’s only sister is his maternal aunt. Her daughter is Aarav’s cousin.",
+    "explanation": "The proposal can reduce bottle use only if some guests substitute refilling for single-use bottles; the stronger claims are unnecessary.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-008",
+    "id": "nchm-jee-2026-reasoning-logical-010",
     "section": "Reasoning and Logical Deduction",
     "topic": "Analogy",
     "difficulty": "easy",
-    "question": "Thermometer is to temperature as barometer is to:",
+    "question": "Chef : Kitchen :: Pilot : ?",
     "options": [
-      "Humidity",
-      "Wind speed",
-      "Altitude",
-      "Pressure"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "A thermometer measures temperature; a barometer measures atmospheric pressure.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-lr-009",
-    "section": "Reasoning and Logical Deduction",
-    "topic": "Odd one out",
-    "difficulty": "easy",
-    "question": "Which number does not belong with the others?",
-    "options": [
-      "100",
-      "125",
-      "27",
-      "64"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "27=3³, 64=4³ and 125=5³ are perfect cubes; 100 is not a perfect cube.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-lr-010",
-    "section": "Reasoning and Logical Deduction",
-    "topic": "Statement and inference",
-    "difficulty": "hard",
-    "question": "Rule: Every room on Floor 5 has a balcony. Room X has no balcony. Which conclusion necessarily follows?",
-    "options": [
-      "Room X is unoccupied.",
-      "Room X is not on Floor 5.",
-      "Room X is on Floor 4.",
-      "No room in the hotel has a balcony."
+      "Runway",
+      "Cockpit",
+      "Ticket",
+      "Passenger"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "If every Floor 5 room has a balcony, a room without a balcony cannot be on Floor 5. Nothing else about its floor or occupancy follows.",
+    "explanation": "A chef primarily works in a kitchen; a pilot operates from a cockpit.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-011",
+    "id": "nchm-jee-2026-reasoning-logical-011",
     "section": "Reasoning and Logical Deduction",
-    "topic": "Pattern mapping",
-    "difficulty": "medium",
-    "question": "A machine follows the pattern 3→10, 4→17, 6→37. Under the same rule, 8 maps to:",
+    "topic": "Odd One Out",
+    "difficulty": "easy",
+    "question": "Which is the odd one out?",
     "options": [
-      "72",
-      "63",
-      "65",
-      "64"
+      "Square",
+      "Rectangle",
+      "Triangle",
+      "Parallelogram"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The rule is n²+1: 3²+1=10, 4²+1=17, 6²+1=37. Thus 8²+1=65.",
+    "explanation": "Square, rectangle and parallelogram are quadrilaterals; triangle has three sides.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-012",
+    "id": "nchm-jee-2026-reasoning-logical-012",
     "section": "Reasoning and Logical Deduction",
-    "topic": "Pattern reasoning",
-    "difficulty": "medium",
-    "question": "A four-day duty pattern repeats as Morning, Morning, Evening, Off. If a Monday is the first Morning day of the pattern, what duty falls on the following Sunday?",
+    "topic": "Data Sufficiency",
+    "difficulty": "hard",
+    "question": "What is the value of x? Statement I: x+y=14. Statement II: x−y=4.",
     "options": [
-      "Morning",
-      "Off",
-      "Cannot be determined",
-      "Evening"
+      "Statement I alone is sufficient",
+      "Statement II alone is sufficient",
+      "Both statements together are sufficient, neither alone is sufficient",
+      "Even both together are insufficient"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The pattern positions are Mon M1, Tue M2, Wed Evening, Thu Off, Fri M1, Sat M2, Sun Evening.",
+    "explanation": "Together, adding equations gives 2x=18 so x=9. Each alone admits many values.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-013",
+    "id": "nchm-jee-2026-reasoning-logical-013",
     "section": "Reasoning and Logical Deduction",
-    "topic": "Calendar reasoning",
+    "topic": "Logical Deduction",
     "difficulty": "medium",
-    "question": "In a non-leap year, 1 March is a Monday. What day of the week is 1 April?",
+    "question": "Every guest who orders the tasting menu receives a printed menu card. Neha did not receive a printed menu card. If the rule was followed, what follows?",
+    "options": [
+      "Neha did not order the tasting menu",
+      "Neha definitely ordered à la carte",
+      "Neha was not a guest",
+      "The restaurant had no menu cards"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 4,
+    "negativeMarking": 1,
+    "explanation": "By contraposition of “tasting menu → card”, no card implies no tasting-menu order. It does not identify what she ordered instead.",
+    "source": {
+      "kind": "original",
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
+    }
+  },
+  {
+    "id": "nchm-jee-2026-reasoning-logical-014",
+    "section": "Reasoning and Logical Deduction",
+    "topic": "Calendar Reasoning",
+    "difficulty": "medium",
+    "question": "If 1 March of a non-leap year is a Tuesday, what day is 1 April of the same year?",
     "options": [
       "Thursday",
-      "Wednesday",
       "Friday",
-      "Saturday"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 4,
-    "negativeMarking": 1,
-    "explanation": "March has 31 days, shifting the weekday by 3. Monday +3 days = Thursday.",
-    "source": {
-      "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
-    }
-  },
-  {
-    "id": "nchm-jee-2026-lr-014",
-    "section": "Reasoning and Logical Deduction",
-    "topic": "Logical sets",
-    "difficulty": "medium",
-    "question": "Statements: Some tourists are photographers. All photographers carry cameras. Which conclusion must be true?",
-    "options": [
-      "All tourists carry cameras",
-      "Some tourists carry cameras",
-      "No photographer is a tourist",
-      "Some camera carriers are not tourists"
+      "Saturday",
+      "Sunday"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The tourists who are photographers must carry cameras, so some tourists carry cameras.",
+    "explanation": "March has 31 days, shifting the weekday by 3; Tuesday+3=Friday.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   },
   {
-    "id": "nchm-jee-2026-lr-015",
+    "id": "nchm-jee-2026-reasoning-logical-015",
     "section": "Reasoning and Logical Deduction",
-    "topic": "Ordering",
-    "difficulty": "hard",
-    "question": "Four trainees A, B, C and D give presentations one at a time. B presents immediately before A. C presents immediately after A. D is not first. Who must present last?",
+    "topic": "Set Reasoning",
+    "difficulty": "medium",
+    "question": "In a group of 60 trainees, 35 know spreadsheet software, 28 know presentation software and 12 know both. How many know at least one of the two?",
     "options": [
-      "B",
-      "C",
-      "D",
-      "A"
+      "47",
+      "55",
+      "63",
+      "51"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 4,
     "negativeMarking": 1,
-    "explanation": "The block B-A-C must stay consecutive. If it occupied positions 2–4, D would be first, which is forbidden. Therefore B-A-C occupy positions 1–3 and D must be fourth (last).",
+    "explanation": "By inclusion-exclusion, 35+28−12=51.",
     "source": {
       "kind": "original",
-      "reference": "NCHM JEE 2026 official NTA Information Bulletin and NCHMCT 2026 B.Sc. HHA brochure",
-      "url": "https://exams.nta.nic.in/nchm-jee/",
-      "checkedOn": "2026-08-31"
+      "reference": "NTA NCHM JEE 2026 official Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/12/202512261026802762.pdf",
+      "checkedOn": "2026-09-01"
     }
   }
 ];
