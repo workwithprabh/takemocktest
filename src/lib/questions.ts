@@ -723,6 +723,17 @@ import { WB_JELET_2026_FUNDAMENTALS_ELECTRICAL_ELECTRONICS_ENGINEERING_1 } from 
 import { VTUEEE_2026_PHYSICS_1 } from './question-banks/vtueee-2026-physics-1';
 import { VTUEEE_2026_CHEMISTRY_1 } from './question-banks/vtueee-2026-chemistry-1';
 import { VTUEEE_2026_MATHEMATICS_1 } from './question-banks/vtueee-2026-mathematics-1';
+import { CLAT_2026_PG_LEGAL_COMPREHENSION_1 } from './question-banks/clat-2026-pg-legal-comprehension-1';
+import { AP_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1 } from './question-banks/ap-lawcet-2026-5y-gk-mental-ability-1';
+import { AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1 } from './question-banks/ap-lawcet-2026-5y-current-affairs-1';
+import { AP_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1 } from './question-banks/ap-lawcet-2026-5y-aptitude-study-law-1';
+import { TG_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1 } from './question-banks/tg-lawcet-2026-5y-gk-mental-ability-1';
+import { TG_LAWCET_2026_5Y_CURRENT_AFFAIRS_1 } from './question-banks/tg-lawcet-2026-5y-current-affairs-1';
+import { TG_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1 } from './question-banks/tg-lawcet-2026-5y-aptitude-study-law-1';
+import { IISER_IAT_2026_BIOLOGY_1 } from './question-banks/iiser-iat-2026-biology-1';
+import { IISER_IAT_2026_CHEMISTRY_1 } from './question-banks/iiser-iat-2026-chemistry-1';
+import { IISER_IAT_2026_MATHEMATICS_1 } from './question-banks/iiser-iat-2026-mathematics-1';
+import { IISER_IAT_2026_PHYSICS_1 } from './question-banks/iiser-iat-2026-physics-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -2663,6 +2674,31 @@ const VTUEEE_TESTS: Record<string, Question[]> = {
     ...VTUEEE_2026_MATHEMATICS_1,
   ],
 };
+const CLAT_PG_TESTS: Record<string, Question[]> = {
+  'clat/pg-full-mock-1': CLAT_2026_PG_LEGAL_COMPREHENSION_1,
+};
+const AP_LAWCET_TESTS: Record<string, Question[]> = {
+  'ap-lawcet/5-year-llb-full-mock-1': [
+    ...AP_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1,
+    ...AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1,
+    ...AP_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1,
+  ],
+};
+const TG_LAWCET_TESTS: Record<string, Question[]> = {
+  'tg-lawcet/5-year-llb-full-mock-1': [
+    ...TG_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1,
+    ...TG_LAWCET_2026_5Y_CURRENT_AFFAIRS_1,
+    ...TG_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1,
+  ],
+};
+const IISER_IAT_TESTS: Record<string, Question[]> = {
+  'iiser-iat/iat-full-mock-1': [
+    ...IISER_IAT_2026_BIOLOGY_1,
+    ...IISER_IAT_2026_CHEMISTRY_1,
+    ...IISER_IAT_2026_MATHEMATICS_1,
+    ...IISER_IAT_2026_PHYSICS_1,
+  ],
+};
 const BITS_HD_TESTS: Record<string, Question[]> = {
   'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,
   'bits-hd/me-cs-full-mock-2': BITS_HD_2026_ME_CS_FULL_MOCK_2,
@@ -2818,7 +2854,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3454,6 +3490,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 100
     : testId.includes('vtueee/btech-full-mock')
     ? 90
+    : testId.includes('clat/pg-full-mock')
+    ? 120
+    : testId.includes('ap-lawcet/5-year-llb-full-mock')
+    ? 120
+    : testId.includes('tg-lawcet/5-year-llb-full-mock')
+    ? 120
+    : testId.includes('iiser-iat/iat-full-mock')
+    ? 60
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -3887,6 +3931,22 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Physics', count: 30 },
     { section: 'Chemistry', count: 30 },
     { section: 'Mathematics', count: 30 },
+  ],
+  'ap-lawcet': [
+    { section: 'General Knowledge and Mental Ability', count: 30 },
+    { section: 'Current Affairs', count: 30 },
+    { section: 'Aptitude for the Study of Law', count: 60 },
+  ],
+  'tg-lawcet': [
+    { section: 'General Knowledge and Mental Ability', count: 30 },
+    { section: 'Current Affairs', count: 30 },
+    { section: 'Aptitude for the Study of Law', count: 60 },
+  ],
+  'iiser-iat': [
+    { section: 'Biology', count: 15 },
+    { section: 'Chemistry', count: 15 },
+    { section: 'Mathematics', count: 15 },
+    { section: 'Physics', count: 15 },
   ],
   'cmat': [
     { section: 'Quantitative Techniques and Data Interpretation', count: 20 },
@@ -4538,6 +4598,9 @@ const clatEnglishLegalLogicalQuantitativeLayout = [
   { section: 'Logical Reasoning', count: 8 },
   { section: 'Quantitative Techniques', count: 4 },
 ];
+const clatPgLayout = [
+  { section: 'PG Legal Comprehension', count: 120 },
+];
 const ailetEnglishAndLogicalReasoningLayout = [
   { section: 'English', count: 10 },
   { section: 'Logical Reasoning', count: 14 },
@@ -4690,6 +4753,8 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                 ? navySsrEnglishAndMathematicsLayout
                                                                                 : testId.includes('clat/english-legal-logical-quantitative-full-mock')
                                                                                   ? clatEnglishLegalLogicalQuantitativeLayout
+                                                                                  : testId.includes('clat/pg-full-mock')
+                                                                                    ? clatPgLayout
                                                                                   : testId.includes('ailet/english-and-logical-reasoning-full-mock')
                                                                                     ? ailetEnglishAndLogicalReasoningLayout
                                                                                     : testId.includes('slat/logical-legal-analytical-reading-full-mock')
@@ -5109,6 +5174,7 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[8],
     CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[18],
     CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1[26],
+    CLAT_2026_PG_LEGAL_COMPREHENSION_1[0],
   ],
   'ailet': [
     AILET_ENGLISH_AND_LOGICAL_REASONING_1[0],
@@ -5491,5 +5557,21 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     VTUEEE_2026_PHYSICS_1[0],
     VTUEEE_2026_CHEMISTRY_1[0],
     VTUEEE_2026_MATHEMATICS_1[0],
+  ],
+  'ap-lawcet': [
+    AP_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1[0],
+    AP_LAWCET_2026_5Y_CURRENT_AFFAIRS_1[0],
+    AP_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1[0],
+  ],
+  'tg-lawcet': [
+    TG_LAWCET_2026_5Y_GK_MENTAL_ABILITY_1[0],
+    TG_LAWCET_2026_5Y_CURRENT_AFFAIRS_1[0],
+    TG_LAWCET_2026_5Y_APTITUDE_STUDY_LAW_1[0],
+  ],
+  'iiser-iat': [
+    IISER_IAT_2026_BIOLOGY_1[0],
+    IISER_IAT_2026_CHEMISTRY_1[0],
+    IISER_IAT_2026_MATHEMATICS_1[0],
+    IISER_IAT_2026_PHYSICS_1[0],
   ],
 };

@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-02 from 728 bank files / 26859 questions.
+Generated: 2026-09-02 from 735 bank files / 27219 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -79,8 +79,8 @@ These stem patterns have caused real duplication on this project before (within 
 |---|---:|---|---|
 | odd-one-out / classification | 13 | atma-analytical, imu-cet, jipmat-qa, kmat-karnataka, rpf-si, rrb-alp, rrb-technician | high |
 | spelling correction | 60 | afcat-verbal, agniveer-vayu, ailet-english, bits-hd, cds-english, ibps-clerk, ibps-po, ibps-so, imu-cet, inet-english, jain-jet, lic-aao, mh-cet, nabard-grade, navy-ssr, nda-general, niacl-ao, rbi-assistant, rbi-grade, sbi-po, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, territorial-army | high |
-| SI unit lookup | 61 | ap-eapcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, kiitee-2026, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
-| capital-city lookup | 10 | niacl-ao, rrb-ntpc, rrb-technician, ssc-cgl, ssc-gd, ssc-selection, upsc-cse | high |
+| SI unit lookup | 63 | ap-eapcet, ap-lawcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, kiitee-2026, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection, tg-lawcet | high |
+| capital-city lookup | 11 | niacl-ao, rrb-ntpc, rrb-technician, ssc-cgl, ssc-gd, ssc-selection, tg-lawcet, upsc-cse | high |
 | currency lookup | 6 | nchm-jee, niacl-ao, niftee-2026, rrb-je, ssc-gd | high |
 | synonym/antonym instruction | 384 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, cmat-qtdi, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, imu-cet, inet-english, jain-jet, jipmat-qa, kmat-karnataka, lic-aao, lpunest-2026, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nchm-jee, nda-general, niacl-ao, niftee-2026, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-selection, ssc-steno, tancet-mba, territorial-army, upeseat-2026 | high |
 | blood relation generic opener | 60 | ca-foundation, ibps-clerk, ibps-po, ibps-rrb, ibps-so, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |

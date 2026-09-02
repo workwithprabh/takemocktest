@@ -127,7 +127,10 @@ export type ExamSlug =
   | 'neet-ug'
   | 'nift'
   | 'wb-jelet'
-  | 'vtueee';
+  | 'vtueee'
+  | 'ap-lawcet'
+  | 'tg-lawcet'
+  | 'iiser-iat';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -357,6 +360,10 @@ const NEET_UG_2026_ADMISSION_BULLETIN = 'https://neet.nta.nic.in/admission-bulle
 const NIFT_2026_INFORMATION_BULLETIN = 'https://www.nift.ac.in/sites/default/files/inline-files/NTA-Information-Bulletin-2026.pdf';
 const WB_JELET_2026_INFORMATION_BULLETIN = 'https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2026/03/20260318287108702.pdf';
 const VTUEEE_2026_BTECH_ADMISSIONS_PAGE = 'https://www.veltech.edu.in/btech-admissions/';
+const CLAT_PG_2026_QUESTION_FORMAT = 'https://clat2026.consortiumofnlus.ac.in/clat-2026/pg-question-format.html';
+const AP_LAWCET_2026_INSTRUCTION_BOOKLET = 'https://cets.apsche.ap.gov.in/lawcet/PDF/APLAWCET2026_IntructionsBooklet_V2.pdf';
+const TG_LAWCET_2026_INSTRUCTION_BOOKLET = 'https://lawcet.tgche.ac.in/Documents/LAWCET%20Instruction%20Booklet%20_2026.pdf';
+const IISER_IAT_2026_INFORMATION_BROCHURE = 'https://app.iiseradmission.in/assets/pdfs/IB_IAT_2026_ENG.pdf';
 
 function selectionPostTests(level: string, prefix: string, testNumber = 1, checkedOn = '9 August 2026'): TestConfig[] {
   const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn };
@@ -9499,6 +9506,29 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'quantitative-techniques-sectional-1', name: 'Quantitative Techniques Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Techniques', duration: 4, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '16 August 2026' },
         ],
       },
+      {
+        id: 'pg',
+        name: 'Postgraduate (LL.M.)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['PG Legal Comprehension'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'PG Legal Comprehension', questions: 120, marks: 120 },
+          ],
+          timerNote: 'Single composite 120-minute timer for the Full Mock; no sectional lock, representing the official CLAT PG offline written test.',
+          note: 'CLAT PG (LL.M.) is a separate offline written test from CLAT UG, with 120 questions for 120 marks in 2 hours, +1 correct and -0.25 wrong. Every question here is a newly authored, self-contained passage stating its own legal principle and facts, so it can be answered from the passage alone with no prior doctrinal knowledge required — the same safe format used for CLAT UG\'s Legal Reasoning section. The actual CLAT 2026 PG paper had one question withdrawn from evaluation, so the real result was scored out of 119; this mock keeps the full nominal 120-question shell.',
+          sourceUrl: CLAT_PG_2026_QUESTION_FORMAT,
+          checkedOn: '31 August 2026',
+        },
+        tests: [
+          { id: 'pg-full-mock-1', name: 'Postgraduate (LL.M.) Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '31 August 2026' },
+        ],
+      },
     ],
   },
   'ailet': {
@@ -11816,6 +11846,106 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ap-lawcet': {
+    slug: 'ap-lawcet',
+    name: 'AP LAWCET',
+    fullName: 'Andhra Pradesh Law Common Entrance Test',
+    category: 'Law',
+    stages: [
+      {
+        id: '5-year-llb',
+        name: '5-Year LL.B.',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Knowledge and Mental Ability', 'Current Affairs', 'Aptitude for the Study of Law'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 90,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'General Knowledge and Mental Ability', questions: 30, marks: 30 },
+            { name: 'Current Affairs', questions: 30, marks: 30 },
+            { name: 'Aptitude for the Study of Law', questions: 60, marks: 60 },
+          ],
+          timerNote: 'Single composite 90-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'This launch covers only the AP LAWCET 5-Year LL.B. route; the 3-Year LL.B. and AP PGLCET (LL.M.) routes are separate products and not part of this mock. No negative marking, confirmed from the official 2026 question-paper preview.',
+          sourceUrl: AP_LAWCET_2026_INSTRUCTION_BOOKLET,
+          checkedOn: '31 August 2026',
+        },
+        tests: [
+          { id: '5-year-llb-full-mock-1', name: '5-Year LL.B. Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tg-lawcet': {
+    slug: 'tg-lawcet',
+    name: 'TG LAWCET',
+    fullName: 'Telangana Law Common Entrance Test',
+    category: 'Law',
+    stages: [
+      {
+        id: '5-year-llb',
+        name: '5-Year LL.B.',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Knowledge and Mental Ability', 'Current Affairs', 'Aptitude for the Study of Law'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 90,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'General Knowledge and Mental Ability', questions: 30, marks: 30 },
+            { name: 'Current Affairs', questions: 30, marks: 30 },
+            { name: 'Aptitude for the Study of Law', questions: 60, marks: 60 },
+          ],
+          timerNote: 'Single composite 90-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'This launch covers only the TG LAWCET 5-Year LL.B. route; the TG PGLCET (LL.M.) route is a separate product and not part of this mock. Ten of the sixty Aptitude for the Study of Law questions are based on or related to comprehension of legal passages, matching the official structure. No negative marking, confirmed from the official 2026 instruction booklet.',
+          sourceUrl: TG_LAWCET_2026_INSTRUCTION_BOOKLET,
+          checkedOn: '31 August 2026',
+        },
+        tests: [
+          { id: '5-year-llb-full-mock-1', name: '5-Year LL.B. Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '31 August 2026' },
+        ],
+      },
+    ],
+  },
+  'iiser-iat': {
+    slug: 'iiser-iat',
+    name: 'IISER IAT',
+    fullName: 'IISER Aptitude Test 2026',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'aptitude-test',
+        name: 'IAT',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Biology', 'Chemistry', 'Mathematics', 'Physics'],
+          totalQuestions: 60,
+          totalMarks: 240,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Biology', questions: 15, marks: 60 },
+            { name: 'Chemistry', questions: 15, marks: 60 },
+            { name: 'Mathematics', questions: 15, marks: 60 },
+            { name: 'Physics', questions: 15, marks: 60 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer for the Full Mock, covering all four sections; no sectional lock.',
+          note: 'The official IAT 2026 question paper is bilingual English & Hindi; this mock is English-only as a platform limitation, not a claim that the official exam itself is English-only. Syllabus is primarily CBSE 2025-26 / NCERT Classes XI-XII, with foundational Class X knowledge sometimes required. No current-affairs section; scientific facts are syllabus-appropriate and do not depend on post-exam news. NEST, JEST and IISER interview/counselling stages are separate products and not part of this mock.',
+          sourceUrl: IISER_IAT_2026_INFORMATION_BROCHURE,
+          checkedOn: '31 August 2026',
+        },
+        tests: [
+          { id: 'iat-full-mock-1', name: 'IAT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
         ],
       },
     ],
