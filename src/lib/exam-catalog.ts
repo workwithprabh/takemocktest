@@ -338,7 +338,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Science & research entrances',
         exams: [
-          exam('IISER Aptitude Test', 'National'),
+          exam('IISER Aptitude Test', 'National', 'iiser-iat'),
           exam('NEST', 'National'),
           exam('JEST', 'National'),
           exam('ISI Admission Test', 'Institute'),
@@ -399,14 +399,14 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         name: 'Law admissions',
         exams: [
           exam('CLAT UG', 'National', 'clat'),
-          exam('CLAT PG', 'National'),
+          exam('CLAT PG', 'National', 'clat'),
           exam('AILET UG', 'Institute', 'ailet'),
           exam('AILET PG', 'Institute'),
           exam('SLAT', 'Institute', 'slat'),
           exam('MH CET Law: 5 Year LLB', 'State', 'mh-cet-law'),
           exam('MH CET Law: 3 Year LLB', 'State', 'mh-cet-law-3-year'),
-          exam('AP LAWCET', 'State'),
-          exam('TG LAWCET', 'State'),
+          exam('AP LAWCET', 'State', 'ap-lawcet'),
+          exam('TG LAWCET', 'State', 'tg-lawcet'),
         ],
       },
       {
