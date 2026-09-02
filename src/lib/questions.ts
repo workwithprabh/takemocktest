@@ -2505,6 +2505,11 @@ const CHANDIGARH_CUCET_TESTS: Record<string, Question[]> = {
     ...CHANDIGARH_CUCET_2026_MATHEMATICS_1,
     ...CHANDIGARH_CUCET_2026_APTITUDE_1,
   ],
+  'chandigarh-cucet/english-sectional-1': CHANDIGARH_CUCET_2026_ENGLISH_1,
+  'chandigarh-cucet/physics-sectional-1': CHANDIGARH_CUCET_2026_PHYSICS_1,
+  'chandigarh-cucet/chemistry-sectional-1': CHANDIGARH_CUCET_2026_CHEMISTRY_1,
+  'chandigarh-cucet/mathematics-sectional-1': CHANDIGARH_CUCET_2026_MATHEMATICS_1,
+  'chandigarh-cucet/aptitude-sectional-1': CHANDIGARH_CUCET_2026_APTITUDE_1,
 };
 const IMU_CET_TESTS: Record<string, Question[]> = {
   'imu-cet/full-mock-1': [
@@ -2514,6 +2519,11 @@ const IMU_CET_TESTS: Record<string, Question[]> = {
     ...IMU_CET_2026_CHEMISTRY_1,
     ...IMU_CET_2026_MATHEMATICS_1,
   ],
+  'imu-cet/english-sectional-1': IMU_CET_2026_ENGLISH_1,
+  'imu-cet/general-aptitude-sectional-1': IMU_CET_2026_GENERAL_APTITUDE_1,
+  'imu-cet/physics-sectional-1': IMU_CET_2026_PHYSICS_1,
+  'imu-cet/chemistry-sectional-1': IMU_CET_2026_CHEMISTRY_1,
+  'imu-cet/mathematics-sectional-1': IMU_CET_2026_MATHEMATICS_1,
 };
 const KLEEE_TESTS: Record<string, Question[]> = {
   'kleee/btech-pcm-full-mock-1': [
@@ -2521,6 +2531,9 @@ const KLEEE_TESTS: Record<string, Question[]> = {
     ...KLEEE_2026_PHYSICS_1,
     ...KLEEE_2026_CHEMISTRY_1,
   ],
+  'kleee/mathematics-sectional-1': KLEEE_2026_MATHEMATICS_1,
+  'kleee/physics-sectional-1': KLEEE_2026_PHYSICS_1,
+  'kleee/chemistry-sectional-1': KLEEE_2026_CHEMISTRY_1,
 };
 const AP_POLYCET_TESTS: Record<string, Question[]> = {
   'ap-polycet/polytechnic-full-mock-1': [
@@ -2568,6 +2581,10 @@ const LPUNEST_TESTS: Record<string, Question[]> = {
     ...LPUNEST_2026_MATHEMATICS_1,
     ...LPUNEST_2026_ENGLISH_1,
   ],
+  'lpunest/physics-sectional-1': LPUNEST_2026_PHYSICS_1,
+  'lpunest/chemistry-sectional-1': LPUNEST_2026_CHEMISTRY_1,
+  'lpunest/mathematics-sectional-1': LPUNEST_2026_MATHEMATICS_1,
+  'lpunest/english-sectional-1': LPUNEST_2026_ENGLISH_1,
 };
 const NERIST_NEE_TESTS: Record<string, Question[]> = {
   'nerist-nee/full-mock-1': [
@@ -2575,6 +2592,9 @@ const NERIST_NEE_TESTS: Record<string, Question[]> = {
     ...NERIST_NEE_2026_CHEMISTRY_1,
     ...NERIST_NEE_2026_MATHEMATICS_1,
   ],
+  'nerist-nee/physics-sectional-1': NERIST_NEE_2026_PHYSICS_1,
+  'nerist-nee/chemistry-sectional-1': NERIST_NEE_2026_CHEMISTRY_1,
+  'nerist-nee/mathematics-sectional-1': NERIST_NEE_2026_MATHEMATICS_1,
 };
 const BIHAR_DCECE_TESTS: Record<string, Question[]> = {
   'bihar-dcece/pe-polytechnic-engineering-full-mock-1': [
@@ -2593,6 +2613,10 @@ const HP_PAT_TESTS: Record<string, Question[]> = {
     ...HP_PAT_2026_CHEMISTRY_1,
     ...HP_PAT_2026_ENGLISH_1,
   ],
+  'hp-pat/mathematics-sectional-1': HP_PAT_2026_MATHEMATICS_1,
+  'hp-pat/physics-sectional-1': HP_PAT_2026_PHYSICS_1,
+  'hp-pat/chemistry-sectional-1': HP_PAT_2026_CHEMISTRY_1,
+  'hp-pat/english-sectional-1': HP_PAT_2026_ENGLISH_1,
 };
 const IEMJEE_TESTS: Record<string, Question[]> = {
   'iemjee/btech-online-full-mock-1': [
@@ -2600,12 +2624,17 @@ const IEMJEE_TESTS: Record<string, Question[]> = {
     ...IEMJEE_2026_CHEMISTRY_1,
     ...IEMJEE_2026_MATHEMATICS_1,
   ],
+  'iemjee/physics-sectional-1': IEMJEE_2026_PHYSICS_1,
+  'iemjee/chemistry-sectional-1': IEMJEE_2026_CHEMISTRY_1,
+  'iemjee/mathematics-sectional-1': IEMJEE_2026_MATHEMATICS_1,
 };
 const JEECUP_TESTS: Record<string, Question[]> = {
   'jeecup/group-a-engineering-technology-full-mock-1': [
     ...JEECUP_2026_GROUP_A_MATHEMATICS_1,
     ...JEECUP_2026_GROUP_A_PHYSICS_CHEMISTRY_1,
   ],
+  'jeecup/mathematics-sectional-1': JEECUP_2026_GROUP_A_MATHEMATICS_1,
+  'jeecup/physics-and-chemistry-sectional-1': JEECUP_2026_GROUP_A_PHYSICS_CHEMISTRY_1,
 };
 const MIT_WPU_CET_TESTS: Record<string, Question[]> = {
   'mit-wpu-cet/btech-after-10th-full-mock-1': [
@@ -2614,6 +2643,10 @@ const MIT_WPU_CET_TESTS: Record<string, Question[]> = {
     ...MIT_WPU_CET_2026_BTECH_AFTER_10TH_PHYSICS_1,
     ...MIT_WPU_CET_2026_BTECH_AFTER_10TH_CHEMISTRY_1,
   ],
+  'mit-wpu-cet/basic-mathematics-sectional-1': MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_MATHEMATICS_1,
+  'mit-wpu-cet/basic-english-sectional-1': MIT_WPU_CET_2026_BTECH_AFTER_10TH_BASIC_ENGLISH_1,
+  'mit-wpu-cet/physics-sectional-1': MIT_WPU_CET_2026_BTECH_AFTER_10TH_PHYSICS_1,
+  'mit-wpu-cet/chemistry-sectional-1': MIT_WPU_CET_2026_BTECH_AFTER_10TH_CHEMISTRY_1,
 };
 const JHARKHAND_PECE_TESTS: Record<string, Question[]> = {
   'jharkhand-pece/polytechnic-engineering-full-mock-1': [
@@ -2813,6 +2846,9 @@ const CG_PET_TESTS: Record<string, Question[]> = {
     ...CG_PET_2026_CHEMISTRY_1,
     ...CG_PET_2026_MATHEMATICS_1,
   ],
+  'cg-pet/physics-sectional-1': CG_PET_2026_PHYSICS_1,
+  'cg-pet/chemistry-sectional-1': CG_PET_2026_CHEMISTRY_1,
+  'cg-pet/mathematics-sectional-1': CG_PET_2026_MATHEMATICS_1,
 };
 const BCECE_TESTS: Record<string, Question[]> = {
   'bcece/pcm-engineering-full-mock-1': BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1,
@@ -2844,6 +2880,12 @@ const JAIN_JET_TESTS: Record<string, Question[]> = {
     ...JAIN_JET_2026_LOGICAL_REASONING_1,
     ...JAIN_JET_2026_ENGLISH_1,
   ],
+  'jain-jet/physics-sectional-1': JAIN_JET_2026_PHYSICS_1,
+  'jain-jet/chemistry-sectional-1': JAIN_JET_2026_CHEMISTRY_1,
+  'jain-jet/mathematics-sectional-1': JAIN_JET_2026_MATHEMATICS_1,
+  'jain-jet/aptitude-sectional-1': JAIN_JET_2026_APTITUDE_1,
+  'jain-jet/logical-reasoning-sectional-1': JAIN_JET_2026_LOGICAL_REASONING_1,
+  'jain-jet/english-sectional-1': JAIN_JET_2026_ENGLISH_1,
 };
 const SAEEE_TESTS: Record<string, Question[]> = {
   'saeee/full-mock-1': [
@@ -2851,6 +2893,9 @@ const SAEEE_TESTS: Record<string, Question[]> = {
     ...SAEEE_2026_PHYSICS_1,
     ...SAEEE_2026_CHEMISTRY_1,
   ],
+  'saeee/mathematics-sectional-1': SAEEE_2026_MATHEMATICS_1,
+  'saeee/physics-sectional-1': SAEEE_2026_PHYSICS_1,
+  'saeee/chemistry-sectional-1': SAEEE_2026_CHEMISTRY_1,
 };
 const SITEEE_TESTS: Record<string, Question[]> = {
   'siteee/full-mock-1': [
@@ -2858,6 +2903,9 @@ const SITEEE_TESTS: Record<string, Question[]> = {
     ...SITEEE_2026_CHEMISTRY_1,
     ...SITEEE_2026_MATHEMATICS_1,
   ],
+  'siteee/physics-sectional-1': SITEEE_2026_PHYSICS_1,
+  'siteee/chemistry-sectional-1': SITEEE_2026_CHEMISTRY_1,
+  'siteee/mathematics-sectional-1': SITEEE_2026_MATHEMATICS_1,
 };
 const OJEE_TESTS: Record<string, Question[]> = {
   'ojee/special-btech-full-mock-1': [
@@ -2881,6 +2929,10 @@ const UPESEAT_TESTS: Record<string, Question[]> = {
     ...UPESEAT_2026_CHEMISTRY_1,
     ...UPESEAT_2026_ENGLISH_1,
   ],
+  'upeseat/mathematics-sectional-1': UPESEAT_2026_MATHEMATICS_1,
+  'upeseat/physics-sectional-1': UPESEAT_2026_PHYSICS_1,
+  'upeseat/chemistry-sectional-1': UPESEAT_2026_CHEMISTRY_1,
+  'upeseat/english-language-comprehension-sectional-1': UPESEAT_2026_ENGLISH_1,
 };
 const NMIMS_CET_TESTS: Record<string, Question[]> = {
   'nmims-cet/full-mock-1': [
@@ -2890,6 +2942,11 @@ const NMIMS_CET_TESTS: Record<string, Question[]> = {
     ...NMIMS_CET_2026_LOGICAL_INTELLIGENCE_1,
     ...NMIMS_CET_2026_VERBAL_REASONING_1,
   ],
+  'nmims-cet/physics-sectional-1': NMIMS_CET_2026_PHYSICS_1,
+  'nmims-cet/chemistry-sectional-1': NMIMS_CET_2026_CHEMISTRY_1,
+  'nmims-cet/mathematics-sectional-1': NMIMS_CET_2026_MATHEMATICS_1,
+  'nmims-cet/logical-intelligence-sectional-1': NMIMS_CET_2026_LOGICAL_INTELLIGENCE_1,
+  'nmims-cet/verbal-reasoning-sectional-1': NMIMS_CET_2026_VERBAL_REASONING_1,
 };
 const BV_BTECH_TESTS: Record<string, Question[]> = {
   'bv-btech/full-mock-1': [
@@ -3731,6 +3788,120 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 75
     : testId.includes('cusat-cat/chemistry-sectional')
     ? 60
+    : testId.includes('cg-pet/physics-sectional')
+    ? 50
+    : testId.includes('cg-pet/chemistry-sectional')
+    ? 50
+    : testId.includes('cg-pet/mathematics-sectional')
+    ? 50
+    : testId.includes('jain-jet/physics-sectional')
+    ? 30
+    : testId.includes('jain-jet/chemistry-sectional')
+    ? 30
+    : testId.includes('jain-jet/mathematics-sectional')
+    ? 30
+    : testId.includes('jain-jet/aptitude-sectional')
+    ? 15
+    : testId.includes('jain-jet/logical-reasoning-sectional')
+    ? 15
+    : testId.includes('jain-jet/english-sectional')
+    ? 30
+    : testId.includes('saeee/mathematics-sectional')
+    ? 20
+    : testId.includes('saeee/physics-sectional')
+    ? 20
+    : testId.includes('saeee/chemistry-sectional')
+    ? 20
+    : testId.includes('siteee/physics-sectional')
+    ? 15
+    : testId.includes('siteee/chemistry-sectional')
+    ? 15
+    : testId.includes('siteee/mathematics-sectional')
+    ? 30
+    : testId.includes('upeseat/mathematics-sectional')
+    ? 35
+    : testId.includes('upeseat/physics-sectional')
+    ? 35
+    : testId.includes('upeseat/chemistry-sectional')
+    ? 35
+    : testId.includes('upeseat/english-language-comprehension-sectional')
+    ? 20
+    : testId.includes('nmims-cet/physics-sectional')
+    ? 30
+    : testId.includes('nmims-cet/chemistry-sectional')
+    ? 30
+    : testId.includes('nmims-cet/mathematics-sectional')
+    ? 30
+    : testId.includes('nmims-cet/logical-intelligence-sectional')
+    ? 20
+    : testId.includes('nmims-cet/verbal-reasoning-sectional')
+    ? 10
+    : testId.includes('chandigarh-cucet/english-sectional')
+    ? 10
+    : testId.includes('chandigarh-cucet/physics-sectional')
+    ? 25
+    : testId.includes('chandigarh-cucet/chemistry-sectional')
+    ? 25
+    : testId.includes('chandigarh-cucet/mathematics-sectional')
+    ? 25
+    : testId.includes('chandigarh-cucet/aptitude-sectional')
+    ? 15
+    : testId.includes('imu-cet/english-sectional')
+    ? 40
+    : testId.includes('imu-cet/general-aptitude-sectional')
+    ? 40
+    : testId.includes('imu-cet/physics-sectional')
+    ? 50
+    : testId.includes('imu-cet/chemistry-sectional')
+    ? 20
+    : testId.includes('imu-cet/mathematics-sectional')
+    ? 50
+    : testId.includes('kleee/mathematics-sectional')
+    ? 25
+    : testId.includes('kleee/physics-sectional')
+    ? 25
+    : testId.includes('kleee/chemistry-sectional')
+    ? 25
+    : testId.includes('lpunest/physics-sectional')
+    ? 25
+    : testId.includes('lpunest/chemistry-sectional')
+    ? 25
+    : testId.includes('lpunest/mathematics-sectional')
+    ? 25
+    : testId.includes('lpunest/english-sectional')
+    ? 25
+    : testId.includes('nerist-nee/physics-sectional')
+    ? 35
+    : testId.includes('nerist-nee/chemistry-sectional')
+    ? 35
+    : testId.includes('nerist-nee/mathematics-sectional')
+    ? 45
+    : testId.includes('hp-pat/mathematics-sectional')
+    ? 50
+    : testId.includes('hp-pat/physics-sectional')
+    ? 50
+    : testId.includes('hp-pat/chemistry-sectional')
+    ? 30
+    : testId.includes('hp-pat/english-sectional')
+    ? 20
+    : testId.includes('iemjee/physics-sectional')
+    ? 30
+    : testId.includes('iemjee/chemistry-sectional')
+    ? 30
+    : testId.includes('iemjee/mathematics-sectional')
+    ? 30
+    : testId.includes('jeecup/mathematics-sectional')
+    ? 50
+    : testId.includes('jeecup/physics-and-chemistry-sectional')
+    ? 50
+    : testId.includes('mit-wpu-cet/basic-mathematics-sectional')
+    ? 25
+    : testId.includes('mit-wpu-cet/basic-english-sectional')
+    ? 25
+    : testId.includes('mit-wpu-cet/physics-sectional')
+    ? 25
+    : testId.includes('mit-wpu-cet/chemistry-sectional')
+    ? 25
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
