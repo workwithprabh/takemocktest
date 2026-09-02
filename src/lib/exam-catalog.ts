@@ -159,6 +159,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('NERIST NEE', 'Institute', 'nerist-nee'),
           exam('IEMJEE', 'Institute', 'iemjee'),
           exam('MIT-WPU CET', 'Institute', 'mit-wpu-cet'),
+          exam('VTUEEE', 'Institute', 'vtueee'),
         ],
       },
       {
@@ -188,6 +189,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('CG PPT', 'State', 'cg-ppt'),
           exam('TJEE', 'State', 'tjee'),
           exam('Uttarakhand JEEP', 'State', 'uttarakhand-jeep'),
+          exam('WB JELET', 'State', 'wb-jelet'),
         ],
       },
       {
