@@ -186,6 +186,8 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('TG ECET', 'State', 'tg-ecet'),
           exam('TG POLYCET', 'State', 'tg-polycet'),
           exam('CG PPT', 'State', 'cg-ppt'),
+          exam('TJEE', 'State', 'tjee'),
+          exam('Uttarakhand JEEP', 'State', 'uttarakhand-jeep'),
         ],
       },
       {
@@ -214,7 +216,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Medical admissions',
         exams: [
-          exam('NEET UG', 'National'),
+          exam('NEET UG', 'National', 'neet-ug'),
           exam('NEET PG', 'National'),
           exam('INI-CET', 'National'),
           exam('NEET SS', 'National'),
@@ -503,7 +505,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Design & fashion',
         exams: [
-          exam('NIFT Entrance Examination', 'National'),
+          exam('NIFT Entrance Examination', 'National', 'nift'),
           exam('NID Design Aptitude Test', 'National'),
           exam('UCEED', 'National'),
           exam('CEED', 'National'),

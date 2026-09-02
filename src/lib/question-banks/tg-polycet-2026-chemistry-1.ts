@@ -4,721 +4,721 @@ export const TG_POLYCET_2026_CHEMISTRY_1: Question[] = [
   {
     "id": "tg-polycet-2026-ch-001",
     "section": "Chemistry",
-    "topic": "Chemical Reactions and Equations",
-    "difficulty": "easy",
-    "question": "Which equation is correctly balanced?",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "Atom P contains 12 protons and 13 neutrons, while atom Q contains 13 protons and 12 neutrons. How are P and Q related?",
     "options": [
-      "2H\u2082 + O\u2082 \u2192 2H\u2082O",
-      "H\u2082 + O\u2082 \u2192 H\u2082O",
-      "H\u2082 + 2O\u2082 \u2192 H\u2082O\u2082",
-      "2H\u2082 + 2O\u2082 \u2192 2H\u2082O"
+      "They are isotopes",
+      "They are isotones",
+      "They are isobars",
+      "They are ions of the same element"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The balanced equation has 4 H atoms and 2 O atoms on both sides: 2H\u2082 + O\u2082 \u2192 2H\u2082O.",
+    "explanation": "P has mass number 12+13=25 and Q has mass number 13+12=25. Their mass numbers are equal but their atomic numbers are different, so they are isobars.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-002",
     "section": "Chemistry",
-    "topic": "Chemical Reactions and Equations",
-    "difficulty": "easy",
-    "question": "When magnesium ribbon burns in oxygen, the main product is",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "Neutral atoms X and Y have electronic configurations 2,8,6 and 2,8,2 respectively. If each forms the ion nearest to a noble-gas configuration, what are the charges on X and Y?",
     "options": [
-      "magnesium chloride",
-      "magnesium oxide",
-      "magnesium sulphate",
-      "magnesium carbonate"
+      "X\u00b2\u207a and Y\u00b2\u207a",
+      "X\u207b and Y\u207a",
+      "X\u00b2\u207b and Y\u00b2\u207a",
+      "X\u00b2\u207a and Y\u00b2\u207b"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Burning magnesium combines Mg with O\u2082 to form magnesium oxide, MgO.",
+    "explanation": "X needs two electrons to complete its outer shell, so it forms X\u00b2\u207b. Y most readily loses its two outer electrons, so it forms Y\u00b2\u207a.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-003",
     "section": "Chemistry",
-    "topic": "Chemical Reactions and Equations",
-    "difficulty": "easy",
-    "question": "Which observation most directly indicates a precipitation reaction?",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "An element has electronic configuration 2,8,2. Which statement is correct?",
     "options": [
-      "A gas burns with a pop sound",
-      "An insoluble solid appears when two solutions are mixed",
-      "A metal melts on heating",
-      "A solution becomes more dilute after adding water"
+      "Its atomic number is 8",
+      "It tends to gain 6 electrons in ordinary ionic bonding",
+      "It belongs to the noble gases",
+      "It has 2 valence electrons"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A precipitation reaction produces an insoluble solid from ions present in solution.",
+    "explanation": "The outermost shell contains 2 electrons, so it has 2 valence electrons. The total electrons are 12.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-004",
     "section": "Chemistry",
-    "topic": "Chemical Reactions and Equations",
+    "topic": "Atomic Structure",
     "difficulty": "medium",
-    "question": "In the reaction Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu, zinc is",
+    "question": "Two species have electronic configurations 2,8 and 2,8,8 respectively. If both are neutral atoms, how do their atomic numbers compare?",
     "options": [
-      "reduced and acts as oxidising agent",
-      "only a catalyst",
-      "neither oxidised nor reduced",
-      "oxidised and acts as reducing agent"
+      "The first is 8 greater",
+      "The second is twice the first",
+      "The second is 8 greater",
+      "They are equal"
     ],
-    "correctIndex": 3,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Zn changes from oxidation state 0 to +2, so it is oxidised. By causing Cu\u00b2\u207a to be reduced, zinc acts as the reducing agent.",
+    "explanation": "Neutral atomic numbers equal electron counts: 10 and 18. The second exceeds the first by 8.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-005",
     "section": "Chemistry",
-    "topic": "Chemical Reactions and Equations",
-    "difficulty": "hard",
-    "question": "Hydrogen peroxide decomposes as 2H\u2082O\u2082 \u2192 2H\u2082O + O\u2082. If 4 moles of H\u2082O\u2082 decompose completely, how many moles of O\u2082 are formed?",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "Which pair represents isotopes of the same element?",
     "options": [
-      "1",
-      "4",
-      "2",
-      "8"
+      "Atoms with 8 protons, 8 neutrons and 10 protons, 8 neutrons",
+      "Atoms with 6 protons, 6 electrons and 7 protons, 7 electrons",
+      "Atoms with mass numbers 20 and 21 but atomic numbers 10 and 11",
+      "Atoms with 8 protons, 8 neutrons and 8 protons, 10 neutrons"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The balanced equation shows 2 mol H\u2082O\u2082 produce 1 mol O\u2082. Therefore 4 mol H\u2082O\u2082 produce 2 mol O\u2082.",
+    "explanation": "Isotopes have the same atomic number (same protons) but different neutron counts. The first pair has 8 protons in both atoms and different neutrons.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-006",
     "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
+    "topic": "Periodic Classification",
     "difficulty": "easy",
-    "question": "Which ion is mainly responsible for the acidic behaviour of an aqueous acid?",
+    "question": "An element has electronic configuration 2,8,7. In which group-type is it expected to lie?",
     "options": [
-      "H\u207a/H\u2083O\u207a",
-      "Na\u207a",
-      "Cl\u207b",
-      "OH\u207b"
+      "Alkali metals",
+      "Alkaline earth metals",
+      "Noble gases",
+      "Halogens"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Acids in water furnish hydrogen ions, represented more realistically as hydronium ions H\u2083O\u207a.",
+    "explanation": "Seven valence electrons is characteristic of the halogen group.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-007",
     "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "easy",
-    "question": "A solution has pH 9. It is",
+    "topic": "Periodic Classification",
+    "difficulty": "medium",
+    "question": "Across a period from left to right, atomic size generally decreases. What is the main reason?",
     "options": [
-      "acidic",
-      "neutral",
-      "necessarily a salt solution only",
-      "basic"
+      "Valence electrons are removed",
+      "Nuclear charge increases while electrons enter the same shell",
+      "Neutrons leave the nucleus",
+      "The number of shells increases each step"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "At ordinary conditions, pH greater than 7 indicates a basic solution.",
+    "explanation": "Across a period, protons increase and added electrons enter the same principal shell, so stronger attraction pulls electrons closer.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-008",
     "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "easy",
-    "question": "What is produced when dilute hydrochloric acid reacts with sodium carbonate?",
+    "topic": "Periodic Classification",
+    "difficulty": "medium",
+    "question": "Which of the following elements would be expected to have the most metallic character?",
     "options": [
-      "Only hydrogen gas",
-      "Carbon dioxide, water and sodium chloride",
-      "Oxygen and sodium chloride",
-      "Chlorine and water"
+      "An element with configuration 2,8,1",
+      "An element with configuration 2,1",
+      "An element with configuration 2,8,7",
+      "An element with configuration 2,7"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Acid + carbonate gives salt + water + carbon dioxide: 2HCl + Na\u2082CO\u2083 \u2192 2NaCl + H\u2082O + CO\u2082.",
+    "explanation": "Metallic character increases down a group and toward the left. The 2,8,1 element is an alkali metal below the 2,1 element and loses its valence electron more readily.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-009",
     "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
+    "topic": "Periodic Classification",
     "difficulty": "medium",
-    "question": "Which substance is commonly used to reduce the acidity of soil?",
+    "question": "Elements X and Y are in the same period. X has 1 valence electron and Y has 6 valence electrons. Which statement is most likely correct?",
     "options": [
-      "Quicklime or slaked lime",
-      "Common salt",
-      "Vinegar",
-      "Ammonium chloride"
+      "Y is more metallic than X",
+      "X is more metallic than Y",
+      "Both are noble gases",
+      "Both have identical chemical properties"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Basic materials such as CaO or Ca(OH)\u2082 neutralise excess acidity in soil.",
+    "explanation": "Within a period, metallic character generally decreases from left to right. X with one valence electron lies further left than Y.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-010",
     "section": "Chemistry",
-    "topic": "Acids, Bases and Salts",
-    "difficulty": "hard",
-    "question": "Two unlabeled white powders X and Y are known to be washing soda and Plaster of Paris. X dissolves in water to give an alkaline solution. Y forms a paste with water that sets into a hard mass. Which option correctly identifies X and Y?",
+    "topic": "Periodic Classification",
+    "difficulty": "medium",
+    "question": "An element forms an oxide of formula E2O3. If oxygen has valency 2, what is the valency of E?",
     "options": [
-      "X = CaSO\u2084\u00b71/2H\u2082O; Y = Na\u2082CO\u2083\u00b710H\u2082O",
-      "X = NaHCO\u2083; Y = CaSO\u2084\u00b72H\u2082O",
-      "X = Na\u2082CO\u2083\u00b710H\u2082O; Y = CaSO\u2084\u00b71/2H\u2082O",
-      "X = NaCl; Y = CaCO\u2083"
+      "2",
+      "3",
+      "1",
+      "6"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Washing soda is sodium carbonate decahydrate, Na\u2082CO\u2083\u00b710H\u2082O, and its aqueous solution is alkaline. Plaster of Paris is calcium sulphate hemihydrate, CaSO\u2084\u00b71/2H\u2082O; with water it forms gypsum and sets into a hard mass. Therefore X is washing soda and Y is Plaster of Paris.",
+    "explanation": "Three oxygen atoms contribute total valency 6, shared by two E atoms, so each E has valency 3.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-011",
     "section": "Chemistry",
-    "topic": "Structure of Atom",
+    "topic": "Chemical Bonding",
     "difficulty": "easy",
-    "question": "Which subatomic particle has no electric charge?",
+    "question": "Which process best describes formation of an ionic bond?",
     "options": [
-      "Neutron",
-      "Proton",
-      "Electron",
-      "Positron"
+      "Transfer of electrons followed by electrostatic attraction",
+      "Sharing of protons",
+      "Sharing of an electron pair",
+      "Transfer of neutrons"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A neutron is electrically neutral; electrons are negative and protons are positive.",
+    "explanation": "An ionic bond forms when electrons are transferred, producing oppositely charged ions that attract electrostatically.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-012",
     "section": "Chemistry",
-    "topic": "Structure of Atom",
-    "difficulty": "easy",
-    "question": "An atom has atomic number 17 and mass number 35. How many neutrons does it contain?",
+    "topic": "Chemical Bonding",
+    "difficulty": "medium",
+    "question": "Atom A has configuration 2,8,1 and atom B has configuration 2,8,7. What formula is most likely for the compound they form?",
     "options": [
-      "17",
-      "35",
-      "18",
-      "52"
+      "AB",
+      "AB2",
+      "A2B3",
+      "A2B"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Number of neutrons = mass number \u2212 atomic number = 35\u221217=18.",
+    "explanation": "A tends to lose one electron and B tends to gain one, so their ions combine in a 1:1 ratio.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-013",
     "section": "Chemistry",
-    "topic": "Structure of Atom",
+    "topic": "Chemical Bonding",
     "difficulty": "medium",
-    "question": "Which electronic configuration corresponds to an element in Group 1 of the periodic table?",
+    "question": "Why does solid sodium chloride not conduct electricity well, while molten sodium chloride does?",
     "options": [
-      "2,8,7",
-      "2,8,1",
-      "2,8,8",
-      "2,6"
+      "Electrons appear only after melting",
+      "Ions are fixed in the solid but mobile in the melt",
+      "Solid NaCl has no ions",
+      "Melting converts NaCl into a covalent compound"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A Group 1 main-group element has one valence electron. The configuration 2,8,1 has one electron in the outermost shell.",
+    "explanation": "NaCl contains ions in both states, but in the solid lattice they cannot move. In molten NaCl the ions are mobile and carry charge.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-014",
     "section": "Chemistry",
-    "topic": "Structure of Atom",
+    "topic": "Chemical Bonding",
     "difficulty": "medium",
-    "question": "An ion X\u00b2\u207b has 18 electrons. What is the atomic number of neutral X?",
+    "question": "Which molecule is formed mainly by sharing electrons rather than by electron transfer?",
     "options": [
-      "14",
-      "20",
-      "18",
-      "16"
+      "CaCl2",
+      "H2",
+      "NaCl",
+      "MgO"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A 2\u2212 ion has gained two electrons. The neutral atom therefore has 18\u22122=16 electrons, so its atomic number is 16.",
+    "explanation": "Two hydrogen atoms share a pair of electrons to form a covalent H\u2013H bond.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-015",
     "section": "Chemistry",
-    "topic": "Periodic Classification of Elements",
+    "topic": "Chemical Reactions",
     "difficulty": "easy",
-    "question": "Across a period from left to right, the number of valence electrons in the main-group elements generally",
+    "question": "Which observation most clearly indicates that a chemical reaction has occurred?",
     "options": [
-      "decreases",
-      "increases",
-      "remains zero",
-      "changes randomly"
+      "A gas and a new precipitate forming when two solutions are mixed",
+      "Sugar dissolving in water",
+      "Water boiling",
+      "Ice melting"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Across a period, electrons are added to the same outer shell, so the number of valence electrons generally increases.",
+    "explanation": "Formation of new substances such as a gas or precipitate is strong evidence of a chemical reaction.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-016",
     "section": "Chemistry",
-    "topic": "Periodic Classification of Elements",
+    "topic": "Chemical Reactions",
     "difficulty": "medium",
-    "question": "Which element is expected to have the largest atomic size among Li, Be, B and C?",
+    "question": "Which equation is correctly balanced?",
     "options": [
-      "Li",
-      "Be",
-      "B",
-      "C"
+      "2H2 + 2O2 \u2192 H2O",
+      "2H2 + O2 \u2192 2H2O",
+      "H2 + 2O2 \u2192 2H2O",
+      "H2 + O2 \u2192 H2O"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Across Period 2, effective nuclear attraction increases and atomic size decreases. Lithium, being farthest left, is largest among these.",
+    "explanation": "The balanced equation has 4 H atoms and 2 O atoms on each side: 2H2+O2\u21922H2O.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-017",
     "section": "Chemistry",
-    "topic": "Periodic Classification of Elements",
+    "topic": "Chemical Reactions",
     "difficulty": "medium",
-    "question": "Elements in the same group of the periodic table often show similar chemical properties mainly because they have",
+    "question": "A strip of zinc is placed in copper sulphate solution. What is the expected change?",
     "options": [
-      "the same number of shells",
-      "the same atomic mass",
-      "identical nuclei",
-      "the same number of valence electrons"
+      "Only water is produced",
+      "No reaction occurs",
+      "Copper displaces zinc from the strip",
+      "Zinc displaces copper from the solution"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Chemical behaviour is strongly governed by valence electrons; elements in a group have similar outer-shell configurations.",
+    "explanation": "Zinc is more reactive than copper, so Zn + CuSO4 \u2192 ZnSO4 + Cu.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-018",
     "section": "Chemistry",
-    "topic": "Periodic Classification of Elements",
-    "difficulty": "hard",
-    "question": "An element has electronic configuration 2,8,7. Which statement is correct?",
+    "topic": "Chemical Reactions",
+    "difficulty": "medium",
+    "question": "When calcium carbonate is strongly heated, it forms calcium oxide and carbon dioxide. What type of reaction is this?",
     "options": [
-      "It is in Period 2, Group 17",
-      "It is in Period 3, Group 7",
-      "It is in Period 3, Group 17",
-      "It is a noble gas"
+      "Decomposition",
+      "Displacement",
+      "Combination",
+      "Neutralisation"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Three occupied shells place it in Period 3, and seven valence electrons place it in Group 17.",
+    "explanation": "A single compound breaks into two simpler substances on heating, so it is a thermal decomposition reaction.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-019",
     "section": "Chemistry",
-    "topic": "Chemical Bonding",
+    "topic": "Chemical Reactions",
     "difficulty": "easy",
-    "question": "A bond formed by transfer of electrons from one atom to another is called",
+    "question": "During a reaction, substance A loses oxygen while substance B gains oxygen. Which conclusion is correct?",
     "options": [
-      "metallic bond only",
-      "covalent bond",
-      "ionic bond",
-      "hydrogen bond"
+      "A is reduced and B is oxidized",
+      "A is oxidized and B is reduced",
+      "Both A and B are oxidized",
+      "Both A and B are reduced"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Ionic bonding results from electron transfer and electrostatic attraction between the resulting oppositely charged ions.",
+    "explanation": "Loss of oxygen is reduction, while gain of oxygen is oxidation. Therefore A is reduced and B is oxidized.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-020",
     "section": "Chemistry",
-    "topic": "Chemical Bonding",
-    "difficulty": "medium",
-    "question": "Why does sodium chloride conduct electricity when molten but not when solid?",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "easy",
+    "question": "A solution has pH 3. Which statement is correct?",
     "options": [
-      "Its ions disappear on melting",
-      "It contains free electrons only when solid",
-      "It becomes covalent on melting",
-      "Its ions are mobile only in the molten state"
+      "It is basic",
+      "Its pH must become 14 on dilution",
+      "It is neutral",
+      "It is acidic"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "In solid NaCl, ions are fixed in a lattice. When molten, the ions can move and carry electric current.",
+    "explanation": "Solutions with pH below 7 are acidic.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-021",
     "section": "Chemistry",
-    "topic": "Chemical Bonding",
+    "topic": "Acids, Bases and Salts",
     "difficulty": "medium",
-    "question": "Which molecule contains a double covalent bond between its two atoms?",
+    "question": "Equal volumes of 0.1 M HCl and 0.1 M NaOH are mixed. What is the expected nature of the final solution, assuming complete reaction?",
     "options": [
-      "O\u2082",
-      "Cl\u2082",
-      "H\u2082",
-      "N\u2082"
+      "Strongly acidic",
+      "Always pH 2",
+      "Strongly basic",
+      "Approximately neutral"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The O\u2082 molecule is represented by O=O, a double covalent bond. N\u2082 has a triple bond, while H\u2082 and Cl\u2082 have single bonds.",
+    "explanation": "Equal moles of strong acid and strong base neutralise each other, producing salt and water, so the solution is approximately neutral.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-022",
     "section": "Chemistry",
-    "topic": "Chemical Bonding",
-    "difficulty": "hard",
-    "question": "An atom with configuration 2,8,2 combines with an atom having configuration 2,8,7. What is the simplest formula of the compound formed?",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "medium",
+    "question": "Which gas is released when dilute hydrochloric acid reacts with sodium carbonate?",
     "options": [
-      "XY",
-      "XY\u2082",
-      "X\u2082Y",
-      "X\u2082Y\u2083"
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Chlorine"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The first atom loses two electrons to form X\u00b2\u207a; each second atom gains one electron to form Y\u207b. Charge balance requires XY\u2082.",
+    "explanation": "Acid + carbonate gives salt + water + carbon dioxide.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-023",
     "section": "Chemistry",
-    "topic": "Principles of Metallurgy",
-    "difficulty": "easy",
-    "question": "The unwanted earthy material associated with an ore is called",
+    "topic": "Acids, Bases and Salts",
+    "difficulty": "medium",
+    "question": "Why is baking soda useful in some antacid preparations?",
     "options": [
-      "alloy",
-      "gangue",
-      "slag metal",
-      "flux metal"
+      "It is an insoluble metal",
+      "It is a strong acid",
+      "It is mildly basic and can neutralise excess acid",
+      "It produces chlorine in the stomach"
     ],
-    "correctIndex": 1,
+    "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Gangue is the unwanted rocky or earthy impurity present with an ore.",
+    "explanation": "Sodium hydrogen carbonate is a mild base, so it can neutralise excess stomach acid.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-024",
     "section": "Chemistry",
-    "topic": "Principles of Metallurgy",
+    "topic": "Metals and Non-metals",
     "difficulty": "medium",
-    "question": "Which process is commonly used to convert a sulphide ore into an oxide before reduction?",
+    "question": "Metal X displaces copper from CuSO4 but does not displace zinc from ZnSO4. Which ordering is consistent with these observations?",
     "options": [
-      "Neutralisation",
-      "Electroplating",
-      "Distillation",
-      "Roasting"
+      "Cu > X > Zn",
+      "Zn > Cu > X",
+      "X > Zn > Cu",
+      "Zn > X > Cu"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Sulphide ores are generally heated strongly in excess air during roasting to form oxides and sulphur oxides.",
+    "explanation": "X is more reactive than Cu because it displaces Cu, but less reactive than Zn because it cannot displace Zn. Hence Zn > X > Cu.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-025",
     "section": "Chemistry",
-    "topic": "Principles of Metallurgy",
+    "topic": "Metals and Non-metals",
     "difficulty": "medium",
-    "question": "Why is aluminium usually extracted by electrolysis rather than by reduction with carbon?",
+    "question": "Which property is most characteristic of many metals and explains their use in electrical wiring?",
     "options": [
-      "Aluminium is less reactive than carbon",
-      "Aluminium never forms ions",
-      "Aluminium oxide is too stable for ordinary carbon reduction",
-      "Carbon cannot burn in oxygen"
+      "High electrical conductivity",
+      "Brittleness",
+      "Formation of acidic oxides only",
+      "Low melting point in all cases"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Aluminium is highly reactive and Al\u2082O\u2083 is very stable; carbon cannot economically reduce it under ordinary metallurgical conditions, so electrolysis is used.",
+    "explanation": "Metals generally contain mobile electrons, giving them high electrical conductivity.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ch-026",
     "section": "Chemistry",
-    "topic": "Principles of Metallurgy",
-    "difficulty": "hard",
-    "question": "During extraction of iron in a blast furnace, limestone helps mainly by forming CaO, which reacts with silica impurity to produce",
-    "options": [
-      "calcium silicate slag",
-      "carbon monoxide",
-      "iron sulphide",
-      "calcium metal"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "CaCO\u2083 decomposes to CaO, and CaO reacts with SiO\u2082 to form calcium silicate, CaSiO\u2083, which separates as slag.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ch-027",
-    "section": "Chemistry",
-    "topic": "Carbon and Its Compounds",
-    "difficulty": "easy",
-    "question": "The ability of carbon atoms to link with one another to form chains is called",
-    "options": [
-      "sublimation",
-      "ionisation",
-      "neutralisation",
-      "catenation"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Catenation is the self-linking property of carbon that allows long chains and rings to form.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ch-028",
-    "section": "Chemistry",
-    "topic": "Carbon and Its Compounds",
+    "topic": "Metallurgy",
     "difficulty": "medium",
-    "question": "Which compound is an alcohol?",
+    "question": "Why are highly reactive metals such as sodium generally extracted by electrolysis rather than by reduction with carbon?",
     "options": [
-      "CH\u2083COOH",
-      "C\u2082H\u2085OH",
-      "CH\u2083CHO",
-      "C\u2082H\u2086"
+      "Carbon is a metal",
+      "They are more reactive than carbon",
+      "Electrolysis always needs no energy",
+      "Their ores contain no oxygen"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "C\u2082H\u2085OH contains the hydroxyl functional group \u2212OH and is ethanol, an alcohol.",
+    "explanation": "Metals above carbon in the reactivity series cannot normally be displaced from their compounds by carbon, so electrolytic reduction is used.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "tg-polycet-2026-ch-029",
+    "id": "tg-polycet-2026-ch-027",
     "section": "Chemistry",
-    "topic": "Carbon and Its Compounds",
+    "topic": "Corrosion",
     "difficulty": "medium",
-    "question": "What is the molecular formula of an alkane containing four carbon atoms?",
+    "question": "An iron nail is coated completely with zinc. How does this help protect the iron?",
     "options": [
-      "C\u2084H\u2081\u2080",
-      "C\u2084H\u2088",
-      "C\u2084H\u2086",
-      "C\u2084H\u2081\u2082"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Alkanes follow C\u2099H\u2082\u2099\u208a\u2082. For n=4, the formula is C\u2084H\u2081\u2080.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ch-030",
-    "section": "Chemistry",
-    "topic": "Carbon and Its Compounds",
-    "difficulty": "hard",
-    "question": "Ethene reacts with hydrogen in the presence of nickel to form ethane. This is an example of",
-    "options": [
-      "substitution",
-      "esterification",
-      "addition (hydrogenation)",
-      "neutralisation"
+      "Zinc increases the iron's acidity",
+      "Zinc removes all oxygen from air permanently",
+      "Zinc forms a protective layer and can corrode preferentially",
+      "Zinc turns iron into a non-metal"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Hydrogen adds across the carbon-carbon double bond of ethene, converting it to saturated ethane; this is an addition or hydrogenation reaction.",
+    "explanation": "Galvanising provides a barrier and zinc is more reactive than iron, so it can oxidise preferentially if the coating is damaged.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ch-028",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "easy",
+    "question": "Which compound is a saturated hydrocarbon?",
+    "options": [
+      "C2H2",
+      "C2H4",
+      "C3H8",
+      "C3H6"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Saturated acyclic hydrocarbons follow CnH2n+2. For n=3 this is C3H8.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ch-029",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "medium",
+    "question": "Ethanol is oxidised under suitable conditions. Which compound is commonly formed?",
+    "options": [
+      "Ethene only",
+      "Ethanoic acid",
+      "Calcium carbonate",
+      "Methane"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Oxidation of ethanol can produce ethanoic acid.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ch-030",
+    "section": "Chemistry",
+    "topic": "Carbon Compounds",
+    "difficulty": "medium",
+    "question": "A hydrocarbon has molecular formula C4H8 and decolourises bromine water. Which feature best explains this behaviour?",
+    "options": [
+      "It contains no carbon",
+      "It can contain a carbon\u2013carbon double bond",
+      "It must be an ionic compound",
+      "It must contain only single bonds"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "C4H8 can be an alkene. The C=C double bond undergoes addition with bromine, causing decolourisation.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
     }
   }
 ];

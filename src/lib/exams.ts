@@ -121,7 +121,11 @@ export type ExamSlug =
   | 'cuet-ug'
   | 'ipmat-rohtak'
   | 'nchm-jee'
-  | 'cg-ppt';
+  | 'cg-ppt'
+  | 'tjee'
+  | 'uttarakhand-jeep'
+  | 'neet-ug'
+  | 'nift';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -194,7 +198,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence' | 'Law' | 'Management' | 'Teaching & Research' | 'University & Science' | 'Design, Fashion & Hospitality';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence' | 'Law' | 'Management' | 'Teaching & Research' | 'University & Science' | 'Design, Fashion & Hospitality' | 'Medical';
   stages: TestStage[];
 }
 
@@ -345,6 +349,10 @@ const CUET_UG_2026_OFFICIAL_PORTAL = 'https://cuet.nta.nic.in/';
 const IPMAT_ROHTAK_2026_ADMISSION_PAGE = 'https://www.iimrohtak.ac.in/ipm-admission.php';
 const NCHM_JEE_2026_INFORMATION_PAGE = 'https://www.nchm.gov.in/information-about-nchm-jee-2026';
 const CG_PPT_2026_ONLINE_NOTICE = 'https://vyapamcg.cgstate.gov.in/Post?PostID=PPT26ONLINE';
+const TJEE_2026_SYLLABUS_PDF = 'https://tbjee.tripura.gov.in/sites/default/files/2026-01/Sylabus2026.pdf';
+const UTTARAKHAND_JEEP_2026_BROCHURE = 'https://www.ubterjeep.co.in/Documents/Brochure.pdf';
+const NEET_UG_2026_ADMISSION_BULLETIN = 'https://neet.nta.nic.in/admission-bulletin/';
+const NIFT_2026_INFORMATION_BULLETIN = 'https://www.nift.ac.in/sites/default/files/inline-files/NTA-Information-Bulletin-2026.pdf';
 
 function selectionPostTests(level: string, prefix: string, testNumber = 1, checkedOn = '9 August 2026'): TestConfig[] {
   const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn };
@@ -11407,7 +11415,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         id: 'mpc-polytechnic',
         name: 'MPC Polytechnic',
         pattern: {
-          status: 'review-pending',
+          status: 'official',
           cycle: '2026',
           sections: ['Mathematics', 'Physics', 'Chemistry'],
           totalQuestions: 120,
@@ -11420,12 +11428,12 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'Chemistry', questions: 30, marks: 30 },
           ],
           timerNote: 'Single 150-minute timer for the Full Mock, covering all three sections; no sectional lock.',
-          note: 'The current official physical TG POLYCET 2026 paper contains 150 questions: Mathematics 60, Physics 30, Chemistry 30, and a separate Biology 30 for candidates seeking the agriculture/veterinary/horticulture route. The same official booklet separately generates an MPC Rank out of 120 marks for Polytechnic (Engineering) admissions. This mock is therefore a platform-defined 120-question MPC-filtered simulation aligned to that official MPC rank, covering only Mathematics, Physics and Chemistry — it is not a claim that the complete physical official paper contains only 120 questions. No negative marking is corroborated-secondary evidence, since the retrieved direct-official pattern text did not itself expose that clause.',
+          note: 'The current official physical TG POLYCET 2026 paper contains 150 questions: Mathematics 60, Physics 30, Chemistry 30, and a separate Biology 30 for candidates seeking the agriculture/veterinary/horticulture route. The same official booklet separately generates an MPC Rank out of 120 marks for Polytechnic (Engineering) admissions. This mock is therefore a platform-defined 120-question MPC-filtered simulation aligned to that official MPC rank, covering only Mathematics, Physics and Chemistry — it is not a claim that the complete physical official paper contains only 120 questions. A fresh direct-official recheck of the current SBTET instruction booklet and brief notification directly confirms no negative marking for incorrect answers.',
           sourceUrl: TG_POLYCET_2026_INSTRUCTION_BOOKLET,
-          checkedOn: '28 August 2026',
+          checkedOn: '30 August 2026',
         },
         tests: [
-          { id: 'mpc-full-mock-1', name: 'MPC Polytechnic Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
+          { id: 'mpc-full-mock-1', name: 'MPC Polytechnic Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '30 August 2026' },
         ],
       },
     ],
@@ -11594,6 +11602,149 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-mock-1', name: 'Pre Polytechnic Test Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '30 August 2026' },
+        ],
+      },
+    ],
+  },
+  'tjee': {
+    slug: 'tjee',
+    name: 'TJEE',
+    fullName: 'Tripura Joint Entrance Examination',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering-pcm',
+        name: 'Engineering PCM',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 90,
+          totalMarks: 360,
+          duration: 135,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 30, marks: 120 },
+            { name: 'Chemistry', questions: 30, marks: 120 },
+            { name: 'Mathematics', questions: 30, marks: 120 },
+          ],
+          timerNote: 'Physics and Chemistry share the first 90 minutes and auto-submit as a group; Mathematics then gets a separate 45 minutes with no return to the first group.',
+          note: 'The official TJEE pattern is direct-official: each of Physics, Chemistry, Mathematics and Biology has 10 modules with exactly 3 compulsory MCQs per module (30 per subject), +4 correct/-1 wrong, and Physics + Chemistry are administered as one combined 90-minute paper while Mathematics gets its own 45-minute paper. This TakeMockTest Full Mock is an Engineering PCM-filtered simulation covering only Physics, Chemistry and Mathematics — Biology is not part of this product — so review-pending reflects that platform filtering, not weak evidence on the per-subject pattern itself.',
+          sourceUrl: TJEE_2026_SYLLABUS_PDF,
+          checkedOn: '29 August 2026',
+        },
+        tests: [
+          { id: 'engineering-pcm-full-mock-1', name: 'Engineering PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 135, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 45 }], marksPerCorrect: 4, negativeMarking: 1, checkedOn: '29 August 2026' },
+        ],
+      },
+    ],
+  },
+  'uttarakhand-jeep': {
+    slug: 'uttarakhand-jeep',
+    name: 'Uttarakhand JEEP',
+    fullName: 'Uttarakhand Joint Entrance Examination for Polytechnic',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'group-e-engineering-technology',
+        name: 'Group E Engineering & Technology',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics', 'Science (Physics & Chemistry)'],
+          totalQuestions: 100,
+          totalMarks: 500,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 50, marks: 250 },
+            { name: 'Science (Physics & Chemistry)', questions: 50, marks: 250 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer for the Full Mock, covering both sections; no sectional lock.',
+          note: 'Current direct-official evidence confirms the Group E/T examination slot (120 minutes) and the Mathematics 50% / Science (Physics & Chemistry) 50% weighting, with no official numeric Physics-versus-Chemistry subdivision inside the combined Science half — this mock keeps Science as one section rather than inventing a split. The 100-question / +5 / -1 scoring mechanics remain research-controlled/corroborated-current-secondary rather than directly confirmed in official text, hence review-pending.',
+          sourceUrl: UTTARAKHAND_JEEP_2026_BROCHURE,
+          checkedOn: '30 August 2026',
+        },
+        tests: [
+          { id: 'group-e-full-mock-1', name: 'Group E Engineering & Technology Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 5, negativeMarking: 1, checkedOn: '30 August 2026' },
+        ],
+      },
+    ],
+  },
+  'neet-ug': {
+    slug: 'neet-ug',
+    name: 'NEET UG',
+    fullName: 'National Eligibility cum Entrance Test (UG) 2026',
+    category: 'Medical',
+    stages: [
+      {
+        id: 'entrance-test',
+        name: 'NEET UG',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Biology'],
+          totalQuestions: 180,
+          totalMarks: 720,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 45, marks: 180 },
+            { name: 'Chemistry', questions: 45, marks: 180 },
+            { name: 'Biology', questions: 90, marks: 360 },
+          ],
+          timerNote: 'Single unrestricted 180-minute practice timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'Official Biology is labelled Biology (Botany & Zoology); no mandatory internal 45/45 Botany-versus-Zoology split is claimed or built. The actual NEET (UG) 2026 examination is pen-and-paper; this is an online practice simulation of that pen-and-paper exam, not a claim that the official exam itself is CBT/online.',
+          sourceUrl: NEET_UG_2026_ADMISSION_BULLETIN,
+          checkedOn: '30 August 2026',
+        },
+        tests: [
+          { id: 'neet-ug-full-mock-1', name: 'NEET UG Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '30 August 2026' },
+        ],
+      },
+    ],
+  },
+  'nift': {
+    slug: 'nift',
+    name: 'NIFT',
+    fullName: 'National Institute of Fashion Technology Entrance Examination 2026',
+    category: 'Design, Fashion & Hospitality',
+    stages: [
+      {
+        id: 'bftech-gat',
+        name: 'B.FTech GAT',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: [
+            'Section A — Communication Ability & English Comprehension',
+            'Section A — Quantitative Ability',
+            'Section A — Analytical & Logical Ability',
+            'Section A — General Knowledge & Current Affairs',
+            'Section B — Quantitative Ability',
+            'Section B — Analytical & Logical Ability',
+            'Section B — Case Study',
+          ],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 180,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Section A — Communication Ability & English Comprehension', questions: 40, marks: 40 },
+            { name: 'Section A — Quantitative Ability', questions: 20, marks: 20 },
+            { name: 'Section A — Analytical & Logical Ability', questions: 15, marks: 15 },
+            { name: 'Section A — General Knowledge & Current Affairs', questions: 25, marks: 25 },
+            { name: 'Section B — Quantitative Ability', questions: 15, marks: 15 },
+            { name: 'Section B — Analytical & Logical Ability', questions: 15, marks: 15 },
+            { name: 'Section B — Case Study', questions: 20, marks: 20 },
+          ],
+          timerNote: 'Section A (120 minutes) auto-submits as a group; Section B then gets a separate 60 minutes with no return to Section A.',
+          note: 'The official 2026 B.FTech GAT weights Section A 30% and Section B 70% toward merit; this raw practice score out of 150 is not that weighted official score. Official GAT is CBT and bilingual English/Hindi; these approved practice banks are English text only, which is a platform limitation, not a claim that the real exam is English-only. GK/Current Affairs content is frozen to a 2026-02-08 cutoff. Regular B.FTech has no Stage 2 (no CAT/Situation Test/Interview).',
+          sourceUrl: NIFT_2026_INFORMATION_BULLETIN,
+          checkedOn: '31 August 2026',
+        },
+        tests: [
+          { id: 'bftech-gat-full-mock-1', name: 'B.FTech GAT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Section A — Communication Ability & English Comprehension', 'Section A — Quantitative Ability', 'Section A — Analytical & Logical Ability', 'Section A — General Knowledge & Current Affairs'], duration: 120 }, { sections: ['Section B — Quantitative Ability', 'Section B — Analytical & Logical Ability', 'Section B — Case Study'], duration: 60 }], marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '31 August 2026' },
         ],
       },
     ],
