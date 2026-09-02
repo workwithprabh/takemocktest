@@ -116,7 +116,12 @@ export type ExamSlug =
   | 'kiitee'
   | 'puleet'
   | 'tg-ecet'
-  | 'tg-polycet';
+  | 'tg-polycet'
+  | 'ctet'
+  | 'cuet-ug'
+  | 'ipmat-rohtak'
+  | 'nchm-jee'
+  | 'cg-ppt';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -189,7 +194,7 @@ export interface ExamConfig {
   /** Shorter variant of `name`, used only in <title> tags where the full name would push past ~60-65 characters. Falls back to `name` when absent. */
   shortName?: string;
   fullName: string;
-  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence' | 'Law' | 'Management';
+  category: 'SSC' | 'Banking' | 'Railways' | 'Civil Services' | 'Engineering' | 'English Proficiency' | 'Study Abroad' | 'Finance' | 'Defence' | 'Law' | 'Management' | 'Teaching & Research' | 'University & Science' | 'Design, Fashion & Hospitality';
   stages: TestStage[];
 }
 
@@ -335,6 +340,11 @@ const NIACL_AO_2025_NOTICE = 'https://www.newindia.co.in/assets/docs/recruitment
 const RRB_ALP_2025_NOTICE = 'https://rrbbilaspur.gov.in/file/notice/Revised_CEN_01-2025_ALP.pdf';
 const RRB_TECHNICIAN_2025_NOTICE = 'https://rrbajmer.gov.in/Upload_PDF/Detailed%20CEN%202-2025_%20Technician%20Categories-638866538197092718.pdf';
 const RRB_PARAMEDICAL_2025_NOTICE = 'https://rrbsecunderabad.gov.in/wp-content/uploads/2025/08/Final-CEN-03_2025-English.pdf';
+const CTET_2026_INFORMATION_BULLETIN = 'https://ctet.nic.in/document/ctet-sept-2026-information-bulletin/';
+const CUET_UG_2026_OFFICIAL_PORTAL = 'https://cuet.nta.nic.in/';
+const IPMAT_ROHTAK_2026_ADMISSION_PAGE = 'https://www.iimrohtak.ac.in/ipm-admission.php';
+const NCHM_JEE_2026_INFORMATION_PAGE = 'https://www.nchm.gov.in/information-about-nchm-jee-2026';
+const CG_PPT_2026_ONLINE_NOTICE = 'https://vyapamcg.cgstate.gov.in/Post?PostID=PPT26ONLINE';
 
 function selectionPostTests(level: string, prefix: string, testNumber = 1, checkedOn = '9 August 2026'): TestConfig[] {
   const common = { status: 'checked' as const, marksPerCorrect: 2, negativeMarking: 0.5, checkedOn };
@@ -11416,6 +11426,174 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'mpc-full-mock-1', name: 'MPC Polytechnic Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '28 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ctet': {
+    slug: 'ctet',
+    name: 'CTET',
+    fullName: 'Central Teacher Eligibility Test 2026',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'paper-1-primary',
+        name: 'Paper I — Primary Stage',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Child Development and Pedagogy', 'Mathematics', 'Environmental Studies', 'Language I (English)', 'Language II (Hindi)'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Child Development and Pedagogy', questions: 30, marks: 30 },
+            { name: 'Mathematics', questions: 30, marks: 30 },
+            { name: 'Environmental Studies', questions: 30, marks: 30 },
+            { name: 'Language I (English)', questions: 30, marks: 30 },
+            { name: 'Language II (Hindi)', questions: 30, marks: 30 },
+          ],
+          timerNote: 'Single 150-minute timer for the Full Mock, covering all five sections; no sectional lock.',
+          note: 'Official Paper I substructure: Child Development and Pedagogy is 15 Child Development + 5 Inclusive Education/Special Needs + 10 Learning & Pedagogy; Mathematics and Environmental Studies are each 15 content + 15 pedagogy; both languages are each 15 comprehension + 15 pedagogy — this mock keeps the five official section arrays without splitting them into unsupported runtime sub-sections. Language I and Language II are candidate-selected on the actual CTET form and must differ; this Full Mock uses the English (Language I) + Hindi (Language II) pair as its selected combination, not a universal CTET requirement. CBSE postponed the original 6 September 2026 sitting and reopened applications through 1 September 2026; the revised examination date is to be announced.',
+          sourceUrl: CTET_2026_INFORMATION_BULLETIN,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'paper-1-primary-en-hi-full-mock-1', name: 'Paper I Primary Stage Full Mock Test 1 (English I + Hindi II)', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'cuet-ug': {
+    slug: 'cuet-ug',
+    name: 'CUET UG',
+    fullName: 'Common University Entrance Test (UG) 2026',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'english',
+        name: 'English',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English'],
+          totalQuestions: 50,
+          totalMarks: 250,
+          duration: 60,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'English', questions: 50, marks: 250 },
+          ],
+          timerNote: 'Single 60-minute CBT-style timer for the Full Mock.',
+          note: 'CUET UG (subject code 101, English) is one paper within a much larger multi-subject entrance test administered across many domain and language papers. This Full Mock covers only the English (101) paper and is not a complete simulation of the full multi-subject CUET UG exam.',
+          sourceUrl: CUET_UG_2026_OFFICIAL_PORTAL,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'english-full-mock-1', name: 'English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 5, negativeMarking: 1, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'ipmat-rohtak': {
+    slug: 'ipmat-rohtak',
+    name: 'IPMAT Rohtak',
+    fullName: 'IIM Rohtak Integrated Programme in Management Aptitude Test 2026',
+    category: 'Management',
+    stages: [
+      {
+        id: 'ipm-at',
+        name: 'IPM Aptitude Test',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Quantitative Ability', 'Logical Reasoning', 'Verbal Ability'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Quantitative Ability', questions: 40, marks: 160 },
+            { name: 'Logical Reasoning', questions: 40, marks: 160 },
+            { name: 'Verbal Ability', questions: 40, marks: 160 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'Four-option single-correct MCQ across all three sections, +4 for a correct answer and -1 for a wrong answer. The actual 2026 IPM-only administration carried two null questions and was evaluated out of 472; this mock keeps the full nominal 120-question / 480-mark shell.',
+          sourceUrl: IPMAT_ROHTAK_2026_ADMISSION_PAGE,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'ipm-at-full-mock-1', name: 'IPM Aptitude Test Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'nchm-jee': {
+    slug: 'nchm-jee',
+    name: 'NCHM JEE',
+    fullName: 'National Council for Hotel Management Joint Entrance Examination 2026',
+    category: 'Design, Fashion & Hospitality',
+    stages: [
+      {
+        id: 'bsc-hha',
+        name: 'B.Sc. HHA Entrance',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Numerical Ability and Analytical Aptitude', 'Reasoning and Logical Deduction', 'General Knowledge & Current Affairs', 'English Language', 'Aptitude for Service Sector'],
+          totalQuestions: 120,
+          totalMarks: 480,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Numerical Ability and Analytical Aptitude', questions: 15, marks: 60 },
+            { name: 'Reasoning and Logical Deduction', questions: 15, marks: 60 },
+            { name: 'General Knowledge & Current Affairs', questions: 15, marks: 60 },
+            { name: 'English Language', questions: 45, marks: 180 },
+            { name: 'Aptitude for Service Sector', questions: 30, marks: 120 },
+          ],
+          timerNote: 'Single 120-minute timer for the Full Mock, covering all five sections; no sectional lock.',
+          note: 'The official NTA NCHM JEE 2026 question paper is administered in English & Hindi; this practice mock is English-only as a platform limitation, not a claim that the official exam itself is English-only. General Knowledge & Current Affairs content is frozen to a 25 April 2026 cutoff and is not refreshed with later events. This is the NTA NCHM JEE 2026 B.Sc. HHA entrance mock — it does not include the later 2026 NCHMCT residual-seat OET rounds (a separate admissions mechanism), M.Sc. JEE/HA, NHTET, or postgraduate hotel-operations content.',
+          sourceUrl: NCHM_JEE_2026_INFORMATION_PAGE,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'bsc-hha-full-mock-1', name: 'B.Sc. HHA Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'cg-ppt': {
+    slug: 'cg-ppt',
+    name: 'CG PPT',
+    shortName: 'CG PPT',
+    fullName: 'Chhattisgarh Pre Polytechnic Test 2026',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'entrance-test',
+        name: 'Pre Polytechnic Test',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 180,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 50, marks: 50 },
+            { name: 'Chemistry', questions: 50, marks: 50 },
+            { name: 'Mathematics', questions: 50, marks: 50 },
+          ],
+          timerNote: 'Single unrestricted 180-minute composite timer for the Full Mock, covering all three sections; no sectional lock.',
+          note: 'Direct-current official evidence establishes CG PPT 2026 identity/date, the official centre session of 10:00–13:15 (195 minutes), OMR mechanics, four-option/one-correct questions, +1 for a correct answer, and 0 for a wrong/multiple/unanswered response, with no negative marking. The 180-minute active-paper timer and the 150-question / 50-50-50 Physics-Chemistry-Mathematics split are research-controlled/corroborated rather than fully direct-official in this environment, hence the review-pending status. TakeMockTest uses 180 minutes as the active mock-solving timer; the official 195-minute figure is the centre-session window (covering reporting, verification and gate closure), not the active-solving duration.',
+          sourceUrl: CG_PPT_2026_ONLINE_NOTICE,
+          checkedOn: '30 August 2026',
+        },
+        tests: [
+          { id: 'full-mock-1', name: 'Pre Polytechnic Test Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '30 August 2026' },
         ],
       },
     ],

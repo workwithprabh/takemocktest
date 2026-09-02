@@ -684,6 +684,23 @@ import { NMIMS_CET_2026_VERBAL_REASONING_1 } from './question-banks/nmims-cet-20
 import { BV_BTECH_2026_MATHEMATICS_1 } from './question-banks/bv-btech-2026-mathematics-1';
 import { BV_BTECH_2026_PHYSICS_1 } from './question-banks/bv-btech-2026-physics-1';
 import { BV_BTECH_2026_CHEMISTRY_1 } from './question-banks/bv-btech-2026-chemistry-1';
+import { CTET_2026_PAPER_1_CHILD_DEVELOPMENT_PEDAGOGY_1 } from './question-banks/ctet-2026-paper-1-child-development-pedagogy-1';
+import { CTET_2026_PAPER_1_MATHEMATICS_1 } from './question-banks/ctet-2026-paper-1-mathematics-1';
+import { CTET_2026_PAPER_1_ENVIRONMENTAL_STUDIES_1 } from './question-banks/ctet-2026-paper-1-environmental-studies-1';
+import { CTET_2026_PAPER_1_LANGUAGE_1_ENGLISH_1 } from './question-banks/ctet-2026-paper-1-language-1-english-1';
+import { CTET_2026_PAPER_1_LANGUAGE_2_HINDI_1 } from './question-banks/ctet-2026-paper-1-language-2-hindi-1';
+import { CUET_UG_2026_ENGLISH_1 } from './question-banks/cuet-ug-2026-english-1';
+import { IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_1 } from './question-banks/ipmat-rohtak-2026-quantitative-ability-1';
+import { IPMAT_ROHTAK_2026_LOGICAL_REASONING_1 } from './question-banks/ipmat-rohtak-2026-logical-reasoning-1';
+import { IPMAT_ROHTAK_2026_VERBAL_ABILITY_1 } from './question-banks/ipmat-rohtak-2026-verbal-ability-1';
+import { NCHM_JEE_2026_NUMERICAL_ANALYTICAL_1 } from './question-banks/nchm-jee-2026-numerical-analytical-1';
+import { NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1 } from './question-banks/nchm-jee-2026-reasoning-logical-deduction-1';
+import { NCHM_JEE_2026_GK_CURRENT_AFFAIRS_1 } from './question-banks/nchm-jee-2026-gk-current-affairs-1';
+import { NCHM_JEE_2026_ENGLISH_LANGUAGE_1 } from './question-banks/nchm-jee-2026-english-language-1';
+import { NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1 } from './question-banks/nchm-jee-2026-service-sector-aptitude-1';
+import { CG_PPT_2026_PHYSICS_1 } from './question-banks/cg-ppt-2026-physics-1';
+import { CG_PPT_2026_CHEMISTRY_1 } from './question-banks/cg-ppt-2026-chemistry-1';
+import { CG_PPT_2026_MATHEMATICS_1 } from './question-banks/cg-ppt-2026-mathematics-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -2543,6 +2560,41 @@ const TG_POLYCET_TESTS: Record<string, Question[]> = {
     ...TG_POLYCET_2026_CHEMISTRY_1,
   ],
 };
+const CTET_TESTS: Record<string, Question[]> = {
+  'ctet/paper-1-primary-en-hi-full-mock-1': [
+    ...CTET_2026_PAPER_1_CHILD_DEVELOPMENT_PEDAGOGY_1,
+    ...CTET_2026_PAPER_1_MATHEMATICS_1,
+    ...CTET_2026_PAPER_1_ENVIRONMENTAL_STUDIES_1,
+    ...CTET_2026_PAPER_1_LANGUAGE_1_ENGLISH_1,
+    ...CTET_2026_PAPER_1_LANGUAGE_2_HINDI_1,
+  ],
+};
+const CUET_UG_TESTS: Record<string, Question[]> = {
+  'cuet-ug/english-full-mock-1': CUET_UG_2026_ENGLISH_1,
+};
+const IPMAT_ROHTAK_TESTS: Record<string, Question[]> = {
+  'ipmat-rohtak/ipm-at-full-mock-1': [
+    ...IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_1,
+    ...IPMAT_ROHTAK_2026_LOGICAL_REASONING_1,
+    ...IPMAT_ROHTAK_2026_VERBAL_ABILITY_1,
+  ],
+};
+const NCHM_JEE_TESTS: Record<string, Question[]> = {
+  'nchm-jee/bsc-hha-full-mock-1': [
+    ...NCHM_JEE_2026_NUMERICAL_ANALYTICAL_1,
+    ...NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1,
+    ...NCHM_JEE_2026_GK_CURRENT_AFFAIRS_1,
+    ...NCHM_JEE_2026_ENGLISH_LANGUAGE_1,
+    ...NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1,
+  ],
+};
+const CG_PPT_TESTS: Record<string, Question[]> = {
+  'cg-ppt/full-mock-1': [
+    ...CG_PPT_2026_PHYSICS_1,
+    ...CG_PPT_2026_CHEMISTRY_1,
+    ...CG_PPT_2026_MATHEMATICS_1,
+  ],
+};
 const BITS_HD_TESTS: Record<string, Question[]> = {
   'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,
   'bits-hd/me-cs-full-mock-2': BITS_HD_2026_ME_CS_FULL_MOCK_2,
@@ -2698,7 +2750,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3312,6 +3364,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 200
     : testId.includes('tg-polycet/mpc-full-mock')
     ? 120
+    : testId.includes('ctet/paper-1-primary-en-hi-full-mock')
+    ? 150
+    : testId.includes('cuet-ug/english-full-mock')
+    ? 50
+    : testId.includes('ipmat-rohtak/ipm-at-full-mock')
+    ? 120
+    : testId.includes('nchm-jee/bsc-hha-full-mock')
+    ? 120
+    : testId.includes('cg-ppt/full-mock')
+    ? 150
     : testId.includes('full-mock')
     ? 100
     : testId.includes('rrb-ntpc')
@@ -3684,6 +3746,33 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Mathematics', count: 60 },
     { section: 'Physics', count: 30 },
     { section: 'Chemistry', count: 30 },
+  ],
+  'ctet': [
+    { section: 'Child Development and Pedagogy', count: 30 },
+    { section: 'Mathematics', count: 30 },
+    { section: 'Environmental Studies', count: 30 },
+    { section: 'Language I (English)', count: 30 },
+    { section: 'Language II (Hindi)', count: 30 },
+  ],
+  'cuet-ug': [
+    { section: 'English', count: 50 },
+  ],
+  'ipmat-rohtak': [
+    { section: 'Quantitative Ability', count: 40 },
+    { section: 'Logical Reasoning', count: 40 },
+    { section: 'Verbal Ability', count: 40 },
+  ],
+  'nchm-jee': [
+    { section: 'Numerical Ability and Analytical Aptitude', count: 15 },
+    { section: 'Reasoning and Logical Deduction', count: 15 },
+    { section: 'General Knowledge & Current Affairs', count: 15 },
+    { section: 'English Language', count: 45 },
+    { section: 'Aptitude for Service Sector', count: 30 },
+  ],
+  'cg-ppt': [
+    { section: 'Physics', count: 50 },
+    { section: 'Chemistry', count: 50 },
+    { section: 'Mathematics', count: 50 },
   ],
   'cmat': [
     { section: 'Quantitative Techniques and Data Interpretation', count: 20 },
@@ -5226,5 +5315,33 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     BV_BTECH_2026_MATHEMATICS_1[0],
     BV_BTECH_2026_PHYSICS_1[0],
     BV_BTECH_2026_CHEMISTRY_1[0],
+  ],
+  'ctet': [
+    CTET_2026_PAPER_1_CHILD_DEVELOPMENT_PEDAGOGY_1[0],
+    CTET_2026_PAPER_1_MATHEMATICS_1[0],
+    CTET_2026_PAPER_1_ENVIRONMENTAL_STUDIES_1[0],
+    CTET_2026_PAPER_1_LANGUAGE_1_ENGLISH_1[0],
+    CTET_2026_PAPER_1_LANGUAGE_2_HINDI_1[0],
+  ],
+  'cuet-ug': [
+    CUET_UG_2026_ENGLISH_1[0],
+    CUET_UG_2026_ENGLISH_1[1],
+  ],
+  'ipmat-rohtak': [
+    IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_1[0],
+    IPMAT_ROHTAK_2026_LOGICAL_REASONING_1[0],
+    IPMAT_ROHTAK_2026_VERBAL_ABILITY_1[0],
+  ],
+  'nchm-jee': [
+    NCHM_JEE_2026_NUMERICAL_ANALYTICAL_1[0],
+    NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1[0],
+    NCHM_JEE_2026_GK_CURRENT_AFFAIRS_1[0],
+    NCHM_JEE_2026_ENGLISH_LANGUAGE_1[0],
+    NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1[0],
+  ],
+  'cg-ppt': [
+    CG_PPT_2026_PHYSICS_1[0],
+    CG_PPT_2026_CHEMISTRY_1[0],
+    CG_PPT_2026_MATHEMATICS_1[0],
   ],
 };

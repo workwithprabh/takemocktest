@@ -104,6 +104,33 @@ const CATEGORY_STYLES = {
       </svg>
     ),
   },
+  'Teaching & Research': {
+    surface: 'bg-[#F3EEFF]',
+    iconText: 'text-[#5A3D9B]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M4 5h16v11H4V5Zm4 16h8m-4-5v5M8 10l2.5 2.5L16 8" fill="none" stroke="currentColor" strokeWidth="1.7" />
+      </svg>
+    ),
+  },
+  'University & Science': {
+    surface: 'bg-[#EEF4FF]',
+    iconText: 'text-[#244F9E]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H12v18H7.5A3.5 3.5 0 0 0 4 23V5.5Zm16 0A3.5 3.5 0 0 0 16.5 2H12v18h4.5A3.5 3.5 0 0 1 20 23V5.5Z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
+  },
+  'Design, Fashion & Hospitality': {
+    surface: 'bg-[#FFF4E8]',
+    iconText: 'text-[#8A4B08]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="m4 20 4.5-1 11-11a2.1 2.1 0 0 0-3-3l-11 11L4 20Zm10.5-12.5 3 3" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
+  },
 } as const;
 
 export default function ExamCard({ exam, country }: { exam: ExamConfig; country: string }) {
