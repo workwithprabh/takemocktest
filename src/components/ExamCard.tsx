@@ -131,6 +131,15 @@ const CATEGORY_STYLES = {
       </svg>
     ),
   },
+  Medical: {
+    surface: 'bg-[#EAF7F3]',
+    iconText: 'text-[#17624F]',
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6">
+        <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
 } as const;
 
 export default function ExamCard({ exam, country }: { exam: ExamConfig; country: string }) {

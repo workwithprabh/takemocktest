@@ -4,481 +4,481 @@ export const TG_POLYCET_2026_PHYSICS_1: Question[] = [
   {
     "id": "tg-polycet-2026-ph-001",
     "section": "Physics",
-    "topic": "Heat",
+    "topic": "Motion",
     "difficulty": "easy",
-    "question": "Two equal masses of water are at 20\u00b0C and 60\u00b0C. If they are mixed in an insulated vessel with negligible heat capacity, what is the final temperature?",
+    "question": "A scooter increases its speed uniformly from 6 m/s to 18 m/s in 4 s. What is its acceleration?",
     "options": [
-      "40\u00b0C",
-      "30\u00b0C",
-      "50\u00b0C",
-      "80\u00b0C"
+      "6 m/s\u00b2",
+      "4 m/s\u00b2",
+      "2 m/s\u00b2",
+      "3 m/s\u00b2"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Equal masses of the same substance exchange equal heat, so the final temperature is the average: (20+60)/2 = 40\u00b0C.",
+    "explanation": "Acceleration=(v\u2212u)/t=(18\u22126)/4=3 m/s\u00b2.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-002",
     "section": "Physics",
-    "topic": "Heat",
-    "difficulty": "easy",
-    "question": "A 0.5 kg metal block of specific heat 400 J kg\u207b\u00b9 K\u207b\u00b9 is heated through 30 K. How much heat does it absorb?",
-    "options": [
-      "2,000 J",
-      "4,000 J",
-      "6,000 J",
-      "12,000 J"
-    ],
-    "correctIndex": 2,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Q=mc\u0394T=0.5\u00d7400\u00d730=6000 J.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-003",
-    "section": "Physics",
-    "topic": "Heat",
+    "topic": "Motion",
     "difficulty": "medium",
-    "question": "Why does evaporation cool the remaining liquid?",
+    "question": "A car moving at 20 m/s slows uniformly at 2.5 m/s\u00b2. How far does it travel before coming to rest?",
     "options": [
-      "Low-energy molecules escape first",
-      "High-energy molecules escape, lowering the average kinetic energy",
-      "The liquid gains latent heat from vapour",
-      "Evaporation increases molecular mass"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The faster, higher-energy molecules are more likely to escape. The average kinetic energy of the molecules left behind decreases, so the liquid cools.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-004",
-    "section": "Physics",
-    "topic": "Heat",
-    "difficulty": "medium",
-    "question": "A wet-bulb thermometer shows a smaller depression below the dry-bulb reading on a humid day mainly because",
-    "options": [
-      "water boils at a lower temperature",
-      "humidity increases the specific heat of glass",
-      "the dry bulb absorbs latent heat",
-      "evaporation from the wet bulb is slower"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "High humidity reduces the rate of evaporation from the wet bulb, so evaporative cooling is weaker and the wet-bulb depression is smaller.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-005",
-    "section": "Physics",
-    "topic": "Reflection of Light",
-    "difficulty": "easy",
-    "question": "A ray strikes a plane mirror with an angle of incidence of 35\u00b0. What is the angle between the incident and reflected rays?",
-    "options": [
-      "35\u00b0",
-      "70\u00b0",
-      "55\u00b0",
-      "110\u00b0"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "The angle of reflection is also 35\u00b0. The angle between the two rays is 35\u00b0+35\u00b0=70\u00b0.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-006",
-    "section": "Physics",
-    "topic": "Reflection of Light",
-    "difficulty": "medium",
-    "question": "An object is 2 m in front of a plane mirror. If the object moves 0.5 m toward the mirror, by how much does the distance between object and image decrease?",
-    "options": [
-      "1.0 m",
-      "0.5 m",
-      "1.5 m",
-      "2.0 m"
+      "80 m",
+      "100 m",
+      "125 m",
+      "60 m"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Object-image separation is twice the object-mirror distance. Reducing that distance by 0.5 m reduces the separation by 1.0 m.",
+    "explanation": "Use v\u00b2=u\u00b2+2as with v=0, u=20 and a=\u22122.5: 0=400\u22125s, so s=80 m.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "tg-polycet-2026-ph-007",
+    "id": "tg-polycet-2026-ph-003",
     "section": "Physics",
-    "topic": "Reflection of Light",
+    "topic": "Force and Momentum",
     "difficulty": "medium",
-    "question": "A concave mirror forms a real image of the same size as the object. Where is the object placed?",
+    "question": "A 0.4 kg ball moving at 10 m/s is brought to rest in 0.2 s. What is the magnitude of the average force on it?",
     "options": [
-      "At the focus",
-      "Between focus and centre of curvature",
-      "Beyond the centre of curvature",
-      "At the centre of curvature"
+      "20 N",
+      "25 N",
+      "40 N",
+      "10 N"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Change in momentum=0.4\u00d710=4 kg m/s. Average force magnitude=4/0.2=20 N.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-004",
+    "section": "Physics",
+    "topic": "Force and Momentum",
+    "difficulty": "medium",
+    "question": "A 2 kg trolley at rest is pushed by a constant net force of 6 N for 3 s. What speed does it reach?",
+    "options": [
+      "9 m/s",
+      "6 m/s",
+      "12 m/s",
+      "3 m/s"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Acceleration=F/m=6/2=3 m/s\u00b2. Starting from rest, v=at=3\u00d73=9 m/s.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-005",
+    "section": "Physics",
+    "topic": "Motion",
+    "difficulty": "medium",
+    "question": "A cyclist travels 120 m at 6 m/s and then 180 m at 9 m/s. What is the average speed for the whole trip?",
+    "options": [
+      "8.0 m/s",
+      "6.5 m/s",
+      "7.5 m/s",
+      "7.0 m/s"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Times are 120/6=20 s and 180/9=20 s. Total distance=300 m, total time=40 s, so average speed=7.5 m/s.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-006",
+    "section": "Physics",
+    "topic": "Heat",
+    "difficulty": "easy",
+    "question": "How much heat is needed to raise the temperature of 0.5 kg of water by 10\u00b0C? Take c=4200 J kg\u207b\u00b9 \u00b0C\u207b\u00b9.",
+    "options": [
+      "42 kJ",
+      "10.5 kJ",
+      "84 kJ",
+      "21 kJ"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A concave mirror forms an equal-size real inverted image when the object is at the centre of curvature.",
+    "explanation": "Q=mc\u0394T=0.5\u00d74200\u00d710=21000 J=21 kJ.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-007",
+    "section": "Physics",
+    "topic": "Heat",
+    "difficulty": "medium",
+    "question": "A 200 g metal block of specific heat 500 J kg\u207b\u00b9 \u00b0C\u207b\u00b9 cools from 80\u00b0C to 30\u00b0C. How much heat does it release?",
+    "options": [
+      "25 kJ",
+      "10 kJ",
+      "5 kJ",
+      "2.5 kJ"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Q=mc\u0394T=0.2\u00d7500\u00d750=5000 J=5 kJ.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-008",
     "section": "Physics",
-    "topic": "Reflection of Light",
-    "difficulty": "hard",
-    "question": "A concave mirror has focal length 15 cm. An object is placed 30 cm in front of it. Using the mirror formula with Cartesian signs, what is the image distance?",
+    "topic": "Heat",
+    "difficulty": "medium",
+    "question": "Equal masses of water at 20\u00b0C and 60\u00b0C are mixed in an insulated container. Ignoring the container's heat capacity, what is the final temperature?",
     "options": [
-      "\u221260 cm",
-      "+30 cm",
-      "\u221230 cm",
-      "+60 cm"
+      "40\u00b0C",
+      "30\u00b0C",
+      "35\u00b0C",
+      "45\u00b0C"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For a concave mirror, f=\u221215 cm and u=\u221230 cm. From 1/f=1/v+1/u, \u22121/15=1/v\u22121/30, so 1/v=\u22121/30 and v=\u221230 cm.",
+    "explanation": "For equal masses of the same substance with no heat loss, the final temperature is the average: (20+60)/2=40\u00b0C.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-009",
     "section": "Physics",
-    "topic": "Refraction of Light at Plane Surfaces",
-    "difficulty": "easy",
-    "question": "A ray passes from air into glass. Which quantity remains unchanged at the boundary?",
+    "topic": "Heat",
+    "difficulty": "medium",
+    "question": "A 1.5 kg substance receives 18 kJ of heat and its temperature rises by 20\u00b0C. What is its specific heat capacity?",
     "options": [
-      "Speed",
-      "Wavelength",
-      "Frequency",
-      "Direction"
+      "900 J kg\u207b\u00b9 \u00b0C\u207b\u00b9",
+      "450 J kg\u207b\u00b9 \u00b0C\u207b\u00b9",
+      "300 J kg\u207b\u00b9 \u00b0C\u207b\u00b9",
+      "600 J kg\u207b\u00b9 \u00b0C\u207b\u00b9"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The frequency is fixed by the source and remains unchanged across a boundary; speed and wavelength change.",
+    "explanation": "c=Q/(m\u0394T)=18000/(1.5\u00d720)=600 J kg\u207b\u00b9 \u00b0C\u207b\u00b9.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-010",
     "section": "Physics",
-    "topic": "Refraction of Light at Plane Surfaces",
-    "difficulty": "easy",
-    "question": "Light travels at 2.0\u00d710\u2078 m/s in a transparent material. What is its refractive index relative to air? Take c=3.0\u00d710\u2078 m/s.",
+    "topic": "Heat",
+    "difficulty": "medium",
+    "question": "Two equal-mass metal blocks A and B receive the same amount of heat. The temperature rise of A is twice that of B. What is the relation between their specific heat capacities?",
     "options": [
-      "1.2",
-      "3.0",
+      "cA=cB",
+      "cA=2cB",
+      "cA=cB/2",
+      "cA=4cB"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "With equal Q and equal mass, \u0394T=Q/(mc), so temperature rise is inversely proportional to specific heat. If \u0394TA=2\u0394TB, then cA=cB/2.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-011",
+    "section": "Physics",
+    "topic": "Reflection of Light",
+    "difficulty": "easy",
+    "question": "A ray strikes a plane mirror with angle of incidence 35\u00b0. What is the angle between the incident and reflected rays?",
+    "options": [
+      "70\u00b0",
+      "35\u00b0",
+      "110\u00b0",
+      "55\u00b0"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The angle of reflection is also 35\u00b0, so the angle between the incident and reflected rays is 35\u00b0+35\u00b0=70\u00b0.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-012",
+    "section": "Physics",
+    "topic": "Spherical Mirrors",
+    "difficulty": "medium",
+    "question": "A 6 cm tall object is placed 24 cm in front of a concave mirror of focal length 8 cm. What is the height and orientation of the image?",
+    "options": [
+      "3 cm, inverted",
+      "6 cm, inverted",
+      "2 cm, upright",
+      "12 cm, upright"
+    ],
+    "correctIndex": 0,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Using magnitudes, 1/8=1/v+1/24 gives v=12 cm. Magnification magnitude=12/24=1/2, so image height=3 cm. A real concave-mirror image is inverted.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-013",
+    "section": "Physics",
+    "topic": "Spherical Mirrors",
+    "difficulty": "medium",
+    "question": "A concave mirror forms a real image three times the object's height. If the image is 36 cm from the mirror, how far is the object from the mirror?",
+    "options": [
+      "18 cm",
+      "12 cm",
+      "24 cm",
+      "9 cm"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "For a mirror, magnification magnitude=|v/u|. Thus 3=36/u, so u=12 cm.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-014",
+    "section": "Physics",
+    "topic": "Refraction",
+    "difficulty": "medium",
+    "question": "Light travels at 2.0\u00d710^8 m/s in a transparent material. What is the refractive index of the material? Take c=3.0\u00d710^8 m/s.",
+    "options": [
       "2.0",
+      "1.2",
+      "1.33",
       "1.5"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "n=c/v=(3.0\u00d710\u2078)/(2.0\u00d710\u2078)=1.5.",
+    "explanation": "Refractive index n=c/v=(3.0\u00d710^8)/(2.0\u00d710^8)=1.5.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-011",
-    "section": "Physics",
-    "topic": "Refraction of Light at Plane Surfaces",
-    "difficulty": "medium",
-    "question": "A coin at the bottom of a water tank appears raised when viewed from above because light from the coin",
-    "options": [
-      "bends away from the normal on entering air",
-      "is reflected only at the water surface",
-      "bends toward the normal on entering air",
-      "travels faster in water than in air"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Light goes from denser water to rarer air and bends away from the normal. The backward extensions of refracted rays meet at a shallower apparent position.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-012",
-    "section": "Physics",
-    "topic": "Refraction of Light at Plane Surfaces",
-    "difficulty": "medium",
-    "question": "For a certain air-to-glass ray, sin i = 0.75 and sin r = 0.50. What is the refractive index of glass relative to air?",
-    "options": [
-      "0.67",
-      "1.50",
-      "1.25",
-      "2.00"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "By Snell's law for air to glass, n=sin i/sin r=0.75/0.50=1.50.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-013",
-    "section": "Physics",
-    "topic": "Refraction of Light at Curved Surfaces",
-    "difficulty": "easy",
-    "question": "Which lens always forms a virtual, erect and diminished image of a real object?",
-    "options": [
-      "Convex lens",
-      "Concave lens",
-      "Cylindrical lens",
-      "Bifocal lens"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "A concave lens diverges incident rays and for a real object always forms a virtual, erect and diminished image.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-014",
-    "section": "Physics",
-    "topic": "Refraction of Light at Curved Surfaces",
-    "difficulty": "medium",
-    "question": "A convex lens has focal length 20 cm. What is its power?",
-    "options": [
-      "+2 D",
-      "\u22125 D",
-      "\u22122 D",
-      "+5 D"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "f=0.20 m. Power P=1/f=+5 dioptres for a convex lens.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-015",
     "section": "Physics",
-    "topic": "Refraction of Light at Curved Surfaces",
+    "topic": "Refraction",
     "difficulty": "medium",
-    "question": "An object is placed at 2F in front of a convex lens. The image is formed",
+    "question": "A ray passes from air into glass. Its angle of incidence is 45\u00b0 and angle of refraction is 28\u00b0. Which statement is correct?",
     "options": [
-      "at F, diminished",
-      "beyond 2F, enlarged",
-      "at 2F, same size and inverted",
-      "on the same side, virtual and enlarged"
+      "The ray bends toward the normal",
+      "Its speed increases in glass",
+      "Its frequency decreases in glass",
+      "The ray bends away from the normal"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "For an object at 2F, a convex lens forms a real inverted image at 2F of the same size.",
+    "explanation": "Since the refracted angle is smaller than the incident angle, the ray bends toward the normal on entering the optically denser glass.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-016",
     "section": "Physics",
-    "topic": "Refraction of Light at Curved Surfaces",
+    "topic": "Lenses",
     "difficulty": "medium",
-    "question": "A convex lens forms a real image 30 cm from the lens for an object 60 cm away. What is the focal length?",
+    "question": "A convex lens forms a real image on a screen 36 cm from the lens. The image is three times the height of the object. What is the focal length of the lens?",
     "options": [
-      "20 cm",
-      "15 cm",
-      "30 cm",
-      "90 cm"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Using 1/f=1/v\u22121/u with v=+30 cm and u=\u221260 cm: 1/f=1/30+1/60=1/20, so f=20 cm.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-017",
-    "section": "Physics",
-    "topic": "Refraction of Light at Curved Surfaces",
-    "difficulty": "hard",
-    "question": "An object 24 cm from a convex lens forms a sharp real image 48 cm from the lens. If the object is 1.5 cm tall, what is the magnitude of the image height?",
-    "options": [
-      "1.5 cm",
-      "2.0 cm",
-      "4.5 cm",
-      "3.0 cm"
+      "6 cm",
+      "12 cm",
+      "18 cm",
+      "9 cm"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The magnitude of linear magnification is |m|=v/|u|=48/24=2. Therefore the image height magnitude is 2\u00d71.5=3.0 cm.",
+    "explanation": "For a real inverted image, |m|=v/|u|=3. With v=36 cm, |u|=12 cm, so u=\u221212 cm. Using 1/f=1/v\u22121/u gives 1/f=1/36+1/12=1/9. Hence f=9 cm.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-017",
+    "section": "Physics",
+    "topic": "Lenses",
+    "difficulty": "medium",
+    "question": "Two thin lenses of powers +2.0 D and \u22120.5 D are placed in contact. What is the focal length and nature of the combination?",
+    "options": [
+      "50 cm, convex",
+      "66.7 cm, concave",
+      "200 cm, convex",
+      "about 66.7 cm, convex"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "Ptotal=+2.0\u22120.5=+1.5 D. Thus f=1/P=1/1.5 m=0.667 m\u224866.7 cm. Positive power means the combination is converging, so it behaves as a convex lens.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-018",
     "section": "Physics",
-    "topic": "Human Eye and Colourful World",
+    "topic": "Human Eye",
     "difficulty": "easy",
-    "question": "A student can see nearby objects clearly but distant objects appear blurred. The defect is most likely",
+    "question": "A student can see nearby text clearly but distant objects appear blurred. Which optical correction is appropriate?",
     "options": [
-      "hypermetropia",
-      "myopia",
-      "presbyopia",
-      "colour blindness"
-    ],
-    "correctIndex": 1,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Myopia is short-sightedness: nearby objects are clear but distant objects are not focused on the retina.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-019",
-    "section": "Physics",
-    "topic": "Human Eye and Colourful World",
-    "difficulty": "medium",
-    "question": "Which optical effect mainly explains the blue colour of the clear daytime sky?",
-    "options": [
-      "Preferential scattering of shorter wavelengths",
-      "Dispersion by raindrops",
-      "Total internal reflection",
-      "Refraction by atmospheric layers"
+      "Concave lens",
+      "Cylindrical mirror",
+      "Plane glass plate",
+      "Convex lens"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Air molecules scatter shorter visible wavelengths much more strongly than longer wavelengths, making the sky appear blue.",
+    "explanation": "This is myopia. A concave lens diverges incoming rays so that distant objects are focused on the retina.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
-    "id": "tg-polycet-2026-ph-020",
+    "id": "tg-polycet-2026-ph-019",
     "section": "Physics",
-    "topic": "Human Eye and Colourful World",
-    "difficulty": "medium",
-    "question": "White light passes through a prism and spreads into colours because different colours",
+    "topic": "Human Eye",
+    "difficulty": "easy",
+    "question": "A student's spectacles have negative power. Without the spectacles, nearby print is clear but writing on a distant board is blurred. Which combination is consistent with this observation?",
     "options": [
-      "have different frequencies in air only",
-      "are reflected by different prism faces",
-      "have different refractive indices in the prism",
-      "travel with the same speed in the prism"
+      "Hypermetropia corrected by a concave lens",
+      "Myopia corrected by a convex lens",
+      "Myopia corrected by a concave lens",
+      "Normal vision corrected by a plane glass plate"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The refractive index of the prism depends on wavelength, so different colours are refracted by different amounts and separate.",
+    "explanation": "Negative-power spectacles are concave lenses. Clear near vision with blurred distant vision indicates myopia, which is corrected using a concave lens.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-020",
+    "section": "Physics",
+    "topic": "Optics",
+    "difficulty": "medium",
+    "question": "A convex lens forms a real image twice the object's height on a screen 50 cm from the lens. What is the object distance from the lens?",
+    "options": [
+      "30 cm",
+      "20 cm",
+      "25 cm",
+      "40 cm"
+    ],
+    "correctIndex": 2,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "The magnification magnitude is |v/u|=2. With v=50 cm, u=50/2=25 cm.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
     }
   },
   {
@@ -486,119 +486,119 @@ export const TG_POLYCET_2026_PHYSICS_1: Question[] = [
     "section": "Physics",
     "topic": "Electric Current",
     "difficulty": "easy",
-    "question": "A current of 2 A flows through a conductor for 5 minutes. How much charge passes through it?",
+    "question": "At constant temperature, a conductor carries 0.24 A when connected across 6 V. What current will it carry when connected across 9 V?",
     "options": [
-      "600 C",
-      "120 C",
-      "300 C",
-      "10 C"
-    ],
-    "correctIndex": 0,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "Using Q=It with t=5\u00d760=300 s, Q=2\u00d7300=600 C.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-022",
-    "section": "Physics",
-    "topic": "Electric Current",
-    "difficulty": "easy",
-    "question": "A 12 V battery is connected across a 6 \u03a9 resistor. What current flows?",
-    "options": [
-      "0.5 A",
-      "6 A",
-      "2 A",
-      "72 A"
+      "0.16 A",
+      "0.24 A",
+      "0.36 A",
+      "0.54 A"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "By Ohm's law, I=V/R=12/6=2 A.",
+    "explanation": "At constant temperature the resistance is unchanged. R=V/I=6/0.24=25 \u03a9. At 9 V, I=V/R=9/25=0.36 A.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-022",
+    "section": "Physics",
+    "topic": "Ohm's Law",
+    "difficulty": "medium",
+    "question": "A resistor carries 0.8 A when 12 V is applied. What current will flow if the voltage is reduced to 9 V and the resistance remains constant?",
+    "options": [
+      "0.8 A",
+      "0.6 A",
+      "0.4 A",
+      "1.2 A"
+    ],
+    "correctIndex": 1,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "R=12/0.8=15 \u03a9. At 9 V, I=V/R=9/15=0.6 A.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-023",
     "section": "Physics",
-    "topic": "Electric Current",
-    "difficulty": "easy",
-    "question": "Two resistors 4 \u03a9 and 6 \u03a9 are connected in series. What is their equivalent resistance?",
+    "topic": "Resistor Networks",
+    "difficulty": "medium",
+    "question": "A 10 \u03a9 resistor and a 15 \u03a9 resistor are connected in parallel. This combination is connected in series with a 4 \u03a9 resistor across a 20 V supply. What total current is drawn?",
     "options": [
-      "2.4 \u03a9",
-      "10 \u03a9",
-      "5 \u03a9",
-      "24 \u03a9"
+      "4 A",
+      "2 A",
+      "2.5 A",
+      "1 A"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Series resistances add directly: 4+6=10 \u03a9.",
+    "explanation": "The parallel resistance is (10\u00d715)/(10+15)=6 \u03a9. With the 4 \u03a9 series resistor, total resistance=10 \u03a9. Current=20/10=2 A.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-024",
     "section": "Physics",
-    "topic": "Electric Current",
+    "topic": "Electrical Power",
     "difficulty": "medium",
-    "question": "Two 6 \u03a9 resistors are connected in parallel. What is the equivalent resistance?",
+    "question": "An electric heater rated 1000 W is used for 12 minutes. How much electrical energy does it consume?",
     "options": [
-      "36 \u03a9",
-      "6 \u03a9",
-      "12 \u03a9",
-      "3 \u03a9"
-    ],
-    "correctIndex": 3,
-    "answerType": "mcq",
-    "marks": 1,
-    "negativeMarking": 0,
-    "explanation": "For equal resistors R in parallel, equivalent resistance is R/2=3 \u03a9.",
-    "source": {
-      "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
-      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
-    }
-  },
-  {
-    "id": "tg-polycet-2026-ph-025",
-    "section": "Physics",
-    "topic": "Electric Current",
-    "difficulty": "medium",
-    "question": "An electric heater rated 1000 W operates for 30 minutes. How much electrical energy does it use?",
-    "options": [
-      "0.25 kWh",
-      "0.5 kWh",
-      "1.0 kWh",
-      "30 kWh"
+      "1.2 kWh",
+      "0.2 kWh",
+      "0.1 kWh",
+      "0.5 kWh"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Energy=P\u00d7t=1 kW\u00d70.5 h=0.5 kWh.",
+    "explanation": "12 minutes=0.2 hour. Energy=P\u00d7t=1 kW\u00d70.2 h=0.2 kWh.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
+    }
+  },
+  {
+    "id": "tg-polycet-2026-ph-025",
+    "section": "Physics",
+    "topic": "Joule Heating",
+    "difficulty": "medium",
+    "question": "Two resistors 4 \u03a9 and 8 \u03a9 carry the same current for the same time. What is the ratio of heat produced in them, H4:H8?",
+    "options": [
+      "4:1",
+      "1:4",
+      "2:1",
+      "1:2"
+    ],
+    "correctIndex": 3,
+    "answerType": "mcq",
+    "marks": 1,
+    "negativeMarking": 0,
+    "explanation": "For the same current and time, H=I\u00b2Rt, so heat is proportional to resistance. Thus H4:H8=4:8=1:2.",
+    "source": {
+      "kind": "original",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
+      "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
+      "checkedOn": "2026-08-30"
     }
   },
   {
@@ -606,47 +606,47 @@ export const TG_POLYCET_2026_PHYSICS_1: Question[] = [
     "section": "Physics",
     "topic": "Electric Current",
     "difficulty": "hard",
-    "question": "A 12 \u03a9 resistor and a 6 \u03a9 resistor are connected in parallel across 12 V. What is the total current drawn from the source?",
+    "question": "A 12 V battery is connected to two parallel branches: one branch has 6 \u03a9 and the other has 12 \u03a9. What is the total current supplied by the battery?",
     "options": [
       "3 A",
+      "4 A",
       "2 A",
-      "1 A",
-      "4 A"
+      "1 A"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The branch currents are 12/12=1 A and 12/6=2 A. Total current=1+2=3 A.",
+    "explanation": "Equivalent resistance is (6\u00d712)/(6+12)=4 \u03a9. Total current=12/4=3 A.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-027",
     "section": "Physics",
-    "topic": "Electromagnetism",
+    "topic": "Magnetic Effects of Current",
     "difficulty": "easy",
-    "question": "The magnetic field lines around a long straight current-carrying conductor are",
+    "question": "If the direction of current in a straight conductor is reversed, what happens to the magnetic field around it?",
     "options": [
-      "parallel straight lines",
-      "ellipses with the wire at a focus",
-      "radial lines",
-      "concentric circles"
+      "Its strength becomes zero for all distances",
+      "It disappears permanently",
+      "Its direction is unchanged",
+      "Its direction reverses"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Around a straight current-carrying wire, magnetic field lines form concentric circles centred on the wire.",
+    "explanation": "The right-hand thumb rule shows that reversing current reverses the circular magnetic-field direction.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
@@ -654,71 +654,71 @@ export const TG_POLYCET_2026_PHYSICS_1: Question[] = [
     "section": "Physics",
     "topic": "Electromagnetism",
     "difficulty": "medium",
-    "question": "Which change increases the magnetic field inside a current-carrying solenoid?",
+    "question": "Which change will increase the strength of an electromagnet made from a coil around a soft-iron core?",
     "options": [
-      "Reducing the number of turns per unit length",
-      "Reducing the current",
-      "Increasing the current",
-      "Removing all current while keeping the coil"
+      "Use a wooden core",
+      "Decrease the current",
+      "Increase the number of turns",
+      "Remove the iron core"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The solenoid field is proportional to current and turns per unit length, so increasing current strengthens the field.",
+    "explanation": "Electromagnet strength increases with current and with the number of coil turns; a soft-iron core also enhances the field.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-029",
     "section": "Physics",
-    "topic": "Electromagnetism",
+    "topic": "Electromagnetic Induction",
     "difficulty": "medium",
-    "question": "An electric motor works mainly because a current-carrying conductor placed in a magnetic field",
+    "question": "A bar magnet is moved quickly into a coil connected to a galvanometer. If the same magnet is moved more slowly along the same path, what happens to the induced current?",
     "options": [
-      "becomes electrically neutral",
-      "loses all resistance",
-      "experiences a force",
-      "produces only heat"
+      "It stays exactly the same",
+      "It becomes smaller",
+      "It becomes larger",
+      "It reverses direction only because the speed changed"
     ],
-    "correctIndex": 2,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "A magnetic field exerts a force on a current-carrying conductor; a motor uses this force to produce rotation.",
+    "explanation": "Slower motion produces a smaller rate of change of magnetic flux, so the induced emf and current are smaller.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   },
   {
     "id": "tg-polycet-2026-ph-030",
     "section": "Physics",
-    "topic": "Electromagnetism",
-    "difficulty": "hard",
-    "question": "A bar magnet is pushed rapidly into a coil connected to a galvanometer. Compared with pushing it slowly, the galvanometer deflection is larger because",
+    "topic": "Electric Motor",
+    "difficulty": "medium",
+    "question": "In a simple DC motor, what is the main function of the split-ring commutator?",
     "options": [
-      "the coil's resistance becomes zero",
-      "the number of coil turns decreases",
-      "the magnet gains electric charge",
-      "the magnetic flux changes more rapidly"
+      "To reduce the coil resistance",
+      "To reverse current in the coil every half-turn",
+      "To create the permanent magnetic field",
+      "To increase battery voltage"
     ],
-    "correctIndex": 3,
+    "correctIndex": 1,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Faraday's law says induced emf is proportional to the rate of change of magnetic flux. Faster motion produces a larger rate of change and hence larger deflection.",
+    "explanation": "The split ring reverses the current direction in the rotating coil each half-turn, keeping the torque in the same rotational sense.",
     "source": {
       "kind": "original",
-      "reference": "TG POLYCET 2026 official instruction booklet and SSC 2025-26 syllabus",
+      "reference": "TG POLYCET 2026 official SBTET Telangana instruction booklet \u2014 Engineering MPC scope",
       "url": "https://sbtet.telangana.gov.in/downloads/Circular/Instruction%20booklet.pdf",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-30"
     }
   }
 ];
