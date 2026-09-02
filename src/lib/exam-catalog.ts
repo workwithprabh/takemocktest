@@ -185,6 +185,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('Jharkhand PECE', 'State', 'jharkhand-pece'),
           exam('TG ECET', 'State', 'tg-ecet'),
           exam('TG POLYCET', 'State', 'tg-polycet'),
+          exam('CG PPT', 'State', 'cg-ppt'),
         ],
       },
       {
@@ -303,7 +304,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         exams: [
           exam('JIPMAT', 'National', 'jipmat'),
           exam('IPMAT Indore', 'Institute'),
-          exam('IPMAT Rohtak', 'Institute'),
+          exam('IPMAT Rohtak', 'Institute', 'ipmat-rohtak'),
         ],
       },
     ],
@@ -324,7 +325,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'University admissions',
         exams: [
-          exam('CUET UG', 'National'),
+          exam('CUET UG', 'National', 'cuet-ug'),
           exam('CUET PG', 'National'),
           exam('ICAR AIEEA PG', 'National'),
           exam('JAM', 'National'),
@@ -428,7 +429,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Eligibility & research',
         exams: [
-          exam('CTET', 'National'),
+          exam('CTET', 'National', 'ctet'),
           exam('UGC NET', 'National'),
           exam('CSIR UGC NET', 'National'),
           exam('State Eligibility Test / SLET', 'State'),
@@ -516,7 +517,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Hospitality',
         exams: [
-          exam('NCHM JEE', 'National'),
+          exam('NCHM JEE', 'National', 'nchm-jee'),
         ],
       },
     ],
