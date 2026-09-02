@@ -45,16 +45,34 @@ export default function ResultsClient({ country }: { country: string }) {
     (acc[a.examSlug] ??= []).push(a);
     return acc;
   }, {});
+  const totalAttempted = attempts.reduce((total, attempt) => total + Math.max(0, attempt.totalQuestions - attempt.unattempted), 0);
+  const totalCorrect = attempts.reduce((total, attempt) => total + attempt.correct, 0);
+  const overallAccuracy = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0;
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-10 sm:py-14">
-      <div className="mb-10 border-b border-ink-200 pb-6">
+      <div className="mb-6 border-b border-ink-200 pb-6">
         <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">Your practice history</p>
         <h1 className="text-3xl font-bold text-ink-900 sm:text-4xl">My Results</h1>
         <p className="mt-3 text-sm text-ink-700">
           {attempts.length} attempt{attempts.length === 1 ? '' : 's'} stored privately on this device.
         </p>
       </div>
+
+      <dl className="mb-10 grid border border-ink-200 bg-white sm:grid-cols-3">
+        <div className="border-b border-ink-200 p-4 sm:border-b-0 sm:border-r">
+          <dt className="text-xs text-ink-500">Completed attempts</dt>
+          <dd className="mt-1 font-mono text-2xl font-bold text-ink-900">{attempts.length}</dd>
+        </div>
+        <div className="border-b border-ink-200 p-4 sm:border-b-0 sm:border-r">
+          <dt className="text-xs text-ink-500">Exams practised</dt>
+          <dd className="mt-1 font-mono text-2xl font-bold text-ink-900">{Object.keys(grouped).length}</dd>
+        </div>
+        <div className="p-4">
+          <dt className="text-xs text-ink-500">Overall accuracy</dt>
+          <dd className="mt-1 font-mono text-2xl font-bold text-ink-900">{overallAccuracy}%</dd>
+        </div>
+      </dl>
 
       {Object.entries(grouped).map(([examSlug, examAttempts]) => (
         <section key={examSlug} className="mb-10" aria-labelledby={`results-${examSlug}`}>
@@ -65,21 +83,28 @@ export default function ResultsClient({ country }: { country: string }) {
           <div className="space-y-3">
             {examAttempts.map((a) => {
               const isOpen = expandedId === a.id;
+              const attempted = Math.max(0, a.totalQuestions - a.unattempted);
+              const accuracy = attempted > 0 ? Math.round((a.correct / attempted) * 100) : 0;
               return (
                 <div key={a.id} className="bg-white border border-ink-200">
                   <button
                     onClick={() => setExpandedId(isOpen ? null : a.id)}
-                    className="flex min-h-20 w-full items-center justify-between gap-4 p-4 text-left transition hover:bg-ink-50 sm:p-5"
+                    className="grid min-h-20 w-full grid-cols-[1fr_auto] items-center gap-4 p-4 text-left transition hover:bg-ink-50 sm:grid-cols-[minmax(0,1fr)_auto_auto] sm:p-5"
                     aria-expanded={isOpen}
+                    aria-controls={`attempt-${a.id}`}
                   >
                     <div>
                       <div className="font-semibold text-sm text-ink-900">{a.testName}</div>
-                      <div className="mt-1 text-xs text-ink-600">{new Date(a.submittedAt).toLocaleDateString()}</div>
+                      <div className="mt-1 text-xs text-ink-600">
+                        {new Date(a.submittedAt).toLocaleDateString()} · {attempted}/{a.totalQuestions} attempted
+                      </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <span className="text-xs font-semibold px-2.5 py-1 bg-ink-100 text-ink-700">
-                        {a.score.toFixed(2)}/{a.maxScore}
-                      </span>
+                    <div className="hidden text-right sm:block">
+                      <div className="font-mono text-sm font-bold text-ink-900">{a.score.toFixed(2)}/{a.maxScore}</div>
+                      <div className="mt-1 text-xs text-ink-500">{accuracy}% accuracy</div>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs font-semibold text-action-700">
+                      <span className="hidden sm:inline">{isOpen ? 'Close' : 'View analysis'}</span>
                       <svg
                         width="16"
                         height="16"
@@ -94,8 +119,26 @@ export default function ResultsClient({ country }: { country: string }) {
                     </div>
                   </button>
                   {isOpen && (
-                    <div className="border-t border-ink-200 p-4">
-                      <ResultDetail attempt={a} />
+                    <div id={`attempt-${a.id}`} className="border-t border-ink-200 p-4 sm:p-6">
+                      <ResultDetail
+                        attempt={a}
+                        actions={
+                          <>
+                            <Link
+                              href={`/${country}/${a.examSlug}/test/${a.testId}/attempt`}
+                              className="bg-ink-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-ink-700"
+                            >
+                              Retake test
+                            </Link>
+                            <Link
+                              href={`/${country}/${a.examSlug}/mock-test`}
+                              className="border border-ink-200 px-4 py-2.5 text-sm font-semibold text-ink-900 transition hover:border-ink-900"
+                            >
+                              Choose another test
+                            </Link>
+                          </>
+                        }
+                      />
                     </div>
                   )}
                 </div>
@@ -104,6 +147,12 @@ export default function ResultsClient({ country }: { country: string }) {
           </div>
         </section>
       ))}
+
+      <div className="border-t border-ink-200 pt-6">
+        <Link href={`/${country}/exams`} className="text-sm font-semibold text-action-700 underline underline-offset-4 hover:text-action-800">
+          Browse all exams →
+        </Link>
+      </div>
     </div>
   );
 }

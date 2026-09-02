@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { AttemptResult, QuestionResult } from '@/lib/attempts';
 
+type ReviewFilter = 'all' | 'wrong' | 'unattempted' | 'correct' | 'partial';
+
 // Same 80%/50% tiering the "Strong" / "Review" performance badges below
 // already use (see performanceCue), so the ring's color and the topic
 // badges read as one consistent scale rather than two separate systems.
@@ -31,7 +33,7 @@ function ScoreRing({ percent }: { percent: number }) {
       role="img"
       aria-label={`Overall score ${Math.round(percent)} percent`}
     >
-      <title>Overall score: {Math.round(percent)}%</title>
+      <title>{`Overall score: ${Math.round(percent)}%`}</title>
       <circle cx={size / 2} cy={size / 2} r={radius} stroke="#E7E9F0" strokeWidth={stroke} fill="none" />
       <circle
         cx={size / 2}
@@ -85,6 +87,12 @@ function isCorrectQuestion(question: QuestionResult) {
     return selected.length === correct.length && selected.every((index, i) => index === correct[i]);
   }
   return question.selectedIndex === question.correctIndex;
+}
+
+function questionOutcome(question: QuestionResult): Exclude<ReviewFilter, 'all'> {
+  if (question.selectedIndex === null || question.outcome === 'unattempted') return 'unattempted';
+  if (question.outcome === 'partial') return 'partial';
+  return isCorrectQuestion(question) ? 'correct' : 'wrong';
 }
 
 function QuestionIssueActions({
@@ -154,9 +162,24 @@ function QuestionIssueActions({
 }
 
 export default function ResultDetail({ attempt, actions }: { attempt: AttemptResult; actions?: React.ReactNode }) {
+  const [reviewFilter, setReviewFilter] = useState<ReviewFilter>('all');
   const percent = attempt.maxScore > 0
     ? Math.max(0, Math.min(100, (attempt.score / attempt.maxScore) * 100))
     : 0;
+  const attempted = Math.max(0, attempt.totalQuestions - attempt.unattempted);
+  const accuracy = attempted > 0 ? Math.round((attempt.correct / attempted) * 100) : 0;
+  const attemptRate = attempt.totalQuestions > 0 ? Math.round((attempted / attempt.totalQuestions) * 100) : 0;
+  const questionsWithIndex = attempt.questions.map((question, index) => ({ question, index }));
+  const filteredQuestions = reviewFilter === 'all'
+    ? questionsWithIndex
+    : questionsWithIndex.filter(({ question }) => questionOutcome(question) === reviewFilter);
+  const reviewFilters: Array<{ value: ReviewFilter; label: string; count: number }> = [
+    { value: 'all', label: 'All', count: attempt.totalQuestions },
+    { value: 'wrong', label: 'Incorrect', count: attempt.wrong },
+    { value: 'unattempted', label: 'Unattempted', count: attempt.unattempted },
+    { value: 'correct', label: 'Correct', count: attempt.correct },
+    ...(attempt.partial ? [{ value: 'partial' as const, label: 'Partial', count: attempt.partial }] : []),
+  ];
 
   const sections = Array.from(new Set(attempt.questions.map((q) => q.section)));
   const sectionStats = sections.map((section) => {
@@ -198,39 +221,62 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
   ).map(([, stat]) => stat);
 
   return (
-    <div>
-      <div className="mb-6 flex flex-col items-center gap-6 border border-ink-200 bg-white p-6 sm:flex-row sm:p-8">
-        <ScoreRing percent={percent} />
-        <div className={`flex-1 grid grid-cols-2 gap-4 w-full text-center sm:text-left ${attempt.partial ? 'sm:grid-cols-5' : 'sm:grid-cols-4'}`}>
-          <div>
-            <div className="text-xl font-mono font-bold text-correct">{attempt.correct}</div>
+    <div className="min-w-0">
+      <section className="mb-6 min-w-0 border border-ink-200 bg-white" aria-labelledby="result-overview-heading">
+        <div className="flex flex-col items-center gap-6 p-6 sm:flex-row sm:items-start sm:p-8">
+          <ScoreRing percent={percent} />
+          <div className="w-full flex-1">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Performance overview</p>
+            <h2 id="result-overview-heading" className="mt-2 flex flex-wrap items-baseline gap-x-1 text-2xl font-bold text-ink-900">
+              {attempt.score.toFixed(2)} <span className="text-base font-medium text-ink-500">/ {attempt.maxScore} marks</span>
+            </h2>
+            <dl className="mt-5 grid grid-cols-2 border-y border-ink-200 sm:grid-cols-3">
+              <div className="border-r border-ink-200 py-3 pr-3">
+                <dt className="text-xs text-ink-500">Accuracy</dt>
+                <dd className="mt-1 font-mono text-lg font-bold text-ink-900">{accuracy}%</dd>
+              </div>
+              <div className="py-3 pl-3 sm:border-r sm:border-ink-200 sm:px-3">
+                <dt className="text-xs text-ink-500">Attempted</dt>
+                <dd className="mt-1 font-mono text-lg font-bold text-ink-900">{attemptRate}%</dd>
+              </div>
+              <div className="col-span-2 border-t border-ink-200 py-3 sm:col-span-1 sm:border-t-0 sm:pl-3">
+                <dt className="text-xs text-ink-500">Time taken</dt>
+                <dd className="mt-1 font-mono text-lg font-bold text-ink-900">{formatTime(attempt.timeTakenSec)}</dd>
+              </div>
+            </dl>
+            <p className="mt-3 text-xs text-ink-500">Accuracy is based on fully correct answers among attempted questions.</p>
+          </div>
+        </div>
+        <div className={`grid border-t border-ink-200 bg-ink-50 ${attempt.partial ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'}`}>
+          <div className="border-r border-ink-200 p-4 text-center">
+            <div className="font-mono text-xl font-bold text-correct">{attempt.correct}</div>
             <div className="text-xs text-ink-500">Correct</div>
           </div>
           {Boolean(attempt.partial) && (
-            <div>
+            <div className="border-r border-ink-200 p-4 text-center">
               <div className="text-xl font-mono font-bold text-ink-600">{attempt.partial}</div>
               <div className="text-xs text-ink-500">Partial</div>
             </div>
           )}
-          <div>
+          <div className="border-r border-ink-200 p-4 text-center">
             <div className="text-xl font-mono font-bold text-incorrect">{attempt.wrong}</div>
-            <div className="text-xs text-ink-500">Wrong</div>
+            <div className="text-xs text-ink-500">Incorrect</div>
           </div>
-          <div>
+          <div className="p-4 text-center">
             <div className="text-xl font-mono font-bold text-ink-400">{attempt.unattempted}</div>
             <div className="text-xs text-ink-500">Unattempted</div>
           </div>
-          <div>
-            <div className="text-xl font-mono font-bold text-ink-900">{attempt.score.toFixed(2)}</div>
-            <div className="text-xs text-ink-500">Score / {attempt.maxScore}</div>
-          </div>
         </div>
+      </section>
+
+      <div className="mb-8 flex flex-wrap items-center justify-between gap-3 border-b border-ink-200 pb-5 text-xs text-ink-600">
+        <span>Submitted {new Date(attempt.submittedAt).toLocaleString()}</span>
+        <a href="#answer-review" className="font-semibold text-action-700 underline underline-offset-4 hover:text-action-800">
+          Review answers ↓
+        </a>
       </div>
 
-      <div className="mb-8 flex flex-wrap items-center justify-between gap-2 border-b border-ink-200 pb-5 text-xs text-ink-600">
-        <span>Time taken: {formatTime(attempt.timeTakenSec)}</span>
-        <span>Submitted {new Date(attempt.submittedAt).toLocaleString()}</span>
-      </div>
+      {actions && <div className="mb-8 flex flex-wrap gap-3">{actions}</div>}
 
       <h2 className="mb-4 text-xl font-bold text-ink-900">Section-wise performance</h2>
       <div className="mb-10 grid gap-3 sm:grid-cols-2">
@@ -240,9 +286,9 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
             : s.total > 0 ? (s.correct / s.total) * 100 : 0;
           return (
             <div key={s.section} className="border border-ink-200 bg-white p-4">
-              <div className="flex justify-between text-xs mb-1">
+              <div className="mb-1 flex min-w-0 flex-col gap-1 text-xs sm:flex-row sm:items-start sm:justify-between">
                 <span className="font-medium text-ink-900">{s.section}</span>
-                <span className="text-ink-500">
+                <span className="text-ink-500 sm:text-right">
                   {s.hasMarkData
                     ? `${s.score.toFixed(2)}/${s.maxScore.toFixed(2)} marks · ${s.correct}/${s.total} correct`
                     : `${s.correct}/${s.total}`}
@@ -315,23 +361,40 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
         </div>
       </details>
 
-      {actions && <div className="flex flex-wrap gap-3 mb-8">{actions}</div>}
-
+      <section id="answer-review" className="scroll-mt-24" aria-labelledby="answer-review-heading">
       <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h2 className="text-xl font-bold text-ink-900">Answer review</h2>
+          <h2 id="answer-review-heading" className="text-xl font-bold text-ink-900">Answer review</h2>
           <p className="mt-1 text-xs text-ink-600">Open any question to see the correct answer, explanation, and source.</p>
         </div>
-        <span className="text-xs font-semibold text-ink-700">{attempt.totalQuestions} questions</span>
+        <span className="text-xs font-semibold text-ink-700">Showing {filteredQuestions.length} of {attempt.totalQuestions}</span>
+      </div>
+      <div className="mb-4 flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Filter answer review">
+        {reviewFilters.map((filter) => (
+          <button
+            key={filter.value}
+            type="button"
+            onClick={() => setReviewFilter(filter.value)}
+            aria-pressed={reviewFilter === filter.value}
+            className={`flex-none border px-3 py-2 text-xs font-semibold transition ${
+              reviewFilter === filter.value
+                ? 'border-ink-900 bg-ink-900 text-white'
+                : 'border-ink-200 bg-white text-ink-700 hover:border-ink-900 hover:text-ink-900'
+            }`}
+          >
+            {filter.label} <span className="font-mono">{filter.count}</span>
+          </button>
+        ))}
       </div>
       <div className="space-y-3">
-        {attempt.questions.map((q, i) => {
-          const isCorrect = isCorrectQuestion(q);
-          const isUnattempted = q.selectedIndex === null;
-          const isPartial = q.outcome === 'partial';
+        {filteredQuestions.map(({ question: q, index: i }) => {
+          const outcome = questionOutcome(q);
+          const isCorrect = outcome === 'correct';
+          const isUnattempted = outcome === 'unattempted';
+          const isPartial = outcome === 'partial';
           return (
             <details
-              key={i}
+              key={q.id ?? i}
               className={`group border-[1.5px] ${
                 isUnattempted ? 'border-ink-200 bg-white' : isCorrect ? 'border-correct/40 bg-correct/5' : isPartial ? 'border-ink-400 bg-ink-100' : 'border-incorrect/40 bg-incorrect/5'
               }`}
@@ -421,7 +484,13 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
             </details>
           );
         })}
+        {filteredQuestions.length === 0 && (
+          <div className="border border-dashed border-ink-300 bg-ink-50 p-6 text-center text-sm text-ink-600">
+            No questions match this filter.
+          </div>
+        )}
       </div>
+      </section>
     </div>
   );
 }
