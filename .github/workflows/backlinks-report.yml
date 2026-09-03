@@ -1,0 +1,78 @@
+name: Backlinks weekly report
+
+# Snapshots Moz and Bing Webmaster link data into BACKLINKS-REPORT.md and
+# commits it, matching the pattern gsc-report.yml already uses for Search
+# Console: an ordinary git diff week over week, no dashboard, no external
+# storage. Runs from GitHub because the coding-agent sandbox that ships most
+# changes to this repo has no way to hold these keys across sessions (kept
+# out of git on purpose).
+#
+# Either or both secrets can be set — the job runs whichever source is
+# configured and notes the other as skipped, rather than failing outright.
+
+on:
+  schedule:
+    - cron: '0 7 * * 1' # Monday 07:00 UTC, an hour after the GSC report
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate report
+        env:
+          MOZ_ACCESS_ID: ${{ secrets.MOZ_ACCESS_ID }}
+          MOZ_SECRET_KEY: ${{ secrets.MOZ_SECRET_KEY }}
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+        run: |
+          {
+            echo "# Backlinks report — takemocktest.com"
+            echo
+            echo "Generated $(date -u '+%Y-%m-%d %H:%M UTC') by \`.github/workflows/backlinks-report.yml\`."
+            echo
+
+            echo "## Moz — Domain Authority / linking-domain metrics"
+            echo
+            if [ -n "$MOZ_ACCESS_ID" ] && [ -n "$MOZ_SECRET_KEY" ]; then
+              echo '```json'
+              python3 scripts/moz_api.py metrics 2>&1
+              echo '```'
+            else
+              echo "_MOZ_ACCESS_ID / MOZ_SECRET_KEY not set — see scripts/moz_api.py for free-tier setup. Skipped._"
+            fi
+            echo
+
+            echo "## Bing Webmaster — link counts"
+            echo
+            if [ -n "$BING_API_KEY" ]; then
+              echo '```'
+              python3 scripts/bing_webmaster.py link-counts 2>&1
+              echo '```'
+            else
+              echo "_BING_API_KEY not set — see scripts/bing_webmaster.py for free setup. Skipped._"
+            fi
+          } > BACKLINKS-REPORT.md
+
+      - name: Commit report if changed
+        run: |
+          if ! git diff --quiet -- BACKLINKS-REPORT.md; then
+            git config user.name 'TakeMockTest Coding Agent'
+            git config user.email 'actions@users.noreply.github.com'
+            git add BACKLINKS-REPORT.md
+            git commit -m 'Update backlinks report'
+            git push origin HEAD:main
+          else
+            echo "No change in report — skipping commit."
+          fi
