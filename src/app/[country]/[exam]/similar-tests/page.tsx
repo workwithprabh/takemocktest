@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam || getSharedTests(exam).length === 0) return {};
   return pageMetadata({
     title: `Similar Tests to ${exam.shortName ?? exam.name}, Extra Reasoning Practice`,
-    description: `Additional Reasoning Ability practice tests for ${exam.name}, sourced from exams that share its exact scoring pattern, scored using ${exam.name}'s own marking scheme.`,
+    description: `Additional Reasoning Ability practice tests for ${exam.name}, drawn from exams that share its scoring pattern and marking scheme.`,
     path: `/in/${exam.slug}/similar-tests`,
   });
 }
