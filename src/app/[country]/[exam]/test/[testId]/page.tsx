@@ -23,6 +23,7 @@ export async function generateMetadata({
   const configuredTest = getTestConfig(exam, testId);
   const testName = configuredTest?.test.name ?? testIdToName(testId);
   const isFullMock = configuredTest?.test.kind === 'full-length';
+  const isSectional = configuredTest?.test.kind === 'sectional';
   const cycle = configuredTest?.stage.pattern.cycle ?? new Date().getFullYear();
   const questionCount = getQuestionsForTest(examSlug, testId).length;
   const conciseTestName = testName.replace(' Objective Full Mock Test', ' Mock Test');
@@ -32,7 +33,9 @@ export async function generateMetadata({
       : `${exam.name} ${testName}: Instructions`,
     description: isFullMock
       ? `Attempt ${exam.name} ${testName}: ${questionCount} questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.`
-      : `Review the timing, question count, and negative-marking instructions for ${exam.name} ${testName}.`,
+      : isSectional
+        ? `Practice ${configuredTest.test.section} for ${exam.name} with ${questionCount} original, topic-tagged questions, instant scoring, and answer explanations.`
+        : `Review the timing, question count, and negative-marking instructions for ${exam.name} ${testName}.`,
     path: `/${country}/${exam.slug}/test/${testId}`,
     noIndex: !isFullMock,
   });
@@ -2006,8 +2009,25 @@ export default async function TestInstructionsPage({
   const coveredSections = [...new Set(questions.map((question) => question.section))];
   const { stage, test } = configuredTest;
   const isFullMock = test.kind === 'full-length';
-  const hasQuizSchema = isFullMock || test.kind === 'quick' || test.kind === 'topic' || test.kind === 'difficulty';
+  const isSectional = test.kind === 'sectional';
+  const hasQuizSchema = isFullMock || isSectional || test.kind === 'quick' || test.kind === 'topic' || test.kind === 'difficulty';
   const fullMockFaqs = isFullMock ? FULL_MOCK_FAQS[`${exam.slug}/${stage.id}`] : undefined;
+  // Sectional test pages get no hand-written FAQ/description copy (there are
+  // hundreds of them), so their "unique content" comes entirely from the
+  // question bank's own topic/difficulty tags — every question has both,
+  // enforced by qa:questions — rather than anything authored per page.
+  const topicCounts = isSectional
+    ? [...questions.reduce((map, question) => {
+        if (question.topic) map.set(question.topic, (map.get(question.topic) ?? 0) + 1);
+        return map;
+      }, new Map<string, number>())].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    : [];
+  const difficultyParts = isSectional
+    ? (['easy', 'medium', 'hard'] as const)
+        .map((level) => [level, questions.filter((question) => question.difficulty === level).length] as const)
+        .filter(([, count]) => count > 0)
+        .map(([level, count]) => `${count} ${level}`)
+    : [];
   const usesQuestionLevelScoring = questions.some(
     (question) =>
       (question.marks !== undefined && question.marks !== test.marksPerCorrect) ||
@@ -2214,6 +2234,53 @@ export default async function TestInstructionsPage({
               </div>
             </section>
           )}
+        </div>
+      )}
+
+      {isSectional && (
+        <div className="mt-14 border-t border-ink-200 pt-10">
+          <section className="mb-10">
+            <h2 className="mb-3 text-xl font-bold text-ink-900">About this {exam.name} {test.section} sectional test</h2>
+            <p className="text-sm leading-7 text-ink-700">
+              This sectional test isolates {test.section} from the {exam.name} {stage.name} pattern, so you can
+              drill it on its own instead of only meeting it inside the full mock. It draws {questionCount} original
+              practice questions{topicCounts.length > 0 ? ` across ${topicCounts.length} ${topicCounts.length === 1 ? 'topic' : 'distinct topics'}` : ''}, syllabus-checked the same as our full mocks.
+            </p>
+          </section>
+
+          {topicCounts.length > 0 && (
+            <section className="mb-10">
+              <h2 className="mb-4 text-xl font-bold text-ink-900">Topics covered</h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {topicCounts.map(([topic, count]) => (
+                  <div key={topic} className="border border-ink-200 bg-white p-4">
+                    <h3 className="text-sm font-semibold text-ink-900">{topic}</h3>
+                    <p className="mt-1 text-xs leading-5 text-ink-700">{count} {count === 1 ? 'question' : 'questions'}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section className="mb-10">
+            <h2 className="mb-3 text-xl font-bold text-ink-900">Scoring and result analysis</h2>
+            <p className="text-sm leading-7 text-ink-700">
+              {usesQuestionLevelScoring
+                ? `Each question uses its assigned marks and penalty; together they total ${maxScore} marks.`
+                : `Correct answers earn ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'} and wrong answers deduct ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}.`}{' '}
+              Unattempted questions score zero.
+              {difficultyParts.length > 0 && ` This section's ${questionCount} questions are difficulty-tagged: ${difficultyParts.join(', ')}.`}
+              {' '}After submitting, you receive topic-wise accuracy, time spent, answer explanations, and source links.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3 text-sm">
+              <Link href={`/${country}/${exam.slug}/exam-pattern`} className="font-semibold text-ink-900 underline">
+                View the {exam.name} exam pattern
+              </Link>
+              <Link href={`/${country}/${exam.slug}/mock-test`} className="font-semibold text-ink-900 underline">
+                Browse all {exam.name} tests
+              </Link>
+            </div>
+          </section>
         </div>
       )}
     </div>
