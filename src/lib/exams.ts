@@ -146,6 +146,14 @@ export type TestStatus = 'checked' | 'demo';
 // model a 1-section-per-window timer; this covers exams (e.g. MHT CET, where
 // Physics and Chemistry share one 90-minute window before Mathematics gets
 // its own 90 minutes) where a window spans more than one section.
+// Sectional tests below this question count don't carry enough topic/
+// difficulty content (see TestInstructionsPage's isSectional block) to be
+// worth indexing even with that enrichment — shared between the test page's
+// own noIndex logic and sitemap.ts's inclusion filter so the two can't drift
+// out of sync the way the sitemap's plain `kind === 'full-length'` filter
+// did when sectional pages were first made indexable.
+export const MIN_SECTIONAL_QUESTIONS_FOR_INDEX = 10;
+
 export interface TimingGroup {
   sections: string[];
   duration: number;

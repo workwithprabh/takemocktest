@@ -1,10 +1,11 @@
 import { MetadataRoute } from 'next';
-import { EXAM_LIST, COUNTRIES, getCheckedTestCount, getSharedTests } from '@/lib/exams';
+import { EXAM_LIST, COUNTRIES, getCheckedTestCount, getSharedTests, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
 import { EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { BLOG_POSTS } from '@/lib/blog';
 import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
 import { UPDATES } from '@/lib/updates';
+import { getQuestionsForTest } from '@/lib/questions';
 
 export const dynamic = 'force-static';
 
@@ -96,12 +97,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
         entries.push({ url: `${base}/${guide}`, changeFrequency: 'monthly', priority: 0.6 });
       }
       for (const test of exam.stages.flatMap((stage) => stage.tests)) {
-        if (test.kind === 'full-length' && test.status === 'checked') {
+        if (test.status !== 'checked') continue;
+        // Mirrors TestInstructionsPage's noIndex logic (page.tsx) exactly —
+        // full mocks always, sectional tests once they clear the same
+        // question-count floor. Keep these two in sync.
+        if (test.kind === 'full-length') {
           entries.push({
             url: `${base}/test/${test.id}`,
             lastModified: toLastModified(test.checkedOn),
             changeFrequency: 'monthly',
             priority: 0.8,
+          });
+        } else if (
+          test.kind === 'sectional' &&
+          getQuestionsForTest(exam.slug, test.id).length >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX
+        ) {
+          entries.push({
+            url: `${base}/test/${test.id}`,
+            lastModified: toLastModified(test.checkedOn),
+            changeFrequency: 'monthly',
+            priority: 0.6,
           });
         }
       }
