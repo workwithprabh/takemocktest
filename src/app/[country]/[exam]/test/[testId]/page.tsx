@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { EXAM_LIST, getExam, getAllTestSlugs, getTestConfig, testIdToName } from '@/lib/exams';
+import { EXAM_LIST, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
 import { getQuestionsForTest } from '@/lib/questions';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
@@ -37,7 +37,16 @@ export async function generateMetadata({
         ? `Practice ${configuredTest.test.section} for ${exam.name} with ${questionCount} original, topic-tagged questions, instant scoring, and answer explanations.`
         : `Review the timing, question count, and negative-marking instructions for ${exam.name} ${testName}.`,
     path: `/${country}/${exam.slug}/test/${testId}`,
-    noIndex: !isFullMock,
+    // Sectional tests earned their way into the index once they had real
+    // per-page content (topic breakdown, difficulty mix, FAQs — see the
+    // isSectional block below) instead of the boilerplate "Before you
+    // begin" checklist alone. A 10-question floor keeps the genuinely thin
+    // tail (2-9 question sectionals, ~8% of them) out — that few questions
+    // doesn't carry enough topic/difficulty content to be worth indexing
+    // even with the enrichment. Other non-full-mock kinds (quick/topic/
+    // difficulty/practice) haven't had the same content work done, so they
+    // stay noindexed until they do.
+    noIndex: !isFullMock && !(isSectional && questionCount >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX),
   });
 }
 
