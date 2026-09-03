@@ -15,6 +15,7 @@ Usage:
   python3 scripts/gsc-query.py queries --days 90 --limit 50
   python3 scripts/gsc-query.py pages --days 28 --limit 50
   python3 scripts/gsc-query.py by-page --page /in/ssc-cgl/test/tier-1-full-mock-1 --days 90
+  python3 scripts/gsc-query.py report --days 90 > SEARCH-CONSOLE-REPORT.md
 
 The property is a Search Console *domain* property (sc-domain:takemocktest.com),
 which covers http/https and all subdomains — pass --page as a path only
@@ -113,11 +114,61 @@ def cmd_by_page(session, args):
         print(f"  clicks={r['clicks']:<4} impressions={r['impressions']:<5} pos={r['position']:>5.1f}  \"{r['keys'][0]}\"")
 
 
+def cmd_report(session, args):
+    """Emits a single self-contained markdown snapshot, meant to be committed
+    to the repo (see .github/workflows/gsc-report.yml) so week-over-week
+    changes show up as an ordinary git diff — no dashboard, no external
+    storage, just the file's own history."""
+    from datetime import datetime, timezone
+
+    start, end = date_range(args.days)
+    totals_rows = query(session, start, end, [])
+    query_rows = sorted(query(session, start, end, ['query'], row_limit=args.limit), key=lambda r: -r['impressions'])
+    page_rows = sorted(query(session, start, end, ['page'], row_limit=args.limit), key=lambda r: -r['impressions'])
+
+    generated = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+    lines = [
+        '# Search Console report — takemocktest.com',
+        '',
+        f'Generated {generated} by `scripts/gsc-query.py report` (see `.github/workflows/gsc-report.yml`).',
+        f'Window: last {args.days} days ({start} to {end}). Search Analytics data lags 2-3 days, so the',
+        'most recent few days are typically undercounted or missing.',
+        '',
+        '## Totals',
+        '',
+    ]
+    if totals_rows:
+        r = totals_rows[0]
+        lines += [
+            '| Clicks | Impressions | CTR | Avg. position |',
+            '|---|---|---|---|',
+            f"| {r['clicks']} | {r['impressions']} | {r['ctr']:.2%} | {r['position']:.1f} |",
+        ]
+    else:
+        lines.append('No search data for this window.')
+
+    lines += ['', f'## Top {len(query_rows)} queries by impressions', '']
+    if query_rows:
+        lines += ['| Query | Clicks | Impressions | Avg. position |', '|---|---|---|---|']
+        lines += [f"| {r['keys'][0]} | {r['clicks']} | {r['impressions']} | {r['position']:.1f} |" for r in query_rows]
+    else:
+        lines.append('No queries recorded for this window.')
+
+    lines += ['', f'## Top {len(page_rows)} pages by impressions', '']
+    if page_rows:
+        lines += ['| Page | Clicks | Impressions | Avg. position |', '|---|---|---|---|']
+        lines += [f"| {r['keys'][0]} | {r['clicks']} | {r['impressions']} | {r['position']:.1f} |" for r in page_rows]
+    else:
+        lines.append('No pages recorded for this window.')
+
+    print('\n'.join(lines))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest='command', required=True)
 
-    for name, fn in [('totals', cmd_totals), ('queries', cmd_queries), ('pages', cmd_pages)]:
+    for name, fn in [('totals', cmd_totals), ('queries', cmd_queries), ('pages', cmd_pages), ('report', cmd_report)]:
         p = sub.add_parser(name)
         p.add_argument('--days', type=int, default=28)
         p.add_argument('--limit', type=int, default=50)
