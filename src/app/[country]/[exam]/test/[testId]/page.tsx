@@ -2028,6 +2028,9 @@ export default async function TestInstructionsPage({
         .filter(([, count]) => count > 0)
         .map(([level, count]) => `${count} ${level}`)
     : [];
+  const topTopics = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' }).format(
+    topicCounts.slice(0, 3).map(([topic]) => topic),
+  );
   const usesQuestionLevelScoring = questions.some(
     (question) =>
       (question.marks !== undefined && question.marks !== test.marksPerCorrect) ||
@@ -2036,6 +2039,36 @@ export default async function TestInstructionsPage({
   const maxScore = Math.round(
     questions.reduce((total, question) => total + (question.marks ?? test.marksPerCorrect), 0) * 100,
   ) / 100;
+  // Dynamically generated per sectional test from real config data — not
+  // hand-authored (there are hundreds of these pages). No FAQPage schema is
+  // emitted for this: Google retired the FAQ rich-result snippet sitewide on
+  // 7 May 2026, so this is on-page content only, not a schema/SERP play.
+  const sectionalFaqs = isSectional
+    ? [
+        {
+          question: `Is this an official ${exam.name} question paper?`,
+          answer: `No. It's an independent practice test with original ${test.section} questions, mapped to the official ${exam.name} ${stage.name} syllabus and answer-checked on ${test.checkedOn}.`,
+        },
+        {
+          question: `How many questions are in this ${test.section} sectional test, and how long is it?`,
+          answer: `${questionCount} questions in ${test.duration} minutes.`,
+        },
+        ...(topicCounts.length > 0
+          ? [{
+              question: 'Which topics does this test focus on?',
+              answer: `It spans ${topicCounts.length} ${topicCounts.length === 1 ? 'topic' : 'topics'}, with the heaviest coverage on ${topTopics}.`,
+            }]
+          : []),
+        {
+          question: 'Is there negative marking in this test?',
+          answer: usesQuestionLevelScoring
+            ? 'Marks vary by question in this section — see the scoring note above for the exact breakdown.'
+            : test.negativeMarking > 0
+              ? `Yes. Each wrong answer deducts ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}, and each correct answer earns ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'}. Unattempted questions score zero.`
+              : 'No. This section carries no negative marking, so a wrong answer costs nothing beyond the mark you missed.',
+        },
+      ]
+    : [];
   const pagePath = `/${country}/${exam.slug}/test/${testId}`;
   const instructions = [
     test.kind === 'sectional'
@@ -2281,6 +2314,20 @@ export default async function TestInstructionsPage({
               </Link>
             </div>
           </section>
+
+          {sectionalFaqs.length > 0 && (
+            <section>
+              <h2 className="mb-4 text-xl font-bold text-ink-900">Frequently asked questions</h2>
+              <div className="space-y-3">
+                {sectionalFaqs.map((faq) => (
+                  <details key={faq.question} className="border border-ink-200 bg-white p-4">
+                    <summary className="cursor-pointer text-sm font-semibold text-ink-900">{faq.question}</summary>
+                    <p className="mt-2 text-sm leading-6 text-ink-700">{faq.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
       )}
     </div>
