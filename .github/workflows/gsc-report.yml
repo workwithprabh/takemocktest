@@ -1,0 +1,51 @@
+name: Search Console weekly report
+
+# Snapshots live Search Console data into SEARCH-CONSOLE-REPORT.md and commits
+# it, so week-over-week search performance shows up as an ordinary git diff —
+# no dashboard, no external storage. Runs from GitHub's network deliberately:
+# the coding-agent sandbox that ships most changes to this repo has no way to
+# hold the service-account key across sessions (it's kept out of git on
+# purpose), so this scheduled job is what keeps the report current.
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Monday 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-auth requests
+
+      - name: Generate report
+        env:
+          GSC_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_KEY_JSON }}
+        run: |
+          if [ -z "$GSC_SERVICE_ACCOUNT_KEY_JSON" ]; then
+            echo "GSC_SERVICE_ACCOUNT_KEY_JSON secret is not set — see scripts/gsc-query.py for setup." >&2
+            exit 1
+          fi
+          python3 scripts/gsc-query.py report --days 90 --limit 50 > SEARCH-CONSOLE-REPORT.md
+
+      - name: Commit report if changed
+        run: |
+          if ! git diff --quiet -- SEARCH-CONSOLE-REPORT.md; then
+            git config user.name 'TakeMockTest Coding Agent'
+            git config user.email 'actions@users.noreply.github.com'
+            git add SEARCH-CONSOLE-REPORT.md
+            git commit -m 'Update Search Console report'
+            git push origin HEAD:main
+          else
+            echo "No change in report — skipping commit."
+          fi
