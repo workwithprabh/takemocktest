@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
 
   return pageMetadata({
     title: `${category.name} Exams in India: Mock Test Directory`,
-    description: `${category.description} Browse current exam names and see which TakeMockTest practice series are available.`,
+    description: `${category.description} Browse exams and available TakeMockTest practice series.`,
     path: `/in/exams/${category.slug}`,
   });
 }

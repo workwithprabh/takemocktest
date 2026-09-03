@@ -12,6 +12,29 @@ export function generateStaticParams() {
   );
 }
 
+// SERP snippets truncate titles somewhere around 55-60 characters for most
+// fonts/devices. Some exams' official test/section names are long enough on
+// their own (e.g. CMAT's combined-paper name lists five subjects) that no
+// safe shortening gets them under this budget without cutting real,
+// distinguishing content — for sectional tests especially, the section name
+// IS the identity that keeps sibling tests from sharing a title, so it's
+// never touched. Only the decorative suffix and, if still too long, the
+// cycle year are dropped, in that order; the core "{exam} {test/section
+// name}" is always kept in full, even if the result stays over budget.
+const TITLE_LENGTH_BUDGET = 60;
+
+function buildTestTitle(examName: string, coreName: string, isFullMock: boolean, cycle: number | string) {
+  if (isFullMock) {
+    const withCycleAndSuffix = `${examName} ${coreName} (${cycle}): Free Online Test`;
+    if (withCycleAndSuffix.length <= TITLE_LENGTH_BUDGET) return withCycleAndSuffix;
+    const withCycle = `${examName} ${coreName} (${cycle})`;
+    if (withCycle.length <= TITLE_LENGTH_BUDGET) return withCycle;
+    return `${examName} ${coreName}`;
+  }
+  const withSuffix = `${examName} ${coreName}: Instructions`;
+  return withSuffix.length <= TITLE_LENGTH_BUDGET ? withSuffix : `${examName} ${coreName}`;
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -28,9 +51,7 @@ export async function generateMetadata({
   const questionCount = getQuestionsForTest(examSlug, testId).length;
   const conciseTestName = testName.replace(' Objective Full Mock Test', ' Mock Test');
   return pageMetadata({
-    title: isFullMock
-      ? `${exam.name} ${conciseTestName} (${cycle}): Free Online Test`
-      : `${exam.name} ${testName}: Instructions`,
+    title: buildTestTitle(exam.name, isFullMock ? conciseTestName : testName, isFullMock, cycle),
     description: isFullMock
       ? `Attempt ${exam.name} ${testName}: ${questionCount} questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.`
       : isSectional
