@@ -21,3 +21,14 @@ dev-*.out.log
 
 # editor/OS
 .DS_Store
+
+# python
+__pycache__/
+*.pyc
+
+# credentials — never commit service-account keys or similar. scripts/gsc-query.py
+# reads its key from an env var (GSC_SERVICE_ACCOUNT_KEY_FILE or
+# GSC_SERVICE_ACCOUNT_KEY_JSON), never from a file inside the repo.
+*service-account*.json
+*.pem
+secrets/
