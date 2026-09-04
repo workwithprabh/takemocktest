@@ -12542,6 +12542,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'full-bank-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '1 September 2026' },
+          { id: 'full-bank-full-mock-2', name: 'Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '4 September 2026' },
         ],
       },
     ],
@@ -12607,6 +12608,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'homoeopathy-full-mock-1', name: 'Homoeopathy Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'homoeopathy-full-mock-2', name: 'Homoeopathy Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '4 September 2026' },
         ],
       },
     ],
@@ -12672,6 +12674,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'coqp12-general-management-full-mock-1', name: 'COQP12 General Paper Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'coqp12-general-management-full-mock-2', name: 'COQP12 General Paper Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '4 September 2026' },
         ],
       },
     ],
@@ -12703,6 +12706,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'agronomy-full-mock-1', name: 'Agronomy Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
+          { id: 'agronomy-full-mock-2', name: 'Agronomy Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '4 September 2026' },
         ],
       },
     ],

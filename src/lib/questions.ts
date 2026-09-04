@@ -747,13 +747,17 @@ import { CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1 } from './question-banks/c
 import { CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1 } from './question-banks/ctet-sep-2026-paper1-language-i-english-1';
 import { CTET_SEP_2026_PAPER1_LANGUAGE_II_HINDI_1 } from './question-banks/ctet-sep-2026-paper1-language-ii-hindi-1';
 import { AIBE_XXI_2026_FULL_BANK_1 } from './question-banks/aibe-xxi-2026-full-bank-1';
+import { AIBE_XXI_2026_FULL_BANK_2 } from './question-banks/aibe-xxi-2026-full-bank-2';
 import { NIPER_JEE_2026_MASTERS_SECTION_A_1 } from './question-banks/niper-jee-2026-masters-section-a-1';
 import { NIPER_JEE_2026_MASTERS_SECTION_B_1 } from './question-banks/niper-jee-2026-masters-section-b-1';
 import { AIAPGET_2026_HOMOEOPATHY_1 } from './question-banks/aiapget-2026-homoeopathy-1';
+import { AIAPGET_2026_HOMOEOPATHY_2 } from './question-banks/aiapget-2026-homoeopathy-2';
 import { UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1 } from './question-banks/ugc-net-june-2026-paper-1-teaching-research-aptitude-1';
 import { UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1 } from './question-banks/ugc-net-june-2026-computer-science-applications-1';
 import { CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_1 } from './question-banks/cuet-pg-2026-coqp12-general-management-1';
+import { CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_2 } from './question-banks/cuet-pg-2026-coqp12-general-management-2';
 import { ICAR_AIEEA_PG_2026_AGRONOMY_1 } from './question-banks/icar-aieea-pg-2026-agronomy-1';
+import { ICAR_AIEEA_PG_2026_AGRONOMY_2 } from './question-banks/icar-aieea-pg-2026-agronomy-2';
 import { CUET_UG_2026_GAT_FULL_MOCK_1 } from './question-banks/cuet-ug-2026-gat-full-mock-1';
 import { JCECE_2026_PCM_FULL_MOCK_1 } from './question-banks/jcece-2026-pcm-full-mock-1';
 import { JEST_2026_PHYSICS_FULL_MOCK_1 } from './question-banks/jest-2026-physics-full-mock-1';
@@ -2872,6 +2876,7 @@ const IISER_IAT_TESTS: Record<string, Question[]> = {
 };
 const AIBE_TESTS: Record<string, Question[]> = {
   'aibe/full-bank-full-mock-1': AIBE_XXI_2026_FULL_BANK_1,
+  'aibe/full-bank-full-mock-2': AIBE_XXI_2026_FULL_BANK_2,
 };
 const NIPER_JEE_TESTS: Record<string, Question[]> = {
   'niper-jee/masters-full-mock-1': [
@@ -2883,6 +2888,7 @@ const NIPER_JEE_TESTS: Record<string, Question[]> = {
 };
 const AIAPGET_TESTS: Record<string, Question[]> = {
   'aiapget/homoeopathy-full-mock-1': AIAPGET_2026_HOMOEOPATHY_1,
+  'aiapget/homoeopathy-full-mock-2': AIAPGET_2026_HOMOEOPATHY_2,
 };
 const UGC_NET_TESTS: Record<string, Question[]> = {
   'ugc-net/computer-science-applications-full-mock-1': [
@@ -2894,9 +2900,11 @@ const UGC_NET_TESTS: Record<string, Question[]> = {
 };
 const CUET_PG_TESTS: Record<string, Question[]> = {
   'cuet-pg/coqp12-general-management-full-mock-1': CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_1,
+  'cuet-pg/coqp12-general-management-full-mock-2': CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_2,
 };
 const ICAR_AIEEA_PG_TESTS: Record<string, Question[]> = {
   'icar-aieea-pg/agronomy-full-mock-1': ICAR_AIEEA_PG_2026_AGRONOMY_1,
+  'icar-aieea-pg/agronomy-full-mock-2': ICAR_AIEEA_PG_2026_AGRONOMY_2,
 };
 const BITS_HD_TESTS: Record<string, Question[]> = {
   'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,

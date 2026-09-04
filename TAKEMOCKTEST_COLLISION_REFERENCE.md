@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-04 from 765 bank files / 29495 questions.
+Generated: 2026-09-04 from 769 bank files / 29910 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -83,7 +83,7 @@ These stem patterns have caused real duplication on this project before (within 
 | capital-city lookup | 11 | niacl-ao, rrb-ntpc, rrb-technician, ssc-cgl, ssc-gd, ssc-selection, tg-lawcet, upsc-cse | high |
 | currency lookup | 7 | ksdat-2026, nchm-jee, niacl-ao, niftee-2026, rrb-je, ssc-gd | high |
 | synonym/antonym instruction | 375 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, imu-cet, inet-english, jain-jet, kmat-karnataka, lic-aao, lpunest-2026, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, niftee-2026, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-selection, ssc-steno, tancet-mba, territorial-army, upeseat-2026 | high |
-| blood relation generic opener | 60 | ca-foundation, ibps-clerk, ibps-po, ibps-rrb, ibps-so, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
+| blood relation generic opener | 61 | ca-foundation, cuet-pg, ibps-clerk, ibps-po, ibps-rrb, ibps-so, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection | high |
 | analogy colon-format | 21 | ipmat-rohtak, kerala-mca, nchm-jee, ssc-steno, state-set | high |
 
 ## Shared question openings (2+ exam families, first 6 words)
@@ -97,7 +97,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | choose the word closest in meaning | afcat-verbal, agniveer-vayu, cds-english, cmat-2026, cuet-pg, gate-2026, ibps-clerk, ibps-po, ibps-rrb, ibps-so, imu-cet, inet-english, jain-jet, jipmat-2026, lpunest-2026, met-2026, navy-ssr, nda-general, niftee-2026, rbi-assistant, sbi-clerk, sbi-po, srmjeee-2026, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, ssc-selection, territorial-army (29) |
 | which of the following does not | afcat-verbal, ailet-english, ap-eapcet, atma-analytical, ibps-rrb, ibps-so, inet-english, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-technician, sbi-clerk, sebi-grade, snap-general, ssc-cpo, ssc-gd, ssc-je, ssc-mts, territorial-army, upsc-cse, viteee-2026 (27) |
 | find the next number in the | atma-analytical, ibps-rrb, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, niftee-2026, nmat-language, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sebi-grade, sidbi-grade, snap-general, srmjeee-2026, ssc-cpo, ssc-gd, ssc-je, ssc-mts, tancet-mba, upsc-cse (27) |
-| two numbers are in the ratio | aeee-2026, afcat-verbal, cat-varc, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, kmat-karnataka, niacl-ao, nmat-language, nmims-cet, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-group, rrb-je, sbi-clerk, sbi-po, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts (25) |
+| two numbers are in the ratio | aeee-2026, afcat-verbal, cat-varc, cuet-pg, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, kmat-karnataka, niacl-ao, nmat-language, nmims-cet, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-group, rrb-je, sbi-clerk, sbi-po, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts (26) |
 | what is the sum of the | acet-mathematics, aeee-2026, gre-quantitative, ibps-clerk, ibps-po, ibps-rrb, ibps-so, imu-cet, jee-main, jeecup-2026, kcet-engineering, mht-cet, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-technician, srmjeee-2026, ssc-cpo, tg-polycet (20) |
 | a fair die is rolled once | aeee-2026, ap-polycet, bcece-2026, ca-foundation, cg-pet, cg-ppt, cuet-ug, cusat-cat, ibps-clerk, ibps-po, jeecup-2026, mah-mca, met-2026, mht-cet, rbi-assistant, srmjeee-2026, ssc-cgl, ssc-selection, ugc-net, viteee-2026 (20) |
 | choose the word most similar in | atma-analytical, ibps-so, ibsat-verbal, kmat-karnataka, lic-aao, mat-language, micat-va, nabard-grade, niacl-ao, nmat-language, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, snap-general, ssc-cpo, ssc-gd, ssc-selection, ssc-steno, tancet-mba (20) |
