@@ -20,18 +20,24 @@ Setup (one-time, free):
 Usage:
   python3 scripts/bing_webmaster.py sites
   python3 scripts/bing_webmaster.py link-counts
-  python3 scripts/bing_webmaster.py links --page /in/ssc-cgl/mock-test --limit 50
-  python3 scripts/bing_webmaster.py link-details --page /in/ssc-cgl/mock-test --limit 50
+  python3 scripts/bing_webmaster.py links --url /in/ssc-cgl/mock-test --limit 50
+  python3 scripts/bing_webmaster.py link-details --url /in/ssc-cgl/mock-test --limit 50
   python3 scripts/bing_webmaster.py raw GetCrawlStats   # escape hatch for any method
 
-Notes on accuracy: the API surface below (GetUrlLinks / GetLinkCounts /
-GetLinkDetails, apikey-as-query-param auth) matches Microsoft's published
-Bing Webmaster API reference (learn.microsoft.com/en-us/bingwebmaster/
-api-protocols and .../getting-access) as documented, but this script has
-not been exercised against a live key from this environment (no Bing
-account exists here to test with). If a call 404s or comes back with an
-unexpected shape, use `raw <MethodName>` to see the exact response Bing
-sends back — that's usually enough to tell whether a param name changed.
+Verified against a live key on 4 September 2026 (via the GitHub Actions
+workflow, since this repo's coding-agent sandbox has no network route to
+ssl.bing.com): `sites` returns the verified property, which confirms the
+key, the endpoint, and apikey-as-query-param auth all work. That run also
+proved these are GET methods — an earlier version sent params as a JSON
+POST body and got HTTP 405 back on every call that had any.
+
+Still unconfirmed: the exact param names for the link methods
+(GetLinkCounts / GetUrlLinks / GetLinkDetails). They follow Microsoft's
+published IWebmasterApi signatures — siteUrl, `link` for the target page,
+and `page` as an integer pagination index, not a URL — but have not yet
+returned data here. If one misbehaves, `raw <MethodName> --param k=v`
+prints Bing's exact response, which is usually enough to spot the
+difference.
 """
 
 import argparse
@@ -41,7 +47,13 @@ import sys
 from urllib.parse import quote
 
 API_BASE = 'https://ssl.bing.com/webmaster/api.svc/json'
+
+# The siteUrl param has to match how the property is registered in Bing
+# Webmaster, trailing slash included — GetUserSites reports it as
+# "https://takemocktest.com/". SITE (no trailing slash) is only used to turn
+# a path into an absolute page URL.
 SITE = 'https://takemocktest.com'
+BING_SITE_URL = 'https://takemocktest.com/'
 
 
 def get_key():
@@ -58,11 +70,17 @@ def get_key():
 
 
 def call(method, params=None, key=None):
+    """Bing's read methods (GetUserSites, GetLinkCounts, GetUrlLinks, ...) are
+    GET with everything in the query string. An earlier version of this sent
+    params as a JSON POST body and got HTTP 405 back for every call that had
+    params — GetUserSites only worked because it has none."""
     import requests
 
     key = key or get_key()
-    url = f'{API_BASE}/{method}?apikey={quote(key)}'
-    resp = requests.post(url, json=params or {}) if params is not None else requests.get(url)
+    query = {'apikey': key}
+    query.update(params or {})
+    url = f'{API_BASE}/{method}?' + '&'.join(f'{k}={quote(str(v), safe="")}' for k, v in query.items())
+    resp = requests.get(url)
     if resp.status_code != 200:
         print(f'HTTP {resp.status_code} from Bing for {method}: {resp.text[:500]}', file=sys.stderr)
         sys.exit(1)
@@ -92,7 +110,7 @@ def cmd_sites(args):
 
 
 def cmd_link_counts(args):
-    data = call('GetLinkCounts', params={'siteUrl': SITE})
+    data = call('GetLinkCounts', params={'siteUrl': BING_SITE_URL, 'page': args.page})
     rows = data if isinstance(data, list) else [data]
     print(f'Link counts for {SITE}:')
     for r in rows[: args.limit]:
@@ -101,7 +119,7 @@ def cmd_link_counts(args):
 
 def cmd_links(args):
     page = to_page_url(args.page)
-    data = call('GetUrlLinks', params={'siteUrl': SITE, 'pageUrl': page})
+    data = call('GetUrlLinks', params={'siteUrl': BING_SITE_URL, 'link': page, 'page': args.page_index})
     rows = data if isinstance(data, list) else data.get('d', [data])
     print(f'{len(rows)} inbound link(s) to {page} (showing up to {args.limit}):')
     for r in rows[: args.limit]:
@@ -110,7 +128,7 @@ def cmd_links(args):
 
 def cmd_link_details(args):
     page = to_page_url(args.page)
-    data = call('GetLinkDetails', params={'siteUrl': SITE, 'pageUrl': page})
+    data = call('GetLinkDetails', params={'siteUrl': BING_SITE_URL, 'link': page, 'page': args.page_index})
     rows = data if isinstance(data, list) else data.get('d', [data])
     print(f'{len(rows)} link detail row(s) for {page} (showing up to {args.limit}):')
     for r in rows[: args.limit]:
@@ -125,7 +143,7 @@ def cmd_raw(args):
             sys.exit(1)
         k, v = kv.split('=', 1)
         params[k] = v
-    params.setdefault('siteUrl', SITE)
+    params.setdefault('siteUrl', BING_SITE_URL)
     data = call(args.method, params=params)
     print(json.dumps(data, indent=2))
 
@@ -139,15 +157,18 @@ def main():
 
     p = sub.add_parser('link-counts', help='Total inbound link count for the whole site.')
     p.add_argument('--limit', type=int, default=50)
+    p.add_argument('--page', type=int, default=0, help='Pagination index (0-based), not a URL.')
     p.set_defaults(func=cmd_link_counts)
 
     p = sub.add_parser('links', help='Pages that link to one specific page on this site.')
-    p.add_argument('--page', required=True, help='Path (e.g. /in/ssc-cgl/mock-test) or full URL')
+    p.add_argument('--url', dest='page', required=True, help='Path (e.g. /in/ssc-cgl/mock-test) or full URL')
+    p.add_argument('--page', dest='page_index', type=int, default=0, help='Pagination index (0-based).')
     p.add_argument('--limit', type=int, default=50)
     p.set_defaults(func=cmd_links)
 
     p = sub.add_parser('link-details', help='Anchor text and source detail for links to one page.')
-    p.add_argument('--page', required=True, help='Path or full URL')
+    p.add_argument('--url', dest='page', required=True, help='Path or full URL')
+    p.add_argument('--page', dest='page_index', type=int, default=0, help='Pagination index (0-based).')
     p.add_argument('--limit', type=int, default=50)
     p.set_defaults(func=cmd_link_details)
 

@@ -74,6 +74,17 @@ jobs:
             fi
             echo
 
+            echo "## Bing Webmaster — sites linking to the homepage"
+            echo
+            if [ -n "$BING_API_KEY" ]; then
+              echo '```'
+              python3 scripts/bing_webmaster.py links --url / 2>&1 || true
+              echo '```'
+            else
+              echo "_BING_API_KEY not set. Skipped._"
+            fi
+            echo
+
             echo "## Moz — Domain Authority / linking-domain metrics"
             echo
             if [ -n "$MOZ_ACCESS_ID" ] && [ -n "$MOZ_SECRET_KEY" ]; then
