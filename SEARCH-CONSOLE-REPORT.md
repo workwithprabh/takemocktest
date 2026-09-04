@@ -1,14 +1,14 @@
 # Search Console report — takemocktest.com
 
-Generated 2026-09-03 08:01 UTC by `scripts/gsc-query.py report` (see `.github/workflows/gsc-report.yml`).
-Window: last 90 days (2026-06-05 to 2026-09-03). Search Analytics data lags 2-3 days, so the
+Generated 2026-09-04 10:07 UTC by `scripts/gsc-query.py report` (see `.github/workflows/gsc-report.yml`).
+Window: last 90 days (2026-06-06 to 2026-09-04). Search Analytics data lags 2-3 days, so the
 most recent few days are typically undercounted or missing.
 
 ## Totals
 
 | Clicks | Impressions | CTR | Avg. position |
 |---|---|---|---|
-| 2 | 59 | 3.39% | 25.6 |
+| 2 | 61 | 3.28% | 25.5 |
 
 ## Top 13 queries by impressions
 
@@ -32,7 +32,7 @@ most recent few days are typically undercounted or missing.
 
 | Page | Clicks | Impressions | Avg. position |
 |---|---|---|---|
-| https://takemocktest.com/in/blog/ibps-po-vs-ssc-cgl-which-exam-suits-you | 0 | 24 | 17.3 |
+| https://takemocktest.com/in/blog/ibps-po-vs-ssc-cgl-which-exam-suits-you | 0 | 26 | 17.7 |
 | https://takemocktest.com/in | 0 | 13 | 13.2 |
 | https://takemocktest.com/in/rrb-ntpc | 0 | 11 | 23.0 |
 | https://takemocktest.com/in/blog/time-management-during-the-exam | 2 | 7 | 6.1 |
