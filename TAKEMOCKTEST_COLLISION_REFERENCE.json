@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-04",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 765,
-    "questions": 29495
+    "bankFiles": 769,
+    "questions": 29910
   },
   "topicSaturation": [
     {
@@ -8825,10 +8825,11 @@
     },
     {
       "pattern": "blood relation generic opener",
-      "matchCount": 60,
-      "examCount": 27,
+      "matchCount": 61,
+      "examCount": 28,
       "exams": [
         "ca-foundation",
+        "cuet-pg",
         "ibps-clerk",
         "ibps-po",
         "ibps-rrb",
@@ -9048,11 +9049,12 @@
     },
     {
       "opening": "two numbers are in the ratio",
-      "examCount": 25,
+      "examCount": 26,
       "exams": [
         "aeee-2026",
         "afcat-verbal",
         "cat-varc",
+        "cuet-pg",
         "ibps-clerk",
         "ibps-po",
         "ibps-rrb",
@@ -10331,6 +10333,21 @@
       ]
     },
     {
+      "opening": "choose the word most nearly opposite",
+      "examCount": 9,
+      "exams": [
+        "aeee-2026",
+        "cuet-pg",
+        "cuet-ug",
+        "ibps-clerk",
+        "ibps-so",
+        "sbi-clerk",
+        "sbi-po",
+        "srmjeee-2026",
+        "ssc-chsl"
+      ]
+    },
+    {
       "opening": "for f x x 3 6x",
       "examCount": 9,
       "exams": [
@@ -10740,20 +10757,6 @@
         "rbi-assistant",
         "rpf-constable",
         "upsc-cse"
-      ]
-    },
-    {
-      "opening": "choose the word most nearly opposite",
-      "examCount": 8,
-      "exams": [
-        "aeee-2026",
-        "cuet-ug",
-        "ibps-clerk",
-        "ibps-so",
-        "sbi-clerk",
-        "sbi-po",
-        "srmjeee-2026",
-        "ssc-chsl"
       ]
     },
     {
