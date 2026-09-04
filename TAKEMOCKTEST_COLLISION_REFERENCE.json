@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-04",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 764,
-    "questions": 29375
+    "bankFiles": 765,
+    "questions": 29495
   },
   "topicSaturation": [
     {
@@ -10082,6 +10082,22 @@
       ]
     },
     {
+      "opening": "what is the primary purpose of",
+      "examCount": 10,
+      "exams": [
+        "ap-pgecet",
+        "ibps-po",
+        "ibps-so",
+        "ibsat-verbal",
+        "jee-main",
+        "nabard-grade",
+        "niacl-ao",
+        "rrb-alp",
+        "rrb-technician",
+        "tancet-mba"
+      ]
+    },
+    {
       "opening": "the circle x 2 y 2",
       "examCount": 10,
       "exams": [
@@ -10207,6 +10223,21 @@
         "sebi-grade",
         "sidbi-grade",
         "ssc-cpo"
+      ]
+    },
+    {
+      "opening": "in how many ways can 4",
+      "examCount": 9,
+      "exams": [
+        "acet-mathematics",
+        "ap-eapcet",
+        "ap-pgecet",
+        "ibps-clerk",
+        "ibsat-verbal",
+        "met-2026",
+        "sbi-clerk",
+        "snap-general",
+        "tancet-mba"
       ]
     },
     {
@@ -10420,6 +10451,21 @@
       ]
     },
     {
+      "opening": "how many distinct arrangements can be",
+      "examCount": 9,
+      "exams": [
+        "ap-pgecet",
+        "assam-cee",
+        "atit-2026",
+        "iiser-iat",
+        "jcece-2026",
+        "kcet-engineering",
+        "mht-cet",
+        "viteee-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "opening": "a solution is prepared by dissolving",
       "examCount": 9,
       "exams": [
@@ -10510,21 +10556,6 @@
       ]
     },
     {
-      "opening": "what is the primary purpose of",
-      "examCount": 9,
-      "exams": [
-        "ibps-po",
-        "ibps-so",
-        "ibsat-verbal",
-        "jee-main",
-        "nabard-grade",
-        "niacl-ao",
-        "rrb-alp",
-        "rrb-technician",
-        "tancet-mba"
-      ]
-    },
-    {
       "opening": "the sum of two numbers is",
       "examCount": 9,
       "exams": [
@@ -10597,20 +10628,6 @@
         "ssc-mts",
         "ssc-steno",
         "upsc-cse"
-      ]
-    },
-    {
-      "opening": "in how many ways can 4",
-      "examCount": 8,
-      "exams": [
-        "acet-mathematics",
-        "ap-eapcet",
-        "ibps-clerk",
-        "ibsat-verbal",
-        "met-2026",
-        "sbi-clerk",
-        "snap-general",
-        "tancet-mba"
       ]
     },
     {
@@ -10863,20 +10880,6 @@
         "neet-ug",
         "tg-eapcet",
         "tjee-2026"
-      ]
-    },
-    {
-      "opening": "how many distinct arrangements can be",
-      "examCount": 8,
-      "exams": [
-        "assam-cee",
-        "atit-2026",
-        "iiser-iat",
-        "jcece-2026",
-        "kcet-engineering",
-        "mht-cet",
-        "viteee-2026",
-        "wbjee-engineering"
       ]
     },
     {
@@ -11178,6 +11181,19 @@
         "iemjee-2026",
         "tg-eapcet",
         "wbjee-engineering"
+      ]
+    },
+    {
+      "opening": "what is the determinant of the",
+      "examCount": 7,
+      "exams": [
+        "aeee-2026",
+        "ap-pgecet",
+        "jee-main",
+        "kcet-engineering",
+        "nerist-nee",
+        "nmims-cet",
+        "srmjeee-2026"
       ]
     },
     {
@@ -11854,18 +11870,6 @@
         "cusat-cat",
         "kcet-engineering",
         "nerist-nee"
-      ]
-    },
-    {
-      "opening": "what is the determinant of the",
-      "examCount": 6,
-      "exams": [
-        "aeee-2026",
-        "jee-main",
-        "kcet-engineering",
-        "nerist-nee",
-        "nmims-cet",
-        "srmjeee-2026"
       ]
     },
     {

@@ -11508,6 +11508,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'csit-full-mock-1', name: 'CS & IT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '29 August 2026' },
+          { id: 'csit-full-mock-2', name: 'CS & IT Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '4 September 2026' },
         ],
       },
     ],

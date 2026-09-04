@@ -608,6 +608,7 @@ import { AP_ECET_2026_PHYSICS_1 } from './question-banks/ap-ecet-2026-physics-1'
 import { AP_ECET_2026_CHEMISTRY_1 } from './question-banks/ap-ecet-2026-chemistry-1';
 import { AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1 } from './question-banks/ap-ecet-2026-computer-science-engineering-1';
 import { AP_PGECET_2026_COMPUTER_SCIENCE_INFORMATION_TECHNOLOGY_1 } from './question-banks/ap-pgecet-2026-computer-science-information-technology-1';
+import { AP_PGECET_2026_COMPUTER_SCIENCE_INFORMATION_TECHNOLOGY_2 } from './question-banks/ap-pgecet-2026-computer-science-information-technology-2';
 import { LPUNEST_2026_PHYSICS_1 } from './question-banks/lpunest-2026-physics-1';
 import { LPUNEST_2026_CHEMISTRY_1 } from './question-banks/lpunest-2026-chemistry-1';
 import { LPUNEST_2026_MATHEMATICS_1 } from './question-banks/lpunest-2026-mathematics-1';
@@ -2583,6 +2584,7 @@ const AP_ECET_TESTS: Record<string, Question[]> = {
 };
 const AP_PGECET_TESTS: Record<string, Question[]> = {
   'ap-pgecet/csit-full-mock-1': AP_PGECET_2026_COMPUTER_SCIENCE_INFORMATION_TECHNOLOGY_1,
+  'ap-pgecet/csit-full-mock-2': AP_PGECET_2026_COMPUTER_SCIENCE_INFORMATION_TECHNOLOGY_2,
 };
 const LPUNEST_TESTS: Record<string, Question[]> = {
   'lpunest/btech-pcm-full-mock-1': [
