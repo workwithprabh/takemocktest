@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-04 from 764 bank files / 29375 questions.
+Generated: 2026-09-04 from 765 bank files / 29495 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -151,4 +151,4 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a projectile is launched at 20 | ap-eapcet, atit-2026, jcece-2026, kcet-engineering, lpunest-2026, mht-cet, nerist-nee, srmjeee-2026, tg-ecet, vtueee-2026 (10) |
 | phenol is more acidic than ethanol | ap-eapcet, assam-cee, comedk-uget, imu-cet, kcet-engineering, lpunest-2026, neet-ug, srmjeee-2026, viteee-2026, vtueee-2026 (10) |
 | what is the value of x | ap-ecet, atit-2026, ibps-po, ibsat-verbal, mat-language, nchm-jee, sat-math, sbi-po, snap-general, tancet-mba (10) |
-| the circle x 2 y 2 | bitsat-2026, chandigarh-cucet, jee-main, lpunest-2026, met-2026, nmims-cet, srmjeee-2026, tg-eapcet, viteee-2026, wbjee-engineering (10) |
+| what is the primary purpose of | ap-pgecet, ibps-po, ibps-so, ibsat-verbal, jee-main, nabard-grade, niacl-ao, rrb-alp, rrb-technician, tancet-mba (10) |
