@@ -39,6 +39,12 @@ jobs:
           MOZ_ACCESS_ID: ${{ secrets.MOZ_ACCESS_ID }}
           MOZ_SECRET_KEY: ${{ secrets.MOZ_SECRET_KEY }}
           BING_API_KEY: ${{ secrets.BING_API_KEY }}
+        # `|| true` on every script call is deliberate: the scripts exit
+        # non-zero when an API call fails, and this step runs under `bash -e`,
+        # so without it a single API error aborts the block and the report —
+        # including the error text explaining what went wrong — is thrown away
+        # instead of written. `tee` mirrors the same output into the job log so
+        # a failure is readable from the run page without needing the commit.
         run: |
           {
             echo "# Backlinks report — takemocktest.com"
@@ -46,14 +52,14 @@ jobs:
             echo "Generated $(date -u '+%Y-%m-%d %H:%M UTC') by \`.github/workflows/backlinks-report.yml\`."
             echo
 
-            echo "## Moz — Domain Authority / linking-domain metrics"
+            echo "## Bing Webmaster — connectivity check (verified sites)"
             echo
-            if [ -n "$MOZ_ACCESS_ID" ] && [ -n "$MOZ_SECRET_KEY" ]; then
-              echo '```json'
-              python3 scripts/moz_api.py metrics 2>&1
+            if [ -n "$BING_API_KEY" ]; then
+              echo '```'
+              python3 scripts/bing_webmaster.py sites 2>&1 || true
               echo '```'
             else
-              echo "_MOZ_ACCESS_ID / MOZ_SECRET_KEY not set. Moz is paid (~\$179/month after a 7-day trial), so this is the expected state — see scripts/moz_api.py. Skipped._"
+              echo "_BING_API_KEY not set — see scripts/bing_webmaster.py for free setup. Skipped._"
             fi
             echo
 
@@ -61,12 +67,23 @@ jobs:
             echo
             if [ -n "$BING_API_KEY" ]; then
               echo '```'
-              python3 scripts/bing_webmaster.py link-counts 2>&1
+              python3 scripts/bing_webmaster.py link-counts 2>&1 || true
               echo '```'
             else
-              echo "_BING_API_KEY not set — see scripts/bing_webmaster.py for free setup. Skipped._"
+              echo "_BING_API_KEY not set. Skipped._"
             fi
-          } > BACKLINKS-REPORT.md
+            echo
+
+            echo "## Moz — Domain Authority / linking-domain metrics"
+            echo
+            if [ -n "$MOZ_ACCESS_ID" ] && [ -n "$MOZ_SECRET_KEY" ]; then
+              echo '```json'
+              python3 scripts/moz_api.py metrics 2>&1 || true
+              echo '```'
+            else
+              echo "_MOZ_ACCESS_ID / MOZ_SECRET_KEY not set. Moz is paid (~\$179/month after a 7-day trial), so this is the expected state — see scripts/moz_api.py. Skipped._"
+            fi
+          } | tee BACKLINKS-REPORT.md
 
       - name: Commit report if changed
         run: |
