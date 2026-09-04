@@ -1,4 +1,13 @@
 export type ExamSlug =
+  | 'jcece'
+  | 'jest'
+  | 'keam'
+  | 'kerala-mca'
+  | 'ksdat'
+  | 'mah-bhmct-bca-bba-bms-bbm-cet'
+  | 'mah-mba-cet'
+  | 'mah-mca-cet'
+  | 'state-set'
   | 'ssc-cgl'
   | 'ibps-po'
   | 'rrb-ntpc'
@@ -320,6 +329,16 @@ const ASSAM_CEE_2026_BROCHURE = 'https://astu.formsrec.in/pdf/Final%20Brochure%2
 const BITS_HD_2026_27_BROCHURE = 'https://admissions.bits-pilani.ac.in/HD/downloads/HD_Brochure_2026_27.pdf';
 const CG_PET_2026_ONLINE_PAGE = 'https://vyapamcg.cgstate.gov.in/Post?PostID=PET26ONLINE';
 const BCECE_2026_ADVERTISEMENT_NOTICE = 'https://bceceboard.bihar.gov.in/pdf_Adv/ADV_BCECE26_01.pdf';
+const CUET_UG_2026_PORTAL = 'https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/01/202601031633478370.pdf';
+const JCECE_2026_PROSPECTUS = 'https://jceceb.jharkhand.gov.in/download/2033.pdf';
+const JEST_2026_PORTAL = 'https://www.jest.org.in/faq';
+const KEAM_2026_PROSPECTUS = 'https://www.cee.kerala.gov.in/keam2026/pdf/Prospectus.pdf';
+const KERALA_MCA_2026_PORTAL = 'https://lbsapplications.kerala.gov.in/mca2026/images/news/mca_2026_prospectus.pdf';
+const KSDAT_2026_PORTAL = 'https://lbsapplications.kerala.gov.in/ksdat2026/images/news/ksdat_2026_prospectus.pdf';
+const MAH_UG_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-brochure-for-MAH-BHMCT-BCA-BBA-BMS-BBM-CET-2026.pdf';
+const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/MAH-MBA-MMS-CET-2026-Information-Brochure.pdf';
+const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
+const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
 const GATE_2026_INFORMATION_BROCHURE = 'https://gate2026.iitg.ac.in/doc/IB/GATE2026-IB-10102025.pdf';
 const GSHSEB_BOARD_PORTAL = 'https://www.gsebeservice.com/web/';
@@ -10502,6 +10521,326 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
       },
     ],
   },
+  'jcece': {
+    slug: 'jcece',
+    name: 'JCECE',
+    shortName: 'JCECE',
+    fullName: 'Jharkhand Combined Entrance Competitive Examination 2026 (PCM)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'pcm',
+        name: 'JCECE 2026 PCM',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Physics', 'Chemistry', 'Mathematics'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 180,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Physics', questions: 50, marks: 50 },
+            { name: 'Chemistry', questions: 50, marks: 50 },
+            { name: 'Mathematics', questions: 50, marks: 50 },
+          ],
+          sourceUrl: JCECE_2026_PROSPECTUS,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'pcm-full-mock-1', name: 'PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '2 September 2026' },
+          { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '2 September 2026' },
+          { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '2 September 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'jest': {
+    slug: 'jest',
+    name: 'JEST',
+    shortName: 'JEST',
+    fullName: 'Joint Entrance Screening Test 2026 (Physics)',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'physics',
+        name: 'JEST 2026 Physics',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Part A', 'Part B', 'Part C'],
+          totalQuestions: 40,
+          totalMarks: 100,
+          duration: 180,
+          sectionBreakdown: [
+            { name: 'Part A', questions: 10, marks: 25 },
+            { name: 'Part B', questions: 20, marks: 50 },
+            { name: 'Part C', questions: 10, marks: 25 },
+          ],
+          sourceUrl: JEST_2026_PORTAL,
+          checkedOn: '1 September 2026',
+        },
+        tests: [
+          { id: 'physics-full-mock-1', name: 'Physics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'JEST scores by part, not uniformly: Part A earns 1 mark per correct answer with one-third deducted for a wrong one, Part B earns 3 marks with 1 deducted, and Part C is numerical-answer, earning 3 marks with no negative marking. The +3/-1 shown here is Part B\'s rule, which covers half the paper; every question carries its own marks and penalty, and the score reflects those.', checkedOn: '1 September 2026' },
+          { id: 'part-a-sectional-1', name: 'Part A Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Part A', duration: 45, marksPerCorrect: 1, negativeMarking: 0.3333333333333333, checkedOn: '1 September 2026' },
+          { id: 'part-b-sectional-1', name: 'Part B Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Part B', duration: 90, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'part-c-sectional-1', name: 'Part C Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Part C', duration: 45, marksPerCorrect: 3, negativeMarking: 0, checkedOn: '1 September 2026' },
+        ],
+      },
+    ],
+  },
+  'keam': {
+    slug: 'keam',
+    name: 'KEAM',
+    shortName: 'KEAM',
+    fullName: 'Kerala Engineering Architecture Medical 2026 (Engineering)',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'engineering',
+        name: 'KEAM 2026 Engineering',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 150,
+          totalMarks: 600,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 75, marks: 300 },
+            { name: 'Physics', questions: 45, marks: 180 },
+            { name: 'Chemistry', questions: 30, marks: 120 },
+          ],
+          sourceUrl: KEAM_2026_PROSPECTUS,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'engineering-full-mock-1', name: 'Engineering Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '2 September 2026' },
+          { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '2 September 2026' },
+          { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 54, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '2 September 2026' },
+          { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 36, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'kerala-mca': {
+    slug: 'kerala-mca',
+    name: 'Kerala MCA',
+    shortName: 'Kerala MCA',
+    fullName: 'Kerala MCA Entrance Examination 2026',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'entrance-examination',
+        name: 'Kerala MCA 2026 Entrance',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Computer Science', 'Mathematics & Statistics', 'Quantitative Aptitude & Logical Ability', 'English', 'General Knowledge'],
+          totalQuestions: 120,
+          totalMarks: 120,
+          duration: 120,
+          sectionBreakdown: [
+            { name: 'Computer Science', questions: 50, marks: 50 },
+            { name: 'Mathematics & Statistics', questions: 25, marks: 25 },
+            { name: 'Quantitative Aptitude & Logical Ability', questions: 25, marks: 25 },
+            { name: 'English', questions: 15, marks: 15 },
+            { name: 'General Knowledge', questions: 5, marks: 5 },
+          ],
+          sourceUrl: KERALA_MCA_2026_PORTAL,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'mca-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'computer-science-sectional-1', name: 'Computer Science Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Computer Science', duration: 50, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'mathematics-and-statistics-sectional-1', name: 'Mathematics & Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics & Statistics', duration: 25, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'quantitative-aptitude-and-logical-ability-sectional-1', name: 'Quantitative Aptitude & Logical Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude & Logical Ability', duration: 25, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'english-sectional-1', name: 'English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'general-knowledge-sectional-1', name: 'General Knowledge Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Knowledge', duration: 5, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'ksdat': {
+    slug: 'ksdat',
+    name: 'KSDAT',
+    shortName: 'KSDAT',
+    fullName: 'Kerala State Design Aptitude Test 2026',
+    category: 'Design, Fashion & Hospitality',
+    stages: [
+      {
+        id: 'bdes-entrance',
+        name: 'KSDAT 2026 B.Des Entrance',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Social & Basic Sciences', 'General Knowledge', 'English Language', 'Numerical Ability & Analytical Aptitude', 'Design Awareness'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 100,
+          sectionBreakdown: [
+            { name: 'Social & Basic Sciences', questions: 10, marks: 10 },
+            { name: 'General Knowledge', questions: 20, marks: 20 },
+            { name: 'English Language', questions: 20, marks: 20 },
+            { name: 'Numerical Ability & Analytical Aptitude', questions: 20, marks: 20 },
+            { name: 'Design Awareness', questions: 30, marks: 30 },
+          ],
+          sourceUrl: KSDAT_2026_PORTAL,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'ksdat-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 100, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'social-and-basic-sciences-sectional-1', name: 'Social & Basic Sciences Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Social & Basic Sciences', duration: 10, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'general-knowledge-sectional-1', name: 'General Knowledge Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Knowledge', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'english-language-sectional-1', name: 'English Language Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Language', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'numerical-ability-and-analytical-aptitude-sectional-1', name: 'Numerical Ability & Analytical Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numerical Ability & Analytical Aptitude', duration: 20, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'design-awareness-sectional-1', name: 'Design Awareness Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Design Awareness', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'mah-bhmct-bca-bba-bms-bbm-cet': {
+    slug: 'mah-bhmct-bca-bba-bms-bbm-cet',
+    name: 'MAH BHMCT/BCA/BBA/BMS/BBM CET',
+    shortName: 'MAH UG CET',
+    fullName: 'MAH BHMCT/BCA/BBA/BMS/BBM CET 2026',
+    category: 'Management',
+    stages: [
+      {
+        id: 'common-cet',
+        name: 'MAH BHMCT/BCA/BBA/BMS/BBM CET 2026',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['English Language', 'Reasoning (Verbal & Arithmetic)', 'General Knowledge & Awareness', 'Computer Basics'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 120,
+          sectionBreakdown: [
+            { name: 'English Language', questions: 30, marks: 30 },
+            { name: 'Reasoning (Verbal & Arithmetic)', questions: 30, marks: 30 },
+            { name: 'General Knowledge & Awareness', questions: 20, marks: 20 },
+            { name: 'Computer Basics', questions: 20, marks: 20 },
+          ],
+          sourceUrl: MAH_UG_CET_2026_PORTAL,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'common-cet-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'english-language-sectional-1', name: 'English Language Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Language', duration: 36, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'reasoning-verbal-and-arithmetic-sectional-1', name: 'Reasoning (Verbal & Arithmetic) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning (Verbal & Arithmetic)', duration: 36, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'general-knowledge-and-awareness-sectional-1', name: 'General Knowledge & Awareness Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Knowledge & Awareness', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'computer-basics-sectional-1', name: 'Computer Basics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Computer Basics', duration: 24, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'mah-mba-cet': {
+    slug: 'mah-mba-cet',
+    name: 'MAH MBA CET',
+    shortName: 'MAH MBA CET',
+    fullName: 'MAH MBA/MMS CET 2026',
+    category: 'Management',
+    stages: [
+      {
+        id: 'mba-mms',
+        name: 'MAH MBA/MMS CET 2026',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Logical Reasoning', 'Abstract Reasoning', 'Quantitative Aptitude', 'Verbal Ability / Reading Comprehension'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 150,
+          sectionBreakdown: [
+            { name: 'Logical Reasoning', questions: 75, marks: 75 },
+            { name: 'Abstract Reasoning', questions: 25, marks: 25 },
+            { name: 'Quantitative Aptitude', questions: 50, marks: 50 },
+            { name: 'Verbal Ability / Reading Comprehension', questions: 50, marks: 50 },
+          ],
+          sourceUrl: MAH_MBA_CET_2026_PORTAL,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'mba-mms-full-mock-1', name: 'MBA/MMS Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'logical-reasoning-sectional-1', name: 'Logical Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical Reasoning', duration: 56, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'abstract-reasoning-sectional-1', name: 'Abstract Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Abstract Reasoning', duration: 19, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 38, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'verbal-ability-reading-comprehension-sectional-1', name: 'Verbal Ability / Reading Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Verbal Ability / Reading Comprehension', duration: 38, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'mah-mca-cet': {
+    slug: 'mah-mca-cet',
+    name: 'MAH MCA CET',
+    shortName: 'MAH MCA CET',
+    fullName: 'MAH MCA CET 2026',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'mca',
+        name: 'MAH MCA CET 2026',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Mathematics & Statistics', 'Logical / Abstract Reasoning', 'English Comprehension & Verbal Ability', 'Computer Concepts'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 90,
+          sectionBreakdown: [
+            { name: 'Mathematics & Statistics', questions: 30, marks: 60 },
+            { name: 'Logical / Abstract Reasoning', questions: 30, marks: 60 },
+            { name: 'English Comprehension & Verbal Ability', questions: 20, marks: 40 },
+            { name: 'Computer Concepts', questions: 20, marks: 40 },
+          ],
+          sourceUrl: MAH_MCA_CET_2026_PORTAL,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'mca-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'mathematics-and-statistics-sectional-1', name: 'Mathematics & Statistics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics & Statistics', duration: 27, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'logical-abstract-reasoning-sectional-1', name: 'Logical / Abstract Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Logical / Abstract Reasoning', duration: 27, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'english-comprehension-and-verbal-ability-sectional-1', name: 'English Comprehension & Verbal Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Comprehension & Verbal Ability', duration: 18, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'computer-concepts-sectional-1', name: 'Computer Concepts Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Computer Concepts', duration: 18, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'state-set': {
+    slug: 'state-set',
+    name: 'State Eligibility Test',
+    shortName: 'State SET',
+    fullName: 'Maharashtra State Eligibility Test 2026 (Commerce)',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'maharashtra-commerce',
+        name: 'MH SET 2026 Commerce',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Paper I — Teaching & Research Aptitude', 'Paper II — Commerce'],
+          totalQuestions: 150,
+          totalMarks: 300,
+          duration: 180,
+          sectionBreakdown: [
+            { name: 'Paper I — Teaching & Research Aptitude', questions: 50, marks: 100 },
+            { name: 'Paper II — Commerce', questions: 100, marks: 200 },
+          ],
+          sourceUrl: MH_SET_2026_PORTAL,
+          checkedOn: '2 September 2026',
+        },
+        tests: [
+          { id: 'maharashtra-commerce-full-mock-1', name: 'Maharashtra Commerce Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'paper-i---teaching-and-research-aptitude-sectional-1', name: 'Paper I — Teaching & Research Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Paper I — Teaching & Research Aptitude', duration: 60, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+          { id: 'paper-ii---commerce-sectional-1', name: 'Paper II — Commerce Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Paper II — Commerce', duration: 120, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
   'cusat-cat': {
     slug: 'cusat-cat',
     name: 'CUSAT CAT',
@@ -11673,6 +12012,28 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
     fullName: 'Common University Entrance Test (UG) 2026',
     category: 'University & Science',
     stages: [
+      {
+        id: 'general-aptitude-test',
+        name: 'CUET UG 2026 General Aptitude Test',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Aptitude Test'],
+          totalQuestions: 50,
+          totalMarks: 250,
+          duration: 60,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'General Aptitude Test', questions: 50, marks: 250 },
+          ],
+          sourceUrl: CUET_UG_2026_PORTAL,
+          checkedOn: '1 September 2026',
+        },
+        tests: [
+          { id: 'gat-full-mock-1', name: 'General Aptitude Test Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 5, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'general-aptitude-test-sectional-1', name: 'General Aptitude Test Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Aptitude Test', duration: 60, marksPerCorrect: 5, negativeMarking: 1, checkedOn: '1 September 2026' },
+        ],
+      },
       {
         id: 'english',
         name: 'English',

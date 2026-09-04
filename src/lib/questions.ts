@@ -753,6 +753,16 @@ import { UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1 } from './questi
 import { UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1 } from './question-banks/ugc-net-june-2026-computer-science-applications-1';
 import { CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_1 } from './question-banks/cuet-pg-2026-coqp12-general-management-1';
 import { ICAR_AIEEA_PG_2026_AGRONOMY_1 } from './question-banks/icar-aieea-pg-2026-agronomy-1';
+import { CUET_UG_2026_GAT_FULL_MOCK_1 } from './question-banks/cuet-ug-2026-gat-full-mock-1';
+import { JCECE_2026_PCM_FULL_MOCK_1 } from './question-banks/jcece-2026-pcm-full-mock-1';
+import { JEST_2026_PHYSICS_FULL_MOCK_1 } from './question-banks/jest-2026-physics-full-mock-1';
+import { KEAM_2026_ENGINEERING_FULL_MOCK_1 } from './question-banks/keam-2026-engineering-full-mock-1';
+import { KERALA_MCA_2026_MCA_FULL_MOCK_1 } from './question-banks/kerala-mca-2026-mca-full-mock-1';
+import { KSDAT_2026_KSDAT_FULL_MOCK_1 } from './question-banks/ksdat-2026-ksdat-full-mock-1';
+import { MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1 } from './question-banks/mah-bhmct-bca-bba-bms-bbm-cet-2026-common-cet-full-mock-1';
+import { MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1 } from './question-banks/mah-mba-cet-2026-mba-mms-full-mock-1';
+import { MAH_MCA_CET_2026_MCA_FULL_MOCK_1 } from './question-banks/mah-mca-cet-2026-mca-full-mock-1';
+import { STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1 } from './question-banks/state-set-2026-maharashtra-commerce-full-mock-1';
 
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
@@ -2906,6 +2916,80 @@ const BCECE_TESTS: Record<string, Question[]> = {
   'bcece/chemistry-sectional-1': BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1.filter((question) => question.section === 'Chemistry'),
   'bcece/mathematics-sectional-1': BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1.filter((question) => question.section === 'Mathematics'),
 };
+const CUET_UG_HANDOFF_TESTS: Record<string, Question[]> = {
+  'cuet-ug/gat-full-mock-1': CUET_UG_2026_GAT_FULL_MOCK_1,
+  'cuet-ug/general-aptitude-test-sectional-1': CUET_UG_2026_GAT_FULL_MOCK_1.filter((question) => question.section === "General Aptitude Test"),
+};
+
+const JCECE_HANDOFF_TESTS: Record<string, Question[]> = {
+  'jcece/pcm-full-mock-1': JCECE_2026_PCM_FULL_MOCK_1,
+  'jcece/physics-sectional-1': JCECE_2026_PCM_FULL_MOCK_1.filter((question) => question.section === "Physics"),
+  'jcece/chemistry-sectional-1': JCECE_2026_PCM_FULL_MOCK_1.filter((question) => question.section === "Chemistry"),
+  'jcece/mathematics-sectional-1': JCECE_2026_PCM_FULL_MOCK_1.filter((question) => question.section === "Mathematics"),
+};
+
+const JEST_HANDOFF_TESTS: Record<string, Question[]> = {
+  'jest/physics-full-mock-1': JEST_2026_PHYSICS_FULL_MOCK_1,
+  'jest/part-a-sectional-1': JEST_2026_PHYSICS_FULL_MOCK_1.filter((question) => question.section === "Part A"),
+  'jest/part-b-sectional-1': JEST_2026_PHYSICS_FULL_MOCK_1.filter((question) => question.section === "Part B"),
+  'jest/part-c-sectional-1': JEST_2026_PHYSICS_FULL_MOCK_1.filter((question) => question.section === "Part C"),
+};
+
+const KEAM_HANDOFF_TESTS: Record<string, Question[]> = {
+  'keam/engineering-full-mock-1': KEAM_2026_ENGINEERING_FULL_MOCK_1,
+  'keam/mathematics-sectional-1': KEAM_2026_ENGINEERING_FULL_MOCK_1.filter((question) => question.section === "Mathematics"),
+  'keam/physics-sectional-1': KEAM_2026_ENGINEERING_FULL_MOCK_1.filter((question) => question.section === "Physics"),
+  'keam/chemistry-sectional-1': KEAM_2026_ENGINEERING_FULL_MOCK_1.filter((question) => question.section === "Chemistry"),
+};
+
+const KERALA_MCA_HANDOFF_TESTS: Record<string, Question[]> = {
+  'kerala-mca/mca-full-mock-1': KERALA_MCA_2026_MCA_FULL_MOCK_1,
+  'kerala-mca/computer-science-sectional-1': KERALA_MCA_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "Computer Science"),
+  'kerala-mca/mathematics-and-statistics-sectional-1': KERALA_MCA_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "Mathematics & Statistics"),
+  'kerala-mca/quantitative-aptitude-and-logical-ability-sectional-1': KERALA_MCA_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "Quantitative Aptitude & Logical Ability"),
+  'kerala-mca/english-sectional-1': KERALA_MCA_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "English"),
+  'kerala-mca/general-knowledge-sectional-1': KERALA_MCA_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "General Knowledge"),
+};
+
+const KSDAT_HANDOFF_TESTS: Record<string, Question[]> = {
+  'ksdat/ksdat-full-mock-1': KSDAT_2026_KSDAT_FULL_MOCK_1,
+  'ksdat/social-and-basic-sciences-sectional-1': KSDAT_2026_KSDAT_FULL_MOCK_1.filter((question) => question.section === "Social & Basic Sciences"),
+  'ksdat/general-knowledge-sectional-1': KSDAT_2026_KSDAT_FULL_MOCK_1.filter((question) => question.section === "General Knowledge"),
+  'ksdat/english-language-sectional-1': KSDAT_2026_KSDAT_FULL_MOCK_1.filter((question) => question.section === "English Language"),
+  'ksdat/numerical-ability-and-analytical-aptitude-sectional-1': KSDAT_2026_KSDAT_FULL_MOCK_1.filter((question) => question.section === "Numerical Ability & Analytical Aptitude"),
+  'ksdat/design-awareness-sectional-1': KSDAT_2026_KSDAT_FULL_MOCK_1.filter((question) => question.section === "Design Awareness"),
+};
+
+const MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS: Record<string, Question[]> = {
+  'mah-bhmct-bca-bba-bms-bbm-cet/common-cet-full-mock-1': MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1,
+  'mah-bhmct-bca-bba-bms-bbm-cet/english-language-sectional-1': MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1.filter((question) => question.section === "English Language"),
+  'mah-bhmct-bca-bba-bms-bbm-cet/reasoning-verbal-and-arithmetic-sectional-1': MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1.filter((question) => question.section === "Reasoning (Verbal & Arithmetic)"),
+  'mah-bhmct-bca-bba-bms-bbm-cet/general-knowledge-and-awareness-sectional-1': MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1.filter((question) => question.section === "General Knowledge & Awareness"),
+  'mah-bhmct-bca-bba-bms-bbm-cet/computer-basics-sectional-1': MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1.filter((question) => question.section === "Computer Basics"),
+};
+
+const MAH_MBA_CET_HANDOFF_TESTS: Record<string, Question[]> = {
+  'mah-mba-cet/mba-mms-full-mock-1': MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1,
+  'mah-mba-cet/logical-reasoning-sectional-1': MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1.filter((question) => question.section === "Logical Reasoning"),
+  'mah-mba-cet/abstract-reasoning-sectional-1': MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1.filter((question) => question.section === "Abstract Reasoning"),
+  'mah-mba-cet/quantitative-aptitude-sectional-1': MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1.filter((question) => question.section === "Quantitative Aptitude"),
+  'mah-mba-cet/verbal-ability-reading-comprehension-sectional-1': MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1.filter((question) => question.section === "Verbal Ability / Reading Comprehension"),
+};
+
+const MAH_MCA_CET_HANDOFF_TESTS: Record<string, Question[]> = {
+  'mah-mca-cet/mca-full-mock-1': MAH_MCA_CET_2026_MCA_FULL_MOCK_1,
+  'mah-mca-cet/mathematics-and-statistics-sectional-1': MAH_MCA_CET_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "Mathematics & Statistics"),
+  'mah-mca-cet/logical-abstract-reasoning-sectional-1': MAH_MCA_CET_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "Logical / Abstract Reasoning"),
+  'mah-mca-cet/english-comprehension-and-verbal-ability-sectional-1': MAH_MCA_CET_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "English Comprehension & Verbal Ability"),
+  'mah-mca-cet/computer-concepts-sectional-1': MAH_MCA_CET_2026_MCA_FULL_MOCK_1.filter((question) => question.section === "Computer Concepts"),
+};
+
+const STATE_SET_HANDOFF_TESTS: Record<string, Question[]> = {
+  'state-set/maharashtra-commerce-full-mock-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1,
+  'state-set/paper-i---teaching-and-research-aptitude-sectional-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1.filter((question) => question.section === "Paper I — Teaching & Research Aptitude"),
+  'state-set/paper-ii---commerce-sectional-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1.filter((question) => question.section === "Paper II — Commerce"),
+};
+
 const CUSAT_CAT_TESTS: Record<string, Question[]> = {
   'cusat-cat/btech-full-mock-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1,
   'cusat-cat/mathematics-sectional-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1.filter((question) => question.section === 'Mathematics'),
@@ -3074,7 +3158,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3090,6 +3174,96 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     // distinct idInfix so none of these six branches can collide with each
     // other. sbi-po needs its own branch (30, not the Banking cluster's
     // otherwise-uniform 35) since its own native banks are 30 questions.
+    // Handoff batch: exact test-id matches, so none of these can be shadowed
+    // by (or shadow) the slug-substring branches further down this chain.
+    : testId === 'cuet-ug/gat-full-mock-1'
+    ? 50
+    : testId === 'cuet-ug/general-aptitude-test-sectional-1'
+    ? 50
+    : testId === 'jcece/pcm-full-mock-1'
+    ? 150
+    : testId === 'jcece/physics-sectional-1'
+    ? 50
+    : testId === 'jcece/chemistry-sectional-1'
+    ? 50
+    : testId === 'jcece/mathematics-sectional-1'
+    ? 50
+    : testId === 'jest/physics-full-mock-1'
+    ? 40
+    : testId === 'jest/part-a-sectional-1'
+    ? 10
+    : testId === 'jest/part-b-sectional-1'
+    ? 20
+    : testId === 'jest/part-c-sectional-1'
+    ? 10
+    : testId === 'keam/engineering-full-mock-1'
+    ? 150
+    : testId === 'keam/mathematics-sectional-1'
+    ? 75
+    : testId === 'keam/physics-sectional-1'
+    ? 45
+    : testId === 'keam/chemistry-sectional-1'
+    ? 30
+    : testId === 'kerala-mca/mca-full-mock-1'
+    ? 120
+    : testId === 'kerala-mca/computer-science-sectional-1'
+    ? 50
+    : testId === 'kerala-mca/mathematics-and-statistics-sectional-1'
+    ? 25
+    : testId === 'kerala-mca/quantitative-aptitude-and-logical-ability-sectional-1'
+    ? 25
+    : testId === 'kerala-mca/english-sectional-1'
+    ? 15
+    : testId === 'kerala-mca/general-knowledge-sectional-1'
+    ? 5
+    : testId === 'ksdat/ksdat-full-mock-1'
+    ? 100
+    : testId === 'ksdat/social-and-basic-sciences-sectional-1'
+    ? 10
+    : testId === 'ksdat/general-knowledge-sectional-1'
+    ? 20
+    : testId === 'ksdat/english-language-sectional-1'
+    ? 20
+    : testId === 'ksdat/numerical-ability-and-analytical-aptitude-sectional-1'
+    ? 20
+    : testId === 'ksdat/design-awareness-sectional-1'
+    ? 30
+    : testId === 'mah-bhmct-bca-bba-bms-bbm-cet/common-cet-full-mock-1'
+    ? 100
+    : testId === 'mah-bhmct-bca-bba-bms-bbm-cet/english-language-sectional-1'
+    ? 30
+    : testId === 'mah-bhmct-bca-bba-bms-bbm-cet/reasoning-verbal-and-arithmetic-sectional-1'
+    ? 30
+    : testId === 'mah-bhmct-bca-bba-bms-bbm-cet/general-knowledge-and-awareness-sectional-1'
+    ? 20
+    : testId === 'mah-bhmct-bca-bba-bms-bbm-cet/computer-basics-sectional-1'
+    ? 20
+    : testId === 'mah-mba-cet/mba-mms-full-mock-1'
+    ? 200
+    : testId === 'mah-mba-cet/logical-reasoning-sectional-1'
+    ? 75
+    : testId === 'mah-mba-cet/abstract-reasoning-sectional-1'
+    ? 25
+    : testId === 'mah-mba-cet/quantitative-aptitude-sectional-1'
+    ? 50
+    : testId === 'mah-mba-cet/verbal-ability-reading-comprehension-sectional-1'
+    ? 50
+    : testId === 'mah-mca-cet/mca-full-mock-1'
+    ? 100
+    : testId === 'mah-mca-cet/mathematics-and-statistics-sectional-1'
+    ? 30
+    : testId === 'mah-mca-cet/logical-abstract-reasoning-sectional-1'
+    ? 30
+    : testId === 'mah-mca-cet/english-comprehension-and-verbal-ability-sectional-1'
+    ? 20
+    : testId === 'mah-mca-cet/computer-concepts-sectional-1'
+    ? 20
+    : testId === 'state-set/maharashtra-commerce-full-mock-1'
+    ? 150
+    : testId === 'state-set/paper-i---teaching-and-research-aptitude-sectional-1'
+    ? 50
+    : testId === 'state-set/paper-ii---commerce-sectional-1'
+    ? 100
     : testId.includes('prelims-reasoning-shared-sbi-po')
     ? 30
     : testId.includes('prelims-reasoning-shared')
@@ -4281,8 +4455,18 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
         throw new Error(`${question.id} has an invalid multi-select answer`);
       }
     } else {
-      if (question.options.length !== 4) throw new Error(`${question.id} must contain four options`);
-      if (new Set(question.options).size !== 4) throw new Error(`${question.id} contains duplicate options`);
+      // Four options is the norm across this bank, but a few exams publish a
+      // five-option single-response paper — KEAM and MAH MBA/MMS CET both do,
+      // per their own official prospectus/notification. Forcing those down to
+      // four would mean rewriting approved question content and would also
+      // misstate the real guessing odds a candidate faces, so the count check
+      // accepts four or five while every other guard below stays intact.
+      if (question.options.length !== 4 && question.options.length !== 5) {
+        throw new Error(`${question.id} must contain four or five options`);
+      }
+      if (new Set(question.options).size !== question.options.length) {
+        throw new Error(`${question.id} contains duplicate options`);
+      }
       if (question.correctIndex < 0 || question.correctIndex >= question.options.length) {
         throw new Error(`${question.id} has an invalid correct answer`);
       }
@@ -4303,6 +4487,63 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
 }
 
 const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
+  'jcece': [
+    { section: "Physics", count: 50 },
+    { section: "Chemistry", count: 50 },
+    { section: "Mathematics", count: 50 },
+  ],
+  'jest': [
+    { section: "Part A", count: 10 },
+    { section: "Part B", count: 20 },
+    { section: "Part C", count: 10 },
+  ],
+  'keam': [
+    { section: "Mathematics", count: 75 },
+    { section: "Physics", count: 45 },
+    { section: "Chemistry", count: 30 },
+  ],
+  'kerala-mca': [
+    { section: "Computer Science", count: 50 },
+    { section: "Mathematics & Statistics", count: 25 },
+    { section: "Quantitative Aptitude & Logical Ability", count: 25 },
+    { section: "English", count: 15 },
+    { section: "General Knowledge", count: 5 },
+  ],
+  'ksdat': [
+    { section: "Social & Basic Sciences", count: 10 },
+    { section: "General Knowledge", count: 20 },
+    { section: "English Language", count: 20 },
+    { section: "Numerical Ability & Analytical Aptitude", count: 20 },
+    { section: "Design Awareness", count: 30 },
+  ],
+  'mah-bhmct-bca-bba-bms-bbm-cet': [
+    { section: "English Language", count: 30 },
+    { section: "Reasoning (Verbal & Arithmetic)", count: 30 },
+    { section: "General Knowledge & Awareness", count: 20 },
+    { section: "Computer Basics", count: 20 },
+  ],
+  'mah-mba-cet': [
+    { section: "Logical Reasoning", count: 75 },
+    { section: "Abstract Reasoning", count: 25 },
+    { section: "Quantitative Aptitude", count: 50 },
+    { section: "Verbal Ability / Reading Comprehension", count: 50 },
+  ],
+  'mah-mca-cet': [
+    { section: "Mathematics & Statistics", count: 30 },
+    { section: "Logical / Abstract Reasoning", count: 30 },
+    { section: "English Comprehension & Verbal Ability", count: 20 },
+    { section: "Computer Concepts", count: 20 },
+  ],
+  'state-set': [
+    { section: "Paper I — Teaching & Research Aptitude", count: 50 },
+    { section: "Paper II — Commerce", count: 100 },
+  ],
+  'nest': [
+    { section: "Biology", count: 20 },
+    { section: "Chemistry", count: 20 },
+    { section: "Mathematics", count: 20 },
+    { section: "Physics", count: 20 },
+  ],
   'rrb-paramedical': [
     { section: 'General Awareness', count: 10 },
     { section: 'General Arithmetic, General Intelligence and Reasoning', count: 10 },
@@ -5174,6 +5415,13 @@ const clatEnglishLegalLogicalQuantitativeLayout = [
   { section: 'Logical Reasoning', count: 8 },
   { section: 'Quantitative Techniques', count: 4 },
 ];
+// CUET UG runs more than one full mock (English and the General Aptitude
+// Test), and fullMockLayouts is keyed by exam slug, so the GAT paper needs
+// its own named layout selected by test id, the same way CLAT PG and AILET
+// LLM do.
+const cuetUgGatLayout = [
+  { section: 'General Aptitude Test', count: 50 },
+];
 const clatPgLayout = [
   { section: 'PG Legal Comprehension', count: 120 },
 ];
@@ -5347,7 +5595,9 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                                                                           ? mhCetLaw3YearLegalLogicalEnglishLayout
                                                                                           : testId.includes('cat/varc-dilr-qa-full-mock')
                                                                                             ? catVarcDilrQaLayout
-                                                                                            : testId.includes('nmat/language-logical-reasoning-quantitative-full-mock')
+                                                                                            : testId.includes('cuet-ug/gat-full-mock')
+                                              ? cuetUgGatLayout
+                                            : testId.includes('nmat/language-logical-reasoning-quantitative-full-mock')
                                                                                               ? nmatLanguageLogicalReasoningQuantitativeLayout
                                                                                               : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
@@ -6028,6 +6278,57 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[0],
     BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[100],
     BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1[200],
+  ],
+  'jcece': [
+    JCECE_2026_PCM_FULL_MOCK_1[0],
+    JCECE_2026_PCM_FULL_MOCK_1[50],
+    JCECE_2026_PCM_FULL_MOCK_1[100],
+  ],
+  'jest': [
+    JEST_2026_PHYSICS_FULL_MOCK_1[0],
+    JEST_2026_PHYSICS_FULL_MOCK_1[10],
+    JEST_2026_PHYSICS_FULL_MOCK_1[30],
+  ],
+  'keam': [
+    KEAM_2026_ENGINEERING_FULL_MOCK_1[0],
+    KEAM_2026_ENGINEERING_FULL_MOCK_1[75],
+    KEAM_2026_ENGINEERING_FULL_MOCK_1[120],
+  ],
+  'kerala-mca': [
+    KERALA_MCA_2026_MCA_FULL_MOCK_1[0],
+    KERALA_MCA_2026_MCA_FULL_MOCK_1[50],
+    KERALA_MCA_2026_MCA_FULL_MOCK_1[75],
+    KERALA_MCA_2026_MCA_FULL_MOCK_1[100],
+    KERALA_MCA_2026_MCA_FULL_MOCK_1[115],
+  ],
+  'ksdat': [
+    KSDAT_2026_KSDAT_FULL_MOCK_1[0],
+    KSDAT_2026_KSDAT_FULL_MOCK_1[10],
+    KSDAT_2026_KSDAT_FULL_MOCK_1[30],
+    KSDAT_2026_KSDAT_FULL_MOCK_1[50],
+    KSDAT_2026_KSDAT_FULL_MOCK_1[70],
+  ],
+  'mah-bhmct-bca-bba-bms-bbm-cet': [
+    MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1[0],
+    MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1[30],
+    MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1[60],
+    MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1[80],
+  ],
+  'mah-mba-cet': [
+    MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1[0],
+    MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1[75],
+    MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1[100],
+    MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1[150],
+  ],
+  'mah-mca-cet': [
+    MAH_MCA_CET_2026_MCA_FULL_MOCK_1[0],
+    MAH_MCA_CET_2026_MCA_FULL_MOCK_1[30],
+    MAH_MCA_CET_2026_MCA_FULL_MOCK_1[60],
+    MAH_MCA_CET_2026_MCA_FULL_MOCK_1[80],
+  ],
+  'state-set': [
+    STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1[0],
+    STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1[50],
   ],
   'cusat-cat': [
     CUSAT_CAT_2026_BTECH_FULL_MOCK_1[0],
