@@ -96,14 +96,18 @@ jobs:
             fi
           } | tee BACKLINKS-REPORT.md
 
+      # `git add` first, then diff the index: BACKLINKS-REPORT.md starts out
+      # untracked, and `git diff --quiet` on an untracked path reports no
+      # change, so the original check skipped the commit every single time and
+      # the file would never have landed in the repo at all.
       - name: Commit report if changed
         run: |
-          if ! git diff --quiet -- BACKLINKS-REPORT.md; then
-            git config user.name 'TakeMockTest Coding Agent'
-            git config user.email 'actions@users.noreply.github.com'
-            git add BACKLINKS-REPORT.md
+          git config user.name 'TakeMockTest Coding Agent'
+          git config user.email 'actions@users.noreply.github.com'
+          git add BACKLINKS-REPORT.md
+          if git diff --cached --quiet -- BACKLINKS-REPORT.md; then
+            echo "No change in report — skipping commit."
+          else
             git commit -m 'Update backlinks report'
             git push origin HEAD:main
-          else
-            echo "No change in report — skipping commit."
           fi
