@@ -40,7 +40,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
     });
-    for (const path of ['about', 'terms']) {
+    // 'terms' deliberately absent: it's noindexed (see its page.tsx), and
+    // listing a noindexed URL in the sitemap asks Google to crawl something
+    // it's then told not to index. Privacy is already excluded for the same
+    // reason.
+    for (const path of ['about']) {
       entries.push({ url: `${SITE_URL}/${country}/${path}`, changeFrequency: 'yearly', priority: 0.3 });
     }
     for (const post of BLOG_POSTS) {

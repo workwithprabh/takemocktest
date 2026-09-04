@@ -6,6 +6,12 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     title: 'Terms of Service',
     description: 'Terms for using TakeMockTest mock tests, results, and study resources.',
     path: `/${country}/terms`,
+    // Same treatment as the Privacy Policy: a boilerplate legal page has no
+    // business competing in search. It was indexable while Privacy was not,
+    // which looks like an oversight rather than a decision — Search Console
+    // shows it drawing more impressions (7 in 90 days, avg. position 2.1)
+    // than most real pages, and converting none of them.
+    noIndex: true,
   });
 }
 
