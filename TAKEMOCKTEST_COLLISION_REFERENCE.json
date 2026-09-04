@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-04",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 769,
-    "questions": 29910
+    "bankFiles": 770,
+    "questions": 29970
   },
   "topicSaturation": [
     {
@@ -9081,7 +9081,7 @@
     },
     {
       "opening": "what is the sum of the",
-      "examCount": 20,
+      "examCount": 21,
       "exams": [
         "acet-mathematics",
         "aeee-2026",
@@ -9091,6 +9091,7 @@
         "ibps-rrb",
         "ibps-so",
         "imu-cet",
+        "jam-2026",
         "jee-main",
         "jeecup-2026",
         "kcet-engineering",
@@ -10760,6 +10761,20 @@
       ]
     },
     {
+      "opening": "what is the determinant of the",
+      "examCount": 8,
+      "exams": [
+        "aeee-2026",
+        "ap-pgecet",
+        "jam-2026",
+        "jee-main",
+        "kcet-engineering",
+        "nerist-nee",
+        "nmims-cet",
+        "srmjeee-2026"
+      ]
+    },
+    {
       "opening": "an object is placed 30 cm",
       "examCount": 8,
       "exams": [
@@ -11184,19 +11199,6 @@
         "iemjee-2026",
         "tg-eapcet",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "what is the determinant of the",
-      "examCount": 7,
-      "exams": [
-        "aeee-2026",
-        "ap-pgecet",
-        "jee-main",
-        "kcet-engineering",
-        "nerist-nee",
-        "nmims-cet",
-        "srmjeee-2026"
       ]
     },
     {

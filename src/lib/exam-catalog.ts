@@ -339,7 +339,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('CUET UG', 'National', 'cuet-ug'),
           exam('CUET PG', 'National', 'cuet-pg'),
           exam('ICAR AIEEA PG', 'National', 'icar-aieea-pg'),
-          exam('JAM', 'National'),
+          exam('JAM', 'National', 'jam'),
         ],
       },
       {

@@ -140,6 +140,7 @@ export type ExamSlug =
   | 'ap-lawcet'
   | 'tg-lawcet'
   | 'iiser-iat'
+  | 'jam'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -340,6 +341,7 @@ const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/
 const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
 const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const JAM_2026_INFORMATION_BROCHURE = 'https://jam2026.iitb.ac.in/';
 const GATE_2026_INFORMATION_BROCHURE = 'https://gate2026.iitg.ac.in/doc/IB/GATE2026-IB-10102025.pdf';
 const GSHSEB_BOARD_PORTAL = 'https://www.gsebeservice.com/web/';
 const JAIN_JET_2026_BTECH_ADMISSIONS_PAGE = 'https://set.jainuniversity.ac.in/btech-admissions-in-bangalore';
@@ -10874,6 +10876,38 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'jam': {
+    slug: 'jam',
+    name: 'IIT JAM',
+    shortName: 'IIT JAM',
+    fullName: 'Joint Admission Test for Masters (JAM) 2026: Mathematics (MA)',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'mathematics',
+        name: 'JAM 2026 Mathematics (MA)',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Mathematics'],
+          totalQuestions: 60,
+          totalMarks: 100,
+          duration: 180,
+          negativeMarking: 'Mixed by question type and mark value: Section A 1-mark MCQ -1/3 and 2-mark MCQ -2/3; Section B (MSQ) and Section C (NAT) carry no negative marking',
+          sectionBreakdown: [
+            { name: 'Mathematics', questions: 60, marks: 100 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer across all three sections, with free navigation between them; there is no per-section lock.',
+          note: 'TakeMockTest currently provides JAM 2026 practice for the Mathematics (MA) paper only, not the other JAM papers. Each mock follows the published three-section blueprint: Section A has 30 multiple-choice questions (10 for 1 mark and 20 for 2 marks, so 50 marks), Section B has 10 multiple-select questions of 2 marks each (20 marks), and Section C has 20 numerical-answer questions (10 for 1 mark and 10 for 2 marks, 30 marks), totalling 60 questions for 100 marks in 180 minutes. Negative marking applies only in Section A, at 1/3 mark for a wrong 1-mark MCQ and 2/3 mark for a wrong 2-mark MCQ; MSQ questions award full credit only for the exact correct set, with no partial credit and no penalty, and NAT questions award full credit for the exact typed value with no penalty. Content is written to the undergraduate JAM Mathematics syllabus areas (sequences and series of real numbers, functions of one real variable, functions of two or three real variables, integral calculus, differential equations, vector calculus, group theory and linear algebra), which is a different depth from the 10+2 mathematics used elsewhere on this site. The official JAM organising-institute site could not be reached from the environment that maintains this catalogue, so the three-section blueprint above rests on consistent secondary-source corroboration rather than a directly read information brochure, and the pattern is marked review-pending until it can be checked against the official document. The official JAM interface provides an on-screen virtual scientific calculator; this platform does not reproduce it, so questions are written to be solvable without one.',
+          sourceUrl: JAM_2026_INFORMATION_BROCHURE,
+          checkedOn: '4 September 2026',
+        },
+        tests: [
+          { id: 'mathematics-full-mock-1', name: 'Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Mixed question-level scoring: Section A MCQs earn 1 or 2 marks with a 1/3 or 2/3 mark deduction for a wrong answer; Section B MSQs earn full credit only for the exact correct set, with no partial credit and no negative marking; Section C NAT questions earn full credit for the exact numeric value, with no negative marking. One unrestricted 180-minute timer with free navigation across all three sections. This platform does not reproduce the official on-screen virtual scientific calculator.', checkedOn: '4 September 2026' },
         ],
       },
     ],

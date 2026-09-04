@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-04 from 769 bank files / 29910 questions.
+Generated: 2026-09-04 from 770 bank files / 29970 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -98,7 +98,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | which of the following does not | afcat-verbal, ailet-english, ap-eapcet, atma-analytical, ibps-rrb, ibps-so, inet-english, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-technician, sbi-clerk, sebi-grade, snap-general, ssc-cpo, ssc-gd, ssc-je, ssc-mts, territorial-army, upsc-cse, viteee-2026 (27) |
 | find the next number in the | atma-analytical, ibps-rrb, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, niftee-2026, nmat-language, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sebi-grade, sidbi-grade, snap-general, srmjeee-2026, ssc-cpo, ssc-gd, ssc-je, ssc-mts, tancet-mba, upsc-cse (27) |
 | two numbers are in the ratio | aeee-2026, afcat-verbal, cat-varc, cuet-pg, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, kmat-karnataka, niacl-ao, nmat-language, nmims-cet, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-group, rrb-je, sbi-clerk, sbi-po, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts (26) |
-| what is the sum of the | acet-mathematics, aeee-2026, gre-quantitative, ibps-clerk, ibps-po, ibps-rrb, ibps-so, imu-cet, jee-main, jeecup-2026, kcet-engineering, mht-cet, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-technician, srmjeee-2026, ssc-cpo, tg-polycet (20) |
+| what is the sum of the | acet-mathematics, aeee-2026, gre-quantitative, ibps-clerk, ibps-po, ibps-rrb, ibps-so, imu-cet, jam-2026, jee-main, jeecup-2026, kcet-engineering, mht-cet, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-technician, srmjeee-2026, ssc-cpo, tg-polycet (21) |
 | a fair die is rolled once | aeee-2026, ap-polycet, bcece-2026, ca-foundation, cg-pet, cg-ppt, cuet-ug, cusat-cat, ibps-clerk, ibps-po, jeecup-2026, mah-mca, met-2026, mht-cet, rbi-assistant, srmjeee-2026, ssc-cgl, ssc-selection, ugc-net, viteee-2026 (20) |
 | choose the word most similar in | atma-analytical, ibps-so, ibsat-verbal, kmat-karnataka, lic-aao, mat-language, micat-va, nabard-grade, niacl-ao, nmat-language, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, snap-general, ssc-cpo, ssc-gd, ssc-selection, ssc-steno, tancet-mba (20) |
 | a can complete a task in | ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, kmat-karnataka, mat-language, rbi-grade, rpf-si, rrb-group, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sbi-po, snap-general, ssc-cpo, ssc-mts, tancet-mba, upsc-cse (19) |
