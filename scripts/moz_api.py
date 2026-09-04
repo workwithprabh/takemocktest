@@ -8,10 +8,17 @@ Credentials are never read from a file inside this repo. Supply them via:
   MOZ_ACCESS_ID='...'
   MOZ_SECRET_KEY='...'
 
-Setup (one-time, has a genuinely free tier — 50 rows/month as of the
-research behind this script; paid tiers start around $20/month for higher
-volume, confirm current numbers at moz.com/products/api since Moz changes
-pricing):
+NOT CURRENTLY IN USE — Moz is paid. An earlier version of this docstring
+claimed a free 50-rows/month tier; that was wrong. Signing up in September
+2026 offers a 7-day trial and then charges about $179/month, which is not
+worth it for this site's link volume. This script is kept only so the
+integration exists if that ever changes or a subscription is bought; the
+weekly workflow skips it whenever MOZ_ACCESS_ID/MOZ_SECRET_KEY are unset,
+which is the expected state. Bing Webmaster (scripts/bing_webmaster.py) is
+the free source actually wired up, alongside Search Console's own Links
+report in the GSC web UI.
+
+Setup, if a subscription is ever bought:
   1. Sign up / log in at moz.com/products/api.
   2. Account settings -> API Access -> copy the Access ID and Secret Key.
      (These are per-account credentials, not scoped per-user.)
@@ -35,8 +42,7 @@ request examples (Moz shows these once you're logged in), and this script
 gets a one-line fix.
 
 Moz "rows": each linking domain / URL metrics report / anchor-text entry
-returned counts as one row against your monthly quota, so keep --limit low
-on the free tier.
+returned counts as one row against the plan's monthly quota.
 """
 
 import argparse

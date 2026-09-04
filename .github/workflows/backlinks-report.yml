@@ -1,6 +1,7 @@
 name: Backlinks weekly report
 
-# Snapshots Moz and Bing Webmaster link data into BACKLINKS-REPORT.md and
+# Snapshots Bing Webmaster (free) and, if ever subscribed, Moz (paid) link
+# data into BACKLINKS-REPORT.md and
 # commits it, matching the pattern gsc-report.yml already uses for Search
 # Console: an ordinary git diff week over week, no dashboard, no external
 # storage. Runs from GitHub because the coding-agent sandbox that ships most
@@ -9,6 +10,8 @@ name: Backlinks weekly report
 #
 # Either or both secrets can be set — the job runs whichever source is
 # configured and notes the other as skipped, rather than failing outright.
+# In practice only BING_API_KEY is expected: Moz turned out to cost about
+# $179/month after a 7-day trial, so it is deliberately not subscribed.
 
 on:
   schedule:
@@ -50,7 +53,7 @@ jobs:
               python3 scripts/moz_api.py metrics 2>&1
               echo '```'
             else
-              echo "_MOZ_ACCESS_ID / MOZ_SECRET_KEY not set — see scripts/moz_api.py for free-tier setup. Skipped._"
+              echo "_MOZ_ACCESS_ID / MOZ_SECRET_KEY not set. Moz is paid (~\$179/month after a 7-day trial), so this is the expected state — see scripts/moz_api.py. Skipped._"
             fi
             echo
 
