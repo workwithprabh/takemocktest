@@ -143,6 +143,7 @@ export type ExamSlug =
   | 'jam'
   | 'gpat'
   | 'cseet'
+  | 'neet-pg'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -343,6 +344,7 @@ const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/
 const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
 const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const NEET_PG_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const CSEET_2026_ICSI_PAGE = 'https://www.icsi.edu/student/cseet/';
 const GPAT_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const JAM_2026_INFORMATION_BROCHURE = 'https://jam2026.iitb.ac.in/';
@@ -10880,6 +10882,38 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'neet-pg': {
+    slug: 'neet-pg',
+    name: 'NEET PG',
+    shortName: 'NEET PG',
+    fullName: 'National Eligibility cum Entrance Test (Postgraduate) 2026',
+    category: 'Medical',
+    stages: [
+      {
+        id: 'medical',
+        name: 'NEET PG 2026 Computer-Based Test',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Pre-Clinical, Para-Clinical and Clinical'],
+          totalQuestions: 180,
+          totalMarks: 720,
+          duration: 210,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Pre-Clinical, Para-Clinical and Clinical', questions: 180, marks: 720 },
+          ],
+          timerNote: 'This mock runs a single unrestricted 210-minute timer. The official exam does not: it is administered in five time-bound groups of 36 questions with 42 minutes each, and a group closes permanently when its time expires, with unused time not carried forward. That lock is not reproduced here because NBEMS does not publish which subjects fall in which group, so any grouping this platform imposed would be invented rather than official.',
+          note: 'NBEMS revised NEET PG for 2026, reducing the paper from 200 questions and 800 marks to 180 questions and 720 marks. It is a computer-based test of 180 single-best-answer multiple-choice questions over 210 minutes, with 4 marks for a correct answer and 1 mark deducted for an incorrect one, and zero for an unattempted question. The paper is administered in five time-bound groups, A to E, of 36 questions and 42 minutes each; a candidate may move freely within the group currently open but cannot return to a group once its time has expired. The official material does not publish a subject-wise question distribution, nor which subjects sit in which group, so the allocation used in this mock across the nineteen MBBS subjects (General Medicine 20, General Surgery 17, Obstetrics and Gynaecology 17, Pathology 13, Pharmacology 13, Anatomy 12, Preventive and Social Medicine 12, Physiology 11, Biochemistry 10, Microbiology 10, Paediatrics 8, Forensic Medicine 7, ENT 6, Ophthalmology 6, Orthopaedics 5, Anaesthesia 4, Dermatology 3, Psychiatry 3, Radiology 3) is a TakeMockTest editorial balance rather than an official weightage. Questions are written to stable, curriculum-level material of the kind found in standard undergraduate textbooks, and deliberately avoid drug dosing and guideline specifics that change between editions. They are examination practice, not clinical guidance. The pattern is marked review-pending because natboard.edu.in cannot be reached from the environment that maintains this catalogue, so the counts, marks and group structure above rest on consistent secondary-source corroboration rather than a directly read information bulletin; secondary sources are themselves not unanimous, with a minority still describing three sections rather than five.',
+          sourceUrl: NEET_PG_2026_NBEMS_PORTAL,
+          checkedOn: '6 September 2026',
+        },
+        tests: [
+          { id: 'medical-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 210, marksPerCorrect: 4, negativeMarking: 1, scoringNote: '4 marks for each correct answer and 1 mark deducted for each incorrect answer, matching NEET PG\'s published scheme; unattempted questions score zero. This mock uses one unrestricted 210-minute timer rather than the official five 42-minute locked groups, because the official subject-to-group mapping is not published.', checkedOn: '6 September 2026' },
         ],
       },
     ],

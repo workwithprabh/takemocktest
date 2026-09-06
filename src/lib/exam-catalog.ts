@@ -219,7 +219,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         name: 'Medical admissions',
         exams: [
           exam('NEET UG', 'National', 'neet-ug'),
-          exam('NEET PG', 'National'),
+          exam('NEET PG', 'National', 'neet-pg'),
           exam('INI-CET', 'National'),
           exam('NEET SS', 'National'),
           exam('FMGE', 'National'),
