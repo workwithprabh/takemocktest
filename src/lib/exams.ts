@@ -144,6 +144,7 @@ export type ExamSlug =
   | 'gpat'
   | 'cseet'
   | 'neet-pg'
+  | 'fmge'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -344,6 +345,7 @@ const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/
 const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
 const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const FMGE_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const NEET_PG_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const CSEET_2026_ICSI_PAGE = 'https://www.icsi.edu/student/cseet/';
 const GPAT_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
@@ -10882,6 +10884,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'fmge': {
+    slug: 'fmge',
+    name: 'FMGE',
+    shortName: 'FMGE',
+    fullName: 'Foreign Medical Graduate Examination (Screening Test) 2026',
+    category: 'Medical',
+    stages: [
+      {
+        id: 'screening',
+        name: 'FMGE 2026 Screening Test',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Part A', 'Part B'],
+          totalQuestions: 300,
+          totalMarks: 300,
+          duration: 300,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Part A', questions: 150, marks: 150, duration: 150 },
+            { name: 'Part B', questions: 150, marks: 150, duration: 150 },
+          ],
+          timerNote: 'The two parts are separate sittings on the same day, each with its own 150-minute timer, so they are provided here as two tests rather than one continuous paper.',
+          note: 'FMGE is the screening examination conducted by NBEMS that Indian citizens and OCIs holding a primary medical qualification from outside India must pass before registration to practise. It is a computer-based test of 300 single-best-answer multiple-choice questions carrying 1 mark each, taken as two papers on the same day: Part A of 150 questions in the morning and Part B of 150 questions in the afternoon, each lasting 150 minutes. There is no negative marking, and an unattempted question scores zero. A candidate qualifies by scoring at least 150 of the 300 marks, that is 50 per cent, with no separate cut-off for either part. TakeMockTest mirrors that structure with two tests of 150 questions rather than one 300-question sitting, which matches how the exam is actually taken. NBEMS does not publish a subject-wise question distribution, nor which subjects appear in which part, so the spread across the nineteen MBBS subjects is a TakeMockTest editorial balance and each part samples all nineteen rather than being split by subject. Questions are written to stable, curriculum-level material from standard undergraduate textbooks and deliberately avoid drug dosing and guideline specifics that change between editions; they are examination practice, not clinical guidance. The pattern is marked review-pending because natboard.edu.in cannot be reached from the environment that maintains this catalogue, so the counts, timing and marking above rest on consistent secondary-source corroboration rather than a directly read information bulletin.',
+          sourceUrl: FMGE_2026_NBEMS_PORTAL,
+          checkedOn: '6 September 2026',
+        },
+        tests: [
+          { id: 'part-a-full-mock-1', name: 'Part A Full Mock Test 1', kind: 'full-length', status: 'checked', section: 'Part A', duration: 150, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark per correct answer with no negative marking, matching FMGE\'s published scheme. Qualifying requires 150 of 300 across both parts together, so this test covers half the qualifying paper.', checkedOn: '6 September 2026' },
+          { id: 'part-b-full-mock-1', name: 'Part B Full Mock Test 1', kind: 'full-length', status: 'checked', section: 'Part B', duration: 150, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark per correct answer with no negative marking, matching FMGE\'s published scheme. Qualifying requires 150 of 300 across both parts together, so this test covers half the qualifying paper.', checkedOn: '6 September 2026' },
         ],
       },
     ],

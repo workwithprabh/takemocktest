@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-06",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 773,
-    "questions": 30375
+    "bankFiles": 775,
+    "questions": 30675
   },
   "topicSaturation": [
     {
@@ -8876,7 +8876,7 @@
   "sharedOpenings": [
     {
       "opening": "which of the following is a",
-      "examCount": 31,
+      "examCount": 32,
       "exams": [
         "assam-cee",
         "bitsat-2026",
@@ -8884,6 +8884,7 @@
         "comedk-uget",
         "cseet-2026",
         "ctet-sep",
+        "fmge-2026",
         "gate-2026",
         "ibps-clerk",
         "ibps-rrb",
