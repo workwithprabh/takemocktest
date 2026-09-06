@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-06",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 771,
-    "questions": 30095
+    "bankFiles": 772,
+    "questions": 30195
   },
   "topicSaturation": [
     {
@@ -8875,6 +8875,43 @@
   ],
   "sharedOpenings": [
     {
+      "opening": "which of the following is a",
+      "examCount": 31,
+      "exams": [
+        "assam-cee",
+        "bitsat-2026",
+        "cg-ppt",
+        "comedk-uget",
+        "cseet-2026",
+        "ctet-sep",
+        "gate-2026",
+        "ibps-clerk",
+        "ibps-rrb",
+        "ibps-so",
+        "imu-cet",
+        "jee-main",
+        "kcet-engineering",
+        "kiitee-2026",
+        "kleee-2026",
+        "nabard-grade",
+        "rbi-assistant",
+        "rpf-constable",
+        "rpf-si",
+        "rrb-alp",
+        "rrb-group",
+        "rrb-je",
+        "rrb-technician",
+        "sbi-clerk",
+        "sebi-grade",
+        "sidbi-grade",
+        "special-ojee",
+        "ssc-chsl",
+        "ssc-gd",
+        "ssc-je",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "choose the word opposite in meaning",
       "examCount": 30,
       "exams": [
@@ -8908,42 +8945,6 @@
         "tancet-mba",
         "territorial-army",
         "upeseat-2026"
-      ]
-    },
-    {
-      "opening": "which of the following is a",
-      "examCount": 30,
-      "exams": [
-        "assam-cee",
-        "bitsat-2026",
-        "cg-ppt",
-        "comedk-uget",
-        "ctet-sep",
-        "gate-2026",
-        "ibps-clerk",
-        "ibps-rrb",
-        "ibps-so",
-        "imu-cet",
-        "jee-main",
-        "kcet-engineering",
-        "kiitee-2026",
-        "kleee-2026",
-        "nabard-grade",
-        "rbi-assistant",
-        "rpf-constable",
-        "rpf-si",
-        "rrb-alp",
-        "rrb-group",
-        "rrb-je",
-        "rrb-technician",
-        "sbi-clerk",
-        "sebi-grade",
-        "sidbi-grade",
-        "special-ojee",
-        "ssc-chsl",
-        "ssc-gd",
-        "ssc-je",
-        "viteee-2026"
       ]
     },
     {

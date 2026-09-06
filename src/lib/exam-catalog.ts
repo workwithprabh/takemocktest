@@ -481,7 +481,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
           exam('CA Foundation', 'National', 'ca-foundation'),
           exam('CA Intermediate', 'National'),
           exam('CA Final', 'National'),
-          exam('CSEET', 'National'),
+          exam('CSEET', 'National', 'cseet'),
           exam('CS Executive', 'National'),
           exam('CS Professional', 'National'),
           exam('CMA Foundation', 'National', 'cma-foundation'),

@@ -142,6 +142,7 @@ export type ExamSlug =
   | 'iiser-iat'
   | 'jam'
   | 'gpat'
+  | 'cseet'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -342,6 +343,7 @@ const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/
 const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
 const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const CSEET_2026_ICSI_PAGE = 'https://www.icsi.edu/student/cseet/';
 const GPAT_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const JAM_2026_INFORMATION_BROCHURE = 'https://jam2026.iitb.ac.in/';
 const GATE_2026_INFORMATION_BROCHURE = 'https://gate2026.iitg.ac.in/doc/IB/GATE2026-IB-10102025.pdf';
@@ -10878,6 +10880,38 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'cseet': {
+    slug: 'cseet',
+    name: 'CSEET',
+    shortName: 'CSEET',
+    fullName: 'CS Executive Entrance Test 2026: Paper 4, Business Laws and Management',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'business-laws-and-management',
+        name: 'CSEET Paper 4: Business Laws and Management',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Business Laws and Management'],
+          totalQuestions: 100,
+          totalMarks: 100,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Business Laws and Management', questions: 100, marks: 100 },
+          ],
+          timerNote: 'Single 120-minute timer for the whole paper, matching the official duration for Paper 4.',
+          note: 'ICSI restructured CSEET with effect from the June 2026 session. It is now a centre-based offline examination of four papers of 100 marks each, one per day: Business Communication, Fundamentals of Accounting, Economic and Business Environment, and Business Laws and Management. TakeMockTest covers Paper 4 only. The first three papers are subjective, descriptive papers of three hours each and cannot be auto-graded, the same exclusion already applied to the descriptive stages of RBI Grade B Phase II and NABARD Grade A Phase II. Paper 4 is the one paper that remains objective: an OMR-based multiple-choice paper of 100 marks in two hours with no negative marking, split into Business Laws for 60 marks and Business Management for 40 marks. This mock mirrors that split with 60 and 40 questions respectively. The official material does not publish the number of questions in Paper 4, so 100 questions of one mark each is the natural reading of a 100-mark objective paper rather than a figure taken from the bulletin, and it is flagged here as such. The pattern is marked review-pending for that reason and because icsi.edu cannot be reached from the environment that maintains this catalogue, so the structure above rests on consistent secondary-source corroboration of the restructuring rather than a directly read syllabus document.',
+          sourceUrl: CSEET_2026_ICSI_PAGE,
+          checkedOn: '6 September 2026',
+        },
+        tests: [
+          { id: 'business-laws-and-management-full-mock-1', name: 'Business Laws & Management Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark for each correct answer with no negative marking, matching Paper 4\'s published scheme.', checkedOn: '6 September 2026' },
         ],
       },
     ],
