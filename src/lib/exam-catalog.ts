@@ -231,7 +231,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         exams: [
           exam('AIIMS BSc Nursing Entrance', 'Institute'),
           exam('AIIMS NORCET', 'National'),
-          exam('GPAT', 'National'),
+          exam('GPAT', 'National', 'gpat'),
           exam('NIPER JEE', 'National', 'niper-jee'),
         ],
       },

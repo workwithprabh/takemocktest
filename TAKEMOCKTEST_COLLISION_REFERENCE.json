@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-04",
+  "generatedAt": "2026-09-06",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 770,
-    "questions": 29970
+    "bankFiles": 771,
+    "questions": 30095
   },
   "topicSaturation": [
     {

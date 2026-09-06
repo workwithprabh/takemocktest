@@ -141,6 +141,7 @@ export type ExamSlug =
   | 'tg-lawcet'
   | 'iiser-iat'
   | 'jam'
+  | 'gpat'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -341,6 +342,7 @@ const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/
 const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
 const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const GPAT_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const JAM_2026_INFORMATION_BROCHURE = 'https://jam2026.iitb.ac.in/';
 const GATE_2026_INFORMATION_BROCHURE = 'https://gate2026.iitg.ac.in/doc/IB/GATE2026-IB-10102025.pdf';
 const GSHSEB_BOARD_PORTAL = 'https://www.gsebeservice.com/web/';
@@ -10876,6 +10878,38 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'gpat': {
+    slug: 'gpat',
+    name: 'GPAT',
+    shortName: 'GPAT',
+    fullName: 'Graduate Pharmacy Aptitude Test 2026',
+    category: 'Medical',
+    stages: [
+      {
+        id: 'pharmacy',
+        name: 'GPAT 2026 Computer-Based Test',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Pharmacy'],
+          totalQuestions: 125,
+          totalMarks: 500,
+          duration: 180,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Pharmacy', questions: 125, marks: 500 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer across the whole paper; there is no per-subject lock.',
+          note: 'GPAT is conducted by NBEMS as a single computer-based paper of 125 multiple-choice questions for 500 marks in 180 minutes, in English only, with 4 marks for a correct answer and 1 mark deducted for an incorrect one. Unattempted questions score zero. The paper is not divided into separately timed sections, so this mock presents all 125 questions under one section labelled Pharmacy. The official material does not publish a fixed per-subject question distribution, and secondary sources disagree even on how many subject groups the paper is described in, so the allocation used here (Pharmaceutics 30, Pharmaceutical Chemistry 30, Pharmacology 25, Pharmaceutical Analysis 12, Pharmacognosy 10, Biochemistry and Human Physiology 8, Pharmaceutical Microbiology and Biotechnology 5, Pharmaceutical Jurisprudence and Pharmacy Practice 5) is a TakeMockTest editorial balance across the B.Pharm syllabus, not an official weightage. The pattern is marked review-pending rather than official for the same reason it is on NATA and JAM: natboard.edu.in cannot be reached from the environment that maintains this catalogue, so the question count, marks and marking scheme above rest on consistent secondary-source corroboration rather than a directly read information bulletin.',
+          sourceUrl: GPAT_2026_NBEMS_PORTAL,
+          checkedOn: '6 September 2026',
+        },
+        tests: [
+          { id: 'pharmacy-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: '4 marks for each correct answer and 1 mark deducted for each incorrect answer, matching GPAT\'s published scheme; unattempted questions score zero.', checkedOn: '6 September 2026' },
         ],
       },
     ],
