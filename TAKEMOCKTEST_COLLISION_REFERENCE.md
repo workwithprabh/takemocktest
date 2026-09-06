@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-06 from 773 bank files / 30375 questions.
+Generated: 2026-09-06 from 775 bank files / 30675 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -92,7 +92,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 
 | Opening (normalized) | Exams |
 |---|---|
-| which of the following is a | assam-cee, bitsat-2026, cg-ppt, comedk-uget, cseet-2026, ctet-sep, gate-2026, ibps-clerk, ibps-rrb, ibps-so, imu-cet, jee-main, kcet-engineering, kiitee-2026, kleee-2026, nabard-grade, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, sbi-clerk, sebi-grade, sidbi-grade, special-ojee, ssc-chsl, ssc-gd, ssc-je, viteee-2026 (31) |
+| which of the following is a | assam-cee, bitsat-2026, cg-ppt, comedk-uget, cseet-2026, ctet-sep, fmge-2026, gate-2026, ibps-clerk, ibps-rrb, ibps-so, imu-cet, jee-main, kcet-engineering, kiitee-2026, kleee-2026, nabard-grade, rbi-assistant, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-je, rrb-technician, sbi-clerk, sebi-grade, sidbi-grade, special-ojee, ssc-chsl, ssc-gd, ssc-je, viteee-2026 (32) |
 | choose the word opposite in meaning | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, ibps-clerk, ibps-po, ibsat-verbal, imu-cet, inet-english, jain-jet, kmat-karnataka, lpunest-2026, mat-language, mh-cet, micat-va, navy-ssr, nda-general, niftee-2026, nmat-language, rbi-assistant, sbi-po, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-mts, tancet-mba, territorial-army, upeseat-2026 (30) |
 | choose the word closest in meaning | afcat-verbal, agniveer-vayu, cds-english, cmat-2026, cuet-pg, gate-2026, ibps-clerk, ibps-po, ibps-rrb, ibps-so, imu-cet, inet-english, jain-jet, jipmat-2026, lpunest-2026, met-2026, navy-ssr, nda-general, niftee-2026, rbi-assistant, sbi-clerk, sbi-po, srmjeee-2026, ssc-cgl, ssc-chsl, ssc-cpo, ssc-mts, ssc-selection, territorial-army (29) |
 | which of the following does not | afcat-verbal, ailet-english, ap-eapcet, atma-analytical, ibps-rrb, ibps-so, inet-english, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-je, rrb-technician, sbi-clerk, sebi-grade, snap-general, ssc-cpo, ssc-gd, ssc-je, ssc-mts, territorial-army, upsc-cse, viteee-2026 (27) |

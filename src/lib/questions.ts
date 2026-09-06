@@ -660,6 +660,8 @@ import { CG_PET_2026_CHEMISTRY_1 } from './question-banks/cg-pet-2026-chemistry-
 import { CG_PET_2026_MATHEMATICS_1 } from './question-banks/cg-pet-2026-mathematics-1';
 import { BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1 } from './question-banks/bcece-2026-pcm-engineering-full-mock-1';
 import { CUSAT_CAT_2026_BTECH_FULL_MOCK_1 } from './question-banks/cusat-cat-2026-btech-full-mock-1';
+import { FMGE_2026_PART_A_FULL_MOCK_1 } from './question-banks/fmge-2026-part-a-full-mock-1';
+import { FMGE_2026_PART_B_FULL_MOCK_1 } from './question-banks/fmge-2026-part-b-full-mock-1';
 import { NEET_PG_2026_MEDICAL_FULL_MOCK_1 } from './question-banks/neet-pg-2026-medical-full-mock-1';
 import { CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1 } from './question-banks/cseet-2026-business-laws-and-management-full-mock-1';
 import { GPAT_2026_PHARMACY_FULL_MOCK_1 } from './question-banks/gpat-2026-pharmacy-full-mock-1';
@@ -3010,6 +3012,10 @@ const CUSAT_CAT_TESTS: Record<string, Question[]> = {
   'cusat-cat/physics-sectional-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1.filter((question) => question.section === 'Physics'),
   'cusat-cat/chemistry-sectional-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1.filter((question) => question.section === 'Chemistry'),
 };
+const FMGE_TESTS: Record<string, Question[]> = {
+  'fmge/part-a-full-mock-1': FMGE_2026_PART_A_FULL_MOCK_1,
+  'fmge/part-b-full-mock-1': FMGE_2026_PART_B_FULL_MOCK_1,
+};
 const NEET_PG_TESTS: Record<string, Question[]> = {
   'neet-pg/medical-full-mock-1': NEET_PG_2026_MEDICAL_FULL_MOCK_1,
 };
@@ -3184,7 +3190,7 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS);
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3868,6 +3874,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('ap-ecet/cse-diploma-full-mock')
     ? 200
+    : testId === 'fmge/part-a-full-mock-1' || testId === 'fmge/part-b-full-mock-1'
+    ? 150
     : testId === 'neet-pg/medical-full-mock-1'
     ? 180
     : testId === 'cseet/business-laws-and-management-full-mock-1'
@@ -5465,6 +5473,16 @@ const clatEnglishLegalLogicalQuantitativeLayout = [
 // Test), and fullMockLayouts is keyed by exam slug, so the GAT paper needs
 // its own named layout selected by test id, the same way CLAT PG and AILET
 // LLM do.
+// FMGE is sat as two 150-question papers on the same day, so each test is a
+// full mock of one part rather than of the whole 300-question paper. The
+// exam-slug layout would require both parts in a single test, so the two
+// parts get their own layouts selected by test id.
+const fmgePartALayout = [
+  { section: 'Part A', count: 150 },
+];
+const fmgePartBLayout = [
+  { section: 'Part B', count: 150 },
+];
 const cuetUgGatLayout = [
   { section: 'General Aptitude Test', count: 50 },
 ];
@@ -5645,7 +5663,11 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
                                               ? cuetUgGatLayout
                                             : testId.includes('nmat/language-logical-reasoning-quantitative-full-mock')
                                                                                               ? nmatLanguageLogicalReasoningQuantitativeLayout
-                                                                                              : fullMockLayouts[testId.split('/')[0]];
+                                                                                              : testId.includes('fmge/part-a-full-mock')
+                                                                                                ? fmgePartALayout
+                                                                                                : testId.includes('fmge/part-b-full-mock')
+                                                                                                  ? fmgePartBLayout
+                                                                                                  : fullMockLayouts[testId.split('/')[0]];
   let offset = 0;
   layout.forEach(({ section, count }) => {
     if (!fullMock.slice(offset, offset + count).every((question) => question.section === section)) {
@@ -6380,6 +6402,11 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     CUSAT_CAT_2026_BTECH_FULL_MOCK_1[0],
     CUSAT_CAT_2026_BTECH_FULL_MOCK_1[90],
     CUSAT_CAT_2026_BTECH_FULL_MOCK_1[165],
+  ],
+  'fmge': [
+    FMGE_2026_PART_A_FULL_MOCK_1[0],
+    FMGE_2026_PART_A_FULL_MOCK_1[75],
+    FMGE_2026_PART_B_FULL_MOCK_1[0],
   ],
   'neet-pg': [
     NEET_PG_2026_MEDICAL_FULL_MOCK_1[0],
