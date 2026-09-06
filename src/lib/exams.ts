@@ -146,6 +146,7 @@ export type ExamSlug =
   | 'neet-pg'
   | 'fmge'
   | 'ini-cet'
+  | 'xat'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -346,6 +347,7 @@ const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/
 const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
 const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const XAT_2026_OFFICIAL_PORTAL = 'https://xatonline.in/';
 const INI_CET_2026_AIIMS_PORTAL = 'https://www.aiimsexams.ac.in/';
 const FMGE_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const NEET_PG_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
@@ -10886,6 +10888,40 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'xat': {
+    slug: 'xat',
+    name: 'XAT',
+    shortName: 'XAT',
+    fullName: 'Xavier Aptitude Test 2026: Part 1',
+    category: 'Management',
+    stages: [
+      {
+        id: 'part-1',
+        name: 'XAT 2026 Part 1',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Verbal and Logical Ability', 'Decision Making', 'Quantitative Ability and Data Interpretation'],
+          totalQuestions: 75,
+          totalMarks: 75,
+          duration: 170,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Verbal and Logical Ability', questions: 26, marks: 26 },
+            { name: 'Decision Making', questions: 21, marks: 21 },
+            { name: 'Quantitative Ability and Data Interpretation', questions: 28, marks: 28 },
+          ],
+          timerNote: 'Single unrestricted 170-minute timer across all three Part 1 sections. XAT 2026 removed sectional time limits, so free movement between sections matches the real exam rather than approximating it.',
+          note: 'XAT is conducted by XLRI Jamshedpur and runs for 180 minutes in two parts. Part 1 carries 75 questions across Verbal and Logical Ability (26), Decision Making (21) and Quantitative Ability and Data Interpretation (28) in 170 minutes, with 1 mark for a correct answer and 0.25 deducted for an incorrect one. Part 2 is 20 General Knowledge questions in 10 minutes. TakeMockTest covers Part 1 only. General Knowledge is excluded for two reasons: it is current-affairs content that cannot be responsibly self-authored, the same exclusion applied to the General Awareness sections of the banking and railway exams on this site, and XAT itself does not count the GK score towards the percentile used for shortlisting, so its omission does not distort the practice score. Two further features of the real paper are noted rather than reproduced. XAT applies an additional penalty of 0.10 marks for each unattempted question beyond eight, which rewards attempting breadth and which this platform does not model; candidates should not read an unpenalised blank here as costless in the real exam. Sectional time limits were removed from XAT 2026, so a single timer across Part 1 is correct rather than an approximation. Decision Making is the section that distinguishes XAT from every other management entrance on this site, and it is built here as caselets with several questions each, testing stakeholder reasoning, proportionality and separating a records or process failure from the underlying need, rather than as isolated puzzles. The pattern is marked review-pending because xatonline.in cannot be reached from the environment that maintains this catalogue, so the counts and marking above rest on consistent secondary-source corroboration rather than a directly read bulletin.',
+          sourceUrl: XAT_2026_OFFICIAL_PORTAL,
+          checkedOn: '6 September 2026',
+        },
+        tests: [
+          { id: 'part-1-full-mock-1', name: 'Part 1 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 170, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'One mark per correct answer with 0.25 deducted for an incorrect one, matching XAT\'s published scheme. The real exam adds a 0.10 penalty for each unattempted question beyond eight, which this platform does not model, so leaving questions blank here is cheaper than it would be in the actual paper.', checkedOn: '6 September 2026' },
         ],
       },
     ],
