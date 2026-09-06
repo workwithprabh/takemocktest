@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-06",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 776,
-    "questions": 30875
+    "bankFiles": 777,
+    "questions": 30950
   },
   "topicSaturation": [
     {
@@ -10931,6 +10931,20 @@
       ]
     },
     {
+      "opening": "a train 180 m long crosses",
+      "examCount": 8,
+      "exams": [
+        "atma-analytical",
+        "cat-varc",
+        "ibps-so",
+        "rpf-si",
+        "rrb-je",
+        "rrb-ntpc",
+        "ssc-chsl",
+        "xat-2026"
+      ]
+    },
+    {
       "opening": "in how many ways can a",
       "examCount": 8,
       "exams": [
@@ -11295,6 +11309,19 @@
       ]
     },
     {
+      "opening": "for what value of k does",
+      "examCount": 7,
+      "exams": [
+        "ap-eapcet",
+        "assam-cee",
+        "iiit-hyderabad",
+        "jee-main",
+        "jeecup-2026",
+        "kcet-engineering",
+        "xat-2026"
+      ]
+    },
+    {
       "opening": "a uniform disc of mass 2",
       "examCount": 7,
       "exams": [
@@ -11422,19 +11449,6 @@
         "sbi-clerk",
         "ssc-cpo",
         "ssc-mts"
-      ]
-    },
-    {
-      "opening": "a train 180 m long crosses",
-      "examCount": 7,
-      "exams": [
-        "atma-analytical",
-        "cat-varc",
-        "ibps-so",
-        "rpf-si",
-        "rrb-je",
-        "rrb-ntpc",
-        "ssc-chsl"
       ]
     },
     {
@@ -11997,18 +12011,6 @@
         "comedk-uget",
         "tg-eapcet",
         "vtueee-2026"
-      ]
-    },
-    {
-      "opening": "for what value of k does",
-      "examCount": 6,
-      "exams": [
-        "ap-eapcet",
-        "assam-cee",
-        "iiit-hyderabad",
-        "jee-main",
-        "jeecup-2026",
-        "kcet-engineering"
       ]
     }
   ]
