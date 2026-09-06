@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-06 from 777 bank files / 30950 questions.
+Generated: 2026-09-06 from 778 bank files / 31040 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -109,8 +109,8 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a convex lens of focal length | ap-eapcet, atit-2026, bcece-2026, cg-pet, comedk-uget, gujcet-2026, jcece-2026, jee-advanced, kcet-engineering, mht-cet, nerist-nee, srmjeee-2026, tg-eapcet, uttarakhand-jeep, viteee-2026, vtueee-2026, wb-jelet (17) |
 | find the area of a rectangle | ibps-clerk, ibps-po, ibps-rrb, lic-aao, niacl-ao, rbi-assistant, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-technician, sbi-clerk, sbi-po, ssc-chsl, ssc-gd, ssc-mts, ssc-selection (17) |
 | across a period from left to | aeee-2026, ap-eapcet, ap-polycet, bihar-dcece, cg-pet, cg-ppt, jcece-2026, jeecup-2026, jharkhand-pece, kcet-engineering, keam-2026, met-2026, nmims-cet, tg-polycet, uttarakhand-jeep, wbjee-engineering (16) |
+| what is the coefficient of x | aeee-2026, ap-eapcet, ap-pgecet, atit-2026, bitsat-2026, bv-btech, imu-cet, ipmat-indore, kcet-engineering, met-2026, nerist-nee, srmjeee-2026, tjee-2026, upeseat-2026, vtueee-2026, wbjee-engineering (16) |
 | how many moles are present in | aeee-2026, assam-cee, atit-2026, bcece-2026, imu-cet, jcece-2026, jharkhand-pece, kcet-engineering, kiitee-2026, met-2026, mht-cet, neet-ug, tg-ecet, vtueee-2026, wbjee-engineering (15) |
-| what is the coefficient of x | aeee-2026, ap-eapcet, ap-pgecet, atit-2026, bitsat-2026, bv-btech, imu-cet, kcet-engineering, met-2026, nerist-nee, srmjeee-2026, tjee-2026, upeseat-2026, vtueee-2026, wbjee-engineering (15) |
 | what is the maximum number of | aeee-2026, amu-btech, ap-eapcet, atit-2026, bitsat-2026, jee-main, kcet-engineering, lpunest-2026, mht-cet, srmjeee-2026, ssc-cgl, ssc-mts, tjee-2026, viteee-2026, wbjee-engineering (15) |
 | in the bohr model of hydrogen | aeee-2026, ap-eapcet, bcece-2026, bv-btech, cg-pet, gujcet-2026, imu-cet, jcece-2026, jee-advanced, kcet-engineering, keam-2026, mht-cet, neet-ug, srmjeee-2026, tg-eapcet (15) |
 | find the sum of the first | ap-polycet, ca-foundation, cma-foundation, ibsat-verbal, jee-main, met-2026, nabard-grade, rbi-grade, rrb-technician, sebi-grade, sidbi-grade, ssc-chsl, ssc-cpo, uttarakhand-jeep, vtueee-2026 (15) |

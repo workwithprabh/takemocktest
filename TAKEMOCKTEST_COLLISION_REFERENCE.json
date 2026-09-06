@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-06",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 777,
-    "questions": 30950
+    "bankFiles": 778,
+    "questions": 31040
   },
   "topicSaturation": [
     {
@@ -6503,6 +6503,18 @@
       ]
     },
     {
+      "section": "Verbal Ability",
+      "topic": "Grammar",
+      "questionCount": 21,
+      "examCount": 4,
+      "exams": [
+        "ibsat-verbal",
+        "ipmat-indore",
+        "ipmat-rohtak",
+        "micat-va"
+      ]
+    },
+    {
       "section": "Mathematics",
       "topic": "Percentage",
       "questionCount": 21,
@@ -7255,6 +7267,17 @@
       ]
     },
     {
+      "section": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "questionCount": 30,
+      "examCount": 3,
+      "exams": [
+        "ipmat-indore",
+        "ipmat-rohtak",
+        "micat-va"
+      ]
+    },
+    {
       "section": "General English",
       "topic": "Fill in the blanks",
       "questionCount": 28,
@@ -7439,17 +7462,6 @@
         "cmat-2026",
         "kmat-karnataka",
         "mat-language"
-      ]
-    },
-    {
-      "section": "Verbal Ability",
-      "topic": "Grammar",
-      "questionCount": 15,
-      "examCount": 3,
-      "exams": [
-        "ibsat-verbal",
-        "ipmat-rohtak",
-        "micat-va"
       ]
     },
     {
@@ -9348,6 +9360,28 @@
       ]
     },
     {
+      "opening": "what is the coefficient of x",
+      "examCount": 16,
+      "exams": [
+        "aeee-2026",
+        "ap-eapcet",
+        "ap-pgecet",
+        "atit-2026",
+        "bitsat-2026",
+        "bv-btech",
+        "imu-cet",
+        "ipmat-indore",
+        "kcet-engineering",
+        "met-2026",
+        "nerist-nee",
+        "srmjeee-2026",
+        "tjee-2026",
+        "upeseat-2026",
+        "vtueee-2026",
+        "wbjee-engineering"
+      ]
+    },
+    {
       "opening": "how many moles are present in",
       "examCount": 15,
       "exams": [
@@ -9364,27 +9398,6 @@
         "mht-cet",
         "neet-ug",
         "tg-ecet",
-        "vtueee-2026",
-        "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "what is the coefficient of x",
-      "examCount": 15,
-      "exams": [
-        "aeee-2026",
-        "ap-eapcet",
-        "ap-pgecet",
-        "atit-2026",
-        "bitsat-2026",
-        "bv-btech",
-        "imu-cet",
-        "kcet-engineering",
-        "met-2026",
-        "nerist-nee",
-        "srmjeee-2026",
-        "tjee-2026",
-        "upeseat-2026",
         "vtueee-2026",
         "wbjee-engineering"
       ]
@@ -10486,6 +10499,21 @@
       ]
     },
     {
+      "opening": "a train 180 m long crosses",
+      "examCount": 9,
+      "exams": [
+        "atma-analytical",
+        "cat-varc",
+        "ibps-so",
+        "ipmat-indore",
+        "rpf-si",
+        "rrb-je",
+        "rrb-ntpc",
+        "ssc-chsl",
+        "xat-2026"
+      ]
+    },
+    {
       "opening": "a solution is prepared by dissolving",
       "examCount": 9,
       "exams": [
@@ -10928,20 +10956,6 @@
         "tg-ecet",
         "viteee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "a train 180 m long crosses",
-      "examCount": 8,
-      "exams": [
-        "atma-analytical",
-        "cat-varc",
-        "ibps-so",
-        "rpf-si",
-        "rrb-je",
-        "rrb-ntpc",
-        "ssc-chsl",
-        "xat-2026"
       ]
     },
     {
@@ -11978,6 +11992,18 @@
       ]
     },
     {
+      "opening": "in how many ways can the",
+      "examCount": 6,
+      "exams": [
+        "agniveer-vayu",
+        "atma-analytical",
+        "ca-foundation",
+        "cat-varc",
+        "ipmat-indore",
+        "xat-2026"
+      ]
+    },
+    {
       "opening": "an electron and a proton have",
       "examCount": 6,
       "exams": [
@@ -11999,18 +12025,6 @@
         "mht-cet",
         "vtueee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "the eccentricity of the ellipse x",
-      "examCount": 6,
-      "exams": [
-        "amu-btech",
-        "ap-eapcet",
-        "assam-cee",
-        "comedk-uget",
-        "tg-eapcet",
-        "vtueee-2026"
       ]
     }
   ]
