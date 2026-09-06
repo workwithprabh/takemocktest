@@ -314,7 +314,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         name: 'Integrated management',
         exams: [
           exam('JIPMAT', 'National', 'jipmat'),
-          exam('IPMAT Indore', 'Institute'),
+          exam('IPMAT Indore', 'Institute', 'ipmat-indore'),
           exam('IPMAT Rohtak', 'Institute', 'ipmat-rohtak'),
         ],
       },

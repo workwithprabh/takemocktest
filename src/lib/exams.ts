@@ -147,6 +147,7 @@ export type ExamSlug =
   | 'fmge'
   | 'ini-cet'
   | 'xat'
+  | 'ipmat-indore'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -400,6 +401,7 @@ const RRB_PARAMEDICAL_2025_NOTICE = 'https://rrbsecunderabad.gov.in/wp-content/u
 const CTET_2026_INFORMATION_BULLETIN = 'https://ctet.nic.in/document/ctet-sept-2026-information-bulletin/';
 const CUET_UG_2026_OFFICIAL_PORTAL = 'https://cuet.nta.nic.in/';
 const IPMAT_ROHTAK_2026_ADMISSION_PAGE = 'https://www.iimrohtak.ac.in/ipm-admission.php';
+const IPMAT_INDORE_2026_ADMISSION_PAGE = 'https://iimidr.ac.in/programmes/academic-programmes/five-year-integrated-programme-in-management-ipm/ipm-admissions-details/';
 const NCHM_JEE_2026_INFORMATION_PAGE = 'https://www.nchm.gov.in/information-about-nchm-jee-2026';
 const CG_PPT_2026_ONLINE_NOTICE = 'https://vyapamcg.cgstate.gov.in/Post?PostID=PPT26ONLINE';
 const TJEE_2026_SYLLABUS_PDF = 'https://tbjee.tripura.gov.in/sites/default/files/2026-01/Sylabus2026.pdf';
@@ -12298,6 +12300,39 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'english-full-mock-1', name: 'English Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 60, marksPerCorrect: 5, negativeMarking: 1, checkedOn: '2 September 2026' },
+        ],
+      },
+    ],
+  },
+  'ipmat-indore': {
+    slug: 'ipmat-indore',
+    name: 'IPMAT Indore',
+    fullName: 'IIM Indore Integrated Programme in Management Aptitude Test 2026',
+    category: 'Management',
+    stages: [
+      {
+        id: 'ipm-at',
+        name: 'IPM Aptitude Test',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Quantitative Ability (Short Answer)', 'Quantitative Ability (MCQ)', 'Verbal Ability'],
+          totalQuestions: 90,
+          totalMarks: 360,
+          duration: 120,
+          negativeMarking: '1 in the two MCQ sections, none in Quantitative Ability (Short Answer)',
+          sectionBreakdown: [
+            { name: 'Quantitative Ability (Short Answer)', questions: 15, marks: 60, duration: 40 },
+            { name: 'Quantitative Ability (MCQ)', questions: 30, marks: 120, duration: 40 },
+            { name: 'Verbal Ability', questions: 45, marks: 180, duration: 40 },
+          ],
+          timerNote: 'Three 40-minute section timers in the order shown. Each section locks when its timer ends and cannot be re-entered, which is how the real IPM Aptitude Test runs rather than an approximation of it.',
+          note: 'IIM Indore administers the IPM Aptitude Test as a 120-minute computer-based test of 90 questions, every one of them worth 4 marks. Quantitative Ability is split into two separately timed parts: 15 short-answer questions, where the candidate types a value and nothing is deducted for a wrong one, and 30 four-option MCQs. Verbal Ability contributes the remaining 45 MCQs. Both MCQ sections deduct 1 mark for a wrong answer. Each of the three sections is capped at 40 minutes and cannot be re-entered once its timer ends, and this mock reproduces that lock with three 40-minute section timers rather than pooling the time into a single 120-minute countdown. The short-answer questions are built as typed numeric entries carrying no negative marking, which is the scoring the real section uses, so the guess-freely-here strategy this mock rewards is the strategy the actual paper rewards. Two qualifications are worth stating plainly. First, the order in which the three sections are presented is not settled: reports of the 2026 sitting disagree about which section candidates saw first, and some describe the sequence as chosen by the test system rather than fixed, so the order used here, Short Answer then MCQ then Verbal Ability, is a presentation choice and not a claim about the live exam. Second, IIM Indore publishes no topic-level weightage for either section. The spread across arithmetic, algebra, number system, counting, geometry and the higher-mathematics topics that distinguish IPMAT Indore from most aptitude papers, together with the split across reading comprehension, grammar, vocabulary, para jumbles and critical reasoning, is TakeMockTest editorial balance informed by published exam analyses rather than an official blueprint. The pattern is marked review-pending because iimidr.ac.in is refused by the network the environment that maintains this catalogue runs behind, so the counts and marking above rest on consistent secondary-source corroboration rather than a directly read prospectus.',
+          sourceUrl: IPMAT_INDORE_2026_ADMISSION_PAGE,
+          checkedOn: '6 September 2026',
+        },
+        tests: [
+          { id: 'ipm-at-full-mock-1', name: 'IPM Aptitude Test Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, sectionDurations: [40, 40, 40], marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Every question is worth 4 marks. The 30 Quantitative Ability (MCQ) and 45 Verbal Ability questions deduct 1 mark for a wrong answer; the 15 Quantitative Ability (Short Answer) questions are typed numeric entries and carry no negative marking, so a wrong value there costs nothing beyond the mark missed. Each section is capped at 40 minutes and locks when its timer ends.', checkedOn: '6 September 2026' },
         ],
       },
     ],
