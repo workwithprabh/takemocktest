@@ -220,7 +220,7 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
         exams: [
           exam('NEET UG', 'National', 'neet-ug'),
           exam('NEET PG', 'National', 'neet-pg'),
-          exam('INI-CET', 'National'),
+          exam('INI-CET', 'National', 'ini-cet'),
           exam('NEET SS', 'National'),
           exam('FMGE', 'National', 'fmge'),
           exam('DNB PDCET', 'National'),

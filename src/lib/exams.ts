@@ -145,6 +145,7 @@ export type ExamSlug =
   | 'cseet'
   | 'neet-pg'
   | 'fmge'
+  | 'ini-cet'
   | 'aibe'
   | 'niper-jee'
   | 'aiapget'
@@ -345,6 +346,7 @@ const MAH_MBA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/
 const MAH_MCA_CET_2026_PORTAL = 'https://cetcell.mahacet.org/wp-content/uploads/2023/12/Information-Brochure-MAH-MCA-CET-2026_up.pdf';
 const MH_SET_2026_PORTAL = 'https://setexam.unipune.ac.in/Examination_Scheme.aspx';
 const CUSAT_CAT_2026_PROSPECTUS = 'https://admissions.cusat.ac.in/Prospectus/Prospectus2026.pdf';
+const INI_CET_2026_AIIMS_PORTAL = 'https://www.aiimsexams.ac.in/';
 const FMGE_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const NEET_PG_2026_NBEMS_PORTAL = 'https://natboard.edu.in/';
 const CSEET_2026_ICSI_PAGE = 'https://www.icsi.edu/student/cseet/';
@@ -10884,6 +10886,38 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
+        ],
+      },
+    ],
+  },
+  'ini-cet': {
+    slug: 'ini-cet',
+    name: 'INI-CET',
+    shortName: 'INI-CET',
+    fullName: 'Institutes of National Importance Combined Entrance Test 2026',
+    category: 'Medical',
+    stages: [
+      {
+        id: 'medical',
+        name: 'INI-CET 2026 Computer-Based Test',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Pre-Clinical, Para-Clinical and Clinical'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 180,
+          negativeMarking: 'One third of a mark deducted for each incorrect answer; unattempted questions score zero',
+          sectionBreakdown: [
+            { name: 'Pre-Clinical, Para-Clinical and Clinical', questions: 200, marks: 200 },
+          ],
+          timerNote: 'This mock runs a single unrestricted 180-minute timer. The official exam is administered in four time-bound parts of 50 questions with 45 minutes each, and a part closes when its time expires; that lock is not reproduced because AIIMS does not publish which subjects sit in which part.',
+          note: 'INI-CET is conducted by AIIMS New Delhi for postgraduate admission to the Institutes of National Importance, including AIIMS, PGIMER, JIPMER, NIMHANS and SCTIMST, and is held twice a year. It is a computer-based test of 200 multiple-choice questions carrying 1 mark each over 180 minutes, with one third of a mark deducted for an incorrect answer and zero for an unattempted one. The official paper is administered in four time-bound parts of 50 questions with 45 minutes each, and a part closes when its time expires. That lock is not reproduced here because AIIMS does not publish which subjects fall in which part, so any grouping this platform imposed would be invented; the mock runs a single unrestricted 180-minute timer instead. There is likewise no published subject-wise weightage, so the spread across the nineteen MBBS subjects is a TakeMockTest editorial balance rather than an official one. Difficulty is graded relative to this exam\'s own candidates, who are MBBS graduates, so a named association or definition they are expected to know cold is marked medium and hard is reserved for case-based and management questions; on that basis this bank is 27 per cent hard, against 11 per cent for the NEET PG bank and 6 per cent for FMGE, which reflects INI-CET being the most demanding of the three. Questions are written to stable, curriculum-level material from standard undergraduate textbooks, avoiding drug dosing and guideline specifics that change between editions, and are examination practice rather than clinical guidance. The pattern is marked review-pending because aiimsexams.ac.in cannot be reached from the environment that maintains this catalogue, so the counts, timing and marking above rest on consistent secondary-source corroboration rather than a directly read prospectus.',
+          sourceUrl: INI_CET_2026_AIIMS_PORTAL,
+          checkedOn: '6 September 2026',
+        },
+        tests: [
+          { id: 'medical-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0.3333, scoringNote: 'One mark for each correct answer with one third of a mark deducted for each incorrect answer, matching INI-CET\'s published scheme; unattempted questions score zero. This mock uses one unrestricted 180-minute timer rather than the official four 45-minute locked parts, because the official subject-to-part mapping is not published.', checkedOn: '6 September 2026' },
         ],
       },
     ],
