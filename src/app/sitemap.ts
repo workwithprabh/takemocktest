@@ -6,6 +6,7 @@ import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
 import { UPDATES } from '@/lib/updates';
 import { getQuestionsForTest } from '@/lib/questions';
+import { LR_SLUG, LR_TEST_SPECS } from '@/lib/logical-reasoning';
 
 export const dynamic = 'force-static';
 
@@ -26,6 +27,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({ url: `${SITE_URL}/${country}`, changeFrequency: 'daily', priority: 1 });
     entries.push({ url: `${SITE_URL}/${country}/exams`, changeFrequency: 'weekly', priority: 0.9 });
     entries.push({ url: `${SITE_URL}/${country}/exam-updates`, changeFrequency: 'daily', priority: 0.8 });
+    // Logical Reasoning hub: the landing page and each practice set. The
+    // /attempt routes are deliberately absent — they're noindexed, like every
+    // other attempt route on the site.
+    entries.push({ url: `${SITE_URL}/${country}/${LR_SLUG}`, changeFrequency: 'monthly', priority: 0.8 });
+    for (const spec of LR_TEST_SPECS) {
+      entries.push({
+        url: `${SITE_URL}/${country}/${LR_SLUG}/test/${spec.id}`,
+        changeFrequency: 'monthly',
+        priority: 0.6,
+      });
+    }
     for (const update of UPDATES) {
       entries.push({
         url: `${SITE_URL}/${country}/exam-updates/${update.slug}`,
