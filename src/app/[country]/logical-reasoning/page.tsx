@@ -177,6 +177,21 @@ export default async function LogicalReasoningHubPage({ params }: { params: Prom
           </ul>
         </section>
 
+        <section aria-labelledby="topics-xref" className="mt-12 border-l-2 border-action-600 bg-action-50 p-5">
+          <h2 id="topics-xref" className="text-lg font-bold text-ink-900">Looking for one topic across every exam?</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-ink-700">
+            This section grades reasoning by difficulty. The topic-practice section cuts the whole question corpus the
+            other way &mdash; by topic &mdash; and covers quantitative and English families too, so you can drill
+            percentages or error spotting on their own.
+          </p>
+          <Link
+            href={`/${country}/practice`}
+            className="mt-3 inline-flex min-h-11 items-center border border-ink-200 bg-white px-4 text-sm font-semibold text-ink-900 transition hover:border-ink-900"
+          >
+            Browse practice by topic
+          </Link>
+        </section>
+
         <section aria-labelledby="faq" className="mt-12 max-w-3xl">
           <h2 id="faq" className="font-sans text-2xl font-bold tracking-tight text-ink-900">Questions about this section</h2>
           <dl className="mt-4 border-t border-ink-200">

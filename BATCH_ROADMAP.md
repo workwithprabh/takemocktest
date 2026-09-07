@@ -173,6 +173,46 @@ its rules:
   not comparable with the same questions inside their source mocks. That sentence is on the
   test pages, not just in this file.
 
+### Two kinds of cross-exam section: frozen and growing
+
+There are now two, and the difference is not cosmetic — getting it wrong breaks either
+people's saved attempts or the section's ability to grow.
+
+**Frozen — the Logical Reasoning hub** (`logical-reasoning-data.ts`). Its sets are numbered
+products: "Easy Set 2" is a specific 25 questions, its URL is indexed, and visitors hold saved
+attempts against it. A published set's question list is therefore never edited. New material
+becomes a new set. Composition lives in a generated module with explicit ID lists.
+
+**Growing — Topic practice** (`practice-topics.ts`). A topic page is not a numbered product,
+it is a *view of a pool*: "every Profit and Loss question on the site". It is supposed to grow.
+So it holds no ID lists at all — the index is rebuilt from the live banks at build time, and
+new questions join the relevant topic pools the next time the site builds.
+
+**This is the answer to "can we grow these as we add tests".** For topic pages, yes, with no
+extra work: adding exam content and growing the topic pages are the same job. For the LR hub,
+no — it needs a deliberate grading round, because a difficulty ladder is only meaningful if
+something graded the difficulty.
+
+Two consequences of the growing model, worth stating because they look like bugs otherwise:
+
+- A practice set is drawn deterministically (seeded from the topic slug) so one build is
+  internally consistent — the page describes the set you actually get. Across builds the draw
+  can change as the pool grows. That is intended, and the pages say so.
+- Never point a numbered, frozen product at the topic index.
+
+**Curation is editorial, not mechanical.** `PRACTICE_TOPICS` was hand-picked from the 127
+canonical topics carrying 50+ questions. Excluded on purpose: section names used as topics
+("Physics", "Grammar", "Logical Reasoning"), question-type labels meaningless alone ("Detail"),
+single-exam specialisms, and General Awareness topics whose answers date ("Banking Awareness",
+"Sports"). `canonicalTopicKey` merges only spelling and spacing variants; anything beyond that
+— singular versus plural, two labels for one idea — is a judgement and lives in the topic's
+`matches` array where it can be read and argued with.
+
+**Batch 2 for this section** is the subject topics for engineering and medical entrances —
+Thermodynamics, Electrochemistry, Differential Equations, Current Electricity and the rest.
+Each already carries 100+ questions across 25-40 exams. They serve a different audience from
+the aptitude topics and deserve their own framing rather than being appended to this list.
+
 ### How a skill section is introduced and interlinked
 
 A section no exam owns is reachable only because we deliberately made it so. Every other

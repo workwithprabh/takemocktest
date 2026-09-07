@@ -65,6 +65,7 @@ export default function BottomNav({ country }: { country: string }) {
             {[
               ['Exam updates', `/${country}/exam-updates`],
               ['Logical reasoning', `/${country}/logical-reasoning`],
+              ['Topic practice', `/${country}/practice`],
               ['Study resources', `/${country}/blog`],
               ['About', `/${country}/about`],
               ['Contact', `/${country}/contact`],
