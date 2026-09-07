@@ -752,6 +752,7 @@ import { IISER_IAT_2026_CHEMISTRY_1 } from './question-banks/iiser-iat-2026-chem
 import { IISER_IAT_2026_MATHEMATICS_1 } from './question-banks/iiser-iat-2026-mathematics-1';
 import { IISER_IAT_2026_PHYSICS_1 } from './question-banks/iiser-iat-2026-physics-1';
 import { AILET_2026_LLM_LAW_1 } from './question-banks/ailet-2026-llm-law-1';
+import { AILET_2026_LLM_LAW_2 } from './question-banks/ailet-2026-llm-law-2';
 import { CTET_SEP_2026_PAPER1_CHILD_DEVELOPMENT_PEDAGOGY_1 } from './question-banks/ctet-sep-2026-paper1-child-development-pedagogy-1';
 import { CTET_SEP_2026_PAPER1_MATHEMATICS_1 } from './question-banks/ctet-sep-2026-paper1-mathematics-1';
 import { CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1 } from './question-banks/ctet-sep-2026-paper1-environmental-studies-1';
@@ -1987,6 +1988,7 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ailet/english-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'English'),
   'ailet/logical-reasoning-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'Logical Reasoning'),
   'ailet/llm-full-mock-1': AILET_2026_LLM_LAW_1,
+  'ailet/llm-full-mock-2': AILET_2026_LLM_LAW_2,
   'slat/logical-legal-analytical-reading-full-mock-1': [
     ...SLAT_2026_LOGICAL_REASONING_1,
     ...SLAT_2026_LEGAL_REASONING_1,
