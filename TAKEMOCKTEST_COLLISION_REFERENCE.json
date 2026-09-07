@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-07",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 779,
-    "questions": 31117
+    "bankFiles": 780,
+    "questions": 31173
   },
   "topicSaturation": [
     {
@@ -9756,6 +9756,23 @@
       ]
     },
     {
+      "opening": "what is the value of x",
+      "examCount": 11,
+      "exams": [
+        "ap-ecet",
+        "atit-2026",
+        "gmat-2026",
+        "ibps-po",
+        "ibsat-verbal",
+        "mat-language",
+        "nchm-jee",
+        "sat-math",
+        "sbi-po",
+        "snap-general",
+        "tancet-mba"
+      ]
+    },
+    {
       "opening": "find the area of a triangle",
       "examCount": 11,
       "exams": [
@@ -10081,22 +10098,6 @@
         "srmjeee-2026",
         "viteee-2026",
         "vtueee-2026"
-      ]
-    },
-    {
-      "opening": "what is the value of x",
-      "examCount": 10,
-      "exams": [
-        "ap-ecet",
-        "atit-2026",
-        "ibps-po",
-        "ibsat-verbal",
-        "mat-language",
-        "nchm-jee",
-        "sat-math",
-        "sbi-po",
-        "snap-general",
-        "tancet-mba"
       ]
     },
     {

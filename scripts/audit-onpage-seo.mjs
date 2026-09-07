@@ -50,11 +50,29 @@ for (const file of files) {
   // --- title ---
   const titleMatch = html.match(/<title>([^<]*)<\/title>/);
   const title = titleMatch?.[1]?.trim();
+  let stutter = '';
   if (!title) {
     errors.push(`${rel}: missing <title>`);
   } else {
     if (title.length > 65) warnings.push(`${rel}: title is ${title.length} chars, likely truncates in search results — "${title}"`);
     if (title.length < 15) warnings.push(`${rel}: title is only ${title.length} chars — "${title}"`);
+    // Page titles are assembled as "<exam name> <stage or test name>", so a
+    // stage or test name that already contains the exam name produces a
+    // stutter like "GMAT GMAT Focus Edition Full Mock Test 1". Six exams were
+    // corrected by hand for exactly this once; catch it here instead of
+    // waiting to notice it in a rendered page.
+    const titleWords = title?.toLowerCase().match(/[a-z0-9]+/g) ?? [];
+    for (let span = 1; span <= 4 && !stutter; span += 1) {
+      for (let start = 0; start + 2 * span <= titleWords.length; start += 1) {
+        const first = titleWords.slice(start, start + span).join(' ');
+        const second = titleWords.slice(start + span, start + 2 * span).join(' ');
+        if (first === second) {
+          stutter = first;
+          break;
+        }
+      }
+    }
+    if (stutter) errors.push(`${rel}: title repeats "${stutter}" back to back — "${title}"`);
   }
 
   // --- meta description ---
