@@ -209,6 +209,42 @@ which is worse than an omission.
 **The general rule: check what a schema type is currently worth before spending pages on it,
 and never mark up what the page does not show.**
 
+### SEO drift: every audit here checks state, none checked change
+
+Every other gate in `qa:site` answers "is the site correct right now?" — valid schema, one
+h1, no dead links, no thin pages. None of them could answer "what did this change do to the
+site's search footprint, and did I mean it to?" A refactor that rewrites 157 exam titles,
+repoints a canonical, or adds `noindex` to a section leaves every page individually valid and
+every audit green while the whole site moves underneath.
+
+`npm run qa:drift` (`scripts/audit-seo-drift.mjs`, part of `qa:site`) closes that. It diffs
+the current export against `TAKEMOCKTEST_SEO_BASELINE.json`, a committed snapshot of every
+page's title, description, canonical, robots directives, h1 text, heading-structure hash,
+schema types and payload hash, Open Graph hash, and sitemap membership.
+
+- **CRITICAL, fails the build** — a page removed, noindexed, stripped of its title or
+  canonical, moved to a different canonical, broken from one h1 to zero or several, or
+  dropped from the sitemap while still indexable. All of these are deliberate when they are
+  correct, so failing and forcing a re-capture is the feature.
+- **WARNING, printed only** — titles, descriptions, h1 text, heading counts, schema payloads.
+  Ordinary content work moves these constantly; failing on them would train everyone to
+  ignore the audit.
+- **INFO** — new pages, new sitemap entries, a page becoming indexable again.
+
+Accept intended changes with `npm run seo:baseline`, which re-captures the baseline. **Read
+the diff of that file before committing it** — that diff is the whole point. "This change
+moves 157 titles" is worth seeing in review, not in a ranking report six weeks later.
+
+Two decisions worth keeping: the baseline lives **in the repo**, not in a cache directory, so
+it survives a fresh clone and a throwaway CI container and shows up in review; and the
+canonical is recorded **only when it is not self-referencing**, because storing 4,584
+predictable values would bury the two that matter.
+
+The same script also enforces a standing invariant the state audits missed: every indexable
+page must be in `sitemap.xml` and no noindexed page may be. Drift alone would file a new page
+that ships indexable but unsubmitted as a harmless INFO. Today: 1,716 indexable pages, all
+submitted, with `/theme-1` the one documented exemption.
+
 ### Run the installed SEO skills on generated sections
 
 There is a set of SEO skills installed in this environment, and the programmatic-pages

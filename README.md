@@ -26,8 +26,23 @@ npm run build
 npm run qa:links  # hub reachability + dead internal links (needs out/, so run after build)
 npm run qa:thin-content  # boilerplate ratio across generated sections (needs out/)
 npm run qa:schema        # JSON-LD validity across every page (needs out/)
+npm run qa:drift         # diff every page's SEO state against the committed baseline (needs out/)
 npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build + SEO + links
 ```
+
+`qa:drift` compares `out/` against `TAKEMOCKTEST_SEO_BASELINE.json`, a committed
+snapshot of every page's title, description, canonical, robots directives, h1,
+heading structure, schema types and sitemap membership. It fails the build only
+on de-indexing changes — a page removed, noindexed, stripped of its canonical or
+title, or dropped from the sitemap — and prints title/description/schema moves as
+warnings. When those changes are intentional, accept them with:
+
+```bash
+npm run seo:baseline   # re-capture the baseline from the current build
+```
+
+Review the diff of `TAKEMOCKTEST_SEO_BASELINE.json` before committing it: that
+diff is the record of what a change did to the site's search footprint.
 
 ## Adding a new exam
 
@@ -36,7 +51,8 @@ npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build +
 3. Add the question-bank `.ts` files to `src/lib/question-banks/` and wire them into `src/lib/questions.ts`.
 4. Extend `scripts/audit-question-banks.mjs`'s filename regex and expected-count logic for the new file prefix.
 5. Run `npm run qa:site`, then a focused browser smoke test (see `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §6).
-6. Update `public/llms.txt`, `BATCH_ROADMAP.md`, and `TAKEMOCKTEST_CURRENT_STATUS.md`.
+6. Run `npm run seo:baseline` and commit the updated `TAKEMOCKTEST_SEO_BASELINE.json` — read its diff first, so the new exam's pages are the only thing that moved.
+7. Update `public/llms.txt`, `BATCH_ROADMAP.md`, and `TAKEMOCKTEST_CURRENT_STATUS.md`.
 
 ## Design system
 
