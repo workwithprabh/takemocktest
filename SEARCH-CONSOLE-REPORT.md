@@ -1,14 +1,14 @@
 # Search Console report — takemocktest.com
 
-Generated 2026-09-04 10:07 UTC by `scripts/gsc-query.py report` (see `.github/workflows/gsc-report.yml`).
-Window: last 90 days (2026-06-06 to 2026-09-04). Search Analytics data lags 2-3 days, so the
+Generated 2026-09-07 11:42 UTC by `scripts/gsc-query.py report` (see `.github/workflows/gsc-report.yml`).
+Window: last 90 days (2026-06-09 to 2026-09-07). Search Analytics data lags 2-3 days, so the
 most recent few days are typically undercounted or missing.
 
 ## Totals
 
 | Clicks | Impressions | CTR | Avg. position |
 |---|---|---|---|
-| 2 | 61 | 3.28% | 25.5 |
+| 2 | 64 | 3.12% | 24.4 |
 
 ## Top 13 queries by impressions
 
@@ -28,7 +28,7 @@ most recent few days are typically undercounted or missing.
 | ssc cgl free mock test | 0 | 1 | 84.0 |
 | ssc cgl or ibps po which is easy to crack | 0 | 1 | 43.0 |
 
-## Top 18 pages by impressions
+## Top 26 pages by impressions
 
 | Page | Clicks | Impressions | Avg. position |
 |---|---|---|---|
@@ -45,8 +45,16 @@ most recent few days are typically undercounted or missing.
 | https://takemocktest.com/in/blog/understanding-negative-marking | 0 | 3 | 28.3 |
 | https://takemocktest.com/in/rrb-ntpc/mock-test | 0 | 3 | 59.3 |
 | https://takemocktest.com/in/blog/how-to-build-a-study-timetable | 0 | 2 | 10.0 |
+| https://takemocktest.com/in/exam-updates/ibps-po-crp-16-notification-2026 | 0 | 2 | 2.5 |
 | https://takemocktest.com/in/exams/law | 0 | 2 | 68.0 |
+| https://takemocktest.com/in/ssc-cgl/syllabus | 0 | 2 | 5.5 |
 | https://www.takemocktest.com/in/exams/study-abroad | 0 | 2 | 8.0 |
+| https://takemocktest.com/in/acet | 0 | 1 | 7.0 |
+| https://takemocktest.com/in/exam-updates/ibps-clerk-csa-15-main-result-chandigarh-2026 | 0 | 1 | 8.0 |
+| https://takemocktest.com/in/exam-updates/ibps-clerk-csa-16-notification-2026 | 0 | 1 | 2.0 |
+| https://takemocktest.com/in/exam-updates/rrb-je-cbt-2-tentative-exam-schedule-2026 | 0 | 1 | 6.0 |
 | https://takemocktest.com/in/exams/medical | 0 | 1 | 37.0 |
 | https://takemocktest.com/in/rrb-technician/mock-test | 0 | 1 | 10.0 |
+| https://takemocktest.com/in/ssc-cgl/eligibility | 0 | 1 | 1.0 |
 | https://takemocktest.com/in/ssc-cgl/mock-test | 0 | 1 | 80.0 |
+| https://takemocktest.com/in/ssc-cgl/previous-year-papers | 0 | 1 | 3.0 |
