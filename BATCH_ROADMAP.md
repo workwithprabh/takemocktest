@@ -217,12 +217,25 @@ reasoning — the moment a person has just seen which puzzles cost them time.
 **When adding the next skill section**, repeat the four routes and extend the audit's
 expectations rather than inventing a new discovery pattern.
 
-Remaining work on the hub: 2,650 of the extracted 3,415-question reasoning pool are still
-ungraded, and 263 already-graded questions are not yet used by a set. Grading more is what
-unlocks a third Hard set (77 graded hard questions today, 50 of them consumed by the two Hard
-sets) and a second round of topic sets. Non-verbal reasoning — figure series, mirror images,
-dice, paper folding — is essentially absent from the corpus (about 30 questions site-wide) and
-would need to be authored before the hub could claim to cover it.
+Remaining work on the hub: about 2,150 of the extracted pool are still ungraded and 181 graded
+questions are not yet used by a set. Two rules learned from the second grading round:
+
+- **Sample the families you have never sampled first.** Round one set per-family targets and
+  never listed Coded Inequality, Data Sufficiency, Symbols & Alphabet or Clocks & Calendars, so
+  315 questions sat unseen and four whole topic sets went unbuilt. New families add new kinds
+  of practice; more of an existing family only adds volume.
+- **Exclude structural clones, not just duplicates.** Later corpus slices repeat themselves
+  hard — three dictionary-ordering stems appear verbatim three times, five variants of one
+  lcm-divisibility trick. Every such question is individually sound and a set built from them
+  still reads as padding.
+
+A published set is frozen: its URL is indexed and visitors hold saved attempts against it, so
+new material becomes a new set and never a revision of an existing one. When a family gets a
+second set, give the spec a `variant` so its page title cannot collide with the first.
+
+Non-verbal reasoning — figure series, mirror images, dice, paper folding — is still essentially
+absent from the corpus (about 30 questions site-wide) and would need to be authored before the
+hub could claim to cover it.
 
 ## Baseline package (what "one exam" means)
 

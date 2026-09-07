@@ -12,6 +12,7 @@ import {
   getLRGradeMix,
   getLRQuestions,
   getLRSourceExams,
+  getLRTestLabel,
   getLRTestSpec,
   getNextLRTest,
 } from '@/lib/logical-reasoning';
@@ -46,7 +47,9 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     title:
       spec.kind === 'difficulty'
         ? `Logical Reasoning ${spec.name}: Free Practice Test`
-        : `${spec.family}: Free Reasoning Practice Test`,
+        : spec.variant && spec.variant > 1
+          ? `${spec.family} Set ${spec.variant}: Free Practice Test`
+          : `${spec.family}: Free Reasoning Practice Test`,
     description:
       spec.kind === 'difficulty'
         ? `Attempt ${questions.length} ${spec.level} logical reasoning questions in ${spec.duration} minutes. No negative marking, instant result, explanation for every question.`
@@ -95,7 +98,9 @@ export default async function LogicalReasoningTestPage({
       <p className="mt-4 max-w-2xl text-sm leading-6 text-ink-700">
         {spec.kind === 'difficulty'
           ? `${LR_GRADE_BLURBS[spec.level ?? 'easy']} Questions are drawn across reasoning families so no single topic decides your score.`
-          : `${spec.family} only, end to end, at the spread of difficulty this family naturally has.`}
+          : `${spec.family} only, end to end, at the spread of difficulty this family naturally has.${
+              spec.variant && spec.variant > 1 ? ' No question here appears in the earlier set for this family.' : ''
+            }`}
       </p>
 
       <dl className="mt-6 grid grid-cols-2 border-l border-t border-ink-200 bg-white sm:grid-cols-4">
@@ -184,13 +189,13 @@ export default async function LogicalReasoningTestPage({
         <section aria-labelledby="next-up" className="mt-10 border-l-2 border-action-600 bg-action-50 p-5">
           <h2 id="next-up" className="text-lg font-bold text-ink-900">Next in the ladder</h2>
           <p className="mt-2 text-sm leading-6 text-ink-700">
-            Finished this one inside the timer? {next.kind === 'topic' ? next.family : next.name} is the next step.
+            Finished this one inside the timer? {getLRTestLabel(next)} is the next step.
           </p>
           <Link
             href={`${base}/test/${next.id}`}
             className="mt-3 inline-flex min-h-11 items-center bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700"
           >
-            Go to {next.kind === 'topic' ? next.family : next.name}
+            Go to {getLRTestLabel(next)}
           </Link>
         </section>
       )}
@@ -204,7 +209,7 @@ export default async function LogicalReasoningTestPage({
             {siblings.map((other) => (
               <li key={other.id}>
                 <Link href={`${base}/test/${other.id}`} className="text-sm font-semibold text-ink-900 hover:underline">
-                  {other.kind === 'topic' ? other.family : other.name}
+                  {getLRTestLabel(other)}
                 </Link>
                 <span className="ml-2 text-xs text-ink-500">{other.questionIds.length} questions</span>
               </li>
