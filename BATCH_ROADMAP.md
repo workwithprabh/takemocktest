@@ -27,7 +27,7 @@ Anything with a third argument (the liveSlug) is done. Cross-check against the E
 in `src/lib/exams.ts` — the two must always match after your batch (a stale build will fail
 otherwise).
 
-**Live as of 2026-09-07:** 157 products across 159 catalog rows, 1,221 tests, 780 question-bank
+**Live as of 2026-09-07:** 157 products across 160 catalog rows, 1,221 tests, 780 question-bank
 files, 31,173 questions. Enumerating them here has stopped being useful at this size — the grep
 command above is the live answer, and `TAKEMOCKTEST_CURRENT_STATUS.md` §2 and §3 carry the
 authoritative counts and the full slug list. This file no longer duplicates them.
@@ -110,8 +110,14 @@ JEEP, UPESEAT, VTUEEE, WB JELET. Engineering is 57 of 57 catalog entries.
 
 ## The queue now (catalog backlog)
 
-Sixty catalog entries still have no tests. The buildable remainder, in rough priority order:
-AILET PG, CFA Level I, ISI Admission Test, CMI Entrance, TIFR GS, NEST (blocked — see below),
+**Before starting any exam here, check whether the product already exists.** A catalog row with no
+`liveSlug` does not mean the exam is unbuilt: AILET PG had a complete, `official`, 100-question LL.M.
+stage live under the `ailet` product while its catalog row pointed nowhere, and would have been
+rebuilt from scratch by anyone trusting the row alone. Grep `exams.ts` for the exam name and for
+plausible sibling stages under a related slug first.
+
+Fifty-nine catalog entries still have no tests. The buildable remainder, in rough priority order:
+CFA Level I, ISI Admission Test, CMI Entrance, TIFR GS, NEST (blocked — see below),
 DNB PDCET, AIIMS NORCET, AIIMS BSc Nursing, UPSC Combined Medical Services, ICMR JRF, DBT BET,
 CSIR UGC NET Part A, UCEED, CEED, and the objective slices of CA/CS/CMA Intermediate.
 
