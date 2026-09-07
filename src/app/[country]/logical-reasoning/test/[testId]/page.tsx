@@ -54,7 +54,14 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
       spec.kind === 'difficulty'
         ? `Attempt ${questions.length} ${spec.level} logical reasoning questions in ${spec.duration} minutes. No negative marking, instant result, explanation for every question.`
         : `Practise ${spec.family} with ${questions.length} graded questions in ${spec.duration} minutes. No negative marking, instant result and full explanations.`,
-    path: `/${country}/${LR_SLUG}/test/${testId}`,
+        path: `/${country}/${LR_SLUG}/test/${testId}`,
+    // Deliberately out of the index. These pages are products to attempt, not
+    // search landing pages: "logical reasoning easy set 4" is not a query
+    // anyone types, and the fifteen topic sets competed directly with the
+    // topic-practice pages on eight terms (syllogism, blood relations,
+    // direction sense and the rest) while holding 25 questions against those
+    // pages' hundreds. The hub itself stays indexed and carries the section.
+    noIndex: true,
   });
 }
 

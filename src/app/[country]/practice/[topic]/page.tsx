@@ -2,12 +2,16 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { COUNTRIES, getExam } from '@/lib/exams';
 import {
-  PRACTICE_MARKS_PER_CORRECT,
   PRACTICE_SLUG,
+  getAverageHardShare,
+  getEasyShare,
+  getHardShare,
   getPublishedTopicSlugs,
+  getTopicCategories,
   getTopicPool,
   getTopicPracticeDuration,
   getTopicPracticeQuestions,
+  type TopicPool,
 } from '@/lib/practice-topics';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
@@ -19,26 +23,63 @@ export function generateStaticParams() {
 
 const YEAR = new Date().getFullYear();
 
-/** Worked examples rendered on the page itself. */
-const SAMPLE_COUNT = 3;
+// Worked examples are the only fully unique content on a topic page and the
+// thing "<topic> questions with answers" is actually looking for, so they carry
+// the page rather than decorating it.
+const SAMPLE_COUNT = 6;
 
-function faqsFor(name: string, count: number, exams: number, duration: number) {
+/**
+ * FAQs built from each pool's own numbers.
+ *
+ * Two design rules, both learned by measuring rather than by taste:
+ *
+ * 1. NOT one template with the topic name swapped in. That is what made 48% of
+ *    this page identical to the other thirty-nine on first release.
+ * 2. Only questions whose ANSWER actually varies between topics. A derived
+ *    answer that collapses to the same sentence everywhere is boilerplate in a
+ *    data costume — the negative-marking question was exactly that, resolving
+ *    to "0 to One-fourth of the marks" on 36 of 40 pages, so it was cut and the
+ *    point now lives once on the section index instead of forty times here.
+ *
+ * The standing caveats — how scoring works, that progress is saved locally,
+ * that this site grades difficulty on its own scale — are all on
+ * /in/practice, said once. Repeating them per topic added words and subtracted
+ * distinctiveness.
+ */
+function faqsFor(pool: TopicPool) {
+  const { name } = pool.topic;
+  const lower = name.toLowerCase();
+  const count = pool.questions.length;
+  const exams = pool.examSlugs.length;
+  const hard = getHardShare(pool);
+  const easy = getEasyShare(pool);
+  const average = getAverageHardShare();
+  const categories = getTopicCategories(pool);
+
+  const spread = categories
+    .slice(0, 3)
+    .map((entry) => `${entry.category} (${entry.count})`)
+    .join(', ');
+
+  const relative =
+    hard > average + 5
+      ? `one of the harder topics in this section, against a ${average}% average`
+      : hard < average - 5
+        ? `one of the more tractable topics in this section, against a ${average}% average`
+        : `about average for this section, where the mean is ${average}%`;
+
   return [
     {
-      q: `How many ${name} questions are there?`,
-      a: `${count} ${name} questions, drawn from the ${exams} exams on this site whose syllabus sets the topic. Each practice run serves a timed set from that pool, and every question carries a worked explanation you can read the moment you submit.`,
+      q: `How many ${lower} questions are there?`,
+      a: `${count}, from the ${exams} exams here whose syllabus sets the topic. ${easy}% are graded easy and ${hard}% hard, which makes ${lower} ${relative}.`,
     },
     {
-      q: `Is there negative marking in ${name} practice?`,
-      a: `No. Every question is worth ${PRACTICE_MARKS_PER_CORRECT} mark and a wrong answer costs nothing, so attempt all of them. Your exam almost certainly does penalise wrong answers, so treat the score here as a measure of the skill rather than a prediction of your paper.`,
+      q: `Which exams ask ${lower} questions?`,
+      a: `${exams} of the exams on this site, weighted towards ${spread}. Every question in this pool comes from one of their own mock tests, so the list below is the honest answer to whether the topic is worth your time.`,
     },
     {
-      q: `Are these ${name} questions free?`,
-      a: 'Yes, and no sign-up is required. Results are scored instantly and stored in your own browser on this device; nothing is uploaded and there is no account to create.',
-    },
-    {
-      q: `How long does a ${name} practice test take?`,
-      a: `${duration} minutes for a set of ${duration} questions — a steady minute each. The timer is there to build pace, not to catch you out, and your progress is saved if you leave and come back.`,
+      q: `Is ${lower} hard?`,
+      a: `${hard}% of these ${count} questions are graded hard and ${easy}% easy, making it ${relative}.`,
     },
   ];
 }
@@ -68,7 +109,15 @@ export default async function TopicPracticePage({
   const duration = getTopicPracticeDuration(pool);
   const set = getTopicPracticeQuestions(pool);
   const samples = set.slice(0, SAMPLE_COUNT);
-  const faqs = faqsFor(name, pool.questions.length, pool.examSlugs.length, duration);
+  const faqs = faqsFor(pool);
+  const categories = getTopicCategories(pool);
+  const topCategories = categories
+    .slice(0, 3)
+    .map((entry) => entry.category)
+    .join(', ');
+  const hardShare = getHardShare(pool);
+  const easyShare = getEasyShare(pool);
+  const averageHard = getAverageHardShare();
   const exams = pool.examSlugs
     .map((examSlug) => {
       const exam = getExam(examSlug);
@@ -105,9 +154,18 @@ export default async function TopicPracticePage({
         {name} Questions with Answers
       </h1>
       <p className="mt-4 max-w-2xl text-sm leading-7 text-ink-700">
-        {blurb} This page pools every {name.toLowerCase()} question on the site — {pool.questions.length} of them,
-        from {exams.length} different exams — so you can drill the topic on its own instead of meeting four of them
-        inside a full paper.
+        {blurb} This page pools every {name.toLowerCase()} question on the site &mdash; {pool.questions.length} of
+        them, from {exams.length} exams, weighted towards {topCategories} &mdash; so you can drill the topic on its
+        own instead of meeting four of them inside a full paper.
+      </p>
+      <p className="mt-3 max-w-2xl text-sm leading-7 text-ink-700">
+        {hardShare}% of the pool is graded hard on this site&rsquo;s own scale and {easyShare}% easy, which is{' '}
+        {hardShare > averageHard + 5
+          ? 'harder than the average topic in this section'
+          : hardShare < averageHard - 5
+            ? 'gentler than the average topic in this section'
+            : 'about average for this section'}
+        .
       </p>
 
       <dl className="mt-6 grid grid-cols-2 border-l border-t border-ink-200 bg-white sm:grid-cols-4">
@@ -141,8 +199,7 @@ export default async function TopicPracticePage({
       <section aria-labelledby="examples" className="mt-10">
         <h2 id="examples" className="text-xl font-bold text-ink-900">{name} questions with solutions</h2>
         <p className="mt-2 text-sm leading-6 text-ink-700">
-          Three worked examples from the pool, with the reasoning written out. The timed set contains{' '}
-          {set.length} questions like these.
+          {samples.length} from the {pool.questions.length}-question pool, worked in full.
         </p>
         <ol className="mt-4 space-y-5">
           {samples.map((question, index) => (
@@ -173,8 +230,9 @@ export default async function TopicPracticePage({
         <section aria-labelledby="exams" className="mt-10">
           <h2 id="exams" className="text-xl font-bold text-ink-900">Exams that set {name}</h2>
           <p className="mt-2 text-sm leading-6 text-ink-700">
-            These are the exams whose banks this pool draws from — which is also the honest answer to whether the
-            topic is worth your time: if your exam is on this list, it sets {name.toLowerCase()}.
+            {categories.length === 1
+              ? `${categories[0].category} exams.`
+              : `${categories.length} categories, led by ${topCategories}.`}
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
             {exams.map((exam) => (

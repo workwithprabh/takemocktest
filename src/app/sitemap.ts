@@ -6,7 +6,7 @@ import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
 import { UPDATES } from '@/lib/updates';
 import { getQuestionsForTest } from '@/lib/questions';
-import { LR_SLUG, LR_TEST_SPECS } from '@/lib/logical-reasoning';
+import { LR_SLUG } from '@/lib/logical-reasoning';
 import { PRACTICE_SLUG, getPublishedTopicSlugs } from '@/lib/practice-topics';
 
 export const dynamic = 'force-static';
@@ -32,13 +32,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // /attempt routes are deliberately absent — they're noindexed, like every
     // other attempt route on the site.
     entries.push({ url: `${SITE_URL}/${country}/${LR_SLUG}`, changeFrequency: 'monthly', priority: 0.8 });
-    for (const spec of LR_TEST_SPECS) {
-      entries.push({
-        url: `${SITE_URL}/${country}/${LR_SLUG}/test/${spec.id}`,
-        changeFrequency: 'monthly',
-        priority: 0.6,
-      });
-    }
+    // Individual LR set pages are deliberately absent: they are noindexed
+    // (see their page.tsx), and listing a noindexed URL asks Google to crawl
+    // something it is then told not to index — the same reason terms and
+    // privacy are excluded above.
     // Topic practice: the landing page and each published topic. Attempt
     // routes are noindexed, like every other attempt route on the site.
     // changeFrequency is 'weekly' rather than 'monthly' because these pools
