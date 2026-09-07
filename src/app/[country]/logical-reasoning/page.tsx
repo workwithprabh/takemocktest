@@ -9,6 +9,7 @@ import {
   LR_TOPIC_TESTS,
   LR_TOTAL_QUESTIONS,
   getLRGradeMix,
+  getLRTestLabel,
 } from '@/lib/logical-reasoning';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, faqPageSchema, itemListSchema, organizationSchema, jsonLdHtml } from '@/lib/schema';
@@ -156,7 +157,7 @@ export default async function LogicalReasoningHubPage({ params }: { params: Prom
               return (
                 <li key={spec.id} className="border border-ink-200 bg-white p-4">
                   <h3 className="text-base font-bold text-ink-900">
-                    <Link href={`${base}/test/${spec.id}`} className="hover:underline">{spec.family}</Link>
+                    <Link href={`${base}/test/${spec.id}`} className="hover:underline">{getLRTestLabel(spec)}</Link>
                   </h3>
                   <p className="mt-1 text-xs text-ink-500">
                     {spec.questionIds.length} questions &middot; {spec.duration} minutes

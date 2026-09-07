@@ -44,6 +44,18 @@ export const LR_GRADE_BLURBS: Record<LRGrade, string> = {
   hard: 'Branching and elimination, interleaved rules, layered codes and sufficiency traps.',
 };
 
+/**
+ * How a set is named in links, headings and titles. A family can have more
+ * than one set, so the label carries the set number from the second onwards —
+ * without it two sets of the same family would render identical link text and,
+ * worse, identical page titles.
+ */
+export function getLRTestLabel(spec: LRTestSpec): string {
+  if (spec.kind === 'difficulty') return spec.name;
+  const family = spec.family ?? spec.name;
+  return spec.variant && spec.variant > 1 ? `${family} Set ${spec.variant}` : family;
+}
+
 export function getLRTestSpec(testId: string): LRTestSpec | undefined {
   return LR_TEST_SPECS.find((spec) => spec.id === testId);
 }

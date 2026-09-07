@@ -25,6 +25,10 @@ vm.runInNewContext(
 );
 const HUB_SECTIONS = new Set(sectionsModule.exports.LR_SOURCE_SECTIONS);
 
+const ORPHAN_CONTEXT =
+  /(arrangement|information|data|passage|diagram|table|series|figure)s?\s+(given\s+)?above|above\s+(arrangement|information|passage|data)|refer(ring)?\s+to\s+the\s+(above|passage|diagram|table)|as\s+per\s+the\s+(above|arrangement)/i;
+let orphans = 0;
+
 const dir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const out = [];
 for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.ts')).sort()) {
@@ -38,9 +42,16 @@ for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.ts')).sort()) 
   for (const q of qs) {
     if (!HUB_SECTIONS.has(q.section)) continue;
     if (q.answerType && q.answerType !== 'mcq') continue;
+    // Drop questions that point at a set-up outside their own stem ("using the
+    // seating arrangement above"). Inside their source test a preceding
+    // question carries that arrangement; the hub lifts questions out one at a
+    // time, so an orphan arrives unanswerable. Four exist in the corpus today.
+    // Deliberately narrow: "B is above D" and "Read the following passage" +
+    // the passage itself are self-contained and must keep passing.
+    if (ORPHAN_CONTEXT.test(q.question)) { orphans += 1; continue; }
     out.push({ id: q.id, file, topic: q.topic, examDifficulty: q.difficulty, question: q.question, options: q.options });
   }
 }
 const target = process.argv[2] || 'lr-pool.json';
 fs.writeFileSync(target, JSON.stringify(out, null, 1));
-console.log('pool:', out.length, 'questions ->', target);
+console.log('pool:', out.length, 'questions ->', target, `(${orphans} dropped as orphaned context)`);
