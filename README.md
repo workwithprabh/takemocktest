@@ -1,10 +1,10 @@
 # TakeMockTest
 
-TakeMockTest (takemocktest.com) is a free, no-login mock-test platform for Indian competitive-exam aspirants: syllabus-checked practice tests with instant scoring, negative marking, and section-wise/topic-wise result analysis, across a growing catalog of ~180 exams (government jobs, engineering, banking, railways, civil services, and more).
+TakeMockTest (takemocktest.com) is a free, no-login mock-test platform for Indian competitive-exam aspirants: syllabus-checked practice tests with instant scoring, negative marking, and section-wise/topic-wise result analysis, across a catalog of 219 exams (government jobs, engineering, medical, banking, railways, civil services, management, law, design, study-abroad, and more).
 
 Every checked question carries a source record (official notification/syllabus reference, URL, and the date it was verified) — no fabricated or "leaked paper" claims. Results and progress are stored only on the visitor's own device (`localStorage`); there is no account system and no server-side tracking of attempts.
 
-85 exams are currently live with real mock tests. See `TAKEMOCKTEST_CURRENT_STATUS.md` for the authoritative current count and `public/llms.txt` for a per-exam summary.
+157 exams are currently live with real mock tests, across 1,221 tests and 31,173 questions (7 September 2026). See `TAKEMOCKTEST_CURRENT_STATUS.md` for the authoritative current count and `public/llms.txt` for a per-exam summary.
 
 ## How content and code are divided
 
