@@ -96,7 +96,7 @@ tackle after the national-level exams above are done, same process).
 - [x] NATA (Mathematics only, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 - [x] MHT CET (PCM group, official 90+90 timing-group pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the new generic `timingGroups` mechanism)
 - [x] WBJEE (Engineering, official 120+120 two-paper timing-group pattern reusing MHT CET's `timingGroups` mechanism, plus a new proportional Category 3 partial-marking mode — see TAKEMOCKTEST_CURRENT_STATUS.md)
-- [x] KEAM — **this line previously said KEAM was rejected because its five answer options (A-E) were incompatible with a four-option-only engine. That was wrong, and is corrected here (7 September 2026).** The engine accepts four *or* five options per question, checked per question against that question's own option count in both `src/lib/questions.ts` and `scripts/audit-question-banks.mjs`. KEAM, MAH MBA CET and XAT — the three exams that note used as examples of the supposed incompatibility — are all live. KEAM and MAH MBA CET ship genuine five-option banks. XAT does not: it was built with four options per question and the real paper has five, which is a live content defect recorded under "Standing work" below.
+- [x] KEAM — **this line previously said KEAM was rejected because its five answer options (A-E) were incompatible with a four-option-only engine. That was wrong, and is corrected here (7 September 2026).** The engine accepts four *or* five options per question, checked per question against that question's own option count in both `src/lib/questions.ts` and `scripts/audit-question-banks.mjs`. KEAM, MAH MBA CET and XAT — the three exams that note used as examples of the supposed incompatibility — are all live. KEAM and MAH MBA CET ship genuine five-option banks. XAT was built with four options per question against a real paper that has five; that defect was found while correcting this line on 7 September 2026 and fixed on 8 September, and all three exams now ship the option count their paper uses.
 - [x] AP EAPCET (Engineering, coding-agent-authored while ChatGPT worked on KCET, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 - [x] KCET (Engineering, official 80+80+80 three-paper timing-group pattern reusing MHT CET's `timingGroups` mechanism unchanged for a three-group case — see TAKEMOCKTEST_CURRENT_STATUS.md)
 - [x] TG EAPCET (Engineering, 160/80/80 Mathematics/Physics/Chemistry pattern, one unrestricted 180-minute timer, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
@@ -134,9 +134,11 @@ fully objective Part A papers that can be.
    Research Gate in `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §1 and needs an
    unrestricted network — most of the recent ones are blocked because the exam body's own
    domain is refused by the coding-agent sandbox's egress proxy.
-2. **XAT option count.** The live XAT bank has four options per question; the real paper has
-   five. All 75 questions need a fifth plausible distractor, or the pattern note needs to
-   disclose the difference. Recorded 7 September 2026.
+2. **Audit option counts against official patterns.** Nothing checks that a bank's option
+   width matches the width the real exam uses. This is how the XAT four-option defect (recorded
+   7 September, fixed 8 September) went unnoticed for two days. Two exams disclose a four-option
+   rendering as a deliberate platform representation in their pattern notes, SLAT and KLEEE;
+   those are correct as they stand, but nothing enforces that such a note exists.
 3. **Ten products have exactly one test** (NATA, CSEET, IPMAT Indore, XAT, GPAT, INI-CET,
    NEET PG, GMAT, LSAT, IIT JAM). Per the operating model §10 these are LAUNCH COMPLETE, not
    SERIES COMPLETE, and each needs a test-series manifest before further tests are built.
@@ -144,8 +146,7 @@ fully objective Part A papers that can be.
    whose academic content is frozen, but one Mathematics record collides with live content.
    Its own instructions require stopping and reporting rather than editing a frozen record, so
    it waits on a Writer/Main Brain substitution.
-5. **Audit option counts against official patterns.** The XAT defect above was found by
-   accident. Nothing checks that a bank's option width matches what the real exam uses.
+5. **Test-series depth beyond the first mock**, once the manifests in item 3 exist.
 
 ## Baseline package (what "one exam" means)
 

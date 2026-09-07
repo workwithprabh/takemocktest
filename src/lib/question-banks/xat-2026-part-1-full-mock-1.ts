@@ -10,6 +10,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "the technical difficulty of digitising archives",
         "how the design of a search tool shapes what scholarship gets produced",
+        "the growth in the total number of people using the archive",
         "the decline of traditional historical method",
         "the cost of maintaining digital collections"
       ],
@@ -33,11 +34,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A city archive digitised its holdings and made them freely searchable. Historians expected the volume of published research drawing on the archive to rise, and it did. What surprised them was the narrowing: the same few collections, those ranking highest in the default search, were cited far more often than before, while material that had previously been found by browsing the shelves went almost untouched. Access had increased and attention had concentrated. The archivists concluded that a finding aid is never neutral, since whatever it makes easy becomes what gets studied. Which finding would most weaken the archivists' conclusion?",
       "options": [
         "Researchers reported that the digital interface was easy to use",
+        "Funding for historical research rose slightly over the same period",
         "Citation concentration rose by the same amount at comparable archives that were not digitised",
         "The digitised collections were larger than the undigitised ones",
         "Some historians continued to visit the reading room"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -57,11 +59,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A city archive digitised its holdings and made them freely searchable. Historians expected the volume of published research drawing on the archive to rise, and it did. What surprised them was the narrowing: the same few collections, those ranking highest in the default search, were cited far more often than before, while material that had previously been found by browsing the shelves went almost untouched. Access had increased and attention had concentrated. The archivists concluded that a finding aid is never neutral, since whatever it makes easy becomes what gets studied. The word 'narrowing' as used in the passage refers to:",
       "options": [
         "a reduction in the archive's physical space",
-        "a concentration of scholarly attention on fewer collections",
+        "a restriction on who may access the archive",
+        "an increase in the number of archives choosing to digitise",
         "a fall in the total number of publications",
-        "a restriction on who may access the archive"
+        "a concentration of scholarly attention on fewer collections"
       ],
-      "correctIndex": 1,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -80,12 +83,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A city archive digitised its holdings and made them freely searchable. Historians expected the volume of published research drawing on the archive to rise, and it did. What surprised them was the narrowing: the same few collections, those ranking highest in the default search, were cited far more often than before, while material that had previously been found by browsing the shelves went almost untouched. Access had increased and attention had concentrated. The archivists concluded that a finding aid is never neutral, since whatever it makes easy becomes what gets studied. Which assumption is necessary to the archivists' conclusion?",
       "options": [
-        "Historians choose what to study partly on the basis of what is easiest to find",
-        "Digitisation is more expensive than shelving",
         "Browsing is a superior research method to searching",
+        "Digitisation increased the number of visitors to the archive",
+        "Digitisation is more expensive than shelving",
+        "Historians choose what to study partly on the basis of what is easiest to find",
         "All archives rank their collections identically"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -104,12 +108,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "There is a habit of thought that treats a measure and the thing measured as interchangeable. A hospital judged by waiting times will shorten waiting times, and this is counted a success until someone notices that the shortening was achieved by seeing the easiest patients first. The measure did not lie; it simply reported what it was built to report. The error was in believing that because the quantity was precise it was also complete. The author's main point is that:",
       "options": [
-        "quantitative measures should be abandoned",
         "precision in a measure should not be mistaken for completeness",
+        "measures should be chosen by the people being measured",
+        "quantitative measures should be abandoned",
         "hospitals routinely falsify their statistics",
         "waiting times are irrelevant to quality of care"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -131,6 +136,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "exonerate the measure and locate the fault in how it was interpreted",
         "accuse the hospital of deliberate deception",
         "argue that waiting times cannot be measured accurately",
+        "concede that the measure was poorly designed from the outset",
         "introduce a contrasting example"
       ],
       "correctIndex": 0,
@@ -154,6 +160,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "A school raises its average examination score by coaching every student equally",
         "A call centre improves its average handling time by transferring difficult calls to another queue",
+        "A hospital reduces readmissions by following up with patients after discharge",
         "A factory reduces defects by improving its production process",
         "A library increases borrowing by extending its opening hours"
       ],
@@ -176,12 +183,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Arrange into a coherent paragraph: (P) The result was a map that showed not distance but time. (Q) Early railway timetables forced towns to abandon local solar time. (R) Travellers began to think of places as near or far according to how long the journey took. (S) A standard time was adopted so that schedules could be written at all.",
       "options": [
-        "Q, S, R, P",
+        "R, P, Q, S",
         "P, Q, S, R",
+        "S, R, Q, P",
         "S, Q, P, R",
-        "R, P, Q, S"
+        "Q, S, R, P"
       ],
-      "correctIndex": 0,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -200,12 +208,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "Arrange into a coherent paragraph: (P) Yet the practice persisted for two more centuries. (Q) Physicians of the period bled patients for almost every complaint. (R) Its persistence is a reminder that a treatment can survive long after the theory supporting it has gone. (S) By the eighteenth century the humoral theory that justified bleeding had been largely abandoned.",
       "options": [
-        "Q, S, P, R",
-        "S, Q, R, P",
+        "S, P, Q, R",
         "Q, P, S, R",
+        "S, Q, R, P",
+        "Q, S, P, R",
         "P, S, Q, R"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -225,11 +234,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "Complete the paragraph: 'A translator must decide, sentence by sentence, whether to serve the author or the reader. Serving the author means preserving the strangeness of the original, its rhythms and its resistances. Serving the reader means smoothing that strangeness into the idiom of the new language. ______'",
       "options": [
         "Most translators simply choose the easier of the two.",
+        "The author's intentions should always take precedence over the reader's convenience.",
         "The choice cannot be made once and applied throughout, because every sentence renegotiates it.",
         "Translation is therefore an impossible art.",
         "Readers rarely notice which choice has been made."
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -249,11 +259,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "Summarise: 'Cities are often described as growing outward, but much of their growth is downward and inward: new pipes threaded beside old ones, cables laid in ducts built for other cables, basements dug beneath buildings that were never designed for them. This accumulation is invisible until something fails, at which point the city discovers what it is made of.'",
       "options": [
         "Cities expand mainly at their edges into surrounding countryside.",
-        "Much urban growth is hidden infrastructure, unnoticed until a failure exposes it.",
+        "Basements are the most important part of a modern city.",
         "Old infrastructure should be replaced before it fails.",
-        "Basements are the most important part of a modern city."
+        "Cities grow in ways their residents deliberately conceal.",
+        "Much urban growth is hidden infrastructure, unnoticed until a failure exposes it."
       ],
-      "correctIndex": 1,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -272,8 +283,9 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A manufacturer notes that since introducing a longer warranty, returns have fallen. It concludes the warranty improved product quality. The reasoning is weakest because it:",
       "options": [
-        "assumes returns are the only measure of quality",
+        "assumes that customers read the warranty before purchase",
         "overlooks that a longer warranty may lead customers to keep a faulty item and claim repair later instead of returning it",
+        "assumes returns are the only measure of quality",
         "relies on a sample that is too small",
         "confuses correlation with a mathematical identity"
       ],
@@ -296,12 +308,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "'Every employee who completed the safety course passed the audit. Therefore the course is what caused them to pass.' The flaw most closely resembles:",
       "options": [
-        "assuming that because all successful candidates studied a book, the book caused their success, when only diligent candidates chose to study it",
-        "assuming that a rule with no exceptions must be a law of nature",
         "generalising from one case to all cases",
-        "treating an average as if it described every individual"
+        "assuming that a rule with no exceptions must be a law of nature",
+        "assuming that because all successful candidates studied a book, the book caused their success, when only diligent candidates chose to study it",
+        "treating an average as if it described every individual",
+        "assuming that because two events always occur together, one must have caused the other"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -320,12 +333,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Which statement, if true, most strengthens the claim that a four-day week increased output at a firm?",
       "options": [
-        "Employees reported enjoying the change",
+        "Output per week rose while headcount, equipment and demand were unchanged",
+        "Absenteeism fell in the months following the change",
         "The change was widely reported in the press",
         "The firm's competitors also changed their schedules",
-        "Output per week rose while headcount, equipment and demand were unchanged"
+        "Employees reported enjoying the change"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -347,7 +361,8 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "A policy with sound aims is always progressive",
         "Only policies with unsound aims raise costs",
         "Progressive policies never raise costs for anyone",
-        "A policy that raises costs for the poorest is not progressive even if its aims are sound"
+        "A policy that raises costs for the poorest is not progressive even if its aims are sound",
+        "Any policy that leaves the poorest unaffected is progressive"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -371,9 +386,10 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "students prefer libraries to other study spaces",
         "extending hours costs nothing",
         "the library has sufficient staff",
+        "no other library in the area is open at those times",
         "the times at which the library is currently closed are times when students could otherwise study"
       ],
-      "correctIndex": 3,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -395,7 +411,8 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "deliberately inoffensive and unlikely to cause disagreement",
         "carefully researched",
         "unusually lengthy",
-        "harshly critical"
+        "harshly critical",
+        "written by a committee rather than by one author"
       ],
       "correctIndex": 0,
       "answerType": "mcq",
@@ -417,11 +434,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "In 'Her account of the meeting was tendentious', the word 'tendentious' indicates that the account was:",
       "options": [
         "written in a tentative tone",
-        "difficult to follow",
+        "prone to exaggeration for comic effect",
+        "shaped to promote a particular point of view",
         "excessively detailed",
-        "shaped to promote a particular point of view"
+        "difficult to follow"
       ],
-      "correctIndex": 3,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -441,9 +459,10 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "Choose the grammatically correct sentence.",
       "options": [
         "Neither the director nor the producers was present at the screening",
+        "Neither the director nor the producers has been present at the screening",
         "Neither the director nor the producers is present at the screening",
-        "Neither the director or the producers were present at the screening",
-        "Neither the director nor the producers were present at the screening"
+        "Neither the director nor the producers were present at the screening",
+        "Neither the director or the producers were present at the screening"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -465,11 +484,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "Choose the sentence with correct modifier placement.",
       "options": [
         "Walking through the gallery, the paintings impressed the visitors",
-        "Impressed by the paintings, the gallery pleased the visitors",
+        "Walking through the gallery, the visitors were impressed by the paintings",
         "The paintings, walking through the gallery, impressed the visitors",
-        "Walking through the gallery, the visitors were impressed by the paintings"
+        "The visitors, walking through the gallery, the paintings impressed them",
+        "Impressed by the paintings, the gallery pleased the visitors"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -490,10 +510,11 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "The role requires drafting reports, to analyse data and presentation of findings",
         "The role requires to draft reports, analysing data and presentation of findings",
-        "The role requires drafting reports, analysing data and presenting findings",
-        "The role requires draft of reports, to analyse data and presenting findings"
+        "The role requires draft of reports, to analyse data and presenting findings",
+        "The role requires drafting reports, analysis of data and to present findings",
+        "The role requires drafting reports, analysing data and presenting findings"
       ],
-      "correctIndex": 2,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -512,12 +533,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Choose the best revision: 'Owing to the fact that the data was incomplete, the conclusions that were drawn by the team were provisional in nature.'",
       "options": [
-        "Because the data was incomplete, the team's conclusions were provisional.",
+        "In light of the fact of incomplete data, the team drew conclusions of a provisional character.",
         "Due to incompleteness of data, provisional conclusions were what the team drew.",
+        "Because the data was incomplete, the team's conclusions were provisional.",
         "The data being incomplete, provisional in nature were the conclusions drawn.",
         "Owing to incomplete data, the conclusions drawn by the team were of a provisional nature."
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -538,10 +560,11 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "The tender was reopened",
         "The tender was not reopened",
+        "The deadline moved for a reason unrelated to the tender",
         "Nothing certain about whether the tender was reopened",
         "The deadline will move again"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -560,12 +583,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "'Only candidates who submit references are shortlisted. Rao was shortlisted.' What follows?",
       "options": [
+        "Rao submitted references",
         "Rao did not submit references",
         "Nothing follows",
         "All candidates who submit references are shortlisted",
-        "Rao submitted references"
+        "Rao was the only candidate shortlisted"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -584,12 +608,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Scaffolding is to building as which pair is to a finished argument?",
       "options": [
-        "Ornament : facade",
-        "Roof : shelter",
+        "Foundation : skyscraper",
         "Outline : essay",
+        "Roof : shelter",
+        "Ornament : facade",
         "Paint : canvas"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -608,12 +633,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "'One hesitates to call the plan ambitious, since that word implies a destination.' The tone of this sentence is best described as:",
       "options": [
-        "earnest praise",
+        "dry criticism",
         "open hostility",
         "neutral description",
-        "dry criticism"
+        "guarded optimism",
+        "earnest praise"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -632,12 +658,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "Meera runs a 40-person design studio. A long-standing client asks her to add a senior designer's name to a proposal, purely to strengthen the pitch, on the understanding that a junior team will do the actual work. The client says every agency does this and that the fee depends on it. The studio needs the contract to avoid layoffs. What should Meera do?",
       "options": [
-        "Add the name as asked, since the client has authorised it and jobs depend on it",
-        "Add the name and privately instruct the senior designer to sign off on the final files",
+        "Ask the senior designer whether they mind their name being used this way",
         "Decline to misrepresent who will do the work, and offer instead a staffing plan showing the senior designer's actual supervisory role",
+        "Add the name and privately instruct the senior designer to sign off on the final files",
+        "Add the name as asked, since the client has authorised it and jobs depend on it",
         "Withdraw from the pitch without discussion"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -658,10 +685,11 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "Whether competitors engage in the same practice",
         "Whether the fee is above the studio's usual rate",
+        "Whether the studio has agreed to a similar arrangement before",
         "Whether the junior team is technically capable",
         "Whether the people relying on the proposal would make a different decision if they knew the truth"
       ],
-      "correctIndex": 3,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -682,10 +710,11 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "accept the layoffs as inevitable",
         "report the client to an industry body immediately",
+        "Raise the studio fees on other work to recover the lost revenue",
         "document the reason for the loss and use the studio's staffing transparency as a positioning argument with other clients",
         "offer the same arrangement to a different client"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -705,11 +734,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A hospital's procurement head, Anil, discovers that a supplier the hospital has used for eight years has been quietly substituting a cheaper component in surgical kits. No patient harm has been recorded, and the substitution is within the technical specification, but it was never disclosed and the price was never reduced. The supplier is the only vendor able to deliver at the hospital's volumes on short notice. What is the central issue Anil must address?",
       "options": [
         "The technical adequacy of the substituted component",
-        "Whether other hospitals use the same supplier",
+        "The eight-year length of the supplier relationship",
+        "A supplier's undisclosed change to agreed terms and the resulting overpayment, alongside continuity of supply",
         "The hospital's failure to inspect deliveries",
-        "A supplier's undisclosed change to agreed terms and the resulting overpayment, alongside continuity of supply"
+        "Whether other hospitals use the same supplier"
       ],
-      "correctIndex": 3,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -729,11 +759,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A hospital's procurement head, Anil, discovers that a supplier the hospital has used for eight years has been quietly substituting a cheaper component in surgical kits. No patient harm has been recorded, and the substitution is within the technical specification, but it was never disclosed and the price was never reduced. The supplier is the only vendor able to deliver at the hospital's volumes on short notice. The most appropriate immediate step is to:",
       "options": [
         "terminate the contract at once",
-        "ignore it since no harm occurred",
         "confront the supplier with the evidence, seek a price correction and disclosure, while starting to qualify an alternative vendor",
-        "report the supplier publicly before speaking to them"
+        "ignore it since no harm occurred",
+        "report the supplier publicly before speaking to them",
+        "Withhold payment on all outstanding invoices until the supplier responds"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -754,8 +785,9 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "The eight-year length of the relationship",
         "The age of the contract document",
-        "The supplier's profitability",
-        "The absence of any alternative supplier at the hospital's volumes"
+        "The size of the overpayment accumulated so far",
+        "The absence of any alternative supplier at the hospital's volumes",
+        "The supplier's profitability"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -776,9 +808,10 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "Priya manages a factory where a night-shift supervisor has been falsifying attendance to pay a worker who cares for a sick parent and has exhausted her leave. The amounts are small and the worker is unaware. The supervisor has an otherwise exemplary record and says he was preventing a family from losing its income. What should Priya do?",
       "options": [
+        "Issue a written warning to the supervisor and take no further action",
         "Dismiss the supervisor immediately as a deterrent",
-        "Allow the arrangement to continue quietly",
         "Stop the falsification, address it through the disciplinary process proportionately, and take up the worker's hardship through a legitimate channel",
+        "Allow the arrangement to continue quietly",
         "Transfer the worker to another shift"
       ],
       "correctIndex": 2,
@@ -800,12 +833,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Priya manages a factory where a night-shift supervisor has been falsifying attendance to pay a worker who cares for a sick parent and has exhausted her leave. The amounts are small and the worker is unaware. The supervisor has an otherwise exemplary record and says he was preventing a family from losing its income. The strongest argument against allowing the arrangement to continue is that:",
       "options": [
+        "the supervisor's record will no longer be exemplary",
         "the amounts will eventually become large",
         "the worker might tell colleagues",
         "the supervisor may ask for a promotion",
         "records that cannot be trusted undermine every decision built on them, including pay, safety and audit"
       ],
-      "correctIndex": 3,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -825,6 +859,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "Priya manages a factory where a night-shift supervisor has been falsifying attendance to pay a worker who cares for a sick parent and has exhausted her leave. The amounts are small and the worker is unaware. The supervisor has an otherwise exemplary record and says he was preventing a family from losing its income. Which option best addresses the underlying need without the falsification?",
       "options": [
         "A hardship advance or compassionate leave provision applied transparently",
+        "Referring the worker to the company's employee assistance service",
         "An informal collection among colleagues",
         "Reducing the worker's responsibilities at the same pay",
         "Asking the supervisor to fund the shortfall personally"
@@ -849,11 +884,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A software firm's engineering lead, Kabir, finds a defect two days before a major release. It affects roughly one per cent of users, corrupting saved work with no warning. Fixing it properly needs three weeks. A partial fix in two days would prevent corruption but would silently disable a headline feature for those users. Marketing has already announced the date. What is the most defensible course of action?",
       "options": [
         "Release on schedule and fix in the next cycle, since only one per cent are affected",
-        "Delay the release by three weeks without explanation",
         "Apply the partial fix, disclose the limitation plainly to affected users, and commit to the full fix with a date",
+        "Delay the release by three weeks without explanation",
+        "Ship the full fix late and announce the delay only after the promised date has passed",
         "Release and monitor, disclosing only if users complain"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -874,8 +910,9 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "Whether the marketing campaign can be rescheduled cheaply",
         "How many engineers are available next quarter",
-        "Whether competitors have similar defects",
-        "Whether affected users can be identified and warned before they lose work"
+        "Whether the same defect exists in the previous release",
+        "Whether affected users can be identified and warned before they lose work",
+        "Whether competitors have similar defects"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -896,12 +933,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A software firm's engineering lead, Kabir, finds a defect two days before a major release. It affects roughly one per cent of users, corrupting saved work with no warning. Fixing it properly needs three weeks. A partial fix in two days would prevent corruption but would silently disable a headline feature for those users. Marketing has already announced the date. In announcing the limitation, the most appropriate approach is to:",
       "options": [
-        "describe the affected scenario and the interim behaviour in plain terms, with a timeline for the fix",
+        "say nothing until the full fix ships",
         "refer vaguely to performance improvements",
+        "notify the affected users privately and say nothing publicly",
         "publish the full defect analysis to all users",
-        "say nothing until the full fix ships"
+        "describe the affected scenario and the interim behaviour in plain terms, with a timeline for the fix"
       ],
-      "correctIndex": 0,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -920,12 +958,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A district education officer, Latha, must allocate a limited grant either to repair roofs at twelve rural schools or to fund a science laboratory at one high-performing school that has won state recognition. The recognition brings visibility and possible further funding. The roofs leak during the monsoon, closing those schools for several weeks each year. Which allocation is most defensible on educational grounds?",
       "options": [
-        "The laboratory, because visibility may attract more funding later",
-        "An equal split between the two",
         "The roof repairs, because they restore weeks of lost teaching for a far larger number of children",
+        "An equal split between the two",
+        "The laboratory, because the recognised school would use it more intensively",
+        "The laboratory, because visibility may attract more funding later",
         "Deferring the decision until more funds arrive"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -944,12 +983,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A district education officer, Latha, must allocate a limited grant either to repair roofs at twelve rural schools or to fund a science laboratory at one high-performing school that has won state recognition. The recognition brings visibility and possible further funding. The roofs leak during the monsoon, closing those schools for several weeks each year. Which criterion should carry most weight in this decision?",
       "options": [
-        "The number of children whose access to schooling is affected",
         "The prestige attaching to the recognised school",
+        "The cost per school of each option",
+        "The number of children whose access to schooling is affected",
         "The preference of the most vocal parents",
         "Which option is administratively simpler"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -968,12 +1008,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A district education officer, Latha, must allocate a limited grant either to repair roofs at twelve rural schools or to fund a science laboratory at one high-performing school that has won state recognition. The recognition brings visibility and possible further funding. The roofs leak during the monsoon, closing those schools for several weeks each year. Having chosen the repairs, Latha can best protect the laboratory proposal by:",
       "options": [
+        "reallocating part of the repair budget to a scaled-down laboratory",
         "abandoning it entirely",
         "asking the school to raise the money from parents",
         "diverting maintenance funds to it quietly",
         "documenting it as a costed, ready proposal for the next funding round"
       ],
-      "correctIndex": 3,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -995,6 +1036,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "Order the ramp removed for breach of procedure",
         "Ignore the complaints entirely",
         "Regularise the ramp through a retrospective approval after checking safety, and separately address the approval process for the future",
+        "Approve the ramp but charge the resident for the corridor space it occupies",
         "Put the ramp to a majority vote of residents"
       ],
       "correctIndex": 2,
@@ -1019,7 +1061,8 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "dismissing them as unimportant",
         "referring every future alteration to a general meeting",
         "penalising the resident to satisfy the complainants",
-        "acknowledging the lapse and publishing a clear route for accessibility requests in future"
+        "acknowledging the lapse and publishing a clear route for accessibility requests in future",
+        "compensating the residents who complained"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -1040,12 +1083,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A retail chain's regional manager, Sanjay, learns that a store manager has been meeting the chain's shrinkage target by recording unsold perishables as damaged in transit rather than as wastage. The store's reported figures look excellent, and the manager is a candidate for promotion. The most important reason to act is that:",
       "options": [
-        "misclassification hides a real wastage problem, so the chain cannot diagnose or fix it anywhere",
         "the store manager may be promoted undeservedly",
+        "misclassification hides a real wastage problem, so the chain cannot diagnose or fix it anywhere",
+        "the logistics team's damage figures will be overstated",
         "transit damage claims may annoy the logistics team",
         "the target was set too low"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1064,12 +1108,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A retail chain's regional manager, Sanjay, learns that a store manager has been meeting the chain's shrinkage target by recording unsold perishables as damaged in transit rather than as wastage. The store's reported figures look excellent, and the manager is a candidate for promotion. Sanjay's most appropriate first step is to:",
       "options": [
-        "promote the manager and address reporting later",
-        "announce the problem at the regional meeting",
         "verify the pattern against transit records, then address it with the manager and correct the reported figures",
+        "announce the problem at the regional meeting",
+        "ask the manager for an explanation before looking at any records",
+        "promote the manager and address reporting later",
         "change the shrinkage target"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1088,12 +1133,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A retail chain's regional manager, Sanjay, learns that a store manager has been meeting the chain's shrinkage target by recording unsold perishables as damaged in transit rather than as wastage. The store's reported figures look excellent, and the manager is a candidate for promotion. Which structural change would most reduce the recurrence of this behaviour?",
       "options": [
-        "Raising the shrinkage target further",
+        "Measuring wastage and transit damage separately and reviewing both, so neither can absorb the other",
         "Rotating store managers annually",
+        "Requiring photographic evidence for every transit damage claim",
         "Removing all targets",
-        "Measuring wastage and transit damage separately and reviewing both, so neither can absorb the other"
+        "Raising the shrinkage target further"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1112,12 +1158,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A retail chain's regional manager, Sanjay, learns that a store manager has been meeting the chain's shrinkage target by recording unsold perishables as damaged in transit rather than as wastage. The store's reported figures look excellent, and the manager is a candidate for promotion. If the store manager argues that the target was unachievable honestly, the most appropriate response is to:",
       "options": [
+        "lower the shrinkage target for all stores to whatever is achievable",
         "treat the target's realism as a separate question to be examined on evidence, while still correcting the misreporting",
         "accept the argument and close the matter",
         "raise the target to remove the excuse",
         "transfer the manager to a smaller store"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1136,12 +1183,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A shopkeeper marks an item 60% above cost and sells it after two successive discounts of 20% and 25%. What is the profit or loss percentage?",
       "options": [
+        "No profit, no loss",
         "4% profit",
         "4% loss",
         "6% profit",
         "8% loss"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1161,11 +1209,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A mixture of 60 litres has milk and water in the ratio 7:3. How much water must be added to make the ratio 3:2?",
       "options": [
         "6 litres",
+        "14 litres",
         "8 litres",
-        "10 litres",
-        "12 litres"
+        "12 litres",
+        "10 litres"
       ],
-      "correctIndex": 2,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1185,9 +1234,10 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A and B together complete a task in 15 days. A alone works for 10 days and then B alone finishes the remaining work in 25 days. How long would B alone take for the whole task?",
       "options": [
         "30 days",
+        "50 days",
         "37.5 days",
-        "40 days",
-        "45 days"
+        "45 days",
+        "40 days"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -1209,11 +1259,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A train 180 m long crosses a platform 270 m long in 30 seconds. What is its speed in km/h?",
       "options": [
         "48",
+        "45",
         "54",
         "60",
         "72"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1233,11 +1284,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A boat covers 30 km downstream in 2 hours and returns in 3 hours. What is the speed of the boat in still water?",
       "options": [
         "10 km/h",
-        "12.5 km/h",
+        "5 km/h",
+        "2.5 km/h",
         "15 km/h",
-        "5 km/h"
+        "12.5 km/h"
       ],
-      "correctIndex": 1,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1256,12 +1308,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "The price of a commodity rises by 25%. By what percentage must consumption fall so that expenditure is unchanged?",
       "options": [
-        "15%",
         "20%",
+        "15%",
+        "16.67%",
         "25%",
         "30%"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1280,12 +1333,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "The difference between compound and simple interest on a sum for 2 years at 10% per annum is Rs 60. What is the sum?",
       "options": [
-        "Rs 4,000",
-        "Rs 8,000",
+        "Rs 3,000",
         "Rs 6,000",
+        "Rs 8,000",
+        "Rs 4,000",
         "Rs 12,000"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1305,11 +1359,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "The average age of 11 players is 28 years. If the average of the first six is 27 and of the last six is 30, what is the age of the sixth player?",
       "options": [
         "32",
-        "34",
+        "30",
         "36",
+        "34",
         "38"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1328,12 +1383,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Three partners invest in the ratio 3:5:7 and the profit is shared in proportion to investment multiplied by time. If they invest for 4, 3 and 2 months respectively, in what ratio is the profit shared?",
       "options": [
-        "12:15:14",
+        "7:5:3",
         "3:5:7",
+        "12:15:14",
         "4:3:2",
         "6:5:7"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1352,12 +1408,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "If x + 1/x = 4, what is the value of x^3 + 1/x^3?",
       "options": [
-        "52",
+        "48",
         "56",
         "60",
-        "64"
+        "64",
+        "52"
       ],
-      "correctIndex": 0,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1378,10 +1435,11 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "4 only",
         "8 only",
+        "4 or -4",
         "8 or -8",
         "16"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1400,12 +1458,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "If log base 2 of x plus log base 2 of (x - 6) equals 4, what is x?",
       "options": [
-        "6",
         "8",
+        "6",
+        "16",
         "10",
         "12"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1424,12 +1483,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "The sum of the first n terms of an arithmetic progression is 3n^2 + 5n. What is its 10th term?",
       "options": [
-        "62",
         "64",
+        "62",
         "68",
-        "72"
+        "72",
+        "58"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1448,12 +1508,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "In how many ways can the letters of the word LEVEL be arranged?",
       "options": [
-        "30",
-        "60",
         "120",
+        "60",
+        "30",
+        "15",
         "20"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1472,12 +1533,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "Two fair dice are rolled. What is the probability that the sum is 8 given that at least one die shows an even number?",
       "options": [
-        "1/9",
-        "5/27",
         "5/36",
+        "5/27",
+        "1/12",
+        "1/9",
         "1/6"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1499,7 +1561,8 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "36 root 3 sq cm",
         "24 root 3 sq cm",
         "144 root 3 sq cm",
-        "72 sq cm"
+        "72 sq cm",
+        "36 sq cm"
       ],
       "correctIndex": 0,
       "answerType": "mcq",
@@ -1523,7 +1586,8 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "6",
         "9",
         "12",
-        "18"
+        "18",
+        "3"
       ],
       "correctIndex": 1,
       "answerType": "mcq",
@@ -1545,11 +1609,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "The distance between the points (3, -2) and (-1, 1) is:",
       "options": [
         "4",
-        "5",
+        "root 13",
         "6",
-        "7"
+        "7",
+        "5"
       ],
-      "correctIndex": 1,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1571,7 +1636,8 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "1",
         "2",
         "3",
-        "4"
+        "4",
+        "0"
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -1593,11 +1659,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "How many trailing zeroes does 50! have?",
       "options": [
         "10",
-        "12",
+        "11",
         "6",
-        "8"
+        "8",
+        "12"
       ],
-      "correctIndex": 1,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1616,12 +1683,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "In a group of 120 people, 70 like tea, 60 like coffee and 25 like both. How many like neither?",
       "options": [
-        "10",
         "15",
+        "10",
         "20",
-        "25"
+        "25",
+        "5"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1642,10 +1710,11 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "480",
         "490",
+        "520",
         "500",
         "510"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1665,11 +1734,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A firm recorded quarterly revenue in Rs crore across three products: Q1 (A 40, B 25, C 35), Q2 (A 50, B 30, C 40), Q3 (A 45, B 40, C 35), Q4 (A 65, B 45, C 50). Which product showed the largest percentage growth from Q1 to Q4?",
       "options": [
         "Product A",
+        "Product B",
         "All grew equally",
         "Product C",
-        "Product B"
+        "Products A and B equally"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1689,11 +1759,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A firm recorded quarterly revenue in Rs crore across three products: Q1 (A 40, B 25, C 35), Q2 (A 50, B 30, C 40), Q3 (A 45, B 40, C 35), Q4 (A 65, B 45, C 50). In which quarter did product C account for the smallest share of that quarter's revenue?",
       "options": [
         "Q1",
+        "The share was the same in every quarter",
         "Q2",
-        "Q3",
-        "Q4"
+        "Q4",
+        "Q3"
       ],
-      "correctIndex": 2,
+      "correctIndex": 4,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1714,6 +1785,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "Rs 50.625 crore",
         "Rs 52 crore",
+        "Rs 51.25 crore",
         "Rs 55 crore",
         "Rs 48 crore"
       ],
@@ -1736,12 +1808,13 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "easy",
       "question": "A survey of 400 commuters recorded primary mode of travel: metro 140, bus 110, private car 90, two-wheeler 60. Of the metro users, 40% also used a bus at least once a week. What percentage of commuters use the metro as their primary mode?",
       "options": [
+        "28%",
         "30%",
-        "35%",
         "40%",
+        "35%",
         "45%"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1761,11 +1834,12 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A survey of 400 commuters recorded primary mode of travel: metro 140, bus 110, private car 90, two-wheeler 60. Of the metro users, 40% also used a bus at least once a week. How many metro users also used a bus at least once a week?",
       "options": [
         "44",
-        "50",
         "56",
+        "50",
+        "35",
         "62"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "answerType": "mcq",
       "marks": 1,
       "negativeMarking": 0.25,
@@ -1785,8 +1859,9 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A survey of 400 commuters recorded primary mode of travel: metro 140, bus 110, private car 90, two-wheeler 60. Of the metro users, 40% also used a bus at least once a week. If the number of private car users falls by one third and those commuters switch to the metro, what will the metro's share of the 400 commuters become?",
       "options": [
         "37.5%",
-        "40%",
+        "47.5%",
         "42.5%",
+        "40%",
         "45%"
       ],
       "correctIndex": 2,
