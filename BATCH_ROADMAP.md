@@ -173,6 +173,47 @@ its rules:
   not comparable with the same questions inside their source mocks. That sentence is on the
   test pages, not just in this file.
 
+### Run the installed SEO skills on generated sections
+
+There is a set of SEO skills installed in this environment, and the programmatic-pages
+section was built and audited without them — a straight miss. `seo-programmatic` covers
+exactly this work ("pages generated at scale from data sources… template engines, URL
+patterns, internal linking automation, thin content safeguards, index bloat prevention"),
+and running it afterwards immediately found something the hand-rolled audit did not
+measure. Run it **before** shipping the next generated section, not after.
+
+What it agreed with, measured against its own thresholds:
+
+| Gate | Threshold | Measured |
+|---|---|---|
+| Unique content per page | ≥40%, hard stop <30% | 74% median, 64% worst |
+| Word count | ≥300 | 539 minimum |
+| Self-referencing canonical | required | 40/40 |
+| Batch size | <100 per release | 41 indexable |
+| Noindexed pages in sitemap | none | none |
+
+Note the metric is the inverse of the one `qa:thin-content` reports: that script measures
+*shared* content, the skill measures *unique*. 25% shared is 75% unique. Same finding,
+opposite direction — do not compare the two numbers directly.
+
+**What it caught: internal link density at 71 links per 1,000 words, against a 3-5
+guideline, and 78 links on one 780-word page.** The cause was rendering every exam in a
+topic's pool as a link, and a pool can span 69 exams. That spreads a page's link equity far
+too thin and reads as a link dump. Exam links are now capped at 12, with the remainder named
+as plain text so nothing is hidden from the reader.
+
+Two further points from the skill worth honouring on the next batch:
+
+- **Progressive rollout.** Publish 50-100 pages, then wait 2-4 weeks and check indexing and
+  rankings before expanding. The subject-topic batch (Thermodynamics, Electrochemistry and
+  the rest) should therefore wait, not follow immediately.
+- **Human review sample.** Read 5-10% of generated pages end to end before publishing.
+  Automated gates measure duplication and length; they cannot tell you a page is useless.
+
+One deliberate divergence: the skill wants `<lastmod>` on sitemap entries reflecting the
+data's update time. This repo's standing policy is to omit `lastmod` unless a real per-URL
+date is tracked in code, so it stays omitted rather than being filled with build time.
+
 ### Thin content: the one failure you cannot see page by page
 
 A generated section is the site's most scalable content and its easiest way to earn a
