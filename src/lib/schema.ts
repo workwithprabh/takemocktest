@@ -24,6 +24,10 @@ export function organizationSchema() {
     name: SITE_NAME,
     url: SITE_URL,
     email: SITE_EMAIL,
+    // Google reads `logo` for brand presentation. Deliberately no `sameAs`:
+    // this site has no social profiles, and listing invented ones would be a
+    // false claim in machine-readable form, which is worse than an omission.
+    logo: `${SITE_URL}/icon.svg`,
   };
 }
 
@@ -115,5 +119,41 @@ export function articleSchema(opts: {
 export function JsonLd({ data }: { data: object }) {
   return {
     __html: JSON.stringify(data),
+  };
+}
+
+/**
+ * Quiz schema for a page that VISIBLY shows its questions and answers.
+ *
+ * Google's Education Q&A rich result needs `about` and `hasPart`, and its
+ * general structured-data policy forbids marking up content a reader cannot
+ * see. The exam test pages therefore cannot carry a complete Quiz: they are
+ * instruction pages, and the questions live behind the attempt flow. The topic
+ * practice pages can, because they print worked examples in full — so only the
+ * questions actually rendered on the page are passed in here.
+ */
+export function quizWithQuestionsSchema(opts: {
+  name: string;
+  description: string;
+  path: string;
+  about: string;
+  questions: { question: string; answer: string }[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Quiz',
+    name: opts.name,
+    description: opts.description,
+    url: `${SITE_URL}${opts.path}`,
+    inLanguage: 'en-IN',
+    isAccessibleForFree: true,
+    about: { '@type': 'Thing', name: opts.about },
+    hasPart: opts.questions.map((item) => ({
+      '@type': 'Question',
+      eduQuestionType: 'Flashcard',
+      text: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+    provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   };
 }
