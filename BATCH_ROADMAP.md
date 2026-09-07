@@ -237,6 +237,53 @@ Non-verbal reasoning — figure series, mirror images, dice, paper folding — i
 absent from the corpus (about 30 questions site-wide) and would need to be authored before the
 hub could claim to cover it.
 
+## SEO content on exam pages
+
+The rule: **content earns rankings by being true and derived, never by repeating a
+keyword.** Every sentence generated onto an exam page must come from data already
+verified against the exam body's own notification — question counts, marks, duration,
+negative marking, section breakdown — or be arithmetic on those numbers. Nothing about
+cut-offs, vacancies, salaries or exam dates is generated, because those are the fields we
+cannot derive and would therefore have to invent.
+
+That constraint is not only an integrity rule, it is the SEO strategy. The site's whole
+position is "syllabus-checked, source-linked, nothing fabricated", and stuffed or invented
+copy is exactly what Google's helpful-content system demotes. Derived content, by
+contrast, is unique per exam by construction and cannot be copied from a competitor
+because they do not hold the data.
+
+**Done — the exam-pattern pages** (`src/lib/exam-pattern-content.ts`, 157 exams). Was a
+bare table at roughly 350 words with no prose to rank. Now carries, per stage:
+
+- a plain-language summary naming questions, marks, duration and section count;
+- **time per question**, computed — the number every aspirant actually wants;
+- a marking-scheme block including the **guessing break-even accuracy**, `n / (m + n)`,
+  compared against the 25% a blind four-option guess gives. This is the one genuinely
+  original thing on the page: no competitor computes it, it is exact arithmetic, and it
+  explains why an exam that deducts 1/3 for a wrong answer is calibrated to make random
+  guessing precisely EV-neutral;
+- a worked scoring example at 80% attempted and 75% accuracy;
+- sectional-lock versus composite-timer consequences;
+- an FAQ block with `FAQPage` schema answering the highest-volume long-tail queries
+  ("is there negative marking in X", "how many questions in X", "what are the total marks
+  in X", "how long is X", "does X have a sectional time limit").
+
+**The larger opportunity, still open.** 147 of the 157 live exams have no `ExamGuide`, so
+their syllabus, eligibility, selection-process, salary and previous-year-papers pages
+render a placeholder and are `noIndex` — roughly 735 pages carrying no search value.
+Only 10 exams (`ssc-cgl`, `ibps-po`, `ssc-chsl`, `sbi-po`, `ibps-clerk`, `rrb-group-d`,
+`ssc-mts`, `ssc-gd-constable`, `sbi-clerk`, `ssc-cpo`) have syllabus and eligibility
+guides; exactly one has a salary guide.
+
+**Do not close that gap by generating it.** Eligibility age limits, pay scales and
+selection-stage lists are exam-body facts, not arithmetic — writing them from the model's
+memory for 147 exams would put hundreds of unverifiable claims on the site and is
+precisely the failure mode the operating model's Hard Research Gate exists to prevent.
+The right route is the ChatGPT content workflow producing checked `ExamGuide` packages
+per exam, prioritised by search demand: syllabus first (highest volume of the five), then
+eligibility, then salary. Until a page has a checked guide it should stay `noIndex`,
+which is the current behaviour and is correct.
+
 ## Baseline package (what "one exam" means)
 
 For the exam's PRIMARY objective-type stage only (e.g. Prelims, Tier 1, CBT — not a
