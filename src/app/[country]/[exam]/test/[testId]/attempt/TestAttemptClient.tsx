@@ -6,6 +6,7 @@ import OMRBubble from '@/components/OMRBubble';
 import ResultDetail from '@/components/ResultDetail';
 import type { Question } from '@/lib/questions';
 import type { TimingGroup } from '@/lib/exams';
+import { isLRSourceSection } from '@/lib/logical-reasoning-sections';
 import {
   AnswerValue,
   AttemptResult,
@@ -125,6 +126,12 @@ export default function TestAttemptClient({
   backLabel?: string;
 }) {
   const backTo = backHref ?? `/${country}/${examSlug}/mock-test`;
+  // Offer the cross-exam reasoning section from the results screen of any exam
+  // test that actually contained pure reasoning — the moment a person has just
+  // seen which puzzles cost them time is the moment the offer is useful. Never
+  // shown inside the hub itself (backHref is set there), which would loop.
+  const offersReasoningHub =
+    !backHref && questions.some((question) => isLRSourceSection(question.section));
   const sections = useMemo(() => [...new Set(questions.map((question) => question.section))], [questions]);
   // A "group" is one timer window: usually a single section (the historical
   // sectionDuration/sectionDurations model, one section per window), but
@@ -411,6 +418,14 @@ export default function TestAttemptClient({
               >
                 View all results
               </Link>
+              {offersReasoningHub && (
+                <Link
+                  href={`/${country}/logical-reasoning`}
+                  className="border border-ink-200 text-ink-900 text-sm font-semibold px-4 py-2.5 hover:border-ink-900 transition"
+                >
+                  Practise more reasoning
+                </Link>
+              )}
             </>
           }
         />

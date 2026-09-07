@@ -7,6 +7,7 @@ import { EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
 import { pageMetadata } from '@/lib/metadata';
+import { LR_LADDER, LR_SLUG, LR_TOPIC_TESTS, LR_TOTAL_QUESTIONS, LR_GRADE_LABELS } from '@/lib/logical-reasoning';
 
 const examSuggestions = Array.from(new Map(
   EXAM_CATEGORIES.flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
@@ -111,6 +112,47 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             {featuredExams.map((exam) => (
               <ExamCard key={exam.slug} exam={exam} country={country} />
             ))}
+          </div>
+        </section>
+
+        {/* Practice by skill sits between the exam list and the category
+            browser deliberately. Both of those require the visitor to already
+            know which exam they are sitting; this is the first entry point on
+            the homepage that does not. Named for the pattern, not the one
+            section that exists today, so Quantitative Aptitude or English can
+            join it later without a rename or a URL change. */}
+        <section id="skills" aria-labelledby="skills-heading" className="scroll-mt-24">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+            <h2 id="skills-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Practice by skill</h2>
+            <Link href={`/${country}/${LR_SLUG}`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+              All reasoning practice <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+          <div className="border border-ink-200 bg-white p-5 md:flex md:items-start md:gap-8">
+            <div className="md:w-2/5 md:shrink-0">
+              <h3 className="text-lg font-bold text-ink-900">
+                <Link href={`/${country}/${LR_SLUG}`} className="hover:underline">Logical reasoning</Link>
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-ink-700">
+                Not sure which exam yet, or just want to get faster at puzzles? {LR_TOTAL_QUESTIONS} reasoning
+                questions pooled from every exam on this site, graded easy to hard on one scale, in {LR_TOPIC_TESTS.length} topic
+                sets and a difficulty ladder. No negative marking, no login.
+              </p>
+            </div>
+            <div className="mt-4 grid flex-1 gap-2 sm:grid-cols-3 md:mt-0">
+              {LR_LADDER.map((rung) => (
+                <Link
+                  key={rung.level}
+                  href={`/${country}/${LR_SLUG}/test/${rung.tests[0].id}`}
+                  className="border border-ink-200 p-3 transition hover:border-ink-900"
+                >
+                  <span className="block text-sm font-bold text-ink-900">{LR_GRADE_LABELS[rung.level]}</span>
+                  <span className="mt-1 block text-xs text-ink-500">
+                    {rung.tests.length} {rung.tests.length === 1 ? 'set' : 'sets'} &middot; {rung.tests[0].duration} min
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 

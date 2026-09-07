@@ -173,6 +173,50 @@ its rules:
   not comparable with the same questions inside their source mocks. That sentence is on the
   test pages, not just in this file.
 
+### How a skill section is introduced and interlinked
+
+A section no exam owns is reachable only because we deliberately made it so. Every other
+page on this site is discoverable through some exam's own navigation; a skill section has
+no parent, so its discovery is designed rather than inherited. Four routes carry it, and
+each is derived from data rather than hand-maintained:
+
+1. **Homepage, "Practice by skill"** (`/in`, between the exam list and the category
+   browser). Both neighbours require the visitor to already know their exam; this band is
+   the homepage's only entry point that does not. Named for the pattern, not for the one
+   section that exists today, so Quantitative Aptitude or English can join without a
+   rename.
+2. **Site chrome** — header primary nav, footer resources, mobile bottom-nav "More". Puts
+   the section on every page of the site, which is what stops it depending on any single
+   surface.
+3. **Exam test pages → hub** (the volume route, hundreds of pages). Any test containing at
+   least 10 pure-reasoning questions renders a block offering the hub. The eligibility test
+   is `isLRSourceSection`, the *same predicate the hub's own extractor uses*, so a page can
+   never offer the hub for a section the hub does not draw from.
+4. **Hub → exams** (the reverse route, which stops the hub being a dead end). Each hub test
+   page lists the exams its questions actually came from, computed from
+   `getExamSlugsForQuestionIds` against the wired banks. It cannot name an exam the set
+   does not contain, and it cannot go stale when a bank moves.
+
+Plus two intent-moment links: the "next in the ladder" step on every hub test page, and a
+"Practise more reasoning" action on the results screen of any exam test that contained
+reasoning — the moment a person has just seen which puzzles cost them time.
+
+**What keeps it honest.** Two single sources of truth and one build gate:
+
+- `src/lib/logical-reasoning-sections.ts` — the section allowlist, with no imports, read by
+  the extractor (`build-lr-pool.mjs` transpiles it), the exam pages, and the hub. Three
+  consumers, one list, so they cannot drift.
+- `getExamSlugsForQuestionIds` in `questions.ts` — the only place a question's owning exam
+  is derived, from the `${examSlug}/${testId}` keys of `CHECKED_TEST_BANKS`.
+- `npm run qa:links` (`scripts/audit-internal-links.mjs`, part of `qa:site`) — fails the
+  build if any link on a hub page is dead, if the homepage stops linking to the hub, if the
+  chrome link disappears, or if fewer than 25 exam test pages carry the offer block. The
+  failure mode this guards against is silent: a refactor drops the block, the page still
+  builds, stays in the sitemap, and quietly stops being findable.
+
+**When adding the next skill section**, repeat the four routes and extend the audit's
+expectations rather than inventing a new discovery pattern.
+
 Remaining work on the hub: 2,650 of the extracted 3,415-question reasoning pool are still
 ungraded, and 263 already-graded questions are not yet used by a set. Grading more is what
 unlocks a third Hard set (77 graded hard questions today, 50 of them consumed by the two Hard

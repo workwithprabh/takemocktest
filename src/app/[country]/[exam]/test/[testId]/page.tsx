@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, SITE_NAME, SITE_URL, jsonLdHtml } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { isLRSourceSection } from '@/lib/logical-reasoning-sections';
+import { LR_SLUG, LR_TOTAL_QUESTIONS } from '@/lib/logical-reasoning';
 
 export function generateStaticParams() {
   return EXAM_LIST.flatMap((exam) =>
@@ -2052,6 +2054,15 @@ export default async function TestInstructionsPage({
         return map;
       }, new Map<string, number>())].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     : [];
+  // Offer the cross-exam Logical Reasoning hub from any test that contains a
+  // meaningful amount of PURE reasoning. The section test is
+  // isLRSourceSection, the same predicate the hub's own extractor uses, so a
+  // page can never offer the hub for a section the hub does not actually draw
+  // from. The 10-question floor keeps the offer off papers that carry only a
+  // token reasoning presence, where it would read as an unrelated advert.
+  const reasoningSections = coveredSections.filter(isLRSourceSection);
+  const reasoningQuestionCount = questions.filter((question) => isLRSourceSection(question.section)).length;
+  const offersReasoningHub = reasoningQuestionCount >= 10;
   const difficultyParts = isSectional
     ? (['easy', 'medium', 'hard'] as const)
         .map((level) => [level, questions.filter((question) => question.difficulty === level).length] as const)
@@ -2358,6 +2369,42 @@ export default async function TestInstructionsPage({
               </div>
             </section>
           )}
+        </div>
+      )}
+
+      {offersReasoningHub && (
+        <div className="mt-14 border-t border-ink-200 pt-10">
+          <section aria-labelledby="reasoning-hub">
+            <h2 id="reasoning-hub" className="mb-3 text-xl font-bold text-ink-900">
+              Drill {reasoningSections.length === 1 ? reasoningSections[0] : 'reasoning'} beyond {exam.name}
+            </h2>
+            <p className="max-w-3xl text-sm leading-7 text-ink-700">
+              {reasoningQuestionCount} of the {questionCount} questions here are pure reasoning, and reasoning is the
+              one part of a paper that is not exam-specific: a seating puzzle does not change because it appears in a
+              bank paper rather than a railway one. Our Logical Reasoning section pools {LR_TOTAL_QUESTIONS} such
+              questions from across every exam on this site and sorts them two ways &mdash; by difficulty, so you can
+              find your level, and by topic, so you can drill the family that costs you time.
+            </p>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-ink-700">
+              It is practice, not simulation: there is no negative marking there, so a score in that section is not
+              comparable with your score here. Use it to build the skill, and come back to this test to rehearse the
+              exam.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3 text-sm">
+              <Link
+                href={`/${country}/${LR_SLUG}`}
+                className="inline-flex min-h-11 items-center bg-ink-900 px-4 font-semibold text-white transition hover:bg-ink-700"
+              >
+                Practise logical reasoning
+              </Link>
+              <Link
+                href={`/${country}/${LR_SLUG}/test/easy-set-1`}
+                className="inline-flex min-h-11 items-center border border-ink-200 px-4 font-semibold text-ink-900 transition hover:border-ink-900"
+              >
+                Start with an easy set
+              </Link>
+            </div>
+          </section>
         </div>
       )}
     </div>
