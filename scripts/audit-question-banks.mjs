@@ -12,7 +12,7 @@ const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 // prefix and the trailing number, so it matched the `-.+-\d+.ts` tail of no
 // pattern) came back green without a single check having run against it.
 // Unrecognised files are now reported as errors rather than skipped.
-const bankFilePattern = /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ssc-chsl-tier2|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|ibps-clerk-mains|rrb-ntpc-cbt1|rrb-ntpc-cbt2|rrb-group-d-cbt|sbi-po-prelims|sbi-po-mains|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ibps-rrb-office-assistant-mains|ibps-rrb-officer-scale-1-mains|rbi-assistant-mains|lic-aao-mains|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|sbi-clerk-mains|rrb-je-cbt1|rrb-je-cbt2|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|bitsat-2026-mathematics|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ssc-cpo-paper-2|ibps-so-prelims|ibps-so-mains|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sebi-grade-a-phase-2-paper-2|sidbi-grade-a-b-phase-1|sidbi-grade-a-b-phase-2|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical|viteee-2026-mpcea|srmjeee-2026-pcm|aeee-2026-btech|met-2026-btech|comedk-uget-2026-btech|iiit-hyderabad-ugee-2026|ielts-academic-reading|ielts-general-training-reading|toefl-reading|pte-reading|sat-reading-and-writing|sat-math|gre-quantitative-reasoning|act-english|act-math|act-reading|act-science|mcat-cars|oet-reading-part-c|frm-part-1-quantitative-analysis|nism-series-v-a-mutual-fund-distributors|acet-mathematics-and-statistics|ca-foundation-quantitative-aptitude|cma-foundation-business-mathematics-and-statistics|nda-mathematics|nda-general-ability-test-english|cds-elementary-mathematics|cds-english|afcat-verbal-numerical-and-reasoning|territorial-army-reasoning-and-english|inet-english-and-reasoning-numerical-ability|agniveer-vayu-english-and-mathematics|navy-ssr-english-and-mathematics|clat-english-legal-logical-quantitative|ailet-english-and-logical-reasoning|slat-logical-legal-analytical-reading|mh-cet-law-legal-logical-english-mathematics|mh-cet-law-3-year-legal-logical-english|cat-varc-dilr-qa|cmat-qtdi-logical-reasoning-language-comprehension|nmat-language-logical-reasoning-quantitative|snap-general-english-analytical-logical-reasoning-quantitative-di-ds|atma-analytical-reasoning-verbal-quantitative-skills|ibsat-verbal-reading-quantitative-data-adequacy|mat-language-reasoning-quant-data|micat-va-qadi-dct|tancet-mba-business-situations-rc-quant-ds-english|kmat-karnataka-language-mathematical-basic-aptitude|jipmat-qa-dilr-varc|nata|mht-cet-pcm|wbjee-engineering|ap-eapcet-engineering|tg-eapcet-engineering|kcet-engineering|amu-btech-2026|assam-cee-2026|bits-hd-2026-me-cs|cg-pet-2026|bcece-2026-pcm-engineering|cusat-cat-2026-btech|gate-2026-cs|jam-2026-mathematics|gpat-2026-pharmacy|cseet-2026-business-laws-and-management|neet-pg-2026-medical|fmge-2026-part-[ab]|ini-cet-2026-medical|xat-2026-part-1|gujcet-2026|jain-jet-2026|saeee-2026|siteee-2026|special-ojee-2026-btech|upeseat-2026|nmims-cet-2026|bv-btech-2026|chandigarh-cucet-2026|imu-cet-2026|kleee-2026|ap-polycet-2026|atit-2026|ap-ecet-2026|ap-pgecet-2026|lpunest-2026|nerist-nee-2026|bihar-dcece-2026|hp-pat-2026|iemjee-2026|jeecup-2026|mit-wpu-cet-2026|jharkhand-pece-2026|kiitee-2026|ojee-2026-le-tech-diploma|puleet-2026|tg-ecet-2026|tg-polycet-2026|ctet-2026|cuet-ug-2026|ipmat-rohtak-2026|ipmat-indore-2026|nchm-jee-2026|cg-ppt-2026|tjee-2026|uttarakhand-jeep-2026|neet-ug-2026|niftee-2026|wb-jelet-2026|vtueee-2026|clat-2026|ap-lawcet-2026|tg-lawcet-2026|iiser-iat-2026|aibe-xxi-2026|ailet-2026|aiapget-2026|niper-jee-2026|ugc-net-june-2026|cuet-pg-2026|icar-aieea-pg-2026|ctet-sep-2026|cmat-2026|slat-2026|jipmat-2026|jcece-2026|jest-2026|keam-2026|kerala-mca-2026|ksdat-2026|mah-bhmct-bca-bba-bms-bbm-cet-2026|mah-mba-cet-2026|mah-mca-cet-2026|state-set-2026)-.+-\d+\.ts$/;
+const bankFilePattern = /^(ssc-cgl-tier[12]|ssc-chsl-tier1|ssc-chsl-tier2|ibps-po-prelims|ibps-po-mains|ibps-clerk-prelims|ibps-clerk-mains|rrb-ntpc-cbt1|rrb-ntpc-cbt2|rrb-group-d-cbt|sbi-po-prelims|sbi-po-mains|rbi-assistant-prelims|ssc-mts-cbt|ibps-rrb-office-assistant-prelims|ibps-rrb-office-assistant-mains|ibps-rrb-officer-scale-1-mains|rbi-assistant-mains|lic-aao-mains|ssc-gd-constable-cbe|ibps-rrb-officer-scale-1-prelims|sbi-clerk-prelims|sbi-clerk-mains|rrb-je-cbt1|rrb-je-cbt2|upsc-cse-paper-[12]|rpf-constable-cbt|rpf-si-cbt|ssc-je-paper-1|ssc-steno-cbt|ssc-cht-paper-1|ssc-selection-post|bitsat-2026-mathematics|jee-(?:main|advanced)-paper-[12]|ssc-cpo-paper-1|ssc-cpo-paper-2|ibps-so-prelims|ibps-so-mains|rbi-grade-b-phase-1|nabard-grade-a-phase-1|sebi-grade-a-phase-1-paper-[12]|sebi-grade-a-phase-2-paper-2|sidbi-grade-a-b-phase-1|sidbi-grade-a-b-phase-2|lic-aao-prelims|niacl-ao-prelims|niacl-ao-mains|rrb-alp-cbt1|rrb-alp-cbt2|rrb-technician-grade1-signal|rrb-technician-grade3|rrb-paramedical|viteee-2026-mpcea|srmjeee-2026-pcm|aeee-2026-btech|met-2026-btech|comedk-uget-2026-btech|iiit-hyderabad-ugee-2026|ielts-academic-reading|ielts-general-training-reading|toefl-reading|pte-reading|sat-reading-and-writing|sat-math|gre-quantitative-reasoning|act-english|act-math|act-reading|act-science|mcat-cars|oet-reading-part-c|frm-part-1-quantitative-analysis|nism-series-v-a-mutual-fund-distributors|acet-mathematics-and-statistics|ca-foundation-quantitative-aptitude|cma-foundation-business-mathematics-and-statistics|nda-mathematics|nda-general-ability-test-english|cds-elementary-mathematics|cds-english|afcat-verbal-numerical-and-reasoning|territorial-army-reasoning-and-english|inet-english-and-reasoning-numerical-ability|agniveer-vayu-english-and-mathematics|navy-ssr-english-and-mathematics|clat-english-legal-logical-quantitative|ailet-english-and-logical-reasoning|slat-logical-legal-analytical-reading|mh-cet-law-legal-logical-english-mathematics|mh-cet-law-3-year-legal-logical-english|cat-varc-dilr-qa|cmat-qtdi-logical-reasoning-language-comprehension|nmat-language-logical-reasoning-quantitative|snap-general-english-analytical-logical-reasoning-quantitative-di-ds|atma-analytical-reasoning-verbal-quantitative-skills|ibsat-verbal-reading-quantitative-data-adequacy|mat-language-reasoning-quant-data|micat-va-qadi-dct|tancet-mba-business-situations-rc-quant-ds-english|kmat-karnataka-language-mathematical-basic-aptitude|jipmat-qa-dilr-varc|nata|mht-cet-pcm|wbjee-engineering|ap-eapcet-engineering|tg-eapcet-engineering|kcet-engineering|amu-btech-2026|assam-cee-2026|bits-hd-2026-me-cs|cg-pet-2026|bcece-2026-pcm-engineering|cusat-cat-2026-btech|gate-2026-cs|jam-2026-mathematics|gpat-2026-pharmacy|cseet-2026-business-laws-and-management|neet-pg-2026-medical|fmge-2026-part-[ab]|ini-cet-2026-medical|xat-2026-part-1|gujcet-2026|jain-jet-2026|saeee-2026|siteee-2026|special-ojee-2026-btech|upeseat-2026|nmims-cet-2026|bv-btech-2026|chandigarh-cucet-2026|imu-cet-2026|kleee-2026|ap-polycet-2026|atit-2026|ap-ecet-2026|ap-pgecet-2026|lpunest-2026|nerist-nee-2026|bihar-dcece-2026|hp-pat-2026|iemjee-2026|jeecup-2026|mit-wpu-cet-2026|jharkhand-pece-2026|kiitee-2026|ojee-2026-le-tech-diploma|puleet-2026|tg-ecet-2026|tg-polycet-2026|ctet-2026|cuet-ug-2026|ipmat-rohtak-2026|ipmat-indore-2026|lsat-2026|nchm-jee-2026|cg-ppt-2026|tjee-2026|uttarakhand-jeep-2026|neet-ug-2026|niftee-2026|wb-jelet-2026|vtueee-2026|clat-2026|ap-lawcet-2026|tg-lawcet-2026|iiser-iat-2026|aibe-xxi-2026|ailet-2026|aiapget-2026|niper-jee-2026|ugc-net-june-2026|cuet-pg-2026|icar-aieea-pg-2026|ctet-sep-2026|cmat-2026|slat-2026|jipmat-2026|jcece-2026|jest-2026|keam-2026|kerala-mca-2026|ksdat-2026|mah-bhmct-bca-bba-bms-bbm-cet-2026|mah-mba-cet-2026|mah-mca-cet-2026|state-set-2026)-.+-\d+\.ts$/;
 const allBankFiles = fs
   .readdirSync(banksDir)
   .filter((file) => file.endsWith('.ts'))
@@ -272,6 +272,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('ctet-sep-2026-paper1-language-i-english-') ? 30
     : file.startsWith('ctet-sep-2026-paper1-language-ii-hindi-') ? 30
     : file.startsWith('cuet-ug-2026-english-') ? 50
+    : file.startsWith('lsat-2026-scored-sections-full-mock-') ? 77
     : file.startsWith('ipmat-indore-2026-ipm-aptitude-test-full-mock-') ? 90
     : file.startsWith('ipmat-rohtak-2026-quantitative-ability-') ? 40
     : file.startsWith('ipmat-rohtak-2026-logical-reasoning-') ? 40
@@ -543,8 +544,19 @@ for (const { file, questions } of banks) {
     }
   }
   const mcqQuestions = questions.filter((question) => !question.answerType || question.answerType === 'mcq');
-  const answerCounts = [0, 1, 2, 3].map(
-    (answerIndex) => mcqQuestions.filter((question) => question.correctIndex === answerIndex).length,
+  // Answer-position balance is only meaningful across positions every question
+  // in the bank could actually use. This used to be hard-coded to A-D, which
+  // left position E in a five-option bank unchecked: a paper that never once
+  // keyed E would have passed silently, the same shape of blind spot as the
+  // unrecognised-filename skip above. A bank of uniform option width is now
+  // checked across all of its positions; a bank that mixes widths falls back
+  // to the four positions every question has, because E is structurally
+  // unavailable to its four-option questions and would read as a false
+  // imbalance.
+  const optionWidths = new Set(mcqQuestions.map((question) => question.options?.length ?? 0));
+  const checkedPositions = optionWidths.size === 1 ? Math.max([...optionWidths][0], 4) : 4;
+  const answerCounts = Array.from({ length: checkedPositions }).map(
+    (unused, answerIndex) => mcqQuestions.filter((question) => question.correctIndex === answerIndex).length,
   );
   // The flat +/-3 tolerance below was set for this corpus's typical ~20-100
   // question banks; it never needed scaling until BCECE's 300-question
@@ -659,10 +671,21 @@ console.log(
   + `${total} questions, no duplicate IDs or text.`,
 );
 for (const { file, questions } of banks) {
-  const answers = [0, 1, 2, 3].map((index) => questions.filter((question) => question.correctIndex === index).length);
+  const mcqWidths = new Set(
+    questions
+      .filter((question) => !question.answerType || question.answerType === 'mcq')
+      .map((question) => question.options?.length ?? 0),
+  );
+  const reportedPositions = mcqWidths.size === 1 ? Math.max([...mcqWidths][0], 4) : 4;
+  const answers = Array.from({ length: reportedPositions }).map(
+    (unused, index) => questions.filter((question) => question.correctIndex === index).length,
+  );
+  const positionLabels = Array.from({ length: reportedPositions })
+    .map((unused, index) => String.fromCharCode(65 + index))
+    .join('/');
   const difficulties = Object.groupBy(questions, (question) => question.difficulty);
   console.log(
-    `${file}: answers A/B/C/D ${answers.join('/')} · difficulty E/M/H ` +
+    `${file}: answers ${positionLabels} ${answers.join('/')} · difficulty E/M/H ` +
       `${difficulties.easy?.length || 0}/${difficulties.medium?.length || 0}/${difficulties.hard?.length || 0}`,
   );
 }
