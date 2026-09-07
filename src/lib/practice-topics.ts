@@ -22,6 +22,7 @@
 //     and the pages say so rather than implying a fixed paper.
 //   * Never point a numbered, frozen product at this index.
 
+import { getExam } from './exams';
 import { getCheckedQuestionEntries, type Question } from './questions';
 
 export type PracticeFamily = 'Quantitative' | 'Reasoning' | 'English';
@@ -276,3 +277,60 @@ export const PRACTICE_FAMILY_BLURBS: Record<PracticeFamily, string> = {
   Reasoning: 'Pure reasoning families — no subject knowledge, only the rules in front of you.',
   English: 'Grammar, vocabulary and comprehension topics set the same way across most English sections.',
 };
+
+// ---------------------------------------------------------------------------
+// Derived per-topic facts.
+//
+// These exist to solve a measured problem, not a theoretical one. When the
+// section first shipped, 48% of each topic page's main content was text that
+// also appeared on another topic page: the FAQ answers were one template with
+// the topic name substituted in, so forty pages said the same thing forty
+// times. That is exactly the shape of thin, templated content that search
+// engines discount, and it wastes the one advantage this section has — the
+// pools genuinely differ from each other.
+//
+// Everything below returns something that is actually different per topic, so
+// the prose built on it is different too.
+// ---------------------------------------------------------------------------
+
+/** Share of a pool graded hard, as a percentage of the graded questions. */
+export function getHardShare(pool: TopicPool): number {
+  const graded = pool.difficulty.easy + pool.difficulty.medium + pool.difficulty.hard;
+  return graded === 0 ? 0 : Math.round((pool.difficulty.hard / graded) * 100);
+}
+
+/** Share of a pool graded easy, as a percentage of the graded questions. */
+export function getEasyShare(pool: TopicPool): number {
+  const graded = pool.difficulty.easy + pool.difficulty.medium + pool.difficulty.hard;
+  return graded === 0 ? 0 : Math.round((pool.difficulty.easy / graded) * 100);
+}
+
+let averageHardShare: number | null = null;
+
+/**
+ * The hard share across every published topic, so a page can say whether its
+ * own topic runs harder or easier than the section as a whole. A comparison is
+ * worth more than a raw percentage: it is the difference between "12% hard"
+ * and "harder than most topics on this site".
+ */
+export function getAverageHardShare(): number {
+  if (averageHardShare !== null) return averageHardShare;
+  const pools = [...getTopicPools().values()];
+  const shares = pools.map(getHardShare);
+  averageHardShare = shares.length === 0 ? 0 : Math.round(shares.reduce((a, b) => a + b, 0) / shares.length);
+  return averageHardShare;
+}
+
+/** Exam categories that set this topic, commonest first. */
+export function getTopicCategories(pool: TopicPool): { category: string; count: number }[] {
+  const counts = new Map<string, number>();
+  for (const slug of pool.examSlugs) {
+    const exam = getExam(slug);
+    if (!exam) continue;
+    counts.set(exam.category, (counts.get(exam.category) ?? 0) + 1);
+  }
+  return [...counts]
+    .map(([category, count]) => ({ category, count }))
+    .sort((a, b) => b.count - a.count || a.category.localeCompare(b.category));
+}
+

@@ -173,6 +173,49 @@ its rules:
   not comparable with the same questions inside their source mocks. That sentence is on the
   test pages, not just in this file.
 
+### Thin content: the one failure you cannot see page by page
+
+A generated section is the site's most scalable content and its easiest way to earn a
+demotion. The failure is invisible in review: every page builds, validates, reads sensibly
+and looks fine **on its own**. It only exists *between* pages. So it has to be measured,
+not eyeballed.
+
+`npm run qa:thin-content` (`scripts/audit-thin-content.mjs`, part of `qa:site`) chops each
+page's main content into 8-word shingles and fails the build when too much of a page also
+appears on a sibling page in the same section. It measures **indexable sections only** — a
+noindexed page cannot earn a thin-content demotion, and a gate that reports things nobody
+should act on gets ignored, which is worse than no gate.
+
+**What it caught, on work that had just shipped.** The topic pages launched at 48% shared
+content. The cause was the FAQ block: one template with the topic name substituted in. Four
+fixes, in order of how much each moved the number:
+
+1. **Move standing caveats to the section index.** How scoring works, that progress is saved
+   in the browser, that difficulty is graded on our own scale — all true, all worth saying
+   **once**. That was ~150 words of identical prose per page.
+2. **Cut answers that only pretend to be derived.** "Is it negatively marked?" was computed
+   from real data and still resolved to "0 to One-fourth of the marks" on 36 of 40 pages.
+   Boilerplate in a data costume is still boilerplate.
+3. **Rebuild the rest from each page's own numbers** so sentences differ because the facts
+   differ — difficulty profile against the section average, which exam categories set the
+   topic, pool composition.
+4. **Let the unique thing dominate.** Worked examples are 100% unique per topic and are what
+   the query is actually looking for. Three became six.
+
+Result: 48% average down to 25%, worst case 35%, against a 40% ceiling.
+
+**The rule to carry into the next batch: the fix is never "add more words".** Padding raises
+the word count and the duplication together. The fix is to cut what repeats and let what
+differs carry the page.
+
+**It also re-scored the existing Logical Reasoning set pages at 75-84% boilerplate**, and a
+collision check found eight of them competing with the new topic pages for the same query
+(`/logical-reasoning/test/topic-syllogism` against `/practice/syllogism`, 25 questions against
+293). Those set pages are now `noIndex` and out of the sitemap. They remain products to
+attempt — nobody searches "logical reasoning easy set 4". The hub carries the section in
+search; topic practice owns the topic queries. **When a new section overlaps an old one,
+decide which page owns the query rather than letting both chase it.**
+
 ### Two kinds of cross-exam section: frozen and growing
 
 There are now two, and the difference is not cosmetic — getting it wrong breaks either
