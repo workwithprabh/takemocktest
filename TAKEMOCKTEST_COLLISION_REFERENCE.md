@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-07 from 779 bank files / 31117 questions.
+Generated: 2026-09-07 from 780 bank files / 31173 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -130,6 +130,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a radioactive sample has a half | aeee-2026, amu-btech, assam-cee, bitsat-2026, comedk-uget, imu-cet, jcece-2026, kcet-engineering, met-2026, mht-cet, srmjeee-2026 (11) |
 | the general solution of dy dx | ap-eapcet, bitsat-2026, cg-pet, comedk-uget, imu-cet, jcece-2026, kcet-engineering, keam-2026, special-ojee, tg-ecet, wbjee-engineering (11) |
 | a first order reaction has a | ap-eapcet, assam-cee, atit-2026, chandigarh-cucet, jee-advanced, kcet-engineering, kleee-2026, mht-cet, nerist-nee, tjee-2026, upeseat-2026 (11) |
+| what is the value of x | ap-ecet, atit-2026, gmat-2026, ibps-po, ibsat-verbal, mat-language, nchm-jee, sat-math, sbi-po, snap-general, tancet-mba (11) |
 | find the area of a triangle | cds-elementary, ibps-rrb, kmat-karnataka, navy-ssr, rbi-grade, rpf-constable, rpf-si, rrb-alp, sbi-po, ssc-chsl, ssc-cpo (11) |
 | in a code each letter is | chandigarh-cucet, cuet-ug, ibps-clerk, ibps-so, imu-cet, jain-jet, niftee-2026, rrb-ntpc, ssc-cgl, ssc-selection, viteee-2026 (11) |
 | if a b 3 4 and | cma-foundation, ibps-clerk, ibps-rrb, ibps-so, ipmat-rohtak, lic-aao, niacl-ao, rpf-constable, rpf-si, rrb-ntpc, sbi-po (11) |
@@ -150,5 +151,4 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a 5 kg block on a | amu-btech, ap-eapcet, assam-cee, bcece-2026, jee-main, kcet-engineering, kiitee-2026, special-ojee, tg-eapcet, wbjee-engineering (10) |
 | a projectile is launched at 20 | ap-eapcet, atit-2026, jcece-2026, kcet-engineering, lpunest-2026, mht-cet, nerist-nee, srmjeee-2026, tg-ecet, vtueee-2026 (10) |
 | phenol is more acidic than ethanol | ap-eapcet, assam-cee, comedk-uget, imu-cet, kcet-engineering, lpunest-2026, neet-ug, srmjeee-2026, viteee-2026, vtueee-2026 (10) |
-| what is the value of x | ap-ecet, atit-2026, ibps-po, ibsat-verbal, mat-language, nchm-jee, sat-math, sbi-po, snap-general, tancet-mba (10) |
 | what is the primary purpose of | ap-pgecet, ibps-po, ibps-so, ibsat-verbal, jee-main, nabard-grade, niacl-ao, rrb-alp, rrb-technician, tancet-mba (10) |

@@ -59,6 +59,7 @@ export type ExamSlug =
   | 'act'
   | 'mcat'
   | 'lsat'
+  | 'gmat'
   | 'oet'
   | 'frm'
   | 'nism'
@@ -297,6 +298,7 @@ const GRE_QUANT_PAGE = 'https://www.ets.org/gre/test-takers/general-test/prepare
 const ACT_FORMAT_PAGE = 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html';
 const MCAT_CARS_PAGE = 'https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview';
 const LSAT_FORMAT_PAGE = 'https://www.lsac.org/lsat/taking-lsat/test-format';
+const GMAT_EXAM_PAGE = 'https://www.mba.com/exams/gmat-exam';
 const OET_READING_PART_C_PAGE = 'https://oet.com/en-us/post/reading-part-c-the-complete-guide';
 const FRM_PROGRAM_EXAMS_PAGE = 'https://www.garp.org/frm/program-exams';
 const NISM_SERIES_V_A_FAQ_PAGE = 'https://www.nism.ac.in/frequently-asked-questions-mutual-fund-distributors/';
@@ -8992,6 +8994,39 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
       },
     ],
   },
+  'gmat': {
+    slug: 'gmat',
+    name: 'GMAT',
+    fullName: 'GMAT Focus Edition 2026',
+    category: 'Study Abroad',
+    stages: [
+      {
+        id: 'focus-edition',
+        name: 'Focus Edition',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Quantitative Reasoning', 'Verbal Reasoning', 'Data Insights: Data Sufficiency'],
+          totalQuestions: 56,
+          totalMarks: 56,
+          duration: 115,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Quantitative Reasoning', questions: 21, marks: 21, duration: 45 },
+            { name: 'Verbal Reasoning', questions: 23, marks: 23, duration: 45 },
+            { name: 'Data Insights: Data Sufficiency', questions: 12, marks: 12, duration: 25 },
+          ],
+          timerNote: 'Section timers of 45, 45 and 25 minutes in the order shown, each locking when it ends. The first two match the real 45-minute sections; the third is shorter because it covers only the Data Sufficiency part of the 45-minute Data Insights section.',
+          note: 'The GMAT Focus Edition, administered by GMAC, runs 2 hours and 15 minutes across three equally weighted 45-minute sections: Quantitative Reasoning (21 questions), Verbal Reasoning (23 questions) and Data Insights (20 questions). Every question has five answer choices, there is no penalty for a wrong answer, and the total score is reported on a 205 to 805 scale. Two sections are reproduced here in full. Quantitative Reasoning is 21 Problem Solving questions, which is the whole of the real section: the Focus Edition removed geometry from the syllabus and moved Data Sufficiency out of Quantitative Reasoning altogether, and neither appears in this section here. Verbal Reasoning is 23 Reading Comprehension and Critical Reasoning questions, again the whole of the real section, since Sentence Correction was dropped in the Focus Edition. Data Insights is the exception and is deliberately partial. Of its five question types, only Data Sufficiency is a plain five-option multiple-choice question, and it is built here as a defined 12-question set in 25 minutes rather than as a replica of the 20-question section. Multi-Source Reasoning needs tabbed sources, Table Analysis needs a sortable table, Graphics Interpretation needs drop-down completion and Two-Part Analysis needs a two-column selection grid; rendering any of them as an ordinary multiple-choice question would misrepresent what the format tests, so they are omitted rather than approximated. The section is named for the format it contains so that no one reads it as the real Data Insights section. Data Sufficiency questions always offer the same five answer choices in the same order, which is why the answer key for that block is not spread the way the rest of the paper is. Two further differences from a real sitting are worth stating. The GMAT is question-level adaptive within each section, so difficulty responds to performance and no two candidates see the same 21 questions; this mock is fixed-form, which means a raw score here has no conversion to the official scale and is useful for diagnosis rather than for prediction. And candidates choose the order in which they take the three sections on the day, so the order used here is a presentation choice rather than the exam order. The real test also lets a candidate bookmark questions and change up to three answers per section; this platform allows unrestricted review within a section until its timer ends, which is more permissive than the real thing. The pattern is marked review-pending because mba.com is refused by the network the environment that maintains this catalogue runs behind, so the counts, timing and scoring above rest on consistent secondary-source corroboration rather than a directly read GMAC page.',
+          sourceUrl: GMAT_EXAM_PAGE,
+          checkedOn: '7 September 2026',
+        },
+        tests: [
+          { id: 'focus-edition-full-mock-1', name: 'Focus Edition Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 115, sectionDurations: [45, 45, 25], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark per correct answer and no penalty for a wrong one, so every question should be answered. The raw score out of 56 shown here does not convert to the official 205 to 805 scale, because the real exam is question-level adaptive and this mock is fixed-form. Each section is capped at its own timer and locks when that timer ends.', checkedOn: '7 September 2026' },
+        ],
+      },
+    ],
+  },
   'lsat': {
     slug: 'lsat',
     name: 'LSAT',
@@ -10235,11 +10270,11 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           checkedOn: '20 August 2026',
         },
         tests: [
-          { id: 'pcm-full-mock-1', name: 'MHT CET 2026 PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Physics and Chemistry award 1 mark each per correct answer; Mathematics awards 2. No negative marking. Physics and Chemistry share the first 90 minutes and auto-submit as a group; Mathematics then gets a separate 90 minutes with no return to the first group.', checkedOn: '20 August 2026' },
-          { id: 'pcm-physics-chemistry-group-1', name: 'MHT CET 2026 Physics + Chemistry Group Practice Test 1', kind: 'practice', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. A standalone practice version of the official Physics + Chemistry group with free navigation across both subjects for the full 90 minutes; the complete PCM exam feeds this same group directly into a following Mathematics group, covered separately by the Full Mock.', checkedOn: '20 August 2026' },
-          { id: 'pcm-mathematics-sectional-1', name: 'MHT CET 2026 Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Each correct answer awards 2 marks, matching the official Mathematics group. No negative marking.', checkedOn: '20 August 2026' },
-          { id: 'pcm-full-mock-2', name: 'MHT CET 2026 PCM Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Physics and Chemistry award 1 mark each per correct answer; Mathematics awards 2. No negative marking. Physics and Chemistry share the first 90 minutes and auto-submit as a group; Mathematics then gets a separate 90 minutes with no return to the first group.', checkedOn: '24 August 2026' },
-          { id: 'pcm-mathematics-sectional-2', name: 'MHT CET 2026 Mathematics Sectional Test 2', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Each correct answer awards 2 marks, matching the official Mathematics group. No negative marking.', checkedOn: '24 August 2026' },
+          { id: 'pcm-full-mock-1', name: 'PCM Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Physics and Chemistry award 1 mark each per correct answer; Mathematics awards 2. No negative marking. Physics and Chemistry share the first 90 minutes and auto-submit as a group; Mathematics then gets a separate 90 minutes with no return to the first group.', checkedOn: '20 August 2026' },
+          { id: 'pcm-physics-chemistry-group-1', name: 'Physics + Chemistry Group Practice Test 1', kind: 'practice', status: 'checked', duration: 90, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'No negative marking. A standalone practice version of the official Physics + Chemistry group with free navigation across both subjects for the full 90 minutes; the complete PCM exam feeds this same group directly into a following Mathematics group, covered separately by the Full Mock.', checkedOn: '20 August 2026' },
+          { id: 'pcm-mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Each correct answer awards 2 marks, matching the official Mathematics group. No negative marking.', checkedOn: '20 August 2026' },
+          { id: 'pcm-full-mock-2', name: 'PCM Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, timingGroups: [{ sections: ['Physics', 'Chemistry'], duration: 90 }, { sections: ['Mathematics'], duration: 90 }], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Physics and Chemistry award 1 mark each per correct answer; Mathematics awards 2. No negative marking. Physics and Chemistry share the first 90 minutes and auto-submit as a group; Mathematics then gets a separate 90 minutes with no return to the first group.', checkedOn: '24 August 2026' },
+          { id: 'pcm-mathematics-sectional-2', name: 'Mathematics Sectional Test 2', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 90, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Each correct answer awards 2 marks, matching the official Mathematics group. No negative marking.', checkedOn: '24 August 2026' },
         ],
       },
     ],
@@ -10492,8 +10527,8 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           checkedOn: '26 August 2026',
         },
         tests: [
-          { id: 'me-cs-full-mock-1', name: 'BITS HD 2026 M.E. Computer Science Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, timingGroups: [{ sections: ['Core Mathematics', 'English Language Skills & Logical Reasoning'], duration: 45 }, { sections: ['Computer Science'], duration: 105 }], marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'Every question awards 3 marks for a correct answer and deducts 1 mark for an incorrect answer; an unattempted question scores zero. Test I (Core Mathematics and English Language Skills & Logical Reasoning) shares the first 45 minutes with free navigation between the two sections and auto-submits as a group; Computer Science Test II then gets a separate 105 minutes with no return to Test I.', checkedOn: '26 August 2026' },
-          { id: 'me-cs-full-mock-2', name: 'BITS HD 2026 M.E. Computer Science Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 150, timingGroups: [{ sections: ['Core Mathematics', 'English Language Skills & Logical Reasoning'], duration: 45 }, { sections: ['Computer Science'], duration: 105 }], marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'Every question awards 3 marks for a correct answer and deducts 1 mark for an incorrect answer; an unattempted question scores zero. Test I (Core Mathematics and English Language Skills & Logical Reasoning) shares the first 45 minutes with free navigation between the two sections and auto-submits as a group; Computer Science Test II then gets a separate 105 minutes with no return to Test I.', checkedOn: '26 August 2026' },
+          { id: 'me-cs-full-mock-1', name: 'M.E. Computer Science Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, timingGroups: [{ sections: ['Core Mathematics', 'English Language Skills & Logical Reasoning'], duration: 45 }, { sections: ['Computer Science'], duration: 105 }], marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'Every question awards 3 marks for a correct answer and deducts 1 mark for an incorrect answer; an unattempted question scores zero. Test I (Core Mathematics and English Language Skills & Logical Reasoning) shares the first 45 minutes with free navigation between the two sections and auto-submits as a group; Computer Science Test II then gets a separate 105 minutes with no return to Test I.', checkedOn: '26 August 2026' },
+          { id: 'me-cs-full-mock-2', name: 'M.E. Computer Science Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 150, timingGroups: [{ sections: ['Core Mathematics', 'English Language Skills & Logical Reasoning'], duration: 45 }, { sections: ['Computer Science'], duration: 105 }], marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'Every question awards 3 marks for a correct answer and deducts 1 mark for an incorrect answer; an unattempted question scores zero. Test I (Core Mathematics and English Language Skills & Logical Reasoning) shares the first 45 minutes with free navigation between the two sections and auto-submits as a group; Computer Science Test II then gets a separate 105 minutes with no return to Test I.', checkedOn: '26 August 2026' },
         ],
       },
     ],
@@ -10921,7 +10956,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           checkedOn: '26 August 2026',
         },
         tests: [
-          { id: 'btech-full-mock-1', name: 'CUSAT CAT 2026 B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question scores zero. One unrestricted 180-minute timer covers all 225 questions with free navigation across Mathematics, Physics, and Chemistry; there is no subject locking.', checkedOn: '26 August 2026' },
+          { id: 'btech-full-mock-1', name: 'B.Tech Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Each correct answer earns 4 marks and each incorrect answer deducts 1 mark; an unanswered question scores zero. One unrestricted 180-minute timer covers all 225 questions with free navigation across Mathematics, Physics, and Chemistry; there is no subject locking.', checkedOn: '26 August 2026' },
 { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 72, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
 { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 48, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '26 August 2026' },
@@ -12583,7 +12618,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           checkedOn: '1 September 2026',
         },
         tests: [
-          { id: 'neet-ug-full-mock-1', name: 'NEET UG Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
+          { id: 'neet-ug-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
           { id: 'physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Physics', duration: 45, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
           { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 45, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
           { id: 'biology-botany-and-zoology-sectional-1', name: 'Biology (Botany & Zoology) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Biology (Botany & Zoology)', duration: 90, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '1 September 2026' },
@@ -12818,7 +12853,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           checkedOn: '31 August 2026',
         },
         tests: [
-          { id: 'iat-full-mock-1', name: 'IAT Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
+          { id: 'iat-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
           { id: 'biology-sectional-1', name: 'Biology Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Biology', duration: 45, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
           { id: 'chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Chemistry', duration: 45, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
           { id: 'mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 45, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '31 August 2026' },
