@@ -173,6 +173,42 @@ its rules:
   not comparable with the same questions inside their source mocks. That sentence is on the
   test pages, not just in this file.
 
+### Structured data: valid is not the same as useful
+
+`npm run qa:schema` (`scripts/audit-schema.mjs`, part of `qa:site`) parses every JSON-LD
+block in the export and fails the build on unparseable JSON, missing `@context`/`@type`,
+missing required properties, relative URLs where absolute are required, non-ISO dates, and
+Google-retired types. Structured data fails silently in a way nothing else here does: a
+broken block still renders, still builds, looks perfect to a human, and simply never produces
+the result it was written for.
+
+Running `seo-schema` found the markup **mechanically clean** — 3,417 blocks, all parsing,
+zero errors — and two things that being clean does not cover:
+
+**1. FAQPage no longer earns a Google rich result.** Retired for all sites on 7 May 2026.
+There are 661 blocks. They are **kept**: still accurate, still useful to non-Google
+consumers, and removal would be churn for its own sake. But nothing should be planned on the
+assumption that they produce SERP features. The audit prints a standing note each run so this
+is not rediscovered the hard way.
+
+**2. Quiz was valid but incomplete**, on 1,214 pages: no `about`, no `hasPart`. Google's
+Education Q&A result needs both. `about` was added everywhere. **`hasPart` was deliberately
+not**, on the exam test pages, because Google's structured-data policy forbids marking up
+content the reader cannot see and those pages show instructions while the questions sit
+behind the attempt flow. An incomplete-but-honest Quiz beats a complete-but-non-compliant one.
+
+The same rule pointed at a genuine opportunity: the **topic practice pages do print their
+worked examples in full**, so they can carry a complete, compliant Quiz. They now do —
+`quizWithQuestionsSchema` marks up exactly the six questions rendered on the page and nothing
+else. That is a rich-result surface the section could not otherwise have had.
+
+Also added: `logo` on `organizationSchema`. Deliberately no `sameAs` — this site has no
+social profiles, and listing invented ones would be a false claim in machine-readable form,
+which is worse than an omission.
+
+**The general rule: check what a schema type is currently worth before spending pages on it,
+and never mark up what the page does not show.**
+
 ### Run the installed SEO skills on generated sections
 
 There is a set of SEO skills installed in this environment, and the programmatic-pages

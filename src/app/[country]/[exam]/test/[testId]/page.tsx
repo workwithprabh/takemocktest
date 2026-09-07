@@ -2152,6 +2152,12 @@ export default async function TestInstructionsPage({
           timeRequired: `PT${test.duration}M`,
           educationalLevel: `${exam.name} ${stage.name}`,
           learningResourceType: 'Mock test',
+          about: { '@type': 'Thing', name: `${exam.name} ${stage.name}` },
+          // No `hasPart`: Google's Education Q&A rich result wants the
+          // questions here, but its structured-data policy forbids marking up
+          // content the reader cannot see, and this page deliberately shows
+          // instructions rather than questions. An incomplete-but-honest Quiz
+          // beats a complete-but-non-compliant one.
           provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
         },
         ...(fullMockFaqs ? [{

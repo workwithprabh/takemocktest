@@ -14,7 +14,7 @@ import {
   type TopicPool,
 } from '@/lib/practice-topics';
 import { pageMetadata } from '@/lib/metadata';
-import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
+import { breadcrumbSchema, faqPageSchema, jsonLdHtml, quizWithQuestionsSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export function generateStaticParams() {
@@ -143,6 +143,18 @@ export default async function TopicPracticePage({
       { name: 'Topic Practice', path: base },
       { name, path: `${base}/${slug}` },
     ]),
+    // Only the worked examples actually printed below go into `hasPart`, so
+    // the markup describes exactly what a reader can see.
+    quizWithQuestionsSchema({
+      name: `${name} practice questions`,
+      description: `${pool.questions.length} ${name.toLowerCase()} questions with worked solutions, pooled from ${pool.examSlugs.length} competitive exams.`,
+      path: `${base}/${slug}`,
+      about: name,
+      questions: samples.map((question) => ({
+        question: question.question,
+        answer: `${question.options[question.correctIndex] ?? ''} — ${question.explanation}`.trim(),
+      })),
+    }),
     faqPageSchema(faqs),
   ];
 

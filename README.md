@@ -25,6 +25,7 @@ npm run qa:assets
 npm run build
 npm run qa:links  # hub reachability + dead internal links (needs out/, so run after build)
 npm run qa:thin-content  # boilerplate ratio across generated sections (needs out/)
+npm run qa:schema        # JSON-LD validity across every page (needs out/)
 npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build + SEO + links
 ```
 
