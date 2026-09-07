@@ -38,6 +38,7 @@ export default function Footer({ country }: { country: string }) {
           <ul className="space-y-2 text-ink-300">
             <li><Link href={`/${country}/exam-updates`} className="hover:text-ink-50 transition">Latest exam updates</Link></li>
             <li><Link href={`/${country}/logical-reasoning`} className="hover:text-ink-50 transition">Logical reasoning practice</Link></li>
+            <li><Link href={`/${country}/practice`} className="hover:text-ink-50 transition">Topic-wise practice</Link></li>
             <li><Link href={`/${country}/blog`} className="hover:text-ink-50 transition">Blog &amp; study tips</Link></li>
             <li><Link href={`/${country}/exams`} className="hover:text-ink-50 transition">All exam categories</Link></li>
             <li><Link href={`/${country}/ssc-cgl/exam-pattern`} className="hover:text-ink-50 transition">SSC CGL exam pattern</Link></li>

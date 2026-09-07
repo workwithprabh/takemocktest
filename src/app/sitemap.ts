@@ -7,6 +7,7 @@ import { SITE_URL } from '@/lib/schema';
 import { UPDATES } from '@/lib/updates';
 import { getQuestionsForTest } from '@/lib/questions';
 import { LR_SLUG, LR_TEST_SPECS } from '@/lib/logical-reasoning';
+import { PRACTICE_SLUG, getPublishedTopicSlugs } from '@/lib/practice-topics';
 
 export const dynamic = 'force-static';
 
@@ -36,6 +37,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${SITE_URL}/${country}/${LR_SLUG}/test/${spec.id}`,
         changeFrequency: 'monthly',
         priority: 0.6,
+      });
+    }
+    // Topic practice: the landing page and each published topic. Attempt
+    // routes are noindexed, like every other attempt route on the site.
+    // changeFrequency is 'weekly' rather than 'monthly' because these pools
+    // genuinely do grow whenever new question banks land.
+    entries.push({ url: `${SITE_URL}/${country}/${PRACTICE_SLUG}`, changeFrequency: 'weekly', priority: 0.8 });
+    for (const topic of getPublishedTopicSlugs()) {
+      entries.push({
+        url: `${SITE_URL}/${country}/${PRACTICE_SLUG}/${topic}`,
+        changeFrequency: 'weekly',
+        priority: 0.7,
       });
     }
     for (const update of UPDATES) {

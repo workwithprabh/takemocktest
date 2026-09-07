@@ -814,6 +814,23 @@ function getQuestionIndex(): Map<string, Question> {
 }
 
 /**
+ * Every checked question paired with the exam that owns it. The Practice Topics
+ * section groups these by topic at build time rather than holding a frozen ID
+ * list, so a topic pool grows on its own as new banks land.
+ */
+export function getCheckedQuestionEntries(): { question: Question; examSlug: string }[] {
+  if (!examSlugsById) buildQuestionIndexes();
+  const byId = questionsById as Map<string, Question>;
+  const examById = examSlugsById as Map<string, string>;
+  const entries: { question: Question; examSlug: string }[] = [];
+  for (const [id, question] of byId) {
+    const examSlug = examById.get(id);
+    if (examSlug) entries.push({ question, examSlug });
+  }
+  return entries;
+}
+
+/**
  * The exams that own the given question IDs, deduplicated and in first-seen
  * order. Lets a cross-exam surface (the Logical Reasoning hub) credit and link
  * back to the exams its questions came from without hard-coding a list that

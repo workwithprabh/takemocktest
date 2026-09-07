@@ -8,11 +8,21 @@ import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
 import { pageMetadata } from '@/lib/metadata';
 import { LR_LADDER, LR_SLUG, LR_TOPIC_TESTS, LR_TOTAL_QUESTIONS, LR_GRADE_LABELS } from '@/lib/logical-reasoning';
+import { PRACTICE_SLUG, getPublishedTopicSlugs, getTopicPool, getTopicPools } from '@/lib/practice-topics';
 
 const examSuggestions = Array.from(new Map(
   EXAM_CATEGORIES.flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
 ).values());
 const featuredExams = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0).slice(0, 6);
+// The three deepest topic pools, as a taste of the topic-practice section.
+// Derived rather than hand-picked, so it follows the corpus as banks land.
+const featuredTopics = getPublishedTopicSlugs()
+  .map((slug) => getTopicPool(slug)!)
+  .sort((a, b) => b.questions.length - a.questions.length)
+  .slice(0, 3)
+  .map((pool) => ({ slug: pool.topic.slug, name: pool.topic.name, count: pool.questions.length }));
+const practiceTopics = getTopicPools().size;
+const practiceQuestions = [...getTopicPools().values()].reduce((sum, pool) => sum + pool.questions.length, 0);
 
 // TODO: Add student feedback only when real, permissioned feedback is available.
 export function generateStaticParams() {
@@ -124,8 +134,8 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         <section id="skills" aria-labelledby="skills-heading" className="scroll-mt-24">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
             <h2 id="skills-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Practice by skill</h2>
-            <Link href={`/${country}/${LR_SLUG}`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
-              All reasoning practice <span aria-hidden="true">→</span>
+            <Link href={`/${country}/${PRACTICE_SLUG}`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+              All practice topics <span aria-hidden="true">→</span>
             </Link>
           </div>
           <div className="border border-ink-200 bg-white p-5 md:flex md:items-start md:gap-8">
@@ -150,6 +160,31 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                   <span className="mt-1 block text-xs text-ink-500">
                     {rung.tests.length} {rung.tests.length === 1 ? 'set' : 'sets'} &middot; {rung.tests[0].duration} min
                   </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-3 border border-ink-200 bg-white p-5 md:flex md:items-start md:gap-8">
+            <div className="md:w-2/5 md:shrink-0">
+              <h3 className="text-lg font-bold text-ink-900">
+                <Link href={`/${country}/${PRACTICE_SLUG}`} className="hover:underline">Practice by topic</Link>
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-ink-700">
+                Know which topic costs you marks? Drill it on its own. {practiceQuestions.toLocaleString('en-IN')}{' '}
+                questions across {practiceTopics} quantitative, reasoning and English topics, each pooled from every
+                exam that sets it. An explanation on every question, and no negative marking.
+              </p>
+            </div>
+            <div className="mt-4 grid flex-1 gap-2 sm:grid-cols-3 md:mt-0">
+              {featuredTopics.map((topic) => (
+                <Link
+                  key={topic.slug}
+                  href={`/${country}/${PRACTICE_SLUG}/${topic.slug}`}
+                  className="border border-ink-200 p-3 transition hover:border-ink-900"
+                >
+                  <span className="block text-sm font-bold text-ink-900">{topic.name}</span>
+                  <span className="mt-1 block text-xs text-ink-500">{topic.count} questions</span>
                 </Link>
               ))}
             </div>

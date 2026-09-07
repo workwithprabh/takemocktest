@@ -17,16 +17,30 @@ if (!fs.existsSync(out)) {
   process.exit(1);
 }
 
-const HUB = '/in/logical-reasoning';
-// Floor, not a target: 305 exam test pages carry the block today. Set low
-// enough that ordinary content churn (an exam retired, a bank renamed) never
-// trips it, high enough that a refactor dropping the block entirely does.
-const MIN_EXAM_INBOUND = 150;
-// The contextual offer block is identified by its own heading id, NOT by the
-// presence of a hub link: the header and footer put a hub link on every page
-// of the site, so counting links would count the chrome and pass even if the
-// block were deleted — the exact silent failure this audit exists to catch.
-const OFFER_BLOCK_MARKER = 'id="reasoning-hub"';
+// Every section that no exam owns, and that nothing else therefore keeps
+// reachable. Add a row when a new one ships.
+//   offerMarker: heading id of the in-context block on exam test pages, where
+//     the section has one. Identified by the block's OWN id, never by the
+//     presence of a link: the header and footer put a link on every page of
+//     the site, so counting links would count the chrome and pass even if the
+//     block were deleted — the exact silent failure this audit exists to catch.
+//   minExamInbound: floor on exam test pages carrying that block. Set low
+//     enough that ordinary content churn never trips it, high enough that a
+//     refactor dropping the block does. 0 means the section has no such block.
+const SECTIONS = [
+  {
+    name: 'Logical Reasoning hub',
+    root: '/in/logical-reasoning',
+    offerMarker: 'id="reasoning-hub"',
+    minExamInbound: 150,
+  },
+  {
+    name: 'Topic practice',
+    root: '/in/practice',
+    offerMarker: null,
+    minExamInbound: 0,
+  },
+];
 
 const errors = [];
 const htmlFiles = [];
@@ -49,45 +63,57 @@ const resolves = (url) => {
   );
 };
 
-// 1. Every internal link on every hub page must resolve.
-const hubPages = htmlFiles.filter((file) => {
-  const rel = `/${path.relative(out, file).replace(/\\/g, '/').replace(/\.html$/, '')}`;
-  return rel === HUB || rel.startsWith(`${HUB}/`);
-});
-if (hubPages.length === 0) errors.push('no hub pages found in out/ — is the hub still built?');
+const summaries = [];
+for (const section of SECTIONS) {
+  const inSection = (rel) => rel === section.root || rel.startsWith(`${section.root}/`);
 
-let checkedHubLinks = 0;
-for (const file of hubPages) {
-  const rel = path.relative(out, file);
-  const html = fs.readFileSync(file, 'utf8');
-  for (const match of html.matchAll(/href="(\/[^"]*)"/g)) {
-    const url = match[1];
-    if (url.startsWith('//')) continue;
-    checkedHubLinks += 1;
-    if (!resolves(url)) errors.push(`${rel}: dead internal link ${url}`);
+  // 1. Every internal link on every page of the section must resolve.
+  const pages = htmlFiles.filter((file) =>
+    inSection(`/${path.relative(out, file).replace(/\\/g, '/').replace(/\.html$/, '')}`),
+  );
+  if (pages.length === 0) {
+    errors.push(`${section.name}: no pages found in out/ — is the section still built?`);
+    continue;
   }
-}
+  let checkedLinks = 0;
+  for (const file of pages) {
+    const rel = path.relative(out, file);
+    const html = fs.readFileSync(file, 'utf8');
+    for (const match of html.matchAll(/href="(\/[^"]*)"/g)) {
+      const url = match[1];
+      if (url.startsWith('//')) continue;
+      checkedLinks += 1;
+      if (!resolves(url)) errors.push(`${rel}: dead internal link ${url}`);
+    }
+  }
 
-// 2. The hub must be reachable from outside itself, from all three routes we
-//    rely on: the homepage band, the site chrome, and the exam test pages.
-const inbound = { homepage: 0, chrome: 0, examTests: 0 };
-for (const file of htmlFiles) {
-  const rel = `/${path.relative(out, file).replace(/\\/g, '/').replace(/\.html$/, '')}`;
-  if (rel === HUB || rel.startsWith(`${HUB}/`)) continue;
-  const html = fs.readFileSync(file, 'utf8');
-  if (!html.includes(`href="${HUB}"`) && !html.includes(`href="${HUB}/`)) continue;
-  if (rel === '/in') inbound.homepage += 1;
-  if (html.includes(OFFER_BLOCK_MARKER)) inbound.examTests += 1;
-  inbound.chrome += 1;
-}
-if (inbound.homepage === 0) errors.push('the homepage no longer links to the Logical Reasoning hub');
-if (inbound.chrome < 100) {
-  errors.push(`only ${inbound.chrome} pages link to the hub — the header/footer link looks lost`);
-}
-if (inbound.examTests < MIN_EXAM_INBOUND) {
-  errors.push(
-    `only ${inbound.examTests} exam test pages link to the hub (floor ${MIN_EXAM_INBOUND}) — ` +
-      'the reasoning-hub block on the exam test page template looks lost',
+  // 2. The section must be reachable from outside itself: the homepage band,
+  //    the site chrome, and (where it has one) the in-context exam-page block.
+  const inbound = { homepage: 0, chrome: 0, examTests: 0 };
+  for (const file of htmlFiles) {
+    const rel = `/${path.relative(out, file).replace(/\\/g, '/').replace(/\.html$/, '')}`;
+    if (inSection(rel)) continue;
+    const html = fs.readFileSync(file, 'utf8');
+    if (!html.includes(`href="${section.root}"`) && !html.includes(`href="${section.root}/`)) continue;
+    if (rel === '/in') inbound.homepage += 1;
+    if (section.offerMarker && html.includes(section.offerMarker)) inbound.examTests += 1;
+    inbound.chrome += 1;
+  }
+  if (inbound.homepage === 0) errors.push(`${section.name}: the homepage no longer links to it`);
+  if (inbound.chrome < 100) {
+    errors.push(`${section.name}: only ${inbound.chrome} pages link to it — the header/footer link looks lost`);
+  }
+  if (section.minExamInbound > 0 && inbound.examTests < section.minExamInbound) {
+    errors.push(
+      `${section.name}: only ${inbound.examTests} exam test pages carry its offer block ` +
+        `(floor ${section.minExamInbound}) — the block on the exam test page template looks lost`,
+    );
+  }
+
+  summaries.push(
+    `${section.name}: ${pages.length} pages, ${checkedLinks} outgoing links all resolve; ` +
+      `linked from the homepage and ${inbound.chrome} pages of chrome` +
+      (section.minExamInbound > 0 ? `, offered by ${inbound.examTests} exam test pages` : ''),
   );
 }
 
@@ -96,8 +122,5 @@ if (errors.length > 0) {
   for (const error of errors) console.error(`  - ${error}`);
   process.exit(1);
 }
-console.log(
-  `Internal-link audit passed — ${hubPages.length} hub pages, ${checkedHubLinks} outgoing links all resolve; ` +
-    `hub linked from the homepage, ${inbound.chrome} pages of site chrome, and offered in context by ` +
-    `${inbound.examTests} exam test pages.`,
-);
+console.log('Internal-link audit passed:');
+for (const summary of summaries) console.log(`  - ${summary}`);

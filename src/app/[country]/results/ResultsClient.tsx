@@ -5,12 +5,15 @@ import Link from 'next/link';
 import ResultDetail from '@/components/ResultDetail';
 import { AttemptResult, getAttempts } from '@/lib/attempts';
 import { LR_SLUG } from '@/lib/logical-reasoning';
+import { PRACTICE_SLUG } from '@/lib/practice-topics';
 
 // Where "choose another test" goes for an attempt. Every exam has a
 // /mock-test list; the Logical Reasoning hub is not an exam and files its
 // attempts under its own slug, so it points at its landing page instead.
 function chooseAnotherHref(country: string, examSlug: string) {
-  return examSlug === LR_SLUG ? `/${country}/${LR_SLUG}` : `/${country}/${examSlug}/mock-test`;
+  if (examSlug === LR_SLUG) return `/${country}/${LR_SLUG}`;
+  if (examSlug === PRACTICE_SLUG) return `/${country}/${PRACTICE_SLUG}`;
+  return `/${country}/${examSlug}/mock-test`;
 }
 
 export default function ResultsClient({ country }: { country: string }) {
