@@ -9710,6 +9710,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'llm-full-mock-1', name: 'LL.M. (One Year) Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '31 August 2026' },
+          { id: 'llm-full-mock-2', name: 'LL.M. (One Year) Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '7 September 2026' },
         ],
       },
     ],

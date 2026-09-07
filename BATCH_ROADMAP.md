@@ -27,8 +27,8 @@ Anything with a third argument (the liveSlug) is done. Cross-check against the E
 in `src/lib/exams.ts` — the two must always match after your batch (a stale build will fail
 otherwise).
 
-**Live as of 2026-09-07:** 157 products across 160 catalog rows, 1,221 tests, 780 question-bank
-files, 31,173 questions. Enumerating them here has stopped being useful at this size — the grep
+**Live as of 2026-09-07:** 157 products across 160 catalog rows, 1,222 tests, 781 question-bank
+files, 31,273 questions. Enumerating them here has stopped being useful at this size — the grep
 command above is the live answer, and `TAKEMOCKTEST_CURRENT_STATUS.md` §2 and §3 carry the
 authoritative counts and the full slug list. This file no longer duplicates them.
 
