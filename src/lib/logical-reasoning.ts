@@ -18,7 +18,8 @@
 //   the review view agree with the test the person actually chose.
 
 import { LR_QUESTION_GRADES, LR_TEST_SPECS, type LRGrade, type LRTestSpec } from './logical-reasoning-data';
-import { getQuestionsByIds, type Question } from './questions';
+import { getExamSlugsForQuestionIds, getQuestionsByIds, type Question } from './questions';
+import { getExam } from './exams';
 
 export type { LRGrade, LRTestSpec };
 export { LR_TEST_SPECS };
@@ -85,3 +86,30 @@ export const LR_LADDER: { level: LRGrade; tests: LRTestSpec[] }[] = (['easy', 'm
 );
 
 export const LR_TOTAL_QUESTIONS = LR_TEST_SPECS.reduce((total, spec) => total + spec.questionIds.length, 0);
+
+/**
+ * The exams a hub test's questions were drawn from, as {slug, name} pairs
+ * ready to link. Derived from the banks at build time, never hand-listed, so
+ * it cannot claim an exam the set does not actually contain. Exams that are no
+ * longer resolvable are dropped rather than rendered as dead links.
+ */
+export function getLRSourceExams(spec: LRTestSpec): { slug: string; name: string }[] {
+  return getExamSlugsForQuestionIds(spec.questionIds)
+    .map((slug) => {
+      const exam = getExam(slug);
+      return exam ? { slug, name: exam.shortName ?? exam.name } : null;
+    })
+    .filter((entry): entry is { slug: string; name: string } => entry !== null)
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/**
+ * The next set to attempt after this one: the next set at the same level, or
+ * the first set of the next level up when this is the last of its level. Topic
+ * sets step to the next topic set. Returns undefined at the end of the ladder.
+ */
+export function getNextLRTest(spec: LRTestSpec): LRTestSpec | undefined {
+  const pool = spec.kind === 'difficulty' ? LR_DIFFICULTY_TESTS : LR_TOPIC_TESTS;
+  const index = pool.findIndex((other) => other.id === spec.id);
+  return index >= 0 ? pool[index + 1] : undefined;
+}

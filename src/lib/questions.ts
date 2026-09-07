@@ -787,17 +787,47 @@ import { STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1 } from './question-bank
 // Reasoning hub, which composes practice sets out of reasoning questions that
 // already ship inside exam mocks rather than duplicating their text.
 let questionsById: Map<string, Question> | null = null;
+let examSlugsById: Map<string, string> | null = null;
 
-function getQuestionIndex(): Map<string, Question> {
-  if (questionsById) return questionsById;
-  const index = new Map<string, Question>();
-  for (const bank of Object.values(CHECKED_TEST_BANKS)) {
+function buildQuestionIndexes() {
+  const byId = new Map<string, Question>();
+  const examById = new Map<string, string>();
+  for (const [testKey, bank] of Object.entries(CHECKED_TEST_BANKS)) {
+    // CHECKED_TEST_BANKS is keyed `${examSlug}/${testId}`, which is the only
+    // place a question's owning exam is recorded — the question objects
+    // themselves carry no exam field. First bank wins, so a question shared
+    // across exams is attributed to one of them rather than several.
+    const examSlug = testKey.split('/')[0];
     for (const question of bank) {
-      if (question.id && !index.has(question.id)) index.set(question.id, question);
+      if (!question.id || byId.has(question.id)) continue;
+      byId.set(question.id, question);
+      examById.set(question.id, examSlug);
     }
   }
-  questionsById = index;
-  return index;
+  questionsById = byId;
+  examSlugsById = examById;
+}
+
+function getQuestionIndex(): Map<string, Question> {
+  if (!questionsById) buildQuestionIndexes();
+  return questionsById as Map<string, Question>;
+}
+
+/**
+ * The exams that own the given question IDs, deduplicated and in first-seen
+ * order. Lets a cross-exam surface (the Logical Reasoning hub) credit and link
+ * back to the exams its questions came from without hard-coding a list that
+ * would rot the moment a bank moves.
+ */
+export function getExamSlugsForQuestionIds(ids: string[]): string[] {
+  if (!examSlugsById) buildQuestionIndexes();
+  const index = examSlugsById as Map<string, string>;
+  const seen: string[] = [];
+  for (const id of ids) {
+    const slug = index.get(id);
+    if (slug && !seen.includes(slug)) seen.push(slug);
+  }
+  return seen;
 }
 
 /**

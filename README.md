@@ -23,7 +23,8 @@ npm run lint
 npm run qa:questions
 npm run qa:assets
 npm run build
-npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build
+npm run qa:links  # hub reachability + dead internal links (needs out/, so run after build)
+npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build + SEO + links
 ```
 
 ## Adding a new exam

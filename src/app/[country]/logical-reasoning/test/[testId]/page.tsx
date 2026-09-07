@@ -11,7 +11,9 @@ import {
   getAllLRTestIds,
   getLRGradeMix,
   getLRQuestions,
+  getLRSourceExams,
   getLRTestSpec,
+  getNextLRTest,
 } from '@/lib/logical-reasoning';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
@@ -29,7 +31,7 @@ function describe(testId: string) {
   // Source topic labels, deduplicated: these come from the question banks, so
   // they name what is actually inside the set rather than a promised syllabus.
   const topics = [...new Set(questions.map((question) => question.topic).filter(Boolean))] as string[];
-  return { spec, questions, mix, topics };
+  return { spec, questions, mix, topics, sourceExams: getLRSourceExams(spec), next: getNextLRTest(spec) };
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string; testId: string }> }) {
@@ -61,7 +63,7 @@ export default async function LogicalReasoningTestPage({
   const { country, testId } = await params;
   const found = describe(testId);
   if (!found) return notFound();
-  const { spec, questions, mix, topics } = found;
+  const { spec, questions, mix, topics, sourceExams, next } = found;
   const base = `/${country}/${LR_SLUG}`;
   const siblings = LR_TEST_SPECS.filter((other) => other.kind === spec.kind && other.id !== spec.id).slice(0, 6);
 
@@ -153,6 +155,45 @@ export default async function LogicalReasoningTestPage({
           </>
         )}
       </section>
+
+      {sourceExams.length > 0 && (
+        <section aria-labelledby="sources" className="mt-10">
+          <h2 id="sources" className="text-xl font-bold text-ink-900">Where these questions come from</h2>
+          <p className="mt-3 text-sm leading-6 text-ink-700">
+            Every question in this set already appears in the reasoning section of a real exam mock on this site.
+            Reasoning is the one part of a paper that is not exam-specific, so the same puzzle is legitimate practice
+            whichever of these you are sitting. If one of them is your exam, attempt it there too &mdash; under that
+            exam&rsquo;s own timing and negative marking, which this section deliberately drops.
+          </p>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {sourceExams.map((exam) => (
+              <li key={exam.slug}>
+                <Link
+                  href={`/${country}/${exam.slug}/mock-test`}
+                  className="inline-block border border-ink-200 bg-white px-3 py-1.5 text-xs font-semibold text-ink-900 transition hover:border-ink-900"
+                >
+                  {exam.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {next && (
+        <section aria-labelledby="next-up" className="mt-10 border-l-2 border-action-600 bg-action-50 p-5">
+          <h2 id="next-up" className="text-lg font-bold text-ink-900">Next in the ladder</h2>
+          <p className="mt-2 text-sm leading-6 text-ink-700">
+            Finished this one inside the timer? {next.kind === 'topic' ? next.family : next.name} is the next step.
+          </p>
+          <Link
+            href={`${base}/test/${next.id}`}
+            className="mt-3 inline-flex min-h-11 items-center bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700"
+          >
+            Go to {next.kind === 'topic' ? next.family : next.name}
+          </Link>
+        </section>
+      )}
 
       {siblings.length > 0 && (
         <section aria-labelledby="more" className="mt-10">
