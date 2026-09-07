@@ -11,7 +11,7 @@ any content batch, alongside the QC checklist below.
 ## What this project is
 
 TakeMockTest (takemocktest.com) is a Next.js 15 static-export mock-test site for Indian
-competitive exam aspirants. `src/lib/exam-catalog.ts` lists ~180 exams; an exam is "live"
+competitive exam aspirants. `src/lib/exam-catalog.ts` lists 219 exams; an exam is "live"
 once it has a `liveSlug` pointing to a real entry in `src/lib/exams.ts` with syllabus-checked
 question banks in `src/lib/question-banks/`.
 
@@ -27,14 +27,15 @@ Anything with a third argument (the liveSlug) is done. Cross-check against the E
 in `src/lib/exams.ts` — the two must always match after your batch (a stale build will fail
 otherwise).
 
-**Live as of 2026-08-13:** ssc-cgl, ssc-chsl, ssc-mts, ibps-po, ibps-clerk, rrb-ntpc,
-rrb-group-d, sbi-po, rbi-assistant, ibps-rrb-office-assistant, ssc-gd-constable,
-ibps-rrb-officer-scale-1, sbi-clerk, rrb-je, upsc-cse, rpf-constable, ssc-cpo, ibps-so,
-rbi-grade-b, nabard-grade-a, sebi-grade-a, sidbi-grade-a-b, lic-aao, niacl-ao, rrb-alp,
-rrb-technician, rrb-paramedical, rpf-si, ssc-je, ssc-steno, ssc-cht, ssc-selection-post,
-jee-main, jee-advanced, bitsat, viteee, srmjeee, aeee, met (39 exams). See `TAKEMOCKTEST_CURRENT_STATUS.md` for the
-authoritative up-to-date count — this line is a convenience summary and can drift; the
-grep command above and `TAKEMOCKTEST_CURRENT_STATUS.md` are the actual sources of truth.
+**Live as of 2026-09-07:** 157 products across 159 catalog rows, 1,221 tests, 780 question-bank
+files, 31,173 questions. Enumerating them here has stopped being useful at this size — the grep
+command above is the live answer, and `TAKEMOCKTEST_CURRENT_STATUS.md` §2 and §3 carry the
+authoritative counts and the full slug list. This file no longer duplicates them.
+
+The breadth-first phase is effectively finished for the clusters this file was written around:
+Engineering is 57/57, and the Government Jobs national-level queue below is complete. What
+remains is the catalog backlog (60 entries with no tests) plus depth and evidence work on
+exams that are already live — see "Standing work" below.
 
 **Process note (2026-08-11):** exam content (research, writing, Hard QA) now runs through
 a separate ChatGPT pipeline per `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md`. This file's
@@ -88,20 +89,63 @@ tackle after the national-level exams above are done, same process).
 - [x] SRMJEEE
 - [x] AEEE
 - [x] Manipal Entrance Test
-- [ ] KIITEE
+- [x] KIITEE
 - [x] COMEDK UGET
 - [x] IIIT Hyderabad UGEE
 - [x] JEE Main Paper 2: B.Arch and B.Planning
 - [x] NATA (Mathematics only, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 - [x] MHT CET (PCM group, official 90+90 timing-group pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the new generic `timingGroups` mechanism)
 - [x] WBJEE (Engineering, official 120+120 two-paper timing-group pattern reusing MHT CET's `timingGroups` mechanism, plus a new proportional Category 3 partial-marking mode — see TAKEMOCKTEST_CURRENT_STATUS.md)
-- [ ] KEAM — investigated and rejected: official paper uses 5 answer options per question (A-E), not 4, incompatible with this site's 4-option MCQ engine (same class of rejection as XAT/MAH MBA CET)
+- [x] KEAM — **this line previously said KEAM was rejected because its five answer options (A-E) were incompatible with a four-option-only engine. That was wrong, and is corrected here (7 September 2026).** The engine accepts four *or* five options per question, checked per question against that question's own option count in both `src/lib/questions.ts` and `scripts/audit-question-banks.mjs`. KEAM, MAH MBA CET and XAT — the three exams that note used as examples of the supposed incompatibility — are all live. KEAM and MAH MBA CET ship genuine five-option banks. XAT does not: it was built with four options per question and the real paper has five, which is a live content defect recorded under "Standing work" below.
 - [x] AP EAPCET (Engineering, coding-agent-authored while ChatGPT worked on KCET, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 - [x] KCET (Engineering, official 80+80+80 three-paper timing-group pattern reusing MHT CET's `timingGroups` mechanism unchanged for a three-group case — see TAKEMOCKTEST_CURRENT_STATUS.md)
 - [x] TG EAPCET (Engineering, 160/80/80 Mathematics/Physics/Chemistry pattern, one unrestricted 180-minute timer, review-pending pattern — see TAKEMOCKTEST_CURRENT_STATUS.md for the source-access caveat)
 
-After the national and institute entrances, continue with the state engineering entrances
-in `exam-catalog.ts` order. Keep the same one-exam-per-run process below.
+The state and institute engineering entrances that followed are all live and are no longer
+tracked as a queue here: AMU B.Tech, AP ECET, AP PGECET, AP POLYCET, Assam CEE, ATIT, BCECE,
+Bihar DCECE, BITS HD, BV B.Tech, CG PET, CG PPT, Chandigarh CUCET, CUSAT CAT, GATE, GUJCET,
+HP PAT, IEMJEE, IMU-CET, Jain JET, JEECUP, Jharkhand PECE, KLEEE, LPUNEST, MIT-WPU CET,
+NERIST NEE, NMIMS CET, OJEE, PULEET, SAEEE, SITEEE, TG ECET, TG POLYCET, TJEE, Uttarakhand
+JEEP, UPESEAT, VTUEEE, WB JELET. Engineering is 57 of 57 catalog entries.
+
+## The queue now (catalog backlog)
+
+Sixty catalog entries still have no tests. The buildable remainder, in rough priority order:
+AILET PG, CFA Level I, ISI Admission Test, CMI Entrance, TIFR GS, NEST (blocked — see below),
+DNB PDCET, AIIMS NORCET, AIIMS BSc Nursing, UPSC Combined Medical Services, ICMR JRF, DBT BET,
+CSIR UGC NET Part A, UCEED, CEED, and the objective slices of CA/CS/CMA Intermediate.
+
+**Standing exclusions** (do not queue these without a deliberate decision to change the rule):
+the 15 state civil-services papers and 6 teacher-recruitment papers are current-affairs and
+state-GK dominated, and this site does not self-author current-affairs content; UPSC CSE Main
+and Indian Forest Service are descriptive; UPSC EPFO is GA-heavy; State Judicial Services is
+per-state and largely descriptive; the Duolingo English Test is adaptive and proprietary
+enough that a fixed-form mock would misrepresent it. NEET SS was investigated and skipped —
+it is thirteen separate super-specialty papers at post-MD level with no common paper.
+
+The design-and-fashion group needs a case-by-case look rather than a blanket exclusion: NID
+DAT and the portfolio-based institute tests cannot be reproduced, but UCEED and CEED have
+fully objective Part A papers that can be.
+
+## Standing work on exams that are already live
+
+1. **Clear `review-pending` patterns.** 32 products carry at least one review-pending stage,
+   whose exam-pattern pages are `noindex` and excluded from the sitemap. This is the Hard
+   Research Gate in `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §1 and needs an
+   unrestricted network — most of the recent ones are blocked because the exam body's own
+   domain is refused by the coding-agent sandbox's egress proxy.
+2. **XAT option count.** The live XAT bank has four options per question; the real paper has
+   five. All 75 questions need a fifth plausible distractor, or the pattern note needs to
+   disclose the difference. Recorded 7 September 2026.
+3. **Ten products have exactly one test** (NATA, CSEET, IPMAT Indore, XAT, GPAT, INI-CET,
+   NEET PG, GMAT, LSAT, IIT JAM). Per the operating model §10 these are LAUNCH COMPLETE, not
+   SERIES COMPLETE, and each needs a test-series manifest before further tests are built.
+4. **NEST is blocked upstream.** `P2_NEST_2026_CODING_BLOCKED_COLLISION` is a Main Brain PASS
+   whose academic content is frozen, but one Mathematics record collides with live content.
+   Its own instructions require stopping and reporting rather than editing a frozen record, so
+   it waits on a Writer/Main Brain substitution.
+5. **Audit option counts against official patterns.** The XAT defect above was found by
+   accident. Nothing checks that a bank's option width matches what the real exam uses.
 
 ## Baseline package (what "one exam" means)
 
@@ -134,8 +178,10 @@ descriptive/interview stage):
 ## Quality control — run every one of these before committing
 
 1. `npm run qa:questions` — must pass clean (exact counts, no cross-file duplicate IDs/text,
-   4 distinct options each, valid answer index, complete source provenance, answer-balance
-   within 3 of the most/least common position). If it fails on a duplicate, don't just reword
+   four *or* five distinct options per question checked against that question's own option
+   count, valid answer index, complete source provenance, answer-balance within 3 of the
+   most/least common position across every position the bank actually uses — a uniformly
+   five-option bank is checked on E as well as A-D). If it fails on a duplicate, don't just reword
    blindly — check what you collided with; this has repeatedly turned out to be either an
    old generic phrasing (e.g. "Choose the correctly spelled word") or a genuinely common fact
    (e.g. "SI unit of force") already used elsewhere. Search the whole `question-banks/`
