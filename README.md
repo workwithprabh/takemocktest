@@ -6,6 +6,8 @@ Every checked question carries a source record (official notification/syllabus r
 
 157 exams are currently live with real mock tests, across 1,222 tests and 31,273 questions (7 September 2026). See `TAKEMOCKTEST_CURRENT_STATUS.md` for the authoritative current count and `public/llms.txt` for a per-exam summary.
 
+Alongside the per-exam mocks there is one cross-exam practice section, the [Logical Reasoning hub](https://takemocktest.com/in/logical-reasoning) (`src/lib/logical-reasoning.ts`): 18 graded sets built by referencing reasoning questions that already ship inside exam mocks, by ID, rather than duplicating them. It owns no question content and no negative marking. See `src/lib/logical-reasoning-data.ts` for the generated grades and set composition, and `scripts/build-lr-pool.mjs` for the extraction step.
+
 ## How content and code are divided
 
 Exam content (research, question writing, independent QA) is produced through a separate ChatGPT-based workflow and handed to the coding agent as an approved package for repository integration. Read `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` before doing any content or integration work — it defines the split and the rules that follow from it. `QUESTION_BANK_HANDOFF.md` and `TAKEMOCKTEST_CONTENT_SCHEMA.md` cover the handoff process and the exact schema.
@@ -21,7 +23,8 @@ npm run lint
 npm run qa:questions
 npm run qa:assets
 npm run build
-npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build
+npm run qa:links  # hub reachability + dead internal links (needs out/, so run after build)
+npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build + SEO + links
 ```
 
 ## Adding a new exam

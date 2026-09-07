@@ -781,6 +781,69 @@ import { MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1 } from './question-banks/mah-mba-c
 import { MAH_MCA_CET_2026_MCA_FULL_MOCK_1 } from './question-banks/mah-mca-cet-2026-mca-full-mock-1';
 import { STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1 } from './question-banks/state-set-2026-maharashtra-commerce-full-mock-1';
 
+// Every question the site serves, indexed by its (globally unique, enforced by
+// scripts/audit-question-banks.mjs) question ID. Built once on first use so
+// the cost is paid only by callers that need ID lookup — today the Logical
+// Reasoning hub, which composes practice sets out of reasoning questions that
+// already ship inside exam mocks rather than duplicating their text.
+let questionsById: Map<string, Question> | null = null;
+let examSlugsById: Map<string, string> | null = null;
+
+function buildQuestionIndexes() {
+  const byId = new Map<string, Question>();
+  const examById = new Map<string, string>();
+  for (const [testKey, bank] of Object.entries(CHECKED_TEST_BANKS)) {
+    // CHECKED_TEST_BANKS is keyed `${examSlug}/${testId}`, which is the only
+    // place a question's owning exam is recorded — the question objects
+    // themselves carry no exam field. First bank wins, so a question shared
+    // across exams is attributed to one of them rather than several.
+    const examSlug = testKey.split('/')[0];
+    for (const question of bank) {
+      if (!question.id || byId.has(question.id)) continue;
+      byId.set(question.id, question);
+      examById.set(question.id, examSlug);
+    }
+  }
+  questionsById = byId;
+  examSlugsById = examById;
+}
+
+function getQuestionIndex(): Map<string, Question> {
+  if (!questionsById) buildQuestionIndexes();
+  return questionsById as Map<string, Question>;
+}
+
+/**
+ * The exams that own the given question IDs, deduplicated and in first-seen
+ * order. Lets a cross-exam surface (the Logical Reasoning hub) credit and link
+ * back to the exams its questions came from without hard-coding a list that
+ * would rot the moment a bank moves.
+ */
+export function getExamSlugsForQuestionIds(ids: string[]): string[] {
+  if (!examSlugsById) buildQuestionIndexes();
+  const index = examSlugsById as Map<string, string>;
+  const seen: string[] = [];
+  for (const id of ids) {
+    const slug = index.get(id);
+    if (slug && !seen.includes(slug)) seen.push(slug);
+  }
+  return seen;
+}
+
+/**
+ * Resolve question IDs to questions, in the order given. Throws on an unknown
+ * ID so a stale generated ID list fails the build rather than silently
+ * shipping a short test.
+ */
+export function getQuestionsByIds(ids: string[]): Question[] {
+  const index = getQuestionIndex();
+  return ids.map((id) => {
+    const question = index.get(id);
+    if (!question) throw new Error(`Unknown question ID: ${id}`);
+    return question;
+  });
+}
+
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
   if (checkedBank) return checkedBank;

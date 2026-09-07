@@ -154,6 +154,136 @@ fully objective Part A papers that can be.
    it waits on a Writer/Main Brain substitution.
 5. **Test-series depth beyond the first mock**, once the manifests in item 3 exist.
 
+## Cross-exam practice sections
+
+Not every product on this site is an exam. The Logical Reasoning hub (`/in/logical-reasoning`)
+is the first section built for a skill rather than a paper, and anything similar should follow
+its rules:
+
+- **Reference, never duplicate.** `src/lib/logical-reasoning-data.ts` holds question IDs only;
+  `getQuestionsByIds` in `src/lib/questions.ts` resolves them against the same wired banks the
+  exam mocks use. A section that copied question text would give one question two homes and two
+  fates, and would trip the audit's cross-bank text-uniqueness rule.
+- **Grade on your own absolute scale.** The per-exam `difficulty` tag sorts reasoning questions
+  by topic, not by effort, so it cannot carry a cross-exam ladder. The hub's rubric (easy: one
+  step, no case analysis; medium: two to four linked steps or one construction, no branching;
+  hard: branching, elimination, interleaved rules, layered codes, sufficiency traps) is
+  documented at the top of `logical-reasoning-data.ts`.
+- **Say what the marking difference costs.** The hub has no negative marking, so its scores are
+  not comparable with the same questions inside their source mocks. That sentence is on the
+  test pages, not just in this file.
+
+### How a skill section is introduced and interlinked
+
+A section no exam owns is reachable only because we deliberately made it so. Every other
+page on this site is discoverable through some exam's own navigation; a skill section has
+no parent, so its discovery is designed rather than inherited. Four routes carry it, and
+each is derived from data rather than hand-maintained:
+
+1. **Homepage, "Practice by skill"** (`/in`, between the exam list and the category
+   browser). Both neighbours require the visitor to already know their exam; this band is
+   the homepage's only entry point that does not. Named for the pattern, not for the one
+   section that exists today, so Quantitative Aptitude or English can join without a
+   rename.
+2. **Site chrome** — header primary nav, footer resources, mobile bottom-nav "More". Puts
+   the section on every page of the site, which is what stops it depending on any single
+   surface.
+3. **Exam test pages → hub** (the volume route, hundreds of pages). Any test containing at
+   least 10 pure-reasoning questions renders a block offering the hub. The eligibility test
+   is `isLRSourceSection`, the *same predicate the hub's own extractor uses*, so a page can
+   never offer the hub for a section the hub does not draw from.
+4. **Hub → exams** (the reverse route, which stops the hub being a dead end). Each hub test
+   page lists the exams its questions actually came from, computed from
+   `getExamSlugsForQuestionIds` against the wired banks. It cannot name an exam the set
+   does not contain, and it cannot go stale when a bank moves.
+
+Plus two intent-moment links: the "next in the ladder" step on every hub test page, and a
+"Practise more reasoning" action on the results screen of any exam test that contained
+reasoning — the moment a person has just seen which puzzles cost them time.
+
+**What keeps it honest.** Two single sources of truth and one build gate:
+
+- `src/lib/logical-reasoning-sections.ts` — the section allowlist, with no imports, read by
+  the extractor (`build-lr-pool.mjs` transpiles it), the exam pages, and the hub. Three
+  consumers, one list, so they cannot drift.
+- `getExamSlugsForQuestionIds` in `questions.ts` — the only place a question's owning exam
+  is derived, from the `${examSlug}/${testId}` keys of `CHECKED_TEST_BANKS`.
+- `npm run qa:links` (`scripts/audit-internal-links.mjs`, part of `qa:site`) — fails the
+  build if any link on a hub page is dead, if the homepage stops linking to the hub, if the
+  chrome link disappears, or if fewer than 25 exam test pages carry the offer block. The
+  failure mode this guards against is silent: a refactor drops the block, the page still
+  builds, stays in the sitemap, and quietly stops being findable.
+
+**When adding the next skill section**, repeat the four routes and extend the audit's
+expectations rather than inventing a new discovery pattern.
+
+Remaining work on the hub: about 2,150 of the extracted pool are still ungraded and 181 graded
+questions are not yet used by a set. Two rules learned from the second grading round:
+
+- **Sample the families you have never sampled first.** Round one set per-family targets and
+  never listed Coded Inequality, Data Sufficiency, Symbols & Alphabet or Clocks & Calendars, so
+  315 questions sat unseen and four whole topic sets went unbuilt. New families add new kinds
+  of practice; more of an existing family only adds volume.
+- **Exclude structural clones, not just duplicates.** Later corpus slices repeat themselves
+  hard — three dictionary-ordering stems appear verbatim three times, five variants of one
+  lcm-divisibility trick. Every such question is individually sound and a set built from them
+  still reads as padding.
+
+A published set is frozen: its URL is indexed and visitors hold saved attempts against it, so
+new material becomes a new set and never a revision of an existing one. When a family gets a
+second set, give the spec a `variant` so its page title cannot collide with the first.
+
+Non-verbal reasoning — figure series, mirror images, dice, paper folding — is still essentially
+absent from the corpus (about 30 questions site-wide) and would need to be authored before the
+hub could claim to cover it.
+
+## SEO content on exam pages
+
+The rule: **content earns rankings by being true and derived, never by repeating a
+keyword.** Every sentence generated onto an exam page must come from data already
+verified against the exam body's own notification — question counts, marks, duration,
+negative marking, section breakdown — or be arithmetic on those numbers. Nothing about
+cut-offs, vacancies, salaries or exam dates is generated, because those are the fields we
+cannot derive and would therefore have to invent.
+
+That constraint is not only an integrity rule, it is the SEO strategy. The site's whole
+position is "syllabus-checked, source-linked, nothing fabricated", and stuffed or invented
+copy is exactly what Google's helpful-content system demotes. Derived content, by
+contrast, is unique per exam by construction and cannot be copied from a competitor
+because they do not hold the data.
+
+**Done — the exam-pattern pages** (`src/lib/exam-pattern-content.ts`, 157 exams). Was a
+bare table at roughly 350 words with no prose to rank. Now carries, per stage:
+
+- a plain-language summary naming questions, marks, duration and section count;
+- **time per question**, computed — the number every aspirant actually wants;
+- a marking-scheme block including the **guessing break-even accuracy**, `n / (m + n)`,
+  compared against the 25% a blind four-option guess gives. This is the one genuinely
+  original thing on the page: no competitor computes it, it is exact arithmetic, and it
+  explains why an exam that deducts 1/3 for a wrong answer is calibrated to make random
+  guessing precisely EV-neutral;
+- a worked scoring example at 80% attempted and 75% accuracy;
+- sectional-lock versus composite-timer consequences;
+- an FAQ block with `FAQPage` schema answering the highest-volume long-tail queries
+  ("is there negative marking in X", "how many questions in X", "what are the total marks
+  in X", "how long is X", "does X have a sectional time limit").
+
+**The larger opportunity, still open.** 147 of the 157 live exams have no `ExamGuide`, so
+their syllabus, eligibility, selection-process, salary and previous-year-papers pages
+render a placeholder and are `noIndex` — roughly 735 pages carrying no search value.
+Only 10 exams (`ssc-cgl`, `ibps-po`, `ssc-chsl`, `sbi-po`, `ibps-clerk`, `rrb-group-d`,
+`ssc-mts`, `ssc-gd-constable`, `sbi-clerk`, `ssc-cpo`) have syllabus and eligibility
+guides; exactly one has a salary guide.
+
+**Do not close that gap by generating it.** Eligibility age limits, pay scales and
+selection-stage lists are exam-body facts, not arithmetic — writing them from the model's
+memory for 147 exams would put hundreds of unverifiable claims on the site and is
+precisely the failure mode the operating model's Hard Research Gate exists to prevent.
+The right route is the ChatGPT content workflow producing checked `ExamGuide` packages
+per exam, prioritised by search demand: syllabus first (highest volume of the five), then
+eligibility, then salary. Until a page has a checked guide it should stay `noIndex`,
+which is the current behaviour and is correct.
+
 ## Baseline package (what "one exam" means)
 
 For the exam's PRIMARY objective-type stage only (e.g. Prelims, Tier 1, CBT — not a

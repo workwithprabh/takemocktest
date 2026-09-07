@@ -4,6 +4,14 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import ResultDetail from '@/components/ResultDetail';
 import { AttemptResult, getAttempts } from '@/lib/attempts';
+import { LR_SLUG } from '@/lib/logical-reasoning';
+
+// Where "choose another test" goes for an attempt. Every exam has a
+// /mock-test list; the Logical Reasoning hub is not an exam and files its
+// attempts under its own slug, so it points at its landing page instead.
+function chooseAnotherHref(country: string, examSlug: string) {
+  return examSlug === LR_SLUG ? `/${country}/${LR_SLUG}` : `/${country}/${examSlug}/mock-test`;
+}
 
 export default function ResultsClient({ country }: { country: string }) {
   const [attempts, setAttempts] = useState<AttemptResult[] | null>(null);
@@ -131,7 +139,7 @@ export default function ResultsClient({ country }: { country: string }) {
                               Retake test
                             </Link>
                             <Link
-                              href={`/${country}/${a.examSlug}/mock-test`}
+                              href={chooseAnotherHref(country, a.examSlug)}
                               className="border border-ink-200 px-4 py-2.5 text-sm font-semibold text-ink-900 transition hover:border-ink-900"
                             >
                               Choose another test

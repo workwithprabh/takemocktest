@@ -6,6 +6,7 @@ import OMRBubble from '@/components/OMRBubble';
 import ResultDetail from '@/components/ResultDetail';
 import type { Question } from '@/lib/questions';
 import type { TimingGroup } from '@/lib/exams';
+import { isLRSourceSection } from '@/lib/logical-reasoning-sections';
 import {
   AnswerValue,
   AttemptResult,
@@ -103,6 +104,11 @@ export default function TestAttemptClient({
   testId,
   testName,
   questions,
+  // Where "back"/"exit" goes. Defaults to the exam's own mock-test list; the
+  // Logical Reasoning hub passes its own landing page instead, since it is
+  // not an exam and has no mock-test route.
+  backHref,
+  backLabel = 'Back to mock tests',
 }: {
   country: string;
   examSlug: string;
@@ -116,7 +122,16 @@ export default function TestAttemptClient({
   testId: string;
   testName: string;
   questions: Question[];
+  backHref?: string;
+  backLabel?: string;
 }) {
+  const backTo = backHref ?? `/${country}/${examSlug}/mock-test`;
+  // Offer the cross-exam reasoning section from the results screen of any exam
+  // test that actually contained pure reasoning — the moment a person has just
+  // seen which puzzles cost them time is the moment the offer is useful. Never
+  // shown inside the hub itself (backHref is set there), which would loop.
+  const offersReasoningHub =
+    !backHref && questions.some((question) => isLRSourceSection(question.section));
   const sections = useMemo(() => [...new Set(questions.map((question) => question.section))], [questions]);
   // A "group" is one timer window: usually a single section (the historical
   // sectionDuration/sectionDurations model, one section per window), but
@@ -392,10 +407,10 @@ export default function TestAttemptClient({
                 Retake test
               </button>
               <Link
-                href={`/${country}/${examSlug}/mock-test`}
+                href={backTo}
                 className="border border-ink-200 text-ink-900 text-sm font-semibold px-4 py-2.5 hover:border-ink-900 transition"
               >
-                Back to mock tests
+                {backLabel}
               </Link>
               <Link
                 href={`/${country}/results`}
@@ -403,6 +418,14 @@ export default function TestAttemptClient({
               >
                 View all results
               </Link>
+              {offersReasoningHub && (
+                <Link
+                  href={`/${country}/logical-reasoning`}
+                  className="border border-ink-200 text-ink-900 text-sm font-semibold px-4 py-2.5 hover:border-ink-900 transition"
+                >
+                  Practise more reasoning
+                </Link>
+              )}
             </>
           }
         />
@@ -709,7 +732,7 @@ export default function TestAttemptClient({
             Keep working
           </button>
           <Link
-            href={`/${country}/${examSlug}/mock-test`}
+            href={backTo}
             className="flex min-h-11 flex-1 items-center justify-center bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700"
           >
             Exit test
