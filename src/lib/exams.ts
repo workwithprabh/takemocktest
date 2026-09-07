@@ -58,6 +58,7 @@ export type ExamSlug =
   | 'gre'
   | 'act'
   | 'mcat'
+  | 'lsat'
   | 'oet'
   | 'frm'
   | 'nism'
@@ -295,6 +296,7 @@ const SAT_READING_WRITING_PAGE = 'https://satsuite.collegeboard.org/sat/whats-on
 const GRE_QUANT_PAGE = 'https://www.ets.org/gre/test-takers/general-test/prepare/content/quantitative-reasoning.html';
 const ACT_FORMAT_PAGE = 'https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html';
 const MCAT_CARS_PAGE = 'https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview';
+const LSAT_FORMAT_PAGE = 'https://www.lsac.org/lsat/taking-lsat/test-format';
 const OET_READING_PART_C_PAGE = 'https://oet.com/en-us/post/reading-part-c-the-complete-guide';
 const FRM_PROGRAM_EXAMS_PAGE = 'https://www.garp.org/frm/program-exams';
 const NISM_SERIES_V_A_FAQ_PAGE = 'https://www.nism.ac.in/frequently-asked-questions-mutual-fund-distributors/';
@@ -8986,6 +8988,39 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'science-data-representation-sectional-1', name: 'Data Representation Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Data Representation', duration: 5, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'science-research-summaries-sectional-1', name: 'Research Summaries Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Research Summaries', duration: 9, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
           { id: 'science-conflicting-viewpoints-sectional-1', name: 'Conflicting Viewpoints Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Conflicting Viewpoints', duration: 4, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '15 August 2026' },
+        ],
+      },
+    ],
+  },
+  'lsat': {
+    slug: 'lsat',
+    name: 'LSAT',
+    fullName: 'LSAT (Law School Admission Test): Scored Sections',
+    category: 'Study Abroad',
+    stages: [
+      {
+        id: 'scored-sections',
+        name: 'Scored Sections',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Logical Reasoning I', 'Logical Reasoning II', 'Reading Comprehension'],
+          totalQuestions: 77,
+          totalMarks: 77,
+          duration: 105,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Logical Reasoning I', questions: 25, marks: 25, duration: 35 },
+            { name: 'Logical Reasoning II', questions: 25, marks: 25, duration: 35 },
+            { name: 'Reading Comprehension', questions: 27, marks: 27, duration: 35 },
+          ],
+          timerNote: 'Three 35-minute section timers in the order shown. Each section locks when its timer ends and cannot be re-entered, which is how the real test runs. The real sitting adds a fourth 35-minute unscored section that this mock does not include.',
+          note: 'The LSAT is administered by the Law School Admission Council. A sitting consists of four 35-minute multiple-choice sections, of which three are scored: two Logical Reasoning sections of roughly 25 questions each and one Reading Comprehension section of roughly 27 questions across four passage sets, one of which pairs two shorter related texts. The fourth section is an unscored variable section, either Logical Reasoning or Reading Comprehension, which is indistinguishable from the scored ones and whose position varies. Every question has five answer choices, there is no penalty for a wrong answer, and the raw score is converted to a scaled score of 120 to 180. A separately administered Argumentative Writing sample is unscored and is sent to law schools alongside the score. Analytical Reasoning, the logic-games section, was removed from the scored test in 2024 and replaced by the second Logical Reasoning section; a great deal of preparation material still in circulation predates that change. This mock reproduces the three scored sections in full at 77 questions, with the two Logical Reasoning sections labelled I and II so that the section order and the 35-minute locks can be modelled. Two parts of a real sitting are deliberately not reproduced. The Argumentative Writing sample is excluded because it is unscored and because this platform has no free-response engine. The unscored variable section is excluded because it contributes nothing to the score; the honest cost of leaving it out is that a real sitting runs to 140 minutes of multiple-choice work rather than 105, so this mock understates the fatigue of the actual test and a candidate should not read a comfortable finish here as evidence of comfortable pacing on the day. Unlike most standardised tests on this site, the LSAT scored sections can be authored in full without reservation: no question requires knowledge of law or of any academic subject, and every answer is verifiable from the text in front of the candidate, which is the same property that made the MCAT Critical Analysis and Reasoning Skills section the only MCAT section built here. This mock reports a raw score out of 77; the official test reports a scaled 120 to 180 score instead, and the conversion varies between administrations. The pattern is marked review-pending because lsac.org is refused by the network the environment that maintains this catalogue runs behind, so the counts, timing and marking above rest on consistent secondary-source corroboration rather than a directly read LSAC page.',
+          sourceUrl: LSAT_FORMAT_PAGE,
+          checkedOn: '7 September 2026',
+        },
+        tests: [
+          { id: 'scored-sections-full-mock-1', name: 'Scored Sections Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 105, sectionDurations: [35, 35, 35], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark per correct answer and no penalty for a wrong one, so every question should be answered. Each of the three sections is capped at 35 minutes and locks when its timer ends. The raw score out of 77 shown here corresponds to the scored portion of the official test, which reports a scaled 120 to 180 score instead.', checkedOn: '7 September 2026' },
         ],
       },
     ],
