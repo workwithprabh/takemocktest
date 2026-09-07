@@ -18,6 +18,7 @@ export default function Header({ country }: { country: string }) {
         <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-6 text-sm font-medium text-ink-50">
           <Link href={`/${country}#exams`} className="hover:text-ink-300 transition">Mock tests</Link>
           <Link href={`/${country}/exam-updates`} className="hover:text-ink-300 transition">Exam updates</Link>
+          <Link href={`/${country}/logical-reasoning`} className="hover:text-ink-300 transition">Logical reasoning</Link>
           <div ref={ref} className="relative">
             <button
               type="button"

@@ -154,6 +154,32 @@ fully objective Part A papers that can be.
    it waits on a Writer/Main Brain substitution.
 5. **Test-series depth beyond the first mock**, once the manifests in item 3 exist.
 
+## Cross-exam practice sections
+
+Not every product on this site is an exam. The Logical Reasoning hub (`/in/logical-reasoning`)
+is the first section built for a skill rather than a paper, and anything similar should follow
+its rules:
+
+- **Reference, never duplicate.** `src/lib/logical-reasoning-data.ts` holds question IDs only;
+  `getQuestionsByIds` in `src/lib/questions.ts` resolves them against the same wired banks the
+  exam mocks use. A section that copied question text would give one question two homes and two
+  fates, and would trip the audit's cross-bank text-uniqueness rule.
+- **Grade on your own absolute scale.** The per-exam `difficulty` tag sorts reasoning questions
+  by topic, not by effort, so it cannot carry a cross-exam ladder. The hub's rubric (easy: one
+  step, no case analysis; medium: two to four linked steps or one construction, no branching;
+  hard: branching, elimination, interleaved rules, layered codes, sufficiency traps) is
+  documented at the top of `logical-reasoning-data.ts`.
+- **Say what the marking difference costs.** The hub has no negative marking, so its scores are
+  not comparable with the same questions inside their source mocks. That sentence is on the
+  test pages, not just in this file.
+
+Remaining work on the hub: 2,650 of the extracted 3,415-question reasoning pool are still
+ungraded, and 263 already-graded questions are not yet used by a set. Grading more is what
+unlocks a third Hard set (77 graded hard questions today, 50 of them consumed by the two Hard
+sets) and a second round of topic sets. Non-verbal reasoning — figure series, mirror images,
+dice, paper folding — is essentially absent from the corpus (about 30 questions site-wide) and
+would need to be authored before the hub could claim to cover it.
+
 ## Baseline package (what "one exam" means)
 
 For the exam's PRIMARY objective-type stage only (e.g. Prelims, Tier 1, CBT — not a

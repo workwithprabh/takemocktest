@@ -781,6 +781,39 @@ import { MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1 } from './question-banks/mah-mba-c
 import { MAH_MCA_CET_2026_MCA_FULL_MOCK_1 } from './question-banks/mah-mca-cet-2026-mca-full-mock-1';
 import { STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1 } from './question-banks/state-set-2026-maharashtra-commerce-full-mock-1';
 
+// Every question the site serves, indexed by its (globally unique, enforced by
+// scripts/audit-question-banks.mjs) question ID. Built once on first use so
+// the cost is paid only by callers that need ID lookup — today the Logical
+// Reasoning hub, which composes practice sets out of reasoning questions that
+// already ship inside exam mocks rather than duplicating their text.
+let questionsById: Map<string, Question> | null = null;
+
+function getQuestionIndex(): Map<string, Question> {
+  if (questionsById) return questionsById;
+  const index = new Map<string, Question>();
+  for (const bank of Object.values(CHECKED_TEST_BANKS)) {
+    for (const question of bank) {
+      if (question.id && !index.has(question.id)) index.set(question.id, question);
+    }
+  }
+  questionsById = index;
+  return index;
+}
+
+/**
+ * Resolve question IDs to questions, in the order given. Throws on an unknown
+ * ID so a stale generated ID list fails the build rather than silently
+ * shipping a short test.
+ */
+export function getQuestionsByIds(ids: string[]): Question[] {
+  const index = getQuestionIndex();
+  return ids.map((id) => {
+    const question = index.get(id);
+    if (!question) throw new Error(`Unknown question ID: ${id}`);
+    return question;
+  });
+}
+
 export function getQuestionsForTest(examSlug: string, testId: string): Question[] {
   const checkedBank = CHECKED_TEST_BANKS[`${examSlug}/${testId}`];
   if (checkedBank) return checkedBank;
