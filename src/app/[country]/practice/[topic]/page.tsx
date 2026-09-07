@@ -125,6 +125,14 @@ export default async function TopicPracticePage({
     })
     .filter((entry): entry is { slug: string; name: string } => entry !== null)
     .sort((a, b) => a.name.localeCompare(b.name));
+  // Link only a bounded number of exams. A pool can span 69 exams, and linking
+  // every one put 78 internal links on a 780-word page — roughly twenty times
+  // any sensible link density. That spreads this page's link equity across the
+  // site far too thinly and reads as a link dump rather than a useful list.
+  // The rest are still named, as text, so nothing is hidden from the reader.
+  const MAX_LINKED_EXAMS = 12;
+  const linkedExams = exams.slice(0, MAX_LINKED_EXAMS);
+  const remainingExams = exams.slice(MAX_LINKED_EXAMS);
   const siblings = getPublishedTopicSlugs()
     .filter((other) => other !== slug && getTopicPool(other)?.topic.family === family)
     .slice(0, 6);
@@ -235,7 +243,7 @@ export default async function TopicPracticePage({
               : `${categories.length} categories, led by ${topCategories}.`}
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
-            {exams.map((exam) => (
+            {linkedExams.map((exam) => (
               <li key={exam.slug}>
                 <Link
                   href={`/${country}/${exam.slug}/mock-test`}
@@ -246,6 +254,15 @@ export default async function TopicPracticePage({
               </li>
             ))}
           </ul>
+          {remainingExams.length > 0 && (
+            <p className="mt-3 text-xs leading-5 text-ink-500">
+              Also set by {remainingExams.map((exam) => exam.name).join(', ')}.{' '}
+              <Link href={`/${country}/exams`} className="font-semibold text-ink-900 underline">
+                Browse all exams
+              </Link>
+              .
+            </p>
+          )}
         </section>
       )}
 
