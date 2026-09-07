@@ -18,11 +18,15 @@ if (!fs.existsSync(out)) {
 }
 
 const HUB = '/in/logical-reasoning';
-// Floor, not a target: the hub currently earns far more inbound exam links
-// than this. It is set low enough that ordinary content churn (an exam
-// retired, a bank renamed) never trips it, and high enough that a refactor
-// which drops the exam-page link block entirely does.
-const MIN_EXAM_INBOUND = 25;
+// Floor, not a target: 305 exam test pages carry the block today. Set low
+// enough that ordinary content churn (an exam retired, a bank renamed) never
+// trips it, high enough that a refactor dropping the block entirely does.
+const MIN_EXAM_INBOUND = 150;
+// The contextual offer block is identified by its own heading id, NOT by the
+// presence of a hub link: the header and footer put a hub link on every page
+// of the site, so counting links would count the chrome and pass even if the
+// block were deleted — the exact silent failure this audit exists to catch.
+const OFFER_BLOCK_MARKER = 'id="reasoning-hub"';
 
 const errors = [];
 const htmlFiles = [];
@@ -73,7 +77,7 @@ for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   if (!html.includes(`href="${HUB}"`) && !html.includes(`href="${HUB}/`)) continue;
   if (rel === '/in') inbound.homepage += 1;
-  if (/\/in\/[^/]+\/test\/[^/]+$/.test(rel)) inbound.examTests += 1;
+  if (html.includes(OFFER_BLOCK_MARKER)) inbound.examTests += 1;
   inbound.chrome += 1;
 }
 if (inbound.homepage === 0) errors.push('the homepage no longer links to the Logical Reasoning hub');
@@ -94,5 +98,6 @@ if (errors.length > 0) {
 }
 console.log(
   `Internal-link audit passed — ${hubPages.length} hub pages, ${checkedHubLinks} outgoing links all resolve; ` +
-    `hub linked from the homepage, ${inbound.chrome} pages of site chrome, and ${inbound.examTests} exam test pages.`,
+    `hub linked from the homepage, ${inbound.chrome} pages of site chrome, and offered in context by ` +
+    `${inbound.examTests} exam test pages.`,
 );
