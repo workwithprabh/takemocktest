@@ -39,6 +39,7 @@ export default async function TestAttemptPage({
   if (!configuredTest) return notFound();
   const { test } = configuredTest;
   const questions = getQuestionsForTest(examSlug, testId);
+  if (questions.length === 0) return notFound();
 
   return (
     <TestAttemptClient

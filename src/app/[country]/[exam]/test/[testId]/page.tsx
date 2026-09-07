@@ -52,7 +52,9 @@ export async function generateMetadata({
   const conciseTestName = testName.replace(' Objective Full Mock Test', ' Mock Test');
   return pageMetadata({
     title: buildTestTitle(exam.name, isFullMock ? conciseTestName : testName, isFullMock, cycle),
-    description: isFullMock
+    description: questionCount === 0
+      ? `${exam.name} ${testName} is being prepared. Browse the available ${exam.name} practice tests while this test is completed.`
+      : isFullMock
       ? `Attempt ${exam.name} ${testName}: ${questionCount} questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.`
       : isSectional
         ? `Practice ${configuredTest.test.section} for ${exam.name} with ${questionCount} original, topic-tagged questions, instant scoring, and answer explanations.`
@@ -67,15 +69,15 @@ export async function generateMetadata({
     // even with the enrichment. Other non-full-mock kinds (quick/topic/
     // difficulty/practice) haven't had the same content work done, so they
     // stay noindexed until they do.
-    noIndex: !isFullMock && !(isSectional && questionCount >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX),
+    noIndex: questionCount === 0 || (!isFullMock && !(isSectional && questionCount >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX)),
   });
 }
 
 const BASE_INSTRUCTIONS = [
-  'Each wrong answer deducts marks using the scoring rule shown above. Unattempted questions score zero.',
-  'You can mark a question for review and come back to it later using the question palette.',
   'The timer starts as soon as you click "Start test" and the test auto-submits when time runs out.',
-  'You can review your answers and explanations for every question immediately after submitting.',
+  'Mark questions for review and return to them while their section or timing group is still open.',
+  'Your answers and timer deadline are saved on this device, so a refresh can resume safely.',
+  'After submitting, review section and topic scores, explanations, and source links.',
 ];
 
 const SSC_TIER1_FULL_MOCK_FAQS = [
@@ -2040,7 +2042,8 @@ export default async function TestInstructionsPage({
   const { stage, test } = configuredTest;
   const isFullMock = test.kind === 'full-length';
   const isSectional = test.kind === 'sectional';
-  const hasQuizSchema = isFullMock || isSectional || test.kind === 'quick' || test.kind === 'topic' || test.kind === 'difficulty';
+  const isAvailable = questionCount > 0;
+  const hasQuizSchema = isAvailable && (isFullMock || isSectional || test.kind === 'quick' || test.kind === 'topic' || test.kind === 'difficulty');
   const fullMockFaqs = isFullMock ? FULL_MOCK_FAQS[`${exam.slug}/${stage.id}`] : undefined;
   // Sectional test pages get no hand-written FAQ/description copy (there are
   // hundreds of them), so their "unique content" comes entirely from the
@@ -2069,6 +2072,34 @@ export default async function TestInstructionsPage({
   const maxScore = Math.round(
     questions.reduce((total, question) => total + (question.marks ?? test.marksPerCorrect), 0) * 100,
   ) / 100;
+  const displayName = test.name.toLowerCase().startsWith(exam.name.toLowerCase())
+    ? test.name
+    : `${exam.name} ${test.name}`;
+  const kindLabel = {
+    'full-length': 'Full mock',
+    sectional: 'Sectional test',
+    practice: 'Practice demo',
+    quick: 'Quick test',
+    topic: 'Topic test',
+    difficulty: 'Difficulty drill',
+  }[test.kind];
+  const usesLockedTiming = Boolean(test.timingGroups?.length || test.sectionDuration || test.sectionDurations?.length);
+  const timingLabel = test.timingGroups?.length
+    ? `${test.timingGroups.length} timed groups`
+    : usesLockedTiming
+      ? 'Section-timed'
+      : 'One timer';
+  const testOverview = test.kind === 'sectional'
+    ? `Focus on ${test.section} with ${questionCount} original questions in one dedicated practice session.`
+    : test.kind === 'full-length'
+      ? `Simulate the complete ${stage.name} paper across ${coveredSections.length} ${coveredSections.length === 1 ? 'section' : 'sections'} with exam-pattern scoring and timing.`
+      : test.kind === 'difficulty'
+        ? `Practise ${questionCount} ${test.section} questions at this difficulty level.`
+        : test.kind === 'topic'
+          ? `Practise ${questionCount} questions focused on this ${test.section} topic.`
+          : test.kind === 'quick'
+            ? `Check your pace with ${questionCount} questions across ${coveredSections.length} ${stage.name} sections.`
+            : `Explore the test interface with a ${questionCount}-question practice demo.`;
   // Dynamically generated per sectional test from real config data — not
   // hand-authored (there are hundreds of these pages). No FAQPage schema is
   // emitted for this: Google retired the FAQ rich-result snippet sitewide on
@@ -2100,26 +2131,6 @@ export default async function TestInstructionsPage({
       ]
     : [];
   const pagePath = `/${country}/${exam.slug}/test/${testId}`;
-  const instructions = [
-    test.kind === 'sectional'
-      ? `This sectional test contains ${questionCount} original ${test.section} questions.`
-      : test.kind === 'full-length'
-        ? `This full-length mock contains ${questionCount} original questions across ${coveredSections.length} ${stage.name} sections.${
-            test.sectionDurations
-              ? ` The section timers are ${test.sectionDurations.join(', ')} minutes in the order shown below, and each section locks when its timer ends.`
-              : test.sectionDuration
-                ? ` Each section has ${test.sectionDuration} minutes and locks when its timer ends.`
-                : ''
-          }`
-        : test.kind === 'difficulty'
-          ? `This is a focused ${questionCount}-question practice set drawn only from ${test.section} questions at this difficulty level, syllabus-checked the same as our full mocks.`
-          : test.kind === 'topic'
-            ? `This is a focused ${questionCount}-question practice set on this ${test.section} topic, syllabus-checked the same as our full mocks.`
-            : test.kind === 'quick'
-              ? `This is a ${test.duration}-minute quick test with ${questionCount} original questions mixed across ${coveredSections.length} ${stage.name} sections: a fast way to check your pace.`
-              : `This is a ${questionCount}-question interface practice demo, not a full mock or previous-year paper.`,
-    ...BASE_INSTRUCTIONS,
-  ];
   const jsonLd = hasQuizSchema
     ? [
         breadcrumbSchema([
@@ -2166,80 +2177,123 @@ export default async function TestInstructionsPage({
         { label: 'Mock tests', href: `/${country}/${exam.slug}/mock-test` },
         { label: test.name },
       ]} />
-      <div className="mb-8 max-w-3xl">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">Free online practice test</p>
-        <h1 className="text-3xl font-bold leading-tight text-ink-900 sm:text-4xl">{test.name}</h1>
-        <p className="mt-3 text-sm leading-6 text-ink-700">{exam.name} · {exam.fullName}</p>
-      </div>
-
-      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
-          <section className="border border-ink-200 bg-white p-5 lg:col-start-1" aria-labelledby="test-readiness">
-            <div className="flex items-start gap-3">
-              <span className="mt-0.5 flex h-8 w-8 flex-none items-center justify-center bg-live-100 text-sm font-bold text-live-800" aria-hidden="true">✓</span>
-              <div>
-                <h2 id="test-readiness" className="text-sm font-semibold text-ink-900">
-                  {test.status === 'checked' ? 'Syllabus-checked original practice' : 'Practice demo'}
-                </h2>
-                <p className="mt-1 text-sm leading-6 text-ink-700">
-                  {test.status === 'checked'
-                    ? `Mapped to the official ${stage.name} syllabus and answer-checked on ${test.checkedOn}.`
-                    : 'This small set demonstrates the test interface and uses demo scoring. It is not an exam-accurate full mock.'}
-                </p>
-                {test.status === 'checked' && stage.pattern.sourceUrl && (
-                  <a href={stage.pattern.sourceUrl} target="_blank" rel="noreferrer" className="mt-2 inline-block text-xs font-semibold text-action-700 underline underline-offset-2">
-                    View official syllabus source
-                  </a>
-                )}
-              </div>
+      <section className="border border-ink-200 bg-white" aria-labelledby="test-title">
+        <div className="grid lg:grid-cols-[minmax(0,1fr)_22rem]">
+          <div className="p-5 sm:p-8 lg:border-r lg:border-ink-200">
+            <div className="flex flex-wrap gap-2">
+              <span className="bg-action-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-action-800">
+                {kindLabel}
+              </span>
+              <span className="bg-ink-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-ink-700">
+                {stage.name}
+              </span>
+              <span className={`${test.status === 'checked' && isAvailable ? 'bg-live-100 text-live-800' : 'bg-ink-100 text-ink-700'} px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]`}>
+                {isAvailable ? (test.status === 'checked' ? 'Checked and ready' : 'Practice demo') : 'In preparation'}
+              </span>
             </div>
-            {test.scoringNote && (
-              <p className="mt-4 border-t border-ink-200 pt-4 text-xs leading-5 text-ink-700">
-                <strong className="text-ink-900">Scoring note:</strong> {test.scoringNote}
-              </p>
-            )}
-          </section>
 
-        <aside className="border border-ink-200 bg-white p-5 lg:sticky lg:top-24 lg:col-start-2 lg:row-span-2 lg:row-start-1" aria-label="Test summary">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Test summary</p>
-          <dl className="mt-4 grid grid-cols-2 border border-ink-200">
-            {[
-              ['Questions', String(questionCount)],
-              ['Duration', `${test.duration} min`],
-              ['Correct', usesQuestionLevelScoring ? 'By question' : `+${test.marksPerCorrect}`],
-              ['Wrong', usesQuestionLevelScoring ? 'By question' : `−${test.negativeMarking}`],
-            ].map(([label, value]) => (
-              <div key={label} className="border-b border-r border-ink-200 p-3 even:border-r-0 [&:nth-last-child(-n+2)]:border-b-0">
-                <dt className="text-[11px] text-ink-500">{label}</dt>
-                <dd className="mt-1 text-base font-bold text-ink-900">{value}</dd>
-              </div>
-            ))}
-          </dl>
-          <p className="mt-4 text-xs leading-5 text-ink-600">Your progress is saved on this device while the test is active.</p>
-          <Link
-            href={`/${country}/${exam.slug}/test/${testId}/attempt`}
-            className="mt-5 flex min-h-12 items-center justify-center bg-action-700 px-4 text-sm font-semibold text-white transition hover:bg-action-800"
-          >
-            Start test <span className="ml-2" aria-hidden="true">→</span>
-          </Link>
-        </aside>
+            <p className="mt-7 text-xs font-semibold uppercase tracking-[0.18em] text-ink-500">Free online practice test</p>
+            <h1 id="test-title" className="mt-3 text-3xl font-bold leading-tight text-ink-900 sm:text-4xl">{displayName}</h1>
+            <p className="mt-3 text-sm leading-6 text-ink-600">{exam.fullName}</p>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-ink-700">{testOverview}</p>
 
-        <section className="lg:col-start-1" aria-labelledby="test-instructions">
-          <h2 id="test-instructions" className="mb-4 text-xl font-bold text-ink-900">Before you begin</h2>
-          <ol className="space-y-3">
-            {instructions.map((item, i) => (
-              <li key={i} className="flex gap-3 border-b border-ink-200 pb-3 text-sm leading-6 text-ink-700 last:border-0">
-                <span className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center bg-ink-100 text-[11px] font-bold text-ink-700">
-                  {i + 1}
+            <div className="mt-7 border-t border-ink-200 pt-5">
+              <div className="flex items-start gap-3">
+                <span className={`${test.status === 'checked' && isAvailable ? 'bg-live-100 text-live-800' : 'bg-ink-100 text-ink-700'} flex h-8 w-8 flex-none items-center justify-center text-sm font-bold`} aria-hidden="true">
+                  {test.status === 'checked' && isAvailable ? '✓' : 'i'}
                 </span>
-                {item}
-              </li>
-            ))}
-          </ol>
-        </section>
-      </div>
+                <div>
+                  <h2 className="text-sm font-semibold text-ink-900">
+                    {!isAvailable
+                      ? 'This test is still being prepared'
+                      : test.status === 'checked'
+                        ? 'Syllabus-checked original practice'
+                        : 'Interface practice demo'}
+                  </h2>
+                  <p className="mt-1 text-sm leading-6 text-ink-700">
+                    {!isAvailable
+                      ? 'There are no questions in this test yet. Choose another available test while the bank is completed.'
+                      : test.status === 'checked'
+                        ? `Mapped to the official ${stage.name} syllabus${test.checkedOn ? ` and answer-checked on ${test.checkedOn}` : ''}.`
+                        : 'This smaller set demonstrates the test interface. It is not an exam-accurate full mock.'}
+                  </p>
+                  {test.status === 'checked' && stage.pattern.sourceUrl && (
+                    <a href={stage.pattern.sourceUrl} target="_blank" rel="noreferrer" className="mt-2 inline-flex min-h-8 items-center text-xs font-semibold text-action-700 underline underline-offset-2">
+                      View official pattern source <span className="ml-1" aria-hidden="true">↗</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+              {test.scoringNote && (
+                <p className="mt-4 border-t border-ink-200 pt-4 text-xs leading-5 text-ink-700">
+                  <strong className="text-ink-900">Scoring note:</strong> {test.scoringNote}
+                </p>
+              )}
+            </div>
+          </div>
+
+          <aside className="border-t border-ink-200 bg-ink-50 p-5 sm:p-7 lg:border-t-0" aria-label="Test summary">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Ready to begin?</p>
+            <dl className="mt-4 grid grid-cols-2 border-l border-t border-ink-200 bg-white">
+              {[
+                ['Questions', String(questionCount)],
+                ['Duration', `${test.duration} min`],
+                ['Maximum marks', usesQuestionLevelScoring ? String(maxScore) : String(questionCount * test.marksPerCorrect)],
+                ['Timing', timingLabel],
+                ['Correct', usesQuestionLevelScoring ? 'Varies' : `+${test.marksPerCorrect}`],
+                ['Wrong', usesQuestionLevelScoring ? 'Varies' : test.negativeMarking > 0 ? `−${test.negativeMarking}` : 'No penalty'],
+              ].map(([label, value]) => (
+                <div key={label} className="border-b border-r border-ink-200 p-3.5">
+                  <dt className="text-[11px] leading-4 text-ink-500">{label}</dt>
+                  <dd className="mt-1 text-sm font-bold leading-5 text-ink-900">{value}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="mt-4 flex gap-2 text-xs leading-5 text-ink-600">
+              <span aria-hidden="true">◎</span>
+              No login required. Active progress is saved on this device.
+            </p>
+            {isAvailable ? (
+              <Link
+                href={`/${country}/${exam.slug}/test/${testId}/attempt`}
+                className="mt-5 flex min-h-12 items-center justify-center bg-action-700 px-4 text-sm font-semibold text-white transition hover:bg-action-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-action-700"
+              >
+                {test.status === 'checked' ? 'Start test' : 'Try practice demo'} <span className="ml-2" aria-hidden="true">→</span>
+              </Link>
+            ) : (
+              <span aria-disabled="true" className="mt-5 flex min-h-12 cursor-not-allowed items-center justify-center bg-ink-200 px-4 text-sm font-semibold text-ink-600">
+                Test being prepared
+              </span>
+            )}
+            <Link href={`/${country}/${exam.slug}/mock-test`} className="mt-3 flex min-h-10 items-center justify-center border border-ink-200 bg-white px-4 text-sm font-semibold text-ink-900 transition hover:bg-ink-100">
+              Browse all {exam.name} tests
+            </Link>
+          </aside>
+        </div>
+      </section>
+
+      <section className="mt-8" aria-labelledby="test-instructions">
+        <div className="mb-4 flex items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Test-day essentials</p>
+            <h2 id="test-instructions" className="mt-2 text-xl font-bold text-ink-900">Know before you start</h2>
+          </div>
+          <span className="hidden text-xs text-ink-500 sm:block">4 quick checks</span>
+        </div>
+        <ol className="grid border-l border-t border-ink-200 bg-white sm:grid-cols-2">
+          {BASE_INSTRUCTIONS.map((item, i) => (
+            <li key={item} className="flex gap-3 border-b border-r border-ink-200 p-4 text-sm leading-6 text-ink-700 sm:p-5">
+              <span className="flex h-6 w-6 flex-none items-center justify-center bg-ink-900 text-[11px] font-bold text-white" aria-hidden="true">
+                {i + 1}
+              </span>
+              {item}
+            </li>
+          ))}
+        </ol>
+      </section>
 
       {isFullMock && (
-        <div className="mt-14 border-t border-ink-200 pt-10">
+        <div className="mt-10 border-t border-ink-200 pt-10">
           <section className="mb-10">
             <h2 className="mb-3 text-xl font-bold text-ink-900">About this {exam.name} {stage.name} mock test</h2>
             <p className="text-sm leading-7 text-ink-700">
@@ -2301,7 +2355,7 @@ export default async function TestInstructionsPage({
       )}
 
       {isSectional && (
-        <div className="mt-14 border-t border-ink-200 pt-10">
+        <div className="mt-10 border-t border-ink-200 pt-10">
           <section className="mb-10">
             <h2 className="mb-3 text-xl font-bold text-ink-900">About this {exam.name} {test.section} sectional test</h2>
             <p className="text-sm leading-7 text-ink-700">
