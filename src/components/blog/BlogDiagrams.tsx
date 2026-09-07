@@ -22,7 +22,10 @@ export type BlogDiagramId =
   | 'section-accuracy-bars'
   | 'sectional-vs-composite'
   | 'qualifying-merit-funnel'
-  | 'banking-tier-ladder';
+  | 'banking-tier-ladder'
+  | 'shared-sections-map'
+  | 'corpus-two-cuts'
+  | 'one-skill-many-names';
 
 function StudyTimetableGrid() {
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -225,6 +228,151 @@ function BankingTierLadder() {
   );
 }
 
+// Real section lists from src/lib/exams.ts, not an illustration: SSC Selection
+// Post's four sections all appear in SSC CHSL's nine, which is what "the
+// smaller exam is fully contained" means when the audit counts 1,044 such
+// pairs.
+function SharedSectionsMap() {
+  const chsl = [
+    'General Intelligence',
+    'General Awareness',
+    'Quantitative Aptitude',
+    'English Language',
+    'Mathematical Abilities',
+    'Reasoning and General Intelligence',
+    'English Language and Comprehension',
+    'Computer Knowledge Test',
+    'Skill Test/Typing Test',
+  ];
+  const selectionPost = ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'];
+  const rowH = 26;
+  const top = 46;
+  const leftX = 20;
+  const rightX = 330;
+  const boxW = 210;
+  return (
+    <svg viewBox="0 0 560 300" width="100%" role="img" aria-label="SSC CHSL's nine sections beside SSC Selection Post's four, with lines joining the four names that appear on both">
+      <text x={leftX} y="24" fontSize="11" fill={INK[900]} fontWeight="600">SSC CHSL (9 sections)</text>
+      <text x={rightX} y="24" fontSize="11" fill={INK[900]} fontWeight="600">SSC Selection Post (4)</text>
+      {chsl.map((name, i) => {
+        const shared = selectionPost.includes(name);
+        const y = top + i * rowH;
+        return (
+          <g key={name}>
+            <rect x={leftX} y={y} width={boxW} height={rowH - 5} fill={shared ? INK[900] : INK[50]} stroke={INK[300]} strokeWidth="1" />
+            <text x={leftX + 8} y={y + 14} fontSize="9.5" fill={shared ? '#FFFFFF' : INK[500]}>{name}</text>
+          </g>
+        );
+      })}
+      {selectionPost.map((name, i) => {
+        const y = top + i * rowH;
+        const fromY = top + chsl.indexOf(name) * rowH + (rowH - 5) / 2;
+        return (
+          <g key={name}>
+            <line x1={leftX + boxW} y1={fromY} x2={rightX} y2={y + (rowH - 5) / 2} stroke={INK[300]} strokeWidth="1" />
+            <rect x={rightX} y={y} width={boxW} height={rowH - 5} fill={INK[900]} stroke={INK[900]} strokeWidth="1" />
+            <text x={rightX + 8} y={y + 14} fontSize="9.5" fill="#FFFFFF">{name}</text>
+          </g>
+        );
+      })}
+      <text x={rightX} y={top + 4 * rowH + 22} fontSize="10" fill={INK[700]}>All 4 already sit inside CHSL.</text>
+      <text x={rightX} y={top + 4 * rowH + 38} fontSize="10" fill={INK[700]}>Nothing new to start from scratch.</text>
+      <text x={leftX} y="288" fontSize="9" fill={INK[300]}>Section names as published in each exam&apos;s official pattern.</text>
+    </svg>
+  );
+}
+
+// The same questions, cut two ways. A column is one exam's paper; a row is one
+// topic across every exam. The site was built entirely on columns until the
+// topic pages added rows.
+function CorpusTwoCuts() {
+  const cols = 9;
+  const rows = 6;
+  const cell = 30;
+  const x0 = 90;
+  const y0 = 44;
+  const highlightCol = 3;
+  const highlightRow = 2;
+  return (
+    <svg viewBox="0 0 560 260" width="100%" role="img" aria-label="A grid of questions with one column highlighted as a single exam paper and one row highlighted as a single topic drawn across every exam">
+      <text x={x0} y="24" fontSize="11" fill={INK[900]} fontWeight="600">One question corpus, two cuts</text>
+      {Array.from({ length: rows }).map((_, r) =>
+        Array.from({ length: cols }).map((__, c) => {
+          const onCol = c === highlightCol;
+          const onRow = r === highlightRow;
+          const fill = onCol && onRow ? INK[900] : onCol ? INK[500] : onRow ? INK[200] : INK[50];
+          return (
+            <rect
+              key={`${r}-${c}`}
+              x={x0 + c * cell}
+              y={y0 + r * cell}
+              width={cell - 4}
+              height={cell - 4}
+              fill={fill}
+              stroke={INK[300]}
+              strokeWidth="1"
+            />
+          );
+        }),
+      )}
+      <text x={x0 + highlightCol * cell + (cell - 4) / 2} y={y0 - 8} fontSize="10" fill={INK[900]} textAnchor="middle" fontWeight="600">
+        1 exam
+      </text>
+      <text x={x0 - 10} y={y0 + highlightRow * cell + 16} fontSize="10" fill={INK[900]} textAnchor="end" fontWeight="600">
+        1 topic
+      </text>
+      <text x={x0} y={y0 + rows * cell + 22} fontSize="10" fill={INK[700]}>
+        A column is a mock test. A row is a topic pooled across every exam that asks it.
+      </text>
+      <text x={x0} y={y0 + rows * cell + 40} fontSize="10" fill={INK[700]}>
+        Same questions either way; the row is the one this site could not offer before.
+      </text>
+    </svg>
+  );
+}
+
+// Every label here is a real section name from a live exam pattern. They are
+// all the same skill under different letterheads.
+function OneSkillManyNames() {
+  const names = [
+    'General Intelligence and Reasoning',
+    'Logical Reasoning',
+    'Reasoning Ability',
+    'Test of Reasoning',
+    'Abstract Reasoning',
+    'Analytical Reasoning',
+    'Logical Intelligence',
+    'Intelligence and Critical Reasoning',
+  ];
+  const boxW = 200;
+  const boxH = 22;
+  const x0 = 16;
+  const y0 = 30;
+  const gap = 26;
+  const hubX = 330;
+  const hubY = 118;
+  return (
+    <svg viewBox="0 0 560 260" width="100%" role="img" aria-label="Eight different section names from real exam patterns all converging on a single logical reasoning skill">
+      {names.map((name, i) => {
+        const y = y0 + i * gap;
+        return (
+          <g key={name}>
+            <rect x={x0} y={y} width={boxW} height={boxH} fill={INK[50]} stroke={INK[300]} strokeWidth="1" />
+            <text x={x0 + 7} y={y + 15} fontSize="9" fill={INK[700]}>{name}</text>
+            <line x1={x0 + boxW} y1={y + boxH / 2} x2={hubX} y2={hubY + 26} stroke={INK[200]} strokeWidth="1" />
+          </g>
+        );
+      })}
+      <rect x={hubX} y={hubY} width={190} height={52} fill={INK[900]} />
+      <text x={hubX + 95} y={hubY + 22} fontSize="12" fill="#FFFFFF" textAnchor="middle" fontWeight="600">One skill</text>
+      <text x={hubX + 95} y={hubY + 40} fontSize="10" fill={INK[200]} textAnchor="middle">graded on one scale</text>
+      <text x={hubX} y={hubY + 78} fontSize="10" fill={INK[700]}>8 of the 23 names in use.</text>
+      <text x={hubX} y={hubY + 94} fontSize="10" fill={INK[700]}>A syllogism does not change</text>
+      <text x={hubX} y={hubY + 110} fontSize="10" fill={INK[700]}>because the heading did.</text>
+    </svg>
+  );
+}
+
 const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'study-timetable-grid': StudyTimetableGrid,
   'negative-marking-math': NegativeMarkingMath,
@@ -233,6 +381,9 @@ const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'sectional-vs-composite': SectionalVsComposite,
   'qualifying-merit-funnel': QualifyingMeritFunnel,
   'banking-tier-ladder': BankingTierLadder,
+  'shared-sections-map': SharedSectionsMap,
+  'corpus-two-cuts': CorpusTwoCuts,
+  'one-skill-many-names': OneSkillManyNames,
 };
 
 export function BlogDiagram({ id, caption }: { id: BlogDiagramId; caption: string }) {

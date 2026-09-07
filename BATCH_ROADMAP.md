@@ -245,6 +245,36 @@ page must be in `sitemap.xml` and no noindexed page may be. Drift alone would fi
 that ships indexable but unsubmitted as a harmless INFO. Today: 1,716 indexable pages, all
 submitted, with `/theme-1` the one documented exemption.
 
+### The no-dash rule is not being enforced anywhere
+
+`SEO_PLAYBOOK.md` section 4 makes it a hard rule, added 6 August 2026 after a full-site audit
+found roughly 250 of them: **no em dashes or en dashes in any prose surface, full stop.** It is
+not a style preference there; it is called out as one of the most reliable AI-writing tells,
+which is why real editors cut it.
+
+Nothing enforces it, and it has come back. A sweep of the rendered text in `out/` on 7
+September 2026 found **1,369 em or en dashes across 711 pages**. The blog's 22 (all in posts
+written after the rule was added) are fixed. The rest are not, and they are not evenly spread:
+
+- Two strings in the exam test page template (`test/[testId]/page.tsx`) account for **352**:
+  the reasoning-hub offer block on 305 pages, and a per-question marking note on 47.
+- Two strings in `exam-pattern-content.ts` account for another **107**.
+- One string in the Logical Reasoning set page accounts for **30**.
+- The remainder is spread across exam-pattern notes, section names taken verbatim from official
+  patterns (`Paper I — Teaching & Research Aptitude`), and `public/llms.txt` (32 in the exam
+  entries alone).
+
+That distribution is the good news: roughly 490 of the 1,369 come from five template strings,
+not from 1,369 separate editing decisions. Fixing those five clears more than a third in one
+pass, and the long tail is mostly single-page prose that can be worked through in batches.
+
+Worth doing properly rather than with a blind find-and-replace. The playbook prescribes the
+replacement per case (a colon when the second half explains the first, a comma or parentheses
+for a short aside, a period to start a new sentence), and section names copied from an official
+pattern are a genuine judgement call: changing them makes our page disagree with the source
+document it cites. Once the count is at zero, a `qa:*` check should keep it there, since this is
+now the second time it has crept back.
+
 ### Run the installed SEO skills on generated sections
 
 There is a set of SEO skills installed in this environment, and the programmatic-pages
