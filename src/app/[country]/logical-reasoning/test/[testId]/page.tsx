@@ -1,3 +1,4 @@
+import { displayLabel } from '@/lib/questions';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { COUNTRIES } from '@/lib/exams';
@@ -161,7 +162,7 @@ export default async function LogicalReasoningTestPage({
             <h3 className="mt-5 text-sm font-bold text-ink-900">Topics covered</h3>
             <ul className="mt-2 flex flex-wrap gap-2">
               {topics.map((topic) => (
-                <li key={topic} className="border border-ink-200 bg-white px-2.5 py-1 text-xs text-ink-700">{topic}</li>
+                <li key={topic} className="border border-ink-200 bg-white px-2.5 py-1 text-xs text-ink-700">{displayLabel(topic)}</li>
               ))}
             </ul>
           </>
@@ -174,7 +175,7 @@ export default async function LogicalReasoningTestPage({
           <p className="mt-3 text-sm leading-6 text-ink-700">
             Every question in this set already appears in the reasoning section of a real exam mock on this site.
             Reasoning is the one part of a paper that is not exam-specific, so the same puzzle is legitimate practice
-            whichever of these you are sitting. If one of them is your exam, attempt it there too &mdash; under that
+            whichever of these you are sitting. If one of them is your exam, attempt it there too, under that
             exam&rsquo;s own timing and negative marking, which this section deliberately drops.
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">

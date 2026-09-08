@@ -84,7 +84,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                 />
                 <datalist id="available-exam-suggestions">
                   {examSuggestions.map((exam) => (
-                    <option key={exam.name} value={exam.name} label={exam.liveSlug ? 'Mock test available' : 'Listed — coming soon'} />
+                    <option key={exam.name} value={exam.name} label={exam.liveSlug ? 'Mock test available' : 'Listed, coming soon'} />
                   ))}
                 </datalist>
                 <button type="submit" className="min-h-12 shrink-0 bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900">

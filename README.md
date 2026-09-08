@@ -27,6 +27,7 @@ npm run qa:links  # hub reachability + dead internal links (needs out/, so run a
 npm run qa:thin-content  # boilerplate ratio across generated sections (needs out/)
 npm run qa:schema        # JSON-LD validity across every page (needs out/)
 npm run qa:drift         # diff every page's SEO state against the committed baseline (needs out/)
+npm run qa:dashes        # no em or en dashes in authored prose (source only, no build needed)
 npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build + SEO + links
 ```
 

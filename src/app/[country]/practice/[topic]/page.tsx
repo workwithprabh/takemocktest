@@ -152,7 +152,7 @@ export default async function TopicPracticePage({
       about: name,
       questions: samples.map((question) => ({
         question: question.question,
-        answer: `${question.options[question.correctIndex] ?? ''} — ${question.explanation}`.trim(),
+        answer: `${question.options[question.correctIndex] ?? ''}. ${question.explanation}`.trim(),
       })),
     }),
     faqPageSchema(faqs),
@@ -174,8 +174,8 @@ export default async function TopicPracticePage({
         {name} Questions with Answers
       </h1>
       <p className="mt-4 max-w-2xl text-sm leading-7 text-ink-700">
-        {blurb} This page pools every {name.toLowerCase()} question on the site &mdash; {pool.questions.length} of
-        them, from {exams.length} exams, weighted towards {topCategories} &mdash; so you can drill the topic on its
+        {blurb} This page pools every {name.toLowerCase()} question on the site ({pool.questions.length} of
+        them, from {exams.length} exams, weighted towards {topCategories}) so you can drill the topic on its
         own instead of meeting four of them inside a full paper.
       </p>
       <p className="mt-3 max-w-2xl text-sm leading-7 text-ink-700">

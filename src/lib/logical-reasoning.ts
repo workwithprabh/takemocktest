@@ -39,7 +39,7 @@ export const LR_GRADE_LABELS: Record<LRGrade, string> = {
 };
 
 export const LR_GRADE_BLURBS: Record<LRGrade, string> = {
-  easy: 'One step, no case analysis — build speed and accuracy on the basics.',
+  easy: 'One step, no case analysis. Build speed and accuracy on the basics.',
   medium: 'Two to four linked steps, or one diagram to construct, without branching.',
   hard: 'Branching and elimination, interleaved rules, layered codes and sufficiency traps.',
 };

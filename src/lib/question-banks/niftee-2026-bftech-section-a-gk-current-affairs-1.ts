@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   {
     "id": "niftee-2026-bft-ag-001",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "International Organizations",
     "difficulty": "easy",
     "question": "Where is the headquarters of UNESCO located?",
@@ -27,7 +27,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-002",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "International Organizations",
     "difficulty": "easy",
     "question": "Where is the headquarters of the World Trade Organization (WTO)?",
@@ -51,7 +51,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-003",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Sustainable Development",
     "difficulty": "medium",
     "question": "Which UN Sustainable Development Goal focuses on \"Responsible Consumption and Production\"?",
@@ -75,7 +75,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-004",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Indian Textiles",
     "difficulty": "easy",
     "question": "National Handloom Day in India is observed on:",
@@ -99,7 +99,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-005",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Intellectual Property",
     "difficulty": "easy",
     "question": "In the context of traditional products, \"GI\" stands for:",
@@ -123,7 +123,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-006",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Currencies",
     "difficulty": "easy",
     "question": "What is the currency of Japan?",
@@ -147,7 +147,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-007",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Textile Fibres",
     "difficulty": "easy",
     "question": "Linen is produced primarily from which plant fibre?",
@@ -171,7 +171,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-008",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Textile Science",
     "difficulty": "medium",
     "question": "The principal structural protein in silk fibre is:",
@@ -195,7 +195,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-009",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Textile Fibres",
     "difficulty": "medium",
     "question": "Jute is classified mainly as a:",
@@ -219,7 +219,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-010",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Indian Crafts",
     "difficulty": "easy",
     "question": "Chikankari embroidery is traditionally associated with which city?",
@@ -243,7 +243,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-011",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Indian Crafts",
     "difficulty": "easy",
     "question": "Pochampally Ikat is strongly associated with which Indian state?",
@@ -267,7 +267,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-012",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Indian Crafts",
     "difficulty": "medium",
     "question": "Ajrakh is best known as a tradition of:",
@@ -291,7 +291,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-013",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Indian Geography",
     "difficulty": "easy",
     "question": "Varanasi, known for Banarasi silk weaving, is in which state?",
@@ -315,7 +315,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-014",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Blue Revolution",
     "difficulty": "medium",
     "question": "The term \"Blue Revolution\" in India is most closely associated with increased production in:",
@@ -339,7 +339,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-015",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Sustainability",
     "difficulty": "medium",
     "question": "In a circular-economy approach, which action most directly extends a product\u2019s useful life?",
@@ -363,7 +363,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-016",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "medium",
     "question": "Which country held the G20 Presidency during most of 2025?",
@@ -387,7 +387,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-017",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "easy",
     "question": "Which team won the ICC Men\u2019s Champions Trophy 2025?",
@@ -411,7 +411,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-018",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "easy",
     "question": "Expo 2025 was held in which Japanese city?",
@@ -435,7 +435,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-019",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "medium",
     "question": "Which country hosted World Environment Day 2025?",
@@ -459,7 +459,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-020",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "medium",
     "question": "The United Nations designated 2025 as the International Year of:",
@@ -483,7 +483,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-021",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "easy",
     "question": "Which country served as ASEAN Chair in 2025?",
@@ -507,7 +507,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-022",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "easy",
     "question": "Pantone\u2019s Color of the Year for 2025 was:",
@@ -531,7 +531,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-023",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "medium",
     "question": "COP30, the 2025 UN climate conference, took place in which Brazilian city?",
@@ -555,7 +555,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-024",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "medium",
     "question": "Which country held the BRICS Presidency in 2025?",
@@ -579,7 +579,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_GK_CURRENT_AFFAIRS_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-ag-025",
-    "section": "Section A \u2014 General Knowledge & Current Affairs",
+    "section": "Section A (General Knowledge & Current Affairs)",
     "topic": "Current Affairs 2025",
     "difficulty": "medium",
     "question": "Which of the following was another UN-designated International Year in 2025?",

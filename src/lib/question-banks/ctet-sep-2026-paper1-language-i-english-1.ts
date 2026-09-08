@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   {
     "id": "ctet-sep-2026-p1-eng-001",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "medium",
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nWhy did the librarian use mystery cards?",
@@ -27,7 +27,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-002",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "medium",
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nWhich change best shows that children became more independent readers?",
@@ -51,7 +51,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-003",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "easy",
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nThe word “rarely” in the passage most nearly means",
@@ -75,7 +75,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-004",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "hard",
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nWhat can reasonably be inferred about the librarian’s final decision to stop choosing the questions?",
@@ -99,7 +99,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-005",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "medium",
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nWhich title best captures the passage?",
@@ -123,7 +123,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-006",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "medium",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhat did the students do before organising the clean-up?",
@@ -147,7 +147,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-007",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "easy",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhat was the purpose of the screens placed over the drains?",
@@ -171,7 +171,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-008",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "hard",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhy is the final chart important in the passage?",
@@ -195,7 +195,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-009",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "medium",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhich statement is most accurate?",
@@ -219,7 +219,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-010",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Reading comprehension",
     "difficulty": "easy",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nIn the passage, “bare soil” is soil that is",
@@ -243,7 +243,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-011",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Grammar",
     "difficulty": "easy",
     "question": "Choose the sentence with correct subject–verb agreement.",
@@ -267,7 +267,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-012",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Grammar",
     "difficulty": "medium",
     "question": "Choose the best completion: “By the time the bus arrived, we ___ for twenty minutes.”",
@@ -291,7 +291,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-013",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Vocabulary",
     "difficulty": "easy",
     "question": "Which word is closest in meaning to “brief” in the sentence “She gave a brief explanation”?",
@@ -315,7 +315,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-014",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Vocabulary",
     "difficulty": "medium",
     "question": "Which word is the best antonym of “scarce”?",
@@ -339,7 +339,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-015",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Grammar",
     "difficulty": "easy",
     "question": "Choose the correctly punctuated sentence.",
@@ -363,7 +363,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-016",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Grammar",
     "difficulty": "medium",
     "question": "In “The children who finished early helped arrange the books,” the clause “who finished early” functions as",
@@ -387,7 +387,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-017",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Vocabulary in context",
     "difficulty": "medium",
     "question": "In the sentence “The teacher’s question prompted a lively discussion,” “prompted” most nearly means",
@@ -411,7 +411,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-018",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Grammar",
     "difficulty": "medium",
     "question": "Choose the sentence in which the pronoun reference is clearest.",
@@ -435,7 +435,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-019",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language pedagogy",
     "difficulty": "medium",
     "question": "A Class III learner says, “He go to school every day.” What is the most constructive teacher response?",
@@ -459,7 +459,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-020",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language pedagogy",
     "difficulty": "medium",
     "question": "Which activity best integrates listening and speaking?",
@@ -483,7 +483,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-021",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language pedagogy",
     "difficulty": "easy",
     "question": "Why should a primary language teacher use age-appropriate stories with predictable patterns?",
@@ -507,7 +507,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-022",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language pedagogy",
     "difficulty": "medium",
     "question": "A teacher asks pupils to infer the meaning of an unfamiliar word from the sentence and then confirm it in a dictionary. This develops",
@@ -531,7 +531,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-023",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language pedagogy",
     "difficulty": "hard",
     "question": "Which reading question demands the highest level of inference?",
@@ -555,7 +555,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-024",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Writing pedagogy",
     "difficulty": "medium",
     "question": "A teacher wants pupils to improve paragraph coherence. Which task is most directly aligned?",
@@ -579,7 +579,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-025",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language assessment",
     "difficulty": "medium",
     "question": "Which assessment gives the best evidence of a learner’s ability to participate in a conversation?",
@@ -603,7 +603,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-026",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Grammar",
     "difficulty": "easy",
     "question": "Choose the correct comparative form: “This path is ___ than the one near the river.”",
@@ -627,7 +627,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-027",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Grammar",
     "difficulty": "medium",
     "question": "Choose the sentence that uses the article correctly.",
@@ -651,7 +651,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-028",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Vocabulary",
     "difficulty": "medium",
     "question": "Which pair shows a word and its homophone?",
@@ -675,7 +675,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-029",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language pedagogy",
     "difficulty": "medium",
     "question": "A multilingual learner knows a concept in the home language but lacks the English term. Which teacher move is most supportive?",
@@ -699,7 +699,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
   },
   {
     "id": "ctet-sep-2026-p1-eng-030",
-    "section": "Language I — English",
+    "section": "Language I (English)",
     "topic": "Language pedagogy",
     "difficulty": "hard",
     "question": "During shared reading, a teacher pauses before a repeated phrase and invites children to complete it. The main purpose is to",

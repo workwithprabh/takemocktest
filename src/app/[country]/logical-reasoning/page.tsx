@@ -32,11 +32,11 @@ const FAQS = [
   },
   {
     q: 'Which exams do these questions come from?',
-    a: 'They are drawn from the reasoning sections of banking, SSC, railway, law, management and engineering-entrance mocks already on the site — from IBPS and SBI to AILET, CMAT, BITSAT and the RRB papers. Pure reasoning is exam-agnostic: a seating-arrangement puzzle does not become a different question because it appeared in a bank paper rather than a law paper.',
+    a: 'They are drawn from the reasoning sections of banking, SSC, railway, law, management and engineering-entrance mocks already on the site, from IBPS and SBI to AILET, CMAT, BITSAT and the RRB papers. Pure reasoning is exam-agnostic: a seating-arrangement puzzle does not become a different question because it appeared in a bank paper rather than a law paper.',
   },
   {
     q: 'Should I start with the difficulty ladder or the topic sets?',
-    a: 'Start with the ladder if you do not yet know where you stand — an Easy set will tell you quickly whether your basics are fast enough. Move to topic sets once you can name the two or three families that cost you time, since each topic set drills one family end to end at its own natural spread of difficulty.',
+    a: 'Start with the ladder if you do not yet know where you stand: an Easy set will tell you quickly whether your basics are fast enough. Move to topic sets once you can name the two or three families that cost you time, since each topic set drills one family end to end at its own natural spread of difficulty.',
   },
   {
     q: 'Do I need to sign up, and are my scores saved?',
@@ -181,7 +181,7 @@ export default async function LogicalReasoningHubPage({ params }: { params: Prom
           <h2 id="topics-xref" className="text-lg font-bold text-ink-900">Looking for one topic across every exam?</h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-ink-700">
             This section grades reasoning by difficulty. The topic-practice section cuts the whole question corpus the
-            other way &mdash; by topic &mdash; and covers quantitative and English families too, so you can drill
+            other way, by topic, and covers quantitative and English families too, so you can drill
             percentages or error spotting on their own.
           </p>
           <Link

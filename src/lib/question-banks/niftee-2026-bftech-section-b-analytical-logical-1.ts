@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   {
     "id": "niftee-2026-bft-bl-001",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Seating Arrangement",
     "difficulty": "hard",
     "question": "Five people A, B, C, D and E sit in a row facing north. C sits immediately right of A. B sits at an end. D is not adjacent to B. E sits immediately left of D. Which arrangement is possible?",
@@ -27,7 +27,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-002",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Scheduling",
     "difficulty": "hard",
     "question": "Four inspections P, Q, R and S occur on Monday through Thursday, one per day. P is before R. Q is immediately after P. S is not on Thursday. Which schedule is possible?",
@@ -51,7 +51,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-003",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Conditional Logic",
     "difficulty": "hard",
     "question": "Rules: If a shipment is urgent, it is inspected today. If it is inspected today, its documents are scanned. Shipment Z\u2019s documents were not scanned. What must be true if the rules have no exceptions?",
@@ -75,7 +75,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-004",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Matrix Reasoning",
     "difficulty": "medium",
     "question": "Three teams X, Y and Z each choose one material: cotton, wool or linen, with no repetition. X does not choose cotton. Y does not choose wool. Z chooses linen. What does X choose?",
@@ -99,7 +99,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-005",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Input-Output Logic",
     "difficulty": "medium",
     "question": "A machine transforms 4827 by moving the last digit to the front and then adding 3 to the new number. What is the output?",
@@ -123,7 +123,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-006",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Binary Conditions",
     "difficulty": "hard",
     "question": "A product is approved only if it passes both Test X and Test Y. Product M is approved. Which statement must be true?",
@@ -147,7 +147,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-007",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Syllogism",
     "difficulty": "hard",
     "question": "Statements: No recycled item is disposable. Some packaging is recycled. All disposable items are single-use. Which conclusion must follow?",
@@ -171,7 +171,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-008",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Ordering",
     "difficulty": "hard",
     "question": "Six boxes P, Q, R, S, T and U are stacked top to bottom. P is above Q. R is immediately below P. S is below Q. T is above P. U is at the bottom. Which box must be above R?",
@@ -195,7 +195,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-009",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Critical Reasoning",
     "difficulty": "hard",
     "question": "A store\u2019s weekend trial of a new layout raised average transaction value, but the store also ran a one-day festival discount during the same weekend. Which additional evidence would best isolate the layout\u2019s effect?",
@@ -219,7 +219,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-010",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Pattern Recognition",
     "difficulty": "medium",
     "question": "Find the next number in the series: 13, 17, 26, 32, 45, 53, ?",
@@ -243,7 +243,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-011",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Code Relationship",
     "difficulty": "medium",
     "question": "In a code, FABRIC is written as 6-1-2-18-9-3 using letter positions. What is DYE?",
@@ -267,7 +267,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-012",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Set Reasoning",
     "difficulty": "hard",
     "question": "Of 60 applicants, 34 know Excel, 29 know CAD, and 12 know neither. How many know both Excel and CAD?",
@@ -291,7 +291,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-013",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Direction Sense",
     "difficulty": "medium",
     "question": "Karan faces west. He turns 90\u00b0 clockwise, then 180\u00b0, then 90\u00b0 anticlockwise. Which direction is he facing?",
@@ -315,7 +315,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-014",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Data Sufficiency",
     "difficulty": "hard",
     "question": "Question: Is n even? I: n is divisible by 6. II: n is divisible by 3. Which is correct?",
@@ -339,7 +339,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bl-015",
-    "section": "Section B \u2014 Analytical & Logical Ability",
+    "section": "Section B (Analytical & Logical Ability)",
     "topic": "Logical Consistency",
     "difficulty": "hard",
     "question": "Exactly one of the following statements is true: (1) The red sample passed. (2) The blue sample passed. (3) Both samples passed. If the red sample passed, what follows?",

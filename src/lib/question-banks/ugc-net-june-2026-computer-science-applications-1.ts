@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   {
     "id": "ugc-net-june-2026-computer-science-applications-001",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "easy",
     "question": "For sets A and B, De Morgan’s law gives (A ∪ B)ᶜ =",
@@ -27,7 +27,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-002",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "medium",
     "question": "A relation is an equivalence relation exactly when it is:",
@@ -51,7 +51,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-003",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "easy",
     "question": "A tree with n vertices has how many edges?",
@@ -75,7 +75,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-004",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "medium",
     "question": "An undirected complete graph K_n has how many edges?",
@@ -99,7 +99,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-005",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "medium",
     "question": "In an unweighted graph, which traversal finds shortest-path distances in number of edges from a source?",
@@ -123,7 +123,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-006",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "medium",
     "question": "The implication p → q is logically equivalent to:",
@@ -147,7 +147,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-007",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "medium",
     "question": "By the pigeonhole principle, placing 13 objects into 12 boxes guarantees that:",
@@ -171,7 +171,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-008",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "hard",
     "question": "The recurrence T(n)=2T(n/2)+n has asymptotic order:",
@@ -195,7 +195,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-009",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "medium",
     "question": "In a linear-programming problem, a feasible solution is one that:",
@@ -219,7 +219,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-010",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Discrete Structures and Optimization",
     "difficulty": "hard",
     "question": "If f(n)=O(g(n)) and g(n)=O(h(n)), then:",
@@ -243,7 +243,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-011",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "easy",
     "question": "In an 8-bit two’s-complement representation, the signed integer range is:",
@@ -267,7 +267,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-012",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "medium",
     "question": "The main performance benefit of instruction pipelining is typically improved:",
@@ -291,7 +291,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-013",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "easy",
     "question": "Which CPU register normally holds the instruction currently being decoded or executed?",
@@ -315,7 +315,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-014",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "medium",
     "question": "Temporal locality means that a memory location accessed recently is:",
@@ -339,7 +339,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-015",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "medium",
     "question": "A direct-mapped cache allows a main-memory block to map to:",
@@ -363,7 +363,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-016",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "easy",
     "question": "In Flynn’s classification, SIMD stands for:",
@@ -387,7 +387,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-017",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "medium",
     "question": "RISC architectures are commonly associated with:",
@@ -411,7 +411,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-018",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "medium",
     "question": "Little-endian byte order stores the least significant byte of a multi-byte value at the:",
@@ -435,7 +435,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-019",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "hard",
     "question": "If a cache hit time is 2 ns, miss rate is 5%, and miss penalty is 40 ns beyond the hit lookup, the average memory access time is:",
@@ -459,7 +459,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-020",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Computer System Architecture",
     "difficulty": "medium",
     "question": "Which memory is normally fastest among the following?",
@@ -483,7 +483,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-021",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "medium",
     "question": "Under lexical (static) scoping, a variable reference is resolved primarily using:",
@@ -507,7 +507,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-022",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "easy",
     "question": "Recursive function calls normally require each active call to preserve its own:",
@@ -531,7 +531,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-023",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "medium",
     "question": "Encapsulation in object-oriented programming primarily combines data with:",
@@ -555,7 +555,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-024",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "easy",
     "question": "With pass-by-value, a called function receives:",
@@ -579,7 +579,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-025",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "medium",
     "question": "Which graphics algorithm is classically used for efficient rasterization of straight line segments using incremental integer decisions?",
@@ -603,7 +603,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-026",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "medium",
     "question": "Cohen–Sutherland is associated with:",
@@ -627,7 +627,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-027",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "easy",
     "question": "The RGB colour model is primarily:",
@@ -651,7 +651,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-028",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "medium",
     "question": "Homogeneous coordinates are useful in computer graphics because they allow translation to be represented using:",
@@ -675,7 +675,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-029",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "hard",
     "question": "In a statically typed language, type checking performed at compile time primarily aims to detect:",
@@ -699,7 +699,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-030",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Programming Languages and Computer Graphics",
     "difficulty": "medium",
     "question": "A pure function is conventionally characterised by producing the same result for the same inputs and:",
@@ -723,7 +723,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-031",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "easy",
     "question": "A primary key in a relational table must uniquely identify each row and must be:",
@@ -747,7 +747,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-032",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "medium",
     "question": "A foreign key is primarily used to enforce:",
@@ -771,7 +771,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-033",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "easy",
     "question": "In ACID properties, atomicity means a transaction is treated as:",
@@ -795,7 +795,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-034",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "medium",
     "question": "Conflict serializability of a schedule can be tested using whether its precedence graph is:",
@@ -819,7 +819,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-035",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "medium",
     "question": "Which SQL clause groups rows so aggregate functions can be computed per group?",
@@ -843,7 +843,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-036",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "easy",
     "question": "The relational algebra selection operator filters:",
@@ -867,7 +867,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-037",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "medium",
     "question": "B+ trees are widely used for database indexes because they support ordered search and:",
@@ -891,7 +891,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-038",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "hard",
     "question": "A decomposition of relation R into R1 and R2 is lossless if joining the decomposed relations always:",
@@ -915,7 +915,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-039",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "medium",
     "question": "Two-phase locking requires a transaction to have a growing phase for acquiring locks followed by:",
@@ -939,7 +939,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-040",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Database Management Systems",
     "difficulty": "hard",
     "question": "Third Normal Form permits a functional dependency X→A when X is a superkey or:",
@@ -963,7 +963,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-041",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "easy",
     "question": "A process differs from a thread in that separate processes normally have:",
@@ -987,7 +987,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-042",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "medium",
     "question": "Which is one of the Coffman necessary conditions for deadlock?",
@@ -1011,7 +1011,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-043",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "easy",
     "question": "Round-robin CPU scheduling is based on giving ready processes a fixed:",
@@ -1035,7 +1035,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-044",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "medium",
     "question": "A page fault occurs when a referenced virtual page is:",
@@ -1059,7 +1059,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-045",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "medium",
     "question": "A semaphore is used primarily for:",
@@ -1083,7 +1083,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-046",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "easy",
     "question": "A context switch involves saving and restoring:",
@@ -1107,7 +1107,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-047",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "easy",
     "question": "An assembler translates:",
@@ -1131,7 +1131,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-048",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "medium",
     "question": "A linker primarily combines object modules and resolves:",
@@ -1155,7 +1155,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-049",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "easy",
     "question": "A loader is responsible for placing an executable program into memory and preparing it for:",
@@ -1179,7 +1179,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-050",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "System Software and Operating System",
     "difficulty": "medium",
     "question": "Aging in CPU scheduling is a technique used to reduce:",
@@ -1203,7 +1203,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-051",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "easy",
     "question": "Functional requirements describe primarily:",
@@ -1227,7 +1227,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-052",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "medium",
     "question": "High cohesion within a module is generally desirable because its elements:",
@@ -1251,7 +1251,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-053",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "medium",
     "question": "Low coupling between modules is generally desirable because it:",
@@ -1275,7 +1275,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-054",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "easy",
     "question": "Unit testing primarily targets:",
@@ -1299,7 +1299,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-055",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "medium",
     "question": "Black-box testing designs tests mainly from:",
@@ -1323,7 +1323,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-056",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "easy",
     "question": "Regression testing checks whether:",
@@ -1347,7 +1347,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-057",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "medium",
     "question": "A use-case diagram in UML primarily represents:",
@@ -1371,7 +1371,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-058",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "medium",
     "question": "Iterative agile development typically delivers work in:",
@@ -1395,7 +1395,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-059",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "hard",
     "question": "For a single connected control-flow graph, cyclomatic complexity can be computed as E−N+2, where E and N are:",
@@ -1419,7 +1419,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-060",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Software Engineering",
     "difficulty": "medium",
     "question": "Version control is primarily used to:",
@@ -1443,7 +1443,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-061",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "easy",
     "question": "Binary search on a sorted array of n elements has worst-case time:",
@@ -1467,7 +1467,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-062",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "medium",
     "question": "Insertion into a binary heap of n elements takes worst-case time:",
@@ -1491,7 +1491,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-063",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "easy",
     "question": "Average-case lookup in a well-designed hash table with controlled load factor is typically:",
@@ -1515,7 +1515,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-064",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "medium",
     "question": "Depth-first search is naturally implemented using a:",
@@ -1539,7 +1539,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-065",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "easy",
     "question": "An inorder traversal of a binary search tree with distinct keys visits keys in:",
@@ -1563,7 +1563,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-066",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "medium",
     "question": "Which comparison sort is stable in its standard merge-based form and has O(n log n) worst-case time?",
@@ -1587,7 +1587,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-067",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "medium",
     "question": "The worst-case running time of standard quicksort with consistently poor pivots is:",
@@ -1611,7 +1611,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-068",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "medium",
     "question": "Dijkstra’s shortest-path algorithm assumes edge weights are:",
@@ -1635,7 +1635,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-069",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "hard",
     "question": "A disjoint-set union structure with path compression and union by rank supports a sequence of operations in nearly:",
@@ -1659,7 +1659,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-070",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Structures and Algorithms",
     "difficulty": "medium",
     "question": "In an AVL tree, the balance factor of every node must remain:",
@@ -1683,7 +1683,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-071",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "easy",
     "question": "Deterministic and nondeterministic finite automata recognize exactly the class of:",
@@ -1707,7 +1707,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-072",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "medium",
     "question": "Every regular language is also:",
@@ -1731,7 +1731,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-073",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "medium",
     "question": "The pumping lemma for regular languages is commonly used to:",
@@ -1755,7 +1755,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-074",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "hard",
     "question": "The halting problem for arbitrary programs/Turing machines is:",
@@ -1779,7 +1779,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-075",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "medium",
     "question": "An LL(1) parser constructs a leftmost derivation using:",
@@ -1803,7 +1803,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-076",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "medium",
     "question": "Immediate left recursion in a grammar is problematic for a straightforward:",
@@ -1827,7 +1827,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-077",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "easy",
     "question": "The lexical-analysis phase of a compiler groups input characters into:",
@@ -1851,7 +1851,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-078",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "medium",
     "question": "FIRST and FOLLOW sets are especially useful when constructing:",
@@ -1875,7 +1875,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-079",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "easy",
     "question": "A parse tree represents:",
@@ -1899,7 +1899,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-080",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Theory of Computation and Compilers",
     "difficulty": "medium",
     "question": "In the Chomsky hierarchy, type-3 grammars generate:",
@@ -1923,7 +1923,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-081",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "easy",
     "question": "IPv4 addresses contain how many bits?",
@@ -1947,7 +1947,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-082",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "easy",
     "question": "TCP provides a:",
@@ -1971,7 +1971,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-083",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "easy",
     "question": "UDP is primarily:",
@@ -1995,7 +1995,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-084",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "medium",
     "question": "DNS primarily maps human-readable domain names to:",
@@ -2019,7 +2019,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-085",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "medium",
     "question": "ARP on an IPv4 local network is used to discover a link-layer address corresponding to a:",
@@ -2043,7 +2043,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-086",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "easy",
     "question": "The default TCP port associated with HTTPS is:",
@@ -2067,7 +2067,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-087",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "medium",
     "question": "An IPv4 /24 network contains how many total addresses?",
@@ -2091,7 +2091,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-088",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "medium",
     "question": "Which OSI layer is primarily responsible for end-to-end transport services?",
@@ -2115,7 +2115,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-089",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "medium",
     "question": "A router primarily forwards packets between:",
@@ -2139,7 +2139,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-090",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Data Communication and Computer Networks",
     "difficulty": "hard",
     "question": "In stop-and-wait ARQ, the sender normally transmits a new frame only after:",
@@ -2163,7 +2163,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-091",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "easy",
     "question": "Breadth-first search is complete and optimal for path cost when all step costs are:",
@@ -2187,7 +2187,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-092",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "medium",
     "question": "An admissible A* heuristic never:",
@@ -2211,7 +2211,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-093",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "easy",
     "question": "Minimax is classically used for:",
@@ -2235,7 +2235,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-094",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "medium",
     "question": "Alpha-beta pruning, when applied correctly to minimax, changes:",
@@ -2259,7 +2259,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-095",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "easy",
     "question": "Supervised learning uses training examples with:",
@@ -2283,7 +2283,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-096",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "medium",
     "question": "Overfitting means a model:",
@@ -2307,7 +2307,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-097",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "medium",
     "question": "For binary classification, precision is:",
@@ -2331,7 +2331,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-098",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "medium",
     "question": "For binary classification, recall is:",
@@ -2355,7 +2355,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-099",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "medium",
     "question": "A Bayesian network represents conditional-dependence structure using a:",
@@ -2379,7 +2379,7 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
   },
   {
     "id": "ugc-net-june-2026-computer-science-applications-100",
-    "section": "Paper II — Computer Science and Applications",
+    "section": "Paper II (Computer Science and Applications)",
     "topic": "Artificial Intelligence",
     "difficulty": "hard",
     "question": "A single-layer perceptron can exactly represent which kind of decision boundary?",

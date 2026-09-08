@@ -245,35 +245,54 @@ page must be in `sitemap.xml` and no noindexed page may be. Drift alone would fi
 that ships indexable but unsubmitted as a harmless INFO. Today: 1,716 indexable pages, all
 submitted, with `/theme-1` the one documented exemption.
 
-### The no-dash rule is not being enforced anywhere
+### The no-dash rule, and what now enforces it
 
 `SEO_PLAYBOOK.md` section 4 makes it a hard rule, added 6 August 2026 after a full-site audit
 found roughly 250 of them: **no em dashes or en dashes in any prose surface, full stop.** It is
 not a style preference there; it is called out as one of the most reliable AI-writing tells,
 which is why real editors cut it.
 
-Nothing enforces it, and it has come back. A sweep of the rendered text in `out/` on 7
-September 2026 found **1,369 em or en dashes across 711 pages**. The blog's 22 (all in posts
-written after the rule was added) are fixed. The rest are not, and they are not evenly spread:
+Nothing enforced it, so it came back. By 8 September a sweep of rendered text found **1,644 em or
+en dashes across 707 pages**, up from 250. That is the second recurrence, so the fix this time is
+a gate rather than another cleanup.
 
-- Two strings in the exam test page template (`test/[testId]/page.tsx`) account for **352**:
-  the reasoning-hub offer block on 305 pages, and a per-question marking note on 47.
-- Two strings in `exam-pattern-content.ts` account for another **107**.
-- One string in the Logical Reasoning set page accounts for **30**.
-- The remainder is spread across exam-pattern notes, section names taken verbatim from official
-  patterns (`Paper I — Teaching & Research Aptitude`), and `public/llms.txt` (32 in the exam
-  entries alone).
+**`npm run qa:dashes`** (`scripts/audit-dashes.mjs`, part of `qa:site`) fails the build on a
+single em or en dash in authored prose. It audits **source, not the built export**, for two
+reasons: the rule is about what an author writes, and a source line is something an author can go
+and fix, where a rendered page only tells you a string is wrong somewhere. Comments are exempt;
+nobody reads them on the site. HTML entities are caught too (`&mdash;`, `&ndash;`, and the numeric
+forms), which matters because three of the worst offenders were written that way and survived the
+first sweep of this codebase entirely.
 
-That distribution is the good news: roughly 490 of the 1,369 come from five template strings,
-not from 1,369 separate editing decisions. Fixing those five clears more than a third in one
-pass, and the long tail is mostly single-page prose that can be worked through in batches.
+**Question banks are counted but not failed on.** `src/lib/question-banks/` is frozen,
+Hard-QA-approved content whose delivering pipeline forbids rewriting stems, options, explanations,
+sections, difficulty or source metadata. It is also the one place where a dash is usually correct
+rather than a tell: a C-N bond, a p-n junction, d-d transitions, the blood-brain barrier,
+Cohen-Sutherland, P-Q pairings, measurement ranges. Banning it there would demand hundreds of
+edits that make the content worse and breach the pipeline contract. The audit prints the running
+count each time so the number stays visible instead of being quietly forgotten.
 
-Worth doing properly rather than with a blind find-and-replace. The playbook prescribes the
-replacement per case (a colon when the second half explains the first, a comma or parentheses
-for a short aside, a period to start a new sentence), and section names copied from an official
-pattern are a genuine judgement call: changing them makes our page disagree with the source
-document it cites. Once the count is at zero, a `qa:*` check should keep it there, since this is
-now the second time it has crept back.
+What the cleanup actually touched, for the record:
+
+- **Four template strings written as `&mdash;`** accounted for roughly 380 rendered occurrences on
+  their own, the reasoning-hub offer block alone appearing on 305 exam test pages.
+- **Derived exam-pattern prose** in `exam-pattern-content.ts` accounted for another 180, since one
+  sentence there renders on every exam-pattern page that matches its condition.
+- **Section and paper names** (`Paper I — Teaching & Research Aptitude`, `Section A — Case Study`,
+  `Language I — English`) were renamed to **parentheses**: `Paper I (Teaching & Research Aptitude)`.
+  A colon was tried first and read badly, because the title template already appends one
+  ("... Sectional Test 1: Instructions") and two colons in a title is worse than the dash was.
+  These are shared keys, matched between the exam config, the layout table and each question's
+  `section` field, so all three had to move together. Test IDs were deliberately left alone,
+  because those are URLs and changing one is a redirect problem, not a typography one.
+- **`public/llms.txt`** had 51, mostly joining a bracketed spec to a following clause.
+
+What is left is **8 occurrences on 3 topic-practice pages**, down from 1,644 on 707. Every one sits
+inside a worked example's own question text ("Five files — J, K, L, M, N — are reviewed one after
+another"), where the dash is the puzzle's own punctuation and rewriting it would change the
+question. Frozen `topic` labels no longer reach a page at all: `displayLabel()` in `questions.ts`
+substitutes at render time, so the approved record is untouched and the page never prints the
+character.
 
 ### Run the installed SEO skills on generated sections
 

@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   {
     "id": "niftee-2026-bft-bq-001",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Percentage & Profit",
     "difficulty": "hard",
     "question": "A manufacturer\u2019s cost per garment is \u20b9720. After a process change, material cost falls by 8%, while all other costs (which were 25% of the original total cost) remain unchanged. What is the new total cost per garment?",
@@ -27,7 +27,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-002",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Weighted Average",
     "difficulty": "hard",
     "question": "A factory makes 240 units in the morning with a 3% defect rate and 360 units in the evening with a 5% defect rate. What is the overall defect rate for the day?",
@@ -51,7 +51,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-003",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Work & Task",
     "difficulty": "hard",
     "question": "Line A can finish an order in 10 hours and Line B in 15 hours. They work together for 3 hours, after which B stops. How long in total from the start will the order take?",
@@ -75,7 +75,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-004",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Ratio & Mixture",
     "difficulty": "medium",
     "question": "A dye bath contains red and blue dye in the ratio 3:2. After adding 4 litres of blue dye, the ratio becomes 3:4. How many litres of red dye were initially present?",
@@ -99,7 +99,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-005",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Compound Percentage",
     "difficulty": "medium",
     "question": "A fabric roll loses 12% of its length during washing. Finishing then stretches the remaining length by 5%. Compared with the original length, the final length is:",
@@ -123,7 +123,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-006",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Distance & Relative Speed",
     "difficulty": "hard",
     "question": "Two inspection teams start 150 km apart and travel toward each other at 40 km/h and 35 km/h. The faster team starts 30 minutes later. How long after the faster team starts do they meet?",
@@ -147,7 +147,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-007",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Algebra",
     "difficulty": "medium",
     "question": "If 3x+2y=26 and x\u2212y=2, what is x?",
@@ -171,7 +171,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-008",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Probability",
     "difficulty": "medium",
     "question": "A box has 4 white, 5 black and 3 green tags. Two tags are drawn without replacement. What is the probability both are black?",
@@ -195,7 +195,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-009",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Data Interpretation",
     "difficulty": "medium",
     "question": "A store sold 120, 150, 135 and 195 units in four consecutive weeks. By what percentage did sales increase from the first week to the fourth?",
@@ -219,7 +219,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-010",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Mensuration",
     "difficulty": "medium",
     "question": "A hollow cylindrical cardboard roll has outer radius 6 cm, inner radius 2 cm and length 28 cm. Using \u03c0=22/7, what volume of cardboard does the roll contain?",
@@ -243,7 +243,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-011",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Partnership",
     "difficulty": "hard",
     "question": "A invests \u20b936,000 in a venture for 12 months. B invests \u20b948,000 for the first 6 months and \u20b924,000 for the next 6 months. A total profit of \u20b925,200 is shared in proportion to capital\u00d7time. What is B\u2019s share?",
@@ -267,7 +267,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-012",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Rate of Interest",
     "difficulty": "hard",
     "question": "A sum earns \u20b92,730 as simple interest in 2.5 years at 7.8% per annum. What is the principal?",
@@ -291,7 +291,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-013",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Ratio & Production",
     "difficulty": "medium",
     "question": "A production plan allocates 45% of 800 units to Style A. Of the remaining units, 25% go to Style B. How many units are left for all other styles?",
@@ -315,7 +315,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-014",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Average Speed",
     "difficulty": "hard",
     "question": "A service vehicle travels 42 km at 28 km/h and then 72 km at 48 km/h. What is its average speed for the entire journey?",
@@ -339,7 +339,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bq-015",
-    "section": "Section B \u2014 Quantitative Ability",
+    "section": "Section B (Quantitative Ability)",
     "topic": "Fractions & Percentage",
     "difficulty": "medium",
     "question": "A batch is 5/8 complete. After 49 more units are finished, it is 80% complete. How many units are in the full batch?",

@@ -3047,7 +3047,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "86897d72c7d3",
+   "schemaHash": "f8cc87ff71f4",
    "ogHash": "93d3b94cf9da",
    "sitemap": true,
    "robots": "index, follow"
@@ -15120,7 +15120,7 @@
     "CTET Exam Pattern"
    ],
    "h2Count": 6,
-   "h2Hash": "d0788dc63f2c",
+   "h2Hash": "f3121eb2f28e",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -15268,7 +15268,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7d384d7a21aa",
+   "schemaHash": "34ac4242d887",
    "ogHash": "dd699a7dd1b6",
    "sitemap": true,
    "robots": "index, follow"
@@ -15302,14 +15302,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "bcd0a8ef79c3",
+   "schemaHash": "4c73bb34efc2",
    "ogHash": "eea6a1287347",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/ctet/test/language-i-english-sectional-1/attempt": {
-   "title": "CTET Language I — English Sectional Test 1 | TakeMockTest",
-   "description": "Attempt the CTET Language I — English Sectional Test 1 and review your result on this device.",
+   "title": "CTET Language I (English) Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the CTET Language I (English) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -15317,18 +15317,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "40a8b673570c",
+   "ogHash": "b9becae3d5e0",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/ctet/test/language-i-english-sectional-1": {
-   "title": "CTET Language I — English Sectional Test 1: Instructions",
-   "description": "Practice Language I — English for CTET with 30 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "CTET Language I (English) Sectional Test 1: Instructions",
+   "description": "Practice Language I (English) for CTET with 30 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "CTET Language I — English Sectional Test 1"
+    "CTET Language I (English) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "d99353d896e5",
+   "h2Hash": "5b7805a0832a",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -15336,14 +15336,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "70990965478d",
-   "ogHash": "1cdafbff42ed",
+   "schemaHash": "375373c402b8",
+   "ogHash": "a7c7547389ce",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/ctet/test/language-ii-hindi-sectional-1/attempt": {
-   "title": "CTET Language II — Hindi Sectional Test 1 | TakeMockTest",
-   "description": "Attempt the CTET Language II — Hindi Sectional Test 1 and review your result on this device.",
+   "title": "CTET Language II (Hindi) Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the CTET Language II (Hindi) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -15351,18 +15351,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "1f75f5c55728",
+   "ogHash": "f63d3d4f058a",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/ctet/test/language-ii-hindi-sectional-1": {
-   "title": "CTET Language II — Hindi Sectional Test 1: Instructions",
-   "description": "Practice Language II — Hindi for CTET with 30 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "CTET Language II (Hindi) Sectional Test 1: Instructions",
+   "description": "Practice Language II (Hindi) for CTET with 30 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "CTET Language II — Hindi Sectional Test 1"
+    "CTET Language II (Hindi) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "db4f96cb6ded",
+   "h2Hash": "9597308f3256",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -15370,8 +15370,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fc75479b61aa",
-   "ogHash": "4e5cc2098a7f",
+   "schemaHash": "543026774095",
+   "ogHash": "6081da1b2c91",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -15404,7 +15404,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "9a904395deaa",
+   "schemaHash": "e2e724ccb49a",
    "ogHash": "4501270cfe16",
    "sitemap": true,
    "robots": "index, follow"
@@ -15430,7 +15430,7 @@
     "CTET Paper I Primary Stage Full Mock Test 1 (English I + Hindi II)"
    ],
    "h2Count": 9,
-   "h2Hash": "5e8c1553baa1",
+   "h2Hash": "5a813521d0f6",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -15438,7 +15438,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "07bddd925a68",
+   "schemaHash": "f0906ec92f16",
    "ogHash": "5931590e40b0",
    "sitemap": true,
    "robots": "index, follow"
@@ -15458,7 +15458,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "dde432e408d8",
+   "schemaHash": "955ed2d932f3",
    "ogHash": "52aed85a8d32",
    "sitemap": true,
    "robots": "index, follow"
@@ -17349,7 +17349,7 @@
   },
   "/in/exam-updates/upsc-cse-main-examination-timetable-2026": {
    "title": "UPSC publishes Civil Services Main Exam 2026 timetable",
-   "description": "The Union Public Service Commission published the written Main Examination timetable, with papers scheduled for 21–23 and 29–30 August 2026.",
+   "description": "The Union Public Service Commission published the written Main Examination timetable, with papers scheduled for 21 to 23 and 29 to 30 August 2026.",
    "h1": [
     "UPSC publishes Civil Services Main Exam 2026 timetable"
    ],
@@ -17362,7 +17362,7 @@
     "Organization"
    ],
    "schemaHash": "781a06d713f9",
-   "ogHash": "47768f95bd16",
+   "ogHash": "89930b7562a3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -37720,7 +37720,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "d03c3f646e96",
+   "schemaHash": "30c3d4a10110",
    "ogHash": "38a1700c6086",
    "sitemap": true,
    "robots": "index, follow"
@@ -47285,8 +47285,8 @@
    "robots": "index, follow"
   },
   "/in/nift/test/section-a-analytical-and-logical-ability-sectional-1/attempt": {
-   "title": "NIFT Section A — Analytical &amp; Logical Ability Sectional Test 1",
-   "description": "Attempt the NIFT Section A — Analytical &amp; Logical Ability Sectional Test 1 and review your result on this device.",
+   "title": "NIFT Section A (Analytical &amp; Logical Ability) Sectional Test 1",
+   "description": "Attempt the NIFT Section A (Analytical &amp; Logical Ability) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47294,18 +47294,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "409969092a13",
+   "ogHash": "054dd518f0c2",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/nift/test/section-a-analytical-and-logical-ability-sectional-1": {
-   "title": "NIFT Section A — Analytical &amp; Logical Ability Sectional Test 1",
-   "description": "Practice Section A — Analytical &amp; Logical Ability for NIFT with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIFT Section A (Analytical &amp; Logical Ability) Sectional Test 1",
+   "description": "Practice Section A (Analytical &amp; Logical Ability) for NIFT with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIFT Section A — Analytical & Logical Ability Sectional Test 1"
+    "NIFT Section A (Analytical & Logical Ability) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "701bd5068750",
+   "h2Hash": "1f4390d8d6d7",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47313,14 +47313,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8b23c18140bb",
-   "ogHash": "a001647f5c5d",
+   "schemaHash": "f80433de1073",
+   "ogHash": "66c1a647157c",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/nift/test/section-a-communication-ability-and-english-comprehension-sectional-1/attempt": {
-   "title": "NIFT Section A — Communication Ability &amp; English Comprehension Sectional Test 1",
-   "description": "Attempt the NIFT Section A — Communication Ability &amp; English Comprehension Sectional Test 1 and review your result on this device.",
+   "title": "NIFT Section A (Communication Ability &amp; English Comprehension) Sectional Test 1",
+   "description": "Attempt the NIFT Section A (Communication Ability &amp; English Comprehension) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47328,18 +47328,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "ca4855f21f0d",
+   "ogHash": "9db1c0bf1173",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/nift/test/section-a-communication-ability-and-english-comprehension-sectional-1": {
-   "title": "NIFT Section A — Communication Ability &amp; English Comprehension Sectional Test 1",
-   "description": "Practice Section A — Communication Ability &amp; English Comprehension for NIFT with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIFT Section A (Communication Ability &amp; English Comprehension) Sectional Test 1",
+   "description": "Practice Section A (Communication Ability &amp; English Comprehension) for NIFT with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIFT Section A — Communication Ability & English Comprehension Sectional Test 1"
+    "NIFT Section A (Communication Ability & English Comprehension) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "6590820ad1c5",
+   "h2Hash": "d03950e30f60",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47347,14 +47347,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5120b547442e",
-   "ogHash": "30bbca62d6b5",
+   "schemaHash": "64a6a24de38a",
+   "ogHash": "fda14e0f92e9",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/nift/test/section-a-general-knowledge-and-current-affairs-sectional-1/attempt": {
-   "title": "NIFT Section A — General Knowledge &amp; Current Affairs Sectional Test 1",
-   "description": "Attempt the NIFT Section A — General Knowledge &amp; Current Affairs Sectional Test 1 and review your result on this device.",
+   "title": "NIFT Section A (General Knowledge &amp; Current Affairs) Sectional Test 1",
+   "description": "Attempt the NIFT Section A (General Knowledge &amp; Current Affairs) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47362,18 +47362,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "2c051bc01932",
+   "ogHash": "d019281df828",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/nift/test/section-a-general-knowledge-and-current-affairs-sectional-1": {
-   "title": "NIFT Section A — General Knowledge &amp; Current Affairs Sectional Test 1",
-   "description": "Practice Section A — General Knowledge &amp; Current Affairs for NIFT with 25 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIFT Section A (General Knowledge &amp; Current Affairs) Sectional Test 1",
+   "description": "Practice Section A (General Knowledge &amp; Current Affairs) for NIFT with 25 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIFT Section A — General Knowledge & Current Affairs Sectional Test 1"
+    "NIFT Section A (General Knowledge & Current Affairs) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "97941ea04d5e",
+   "h2Hash": "da2a4c8afe90",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47381,14 +47381,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "dc38c25529b1",
-   "ogHash": "0ac5a5d4b21e",
+   "schemaHash": "4563811d414f",
+   "ogHash": "c5128e45d1d4",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/nift/test/section-a-quantitative-ability-sectional-1/attempt": {
-   "title": "NIFT Section A — Quantitative Ability Sectional Test 1",
-   "description": "Attempt the NIFT Section A — Quantitative Ability Sectional Test 1 and review your result on this device.",
+   "title": "NIFT Section A (Quantitative Ability) Sectional Test 1",
+   "description": "Attempt the NIFT Section A (Quantitative Ability) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47396,18 +47396,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "12b8bcbb7580",
+   "ogHash": "b947cc684601",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/nift/test/section-a-quantitative-ability-sectional-1": {
-   "title": "NIFT Section A — Quantitative Ability Sectional Test 1",
-   "description": "Practice Section A — Quantitative Ability for NIFT with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIFT Section A (Quantitative Ability) Sectional Test 1",
+   "description": "Practice Section A (Quantitative Ability) for NIFT with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIFT Section A — Quantitative Ability Sectional Test 1"
+    "NIFT Section A (Quantitative Ability) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "126971f81942",
+   "h2Hash": "7f88dc4d351d",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47415,14 +47415,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "82963eb38b08",
-   "ogHash": "62938800a1ab",
+   "schemaHash": "80719bfb307b",
+   "ogHash": "07870e2fa8b2",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/nift/test/section-b-analytical-and-logical-ability-sectional-1/attempt": {
-   "title": "NIFT Section B — Analytical &amp; Logical Ability Sectional Test 1",
-   "description": "Attempt the NIFT Section B — Analytical &amp; Logical Ability Sectional Test 1 and review your result on this device.",
+   "title": "NIFT Section B (Analytical &amp; Logical Ability) Sectional Test 1",
+   "description": "Attempt the NIFT Section B (Analytical &amp; Logical Ability) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47430,18 +47430,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "ac1e7f595bc9",
+   "ogHash": "596c736fdf14",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/nift/test/section-b-analytical-and-logical-ability-sectional-1": {
-   "title": "NIFT Section B — Analytical &amp; Logical Ability Sectional Test 1",
-   "description": "Practice Section B — Analytical &amp; Logical Ability for NIFT with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIFT Section B (Analytical &amp; Logical Ability) Sectional Test 1",
+   "description": "Practice Section B (Analytical &amp; Logical Ability) for NIFT with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIFT Section B — Analytical & Logical Ability Sectional Test 1"
+    "NIFT Section B (Analytical & Logical Ability) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "d6470145b582",
+   "h2Hash": "07893ade13fe",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47449,14 +47449,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f736ecc125e5",
-   "ogHash": "09e66585e99b",
+   "schemaHash": "3fee46139633",
+   "ogHash": "314901253363",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/nift/test/section-b-case-study-sectional-1/attempt": {
-   "title": "NIFT Section B — Case Study Sectional Test 1 | TakeMockTest",
-   "description": "Attempt the NIFT Section B — Case Study Sectional Test 1 and review your result on this device.",
+   "title": "NIFT Section B (Case Study) Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the NIFT Section B (Case Study) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47464,18 +47464,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "2813ffc45edf",
+   "ogHash": "1603c9c80587",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/nift/test/section-b-case-study-sectional-1": {
-   "title": "NIFT Section B — Case Study Sectional Test 1: Instructions",
-   "description": "Practice Section B — Case Study for NIFT with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIFT Section B (Case Study) Sectional Test 1: Instructions",
+   "description": "Practice Section B (Case Study) for NIFT with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIFT Section B — Case Study Sectional Test 1"
+    "NIFT Section B (Case Study) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "1649a9de6eae",
+   "h2Hash": "da5cd46e8146",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47483,14 +47483,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "40e42e163876",
-   "ogHash": "30979370fbc0",
+   "schemaHash": "baa722bf5ce4",
+   "ogHash": "22f6e9316dc4",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/nift/test/section-b-quantitative-ability-sectional-1/attempt": {
-   "title": "NIFT Section B — Quantitative Ability Sectional Test 1",
-   "description": "Attempt the NIFT Section B — Quantitative Ability Sectional Test 1 and review your result on this device.",
+   "title": "NIFT Section B (Quantitative Ability) Sectional Test 1",
+   "description": "Attempt the NIFT Section B (Quantitative Ability) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47498,18 +47498,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "a392470946e3",
+   "ogHash": "1c7b0b0e8c3b",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/nift/test/section-b-quantitative-ability-sectional-1": {
-   "title": "NIFT Section B — Quantitative Ability Sectional Test 1",
-   "description": "Practice Section B — Quantitative Ability for NIFT with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIFT Section B (Quantitative Ability) Sectional Test 1",
+   "description": "Practice Section B (Quantitative Ability) for NIFT with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIFT Section B — Quantitative Ability Sectional Test 1"
+    "NIFT Section B (Quantitative Ability) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "4f8a82108a7a",
+   "h2Hash": "dbab1462a1b7",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47517,8 +47517,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "58bd70c46f90",
-   "ogHash": "bd38d3e14dfa",
+   "schemaHash": "999b1e32ee24",
+   "ogHash": "bb7771062f26",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -47537,7 +47537,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "f7933875c139",
+   "schemaHash": "d51b85a64d0c",
    "ogHash": "8d8875015e33",
    "sitemap": true,
    "robots": "index, follow"
@@ -47771,8 +47771,8 @@
    "robots": "index, follow"
   },
   "/in/niper-jee/test/section-a-general-english-aptitude-reasoning-general-knowledge-etc-sectional-1/attempt": {
-   "title": "NIPER JEE Section A — General English, Aptitude, Reasoning, General Knowledge, etc. Sectional Test 1",
-   "description": "Attempt the NIPER JEE Section A — General English, Aptitude, Reasoning, General Knowledge, etc. Sectional Test 1 and review your result on this device.",
+   "title": "NIPER JEE Section A (General English, Aptitude, Reasoning, General Knowledge, etc.) Sectional Test 1",
+   "description": "Attempt the NIPER JEE Section A (General English, Aptitude, Reasoning, General Knowledge, etc.) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47780,18 +47780,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "c64e0556078b",
+   "ogHash": "e0b15b3a1ea7",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/niper-jee/test/section-a-general-english-aptitude-reasoning-general-knowledge-etc-sectional-1": {
-   "title": "NIPER JEE Section A — General English, Aptitude, Reasoning, General Knowledge, etc. Sectional Test 1",
-   "description": "Practice Section A — General English, Aptitude, Reasoning, General Knowledge, etc. for NIPER JEE with 80 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIPER JEE Section A (General English, Aptitude, Reasoning, General Knowledge, etc.) Sectional Test 1",
+   "description": "Practice Section A (General English, Aptitude, Reasoning, General Knowledge, etc.) for NIPER JEE with 80 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIPER JEE Section A — General English, Aptitude, Reasoning, General Knowledge, etc. Sectional Test 1"
+    "NIPER JEE Section A (General English, Aptitude, Reasoning, General Knowledge, etc.) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "bbf0dd9e0ff7",
+   "h2Hash": "8d8898d63aff",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47799,14 +47799,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "30107e419e73",
-   "ogHash": "8c57e0bf8aea",
+   "schemaHash": "48cd9d189bf3",
+   "ogHash": "4c74f2f319c8",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/niper-jee/test/section-b-mainly-b-pharm-syllabus-sectional-1/attempt": {
-   "title": "NIPER JEE Section B — mainly B.Pharm. syllabus Sectional Test 1",
-   "description": "Attempt the NIPER JEE Section B — mainly B.Pharm. syllabus Sectional Test 1 and review your result on this device.",
+   "title": "NIPER JEE Section B (mainly B.Pharm. syllabus) Sectional Test 1",
+   "description": "Attempt the NIPER JEE Section B (mainly B.Pharm. syllabus) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -47814,18 +47814,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "a3be4719ccaa",
+   "ogHash": "1dd9b01abaa9",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/niper-jee/test/section-b-mainly-b-pharm-syllabus-sectional-1": {
-   "title": "NIPER JEE Section B — mainly B.Pharm. syllabus Sectional Test 1",
-   "description": "Practice Section B — mainly B.Pharm. syllabus for NIPER JEE with 120 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "NIPER JEE Section B (mainly B.Pharm. syllabus) Sectional Test 1",
+   "description": "Practice Section B (mainly B.Pharm. syllabus) for NIPER JEE with 120 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "NIPER JEE Section B — mainly B.Pharm. syllabus Sectional Test 1"
+    "NIPER JEE Section B (mainly B.Pharm. syllabus) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "256454de79b7",
+   "h2Hash": "db84fe55cfa6",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -47833,8 +47833,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c88eb112b5bb",
-   "ogHash": "24a8ab6c6625",
+   "schemaHash": "13743fcdd1aa",
+   "ogHash": "30a66d1174f2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -47853,7 +47853,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "6809458d7c80",
+   "schemaHash": "b31ba9d2af08",
    "ogHash": "68f2f7facba6",
    "sitemap": true,
    "robots": "index, follow"
@@ -49683,7 +49683,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "519060c35f60",
+   "schemaHash": "6bae225952ba",
    "ogHash": "e52965adc6a2",
    "sitemap": true,
    "robots": "index, follow"
@@ -49720,7 +49720,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "60e17183d729",
+   "schemaHash": "3bff0a50c825",
    "ogHash": "a2b44e1bf290",
    "sitemap": true,
    "robots": "index, follow"
@@ -49757,7 +49757,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "eb747c3c592b",
+   "schemaHash": "857bac3c7121",
    "ogHash": "d6c4ac59bf76",
    "sitemap": true,
    "robots": "index, follow"
@@ -49794,7 +49794,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6855a33e3a80",
+   "schemaHash": "ac6d205fb2fa",
    "ogHash": "20fa3763cd74",
    "sitemap": true,
    "robots": "index, follow"
@@ -49831,7 +49831,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b0c0e988b35b",
+   "schemaHash": "10e243e78484",
    "ogHash": "2f733f64fb85",
    "sitemap": true,
    "robots": "index, follow"
@@ -49868,7 +49868,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7ae29ed2f12b",
+   "schemaHash": "48ab67735229",
    "ogHash": "3865e27229ff",
    "sitemap": true,
    "robots": "index, follow"
@@ -49905,7 +49905,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fa2b2ceb0253",
+   "schemaHash": "be8e0fbd6473",
    "ogHash": "59ec40fecd8d",
    "sitemap": true,
    "robots": "index, follow"
@@ -49942,7 +49942,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0d68e0800af9",
+   "schemaHash": "e1dd3234940a",
    "ogHash": "d63fdc83b473",
    "sitemap": true,
    "robots": "index, follow"
@@ -49979,7 +49979,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "9f2410bb11d1",
+   "schemaHash": "b8af6b4128ba",
    "ogHash": "3b48fed371d7",
    "sitemap": true,
    "robots": "index, follow"
@@ -50016,7 +50016,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a9b6287641c1",
+   "schemaHash": "df64964f95c2",
    "ogHash": "dccdd851f840",
    "sitemap": true,
    "robots": "index, follow"
@@ -50053,7 +50053,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "4b11f016caac",
+   "schemaHash": "1195b3d83061",
    "ogHash": "d456a8afcb83",
    "sitemap": true,
    "robots": "index, follow"
@@ -50090,7 +50090,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d9505588e290",
+   "schemaHash": "bd2fa1a2b29e",
    "ogHash": "f10e2fade7ed",
    "sitemap": true,
    "robots": "index, follow"
@@ -50127,7 +50127,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a252b6756864",
+   "schemaHash": "f8e1bdbd84d2",
    "ogHash": "b8cd0102b6f7",
    "sitemap": true,
    "robots": "index, follow"
@@ -50164,7 +50164,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "954ca01ba7ae",
+   "schemaHash": "22e7fa0aca52",
    "ogHash": "c0492fd1bff1",
    "sitemap": true,
    "robots": "index, follow"
@@ -50201,7 +50201,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e0927be136cc",
+   "schemaHash": "e95aaed240f8",
    "ogHash": "770a79bd206a",
    "sitemap": true,
    "robots": "index, follow"
@@ -50238,7 +50238,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "011408b538a7",
+   "schemaHash": "aaeb8730a365",
    "ogHash": "eb7774eb162e",
    "sitemap": true,
    "robots": "index, follow"
@@ -50275,7 +50275,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6325910aebd0",
+   "schemaHash": "0ee47bb96720",
    "ogHash": "ba67edd01cea",
    "sitemap": true,
    "robots": "index, follow"
@@ -50312,7 +50312,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2fe9c692b934",
+   "schemaHash": "9ba75b56e155",
    "ogHash": "494d667a8fdc",
    "sitemap": true,
    "robots": "index, follow"
@@ -50349,7 +50349,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "76a7684bf83a",
+   "schemaHash": "e48b63bcf06c",
    "ogHash": "64508c37fb65",
    "sitemap": true,
    "robots": "index, follow"
@@ -50386,7 +50386,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "428a46d7ec55",
+   "schemaHash": "27cf125c52cc",
    "ogHash": "a599af62633a",
    "sitemap": true,
    "robots": "index, follow"
@@ -50423,7 +50423,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2c993578ddf6",
+   "schemaHash": "881524391132",
    "ogHash": "8ad968532ab5",
    "sitemap": true,
    "robots": "index, follow"
@@ -50460,7 +50460,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "af9686f2421f",
+   "schemaHash": "89f6e7fe549e",
    "ogHash": "3afd99eec314",
    "sitemap": true,
    "robots": "index, follow"
@@ -50497,7 +50497,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8d2c162d569f",
+   "schemaHash": "630521963686",
    "ogHash": "6730f45edce2",
    "sitemap": true,
    "robots": "index, follow"
@@ -50534,7 +50534,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "76332c944bef",
+   "schemaHash": "50c0f3f7ae3c",
    "ogHash": "8849cce6e063",
    "sitemap": true,
    "robots": "index, follow"
@@ -50571,7 +50571,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "41a1fe458495",
+   "schemaHash": "8f2631ab64b9",
    "ogHash": "006d65ad4bce",
    "sitemap": true,
    "robots": "index, follow"
@@ -50608,7 +50608,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8085bc345653",
+   "schemaHash": "85d3c1c4e001",
    "ogHash": "eceac20d2bbf",
    "sitemap": true,
    "robots": "index, follow"
@@ -50645,7 +50645,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "89f353824f59",
+   "schemaHash": "c05a33a8deea",
    "ogHash": "f6eeb1511c5b",
    "sitemap": true,
    "robots": "index, follow"
@@ -50682,7 +50682,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8e10513d24c1",
+   "schemaHash": "7b6941727080",
    "ogHash": "5f12061ee4eb",
    "sitemap": true,
    "robots": "index, follow"
@@ -50719,7 +50719,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "931441db69db",
+   "schemaHash": "4ae077a5decf",
    "ogHash": "76e84e499b8f",
    "sitemap": true,
    "robots": "index, follow"
@@ -50756,7 +50756,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "257825dfa444",
+   "schemaHash": "af4d3107c4b1",
    "ogHash": "273e265f0521",
    "sitemap": true,
    "robots": "index, follow"
@@ -50793,7 +50793,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "885d3828b93b",
+   "schemaHash": "4d160b94d49f",
    "ogHash": "0432034029c9",
    "sitemap": true,
    "robots": "index, follow"
@@ -50830,7 +50830,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "04400f88ec9f",
+   "schemaHash": "de15e2b1990a",
    "ogHash": "6c26eba637cd",
    "sitemap": true,
    "robots": "index, follow"
@@ -50867,7 +50867,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "9fb8e19b6aa1",
+   "schemaHash": "0909ee0a6f49",
    "ogHash": "d6fef4b60f4a",
    "sitemap": true,
    "robots": "index, follow"
@@ -50904,7 +50904,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c74dd09c7958",
+   "schemaHash": "b5220d86a4a3",
    "ogHash": "0717ea5f462d",
    "sitemap": true,
    "robots": "index, follow"
@@ -50941,7 +50941,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "230b277554b5",
+   "schemaHash": "ea03ef53bfe9",
    "ogHash": "011f11140656",
    "sitemap": true,
    "robots": "index, follow"
@@ -50978,7 +50978,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "55ed4da0dfad",
+   "schemaHash": "aa5ad431a1b7",
    "ogHash": "8fe3e82adc13",
    "sitemap": true,
    "robots": "index, follow"
@@ -51015,7 +51015,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "3169e46e4bb2",
+   "schemaHash": "052b12f34c6c",
    "ogHash": "d1965a4f722e",
    "sitemap": true,
    "robots": "index, follow"
@@ -51052,7 +51052,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "3bc50d5b0d2a",
+   "schemaHash": "34a56bff1e8f",
    "ogHash": "3174c69a342a",
    "sitemap": true,
    "robots": "index, follow"
@@ -51089,7 +51089,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "645edc19a803",
+   "schemaHash": "140cb832012b",
    "ogHash": "eb5070a57f0d",
    "sitemap": true,
    "robots": "index, follow"
@@ -51126,14 +51126,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d8a9aa22a5a5",
+   "schemaHash": "4f056b06c4ce",
    "ogHash": "89bfbfb024b9",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics — 8,056 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,056 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -51148,8 +51148,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "908c23ad3529",
-   "ogHash": "9e77a80cc3be",
+   "schemaHash": "a01bd7017a64",
+   "ogHash": "123d9d3cb11e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -75390,8 +75390,8 @@
    "robots": "index, follow"
   },
   "/in/state-set/test/paper-i---teaching-and-research-aptitude-sectional-1/attempt": {
-   "title": "State Eligibility Test Paper I — Teaching &amp; Research Aptitude Sectional Test 1",
-   "description": "Attempt the State Eligibility Test Paper I — Teaching &amp; Research Aptitude Sectional Test 1 and review your result on this device.",
+   "title": "State Eligibility Test Paper I (Teaching &amp; Research Aptitude) Sectional Test 1",
+   "description": "Attempt the State Eligibility Test Paper I (Teaching &amp; Research Aptitude) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -75399,18 +75399,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "454635f1ed8a",
+   "ogHash": "d39585132168",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/state-set/test/paper-i---teaching-and-research-aptitude-sectional-1": {
-   "title": "State Eligibility Test Paper I — Teaching &amp; Research Aptitude Sectional Test 1",
-   "description": "Practice Paper I — Teaching &amp; Research Aptitude for State Eligibility Test with 50 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "State Eligibility Test Paper I (Teaching &amp; Research Aptitude) Sectional Test 1",
+   "description": "Practice Paper I (Teaching &amp; Research Aptitude) for State Eligibility Test with 50 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "State Eligibility Test Paper I — Teaching & Research Aptitude Sectional Test 1"
+    "State Eligibility Test Paper I (Teaching & Research Aptitude) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "c6cbd90a6fc7",
+   "h2Hash": "0c8a092d05a1",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -75418,14 +75418,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "90a0f25ecb53",
-   "ogHash": "ab44bd7adc67",
+   "schemaHash": "adb4ab27e47b",
+   "ogHash": "3917d41e3a6d",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/state-set/test/paper-ii---commerce-sectional-1/attempt": {
-   "title": "State Eligibility Test Paper II — Commerce Sectional Test 1",
-   "description": "Attempt the State Eligibility Test Paper II — Commerce Sectional Test 1 and review your result on this device.",
+   "title": "State Eligibility Test Paper II (Commerce) Sectional Test 1",
+   "description": "Attempt the State Eligibility Test Paper II (Commerce) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -75433,18 +75433,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "597fa7164f57",
+   "ogHash": "947f262f9774",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/state-set/test/paper-ii---commerce-sectional-1": {
-   "title": "State Eligibility Test Paper II — Commerce Sectional Test 1",
-   "description": "Practice Paper II — Commerce for State Eligibility Test with 100 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "State Eligibility Test Paper II (Commerce) Sectional Test 1",
+   "description": "Practice Paper II (Commerce) for State Eligibility Test with 100 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "State Eligibility Test Paper II — Commerce Sectional Test 1"
+    "State Eligibility Test Paper II (Commerce) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "0da9a0b1c3bc",
+   "h2Hash": "682526a133ba",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -75452,8 +75452,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f835d07fb6ca",
-   "ogHash": "c1dfda773676",
+   "schemaHash": "5d7882ad400b",
+   "ogHash": "15318c5077ba",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -75472,7 +75472,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "37bc032290fa",
+   "schemaHash": "455859a7492a",
    "ogHash": "6d625c89ca8b",
    "sitemap": true,
    "robots": "index, follow"
@@ -79239,8 +79239,8 @@
    "robots": "index, follow"
   },
   "/in/ugc-net/test/paper-i-teaching-and-research-aptitude-sectional-1/attempt": {
-   "title": "UGC NET Paper I — Teaching &amp; Research Aptitude Sectional Test 1",
-   "description": "Attempt the UGC NET Paper I — Teaching &amp; Research Aptitude Sectional Test 1 and review your result on this device.",
+   "title": "UGC NET Paper I (Teaching &amp; Research Aptitude) Sectional Test 1",
+   "description": "Attempt the UGC NET Paper I (Teaching &amp; Research Aptitude) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -79248,18 +79248,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "12715b6890e1",
+   "ogHash": "b59e9cf5d5fd",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/ugc-net/test/paper-i-teaching-and-research-aptitude-sectional-1": {
-   "title": "UGC NET Paper I — Teaching &amp; Research Aptitude Sectional Test 1",
-   "description": "Practice Paper I — Teaching &amp; Research Aptitude for UGC NET with 50 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "UGC NET Paper I (Teaching &amp; Research Aptitude) Sectional Test 1",
+   "description": "Practice Paper I (Teaching &amp; Research Aptitude) for UGC NET with 50 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "UGC NET Paper I — Teaching & Research Aptitude Sectional Test 1"
+    "UGC NET Paper I (Teaching & Research Aptitude) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "0fe6c85f1365",
+   "h2Hash": "3171b7b8f972",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -79267,14 +79267,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "bc070e8abbaa",
-   "ogHash": "f35f22a0c958",
+   "schemaHash": "58b0a22ac0e4",
+   "ogHash": "6812b56626db",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/ugc-net/test/paper-ii-computer-science-and-applications-sectional-1/attempt": {
-   "title": "UGC NET Paper II — Computer Science and Applications Sectional Test 1",
-   "description": "Attempt the UGC NET Paper II — Computer Science and Applications Sectional Test 1 and review your result on this device.",
+   "title": "UGC NET Paper II (Computer Science and Applications) Sectional Test 1",
+   "description": "Attempt the UGC NET Paper II (Computer Science and Applications) Sectional Test 1 and review your result on this device.",
    "h1": [
     "Preparing your test…"
    ],
@@ -79282,18 +79282,18 @@
    "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "221bf3527b11",
+   "ogHash": "2dd25e40cf38",
    "sitemap": false,
    "robots": "noindex, follow"
   },
   "/in/ugc-net/test/paper-ii-computer-science-and-applications-sectional-1": {
-   "title": "UGC NET Paper II — Computer Science and Applications Sectional Test 1",
-   "description": "Practice Paper II — Computer Science and Applications for UGC NET with 100 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "title": "UGC NET Paper II (Computer Science and Applications) Sectional Test 1",
+   "description": "Practice Paper II (Computer Science and Applications) for UGC NET with 100 original, topic-tagged questions, instant scoring, and answer explanations.",
    "h1": [
-    "UGC NET Paper II — Computer Science and Applications Sectional Test 1"
+    "UGC NET Paper II (Computer Science and Applications) Sectional Test 1"
    ],
    "h2Count": 10,
-   "h2Hash": "b24abe27374f",
+   "h2Hash": "7c1abf7817a7",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -79301,8 +79301,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "3eb7580daec1",
-   "ogHash": "ccd213d6c805",
+   "schemaHash": "1889c5cb0c2e",
+   "ogHash": "9328f7cb5db7",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -79321,7 +79321,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "fa1e05b60479",
+   "schemaHash": "4d191c05f113",
    "ogHash": "aad72414823e",
    "sitemap": true,
    "robots": "index, follow"
