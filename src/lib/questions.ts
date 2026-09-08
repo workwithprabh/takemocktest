@@ -478,6 +478,7 @@ import { MET_2026_BTECH_ENGLISH_SECTIONAL_1 } from './question-banks/met-2026-bt
 import { MET_2026_BTECH_MIXED_QUICK_PRACTICE_30M_1 } from './question-banks/met-2026-btech-mixed-quick-practice-30m-1';
 import { MET_2026_BTECH_MIXED_QUICK_PRACTICE_60M_1 } from './question-banks/met-2026-btech-mixed-quick-practice-60m-1';
 import { VITEEE_2026_MPCEA_FULL_MOCK_2 } from './question-banks/viteee-2026-mpcea-full-mock-2';
+import { VITEEE_2026_MPCEA_FULL_MOCK_3 } from './question-banks/viteee-2026-mpcea-full-mock-3';
 import { VITEEE_2026_MPCEA_MATHEMATICS_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-mathematics-sectional-2';
 import { VITEEE_2026_MPCEA_PHYSICS_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-physics-sectional-2';
 import { VITEEE_2026_MPCEA_CHEMISTRY_SECTIONAL_2 } from './question-banks/viteee-2026-mpcea-chemistry-sectional-2';
@@ -488,6 +489,7 @@ import { COMEDK_UGET_2026_BTECH_PHYSICS_SECTIONAL_2 } from './question-banks/com
 import { COMEDK_UGET_2026_BTECH_CHEMISTRY_SECTIONAL_2 } from './question-banks/comedk-uget-2026-btech-chemistry-sectional-2';
 import { COMEDK_UGET_2026_BTECH_MATHEMATICS_SECTIONAL_2 } from './question-banks/comedk-uget-2026-btech-mathematics-sectional-2';
 import { SRMJEEE_2026_PCM_FULL_MOCK_2 } from './question-banks/srmjeee-2026-pcm-full-mock-2';
+import { SRMJEEE_2026_PCM_FULL_MOCK_3 } from './question-banks/srmjeee-2026-pcm-full-mock-3';
 import { SRMJEEE_2026_PCM_PHYSICS_SECTIONAL_2 } from './question-banks/srmjeee-2026-pcm-physics-sectional-2';
 import { SRMJEEE_2026_PCM_CHEMISTRY_SECTIONAL_2 } from './question-banks/srmjeee-2026-pcm-chemistry-sectional-2';
 import { SRMJEEE_2026_PCM_MATHEMATICS_SECTIONAL_2 } from './question-banks/srmjeee-2026-pcm-mathematics-sectional-2';
@@ -662,6 +664,14 @@ import { CG_PET_2026_CHEMISTRY_1 } from './question-banks/cg-pet-2026-chemistry-
 import { CG_PET_2026_MATHEMATICS_1 } from './question-banks/cg-pet-2026-mathematics-1';
 import { BCECE_2026_PCM_ENGINEERING_FULL_MOCK_1 } from './question-banks/bcece-2026-pcm-engineering-full-mock-1';
 import { CUSAT_CAT_2026_BTECH_FULL_MOCK_1 } from './question-banks/cusat-cat-2026-btech-full-mock-1';
+import { CUSAT_CAT_2026_BTECH_FULL_MOCK_2 } from './question-banks/cusat-cat-2026-btech-full-mock-2';
+import { AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1 } from './question-banks/aiims-bsc-nursing-2026-hons-entrance-full-mock-1';
+import { AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1 } from './question-banks/aiims-norcet-10-stage-1-full-mock-1';
+import { CEED_2026_PART_A_FULL_MOCK_1 } from './question-banks/ceed-2026-part-a-full-mock-1';
+import { UCEED_2026_PART_A_FULL_MOCK_1 } from './question-banks/uceed-2026-part-a-full-mock-1';
+import { DBT_BET_2026_SECTION_A_FULL_MOCK_1 } from './question-banks/dbt-bet-2026-section-a-full-mock-1';
+import { DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1 } from './question-banks/dnb-pdcet-2026-anaesthesiology-full-mock-1';
+import { TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1 } from './question-banks/tifr-gs-2026-computer-science-full-mock-1';
 import { XAT_2026_PART_1_FULL_MOCK_1 } from './question-banks/xat-2026-part-1-full-mock-1';
 import { IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1 } from './question-banks/ipmat-indore-2026-ipm-aptitude-test-full-mock-1';
 import { INI_CET_2026_MEDICAL_FULL_MOCK_1 } from './question-banks/ini-cet-2026-medical-full-mock-1';
@@ -2528,6 +2538,12 @@ const VITEEE_TESTS: Record<string, Question[]> = {
   'viteee/chemistry-sectional-2': VITEEE_2026_MPCEA_CHEMISTRY_SECTIONAL_2,
   'viteee/aptitude-sectional-2': VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_2,
   'viteee/english-sectional-2': VITEEE_2026_MPCEA_ENGLISH_SECTIONAL_2,
+  'viteee/full-mock-3': VITEEE_2026_MPCEA_FULL_MOCK_3,
+  'viteee/mathematics-sectional-3': VITEEE_2026_MPCEA_FULL_MOCK_3.filter((question) => question.section === 'Mathematics'),
+  'viteee/physics-sectional-3': VITEEE_2026_MPCEA_FULL_MOCK_3.filter((question) => question.section === 'Physics'),
+  'viteee/chemistry-sectional-3': VITEEE_2026_MPCEA_FULL_MOCK_3.filter((question) => question.section === 'Chemistry'),
+  'viteee/aptitude-sectional-3': VITEEE_2026_MPCEA_FULL_MOCK_3.filter((question) => question.section === 'Aptitude'),
+  'viteee/english-sectional-3': VITEEE_2026_MPCEA_FULL_MOCK_3.filter((question) => question.section === 'English'),
 };
 
 const COMEDK_UGET_TESTS: Record<string, Question[]> = {
@@ -3098,6 +3114,10 @@ const CUSAT_CAT_TESTS: Record<string, Question[]> = {
   'cusat-cat/mathematics-sectional-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1.filter((question) => question.section === 'Mathematics'),
   'cusat-cat/physics-sectional-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1.filter((question) => question.section === 'Physics'),
   'cusat-cat/chemistry-sectional-1': CUSAT_CAT_2026_BTECH_FULL_MOCK_1.filter((question) => question.section === 'Chemistry'),
+  'cusat-cat/btech-full-mock-2': CUSAT_CAT_2026_BTECH_FULL_MOCK_2,
+  'cusat-cat/mathematics-sectional-2': CUSAT_CAT_2026_BTECH_FULL_MOCK_2.filter((question) => question.section === 'Mathematics'),
+  'cusat-cat/physics-sectional-2': CUSAT_CAT_2026_BTECH_FULL_MOCK_2.filter((question) => question.section === 'Physics'),
+  'cusat-cat/chemistry-sectional-2': CUSAT_CAT_2026_BTECH_FULL_MOCK_2.filter((question) => question.section === 'Chemistry'),
 };
 const XAT_TESTS: Record<string, Question[]> = {
   'xat/part-1-full-mock-1': XAT_2026_PART_1_FULL_MOCK_1,
@@ -3258,6 +3278,11 @@ const SRMJEEE_TESTS: Record<string, Question[]> = {
   'srmjeee/chemistry-sectional-2': SRMJEEE_2026_PCM_CHEMISTRY_SECTIONAL_2,
   'srmjeee/mathematics-sectional-2': SRMJEEE_2026_PCM_MATHEMATICS_SECTIONAL_2,
   'srmjeee/english-aptitude-sectional-2': SRMJEEE_2026_PCM_ENGLISH_APTITUDE_SECTIONAL_2,
+  'srmjeee/full-mock-3': SRMJEEE_2026_PCM_FULL_MOCK_3,
+  'srmjeee/physics-sectional-3': SRMJEEE_2026_PCM_FULL_MOCK_3.filter((question) => question.section === 'Physics'),
+  'srmjeee/chemistry-sectional-3': SRMJEEE_2026_PCM_FULL_MOCK_3.filter((question) => question.section === 'Chemistry'),
+  'srmjeee/mathematics-sectional-3': SRMJEEE_2026_PCM_FULL_MOCK_3.filter((question) => question.section === 'Mathematics'),
+  'srmjeee/english-aptitude-sectional-3': SRMJEEE_2026_PCM_FULL_MOCK_3.filter((question) => question.section === 'English & Aptitude'),
 };
 
 const AEEE_TESTS: Record<string, Question[]> = {
@@ -3292,7 +3317,49 @@ const MET_TESTS: Record<string, Question[]> = {
   'met/english-sectional-2': MET_2026_BTECH_ENGLISH_SECTIONAL_2,
 };
 
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS);
+// Batch of 8 September 2026: eight new exam families from the Main Brain
+// handoff. Sectionals are views over the same frozen full-mock bank, filtered
+// by the section the official pattern names, so a sectional can never drift
+// out of step with the full mock it came from.
+const AIIMS_BSC_NURSING_HANDOFF_TESTS: Record<string, Question[]> = {
+  'aiims-bsc-nursing/hons-entrance-full-mock-1': AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1,
+  'aiims-bsc-nursing/physics-sectional-1': AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1.filter((question) => question.section === 'Physics'),
+  'aiims-bsc-nursing/chemistry-sectional-1': AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1.filter((question) => question.section === 'Chemistry'),
+  'aiims-bsc-nursing/biology-sectional-1': AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1.filter((question) => question.section === 'Biology'),
+  'aiims-bsc-nursing/general-knowledge-sectional-1': AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1.filter((question) => question.section === 'General Knowledge'),
+};
+const AIIMS_NORCET_HANDOFF_TESTS: Record<string, Question[]> = {
+  'aiims-norcet/stage-1-full-mock-1': AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1,
+  'aiims-norcet/block-a-sectional-1': AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1.filter((question) => question.section === 'Block A'),
+  'aiims-norcet/block-b-sectional-1': AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1.filter((question) => question.section === 'Block B'),
+  'aiims-norcet/block-c-sectional-1': AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1.filter((question) => question.section === 'Block C'),
+  'aiims-norcet/block-d-sectional-1': AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1.filter((question) => question.section === 'Block D'),
+  'aiims-norcet/block-e-sectional-1': AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1.filter((question) => question.section === 'Block E'),
+};
+const CEED_HANDOFF_TESTS: Record<string, Question[]> = {
+  'ceed/part-a-full-mock-1': CEED_2026_PART_A_FULL_MOCK_1,
+  'ceed/nat-sectional-1': CEED_2026_PART_A_FULL_MOCK_1.filter((question) => question.section === 'NAT'),
+  'ceed/msq-sectional-1': CEED_2026_PART_A_FULL_MOCK_1.filter((question) => question.section === 'MSQ'),
+  'ceed/mcq-sectional-1': CEED_2026_PART_A_FULL_MOCK_1.filter((question) => question.section === 'MCQ'),
+};
+const UCEED_HANDOFF_TESTS: Record<string, Question[]> = {
+  'uceed/part-a-full-mock-1': UCEED_2026_PART_A_FULL_MOCK_1,
+  'uceed/nat-sectional-1': UCEED_2026_PART_A_FULL_MOCK_1.filter((question) => question.section === 'NAT'),
+  'uceed/msq-sectional-1': UCEED_2026_PART_A_FULL_MOCK_1.filter((question) => question.section === 'MSQ'),
+  'uceed/mcq-sectional-1': UCEED_2026_PART_A_FULL_MOCK_1.filter((question) => question.section === 'MCQ'),
+};
+const DBT_BET_HANDOFF_TESTS: Record<string, Question[]> = {
+  'dbt-bet/section-a-full-mock-1': DBT_BET_2026_SECTION_A_FULL_MOCK_1,
+};
+const DNB_PDCET_HANDOFF_TESTS: Record<string, Question[]> = {
+  'dnb-pdcet/anaesthesiology-full-mock-1': DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1,
+};
+const TIFR_GS_HANDOFF_TESTS: Record<string, Question[]> = {
+  'tifr-gs/computer-science-full-mock-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1,
+  'tifr-gs/part-a-common-sectional-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1.filter((question) => question.section === 'Part A Common'),
+  'tifr-gs/part-b-computer-science-sectional-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1.filter((question) => question.section === 'Part B Computer Science'),
+};
+Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS, AIIMS_BSC_NURSING_HANDOFF_TESTS, AIIMS_NORCET_HANDOFF_TESTS, CEED_HANDOFF_TESTS, UCEED_HANDOFF_TESTS, DBT_BET_HANDOFF_TESTS, DNB_PDCET_HANDOFF_TESTS, TIFR_GS_HANDOFF_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3310,6 +3377,54 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     // otherwise-uniform 35) since its own native banks are 30 questions.
     // Handoff batch: exact test-id matches, so none of these can be shadowed
     // by (or shadow) the slug-substring branches further down this chain.
+    : testId === 'aiims-bsc-nursing/hons-entrance-full-mock-1'
+    ? 100
+    : testId === 'aiims-bsc-nursing/physics-sectional-1'
+    ? 30
+    : testId === 'aiims-bsc-nursing/chemistry-sectional-1'
+    ? 30
+    : testId === 'aiims-bsc-nursing/biology-sectional-1'
+    ? 30
+    : testId === 'aiims-bsc-nursing/general-knowledge-sectional-1'
+    ? 10
+    : testId === 'aiims-norcet/stage-1-full-mock-1'
+    ? 100
+    : testId === 'aiims-norcet/block-a-sectional-1'
+    ? 20
+    : testId === 'aiims-norcet/block-b-sectional-1'
+    ? 20
+    : testId === 'aiims-norcet/block-c-sectional-1'
+    ? 20
+    : testId === 'aiims-norcet/block-d-sectional-1'
+    ? 20
+    : testId === 'aiims-norcet/block-e-sectional-1'
+    ? 20
+    : testId === 'ceed/part-a-full-mock-1'
+    ? 44
+    : testId === 'ceed/nat-sectional-1'
+    ? 8
+    : testId === 'ceed/msq-sectional-1'
+    ? 10
+    : testId === 'ceed/mcq-sectional-1'
+    ? 26
+    : testId === 'uceed/part-a-full-mock-1'
+    ? 57
+    : testId === 'uceed/nat-sectional-1'
+    ? 14
+    : testId === 'uceed/msq-sectional-1'
+    ? 15
+    : testId === 'uceed/mcq-sectional-1'
+    ? 28
+    : testId === 'dbt-bet/section-a-full-mock-1'
+    ? 50
+    : testId === 'dnb-pdcet/anaesthesiology-full-mock-1'
+    ? 120
+    : testId === 'tifr-gs/computer-science-full-mock-1'
+    ? 30
+    : testId === 'tifr-gs/part-a-common-sectional-1'
+    ? 15
+    : testId === 'tifr-gs/part-b-computer-science-sectional-1'
+    ? 15
     : testId === 'cuet-ug/gat-full-mock-1'
     ? 50
     : testId === 'cuet-ug/general-aptitude-test-sectional-1'
@@ -5298,6 +5413,39 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Chemistry', count: 35 },
     { section: 'English Language Comprehension', count: 20 },
   ],
+  'aiims-bsc-nursing': [
+    { section: 'Physics', count: 30 },
+    { section: 'Chemistry', count: 30 },
+    { section: 'Biology', count: 30 },
+    { section: 'General Knowledge', count: 10 },
+  ],
+  'aiims-norcet': [
+    { section: 'Block A', count: 20 },
+    { section: 'Block B', count: 20 },
+    { section: 'Block C', count: 20 },
+    { section: 'Block D', count: 20 },
+    { section: 'Block E', count: 20 },
+  ],
+  'ceed': [
+    { section: 'NAT', count: 8 },
+    { section: 'MSQ', count: 10 },
+    { section: 'MCQ', count: 26 },
+  ],
+  'uceed': [
+    { section: 'NAT', count: 14 },
+    { section: 'MSQ', count: 15 },
+    { section: 'MCQ', count: 28 },
+  ],
+  'dbt-bet': [
+    { section: 'Section A', count: 50 },
+  ],
+  'dnb-pdcet': [
+    { section: 'Anaesthesiology', count: 120 },
+  ],
+  'tifr-gs': [
+    { section: 'Part A Common', count: 15 },
+    { section: 'Part B Computer Science', count: 15 },
+  ],
 };
 const sebiGradeAPaper1Layout = [
   { section: 'General Awareness', count: 20 },
@@ -6733,5 +6881,37 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   ],
   'icar-aieea-pg': [
     ICAR_AIEEA_PG_2026_AGRONOMY_1[0],
+  ],
+  'aiims-bsc-nursing': [
+    AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1[0],
+    AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1[30],
+    AIIMS_BSC_NURSING_2026_HONS_ENTRANCE_FULL_MOCK_1[60],
+  ],
+  'aiims-norcet': [
+    AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1[0],
+    AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1[20],
+    AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1[40],
+  ],
+  'ceed': [
+    CEED_2026_PART_A_FULL_MOCK_1[0],
+    CEED_2026_PART_A_FULL_MOCK_1[8],
+    CEED_2026_PART_A_FULL_MOCK_1[18],
+  ],
+  'uceed': [
+    UCEED_2026_PART_A_FULL_MOCK_1[0],
+    UCEED_2026_PART_A_FULL_MOCK_1[14],
+    UCEED_2026_PART_A_FULL_MOCK_1[29],
+  ],
+  'dbt-bet': [
+    DBT_BET_2026_SECTION_A_FULL_MOCK_1[0],
+    DBT_BET_2026_SECTION_A_FULL_MOCK_1[20],
+  ],
+  'dnb-pdcet': [
+    DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1[0],
+    DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1[60],
+  ],
+  'tifr-gs': [
+    TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1[0],
+    TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1[15],
   ],
 };

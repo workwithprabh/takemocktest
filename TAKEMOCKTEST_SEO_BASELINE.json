@@ -1,6 +1,6 @@
 {
- "capturedAt": "2026-09-07",
- "pageCount": 4587,
+ "capturedAt": "2026-09-08",
+ "pageCount": 4749,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -3049,6 +3049,808 @@
    ],
    "schemaHash": "86897d72c7d3",
    "ogHash": "93d3b94cf9da",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing/admit-card": {
+   "title": "AIIMS BSc Nursing Admit Card: Verification in Progress",
+   "description": "AIIMS BSc Nursing admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "AIIMS BSc Nursing Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "ea84aa42c3ce",
+   "ogHash": "320d8547ccc1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/answer-key": {
+   "title": "AIIMS BSc Nursing Answer Key: Verification in Progress",
+   "description": "AIIMS BSc Nursing answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "AIIMS BSc Nursing Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "bb2d9ed54231",
+   "ogHash": "1c975085a08f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/cutoff": {
+   "title": "AIIMS BSc Nursing Cutoff: Verification in Progress",
+   "description": "AIIMS BSc Nursing category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "AIIMS BSc Nursing Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "cb4b1569bd58",
+   "ogHash": "dc38157ab751",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/eligibility": {
+   "title": "AIIMS BSc Nursing Eligibility Criteria 2026 | TakeMockTest",
+   "description": "AIIMS BSc Nursing eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "AIIMS BSc Nursing Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "d6055c3fb27b",
+   "ogHash": "6f68bf163197",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/exam-pattern": {
+   "title": "AIIMS BSc Nursing Exam Pattern 2026: Marks &amp; Duration",
+   "description": "AIIMS BSc Nursing exam pattern: 100 questions, 100 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "h1": [
+    "AIIMS BSc Nursing Exam Pattern"
+   ],
+   "h2Count": 6,
+   "h2Hash": "2e0e52039d45",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "fb165b68f757",
+   "ogHash": "3645e7a0429c",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing/mock-test": {
+   "title": "AIIMS BSc Nursing Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free AIIMS BSc Nursing practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "AIIMS BSc Nursing Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "802b7e02fe6d",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "cb08f97fcd53",
+   "ogHash": "f241952305be",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing/previous-year-papers": {
+   "title": "AIIMS BSc Nursing Previous Year Papers: Verification in Progress",
+   "description": "AIIMS BSc Nursing previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "AIIMS BSc Nursing Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "15c0fd02a15b",
+   "ogHash": "aceb08bf0536",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/result": {
+   "title": "AIIMS BSc Nursing Result: Verification in Progress",
+   "description": "AIIMS BSc Nursing result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "AIIMS BSc Nursing Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "e6a695fa497e",
+   "ogHash": "326352e17b69",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/salary": {
+   "title": "AIIMS BSc Nursing Salary 2026 | TakeMockTest",
+   "description": "AIIMS BSc Nursing in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "AIIMS BSc Nursing Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "6b0135ebb6a9",
+   "ogHash": "ce8218ac0a34",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/selection-process": {
+   "title": "AIIMS BSc Nursing Selection Process 2026 | TakeMockTest",
+   "description": "A stage-by-stage breakdown of the AIIMS BSc Nursing selection process.",
+   "h1": [
+    "AIIMS BSc Nursing Selection Process"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "bbbc7089e241",
+   "ogHash": "bdcb13956986",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/syllabus": {
+   "title": "AIIMS BSc Nursing Syllabus 2026: Section-wise Topics",
+   "description": "AIIMS BSc Nursing syllabus sections being checked against current official documents before publication.",
+   "h1": [
+    "AIIMS BSc Nursing Syllabus"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "ff6a59ee0d43",
+   "ogHash": "0e6e3dcc5e75",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/test/biology-sectional-1/attempt": {
+   "title": "AIIMS BSc Nursing Biology Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS BSc Nursing Biology Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "34ee23225ee5",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/test/biology-sectional-1": {
+   "title": "AIIMS BSc Nursing Biology Sectional Test 1: Instructions",
+   "description": "Practice Biology for AIIMS BSc Nursing with 30 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS BSc Nursing Biology Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "f7fa5f3ef82b",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1e71bdd7abef",
+   "ogHash": "6c07fba09106",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing/test/chemistry-sectional-1/attempt": {
+   "title": "AIIMS BSc Nursing Chemistry Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS BSc Nursing Chemistry Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ff22d16c3f87",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/test/chemistry-sectional-1": {
+   "title": "AIIMS BSc Nursing Chemistry Sectional Test 1: Instructions",
+   "description": "Practice Chemistry for AIIMS BSc Nursing with 30 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS BSc Nursing Chemistry Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "830697e42651",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1a11ca58cce7",
+   "ogHash": "c34c5b10443a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing/test/general-knowledge-sectional-1/attempt": {
+   "title": "AIIMS BSc Nursing General Knowledge Sectional Test 1",
+   "description": "Attempt the AIIMS BSc Nursing General Knowledge Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8459f41e3859",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/test/general-knowledge-sectional-1": {
+   "title": "AIIMS BSc Nursing General Knowledge Sectional Test 1",
+   "description": "Practice General Knowledge for AIIMS BSc Nursing with 10 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS BSc Nursing General Knowledge Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "3af30d1dcef6",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "41a15269e133",
+   "ogHash": "784ec9053fd0",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing/test/hons-entrance-full-mock-1/attempt": {
+   "title": "AIIMS BSc Nursing B.Sc. Nursing Full Mock Test 1",
+   "description": "Attempt the AIIMS BSc Nursing B.Sc. Nursing Full Mock Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "492be14499ac",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/test/hons-entrance-full-mock-1": {
+   "title": "AIIMS BSc Nursing B.Sc. Nursing Full Mock Test 1 (2026)",
+   "description": "Attempt AIIMS BSc Nursing B.Sc. Nursing Full Mock Test 1: 100 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "AIIMS BSc Nursing B.Sc. Nursing Full Mock Test 1"
+   ],
+   "h2Count": 9,
+   "h2Hash": "47edeeb9ee80",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "adde1ec7df92",
+   "ogHash": "293f0f5282d4",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing/test/physics-sectional-1/attempt": {
+   "title": "AIIMS BSc Nursing Physics Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS BSc Nursing Physics Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ccd8120f4fa0",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-bsc-nursing/test/physics-sectional-1": {
+   "title": "AIIMS BSc Nursing Physics Sectional Test 1: Instructions",
+   "description": "Practice Physics for AIIMS BSc Nursing with 30 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS BSc Nursing Physics Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "9c48c0f0d439",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "827cf76315e8",
+   "ogHash": "139161791718",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-bsc-nursing": {
+   "title": "AIIMS BSc Nursing: Free Mock Tests &amp; Exam Pattern",
+   "description": "Practice checked AIIMS BSc Nursing mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "AIIMS BSc Nursing"
+   ],
+   "h2Count": 8,
+   "h2Hash": "2dfe5c2407e4",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "f53e677c0135",
+   "ogHash": "f8a11f08ec9d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/admit-card": {
+   "title": "AIIMS NORCET Admit Card: Verification in Progress",
+   "description": "AIIMS NORCET admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "AIIMS NORCET Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "80dcce37ca91",
+   "ogHash": "e36ee5bc3133",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/answer-key": {
+   "title": "AIIMS NORCET Answer Key: Verification in Progress",
+   "description": "AIIMS NORCET answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "AIIMS NORCET Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "a21c04cfa246",
+   "ogHash": "14a603031147",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/cutoff": {
+   "title": "AIIMS NORCET Cutoff: Verification in Progress | TakeMockTest",
+   "description": "AIIMS NORCET category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "AIIMS NORCET Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "a8ee09232e1e",
+   "ogHash": "9aba78613085",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/eligibility": {
+   "title": "AIIMS NORCET Eligibility Criteria 2026 | TakeMockTest",
+   "description": "AIIMS NORCET eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "AIIMS NORCET Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "09da2b21e1f0",
+   "ogHash": "a611a53e0c06",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/exam-pattern": {
+   "title": "AIIMS NORCET Exam Pattern 2026: Marks &amp; Duration",
+   "description": "AIIMS NORCET exam pattern: 100 questions, 100 marks, 90 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "h1": [
+    "AIIMS NORCET Exam Pattern"
+   ],
+   "h2Count": 6,
+   "h2Hash": "3dcc12f6c83f",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "b3a154eaf379",
+   "ogHash": "0fd269a3b28e",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/mock-test": {
+   "title": "AIIMS NORCET Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free AIIMS NORCET practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "AIIMS NORCET Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "6f1bc083b7c1",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "b3893abc902a",
+   "ogHash": "f9195e9e45ab",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/previous-year-papers": {
+   "title": "AIIMS NORCET Previous Year Papers: Verification in Progress",
+   "description": "AIIMS NORCET previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "AIIMS NORCET Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "b95b0093ab75",
+   "ogHash": "ee4f4b4d7d01",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/result": {
+   "title": "AIIMS NORCET Result: Verification in Progress | TakeMockTest",
+   "description": "AIIMS NORCET result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "AIIMS NORCET Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "6a4003059885",
+   "ogHash": "7657f00c7db6",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/salary": {
+   "title": "AIIMS NORCET Salary 2026 | TakeMockTest",
+   "description": "AIIMS NORCET in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "AIIMS NORCET Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "18680299a662",
+   "ogHash": "7d2c9e159481",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/selection-process": {
+   "title": "AIIMS NORCET Selection Process 2026 | TakeMockTest",
+   "description": "A stage-by-stage breakdown of the AIIMS NORCET selection process.",
+   "h1": [
+    "AIIMS NORCET Selection Process"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "2e2705697e4b",
+   "ogHash": "043223f348ae",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/syllabus": {
+   "title": "AIIMS NORCET Syllabus 2026: Section-wise Topics",
+   "description": "AIIMS NORCET syllabus sections being checked against current official documents before publication.",
+   "h1": [
+    "AIIMS NORCET Syllabus"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "d436527fe79e",
+   "ogHash": "eb13609a2960",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/test/block-a-sectional-1/attempt": {
+   "title": "AIIMS NORCET Block A Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS NORCET Block A Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "0de7cd1946e4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/test/block-a-sectional-1": {
+   "title": "AIIMS NORCET Block A Sectional Test 1: Instructions",
+   "description": "Practice Block A for AIIMS NORCET with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS NORCET Block A Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "6f33398e2f3f",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0d82db1fdc91",
+   "ogHash": "4ee5b35c9950",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/test/block-b-sectional-1/attempt": {
+   "title": "AIIMS NORCET Block B Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS NORCET Block B Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9de3116ba342",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/test/block-b-sectional-1": {
+   "title": "AIIMS NORCET Block B Sectional Test 1: Instructions",
+   "description": "Practice Block B for AIIMS NORCET with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS NORCET Block B Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "8e3c19605e2a",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "219d61cae173",
+   "ogHash": "c0bee3895580",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/test/block-c-sectional-1/attempt": {
+   "title": "AIIMS NORCET Block C Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS NORCET Block C Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "69bdd29000ce",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/test/block-c-sectional-1": {
+   "title": "AIIMS NORCET Block C Sectional Test 1: Instructions",
+   "description": "Practice Block C for AIIMS NORCET with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS NORCET Block C Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "7da784ba7ec6",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "c3b24cce2868",
+   "ogHash": "35993c19d16a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/test/block-d-sectional-1/attempt": {
+   "title": "AIIMS NORCET Block D Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS NORCET Block D Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "99df781daadc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/test/block-d-sectional-1": {
+   "title": "AIIMS NORCET Block D Sectional Test 1: Instructions",
+   "description": "Practice Block D for AIIMS NORCET with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS NORCET Block D Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "364f94d6b32d",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0ba65fb9aafd",
+   "ogHash": "4223b2880375",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/test/block-e-sectional-1/attempt": {
+   "title": "AIIMS NORCET Block E Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS NORCET Block E Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a3eecf9df0dd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/test/block-e-sectional-1": {
+   "title": "AIIMS NORCET Block E Sectional Test 1: Instructions",
+   "description": "Practice Block E for AIIMS NORCET with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "AIIMS NORCET Block E Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "5184a08ef2f1",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "00ce765c3952",
+   "ogHash": "8c114a92c86f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet/test/stage-1-full-mock-1/attempt": {
+   "title": "AIIMS NORCET Stage I Full Mock Test 1 | TakeMockTest",
+   "description": "Attempt the AIIMS NORCET Stage I Full Mock Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9c4c852b4a15",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/aiims-norcet/test/stage-1-full-mock-1": {
+   "title": "AIIMS NORCET Stage I Full Mock Test 1 (2026) | TakeMockTest",
+   "description": "Attempt AIIMS NORCET Stage I Full Mock Test 1: 100 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "AIIMS NORCET Stage I Full Mock Test 1"
+   ],
+   "h2Count": 9,
+   "h2Hash": "3ab00cb2e1a8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "2bfc0a44aeba",
+   "ogHash": "b83173a524a4",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/aiims-norcet": {
+   "title": "AIIMS NORCET: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
+   "description": "Practice checked AIIMS NORCET mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "AIIMS NORCET"
+   ],
+   "h2Count": 8,
+   "h2Hash": "d88e73790a00",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "34bf466acc8f",
+   "ogHash": "4005fe8aff2a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10878,6 +11680,356 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/ceed/admit-card": {
+   "title": "CEED Admit Card: Verification in Progress | TakeMockTest",
+   "description": "CEED admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "CEED Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "aaa0829e4b12",
+   "ogHash": "a6eae5adc8d3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/answer-key": {
+   "title": "CEED Answer Key: Verification in Progress | TakeMockTest",
+   "description": "CEED answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "CEED Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "7827bc2883fd",
+   "ogHash": "756c84854a87",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/cutoff": {
+   "title": "CEED Cutoff: Verification in Progress | TakeMockTest",
+   "description": "CEED category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "CEED Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "8e2c29f7456b",
+   "ogHash": "d3bec3683ba9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/eligibility": {
+   "title": "CEED Eligibility Criteria 2026 | TakeMockTest",
+   "description": "CEED eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "CEED Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "5183c3e3b1ca",
+   "ogHash": "5da8a3c90472",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/exam-pattern": {
+   "title": "CEED Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
+   "description": "CEED exam pattern: 44 questions, 150 marks, 60 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "h1": [
+    "CEED Exam Pattern"
+   ],
+   "h2Count": 6,
+   "h2Hash": "08b3cddeb568",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "0fcb1e8ca299",
+   "ogHash": "cecf6244bbcb",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ceed/mock-test": {
+   "title": "CEED Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free CEED practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "CEED Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "d634c6890a43",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "41c122148e3e",
+   "ogHash": "6592a149d5dd",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ceed/previous-year-papers": {
+   "title": "CEED Previous Year Papers: Verification in Progress",
+   "description": "CEED previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "CEED Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "c314af6f8547",
+   "ogHash": "936c35ff2e0a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/result": {
+   "title": "CEED Result: Verification in Progress | TakeMockTest",
+   "description": "CEED result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "CEED Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "279460d9c036",
+   "ogHash": "88f28d5741cb",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/salary": {
+   "title": "CEED Salary 2026 | TakeMockTest",
+   "description": "CEED in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "CEED Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "06c5a2783f9e",
+   "ogHash": "0ab8cf1a5c29",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/selection-process": {
+   "title": "CEED Selection Process 2026 | TakeMockTest",
+   "description": "A stage-by-stage breakdown of the CEED selection process.",
+   "h1": [
+    "CEED Selection Process"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "2d353a633a39",
+   "ogHash": "2a3b282098b9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/syllabus": {
+   "title": "CEED Syllabus 2026: Section-wise Topics | TakeMockTest",
+   "description": "CEED syllabus sections being checked against current official documents before publication.",
+   "h1": [
+    "CEED Syllabus"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "6ef501664139",
+   "ogHash": "1e296c04c40c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/test/mcq-sectional-1/attempt": {
+   "title": "CEED MCQ Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the CEED MCQ Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "373e04915ccb",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/test/mcq-sectional-1": {
+   "title": "CEED MCQ Sectional Test 1: Instructions | TakeMockTest",
+   "description": "Practice MCQ for CEED with 26 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "CEED MCQ Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "ca1df508fef8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "8d03e0fb247d",
+   "ogHash": "919cd3c23773",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ceed/test/msq-sectional-1/attempt": {
+   "title": "CEED MSQ Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the CEED MSQ Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "73ffd2b16ebb",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/test/msq-sectional-1": {
+   "title": "CEED MSQ Sectional Test 1: Instructions | TakeMockTest",
+   "description": "Practice MSQ for CEED with 10 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "CEED MSQ Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "95d2b148d361",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "30b59e13fc55",
+   "ogHash": "0761af817487",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ceed/test/nat-sectional-1/attempt": {
+   "title": "CEED NAT Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the CEED NAT Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b235e59a7b98",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/test/nat-sectional-1": {
+   "title": "CEED NAT Sectional Test 1: Instructions | TakeMockTest",
+   "description": "Practice NAT for CEED with 8 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "CEED NAT Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "3e82a55bda9b",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "d325450fbcf9",
+   "ogHash": "c72efc456491",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/test/part-a-full-mock-1/attempt": {
+   "title": "CEED Part A Full Mock Test 1 | TakeMockTest",
+   "description": "Attempt the CEED Part A Full Mock Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "7d889a19eb1f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ceed/test/part-a-full-mock-1": {
+   "title": "CEED Part A Full Mock Test 1 (2026): Free Online Test",
+   "description": "Attempt CEED Part A Full Mock Test 1: 44 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "CEED Part A Full Mock Test 1"
+   ],
+   "h2Count": 9,
+   "h2Hash": "36734cb7ad73",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "43b8284c73a8",
+   "ogHash": "108d0f78fbc5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ceed": {
+   "title": "CEED: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
+   "description": "Practice checked CEED mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "CEED"
+   ],
+   "h2Count": 8,
+   "h2Hash": "7ecc16d34987",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "98a65b76c4a1",
+   "ogHash": "dea1e6b7fa10",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cg-pet/admit-card": {
    "title": "CG PET Admit Card: Verification in Progress | TakeMockTest",
    "description": "CG PET admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
@@ -15013,7 +16165,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "0462ce92c32b",
+   "schemaHash": "f19bd62d248c",
    "ogHash": "c7b128370b53",
    "sitemap": true,
    "robots": "index, follow"
@@ -15137,6 +16289,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/cusat-cat/test/btech-full-mock-2/attempt": {
+   "title": "CUSAT CAT B.Tech Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the CUSAT CAT B.Tech Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "fb6f209ba810",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cusat-cat/test/btech-full-mock-2": {
+   "title": "CUSAT CAT B.Tech Full Mock Test 2 (2026): Free Online Test",
+   "description": "Attempt CUSAT CAT B.Tech Full Mock Test 2: 225 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "CUSAT CAT B.Tech Full Mock Test 2"
+   ],
+   "h2Count": 9,
+   "h2Hash": "3968d3558498",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "9c369e9dc695",
+   "ogHash": "95b6c6643e3d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cusat-cat/test/chemistry-sectional-1/attempt": {
    "title": "CUSAT CAT Chemistry Sectional Test 1 | TakeMockTest",
    "description": "Attempt the CUSAT CAT Chemistry Sectional Test 1 and review your result on this device.",
@@ -15168,6 +16354,40 @@
    ],
    "schemaHash": "7dcaeaf2c554",
    "ogHash": "8f8d96fcc9f3",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/cusat-cat/test/chemistry-sectional-2/attempt": {
+   "title": "CUSAT CAT Chemistry Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CUSAT CAT Chemistry Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b0c56578bca3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cusat-cat/test/chemistry-sectional-2": {
+   "title": "CUSAT CAT Chemistry Sectional Test 2: Instructions",
+   "description": "Practice Chemistry for CUSAT CAT with 60 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "CUSAT CAT Chemistry Sectional Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "3f43eb814249",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "60a5bb17c2db",
+   "ogHash": "7ce4adbfa55a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -15205,6 +16425,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/cusat-cat/test/mathematics-sectional-2/attempt": {
+   "title": "CUSAT CAT Mathematics Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CUSAT CAT Mathematics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "724c309cbda2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cusat-cat/test/mathematics-sectional-2": {
+   "title": "CUSAT CAT Mathematics Sectional Test 2: Instructions",
+   "description": "Practice Mathematics for CUSAT CAT with 90 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "CUSAT CAT Mathematics Sectional Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "1a19f884aeb5",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "5f0f736badb0",
+   "ogHash": "467cd819888c",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cusat-cat/test/physics-sectional-1/attempt": {
    "title": "CUSAT CAT Physics Sectional Test 1 | TakeMockTest",
    "description": "Attempt the CUSAT CAT Physics Sectional Test 1 and review your result on this device.",
@@ -15239,6 +16493,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/cusat-cat/test/physics-sectional-2/attempt": {
+   "title": "CUSAT CAT Physics Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CUSAT CAT Physics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "39d913fd04f3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cusat-cat/test/physics-sectional-2": {
+   "title": "CUSAT CAT Physics Sectional Test 2: Instructions",
+   "description": "Practice Physics for CUSAT CAT with 75 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "CUSAT CAT Physics Sectional Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "20906ba186c4",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "3944b42b1a65",
+   "ogHash": "0576658e1a1e",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cusat-cat": {
    "title": "CUSAT CAT: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
    "description": "Practice checked CUSAT CAT mock tests and review the verified exam pattern, timing, marks, and negative marking.",
@@ -15256,6 +16544,502 @@
    ],
    "schemaHash": "2d7de7f1cdce",
    "ogHash": "a19d84e5efa1",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dbt-bet/admit-card": {
+   "title": "DBT BET Admit Card: Verification in Progress | TakeMockTest",
+   "description": "DBT BET admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "DBT BET Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "90b0e10c3316",
+   "ogHash": "7cb810ed7392",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/answer-key": {
+   "title": "DBT BET Answer Key: Verification in Progress | TakeMockTest",
+   "description": "DBT BET answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "DBT BET Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "ef0621f28168",
+   "ogHash": "72c93f74e8df",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/cutoff": {
+   "title": "DBT BET Cutoff: Verification in Progress | TakeMockTest",
+   "description": "DBT BET category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "DBT BET Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "8a9936e71f9b",
+   "ogHash": "b16669336fd8",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/eligibility": {
+   "title": "DBT BET Eligibility Criteria 2026 | TakeMockTest",
+   "description": "DBT BET eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "DBT BET Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "759c0c226d2b",
+   "ogHash": "dd4b5ecebba4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/exam-pattern": {
+   "title": "DBT BET Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
+   "description": "DBT BET exam pattern: 50 questions, 150 marks, 90 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "h1": [
+    "DBT BET Exam Pattern"
+   ],
+   "h2Count": 6,
+   "h2Hash": "9a3e5bb589f5",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "839215b17003",
+   "ogHash": "46c68b59d297",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dbt-bet/mock-test": {
+   "title": "DBT BET Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free DBT BET practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "DBT BET Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "51a9f575e1be",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "0f0c50a241b5",
+   "ogHash": "65a2ab012744",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dbt-bet/previous-year-papers": {
+   "title": "DBT BET Previous Year Papers: Verification in Progress",
+   "description": "DBT BET previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "DBT BET Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "68039195eb87",
+   "ogHash": "c5d0a0607280",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/result": {
+   "title": "DBT BET Result: Verification in Progress | TakeMockTest",
+   "description": "DBT BET result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "DBT BET Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "9d2164d5fcbe",
+   "ogHash": "05e82023c97d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/salary": {
+   "title": "DBT BET Salary 2026 | TakeMockTest",
+   "description": "DBT BET in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "DBT BET Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "5db6936a29d0",
+   "ogHash": "86ae0041ed02",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/selection-process": {
+   "title": "DBT BET Selection Process 2026 | TakeMockTest",
+   "description": "A stage-by-stage breakdown of the DBT BET selection process.",
+   "h1": [
+    "DBT BET Selection Process"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "1fab47601412",
+   "ogHash": "6e1f9f846b99",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/syllabus": {
+   "title": "DBT BET Syllabus 2026: Section-wise Topics | TakeMockTest",
+   "description": "DBT BET syllabus sections being checked against current official documents before publication.",
+   "h1": [
+    "DBT BET Syllabus"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "4b1d32cfa5e4",
+   "ogHash": "f3a052d59f50",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/test/section-a-full-mock-1/attempt": {
+   "title": "DBT BET Section A Full Mock Test 1 | TakeMockTest",
+   "description": "Attempt the DBT BET Section A Full Mock Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "44fab6982dd9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/test/section-a-full-mock-1": {
+   "title": "DBT BET Section A Full Mock Test 1 (2026): Free Online Test",
+   "description": "Attempt DBT BET Section A Full Mock Test 1: 50 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "DBT BET Section A Full Mock Test 1"
+   ],
+   "h2Count": 9,
+   "h2Hash": "2322883e0344",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "4ae17aa59b70",
+   "ogHash": "83dd4827730d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dbt-bet": {
+   "title": "DBT BET: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
+   "description": "Practice checked DBT BET mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "DBT BET"
+   ],
+   "h2Count": 8,
+   "h2Hash": "765b8038e6c8",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "54c61d7aff83",
+   "ogHash": "1b355d064e67",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dnb-pdcet/admit-card": {
+   "title": "DNB-PDCET Admit Card: Verification in Progress",
+   "description": "DNB-PDCET admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "DNB-PDCET Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "9fba2981ca7b",
+   "ogHash": "c24aeaca4870",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/answer-key": {
+   "title": "DNB-PDCET Answer Key: Verification in Progress",
+   "description": "DNB-PDCET answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "DNB-PDCET Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "ed9e05e77d1c",
+   "ogHash": "6aba919a6207",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/cutoff": {
+   "title": "DNB-PDCET Cutoff: Verification in Progress | TakeMockTest",
+   "description": "DNB-PDCET category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "DNB-PDCET Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "ce050b596939",
+   "ogHash": "d91bcd59c053",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/eligibility": {
+   "title": "DNB-PDCET Eligibility Criteria 2026 | TakeMockTest",
+   "description": "DNB-PDCET eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "DNB-PDCET Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "25c0acb24965",
+   "ogHash": "26137655f7dc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/exam-pattern": {
+   "title": "DNB-PDCET Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
+   "description": "DNB-PDCET exam pattern: 120 questions, 480 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "h1": [
+    "DNB-PDCET Exam Pattern"
+   ],
+   "h2Count": 6,
+   "h2Hash": "6e2cbe722017",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "98bfb58bfa89",
+   "ogHash": "7369fc448e7a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dnb-pdcet/mock-test": {
+   "title": "DNB-PDCET Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free DNB-PDCET practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "DNB-PDCET Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "eb1175f178f3",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "af780d8177f6",
+   "ogHash": "0a946c3f0b73",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dnb-pdcet/previous-year-papers": {
+   "title": "DNB-PDCET Previous Year Papers: Verification in Progress",
+   "description": "DNB-PDCET previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "DNB-PDCET Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "95916d6c5296",
+   "ogHash": "39619500b55e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/result": {
+   "title": "DNB-PDCET Result: Verification in Progress | TakeMockTest",
+   "description": "DNB-PDCET result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "DNB-PDCET Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "edc2a1b2eedb",
+   "ogHash": "f7d4914b203f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/salary": {
+   "title": "DNB-PDCET Salary 2026 | TakeMockTest",
+   "description": "DNB-PDCET in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "DNB-PDCET Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "1d28817f7359",
+   "ogHash": "168f66b82ab3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/selection-process": {
+   "title": "DNB-PDCET Selection Process 2026 | TakeMockTest",
+   "description": "A stage-by-stage breakdown of the DNB-PDCET selection process.",
+   "h1": [
+    "DNB-PDCET Selection Process"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "24a0dde51734",
+   "ogHash": "c623142c7806",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/syllabus": {
+   "title": "DNB-PDCET Syllabus 2026: Section-wise Topics | TakeMockTest",
+   "description": "DNB-PDCET syllabus sections being checked against current official documents before publication.",
+   "h1": [
+    "DNB-PDCET Syllabus"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "1f7fbf34555b",
+   "ogHash": "8e52ae420f63",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/test/anaesthesiology-full-mock-1/attempt": {
+   "title": "DNB-PDCET Anaesthesiology Full Mock Test 1 | TakeMockTest",
+   "description": "Attempt the DNB-PDCET Anaesthesiology Full Mock Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "5fea421c09bd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dnb-pdcet/test/anaesthesiology-full-mock-1": {
+   "title": "DNB-PDCET Anaesthesiology Full Mock Test 1 (2026)",
+   "description": "Attempt DNB-PDCET Anaesthesiology Full Mock Test 1: 120 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "DNB-PDCET Anaesthesiology Full Mock Test 1"
+   ],
+   "h2Count": 9,
+   "h2Hash": "ab375c73a381",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "d3a2ada92d50",
+   "ogHash": "625e6d11f584",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dnb-pdcet": {
+   "title": "DNB-PDCET: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
+   "description": "Practice checked DNB-PDCET mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "DNB-PDCET"
+   ],
+   "h2Count": 8,
+   "h2Hash": "fb9ad9f0992f",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "3bbfeccee1bf",
+   "ogHash": "ae879d79cfc0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -15687,7 +17471,7 @@
     "ItemList",
     "ListItem"
    ],
-   "schemaHash": "386d08b82354",
+   "schemaHash": "4766f0c83edf",
    "ogHash": "0cf61db5f46c",
    "sitemap": true,
    "robots": "index, follow"
@@ -15777,7 +17561,7 @@
     "ItemList",
     "ListItem"
    ],
-   "schemaHash": "141547038183",
+   "schemaHash": "c9850b26be72",
    "ogHash": "b316f7d86435",
    "sitemap": true,
    "robots": "index, follow"
@@ -15813,7 +17597,7 @@
     "ItemList",
     "ListItem"
    ],
-   "schemaHash": "2f8d4abf1453",
+   "schemaHash": "d67a5b3ce40e",
    "ogHash": "be0fd947291a",
    "sitemap": true,
    "robots": "index, follow"
@@ -15831,7 +17615,7 @@
     "ItemList",
     "ListItem"
    ],
-   "schemaHash": "1884465ea3a3",
+   "schemaHash": "a832e640a566",
    "ogHash": "4b454395caea",
    "sitemap": true,
    "robots": "index, follow"
@@ -47899,7 +49683,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fb539b6cd1ce",
+   "schemaHash": "519060c35f60",
    "ogHash": "e52965adc6a2",
    "sitemap": true,
    "robots": "index, follow"
@@ -47936,7 +49720,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "354729ecae1a",
+   "schemaHash": "60e17183d729",
    "ogHash": "a2b44e1bf290",
    "sitemap": true,
    "robots": "index, follow"
@@ -47973,7 +49757,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "3d55e03b4858",
+   "schemaHash": "eb747c3c592b",
    "ogHash": "d6c4ac59bf76",
    "sitemap": true,
    "robots": "index, follow"
@@ -48010,7 +49794,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fb7742307082",
+   "schemaHash": "6855a33e3a80",
    "ogHash": "20fa3763cd74",
    "sitemap": true,
    "robots": "index, follow"
@@ -48047,7 +49831,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "af8872df886e",
+   "schemaHash": "b0c0e988b35b",
    "ogHash": "2f733f64fb85",
    "sitemap": true,
    "robots": "index, follow"
@@ -48084,7 +49868,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "049c028a047e",
+   "schemaHash": "7ae29ed2f12b",
    "ogHash": "3865e27229ff",
    "sitemap": true,
    "robots": "index, follow"
@@ -48121,7 +49905,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "760c1cb09575",
+   "schemaHash": "fa2b2ceb0253",
    "ogHash": "59ec40fecd8d",
    "sitemap": true,
    "robots": "index, follow"
@@ -48158,7 +49942,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "75beebe10cb5",
+   "schemaHash": "0d68e0800af9",
    "ogHash": "d63fdc83b473",
    "sitemap": true,
    "robots": "index, follow"
@@ -48195,7 +49979,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "dbd60e170a78",
+   "schemaHash": "9f2410bb11d1",
    "ogHash": "3b48fed371d7",
    "sitemap": true,
    "robots": "index, follow"
@@ -48232,7 +50016,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "589cd275ac21",
+   "schemaHash": "a9b6287641c1",
    "ogHash": "dccdd851f840",
    "sitemap": true,
    "robots": "index, follow"
@@ -48269,7 +50053,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ad6dde63e30e",
+   "schemaHash": "4b11f016caac",
    "ogHash": "d456a8afcb83",
    "sitemap": true,
    "robots": "index, follow"
@@ -48290,7 +50074,7 @@
   },
   "/in/practice/data-interpretation": {
    "title": "Data Interpretation Questions with Answers 2026",
-   "description": "377 free data interpretation questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "380 free data interpretation questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
@@ -48306,8 +50090,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f2a50cd49e10",
-   "ogHash": "993a85f1bdca",
+   "schemaHash": "d9505588e290",
+   "ogHash": "f10e2fade7ed",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -48327,7 +50111,7 @@
   },
   "/in/practice/data-sufficiency": {
    "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
-   "description": "157 free data sufficiency questions with answers and explanations, pooled from 32 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "158 free data sufficiency questions with answers and explanations, pooled from 32 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
@@ -48343,8 +50127,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7ca8e8030670",
-   "ogHash": "72298f391ca6",
+   "schemaHash": "a252b6756864",
+   "ogHash": "b8cd0102b6f7",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -48380,7 +50164,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d6005dd7e474",
+   "schemaHash": "954ca01ba7ae",
    "ogHash": "c0492fd1bff1",
    "sitemap": true,
    "robots": "index, follow"
@@ -48401,7 +50185,7 @@
   },
   "/in/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "265 free direction sense questions with answers and explanations, pooled from 49 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "266 free direction sense questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -48417,8 +50201,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "749328d4e6be",
-   "ogHash": "0652dd9ed7f2",
+   "schemaHash": "e0927be136cc",
+   "ogHash": "770a79bd206a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -48454,7 +50238,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ea59464f807f",
+   "schemaHash": "011408b538a7",
    "ogHash": "eb7774eb162e",
    "sitemap": true,
    "robots": "index, follow"
@@ -48491,7 +50275,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f92325978f62",
+   "schemaHash": "6325910aebd0",
    "ogHash": "ba67edd01cea",
    "sitemap": true,
    "robots": "index, follow"
@@ -48528,7 +50312,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5a48cbc2af47",
+   "schemaHash": "2fe9c692b934",
    "ogHash": "494d667a8fdc",
    "sitemap": true,
    "robots": "index, follow"
@@ -48565,7 +50349,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0518b3322978",
+   "schemaHash": "76a7684bf83a",
    "ogHash": "64508c37fb65",
    "sitemap": true,
    "robots": "index, follow"
@@ -48586,7 +50370,7 @@
   },
   "/in/practice/number-series": {
    "title": "Number Series Questions with Answers 2026 | TakeMockTest",
-   "description": "383 free number series questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "384 free number series questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number Series Questions with Answers"
    ],
@@ -48602,8 +50386,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "bec75b113766",
-   "ogHash": "394428161bf0",
+   "schemaHash": "428a46d7ec55",
+   "ogHash": "a599af62633a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -48639,7 +50423,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a0c333ec5e98",
+   "schemaHash": "2c993578ddf6",
    "ogHash": "8ad968532ab5",
    "sitemap": true,
    "robots": "index, follow"
@@ -48676,7 +50460,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0536217acbe8",
+   "schemaHash": "af9686f2421f",
    "ogHash": "3afd99eec314",
    "sitemap": true,
    "robots": "index, follow"
@@ -48713,7 +50497,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ed2504bbf0b3",
+   "schemaHash": "8d2c162d569f",
    "ogHash": "6730f45edce2",
    "sitemap": true,
    "robots": "index, follow"
@@ -48750,7 +50534,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1f2981d479ef",
+   "schemaHash": "76332c944bef",
    "ogHash": "8849cce6e063",
    "sitemap": true,
    "robots": "index, follow"
@@ -48771,7 +50555,7 @@
   },
   "/in/practice/permutations-and-combinations": {
    "title": "Permutations and Combinations Questions with Answers 2026",
-   "description": "118 free permutations and combinations questions with answers and explanations, pooled from 37 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "129 free permutations and combinations questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Permutations and Combinations Questions with Answers"
    ],
@@ -48787,8 +50571,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c326920e7fef",
-   "ogHash": "ea7541eb932e",
+   "schemaHash": "41a1fe458495",
+   "ogHash": "006d65ad4bce",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -48808,7 +50592,7 @@
   },
   "/in/practice/probability": {
    "title": "Probability Questions with Answers 2026 | TakeMockTest",
-   "description": "213 free probability questions with answers and explanations, pooled from 70 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "226 free probability questions with answers and explanations, pooled from 72 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Probability Questions with Answers"
    ],
@@ -48824,8 +50608,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "259a3894e584",
-   "ogHash": "0a248395fd74",
+   "schemaHash": "8085bc345653",
+   "ogHash": "eceac20d2bbf",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -48861,7 +50645,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "bfb6397d6d3d",
+   "schemaHash": "89f353824f59",
    "ogHash": "f6eeb1511c5b",
    "sitemap": true,
    "robots": "index, follow"
@@ -48898,7 +50682,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "59bb9ff77030",
+   "schemaHash": "8e10513d24c1",
    "ogHash": "5f12061ee4eb",
    "sitemap": true,
    "robots": "index, follow"
@@ -48935,7 +50719,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "3b0527828693",
+   "schemaHash": "931441db69db",
    "ogHash": "76e84e499b8f",
    "sitemap": true,
    "robots": "index, follow"
@@ -48972,7 +50756,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7d9e1e91ebfd",
+   "schemaHash": "257825dfa444",
    "ogHash": "273e265f0521",
    "sitemap": true,
    "robots": "index, follow"
@@ -48993,7 +50777,7 @@
   },
   "/in/practice/reading-comprehension": {
    "title": "Reading Comprehension Questions with Answers 2026",
-   "description": "387 free reading comprehension questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "389 free reading comprehension questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Reading Comprehension Questions with Answers"
    ],
@@ -49009,8 +50793,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "cadb48ab9f2b",
-   "ogHash": "f9a3d1486adb",
+   "schemaHash": "885d3828b93b",
+   "ogHash": "0432034029c9",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49046,7 +50830,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d5754560a70a",
+   "schemaHash": "04400f88ec9f",
    "ogHash": "6c26eba637cd",
    "sitemap": true,
    "robots": "index, follow"
@@ -49083,7 +50867,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c663c9848634",
+   "schemaHash": "9fb8e19b6aa1",
    "ogHash": "d6fef4b60f4a",
    "sitemap": true,
    "robots": "index, follow"
@@ -49104,7 +50888,7 @@
   },
   "/in/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "121 free simple interest questions with answers and explanations, pooled from 47 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "122 free simple interest questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -49120,8 +50904,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5452297ac777",
-   "ogHash": "33f21cc111b6",
+   "schemaHash": "c74dd09c7958",
+   "ogHash": "0717ea5f462d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49157,7 +50941,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e87d353958ed",
+   "schemaHash": "230b277554b5",
    "ogHash": "011f11140656",
    "sitemap": true,
    "robots": "index, follow"
@@ -49194,7 +50978,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "274b7899973e",
+   "schemaHash": "55ed4da0dfad",
    "ogHash": "8fe3e82adc13",
    "sitemap": true,
    "robots": "index, follow"
@@ -49231,7 +51015,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8812214e67c6",
+   "schemaHash": "3169e46e4bb2",
    "ogHash": "d1965a4f722e",
    "sitemap": true,
    "robots": "index, follow"
@@ -49268,7 +51052,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8df44be396cd",
+   "schemaHash": "3bc50d5b0d2a",
    "ogHash": "3174c69a342a",
    "sitemap": true,
    "robots": "index, follow"
@@ -49305,7 +51089,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d64eb4d211aa",
+   "schemaHash": "645edc19a803",
    "ogHash": "eb5070a57f0d",
    "sitemap": true,
    "robots": "index, follow"
@@ -49342,14 +51126,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c9536bbc6c36",
+   "schemaHash": "d8a9aa22a5a5",
    "ogHash": "89bfbfb024b9",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics — 8,023 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics — 8,056 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -49365,7 +51149,7 @@
     "Question"
    ],
    "schemaHash": "908c23ad3529",
-   "ogHash": "2e23dd458091",
+   "ogHash": "9e77a80cc3be",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -64605,7 +66389,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "c41adea060b0",
+   "schemaHash": "1284c69e3bcc",
    "ogHash": "17f547f550f4",
    "sitemap": true,
    "robots": "index, follow"
@@ -64763,6 +66547,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/srmjeee/test/chemistry-sectional-3/attempt": {
+   "title": "SRMJEEE Chemistry Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the SRMJEEE Chemistry Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "4f33d67ca002",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/srmjeee/test/chemistry-sectional-3": {
+   "title": "SRMJEEE Chemistry Sectional Test 3: Instructions",
+   "description": "Practice Chemistry for SRMJEEE with 35 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "SRMJEEE Chemistry Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "530a71f0d519",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "61a10355c501",
+   "ogHash": "ebce9c16e4bf",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/srmjeee/test/english-aptitude-sectional-1/attempt": {
    "title": "SRMJEEE English &amp; Aptitude Sectional Test 1 | TakeMockTest",
    "description": "Attempt the SRMJEEE English &amp; Aptitude Sectional Test 1 and review your result on this device.",
@@ -64828,6 +66646,40 @@
    ],
    "schemaHash": "bd2bbb3c25ee",
    "ogHash": "61b4b1ab95ca",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/srmjeee/test/english-aptitude-sectional-3/attempt": {
+   "title": "SRMJEEE English &amp; Aptitude Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the SRMJEEE English &amp; Aptitude Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "6cf404eb8c33",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/srmjeee/test/english-aptitude-sectional-3": {
+   "title": "SRMJEEE English &amp; Aptitude Sectional Test 3: Instructions",
+   "description": "Practice English &amp; Aptitude for SRMJEEE with 20 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "SRMJEEE English & Aptitude Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "74237e7cb7d6",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "e99d39a60a0e",
+   "ogHash": "f92acfe6371b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -64905,6 +66757,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/srmjeee/test/full-mock-3/attempt": {
+   "title": "SRMJEEE Full Mock Test 3 | TakeMockTest",
+   "description": "Attempt the SRMJEEE Full Mock Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "df53b811d492",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/srmjeee/test/full-mock-3": {
+   "title": "SRMJEEE Full Mock Test 3 (2026): Free Online Test",
+   "description": "Attempt SRMJEEE Full Mock Test 3: 130 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "SRMJEEE Full Mock Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "1f5aa9377bbd",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "3da871a61c2c",
+   "ogHash": "5277d23d9435",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/srmjeee/test/mathematics-sectional-1/attempt": {
    "title": "SRMJEEE Mathematics Sectional Test 1 | TakeMockTest",
    "description": "Attempt the SRMJEEE Mathematics Sectional Test 1 and review your result on this device.",
@@ -64970,6 +66859,40 @@
    ],
    "schemaHash": "5912f3ef66f2",
    "ogHash": "b31474df1eb4",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/srmjeee/test/mathematics-sectional-3/attempt": {
+   "title": "SRMJEEE Mathematics Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the SRMJEEE Mathematics Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "514172cbf292",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/srmjeee/test/mathematics-sectional-3": {
+   "title": "SRMJEEE Mathematics Sectional Test 3: Instructions",
+   "description": "Practice Mathematics for SRMJEEE with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "SRMJEEE Mathematics Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "7f4818109d82",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "39c2412872a4",
+   "ogHash": "881a967ca1ca",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -65106,6 +67029,40 @@
    ],
    "schemaHash": "520158740f5e",
    "ogHash": "e37c5d690f20",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/srmjeee/test/physics-sectional-3/attempt": {
+   "title": "SRMJEEE Physics Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the SRMJEEE Physics Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8553e0f10e82",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/srmjeee/test/physics-sectional-3": {
+   "title": "SRMJEEE Physics Sectional Test 3: Instructions",
+   "description": "Practice Physics for SRMJEEE with 35 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "SRMJEEE Physics Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "319e105cc751",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "45bcd2f59acb",
+   "ogHash": "4bb2d1eb7a7a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -75724,6 +77681,322 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/tifr-gs/admit-card": {
+   "title": "TIFR GS Admit Card: Verification in Progress | TakeMockTest",
+   "description": "TIFR GS admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "TIFR GS Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "1ad3f6937a46",
+   "ogHash": "4dad3f1c95b1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/answer-key": {
+   "title": "TIFR GS Answer Key: Verification in Progress | TakeMockTest",
+   "description": "TIFR GS answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "TIFR GS Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "3c2f06dfa4c1",
+   "ogHash": "3acaf2b9f49f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/cutoff": {
+   "title": "TIFR GS Cutoff: Verification in Progress | TakeMockTest",
+   "description": "TIFR GS category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "TIFR GS Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "7c0d58ea3397",
+   "ogHash": "1ed932f9c918",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/eligibility": {
+   "title": "TIFR GS Eligibility Criteria 2026 | TakeMockTest",
+   "description": "TIFR GS eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "TIFR GS Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "b56f233de5f0",
+   "ogHash": "b1844821bbf5",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/exam-pattern": {
+   "title": "TIFR GS Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
+   "description": "TIFR GS exam pattern: 30 questions, 120 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "h1": [
+    "TIFR GS Exam Pattern"
+   ],
+   "h2Count": 6,
+   "h2Hash": "42bc9be55824",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "2d36ac2020c2",
+   "ogHash": "b2b767f93737",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tifr-gs/mock-test": {
+   "title": "TIFR GS Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free TIFR GS practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "TIFR GS Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "d716aba3668f",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "db5c442768fd",
+   "ogHash": "9ae93e5dcc84",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tifr-gs/previous-year-papers": {
+   "title": "TIFR GS Previous Year Papers: Verification in Progress",
+   "description": "TIFR GS previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "TIFR GS Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "b254024e779b",
+   "ogHash": "e8fb9b12ec94",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/result": {
+   "title": "TIFR GS Result: Verification in Progress | TakeMockTest",
+   "description": "TIFR GS result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "TIFR GS Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "6183bc0007e3",
+   "ogHash": "9782bb408f4c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/salary": {
+   "title": "TIFR GS Salary 2026 | TakeMockTest",
+   "description": "TIFR GS in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "TIFR GS Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "91a973cb4b60",
+   "ogHash": "0c432a08383e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/selection-process": {
+   "title": "TIFR GS Selection Process 2026 | TakeMockTest",
+   "description": "A stage-by-stage breakdown of the TIFR GS selection process.",
+   "h1": [
+    "TIFR GS Selection Process"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "32558dc44d53",
+   "ogHash": "89338e56d496",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/syllabus": {
+   "title": "TIFR GS Syllabus 2026: Section-wise Topics | TakeMockTest",
+   "description": "TIFR GS syllabus sections being checked against current official documents before publication.",
+   "h1": [
+    "TIFR GS Syllabus"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "39876275214f",
+   "ogHash": "812ca382e5a4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/test/computer-science-full-mock-1/attempt": {
+   "title": "TIFR GS Computer Science Full Mock Test 1 | TakeMockTest",
+   "description": "Attempt the TIFR GS Computer Science Full Mock Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a5c97d280022",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/test/computer-science-full-mock-1": {
+   "title": "TIFR GS Computer Science Full Mock Test 1 (2026)",
+   "description": "Attempt TIFR GS Computer Science Full Mock Test 1: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "TIFR GS Computer Science Full Mock Test 1"
+   ],
+   "h2Count": 9,
+   "h2Hash": "587f16f1730e",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "dc956868acaf",
+   "ogHash": "26894dd5957e",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tifr-gs/test/part-a-common-sectional-1/attempt": {
+   "title": "TIFR GS Part A Common Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the TIFR GS Part A Common Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "cf035546ea4c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/test/part-a-common-sectional-1": {
+   "title": "TIFR GS Part A Common Sectional Test 1: Instructions",
+   "description": "Practice Part A Common for TIFR GS with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "TIFR GS Part A Common Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "d4da4ef7ed82",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "5b42e1a3fb1b",
+   "ogHash": "99583f47b6b1",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tifr-gs/test/part-b-computer-science-sectional-1/attempt": {
+   "title": "TIFR GS Part B Computer Science Sectional Test 1",
+   "description": "Attempt the TIFR GS Part B Computer Science Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "1c72653389b9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/test/part-b-computer-science-sectional-1": {
+   "title": "TIFR GS Part B Computer Science Sectional Test 1",
+   "description": "Practice Part B Computer Science for TIFR GS with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "TIFR GS Part B Computer Science Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "9de75980fcba",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "afbe7da5c833",
+   "ogHash": "7c0b862d5204",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tifr-gs": {
+   "title": "TIFR GS: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
+   "description": "Practice checked TIFR GS mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "TIFR GS"
+   ],
+   "h2Count": 8,
+   "h2Hash": "ec33097e58ac",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "0bc88435160b",
+   "ogHash": "8a6a65350588",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/tjee/admit-card": {
    "title": "TJEE Admit Card: Verification in Progress | TakeMockTest",
    "description": "TJEE admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
@@ -76384,6 +78657,356 @@
    ],
    "schemaHash": "4446e4c88295",
    "ogHash": "c5da8efc3254",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/uceed/admit-card": {
+   "title": "UCEED Admit Card: Verification in Progress | TakeMockTest",
+   "description": "UCEED admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "UCEED Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "320ba7f76246",
+   "ogHash": "4e97e96d9a23",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/answer-key": {
+   "title": "UCEED Answer Key: Verification in Progress | TakeMockTest",
+   "description": "UCEED answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "UCEED Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "30f6e52dac86",
+   "ogHash": "7655a5b084b3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/cutoff": {
+   "title": "UCEED Cutoff: Verification in Progress | TakeMockTest",
+   "description": "UCEED category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "UCEED Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "420b9dc1eaf3",
+   "ogHash": "5cd3a3fe4628",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/eligibility": {
+   "title": "UCEED Eligibility Criteria 2026 | TakeMockTest",
+   "description": "UCEED eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "UCEED Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "2220fb53a527",
+   "ogHash": "2df8ff7304f5",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/exam-pattern": {
+   "title": "UCEED Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
+   "description": "UCEED exam pattern: 57 questions, 200 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "h1": [
+    "UCEED Exam Pattern"
+   ],
+   "h2Count": 6,
+   "h2Hash": "d7f6084a8848",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "cae9ea23c957",
+   "ogHash": "7aeb92a7115f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/uceed/mock-test": {
+   "title": "UCEED Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free UCEED practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "UCEED Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a13caeb99b01",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "506a8b774f91",
+   "ogHash": "ad16df9f6cc3",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/uceed/previous-year-papers": {
+   "title": "UCEED Previous Year Papers: Verification in Progress",
+   "description": "UCEED previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "UCEED Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "2cbcba2bd509",
+   "ogHash": "257cf4dafd68",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/result": {
+   "title": "UCEED Result: Verification in Progress | TakeMockTest",
+   "description": "UCEED result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "UCEED Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "17500744343c",
+   "ogHash": "51d3540c2f3d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/salary": {
+   "title": "UCEED Salary 2026 | TakeMockTest",
+   "description": "UCEED in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "UCEED Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "93be84239b4b",
+   "ogHash": "05d7ebc85cb9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/selection-process": {
+   "title": "UCEED Selection Process 2026 | TakeMockTest",
+   "description": "A stage-by-stage breakdown of the UCEED selection process.",
+   "h1": [
+    "UCEED Selection Process"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "d1a0fcdf0220",
+   "ogHash": "3a7dcc705820",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/syllabus": {
+   "title": "UCEED Syllabus 2026: Section-wise Topics | TakeMockTest",
+   "description": "UCEED syllabus sections being checked against current official documents before publication.",
+   "h1": [
+    "UCEED Syllabus"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "0b5e5cecdf41",
+   "ogHash": "a18941acafc4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/test/mcq-sectional-1/attempt": {
+   "title": "UCEED MCQ Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the UCEED MCQ Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "c6c8dfd20d4a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/test/mcq-sectional-1": {
+   "title": "UCEED MCQ Sectional Test 1: Instructions | TakeMockTest",
+   "description": "Practice MCQ for UCEED with 28 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "UCEED MCQ Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "87712908e297",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "758df29b401c",
+   "ogHash": "9842488f356e",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/uceed/test/msq-sectional-1/attempt": {
+   "title": "UCEED MSQ Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the UCEED MSQ Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "05ccdfacf97a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/test/msq-sectional-1": {
+   "title": "UCEED MSQ Sectional Test 1: Instructions | TakeMockTest",
+   "description": "Practice MSQ for UCEED with 15 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "UCEED MSQ Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "ad3567dd704e",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "507c4f7a5635",
+   "ogHash": "eda7c5732b20",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/uceed/test/nat-sectional-1/attempt": {
+   "title": "UCEED NAT Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the UCEED NAT Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "0db0c36de736",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/test/nat-sectional-1": {
+   "title": "UCEED NAT Sectional Test 1: Instructions | TakeMockTest",
+   "description": "Practice NAT for UCEED with 14 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "UCEED NAT Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "ef23324a4cb2",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "20b6f5cbc295",
+   "ogHash": "1db1ff5f3f30",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/uceed/test/part-a-full-mock-1/attempt": {
+   "title": "UCEED Part A Full Mock Test 1 | TakeMockTest",
+   "description": "Attempt the UCEED Part A Full Mock Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "6e014fe07a06",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/uceed/test/part-a-full-mock-1": {
+   "title": "UCEED Part A Full Mock Test 1 (2026): Free Online Test",
+   "description": "Attempt UCEED Part A Full Mock Test 1: 57 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "UCEED Part A Full Mock Test 1"
+   ],
+   "h2Count": 9,
+   "h2Hash": "51398d7d3c9e",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "b7c92b83fa76",
+   "ogHash": "02aef9f87647",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/uceed": {
+   "title": "UCEED: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
+   "description": "Practice checked UCEED mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "UCEED"
+   ],
+   "h2Count": 8,
+   "h2Hash": "8e429e6e21e0",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Question"
+   ],
+   "schemaHash": "20806ffc3489",
+   "ogHash": "d79996ec6c57",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -78231,7 +80854,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "8059d128059a",
+   "schemaHash": "a12b7ed16bd5",
    "ogHash": "6117da117f38",
    "sitemap": true,
    "robots": "index, follow"
@@ -78389,6 +81012,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/viteee/test/aptitude-sectional-3/attempt": {
+   "title": "VITEEE Aptitude Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the VITEEE Aptitude Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "f68d9a485f32",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/viteee/test/aptitude-sectional-3": {
+   "title": "VITEEE Aptitude Sectional Test 3: Instructions",
+   "description": "Practice Aptitude for VITEEE with 10 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "VITEEE Aptitude Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "31d308c1cc3f",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0b55c565d8b6",
+   "ogHash": "eaac0ff55945",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/viteee/test/chemistry-sectional-1/attempt": {
    "title": "VITEEE Chemistry Sectional Test 1 | TakeMockTest",
    "description": "Attempt the VITEEE Chemistry Sectional Test 1 and review your result on this device.",
@@ -78457,6 +81114,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/viteee/test/chemistry-sectional-3/attempt": {
+   "title": "VITEEE Chemistry Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the VITEEE Chemistry Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "4cc9e6477c51",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/viteee/test/chemistry-sectional-3": {
+   "title": "VITEEE Chemistry Sectional Test 3: Instructions",
+   "description": "Practice Chemistry for VITEEE with 35 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "VITEEE Chemistry Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "d91ca742dd7a",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "49adb0b69570",
+   "ogHash": "19b31d6df196",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/viteee/test/english-sectional-1/attempt": {
    "title": "VITEEE English Sectional Test 1 | TakeMockTest",
    "description": "Attempt the VITEEE English Sectional Test 1 and review your result on this device.",
@@ -78522,6 +81213,40 @@
    ],
    "schemaHash": "ee50ed1a201c",
    "ogHash": "8e59e77dcfb1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/viteee/test/english-sectional-3/attempt": {
+   "title": "VITEEE English Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the VITEEE English Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "99b89fdbd4a1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/viteee/test/english-sectional-3": {
+   "title": "VITEEE English Sectional Test 3: Instructions | TakeMockTest",
+   "description": "Practice English for VITEEE with 5 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "VITEEE English Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "05ed2e15c89a",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "31eee8abfd77",
+   "ogHash": "5bf53b187da5",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -78599,6 +81324,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/viteee/test/full-mock-3/attempt": {
+   "title": "VITEEE Full Mock Test 3 | TakeMockTest",
+   "description": "Attempt the VITEEE Full Mock Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e208bf785544",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/viteee/test/full-mock-3": {
+   "title": "VITEEE Full Mock Test 3 (2026): Free Online Test",
+   "description": "Attempt VITEEE Full Mock Test 3: 125 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "VITEEE Full Mock Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "63b5fd72b84a",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "7b619cc45e59",
+   "ogHash": "5e7e0696b248",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/viteee/test/mathematics-sectional-1/attempt": {
    "title": "VITEEE Mathematics Sectional Test 1 | TakeMockTest",
    "description": "Attempt the VITEEE Mathematics Sectional Test 1 and review your result on this device.",
@@ -78664,6 +81426,40 @@
    ],
    "schemaHash": "65a5acddd87d",
    "ogHash": "f698e2cc756d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/viteee/test/mathematics-sectional-3/attempt": {
+   "title": "VITEEE Mathematics Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the VITEEE Mathematics Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "f9c182e02014",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/viteee/test/mathematics-sectional-3": {
+   "title": "VITEEE Mathematics Sectional Test 3: Instructions",
+   "description": "Practice Mathematics for VITEEE with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "VITEEE Mathematics Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "46e009267548",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "92d2b2e2a3a9",
+   "ogHash": "2edab4d9a18b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -78800,6 +81596,40 @@
    ],
    "schemaHash": "ced021dae966",
    "ogHash": "306fecc041a2",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/viteee/test/physics-sectional-3/attempt": {
+   "title": "VITEEE Physics Sectional Test 3 | TakeMockTest",
+   "description": "Attempt the VITEEE Physics Sectional Test 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9677931dc7df",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/viteee/test/physics-sectional-3": {
+   "title": "VITEEE Physics Sectional Test 3: Instructions | TakeMockTest",
+   "description": "Practice Physics for VITEEE with 35 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "VITEEE Physics Sectional Test 3"
+   ],
+   "h2Count": 10,
+   "h2Hash": "03b3b5da9ed0",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "450b7e5d8a3a",
+   "ogHash": "6684f97c8952",
    "sitemap": true,
    "robots": "index, follow"
   },
