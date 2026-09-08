@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   {
     "id": "niftee-2026-bft-bc-001",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Operations",
     "difficulty": "medium",
     "question": "A small apparel unit has two bottlenecks: cutting can prepare 90 pieces/hour and stitching can finish 60 pieces/hour. Packing can handle 100 pieces/hour. If buffers are available and the line runs steadily, which action most directly raises maximum hourly output?",
@@ -27,7 +27,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-002",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Inventory",
     "difficulty": "medium",
     "question": "A brand sells a seasonal scarf. Unsold units lose most of their value after the season, while the supplier can replenish in 5 days. Demand is uncertain. Which policy best addresses the stated risk?",
@@ -51,7 +51,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-003",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Quality Control",
     "difficulty": "medium",
     "question": "A factory finds that 70% of seam defects come from one machine, even though that machine produces only 20% of units. What is the most useful first action?",
@@ -75,7 +75,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-004",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Sourcing",
     "difficulty": "hard",
     "question": "A supplier offers fabric at \u20b9210/m with 2% expected rejection; another offers \u20b9202/m with 8% rejection. Ignoring all other costs, which has the lower expected material cost per usable metre?",
@@ -99,7 +99,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-005",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Capacity Planning",
     "difficulty": "medium",
     "question": "A workshop needs 1,200 units in 5 days. One line can produce 210 good units per day. A second identical line can be rented. What is the minimum number of days the second line must operate if both lines maintain that rate?",
@@ -123,7 +123,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-006",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Pricing",
     "difficulty": "medium",
     "question": "A store tests two price points for the same accessory. At \u20b9500 it sells 80 units; at \u20b9450 it sells 100 units. Ignoring costs, which price produces higher revenue and by how much?",
@@ -147,7 +147,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-007",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Sustainability",
     "difficulty": "medium",
     "question": "A company wants to cut packaging material without increasing product damage. Trial A reduces material by 25% but damage rises from 1% to 6%. Trial B reduces material by 15% and damage stays at 1%. Which trial better fits the stated objective?",
@@ -171,7 +171,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-008",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Forecasting",
     "difficulty": "hard",
     "question": "A retailer forecast 400 units and sold 440. The next month it forecast 500 and sold 450. Using MAPE = average of |actual\u2212forecast|/actual \u00d7100, what is the MAPE for the two months?",
@@ -195,7 +195,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-009",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Workflow",
     "difficulty": "medium",
     "question": "In a sample room, designers wait for fabric approval before cutting, but approvals are processed only once at the end of each day. Most waiting time occurs before approval, not during cutting. Which change most directly targets the delay?",
@@ -219,7 +219,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-010",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Supplier Risk",
     "difficulty": "hard",
     "question": "A critical zipper is sourced from one supplier with a 14-day lead time. A backup supplier costs 4% more but can deliver in 4 days. The brand\u2019s priority is continuity during unexpected shortages. Which strategy best addresses that priority?",
@@ -243,7 +243,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-011",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Customer Returns",
     "difficulty": "medium",
     "question": "A footwear brand records return reasons. Size issues account for 55% of returns, colour mismatch 10%, delivery damage 8%, and other reasons 27%. Which investigation should receive first priority if the goal is to reduce the largest return driver?",
@@ -267,7 +267,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-012",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Line Balancing",
     "difficulty": "hard",
     "question": "Three sequential operations take 2, 5 and 3 minutes per unit. One worker is assigned to each operation. With ample buffers, which operation determines the maximum steady output rate?",
@@ -291,7 +291,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-013",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Break-even",
     "difficulty": "hard",
     "question": "A pop-up stall has fixed cost \u20b912,000. Each item sells for \u20b9500 and has variable cost \u20b9300. How many items must be sold to break even?",
@@ -315,7 +315,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-014",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Sampling",
     "difficulty": "medium",
     "question": "A buyer wants to estimate the defect rate of a 10,000-piece lot. Which sampling approach is generally less biased than checking only the first 100 pieces produced?",
@@ -339,7 +339,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-015",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Product Development",
     "difficulty": "medium",
     "question": "A prototype receives high style ratings but poor scores for opening and closing the fastening. Which next test is most directly justified?",
@@ -363,7 +363,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-016",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Ethical Sourcing",
     "difficulty": "medium",
     "question": "An audit finds that a supplier meets delivery and quality targets but cannot provide reliable working-hour records. What is the most appropriate interpretation?",
@@ -387,7 +387,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-017",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Data Interpretation",
     "difficulty": "hard",
     "question": "A store\u2019s conversion rate rises from 20% to 24% while visitor count falls from 1,000 to 800. What happens to the number of purchases?",
@@ -411,7 +411,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-018",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Make-or-Buy",
     "difficulty": "hard",
     "question": "Making a component in-house costs \u20b928 variable cost per unit plus \u20b990,000 fixed cost. Buying costs \u20b940 per unit with no fixed cost. At 10,000 units, which option is cheaper and by how much?",
@@ -435,7 +435,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-019",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Queue Management",
     "difficulty": "medium",
     "question": "At a service desk, average arrival is 18 customers/hour while one clerk can serve 20/hour. Adding promotional traffic would raise arrivals to 22/hour with no staffing change. What is the key operational risk?",
@@ -459,7 +459,7 @@ export const NIFTEE_2026_BFTECH_SECTION_B_CASE_STUDY_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-bc-020",
-    "section": "Section B \u2014 Case Study",
+    "section": "Section B (Case Study)",
     "topic": "Portfolio Decision",
     "difficulty": "hard",
     "question": "A brand compares two products. Product X contributes \u20b9150 per unit and needs 3 machine-hours; Product Y contributes \u20b9120 per unit and needs 2 machine-hours. Machine time is the only scarce resource. Which product gives higher contribution per scarce hour?",

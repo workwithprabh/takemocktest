@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { EXAM_LIST, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
-import { getQuestionsForTest } from '@/lib/questions';
+import { getQuestionsForTest, displayLabel } from '@/lib/questions';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, SITE_NAME, SITE_URL, jsonLdHtml } from '@/lib/schema';
@@ -2073,7 +2073,7 @@ export default async function TestInstructionsPage({
         .map(([level, count]) => `${count} ${level}`)
     : [];
   const topTopics = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' }).format(
-    topicCounts.slice(0, 3).map(([topic]) => topic),
+    topicCounts.slice(0, 3).map(([topic]) => displayLabel(topic)),
   );
   const usesQuestionLevelScoring = questions.some(
     (question) =>
@@ -2134,7 +2134,7 @@ export default async function TestInstructionsPage({
         {
           question: 'Is there negative marking in this test?',
           answer: usesQuestionLevelScoring
-            ? 'Marks vary by question in this section — see the scoring note above for the exact breakdown.'
+            ? 'Marks vary by question in this section: see the scoring note above for the exact breakdown.'
             : test.negativeMarking > 0
               ? `Yes. Each wrong answer deducts ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}, and each correct answer earns ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'}. Unattempted questions score zero.`
               : 'No. This section carries no negative marking, so a wrong answer costs nothing beyond the mark you missed.',
@@ -2388,7 +2388,7 @@ export default async function TestInstructionsPage({
               <div className="grid gap-3 sm:grid-cols-2">
                 {topicCounts.map(([topic, count]) => (
                   <div key={topic} className="border border-ink-200 bg-white p-4">
-                    <h3 className="text-sm font-semibold text-ink-900">{topic}</h3>
+                    <h3 className="text-sm font-semibold text-ink-900">{displayLabel(topic)}</h3>
                     <p className="mt-1 text-xs leading-5 text-ink-700">{count} {count === 1 ? 'question' : 'questions'}</p>
                   </div>
                 ))}
@@ -2442,7 +2442,7 @@ export default async function TestInstructionsPage({
               {reasoningQuestionCount} of the {questionCount} questions here are pure reasoning, and reasoning is the
               one part of a paper that is not exam-specific: a seating puzzle does not change because it appears in a
               bank paper rather than a railway one. Our Logical Reasoning section pools {LR_TOTAL_QUESTIONS} such
-              questions from across every exam on this site and sorts them two ways &mdash; by difficulty, so you can
+              questions from across every exam on this site and sorts them two ways: by difficulty, so you can
               find your level, and by topic, so you can drill the family that costs you time.
             </p>
             <p className="mt-3 max-w-3xl text-sm leading-7 text-ink-700">

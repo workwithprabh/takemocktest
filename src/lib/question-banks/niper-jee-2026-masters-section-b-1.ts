@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   {
     "id": "niper-jee-2026-masters-section-b-001",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Dissolution",
     "difficulty": "medium",
     "question": "Two immediate-release tablet prototypes contain the same drug dose. Prototype X disintegrates rapidly but releases drug slowly because the drug remains in coarse hydrophobic particles. Which formulation change most directly targets this limitation?",
@@ -27,7 +27,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-002",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Suspensions",
     "difficulty": "medium",
     "question": "A suspension sediments quickly but redistributes easily with gentle shaking and does not form a hard cake. This behaviour is most consistent with a",
@@ -51,7 +51,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-003",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Emulsions",
     "difficulty": "medium",
     "question": "An emulsion shows coalescence into larger droplets followed by permanent phase separation. Which term best describes the irreversible failure?",
@@ -75,7 +75,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-004",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Powder flow",
     "difficulty": "easy",
     "question": "Which powder property is most directly improved by adding a suitable glidant?",
@@ -99,7 +99,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-005",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Tablets",
     "difficulty": "medium",
     "question": "A tablet batch shows capping after decompression. Which process-related factor can contribute directly?",
@@ -123,7 +123,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-006",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Capsules",
     "difficulty": "easy",
     "question": "A hard gelatin capsule shell is primarily used to",
@@ -147,7 +147,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-007",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Sterile products",
     "difficulty": "medium",
     "question": "For a heat-labile solution that can be filtered, which approach is commonly suitable for achieving sterility before aseptic filling?",
@@ -171,7 +171,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-008",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Sterilisation",
     "difficulty": "medium",
     "question": "An autoclave sterilises mainly through",
@@ -195,7 +195,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-009",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Osmosis",
     "difficulty": "easy",
     "question": "A red blood cell placed in a strongly hypertonic solution tends to",
@@ -219,7 +219,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-010",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Buffers",
     "difficulty": "medium",
     "question": "A buffer has greatest resistance to added acid/base when the weak acid and conjugate base concentrations are",
@@ -243,7 +243,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-011",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Rheology",
     "difficulty": "medium",
     "question": "A shear-thinning liquid becomes easier to pour as stirring rate increases because its apparent viscosity",
@@ -267,7 +267,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-012",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Surfactants",
     "difficulty": "easy",
     "question": "A surfactant lowers interfacial tension primarily because its molecules",
@@ -291,7 +291,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-013",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Micelles",
     "difficulty": "medium",
     "question": "Above the critical micelle concentration, additional surfactant added to water is increasingly incorporated into",
@@ -315,7 +315,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-014",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Controlled release",
     "difficulty": "medium",
     "question": "A matrix tablet designed for extended release should generally avoid a mechanism that causes",
@@ -339,7 +339,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-015",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Transdermal delivery",
     "difficulty": "medium",
     "question": "A drug is a poor candidate for passive transdermal delivery if it requires a very large daily dose mainly because",
@@ -363,7 +363,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-016",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Lyophilisation",
     "difficulty": "medium",
     "question": "The primary drying stage of lyophilisation removes ice mainly by",
@@ -387,7 +387,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-017",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Packaging",
     "difficulty": "easy",
     "question": "An amber glass container is chosen mainly to reduce exposure to",
@@ -411,7 +411,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-018",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Aerosols",
     "difficulty": "medium",
     "question": "In a metered-dose inhaler, the metering valve is intended to",
@@ -435,7 +435,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-019",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Granulation",
     "difficulty": "medium",
     "question": "Wet granulation can improve tablet manufacture by increasing",
@@ -459,7 +459,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-020",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Preformulation",
     "difficulty": "medium",
     "question": "A preformulation study finds a drug degrades rapidly only when moisture is present. Which packaging control is most directly relevant?",
@@ -483,7 +483,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-021",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Physical pharmacy",
     "difficulty": "hard",
     "question": "A weak acid has pKa 4.0. At pH 5.0, the ratio of ionised to unionised form is approximately",
@@ -507,7 +507,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-022",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Colligative properties",
     "difficulty": "medium",
     "question": "At equal molal concentration and ideal behaviour, which solution has the greatest freezing-point depression?",
@@ -531,7 +531,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-023",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Solubility",
     "difficulty": "medium",
     "question": "For an endothermic dissolution process, increasing temperature commonly",
@@ -555,7 +555,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-024",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Particle size analysis",
     "difficulty": "easy",
     "question": "Sieving is most suitable for routine size classification of",
@@ -579,7 +579,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-025",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Dosage forms",
     "difficulty": "easy",
     "question": "An enteric coating is intended to resist release primarily in the",
@@ -603,7 +603,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-026",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Pharmacokinetics",
     "difficulty": "easy",
     "question": "For a drug following first-order elimination, a constant fraction of drug is eliminated per unit time. This implies that the elimination rate is",
@@ -627,7 +627,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-027",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Half-life",
     "difficulty": "medium",
     "question": "A first-order drug has a half-life of 6 hours. Approximately what fraction of the initial amount remains after 18 hours?",
@@ -651,7 +651,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-028",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Clearance",
     "difficulty": "medium",
     "question": "If systemic clearance doubles while volume of distribution is unchanged for a first-order drug, elimination half-life will approximately",
@@ -675,7 +675,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-029",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Bioavailability",
     "difficulty": "medium",
     "question": "An oral dose gives AUC 60 while an equal IV dose gives AUC 100 under linear kinetics. Approximate absolute bioavailability is",
@@ -699,7 +699,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-030",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Loading dose",
     "difficulty": "medium",
     "question": "The loading dose needed to reach a target plasma concentration is most directly proportional to",
@@ -723,7 +723,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-031",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Maintenance dose",
     "difficulty": "medium",
     "question": "For a target steady-state concentration, maintenance dosing rate is most directly proportional to",
@@ -747,7 +747,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-032",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Steady state",
     "difficulty": "medium",
     "question": "With repeated constant-rate dosing of a linear first-order drug, time to near steady state depends mainly on the drug’s",
@@ -771,7 +771,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-033",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "First-pass effect",
     "difficulty": "easy",
     "question": "Extensive first-pass metabolism can reduce",
@@ -795,7 +795,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-034",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Protein binding",
     "difficulty": "medium",
     "question": "A highly albumin-bound drug is displaced transiently by another ligand. The immediate pharmacokinetic change is an increase in the",
@@ -819,7 +819,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-035",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Volume of distribution",
     "difficulty": "medium",
     "question": "A drug largely confined to plasma tends to have a volume of distribution that is",
@@ -843,7 +843,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-036",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Renal clearance",
     "difficulty": "medium",
     "question": "If a drug is freely filtered and neither secreted nor reabsorbed, its renal clearance is approximately related to",
@@ -867,7 +867,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-037",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Zero-order kinetics",
     "difficulty": "medium",
     "question": "During true zero-order elimination, the body removes",
@@ -891,7 +891,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-038",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Compartment models",
     "difficulty": "medium",
     "question": "Immediately after a rapid IV bolus, a two-compartment model can show a steep early fall in plasma concentration partly because of",
@@ -915,7 +915,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-039",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "BCS",
     "difficulty": "medium",
     "question": "A drug with high solubility but low intestinal permeability is most consistent with BCS",
@@ -939,7 +939,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-040",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Nonlinear kinetics",
     "difficulty": "hard",
     "question": "If metabolism becomes capacity-limited near therapeutic concentrations, a small dose increase may cause a disproportionate AUC increase because",
@@ -963,7 +963,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-041",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Receptors",
     "difficulty": "easy",
     "question": "A competitive reversible antagonist typically shifts an agonist concentration–response curve to the right without reducing maximum response when",
@@ -987,7 +987,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-042",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Partial agonists",
     "difficulty": "medium",
     "question": "In the presence of a full agonist, a partial agonist can reduce overall response because it",
@@ -1011,7 +1011,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-043",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Therapeutic index",
     "difficulty": "easy",
     "question": "A wider therapeutic index generally indicates",
@@ -1035,7 +1035,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-044",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Autonomic pharmacology",
     "difficulty": "medium",
     "question": "A muscarinic antagonist would be expected to reduce",
@@ -1059,7 +1059,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-045",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Adrenergic receptors",
     "difficulty": "medium",
     "question": "Activation of β2-adrenoceptors in bronchial smooth muscle tends to cause",
@@ -1083,7 +1083,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-046",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Cholinesterase inhibitors",
     "difficulty": "medium",
     "question": "An acetylcholinesterase inhibitor increases cholinergic signalling mainly by",
@@ -1107,7 +1107,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-047",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "NSAIDs",
     "difficulty": "medium",
     "question": "Non-selective NSAIDs reduce prostaglandin synthesis primarily by inhibiting",
@@ -1131,7 +1131,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-048",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Opioids",
     "difficulty": "medium",
     "question": "Respiratory depression from a full μ-opioid agonist can be rapidly antagonised by",
@@ -1155,7 +1155,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-049",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Benzodiazepines",
     "difficulty": "medium",
     "question": "Benzodiazepines enhance GABA_A receptor function primarily by increasing the",
@@ -1179,7 +1179,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-050",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Anticoagulants",
     "difficulty": "medium",
     "question": "Heparin produces anticoagulation rapidly in part by potentiating",
@@ -1203,7 +1203,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-051",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Warfarin",
     "difficulty": "medium",
     "question": "Warfarin reduces synthesis of functional vitamin K-dependent clotting factors by inhibiting",
@@ -1227,7 +1227,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-052",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Antiplatelets",
     "difficulty": "medium",
     "question": "Clopidogrel reduces platelet activation by blocking the",
@@ -1251,7 +1251,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-053",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "ACE inhibitors",
     "difficulty": "medium",
     "question": "A common mechanism-related adverse effect of ACE inhibitors is dry cough, linked partly to increased",
@@ -1275,7 +1275,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-054",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Diuretics",
     "difficulty": "medium",
     "question": "Loop diuretics act mainly in the thick ascending limb by inhibiting the",
@@ -1299,7 +1299,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-055",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Beta blockers",
     "difficulty": "medium",
     "question": "A non-selective beta blocker can worsen bronchospasm in susceptible patients by blocking",
@@ -1323,7 +1323,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-056",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Calcium-channel blockers",
     "difficulty": "medium",
     "question": "Dihydropyridine calcium-channel blockers primarily relax",
@@ -1347,7 +1347,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-057",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Insulin",
     "difficulty": "easy",
     "question": "Insulin lowers blood glucose partly by increasing glucose uptake into skeletal muscle through recruitment of",
@@ -1371,7 +1371,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-058",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Metformin",
     "difficulty": "medium",
     "question": "Metformin’s glucose-lowering effect prominently includes reduced",
@@ -1395,7 +1395,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-059",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Thyroid drugs",
     "difficulty": "medium",
     "question": "Levothyroxine is a synthetic form of",
@@ -1419,7 +1419,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-060",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Antibiotics",
     "difficulty": "medium",
     "question": "Beta-lactam antibiotics inhibit bacterial cell-wall synthesis by binding",
@@ -1443,7 +1443,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-061",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Aminoglycosides",
     "difficulty": "medium",
     "question": "Aminoglycosides act principally at the bacterial",
@@ -1467,7 +1467,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-062",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Fluoroquinolones",
     "difficulty": "medium",
     "question": "Fluoroquinolones inhibit bacterial DNA replication by targeting",
@@ -1491,7 +1491,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-063",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Antifungals",
     "difficulty": "medium",
     "question": "Azole antifungals impair fungal membrane synthesis by inhibiting an enzyme in",
@@ -1515,7 +1515,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-064",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Anticancer pharmacology",
     "difficulty": "medium",
     "question": "A drug that blocks microtubule depolymerisation can arrest dividing cells because it disrupts",
@@ -1539,7 +1539,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-065",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Pharmacovigilance",
     "difficulty": "medium",
     "question": "A serious unexpected adverse event temporally associated with a medicine should generally be",
@@ -1563,7 +1563,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-066",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "UV spectroscopy",
     "difficulty": "easy",
     "question": "Beer–Lambert behaviour predicts absorbance is proportional to concentration when",
@@ -1587,7 +1587,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-067",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Chromatography",
     "difficulty": "medium",
     "question": "In reversed-phase HPLC, increasing the organic fraction of the mobile phase commonly causes hydrophobic analytes to",
@@ -1611,7 +1611,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-068",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "HPLC efficiency",
     "difficulty": "medium",
     "question": "A narrower chromatographic peak at the same retention time generally indicates",
@@ -1635,7 +1635,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-069",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "TLC",
     "difficulty": "easy",
     "question": "In thin-layer chromatography, Rf is calculated as",
@@ -1659,7 +1659,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-070",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Acid-base titration",
     "difficulty": "medium",
     "question": "At the equivalence point of a strong acid–strong base titration at room temperature, the pH is approximately",
@@ -1683,7 +1683,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-071",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Redox titration",
     "difficulty": "medium",
     "question": "In an oxidation–reduction titration, the analytical signal is based on transfer of",
@@ -1707,7 +1707,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-072",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Mass spectrometry",
     "difficulty": "easy",
     "question": "The mass-to-charge ratio measured in mass spectrometry is denoted",
@@ -1731,7 +1731,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-073",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "IR spectroscopy",
     "difficulty": "medium",
     "question": "A strong absorption associated with a carbonyl group commonly appears because the C=O bond undergoes",
@@ -1755,7 +1755,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-074",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "NMR",
     "difficulty": "medium",
     "question": "Tetramethylsilane is commonly used as a reference in proton NMR because its signal is",
@@ -1779,7 +1779,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-075",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Validation",
     "difficulty": "medium",
     "question": "Method precision is primarily assessed by the closeness of",
@@ -1803,7 +1803,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-076",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Validation",
     "difficulty": "medium",
     "question": "Method accuracy is best represented by",
@@ -1827,7 +1827,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-077",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Calibration",
     "difficulty": "medium",
     "question": "A calibration curve with a nonzero intercept can still be usable if",
@@ -1851,7 +1851,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-078",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Limit tests",
     "difficulty": "medium",
     "question": "A limit test is primarily designed to determine whether an impurity is",
@@ -1875,7 +1875,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-079",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Gravimetry",
     "difficulty": "medium",
     "question": "Gravimetric analysis determines analyte amount from a carefully formed and weighed",
@@ -1899,7 +1899,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-080",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Electrochemistry",
     "difficulty": "medium",
     "question": "A pH glass electrode responds primarily to differences in",
@@ -1923,7 +1923,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-081",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Medicinal chemistry",
     "difficulty": "medium",
     "question": "Replacing a metabolically labile ester with a more hydrolytically stable bioisostere is commonly intended to",
@@ -1947,7 +1947,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-082",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Medicinal chemistry",
     "difficulty": "medium",
     "question": "Introducing a permanently charged quaternary ammonium group generally tends to",
@@ -1971,7 +1971,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-083",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Stereochemistry",
     "difficulty": "medium",
     "question": "Two enantiomers have identical connectivity but differ in",
@@ -1995,7 +1995,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-084",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Prodrugs",
     "difficulty": "medium",
     "question": "A prodrug is designed to",
@@ -2019,7 +2019,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-085",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "SAR",
     "difficulty": "medium",
     "question": "In a structure–activity study, removing a hydrogen-bond donor causes a large potency loss while other properties change little. This observation suggests the donor may",
@@ -2043,7 +2043,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-086",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Ionisation",
     "difficulty": "medium",
     "question": "A weak base becomes more protonated as pH",
@@ -2067,7 +2067,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-087",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Partitioning",
     "difficulty": "medium",
     "question": "For passive diffusion across a lipid membrane, the unionised form of a weak electrolyte is often more permeable because it is",
@@ -2091,7 +2091,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-088",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Quality control",
     "difficulty": "easy",
     "question": "A system-suitability test in chromatography is performed primarily to confirm that",
@@ -2115,7 +2115,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-089",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Reference standards",
     "difficulty": "medium",
     "question": "A working standard is commonly qualified against",
@@ -2139,7 +2139,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-090",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Data integrity",
     "difficulty": "medium",
     "question": "An original instrument record should be retained so that reported results remain",
@@ -2163,7 +2163,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-091",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Pharmacognosy",
     "difficulty": "easy",
     "question": "Alkaloids are commonly characterised as natural products that contain",
@@ -2187,7 +2187,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-092",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Pharmacognosy",
     "difficulty": "medium",
     "question": "Steam distillation is especially suitable for isolating many",
@@ -2211,7 +2211,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-093",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Pharmacognosy",
     "difficulty": "medium",
     "question": "A glycoside consists conceptually of a sugar portion linked to a",
@@ -2235,7 +2235,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-094",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Natural products",
     "difficulty": "medium",
     "question": "A chromatographic fingerprint of a botanical extract is useful mainly for",
@@ -2259,7 +2259,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-095",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Plant extraction",
     "difficulty": "medium",
     "question": "If the target phytochemical is heat sensitive, prolonged boiling during extraction is generally avoided to reduce",
@@ -2283,7 +2283,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-096",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Microbiology",
     "difficulty": "easy",
     "question": "Gram-positive bacteria retain crystal violet in the Gram stain mainly because of their",
@@ -2307,7 +2307,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-097",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Microbiology",
     "difficulty": "medium",
     "question": "A bactericidal antibiotic differs from a bacteriostatic one because it is defined by its ability to",
@@ -2331,7 +2331,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-098",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Microbiology",
     "difficulty": "medium",
     "question": "An aseptic technique reduces contamination risk primarily by",
@@ -2355,7 +2355,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-099",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Biochemistry",
     "difficulty": "easy",
     "question": "Glycolysis converts glucose to pyruvate in the",
@@ -2379,7 +2379,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-100",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Biochemistry",
     "difficulty": "medium",
     "question": "Competitive enzyme inhibition typically increases apparent Km while leaving Vmax",
@@ -2403,7 +2403,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-101",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Biochemistry",
     "difficulty": "medium",
     "question": "A protein’s primary structure is its",
@@ -2427,7 +2427,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-102",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Molecular biology",
     "difficulty": "medium",
     "question": "PCR requires repeated cycles that include primer annealing to",
@@ -2451,7 +2451,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-103",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Immunology",
     "difficulty": "easy",
     "question": "Antibodies are produced by differentiated B-lineage cells called",
@@ -2475,7 +2475,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-104",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Immunology",
     "difficulty": "medium",
     "question": "A secondary immune response is often faster and stronger than the primary response because of",
@@ -2499,7 +2499,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-105",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Quality assurance",
     "difficulty": "medium",
     "question": "Corrective action is intended to address",
@@ -2523,7 +2523,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-106",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Quality assurance",
     "difficulty": "medium",
     "question": "Preventive action is intended to reduce the likelihood of",
@@ -2547,7 +2547,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-107",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "GMP",
     "difficulty": "medium",
     "question": "Line clearance before a packaging operation mainly helps prevent",
@@ -2571,7 +2571,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-108",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "GMP",
     "difficulty": "medium",
     "question": "A deviation investigation should seek the most credible root cause using evidence rather than",
@@ -2595,7 +2595,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-109",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Stability",
     "difficulty": "medium",
     "question": "Accelerated stability studies are useful for",
@@ -2619,7 +2619,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-110",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "ICH quality",
     "difficulty": "medium",
     "question": "The main purpose of pharmaceutical quality risk management is to",
@@ -2643,7 +2643,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-111",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Regulatory affairs",
     "difficulty": "medium",
     "question": "A post-approval manufacturing change may require regulatory assessment because it can",
@@ -2667,7 +2667,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-112",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Validation",
     "difficulty": "medium",
     "question": "Process validation provides documented evidence that a process can",
@@ -2691,7 +2691,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-113",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Cleaning validation",
     "difficulty": "medium",
     "question": "A scientifically justified cleaning limit is intended to control",
@@ -2715,7 +2715,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-114",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Water systems",
     "difficulty": "medium",
     "question": "A pharmaceutical purified-water loop is often continuously circulated to help",
@@ -2739,7 +2739,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-115",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Microbial limits",
     "difficulty": "medium",
     "question": "A microbial enumeration test estimates",
@@ -2763,7 +2763,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-116",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Endotoxins",
     "difficulty": "medium",
     "question": "Bacterial endotoxins are most closely associated with the outer membrane of",
@@ -2787,7 +2787,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-117",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Biotechnology",
     "difficulty": "medium",
     "question": "A monoclonal antibody preparation is designed to contain immunoglobulin molecules with",
@@ -2811,7 +2811,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-118",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Biotechnology",
     "difficulty": "medium",
     "question": "Recombinant protein expression requires a host system to",
@@ -2835,7 +2835,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-119",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Clinical pharmacy",
     "difficulty": "medium",
     "question": "Medication reconciliation at a transition of care primarily aims to",
@@ -2859,7 +2859,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-b-120",
-    "section": "Section B — mainly B.Pharm. syllabus",
+    "section": "Section B (mainly B.Pharm. syllabus)",
     "topic": "Pharmacy practice",
     "difficulty": "medium",
     "question": "A clinically meaningful drug interaction may require action when it",

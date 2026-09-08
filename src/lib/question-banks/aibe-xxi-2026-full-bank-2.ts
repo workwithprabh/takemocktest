@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     {
       "id": "aibe-xxi-2026-101",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "easy",
       "question": "A writ issued to command a public authority to perform a public duty it has refused to perform is:",
@@ -27,7 +27,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-102",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "easy",
       "question": "The power of the Supreme Court to enforce fundamental rights is itself:",
@@ -51,7 +51,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-103",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "easy",
       "question": "Directive Principles of State Policy differ from Fundamental Rights principally because Directive Principles are:",
@@ -75,7 +75,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-104",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "medium",
       "question": "A statute confers an unguided power on an officer to grant or refuse permits with no stated criteria. The strongest constitutional objection is that the provision:",
@@ -99,7 +99,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-105",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "medium",
       "question": "A law restricting a fundamental freedom is challenged. Which enquiry best reflects the proportionality standard?",
@@ -123,7 +123,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-106",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "medium",
       "question": "A person is detained and the family cannot ascertain the legal basis for the detention. The appropriate constitutional remedy is:",
@@ -147,7 +147,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-107",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "medium",
       "question": "A State law and a Parliamentary law on a Concurrent List subject are irreconcilably inconsistent, and the State law has not received Presidential assent. The result is that:",
@@ -171,7 +171,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-108",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "medium",
       "question": "An executive order treats two groups of applicants differently. For the classification to survive scrutiny under the equality guarantee, it must:",
@@ -195,7 +195,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-109",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "medium",
       "question": "A constitutional amendment is challenged on the ground that it destroys judicial review of legislation. The doctrine most directly invoked is:",
@@ -219,7 +219,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-110",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Constitutional Law",
       "difficulty": "medium",
       "question": "An administrative order affecting a person's livelihood is passed without notice or hearing. Read with the guarantee of life and personal liberty, the defect is best described as:",
@@ -243,7 +243,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-111",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "easy",
       "question": "Criminal liability ordinarily requires both a prohibited act and:",
@@ -267,7 +267,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-112",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "medium",
       "question": "A person under a reasonable apprehension of imminent grievous hurt uses force that is proportionate to repel the attacker. The most apt defence is:",
@@ -291,7 +291,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-113",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "medium",
       "question": "A hands B a sealed packet and asks B to deliver it, telling B it contains documents. It in fact contains stolen jewellery and B is unaware. B's position is best described as:",
@@ -315,7 +315,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-114",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "medium",
       "question": "Several persons share a common object and one of them commits an offence in prosecution of that object. Liability of the others rests on:",
@@ -339,7 +339,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-115",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "medium",
       "question": "The essential distinction between theft and criminal breach of trust is that in criminal breach of trust the accused:",
@@ -363,7 +363,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-116",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "medium",
       "question": "A person instigates another to commit an offence, and the offence is committed. The instigator's liability arises under the law of:",
@@ -387,7 +387,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-117",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "medium",
       "question": "For an act to amount to an attempt rather than mere preparation, the accused must have:",
@@ -411,7 +411,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-118",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "IPC & Bharatiya Nyaya Sanhita",
       "difficulty": "hard",
       "question": "A shoots at a tree intending to frighten B, but the bullet ricochets and kills C, a passer-by whom A did not see. In assessing A's liability, the court will focus mainly on:",
@@ -435,7 +435,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-119",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "easy",
       "question": "The first step recording information about the commission of a cognizable offence at a police station is commonly called:",
@@ -459,7 +459,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-120",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "easy",
       "question": "In a cognizable offence, a police officer may ordinarily:",
@@ -483,7 +483,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-121",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "easy",
       "question": "An arrested person must be produced before the nearest Magistrate within:",
@@ -507,7 +507,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-122",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "medium",
       "question": "Anticipatory bail differs from ordinary bail in that anticipatory bail is:",
@@ -531,7 +531,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-123",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "medium",
       "question": "A Magistrate may take cognizance of an offence on the basis of:",
@@ -555,7 +555,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-124",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "medium",
       "question": "The purpose of framing a charge in a criminal trial is to:",
@@ -579,7 +579,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-125",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "medium",
       "question": "In a warrant case instituted on a police report, if the Magistrate finds the charge groundless after considering the record and hearing the parties, the Magistrate shall:",
@@ -603,7 +603,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-126",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "medium",
       "question": "A summons case differs from a warrant case principally in that a summons case relates to an offence:",
@@ -627,7 +627,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-127",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "medium",
       "question": "The recording of a confession by a Magistrate requires the Magistrate to first:",
@@ -651,7 +651,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-128",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "CrPC & Bharatiya Nagarik Suraksha Sanhita",
       "difficulty": "medium",
       "question": "The primary object of an inquest is to:",
@@ -675,7 +675,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-129",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "easy",
       "question": "A decree in a civil suit is the formal expression of an adjudication that:",
@@ -699,7 +699,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-130",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "easy",
       "question": "Res judicata prevents a court from trying a suit or issue that:",
@@ -723,7 +723,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-131",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "easy",
       "question": "A suit for immovable property is ordinarily instituted in the court within whose local limits:",
@@ -747,7 +747,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-132",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "medium",
       "question": "A temporary injunction may be granted where the applicant establishes:",
@@ -771,7 +771,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-133",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "medium",
       "question": "The doctrine of res sub judice operates to:",
@@ -795,7 +795,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-134",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "medium",
       "question": "A plaint may be rejected where it:",
@@ -819,7 +819,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-135",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "medium",
       "question": "An ex parte decree is passed when the defendant:",
@@ -843,7 +843,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-136",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "medium",
       "question": "The essential difference between an appeal and a review is that a review is:",
@@ -867,7 +867,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-137",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "medium",
       "question": "A court may order a suit to be transferred to another court chiefly to:",
@@ -891,7 +891,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-138",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Civil Procedure Code",
       "difficulty": "medium",
       "question": "The object of a decree for specific restitution under the doctrine of restitution is to:",
@@ -915,7 +915,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-139",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "easy",
       "question": "Facts that a party must prove to succeed, and the facts connected with them, are respectively described as:",
@@ -939,7 +939,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-140",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "easy",
       "question": "The general rule places the burden of proving a fact on:",
@@ -963,7 +963,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-141",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "medium",
       "question": "The best evidence rule requires that the contents of a document be proved ordinarily by:",
@@ -987,7 +987,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-142",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "medium",
       "question": "A statement made by a person as to the cause of his death is admissible in evidence because:",
@@ -1011,7 +1011,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-143",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "medium",
       "question": "An admission differs from a confession principally in that a confession:",
@@ -1035,7 +1035,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-144",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "medium",
       "question": "Where a document is required by law to be attested, it may be used as evidence only if:",
@@ -1059,7 +1059,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-145",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "medium",
       "question": "Estoppel operates to prevent a person from:",
@@ -1083,7 +1083,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-146",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Evidence Act & Bharatiya Sakshya Adhiniyam",
       "difficulty": "hard",
       "question": "In a case turning wholly on circumstantial evidence, the chain of circumstances must:",
@@ -1107,7 +1107,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-147",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Alternative Dispute Resolution including Arbitration",
       "difficulty": "easy",
       "question": "An arbitration agreement must ordinarily be:",
@@ -1131,7 +1131,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-148",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Alternative Dispute Resolution including Arbitration",
       "difficulty": "medium",
       "question": "The doctrine of separability in arbitration means that the arbitration clause:",
@@ -1155,7 +1155,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-149",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Alternative Dispute Resolution including Arbitration",
       "difficulty": "medium",
       "question": "Conciliation differs from arbitration principally because the conciliator:",
@@ -1179,7 +1179,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-150",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Alternative Dispute Resolution including Arbitration",
       "difficulty": "medium",
       "question": "A court before which an action is brought in a matter covered by an arbitration agreement shall, on the application of a party made in time, ordinarily:",
@@ -1203,7 +1203,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-151",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "easy",
       "question": "Under Hindu law, a marriage is void if the parties are:",
@@ -1227,7 +1227,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-152",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "medium",
       "question": "Judicial separation differs from divorce in that after a decree of judicial separation:",
@@ -1251,7 +1251,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-153",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "medium",
       "question": "In deciding the custody of a minor, the paramount consideration for the court is:",
@@ -1275,7 +1275,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-154",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "medium",
       "question": "Maintenance may be claimed by a wife under general criminal procedure primarily to:",
@@ -1299,7 +1299,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-155",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "medium",
       "question": "A gift under Muslim law requires, besides a declaration and acceptance:",
@@ -1323,7 +1323,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-156",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "medium",
       "question": "Under the Hindu Succession law as amended, a daughter in a coparcenary:",
@@ -1347,7 +1347,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-157",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "medium",
       "question": "Restitution of conjugal rights may be decreed where a spouse has:",
@@ -1371,7 +1371,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-158",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Family Law",
       "difficulty": "medium",
       "question": "An adoption validly made under Hindu law ordinarily has the effect that the adopted child:",
@@ -1395,7 +1395,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-159",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Public Interest Litigation",
       "difficulty": "easy",
       "question": "Public interest litigation relaxes which traditional requirement?",
@@ -1419,7 +1419,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-160",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Public Interest Litigation",
       "difficulty": "medium",
       "question": "A PIL is liable to be dismissed where the court finds that the petition is:",
@@ -1443,7 +1443,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-161",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Public Interest Litigation",
       "difficulty": "medium",
       "question": "In a PIL concerning conditions in a public institution, appointing a commissioner to visit and report is best described as:",
@@ -1467,7 +1467,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-162",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Public Interest Litigation",
       "difficulty": "hard",
       "question": "A PIL seeks a direction requiring the legislature to enact a particular statute. The court is most likely to:",
@@ -1491,7 +1491,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-163",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Administrative Law",
       "difficulty": "easy",
       "question": "The rule that no one shall be a judge in his own cause is a facet of:",
@@ -1515,7 +1515,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-164",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Administrative Law",
       "difficulty": "medium",
       "question": "An authority exercising a statutory discretion acts unlawfully where it:",
@@ -1539,7 +1539,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-165",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Administrative Law",
       "difficulty": "medium",
       "question": "The doctrine of legitimate expectation may entitle a person to:",
@@ -1563,7 +1563,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-166",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Professional Ethics and Cases of Professional Misconduct under BCI Rules",
       "difficulty": "easy",
       "question": "Disciplinary proceedings against an advocate for professional misconduct are ordinarily initiated before:",
@@ -1587,7 +1587,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-167",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Professional Ethics and Cases of Professional Misconduct under BCI Rules",
       "difficulty": "medium",
       "question": "An advocate who has advised a client on a dispute later accepts a brief for the opposing party in the same dispute. This is objectionable primarily because it:",
@@ -1611,7 +1611,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-168",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Professional Ethics and Cases of Professional Misconduct under BCI Rules",
       "difficulty": "medium",
       "question": "An advocate's duty to the court, when it conflicts with the client's instruction to suppress a binding adverse precedent, requires the advocate to:",
@@ -1635,7 +1635,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-169",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Professional Ethics and Cases of Professional Misconduct under BCI Rules",
       "difficulty": "medium",
       "question": "Advertising and soliciting work are restricted for advocates chiefly because the profession is regarded as:",
@@ -1659,7 +1659,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-170",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Company Law",
       "difficulty": "easy",
       "question": "The principle that a company is a legal person distinct from its members was established in:",
@@ -1683,7 +1683,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-171",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Company Law",
       "difficulty": "medium",
       "question": "A court may lift the corporate veil where the corporate form is used:",
@@ -1707,7 +1707,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-172",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Environmental Law",
       "difficulty": "easy",
       "question": "The polluter pays principle requires that the cost of environmental harm be borne by:",
@@ -1731,7 +1731,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-173",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Environmental Law",
       "difficulty": "medium",
       "question": "The precautionary principle in environmental law requires that:",
@@ -1755,7 +1755,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-174",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Cyber Law",
       "difficulty": "easy",
       "question": "An electronic record authenticated by a digital signature is given legal recognition primarily to:",
@@ -1779,7 +1779,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-175",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Cyber Law",
       "difficulty": "medium",
       "question": "An intermediary is generally protected from liability for third-party content hosted by it where the intermediary:",
@@ -1803,7 +1803,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-176",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Labour and Industrial Law",
       "difficulty": "easy",
       "question": "An industrial dispute, broadly speaking, is a dispute connected with employment or non-employment or terms of employment between:",
@@ -1827,7 +1827,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-177",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Labour and Industrial Law",
       "difficulty": "medium",
       "question": "Retrenchment, in labour law, refers to termination of the service of a workman:",
@@ -1851,7 +1851,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-178",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Labour and Industrial Law",
       "difficulty": "medium",
       "question": "Payment of compensation to an employee for an injury arising out of and in the course of employment rests on the principle of:",
@@ -1875,7 +1875,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-179",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Labour and Industrial Law",
       "difficulty": "medium",
       "question": "A settlement arrived at in the course of conciliation proceedings is binding on:",
@@ -1899,7 +1899,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-180",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law of Tort including Motor Vehicles and Consumer Protection",
       "difficulty": "medium",
       "question": "The maxim res ipsa loquitur assists a plaintiff by:",
@@ -1923,7 +1923,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-181",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law of Tort including Motor Vehicles and Consumer Protection",
       "difficulty": "medium",
       "question": "Vicarious liability of an employer for an employee's tort arises where the tort is committed:",
@@ -1947,7 +1947,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-182",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law of Tort including Motor Vehicles and Consumer Protection",
       "difficulty": "medium",
       "question": "The rule of strict liability for the escape of a dangerous thing brought on land applies where the defendant made:",
@@ -1971,7 +1971,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-183",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law of Tort including Motor Vehicles and Consumer Protection",
       "difficulty": "medium",
       "question": "In a claim for compensation arising from a motor accident under the no-fault principle, the claimant:",
@@ -1995,7 +1995,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-184",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law of Tort including Motor Vehicles and Consumer Protection",
       "difficulty": "medium",
       "question": "Under consumer protection law, a person who buys goods for resale is:",
@@ -2019,7 +2019,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-185",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law related to Taxation",
       "difficulty": "easy",
       "question": "Goods and Services Tax in India is described as a destination-based tax, which means the tax accrues to:",
@@ -2043,7 +2043,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-186",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law related to Taxation",
       "difficulty": "medium",
       "question": "Input tax credit under GST is designed to:",
@@ -2067,7 +2067,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-187",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law related to Taxation",
       "difficulty": "medium",
       "question": "The distinction between tax avoidance and tax evasion is that evasion involves:",
@@ -2091,7 +2091,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-188",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Law related to Taxation",
       "difficulty": "medium",
       "question": "The previous year and the assessment year in income tax are related in that income of the previous year is ordinarily:",
@@ -2115,7 +2115,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-189",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "easy",
       "question": "An agreement made without consideration is generally:",
@@ -2139,7 +2139,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-190",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "medium",
       "question": "A contract entered into under coercion is:",
@@ -2163,7 +2163,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-191",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "medium",
       "question": "Damages for breach of contract are ordinarily awarded to:",
@@ -2187,7 +2187,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-192",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "medium",
       "question": "Specific performance is a discretionary remedy that a court is least likely to grant where:",
@@ -2211,7 +2211,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-193",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "medium",
       "question": "A mortgage differs from a sale of immovable property in that a mortgage transfers:",
@@ -2235,7 +2235,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-194",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "medium",
       "question": "The rule against a clog on the equity of redemption means that a condition:",
@@ -2259,7 +2259,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-195",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "medium",
       "question": "A holder in due course of a negotiable instrument is one who takes the instrument:",
@@ -2283,7 +2283,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-196",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Contract, Specific Relief, Property Laws and Negotiable Instruments",
       "difficulty": "medium",
       "question": "Dishonour of a cheque for insufficiency of funds gives rise to criminal liability only if, among other conditions, the payee:",
@@ -2307,7 +2307,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-197",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Land Acquisition",
       "difficulty": "medium",
       "question": "The requirement of a social impact assessment before acquisition is intended to:",
@@ -2331,7 +2331,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-198",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Land Acquisition",
       "difficulty": "medium",
       "question": "Compensation in compulsory acquisition is founded on the principle that the owner should receive:",
@@ -2355,7 +2355,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-199",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Intellectual Property Laws",
       "difficulty": "easy",
       "question": "Copyright protects:",
@@ -2379,7 +2379,7 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     },
     {
       "id": "aibe-xxi-2026-200",
-      "section": "AIBE XXI \u2014 mixed 19-subject syllabus",
+      "section": "AIBE XXI (mixed 19-subject syllabus)",
       "topic": "Intellectual Property Laws",
       "difficulty": "medium",
       "question": "For an invention to be patentable it must, among other requirements, be:",

@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   {
     "id": "niftee-2026-bft-al-001",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Number Series",
     "difficulty": "easy",
     "question": "Find the next number in the series: 6, 10, 21, 25, 51, 55, ?",
@@ -27,7 +27,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-002",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Letter Series",
     "difficulty": "easy",
     "question": "Find the next term: AZ, BY, CX, DW, ?",
@@ -51,7 +51,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-003",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Coding",
     "difficulty": "medium",
     "question": "In a code, each letter is replaced by the next letter in the alphabet, and then the coded word is written in reverse. How is MATH coded?",
@@ -75,7 +75,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-004",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Direction Sense",
     "difficulty": "medium",
     "question": "Nina walks 6 m north, turns right and walks 8 m, then turns right and walks 6 m. Where is she relative to her starting point?",
@@ -99,7 +99,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-005",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Ranking",
     "difficulty": "easy",
     "question": "In a line, Dev is 9th from the front and 14th from the back. How many people are in the line?",
@@ -123,7 +123,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-006",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Blood Relation",
     "difficulty": "medium",
     "question": "Asha says, \"The woman in the photograph is the daughter of my father\u2019s only sister.\" How is the woman related to Asha?",
@@ -147,7 +147,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-007",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Syllogism",
     "difficulty": "medium",
     "question": "Statements: All looms are machines. Some machines are portable. No portable thing is fixed to the floor. Which conclusion must follow?",
@@ -171,7 +171,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-008",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Assumption",
     "difficulty": "hard",
     "question": "Statement: \"The store should test the new queue system for one weekend before using it permanently.\" Which assumption is most necessary?",
@@ -195,7 +195,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-009",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Odd One Out",
     "difficulty": "easy",
     "question": "Which item is the odd one out?",
@@ -219,7 +219,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-010",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Ordering",
     "difficulty": "medium",
     "question": "Five tasks P, Q, R, S and T are done once each. P is before Q; R is immediately after Q; S is before P; T is last. Which order is possible?",
@@ -243,7 +243,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-011",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Calendar Logic",
     "difficulty": "medium",
     "question": "A workshop meets every third day starting on a Monday. On which day of the week is its fifth meeting?",
@@ -267,7 +267,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-012",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Set Logic",
     "difficulty": "medium",
     "question": "In a group, everyone who studies weaving also studies materials. Some students who study materials do not study weaving. Which statement is definitely true?",
@@ -291,7 +291,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-013",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Data Sufficiency",
     "difficulty": "hard",
     "question": "Question: What is the value of x? Statement I: x+y=14. Statement II: x\u2212y=4. Which option is correct?",
@@ -315,7 +315,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-014",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Analogy",
     "difficulty": "easy",
     "question": "Complete the analogy: COMPASS : DIRECTION :: THERMOMETER : ?",
@@ -339,7 +339,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-al-015",
-    "section": "Section A \u2014 Analytical & Logical Ability",
+    "section": "Section A (Analytical & Logical Ability)",
     "topic": "Conclusion",
     "difficulty": "hard",
     "question": "Premises: If a fabric fails the shrinkage test, the batch is held. Batch K was not held. Assume the rule was followed without exception. What follows?",

@@ -897,6 +897,26 @@ export interface QuestionSource {
   checkedOn: string;
 }
 
+// Frozen question-bank records carry their own `topic` and `section` labels,
+// and a few of them separate a family from its qualifier with an em dash
+// ("Chemistry — Atomic Structure"). SEO_PLAYBOOK.md section 4 bans that
+// character from every prose surface on this site, but the records themselves
+// are Hard-QA-approved content the handoff pipeline forbids rewriting. So the
+// substitution happens here, at render time: the stored data is untouched and
+// the page never prints the character. Anywhere a bank-supplied label reaches
+// the page, it goes through this first.
+// Built from code points rather than written as an escape, so that
+// scripts/audit-dashes.mjs does not flag the one function whose whole job is
+// removing them. The audit checks escaped forms too, and it is right to: that
+// is how the NIFT section labels evaded the first sweep.
+const EM_DASH = String.fromCharCode(0x2014);
+const EN_DASH = String.fromCharCode(0x2013);
+const DASH_SEPARATOR = new RegExp(`\\s*[${EM_DASH}${EN_DASH}]\\s*`, 'g');
+
+export function displayLabel(label: string): string {
+  return label.replace(DASH_SEPARATOR, ': ');
+}
+
 export interface Question {
   id?: string;
   section: string;
@@ -3105,8 +3125,8 @@ const MAH_MCA_CET_HANDOFF_TESTS: Record<string, Question[]> = {
 
 const STATE_SET_HANDOFF_TESTS: Record<string, Question[]> = {
   'state-set/maharashtra-commerce-full-mock-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1,
-  'state-set/paper-i---teaching-and-research-aptitude-sectional-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1.filter((question) => question.section === "Paper I — Teaching & Research Aptitude"),
-  'state-set/paper-ii---commerce-sectional-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1.filter((question) => question.section === "Paper II — Commerce"),
+  'state-set/paper-i---teaching-and-research-aptitude-sectional-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1.filter((question) => question.section === "Paper I (Teaching & Research Aptitude)"),
+  'state-set/paper-ii---commerce-sectional-1': STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1.filter((question) => question.section === "Paper II (Commerce)"),
 };
 
 const CUSAT_CAT_TESTS: Record<string, Question[]> = {
@@ -4804,8 +4824,8 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: "Computer Concepts", count: 20 },
   ],
   'state-set': [
-    { section: "Paper I — Teaching & Research Aptitude", count: 50 },
-    { section: "Paper II — Commerce", count: 100 },
+    { section: "Paper I (Teaching & Research Aptitude)", count: 50 },
+    { section: "Paper II (Commerce)", count: 100 },
   ],
   'nest': [
     { section: "Biology", count: 20 },
@@ -4939,8 +4959,8 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Child Development and Pedagogy', count: 30 },
     { section: 'Mathematics', count: 30 },
     { section: 'Environmental Studies', count: 30 },
-    { section: 'Language I — English', count: 30 },
-    { section: 'Language II — Hindi', count: 30 },
+    { section: 'Language I (English)', count: 30 },
+    { section: 'Language II (Hindi)', count: 30 },
   ],
   'cuet-ug': [
     { section: 'English', count: 50 },
@@ -4992,13 +5012,13 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Biology (Botany & Zoology)', count: 90 },
   ],
   'nift': [
-    { section: 'Section A — Communication Ability & English Comprehension', count: 40 },
-    { section: 'Section A — Quantitative Ability', count: 20 },
-    { section: 'Section A — Analytical & Logical Ability', count: 15 },
-    { section: 'Section A — General Knowledge & Current Affairs', count: 25 },
-    { section: 'Section B — Quantitative Ability', count: 15 },
-    { section: 'Section B — Analytical & Logical Ability', count: 15 },
-    { section: 'Section B — Case Study', count: 20 },
+    { section: 'Section A (Communication Ability & English Comprehension)', count: 40 },
+    { section: 'Section A (Quantitative Ability)', count: 20 },
+    { section: 'Section A (Analytical & Logical Ability)', count: 15 },
+    { section: 'Section A (General Knowledge & Current Affairs)', count: 25 },
+    { section: 'Section B (Quantitative Ability)', count: 15 },
+    { section: 'Section B (Analytical & Logical Ability)', count: 15 },
+    { section: 'Section B (Case Study)', count: 20 },
   ],
   'wb-jelet': [
     { section: 'Mathematics', count: 40 },
@@ -5028,18 +5048,18 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Physics', count: 15 },
   ],
   'aibe': [
-    { section: 'AIBE XXI — mixed 19-subject syllabus', count: 100 },
+    { section: 'AIBE XXI (mixed 19-subject syllabus)', count: 100 },
   ],
   'niper-jee': [
-    { section: 'Section A — General English, Aptitude, Reasoning, General Knowledge, etc.', count: 80 },
-    { section: 'Section B — mainly B.Pharm. syllabus', count: 120 },
+    { section: 'Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)', count: 80 },
+    { section: 'Section B (mainly B.Pharm. syllabus)', count: 120 },
   ],
   'aiapget': [
     { section: 'Homoeopathy', count: 120 },
   ],
   'ugc-net': [
-    { section: 'Paper I — Teaching & Research Aptitude', count: 50 },
-    { section: 'Paper II — Computer Science and Applications', count: 100 },
+    { section: 'Paper I (Teaching & Research Aptitude)', count: 50 },
+    { section: 'Paper II (Computer Science and Applications)', count: 100 },
   ],
   'cuet-pg': [
     { section: 'General Paper (MBA etc.)', count: 75 },

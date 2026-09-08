@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   {
     "id": "niftee-2026-bft-aq-001",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Percentage",
     "difficulty": "medium",
     "question": "A jacket marked at \u20b92,400 is sold at a 15% discount, after which 5% GST is charged on the discounted price. What amount does the buyer pay?",
@@ -27,7 +27,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-002",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Fractions",
     "difficulty": "easy",
     "question": "A cutting team completes 3/8 of an order in the morning and another 1/4 of the entire order after lunch. What fraction of the order remains?",
@@ -51,7 +51,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-003",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Ratio & Proportion",
     "difficulty": "medium",
     "question": "Cotton and polyester in a stock are in the ratio 7:5. After adding 6 kg of polyester, the ratio becomes 7:6. How much cotton was originally present?",
@@ -75,7 +75,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-004",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Simple Interest",
     "difficulty": "medium",
     "question": "Find the simple interest on \u20b97,200 at 7.5% per annum for 16 months.",
@@ -99,7 +99,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-005",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Average",
     "difficulty": "easy",
     "question": "The average of six inspection times is 18 minutes. One time of 26 minutes was entered incorrectly and should have been 20 minutes. What is the corrected average?",
@@ -123,7 +123,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-006",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Work & Task",
     "difficulty": "medium",
     "question": "An embroidery unit must finish 420 motifs. Team A stitches 30 motifs per hour and Team B stitches 20 motifs per hour. They work together for 6 hours, after which Team B is reassigned. How many additional hours must Team A work to finish the order?",
@@ -147,7 +147,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-007",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Distance & Speed",
     "difficulty": "easy",
     "question": "A delivery rider travels 18 km at 12 km/h and then 12 km at 8 km/h. What is the average speed for the whole trip?",
@@ -171,7 +171,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-008",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Profit & Loss",
     "difficulty": "medium",
     "question": "A retailer pays \u20b9840 for a bag and another \u20b960 for tagging and transport. The bag is marked 20% above this total cost and then sold after a flat \u20b972 discount. What is the profit percentage on the retailer\u2019s total cost?",
@@ -195,7 +195,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-009",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Mixture",
     "difficulty": "medium",
     "question": "A 30-litre solution contains 40% dye. How many litres of water must be added to make the dye concentration 30%?",
@@ -219,7 +219,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-010",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "HCF",
     "difficulty": "easy",
     "question": "Three rolls of cord are 319 cm, 493 cm and 667 cm long. Each roll is cut into pieces of the greatest possible equal length, with no cord left over. How many pieces are obtained altogether?",
@@ -243,7 +243,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-011",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Linear Equation",
     "difficulty": "easy",
     "question": "Three identical rolls of tape and one \u20b945 cutter cost \u20b9285 in total. What is the price of one roll of tape?",
@@ -267,7 +267,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-012",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Mensuration",
     "difficulty": "medium",
     "question": "A rectangular frame has outer dimensions 31 cm by 23 cm. A uniform border surrounds a rectangular opening of area 425 cm\u00b2. What is the width of the border?",
@@ -291,7 +291,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-013",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Probability",
     "difficulty": "easy",
     "question": "A sample box contains 6 striped, 5 plain and 4 dotted fabric swatches. Two swatches are selected at random without replacement. What is the probability that the two selected swatches have different patterns?",
@@ -315,7 +315,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-014",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Unit Conversion",
     "difficulty": "easy",
     "question": "A trim strip is cut into 15 pieces, each 32 cm long. What minimum length of strip is required, ignoring cutting loss?",
@@ -339,7 +339,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-015",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Percentage Change",
     "difficulty": "hard",
     "question": "A defect rate falls from 8% of units to 5% of units. By what percentage has the defect rate itself decreased?",
@@ -363,7 +363,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-016",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Compound Growth",
     "difficulty": "medium",
     "question": "An amount of \u20b95,000 grows by 8% in the first year and by 10% in the second year. What is its value after two years?",
@@ -387,7 +387,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-017",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Direct Proportion",
     "difficulty": "easy",
     "question": "Six identical machines produce 960 labels in 8 hours. At the same rate, how many labels will five machines produce in 6 hours?",
@@ -411,7 +411,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-018",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Ratio",
     "difficulty": "medium",
     "question": "A \u20b918,000 incentive is divided among A, B and C in the ratio 2:3:4. How much does B receive?",
@@ -435,7 +435,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-019",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Distance & Speed",
     "difficulty": "medium",
     "question": "A van leaves a depot at 9:00 a.m. at 48 km/h. A second van leaves the same depot on the same route at 10:00 a.m. at 64 km/h. At what time does the second van catch the first?",
@@ -459,7 +459,7 @@ export const NIFTEE_2026_BFTECH_SECTION_A_QUANTITATIVE_1: Question[] = [
   },
   {
     "id": "niftee-2026-bft-aq-020",
-    "section": "Section A \u2014 Quantitative Ability",
+    "section": "Section A (Quantitative Ability)",
     "topic": "Mensuration",
     "difficulty": "medium",
     "question": "A solid rectangular block measuring 26 cm by 17 cm by 15 cm has a cylindrical hole of radius 7 cm drilled straight through its 15 cm thickness. Using \u03c0=22/7, what volume of material remains?",

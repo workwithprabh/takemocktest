@@ -30,7 +30,7 @@ function totals() {
 const FAQS = [
   {
     q: 'Are these questions different from the ones in the mock tests?',
-    a: 'No, and that is the point. Every question here already appears in the reasoning, quantitative or English section of a mock test on this site. Topic practice is the same corpus cut a different way: instead of one exam’s paper containing eight topics, one topic gathers questions from every exam that sets it. Nothing is duplicated — the pages reference the same questions, so a correction to a bank reaches both at once.',
+    a: 'No, and that is the point. Every question here already appears in the reasoning, quantitative or English section of a mock test on this site. Topic practice is the same corpus cut a different way: instead of one exam’s paper containing eight topics, one topic gathers questions from every exam that sets it. Nothing is duplicated: the pages reference the same questions, so a correction to a bank reaches both at once.',
   },
   {
     q: 'Is there negative marking in topic practice?',
@@ -42,7 +42,7 @@ const FAQS = [
   },
   {
     q: 'Which exams do the questions come from?',
-    a: 'Each topic page lists the exams its own pool draws from. Across the section the questions span banking, SSC, railway, defence, law, management and university entrance papers — any exam whose syllabus sets that topic.',
+    a: 'Each topic page lists the exams its own pool draws from. Across the section the questions span banking, SSC, railway, defence, law, management and university entrance papers, so the pool is any exam whose syllabus sets that topic.',
   },
   {
     q: 'How should I use topic practice alongside full mocks?',
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const { topics, questions } = totals();
   return pageMetadata({
     title: `Topic-wise Practice Questions ${YEAR}: Free Tests`,
-    description: `Free topic-wise practice for ${topics} quantitative, reasoning and English topics — ${questions.toLocaleString('en-IN')} questions with explanations, drawn from every exam on the site. No negative marking.`,
+    description: `Free topic-wise practice for ${topics} quantitative, reasoning and English topics, ${questions.toLocaleString('en-IN')} questions with explanations, drawn from every exam on the site. No negative marking.`,
     path: `/${country}/${PRACTICE_SLUG}`,
   });
 }
@@ -94,7 +94,7 @@ export default async function PracticeIndexPage({ params }: { params: Promise<{ 
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-6 text-ink-700 md:text-base">
             One topic at a time, pooled across every exam that sets it. If percentages are what slow you down, drill
-            percentages — not a whole paper that happens to contain four of them. Every question carries a worked
+            percentages, not a whole paper that happens to contain four of them. Every question carries a worked
             explanation, and there is no negative marking anywhere in this section.
           </p>
           <dl className="mt-6 grid max-w-2xl grid-cols-2 border-l border-t border-ink-200 bg-white sm:grid-cols-4">
@@ -152,7 +152,7 @@ export default async function PracticeIndexPage({ params }: { params: Promise<{ 
           <h2 id="ladder-xref" className="text-lg font-bold text-ink-900">Want a difficulty ladder instead?</h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-ink-700">
             Topic practice sorts by <em>what</em> the question asks. The Logical Reasoning section sorts the same kind
-            of material by <em>how hard</em> it is — hand-graded easy, medium and hard sets you can work up through.
+            of material by <em>how hard</em> it is: hand-graded easy, medium and hard sets you can work up through.
             Use topic practice when you know which topic is costing you; use the ladder when you want to find your level.
           </p>
           <Link

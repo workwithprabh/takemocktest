@@ -115,7 +115,7 @@ export function getStageSummary(exam: ExamConfig, stage: TestStage): string {
 
   const allLocked = insights.lockedSections === (p.sectionBreakdown?.length ?? 0);
   const timing = insights.hasSectionalLock
-    ? `${allLocked ? `All ${insights.lockedSections} sections are` : `${insights.lockedSections} of those sections are`} separately timed, so time saved in one cannot be carried into another — you cannot bank minutes by rushing an easy section.`
+    ? `${allLocked ? `All ${insights.lockedSections} sections are` : `${insights.lockedSections} of those sections are`} separately timed, so time saved in one cannot be carried into another. You cannot bank minutes by rushing an easy section.`
     : p.sections.length > 1
       ? 'All sections share one composite timer, so you are free to move between them and spend your time where it earns most.'
       : undefined;
@@ -138,7 +138,7 @@ export function getStageMarkingNotes(stage: TestStage): string[] {
 
   if (insights.negative === 0) {
     notes.push(
-      'There is no negative marking, so leaving a question blank can only cost you — an unattempted question and a wrong one score the same zero. Attempt everything.',
+      'There is no negative marking, so leaving a question blank can only cost you: an unattempted question and a wrong one score the same zero. Attempt everything.',
     );
   } else if (insights.negative && insights.negative > 0) {
     // A fraction reads wrong as "deducts 1/3 marks"; spell it as a share of a
@@ -153,10 +153,10 @@ export function getStageMarkingNotes(stage: TestStage): string[] {
       const breakEven = insights.breakEvenAccuracy;
       const versusBlindGuess =
         breakEven === 25
-          ? 'That is exactly the 25% a blind guess between four options gives you, so guessing at random is neither gaining nor losing marks over a long paper — the moment you can rule out even one option, it starts paying.'
+          ? 'That is exactly the 25% a blind guess between four options gives you, so guessing at random is neither gaining nor losing marks over a long paper. The moment you can rule out even one option, it starts paying.'
           : breakEven < 25
             ? 'A blind guess between four options is right 25% of the time, which is already above that line, so an educated guess is clearly worth making rather than leaving the question blank.'
-            : 'A blind guess between four options is right only 25% of the time, which is below that line, so guessing at random costs you marks — guess only when you can genuinely eliminate options.';
+            : 'A blind guess between four options is right only 25% of the time, which is below that line, so guessing at random costs you marks: guess only when you can genuinely eliminate options.';
       notes.push(
         `A guess therefore breaks even at ${breakEven}% accuracy: above that it gains you marks on average, below it loses them. ${versusBlindGuess}`,
       );

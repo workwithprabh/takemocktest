@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   {
     "id": "niper-jee-2026-masters-section-a-001",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "English usage",
     "difficulty": "easy",
     "question": "A laboratory memo says, “Neither the samples nor the reference standard ___ stored at room temperature.” Which verb best completes the sentence?",
@@ -27,7 +27,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-002",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "English usage",
     "difficulty": "medium",
     "question": "Choose the revision that removes ambiguity: “After Priya spoke to Meera about the assay, she changed the calculation.”",
@@ -51,7 +51,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-003",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Vocabulary in context",
     "difficulty": "easy",
     "question": "In the sentence “The analyst gave a concise account of the deviation,” the word “concise” most nearly means",
@@ -75,7 +75,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-004",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Logical connectors",
     "difficulty": "medium",
     "question": "The pilot batch met the assay limit; ___, it failed the dissolution criterion. Which connector best expresses the relation?",
@@ -99,7 +99,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-005",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Sentence correction",
     "difficulty": "medium",
     "question": "Which sentence is grammatically best?",
@@ -123,7 +123,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-006",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Inference",
     "difficulty": "medium",
     "question": "A note states: “The team repeated only those measurements for which the instrument log showed an interruption.” What follows most directly?",
@@ -147,7 +147,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-007",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Paraphrase",
     "difficulty": "medium",
     "question": "Which option best preserves the meaning of “The result is provisional pending verification”?",
@@ -171,7 +171,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-008",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Word choice",
     "difficulty": "easy",
     "question": "Which word best completes the sentence? “The investigator tried to ___ whether the temperature excursion affected stability.”",
@@ -195,7 +195,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-009",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Punctuation",
     "difficulty": "easy",
     "question": "Which sentence uses punctuation most clearly?",
@@ -219,7 +219,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-010",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Tone",
     "difficulty": "medium",
     "question": "Which sentence is most appropriate for a formal deviation report?",
@@ -243,7 +243,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-011",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Subject-verb agreement",
     "difficulty": "easy",
     "question": "Select the correct completion: “A series of calibration checks ___ scheduled before release.”",
@@ -267,7 +267,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-012",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Modifier placement",
     "difficulty": "medium",
     "question": "Which sentence most clearly means that the filter, not the analyst, was damaged?",
@@ -291,7 +291,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-013",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Reading precision",
     "difficulty": "hard",
     "question": "A procedure says, “Record the first stable value observed for at least 20 seconds.” A display reads 7.10 for 12 seconds, 7.11 for 22 seconds, then 7.10 for 30 seconds. Which value should be recorded under the stated rule?",
@@ -315,7 +315,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-014",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Vocabulary",
     "difficulty": "easy",
     "question": "In quality documentation, “deviation” most nearly refers to",
@@ -339,7 +339,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-015",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Parallel structure",
     "difficulty": "medium",
     "question": "Which option is parallel in form?",
@@ -363,7 +363,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-016",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Conciseness",
     "difficulty": "medium",
     "question": "Which sentence is the most concise without losing meaning?",
@@ -387,7 +387,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-017",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Inference",
     "difficulty": "medium",
     "question": "A notice says, “Candidates entering after the identity check closes will not be admitted.” Which statement is supported?",
@@ -411,7 +411,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-018",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Grammar",
     "difficulty": "easy",
     "question": "Choose the correct phrase: “The data were reviewed ___ two independent analysts.”",
@@ -435,7 +435,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-019",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Meaning",
     "difficulty": "medium",
     "question": "Which phrase best matches “a result that is reproducible”?",
@@ -459,7 +459,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-020",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Ordering",
     "difficulty": "medium",
     "question": "Arrange the actions into the clearest instruction: (1) record the final volume; (2) allow the foam to collapse; (3) shake the cylinder ten times; (4) transfer the dispersion to the cylinder.",
@@ -483,7 +483,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-021",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Percentages",
     "difficulty": "easy",
     "question": "A 400 mL stock is diluted by adding 100 mL solvent. By what percentage does the total volume increase?",
@@ -507,7 +507,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-022",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Ratio",
     "difficulty": "easy",
     "question": "Three technicians process samples in the ratio 2:3:5. If they process 60 samples altogether, how many are handled by the technician with ratio part 3?",
@@ -531,7 +531,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-023",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Average",
     "difficulty": "medium",
     "question": "Five assay values have mean 98.6. Four are 98.1, 98.4, 98.8 and 99.0. What is the fifth value?",
@@ -555,7 +555,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-024",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Work rate",
     "difficulty": "medium",
     "question": "A pump fills a vessel in 30 minutes and a second pump in 45 minutes. If both run together at constant rates, how long do they take?",
@@ -579,7 +579,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-025",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Simple algebra",
     "difficulty": "easy",
     "question": "If 3x + 7 = 34, what is x?",
@@ -603,7 +603,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-026",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Probability",
     "difficulty": "medium",
     "question": "A tray contains 5 white, 3 blue and 2 amber vials. One vial is chosen at random. What is the probability it is not blue?",
@@ -627,7 +627,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-027",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Speed",
     "difficulty": "medium",
     "question": "A courier travels 72 km in 1.5 hours at constant speed. What is the speed?",
@@ -651,7 +651,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-028",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Mixture arithmetic",
     "difficulty": "medium",
     "question": "A batch contains 24 kg material, of which 6 kg is excipient X. What fraction of the batch is not X?",
@@ -675,7 +675,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-029",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Compound growth",
     "difficulty": "medium",
     "question": "A count increases from 200 to 242 over two equal periods by the same percentage each period. What is the percentage increase per period?",
@@ -699,7 +699,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-030",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Unit conversion",
     "difficulty": "easy",
     "question": "A solution contains 2.5 g solute in 500 mL. What is the concentration in mg/mL?",
@@ -723,7 +723,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-031",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Data interpretation",
     "difficulty": "medium",
     "question": "Four days yield 18, 22, 25 and 15 completed analyses. What percentage of the 80 total analyses were completed on the highest-output day?",
@@ -747,7 +747,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-032",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Time arithmetic",
     "difficulty": "easy",
     "question": "A 150-minute test begins at 09:20. At what time does it end if there is no break?",
@@ -771,7 +771,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-033",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Profit and loss",
     "difficulty": "medium",
     "question": "An instrument accessory costs ₹2,400 after a 20% discount. What was the marked price?",
@@ -795,7 +795,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-034",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Ratio change",
     "difficulty": "hard",
     "question": "Two solutions A and B are mixed in the ratio 3:2. If 10 mL of B is added to 50 mL of the mixture, what is the new ratio A:B?",
@@ -819,7 +819,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-035",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Median",
     "difficulty": "easy",
     "question": "The ordered values are 4, 7, 9, 12, 15, 18, 21. What is the median?",
@@ -843,7 +843,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-036",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Linear equations",
     "difficulty": "medium",
     "question": "Two boxes contain 54 vials in total. One box has 8 more vials than the other. How many are in the larger box?",
@@ -867,7 +867,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-037",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Percentage points",
     "difficulty": "medium",
     "question": "A pass rate rises from 72% to 81%. The increase is how many percentage points?",
@@ -891,7 +891,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-038",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Geometry",
     "difficulty": "easy",
     "question": "A rectangular storage area is 8 m long and 5 m wide. What is its area?",
@@ -915,7 +915,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-039",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Proportion",
     "difficulty": "medium",
     "question": "If 12 identical cartons hold 720 bottles, how many bottles do 7 cartons hold?",
@@ -939,7 +939,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-040",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Weighted mean",
     "difficulty": "hard",
     "question": "A trainee scores 70 on a test worth 40% and 85 on a test worth 60%. What is the weighted score?",
@@ -963,7 +963,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-041",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Deductive reasoning",
     "difficulty": "medium",
     "question": "All validated methods are documented. Some documented methods are automated. Which conclusion must be true?",
@@ -987,7 +987,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-042",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Conditional reasoning",
     "difficulty": "medium",
     "question": "If the freezer alarm sounds, the backup logger is checked. The alarm sounded. What follows under the rule?",
@@ -1011,7 +1011,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-043",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Set logic",
     "difficulty": "medium",
     "question": "No sterile item is stored in cabinet R. Some syringes are sterile. Which statement is necessarily true?",
@@ -1035,7 +1035,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-044",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Ordering",
     "difficulty": "hard",
     "question": "Four samples W, X, Y and Z are analysed one per hour. W is before X; Y is after X; Z is before W. Which order is forced?",
@@ -1059,7 +1059,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-045",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Direction sense",
     "difficulty": "medium",
     "question": "A technician walks 4 m north, 3 m east, then 4 m south. Where is the technician relative to the start?",
@@ -1083,7 +1083,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-046",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Analogy",
     "difficulty": "easy",
     "question": "Filter is to separation as thermometer is to",
@@ -1107,7 +1107,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-047",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Classification",
     "difficulty": "easy",
     "question": "Which is the odd one out?",
@@ -1131,7 +1131,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-048",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Binary logic",
     "difficulty": "medium",
     "question": "A door opens only if both badge B and code C are accepted. Badge B is accepted but the door stays closed. What can be concluded?",
@@ -1155,7 +1155,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-049",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Sequence of constraints",
     "difficulty": "hard",
     "question": "Five files J, K, L, M and N are reviewed in a row. J is immediately before K; M is last; L is before J; N is not first. Which file must be first?",
@@ -1179,7 +1179,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-050",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Syllogism",
     "difficulty": "medium",
     "question": "All cold-chain products require temperature monitoring. No product in cabinet A requires temperature monitoring. What follows?",
@@ -1203,7 +1203,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-051",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Cause and evidence",
     "difficulty": "medium",
     "question": "After a software update, error messages decrease. Which observation would most strengthen the claim that the update caused the decrease?",
@@ -1227,7 +1227,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-052",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Necessary condition",
     "difficulty": "medium",
     "question": "A certificate is issued only after identity verification. Which statement is logically valid?",
@@ -1251,7 +1251,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-053",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Ranking",
     "difficulty": "easy",
     "question": "Ravi scored higher than Leena but lower than Noor. Who scored highest among the three?",
@@ -1275,7 +1275,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-054",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Calendar arithmetic",
     "difficulty": "medium",
     "question": "A stability check is repeated every 6 days starting on a Monday. On which weekday is the third check after the starting check?",
@@ -1299,7 +1299,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-055",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Venn reasoning",
     "difficulty": "medium",
     "question": "Every amber-labelled container is light-protected. Some light-protected containers are refrigerated. Which conclusion is justified?",
@@ -1323,7 +1323,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-056",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Contrapositive",
     "difficulty": "hard",
     "question": "A rule states: if a record is digitally signed, its checksum is stored. A record has no stored checksum. What follows if the rule has no exceptions?",
@@ -1347,7 +1347,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-057",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Allocation logic",
     "difficulty": "hard",
     "question": "Three tasks A, B and C go to three different people P, Q and R. P cannot take A; Q cannot take B; R must take B. Who must take A?",
@@ -1371,7 +1371,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-058",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Statement evaluation",
     "difficulty": "medium",
     "question": "A manager says, “Every delayed batch had at least one unresolved query.” Which observation would falsify this statement?",
@@ -1395,7 +1395,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-059",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Pattern rule",
     "difficulty": "medium",
     "question": "A code maps each letter to the next letter of the alphabet, with Z mapping to A. Under this rule, what is the code for RISK?",
@@ -1419,7 +1419,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-060",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Logical possibility",
     "difficulty": "medium",
     "question": "Some analysts are pharmacists, and no pharmacist is an auditor. Which situation is possible?",
@@ -1443,7 +1443,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-061",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Indian polity",
     "difficulty": "easy",
     "question": "Which constitutional body conducts elections to Parliament and State Legislatures in India?",
@@ -1467,7 +1467,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-062",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Indian polity",
     "difficulty": "medium",
     "question": "A Money Bill can be introduced in Parliament only in the",
@@ -1491,7 +1491,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-063",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Science basics",
     "difficulty": "easy",
     "question": "The SI unit of electric current is the",
@@ -1515,7 +1515,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-064",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Science basics",
     "difficulty": "easy",
     "question": "Which organelle is the principal site of ATP generation by oxidative phosphorylation in eukaryotic cells?",
@@ -1539,7 +1539,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-065",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Chemistry basics",
     "difficulty": "easy",
     "question": "A solution with pH 3 has a hydrogen-ion concentration that is how many times that of a pH 5 solution?",
@@ -1563,7 +1563,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-066",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Physics basics",
     "difficulty": "medium",
     "question": "If the speed of an object doubles while its mass is unchanged, its kinetic energy becomes",
@@ -1587,7 +1587,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-067",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Biology basics",
     "difficulty": "easy",
     "question": "Which molecule carries genetic information in most cellular organisms?",
@@ -1611,7 +1611,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-068",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Geography",
     "difficulty": "easy",
     "question": "Which line of latitude passes through India?",
@@ -1635,7 +1635,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-069",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Economics",
     "difficulty": "medium",
     "question": "Inflation refers most directly to",
@@ -1659,7 +1659,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-070",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Computer basics",
     "difficulty": "easy",
     "question": "Which of the following is volatile memory?",
@@ -1683,7 +1683,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-071",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Computer security",
     "difficulty": "medium",
     "question": "A message asking a user to reveal a password through a fake login page is an example of",
@@ -1707,7 +1707,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-072",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Research methods",
     "difficulty": "medium",
     "question": "Random allocation in a controlled trial primarily helps to",
@@ -1731,7 +1731,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-073",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Research methods",
     "difficulty": "medium",
     "question": "Blinding an outcome assessor mainly reduces the risk of",
@@ -1755,7 +1755,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-074",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Statistics",
     "difficulty": "easy",
     "question": "In a perfectly symmetric distribution with one central peak, mean and median are typically",
@@ -1779,7 +1779,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-075",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Statistics",
     "difficulty": "medium",
     "question": "A very small p-value, by itself, does not tell you the",
@@ -1803,7 +1803,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-076",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Public health",
     "difficulty": "easy",
     "question": "Vaccination protects communities partly through",
@@ -1827,7 +1827,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-077",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Environment",
     "difficulty": "medium",
     "question": "Eutrophication of a freshwater body is commonly driven by excessive inputs of",
@@ -1851,7 +1851,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-078",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Ethics",
     "difficulty": "medium",
     "question": "In research involving human participants, informed consent is best described as",
@@ -1875,7 +1875,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-079",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Scientific method",
     "difficulty": "easy",
     "question": "A hypothesis is most useful scientifically when it is",
@@ -1899,7 +1899,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_A_1: Question[] = [
   },
   {
     "id": "niper-jee-2026-masters-section-a-080",
-    "section": "Section A — General English, Aptitude, Reasoning, General Knowledge, etc.",
+    "section": "Section A (General English, Aptitude, Reasoning, General Knowledge, etc.)",
     "topic": "Laboratory safety",
     "difficulty": "easy",
     "question": "When a chemical splashes into the eye, the immediate general laboratory response is to",

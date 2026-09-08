@@ -3,7 +3,7 @@ import type { Question } from '../questions';
 export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     {
       "id": "mh-set-2026-paper-i-001",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Teaching aptitude",
       "difficulty": "medium",
       "question": "A teacher begins a unit by asking students to explain their prior ideas, then adapts examples to address misconceptions. This practice best reflects:",
@@ -27,7 +27,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-002",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Teaching aptitude",
       "difficulty": "easy",
       "question": "Which assessment is primarily intended to improve learning while instruction is still in progress?",
@@ -51,7 +51,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-003",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Teaching aptitude",
       "difficulty": "medium",
       "question": "A learning outcome asks students to “compare two theories and justify which better explains a case.” This outcome mainly targets:",
@@ -75,7 +75,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-004",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Teaching aptitude",
       "difficulty": "medium",
       "question": "In an inclusive classroom, the most appropriate response to varied learner needs is to:",
@@ -99,7 +99,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-005",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Teaching aptitude",
       "difficulty": "easy",
       "question": "A well-written instructional objective should most directly specify:",
@@ -123,7 +123,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-006",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Research aptitude",
       "difficulty": "easy",
       "question": "In a study of study-hours and test score, “test score” is the:",
@@ -147,7 +147,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-007",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Research aptitude",
       "difficulty": "medium",
       "question": "A researcher randomly selects 200 names from a complete list of 2,000 eligible participants. This is an example of:",
@@ -171,7 +171,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-008",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Research aptitude",
       "difficulty": "medium",
       "question": "A measuring instrument gives nearly the same reading on repeated trials but systematically misses the true value. It is high in:",
@@ -195,7 +195,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-009",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Research aptitude",
       "difficulty": "medium",
       "question": "A null hypothesis generally states that:",
@@ -219,7 +219,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-010",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Research aptitude",
       "difficulty": "easy",
       "question": "Which action best protects research participants’ autonomy?",
@@ -243,7 +243,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-011",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Comprehension",
       "difficulty": "medium",
       "question": "A city library extended weekend hours for three months. Visitor counts rose, but book borrowing stayed nearly unchanged. The manager concluded that the extra hours mainly supported activities other than borrowing. Which observation most directly supports the manager’s conclusion?",
@@ -267,7 +267,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-012",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Comprehension",
       "difficulty": "medium",
       "question": "A research team replaced long weekly meetings with short written updates and one monthly discussion. Project delays fell, while the number of reported issues increased. The most reasonable interpretation is that:",
@@ -291,7 +291,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-013",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Comprehension",
       "difficulty": "medium",
       "question": "An online course allowed students to retry practice quizzes without penalty. Final-exam scores improved, but the instructor cautioned that the change coincided with a redesigned textbook. Why is the caution methodologically appropriate?",
@@ -315,7 +315,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-014",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Comprehension",
       "difficulty": "easy",
       "question": "A notice states: “The workshop is open to all registered students, but seats are allocated in order of completed payment.” Which student is guaranteed a seat from this statement alone?",
@@ -339,7 +339,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-015",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Comprehension",
       "difficulty": "medium",
       "question": "A report says a river’s average dissolved oxygen rose after wastewater treatment upgrades, yet two downstream sites still showed seasonal low-oxygen events. Which conclusion is best supported?",
@@ -363,7 +363,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-016",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Communication",
       "difficulty": "easy",
       "question": "In a communication model, converting an idea into words or symbols is called:",
@@ -387,7 +387,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-017",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Communication",
       "difficulty": "medium",
       "question": "A projector hum makes students miss parts of a lecture. In communication terms, the hum is:",
@@ -411,7 +411,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-018",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Communication",
       "difficulty": "easy",
       "question": "Which feature most clearly makes communication two-way?",
@@ -435,7 +435,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-019",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Communication",
       "difficulty": "medium",
       "question": "A speaker says “I agree” while repeatedly shaking their head. The conflict is primarily between:",
@@ -459,7 +459,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-020",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Communication",
       "difficulty": "medium",
       "question": "For a teacher explaining a difficult concept, the most useful immediate check of communication effectiveness is to:",
@@ -483,7 +483,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-021",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Mathematical reasoning",
       "difficulty": "easy",
       "question": "If a research grant of ₹84,000 is divided in the ratio 3:4, the larger share is:",
@@ -507,7 +507,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-022",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Mathematical reasoning — linear relations",
       "difficulty": "medium",
       "question": "A department assigns 74 survey forms to teams A, B and C. Team A receives twice as many forms as Team B, while Team C receives 6 more forms than Team B. How many forms does Team B receive?",
@@ -531,7 +531,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-023",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Mathematical reasoning — place value",
       "difficulty": "medium",
       "question": "A three-digit number is altered by increasing its hundreds digit by 1 and decreasing its tens digit by 2, while leaving the units digit unchanged. Assuming both altered digits remain valid decimal digits, by how much does the number change?",
@@ -555,7 +555,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-024",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Mathematical reasoning",
       "difficulty": "medium",
       "question": "If 3x−7=20, then 2x+1 equals:",
@@ -579,7 +579,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-025",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Mathematical reasoning — sets",
       "difficulty": "medium",
       "question": "Among 60 workshop participants, 34 used a spreadsheet tool, 29 used a visualization tool, and 11 used both. How many participants used neither tool?",
@@ -603,7 +603,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-026",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Logical reasoning",
       "difficulty": "medium",
       "question": "Premises: All journals are publications. Some publications are digital. Which conclusion necessarily follows?",
@@ -627,7 +627,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-027",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Logical reasoning",
       "difficulty": "medium",
       "question": "If the statement “If the server is overloaded, response time increases” is true and response time did not increase, which inference is valid?",
@@ -651,7 +651,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-028",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Logical reasoning",
       "difficulty": "easy",
       "question": "Book : Reading :: Microscope : ?",
@@ -675,7 +675,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-029",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Logical reasoning",
       "difficulty": "medium",
       "question": "Among statements P, Q and R, exactly one is false. If P is true and Q is false, then R must be:",
@@ -699,7 +699,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-030",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Logical reasoning",
       "difficulty": "medium",
       "question": "A claim is supported by evidence that is relevant but drawn from a very small, unrepresentative sample. The main weakness is:",
@@ -723,7 +723,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-031",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Data interpretation",
       "difficulty": "medium",
       "question": "A department recorded workshop attendance: Mon 48, Tue 60, Wed 54, Thu 72. By what percentage did attendance rise from Monday to Thursday?",
@@ -747,7 +747,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-032",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Data interpretation",
       "difficulty": "medium",
       "question": "A survey table lists responses: Agree 84, Neutral 36, Disagree 30. What fraction of respondents chose Agree?",
@@ -771,7 +771,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-033",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Data interpretation",
       "difficulty": "easy",
       "question": "Quarterly enrolments were Q1=120, Q2=150, Q3=135, Q4=195. Which quarter had the highest enrolment?",
@@ -795,7 +795,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-034",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Data interpretation",
       "difficulty": "medium",
       "question": "A college spent ₹12 lakh on libraries, ₹18 lakh on laboratories and ₹10 lakh on sports. Laboratories accounted for what percentage of this ₹40 lakh total?",
@@ -819,7 +819,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-035",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Data interpretation",
       "difficulty": "medium",
       "question": "A five-day helpdesk log shows 24, 30, 18, 33 and 45 resolved tickets. The median number resolved per day is:",
@@ -843,7 +843,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-036",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "ICT",
       "difficulty": "easy",
       "question": "Which memory is normally volatile and used for actively running programs?",
@@ -867,7 +867,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-037",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "ICT",
       "difficulty": "easy",
       "question": "In a web address beginning with https://, HTTPS primarily indicates:",
@@ -891,7 +891,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-038",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "ICT",
       "difficulty": "medium",
       "question": "In a spreadsheet, the reference $B$4 is:",
@@ -915,7 +915,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-039",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "ICT",
       "difficulty": "medium",
       "question": "A phishing message most commonly attempts to:",
@@ -939,7 +939,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-040",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "ICT",
       "difficulty": "easy",
       "question": "Using computing resources delivered on demand over a network is most closely associated with:",
@@ -963,7 +963,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-041",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "People, development and environment",
       "difficulty": "easy",
       "question": "Which Sustainable Development Goal is specifically titled “Quality Education”?",
@@ -987,7 +987,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-042",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "People, development and environment",
       "difficulty": "medium",
       "question": "A species found naturally only in one restricted geographic area is described as:",
@@ -1011,7 +1011,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-043",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "People, development and environment",
       "difficulty": "easy",
       "question": "Excess nutrients entering a lake and causing dense algal growth is called:",
@@ -1035,7 +1035,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-044",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "People, development and environment",
       "difficulty": "medium",
       "question": "Environmental Impact Assessment is carried out mainly to:",
@@ -1059,7 +1059,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-045",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "People, development and environment",
       "difficulty": "medium",
       "question": "When a persistent pollutant becomes more concentrated at successively higher trophic levels, the process is:",
@@ -1083,7 +1083,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-046",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Higher education system",
       "difficulty": "easy",
       "question": "In India, the University Grants Commission primarily deals with:",
@@ -1107,7 +1107,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-047",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Higher education system",
       "difficulty": "easy",
       "question": "NAAC is principally associated with:",
@@ -1131,7 +1131,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-048",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Higher education system",
       "difficulty": "medium",
       "question": "The Academic Bank of Credits is designed to facilitate:",
@@ -1155,7 +1155,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-049",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Higher education system",
       "difficulty": "easy",
       "question": "SWAYAM is best described as a national platform for:",
@@ -1179,7 +1179,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-paper-i-050",
-      "section": "Paper I — Teaching & Research Aptitude",
+      "section": "Paper I (Teaching & Research Aptitude)",
       "topic": "Higher education system",
       "difficulty": "medium",
       "question": "Institutional autonomy in higher education is most compatible with:",
@@ -1203,7 +1203,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-001",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "easy",
       "question": "Which policy instrument is controlled primarily by a central bank rather than the government budget?",
@@ -1227,7 +1227,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-002",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "A government increases public infrastructure spending without changing tax rates. This is an example of:",
@@ -1251,7 +1251,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-003",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "Corporate social responsibility is most accurately understood as:",
@@ -1275,7 +1275,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-004",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "A firm establishes its own wholly controlled manufacturing subsidiary abroad. This entry mode gives the firm:",
@@ -1299,7 +1299,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-005",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "Ricardo’s theory of comparative advantage emphasizes gains from trade when countries specialize according to:",
@@ -1323,7 +1323,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-006",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "A quantitative limit on the physical amount of a good that may be imported is a:",
@@ -1347,7 +1347,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-007",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "Exports and imports of goods and services are recorded mainly in which part of the balance of payments?",
@@ -1371,7 +1371,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-008",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "easy",
       "question": "Under the WTO most-favoured-nation principle, a tariff concession offered to one member should generally be:",
@@ -1395,7 +1395,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-009",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "A customs union differs from a free-trade area because members of a customs union additionally adopt:",
@@ -1419,7 +1419,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-010",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 1 — Business Environment and International Business",
       "difficulty": "medium",
       "question": "If the domestic currency depreciates, with other factors unchanged, domestic exports tend to become:",
@@ -1443,7 +1443,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-011",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "easy",
       "question": "If assets are ₹900,000 and liabilities are ₹350,000, owners’ equity is:",
@@ -1467,7 +1467,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-012",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "Cash paid to purchase machinery is normally classified in a cash-flow statement as:",
@@ -1491,7 +1491,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-013",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "Under straight-line depreciation, annual depreciation is generally:",
@@ -1515,7 +1515,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-014",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "Inventory is generally carried at the lower of cost and:",
@@ -1539,7 +1539,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-015",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "easy",
       "question": "A current ratio of 2.0 means:",
@@ -1563,7 +1563,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-016",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "The primary purpose of consolidating a parent and its controlled subsidiary is to present them as:",
@@ -1587,7 +1587,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-017",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "Audit evidence is considered more persuasive when it is:",
@@ -1611,7 +1611,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-018",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "A strong internal control system is designed primarily to:",
@@ -1635,7 +1635,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-019",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "In auditing, materiality concerns whether a misstatement could reasonably:",
@@ -1659,7 +1659,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-020",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 2 — Accounting and Auditing",
       "difficulty": "medium",
       "question": "An unmodified audit opinion indicates that the auditor concluded the financial statements are:",
@@ -1683,7 +1683,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-021",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "easy",
       "question": "If the price elasticity of demand is greater than 1 in absolute value, demand is described as:",
@@ -1707,7 +1707,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-022",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "A downward-sloping indifference curve reflects the assumption that, holding utility constant, more of one good generally requires:",
@@ -1731,7 +1731,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-023",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "The law of diminishing marginal utility states that as consumption of a good increases, marginal utility generally:",
@@ -1755,7 +1755,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-024",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "In the short run, the law of variable proportions examines output when:",
@@ -1779,7 +1779,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-025",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "The marginal cost curve typically intersects the average variable cost curve at AVC’s:",
@@ -1803,7 +1803,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-026",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "For a single-price monopolist facing a downward-sloping demand curve, marginal revenue is generally:",
@@ -1827,7 +1827,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-027",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "easy",
       "question": "A perfectly competitive firm is a price taker because:",
@@ -1851,7 +1851,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-028",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "Third-degree price discrimination involves charging different prices to:",
@@ -1875,7 +1875,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-029",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "Real GDP differs from nominal GDP because real GDP:",
@@ -1899,7 +1899,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-030",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 3 — Business Economics",
       "difficulty": "medium",
       "question": "In a two-player prisoners’ dilemma, a Nash equilibrium is a pair of strategies where:",
@@ -1923,7 +1923,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-031",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "easy",
       "question": "At a positive interest rate, the present value of ₹10,000 receivable one year from now is:",
@@ -1947,7 +1947,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-032",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "A project with a positive net present value at the firm’s required return is expected to:",
@@ -1971,7 +1971,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-033",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "The internal rate of return is the discount rate that makes a project’s:",
@@ -1995,7 +1995,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-034",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "The weighted average cost of capital combines required returns on sources of finance using weights based on:",
@@ -2019,7 +2019,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-035",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "Operating leverage is high when a firm has relatively high:",
@@ -2043,7 +2043,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-036",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "According to the traditional trade-off view of capital structure, firms balance tax benefits of debt against:",
@@ -2067,7 +2067,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-037",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "A residual dividend policy suggests dividends are paid after funding:",
@@ -2091,7 +2091,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-038",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "easy",
       "question": "Working capital in the net sense equals:",
@@ -2115,7 +2115,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-039",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "In CAPM, a security with beta greater than 1 is expected to have:",
@@ -2139,7 +2139,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-040",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 4 — Business Finance",
       "difficulty": "medium",
       "question": "Portfolio diversification can substantially reduce:",
@@ -2163,7 +2163,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-041",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "easy",
       "question": "Which measure of central tendency is least affected by a single extremely large observation?",
@@ -2187,7 +2187,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-042",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "The coefficient of variation is useful for comparing:",
@@ -2211,7 +2211,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-043",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "A correlation coefficient close to −1 indicates:",
@@ -2235,7 +2235,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-044",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "In simple linear regression, the slope coefficient estimates:",
@@ -2259,7 +2259,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-045",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "easy",
       "question": "For mutually exclusive events A and B, P(A∩B) equals:",
@@ -2283,7 +2283,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-046",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "Stratified random sampling is especially useful when a population contains:",
@@ -2307,7 +2307,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-047",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "A Type I error occurs when a researcher:",
@@ -2331,7 +2331,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-048",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "The chi-square test of independence is used with:",
@@ -2355,7 +2355,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-049",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "One-way ANOVA primarily tests whether:",
@@ -2379,7 +2379,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-050",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 5 — Business Statistics and Research Methods",
       "difficulty": "medium",
       "question": "A longitudinal research design observes:",
@@ -2403,7 +2403,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-051",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "easy",
       "question": "Planning in management primarily involves:",
@@ -2427,7 +2427,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-052",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "A manager with a very wide span of control directly supervises:",
@@ -2451,7 +2451,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-053",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "Delegation transfers to a subordinate:",
@@ -2475,7 +2475,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-054",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "Herzberg classified salary and working conditions mainly as:",
@@ -2499,7 +2499,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-055",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "A transformational leader is especially associated with:",
@@ -2523,7 +2523,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-056",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "easy",
       "question": "Recruitment differs from selection because recruitment mainly aims to:",
@@ -2547,7 +2547,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-057",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "Training-needs analysis should begin by identifying:",
@@ -2571,7 +2571,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-058",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "A 360-degree appraisal gathers performance feedback from:",
@@ -2595,7 +2595,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-059",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "A compensation system based on internal equity seeks to ensure that:",
@@ -2619,7 +2619,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-060",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 6 — Business Management and Human Resource Management",
       "difficulty": "medium",
       "question": "Collective bargaining is a process of negotiation primarily between:",
@@ -2643,7 +2643,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-061",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "easy",
       "question": "When the central bank raises the repo rate, other things equal, the immediate policy stance is generally:",
@@ -2667,7 +2667,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-062",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "medium",
       "question": "The cash reserve ratio requires banks to keep a specified share of eligible liabilities as:",
@@ -2691,7 +2691,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-063",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "medium",
       "question": "An asset becomes a non-performing asset when scheduled principal or interest remains overdue beyond the regulatory recognition period. The classification primarily signals:",
@@ -2715,7 +2715,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-064",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "medium",
       "question": "Basel capital standards are intended mainly to strengthen banks’ ability to:",
@@ -2739,7 +2739,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-065",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "easy",
       "question": "Treasury bills are instruments of the:",
@@ -2763,7 +2763,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-066",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "easy",
       "question": "A new issue of company shares is sold to investors in the:",
@@ -2787,7 +2787,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-067",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "medium",
       "question": "An open-ended mutual fund generally allows investors to:",
@@ -2811,7 +2811,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-068",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "medium",
       "question": "The insurance principle of indemnity aims to place the insured after a covered loss:",
@@ -2835,7 +2835,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-069",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "medium",
       "question": "A payment system that settles transactions individually and in real time is characterised by:",
@@ -2859,7 +2859,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-070",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 7 — Banking and Financial Institutions",
       "difficulty": "medium",
       "question": "A development financial institution differs from a typical commercial bank mainly through a stronger emphasis on:",
@@ -2883,7 +2883,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-071",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "easy",
       "question": "Market segmentation divides a broad market into:",
@@ -2907,7 +2907,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-072",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "Targeting follows segmentation by:",
@@ -2931,7 +2931,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-073",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "Positioning is concerned primarily with:",
@@ -2955,7 +2955,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-074",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "During the maturity stage of a product life cycle, firms commonly face:",
@@ -2979,7 +2979,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-075",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "Penetration pricing involves initially setting a relatively:",
@@ -3003,7 +3003,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-076",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "A channel intermediary that takes title to goods and resells them is typically a:",
@@ -3027,7 +3027,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-077",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "easy",
       "question": "Advertising is part of which element of the traditional 4Ps?",
@@ -3051,7 +3051,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-078",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "The extended services marketing mix adds people, process and:",
@@ -3075,7 +3075,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-079",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "Post-purchase cognitive dissonance is most likely when a buyer:",
@@ -3099,7 +3099,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-080",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 8 — Marketing Management",
       "difficulty": "medium",
       "question": "A brand extension occurs when a firm uses an existing brand name to:",
@@ -3123,7 +3123,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-081",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "easy",
       "question": "Under contract law, consideration is generally understood as:",
@@ -3147,7 +3147,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-082",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "medium",
       "question": "A contract induced by coercion is generally:",
@@ -3171,7 +3171,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-083",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "medium",
       "question": "In a sale of goods, a condition differs from a warranty because breach of a condition normally:",
@@ -3195,7 +3195,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-084",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "medium",
       "question": "Consumer-protection law primarily seeks to protect buyers against practices such as:",
@@ -3219,7 +3219,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-085",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "easy",
       "question": "A company is described as having a separate legal personality because:",
@@ -3243,7 +3243,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-086",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "medium",
       "question": "A limited liability partnership combines partnership-style internal flexibility with:",
@@ -3267,7 +3267,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-087",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "medium",
       "question": "A cheque is best classified as:",
@@ -3291,7 +3291,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-088",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "medium",
       "question": "Competition law is especially concerned with agreements that:",
@@ -3315,7 +3315,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-089",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "easy",
       "question": "A patent primarily protects:",
@@ -3339,7 +3339,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-090",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 9 — Legal Aspects of Business",
       "difficulty": "medium",
       "question": "A trademark primarily identifies:",
@@ -3363,7 +3363,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-091",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "Residential status under income-tax law is important mainly because it helps determine:",
@@ -3387,7 +3387,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-092",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "easy",
       "question": "Salary, house property, business/profession, capital gains and other sources are:",
@@ -3411,7 +3411,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-093",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "Gross Total Income is generally computed before:",
@@ -3435,7 +3435,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-094",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "easy",
       "question": "Tax deducted at source is a mechanism under which tax is collected:",
@@ -3459,7 +3459,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-095",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "Advance tax is intended to collect income tax:",
@@ -3483,7 +3483,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-096",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "Tax planning differs from tax evasion because tax planning:",
@@ -3507,7 +3507,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-097",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "Depreciation under income-tax rules generally provides a deduction reflecting:",
@@ -3531,7 +3531,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-098",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "Capital gains generally arise on:",
@@ -3555,7 +3555,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-099",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "Clubbing provisions are designed primarily to:",
@@ -3579,7 +3579,7 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     },
     {
       "id": "mh-set-2026-commerce-paper-ii-100",
-      "section": "Paper II — Commerce",
+      "section": "Paper II (Commerce)",
       "topic": "Unit 10 — Income-tax and Corporate Tax Planning",
       "difficulty": "medium",
       "question": "A tax-planning decision about debt versus equity financing may consider the fact that, subject to law, interest expense can differ from dividends in its:",
