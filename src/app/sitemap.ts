@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
-import { EXAM_LIST, COUNTRIES, getCheckedTestCount, getSharedTests, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
-import { EXAM_CATEGORIES } from '@/lib/exam-catalog';
+import { COUNTRIES, getExam, getCheckedTestCount, getSharedTests, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
+import { getExamCatalog } from '@/lib/exam-catalog';
+import { getExamsForCountry } from '@/lib/exam-countries';
 import { BLOG_POSTS } from '@/lib/blog';
 import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
@@ -78,14 +79,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         images: post.image ? [`${SITE_URL}${post.image.src}`] : undefined,
       });
     }
-    for (const category of EXAM_CATEGORIES) {
+    // Per country, not global: a category or an exam only belongs in the
+    // sitemap of a country whose subfolder actually generates that page.
+    for (const category of getExamCatalog(country)) {
       entries.push({
         url: `${SITE_URL}/${country}/exams/${category.slug}`,
         changeFrequency: 'monthly',
         priority: 0.7,
       });
     }
-    for (const exam of EXAM_LIST) {
+    for (const exam of getExamsForCountry(country).map((slug) => getExam(slug)!)) {
       const base = `${SITE_URL}/${country}/${exam.slug}`;
       const hasCheckedTests = getCheckedTestCount(exam) > 0;
       const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');

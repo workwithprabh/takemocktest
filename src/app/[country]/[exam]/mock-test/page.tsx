@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { EXAM_LIST, getExam, getSharedTests } from '@/lib/exams';
+import { getExam, getSharedTests } from '@/lib/exams';
+import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
 import { breadcrumbSchema, organizationSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
@@ -11,8 +12,11 @@ import MockTestTabs from './MockTestTabs';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
-export function generateStaticParams() {
-  return EXAM_LIST.map((exam) => ({ exam: exam.slug }));
+// Nested under [country], so Next.js passes the parent's params in. Filtering
+// here is what stops a second country subfolder from generating every Indian
+// exam's pages: see src/lib/exam-countries.ts.
+export function generateStaticParams({ params }: { params: { country: string } }) {
+  return getExamsForCountry(params.country).map((exam) => ({ exam }));
 }
 
 const YEAR = new Date().getFullYear();

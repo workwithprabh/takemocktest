@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CategoryIcon } from '@/components/ExamCategoryCard';
-import { EXAM_CATEGORIES, getCategoryExamCount, getExamCategory } from '@/lib/exam-catalog';
+import { getCategoryExamCount, getExamCatalog, getExamCategory } from '@/lib/exam-catalog';
 import { breadcrumbSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import ExamFinder from '@/components/ExamFinder';
 
-export function generateStaticParams() {
-  return EXAM_CATEGORIES.map((category) => ({ category: category.slug }));
+export function generateStaticParams({ params }: { params: { country: string } }) {
+  return getExamCatalog(params.country).map((category) => ({ category: category.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string }> }) {
-  const { category: categorySlug } = await params;
-  const category = getExamCategory(categorySlug);
+export async function generateMetadata({ params }: { params: Promise<{ country: string; category: string }> }) {
+  const { country, category: categorySlug } = await params;
+  const category = getExamCategory(categorySlug, country);
   if (!category) return {};
 
   return pageMetadata({
@@ -28,7 +28,7 @@ export default async function ExamCategoryPage({
   params: Promise<{ country: string; category: string }>;
 }) {
   const { country, category: categorySlug } = await params;
-  const category = getExamCategory(categorySlug);
+  const category = getExamCategory(categorySlug, country);
   if (!category) return notFound();
 
   const liveExams = category.groups

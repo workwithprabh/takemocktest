@@ -16,10 +16,11 @@
     "qa:schema": "node scripts/audit-schema.mjs",
     "qa:drift": "node scripts/audit-seo-drift.mjs",
     "qa:dashes": "node scripts/audit-dashes.mjs",
+    "qa:hreflang": "node scripts/audit-hreflang.mjs",
     "collision-reference": "node scripts/generate-collision-reference.mjs",
     "seo:baseline": "node scripts/audit-seo-drift.mjs capture",
     "seo:indexnow": "node scripts/submit-indexnow.mjs",
-    "qa:site": "npm run lint && npm run qa:dashes && npm run qa:questions && npm run qa:assets && npm run build && npm run qa:onpage-seo && npm run qa:links && npm run qa:thin-content && npm run qa:schema && npm run qa:drift"
+    "qa:site": "npm run lint && npm run qa:dashes && npm run qa:questions && npm run qa:assets && npm run build && npm run qa:onpage-seo && npm run qa:links && npm run qa:thin-content && npm run qa:schema && npm run qa:hreflang && npm run qa:drift"
   },
   "dependencies": {
     "next": "^15.0.0",
