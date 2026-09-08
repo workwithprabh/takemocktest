@@ -28,6 +28,7 @@ npm run qa:thin-content  # boilerplate ratio across generated sections (needs ou
 npm run qa:schema        # JSON-LD validity across every page (needs out/)
 npm run qa:drift         # diff every page's SEO state against the committed baseline (needs out/)
 npm run qa:dashes        # no em or en dashes in authored prose (source only, no build needed)
+npm run qa:hreflang      # hreflang rules + rendered tags (rules run without a build)
 npm run qa:site   # full quality gate: lint + qa:questions + qa:assets + build + SEO + links
 ```
 

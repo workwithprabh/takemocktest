@@ -294,6 +294,79 @@ question. Frozen `topic` labels no longer reach a page at all: `displayLabel()` 
 substitutes at render time, so the approved record is untouched and the page never prints the
 character.
 
+### Adding a country
+
+The routes were always `/[country]/...` with `COUNTRIES = ['in']`, so the cross
+product of countries and exams was the whole catalogue and nothing had to say
+who owned what. That stops being safe the moment a second country exists:
+generating all 164 Indian exams under `/ng/` would publish hundreds of pages
+irrelevant to a Nigerian student, which is duplicate, thin, and exactly the
+index bloat the thin-content and drift gates exist to catch.
+
+Ownership now lives in `src/lib/exam-countries.ts`, resolved in three steps:
+an exam listed in `COUNTRY_EXAMS` belongs to that country; an exam in
+`INTERNATIONAL_EXAMS` belongs to every country; everything else belongs to
+`DEFAULT_COUNTRY`. That middle case is real rather than theoretical: a Nigerian
+student sits the same SAT as an Indian one, so those 11 exams genuinely appear
+in both subfolders, and they are the only exam pages that legitimately want
+hreflang.
+
+Verified by simulation rather than assumed. Loading the module against a
+stubbed `COUNTRIES = ['in','ng']` gives `/in` 164 exams and `/ng` exactly 11,
+all of them international, with no Indian exam leaking across.
+
+**To add a country:**
+
+1. Add the slug to `COUNTRIES` in `src/lib/exams.ts`.
+2. Add its BCP 47 tag to `COUNTRY_LOCALES` in `src/lib/hreflang.ts`. The
+   hreflang audit fails if a live country has no locale, because the alternative
+   is its pages being silently dropped from every hreflang set.
+3. Add its exams to `COUNTRY_EXAMS`, and its directory tree to
+   `COUNTRY_CATALOGS` in `src/lib/exam-catalog.ts`. Both default to empty, so a
+   declared-but-unpopulated country simply generates no pages, which is the
+   right failure.
+4. Run `npm run qa:site`. The route generators, the sitemap and the catalogue
+   are all country-filtered already; nothing else needs editing.
+
+### hreflang, and the mistake it is guarding against
+
+`npm run qa:hreflang` (`scripts/audit-hreflang.mjs`, part of `qa:site`) does two
+jobs, because it has to guard machinery that is not live yet.
+
+**Part A tests the rules** by loading `src/lib/hreflang.ts` and exercising it
+against a simulated second country. It runs without a build and without Nigeria
+existing. hreflang is the easiest way to damage a site internationally and the
+damage is invisible until Google has recrawled, so finding out on launch day
+that the rules are wrong is the outcome worth a script to avoid.
+
+The rule that matters: hreflang means *the same content for a different
+audience*. True of the homepage, topic practice, the reasoning hub and most blog
+posts. **Not** true of `/in/ssc-cgl/mock-test` and `/ng/jamb/mock-test`, which
+are different exams rather than translations of each other. Pairing those tells
+Google they are interchangeable when a candidate for one has no use for the
+other. The audit asserts 23 equivalence cases, and the false ones matter more
+than the true ones.
+
+**Part B checks what shipped**: every rendered set must be reciprocal,
+self-referencing, carry `x-default`, use absolute URLs, and resolve. Today it
+finds zero tags, which is correct, because a lone self-referencing hreflang on a
+single-country site is noise on 1,700 pages. Tags appear the day a second
+country has the page.
+
+Negative-tested three ways before being trusted: pairing exam pages across
+countries, dropping `x-default`, and a live country with no locale all fail it.
+
+### The sitemap is country-scoped, not yet split
+
+The sitemap now emits only the categories and exams a given country actually
+generates, which was a correctness bug waiting for Phase 2 rather than a
+nice-to-have. It is still **one file**, deliberately, against the earlier plan
+to split it into an index with one child per country. At 1,777 indexable URLs
+against a protocol limit of 50,000, splitting buys nothing and costs a
+`generateSitemaps` interaction with static export that would need proving.
+Split when a single country's sitemap passes roughly 40,000 URLs, or when
+per-country indexing needs to be diagnosed separately in Search Console.
+
 ### Run the installed SEO skills on generated sections
 
 There is a set of SEO skills installed in this environment, and the programmatic-pages

@@ -1,4 +1,4 @@
-import type { ExamSlug } from './exams';
+import type { CountrySlug, ExamSlug } from './exams';
 
 export type ExamScope = 'National' | 'State' | 'Institute' | 'International';
 
@@ -553,8 +553,24 @@ export const CATALOG_EXAM_COUNT = EXAM_CATEGORIES.reduce(
   0,
 );
 
-export function getExamCategory(slug: string) {
-  return EXAM_CATEGORIES.find((category) => category.slug === slug);
+// The directory is per country. India's tree is the one that exists today;
+// Nigeria's is a data addition here rather than a refactor everywhere, which is
+// the whole point of routing it through a lookup instead of importing
+// EXAM_CATEGORIES directly from the page.
+//
+// An undeclared country returns an empty tree, so its catalogue routes generate
+// no pages at all. That is the correct failure: a country with no directory
+// should have no directory pages, not an empty shell inviting a crawl.
+const COUNTRY_CATALOGS: Partial<Record<CountrySlug, ExamCatalogCategory[]>> = {
+  in: EXAM_CATEGORIES,
+};
+
+export function getExamCatalog(country: string): ExamCatalogCategory[] {
+  return COUNTRY_CATALOGS[country as CountrySlug] ?? [];
+}
+
+export function getExamCategory(slug: string, country: string = 'in') {
+  return getExamCatalog(country).find((category) => category.slug === slug);
 }
 
 export function getCategoryExamCount(category: ExamCatalogCategory) {

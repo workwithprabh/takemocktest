@@ -5,7 +5,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import LiveExamStatus from '@/components/LiveExamStatus';
 import { getExamCycle, type CycleState } from '@/lib/exam-cycles';
 import { getExamPatternFaqs, getExamFactFaqs } from '@/lib/exam-faqs';
-import { EXAM_LIST, getCheckedTestCount, getExam, getExamOverviewCopy } from '@/lib/exams';
+import { getCheckedTestCount, getExam, getExamOverviewCopy } from '@/lib/exams';
+import { getExamsForCountry } from '@/lib/exam-countries';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getUpdatesForExam, type UpdateCategory } from '@/lib/updates';
@@ -52,8 +53,11 @@ function DashboardIcon({ name, tone = 'action' }: { name: DashboardIconName; ton
   );
 }
 
-export function generateStaticParams() {
-  return EXAM_LIST.map((exam) => ({ exam: exam.slug }));
+// Nested under [country], so Next.js passes the parent's params in. Filtering
+// here is what stops a second country subfolder from generating every Indian
+// exam's pages: see src/lib/exam-countries.ts.
+export function generateStaticParams({ params }: { params: { country: string } }) {
+  return getExamsForCountry(params.country).map((exam) => ({ exam }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {

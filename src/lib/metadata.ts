@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SITE_NAME } from './schema';
+import { buildAlternates, openGraphLocale } from './hreflang';
 
 const DEFAULT_SOCIAL_IMAGE = {
   url: '/images/free-mock-tests-india.webp',
@@ -35,13 +36,17 @@ export function pageMetadata({
 }): Metadata {
   const withBrand = `${title} | ${SITE_NAME}`;
   const finalTitle = withBrand.length <= MAX_TITLE_LENGTH ? withBrand : title;
+  // The country segment drives both the hreflang set and the Open Graph
+  // locale, so neither has to be passed in at every call site.
+  const country = path.split('/')[1] ?? '';
+  const languages = buildAlternates(path);
   return {
     title: { absolute: finalTitle },
     description,
-    alternates: { canonical: path },
+    alternates: languages ? { canonical: path, languages } : { canonical: path },
     openGraph: {
       type: openGraphType,
-      locale: 'en_IN',
+      locale: openGraphLocale(country),
       url: path,
       siteName: SITE_NAME,
       title,

@@ -258,8 +258,12 @@ Small, and mostly in places already built for it:
 **Phase 0, this week.** Run the Search Console country query. Decide on
 evidence, not on this document.
 
-**Phase 1, architecture.** The five code changes above, shipped against `/in`
-alone so nothing user-facing changes and the gates prove themselves.
+**Phase 1, architecture. Done, 8 September 2026.** Shipped against `/in` alone; the export is byte-identical
+at 4,749 pages with zero drift. Exam ownership per country in `src/lib/exam-countries.ts`, all 14 exam route
+generators plus the catalogue and sitemap country-filtered, hreflang rules in `src/lib/hreflang.ts` emitting
+nothing until a second country exists, and `npm run qa:hreflang` gating both the rules and the rendered output.
+One deviation: the sitemap is country-scoped but not split into a per-country index, because 1,777 URLs against a
+50,000 limit does not justify it yet. See `BATCH_ROADMAP.md` for the four steps that adding a country now takes.
 
 **Phase 2, the exam-agnostic layer in the new country.** Reasoning and topic
 practice under `/ng/`, hreflang paired with `/in/`. Roughly 40 to 80 pages.
