@@ -14,6 +14,7 @@ Usage:
   python3 scripts/gsc-query.py totals --days 90
   python3 scripts/gsc-query.py queries --days 90 --limit 50
   python3 scripts/gsc-query.py pages --days 28 --limit 50
+  python3 scripts/gsc-query.py countries --days 90 --limit 30
   python3 scripts/gsc-query.py by-page --page /in/ssc-cgl/test/tier-1-full-mock-1 --days 90
   python3 scripts/gsc-query.py report --days 90 > SEARCH-CONSOLE-REPORT.md
 
@@ -114,6 +115,30 @@ def cmd_by_page(session, args):
         print(f"  clicks={r['clicks']:<4} impressions={r['impressions']:<5} pos={r['position']:>5.1f}  \"{r['keys'][0]}\"")
 
 
+def cmd_countries(session, args):
+    """Which countries already find this site, before a single page is written
+    for them. Search Console retired its International Targeting report in
+    2022, so this dimension is the only first-party evidence available for an
+    expansion decision: everything else on the market is a guess about demand,
+    this is demand that has already arrived.
+
+    Read it as latent demand, not as a verdict. A country showing impressions
+    for an India-only catalogue is either diaspora, or people whose own exam
+    resembles one of ours closely enough that Google matched it. The second
+    kind is the interesting kind."""
+    start, end = date_range(args.days)
+    rows = query(session, start, end, ['country'], row_limit=args.limit)
+    rows.sort(key=lambda r: -r['impressions'])
+    total = sum(r['impressions'] for r in rows) or 1
+    print(f'{len(rows)} countries, last {args.days} days:')
+    for r in rows[: args.limit]:
+        share = 100 * r['impressions'] / total
+        print(
+            f"  {r['keys'][0].upper():<5} clicks={r['clicks']:<5} impressions={r['impressions']:<7}"
+            f" {share:5.1f}%  pos={r['position']:>5.1f}"
+        )
+
+
 def cmd_report(session, args):
     """Emits a single self-contained markdown snapshot, meant to be committed
     to the repo (see .github/workflows/gsc-report.yml) so week-over-week
@@ -168,7 +193,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest='command', required=True)
 
-    for name, fn in [('totals', cmd_totals), ('queries', cmd_queries), ('pages', cmd_pages), ('report', cmd_report)]:
+    for name, fn in [('totals', cmd_totals), ('queries', cmd_queries), ('pages', cmd_pages), ('countries', cmd_countries), ('report', cmd_report)]:
         p = sub.add_parser(name)
         p.add_argument('--days', type=int, default=28)
         p.add_argument('--limit', type=int, default=50)
