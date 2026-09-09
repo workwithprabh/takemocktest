@@ -96,7 +96,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'callout',
-          text: 'This site covers six subjects across two combinations: science (Use of English, Mathematics, Physics, Chemistry) and commercial (Use of English, Mathematics, Economics, Government). Literature-in-English is not covered, because most of that paper is set on prescribed texts that rotate by cycle. Within Government and Economics, current officeholders, current statistics and recent policy are left out, so the questions stay on settled ground a candidate can reason about rather than facts that need checking against this year source.',
+          text: 'This site covers seven subjects across three combinations: science (Use of English, Mathematics, Physics, Chemistry), commercial (Use of English, Mathematics, Economics, Government) and arts (Use of English, Literature in English, Government, Economics). Two deliberate limits apply. Literature in English is covered only for its general literary principles, since the prescribed texts rotate by cycle. In Government and Economics, current officeholders, current statistics and recent policy are left out, so the questions stay on settled ground a candidate can reason about rather than facts that need checking against this year source.',
         },
         {
           type: 'topicSections',
@@ -145,6 +145,23 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
                 'Waves, sound and light including reflection, refraction and lenses',
                 'Electrostatics, current electricity, magnetism and induction',
                 'Electronics, atomic structure and radioactivity',
+              ],
+            },
+            {
+              section: 'Literature in English',
+              pattern: '40 questions',
+              topics: [
+                'Literary terms: plot, theme, setting, mood, characterisation',
+                'Protagonist, antagonist and the foil',
+                'Soliloquy, aside, dramatic irony, flashback and foreshadowing',
+                'Figures of speech: simile, metaphor, personification, hyperbole',
+                'Oxymoron, euphemism, metonymy, alliteration, assonance and onomatopoeia',
+                'The genres: drama, prose and poetry, and their principal forms',
+                'Tragedy, comedy, the novel and the short story',
+                'Sonnet, ode, elegy, epic and ballad',
+                'Prosody: the couplet, quatrain, metre, blank verse and free verse',
+                'Appreciation of unseen prose and poetry extracts',
+                'Prescribed drama, prose and poetry texts (not covered on this site)',
               ],
             },
             {

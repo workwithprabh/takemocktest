@@ -298,10 +298,10 @@ included them and could not be cleared by any build.
 Measure for a month before Phase 3.
 
 **Phase 3, the beachhead exam. First batch shipped 9 September 2026.** JAMB UTME
-is live at `/ng/jamb` with **260 original questions** in six banks (Use of
-English 60, and 40 each in Mathematics, Physics, Chemistry, Government and
-Economics), two full mocks and six sectionals, plus the exam directory, a
-syllabus page and a selection-process page. `/ng` went from 44 to **58
+is live at `/ng/jamb` with **300 original questions** in seven banks (Use of
+English 60, and 40 each in Mathematics, Physics, Chemistry, Government,
+Economics and Literature in English), three full mocks and seven sectionals, plus the exam directory, a
+syllabus page and a selection-process page. `/ng` went from 44 to **60
 indexable pages**.
 
 **The pattern is marked review pending, not official, and that is the honest
@@ -326,14 +326,25 @@ could not be read from the network this site builds on, so coverage follows the
 standard published syllabus structure and each bank says so in its own source
 note rather than citing a page nobody here read.
 
-**What is still deliberately not built.** Literature-in-English, because most of
-that paper is set on prescribed texts that rotate by cycle and writing questions
-on them would mean asserting the content of books that could not be verified.
-Questions on the JAMB-recommended novel are excluded from the Use of English
-paper for the same reason. Within Government and Economics, current officeholders,
-current statistics and recent policy are excluded, leaving settled constitutional,
-institutional, historical and analytical content. That boundary is the same call
-already made for General Awareness on the Indian banking exams.
+**Third batch, 9 September 2026: Literature in English, in part.** 40 further
+questions and a third full mock in the arts combination (Use of English,
+Literature in English, Government, Economics), taking `/ng` to **60 indexable
+pages**. The bank covers the general literary principles portion of the paper:
+literary terms, figures of speech, genres and forms, prosody, and the
+appreciation of unseen extracts written for this set so that every question can
+be answered from the text printed beside it.
+
+**What is still deliberately not built.** The prescribed drama, prose and poetry
+texts, because they rotate by cycle and writing questions on them would mean
+asserting the content of books that could not be verified here. The recommended
+novel is excluded from the Use of English paper for the same reason. Both the
+Literature sectional and the arts mock say on the page that they cover part of
+that subject only, so a candidate offering Literature is not misled into
+treating this as complete preparation. Within Government and Economics, current
+officeholders, current statistics and recent policy are excluded, leaving
+settled constitutional, institutional, historical and analytical content. That
+boundary is the same call already made for General Awareness on the Indian
+banking exams.
 
 **The international exams did not come with the exams section.** Turning `exams`
 on for Nigeria would have published 132 pages of SAT, IELTS and the rest

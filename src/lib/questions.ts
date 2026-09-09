@@ -796,6 +796,7 @@ import { JAMB_UTME_PHYSICS_1 } from './question-banks/jamb-utme-physics-1';
 import { JAMB_UTME_CHEMISTRY_1 } from './question-banks/jamb-utme-chemistry-1';
 import { JAMB_UTME_GOVERNMENT_1 } from './question-banks/jamb-utme-government-1';
 import { JAMB_UTME_ECONOMICS_1 } from './question-banks/jamb-utme-economics-1';
+import { JAMB_UTME_LITERATURE_IN_ENGLISH_1 } from './question-banks/jamb-utme-literature-in-english-1';
 
 // Every question the site serves, indexed by its (globally unique, enforced by
 // scripts/audit-question-banks.mjs) question ID. Built once on first use so
@@ -970,6 +971,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
     ...JAMB_UTME_ECONOMICS_1,
     ...JAMB_UTME_GOVERNMENT_1,
   ],
+  // Full Mock 3 is the arts combination. Its Literature section covers the
+  // general literary principles portion of that paper only, since the
+  // prescribed texts are not built: see the bank's own source note.
+  'jamb/utme-full-mock-3': [
+    ...JAMB_UTME_USE_OF_ENGLISH_1,
+    ...JAMB_UTME_LITERATURE_IN_ENGLISH_1,
+    ...JAMB_UTME_GOVERNMENT_1,
+    ...JAMB_UTME_ECONOMICS_1,
+  ],
+  'jamb/utme-literature-in-english-sectional-1': JAMB_UTME_LITERATURE_IN_ENGLISH_1,
   'jamb/utme-government-sectional-1': JAMB_UTME_GOVERNMENT_1,
   'jamb/utme-economics-sectional-1': JAMB_UTME_ECONOMICS_1,
   'jamb/utme-use-of-english-sectional-1': JAMB_UTME_USE_OF_ENGLISH_1,
@@ -3435,6 +3446,10 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 180
     : testId === 'jamb/utme-full-mock-2'
     ? 180
+    : testId === 'jamb/utme-full-mock-3'
+    ? 180
+    : testId === 'jamb/utme-literature-in-english-sectional-1'
+    ? 40
     : testId === 'jamb/utme-government-sectional-1'
     ? 40
     : testId === 'jamb/utme-economics-sectional-1'
@@ -5531,6 +5546,12 @@ const jambUtmeCommercialLayout = [
   { section: "Economics", count: 40 },
   { section: "Government", count: 40 },
 ];
+const jambUtmeArtsLayout = [
+  { section: "Use of English", count: 60 },
+  { section: "Literature in English", count: 40 },
+  { section: "Government", count: 40 },
+  { section: "Economics", count: 40 },
+];
 const sebiGradeAPaper1Layout = [
   { section: 'General Awareness', count: 20 },
   { section: 'English Language', count: 20 },
@@ -5894,6 +5915,8 @@ const nmatLanguageLogicalReasoningQuantitativeLayout = [
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
   const layout = testId === 'jamb/utme-full-mock-2'
     ? jambUtmeCommercialLayout
+    : testId === 'jamb/utme-full-mock-3'
+    ? jambUtmeArtsLayout
     : testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
     : testId.includes('jee-advanced/paper-1-full-mock')
