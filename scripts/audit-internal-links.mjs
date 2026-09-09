@@ -27,20 +27,41 @@ if (!fs.existsSync(out)) {
 //   minExamInbound: floor on exam test pages carrying that block. Set low
 //     enough that ordinary content churn never trips it, high enough that a
 //     refactor dropping the block does. 0 means the section has no such block.
-const SECTIONS = [
+//   countries: which subfolders publish the section. Both of these sections
+//     exist under /ng as well as /in as of 8 September 2026, and auditing only
+//     India would have left Nigeria's pages unchecked for dead links, which is
+//     precisely where they were most likely: its chrome hides the links to
+//     sections it does not publish, and a missed conditional there would be a
+//     dead link on every page of a brand-new subfolder.
+//   minExamInbound applies only to a country that publishes exams; a country
+//     with none cannot offer the section from an exam page it does not have.
+const SECTION_TEMPLATES = [
   {
     name: 'Logical Reasoning hub',
-    root: '/in/logical-reasoning',
+    path: '/logical-reasoning',
     offerMarker: 'id="reasoning-hub"',
     minExamInbound: 150,
+    countries: ['in', 'ng'],
   },
   {
     name: 'Topic practice',
-    root: '/in/practice',
+    path: '/practice',
     offerMarker: null,
     minExamInbound: 0,
+    countries: ['in', 'ng'],
   },
 ];
+
+const COUNTRIES_WITH_EXAMS = new Set(['in']);
+
+const SECTIONS = SECTION_TEMPLATES.flatMap((template) =>
+  template.countries.map((country) => ({
+    name: `${template.name} (/${country})`,
+    root: `/${country}${template.path}`,
+    offerMarker: COUNTRIES_WITH_EXAMS.has(country) ? template.offerMarker : null,
+    minExamInbound: COUNTRIES_WITH_EXAMS.has(country) ? template.minExamInbound : 0,
+  })),
+);
 
 const errors = [];
 const htmlFiles = [];
@@ -95,13 +116,31 @@ for (const section of SECTIONS) {
     if (inSection(rel)) continue;
     const html = fs.readFileSync(file, 'utf8');
     if (!html.includes(`href="${section.root}"`) && !html.includes(`href="${section.root}/`)) continue;
-    if (rel === '/in') inbound.homepage += 1;
+    if (rel === `/${section.root.split('/')[1]}`) inbound.homepage += 1;
     if (section.offerMarker && html.includes(section.offerMarker)) inbound.examTests += 1;
     inbound.chrome += 1;
   }
   if (inbound.homepage === 0) errors.push(`${section.name}: the homepage no longer links to it`);
-  if (inbound.chrome < 100) {
-    errors.push(`${section.name}: only ${inbound.chrome} pages link to it — the header/footer link looks lost`);
+  // The floor is a share of the country's own pages, not a flat number: /in has
+  // ~4,750 pages and /ng has ~150, so a single figure would either be trivially
+  // met by India or unmeetable by a new subfolder.
+  //
+  // The denominator counts only pages that could possibly be in the numerator:
+  // the section's own pages are skipped by the loop above (a page linking to
+  // its own section proves nothing about the chrome), so counting them in the
+  // total sets a floor no build can clear. On /ng that was not hypothetical —
+  // 66 of the 147 pages sit outside /ng/practice, every one of them carried the
+  // link, and the audit still failed demanding 74.
+  const countryPages = htmlFiles.filter((file) => {
+    const rel = `/${path.relative(out, file).replace(/\\/g, '/').replace(/\.html$/, '')}`;
+    return rel.startsWith(`/${section.root.split('/')[1]}/`) && !inSection(rel);
+  }).length;
+  const chromeFloor = Math.max(20, Math.floor(countryPages / 2));
+  if (inbound.chrome < chromeFloor) {
+    errors.push(
+      `${section.name}: only ${inbound.chrome} of ${countryPages} pages outside the section ` +
+        `link to it (floor ${chromeFloor}) — the header/footer link looks lost`,
+    );
   }
   if (section.minExamInbound > 0 && inbound.examTests < section.minExamInbound) {
     errors.push(

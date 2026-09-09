@@ -1,16 +1,26 @@
 import Link from 'next/link';
 import { EXAM_LIST, getCheckedTestCount } from '@/lib/exams';
-import { EXAM_CATEGORIES } from '@/lib/exam-catalog';
+import { getExamCatalog } from '@/lib/exam-catalog';
+import { countryPublishes } from '@/lib/exam-countries';
 import { SITE_EMAIL } from '@/lib/schema';
 
 // Keep the footer compact; the exam directory remains the crawlable source
 // of truth as the catalogue grows.
 export default function Footer({ country }: { country: string }) {
-  const examsWithCheckedTests = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0);
+  // A country that publishes no exams gets no exam links. Rendering them anyway
+  // would put dead internal links in the chrome of every one of its pages,
+  // which the internal-link audit fails on and which is worse for a new
+  // subfolder than a shorter footer.
+  const hasExams = countryPublishes(country, 'exams');
+  const hasBlog = countryPublishes(country, 'blog');
+  const hasUpdates = countryPublishes(country, 'updates');
+  const examsWithCheckedTests = hasExams ? EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0) : [];
+  const categories = getExamCatalog(country);
 
   return (
     <footer className="bg-ink-900 mt-16 pb-20 lg:pb-0">
       <div className="max-w-6xl mx-auto px-5 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+        {hasExams && (
         <div>
           <h2 className="font-sans font-semibold mb-3 text-ink-50">Popular mock tests</h2>
           <ul className="space-y-2 text-ink-300">
@@ -22,10 +32,12 @@ export default function Footer({ country }: { country: string }) {
             <li><Link href={`/${country}/exams`} className="font-semibold text-ink-50 hover:text-ink-300 transition">View all mock tests →</Link></li>
           </ul>
         </div>
+        )}
+        {hasExams && (
         <div>
           <h2 className="font-sans font-semibold mb-3 text-ink-50">Explore by goal</h2>
           <ul className="space-y-2 text-ink-300">
-            {EXAM_CATEGORIES.slice(0, 7).map((category) => (
+            {categories.slice(0, 7).map((category) => (
               <li key={category.slug}>
                 <Link href={`/${country}/exams/${category.slug}`} className="hover:text-ink-50 transition">{category.name}</Link>
               </li>
@@ -33,15 +45,16 @@ export default function Footer({ country }: { country: string }) {
             <li><Link href={`/${country}/exams`} className="font-semibold text-ink-50 hover:text-ink-300 transition">View all exams →</Link></li>
           </ul>
         </div>
+        )}
         <div>
           <h2 className="font-sans font-semibold mb-3 text-ink-50">Resources</h2>
           <ul className="space-y-2 text-ink-300">
-            <li><Link href={`/${country}/exam-updates`} className="hover:text-ink-50 transition">Latest exam updates</Link></li>
+            {hasUpdates && <li><Link href={`/${country}/exam-updates`} className="hover:text-ink-50 transition">Latest exam updates</Link></li>}
             <li><Link href={`/${country}/logical-reasoning`} className="hover:text-ink-50 transition">Logical reasoning practice</Link></li>
             <li><Link href={`/${country}/practice`} className="hover:text-ink-50 transition">Topic-wise practice</Link></li>
-            <li><Link href={`/${country}/blog`} className="hover:text-ink-50 transition">Blog &amp; study tips</Link></li>
-            <li><Link href={`/${country}/exams`} className="hover:text-ink-50 transition">All exam categories</Link></li>
-            <li><Link href={`/${country}/ssc-cgl/exam-pattern`} className="hover:text-ink-50 transition">SSC CGL exam pattern</Link></li>
+            {hasBlog && <li><Link href={`/${country}/blog`} className="hover:text-ink-50 transition">Blog &amp; study tips</Link></li>}
+            {hasExams && <li><Link href={`/${country}/exams`} className="hover:text-ink-50 transition">All exam categories</Link></li>}
+            {hasExams && <li><Link href={`/${country}/ssc-cgl/exam-pattern`} className="hover:text-ink-50 transition">SSC CGL exam pattern</Link></li>}
             <li><Link href={`/${country}/about`} className="hover:text-ink-50 transition">About</Link></li>
             <li><Link href={`/${country}/contact`} className="hover:text-ink-50 transition">Contact</Link></li>
             <li><a href={`mailto:${SITE_EMAIL}`} className="hover:text-ink-50 transition">{SITE_EMAIL}</a></li>

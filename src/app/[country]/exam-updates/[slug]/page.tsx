@@ -1,13 +1,16 @@
 import Link from 'next/link';
+import { countryPublishes } from '@/lib/exam-countries';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { getExam, getCheckedTestCount } from '@/lib/exams';
+import { COUNTRIES, getExam, getCheckedTestCount } from '@/lib/exams';
 import { pageMetadata } from '@/lib/metadata';
 import { articleSchema, breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, UPDATES, formatUpdateDate, formatUpdateDateTime, getUpdate, getUpdatesForExam } from '@/lib/updates';
 
 export function generateStaticParams() {
-  return UPDATES.map((update) => ({ slug: update.slug }));
+  return COUNTRIES.filter((country) => countryPublishes(country, 'updates')).flatMap((country) =>
+    UPDATES.map((update) => ({ country, slug: update.slug })),
+  );
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string; slug: string }> }) {

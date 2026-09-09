@@ -1,4 +1,4 @@
-import { REASONING_SHARE_RECEIVERS, getExam, getSharedTests } from '@/lib/exams';
+import { COUNTRIES, REASONING_SHARE_RECEIVERS, getExam, getSharedTests } from '@/lib/exams';
 import { isExamInCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { breadcrumbSchema, organizationSchema, jsonLdHtml } from '@/lib/schema';
@@ -11,8 +11,10 @@ import Link from 'next/link';
 // Only generated for exams that actually have shared content — building this
 // page for all ~100 exams (most with zero matches) would itself be exactly
 // the thin/templated-content problem this site avoids elsewhere.
-export function generateStaticParams({ params }: { params: { country: string } }) {
-  return REASONING_SHARE_RECEIVERS.filter((exam) => isExamInCountry(exam, params.country)).map((exam) => ({ exam }));
+export function generateStaticParams() {
+  return COUNTRIES.flatMap((country) =>
+    REASONING_SHARE_RECEIVERS.filter((exam) => isExamInCountry(exam, country)).map((exam) => ({ country, exam }))
+  );
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {

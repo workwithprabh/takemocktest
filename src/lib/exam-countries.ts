@@ -66,10 +66,55 @@ export function isExamInCountry(slug: ExamSlug, country: string): boolean {
  */
 export function getExamsForCountry(country: string): ExamSlug[] {
   if (!isCountry(country)) return [];
+  if (!countryPublishes(country, 'exams')) return [];
   return EXAM_LIST.filter((exam) => isExamInCountry(exam.slug, country)).map((exam) => exam.slug);
 }
 
 /** True when an exam appears under more than one country, so its pages need hreflang. */
 export function isInternationalExam(slug: ExamSlug): boolean {
   return INTERNATIONAL_EXAMS.has(slug);
+}
+
+// ---------------------------------------------------------------------------
+// What a country subfolder actually publishes.
+//
+// Exam ownership alone is not enough. Flipping COUNTRIES to ['in','ng'] with
+// only the rules above would still have generated 315 indexable pages under
+// `/ng`: 61 blog posts written about Indian exams, 19 Indian exam notifications,
+// an empty exam directory, and 132 pages for the international exams. That is
+// three times the 50 to 100 page batch ceiling in BATCH_ROADMAP.md, and most of
+// it would be content a Nigerian student has no use for.
+//
+// So a country declares which sections it publishes, and a section that is off
+// generates nothing: no routes, no sitemap entries, no navigation links, and no
+// hreflang pointing at it. Turning one on later is a one-word edit here plus
+// whatever content it needs.
+export type CountrySection = 'exams' | 'blog' | 'updates' | 'practice' | 'reasoning';
+
+const ALL_SECTIONS: readonly CountrySection[] = ['exams', 'blog', 'updates', 'practice', 'reasoning'];
+
+const COUNTRY_SECTIONS: Record<CountrySlug, readonly CountrySection[]> = {
+  in: ALL_SECTIONS,
+  // Nigeria launches with the exam-agnostic layer only. Reasoning and topic
+  // practice are true in Lagos exactly as they are in Delhi, so they carry real
+  // depth from day one against a subfolder that has no authority yet. The
+  // sections that are off are off for a reason, not for lack of time:
+  //   exams   - no Nigerian exam exists yet, and an exam directory listing
+  //             nothing local is worse than no directory. The international
+  //             exams (SAT, IELTS) are a deliberate second batch, not a
+  //             freebie to bundle in here.
+  //   blog    - the 61 posts are written about Indian exams and Indian
+  //             timelines. Republishing them under /ng would be duplicate
+  //             content aimed at the wrong reader.
+  //   updates - exam notifications are one country's news by definition.
+  ng: ['practice', 'reasoning'],
+};
+
+export function countryPublishes(country: string, section: CountrySection): boolean {
+  return isCountry(country) && COUNTRY_SECTIONS[country].includes(section);
+}
+
+/** Countries that publish a section, used to decide who appears in an hreflang set. */
+export function countriesPublishing(section: CountrySection): readonly CountrySlug[] {
+  return COUNTRIES.filter((country) => COUNTRY_SECTIONS[country].includes(section));
 }

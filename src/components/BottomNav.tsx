@@ -6,14 +6,28 @@ import { useDismissableMenu } from '@/lib/useDismissableMenu';
 
 // Mobile bottom tab bar: hidden on desktop (md:hidden), where the
 // Header's horizontal nav takes over instead. Same routes, two layouts.
+import { countryPublishes } from '@/lib/exam-countries';
+
 export default function BottomNav({ country }: { country: string }) {
+  // Same reasoning as the header and footer: chrome links must exist for the
+  // country rendering them.
+  const hasExams = countryPublishes(country, 'exams');
+  const hasBlog = countryPublishes(country, 'blog');
+  const hasUpdates = countryPublishes(country, 'updates');
   const pathname = usePathname();
   const { open, setOpen, ref } = useDismissableMenu<HTMLDivElement>();
 
   const items = [
     { label: 'Home', href: `/${country}`, icon: 'M3 11l9-8 9 8M5 10v10h14V10' },
-    { label: 'Tests', href: `/${country}#exams`, icon: 'M5 4h14v16H5zM8 9h8M8 13h5' },
-    { label: 'Find exam', href: `/${country}/exams`, icon: 'M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z' },
+    ...(hasExams
+      ? [
+          { label: 'Tests', href: `/${country}#exams`, icon: 'M5 4h14v16H5zM8 9h8M8 13h5' },
+          { label: 'Find exam', href: `/${country}/exams`, icon: 'M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z' },
+        ]
+      : [
+          { label: 'Practice', href: `/${country}/practice`, icon: 'M5 4h14v16H5zM8 9h8M8 13h5' },
+          { label: 'Reasoning', href: `/${country}/logical-reasoning`, icon: 'M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z' },
+        ]),
     { label: 'Results', href: `/${country}/results`, icon: 'M4 20V10M12 20V4M20 20v-7' },
   ];
 
@@ -63,10 +77,10 @@ export default function BottomNav({ country }: { country: string }) {
         {open && (
           <div className="absolute bottom-full right-2 mb-3 w-52 border border-ink-700 bg-ink-900 p-2 shadow-2xl">
             {[
-              ['Exam updates', `/${country}/exam-updates`],
+              ...(hasUpdates ? [['Exam updates', `/${country}/exam-updates`]] : []),
               ['Logical reasoning', `/${country}/logical-reasoning`],
               ['Topic practice', `/${country}/practice`],
-              ['Study resources', `/${country}/blog`],
+              ...(hasBlog ? [['Study resources', `/${country}/blog`]] : []),
               ['About', `/${country}/about`],
               ['Contact', `/${country}/contact`],
               ['Privacy policy', `/${country}/privacy`],

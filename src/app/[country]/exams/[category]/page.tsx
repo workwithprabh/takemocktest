@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { COUNTRIES } from '@/lib/exams';
 import { notFound } from 'next/navigation';
 import { CategoryIcon } from '@/components/ExamCategoryCard';
 import { getCategoryExamCount, getExamCatalog, getExamCategory } from '@/lib/exam-catalog';
@@ -6,8 +7,10 @@ import { breadcrumbSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import ExamFinder from '@/components/ExamFinder';
 
-export function generateStaticParams({ params }: { params: { country: string } }) {
-  return getExamCatalog(params.country).map((category) => ({ category: category.slug }));
+export function generateStaticParams() {
+  return COUNTRIES.flatMap((country) =>
+    getExamCatalog(country).map((category) => ({ country, category: category.slug })),
+  );
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string; category: string }> }) {

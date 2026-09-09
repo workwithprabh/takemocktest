@@ -265,9 +265,37 @@ nothing until a second country exists, and `npm run qa:hreflang` gating both the
 One deviation: the sitemap is country-scoped but not split into a per-country index, because 1,777 URLs against a
 50,000 limit does not justify it yet. See `BATCH_ROADMAP.md` for the four steps that adding a country now takes.
 
-**Phase 2, the exam-agnostic layer in the new country.** Reasoning and topic
-practice under `/ng/`, hreflang paired with `/in/`. Roughly 40 to 80 pages.
-Measure for a month.
+**Phase 2, the exam-agnostic layer in the new country. Done, 9 September 2026.**
+`/ng` is live with 44 indexable pages: the homepage, the topic-practice index and
+its 40 topics, the reasoning hub, and about. That is inside the 40 to 80 band and
+inside the 50 to 100 batch ceiling in `BATCH_ROADMAP.md`. The 60 reasoning set
+pages and every attempt route are noindexed under `/ng` exactly as they are under
+`/in`, so the sitemap carries 44 URLs and not one more.
+
+What the section gates bought: flipping `COUNTRIES` alone would have published 315
+pages under `/ng`, most of them 61 blog posts about Indian exams and 19 Indian
+notifications. `COUNTRY_SECTIONS` in `src/lib/exam-countries.ts` reduces that to
+the two sections that are as true in Lagos as in Delhi. `/ng` publishes no exams
+yet, so the chrome, the homepage bands, the sitemap and hreflang all omit those
+sections rather than linking into nothing.
+
+hreflang went live with it: 882 tags across 294 pages, every set reciprocal and
+resolving, and none of them pairing an Indian exam with anything. The India export
+did not drift. `qa:drift` reports 148 new pages and zero changes to the 4,749 that
+already existed.
+
+Three bugs the gates caught that review had not. `notFound()` in a static export
+still writes an HTML file, so `/ng/exams` shipped a "Page Not Found" body at 200,
+a soft 404 on four routes; the fix is a per-page `generateStaticParams` that never
+generates them. The hreflang audit had been matching `hreflang=` lowercase while
+Next renders `hrefLang`, so it reported "no tags, which is correct" while 882 tags
+shipped unchecked. And the internal-link audit was hardcoded to `/in`, which hid
+511 dead links under `/ng`: topic and reasoning pages linking to Indian exam pages
+that do not exist there. All three are now gated, and the link audit's chrome floor
+counts only pages outside the section it is checking, because the old denominator
+included them and could not be cleared by any build.
+
+Measure for a month before Phase 3.
 
 **Phase 3, the beachhead exam.** JAMB UTME only: pattern page, full mocks,
 sectionals, the guide pages. One exam done to the standard SSC CGL is done.

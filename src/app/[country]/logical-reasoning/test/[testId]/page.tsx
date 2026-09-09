@@ -2,6 +2,7 @@ import { displayLabel } from '@/lib/questions';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { COUNTRIES } from '@/lib/exams';
+import { countryPublishes } from '@/lib/exam-countries';
 import {
   LR_GRADE_BLURBS,
   LR_GRADE_LABELS,
@@ -77,6 +78,10 @@ export default async function LogicalReasoningTestPage({
   const { spec, questions, mix, topics, sourceExams, next } = found;
   const base = `/${country}/${LR_SLUG}`;
   const siblings = LR_TEST_SPECS.filter((other) => other.kind === spec.kind && other.id !== spec.id).slice(0, 6);
+  // The source exams are named in every country, because they are what makes
+  // the set credible. They are only linked where those exam pages exist: under
+  // a country that publishes no exams, linking them is 25 dead links per page.
+  const canLinkExams = countryPublishes(country, 'exams');
 
   const jsonLd = [
     breadcrumbSchema([
@@ -175,18 +180,26 @@ export default async function LogicalReasoningTestPage({
           <p className="mt-3 text-sm leading-6 text-ink-700">
             Every question in this set already appears in the reasoning section of a real exam mock on this site.
             Reasoning is the one part of a paper that is not exam-specific, so the same puzzle is legitimate practice
-            whichever of these you are sitting. If one of them is your exam, attempt it there too, under that
-            exam&rsquo;s own timing and negative marking, which this section deliberately drops.
+            whichever of these you are sitting.
+            {canLinkExams
+              ? ' If one of them is your exam, attempt it there too, under that exam\u2019s own timing and negative marking, which this section deliberately drops.'
+              : ' That is why the set stands on its own here: the reasoning is the same reasoning, whatever paper it was originally written for.'}
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
             {sourceExams.map((exam) => (
               <li key={exam.slug}>
-                <Link
-                  href={`/${country}/${exam.slug}/mock-test`}
-                  className="inline-block border border-ink-200 bg-white px-3 py-1.5 text-xs font-semibold text-ink-900 transition hover:border-ink-900"
-                >
-                  {exam.name}
-                </Link>
+                {canLinkExams ? (
+                  <Link
+                    href={`/${country}/${exam.slug}/mock-test`}
+                    className="inline-block border border-ink-200 bg-white px-3 py-1.5 text-xs font-semibold text-ink-900 transition hover:border-ink-900"
+                  >
+                    {exam.name}
+                  </Link>
+                ) : (
+                  <span className="inline-block border border-ink-200 bg-white px-3 py-1.5 text-xs font-semibold text-ink-900">
+                    {exam.name}
+                  </span>
+                )}
               </li>
             ))}
           </ul>

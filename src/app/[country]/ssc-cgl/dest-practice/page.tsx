@@ -1,4 +1,5 @@
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { countryPublishes } from '@/lib/exam-countries';
 import { COUNTRIES } from '@/lib/exams';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
@@ -7,7 +8,9 @@ import DestPracticeClient from './DestPracticeClient';
 const SOURCE_URL = 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf';
 
 export function generateStaticParams() {
-  return COUNTRIES.map((country) => ({ country }));
+  // SSC CGL is an Indian exam, so this page belongs only to countries that
+  // publish exams at all.
+  return COUNTRIES.filter((country) => countryPublishes(country, 'exams')).map((country) => ({ country }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {

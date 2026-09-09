@@ -13434,7 +13434,10 @@ export function getExamOverviewCopy(exam: ExamConfig): string | undefined {
   return parts.filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
 }
 
-export const COUNTRIES = ['in'] as const;
+// Nigeria added 8 September 2026, publishing the exam-agnostic layer only.
+// What each country actually generates is declared in exam-countries.ts, not
+// implied by membership here.
+export const COUNTRIES = ['in', 'ng'] as const;
 export type CountrySlug = (typeof COUNTRIES)[number];
 
 export function getAllTestSlugs(exam: ExamConfig): string[] {
