@@ -162,7 +162,8 @@ export type ExamSlug =
   | 'aiapget'
   | 'ugc-net'
   | 'cuet-pg'
-  | 'icar-aieea-pg';
+  | 'icar-aieea-pg'
+  | 'jamb';
 export type TestStatus = 'checked' | 'demo';
 
 // A generic multi-section timing window: one or more Question.section values
@@ -13324,6 +13325,43 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'computer-science-full-mock-1', name: 'Computer Science Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '8 September 2026' },
           { id: 'part-a-common-sectional-1', name: 'Part A Common Sectional Test 1', kind: 'sectional', section: 'Part A Common', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '8 September 2026' },
           { id: 'part-b-computer-science-sectional-1', name: 'Part B Computer Science Sectional Test 1', kind: 'sectional', section: 'Part B Computer Science', status: 'checked', duration: 60, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '8 September 2026' },
+        ],
+      },
+    ],
+  },
+
+  jamb: {
+    slug: 'jamb',
+    name: 'JAMB UTME',
+    fullName: 'JAMB UTME (Unified Tertiary Matriculation Examination)',
+    category: 'University & Science',
+    stages: [
+      {
+        id: 'utme',
+        name: 'UTME',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Use of English', 'Mathematics', 'Physics', 'Chemistry'],
+          totalQuestions: 180,
+          totalMarks: 400,
+          duration: 120,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Use of English', questions: 60, marks: 100 },
+            { name: 'Mathematics', questions: 40, marks: 100 },
+            { name: 'Physics', questions: 40, marks: 100 },
+            { name: 'Chemistry', questions: 40, marks: 100 },
+          ],
+          timerNote: 'Single composite 120-minute timer for the whole paper: no per-subject lock',
+          note: 'Every candidate sits Use of English plus three subjects chosen to match the course applied for, so there is no single national subject list: the four above are this mock\u2019s combination, the science combination, not a fixed exam structure. The overall shape (180 questions, 60 in Use of English and 40 in each of the other three, two hours, 400 marks scaled across the four subjects at 100 each, and no penalty for a wrong answer) is consistently reported across multiple independent current sources. The official JAMB brochure could not be independently read in this environment: jamb.gov.ng is unreachable from the network this site is built on. Status is marked review-pending for that reason, and stays there until the primary source is read. This site covers Use of English, Mathematics, Physics and Chemistry. Government, Economics and Literature-in-English are not built, because they turn on current Nigerian civic and economic facts that need checkable sourcing rather than internally-verifiable calculation or language skill, and questions on the JAMB-recommended novel are excluded for the same reason.',
+        },
+        tests: [
+          { id: 'utme-full-mock-1', name: 'Full Mock Test 1 (Science)', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Scored as 180 raw marks, one per correct answer, rather than the official 400. JAMB scales each of the four subjects to 100, which works out to 5/3 of a mark per Use of English question and 2.5 per question elsewhere; the per-subject weighting is applied by JAMB rather than published as a per-question figure, so this mock reports the raw count instead of implying a precision it cannot source. Multiply your Use of English score by 5/3 and each other subject by 2.5 to read it as a UTME score out of 400.', checkedOn: '9 September 2026' },
+          { id: 'utme-use-of-english-sectional-1', name: 'Use of English Sectional Test 1', kind: 'sectional', section: 'Use of English', status: 'checked', duration: 40, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '9 September 2026' },
+          { id: 'utme-mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 27, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '9 September 2026' },
+          { id: 'utme-physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 27, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '9 September 2026' },
+          { id: 'utme-chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 27, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '9 September 2026' },
         ],
       },
     ],

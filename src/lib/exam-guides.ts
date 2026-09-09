@@ -76,6 +76,155 @@ const SSC_CPO_2025_NOTICE_URL =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2025.pdf';
 
 export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, ExamGuidePage>>>> = {
+  // JAMB UTME. Two guide pages, not the usual five, and that is deliberate.
+  // Eligibility is deliberately absent: the O-level credit requirements and the
+  // minimum age rule are exactly the cycle-specific, recently contested facts
+  // that need the official brochure to state, and jamb.gov.ng is unreachable
+  // from the network this site builds on. With no entry here the eligibility
+  // page falls back to its "being verified" placeholder and stays noindex,
+  // which is the correct outcome rather than a gap to be filled with guesswork.
+  'jamb': {
+    syllabus: {
+      title: 'JAMB UTME Syllabus: Subjects and Topics',
+      heading: 'JAMB UTME Syllabus',
+      description:
+        'Topic areas for the JAMB UTME subjects covered on this site: Use of English, Mathematics, Physics and Chemistry, with what each paper actually tests.',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'Every UTME candidate sits Use of English plus three subjects chosen to match the course applied for. Use of English carries 60 questions and each of the other three carries 40, giving 180 questions in two hours. There is no penalty for a wrong answer, so no question is worth leaving blank.',
+        },
+        {
+          type: 'callout',
+          text: 'This site covers four subjects: Use of English, Mathematics, Physics and Chemistry. That is the science combination. Subjects whose questions turn on current Nigerian civic and economic facts are not covered yet, because they need checkable sourcing rather than reasoning a candidate can verify from the question itself.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'Use of English',
+              pattern: '60 questions',
+              topics: [
+                'Comprehension of passages drawn from a range of subject areas',
+                'Cloze passages testing vocabulary in context',
+                'Lexis and structure: synonyms, antonyms and word usage',
+                'Sentence interpretation, including idioms and figurative expressions',
+                'Grammar: concord, tenses, conditionals and prepositions',
+                'Oral forms: vowel sounds, consonant sounds and word stress',
+                'Emphatic stress and intonation',
+                'Questions on the recommended novel (not covered on this site)',
+              ],
+            },
+            {
+              section: 'Mathematics',
+              pattern: '40 questions',
+              topics: [
+                'Number bases, fractions, decimals and approximation',
+                'Indices, logarithms and surds',
+                'Sets, ratio, proportion, percentage and interest',
+                'Polynomials, factorisation, quadratic equations and variation',
+                'Inequalities, arithmetic and geometric progressions',
+                'Matrices and determinants',
+                'Coordinate geometry and Euclidean geometry',
+                'Mensuration and trigonometry',
+                'Differentiation and integration',
+                'Statistics, permutations, combinations and probability',
+              ],
+            },
+            {
+              section: 'Physics',
+              pattern: '40 questions',
+              topics: [
+                'Measurements, units, dimensions, scalars and vectors',
+                'Linear motion, projectiles and motion under gravity',
+                'Newton laws, momentum and equilibrium of forces',
+                'Work, energy, power, machines and elasticity',
+                'Pressure, upthrust and fluids at rest',
+                'Temperature, thermal expansion, heat capacity and latent heat',
+                'Gas laws and the kinetic theory',
+                'Waves, sound and light including reflection, refraction and lenses',
+                'Electrostatics, current electricity, magnetism and induction',
+                'Electronics, atomic structure and radioactivity',
+              ],
+            },
+            {
+              section: 'Chemistry',
+              pattern: '40 questions',
+              topics: [
+                'Separation of mixtures and purification techniques',
+                'Laws of chemical combination and the mole concept',
+                'Atomic structure, electron configuration and periodicity',
+                'Chemical bonding and intermolecular forces',
+                'Air, water, solubility and the kinetic theory of gases',
+                'Stoichiometry, concentration and volumetric analysis',
+                'Energy changes, rates of reaction and chemical equilibrium',
+                'Acids, bases, salts and hydrolysis',
+                'Oxidation and reduction, and electrolysis',
+                'Non-metals, metals, extraction and organic chemistry',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'How this page is sourced',
+          text: 'The subject topic areas above are the standard UTME syllabus areas and match the questions set on this site. The official JAMB brochure could not be read directly from the network this site is built on, so the exam pattern is marked as review pending until it can be. Check the official syllabus before you rely on any single line here, particularly the recommended novel, which changes between cycles.',
+          sourceLabel: 'JAMB',
+          sourceUrl: 'https://www.jamb.gov.ng/',
+          tone: 'boxed',
+        },
+      ],
+    },
+    'selection-process': {
+      title: 'JAMB UTME Selection Process: From Registration to Admission',
+      heading: 'JAMB UTME Selection Process',
+      description:
+        'How a UTME candidate moves from registration through the computer-based test and institutional screening to an admission offer.',
+      blocks: [
+        {
+          type: 'paragraph',
+          text: 'The UTME score alone does not admit anyone. It is the first of several stages, and the institution a candidate applies to makes the final decision using the UTME score together with its own screening and the candidate O-level results.',
+        },
+        {
+          type: 'numberedStages',
+          items: [
+            {
+              title: 'Registration and profile creation',
+              text: 'The candidate creates a profile, obtains a registration PIN, and enters biometric details at an accredited centre. Course and institution choices are made at this stage.',
+            },
+            {
+              title: 'The UTME itself',
+              text: 'A computer-based test of 180 questions in two hours: 60 in Use of English and 40 in each of the three chosen subjects. There is no penalty for a wrong answer.',
+            },
+            {
+              title: 'Results and scores',
+              text: 'Each of the four subjects is scaled to 100, so the total is out of 400. Institutions set their own cut-off marks, which differ sharply by course and by institution.',
+            },
+            {
+              title: 'Institutional screening',
+              text: 'Candidates who meet an institution cut-off are invited for its own screening, which may be a test, an interview, or a check of documents and O-level results.',
+            },
+            {
+              title: 'Admission offer',
+              text: 'Offers are made through the central admissions system, where a candidate accepts or rejects the offer. Admission is only final once it is accepted there.',
+            },
+          ],
+        },
+        {
+          type: 'callout',
+          text: 'Because there is no negative marking, the arithmetic of guessing is simple: an unanswered question scores zero and a guess cannot score less. Time management on this paper is about making sure every one of the 180 questions has an answer recorded.',
+        },
+        {
+          type: 'sourceNote',
+          heading: 'How this page is sourced',
+          text: 'The stages above describe the UTME process as it is consistently reported across independent current sources. The official JAMB brochure could not be read directly from the network this site is built on, so cut-off marks, screening formats and deadlines should be confirmed against the official site and the institution you are applying to before you act on them.',
+          sourceLabel: 'JAMB',
+          sourceUrl: 'https://www.jamb.gov.ng/',
+          tone: 'boxed',
+        },
+      ],
+    },
+  },
   'ssc-cgl': {
     syllabus: {
       title: 'SSC CGL Tier 1 Syllabus 2026: Section-wise Topics',

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { countryPublishes } from '@/lib/exam-countries';
+import { countryPublishes, isExamInCountry } from '@/lib/exam-countries';
 import { notFound } from 'next/navigation';
 import { COUNTRIES, getExam } from '@/lib/exams';
 import {
@@ -137,9 +137,16 @@ export default async function TopicPracticePage({
   // credible. They just cannot be links, because those exam pages do not exist
   // in this subfolder. Naming them as plain text keeps the provenance and drops
   // the dead links.
-  const canLinkExams = countryPublishes(country, 'exams');
-  const linkedExams = canLinkExams ? exams.slice(0, MAX_LINKED_EXAMS) : [];
-  const remainingExams = canLinkExams ? exams.slice(MAX_LINKED_EXAMS) : exams;
+  // An exam is linkable only where its own pages exist, which is a per-exam
+  // question and not a per-country one. The pool is drawn from the whole
+  // corpus, so an /in pool contains JAMB and an /ng pool contains the Indian
+  // exams; linking either blindly is a dead link. Unavailable exams are still
+  // named, because the provenance is what makes the pool credible.
+  const availableExams = exams.filter((exam) => isExamInCountry(exam.slug, country));
+  const unavailableExams = exams.filter((exam) => !isExamInCountry(exam.slug, country));
+  const linkedExams = availableExams.slice(0, MAX_LINKED_EXAMS);
+  const remainingExams = [...availableExams.slice(MAX_LINKED_EXAMS), ...unavailableExams];
+  const hasExamDirectory = countryPublishes(country, 'exams');
   const siblings = getPublishedTopicSlugs()
     .filter((other) => other !== slug && getTopicPool(other)?.topic.family === family)
     .slice(0, 6);
@@ -275,9 +282,9 @@ export default async function TopicPracticePage({
           </ul>
           {remainingExams.length > 0 && (
             <p className="mt-3 text-xs leading-5 text-ink-500">
-              {canLinkExams ? 'Also set by ' : 'Drawn from '}
+              {linkedExams.length > 0 ? 'Also set by ' : 'Drawn from '}
               {remainingExams.map((exam) => exam.name).join(', ')}.
-              {canLinkExams && (
+              {hasExamDirectory && (
                 <>
                   {' '}
                   <Link href={`/${country}/exams`} className="font-semibold text-ink-900 underline">

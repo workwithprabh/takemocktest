@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { EXAM_LIST, getCheckedTestCount } from '@/lib/exams';
 import { getExamCatalog } from '@/lib/exam-catalog';
-import { countryPublishes } from '@/lib/exam-countries';
+import { countryPublishes, getExamsForCountry } from '@/lib/exam-countries';
 import { SITE_EMAIL } from '@/lib/schema';
 
 // Keep the footer compact; the exam directory remains the crawlable source
@@ -14,7 +14,14 @@ export default function Footer({ country }: { country: string }) {
   const hasExams = countryPublishes(country, 'exams');
   const hasBlog = countryPublishes(country, 'blog');
   const hasUpdates = countryPublishes(country, 'updates');
-  const examsWithCheckedTests = hasExams ? EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0) : [];
+  // Scoped to the country's own exams, not the whole catalogue. Publishing an
+  // exams section does not mean publishing every exam: Nigeria lists JAMB
+  // alone, and a footer built from EXAM_LIST would have put six dead Indian
+  // links into the chrome of every /ng page.
+  const countryExams = new Set<string>(getExamsForCountry(country));
+  const examsWithCheckedTests = hasExams
+    ? EXAM_LIST.filter((exam) => countryExams.has(exam.slug) && getCheckedTestCount(exam) > 0)
+    : [];
   const categories = getExamCatalog(country);
 
   return (
@@ -54,7 +61,7 @@ export default function Footer({ country }: { country: string }) {
             <li><Link href={`/${country}/practice`} className="hover:text-ink-50 transition">Topic-wise practice</Link></li>
             {hasBlog && <li><Link href={`/${country}/blog`} className="hover:text-ink-50 transition">Blog &amp; study tips</Link></li>}
             {hasExams && <li><Link href={`/${country}/exams`} className="hover:text-ink-50 transition">All exam categories</Link></li>}
-            {hasExams && <li><Link href={`/${country}/ssc-cgl/exam-pattern`} className="hover:text-ink-50 transition">SSC CGL exam pattern</Link></li>}
+            {countryExams.has('ssc-cgl') && <li><Link href={`/${country}/ssc-cgl/exam-pattern`} className="hover:text-ink-50 transition">SSC CGL exam pattern</Link></li>}
             <li><Link href={`/${country}/about`} className="hover:text-ink-50 transition">About</Link></li>
             <li><Link href={`/${country}/contact`} className="hover:text-ink-50 transition">Contact</Link></li>
             <li><a href={`mailto:${SITE_EMAIL}`} className="hover:text-ink-50 transition">{SITE_EMAIL}</a></li>

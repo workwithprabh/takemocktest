@@ -2,7 +2,7 @@ import { displayLabel } from '@/lib/questions';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { COUNTRIES } from '@/lib/exams';
-import { countryPublishes } from '@/lib/exam-countries';
+import { isExamInCountry } from '@/lib/exam-countries';
 import {
   LR_GRADE_BLURBS,
   LR_GRADE_LABELS,
@@ -79,9 +79,13 @@ export default async function LogicalReasoningTestPage({
   const base = `/${country}/${LR_SLUG}`;
   const siblings = LR_TEST_SPECS.filter((other) => other.kind === spec.kind && other.id !== spec.id).slice(0, 6);
   // The source exams are named in every country, because they are what makes
-  // the set credible. They are only linked where those exam pages exist: under
-  // a country that publishes no exams, linking them is 25 dead links per page.
-  const canLinkExams = countryPublishes(country, 'exams');
+  // the set credible. Whether each one is linked is a per-exam question: these
+  // sets draw on the whole corpus, so most of their sources have no page under
+  // a country that lists only its own exams, and linking them anyway put 25
+  // dead links on every /ng reasoning page.
+  const linkableExams = new Set(
+    sourceExams.filter((exam) => isExamInCountry(exam.slug, country)).map((exam) => exam.slug),
+  );
 
   const jsonLd = [
     breadcrumbSchema([
@@ -181,14 +185,14 @@ export default async function LogicalReasoningTestPage({
             Every question in this set already appears in the reasoning section of a real exam mock on this site.
             Reasoning is the one part of a paper that is not exam-specific, so the same puzzle is legitimate practice
             whichever of these you are sitting.
-            {canLinkExams
+            {linkableExams.size > 0
               ? ' If one of them is your exam, attempt it there too, under that exam\u2019s own timing and negative marking, which this section deliberately drops.'
               : ' That is why the set stands on its own here: the reasoning is the same reasoning, whatever paper it was originally written for.'}
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
             {sourceExams.map((exam) => (
               <li key={exam.slug}>
-                {canLinkExams ? (
+                {linkableExams.has(exam.slug) ? (
                   <Link
                     href={`/${country}/${exam.slug}/mock-test`}
                     className="inline-block border border-ink-200 bg-white px-3 py-1.5 text-xs font-semibold text-ink-900 transition hover:border-ink-900"

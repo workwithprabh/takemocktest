@@ -297,8 +297,37 @@ included them and could not be cleared by any build.
 
 Measure for a month before Phase 3.
 
-**Phase 3, the beachhead exam.** JAMB UTME only: pattern page, full mocks,
-sectionals, the guide pages. One exam done to the standard SSC CGL is done.
+**Phase 3, the beachhead exam. First batch shipped 9 September 2026.** JAMB UTME
+is live at `/ng/jamb` with **180 original questions** in four banks (Use of
+English 60, Mathematics 40, Physics 40, Chemistry 40), one full mock in the
+science combination and four sectionals, plus the exam directory, a syllabus
+page and a selection-process page. `/ng` went from 44 to **55 indexable pages**.
+
+**The pattern is marked review pending, not official, and that is the honest
+status rather than a gap.** jamb.gov.ng is unreachable from the network this
+site builds on, so the brochure could not be read. The shape of the paper (180
+questions, 60 in Use of English and 40 in each of three chosen subjects, two
+hours, 400 marks, no penalty for a wrong answer) is consistent across multiple
+independent current sources, and it is recorded with that provenance stated in
+the pattern note. It moves to official when the primary source can be read. This
+follows the precedent already set for IBPS Clerk Mains in `src/lib/exams.ts`.
+
+**What was deliberately not built.** Government, Economics and Literature in
+English turn on current Nigerian civic and economic facts that need checkable
+sourcing rather than reasoning a candidate can verify from the question itself,
+and questions on the JAMB-recommended novel would mean asserting the content of
+a prescribed text that could not be verified here. Both are the same call already
+made for General Awareness on the Indian banking exams. They are a Main Brain
+handoff, not a gap to fill with guesswork.
+
+**The international exams did not come with the exams section.** Turning `exams`
+on for Nigeria would have published 132 pages of SAT, IELTS and the rest
+alongside JAMB, which is three things changing at once when the whole point of a
+beachhead is to measure one. `INTERNATIONAL_EXAM_COUNTRIES` in
+`src/lib/exam-countries.ts` makes that set opt-in per country. SAT and IELTS
+under `/ng` are a deliberate later batch.
+
+Measure before Phase 4.
 
 **Phase 4, judge it.** If JAMB ranks and holds, the playbook travels and WAEC,
 NECO and post-UTME follow through the same pipeline. If it does not, we have

@@ -72,6 +72,8 @@ const EQUIVALENCE_CASES = [
   ['/sat/mock-test', true, 'the SAT is the same exam everywhere'],
   ['/ielts/mock-test', true, 'IELTS is the same exam everywhere'],
   ['/gre', true, 'the GRE is the same exam everywhere'],
+  ['/jamb', false, 'a Nigerian exam has no foreign equivalent'],
+  ['/jamb/mock-test', false, 'a Nigerian exam has no foreign equivalent'],
   ['/not-a-real-section', false, 'unknown paths default to not equivalent'],
 ];
 
@@ -130,6 +132,27 @@ if (practiceTags) {
 }
 if (blogCountries.length < 2 && buildAlternates('/in/blog/how-to-build-an-error-log')) {
   errors.push('coverage: a blog post got hreflang while only one country publishes the blog');
+}
+
+// Publishing the exams section is not the same as publishing a given exam.
+// Nigeria lists only JAMB, so an international exam that lives only under /in
+// must not be paired with a /ng URL that was never generated. This is the case
+// that would otherwise point hreflang at a 404 and cost the whole set.
+const { getExamCountries } = loadModule('exam-countries');
+for (const slug of ['sat', 'ielts']) {
+  const owners = getExamCountries(slug);
+  const tags = buildAlternates(`/in/${slug}/mock-test`);
+  if (owners.length < 2 && tags) {
+    errors.push(`coverage: "${slug}" is published only in ${owners.join(', ')} but its page still emitted hreflang`);
+  }
+  if (owners.length > 1 && !tags) {
+    errors.push(`coverage: "${slug}" is published in ${owners.join(', ')} but its page emitted no hreflang`);
+  }
+}
+// And an exam owned by one country alone is never paired, however many
+// countries publish an exams section.
+if (buildAlternates('/ng/jamb/mock-test', SIMULATED)) {
+  errors.push('shape: a Nigeria-only exam page was given hreflang for a two-country site');
 }
 
 // A non-equivalent path must produce nothing even with several countries live.
