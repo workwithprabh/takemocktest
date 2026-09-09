@@ -70,6 +70,120 @@ def date_range(days):
     return start.isoformat(), end.isoformat()
 
 
+# --- pure aggregation helpers -------------------------------------------------
+# Separated from the fetching on purpose. Nothing in this file can be exercised
+# against the live API from the sandbox that writes most of this repo (the
+# service-account key is deliberately not in git), so the part that can hold a
+# bug is kept free of I/O and covered by `gsc-query.py selftest`, which needs no
+# credentials. Same split as the two halves of scripts/audit-hreflang.mjs.
+
+def path_of(url):
+    """The path part of a result URL.
+
+    Search Console reports the apex and www hosts as different URLs for the same
+    page, so bucketing on the raw URL would silently split a section's numbers
+    in two. This normalises both to the path.
+    """
+    for scheme in ('https://', 'http://'):
+        if url.startswith(scheme):
+            url = url[len(scheme):]
+            break
+    slash = url.find('/')
+    return url[slash:] if slash != -1 else '/'
+
+
+def summarise(rows):
+    """Totals for a set of rows.
+
+    Average position is impression-weighted. A plain mean is wrong here and
+    wrong in a flattering direction: one impression at position 2 alongside a
+    hundred at position 60 averages to 31 unweighted and 59.4 weighted, and 31
+    would read as though the section were nearly on page three when almost
+    nobody who searched saw it there.
+    """
+    clicks = sum(r['clicks'] for r in rows)
+    impressions = sum(r['impressions'] for r in rows)
+    position = sum(r['position'] * r['impressions'] for r in rows) / impressions if impressions else 0.0
+    return {
+        'clicks': clicks,
+        'impressions': impressions,
+        'ctr': clicks / impressions if impressions else 0.0,
+        'position': position,
+        'pages': len(rows),
+    }
+
+
+def bucket_by_prefix(rows, prefixes):
+    """Group page rows by URL path prefix.
+
+    Longest prefix wins, so /in/practice takes its own pages rather than losing
+    them to /in. Anything matching no prefix lands in 'other', which is there to
+    make a mistake in the prefix list visible instead of silently dropping rows.
+    """
+    ordered = sorted(prefixes, key=len, reverse=True)
+    buckets = {prefix: [] for prefix in prefixes}
+    buckets['other'] = []
+    for row in rows:
+        path = path_of(row['keys'][0])
+        for prefix in ordered:
+            if path == prefix or path.startswith(prefix + '/'):
+                buckets[prefix].append(row)
+                break
+        else:
+            buckets['other'].append(row)
+    return buckets
+
+
+def cmd_selftest(args):
+    """Exercises the aggregation above with synthetic rows. No credentials, no
+    network: this is the part that would otherwise ship unverified."""
+    failures = []
+
+    def check(label, actual, expected):
+        if actual != expected:
+            failures.append(f'{label}: expected {expected}, got {actual}')
+
+    check('path_of apex', path_of('https://takemocktest.com/in/exams'), '/in/exams')
+    check('path_of www', path_of('https://www.takemocktest.com/in/exams'), '/in/exams')
+    check('path_of http', path_of('http://takemocktest.com/ng'), '/ng')
+    check('path_of root', path_of('https://takemocktest.com'), '/')
+
+    row = lambda page, clicks, impressions, position: {
+        'keys': [page], 'clicks': clicks, 'impressions': impressions, 'ctr': 0.0, 'position': position,
+    }
+
+    # Impression-weighted position, the case a plain mean gets wrong.
+    weighted = summarise([row('/a', 0, 1, 2.0), row('/b', 0, 100, 60.0)])
+    check('summarise impressions', weighted['impressions'], 101)
+    check('summarise weighted position', round(weighted['position'], 2), 59.43)
+    check('summarise empty', summarise([])['position'], 0.0)
+    check('summarise ctr', summarise([row('/a', 5, 100, 1.0)])['ctr'], 0.05)
+
+    rows = [
+        row('https://takemocktest.com/in/practice/percentage', 1, 10, 5.0),
+        row('https://www.takemocktest.com/in/practice', 0, 4, 8.0),
+        row('https://takemocktest.com/in/ssc-cgl/mock-test', 0, 6, 20.0),
+        row('https://takemocktest.com/ng/practice/percentage', 0, 2, 40.0),
+        row('https://takemocktest.com/ng', 0, 1, 50.0),
+        row('https://takemocktest.com/robots.txt', 0, 3, 90.0),
+    ]
+    buckets = bucket_by_prefix(rows, ['/in', '/ng', '/in/practice', '/ng/practice'])
+    check('bucket /in/practice', summarise(buckets['/in/practice'])['impressions'], 14)
+    check('bucket /in excludes practice', summarise(buckets['/in'])['impressions'], 6)
+    check('bucket /ng/practice', summarise(buckets['/ng/practice'])['impressions'], 2)
+    check('bucket /ng excludes practice', summarise(buckets['/ng'])['impressions'], 1)
+    check('bucket other', summarise(buckets['other'])['impressions'], 3)
+    # The www row must land with its apex twin, not in a bucket of its own.
+    check('bucket merges www', buckets['/in/practice'][1]['impressions'], 4)
+
+    if failures:
+        print(f'gsc-query selftest FAILED ({len(failures)}):', file=sys.stderr)
+        for failure in failures:
+            print(f'  - {failure}', file=sys.stderr)
+        sys.exit(1)
+    print('gsc-query selftest passed: path normalisation, impression-weighted position, and prefix bucketing.')
+
+
 def cmd_totals(session, args):
     start, end = date_range(args.days)
     rows = query(session, start, end, [])
@@ -151,6 +265,13 @@ def cmd_report(session, args):
     query_rows = sorted(query(session, start, end, ['query'], row_limit=args.limit), key=lambda r: -r['impressions'])
     page_rows = sorted(query(session, start, end, ['page'], row_limit=args.limit), key=lambda r: -r['impressions'])
 
+    # Every page, not just the top `limit`, because the subfolder tables below
+    # are totals and a truncated list would quietly understate whichever section
+    # has many small pages rather than a few large ones. That is exactly the
+    # shape of a new country subfolder.
+    all_page_rows = query(session, start, end, ['page'], row_limit=5000)
+    country_rows = sorted(query(session, start, end, ['country'], row_limit=250), key=lambda r: -r['impressions'])
+
     generated = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     lines = [
         '# Search Console report — takemocktest.com',
@@ -179,6 +300,57 @@ def cmd_report(session, args):
     else:
         lines.append('No queries recorded for this window.')
 
+    # Country and subfolder, which the totals above cannot show and which are the
+    # only way to tell whether a second country subfolder is doing anything. See
+    # PHASE_4_DECISION.md: these two tables are the inputs to that gate.
+    lines += ['', '## By country', '']
+    if country_rows:
+        total_impressions = sum(r['impressions'] for r in country_rows) or 1
+        lines += ['| Country | Clicks | Impressions | Share | Avg. position |', '|---|---|---|---|---|']
+        lines += [
+            f"| {r['keys'][0].upper()} | {r['clicks']} | {r['impressions']} |"
+            f" {100 * r['impressions'] / total_impressions:.1f}% | {r['position']:.1f} |"
+            for r in country_rows[:20]
+        ]
+    else:
+        lines.append('No country data for this window.')
+
+    SUBFOLDERS = ['/in/practice', '/ng/practice', '/in/logical-reasoning', '/ng/logical-reasoning', '/in', '/ng']
+    buckets = bucket_by_prefix(all_page_rows, SUBFOLDERS)
+    lines += [
+        '',
+        '## By subfolder',
+        '',
+        'The `/in` and `/ng` rows exclude the practice and reasoning sections listed above them,',
+        'so the rows sum to the total rather than double-counting.',
+        '',
+        '| Section | Pages with impressions | Clicks | Impressions | Avg. position |',
+        '|---|---|---|---|---|',
+    ]
+    for name in SUBFOLDERS + ['other']:
+        totals = summarise(buckets[name])
+        lines.append(
+            f"| `{name}` | {totals['pages']} | {totals['clicks']} | {totals['impressions']} |"
+            f" {totals['position']:.1f} |" if totals['impressions'] else
+            f"| `{name}` | 0 | 0 | 0 | n/a |"
+        )
+
+    lines += [
+        '',
+        '### Matched pair',
+        '',
+        '`/in/practice` and `/ng/practice` carry the same 40 topic pages, and `/in/logical-reasoning`',
+        'and `/ng/logical-reasoning` the same reasoning hub, published a day apart in September 2026.',
+        'Identical content on one domain, so the difference between each pair is the subfolder and its',
+        'audience rather than the writing. That is the cleanest read available on whether a new country',
+        'earns visibility, and it is what PHASE_4_DECISION.md judges.',
+        '',
+    ]
+    for india, nigeria in [('/in/practice', '/ng/practice'), ('/in/logical-reasoning', '/ng/logical-reasoning')]:
+        left, right = summarise(buckets[india]), summarise(buckets[nigeria])
+        ratio = f"{100 * right['impressions'] / left['impressions']:.1f}%" if left['impressions'] else 'n/a'
+        lines.append(f"- `{india}` {left['impressions']} impressions vs `{nigeria}` {right['impressions']} ({ratio} of India).")
+
     lines += ['', f'## Top {len(page_rows)} pages by impressions', '']
     if page_rows:
         lines += ['| Page | Clicks | Impressions | Avg. position |', '|---|---|---|---|']
@@ -205,9 +377,14 @@ def main():
     p.add_argument('--limit', type=int, default=50)
     p.set_defaults(func=cmd_by_page)
 
+    p = sub.add_parser('selftest', help='Exercise the aggregation helpers. No credentials needed.')
+    p.set_defaults(func=cmd_selftest, needs_session=False)
+
     args = parser.parse_args()
-    session = load_session()
-    args.func(session, args)
+    if getattr(args, 'needs_session', True):
+        args.func(load_session(), args)
+    else:
+        args.func(args)
 
 
 if __name__ == '__main__':

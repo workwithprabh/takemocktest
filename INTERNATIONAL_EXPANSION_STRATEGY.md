@@ -329,9 +329,34 @@ under `/ng` are a deliberate later batch.
 
 Measure before Phase 4.
 
-**Phase 4, judge it.** If JAMB ranks and holds, the playbook travels and WAEC,
-NECO and post-UTME follow through the same pipeline. If it does not, we have
-spent one exam finding out, not a country.
+**Phase 4, judge it. Pre-registered 9 September 2026, not yet evaluable.** If
+JAMB ranks and holds, the playbook travels and WAEC, NECO and post-UTME follow
+through the same pipeline. If it does not, we have spent one exam finding out,
+not a country.
+
+What "ranks and holds" means is now fixed in numbers in `PHASE_4_DECISION.md`,
+written before the data exists, because a threshold chosen after seeing the
+numbers is a rationalisation and expanding is always the more exciting option.
+
+**The verdict cannot be read yet, and the reason is not that JAMB is new.** It is
+that there is no control to measure against. This repo is 26 days old, and in
+the 90 days to 7 September the whole site drew 2 clicks and 64 impressions at an
+average position of 24.4, with 26 of 1,832 indexable pages ever shown. India has
+not yet demonstrated the thing Nigeria would be compared against. Running the
+comparison now divides one number near zero by another and calls it a strategy.
+
+**The design, which exists by accident of sequencing.** `/in/practice` and
+`/ng/practice` carry the same 40 topic pages, and the two reasoning hubs are
+likewise identical, published a day apart on one domain. Whatever differs
+between each pair is not the writing or the templates: it is the subfolder, its
+authority and its audience. `scripts/gsc-query.py report` now emits by-country
+and by-subfolder tables and the matched-pair ratios, and the weekly workflow
+commits them, so the series accumulates as ordinary git history from here.
+
+**One confound worth stating early:** JAMB is violently seasonal, with
+registration and the exam in roughly the first half of the year. A weak Q4
+reading is weak evidence, and the honest window for the beachhead gate is the
+registration run-up.
 
 **Phase 5.** Second country, using whatever Phase 4 taught.
 
