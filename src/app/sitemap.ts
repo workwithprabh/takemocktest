@@ -145,6 +145,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
           });
         } else if (
           test.kind === 'sectional' &&
+          // Cross-exam shared tests are noindexed (see the test page's own
+          // noIndex rule, which this mirrors), so they must not be submitted.
+          !test.sharedFrom &&
           getQuestionsForTest(exam.slug, test.id).length >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX
         ) {
           entries.push({

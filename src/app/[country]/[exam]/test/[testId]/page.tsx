@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { COUNTRIES, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
+import type { ExamConfig, TestConfig, TestStage } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest, displayLabel } from '@/lib/questions';
 import { notFound } from 'next/navigation';
@@ -28,6 +29,47 @@ export function generateStaticParams() {
 // name}" is always kept in full, even if the result stays over budget.
 const TITLE_LENGTH_BUDGET = 60;
 
+// The name a searcher would actually type, which is not the name the test has
+// in the catalogue. A sectional is filed as "Physics Sectional Test 1"; nobody
+// searches that. They search "BCECE physics mock test". See src/lib/seo-keywords.ts
+// for the declared target of every page class, and scripts/audit-keyword-map.mjs
+// for the gate that keeps this honest.
+//
+// The stage is included only when the exam actually has more than one stage
+// carrying tests. Without it, NIACL AO Prelims and Mains produced byte-identical
+// titles for their sectionals, which is how 66 duplicate titles reached the
+// index.
+function buildSearchName(exam: ExamConfig, stage: TestStage, test: TestConfig): string {
+  const stagesWithTests = exam.stages.filter((candidate) => candidate.tests.length > 0);
+  const stagePrefix = stagesWithTests.length > 1 ? `${stage.name} ` : '';
+  if (test.kind === 'sectional') {
+    // Built from the test's own name rather than from its section, because the
+    // name is what carries the distinctions: IBPS SO files four Professional
+    // Knowledge sectionals that differ only by specialisation, and the shared
+    // banks differ only by their source exam. Rebuilding from `section` alone
+    // collapsed all of those onto one title.
+    const core = test.name.replace('Sectional Test', 'Mock Test').replace(' Practice (', ' Mock Test (');
+    const named = core.toLowerCase().includes('mock test') ? core : `${core} Mock Test`;
+    // Only prefix what the name does not already say. JEE Advanced files its
+    // sectionals as "Paper 1 Chemistry ...", so prepending the stage produced
+    // "Paper 1 Paper 1", and CUET UG's names already lead with the exam.
+    const lower = named.toLowerCase();
+    // Also drop it when the stage name already contains this section: several
+    // single-paper exams name their stage after the whole section list, so
+    // AILET's "English and Logical Reasoning" stage in front of its Logical
+    // Reasoning sectional read "Logical Reasoning Logical Reasoning".
+    const stageName = stage.name.toLowerCase();
+    const sectionEchoed = Boolean(test.section) && stageName.includes(test.section!.toLowerCase());
+    const stagePart = stagePrefix && !lower.startsWith(stageName) && !sectionEchoed ? stagePrefix : '';
+    const examPart = lower.startsWith(exam.name.toLowerCase()) ? '' : `${exam.name} `;
+    return `${examPart}${stagePart}${named}`;
+  }
+  const core = test.name.toLowerCase().startsWith(exam.name.toLowerCase())
+    ? test.name
+    : `${exam.name} ${test.name}`;
+  return core.replace(' Objective Full Mock Test', ' Full Mock Test');
+}
+
 function buildTestTitle(examName: string, coreName: string, isFullMock: boolean, cycle: number | string) {
   if (isFullMock) {
     const withCycleAndSuffix = `${examName} ${coreName} (${cycle}): Free Online Test`;
@@ -55,14 +97,22 @@ export async function generateMetadata({
   const cycle = configuredTest?.stage.pattern.cycle ?? new Date().getFullYear();
   const questionCount = getQuestionsForTest(examSlug, testId).length;
   const conciseTestName = testName.replace(' Objective Full Mock Test', ' Mock Test');
+  // Sectionals are titled and described from the search name rather than the
+  // catalogue name: the phrase people type is "{exam} {section} mock test", and
+  // the old "…Sectional Test 1: Instructions" put a word with no search demand
+  // in the most valuable position on the page.
+  const searchName = configuredTest ? buildSearchName(exam, configuredTest.stage, configuredTest.test) : `${exam.name} ${testName}`;
+  const sectionalTitle = `${searchName}: Free Practice`;
   return pageMetadata({
-    title: buildTestTitle(exam.name, isFullMock ? conciseTestName : testName, isFullMock, cycle),
+    title: isSectional
+      ? (sectionalTitle.length <= TITLE_LENGTH_BUDGET ? sectionalTitle : searchName)
+      : buildTestTitle(exam.name, isFullMock ? conciseTestName : testName, isFullMock, cycle),
     description: questionCount === 0
       ? `${exam.name} ${testName} is being prepared. Browse the available ${exam.name} practice tests while this test is completed.`
       : isFullMock
       ? `Attempt ${exam.name} ${testName}: ${questionCount} questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.`
       : isSectional
-        ? `Practice ${configuredTest.test.section} for ${exam.name} with ${questionCount} original, topic-tagged questions, instant scoring, and answer explanations.`
+        ? `Free ${searchName}: ${questionCount} questions with answers and explanations, exam-style timing and instant scoring. No sign-up.`
         : `Review the timing, question count, and negative-marking instructions for ${exam.name} ${testName}.`,
     path: `/${country}/${exam.slug}/test/${testId}`,
     // Sectional tests earned their way into the index once they had real
@@ -74,7 +124,15 @@ export async function generateMetadata({
     // even with the enrichment. Other non-full-mock kinds (quick/topic/
     // difficulty/practice) haven't had the same content work done, so they
     // stay noindexed until they do.
-    noIndex: questionCount === 0 || (!isFullMock && !(isSectional && questionCount >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX)),
+    // Cross-exam shared tests are noindexed on top of the rules above. They
+    // serve another exam's question bank verbatim under this exam's name, so
+    // five of them per exam were competing with each other and with the exam's
+    // own sectional for the same "{exam} {section} mock test" phrase: 79 pages
+    // of self-cannibalisation and duplicate content. They stay in the product,
+    // reachable from Explore Similar Tests, which is what they were built for.
+    // Keep in sync with the same exclusion in src/app/sitemap.ts.
+    noIndex: questionCount === 0 || Boolean(configuredTest?.test.sharedFrom)
+      || (!isFullMock && !(isSectional && questionCount >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX)),
   });
 }
 
@@ -2086,9 +2144,8 @@ export default async function TestInstructionsPage({
   const maxScore = Math.round(
     questions.reduce((total, question) => total + (question.marks ?? test.marksPerCorrect), 0) * 100,
   ) / 100;
-  const displayName = test.name.toLowerCase().startsWith(exam.name.toLowerCase())
-    ? test.name
-    : `${exam.name} ${test.name}`;
+  // Same helper as the title, so the H1 and the <title> can never drift apart.
+  const displayName = buildSearchName(exam, stage, test);
   const kindLabel = {
     'full-length': 'Full mock',
     sectional: 'Sectional test',
