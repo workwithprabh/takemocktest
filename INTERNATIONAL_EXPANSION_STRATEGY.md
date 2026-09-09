@@ -298,10 +298,11 @@ included them and could not be cleared by any build.
 Measure for a month before Phase 3.
 
 **Phase 3, the beachhead exam. First batch shipped 9 September 2026.** JAMB UTME
-is live at `/ng/jamb` with **180 original questions** in four banks (Use of
-English 60, Mathematics 40, Physics 40, Chemistry 40), one full mock in the
-science combination and four sectionals, plus the exam directory, a syllabus
-page and a selection-process page. `/ng` went from 44 to **55 indexable pages**.
+is live at `/ng/jamb` with **260 original questions** in six banks (Use of
+English 60, and 40 each in Mathematics, Physics, Chemistry, Government and
+Economics), two full mocks and six sectionals, plus the exam directory, a
+syllabus page and a selection-process page. `/ng` went from 44 to **58
+indexable pages**.
 
 **The pattern is marked review pending, not official, and that is the honest
 status rather than a gap.** jamb.gov.ng is unreachable from the network this
@@ -312,13 +313,27 @@ independent current sources, and it is recorded with that provenance stated in
 the pattern note. It moves to official when the primary source can be read. This
 follows the precedent already set for IBPS Clerk Mains in `src/lib/exams.ts`.
 
-**What was deliberately not built.** Government, Economics and Literature in
-English turn on current Nigerian civic and economic facts that need checkable
-sourcing rather than reasoning a candidate can verify from the question itself,
-and questions on the JAMB-recommended novel would mean asserting the content of
-a prescribed text that could not be verified here. Both are the same call already
-made for General Awareness on the Indian banking exams. They are a Main Brain
-handoff, not a gap to fill with guesswork.
+**Second batch, 9 September 2026: Government and Economics.** 80 further
+original questions, a second full mock in the commercial combination (Use of
+English, Mathematics, Economics, Government) and two sectionals, taking `/ng` to
+**58 indexable pages**. The two full mocks share the Use of English and
+Mathematics banks on purpose: in the real UTME those are the same papers whoever
+sits them, and a science candidate takes mock 1 while a commercial candidate
+takes mock 2, so no single student meets the overlap.
+
+A third-party syllabus page was offered as the reference for these subjects but
+could not be read from the network this site builds on, so coverage follows the
+standard published syllabus structure and each bank says so in its own source
+note rather than citing a page nobody here read.
+
+**What is still deliberately not built.** Literature-in-English, because most of
+that paper is set on prescribed texts that rotate by cycle and writing questions
+on them would mean asserting the content of books that could not be verified.
+Questions on the JAMB-recommended novel are excluded from the Use of English
+paper for the same reason. Within Government and Economics, current officeholders,
+current statistics and recent policy are excluded, leaving settled constitutional,
+institutional, historical and analytical content. That boundary is the same call
+already made for General Awareness on the Indian banking exams.
 
 **The international exams did not come with the exams section.** Turning `exams`
 on for Nigeria would have published 132 pages of SAT, IELTS and the rest

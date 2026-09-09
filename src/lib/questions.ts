@@ -794,6 +794,8 @@ import { JAMB_UTME_USE_OF_ENGLISH_1 } from './question-banks/jamb-utme-use-of-en
 import { JAMB_UTME_MATHEMATICS_1 } from './question-banks/jamb-utme-mathematics-1';
 import { JAMB_UTME_PHYSICS_1 } from './question-banks/jamb-utme-physics-1';
 import { JAMB_UTME_CHEMISTRY_1 } from './question-banks/jamb-utme-chemistry-1';
+import { JAMB_UTME_GOVERNMENT_1 } from './question-banks/jamb-utme-government-1';
+import { JAMB_UTME_ECONOMICS_1 } from './question-banks/jamb-utme-economics-1';
 
 // Every question the site serves, indexed by its (globally unique, enforced by
 // scripts/audit-question-banks.mjs) question ID. Built once on first use so
@@ -958,6 +960,18 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
     ...JAMB_UTME_PHYSICS_1,
     ...JAMB_UTME_CHEMISTRY_1,
   ],
+  // Full Mock 2 is the commercial combination. It reuses the Use of English and
+  // Mathematics banks on purpose: in the real UTME those two papers are the
+  // same paper whoever sits them, and a science candidate takes mock 1 while a
+  // commercial candidate takes mock 2, so no one student meets the overlap.
+  'jamb/utme-full-mock-2': [
+    ...JAMB_UTME_USE_OF_ENGLISH_1,
+    ...JAMB_UTME_MATHEMATICS_1,
+    ...JAMB_UTME_ECONOMICS_1,
+    ...JAMB_UTME_GOVERNMENT_1,
+  ],
+  'jamb/utme-government-sectional-1': JAMB_UTME_GOVERNMENT_1,
+  'jamb/utme-economics-sectional-1': JAMB_UTME_ECONOMICS_1,
   'jamb/utme-use-of-english-sectional-1': JAMB_UTME_USE_OF_ENGLISH_1,
   'jamb/utme-mathematics-sectional-1': JAMB_UTME_MATHEMATICS_1,
   'jamb/utme-physics-sectional-1': JAMB_UTME_PHYSICS_1,
@@ -3419,6 +3433,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     // shadow them.
     : testId === 'jamb/utme-full-mock-1'
     ? 180
+    : testId === 'jamb/utme-full-mock-2'
+    ? 180
+    : testId === 'jamb/utme-government-sectional-1'
+    ? 40
+    : testId === 'jamb/utme-economics-sectional-1'
+    ? 40
     : testId === 'jamb/utme-use-of-english-sectional-1'
     ? 60
     : testId === 'jamb/utme-mathematics-sectional-1'
@@ -5503,6 +5523,14 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: 'Part B Computer Science', count: 15 },
   ],
 };
+// JAMB's two full mocks share an exam slug but not a section order, so the
+// per-slug entry in fullMockLayouts covers mock 1 and this covers mock 2.
+const jambUtmeCommercialLayout = [
+  { section: "Use of English", count: 60 },
+  { section: "Mathematics", count: 40 },
+  { section: "Economics", count: 40 },
+  { section: "Government", count: 40 },
+];
 const sebiGradeAPaper1Layout = [
   { section: 'General Awareness', count: 20 },
   { section: 'English Language', count: 20 },
@@ -5864,7 +5892,9 @@ const nmatLanguageLogicalReasoningQuantitativeLayout = [
   { section: 'Quantitative Skills', count: 12 },
 ];
 for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([testId]) => testId.includes('full-mock'))) {
-  const layout = testId.includes('tier-2-paper-1-objective-full-mock')
+  const layout = testId === 'jamb/utme-full-mock-2'
+    ? jambUtmeCommercialLayout
+    : testId.includes('tier-2-paper-1-objective-full-mock')
     ? tierTwoPaperOneLayout
     : testId.includes('jee-advanced/paper-1-full-mock')
       ? jeeAdvancedPaper1Layout
