@@ -1,13 +1,15 @@
 import { notFound } from 'next/navigation';
-import { getAllTestSlugs, getExam, getTestConfig, testIdToName } from '@/lib/exams';
+import { COUNTRIES, getAllTestSlugs, getExam, getTestConfig, testIdToName } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import TestAttemptClient from './TestAttemptClient';
 import { pageMetadata } from '@/lib/metadata';
 import { getQuestionsForTest } from '@/lib/questions';
 
-export function generateStaticParams({ params }: { params: { country: string } }) {
-  return getExamsForCountry(params.country).flatMap((slug) =>
-    getAllTestSlugs(getExam(slug)!).map((testId) => ({ exam: slug, testId }))
+export function generateStaticParams() {
+  return COUNTRIES.flatMap((country) =>
+    getExamsForCountry(country).flatMap((slug) =>
+      getAllTestSlugs(getExam(slug)!).map((testId) => ({ country, exam: slug, testId }))
+    )
   );
 }
 

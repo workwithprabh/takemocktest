@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
+import { COUNTRIES, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest, displayLabel } from '@/lib/questions';
 import { notFound } from 'next/navigation';
@@ -9,9 +9,11 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { isLRSourceSection } from '@/lib/logical-reasoning-sections';
 import { LR_SLUG, LR_TOTAL_QUESTIONS } from '@/lib/logical-reasoning';
 
-export function generateStaticParams({ params }: { params: { country: string } }) {
-  return getExamsForCountry(params.country).flatMap((slug) =>
-    getAllTestSlugs(getExam(slug)!).map((testId) => ({ exam: slug, testId }))
+export function generateStaticParams() {
+  return COUNTRIES.flatMap((country) =>
+    getExamsForCountry(country).flatMap((slug) =>
+      getAllTestSlugs(getExam(slug)!).map((testId) => ({ country, exam: slug, testId }))
+    )
   );
 }
 

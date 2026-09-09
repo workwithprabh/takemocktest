@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { COUNTRIES, getExam, getCheckedTestCount, getSharedTests, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
 import { getExamCatalog } from '@/lib/exam-catalog';
-import { getExamsForCountry } from '@/lib/exam-countries';
+import { countryPublishes, getExamsForCountry } from '@/lib/exam-countries';
 import { BLOG_POSTS } from '@/lib/blog';
 import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
@@ -27,8 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const country of COUNTRIES) {
     entries.push({ url: `${SITE_URL}/${country}`, changeFrequency: 'daily', priority: 1 });
-    entries.push({ url: `${SITE_URL}/${country}/exams`, changeFrequency: 'weekly', priority: 0.9 });
-    entries.push({ url: `${SITE_URL}/${country}/exam-updates`, changeFrequency: 'daily', priority: 0.8 });
+    if (countryPublishes(country, 'exams')) {
+      entries.push({ url: `${SITE_URL}/${country}/exams`, changeFrequency: 'weekly', priority: 0.9 });
+    }
+    if (countryPublishes(country, 'updates')) {
+      entries.push({ url: `${SITE_URL}/${country}/exam-updates`, changeFrequency: 'daily', priority: 0.8 });
+    }
     // Logical Reasoning hub: the landing page and each practice set. The
     // /attempt routes are deliberately absent — they're noindexed, like every
     // other attempt route on the site.
@@ -49,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
       });
     }
-    for (const update of UPDATES) {
+    for (const update of countryPublishes(country, 'updates') ? UPDATES : []) {
       entries.push({
         url: `${SITE_URL}/${country}/exam-updates/${update.slug}`,
         lastModified: update.modifiedAt,
@@ -57,12 +61,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
       });
     }
-    entries.push({
-      url: `${SITE_URL}/${country}/blog`,
-      lastModified: latestPost ? toLastModified(latestPost.publishedAt) : undefined,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    });
+    if (countryPublishes(country, 'blog')) {
+      entries.push({
+        url: `${SITE_URL}/${country}/blog`,
+        lastModified: latestPost ? toLastModified(latestPost.publishedAt) : undefined,
+        changeFrequency: 'monthly',
+        priority: 0.6,
+      });
+    }
     // 'terms' deliberately absent: it's noindexed (see its page.tsx), and
     // listing a noindexed URL in the sitemap asks Google to crawl something
     // it's then told not to index. Privacy is already excluded for the same
@@ -70,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const path of ['about']) {
       entries.push({ url: `${SITE_URL}/${country}/${path}`, changeFrequency: 'yearly', priority: 0.3 });
     }
-    for (const post of BLOG_POSTS) {
+    for (const post of countryPublishes(country, 'blog') ? BLOG_POSTS : []) {
       entries.push({
         url: `${SITE_URL}/${country}/blog/${post.slug}`,
         lastModified: post.publishedAt,

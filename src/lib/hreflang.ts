@@ -17,7 +17,7 @@
 // exist in more than one subfolder with the same content, so they really do
 // want hreflang. See src/lib/exam-countries.ts.
 import { COUNTRIES, getExam } from './exams';
-import { isInternationalExam } from './exam-countries';
+import { countriesPublishing, isInternationalExam, type CountrySection } from './exam-countries';
 import { SITE_URL } from './schema';
 
 // BCP 47 tag per country subfolder. English everywhere so far, region varies.
@@ -63,6 +63,22 @@ function splitCountry(path: string): [string, string] | undefined {
   return [match[1], match[2] ?? ''];
 }
 
+// Which section a path belongs to, or undefined for pages every country has
+// (the homepage, about, privacy, terms, results). Used to work out who can
+// legitimately appear in an hreflang set: a country that does not publish the
+// blog must not be listed as an alternate for a blog post, or the tag points at
+// a 404 and Google discards the whole set.
+export function sectionForPath(rest: string): CountrySection | undefined {
+  if (rest === '/practice' || rest.startsWith('/practice/')) return 'practice';
+  if (rest === '/logical-reasoning' || rest.startsWith('/logical-reasoning/')) return 'reasoning';
+  if (rest === '/blog' || rest.startsWith('/blog/')) return 'blog';
+  if (rest === '/exam-updates' || rest.startsWith('/exam-updates/')) return 'updates';
+  if (rest === '/exams' || rest.startsWith('/exams/')) return 'exams';
+  const slug = rest.split('/')[1];
+  if (slug && getExam(slug)) return 'exams';
+  return undefined;
+}
+
 /**
  * True when this path names content that exists, meaning the same thing, under
  * every country that has it. Takes the path with the country segment already
@@ -101,10 +117,14 @@ export function buildAlternates(
   if (!split) return undefined;
   const [, rest] = split;
   if (!isEquivalentAcrossCountries(rest)) return undefined;
-  if (countries.length < 2) return undefined;
+
+  // Only countries that actually publish this section can be alternates.
+  const section = sectionForPath(rest);
+  const eligible = section ? countries.filter((country) => countriesPublishing(section).includes(country as never)) : countries;
+  if (eligible.length < 2) return undefined;
 
   const languages: Record<string, string> = {};
-  for (const country of countries) {
+  for (const country of eligible) {
     const locale = COUNTRY_LOCALES[country];
     if (!locale) continue;
     languages[locale] = `${SITE_URL}/${country}${rest}`;
@@ -112,7 +132,10 @@ export function buildAlternates(
   if (Object.keys(languages).length < 2) return undefined;
   // x-default is the page for a reader Google cannot place. India is the
   // largest audience and the only complete catalogue, so it takes that role
-  // until there is a reason to reconsider.
-  languages['x-default'] = `${SITE_URL}/${COUNTRIES[0]}${rest}`;
+  // until there is a reason to reconsider. It must be one of the URLs actually
+  // listed, so it falls back to the first eligible country if India does not
+  // publish this section.
+  const fallback = eligible.includes(COUNTRIES[0]) ? COUNTRIES[0] : eligible[0];
+  languages['x-default'] = `${SITE_URL}/${fallback}${rest}`;
   return languages;
 }

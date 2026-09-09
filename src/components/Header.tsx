@@ -1,13 +1,20 @@
 'use client';
 
 import Link from 'next/link';
-import { EXAM_CATEGORIES, getCategoryExamCount } from '@/lib/exam-catalog';
+import { getExamCatalog, getCategoryExamCount } from '@/lib/exam-catalog';
+import { countryPublishes } from '@/lib/exam-countries';
 import { useDismissableMenu } from '@/lib/useDismissableMenu';
 
 // Site header: logo, primary nav, search. This is the internal-linking
 // anchor Google uses to discover every exam/blog page beneath it.
 export default function Header({ country }: { country: string }) {
   const { open, setOpen, ref } = useDismissableMenu<HTMLDivElement>();
+  // Chrome renders on every page of every country, so a link to a section a
+  // country does not publish would be a dead link site-wide, not a one-off.
+  const hasExams = countryPublishes(country, 'exams');
+  const hasBlog = countryPublishes(country, 'blog');
+  const hasUpdates = countryPublishes(country, 'updates');
+  const categories = getExamCatalog(country);
 
   return (
     <header className="bg-ink-900 sticky top-0 z-20">
@@ -16,9 +23,11 @@ export default function Header({ country }: { country: string }) {
           TakeMockTest
         </Link>
         <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-6 text-sm font-medium text-ink-50">
-          <Link href={`/${country}#exams`} className="hover:text-ink-300 transition">Mock tests</Link>
-          <Link href={`/${country}/exam-updates`} className="hover:text-ink-300 transition">Exam updates</Link>
+          {hasExams && <Link href={`/${country}#exams`} className="hover:text-ink-300 transition">Mock tests</Link>}
+          {hasUpdates && <Link href={`/${country}/exam-updates`} className="hover:text-ink-300 transition">Exam updates</Link>}
           <Link href={`/${country}/practice`} className="hover:text-ink-300 transition">Topic practice</Link>
+          <Link href={`/${country}/logical-reasoning`} className="hover:text-ink-300 transition">Logical reasoning</Link>
+          {hasExams && (
           <div ref={ref} className="relative">
             <button
               type="button"
@@ -41,7 +50,7 @@ export default function Header({ country }: { country: string }) {
                   <Link href={`/${country}/exams`} onClick={() => setOpen(false)} className="text-xs text-ink-300 hover:text-ink-50">View all exams →</Link>
                 </div>
                 <div className="grid grid-cols-2 gap-1">
-                  {EXAM_CATEGORIES.map((category) => (
+                  {categories.map((category) => (
                     <Link
                       key={category.slug}
                       href={`/${country}/exams/${category.slug}`}
@@ -56,10 +65,12 @@ export default function Header({ country }: { country: string }) {
               </div>
             )}
           </div>
-          <Link href={`/${country}/blog`} className="hover:text-ink-300 transition">Study resources</Link>
+          )}
+          {hasBlog && <Link href={`/${country}/blog`} className="hover:text-ink-300 transition">Study resources</Link>}
           <Link href={`/${country}/results`} className="hover:text-ink-300 transition">My results</Link>
           <Link href={`/${country}/about`} className="hover:text-ink-300 transition">About</Link>
         </nav>
+        {hasExams && (
         <Link
           href={`/${country}/exams`}
           aria-label="Search and browse exams"
@@ -71,6 +82,7 @@ export default function Header({ country }: { country: string }) {
           </svg>
           <span className="hidden text-xs font-semibold sm:inline">Find exam</span>
         </Link>
+        )}
       </div>
     </header>
   );

@@ -1,4 +1,4 @@
-import { getExam } from '@/lib/exams';
+import { COUNTRIES, getExam } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
@@ -10,8 +10,13 @@ const CGL_2026_NOTICE = 'https://ssc.gov.in/api/attachment/uploads/masterData/No
 // Nested under [country], so Next.js passes the parent's params in. Filtering
 // here is what stops a second country subfolder from generating every Indian
 // exam's pages: see src/lib/exam-countries.ts.
-export function generateStaticParams({ params }: { params: { country: string } }) {
-  return getExamsForCountry(params.country).map((exam) => ({ exam }));
+// Returns the full param set, country included, rather than relying on Next
+// passing the parent's params into a nested generateStaticParams: it does not
+// do that reliably here, and the failure mode is the route generating nothing
+// at all. Filtering per country is what stops a second subfolder from
+// publishing every Indian exam; see src/lib/exam-countries.ts.
+export function generateStaticParams() {
+  return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {

@@ -1,9 +1,21 @@
 import Image from 'next/image';
+import { COUNTRIES } from '@/lib/exams';
+import { notFound } from 'next/navigation';
+import { countryPublishes } from '@/lib/exam-countries';
 import Link from 'next/link';
 import { BLOG_POSTS } from '@/lib/blog';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, organizationSchema, blogSchema, jsonLdHtml } from '@/lib/schema';
 import { getBlogCategoryStyle } from '@/components/blog/BlogCategoryStyle';
+
+// Generated only for countries that publish this section. Returning the country
+// param here rather than leaning on the layout is what keeps the page out of a
+// country's export entirely: calling notFound() instead still writes a file, and
+// a static host serves that with a 200, which is a soft 404 rather than a
+// missing page.
+export function generateStaticParams() {
+  return COUNTRIES.filter((country) => countryPublishes(country, 'blog')).map((country) => ({ country }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
@@ -16,6 +28,10 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
 
 export default async function BlogIndexPage({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
+  // blog is not published by every country: see COUNTRY_SECTIONS in
+  // src/lib/exam-countries.ts. A country that does not publish it has no such
+  // page rather than an empty one.
+  if (!countryPublishes(country, 'blog')) notFound();
   const illustratedPosts = BLOG_POSTS.filter((post) => post.image);
   const featured = illustratedPosts[0];
   const visualGuides = illustratedPosts.slice(1);

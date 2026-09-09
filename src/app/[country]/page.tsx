@@ -4,6 +4,7 @@ import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
+import { countryPublishes } from '@/lib/exam-countries';
 import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
 import { pageMetadata } from '@/lib/metadata';
@@ -52,6 +53,11 @@ const FAQS = [
 
 export default async function HomePage({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
+  // A country with no exams gets the exam-agnostic homepage: hero, the two
+  // skill sections, trust and FAQ. The exam grids, category grid and updates
+  // strip are not rendered rather than rendered empty.
+  const hasExams = countryPublishes(country, 'exams');
+  const hasUpdates = countryPublishes(country, 'updates');
   const latestUpdates = getLatestUpdates(5);
 
   return (
@@ -111,6 +117,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
       </section>
 
       <div className="mx-auto max-w-6xl space-y-10 px-5 py-8 md:space-y-14 md:py-12">
+        {hasExams && (
         <section id="exams" aria-labelledby="popular-tests-heading" className="scroll-mt-24">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
             <h2 id="popular-tests-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Popular mock tests</h2>
@@ -124,6 +131,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             ))}
           </div>
         </section>
+        )}
 
         {/* Practice by skill sits between the exam list and the category
             browser deliberately. Both of those require the visitor to already
@@ -191,6 +199,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
           </div>
         </section>
 
+        {hasExams && (
         <section id="exam-categories" aria-labelledby="exam-categories-heading" className="scroll-mt-24">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
             <h2 id="exam-categories-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Browse by goal</h2>
@@ -204,8 +213,9 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             ))}
           </div>
         </section>
+        )}
 
-        {latestUpdates.length > 0 && (
+        {hasUpdates && latestUpdates.length > 0 && (
           <section aria-labelledby="latest-updates-heading">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
               <h2 id="latest-updates-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Latest exam updates</h2>

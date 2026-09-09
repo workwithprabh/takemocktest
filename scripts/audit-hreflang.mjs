@@ -43,6 +43,7 @@ function loadModule(relative) {
 }
 
 const { isEquivalentAcrossCountries, buildAlternates, COUNTRY_LOCALES } = loadModule('hreflang');
+const COUNTRIES_LIVE = loadModule('exams').COUNTRIES;
 
 // --- PART A: the rules ------------------------------------------------------
 // Each row is a path with its country segment removed, and whether it names the
@@ -53,7 +54,7 @@ const EQUIVALENCE_CASES = [
   ['/exams', true, 'the directory'],
   ['/exams/medical', true, 'a directory category'],
   ['/practice', true, 'topic practice index'],
-  ['/practice/percentages', true, 'a topic: a percentage question is a percentage question'],
+  ['/practice/percentage', true, 'a topic: a percentage question is a percentage question'],
   ['/logical-reasoning', true, 'the reasoning hub'],
   ['/logical-reasoning/test/easy-set-1', true, 'a reasoning set'],
   ['/blog', true, 'blog index'],
@@ -85,7 +86,7 @@ for (const [rest, expected, why] of EQUIVALENCE_CASES) {
 
 // The output shape, proved against a country that does not exist yet.
 const SIMULATED = ['in', 'ng'];
-const sample = buildAlternates('/in/practice/percentages', SIMULATED);
+const sample = buildAlternates('/in/practice/percentage', SIMULATED);
 if (!sample) {
   errors.push('shape: buildAlternates returned nothing for an equivalent path with two countries');
 } else {
@@ -93,10 +94,10 @@ if (!sample) {
   for (const key of expectedKeys) {
     if (!(key in sample)) errors.push(`shape: missing "${key}" in the two-country hreflang set`);
   }
-  if (sample['en-IN'] !== 'https://takemocktest.com/in/practice/percentages') {
+  if (sample['en-IN'] !== 'https://takemocktest.com/in/practice/percentage') {
     errors.push(`shape: en-IN points at ${sample['en-IN']}`);
   }
-  if (sample['en-NG'] !== 'https://takemocktest.com/ng/practice/percentages') {
+  if (sample['en-NG'] !== 'https://takemocktest.com/ng/practice/percentage') {
     errors.push(`shape: en-NG points at ${sample['en-NG']}`);
   }
   if (sample['x-default'] !== sample['en-IN']) {
@@ -107,12 +108,36 @@ if (!sample) {
   }
 }
 
+// Section coverage: a country that does not publish a section must never appear
+// as its alternate, or the tag points at a 404 and Google discards the set.
+// Blog is the live example: India publishes it, Nigeria does not.
+const { countriesPublishing } = loadModule('exam-countries');
+const practiceCountries = countriesPublishing('practice');
+const blogCountries = countriesPublishing('blog');
+
+const practiceTags = buildAlternates('/in/practice/percentage');
+if (practiceCountries.length > 1 && !practiceTags) {
+  errors.push('coverage: topic practice is published by more than one country but got no hreflang');
+}
+if (practiceTags) {
+  for (const country of COUNTRIES_LIVE) {
+    const shouldBeListed = practiceCountries.includes(country);
+    const isListed = Object.values(practiceTags).some((url) => url.includes(`/${country}/practice/`));
+    if (shouldBeListed !== isListed) {
+      errors.push(`coverage: "${country}" ${shouldBeListed ? 'should' : 'should not'} appear in the topic-practice hreflang set`);
+    }
+  }
+}
+if (blogCountries.length < 2 && buildAlternates('/in/blog/how-to-build-an-error-log')) {
+  errors.push('coverage: a blog post got hreflang while only one country publishes the blog');
+}
+
 // A non-equivalent path must produce nothing even with several countries live.
 if (buildAlternates('/in/ssc-cgl/mock-test', SIMULATED)) {
   errors.push('shape: an India-only exam page was given hreflang for a two-country site');
 }
 // And one country means nothing to declare.
-if (buildAlternates('/in/practice/percentages', ['in'])) {
+if (buildAlternates('/in/practice/percentage', ['in'])) {
   errors.push('shape: a single-country site emitted hreflang, which is noise on every page');
 }
 
@@ -150,7 +175,12 @@ if (fs.existsSync(outDir)) {
   for (const file of files) {
     const rel = `/${path.relative(outDir, file).replace(/\\/g, '/').replace(/\.html$/, '')}`;
     const html = fs.readFileSync(file, 'utf8');
-    const tags = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((m) => ({
+    // Case-insensitive on purpose: Next renders the attribute as `hrefLang`,
+    // and a lowercase-only pattern silently matched nothing here, so this audit
+    // reported "no hreflang tags, which is correct" while tags were shipping
+    // unchecked. A green that means "I found nothing" has to be impossible to
+    // confuse with a green that means "I checked and it was fine".
+    const tags = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/gi)].map((m) => ({
       lang: m[1],
       href: m[2],
     }));

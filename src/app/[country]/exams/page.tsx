@@ -1,9 +1,21 @@
 import Image from 'next/image';
+import { COUNTRIES } from '@/lib/exams';
+import { notFound } from 'next/navigation';
+import { countryPublishes } from '@/lib/exam-countries';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
 import { CATALOG_EXAM_COUNT, EXAM_CATEGORIES } from '@/lib/exam-catalog';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import ExamFinder from '@/components/ExamFinder';
+
+// Generated only for countries that publish this section. Returning the country
+// param here rather than leaning on the layout is what keeps the page out of a
+// country's export entirely: calling notFound() instead still writes a file, and
+// a static host serves that with a 200, which is a soft 404 rather than a
+// missing page.
+export function generateStaticParams() {
+  return COUNTRIES.filter((country) => countryPublishes(country, 'exams')).map((country) => ({ country }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
@@ -22,6 +34,10 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
 
 export default async function AllExamsPage({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
+  // exams is not published by every country: see COUNTRY_SECTIONS in
+  // src/lib/exam-countries.ts. A country that does not publish it has no such
+  // page rather than an empty one.
+  if (!countryPublishes(country, 'exams')) notFound();
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-6 md:py-10">

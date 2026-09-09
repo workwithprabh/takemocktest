@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { COUNTRIES } from '@/lib/exams';
+import { countryPublishes } from '@/lib/exam-countries';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { BLOG_POSTS, getBlogPost, getRelatedPosts } from '@/lib/blog';
@@ -8,7 +10,9 @@ import { BlogBody } from '@/components/blog/BlogBody';
 import { getBlogCategoryStyle } from '@/components/blog/BlogCategoryStyle';
 
 export function generateStaticParams() {
-  return BLOG_POSTS.map((post) => ({ slug: post.slug }));
+  return COUNTRIES.filter((country) => countryPublishes(country, 'blog')).flatMap((country) =>
+    BLOG_POSTS.map((post) => ({ country, slug: post.slug })),
+  );
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string; slug: string }> }) {

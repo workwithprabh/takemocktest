@@ -1,9 +1,20 @@
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
+import { countryPublishes } from '@/lib/exam-countries';
 import UpdateFinder from '@/components/UpdateFinder';
 import { pageMetadata } from '@/lib/metadata';
-import { getExam, getCheckedTestCount } from '@/lib/exams';
+import { COUNTRIES, getExam, getCheckedTestCount } from '@/lib/exams';
 import { breadcrumbSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
+
+// Generated only for countries that publish this section. Returning the country
+// param here rather than leaning on the layout is what keeps the page out of a
+// country's export entirely: calling notFound() instead still writes a file, and
+// a static host serves that with a 200, which is a soft 404 rather than a
+// missing page.
+export function generateStaticParams() {
+  return COUNTRIES.filter((country) => countryPublishes(country, 'updates')).map((country) => ({ country }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
@@ -22,6 +33,10 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
 
 export default async function ExamUpdatesPage({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
+  // updates is not published by every country: see COUNTRY_SECTIONS in
+  // src/lib/exam-countries.ts. A country that does not publish it has no such
+  // page rather than an empty one.
+  if (!countryPublishes(country, 'updates')) notFound();
   const updates = getLatestUpdates(UPDATES.length);
   const examCount = new Set(updates.map((update) => update.examSlug)).size;
   const latestCheck = updates.map((update) => update.sourceCheckedOn).sort().at(-1);

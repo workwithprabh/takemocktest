@@ -1,6 +1,6 @@
 {
- "capturedAt": "2026-09-08",
- "pageCount": 4749,
+ "capturedAt": "2026-09-09",
+ "pageCount": 4897,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -82978,6 +82978,2550 @@
    ],
    "schemaHash": "8e05c0295232",
    "ogHash": "7dfd77eac650",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/about": {
+   "title": "About | TakeMockTest",
+   "description": "How TakeMockTest builds free mock tests and helps students review exam performance.",
+   "h1": [
+    "About TakeMockTest"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "7dd199f1753f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/contact": {
+   "title": "Contact | TakeMockTest",
+   "description": "Contact and question-correction information for TakeMockTest.",
+   "h1": [
+    "Contact us"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "989806036dfb",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-1/attempt": {
+   "title": "Logical Reasoning Easy Set 1 | TakeMockTest",
+   "description": "Attempt the logical reasoning Easy Set 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "4301dd4e725e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-1": {
+   "title": "Logical Reasoning Easy Set 1: Free Practice Test",
+   "description": "Attempt 25 easy logical reasoning questions in 20 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Easy Set 1"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "0294c568ec23",
+   "ogHash": "a1484452743c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-2/attempt": {
+   "title": "Logical Reasoning Easy Set 2 | TakeMockTest",
+   "description": "Attempt the logical reasoning Easy Set 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d25523e73aea",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-2": {
+   "title": "Logical Reasoning Easy Set 2: Free Practice Test",
+   "description": "Attempt 25 easy logical reasoning questions in 20 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Easy Set 2"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "08f845506fef",
+   "ogHash": "cfab46140172",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-3/attempt": {
+   "title": "Logical Reasoning Easy Set 3 | TakeMockTest",
+   "description": "Attempt the logical reasoning Easy Set 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "4df05b34bb46",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-3": {
+   "title": "Logical Reasoning Easy Set 3: Free Practice Test",
+   "description": "Attempt 25 easy logical reasoning questions in 20 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Easy Set 3"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "0b2d11dea9ef",
+   "ogHash": "3f4f5ad9eca3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-4/attempt": {
+   "title": "Logical Reasoning Easy Set 4 | TakeMockTest",
+   "description": "Attempt the logical reasoning Easy Set 4 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "c63fc6c55a97",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-4": {
+   "title": "Logical Reasoning Easy Set 4: Free Practice Test",
+   "description": "Attempt 25 easy logical reasoning questions in 20 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Easy Set 4"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "20de0beebb6a",
+   "ogHash": "3f41f07bf38c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-5/attempt": {
+   "title": "Logical Reasoning Easy Set 5 | TakeMockTest",
+   "description": "Attempt the logical reasoning Easy Set 5 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "784b80244e41",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-5": {
+   "title": "Logical Reasoning Easy Set 5: Free Practice Test",
+   "description": "Attempt 25 easy logical reasoning questions in 20 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Easy Set 5"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "5458f6b2d700",
+   "ogHash": "5382d13bf0db",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-6/attempt": {
+   "title": "Logical Reasoning Easy Set 6 | TakeMockTest",
+   "description": "Attempt the logical reasoning Easy Set 6 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "56e9a09d2e93",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/easy-set-6": {
+   "title": "Logical Reasoning Easy Set 6: Free Practice Test",
+   "description": "Attempt 25 easy logical reasoning questions in 20 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Easy Set 6"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "a7516f8f37fb",
+   "ogHash": "95e71f0e71f9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/hard-set-1/attempt": {
+   "title": "Logical Reasoning Hard Set 1 | TakeMockTest",
+   "description": "Attempt the logical reasoning Hard Set 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "26c459f5734e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/hard-set-1": {
+   "title": "Logical Reasoning Hard Set 1: Free Practice Test",
+   "description": "Attempt 25 hard logical reasoning questions in 30 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Hard Set 1"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "1ea6b45adaca",
+   "ogHash": "4a9cbdb759ce",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/hard-set-2/attempt": {
+   "title": "Logical Reasoning Hard Set 2 | TakeMockTest",
+   "description": "Attempt the logical reasoning Hard Set 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a295d3ca9c9b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/hard-set-2": {
+   "title": "Logical Reasoning Hard Set 2: Free Practice Test",
+   "description": "Attempt 25 hard logical reasoning questions in 30 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Hard Set 2"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "7cfcc6079738",
+   "ogHash": "eb506c284caf",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/hard-set-3/attempt": {
+   "title": "Logical Reasoning Hard Set 3 | TakeMockTest",
+   "description": "Attempt the logical reasoning Hard Set 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d5a5b50d43fa",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/hard-set-3": {
+   "title": "Logical Reasoning Hard Set 3: Free Practice Test",
+   "description": "Attempt 25 hard logical reasoning questions in 30 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Hard Set 3"
+   ],
+   "h2Count": 6,
+   "h2Hash": "1ce7775baf41",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "c690eee6b383",
+   "ogHash": "12dcce54084d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-1/attempt": {
+   "title": "Logical Reasoning Medium Set 1 | TakeMockTest",
+   "description": "Attempt the logical reasoning Medium Set 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "26d6daef10d4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-1": {
+   "title": "Logical Reasoning Medium Set 1: Free Practice Test",
+   "description": "Attempt 25 medium logical reasoning questions in 25 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Medium Set 1"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "1533ea15a3ea",
+   "ogHash": "f01864b68fdd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-2/attempt": {
+   "title": "Logical Reasoning Medium Set 2 | TakeMockTest",
+   "description": "Attempt the logical reasoning Medium Set 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "53b94c0bcd40",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-2": {
+   "title": "Logical Reasoning Medium Set 2: Free Practice Test",
+   "description": "Attempt 25 medium logical reasoning questions in 25 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Medium Set 2"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "0e72021b844d",
+   "ogHash": "1aa4e76e0997",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-3/attempt": {
+   "title": "Logical Reasoning Medium Set 3 | TakeMockTest",
+   "description": "Attempt the logical reasoning Medium Set 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "42d9031ae744",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-3": {
+   "title": "Logical Reasoning Medium Set 3: Free Practice Test",
+   "description": "Attempt 25 medium logical reasoning questions in 25 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Medium Set 3"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "fcb10ff897ad",
+   "ogHash": "c63c037feaa7",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-4/attempt": {
+   "title": "Logical Reasoning Medium Set 4 | TakeMockTest",
+   "description": "Attempt the logical reasoning Medium Set 4 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e297297219dc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-4": {
+   "title": "Logical Reasoning Medium Set 4: Free Practice Test",
+   "description": "Attempt 25 medium logical reasoning questions in 25 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Medium Set 4"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "bcf86f605079",
+   "ogHash": "0ab63b8b680c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-5/attempt": {
+   "title": "Logical Reasoning Medium Set 5 | TakeMockTest",
+   "description": "Attempt the logical reasoning Medium Set 5 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "2cce11914f5a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-5": {
+   "title": "Logical Reasoning Medium Set 5: Free Practice Test",
+   "description": "Attempt 25 medium logical reasoning questions in 25 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Medium Set 5"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "19264fd77607",
+   "ogHash": "d19fe1139ce9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-6/attempt": {
+   "title": "Logical Reasoning Medium Set 6 | TakeMockTest",
+   "description": "Attempt the logical reasoning Medium Set 6 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "67930748405f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/medium-set-6": {
+   "title": "Logical Reasoning Medium Set 6: Free Practice Test",
+   "description": "Attempt 25 medium logical reasoning questions in 25 minutes. No negative marking, instant result, explanation for every question.",
+   "h1": [
+    "Logical Reasoning: Medium Set 6"
+   ],
+   "h2Count": 7,
+   "h2Hash": "a6234435a1d7",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "157c42a77e8d",
+   "ogHash": "6aa1d04b6644",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-blood-relations/attempt": {
+   "title": "Logical Reasoning Blood Relations Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Blood Relations Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d8d3b523f19b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-blood-relations": {
+   "title": "Blood Relations: Free Reasoning Practice Test | TakeMockTest",
+   "description": "Practise Blood Relations with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Blood Relations Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "7f10771c02ba",
+   "ogHash": "30c6bb8647e2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-clocks-calendars/attempt": {
+   "title": "Logical Reasoning Clocks &amp; Calendars Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Clocks &amp; Calendars Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "5f534e4f5529",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-clocks-calendars": {
+   "title": "Clocks &amp; Calendars: Free Reasoning Practice Test",
+   "description": "Practise Clocks &amp; Calendars with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Clocks & Calendars Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "9157f0b13f77",
+   "ogHash": "0d3a41a95d65",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-coded-inequality/attempt": {
+   "title": "Logical Reasoning Coded Inequality Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Coded Inequality Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a7a273350a7c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-coded-inequality": {
+   "title": "Coded Inequality: Free Reasoning Practice Test",
+   "description": "Practise Coded Inequality with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Coded Inequality Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "956c6a4d5f67",
+   "ogHash": "28c606c58704",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-coding-decoding/attempt": {
+   "title": "Logical Reasoning Coding &amp; Decoding Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Coding &amp; Decoding Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "30bdce371ea6",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-coding-decoding": {
+   "title": "Coding &amp; Decoding: Free Reasoning Practice Test",
+   "description": "Practise Coding &amp; Decoding with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Coding & Decoding Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "f01a10810d8a",
+   "ogHash": "f1cf27355184",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-data-sufficiency/attempt": {
+   "title": "Logical Reasoning Data Sufficiency Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Data Sufficiency Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "bab41aa8e200",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-data-sufficiency": {
+   "title": "Data Sufficiency: Free Reasoning Practice Test",
+   "description": "Practise Data Sufficiency with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Data Sufficiency Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "392bac782983",
+   "ogHash": "f0779387c54c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-direction-sense/attempt": {
+   "title": "Logical Reasoning Direction Sense Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Direction Sense Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "027a31a2e2e2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-direction-sense": {
+   "title": "Direction Sense: Free Reasoning Practice Test | TakeMockTest",
+   "description": "Practise Direction Sense with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Direction Sense Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "7f2daf0f5879",
+   "ogHash": "17ca497ce6d5",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-logical-deduction/attempt": {
+   "title": "Logical Reasoning Logical Deduction Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Logical Deduction Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "85eed5dc24a4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-logical-deduction": {
+   "title": "Logical Deduction: Free Reasoning Practice Test",
+   "description": "Practise Logical Deduction with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Logical Deduction Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "420de4ed0a06",
+   "ogHash": "8e21cd60d6c6",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-ranking-order/attempt": {
+   "title": "Logical Reasoning Ranking &amp; Order Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Ranking &amp; Order Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "5ca5b6426c76",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-ranking-order": {
+   "title": "Ranking &amp; Order: Free Reasoning Practice Test | TakeMockTest",
+   "description": "Practise Ranking &amp; Order with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Ranking & Order Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "5aa88cc32dca",
+   "ogHash": "4e1d1f2be7c8",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-seating-arrangement/attempt": {
+   "title": "Logical Reasoning Seating &amp; Arrangement Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Seating &amp; Arrangement Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "de814169c95d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-seating-arrangement-2/attempt": {
+   "title": "Logical Reasoning Seating &amp; Arrangement Set 2 | TakeMockTest",
+   "description": "Attempt the logical reasoning Seating &amp; Arrangement Set 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "6cadd5b6b4c5",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-seating-arrangement-2": {
+   "title": "Seating &amp; Arrangement Set 2: Free Practice Test",
+   "description": "Practise Seating &amp; Arrangement with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Seating & Arrangement Set 2"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "325b50caece9",
+   "ogHash": "fa6f330c9f63",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-seating-arrangement": {
+   "title": "Seating &amp; Arrangement: Free Reasoning Practice Test",
+   "description": "Practise Seating &amp; Arrangement with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Seating & Arrangement Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "a57825c4ce30",
+   "ogHash": "b059193254cc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-series-analogy/attempt": {
+   "title": "Logical Reasoning Series &amp; Analogy Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Series &amp; Analogy Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "c0213a3867ee",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-series-analogy": {
+   "title": "Series &amp; Analogy: Free Reasoning Practice Test",
+   "description": "Practise Series &amp; Analogy with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Series & Analogy Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "66dcb6dfada0",
+   "ogHash": "249983209943",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-statement-inference/attempt": {
+   "title": "Logical Reasoning Statement &amp; Inference Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Statement &amp; Inference Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e81c17233ea9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-statement-inference": {
+   "title": "Statement &amp; Inference: Free Reasoning Practice Test",
+   "description": "Practise Statement &amp; Inference with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Statement & Inference Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "7f056aee08d2",
+   "ogHash": "ab68bd0af2ab",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-syllogism/attempt": {
+   "title": "Logical Reasoning Syllogisms Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Syllogisms Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "58629be29282",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-syllogism": {
+   "title": "Syllogisms: Free Reasoning Practice Test | TakeMockTest",
+   "description": "Practise Syllogisms with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Syllogisms Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "84e9923a61e8",
+   "ogHash": "6c896890f00b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-symbols-alphabet/attempt": {
+   "title": "Logical Reasoning Symbols &amp; Alphabet Set | TakeMockTest",
+   "description": "Attempt the logical reasoning Symbols &amp; Alphabet Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "eda07e13aa3a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-symbols-alphabet": {
+   "title": "Symbols &amp; Alphabet: Free Reasoning Practice Test",
+   "description": "Practise Symbols &amp; Alphabet with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Symbols & Alphabet Set"
+   ],
+   "h2Count": 7,
+   "h2Hash": "f3bd3d988757",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "022a530ef38d",
+   "ogHash": "1965b5bb5442",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-venn-classification/attempt": {
+   "title": "Logical Reasoning Venn Diagrams &amp; Classification Set",
+   "description": "Attempt the logical reasoning Venn Diagrams &amp; Classification Set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "eefcb65e93f9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning/test/topic-venn-classification": {
+   "title": "Venn Diagrams &amp; Classification: Free Reasoning Practice Test",
+   "description": "Practise Venn Diagrams &amp; Classification with 25 graded questions in 25 minutes. No negative marking, instant result and full explanations.",
+   "h1": [
+    "Logical Reasoning: Venn Diagrams & Classification Set"
+   ],
+   "h2Count": 6,
+   "h2Hash": "79f3eb7f1c0b",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "370f9d980ce8",
+   "ogHash": "632e80baefec",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/logical-reasoning": {
+   "title": "Logical Reasoning Practice 2026: Free Graded Tests",
+   "description": "Free logical reasoning practice sorted by difficulty and topic. 750 hand-graded questions, no negative marking, instant results and full explanations.",
+   "h1": [
+    "Logical Reasoning Practice 2026"
+   ],
+   "h2Count": 6,
+   "h2Hash": "b08995e577f9",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ItemList",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "944b73958040",
+   "ogHash": "0f5b9d2a639c",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/active-and-passive-voice/attempt": {
+   "title": "Active and Passive Voice Practice Test | TakeMockTest",
+   "description": "Attempt the Active and Passive Voice practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "481716473a70",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/active-and-passive-voice": {
+   "title": "Active and Passive Voice Questions with Answers 2026",
+   "description": "109 free active and passive voice questions with answers and explanations, pooled from 18 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Active and Passive Voice Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "bc03e4e367b7",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "03c5ffc1ac2c",
+   "ogHash": "e868bc7b01a2",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/alphanumeric-series/attempt": {
+   "title": "Alphanumeric Series Practice Test | TakeMockTest",
+   "description": "Attempt the Alphanumeric Series practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "fb89572981e2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/alphanumeric-series": {
+   "title": "Alphanumeric Series Questions with Answers 2026",
+   "description": "184 free alphanumeric series questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Alphanumeric Series Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "c04624806e3c",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "a6f4e8fd37e5",
+   "ogHash": "a67de54d8f6a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/analogy/attempt": {
+   "title": "Analogy Practice Test | TakeMockTest",
+   "description": "Attempt the Analogy practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "175c35c517b0",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/analogy": {
+   "title": "Analogy Questions with Answers 2026 | TakeMockTest",
+   "description": "190 free analogy questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Analogy Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "d90d22f95d34",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "fe8e5ebac0b4",
+   "ogHash": "93d1c8874d28",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/antonyms/attempt": {
+   "title": "Antonyms Practice Test | TakeMockTest",
+   "description": "Attempt the Antonyms practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "668eab250781",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/antonyms": {
+   "title": "Antonyms Questions with Answers 2026 | TakeMockTest",
+   "description": "263 free antonyms questions with answers and explanations, pooled from 34 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Antonyms Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "cd907ddac0f1",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "f122a0fab470",
+   "ogHash": "6e87523be1b5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/averages/attempt": {
+   "title": "Averages Practice Test | TakeMockTest",
+   "description": "Attempt the Averages practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "31005f3b326d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/averages": {
+   "title": "Averages Questions with Answers 2026 | TakeMockTest",
+   "description": "195 free averages questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Averages Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "8f3fd75b9105",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "ad3bc325d70c",
+   "ogHash": "90515fa12dc2",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/blood-relations/attempt": {
+   "title": "Blood Relations Practice Test | TakeMockTest",
+   "description": "Attempt the Blood Relations practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "bc45c9d668cc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/blood-relations": {
+   "title": "Blood Relations Questions with Answers 2026 | TakeMockTest",
+   "description": "274 free blood relations questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Blood Relations Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "1684df09b31b",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "d7e62cb95a5c",
+   "ogHash": "d9432134d129",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/classification/attempt": {
+   "title": "Classification Practice Test | TakeMockTest",
+   "description": "Attempt the Classification practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "6d446f54e1e7",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/classification": {
+   "title": "Classification Questions with Answers 2026 | TakeMockTest",
+   "description": "215 free classification questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Classification Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "23f936d32ab4",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "cbedfa343523",
+   "ogHash": "840c898c3092",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/cloze-test/attempt": {
+   "title": "Cloze Test Practice Test | TakeMockTest",
+   "description": "Attempt the Cloze Test practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8305126f26ba",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/cloze-test": {
+   "title": "Cloze Test Questions with Answers 2026 | TakeMockTest",
+   "description": "161 free cloze test questions with answers and explanations, pooled from 17 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Cloze Test Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "15f784cdb9a0",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1044e3090248",
+   "ogHash": "ac234801181d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/coded-inequality/attempt": {
+   "title": "Coded Inequality Practice Test | TakeMockTest",
+   "description": "Attempt the Coded Inequality practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b5f28bec0e7b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/coded-inequality": {
+   "title": "Coded Inequality Questions with Answers 2026 | TakeMockTest",
+   "description": "96 free coded inequality questions with answers and explanations, pooled from 14 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Coded Inequality Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "4d1ad393c4d4",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "150852f99f09",
+   "ogHash": "84976c658fc5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/coding-and-decoding/attempt": {
+   "title": "Coding and Decoding Practice Test | TakeMockTest",
+   "description": "Attempt the Coding and Decoding practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "685eea7b5782",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/coding-and-decoding": {
+   "title": "Coding and Decoding Questions with Answers 2026",
+   "description": "312 free coding and decoding questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Coding and Decoding Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "12429b1da630",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "7c77292f89b4",
+   "ogHash": "5a73cfbdd6a8",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/compound-interest/attempt": {
+   "title": "Compound Interest Practice Test | TakeMockTest",
+   "description": "Attempt the Compound Interest practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "12b4cb9af196",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/compound-interest": {
+   "title": "Compound Interest Questions with Answers 2026 | TakeMockTest",
+   "description": "93 free compound interest questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Compound Interest Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "e58b301f52cd",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "350b4497c70f",
+   "ogHash": "c1bdbaae6239",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/data-interpretation/attempt": {
+   "title": "Data Interpretation Practice Test | TakeMockTest",
+   "description": "Attempt the Data Interpretation practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "26ed88ce16f2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/data-interpretation": {
+   "title": "Data Interpretation Questions with Answers 2026",
+   "description": "380 free data interpretation questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Data Interpretation Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "cb40fc64cf7f",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "6a8172632c62",
+   "ogHash": "b056869ff494",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/data-sufficiency/attempt": {
+   "title": "Data Sufficiency Practice Test | TakeMockTest",
+   "description": "Attempt the Data Sufficiency practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "3426730aec7c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/data-sufficiency": {
+   "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
+   "description": "158 free data sufficiency questions with answers and explanations, pooled from 32 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Data Sufficiency Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "d575fede4954",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "9e0dcdd2f445",
+   "ogHash": "e69f31f8b4ae",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/direct-and-indirect-speech/attempt": {
+   "title": "Direct and Indirect Speech Practice Test | TakeMockTest",
+   "description": "Attempt the Direct and Indirect Speech practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "be208477c2d6",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/direct-and-indirect-speech": {
+   "title": "Direct and Indirect Speech Questions with Answers 2026",
+   "description": "82 free direct and indirect speech questions with answers and explanations, pooled from 16 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Direct and Indirect Speech Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "a17269c5008f",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "7e33d23d364e",
+   "ogHash": "998a76989399",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/direction-sense/attempt": {
+   "title": "Direction Sense Practice Test | TakeMockTest",
+   "description": "Attempt the Direction Sense practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "894430459566",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/direction-sense": {
+   "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
+   "description": "266 free direction sense questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Direction Sense Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "ef22b68e5278",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "b319ea634577",
+   "ogHash": "51aab04ebe36",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/error-spotting/attempt": {
+   "title": "Error Spotting Practice Test | TakeMockTest",
+   "description": "Attempt the Error Spotting practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b9f37fd07552",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/error-spotting": {
+   "title": "Error Spotting Questions with Answers 2026 | TakeMockTest",
+   "description": "235 free error spotting questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Error Spotting Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "8f59adcaeee2",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "c9c3104085ff",
+   "ogHash": "4f44c3f2ec0f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/fill-in-the-blanks/attempt": {
+   "title": "Fill in the Blanks Practice Test | TakeMockTest",
+   "description": "Attempt the Fill in the Blanks practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "f3c8f8fa7057",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/fill-in-the-blanks": {
+   "title": "Fill in the Blanks Questions with Answers 2026",
+   "description": "190 free fill in the blanks questions with answers and explanations, pooled from 24 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Fill in the Blanks Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "6e685501e279",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "da92e07e981e",
+   "ogHash": "98fbb5f78b8a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/idioms-and-phrases/attempt": {
+   "title": "Idioms and Phrases Practice Test | TakeMockTest",
+   "description": "Attempt the Idioms and Phrases practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b2c2d8e7c3c3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/idioms-and-phrases": {
+   "title": "Idioms and Phrases Questions with Answers 2026",
+   "description": "242 free idioms and phrases questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Idioms and Phrases Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "a16d10e58ee6",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "d418f5d4309e",
+   "ogHash": "938ccd3dc233",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/mensuration/attempt": {
+   "title": "Mensuration Practice Test | TakeMockTest",
+   "description": "Attempt the Mensuration practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "f1fa6a97c80a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/mensuration": {
+   "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
+   "description": "233 free mensuration questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Mensuration Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "dd668b28a29e",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "092d49eb1645",
+   "ogHash": "7201e2aea8f8",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/number-series/attempt": {
+   "title": "Number Series Practice Test | TakeMockTest",
+   "description": "Attempt the Number Series practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "2b002aeba5dd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/number-series": {
+   "title": "Number Series Questions with Answers 2026 | TakeMockTest",
+   "description": "384 free number series questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Number Series Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "7d8c46e13454",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "c35b40c9867c",
+   "ogHash": "092e0d7fde40",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/number-system/attempt": {
+   "title": "Number System Practice Test | TakeMockTest",
+   "description": "Attempt the Number System practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "09e9232aa883",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/number-system": {
+   "title": "Number System Questions with Answers 2026 | TakeMockTest",
+   "description": "142 free number system questions with answers and explanations, pooled from 37 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Number System Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "c7a2f87da435",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "84fbc2c4d407",
+   "ogHash": "0756f4c29401",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/one-word-substitution/attempt": {
+   "title": "One-Word Substitution Practice Test | TakeMockTest",
+   "description": "Attempt the One-Word Substitution practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "3b02c72a5e3a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/one-word-substitution": {
+   "title": "One-Word Substitution Questions with Answers 2026",
+   "description": "265 free one-word substitution questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "One-Word Substitution Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "d42b3c5544a3",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "289c6379bec2",
+   "ogHash": "ae5b6fddfa91",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/para-jumbles/attempt": {
+   "title": "Para Jumbles Practice Test | TakeMockTest",
+   "description": "Attempt the Para Jumbles practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "131fe4b05ac4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/para-jumbles": {
+   "title": "Para Jumbles Questions with Answers 2026 | TakeMockTest",
+   "description": "76 free para jumbles questions with answers and explanations, pooled from 14 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Para Jumbles Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "ade556448cc4",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "4b8dbb175249",
+   "ogHash": "5a20b6f31dcd",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/percentage/attempt": {
+   "title": "Percentage Practice Test | TakeMockTest",
+   "description": "Attempt the Percentage practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "111a24d072ef",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/percentage": {
+   "title": "Percentage Questions with Answers 2026 | TakeMockTest",
+   "description": "212 free percentage questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Percentage Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "0b162421166c",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1da3498d51d8",
+   "ogHash": "61694fbf317b",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/permutations-and-combinations/attempt": {
+   "title": "Permutations and Combinations Practice Test | TakeMockTest",
+   "description": "Attempt the Permutations and Combinations practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e6864dbec2ed",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/permutations-and-combinations": {
+   "title": "Permutations and Combinations Questions with Answers 2026",
+   "description": "129 free permutations and combinations questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Permutations and Combinations Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "441cc1df9bff",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "3498c6d16706",
+   "ogHash": "cb74c1ed27dd",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/probability/attempt": {
+   "title": "Probability Practice Test | TakeMockTest",
+   "description": "Attempt the Probability practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "dc20b228adb2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/probability": {
+   "title": "Probability Questions with Answers 2026 | TakeMockTest",
+   "description": "226 free probability questions with answers and explanations, pooled from 72 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Probability Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "697eb5423796",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "990cf80ae51b",
+   "ogHash": "f18e4596fd18",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/profit-and-loss/attempt": {
+   "title": "Profit and Loss Practice Test | TakeMockTest",
+   "description": "Attempt the Profit and Loss practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8d655c2f12b2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/profit-and-loss": {
+   "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
+   "description": "196 free profit and loss questions with answers and explanations, pooled from 53 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Profit and Loss Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "ec04fa4148d3",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "45602af8e4a3",
+   "ogHash": "6a7958ed9ec9",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/puzzles/attempt": {
+   "title": "Puzzles Practice Test | TakeMockTest",
+   "description": "Attempt the Puzzles practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d20e7c58767f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/puzzles": {
+   "title": "Puzzles Questions with Answers 2026 | TakeMockTest",
+   "description": "101 free puzzles questions with answers and explanations, pooled from 16 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Puzzles Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "4fbab6c702dd",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "4d529b69675f",
+   "ogHash": "cf7c636c573f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/ranking-and-order/attempt": {
+   "title": "Ranking and Order Practice Test | TakeMockTest",
+   "description": "Attempt the Ranking and Order practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "862cdda244da",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/ranking-and-order": {
+   "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
+   "description": "220 free ranking and order questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Ranking and Order Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "3a2384ef3652",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "65ee9ada6e01",
+   "ogHash": "f94f9ecce19f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/ratio-and-proportion/attempt": {
+   "title": "Ratio and Proportion Practice Test | TakeMockTest",
+   "description": "Attempt the Ratio and Proportion practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "eb33d4c10c39",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/ratio-and-proportion": {
+   "title": "Ratio and Proportion Questions with Answers 2026",
+   "description": "224 free ratio and proportion questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Ratio and Proportion Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "aaf228708c15",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "72087334d049",
+   "ogHash": "9b91066dc9ac",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/reading-comprehension/attempt": {
+   "title": "Reading Comprehension Practice Test | TakeMockTest",
+   "description": "Attempt the Reading Comprehension practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "0007df2260d3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/reading-comprehension": {
+   "title": "Reading Comprehension Questions with Answers 2026",
+   "description": "389 free reading comprehension questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Reading Comprehension Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "48587a184bec",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "a58ca2431c84",
+   "ogHash": "19adf3dfc636",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/seating-arrangement/attempt": {
+   "title": "Seating Arrangement Practice Test | TakeMockTest",
+   "description": "Attempt the Seating Arrangement practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9698ab8db76b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/seating-arrangement": {
+   "title": "Seating Arrangement Questions with Answers 2026",
+   "description": "77 free seating arrangement questions with answers and explanations, pooled from 23 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Seating Arrangement Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "e93cbd558179",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "8ef1dea25bc9",
+   "ogHash": "93f667aaeccd",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/sentence-improvement/attempt": {
+   "title": "Sentence Improvement Practice Test | TakeMockTest",
+   "description": "Attempt the Sentence Improvement practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8c452e8d56e0",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/sentence-improvement": {
+   "title": "Sentence Improvement Questions with Answers 2026",
+   "description": "179 free sentence improvement questions with answers and explanations, pooled from 23 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Sentence Improvement Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "29c29f67823a",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "bd474b00f297",
+   "ogHash": "74e3eb57936a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/simple-interest/attempt": {
+   "title": "Simple Interest Practice Test | TakeMockTest",
+   "description": "Attempt the Simple Interest practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9ba4cd19a041",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/simple-interest": {
+   "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
+   "description": "122 free simple interest questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Simple Interest Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "8450796ab95e",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "7acb254f0ade",
+   "ogHash": "acc9e1f91d1e",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/simplification/attempt": {
+   "title": "Simplification Practice Test | TakeMockTest",
+   "description": "Attempt the Simplification practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "96ae6907dbf2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/simplification": {
+   "title": "Simplification Questions with Answers 2026 | TakeMockTest",
+   "description": "146 free simplification questions with answers and explanations, pooled from 23 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Simplification Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "4d41b9bf4b1d",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "18eec3edffde",
+   "ogHash": "7d40f6437ba5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/spelling/attempt": {
+   "title": "Spelling Practice Test | TakeMockTest",
+   "description": "Attempt the Spelling practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "077f6a5b4152",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/spelling": {
+   "title": "Spelling Questions with Answers 2026 | TakeMockTest",
+   "description": "124 free spelling questions with answers and explanations, pooled from 29 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Spelling Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "9f461e00f4b5",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0c049cbe6be0",
+   "ogHash": "160c3bcd2c27",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/syllogism/attempt": {
+   "title": "Syllogism Practice Test | TakeMockTest",
+   "description": "Attempt the Syllogism practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ad3805639298",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/syllogism": {
+   "title": "Syllogism Questions with Answers 2026 | TakeMockTest",
+   "description": "293 free syllogism questions with answers and explanations, pooled from 53 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Syllogism Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "d29c330daf0d",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "bcdcbc10a95c",
+   "ogHash": "0694e5f309f9",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/synonyms/attempt": {
+   "title": "Synonyms Practice Test | TakeMockTest",
+   "description": "Attempt the Synonyms practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "382ca67cbbb7",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/synonyms": {
+   "title": "Synonyms Questions with Answers 2026 | TakeMockTest",
+   "description": "265 free synonyms questions with answers and explanations, pooled from 32 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Synonyms Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "2cff44e7ef70",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "08031c4c5fcd",
+   "ogHash": "845fbcc9684e",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/time-and-work/attempt": {
+   "title": "Time and Work Practice Test | TakeMockTest",
+   "description": "Attempt the Time and Work practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "2fd1d2298426",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/time-and-work": {
+   "title": "Time and Work Questions with Answers 2026 | TakeMockTest",
+   "description": "223 free time and work questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Time and Work Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "201d44c028a1",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "dd267a4a5b41",
+   "ogHash": "b5c2cb79f2ee",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice/time-speed-and-distance/attempt": {
+   "title": "Time, Speed and Distance Practice Test | TakeMockTest",
+   "description": "Attempt the Time, Speed and Distance practice set and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a69d901d65e8",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/practice/time-speed-and-distance": {
+   "title": "Time, Speed and Distance Questions with Answers 2026",
+   "description": "185 free time, speed and distance questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "h1": [
+    "Time, Speed and Distance Questions with Answers"
+   ],
+   "h2Count": 6,
+   "h2Hash": "baef128d792c",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "9ec314ea33a3",
+   "ogHash": "c85f03347e47",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/practice": {
+   "title": "Topic-wise Practice Questions 2026: Free Tests",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,056 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "h1": [
+    "Topic-wise Practice Questions 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "8557e61fe467",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ItemList",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "1aad2b909aed",
+   "ogHash": "74fe6a6233bb",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/privacy": {
+   "title": "Privacy Policy | TakeMockTest",
+   "description": "How TakeMockTest handles local test results, technical logs, and personal information.",
+   "h1": [
+    "Privacy Policy"
+   ],
+   "h2Count": 10,
+   "h2Hash": "a95c097f730f",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "4740a963390b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/results": {
+   "title": "My Results | TakeMockTest",
+   "description": "Review mock-test results saved on this device.",
+   "h1": [
+    "My Results"
+   ],
+   "h2Count": 2,
+   "h2Hash": "badbe06f0360",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "78c3b64e7d0a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/terms": {
+   "title": "Terms of Service | TakeMockTest",
+   "description": "Terms for using TakeMockTest mock tests, results, and study resources.",
+   "h1": [
+    "Terms of Service"
+   ],
+   "h2Count": 8,
+   "h2Hash": "682549748e12",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "70d911854871",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng": {
+   "title": "Free Mock Tests for Competitive Exams | TakeMockTest",
+   "description": "Practice checked mock tests for SSC, Banking and Railways exams, or browse competitive exams in India by student goal.",
+   "h1": [
+    "Find your next mock test"
+   ],
+   "h2Count": 5,
+   "h2Hash": "af103c28ea6a",
+   "schemaTypes": [
+    "Answer",
+    "FAQPage",
+    "Organization",
+    "Question",
+    "WebSite"
+   ],
+   "schemaHash": "8e05c0295232",
+   "ogHash": "6972c4bf32e2",
    "sitemap": true,
    "robots": "index, follow"
   },

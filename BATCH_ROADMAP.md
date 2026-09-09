@@ -367,6 +367,64 @@ against a protocol limit of 50,000, splitting buys nothing and costs a
 Split when a single country's sitemap passes roughly 40,000 URLs, or when
 per-country indexing needs to be diagnosed separately in Search Console.
 
+### Launching a country
+
+Ownership (above) decides which exams a country *could* have. It is not enough on
+its own. Flipping `COUNTRIES` to `['in','ng']` with only those rules in place
+still generated **315 indexable pages under `/ng`**: 61 blog posts written about
+Indian exams, 19 Indian exam notifications, an empty exam directory, and 132
+pages for the international exams. Three times the batch ceiling, and most of it
+content a Nigerian student has no use for.
+
+So a country also declares **which sections it publishes**, in `COUNTRY_SECTIONS`
+in `src/lib/exam-countries.ts`. A section that is off generates nothing: no
+routes, no sitemap entries, no navigation links, no hreflang pointing at it.
+Nigeria launched with `['practice', 'reasoning']` and **44 indexable pages**.
+
+Four things have to agree, and each one failed at least once in testing:
+
+1. **The routes.** `notFound()` in a static export still writes an HTML file, and
+   the host serves it with a 200. `/ng/exams` shipped a "Page Not Found" body at
+   200 on four routes: a soft 404, the worst kind because nothing reports it. The
+   fix is never to generate the page. Each of those routes now carries its own
+   `generateStaticParams` filtering on `countryPublishes(...)`.
+2. **The chrome.** `Header`, `Footer` and `BottomNav` each gate their
+   section-specific links, and the homepage gates its exam and updates bands. A
+   missed conditional here is a dead link on every page of the subfolder.
+3. **The in-page links.** Easier to miss than the chrome, because these are
+   content, not navigation. Topic-practice and reasoning-set pages both named
+   their source exams as links to `/[country]/[exam]/mock-test` and to
+   `/[country]/exams`. Under `/ng` that was **511 dead links**. The exams are
+   still named, because the provenance is what makes the pool credible; they are
+   only linked where those pages exist.
+4. **The sitemap.** Country-scoped and section-gated, so `/ng` carries exactly
+   its 44 URLs.
+
+**Nested `generateStaticParams` does not reliably receive parent params.** A
+generator for `[exam]` under `[country]` cannot count on being handed the
+country. The form that works returns the full param set, ancestors included:
+
+```ts
+export function generateStaticParams() {
+  return COUNTRIES.flatMap((country) =>
+    getExamsForCountry(country).map((exam) => ({ country, exam })),
+  );
+}
+```
+
+All 14 exam route generators use that shape.
+
+**Two audits were passing without checking anything, and both were found only
+because a second country existed.** `audit-hreflang.mjs` matched `hreflang=`
+lowercase while Next renders the attribute as `hrefLang`, so it reported "no tags
+in the export, which is correct" while 882 tags shipped unvalidated. A green that
+means "I found nothing" must not be confusable with a green that means "I checked
+and it was fine". `audit-internal-links.mjs` had `/in` hardcoded into its section
+roots, so it never looked at `/ng` at all; extending it surfaced the 511 dead
+links in one run. Its chrome floor also had to be fixed: the numerator skips
+pages inside the section being checked, so counting them in the denominator set a
+floor no build could clear.
+
 ### Run the installed SEO skills on generated sections
 
 There is a set of SEO skills installed in this environment, and the programmatic-pages

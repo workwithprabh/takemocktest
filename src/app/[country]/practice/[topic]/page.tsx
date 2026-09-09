@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { countryPublishes } from '@/lib/exam-countries';
 import { notFound } from 'next/navigation';
 import { COUNTRIES, getExam } from '@/lib/exams';
 import {
@@ -131,8 +132,14 @@ export default async function TopicPracticePage({
   // site far too thinly and reads as a link dump rather than a useful list.
   // The rest are still named, as text, so nothing is hidden from the reader.
   const MAX_LINKED_EXAMS = 12;
-  const linkedExams = exams.slice(0, MAX_LINKED_EXAMS);
-  const remainingExams = exams.slice(MAX_LINKED_EXAMS);
+  // A country that publishes no exams still draws its pool from the same banks,
+  // so the source exams are still worth naming: they are what makes the pool
+  // credible. They just cannot be links, because those exam pages do not exist
+  // in this subfolder. Naming them as plain text keeps the provenance and drops
+  // the dead links.
+  const canLinkExams = countryPublishes(country, 'exams');
+  const linkedExams = canLinkExams ? exams.slice(0, MAX_LINKED_EXAMS) : [];
+  const remainingExams = canLinkExams ? exams.slice(MAX_LINKED_EXAMS) : exams;
   const siblings = getPublishedTopicSlugs()
     .filter((other) => other !== slug && getTopicPool(other)?.topic.family === family)
     .slice(0, 6);
@@ -268,11 +275,17 @@ export default async function TopicPracticePage({
           </ul>
           {remainingExams.length > 0 && (
             <p className="mt-3 text-xs leading-5 text-ink-500">
-              Also set by {remainingExams.map((exam) => exam.name).join(', ')}.{' '}
-              <Link href={`/${country}/exams`} className="font-semibold text-ink-900 underline">
-                Browse all exams
-              </Link>
-              .
+              {canLinkExams ? 'Also set by ' : 'Drawn from '}
+              {remainingExams.map((exam) => exam.name).join(', ')}.
+              {canLinkExams && (
+                <>
+                  {' '}
+                  <Link href={`/${country}/exams`} className="font-semibold text-ink-900 underline">
+                    Browse all exams
+                  </Link>
+                  .
+                </>
+              )}
             </p>
           )}
         </section>
