@@ -59,15 +59,19 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
     // list — they're real, checked, scored tests, but a student focused on
     // this exam should never see another exam's content mixed into their own
     // native test list. They're surfaced only via "Explore Similar Tests".
-    tests: stage.tests.filter((test) => !test.sharedFrom).map((test) => ({
-      testId: test.id,
-      name: test.name,
-      kind: test.kind,
-      questions: getQuestionsForTest(exam.slug, test.id).length,
-      minutes: test.duration,
-      contentStatus: test.status,
-      checkedOn: test.checkedOn,
-    })),
+    tests: stage.tests.filter((test) => !test.sharedFrom).map((test) => {
+      const questions = getQuestionsForTest(exam.slug, test.id);
+      return {
+        testId: test.id,
+        name: test.name,
+        kind: test.kind,
+        questions: questions.length,
+        topics: test.status === 'checked' ? [...new Set(questions.flatMap((question) => question.topic ? [question.topic] : []))].sort() : [],
+        minutes: test.duration,
+        contentStatus: test.status,
+        checkedOn: test.checkedOn,
+      };
+    }),
   }));
   const sharedTests = getSharedTests(exam);
   const listedTests = stages.flatMap((stage) => stage.tests);

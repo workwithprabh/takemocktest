@@ -20,12 +20,12 @@
 import { LR_QUESTION_GRADES, LR_TEST_SPECS, type LRGrade, type LRTestSpec } from './logical-reasoning-data';
 import { getExamSlugsForQuestionIds, getQuestionsByIds, type Question } from './questions';
 import { getExam } from './exams';
+export { LR_SLUG } from './logical-reasoning-sections';
 
 export type { LRGrade, LRTestSpec };
 export { LR_TEST_SPECS };
 
 /** Route segment for the hub, and the examSlug attempts are filed under. */
-export const LR_SLUG = 'logical-reasoning';
 export const LR_NAME = 'Logical Reasoning';
 /** Single section label, so the attempt engine runs one timer for the set. */
 export const LR_SECTION = 'Logical Reasoning';

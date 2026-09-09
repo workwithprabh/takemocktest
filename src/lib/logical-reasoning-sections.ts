@@ -11,6 +11,9 @@
 // Membership rule: the section must be reasoning ALONE. A section that mixes
 // reasoning with arithmetic, English or computer knowledge is excluded, because
 // a person sent to the hub from it would meet a narrower thing than they left.
+/** Shared by client navigation without importing the question banks. */
+export const LR_SLUG = 'logical-reasoning';
+
 export const LR_SOURCE_SECTIONS = [
   'General Intelligence and Reasoning',
   'Reasoning',

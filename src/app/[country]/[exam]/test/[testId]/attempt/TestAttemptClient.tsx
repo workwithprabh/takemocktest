@@ -397,6 +397,7 @@ export default function TestAttemptClient({
         <h1 className="text-3xl font-bold leading-tight text-ink-900">{testName}: Results</h1>
         <p className="mb-8 mt-2 text-sm text-ink-700">{examName}</p>
         <ResultDetail
+          country={country}
           attempt={result}
           actions={
             <>
