@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-09",
- "pageCount": 4927,
+ "pageCount": 4931,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -83151,7 +83151,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "aaa25cb6f382",
+   "schemaHash": "afe12f531b70",
    "ogHash": "4ef3d2bb4027",
    "sitemap": true,
    "canonical": "https://takemocktest.com/in/jamb/mock-test",
@@ -83235,8 +83235,8 @@
    "h1": [
     "JAMB UTME Syllabus"
    ],
-   "h2Count": 11,
-   "h2Hash": "26620273aa09",
+   "h2Count": 12,
+   "h2Hash": "d3c698fc9170",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83383,6 +83383,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/ng/jamb/test/utme-full-mock-3/attempt": {
+   "title": "JAMB UTME Full Mock Test 3 (Arts) | TakeMockTest",
+   "description": "Attempt the JAMB UTME Full Mock Test 3 (Arts) and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "895220258393",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/test/utme-full-mock-3": {
+   "title": "JAMB UTME Full Mock Test 3 (Arts) (2026): Free Online Test",
+   "description": "Attempt JAMB UTME Full Mock Test 3 (Arts): 180 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "JAMB UTME Full Mock Test 3 (Arts)"
+   ],
+   "h2Count": 9,
+   "h2Hash": "b1cb7ae70990",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "686617acca7d",
+   "ogHash": "0623845b4738",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/ng/jamb/test/utme-government-sectional-1/attempt": {
    "title": "JAMB UTME Government Sectional Test 1 | TakeMockTest",
    "description": "Attempt the JAMB UTME Government Sectional Test 1 and review your result on this device.",
@@ -83414,6 +83448,40 @@
    ],
    "schemaHash": "6e1e52e10753",
    "ogHash": "917ef7f6b9e5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/jamb/test/utme-literature-in-english-sectional-1/attempt": {
+   "title": "JAMB UTME Literature in English Sectional Test 1",
+   "description": "Attempt the JAMB UTME Literature in English Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9f8ecd5d54d7",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/test/utme-literature-in-english-sectional-1": {
+   "title": "JAMB UTME Literature in English Sectional Test 1",
+   "description": "Practice Literature in English for JAMB UTME with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "JAMB UTME Literature in English Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "eaad955477ad",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "85fe1edfa551",
+   "ogHash": "34a6fff51d8a",
    "sitemap": true,
    "robots": "index, follow"
   },
