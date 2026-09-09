@@ -544,8 +544,10 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
   },
 ];
 
+const FEATURED_CATEGORY_SLUGS = ['government-jobs', 'engineering', 'medical', 'study-abroad', 'management', 'defence'];
+
 export const FEATURED_EXAM_CATEGORIES = EXAM_CATEGORIES.filter((category) =>
-  ['government-jobs', 'engineering', 'medical', 'study-abroad', 'management', 'defence'].includes(category.slug),
+  FEATURED_CATEGORY_SLUGS.includes(category.slug),
 );
 
 export const CATALOG_EXAM_COUNT = EXAM_CATEGORIES.reduce(
@@ -561,12 +563,57 @@ export const CATALOG_EXAM_COUNT = EXAM_CATEGORIES.reduce(
 // An undeclared country returns an empty tree, so its catalogue routes generate
 // no pages at all. That is the correct failure: a country with no directory
 // should have no directory pages, not an empty shell inviting a crawl.
+// Nigeria's tree, added in Phase 3. One category holding one exam, which is the
+// honest shape of the directory today rather than a scaffold of empty
+// categories waiting to be filled. WAEC, NECO and post-UTME get groups here
+// when their content exists; the international exams are deliberately absent
+// (see INTERNATIONAL_EXAM_COUNTRIES in exam-countries.ts).
+export const NIGERIA_EXAM_CATEGORIES: ExamCatalogCategory[] = [
+  {
+    slug: 'university-admission',
+    name: 'University Admission',
+    description: 'Matriculation and tertiary admission tests taken in Nigeria.',
+    icon: 'book',
+    tone: 'green',
+    groups: [
+      {
+        name: 'Matriculation examinations',
+        exams: [exam('JAMB UTME', 'National', 'jamb')],
+      },
+    ],
+    sources: [{ label: 'JAMB', url: 'https://www.jamb.gov.ng/' }],
+  },
+];
+
 const COUNTRY_CATALOGS: Partial<Record<CountrySlug, ExamCatalogCategory[]>> = {
   in: EXAM_CATEGORIES,
+  ng: NIGERIA_EXAM_CATEGORIES,
 };
 
 export function getExamCatalog(country: string): ExamCatalogCategory[] {
   return COUNTRY_CATALOGS[country as CountrySlug] ?? [];
+}
+
+/**
+ * The categories to feature on a country's homepage.
+ *
+ * The featured list is a hand-picked subset of India's tree. A country whose
+ * catalogue shares none of those slugs (Nigeria has one category of its own)
+ * gets its whole catalogue instead, which is the right answer for a small tree
+ * and avoids the homepage linking at categories that country never generated.
+ */
+/** How many exams a country's directory lists, for that directory's own copy. */
+export function getCatalogExamCount(country: string): number {
+  return getExamCatalog(country).reduce(
+    (total, category) => total + category.groups.reduce((groupTotal, group) => groupTotal + group.exams.length, 0),
+    0,
+  );
+}
+
+export function getFeaturedExamCatalog(country: string): ExamCatalogCategory[] {
+  const catalog = getExamCatalog(country);
+  const featured = catalog.filter((category) => FEATURED_CATEGORY_SLUGS.includes(category.slug));
+  return featured.length > 0 ? featured : catalog;
 }
 
 export function getExamCategory(slug: string, country: string = 'in') {

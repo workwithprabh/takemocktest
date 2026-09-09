@@ -3,18 +3,26 @@ import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
-import { EXAM_CATEGORIES, FEATURED_EXAM_CATEGORIES } from '@/lib/exam-catalog';
-import { countryPublishes } from '@/lib/exam-countries';
+import { getExamCatalog, getFeaturedExamCatalog } from '@/lib/exam-catalog';
+import { countryPublishes, getExamsForCountry } from '@/lib/exam-countries';
 import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
 import { pageMetadata } from '@/lib/metadata';
 import { LR_LADDER, LR_SLUG, LR_TOPIC_TESTS, LR_TOTAL_QUESTIONS, LR_GRADE_LABELS } from '@/lib/logical-reasoning';
 import { PRACTICE_SLUG, getPublishedTopicSlugs, getTopicPool, getTopicPools } from '@/lib/practice-topics';
 
-const examSuggestions = Array.from(new Map(
-  EXAM_CATEGORIES.flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
+// Both of these are per country now. They used to be module-level constants
+// built from the whole catalogue, which was correct while India was the only
+// country and wrong the moment a second one listed a different set of exams:
+// the homepage was offering six Indian mock tests and six Indian categories
+// under /ng, none of which exist there.
+const examSuggestionsFor = (country: string) => Array.from(new Map(
+  getExamCatalog(country).flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
 ).values());
-const featuredExams = EXAM_LIST.filter((exam) => getCheckedTestCount(exam) > 0).slice(0, 6);
+const featuredExamsFor = (country: string) => {
+  const owned = new Set<string>(getExamsForCountry(country));
+  return EXAM_LIST.filter((exam) => owned.has(exam.slug) && getCheckedTestCount(exam) > 0).slice(0, 6);
+};
 // The three deepest topic pools, as a taste of the topic-practice section.
 // Derived rather than hand-picked, so it follows the corpus as banks land.
 const featuredTopics = getPublishedTopicSlugs()
@@ -57,6 +65,9 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
   // skill sections, trust and FAQ. The exam grids, category grid and updates
   // strip are not rendered rather than rendered empty.
   const hasExams = countryPublishes(country, 'exams');
+  const examSuggestions = examSuggestionsFor(country);
+  const featuredExams = featuredExamsFor(country);
+  const featuredCategories = getFeaturedExamCatalog(country);
   const hasUpdates = countryPublishes(country, 'updates');
   const latestUpdates = getLatestUpdates(5);
 
@@ -208,7 +219,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
-            {FEATURED_EXAM_CATEGORIES.map((category) => (
+            {featuredCategories.map((category) => (
               <ExamCategoryCard key={category.slug} category={category} country={country} compact />
             ))}
           </div>

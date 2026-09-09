@@ -425,6 +425,60 @@ links in one run. Its chrome floor also had to be fixed: the numerator skips
 pages inside the section being checked, so counting them in the denominator set a
 floor no build could clear.
 
+### Adding a country's first exam
+
+Launching a country (above) turns sections on. Adding its first exam turns up
+everything that quietly assumed a section is all-or-nothing. Publishing the
+`exams` section is not publishing every exam, and four places had that wrong:
+
+- the **footer** built its popular-mock list from `EXAM_LIST` and hardcoded an
+  SSC CGL pattern link, putting seven dead links in the chrome of every page;
+- the **homepage** used module-level constants for featured exams and featured
+  categories, both built from India's catalogue;
+- the **exam directory** rendered `EXAM_CATEGORIES` directly, so `/ng/exams`
+  listed India's eleven categories and linked to all eleven;
+- the **SSC CGL typing-practice route** was gated on `countryPublishes(country,
+  'exams')`, which had been the same thing as "this country has SSC CGL" right
+  up until it was not.
+
+Thirteen dead links on two pages, and none of them in a section the
+internal-link audit was watching. `qa:links` now also sweeps every internal link
+on every page of the site, which is cheap and needs no knowledge of which
+sections exist. Negative-test it after changing it: inject a bad href into one
+built page and confirm the audit fails.
+
+**Source-exam lists need the opposite fix.** Topic practice and the reasoning
+sets name the exams their pools are drawn from, and those pools span the whole
+corpus. So an `/in` pool contains JAMB and an `/ng` pool contains the Indian
+exams. The rule is per exam, not per country: name it everywhere, because the
+provenance is what makes the pool credible, and link it only where that exam has
+pages. `isExamInCountry` takes a plain string for exactly these callers.
+
+**hreflang eligibility is per exam and per category too.** "Both countries
+publish the exams section" would pair `/in/sat` with a `/ng/sat` that was never
+generated, and India's eleven category pages with Nigeria's one. A single broken
+target makes Google discard the whole set, so the good tags would go down with
+the bad one.
+
+**Country-specific copy hides in shared templates.** The exam directory had
+India in its title, its eyebrow, its description and its hero image. Names come
+from `COUNTRY_NAMES` in `exam-countries.ts`; the description is derived from the
+country's own categories; the hero image stays India's, and another country
+ships without one rather than borrowing a photograph of the wrong students.
+
+**When the official source cannot be read.** jamb.gov.ng is unreachable from
+this network, so the JAMB pattern is `review-pending` with the reason stated in
+its note, following the precedent set for IBPS Clerk Mains. That keeps the
+exam-pattern page noindex and out of the sitemap, which is the correct outcome.
+Subjects whose questions turn on unverifiable current facts are not built at
+all, the same call already made for General Awareness on the banking exams.
+
+Four registries need an entry for a new exam's banks, and each one fails the
+build or the audit if missed, which is the point:
+`fullMockLayouts` and the `expectedCount` chain in `src/lib/questions.ts`, and
+the filename allowlist and its own `expectedCount` chain in
+`scripts/audit-question-banks.mjs`.
+
 ### Run the installed SEO skills on generated sections
 
 There is a set of SEO skills installed in this environment, and the programmatic-pages

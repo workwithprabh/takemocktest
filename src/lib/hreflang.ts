@@ -17,7 +17,8 @@
 // exist in more than one subfolder with the same content, so they really do
 // want hreflang. See src/lib/exam-countries.ts.
 import { COUNTRIES, getExam } from './exams';
-import { countriesPublishing, isInternationalExam, type CountrySection } from './exam-countries';
+import { getExamCatalog } from './exam-catalog';
+import { countriesPublishing, getExamCountries, isInternationalExam, type CountrySection } from './exam-countries';
 import { SITE_URL } from './schema';
 
 // BCP 47 tag per country subfolder. English everywhere so far, region varies.
@@ -99,6 +100,35 @@ export function isEquivalentAcrossCountries(rest: string): boolean {
 }
 
 /**
+ * Which countries may appear in this path's hreflang set.
+ *
+ * Publishing the section is the general rule, but it is too coarse for an exam
+ * page. Nigeria publishes the `exams` section and lists exactly one exam, so
+ * "ng publishes exams" would pair /in/sat with /ng/sat, a page that does not
+ * exist. Google discards a set with one broken target, which would take the
+ * good tags down with the bad one. For an exam page, eligibility is the set of
+ * countries that actually generate that exam.
+ */
+function eligibleCountries(rest: string, countries: readonly string[]): readonly string[] {
+  const section = sectionForPath(rest);
+  if (!section) return countries;
+  const publishing = countriesPublishing(section) as readonly string[];
+  const eligible = countries.filter((country) => publishing.includes(country));
+  if (section !== 'exams') return eligible;
+  const slug = rest.split('/')[1];
+  if (!slug) return eligible; // /exams itself: every publishing country has one.
+  const exam = getExam(slug);
+  if (exam) {
+    const owners = getExamCountries(exam.slug) as readonly string[];
+    return eligible.filter((country) => owners.includes(country));
+  }
+  // /exams/[category]. Category trees are per country too: India has eleven
+  // categories and Nigeria has one, and none of the slugs overlap, so pairing
+  // them by position or by section would point every category page at a 404.
+  return eligible.filter((country) => getExamCatalog(country).some((category) => category.slug === slug));
+}
+
+/**
  * The hreflang map for a path, or undefined when there is nothing to say.
  *
  * Returns undefined for a page that is not equivalent across countries, and
@@ -118,9 +148,8 @@ export function buildAlternates(
   const [, rest] = split;
   if (!isEquivalentAcrossCountries(rest)) return undefined;
 
-  // Only countries that actually publish this section can be alternates.
-  const section = sectionForPath(rest);
-  const eligible = section ? countries.filter((country) => countriesPublishing(section).includes(country as never)) : countries;
+  // Only countries that actually have this page can be alternates.
+  const eligible = eligibleCountries(rest, countries);
   if (eligible.length < 2) return undefined;
 
   const languages: Record<string, string> = {};

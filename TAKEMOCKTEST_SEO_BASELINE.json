@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-09",
- "pageCount": 4897,
+ "pageCount": 4921,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -17622,7 +17622,7 @@
   },
   "/in/exams": {
    "title": "All Exams in India: Browse Mock Tests by Goal | TakeMockTest",
-   "description": "Browse government, engineering, medical, management, law, study abroad, teaching, defence, and professional exam categories.",
+   "description": "Browse government jobs, engineering &amp; technology, medical &amp; healthcare, study abroad, management &amp; business, university &amp; science and other India exam categories.",
    "h1": [
     "Find an exam by name or goal"
    ],
@@ -17633,7 +17633,7 @@
     "ListItem"
    ],
    "schemaHash": "24d10f4540c7",
-   "ogHash": "c81d9dca235b",
+   "ogHash": "dbfcbc863dbf",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49778,7 +49778,7 @@
   },
   "/in/practice/antonyms": {
    "title": "Antonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "263 free antonyms questions with answers and explanations, pooled from 34 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "271 free antonyms questions with answers and explanations, pooled from 35 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Antonyms Questions with Answers"
    ],
@@ -49794,8 +49794,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ac6d205fb2fa",
-   "ogHash": "20fa3763cd74",
+   "schemaHash": "4c086e8b660a",
+   "ogHash": "4763db426880",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49926,7 +49926,7 @@
   },
   "/in/practice/cloze-test": {
    "title": "Cloze Test Questions with Answers 2026 | TakeMockTest",
-   "description": "161 free cloze test questions with answers and explanations, pooled from 17 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "166 free cloze test questions with answers and explanations, pooled from 18 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Cloze Test Questions with Answers"
    ],
@@ -49942,8 +49942,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e1dd3234940a",
-   "ogHash": "d63fdc83b473",
+   "schemaHash": "1da75a28bf83",
+   "ogHash": "7e70b415a8e8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50333,7 +50333,7 @@
   },
   "/in/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "233 free mensuration questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "235 free mensuration questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
@@ -50349,8 +50349,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e48b63bcf06c",
-   "ogHash": "64508c37fb65",
+   "schemaHash": "311dc88600fb",
+   "ogHash": "f21cb8de2140",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50518,7 +50518,7 @@
   },
   "/in/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "212 free percentage questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "213 free percentage questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -50534,8 +50534,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "50c0f3f7ae3c",
-   "ogHash": "8849cce6e063",
+   "schemaHash": "e40a9a264179",
+   "ogHash": "354e909da948",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50555,7 +50555,7 @@
   },
   "/in/practice/permutations-and-combinations": {
    "title": "Permutations and Combinations Questions with Answers 2026",
-   "description": "129 free permutations and combinations questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "130 free permutations and combinations questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Permutations and Combinations Questions with Answers"
    ],
@@ -50571,8 +50571,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8f2631ab64b9",
-   "ogHash": "006d65ad4bce",
+   "schemaHash": "5b27956843d1",
+   "ogHash": "fce996b67009",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50592,7 +50592,7 @@
   },
   "/in/practice/probability": {
    "title": "Probability Questions with Answers 2026 | TakeMockTest",
-   "description": "226 free probability questions with answers and explanations, pooled from 72 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "227 free probability questions with answers and explanations, pooled from 73 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Probability Questions with Answers"
    ],
@@ -50608,8 +50608,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "85d3c1c4e001",
-   "ogHash": "eceac20d2bbf",
+   "schemaHash": "5adeca085f85",
+   "ogHash": "8de22d4fed1d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50740,7 +50740,7 @@
   },
   "/in/practice/ratio-and-proportion": {
    "title": "Ratio and Proportion Questions with Answers 2026",
-   "description": "224 free ratio and proportion questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free ratio and proportion questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ratio and Proportion Questions with Answers"
    ],
@@ -50756,8 +50756,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "af4d3107c4b1",
-   "ogHash": "273e265f0521",
+   "schemaHash": "858e5d4fbb1e",
+   "ogHash": "97772782af7e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50888,7 +50888,7 @@
   },
   "/in/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "122 free simple interest questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "123 free simple interest questions with answers and explanations, pooled from 49 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -50904,8 +50904,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b5220d86a4a3",
-   "ogHash": "0717ea5f462d",
+   "schemaHash": "acb33ef22281",
+   "ogHash": "d703c4acbcb6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -51036,7 +51036,7 @@
   },
   "/in/practice/synonyms": {
    "title": "Synonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "265 free synonyms questions with answers and explanations, pooled from 32 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "273 free synonyms questions with answers and explanations, pooled from 33 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Synonyms Questions with Answers"
    ],
@@ -51052,8 +51052,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "34a56bff1e8f",
-   "ogHash": "3174c69a342a",
+   "schemaHash": "a18c200ec3b1",
+   "ogHash": "a6196df6827e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -51133,7 +51133,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,056 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,084 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -51149,7 +51149,7 @@
     "Question"
    ],
    "schemaHash": "a01bd7017a64",
-   "ogHash": "123d9d3cb11e",
+   "ogHash": "3e7910f4ea84",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -82987,8 +82987,8 @@
    "h1": [
     "About TakeMockTest"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "7dd199f1753f",
@@ -83001,13 +83001,439 @@
    "h1": [
     "Contact us"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "989806036dfb",
    "sitemap": false,
    "robots": "noindex, follow"
+  },
+  "/ng/exams/university-admission": {
+   "title": "University Admission Exams in India: Mock Test Directory",
+   "description": "Matriculation and tertiary admission tests taken in Nigeria. Browse exams and available TakeMockTest practice series.",
+   "h1": [
+    "University Admission"
+   ],
+   "h2Count": 7,
+   "h2Hash": "3dee0787f4bd",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ItemList",
+    "ListItem"
+   ],
+   "schemaHash": "841de3ded03e",
+   "ogHash": "674a3af03725",
+   "sitemap": true,
+   "canonical": "https://takemocktest.com/in/exams/university-admission",
+   "robots": "index, follow"
+  },
+  "/ng/exams": {
+   "title": "All Exams in Nigeria: Browse Mock Tests by Goal",
+   "description": "Browse the university admission exams taken in Nigeria, with the free mock tests published for each one.",
+   "h1": [
+    "Find an exam by name or goal"
+   ],
+   "h2Count": 6,
+   "h2Hash": "b9e70ed60d81",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "c4e3ffe99004",
+   "ogHash": "030bd69b3447",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/jamb/admit-card": {
+   "title": "JAMB UTME Admit Card: Verification in Progress",
+   "description": "JAMB UTME admit-card dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "JAMB UTME Admit Card"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "72517f4e4c9b",
+   "ogHash": "f9104ca8b19e",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/admit-card",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/answer-key": {
+   "title": "JAMB UTME Answer Key: Verification in Progress",
+   "description": "JAMB UTME answer-key dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "JAMB UTME Answer Key"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "c27d79bd2671",
+   "ogHash": "90cc46fcd397",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/answer-key",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/cutoff": {
+   "title": "JAMB UTME Cutoff: Verification in Progress | TakeMockTest",
+   "description": "JAMB UTME category-wise cutoff marks will be published after verification against the official result notice.",
+   "h1": [
+    "JAMB UTME Cutoff"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "955fabd64a73",
+   "ogHash": "4d6871d48c01",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/cutoff",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/eligibility": {
+   "title": "JAMB UTME Eligibility Criteria 2026 | TakeMockTest",
+   "description": "JAMB UTME eligibility criteria: age limit, educational qualification, and nationality requirements.",
+   "h1": [
+    "JAMB UTME Eligibility"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "493fee0ba4ab",
+   "ogHash": "55313fc8dcea",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/eligibility",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/exam-pattern": {
+   "title": "JAMB UTME Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
+   "description": "JAMB UTME exam pattern: sections, marks, duration, and negative marking explained.",
+   "h1": [
+    "JAMB UTME Exam Pattern"
+   ],
+   "h2Count": 5,
+   "h2Hash": "70f6aa40d43a",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "c1e73b46394b",
+   "ogHash": "91af79d6b124",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/exam-pattern",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/mock-test": {
+   "title": "JAMB UTME Mock Test 2026, Practice Free Test Series",
+   "description": "Attempt free JAMB UTME practice tests with instant results and clearly labelled source-review status.",
+   "h1": [
+    "JAMB UTME Mock Test 2026"
+   ],
+   "h2Count": 7,
+   "h2Hash": "063c1da552f2",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "3c8a01201084",
+   "ogHash": "4ef3d2bb4027",
+   "sitemap": true,
+   "canonical": "https://takemocktest.com/in/jamb/mock-test",
+   "robots": "index, follow"
+  },
+  "/ng/jamb/previous-year-papers": {
+   "title": "JAMB UTME Previous Year Papers: Verification in Progress",
+   "description": "JAMB UTME previous-year papers will be published after their source and shift details are verified.",
+   "h1": [
+    "JAMB UTME Previous Year Papers"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "e5aec97bb257",
+   "ogHash": "95ad3ea8fcbd",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/previous-year-papers",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/result": {
+   "title": "JAMB UTME Result: Verification in Progress | TakeMockTest",
+   "description": "JAMB UTME result dates and official links will be published after verification against the exam body&#x27;s notices.",
+   "h1": [
+    "JAMB UTME Result"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "aa14361a71fb",
+   "ogHash": "6c0b10e6411f",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/result",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/salary": {
+   "title": "JAMB UTME Salary 2026 | TakeMockTest",
+   "description": "JAMB UTME in-hand salary, pay scale, and allowances.",
+   "h1": [
+    "JAMB UTME Salary"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "10a899c66af1",
+   "ogHash": "367631d24ad0",
+   "sitemap": false,
+   "canonical": "https://takemocktest.com/in/jamb/salary",
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/selection-process": {
+   "title": "JAMB UTME Selection Process: From Registration to Admission",
+   "description": "How a UTME candidate moves from registration through the computer-based test and institutional screening to an admission offer.",
+   "h1": [
+    "JAMB UTME Selection Process"
+   ],
+   "h2Count": 5,
+   "h2Hash": "7a8988c3f89c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "b7c301697dba",
+   "ogHash": "9b49d44b2061",
+   "sitemap": true,
+   "canonical": "https://takemocktest.com/in/jamb/selection-process",
+   "robots": "index, follow"
+  },
+  "/ng/jamb/syllabus": {
+   "title": "JAMB UTME Syllabus: Subjects and Topics | TakeMockTest",
+   "description": "Topic areas for the JAMB UTME subjects covered on this site: Use of English, Mathematics, Physics and Chemistry, with what each paper actually tests.",
+   "h1": [
+    "JAMB UTME Syllabus"
+   ],
+   "h2Count": 9,
+   "h2Hash": "a099575b08ac",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "7c897d7c14c8",
+   "ogHash": "7d9e621d0306",
+   "sitemap": true,
+   "canonical": "https://takemocktest.com/in/jamb/syllabus",
+   "robots": "index, follow"
+  },
+  "/ng/jamb/test/utme-chemistry-sectional-1/attempt": {
+   "title": "JAMB UTME Chemistry Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the JAMB UTME Chemistry Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "96dcb337908a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/test/utme-chemistry-sectional-1": {
+   "title": "JAMB UTME Chemistry Sectional Test 1: Instructions",
+   "description": "Practice Chemistry for JAMB UTME with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "JAMB UTME Chemistry Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "2f66f2ff47be",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "632ed84964d0",
+   "ogHash": "902cf83e7d20",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/jamb/test/utme-full-mock-1/attempt": {
+   "title": "JAMB UTME Full Mock Test 1 (Science) | TakeMockTest",
+   "description": "Attempt the JAMB UTME Full Mock Test 1 (Science) and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "1655b12e005f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/test/utme-full-mock-1": {
+   "title": "JAMB UTME Full Mock Test 1 (Science) (2026) | TakeMockTest",
+   "description": "Attempt JAMB UTME Full Mock Test 1 (Science): 180 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "JAMB UTME Full Mock Test 1 (Science)"
+   ],
+   "h2Count": 9,
+   "h2Hash": "b1cb7ae70990",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "cc78a8e012d6",
+   "ogHash": "e1d80aba053f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/jamb/test/utme-mathematics-sectional-1/attempt": {
+   "title": "JAMB UTME Mathematics Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the JAMB UTME Mathematics Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "fa1f88947bfe",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/test/utme-mathematics-sectional-1": {
+   "title": "JAMB UTME Mathematics Sectional Test 1: Instructions",
+   "description": "Practice Mathematics for JAMB UTME with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "JAMB UTME Mathematics Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "0b04b6c131c3",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "97006a42ef3c",
+   "ogHash": "8b3cc5d36a60",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/jamb/test/utme-physics-sectional-1/attempt": {
+   "title": "JAMB UTME Physics Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the JAMB UTME Physics Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d443b6510482",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/test/utme-physics-sectional-1": {
+   "title": "JAMB UTME Physics Sectional Test 1: Instructions",
+   "description": "Practice Physics for JAMB UTME with 40 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "JAMB UTME Physics Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "feacce11fa23",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "4367ecf2e2b8",
+   "ogHash": "84a7eeffd446",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/jamb/test/utme-use-of-english-sectional-1/attempt": {
+   "title": "JAMB UTME Use of English Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the JAMB UTME Use of English Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ae5547c94df4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/ng/jamb/test/utme-use-of-english-sectional-1": {
+   "title": "JAMB UTME Use of English Sectional Test 1: Instructions",
+   "description": "Practice Use of English for JAMB UTME with 60 original, topic-tagged questions, instant scoring, and answer explanations.",
+   "h1": [
+    "JAMB UTME Use of English Sectional Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "fc3c62b5b197",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0cc162179595",
+   "ogHash": "b06256442d5f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/ng/jamb": {
+   "title": "JAMB UTME: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
+   "description": "Practice checked JAMB UTME mock tests and review the verified exam pattern, timing, marks, and negative marking.",
+   "h1": [
+    "JAMB UTME"
+   ],
+   "h2Count": 7,
+   "h2Hash": "57e500d0509c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "schemaHash": "e86fa27c44b4",
+   "ogHash": "d81ad218be33",
+   "sitemap": true,
+   "canonical": "https://takemocktest.com/in/jamb",
+   "robots": "index, follow"
   },
   "/ng/logical-reasoning/test/easy-set-1/attempt": {
    "title": "Logical Reasoning Easy Set 1 | TakeMockTest",
@@ -83015,8 +83441,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "4301dd4e725e",
@@ -83029,8 +83455,8 @@
    "h1": [
     "Logical Reasoning: Easy Set 1"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83046,8 +83472,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "d25523e73aea",
@@ -83060,8 +83486,8 @@
    "h1": [
     "Logical Reasoning: Easy Set 2"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83077,8 +83503,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "4df05b34bb46",
@@ -83091,8 +83517,8 @@
    "h1": [
     "Logical Reasoning: Easy Set 3"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83108,8 +83534,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "c63fc6c55a97",
@@ -83122,8 +83548,8 @@
    "h1": [
     "Logical Reasoning: Easy Set 4"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83139,8 +83565,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "784b80244e41",
@@ -83153,8 +83579,8 @@
    "h1": [
     "Logical Reasoning: Easy Set 5"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83170,8 +83596,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "56e9a09d2e93",
@@ -83184,8 +83610,8 @@
    "h1": [
     "Logical Reasoning: Easy Set 6"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83201,8 +83627,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "26c459f5734e",
@@ -83215,8 +83641,8 @@
    "h1": [
     "Logical Reasoning: Hard Set 1"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83232,8 +83658,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "a295d3ca9c9b",
@@ -83246,8 +83672,8 @@
    "h1": [
     "Logical Reasoning: Hard Set 2"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83263,8 +83689,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "d5a5b50d43fa",
@@ -83277,8 +83703,8 @@
    "h1": [
     "Logical Reasoning: Hard Set 3"
    ],
-   "h2Count": 6,
-   "h2Hash": "1ce7775baf41",
+   "h2Count": 8,
+   "h2Hash": "bf200ac13752",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83294,8 +83720,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "26d6daef10d4",
@@ -83308,8 +83734,8 @@
    "h1": [
     "Logical Reasoning: Medium Set 1"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83325,8 +83751,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "53b94c0bcd40",
@@ -83339,8 +83765,8 @@
    "h1": [
     "Logical Reasoning: Medium Set 2"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83356,8 +83782,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "42d9031ae744",
@@ -83370,8 +83796,8 @@
    "h1": [
     "Logical Reasoning: Medium Set 3"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83387,8 +83813,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "e297297219dc",
@@ -83401,8 +83827,8 @@
    "h1": [
     "Logical Reasoning: Medium Set 4"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83418,8 +83844,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "2cce11914f5a",
@@ -83432,8 +83858,8 @@
    "h1": [
     "Logical Reasoning: Medium Set 5"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83449,8 +83875,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "67930748405f",
@@ -83463,8 +83889,8 @@
    "h1": [
     "Logical Reasoning: Medium Set 6"
    ],
-   "h2Count": 7,
-   "h2Hash": "a6234435a1d7",
+   "h2Count": 9,
+   "h2Hash": "9227b8ca0bdc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83480,8 +83906,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "d8d3b523f19b",
@@ -83494,8 +83920,8 @@
    "h1": [
     "Logical Reasoning: Blood Relations Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83511,8 +83937,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "5f534e4f5529",
@@ -83525,8 +83951,8 @@
    "h1": [
     "Logical Reasoning: Clocks & Calendars Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83542,8 +83968,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "a7a273350a7c",
@@ -83556,8 +83982,8 @@
    "h1": [
     "Logical Reasoning: Coded Inequality Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83573,8 +83999,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "30bdce371ea6",
@@ -83587,8 +84013,8 @@
    "h1": [
     "Logical Reasoning: Coding & Decoding Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83604,8 +84030,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "bab41aa8e200",
@@ -83618,8 +84044,8 @@
    "h1": [
     "Logical Reasoning: Data Sufficiency Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83635,8 +84061,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "027a31a2e2e2",
@@ -83649,8 +84075,8 @@
    "h1": [
     "Logical Reasoning: Direction Sense Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83666,8 +84092,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "85eed5dc24a4",
@@ -83680,8 +84106,8 @@
    "h1": [
     "Logical Reasoning: Logical Deduction Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83697,8 +84123,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "5ca5b6426c76",
@@ -83711,8 +84137,8 @@
    "h1": [
     "Logical Reasoning: Ranking & Order Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83728,8 +84154,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "de814169c95d",
@@ -83742,8 +84168,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "6cadd5b6b4c5",
@@ -83756,8 +84182,8 @@
    "h1": [
     "Logical Reasoning: Seating & Arrangement Set 2"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83773,8 +84199,8 @@
    "h1": [
     "Logical Reasoning: Seating & Arrangement Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83790,8 +84216,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "c0213a3867ee",
@@ -83804,8 +84230,8 @@
    "h1": [
     "Logical Reasoning: Series & Analogy Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83821,8 +84247,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "e81c17233ea9",
@@ -83835,8 +84261,8 @@
    "h1": [
     "Logical Reasoning: Statement & Inference Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83852,8 +84278,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "58629be29282",
@@ -83866,8 +84292,8 @@
    "h1": [
     "Logical Reasoning: Syllogisms Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83883,8 +84309,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "eda07e13aa3a",
@@ -83897,8 +84323,8 @@
    "h1": [
     "Logical Reasoning: Symbols & Alphabet Set"
    ],
-   "h2Count": 7,
-   "h2Hash": "f3bd3d988757",
+   "h2Count": 9,
+   "h2Hash": "b113a5515ccc",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83914,8 +84340,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "eefcb65e93f9",
@@ -83928,8 +84354,8 @@
    "h1": [
     "Logical Reasoning: Venn Diagrams & Classification Set"
    ],
-   "h2Count": 6,
-   "h2Hash": "79f3eb7f1c0b",
+   "h2Count": 8,
+   "h2Hash": "9c5a87bc70de",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83945,8 +84371,8 @@
    "h1": [
     "Logical Reasoning Practice 2026"
    ],
-   "h2Count": 6,
-   "h2Hash": "b08995e577f9",
+   "h2Count": 8,
+   "h2Hash": "f1c21d0449c3",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -83967,8 +84393,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "481716473a70",
@@ -83981,8 +84407,8 @@
    "h1": [
     "Active and Passive Voice Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "bc03e4e367b7",
+   "h2Count": 8,
+   "h2Hash": "e97a4f6f4aa4",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84004,8 +84430,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "fb89572981e2",
@@ -84018,8 +84444,8 @@
    "h1": [
     "Alphanumeric Series Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "c04624806e3c",
+   "h2Count": 8,
+   "h2Hash": "e6fdd1e6d52b",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84041,8 +84467,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "175c35c517b0",
@@ -84055,8 +84481,8 @@
    "h1": [
     "Analogy Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "d90d22f95d34",
+   "h2Count": 8,
+   "h2Hash": "acfc32d5361d",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84078,8 +84504,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "668eab250781",
@@ -84088,12 +84514,12 @@
   },
   "/ng/practice/antonyms": {
    "title": "Antonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "263 free antonyms questions with answers and explanations, pooled from 34 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "271 free antonyms questions with answers and explanations, pooled from 35 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Antonyms Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "cd907ddac0f1",
+   "h2Count": 8,
+   "h2Hash": "b692d9bd98df",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84104,8 +84530,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f122a0fab470",
-   "ogHash": "6e87523be1b5",
+   "schemaHash": "a7afb56a691f",
+   "ogHash": "2adf7976fc60",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -84115,8 +84541,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "31005f3b326d",
@@ -84129,8 +84555,8 @@
    "h1": [
     "Averages Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "8f3fd75b9105",
+   "h2Count": 8,
+   "h2Hash": "6ea9638916c1",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84152,8 +84578,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "bc45c9d668cc",
@@ -84166,8 +84592,8 @@
    "h1": [
     "Blood Relations Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "1684df09b31b",
+   "h2Count": 8,
+   "h2Hash": "2e2fe4d4dc7b",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84189,8 +84615,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "6d446f54e1e7",
@@ -84203,8 +84629,8 @@
    "h1": [
     "Classification Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "23f936d32ab4",
+   "h2Count": 8,
+   "h2Hash": "d9bd9ead1ea8",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84226,8 +84652,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "8305126f26ba",
@@ -84236,12 +84662,12 @@
   },
   "/ng/practice/cloze-test": {
    "title": "Cloze Test Questions with Answers 2026 | TakeMockTest",
-   "description": "161 free cloze test questions with answers and explanations, pooled from 17 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "166 free cloze test questions with answers and explanations, pooled from 18 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Cloze Test Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "15f784cdb9a0",
+   "h2Count": 8,
+   "h2Hash": "9b4d13d379ce",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84252,8 +84678,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1044e3090248",
-   "ogHash": "ac234801181d",
+   "schemaHash": "1b327237e190",
+   "ogHash": "62bfc9b15abd",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -84263,8 +84689,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "b5f28bec0e7b",
@@ -84277,8 +84703,8 @@
    "h1": [
     "Coded Inequality Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "4d1ad393c4d4",
+   "h2Count": 8,
+   "h2Hash": "125513dfbf86",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84300,8 +84726,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "685eea7b5782",
@@ -84314,8 +84740,8 @@
    "h1": [
     "Coding and Decoding Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "12429b1da630",
+   "h2Count": 8,
+   "h2Hash": "cbde91588a01",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84337,8 +84763,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "12b4cb9af196",
@@ -84351,8 +84777,8 @@
    "h1": [
     "Compound Interest Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "e58b301f52cd",
+   "h2Count": 8,
+   "h2Hash": "4599baeb46b4",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84374,8 +84800,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "26ed88ce16f2",
@@ -84388,8 +84814,8 @@
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "cb40fc64cf7f",
+   "h2Count": 8,
+   "h2Hash": "f569326d1bf5",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84411,8 +84837,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "3426730aec7c",
@@ -84425,8 +84851,8 @@
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "d575fede4954",
+   "h2Count": 8,
+   "h2Hash": "1421ff3baba4",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84448,8 +84874,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "be208477c2d6",
@@ -84462,8 +84888,8 @@
    "h1": [
     "Direct and Indirect Speech Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "a17269c5008f",
+   "h2Count": 8,
+   "h2Hash": "0c93346ceb48",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84485,8 +84911,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "894430459566",
@@ -84499,8 +84925,8 @@
    "h1": [
     "Direction Sense Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "ef22b68e5278",
+   "h2Count": 8,
+   "h2Hash": "6638719cd4e7",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84522,8 +84948,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "b9f37fd07552",
@@ -84536,8 +84962,8 @@
    "h1": [
     "Error Spotting Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "8f59adcaeee2",
+   "h2Count": 8,
+   "h2Hash": "cf5c45027e5c",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84559,8 +84985,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "f3c8f8fa7057",
@@ -84573,8 +84999,8 @@
    "h1": [
     "Fill in the Blanks Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "6e685501e279",
+   "h2Count": 8,
+   "h2Hash": "0c63915a3db6",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84596,8 +85022,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "b2c2d8e7c3c3",
@@ -84610,8 +85036,8 @@
    "h1": [
     "Idioms and Phrases Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "a16d10e58ee6",
+   "h2Count": 8,
+   "h2Hash": "2774ce97b8b8",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84633,8 +85059,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "f1fa6a97c80a",
@@ -84643,12 +85069,12 @@
   },
   "/ng/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "233 free mensuration questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "235 free mensuration questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "dd668b28a29e",
+   "h2Count": 8,
+   "h2Hash": "5534570dba94",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84659,8 +85085,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "092d49eb1645",
-   "ogHash": "7201e2aea8f8",
+   "schemaHash": "f1f247652911",
+   "ogHash": "b87d27fba2ce",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -84670,8 +85096,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "2b002aeba5dd",
@@ -84684,8 +85110,8 @@
    "h1": [
     "Number Series Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "7d8c46e13454",
+   "h2Count": 8,
+   "h2Hash": "524a211115cd",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84707,8 +85133,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "09e9232aa883",
@@ -84721,8 +85147,8 @@
    "h1": [
     "Number System Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "c7a2f87da435",
+   "h2Count": 8,
+   "h2Hash": "904791ccf393",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84744,8 +85170,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "3b02c72a5e3a",
@@ -84758,8 +85184,8 @@
    "h1": [
     "One-Word Substitution Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "d42b3c5544a3",
+   "h2Count": 8,
+   "h2Hash": "37405a309108",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84781,8 +85207,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "131fe4b05ac4",
@@ -84795,8 +85221,8 @@
    "h1": [
     "Para Jumbles Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "ade556448cc4",
+   "h2Count": 8,
+   "h2Hash": "8ec79d8158f4",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84818,8 +85244,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "111a24d072ef",
@@ -84828,12 +85254,12 @@
   },
   "/ng/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "212 free percentage questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "213 free percentage questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "0b162421166c",
+   "h2Count": 8,
+   "h2Hash": "e37786b0bca1",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84844,8 +85270,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1da3498d51d8",
-   "ogHash": "61694fbf317b",
+   "schemaHash": "07e664e38916",
+   "ogHash": "e7105c1d9b45",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -84855,8 +85281,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "e6864dbec2ed",
@@ -84865,12 +85291,12 @@
   },
   "/ng/practice/permutations-and-combinations": {
    "title": "Permutations and Combinations Questions with Answers 2026",
-   "description": "129 free permutations and combinations questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "130 free permutations and combinations questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Permutations and Combinations Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "441cc1df9bff",
+   "h2Count": 8,
+   "h2Hash": "20f441c1c8c0",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84881,8 +85307,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "3498c6d16706",
-   "ogHash": "cb74c1ed27dd",
+   "schemaHash": "f757b8ebc51d",
+   "ogHash": "abb276f6e7a8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -84892,8 +85318,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "dc20b228adb2",
@@ -84902,12 +85328,12 @@
   },
   "/ng/practice/probability": {
    "title": "Probability Questions with Answers 2026 | TakeMockTest",
-   "description": "226 free probability questions with answers and explanations, pooled from 72 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "227 free probability questions with answers and explanations, pooled from 73 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Probability Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "697eb5423796",
+   "h2Count": 8,
+   "h2Hash": "038c5d5ea8db",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84918,8 +85344,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "990cf80ae51b",
-   "ogHash": "f18e4596fd18",
+   "schemaHash": "2e124d592edf",
+   "ogHash": "1e32186d1f9c",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -84929,8 +85355,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "8d655c2f12b2",
@@ -84943,8 +85369,8 @@
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "ec04fa4148d3",
+   "h2Count": 8,
+   "h2Hash": "ff8a1028a8b2",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84966,8 +85392,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "d20e7c58767f",
@@ -84980,8 +85406,8 @@
    "h1": [
     "Puzzles Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "4fbab6c702dd",
+   "h2Count": 8,
+   "h2Hash": "efa72cee4c45",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85003,8 +85429,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "862cdda244da",
@@ -85017,8 +85443,8 @@
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "3a2384ef3652",
+   "h2Count": 8,
+   "h2Hash": "41e62aef65b8",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85040,8 +85466,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "eb33d4c10c39",
@@ -85050,12 +85476,12 @@
   },
   "/ng/practice/ratio-and-proportion": {
    "title": "Ratio and Proportion Questions with Answers 2026",
-   "description": "224 free ratio and proportion questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free ratio and proportion questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ratio and Proportion Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "aaf228708c15",
+   "h2Count": 8,
+   "h2Hash": "015bd57b385e",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85066,8 +85492,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "72087334d049",
-   "ogHash": "9b91066dc9ac",
+   "schemaHash": "08b12c3337bb",
+   "ogHash": "4675a31a9254",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -85077,8 +85503,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "0007df2260d3",
@@ -85091,8 +85517,8 @@
    "h1": [
     "Reading Comprehension Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "48587a184bec",
+   "h2Count": 8,
+   "h2Hash": "bcf1ee86489a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85114,8 +85540,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "9698ab8db76b",
@@ -85128,8 +85554,8 @@
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "e93cbd558179",
+   "h2Count": 8,
+   "h2Hash": "d80ada9b9aac",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85151,8 +85577,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "8c452e8d56e0",
@@ -85165,8 +85591,8 @@
    "h1": [
     "Sentence Improvement Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "29c29f67823a",
+   "h2Count": 8,
+   "h2Hash": "19bdf19932f6",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85188,8 +85614,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "9ba4cd19a041",
@@ -85198,12 +85624,12 @@
   },
   "/ng/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "122 free simple interest questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "123 free simple interest questions with answers and explanations, pooled from 49 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "8450796ab95e",
+   "h2Count": 8,
+   "h2Hash": "8e00687dd66c",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85214,8 +85640,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7acb254f0ade",
-   "ogHash": "acc9e1f91d1e",
+   "schemaHash": "9ad92173f96d",
+   "ogHash": "942a36255ac1",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -85225,8 +85651,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "96ae6907dbf2",
@@ -85239,8 +85665,8 @@
    "h1": [
     "Simplification Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "4d41b9bf4b1d",
+   "h2Count": 8,
+   "h2Hash": "435afb8c100f",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85262,8 +85688,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "077f6a5b4152",
@@ -85276,8 +85702,8 @@
    "h1": [
     "Spelling Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "9f461e00f4b5",
+   "h2Count": 8,
+   "h2Hash": "f2bc20c8ebf5",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85299,8 +85725,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "ad3805639298",
@@ -85313,8 +85739,8 @@
    "h1": [
     "Syllogism Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "d29c330daf0d",
+   "h2Count": 8,
+   "h2Hash": "d01f8146c2be",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85336,8 +85762,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "382ca67cbbb7",
@@ -85346,12 +85772,12 @@
   },
   "/ng/practice/synonyms": {
    "title": "Synonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "265 free synonyms questions with answers and explanations, pooled from 32 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "273 free synonyms questions with answers and explanations, pooled from 33 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Synonyms Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "2cff44e7ef70",
+   "h2Count": 8,
+   "h2Hash": "189cce38344b",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85362,8 +85788,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "08031c4c5fcd",
-   "ogHash": "845fbcc9684e",
+   "schemaHash": "8e15dc0d0e46",
+   "ogHash": "9b98feb6d095",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -85373,8 +85799,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "2fd1d2298426",
@@ -85387,8 +85813,8 @@
    "h1": [
     "Time and Work Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "201d44c028a1",
+   "h2Count": 8,
+   "h2Hash": "ef8155cc2a1c",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85410,8 +85836,8 @@
    "h1": [
     "Preparing your test…"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "a69d901d65e8",
@@ -85424,8 +85850,8 @@
    "h1": [
     "Time, Speed and Distance Questions with Answers"
    ],
-   "h2Count": 6,
-   "h2Hash": "baef128d792c",
+   "h2Count": 8,
+   "h2Hash": "07aed3a86c93",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85443,12 +85869,12 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,056 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,084 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "8557e61fe467",
+   "h2Count": 9,
+   "h2Hash": "7cb82c394033",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -85459,7 +85885,7 @@
     "Question"
    ],
    "schemaHash": "1aad2b909aed",
-   "ogHash": "74fe6a6233bb",
+   "ogHash": "5b0e2c2372af",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -85469,8 +85895,8 @@
    "h1": [
     "Privacy Policy"
    ],
-   "h2Count": 10,
-   "h2Hash": "a95c097f730f",
+   "h2Count": 12,
+   "h2Hash": "de9d6e40595b",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "4740a963390b",
@@ -85483,8 +85909,8 @@
    "h1": [
     "My Results"
    ],
-   "h2Count": 2,
-   "h2Hash": "badbe06f0360",
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "78c3b64e7d0a",
@@ -85497,8 +85923,8 @@
    "h1": [
     "Terms of Service"
    ],
-   "h2Count": 8,
-   "h2Hash": "682549748e12",
+   "h2Count": 10,
+   "h2Hash": "4a4c0c492be0",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "70d911854871",
@@ -85511,8 +85937,8 @@
    "h1": [
     "Find your next mock test"
    ],
-   "h2Count": 5,
-   "h2Hash": "af103c28ea6a",
+   "h2Count": 9,
+   "h2Hash": "71f1c3d91f20",
    "schemaTypes": [
     "Answer",
     "FAQPage",

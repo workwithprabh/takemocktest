@@ -790,6 +790,10 @@ import { MAH_BHMCT_BCA_BBA_BMS_BBM_CET_2026_COMMON_CET_FULL_MOCK_1 } from './que
 import { MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1 } from './question-banks/mah-mba-cet-2026-mba-mms-full-mock-1';
 import { MAH_MCA_CET_2026_MCA_FULL_MOCK_1 } from './question-banks/mah-mca-cet-2026-mca-full-mock-1';
 import { STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1 } from './question-banks/state-set-2026-maharashtra-commerce-full-mock-1';
+import { JAMB_UTME_USE_OF_ENGLISH_1 } from './question-banks/jamb-utme-use-of-english-1';
+import { JAMB_UTME_MATHEMATICS_1 } from './question-banks/jamb-utme-mathematics-1';
+import { JAMB_UTME_PHYSICS_1 } from './question-banks/jamb-utme-physics-1';
+import { JAMB_UTME_CHEMISTRY_1 } from './question-banks/jamb-utme-chemistry-1';
 
 // Every question the site serves, indexed by its (globally unique, enforced by
 // scripts/audit-question-banks.mjs) question ID. Built once on first use so
@@ -945,6 +949,19 @@ export interface Question {
 }
 
 const CHECKED_TEST_BANKS: Record<string, Question[]> = {
+  // JAMB UTME, Nigeria's beachhead exam. The full mock is the science
+  // combination (Use of English plus Mathematics, Physics and Chemistry); the
+  // sectionals reuse the same four banks, exactly as the Indian exams do.
+  'jamb/utme-full-mock-1': [
+    ...JAMB_UTME_USE_OF_ENGLISH_1,
+    ...JAMB_UTME_MATHEMATICS_1,
+    ...JAMB_UTME_PHYSICS_1,
+    ...JAMB_UTME_CHEMISTRY_1,
+  ],
+  'jamb/utme-use-of-english-sectional-1': JAMB_UTME_USE_OF_ENGLISH_1,
+  'jamb/utme-mathematics-sectional-1': JAMB_UTME_MATHEMATICS_1,
+  'jamb/utme-physics-sectional-1': JAMB_UTME_PHYSICS_1,
+  'jamb/utme-chemistry-sectional-1': JAMB_UTME_CHEMISTRY_1,
   'ibps-po/prelims-full-mock-1': [
     ...IBPS_PO_PRELIMS_ENGLISH_1,
     ...IBPS_PO_PRELIMS_QUANTITATIVE_1,
@@ -3397,6 +3414,19 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     // otherwise-uniform 35) since its own native banks are 30 questions.
     // Handoff batch: exact test-id matches, so none of these can be shadowed
     // by (or shadow) the slug-substring branches further down this chain.
+    // JAMB UTME: exact test-id matches, placed here for the same reason as the
+    // handoff batch above, so the slug-substring branches further down cannot
+    // shadow them.
+    : testId === 'jamb/utme-full-mock-1'
+    ? 180
+    : testId === 'jamb/utme-use-of-english-sectional-1'
+    ? 60
+    : testId === 'jamb/utme-mathematics-sectional-1'
+    ? 40
+    : testId === 'jamb/utme-physics-sectional-1'
+    ? 40
+    : testId === 'jamb/utme-chemistry-sectional-1'
+    ? 40
     : testId === 'aiims-bsc-nursing/hons-entrance-full-mock-1'
     ? 100
     : testId === 'aiims-bsc-nursing/physics-sectional-1'
@@ -4776,6 +4806,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
 }
 
 const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
+  'jamb': [
+    { section: "Use of English", count: 60 },
+    { section: "Mathematics", count: 40 },
+    { section: "Physics", count: 40 },
+    { section: "Chemistry", count: 40 },
+  ],
   'jcece': [
     { section: "Physics", count: 50 },
     { section: "Chemistry", count: 50 },
@@ -5981,6 +6017,10 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
 }
 
 export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
+  'jamb': [
+    JAMB_UTME_USE_OF_ENGLISH_1[15],
+    JAMB_UTME_MATHEMATICS_1[0],
+  ],
   'ssc-cgl': [
     // Quantitative Aptitude
     { section: 'Quantitative Aptitude', question: 'What is 15% of 200?', options: ['20', '25', '30', '35'], correctIndex: 2, explanation: '15% of 200 = (15/100) × 200 = 30.' },

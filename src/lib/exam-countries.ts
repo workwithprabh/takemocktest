@@ -19,6 +19,18 @@ import { COUNTRIES, EXAM_LIST, type CountrySlug, type ExamSlug } from './exams';
 
 export const DEFAULT_COUNTRY: CountrySlug = 'in';
 
+// Display names, for the handful of places where a page has to name the country
+// in its own prose rather than just route by it. Kept here with the rest of the
+// country declarations so adding a country stays a one-file edit.
+export const COUNTRY_NAMES: Record<CountrySlug, string> = {
+  in: 'India',
+  ng: 'Nigeria',
+};
+
+export function countryName(country: string): string {
+  return COUNTRY_NAMES[country as CountrySlug] ?? '';
+}
+
 // Exams that are the same exam wherever the candidate happens to live. A
 // Nigerian student sits the same SAT as an Indian one, from the same board,
 // against the same syllabus, so these appear under every country rather than
@@ -38,22 +50,44 @@ const INTERNATIONAL_EXAMS = new Set<ExamSlug>([
   'frm',
 ]);
 
-// Exams owned by a specific country. Empty for now: Nigeria's JAMB, WAEC and
-// NECO land here when their content does, and until then `/ng/` cannot be
-// generated at all, which is deliberate. Phase 1 is capability, not launch.
-const COUNTRY_EXAMS: Partial<Record<CountrySlug, readonly ExamSlug[]>> = {};
+// Being the same exam everywhere is not the same as being published everywhere.
+// A country opts in to the international set rather than inheriting it by simply
+// existing. Nigeria is the reason: turning its `exams` section on for JAMB would
+// otherwise have published 132 pages of SAT, IELTS and the rest in the same
+// batch, which is three things changing at once that we could not tell apart
+// when the numbers come back. The beachhead test in
+// INTERNATIONAL_EXPANSION_STRATEGY.md is one exam, so it is one exam.
+//
+// Adding `ng` here is a deliberate later batch, not a missing entry.
+const INTERNATIONAL_EXAM_COUNTRIES = new Set<CountrySlug>(['in']);
+
+// Exams owned by a specific country. WAEC and NECO land here when their content
+// does; JAMB UTME is the Phase 3 beachhead and is the only exam `/ng` lists.
+const COUNTRY_EXAMS: Partial<Record<CountrySlug, readonly ExamSlug[]>> = {
+  ng: ['jamb'],
+};
 
 const isCountry = (value: string): value is CountrySlug =>
   (COUNTRIES as readonly string[]).includes(value);
 
 export function getExamCountries(slug: ExamSlug): readonly CountrySlug[] {
-  if (INTERNATIONAL_EXAMS.has(slug)) return COUNTRIES;
   const owners = COUNTRIES.filter((country) => COUNTRY_EXAMS[country]?.includes(slug));
+  if (INTERNATIONAL_EXAMS.has(slug)) {
+    const optedIn = COUNTRIES.filter((country) => INTERNATIONAL_EXAM_COUNTRIES.has(country));
+    return [...new Set([...optedIn, ...owners])];
+  }
   return owners.length > 0 ? owners : [DEFAULT_COUNTRY];
 }
 
-export function isExamInCountry(slug: ExamSlug, country: string): boolean {
-  return isCountry(country) && getExamCountries(slug).includes(country);
+/**
+ * Whether a country's subfolder generates pages for this exam.
+ *
+ * Takes a plain string rather than an ExamSlug because most callers hold a slug
+ * off a catalogue record or a question pool, where it is typed as string. An
+ * unknown slug simply is not in any country, which is the right answer.
+ */
+export function isExamInCountry(slug: string, country: string): boolean {
+  return isCountry(country) && (getExamCountries(slug as ExamSlug) as readonly string[]).includes(country);
 }
 
 /**
@@ -99,15 +133,15 @@ const COUNTRY_SECTIONS: Record<CountrySlug, readonly CountrySection[]> = {
   // practice are true in Lagos exactly as they are in Delhi, so they carry real
   // depth from day one against a subfolder that has no authority yet. The
   // sections that are off are off for a reason, not for lack of time:
-  //   exams   - no Nigerian exam exists yet, and an exam directory listing
-  //             nothing local is worse than no directory. The international
-  //             exams (SAT, IELTS) are a deliberate second batch, not a
-  //             freebie to bundle in here.
   //   blog    - the 61 posts are written about Indian exams and Indian
   //             timelines. Republishing them under /ng would be duplicate
   //             content aimed at the wrong reader.
   //   updates - exam notifications are one country's news by definition.
-  ng: ['practice', 'reasoning'],
+  //
+  // `exams` came on in Phase 3, for JAMB UTME alone. The directory lists one
+  // exam on purpose: see INTERNATIONAL_EXAM_COUNTRIES above for why SAT and
+  // IELTS did not arrive with it.
+  ng: ['exams', 'practice', 'reasoning'],
 };
 
 export function countryPublishes(country: string, section: CountrySection): boolean {

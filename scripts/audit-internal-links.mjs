@@ -156,6 +156,34 @@ for (const section of SECTIONS) {
   );
 }
 
+// 4. Every internal link on every page of the site must resolve.
+//
+// The section checks above only look inside the sections they own, which was
+// enough while one country generated every page. It stopped being enough the
+// moment a country published a section without publishing everything in it:
+// Nigeria lists one exam, and the directory index, the SSC CGL typing-practice
+// route and the footer all still pointed at India's. Thirteen dead links on two
+// pages, none of them in a section this audit was watching. A whole-site sweep
+// is cheap and does not need to know which sections exist.
+let sweptLinks = 0;
+const deadBySource = new Map();
+for (const file of htmlFiles) {
+  const rel = path.relative(out, file).replace(/\\/g, '/');
+  const html = fs.readFileSync(file, 'utf8');
+  for (const match of new Set([...html.matchAll(/href="(\/[^"]*)"/g)].map((m) => m[1]))) {
+    if (match.startsWith('//')) continue;
+    sweptLinks += 1;
+    if (!resolves(match)) {
+      if (!deadBySource.has(rel)) deadBySource.set(rel, new Set());
+      deadBySource.get(rel).add(match);
+    }
+  }
+}
+for (const [rel, targets] of deadBySource) {
+  errors.push(`${rel}: ${targets.size} dead internal link${targets.size === 1 ? '' : 's'} (${[...targets].sort().slice(0, 4).join(', ')}${targets.size > 4 ? ', ...' : ''})`);
+}
+summaries.push(`Whole site: ${sweptLinks} distinct internal links across ${htmlFiles.length} pages all resolve`);
+
 if (errors.length > 0) {
   console.error(`Internal-link audit FAILED — ${errors.length} problem${errors.length === 1 ? '' : 's'}:`);
   for (const error of errors) console.error(`  - ${error}`);
