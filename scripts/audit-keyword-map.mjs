@@ -38,8 +38,8 @@ const source = fs.readFileSync(path.join(process.cwd(), 'src', 'lib', 'seo-keywo
 // Parse the map entries. Each is an object literal with at least page, path,
 // primary, titleMustContain and h1MustContain.
 const targets = [];
-for (const block of source.split(/\n  \{\n/).slice(1)) {
-  const body = block.split(/\n  \},?/)[0];
+for (const block of source.split(/\r?\n  \{\r?\n/).slice(1)) {
+  const body = block.split(/\r?\n  \},?/)[0];
   const str = (key) => {
     const match = new RegExp(`${key}: '((?:[^'\\\\]|\\\\.)*)'`).exec(body);
     return match ? match[1].replace(/\\'/g, "'") : null;

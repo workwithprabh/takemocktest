@@ -68,6 +68,8 @@ const RRB_GROUP_D_ARCHIVED_CEN_URL =
 const RRB_GROUP_D_CURRENT_LISTING_URL = 'https://www.rrbcdg.gov.in/2025-09-level1.php';
 const RRB_NTPC_2025_NOTICE_URL =
   'https://www.rrbcdg.gov.in/uploads/2025/07-NTPCUG/072025NTPCUG-CEN.pdf';
+const UPSC_CSE_2026_NOTICE_URL =
+  'https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf';
 const SSC_MTS_NOTICE_URL =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf';
 const SSC_GD_CONSTABLE_NOTICE_URL =
@@ -1755,6 +1757,153 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
           text: 'Prepared from Railway Recruitment Boards, Detailed Centralised Employment Notice CEN 07/2025 for NTPC Undergraduate posts, clauses 13.1 and 13.2, checked 10 September 2026.',
           sourceLabel: 'View the official notice',
           sourceUrl: RRB_NTPC_2025_NOTICE_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+  },
+  'upsc-cse': {
+    syllabus: {
+      title: 'UPSC CSE Syllabus 2026: GS Paper I & CSAT Topics',
+      description:
+        'UPSC CSE Prelims syllabus for GS Paper I and qualifying CSAT, covering history, geography, polity, economy, environment, science, reasoning and numeracy.',
+      heading: 'UPSC CSE Prelims Syllabus 2026',
+      blocks: [
+        {
+          type: 'paragraph',
+          heading: 'GS Paper I syllabus and pattern',
+          text: 'GS Paper I contains **100 questions for 200 marks in two hours**. Its score determines the Paper I qualifying cutoff for admission to the Main Examination, provided the candidate also qualifies in CSAT.',
+        },
+        {
+          type: 'callout',
+          heading: 'UPSC publishes broad syllabus boundaries',
+          text: 'The official notice names broad areas rather than a fixed chapter list or topic-wise question split. Both Prelims papers are compulsory. A wrong answer loses **one-third of the marks assigned to that question**, while an unanswered question has no penalty.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'History of India and Indian National Movement',
+              topics: [
+                'History of India',
+                'Indian National Movement',
+              ],
+            },
+            {
+              section: 'Indian and World Geography',
+              topics: [
+                'Physical geography of India',
+                'Social geography of India',
+                'Economic geography of India',
+                'Physical geography of the world',
+                'Social geography of the world',
+                'Economic geography of the world',
+              ],
+            },
+            {
+              section: 'Indian Polity and Governance',
+              topics: [
+                'Constitution',
+                'Political system',
+                'Panchayati Raj',
+                'Public policy',
+                'Rights issues',
+              ],
+            },
+            {
+              section: 'Economic and Social Development',
+              topics: [
+                'Sustainable development',
+                'Poverty',
+                'Inclusion',
+                'Demographics',
+                'Social-sector initiatives',
+              ],
+            },
+            {
+              section: 'Environmental Ecology, Bio-diversity and Climate Change',
+              topics: [
+                'General issues in environmental ecology',
+                'Bio-diversity',
+                'Climate change',
+                'Issues that do not require subject specialisation',
+              ],
+            },
+            {
+              section: 'General Science',
+              topics: [
+                'General Science',
+              ],
+            },
+            {
+              section: 'Current events of national and international importance',
+              topics: [
+                'Current events of national importance',
+                'Current events of international importance',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'CSAT Paper II syllabus and pattern',
+          text: 'CSAT contains **80 questions for 200 marks in two hours**. It is qualifying, with a minimum requirement of **33%, or 66 marks**, but appearing in both Prelims papers is mandatory for evaluation.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'Comprehension',
+              topics: [
+                'Comprehension',
+              ],
+            },
+            {
+              section: 'Interpersonal skills including communication skills',
+              topics: [
+                'Interpersonal skills',
+                'Communication skills',
+              ],
+            },
+            {
+              section: 'Logical reasoning and analytical ability',
+              topics: [
+                'Logical reasoning',
+                'Analytical ability',
+              ],
+            },
+            {
+              section: 'Decision making and problem solving',
+              topics: [
+                'Decision making',
+                'Problem solving',
+              ],
+            },
+            {
+              section: 'General mental ability',
+              topics: [
+                'General mental ability',
+              ],
+            },
+            {
+              section: 'Basic numeracy and Data interpretation',
+              topics: [
+                'Numbers and their relations at Class 10 level',
+                'Orders of magnitude at Class 10 level',
+                'Charts',
+                'Graphs',
+                'Tables',
+                'Data sufficiency at Class 10 level',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Prepared from the UPSC Civil Services (Preliminary) Examination 2026 notice, Appendix I Section II(A) and Section III Part A, checked 10 September 2026. Question totals were cross-checked against the official 2026 question papers.',
+          sourceLabel: 'View the official notice',
+          sourceUrl: UPSC_CSE_2026_NOTICE_URL,
           tone: 'plain',
         },
       ],
