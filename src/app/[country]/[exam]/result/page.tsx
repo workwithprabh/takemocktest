@@ -44,8 +44,8 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
 
@@ -53,14 +53,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     return pageMetadata({
       title: 'SSC CGL Result 2025: Final Result and Official Timeline',
       description: 'SSC CGL 2025 final result was declared on 14 May 2026. Check the official Tier 1 result, allocation, final-result, answer-key, and marks notices.',
-      path: '/in/ssc-cgl/result',
+      path: `/${country}/ssc-cgl/result`,
     });
   }
 
   return pageMetadata({
     title: `${exam.name} Result: Verification in Progress`,
     description: `${exam.name} result dates and official links will be published after verification against the exam body's notices.`,
-    path: `/in/${exam.slug}/result`,
+    path: `/${country}/${exam.slug}/result`,
     noIndex: true,
   });
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { countryName } from '@/lib/exam-countries';
 import { COUNTRIES } from '@/lib/exams';
 import { notFound } from 'next/navigation';
 import { CategoryIcon } from '@/components/ExamCategoryCard';
@@ -19,9 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   if (!category) return {};
 
   return pageMetadata({
-    title: `${category.name} Exams in India: Mock Test Directory`,
+    // "in India" was hardcoded into a title rendered under [country], so the
+    // Nigerian category page announced itself as an Indian directory.
+    title: `${category.name} Exams in ${countryName(country) || 'India'}: Mock Test Directory`,
     description: `${category.description} Browse exams and available TakeMockTest practice series.`,
-    path: `/in/exams/${category.slug}`,
+    path: `/${country}/exams/${category.slug}`,
   });
 }
 

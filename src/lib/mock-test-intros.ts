@@ -26,7 +26,7 @@ export interface MockTestIntro {
 export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
   'ssc-cgl': {
     lead: 'A free SSC CGL mock test series covering both stages: Tier 1 as 100 questions in 60 minutes for 200 marks, and Tier 2 as the longer 150-question Paper I. Every SSC CGL online test here is free to attempt, needs no account, and returns a section-wise result the moment you submit.',
-    strategy: 'The detail worth practising is the penalty, because it doubles between the stages. Tier 1 deducts 0.5 marks for a wrong answer and Tier 2 deducts a full mark, so a guess that is worth taking in Tier 1 is often not worth taking in Tier 2. Tier 2 also runs on sectional timers, which means a slow start in Mathematical Abilities cannot be repaid later in English.',
+    strategy: 'SSC CGL rewards a different level of risk at each stage. Tier 1 deducts 0.50 marks for a wrong answer, while the applicable sections of Tier 2 Paper I deduct 1 mark, so accuracy matters more as you progress and a guess worth taking in Tier 1 is often not worth taking later. Tier 2 also runs on sectional timers, which means a slow start in Mathematical Abilities cannot be repaid in English.',
   },
   'ssc-chsl': {
     lead: 'A free SSC CHSL mock test series for both tiers. Tier 1 is 100 questions in 60 minutes for 200 marks across General Intelligence, General Awareness, Quantitative Aptitude and English Language. Each SSC CHSL online test scores instantly, with no login and no payment.',
@@ -34,19 +34,19 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
   },
   'ssc-gd-constable': {
     lead: 'A free SSC GD Constable mock test series built to the current CBE: 80 questions in 60 minutes for 160 marks, covering General Intelligence and Reasoning, General Knowledge and General Awareness, Elementary Mathematics, and your choice of English or Hindi. Every SSC GD online test is free and needs no account.',
-    strategy: 'SSC GD rewards speed more than depth. Each question carries 2 marks and leaves you about 45 seconds, with 0.25 deducted for a wrong answer, so the paper is won by clearing easy questions quickly rather than by solving the hardest ones. That makes timed practice more useful here than extra syllabus reading.',
+    strategy: 'Eighty questions in 60 minutes works out at 45 seconds per question on average, and that average is the point rather than a per-question limit. You will not get 45 seconds for every question, so straightforward ones have to go faster to leave room for the few that need working out. Each carries 2 marks with 0.25 deducted for a wrong answer, which makes timed practice more useful here than extra syllabus reading.',
   },
   'rrb-ntpc': {
     lead: 'A free RRB NTPC mock test series covering both computer-based stages: CBT 1 as 100 questions in 90 minutes, and CBT 2 as 120 questions in the same 90 minutes. Every RRB NTPC online test is free, needs no login, and gives a section-wise breakdown immediately.',
-    strategy: 'Both stages run a single composite timer over Mathematics, General Intelligence and Reasoning, and General Awareness, with no sectional lock, so you can spend minutes where they actually pay. The penalty is one third of a mark, gentler than the SSC papers, which moves the break-even point on a considered guess in your favour rather than against it.',
+    strategy: 'Both stages run a single composite timer over Mathematics, General Intelligence and Reasoning, and General Awareness, with no sectional lock, so you can spend minutes where they actually pay. RRB NTPC deducts one third of the marks allotted to a question for every wrong answer. With four options, a completely blind guess is roughly break-even, but eliminating even one option makes a considered attempt worth taking.',
   },
   'rrb-group-d': {
     lead: 'A free RRB Group D mock test series matching the current CBT: 100 questions in 90 minutes across General Science, Mathematics, General Intelligence and Reasoning, and General Awareness with Current Affairs. Every Railway Group D online test here is free to attempt and scores the moment you finish.',
-    strategy: 'General Science is what separates Group D from the other railway papers, and it is the section most candidates under-prepare because the other exams do not test it. The CBT runs on one 90-minute clock with no sectional lock, so a strong Science section buys back the minutes Mathematics takes from you.',
+    strategy: 'General Science deserves dedicated preparation in RRB Group D rather than being treated as an extension of General Awareness, since it is a named section of the paper in its own right. The CBT runs on one 90-minute clock with no sectional lock, so time saved on the sections you are quickest at is time still available for the ones you are not.',
   },
   'ibps-po': {
     lead: 'A free IBPS PO mock test series built to the current Prelims pattern: 100 questions in 60 minutes across English Language, Quantitative Aptitude and Reasoning Ability. Every IBPS PO online test is free, needs no account, and returns a section-wise result as soon as you submit.',
-    strategy: 'IBPS PO Prelims locks each section to 20 minutes, and that single rule is the one most candidates never practise against. You cannot borrow time from Reasoning to rescue Quantitative Aptitude, so a weak section stays weak on the day whatever your overall speed. Attempt the sectional tests under a 20-minute clock before you attempt a full mock.',
+    strategy: 'In IBPS PO Prelims each section has its own 20-minute timer, so you cannot borrow unused time from Reasoning Ability to rescue Quantitative Aptitude. A weak section stays weak on the day whatever your overall speed, which is why practising sectionals against the real clock matters as much as attempting full mocks.',
   },
   'ibps-clerk': {
     lead: 'A free IBPS Clerk mock test series covering both stages: Prelims as 100 questions in 60 minutes, and Mains as 160 questions in 125 minutes across Reasoning Ability with Computer Aptitude, Quantitative Aptitude, English Language, and General and Financial Awareness.',
@@ -58,7 +58,7 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
   },
   'sbi-clerk': {
     lead: 'A free SBI Clerk mock test series covering Prelims as 100 questions in 60 minutes and Mains as 190 questions in 160 minutes, across General and Financial Awareness, General English, Quantitative Aptitude, and Reasoning Ability with Computer Aptitude.',
-    strategy: 'SBI Clerk Mains is the densest paper of the four big banking exams on this site. It gives 190 questions in 160 minutes, under 51 seconds each, with every section separately timed. Prelims uses the same 20-minute sectional lock as SBI PO, so what both stages really test is pace against a short and unforgiving clock.',
+    strategy: 'SBI Clerk Mains packs 190 questions into 160 minutes, averaging just over 50 seconds per question overall. Because the sections are separately timed, that speed has to be built within each section rather than recovered elsewhere in the paper. Prelims uses the same 20-minute sectional timing as SBI PO, so both stages reward pace under a short clock.',
   },
 };
 

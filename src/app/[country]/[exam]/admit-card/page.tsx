@@ -19,8 +19,8 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
 
@@ -28,14 +28,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     return pageMetadata({
       title: 'SSC CGL Admit Card 2026: Release Schedule and Documents',
       description: 'SSC says CGL 2026 exam-city details will appear about 10 days before the exam and the admission certificate 2 to 3 days before. Check the official schedule and document list.',
-      path: '/in/ssc-cgl/admit-card',
+      path: `/${country}/ssc-cgl/admit-card`,
     });
   }
 
   return pageMetadata({
     title: `${exam.name} Admit Card: Verification in Progress`,
     description: `${exam.name} admit-card dates and official links will be published after verification against the exam body's notices.`,
-    path: `/in/${exam.slug}/admit-card`,
+    path: `/${country}/${exam.slug}/admit-card`,
     noIndex: true,
   });
 }

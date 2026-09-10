@@ -24,8 +24,8 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
   const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     description: facts.length > 0
       ? `${exam.name} exam pattern: ${facts.join(', ')}, section-wise marks, negative marking and time per question, checked against the official notification.`
       : `${exam.name} exam pattern: sections, marks, duration, and negative marking explained.`,
-    path: `/in/${exam.slug}/exam-pattern`,
+    path: `/${country}/${exam.slug}/exam-pattern`,
     noIndex: !hasOfficialPattern,
   });
 }

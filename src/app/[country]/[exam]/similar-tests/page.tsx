@@ -17,14 +17,14 @@ export function generateStaticParams() {
   );
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam || getSharedTests(exam).length === 0) return {};
   return pageMetadata({
     title: `Similar Tests to ${exam.shortName ?? exam.name}, Extra Reasoning Practice`,
     description: `Additional Reasoning Ability practice tests for ${exam.name}, drawn from exams that share its scoring pattern and marking scheme.`,
-    path: `/in/${exam.slug}/similar-tests`,
+    path: `/${country}/${exam.slug}/similar-tests`,
   });
 }
 

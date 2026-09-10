@@ -18,18 +18,18 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
   const guide = getExamGuide(examSlug, 'syllabus');
   if (guide) {
-    return pageMetadata({ title: guide.title, description: guide.description, path: `/in/${exam.slug}/syllabus` });
+    return pageMetadata({ title: guide.title, description: guide.description, path: `/${country}/${exam.slug}/syllabus` });
   }
   return pageMetadata({
     title: `${exam.name} Syllabus ${new Date().getFullYear()}: Section-wise Topics`,
     description: `${exam.name} syllabus sections being checked against current official documents before publication.`,
-    path: `/in/${exam.slug}/syllabus`,
+    path: `/${country}/${exam.slug}/syllabus`,
     noIndex: true,
   });
 }

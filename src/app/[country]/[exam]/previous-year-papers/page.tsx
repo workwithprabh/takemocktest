@@ -19,18 +19,18 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
   const guide = getExamGuide(examSlug, 'previous-year-papers');
   if (guide) {
-    return pageMetadata({ title: guide.title, description: guide.description, path: `/in/${exam.slug}/previous-year-papers` });
+    return pageMetadata({ title: guide.title, description: guide.description, path: `/${country}/${exam.slug}/previous-year-papers` });
   }
   return pageMetadata({
     title: `${exam.name} Previous Year Papers: Verification in Progress`,
     description: `${exam.name} previous-year papers will be published after their source and shift details are verified.`,
-    path: `/in/${exam.slug}/previous-year-papers`,
+    path: `/${country}/${exam.slug}/previous-year-papers`,
     noIndex: true,
   });
 }

@@ -27,15 +27,15 @@ export function generateStaticParams() {
 
 const YEAR = new Date().getFullYear();
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
   const hasCheckedTests = exam.stages.some((stage) => stage.tests.some((test) => test.status === 'checked'));
   return pageMetadata({
     title: `${exam.shortName ?? exam.name} Mock Test ${YEAR}, Practice Free Test Series`,
     description: `Attempt free ${exam.name} practice tests with instant results and clearly labelled source-review status.`,
-    path: `/in/${exam.slug}/mock-test`,
+    path: `/${country}/${exam.slug}/mock-test`,
     noIndex: !hasCheckedTests,
     image: {
       url: '/images/students-taking-online-mock-test.webp',

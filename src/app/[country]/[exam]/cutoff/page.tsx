@@ -66,8 +66,8 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
 
@@ -75,14 +75,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     return pageMetadata({
       title: 'SSC CGL Tier 1 Cutoff 2025: Official Category-wise Marks',
       description: 'Check the official SSC CGL Tier 1 2025 cutoff marks for JSO, Statistical Investigator Grade II, and all other posts, with shortlisted-candidate counts.',
-      path: '/in/ssc-cgl/cutoff',
+      path: `/${country}/ssc-cgl/cutoff`,
     });
   }
 
   return pageMetadata({
     title: `${exam.name} Cutoff: Verification in Progress`,
     description: `${exam.name} category-wise cutoff marks will be published after verification against the official result notice.`,
-    path: `/in/${exam.slug}/cutoff`,
+    path: `/${country}/${exam.slug}/cutoff`,
     noIndex: true,
   });
 }

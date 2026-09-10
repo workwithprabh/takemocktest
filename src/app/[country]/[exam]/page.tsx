@@ -65,8 +65,8 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
   const hasCheckedTests = getCheckedTestCount(exam) > 0;
@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
       : hasOfficialPattern
         ? `Review the verified ${exam.name} exam pattern, syllabus, eligibility criteria, and selection process.`
         : `Try the ${exam.name} test interface demo. Verified exam resources will be published after official source checks are complete.`,
-    path: `/in/${exam.slug}`,
+    path: `/${country}/${exam.slug}`,
     noIndex: !hasCheckedTests && !hasOfficialPattern,
     image: {
       url: '/images/students-taking-online-mock-test.webp',

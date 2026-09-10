@@ -83931,7 +83931,7 @@
    "robots": "noindex, follow"
   },
   "/ng/exams/university-admission": {
-   "title": "University Admission Exams in India: Mock Test Directory",
+   "title": "University Admission Exams in Nigeria: Mock Test Directory",
    "description": "Matriculation and tertiary admission tests taken in Nigeria. Browse exams and available TakeMockTest practice series.",
    "h1": [
     "University Admission Exams"
@@ -83944,9 +83944,8 @@
     "ListItem"
    ],
    "schemaHash": "841de3ded03e",
-   "ogHash": "674a3af03725",
+   "ogHash": "04701d4a3af2",
    "sitemap": true,
-   "canonical": "https://takemocktest.com/in/exams/university-admission",
    "robots": "index, follow"
   },
   "/ng/exams": {
@@ -83979,9 +83978,8 @@
     "ListItem"
    ],
    "schemaHash": "72517f4e4c9b",
-   "ogHash": "f9104ca8b19e",
+   "ogHash": "e92004a90a5f",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/admit-card",
    "robots": "noindex, follow"
   },
   "/ng/jamb/answer-key": {
@@ -83997,9 +83995,8 @@
     "ListItem"
    ],
    "schemaHash": "c27d79bd2671",
-   "ogHash": "90cc46fcd397",
+   "ogHash": "fb09f56687c6",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/answer-key",
    "robots": "noindex, follow"
   },
   "/ng/jamb/cutoff": {
@@ -84015,9 +84012,8 @@
     "ListItem"
    ],
    "schemaHash": "955fabd64a73",
-   "ogHash": "4d6871d48c01",
+   "ogHash": "b865bafa08c3",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/cutoff",
    "robots": "noindex, follow"
   },
   "/ng/jamb/eligibility": {
@@ -84033,9 +84029,8 @@
     "ListItem"
    ],
    "schemaHash": "493fee0ba4ab",
-   "ogHash": "55313fc8dcea",
+   "ogHash": "49e497d16147",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/eligibility",
    "robots": "noindex, follow"
   },
   "/ng/jamb/exam-pattern": {
@@ -84051,9 +84046,8 @@
     "ListItem"
    ],
    "schemaHash": "c1e73b46394b",
-   "ogHash": "91af79d6b124",
+   "ogHash": "063cfedd69b4",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/exam-pattern",
    "robots": "noindex, follow"
   },
   "/ng/jamb/mock-test": {
@@ -84073,9 +84067,8 @@
     "Question"
    ],
    "schemaHash": "afe12f531b70",
-   "ogHash": "4ef3d2bb4027",
+   "ogHash": "7ce5bdae12df",
    "sitemap": true,
-   "canonical": "https://takemocktest.com/in/jamb/mock-test",
    "robots": "index, follow"
   },
   "/ng/jamb/previous-year-papers": {
@@ -84091,9 +84084,8 @@
     "ListItem"
    ],
    "schemaHash": "e5aec97bb257",
-   "ogHash": "95ad3ea8fcbd",
+   "ogHash": "0a96340974eb",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/previous-year-papers",
    "robots": "noindex, follow"
   },
   "/ng/jamb/result": {
@@ -84109,9 +84101,8 @@
     "ListItem"
    ],
    "schemaHash": "aa14361a71fb",
-   "ogHash": "6c0b10e6411f",
+   "ogHash": "68832f1996a8",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/result",
    "robots": "noindex, follow"
   },
   "/ng/jamb/salary": {
@@ -84127,9 +84118,8 @@
     "ListItem"
    ],
    "schemaHash": "10a899c66af1",
-   "ogHash": "367631d24ad0",
+   "ogHash": "56321a3742fa",
    "sitemap": false,
-   "canonical": "https://takemocktest.com/in/jamb/salary",
    "robots": "noindex, follow"
   },
   "/ng/jamb/selection-process": {
@@ -84145,9 +84135,8 @@
     "ListItem"
    ],
    "schemaHash": "b7c301697dba",
-   "ogHash": "9b49d44b2061",
+   "ogHash": "4148bda24134",
    "sitemap": true,
-   "canonical": "https://takemocktest.com/in/jamb/selection-process",
    "robots": "index, follow"
   },
   "/ng/jamb/syllabus": {
@@ -84163,9 +84152,8 @@
     "ListItem"
    ],
    "schemaHash": "7c897d7c14c8",
-   "ogHash": "7d9e621d0306",
+   "ogHash": "e76d69191e59",
    "sitemap": true,
-   "canonical": "https://takemocktest.com/in/jamb/syllabus",
    "robots": "index, follow"
   },
   "/ng/jamb/test/utme-chemistry-sectional-1/attempt": {
@@ -84521,9 +84509,8 @@
     "ListItem"
    ],
    "schemaHash": "e86fa27c44b4",
-   "ogHash": "d81ad218be33",
+   "ogHash": "dc4140256f07",
    "sitemap": true,
-   "canonical": "https://takemocktest.com/in/jamb",
    "robots": "index, follow"
   },
   "/ng/logical-reasoning/test/easy-set-1/attempt": {

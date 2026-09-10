@@ -20,8 +20,8 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
 
@@ -29,14 +29,14 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     return pageMetadata({
       title: 'SSC CGL Answer Key 2025: Tier 2 Final Key Status',
       description: 'SSC uploaded the CGL 2025 Tier 2 final answer keys, response sheets, and marks on 17 June 2026. Check the official notice and access-window status.',
-      path: '/in/ssc-cgl/answer-key',
+      path: `/${country}/ssc-cgl/answer-key`,
     });
   }
 
   return pageMetadata({
     title: `${exam.name} Answer Key: Verification in Progress`,
     description: `${exam.name} answer-key dates and official links will be published after verification against the exam body's notices.`,
-    path: `/in/${exam.slug}/answer-key`,
+    path: `/${country}/${exam.slug}/answer-key`,
     noIndex: true,
   });
 }

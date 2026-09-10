@@ -142,6 +142,23 @@ short aside, and a period to just start a new sentence. Number ranges get spelle
   matters for the student's strategy*, not just that it exists. That's the "experience"
   half of E-E-A-T, not just "expertise."
 
+**Never write toward a word count.** Added 10 September 2026, after a batch note
+celebrated nine mock-test hubs going from about 430 words to between 759 and
+1,848 as if the number were the achievement. It is not. Google states it has no
+preferred word count and names writing to an assumed length as a warning sign of
+content made for search engines rather than people. The nine pages did improve,
+but because they started answering questions a mock-test seeker actually has,
+not because they got longer. Judge a page by whether someone leaves it able to
+do the thing they came to do. If that takes 850 words, write 850. If an exam
+genuinely needs 1,700, write 1,700. A page padded to hit a target is worse than
+the short version it replaced.
+
+**Keep the product above the prose.** Someone searching "SSC CGL mock test" came
+to take a mock test, not to read an article about one. The order on a test or
+mock-hub page is H1, a short specific intro, the tests themselves, and then the
+supporting content further down for the people who want it. Do not push a
+visitor through a thousand words to reach the thing they searched for.
+
 ## 5. Student persona — who is actually reading this
 
 This was originally written as a single persona (Indian government/competitive-exam
@@ -192,3 +209,15 @@ Jobs; a more scattered mix of coaching-institute blogs and forums for the other 
    explaining it to a friend, or like a template? (§4.)
 4. Is every pattern/scoring claim traceable to a `sourceUrl` + `checkedOn` in `exams.ts`?
    No exceptions, no "this is probably right."
+5. Does every strategy claim survive being checked with a calculator? Added after
+   an RRB NTPC intro said its one-third penalty was "gentler than the SSC papers",
+   which sounds obvious and is wrong. Blind four-option expected value on NTPC is
+   0.25 x 1 minus 0.75 x (1/3) = 0, break-even; on SSC CGL Tier 1 it is
+   0.25 x 2 minus 0.75 x 0.5 = +0.125. The paper with the harsher-sounding rule
+   was the more forgiving one. A claim that feels intuitive is exactly the one to
+   compute before shipping.
+6. Is the claim scoped to the stage and section it is true of? "Tier 2 deducts a
+   full mark" is too broad when Tier 2 contains papers marked at 0.50; "the
+   applicable sections of Tier 2 Paper I deduct 1 mark" is defensible. The same
+   goes for superlatives: do not write "the densest paper on this site" unless
+   every candidate for that title has actually been compared."

@@ -18,18 +18,18 @@ export function generateStaticParams() {
   return COUNTRIES.flatMap((country) => getExamsForCountry(country).map((exam) => ({ country, exam })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam: examSlug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
+  const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
   const guide = getExamGuide(examSlug, 'eligibility');
   if (guide) {
-    return pageMetadata({ title: guide.title, description: guide.description, path: `/in/${exam.slug}/eligibility` });
+    return pageMetadata({ title: guide.title, description: guide.description, path: `/${country}/${exam.slug}/eligibility` });
   }
   return pageMetadata({
     title: `${exam.name} Eligibility Criteria ${new Date().getFullYear()}`,
     description: `${exam.name} eligibility criteria: age limit, educational qualification, and nationality requirements.`,
-    path: `/in/${exam.slug}/eligibility`,
+    path: `/${country}/${exam.slug}/eligibility`,
     noIndex: true,
   });
 }
