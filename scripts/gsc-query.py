@@ -28,6 +28,8 @@ import json
 import os
 import sys
 import time
+
+import requests
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -396,7 +398,15 @@ def cmd_inspect(session, args):
 
     for index, (page_path, page_type) in enumerate(entries, start=1):
         body = {'inspectionUrl': f'https://takemocktest.com{page_path}', 'siteUrl': SITE}
-        resp = session.post(INSPECT_URL, json=body)
+        # requests has no default timeout: without one a single stalled call
+        # hangs the whole job until the runner kills it, and every inspection
+        # already spent is lost with it.
+        try:
+            resp = session.post(INSPECT_URL, json=body, timeout=30)
+        except requests.exceptions.RequestException as exc:
+            print(f'  {page_path}: {type(exc).__name__}', file=sys.stderr)
+            results.append({'page': page_path, 'type': page_type, 'error': type(exc).__name__})
+            continue
         if resp.status_code != 200:
             print(f'  {page_path}: HTTP {resp.status_code} {resp.text[:200]}', file=sys.stderr)
             results.append({'page': page_path, 'type': page_type, 'error': resp.status_code})
