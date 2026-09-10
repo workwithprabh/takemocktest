@@ -671,6 +671,7 @@ import { AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1 } from './question-banks/aiims-norc
 import { CEED_2026_PART_A_FULL_MOCK_1 } from './question-banks/ceed-2026-part-a-full-mock-1';
 import { UCEED_2026_PART_A_FULL_MOCK_1 } from './question-banks/uceed-2026-part-a-full-mock-1';
 import { DBT_BET_2026_SECTION_A_FULL_MOCK_1 } from './question-banks/dbt-bet-2026-section-a-full-mock-1';
+import { DBT_BET_2026_SECTION_A_FULL_MOCK_2 } from './question-banks/dbt-bet-2026-section-a-full-mock-2';
 import { DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1 } from './question-banks/dnb-pdcet-2026-anaesthesiology-full-mock-1';
 import { TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1 } from './question-banks/tifr-gs-2026-computer-science-full-mock-1';
 import { XAT_2026_PART_1_FULL_MOCK_1 } from './question-banks/xat-2026-part-1-full-mock-1';
@@ -680,7 +681,9 @@ import { FMGE_2026_PART_A_FULL_MOCK_1 } from './question-banks/fmge-2026-part-a-
 import { FMGE_2026_PART_B_FULL_MOCK_1 } from './question-banks/fmge-2026-part-b-full-mock-1';
 import { NEET_PG_2026_MEDICAL_FULL_MOCK_1 } from './question-banks/neet-pg-2026-medical-full-mock-1';
 import { CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1 } from './question-banks/cseet-2026-business-laws-and-management-full-mock-1';
+import { CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_FULL_MOCK_2 } from './question-banks/cseet-2026-business-laws-and-management-full-mock-2';
 import { GPAT_2026_PHARMACY_FULL_MOCK_1 } from './question-banks/gpat-2026-pharmacy-full-mock-1';
+import { GPAT_2026_PHARMACY_FULL_MOCK_2 } from './question-banks/gpat-2026-pharmacy-full-mock-2';
 import { JAM_2026_MATHEMATICS_FULL_MOCK_1 } from './question-banks/jam-2026-mathematics-full-mock-1';
 import { JAM_2026_MATHEMATICS_FULL_MOCK_2 } from './question-banks/jam-2026-mathematics-full-mock-2';
 import { GATE_2026_CS_FULL_MOCK_1 } from './question-banks/gate-2026-cs-full-mock-1';
@@ -3220,9 +3223,11 @@ const NEET_PG_TESTS: Record<string, Question[]> = {
 };
 const CSEET_TESTS: Record<string, Question[]> = {
   'cseet/business-laws-and-management-full-mock-1': CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1,
+  'cseet/business-laws-and-management-full-mock-2': CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_FULL_MOCK_2,
 };
 const GPAT_TESTS: Record<string, Question[]> = {
   'gpat/pharmacy-full-mock-1': GPAT_2026_PHARMACY_FULL_MOCK_1,
+  'gpat/pharmacy-full-mock-2': GPAT_2026_PHARMACY_FULL_MOCK_2,
 };
 const JAM_TESTS: Record<string, Question[]> = {
   'jam/mathematics-full-mock-1': JAM_2026_MATHEMATICS_FULL_MOCK_1,
@@ -3428,6 +3433,7 @@ const UCEED_HANDOFF_TESTS: Record<string, Question[]> = {
 };
 const DBT_BET_HANDOFF_TESTS: Record<string, Question[]> = {
   'dbt-bet/section-a-full-mock-1': DBT_BET_2026_SECTION_A_FULL_MOCK_1,
+  'dbt-bet/section-a-full-mock-2': DBT_BET_2026_SECTION_A_FULL_MOCK_2,
 };
 const DNB_PDCET_HANDOFF_TESTS: Record<string, Question[]> = {
   'dnb-pdcet/anaesthesiology-full-mock-1': DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1,
@@ -3516,7 +3522,7 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 15
     : testId === 'uceed/mcq-sectional-1'
     ? 28
-    : testId === 'dbt-bet/section-a-full-mock-1'
+    : testId.startsWith('dbt-bet/section-a-full-mock-')
     ? 50
     : testId === 'dnb-pdcet/anaesthesiology-full-mock-1'
     ? 120
@@ -4232,9 +4238,9 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 150
     : testId === 'neet-pg/medical-full-mock-1'
     ? 180
-    : testId === 'cseet/business-laws-and-management-full-mock-1'
+    : testId.startsWith('cseet/business-laws-and-management-full-mock-')
     ? 100
-    : testId === 'gpat/pharmacy-full-mock-1'
+    : testId.startsWith('gpat/pharmacy-full-mock-')
     ? 125
     : testId.startsWith('jam/mathematics-full-mock-')
     ? 60
