@@ -14,6 +14,8 @@ export interface TestItem {
   contentStatus: 'checked' | 'demo';
   checkedOn?: string;
   topics: string[];
+  /** How much of the official paper this test reproduces. See lib/test-coverage.ts. */
+  coverage?: string;
 }
 
 export default function TestListClient({
@@ -113,6 +115,7 @@ export default function TestListClient({
           checkedOn={t.checkedOn}
           status={scores[t.testId] ? 'done' : 'new'}
           score={scores[t.testId]}
+          coverage={t.coverage}
         />
       ))}
     </>
