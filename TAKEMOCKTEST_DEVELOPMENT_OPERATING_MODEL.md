@@ -101,6 +101,22 @@ it to be wrong. When a defect is found this way, the fix is two parts, not one:
 correct the instance, then add the gate that would have caught it, because
 everything on this list exists because something got through once.
 
+A second lesson arrived on 10 September 2026, from the same batch. Thirty-two
+exam stages published a per-section minutes column directly above a note saying
+the paper ran on one composite clock with no sectional lock, and the derived
+prose beside them read "all sections are separately timed". The minutes were a
+pro-rata split of the composite window, computed from the question counts rather
+than read off a notice, but they sat under an "Official source · checked" link.
+
+Two things follow. First, **a derived number must never be stored in a field
+that the page presents as sourced.** If a figure is inferred, it belongs in the
+derived-prose layer where the page says so. Second, **an external reviewer
+quoting our own numbers back is not corroboration.** This defect was reported to
+us as evidence that the composite claim was wrong, when the evidence was the
+invented split we had published ourselves. Before accepting an outside
+correction to a sourced fact, establish that the source is independent of this
+site.
+
 ## 6. Browser smoke test
 
 After importing an approved exam, verify:
