@@ -31,7 +31,7 @@ concurrency:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -52,9 +52,14 @@ jobs:
           fi
           python3 scripts/gsc-query.py inspect \
             --sample "${{ github.event.inputs.sample || 'data/index-audit-sample.tsv' }}" \
-            --out data/index-audit-result.json
+            --out data/index-audit-result.json \
+            --resume
 
+      # always(): inspection writes partial results every 25 URLs, so a run that
+      # times out still banks the calls it already spent against the daily
+      # quota, and --resume picks up from there on the next run.
       - name: Commit result if changed
+        if: always()
         run: |
           if ! git diff --quiet -- data || [ -n "$(git status --porcelain data)" ]; then
             git config user.name 'TakeMockTest Coding Agent'
