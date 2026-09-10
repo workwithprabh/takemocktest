@@ -384,7 +384,16 @@ def cmd_inspect(session, args):
         path_part, _, page_type = line.partition('\t')
         entries.append((path_part, page_type or 'unknown'))
 
+    # Resume a partial run rather than re-spending quota on URLs already done.
     results = []
+    done = set()
+    existing = Path(args.out)
+    if args.resume and existing.exists():
+        results = json.loads(existing.read_text(encoding='utf-8'))
+        done = {row['page'] for row in results if 'error' not in row}
+        print(f'resuming: {len(done)} URLs already inspected')
+    entries = [entry for entry in entries if entry[0] not in done]
+
     for index, (page_path, page_type) in enumerate(entries, start=1):
         body = {'inspectionUrl': f'https://takemocktest.com{page_path}', 'siteUrl': SITE}
         resp = session.post(INSPECT_URL, json=body)
@@ -407,7 +416,13 @@ def cmd_inspect(session, args):
         # Well inside the per-minute ceiling; the daily quota is the real limit.
         time.sleep(0.2)
         if index % 25 == 0:
-            print(f'  inspected {index}/{len(entries)}')
+            print(f'  inspected {index}/{len(entries)}', flush=True)
+            # Flush partial results to disk as we go. Inspection turned out to
+            # take seconds per URL, not the fraction of a second the pacing
+            # assumed, so a sample of a few hundred can outlive a job timeout.
+            # Writing only at the end would then discard every call already
+            # spent against the day's quota.
+            Path(args.out).write_text(json.dumps(results, indent=1) + '\n', encoding='utf-8')
 
     Path(args.out).write_text(json.dumps(results, indent=1) + '\n', encoding='utf-8')
     print(f'\ninspected {len(results)} URLs -> {args.out}\n')
@@ -570,6 +585,7 @@ def main():
     p = sub.add_parser('inspect', help='URL Inspection over a stratified sample: is Google indexing these pages?')
     p.add_argument('--sample', default='data/index-audit-sample.tsv')
     p.add_argument('--out', default='data/index-audit-result.json')
+    p.add_argument('--resume', action='store_true', help='Skip URLs already present in --out.')
     p.set_defaults(func=cmd_inspect)
 
     p = sub.add_parser('selftest', help='Exercise the aggregation helpers. No credentials needed.')
