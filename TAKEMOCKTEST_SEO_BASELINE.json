@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-10",
- "pageCount": 4955,
+ "pageCount": 4959,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -30059,7 +30059,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "86b01728bd68",
+   "schemaHash": "4c9652286293",
    "ogHash": "9f7ac88c716d",
    "sitemap": true,
    "robots": "index, follow"
@@ -30180,6 +30180,40 @@
    ],
    "schemaHash": "ae8aadb73c79",
    "ogHash": "5076344e59a9",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/jam/test/mathematics-full-mock-2/attempt": {
+   "title": "IIT JAM Mathematics Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the IIT JAM Mathematics Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e028d10f6481",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/jam/test/mathematics-full-mock-2": {
+   "title": "IIT JAM Mathematics Full Mock Test 2 (2026) | TakeMockTest",
+   "description": "Attempt IIT JAM Mathematics Full Mock Test 2: 60 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "IIT JAM Mathematics Full Mock Test 2"
+   ],
+   "h2Count": 9,
+   "h2Hash": "01946e4311e2",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "b8911ed7b592",
+   "ogHash": "9bad8c38a6f5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -43919,7 +43953,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "b51daa1e9cf8",
+   "schemaHash": "9226e21770f4",
    "ogHash": "8f3cb67e5ff8",
    "sitemap": true,
    "robots": "index, follow"
@@ -44043,6 +44077,43 @@
    ],
    "schemaHash": "588608053edd",
    "ogHash": "364ca95b7162",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/nata/test/mathematics-full-mock-2/attempt": {
+   "title": "NATA Mathematics Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the NATA Mathematics Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "5d6144fb9b6d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nata/test/mathematics-full-mock-2": {
+   "title": "NATA Mathematics Full Mock Test 2 (2026): Free Online Test",
+   "description": "Attempt NATA Mathematics Full Mock Test 2: 20 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "NATA Mathematics Full Mock Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "c13d4b632a8b",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "177498ecb6df",
+   "ogHash": "2f9afb124047",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50639,7 +50710,7 @@
   },
   "/in/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "235 free mensuration questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "237 free mensuration questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
@@ -50655,8 +50726,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "311dc88600fb",
-   "ogHash": "f21cb8de2140",
+   "schemaHash": "4adee87d955a",
+   "ogHash": "d56cbd89439d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -50898,7 +50969,7 @@
   },
   "/in/practice/probability": {
    "title": "Probability Questions with Answers 2026 | TakeMockTest",
-   "description": "227 free probability questions with answers and explanations, pooled from 73 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "229 free probability questions with answers and explanations, pooled from 73 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Probability Questions with Answers"
    ],
@@ -50914,8 +50985,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5adeca085f85",
-   "ogHash": "8de22d4fed1d",
+   "schemaHash": "e76f465aa0b7",
+   "ogHash": "515718889241",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -51439,7 +51510,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,084 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,088 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -51455,7 +51526,7 @@
     "Question"
    ],
    "schemaHash": "a01bd7017a64",
-   "ogHash": "3e7910f4ea84",
+   "ogHash": "4f206af1eb6b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -85647,7 +85718,7 @@
   },
   "/ng/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "235 free mensuration questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "237 free mensuration questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
@@ -85663,8 +85734,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f1f247652911",
-   "ogHash": "b87d27fba2ce",
+   "schemaHash": "a5655821123e",
+   "ogHash": "91703003da51",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -85906,7 +85977,7 @@
   },
   "/ng/practice/probability": {
    "title": "Probability Questions with Answers 2026 | TakeMockTest",
-   "description": "227 free probability questions with answers and explanations, pooled from 73 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "229 free probability questions with answers and explanations, pooled from 73 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Probability Questions with Answers"
    ],
@@ -85922,8 +85993,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2e124d592edf",
-   "ogHash": "1e32186d1f9c",
+   "schemaHash": "8b129121eeae",
+   "ogHash": "984c3bf5942d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -86447,7 +86518,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,084 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,088 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -86463,7 +86534,7 @@
     "Question"
    ],
    "schemaHash": "1aad2b909aed",
-   "ogHash": "5b0e2c2372af",
+   "ogHash": "00609ec1e302",
    "sitemap": true,
    "robots": "index, follow"
   },

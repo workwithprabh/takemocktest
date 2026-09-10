@@ -50,6 +50,29 @@ const EVIDENCE = {
   'country home': 'GSC-observed',
 };
 
+// "GSC-observed" is a claim about a URL, not about a class: a full mock test
+// published today has never been served by Google, whatever its class-mates
+// have done. Read the URLs that actually carry impressions out of the last
+// Search Console report and let only those keep the label. Everything else in
+// such a class inherits the class's reasoning, and the column says so rather
+// than borrowing a sibling's data.
+const gscObservedUrls = (() => {
+  const report = path.join(process.cwd(), 'SEARCH-CONSOLE-REPORT.md');
+  if (!fs.existsSync(report)) return null;
+  const rows = [...fs.readFileSync(report, 'utf8')
+    .matchAll(/^\|\s*(https:\/\/takemocktest\.com\/\S*?)\s*\|/gm)].map((m) => m[1]);
+  return rows.length > 0 ? new Set(rows.map((u) => u.replace(/\/$/, ''))) : null;
+})();
+
+function evidenceFor(cls, url) {
+  const classEvidence = EVIDENCE[cls] ?? 'Reasoned, not yet SERP-checked';
+  if (classEvidence !== 'GSC-observed') return classEvidence;
+  if (!gscObservedUrls) return 'Class GSC-observed, no report to check this URL against';
+  return gscObservedUrls.has(url.replace(/\/$/, ''))
+    ? 'GSC-observed'
+    : 'Class GSC-observed, this URL not yet in GSC';
+}
+
 function classify(rel) {
   const parts = rel.split('/').filter(Boolean);
   const [, ...rest] = parts; // drop the country segment
@@ -103,7 +126,7 @@ for (const url of urls) {
     url,
     cls,
     keyword: keywordFor(cls, h1),
-    evidence: EVIDENCE[cls] ?? 'Reasoned, not yet SERP-checked',
+    evidence: evidenceFor(cls, url),
     h1,
     title,
   });
@@ -120,6 +143,11 @@ const byClass = {};
 for (const r of rows) byClass[r.cls] = (byClass[r.cls] ?? 0) + 1;
 console.log(`SEO_KEYWORD_SHEET.csv written: ${rows.length} indexable URLs.`);
 for (const [cls, n] of Object.entries(byClass).sort((a, b) => b[1] - a[1])) {
-  const ev = EVIDENCE[cls] ?? 'Reasoned, not yet SERP-checked';
-  console.log(`  ${String(n).padStart(5)}  ${cls.padEnd(22)} ${ev}`);
+  console.log(`  ${String(n).padStart(5)}  ${cls.padEnd(22)} ${EVIDENCE[cls] ?? 'Reasoned, not yet SERP-checked'}`);
+}
+const byEvidence = {};
+for (const r of rows) byEvidence[r.evidence] = (byEvidence[r.evidence] ?? 0) + 1;
+console.log('  by evidence actually held per URL:');
+for (const [ev, n] of Object.entries(byEvidence).sort((a, b) => b[1] - a[1])) {
+  console.log(`  ${String(n).padStart(5)}  ${ev}`);
 }
