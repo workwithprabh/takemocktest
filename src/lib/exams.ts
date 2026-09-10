@@ -11158,6 +11158,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'business-laws-and-management-full-mock-1', name: 'Business Laws & Management Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark for each correct answer with no negative marking, matching Paper 4\'s published scheme.', checkedOn: '6 September 2026' },
+          { id: 'business-laws-and-management-full-mock-2', name: 'Business Laws & Management Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark for each correct answer with no negative marking, matching Paper 4\'s published scheme.', checkedOn: '10 September 2026' },
         ],
       },
     ],
@@ -11190,6 +11191,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'pharmacy-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: '4 marks for each correct answer and 1 mark deducted for each incorrect answer, matching GPAT\'s published scheme; unattempted questions score zero.', checkedOn: '6 September 2026' },
+          { id: 'pharmacy-full-mock-2', name: 'Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 4, negativeMarking: 1, scoringNote: '4 marks for each correct answer and 1 mark deducted for each incorrect answer, matching GPAT\'s published scheme; unattempted questions score zero.', checkedOn: '10 September 2026' },
         ],
       },
     ],
@@ -13275,6 +13277,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'section-a-full-mock-1', name: 'Section A Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '8 September 2026' },
+          { id: 'section-a-full-mock-2', name: 'Section A Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 90, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
         ],
       },
     ],

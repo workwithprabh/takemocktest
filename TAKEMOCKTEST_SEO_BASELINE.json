@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-10",
- "pageCount": 4959,
+ "pageCount": 4965,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -14904,7 +14904,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "3cabd70a50ce",
+   "schemaHash": "151d65eb445c",
    "ogHash": "6f9bcdcc561c",
    "sitemap": true,
    "robots": "index, follow"
@@ -15025,6 +15025,40 @@
    ],
    "schemaHash": "a6d3426c0cfa",
    "ogHash": "81954077bbc9",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/cseet/test/business-laws-and-management-full-mock-2/attempt": {
+   "title": "CSEET Business Laws &amp; Management Full Mock Test 2",
+   "description": "Attempt the CSEET Business Laws &amp; Management Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "5e7d27b4f9dd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cseet/test/business-laws-and-management-full-mock-2": {
+   "title": "CSEET Business Laws &amp; Management Full Mock Test 2 (2026)",
+   "description": "Attempt CSEET Business Laws &amp; Management Full Mock Test 2: 100 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "CSEET Business Laws & Management Full Mock Test 2"
+   ],
+   "h2Count": 9,
+   "h2Hash": "4095d42743b0",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "eec9bd532dd0",
+   "ogHash": "59cbb1411610",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -16651,7 +16685,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "0f0c50a241b5",
+   "schemaHash": "bd4238fc70e7",
    "ogHash": "65a2ab012744",
    "sitemap": true,
    "robots": "index, follow"
@@ -16772,6 +16806,40 @@
    ],
    "schemaHash": "4ae17aa59b70",
    "ogHash": "83dd4827730d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/dbt-bet/test/section-a-full-mock-2/attempt": {
+   "title": "DBT BET Section A Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the DBT BET Section A Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "260528b12945",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/dbt-bet/test/section-a-full-mock-2": {
+   "title": "DBT BET Section A Full Mock Test 2 (2026): Free Online Test",
+   "description": "Attempt DBT BET Section A Full Mock Test 2: 50 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "DBT BET Section A Full Mock Test 2"
+   ],
+   "h2Count": 9,
+   "h2Hash": "2322883e0344",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "627b028c81b9",
+   "ogHash": "e4fefdd08ebf",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -18959,7 +19027,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "78f6154d8139",
+   "schemaHash": "23cf490307e8",
    "ogHash": "64866f76827d",
    "sitemap": true,
    "robots": "index, follow"
@@ -19080,6 +19148,40 @@
    ],
    "schemaHash": "f4f1eb8177ed",
    "ogHash": "c1382a1e9805",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/gpat/test/pharmacy-full-mock-2/attempt": {
+   "title": "GPAT Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the GPAT Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "4c8d83499afe",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/gpat/test/pharmacy-full-mock-2": {
+   "title": "GPAT Full Mock Test 2 (2026): Free Online Test",
+   "description": "Attempt GPAT Full Mock Test 2: 125 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "GPAT Full Mock Test 2"
+   ],
+   "h2Count": 9,
+   "h2Hash": "b965b9acd8eb",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "157d0fd01efa",
+   "ogHash": "e05ff8bd3942",
    "sitemap": true,
    "robots": "index, follow"
   },
