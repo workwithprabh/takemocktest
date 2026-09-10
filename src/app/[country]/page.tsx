@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { contentLocale } from '@/lib/hreflang';
 import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
@@ -129,7 +130,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             <div className="relative aspect-[2.4/1] overflow-hidden border border-ink-200 bg-ink-100 lg:aspect-[4/3]">
               <Image
                 src="/images/students-taking-online-mock-test.webp"
-                alt="Two Indian students practicing a competitive-exam mock test with a laptop and OMR sheet"
+                alt="Two students practicing a competitive-exam mock test with a laptop and OMR sheet"
                 fill
                 priority
                 sizes="(min-width: 1152px) 490px, (min-width: 1024px) 45vw, 100vw"
@@ -203,7 +204,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                 <Link href={`/${country}/${PRACTICE_SLUG}`} className="hover:underline">Practice by topic</Link>
               </h3>
               <p className="mt-2 text-sm leading-6 text-ink-700">
-                Know which topic costs you marks? Drill it on its own. {practiceQuestions.toLocaleString('en-IN')}{' '}
+                Know which topic costs you marks? Drill it on its own. {practiceQuestions.toLocaleString(contentLocale(country))}{' '}
                 questions across {practiceTopics} quantitative, reasoning and English topics, each pooled from every
                 exam that sets it. An explanation on every question, and no negative marking.
               </p>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { contentLocale } from '@/lib/hreflang';
 import { COUNTRIES, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
 import type { ExamConfig, TestConfig, TestStage } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
@@ -2218,7 +2219,7 @@ export default async function TestInstructionsPage({
             ? `A free ${questionCount}-question ${exam.name} ${stage.name} practice mock with ${test.sectionDuration || test.sectionDurations ? 'sectional timing' : 'one combined timer'} and instant results.`
             : `A free ${questionCount}-question ${exam.name} ${stage.name} practice test with instant results.`,
           url: `${SITE_URL}${pagePath}`,
-          inLanguage: 'en-IN',
+          inLanguage: contentLocale(country),
           isAccessibleForFree: true,
           timeRequired: `PT${test.duration}M`,
           educationalLevel: `${exam.name} ${stage.name}`,

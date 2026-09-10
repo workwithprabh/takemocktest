@@ -39,6 +39,17 @@ export function openGraphLocale(country: string): string {
   return (COUNTRY_LOCALES[country] ?? 'en-IN').replace('-', '_');
 }
 
+/**
+ * The BCP 47 tag for a country, for schema.org inLanguage and for
+ * toLocaleString/toLocaleDateString. Added 10 September 2026 after a scan for
+ * country-specific leftovers found 'en-IN' hardcoded inside routes that render
+ * under [country], which meant Nigerian pages declared themselves Indian and
+ * formatted numbers with Indian digit grouping.
+ */
+export function contentLocale(country: string): string {
+  return COUNTRY_LOCALES[country] ?? 'en-IN';
+}
+
 // Sections whose pages mean the same thing in every country. Matched against
 // the path with its country segment removed.
 const EQUIVALENT_SECTIONS = [

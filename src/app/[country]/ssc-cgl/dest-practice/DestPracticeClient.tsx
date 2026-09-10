@@ -78,7 +78,7 @@ function calculateResult(text: string, startedAt: number): Result {
   };
 }
 
-export default function DestPracticeClient() {
+export default function DestPracticeClient({ country }: { country: string }) {
   const [phase, setPhase] = useState<'intro' | 'active' | 'result'>('intro');
   const [text, setText] = useState('');
   const [startedAt, setStartedAt] = useState(0);
@@ -160,7 +160,7 @@ export default function DestPracticeClient() {
 
   const exit = () => {
     if (window.confirm('Exit this practice? Your typed text and remaining time are saved on this device.')) {
-      window.location.href = '/in/ssc-cgl/mock-test';
+      window.location.href = `/${country}/ssc-cgl/mock-test`;
     }
   };
 

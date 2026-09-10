@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { contentLocale } from '@/lib/hreflang';
 import { COUNTRIES } from '@/lib/exams';
 import {
   PRACTICE_FAMILIES,
@@ -55,7 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const { topics, questions } = totals();
   return pageMetadata({
     title: `Topic-wise Practice Questions ${YEAR}: Free Tests`,
-    description: `Free topic-wise practice for ${topics} quantitative, reasoning and English topics, ${questions.toLocaleString('en-IN')} questions with explanations, drawn from every exam on the site. No negative marking.`,
+    description: `Free topic-wise practice for ${topics} quantitative, reasoning and English topics, ${questions.toLocaleString(contentLocale(country))} questions with explanations, drawn from every exam on the site. No negative marking.`,
     path: `/${country}/${PRACTICE_SLUG}`,
   });
 }
@@ -104,7 +105,7 @@ export default async function PracticeIndexPage({ params }: { params: Promise<{ 
             </div>
             <div className="border-b border-r border-ink-200 p-3">
               <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Questions</dt>
-              <dd className="mt-1 text-lg font-bold text-ink-900">{questions.toLocaleString('en-IN')}</dd>
+              <dd className="mt-1 text-lg font-bold text-ink-900">{questions.toLocaleString(contentLocale(country))}</dd>
             </div>
             <div className="border-b border-r border-ink-200 p-3">
               <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Exams drawn from</dt>

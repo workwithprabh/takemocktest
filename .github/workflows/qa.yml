@@ -1,0 +1,75 @@
+name: Site QA
+
+# Answers a question asked on 10 September 2026: does the QA chain actually
+# run, or only when somebody remembers to type it?
+#
+# Until this file existed, the answer was the second one. The four workflows in
+# this directory report backlinks, report Search Console, submit to IndexNow and
+# recover one exam package. None of them ran `npm run qa:site`, and Vercel
+# deploys with the default `npm run build`, so every audit in the chain was
+# advisory. A bad canonical, a stated count that does not add up, a dead link or
+# an em dash could all reach production untouched, and the drift baseline could
+# be bypassed simply by not looking.
+#
+# That is the same failure the audits themselves were written to prevent: a rule
+# nobody enforces decays. So the chain runs here on every push and pull request
+# that can change the built site, and a failure is visible on the commit rather
+# than discovered in Search Console weeks later.
+#
+# Note on what this does and does not do. Vercel deploys from main
+# independently of this workflow, so a red run here does not by itself hold a
+# deployment back. Making it do so means requiring this check on the branch,
+# which is a repository setting rather than something a file can assert.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/qa.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # qa:gsc runs scripts/gsc-query.py in selftest mode, which needs no
+      # credentials but does need an interpreter.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The full chain, in the order package.json defines it: lint, dashes,
+      # question banks, assets, build, practice, on-page SEO, keyword map,
+      # stated counts, canonicals, internal links, thin content, schema,
+      # hreflang, gsc selftest, and the drift baseline last.
+      - name: Run the site QA chain
+        run: npm run qa:site

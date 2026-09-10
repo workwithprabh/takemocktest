@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
       url: '/images/latest-exam-updates-india.webp',
       width: 1280,
       height: 720,
-      alt: 'Indian student checking an exam notification and noting an important date',
+      alt: 'Student checking an exam notification and noting an important date',
     },
   });
 }
@@ -75,7 +75,7 @@ export default async function ExamUpdatesPage({ params }: { params: Promise<{ co
           <figure className="relative hidden aspect-video overflow-hidden border border-ink-700 bg-ink-800 md:block">
             <Image
               src="/images/latest-exam-updates-india.webp"
-              alt="Indian student checking an exam notification and noting an important date"
+              alt="Student checking an exam notification and noting an important date"
               fill
               priority
               sizes="(min-width: 1152px) 385px, 35vw"

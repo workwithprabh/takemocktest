@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { contentLocale } from '@/lib/hreflang';
 import { COUNTRIES } from '@/lib/exams';
 import { countryPublishes } from '@/lib/exam-countries';
 import Link from 'next/link';
@@ -74,7 +75,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
         <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-ink-200 pt-4 text-xs text-ink-600">
           <span className="font-semibold text-ink-700">{post.authorName}</span>
           <span aria-hidden="true">·</span>
-          <time dateTime={post.publishedAt}>{new Date(post.publishedAt).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+          <time dateTime={post.publishedAt}>{new Date(post.publishedAt).toLocaleDateString(contentLocale(country), { year: 'numeric', month: 'short', day: 'numeric' })}</time>
           <span aria-hidden="true">·</span>
           <span>{post.readTimeMin} min read</span>
         </div>

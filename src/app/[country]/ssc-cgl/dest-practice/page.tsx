@@ -54,7 +54,7 @@ export default async function DestPracticePage({ params }: { params: Promise<{ c
       <a href={SOURCE_URL} target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm font-semibold text-ink-900 underline">
         View the official SSC CGL notice
       </a>
-      <DestPracticeClient />
+      <DestPracticeClient country={country} />
     </div>
   );
 }
