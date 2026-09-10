@@ -83,7 +83,14 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                     <tr><td className="py-2 text-ink-700">Sections</td><td className="py-2 font-medium text-ink-900">{stage.pattern.sections.join(', ')}</td></tr>
                   </tbody>
                 </table>
-                {stage.pattern.sectionBreakdown && (
+                {stage.pattern.sectionBreakdown && (() => {
+                  // Only stages with a genuine sectional lock get a minutes
+                  // column. Where the paper runs on one composite timer there
+                  // is no official per-section limit to publish, and printing a
+                  // derived split under an "official source" link asserts one.
+                  const breakdown = stage.pattern.sectionBreakdown;
+                  const showMinutes = breakdown.some((section) => typeof section.duration === 'number');
+                  return (
                   <div className="mt-4 border border-ink-200">
                     <table className="w-full table-fixed text-left text-xs sm:text-sm">
                       <thead className="border-b border-ink-200 bg-ink-50 text-ink-900">
@@ -91,22 +98,23 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                           <th className="w-1/2 px-2 py-2 font-semibold sm:px-3">Test</th>
                           <th className="px-2 py-2 text-center font-semibold sm:px-3">Qs</th>
                           <th className="px-2 py-2 text-center font-semibold sm:px-3">Marks</th>
-                          <th className="px-2 py-2 text-center font-semibold sm:px-3">Min</th>
+                          {showMinutes && <th className="px-2 py-2 text-center font-semibold sm:px-3">Min</th>}
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-ink-200">
-                        {stage.pattern.sectionBreakdown.map((section) => (
+                        {breakdown.map((section) => (
                           <tr key={section.name}>
                             <td className="break-words px-2 py-2 font-medium text-ink-900 sm:px-3">{section.name}</td>
                             <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.questions}</td>
                             <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.marks}</td>
-                            <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.duration ?? 'n/a'}</td>
+                            {showMinutes && <td className="px-2 py-2 text-center text-ink-600 sm:px-3">{section.duration ?? 'n/a'}</td>}
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
-                )}
+                  );
+                })()}
                 {stage.pattern.timerNote && <p className="mt-3 text-xs leading-5 text-ink-700">Timing: {stage.pattern.timerNote}.</p>}
                 {stage.pattern.note && <p className="mt-2 text-xs leading-5 text-ink-700">{stage.pattern.note}</p>}
                 {stage.pattern.sourceUrl && (

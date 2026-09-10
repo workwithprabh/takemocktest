@@ -63,7 +63,15 @@ export function getPatternInsights(pattern: StagePattern): PatternInsights {
   const { totalQuestions: questions, totalMarks: marks, duration } = pattern;
   const negative = parseNegativeMarking(pattern.negativeMarking);
   const marksPerQuestion = questions && marks ? round(marks / questions) : undefined;
-  const lockedSections = pattern.sectionBreakdown?.filter((section) => section.duration).length ?? 0;
+  // A lock is only asserted when the stage publishes per-section limits AND
+  // its own timing note does not deny one. Both were true at once on 32 stages
+  // in September 2026: the table printed a derived pro-rata split of the
+  // composite window, so this read it as a lock and the page said "all sections
+  // are separately timed" a few lines under "no sectional lock".
+  const deniesLock = /no sectional lock/i.test(pattern.timerNote ?? '');
+  const lockedSections = deniesLock
+    ? 0
+    : pattern.sectionBreakdown?.filter((section) => section.duration).length ?? 0;
 
   return {
     questions,
