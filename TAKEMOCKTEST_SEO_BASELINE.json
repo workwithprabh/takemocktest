@@ -20647,7 +20647,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "f16550a3408a",
+   "schemaHash": "8d60cb6e5413",
    "ogHash": "55f915734d3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -21837,7 +21837,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "c6572f4fafef",
+   "schemaHash": "dc7585cdb54e",
    "ogHash": "4d4e23b8220d",
    "sitemap": true,
    "robots": "index, follow"
@@ -23169,7 +23169,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "969c4ef5d874",
+   "schemaHash": "59d38aae376e",
    "ogHash": "e534e82b2e10",
    "sitemap": true,
    "robots": "index, follow"
@@ -24121,7 +24121,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "14f44fbd8997",
+   "schemaHash": "28025a8ce084",
    "ogHash": "1e643e1a228a",
    "sitemap": true,
    "robots": "index, follow"
@@ -46817,7 +46817,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "dbc9cfcbd9f9",
+   "schemaHash": "dab6b59c25fa",
    "ogHash": "a50765e6c9ad",
    "sitemap": true,
    "robots": "index, follow"
@@ -52827,7 +52827,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "6c287e9ebd3e",
+   "schemaHash": "5c6be28e0963",
    "ogHash": "ede3ae673750",
    "sitemap": true,
    "robots": "index, follow"
@@ -54557,7 +54557,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "4fc85d4ac6a7",
+   "schemaHash": "34071acf82d0",
    "ogHash": "73a886d0331e",
    "sitemap": true,
    "robots": "index, follow"
@@ -55169,7 +55169,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "5f4d45fefb4a",
+   "schemaHash": "45870d0fc679",
    "ogHash": "d7605f655a53",
    "sitemap": true,
    "robots": "index, follow"
@@ -56619,7 +56619,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "6ccce54bd186",
+   "schemaHash": "b65b93c934e3",
    "ogHash": "29e5d00e58f3",
    "sitemap": true,
    "robots": "index, follow"
@@ -58233,7 +58233,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "f22798115247",
+   "schemaHash": "f632d810f2d2",
    "ogHash": "57fe520ec367",
    "sitemap": true,
    "robots": "index, follow"
@@ -61419,7 +61419,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "502caaa065f7",
+   "schemaHash": "43b69aa4b9af",
    "ogHash": "68c0f0d47509",
    "sitemap": true,
    "robots": "index, follow"
@@ -62575,7 +62575,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "a8d3b2a24902",
+   "schemaHash": "8cc223a8ce94",
    "ogHash": "f66ef1693bc8",
    "sitemap": true,
    "robots": "index, follow"
@@ -68026,7 +68026,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "76861e7db109",
+   "schemaHash": "da1b341fd876",
    "ogHash": "d72fe7414082",
    "sitemap": true,
    "robots": "index, follow"
@@ -70418,7 +70418,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "fe66a20f1292",
+   "schemaHash": "8fcca16e484d",
    "ogHash": "93a465596200",
    "sitemap": true,
    "robots": "index, follow"
@@ -83883,10 +83883,10 @@
    "robots": "index, follow"
   },
   "/in": {
-   "title": "Free Mock Tests for Competitive Exams | TakeMockTest",
-   "description": "Practice checked mock tests for SSC, Banking and Railways exams, or browse competitive exams in India by student goal.",
+   "title": "Free Mock Tests for Competitive Exams in India",
+   "description": "Free, syllabus-checked SSC, Banking and Railways mock tests and other competitive exams in India. Instant section-wise results and answer explanations. No signup.",
    "h1": [
-    "Find your next mock test"
+    "Free Online Mock Tests for Competitive Exams in India"
    ],
    "h2Count": 10,
    "h2Hash": "7c66b93ff4a3",
@@ -83898,7 +83898,7 @@
     "WebSite"
    ],
    "schemaHash": "8e05c0295232",
-   "ogHash": "7dfd77eac650",
+   "ogHash": "1122f68e0880",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -87023,10 +87023,10 @@
    "robots": "noindex, follow"
   },
   "/ng": {
-   "title": "Free Mock Tests for Competitive Exams | TakeMockTest",
-   "description": "Practice checked mock tests for SSC, Banking and Railways exams, or browse competitive exams in India by student goal.",
+   "title": "Free Mock Tests for Competitive Exams in Nigeria",
+   "description": "Free, syllabus-checked JAMB UTME mock tests and other competitive exams in Nigeria. Instant section-wise results and answer explanations. No signup.",
    "h1": [
-    "Find your next mock test"
+    "Free Online Mock Tests for Competitive Exams in Nigeria"
    ],
    "h2Count": 9,
    "h2Hash": "71f1c3d91f20",
@@ -87038,7 +87038,7 @@
     "WebSite"
    ],
    "schemaHash": "8e05c0295232",
-   "ogHash": "6972c4bf32e2",
+   "ogHash": "55d0e8054af8",
    "sitemap": true,
    "robots": "index, follow"
   },

@@ -3,6 +3,7 @@ import { COUNTRIES, getExam, getSharedTests } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
+import { getMockTestIntro } from '@/lib/mock-test-intros';
 import { breadcrumbSchema, organizationSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { getPostsMentioningExam } from '@/lib/blog';
@@ -75,6 +76,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
   }));
   const sharedTests = getSharedTests(exam);
   const listedTests = stages.flatMap((stage) => stage.tests);
+  const intro = getMockTestIntro(exam.slug);
   const checkedTestCount = listedTests.filter((test) => test.contentStatus === 'checked').length;
   const fullMockCount = listedTests.filter((test) => test.kind === 'full-length').length;
 
@@ -102,9 +104,18 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
             ]} />
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-action-700">Free practice series</p>
             <h1 className="font-sans text-3xl font-bold tracking-tight text-ink-900 md:text-5xl">{exam.name} Mock Test {YEAR}</h1>
+            {/* An exam with a written intro gets its own numbers and its own
+                strategy note; the rest keep the generic line. See
+                src/lib/mock-test-intros.ts for why the generic line was not
+                good enough to leave on all 165 of these pages. */}
             <p className="mt-4 max-w-xl text-sm leading-6 text-ink-700 md:text-base">
-              Attempt checked {exam.name} full mocks, sectional tests, and quick timed practice. No login is required, and every attempt ends with an instant result.
+              {intro
+                ? intro.lead
+                : `Attempt checked ${exam.name} full mocks, sectional tests, and quick timed practice. No login is required, and every attempt ends with an instant result.`}
             </p>
+            {intro && (
+              <p className="mt-3 max-w-xl text-sm leading-6 text-ink-700 md:text-base">{intro.strategy}</p>
+            )}
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#tests" className="inline-flex min-h-11 items-center bg-ink-900 px-5 text-sm font-semibold text-white">Choose a test ↓</a>
               <Link href={`/${country}/${exam.slug}`} className="inline-flex min-h-11 items-center border border-ink-200 bg-white px-5 text-sm font-semibold text-ink-900 hover:border-ink-900">Exam overview</Link>

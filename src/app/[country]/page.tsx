@@ -4,7 +4,7 @@ import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { getExamCatalog, getFeaturedExamCatalog } from '@/lib/exam-catalog';
-import { countryPublishes, getExamsForCountry } from '@/lib/exam-countries';
+import { countryPublishes, getExamsForCountry, countryName } from '@/lib/exam-countries';
 import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
 import { pageMetadata } from '@/lib/metadata';
@@ -40,9 +40,16 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
+  // Both country homes shipped the same title and the same description, and
+  // the description said "competitive exams in India" while being served at
+  // /ng. Two indexable pages sharing one title is a duplicate Google has to
+  // pick between, and a Nigerian visitor being told the catalogue is Indian is
+  // simply wrong, so both are built from the country now.
+  const name = countryName(country);
+  const lead = country === 'ng' ? 'JAMB UTME' : 'SSC, Banking and Railways';
   return pageMetadata({
-    title: 'Free Mock Tests for Competitive Exams',
-    description: 'Practice checked mock tests for SSC, Banking and Railways exams, or browse competitive exams in India by student goal.',
+    title: `Free Mock Tests for Competitive Exams${name ? ` in ${name}` : ''}`,
+    description: `Free, syllabus-checked ${lead} mock tests${name ? ` and other competitive exams in ${name}` : ''}. Instant section-wise results and answer explanations. No signup.`,
     path: `/${country}`,
   });
 }
@@ -81,11 +88,17 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
       <section aria-labelledby="home-heading" className="border-b border-ink-200 bg-gradient-to-br from-ink-50 via-white to-action-50">
         <div className="mx-auto grid max-w-6xl gap-6 px-5 py-7 md:py-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-12 lg:py-12">
           <div>
+            {/* "Find your next mock test" read well and said nothing a searcher
+                types. This class owns the unqualified head term (seo-keywords.ts,
+                Country home), so the H1 states it plainly and names the country,
+                which is also what separates /in from /ng for a crawler. The
+                promise that used to carry the hero now sits underneath it, where
+                it still does its job without standing in for the subject. */}
             <h1 id="home-heading" className="max-w-xl text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-ink-900 md:text-5xl">
-              Find your next mock test
+              Free Online Mock Tests for Competitive Exams{countryName(country) ? ` in ${countryName(country)}` : ''}
             </h1>
             <p className="mt-3 max-w-lg text-base leading-6 text-ink-600">
-              Choose your exam, practice at your pace, and review your answers.
+              Find your next mock test, practise at your pace, and review every answer. No account, no payment.
             </p>
             <form action={`/${country}/exams`} role="search" aria-label="Find a mock test" className="mt-6">
               <label className="mb-2 block text-sm font-semibold text-ink-900" htmlFor="homepage-exam-search">Search your mock test</label>

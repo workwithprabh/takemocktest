@@ -68,7 +68,17 @@ export function getExamPatternFaqs(exam: ExamConfig): Faq[] {
 // distinct from the hub page's pattern-level questions above so the same
 // exam's pages don't repeat each other.
 export function getMockTestFaqs(exam: ExamConfig): Faq[] {
-  const checked = exam.stages.flatMap((stage) => stage.tests).filter((test) => test.status === 'checked');
+  // The !sharedFrom filter has to match getCheckedTestCount exactly. Without it
+  // this breakdown counted tests the total does not: the FAQ told IBPS PO
+  // visitors "21 syllabus-checked tests: 4 full-length mocks, 25 sectional
+  // tests, and 3 quick practice tests", which sums to 32. Fourteen exams shipped
+  // arithmetic that does not add up, on the exact pages whose pitch is that the
+  // numbers are checked. A shared test is reachable only through "Explore
+  // Similar Tests", not from this exam's own list, so it belongs in neither
+  // figure.
+  const checked = exam.stages
+    .flatMap((stage) => stage.tests)
+    .filter((test) => test.status === 'checked' && !test.sharedFrom);
   if (checked.length === 0) return [];
 
   const counts = {
