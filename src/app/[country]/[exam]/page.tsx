@@ -217,7 +217,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                   className="object-cover"
                 />
                 <figcaption className="absolute bottom-0 left-0 bg-ink-900 px-3 py-2 text-xs font-semibold text-white">
-                  Free practice · no login required
+                  Free practice · syllabus-checked
                 </figcaption>
               </figure>
             )}

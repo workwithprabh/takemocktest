@@ -40,7 +40,7 @@ const FAQS = [
   },
   {
     q: 'Do I need to sign up, and are my scores saved?',
-    a: 'No login is required. Each attempt is scored the moment you submit, with an explanation for every question, and the result is stored in your browser on this device so you can revisit it from the results page. Nothing is uploaded.',
+    a: 'Each attempt is scored the moment you submit, with an explanation for every question, and the result is stored in your browser on this device so you can revisit it from the results page. Nothing is uploaded.',
   },
 ];
 
@@ -102,8 +102,8 @@ export default async function LogicalReasoningHubPage({ params }: { params: Prom
               <dd className="mt-1 text-sm font-bold text-ink-900">None</dd>
             </div>
             <div className="border-b border-r border-ink-200 p-3">
-              <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Login</dt>
-              <dd className="mt-1 text-sm font-bold text-ink-900">Not required</dd>
+              <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Explanations</dt>
+              <dd className="mt-1 text-sm font-bold text-ink-900">Every question</dd>
             </div>
           </dl>
         </div>

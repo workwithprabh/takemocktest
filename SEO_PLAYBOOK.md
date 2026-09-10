@@ -197,9 +197,16 @@ Jobs; a more scattered mix of coaching-institute blogs and forums for the other 
 - **Mobile-first, often on a budget connection.** Most study sessions happen on a phone,
   frequently between classes/work/commute, not at a desk. Page weight and load speed aren't
   abstract metrics for this audience — a slow page is a session they don't finish.
-- **Price-sensitive and suspicious of hidden costs.** Free-to-start, no-signup-required is
-  a real differentiator to this audience, not just a nice-to-have — keep leading with it
-  (already do: "₹0 · No account required").
+- **Price-sensitive and suspicious of hidden costs.** Being free is a real differentiator
+  to this audience, not just a nice-to-have, so say it. Revised 10 September 2026: say
+  *free*, and stop saying *no login required*. The no-signup claim had spread to nine
+  surfaces, including a hero stat tile whose value read "Not required" in a row of
+  counts next to "Checked tests 62", which reads as an odd boast rather than a benefit.
+  It also answers a worry most visitors do not arrive with. "Free" carries the same
+  promise in one word. The claim is kept where it is a statement of fact rather than a
+  pitch: the privacy policy, where it explains why no personal data is collected, and
+  the editorial policy on the About page. The freed stat slot now shows the question
+  total, which is a figure a candidate actually weighs.
 - **Anxious about *accuracy*, specifically.** This audience has been burned before by
   outdated exam patterns, wrong cutoffs, or recycled questions from years-old papers on
   other sites. A visible, dated, sourced "syllabus-checked" claim directly addresses their

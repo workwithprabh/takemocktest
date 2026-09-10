@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { contentLocale } from '@/lib/hreflang';
 import { COUNTRIES, getExam, getSharedTests } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
@@ -79,6 +80,9 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
   const intro = getMockTestIntro(exam.slug);
   const checkedTestCount = listedTests.filter((test) => test.contentStatus === 'checked').length;
   const fullMockCount = listedTests.filter((test) => test.kind === 'full-length').length;
+  const checkedQuestionCount = listedTests
+    .filter((test) => test.contentStatus === 'checked')
+    .reduce((total, test) => total + test.questions, 0);
 
   const jsonLd = [
     breadcrumbSchema([
@@ -111,7 +115,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
             <p className="mt-4 max-w-xl text-sm leading-6 text-ink-700 md:text-base">
               {intro
                 ? intro.lead
-                : `Attempt checked ${exam.name} full mocks, sectional tests, and quick timed practice. No login is required, and every attempt ends with an instant result.`}
+                : `Attempt checked ${exam.name} full mocks, sectional tests, and quick timed practice. Every attempt ends with an instant, section-wise result.`}
             </p>
             {intro && (
               <p className="mt-3 max-w-xl text-sm leading-6 text-ink-700 md:text-base">{intro.strategy}</p>
@@ -129,9 +133,14 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
                 <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Full mocks</dt>
                 <dd className="mt-1 text-lg font-bold text-ink-900">{fullMockCount}</dd>
               </div>
+              {/* This slot used to read "Login: Not required", a non-numeric
+                  value sitting in a row of counts, which read oddly next to
+                  "Checked tests 62". The question total is the figure a
+                  candidate actually weighs when deciding whether a series is
+                  worth their week. */}
               <div className="border-b border-r border-ink-200 p-3">
-                <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Login</dt>
-                <dd className="mt-1 text-sm font-bold text-ink-900">Not required</dd>
+                <dt className="text-[10px] font-semibold uppercase tracking-wide text-ink-500">Questions</dt>
+                <dd className="mt-1 text-lg font-bold text-ink-900">{checkedQuestionCount.toLocaleString(contentLocale(country))}</dd>
               </div>
             </dl>
           </div>
@@ -180,6 +189,26 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
             </Link>
           </section>
         )}
+
+        {/* Google's helpful-content guidance asks three questions of a page:
+            who made it, how, and why. This site answered "why" (free practice)
+            and, through the source and checked date below, part of "how". It
+            answered "who" and the rest of "how" nowhere a reader would find
+            them. This line points at the editorial policy, which states the
+            sourcing rule, the audits, what is deliberately held back, and that
+            the content is AI-drafted and checked against primary sources. It
+            sits beside the pattern block because that is where somebody
+            verifying a claim is already looking. */}
+        <p className="mb-8 border-l-2 border-ink-200 pl-4 text-sm leading-6 text-ink-600">
+          <strong className="font-semibold text-ink-900">How this page is made:</strong>{' '}
+          every pattern figure below is taken from the official source linked with it and
+          carries the date it was last checked. Questions are written in-house to the
+          published syllabus and audited before release.{' '}
+          <Link href={`/${country}/about`} className="text-ink-900 underline underline-offset-2 hover:text-ink-500">
+            Read the editorial policy
+          </Link>
+          .
+        </p>
 
         <h2 className="font-sans font-semibold text-lg mb-4 text-ink-900">{exam.name} exam pattern</h2>
         <div className="mb-14 space-y-4">
