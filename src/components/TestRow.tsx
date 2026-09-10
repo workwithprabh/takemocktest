@@ -10,6 +10,8 @@ interface TestRowProps {
   checkedOn?: string;
   status?: 'new' | 'done';
   score?: string;
+  /** Derived in lib/test-coverage.ts. Shown only when it says something. */
+  coverage?: string;
 }
 
 export default function TestRow({
@@ -22,6 +24,7 @@ export default function TestRow({
   checkedOn,
   status = 'new',
   score,
+  coverage,
 }: TestRowProps) {
   const kindLabel = {
     'full-length': 'Full mock',
@@ -50,6 +53,12 @@ export default function TestRow({
           <span>{minutes} minutes</span>
           <span>{checkedOn ? `Checked ${checkedOn}` : 'Demo scoring'}</span>
         </div>
+        {/* A test named "Full mock" that is 110 of 170 official questions has
+            to say so where the person is deciding whether to start it, not in a
+            paragraph further down the page. */}
+        {coverage && (
+          <div className="mt-1.5 text-xs font-medium text-ink-700">{coverage}</div>
+        )}
       </div>
       {status === 'done' ? (
         <div className="flex items-center justify-between gap-2 sm:justify-end">

@@ -109,7 +109,9 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
   'rbi-grade-b': {
     lead: 'A free RBI Grade B mock test series for the General cadre. The RBI Grade B Phase 1 mock test is 200 questions in 120 minutes across General Awareness, English, Quantitative Aptitude and Reasoning. Every RBI Grade B online test here is free and returns a section-wise result.',
     strategy: 'Phase I is decided by General Awareness more than most candidates expect. It is 80 of the 200 questions, and its window is 25 minutes, which works out at under 19 seconds a question. Reasoning gets 45 minutes for 60 questions, close to three times as long per question. The four windows are locked at 25, 25, 25 and 45 minutes, so nothing can be moved between them. On coverage, this RBI Grade B test series is Phase 1 only. Phase II is Economic and Social Issues, English Writing Skills, and Finance and Management, and it is largely descriptive, so it is not published here.',
-    title: 'RBI Grade B Mock Test 2026: Free Phase 1 & 2 Tests',
+    // Phase II has zero published tests and the intro says so. A title
+    // promising "Phase 1 & 2" contradicted the page's own body copy.
+    title: 'RBI Grade B Mock Test 2026: Free Phase 1 Test Series',
   },
   'rrb-technician': {
     lead: 'A free RRB Technician mock test series covering both recruitment levels. The Technician Grade 1 Signal mock test and the Technician Grade 3 mock test are each 100 questions in 90 minutes. Both deduct one third of a mark for a wrong answer. Every RRB Technician online test is free to attempt.',

@@ -5,6 +5,7 @@ import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
 import { getMockTestIntro } from '@/lib/mock-test-intros';
+import { getTestCoverage } from '@/lib/test-coverage';
 import { breadcrumbSchema, organizationSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { getPostsMentioningExam } from '@/lib/blog';
@@ -73,6 +74,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
         minutes: test.duration,
         contentStatus: test.status,
         checkedOn: test.checkedOn,
+        coverage: getTestCoverage(exam, stage, test, questions)?.label,
       };
     }),
   }));
