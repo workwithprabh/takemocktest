@@ -18,10 +18,11 @@
     "qa:dashes": "node scripts/audit-dashes.mjs",
     "qa:hreflang": "node scripts/audit-hreflang.mjs",
     "qa:gsc": "python3 scripts/gsc-query.py selftest",
+    "qa:practice": "node scripts/check-practice-recommendations.mjs",
     "collision-reference": "node scripts/generate-collision-reference.mjs",
     "seo:baseline": "node scripts/audit-seo-drift.mjs capture",
     "seo:indexnow": "node scripts/submit-indexnow.mjs",
-    "qa:site": "npm run lint && npm run qa:dashes && npm run qa:questions && npm run qa:assets && npm run build && npm run qa:onpage-seo && npm run qa:links && npm run qa:thin-content && npm run qa:schema && npm run qa:hreflang && npm run qa:gsc && npm run qa:drift"
+    "qa:site": "npm run lint && npm run qa:dashes && npm run qa:questions && npm run qa:assets && npm run build && npm run qa:practice && npm run qa:onpage-seo && npm run qa:links && npm run qa:thin-content && npm run qa:schema && npm run qa:hreflang && npm run qa:gsc && npm run qa:drift"
   },
   "dependencies": {
     "next": "^15.0.0",

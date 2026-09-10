@@ -765,6 +765,14 @@ descriptive/interview stage):
    substitute for the browser walkthrough a human/interactive session would normally do.
 6. Update `public/llms.txt`.
 
+## Product improvements agreed on 8 September 2026
+
+1. Results → next practice: implemented locally. Recommend up to two lower-accuracy topics using at least three attempted answers and half the topic attempted. Match published tests in the same exam stage by exact section/topic labels; show answer review when no destination is available. Applies to immediate results and saved attempts. `npm run qa:practice` checks ranking and exported destinations.
+2. Improve discovery: implemented locally. Every exam stage now names a checked starting test and offers a native topic selector built from the topics actually present in its published tests. Mixed-test results are labelled clearly, and the selector combines with the existing test-type filters.
+3. Complete guides for priority exams: requires approved factual guide packages under the operating model; do not generate unverified exam facts.
+4. Daily practice: the existing Logical Reasoning ladder and topic sets already provide short, reviewed practice separate from full simulations. Add a changing daily selection only when the site has a reliable daily publishing or scheduling mechanism; a static "today" promise would go stale.
+5. Trust visibility: already present at the points where it matters — homepage method link and sourced updates, checked dates in every test row, official pattern sources before starting, and per-question sources after submission. Publish usage statistics only when measured.
+
 ## Committing and pushing
 
 - Git identity for commits: `workwithprabh` / `workwithprabh@gmail.com` — set this locally in

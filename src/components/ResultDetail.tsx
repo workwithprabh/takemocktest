@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { AttemptResult, QuestionResult } from '@/lib/attempts';
+import NextPractice from '@/components/NextPractice';
 
 type ReviewFilter = 'all' | 'wrong' | 'unattempted' | 'correct' | 'partial';
 
@@ -161,7 +162,7 @@ function QuestionIssueActions({
   );
 }
 
-export default function ResultDetail({ attempt, actions }: { attempt: AttemptResult; actions?: React.ReactNode }) {
+export default function ResultDetail({ attempt, country, actions }: { attempt: AttemptResult; country: string; actions?: React.ReactNode }) {
   const [reviewFilter, setReviewFilter] = useState<ReviewFilter>('all');
   const percent = attempt.maxScore > 0
     ? Math.max(0, Math.min(100, (attempt.score / attempt.maxScore) * 100))
@@ -277,6 +278,8 @@ export default function ResultDetail({ attempt, actions }: { attempt: AttemptRes
       </div>
 
       {actions && <div className="mb-8 flex flex-wrap gap-3">{actions}</div>}
+
+      <NextPractice country={country} examSlug={attempt.examSlug} testId={attempt.testId} stats={topicStats} />
 
       <h2 className="mb-4 text-xl font-bold text-ink-900">Section-wise performance</h2>
       <div className="mb-10 grid gap-3 sm:grid-cols-2">

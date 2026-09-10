@@ -1,17 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import TestListClient from './TestListClient';
-
-interface TestItem {
-  testId: string;
-  name: string;
-  kind: 'full-length' | 'sectional' | 'practice' | 'quick' | 'topic' | 'difficulty';
-  questions: number;
-  minutes: number;
-  contentStatus: 'checked' | 'demo';
-  checkedOn?: string;
-}
+import TestListClient, { type TestItem } from './TestListClient';
 
 interface StageGroup {
   id: string;
@@ -60,7 +50,7 @@ export default function MockTestTabs({
       </div>
       <div className="px-4">
         {active && active.tests.length > 0 ? (
-          <TestListClient country={country} examSlug={examSlug} tests={active.tests} />
+          <TestListClient key={active.id} country={country} examSlug={examSlug} tests={active.tests} />
         ) : (
           <p className="py-6 text-sm text-ink-500">No reviewed tests are published for this stage yet.</p>
         )}

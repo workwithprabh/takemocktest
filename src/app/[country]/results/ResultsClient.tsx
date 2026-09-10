@@ -4,8 +4,11 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import ResultDetail from '@/components/ResultDetail';
 import { AttemptResult, getAttempts } from '@/lib/attempts';
-import { LR_SLUG } from '@/lib/logical-reasoning';
-import { PRACTICE_SLUG } from '@/lib/practice-topics';
+import { LR_SLUG } from '@/lib/logical-reasoning-sections';
+
+// Keep this client bundle independent of practice-topics.ts, which indexes
+// the complete question corpus at build time.
+const PRACTICE_SLUG = 'practice';
 
 // Where "choose another test" goes for an attempt. Every exam has a
 // /mock-test list; the Logical Reasoning hub is not an exam and files its
@@ -132,6 +135,7 @@ export default function ResultsClient({ country }: { country: string }) {
                   {isOpen && (
                     <div id={`attempt-${a.id}`} className="border-t border-ink-200 p-4 sm:p-6">
                       <ResultDetail
+                        country={country}
                         attempt={a}
                         actions={
                           <>
