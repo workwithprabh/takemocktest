@@ -63,7 +63,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-01-10',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'study timetable for competitive exams',
     image: {
       src: '/images/blog/how-to-build-a-study-timetable.webp',
@@ -103,7 +103,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 6,
     publishedAt: '2026-01-17',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ssc cgl preparation mistakes',
     image: {
       src: '/images/blog/ssc-cgl-preparation-mistakes.webp',
@@ -142,7 +142,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 4,
     publishedAt: '2026-01-24',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'negative marking in competitive exams',
     image: {
       src: '/images/blog/understanding-negative-marking.webp',
@@ -184,7 +184,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-01-31',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'time management in the exam hall',
     image: {
       src: '/images/blog/time-management-during-exam.webp',
@@ -222,7 +222,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Mock Tests',
     readTimeMin: 6,
     publishedAt: '2026-02-07',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'how to analyse mock test performance',
     image: {
       src: '/images/blog/analyze-mock-test-performance.webp',
@@ -261,7 +261,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 8,
     publishedAt: '2026-02-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ibps po vs ssc cgl',
     image: {
       src: '/images/blog/ibps-po-vs-ssc-cgl.webp',
@@ -305,7 +305,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 6,
     publishedAt: '2026-08-06',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'sectional lock vs composite timer',
     image: {
       src: '/images/blog/sectional-lock-vs-composite-timer.webp',
@@ -351,7 +351,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 5,
     publishedAt: '2026-08-06',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'qualifying vs merit sections in bank exams',
     image: {
       src: '/images/blog/qualifying-vs-merit-sections-banking-exams.webp',
@@ -388,7 +388,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 8,
     publishedAt: '2026-08-06',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'which banking exam should i start with',
     image: {
       src: '/images/blog/beginners-guide-banking-exams-india.webp',
@@ -425,7 +425,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-06',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ssc vs banking vs railways',
     image: {
       src: '/images/blog/ssc-vs-banking-vs-railways.webp',
@@ -461,7 +461,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 8,
     publishedAt: '2026-08-06',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'rbi grade b vs nabard grade a',
     image: {
       src: '/images/blog/rbi-nabard-sebi-sidbi-exam-comparison.webp',
@@ -497,7 +497,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Mock Tests',
     readTimeMin: 5,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'how many mock tests before the exam',
     image: {
       src: '/images/blog/how-many-mock-tests-to-take.webp',
@@ -534,7 +534,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 6,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'coaching vs self study for government exams',
     image: {
       src: '/images/blog/coaching-vs-self-study.webp',
@@ -570,7 +570,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'exam day anxiety',
     image: {
       src: '/images/blog/how-to-handle-exam-day-anxiety.webp',
@@ -606,7 +606,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 6,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'how to prepare for government exams while working',
     image: {
       src: '/images/blog/preparing-for-exams-while-working-a-job.webp',
@@ -642,7 +642,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'document verification after written exam',
     image: {
       src: '/images/blog/document-verification-what-to-expect.webp',
@@ -678,7 +678,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'age limit and number of attempts for government exams',
     image: {
       src: '/images/blog/age-limit-and-attempts-explained.webp',
@@ -714,7 +714,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 6,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'drop year for exam preparation',
     image: {
       src: '/images/blog/should-you-take-a-drop-year.webp',
@@ -750,7 +750,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 6,
     publishedAt: '2026-08-12',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'cutoff vs percentile',
     image: {
       src: '/images/blog/understanding-cutoffs-and-percentile.webp',
@@ -787,7 +787,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'how to revise in the last week before an exam',
     image: {
       src: '/images/blog/revising-in-the-final-week-before-your-exam.webp',
@@ -824,7 +824,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'speed vs accuracy in exams',
     image: {
       src: '/images/blog/speed-vs-accuracy-in-timed-tests.webp',
@@ -865,7 +865,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'error log for exam preparation',
     image: {
       src: '/images/blog/how-to-build-an-error-log.webp',
@@ -907,7 +907,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'group study vs self study',
     image: {
       src: '/images/blog/group-study-vs-solo-study.webp',
@@ -943,7 +943,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Mock Tests',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'sectional test vs full mock test',
     image: {
       src: '/images/blog/sectional-practice-or-full-mocks.webp',
@@ -984,7 +984,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'how to prepare general awareness for competitive exams',
     image: {
       src: '/images/blog/preparing-general-awareness-without-drowning-in-current-affairs.webp',
@@ -1021,7 +1021,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 4,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'exam day checklist what to carry',
     image: {
       src: '/images/blog/exam-day-checklist-what-to-carry-v2.webp',
@@ -1063,7 +1063,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'how to build vocabulary for competitive exams',
     image: {
       src: '/images/blog/building-vocabulary-without-rote-memorization.webp',
@@ -1100,7 +1100,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'how to read an exam notification',
     image: {
       src: '/images/blog/how-to-read-an-exam-notification.webp',
@@ -1137,7 +1137,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-14',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'spaced repetition for exam preparation',
     image: {
       src: '/images/blog/spaced-repetition-how-to-actually-remember-what-you-study.webp',
@@ -1174,7 +1174,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-19',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'cat vs mat vs cmat',
     image: {
       src: '/images/blog/cat-vs-mat-vs-cmat-choosing-your-mba-entrance.webp',
@@ -1224,7 +1224,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-19',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ielts vs toefl vs pte',
     image: {
       src: '/images/blog/ielts-vs-toefl-vs-pte-picking-your-english-test.webp',
@@ -1261,7 +1261,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-19',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'nda vs cds vs afcat',
     image: {
       src: '/images/blog/nda-vs-cds-vs-afcat-choosing-your-defence-entry.webp',
@@ -1306,7 +1306,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-19',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'clat vs ailet',
     image: {
       src: '/images/blog/clat-vs-ailet-vs-state-law-cets-first-timers-guide.webp',
@@ -1350,7 +1350,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-19',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ca foundation vs cma foundation',
     image: {
       src: '/images/blog/ca-foundation-vs-cma-foundation-which-to-start-with.webp',
@@ -1392,7 +1392,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-19',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'jee main vs bitsat',
     image: {
       src: '/images/blog/jee-main-vs-bitsat-vs-state-cets-engineering-prep.webp',
@@ -1438,7 +1438,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-20',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'nata vs jee main paper 2',
     image: {
       src: '/images/blog/nata-vs-jee-main-paper-2-choosing-your-barch-entry.webp',
@@ -1481,7 +1481,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-21',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'sat vs act',
     image: {
       src: '/images/blog/sat-vs-act-choosing-your-us-admission-test.webp',
@@ -1525,7 +1525,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-21',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'rrb ntpc vs group d',
     image: {
       src: '/images/blog/rrb-ntpc-vs-group-d-vs-je-vs-alp-choosing-your-railway-exam.webp',
@@ -1568,7 +1568,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-22',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ssc cgl vs chsl vs mts',
     image: {
       src: '/images/blog/ssc-cgl-vs-chsl-vs-mts-choosing-the-right-ssc-exam.webp',
@@ -1610,7 +1610,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-22',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'oet vs ielts',
     image: {
       src: '/images/blog/oet-vs-ielts-choosing-your-healthcare-english-test.webp',
@@ -1653,7 +1653,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-22',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'mht cet vs jee main',
     image: {
       src: '/images/blog/mht-cet-vs-jee-main-maharashtra-engineering-admission.webp',
@@ -1695,7 +1695,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-22',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'lic aao vs niacl ao',
     image: {
       src: '/images/blog/lic-aao-vs-niacl-ao-choosing-your-insurance-sector-exam.webp',
@@ -1738,7 +1738,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Mock Tests',
     readTimeMin: 5,
     publishedAt: '2026-08-24',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'why take more than one full mock test',
     image: {
       src: '/images/blog/why-this-site-gives-you-two-full-mock-tests.webp',
@@ -1775,7 +1775,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-24',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ssc selection post matriculation vs graduation level',
     image: {
       src: '/images/blog/ssc-selection-post-one-cbe-three-qualification-levels.webp',
@@ -1816,7 +1816,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-24',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'rrb technician grade 1 vs grade 3',
     image: {
       src: '/images/blog/rrb-technician-grade-1-signal-vs-grade-3.webp',
@@ -1859,7 +1859,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-24',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ssc stenographer grade c vs grade d',
     image: {
       src: '/images/blog/ssc-stenographer-grade-c-vs-grade-d.webp',
@@ -1900,7 +1900,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-28',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'rrb je cbt 2 civil vs mechanical',
     image: {
       src: '/images/blog/rrb-je-cbt2-civil-vs-mechanical.webp',
@@ -1966,7 +1966,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "category": "Exam Guides",
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
-  "authorName": "TakeMockTest Editorial",
+  "authorName": "TakeMockTest Editorial Team",
   "primaryKeyword": "cg pet vs bcece",
   "image": {
     "src": "/images/blog/cg-pet-vs-bcece-two-state-engineering-routes.webp",
@@ -2079,7 +2079,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "category": "Exam Guides",
   "readTimeMin": 7,
   "publishedAt": "2026-08-26",
-  "authorName": "TakeMockTest Editorial",
+  "authorName": "TakeMockTest Editorial Team",
   "primaryKeyword": "bits hd vs gate",
   "image": {
     "src": "/images/blog/bits-hd-vs-gate-cs-which-to-prepare-for.webp",
@@ -2192,7 +2192,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "category": "Exam Guides",
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
-  "authorName": "TakeMockTest Editorial",
+  "authorName": "TakeMockTest Editorial Team",
   "primaryKeyword": "amu b.tech admission test marking scheme",
   "image": {
     "src": "/images/blog/amu-btech-admission-test-pattern-and-scoring.webp",
@@ -2290,7 +2290,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "category": "Exam Guides",
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
-  "authorName": "TakeMockTest Editorial",
+  "authorName": "TakeMockTest Editorial Team",
   "primaryKeyword": "assam cee marking scheme",
   "image": {
     "src": "/images/blog/assam-cee-2026-exam-pattern-explained.webp",
@@ -2396,7 +2396,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "category": "Exam Guides",
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
-  "authorName": "TakeMockTest Editorial",
+  "authorName": "TakeMockTest Editorial Team",
   "primaryKeyword": "cusat cat how many questions",
   "image": {
     "src": "/images/blog/cusat-cat-2026-what-to-expect.webp",
@@ -2502,7 +2502,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "category": "Exam Guides",
   "readTimeMin": 8,
   "publishedAt": "2026-08-26",
-  "authorName": "TakeMockTest Editorial",
+  "authorName": "TakeMockTest Editorial Team",
   "primaryKeyword": "engineering entrance exams other than jee main",
   "image": {
     "src": "/images/blog/engineering-entrance-exams-beyond-jee-main-2026-roundup.webp",
@@ -2633,7 +2633,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-29',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'rrb paramedical cbt shared sections',
     image: {
       src: '/images/blog/rrb-paramedical-cbt-pattern-what-this-site-can-and-cannot-cover.webp',
@@ -2676,7 +2676,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-29',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'is ssc gd constable exam easy',
     image: {
       src: '/images/blog/ssc-gd-constable-cbe-pattern-speed-over-difficulty.webp',
@@ -2718,7 +2718,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-29',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ssc cpo paper 1 vs paper 2',
     image: {
       src: '/images/blog/ssc-cpo-paper-1-vs-paper-2-same-marks-different-shape.webp',
@@ -2761,7 +2761,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-29',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'ssc je paper 1 vs paper 2',
     image: {
       src: '/images/blog/ssc-je-paper-1-only-a-quarter-of-the-exam.webp',
@@ -2803,7 +2803,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-29',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'rpf constable vs rpf si',
     image: {
       src: '/images/blog/rpf-constable-vs-rpf-si-same-cbt-different-post.webp',
@@ -2847,7 +2847,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Strategy',
     readTimeMin: 8,
     publishedAt: '2026-09-07',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'which exams have a common syllabus',
     body: [
       { type: 'paragraph', text: 'Count the section names across the 157 official exam patterns published on this site and you get 245 distinct ones. Compare every exam against every other, and 1,247 pairs share at least three sections, covering at least half of the smaller exam\'s list. In 1,044 of those pairs the smaller exam\'s entire section list already sits inside the bigger one. That sounds like a shortcut, and sometimes it is. The rest of this explains when it is not.' },
@@ -2893,7 +2893,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Mock Tests',
     readTimeMin: 6,
     publishedAt: '2026-09-07',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'should i practise by topic or by exam',
     body: [
       { type: 'paragraph', text: 'A full mock test is organised the way the exam is: a bit of everything, in the order the paper puts it. That is exactly right when you are rehearsing the exam. It is a poor way to fix one weak topic, because a single paper gives you only a handful of questions on it, spread through the sections, with the rest of the exam in between.' },
@@ -2935,7 +2935,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-09-07',
-    authorName: 'TakeMockTest Editorial',
+    authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'reasoning section names in indian exams',
     body: [
       { type: 'paragraph', text: 'SSC calls it General Intelligence and Reasoning. IBPS calls it Reasoning Ability. CMAT and AILET both call it Logical Reasoning. One exam on this site simply calls it Logical Intelligence. Counted across the 157 official exam patterns published here, 52 exams carry a section that is reasoning and nothing else, and between them they use 23 different names for it.' },
