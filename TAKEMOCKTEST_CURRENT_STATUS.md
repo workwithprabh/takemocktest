@@ -2,6 +2,8 @@
 
 Snapshot date: 2026-09-07. Verified against the catalog-backlog round described below (IIT JAM, GPAT, CSEET Paper 4, NEET PG, FMGE, INI-CET, XAT Part 1, IPMAT Indore, the LSAT scored sections and the GMAT Focus Edition added; NEET SS investigated and skipped), together with the second full mocks built for AP PGECET, CUET PG, ICAR AIEEA PG, AIBE and AIAPGET.
 
+Updated 2026-09-10 for the eight-exam second-mock batch. Five shipped: NATA Mathematics (20 questions), IIT JAM Mathematics (60), DBT BET Section A (50), GPAT (125) and CSEET Paper 4 (100). Three were specified rather than written and are held for the Main Brain handoff, because a clinical answer key needs sourcing and an independent audit that the coding agent cannot supply: NEET PG (180), INI-CET (200) and DNB PDCET Anaesthesiology (120). The specification is in `TIER_C_CLINICAL_HANDOFF.md` and the reasoning is recorded at item 6 of the open items in `BATCH_ROADMAP.md`. Corpus after the batch: 803 bank files, 32,909 questions, 4,965 built pages, 1,775 indexable.
+
 This file is the live project dashboard. It is tracked in Git and updated only from repository evidence by the coding agent — see `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §13. ChatGPT may read it and recommend status changes, but must not hand-edit the repository-derived numbers below. Stable product rules belong in `TAKEMOCKTEST_MASTER_HANDOFF.md`.
 
 ## 1. Repository and production
