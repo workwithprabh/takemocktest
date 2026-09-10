@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-10",
- "pageCount": 4965,
+ "pageCount": 4985,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -8620,7 +8620,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "6fd1110eef65",
+   "schemaHash": "8e65e57c65ee",
    "ogHash": "d25840f8a406",
    "sitemap": true,
    "robots": "index, follow"
@@ -8710,6 +8710,142 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/bitsat/test/mathematics-chemistry-sectional-1/attempt": {
+   "title": "BITSAT Chemistry Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the BITSAT Chemistry Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "5dadead58a41",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-chemistry-sectional-1": {
+   "title": "BITSAT Chemistry Mock Test 1: Free Practice | TakeMockTest",
+   "description": "Free BITSAT Chemistry Mock Test 1: 30 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Chemistry Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "0694379ff065",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "e5a433cb2169",
+   "ogHash": "8df4122a2b46",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-chemistry-sectional-2/attempt": {
+   "title": "BITSAT Chemistry Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the BITSAT Chemistry Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "fe6604e04d1f",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-chemistry-sectional-2": {
+   "title": "BITSAT Chemistry Mock Test 2: Free Practice | TakeMockTest",
+   "description": "Free BITSAT Chemistry Mock Test 2: 30 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Chemistry Mock Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "0694379ff065",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "bb2739daf897",
+   "ogHash": "db9fec4432fe",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-english-proficiency-sectional-1/attempt": {
+   "title": "BITSAT English Proficiency Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the BITSAT English Proficiency Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "0bfeb25fb737",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-english-proficiency-sectional-1": {
+   "title": "BITSAT English Proficiency Mock Test 1: Free Practice",
+   "description": "Free BITSAT English Proficiency Mock Test 1: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT English Proficiency Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "9252a27891fe",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "3b6c7d787865",
+   "ogHash": "e1ec195779dd",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-english-proficiency-sectional-2/attempt": {
+   "title": "BITSAT English Proficiency Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the BITSAT English Proficiency Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9d3eaa98240c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-english-proficiency-sectional-2": {
+   "title": "BITSAT English Proficiency Mock Test 2: Free Practice",
+   "description": "Free BITSAT English Proficiency Mock Test 2: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT English Proficiency Mock Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "9252a27891fe",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "ac4fdf7b8d38",
+   "ogHash": "050a8dde40a0",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/bitsat/test/mathematics-full-mock-1/attempt": {
    "title": "BITSAT Mathematics Variant Full Mock Test 1 | TakeMockTest",
    "description": "Attempt the BITSAT Mathematics Variant Full Mock Test 1 and review your result on this device.",
@@ -8781,6 +8917,210 @@
    ],
    "schemaHash": "dd3923b8c1f9",
    "ogHash": "e397844220fb",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-logical-reasoning-sectional-1/attempt": {
+   "title": "BITSAT Logical Reasoning Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the BITSAT Logical Reasoning Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a27e2a1368a1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-logical-reasoning-sectional-1": {
+   "title": "BITSAT Logical Reasoning Mock Test 1: Free Practice",
+   "description": "Free BITSAT Logical Reasoning Mock Test 1: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Logical Reasoning Mock Test 1"
+   ],
+   "h2Count": 11,
+   "h2Hash": "4618d4721444",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "307d09b6c0a3",
+   "ogHash": "96a375a975a4",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-logical-reasoning-sectional-2/attempt": {
+   "title": "BITSAT Logical Reasoning Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the BITSAT Logical Reasoning Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "7e8e045b2c3b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-logical-reasoning-sectional-2": {
+   "title": "BITSAT Logical Reasoning Mock Test 2: Free Practice",
+   "description": "Free BITSAT Logical Reasoning Mock Test 2: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Logical Reasoning Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "4618d4721444",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "dc2fac8608cd",
+   "ogHash": "5ae6dfc2b4b0",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-mathematics-sectional-1/attempt": {
+   "title": "BITSAT Mathematics Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the BITSAT Mathematics Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "399ac4876ea1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-mathematics-sectional-1": {
+   "title": "BITSAT Mathematics Mock Test 1: Free Practice | TakeMockTest",
+   "description": "Free BITSAT Mathematics Mock Test 1: 40 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Mathematics Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "a8e56f077c99",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "477f799f2c14",
+   "ogHash": "5d5e32091b71",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-mathematics-sectional-2/attempt": {
+   "title": "BITSAT Mathematics Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the BITSAT Mathematics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "fe8679f9d791",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-mathematics-sectional-2": {
+   "title": "BITSAT Mathematics Mock Test 2: Free Practice | TakeMockTest",
+   "description": "Free BITSAT Mathematics Mock Test 2: 40 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Mathematics Mock Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "a8e56f077c99",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "6a497c544b75",
+   "ogHash": "d0a4f362d7e3",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-physics-sectional-1/attempt": {
+   "title": "BITSAT Physics Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the BITSAT Physics Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d9a90e8370f8",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-physics-sectional-1": {
+   "title": "BITSAT Physics Mock Test 1: Free Practice | TakeMockTest",
+   "description": "Free BITSAT Physics Mock Test 1: 30 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Physics Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "50ec81fd858c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "86d5f76d20e6",
+   "ogHash": "a79e63201adb",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/bitsat/test/mathematics-physics-sectional-2/attempt": {
+   "title": "BITSAT Physics Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the BITSAT Physics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "492546d1b98d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/bitsat/test/mathematics-physics-sectional-2": {
+   "title": "BITSAT Physics Mock Test 2: Free Practice | TakeMockTest",
+   "description": "Free BITSAT Physics Mock Test 2: 30 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "BITSAT Physics Mock Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "50ec81fd858c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "b50372ad7e88",
+   "ogHash": "0ecf0395b78c",
    "sitemap": true,
    "robots": "index, follow"
   },
