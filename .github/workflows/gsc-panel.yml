@@ -1,0 +1,77 @@
+name: Search Console daily panel
+
+# Captures per-URL clicks, impressions and average position, one JSON file per
+# date, and commits them.
+#
+# Why this exists alongside the weekly report: the report is a top-50 prose
+# snapshot, which cannot support a treatment-versus-holdout comparison on the
+# sectional surface. At this site's traffic level the signal that matters is a
+# page moving from zero impressions to four, and such a page never enters a
+# top-50 list. Answering "did Google start showing these pages more often" needs
+# every URL, every day, kept over time.
+#
+# It runs here rather than from the coding-agent sandbox for the same reason the
+# weekly report does: the service-account key is deliberately not in git, and a
+# GitHub Actions secret is only readable by a workflow run, never through the
+# API. So this job is the only place the panel can be captured.
+
+on:
+  schedule:
+    # 07:00 UTC daily. Search Console finalises a day two to three days later,
+    # so each run re-fetches a trailing window and rewrites the days that moved.
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Trailing window in days (use a large value once to backfill history)'
+        required: false
+        default: '5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gsc-panel
+  cancel-in-progress: false
+
+jobs:
+  panel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-auth requests
+
+      - name: Capture panel
+        env:
+          GSC_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_KEY_JSON }}
+        run: |
+          if [ -z "$GSC_SERVICE_ACCOUNT_KEY_JSON" ]; then
+            echo "GSC_SERVICE_ACCOUNT_KEY_JSON secret is not set — see scripts/gsc-query.py for setup." >&2
+            exit 1
+          fi
+          python3 scripts/gsc-query.py panel --days "${{ github.event.inputs.days || '5' }}" --out data/gsc
+
+      - name: Commit panel if changed
+        run: |
+          if ! git diff --quiet -- data/gsc || [ -n "$(git status --porcelain data/gsc)" ]; then
+            git config user.name 'TakeMockTest Coding Agent'
+            git config user.email 'actions@users.noreply.github.com'
+            git add data/gsc
+            git commit -m 'Update Search Console panel'
+            # The weekly report job also pushes to main; rebase rather than fail
+            # the capture on a race.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push origin HEAD:main && exit 0
+              sleep $((attempt * 5))
+            done
+            echo "Could not push panel after 3 attempts." >&2
+            exit 1
+          else
+            echo "No change in panel — skipping commit."
+          fi

@@ -28,6 +28,7 @@ import json
 import os
 import sys
 from datetime import date, timedelta
+from pathlib import Path
 
 SITE = 'sc-domain:takemocktest.com'
 SCOPES = ['https://www.googleapis.com/auth/webmasters.readonly']
@@ -68,6 +69,66 @@ def date_range(days):
     end = date.today()
     start = end - timedelta(days=days)
     return start.isoformat(), end.isoformat()
+
+
+# Search Console caps a single response at 25,000 rows and pages the rest behind
+# startRow. `query` above asks for one page and is right for the top-N reports;
+# a per-URL panel has to take everything or it silently truncates the long tail,
+# which is exactly the part an experiment on 783 low-traffic pages lives in.
+def query_all(session, start, end, dimensions, filters=None, page_size=25000):
+    rows = []
+    start_row = 0
+    while True:
+        body = {
+            'startDate': start, 'endDate': end, 'dimensions': dimensions,
+            'rowLimit': page_size, 'startRow': start_row,
+        }
+        if filters:
+            body['dimensionFilterGroups'] = [{'filters': filters}]
+        resp = session.post(f'{API_BASE}/searchAnalytics/query', json=body)
+        resp.raise_for_status()
+        batch = resp.json().get('rows', [])
+        rows.extend(batch)
+        if len(batch) < page_size:
+            return rows
+        start_row += page_size
+
+
+def panel_records(rows):
+    """Group date+page API rows into one record per date.
+
+    The panel is stored a file per date rather than one growing file because
+    Search Console revises recent days for two to three days after the fact.
+    Re-fetching a trailing window then rewrites only the dates that moved, and
+    the correction shows up as an ordinary diff instead of being buried in an
+    append-only log.
+    """
+    by_date = {}
+    for row in rows:
+        day, url = row['keys'][0], row['keys'][1]
+        page = path_of(url)
+        bucket = by_date.setdefault(day, {})
+        entry = bucket.setdefault(page, {'page': page, 'clicks': 0, 'impressions': 0, 'position_weight': 0.0})
+        entry['clicks'] += row['clicks']
+        entry['impressions'] += row['impressions']
+        # Weighted, for the same reason summarise() weights: the apex and www
+        # hosts arrive as separate rows for one page and a plain mean of the two
+        # positions would flatter whichever host had almost no impressions.
+        entry['position_weight'] += row['position'] * row['impressions']
+    out = {}
+    for day, pages in by_date.items():
+        records = []
+        for entry in pages.values():
+            impressions = entry['impressions']
+            records.append({
+                'page': entry['page'],
+                'clicks': entry['clicks'],
+                'impressions': impressions,
+                'position': round(entry['position_weight'] / impressions, 2) if impressions else 0.0,
+            })
+        records.sort(key=lambda r: (-r['impressions'], r['page']))
+        out[day] = records
+    return out
 
 
 # --- pure aggregation helpers -------------------------------------------------
@@ -176,12 +237,32 @@ def cmd_selftest(args):
     # The www row must land with its apex twin, not in a bucket of its own.
     check('bucket merges www', buckets['/in/practice'][1]['impressions'], 4)
 
+    # Panel grouping: two hosts, two dates, one page. The apex and www rows for
+    # 2026-09-08 must merge into a single record with an impression-weighted
+    # position, and the two dates must not bleed into each other.
+    prow = lambda day, page, clicks, impressions, position: {
+        'keys': [day, page], 'clicks': clicks, 'impressions': impressions, 'ctr': 0.0, 'position': position,
+    }
+    panel = panel_records([
+        prow('2026-09-08', 'https://takemocktest.com/in/ssc-cgl/test/a', 0, 1, 2.0),
+        prow('2026-09-08', 'https://www.takemocktest.com/in/ssc-cgl/test/a', 0, 100, 60.0),
+        prow('2026-09-08', 'https://takemocktest.com/in/ssc-cgl/test/b', 1, 4, 8.0),
+        prow('2026-09-09', 'https://takemocktest.com/in/ssc-cgl/test/a', 0, 7, 30.0),
+    ])
+    check('panel dates', sorted(panel), ['2026-09-08', '2026-09-09'])
+    check('panel merges hosts', len(panel['2026-09-08']), 2)
+    check('panel impressions', panel['2026-09-08'][0]['impressions'], 101)
+    check('panel weighted position', panel['2026-09-08'][0]['position'], 59.43)
+    check('panel orders by impressions', panel['2026-09-08'][1]['page'], '/in/ssc-cgl/test/b')
+    check('panel keeps dates apart', panel['2026-09-09'][0]['impressions'], 7)
+    check('panel empty', panel_records([]), {})
+
     if failures:
         print(f'gsc-query selftest FAILED ({len(failures)}):', file=sys.stderr)
         for failure in failures:
             print(f'  - {failure}', file=sys.stderr)
         sys.exit(1)
-    print('gsc-query selftest passed: path normalisation, impression-weighted position, and prefix bucketing.')
+    print('gsc-query selftest passed: path normalisation, impression-weighted position, prefix bucketing, and panel grouping.')
 
 
 def cmd_totals(session, args):
@@ -227,6 +308,32 @@ def cmd_by_page(session, args):
     print(f'{len(rows)} queries landing on {page}, last {args.days} days:')
     for r in rows[: args.limit]:
         print(f"  clicks={r['clicks']:<4} impressions={r['impressions']:<5} pos={r['position']:>5.1f}  \"{r['keys'][0]}\"")
+
+
+def cmd_panel(session, args):
+    """Write one file per date of per-URL clicks, impressions and position.
+
+    This is the measurement substrate for a treatment-versus-holdout test on the
+    sectional surface. The weekly report is a top-50 prose snapshot and cannot
+    support one: a page that moves from zero impressions to four never appears
+    in a top-50 list, and that movement is the entire signal at this traffic
+    level.
+
+    Default window is 5 days so each run also re-states the days Search Console
+    was still revising.
+    """
+    start, end = date_range(args.days)
+    rows = query_all(session, start, end, ['date', 'page'])
+    by_date = panel_records(rows)
+    out_dir = Path(args.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for day, records in sorted(by_date.items()):
+        target = out_dir / f'{day}.json'
+        target.write_text(json.dumps(records, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+        with_impressions = sum(1 for r in records if r['impressions'] > 0)
+        print(f'{day}: {len(records)} pages, {with_impressions} with impressions -> {target}')
+    if not by_date:
+        print(f'No rows for {start}..{end} — nothing written.')
 
 
 def cmd_countries(session, args):
@@ -376,6 +483,11 @@ def main():
     p.add_argument('--days', type=int, default=90)
     p.add_argument('--limit', type=int, default=50)
     p.set_defaults(func=cmd_by_page)
+
+    p = sub.add_parser('panel', help='Per-URL daily panel, one JSON file per date.')
+    p.add_argument('--days', type=int, default=5, help='Trailing window; covers Search Console revising recent days.')
+    p.add_argument('--out', default='data/gsc', help='Directory to write <date>.json into.')
+    p.set_defaults(func=cmd_panel)
 
     p = sub.add_parser('selftest', help='Exercise the aggregation helpers. No credentials needed.')
     p.set_defaults(func=cmd_selftest, needs_session=False)
