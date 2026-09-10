@@ -2565,6 +2565,20 @@ const BITSAT_2026_MATHEMATICS_BANKS_2 = [
 const BITSAT_TESTS: Record<string, Question[]> = {
   'bitsat/mathematics-full-mock-1': BITSAT_2026_MATHEMATICS_BANKS.flat(),
   'bitsat/mathematics-full-mock-2': BITSAT_2026_MATHEMATICS_BANKS_2.flat(),
+  // The BITSAT sectionals need no filter: each section of the paper is already
+  // its own checked bank, and the full mock is those banks flattened. A
+  // sectional is therefore the same records under a narrower heading, not a
+  // second copy of them.
+  'bitsat/mathematics-physics-sectional-1': BITSAT_2026_MATHEMATICS_PHYSICS_1,
+  'bitsat/mathematics-chemistry-sectional-1': BITSAT_2026_MATHEMATICS_CHEMISTRY_1,
+  'bitsat/mathematics-english-proficiency-sectional-1': BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_1,
+  'bitsat/mathematics-logical-reasoning-sectional-1': BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_1,
+  'bitsat/mathematics-mathematics-sectional-1': BITSAT_2026_MATHEMATICS_MATHEMATICS_1,
+  'bitsat/mathematics-physics-sectional-2': BITSAT_2026_MATHEMATICS_PHYSICS_2,
+  'bitsat/mathematics-chemistry-sectional-2': BITSAT_2026_MATHEMATICS_CHEMISTRY_2,
+  'bitsat/mathematics-english-proficiency-sectional-2': BITSAT_2026_MATHEMATICS_ENGLISH_PROFICIENCY_2,
+  'bitsat/mathematics-logical-reasoning-sectional-2': BITSAT_2026_MATHEMATICS_LOGICAL_REASONING_2,
+  'bitsat/mathematics-mathematics-sectional-2': BITSAT_2026_MATHEMATICS_MATHEMATICS_2,
 };
 
 const JEE_MAIN_BANKS = [JEE_MAIN_PAPER_1_MATHEMATICS_1, JEE_MAIN_PAPER_1_PHYSICS_1, JEE_MAIN_PAPER_1_CHEMISTRY_1];
@@ -3746,6 +3760,16 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 100
     : testId.includes('bitsat/mathematics-full-mock')
     ? 130
+    : testId.includes('bitsat/mathematics-physics-sectional')
+    ? 30
+    : testId.includes('bitsat/mathematics-chemistry-sectional')
+    ? 30
+    : testId.includes('bitsat/mathematics-english-proficiency-sectional')
+    ? 10
+    : testId.includes('bitsat/mathematics-logical-reasoning-sectional')
+    ? 20
+    : testId.includes('bitsat/mathematics-mathematics-sectional')
+    ? 40
     : testId.includes('jee-main/paper-1-full-mock')
     ? 75
     : testId.includes('jee-advanced/paper-1-full-mock')
