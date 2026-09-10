@@ -8378,6 +8378,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'mathematics-full-mock-1', name: 'Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 30, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'No negative marking, matching NATA\'s official scheme.', checkedOn: '20 August 2026' },
+          { id: 'mathematics-full-mock-2', name: 'Mathematics Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 30, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'No negative marking, matching NATA\'s official scheme.', checkedOn: '10 September 2026' },
         ],
       },
     ],
@@ -11221,6 +11222,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'mathematics-full-mock-1', name: 'Mathematics Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Mixed question-level scoring: Section A MCQs earn 1 or 2 marks with a 1/3 or 2/3 mark deduction for a wrong answer; Section B MSQs earn full credit only for the exact correct set, with no partial credit and no negative marking; Section C NAT questions earn full credit for the exact numeric value, with no negative marking. One unrestricted 180-minute timer with free navigation across all three sections. This platform does not reproduce the official on-screen virtual scientific calculator.', checkedOn: '4 September 2026' },
+          { id: 'mathematics-full-mock-2', name: 'Mathematics Full Mock Test 2', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'Mixed question-level scoring: Section A MCQs earn 1 or 2 marks with a 1/3 or 2/3 mark deduction for a wrong answer; Section B MSQs earn full credit only for the exact correct set, with no partial credit and no negative marking; Section C NAT questions earn full credit for the exact numeric value, with no negative marking. One unrestricted 180-minute timer with free navigation across all three sections. This platform does not reproduce the official on-screen virtual scientific calculator.', checkedOn: '10 September 2026' },
         ],
       },
     ],

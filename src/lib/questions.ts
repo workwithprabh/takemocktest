@@ -428,6 +428,7 @@ import { IIIT_HYDERABAD_UGEE_2026_REAP_SECTIONAL_1 } from './question-banks/iiit
 import { JEE_MAIN_PAPER_2_2A_OBJECTIVE_PRACTICE_1 } from './question-banks/jee-main-paper-2-2a-objective-practice-1';
 import { JEE_MAIN_PAPER_2_2B_FULL_MOCK_1 } from './question-banks/jee-main-paper-2-2b-full-mock-1';
 import { NATA_MATHEMATICS_1 } from './question-banks/nata-mathematics-1';
+import { NATA_MATHEMATICS_2 } from './question-banks/nata-mathematics-2';
 import { MHT_CET_PCM_FULL_MOCK_1 } from './question-banks/mht-cet-pcm-full-mock-1';
 import { MHT_CET_PCM_PHYSICS_CHEMISTRY_GROUP_1 } from './question-banks/mht-cet-pcm-physics-chemistry-group-1';
 import { MHT_CET_PCM_MATHEMATICS_SECTIONAL_1 } from './question-banks/mht-cet-pcm-mathematics-sectional-1';
@@ -681,6 +682,7 @@ import { NEET_PG_2026_MEDICAL_FULL_MOCK_1 } from './question-banks/neet-pg-2026-
 import { CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1 } from './question-banks/cseet-2026-business-laws-and-management-full-mock-1';
 import { GPAT_2026_PHARMACY_FULL_MOCK_1 } from './question-banks/gpat-2026-pharmacy-full-mock-1';
 import { JAM_2026_MATHEMATICS_FULL_MOCK_1 } from './question-banks/jam-2026-mathematics-full-mock-1';
+import { JAM_2026_MATHEMATICS_FULL_MOCK_2 } from './question-banks/jam-2026-mathematics-full-mock-2';
 import { GATE_2026_CS_FULL_MOCK_1 } from './question-banks/gate-2026-cs-full-mock-1';
 import { GATE_2026_CS_FULL_MOCK_2 } from './question-banks/gate-2026-cs-full-mock-2';
 import { GUJCET_2026_ENGINEERING_FULL_MOCK_1 } from './question-banks/gujcet-2026-engineering-full-mock-1';
@@ -2629,6 +2631,7 @@ const JEE_MAIN_PAPER_2_TESTS: Record<string, Question[]> = {
 };
 const NATA_TESTS: Record<string, Question[]> = {
   'nata/mathematics-full-mock-1': NATA_MATHEMATICS_1,
+  'nata/mathematics-full-mock-2': NATA_MATHEMATICS_2,
 };
 const MHT_CET_TESTS: Record<string, Question[]> = {
   'mht-cet/pcm-full-mock-1': MHT_CET_PCM_FULL_MOCK_1,
@@ -3223,6 +3226,7 @@ const GPAT_TESTS: Record<string, Question[]> = {
 };
 const JAM_TESTS: Record<string, Question[]> = {
   'jam/mathematics-full-mock-1': JAM_2026_MATHEMATICS_FULL_MOCK_1,
+  'jam/mathematics-full-mock-2': JAM_2026_MATHEMATICS_FULL_MOCK_2,
 };
 const GATE_TESTS: Record<string, Question[]> = {
   'gate/cs-full-mock-1': GATE_2026_CS_FULL_MOCK_1,
@@ -4188,6 +4192,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('ap-ecet/cse-diploma-full-mock')
     ? 200
+    : testId === 'nata/mathematics-full-mock-2'
+    ? 20
     : testId === 'xat/part-1-verbal-and-logical-ability-sectional-1'
     ? 26
     : testId === 'xat/part-1-decision-making-sectional-1'
@@ -4230,7 +4236,7 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 100
     : testId === 'gpat/pharmacy-full-mock-1'
     ? 125
-    : testId === 'jam/mathematics-full-mock-1'
+    : testId.startsWith('jam/mathematics-full-mock-')
     ? 60
     : testId.includes('ap-pgecet/csit-full-mock')
     ? 120
