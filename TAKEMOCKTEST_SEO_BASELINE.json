@@ -80707,21 +80707,21 @@
    "robots": "noindex, follow"
   },
   "/in/upsc-cse/syllabus": {
-   "title": "UPSC CSE Syllabus 2026: Section-wise Topics | TakeMockTest",
-   "description": "UPSC CSE syllabus sections being checked against current official documents before publication.",
+   "title": "UPSC CSE Syllabus 2026: GS Paper I &amp; CSAT Topics",
+   "description": "UPSC CSE Prelims syllabus for GS Paper I and qualifying CSAT, covering history, geography, polity, economy, environment, science, reasoning and numeracy.",
    "h1": [
-    "UPSC CSE Syllabus"
+    "UPSC CSE Prelims Syllabus 2026"
    ],
-   "h2Count": 4,
-   "h2Hash": "17f4160d2654",
+   "h2Count": 21,
+   "h2Hash": "0b5116f23a61",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
    ],
    "schemaHash": "b7c344afbb45",
-   "ogHash": "4a49cc285813",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "ogHash": "f6e0fa940db7",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/upsc-cse/test/paper-1-current-affairs-sectional-1/attempt": {
    "title": "UPSC CSE Current Affairs Sectional Test 1 | TakeMockTest",
