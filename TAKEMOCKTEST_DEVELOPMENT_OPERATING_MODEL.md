@@ -83,6 +83,24 @@ Run relevant checks such as:
 
 The repository question audit still checks valid schema and IDs, duplicate IDs and question text against the repository, option counts, answer indexes, configured question counts, marks, sections, and test configuration. These are integration checks, not a second academic review.
 
+A green build is not a correct site. That distinction earned its own rule on
+10 September 2026, after a batch that passed every check in this list was
+reviewed anyway and turned out to contain: fourteen pages stating a test total
+that did not match the breakdown printed beside it, five indexable Nigerian
+pages whose canonical pointed at Indian URLs that were never built, a keyword map
+that named an enforcing script which did not exist, a blog that no thin-content
+audit covered, and a claim that one exam's negative marking was gentler than
+another's when the expected-value arithmetic said the opposite. Every one of
+those shipped through a passing build, because a build proves the code runs, not
+that the page is true.
+
+So: **treat "the checks pass" as the start of review, not the end of it.** Each
+batch gets challenged on its own claims before it closes. Ask what the page now
+asserts, whether each assertion is checkable, and what would have to be true for
+it to be wrong. When a defect is found this way, the fix is two parts, not one:
+correct the instance, then add the gate that would have caught it, because
+everything on this list exists because something got through once.
+
 ## 6. Browser smoke test
 
 After importing an approved exam, verify:
