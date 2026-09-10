@@ -6,6 +6,7 @@ import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
 import { getMockTestIntro } from '@/lib/mock-test-intros';
 import { getTestCoverage } from '@/lib/test-coverage';
+import { getRelatedExams } from '@/lib/exam-clusters';
 import { breadcrumbSchema, organizationSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import { pageMetadata } from '@/lib/metadata';
 import { getPostsMentioningExam } from '@/lib/blog';
@@ -37,7 +38,8 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   return pageMetadata({
     title: getMockTestIntro(examSlug)?.title
       ?? `${exam.shortName ?? exam.name} Mock Test ${YEAR}, Practice Free Test Series`,
-    description: `Attempt free ${exam.name} practice tests with instant results and clearly labelled source-review status.`,
+    description: getMockTestIntro(examSlug)?.description
+      ?? `Attempt free ${exam.name} practice tests with instant results and clearly labelled source-review status.`,
     path: `/${country}/${exam.slug}/mock-test`,
     noIndex: !hasCheckedTests,
     image: {
@@ -81,6 +83,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
   const sharedTests = getSharedTests(exam);
   const listedTests = stages.flatMap((stage) => stage.tests);
   const intro = getMockTestIntro(exam.slug);
+  const relatedExams = getRelatedExams(exam.slug, country);
   const checkedTestCount = listedTests.filter((test) => test.contentStatus === 'checked').length;
   const fullMockCount = listedTests.filter((test) => test.kind === 'full-length').length;
   const checkedQuestionCount = listedTests
@@ -213,6 +216,25 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
           </Link>
           .
         </p>
+
+        {relatedExams.length > 0 && (
+          <section className="mb-14 border border-ink-200 bg-white p-5" aria-labelledby="related-mock-tests">
+            <h2 id="related-mock-tests" className="mb-1 font-sans font-semibold text-lg text-ink-900">Related mock tests</h2>
+            <p className="mb-4 text-sm text-ink-600">Exams candidates usually weigh against {exam.shortName ?? exam.name}.</p>
+            <ul className="flex flex-wrap gap-x-5 gap-y-2">
+              {relatedExams.map((related) => (
+                <li key={related.slug}>
+                  <Link
+                    href={`/${country}/${related.slug}/mock-test`}
+                    className="text-sm font-semibold text-ink-900 underline underline-offset-4 hover:text-ink-500"
+                  >
+                    {related.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <h2 className="font-sans font-semibold text-lg mb-4 text-ink-900">{exam.name} exam pattern</h2>
         <div className="mb-14 space-y-4">

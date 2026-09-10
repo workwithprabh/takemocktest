@@ -20633,12 +20633,12 @@
   },
   "/in/ibps-clerk/mock-test": {
    "title": "IBPS Clerk Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free IBPS Clerk practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free IBPS Clerk mock tests for Prelims and Mains. Both stages are sectionally timed here, exactly as the real papers lock each section.",
    "h1": [
     "IBPS Clerk Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "f7d31d086c6b",
+   "h2Count": 10,
+   "h2Hash": "52e68a105b4d",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -20648,7 +20648,7 @@
     "Question"
    ],
    "schemaHash": "8d60cb6e5413",
-   "ogHash": "55f915734d3f",
+   "ogHash": "e951f8656568",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -21823,12 +21823,12 @@
   },
   "/in/ibps-po/mock-test": {
    "title": "IBPS PO Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free IBPS PO practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free IBPS PO mock tests for Prelims and Mains. Prelims sectionals run on the real 20-minute clock, with instant section-wise results.",
    "h1": [
     "IBPS PO Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "c3ee27543284",
+   "h2Count": 10,
+   "h2Hash": "f00e918e1e3d",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -21838,7 +21838,7 @@
     "Question"
    ],
    "schemaHash": "dc7585cdb54e",
-   "ogHash": "4d4e23b8220d",
+   "ogHash": "906a5839f351",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -23155,12 +23155,12 @@
   },
   "/in/ibps-rrb-office-assistant/mock-test": {
    "title": "IBPS RRB Clerk Mock Test 2026: Free Office Assistant Tests",
-   "description": "Attempt free IBPS RRB Office Assistant practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free IBPS RRB Clerk mock tests, officially Office Assistant. Prelims is 80 questions in a composite 45 minutes, the fastest banking paper here.",
    "h1": [
     "IBPS RRB Clerk (Office Assistant) Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "223d7fa2a1aa",
+   "h2Count": 10,
+   "h2Hash": "b62f56ebfa42",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -23170,7 +23170,7 @@
     "Question"
    ],
    "schemaHash": "59d38aae376e",
-   "ogHash": "88f67ef7b35c",
+   "ogHash": "49d506cb3806",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -24107,12 +24107,12 @@
   },
   "/in/ibps-rrb-officer-scale-1/mock-test": {
    "title": "IBPS RRB PO Mock Test 2026: Free Officer Scale I Tests",
-   "description": "Attempt free IBPS RRB Officer Scale I practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free IBPS RRB PO mock tests, officially Officer Scale I. Mains sections carry unequal marks, and every test here is scored the same way.",
    "h1": [
     "IBPS RRB PO (Officer Scale I) Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "d4ceee12c84d",
+   "h2Count": 10,
+   "h2Hash": "6f4babf24112",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -24122,7 +24122,7 @@
     "Question"
    ],
    "schemaHash": "28025a8ce084",
-   "ogHash": "eacad90293fb",
+   "ogHash": "bde024f36777",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -46803,12 +46803,12 @@
   },
   "/in/niacl-ao/mock-test": {
    "title": "NIACL AO Mock Test 2026: Free Prelims &amp; Mains Tests",
-   "description": "Attempt free NIACL AO practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free NIACL AO mock tests for Prelims and the Mains objective paper. The separate 30-minute Descriptive Test is qualifying and is not covered.",
    "h1": [
     "NIACL AO Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "a0841b0560ac",
+   "h2Count": 10,
+   "h2Hash": "31fdd1dab347",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -46818,7 +46818,7 @@
     "Question"
    ],
    "schemaHash": "dab6b59c25fa",
-   "ogHash": "4234ebb32c07",
+   "ogHash": "7be417f29612",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -52813,12 +52813,12 @@
   },
   "/in/rbi-assistant/mock-test": {
    "title": "RBI Assistant Mock Test 2026: Free Prelims &amp; Mains Tests",
-   "description": "Attempt free RBI Assistant practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free RBI Assistant mock tests for Prelims and Mains, both sectionally timed. The Language Proficiency Test sits outside an objective series.",
    "h1": [
     "RBI Assistant Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "015372c40589",
+   "h2Count": 10,
+   "h2Hash": "e8497874ced7",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -52828,7 +52828,7 @@
     "Question"
    ],
    "schemaHash": "5c6be28e0963",
-   "ogHash": "87217237eb0a",
+   "ogHash": "7d81e40a4198",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -53969,12 +53969,12 @@
   },
   "/in/rbi-grade-b/mock-test": {
    "title": "RBI Grade B Mock Test 2026: Free Phase 1 Test Series",
-   "description": "Attempt free RBI Grade B practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free RBI Grade B Phase 1 mock tests with locked sectional windows and instant results. Phase II is largely descriptive and is not published here.",
    "h1": [
     "RBI Grade B Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "b103ac66aab6",
+   "h2Count": 9,
+   "h2Hash": "f746489014d7",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -53984,7 +53984,7 @@
     "Question"
    ],
    "schemaHash": "102ac5a6646e",
-   "ogHash": "335562b06463",
+   "ogHash": "be3db07a76f5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -54543,12 +54543,12 @@
   },
   "/in/rpf-constable/mock-test": {
    "title": "RPF Constable Mock Test 2026: Free CBT Test Series",
-   "description": "Attempt free RPF Constable practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free RPF Constable mock tests for the 120-question CBT with one-third negative marking. Physical and measurement stages are outside these mocks.",
    "h1": [
     "RPF Constable Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "eee4e1e99c38",
+   "h2Count": 10,
+   "h2Hash": "ca02a39f4030",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -54558,7 +54558,7 @@
     "Question"
    ],
    "schemaHash": "34071acf82d0",
-   "ogHash": "1147886ea100",
+   "ogHash": "0355899646f5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -55767,12 +55767,12 @@
   },
   "/in/rrb-alp/mock-test": {
    "title": "RRB ALP Mock Test 2026: Free CBT 1 &amp; CBT 2 Tests",
-   "description": "Attempt free RRB ALP practice tests with instant results and clearly labelled source-review status.",
+   "description": "Practise RRB ALP CBT 1 and CBT 2 Part A with free timed mocks and instant results. Part B and the CBAT are not currently covered.",
    "h1": [
     "RRB ALP Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "4f675dab21cc",
+   "h2Count": 9,
+   "h2Hash": "2acd8c9ad245",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -55782,7 +55782,7 @@
     "Question"
    ],
    "schemaHash": "bf6be61913f4",
-   "ogHash": "bb38aed4a801",
+   "ogHash": "12d00d2c544e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -56605,12 +56605,12 @@
   },
   "/in/rrb-group-d/mock-test": {
    "title": "RRB Group D Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free RRB Group D practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free RRB Group D mock tests for the 100-question CBT, including the General Science section that sets it apart from other railway papers.",
    "h1": [
     "RRB Group D Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "117f90860c81",
+   "h2Count": 10,
+   "h2Hash": "f6b5fe68ac58",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -56620,7 +56620,7 @@
     "Question"
    ],
    "schemaHash": "b65b93c934e3",
-   "ogHash": "29e5d00e58f3",
+   "ogHash": "a9753f9326fd",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -57251,12 +57251,12 @@
   },
   "/in/rrb-je/mock-test": {
    "title": "RRB JE Mock Test 2026: Free CBT 1 &amp; CBT 2 Tests",
-   "description": "Attempt free RRB Junior Engineer practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free RRB JE mock tests for CBT 1 and CBT 2, where 100 of 150 questions are branch-specific. Civil and Mechanical technical syllabi covered.",
    "h1": [
     "RRB JE (Junior Engineer) Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "5a0ca05115ee",
+   "h2Count": 9,
+   "h2Hash": "3cf502fbb1dd",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -57266,7 +57266,7 @@
     "Question"
    ],
    "schemaHash": "e18ee3059aeb",
-   "ogHash": "1476b6b5e03b",
+   "ogHash": "772ec94de966",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58219,12 +58219,12 @@
   },
   "/in/rrb-ntpc/mock-test": {
    "title": "RRB NTPC Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free RRB NTPC practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free RRB NTPC mock tests for CBT 1 and CBT 2. Composite timers, one-third negative marking and an instant section-wise breakdown after every attempt.",
    "h1": [
     "RRB NTPC Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "b30cb9b7c180",
+   "h2Count": 10,
+   "h2Hash": "fd688c29aa99",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -58234,7 +58234,7 @@
     "Question"
    ],
    "schemaHash": "f632d810f2d2",
-   "ogHash": "57fe520ec367",
+   "ogHash": "02eb63c967fe",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59521,12 +59521,12 @@
   },
   "/in/rrb-technician/mock-test": {
    "title": "RRB Technician Mock Test 2026: Free Grade I &amp; III Tests",
-   "description": "Attempt free RRB Technician practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free RRB Technician mock tests kept separate for Grade I Signal and Grade III, because the two levels share a format but not a syllabus.",
    "h1": [
     "RRB Technician Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "dc4d9395420e",
+   "h2Count": 9,
+   "h2Hash": "bc7f5a10a12c",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -59536,7 +59536,7 @@
     "Question"
    ],
    "schemaHash": "301733a935f7",
-   "ogHash": "1be559b5bd58",
+   "ogHash": "2c44e961cb71",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -61405,12 +61405,12 @@
   },
   "/in/sbi-clerk/mock-test": {
    "title": "SBI Clerk Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SBI Clerk practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free SBI Clerk mock tests for Prelims and Mains. Mains averages just over 50 seconds a question, and each test states how much of it is covered.",
    "h1": [
     "SBI Clerk Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "305cc4ec0ae7",
+   "h2Count": 10,
+   "h2Hash": "cc945b606c6c",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -61420,7 +61420,7 @@
     "Question"
    ],
    "schemaHash": "43b69aa4b9af",
-   "ogHash": "68c0f0d47509",
+   "ogHash": "306d4a92c66a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -62561,12 +62561,12 @@
   },
   "/in/sbi-po/mock-test": {
    "title": "SBI PO Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SBI PO practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free SBI PO mock tests for Prelims and Mains. Objective papers only, with coverage stated per test; the Mains Descriptive Test is not included.",
    "h1": [
     "SBI PO Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "fea8ccb753b3",
+   "h2Count": 10,
+   "h2Hash": "7b634bf80450",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -62576,7 +62576,7 @@
     "Question"
    ],
    "schemaHash": "8cc223a8ce94",
-   "ogHash": "f66ef1693bc8",
+   "ogHash": "d99258df0563",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -68012,12 +68012,12 @@
   },
   "/in/ssc-cgl/mock-test": {
    "title": "SSC CGL Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SSC CGL practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free SSC CGL mock tests for Tier 1 and Tier 2, with the 2026 15-minute sectional timers, real negative marking and instant section-wise results.",
    "h1": [
     "SSC CGL Mock Test 2026"
    ],
-   "h2Count": 10,
-   "h2Hash": "2a2c9f7b3a07",
+   "h2Count": 11,
+   "h2Hash": "c62c448af25f",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -68027,7 +68027,7 @@
     "Question"
    ],
    "schemaHash": "da1b341fd876",
-   "ogHash": "d72fe7414082",
+   "ogHash": "9747504b6797",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -70404,12 +70404,12 @@
   },
   "/in/ssc-chsl/mock-test": {
    "title": "SSC CHSL Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SSC CHSL practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free SSC CHSL mock tests for Tier 1 and Tier 2. One 60-minute composite clock in Tier 1, sequential timed windows in Tier 2, with instant results.",
    "h1": [
     "SSC CHSL Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "0ed1c298383c",
+   "h2Count": 10,
+   "h2Hash": "6ef0f5ecb8fc",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -70419,7 +70419,7 @@
     "Question"
    ],
    "schemaHash": "8fcca16e484d",
-   "ogHash": "93a465596200",
+   "ogHash": "10c4221ccff0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -71818,8 +71818,8 @@
    "h1": [
     "SSC CPO Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "ead7b4538166",
+   "h2Count": 9,
+   "h2Hash": "465bc1c3ad35",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -72442,12 +72442,12 @@
   },
   "/in/ssc-gd-constable/mock-test": {
    "title": "SSC GD Constable Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SSC GD Constable practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free SSC GD Constable mock tests for the 80-question CBE. Practise at the real pace of 45 seconds a question with instant section-wise results.",
    "h1": [
     "SSC GD Constable Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "e5260acceee2",
+   "h2Count": 9,
+   "h2Hash": "ca579589d93a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -72457,7 +72457,7 @@
     "Question"
    ],
    "schemaHash": "961984b39dd9",
-   "ogHash": "263dfa0019b0",
+   "ogHash": "9012d453bc19",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -73494,12 +73494,12 @@
   },
   "/in/ssc-mts/mock-test": {
    "title": "SSC MTS Mock Test 2026: Free Online Test Series",
-   "description": "Attempt free SSC MTS practice tests with instant results and clearly labelled source-review status.",
+   "description": "Free SSC MTS and Havaldar mock tests. Session 1 carries no penalty and Session 2 deducts a mark, so practise each the way it is actually scored.",
    "h1": [
     "SSC MTS Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "e8b5946a9b32",
+   "h2Count": 9,
+   "h2Hash": "b48e4fe3a8d5",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -73509,7 +73509,7 @@
     "Question"
    ],
    "schemaHash": "a3db078677e9",
-   "ogHash": "b02cb2c51923",
+   "ogHash": "ea375377999a",
    "sitemap": true,
    "robots": "index, follow"
   },
