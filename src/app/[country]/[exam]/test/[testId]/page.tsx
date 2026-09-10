@@ -2329,7 +2329,7 @@ export default async function TestInstructionsPage({
             </dl>
             <p className="mt-4 flex gap-2 text-xs leading-5 text-ink-600">
               <span aria-hidden="true">◎</span>
-              No login required. Active progress is saved on this device.
+              Active progress is saved on this device.
             </p>
             {isAvailable ? (
               <Link

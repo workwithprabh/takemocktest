@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const lead = country === 'ng' ? 'JAMB UTME' : 'SSC, Banking and Railways';
   return pageMetadata({
     title: `Free Mock Tests for Competitive Exams${name ? ` in ${name}` : ''}`,
-    description: `Free, syllabus-checked ${lead} mock tests${name ? ` and other competitive exams in ${name}` : ''}. Instant section-wise results and answer explanations. No signup.`,
+    description: `Free, syllabus-checked ${lead} mock tests${name ? ` and other competitive exams in ${name}` : ''}. Instant section-wise results and answer explanations. Free to attempt.`,
     path: `/${country}`,
   });
 }
@@ -99,7 +99,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
               Free Online Mock Tests for Competitive Exams{countryName(country) ? ` in ${countryName(country)}` : ''}
             </h1>
             <p className="mt-3 max-w-lg text-base leading-6 text-ink-600">
-              Find your next mock test, practise at your pace, and review every answer. No account, no payment.
+              Find your next mock test, practise at your pace, and review every answer with a worked explanation.
             </p>
             <form action={`/${country}/exams`} role="search" aria-label="Find a mock test" className="mt-6">
               <label className="mb-2 block text-sm font-semibold text-ink-900" htmlFor="homepage-exam-search">Search your mock test</label>
@@ -179,7 +179,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
               <p className="mt-2 text-sm leading-6 text-ink-700">
                 Not sure which exam yet, or just want to get faster at puzzles? {LR_TOTAL_QUESTIONS} reasoning
                 questions pooled from every exam on this site, graded easy to hard on one scale, in {LR_TOPIC_TESTS.length} topic
-                sets and a difficulty ladder. No negative marking, no login.
+                sets and a difficulty ladder, with no negative marking.
               </p>
             </div>
             <div className="mt-4 grid flex-1 gap-2 sm:grid-cols-3 md:mt-0">
