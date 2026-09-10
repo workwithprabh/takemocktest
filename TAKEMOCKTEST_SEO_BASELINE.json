@@ -1,6 +1,6 @@
 {
- "capturedAt": "2026-09-09",
- "pageCount": 4931,
+ "capturedAt": "2026-09-10",
+ "pageCount": 4955,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -18615,7 +18615,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "ac4ef1728652",
+   "schemaHash": "e1060ab54b80",
    "ogHash": "951d355b08ea",
    "sitemap": true,
    "robots": "index, follow"
@@ -18705,6 +18705,40 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/gmat/test/focus-edition-data-sufficiency-sectional-1/attempt": {
+   "title": "GMAT Data Sufficiency Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the GMAT Data Sufficiency Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "1869f61cbc9d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/gmat/test/focus-edition-data-sufficiency-sectional-1": {
+   "title": "GMAT Data Sufficiency Mock Test 1: Free Practice",
+   "description": "Free GMAT Data Sufficiency Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "GMAT Data Sufficiency Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "2191e3719573",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "cf878777cc37",
+   "ogHash": "274e6da44e0e",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/gmat/test/focus-edition-full-mock-1/attempt": {
    "title": "GMAT Focus Edition Full Mock Test 1 | TakeMockTest",
    "description": "Attempt the GMAT Focus Edition Full Mock Test 1 and review your result on this device.",
@@ -18736,6 +18770,74 @@
    ],
    "schemaHash": "fe4f917345bc",
    "ogHash": "e18cbf65adb5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/gmat/test/focus-edition-quantitative-reasoning-sectional-1/attempt": {
+   "title": "GMAT Quantitative Reasoning Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the GMAT Quantitative Reasoning Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "500a1a1d259b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/gmat/test/focus-edition-quantitative-reasoning-sectional-1": {
+   "title": "GMAT Quantitative Reasoning Mock Test 1: Free Practice",
+   "description": "Free GMAT Quantitative Reasoning Mock Test 1: 21 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "GMAT Quantitative Reasoning Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "6c9e05631f54",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "88de1ba47695",
+   "ogHash": "e41ad2bb3be1",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/gmat/test/focus-edition-verbal-reasoning-sectional-1/attempt": {
+   "title": "GMAT Verbal Reasoning Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the GMAT Verbal Reasoning Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "fc4dec913ae1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/gmat/test/focus-edition-verbal-reasoning-sectional-1": {
+   "title": "GMAT Verbal Reasoning Mock Test 1: Free Practice",
+   "description": "Free GMAT Verbal Reasoning Mock Test 1: 23 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "GMAT Verbal Reasoning Mock Test 1"
+   ],
+   "h2Count": 11,
+   "h2Hash": "a6b9530f3e54",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "f2a5c640cefe",
+   "ogHash": "91009c2691a0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -28811,7 +28913,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "f952c9831cfb",
+   "schemaHash": "0b540bcf90a4",
    "ogHash": "a29525d2102f",
    "sitemap": true,
    "robots": "index, follow"
@@ -28932,6 +29034,108 @@
    ],
    "schemaHash": "0cefa2afc9ae",
    "ogHash": "ade62b15bc2b",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ipmat-indore/test/ipm-at-quantitative-ability-mcq-sectional-1/attempt": {
+   "title": "IPMAT Indore Quantitative Ability (MCQ) Sectional Test 1",
+   "description": "Attempt the IPMAT Indore Quantitative Ability (MCQ) Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "01b55ecc138e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ipmat-indore/test/ipm-at-quantitative-ability-mcq-sectional-1": {
+   "title": "IPMAT Indore Quantitative Ability (MCQ) Mock Test 1",
+   "description": "Free IPMAT Indore Quantitative Ability (MCQ) Mock Test 1: 30 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "IPMAT Indore Quantitative Ability (MCQ) Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "87ca35d8f97b",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "7a78418deb08",
+   "ogHash": "bf7f1c0e2c92",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ipmat-indore/test/ipm-at-quantitative-ability-short-answer-sectional-1/attempt": {
+   "title": "IPMAT Indore Quantitative Ability (Short Answer) Sectional Test 1",
+   "description": "Attempt the IPMAT Indore Quantitative Ability (Short Answer) Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b0ae18797df5",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ipmat-indore/test/ipm-at-quantitative-ability-short-answer-sectional-1": {
+   "title": "IPMAT Indore Quantitative Ability (Short Answer) Mock Test 1",
+   "description": "Free IPMAT Indore Quantitative Ability (Short Answer) Mock Test 1: 15 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "IPMAT Indore Quantitative Ability (Short Answer) Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "f247ac4d7c24",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1d9e6c419e50",
+   "ogHash": "ca4f8219da24",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ipmat-indore/test/ipm-at-verbal-ability-sectional-1/attempt": {
+   "title": "IPMAT Indore Verbal Ability Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the IPMAT Indore Verbal Ability Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "861b267c0314",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ipmat-indore/test/ipm-at-verbal-ability-sectional-1": {
+   "title": "IPMAT Indore Verbal Ability Mock Test 1: Free Practice",
+   "description": "Free IPMAT Indore Verbal Ability Mock Test 1: 45 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "IPMAT Indore Verbal Ability Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "73614ba6ff78",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1424da3970f5",
+   "ogHash": "b68245efb114",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -38204,7 +38408,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "f73c85f09293",
+   "schemaHash": "4d2c198316b5",
    "ogHash": "03404b661fe8",
    "sitemap": true,
    "robots": "index, follow"
@@ -38325,6 +38529,108 @@
    ],
    "schemaHash": "6bdf3d09ea90",
    "ogHash": "cfd2199df20a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/lsat/test/scored-sections-logical-reasoning-i-sectional-1/attempt": {
+   "title": "LSAT Logical Reasoning I Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the LSAT Logical Reasoning I Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8ff2c59e6258",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/lsat/test/scored-sections-logical-reasoning-i-sectional-1": {
+   "title": "LSAT Logical Reasoning I Mock Test 1: Free Practice",
+   "description": "Free LSAT Logical Reasoning I Mock Test 1: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "LSAT Logical Reasoning I Mock Test 1"
+   ],
+   "h2Count": 11,
+   "h2Hash": "081290986fe4",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "3177ad0edf9b",
+   "ogHash": "cc051ef2905f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/lsat/test/scored-sections-logical-reasoning-ii-sectional-1/attempt": {
+   "title": "LSAT Logical Reasoning II Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the LSAT Logical Reasoning II Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "2536820558df",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/lsat/test/scored-sections-logical-reasoning-ii-sectional-1": {
+   "title": "LSAT Logical Reasoning II Mock Test 1: Free Practice",
+   "description": "Free LSAT Logical Reasoning II Mock Test 1: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "LSAT Logical Reasoning II Mock Test 1"
+   ],
+   "h2Count": 11,
+   "h2Hash": "7a6c4b335ce2",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "24a9054dc2ca",
+   "ogHash": "6f02b0ac071d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/lsat/test/scored-sections-reading-comprehension-sectional-1/attempt": {
+   "title": "LSAT Reading Comprehension Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the LSAT Reading Comprehension Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "cd2a9fa6ec10",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/lsat/test/scored-sections-reading-comprehension-sectional-1": {
+   "title": "LSAT Reading Comprehension Mock Test 1: Free Practice",
+   "description": "Free LSAT Reading Comprehension Mock Test 1: 27 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "LSAT Reading Comprehension Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "23a991697482",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "66e941e113eb",
+   "ogHash": "793833146f38",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -82820,7 +83126,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "23338d85cd75",
+   "schemaHash": "761ffdda7bc0",
    "ogHash": "cd327d7d5ee1",
    "sitemap": true,
    "robots": "index, follow"
@@ -82910,6 +83216,40 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/xat/test/part-1-decision-making-sectional-1/attempt": {
+   "title": "XAT Decision Making Sectional Test 1 | TakeMockTest",
+   "description": "Attempt the XAT Decision Making Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "60cddd04a6b3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/xat/test/part-1-decision-making-sectional-1": {
+   "title": "XAT Decision Making Mock Test 1: Free Practice",
+   "description": "Free XAT Decision Making Mock Test 1: 21 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "XAT Decision Making Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "a1e9760c563c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "5c6063309689",
+   "ogHash": "b6cd4eb31112",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/xat/test/part-1-full-mock-1/attempt": {
    "title": "XAT Part 1 Full Mock Test 1 | TakeMockTest",
    "description": "Attempt the XAT Part 1 Full Mock Test 1 and review your result on this device.",
@@ -82941,6 +83281,74 @@
    ],
    "schemaHash": "c53e5afb03fc",
    "ogHash": "7539e3fa7b38",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/xat/test/part-1-quantitative-ability-and-data-interpretation-sectional-1/attempt": {
+   "title": "XAT Quantitative Ability and Data Interpretation Sectional Test 1",
+   "description": "Attempt the XAT Quantitative Ability and Data Interpretation Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "fa54c6d5de81",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/xat/test/part-1-quantitative-ability-and-data-interpretation-sectional-1": {
+   "title": "XAT Quantitative Ability and Data Interpretation Mock Test 1",
+   "description": "Free XAT Quantitative Ability and Data Interpretation Mock Test 1: 28 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "XAT Quantitative Ability and Data Interpretation Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "e033cc5a55ad",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "b3d320b02a6a",
+   "ogHash": "972c1d97a27a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/xat/test/part-1-verbal-and-logical-ability-sectional-1/attempt": {
+   "title": "XAT Verbal and Logical Ability Sectional Test 1",
+   "description": "Attempt the XAT Verbal and Logical Ability Sectional Test 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "5a7f404e528c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/xat/test/part-1-verbal-and-logical-ability-sectional-1": {
+   "title": "XAT Verbal and Logical Ability Mock Test 1: Free Practice",
+   "description": "Free XAT Verbal and Logical Ability Mock Test 1: 26 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "XAT Verbal and Logical Ability Mock Test 1"
+   ],
+   "h2Count": 10,
+   "h2Hash": "201bea1f0655",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "aa45f8f3b1f9",
+   "ogHash": "63aeb46f3872",
    "sitemap": true,
    "robots": "index, follow"
   },

@@ -9042,6 +9042,9 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'focus-edition-full-mock-1', name: 'Focus Edition Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 115, sectionDurations: [45, 45, 25], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark per correct answer and no penalty for a wrong one, so every question should be answered. The raw score out of 56 shown here does not convert to the official 205 to 805 scale, because the real exam is question-level adaptive and this mock is fixed-form. Each section is capped at its own timer and locks when that timer ends.', checkedOn: '7 September 2026' },
+          { id: 'focus-edition-quantitative-reasoning-sectional-1', name: 'Quantitative Reasoning Sectional Test 1', kind: 'sectional', section: 'Quantitative Reasoning', status: 'checked', duration: 45, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'focus-edition-verbal-reasoning-sectional-1', name: 'Verbal Reasoning Sectional Test 1', kind: 'sectional', section: 'Verbal Reasoning', status: 'checked', duration: 45, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'focus-edition-data-sufficiency-sectional-1', name: 'Data Sufficiency Sectional Test 1', kind: 'sectional', section: 'Data Insights: Data Sufficiency', status: 'checked', duration: 25, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
         ],
       },
     ],
@@ -9075,6 +9078,9 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'scored-sections-full-mock-1', name: 'Scored Sections Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 105, sectionDurations: [35, 35, 35], marksPerCorrect: 1, negativeMarking: 0, scoringNote: 'One mark per correct answer and no penalty for a wrong one, so every question should be answered. Each of the three sections is capped at 35 minutes and locks when its timer ends. The raw score out of 77 shown here corresponds to the scored portion of the official test, which reports a scaled 120 to 180 score instead.', checkedOn: '7 September 2026' },
+          { id: 'scored-sections-logical-reasoning-i-sectional-1', name: 'Logical Reasoning I Sectional Test 1', kind: 'sectional', section: 'Logical Reasoning I', status: 'checked', duration: 35, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'scored-sections-logical-reasoning-ii-sectional-1', name: 'Logical Reasoning II Sectional Test 1', kind: 'sectional', section: 'Logical Reasoning II', status: 'checked', duration: 35, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'scored-sections-reading-comprehension-sectional-1', name: 'Reading Comprehension Sectional Test 1', kind: 'sectional', section: 'Reading Comprehension', status: 'checked', duration: 35, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
         ],
       },
     ],
@@ -11018,6 +11024,9 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'part-1-full-mock-1', name: 'Part 1 Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 170, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'One mark per correct answer with 0.25 deducted for an incorrect one, matching XAT\'s published scheme. The real exam adds a 0.10 penalty for each unattempted question beyond eight, which this platform does not model, so leaving questions blank here is cheaper than it would be in the actual paper.', checkedOn: '6 September 2026' },
+          { id: 'part-1-verbal-and-logical-ability-sectional-1', name: 'Verbal and Logical Ability Sectional Test 1', kind: 'sectional', section: 'Verbal and Logical Ability', status: 'checked', duration: 59, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'XAT Part 1 is a single 170-minute paper with no official per-section clock, so this sectional gets the share of that time its own question count represents.', checkedOn: '10 September 2026' },
+          { id: 'part-1-decision-making-sectional-1', name: 'Decision Making Sectional Test 1', kind: 'sectional', section: 'Decision Making', status: 'checked', duration: 48, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'XAT Part 1 is a single 170-minute paper with no official per-section clock, so this sectional gets the share of that time its own question count represents.', checkedOn: '10 September 2026' },
+          { id: 'part-1-quantitative-ability-and-data-interpretation-sectional-1', name: 'Quantitative Ability and Data Interpretation Sectional Test 1', kind: 'sectional', section: 'Quantitative Ability and Data Interpretation', status: 'checked', duration: 63, marksPerCorrect: 1, negativeMarking: 0.25, scoringNote: 'XAT Part 1 is a single 170-minute paper with no official per-section clock, so this sectional gets the share of that time its own question count represents.', checkedOn: '10 September 2026' },
         ],
       },
     ],
@@ -12427,6 +12436,9 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         },
         tests: [
           { id: 'ipm-at-full-mock-1', name: 'IPM Aptitude Test Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, sectionDurations: [40, 40, 40], marksPerCorrect: 4, negativeMarking: 1, scoringNote: 'Every question is worth 4 marks. The 30 Quantitative Ability (MCQ) and 45 Verbal Ability questions deduct 1 mark for a wrong answer; the 15 Quantitative Ability (Short Answer) questions are typed numeric entries and carry no negative marking, so a wrong value there costs nothing beyond the mark missed. Each section is capped at 40 minutes and locks when its timer ends.', checkedOn: '6 September 2026' },
+          { id: 'ipm-at-verbal-ability-sectional-1', name: 'Verbal Ability Sectional Test 1', kind: 'sectional', section: 'Verbal Ability', status: 'checked', duration: 40, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'ipm-at-quantitative-ability-mcq-sectional-1', name: 'Quantitative Ability (MCQ) Sectional Test 1', kind: 'sectional', section: 'Quantitative Ability (MCQ)', status: 'checked', duration: 40, marksPerCorrect: 4, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'ipm-at-quantitative-ability-short-answer-sectional-1', name: 'Quantitative Ability (Short Answer) Sectional Test 1', kind: 'sectional', section: 'Quantitative Ability (Short Answer)', status: 'checked', duration: 40, marksPerCorrect: 4, negativeMarking: 0, scoringNote: 'Typed numeric entry, and the only IPMAT section carrying no penalty for a wrong answer, which matches the official scheme.', checkedOn: '10 September 2026' },
         ],
       },
     ],

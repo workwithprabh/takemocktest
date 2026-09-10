@@ -3183,15 +3183,27 @@ const CUSAT_CAT_TESTS: Record<string, Question[]> = {
 };
 const XAT_TESTS: Record<string, Question[]> = {
   'xat/part-1-full-mock-1': XAT_2026_PART_1_FULL_MOCK_1,
+  'xat/part-1-verbal-and-logical-ability-sectional-1': XAT_2026_PART_1_FULL_MOCK_1.filter((question) => question.section === 'Verbal and Logical Ability'),
+  'xat/part-1-decision-making-sectional-1': XAT_2026_PART_1_FULL_MOCK_1.filter((question) => question.section === 'Decision Making'),
+  'xat/part-1-quantitative-ability-and-data-interpretation-sectional-1': XAT_2026_PART_1_FULL_MOCK_1.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
 };
 const IPMAT_INDORE_TESTS: Record<string, Question[]> = {
   'ipmat-indore/ipm-at-full-mock-1': IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1,
+  'ipmat-indore/ipm-at-verbal-ability-sectional-1': IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1.filter((question) => question.section === 'Verbal Ability'),
+  'ipmat-indore/ipm-at-quantitative-ability-mcq-sectional-1': IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1.filter((question) => question.section === 'Quantitative Ability (MCQ)'),
+  'ipmat-indore/ipm-at-quantitative-ability-short-answer-sectional-1': IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1.filter((question) => question.section === 'Quantitative Ability (Short Answer)'),
 };
 const LSAT_TESTS: Record<string, Question[]> = {
   'lsat/scored-sections-full-mock-1': LSAT_2026_SCORED_SECTIONS_FULL_MOCK_1,
+  'lsat/scored-sections-logical-reasoning-i-sectional-1': LSAT_2026_SCORED_SECTIONS_FULL_MOCK_1.filter((question) => question.section === 'Logical Reasoning I'),
+  'lsat/scored-sections-logical-reasoning-ii-sectional-1': LSAT_2026_SCORED_SECTIONS_FULL_MOCK_1.filter((question) => question.section === 'Logical Reasoning II'),
+  'lsat/scored-sections-reading-comprehension-sectional-1': LSAT_2026_SCORED_SECTIONS_FULL_MOCK_1.filter((question) => question.section === 'Reading Comprehension'),
 };
 const GMAT_TESTS: Record<string, Question[]> = {
   'gmat/focus-edition-full-mock-1': GMAT_2026_FOCUS_EDITION_FULL_MOCK_1,
+  'gmat/focus-edition-quantitative-reasoning-sectional-1': GMAT_2026_FOCUS_EDITION_FULL_MOCK_1.filter((question) => question.section === 'Quantitative Reasoning'),
+  'gmat/focus-edition-verbal-reasoning-sectional-1': GMAT_2026_FOCUS_EDITION_FULL_MOCK_1.filter((question) => question.section === 'Verbal Reasoning'),
+  'gmat/focus-edition-data-sufficiency-sectional-1': GMAT_2026_FOCUS_EDITION_FULL_MOCK_1.filter((question) => question.section === 'Data Insights: Data Sufficiency'),
 };
 const INI_CET_TESTS: Record<string, Question[]> = {
   'ini-cet/medical-full-mock-1': INI_CET_2026_MEDICAL_FULL_MOCK_1,
@@ -4176,6 +4188,30 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 120
     : testId.includes('ap-ecet/cse-diploma-full-mock')
     ? 200
+    : testId === 'xat/part-1-verbal-and-logical-ability-sectional-1'
+    ? 26
+    : testId === 'xat/part-1-decision-making-sectional-1'
+    ? 21
+    : testId === 'xat/part-1-quantitative-ability-and-data-interpretation-sectional-1'
+    ? 28
+    : testId === 'ipmat-indore/ipm-at-verbal-ability-sectional-1'
+    ? 45
+    : testId === 'ipmat-indore/ipm-at-quantitative-ability-mcq-sectional-1'
+    ? 30
+    : testId === 'ipmat-indore/ipm-at-quantitative-ability-short-answer-sectional-1'
+    ? 15
+    : testId === 'lsat/scored-sections-logical-reasoning-i-sectional-1'
+    ? 25
+    : testId === 'lsat/scored-sections-logical-reasoning-ii-sectional-1'
+    ? 25
+    : testId === 'lsat/scored-sections-reading-comprehension-sectional-1'
+    ? 27
+    : testId === 'gmat/focus-edition-quantitative-reasoning-sectional-1'
+    ? 21
+    : testId === 'gmat/focus-edition-verbal-reasoning-sectional-1'
+    ? 23
+    : testId === 'gmat/focus-edition-data-sufficiency-sectional-1'
+    ? 12
     : testId === 'xat/part-1-full-mock-1'
     ? 75
     : testId === 'ipmat-indore/ipm-at-full-mock-1'
