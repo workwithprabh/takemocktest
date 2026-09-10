@@ -73,6 +73,28 @@ function evidenceFor(cls, url) {
     : 'Class GSC-observed, this URL not yet in GSC';
 }
 
+// Blog targets are declared per post in src/lib/blog.ts, which is the only page
+// class whose keyword cannot come from a template. Read them from source rather
+// than inferring one from the H1: an inferred keyword is the post's title said
+// back to you, which is not what anybody searches, and it silently drifts every
+// time a headline is edited.
+const blogKeywords = (() => {
+  const file = path.join(process.cwd(), 'src', 'lib', 'blog.ts');
+  if (!fs.existsSync(file)) return new Map();
+  const source = fs.readFileSync(file, 'utf8');
+  const map = new Map();
+  // Two authoring styles coexist in that file, single-quoted TS and
+  // double-quoted JSON, so match a slug and then the next keyword after it.
+  const slugs = [...source.matchAll(/(?:^\s*slug: '([^']+)',)|(?:^\s*"slug": "([^"]+)",)/gm)];
+  for (const match of slugs) {
+    const slug = match[1] ?? match[2];
+    const rest = source.slice(match.index);
+    const keyword = /(?:primaryKeyword: '((?:[^'\\]|\\.)*)')|(?:"primaryKeyword": "([^"]*)")/.exec(rest);
+    if (keyword) map.set(slug, (keyword[1] ?? keyword[2]).replace(/\\'/g, "'"));
+  }
+  return map;
+})();
+
 function classify(rel) {
   const parts = rel.split('/').filter(Boolean);
   const [, ...rest] = parts; // drop the country segment
@@ -125,8 +147,12 @@ for (const url of urls) {
   rows.push({
     url,
     cls,
-    keyword: keywordFor(cls, h1),
-    evidence: evidenceFor(cls, url),
+    keyword: cls === 'blog post'
+      ? (blogKeywords.get(rel.split('/').pop()) ?? keywordFor(cls, h1))
+      : keywordFor(cls, h1),
+    evidence: cls === 'blog post' && blogKeywords.has(rel.split('/').pop())
+      ? 'Declared per post in blog.ts'
+      : evidenceFor(cls, url),
     h1,
     title,
   });

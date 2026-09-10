@@ -30,6 +30,15 @@ if (!fs.existsSync(out)) {
 // noindexed products, not landing pages.
 const SECTIONS = [
   { name: 'Topic practice', dir: 'in/practice', maxDuplicateShare: 0.4, minWords: 450 },
+  // The blog was outside this audit until 10 September 2026, which left the
+  // site's most template-shaped prose section unmeasured: 61 posts sharing one
+  // block renderer and cross-linking each other heavily are exactly the shape
+  // that drifts into boilerplate without anyone noticing page by page. It is
+  // healthy today (10.9% average shared, worst 16.1% on coaching-vs-self-study,
+  // shortest post 717 words), so the ceiling is set where topic practice's is
+  // relative to its own reading: a little above the worst honest page, so a
+  // copy edit never trips it but a slide back to templated prose does.
+  { name: 'Blog', dir: 'in/blog', maxDuplicateShare: 0.25, minWords: 600 },
 ];
 
 const SHINGLE = 8;

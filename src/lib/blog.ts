@@ -40,6 +40,16 @@ export interface BlogPost {
   readTimeMin: number;
   publishedAt: string;
   authorName: string;
+  /**
+   * The single search phrase this post is written to answer. Declared here
+   * rather than inferred from the H1 because SEO_KEYWORD_MAP.md names the blog
+   * as the one page class whose target is per page rather than per template,
+   * and until 10 September 2026 it pointed at a field that did not exist.
+   * Keep it out of the space owned by another class: an exam's own pattern,
+   * syllabus, eligibility and mock-test phrases belong to that exam's pages,
+   * so a post takes the question or comparison a student actually types.
+   */
+  primaryKeyword: string;
   image?: BlogImage;
   body: BlogBlock[];
   faqs?: BlogFaq[];
@@ -54,6 +64,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-01-10',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'study timetable for competitive exams',
     image: {
       src: '/images/blog/how-to-build-a-study-timetable.webp',
       alt: 'Indian student planning a weekly competitive-exam study timetable at a desk',
@@ -93,6 +104,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-01-17',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ssc cgl preparation mistakes',
     image: {
       src: '/images/blog/ssc-cgl-preparation-mistakes.webp',
       alt: 'SSC CGL aspirant reviewing an overcrowded study plan and practice papers',
@@ -131,6 +143,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 4,
     publishedAt: '2026-01-24',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'negative marking in competitive exams',
     image: {
       src: '/images/blog/understanding-negative-marking.webp',
       alt: 'Student filling an OMR answer sheet beside a calculator',
@@ -172,6 +185,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-01-31',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'time management in the exam hall',
     image: {
       src: '/images/blog/time-management-during-exam.webp',
       alt: 'Student taking a timed mock test beside an analog clock',
@@ -209,6 +223,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-02-07',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'how to analyse mock test performance',
     image: {
       src: '/images/blog/analyze-mock-test-performance.webp',
       alt: 'Student reviewing section-wise mock-test performance on a laptop',
@@ -247,6 +262,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 8,
     publishedAt: '2026-02-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ibps po vs ssc cgl',
     image: {
       src: '/images/blog/ibps-po-vs-ssc-cgl.webp',
       alt: 'Student comparing banking and government-exam preparation paths at a study desk',
@@ -290,6 +306,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'sectional lock vs composite timer',
     image: {
       src: '/images/blog/sectional-lock-vs-composite-timer.webp',
       alt: 'Indian student practicing a timed mock test with a sectional timer and stopwatch',
@@ -335,6 +352,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'qualifying vs merit sections in bank exams',
     image: {
       src: '/images/blog/qualifying-vs-merit-sections-banking-exams.webp',
       alt: 'Banking exam aspirant comparing qualifying and merit mock-test sections',
@@ -371,6 +389,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 8,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'which banking exam should i start with',
     image: {
       src: '/images/blog/beginners-guide-banking-exams-india.webp',
       alt: 'Indian student organizing a beginner study plan for banking exams',
@@ -407,6 +426,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ssc vs banking vs railways',
     image: {
       src: '/images/blog/ssc-vs-banking-vs-railways.webp',
       alt: 'Indian aspirant comparing SSC, banking, and railway exam pathways',
@@ -442,6 +462,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 8,
     publishedAt: '2026-08-06',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'rbi grade b vs nabard grade a',
     image: {
       src: '/images/blog/rbi-nabard-sebi-sidbi-exam-comparison.webp',
       alt: 'Indian aspirant comparing finance and development regulator exam paths',
@@ -477,6 +498,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'how many mock tests before the exam',
     image: {
       src: '/images/blog/how-many-mock-tests-to-take.webp',
       alt: 'Indian student scheduling mock-test attempts on a study calendar',
@@ -513,6 +535,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'coaching vs self study for government exams',
     image: {
       src: '/images/blog/coaching-vs-self-study.webp',
       alt: 'Indian student comparing online coaching with self-study materials',
@@ -548,6 +571,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'exam day anxiety',
     image: {
       src: '/images/blog/how-to-handle-exam-day-anxiety.webp',
       alt: 'Indian student taking a calming breath before entering an exam hall',
@@ -583,6 +607,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'how to prepare for government exams while working',
     image: {
       src: '/images/blog/preparing-for-exams-while-working-a-job.webp',
       alt: 'Indian professional studying for a government exam after work',
@@ -618,6 +643,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'document verification after written exam',
     image: {
       src: '/images/blog/document-verification-what-to-expect.webp',
       alt: 'Indian candidate organizing certificates for document verification',
@@ -653,6 +679,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'age limit and number of attempts for government exams',
     image: {
       src: '/images/blog/age-limit-and-attempts-explained.webp',
       alt: 'Indian aspirant planning exam eligibility dates and attempts',
@@ -688,6 +715,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'drop year for exam preparation',
     image: {
       src: '/images/blog/should-you-take-a-drop-year.webp',
       alt: 'Indian student considering a dedicated year for exam preparation',
@@ -723,6 +751,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-12',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'cutoff vs percentile',
     image: {
       src: '/images/blog/understanding-cutoffs-and-percentile.webp',
       alt: 'Indian aspirant reviewing mock-test score patterns and comparison charts',
@@ -759,6 +788,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'how to revise in the last week before an exam',
     image: {
       src: '/images/blog/revising-in-the-final-week-before-your-exam.webp',
       alt: 'Indian student revising practice questions during the final week before an exam',
@@ -795,6 +825,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'speed vs accuracy in exams',
     image: {
       src: '/images/blog/speed-vs-accuracy-in-timed-tests.webp',
       alt: 'Indian student balancing speed and accuracy during a timed mock test',
@@ -835,6 +866,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'error log for exam preparation',
     image: {
       src: '/images/blog/how-to-build-an-error-log.webp',
       alt: 'Indian student recording recurring mock-test mistakes in an error log',
@@ -876,6 +908,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'group study vs self study',
     image: {
       src: '/images/blog/group-study-vs-solo-study.webp',
       alt: 'Three Indian aspirants discussing a difficult practice question together',
@@ -911,6 +944,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'sectional test vs full mock test',
     image: {
       src: '/images/blog/sectional-practice-or-full-mocks.webp',
       alt: 'Indian student comparing a sectional practice booklet with a full mock paper',
@@ -951,6 +985,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'how to prepare general awareness for competitive exams',
     image: {
       src: '/images/blog/preparing-general-awareness-without-drowning-in-current-affairs.webp',
       alt: 'Indian aspirant organizing static General Awareness and current-affairs study',
@@ -987,6 +1022,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 4,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'exam day checklist what to carry',
     image: {
       src: '/images/blog/exam-day-checklist-what-to-carry-v2.webp',
       alt: 'Indian student reviewing printed papers in a navy folder before exam day',
@@ -1028,6 +1064,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'how to build vocabulary for competitive exams',
     image: {
       src: '/images/blog/building-vocabulary-without-rote-memorization.webp',
       alt: 'Indian student building vocabulary through reading and word families',
@@ -1064,6 +1101,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'how to read an exam notification',
     image: {
       src: '/images/blog/how-to-read-an-exam-notification.webp',
       alt: 'Indian aspirant reviewing an official exam notification carefully',
@@ -1100,6 +1138,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-14',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'spaced repetition for exam preparation',
     image: {
       src: '/images/blog/spaced-repetition-how-to-actually-remember-what-you-study.webp',
       alt: 'Indian student scheduling spaced-repetition review cards',
@@ -1136,6 +1175,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'cat vs mat vs cmat',
     image: {
       src: '/images/blog/cat-vs-mat-vs-cmat-choosing-your-mba-entrance.webp',
       alt: 'Indian MBA aspirant comparing several entrance-exam formats',
@@ -1185,6 +1225,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ielts vs toefl vs pte',
     image: {
       src: '/images/blog/ielts-vs-toefl-vs-pte-picking-your-english-test.webp',
       alt: 'Indian study-abroad aspirant comparing paper, audio, and speaking test formats',
@@ -1221,6 +1262,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'nda vs cds vs afcat',
     image: {
       src: '/images/blog/nda-vs-cds-vs-afcat-choosing-your-defence-entry.webp',
       alt: 'Indian defence aspirant comparing education-stage entry pathways',
@@ -1265,6 +1307,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'clat vs ailet',
     image: {
       src: '/images/blog/clat-vs-ailet-vs-state-law-cets-first-timers-guide.webp',
       alt: 'Indian law aspirant comparing passage-based entrance-test formats',
@@ -1308,6 +1351,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ca foundation vs cma foundation',
     image: {
       src: '/images/blog/ca-foundation-vs-cma-foundation-which-to-start-with.webp',
       alt: 'Indian commerce student comparing accounting and cost-management study paths',
@@ -1349,6 +1393,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-19',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'jee main vs bitsat',
     image: {
       src: '/images/blog/jee-main-vs-bitsat-vs-state-cets-engineering-prep.webp',
       alt: 'Indian engineering aspirant comparing three entrance-test formats',
@@ -1394,6 +1439,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-20',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'nata vs jee main paper 2',
     image: {
       src: '/images/blog/nata-vs-jee-main-paper-2-choosing-your-barch-entry.webp',
       alt: 'Indian architecture aspirant comparing drawing and computer-based aptitude preparation',
@@ -1436,6 +1482,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-21',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'sat vs act',
     image: {
       src: '/images/blog/sat-vs-act-choosing-your-us-admission-test.webp',
       alt: 'Indian student comparing digital and paper-based US admission test formats',
@@ -1479,6 +1526,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-21',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'rrb ntpc vs group d',
     image: {
       src: '/images/blog/rrb-ntpc-vs-group-d-vs-je-vs-alp-choosing-your-railway-exam.webp',
       alt: 'Indian railway aspirant comparing four qualification-based job pathways',
@@ -1521,6 +1569,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ssc cgl vs chsl vs mts',
     image: {
       src: '/images/blog/ssc-cgl-vs-chsl-vs-mts-choosing-the-right-ssc-exam.webp',
       alt: 'Indian SSC aspirant matching education levels to exam options',
@@ -1562,6 +1611,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'oet vs ielts',
     image: {
       src: '/images/blog/oet-vs-ielts-choosing-your-healthcare-english-test.webp',
       alt: 'Indian healthcare professional comparing clinical and general English test formats',
@@ -1604,6 +1654,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'mht cet vs jee main',
     image: {
       src: '/images/blog/mht-cet-vs-jee-main-maharashtra-engineering-admission.webp',
       alt: 'Indian engineering aspirant comparing Maharashtra and national admission routes',
@@ -1645,6 +1696,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-22',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'lic aao vs niacl ao',
     image: {
       src: '/images/blog/lic-aao-vs-niacl-ao-choosing-your-insurance-sector-exam.webp',
       alt: 'Indian insurance officer aspirant comparing two sector exam pathways',
@@ -1687,6 +1739,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'why take more than one full mock test',
     image: {
       src: '/images/blog/why-this-site-gives-you-two-full-mock-tests.webp',
       alt: 'Two mock-test folders separated by a revision notebook, planner and practice cards',
@@ -1723,6 +1776,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ssc selection post matriculation vs graduation level',
     image: {
       src: '/images/blog/ssc-selection-post-one-cbe-three-qualification-levels.webp',
       alt: 'Indian aspirant practicing on a laptop beside three study binders and a mathematics notebook',
@@ -1763,6 +1817,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'rrb technician grade 1 vs grade 3',
     image: {
       src: '/images/blog/rrb-technician-grade-1-signal-vs-grade-3.webp',
       alt: 'Circuit board, laptop and science-study tools with a model passenger train',
@@ -1805,6 +1860,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-24',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ssc stenographer grade c vs grade d',
     image: {
       src: '/images/blog/ssc-stenographer-grade-c-vs-grade-d.webp',
       alt: 'Indian stenography aspirant listening through headphones while practicing laptop transcription',
@@ -1845,6 +1901,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 7,
     publishedAt: '2026-08-28',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'rrb je cbt 2 civil vs mechanical',
     image: {
       src: '/images/blog/rrb-je-cbt2-civil-vs-mechanical.webp',
       alt: 'Truss bridge model and structural drawings beside mechanical gears and a caliper',
@@ -1910,6 +1967,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "primaryKeyword": "cg pet vs bcece",
   "image": {
     "src": "/images/blog/cg-pet-vs-bcece-two-state-engineering-routes.webp",
     "alt": "Indian engineering aspirant organizing a combined study folder and three subject notebooks",
@@ -2022,6 +2080,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 7,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "primaryKeyword": "bits hd vs gate",
   "image": {
     "src": "/images/blog/bits-hd-vs-gate-cs-which-to-prepare-for.webp",
     "alt": "Indian computer-science aspirant comparing a focused admission folder with several postgraduate pathways",
@@ -2134,6 +2193,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "primaryKeyword": "amu b.tech admission test marking scheme",
   "image": {
     "src": "/images/blog/amu-btech-admission-test-pattern-and-scoring.webp",
     "alt": "Engineering aspirant reviewing an admission guide beside three subject notebooks and an OMR practice sheet",
@@ -2231,6 +2291,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "primaryKeyword": "assam cee marking scheme",
   "image": {
     "src": "/images/blog/assam-cee-2026-exam-pattern-explained.webp",
     "alt": "Assam engineering aspirant cross-checking state-board study books with physics, chemistry and mathematics notes",
@@ -2336,6 +2397,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 5,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "primaryKeyword": "cusat cat how many questions",
   "image": {
     "src": "/images/blog/cusat-cat-2026-what-to-expect.webp",
     "alt": "Indian engineering aspirant practicing rapid question navigation on a laptop with three subject workbooks",
@@ -2441,6 +2503,7 @@ export const BLOG_POSTS: BlogPost[] = [
   "readTimeMin": 8,
   "publishedAt": "2026-08-26",
   "authorName": "TakeMockTest Editorial",
+  "primaryKeyword": "engineering entrance exams other than jee main",
   "image": {
     "src": "/images/blog/engineering-entrance-exams-beyond-jee-main-2026-roundup.webp",
     "alt": "Engineering aspirant organizing seven unlabelled entrance-exam folders around a central study plan",
@@ -2571,6 +2634,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'rrb paramedical cbt shared sections',
     image: {
       src: '/images/blog/rrb-paramedical-cbt-pattern-what-this-site-can-and-cannot-cover.webp',
       alt: 'Paramedical aspirant comparing shared aptitude practice with separate healthcare study materials',
@@ -2613,6 +2677,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'is ssc gd constable exam easy',
     image: {
       src: '/images/blog/ssc-gd-constable-cbe-pattern-speed-over-difficulty.webp',
       alt: 'SSC GD aspirant practicing a computer-based test beside rough-work notes and an hourglass',
@@ -2654,6 +2719,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ssc cpo paper 1 vs paper 2',
     image: {
       src: '/images/blog/ssc-cpo-paper-1-vs-paper-2-same-marks-different-shape.webp',
       alt: 'Two balanced study workspaces comparing multiple subject notebooks with focused language preparation',
@@ -2696,6 +2762,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'ssc je paper 1 vs paper 2',
     image: {
       src: '/images/blog/ssc-je-paper-1-only-a-quarter-of-the-exam.webp',
       alt: 'Engineering aspirant studying general aptitude beside civil, electrical and mechanical learning materials',
@@ -2737,6 +2804,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 5,
     publishedAt: '2026-08-29',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'rpf constable vs rpf si',
     image: {
       src: '/images/blog/rpf-constable-vs-rpf-si-same-cbt-different-post.webp',
       alt: 'Two railway-recruitment aspirants comparing preparation notes in a station-side study space',
@@ -2780,6 +2848,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 8,
     publishedAt: '2026-09-07',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'which exams have a common syllabus',
     body: [
       { type: 'paragraph', text: 'Count the section names across the 157 official exam patterns published on this site and you get 245 distinct ones. Compare every exam against every other, and 1,247 pairs share at least three sections, covering at least half of the smaller exam\'s list. In 1,044 of those pairs the smaller exam\'s entire section list already sits inside the bigger one. That sounds like a shortcut, and sometimes it is. The rest of this explains when it is not.' },
       { type: 'takeaways', items: [
@@ -2825,6 +2894,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-09-07',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'should i practise by topic or by exam',
     body: [
       { type: 'paragraph', text: 'A full mock test is organised the way the exam is: a bit of everything, in the order the paper puts it. That is exactly right when you are rehearsing the exam. It is a poor way to fix one weak topic, because a single paper gives you only a handful of questions on it, spread through the sections, with the rest of the exam in between.' },
       { type: 'takeaways', items: [
@@ -2866,6 +2936,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTimeMin: 6,
     publishedAt: '2026-09-07',
     authorName: 'TakeMockTest Editorial',
+    primaryKeyword: 'reasoning section names in indian exams',
     body: [
       { type: 'paragraph', text: 'SSC calls it General Intelligence and Reasoning. IBPS calls it Reasoning Ability. CMAT and AILET both call it Logical Reasoning. One exam on this site simply calls it Logical Intelligence. Counted across the 157 official exam patterns published here, 52 exams carry a section that is reasoning and nothing else, and between them they use 23 different names for it.' },
       { type: 'takeaways', items: [
