@@ -788,7 +788,7 @@ descriptive/interview stage):
 
 1. Results → next practice: implemented locally. Recommend up to two lower-accuracy topics using at least three attempted answers and half the topic attempted. Match published tests in the same exam stage by exact section/topic labels; show answer review when no destination is available. Applies to immediate results and saved attempts. `npm run qa:practice` checks ranking and exported destinations.
 2. Improve discovery: implemented locally. Every exam stage now names a checked starting test and offers a native topic selector built from the topics actually present in its published tests. Mixed-test results are labelled clearly, and the selector combines with the existing test-type filters.
-3. Complete guides for priority exams: requires approved factual guide packages under the operating model; do not generate unverified exam facts.
+3. Complete guides for priority exams: RRB NTPC, the first of the 12-exam syllabus batch, is implemented locally from clauses 13.1 and 13.2 of official CEN 07/2025. The remaining 11 still require verified factual packages under the operating model; do not generate unverified exam facts.
 4. Daily practice: the existing Logical Reasoning ladder and topic sets already provide short, reviewed practice separate from full simulations. Add a changing daily selection only when the site has a reliable daily publishing or scheduling mechanism; a static "today" promise would go stale.
 5. Trust visibility: already present at the points where it matters — homepage method link and sourced updates, checked dates in every test row, official pattern sources before starting, and per-question sources after submission. Publish usage statistics only when measured.
 

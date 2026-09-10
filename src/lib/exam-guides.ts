@@ -66,6 +66,8 @@ const RRB_GROUP_D_ARCHIVED_CEN_URL =
 // The current official RRB listing page for this CEN, used where the page needs to point
 // readers at the live corrigenda trail rather than a point-in-time archived PDF.
 const RRB_GROUP_D_CURRENT_LISTING_URL = 'https://www.rrbcdg.gov.in/2025-09-level1.php';
+const RRB_NTPC_2025_NOTICE_URL =
+  'https://www.rrbcdg.gov.in/uploads/2025/07-NTPCUG/072025NTPCUG-CEN.pdf';
 const SSC_MTS_NOTICE_URL =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf';
 const SSC_GD_CONSTABLE_NOTICE_URL =
@@ -1608,6 +1610,151 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
           text: 'Source: Railway Recruitment Boards, CEN 09/2025 for recruitment to Level-1 posts. Final selection requirements remain subject to the official notice and subsequent corrigenda.',
           sourceLabel: 'View archived official CEN 09/2025 notice',
           sourceUrl: RRB_GROUP_D_ARCHIVED_CEN_URL,
+          tone: 'plain',
+        },
+      ],
+    },
+  },
+  'rrb-ntpc': {
+    syllabus: {
+      title: 'RRB NTPC Syllabus 2026: CBT 1 & CBT 2 Topics',
+      description:
+        'RRB NTPC syllabus for CBT 1 and CBT 2, covering Mathematics, General Intelligence and Reasoning, and General Awareness under CEN 07/2025.',
+      heading: 'RRB NTPC Syllabus 2026',
+      blocks: [
+        {
+          type: 'paragraph',
+          heading: 'CBT 1 syllabus and pattern',
+          text: 'CBT 1 contains **100 one-mark questions in 90 minutes**: 30 Mathematics, 30 General Intelligence and Reasoning, and 40 General Awareness. The paper is a screening test, and its standard generally follows the educational level prescribed for the notified posts.',
+        },
+        {
+          type: 'callout',
+          heading: 'Read the section counts as a guide',
+          text: 'The Railway Recruitment Boards describe the section-wise distribution as indicative, so the actual paper may vary slightly. Each wrong answer deducts **one-third of a mark**; eligible candidates using a scribe receive 120 minutes.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'Mathematics',
+              pattern: '30 questions · 30 marks',
+              topics: [
+                'Number system, decimals and fractions',
+                'LCM and HCF',
+                'Ratio, proportion and percentage',
+                'Mensuration',
+                'Time and work, and time and distance',
+                'Simple and compound interest',
+                'Profit and loss',
+                'Elementary algebra',
+                'Geometry and trigonometry',
+                'Elementary statistics',
+              ],
+            },
+            {
+              section: 'General Intelligence and Reasoning',
+              pattern: '30 questions · 30 marks',
+              topics: [
+                'Analogies, similarities and differences',
+                'Number and alphabetical series',
+                'Coding and decoding',
+                'Mathematical operations',
+                'Relationships and analytical reasoning',
+                'Syllogism and jumbling',
+                'Venn diagrams and puzzles',
+                'Data sufficiency',
+                'Statement-conclusion and statement-courses of action',
+                'Decision making and maps',
+                'Interpretation of graphs',
+              ],
+            },
+            {
+              section: 'General Awareness',
+              pattern: '40 questions · 40 marks',
+              topics: [
+                'Current events of national and international importance',
+                'Games and sports',
+                'Indian art, culture, literature, monuments and places',
+                'General Science and Life Science up to Class 10 CBSE level',
+                'History of India and the freedom struggle',
+                'Physical, social and economic geography of India and the world',
+                'Indian polity, governance, the Constitution and the political system',
+                'Scientific and technological developments, including India’s space and nuclear programmes',
+                'The United Nations, major world organisations and environmental issues',
+                'Computer basics, computer applications and common abbreviations',
+                'Indian transport systems, the economy and flagship government programmes',
+                'Famous personalities, Indian flora and fauna, and major government and public-sector organisations',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'paragraph',
+          heading: 'CBT 2 syllabus and pattern',
+          text: 'CBT 2 contains **120 one-mark questions in 90 minutes**: 35 Mathematics, 35 General Intelligence and Reasoning, and 50 General Awareness. It tests the same published topic areas as CBT 1 with a larger share of General Awareness questions.',
+        },
+        {
+          type: 'topicSections',
+          sections: [
+            {
+              section: 'Mathematics',
+              pattern: '35 questions · 35 marks',
+              topics: [
+                'Number system, decimals and fractions',
+                'LCM and HCF',
+                'Ratio, proportion and percentage',
+                'Mensuration',
+                'Time and work, and time and distance',
+                'Simple and compound interest',
+                'Profit and loss',
+                'Elementary algebra',
+                'Geometry and trigonometry',
+                'Elementary statistics',
+              ],
+            },
+            {
+              section: 'General Intelligence and Reasoning',
+              pattern: '35 questions · 35 marks',
+              topics: [
+                'Analogies, similarities and differences',
+                'Number and alphabetical series',
+                'Coding and decoding',
+                'Mathematical operations',
+                'Relationships and analytical reasoning',
+                'Syllogism and jumbling',
+                'Venn diagrams and puzzles',
+                'Data sufficiency',
+                'Statement-conclusion and statement-courses of action',
+                'Decision making and maps',
+                'Interpretation of graphs',
+              ],
+            },
+            {
+              section: 'General Awareness',
+              pattern: '50 questions · 50 marks',
+              topics: [
+                'Current events of national and international importance',
+                'Games and sports',
+                'Indian art, culture, literature, monuments and places',
+                'General Science and Life Science up to Class 10 CBSE level',
+                'History of India and the freedom struggle',
+                'Physical, social and economic geography of India and the world',
+                'Indian polity, governance, the Constitution and the political system',
+                'Scientific and technological developments, including India’s space and nuclear programmes',
+                'The United Nations, major world organisations and environmental issues',
+                'Computer basics, computer applications and common abbreviations',
+                'Indian transport systems, the economy and flagship government programmes',
+                'Famous personalities, Indian flora and fauna, and major government and public-sector organisations',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'sourceNote',
+          heading: 'Official source',
+          text: 'Prepared from Railway Recruitment Boards, Detailed Centralised Employment Notice CEN 07/2025 for NTPC Undergraduate posts, clauses 13.1 and 13.2, checked 10 September 2026.',
+          sourceLabel: 'View the official notice',
+          sourceUrl: RRB_NTPC_2025_NOTICE_URL,
           tone: 'plain',
         },
       ],
