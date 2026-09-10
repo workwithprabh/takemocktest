@@ -34,7 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   if (!exam) return {};
   const hasCheckedTests = exam.stages.some((stage) => stage.tests.some((test) => test.status === 'checked'));
   return pageMetadata({
-    title: `${exam.shortName ?? exam.name} Mock Test ${YEAR}, Practice Free Test Series`,
+    title: getMockTestIntro(examSlug)?.title
+      ?? `${exam.shortName ?? exam.name} Mock Test ${YEAR}, Practice Free Test Series`,
     description: `Attempt free ${exam.name} practice tests with instant results and clearly labelled source-review status.`,
     path: `/${country}/${exam.slug}/mock-test`,
     noIndex: !hasCheckedTests,
@@ -107,7 +108,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
               { label: 'Mock tests' },
             ]} />
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-action-700">Free practice series</p>
-            <h1 className="font-sans text-3xl font-bold tracking-tight text-ink-900 md:text-5xl">{exam.name} Mock Test {YEAR}</h1>
+            <h1 className="font-sans text-3xl font-bold tracking-tight text-ink-900 md:text-5xl">{intro?.h1 ?? `${exam.name} Mock Test ${YEAR}`}</h1>
             {/* An exam with a written intro gets its own numbers and its own
                 strategy note; the rest keep the generic line. See
                 src/lib/mock-test-intros.ts for why the generic line was not
