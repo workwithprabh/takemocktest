@@ -70,7 +70,14 @@ export default async function ExamCategoryPage({
         </div>
         <div>
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Exam pathway</p>
-          <h1 className="mb-2 text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">{category.name}</h1>
+          {/* The H1 carries "Exams" because that is the word the searcher types and
+              the word this class's declared target needs: seo-keywords.ts gates the
+              category class on "{category} exams", and the <title> has said
+              "{category} Exams in India" all along while the H1 said only the
+              category name. scripts/audit-keyword-map.mjs now fails the build on
+              that mismatch rather than leaving twelve landing pages headed by a
+              phrase nobody searches. */}
+          <h1 className="mb-2 text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">{category.name} Exams</h1>
           <p className="max-w-2xl text-sm leading-6 text-ink-700">{category.description}</p>
         </div>
         <div className="grid grid-cols-2 divide-x divide-ink-200 border-t border-ink-200 pt-4 md:border-l md:border-t-0 md:pl-8 md:pt-0">

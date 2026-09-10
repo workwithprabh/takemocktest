@@ -13,6 +13,13 @@
 // export, so a template change that quietly drops the target keyword fails the
 // build instead of being discovered months later in Search Console.
 //
+// That sentence described a script that did not exist until 10 September 2026.
+// The map was documentation claiming to be a gate, which is how twelve exam
+// category pages shipped with an H1 of "Engineering & Technology" while their
+// own declared target was "{category} exams" and their titles had said
+// "{category} Exams in India" the whole time. The audit is real now and runs in
+// `npm run qa:site`; the first thing it did was find those twelve.
+//
 // Rule of one: a keyword belongs to exactly one page class per country. Where
 // two classes could plausibly claim the same phrase, the more specific class
 // qualifies its own. That is what OWNS/DEFERS below record.
@@ -174,11 +181,11 @@ export const KEYWORD_MAP: readonly KeywordTarget[] = [
   {
     page: 'Blog post',
     path: '/{country}/blog/{slug}',
-    primary: 'per post, declared in src/lib/blog.ts',
+    primary: 'per post, in the primaryKeyword field of src/lib/blog.ts',
     intent: 'informational',
     titleMustContain: [],
     h1MustContain: [],
-    notes: 'The one class where the target is per page rather than per template, so the map cannot state it here.',
+    notes: 'The one class where the target is per page rather than per template, so the map cannot state it here. Until 10 September 2026 this line pointed at a field that did not exist and every post fell back to an H1 the generator inferred; primaryKeyword is now required on BlogPost, so the claim is checkable. A post must not take a phrase another class owns: exam pattern, syllabus, eligibility and mock-test keywords belong to that exam\'s pages, so posts target the question or comparison a student types instead.',
   },
   {
     page: 'Exam updates',

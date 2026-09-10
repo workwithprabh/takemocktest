@@ -18,16 +18,16 @@
    "robots": "noindex; noindex, follow"
   },
   "/in/about": {
-   "title": "About | TakeMockTest",
-   "description": "How TakeMockTest builds free mock tests and helps students review exam performance.",
+   "title": "About and editorial policy | TakeMockTest",
+   "description": "How TakeMockTest builds its mock tests, where the exam patterns come from, how questions are checked, and how the content is written.",
    "h1": [
     "About TakeMockTest"
    ],
-   "h2Count": 4,
-   "h2Hash": "17f4160d2654",
+   "h2Count": 8,
+   "h2Hash": "1218fd437bde",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "521a17c8b136",
+   "ogHash": "f38072901189",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -17834,7 +17834,7 @@
    "title": "Commerce &amp; Professional Exams in India: Mock Test Directory",
    "description": "Accounting, company secretaryship, cost accounting, actuarial, finance, and certification exams. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Commerce & Professional"
+    "Commerce & Professional Exams"
    ],
    "h2Count": 8,
    "h2Hash": "8d222f9960fb",
@@ -17852,7 +17852,7 @@
    "title": "Defence &amp; Uniformed Services Exams in India: Mock Test Directory",
    "description": "Officer, Agniveer, paramilitary, Coast Guard, and armed-forces recruitment tests. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Defence & Uniformed Services"
+    "Defence & Uniformed Services Exams"
    ],
    "h2Count": 8,
    "h2Hash": "9490d982faa9",
@@ -17870,7 +17870,7 @@
    "title": "Design, Fashion &amp; Hospitality Exams in India: Mock Test Directory",
    "description": "Design, fashion, creative aptitude, footwear, and hotel-management entrances. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Design, Fashion & Hospitality"
+    "Design, Fashion & Hospitality Exams"
    ],
    "h2Count": 8,
    "h2Hash": "9e832d7ab197",
@@ -17888,7 +17888,7 @@
    "title": "Engineering &amp; Technology Exams in India: Mock Test Directory",
    "description": "Undergraduate, postgraduate, architecture, and major state engineering entrances. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Engineering & Technology"
+    "Engineering & Technology Exams"
    ],
    "h2Count": 9,
    "h2Hash": "0ae7a8bfc147",
@@ -17906,7 +17906,7 @@
    "title": "Government Jobs Exams in India: Mock Test Directory",
    "description": "SSC, banking, railways, civil services, regulators, and state recruitment exams. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Government Jobs"
+    "Government Jobs Exams"
    ],
    "h2Count": 11,
    "h2Hash": "74e8ae9a447c",
@@ -17924,7 +17924,7 @@
    "title": "Law &amp; Judiciary Exams in India: Mock Test Directory",
    "description": "Undergraduate and postgraduate law admissions, bar, and state judiciary tests. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Law & Judiciary"
+    "Law & Judiciary Exams"
    ],
    "h2Count": 8,
    "h2Hash": "5ba3acc9e341",
@@ -17942,7 +17942,7 @@
    "title": "Management &amp; Business Exams in India: Mock Test Directory",
    "description": "MBA, integrated management, and major national or institute-level business entrances. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Management & Business"
+    "Management & Business Exams"
    ],
    "h2Count": 8,
    "h2Hash": "6bb905f54ad5",
@@ -17960,7 +17960,7 @@
    "title": "Medical &amp; Healthcare Exams in India: Mock Test Directory",
    "description": "Medical, dental, nursing, pharmacy, and postgraduate healthcare entrances. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Medical & Healthcare"
+    "Medical & Healthcare Exams"
    ],
    "h2Count": 9,
    "h2Hash": "dfa99f44837d",
@@ -17978,7 +17978,7 @@
    "title": "Study Abroad Exams in India: Mock Test Directory",
    "description": "Admissions and English-language tests used for overseas study applications. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Study Abroad"
+    "Study Abroad Exams"
    ],
    "h2Count": 8,
    "h2Hash": "1ed238a988ed",
@@ -17996,7 +17996,7 @@
    "title": "Teaching &amp; Research Exams in India: Mock Test Directory",
    "description": "Teacher eligibility, lecturer eligibility, school recruitment, and research fellowship tests. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "Teaching & Research"
+    "Teaching & Research Exams"
    ],
    "h2Count": 8,
    "h2Hash": "7567710e3ca8",
@@ -18014,7 +18014,7 @@
    "title": "University &amp; Science Exams in India: Mock Test Directory",
    "description": "General university admissions and specialist science or research entrances. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "University & Science"
+    "University & Science Exams"
    ],
    "h2Count": 8,
    "h2Hash": "0866b4b78896",
@@ -58325,21 +58325,21 @@
    "robots": "index, follow"
   },
   "/in/rrb-ntpc/syllabus": {
-   "title": "RRB NTPC Syllabus 2026: Section-wise Topics | TakeMockTest",
-   "description": "RRB NTPC syllabus sections being checked against current official documents before publication.",
+   "title": "RRB NTPC Syllabus 2026: CBT 1 &amp; CBT 2 Topics | TakeMockTest",
+   "description": "RRB NTPC syllabus for CBT 1 and CBT 2, covering Mathematics, General Intelligence and Reasoning, and General Awareness under CEN 07/2025.",
    "h1": [
-    "RRB NTPC Syllabus"
+    "RRB NTPC Syllabus 2026"
    ],
-   "h2Count": 4,
-   "h2Hash": "17f4160d2654",
+   "h2Count": 14,
+   "h2Hash": "00d266b4f18a",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
    ],
    "schemaHash": "473b7300b0bd",
-   "ogHash": "21c783a49688",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "ogHash": "ef426087ac50",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/rrb-ntpc/test/cbt-1-full-mock-1/attempt": {
    "title": "RRB NTPC CBT 1 Full Mock Test 1 | TakeMockTest",
@@ -83903,16 +83903,16 @@
    "robots": "index, follow"
   },
   "/ng/about": {
-   "title": "About | TakeMockTest",
-   "description": "How TakeMockTest builds free mock tests and helps students review exam performance.",
+   "title": "About and editorial policy | TakeMockTest",
+   "description": "How TakeMockTest builds its mock tests, where the exam patterns come from, how questions are checked, and how the content is written.",
    "h1": [
     "About TakeMockTest"
    ],
-   "h2Count": 4,
-   "h2Hash": "17f4160d2654",
+   "h2Count": 8,
+   "h2Hash": "1218fd437bde",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
-   "ogHash": "7dd199f1753f",
+   "ogHash": "df625e8c24a4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -83934,7 +83934,7 @@
    "title": "University Admission Exams in India: Mock Test Directory",
    "description": "Matriculation and tertiary admission tests taken in Nigeria. Browse exams and available TakeMockTest practice series.",
    "h1": [
-    "University Admission"
+    "University Admission Exams"
    ],
    "h2Count": 7,
    "h2Hash": "3dee0787f4bd",
