@@ -27,12 +27,15 @@ import argparse
 import json
 import os
 import sys
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
 SITE = 'sc-domain:takemocktest.com'
 SCOPES = ['https://www.googleapis.com/auth/webmasters.readonly']
 API_BASE = f'https://searchconsole.googleapis.com/webmasters/v3/sites/{SITE}'
+# URL Inspection lives on the v1 surface rather than webmasters/v3.
+INSPECT_URL = 'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect'
 
 
 def load_session():
@@ -151,6 +154,28 @@ def path_of(url):
             break
     slash = url.find('/')
     return url[slash:] if slash != -1 else '/'
+
+
+def summarise_coverage(results):
+    """Cross-tabulate inspection verdicts by page type.
+
+    The headline number is per type, not site-wide: "60% of pages are indexed"
+    hides the case that matters, where one page type is fully indexed and
+    another is entirely absent.
+    """
+    by_type = {}
+    for row in results:
+        state = row.get('coverageState') or (f"error {row['error']}" if 'error' in row else 'unknown')
+        bucket = by_type.setdefault(row.get('type', 'unknown'), {})
+        bucket[state] = bucket.get(state, 0) + 1
+
+    lines = []
+    for page_type in sorted(by_type):
+        states = by_type[page_type]
+        total = sum(states.values())
+        parts = ', '.join(f'{count} {state}' for state, count in sorted(states.items(), key=lambda kv: -kv[1]))
+        lines.append(f'  {page_type:<16} {total:>3} sampled: {parts}')
+    return '\n'.join(lines)
 
 
 def summarise(rows):
@@ -336,6 +361,59 @@ def cmd_panel(session, args):
         print(f'No rows for {start}..{end} — nothing written.')
 
 
+def cmd_inspect(session, args):
+    """Ask Search Console whether it has indexed each URL in a sample.
+
+    Search Analytics cannot answer this. It reports only pages that received an
+    impression, so "never indexed" and "indexed but never shown" are both simply
+    absent from it — and they call for opposite work. The first is a discovery
+    problem, the second a relevance or authority one.
+
+    One call per URL against a daily quota, so this reads the stratified sample
+    that scripts/build-index-sample.mjs writes rather than walking the site.
+    """
+    sample = Path(args.sample)
+    if not sample.exists():
+        print(f'{sample} not found — run `node scripts/build-index-sample.mjs` first.', file=sys.stderr)
+        sys.exit(1)
+
+    entries = []
+    for line in sample.read_text(encoding='utf-8').splitlines():
+        if not line.strip():
+            continue
+        path_part, _, page_type = line.partition('\t')
+        entries.append((path_part, page_type or 'unknown'))
+
+    results = []
+    for index, (page_path, page_type) in enumerate(entries, start=1):
+        body = {'inspectionUrl': f'https://takemocktest.com{page_path}', 'siteUrl': SITE}
+        resp = session.post(INSPECT_URL, json=body)
+        if resp.status_code != 200:
+            print(f'  {page_path}: HTTP {resp.status_code} {resp.text[:200]}', file=sys.stderr)
+            results.append({'page': page_path, 'type': page_type, 'error': resp.status_code})
+            continue
+        status = resp.json().get('inspectionResult', {}).get('indexStatusResult', {})
+        results.append({
+            'page': page_path,
+            'type': page_type,
+            'verdict': status.get('verdict'),
+            'coverageState': status.get('coverageState'),
+            'robotsTxtState': status.get('robotsTxtState'),
+            'indexingState': status.get('indexingState'),
+            'pageFetchState': status.get('pageFetchState'),
+            'lastCrawlTime': status.get('lastCrawlTime'),
+            'googleCanonical': status.get('googleCanonical'),
+        })
+        # Well inside the per-minute ceiling; the daily quota is the real limit.
+        time.sleep(0.2)
+        if index % 25 == 0:
+            print(f'  inspected {index}/{len(entries)}')
+
+    Path(args.out).write_text(json.dumps(results, indent=1) + '\n', encoding='utf-8')
+    print(f'\ninspected {len(results)} URLs -> {args.out}\n')
+    print(summarise_coverage(results))
+
+
 def cmd_countries(session, args):
     """Which countries already find this site, before a single page is written
     for them. Search Console retired its International Targeting report in
@@ -488,6 +566,11 @@ def main():
     p.add_argument('--days', type=int, default=5, help='Trailing window; covers Search Console revising recent days.')
     p.add_argument('--out', default='data/gsc', help='Directory to write <date>.json into.')
     p.set_defaults(func=cmd_panel)
+
+    p = sub.add_parser('inspect', help='URL Inspection over a stratified sample: is Google indexing these pages?')
+    p.add_argument('--sample', default='data/index-audit-sample.tsv')
+    p.add_argument('--out', default='data/index-audit-result.json')
+    p.set_defaults(func=cmd_inspect)
 
     p = sub.add_parser('selftest', help='Exercise the aggregation helpers. No credentials needed.')
     p.set_defaults(func=cmd_selftest, needs_session=False)
