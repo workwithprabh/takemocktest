@@ -142,6 +142,25 @@ short aside, and a period to just start a new sentence. Number ranges get spelle
   matters for the student's strategy*, not just that it exists. That's the "experience"
   half of E-E-A-T, not just "expertise."
 
+**Run the `seo-content` skill on any batch of page copy before it ships.**
+Added 10 September 2026. ChatGPT supplies the keywords; the writing happens here,
+so the quality check has to happen here too rather than being assumed. The skill
+is the standing checklist for that: Google's Who / How / Why heuristic, the
+E-E-A-T split with trust weighted highest, keyword placement, heading hierarchy,
+internal-link density, readability and AI-citation readiness.
+
+Two cautions that come with it. Its scores are the skill's own heuristics, not
+Google-internal signals, so report them as such. And its word-count table is a
+coverage floor, not a target, which is the same rule as the paragraph below.
+
+What it caught on its first run over Batch 1, none of which the build or the
+factual review had surfaced: no byline or author anywhere, so Google's "Who
+created this?" had no answer; the declared primary "SSC GD mock test" appearing
+zero times because the copy only ever used the longer official name; and an
+average sentence length of 24.9 words with a quarter of sentences over 30, which
+is the opposite of the vary-your-rhythm rule two paragraphs down. Ship copy past
+this skill, not past a build.
+
 **Never write toward a word count.** Added 10 September 2026, after a batch note
 celebrated nine mock-test hubs going from about 430 words to between 759 and
 1,848 as if the number were the achievement. It is not. Google states it has no
