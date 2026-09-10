@@ -145,14 +145,33 @@ fully objective Part A papers that can be.
    found and fixed on 7 September 2026, went unnoticed for a day after shipping. Two exams disclose a four-option
    rendering as a deliberate platform representation in their pattern notes, SLAT and KLEEE;
    those are correct as they stand, but nothing enforces that such a note exists.
-3. **Ten products have exactly one test** (NATA, CSEET, IPMAT Indore, XAT, GPAT, INI-CET,
-   NEET PG, GMAT, LSAT, IIT JAM). Per the operating model §10 these are LAUNCH COMPLETE, not
-   SERIES COMPLETE, and each needs a test-series manifest before further tests are built.
+3. **Four products still have exactly one test** (IPMAT Indore, XAT, GMAT, LSAT), plus the
+   three clinical products held at item 6 below. NATA, IIT JAM, DBT BET, GPAT and CSEET were
+   taken to two full mocks on 10 September 2026. Per the operating model §10 a one-test product
+   is LAUNCH COMPLETE, not SERIES COMPLETE, and each needs a test-series manifest before
+   further tests are built.
 4. **NEST is blocked upstream.** `P2_NEST_2026_CODING_BLOCKED_COLLISION` is a Main Brain PASS
    whose academic content is frozen, but one Mathematics record collides with live content.
    Its own instructions require stopping and reporting rather than editing a frozen record, so
    it waits on a Writer/Main Brain substitution.
 5. **Test-series depth beyond the first mock**, once the manifests in item 3 exist.
+6. **Three clinical products are held for the handoff pipeline, not for a coding agent.**
+   NEET PG (180 questions), INI-CET (200) and DNB PDCET Anaesthesiology (120) each still have
+   exactly one full mock. Their second mocks were scoped on 10 September 2026 and deliberately
+   not self-authored in the repository. The first mock for all three came through the Main
+   Brain handoff, and the handoff exists precisely because clinical content needs a sourced
+   answer key and an independent question-by-question audit, which the coding agent cannot
+   supply: `QUESTION_BANK_HANDOFF.md` reserves academic QA to the Writer and forbids the
+   integrator from changing verified question content. The subject spread of the existing
+   mocks shows why the distinction bites. NEET PG mock 1 is 20 General Medicine, 17 General
+   Surgery, 17 Obstetrics and Gynaecology and 8 Paediatrics before Pharmacology is counted,
+   and DNB PDCET is 120 questions of anaesthetic practice covering dosing, airway management
+   and the treatment of malignant hyperthermia. A subtly wrong drug of choice or management
+   key in that material would be memorised by doctors in training, which is a different order
+   of consequence from a mis-set arithmetic answer. Writing the mocks from settled preclinical
+   recall alone would dodge the risk but misrepresent the shape of all three papers, so it is
+   not an acceptable substitute. The specification for the three banks is in
+   `TIER_C_CLINICAL_HANDOFF.md`, ready to go into the pipeline.
 
 ## Cross-exam practice sections
 
