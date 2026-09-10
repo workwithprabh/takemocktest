@@ -84,7 +84,7 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
     title: 'RRB ALP Mock Test 2026: Free CBT 1 & CBT 2 Tests',
   },
   'rrb-je': {
-    lead: 'A free RRB JE mock test series covering both computer-based stages of Junior Engineer recruitment. The RRB JE CBT 1 mock test is 100 questions in 90 minutes. The RRB JE CBT 2 mock test is 150 questions, dominated by branch-specific technical work. Every RRB JE online test here is free to attempt.',
+    lead: 'A free RRB JE mock test series covering both computer-based stages of Junior Engineer recruitment. The RRB JE CBT 1 mock test is 100 questions in 90 minutes. The RRB JE CBT 2 mock test is 150 questions in 120 minutes, dominated by branch-specific technical work. Every RRB JE online test here is free to attempt.',
     strategy: 'CBT 1 is common to every JE, DMS and CMA discipline, so everyone sits the same paper. CBT 2 is not. Its Technical Abilities section alone is 100 of the 150 questions, and those questions are specific to your engineering branch. That is the shift worth planning for: general preparation carries you through CBT 1, and branch depth decides CBT 2. Both stages deduct one third of a mark for a wrong answer, so the guessing maths is the same in each. The RRB JE test series is split by stage for that reason.',
     title: 'RRB JE Mock Test 2026: Free CBT 1 & CBT 2 Tests',
     h1: 'RRB JE (Junior Engineer) Mock Test 2026',

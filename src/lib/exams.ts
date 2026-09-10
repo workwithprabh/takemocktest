@@ -4354,7 +4354,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 150,
           duration: 120,
           negativeMarking: 0.333,
-          note: 'CBT 2 is a single, continuous 150-question, 150-minute-timed Computer Based Test with no sectional lock. Unlike CBT 1, which is common to every JE/DMS/CMA discipline, CBT 2\'s dominant Technical Abilities section (100 of the 150 questions) is branch-specific: JE recruits across several engineering disciplines (Civil, Mechanical, Electrical, Electronics & Communication, and others, varying by cycle), while DMS and CMA each have their own distinct, non-engineering technical syllabus. This site currently covers the Civil and Mechanical Technical Abilities syllabi only; other JE disciplines and the DMS/CMA syllabi are not yet built. The four non-technical sections (General Awareness, Physics and Chemistry, Basics of Computers and Applications, Basics of Environment and Pollution Control) are common across every discipline. General Awareness (15Q) is not built, since it needs current, fact-checked content rather than stable engineering/science fundamentals; the other three non-technical sections, being stable and definitional, are built once and shared across both Civil and Mechanical mocks.',
+          note: 'CBT 2 is a single, continuous 150-question, 120-minute-timed Computer Based Test with no sectional lock. Unlike CBT 1, which is common to every JE/DMS/CMA discipline, CBT 2\'s dominant Technical Abilities section (100 of the 150 questions) is branch-specific: JE recruits across several engineering disciplines (Civil, Mechanical, Electrical, Electronics & Communication, and others, varying by cycle), while DMS and CMA each have their own distinct, non-engineering technical syllabus. This site currently covers the Civil and Mechanical Technical Abilities syllabi only; other JE disciplines and the DMS/CMA syllabi are not yet built. The four non-technical sections (General Awareness, Physics and Chemistry, Basics of Computers and Applications, Basics of Environment and Pollution Control) are common across every discipline. General Awareness (15Q) is not built, since it needs current, fact-checked content rather than stable engineering/science fundamentals; the other three non-technical sections, being stable and definitional, are built once and shared across both Civil and Mechanical mocks.',
           sectionBreakdown: [
             { name: 'Technical Abilities', questions: 100, marks: 100, duration: 120 },
             { name: 'General Awareness', questions: 15, marks: 15, duration: 120 },
@@ -4364,7 +4364,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           ],
           timerNote: 'Single composite 120-minute timer for the entire paper: no sectional lock, you can move between sections freely.',
           sourceUrl: RRB_JE_2025_NOTICE,
-          checkedOn: '28 August 2026',
+          checkedOn: '10 September 2026',
         },
         tests: [
           {
