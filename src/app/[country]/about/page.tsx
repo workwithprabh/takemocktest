@@ -91,13 +91,19 @@ export default async function AboutPage({ params }: { params: Promise<{ country:
         </p>
       </div>
 
-      <h2 className={heading}>How this content is written</h2>
+      <h2 className={heading}>Who writes this</h2>
       <div className={section}>
         <p>
-          The exam pages, the {postCount} articles in the blog and the question banks are drafted with
-          AI assistance and then checked against primary sources and the automated audits described
-          above. We think you should know that, and we would rather say it plainly than let a byline
-          imply otherwise.
+          Everything on TakeMockTest is published by the TakeMockTest Editorial Team, which is
+          the byline you will see on the {postCount} articles in the blog and on every exam
+          series. It is a house byline rather than a single named person, because the work is
+          genuinely shared: exam research, question writing, the independent question audit and
+          the technical checks are separate steps done by different people and tools.
+        </p>
+        <p>
+          The exam pages, the blog and the question banks are drafted with AI assistance and then
+          checked against primary sources and the automated audits described above. We think you
+          should know that, and we would rather say it plainly than let a byline imply otherwise.
         </p>
         <p>
           What we commit to is not who typed it, but what it does: every factual claim traceable to a

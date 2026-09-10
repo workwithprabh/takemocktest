@@ -110,7 +110,15 @@ export function articleSchema(opts: {
     image: opts.image ? `${SITE_URL}${opts.image}` : undefined,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
-    author: { '@type': 'Organization', name: opts.authorName, url: `${SITE_URL}/in/about` },
+    // The author URL was hardcoded to /in/about while the path it sits beside
+    // is country-scoped, which is the same defect that put five Nigerian
+    // canonicals on Indian URLs. The blog is India-only today, so nothing was
+    // wrong yet; deriving it now means nothing will be when that changes.
+    author: {
+      '@type': 'Organization',
+      name: opts.authorName,
+      url: `${SITE_URL}/${opts.path.split('/')[1] || 'in'}/about`,
+    },
     publisher: organizationSchema(),
   };
 }

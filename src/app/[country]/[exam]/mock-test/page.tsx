@@ -201,9 +201,10 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
             verifying a claim is already looking. */}
         <p className="mb-8 border-l-2 border-ink-200 pl-4 text-sm leading-6 text-ink-600">
           <strong className="font-semibold text-ink-900">How this page is made:</strong>{' '}
-          every pattern figure below is taken from the official source linked with it and
-          carries the date it was last checked. Questions are written in-house to the
-          published syllabus and audited before release.{' '}
+          the TakeMockTest Editorial Team maintains this series. Every pattern figure below
+          is taken from the official source linked with it and carries the date it was last
+          checked. Questions are written in-house to the published syllabus and audited
+          before release.{' '}
           <Link href={`/${country}/about`} className="text-ink-900 underline underline-offset-2 hover:text-ink-500">
             Read the editorial policy
           </Link>
