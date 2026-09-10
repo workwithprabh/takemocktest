@@ -1,0 +1,75 @@
+{
+  "_note": "Search-volume figures supplied by the site owner, not measured in this repository. Recorded here so the keyword sheet can show them with their provenance attached instead of presenting them as something this project verified. WebSearch from the build environment returns US results, so India volumes cannot be checked here; nothing in this file has been independently confirmed. Replace or extend it whenever fresher data is pulled, and keep the dataset date, because a volume without a date is not a fact.",
+  "_columns": {
+    "url": "The page this phrase was researched for. Explicit rather than inferred: the sheet's own primary_keyword for these mock-test hubs reads '{exam} mock test 2026' because it is derived from the H1, while the phrase measured below carries no year. Joining on the phrase would have silently attached a volume to a different phrase.",
+    "keyword": "The exact phrase the figure was measured for.",
+    "monthlyVolume": "Monthly searches reported by the provider for the stated market.",
+    "market": "Country the figure applies to.",
+    "provider": "Who reported it.",
+    "dataset": "Which of the provider's datasets, by month.",
+    "suppliedBy": "Who brought the figure into this project.",
+    "verifiedHere": "Whether this repository confirmed it. Always false for supplied data."
+  },
+  "keywords": [
+    {
+      "url": "https://takemocktest.com/in/ssc-cgl/mock-test",
+      "keyword": "ssc cgl mock test",
+      "monthlyVolume": 22200,
+      "market": "India",
+      "provider": "Semrush",
+      "dataset": "2026-02",
+      "suppliedBy": "site owner",
+      "verifiedHere": false
+    },
+    {
+      "url": "https://takemocktest.com/in/ssc-chsl/mock-test",
+      "keyword": "ssc chsl mock test",
+      "monthlyVolume": 12100,
+      "market": "India",
+      "provider": "Semrush",
+      "dataset": "2026-02",
+      "suppliedBy": "site owner",
+      "verifiedHere": false
+    },
+    {
+      "url": "https://takemocktest.com/in/ibps-po/mock-test",
+      "keyword": "ibps po mock test",
+      "monthlyVolume": 5400,
+      "market": "India",
+      "provider": "Semrush",
+      "dataset": "2026-07",
+      "suppliedBy": "site owner",
+      "verifiedHere": false
+    },
+    {
+      "url": "https://takemocktest.com/in/ibps-clerk/mock-test",
+      "keyword": "ibps clerk mock test",
+      "monthlyVolume": 5400,
+      "market": "India",
+      "provider": "Semrush",
+      "dataset": "2026-07",
+      "suppliedBy": "site owner",
+      "verifiedHere": false
+    },
+    {
+      "keyword": "bank exam mock test",
+      "monthlyVolume": 5400,
+      "market": "India",
+      "provider": "Semrush",
+      "dataset": "2026-07",
+      "suppliedBy": "site owner",
+      "verifiedHere": false,
+      "_unowned": "No page on this site declares this phrase as its target. The closest class is the exam category page, whose declared primary is '{category} exams'. Left unassigned rather than attached to a page that is not written for it."
+    },
+    {
+      "keyword": "free bank mock test",
+      "monthlyVolume": 2900,
+      "market": "India",
+      "provider": "Semrush",
+      "dataset": "2026-07",
+      "suppliedBy": "site owner",
+      "verifiedHere": false,
+      "_unowned": "As above. Both unowned phrases are real demand this site currently has no page written to answer, which is a content gap worth a decision rather than a row to fill in."
+    }
+  ]
+}

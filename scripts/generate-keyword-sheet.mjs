@@ -95,6 +95,36 @@ const blogKeywords = (() => {
   return map;
 })();
 
+// Search volumes supplied by the site owner (see SEO_KEYWORD_VOLUMES.json).
+// They are carried into the sheet with their provider, dataset month and the
+// fact that this repository did not verify them, because a bare number in a
+// spreadsheet loses the one thing a reader needs to weigh it. Joined on URL
+// rather than on the phrase: the sheet's own primary_keyword for a mock-test
+// hub reads "{exam} mock test 2026" while the measured phrase carries no year,
+// so a phrase join would have attached the figure to a different phrase.
+const suppliedVolumes = (() => {
+  const file = path.join(process.cwd(), 'SEO_KEYWORD_VOLUMES.json');
+  if (!fs.existsSync(file)) return { byUrl: new Map(), unowned: [] };
+  const parsed = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const byUrl = new Map();
+  const unowned = [];
+  for (const entry of parsed.keywords ?? []) {
+    if (entry.url) byUrl.set(entry.url.replace(/\/$/, ''), entry);
+    else unowned.push(entry);
+  }
+  return { byUrl, unowned };
+})();
+
+function volumeFor(url) {
+  const entry = suppliedVolumes.byUrl.get(url.replace(/\/$/, ''));
+  if (!entry) return { volume: '', keyword: '', source: '' };
+  return {
+    volume: String(entry.monthlyVolume),
+    keyword: entry.keyword,
+    source: `${entry.provider} ${entry.dataset} ${entry.market}, supplied by ${entry.suppliedBy}, not verified here`,
+  };
+}
+
 function classify(rel) {
   const parts = rel.split('/').filter(Boolean);
   const [, ...rest] = parts; // drop the country segment
@@ -144,9 +174,13 @@ for (const url of urls) {
   const h1 = tag(html, /<h1[^>]*>([\s\S]*?)<\/h1>/);
   const title = tag(html, /<title>([\s\S]*?)<\/title>/);
   const cls = classify(rel);
+  const supplied = volumeFor(url);
   rows.push({
     url,
     cls,
+    volume: supplied.volume,
+    volumeKeyword: supplied.keyword,
+    volumeSource: supplied.source,
     keyword: cls === 'blog post'
       ? (blogKeywords.get(rel.split('/').pop()) ?? keywordFor(cls, h1))
       : keywordFor(cls, h1),
@@ -160,8 +194,8 @@ for (const url of urls) {
 
 const esc = (v) => `"${String(v).replace(/"/g, '""')}"`;
 const csv = [
-  ['url', 'page_class', 'primary_keyword', 'evidence', 'h1', 'title'].join(','),
-  ...rows.map((r) => [r.url, r.cls, r.keyword, r.evidence, r.h1, r.title].map(esc).join(',')),
+  ['url', 'page_class', 'primary_keyword', 'evidence', 'measured_keyword', 'monthly_volume', 'volume_source', 'h1', 'title'].join(','),
+  ...rows.map((r) => [r.url, r.cls, r.keyword, r.evidence, r.volumeKeyword, r.volume, r.volumeSource, r.h1, r.title].map(esc).join(',')),
 ].join('\n');
 fs.writeFileSync(path.join(process.cwd(), 'SEO_KEYWORD_SHEET.csv'), `${csv}\n`);
 
@@ -173,6 +207,16 @@ for (const [cls, n] of Object.entries(byClass).sort((a, b) => b[1] - a[1])) {
 }
 const byEvidence = {};
 for (const r of rows) byEvidence[r.evidence] = (byEvidence[r.evidence] ?? 0) + 1;
+const withVolume = rows.filter((r) => r.volume).length;
+console.log(`  supplied search volumes attached: ${withVolume} of ${suppliedVolumes.byUrl.size} entries matched a built URL.`);
+for (const [url] of suppliedVolumes.byUrl) {
+  if (!rows.some((r) => r.url.replace(/\/$/, '') === url)) {
+    console.log(`  WARNING  volume entry has no matching indexable page: ${url}`);
+  }
+}
+for (const entry of suppliedVolumes.unowned) {
+  console.log(`  unowned  "${entry.keyword}" (${entry.monthlyVolume}/mo) has no page declaring it as a target.`);
+}
 console.log('  by evidence actually held per URL:');
 for (const [ev, n] of Object.entries(byEvidence).sort((a, b) => b[1] - a[1])) {
   console.log(`  ${String(n).padStart(5)}  ${ev}`);
