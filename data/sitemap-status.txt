@@ -1,0 +1,11 @@
+1 sitemap(s) known to Search Console:
+
+  path:           https://takemocktest.com/sitemap.xml
+  type:           urlset
+  last submitted: 2026-07-30T14:41:55.726Z
+  last downloaded:2026-09-10T19:59:38.544Z
+  pending:        False
+  warnings:       0    errors: 0
+    contents: type=web submitted=1786 indexed=0
+    contents: type=image submitted=58 indexed=0
+
