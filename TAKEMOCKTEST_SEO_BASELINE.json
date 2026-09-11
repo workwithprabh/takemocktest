@@ -1,5 +1,5 @@
 {
- "capturedAt": "2026-09-10",
+ "capturedAt": "2026-09-11",
  "pageCount": 4985,
  "pages": {
   "/404": {
@@ -14299,7 +14299,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "1c2011e22380",
+   "schemaHash": "67b7a2cba93c",
    "ogHash": "1303d1450ddf",
    "sitemap": true,
    "robots": "index, follow"
@@ -15508,13 +15508,13 @@
    "robots": "index, follow"
   },
   "/in/ctet/mock-test": {
-   "title": "CTET Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free CTET practice tests with instant results and clearly labelled source-review status.",
+   "title": "CTET Mock Test 2026: Free Paper 1 Practice Tests",
+   "description": "Free CTET Paper 1 mock tests for the Primary Stage. 150 questions in 150 minutes with no negative marking, so nothing is worth leaving blank.",
    "h1": [
-    "CTET Mock Test 2026"
+    "CTET Paper 1 Mock Test 2026 (Primary Stage)"
    ],
-   "h2Count": 7,
-   "h2Hash": "806c3f60a72e",
+   "h2Count": 8,
+   "h2Hash": "90b941007ba0",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -15524,7 +15524,7 @@
     "Question"
    ],
    "schemaHash": "a641293c74dd",
-   "ogHash": "10cd8b0e2b2f",
+   "ogHash": "8b352c75bc9b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -23135,27 +23135,24 @@
   },
   "/in/ibps-rrb-office-assistant/exam-pattern": {
    "title": "IBPS RRB Office Assistant Exam Pattern 2026: Marks &amp; Duration",
-   "description": "IBPS RRB Office Assistant exam pattern: 80 questions, 80 marks, 45 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "IBPS RRB Office Assistant exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "IBPS RRB Office Assistant Exam Pattern"
    ],
-   "h2Count": 7,
-   "h2Hash": "43d44da729b5",
+   "h2Count": 6,
+   "h2Hash": "6ee82002727a",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "b22d2056729e",
-   "ogHash": "38c691038de9",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "b3b2b3d1bfdf",
+   "ogHash": "7beb43b0ff7f",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ibps-rrb-office-assistant/mock-test": {
    "title": "IBPS RRB Clerk Mock Test 2026: Free Office Assistant Tests",
-   "description": "Free IBPS RRB Clerk mock tests, officially Office Assistant. Prelims is 80 questions in a composite 45 minutes, the fastest banking paper here.",
+   "description": "Free IBPS RRB Clerk mock tests, officially Office Assistant. Prelims is 80 questions in 45 minutes, the fastest banking paper on this site.",
    "h1": [
     "IBPS RRB Clerk (Office Assistant) Mock Test 2026"
    ],
@@ -23170,7 +23167,7 @@
     "Question"
    ],
    "schemaHash": "59d38aae376e",
-   "ogHash": "49d506cb3806",
+   "ogHash": "ee4d6275716b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -24012,7 +24009,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "857e474a2af7",
+   "schemaHash": "35f45ebf8e24",
    "ogHash": "20d6d879b7a2",
    "sitemap": true,
    "robots": "index, follow"
@@ -24087,23 +24084,20 @@
   },
   "/in/ibps-rrb-officer-scale-1/exam-pattern": {
    "title": "IBPS RRB Officer Scale I Exam Pattern 2026: Marks &amp; Duration",
-   "description": "IBPS RRB Officer Scale I exam pattern: 80 questions, 80 marks, 45 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "IBPS RRB Officer Scale I exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "IBPS RRB Officer Scale I Exam Pattern"
    ],
-   "h2Count": 7,
-   "h2Hash": "f9da9e834861",
+   "h2Count": 6,
+   "h2Hash": "6ee82002727a",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "68cc1beeb7ce",
-   "ogHash": "c8892ab9d802",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "fd073ea02701",
+   "ogHash": "cb5504edad47",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ibps-rrb-officer-scale-1/mock-test": {
    "title": "IBPS RRB PO Mock Test 2026: Free Officer Scale I Tests",
@@ -24964,7 +24958,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "bf867eae42e2",
+   "schemaHash": "37b388183540",
    "ogHash": "47cd9c8da105",
    "sitemap": true,
    "robots": "index, follow"
@@ -26156,7 +26150,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "1ea7dc587adc",
+   "schemaHash": "34c2351f425e",
    "ogHash": "15f2af4dd8a3",
    "sitemap": true,
    "robots": "index, follow"
@@ -33734,7 +33728,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "8978c66551a6",
+   "schemaHash": "20fcfd10f990",
    "ogHash": "34f509169abf",
    "sitemap": true,
    "robots": "index, follow"
@@ -36035,7 +36029,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "7120e86e4f16",
+   "schemaHash": "2bc4dafe9a68",
    "ogHash": "71005cb57aa7",
    "sitemap": true,
    "robots": "index, follow"
@@ -36812,13 +36806,13 @@
    "robots": "index, follow"
   },
   "/in/lic-aao/mock-test": {
-   "title": "LIC AAO Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free LIC AAO practice tests with instant results and clearly labelled source-review status.",
+   "title": "LIC AAO Mock Test: Free Prelims &amp; Mains Practice",
+   "description": "Free LIC AAO Generalist mock tests for Prelims and Mains. Prelims runs 20-minute sectional timers with no negative marking.",
    "h1": [
-    "LIC AAO Mock Test 2026"
+    "LIC AAO Mock Test (Generalist)"
    ],
-   "h2Count": 8,
-   "h2Hash": "400173fcfe97",
+   "h2Count": 9,
+   "h2Hash": "593334b204d9",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -36828,7 +36822,7 @@
     "Question"
    ],
    "schemaHash": "3ea0e9b48fde",
-   "ogHash": "7716a00c9231",
+   "ogHash": "cefb50526da5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -40362,7 +40356,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "956b7ca3fdcb",
+   "schemaHash": "513742befe55",
    "ogHash": "9829abc6924e",
    "sitemap": true,
    "robots": "index, follow"
@@ -42814,7 +42808,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "e609609f78db",
+   "schemaHash": "f3f3ced9d97c",
    "ogHash": "959e9e53977c",
    "sitemap": true,
    "robots": "index, follow"
@@ -43545,7 +43539,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "909b872dad0b",
+   "schemaHash": "a8fc2fee208a",
    "ogHash": "b068583cf80d",
    "sitemap": true,
    "robots": "index, follow"
@@ -43556,8 +43550,8 @@
    "h1": [
     "NABARD Grade A Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "66e0701bb83f",
+   "h2Count": 9,
+   "h2Hash": "ce8bd54622f0",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -54536,7 +54530,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "c900f9245e91",
+   "schemaHash": "eba1698f78aa",
    "ogHash": "3086d93f5a6e",
    "sitemap": true,
    "robots": "index, follow"
@@ -55148,19 +55142,19 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "636c85f94642",
+   "schemaHash": "d215e6ff87e9",
    "ogHash": "22b10b0dca63",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/rpf-si/mock-test": {
-   "title": "RPF Sub-Inspector Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free RPF Sub-Inspector practice tests with instant results and clearly labelled source-review status.",
+   "title": "RPF SI Mock Test: Free CBT Test Series | TakeMockTest",
+   "description": "Free RPF SI mock tests for the 120-question CBT. General Awareness is the largest section, and a blind four-option guess breaks even exactly.",
    "h1": [
-    "RPF Sub-Inspector Mock Test 2026"
+    "RPF SI Mock Test (CBT)"
    ],
-   "h2Count": 9,
-   "h2Hash": "9f83a864d982",
+   "h2Count": 10,
+   "h2Hash": "3f463f147176",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -55170,7 +55164,7 @@
     "Question"
    ],
    "schemaHash": "45870d0fc679",
-   "ogHash": "d7605f655a53",
+   "ogHash": "b834c2ab3450",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -55760,7 +55754,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "a67e401b007b",
+   "schemaHash": "eaf7561049cc",
    "ogHash": "f38e5bb5879b",
    "sitemap": true,
    "robots": "index, follow"
@@ -56598,7 +56592,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "d437983722fc",
+   "schemaHash": "50c8f787a260",
    "ogHash": "24d81ef9a3d9",
    "sitemap": true,
    "robots": "index, follow"
@@ -57244,7 +57238,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "e2965f9a261e",
+   "schemaHash": "a59e89564f62",
    "ogHash": "30b86d5ce017",
    "sitemap": true,
    "robots": "index, follow"
@@ -58212,7 +58206,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "b9761521bafa",
+   "schemaHash": "386873506347",
    "ogHash": "c72b72fdfebd",
    "sitemap": true,
    "robots": "index, follow"
@@ -59164,7 +59158,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "19f825d9a553",
+   "schemaHash": "964c4cf5b683",
    "ogHash": "921b42bf8be9",
    "sitemap": true,
    "robots": "index, follow"
@@ -59514,7 +59508,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "feb5cf5b0563",
+   "schemaHash": "d5e2646fdb9e",
    "ogHash": "87f374518eb5",
    "sitemap": true,
    "robots": "index, follow"
@@ -63849,19 +63843,19 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "8bbce0001ac0",
+   "schemaHash": "3b3201b28371",
    "ogHash": "db2c45ec4198",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/sebi-grade-a/mock-test": {
-   "title": "SEBI Grade A Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SEBI Grade A practice tests with instant results and clearly labelled source-review status.",
+   "title": "SEBI Grade A Mock Test: Free Phase 1 &amp; 2 Practice",
+   "description": "Free SEBI Grade A General Stream mock tests for Phase 1 and Phase 2. Every question pays 1.25 marks and a wrong answer costs exactly a quarter of that.",
    "h1": [
-    "SEBI Grade A Mock Test 2026"
+    "SEBI Grade A Mock Test (General Stream)"
    ],
-   "h2Count": 8,
-   "h2Hash": "a85e13d55507",
+   "h2Count": 9,
+   "h2Hash": "796fc2465947",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -63871,7 +63865,7 @@
     "Question"
    ],
    "schemaHash": "a1d3fb0c7041",
-   "ogHash": "b805ff2b0b2c",
+   "ogHash": "ff27233fd9b6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -65231,7 +65225,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "427b6eb1fe90",
+   "schemaHash": "249d66bbb09e",
    "ogHash": "a7fbb3769cf6",
    "sitemap": true,
    "robots": "index, follow"
@@ -65242,8 +65236,8 @@
    "h1": [
     "SIDBI Grade A & B Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "73e1c151cc53",
+   "h2Count": 9,
+   "h2Hash": "d9c30cacb456",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -66834,7 +66828,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "3f47267450ac",
+   "schemaHash": "95de14a4874d",
    "ogHash": "b0a36eaa5d36",
    "sitemap": true,
    "robots": "index, follow"
@@ -71287,13 +71281,13 @@
    "robots": "index, follow"
   },
   "/in/ssc-cht/mock-test": {
-   "title": "SSC CHT Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SSC Combined Hindi Translators practice tests with instant results and clearly labelled source-review status.",
+   "title": "SSC JHT Mock Test 2026: Free Paper 1 Test Series",
+   "description": "Free SSC JHT mock tests for Paper 1. General Hindi and General English each get their own 60-minute timer, and neither lends time to the other.",
    "h1": [
-    "SSC Combined Hindi Translators Mock Test 2026"
+    "SSC JHT (Combined Hindi Translators) Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "e05607de3c46",
+   "h2Count": 8,
+   "h2Hash": "4bfbdc76bd1e",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -71303,7 +71297,7 @@
     "Question"
    ],
    "schemaHash": "18cf62118e04",
-   "ogHash": "637933f2cc35",
+   "ogHash": "d16faca70b5f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -72435,7 +72429,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "e777b932b333",
+   "schemaHash": "9820fae90600",
    "ogHash": "59875d716fc0",
    "sitemap": true,
    "robots": "index, follow"
@@ -73063,7 +73057,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "28155e1758e5",
+   "schemaHash": "9a99be44efd3",
    "ogHash": "ad0e366d6661",
    "sitemap": true,
    "robots": "index, follow"
@@ -73074,8 +73068,8 @@
    "h1": [
     "SSC Junior Engineer Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "cae56e89a1c6",
+   "h2Count": 9,
+   "h2Hash": "b73794475393",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -74121,13 +74115,13 @@
    "robots": "index, follow"
   },
   "/in/ssc-selection-post/mock-test": {
-   "title": "SSC Selection Post Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free SSC Selection Post practice tests with instant results and clearly labelled source-review status.",
+   "title": "SSC Selection Post Mock Test 2026: Free Phase 14 Tests",
+   "description": "Free SSC Selection Post Phase 14 mock tests. Four parts of 25 questions, each on its own 15-minute timer, scored 2 marks right and 0.5 wrong.",
    "h1": [
-    "SSC Selection Post Mock Test 2026"
+    "SSC Selection Post Phase 14 Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "13ba11b28eee",
+   "h2Count": 9,
+   "h2Hash": "e0cf98127425",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -74137,7 +74131,7 @@
     "Question"
    ],
    "schemaHash": "49ac558d3c4b",
-   "ogHash": "31c811b7846e",
+   "ogHash": "3e27e1c15609",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -75558,23 +75552,20 @@
   },
   "/in/ssc-steno/exam-pattern": {
    "title": "SSC Stenographer Grade C &amp; D Exam Pattern 2026: Marks &amp; Duration",
-   "description": "SSC Stenographer Grade C &amp; D exam pattern: 200 questions, 200 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "SSC Stenographer Grade C &amp; D exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "SSC Stenographer Grade C & D Exam Pattern"
    ],
-   "h2Count": 6,
-   "h2Hash": "456d9fcc8593",
+   "h2Count": 5,
+   "h2Hash": "cbe5d84ec2db",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "f4fb2f9c59e4",
-   "ogHash": "21adb3cc8f6f",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "1abc7d8b0e3b",
+   "ogHash": "5f29924e7efe",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ssc-steno/mock-test": {
    "title": "SSC Stenographer Mock Test 2026, Practice Free Test Series",
@@ -75582,8 +75573,8 @@
    "h1": [
     "SSC Stenographer Grade C & D Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "7381f21c84ab",
+   "h2Count": 8,
+   "h2Hash": "e9a847344e2a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -75966,16 +75957,13 @@
    "h1": [
     "SSC Stenographer Grade C & D"
    ],
-   "h2Count": 9,
-   "h2Hash": "8798d915f385",
+   "h2Count": 8,
+   "h2Hash": "92e6e8ec0eb2",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "cf3171f9d208",
+   "schemaHash": "4c5b5499ebbe",
    "ogHash": "2de6955b1a22",
    "sitemap": true,
    "robots": "index, follow"
@@ -76074,8 +76062,8 @@
    "h1": [
     "State Eligibility Test Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "2d447890c919",
+   "h2Count": 8,
+   "h2Hash": "d8369cfda52a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -76379,7 +76367,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "938e37096450",
+   "schemaHash": "f12a28a34f20",
    "ogHash": "7456a2bc534c",
    "sitemap": true,
    "robots": "index, follow"
@@ -79923,8 +79911,8 @@
    "h1": [
     "UGC NET Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "8dfe69f7f389",
+   "h2Count": 8,
+   "h2Hash": "d88a5999132d",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",

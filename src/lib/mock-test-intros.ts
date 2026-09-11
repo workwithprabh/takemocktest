@@ -157,6 +157,51 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
     title: 'NIACL AO Mock Test 2026: Free Prelims & Mains Tests',
     description: 'Free NIACL AO mock tests for Prelims and the Mains objective paper. The separate 30-minute Descriptive Test is qualifying and is not covered.',
   },
+  // Batch 3. Every number below is either read from the primary notice named on
+  // the exam's own pattern block, or arithmetic on those numbers. Where our
+  // product does not cover a stage, the copy says so rather than implying it.
+  'ssc-selection-post': {
+    lead: 'A free SSC Selection Post mock test series for Phase XIV. The Computer Based Examination is 100 questions for 200 marks in 60 minutes, divided into four parts of 25 questions each. Phase XIV runs three separate papers, one at Matriculation level, one at 10+2 level and one at Graduation level, and all three share that structure.',
+    strategy: 'Each of the four parts carries its own 15-minute timer, and time left over in one part does not move to the next. That works out at 36 seconds a question, with nothing to borrow from a part you found easy. The marking rewards attempting. A correct answer pays 2 marks and a wrong one costs 0.5, so an attempt is worth making whenever you would be right more than one time in five. On four options, a blind guess is already better than that. It is the part timer rather than the question count that this SSC Selection Post test series is built to rehearse.',
+    title: 'SSC Selection Post Mock Test 2026: Free Phase 14 Tests',
+    h1: 'SSC Selection Post Phase 14 Mock Test 2026',
+    description: 'Free SSC Selection Post Phase 14 mock tests. Four parts of 25 questions, each on its own 15-minute timer, scored 2 marks right and 0.5 wrong.',
+  },
+  'ctet': {
+    lead: 'A free CTET mock test series for Paper I, the Primary Stage paper taken by candidates who want to teach classes 1 to 5. Paper I is 150 questions in 150 minutes across Child Development and Pedagogy, Mathematics, Environmental Studies and two languages. Every CTET online test here is free to attempt.',
+    strategy: 'Two rules decide how Paper I should be attempted. There is no negative marking, so a blank and a wrong answer score exactly the same, and anything left unanswered is a mark you gave away for nothing. And 150 questions in 150 minutes is one minute each, which is generous next to most competitive papers. The difficulty in CTET is not speed, it is pedagogy. Child Development and Pedagogy alone carries 30 of the 150 questions, and the two language sections are half comprehension and half language pedagogy rather than grammar drills. Language I and Language II are chosen by the candidate on the real form and must differ from each other. The full mock here uses English as Language I and Hindi as Language II, which is one valid pairing rather than a requirement. On coverage, this CTET test series is Paper I only. Paper II, the Elementary Stage paper for classes 6 to 8, is not built here.',
+    title: 'CTET Mock Test 2026: Free Paper 1 Practice Tests',
+    h1: 'CTET Paper 1 Mock Test 2026 (Primary Stage)',
+    description: 'Free CTET Paper 1 mock tests for the Primary Stage. 150 questions in 150 minutes with no negative marking, so nothing is worth leaving blank.',
+  },
+  'lic-aao': {
+    lead: 'A free LIC AAO mock test series for the Generalist post. Prelims is 100 questions in 60 minutes across Reasoning Ability, Quantitative Aptitude and English Language, and this page covers Prelims and Mains. Every LIC AAO online test here is free to attempt.',
+    strategy: 'Prelims has two rules that pull against each other. There is no negative marking, so every question deserves an answer before its window shuts. But the sections are separately timed at 20 minutes each, so those answers have to be in before that happens. Reasoning Ability and Quantitative Aptitude give you 35 questions in that window, which is 34 seconds each. English Language gives you 30, so 40 seconds. Put those together and the habit worth building is simple: spend the last half minute of every section filling in whatever is still blank, because an unanswered question and a wrong one cost the same here.',
+    title: 'LIC AAO Mock Test: Free Prelims & Mains Practice',
+    h1: 'LIC AAO Mock Test (Generalist)',
+    description: 'Free LIC AAO Generalist mock tests for Prelims and Mains. Prelims runs 20-minute sectional timers with no negative marking.',
+  },
+  'rpf-si': {
+    lead: 'A free RPF SI mock test series for the Computer Based Test. The CBT is 120 questions for 120 marks in 90 minutes, across Arithmetic, General Intelligence and Reasoning, and General Awareness. Every RPF SI online test here is free to attempt.',
+    strategy: 'General Awareness is the single largest section at 50 questions, against 35 each for Arithmetic and for General Intelligence and Reasoning. Ninety minutes across 120 questions leaves 45 seconds each. The marking is where this paper gets interesting: a wrong answer costs one third of a mark, and against four options a completely blind guess breaks even exactly, because the mark you win a quarter of the time cancels the third you lose the other three quarters. Rule out even one option and attempting turns profitable. This series stops at the CBT. Selection then continues through physical and medical standards and document verification, which no mock test can stand in for.',
+    title: 'RPF SI Mock Test: Free CBT Test Series',
+    h1: 'RPF SI Mock Test (CBT)',
+    description: 'Free RPF SI mock tests for the 120-question CBT. General Awareness is the largest section, and a blind four-option guess breaks even exactly.',
+  },
+  'ssc-cht': {
+    lead: 'A free SSC JHT mock test series, listed here under the official name Combined Hindi Translators. Paper I is 200 objective questions for 200 marks in two hours, split evenly between General Hindi and General English. Every SSC JHT online test here is free to attempt.',
+    strategy: 'Paper I is two halves of 100 questions, and each half has its own 60-minute timer. Once the General Hindi hour closes it does not reopen, so minutes saved there cannot be spent rescuing General English. That is 36 seconds a question on both sides. The marking is 1 mark for a right answer and 0.25 off for a wrong one, so an attempt pays whenever you would be right more than one time in five. On coverage, this SSC JHT test series is Paper I. Paper II is descriptive, translation and essay work rather than multiple choice, and it is not built here.',
+    title: 'SSC JHT Mock Test 2026: Free Paper 1 Test Series',
+    h1: 'SSC JHT (Combined Hindi Translators) Mock Test 2026',
+    description: 'Free SSC JHT mock tests for Paper 1. General Hindi and General English each get their own 60-minute timer, and neither lends time to the other.',
+  },
+  'sebi-grade-a': {
+    lead: 'A free SEBI Grade A mock test series for the General Stream. Phase I Paper 1 is 80 questions for 100 marks in 60 minutes, spread evenly across General Awareness, English Language, Quantitative Aptitude and Test of Reasoning. This page covers Phase I and Phase II for that stream.',
+    strategy: 'The marks arithmetic is worth working out before you sit Paper 1. Eighty questions carry 100 marks, so each one pays 1.25, and a wrong answer costs 0.3125, which is exactly a quarter of what a right one is worth. An attempt therefore breaks even at one in five, and a blind guess across four options sits above that line. All four sections carry 20 questions for 25 marks, so none is worth more per question than another, and there is no case for protecting one at the expense of the rest. Sixty minutes across 80 questions is 45 seconds each. On coverage, SEBI recruits across several streams and this SEBI Grade A test series is built for the General Stream. The Legal, Information Technology, Engineering and other specialist streams are not covered here.',
+    title: 'SEBI Grade A Mock Test: Free Phase 1 & 2 Practice',
+    h1: 'SEBI Grade A Mock Test (General Stream)',
+    description: 'Free SEBI Grade A General Stream mock tests for Phase 1 and Phase 2. Every question pays 1.25 marks and a wrong answer costs exactly a quarter of that.',
+  },
 };
 
 export function getMockTestIntro(slug: string): MockTestIntro | undefined {
