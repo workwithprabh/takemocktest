@@ -97,6 +97,25 @@ for (const file of walkHtml(outDir)) {
       .filter((cells) => cells.length === 4);
     if (rows.length === 0) continue;
     timerStages += 1;
+    // Third contradiction class, found on 11 September 2026: SBI PO Mains
+    // headed its table "Questions 170 / Total marks 200 / Duration 180
+    // minutes" and then listed five rows summing to 172, 230 and 210, because
+    // the separately timed Descriptive Test sat inside a table whose totals
+    // covered the objective paper only. A reader who adds up the column sees
+    // three contradictions at once.
+    const before = html.slice(0, html.indexOf(chunk));
+    const totals = before.slice(-1200);
+    const statedQ = Number((totals.match(/Questions<\/td>[\s\S]{0,120}?>(\d+)</) || [, 0])[1]);
+    const statedM = Number((totals.match(/Total marks<\/td>[\s\S]{0,120}?>(\d+)</) || [, 0])[1]);
+    const sumQ = rows.reduce((n, cells) => n + (Number(cells[1]) || 0), 0);
+    const sumM = rows.reduce((n, cells) => n + (Number(cells[2]) || 0), 0);
+    if (statedQ && sumQ !== statedQ) {
+      errors.push(`${rel}: pattern table rows sum to ${sumQ} questions under a stated total of ${statedQ}`);
+    }
+    if (statedM && sumM !== statedM) {
+      errors.push(`${rel}: pattern table rows sum to ${sumM} marks under a stated total of ${statedM}`);
+    }
+
     const minutes = rows.map((cells) => cells[3]).filter((min) => /^\d+$/.test(min));
     if (minutes.length === 0) continue;
     // The timing note belongs to this table only if it appears before the next
