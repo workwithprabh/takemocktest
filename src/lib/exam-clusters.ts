@@ -26,6 +26,16 @@ const CLUSTERS: readonly (readonly string[])[] = [
   // since that is the comparison its candidates are actually making. These
   // blocks are shortlists rather than a reciprocal graph, so that is fine.
   ['sebi-grade-a', 'nabard-grade-a', 'sidbi-grade-a-b', 'rbi-grade-b'],
+  // Management entrance. One decision: which MBA test to sit, often several.
+  ['cat', 'xat', 'snap', 'nmat', 'mat', 'cmat'],
+  // Defence entry. Candidates routinely apply across all three.
+  ['nda', 'cds', 'afcat', 'territorial-army'],
+  // Law entrance, undergraduate.
+  ['clat', 'ailet', 'mh-cet-law', 'slat', 'ap-lawcet'],
+  // Engineering candidates weighing a postgraduate route against a job exam.
+  // SSC JE and RRB JE resolve to their own families for their own pages; this
+  // block only governs what GATE links out to.
+  ['gate', 'ssc-je', 'rrb-je'],
   // Teacher eligibility. Different levels of the same decision: school
   // teaching for CTET, lectureship for UGC NET and its state counterpart.
   ['ctet', 'ugc-net', 'state-set'],
