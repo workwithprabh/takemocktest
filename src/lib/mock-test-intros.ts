@@ -119,10 +119,10 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
   },
   'ibps-rrb-office-assistant': {
     lead: 'A free IBPS RRB Clerk mock test series, listed under the official name Office Assistant (Multipurpose). The Prelims mock test is 80 questions in 45 minutes, and the Mains mock test is 200 questions in 120 minutes. Every IBPS RRB Office Assistant online test here is free to attempt.',
-    strategy: 'Prelims is the fastest paper of any banking exam on this site. Eighty questions in 45 minutes leaves about 34 seconds each. There is also no sectional lock, unlike IBPS Clerk or SBI Clerk. The 45 minutes runs as one composite window across Reasoning and Numerical Ability. That cuts both ways. You can move time to whichever section is going well, and nothing forces you to leave a section you are sinking into. Practising against the full clock rather than a per-section one is what builds the judgement that decides.',
+    strategy: 'Prelims is the fastest paper of any banking exam on this site. Eighty questions in 45 minutes leaves about 34 seconds each, and the arithmetic is the same whichever way the clock is run. Both sections carry 40 questions and 40 marks, so neither is worth more per question than the other, and a wrong answer costs a quarter mark either way. What decides the paper is how quickly you abandon a question that is not coming. At 34 seconds a question, two minutes spent rescuing one is four questions you never reach. Practising against the clock is what turns that from a thing you know into a thing you do.',
     title: 'IBPS RRB Clerk Mock Test 2026: Free Office Assistant Tests',
     h1: 'IBPS RRB Clerk (Office Assistant) Mock Test 2026',
-    description: 'Free IBPS RRB Clerk mock tests, officially Office Assistant. Prelims is 80 questions in a composite 45 minutes, the fastest banking paper here.',
+    description: 'Free IBPS RRB Clerk mock tests, officially Office Assistant. Prelims is 80 questions in 45 minutes, the fastest banking paper on this site.',
   },
   'ibps-rrb-officer-scale-1': {
     lead: 'A free IBPS RRB PO mock test series, listed under the official name Officer Scale I. The Prelims mock test is 80 questions in 45 minutes across Reasoning and Quantitative Aptitude. The Mains mock test is 200 questions in 120 minutes. Every IBPS RRB Officer Scale I online test is free to attempt.',

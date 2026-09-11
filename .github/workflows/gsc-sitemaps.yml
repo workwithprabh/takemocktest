@@ -1,0 +1,53 @@
+name: Search Console sitemap status
+
+# Reports what Google has done with our submitted sitemaps: when it last
+# downloaded each file, whether it is pending, and how many warnings and errors
+# it found.
+#
+# Why this is separate from the index audit: inspection answers "is this page
+# indexed", this answers "did Google ever read the file that told it the page
+# exists". On 11 September 2026 all 52 sample URLs reported as "URL is unknown
+# to Google" were present in our submitted sitemap, which those two questions
+# together are needed to explain.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sitemaps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install google-auth requests
+      - name: Report sitemap status
+        env:
+          GSC_SERVICE_ACCOUNT_KEY_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_KEY_JSON }}
+        run: |
+          if [ -z "$GSC_SERVICE_ACCOUNT_KEY_JSON" ]; then
+            echo "GSC_SERVICE_ACCOUNT_KEY_JSON secret is not set." >&2
+            exit 1
+          fi
+          mkdir -p data
+          python3 scripts/gsc-query.py sitemaps | tee data/sitemap-status.txt
+      - name: Commit status if changed
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name 'TakeMockTest Coding Agent'
+            git config user.email 'actions@users.noreply.github.com'
+            git add data
+            git commit -m 'Update Search Console sitemap status'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push origin HEAD:main && exit 0
+              sleep $((attempt * 5))
+            done
+            exit 1
+          fi

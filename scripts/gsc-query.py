@@ -363,6 +363,35 @@ def cmd_panel(session, args):
         print(f'No rows for {start}..{end} — nothing written.')
 
 
+def cmd_sitemaps(session, args):
+    """What Google has actually done with the sitemaps we submitted.
+
+    Distinct from URL Inspection: inspection says whether a page is indexed,
+    this says whether Google downloaded and parsed the file that told it the
+    page exists. In September 2026, 52 URLs present in our submitted sitemap
+    came back from inspection as "URL is unknown to Google", which is only
+    possible if the file was not processed, or was processed and its entries
+    not taken up.
+    """
+    resp = session.get(f'{API_BASE}/sitemaps', timeout=30)
+    resp.raise_for_status()
+    feeds = resp.json().get('sitemap', [])
+    if not feeds:
+        print('Search Console lists NO submitted sitemap for this property.')
+        return
+    print(f'{len(feeds)} sitemap(s) known to Search Console:\n')
+    for feed in feeds:
+        print(f"  path:           {feed.get('path')}")
+        print(f"  type:           {'index' if feed.get('isSitemapsIndex') else 'urlset'}")
+        print(f"  last submitted: {feed.get('lastSubmitted', '(never)')}")
+        print(f"  last downloaded:{feed.get('lastDownloaded', '(never downloaded by Google)')}")
+        print(f"  pending:        {feed.get('isPending')}")
+        print(f"  warnings:       {feed.get('warnings', 0)}    errors: {feed.get('errors', 0)}")
+        for entry in feed.get('contents', []):
+            print(f"    contents: type={entry.get('type')} submitted={entry.get('submitted')} indexed={entry.get('indexed', 'n/a')}")
+        print()
+
+
 def cmd_inspect(session, args):
     """Ask Search Console whether it has indexed each URL in a sample.
 
@@ -591,6 +620,9 @@ def main():
     p.add_argument('--days', type=int, default=5, help='Trailing window; covers Search Console revising recent days.')
     p.add_argument('--out', default='data/gsc', help='Directory to write <date>.json into.')
     p.set_defaults(func=cmd_panel)
+
+    p = sub.add_parser('sitemaps', help='Submission and processing state of our sitemaps.')
+    p.set_defaults(func=cmd_sitemaps)
 
     p = sub.add_parser('inspect', help='URL Inspection over a stratified sample: is Google indexing these pages?')
     p.add_argument('--sample', default='data/index-audit-sample.tsv')
