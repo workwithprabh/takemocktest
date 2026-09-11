@@ -32,3 +32,6 @@ __pycache__/
 *service-account*.json
 *.pem
 secrets/
+
+# generated deliverables (regenerable from scripts/export-batch-pages.mjs)
+exports
