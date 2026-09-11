@@ -117,6 +117,38 @@ invented split we had published ourselves. Before accepting an outside
 correction to a sourced fact, establish that the source is independent of this
 site.
 
+## 5b. Who resolves a factual conflict
+
+Exam-body sites are unreachable from the sandbox that maintains this repo, so
+primary notices have to be read by someone else. That created a habit of
+routing every factual question outward and waiting. Most of them did not need
+to go anywhere.
+
+**Fix it here when the answer is already in this repository.** Four defect
+classes have turned out to be fully self-resolvable, and every one of them was
+first sent out for review before anyone checked:
+
+- A pattern block contradicting its own `note`. Eight exams published this
+  site's shortened mock as the official pattern while the note beside it, in
+  the same record, gave the real figures section by section. CLAT, AILET and
+  NMAT were all corrected from their own notes.
+- A stage badged `official` whose note says the figures rest on secondary
+  corroboration. `/about` publishes the definitions; the note decides the
+  badge, not the other way round.
+- Arithmetic inside a stage: sections that do not sum to the totals printed
+  above them.
+- A claim about this site's own product: what a mock covers, how many tests
+  exist, what a timer does in our engine. Nobody outside can answer these.
+
+**Send it out only when it needs a document we cannot open.** A current cycle's
+notice, a per-section timing that no internal field records, a pattern that
+genuinely changed. The test is simple: if answering it requires reading a PDF,
+it goes out; if it requires reading this repository, it does not.
+
+**When an outside answer arrives, still cross-check it against our own record
+before applying it.** That check has caught a conflict roughly as often as it
+has confirmed one, in both directions.
+
 ## 6. Browser smoke test
 
 After importing an approved exam, verify:

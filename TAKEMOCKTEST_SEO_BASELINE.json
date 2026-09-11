@@ -11279,23 +11279,20 @@
   },
   "/in/cat/exam-pattern": {
    "title": "CAT Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
-   "description": "CAT exam pattern: 34 questions, 102 marks, 60 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "CAT exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "CAT Exam Pattern"
    ],
-   "h2Count": 6,
-   "h2Hash": "7c29894f09e4",
+   "h2Count": 5,
+   "h2Hash": "c58f096f61b1",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "b483a4f5087b",
-   "ogHash": "e6b3ee29e2b2",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "8b1c7edbd688",
+   "ogHash": "62f7961b8938",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/cat/mock-test": {
    "title": "CAT Mock Test 2026, Practice Free Test Series | TakeMockTest",
@@ -11548,16 +11545,13 @@
    "h1": [
     "CAT"
    ],
-   "h2Count": 8,
-   "h2Hash": "42ff2fd3e445",
+   "h2Count": 7,
+   "h2Hash": "27b4a203c561",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "c060bc7d29ff",
+   "schemaHash": "b8dd9bd201f5",
    "ogHash": "d81f3cc68558",
    "sitemap": true,
    "robots": "index, follow"
@@ -27642,23 +27636,20 @@
   },
   "/in/iiit-hyderabad-ugee/exam-pattern": {
    "title": "IIIT Hyderabad UGEE Exam Pattern 2026: Marks &amp; Duration",
-   "description": "IIIT Hyderabad UGEE exam pattern: 90 questions, 140 marks, 180 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "IIIT Hyderabad UGEE exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "IIIT Hyderabad UGEE Exam Pattern"
    ],
-   "h2Count": 6,
-   "h2Hash": "797e5c8fa452",
+   "h2Count": 5,
+   "h2Hash": "4e77c62e950b",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "162d1fef9d68",
-   "ogHash": "52d55176aa39",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "907aac06eaac",
+   "ogHash": "bd8716130400",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/iiit-hyderabad-ugee/mock-test": {
    "title": "IIIT Hyderabad UGEE Mock Test 2026, Practice Free Test Series",
@@ -27877,16 +27868,13 @@
    "h1": [
     "IIIT Hyderabad UGEE"
    ],
-   "h2Count": 8,
-   "h2Hash": "a9b59abfb863",
+   "h2Count": 7,
+   "h2Hash": "3f008b9c9ed9",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "0acf96e608f9",
+   "schemaHash": "221c1b5f3cf0",
    "ogHash": "67ad9e2c8764",
    "sitemap": true,
    "robots": "index, follow"
@@ -36800,7 +36788,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "d65200702330",
+   "schemaHash": "804bfc121de1",
    "ogHash": "7900874887a1",
    "sitemap": true,
    "robots": "index, follow"
@@ -37442,7 +37430,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "df13da150d72",
+   "schemaHash": "50b7c336cd80",
    "ogHash": "ceaacf5b811b",
    "sitemap": true,
    "robots": "index, follow"
@@ -42417,23 +42405,20 @@
   },
   "/in/mht-cet/exam-pattern": {
    "title": "MHT CET Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
-   "description": "MHT CET exam pattern: 150 questions, 200 marks, 180 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "MHT CET exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "MHT CET Exam Pattern"
    ],
-   "h2Count": 6,
-   "h2Hash": "27bb54327c57",
+   "h2Count": 5,
+   "h2Hash": "e3bf6b488770",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "a133d392ab24",
-   "ogHash": "a59be1c37d1b",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "2bf2f4e4b598",
+   "ogHash": "0532e382f463",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/mht-cet/mock-test": {
    "title": "MHT CET Mock Test 2026, Practice Free Test Series",
@@ -42711,16 +42696,13 @@
    "h1": [
     "MHT CET"
    ],
-   "h2Count": 8,
-   "h2Hash": "91e1c8247d81",
+   "h2Count": 7,
+   "h2Hash": "bfa8f55df8fb",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "f72fe7f5eb7e",
+   "schemaHash": "4d93f154629a",
    "ogHash": "e93e94177df7",
    "sitemap": true,
    "robots": "index, follow"
@@ -49060,7 +49042,7 @@
   },
   "/in/nmat/exam-pattern": {
    "title": "NMAT Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
-   "description": "NMAT exam pattern: 36 questions, 108 marks, 45 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "NMAT exam pattern: 108 questions, 324 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
    "h1": [
     "NMAT Exam Pattern"
    ],
@@ -49073,8 +49055,8 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "622e363a6017",
-   "ogHash": "e1f747770d9a",
+   "schemaHash": "6486f08e2659",
+   "ogHash": "3f791799e0d7",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49338,7 +49320,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "fd7ca3372a12",
+   "schemaHash": "1ac9b4379a35",
    "ogHash": "78362a87b88f",
    "sitemap": true,
    "robots": "index, follow"
@@ -52800,7 +52782,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "614df5c02c19",
+   "schemaHash": "cf348e27df69",
    "ogHash": "cace749f111c",
    "sitemap": true,
    "robots": "index, follow"
@@ -53868,7 +53850,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "ed4c14fc502b",
+   "schemaHash": "83d9186f467f",
    "ogHash": "4e5fd476e7a1",
    "sitemap": true,
    "robots": "index, follow"
@@ -61392,7 +61374,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "971ae0202ce8",
+   "schemaHash": "b016dd646b08",
    "ogHash": "4c3aaa3053eb",
    "sitemap": true,
    "robots": "index, follow"
@@ -62460,7 +62442,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "c076a7ea93b1",
+   "schemaHash": "1ddb0bb00a45",
    "ogHash": "672d1f895a45",
    "sitemap": true,
    "robots": "index, follow"
@@ -62548,7 +62530,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "f40e9b781b6f",
+   "schemaHash": "10f2e4cad4fd",
    "ogHash": "5812a16a3b16",
    "sitemap": true,
    "robots": "index, follow"
@@ -63755,7 +63737,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "5f96cdea46c4",
+   "schemaHash": "52b8f2fc404e",
    "ogHash": "ebbb11f14f90",
    "sitemap": true,
    "robots": "index, follow"
@@ -70391,7 +70373,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "41d96b153194",
+   "schemaHash": "043147345fe8",
    "ogHash": "e750fdcd9c42",
    "sitemap": true,
    "robots": "index, follow"
@@ -71187,7 +71169,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "d7829e49775d",
+   "schemaHash": "f3dec2e5c476",
    "ogHash": "2aca7e00cbca",
    "sitemap": true,
    "robots": "index, follow"
@@ -80209,23 +80191,20 @@
   },
   "/in/upeseat/exam-pattern": {
    "title": "UPESEAT Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
-   "description": "UPESEAT exam pattern: 125 questions, 125 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "UPESEAT exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "UPESEAT Exam Pattern"
    ],
-   "h2Count": 6,
-   "h2Hash": "e69c7de49034",
+   "h2Count": 5,
+   "h2Hash": "f50465912eda",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "2ec744192f05",
-   "ogHash": "047741dad92d",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "6df82f0bb4c5",
+   "ogHash": "9afb9b34b581",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/upeseat/mock-test": {
    "title": "UPESEAT Mock Test 2026, Practice Free Test Series",
@@ -80509,16 +80488,13 @@
    "h1": [
     "UPESEAT"
    ],
-   "h2Count": 8,
-   "h2Hash": "61bbd32867b4",
+   "h2Count": 7,
+   "h2Hash": "96767b5db0c4",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "3b0c9b831045",
+   "schemaHash": "3e35bc3ee36f",
    "ogHash": "340b5af82ee1",
    "sitemap": true,
    "robots": "index, follow"
