@@ -67075,7 +67075,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "e0d2ae8d44e1",
+   "schemaHash": "2622eac674bc",
    "ogHash": "806ed2d703c6",
    "sitemap": true,
    "robots": "index, follow"
@@ -83583,7 +83583,7 @@
     "XAT Exam Pattern"
    ],
    "h2Count": 5,
-   "h2Hash": "a8cec0a1900f",
+   "h2Hash": "28664b006c29",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem"
@@ -83728,7 +83728,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5c6063309689",
+   "schemaHash": "14bb1dbc4db0",
    "ogHash": "b6cd4eb31112",
    "sitemap": true,
    "robots": "index, follow"
@@ -83748,13 +83748,13 @@
    "robots": "noindex, follow"
   },
   "/in/xat/test/part-1-full-mock-1": {
-   "title": "XAT Part 1 Full Mock Test 1 (2026): Free Online Test",
+   "title": "XAT Part 1 Full Mock Test 1 (2027): Free Online Test",
    "description": "Attempt XAT Part 1 Full Mock Test 1: 75 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "XAT Part 1 Full Mock Test 1"
    ],
    "h2Count": 9,
-   "h2Hash": "ad984133e75a",
+   "h2Hash": "2a356d5a0e86",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -83762,8 +83762,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c53e5afb03fc",
-   "ogHash": "7539e3fa7b38",
+   "schemaHash": "8e698772e888",
+   "ogHash": "ced632a19f2e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -83796,7 +83796,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b3d320b02a6a",
+   "schemaHash": "4c06e78f2e3d",
    "ogHash": "972c1d97a27a",
    "sitemap": true,
    "robots": "index, follow"
@@ -83830,7 +83830,7 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "aa45f8f3b1f9",
+   "schemaHash": "e532fc0d9b21",
    "ogHash": "63aeb46f3872",
    "sitemap": true,
    "robots": "index, follow"
