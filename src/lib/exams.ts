@@ -5033,7 +5033,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         id: 'cbt',
         name: 'Computer Based Examination',
         pattern: {
-          status: 'official',
+          status: 'review-pending',
           cycle: "Stenographer Grade 'C' & 'D' Examination 2025",
           sections: ['General Intelligence and Reasoning', 'General Awareness', 'English Language and Comprehension'],
           totalQuestions: 200,
@@ -5046,7 +5046,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'General Awareness', questions: 50, marks: 50 },
             { name: 'English Language and Comprehension', questions: 100, marks: 100 },
           ],
-          timerNote: 'Single 120-minute timer for all three sections combined (no sectional lock).',
+          note: 'Timing behaviour is disputed and is not asserted here. This record carried a single composite 120-minute window; a separate reading of the Stenographer notice reports per-part timers of 30, 30 and 60 minutes for Reasoning, General Awareness and English. Those two cannot both be right, and this site has not been able to open ssc.gov.in to settle it, so neither is published as fact until a primary document is read directly.',
           sourceUrl: SSC_STENO_2025_NOTICE,
           checkedOn: '7 August 2026',
         },
