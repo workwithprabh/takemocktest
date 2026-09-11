@@ -73044,7 +73044,7 @@
   },
   "/in/ssc-je/exam-pattern": {
    "title": "SSC Junior Engineer Exam Pattern 2026: Marks &amp; Duration",
-   "description": "SSC Junior Engineer exam pattern: 100 questions, 100 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "SSC Junior Engineer exam pattern: 200 questions, 200 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
    "h1": [
     "SSC Junior Engineer Exam Pattern"
    ],
@@ -73057,8 +73057,8 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "9a99be44efd3",
-   "ogHash": "ad0e366d6661",
+   "schemaHash": "bdca5f4da20b",
+   "ogHash": "499fdbf97a15",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -73393,7 +73393,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "55f2e4a5b442",
+   "schemaHash": "3173e88cb159",
    "ogHash": "3721901d3c8f",
    "sitemap": true,
    "robots": "index, follow"
@@ -75552,20 +75552,23 @@
   },
   "/in/ssc-steno/exam-pattern": {
    "title": "SSC Stenographer Grade C &amp; D Exam Pattern 2026: Marks &amp; Duration",
-   "description": "SSC Stenographer Grade C &amp; D exam pattern: sections, marks, duration, and negative marking explained.",
+   "description": "SSC Stenographer Grade C &amp; D exam pattern: 200 questions, 200 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
    "h1": [
     "SSC Stenographer Grade C & D Exam Pattern"
    ],
-   "h2Count": 5,
-   "h2Hash": "cbe5d84ec2db",
+   "h2Count": 6,
+   "h2Hash": "456d9fcc8593",
    "schemaTypes": [
+    "Answer",
     "BreadcrumbList",
-    "ListItem"
+    "FAQPage",
+    "ListItem",
+    "Question"
    ],
-   "schemaHash": "1abc7d8b0e3b",
-   "ogHash": "5f29924e7efe",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "f4fb2f9c59e4",
+   "ogHash": "21adb3cc8f6f",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/ssc-steno/mock-test": {
    "title": "SSC Stenographer Mock Test 2026, Practice Free Test Series",
@@ -75957,13 +75960,16 @@
    "h1": [
     "SSC Stenographer Grade C & D"
    ],
-   "h2Count": 8,
-   "h2Hash": "92e6e8ec0eb2",
+   "h2Count": 9,
+   "h2Hash": "8798d915f385",
    "schemaTypes": [
+    "Answer",
     "BreadcrumbList",
-    "ListItem"
+    "FAQPage",
+    "ListItem",
+    "Question"
    ],
-   "schemaHash": "4c5b5499ebbe",
+   "schemaHash": "cf3171f9d208",
    "ogHash": "2de6955b1a22",
    "sitemap": true,
    "robots": "index, follow"

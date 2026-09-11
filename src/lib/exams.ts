@@ -225,6 +225,18 @@ export interface StagePattern {
     marks: number;
     duration?: number;
   }[];
+  /**
+   * Set to 'explicit' only when the primary notice states per-section times in
+   * its own words. Absent means the durations were not taken from a document.
+   *
+   * The September 2026 sweep removed durations wherever they reproduced a
+   * pro-rata split of the composite timer, treating proportionality as proof
+   * they had been computed. SSC Stenographer disproved that: its notice states
+   * 30/30/60 outright, and 30/30/60 is also exactly what 50/50/100 questions
+   * across 120 minutes produces. Arithmetic cannot separate the two, so the
+   * source has to be recorded rather than inferred from the numbers.
+   */
+  sectionDurationSource?: 'explicit';
   timerNote?: string;
   note?: string;
   sourceUrl?: string;
@@ -275,8 +287,8 @@ const RPF_SI_2024_NOTICE =
   'https://rrbsecunderabad.gov.in/wp-content/uploads/2024/04/Final-Notice-RPF-Sub-Inspector-01-2024_English.pdf';
 const SSC_JE_2025_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2025.pdf';
-const SSC_STENO_2025_NOTICE =
-  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2025.pdf';
+const SSC_STENO_2026_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2026.pdf';
 const SSC_CHT_2026_NOTICE =
   'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cht_2026.pdf';
 const SSC_SELECTION_POST_2026_NOTICE =
@@ -4897,7 +4909,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           sectionBreakdown: [
             { name: 'English Language and Comprehension', questions: 200, marks: 200 },
           ],
-          timerNote: 'Single continuous 120-minute timer for the whole paper: no sectional lock.',
+          timerNote: 'Two hours, divided into four parts with a 30-minute timer on each. It is not one continuous window, despite being a single subject throughout',
           sourceUrl: SSC_CPO_2025_RESULT_NOTICE,
           checkedOn: '28 August 2026',
         },
@@ -4939,17 +4951,18 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         pattern: {
           status: 'official',
           cycle: 'SSC JE 2025',
-          sections: ['General Intelligence and Reasoning', 'General Awareness'],
-          totalQuestions: 100,
-          totalMarks: 100,
+          sections: ['General Intelligence and Reasoning', 'General Awareness', 'General Engineering (chosen discipline)'],
+          totalQuestions: 200,
+          totalMarks: 200,
           duration: 120,
           negativeMarking: 0.25,
           note: 'Paper I is common to every candidate regardless of engineering discipline. Paper II, the discipline-specific General Engineering paper (100 questions, 300 marks) for Civil & Structural, Electrical, or Mechanical Engineering depending on the candidate\'s notified stream, is not modeled on this site: the technical syllabus differs by discipline, so no single question bank would be accurate for every candidate. Both papers are Computer-Based, objective, multiple-choice, and their normalized scores together decide the final merit list; there is no separate descriptive paper.',
           sectionBreakdown: [
             { name: 'General Intelligence and Reasoning', questions: 50, marks: 50 },
             { name: 'General Awareness', questions: 50, marks: 50 },
+            { name: 'General Engineering (chosen discipline)', questions: 100, marks: 100 },
           ],
-          timerNote: 'Single 120-minute timer for both sections combined (no sectional lock).',
+          timerNote: 'Two hours for the whole paper. The notice gives one total duration and no per-section times, so whether the parts are separately timed is not established here',
           sourceUrl: SSC_JE_2025_NOTICE,
           checkedOn: '7 August 2026',
         },
@@ -5033,21 +5046,23 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         id: 'cbt',
         name: 'Computer Based Examination',
         pattern: {
-          status: 'review-pending',
-          cycle: "Stenographer Grade 'C' & 'D' Examination 2025",
+          status: 'official',
+          cycle: "Stenographer Grade 'C' & 'D' Examination 2026",
           sections: ['General Intelligence and Reasoning', 'General Awareness', 'English Language and Comprehension'],
           totalQuestions: 200,
           totalMarks: 200,
           duration: 120,
           negativeMarking: 0.25,
-          note: "Timing behaviour is disputed and is not asserted here. This record carried a single composite 120-minute window; a separate reading of the Stenographer notice reports per-part timers of 30, 30 and 60 minutes for Reasoning, General Awareness and English. Those two cannot both be right, and this site has not been able to open ssc.gov.in to settle it, so neither is published as fact until a primary document is read directly. Candidates who qualify the Computer Based Examination are shortlisted for a Skill Test in Stenography (a dictation and transcription test: 10 minutes at 100 WPM for Grade C, 80 WPM for Grade D), which is qualifying in nature and not modeled on this site since it is not a multiple-choice format. Marks scored in this Computer Based Examination, normalized across shifts, decide the Skill Test shortlist and the final merit.",
+          note: "Candidates who qualify the Computer Based Examination are shortlisted for a Skill Test in Stenography (a dictation and transcription test: 10 minutes at 100 WPM for Grade C, 80 WPM for Grade D), which is qualifying in nature and not modeled on this site since it is not a multiple-choice format. Marks scored in this Computer Based Examination, normalized across shifts, decide the Skill Test shortlist and the final merit.",
           sectionBreakdown: [
-            { name: 'General Intelligence and Reasoning', questions: 50, marks: 50 },
-            { name: 'General Awareness', questions: 50, marks: 50 },
-            { name: 'English Language and Comprehension', questions: 100, marks: 100 },
+            { name: 'General Intelligence and Reasoning', questions: 50, marks: 50, duration: 30 },
+            { name: 'General Awareness', questions: 50, marks: 50, duration: 30 },
+            { name: 'English Language and Comprehension', questions: 100, marks: 100, duration: 60 },
           ],
-          sourceUrl: SSC_STENO_2025_NOTICE,
-          checkedOn: '7 August 2026',
+          sectionDurationSource: 'explicit',
+          timerNote: 'Each part is separately timed: 30 minutes for General Intelligence and Reasoning, 30 for General Awareness, and 60 for English Language and Comprehension. The notice sets those three windows itself, as "2 Hours (with sectional timer of 30 Minutes each for Part I & Part II and 60 Minutes for Part III)"',
+          sourceUrl: SSC_STENO_2026_NOTICE,
+          checkedOn: '11 September 2026',
         },
         tests: [
           {
