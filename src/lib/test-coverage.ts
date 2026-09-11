@@ -40,20 +40,29 @@ export function getTestCoverage(
   const official = stage.pattern?.totalQuestions;
   if (typeof official !== 'number' || official <= 0 || questions.length === 0) return undefined;
 
-  if (questions.length >= official) {
-    return { complete: true, label: 'Coverage: the full official objective paper' };
-  }
-
+  // Sections first, then the count. The other way round, a test could reach the
+  // official question total while missing a whole section and be reported as
+  // the complete paper: SNAP does exactly that once its 2026 structure is
+  // recorded, with 60 questions against an official 60 but no Ethics, Morality
+  // and Values at all. A count alone cannot see that.
   const present = new Set(questions.map((question) => question.section).filter(Boolean));
   const missing = (stage.pattern?.sectionBreakdown ?? [])
     .map((section) => section.name)
     .filter((name) => !present.has(name));
+  const missingClause = missing.length > 0 && missing.length <= 3 ? missing.join(' and ') : '';
 
-  const missingClause = missing.length > 0 && missing.length <= 3
-    ? ` · ${missing.join(' and ')} not included`
-    : '';
+  if (missing.length === 0 && questions.length >= official) {
+    return { complete: true, label: 'Coverage: the full official objective paper' };
+  }
+
+  // A test can hold as many questions as the paper and still skip a section, so
+  // the count would read "60 of 60 ... not included" and contradict itself.
+  if (missingClause && questions.length >= official) {
+    return { complete: false, label: `Coverage: every official section except ${missingClause}` };
+  }
+
   return {
     complete: false,
-    label: `Coverage: ${questions.length} of ${official} official questions${missingClause}`,
+    label: `Coverage: ${questions.length} of ${official} official questions${missingClause ? ` · ${missingClause} not included` : ''}`,
   };
 }
