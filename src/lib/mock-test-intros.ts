@@ -202,6 +202,37 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
     h1: 'SEBI Grade A Mock Test (General Stream)',
     description: 'Free SEBI Grade A General Stream mock tests for Phase 1 and Phase 2. Every question pays 1.25 marks and a wrong answer costs exactly a quarter of that.',
   },
+  // Batch 4. CLAT, AILET and NMAT all had their official pattern corrected
+  // first: each was publishing this site's own shortened mock as the exam's
+  // structure. The copy below is written against the corrected figures.
+  'clat': {
+    lead: 'A free CLAT mock test series for the UG paper. CLAT UG is 120 questions for 120 marks in two hours, across English Language, Current Affairs and General Knowledge, Legal Reasoning, Logical Reasoning and Quantitative Techniques. Every CLAT online test here is free to attempt.',
+    strategy: 'Two hours for 120 questions is a minute each, which sounds comfortable until you see how the paper is built. Almost every question hangs off a passage, so that minute has to cover the reading as well as the answering, and the reading is where CLAT is decided. Legal Reasoning is the largest section at 30 questions, and it does not test law you have memorised: each passage states the principle it wants applied, so the work is comprehension under a rule rather than recall. A wrong answer costs 0.25 against 1 for a right one, so an attempt is worth making whenever you would be right more than one time in five. On coverage, this CLAT test series is English Language, Legal Reasoning, Logical Reasoning and Quantitative Techniques. Current Affairs and General Knowledge is not built here, because it turns on current facts that need checking against a source rather than reasoning you can verify on the page.',
+    title: 'CLAT Mock Test: Free UG Online Test Series',
+    h1: 'CLAT UG Mock Test',
+    description: 'Free CLAT UG mock tests. 120 questions in two hours, and every Legal Reasoning passage carries the principle it wants you to apply.',
+  },
+  'ailet': {
+    lead: 'A free AILET mock test series for the NLU Delhi entrance. AILET UG is 150 questions for 150 marks in two hours, across English, Logical Reasoning, and Current Affairs and General Knowledge. The AILET LL.M. paper is listed as a separate stage on this page. Every AILET online test here is free to attempt.',
+    strategy: 'Logical Reasoning is 70 of the 150 questions. Nearly half the paper rides on a single section, which is unusual even among law entrances, and it means a candidate who reads well but reasons slowly is a weak AILET candidate regardless of how good the English is. The clock is tighter than CLAT too: 150 questions in 120 minutes leaves 48 seconds each, against CLAT\'s full minute. A wrong answer costs 0.25 against 1, so attempting pays above one in five. On coverage, this AILET test series covers English and Logical Reasoning. Current Affairs and General Knowledge is not built here, since it turns on facts that need a source rather than reasoning that can be checked on the page.',
+    title: 'AILET Mock Test: Free UG Online Test Series',
+    h1: 'AILET UG Mock Test',
+    description: 'Free AILET UG mock tests for NLU Delhi. Logical Reasoning alone is 70 of the 150 questions, at 48 seconds a question across the paper.',
+  },
+  'nmat': {
+    lead: 'A free NMAT by GMAC mock test series. NMAT is 108 questions in 120 minutes, split into three equal 36-question sections: Language Skills, Logical Reasoning and Quantitative Skills. Every NMAT online test here is free to attempt.',
+    strategy: 'The three sections are equal in questions and in nothing else. Each carries 36, but Language Skills gets 28 minutes and Quantitative Skills gets 52, so a Quantitative question is worth 87 seconds of your time and a Language question 47. That is the most useful thing to internalise about this paper: it has already decided where your time goes, and finishing Language early buys you nothing, because time does not carry between sections. There is also no negative marking at all, which makes an unanswered question strictly worse than a guessed one. The real exam lets you choose the order of the three sections before you start; this site\'s engine runs them in a fixed order, which is a platform limit rather than an exam rule.',
+    title: 'NMAT Mock Test 2026: Free Online Test Series',
+    h1: 'NMAT by GMAC Mock Test 2026',
+    description: 'Free NMAT by GMAC mock tests. Three equal 36-question sections on locked timers of 28, 40 and 52 minutes, with no negative marking.',
+  },
+  'gate': {
+    lead: 'A free GATE mock test series for Computer Science and Information Technology. The CS paper is 65 questions for 100 marks in three hours, combining General Aptitude with the Computer Science syllabus. Every GATE online test here is free to attempt.',
+    strategy: 'GATE rewards knowing which type of question you are looking at before you decide whether to attempt it. Multiple choice questions deduct a third of a mark on the one-mark questions and two thirds on the two-mark ones, which is calibrated so precisely that a blind guess across four options is worth exactly nothing either way: the quarter of the time you are right cancels the three quarters you are not. Rule out one option and attempting turns positive. Multiple Select and Numerical Answer Type questions carry no penalty at all, so leaving one of those blank gives away a mark for nothing. Thirty of the 65 questions are worth one mark and 35 are worth two, which means the two-mark questions decide 70 of the 100. On coverage, GATE runs many separate papers and this GATE test series is Computer Science and Information Technology only. The other GATE papers are not built here.',
+    title: 'GATE CS Mock Test: Free Online Test Series',
+    h1: 'GATE Computer Science (CS) Mock Test',
+    description: 'Free GATE Computer Science mock tests. 65 questions in three hours, where a blind guess on a multiple choice question is worth exactly nothing.',
+  },
 };
 
 export function getMockTestIntro(slug: string): MockTestIntro | undefined {

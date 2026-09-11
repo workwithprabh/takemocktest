@@ -1910,8 +1910,8 @@
    "h1": [
     "AFCAT Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "fc9d39e8592c",
+   "h2Count": 9,
+   "h2Hash": "957004ea32db",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -3943,13 +3943,13 @@
    "robots": "index, follow"
   },
   "/in/ailet/mock-test": {
-   "title": "AILET Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free AILET practice tests with instant results and clearly labelled source-review status.",
+   "title": "AILET Mock Test: Free UG Online Test Series | TakeMockTest",
+   "description": "Free AILET UG mock tests for NLU Delhi. Logical Reasoning alone is 70 of the 150 questions, at 48 seconds a question across the paper.",
    "h1": [
-    "AILET Mock Test 2026"
+    "AILET UG Mock Test"
    ],
-   "h2Count": 8,
-   "h2Hash": "70abbf1b423b",
+   "h2Count": 9,
+   "h2Hash": "cff5df012755",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -3959,7 +3959,7 @@
     "Question"
    ],
    "schemaHash": "4b4556fefb0c",
-   "ogHash": "dfeebca1797a",
+   "ogHash": "6c0979306926",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -5447,8 +5447,8 @@
    "h1": [
     "AP LAWCET Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "0e39c463a174",
+   "h2Count": 8,
+   "h2Hash": "846a84d532af",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -11300,8 +11300,8 @@
    "h1": [
     "CAT Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "d6a0d594b947",
+   "h2Count": 9,
+   "h2Hash": "82d5dcf7a02e",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -11650,8 +11650,8 @@
    "h1": [
     "CDS Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "922bb459a326",
+   "h2Count": 9,
+   "h2Hash": "a6c911788e86",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -13559,13 +13559,13 @@
    "robots": "index, follow"
   },
   "/in/clat/mock-test": {
-   "title": "CLAT Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free CLAT practice tests with instant results and clearly labelled source-review status.",
+   "title": "CLAT Mock Test: Free UG Online Test Series | TakeMockTest",
+   "description": "Free CLAT UG mock tests. 120 questions in two hours, and every Legal Reasoning passage carries the principle it wants you to apply.",
    "h1": [
-    "CLAT Mock Test 2026"
+    "CLAT UG Mock Test"
    ],
-   "h2Count": 8,
-   "h2Hash": "3ceeaacf35ce",
+   "h2Count": 9,
+   "h2Hash": "3dde5646f06f",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -13575,7 +13575,7 @@
     "Question"
    ],
    "schemaHash": "f502319ee58b",
-   "ogHash": "7f73dce6487b",
+   "ogHash": "42043be228e8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -14304,8 +14304,8 @@
    "h1": [
     "CMAT Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "efb747af67ae",
+   "h2Count": 9,
+   "h2Hash": "a428262ec224",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -18723,13 +18723,13 @@
    "robots": "index, follow"
   },
   "/in/gate/mock-test": {
-   "title": "GATE Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free GATE practice tests with instant results and clearly labelled source-review status.",
+   "title": "GATE CS Mock Test: Free Online Test Series | TakeMockTest",
+   "description": "Free GATE Computer Science mock tests. 65 questions in three hours, where a blind guess on a multiple choice question is worth exactly nothing.",
    "h1": [
-    "GATE Mock Test 2026"
+    "GATE Computer Science (CS) Mock Test"
    ],
-   "h2Count": 8,
-   "h2Hash": "45b00dc2ff85",
+   "h2Count": 9,
+   "h2Hash": "78a1a647824a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -18739,7 +18739,7 @@
     "Question"
    ],
    "schemaHash": "62a9ecf7ca1c",
-   "ogHash": "4bc1076ec3ad",
+   "ogHash": "49d35a7ef8d5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -40355,8 +40355,8 @@
    "h1": [
     "MAT Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "a2a3325cd7a2",
+   "h2Count": 9,
+   "h2Hash": "c4b0c3942951",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -41689,8 +41689,8 @@
    "h1": [
     "MH CET Law Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "181d22cf1486",
+   "h2Count": 9,
+   "h2Hash": "75a50f05978a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -45383,8 +45383,8 @@
    "h1": [
     "NDA Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "d3058e2c836a",
+   "h2Count": 9,
+   "h2Hash": "6f643f069305",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -49061,13 +49061,13 @@
    "robots": "index, follow"
   },
   "/in/nmat/mock-test": {
-   "title": "NMAT Mock Test 2026, Practice Free Test Series",
-   "description": "Attempt free NMAT practice tests with instant results and clearly labelled source-review status.",
+   "title": "NMAT Mock Test 2026: Free Online Test Series | TakeMockTest",
+   "description": "Free NMAT by GMAC mock tests. Three equal 36-question sections on locked timers of 28, 40 and 52 minutes, with no negative marking.",
    "h1": [
-    "NMAT Mock Test 2026"
+    "NMAT by GMAC Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "7f806f87c614",
+   "h2Count": 9,
+   "h2Hash": "30aa74f1920a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -49077,7 +49077,7 @@
     "Question"
    ],
    "schemaHash": "5187a4b89516",
-   "ogHash": "6e073d465cd8",
+   "ogHash": "0b24d6e3b479",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -66400,8 +66400,8 @@
    "h1": [
     "SLAT Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "8b3133b01299",
+   "h2Count": 9,
+   "h2Hash": "54549386bbbd",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -66821,8 +66821,8 @@
    "h1": [
     "SNAP Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "02150ccc90c9",
+   "h2Count": 9,
+   "h2Hash": "4730ca2a1d3b",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -76801,8 +76801,8 @@
    "h1": [
     "Territorial Army Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "1e6ca7b8fab7",
+   "h2Count": 9,
+   "h2Hash": "c721a16ae6c0",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -83599,8 +83599,8 @@
    "h1": [
     "XAT Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "dce7d592fe7e",
+   "h2Count": 8,
+   "h2Hash": "665d521f1d2b",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
