@@ -1924,7 +1924,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         id: 'tier-1',
         name: 'Tier 1',
         pattern: {
-          status: 'official',
+          status: 'review-pending',
           cycle: '2025',
           sections: [
             'General Intelligence',
@@ -1936,7 +1936,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 200,
           duration: 60,
           negativeMarking: 0.5,
-          timerNote: 'Single 60-minute timer for all four sections combined (no sectional lock).',
+          note: 'Timing behaviour is unresolved and is not asserted here. This record carried a single composite 60-minute window on the 2025 cycle. SSC CGL Tier 1, which is the same shape of paper at 100 questions for 200 marks in 60 minutes with the same four subjects, moved to a 15-minute timer per subject for 2026, and that change is recorded on this site against the CGL 2026 notice. Current secondary reporting says CHSL did the same. This site has not read the CHSL 2026 notice directly, so neither timing model is published as fact until it can.',
           sourceUrl: SSC_CHSL_OFFICIAL_PAGE,
           checkedOn: '4 August 2026',
         },

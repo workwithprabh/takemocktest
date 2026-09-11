@@ -70360,27 +70360,24 @@
   },
   "/in/ssc-chsl/exam-pattern": {
    "title": "SSC CHSL Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
-   "description": "SSC CHSL exam pattern: 100 questions, 200 marks, 60 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "SSC CHSL exam pattern: sections, marks, duration, and negative marking explained.",
    "h1": [
     "SSC CHSL Exam Pattern"
    ],
-   "h2Count": 7,
-   "h2Hash": "ac24acf17d1c",
+   "h2Count": 6,
+   "h2Hash": "ac6275fa402d",
    "schemaTypes": [
-    "Answer",
     "BreadcrumbList",
-    "FAQPage",
-    "ListItem",
-    "Question"
+    "ListItem"
    ],
-   "schemaHash": "043147345fe8",
-   "ogHash": "e750fdcd9c42",
-   "sitemap": true,
-   "robots": "index, follow"
+   "schemaHash": "676e03dca9e7",
+   "ogHash": "4a021dab10e3",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ssc-chsl/mock-test": {
    "title": "SSC CHSL Mock Test 2026, Practice Free Test Series",
-   "description": "Free SSC CHSL mock tests for Tier 1 and Tier 2. One 60-minute composite clock in Tier 1, sequential timed windows in Tier 2, with instant results.",
+   "description": "Free SSC CHSL mock tests for Tier 1 and Tier 2. 100 questions in 60 minutes, scored 2 marks right and 0.5 wrong, with instant section-wise results.",
    "h1": [
     "SSC CHSL Mock Test 2026"
    ],
@@ -70395,7 +70392,7 @@
     "Question"
    ],
    "schemaHash": "8fcca16e484d",
-   "ogHash": "10c4221ccff0",
+   "ogHash": "d45b5a20c37a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -71169,7 +71166,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "f3dec2e5c476",
+   "schemaHash": "462609a0b67c",
    "ogHash": "2aca7e00cbca",
    "sitemap": true,
    "robots": "index, follow"
