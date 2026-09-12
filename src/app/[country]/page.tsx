@@ -6,9 +6,10 @@ import ExamCategoryCard from '@/components/ExamCategoryCard';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { getExamCatalog, getFeaturedExamCatalog } from '@/lib/exam-catalog';
 import { countryPublishes, getExamsForCountry, countryName } from '@/lib/exam-countries';
-import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
+import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml, SITE_NAME } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
 import { pageMetadata } from '@/lib/metadata';
+import { getCheckedQuestionEntries } from '@/lib/questions';
 import { LR_LADDER, LR_SLUG, LR_TOPIC_TESTS, LR_TOTAL_QUESTIONS, LR_GRADE_LABELS } from '@/lib/logical-reasoning';
 import { PRACTICE_SLUG, getPublishedTopicSlugs, getTopicPool, getTopicPools } from '@/lib/practice-topics';
 
@@ -20,9 +21,39 @@ import { PRACTICE_SLUG, getPublishedTopicSlugs, getTopicPool, getTopicPools } fr
 const examSuggestionsFor = (country: string) => Array.from(new Map(
   getExamCatalog(country).flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
 ).values());
+// The homepage is the strongest internal link this site can point at an exam,
+// so which exams it points at should be a decision, not a side effect of
+// catalogue order. This used to be `.slice(0, 6)` over EXAM_LIST, which meant
+// the six exams that happened to be declared first collected that link equity.
+// The list below is chosen: the highest-demand hubs across SSC, banking,
+// railways, management, engineering, law, teaching and defence. Update it by
+// cycle rather than leaving it to file order.
+const PRIORITY_EXAMS = [
+  'ssc-cgl', 'rrb-ntpc', 'ibps-po', 'ibps-clerk', 'sbi-po', 'ssc-chsl',
+  'cat', 'gate', 'clat', 'ctet', 'nda', 'ssc-gd-constable',
+] as const;
+const HOMEPAGE_EXAM_COUNT = 12;
+
 const featuredExamsFor = (country: string) => {
   const owned = new Set<string>(getExamsForCountry(country));
-  return EXAM_LIST.filter((exam) => owned.has(exam.slug) && getCheckedTestCount(exam) > 0).slice(0, 6);
+  const eligible = EXAM_LIST.filter((exam) => owned.has(exam.slug) && getCheckedTestCount(exam) > 0);
+  const bySlug = new Map(eligible.map((exam) => [exam.slug, exam]));
+  const curated = PRIORITY_EXAMS.map((slug) => bySlug.get(slug)).filter((exam) => exam !== undefined);
+  // Nigeria publishes none of the Indian priority exams, so the curated list
+  // has to top up from the country's own catalogue rather than render empty.
+  const rest = eligible.filter((exam) => !PRIORITY_EXAMS.includes(exam.slug as (typeof PRIORITY_EXAMS)[number]));
+  return [...curated, ...rest].slice(0, HOMEPAGE_EXAM_COUNT);
+};
+
+// Product scale, counted from the catalogue rather than typed into the page,
+// the same way the About page derives its figures. A hardcoded "1,000+ tests"
+// is a claim that rots silently; this one cannot disagree with the site.
+const scaleFor = (country: string) => {
+  const owned = new Set<string>(getExamsForCountry(country));
+  const exams = EXAM_LIST.filter((exam) => owned.has(exam.slug) && getCheckedTestCount(exam) > 0);
+  const tests = exams.reduce((sum, exam) => sum + getCheckedTestCount(exam), 0);
+  const questions = getCheckedQuestionEntries().filter((entry) => owned.has(entry.examSlug)).length;
+  return { exams: exams.length, tests, questions };
 };
 // The three deepest topic pools, as a taste of the topic-practice section.
 // Derived rather than hand-picked, so it follows the corpus as banks land.
@@ -48,14 +79,29 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   // simply wrong, so both are built from the country now.
   const name = countryName(country);
   const lead = country === 'ng' ? 'JAMB UTME' : 'SSC, Banking and Railways';
+  // India's title drops the country so the brand suffix fits. pageMetadata
+  // appends " | TakeMockTest" only when the whole title stays inside 60
+  // characters, and "Free Mock Tests for Competitive Exams in India" came to 61
+  // with it, so the brand was being silently dropped from the one page that
+  // most needs to own the brand query. At 44 characters the title below lands
+  // at 59 and keeps it. Nigeria keeps its country qualifier instead: it is what
+  // stops the two country homes sharing a title, and /ng is not competing for
+  // the brand term.
+  const title = country === 'in'
+    ? 'Free Online Mock Tests for Competitive Exams'
+    : `Free Online Mock Tests for Competitive Exams${name ? ` in ${name}` : ''}`;
   return pageMetadata({
-    title: `Free Mock Tests for Competitive Exams${name ? ` in ${name}` : ''}`,
-    description: `Free, syllabus-checked ${lead} mock tests${name ? ` and other competitive exams in ${name}` : ''}. Instant section-wise results and answer explanations. Free to attempt.`,
+    title,
+    description: country === 'ng'
+      ? `${SITE_NAME} offers free online mock tests for ${lead} and other competitive exams${name ? ` in ${name}` : ''}. No sign-up, instant results and answer explanations.`
+      : `${SITE_NAME} offers free online mock tests for SSC, Banking, Railways, Engineering, Management and Law. No sign-up, instant results and answer explanations.`,
     path: `/${country}`,
   });
 }
 
 const TRUST_POINTS = [
+  'Every test here starts without an account, and nothing is held behind a sign-up.',
+  'Where a pattern is marked review-pending rather than official, the page says so instead of presenting it as settled.',
   'Check each test’s source references and review status before starting.',
   'Review the scoring rules before you start, and answer explanations after you finish.',
 ];
@@ -75,6 +121,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
   const hasExams = countryPublishes(country, 'exams');
   const examSuggestions = examSuggestionsFor(country);
   const featuredExams = featuredExamsFor(country);
+  const scale = scaleFor(country);
   const featuredCategories = getFeaturedExamCatalog(country);
   const hasUpdates = countryPublishes(country, 'updates');
   const latestUpdates = getLatestUpdates(5);
@@ -98,8 +145,16 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             <h1 id="home-heading" className="max-w-xl text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-ink-900 md:text-5xl">
               Free Online Mock Tests for Competitive Exams{countryName(country) ? ` in ${countryName(country)}` : ''}
             </h1>
-            <p className="mt-3 max-w-lg text-base leading-6 text-ink-600">
-              Find your next mock test, practise at your pace, and review every answer with a worked explanation.
+            {/* The hero used to read "Find your next mock test, practise at
+                your pace". Good instruction, but it never said what this site
+                is, so nothing on the page connected the brand to the thing it
+                does. This sentence does that in one line: name, category,
+                market, and the three things that differ from a paywalled
+                competitor. */}
+            <p className="mt-3 max-w-xl text-base leading-6 text-ink-600">
+              {SITE_NAME} is a free online mock test platform for competitive exams{countryName(country) ? ` in ${countryName(country)}` : ''}.
+              Practise {country === 'ng' ? 'JAMB UTME and other' : 'SSC, Banking, Railways, Engineering, Management, Law, Defence and other'} exams
+              with instant results, answer explanations and no sign-up.
             </p>
             <form action={`/${country}/exams`} role="search" aria-label="Find a mock test" className="mt-6">
               <label className="mb-2 block text-sm font-semibold text-ink-900" htmlFor="homepage-exam-search">Search your mock test</label>
@@ -141,6 +196,24 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         </div>
       </section>
 
+      {scale.exams > 0 && (
+        <section aria-label="What is on this site" className="border-b border-ink-200 bg-white">
+          <dl className="mx-auto flex max-w-6xl flex-wrap justify-between gap-y-3 px-5 py-4 text-center">
+            {[
+              { label: 'Exams', value: scale.exams.toLocaleString(contentLocale(country)) },
+              { label: 'Mock tests', value: scale.tests.toLocaleString(contentLocale(country)) },
+              { label: 'Practice questions', value: scale.questions.toLocaleString(contentLocale(country)) },
+              { label: 'Cost to practise', value: 'Free' },
+            ].map((item) => (
+              <div key={item.label} className="min-w-[7rem] flex-1">
+                <dt className="text-xs uppercase tracking-wide text-ink-600">{item.label}</dt>
+                <dd className="text-lg font-bold text-ink-900 md:text-xl">{item.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
       <div className="mx-auto max-w-6xl space-y-10 px-5 py-8 md:space-y-14 md:py-12">
         {hasExams && (
         <section id="exams" aria-labelledby="popular-tests-heading" className="scroll-mt-24">
@@ -166,7 +239,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
             join it later without a rename or a URL change. */}
         <section id="skills" aria-labelledby="skills-heading" className="scroll-mt-24">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
-            <h2 id="skills-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Practice by skill</h2>
+            <h2 id="skills-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Free practice questions by topic</h2>
             <Link href={`/${country}/${PRACTICE_SLUG}`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
               All practice topics <span aria-hidden="true">→</span>
             </Link>
@@ -227,7 +300,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         {hasExams && (
         <section id="exam-categories" aria-labelledby="exam-categories-heading" className="scroll-mt-24">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
-            <h2 id="exam-categories-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Browse by goal</h2>
+            <h2 id="exam-categories-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Mock tests by exam category</h2>
             <Link href={`/${country}/exams`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
               All categories <span aria-hidden="true">→</span>
             </Link>
@@ -272,9 +345,9 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
 
         <section aria-labelledby="trust-heading" className="border-l-2 border-action-600 bg-action-50 px-5 py-5 md:flex md:items-start md:gap-8 md:p-6">
           <div className="md:w-1/3 md:shrink-0">
-            <h2 id="trust-heading" className="text-lg font-bold text-ink-900">Know what you’re practicing</h2>
+            <h2 id="trust-heading" className="text-lg font-bold text-ink-900">Why practise on {SITE_NAME}?</h2>
             <Link href={`/${country}/about`} className="mt-1 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline underline-offset-4">
-              How we make our tests <span aria-hidden="true">→</span>
+              How {SITE_NAME} checks exam patterns <span aria-hidden="true">→</span>
             </Link>
           </div>
           <ul className="list-disc space-y-2 pl-4 text-sm leading-6 text-ink-700">

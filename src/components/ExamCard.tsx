@@ -156,7 +156,7 @@ export default function ExamCard({ exam, country }: { exam: ExamConfig; country:
         {style.icon}
       </div>
       <div className="min-w-0 flex-1">
-        <h3 className="text-base font-semibold text-ink-900 group-hover:underline">{exam.name}</h3>
+        <h3 className="text-base font-semibold text-ink-900 group-hover:underline">{exam.name} Mock Test</h3>
         <p className="mt-1 text-xs text-ink-600">
           {checkedTestCount > 0 ? `${checkedTestCount} checked tests` : 'Practice demo'}
         </p>
