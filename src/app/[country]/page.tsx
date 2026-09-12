@@ -87,14 +87,26 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   // at 59 and keeps it. Nigeria keeps its country qualifier instead: it is what
   // stops the two country homes sharing a title, and /ng is not competing for
   // the brand term.
+  // The brand is written closed up, TakeMockTest, but people type it spaced:
+  // "take mock test". Before this the spaced form appeared nowhere in the
+  // homepage's visible text at all, only closed up (7 times) and in the schema
+  // alternateName, so the page carried no on-page signal for the way the brand
+  // is actually searched. Leading with it also reads as the transactional
+  // phrase it literally is.
+  //
+  // Length is why it is punctuated this way. pageMetadata appends
+  // " | TakeMockTest" (15 characters) only when the result stays inside 60, so
+  // India's 59-character title keeps the whole primary phrase and drops the
+  // suffix, which costs nothing here because the title already names the brand.
+  // Nigeria's is short enough to keep both spellings.
   const title = country === 'in'
-    ? 'Free Online Mock Tests for Competitive Exams'
-    : `Free Online Mock Tests for Competitive Exams${name ? ` in ${name}` : ''}`;
+    ? 'Take Mock Test: Free Online Mock Tests for Competitive Exams'
+    : `Take Mock Test: Free Mock Tests for Exams${name ? ` in ${name}` : ''}`;
   return pageMetadata({
     title,
     description: country === 'ng'
-      ? `${SITE_NAME} offers free online mock tests for ${lead} and other competitive exams${name ? ` in ${name}` : ''}. No sign-up, instant results and answer explanations.`
-      : `${SITE_NAME} offers free online mock tests for SSC, Banking, Railways, Engineering, Management and Law. No sign-up, instant results and answer explanations.`,
+      ? `Take Mock Test (${SITE_NAME}) offers free online mock tests for ${lead} and other competitive exams${name ? ` in ${name}` : ''}. No sign-up and instant results.`
+      : `Take Mock Test (${SITE_NAME}) offers free online mock tests for SSC, Banking, Railways, Engineering, Management and Law. No sign-up and instant results.`,
     path: `/${country}`,
   });
 }
@@ -277,7 +289,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                 promise that used to carry the hero now sits underneath it, where
                 it still does its job without standing in for the subject. */}
             <h1 id="home-heading" className="max-w-xl text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-ink-900 md:text-5xl">
-              Free Online Mock Tests for Competitive Exams{countryName(country) ? ` in ${countryName(country)}` : ''}
+              Take Mock Test: Free Online Mock Tests for Competitive Exams{countryName(country) ? ` in ${countryName(country)}` : ''}
             </h1>
             {/* The hero used to read "Find your next mock test, practise at
                 your pace". Good instruction, but it never said what this site
@@ -286,7 +298,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                 market, and the three things that differ from a paywalled
                 competitor. */}
             <p className="mt-3 max-w-xl text-base leading-6 text-ink-600">
-              {SITE_NAME} is a free online mock test platform for competitive exams{countryName(country) ? ` in ${countryName(country)}` : ''}.
+              {SITE_NAME} (Take Mock Test) is a free online mock test platform for competitive exams{countryName(country) ? ` in ${countryName(country)}` : ''}.
               Practise {country === 'ng' ? 'JAMB UTME and other' : 'SSC, Banking, Railways, Engineering, Management, Law, Defence and other'} exams
               with instant results, answer explanations and no sign-up.
             </p>
