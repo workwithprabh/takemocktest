@@ -106,12 +106,73 @@ const TRUST_POINTS = [
   'Review the scoring rules before you start, and answer explanations after you finish.',
 ];
 
-const FAQS = [
-  { q: 'Is this really free?', a: 'Yes, every available test is free to attempt.' },
-  { q: 'Do I need to sign up?', a: 'No. You can start any test immediately. Your results are saved on this device so you can track progress over time.' },
-  { q: 'How is scoring calculated?', a: 'Every test states its marks and negative-marking deduction before you begin, matching the official pattern it is checked against.' },
-  { q: 'Will more exams be added?', a: 'Yes, we\'re actively expanding to more exams and categories beyond SSC, Banking, and Railways.' },
-];
+// The FAQs used to be a flat module-level array shared by every country, and
+// one of its four answers promised expansion "beyond SSC, Banking, and
+// Railways" on a homepage that, under /ng, offers JAMB UTME and nothing else.
+// That is the same defect the exam grid and the metadata above were already
+// fixed for. They are built per country now, and every figure in them is
+// interpolated from the catalogue rather than typed in, so an answer cannot
+// drift away from what the site actually holds the way a hardcoded count does.
+const faqsFor = (country: string, scale: { exams: number; tests: number; questions: number }) => {
+  const locale = contentLocale(country);
+  const n = (value: number) => value.toLocaleString(locale);
+  const families = country === 'ng'
+    ? 'JAMB UTME'
+    : 'SSC, Banking, Railways, Engineering, Management, Law, Defence and more';
+  const official = EXAM_LIST.filter((exam) => exam.stages.some((stage) => stage.pattern?.status === 'official')).length;
+  const reviewPending = EXAM_LIST.filter((exam) => exam.stages.some((stage) => stage.pattern?.status === 'review-pending')).length;
+
+  return [
+    {
+      q: 'Is TakeMockTest really free?',
+      a: `Yes. All ${n(scale.tests)} mock tests are free to attempt, with no trial period, no card details and nothing held back behind a paid tier. There is no premium version of this site that gets the better questions.`,
+    },
+    {
+      q: 'Do I need to create an account?',
+      a: 'No. Every test starts immediately, and there is no sign-up step at any point. Your answers and results are saved in your own browser rather than on our servers, which has one consequence worth knowing: clearing your browser data, or switching to another device, starts you fresh.',
+    },
+    {
+      q: 'Are these previous year question papers?',
+      a: `No, and it matters that you know it. Every question here is written originally against the official syllabus and pattern, not recalled or copied from a real paper. What is reproduced from the examining body is the structure: the question count, section split, timing and marking scheme. The ${n(scale.questions)} questions on this site are practice material, not a leaked or memory-based paper.`,
+    },
+    {
+      q: 'What do I get when I finish a test?',
+      a: 'A section-wise score breakdown the moment you submit, showing what negative marking cost you, how long you spent per question, and an explanation for every question you saw, whether you got it right or wrong. Each question also carries the source reference it was checked against.',
+    },
+    {
+      q: 'Where do the exam patterns come from?',
+      a: `Question counts, timing, marking schemes and section splits are taken from the examining body's own notification, information bulletin or syllabus document. ${official} exams carry a pattern marked official, meaning the primary document was read directly. ${reviewPending} are marked review-pending, meaning the structure rests on consistent corroboration from secondary sources because the examining body's own site could not be reached. That label is shown on the exam's own pages rather than hidden, so you can check before you trust a figure.`,
+    },
+    {
+      q: 'Is this content written by AI?',
+      a: 'The exam pages, blog and question banks are drafted with AI assistance and then checked against primary sources and a set of automated audits before they are published. We would rather state that plainly than let a byline imply otherwise. What we commit to is the checking, not who typed the first draft.',
+    },
+    {
+      q: 'How is scoring calculated, and does negative marking apply?',
+      a: 'Every test states its marks per correct answer and its deduction for a wrong one before you begin, matching the official scheme it is checked against. The deduction differs by exam, so the maths of whether a guess is worth making differs too. Where this site uses a marking rule the examining body has not published, the test says so instead of presenting it as official.',
+    },
+    {
+      q: 'Can I pause a test and come back to it?',
+      a: 'You can close the tab and return: your answers are saved as you go, so a refresh or an accidental back button will not lose your work. The clock is not pausable, though. Time that passes while you are away is deducted when you resume, the same way it would be in a real sitting.',
+    },
+    {
+      q: 'Should I take a full mock or a sectional test?',
+      a: `A full mock is for pacing and stamina under the official timer, and is the only thing that tells you whether you can finish the paper. A sectional test isolates one section when you already know which one is costing you. For a single weak topic, the topic practice section has ${n(practiceQuestions)} questions across ${practiceTopics} topics with no negative marking, which is the right place to rebuild a skill before you time yourself on it.`,
+    },
+    {
+      q: 'I have not picked an exam yet. Where should I start?',
+      a: `Two sections need no exam choice. Topic practice covers ${practiceTopics} quantitative, reasoning and English topics drawn from every exam that sets them, and the logical reasoning section pools ${n(LR_TOTAL_QUESTIONS)} questions graded on one easy-to-hard scale. Both run without negative marking, so they are a way to find your level before committing to a syllabus.`,
+    },
+    {
+      q: 'Does a mock here always cover the whole official paper?',
+      a: 'Not always, and the page tells you when it does not. Some official papers include sections this site does not build, such as current-affairs general awareness or hand-drawn and human-marked components. Where a mock covers part of a paper, it states which sections it contains and how many of the official questions that represents, rather than presenting a partial paper as a full one.',
+    },
+    {
+      q: 'Which exams are covered, and will more be added?',
+      a: `${n(scale.exams)} ${scale.exams === 1 ? 'exam is' : 'exams are'} live here, covering ${families}, with ${n(scale.tests)} mock tests ${scale.exams === 1 ? 'on it' : 'between them'}. More are added continuously, and exams listed without a live test are marked as such rather than linking to an empty page.`,
+    },
+  ];
+};
 
 export default async function HomePage({ params }: { params: Promise<{ country: string }> }) {
   const { country } = await params;
@@ -123,6 +184,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
   const featuredExams = featuredExamsFor(country);
   const scale = scaleFor(country);
   const featuredCategories = getFeaturedExamCatalog(country);
+  const faqs = faqsFor(country, scale);
   const hasUpdates = countryPublishes(country, 'updates');
   const latestUpdates = getLatestUpdates(5);
 
@@ -130,7 +192,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
     <div>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLdHtml([organizationSchema(), websiteSchema(), faqPageSchema(FAQS)]) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml([organizationSchema(), websiteSchema(), faqPageSchema(faqs)]) }}
       />
 
       <section aria-labelledby="home-heading" className="border-b border-ink-200 bg-gradient-to-br from-ink-50 via-white to-action-50">
@@ -358,7 +420,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         <section aria-labelledby="faq-heading">
           <h2 id="faq-heading" className="mb-4 text-xl font-bold text-ink-900 md:text-2xl">Frequently asked questions</h2>
           <div className="border border-ink-200 bg-white">
-            {FAQS.map((faq) => (
+            {faqs.map((faq) => (
               <details key={faq.q} className="group border-b border-ink-200 last:border-b-0">
                 <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold text-ink-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700">
                   {faq.q}
