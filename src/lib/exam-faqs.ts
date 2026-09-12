@@ -1,4 +1,5 @@
 import { ExamConfig, StagePattern, describeSections, getCheckedTestCount } from './exams';
+import { getRelatedExams } from './exam-clusters';
 
 // FAQ content generated programmatically from already-verified ExamConfig
 // data ("Bucket A" per the SEO FAQ overhaul) so it stays accurate as exams
@@ -11,6 +12,15 @@ import { ExamConfig, StagePattern, describeSections, getCheckedTestCount } from 
 export interface Faq {
   q: string;
   a: string;
+  // Internal links rendered under the answer. Only ever point these at
+  // INDEXABLE pages. The per-exam syllabus, eligibility, selection-process,
+  // salary, cutoff and previous-year-papers routes are all noIndex: true, and
+  // this site already has 3,199 noindexed pages absorbing roughly 15% of its
+  // internal link graph, so sending FAQ links there would deepen a problem
+  // rather than build topical relevance. The exam hub, its mock-test hub, its
+  // exam-pattern page when the pattern is official, the category pages and
+  // sibling exams in the same cluster are the indexable targets.
+  links?: { href: string; label: string }[];
 }
 
 function negativeMarkingFaqAnswer(negativeMarking: StagePattern['negativeMarking'], examName: string): string {
@@ -25,19 +35,74 @@ function negativeMarkingFaqAnswer(negativeMarking: StagePattern['negativeMarking
   return '';
 }
 
+// Every one of these exams stores a pattern whose totalQuestions/duration
+// describe TakeMockTest's own shortened practice paper while the note beside
+// it states the real official figures: CAT is stored as 34 questions in 60
+// minutes under a note that says the exam has 68 questions in 120 minutes, MAT
+// as 40/32 under a note saying 150/120, NISM as 20/24 under a note saying
+// 100/120. This is the same defect class already fixed for CLAT, AILET, NMAT
+// and five others, and these eleven were found when the pattern answer below
+// started quoting those fields as "the exam pattern" on the hub page. Quoting
+// them in a direct answer is worse than leaving them in a table, so the
+// pattern-shape and pattern-currency answers are withheld here until the
+// stored figures are corrected against each note. Nothing else is suppressed:
+// per-question marking is unaffected by the shortening and still answers.
+const PATTERN_FIGURES_UNDER_REVIEW = new Set([
+  'cat', 'mat', 'atma', 'ibsat', 'nism', 'nata', 'act', 'mcat', 'nda', 'cds', 'afcat',
+]);
+
+function pluralMinutes(minutes: number): string {
+  return `${minutes} minute${minutes === 1 ? '' : 's'}`;
+}
+
+// A stage's pattern in one sentence, reused by several answers below.
+function describePattern(pattern: StagePattern): string | undefined {
+  if (!pattern.totalQuestions || !pattern.totalMarks || !pattern.duration) return undefined;
+  return `${pattern.totalQuestions} questions worth ${pattern.totalMarks} marks in ${pluralMinutes(pattern.duration)}, covering ${describeSections(pattern)}`;
+}
+
 // Hub page (/in/{exam}) FAQ: pattern-level questions.
-export function getExamPatternFaqs(exam: ExamConfig): Faq[] {
+export function getExamPatternFaqs(exam: ExamConfig, country: string): Faq[] {
   const officialStages = exam.stages.filter((stage) => stage.pattern.status === 'official');
-  if (officialStages.length === 0) return [];
+  // This used to `return []` the moment an exam had no official stage, which
+  // silently emptied the FAQ block on 32 indexable hubs, CAT, XAT, GMAT, LSAT,
+  // NEET PG, JAM, NATA and MHT-CET among them. Being unable to read the primary
+  // notice is a reason to label a figure, not a reason to answer nothing: the
+  // pattern is already published in full on the page around this block, and the
+  // /about page already defines what the label means. Review-pending stages now
+  // answer the same questions with their status stated inside the answer.
+  const stages = officialStages.length > 0 ? officialStages : exam.stages.filter((stage) => stage.pattern.status === 'review-pending');
+  if (stages.length === 0) return [];
+  const reviewPending = officialStages.length === 0;
+  const figuresUnderReview = PATTERN_FIGURES_UNDER_REVIEW.has(exam.slug);
+  const caveat = reviewPending
+    ? ` This pattern is marked review-pending: it rests on consistent corroboration from secondary sources because the examining body's own document could not be read directly, so check it against the official notification before you rely on it.`
+    : '';
 
   const faqs: Faq[] = [];
 
-  if (officialStages.length === 1) {
-    const pattern = officialStages[0].pattern;
-    if (pattern.totalQuestions && pattern.totalMarks && pattern.duration) {
+  // "What is {exam}" is the highest-volume query an exam hub can answer, and
+  // the hub answered it nowhere. Built from fields the catalogue already
+  // carries, never from a fact invented here: the full name, the category, and
+  // the stage structure the exam actually publishes.
+  const stageShape = stages.length > 1
+    ? `It is conducted in ${stages.length} stages (${stages.map((stage) => stage.name).join(', ')}), each with its own paper and marking scheme.`
+    : `It is a single-stage ${stages[0].name} paper.`;
+  faqs.push({
+    q: `What is ${exam.name}?`,
+    a: `${exam.name}${exam.fullName && exam.fullName !== exam.name ? ` stands for ${exam.fullName}` : ''} and is ${exam.category === 'SSC' || exam.category === 'Banking' || exam.category === 'Railways' ? 'a recruitment examination' : 'an entrance examination'} in the ${exam.category} group. ${stageShape}${reviewPending ? '' : ''}`,
+    links: [
+      { href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` },
+    ],
+  });
+
+  if (stages.length === 1) {
+    const pattern = stages[0].pattern;
+    const shape = figuresUnderReview ? undefined : describePattern(pattern);
+    if (shape) {
       faqs.push({
         q: `What is the ${exam.name} exam pattern?`,
-        a: `${exam.name} has ${pattern.totalQuestions} questions worth ${pattern.totalMarks} marks in ${pattern.duration} minutes, covering ${describeSections(pattern)}.`,
+        a: `${exam.name} has ${shape}.${caveat}`,
       });
     }
     if (pattern.negativeMarking !== undefined) {
@@ -47,17 +112,55 @@ export function getExamPatternFaqs(exam: ExamConfig): Faq[] {
       });
     }
   } else {
-    const stageNames = officialStages.map((stage) => stage.name).join(', ');
+    const stageNames = stages.map((stage) => stage.name).join(', ');
     faqs.push({
       q: `How many stages does ${exam.name} have?`,
-      a: `${exam.name} is conducted in ${officialStages.length} stages: ${stageNames}. Each stage has its own question count, marks, duration, and negative-marking rules, shown on the exam pattern page.`,
+      a: `${exam.name} is conducted in ${stages.length} stages: ${stageNames}. Each stage has its own question count, marks, duration, and negative-marking rules, shown on the exam pattern page.${caveat}`,
+    });
+    // A multi-stage exam used to get the stage list and nothing else, so the
+    // hub for an exam as heavily searched as SSC CGL answered "how many stages"
+    // without ever stating a question count. The first stage is the one every
+    // candidate sits, so its shape belongs here.
+    const first = stages[0];
+    const shape = figuresUnderReview ? undefined : describePattern(first.pattern);
+    if (shape) {
+      faqs.push({
+        q: `What is the ${exam.name} ${first.name} exam pattern?`,
+        a: `${first.name} has ${shape}.`,
+      });
+    }
+    // Negative marking differs by stage often enough that one blanket answer
+    // would be wrong, so this answers it only when every stage agrees.
+    const rules = new Set(stages.map((stage) => JSON.stringify(stage.pattern.negativeMarking ?? null)));
+    if (rules.size === 1 && stages[0].pattern.negativeMarking !== undefined) {
+      faqs.push({
+        q: `Is there negative marking in ${exam.name}?`,
+        a: `${negativeMarkingFaqAnswer(stages[0].pattern.negativeMarking, exam.name)} The same rule applies at every stage.`,
+      });
+    }
+  }
+
+  // Which cycle the figures describe, and when they were last read, is the
+  // question a candidate actually needs answered before trusting a number on a
+  // page like this, and it is the one thing a competitor's evergreen page never
+  // says.
+  const dated = figuresUnderReview ? undefined : stages.find((stage) => stage.pattern.checkedOn);
+  if (dated?.pattern.checkedOn) {
+    const cycle = dated.pattern.cycle ? ` for the ${dated.pattern.cycle} cycle` : '';
+    faqs.push({
+      q: `Is this ${exam.name} pattern up to date?`,
+      a: `The figures on this page describe the ${exam.name} pattern${cycle} and were last checked on ${dated.pattern.checkedOn}${dated.pattern.sourceUrl ? ', against the source linked on this page' : ''}. ${reviewPending ? 'It carries a review-pending label rather than an official one, which is shown on the page rather than hidden.' : 'It is marked official, meaning the primary document was read directly.'}`,
     });
   }
 
-  if (officialStages.some((stage) => stage.pattern.sourceUrl)) {
+  if (stages.some((stage) => stage.pattern.sourceUrl)) {
     faqs.push({
       q: `Does this mock test cover the official ${exam.name} syllabus?`,
       a: `Every test on this site is mapped to the official pattern and syllabus scope linked above, and independently checked before publishing. Granular topic labels beyond the official syllabus are a TakeMockTest preparation map, not an official subtopic list, unless stated otherwise.`,
+      links: [
+        ...(reviewPending ? [] : [{ href: `/${country}/${exam.slug}/exam-pattern`, label: `${exam.name} exam pattern` }]),
+        { href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock tests` },
+      ],
     });
   }
 
@@ -67,7 +170,7 @@ export function getExamPatternFaqs(exam: ExamConfig): Faq[] {
 // Mock-test list page (/in/{exam}/mock-test) FAQ: test-series composition,
 // distinct from the hub page's pattern-level questions above so the same
 // exam's pages don't repeat each other.
-export function getMockTestFaqs(exam: ExamConfig): Faq[] {
+export function getMockTestFaqs(exam: ExamConfig, country: string): Faq[] {
   // The !sharedFrom filter has to match getCheckedTestCount exactly. Without it
   // this breakdown counted tests the total does not: the FAQ told IBPS PO
   // visitors "21 syllabus-checked tests: 4 full-length mocks, 25 sectional
@@ -106,6 +209,62 @@ export function getMockTestFaqs(exam: ExamConfig): Faq[] {
       a: `Yes. Each checked test's question count, marks, duration, and negative marking match the official pattern shown above, with its source and checked date linked.`,
     });
   }
+
+  // Every answer below interpolates this exam's own figures rather than adding
+  // shared prose. 164 mock-test hubs run off this one function, and the
+  // thin-content audit does not measure this section, so boilerplate here would
+  // spread across the section unmeasured, which is the shape of scaled-content
+  // risk this site has already had to fix once.
+  const fullLengthDurations = [...new Set(checked.filter((test) => test.kind === 'full-length').map((test) => test.duration))].sort((a, b) => a - b);
+  if (fullLengthDurations.length > 0) {
+    const span = fullLengthDurations.length === 1
+      ? pluralMinutes(fullLengthDurations[0])
+      : `${fullLengthDurations[0]} to ${pluralMinutes(fullLengthDurations[fullLengthDurations.length - 1])}`;
+    const shorter = [...new Set(checked.filter((test) => test.kind !== 'full-length').map((test) => test.duration))].sort((a, b) => a - b);
+    const shortClause = shorter.length > 0
+      ? ` The shorter tests on this page run from ${pluralMinutes(shorter[0])}, for when you do not have a full sitting free.`
+      : '';
+    faqs.push({
+      q: `How long does a ${exam.name} mock test take?`,
+      a: `A full-length ${exam.name} mock here runs ${span}, matching the official working time for the paper it reproduces. The timer starts when you begin and the test submits itself when time runs out, so it is worth starting one only when you can sit it through.${shortClause}`,
+    });
+  }
+
+  const penalties = [...new Set(checked.map((test) => test.negativeMarking))].sort((a, b) => a - b);
+  if (penalties.length === 1) {
+    faqs.push({
+      q: `Do these ${exam.name} mock tests have negative marking?`,
+      a: penalties[0] > 0
+        ? `Yes. Every ${exam.name} test here deducts ${penalties[0]} mark${penalties[0] === 1 ? '' : 's'} for a wrong answer and scores an unanswered question zero, the same as the official scheme it is checked against. Your result breaks out what the deduction cost you, so you can see whether guessing helped or hurt.`
+        : `No. ${exam.name} carries no penalty for a wrong answer, so every test here scores a wrong answer and an unanswered one the same way, at zero. There is no reason to leave a question blank.`,
+    });
+  } else if (penalties.length > 1) {
+    faqs.push({
+      q: `Do these ${exam.name} mock tests have negative marking?`,
+      a: `It depends on the paper. The deduction for a wrong answer across ${exam.name} tests here ranges from ${penalties[0]} to ${penalties[penalties.length - 1]} marks, because the stages are marked differently in the official scheme. Each test states its own marks and deduction before you start, and your result shows what the deduction cost you.`,
+    });
+  }
+
+  if (counts.fullLength > 0 && counts.sectional > 0) {
+    faqs.push({
+      q: `Should I start with a full-length ${exam.name} mock or a sectional test?`,
+      a: `Start with a full-length mock if you have not sat the whole ${exam.name} paper under its official timer before: it is the only thing here that tells you whether you can finish in time. Move to the ${counts.sectional} sectional test${counts.sectional === 1 ? '' : 's'} once the full mock has shown you which section is costing you marks, and use them to rebuild that one section rather than re-sitting the whole paper each time.`,
+    });
+  }
+
+  faqs.push({
+    q: `Are these ${exam.name} mock tests free?`,
+    a: `Yes. All ${getCheckedTestCount(exam)} ${exam.name} test${getCheckedTestCount(exam) === 1 ? '' : 's'} on this page are free to attempt, with no account and no paid tier holding back better questions.`,
+    links: [
+      { href: `/${country}/${exam.slug}`, label: `${exam.name} exam details` },
+      // Sibling exams from the same cluster. getRelatedExams already drops any
+      // exam this country does not publish, so these cannot render dead.
+      ...getRelatedExams(exam.slug, country).slice(0, 3).map((related) => ({
+        href: `/${country}/${related.slug}/mock-test`,
+        label: related.label,
+      })),
+    ],
+  });
 
   return faqs;
 }

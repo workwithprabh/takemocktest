@@ -56,7 +56,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
   const exam = getExam(examSlug);
   if (!exam) return notFound();
 
-  const FAQS = getMockTestFaqs(exam);
+  const FAQS = getMockTestFaqs(exam, country);
 
   const stages = exam.stages.map((stage) => ({
     id: stage.id,
@@ -308,6 +308,15 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
                 <details key={f.q} className="bg-white border border-ink-200 p-4">
                   <summary className="font-medium text-sm cursor-pointer text-ink-900">{f.q}</summary>
                   <p className="mt-2 text-sm leading-6 text-ink-700">{f.a}</p>
+                  {f.links && f.links.length > 0 && (
+                    <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                      {f.links.map((link) => (
+                        <li key={link.href}>
+                          <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </details>
               ))}
             </div>
