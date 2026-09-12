@@ -106,72 +106,144 @@ const TRUST_POINTS = [
   'Review the scoring rules before you start, and answer explanations after you finish.',
 ];
 
-// The FAQs used to be a flat module-level array shared by every country, and
-// one of its four answers promised expansion "beyond SSC, Banking, and
-// Railways" on a homepage that, under /ng, offers JAMB UTME and nothing else.
-// That is the same defect the exam grid and the metadata above were already
-// fixed for. They are built per country now, and every figure in them is
-// interpolated from the catalogue rather than typed in, so an answer cannot
-// drift away from what the site actually holds the way a hardcoded count does.
-const faqsFor = (country: string, scale: { exams: number; tests: number; questions: number }) => {
+// Homepage FAQs target the informational queries a candidate actually types
+// before they know which exam page they want: "what is the SSC exam", "which
+// bank exams can I give", "what are government job exams". Each answer names
+// the real exams in that family and links to them, so the block doubles as an
+// internal-linking surface into the category and exam hubs rather than sitting
+// as dead prose.
+//
+// They are built per country. FAQS used to be one flat module-level array
+// shared by both country homes, which is how /ng ended up promising expansion
+// "beyond SSC, Banking, and Railways" on a page that publishes JAMB UTME and
+// nothing else.
+//
+// Nothing here states a fact the repository does not already carry: the exam
+// families, their member exams and the conducting bodies all come from the
+// catalogue and from ExamConfig, and an exam is only ever named once it has a
+// live page to link to.
+interface HomeFaq {
+  q: string;
+  a: string;
+  links?: { href: string; label: string }[];
+}
+
+const faqsFor = (country: string, scale: { exams: number; tests: number; questions: number }): HomeFaq[] => {
   const locale = contentLocale(country);
   const n = (value: number) => value.toLocaleString(locale);
-  const families = country === 'ng'
-    ? 'JAMB UTME'
-    : 'SSC, Banking, Railways, Engineering, Management, Law, Defence and more';
-  const official = EXAM_LIST.filter((exam) => exam.stages.some((stage) => stage.pattern?.status === 'official')).length;
-  const reviewPending = EXAM_LIST.filter((exam) => exam.stages.some((stage) => stage.pattern?.status === 'review-pending')).length;
+  const owned = new Set<string>(getExamsForCountry(country));
+  const live = new Map<string, (typeof EXAM_LIST)[number]>(
+    EXAM_LIST.filter((exam) => owned.has(exam.slug) && getCheckedTestCount(exam) > 0).map((exam) => [exam.slug as string, exam]),
+  );
+  // Only ever name an exam that has a page to send the reader to. A family
+  // answer that lists exams we do not publish reads well and links nowhere.
+  const family = (slugs: string[]) => slugs.map((slug) => live.get(slug)).filter((exam) => exam !== undefined);
+  const names = (slugs: string[]) => family(slugs).map((exam) => exam.name);
+  const links = (slugs: string[]) =>
+    family(slugs).map((exam) => ({ href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` }));
+  const listOf = (values: string[]) =>
+    values.length > 1 ? `${values.slice(0, -1).join(', ')} and ${values[values.length - 1]}` : values[0] ?? '';
+  const category = (slug: string, label: string) => ({ href: `/${country}/exams/${slug}`, label });
+
+  if (country === 'ng') {
+    const jamb = live.get('jamb');
+    return [
+      {
+        q: 'What is the JAMB UTME?',
+        a: 'The Unified Tertiary Matriculation Examination is the entrance test the Joint Admissions and Matriculation Board sets for admission into Nigerian universities, polytechnics and colleges of education. It is taken as a computer-based test, and candidates sit four subjects, with Use of English compulsory for every candidate.',
+        links: jamb ? [{ href: `/${country}/jamb/mock-test`, label: 'JAMB UTME mock test' }, { href: `/${country}/jamb/exam-pattern`, label: 'JAMB UTME exam pattern' }] : undefined,
+      },
+      {
+        q: 'How should I practise for the JAMB UTME?',
+        a: `Sit a full mock under the real clock first, because the UTME is a timed computer-based paper and pacing is what most candidates lose marks to. ${jamb ? `There ${scale.tests === 1 ? 'is' : 'are'} ${n(scale.tests)} free JAMB UTME test${scale.tests === 1 ? '' : 's'} here` : 'Free practice tests are published here'}, and subject-wise tests let you rebuild one subject at a time once the full mock has shown you where the marks are going.`,
+        links: jamb ? [{ href: `/${country}/jamb/mock-test`, label: 'JAMB UTME mock tests' }, { href: `/${country}/jamb/syllabus`, label: 'JAMB UTME syllabus' }] : undefined,
+      },
+      {
+        q: 'What is a mock test, and how does it help?',
+        a: 'A mock test reproduces a real exam paper: the same question count, the same working time and the same marking scheme, sat in one go. Its value is diagnostic. A practice question tells you whether you know a topic; a mock tells you whether you can finish the paper, which section is eating your time, and what wrong answers are costing you under the exam\'s own marking rules.',
+        links: [{ href: `/${country}/exams`, label: 'Browse all exams' }, { href: `/${country}/${PRACTICE_SLUG}`, label: 'Topic-wise practice' }],
+      },
+    ];
+  }
+
+  const ssc = names(['ssc-cgl', 'ssc-chsl', 'ssc-mts', 'ssc-gd-constable', 'ssc-cpo', 'ssc-je', 'ssc-steno']);
+  const banking = names(['ibps-po', 'ibps-clerk', 'sbi-po', 'sbi-clerk', 'rbi-assistant', 'rbi-grade-b', 'lic-aao', 'niacl-ao']);
+  const railway = names(['rrb-ntpc', 'rrb-group-d', 'rrb-alp', 'rrb-je', 'rrb-technician', 'rpf-constable']);
+  const engineering = names(['jee-main', 'jee-advanced', 'bitsat', 'gate', 'viteee', 'srmjeee']);
+  const management = names(['cat', 'xat', 'nmat', 'snap', 'cmat', 'mat', 'ipmat-indore']);
+  const law = names(['clat', 'ailet', 'mh-cet-law', 'ap-lawcet', 'aibe']);
+  const defence = names(['nda', 'cds', 'afcat', 'agniveer-vayu', 'navy-ssr', 'inet']);
+  const medical = names(['neet-ug', 'neet-pg', 'ini-cet', 'fmge', 'aiims-norcet']);
+  const teaching = names(['ctet', 'ugc-net', 'state-set']);
 
   return [
     {
-      q: 'Is TakeMockTest really free?',
-      a: `Yes. All ${n(scale.tests)} mock tests are free to attempt, with no trial period, no card details and nothing held back behind a paid tier. There is no premium version of this site that gets the better questions.`,
+      q: 'What are government job exams in India?',
+      a: `Government job exams are the recruitment tests central and state bodies run to fill public-sector posts. The largest are conducted by the Staff Selection Commission for central government Group B and C posts, by the Institute of Banking Personnel Selection and individual banks for public-sector banking, by the Railway Recruitment Boards for Indian Railways, and by the Union Public Service Commission for the civil services. Each has its own eligibility, pattern and marking scheme rather than one common test.`,
+      links: [
+        category('government-jobs', 'All government job exams'),
+        ...links(['ssc-cgl', 'ibps-po', 'rrb-ntpc', 'upsc-cse']),
+      ],
+    },
+    ssc.length > 0 ? {
+      q: 'What is the SSC exam?',
+      a: `SSC is the Staff Selection Commission, which recruits for Group B and Group C posts across central government departments. It is not one exam but a set of separate recruitments, each with its own eligibility and paper: ${listOf(ssc)}. Most run in tiers, with a computer-based objective first stage that everyone sits.`,
+      links: links(['ssc-cgl', 'ssc-chsl', 'ssc-mts', 'ssc-gd-constable']),
+    } : undefined,
+    banking.length > 0 ? {
+      q: 'Which bank exams can I prepare for?',
+      a: `Public-sector banking recruitment runs mainly through the Institute of Banking Personnel Selection, through the State Bank of India's own recruitments, and through the Reserve Bank of India and the insurers. The exams published here are ${listOf(banking)}. Most follow a prelims-then-mains structure with separately timed sections in the prelims.`,
+      links: links(['ibps-po', 'ibps-clerk', 'sbi-po', 'sbi-clerk']),
+    } : undefined,
+    railway.length > 0 ? {
+      q: 'What are the railway recruitment exams?',
+      a: `The Railway Recruitment Boards fill posts across Indian Railways through separate computer-based tests for different job families: ${listOf(railway)}. Most run a first computer-based stage that screens for a second, followed by post-specific skill, physical or document stages.`,
+      links: links(['rrb-ntpc', 'rrb-group-d', 'rrb-alp', 'rrb-je']),
+    } : undefined,
+    engineering.length > 0 ? {
+      q: 'Which engineering entrance exams are covered here?',
+      a: `Engineering admission in India runs through national tests, institute-specific tests and state common entrance tests, plus GATE at postgraduate level. The ones published here include ${listOf(engineering)}, alongside a large set of state and institute entrances.`,
+      links: [category('engineering', 'All engineering exams'), ...links(['jee-main', 'bitsat', 'gate'])],
+    } : undefined,
+    management.length > 0 ? {
+      q: 'Which MBA entrance exams are there?',
+      a: `MBA admission is not a single test: business schools accept different entrance exams, and most candidates sit more than one. The papers published here are ${listOf(management)}. They differ sharply in marking, in whether sections are separately timed, and in whether general knowledge counts towards the score.`,
+      links: [category('management', 'All management exams'), ...links(['cat', 'xat', 'nmat', 'snap'])],
+    } : undefined,
+    law.length > 0 ? {
+      q: 'Which entrance exams do I need for law?',
+      a: `Law admission runs through a national test and several institute and state tests, with a separate licensing examination for practice after the degree. The ones here are ${listOf(law)}.`,
+      links: [category('law', 'All law exams'), ...links(['clat', 'ailet', 'aibe'])],
+    } : undefined,
+    defence.length > 0 ? {
+      q: 'Which defence exams can I practise for?',
+      a: `Defence recruitment splits between officer entry through the Union Public Service Commission and the services' own tests, and other-rank entry through service-specific recruitment. The papers here are ${listOf(defence)}.`,
+      links: [category('defence', 'All defence exams'), ...links(['nda', 'cds', 'afcat'])],
+    } : undefined,
+    medical.length > 0 ? {
+      q: 'Which medical entrance exams are covered?',
+      a: `Medical admission and registration run through separate national tests at undergraduate, postgraduate and screening level. Those published here are ${listOf(medical)}.`,
+      links: [category('medical', 'All medical exams'), ...links(['neet-ug', 'neet-pg'])],
+    } : undefined,
+    teaching.length > 0 ? {
+      q: 'Which teaching eligibility exams are there?',
+      a: `Teaching eligibility is tested separately at school and higher-education level: ${listOf(teaching)}. They certify eligibility to be appointed rather than filling a specific vacancy by themselves.`,
+      links: links(['ctet', 'ugc-net']),
+    } : undefined,
+    {
+      q: 'What is a mock test, and how is it different from practice questions?',
+      a: `A mock test reproduces a real exam paper: the same question count, the same working time and the same marking scheme, sat in one go. That is what makes it diagnostic. A practice question tells you whether you know a topic; a mock tells you whether you can finish the paper in time, which section is eating your clock, and what your wrong answers cost under that exam's own negative marking. Use topic practice to build a skill and a full mock to test it under exam conditions.`,
+      links: [
+        { href: `/${country}/${PRACTICE_SLUG}`, label: `Topic-wise practice (${practiceTopics} topics)` },
+        { href: `/${country}/${LR_SLUG}`, label: 'Logical reasoning practice' },
+      ],
     },
     {
-      q: 'Do I need to create an account?',
-      a: 'No. Every test starts immediately, and there is no sign-up step at any point. Your answers and results are saved in your own browser rather than on our servers, which has one consequence worth knowing: clearing your browser data, or switching to another device, starts you fresh.',
+      q: 'How many mock tests are available on this site?',
+      a: `${n(scale.tests)} mock tests across ${n(scale.exams)} exams, built from ${n(scale.questions)} practice questions, with ${n(practiceQuestions)} more in topic-wise practice across ${practiceTopics} topics. Every test states its question count, working time and marking scheme before you start, and every question carries an explanation.`,
+      links: [{ href: `/${country}/exams`, label: 'Browse all exams' }],
     },
-    {
-      q: 'Are these previous year question papers?',
-      a: `No, and it matters that you know it. Every question here is written originally against the official syllabus and pattern, not recalled or copied from a real paper. What is reproduced from the examining body is the structure: the question count, section split, timing and marking scheme. The ${n(scale.questions)} questions on this site are practice material, not a leaked or memory-based paper.`,
-    },
-    {
-      q: 'What do I get when I finish a test?',
-      a: 'A section-wise score breakdown the moment you submit, showing what negative marking cost you, how long you spent per question, and an explanation for every question you saw, whether you got it right or wrong. Each question also carries the source reference it was checked against.',
-    },
-    {
-      q: 'Where do the exam patterns come from?',
-      a: `Question counts, timing, marking schemes and section splits are taken from the examining body's own notification, information bulletin or syllabus document. ${official} exams carry a pattern marked official, meaning the primary document was read directly. ${reviewPending} are marked review-pending, meaning the structure rests on consistent corroboration from secondary sources because the examining body's own site could not be reached. That label is shown on the exam's own pages rather than hidden, so you can check before you trust a figure.`,
-    },
-    {
-      q: 'Is this content written by AI?',
-      a: 'The exam pages, blog and question banks are drafted with AI assistance and then checked against primary sources and a set of automated audits before they are published. We would rather state that plainly than let a byline imply otherwise. What we commit to is the checking, not who typed the first draft.',
-    },
-    {
-      q: 'How is scoring calculated, and does negative marking apply?',
-      a: 'Every test states its marks per correct answer and its deduction for a wrong one before you begin, matching the official scheme it is checked against. The deduction differs by exam, so the maths of whether a guess is worth making differs too. Where this site uses a marking rule the examining body has not published, the test says so instead of presenting it as official.',
-    },
-    {
-      q: 'Can I pause a test and come back to it?',
-      a: 'You can close the tab and return: your answers are saved as you go, so a refresh or an accidental back button will not lose your work. The clock is not pausable, though. Time that passes while you are away is deducted when you resume, the same way it would be in a real sitting.',
-    },
-    {
-      q: 'Should I take a full mock or a sectional test?',
-      a: `A full mock is for pacing and stamina under the official timer, and is the only thing that tells you whether you can finish the paper. A sectional test isolates one section when you already know which one is costing you. For a single weak topic, the topic practice section has ${n(practiceQuestions)} questions across ${practiceTopics} topics with no negative marking, which is the right place to rebuild a skill before you time yourself on it.`,
-    },
-    {
-      q: 'I have not picked an exam yet. Where should I start?',
-      a: `Two sections need no exam choice. Topic practice covers ${practiceTopics} quantitative, reasoning and English topics drawn from every exam that sets them, and the logical reasoning section pools ${n(LR_TOTAL_QUESTIONS)} questions graded on one easy-to-hard scale. Both run without negative marking, so they are a way to find your level before committing to a syllabus.`,
-    },
-    {
-      q: 'Does a mock here always cover the whole official paper?',
-      a: 'Not always, and the page tells you when it does not. Some official papers include sections this site does not build, such as current-affairs general awareness or hand-drawn and human-marked components. Where a mock covers part of a paper, it states which sections it contains and how many of the official questions that represents, rather than presenting a partial paper as a full one.',
-    },
-    {
-      q: 'Which exams are covered, and will more be added?',
-      a: `${n(scale.exams)} ${scale.exams === 1 ? 'exam is' : 'exams are'} live here, covering ${families}, with ${n(scale.tests)} mock tests ${scale.exams === 1 ? 'on it' : 'between them'}. More are added continuously, and exams listed without a live test are marked as such rather than linking to an empty page.`,
-    },
-  ];
+  ].filter((faq) => faq !== undefined);
 };
 
 export default async function HomePage({ params }: { params: Promise<{ country: string }> }) {
@@ -426,7 +498,18 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                   {faq.q}
                   <span className="text-xl font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
                 </summary>
-                <p className="max-w-3xl px-4 pb-4 text-sm leading-6 text-ink-600">{faq.a}</p>
+                <div className="max-w-3xl px-4 pb-4">
+                  <p className="text-sm leading-6 text-ink-600">{faq.a}</p>
+                  {faq.links && faq.links.length > 0 && (
+                    <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                      {faq.links.map((link) => (
+                        <li key={link.href}>
+                          <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </details>
             ))}
           </div>

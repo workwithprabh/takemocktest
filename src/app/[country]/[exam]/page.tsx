@@ -124,7 +124,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
       ? [{ href: 'salary', label: 'Salary', desc: 'Official pay levels and basic-pay ranges' }]
       : []),
   ];
-  const faqs = [...getExamPatternFaqs(exam), ...getExamFactFaqs(exam)];
+  const faqs = [...getExamPatternFaqs(exam, country), ...getExamFactFaqs(exam)];
   const jsonLd = [
     breadcrumbSchema([
       { name: 'Home', path: `/${country}` },
@@ -412,6 +412,15 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                 <details key={faq.q} className="border border-ink-200 bg-white p-4">
                   <summary className="cursor-pointer text-sm font-medium text-ink-900">{faq.q}</summary>
                   <p className="mt-2 text-sm leading-6 text-ink-700">{faq.a}</p>
+                  {faq.links && faq.links.length > 0 && (
+                    <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                      {faq.links.map((link) => (
+                        <li key={link.href}>
+                          <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </details>
               ))}
             </div>
