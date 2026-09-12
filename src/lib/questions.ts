@@ -554,9 +554,13 @@ import { CDS_ELEMENTARY_MATHEMATICS_1 } from './question-banks/cds-elementary-ma
 import { CDS_ENGLISH_1 } from './question-banks/cds-english-combined-1';
 import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_1 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-1';
 import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1 } from './question-banks/territorial-army-reasoning-and-english-combined-1';
+import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_2 } from './question-banks/territorial-army-reasoning-and-english-combined-2';
 import { INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1 } from './question-banks/inet-english-and-reasoning-numerical-ability-combined-1';
+import { INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_2 } from './question-banks/inet-english-and-reasoning-numerical-ability-combined-2';
 import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/agniveer-vayu-english-and-mathematics-combined-1';
+import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_2 } from './question-banks/agniveer-vayu-english-and-mathematics-combined-2';
 import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/navy-ssr-english-and-mathematics-combined-1';
+import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_2 } from './question-banks/navy-ssr-english-and-mathematics-combined-2';
 import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1 } from './question-banks/clat-english-legal-logical-quantitative-combined-1';
 import { AILET_ENGLISH_AND_LOGICAL_REASONING_1 } from './question-banks/ailet-english-and-logical-reasoning-combined-1';
 import { SLAT_2026_LOGICAL_REASONING_1 } from './question-banks/slat-2026-logical-reasoning-1';
@@ -2129,15 +2133,27 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'territorial-army/reasoning-and-english-full-mock-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1,
   'territorial-army/reasoning-sectional-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1.filter((question) => question.section === 'Reasoning'),
   'territorial-army/english-sectional-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1.filter((question) => question.section === 'English'),
+  'territorial-army/reasoning-and-english-full-mock-2': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_2,
+  'territorial-army/reasoning-sectional-2': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_2.filter((question) => question.section === 'Reasoning'),
+  'territorial-army/english-sectional-2': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_2.filter((question) => question.section === 'English'),
   'inet/english-and-reasoning-numerical-ability-full-mock-1': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1,
   'inet/english-sectional-1': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1.filter((question) => question.section === 'English'),
   'inet/reasoning-and-numerical-ability-sectional-1': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1.filter((question) => question.section === 'Reasoning and Numerical Ability'),
+  'inet/english-and-reasoning-numerical-ability-full-mock-2': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_2,
+  'inet/english-sectional-2': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_2.filter((question) => question.section === 'English'),
+  'inet/reasoning-and-numerical-ability-sectional-2': INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_2.filter((question) => question.section === 'Reasoning and Numerical Ability'),
   'agniveer-vayu/english-and-mathematics-full-mock-1': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1,
   'agniveer-vayu/english-sectional-1': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'English'),
   'agniveer-vayu/mathematics-sectional-1': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'Mathematics'),
+  'agniveer-vayu/english-and-mathematics-full-mock-2': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_2,
+  'agniveer-vayu/english-sectional-2': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_2.filter((question) => question.section === 'English'),
+  'agniveer-vayu/mathematics-sectional-2': AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_2.filter((question) => question.section === 'Mathematics'),
   'navy-ssr/english-and-mathematics-full-mock-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1,
   'navy-ssr/english-sectional-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'English'),
   'navy-ssr/mathematics-sectional-1': NAVY_SSR_ENGLISH_AND_MATHEMATICS_1.filter((question) => question.section === 'Mathematics'),
+  'navy-ssr/english-and-mathematics-full-mock-2': NAVY_SSR_ENGLISH_AND_MATHEMATICS_2,
+  'navy-ssr/english-sectional-2': NAVY_SSR_ENGLISH_AND_MATHEMATICS_2.filter((question) => question.section === 'English'),
+  'navy-ssr/mathematics-sectional-2': NAVY_SSR_ENGLISH_AND_MATHEMATICS_2.filter((question) => question.section === 'Mathematics'),
   'clat/english-legal-logical-quantitative-full-mock-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1,
   'clat/english-language-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'English Language'),
   'clat/legal-reasoning-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Legal Reasoning'),
