@@ -660,6 +660,7 @@ import { TG_POLYCET_2026_PHYSICS_1 } from './question-banks/tg-polycet-2026-phys
 import { TG_POLYCET_2026_CHEMISTRY_1 } from './question-banks/tg-polycet-2026-chemistry-1';
 import { BITS_HD_2026_ME_CS_FULL_MOCK_1 } from './question-banks/bits-hd-2026-me-cs-full-mock-1';
 import { BITS_HD_2026_ME_CS_FULL_MOCK_2 } from './question-banks/bits-hd-2026-me-cs-full-mock-2';
+import { BITS_HD_2026_ME_CS_TEST_1_PAPER_PRACTICE_1 } from './question-banks/bits-hd-2026-me-cs-test-1-paper-practice-1';
 import { CG_PET_2026_PHYSICS_1 } from './question-banks/cg-pet-2026-physics-1';
 import { CG_PET_2026_CHEMISTRY_1 } from './question-banks/cg-pet-2026-chemistry-1';
 import { CG_PET_2026_MATHEMATICS_1 } from './question-banks/cg-pet-2026-mathematics-1';
@@ -687,6 +688,7 @@ import { GPAT_2026_PHARMACY_FULL_MOCK_2 } from './question-banks/gpat-2026-pharm
 import { JAM_2026_MATHEMATICS_FULL_MOCK_1 } from './question-banks/jam-2026-mathematics-full-mock-1';
 import { JAM_2026_MATHEMATICS_FULL_MOCK_2 } from './question-banks/jam-2026-mathematics-full-mock-2';
 import { GATE_2026_CS_FULL_MOCK_1 } from './question-banks/gate-2026-cs-full-mock-1';
+import { GATE_2026_CS_GENERAL_APTITUDE_1 } from './question-banks/gate-2026-cs-general-aptitude-1';
 import { GATE_2026_CS_FULL_MOCK_2 } from './question-banks/gate-2026-cs-full-mock-2';
 import { GUJCET_2026_ENGINEERING_FULL_MOCK_1 } from './question-banks/gujcet-2026-engineering-full-mock-1';
 import { GUJCET_2026_PHYSICS_CHEMISTRY_PAPER_PRACTICE_1 } from './question-banks/gujcet-2026-physics-chemistry-paper-practice-1';
@@ -3100,6 +3102,9 @@ const ICAR_AIEEA_PG_TESTS: Record<string, Question[]> = {
 const BITS_HD_TESTS: Record<string, Question[]> = {
   'bits-hd/me-cs-full-mock-1': BITS_HD_2026_ME_CS_FULL_MOCK_1,
   'bits-hd/me-cs-full-mock-2': BITS_HD_2026_ME_CS_FULL_MOCK_2,
+  'bits-hd/me-cs-test-1-paper-practice-1': BITS_HD_2026_ME_CS_TEST_1_PAPER_PRACTICE_1,
+  'bits-hd/me-cs-core-mathematics-sectional-1': BITS_HD_2026_ME_CS_TEST_1_PAPER_PRACTICE_1.filter((question) => question.section === 'Core Mathematics'),
+  'bits-hd/me-cs-english-logical-reasoning-sectional-1': BITS_HD_2026_ME_CS_TEST_1_PAPER_PRACTICE_1.filter((question) => question.section === 'English Language Skills & Logical Reasoning'),
 };
 const CG_PET_TESTS: Record<string, Question[]> = {
   'cg-pet/full-mock-1': [
@@ -3250,6 +3255,7 @@ const JAM_TESTS: Record<string, Question[]> = {
 const GATE_TESTS: Record<string, Question[]> = {
   'gate/cs-full-mock-1': GATE_2026_CS_FULL_MOCK_1,
   'gate/cs-full-mock-2': GATE_2026_CS_FULL_MOCK_2,
+  'gate/general-aptitude-sectional-1': GATE_2026_CS_GENERAL_APTITUDE_1,
 };
 const GUJCET_TESTS: Record<string, Question[]> = {
   'gujcet/engineering-full-mock-1': GUJCET_2026_ENGINEERING_FULL_MOCK_1,
@@ -3478,6 +3484,18 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     // JAMB UTME: exact test-id matches, placed here for the same reason as the
     // handoff batch above, so the slug-substring branches further down cannot
     // shadow them.
+    // Exact test-id matches, placed at the top of the chain for the same
+    // reason as the handoff batch above: neither of these would otherwise
+    // reach a rule of its own, and both would silently fall through to the
+    // bare 25 at the end of the chain.
+    : testId === 'gate/general-aptitude-sectional-1'
+    ? 10
+    : testId === 'bits-hd/me-cs-test-1-paper-practice-1'
+    ? 30
+    : testId === 'bits-hd/me-cs-core-mathematics-sectional-1'
+    ? 15
+    : testId === 'bits-hd/me-cs-english-logical-reasoning-sectional-1'
+    ? 15
     : testId === 'jamb/utme-full-mock-1'
     ? 180
     : testId === 'jamb/utme-full-mock-2'

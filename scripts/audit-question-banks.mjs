@@ -161,6 +161,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('assam-cee-2026-physics-') ? 40
     : file.startsWith('assam-cee-2026-chemistry-') ? 40
     : file.startsWith('bits-hd-2026-me-cs-full-mock-') ? 100
+    : file.startsWith('bits-hd-2026-me-cs-test-1-paper-practice-') ? 30
     : file.startsWith('cg-pet-2026-physics-') ? 50
     : file.startsWith('cg-pet-2026-chemistry-') ? 50
     : file.startsWith('cg-pet-2026-mathematics-') ? 50
@@ -174,6 +175,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('dnb-pdcet-2026-anaesthesiology-full-mock-') ? 120
     : file.startsWith('tifr-gs-2026-computer-science-full-mock-') ? 30
     : file.startsWith('gate-2026-cs-full-mock-') ? 65
+    : file.startsWith('gate-2026-cs-general-aptitude-') ? 10
     : file.startsWith('gujcet-2026-engineering-full-mock-') ? 120
     : file.startsWith('gujcet-2026-physics-chemistry-paper-practice-') ? 80
     : file.startsWith('gujcet-2026-mathematics-paper-practice-') ? 40
