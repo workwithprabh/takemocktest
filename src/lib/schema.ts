@@ -21,7 +21,13 @@ export function organizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    // A stable @id so the WebSite entity can point at this one rather than
+    // describing a second, unrelated organisation with the same name.
+    '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
+    // People search the brand as two words as often as one, and nothing in the
+    // markup connected the two spellings.
+    alternateName: 'Take Mock Test',
     url: SITE_URL,
     email: SITE_EMAIL,
     // Google reads `logo` for brand presentation. Deliberately no `sameAs`:
@@ -35,8 +41,11 @@ export function websiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
     name: SITE_NAME,
+    alternateName: 'Take Mock Test',
     url: SITE_URL,
+    publisher: { '@id': `${SITE_URL}/#organization` },
   };
 }
 
