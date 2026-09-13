@@ -49,6 +49,11 @@ function negativeMarkingFaqAnswer(negativeMarking: StagePattern['negativeMarking
 // per-question marking is unaffected by the shortening and still answers.
 const PATTERN_FIGURES_UNDER_REVIEW = new Set([
   'cat', 'mat', 'atma', 'ibsat', 'nism', 'nata', 'act', 'mcat', 'nda', 'cds', 'afcat',
+  // The four professional-accountancy products aggregate the objective block of
+  // several separately sat papers, so their totals are this site's coverage
+  // rather than any single official paper. The exam-pattern note says so; the
+  // FAQ must not quote the sum as "the exam pattern".
+  'ca-final', 'ca-intermediate', 'cma-final', 'cma-intermediate',
 ]);
 
 function pluralMinutes(minutes: number): string {

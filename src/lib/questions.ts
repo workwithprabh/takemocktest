@@ -837,6 +837,35 @@ import { NVS_TGT_MATHEMATICS_2025_TIER_1_NUMERIC_ABILITY_1 } from './question-ba
 import { UPSC_GEO_SCIENTIST_2027_GEOLOGY_HYDROGEOLOGY_PAPER_2_GEOLOGY_HYDROGEOLOGY_1 } from './question-banks/upsc-geo-scientist-2027-geology-hydrogeology-paper-2-geology-hydrogeology-1';
 import { UPSC_ISS_2026_STATISTICS_PAPER_1_1 } from './question-banks/upsc-iss-2026-statistics-paper-1-1';
 import { UPSC_ISS_2026_STATISTICS_PAPER_2_1 } from './question-banks/upsc-iss-2026-statistics-paper-2-1';
+import { CA_FINAL_2026_OBJECTIVE_FINANCIAL_REPORTING_1 } from './question-banks/ca-final-2026-objective-financial-reporting-1';
+import { CA_FINAL_2026_OBJECTIVE_ADVANCED_FINANCIAL_MANAGEMENT_1 } from './question-banks/ca-final-2026-objective-advanced-financial-management-1';
+import { CA_FINAL_2026_OBJECTIVE_ADVANCED_AUDITING_ASSURANCE_AND_PROFESSIONAL_ETH_1 } from './question-banks/ca-final-2026-objective-advanced-auditing-assurance-and-professional-eth-1';
+import { CA_FINAL_2026_OBJECTIVE_DIRECT_TAX_LAWS_AND_INTERNATIONAL_TAXATION_1 } from './question-banks/ca-final-2026-objective-direct-tax-laws-and-international-taxation-1';
+import { CA_FINAL_2026_OBJECTIVE_INDIRECT_TAX_LAWS_1 } from './question-banks/ca-final-2026-objective-indirect-tax-laws-1';
+import { CA_INTERMEDIATE_2026_OBJECTIVE_ADVANCED_ACCOUNTING_1 } from './question-banks/ca-intermediate-2026-objective-advanced-accounting-1';
+import { CA_INTERMEDIATE_2026_OBJECTIVE_CORPORATE_AND_OTHER_LAWS_1 } from './question-banks/ca-intermediate-2026-objective-corporate-and-other-laws-1';
+import { CA_INTERMEDIATE_2026_OBJECTIVE_TAXATION_1 } from './question-banks/ca-intermediate-2026-objective-taxation-1';
+import { CA_INTERMEDIATE_2026_OBJECTIVE_COST_AND_MANAGEMENT_ACCOUNTING_1 } from './question-banks/ca-intermediate-2026-objective-cost-and-management-accounting-1';
+import { CA_INTERMEDIATE_2026_OBJECTIVE_AUDITING_AND_ETHICS_1 } from './question-banks/ca-intermediate-2026-objective-auditing-and-ethics-1';
+import { CA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_MANAGEMENT_AND_STRATEGIC_MANAGEMENT_1 } from './question-banks/ca-intermediate-2026-objective-financial-management-and-strategic-management-1';
+import { CMA_FINAL_2026_OBJECTIVE_CORPORATE_AND_ECONOMIC_LAWS_1 } from './question-banks/cma-final-2026-objective-corporate-and-economic-laws-1';
+import { CMA_FINAL_2026_OBJECTIVE_STRATEGIC_FINANCIAL_MANAGEMENT_1 } from './question-banks/cma-final-2026-objective-strategic-financial-management-1';
+import { CMA_FINAL_2026_OBJECTIVE_DIRECT_TAX_LAWS_AND_INTERNATIONAL_TAXATION_1 } from './question-banks/cma-final-2026-objective-direct-tax-laws-and-international-taxation-1';
+import { CMA_FINAL_2026_OBJECTIVE_STRATEGIC_COST_MANAGEMENT_1 } from './question-banks/cma-final-2026-objective-strategic-cost-management-1';
+import { CMA_FINAL_2026_OBJECTIVE_COST_AND_MANAGEMENT_AUDIT_1 } from './question-banks/cma-final-2026-objective-cost-and-management-audit-1';
+import { CMA_FINAL_2026_OBJECTIVE_CORPORATE_FINANCIAL_REPORTING_1 } from './question-banks/cma-final-2026-objective-corporate-financial-reporting-1';
+import { CMA_FINAL_2026_OBJECTIVE_INDIRECT_TAX_LAWS_AND_PRACTICE_1 } from './question-banks/cma-final-2026-objective-indirect-tax-laws-and-practice-1';
+import { CMA_FINAL_2026_OBJECTIVE_STRATEGIC_PERFORMANCE_MANAGEMENT_AND_BUSINESS_VA_1 } from './question-banks/cma-final-2026-objective-strategic-performance-management-and-business-va-1';
+import { CMA_FINAL_2026_OBJECTIVE_RISK_MANAGEMENT_IN_BANKING_AND_INSURANCE_1 } from './question-banks/cma-final-2026-objective-risk-management-in-banking-and-insurance-1';
+import { CMA_FINAL_2026_OBJECTIVE_ENTREPRENEURSHIP_AND_STARTUP_1 } from './question-banks/cma-final-2026-objective-entrepreneurship-and-startup-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_CORPORATE_ACCOUNTING_AND_AUDITING_1 } from './question-banks/cma-intermediate-2026-objective-corporate-accounting-and-auditing-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_MANAGEMENT_AND_BUSINESS_DATA_ANALYTICS_1 } from './question-banks/cma-intermediate-2026-objective-financial-management-and-business-data-analytics-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_MANAGEMENT_ACCOUNTING_1 } from './question-banks/cma-intermediate-2026-objective-management-accounting-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_BUSINESS_LAWS_AND_ETHICS_1 } from './question-banks/cma-intermediate-2026-objective-business-laws-and-ethics-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_ACCOUNTING_1 } from './question-banks/cma-intermediate-2026-objective-financial-accounting-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_DIRECT_AND_INDIRECT_TAXATION_1 } from './question-banks/cma-intermediate-2026-objective-direct-and-indirect-taxation-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_COST_ACCOUNTING_1 } from './question-banks/cma-intermediate-2026-objective-cost-accounting-1';
+import { CMA_INTERMEDIATE_2026_OBJECTIVE_OPERATIONS_MANAGEMENT_AND_STRATEGIC_MANAGEMENT_1 } from './question-banks/cma-intermediate-2026-objective-operations-management-and-strategic-management-1';
 
 // Every question the site serves, indexed by its (globally unique, enforced by
 // scripts/audit-question-banks.mjs) question ID. Built once on first use so
@@ -3547,7 +3576,38 @@ const UPSC_OBJECTIVE_2026_TESTS: Record<string, Question[]> = {
   'upsc-ies-iss/iss-objective-statistics-1-2-paper-1-sectional-1': UPSC_ISS_2026_STATISTICS_PAPER_1_1,
   'upsc-ies-iss/iss-objective-statistics-1-2-paper-2-sectional-1': UPSC_ISS_2026_STATISTICS_PAPER_2_1,
 };
-Object.assign(CHECKED_TEST_BANKS, UPSC_OBJECTIVE_2026_TESTS, TEACHING_RECRUITMENT_2026_TESTS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS, AIIMS_BSC_NURSING_HANDOFF_TESTS, AIIMS_NORCET_HANDOFF_TESTS, CEED_HANDOFF_TESTS, UCEED_HANDOFF_TESTS, DBT_BET_HANDOFF_TESTS, DNB_PDCET_HANDOFF_TESTS, TIFR_GS_HANDOFF_TESTS);
+const PROFESSIONAL_ACCOUNTANCY_2026_TESTS: Record<string, Question[]> = {
+'ca-final/objective-components-papers-1-5-financial-reporting-1': CA_FINAL_2026_OBJECTIVE_FINANCIAL_REPORTING_1,
+  'ca-final/objective-components-papers-1-5-advanced-financial-management-1': CA_FINAL_2026_OBJECTIVE_ADVANCED_FINANCIAL_MANAGEMENT_1,
+  'ca-final/objective-components-papers-1-5-advanced-auditing-assurance-and-professional-eth-1': CA_FINAL_2026_OBJECTIVE_ADVANCED_AUDITING_ASSURANCE_AND_PROFESSIONAL_ETH_1,
+  'ca-final/objective-components-papers-1-5-direct-tax-laws-and-international-taxation-1': CA_FINAL_2026_OBJECTIVE_DIRECT_TAX_LAWS_AND_INTERNATIONAL_TAXATION_1,
+  'ca-final/objective-components-papers-1-5-indirect-tax-laws-1': CA_FINAL_2026_OBJECTIVE_INDIRECT_TAX_LAWS_1,
+  'ca-intermediate/objective-components-advanced-accounting-1': CA_INTERMEDIATE_2026_OBJECTIVE_ADVANCED_ACCOUNTING_1,
+  'ca-intermediate/objective-components-corporate-and-other-laws-1': CA_INTERMEDIATE_2026_OBJECTIVE_CORPORATE_AND_OTHER_LAWS_1,
+  'ca-intermediate/objective-components-taxation-1': CA_INTERMEDIATE_2026_OBJECTIVE_TAXATION_1,
+  'ca-intermediate/objective-components-cost-and-management-accounting-1': CA_INTERMEDIATE_2026_OBJECTIVE_COST_AND_MANAGEMENT_ACCOUNTING_1,
+  'ca-intermediate/objective-components-auditing-and-ethics-1': CA_INTERMEDIATE_2026_OBJECTIVE_AUDITING_AND_ETHICS_1,
+  'ca-intermediate/objective-components-financial-management-and-strategic-management-1': CA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_MANAGEMENT_AND_STRATEGIC_MANAGEMENT_1,
+  'cma-final/objective-components-corporate-and-economic-laws-1': CMA_FINAL_2026_OBJECTIVE_CORPORATE_AND_ECONOMIC_LAWS_1,
+  'cma-final/objective-components-strategic-financial-management-1': CMA_FINAL_2026_OBJECTIVE_STRATEGIC_FINANCIAL_MANAGEMENT_1,
+  'cma-final/objective-components-direct-tax-laws-and-international-taxation-1': CMA_FINAL_2026_OBJECTIVE_DIRECT_TAX_LAWS_AND_INTERNATIONAL_TAXATION_1,
+  'cma-final/objective-components-strategic-cost-management-1': CMA_FINAL_2026_OBJECTIVE_STRATEGIC_COST_MANAGEMENT_1,
+  'cma-final/objective-components-cost-and-management-audit-1': CMA_FINAL_2026_OBJECTIVE_COST_AND_MANAGEMENT_AUDIT_1,
+  'cma-final/objective-components-corporate-financial-reporting-1': CMA_FINAL_2026_OBJECTIVE_CORPORATE_FINANCIAL_REPORTING_1,
+  'cma-final/objective-components-indirect-tax-laws-and-practice-1': CMA_FINAL_2026_OBJECTIVE_INDIRECT_TAX_LAWS_AND_PRACTICE_1,
+  'cma-final/objective-components-strategic-performance-management-and-business-va-1': CMA_FINAL_2026_OBJECTIVE_STRATEGIC_PERFORMANCE_MANAGEMENT_AND_BUSINESS_VA_1,
+  'cma-final/objective-components-risk-management-in-banking-and-insurance-1': CMA_FINAL_2026_OBJECTIVE_RISK_MANAGEMENT_IN_BANKING_AND_INSURANCE_1,
+  'cma-final/objective-components-entrepreneurship-and-startup-1': CMA_FINAL_2026_OBJECTIVE_ENTREPRENEURSHIP_AND_STARTUP_1,
+  'cma-intermediate/objective-components-corporate-accounting-and-auditing-1': CMA_INTERMEDIATE_2026_OBJECTIVE_CORPORATE_ACCOUNTING_AND_AUDITING_1,
+  'cma-intermediate/objective-components-financial-management-and-business-data-analytics-1': CMA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_MANAGEMENT_AND_BUSINESS_DATA_ANALYTICS_1,
+  'cma-intermediate/objective-components-management-accounting-1': CMA_INTERMEDIATE_2026_OBJECTIVE_MANAGEMENT_ACCOUNTING_1,
+  'cma-intermediate/objective-components-business-laws-and-ethics-1': CMA_INTERMEDIATE_2026_OBJECTIVE_BUSINESS_LAWS_AND_ETHICS_1,
+  'cma-intermediate/objective-components-financial-accounting-1': CMA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_ACCOUNTING_1,
+  'cma-intermediate/objective-components-direct-and-indirect-taxation-1': CMA_INTERMEDIATE_2026_OBJECTIVE_DIRECT_AND_INDIRECT_TAXATION_1,
+  'cma-intermediate/objective-components-cost-accounting-1': CMA_INTERMEDIATE_2026_OBJECTIVE_COST_ACCOUNTING_1,
+  'cma-intermediate/objective-components-operations-management-and-strategic-management-1': CMA_INTERMEDIATE_2026_OBJECTIVE_OPERATIONS_MANAGEMENT_AND_STRATEGIC_MANAGEMENT_1,
+};
+Object.assign(CHECKED_TEST_BANKS, PROFESSIONAL_ACCOUNTANCY_2026_TESTS, UPSC_OBJECTIVE_2026_TESTS, TEACHING_RECRUITMENT_2026_TESTS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS, AIIMS_BSC_NURSING_HANDOFF_TESTS, AIIMS_NORCET_HANDOFF_TESTS, CEED_HANDOFF_TESTS, UCEED_HANDOFF_TESTS, DBT_BET_HANDOFF_TESTS, DNB_PDCET_HANDOFF_TESTS, TIFR_GS_HANDOFF_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3650,6 +3710,64 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 80
     : testId === 'upsc-ies-iss/iss-objective-statistics-1-2-full-mock-1'
     ? 160
+: testId === 'ca-final/objective-components-papers-1-5-financial-reporting-1'
+    ? 15
+    : testId === 'ca-final/objective-components-papers-1-5-advanced-financial-management-1'
+    ? 15
+    : testId === 'ca-final/objective-components-papers-1-5-advanced-auditing-assurance-and-professional-eth-1'
+    ? 15
+    : testId === 'ca-final/objective-components-papers-1-5-direct-tax-laws-and-international-taxation-1'
+    ? 15
+    : testId === 'ca-final/objective-components-papers-1-5-indirect-tax-laws-1'
+    ? 15
+    : testId === 'ca-intermediate/objective-components-advanced-accounting-1'
+    ? 15
+    : testId === 'ca-intermediate/objective-components-corporate-and-other-laws-1'
+    ? 15
+    : testId === 'ca-intermediate/objective-components-taxation-1'
+    ? 15
+    : testId === 'ca-intermediate/objective-components-cost-and-management-accounting-1'
+    ? 15
+    : testId === 'ca-intermediate/objective-components-auditing-and-ethics-1'
+    ? 15
+    : testId === 'ca-intermediate/objective-components-financial-management-and-strategic-management-1'
+    ? 15
+    : testId === 'cma-final/objective-components-corporate-and-economic-laws-1'
+    ? 15
+    : testId === 'cma-final/objective-components-strategic-financial-management-1'
+    ? 15
+    : testId === 'cma-final/objective-components-direct-tax-laws-and-international-taxation-1'
+    ? 15
+    : testId === 'cma-final/objective-components-strategic-cost-management-1'
+    ? 15
+    : testId === 'cma-final/objective-components-cost-and-management-audit-1'
+    ? 15
+    : testId === 'cma-final/objective-components-corporate-financial-reporting-1'
+    ? 15
+    : testId === 'cma-final/objective-components-indirect-tax-laws-and-practice-1'
+    ? 15
+    : testId === 'cma-final/objective-components-strategic-performance-management-and-business-va-1'
+    ? 15
+    : testId === 'cma-final/objective-components-risk-management-in-banking-and-insurance-1'
+    ? 15
+    : testId === 'cma-final/objective-components-entrepreneurship-and-startup-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-corporate-accounting-and-auditing-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-financial-management-and-business-data-analytics-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-management-accounting-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-business-laws-and-ethics-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-financial-accounting-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-direct-and-indirect-taxation-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-cost-accounting-1'
+    ? 15
+    : testId === 'cma-intermediate/objective-components-operations-management-and-strategic-management-1'
+    ? 15
     : testId === 'jamb/utme-full-mock-1'
     ? 180
     : testId === 'jamb/utme-full-mock-2'
@@ -6355,6 +6473,10 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
 }
 
 export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
+'ca-final': [CA_FINAL_2026_OBJECTIVE_FINANCIAL_REPORTING_1[0], CA_FINAL_2026_OBJECTIVE_ADVANCED_FINANCIAL_MANAGEMENT_1[0], CA_FINAL_2026_OBJECTIVE_ADVANCED_AUDITING_ASSURANCE_AND_PROFESSIONAL_ETH_1[0]],
+  'ca-intermediate': [CA_INTERMEDIATE_2026_OBJECTIVE_ADVANCED_ACCOUNTING_1[0], CA_INTERMEDIATE_2026_OBJECTIVE_CORPORATE_AND_OTHER_LAWS_1[0], CA_INTERMEDIATE_2026_OBJECTIVE_TAXATION_1[0]],
+  'cma-final': [CMA_FINAL_2026_OBJECTIVE_CORPORATE_AND_ECONOMIC_LAWS_1[0], CMA_FINAL_2026_OBJECTIVE_STRATEGIC_FINANCIAL_MANAGEMENT_1[0], CMA_FINAL_2026_OBJECTIVE_DIRECT_TAX_LAWS_AND_INTERNATIONAL_TAXATION_1[0]],
+  'cma-intermediate': [CMA_INTERMEDIATE_2026_OBJECTIVE_CORPORATE_ACCOUNTING_AND_AUDITING_1[0], CMA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_MANAGEMENT_AND_BUSINESS_DATA_ANALYTICS_1[0], CMA_INTERMEDIATE_2026_OBJECTIVE_MANAGEMENT_ACCOUNTING_1[0]],
   'upsc-combined-geo-scientist': [UPSC_GEO_SCIENTIST_2027_GEOLOGY_HYDROGEOLOGY_PAPER_2_GEOLOGY_HYDROGEOLOGY_1[0]],
   'upsc-ies-iss': [UPSC_ISS_2026_STATISTICS_PAPER_1_1[0], UPSC_ISS_2026_STATISTICS_PAPER_2_1[0]],
   'htet': [HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1[0], HTET_2025_LEVEL_1_PRT_ENGLISH_1[0], HTET_2025_LEVEL_1_PRT_EVS_1[0]],
