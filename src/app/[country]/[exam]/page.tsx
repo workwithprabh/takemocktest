@@ -314,7 +314,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                     <dl className="mt-5 grid grid-cols-3 border-l border-t border-ink-200">
                       <div className="border-b border-r border-ink-200 p-3"><dt className="text-[10px] uppercase text-ink-500">Questions</dt><dd className="mt-1 text-sm font-bold text-ink-900">{stage.pattern.totalQuestions}</dd></div>
                       <div className="border-b border-r border-ink-200 p-3"><dt className="text-[10px] uppercase text-ink-500">Marks</dt><dd className="mt-1 text-sm font-bold text-ink-900">{stage.pattern.totalMarks}</dd></div>
-                      <div className="border-b border-r border-ink-200 p-3"><dt className="text-[10px] uppercase text-ink-500">Minutes</dt><dd className="mt-1 text-sm font-bold text-ink-900">{stage.pattern.duration}</dd></div>
+                      <div className="border-b border-r border-ink-200 p-3"><dt className="text-[10px] uppercase text-ink-500">Minutes</dt><dd className="mt-1 text-sm font-bold text-ink-900">{stage.pattern.duration ?? 'n/a'}</dd></div>
                     </dl>
                   )}
                   <Link href={`/${country}/${exam.slug}/mock-test`} className={`mt-5 flex min-h-11 items-center justify-between border px-4 text-sm font-semibold transition ${currentCycle ? 'border-action-600 bg-action-50 text-action-800 hover:bg-action-100' : 'border-ink-200 text-ink-900 hover:border-ink-900'}`}>

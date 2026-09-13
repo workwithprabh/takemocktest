@@ -532,7 +532,7 @@ export default function TestAttemptClient({
                 <span className="text-xs font-semibold uppercase tracking-wide text-ink-500">{q.section}</span>
                 <span className="text-xs font-semibold text-ink-700">Question {currentIndex + 1}</span>
               </div>
-              <div id="current-question" className="mb-6 text-base font-medium leading-7 text-ink-900 sm:text-lg">
+              <div id="current-question" className="mb-6 whitespace-pre-line text-base font-medium leading-7 text-ink-900 sm:text-lg">
                 {q.question}
               </div>
               {q.answerType === 'numerical' ? (

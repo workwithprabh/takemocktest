@@ -814,6 +814,14 @@ import { DSSSB_TGT_MATHEMATICS_2025_ENGLISH_1 } from './question-banks/dsssb-tgt
 import { DSSSB_TGT_MATHEMATICS_2025_GENERAL_AWARENESS_1 } from './question-banks/dsssb-tgt-mathematics-2025-general-awareness-1';
 import { DSSSB_TGT_MATHEMATICS_2025_HINDI_1 } from './question-banks/dsssb-tgt-mathematics-2025-hindi-1';
 import { DSSSB_TGT_MATHEMATICS_2025_REASONING_1 } from './question-banks/dsssb-tgt-mathematics-2025-reasoning-1';
+import { UPPSC_PCS_2025_PRELIMS_GS_2_CSAT_FULL_1 } from './question-banks/uppsc-pcs-2025-prelims-gs-2-csat-full-1';
+import { MPPSC_SSE_2026_GENERAL_APTITUDE_FULL_1 } from './question-banks/mppsc-sse-2026-general-aptitude-full-1';
+import { OPSC_OCS_2025_PRELIMS_GS_2_CSAT_FULL_1 } from './question-banks/opsc-ocs-2025-prelims-gs-2-csat-full-1';
+import { UKPSC_PCS_2025_GENERAL_APTITUDE_CORE_1 } from './question-banks/ukpsc-pcs-2025-general-aptitude-core-1';
+import { UKPSC_PCS_2025_GENERAL_APTITUDE_ENGLISH_1 } from './question-banks/ukpsc-pcs-2025-general-aptitude-english-1';
+import { UKPSC_PCS_2025_GENERAL_APTITUDE_HINDI_1 } from './question-banks/ukpsc-pcs-2025-general-aptitude-hindi-1';
+import { CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1 } from './question-banks/cgpsc-sse-2025-prelims-paper-2-aptitude-full-1';
+import { CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_1 } from './question-banks/csir-ugc-net-part-a-general-aptitude-practice-1';
 import { HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1 } from './question-banks/htet-2025-level-1-prt-child-development-1';
 import { HTET_2025_LEVEL_1_PRT_ENGLISH_1 } from './question-banks/htet-2025-level-1-prt-english-1';
 import { HTET_2025_LEVEL_1_PRT_EVS_1 } from './question-banks/htet-2025-level-1-prt-evs-1';
@@ -3613,6 +3621,23 @@ const PROFESSIONAL_ACCOUNTANCY_2026_TESTS: Record<string, Question[]> = {
   'cma-intermediate/objective-components-cost-accounting-1': CMA_INTERMEDIATE_2026_OBJECTIVE_COST_ACCOUNTING_1,
   'cma-intermediate/objective-components-operations-management-and-strategic-management-1': CMA_INTERMEDIATE_2026_OBJECTIVE_OPERATIONS_MANAGEMENT_AND_STRATEGIC_MANAGEMENT_1,
 };
+// State public service commission aptitude papers (the CSAT-equivalent second
+// paper) plus the CSIR-UGC NET Part A practice set. Every one of these is a
+// qualifying or common-aptitude paper rather than a subject paper, which is why
+// they could be authored here at all: the content is reasoning, comprehension
+// and Class-X numeracy, not the current-affairs recall that General Studies
+// Paper I would need.
+const STATE_CIVIL_SERVICES_APTITUDE_2026_TESTS: Record<string, Question[]> = {
+  'uppsc-pcs/prelims-gs-2-csat-full-mock-1': UPPSC_PCS_2025_PRELIMS_GS_2_CSAT_FULL_1,
+  'mppsc-state-service/prelims-general-aptitude-full-mock-1': MPPSC_SSE_2026_GENERAL_APTITUDE_FULL_1,
+  'opsc-ocs/prelims-gs-2-csat-full-mock-1': OPSC_OCS_2025_PRELIMS_GS_2_CSAT_FULL_1,
+  'ukpsc-pcs/prelims-general-aptitude-full-mock-1': [UKPSC_PCS_2025_GENERAL_APTITUDE_CORE_1, UKPSC_PCS_2025_GENERAL_APTITUDE_ENGLISH_1, UKPSC_PCS_2025_GENERAL_APTITUDE_HINDI_1].flat(),
+  'ukpsc-pcs/prelims-general-aptitude-core-sectional-1': UKPSC_PCS_2025_GENERAL_APTITUDE_CORE_1,
+  'ukpsc-pcs/prelims-general-aptitude-english-sectional-1': UKPSC_PCS_2025_GENERAL_APTITUDE_ENGLISH_1,
+  'ukpsc-pcs/prelims-general-aptitude-hindi-sectional-1': UKPSC_PCS_2025_GENERAL_APTITUDE_HINDI_1,
+  'cgpsc-state-service/prelims-paper-2-aptitude-full-mock-1': CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1,
+  'csir-ugc-net/part-a-general-aptitude-practice-1': CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_1,
+};
 const REPAIRED_HANDOFF_2026_TESTS: Record<string, Question[]> = {
 'uptet/paper-1-primary-full-mock-1': [UPTET_2026_PAPER_1_CHILD_DEVELOPMENT_1, UPTET_2026_PAPER_1_ENGLISH_1, UPTET_2026_PAPER_1_EVS_1, UPTET_2026_PAPER_1_HINDI_1, UPTET_2026_PAPER_1_MATHEMATICS_1].flat(),
   'uptet/paper-1-primary-child-development-sectional-1': UPTET_2026_PAPER_1_CHILD_DEVELOPMENT_1,
@@ -3623,7 +3648,7 @@ const REPAIRED_HANDOFF_2026_TESTS: Record<string, Question[]> = {
   'upsc-engineering-services/civil-prelims-paper-2-full-mock-1': UPSC_ESE_2026_CIVIL_PRELIMS_PAPER_2_CIVIL_ENGINEERING_1,
   'upsc-engineering-services/civil-prelims-paper-2-civil-engineering-sectional-1': UPSC_ESE_2026_CIVIL_PRELIMS_PAPER_2_CIVIL_ENGINEERING_1,
 };
-Object.assign(CHECKED_TEST_BANKS, REPAIRED_HANDOFF_2026_TESTS, PROFESSIONAL_ACCOUNTANCY_2026_TESTS, UPSC_OBJECTIVE_2026_TESTS, TEACHING_RECRUITMENT_2026_TESTS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS, AIIMS_BSC_NURSING_HANDOFF_TESTS, AIIMS_NORCET_HANDOFF_TESTS, CEED_HANDOFF_TESTS, UCEED_HANDOFF_TESTS, DBT_BET_HANDOFF_TESTS, DNB_PDCET_HANDOFF_TESTS, TIFR_GS_HANDOFF_TESTS);
+Object.assign(CHECKED_TEST_BANKS, STATE_CIVIL_SERVICES_APTITUDE_2026_TESTS, REPAIRED_HANDOFF_2026_TESTS, PROFESSIONAL_ACCOUNTANCY_2026_TESTS, UPSC_OBJECTIVE_2026_TESTS, TEACHING_RECRUITMENT_2026_TESTS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS, AIIMS_BSC_NURSING_HANDOFF_TESTS, AIIMS_NORCET_HANDOFF_TESTS, CEED_HANDOFF_TESTS, UCEED_HANDOFF_TESTS, DBT_BET_HANDOFF_TESTS, DNB_PDCET_HANDOFF_TESTS, TIFR_GS_HANDOFF_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3648,6 +3673,24 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     // reason as the handoff batch above: neither of these would otherwise
     // reach a rule of its own, and both would silently fall through to the
     // bare 25 at the end of the chain.
+    : testId === 'uppsc-pcs/prelims-gs-2-csat-full-mock-1'
+    ? 100
+    : testId === 'mppsc-state-service/prelims-general-aptitude-full-mock-1'
+    ? 100
+    : testId === 'opsc-ocs/prelims-gs-2-csat-full-mock-1'
+    ? 80
+    : testId === 'ukpsc-pcs/prelims-general-aptitude-full-mock-1'
+    ? 100
+    : testId === 'ukpsc-pcs/prelims-general-aptitude-core-sectional-1'
+    ? 80
+    : testId === 'ukpsc-pcs/prelims-general-aptitude-english-sectional-1'
+    ? 7
+    : testId === 'ukpsc-pcs/prelims-general-aptitude-hindi-sectional-1'
+    ? 13
+    : testId === 'cgpsc-state-service/prelims-paper-2-aptitude-full-mock-1'
+    ? 100
+    : testId === 'csir-ugc-net/part-a-general-aptitude-practice-1'
+    ? 15
     : testId === 'gate/general-aptitude-sectional-1'
     ? 10
     : testId === 'bits-hd/me-cs-test-1-paper-practice-1'
@@ -5252,6 +5295,26 @@ const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
     { section: "Statistics-I", count: 80 },
     { section: "Statistics-II", count: 80 },
   ],
+  'uppsc-pcs': [
+    { section: 'General Studies II (CSAT)', count: 100 },
+  ],
+  'mppsc-state-service': [
+    { section: 'General Aptitude Test', count: 100 },
+  ],
+  'opsc-ocs': [
+    { section: 'General Studies Paper II (CSAT)', count: 80 },
+  ],
+  'ukpsc-pcs': [
+    { section: 'General Aptitude Core', count: 80 },
+    { section: 'English Comprehension and Language/Grammar', count: 7 },
+    { section: 'Hindi Comprehension and Language/Grammar', count: 13 },
+  ],
+  // The CGPSC section name is frozen Hard-QA content carrying an em dash, which
+  // authored prose in this file may not contain. Reading it off the bank keeps
+  // it out of this file's prose and makes the layout impossible to mistype.
+  'cgpsc-state-service': [
+    { section: CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1[0].section, count: 100 },
+  ],
   'htet': [
     { section: "Child Development & Pedagogy", count: 30 },
     { section: "English Language", count: 15 },
@@ -6523,6 +6586,12 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
   'cma-intermediate': [CMA_INTERMEDIATE_2026_OBJECTIVE_CORPORATE_ACCOUNTING_AND_AUDITING_1[0], CMA_INTERMEDIATE_2026_OBJECTIVE_FINANCIAL_MANAGEMENT_AND_BUSINESS_DATA_ANALYTICS_1[0], CMA_INTERMEDIATE_2026_OBJECTIVE_MANAGEMENT_ACCOUNTING_1[0]],
   'upsc-combined-geo-scientist': [UPSC_GEO_SCIENTIST_2027_GEOLOGY_HYDROGEOLOGY_PAPER_2_GEOLOGY_HYDROGEOLOGY_1[0]],
   'upsc-ies-iss': [UPSC_ISS_2026_STATISTICS_PAPER_1_1[0], UPSC_ISS_2026_STATISTICS_PAPER_2_1[0]],
+  'uppsc-pcs': [UPPSC_PCS_2025_PRELIMS_GS_2_CSAT_FULL_1[0], UPPSC_PCS_2025_PRELIMS_GS_2_CSAT_FULL_1[1], UPPSC_PCS_2025_PRELIMS_GS_2_CSAT_FULL_1[2]],
+  'mppsc-state-service': [MPPSC_SSE_2026_GENERAL_APTITUDE_FULL_1[0], MPPSC_SSE_2026_GENERAL_APTITUDE_FULL_1[1], MPPSC_SSE_2026_GENERAL_APTITUDE_FULL_1[2]],
+  'opsc-ocs': [OPSC_OCS_2025_PRELIMS_GS_2_CSAT_FULL_1[0], OPSC_OCS_2025_PRELIMS_GS_2_CSAT_FULL_1[1], OPSC_OCS_2025_PRELIMS_GS_2_CSAT_FULL_1[2]],
+  'ukpsc-pcs': [UKPSC_PCS_2025_GENERAL_APTITUDE_CORE_1[0], UKPSC_PCS_2025_GENERAL_APTITUDE_ENGLISH_1[0], UKPSC_PCS_2025_GENERAL_APTITUDE_HINDI_1[0]],
+  'cgpsc-state-service': [CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1[0], CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1[1], CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1[2]],
+  'csir-ugc-net': [CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_1[0], CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_1[1], CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_1[2]],
   'htet': [HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1[0], HTET_2025_LEVEL_1_PRT_ENGLISH_1[0], HTET_2025_LEVEL_1_PRT_EVS_1[0]],
   'kvs-teaching-recruitment': [KVS_PRT_2025_TIER_1_COMPUTER_LITERACY_1[0], KVS_PRT_2025_TIER_1_ENGLISH_1[0], KVS_PRT_2025_TIER_1_GENERAL_KNOWLEDGE_1[0]],
   'nvs-teaching-recruitment': [NVS_TGT_MATHEMATICS_2025_TIER_1_COMPUTER_LITERACY_1[0], NVS_TGT_MATHEMATICS_2025_TIER_1_ENGLISH_1[0], NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_KNOWLEDGE_1[0]],

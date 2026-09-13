@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-13 from 873 bank files / 34610 questions.
+Generated: 2026-09-13 from 881 bank files / 35105 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -82,7 +82,7 @@ These stem patterns have caused real duplication on this project before (within 
 | SI unit lookup | 66 | ap-eapcet, bitsat-2026, comedk-uget, cusat-cat, kcet-engineering, kiitee-2026, kvs-prt, mah-bhmct, nchm-jee, niper-jee, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-paramedical, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection, tg-lawcet | high |
 | capital-city lookup | 12 | htet-2025, niacl-ao, rrb-ntpc, rrb-technician, ssc-cgl, ssc-gd, ssc-selection, tg-lawcet, upsc-cse | high |
 | currency lookup | 7 | ksdat-2026, nchm-jee, niacl-ao, niftee-2026, rrb-je, ssc-gd | high |
-| synonym/antonym instruction | 381 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, htet-2025, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, imu-cet, inet-english, jain-jet, kmat-karnataka, lic-aao, lpunest-2026, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, niftee-2026, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-selection, ssc-steno, tancet-mba, territorial-army, upeseat-2026 | high |
+| synonym/antonym instruction | 382 | afcat-verbal, agniveer-vayu, ailet-english, atma-analytical, cds-english, htet-2025, ibps-clerk, ibps-po, ibps-rrb, ibps-so, ibsat-verbal, imu-cet, inet-english, jain-jet, kmat-karnataka, lic-aao, lpunest-2026, mat-language, mh-cet, micat-va, nabard-grade, navy-ssr, nda-general, niacl-ao, niftee-2026, nmat-language, rbi-assistant, rbi-grade, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cht, ssc-cpo, ssc-gd, ssc-mts, ssc-selection, ssc-steno, tancet-mba, territorial-army, upeseat-2026, uppsc-pcs | high |
 | blood relation generic opener | 64 | ca-foundation, cuet-pg, dbt-bet, ibps-clerk, ibps-po, ibps-rrb, ibps-so, inet-english, kmat-karnataka, lic-aao, mat-language, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, rpf-constable, rpf-si, rrb-alp, rrb-group, rrb-technician, sbi-clerk, sbi-po, sebi-grade, sidbi-grade, snap-general, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection, territorial-army | high |
 | analogy colon-format | 21 | ipmat-rohtak, kerala-mca, nchm-jee, ssc-steno, state-set | high |
 
@@ -102,8 +102,8 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a fair die is rolled once | aeee-2026, ap-polycet, bcece-2026, ca-foundation, cg-pet, cg-ppt, cuet-ug, cusat-cat, ibps-clerk, ibps-po, jeecup-2026, mah-mca, met-2026, mht-cet, rbi-assistant, srmjeee-2026, ssc-cgl, ssc-selection, ugc-net, viteee-2026 (20) |
 | a convex lens of focal length | aiims-bsc, ap-eapcet, atit-2026, bcece-2026, cg-pet, comedk-uget, cusat-cat, dbt-bet, gujcet-2026, jcece-2026, jee-advanced, kcet-engineering, mht-cet, nerist-nee, srmjeee-2026, tg-eapcet, uttarakhand-jeep, viteee-2026, vtueee-2026, wb-jelet (20) |
 | choose the word most similar in | atma-analytical, ibps-so, ibsat-verbal, kmat-karnataka, lic-aao, mat-language, micat-va, nabard-grade, niacl-ao, nmat-language, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, snap-general, ssc-cpo, ssc-gd, ssc-selection, ssc-steno, tancet-mba (20) |
+| a can complete a task in | ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, kmat-karnataka, mat-language, opsc-ocs, rbi-grade, rpf-si, rrb-group, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sbi-po, snap-general, ssc-cpo, ssc-mts, tancet-mba, upsc-cse (20) |
 | in young s double slit experiment | aiims-bsc, assam-cee, comedk-uget, cusat-cat, imu-cet, jcece-2026, jee-advanced, kcet-engineering, keam-2026, met-2026, mht-cet, neet-ug, nerist-nee, puleet-2026, special-ojee, tjee-2026, viteee-2026, vtueee-2026, wbjee-engineering (19) |
-| a can complete a task in | ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, kmat-karnataka, mat-language, rbi-grade, rpf-si, rrb-group, rrb-je, rrb-paramedical, rrb-technician, sbi-clerk, sbi-po, snap-general, ssc-cpo, ssc-mts, tancet-mba, upsc-cse (19) |
 | how many moles are present in | aeee-2026, aiims-bsc, assam-cee, atit-2026, bcece-2026, dbt-bet, imu-cet, jamb-utme, jcece-2026, jharkhand-pece, kcet-engineering, kiitee-2026, met-2026, mht-cet, neet-ug, tg-ecet, vtueee-2026, wbjee-engineering (18) |
 | if a 1 2 3 4 | aeee-2026, agniveer-vayu, assam-cee, cg-pet, comedk-uget, dsssb-tgt, gujcet-2026, imu-cet, jain-jet, jcece-2026, jharkhand-pece, kcet-engineering, lpunest-2026, mht-cet, nata-mathematics, nerist-nee, srmjeee-2026, tg-eapcet (18) |
 | choose the word that means a | afcat-verbal, agniveer-vayu, cds-english, ibps-clerk, ibps-po, ibps-rrb, inet-english, lic-aao, navy-ssr, nda-general, niacl-ao, rbi-assistant, sbi-clerk, sbi-po, ssc-chsl, ssc-mts, ssc-steno, territorial-army (18) |
@@ -116,10 +116,10 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | what is the maximum number of | aeee-2026, amu-btech, ap-eapcet, atit-2026, bitsat-2026, jee-main, kcet-engineering, lpunest-2026, mht-cet, srmjeee-2026, ssc-cgl, ssc-mts, tjee-2026, viteee-2026, wbjee-engineering (15) |
 | which of the following is the | ap-eapcet, dbt-bet, gpat-2026, jamb-utme, kcet-engineering, kleee-2026, rpf-constable, rrb-paramedical, rrb-technician, sat-math, sidbi-grade, ssc-cpo, upsc-cse, viteee-2026, wbjee-engineering (15) |
 | which of the following is an | comedk-uget, gpat-2026, ibps-rrb, kcet-engineering, mah-bhmct, nabard-grade, rbi-grade, rrb-alp, rrb-je, rrb-technician, sbi-clerk, sbi-po, ssc-cgl, ssc-chsl, viteee-2026 (15) |
+| choose the sentence with correct subject | aeee-2026, ctet-sep, inet-english, kmat-karnataka, kvs-prt, mah-bhmct, mat-language, met-2026, micat-va, srmjeee-2026, tancet-mba, ukpsc-pcs, uptet-2026, viteee-2026 (14) |
 | for a first order reaction the | aiims-bsc, cg-pet, comedk-uget, imu-cet, jcece-2026, jee-main, kcet-engineering, keam-2026, lpunest-2026, met-2026, neet-ug, special-ojee, srmjeee-2026, wbjee-engineering (14) |
 | choose the word most opposite in | ibps-rrb, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, ssc-cpo, ssc-gd, ssc-mts, ssc-steno (14) |
 | what is the slope of the | act-math, aeee-2026, atit-2026, imu-cet, jain-jet, jee-main, kcet-engineering, met-2026, mht-cet, nmims-cet, sat-math, srmjeee-2026, viteee-2026 (13) |
-| choose the sentence with correct subject | aeee-2026, ctet-sep, inet-english, kmat-karnataka, kvs-prt, mah-bhmct, mat-language, met-2026, micat-va, srmjeee-2026, tancet-mba, uptet-2026, viteee-2026 (13) |
 | which of the following best describes | bitsat-2026, ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, rbi-assistant, rbi-grade, rrb-technician, sbi-po, sidbi-grade, srmjeee-2026, ssc-je, wbjee-engineering (13) |
 | a 4 kg block on a | aeee-2026, ap-eapcet, cg-pet, cusat-cat, iemjee-2026, iiit-hyderabad, kcet-engineering, mht-cet, saeee-2026, srmjeee-2026, tg-eapcet, wbjee-engineering (12) |
 | choose the word most nearly opposite | aeee-2026, cuet-pg, cuet-ug, dbt-bet, dsssb-tgt, gate-2026, ibps-clerk, ibps-so, sbi-clerk, sbi-po, srmjeee-2026, ssc-chsl (12) |
@@ -129,6 +129,7 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a can complete a job in | aeee-2026, cds-elementary, ibps-clerk, ibps-rrb, ibps-so, lic-aao, niacl-ao, rbi-assistant, rrb-ntpc, sbi-po, srmjeee-2026, ssc-cgl (12) |
 | a 2 kg body moving at | amu-btech, ap-eapcet, ap-ecet, assam-cee, bcece-2026, comedk-uget, cusat-cat, kcet-engineering, kiitee-2026, special-ojee, srmjeee-2026, wbjee-engineering (12) |
 | a first order reaction has a | ap-eapcet, assam-cee, atit-2026, chandigarh-cucet, dbt-bet, jee-advanced, kcet-engineering, kleee-2026, mht-cet, nerist-nee, tjee-2026, upeseat-2026 (12) |
+| what is the value of x | ap-ecet, atit-2026, gmat-2026, ibps-po, ibsat-verbal, mat-language, mppsc-sse, nchm-jee, sat-math, sbi-po, snap-general, tancet-mba (12) |
 | a satellite moves in a circular | bv-btech, cg-pet, cusat-cat, iiit-hyderabad, kcet-engineering, keam-2026, kiitee-2026, met-2026, mht-cet, nerist-nee, siteee-2026, tjee-2026 (12) |
 | what is the primary function of | ibps-clerk, ibps-so, kvs-prt, lic-aao, nabard-grade, rbi-assistant, rbi-grade, rrb-alp, rrb-ntpc, rrb-technician, sbi-clerk, ssc-chsl (12) |
 | what is the si unit of | kvs-prt, rbi-grade, rpf-constable, rrb-alp, rrb-group, rrb-je, rrb-technician, ssc-cgl, ssc-chsl, ssc-cpo, ssc-je, ssc-selection (12) |
@@ -137,7 +138,6 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | a can finish a job in | aeee-2026, cuet-ug, ibps-clerk, ibps-po, jharkhand-pece, micat-va, rrb-alp, srmjeee-2026, ssc-cgl, ssc-mts, ssc-selection (11) |
 | a 5 kg block on a | amu-btech, ap-eapcet, assam-cee, bcece-2026, jee-main, kcet-engineering, kiitee-2026, special-ojee, srmjeee-2026, tg-eapcet, wbjee-engineering (11) |
 | the general solution of dy dx | ap-eapcet, bitsat-2026, cg-pet, comedk-uget, imu-cet, jcece-2026, kcet-engineering, keam-2026, special-ojee, tg-ecet, wbjee-engineering (11) |
-| what is the value of x | ap-ecet, atit-2026, gmat-2026, ibps-po, ibsat-verbal, mat-language, nchm-jee, sat-math, sbi-po, snap-general, tancet-mba (11) |
 | in a class of 40 students | bits-hd, dbt-bet, ibps-clerk, ibps-rrb, ibps-so, jain-jet, jamb-utme, jipmat-2026, rbi-assistant, ssc-chsl, upsc-cse (11) |
 | find the area of a triangle | cds-elementary, ibps-rrb, kmat-karnataka, navy-ssr, rbi-grade, rpf-constable, rpf-si, rrb-alp, sbi-po, ssc-chsl, ssc-cpo (11) |
 | in a code each letter is | chandigarh-cucet, cuet-ug, ibps-clerk, ibps-so, imu-cet, jain-jet, niftee-2026, rrb-ntpc, ssc-cgl, ssc-selection, viteee-2026 (11) |

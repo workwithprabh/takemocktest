@@ -78,7 +78,7 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                   <tbody>
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Questions</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalQuestions}</td></tr>
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Total marks</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalMarks}</td></tr>
-                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Duration</td><td className="py-2 font-medium text-ink-900">{stage.pattern.duration} minutes</td></tr>
+                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Duration</td><td className="py-2 font-medium text-ink-900">{stage.pattern.duration ? `${stage.pattern.duration} minutes` : 'Not separately timed'}</td></tr>
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Negative marking</td><td className="py-2 font-medium text-ink-900">{stage.pattern.negativeMarking} per wrong answer</td></tr>
                     <tr><td className="py-2 text-ink-700">Sections</td><td className="py-2 font-medium text-ink-900">{stage.pattern.sections.join(', ')}</td></tr>
                   </tbody>
