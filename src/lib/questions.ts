@@ -808,6 +808,32 @@ import { JAMB_UTME_CHEMISTRY_1 } from './question-banks/jamb-utme-chemistry-1';
 import { JAMB_UTME_GOVERNMENT_1 } from './question-banks/jamb-utme-government-1';
 import { JAMB_UTME_ECONOMICS_1 } from './question-banks/jamb-utme-economics-1';
 import { JAMB_UTME_LITERATURE_IN_ENGLISH_1 } from './question-banks/jamb-utme-literature-in-english-1';
+import { DSSSB_TGT_MATHEMATICS_2025_ARITHMETIC_1 } from './question-banks/dsssb-tgt-mathematics-2025-arithmetic-1';
+import { DSSSB_TGT_MATHEMATICS_2025_DOMAIN_1 } from './question-banks/dsssb-tgt-mathematics-2025-domain-1';
+import { DSSSB_TGT_MATHEMATICS_2025_ENGLISH_1 } from './question-banks/dsssb-tgt-mathematics-2025-english-1';
+import { DSSSB_TGT_MATHEMATICS_2025_GENERAL_AWARENESS_1 } from './question-banks/dsssb-tgt-mathematics-2025-general-awareness-1';
+import { DSSSB_TGT_MATHEMATICS_2025_HINDI_1 } from './question-banks/dsssb-tgt-mathematics-2025-hindi-1';
+import { DSSSB_TGT_MATHEMATICS_2025_REASONING_1 } from './question-banks/dsssb-tgt-mathematics-2025-reasoning-1';
+import { HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1 } from './question-banks/htet-2025-level-1-prt-child-development-1';
+import { HTET_2025_LEVEL_1_PRT_ENGLISH_1 } from './question-banks/htet-2025-level-1-prt-english-1';
+import { HTET_2025_LEVEL_1_PRT_EVS_1 } from './question-banks/htet-2025-level-1-prt-evs-1';
+import { HTET_2025_LEVEL_1_PRT_HARYANA_GK_1 } from './question-banks/htet-2025-level-1-prt-haryana-gk-1';
+import { HTET_2025_LEVEL_1_PRT_HINDI_1 } from './question-banks/htet-2025-level-1-prt-hindi-1';
+import { HTET_2025_LEVEL_1_PRT_MATHEMATICS_1 } from './question-banks/htet-2025-level-1-prt-mathematics-1';
+import { HTET_2025_LEVEL_1_PRT_QUANTITATIVE_APTITUDE_1 } from './question-banks/htet-2025-level-1-prt-quantitative-aptitude-1';
+import { HTET_2025_LEVEL_1_PRT_REASONING_1 } from './question-banks/htet-2025-level-1-prt-reasoning-1';
+import { KVS_PRT_2025_TIER_1_COMPUTER_LITERACY_1 } from './question-banks/kvs-prt-2025-tier-1-computer-literacy-1';
+import { KVS_PRT_2025_TIER_1_ENGLISH_1 } from './question-banks/kvs-prt-2025-tier-1-english-1';
+import { KVS_PRT_2025_TIER_1_GENERAL_KNOWLEDGE_1 } from './question-banks/kvs-prt-2025-tier-1-general-knowledge-1';
+import { KVS_PRT_2025_TIER_1_GENERAL_REASONING_1 } from './question-banks/kvs-prt-2025-tier-1-general-reasoning-1';
+import { KVS_PRT_2025_TIER_1_HINDI_1 } from './question-banks/kvs-prt-2025-tier-1-hindi-1';
+import { KVS_PRT_2025_TIER_1_NUMERIC_ABILITY_1 } from './question-banks/kvs-prt-2025-tier-1-numeric-ability-1';
+import { NVS_TGT_MATHEMATICS_2025_TIER_1_COMPUTER_LITERACY_1 } from './question-banks/nvs-tgt-mathematics-2025-tier-1-computer-literacy-1';
+import { NVS_TGT_MATHEMATICS_2025_TIER_1_ENGLISH_1 } from './question-banks/nvs-tgt-mathematics-2025-tier-1-english-1';
+import { NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_KNOWLEDGE_1 } from './question-banks/nvs-tgt-mathematics-2025-tier-1-general-knowledge-1';
+import { NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_REASONING_1 } from './question-banks/nvs-tgt-mathematics-2025-tier-1-general-reasoning-1';
+import { NVS_TGT_MATHEMATICS_2025_TIER_1_HINDI_1 } from './question-banks/nvs-tgt-mathematics-2025-tier-1-hindi-1';
+import { NVS_TGT_MATHEMATICS_2025_TIER_1_NUMERIC_ABILITY_1 } from './question-banks/nvs-tgt-mathematics-2025-tier-1-numeric-ability-1';
 
 // Every question the site serves, indexed by its (globally unique, enforced by
 // scripts/audit-question-banks.mjs) question ID. Built once on first use so
@@ -3479,7 +3505,39 @@ const TIFR_GS_HANDOFF_TESTS: Record<string, Question[]> = {
   'tifr-gs/part-a-common-sectional-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1.filter((question) => question.section === 'Part A Common'),
   'tifr-gs/part-b-computer-science-sectional-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1.filter((question) => question.section === 'Part B Computer Science'),
 };
-Object.assign(CHECKED_TEST_BANKS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS, AIIMS_BSC_NURSING_HANDOFF_TESTS, AIIMS_NORCET_HANDOFF_TESTS, CEED_HANDOFF_TESTS, UCEED_HANDOFF_TESTS, DBT_BET_HANDOFF_TESTS, DNB_PDCET_HANDOFF_TESTS, TIFR_GS_HANDOFF_TESTS);
+const TEACHING_RECRUITMENT_2026_TESTS: Record<string, Question[]> = {
+'dsssb-teaching-recruitment/tgt-mathematics-full-mock-1': [DSSSB_TGT_MATHEMATICS_2025_ARITHMETIC_1, DSSSB_TGT_MATHEMATICS_2025_DOMAIN_1, DSSSB_TGT_MATHEMATICS_2025_ENGLISH_1, DSSSB_TGT_MATHEMATICS_2025_GENERAL_AWARENESS_1, DSSSB_TGT_MATHEMATICS_2025_HINDI_1, DSSSB_TGT_MATHEMATICS_2025_REASONING_1].flat(),
+  'dsssb-teaching-recruitment/tgt-mathematics-arithmetic-sectional-1': DSSSB_TGT_MATHEMATICS_2025_ARITHMETIC_1,
+  'dsssb-teaching-recruitment/tgt-mathematics-domain-sectional-1': DSSSB_TGT_MATHEMATICS_2025_DOMAIN_1,
+  'dsssb-teaching-recruitment/tgt-mathematics-english-sectional-1': DSSSB_TGT_MATHEMATICS_2025_ENGLISH_1,
+  'dsssb-teaching-recruitment/tgt-mathematics-general-awareness-sectional-1': DSSSB_TGT_MATHEMATICS_2025_GENERAL_AWARENESS_1,
+  'dsssb-teaching-recruitment/tgt-mathematics-hindi-sectional-1': DSSSB_TGT_MATHEMATICS_2025_HINDI_1,
+  'dsssb-teaching-recruitment/tgt-mathematics-reasoning-sectional-1': DSSSB_TGT_MATHEMATICS_2025_REASONING_1,
+  'htet/level-1-prt-full-mock-1': [HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1, HTET_2025_LEVEL_1_PRT_ENGLISH_1, HTET_2025_LEVEL_1_PRT_EVS_1, HTET_2025_LEVEL_1_PRT_HARYANA_GK_1, HTET_2025_LEVEL_1_PRT_HINDI_1, HTET_2025_LEVEL_1_PRT_MATHEMATICS_1, HTET_2025_LEVEL_1_PRT_QUANTITATIVE_APTITUDE_1, HTET_2025_LEVEL_1_PRT_REASONING_1].flat(),
+  'htet/level-1-prt-child-development-sectional-1': HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1,
+  'htet/level-1-prt-english-sectional-1': HTET_2025_LEVEL_1_PRT_ENGLISH_1,
+  'htet/level-1-prt-evs-sectional-1': HTET_2025_LEVEL_1_PRT_EVS_1,
+  'htet/level-1-prt-haryana-gk-sectional-1': HTET_2025_LEVEL_1_PRT_HARYANA_GK_1,
+  'htet/level-1-prt-hindi-sectional-1': HTET_2025_LEVEL_1_PRT_HINDI_1,
+  'htet/level-1-prt-mathematics-sectional-1': HTET_2025_LEVEL_1_PRT_MATHEMATICS_1,
+  'htet/level-1-prt-quantitative-aptitude-sectional-1': HTET_2025_LEVEL_1_PRT_QUANTITATIVE_APTITUDE_1,
+  'htet/level-1-prt-reasoning-sectional-1': HTET_2025_LEVEL_1_PRT_REASONING_1,
+  'kvs-teaching-recruitment/prt-tier-1-full-mock-1': [KVS_PRT_2025_TIER_1_COMPUTER_LITERACY_1, KVS_PRT_2025_TIER_1_ENGLISH_1, KVS_PRT_2025_TIER_1_GENERAL_KNOWLEDGE_1, KVS_PRT_2025_TIER_1_GENERAL_REASONING_1, KVS_PRT_2025_TIER_1_HINDI_1, KVS_PRT_2025_TIER_1_NUMERIC_ABILITY_1].flat(),
+  'kvs-teaching-recruitment/prt-tier-1-computer-literacy-sectional-1': KVS_PRT_2025_TIER_1_COMPUTER_LITERACY_1,
+  'kvs-teaching-recruitment/prt-tier-1-english-sectional-1': KVS_PRT_2025_TIER_1_ENGLISH_1,
+  'kvs-teaching-recruitment/prt-tier-1-general-knowledge-sectional-1': KVS_PRT_2025_TIER_1_GENERAL_KNOWLEDGE_1,
+  'kvs-teaching-recruitment/prt-tier-1-general-reasoning-sectional-1': KVS_PRT_2025_TIER_1_GENERAL_REASONING_1,
+  'kvs-teaching-recruitment/prt-tier-1-hindi-sectional-1': KVS_PRT_2025_TIER_1_HINDI_1,
+  'kvs-teaching-recruitment/prt-tier-1-numeric-ability-sectional-1': KVS_PRT_2025_TIER_1_NUMERIC_ABILITY_1,
+  'nvs-teaching-recruitment/tgt-mathematics-tier-1-full-mock-1': [NVS_TGT_MATHEMATICS_2025_TIER_1_COMPUTER_LITERACY_1, NVS_TGT_MATHEMATICS_2025_TIER_1_ENGLISH_1, NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_KNOWLEDGE_1, NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_REASONING_1, NVS_TGT_MATHEMATICS_2025_TIER_1_HINDI_1, NVS_TGT_MATHEMATICS_2025_TIER_1_NUMERIC_ABILITY_1].flat(),
+  'nvs-teaching-recruitment/tgt-mathematics-tier-1-computer-literacy-sectional-1': NVS_TGT_MATHEMATICS_2025_TIER_1_COMPUTER_LITERACY_1,
+  'nvs-teaching-recruitment/tgt-mathematics-tier-1-english-sectional-1': NVS_TGT_MATHEMATICS_2025_TIER_1_ENGLISH_1,
+  'nvs-teaching-recruitment/tgt-mathematics-tier-1-general-knowledge-sectional-1': NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_KNOWLEDGE_1,
+  'nvs-teaching-recruitment/tgt-mathematics-tier-1-general-reasoning-sectional-1': NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_REASONING_1,
+  'nvs-teaching-recruitment/tgt-mathematics-tier-1-hindi-sectional-1': NVS_TGT_MATHEMATICS_2025_TIER_1_HINDI_1,
+  'nvs-teaching-recruitment/tgt-mathematics-tier-1-numeric-ability-sectional-1': NVS_TGT_MATHEMATICS_2025_TIER_1_NUMERIC_ABILITY_1,
+};
+Object.assign(CHECKED_TEST_BANKS, TEACHING_RECRUITMENT_2026_TESTS, SSC_CGL_TIER1_LEVEL_TESTS, SSC_CGL_TIER1_TOPIC_TESTS, SSC_CGL_TIER1_QUICK_TESTS, SSC_MTS_CBT_QUICK_TESTS, IBPS_RRB_OA_QUICK_TESTS, SSC_GD_CONSTABLE_CBE_QUICK_TESTS, IBPS_RRB_OS1_QUICK_TESTS, SBI_CLERK_QUICK_TESTS, IBPS_PO_QUICK_TESTS, IBPS_CLERK_QUICK_TESTS, SBI_PO_QUICK_TESTS, SSC_CHT_PAPER_1_QUICK_TESTS, SSC_SELECTION_POST_TESTS, BITSAT_TESTS, JEE_MAIN_TESTS, JEE_ADVANCED_TESTS, VITEEE_TESTS, SRMJEEE_TESTS, AEEE_TESTS, MET_TESTS, COMEDK_UGET_TESTS, IIIT_HYDERABAD_UGEE_TESTS, JEE_MAIN_PAPER_2_TESTS, NATA_TESTS, MHT_CET_TESTS, WBJEE_TESTS, AP_EAPCET_TESTS, KCET_TESTS, TG_EAPCET_TESTS, AMU_BTECH_TESTS, ASSAM_CEE_TESTS, BITS_HD_TESTS, CG_PET_TESTS, BCECE_TESTS, CUSAT_CAT_TESTS, GATE_TESTS, JAM_TESTS, GPAT_TESTS, CSEET_TESTS, NEET_PG_TESTS, FMGE_TESTS, INI_CET_TESTS, XAT_TESTS, IPMAT_INDORE_TESTS, LSAT_TESTS, GMAT_TESTS, GUJCET_TESTS, JAIN_JET_TESTS, SAEEE_TESTS, SITEEE_TESTS, OJEE_TESTS, UPESEAT_TESTS, NMIMS_CET_TESTS, BV_BTECH_TESTS, CHANDIGARH_CUCET_TESTS, IMU_CET_TESTS, KLEEE_TESTS, AP_POLYCET_TESTS, ATIT_TESTS, AP_ECET_TESTS, AP_PGECET_TESTS, LPUNEST_TESTS, NERIST_NEE_TESTS, BIHAR_DCECE_TESTS, HP_PAT_TESTS, IEMJEE_TESTS, JEECUP_TESTS, MIT_WPU_CET_TESTS, JHARKHAND_PECE_TESTS, KIITEE_TESTS, PULEET_TESTS, TG_ECET_TESTS, TG_POLYCET_TESTS, CTET_TESTS, CUET_UG_TESTS, IPMAT_ROHTAK_TESTS, NCHM_JEE_TESTS, CG_PPT_TESTS, TJEE_TESTS, UTTARAKHAND_JEEP_TESTS, NEET_UG_TESTS, NIFT_TESTS, WB_JELET_TESTS, VTUEEE_TESTS, CLAT_PG_TESTS, AP_LAWCET_TESTS, TG_LAWCET_TESTS, IISER_IAT_TESTS, AIBE_TESTS, NIPER_JEE_TESTS, AIAPGET_TESTS, UGC_NET_TESTS, CUET_PG_TESTS, ICAR_AIEEA_PG_TESTS, CUET_UG_HANDOFF_TESTS, JCECE_HANDOFF_TESTS, JEST_HANDOFF_TESTS, KEAM_HANDOFF_TESTS, KERALA_MCA_HANDOFF_TESTS, KSDAT_HANDOFF_TESTS, MAH_BHMCT_BCA_BBA_BMS_BBM_CET_HANDOFF_TESTS, MAH_MBA_CET_HANDOFF_TESTS, MAH_MCA_CET_HANDOFF_TESTS, STATE_SET_HANDOFF_TESTS, AIIMS_BSC_NURSING_HANDOFF_TESTS, AIIMS_NORCET_HANDOFF_TESTS, CEED_HANDOFF_TESTS, UCEED_HANDOFF_TESTS, DBT_BET_HANDOFF_TESTS, DNB_PDCET_HANDOFF_TESTS, TIFR_GS_HANDOFF_TESTS);
 const GENERATED_TEST_ID_MARKERS = ['tier-1-level-', 'tier-1-topic-', 'tier-1-quick-', 'cbt-quick-', 'prelims-quick-', 'cbe-quick-', 'paper-1-quick-'];
 
 for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
@@ -3512,6 +3570,66 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 15
     : testId === 'bits-hd/me-cs-english-logical-reasoning-sectional-1'
     ? 15
+: testId === 'dsssb-teaching-recruitment/tgt-mathematics-arithmetic-sectional-1'
+    ? 20
+    : testId === 'dsssb-teaching-recruitment/tgt-mathematics-domain-sectional-1'
+    ? 100
+    : testId === 'dsssb-teaching-recruitment/tgt-mathematics-english-sectional-1'
+    ? 20
+    : testId === 'dsssb-teaching-recruitment/tgt-mathematics-general-awareness-sectional-1'
+    ? 20
+    : testId === 'dsssb-teaching-recruitment/tgt-mathematics-hindi-sectional-1'
+    ? 20
+    : testId === 'dsssb-teaching-recruitment/tgt-mathematics-reasoning-sectional-1'
+    ? 20
+    : testId === 'dsssb-teaching-recruitment/tgt-mathematics-full-mock-1'
+    ? 200
+    : testId === 'htet/level-1-prt-child-development-sectional-1'
+    ? 30
+    : testId === 'htet/level-1-prt-english-sectional-1'
+    ? 15
+    : testId === 'htet/level-1-prt-evs-sectional-1'
+    ? 30
+    : testId === 'htet/level-1-prt-haryana-gk-sectional-1'
+    ? 10
+    : testId === 'htet/level-1-prt-hindi-sectional-1'
+    ? 15
+    : testId === 'htet/level-1-prt-mathematics-sectional-1'
+    ? 30
+    : testId === 'htet/level-1-prt-quantitative-aptitude-sectional-1'
+    ? 10
+    : testId === 'htet/level-1-prt-reasoning-sectional-1'
+    ? 10
+    : testId === 'htet/level-1-prt-full-mock-1'
+    ? 150
+    : testId === 'kvs-teaching-recruitment/prt-tier-1-computer-literacy-sectional-1'
+    ? 20
+    : testId === 'kvs-teaching-recruitment/prt-tier-1-english-sectional-1'
+    ? 10
+    : testId === 'kvs-teaching-recruitment/prt-tier-1-general-knowledge-sectional-1'
+    ? 20
+    : testId === 'kvs-teaching-recruitment/prt-tier-1-general-reasoning-sectional-1'
+    ? 20
+    : testId === 'kvs-teaching-recruitment/prt-tier-1-hindi-sectional-1'
+    ? 10
+    : testId === 'kvs-teaching-recruitment/prt-tier-1-numeric-ability-sectional-1'
+    ? 20
+    : testId === 'kvs-teaching-recruitment/prt-tier-1-full-mock-1'
+    ? 100
+    : testId === 'nvs-teaching-recruitment/tgt-mathematics-tier-1-computer-literacy-sectional-1'
+    ? 20
+    : testId === 'nvs-teaching-recruitment/tgt-mathematics-tier-1-english-sectional-1'
+    ? 10
+    : testId === 'nvs-teaching-recruitment/tgt-mathematics-tier-1-general-knowledge-sectional-1'
+    ? 20
+    : testId === 'nvs-teaching-recruitment/tgt-mathematics-tier-1-general-reasoning-sectional-1'
+    ? 20
+    : testId === 'nvs-teaching-recruitment/tgt-mathematics-tier-1-hindi-sectional-1'
+    ? 10
+    : testId === 'nvs-teaching-recruitment/tgt-mathematics-tier-1-numeric-ability-sectional-1'
+    ? 20
+    : testId === 'nvs-teaching-recruitment/tgt-mathematics-tier-1-full-mock-1'
+    ? 100
     : testId === 'jamb/utme-full-mock-1'
     ? 180
     : testId === 'jamb/utme-full-mock-2'
@@ -4947,6 +5065,40 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
 }
 
 const fullMockLayouts: Record<string, { section: string; count: number }[]> = {
+  'htet': [
+    { section: "Child Development & Pedagogy", count: 30 },
+    { section: "English Language", count: 15 },
+    { section: "Environmental Studies", count: 30 },
+    { section: "Haryana GK & Awareness", count: 10 },
+    { section: "Hindi Language", count: 15 },
+    { section: "Mathematics", count: 30 },
+    { section: "Quantitative Aptitude", count: 10 },
+    { section: "Reasoning Ability", count: 10 },
+  ],
+  'kvs-teaching-recruitment': [
+    { section: "Basic Computer Literacy", count: 20 },
+    { section: "Language Competency Test (English)", count: 10 },
+    { section: "General Knowledge", count: 20 },
+    { section: "General Reasoning", count: 20 },
+    { section: "Language Competency Test (Hindi)", count: 10 },
+    { section: "Numeric Ability", count: 20 },
+  ],
+  'nvs-teaching-recruitment': [
+    { section: "Basic Computer Literacy", count: 20 },
+    { section: "Language Competency Test (English)", count: 10 },
+    { section: "General Knowledge", count: 20 },
+    { section: "General Reasoning", count: 20 },
+    { section: "Language Competency Test (Hindi)", count: 10 },
+    { section: "Numeric Ability", count: 20 },
+  ],
+  'dsssb-teaching-recruitment': [
+    { section: "Arithmetical & Numerical Ability", count: 20 },
+    { section: "Mathematics & Teaching Methodology/B.Ed.", count: 100 },
+    { section: "English Language & Comprehension", count: 20 },
+    { section: "General Awareness", count: 20 },
+    { section: "Hindi Language & Comprehension", count: 20 },
+    { section: "General Intelligence & Reasoning Ability", count: 20 },
+  ],
   'jamb': [
     { section: "Use of English", count: 60 },
     { section: "Mathematics", count: 40 },
@@ -6176,6 +6328,10 @@ for (const [testId, fullMock] of Object.entries(CHECKED_TEST_BANKS).filter(([tes
 }
 
 export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
+  'htet': [HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1[0], HTET_2025_LEVEL_1_PRT_ENGLISH_1[0], HTET_2025_LEVEL_1_PRT_EVS_1[0]],
+  'kvs-teaching-recruitment': [KVS_PRT_2025_TIER_1_COMPUTER_LITERACY_1[0], KVS_PRT_2025_TIER_1_ENGLISH_1[0], KVS_PRT_2025_TIER_1_GENERAL_KNOWLEDGE_1[0]],
+  'nvs-teaching-recruitment': [NVS_TGT_MATHEMATICS_2025_TIER_1_COMPUTER_LITERACY_1[0], NVS_TGT_MATHEMATICS_2025_TIER_1_ENGLISH_1[0], NVS_TGT_MATHEMATICS_2025_TIER_1_GENERAL_KNOWLEDGE_1[0]],
+  'dsssb-teaching-recruitment': [DSSSB_TGT_MATHEMATICS_2025_ARITHMETIC_1[0], DSSSB_TGT_MATHEMATICS_2025_DOMAIN_1[0], DSSSB_TGT_MATHEMATICS_2025_ENGLISH_1[0]],
   'jamb': [
     JAMB_UTME_USE_OF_ENGLISH_1[15],
     JAMB_UTME_MATHEMATICS_1[0],
