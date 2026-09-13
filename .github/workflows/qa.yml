@@ -67,6 +67,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # gsc-query.py imports requests at module scope, so even selftest, which
+      # reaches no network path, fails to import without it. Until 13 September
+      # 2026 this step did not exist, so qa:gsc raised ModuleNotFoundError on
+      # every run and took the whole chain down with it. The cost was not the
+      # red cross: it was that qa:drift runs last in qa:site, so the drift
+      # baseline had never once been checked in CI, and a chain that is always
+      # red tells you nothing on the day it breaks for a real reason.
+      - name: Install Python dependencies
+        run: python -m pip install --disable-pip-version-check requests
+
       # The full chain, in the order package.json defines it: lint, dashes,
       # question banks, assets, build, practice, on-page SEO, keyword map,
       # stated counts, canonicals, internal links, thin content, schema,
