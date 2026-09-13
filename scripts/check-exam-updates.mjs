@@ -10,7 +10,7 @@ const compiled = ts.transpileModule(source, { compilerOptions: { module: ts.Modu
 const api = {};
 vm.runInNewContext(compiled.outputText, { exports: api, Intl, Date });
 const { UPDATES, filterUpdates, formatUpdateDate, formatUpdateDateTime, getLatestUpdates, getUpcomingUpdateDates } = api;
-const officialHosts = new Set(['www.ibps.in', 'www.upsc.gov.in', 'ssc.gov.in', 'www.rrbcdg.gov.in', 'www.aima.in', 'gate2027.iitm.ac.in']);
+const officialHosts = new Set(['www.ibps.in', 'www.upsc.gov.in', 'ssc.gov.in', 'www.rrbcdg.gov.in', 'www.aima.in', 'gate2027.iitm.ac.in', 'csirnet.nta.ac.in', 'psc.uk.gov.in', 'mppsc.mp.gov.in', 'psc.cg.gov.in']);
 const slugs = new Set();
 for (const item of UPDATES) {
   assert(!slugs.has(item.slug), `Duplicate slug: ${item.slug}`);
