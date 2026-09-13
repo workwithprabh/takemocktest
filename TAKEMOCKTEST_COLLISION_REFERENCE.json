@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-13",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 873,
-    "questions": 34610
+    "bankFiles": 881,
+    "questions": 35105
   },
   "topicSaturation": [
     {
@@ -9566,8 +9566,8 @@
     },
     {
       "pattern": "synonym/antonym instruction",
-      "matchCount": 381,
-      "examCount": 44,
+      "matchCount": 382,
+      "examCount": 45,
       "exams": [
         "afcat-verbal",
         "agniveer-vayu",
@@ -9612,7 +9612,8 @@
         "ssc-steno",
         "tancet-mba",
         "territorial-army",
-        "upeseat-2026"
+        "upeseat-2026",
+        "uppsc-pcs"
       ],
       "riskTier": "high"
     },
@@ -9992,6 +9993,32 @@
       ]
     },
     {
+      "opening": "a can complete a task in",
+      "examCount": 20,
+      "exams": [
+        "ibps-clerk",
+        "ibps-po",
+        "ibps-rrb",
+        "ibsat-verbal",
+        "kmat-karnataka",
+        "mat-language",
+        "opsc-ocs",
+        "rbi-grade",
+        "rpf-si",
+        "rrb-group",
+        "rrb-je",
+        "rrb-paramedical",
+        "rrb-technician",
+        "sbi-clerk",
+        "sbi-po",
+        "snap-general",
+        "ssc-cpo",
+        "ssc-mts",
+        "tancet-mba",
+        "upsc-cse"
+      ]
+    },
+    {
       "opening": "in young s double slit experiment",
       "examCount": 19,
       "exams": [
@@ -10014,31 +10041,6 @@
         "viteee-2026",
         "vtueee-2026",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "a can complete a task in",
-      "examCount": 19,
-      "exams": [
-        "ibps-clerk",
-        "ibps-po",
-        "ibps-rrb",
-        "ibsat-verbal",
-        "kmat-karnataka",
-        "mat-language",
-        "rbi-grade",
-        "rpf-si",
-        "rrb-group",
-        "rrb-je",
-        "rrb-paramedical",
-        "rrb-technician",
-        "sbi-clerk",
-        "sbi-po",
-        "snap-general",
-        "ssc-cpo",
-        "ssc-mts",
-        "tancet-mba",
-        "upsc-cse"
       ]
     },
     {
@@ -10313,6 +10315,26 @@
       ]
     },
     {
+      "opening": "choose the sentence with correct subject",
+      "examCount": 14,
+      "exams": [
+        "aeee-2026",
+        "ctet-sep",
+        "inet-english",
+        "kmat-karnataka",
+        "kvs-prt",
+        "mah-bhmct",
+        "mat-language",
+        "met-2026",
+        "micat-va",
+        "srmjeee-2026",
+        "tancet-mba",
+        "ukpsc-pcs",
+        "uptet-2026",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "for a first order reaction the",
       "examCount": 14,
       "exams": [
@@ -10368,25 +10390,6 @@
         "nmims-cet",
         "sat-math",
         "srmjeee-2026",
-        "viteee-2026"
-      ]
-    },
-    {
-      "opening": "choose the sentence with correct subject",
-      "examCount": 13,
-      "exams": [
-        "aeee-2026",
-        "ctet-sep",
-        "inet-english",
-        "kmat-karnataka",
-        "kvs-prt",
-        "mah-bhmct",
-        "mat-language",
-        "met-2026",
-        "micat-va",
-        "srmjeee-2026",
-        "tancet-mba",
-        "uptet-2026",
         "viteee-2026"
       ]
     },
@@ -10554,6 +10557,24 @@
       ]
     },
     {
+      "opening": "what is the value of x",
+      "examCount": 12,
+      "exams": [
+        "ap-ecet",
+        "atit-2026",
+        "gmat-2026",
+        "ibps-po",
+        "ibsat-verbal",
+        "mat-language",
+        "mppsc-sse",
+        "nchm-jee",
+        "sat-math",
+        "sbi-po",
+        "snap-general",
+        "tancet-mba"
+      ]
+    },
+    {
       "opening": "a satellite moves in a circular",
       "examCount": 12,
       "exams": [
@@ -10690,23 +10711,6 @@
         "special-ojee",
         "tg-ecet",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "what is the value of x",
-      "examCount": 11,
-      "exams": [
-        "ap-ecet",
-        "atit-2026",
-        "gmat-2026",
-        "ibps-po",
-        "ibsat-verbal",
-        "mat-language",
-        "nchm-jee",
-        "sat-math",
-        "sbi-po",
-        "snap-general",
-        "tancet-mba"
       ]
     },
     {

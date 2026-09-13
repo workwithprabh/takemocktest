@@ -251,7 +251,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
                   <div className="grid gap-2 text-sm sm:grid-cols-3">
                     <div><span className="text-ink-500">Questions:</span> <strong>{stage.pattern.totalQuestions}</strong></div>
                     <div><span className="text-ink-500">Marks:</span> <strong>{stage.pattern.totalMarks}</strong></div>
-                    <div><span className="text-ink-500">Duration:</span> <strong>{stage.pattern.duration} minutes</strong></div>
+                    <div><span className="text-ink-500">Duration:</span> <strong>{stage.pattern.duration ? `${stage.pattern.duration} minutes` : 'Not separately timed'}</strong></div>
                   </div>
                   <p className="mt-3 text-sm leading-6 text-ink-700">
                     {stage.pattern.sections.join(' · ')}. Negative marking: {stage.pattern.negativeMarking} per wrong answer.

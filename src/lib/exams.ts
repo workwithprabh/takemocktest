@@ -174,6 +174,12 @@ export type ExamSlug =
   | 'cma-final'
   | 'cma-intermediate'
   | 'uptet'
+  | 'uppsc-pcs'
+  | 'mppsc-state-service'
+  | 'opsc-ocs'
+  | 'ukpsc-pcs'
+  | 'cgpsc-state-service'
+  | 'csir-ugc-net'
   | 'upsc-engineering-services'
   | 'jamb';
 export type TestStatus = 'checked' | 'demo';
@@ -665,6 +671,18 @@ const ICMAI_INTERMEDIATE_2026_SYLLABUS = 'https://icmai.in/';
 
 const UPTET_2026_NOTIFICATION = 'https://upessc.up.gov.in/';
 const UPSC_ESE_2026_NOTIFICATION = 'https://www.upsc.gov.in/';
+
+const UPPSC_PCS_2025_PAPER_SURFACE =
+  'https://uppsc.up.nic.in/OuterPages/PreQuesPapers.aspx?ID=PrevQues';
+const MPPSC_SSE_2026_EXAM_PLAN =
+  'https://mppsc.mp.gov.in/uploads/syllabus/Exam_Plan_and_Syllabus_State_Service_Examination_2026_Dated_05_01_2026.pdf';
+const OPSC_OCS_2025_OFFICIAL_PAGE = 'https://www.opsc.gov.in/Public/OPSC/Default.aspx';
+const UKPSC_PCS_2025_DETAILED_SCHEME =
+  'https://psc.uk.gov.in/public/uploads/syllabus/746895957.pdf';
+const CGPSC_SSE_2025_ADVERTISEMENT =
+  'https://psc.cg.gov.in/pdf/Advertisement/ADV_SSE2025_26112025.PDF';
+const CSIR_UGC_NET_JUNE_2026_BULLETIN =
+  'https://cdnbbsr.s3waas.gov.in/s3efdf562ce2fb0ad460fd8e9d33e57f57/uploads/2026/05/202605271224945892.pdf';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -13846,7 +13864,188 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
       },
     ],
   },
-'uptet': {
+  'uppsc-pcs': {
+    slug: 'uppsc-pcs',
+    name: 'UPPSC PCS',
+    shortName: 'UPPSC PCS',
+    fullName: 'UPPSC PCS Prelims: General Studies Paper II (CSAT)',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'prelims-gs-2-csat',
+        name: 'Prelims General Studies II (CSAT)',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2025',
+          sections: ['General Studies II (CSAT)'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: '0.67 (one third of 2 marks)',
+          timerNote: 'Single unrestricted 120-minute timer for the whole paper: no sectional lock',
+          note: 'UPPSC sets two preliminary papers on the same day. This site covers the second one, General Studies Paper II, the CSAT paper: 100 objective questions for 200 marks in two hours, four options each, 2 marks for a correct answer and one third of that, about 0.67 marks, deducted for a wrong one. Paper II is qualifying only. A candidate must score at least 33 per cent on it to have Paper I evaluated, and its marks are not added to the merit used for shortlisting, so the practical goal here is clearing the bar rather than maximising the score. The syllabus is comprehension, interpersonal and communication skills, logical reasoning and analytical ability, decision making and problem solving, general mental ability, and Class X elementary mathematics, general English and general Hindi. The Hindi-language questions in this mock are set in Hindi, as they are in the real paper, and are not translated. General Studies Paper I is deliberately not built here: it is current events, history, geography, polity and economy, the fact-recall content this site does not self-author. The pattern is marked review-pending rather than official because the commission publishes the papers themselves rather than a scheme table, so the question count, marks and marking scheme above rest on the current paper surface plus consistent secondary corroboration rather than a directly read official pattern document.',
+          sourceUrl: UPPSC_PCS_2025_PAPER_SURFACE,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'prelims-gs-2-csat-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 2, negativeMarking: 0.6666666666666666, scoringNote: 'Two marks per correct answer and one third of that deducted per wrong one, matching the official paper; an unanswered question scores zero. Paper II is qualifying at 33 per cent, so treat the pass mark rather than the total as the target.', checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'mppsc-state-service': {
+    slug: 'mppsc-state-service',
+    name: 'MPPSC State Service',
+    shortName: 'MPPSC SSE',
+    fullName: 'MPPSC State Service Prelims 2026: General Aptitude Test',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'prelims-general-aptitude',
+        name: 'Prelims General Aptitude Test',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['General Aptitude Test'],
+          totalQuestions: 100,
+          totalMarks: 300,
+          duration: 120,
+          negativeMarking: 1,
+          timerNote: 'Single unrestricted 120-minute timer for the whole paper: no sectional lock',
+          note: 'MPPSC revised its preliminary scheme for 2026, and the figures here are taken from the commission\'s own exam plan and syllabus dated 5 January 2026 rather than from an earlier cycle. The General Aptitude Test is the second preliminary paper: 100 objective questions for 300 marks in two hours, four options each, 3 marks for a correct answer and 1 mark deducted for a wrong one. It is qualifying only, and the 2026 plan sets the minimum at 40 per cent for unreserved candidates and unreserved women and 30 per cent for SC, ST, OBC, EWS and PwD candidates; a widely repeated 33 per cent figure belongs to the older scheme and is not used here. The syllabus is comprehension, communication skills, logical reasoning, decision making, general mental ability, basic numeracy and data interpretation, with Hindi comprehension where prescribed. The Hindi-language questions in this mock are set in Hindi and are not translated. General Studies Paper I is not built here: it is current events and state and national fact recall, which this site does not self-author.',
+          sourceUrl: MPPSC_SSE_2026_EXAM_PLAN,
+          checkedOn: '11 September 2026',
+        },
+        tests: [
+          { id: 'prelims-general-aptitude-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 3, negativeMarking: 1, scoringNote: 'Three marks per correct answer and 1 mark deducted per wrong one, matching the 2026 scheme; an unanswered question scores zero. The paper is qualifying at 40 per cent for unreserved candidates and 30 per cent for reserved categories.', checkedOn: '11 September 2026' },
+        ],
+      },
+    ],
+  },
+  'opsc-ocs': {
+    slug: 'opsc-ocs',
+    name: 'OPSC OCS',
+    shortName: 'OPSC OCS',
+    fullName: 'OPSC Odisha Civil Services: General Studies Paper II (CSAT)',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'prelims-gs-2-csat',
+        name: 'Prelims General Studies II (CSAT)',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2025',
+          sections: ['General Studies Paper II (CSAT)'],
+          totalQuestions: 80,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: '0.83 (one third of 2.5 marks)',
+          timerNote: 'Single unrestricted 120-minute timer for the whole paper: no sectional lock',
+          note: 'The Odisha Civil Services preliminary examination has two papers. This site covers General Studies Paper II, the CSAT paper: 200 marks in two hours, objective, four alternatives per question, with one third of the marks for a question deducted for a wrong answer. On the current cycle\'s actual paper that works out to 80 questions of 2.5 marks each, which is the split used here. Paper II is qualifying at 33 per cent and its marks do not count towards the merit used for shortlisting. The syllabus is comprehension, interpersonal skills, logical reasoning and analytical ability, decision making and problem solving, general mental ability, and Class X basic numeracy and data interpretation. General Studies Paper I is not built here: it is current events and general fact recall, which this site does not self-author, and volatile current-affairs content is excluded from this paper too. The pattern is marked review-pending rather than official for two reasons. The marks, duration and marking rule come from the OCS 2025 rules read through a document mirror rather than from the commission\'s own file, and the 80-question count is corroborated from the current cycle\'s actual paper rather than stated in the rules at all.',
+          sourceUrl: OPSC_OCS_2025_OFFICIAL_PAGE,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'prelims-gs-2-csat-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, scoringNote: 'Two and a half marks per correct answer and one third of that, about 0.83 marks, deducted per wrong one; an unanswered question scores zero. The paper is qualifying at 33 per cent.', checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'ukpsc-pcs': {
+    slug: 'ukpsc-pcs',
+    name: 'UKPSC PCS',
+    shortName: 'UKPSC PCS',
+    fullName: 'UKPSC Combined State Civil Services: General Aptitude Test',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'prelims-general-aptitude',
+        name: 'Prelims General Aptitude Test',
+        pattern: {
+          status: 'official',
+          cycle: '2025',
+          sections: ['General Aptitude Core', 'English Comprehension and Language/Grammar', 'Hindi Comprehension and Language/Grammar'],
+          totalQuestions: 100,
+          totalMarks: 150,
+          duration: 120,
+          negativeMarking: 0.375,
+          sectionBreakdown: [
+            { name: 'General Aptitude Core', questions: 80, marks: 120 },
+            { name: 'English Comprehension and Language/Grammar', questions: 7, marks: 10.5 },
+            { name: 'Hindi Comprehension and Language/Grammar', questions: 13, marks: 19.5 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer covering all three parts: no sectional lock',
+          note: 'The second preliminary paper of the UKPSC Combined State Civil and Upper Subordinate Services examination is the General Aptitude Test: 100 objective questions for 150 marks in two hours, four options each, 1.5 marks for a correct answer and one quarter of that, 0.375 marks, deducted for a wrong one. It is qualifying at 33 per cent. The three-part split above, 80 general aptitude questions alongside 7 English and 13 Hindi comprehension and grammar questions, is taken from the commission\'s own detailed scheme; the marks column is that split at 1.5 marks a question, which is why two of the three rows carry a half mark. The Hindi questions in this mock are set in Hindi, as they are in the real paper, and are not translated. The first preliminary paper on General Studies is not built here, nor are the Mains papers or the interview.',
+          sourceUrl: UKPSC_PCS_2025_DETAILED_SCHEME,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'prelims-general-aptitude-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1.5, negativeMarking: 0.375, scoringNote: 'One and a half marks per correct answer and 0.375 deducted per wrong one, matching the official scheme; an unanswered question scores zero. The paper is qualifying at 33 per cent.', checkedOn: '10 September 2026' },
+          { id: 'prelims-general-aptitude-core-sectional-1', name: 'General Aptitude Core Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Aptitude Core', duration: 96, marksPerCorrect: 1.5, negativeMarking: 0.375, scoringNote: 'UKPSC runs the paper on one composite timer and publishes no per-part limit, so the 96 minutes here is a TakeMockTest practice allowance in proportion to this part\'s share of the paper, not an official section duration.', checkedOn: '10 September 2026' },
+          { id: 'prelims-general-aptitude-english-sectional-1', name: 'English Comprehension and Grammar Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Comprehension and Language/Grammar', duration: 8, marksPerCorrect: 1.5, negativeMarking: 0.375, scoringNote: 'UKPSC runs the paper on one composite timer and publishes no per-part limit, so the 8 minutes here is a TakeMockTest practice allowance in proportion to this part\'s share of the paper, not an official section duration.', checkedOn: '10 September 2026' },
+          { id: 'prelims-general-aptitude-hindi-sectional-1', name: 'Hindi Comprehension and Grammar Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Hindi Comprehension and Language/Grammar', duration: 16, marksPerCorrect: 1.5, negativeMarking: 0.375, scoringNote: 'UKPSC runs the paper on one composite timer and publishes no per-part limit, so the 16 minutes here is a TakeMockTest practice allowance in proportion to this part\'s share of the paper, not an official section duration. The questions in this part are set in Hindi.', checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'cgpsc-state-service': {
+    slug: 'cgpsc-state-service',
+    name: 'CGPSC State Service',
+    shortName: 'CGPSC SSE',
+    fullName: 'CGPSC State Service Examination 2025: Preliminary Paper II (Aptitude Test)',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'prelims-paper-2-aptitude',
+        name: 'Preliminary Paper II Aptitude Test',
+        pattern: {
+          status: 'official',
+          cycle: '2025',
+          sections: ['Aptitude Test'],
+          totalQuestions: 100,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: '0.67 (one third of 2 marks)',
+          timerNote: 'Single unrestricted 120-minute timer for the whole paper: no sectional lock',
+          note: 'Paper II of the CGPSC State Service preliminary examination is the aptitude paper: 100 objective questions for 200 marks in two hours, four options each, 2 marks for a correct answer and one third of that, about 0.67 marks, deducted for a wrong one. It is qualifying only. A candidate needs 33 per cent to qualify, or 23 per cent in the reserved categories, and the marks are not added to the preliminary merit used to shortlist for the Main Examination. Seven domains are examined: interpersonal skills including communication, logical reasoning and analytical ability, decision making and problem solving, general mental ability, Class X basic numeracy and data interpretation, Class X Hindi, and Chhattisgarhi. The commission publishes no per-domain question quota, so none is claimed here. The language rules of the real paper are reproduced rather than smoothed over: the general questions are set in both Hindi and English, the Hindi-language questions in Hindi only, and the Chhattisgarhi-language questions in Chhattisgarhi only, none of them translated. Preliminary Paper I on General Studies is not built here, and neither are the Mains papers.',
+          sourceUrl: CGPSC_SSE_2025_ADVERTISEMENT,
+          checkedOn: '12 September 2026',
+        },
+        tests: [
+          { id: 'prelims-paper-2-aptitude-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 2, negativeMarking: 0.6666666666666666, scoringNote: 'Two marks per correct answer and one third of that deducted per wrong one, matching the official paper; an unanswered question scores zero. Paper II is qualifying at 33 per cent, or 23 per cent for reserved categories, so the pass mark rather than the total is the target. General questions appear in Hindi and English together; the Hindi and Chhattisgarhi language questions appear in those languages only, as they do in the real paper.', checkedOn: '12 September 2026' },
+        ],
+      },
+    ],
+  },
+  'csir-ugc-net': {
+    slug: 'csir-ugc-net',
+    name: 'CSIR UGC NET',
+    shortName: 'CSIR NET',
+    fullName: 'Joint CSIR-UGC NET: Part A General Aptitude',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'part-a-general-aptitude',
+        name: 'Part A General Aptitude',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Part A: General Aptitude'],
+          totalQuestions: 20,
+          totalMarks: 30,
+          negativeMarking: 0.5,
+          timerNote: 'There is no official Part A timer. The single 180-minute limit covers Parts A, B and C together, and how much of it goes to Part A is the candidate\'s own decision',
+          note: 'Part A is the General Aptitude section common to every Joint CSIR-UGC NET subject paper. Twenty questions are displayed and a candidate may attempt at most fifteen of them, each worth 2 marks with 0.5 deducted for a wrong answer, so the most Part A can contribute is 30 marks. The syllabus is logical reasoning, graphical analysis, analytical ability, numerical ability, quantitative comparison, series formation and puzzles, all of it verifiable without subject knowledge, which is why this is the one part of the paper built here. Parts B and C are subject-specific for Chemical, Earth, Life, Mathematical and Physical Sciences and are not built. The duration row is deliberately blank: NTA publishes one 180-minute limit for the whole A, B and C paper and no standalone Part A timer, so there is no official figure to print. This site offers a fifteen-question scored practice set rather than a twenty-question simulation, because fifteen is the number a candidate actually attempts and the set is practice rather than a reproduction of the paper. Figures were reconfirmed against the current June 2026 information bulletin.',
+          sourceUrl: CSIR_UGC_NET_JUNE_2026_BULLETIN,
+          checkedOn: '12 September 2026',
+        },
+        tests: [
+          { id: 'part-a-general-aptitude-practice-1', name: 'Part A General Aptitude Practice Set 1', kind: 'practice', status: 'checked', duration: 30, marksPerCorrect: 2, negativeMarking: 0.5, scoringNote: 'Fifteen questions at 2 marks each with 0.5 deducted per wrong answer, for a maximum of 30, which is what Part A is worth in the real paper. CSIR publishes no Part A timer, so the 30 minutes here is a TakeMockTest practice setting, not an official section duration: the official 180 minutes covers Parts A, B and C together. This is a practice set, not a simulation of the twenty-question Part A screen.', checkedOn: '12 September 2026' },
+        ],
+      },
+    ],
+  },
+  'uptet': {
     slug: 'uptet',
     name: 'UPTET',
     shortName: 'UPTET',

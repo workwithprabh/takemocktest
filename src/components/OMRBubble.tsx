@@ -29,7 +29,7 @@ export default function OMRBubble({
       >
         {letter}
       </div>
-      <div className="text-sm font-medium text-ink-900">{label}</div>
+      <div className="whitespace-pre-line text-sm font-medium text-ink-900">{label}</div>
     </>
   );
 
