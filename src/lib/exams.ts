@@ -167,6 +167,8 @@ export type ExamSlug =
   | 'htet'
   | 'kvs-teaching-recruitment'
   | 'nvs-teaching-recruitment'
+  | 'upsc-combined-geo-scientist'
+  | 'upsc-ies-iss'
   | 'jamb';
 export type TestStatus = 'checked' | 'demo';
 
@@ -646,6 +648,9 @@ const DSSSB_TGT_2025_NOTIFICATION = 'https://dsssb.delhi.gov.in/';
 const HTET_2025_NOTIFICATION = 'https://bseh.org.in/';
 const KVS_PRT_2025_NOTIFICATION = 'https://www.cbse.gov.in/cbsenew/recruitment.html';
 const NVS_TGT_2025_NOTIFICATION = 'https://www.cbse.gov.in/cbsenew/recruitment.html';
+
+const UPSC_GEO_SCIENTIST_2027_NOTIFICATION = 'https://www.upsc.gov.in/';
+const UPSC_ISS_2026_NOTIFICATION = 'https://www.upsc.gov.in/';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -13621,6 +13626,74 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'tgt-mathematics-tier-1-general-reasoning-sectional-1', name: 'General Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Reasoning', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
           { id: 'tgt-mathematics-tier-1-hindi-sectional-1', name: 'Language Competency Test (Hindi) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Competency Test (Hindi)', duration: 12, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
           { id: 'tgt-mathematics-tier-1-numeric-ability-sectional-1', name: 'Numeric Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numeric Ability', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'upsc-combined-geo-scientist': {
+    slug: 'upsc-combined-geo-scientist',
+    name: 'UPSC Combined Geo-Scientist',
+    shortName: 'Geo-Scientist',
+    fullName: 'UPSC Combined Geo-Scientist Prelims 2027: Geology and Hydrogeology Paper II',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'geology-hydrogeology-prelim-paper-2',
+        name: 'Stage I Prelims: Geology/Hydrogeology Paper II',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2027',
+          sections: ['Geology/Hydrogeology Paper II'],
+          totalQuestions: 120,
+          totalMarks: 300,
+          duration: 120,
+          negativeMarking: 0.8333333333333334,
+          sectionBreakdown: [
+            { name: 'Geology/Hydrogeology Paper II', questions: 120, marks: 300 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer for the Geology and Hydrogeology Paper II objective paper, matching the official Stage I working time.',
+          note: 'TakeMockTest covers the Stream I Geology and Hydrogeology Paper II objective paper of the Combined Geo-Scientist Preliminary Examination only. The 2027 notice fixes 300 marks and a two-hour duration directly, and marking is 2.5 marks for a correct answer with one third of that, 0.833 marks, deducted for a wrong one. The pattern is marked review-pending for one specific reason: the 120-question count is carried forward from the actual 2025 and 2026 Paper II papers because the accessible 2027 notification surface does not state a question count, so that figure is not an official 2027 claim. General Studies Paper I is excluded because it carries current events, which this site does not self-author, and the Main descriptive examination and Personality Test are out of scope.',
+          sourceUrl: UPSC_GEO_SCIENTIST_2027_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'geology-hydrogeology-prelim-paper-2-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
+          { id: 'geology-hydrogeology-prelim-paper-2-geology-hydrogeology-sectional-1', name: 'Geology/Hydrogeology Paper II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Geology/Hydrogeology Paper II', duration: 120, marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'upsc-ies-iss': {
+    slug: 'upsc-ies-iss',
+    name: 'UPSC ISS',
+    shortName: 'UPSC ISS',
+    fullName: 'UPSC Indian Statistical Service 2026: Statistics I and II Objective Papers',
+    category: 'Civil Services',
+    stages: [
+      {
+        id: 'iss-objective-statistics-1-2',
+        name: 'Statistics I and II (Objective)',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Statistics-I', 'Statistics-II'],
+          totalQuestions: 160,
+          totalMarks: 400,
+          duration: 240,
+          negativeMarking: 0.8333333333333334,
+          sectionBreakdown: [
+            { name: 'Statistics-I', questions: 80, marks: 200 },
+            { name: 'Statistics-II', questions: 80, marks: 200 },
+          ],
+          timerNote: 'Two separately timed official papers, not one free 240-minute clock: Statistics-I gets its own 120-minute window and Statistics-II a second 120-minute window, each auto-submitting on its own.',
+          note: 'TakeMockTest covers the two objective Statistics papers of the Indian Statistical Service examination. Each paper is 80 questions for 200 marks in 120 minutes, with 2.5 marks for a correct answer and one third of that, 0.833 marks, deducted for a wrong one; multiple responses count as wrong and an unattempted question scores zero. Papers are English only. The pattern is marked review-pending because the exact paper scheme was read from official-document mirrors rather than directly from the UPSC notification itself, which could be reached only at its archive surface. The Indian Economic Service papers, General English, General Studies and the descriptive Statistics papers are outside this product.',
+          sourceUrl: UPSC_ISS_2026_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'iss-objective-statistics-1-2-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 240, timingGroups: [{ sections: ['Statistics-I'], duration: 120 }, { sections: ['Statistics-II'], duration: 120 }], marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
+          { id: 'iss-objective-statistics-1-2-paper-1-sectional-1', name: 'Statistics-I Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics-I', duration: 120, marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
+          { id: 'iss-objective-statistics-1-2-paper-2-sectional-1', name: 'Statistics-II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics-II', duration: 120, marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
         ],
       },
     ],
