@@ -163,6 +163,10 @@ export type ExamSlug =
   | 'ugc-net'
   | 'cuet-pg'
   | 'icar-aieea-pg'
+  | 'dsssb-teaching-recruitment'
+  | 'htet'
+  | 'kvs-teaching-recruitment'
+  | 'nvs-teaching-recruitment'
   | 'jamb';
 export type TestStatus = 'checked' | 'demo';
 
@@ -637,6 +641,11 @@ export const REASONING_SHARE_RECEIVERS: ExamSlug[] = [
   'ssc-cgl', 'ssc-chsl',
   'ibps-rrb-office-assistant', 'ibps-rrb-officer-scale-1',
 ];
+
+const DSSSB_TGT_2025_NOTIFICATION = 'https://dsssb.delhi.gov.in/';
+const HTET_2025_NOTIFICATION = 'https://bseh.org.in/';
+const KVS_PRT_2025_NOTIFICATION = 'https://www.cbse.gov.in/cbsenew/recruitment.html';
+const NVS_TGT_2025_NOTIFICATION = 'https://www.cbse.gov.in/cbsenew/recruitment.html';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -13431,6 +13440,187 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'utme-mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', section: 'Mathematics', status: 'checked', duration: 27, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '9 September 2026' },
           { id: 'utme-physics-sectional-1', name: 'Physics Sectional Test 1', kind: 'sectional', section: 'Physics', status: 'checked', duration: 27, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '9 September 2026' },
           { id: 'utme-chemistry-sectional-1', name: 'Chemistry Sectional Test 1', kind: 'sectional', section: 'Chemistry', status: 'checked', duration: 27, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '9 September 2026' },
+        ],
+      },
+    ],
+  },
+  'dsssb-teaching-recruitment': {
+    slug: 'dsssb-teaching-recruitment',
+    // Display name deliberately stops at "DSSSB TGT": the domain section is
+    // frozen as "Mathematics & Teaching Methodology/B.Ed.", so an exam name
+    // ending in "Mathematics" renders "DSSSB TGT Mathematics Mathematics &
+    // Teaching Methodology..." on that sectional, which audit-onpage-seo fails
+    // on. The subject stays in fullName and in the stage name.
+    name: 'DSSSB TGT',
+    shortName: 'DSSSB TGT',
+    fullName: 'DSSSB TGT Mathematics (Advt. 06/2025) Tier 1',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'tgt-mathematics',
+        name: 'TGT Mathematics One-Tier Technical',
+        pattern: {
+          status: 'official',
+          cycle: '2025',
+          sections: ['Arithmetical & Numerical Ability', 'Mathematics & Teaching Methodology/B.Ed.', 'English Language & Comprehension', 'General Awareness', 'Hindi Language & Comprehension', 'General Intelligence & Reasoning Ability'],
+          totalQuestions: 200,
+          totalMarks: 200,
+          duration: 120,
+          negativeMarking: 0.25,
+          sectionBreakdown: [
+            { name: 'Arithmetical & Numerical Ability', questions: 20, marks: 20 },
+            { name: 'Mathematics & Teaching Methodology/B.Ed.', questions: 100, marks: 100 },
+            { name: 'English Language & Comprehension', questions: 20, marks: 20 },
+            { name: 'General Awareness', questions: 20, marks: 20 },
+            { name: 'Hindi Language & Comprehension', questions: 20, marks: 20 },
+            { name: 'General Intelligence & Reasoning Ability', questions: 20, marks: 20 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer covering every section, matching Delhi Subordinate Services Selection Board\'s own conduct of a single computer-based objective paper; there is no official sectional lock.',
+          note: 'DSSSB conducts this as a one-tier technical/teaching examination of 200 objective questions for 200 marks in 120 minutes, with 1 mark for a correct answer and 0.25 deducted for a wrong one. The 100-question Mathematics and Teaching Methodology block carries half the paper. DSSSB does not publish per-section time limits, so the sectional durations on this site are TakeMockTest practice allowances in proportion to each section’s question share, not official figures.',
+          sourceUrl: DSSSB_TGT_2025_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'tgt-mathematics-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-arithmetic-sectional-1', name: 'Arithmetical & Numerical Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Arithmetical & Numerical Ability', duration: 12, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-domain-sectional-1', name: 'Mathematics & Teaching Methodology/B.Ed. Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics & Teaching Methodology/B.Ed.', duration: 60, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-english-sectional-1', name: 'English Language & Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Language & Comprehension', duration: 12, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-general-awareness-sectional-1', name: 'General Awareness Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Awareness', duration: 12, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-hindi-sectional-1', name: 'Hindi Language & Comprehension Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Hindi Language & Comprehension', duration: 12, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-reasoning-sectional-1', name: 'General Intelligence & Reasoning Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Intelligence & Reasoning Ability', duration: 12, marksPerCorrect: 1, negativeMarking: 0.25, checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'htet': {
+    slug: 'htet',
+    name: 'HTET',
+    shortName: 'HTET',
+    fullName: 'Haryana Teacher Eligibility Test 2025: Level 1 (PRT)',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'level-1-prt',
+        name: 'Level 1 (PRT)',
+        pattern: {
+          status: 'official',
+          cycle: '2025',
+          sections: ['Child Development & Pedagogy', 'English Language', 'Environmental Studies', 'Haryana GK & Awareness', 'Hindi Language', 'Mathematics', 'Quantitative Aptitude', 'Reasoning Ability'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Child Development & Pedagogy', questions: 30, marks: 30 },
+            { name: 'English Language', questions: 15, marks: 15 },
+            { name: 'Environmental Studies', questions: 30, marks: 30 },
+            { name: 'Haryana GK & Awareness', questions: 10, marks: 10 },
+            { name: 'Hindi Language', questions: 15, marks: 15 },
+            { name: 'Mathematics', questions: 30, marks: 30 },
+            { name: 'Quantitative Aptitude', questions: 10, marks: 10 },
+            { name: 'Reasoning Ability', questions: 10, marks: 10 },
+          ],
+          timerNote: 'Single unrestricted 150-minute timer covering every section, matching Board of School Education Haryana\'s own conduct of a pen-and-paper OMR eligibility test; there is no official sectional lock.',
+          note: 'HTET Level 1 qualifies a candidate to teach Classes I to V. The paper is 150 objective questions for 150 marks in 150 minutes with no negative marking, so an unanswered question and a wrong one both score zero. The Board does not publish per-section time limits, so the sectional durations here are TakeMockTest practice allowances in proportion to each section’s question share, not official figures.',
+          sourceUrl: HTET_2025_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'level-1-prt-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-child-development-sectional-1', name: 'Child Development & Pedagogy Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Child Development & Pedagogy', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-english-sectional-1', name: 'English Language Sectional Test 1', kind: 'sectional', status: 'checked', section: 'English Language', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-evs-sectional-1', name: 'Environmental Studies Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Environmental Studies', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-haryana-gk-sectional-1', name: 'Haryana GK & Awareness Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Haryana GK & Awareness', duration: 10, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-hindi-sectional-1', name: 'Hindi Language Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Hindi Language', duration: 15, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-quantitative-aptitude-sectional-1', name: 'Quantitative Aptitude Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Quantitative Aptitude', duration: 10, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'level-1-prt-reasoning-sectional-1', name: 'Reasoning Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Reasoning Ability', duration: 10, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'kvs-teaching-recruitment': {
+    slug: 'kvs-teaching-recruitment',
+    name: 'KVS PRT',
+    shortName: 'KVS PRT',
+    fullName: 'KVS Primary Teacher (Recruitment 01/2025) Tier 1',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'prt-tier-1',
+        name: 'PRT Tier 1',
+        pattern: {
+          status: 'official',
+          cycle: '2025',
+          sections: ['Basic Computer Literacy', 'Language Competency Test (English)', 'General Knowledge', 'General Reasoning', 'Language Competency Test (Hindi)', 'Numeric Ability'],
+          totalQuestions: 100,
+          totalMarks: 300,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Basic Computer Literacy', questions: 20, marks: 60 },
+            { name: 'Language Competency Test (English)', questions: 10, marks: 30 },
+            { name: 'General Knowledge', questions: 20, marks: 60 },
+            { name: 'General Reasoning', questions: 20, marks: 60 },
+            { name: 'Language Competency Test (Hindi)', questions: 10, marks: 30 },
+            { name: 'Numeric Ability', questions: 20, marks: 60 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer covering every section, matching Kendriya Vidyalaya Sangathan\'s own conduct of an OMR objective paper; there is no official sectional lock.',
+          note: 'KVS PRT Tier 1 is 100 objective questions for 300 marks in 120 minutes: every question carries 3 marks and a wrong answer deducts 1 mark, with multiple responses treated as wrong. An unanswered question scores zero. KVS does not publish per-section time limits, so the sectional durations here are TakeMockTest practice allowances in proportion to each section’s question share, not official figures.',
+          sourceUrl: KVS_PRT_2025_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'prt-tier-1-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'prt-tier-1-computer-literacy-sectional-1', name: 'Basic Computer Literacy Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Basic Computer Literacy', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'prt-tier-1-english-sectional-1', name: 'Language Competency Test (English) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Competency Test (English)', duration: 12, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'prt-tier-1-general-knowledge-sectional-1', name: 'General Knowledge Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Knowledge', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'prt-tier-1-general-reasoning-sectional-1', name: 'General Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Reasoning', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'prt-tier-1-hindi-sectional-1', name: 'Language Competency Test (Hindi) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Competency Test (Hindi)', duration: 12, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'prt-tier-1-numeric-ability-sectional-1', name: 'Numeric Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numeric Ability', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'nvs-teaching-recruitment': {
+    slug: 'nvs-teaching-recruitment',
+    name: 'NVS TGT Mathematics',
+    shortName: 'NVS TGT',
+    fullName: 'NVS TGT Mathematics (Recruitment 01/2025) Tier 1',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'tgt-mathematics-tier-1',
+        name: 'TGT Mathematics Tier 1',
+        pattern: {
+          status: 'official',
+          cycle: '2025',
+          sections: ['Basic Computer Literacy', 'Language Competency Test (English)', 'General Knowledge', 'General Reasoning', 'Language Competency Test (Hindi)', 'Numeric Ability'],
+          totalQuestions: 100,
+          totalMarks: 300,
+          duration: 120,
+          negativeMarking: 1,
+          sectionBreakdown: [
+            { name: 'Basic Computer Literacy', questions: 20, marks: 60 },
+            { name: 'Language Competency Test (English)', questions: 10, marks: 30 },
+            { name: 'General Knowledge', questions: 20, marks: 60 },
+            { name: 'General Reasoning', questions: 20, marks: 60 },
+            { name: 'Language Competency Test (Hindi)', questions: 10, marks: 30 },
+            { name: 'Numeric Ability', questions: 20, marks: 60 },
+          ],
+          timerNote: 'Single unrestricted 120-minute timer covering every section, matching Navodaya Vidyalaya Samiti\'s own conduct of an OMR objective paper; there is no official sectional lock.',
+          note: 'NVS TGT Tier 1 is 100 objective questions for 300 marks in 120 minutes: every question carries 3 marks and a wrong answer deducts 1 mark, with multiple responses treated as wrong. An unanswered question scores zero. This site covers the Tier 1 common paper; the subject-specific Tier 2 stage is not built here. NVS does not publish per-section time limits, so the sectional durations here are TakeMockTest practice allowances in proportion to each section’s question share, not official figures.',
+          sourceUrl: NVS_TGT_2025_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'tgt-mathematics-tier-1-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 120, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-tier-1-computer-literacy-sectional-1', name: 'Basic Computer Literacy Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Basic Computer Literacy', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-tier-1-english-sectional-1', name: 'Language Competency Test (English) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Competency Test (English)', duration: 12, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-tier-1-general-knowledge-sectional-1', name: 'General Knowledge Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Knowledge', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-tier-1-general-reasoning-sectional-1', name: 'General Reasoning Sectional Test 1', kind: 'sectional', status: 'checked', section: 'General Reasoning', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-tier-1-hindi-sectional-1', name: 'Language Competency Test (Hindi) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language Competency Test (Hindi)', duration: 12, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
+          { id: 'tgt-mathematics-tier-1-numeric-ability-sectional-1', name: 'Numeric Ability Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Numeric Ability', duration: 24, marksPerCorrect: 3, negativeMarking: 1, checkedOn: '10 September 2026' },
         ],
       },
     ],

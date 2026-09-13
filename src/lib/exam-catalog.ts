@@ -453,12 +453,12 @@ export const EXAM_CATEGORIES: ExamCatalogCategory[] = [
       {
         name: 'Teacher recruitment',
         exams: [
-          exam('KVS Teaching Recruitment', 'National'),
-          exam('NVS Teaching Recruitment', 'National'),
-          exam('DSSSB Teaching Recruitment', 'State'),
+          exam('KVS Teaching Recruitment', 'National', 'kvs-teaching-recruitment'),
+          exam('NVS Teaching Recruitment', 'National', 'nvs-teaching-recruitment'),
+          exam('DSSSB Teaching Recruitment', 'State', 'dsssb-teaching-recruitment'),
           exam('REET', 'State'),
           exam('UPTET', 'State'),
-          exam('HTET', 'State'),
+          exam('HTET', 'State', 'htet'),
         ],
       },
     ],
