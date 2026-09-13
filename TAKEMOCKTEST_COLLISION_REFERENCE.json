@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-13",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 867,
-    "questions": 34310
+    "bankFiles": 873,
+    "questions": 34610
   },
   "topicSaturation": [
     {
@@ -5195,6 +5195,21 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Geometry",
+      "questionCount": 17,
+      "examCount": 7,
+      "exams": [
+        "agniveer-vayu",
+        "ctet-sep",
+        "jharkhand-pece",
+        "rrb-alp",
+        "rrb-technician",
+        "tg-polycet",
+        "uptet-2026"
+      ]
+    },
+    {
       "section": "Physics",
       "topic": "Mechanical Properties of Solids",
       "questionCount": 17,
@@ -5785,20 +5800,6 @@
         "met-2026",
         "nerist-nee",
         "special-ojee"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Geometry",
-      "questionCount": 14,
-      "examCount": 6,
-      "exams": [
-        "agniveer-vayu",
-        "ctet-sep",
-        "jharkhand-pece",
-        "rrb-alp",
-        "rrb-technician",
-        "tg-polycet"
       ]
     },
     {
@@ -7170,6 +7171,18 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Decimals",
+      "questionCount": 14,
+      "examCount": 4,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "rrb-ntpc",
+        "uptet-2026"
+      ]
+    },
+    {
       "section": "English Language",
       "topic": "Grammar",
       "questionCount": 14,
@@ -7227,6 +7240,18 @@
         "dsssb-tgt",
         "rrb-je",
         "ssc-selection"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Fractions",
+      "questionCount": 13,
+      "examCount": 4,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "rrb-ntpc",
+        "uptet-2026"
       ]
     },
     {
@@ -8107,28 +8132,6 @@
     },
     {
       "section": "Mathematics",
-      "topic": "Fractions",
-      "questionCount": 12,
-      "examCount": 3,
-      "exams": [
-        "ctet-sep",
-        "htet-2025",
-        "rrb-ntpc"
-      ]
-    },
-    {
-      "section": "Mathematics",
-      "topic": "Decimals",
-      "questionCount": 12,
-      "examCount": 3,
-      "exams": [
-        "ctet-sep",
-        "htet-2025",
-        "rrb-ntpc"
-      ]
-    },
-    {
-      "section": "Mathematics",
       "topic": "Simple and Compound Interest",
       "questionCount": 12,
       "examCount": 3,
@@ -8777,6 +8780,17 @@
       ]
     },
     {
+      "section": "Mathematics",
+      "topic": "Data handling",
+      "questionCount": 4,
+      "examCount": 3,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "uptet-2026"
+      ]
+    },
+    {
       "section": "English Language",
       "topic": "Conjunctions",
       "questionCount": 4,
@@ -9093,6 +9107,72 @@
         "cg-ppt",
         "jamb-utme",
         "srmjeee-2026"
+      ]
+    },
+    {
+      "section": "Environmental Studies",
+      "topic": "Plants",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "uptet-2026"
+      ]
+    },
+    {
+      "section": "Environmental Studies",
+      "topic": "Water cycle",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "uptet-2026"
+      ]
+    },
+    {
+      "section": "Environmental Studies",
+      "topic": "Nutrition",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "uptet-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Measurement",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "uptet-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Time",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "uptet-2026"
+      ]
+    },
+    {
+      "section": "Mathematics",
+      "topic": "Money",
+      "questionCount": 3,
+      "examCount": 3,
+      "exams": [
+        "ctet-sep",
+        "htet-2025",
+        "uptet-2026"
       ]
     },
     {
@@ -10292,6 +10372,25 @@
       ]
     },
     {
+      "opening": "choose the sentence with correct subject",
+      "examCount": 13,
+      "exams": [
+        "aeee-2026",
+        "ctet-sep",
+        "inet-english",
+        "kmat-karnataka",
+        "kvs-prt",
+        "mah-bhmct",
+        "mat-language",
+        "met-2026",
+        "micat-va",
+        "srmjeee-2026",
+        "tancet-mba",
+        "uptet-2026",
+        "viteee-2026"
+      ]
+    },
+    {
       "opening": "which of the following best describes",
       "examCount": 13,
       "exams": [
@@ -10308,24 +10407,6 @@
         "srmjeee-2026",
         "ssc-je",
         "wbjee-engineering"
-      ]
-    },
-    {
-      "opening": "choose the sentence with correct subject",
-      "examCount": 12,
-      "exams": [
-        "aeee-2026",
-        "ctet-sep",
-        "inet-english",
-        "kmat-karnataka",
-        "kvs-prt",
-        "mah-bhmct",
-        "mat-language",
-        "met-2026",
-        "micat-va",
-        "srmjeee-2026",
-        "tancet-mba",
-        "viteee-2026"
       ]
     },
     {

@@ -173,6 +173,8 @@ export type ExamSlug =
   | 'ca-intermediate'
   | 'cma-final'
   | 'cma-intermediate'
+  | 'uptet'
+  | 'upsc-engineering-services'
   | 'jamb';
 export type TestStatus = 'checked' | 'demo';
 
@@ -660,6 +662,9 @@ const ICAI_FINAL_2026_SCHEME = 'https://www.icai.org/post/final-nset';
 const ICAI_INTERMEDIATE_2026_SCHEME = 'https://www.icai.org/post/intermediate-nset';
 const ICMAI_FINAL_2026_SYLLABUS = 'https://icmai.in/';
 const ICMAI_INTERMEDIATE_2026_SYLLABUS = 'https://icmai.in/';
+
+const UPTET_2026_NOTIFICATION = 'https://upessc.up.gov.in/';
+const UPSC_ESE_2026_NOTIFICATION = 'https://www.upsc.gov.in/';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -13881,6 +13886,80 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'objective-components-direct-and-indirect-taxation-1', name: 'Direct and Indirect Taxation Objective Test 1', kind: 'sectional', status: 'checked', section: 'Direct and Indirect Taxation', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
           { id: 'objective-components-cost-accounting-1', name: 'Cost Accounting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Cost Accounting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
           { id: 'objective-components-operations-management-and-strategic-management-1', name: 'Operations Management and Strategic Management Objective Test 1', kind: 'sectional', status: 'checked', section: 'Operations Management and Strategic Management', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+        ],
+      },
+    ],
+  },
+'uptet': {
+    slug: 'uptet',
+    name: 'UPTET',
+    shortName: 'UPTET',
+    fullName: 'UPTET 2026: Paper I (Classes I to V)',
+    category: 'Teaching & Research',
+    stages: [
+      {
+        id: 'paper-1-primary',
+        name: 'Paper I (Primary)',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Child Development & Teaching Method', 'Language II: English', 'Environmental Studies', 'Hindi Language', 'Mathematics'],
+          totalQuestions: 150,
+          totalMarks: 150,
+          duration: 150,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Child Development & Teaching Method', questions: 30, marks: 30 },
+            { name: 'Language II: English', questions: 30, marks: 30 },
+            { name: 'Environmental Studies', questions: 30, marks: 30 },
+            { name: 'Hindi Language', questions: 30, marks: 30 },
+            { name: 'Mathematics', questions: 30, marks: 30 },
+          ],
+          timerNote: 'Single unrestricted 150-minute timer covering every section, matching the way UPESSC conducts Paper I as one pen-and-paper OMR sitting; there is no official sectional lock.',
+          note: 'UPTET Paper I qualifies a candidate to teach Classes I to V. The paper is 150 objective questions for 150 marks in 150 minutes with no negative marking, so a wrong answer and an unanswered one both score zero. Language I is Hindi and candidates choose Language II from English, Urdu or Sanskrit; this site configures Language II as English, which is a TakeMockTest product choice rather than an official restriction, and the Urdu and Sanskrit variants and Paper II are not built here. The pattern is marked review-pending because the UPESSC information booklet was read from a third-party mirror rather than directly from the commission\'s own site, which could be reached but not read for the booklet itself. UPESSC publishes no per-section time limits, so the sectional durations here are TakeMockTest practice allowances in proportion to each section\'s question share.',
+          sourceUrl: UPTET_2026_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'paper-1-primary-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 150, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'paper-1-primary-child-development-sectional-1', name: 'Child Development & Teaching Method Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Child Development & Teaching Method', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'paper-1-primary-english-sectional-1', name: 'Language II: English Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Language II: English', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'paper-1-primary-evs-sectional-1', name: 'Environmental Studies Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Environmental Studies', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'paper-1-primary-hindi-sectional-1', name: 'Hindi Language Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Hindi Language', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+          { id: 'paper-1-primary-mathematics-sectional-1', name: 'Mathematics Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Mathematics', duration: 30, marksPerCorrect: 1, negativeMarking: 0, checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+  'upsc-engineering-services': {
+    slug: 'upsc-engineering-services',
+    name: 'UPSC ESE',
+    shortName: 'UPSC ESE',
+    fullName: 'UPSC Engineering Services Examination 2026: Civil Engineering Prelims Paper II',
+    category: 'Engineering',
+    stages: [
+      {
+        id: 'civil-prelims-paper-2',
+        name: 'Stage I Prelims: Civil Engineering Paper II',
+        pattern: {
+          status: 'review-pending',
+          cycle: '2026',
+          sections: ['Civil Engineering Paper II'],
+          totalQuestions: 150,
+          totalMarks: 300,
+          duration: 180,
+          negativeMarking: 0.6666666666666666,
+          sectionBreakdown: [
+            { name: 'Civil Engineering Paper II', questions: 150, marks: 300 },
+          ],
+          timerNote: 'Single unrestricted 180-minute timer for the Civil Engineering Paper II objective paper, matching the official Stage I working time.',
+          note: 'TakeMockTest covers the Stage I Preliminary Civil Engineering Paper II objective paper only. The 300 marks and the 180-minute duration are fixed directly by the UPSC 2026 notice, and marking is 2 marks for a correct answer with one third of that, 0.667 marks, deducted for a wrong one; multiple responses count as wrong and an unattempted question scores zero. The pattern is marked review-pending because the 150-question count is corroborated from the actual current-cycle paper rather than stated in the notice itself. The common 200-mark Paper I on General Studies and Engineering Aptitude is deliberately excluded: it requires current issues of national and international importance, which this site does not self-author. The Stage II descriptive papers and the Personality Test are also out of scope.',
+          sourceUrl: UPSC_ESE_2026_NOTIFICATION,
+          checkedOn: '10 September 2026',
+        },
+        tests: [
+          { id: 'civil-prelims-paper-2-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 2, negativeMarking: 0.6666666666666666, checkedOn: '10 September 2026' },
+          { id: 'civil-prelims-paper-2-civil-engineering-sectional-1', name: 'Civil Engineering Paper II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Civil Engineering Paper II', duration: 180, marksPerCorrect: 2, negativeMarking: 0.6666666666666666, checkedOn: '10 September 2026' },
         ],
       },
     ],

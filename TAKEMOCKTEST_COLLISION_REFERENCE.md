@@ -1,6 +1,6 @@
 # TakeMockTest Collision Reference
 
-Generated: 2026-09-13 from 867 bank files / 34310 questions.
+Generated: 2026-09-13 from 873 bank files / 34610 questions.
 
 Regenerate with `node scripts/generate-collision-reference.mjs` after any integration that adds or changes question banks. Attach this file (or the JSON) to a ChatGPT Writer prompt for a subject that overlaps an already-live exam (Reasoning, Quantitative Aptitude, General Awareness/GK, English are the highest-overlap subjects on this site).
 
@@ -119,8 +119,8 @@ Not necessarily duplicates, but worth a manual glance before reusing a similar o
 | for a first order reaction the | aiims-bsc, cg-pet, comedk-uget, imu-cet, jcece-2026, jee-main, kcet-engineering, keam-2026, lpunest-2026, met-2026, neet-ug, special-ojee, srmjeee-2026, wbjee-engineering (14) |
 | choose the word most opposite in | ibps-rrb, ibps-so, lic-aao, nabard-grade, niacl-ao, rbi-assistant, rbi-grade, sbi-clerk, sebi-grade, sidbi-grade, ssc-cpo, ssc-gd, ssc-mts, ssc-steno (14) |
 | what is the slope of the | act-math, aeee-2026, atit-2026, imu-cet, jain-jet, jee-main, kcet-engineering, met-2026, mht-cet, nmims-cet, sat-math, srmjeee-2026, viteee-2026 (13) |
+| choose the sentence with correct subject | aeee-2026, ctet-sep, inet-english, kmat-karnataka, kvs-prt, mah-bhmct, mat-language, met-2026, micat-va, srmjeee-2026, tancet-mba, uptet-2026, viteee-2026 (13) |
 | which of the following best describes | bitsat-2026, ibps-clerk, ibps-po, ibps-rrb, ibsat-verbal, rbi-assistant, rbi-grade, rrb-technician, sbi-po, sidbi-grade, srmjeee-2026, ssc-je, wbjee-engineering (13) |
-| choose the sentence with correct subject | aeee-2026, ctet-sep, inet-english, kmat-karnataka, kvs-prt, mah-bhmct, mat-language, met-2026, micat-va, srmjeee-2026, tancet-mba, viteee-2026 (12) |
 | a 4 kg block on a | aeee-2026, ap-eapcet, cg-pet, cusat-cat, iemjee-2026, iiit-hyderabad, kcet-engineering, mht-cet, saeee-2026, srmjeee-2026, tg-eapcet, wbjee-engineering (12) |
 | choose the word most nearly opposite | aeee-2026, cuet-pg, cuet-ug, dbt-bet, dsssb-tgt, gate-2026, ibps-clerk, ibps-so, sbi-clerk, sbi-po, srmjeee-2026, ssc-chsl (12) |
 | for what value of k is | aeee-2026, atit-2026, cusat-cat, dsssb-tgt, gujcet-2026, iemjee-2026, imu-cet, jain-jet, kcet-engineering, mht-cet, upeseat-2026, wbjee-engineering (12) |
