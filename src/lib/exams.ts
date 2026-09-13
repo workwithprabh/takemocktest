@@ -169,6 +169,10 @@ export type ExamSlug =
   | 'nvs-teaching-recruitment'
   | 'upsc-combined-geo-scientist'
   | 'upsc-ies-iss'
+  | 'ca-final'
+  | 'ca-intermediate'
+  | 'cma-final'
+  | 'cma-intermediate'
   | 'jamb';
 export type TestStatus = 'checked' | 'demo';
 
@@ -651,6 +655,11 @@ const NVS_TGT_2025_NOTIFICATION = 'https://www.cbse.gov.in/cbsenew/recruitment.h
 
 const UPSC_GEO_SCIENTIST_2027_NOTIFICATION = 'https://www.upsc.gov.in/';
 const UPSC_ISS_2026_NOTIFICATION = 'https://www.upsc.gov.in/';
+
+const ICAI_FINAL_2026_SCHEME = 'https://www.icai.org/post/final-nset';
+const ICAI_INTERMEDIATE_2026_SCHEME = 'https://www.icai.org/post/intermediate-nset';
+const ICMAI_FINAL_2026_SYLLABUS = 'https://icmai.in/';
+const ICMAI_INTERMEDIATE_2026_SYLLABUS = 'https://icmai.in/';
 
 export const EXAMS: Record<ExamSlug, ExamConfig> = {
   'ssc-cgl': {
@@ -13694,6 +13703,184 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           { id: 'iss-objective-statistics-1-2-full-mock-1', name: 'Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 240, timingGroups: [{ sections: ['Statistics-I'], duration: 120 }, { sections: ['Statistics-II'], duration: 120 }], marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
           { id: 'iss-objective-statistics-1-2-paper-1-sectional-1', name: 'Statistics-I Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics-I', duration: 120, marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
           { id: 'iss-objective-statistics-1-2-paper-2-sectional-1', name: 'Statistics-II Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Statistics-II', duration: 120, marksPerCorrect: 2.5, negativeMarking: 0.8333333333333334, checkedOn: '10 September 2026' },
+        ],
+      },
+    ],
+  },
+'ca-final': {
+    slug: 'ca-final',
+    name: 'CA Final',
+    shortName: 'CA Final',
+    fullName: 'ICAI CA Final (New Scheme) 2026: Objective Components',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'objective-components-papers-1-5',
+        name: 'Objective Components (Papers 1 to 5)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Financial Reporting', 'Advanced Financial Management', 'Advanced Auditing, Assurance and Professional Ethics', 'Direct Tax Laws and International Taxation', 'Indirect Tax Laws'],
+          totalQuestions: 75,
+          totalMarks: 150,
+          duration: 270,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Financial Reporting', questions: 15, marks: 30 },
+            { name: 'Advanced Financial Management', questions: 15, marks: 30 },
+            { name: 'Advanced Auditing, Assurance and Professional Ethics', questions: 15, marks: 30 },
+            { name: 'Direct Tax Laws and International Taxation', questions: 15, marks: 30 },
+            { name: 'Indirect Tax Laws', questions: 15, marks: 30 },
+          ],
+          timerNote: 'Each paper\'s objective block runs on its own 54-minute practice timer here; there is no combined sitting, because ICAI sets these papers separately.',
+          note: 'These figures are TakeMockTest\'s coverage across 5 separately sat papers, not an official combined paper, and no candidate sits 75 questions in one session. The Institute of Chartered Accountants of India sets each paper on its own: Section A of every paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all with no negative marking and four options per question, inside that paper\'s own 180-minute, 100-mark window where the remaining 70 marks are descriptive. This site builds only those objective blocks; the descriptive 70 marks are not reproduced. The 75-question and 150-mark totals above are simply 5 of those blocks added together, and the 270-minute total is 5 times the 54-minute practice allowance described on each test, which is 30 per cent of the official 180 minutes and not an ICAI sectional time limit. For taxation, company law and other amendment-sensitive material, questions follow the provisions ICAI states as applicable to the relevant 2026 attempt.',
+          sourceUrl: ICAI_FINAL_2026_SCHEME,
+          checkedOn: '9 September 2026',
+        },
+        tests: [
+          { id: 'objective-components-papers-1-5-financial-reporting-1', name: 'Financial Reporting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Financial Reporting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-papers-1-5-advanced-financial-management-1', name: 'Advanced Financial Management Objective Test 1', kind: 'sectional', status: 'checked', section: 'Advanced Financial Management', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-papers-1-5-advanced-auditing-assurance-and-professional-eth-1', name: 'Advanced Auditing, Assurance and Professional Ethics Objective Test 1', kind: 'sectional', status: 'checked', section: 'Advanced Auditing, Assurance and Professional Ethics', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-papers-1-5-direct-tax-laws-and-international-taxation-1', name: 'Direct Tax Laws and International Taxation Objective Test 1', kind: 'sectional', status: 'checked', section: 'Direct Tax Laws and International Taxation', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-papers-1-5-indirect-tax-laws-1', name: 'Indirect Tax Laws Objective Test 1', kind: 'sectional', status: 'checked', section: 'Indirect Tax Laws', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+        ],
+      },
+    ],
+  },
+  'ca-intermediate': {
+    slug: 'ca-intermediate',
+    name: 'CA Intermediate',
+    shortName: 'CA Inter',
+    fullName: 'ICAI CA Intermediate (New Scheme) 2026: Objective Components',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'objective-components',
+        name: 'Objective Components',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Advanced Accounting', 'Corporate and Other Laws', 'Taxation', 'Cost and Management Accounting', 'Auditing and Ethics', 'Financial Management and Strategic Management'],
+          totalQuestions: 90,
+          totalMarks: 180,
+          duration: 324,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Advanced Accounting', questions: 15, marks: 30 },
+            { name: 'Corporate and Other Laws', questions: 15, marks: 30 },
+            { name: 'Taxation', questions: 15, marks: 30 },
+            { name: 'Cost and Management Accounting', questions: 15, marks: 30 },
+            { name: 'Auditing and Ethics', questions: 15, marks: 30 },
+            { name: 'Financial Management and Strategic Management', questions: 15, marks: 30 },
+          ],
+          timerNote: 'Each paper\'s objective block runs on its own 54-minute practice timer here; there is no combined sitting, because ICAI sets these papers separately.',
+          note: 'These figures are TakeMockTest\'s coverage across 6 separately sat papers, not an official combined paper, and no candidate sits 90 questions in one session. The Institute of Chartered Accountants of India sets each paper on its own: Section A of every paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all with no negative marking and four options per question, inside that paper\'s own 180-minute, 100-mark window where the remaining 70 marks are descriptive. This site builds only those objective blocks; the descriptive 70 marks are not reproduced. The 90-question and 180-mark totals above are simply 6 of those blocks added together, and the 324-minute total is 6 times the 54-minute practice allowance described on each test, which is 30 per cent of the official 180 minutes and not an ICAI sectional time limit. For taxation, company law and other amendment-sensitive material, questions follow the provisions ICAI states as applicable to the relevant 2026 attempt.',
+          sourceUrl: ICAI_INTERMEDIATE_2026_SCHEME,
+          checkedOn: '9 September 2026',
+        },
+        tests: [
+          { id: 'objective-components-advanced-accounting-1', name: 'Advanced Accounting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Advanced Accounting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-corporate-and-other-laws-1', name: 'Corporate and Other Laws Objective Test 1', kind: 'sectional', status: 'checked', section: 'Corporate and Other Laws', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-taxation-1', name: 'Taxation Objective Test 1', kind: 'sectional', status: 'checked', section: 'Taxation', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-cost-and-management-accounting-1', name: 'Cost and Management Accounting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Cost and Management Accounting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-auditing-and-ethics-1', name: 'Auditing and Ethics Objective Test 1', kind: 'sectional', status: 'checked', section: 'Auditing and Ethics', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-financial-management-and-strategic-management-1', name: 'Financial Management and Strategic Management Objective Test 1', kind: 'sectional', status: 'checked', section: 'Financial Management and Strategic Management', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICAI sectional timer.', checkedOn: '9 September 2026' },
+        ],
+      },
+    ],
+  },
+  'cma-final': {
+    slug: 'cma-final',
+    name: 'CMA Final',
+    shortName: 'CMA Final',
+    fullName: 'ICMAI CMA Final (Syllabus 2022) 2026: Objective Components',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'objective-components',
+        name: 'Objective Components (Section A)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Corporate and Economic Laws', 'Strategic Financial Management', 'Direct Tax Laws and International Taxation', 'Strategic Cost Management', 'Cost and Management Audit', 'Corporate Financial Reporting', 'Indirect Tax Laws and Practice', 'Strategic Performance Management and Business Valuation', 'Risk Management in Banking and Insurance', 'Entrepreneurship and Startup'],
+          totalQuestions: 150,
+          totalMarks: 300,
+          duration: 540,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Corporate and Economic Laws', questions: 15, marks: 30 },
+            { name: 'Strategic Financial Management', questions: 15, marks: 30 },
+            { name: 'Direct Tax Laws and International Taxation', questions: 15, marks: 30 },
+            { name: 'Strategic Cost Management', questions: 15, marks: 30 },
+            { name: 'Cost and Management Audit', questions: 15, marks: 30 },
+            { name: 'Corporate Financial Reporting', questions: 15, marks: 30 },
+            { name: 'Indirect Tax Laws and Practice', questions: 15, marks: 30 },
+            { name: 'Strategic Performance Management and Business Valuation', questions: 15, marks: 30 },
+            { name: 'Risk Management in Banking and Insurance', questions: 15, marks: 30 },
+            { name: 'Entrepreneurship and Startup', questions: 15, marks: 30 },
+          ],
+          timerNote: 'Each paper\'s objective block runs on its own 54-minute practice timer here; there is no combined sitting, because ICMAI sets these papers separately.',
+          note: 'These figures are TakeMockTest\'s coverage across 10 separately sat papers, not an official combined paper, and no candidate sits 150 questions in one session. The Institute of Cost Accountants of India sets each paper on its own: Section A of every paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all with no negative marking and four options per question, inside that paper\'s own 180-minute, 100-mark window where the remaining 70 marks are descriptive. This site builds only those objective blocks; the descriptive 70 marks are not reproduced. The 150-question and 300-mark totals above are simply 10 of those blocks added together, and the 540-minute total is 10 times the 54-minute practice allowance described on each test, which is 30 per cent of the official 180 minutes and not an ICMAI sectional time limit. For taxation, company law and other amendment-sensitive material, questions follow the provisions ICMAI states as applicable to the relevant 2026 attempt.',
+          sourceUrl: ICMAI_FINAL_2026_SYLLABUS,
+          checkedOn: '9 September 2026',
+        },
+        tests: [
+          { id: 'objective-components-corporate-and-economic-laws-1', name: 'Corporate and Economic Laws Objective Test 1', kind: 'sectional', status: 'checked', section: 'Corporate and Economic Laws', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-strategic-financial-management-1', name: 'Strategic Financial Management Objective Test 1', kind: 'sectional', status: 'checked', section: 'Strategic Financial Management', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-direct-tax-laws-and-international-taxation-1', name: 'Direct Tax Laws and International Taxation Objective Test 1', kind: 'sectional', status: 'checked', section: 'Direct Tax Laws and International Taxation', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-strategic-cost-management-1', name: 'Strategic Cost Management Objective Test 1', kind: 'sectional', status: 'checked', section: 'Strategic Cost Management', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-cost-and-management-audit-1', name: 'Cost and Management Audit Objective Test 1', kind: 'sectional', status: 'checked', section: 'Cost and Management Audit', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-corporate-financial-reporting-1', name: 'Corporate Financial Reporting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Corporate Financial Reporting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-indirect-tax-laws-and-practice-1', name: 'Indirect Tax Laws and Practice Objective Test 1', kind: 'sectional', status: 'checked', section: 'Indirect Tax Laws and Practice', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-strategic-performance-management-and-business-va-1', name: 'Strategic Performance Management and Business Valuation Objective Test 1', kind: 'sectional', status: 'checked', section: 'Strategic Performance Management and Business Valuation', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-risk-management-in-banking-and-insurance-1', name: 'Risk Management in Banking and Insurance Objective Test 1', kind: 'sectional', status: 'checked', section: 'Risk Management in Banking and Insurance', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-entrepreneurship-and-startup-1', name: 'Entrepreneurship and Startup Objective Test 1', kind: 'sectional', status: 'checked', section: 'Entrepreneurship and Startup', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+        ],
+      },
+    ],
+  },
+  'cma-intermediate': {
+    slug: 'cma-intermediate',
+    name: 'CMA Intermediate',
+    shortName: 'CMA Inter',
+    fullName: 'ICMAI CMA Intermediate (Syllabus 2022) 2026: Objective Components',
+    category: 'Finance',
+    stages: [
+      {
+        id: 'objective-components',
+        name: 'Objective Components (Section A)',
+        pattern: {
+          status: 'official',
+          cycle: '2026',
+          sections: ['Corporate Accounting and Auditing', 'Financial Management and Business Data Analytics', 'Management Accounting', 'Business Laws and Ethics', 'Financial Accounting', 'Direct and Indirect Taxation', 'Cost Accounting', 'Operations Management and Strategic Management'],
+          totalQuestions: 120,
+          totalMarks: 240,
+          duration: 432,
+          negativeMarking: 0,
+          sectionBreakdown: [
+            { name: 'Corporate Accounting and Auditing', questions: 15, marks: 30 },
+            { name: 'Financial Management and Business Data Analytics', questions: 15, marks: 30 },
+            { name: 'Management Accounting', questions: 15, marks: 30 },
+            { name: 'Business Laws and Ethics', questions: 15, marks: 30 },
+            { name: 'Financial Accounting', questions: 15, marks: 30 },
+            { name: 'Direct and Indirect Taxation', questions: 15, marks: 30 },
+            { name: 'Cost Accounting', questions: 15, marks: 30 },
+            { name: 'Operations Management and Strategic Management', questions: 15, marks: 30 },
+          ],
+          timerNote: 'Each paper\'s objective block runs on its own 54-minute practice timer here; there is no combined sitting, because ICMAI sets these papers separately.',
+          note: 'These figures are TakeMockTest\'s coverage across 8 separately sat papers, not an official combined paper, and no candidate sits 120 questions in one session. The Institute of Cost Accountants of India sets each paper on its own: Section A of every paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all with no negative marking and four options per question, inside that paper\'s own 180-minute, 100-mark window where the remaining 70 marks are descriptive. This site builds only those objective blocks; the descriptive 70 marks are not reproduced. The 120-question and 240-mark totals above are simply 8 of those blocks added together, and the 432-minute total is 8 times the 54-minute practice allowance described on each test, which is 30 per cent of the official 180 minutes and not an ICMAI sectional time limit. For taxation, company law and other amendment-sensitive material, questions follow the provisions ICMAI states as applicable to the relevant 2026 attempt.',
+          sourceUrl: ICMAI_INTERMEDIATE_2026_SYLLABUS,
+          checkedOn: '9 September 2026',
+        },
+        tests: [
+          { id: 'objective-components-corporate-accounting-and-auditing-1', name: 'Corporate Accounting and Auditing Objective Test 1', kind: 'sectional', status: 'checked', section: 'Corporate Accounting and Auditing', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-financial-management-and-business-data-analytics-1', name: 'Financial Management and Business Data Analytics Objective Test 1', kind: 'sectional', status: 'checked', section: 'Financial Management and Business Data Analytics', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-management-accounting-1', name: 'Management Accounting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Management Accounting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-business-laws-and-ethics-1', name: 'Business Laws and Ethics Objective Test 1', kind: 'sectional', status: 'checked', section: 'Business Laws and Ethics', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-financial-accounting-1', name: 'Financial Accounting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Financial Accounting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-direct-and-indirect-taxation-1', name: 'Direct and Indirect Taxation Objective Test 1', kind: 'sectional', status: 'checked', section: 'Direct and Indirect Taxation', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-cost-accounting-1', name: 'Cost Accounting Objective Test 1', kind: 'sectional', status: 'checked', section: 'Cost Accounting', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
+          { id: 'objective-components-operations-management-and-strategic-management-1', name: 'Operations Management and Strategic Management Objective Test 1', kind: 'sectional', status: 'checked', section: 'Operations Management and Strategic Management', duration: 54, marksPerCorrect: 2, negativeMarking: 0, scoringNote: 'Section A of this paper is 15 compulsory multiple-choice questions worth 2 marks each, 30 marks in all, with no negative marking. ICMAI sets those 15 questions inside the paper\'s own 180-minute, 100-mark window and publishes no separate time limit for them; the 54 minutes here is a TakeMockTest proportional allowance, 30 per cent of that 180 minutes, and not an ICMAI sectional timer.', checkedOn: '9 September 2026' },
         ],
       },
     ],
