@@ -2,8 +2,8 @@
   "generatedAt": "2026-09-13",
   "generatedBy": "scripts/generate-collision-reference.mjs",
   "corpus": {
-    "bankFiles": 835,
-    "questions": 33595
+    "bankFiles": 838,
+    "questions": 33875
   },
   "topicSaturation": [
     {
