@@ -1,0 +1,103 @@
+name: Sync Social Media Assets
+
+on:
+  push:
+    branches:
+      - social-assets
+    paths:
+      - "social-media/manifests/**.json"
+      - ".github/workflows/social-media-assets.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout social-assets branch
+        uses: actions/checkout@v4
+        with:
+          ref: social-assets
+
+      - name: Download public source images
+        shell: python
+        run: |
+          import glob
+          import json
+          import os
+          import sys
+          import urllib.request
+
+          PNG = b"\x89PNG\r\n\x1a\n"
+
+          def detect_ext(data: bytes):
+              if data.startswith(PNG):
+                  return ".png"
+              if data[:3] == b"\xff\xd8\xff":
+                  return ".jpg"
+              if len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+                  return ".webp"
+              return None
+
+          manifests = sorted(glob.glob("social-media/manifests/*.json"))
+          if not manifests:
+              print("No manifests found; nothing to sync.")
+              sys.exit(0)
+
+          for manifest_path in manifests:
+              with open(manifest_path, "r", encoding="utf-8") as f:
+                  manifest = json.load(f)
+
+              post_id = manifest["post_id"]
+              assets = manifest.get("assets", [])
+              if not assets:
+                  print(f"{post_id}: no assets listed")
+                  continue
+
+              out_dir = os.path.join("social-media", "hosted", post_id)
+              os.makedirs(out_dir, exist_ok=True)
+
+              for index, asset in enumerate(assets, start=1):
+                  source_url = asset["source_url"]
+                  requested_name = asset.get("filename")
+
+                  req = urllib.request.Request(
+                      source_url,
+                      headers={"User-Agent": "Mozilla/5.0 TakeMockTestSocialAssets/1.0"},
+                  )
+                  with urllib.request.urlopen(req, timeout=60) as response:
+                      data = response.read(12 * 1024 * 1024)
+
+                  if not data or len(data) > 10 * 1024 * 1024:
+                      raise RuntimeError(f"{post_id} asset {index}: invalid file size {len(data)}")
+
+                  detected_ext = detect_ext(data)
+                  if not detected_ext:
+                      raise RuntimeError(
+                          f"{post_id} asset {index}: source did not return PNG/JPEG/WebP bytes"
+                      )
+
+                  if requested_name:
+                      stem, ext = os.path.splitext(requested_name)
+                      filename = requested_name if ext.lower() in {".png", ".jpg", ".jpeg", ".webp"} else stem + detected_ext
+                  else:
+                      filename = f"slide-{index:02d}{detected_ext}"
+
+                  destination = os.path.join(out_dir, filename)
+                  with open(destination, "wb") as out:
+                      out.write(data)
+                  print(f"Hosted {post_id} asset {index}: {destination} ({len(data)} bytes)")
+
+      - name: Commit hosted images
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add social-media/hosted
+          if git diff --cached --quiet; then
+            echo "No asset changes to commit."
+            exit 0
+          fi
+          git commit -m "[social-assets] Sync hosted social media images"
+          git push origin social-assets
