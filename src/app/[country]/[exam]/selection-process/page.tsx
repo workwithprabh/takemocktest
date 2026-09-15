@@ -1,6 +1,7 @@
 import { COUNTRIES, getExam } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getExamGuide } from '@/lib/exam-guides';
+import { getSelectionProcessFaqs } from '@/lib/guide-faqs';
 import { notFound } from 'next/navigation';
 import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 import GuideBlocks from '@/components/GuideBlocks';
@@ -42,7 +43,7 @@ export default async function SelectionProcessPage({ params }: { params: Promise
 
   if (guide) {
     return (
-      <ExamInfoPageContent country={country} exam={exam} pageName="Selection Process" pageSlug="selection-process" heading={guide.heading}>
+      <ExamInfoPageContent country={country} exam={exam} pageName="Selection Process" pageSlug="selection-process" heading={guide.heading} faqs={guide ? getSelectionProcessFaqs(exam, guide, country) : undefined}>
         <GuideBlocks blocks={guide.blocks} />
       </ExamInfoPageContent>
     );
