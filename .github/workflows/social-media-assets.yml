@@ -20,25 +20,22 @@ jobs:
         with:
           ref: social-assets
 
-      - name: Download public source images
+      - name: Install image conversion dependency
+        run: python -m pip install --disable-pip-version-check Pillow
+
+      - name: Download and convert public source images
         shell: python
         run: |
           import glob
+          import io
           import json
           import os
           import sys
           import urllib.request
+          from PIL import Image, ImageOps
 
-          PNG = b"\x89PNG\r\n\x1a\n"
-
-          def detect_ext(data: bytes):
-              if data.startswith(PNG):
-                  return ".png"
-              if data[:3] == b"\xff\xd8\xff":
-                  return ".jpg"
-              if len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WEBP":
-                  return ".webp"
-              return None
+          MAX_SOURCE_BYTES = 10 * 1024 * 1024
+          MAX_JPEG_BYTES = 8 * 1024 * 1024
 
           manifests = sorted(glob.glob("social-media/manifests/*.json"))
           if not manifests:
@@ -60,34 +57,73 @@ jobs:
 
               for index, asset in enumerate(assets, start=1):
                   source_url = asset["source_url"]
-                  requested_name = asset.get("filename")
 
                   req = urllib.request.Request(
                       source_url,
                       headers={"User-Agent": "Mozilla/5.0 TakeMockTestSocialAssets/1.0"},
                   )
                   with urllib.request.urlopen(req, timeout=60) as response:
-                      data = response.read(12 * 1024 * 1024)
+                      data = response.read(MAX_SOURCE_BYTES + 1)
 
-                  if not data or len(data) > 10 * 1024 * 1024:
-                      raise RuntimeError(f"{post_id} asset {index}: invalid file size {len(data)}")
-
-                  detected_ext = detect_ext(data)
-                  if not detected_ext:
+                  if not data or len(data) > MAX_SOURCE_BYTES:
                       raise RuntimeError(
-                          f"{post_id} asset {index}: source did not return PNG/JPEG/WebP bytes"
+                          f"{post_id} asset {index}: invalid source size {len(data)}"
                       )
 
-                  if requested_name:
-                      stem, ext = os.path.splitext(requested_name)
-                      filename = requested_name if ext.lower() in {".png", ".jpg", ".jpeg", ".webp"} else stem + detected_ext
-                  else:
-                      filename = f"slide-{index:02d}{detected_ext}"
+                  try:
+                      img = Image.open(io.BytesIO(data))
+                      img = ImageOps.exif_transpose(img)
+                      img.load()
+                  except Exception as exc:
+                      raise RuntimeError(
+                          f"{post_id} asset {index}: source is not a readable image"
+                      ) from exc
 
+                  # Instagram's publishing API accepts JPEG for feed/carousel images.
+                  # Flatten transparency onto white and convert to RGB.
+                  if img.mode in ("RGBA", "LA") or (
+                      img.mode == "P" and "transparency" in img.info
+                  ):
+                      rgba = img.convert("RGBA")
+                      background = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+                      background.alpha_composite(rgba)
+                      img = background.convert("RGB")
+                  else:
+                      img = img.convert("RGB")
+
+                  # Keep image width within Instagram's supported feed range.
+                  width, height = img.size
+                  if width > 1440:
+                      new_height = round(height * (1440 / width))
+                      img = img.resize((1440, new_height), Image.Resampling.LANCZOS)
+                  elif width < 320:
+                      new_height = round(height * (320 / width))
+                      img = img.resize((320, new_height), Image.Resampling.LANCZOS)
+
+                  filename = f"slide-{index:02d}.jpg"
                   destination = os.path.join(out_dir, filename)
+
+                  quality = 95
+                  while quality >= 75:
+                      buffer = io.BytesIO()
+                      img.save(buffer, format="JPEG", quality=quality, optimize=True)
+                      jpeg_data = buffer.getvalue()
+                      if len(jpeg_data) <= MAX_JPEG_BYTES:
+                          break
+                      quality -= 5
+
+                  if len(jpeg_data) > MAX_JPEG_BYTES:
+                      raise RuntimeError(
+                          f"{post_id} asset {index}: JPEG remains over 8 MB after compression"
+                      )
+
                   with open(destination, "wb") as out:
-                      out.write(data)
-                  print(f"Hosted {post_id} asset {index}: {destination} ({len(data)} bytes)")
+                      out.write(jpeg_data)
+
+                  print(
+                      f"Hosted {post_id} asset {index}: {destination} "
+                      f"({len(jpeg_data)} bytes, JPEG quality {quality})"
+                  )
 
       - name: Commit hosted images
         shell: bash
@@ -99,5 +135,5 @@ jobs:
             echo "No asset changes to commit."
             exit 0
           fi
-          git commit -m "[social-assets] Sync hosted social media images"
+          git commit -m "[social-assets] Sync Instagram-compatible JPEG assets"
           git push origin social-assets
