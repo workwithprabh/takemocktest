@@ -2849,6 +2849,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-09-07',
     authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'which exams have a common syllabus',
+    image: {
+      src: '/images/blog/exams-that-share-sections-what-actually-transfers.webp',
+      alt: 'Student comparing overlapping exam sections across two study plans',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'Count the section names across the 157 official exam patterns published on this site and you get 245 distinct ones. Compare every exam against every other, and 1,247 pairs share at least three sections, covering at least half of the smaller exam\'s list. In 1,044 of those pairs the smaller exam\'s entire section list already sits inside the bigger one. That sounds like a shortcut, and sometimes it is. The rest of this explains when it is not.' },
       { type: 'takeaways', items: [
@@ -2895,6 +2901,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-09-07',
     authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'should i practise by topic or by exam',
+    image: {
+      src: '/images/blog/practice-by-topic-instead-of-by-exam.webp',
+      alt: 'Student organizing mock-test questions into focused topic practice',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'A full mock test is organised the way the exam is: a bit of everything, in the order the paper puts it. That is exactly right when you are rehearsing the exam. It is a poor way to fix one weak topic, because a single paper gives you only a handful of questions on it, spread through the sections, with the rest of the exam in between.' },
       { type: 'takeaways', items: [
@@ -2937,6 +2949,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-09-07',
     authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'reasoning section names in indian exams',
+    image: {
+      src: '/images/blog/reasoning-has-23-names-on-indian-exam-papers.webp',
+      alt: 'Indian student connecting different reasoning section names in exam notes',
+      width: 1280,
+      height: 720,
+    },
     body: [
       { type: 'paragraph', text: 'SSC calls it General Intelligence and Reasoning. IBPS calls it Reasoning Ability. CMAT and AILET both call it Logical Reasoning. One exam on this site simply calls it Logical Intelligence. Counted across the 157 official exam patterns published here, 52 exams carry a section that is reasoning and nothing else, and between them they use 23 different names for it.' },
       { type: 'takeaways', items: [

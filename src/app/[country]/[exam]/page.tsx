@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import LiveExamStatus from '@/components/LiveExamStatus';
+import { getExamVisual } from '@/lib/exam-visuals';
 import { getExamCycle, type CycleState } from '@/lib/exam-cycles';
 import { getExamPatternFaqs, getExamFactFaqs } from '@/lib/exam-faqs';
 import { COUNTRIES, getCheckedTestCount, getExam, getExamOverviewCopy } from '@/lib/exams';
@@ -85,7 +86,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     path: `/${country}/${exam.slug}`,
     noIndex: !hasCheckedTests && !hasOfficialPattern,
     image: {
-      url: '/images/students-taking-online-mock-test.webp',
+      url: getExamVisual(exam.category),
       width: 1200,
       height: 900,
       alt: `Student preparing with an online ${exam.name} mock test`,
@@ -209,7 +210,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
             {!currentCycle && (
               <figure className="relative min-h-64 overflow-hidden border border-ink-200 bg-white">
                 <Image
-                  src="/images/students-taking-online-mock-test.webp"
+                  src={getExamVisual(exam.category)}
                   alt={`Student preparing with an online ${exam.name} mock test`}
                   fill
                   priority

@@ -8,7 +8,8 @@ import { useDismissableMenu } from '@/lib/useDismissableMenu';
 // Site header: logo, primary nav, search. This is the internal-linking
 // anchor Google uses to discover every exam/blog page beneath it.
 export default function Header({ country }: { country: string }) {
-  const { open, setOpen, ref } = useDismissableMenu<HTMLDivElement>();
+  const examMenu = useDismissableMenu<HTMLDivElement>();
+  const practiceMenu = useDismissableMenu<HTMLDivElement>();
   // Chrome renders on every page of every country, so a link to a section a
   // country does not publish would be a dead link site-wide, not a one-off.
   const hasExams = countryPublishes(country, 'exams');
@@ -23,38 +24,59 @@ export default function Header({ country }: { country: string }) {
           TakeMockTest
         </Link>
         <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-6 text-sm font-medium text-ink-50">
-          {hasExams && <Link href={`/${country}#exams`} className="hover:text-ink-300 transition">Mock tests</Link>}
+          {hasExams && <Link href={`/${country}/exams?availability=available`} className="hover:text-ink-300 transition">Mock tests</Link>}
           {hasUpdates && <Link href={`/${country}/exam-updates`} className="hover:text-ink-300 transition">Exam updates</Link>}
-          <Link href={`/${country}/practice`} className="hover:text-ink-300 transition">Topic practice</Link>
-          <Link href={`/${country}/logical-reasoning`} className="hover:text-ink-300 transition">Logical reasoning</Link>
-          {hasExams && (
-          <div ref={ref} className="relative">
+          <div ref={practiceMenu.ref} className="relative">
             <button
               type="button"
-              onClick={() => setOpen((value) => !value)}
-              aria-expanded={open}
+              onClick={() => {
+                practiceMenu.setOpen((value) => !value);
+                examMenu.setOpen(false);
+              }}
+              aria-expanded={practiceMenu.open}
+              className="flex items-center gap-1.5 py-2 hover:text-ink-300 transition"
+            >
+              Practice
+              <span className={`text-xs transition-transform duration-200 ${practiceMenu.open ? 'rotate-180' : ''}`} aria-hidden="true">⌄</span>
+            </button>
+            {practiceMenu.open && (
+              <div className="absolute left-0 top-full mt-2 w-56 border border-ink-700 bg-ink-900 p-2 shadow-2xl">
+                <Link href={`/${country}/practice`} onClick={() => practiceMenu.setOpen(false)} className="block px-3 py-2.5 text-ink-200 transition hover:bg-ink-800 hover:text-ink-50">Topic practice</Link>
+                <Link href={`/${country}/logical-reasoning`} onClick={() => practiceMenu.setOpen(false)} className="block px-3 py-2.5 text-ink-200 transition hover:bg-ink-800 hover:text-ink-50">Logical reasoning</Link>
+              </div>
+            )}
+          </div>
+          {hasExams && (
+          <div ref={examMenu.ref} className="relative">
+            <button
+              type="button"
+              onClick={() => {
+                examMenu.setOpen((value) => !value);
+                practiceMenu.setOpen(false);
+              }}
+              aria-expanded={examMenu.open}
               className="flex items-center gap-1.5 py-2 hover:text-ink-300 transition"
             >
               Browse exams
               <span
-                className={`text-xs transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+                className={`text-xs transition-transform duration-200 ${examMenu.open ? 'rotate-180' : ''}`}
                 aria-hidden="true"
               >
                 ⌄
               </span>
             </button>
-            {open && (
+            {examMenu.open && (
               <div className="absolute left-0 top-full mt-2 w-[520px] border border-ink-700 bg-ink-900 p-4 shadow-2xl">
                 <div className="mb-3 flex items-center justify-between border-b border-ink-700 pb-3">
                   <span className="font-semibold text-ink-50">Browse by goal</span>
-                  <Link href={`/${country}/exams`} onClick={() => setOpen(false)} className="text-xs text-ink-300 hover:text-ink-50">View all exams →</Link>
+                  <Link href={`/${country}/exams`} onClick={() => examMenu.setOpen(false)} className="text-xs text-ink-300 hover:text-ink-50">View all exams →</Link>
                 </div>
                 <div className="grid grid-cols-2 gap-1">
                   {categories.map((category) => (
                     <Link
                       key={category.slug}
                       href={`/${country}/exams/${category.slug}`}
-                      onClick={() => setOpen(false)}
+                      onClick={() => examMenu.setOpen(false)}
                       className="flex items-center justify-between px-3 py-2.5 text-ink-200 transition hover:bg-ink-800 hover:text-ink-50"
                     >
                       <span>{category.name}</span>
@@ -66,9 +88,8 @@ export default function Header({ country }: { country: string }) {
             )}
           </div>
           )}
-          {hasBlog && <Link href={`/${country}/blog`} className="hover:text-ink-300 transition">Study resources</Link>}
+          {hasBlog && <Link href={`/${country}/blog`} className="hover:text-ink-300 transition">Study guides</Link>}
           <Link href={`/${country}/results`} className="hover:text-ink-300 transition">My results</Link>
-          <Link href={`/${country}/about`} className="hover:text-ink-300 transition">About</Link>
         </nav>
         {hasExams && (
         <Link
