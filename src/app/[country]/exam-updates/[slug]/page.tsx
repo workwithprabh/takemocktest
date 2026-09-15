@@ -4,7 +4,8 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { COUNTRIES, getExam, getCheckedTestCount } from '@/lib/exams';
 import { pageMetadata } from '@/lib/metadata';
-import { articleSchema, breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
+import { articleSchema, breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
+import { getUpdateFaqs } from '@/lib/update-faqs';
 import { UPDATE_CATEGORY_STYLES, UPDATES, formatUpdateDate, formatUpdateDateTime, getUpdate, getUpdatesForExam } from '@/lib/updates';
 
 export function generateStaticParams() {
@@ -33,6 +34,7 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
   const exam = getExam(update.examSlug);
   const hasMockTests = Boolean(exam && getCheckedTestCount(exam) > 0);
   const related = getUpdatesForExam(update.examSlug).filter((item) => item.slug !== update.slug).slice(0, 3);
+  const faqs = getUpdateFaqs(update, country);
   const jsonLd = [
     articleSchema({
       headline: update.headline,
@@ -46,6 +48,7 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
       { name: 'Exam updates', path: `/${country}/exam-updates` },
       { name: update.headline, path: `/${country}/exam-updates/${update.slug}` },
     ]),
+    ...(faqs.length > 0 ? [faqPageSchema(faqs)] : []),
   ];
 
   return (
@@ -118,6 +121,34 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
               </Link>
             </div>
           </section>
+
+          {faqs.length > 0 && (
+            <section className="mt-10" aria-labelledby="update-faq-heading">
+              <h2 id="update-faq-heading" className="mb-4 text-xl font-bold text-ink-900">Frequently asked questions</h2>
+              <div className="border border-ink-200 bg-white">
+                {faqs.map((faq) => (
+                  <details key={faq.q} className="group border-b border-ink-200 last:border-b-0">
+                    <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold text-ink-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700">
+                      {faq.q}
+                      <span className="text-xl font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
+                    </summary>
+                    <div className="max-w-3xl px-4 pb-4">
+                      <p className="text-sm leading-6 text-ink-600">{faq.a}</p>
+                      {faq.links && faq.links.length > 0 && (
+                        <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                          {faq.links.map((link) => (
+                            <li key={link.href}>
+                              <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
         </article>
 
         <aside className="space-y-5 lg:pt-10" aria-label="Update verification and related links">
