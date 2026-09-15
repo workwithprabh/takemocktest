@@ -1,6 +1,7 @@
 import { COUNTRIES, getExam } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getExamGuide } from '@/lib/exam-guides';
+import { getEligibilityFaqs } from '@/lib/guide-faqs';
 import { notFound } from 'next/navigation';
 import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 import GuideBlocks from '@/components/GuideBlocks';
@@ -42,7 +43,7 @@ export default async function EligibilityPage({ params }: { params: Promise<{ co
 
   if (guide) {
     return (
-      <ExamInfoPageContent country={country} exam={exam} pageName="Eligibility" pageSlug="eligibility" heading={guide.heading}>
+      <ExamInfoPageContent country={country} exam={exam} pageName="Eligibility" pageSlug="eligibility" heading={guide.heading} faqs={getEligibilityFaqs(exam, guide, country)}>
         <GuideBlocks blocks={guide.blocks} />
       </ExamInfoPageContent>
     );

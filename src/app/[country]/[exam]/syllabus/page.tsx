@@ -1,6 +1,7 @@
 import { COUNTRIES, getExam, getExamSections } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getExamGuide } from '@/lib/exam-guides';
+import { getSyllabusFaqs } from '@/lib/guide-faqs';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import GuideBlocks from '@/components/GuideBlocks';
@@ -42,7 +43,7 @@ export default async function SyllabusPage({ params }: { params: Promise<{ count
   const guide = getExamGuide(examSlug, 'syllabus');
 
   return (
-    <ExamInfoPageContent country={country} exam={exam} pageName="Syllabus" pageSlug="syllabus" heading={guide?.heading}>
+    <ExamInfoPageContent country={country} exam={exam} pageName="Syllabus" pageSlug="syllabus" heading={guide?.heading} faqs={guide ? getSyllabusFaqs(exam, guide, country) : undefined}>
       {guide ? (
         <GuideBlocks blocks={guide.blocks} />
       ) : (
