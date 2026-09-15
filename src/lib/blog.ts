@@ -11,6 +11,9 @@
 // visualize the actual concept, and callouts are exact excerpts from the
 // same post, not invented lines.
 import type { BlogDiagramId } from '@/components/blog/BlogDiagrams';
+// Figures quoted about this site's own corpus are derived, never typed in.
+// See src/lib/blog-corpus-stats.ts for why, and for the definitions.
+import { CORPUS, capitalise, n, word } from './blog-corpus-stats';
 
 export type BlogBlock =
   | { type: 'paragraph'; heading?: string; text: string }
@@ -2843,7 +2846,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'exams-that-share-sections-what-actually-transfers',
     title: 'Which Exams Share Sections, and What Actually Transfers',
-    excerpt: 'Across the 157 exam patterns on this site, 1,247 pairs share three or more section names. Only 14 exams have a partner matching the exact spec.',
+    excerpt: `Across the ${CORPUS.exams} exams on this site, ${n(CORPUS.sharedPairs)} pairs share three or more section names. Only 14 exams have a partner matching the exact spec.`,
     category: 'Exam Strategy',
     readTimeMin: 8,
     publishedAt: '2026-09-07',
@@ -2856,7 +2859,7 @@ export const BLOG_POSTS: BlogPost[] = [
       height: 720,
     },
     body: [
-      { type: 'paragraph', text: 'Count the section names across the 157 official exam patterns published on this site and you get 245 distinct ones. Compare every exam against every other, and 1,247 pairs share at least three sections, covering at least half of the smaller exam\'s list. In 1,044 of those pairs the smaller exam\'s entire section list already sits inside the bigger one. That sounds like a shortcut, and sometimes it is. The rest of this explains when it is not.' },
+      { type: 'paragraph', text: `Count the section names across the ${CORPUS.exams} exams published on this site and you get ${CORPUS.sectionNames} distinct ones. Compare every exam against every other, and ${n(CORPUS.sharedPairs)} pairs share at least three sections, covering at least half of the smaller exam's list. In ${n(CORPUS.subsetPairs)} of those pairs the smaller exam's entire section list already sits inside the bigger one. That sounds like a shortcut, and sometimes it is. The rest of this explains when it is not.` },
       { type: 'takeaways', items: [
         'A shared section name is the weakest form of overlap: same heading, possibly nothing else in common.',
         'SSC Selection Post\'s four sections all appear in SSC CHSL\'s nine, so a CHSL aspirant is already covering the whole of that paper\'s ground.',
@@ -2867,11 +2870,11 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'diagram', id: 'shared-sections-map', caption: 'SSC Selection Post\'s four sections against SSC CHSL\'s nine. Every one of the four already appears on the CHSL paper.' },
       { type: 'paragraph', heading: 'Three grades of overlap, not one', text: 'Aspirants are told constantly that two exams are "similar". That word hides three very different claims, and they are worth separating before you decide to prepare for both.' },
       { type: 'table', heading: 'How strong is the overlap?', headers: ['Claim', 'What it means', 'How many'], rows: [
-        ['Same section name', 'Both official patterns use the same heading. Nothing else is promised.', '1,247 exam pairs'],
+        ['Same section name', 'Both official patterns use the same heading. Nothing else is promised.', `${n(CORPUS.sharedPairs)} exam pairs`],
         ['Same section spec', 'Same marks per question, same negative marking, same seconds per question, confirmed from both official patterns.', '14 exams'],
-        ['Same underlying skill', 'The question would be at home in either paper regardless of pattern.', '8,023 questions, 40 topics'],
+        ['Same underlying skill', 'The question would be at home in either paper regardless of pattern.', `${n(CORPUS.topicQuestions)} questions, ${CORPUS.topics} topics`],
       ] },
-      { type: 'paragraph', heading: 'The name is the weakest claim', text: 'Twenty-two exams here list a section called Quantitative Aptitude and 21 list one called English Language, but a bank clerk paper and an engineering entrance mean very different things by them. The same trap runs the other way too: a section can be identical in substance and differ only in its heading. Reasoning is the clearest case, with 23 different names in use across 52 exams for what is recognisably one skill.' },
+      { type: 'paragraph', heading: 'The name is the weakest claim', text: `${capitalise(word(CORPUS.quantitativeAptitudeExams))} exams here list a section called Quantitative Aptitude and ${CORPUS.englishLanguageExams} list one called English Language, but a bank clerk paper and an engineering entrance mean very different things by them. The same trap runs the other way too: a section can be identical in substance and differ only in its heading. Reasoning is the clearest case, with ${CORPUS.reasoningHeadings} different names in use across ${CORPUS.reasoningExams} exams for what is recognisably one skill.` },
       { type: 'paragraph', heading: 'The spec is the strong claim', text: 'A section only genuinely transfers when the scoring does. If your exam gives 1 mark per question with a 0.25 penalty and 48 seconds to answer, practicing the same topic under 2 marks, no penalty, and 90 seconds trains a different set of instincts, however familiar the questions look. That is why the similar-tests pages on this site exist for only 14 exams: they list other exams whose Reasoning section matches yours on marks per question, negative marking, and time per question, taken from each exam\'s own published pattern rather than assumed from a heading. If yours is one of them, see [similar tests to SSC CHSL](/ssc-chsl/similar-tests) for the shape these take.' },
       { type: 'callout', text: 'A shared section name tells you what the paper calls something. A shared spec tells you whether practice actually counts.' },
       { type: 'paragraph', heading: 'Where the overlap quietly lies to you', text: 'General Awareness is the section that looks most transferable and transfers least. It is tied to a recruiter, often to a state, and always to a news cycle, so two exams can list the identical heading and test almost disjoint material. Skill and typing tests are the same story: SSC CHSL and SSC CGL both end in one, and they are not the same test. Treat any section whose content depends on who is recruiting, or on what happened this year, as exam-specific until you have checked both syllabi yourself.' },
@@ -2886,7 +2889,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faqs: [
       { q: 'Can I prepare for two competitive exams at once?', a: 'It depends on how much the papers really share. Compare the two official section lists, discard anything recruiter-specific or current-affairs-based, and then check whether the surviving sections match on marks per question, negative marking, and time per question. Where the specs match, practice counts for both. Where only the section names match, you are preparing twice.' },
-      { q: 'Which exam sections overlap the most?', a: 'Reasoning overlaps most reliably, followed by quantitative aptitude and English. Across the 157 exam patterns on this site, 52 exams carry a section that is reasoning alone, under 23 different names. General Awareness overlaps least, because its content is tied to a specific recruiter, state, and news cycle.' },
+      { q: 'Which exam sections overlap the most?', a: `Reasoning overlaps most reliably, followed by quantitative aptitude and English. Across the ${CORPUS.exams} exams on this site, ${CORPUS.reasoningExams} carry a section that is reasoning alone, under ${CORPUS.reasoningHeadings} different names. General Awareness overlaps least, because its content is tied to a specific recruiter, state, and news cycle.` },
       { q: 'Does SSC CHSL preparation cover SSC Selection Post?', a: 'On section coverage, yes: all four SSC Selection Post sections (General Intelligence, General Awareness, Quantitative Aptitude, English Language) appear in SSC CHSL\'s nine. That is coverage of the ground, not of the exam. Question counts, marks, and timing still differ, so check both official patterns before assuming one mock stands in for the other.' },
       { q: 'What does "similar tests" mean on this site?', a: 'It means another exam\'s section matches yours on marks per question, negative marking, and time per question, confirmed from both official patterns rather than inferred from the section name. Only 14 exams currently have such a match, all of them for Reasoning. Scoring on those tests always stays your own exam\'s.' },
       { q: 'Is General Awareness the same across government exams?', a: 'No. General Awareness is the least transferable section. Its content depends on the recruiting body, often on a particular state, and on the current news cycle, so two exams can print the identical section heading and test almost entirely different material.' },
@@ -2895,7 +2898,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'practice-by-topic-instead-of-by-exam',
     title: 'Practice by Topic Instead of by Exam',
-    excerpt: 'A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,023 questions across 40 topics.',
+    excerpt: `A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you ${n(CORPUS.topicQuestions)} questions across ${CORPUS.topics} topics.`,
     category: 'Mock Tests',
     readTimeMin: 6,
     publishedAt: '2026-09-07',
@@ -2911,20 +2914,21 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'paragraph', text: 'A full mock test is organised the way the exam is: a bit of everything, in the order the paper puts it. That is exactly right when you are rehearsing the exam. It is a poor way to fix one weak topic, because a single paper gives you only a handful of questions on it, spread through the sections, with the rest of the exam in between.' },
       { type: 'takeaways', items: [
         'Full mocks answer "am I ready?". Topic sets answer "why am I losing marks here?". They are different questions.',
-        'The topic pages pool 8,023 questions across 40 topics, drawn from the same banks the mock tests use.',
-        'Probability draws from 70 different exams, syllogism from 53, direction sense from 49.',
+        `The topic pages pool ${n(CORPUS.topicQuestions)} questions across ${CORPUS.topics} topics, drawn from the same banks the mock tests use.`,
+        `Probability draws from ${CORPUS.topicPool('probability').exams} different exams, syllogism from ${CORPUS.topicPool('syllogism').exams}, direction sense from ${CORPUS.topicPool('direction-sense').exams}.`,
         'No negative marking on topic sets, so you can attempt everything and see what you actually know.',
         'Use the mock to find the weak topic, the topic set to fix it, then the next mock to check it stuck.',
       ] },
       { type: 'diagram', id: 'corpus-two-cuts', caption: 'The same questions, cut two ways. A column is one exam\'s paper. A row is one topic pooled from every exam that asks it.' },
-      { type: 'paragraph', heading: 'Why pooling across exams works', text: 'A percentage question does not become a different question because it appeared in a bank paper rather than a railway one. Neither does a syllogism, a coding-decoding puzzle, or an error-spotting sentence. The exam wrapper changes the marks, the timer, and the penalty, but the reasoning you have to do is the same. That is why a topic pool can be far deeper than any one exam\'s bank: probability on this site draws from 70 different exams, syllogism from 53, direction sense from 49.' },
+      { type: 'paragraph', heading: 'Why pooling across exams works', text: `A percentage question does not become a different question because it appeared in a bank paper rather than a railway one. Neither does a syllogism, a coding-decoding puzzle, or an error-spotting sentence. The exam wrapper changes the marks, the timer, and the penalty, but the reasoning you have to do is the same. That is why a topic pool can be far deeper than any one exam's bank: probability on this site draws from ${CORPUS.topicPool('probability').exams} different exams, syllogism from ${CORPUS.topicPool('syllogism').exams}, direction sense from ${CORPUS.topicPool('direction-sense').exams}.` },
       { type: 'table', heading: 'A few topic pools, and how widely they draw', headers: ['Topic', 'Questions', 'Exams it draws from'], rows: [
-        ['Number series', '383', '45'],
-        ['Data interpretation', '377', '43'],
-        ['Coding and decoding', '312', '46'],
-        ['Syllogism', '293', '53'],
-        ['Direction sense', '265', '49'],
-        ['Time, speed and distance', '185', '43'],
+        // The same six topics the post has always illustrated, re-sorted by
+        // current pool size. Derived rather than typed: these grew by 5 to 44
+        // questions each between 7 and 15 September 2026 while the table did not.
+        ...['number-series', 'data-interpretation', 'coding-and-decoding', 'syllogism', 'direction-sense', 'time-speed-and-distance']
+          .map((slug) => ({ slug, ...CORPUS.topicPool(slug) }))
+          .sort((a, b) => b.questions - a.questions)
+          .map((pool) => [CORPUS.topicName(pool.slug), String(pool.questions), String(pool.exams)]),
       ] },
       { type: 'paragraph', heading: 'Where pooling does not work', text: 'The same logic breaks completely for General Awareness and current affairs, so those are not pooled here. A question about a state\'s recruitment rules or last quarter\'s appointments is not exam-agnostic in any useful sense, and pretending otherwise would produce a pile of questions that is wrong for almost everybody reading it. Anything whose answer depends on who is recruiting, or on when you are reading, stays inside its own exam.' },
       { type: 'callout', text: 'The mock tells you which topic is costing you marks. It is a slow and expensive way to then practice that topic.' },
@@ -2936,14 +2940,14 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'Should I do topic-wise practice or full mock tests?', a: 'Both, in that order of use: the full mock tells you where you are losing marks, the topic set is where you fix it, and the next full mock is where you check the fix held under time pressure. A mock is a bad practice tool for a single topic because it gives you only a handful of questions on it, scattered through the paper.' },
       { q: 'Do topic-wise questions come from real exam papers?', a: 'They are drawn from the same original question banks that power the mock tests on this site, pooled by topic instead of by exam. They are original practice questions written to each exam\'s published syllabus, not reproductions of a past paper.' },
       { q: 'Why is there no negative marking on topic practice?', a: 'Because the point is to find out what you know, not to rehearse guessing risk. An attempted-and-wrong question tells you which step you got wrong; a blank one tells you nothing. Every question carries 1 mark and no penalty. For the real risk calculus, use your own exam\'s mock, where its actual marking scheme applies.' },
-      { q: 'How many questions are in the topic practice section?', a: '8,023 questions across 40 topics. Pool sizes vary by topic: number series has 383, syllogism 293, time, speed and distance 185. A topic is only published once it has at least 50 questions behind it.' },
+      { q: 'How many questions are in the topic practice section?', a: `${n(CORPUS.topicQuestions)} questions across ${CORPUS.topics} topics. Pool sizes vary by topic: number series has ${CORPUS.topicPool('number-series').questions}, syllogism ${CORPUS.topicPool('syllogism').questions}, time, speed and distance ${CORPUS.topicPool('time-speed-and-distance').questions}. A topic is only published once it has at least 50 questions behind it.` },
       { q: 'Is topic practice useful if my exam has negative marking?', a: 'Yes, for building the method. Practise the topic without a penalty until the approach is automatic, then rehearse it under your exam\'s real marking scheme in a sectional or full mock. Trying to learn a topic and manage guessing risk at the same time usually means doing neither well.' },
     ],
   },
   {
     slug: 'reasoning-has-23-names-on-indian-exam-papers',
-    title: 'Reasoning Has 23 Names on Indian Exam Papers',
-    excerpt: 'General Intelligence and Reasoning. Test of Reasoning. Logical Intelligence. Across 52 exams here, one skill appears under 23 different section headings.',
+    title: `Reasoning Has ${CORPUS.reasoningHeadings} Names on Indian Exam Papers`,
+    excerpt: `General Intelligence and Reasoning. Test of Reasoning. Logical Intelligence. Across ${CORPUS.reasoningExams} exams here, one skill appears under ${CORPUS.reasoningHeadings} different section headings.`,
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-09-07',
@@ -2956,24 +2960,21 @@ export const BLOG_POSTS: BlogPost[] = [
       height: 720,
     },
     body: [
-      { type: 'paragraph', text: 'SSC calls it General Intelligence and Reasoning. IBPS calls it Reasoning Ability. CMAT and AILET both call it Logical Reasoning. One exam on this site simply calls it Logical Intelligence. Counted across the 157 official exam patterns published here, 52 exams carry a section that is reasoning and nothing else, and between them they use 23 different names for it.' },
+      { type: 'paragraph', text: `SSC calls it General Intelligence and Reasoning. IBPS calls it Reasoning Ability. CMAT and AILET both call it Logical Reasoning. One exam on this site simply calls it Logical Intelligence. Counted across the ${CORPUS.exams} exams published here, ${CORPUS.reasoningExams} carry a section that is reasoning and nothing else, and between them they use ${CORPUS.reasoningHeadings} different names for it.` },
       { type: 'takeaways', items: [
-        '23 section headings across 52 exams, for a skill that does not change between them.',
-        'The most common heading, General Intelligence and Reasoning, is used by only 12 exams. There is no standard.',
+        `${CORPUS.reasoningHeadings} section headings across ${CORPUS.reasoningExams} exams, for a skill that does not change between them.`,
+        `The most common heading, ${CORPUS.reasoningRanked[0][0]}, is used by only ${CORPUS.reasoningRanked[0][1]} exams. There is no standard.`,
         'A seating-arrangement puzzle is the same puzzle in a bank paper and a law paper. Only the marks and the timer change.',
         'Sections that mix reasoning with arithmetic, English, or computer knowledge are a different thing, and are not counted here.',
         'The reasoning section on this site is graded on one absolute scale, so a level means the same thing whichever exam a question came from.',
       ] },
-      { type: 'diagram', id: 'one-skill-many-names', caption: 'Eight of the 23 section names in use, all describing the same skill. The heading changes; the question does not.' },
-      { type: 'paragraph', heading: 'Why the naming is such a mess', text: 'Every recruiting body publishes its own syllabus, and nothing obliges any of them to use anybody else\'s vocabulary. The counts show how little convergence that produces: of the 23 headings in use, the most common covers 12 exams, the next 11, the next 8, and 15 of the 23 are used by exactly one exam each. There is no majority name to standardize on, and no sign of one emerging.' },
+      { type: 'diagram', id: 'one-skill-many-names', caption: `Eight of the ${CORPUS.reasoningHeadings} section names in use, all describing the same skill. The heading changes; the question does not.` },
+      { type: 'paragraph', heading: 'Why the naming is such a mess', text: `Every recruiting body publishes its own syllabus, and nothing obliges any of them to use anybody else's vocabulary. The counts show how little convergence that produces: of the ${CORPUS.reasoningHeadings} headings in use, the most common covers ${CORPUS.reasoningRanked[0][1]} exams and the next ${CORPUS.reasoningRanked[1][1]}, and ${CORPUS.reasoningHeadingsUsedByOne} of the ${CORPUS.reasoningHeadings} are used by exactly one exam each. There is no majority name to standardize on, and no sign of one emerging.` },
       { type: 'table', heading: 'How the names are actually distributed', headers: ['Section heading', 'Exams using it'], rows: [
-        ['General Intelligence and Reasoning', '12'],
-        ['Logical Reasoning', '11'],
-        ['Reasoning', '8'],
-        ['Reasoning Ability', '7'],
-        ['Four headings used by 2 exams each', '8'],
-        ['Fifteen headings used by 1 exam each', '15'],
-        ['Total reasoning-only sections', '61, across 52 exams'],
+        ...CORPUS.reasoningNamed.map(([heading, count]) => [heading, String(count)]),
+        [`${capitalise(word(CORPUS.reasoningHeadingsUsedByTwo))} headings used by 2 exams each`, String(CORPUS.reasoningSectionsUnderTwo)],
+        [`${capitalise(word(CORPUS.reasoningHeadingsUsedByOne))} headings used by 1 exam each`, String(CORPUS.reasoningHeadingsUsedByOne)],
+        ['Total reasoning-only sections', `${CORPUS.reasoningSections}, across ${CORPUS.reasoningExams} exams`],
       ] },
       { type: 'paragraph', text: 'The last row is not a typo. There are more reasoning-only sections than there are exams carrying one, because a few papers split reasoning into two separately timed sections and number them: Logical Reasoning I and II, Analytical Reasoning Skills I and II. Each half counts as its own section on the official pattern, so it counts as its own here too.' },
       { type: 'paragraph', heading: 'What is not counted as reasoning', text: 'Plenty of exams have a section with reasoning in the title that is not reasoning alone, and the names say so outright. Reasoning Ability & Computer Aptitude mixes in computer knowledge. Reasoning (Verbal & Arithmetic) and General Arithmetic, General Intelligence and Reasoning both mix in maths. Data Interpretation and Logical Reasoning, the CAT section, is half a quantitative paper. None of those are counted above, or fed into the practice section here, for one reason: someone sent from a mixed section to a pure-reasoning set would meet a narrower thing than they left, which is worse than not being sent at all.' },
@@ -2983,7 +2984,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'paragraph', text: 'Work up the difficulty ladder if you do not yet know where you stand, or pick a family directly if you already do. If you want the same cut applied to quantitative and English topics as well, [topic-wise practice](/practice) covers those. And when you go back to your own paper, [which exams share sections](/blog/exams-that-share-sections-what-actually-transfers) explains how far the rest of your preparation travels.' },
     ],
     faqs: [
-      { q: 'Is logical reasoning the same in all competitive exams?', a: 'The skill is largely the same; the labelling and the scoring are not. Across the 157 exam patterns on this site, 52 exams have a section that is reasoning alone, under 23 different headings. A seating-arrangement or syllogism question is the same question in any of them. What changes is marks per question, negative marking, and the time you get.' },
+      { q: 'Is logical reasoning the same in all competitive exams?', a: `The skill is largely the same; the labelling and the scoring are not. Across the ${CORPUS.exams} exams on this site, ${CORPUS.reasoningExams} have a section that is reasoning alone, under ${CORPUS.reasoningHeadings} different headings. A seating-arrangement or syllogism question is the same question in any of them. What changes is marks per question, negative marking, and the time you get.` },
       { q: 'What is the difference between General Intelligence and Logical Reasoning?', a: 'In practice, usually nothing but the recruiter\'s vocabulary. General Intelligence and Reasoning is the heading SSC and several railway exams use; Logical Reasoning is more common in management, law, and university entrances. Both cover series, coding-decoding, blood relations, direction sense, syllogisms, seating arrangements, and similar families. Always check the exam\'s own syllabus rather than the heading.' },
       { q: 'Does reasoning practice from one exam help with another?', a: 'Yes, more than any other section. Reasoning is the section that transfers most cleanly between exams, because the question does not depend on a syllabus, a recruiter, or a news cycle. The part that does not transfer is the marking scheme, which decides when a question is worth attempting rather than how it is solved.' },
       { q: 'Why are some reasoning sections excluded from the count?', a: 'Because they are not reasoning alone. Sections such as Reasoning Ability and Computer Aptitude, or ones combining reasoning with arithmetic or English, test more than one thing, so counting them would overstate how portable the skill is and would send people to practice narrower than the section they came from.' },
