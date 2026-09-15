@@ -1,10 +1,11 @@
 import { getExamGuide } from './exam-guides';
-import type { ExamGuidePage } from './exam-guides';
+import type { ExamGuidePage, GuideBlock } from './exam-guides';
 import type { ExamConfig } from './exams';
 import { getCheckedTestCount } from './exams';
 import type { Faq } from './exam-faqs';
 
-// FAQs for the per-exam syllabus and eligibility guide pages.
+// FAQs for the per-exam guide pages: syllabus, eligibility, selection process,
+// salary and previous year papers.
 //
 // Only the pages that carry real guide content get these. An exam with no
 // entry in exam-guides.ts renders a "being verified" placeholder and stays
@@ -20,11 +21,20 @@ import type { Faq } from './exam-faqs';
 // already shows those figures correctly in their own blocks. These answer what
 // it does not.
 //
-// The syllabus, eligibility and selection-process pages of the same exam must
-// also not converge. Ten exams carry all three, a click apart from each other,
-// so the questions differ in angle rather than being one template with a noun
-// swapped. Syllabus asks what is examined, eligibility asks who may sit it,
-// selection process asks what clearing it actually involves.
+// The guide pages of the same exam must also not converge. Ten exams carry
+// syllabus, eligibility and selection process a click apart from each other,
+// and SSC CGL carries all five, so the questions differ in angle rather than
+// being one template with a noun swapped. Syllabus asks what is examined,
+// eligibility asks who may sit it, selection process asks what clearing it
+// actually involves, salary asks what the post pays, and previous year papers
+// asks what was actually released and whether it can be trusted.
+//
+// Salary carries one more constraint than the rest. The guide itself contains a
+// block headed "Why we do not quote one in-hand salary", explaining that a
+// single take-home figure would be misleading. Nothing generated here may
+// produce one, so the answers work from the pay-matrix table, which is
+// structured and citable, and treat the absence of an in-hand figure as the
+// answer to the question rather than as a gap to fill.
 
 function listOf(values: string[]): string {
   return values.length > 1 ? `${values.slice(0, -1).join(', ')} and ${values[values.length - 1]}` : values[0] ?? '';
@@ -54,7 +64,7 @@ function patternFaq(exam: ExamConfig, country: string, phrasing: 'syllabus' | 'e
 }
 
 /** Where the page's figures came from, read off the guide's own source block. */
-function sourceFaq(guide: ExamGuidePage, exam: ExamConfig, kind: 'syllabus' | 'eligibility' | 'selection-process'): Faq {
+function sourceFaq(guide: ExamGuidePage, exam: ExamConfig, kind: 'syllabus' | 'eligibility' | 'selection-process' | 'salary'): Faq {
   const note = guide.blocks.find((block) => block.type === 'sourceNote');
   // Some source labels name the document ("official SSC CGL 2026 notice") and
   // some are the link's own call to action ("View the official notice"). Only
@@ -67,6 +77,13 @@ function sourceFaq(guide: ExamGuidePage, exam: ExamConfig, kind: 'syllabus' | 'e
   const cited = stripped
     ? /^[a-z]/.test(stripped) ? `the ${stripped}` : stripped
     : undefined;
+  if (kind === 'salary') {
+    return {
+      q: `Where is the official ${exam.name} pay information published?`,
+      a: `In ${cited ?? 'the official document'}, cited and linked at the foot of this page. The pay level attached to each post is stated there, and that document governs: where any other source disagrees with it, including this page, the notification is what counts. Allowance rates are a separate matter again, set centrally and revised periodically, so the pay level is the stable part of the package and the amounts sitting on top of it are not.`,
+    };
+  }
+
   if (kind === 'selection-process') {
     return {
       q: `Can the ${exam.name} selection process change between cycles?`,
@@ -195,5 +212,162 @@ export function getSelectionProcessFaqs(exam: ExamConfig, guide: ExamGuidePage, 
   }
 
   faqs.push(sourceFaq(guide, exam, 'selection-process'));
+  return faqs;
+}
+
+/**
+ * The pay-matrix table, located by its header rather than by position, so a
+ * guide that orders its blocks differently still resolves. Rows are read back
+ * by amount rather than by row order: the SSC CGL table happens to run highest
+ * level first, and relying on that would break the first time one does not.
+ */
+function payLevels(guide: ExamGuidePage) {
+  const block = guide.blocks.find(
+    (item): item is Extract<GuideBlock, { type: 'table' }> =>
+      item.type === 'table' && /pay level/i.test(item.headers[0] ?? ''),
+  );
+  if (!block) return undefined;
+  const amount = (value: string) => Number(value.replace(/[^0-9]/g, ''));
+  const rows = block.rows.filter((row) => row.length >= 3 && row[0] && amount(row[1]) > 0);
+  if (rows.length === 0) return undefined;
+  const byAmount = [...rows].sort((a, b) => amount(a[1]) - amount(b[1]));
+  return { count: rows.length, lowest: byAmount[0], highest: byAmount[byAmount.length - 1] };
+}
+
+/**
+ * What the guide says is added to and taken off the basic pay. Read off the
+ * infoBlocks items by title so the answer names the real components instead of
+ * a generic list of allowances that may not apply to this service.
+ */
+function payComponents(guide: ExamGuidePage) {
+  const block = guide.blocks.find(
+    (item): item is Extract<GuideBlock, { type: 'infoBlocks' }> => item.type === 'infoBlocks',
+  );
+  const items = block?.items ?? [];
+  // Lower-cases a leading capital only where the next letter is lower-case, so
+  // "Applicable Dearness Allowance" folds into a sentence while "NPS
+  // contribution" keeps its initialism intact.
+  const phrase = (item: { text: string } | undefined) =>
+    item ? item.text.replace(/\.\s*$/, '').replace(/^[A-Z](?=[a-z])/, (letter) => letter.toLowerCase()) : undefined;
+  return {
+    added: phrase(items.find((item) => /\badd/i.test(item.title))),
+    deducted: phrase(items.find((item) => /\bdeduct/i.test(item.title))),
+  };
+}
+
+export function getSalaryFaqs(exam: ExamConfig, guide: ExamGuidePage, country: string): Faq[] {
+  const tests = getCheckedTestCount(exam);
+  const faqs: Faq[] = [];
+  const levels = payLevels(guide);
+
+  if (levels) {
+    faqs.push({
+      q: `What is the ${exam.name} salary?`,
+      a: `It is set by pay level rather than by one figure. The table on this page covers ${levels.count} levels, from ${levels.lowest[0]} starting at ${levels.lowest[1]} basic pay up to ${levels.highest[0]} starting at ${levels.highest[1]}. Which level you draw depends on the post you are allotted, not on the examination itself, so two candidates who clear the same paper can start on different pay. Basic pay is also only the base: allowances are added to it and deductions come off it before anything reaches your account.`,
+      links: tests > 0 ? [{ href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` }] : undefined,
+    });
+  }
+
+  // The most searched version of this question, and the one this page
+  // deliberately refuses to answer with a number. The refusal is the answer, so
+  // it is stated as one rather than left for a reader to infer from a gap.
+  const components = payComponents(guide);
+  faqs.push({
+    q: `What is the in-hand ${exam.name} salary?`,
+    a: `There is no single figure, and quoting one would mean assuming things about you that nobody can know in advance. Take-home pay starts from the basic pay for your level and moves in both directions from there${
+      components.added ? `: ${components.added} are added` : ''
+    }${components.deducted ? `, and ${components.deducted} come off` : ''}. It then changes again with your place of posting, whether you take government accommodation, current allowance rates and your own tax position. The basic pay table on this page is the part that is fixed and comparable between posts; the rest is not knowable until after allocation.`,
+  });
+
+  if (levels) {
+    faqs.push({
+      q: `Which ${exam.name} post pays the most?`,
+      a: `The one attached to the highest pay level, and the level belongs to the post rather than to the examination. Posts across ${levels.count} levels are filled from the same paper, which is why the salary question has no answer until allocation. The notification lists the level against each post, and that list is the part that moves between cycles as posts are added and withdrawn, which is why this page does not reproduce it.`,
+      // The selection-process route is noIndex without its own guide, so the
+      // link is gated on that guide existing rather than assumed.
+      links: getExamGuide(exam.slug, 'selection-process')
+        ? [{ href: `/${country}/${exam.slug}/selection-process`, label: `${exam.name} selection process` }]
+        : undefined,
+    });
+
+    faqs.push({
+      q: `Does the ${exam.name} basic pay stay at the starting figure?`,
+      a: `No. Each row of the table is a band, not a point. ${levels.lowest[0]} runs from ${levels.lowest[1]} to ${levels.lowest[2]}, and ${levels.highest[0]} from ${levels.highest[1]} to ${levels.highest[2]}. A career moves up through the band it sits in, and into a higher level on promotion. The starting figure is what a new entrant draws; the upper figure is where that level ends. Comparing starting figures across posts tells you where you begin rather than where the post leads.`,
+    });
+  }
+
+  faqs.push(sourceFaq(guide, exam, 'salary'));
+  return faqs;
+}
+
+/**
+ * The previous-year-papers guide carries no sourceNote block, so provenance is
+ * answered from the record cards themselves: what they link to, and what the
+ * availability line on each one says.
+ */
+export function getPreviousYearPapersFaqs(exam: ExamConfig, guide: ExamGuidePage, country: string): Faq[] {
+  const tests = getCheckedTestCount(exam);
+  const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
+  const block = guide.blocks.find(
+    (item): item is Extract<GuideBlock, { type: 'recordCards' }> => item.type === 'recordCards',
+  );
+  const records = block?.records ?? [];
+  const faqs: Faq[] = [];
+
+  if (records.length > 0) {
+    // Badges read "Tier 2 · 2023", so the stage name and the year come out of
+    // the same string. Sorted rather than left in card order, which runs newest
+    // first and would list the later tier before the earlier one.
+    const stages = [...new Set(records.map((record) => record.badge.split('·')[0].trim()).filter(Boolean))].sort();
+    const years = records.flatMap((record) => record.badge.match(/\b(?:19|20)\d{2}\b/g) ?? []).map(Number);
+    const span = years.length > 0
+      ? Math.min(...years) === Math.max(...years)
+        ? ` from ${Math.min(...years)}`
+        : ` from ${Math.min(...years)} to ${Math.max(...years)}`
+      : '';
+
+    faqs.push({
+      q: `Where can I find official ${exam.name} previous year papers?`,
+      a: `This page lists ${records.length} official release records${
+        stages.length > 0 ? `, covering ${listOf(stages)}${span}` : span
+      }. Each links to the conducting body's own published notice rather than to a copy hosted somewhere else, so you can see for yourself what was released and when. Read the availability line on a card before you click it, because a record of a release is not the same thing as a live download.`,
+    });
+
+    // Hedge only where the data forces it. Every SSC CGL record states that its
+    // candidate window has closed, and softening that into "often not" would be
+    // vaguer than the page itself. A future guide holding an open window gets
+    // the cautious wording instead.
+    const closed = records.every((record) =>
+      record.meta.some((entry) => /availability|access|window/i.test(entry.label) && /closed/i.test(entry.value)),
+    );
+    faqs.push({
+      q: `Can I still download the ${exam.name} question papers from these links?`,
+      a: `${
+        closed
+          ? 'No. Papers of this kind are released to candidates through a login window that closes after a few weeks, and every window on this page has closed, on the date its own card records'
+          : 'Not always. Papers of this kind are released to candidates through a login window that closes after a few weeks, and each card on this page carries the state of its own window'
+      }. What the notice itself opens is the permanent public record, which stays up. That is still worth having: it confirms which papers were officially released, for which stage and cycle, and on what date, which is the check to run against any paper you find circulating elsewhere.`,
+    });
+  }
+
+  // The guide's own stance, stated as an answer rather than left as an absence
+  // a reader has to explain to themselves.
+  faqs.push({
+    q: `Why are no ${exam.name} paper PDFs hosted on this page?`,
+    a: `Because they have not been verified to the standard the rest of this site is held to. A past paper is only worth practising if the questions are the ones that were actually asked and the answers are the ones the conducting body accepted, and a file that cannot be traced back to an official release satisfies neither. Shift-wise papers will be published here when their source and their answer key can both be checked independently. Until then the honest answer is that we do not have them, rather than a file that looks as though we do.`,
+  });
+
+  const practiceLinks = [
+    ...(hasOfficialPattern ? [{ href: `/${country}/${exam.slug}/exam-pattern`, label: `${exam.name} exam pattern` }] : []),
+    ...(tests > 0 ? [{ href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` }] : []),
+  ];
+  faqs.push({
+    q: `Are old ${exam.name} papers still useful if the pattern has changed?`,
+    a: `Yes, with one adjustment. What survives a pattern change is question style: how a topic gets tested, how much working a question expects, how the wrong options are built to catch a particular mistake. What does not survive is the timing, the section split and the marking scheme, and rehearsing those from an outdated paper trains the wrong pace. Read old papers for the questions and take the clock from the current pattern.`,
+    // Both targets are conditionally noIndex, so an exam carrying neither gets
+    // no link row at all rather than an empty one.
+    links: practiceLinks.length > 0 ? practiceLinks : undefined,
+  });
+
   return faqs;
 }

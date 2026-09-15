@@ -5,6 +5,7 @@ import { getExamGuide } from '@/lib/exam-guides';
 import { notFound } from 'next/navigation';
 import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 import GuideBlocks from '@/components/GuideBlocks';
+import { getPreviousYearPapersFaqs } from '@/lib/guide-faqs';
 import { pageMetadata } from '@/lib/metadata';
 
 // Nested under [country], so Next.js passes the parent's params in. Filtering
@@ -43,7 +44,7 @@ export default async function PreviousYearPapersPage({ params }: { params: Promi
 
   if (guide) {
     return (
-      <ExamInfoPageContent country={country} exam={exam} pageName="Previous Year Papers" pageSlug="previous-year-papers" heading={guide.heading}>
+      <ExamInfoPageContent country={country} exam={exam} pageName="Previous Year Papers" pageSlug="previous-year-papers" heading={guide.heading} faqs={getPreviousYearPapersFaqs(exam, guide, country)}>
         <div className="space-y-6">
           <GuideBlocks blocks={guide.blocks} />
           <section className="border border-ink-200 bg-ink-900 text-ink-50 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
