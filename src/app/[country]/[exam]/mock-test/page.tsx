@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { contentLocale } from '@/lib/hreflang';
 import { COUNTRIES, getExam, getSharedTests } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
@@ -12,6 +11,8 @@ import { pageMetadata } from '@/lib/metadata';
 import { getPostsMentioningExam } from '@/lib/blog';
 import { getBlogCategoryStyle } from '@/components/blog/BlogCategoryStyle';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import MockTestHeroVisual from '@/components/MockTestHeroVisual';
+import { getExamVisual } from '@/lib/exam-visuals';
 import MockTestTabs from './MockTestTabs';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     path: `/${country}/${exam.slug}/mock-test`,
     noIndex: !hasCheckedTests,
     image: {
-      url: '/images/students-taking-online-mock-test.webp',
+      url: getExamVisual(exam.category),
       width: 1200,
       height: 900,
       alt: `Student taking an online ${exam.name} mock test`,
@@ -150,16 +151,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
               </div>
             </dl>
           </div>
-          <figure className="relative hidden aspect-[16/10] overflow-hidden border border-ink-200 bg-white md:block md:max-h-[290px]">
-            <Image
-              src="/images/students-taking-online-mock-test.webp"
-              alt={`Student taking an online ${exam.name} mock test`}
-              fill
-              priority
-              sizes="(min-width: 768px) 45vw, 100vw"
-              className="object-cover"
-            />
-          </figure>
+          <MockTestHeroVisual examName={exam.name} />
         </div>
       </div>
 
