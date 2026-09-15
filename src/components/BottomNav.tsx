@@ -21,8 +21,8 @@ export default function BottomNav({ country }: { country: string }) {
     { label: 'Home', href: `/${country}`, icon: 'M3 11l9-8 9 8M5 10v10h14V10' },
     ...(hasExams
       ? [
-          { label: 'Tests', href: `/${country}#exams`, icon: 'M5 4h14v16H5zM8 9h8M8 13h5' },
-          { label: 'Find exam', href: `/${country}/exams`, icon: 'M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z' },
+          { label: 'Tests', href: `/${country}/exams?availability=available`, icon: 'M5 4h14v16H5zM8 9h8M8 13h5' },
+          { label: 'Practice', href: `/${country}/practice`, icon: 'M4 19h16M6 16l3-3 3 2 5-6' },
         ]
       : [
           { label: 'Practice', href: `/${country}/practice`, icon: 'M5 4h14v16H5zM8 9h8M8 13h5' },
@@ -40,9 +40,9 @@ export default function BottomNav({ country }: { country: string }) {
       {items.map((item) => {
         const active =
           item.label === 'Tests'
-            ? pathname.includes('/mock-test') || pathname.includes('/test/')
-            : item.label === 'Find exam'
-              ? pathname.startsWith(`/${country}/exams`)
+            ? pathname.startsWith(`/${country}/exams`) || pathname.includes('/mock-test') || (pathname.includes('/test/') && !pathname.startsWith(`/${country}/practice`) && !pathname.startsWith(`/${country}/logical-reasoning`))
+            : item.label === 'Practice'
+              ? pathname.startsWith(`/${country}/practice`) || pathname.startsWith(`/${country}/logical-reasoning`)
               : pathname === item.href;
         return (
           <Link
