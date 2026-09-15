@@ -365,15 +365,23 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         <section id="exams" aria-labelledby="popular-tests-heading" className="scroll-mt-24">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
             <h2 id="popular-tests-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Popular mock tests</h2>
-            <Link href={`/${country}/exams?availability=available`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+            <Link href={`/${country}/exams?availability=available`} className="hidden min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline sm:inline-flex">
               View all tests <span aria-hidden="true">→</span>
             </Link>
           </div>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredExams.map((exam) => (
-              <ExamCard key={exam.slug} exam={exam} country={country} />
+            {featuredExams.map((exam, index) => (
+              <div key={exam.slug} className={index >= 3 ? 'hidden sm:block' : ''}>
+                <ExamCard exam={exam} country={country} />
+              </div>
             ))}
           </div>
+          <Link
+            href={`/${country}/exams?availability=available`}
+            className="mt-3 flex min-h-11 items-center justify-center border border-ink-200 bg-white px-4 text-sm font-semibold text-ink-900 sm:hidden"
+          >
+            View all available tests <span className="ml-2" aria-hidden="true">→</span>
+          </Link>
         </section>
         )}
 
@@ -395,18 +403,21 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
               <h3 className="text-lg font-bold text-ink-900">
                 <Link href={`/${country}/${LR_SLUG}`} className="hover:underline">Logical reasoning</Link>
               </h3>
-              <p className="mt-2 text-sm leading-6 text-ink-700">
+              <p className="mt-2 text-sm leading-6 text-ink-700 md:hidden">
+                Build speed with {LR_TOTAL_QUESTIONS} reasoning questions, graded easy to hard.
+              </p>
+              <p className="mt-2 hidden text-sm leading-6 text-ink-700 md:block">
                 Not sure which exam yet, or just want to get faster at puzzles? {LR_TOTAL_QUESTIONS} reasoning
                 questions pooled from every exam on this site, graded easy to hard on one scale, in {LR_TOPIC_TESTS.length} topic
                 sets and a difficulty ladder, with no negative marking.
               </p>
             </div>
-            <div className="mt-4 grid flex-1 gap-2 sm:grid-cols-3 md:mt-0">
+            <div className="mt-4 grid flex-1 grid-cols-3 gap-2 md:mt-0">
               {LR_LADDER.map((rung) => (
                 <Link
                   key={rung.level}
                   href={`/${country}/${LR_SLUG}/test/${rung.tests[0].id}`}
-                  className="border border-ink-200 p-3 transition hover:border-ink-900"
+                  className="border border-ink-200 p-2.5 transition hover:border-ink-900 sm:p-3"
                 >
                   <span className="block text-sm font-bold text-ink-900">{LR_GRADE_LABELS[rung.level]}</span>
                   <span className="mt-1 block text-xs text-ink-500">
@@ -422,18 +433,21 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
               <h3 className="text-lg font-bold text-ink-900">
                 <Link href={`/${country}/${PRACTICE_SLUG}`} className="hover:underline">Practice by topic</Link>
               </h3>
-              <p className="mt-2 text-sm leading-6 text-ink-700">
+              <p className="mt-2 text-sm leading-6 text-ink-700 md:hidden">
+                Fix weak areas with {practiceQuestions.toLocaleString(contentLocale(country))} questions across {practiceTopics} topics.
+              </p>
+              <p className="mt-2 hidden text-sm leading-6 text-ink-700 md:block">
                 Know which topic costs you marks? Drill it on its own. {practiceQuestions.toLocaleString(contentLocale(country))}{' '}
                 questions across {practiceTopics} quantitative, reasoning and English topics, each pooled from every
                 exam that sets it. An explanation on every question, and no negative marking.
               </p>
             </div>
-            <div className="mt-4 grid flex-1 gap-2 sm:grid-cols-3 md:mt-0">
-              {featuredTopics.map((topic) => (
+            <div className="mt-4 grid flex-1 grid-cols-2 gap-2 sm:grid-cols-3 md:mt-0">
+              {featuredTopics.map((topic, index) => (
                 <Link
                   key={topic.slug}
                   href={`/${country}/${PRACTICE_SLUG}/${topic.slug}`}
-                  className="border border-ink-200 p-3 transition hover:border-ink-900"
+                  className={`border border-ink-200 p-2.5 transition hover:border-ink-900 sm:p-3 ${index >= 2 ? 'hidden sm:block' : ''}`}
                 >
                   <span className="block text-sm font-bold text-ink-900">{topic.name}</span>
                   <span className="mt-1 block text-xs text-ink-500">{topic.count} questions</span>
@@ -472,7 +486,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                 <Link
                   key={update.slug}
                   href={`/${country}/exam-updates/${update.slug}`}
-                  className={`group items-center gap-4 p-4 transition hover:bg-action-50/40 focus-visible:relative focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700 ${index >= 3 ? 'hidden md:flex' : 'flex'}`}
+                  className={`group items-center gap-4 p-4 transition hover:bg-action-50/40 focus-visible:relative focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700 ${index >= 2 ? 'hidden md:flex' : 'flex'}`}
                 >
                   <div className="min-w-0 flex-1">
                     <div className="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1">
