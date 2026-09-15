@@ -1,3 +1,4 @@
+import { getExamGuide } from './exam-guides';
 import type { ExamGuidePage } from './exam-guides';
 import type { ExamConfig } from './exams';
 import { getCheckedTestCount } from './exams';
@@ -19,9 +20,11 @@ import type { Faq } from './exam-faqs';
 // already shows those figures correctly in their own blocks. These answer what
 // it does not.
 //
-// The syllabus and eligibility pages of the same exam must also not converge.
-// Ten exams have both, one click apart, so the questions differ in angle rather
-// than being one template with a noun swapped.
+// The syllabus, eligibility and selection-process pages of the same exam must
+// also not converge. Ten exams carry all three, a click apart from each other,
+// so the questions differ in angle rather than being one template with a noun
+// swapped. Syllabus asks what is examined, eligibility asks who may sit it,
+// selection process asks what clearing it actually involves.
 
 function listOf(values: string[]): string {
   return values.length > 1 ? `${values.slice(0, -1).join(', ')} and ${values[values.length - 1]}` : values[0] ?? '';
@@ -51,7 +54,7 @@ function patternFaq(exam: ExamConfig, country: string, phrasing: 'syllabus' | 'e
 }
 
 /** Where the page's figures came from, read off the guide's own source block. */
-function sourceFaq(guide: ExamGuidePage, exam: ExamConfig, kind: 'syllabus' | 'eligibility'): Faq {
+function sourceFaq(guide: ExamGuidePage, exam: ExamConfig, kind: 'syllabus' | 'eligibility' | 'selection-process'): Faq {
   const note = guide.blocks.find((block) => block.type === 'sourceNote');
   // Some source labels name the document ("official SSC CGL 2026 notice") and
   // some are the link's own call to action ("View the official notice"). Only
@@ -64,6 +67,12 @@ function sourceFaq(guide: ExamGuidePage, exam: ExamConfig, kind: 'syllabus' | 'e
   const cited = stripped
     ? /^[a-z]/.test(stripped) ? `the ${stripped}` : stripped
     : undefined;
+  if (kind === 'selection-process') {
+    return {
+      q: `Can the ${exam.name} selection process change between cycles?`,
+      a: `Yes, and it does. Stages get added, merged or dropped, a qualifying paper becomes merit-bearing, or a skill test moves from one stage to another, and the change is announced in the notification for that cycle rather than separately. The sequence on this page is read from ${cited ?? 'the official document'}, cited and linked at the foot of the page, so check it against the current notification before assuming the process you prepared for last year is the one you will sit.`,
+    };
+  }
   return kind === 'syllabus'
     ? {
         q: `Is this ${exam.name} syllabus current?`,
@@ -134,5 +143,57 @@ export function getEligibilityFaqs(exam: ExamConfig, guide: ExamGuidePage, count
   }
 
   faqs.push(sourceFaq(guide, exam, 'eligibility'));
+  return faqs;
+}
+
+export function getSelectionProcessFaqs(exam: ExamConfig, guide: ExamGuidePage, country: string): Faq[] {
+  const tests = getCheckedTestCount(exam);
+  const faqs: Faq[] = [];
+
+  // Every selection-process guide carries a numberedStages block, so the lead
+  // answer names the real stages in their real order rather than describing a
+  // generic recruitment funnel.
+  const stageBlock = guide.blocks.find((block) => block.type === 'numberedStages');
+  const stages = stageBlock && stageBlock.type === 'numberedStages' ? stageBlock.items : [];
+
+  if (stages.length > 0) {
+    faqs.push({
+      q: `What is the ${exam.name} selection process?`,
+      a: `It runs to ${stages.length} stages, in this order: ${listOf(stages.map((stage) => stage.title))}. Each is described on this page with what it involves and what clearing it requires. You reach a stage only by clearing the one before it, so the whole process is a funnel rather than a checklist you work through in parallel.`,
+      links: tests > 0 ? [{ href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` }] : undefined,
+    });
+
+    // The thing candidates most often get wrong about a multi-stage process,
+    // and the reason a high score at one stage can count for nothing.
+    faqs.push({
+      q: `Do marks from every ${exam.name} stage count towards the final merit?`,
+      a: `Not necessarily, and it is worth checking rather than assuming. Multi-stage recruitments usually mix two kinds of stage: qualifying ones, which you must clear but whose marks are discarded afterwards, and merit-bearing ones, whose marks carry into the final ranking. Clearing a qualifying stage comfortably earns nothing beyond clearing it, so effort spent pushing that score higher is effort not spent on the stage that decides your rank. The stage descriptions on this page say which is which, and the notification is the authority on it.`,
+    });
+
+    if (tests > 0) {
+      faqs.push({
+        q: `Which ${exam.name} stage should I prepare for first?`,
+        a: `${stages[0].title}, because nobody sees stage two without it. It is also the stage with the most competition in it: every applicant sits it, and it exists to cut that field down. Preparing for a later stage before clearing the first is the commonest way candidates waste a cycle. There ${tests === 1 ? 'is 1 free test' : `are ${tests} free tests`} for ${exam.name} here to work on it with.`,
+        links: [{ href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` }],
+      });
+    }
+
+    // Only where the exam actually has such a stage. Six of the eleven do.
+    const verification = stages.find((stage) => /document verification/i.test(stage.title));
+    if (verification) {
+      faqs.push({
+        q: `What happens at ${exam.name} document verification?`,
+        a: `Everything you declared when you applied is checked against original documents: date of birth, category, educational qualification, and any relaxation or reservation you claimed. Nothing is re-assessed and no marks are awarded; the stage exists to confirm that the application the whole process was run on was true. A candidate who cannot produce an original at this point is rejected here, after clearing every stage, which is why the conditions are worth checking against your own papers before applying rather than after.`,
+        // The eligibility route is noIndex for any exam without its own
+        // guide, so the link is gated on that guide existing rather than on
+        // all six current document-verification exams happening to have one.
+        links: getExamGuide(exam.slug, 'eligibility')
+          ? [{ href: `/${country}/${exam.slug}/eligibility`, label: `${exam.name} eligibility` }]
+          : undefined,
+      });
+    }
+  }
+
+  faqs.push(sourceFaq(guide, exam, 'selection-process'));
   return faqs;
 }
