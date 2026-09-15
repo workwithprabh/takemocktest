@@ -4,6 +4,7 @@ import { getExamGuide } from '@/lib/exam-guides';
 import { notFound } from 'next/navigation';
 import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 import GuideBlocks from '@/components/GuideBlocks';
+import { getSalaryFaqs } from '@/lib/guide-faqs';
 import { pageMetadata } from '@/lib/metadata';
 
 // Nested under [country], so Next.js passes the parent's params in. Filtering
@@ -42,7 +43,7 @@ export default async function SalaryPage({ params }: { params: Promise<{ country
 
   if (guide) {
     return (
-      <ExamInfoPageContent country={country} exam={exam} pageName="Salary" pageSlug="salary" heading={guide.heading}>
+      <ExamInfoPageContent country={country} exam={exam} pageName="Salary" pageSlug="salary" heading={guide.heading} faqs={getSalaryFaqs(exam, guide, country)}>
         <GuideBlocks blocks={guide.blocks} />
       </ExamInfoPageContent>
     );
