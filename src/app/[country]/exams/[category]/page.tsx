@@ -4,7 +4,8 @@ import { COUNTRIES } from '@/lib/exams';
 import { notFound } from 'next/navigation';
 import { CategoryIcon } from '@/components/ExamCategoryCard';
 import { getCategoryExamCount, getExamCatalog, getExamCategory } from '@/lib/exam-catalog';
-import { breadcrumbSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
+import { breadcrumbSchema, faqPageSchema, itemListSchema, jsonLdHtml } from '@/lib/schema';
+import { getCategoryFaqs } from '@/lib/category-faqs';
 import { pageMetadata } from '@/lib/metadata';
 import ExamFinder from '@/components/ExamFinder';
 
@@ -41,6 +42,7 @@ export default async function ExamCategoryPage({
     .flatMap((group) => group.exams)
     .filter((exam) => exam.liveSlug)
     .map((exam) => ({ name: exam.name, path: `/${country}/${exam.liveSlug}/mock-test` }));
+  const faqs = getCategoryFaqs(category, country);
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-10 md:py-14">
@@ -60,6 +62,12 @@ export default async function ExamCategoryPage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLdHtml(itemListSchema(liveExams)) }}
+        />
+      )}
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(faqPageSchema(faqs)) }}
         />
       )}
 
@@ -96,6 +104,34 @@ export default async function ExamCategoryPage({
       </div>
 
       <ExamFinder categories={[category]} country={country} mode="category" />
+
+      {faqs.length > 0 && (
+        <section className="mt-12" aria-labelledby="category-faq-heading">
+          <h2 id="category-faq-heading" className="mb-4 text-xl font-bold text-ink-900 md:text-2xl">Frequently asked questions</h2>
+          <div className="border border-ink-200 bg-white">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="group border-b border-ink-200 last:border-b-0">
+                <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold text-ink-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700">
+                  {faq.q}
+                  <span className="text-xl font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
+                </summary>
+                <div className="max-w-3xl px-4 pb-4">
+                  <p className="text-sm leading-6 text-ink-600">{faq.a}</p>
+                  {faq.links && faq.links.length > 0 && (
+                    <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                      {faq.links.map((link) => (
+                        <li key={link.href}>
+                          <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mt-12 border border-ink-200 bg-ink-50 p-5" aria-labelledby="research-sources">
         <h2 id="research-sources" className="mb-2 text-sm font-bold text-ink-900">Official sources reviewed</h2>
