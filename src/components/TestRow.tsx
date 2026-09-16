@@ -10,6 +10,7 @@ interface TestRowProps {
   checkedOn?: string;
   status?: 'new' | 'done';
   score?: string;
+  showKind?: boolean;
   /** Derived in lib/test-coverage.ts. Shown only when it says something. */
   coverage?: string;
 }
@@ -24,6 +25,7 @@ export default function TestRow({
   checkedOn,
   status = 'new',
   score,
+  showKind = true,
   coverage,
 }: TestRowProps) {
   const kindLabel = {
@@ -41,17 +43,15 @@ export default function TestRow({
       className="group flex flex-col items-stretch gap-3 border-b border-ink-200 py-4 transition last:border-none hover:bg-ink-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:flex-row sm:items-center sm:justify-between"
     >
       <div className="min-w-0 sm:pr-3">
-        <div className="mb-1 flex flex-wrap items-center gap-2">
-          <span className="bg-action-50 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-action-800">{kindLabel}</span>
+        <div className="text-sm font-semibold leading-5 text-ink-900">{name}</div>
+        <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-600">
+          {showKind && <span className="bg-action-50 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-action-800">{kindLabel}</span>}
+          <span>{questions} questions</span>
+          <span>{minutes} minutes</span>
           <span className={`px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${contentStatus === 'checked' ? 'bg-live-50 text-live-800' : 'bg-ink-100 text-ink-700'}`}>
             {contentStatus === 'checked' ? 'Syllabus checked' : 'Practice demo'}
           </span>
-        </div>
-        <div className="text-sm font-semibold leading-5 text-ink-900">{name}</div>
-        <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-ink-600">
-          <span>{questions} questions</span>
-          <span>{minutes} minutes</span>
-          <span>{checkedOn ? `Checked ${checkedOn}` : 'Demo scoring'}</span>
+          {checkedOn && <span>Checked {checkedOn}</span>}
         </div>
         {/* A test named "Full mock" that is 110 of 170 official questions has
             to say so where the person is deciding whether to start it, not in a
@@ -62,8 +62,8 @@ export default function TestRow({
       </div>
       {status === 'done' ? (
         <div className="flex items-center justify-between gap-2 sm:justify-end">
-          <span className="text-[10px] font-semibold px-2 py-0.5 bg-ink-100 text-ink-700">{score}</span>
-          <span className="border border-ink-200 px-3 py-2 text-xs font-semibold text-ink-900 transition group-hover:border-ink-900">
+          <span className="bg-ink-100 px-2 py-1 text-xs font-semibold text-ink-700">Score {score}</span>
+          <span className="flex min-h-10 items-center border border-ink-200 px-3 text-xs font-semibold text-ink-900 transition group-hover:border-ink-900">
             Retake
           </span>
         </div>
