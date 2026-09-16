@@ -62,7 +62,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'how-to-build-a-study-timetable',
     title: 'How to Build a Study Timetable That Actually Works',
-    excerpt: 'A realistic weekly timetable beats an ambitious one you abandon after three days. Here\'s how to build one you\'ll stick to.',
+    excerpt: 'A realistic weekly timetable beats an ambitious one you abandon after three days. Block your fixed hours first; what is left is the real budget.',
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-01-10',
@@ -141,7 +141,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'understanding-negative-marking',
     title: 'Understanding Negative Marking: A Complete Guide',
-    excerpt: 'Negative marking changes the optimal strategy for guessing. Here\'s the math behind when a guess is worth it, and when it isn\'t.',
+    excerpt: 'Negative marking changes the optimal strategy for guessing. Once you can rule out one option of four, a guess usually beats leaving it blank.',
     category: 'Exam Strategy',
     readTimeMin: 4,
     publishedAt: '2026-01-24',
@@ -169,8 +169,8 @@ export const BLOG_POSTS: BlogPost[] = [
         ['None', 'e.g. SSC MTS Session 1, LIC AAO Prelims'],
       ] },
       { type: 'paragraph', heading: 'When a guess is worth it', text: 'If you can confidently eliminate even one of four options, a random guess among the rest has better expected value than leaving it blank, for most standard negative-marking ratios. A pure blind guess with all four options still open is usually close to break-even or slightly negative, so it\'s better left unattempted.' },
-      { type: 'paragraph', heading: 'Why this matters more than most students think', text: 'A handful of careless guesses can quietly erase the marks gained from your strongest section. Treat "should I guess this?" as a real decision each time, not a reflex, and review your mock test results specifically for wrong answers on questions you weren\'t sure about; [how to analyze your mock test performance](/blog/how-to-analyze-your-mock-test-performance) covers how to separate those from genuine knowledge gaps.' },
-      { type: 'callout', text: 'A handful of careless guesses can quietly erase the marks gained from your strongest section.' },
+      { type: 'paragraph', heading: 'Why this matters more than most students think', text: 'A handful of careless guesses can erase the marks gained from your strongest section without ever showing up as a weak section. Treat "should I guess this?" as a real decision each time, not a reflex, and review your mock test results specifically for wrong answers on questions you weren\'t sure about; [how to analyze your mock test performance](/blog/how-to-analyze-your-mock-test-performance) covers how to separate those from genuine knowledge gaps.' },
+      { type: 'callout', text: 'A handful of careless guesses can erase the marks gained from your strongest section without ever showing up as a weak section.' },
       { type: 'paragraph', text: 'This is one of [5 common mistakes in SSC CGL preparation](/blog/common-ssc-cgl-preparation-mistakes) worth checking yourself against directly, since ignoring the exact deduction on your exam is a surprisingly frequent, entirely avoidable one.' },
     ],
     faqs: [
@@ -221,7 +221,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'how-to-analyze-your-mock-test-performance',
     title: 'How to Analyze Your Mock Test Performance',
-    excerpt: 'A score alone tells you almost nothing useful. Here\'s what to actually look at after every mock test.',
+    excerpt: 'A score alone tells you almost nothing useful. The section breakdown, the unattempted count and the trend across tests do.',
     category: 'Mock Tests',
     readTimeMin: 6,
     publishedAt: '2026-02-07',
@@ -296,7 +296,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [
       { q: 'Does IBPS PO test General Awareness like SSC CGL does?', a: 'No. IBPS PO Prelims drops General Awareness from its core sections in favor of deeper Quantitative Aptitude and Reasoning, while SSC CGL Tier 1 tests General Awareness alongside those same two sections plus English.' },
       { q: 'Which is tougher, IBPS PO or SSC CGL?', a: 'Neither is objectively tougher, and the first stages are structurally very close: 100 questions in 60 minutes, sectional timers, and a quarter of a question\'s value lost per wrong answer in both. They punish different weaknesses. SSC CGL Tier 1 devotes one of its four subject windows to General Awareness, so a quarter of the paper rewards knowledge you either have or do not. IBPS PO Prelims has no General Awareness, but requires you to qualify each of its three separately timed tests, so one weak section can end the attempt regardless of your total.' },
-      { q: 'Which is harder to time, IBPS PO or SSC CGL?', a: 'Both are sectionally locked and both give you 100 questions in 60 minutes, so the per-question pace is effectively the same at about 36 seconds. SSC CGL Tier 1 uses four 15-minute subject windows; IBPS PO Prelims uses three 20-minute tests. Within IBPS PO the pressure is uneven rather than higher, with 30 English questions in 20 minutes against 35 each for Quantitative Aptitude and Reasoning in the same time.' },
+      { q: 'Which is harder to time, IBPS PO or SSC CGL?', a: 'Both are sectionally locked and both give you 100 questions in 60 minutes, so the per-question pace is the same at about 36 seconds. SSC CGL Tier 1 uses four 15-minute subject windows; IBPS PO Prelims uses three 20-minute tests. Within IBPS PO the pressure is uneven rather than higher, with 30 English questions in 20 minutes against 35 each for Quantitative Aptitude and Reasoning in the same time.' },
       { q: 'Can I prepare for both IBPS PO and SSC CGL at the same time?', a: 'Yes, and many aspirants do. The overlapping subjects, Quantitative Aptitude, Reasoning, and English, mean focused practice for one exam builds skills that carry over to the other, even though the exact section mix and timing differ.' },
       { q: 'Does SSC CGL or IBPS PO include an interview stage?', a: 'IBPS PO does: it adds an interview stage after the written exams. SSC CGL does not use an interview for most posts, its selection is based on the written stages and document verification.' },
     ],
@@ -350,7 +350,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'qualifying-vs-merit-sections-banking-exams',
     title: 'Qualifying vs Merit Sections in Bank Exams',
-    excerpt: 'Some banking exams score every section toward your rank. A few wall off certain sections so only some marks actually count: here\'s how to tell which is which.',
+    excerpt: 'Some banking exams score every section toward your rank. A few wall off certain sections inside a single paper, so only some of your marks move your rank.',
     category: 'Exam Strategy',
     readTimeMin: 5,
     publishedAt: '2026-08-06',
@@ -387,7 +387,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'beginners-guide-to-banking-exams-in-india',
     title: 'A Beginner\'s Guide to Banking Exams in India',
-    excerpt: 'IBPS, SBI, and RBI get thrown around like they\'re interchangeable. They recruit differently, for different roles: here\'s an actual map of how they fit together.',
+    excerpt: 'IBPS, SBI and RBI get thrown around as if interchangeable. They sit at different levels, recruit differently, and past the clerk tier test different subjects.',
     category: 'Exam Guides',
     readTimeMin: 8,
     publishedAt: '2026-08-06',
@@ -400,7 +400,7 @@ export const BLOG_POSTS: BlogPost[] = [
       height: 720,
     },
     body: [
-      { type: 'paragraph', text: 'If you\'ve searched "best bank exam for beginners," you\'ve probably seen IBPS, SBI, and RBI mentioned as if picking between them is a single decision. It isn\'t: they sit at different levels, recruit differently, and (once you go past the clerk/PO tier) test genuinely different subject knowledge. This site currently hosts mock tests for twelve banking-family exams; here\'s how they actually fit together.' },
+      { type: 'paragraph', text: 'If you\'ve searched "best bank exam for beginners," you\'ve probably seen IBPS, SBI, and RBI mentioned as if picking between them is a single decision. It isn\'t: they sit at different levels, recruit differently, and (once you go past the clerk/PO tier) test genuinely different subject knowledge. This site currently hosts mock tests for twelve banking-family exams, and they sort into four tiers.' },
       { type: 'takeaways', items: [
         'IBPS runs a common exam across multiple public sector banks; SBI recruits separately for itself.',
         'A regional rural bank tier and a specialist officer tier sit alongside the standard clerk/PO track.',
@@ -417,7 +417,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [
       { q: 'What is the difference between IBPS and SBI recruitment?', a: 'IBPS runs a common exam and allots selected candidates across multiple public sector banks based on merit and preference, while SBI runs its own separate recruitment specific to SBI, generally with a heavier workload and faster growth than the IBPS-allotted equivalent.' },
       { q: 'Which banking exam should a beginner start with?', a: 'The clerk and PO tier, IBPS PO, IBPS Clerk, SBI PO, and SBI Clerk, is where most beginners start, since the overlapping subjects mean focused practice for any one of these builds skills that carry over to the others.' },
-      { q: 'What is the difference between RBI Assistant and RBI Grade B?', a: 'RBI Assistant is RBI\'s clerical-level exam, while RBI Grade B is a direct-recruit officer role focused on monetary policy and banking regulation, a significantly different level and syllabus.' },
+      { q: 'What is the difference between RBI Assistant and RBI Grade B?', a: 'RBI Assistant is RBI\'s clerical-level exam, while RBI Grade B is a direct-recruit officer role focused on monetary policy and banking regulation, a different level and syllabus.' },
       { q: 'What are the Grade A officer exams beyond RBI Grade B?', a: 'NABARD Grade A (rural development and agriculture finance), SEBI Grade A (securities market regulation), and SIDBI Grade A & B (MSME and small-industry finance) are three more Grade-A officer exams most beginners do not hear about until later.' },
     ],
   },
@@ -460,7 +460,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'rbi-grade-b-vs-nabard-vs-sebi-vs-sidbi',
     title: 'RBI Grade B vs NABARD vs SEBI vs SIDBI',
-    excerpt: 'Four officer-level exams, four regulators, one overlapping Phase I syllabus: here\'s how RBI Grade B, NABARD, SEBI, and SIDBI actually differ.',
+    excerpt: 'Four officer-level exams, four regulators, one overlapping Phase I syllabus. Where RBI Grade B, NABARD, SEBI and SIDBI part ways is in what counts for merit.',
     category: 'Exam Guides',
     readTimeMin: 8,
     publishedAt: '2026-08-06',
@@ -569,7 +569,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'how-to-handle-exam-day-anxiety',
     title: 'How to Handle Exam Day Anxiety and Stay Calm Under Pressure',
-    excerpt: 'Most exam-day anxiety comes from unfamiliarity, not the difficulty of the questions. Here is what actually reduces it, beyond generic advice to "stay calm."',
+    excerpt: 'Most exam-day anxiety comes from unfamiliarity rather than the questions, which is why timed mocks do more for it than being told to stay calm.',
     category: 'Study Tips',
     readTimeMin: 5,
     publishedAt: '2026-08-12',
@@ -593,7 +593,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'paragraph', heading: 'Sleep beats one more hour of revision', text: 'Cramming until late the night before an exam trades sleep for marginal content review, and that trade rarely pays off. Working memory and processing speed both drop noticeably on poor sleep, which affects your entire performance, not just recall of the one extra topic you crammed. If you are choosing between an extra hour of revision and an extra hour of sleep the night before, sleep is very often the better trade.' },
       { type: 'callout', text: 'If your first experience with a live countdown timer is on exam day itself, some of your anxiety is simply your brain reacting to something genuinely new.' },
       { type: 'paragraph', heading: 'The first minute in the exam hall matters more than people think', text: 'Rushing straight into question one while still mentally settling in tends to produce careless mistakes early, which then compounds the anxiety further. Spending the first minute deliberately reading the instructions, noting the section order, and taking one slow breath resets your pace before the clock pressure fully kicks in. See [time management tips for the exam hall](/blog/time-management-during-the-exam) for what to do with your pacing once you are past that first minute.' },
-      { type: 'paragraph', heading: 'Reframe the physical symptoms', text: 'A racing heart and slightly sweaty palms right before an exam are physically almost identical to excitement, not just fear. Some sports psychology research suggests that consciously relabeling nervousness as excitement, rather than trying to suppress it, can reduce its negative effect on performance. It costs nothing to try on exam day.' },
+      { type: 'paragraph', heading: 'Reframe the physical symptoms', text: 'A racing heart and slightly sweaty palms right before an exam are physically almost identical to excitement, not just fear. Naming that feeling as excitement, rather than fighting it, gives your body nothing new to do and leaves the physical response where it already was. It costs nothing to try on exam day.' },
     ],
     faqs: [
       { q: 'What actually causes exam-day anxiety?', a: 'Most of it comes from unfamiliarity with the exam format itself, the countdown timer, the interface, the question palette, rather than the difficulty of the questions. Taking timed mock tests beforehand removes a large part of that unfamiliarity before exam day.' },
@@ -605,7 +605,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'preparing-for-exams-while-working-a-job',
     title: 'Preparing for Government Exams While Working a Full-Time Job',
-    excerpt: 'You will not get the eight-hour study days that full-time aspirants describe online, and you do not need them. Here is a realistic plan around a job.',
+    excerpt: 'You will not get the eight-hour study days full-time aspirants describe online, and you do not need them. Weekends carry most of the real load.',
     category: 'Study Tips',
     readTimeMin: 6,
     publishedAt: '2026-08-12',
@@ -691,7 +691,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     body: [
       { type: 'paragraph', text: 'Age limits and number of attempts get confused constantly: a surprising number of aspirants assume every competitive exam caps how many times you can attempt it, the way a couple of well-known exams do. Most government exams in India do not work that way at all: they cap your age, not your attempt count.' },
-      { type: 'paragraph', heading: 'Two different kinds of limits', text: 'Age-limited exams let you apply as many times as you want, as long as you fall within the eligible age band for that year\'s notification. Most SSC, Banking, and Railways exams work this way: there is no attempt cap on paper, only an age window, though in practice the age window itself limits how many times the notification comes around while you remain eligible. A smaller number of exams, most notably UPSC Civil Services, cap the actual number of attempts a candidate is allowed, separately from the age limit, with the exact cap varying by category.' },
+      { type: 'paragraph', heading: 'Two different kinds of limits', text: 'Age-limited exams let you apply as many times as you want, as long as you fall within the eligible age band for that year\'s notification. Most SSC, Banking, and Railways exams work this way: there is no attempt cap on paper, only an age window, though in practice the age window itself limits how many times the notification comes around while you remain eligible. A smaller number of exams, UPSC Civil Services best known among them, cap the actual number of attempts a candidate is allowed, separately from the age limit, with the exact cap varying by category.' },
       { type: 'takeaways', items: [
         'Most SSC, Banking, and Railways exams cap your age, not your number of attempts.',
         'A smaller number of exams, UPSC Civil Services being the best known, cap attempts directly and separately from age.',
@@ -713,7 +713,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'should-you-take-a-drop-year',
     title: 'Should You Take a Drop Year for Exam Preparation?',
-    excerpt: 'A dedicated year sounds like an obvious advantage. It is not always one. Here is what actually determines whether a drop year helps or hurts.',
+    excerpt: 'A dedicated year sounds like an obvious advantage. The risk is not running short of hours but having so many unstructured ones that discipline erodes.',
     category: 'Study Tips',
     readTimeMin: 6,
     publishedAt: '2026-08-12',
@@ -857,7 +857,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqs: [
       { q: 'Should I always try to attempt every question?', a: 'Only if your exam has little or no negative marking. With meaningful negative marking, attempting a question you cannot narrow down at all can cost you more than skipping it, so the right approach depends on your exam\'s scoring rules.' },
       { q: 'How do I know if I am being too fast or too cautious?', a: 'Split your mock test mistakes into two piles: questions you attempted and got wrong, and questions you left blank that you could plausibly have solved with more time. A larger first pile means slow down; a larger second pile means you are being overly cautious.' },
-      { q: 'Does negative marking change the right speed-accuracy balance?', a: 'Yes, significantly. A meaningful negative-marking penalty means a wrong guess can cost more than a correct answer earns, which pushes the right balance toward accuracy over raw attempt count. See understanding negative marking for the exact math.' },
+      { q: 'Does negative marking change the right speed-accuracy balance?', a: 'Yes. A meaningful negative-marking penalty means a wrong guess can cost more than a correct answer earns, which pushes the right balance toward accuracy over raw attempt count. See understanding negative marking for the exact math.' },
       { q: 'Is a slower, more accurate approach always safer?', a: 'Not necessarily. If your exam barely penalizes wrong answers, being overly cautious just means leaving recoverable marks unattempted. The right balance is specific to your exam\'s scoring rules, not a universally safer choice.' },
     ],
   },
@@ -1004,7 +1004,7 @@ export const BLOG_POSTS: BlogPost[] = [
         'A short daily habit beats an occasional long session for current affairs specifically, because the volume keeps arriving.',
         'Track what you get wrong in mock tests by topic area, not just by section, since GA mistakes cluster more than most sections.',
       ] },
-      { type: 'paragraph', heading: 'Why static GK deserves your first pass', text: 'History, geography, polity, and basic science make up a large share of most General Awareness sections, and none of it expires. A fact learned six months before your exam is exactly as correct on exam day as a fact learned yesterday. That makes static GK the highest-leverage place to start: it is the portion of GA you can genuinely finish, in the sense of reaching real coverage, rather than an ever-refilling pile you can only sample from.' },
+      { type: 'paragraph', heading: 'Why static GK deserves your first pass', text: 'History, geography, polity, and basic science make up a large share of most General Awareness sections, and none of it expires. A fact learned six months before your exam is exactly as correct on exam day as a fact learned yesterday. That makes static GK the place where an hour buys the most: it is the portion of GA you can genuinely finish, in the sense of reaching real coverage, rather than an ever-refilling pile you can only sample from.' },
       { type: 'paragraph', heading: 'Current affairs needs a different rhythm', text: 'Because current-affairs facts have a shelf life, and most exams draw questions from roughly the months leading up to the exam date rather than the entire preceding year, a short, consistent daily habit beats an occasional marathon session. Reading one reliable news source for ten to fifteen minutes a day and noting anything that looks exam-relevant, a new scheme, an appointment, an index or report, adds up to real coverage over months in a way that a single weekend cramming session cannot replicate, since most of what you would cram is already several months stale by exam day.' },
       { type: 'callout', text: 'A fact learned six months before your exam is exactly as correct on exam day as a fact learned yesterday. Current affairs does not have that property, which is exactly why the two need different study habits.' },
       { type: 'paragraph', heading: 'Where mock tests fit into this', text: 'General Awareness mistakes in a mock test cluster more than mistakes in Quantitative Aptitude or Reasoning tend to, because GA questions are independent facts rather than a skill you apply repeatedly. If your error log shows you consistently missing polity questions but getting geography right, that is a much more useful signal than an overall GA percentage, since it tells you exactly where the next study session should go. [How to build an error log](/blog/how-to-build-an-error-log) covers how to track this by topic rather than just by section.' },
@@ -1020,7 +1020,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'exam-day-checklist-what-to-carry',
     title: 'Exam Day Checklist: What to Carry and What Gets Rejected',
-    excerpt: 'Months of preparation can be undone by a missing printout or a phone left in a pocket. Here is what actually gets checked at the gate.',
+    excerpt: 'Months of preparation can be undone by a missing printout or a phone left in a pocket. Print the admit card and leave every device outside.',
     category: 'Exam Guides',
     readTimeMin: 4,
     publishedAt: '2026-08-14',
@@ -1041,7 +1041,7 @@ export const BLOG_POSTS: BlogPost[] = [
         'Arrive well before the gate-closing time stated on your admit card; late arrival is treated the same as absence at most exams.',
       ] },
       { type: 'paragraph', heading: 'The admit card is not optional, and neither is the format', text: 'A printed hard copy of your admit card is the standard requirement across SSC, Banking, and Railways exams; a copy saved on your phone is routinely rejected even if it looks identical. Print it as soon as it is released, check every field, your name, application number, exam centre address, exam slot and reporting time, against your application, and print a spare copy in case the first one gets damaged or lost.' },
-      { type: 'paragraph', heading: 'Electronics are the single most common reason for a turned-away candidate', text: 'Mobile phones, smartwatches, calculators, and any other electronic device are prohibited inside the exam hall at essentially every competitive exam in India, whether switched on or off. Leaving your phone in a bag outside the gate, rather than carrying it in and hoping it goes unnoticed, is the only reliable way to avoid this becoming the reason you do not get to sit the exam you spent months preparing for.' },
+      { type: 'paragraph', heading: 'Electronics are the single most common reason for a turned-away candidate', text: 'Mobile phones, smartwatches, calculators, and any other electronic device are prohibited inside the exam hall at every major competitive exam in India, whether switched on or off. Leaving your phone in a bag outside the gate, rather than carrying it in and hoping it goes unnoticed, is the only reliable way to avoid this becoming the reason you do not get to sit the exam you spent months preparing for.' },
       { type: 'callout', text: 'A printed hard copy of your admit card is the standard requirement; a copy saved on your phone is routinely rejected even if it looks identical.' },
       { type: 'table', heading: 'What is typically allowed and what is not', headers: ['Usually allowed', 'Usually prohibited'], rows: [
         ['Printed admit card and a valid photo ID', 'Mobile phones and smartwatches, even switched off'],
@@ -1054,7 +1054,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     faqs: [
       { q: 'Can I use a digital copy of my admit card instead of printing it?', a: 'No, at most exam centres a printed hard copy is required and a digital copy on your phone is rejected even if it displays correctly. Print your admit card as soon as it is released, and keep a spare copy.' },
-      { q: 'Are mobile phones allowed inside the exam hall if switched off?', a: 'No. Phones and other electronic devices are prohibited inside the exam hall at essentially every competitive exam in India regardless of whether they are switched on or off. Leave your phone outside the gate rather than carrying it in.' },
+      { q: 'Are mobile phones allowed inside the exam hall if switched off?', a: 'No. Phones and other electronic devices are prohibited inside the exam hall at every major competitive exam in India regardless of whether they are switched on or off. Leave your phone outside the gate rather than carrying it in.' },
       { q: 'What happens if I arrive after the gate-closing time on my admit card?', a: 'At most exams, entry is not allowed after the stated gate-closing time under any circumstances, and late arrival is treated the same as not showing up. Plan to arrive well before that time, accounting for travel and security checks.' },
       { q: 'Do exam-day rules like permitted items vary between different exams?', a: 'Yes, the exact list of what you can carry, and details like required pen colour, varies by exam and sometimes by cycle. Always check your own admit card and the exam\'s official notification for the definitive list rather than assuming it matches a different exam.' },
     ],
@@ -1085,7 +1085,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ]},
       { type: 'paragraph', heading: 'Word families multiply your return on effort', text: 'Many exam-relevant words share a Latin or Greek root, and learning the root gives you a shortcut into several related words at once instead of memorizing each separately. Someone who learns that "bene" relates to good or well already has a running start on benefit, benevolent, benefactor, and beneficial, four words for close to the cost of learning one. This is a far better use of limited study time than working through an alphabetical list, where each word is unrelated to the last.' },
       { type: 'callout', text: 'Someone who learns that "bene" relates to good or well already has a running start on benefit, benevolent, benefactor, and beneficial, four words for close to the cost of learning one.' },
-      { type: 'paragraph', heading: 'Reading does more work than a word list ever will', text: 'Regularly reading a newspaper editorial, a long-form article, or any reasonably sophisticated writing exposes you to unfamiliar words inside real sentences, where you can guess at meaning from context before checking a dictionary. That guess-then-confirm cycle is itself a form of active recall, which research on memory consistently shows produces stronger retention than passive review, and it has the side benefit of improving reading comprehension at the same time, which most exams also test directly.' },
+      { type: 'paragraph', heading: 'Reading does more work than a word list ever will', text: 'Regularly reading a newspaper editorial, a long-form article, or any reasonably sophisticated writing exposes you to unfamiliar words inside real sentences, where you can guess at meaning from context before checking a dictionary. That guess-then-confirm cycle is a form of active recall: you produce the meaning before you check it, which holds far better than rereading a definition you never had to retrieve. It also builds reading comprehension at the same time, which most exams test directly.' },
       { type: 'paragraph', heading: 'Spacing your review beats cramming a list once', text: 'A word reviewed only once, on the day you first learned it, is one you are likely to forget within a few days regardless of how memorable it felt at the time. Revisiting new words after a day, then a few days, then a couple of weeks, keeps them in working memory far more reliably than a single long session ever does. [Spaced repetition: how to actually remember what you study](/blog/spaced-repetition-how-to-actually-remember-what-you-study) covers exactly why spacing out review works and how to build it into a routine that does not need a dedicated app.' },
       { type: 'paragraph', text: 'Vocabulary is one piece of English preparation among several. Once it is part of your routine, [how to build a study timetable that actually works](/blog/how-to-build-a-study-timetable) covers where a short daily reading and review slot fits alongside your other sections.' },
     ],
@@ -1099,7 +1099,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'how-to-read-an-exam-notification',
     title: 'How to Read an Exam Notification Carefully',
-    excerpt: 'Official notifications run to dozens of pages and bury the details that actually change your preparation. Here is what to check, in order.',
+    excerpt: 'Official notifications run to dozens of pages and bury the details that change your preparation. Check eligibility first, then dates, then pattern.',
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-14',
@@ -1149,7 +1149,7 @@ export const BLOG_POSTS: BlogPost[] = [
       height: 720,
     },
     body: [
-      { type: 'paragraph', text: 'Spaced repetition, reviewing material again at increasing intervals instead of just once, is one of the highest-return habits an aspirant can build into an otherwise ordinary study routine. It works because of a well-documented finding in memory research: most new information fades fast without reinforcement, and a large share of what you study today, if reviewed only once, is gone within days.' },
+      { type: 'paragraph', text: 'Spaced repetition, reviewing material again at increasing intervals instead of just once, is one of the highest-return habits an aspirant can build into an otherwise ordinary study routine. It works on an ordinary property of memory: most new information fades fast without reinforcement, and a large share of what you study today, if reviewed only once, is gone within days.' },
       { type: 'paragraph', heading: 'Why a single review session is not enough', text: 'Reading a topic once, understanding it in the moment, and moving on feels like progress, and in the short term it is. But memory without reinforcement decays quickly, and by the time you circle back weeks later during revision, much of it needs to be relearned almost from scratch. That relearning is wasted effort you could have avoided with two or three short review sessions spread out over the weeks in between instead of one long session up front.' },
       { type: 'takeaways', items: [
         'Review new material again within a day or two of first learning it, not weeks later.',
@@ -1173,7 +1173,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'cat-vs-mat-vs-cmat-choosing-your-mba-entrance',
     title: 'CAT, MAT, CMAT, or a State MBA CET: Pick Your Exam',
-    excerpt: 'MBA aspirants rarely sit just one exam. Here is what differs between them: sectional locks, marking schemes, and question counts, and why it changes your prep.',
+    excerpt: 'MBA aspirants rarely sit just one exam. Sectional locks, marking schemes and question counts differ enough that a strategy for one can hurt you on another.',
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-19',
@@ -1223,7 +1223,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'ielts-vs-toefl-vs-pte-picking-your-english-test',
     title: 'IELTS, TOEFL, or PTE: Which English Test Should You Take?',
-    excerpt: 'Universities do not all accept the same test, and the three differ more in format than in difficulty. Here is what to check before you register for one.',
+    excerpt: 'Universities do not all accept the same test, and the three differ more in format than in difficulty. Check your shortlist before you register.',
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-19',
@@ -1260,7 +1260,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'nda-vs-cds-vs-afcat-choosing-your-defence-entry',
     title: 'NDA, CDS, or AFCAT: Matching the Exam to Your Entry Path',
-    excerpt: 'Age, education stage, and which service you want to join decide this one more than exam difficulty does. Here is how the major written tests actually differ.',
+    excerpt: 'Age, education stage and which service you want decide this one more than exam difficulty does. AFCAT and INET also set per-section minimums.',
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-19',
@@ -1305,7 +1305,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'clat-vs-ailet-vs-state-law-cets-first-timers-guide',
     title: 'CLAT, AILET, or a State Law CET: A Guide to Law Entrances',
-    excerpt: 'Legal Reasoning weighs very differently across these exams, and one of them has almost no legal content at all. Here is what actually separates them.',
+    excerpt: 'Legal Reasoning weighs very differently across these exams, and AILET gives Logical Reasoning nearly half its paper. Section weights decide your prep split.',
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-19',
@@ -1391,7 +1391,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'jee-main-vs-bitsat-vs-state-cets-engineering-prep',
     title: 'JEE Main, BITSAT, or a State CET: How Prep Differs',
-    excerpt: 'The marking schemes alone range from no penalty to a full mark deducted, and one exam mixes multiple-choice with typed numerical answers. Here is what changes.',
+    excerpt: 'The marking schemes alone range from no penalty to a full mark deducted, and one exam mixes multiple-choice with typed answers you cannot guess at.',
     category: 'Exam Guides',
     readTimeMin: 7,
     publishedAt: '2026-08-19',
@@ -1424,7 +1424,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'paragraph', heading: 'BITSAT, VITEEE, AEEE: similar penalty, different reward', text: 'These three institute exams all deduct 1 mark for a wrong answer, but reward correct answers differently: BITSAT (this is the 130-question Mathematics variant, before its optional 12 extra questions) and AEEE both award 3 marks, while VITEEE awards 4. VITEEE\'s negative marking is new as of the 2026 pattern, replacing a no-penalty rule used in 2025, so any advice or old practice papers built around the earlier no-negative-marking version are no longer accurate for this year\'s exam.' },
       { type: 'callout', text: 'VITEEE\'s negative marking is new as of 2026, replacing a no-penalty rule used in 2025. Advice or practice papers built around the earlier version are no longer accurate.' },
       { type: 'paragraph', heading: 'SRMJEEE and MET: the two outliers', text: 'SRMJEEE, in its PCM route, has no negative marking at all, +1 for a correct answer and zero for a wrong or unanswered one, and is delivered as a Remote Proctored Online Mode exam rather than at a physical test centre. MET mixes formats like JEE Main does, 45 multiple-choice questions plus 15 numerical-entry questions, but only penalizes wrong multiple-choice answers; a wrong numerical entry costs nothing, the same treatment JEE Advanced gives its numerical-value questions. On both of these, a genuine guess on a multiple-choice question you cannot narrow down at all is a much safer bet than the equivalent guess on BITSAT, VITEEE, or AEEE.' },
-      { type: 'paragraph', heading: 'What this means for your prep order', text: 'If you are preparing for JEE Main first and adding institute exams afterward, the marking-scheme differences above matter more than most students expect when it comes to translating a JEE Main score-per-attempt habit onto a different exam. A guessing strategy tuned for SRMJEEE\'s no-penalty format will lose you marks on BITSAT or VITEEE, and the numerical-entry sections on JEE Main and MET need their own separate accuracy check, since there is no multiple-choice option to eliminate down to a guess.' },
+      { type: 'paragraph', heading: 'What this means for your prep order', text: 'If you are preparing for JEE Main first and adding institute exams afterward, the marking-scheme differences above matter more than most students expect once a JEE Main score-per-attempt habit has to transfer to a different exam. A guessing strategy tuned for SRMJEEE\'s no-penalty format will lose you marks on BITSAT or VITEEE, and the numerical-entry sections on JEE Main and MET need their own separate accuracy check, since there is no multiple-choice option to eliminate down to a guess.' },
       { type: 'paragraph', text: 'See [understanding negative marking](/blog/understanding-negative-marking) for the general math behind when a guess is worth it, and the [engineering exams directory](/exams/engineering) for practice tests across JEE Main, JEE Advanced, BITSAT, VITEEE, SRMJEEE, AEEE, and MET, each matched to its actual marking scheme.' },
     ],
     faqs: [
@@ -1437,7 +1437,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'nata-vs-jee-main-paper-2-choosing-your-barch-entry',
     title: 'NATA or JEE Main Paper 2: Which B.Arch Entrance Do You Need?',
-    excerpt: 'Almost every architecture college in India requires NATA, except those needing JEE Main Paper 2; a few IITs require neither. Here is which applies to you.',
+    excerpt: 'Almost every architecture college in India requires NATA, except those needing JEE Main Paper 2. Three IITs use JEE Advanced and a pass-or-fail AAT instead.',
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-20',
@@ -1652,7 +1652,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'mht-cet-vs-jee-main-maharashtra-engineering-admission',
     title: 'MHT CET or JEE Main: Which Gets You a Maharashtra Seat?',
-    excerpt: 'Roughly 85% of Maharashtra\'s private engineering seats, and 100% of government ones, go through MHT CET, not JEE Main. Here\'s what each score unlocks.',
+    excerpt: 'Roughly 85% of Maharashtra\'s private engineering seats, and 100% of government ones, go through MHT CET, not JEE Main. The two unlock different pools.',
     category: 'Exam Guides',
     readTimeMin: 6,
     publishedAt: '2026-08-22',
@@ -1884,7 +1884,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ['Skill Test dictation speed', '100 words per minute, 10-minute dictation', '80 words per minute, 10-minute dictation'],
         ['Merit basis', 'CBT marks (normalized across shifts) decide shortlist and final merit', 'Identical basis to Grade C'],
       ] },
-      { type: 'paragraph', heading: 'One exam, one shortlisting mechanism', text: 'General Intelligence and Reasoning, General Awareness, and English Language and Comprehension make up the CBT for both grades, in the exact same proportions, under the exact same single 120-minute timer with no sectional lock. There is no Grade C-specific or Grade D-specific version of this paper: your CBT score, normalized across shifts to account for difficulty differences between exam sessions, is what both shortlists you for the Skill Test and ultimately decides your final merit position.' },
+      { type: 'paragraph', heading: 'One exam, one shortlisting mechanism', text: 'General Intelligence and Reasoning, General Awareness, and English Language and Comprehension make up the CBT for both grades, in the exact same proportions, under the exact same single 120-minute timer with no sectional lock. There is no Grade C-specific or Grade D-specific version of this paper: your CBT score, normalized across shifts to account for difficulty differences between exam sessions, is what both shortlists you for the Skill Test and decides your final merit position.' },
       { type: 'paragraph', heading: 'Where Grade C and Grade D actually part ways', text: 'The Skill Test in Stenography is a dictation-and-transcription test, and it is where the two grades stop being identical: Grade C candidates must take dictation at 100 words per minute, Grade D candidates at 80 words per minute, both for a 10-minute passage before transcribing it. It is qualifying in nature rather than scored into your final marks the way the CBT is, but it is also the stage many candidates find harder to clear than the written exam itself, and it is not a multiple-choice format, so it is not modeled on this site.' },
       { type: 'callout', text: 'Everything up to the Skill Test is identical between Grade C and Grade D. Know which grade\'s dictation speed you are actually training toward once you clear the CBT.' },
       { type: 'paragraph', text: 'This site\'s mocks cover the CBT stage only, since the Skill Test is not a written multiple-choice format; stenography dictation and transcription practice needs to happen separately, alongside your CBT preparation rather than after it. Practice tests are available from [SSC Stenographer](/ssc-steno/mock-test), part of the [government exams directory](/exams/government-jobs).' },
@@ -2289,7 +2289,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
   "slug": "assam-cee-2026-exam-pattern-explained",
   "title": "Assam CEE 2026 Exam Pattern: 120 Questions, +4/-1 Scoring",
-  "excerpt": "Assam CEE looks like a smaller JEE Main on paper: same +4/-1 scoring, same PCM subjects. The syllabus underneath differs, and that is the detail most first-timers miss.",
+  "excerpt": "Assam CEE looks like a smaller JEE Main: same +4/-1 scoring, same PCM subjects. The syllabus underneath differs, and that is what first-timers miss.",
   "category": "Exam Guides",
   "readTimeMin": 6,
   "publishedAt": "2026-08-26",
@@ -2658,7 +2658,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ['General Arithmetic, General Intelligence and Reasoning', '10', '10', 'Yes'],
         ['General Science', '10', '10', 'Yes'],
       ] },
-      { type: 'paragraph', heading: 'Professional Ability is really seven-plus different exams wearing one label', text: 'A Staff Nurse candidate\'s Professional Ability questions have essentially nothing in common with a Radiographer\'s or a Pharmacist\'s. Each is a genuine professional syllabus tied to that specific role, not a shared pool of general medical trivia that a single question bank could honestly represent. Building one generic "Professional Ability" mock would mean either covering none of the posts accurately or picking one post and mislabeling it as universal, neither of which is an honest way to help a candidate prepare.' },
+      { type: 'paragraph', heading: 'Professional Ability is really seven-plus different exams wearing one label', text: 'A Staff Nurse candidate\'s Professional Ability questions have almost nothing in common with a Radiographer\'s or a Pharmacist\'s. Each is a genuine professional syllabus tied to that specific role, not a shared pool of general medical trivia that a single question bank could honestly represent. Building one generic "Professional Ability" mock would mean either covering none of the posts accurately or picking one post and mislabeling it as universal, neither of which is an honest way to help a candidate prepare.' },
       { type: 'paragraph', heading: 'What a shared mock test can and can\'t do for you', text: 'This site\'s RRB Paramedical practice covers exactly the 30 questions that are genuinely identical across every post: General Awareness, General Arithmetic and General Intelligence and Reasoning, and General Science. That is real, honest coverage of a real 30% of the paper, not a stand-in for the other 70%. For Professional Ability itself, your own post\'s official syllabus and specialised study material remain the only accurate source, since no general-purpose resource can substitute for post-specific technical depth.' },
       { type: 'callout', text: 'This site\'s RRB Paramedical practice covers exactly the 30 questions that are genuinely identical across every post, not a stand-in for the 70 that aren\'t.' },
       { type: 'paragraph', heading: 'One CBT, no second chance', text: 'Unlike exams that follow a screening CBT with a separate Mains, RRB Paramedical has a single CBT that directly decides shortlisting for Document Verification, limited to the number of notified vacancies. There is no fallback stage to make up ground if the CBT underperforms, which makes the 30 genuinely common questions worth over-preparing rather than treating as a minor slice of the paper: at 1 mark each with no sectional lock across the full 90-minute paper, they are 30% of your score with no second attempt to recover it.' },
@@ -2760,7 +2760,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'ssc-je-paper-1-only-a-quarter-of-the-exam',
     title: 'SSC JE Paper I: Why This Site Covers Only a Quarter',
-    excerpt: 'Paper I is worth 100 marks. Paper II, the discipline-specific General Engineering paper, is worth 300, which is the context for what a Paper I mock test can do for you.',
+    excerpt: 'Paper I is worth 100 marks. Paper II, the discipline-specific General Engineering paper, is worth 300, which is the context for a Paper I mock test.',
     category: 'Exam Guides',
     readTimeMin: 5,
     publishedAt: '2026-08-29',
