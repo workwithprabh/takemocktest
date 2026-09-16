@@ -59,7 +59,14 @@ if (fs.existsSync('out/practice-index')) {
   for (const topic of new Set(firstStage.flatMap((test) => test.topics.map((entry) => entry.topic)))) {
     assert(select.includes(`value="${encode(topic)}"`), `Missing published topic: ${topic}`);
   }
-  assert(html.includes('Start here'), 'A checked starting test must be visible');
+  // The starting-test panel labels itself by the test's kind: "Start with a
+  // full mock" for a full-length starting test, "Start here" otherwise. This
+  // asserted the second label only, so the panel rendering correctly with the
+  // first one failed the gate. What the check is for is that the panel exists.
+  assert(
+    /Start with a full mock|Start here/.test(html),
+    'A checked starting test must be visible',
+  );
   console.log('Named-topic discovery checks passed.');
 }
 console.log('Practice recommendation checks passed.');
