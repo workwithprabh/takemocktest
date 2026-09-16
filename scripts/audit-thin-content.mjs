@@ -39,6 +39,26 @@ const SECTIONS = [
   // relative to its own reading: a little above the worst honest page, so a
   // copy edit never trips it but a slide back to templated prose does.
   { name: 'Blog', dir: 'in/blog', maxDuplicateShare: 0.25, minWords: 600 },
+  // Exam pattern pages went unmeasured until 16 September 2026 because they do
+  // not sit in a flat directory: they are in/<exam>/exam-pattern.html, one per
+  // exam, so a readdir of a single folder never saw them. That exemption hid
+  // the worst reading on the site. Every sentence on them is derived from the
+  // stage's own pattern, which is honest but means two exams with the same
+  // published pattern get the same page: KVS PRT and NVS TGT both set 100
+  // questions for 300 marks in 120 minutes with a 1-mark deduction over the
+  // same six sections, so 73% of each page also appears on the other.
+  //
+  // The ceilings below are a ratchet at today's reading, not a standard. 47%
+  // average would fail either section above. They are here so the number is
+  // printed on every run and cannot quietly get worse, and they should come
+  // down as hand-written per-exam copy lands on these pages.
+  {
+    name: 'Exam pattern',
+    glob: (entry) => `in/${entry}/exam-pattern.html`,
+    maxDuplicateShare: 0.75,
+    maxAverageDuplicateShare: 0.5,
+    minWords: 300,
+  },
 ];
 
 const SHINGLE = 8;
@@ -60,18 +80,36 @@ function mainText(file) {
 }
 
 for (const section of SECTIONS) {
-  const dir = path.join(out, section.dir);
-  if (!fs.existsSync(dir)) {
-    errors.push(`${section.name}: ${section.dir} not found in out/ — is the section still built?`);
+  // A section is either a flat folder of pages or one page per exam folder.
+  let files;
+  let nameOf;
+  if (section.glob) {
+    files = fs
+      .readdirSync(path.join(out, 'in'))
+      .map((entry) => path.join(out, section.glob(entry)))
+      .filter((file) => fs.existsSync(file));
+    // A noindexed page cannot earn a thin-content demotion, and these are
+    // noindexed wherever the pattern is still review-pending.
+    files = files.filter((file) => !fs.readFileSync(file, 'utf8').includes('noindex'));
+    nameOf = (file) => path.basename(path.dirname(file));
+  } else {
+    const dir = path.join(out, section.dir);
+    if (!fs.existsSync(dir)) {
+      errors.push(`${section.name}: ${section.dir} not found in out/ — is the section still built?`);
+      continue;
+    }
+    files = fs
+      .readdirSync(dir)
+      .filter((name) => name.endsWith('.html'))
+      .map((name) => path.join(dir, name));
+    nameOf = (file) => path.basename(file, '.html');
+  }
+  if (files.length < 2) {
+    errors.push(`${section.name}: found ${files.length} page(s) — is the section still built?`);
     continue;
   }
-  const files = fs
-    .readdirSync(dir)
-    .filter((name) => name.endsWith('.html'))
-    .map((name) => path.join(dir, name));
-  if (files.length < 2) continue;
 
-  const docs = files.map((file) => ({ name: path.basename(file, '.html'), words: mainText(file).split(' ') }));
+  const docs = files.map((file) => ({ name: nameOf(file), words: mainText(file).split(' ') }));
 
   const thin = docs.filter((doc) => doc.words.length < section.minWords);
   for (const doc of thin) {
@@ -111,8 +149,16 @@ for (const section of SECTIONS) {
       );
     }
   }
+  const average = total / docs.length;
+  if (section.maxAverageDuplicateShare !== undefined && average > section.maxAverageDuplicateShare) {
+    errors.push(
+      `${section.name}: ${Math.round(average * 100)}% of the average page's main content also appears on a ` +
+        `sibling (ceiling ${Math.round(section.maxAverageDuplicateShare * 100)}%) — the section as a whole is ` +
+        'drifting into template',
+    );
+  }
   notes.push(
-    `${section.name}: ${docs.length} pages, average ${Math.round((total / docs.length) * 100)}% shared content, ` +
+    `${section.name}: ${docs.length} pages, average ${Math.round(average * 100)}% shared content, ` +
       `worst ${Math.round(worst * 100)}% (${worstName})`,
   );
 }
