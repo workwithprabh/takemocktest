@@ -30,7 +30,7 @@ export default function MockTestTabs({
         </div>
         <p className="shrink-0 text-right text-xs text-ink-300">{active?.tests.length ?? 0} in<br />{active?.name}</p>
       </div>
-      <div className="flex gap-2 overflow-x-auto border-b border-ink-200 px-4 pt-4" role="group" aria-label="Exam stages">
+      <div className="flex gap-2 overflow-x-auto overflow-y-hidden border-b border-ink-200 px-4 pt-4" role="group" aria-label="Exam stages">
         {stages.map((stage) => (
           <button
             key={stage.id}
