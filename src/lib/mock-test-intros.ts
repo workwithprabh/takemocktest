@@ -16,6 +16,8 @@
 // generic line, which is honest about being generic rather than pretending to
 // be specific.
 
+import type { ExamConfig } from './exams';
+
 export interface MockTestIntro {
   /** Opening paragraph: what the series is, in this exam's own numbers. */
   readonly lead: string;
@@ -237,4 +239,55 @@ export const MOCK_TEST_INTROS: Readonly<Record<string, MockTestIntro>> = {
 
 export function getMockTestIntro(slug: string): MockTestIntro | undefined {
   return MOCK_TEST_INTROS[slug];
+}
+
+/**
+ * The opening line for an exam with no hand-written entry above.
+ *
+ * 29 of 183 exams have one. The other 154 opened with "Attempt checked {exam}
+ * full mocks, sectional tests, and quick timed practice", which is the exact
+ * mad-libs sentence this file's header says it exists to replace, still
+ * running on the highest-intent page 154 exams have.
+ *
+ * This does not invent the missing entry. It states the paper's real shape
+ * from the same verified StagePattern the pattern page renders, which is the
+ * rule exam-pattern-content.ts already follows: derived arithmetically from
+ * data that has been checked against a primary source, never asserted. The
+ * `strategy` paragraph stays absent for these exams, because saying which one
+ * rule should change how you practise is editorial judgement about the paper,
+ * not a figure that can be computed from it. A hand-written entry above still
+ * beats this, and this is not a reason to stop writing them.
+ */
+/**
+ * A terminal "and" is unreadable when the section names contain their own:
+ * the ACT's two sections came out as "Usage and Mechanics and Rhetorical
+ * Skills". Where one does, the list stays comma-separated.
+ */
+function joinSections(names: readonly string[]): string {
+  if (names.length === 1) return names[0];
+  if (names.some((name) => / and /i.test(name))) return names.join(', ');
+  return `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+}
+
+export function deriveMockTestLead(exam: ExamConfig): string {
+  const stage = exam.stages.find((item) => item.pattern.status === 'official') ?? exam.stages[0];
+  const pattern = stage?.pattern;
+  const tail = `Every ${exam.name} online test here is free to attempt and returns a section-wise result the moment you submit.`;
+  if (!pattern?.totalQuestions || !pattern.duration) {
+    return `A free ${exam.name} mock test series, built to the sections the official pattern lists. ${tail}`;
+  }
+  const subject = exam.stages.length === 1 ? 'The paper' : stage.name;
+  const marks = pattern.totalMarks ? ` for ${pattern.totalMarks} marks` : '';
+  // Section names only. describeSections() expands to per-section question and
+  // mark counts where a breakdown exists, which is right for the pattern table
+  // and a wall of text in an opening paragraph: UPSC CSE's seven sections ran
+  // to 40 words on their own. Four or fewer get named, more get counted.
+  const named = pattern.sections;
+  const covering =
+    named.length === 0
+      ? ''
+      : named.length <= 4
+        ? `, covering ${joinSections(named)}`
+        : `, across ${named.length} sections`;
+  return `A free ${exam.name} mock test series matching the official pattern. ${subject} runs ${pattern.totalQuestions} questions in ${pattern.duration} minutes${marks}${covering}. ${tail}`;
 }

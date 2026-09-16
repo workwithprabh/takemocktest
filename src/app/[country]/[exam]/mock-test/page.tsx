@@ -3,7 +3,7 @@ import { COUNTRIES, formatMarks, getExam, getSharedTests } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
-import { getMockTestIntro } from '@/lib/mock-test-intros';
+import { deriveMockTestLead, getMockTestIntro } from '@/lib/mock-test-intros';
 import { getTestCoverage } from '@/lib/test-coverage';
 import { getRelatedExams } from '@/lib/exam-clusters';
 import { breadcrumbSchema, organizationSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
@@ -122,7 +122,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
             <p className="mt-4 max-w-xl text-sm leading-6 text-ink-700 md:text-base">
               {intro
                 ? intro.lead
-                : `Attempt checked ${exam.name} full mocks, sectional tests, and quick timed practice. Every attempt ends with an instant, section-wise result.`}
+                : deriveMockTestLead(exam)}
             </p>
             {intro && (
               <p className="mt-3 max-w-xl text-sm leading-6 text-ink-700 md:text-base">{intro.strategy}</p>
