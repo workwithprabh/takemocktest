@@ -16,6 +16,7 @@
 // here — those are the fields we cannot derive and therefore do not write.
 
 import type { ExamConfig, StagePattern, TestStage } from './exams';
+import { formatMarks } from './exams';
 
 /**
  * Negative marking is typed `number | string` because some exams express it
@@ -91,7 +92,7 @@ export function getPatternInsights(pattern: StagePattern): PatternInsights {
 }
 
 function marksLabel(value: number): string {
-  return `${value} ${value === 1 ? 'mark' : 'marks'}`;
+  return `${formatMarks(value)} ${value === 1 ? 'mark' : 'marks'}`;
 }
 
 function joinSentences(parts: (string | undefined)[]): string {
@@ -258,7 +259,11 @@ export function getExamPatternFaqs(exam: ExamConfig): { q: string; a: string }[]
           ? `Yes. ${locked
               .map((stage) => `${label(stage)} times its sections separately`)
               .join(', ')}, so time left over in one section cannot be spent on another. Plan a per-section budget before you sit it.`
-          : `No. Every section shares one composite timer, so you can move between sections freely and give the slower ones more of your time.`,
+          : // Naming the exam and its actual clock. The bare version of this
+            // sentence was byte-identical on 110 pattern pages.
+            `No. ${exam.name} runs every section on one composite timer${
+              timed.length === 1 && timed[0].pattern.duration ? ` of ${timed[0].pattern.duration} minutes` : ''
+            }, so you can move between sections freely and give the slower ones more of your time.`,
     });
   }
 

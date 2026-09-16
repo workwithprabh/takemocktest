@@ -1,4 +1,4 @@
-import { ExamConfig, StagePattern, describeSections, getCheckedTestCount } from './exams';
+import { ExamConfig, StagePattern, describeSections, formatMarks, getCheckedTestCount } from './exams';
 import { getRelatedExams } from './exam-clusters';
 
 // FAQ content generated programmatically from already-verified ExamConfig
@@ -26,7 +26,7 @@ export interface Faq {
 function negativeMarkingFaqAnswer(negativeMarking: StagePattern['negativeMarking'], examName: string): string {
   if (typeof negativeMarking === 'number') {
     return negativeMarking > 0
-      ? `Yes. Each incorrect answer deducts ${negativeMarking} mark${negativeMarking === 1 ? '' : 's'} in ${examName}, and an unanswered question scores zero.`
+      ? `Yes. Each incorrect answer deducts ${formatMarks(negativeMarking)} mark${negativeMarking === 1 ? '' : 's'} in ${examName}, and an unanswered question scores zero.`
       : `No. ${examName} has no negative marking, and an unanswered question scores zero.`;
   }
   if (typeof negativeMarking === 'string') {
@@ -159,9 +159,32 @@ export function getExamPatternFaqs(exam: ExamConfig, country: string): Faq[] {
   }
 
   if (stages.some((stage) => stage.pattern.sourceUrl)) {
+    // Name the sections. The answer used to describe the site's process without
+    // ever mentioning this exam, which made one paragraph correct on 182 hub
+    // pages and specific to none of them. The section list is already on the
+    // pattern, so saying what is actually covered costs nothing and answers the
+    // question the reader asked rather than the one about methodology.
+    // One stage's sections, not every stage's flattened together. Pooling them
+    // gave SSC CGL a nine-item list mixing Tier 1 subjects with Tier 2's Data
+    // Entry Speed Test, which is not one syllabus and does not read as one.
+    const scopeStage = stages[0];
+    const covered = [...new Set(scopeStage.pattern.sections)];
+    // A terminal "and" is unreadable when the section names contain their own
+    // ("Probability and Distributions and Regression and Estimation"), so the
+    // list stays comma-separated whenever one of them does.
+    const innerAnd = covered.some((section) => / and /i.test(section));
+    const scope =
+      covered.length > 6
+        ? `${covered.length} sections`
+        : covered.length > 1
+          ? innerAnd
+            ? covered.join(', ')
+            : `${covered.slice(0, -1).join(', ')} and ${covered[covered.length - 1]}`
+          : covered[0];
+    const whose = stages.length === 1 ? 'the official pattern names' : `the official ${scopeStage.name} pattern names`;
     faqs.push({
       q: `Does this mock test cover the official ${exam.name} syllabus?`,
-      a: `Every test on this site is mapped to the official pattern and syllabus scope linked above, and independently checked before publishing. Granular topic labels beyond the official syllabus are a TakeMockTest preparation map, not an official subtopic list, unless stated otherwise.`,
+      a: `The ${exam.name} tests here are built to the sections ${whose}${scope ? ` (${scope})` : ''}, and each is checked against that pattern before it is published. Granular topic labels beneath those sections are a TakeMockTest preparation map, not an official subtopic list, unless stated otherwise.`,
       links: [
         ...(reviewPending ? [] : [{ href: `/${country}/${exam.slug}/exam-pattern`, label: `${exam.name} exam pattern` }]),
         { href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock tests` },
@@ -209,9 +232,18 @@ export function getMockTestFaqs(exam: ExamConfig, country: string): Faq[] {
   ];
 
   if (exam.stages.some((stage) => stage.pattern.sourceUrl)) {
+    // The comment below applies to this answer too, and for a while it did not:
+    // one sentence naming no figure and no exam sat on all 182 mock-test hubs.
+    // The figures it describes are on the pattern, so it states them.
+    const sourced = exam.stages.find((stage) => stage.pattern.sourceUrl) ?? exam.stages[0];
+    const pattern = sourced.pattern;
+    const shape =
+      pattern.totalQuestions && pattern.totalMarks && pattern.duration
+        ? ` For ${exam.stages.length === 1 ? 'the paper' : sourced.name}, that is ${pattern.totalQuestions} questions for ${pattern.totalMarks} marks in ${pattern.duration} minutes.`
+        : '';
     faqs.push({
       q: `Are these ${exam.name} tests based on the official pattern?`,
-      a: `Yes. Each checked test's question count, marks, duration, and negative marking match the official pattern shown above, with its source and checked date linked.`,
+      a: `Yes. Every checked ${exam.name} test matches the official pattern's question count, marks, duration and negative marking, and the source document is linked with the date it was last read.${shape}`,
     });
   }
 
@@ -240,7 +272,7 @@ export function getMockTestFaqs(exam: ExamConfig, country: string): Faq[] {
     faqs.push({
       q: `Do these ${exam.name} mock tests have negative marking?`,
       a: penalties[0] > 0
-        ? `Yes. Every ${exam.name} test here deducts ${penalties[0]} mark${penalties[0] === 1 ? '' : 's'} for a wrong answer and scores an unanswered question zero, the same as the official scheme it is checked against. Your result breaks out what the deduction cost you, so you can see whether guessing helped or hurt.`
+        ? `Yes. Every ${exam.name} test here deducts ${formatMarks(penalties[0])} mark${penalties[0] === 1 ? '' : 's'} for a wrong answer and scores an unanswered question zero, the same as the official scheme it is checked against. Your result breaks out what the deduction cost you, so you can see whether guessing helped or hurt.`
         : `No. ${exam.name} carries no penalty for a wrong answer, so every test here scores a wrong answer and an unanswered one the same way, at zero. There is no reason to leave a question blank.`,
     });
   } else if (penalties.length > 1) {

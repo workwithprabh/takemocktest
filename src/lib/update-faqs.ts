@@ -1,4 +1,4 @@
-import { getCheckedTestCount, getExam } from './exams';
+import { formatMarks, getCheckedTestCount, getExam } from './exams';
 import type { Faq } from './exam-faqs';
 import type { UpdateCategory, UpdateEntry } from './updates';
 
@@ -105,7 +105,7 @@ export function getUpdateFaqs(update: UpdateEntry, country: string): Faq[] {
   if (pattern?.totalQuestions && pattern.totalMarks && pattern.duration) {
     faqs.push({
       q: `What is the ${update.examName} exam pattern?`,
-      a: `${exam?.stages.length === 1 ? 'The paper' : `The ${officialStage?.name} stage`} is ${pattern.totalQuestions} questions for ${pattern.totalMarks} marks in ${pattern.duration} minutes, covering ${pattern.sections.length > 1 ? `${pattern.sections.slice(0, -1).join(', ')} and ${pattern.sections[pattern.sections.length - 1]}` : pattern.sections[0]}.${pattern.negativeMarking ? ` Wrong answers are penalised ${typeof pattern.negativeMarking === 'number' ? `${pattern.negativeMarking} per question` : `at ${pattern.negativeMarking}`}.` : ' There is no negative marking.'} Every figure is taken from the official source linked on the pattern page and carries the date it was last checked.`,
+      a: `${exam?.stages.length === 1 ? 'The paper' : `The ${officialStage?.name} stage`} is ${pattern.totalQuestions} questions for ${pattern.totalMarks} marks in ${pattern.duration} minutes, covering ${pattern.sections.length > 1 ? `${pattern.sections.slice(0, -1).join(', ')} and ${pattern.sections[pattern.sections.length - 1]}` : pattern.sections[0]}.${pattern.negativeMarking ? ` Wrong answers are penalised ${typeof pattern.negativeMarking === 'number' ? `${formatMarks(pattern.negativeMarking)} per question` : `at ${pattern.negativeMarking}`}.` : ' There is no negative marking.'} Every figure is taken from the official source linked on the pattern page and carries the date it was last checked.`,
       links: [{ href: `/${country}/${update.examSlug}/exam-pattern`, label: `${update.examName} exam pattern` }],
     });
   }

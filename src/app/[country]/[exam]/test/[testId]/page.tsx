@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { contentLocale } from '@/lib/hreflang';
-import { COUNTRIES, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
+import { COUNTRIES, formatMarks, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
 import type { ExamConfig, TestConfig, TestStage } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest, displayLabel } from '@/lib/questions';
@@ -2197,7 +2197,7 @@ export default async function TestInstructionsPage({
           answer: usesQuestionLevelScoring
             ? 'Marks vary by question in this section: see the scoring note above for the exact breakdown.'
             : test.negativeMarking > 0
-              ? `Yes. Each wrong answer deducts ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}, and each correct answer earns ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'}. Unattempted questions score zero.`
+              ? `Yes. Each wrong answer deducts ${formatMarks(test.negativeMarking)} ${test.negativeMarking === 1 ? 'mark' : 'marks'}, and each correct answer earns ${formatMarks(test.marksPerCorrect)} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'}. Unattempted questions score zero.`
               : 'No. This section carries no negative marking, so a wrong answer costs nothing beyond the mark you missed.',
         },
       ]
@@ -2319,7 +2319,7 @@ export default async function TestInstructionsPage({
                 ['Maximum marks', usesQuestionLevelScoring ? String(maxScore) : String(questionCount * test.marksPerCorrect)],
                 ['Timing', timingLabel],
                 ['Correct', usesQuestionLevelScoring ? 'Varies' : `+${test.marksPerCorrect}`],
-                ['Wrong', usesQuestionLevelScoring ? 'Varies' : test.negativeMarking > 0 ? `−${test.negativeMarking}` : 'No penalty'],
+                ['Wrong', usesQuestionLevelScoring ? 'Varies' : test.negativeMarking > 0 ? `−${formatMarks(test.negativeMarking)}` : 'No penalty'],
               ].map(([label, value]) => (
                 <div key={label} className="border-b border-r border-ink-200 p-3.5">
                   <dt className="text-[11px] leading-4 text-ink-500">{label}</dt>
@@ -2402,7 +2402,7 @@ export default async function TestInstructionsPage({
             <p className="text-sm leading-7 text-ink-700">
               {usesQuestionLevelScoring
                 ? `Each question uses its assigned marks and penalty; together they total ${maxScore} marks.`
-                : `Correct answers earn ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'} and wrong answers deduct ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}.`}{' '}
+                : `Correct answers earn ${formatMarks(test.marksPerCorrect)} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'} and wrong answers deduct ${formatMarks(test.negativeMarking)} ${test.negativeMarking === 1 ? 'mark' : 'marks'}.`}{' '}
               Unattempted questions score zero. After submitting, you receive section-wise and topic-wise
               accuracy, time spent, answer explanations, and source links.
             </p>
@@ -2462,7 +2462,7 @@ export default async function TestInstructionsPage({
             <p className="text-sm leading-7 text-ink-700">
               {usesQuestionLevelScoring
                 ? `Each question uses its assigned marks and penalty; together they total ${maxScore} marks.`
-                : `Correct answers earn ${test.marksPerCorrect} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'} and wrong answers deduct ${test.negativeMarking} ${test.negativeMarking === 1 ? 'mark' : 'marks'}.`}{' '}
+                : `Correct answers earn ${formatMarks(test.marksPerCorrect)} ${test.marksPerCorrect === 1 ? 'mark' : 'marks'} and wrong answers deduct ${formatMarks(test.negativeMarking)} ${test.negativeMarking === 1 ? 'mark' : 'marks'}.`}{' '}
               Unattempted questions score zero.
               {difficultyParts.length > 0 && ` This section's ${questionCount} questions are difficulty-tagged: ${difficultyParts.join(', ')}.`}
               {' '}After submitting, you receive topic-wise accuracy, time spent, answer explanations, and source links.

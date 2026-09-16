@@ -1,7 +1,7 @@
 import { getExamGuide } from './exam-guides';
 import type { ExamGuidePage, GuideBlock } from './exam-guides';
 import type { ExamConfig } from './exams';
-import { getCheckedTestCount } from './exams';
+import { formatMarks, getCheckedTestCount } from './exams';
 import type { Faq } from './exam-faqs';
 
 // FAQs for the per-exam guide pages: syllabus, eligibility, selection process,
@@ -47,7 +47,7 @@ function patternFaq(exam: ExamConfig, country: string, phrasing: 'syllabus' | 'e
   if (!pattern?.totalQuestions || !pattern.totalMarks || !pattern.duration) return undefined;
   const shape = `${pattern.totalQuestions} questions for ${pattern.totalMarks} marks in ${pattern.duration} minutes`;
   const penalty = pattern.negativeMarking
-    ? ` Wrong answers are penalised ${typeof pattern.negativeMarking === 'number' ? `${pattern.negativeMarking} per question` : `at ${pattern.negativeMarking}`}.`
+    ? ` Wrong answers are penalised ${typeof pattern.negativeMarking === 'number' ? `${formatMarks(pattern.negativeMarking)} per question` : `at ${pattern.negativeMarking}`}.`
     : ' There is no negative marking.';
   const single = exam.stages.length === 1;
   return phrasing === 'syllabus'

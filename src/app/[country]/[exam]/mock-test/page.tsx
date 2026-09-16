@@ -1,5 +1,5 @@
 import { contentLocale } from '@/lib/hreflang';
-import { COUNTRIES, getExam, getSharedTests } from '@/lib/exams';
+import { COUNTRIES, formatMarks, getExam, getSharedTests } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
@@ -246,7 +246,7 @@ export default async function MockTestPage({ params }: { params: Promise<{ count
                     <div><span className="text-ink-500">Duration:</span> <strong>{stage.pattern.duration ? `${stage.pattern.duration} minutes` : 'Not separately timed'}</strong></div>
                   </div>
                   <p className="mt-3 text-sm leading-6 text-ink-700">
-                    {stage.pattern.sections.join(' · ')}. Negative marking: {stage.pattern.negativeMarking} per wrong answer.
+                    {stage.pattern.sections.join(' · ')}. Negative marking: {typeof stage.pattern.negativeMarking === 'number' ? formatMarks(stage.pattern.negativeMarking) : stage.pattern.negativeMarking} per wrong answer.
                     {stage.pattern.timerNote ? ` ${stage.pattern.timerNote}.` : ''}
                   </p>
                   {stage.pattern.note && <p className="mt-2 text-xs leading-5 text-ink-700">{stage.pattern.note}</p>}
