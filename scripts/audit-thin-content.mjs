@@ -48,15 +48,18 @@ const SECTIONS = [
   // questions for 300 marks in 120 minutes with a 1-mark deduction over the
   // same six sections, so 73% of each page also appears on the other.
   //
-  // The ceilings below are a ratchet at today's reading, not a standard. 47%
+  // The ceilings below are a ratchet at today's reading, not a standard. 46%
   // average would fail either section above. They are here so the number is
-  // printed on every run and cannot quietly get worse, and they should come
-  // down as hand-written per-exam copy lands on these pages.
+  // printed on every run and cannot quietly get worse, and they come down each
+  // time a batch of hand-written per-exam copy lands. First batch, 16 exams,
+  // took the worst page from 73% to 66% and the section average from 47.2% to
+  // 45.8%; the ceilings moved with it. The remaining 125 pages still run on
+  // derived prose alone, which is what holds the average where it is.
   {
     name: 'Exam pattern',
     glob: (entry) => `in/${entry}/exam-pattern.html`,
-    maxDuplicateShare: 0.75,
-    maxAverageDuplicateShare: 0.5,
+    maxDuplicateShare: 0.68,
+    maxAverageDuplicateShare: 0.47,
     minWords: 300,
   },
 ];

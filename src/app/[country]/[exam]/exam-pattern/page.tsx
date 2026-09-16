@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import ExamInfoPageContent from '@/components/ExamInfoPageContent';
 import { faqPageSchema, jsonLdHtml } from '@/lib/schema';
+import { getExamPatternNote } from '@/lib/exam-pattern-notes';
 import {
   getExamPatternFaqs,
   getPatternInsights,
@@ -55,13 +56,20 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
   const exam = getExam(examSlug);
   if (!exam) return notFound();
   const faqs = getExamPatternFaqs(exam);
+  const note = getExamPatternNote(exam.slug);
 
   return (
     <ExamInfoPageContent country={country} exam={exam} pageName="Exam Pattern" pageSlug="exam-pattern">
       {faqs.length > 0 && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdHtml(faqPageSchema(faqs)) }} />
       )}
-      <p className="mb-6 text-sm leading-6 text-ink-700">The {exam.name} exam pattern below is checked stage by stage, so one stage cannot inherit another stage&apos;s scoring rules.</p>
+      {note && <p className="mb-4 text-sm leading-7 text-ink-800">{note}</p>}
+      {/* A stage-by-stage promise is worth making on an exam that has stages.
+          On a single-stage exam it says nothing, and it was the one sentence
+          every page in this section shared word for word. */}
+      {exam.stages.length > 1 && (
+        <p className="mb-6 text-sm leading-6 text-ink-700">The {exam.name} exam pattern below is checked stage by stage, so one stage cannot inherit another stage&apos;s scoring rules.</p>
+      )}
 
       <div className="space-y-5">
         {exam.stages.map((stage) => (
