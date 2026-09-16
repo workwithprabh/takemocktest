@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { COUNTRIES, getExam } from '@/lib/exams';
+import { COUNTRIES, formatMarks, getExam } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
@@ -79,7 +79,7 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Questions</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalQuestions}</td></tr>
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Total marks</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalMarks}</td></tr>
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Duration</td><td className="py-2 font-medium text-ink-900">{stage.pattern.duration ? `${stage.pattern.duration} minutes` : 'Not separately timed'}</td></tr>
-                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Negative marking</td><td className="py-2 font-medium text-ink-900">{stage.pattern.negativeMarking} per wrong answer</td></tr>
+                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Negative marking</td><td className="py-2 font-medium text-ink-900">{typeof stage.pattern.negativeMarking === 'number' ? formatMarks(stage.pattern.negativeMarking) : stage.pattern.negativeMarking} per wrong answer</td></tr>
                     <tr><td className="py-2 text-ink-700">Sections</td><td className="py-2 font-medium text-ink-900">{stage.pattern.sections.join(', ')}</td></tr>
                   </tbody>
                 </table>

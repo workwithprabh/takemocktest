@@ -14166,10 +14166,24 @@ export function describeSections(pattern: StagePattern): string {
   return pattern.sections.length <= 6 ? pattern.sections.join(', ') : `${pattern.sections.length} sections`;
 }
 
+/**
+ * A mark value as it should be published.
+ *
+ * One third of a mark is stored as a float, and interpolating it raw put
+ * "Each incorrect answer deducts 0.3333333333333333 marks" on 134 built pages,
+ * in visible prose and in FAQPage schema. Rounding to three places also
+ * harmonises the data, which records the same fraction as 0.33, 0.333 and
+ * 0.3333333333333333 across different exams, so the same rule now reads the
+ * same way wherever it appears.
+ */
+export function formatMarks(value: number): string {
+  return String(Math.round(value * 1000) / 1000);
+}
+
 function describeNegativeMarking(negativeMarking: number | string | undefined): string {
   if (typeof negativeMarking === 'number') {
     return negativeMarking > 0
-      ? `Each incorrect answer deducts ${negativeMarking} mark${negativeMarking === 1 ? '' : 's'}, and an unanswered question scores zero.`
+      ? `Each incorrect answer deducts ${formatMarks(negativeMarking)} mark${negativeMarking === 1 ? '' : 's'}, and an unanswered question scores zero.`
       : 'There is no negative marking, and an unanswered question scores zero.';
   }
   if (typeof negativeMarking === 'string') {
