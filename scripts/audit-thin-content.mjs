@@ -48,18 +48,25 @@ const SECTIONS = [
   // questions for 300 marks in 120 minutes with a 1-mark deduction over the
   // same six sections, so 73% of each page also appears on the other.
   //
-  // The ceilings below are a ratchet at today's reading, not a standard. 46%
+  // The ceilings below are a ratchet at today's reading, not a standard. 45%
   // average would fail either section above. They are here so the number is
   // printed on every run and cannot quietly get worse, and they come down each
-  // time a batch of hand-written per-exam copy lands. First batch, 16 exams,
-  // took the worst page from 73% to 66% and the section average from 47.2% to
-  // 45.8%; the ceilings moved with it. The remaining 125 pages still run on
-  // derived prose alone, which is what holds the average where it is.
+  // time a batch of hand-written per-exam copy lands. Two batches so far, 36
+  // exams: worst page 73% to 64%, pairs above 50% shared from 26 to 5, section
+  // average 47.2% to 44.5%.
+  //
+  // What is left is mostly the floor rather than the drift. The five pairs
+  // still above 50% all carry hand-written copy already, and they stay high
+  // because their papers are identical: the section table, the derived summary
+  // and the marking notes are the same text when the pattern is the same. On a
+  // 600-word page, 90 words of hand-written copy moves a genuine twin about ten
+  // points and no further. Going below that means writing a much larger share
+  // of each of those pages, not another batch of the same size.
   {
     name: 'Exam pattern',
     glob: (entry) => `in/${entry}/exam-pattern.html`,
-    maxDuplicateShare: 0.68,
-    maxAverageDuplicateShare: 0.47,
+    maxDuplicateShare: 0.66,
+    maxAverageDuplicateShare: 0.455,
     minWords: 300,
   },
 ];
