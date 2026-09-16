@@ -10,6 +10,7 @@ import {
   getPatternInsights,
   getStageMarkingNotes,
   getStageSummary,
+  stageLabel,
 } from '@/lib/exam-pattern-content';
 
 // Nested under [country], so Next.js passes the parent's params in. Filtering
@@ -79,7 +80,16 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Questions</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalQuestions}</td></tr>
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Total marks</td><td className="py-2 font-medium text-ink-900">{stage.pattern.totalMarks}</td></tr>
                     <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Duration</td><td className="py-2 font-medium text-ink-900">{stage.pattern.duration ? `${stage.pattern.duration} minutes` : 'Not separately timed'}</td></tr>
-                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Negative marking</td><td className="py-2 font-medium text-ink-900">{typeof stage.pattern.negativeMarking === 'number' ? formatMarks(stage.pattern.negativeMarking) : stage.pattern.negativeMarking} per wrong answer</td></tr>
+                    <tr className="border-b border-ink-200"><td className="py-2 text-ink-700">Negative marking</td><td className="py-2 font-medium text-ink-900">{
+                      // Seven stages record no negativeMarking at all, and the
+                      // row used to render as a blank followed by "per wrong
+                      // answer", which reads as though a deduction exists and
+                      // the figure went missing. Absent is not zero, and this
+                      // says which one it is.
+                      stage.pattern.negativeMarking === undefined
+                        ? 'Not stated in the source we checked'
+                        : `${typeof stage.pattern.negativeMarking === 'number' ? formatMarks(stage.pattern.negativeMarking) : stage.pattern.negativeMarking} per wrong answer`
+                    }</td></tr>
                     <tr><td className="py-2 text-ink-700">Sections</td><td className="py-2 font-medium text-ink-900">{stage.pattern.sections.join(', ')}</td></tr>
                   </tbody>
                 </table>
@@ -115,7 +125,7 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                   </div>
                   );
                 })()}
-                {stage.pattern.timerNote && <p className="mt-3 text-xs leading-5 text-ink-700">Timing: {stage.pattern.timerNote}.</p>}
+                {stage.pattern.timerNote && <p className="mt-3 text-xs leading-5 text-ink-700">Timing: {stage.pattern.timerNote.replace(/\s*\.\s*$/, '')}.</p>}
                 {stage.pattern.note && <p className="mt-2 text-xs leading-5 text-ink-700">{stage.pattern.note}</p>}
                 {stage.pattern.sourceUrl && (
                   <a href={stage.pattern.sourceUrl} target="_blank" rel="noreferrer" className="mt-3 inline-block text-xs font-semibold text-ink-900 underline">
@@ -127,7 +137,7 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                   // the table above — no new claims, just what they mean for
                   // someone deciding how to attempt the paper.
                   const summary = getStageSummary(exam, stage);
-                  const notes = getStageMarkingNotes(stage);
+                  const notes = getStageMarkingNotes(exam, stage);
                   const insights = getPatternInsights(stage.pattern);
                   if (!summary && notes.length === 0) return null;
                   return (
@@ -136,7 +146,7 @@ export default async function ExamPatternPage({ params }: { params: Promise<{ co
                       {notes.length > 0 && (
                         <>
                           <h3 className="mt-4 text-sm font-bold text-ink-900">
-                            {exam.name} {stage.name} marking scheme
+                            {stageLabel(exam, stage)} marking scheme
                           </h3>
                           <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-6 text-ink-700">
                             {notes.map((note) => <li key={note}>{note}</li>)}
