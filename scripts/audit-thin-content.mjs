@@ -48,12 +48,14 @@ const SECTIONS = [
   // questions for 300 marks in 120 minutes with a 1-mark deduction over the
   // same six sections, so 73% of each page also appears on the other.
   //
-  // The ceilings below are a ratchet at today's reading, not a standard. 45%
+  // The ceilings below are a ratchet at today's reading, not a standard. 43%
   // average would fail either section above. They are here so the number is
   // printed on every run and cannot quietly get worse, and they come down each
-  // time a batch of hand-written per-exam copy lands. Two batches so far, 36
-  // exams: worst page 73% to 64%, pairs above 50% shared from 26 to 5, section
-  // average 47.2% to 44.5%.
+  // time a batch of hand-written per-exam copy lands. Three batches so far, 56
+  // of the 141 pages: worst page 73% to 64%, pairs above 50% shared from 26 to
+  // 5, section average 47.2% to 43.4%. The third batch moved the average 1.1
+  // points and the pair list not at all, which is the marginal return to expect
+  // from here.
   //
   // What is left is mostly the floor rather than the drift. The five pairs
   // still above 50% all carry hand-written copy already, and they stay high
@@ -65,8 +67,8 @@ const SECTIONS = [
   {
     name: 'Exam pattern',
     glob: (entry) => `in/${entry}/exam-pattern.html`,
-    maxDuplicateShare: 0.66,
-    maxAverageDuplicateShare: 0.455,
+    maxDuplicateShare: 0.65,
+    maxAverageDuplicateShare: 0.44,
     minWords: 300,
   },
 ];
