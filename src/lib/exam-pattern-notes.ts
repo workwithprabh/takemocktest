@@ -67,6 +67,66 @@ export const EXAM_PATTERN_NOTES: Record<string, string> = {
 
   'sbi-clerk':
     'One section pays more per question than the rest. Reasoning Ability and Computer Aptitude awards 1.2 marks a question against 1 everywhere else, so its 50 questions carry 60 of the 200 marks while Quantitative Aptitude carries 50 from the same 50 questions. That is why Mains is 190 questions for 200 marks rather than 190 for 190, and why an hour spent there is not interchangeable with an hour spent elsewhere. Each section closes separately, and a local-language test sits alongside Mains in settling the final merit list.',
+
+  keam:
+    'Mathematics is half this paper and Chemistry a fifth. Seventy-five of the 150 questions carry 300 of the 600 marks, against 45 questions for Physics and 30 for Chemistry, so a revision plan divided three ways gives the deciding subject a third of what it is worth. The options matter here too. KEAM sets five per question rather than four, which its own prospectus states, and that moves the arithmetic: with 4 marks for a correct answer and 1 deducted, break-even sits at 20%, and a blind guess across five options returns exactly 20%. Guessing at random gains nothing on this paper. Ruling one option out is what makes an attempt pay.',
+
+  saeee:
+    'SAEEE asks you to choose before you start. The official pattern sets Mathematics or Biology as the first subject, and this stage is the PCM route; a candidate on the Biology route sits a different first section and will not find it here. Past that the paper is unusually plain: 60 questions in 60 minutes, 20 each in Mathematics, Physics and Chemistry, one mark apiece, nothing deducted and nothing locked. A minute a question with no penalty leaves almost no strategy to get wrong, which makes this a test of coverage rather than of nerve.',
+
+  kiitee:
+    'The three subjects are weighted identically, which is rarer among private engineering entrances than you might expect. Physics, Chemistry and Mathematics take 40 questions and 160 marks each, so there is no subject to specialise in and a weakness anywhere costs exactly a third of the paper. The 2026 Information Brochure confirms one composite 150-minute timer with free movement between sections, and that is where the plan actually lives: at 75 seconds a question, the surplus from your quickest subject is spendable on your slowest and nothing in the format stops you.',
+
+  'bv-btech':
+    'Two hundred questions with nothing deducted makes this a race rather than a gamble. The 2026 Information Brochure sets Mathematics at 80 questions against 60 each for Physics and Chemistry, one mark apiece, no penalty for a wrong answer, across 180 minutes. That is 54 seconds a question, and it is the whole constraint: with nothing to lose by answering, the only way to shed marks here is to run out of clock before reaching the end. Getting to the last question matters more than polishing the first fifty.',
+
+  'ibps-clerk':
+    'The Mains split is genuinely unsettled, and this page says so rather than picking a version. Current sources agree on the 2026 revision, 160 questions for 200 marks in 125 minutes, up from 155 questions in 120 minutes, with Quantitative Aptitude raised from 35 questions to 40. They disagree with each other on how Reasoning Ability and Computer Aptitude, English Language and General and Financial Awareness divide the rest, and the IBPS notification itself could not be independently checked. Treat the totals as firm and any per-section figure you find elsewhere as provisional. Prelims is settled: 100 questions across three separately locked 20-minute sections.',
+
+  aeee:
+    'Two of the five sections are not science at all. Quantitative Aptitude takes 10 questions and English 5, which is 15 of the 100 questions and 45 of the 300 marks, and a candidate preparing AEEE as a pure PCM paper walks straight past them. They are also the cheapest marks in it, needing no chapter revision to collect. Mathematics is the largest section at 40 questions. One caveat about the topic labels inside these tests: Amrita publishes section names and a State Board and CBSE scope without an exhaustive chapter list, so the granular topics are a preparation map built here rather than an official syllabus.',
+
+  'ca-intermediate':
+    'No candidate ever sits this as one paper. The 90 questions counted on this page are this site\'s coverage across six separately sat papers, and ICAI sets each one on its own: Section A is 15 compulsory multiple-choice questions at 2 marks, 30 marks inside a 180-minute paper worth 100, with the other 70 descriptive. The number to take away is 30, not 90. What makes the objective block worth drilling is time rather than marks, because fifteen questions answered quickly protect the two and a half hours the descriptive answers need.',
+
+  'ca-final':
+    'Five papers, five identical objective blocks, none of them sat together. ICAI sets Financial Reporting, Advanced Financial Management, Advanced Auditing, Direct Tax Laws and Indirect Tax Laws separately, and Section A of each has the same shape: 15 compulsory multiple-choice questions at 2 marks, 30 of that paper\'s 100. The 75 questions counted here are coverage across all five, not a sitting anyone faces. At Final level the objective block is the smallest part of the hardest papers, which is precisely the argument for making it cost you the least time.',
+
+  'cma-intermediate':
+    'Eight papers carry the same fifteen-question block, the most repetition of any qualification on this site. ICMAI sets each of the eight separately, and in every one Section A is 15 compulsory multiple-choice questions at 2 marks each, 30 marks inside a 100-mark paper across 180 minutes. The 120 questions counted on this page are coverage across eight sittings, not anything a candidate meets at once. One habit built once transfers to all eight, and the other 70 marks in each paper are descriptive, which is where the time actually goes.',
+
+  'cma-final':
+    'Ten papers, and the objective block in each is identical to the last. That makes 150 questions of coverage spread across ten separate sittings, never 150 in a session. ICMAI fixes Section A at 15 compulsory multiple-choice questions worth 2 marks each in every paper, 30 marks of 100, inside that paper\'s own 180 minutes. With no negative marking on Section A, all 15 should carry an answer; the only way to lose on it is to spend time there that the 70 descriptive marks needed.',
+
+  'ipmat-rohtak':
+    'Three sections, exactly equal, and no sectional lock anywhere. Quantitative Ability, Logical Reasoning and Verbal Ability take 40 questions and 160 marks apiece under one composite 120-minute timer, so the paper makes no decision for you about where the two hours go. One detail about the real sitting is worth knowing before you read a score: the 2026 IPM administration carried two null questions and was evaluated out of 472 rather than 480. This mock keeps the full nominal 480-mark shell, so a total here is measured against the shell rather than against that evaluation.',
+
+  'assam-cee':
+    'Three hours for 120 questions is 90 seconds each, far more room than most engineering entrances allow. That tells you what kind of paper it is. Assam Science and Technology University sets it on the ASSEB Higher Secondary syllabus and delivers it on OMR, and at this pace the questions expect working rather than instant recognition. The three subjects are exactly equal at 40 questions apiece. Two limits are worth carrying in: a question with more than one marked response scores zero, and while the official paper runs in English and Assamese, this practice is English only.',
+
+  'comedk-uget':
+    'The duration on this page is not COMEDK\'s. Its 2026 notification and brochure do not publish a numeric session length in readable public text, so the 180 minutes shown is a TakeMockTest practice timer rather than an official figure, and it is the one number here to check against your own admit card. Everything else is plain: 180 questions, 60 each in Physics, Chemistry and Mathematics, one mark apiece, with nothing deducted for a wrong answer and nothing for an unattempted one. Under that scheme a blank at submission is a mark declined for free.',
+
+  'sbi-po':
+    'Marks per question vary more here than on any other bank paper. Data Analysis and Interpretation pays 2 marks a question, Reasoning and Computer Aptitude 1.5, General, Economy and Banking Awareness 1, and English Language 0.5, so 60 General Awareness questions and 30 Data Analysis questions are worth the same 60 marks. English is 40 questions for 20 marks, the lowest return in the paper, and it still takes 40 of the 180 minutes. Every section is separately timed, so those minutes cannot be moved to where they would earn more. A separately timed Descriptive Test follows Mains.',
+
+  'rrb-group-d':
+    'Reasoning is the largest section, which is not where most of the preparation goes. General Intelligence and Reasoning takes 30 of the 100 questions, ahead of General Science and Mathematics at 25 each and General Awareness and Current Affairs at 20, and it is the only one of the four that needs no syllabus, just practice at a question type. Ninety minutes for 100 questions leaves 54 seconds each. What follows the CBT adds nothing to your score: the Physical Efficiency Test is qualifying only, then Document Verification and a Medical Examination. This paper is the whole of your rank.',
+
+  'hp-pat':
+    'There is an English section on this paper and it is worth 80 marks. HP PAT sets Mathematics and Physics at 50 questions each, Chemistry at 30 and English at 20, so a candidate revising only PCM leaves 80 of the 600 marks untouched. The level is the other thing to get right. This is a polytechnic admission test taken after Class 10, pitched at the NCERT Class 10 Appendix-II syllabus in the board\'s own 2026 prospectus, so material aimed at a 10+2 engineering entrance sits well above what is asked.',
+
+  'navy-ssr':
+    'Read the scope before the numbers. The official Agniveer SSR written test is 100 questions in 60 minutes across four equal sections of 25, with 1 mark for a correct answer and 0.25 deducted for a wrong one. This practice covers English and Mathematics only, 24 questions in 14 minutes at the same equal proportion, because Science and General Knowledge both turn on facts that carry a higher correctness risk in self-authored content. Half the official paper is not built here. On pacing, 36 seconds a question is faster than almost any other defence entry asks for.',
+
+  'territorial-army':
+    'There is no Mathematics section in the current cycle, which is the first thing to check against any older material you are working from. The official written exam is 100 questions in two hours: Reasoning 40, General Knowledge 30 and English 30, with a third of a mark deducted for a wrong answer. This practice covers Reasoning and English at the same 40:30 proportion, 21 questions in 25 minutes. General Knowledge is not built here because it turns on current affairs, so roughly a third of the official paper sits outside this practice.',
+
+  'tancet-mba':
+    'Two of the five sections appear on almost no other MBA entrance. Data Sufficiency gets 20 questions of its own, equal to Quantitative Aptitude, where most entrances scatter a handful of them inside a quantitative section. Business Situations gets another 20. Both ask for judgement rather than calculation, and time spent computing a value that Data Sufficiency never asked for is time gone. Anna University publishes no sectional time limit, so the whole 120 minutes follows whatever order you choose. That comes to 72 seconds a question across all five sections.',
+
+  'amu-btech':
+    'AMU does not publish a per-subject split, and this page does not invent one. The Guide to Admissions sets 100 questions across Chemistry, Physics and Mathematics for 100 marks in 120 minutes, delivered on OMR, and says no more. The 34 Chemistry, 33 Physics and 33 Mathematics division used in the practice tests is a pacing structure chosen here, not an AMU figure, so it is not a basis for weighting your revision. What is official: 1 mark for a correct answer, 0.25 deducted for a wrong one, which puts break-even at one in five, and 72 seconds a question.',
 };
 
 export function getExamPatternNote(slug: string): string | undefined {
