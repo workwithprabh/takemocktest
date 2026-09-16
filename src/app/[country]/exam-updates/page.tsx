@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { countryPublishes } from '@/lib/exam-countries';
 import UpdateFinder from '@/components/UpdateFinder';
@@ -69,6 +70,7 @@ export default async function ExamUpdatesPage({ params }: { params: Promise<{ co
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
               <a href="#updates-search" className="inline-flex min-h-11 items-center gap-3 bg-action-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-action-700">Find my exam update <span aria-hidden="true">↓</span></a>
+              <Link href={`/${country}/exam-calendar`} className="inline-flex min-h-11 items-center border border-ink-600 px-4 text-sm font-semibold text-ink-50 transition hover:border-ink-200">View exam calendar</Link>
               <p className="text-xs text-ink-200">{updates.length} sourced updates · {examCount} exams</p>
             </div>
           </div>

@@ -77,6 +77,7 @@ export default function BottomNav({ country }: { country: string }) {
         {open && (
           <div className="absolute bottom-full right-2 mb-3 w-52 border border-ink-700 bg-ink-900 p-2 shadow-2xl">
             {[
+              ...(hasUpdates ? [['Exam calendar', `/${country}/exam-calendar`]] : []),
               ...(hasUpdates ? [['Exam updates', `/${country}/exam-updates`]] : []),
               ['Logical reasoning', `/${country}/logical-reasoning`],
               ['Topic practice', `/${country}/practice`],

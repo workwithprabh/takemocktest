@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
     if (countryPublishes(country, 'updates')) {
       entries.push({ url: `${SITE_URL}/${country}/exam-updates`, changeFrequency: 'daily', priority: 0.8 });
+      entries.push({ url: `${SITE_URL}/${country}/exam-calendar`, changeFrequency: 'daily', priority: 0.8 });
     }
     // Logical Reasoning hub: the landing page and each practice set. The
     // /attempt routes are deliberately absent — they're noindexed, like every

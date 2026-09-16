@@ -47,4 +47,25 @@ assert.match(formatUpdateDateTime('2026-09-10T17:00:00+05:30'), /5:00\s?pm IST/i
 assert(!formatUpdateDateTime('2026-09-07').includes('IST'));
 assert.equal(UPDATES.find((item) => item.slug === 'upsc-cse-main-examination-timetable-2026').status, 'Scheduled dates passed');
 assert.equal(UPDATES.find((item) => item.examSlug === 'gate').status, 'Opening date awaited');
-console.log(`Exam updates checks passed: ${UPDATES.length} sourced items; filters, sorting, India-time boundaries and date labels verified.`);
+
+const calendarSource = fs.readFileSync('src/lib/exam-calendar.ts', 'utf8');
+const calendarCompiled = ts.transpileModule(calendarSource, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } });
+const calendarApi = {};
+vm.runInNewContext(calendarCompiled.outputText, { exports: calendarApi, Intl, Date });
+const { EXAM_CALENDAR_EVENTS, calendarEventTimestamp, formatCalendarEventDate } = calendarApi;
+const calendarHosts = new Set(['www.ibps.in', 'ibpsreg.ibps.in', 'www.upsc.gov.in', 'ssc.gov.in', 'www.aima.in', 'gate2027.iitm.ac.in', 'clat2027.consortiumofnlus.ac.in', 'xatonline.in']);
+const eventIds = new Set();
+for (const event of EXAM_CALENDAR_EVENTS) {
+  assert(!eventIds.has(event.id), `Duplicate calendar event: ${event.id}`);
+  eventIds.add(event.id);
+  assert(calendarHosts.has(new URL(event.sourceUrl).hostname), `Unreviewed calendar source: ${event.id}`);
+  assert.equal(new URL(event.sourceUrl).protocol, 'https:');
+  assert(!Number.isNaN(Date.parse(event.startsOn)), `Invalid event start: ${event.id}`);
+  if (event.endsOn) assert(calendarEventTimestamp(event.endsOn, true) >= calendarEventTimestamp(event.startsOn), `Event ends before it starts: ${event.id}`);
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(event.sourceCheckedOn), `Invalid calendar check date: ${event.id}`);
+  assert(formatCalendarEventDate(event).length > 5, `Missing event date label: ${event.id}`);
+}
+assert(EXAM_CALENDAR_EVENTS.some((event) => event.status === 'Confirmed'));
+assert(EXAM_CALENDAR_EVENTS.some((event) => event.status === 'Tentative'));
+assert(calendarEventTimestamp('2026-09-16', true) > calendarEventTimestamp('2026-09-16'));
+console.log(`Exam updates checks passed: ${UPDATES.length} sourced updates and ${EXAM_CALENDAR_EVENTS.length} sourced calendar events verified.`);

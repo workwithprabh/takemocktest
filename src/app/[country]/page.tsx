@@ -477,9 +477,12 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
           <section aria-labelledby="latest-updates-heading">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
               <h2 id="latest-updates-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Latest exam updates</h2>
-              <Link href={`/${country}/exam-updates`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
-                View all updates <span aria-hidden="true">→</span>
-              </Link>
+              <div className="flex flex-wrap items-center gap-4">
+                <Link href={`/${country}/exam-calendar`} className="inline-flex min-h-11 items-center text-sm font-semibold text-action-700 underline-offset-4 hover:underline">Exam calendar</Link>
+                <Link href={`/${country}/exam-updates`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+                  View all updates <span aria-hidden="true">→</span>
+                </Link>
+              </div>
             </div>
             <div className="divide-y divide-ink-200 border border-ink-200 bg-white">
               {latestUpdates.map((update, index) => (
