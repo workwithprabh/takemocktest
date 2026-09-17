@@ -46,8 +46,21 @@ function patternFaq(exam: ExamConfig, country: string, phrasing: 'syllabus' | 'e
   const pattern = stage?.pattern;
   if (!pattern?.totalQuestions || !pattern.totalMarks || !pattern.duration) return undefined;
   const shape = `${pattern.totalQuestions} questions for ${pattern.totalMarks} marks in ${pattern.duration} minutes`;
+  // A string value is written for a table cell and starts with a capital
+  // ("One-fourth of the marks assigned to the question"), which read wrong
+  // mid-sentence. Lowercased only where the next letter is lowercase, so an
+  // abbreviation at the front survives.
+  const spelledOut =
+    typeof pattern.negativeMarking === 'string' && /^[A-Z][a-z]/.test(pattern.negativeMarking)
+      ? pattern.negativeMarking[0].toLowerCase() + pattern.negativeMarking.slice(1)
+      : pattern.negativeMarking;
+  // A number is a per-question rate and reads as one. A string is not always:
+  // SSC MTS records "0 in Session 1, 1 in Session 2", which "penalised at 0"
+  // turns into a contradiction. Anything spelled out gets a label instead.
   const penalty = pattern.negativeMarking
-    ? ` Wrong answers are penalised ${typeof pattern.negativeMarking === 'number' ? `${formatMarks(pattern.negativeMarking)} per question` : `at ${pattern.negativeMarking}`}.`
+    ? typeof pattern.negativeMarking === 'number'
+      ? ` Wrong answers are penalised ${formatMarks(pattern.negativeMarking)} per question.`
+      : ` Negative marking: ${spelledOut}.`
     : ' There is no negative marking.';
   const single = exam.stages.length === 1;
   return phrasing === 'syllabus'
@@ -107,13 +120,34 @@ export function getSyllabusFaqs(exam: ExamConfig, guide: ExamGuidePage, country:
 
   // Every syllabus guide carries a topicSections block, so the lead answer can
   // name the real sections instead of describing the page in the abstract.
-  const topics = guide.blocks.filter((block) => block.type === 'topicSections');
-  const sections = topics.flatMap((block) => (block.type === 'topicSections' ? block.sections : []));
+  const topics = guide.blocks.filter(
+    (block): block is Extract<GuideBlock, { type: 'topicSections' }> => block.type === 'topicSections',
+  );
+  const sections = topics.flatMap((block) => block.sections);
+  // A guide can carry one block per stage, and RRB NTPC sets the same three
+  // sections at CBT 1 and CBT 2. Counting the blocks rather than the distinct
+  // sections published "It runs to 6 sections: Mathematics, General
+  // Intelligence and Reasoning, General Awareness, Mathematics, General
+  // Intelligence and Reasoning and General Awareness", and 66 topics for the
+  // 33 the page actually lists twice.
+  const names = [...new Set(sections.map((section) => section.section))];
+  const repeated = names.length < sections.length;
   if (sections.length > 0) {
-    const count = sections.reduce((total, section) => total + section.topics.length, 0);
+    const count = new Set(sections.flatMap((section) => section.topics)).size;
+    // The provenance comes from the block, not from an assumption. This answer
+    // used to say every topic was "taken from the official syllabus" on all
+    // thirteen published syllabus pages, including the four banking ones whose
+    // own callout says the opposite a few lines above it. Where any block on
+    // the page is a preparation map, the answer says so instead.
+    const mapped = topics.some((block) => block.topicsSource === 'platform-map');
+    const provenance = mapped
+      ? `${count} named topics are listed beneath them. Those bullets are a preparation map built here from the question families this exam keeps returning to, not a subtopic list the exam body publishes: the section names, counts, marks and timing are official, the topics under them are not.`
+      : `${count} named topics are listed on this page beneath them, each taken from the official syllabus rather than inferred from past papers.`;
     faqs.push({
       q: `What is the ${exam.name} syllabus?`,
-      a: `${sections.length === 1 ? 'It is one section' : `It runs to ${sections.length} sections`}: ${listOf(sections.map((section) => section.section))}. ${count} named topics are listed on this page beneath them, each taken from the official syllabus rather than inferred from past papers.`,
+      a: `${names.length === 1 ? 'It is one section' : `It runs to ${names.length} sections`}: ${listOf(names)}${
+        repeated ? ', and the same ones are set at every stage this page covers' : ''
+      }. ${provenance}`,
       links: tests > 0 ? [{ href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` }] : undefined,
     });
   }
