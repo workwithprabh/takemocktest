@@ -552,7 +552,9 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         {
           type: 'recordCards',
           heading: 'Official SSC release records',
-          note: '4 verified records, newest first.',
+          // The count comes from the records array below; this says only
+          // what the array cannot.
+          note: 'newest first',
           records: [
             {
               badge: 'Tier 2 · 2023',
