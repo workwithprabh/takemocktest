@@ -569,7 +569,9 @@ import { SLAT_2026_ANALYTICAL_REASONING_1 } from './question-banks/slat-2026-ana
 import { SLAT_2026_READING_COMPREHENSION_1 } from './question-banks/slat-2026-reading-comprehension-1';
 import { SLAT_2026_GENERAL_KNOWLEDGE_1 } from './question-banks/slat-2026-general-knowledge-1';
 import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1 } from './question-banks/mh-cet-law-legal-logical-english-mathematics-combined-1';
+import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_2 } from './question-banks/mh-cet-law-legal-logical-english-mathematics-combined-2';
 import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-1';
+import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_2 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-2';
 import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1';
 import { CMAT_2026_QUANTITATIVE_TECHNIQUES_DATA_INTERPRETATION_1 } from './question-banks/cmat-2026-quantitative-techniques-data-interpretation-1';
 import { CMAT_2026_LOGICAL_REASONING_1 } from './question-banks/cmat-2026-logical-reasoning-1';
@@ -2253,10 +2255,19 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'mh-cet-law/logical-and-analytical-reasoning-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'Logical and Analytical Reasoning'),
   'mh-cet-law/english-language-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'English Language'),
   'mh-cet-law/mathematics-aptitude-sectional-1': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_1.filter((question) => question.section === 'Mathematics Aptitude'),
+  'mh-cet-law/legal-logical-english-mathematics-full-mock-2': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_2,
+  'mh-cet-law/legal-aptitude-and-legal-reasoning-sectional-2': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_2.filter((question) => question.section === 'Legal Aptitude and Legal Reasoning'),
+  'mh-cet-law/logical-and-analytical-reasoning-sectional-2': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_2.filter((question) => question.section === 'Logical and Analytical Reasoning'),
+  'mh-cet-law/english-language-sectional-2': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_2.filter((question) => question.section === 'English Language'),
+  'mh-cet-law/mathematics-aptitude-sectional-2': MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_2.filter((question) => question.section === 'Mathematics Aptitude'),
   'mh-cet-law-3-year/legal-logical-english-full-mock-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1,
   'mh-cet-law-3-year/legal-aptitude-and-legal-reasoning-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'Legal Aptitude and Legal Reasoning'),
   'mh-cet-law-3-year/logical-and-analytical-reasoning-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'Logical and Analytical Reasoning'),
   'mh-cet-law-3-year/english-sectional-1': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1.filter((question) => question.section === 'English'),
+  'mh-cet-law-3-year/legal-logical-english-full-mock-2': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_2,
+  'mh-cet-law-3-year/legal-aptitude-and-legal-reasoning-sectional-2': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_2.filter((question) => question.section === 'Legal Aptitude and Legal Reasoning'),
+  'mh-cet-law-3-year/logical-and-analytical-reasoning-sectional-2': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_2.filter((question) => question.section === 'Logical and Analytical Reasoning'),
+  'mh-cet-law-3-year/english-sectional-2': MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_2.filter((question) => question.section === 'English'),
   'cat/varc-dilr-qa-full-mock-1': CAT_VARC_DILR_QA_1,
   'cat/verbal-ability-and-reading-comprehension-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
   'cat/data-interpretation-and-logical-reasoning-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
