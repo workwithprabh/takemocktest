@@ -3,6 +3,8 @@ import { COUNTRIES, getExam, getCheckedTestCount, getSharedTests, MIN_SECTIONAL_
 import { getExamCatalog } from '@/lib/exam-catalog';
 import { countryPublishes, getExamsForCountry } from '@/lib/exam-countries';
 import { BLOG_POSTS } from '@/lib/blog';
+import { getSyllabusCoverage, isPublishableCoverage } from '@/lib/syllabus-coverage';
+import { getSyllabusNote } from '@/lib/syllabus-notes';
 import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
 import { UPDATES } from '@/lib/updates';
@@ -131,6 +133,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const verifiedGuides = [...Object.keys(EXAM_GUIDES[exam.slug] ?? {}), ...sscCglOnlyGuides];
       for (const guide of verifiedGuides) {
         entries.push({ url: `${base}/${guide}`, changeFrequency: 'monthly', priority: 0.6 });
+      }
+      // A syllabus page can also be published from coverage rather than from a
+      // hand-written guide: the official section pattern plus the topics this
+      // site's tests cover, gated on a hand-written note and a deep enough
+      // bank. Those pages are indexable and were missing from this list until
+      // the drift audit caught twenty of them. The condition mirrors resolve()
+      // in the syllabus page; keep the two in sync.
+      if (
+        !verifiedGuides.includes('syllabus') &&
+        getSyllabusNote(exam.slug) &&
+        isPublishableCoverage(getSyllabusCoverage(exam))
+      ) {
+        entries.push({ url: `${base}/syllabus`, changeFrequency: 'monthly', priority: 0.6 });
       }
       for (const test of exam.stages.flatMap((stage) => stage.tests)) {
         if (test.status !== 'checked') continue;
