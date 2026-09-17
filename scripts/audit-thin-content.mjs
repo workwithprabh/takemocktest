@@ -65,13 +65,16 @@ const SECTIONS = [
   // Lowering it from here means changing what the derived body says or how many
   // pattern pages two identical papers get, not writing more notes.
   // Syllabus pages, added 17 September 2026 when the section grew from 13 hand
-  // written guides to 33 by publishing coverage pages: the official section
+  // written guides to 53 by publishing coverage pages: the official section
   // pattern, plus the topics this site's own tests cover under each, plus a
   // hand-written note per exam. The shared half is the callout that says which
-  // of those two things is official, and it is there on purpose. Worst today is
-  // SBI Clerk at 65%, a hand-written guide whose sibling SBI PO guide covers
-  // the same three sections; the coverage pages sit well below it because their
-  // topic lists are the exam's own.
+  // of those two things is official, and it is there on purpose, which is why
+  // the callout is three lines rather than a paragraph: adding twenty pages in
+  // the second batch took the average from 40.5% to 44.4%, and cutting that
+  // block back to its point brought it to 41.4% with the pages still saying it.
+  // Worst is SBI Clerk at 65%, a hand-written guide whose sibling SBI PO guide
+  // covers the same three sections; the coverage pages sit below it because
+  // their topic lists are the exam's own.
   {
     name: 'Syllabus',
     glob: (entry) => `in/${entry}/syllabus.html`,
