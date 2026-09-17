@@ -247,6 +247,66 @@ export const EXAM_PATTERN_NOTES: Record<string, string> = {
 
   jipmat:
     'Three sections split as evenly as 100 questions allow: Quantitative Aptitude 33, Data Interpretation and Logical Reasoning 33, Verbal Ability and Reading Comprehension 34. Nothing in the weighting favours one over another and there is no sectional time limit, so the whole 150 minutes follows whatever order you set for yourself. That comes to 90 seconds a question, roomier than most entrances at this level. With 4 marks for a correct answer and 1 deducted, break-even sits at one in five. This is the joint entrance for the integrated programmes at IIM Bodh Gaya and IIM Jammu.',
+
+  'ap-ecet':
+    'Half this paper is your diploma subject. Computer Science and Engineering carries 100 of the 200 questions, against 50 for Mathematics and 25 each for Physics and Chemistry, so a freshman science revision reaches a quarter of what is asked and the branch paper settles the rest. Nothing is deducted for a wrong answer, which makes an unmarked question a mark declined for free. Three hours across 200 questions leaves 54 seconds each, tight enough that reaching the end matters more than perfecting the opening.',
+
+  'ssc-steno':
+    'English is half this paper and gets half the clock. The Commission sets the three windows itself, 30 minutes each for General Intelligence and Reasoning and for General Awareness and 60 for English Language and Comprehension, so the 100 English questions have a full hour of their own with nothing borrowed from either side. That works out at 36 seconds a question evenly throughout. The windows come from the notice rather than from arithmetic done here, which is rarer in this data than you would expect, so the per-section budget on this page is the real one.',
+
+  htet:
+    'Ten of these questions are Haryana-specific, and no national teaching-eligibility material covers them. Haryana General Knowledge and Awareness is the section nothing else prepares, while Child Development and Pedagogy, Environmental Studies and Mathematics take 30 apiece and the two language sections 15 each. Level 1 qualifies a candidate to teach Classes I to V. Nothing is deducted for a wrong answer, so a blank scores what a wrong answer scores, and the Board publishes no per-section time limits, which makes the sectional durations on this site practice allowances rather than official figures.',
+
+  'ugc-net':
+    'Two papers run back to back with no break between them under a single three-hour timer. Paper II on Computer Science and Applications carries 100 questions and 200 of the 300 marks, twice what Paper I on Teaching and Research Aptitude carries at 50 and 100, so the subject paper settles the outcome and the aptitude paper settles the margin. Nothing is deducted for a wrong answer anywhere in either, which removes the only reason to leave a question blank. Three hours across 150 questions leaves 72 seconds each.',
+
+  'mppsc-state-service':
+    'Three marks a question is unusual at this level, and it changes what the deduction means. Most state services aptitude papers pay 2; this one pays 3 and takes 1 off, so the ratio is wider and a narrowed guess is worth more here than the same guess is elsewhere. The paper is also a single undivided section of 100 questions, which leaves nothing to sequence and no weak area to save until last. Two hours across those 100 questions gives 72 seconds each, so the format tests accuracy rather than pace.',
+
+  'nabard-grade-a':
+    'Five of the eight tests do not count toward your rank. Reasoning, English Language, Computer Knowledge, Quantitative Aptitude and Decision Making are qualifying only, while General Awareness, Economic and Social Issues, and Agriculture and Rural Development decide the merit ranking that shortlists for Mains. You must still clear a minimum in every qualifying test, so none can be abandoned, but hours spent pushing a qualifying score well past its cut-off are hours taken from the three that actually rank you. One composite 120-minute timer covers all eight, so the allocation is yours to make.',
+
+  'agniveer-vayu':
+    'Eighty-five minutes for 100 questions is 51 seconds each, and the official paper covers the combined Science and Other-than-Science route: English 20 questions, Physics 25, Mathematics 25, and Reasoning and General Awareness 30. This practice covers English and Mathematics only, at the same proportion, so a little under half the official paper is built here. On marking, 0.25 comes off against 1 for a correct answer, which puts break-even at one in five and makes a narrowed guess worth taking even at that pace.',
+
+  'rrb-technician':
+    'There is only one CBT here, and it decides the shortlist directly. No second stage filters afterwards: this paper sends candidates to Document Verification, capped at the number of notified vacancies. Minimum pass percentages apply, 40% for UR and EWS, 30% for OBC (NCL) and SC, and 25% for ST, so a raw total on its own will not tell you where you stand. One caution about the tables below: the notification labels its subject-wise split as indicative and says the papers may vary, so treat the per-section counts as a guide rather than a guarantee.',
+
+  ctet:
+    'Five sections of exactly 30 questions, with nothing weighted above anything else. Child Development and Pedagogy, Mathematics, Environmental Studies, Language I and Language II each carry 30 questions and 30 marks, so a weakness anywhere costs the same fifth of the paper. The official paper has a substructure this page does not reproduce: Mathematics and Environmental Studies are each 15 content and 15 pedagogy, both languages 15 comprehension and 15 pedagogy, and Child Development splits three ways. Those divisions are real but are not built as separate sections here. Nothing is deducted, and a minute a question across all 150.',
+
+  slat:
+    'Five sections of twelve questions each, an hour in total, one mark apiece and nothing deducted. SLAT is the flattest law entrance on this site: Logical Reasoning, Legal Reasoning, Analytical Reasoning, Reading Comprehension and General Knowledge all carry identical weight, so there is no section to specialise in and no penalty to weigh against attempting. Three of the five are reasoning of one kind or another, a heavier reasoning load than the section count alone suggests. A minute a question leaves no room to work out the format on the day.',
+
+  'rrb-paramedical':
+    'Seventy of these 100 questions are not built here, and the reason is worth understanding. Professional Ability is the largest section by a wide margin, but RRB Paramedical covers roughly seven to nine distinct posts, from Staff Nurse to Radiographer to ECG Technician, each with its own technical syllabus, so no single Professional Ability content would be accurate for every candidate. This site builds the three common subjects only, 30 of the 100 questions. The table below is the whole official paper; the practice covers the part that is the same for everyone.',
+
+  'mah-mca-cet':
+    'Every question here is worth 2 marks, which is how 100 questions make 200. Mathematics and Statistics and Logical or Abstract Reasoning take 30 questions apiece for 60 marks each, while English Comprehension and Verbal Ability and Computer Concepts take 20 each for 40. Ninety minutes across 100 questions is 54 seconds each, faster than most MCA entrances and faster than the marks-per-question figure makes it feel. One gap: the source checked here does not state a deduction for a wrong answer, so the negative-marking row says nothing rather than assuming none.',
+
+  nda:
+    'Two papers, both scored in fractions, and the practice on this site is shorter than either. Mathematics is 120 questions for 300 marks at 2.5 apiece with about 0.83 deducted; the General Ability Test is 150 questions for 600 marks at 4 apiece with about 1.33 deducted. Both land break-even at one in four. The GAT splits English 50 questions and General Knowledge 100, and only the English part is built here, so two thirds of that paper sits outside this practice. The Mathematics set here is 18 questions in 23 minutes against an official 120 in 150.',
+
+  'ssc-cpo':
+    'Both papers run on 30-minute windows, including the one that looks like a single subject. Paper 1 gives each of its four sections its own half hour with no shifting between them. Paper 2 is 200 English Language and Comprehension questions and is also divided into four 30-minute parts rather than one continuous two hours, which is easy to miss on a paper that never changes subject. Thirty-six seconds a question throughout, in both. Between the two papers sit a Physical Standard Test and a Physical Endurance Test.',
+
+  'rrb-alp':
+    'CBT 1 is a screening exam and its marks never reach the final panel. Seventy-five questions in 60 minutes decide only who proceeds, with roughly fifteen times the notified vacancies per board shortlisted on normalised merit, and minimum pass percentages of 40% for UR and EWS, 30% for OBC (NCL) and SC, and 25% for ST. CBT 2 Part A then runs 100 questions in 90 minutes, where Basic Science and Engineering alone carries 50. Part B and the Computer Based Aptitude Test are later stages and are not covered here.',
+
+  ojee:
+    'One hour for 60 questions and two hours for 120: the two stages here run at the same pace but are not the same exam, and they are not for the same candidate. One is a vacant-seat route: Odisha fills first-year B.Tech places on JEE Main, and the 2nd/Special paper only ranks candidates for whatever is left afterwards. The other, LE-Tech, admits Diploma holders straight into the second year, and its three subjects are engineering coursework rather than school science. The marking is 4 up against 1 off in both, so the attempt threshold is one in five either way. Confirm which route your application names before reading either table as yours.',
+
+  'cma-foundation':
+    'Statistics outweighs Business Mathematics by half again. ICMAI weights Paper 3 at roughly 40% Business Mathematics and 60% Statistics, the latter covering data representation, central tendency and dispersion, correlation and regression, probability, index numbers and time series, so a candidate revising arithmetic and algebra alone prepares the smaller share. The official paper is 50 objective questions for 100 marks in one hour with no negative marking. What is built here is shorter, 30 questions in 36 minutes at the same proportion, so the shape carries across and the length does not.',
+
+  ailet:
+    'Logical Reasoning is the largest section on the UG paper at 70 of the 150 questions, ahead of English at 50 and Current Affairs and General Knowledge at 30. That is a heavier reasoning load than most law entrances set, and it is the section that rewards drilling rather than reading. Current Affairs is the part this site does not build, so the practice covers English and Logical Reasoning at the official 5:7 proportion and leaves a fifth of the paper outside it. A wrong answer costs 0.25 against 1, putting break-even at one in five.',
+
+  'rrb-je':
+    'Two thirds of the second paper is one section. CBT 2 gives Technical Abilities 100 of its 150 questions, with General Awareness and Physics and Chemistry at 15 each and Computers and Environment at 10 apiece, so the branch-specific block settles that stage almost on its own. CBT 1 is the common screening test across every Junior Engineer, Depot Material Superintendent and Chemical and Metallurgical Assistant post, and it spreads far more evenly: Mathematics and General Science at 30 each, Reasoning 25, General Awareness 15. Both run one composite timer with no sectional lock.',
+
+  bitsat:
+    'Thirty of these 130 questions are English Proficiency and Logical Reasoning, worth 90 of the 390 marks between them, and a candidate revising PCM alone leaves every one of them untouched. Mathematics is the biggest block at 40 questions and 120 marks. One thing the table does not show: BITSAT offers 12 optional extra questions to candidates who finish early, and they are not part of this variant, so 130 here is the whole of what is built. Three marks for a correct answer against 1 deducted puts break-even at one in four, exactly what four options return to a blind guess.',
 };
 
 export function getExamPatternNote(slug: string): string | undefined {
