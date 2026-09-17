@@ -64,6 +64,21 @@ const SECTIONS = [
   // hand-written copy moves a genuine twin about ten points and no further.
   // Lowering it from here means changing what the derived body says or how many
   // pattern pages two identical papers get, not writing more notes.
+  // Syllabus pages, added 17 September 2026 when the section grew from 13 hand
+  // written guides to 33 by publishing coverage pages: the official section
+  // pattern, plus the topics this site's own tests cover under each, plus a
+  // hand-written note per exam. The shared half is the callout that says which
+  // of those two things is official, and it is there on purpose. Worst today is
+  // SBI Clerk at 65%, a hand-written guide whose sibling SBI PO guide covers
+  // the same three sections; the coverage pages sit well below it because their
+  // topic lists are the exam's own.
+  {
+    name: 'Syllabus',
+    glob: (entry) => `in/${entry}/syllabus.html`,
+    maxDuplicateShare: 0.67,
+    maxAverageDuplicateShare: 0.42,
+    minWords: 400,
+  },
   {
     name: 'Exam pattern',
     glob: (entry) => `in/${entry}/exam-pattern.html`,

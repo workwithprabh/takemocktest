@@ -1,5 +1,6 @@
 import { getExamGuide } from './exam-guides';
 import type { ExamGuidePage, GuideBlock } from './exam-guides';
+import type { SyllabusCoverage } from './syllabus-coverage';
 import type { ExamConfig } from './exams';
 import { formatMarks, getCheckedTestCount } from './exams';
 import type { Faq } from './exam-faqs';
@@ -112,6 +113,59 @@ function sourceFaq(guide: ExamGuidePage, exam: ExamConfig, kind: 'syllabus' | 'e
         q: `Where are the official ${exam.name} eligibility rules published?`,
         a: `In the conducting body's own notification: ${cited ?? 'the official document'}, cited and linked at the foot of this page. That document governs, and where any other source disagrees with it, including this page, the notification is what counts. It can also be amended mid-cycle by a corrigendum, and eligibility conditions are among the things corrigenda most often change, so check for one before deciding you do or do not qualify.`,
       };
+}
+
+/**
+ * FAQs for a syllabus page built from coverage rather than from a published
+ * syllabus. Every answer states which half of the page it is describing,
+ * because the whole risk of this page type is a reader taking the topic list
+ * for the exam body's own document.
+ */
+export function getCoverageSyllabusFaqs(
+  exam: ExamConfig,
+  covers: SyllabusCoverage[],
+  country: string,
+): Faq[] {
+  const tests = getCheckedTestCount(exam);
+  const sections = covers.flatMap((cover) => cover.sections);
+  const names = [...new Set(sections.map((section) => section.name))];
+  const labels = sections.reduce((total, section) => total + section.labelCount, 0);
+  const questions = sections.reduce((total, section) => total + section.questionCount, 0);
+  const sourced = covers.find((cover) => cover.sourceUrl);
+  const faqs: Faq[] = [];
+
+  faqs.push({
+    q: `What sections does the ${exam.name} syllabus cover?`,
+    a: `${names.length === 1 ? 'There is one section' : `There are ${names.length} sections`}: ${listOf(names)}. Those names, and the question counts and marks beside them, come from the official pattern${
+      sourced?.checkedOn ? `, checked ${sourced.checkedOn}` : ''
+    }. What sits under each of them on this page is a different thing: ${labels} topic labels drawn from the ${questions} questions built here for this exam, which is a map of what you can practise rather than a list the exam body published.`,
+    links: tests > 0 ? [{ href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` }] : undefined,
+  });
+
+  faqs.push({
+    q: `Is this the official ${exam.name} syllabus?`,
+    a: `No, and the page says so rather than leaving you to work it out. The section pattern is official${
+      sourced ? ' and linked to the notice it came from' : ''
+    }; the topics beneath it are the ones this site's own tests cover. They are useful for two things: seeing what you can practise here, and checking a syllabus you already have for gaps. For the syllabus itself, read the exam body's own document, because a topic list assembled from a question bank can be narrower than the syllabus and never wider in a way you should trust.`,
+  });
+
+  const pattern = patternFaq(exam, country, 'syllabus');
+  if (pattern) faqs.push(pattern);
+
+  if (tests > 0) {
+    faqs.push({
+      q: `How do I practise the ${exam.name} syllabus?`,
+      a: `Sit a full mock before working down any topic list. A list tells you what can be asked; it does not tell you which parts are costing you marks, and that is rarely where a candidate expects. There ${
+        tests === 1 ? 'is 1 free test' : `are ${tests} free tests`
+      } for ${exam.name} here, and the sectional ones let you rebuild a single section once the full paper has shown you which one needs it.`,
+      links: [
+        { href: `/${country}/${exam.slug}/mock-test`, label: `${exam.name} mock test` },
+        { href: `/${country}/practice`, label: 'Topic-wise practice' },
+      ],
+    });
+  }
+
+  return faqs;
 }
 
 export function getSyllabusFaqs(exam: ExamConfig, guide: ExamGuidePage, country: string): Faq[] {
