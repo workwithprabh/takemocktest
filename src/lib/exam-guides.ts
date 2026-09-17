@@ -25,7 +25,20 @@ export type GuideBlock =
   | { type: 'keyValueGrid'; heading?: string; note?: string; items: { label: string; value: string }[] }
   | { type: 'infoBlocks'; heading?: string; note?: string; items: { title: string; text: string }[] }
   | { type: 'numberedStages'; heading?: string; items: { title: string; text: string }[] }
-  | { type: 'topicSections'; sections: { section: string; pattern?: string; topics: string[] }[] }
+  | {
+      type: 'topicSections';
+      /**
+       * Where the topic bullets came from. Required, and deliberately not
+       * optional with a default: four banking syllabus pages carried a callout
+       * saying the bullets were "a TakeMockTest preparation map, not an
+       * IBPS-prescribed syllabus" while the FAQ directly beneath them said
+       * every topic was "taken from the official syllabus". The claim was
+       * hardcoded in the FAQ generator, so nothing in the data could contradict
+       * it. Now the data states it and the FAQ reads it.
+       */
+      topicsSource: 'official' | 'platform-map';
+      sections: { section: string; pattern?: string; topics: string[] }[];
+    }
   | { type: 'sourceNote'; heading: string; text: string; sourceLabel: string; sourceUrl: string; tone?: 'plain' | 'boxed' }
   | {
       type: 'recordCards';
@@ -104,6 +117,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'Use of English',
@@ -301,6 +315,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'General Intelligence and Reasoning',
@@ -618,6 +633,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'platform-map',
           sections: [
             {
               section: 'English Language',
@@ -794,6 +810,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'General Intelligence',
@@ -1004,6 +1021,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'platform-map',
           sections: [
             {
               section: 'English Language',
@@ -1199,6 +1217,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'platform-map',
           sections: [
             {
               section: 'English Language',
@@ -1405,6 +1424,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'General Science',
@@ -1638,6 +1658,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'Mathematics',
@@ -1699,6 +1720,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'Mathematics',
@@ -1783,6 +1805,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'History of India and Indian National Movement',
@@ -1853,6 +1876,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'Comprehension',
@@ -1928,6 +1952,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'Numerical and Mathematical Ability',
@@ -2134,6 +2159,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'General Intelligence and Reasoning',
@@ -2334,6 +2360,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'platform-map',
           sections: [
             {
               section: 'English Language',
@@ -2540,6 +2567,7 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
         },
         {
           type: 'topicSections',
+          topicsSource: 'official',
           sections: [
             {
               section: 'General Intelligence and Reasoning',
