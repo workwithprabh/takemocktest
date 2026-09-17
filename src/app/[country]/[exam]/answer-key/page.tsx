@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { COUNTRIES, getExam } from '@/lib/exams';
+import { hasInfoPage } from '@/lib/exam-guides';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const exam = getExam(examSlug);
   if (!exam) return {};
 
-  if (exam.slug === 'ssc-cgl') {
+  if (hasInfoPage(exam.slug, 'answer-key')) {
     return pageMetadata({
       title: 'SSC CGL Answer Key 2025: Tier 2 Final Key Status',
       description: 'SSC uploaded the CGL 2025 Tier 2 final answer keys, response sheets, and marks on 17 June 2026. Check the official notice and access-window status.',
@@ -46,7 +47,7 @@ export default async function AnswerKeyPage({ params }: { params: Promise<{ coun
   const exam = getExam(examSlug);
   if (!exam) return notFound();
 
-  if (exam.slug !== 'ssc-cgl') {
+  if (!hasInfoPage(exam.slug, 'answer-key')) {
     return (
       <ExamInfoPageContent
         country={country}

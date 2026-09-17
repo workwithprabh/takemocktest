@@ -1,5 +1,6 @@
 import { ExamConfig } from '@/lib/exams';
-import { getExamGuide } from '@/lib/exam-guides';
+import { getExamGuide, hasInfoPage } from '@/lib/exam-guides';
+import { publishesSyllabus } from '@/lib/syllabus-coverage';
 import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import type { Faq } from '@/lib/exam-faqs';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -81,12 +82,19 @@ export default function ExamInfoPageContent({
               label: 'Exam pattern',
               built: exam.stages.some((stage) => stage.pattern.status === 'official'),
             },
-            { slug: 'syllabus', label: 'Syllabus', built: getExamGuide(exam.slug, 'syllabus') !== undefined },
+            { slug: 'syllabus', label: 'Syllabus', built: publishesSyllabus(exam) },
+            { slug: 'eligibility', label: 'Eligibility', built: getExamGuide(exam.slug, 'eligibility') !== undefined },
+            { slug: 'selection-process', label: 'Selection process', built: getExamGuide(exam.slug, 'selection-process') !== undefined },
             {
               slug: 'previous-year-papers',
               label: 'Previous papers',
               built: getExamGuide(exam.slug, 'previous-year-papers') !== undefined,
             },
+            { slug: 'salary', label: 'Salary', built: getExamGuide(exam.slug, 'salary') !== undefined },
+            { slug: 'cutoff', label: 'Cutoff', built: hasInfoPage(exam.slug, 'cutoff') },
+            { slug: 'result', label: 'Result', built: hasInfoPage(exam.slug, 'result') },
+            { slug: 'admit-card', label: 'Admit card', built: hasInfoPage(exam.slug, 'admit-card') },
+            { slug: 'answer-key', label: 'Answer key', built: hasInfoPage(exam.slug, 'answer-key') },
           ].filter((item) => item.built || item.slug === pageSlug).map((item) => {
             const active = item.slug === pageSlug;
             return (

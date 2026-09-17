@@ -1,4 +1,5 @@
 import { COUNTRIES, getExam } from '@/lib/exams';
+import { hasInfoPage } from '@/lib/exam-guides';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const exam = getExam(examSlug);
   if (!exam) return {};
 
-  if (exam.slug === 'ssc-cgl') {
+  if (hasInfoPage(exam.slug, 'admit-card')) {
     return pageMetadata({
       title: 'SSC CGL Admit Card 2026: Release Schedule and Documents',
       description: 'SSC says CGL 2026 exam-city details will appear about 10 days before the exam and the admission certificate 2 to 3 days before. Check the official schedule and document list.',
@@ -45,7 +46,7 @@ export default async function AdmitCardPage({ params }: { params: Promise<{ coun
   const exam = getExam(examSlug);
   if (!exam) return notFound();
 
-  if (exam.slug !== 'ssc-cgl') {
+  if (!hasInfoPage(exam.slug, 'admit-card')) {
     return (
       <ExamInfoPageContent
         country={country}

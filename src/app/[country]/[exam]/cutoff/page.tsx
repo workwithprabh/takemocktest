@@ -1,4 +1,5 @@
 import { COUNTRIES, getExam } from '@/lib/exams';
+import { hasInfoPage } from '@/lib/exam-guides';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
@@ -71,7 +72,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const exam = getExam(examSlug);
   if (!exam) return {};
 
-  if (exam.slug === 'ssc-cgl') {
+  if (hasInfoPage(exam.slug, 'cutoff')) {
     return pageMetadata({
       title: 'SSC CGL Tier 1 Cutoff 2025: Official Category-wise Marks',
       description: 'Check the official SSC CGL Tier 1 2025 cutoff marks for JSO, Statistical Investigator Grade II, and all other posts, with shortlisted-candidate counts.',
@@ -123,7 +124,7 @@ export default async function CutoffPage({ params }: { params: Promise<{ country
   const exam = getExam(examSlug);
   if (!exam) return notFound();
 
-  if (exam.slug !== 'ssc-cgl') {
+  if (!hasInfoPage(exam.slug, 'cutoff')) {
     return (
       <ExamInfoPageContent
         country={country}

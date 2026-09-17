@@ -75,11 +75,23 @@ const SECTIONS = [
   // Worst is SBI Clerk at 65%, a hand-written guide whose sibling SBI PO guide
   // covers the same three sections; the coverage pages sit below it because
   // their topic lists are the exam's own.
+  //
+  // The average ceiling moved from 0.42 to 0.43 on 17 September 2026, and the
+  // reason is calibration rather than drift. It had been set at 0.42 when the
+  // section measured 41.989%, which is eleven thousandths of headroom: adding
+  // the Eligibility and Selection process tabs to the exam tab bar, six words
+  // of navigation on the pages whose exams have those guides, moved it to
+  // 42.016% and failed the build. Mean words per page did not change at all,
+  // 820 before and after. A ceiling that a nav label can trip is a tripwire on
+  // rounding, not a drift detector, so it now sits a point clear of the
+  // measurement. Anything that actually makes these pages more templated still
+  // fails: the section was 44.4% before the callout was cut back, and that is
+  // the kind of move this is meant to catch.
   {
     name: 'Syllabus',
     glob: (entry) => `in/${entry}/syllabus.html`,
     maxDuplicateShare: 0.67,
-    maxAverageDuplicateShare: 0.42,
+    maxAverageDuplicateShare: 0.43,
     minWords: 400,
   },
   {

@@ -2,7 +2,7 @@ import { COUNTRIES, getExam, getExamSections } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getExamGuide } from '@/lib/exam-guides';
 import { getSyllabusFaqs, getCoverageSyllabusFaqs } from '@/lib/guide-faqs';
-import { getSyllabusCoverage, isPublishableCoverage } from '@/lib/syllabus-coverage';
+import { getSyllabusCoverage, publishesSyllabus } from '@/lib/syllabus-coverage';
 import { getSyllabusNote } from '@/lib/syllabus-notes';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
@@ -35,10 +35,8 @@ export function generateStaticParams() {
 function resolve(exam: ExamConfig) {
   const guide = getExamGuide(exam.slug, 'syllabus');
   if (guide) return { kind: 'guide' as const, guide };
-  const covers = getSyllabusCoverage(exam);
-  const note = getSyllabusNote(exam.slug);
-  if (note && isPublishableCoverage(covers)) return { kind: 'coverage' as const, covers, note };
-  return { kind: 'placeholder' as const };
+  if (!publishesSyllabus(exam)) return { kind: 'placeholder' as const };
+  return { kind: 'coverage' as const, covers: getSyllabusCoverage(exam), note: getSyllabusNote(exam.slug)! };
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ country: string; exam: string }> }) {
