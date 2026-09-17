@@ -367,6 +367,81 @@ export const EXAM_PATTERN_NOTES: Record<string, string> = {
 
   pte:
     'This is a subset rather than the Reading section. PTE Academic runs Reading across 32 to 41 minutes and several task types; what is built here is the multiple-choice part alone, 12 single-answer and 8 multiple-answer questions inside a 25-minute practice window set on this site. Nothing is deducted in this set. The multiple-answer questions repay deliberate practice, because choosing among several correct options is a different task from picking one, and the official scoring rules for that task type are not reproduced here.',
+
+  act:
+    'Science is now optional and Math has dropped a fifth option. The 2026 Enhanced rollout changed both: a student can sit the college-reportable core of English, Math and Reading without Science, and Math questions now offer four choices rather than the traditional five. Every section runs in a fixed order with its own timer and no way back into a closed one. Nothing is deducted for a wrong answer anywhere. The sets built here are shorter than the official counts, for focused practice rather than a full sitting.',
+
+  'ap-eapcet':
+    'Mathematics is half this paper and the two sciences share the other half. Eighty questions against 40 each for Physics and Chemistry means an even three-way revision plan gives the deciding subject two thirds of what it is worth. Nothing is deducted for a wrong answer, so a blank and a wrong answer score the same zero and there is no reason to leave one. Three hours across 160 questions leaves 68 seconds each, comfortable enough to reach the end and still sweep back for what is unmarked.',
+
+  ceed:
+    'Part A takes a third of the exam\'s clock and is the only third a machine can score. Sixty of the 180 minutes go to these 44 compulsory questions, and the remaining 120 belong to Part B, a sketching, creativity and visual-sensitivity paper answered in a booklet, which is why it is not built here. Inside Part A the multiple-choice block is the bulk: 26 questions and 78 of the 150 marks, against 40 marks for the ten multiple-select questions and 32 for the eight numerical ones. Part A cannot be revisited once Part B begins.',
+
+  'cgpsc-state-service':
+    'This paper qualifies you and nothing more. A candidate needs 33 per cent to clear it, or 23 per cent in the reserved categories, and the marks never join the preliminary total, so everything scored above that line is effort that does not rank you. Each question pays 2 marks with a third of that, about 0.67, deducted for a wrong one, which puts break-even at exactly one in four and leaves random marking neutral across 100 questions. Two hours gives 72 seconds each, with no sectional lock to structure them.',
+
+  'csir-ugc-net':
+    'Twenty questions are displayed and you may attempt fifteen. That cap is the whole shape of Part A: the extra five exist so you can choose, which makes picking your fifteen well the skill being tested rather than answering everything in front of you. Each carries 2 marks with 0.5 deducted, so break-even sits at one in five and Part A contributes at most 30 marks. The syllabus runs to logical reasoning, graphical analysis, analytical and numerical ability, quantitative comparison and series, and it is common to every CSIR-UGC NET subject paper.',
+
+  frm:
+    'Two sub-topics inside one of four areas: that is the whole scope here. Part I officially sets 100 equally weighted four-option questions spread evenly over four topic areas, and Quantitative Analysis is one of them. What is built on this site sits inside that area alone: ten questions on probability and distributions and ten on regression and estimation, in 48 minutes. No mark comes off for a wrong answer. Read a result as a measure of those two topics rather than as a prediction of Part I.',
+
+  gate:
+    'The deduction depends on both the question type and what the question is worth. GATE mixes single-correct multiple choice, multiple-select questions and numerical answers, and only the first of those carries a penalty, scaled to the mark value: a third off a one-mark question, two thirds off a two-mark one. Multiple-select and numerical-answer questions deduct nothing at all, which makes them the free attempts in the paper. General Aptitude is 10 questions and 15 of the 100 marks. Only Computer Science and Information Technology is built here.',
+
+  gre:
+    'The official test adapts between sections and this practice does not. GRE Quantitative Reasoning sets the second section\'s difficulty from how the first went, so no fixed-form set reproduces the experience; what is built here is 20 questions in 35 minutes across Quantitative Comparison and Numeric Entry. No mark comes off for a wrong answer anywhere on the test. Numeric Entry is the part worth noticing, because it offers nothing to eliminate, which makes it the one place where an uninformed guess is worth almost nothing.',
+
+  'ibps-so':
+    'English questions are worth half a mark and still take a third of the clock. All three Prelims sections get 50 questions and 40 minutes each, but English Language pays 25 marks across its 50 while Reasoning and Quantitative Aptitude pay 50 apiece, so 40 minutes on English buys half what the same 40 minutes buys elsewhere, and the sectional lock means those minutes cannot be moved. This pattern covers the IT, Agriculture Field, HR and Marketing Officer posts; the Law Officer and Rajbhasha track substitutes General Awareness for Quantitative Aptitude.',
+
+  ibsat:
+    'Verbal Ability alone is 50 of the 140 questions, and with Reading Comprehension at 30 the paper runs 80 questions of language against 60 of everything else. That is a heavier verbal load than most MBA entrances set. Nothing is deducted for a wrong answer and there is no sectional time limit, so the clock is the only real constraint: 140 questions in 120 minutes leaves 51 seconds each, fast for a paper that asks this much reading.',
+
+  ielts:
+    'Both reading papers run 40 questions in 60 minutes with free movement between passages, exactly as the real test allows, and neither deducts anything for a wrong answer. What differs is the material. Academic uses three passages of the kind found in journals and textbooks; General Training moves through three sections of rising difficulty, from notices and advertisements to workplace texts to one longer general-interest piece. The raw score out of 40 converts to a band afterwards, so a total here feeds that conversion rather than being the band itself.',
+
+  'jee-advanced':
+    'Four question types per subject, each scored differently, and both papers compulsory. Paper 1 sets four single-correct questions at 3 marks with 1 off, four multiple-select at 4 with partial marks and 1 off otherwise, four numerical-value at 4 with no penalty, and four matching-list at 4 with 1 off. Paper 2 shifts the mix to five multiple-select, five numerical-value and four stem-based numerical questions at 2 marks with no penalty. The numerical types never deduct, which makes them the only free attempts in either paper.',
+
+  mcat:
+    'CARS is the section you cannot revise for. Fifty-three questions across nine short passages in 90 minutes, drawn equally from humanities and social science disciplines, all answered strictly from the passage with no outside subject knowledge required or rewarded. That makes it the one MCAT section where content study does not help and reading practice does. Sections run in a fixed order with no return once a block closes. Nothing is deducted for a wrong answer, so every question should carry one.',
+
+  nmat:
+    'Three equal sections, three very different time allowances. Language Skills, Logical Reasoning and Quantitative Skills each carry 36 questions and 108 marks, but they get 28, 40 and 52 minutes respectively with no carryover between them. That is 47 seconds a question in Language against 87 in Quantitative, so the same 36 questions are paced almost twice as tightly at one end of the paper as at the other. Nothing is deducted for a wrong answer anywhere, which removes the only reason to leave one blank.',
+
+  oet:
+    'This is a short focused set rather than the OET Reading section. Sixteen questions across two texts in 32 minutes, two minutes each, with nothing deducted for a wrong answer. OET is built for healthcare professionals and draws its reading material from that setting, which is what separates it from a general English test. Read a score here as practice on those text types rather than as a prediction of the graded result.',
+
+  sat:
+    'The Digital SAT adapts and this practice does not. Each official section runs in two modules where the second module\'s difficulty follows from the first, so no fixed-form set reproduces it; what is built here is 54 Reading and Writing questions in 64 minutes and 44 Math questions in 70. Nothing is deducted for a wrong answer, which makes leaving a question blank strictly worse than marking something on it, however little time is left when you reach it.',
+
+  'sebi-grade-a':
+    'Paper 1 has no sectional cut-off, only an overall 30 per cent. That is unusual among regulator and banking papers, and it means a weak section can be carried by a strong one, so this paper genuinely rewards playing to your strengths. All four sections are equal at 20 questions and 25 marks. Each question is worth 1.25 marks with 0.3125 deducted, which holds break-even at one in five. Paper 1 and Paper 2 are separately timed: once Paper 1 ends, Paper 2 starts as its own block.',
+
+  srmjeee:
+    'Twenty of these questions are English and Aptitude, and a candidate revising PCM alone leaves every one of them untouched. Physics and Chemistry take 35 each and Mathematics 40, so the non-science block is a sixth of the paper and the cheapest sixth to collect. Nothing is deducted for a wrong answer, and 150 minutes across 130 questions gives 69 seconds each. This is the PCM route; SRMJEEE also offers a Biology alternative for the fourth subject, which is not covered here, and the exam is delivered remote-proctored online.',
+
+  'ssc-mts':
+    'The two sessions are scored differently, and only one of them is conditional. Session 1, Numerical and Reasoning, carries no negative marking. Session 2, General Awareness and English, deducts 1 mark for a wrong answer and is evaluated only for candidates who clear Session 1 first, which makes Session 1 both a scoring paper and a gate. The real exam runs them as two separately timed 45-minute sessions on the same day, while this practice combines them under one continuous timer, and that is the one thing here that does not match.',
+
+  'ssc-selection-post':
+    'Three papers, identical in shape, different in level. Matriculation, Higher Secondary and Graduation posts each sit 100 questions for 200 marks across four locked 15-minute parts, and the structure never varies; what changes is the standard the questions are set at. One detail on the graduation paper: General Intelligence, General Awareness and English are set at graduation level while Quantitative Aptitude stays at Class 10 under the official syllabus. Fifteen minutes for 25 questions is 36 seconds each, with no way to move unused time between parts.',
+
+  uceed:
+    'Three marking rules across 57 questions, and the multiple-choice block is where the arithmetic bites. Those 28 questions pay 3 marks and deduct 0.71, putting break-even near one in five. The 15 multiple-select questions pay up to 4 with partial credit and take 1 off otherwise, and the 14 numerical-answer questions pay 4 and deduct nothing. Part A takes 120 of the exam\'s 180 minutes; the hand-marked Part B takes the remaining 60, and it is compulsory in the real exam though not built here.',
+
+  'ukpsc-pcs':
+    'Twenty of the 100 questions are language, split unevenly at 13 Hindi and 7 English, worth 19.5 and 10.5 marks against 120 for the General Aptitude core. Each question pays 1.5 marks with 0.375 deducted, which holds break-even at one in five throughout the paper. The fractional marks are what make those section totals look odd, and they are the paper\'s own rather than anything rounded here. One composite two-hour timer covers all three parts, so the 20 language questions can be taken whenever they suit you.',
+
+  'upsc-cse':
+    'Neither preliminary paper is sectionally timed, despite the section tables below. General Studies Paper I runs 100 questions for 200 marks and CSAT 80 questions for 200, each on one unbroken two-hour clock, and the per-section rows show composition rather than a schedule. The deductions scale with the marks: a third of 2 on Paper I, about 0.67, and a third of 2.5 on CSAT, about 0.83. Both land break-even at exactly one in four, which is what four options return to a blind guess, so random marking is neutral and only elimination pays.',
+
+  'wb-jelet':
+    'Two scoring categories run inside every section here. Category 1 is single-correct at 1 mark with 0.25 deducted. Category 2 is multi-select, paying 2 for selecting all and only the correct options, nothing at all if you include an incorrect one, and a partial share otherwise. That asymmetry is worth planning around, because on Category 2 a cautious partial selection beats a complete but contaminated one. Paper I admits Diploma, B.Sc., D.Voc. and B.Voc. candidates by lateral entry, and Mathematics is its largest section at 40 questions and 50 of the 120 marks.',
+
+  wbjee:
+    'Three scoring categories and two locked papers. Category 1 pays 1 mark with 0.25 deducted, Category 2 pays 2 with 0.5 deducted, and Category 3 is multi-select with a maximum of 2 and no negative marking at all, so a single subject mixes three different risk profiles. On timing, Paper I is Mathematics alone for 120 minutes and auto-submits, then Paper II gives Physics and Chemistry a separate 120 with no return. The official schedule puts an hour between the papers on exam day, which this practice does not add as working time.',
 };
 
 export function getExamPatternNote(slug: string): string | undefined {

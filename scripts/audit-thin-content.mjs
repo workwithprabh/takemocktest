@@ -48,27 +48,27 @@ const SECTIONS = [
   // questions for 300 marks in 120 minutes with a 1-mark deduction over the
   // same six sections, so 73% of each page also appears on the other.
   //
-  // The ceilings below are a ratchet at today's reading, not a standard. 43%
-  // average would fail either section above. They are here so the number is
-  // printed on every run and cannot quietly get worse, and they come down each
-  // time a batch of hand-written per-exam copy lands. Six batches so far, 116
-  // of the 141 pages: worst page 73% to 64%, pairs above 50% shared from 26 to
-  // 5, section average 47.2% to 41.0%, shortest page 333 words to 433. Batches
-  // three through six each moved the average about a point and the pair list
-  // not at all, which is the marginal return to expect from here.
+  // The ceilings below are a ratchet, not a standard: 40% average would still
+  // fail either section above. They are here so the number is printed on every
+  // run and cannot quietly get worse.
   //
-  // What is left is mostly the floor rather than the drift. The five pairs
-  // still above 50% all carry hand-written copy already, and they stay high
-  // because their papers are identical: the section table, the derived summary
-  // and the marking notes are the same text when the pattern is the same. On a
-  // 600-word page, 90 words of hand-written copy moves a genuine twin about ten
-  // points and no further. Going below that means writing a much larger share
-  // of each of those pages, not another batch of the same size.
+  // The hand-writing is now finished. All 141 indexable pages carry a note, in
+  // seven batches, and the section went from 47.2% average shared content to
+  // 40.3%, worst page 73% to 64%, pairs above 50% shared from 26 to 5, and
+  // shortest page 333 words to 433.
+  //
+  // What remains is the floor rather than drift. The five pairs still above 50%
+  // all carry hand-written copy, and they stay high because their papers are
+  // identical: the section table, the derived summary and the marking notes are
+  // the same text when the pattern is the same. On a 600-word page, 90 words of
+  // hand-written copy moves a genuine twin about ten points and no further.
+  // Lowering it from here means changing what the derived body says or how many
+  // pattern pages two identical papers get, not writing more notes.
   {
     name: 'Exam pattern',
     glob: (entry) => `in/${entry}/exam-pattern.html`,
     maxDuplicateShare: 0.65,
-    maxAverageDuplicateShare: 0.415,
+    maxAverageDuplicateShare: 0.41,
     minWords: 300,
   },
 ];
