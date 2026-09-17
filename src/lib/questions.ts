@@ -572,6 +572,7 @@ import { AGNIVEER_VAYU_ENGLISH_AND_MATHEMATICS_2 } from './question-banks/agnive
 import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_1 } from './question-banks/navy-ssr-english-and-mathematics-combined-1';
 import { NAVY_SSR_ENGLISH_AND_MATHEMATICS_2 } from './question-banks/navy-ssr-english-and-mathematics-combined-2';
 import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1 } from './question-banks/clat-english-legal-logical-quantitative-combined-1';
+import { CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_2 } from './question-banks/clat-english-legal-logical-quantitative-combined-2';
 import { AILET_ENGLISH_AND_LOGICAL_REASONING_1 } from './question-banks/ailet-english-and-logical-reasoning-combined-1';
 import { SLAT_2026_LOGICAL_REASONING_1 } from './question-banks/slat-2026-logical-reasoning-1';
 import { SLAT_2026_LEGAL_REASONING_1 } from './question-banks/slat-2026-legal-reasoning-1';
@@ -583,6 +584,7 @@ import { MH_CET_LAW_LEGAL_LOGICAL_ENGLISH_MATHEMATICS_2 } from './question-banks
 import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_1 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-1';
 import { MH_CET_LAW_3_YEAR_LEGAL_LOGICAL_ENGLISH_2 } from './question-banks/mh-cet-law-3-year-legal-logical-english-combined-2';
 import { CAT_VARC_DILR_QA_1 } from './question-banks/cat-varc-dilr-qa-combined-1';
+import { CAT_VARC_DILR_QA_2 } from './question-banks/cat-varc-dilr-qa-combined-2';
 import { CMAT_2026_QUANTITATIVE_TECHNIQUES_DATA_INTERPRETATION_1 } from './question-banks/cmat-2026-quantitative-techniques-data-interpretation-1';
 import { CMAT_2026_LOGICAL_REASONING_1 } from './question-banks/cmat-2026-logical-reasoning-1';
 import { CMAT_2026_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-2026-language-comprehension-1';
@@ -2274,6 +2276,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'clat/legal-reasoning-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Legal Reasoning'),
   'clat/logical-reasoning-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Logical Reasoning'),
   'clat/quantitative-techniques-sectional-1': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_1.filter((question) => question.section === 'Quantitative Techniques'),
+  'clat/english-legal-logical-quantitative-full-mock-2': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_2,
+  'clat/english-language-sectional-2': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_2.filter((question) => question.section === 'English Language'),
+  'clat/legal-reasoning-sectional-2': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_2.filter((question) => question.section === 'Legal Reasoning'),
+  'clat/logical-reasoning-sectional-2': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_2.filter((question) => question.section === 'Logical Reasoning'),
+  'clat/quantitative-techniques-sectional-2': CLAT_ENGLISH_LEGAL_LOGICAL_QUANTITATIVE_2.filter((question) => question.section === 'Quantitative Techniques'),
   'ailet/english-and-logical-reasoning-full-mock-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1,
   'ailet/english-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'English'),
   'ailet/logical-reasoning-sectional-1': AILET_ENGLISH_AND_LOGICAL_REASONING_1.filter((question) => question.section === 'Logical Reasoning'),
@@ -2313,6 +2320,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'cat/verbal-ability-and-reading-comprehension-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
   'cat/data-interpretation-and-logical-reasoning-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
   'cat/quantitative-aptitude-sectional-1': CAT_VARC_DILR_QA_1.filter((question) => question.section === 'Quantitative Aptitude'),
+  'cat/varc-dilr-qa-full-mock-2': CAT_VARC_DILR_QA_2,
+  'cat/verbal-ability-and-reading-comprehension-sectional-2': CAT_VARC_DILR_QA_2.filter((question) => question.section === 'Verbal Ability and Reading Comprehension'),
+  'cat/data-interpretation-and-logical-reasoning-sectional-2': CAT_VARC_DILR_QA_2.filter((question) => question.section === 'Data Interpretation and Logical Reasoning'),
+  'cat/quantitative-aptitude-sectional-2': CAT_VARC_DILR_QA_2.filter((question) => question.section === 'Quantitative Aptitude'),
   'cmat/qtdi-logical-reasoning-language-comprehension-full-mock-1': [
     ...CMAT_2026_QUANTITATIVE_TECHNIQUES_DATA_INTERPRETATION_1,
     ...CMAT_2026_LOGICAL_REASONING_1,
