@@ -303,7 +303,7 @@ export default async function TopicPracticePage({
         <div className="mt-4 space-y-3">
           {faqs.map((faq) => (
             <details key={faq.q} className="border border-ink-200 bg-white p-4">
-              <summary className="cursor-pointer text-sm font-semibold text-ink-900">{faq.q}</summary>
+              <summary className="faq-summary">{faq.q}</summary>
               <p className="mt-2 text-sm leading-6 text-ink-700">{faq.a}</p>
             </details>
           ))}
@@ -326,7 +326,7 @@ export default async function TopicPracticePage({
               );
             })}
           </ul>
-          <Link href={base} className="mt-4 inline-block text-sm font-semibold text-action-700 hover:underline">
+          <Link href={base} className="mt-4 inline-block link-action">
             See all practice topics &rarr;
           </Link>
         </section>

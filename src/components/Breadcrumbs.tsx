@@ -8,7 +8,7 @@ export default function Breadcrumbs({ items }: { items: { label: string; href?: 
           <li key={`${item.label}-${index}`} className="flex items-center gap-2">
             {index > 0 && <span aria-hidden="true">/</span>}
             {item.href ? (
-              <Link href={item.href} className="font-medium hover:text-ink-900 hover:underline">{item.label}</Link>
+              <Link href={item.href} className="breadcrumb-link">{item.label}</Link>
             ) : (
               <span aria-current="page">{item.label}</span>
             )}

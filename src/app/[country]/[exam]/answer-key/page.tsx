@@ -74,7 +74,7 @@ export default async function AnswerKeyPage({ params }: { params: Promise<{ coun
       />
 
       <header className="max-w-3xl mb-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500 mb-3">Official Tier 2 update · 17 June 2026</p>
+        <p className="eyebrow mb-3">Official Tier 2 update · 17 June 2026</p>
         <h1 className="text-3xl sm:text-4xl font-bold text-ink-900 mb-3">SSC CGL Answer Key 2025</h1>
         <p className="text-ink-500 leading-7">
           SSC uploaded the CGLE 2025 Tier 2 final answer keys, candidate response sheets, and marks after declaring the final result. The official access window is now closed.

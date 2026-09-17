@@ -73,7 +73,7 @@ export default async function AdmitCardPage({ params }: { params: Promise<{ coun
       />
 
       <header className="max-w-3xl mb-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500 mb-3">Official 2026 notice guidance</p>
+        <p className="eyebrow mb-3">Official 2026 notice guidance</p>
         <h1 className="text-3xl sm:text-4xl font-bold text-ink-900 mb-3">SSC CGL Admit Card 2026</h1>
         <p className="text-ink-500 leading-7">
           SSC calls the admit card an Admission Certificate. The official CGL 2026 notice says it will be available on the Commission&apos;s website 2 to 3 days before the examination.

@@ -46,3 +46,177 @@ body {
     animation: none;
   }
 }
+
+/* Repeated element recipes, extracted from the JSX that used to spell them
+   out inline.
+   
+   These are not a styling change. Each rule below is the exact utility list
+   the markup already carried, moved behind one name. The reason is page
+   weight: under output: 'export' every class attribute is serialised twice,
+   once in the rendered HTML and again in the React flight payload that sits
+   in the same file, so a 266-character class string on a row repeated 30
+   times costs about 16 KB of that one page. Measured across the 1,990
+   indexable pages before this change, class attributes were 23.3 KB of an
+   average 74.6 KB page, and the eight recipes below accounted for 5.6 MB of
+   the export on their own.
+   
+   They sit in @layer components deliberately: utilities are emitted after
+   components, so a one-off utility left on the element (mt-5 on a button,
+   say) still wins over the recipe, which is what lets call sites keep
+   composing. Marker classes that carry no styles of their own, `group` in
+   particular, have to stay in the markup for group-hover: children to
+   resolve, so TestRow keeps `group` alongside .test-row. */
+@layer components {
+  .skip-link {
+    @apply fixed left-3 top-3 z-50 -translate-y-20 bg-white px-4 py-2 text-sm font-semibold text-ink-900 shadow-lg focus:translate-y-0;
+  }
+
+  .bottom-nav-item {
+    @apply flex min-h-12 flex-1 flex-col items-center gap-1 text-xs font-medium transition;
+  }
+
+  .footer-heading {
+    @apply font-sans font-semibold mb-3 text-ink-50;
+  }
+
+  .header-nav-link {
+    @apply flex items-center gap-1.5 py-2 transition hover:text-ink-300;
+  }
+
+  .header-icon-button {
+    @apply flex h-9 items-center justify-center gap-2 border border-ink-700 px-2.5 text-ink-50 transition hover:border-ink-50 sm:px-3;
+  }
+
+  .breadcrumb-link {
+    @apply font-medium hover:text-ink-900 hover:underline;
+  }
+
+  .test-row {
+    @apply flex flex-col items-stretch gap-3 border-b border-ink-200 py-4 transition last:border-none hover:bg-ink-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:flex-row sm:items-center sm:justify-between;
+  }
+
+  .btn-primary {
+    @apply flex min-h-12 items-center justify-center bg-action-700 px-4 text-sm font-semibold text-white transition hover:bg-action-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-action-700;
+  }
+
+  .stat-value {
+    @apply mt-1 text-sm font-bold leading-5 text-ink-900;
+  }
+
+  .step-item {
+    @apply flex gap-3 border-b border-r border-ink-200 p-4 text-sm leading-6 text-ink-700 sm:p-5;
+  }
+
+  .step-number {
+    @apply flex h-6 w-6 flex-none items-center justify-center bg-ink-900 text-[11px] font-bold text-white;
+  }
+
+  .faq-summary {
+    @apply cursor-pointer text-sm font-semibold text-ink-900;
+  }
+}
+
+/* Second tier, same reasoning as above: chrome that renders on all 1,990
+   indexable pages, plus the row and button recipes that repeat dozens of
+   times on the mock-test hubs and test pages. Conditional parts (an active
+   colour, a selected state) deliberately stay inline at the call site, so
+   the recipe holds only what never varies. */
+@layer components {
+  .footer-grid {
+    @apply max-w-6xl mx-auto px-5 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-sm;
+  }
+
+  .footer-link-strong {
+    @apply font-semibold text-ink-50 transition hover:text-ink-300;
+  }
+
+  .header-nav {
+    @apply hidden lg:flex items-center gap-6 text-sm font-medium text-ink-50;
+  }
+
+  .bottom-nav {
+    @apply lg:hidden fixed bottom-0 left-0 right-0 bg-ink-900 flex pt-2 z-30;
+  }
+
+  .bottom-nav-button {
+    @apply flex min-h-12 w-full flex-col items-center gap-1 text-xs font-medium;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.16em] text-ink-500;
+  }
+
+  .btn-secondary {
+    @apply flex min-h-10 items-center justify-center border border-ink-200 bg-white px-4 text-sm font-semibold text-ink-900 transition hover:bg-ink-100;
+  }
+
+  .test-row-cta {
+    @apply flex min-h-10 items-center justify-center bg-ink-900 px-4 text-xs font-semibold text-white transition group-hover:bg-ink-700;
+  }
+
+  .hero-bubble {
+    @apply flex h-8 w-8 items-center justify-center border text-[10px] font-bold;
+  }
+}
+
+/* Third tier: the recipes that make the individual heavy pages heavy. The
+   blog index renders 61 cards, a mock-test hub up to 43 rows and the
+   calendar 37 event cards, so a single long class string on a card is paid
+   once per card and then again in the flight payload.
+   
+   The chip recipes hold only the shape. Their colours vary per state
+   (checked against unchecked, tentative against confirmed) and stay at the
+   call site, which is why .chip and .chip-lg carry no colour of their own. */
+@layer components {
+  .blog-card {
+    @apply flex flex-col overflow-hidden border border-ink-200 bg-white transition hover:-translate-y-1 hover:border-ink-400 hover:shadow-xl hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900;
+  }
+
+  .blog-card-title {
+    @apply font-sans text-base font-semibold leading-snug text-ink-900 group-hover:underline;
+  }
+
+  .blog-card-meta {
+    @apply mt-auto flex items-center justify-between pt-5 text-xs text-ink-600;
+  }
+
+  .blog-list-row {
+    @apply flex items-start justify-between gap-4 border-b border-ink-100 py-3 text-sm text-ink-700 last:border-b-0 hover:text-ink-900 hover:underline;
+  }
+
+  .exam-card {
+    @apply flex min-h-20 items-center gap-3 border border-ink-200 bg-white p-4 transition duration-200 hover:border-action-600 hover:bg-action-50/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900;
+  }
+
+  .disclosure-trigger {
+    @apply flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold text-ink-900;
+  }
+
+  .disclosure-icon {
+    @apply text-xl font-normal text-ink-500 transition group-open:rotate-45;
+  }
+
+  .link-action {
+    @apply text-sm font-semibold text-action-700 hover:underline;
+  }
+
+  .calendar-card {
+    @apply scroll-mt-24 border border-ink-200 bg-white p-4 shadow-sm transition hover:border-ink-300;
+  }
+
+  .calendar-meta {
+    @apply mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-ink-100 pt-3;
+  }
+
+  .test-row-meta {
+    @apply mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-600;
+  }
+
+  .chip {
+    @apply px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide;
+  }
+
+  .chip-lg {
+    @apply px-2 py-1 text-[11px] font-semibold;
+  }
+}

@@ -138,7 +138,7 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
                         <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
                           {faq.links.map((link) => (
                             <li key={link.href}>
-                              <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                              <Link href={link.href} className="link-action">{link.label}</Link>
                             </li>
                           ))}
                         </ul>
@@ -182,7 +182,7 @@ export default async function ExamUpdatePage({ params }: { params: Promise<{ cou
           <div className="grid gap-4 md:grid-cols-3">
             {related.map((item) => (
               <Link key={item.slug} href={`/${country}/exam-updates/${item.slug}`} className="border border-ink-200 bg-white p-4 transition hover:border-ink-900">
-                <span className={`px-2 py-1 text-[11px] font-semibold ${UPDATE_CATEGORY_STYLES[item.category]}`}>{item.category}</span>
+                <span className={`chip-lg ${UPDATE_CATEGORY_STYLES[item.category]}`}>{item.category}</span>
                 <div className="mt-3 text-sm font-bold leading-5 text-ink-900">{item.headline}</div>
                 <time dateTime={item.publishedAt} className="mt-3 block text-xs text-ink-500">{formatUpdateDate(item.publishedAt)}</time>
               </Link>

@@ -117,9 +117,9 @@ export default function ExamInfoPageContent({
           <div className="border border-ink-200 bg-white">
             {faqs.map((faq) => (
               <details key={faq.q} className="group border-b border-ink-200 last:border-b-0">
-                <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-4 text-sm font-semibold text-ink-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700">
+                <summary className="disclosure-trigger focus-visible:outline focus-visible:outline-2 focus-visible:outline-action-700">
                   {faq.q}
-                  <span className="text-xl font-normal text-ink-500 transition group-open:rotate-45" aria-hidden="true">+</span>
+                  <span className="disclosure-icon" aria-hidden="true">+</span>
                 </summary>
                 <div className="max-w-3xl px-4 pb-4">
                   <p className="text-sm leading-6 text-ink-600">{faq.a}</p>
@@ -127,7 +127,7 @@ export default function ExamInfoPageContent({
                     <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
                       {faq.links.map((link) => (
                         <li key={link.href}>
-                          <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                          <Link href={link.href} className="link-action">{link.label}</Link>
                         </li>
                       ))}
                     </ul>

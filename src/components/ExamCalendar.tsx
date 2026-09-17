@@ -107,16 +107,16 @@ export default function ExamCalendar({ events, country, knownExamSlugs, practice
                 const hasPractice = practiceExamSlugs.includes(event.examSlug);
                 const internalHref = knownExam ? `/${country}/${event.examSlug}${hasPractice ? '/mock-test' : ''}` : `/${country}/exams`;
                 return (
-                  <article id={event.id} key={event.id} className="scroll-mt-24 border border-ink-200 bg-white p-4 shadow-sm transition hover:border-ink-300">
+                  <article id={event.id} key={event.id} className="calendar-card">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className={`px-2 py-1 text-[11px] font-semibold ${TYPE_STYLES[event.type]}`}>{event.type}</span>
-                      <span className={`px-2 py-1 text-[11px] font-semibold ${event.status === 'Tentative' ? 'bg-attention-50 text-attention-800' : 'bg-live-50 text-live-700'}`}>{event.status}</span>
+                      <span className={`chip-lg ${TYPE_STYLES[event.type]}`}>{event.type}</span>
+                      <span className={`chip-lg ${event.status === 'Tentative' ? 'bg-attention-50 text-attention-800' : 'bg-live-50 text-live-700'}`}>{event.status}</span>
                       <span className="text-xs text-ink-500 sm:ml-auto">Checked {event.sourceCheckedOn.split('-').reverse().join('/')}</span>
                     </div>
                     <p className="mt-4 text-base font-bold text-action-700"><time dateTime={event.startsOn}>{formatCalendarEventDate(event)}</time></p>
                     <h4 className="mt-1 text-base font-bold text-ink-900">{event.examName}</h4>
                     <p className="mt-1 text-sm leading-6 text-ink-700">{event.label}</p>
-                    <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-ink-100 pt-3">
+                    <div className="calendar-meta">
                       <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-xs font-semibold text-action-700 underline underline-offset-4">Official source ↗<span className="sr-only"> for {event.examName}, opens in a new tab</span></a>
                       {event.updateSlug && <Link href={`/${country}/exam-updates/${event.updateSlug}`} className="inline-flex min-h-11 items-center text-xs font-semibold text-ink-700 underline underline-offset-4">Read update</Link>}
                       <Link href={internalHref} className="ml-auto inline-flex min-h-11 items-center text-xs font-semibold text-ink-900 underline underline-offset-4">{hasPractice ? 'Practice now' : knownExam ? 'Exam overview' : 'Browse exams'} →</Link>

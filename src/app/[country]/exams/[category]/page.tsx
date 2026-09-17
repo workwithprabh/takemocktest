@@ -80,7 +80,7 @@ export default async function ExamCategoryPage({
           <CategoryIcon name={category.icon} />
         </div>
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Exam pathway</p>
+          <p className="mb-2 eyebrow">Exam pathway</p>
           {/* The H1 carries "Exams" because that is the word the searcher types and
               the word this class's declared target needs: seo-keywords.ts gates the
               category class on "{category} exams", and the <title> has said
@@ -124,7 +124,7 @@ export default async function ExamCategoryPage({
                     <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
                       {faq.links.map((link) => (
                         <li key={link.href}>
-                          <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                          <Link href={link.href} className="link-action">{link.label}</Link>
                         </li>
                       ))}
                     </ul>

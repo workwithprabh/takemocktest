@@ -150,7 +150,7 @@ export default function ExamCard({ exam, country }: { exam: ExamConfig; country:
     <Link
       href={`/${country}/${exam.slug}/mock-test`}
       aria-label={checkedTestCount > 0 ? `Open free ${exam.name} mock tests` : `Try the ${exam.name} test interface demo`}
-      className="group flex min-h-20 items-center gap-3 border border-ink-200 bg-white p-4 transition duration-200 hover:border-action-600 hover:bg-action-50/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
+      className="group exam-card"
     >
       <div className={`flex h-10 w-10 shrink-0 items-center justify-center ${style.surface} ${style.iconText}`}>
         {style.icon}

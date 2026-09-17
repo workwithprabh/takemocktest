@@ -23,7 +23,7 @@ export default function Header({ country }: { country: string }) {
         <Link href={`/${country}`} className="font-sans font-bold text-lg text-ink-50">
           TakeMockTest
         </Link>
-        <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-6 text-sm font-medium text-ink-50">
+        <nav aria-label="Primary navigation" className="header-nav">
           {hasExams && <Link href={`/${country}/exams?availability=available`} className="hover:text-ink-300 transition">Mock tests</Link>}
           {hasUpdates && <Link href={`/${country}/exam-updates`} className="hover:text-ink-300 transition">Exam updates</Link>}
           <div ref={practiceMenu.ref} className="relative">
@@ -34,7 +34,7 @@ export default function Header({ country }: { country: string }) {
                 examMenu.setOpen(false);
               }}
               aria-expanded={practiceMenu.open}
-              className="flex items-center gap-1.5 py-2 hover:text-ink-300 transition"
+              className="header-nav-link"
             >
               Practice
               <span className={`text-xs transition-transform duration-200 ${practiceMenu.open ? 'rotate-180' : ''}`} aria-hidden="true">⌄</span>
@@ -55,7 +55,7 @@ export default function Header({ country }: { country: string }) {
                 practiceMenu.setOpen(false);
               }}
               aria-expanded={examMenu.open}
-              className="flex items-center gap-1.5 py-2 hover:text-ink-300 transition"
+              className="header-nav-link"
             >
               Browse exams
               <span
@@ -95,7 +95,7 @@ export default function Header({ country }: { country: string }) {
         <Link
           href={`/${country}/exams`}
           aria-label="Search and browse exams"
-          className="flex h-9 items-center justify-center gap-2 border border-ink-700 px-2.5 text-ink-50 transition hover:border-ink-50 sm:px-3"
+          className="header-icon-button"
         >
           <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="11" cy="11" r="7" />

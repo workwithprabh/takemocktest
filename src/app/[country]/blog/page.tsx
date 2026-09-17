@@ -96,7 +96,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
         <section aria-labelledby="visual-guides-heading" className="mb-14">
           <div className="mb-6 flex items-end justify-between gap-4">
             <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Start here</p>
+              <p className="mb-2 eyebrow">Start here</p>
               <h2 id="visual-guides-heading" className="font-sans text-2xl font-bold text-ink-900">Popular preparation guides</h2>
             </div>
             <span className="hidden text-xs text-ink-500 sm:block">Original editorial visuals</span>
@@ -108,7 +108,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
                 <Link
                   key={post.slug}
                   href={`/${country}/blog/${post.slug}`}
-                  className="group flex flex-col overflow-hidden border border-ink-200 bg-white transition hover:-translate-y-1 hover:border-ink-400 hover:shadow-xl hover:shadow-ink-900/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink-900"
+                  className="group blog-card"
                 >
                   {post.image && (
                     <div className="relative aspect-video overflow-hidden bg-ink-100">
@@ -126,9 +126,9 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
                       <span className="h-3.5 w-3.5" aria-hidden="true">{style.icon}</span>
                       {post.category}
                     </span>
-                    <h3 className="font-sans text-base font-semibold leading-snug text-ink-900 group-hover:underline">{post.title}</h3>
+                    <h3 className="blog-card-title">{post.title}</h3>
                     <p className="mt-2 line-clamp-3 text-xs leading-5 text-ink-700">{post.excerpt}</p>
-                    <div className="mt-auto flex items-center justify-between pt-5 text-xs text-ink-600">
+                    <div className="blog-card-meta">
                       <span>{post.readTimeMin} min read</span>
                       <span className="font-semibold text-ink-900" aria-hidden="true">→</span>
                     </div>
@@ -142,7 +142,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
 
       <section aria-labelledby="all-guides-heading">
         <div className="mb-6">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Browse by topic</p>
+          <p className="mb-2 eyebrow">Browse by topic</p>
           <h2 id="all-guides-heading" className="font-sans text-2xl font-bold text-ink-900">All {BLOG_POSTS.length} preparation guides</h2>
           <p className="mt-2 text-sm text-ink-700">Open a topic to scan every guide without scrolling through one long card wall.</p>
         </div>
@@ -165,7 +165,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
                     <Link
                       key={post.slug}
                       href={`/${country}/blog/${post.slug}`}
-                      className="flex items-start justify-between gap-4 border-b border-ink-100 py-3 text-sm text-ink-700 last:border-b-0 hover:text-ink-900 hover:underline"
+                      className="blog-list-row"
                     >
                       <span>{post.title}</span>
                       <span className="shrink-0 text-xs text-ink-400">{post.readTimeMin} min</span>

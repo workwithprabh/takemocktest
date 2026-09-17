@@ -240,7 +240,7 @@ export default async function LogicalReasoningTestPage({
               </li>
             ))}
           </ul>
-          <Link href={base} className="mt-4 inline-block text-sm font-semibold text-action-700 hover:underline">
+          <Link href={base} className="mt-4 inline-block link-action">
             See all logical reasoning practice &rarr;
           </Link>
         </section>

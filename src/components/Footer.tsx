@@ -26,35 +26,35 @@ export default function Footer({ country }: { country: string }) {
 
   return (
     <footer className="bg-ink-900 mt-16 pb-20 lg:pb-0">
-      <div className="max-w-6xl mx-auto px-5 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+      <div className="footer-grid">
         {hasExams && (
         <div>
-          <h2 className="font-sans font-semibold mb-3 text-ink-50">Popular mock tests</h2>
+          <h2 className="footer-heading">Popular mock tests</h2>
           <ul className="space-y-2 text-ink-300">
             {examsWithCheckedTests.slice(0, 6).map((exam) => (
               <li key={exam.slug}>
                 <div><Link href={`/${country}/${exam.slug}/mock-test`} className="hover:text-ink-50 transition">{exam.name} Mock Test</Link></div>
               </li>
             ))}
-            <li><Link href={`/${country}/exams`} className="font-semibold text-ink-50 hover:text-ink-300 transition">View all mock tests →</Link></li>
+            <li><Link href={`/${country}/exams`} className="footer-link-strong">View all mock tests →</Link></li>
           </ul>
         </div>
         )}
         {hasExams && (
         <div>
-          <h2 className="font-sans font-semibold mb-3 text-ink-50">Explore by goal</h2>
+          <h2 className="footer-heading">Explore by goal</h2>
           <ul className="space-y-2 text-ink-300">
             {categories.slice(0, 7).map((category) => (
               <li key={category.slug}>
                 <Link href={`/${country}/exams/${category.slug}`} className="hover:text-ink-50 transition">{category.name}</Link>
               </li>
             ))}
-            <li><Link href={`/${country}/exams`} className="font-semibold text-ink-50 hover:text-ink-300 transition">View all exams →</Link></li>
+            <li><Link href={`/${country}/exams`} className="footer-link-strong">View all exams →</Link></li>
           </ul>
         </div>
         )}
         <div>
-          <h2 className="font-sans font-semibold mb-3 text-ink-50">Resources</h2>
+          <h2 className="footer-heading">Resources</h2>
           <ul className="space-y-2 text-ink-300">
             {hasUpdates && <li><Link href={`/${country}/upcoming-government-exams`} className="hover:text-ink-50 transition">Upcoming government exams</Link></li>}
             {hasUpdates && <li><Link href={`/${country}/exam-calendar`} className="hover:text-ink-50 transition">India exam calendar</Link></li>}
@@ -70,7 +70,7 @@ export default function Footer({ country }: { country: string }) {
           </ul>
         </div>
         <div>
-          <h2 className="font-sans font-semibold mb-3 text-ink-50">Legal</h2>
+          <h2 className="footer-heading">Legal</h2>
           <ul className="space-y-2 text-ink-300">
             <li><Link href={`/${country}/privacy`} className="hover:text-ink-50 transition">Privacy policy</Link></li>
             <li><Link href={`/${country}/terms`} className="hover:text-ink-50 transition">Terms of service</Link></li>

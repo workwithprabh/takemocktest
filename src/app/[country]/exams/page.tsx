@@ -100,7 +100,7 @@ export default async function AllExamsPage({ params }: { params: Promise<{ count
       <ExamFinder categories={categories} country={country}>
         <section aria-labelledby="browse-goals-heading">
           <div className="mb-4">
-            <p className="mb-1 text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Browse the directory</p>
+            <p className="mb-1 eyebrow">Browse the directory</p>
             <h2 id="browse-goals-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Choose your preparation goal</h2>
           </div>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
