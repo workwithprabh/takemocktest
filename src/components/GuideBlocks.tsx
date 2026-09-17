@@ -177,7 +177,16 @@ function Block({ block }: { block: GuideBlock }) {
               </article>
             ))}
           </div>
-          {block.note && <p className="mt-2 text-ink-500">{block.note}</p>}
+          {/* The count is read off the array rather than typed beside it.
+              It was written by hand as "4 verified records" next to a
+              4-item list, which is the arrangement that already produced
+              fourteen mock-test pages whose stated counts did not match
+              their own breakdown. The note now carries only the editorial
+              half. */}
+          <p className="mt-2 text-ink-500">
+            {block.records.length} verified record{block.records.length === 1 ? '' : 's'}
+            {block.note ? `, ${block.note}` : ''}.
+          </p>
         </section>
       );
 

@@ -1,4 +1,5 @@
 import { ExamConfig } from '@/lib/exams';
+import { getExamGuide } from '@/lib/exam-guides';
 import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
 import type { Faq } from '@/lib/exam-faqs';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -59,15 +60,34 @@ export default function ExamInfoPageContent({
         <p className="mt-3 max-w-2xl text-sm leading-6 text-ink-700">{exam.fullName}</p>
       </header>
 
+      {/* A tab is a promise that there is something behind it. This bar used
+          to be a fixed five, so every exam advertised "Previous papers" and
+          "Syllabus" whether or not either page had been written: measured on
+          the build of 17 September 2026, 306 of the 905 tab links on indexable
+          pages landed on a noindexed placeholder reading "No verified papers
+          are published yet", 171 under Previous papers, 130 under Syllabus and
+          5 under Exam pattern. The pages
+          are honest about being empty; the tab was not honest about leading
+          there. A tab now appears only when its target has content, plus the
+          tab for the page you are already on, so arriving at a placeholder by
+          bookmark still shows you where you are. */}
       <nav aria-label={`${exam.name} resources`} className="mb-8 overflow-x-auto border-y border-ink-200 bg-white">
         <div className="flex min-w-max">
           {[
-            { slug: '', label: 'Overview' },
-            { slug: 'mock-test', label: 'Mock tests' },
-            { slug: 'exam-pattern', label: 'Exam pattern' },
-            { slug: 'syllabus', label: 'Syllabus' },
-            { slug: 'previous-year-papers', label: 'Previous papers' },
-          ].map((item) => {
+            { slug: '', label: 'Overview', built: true },
+            { slug: 'mock-test', label: 'Mock tests', built: true },
+            {
+              slug: 'exam-pattern',
+              label: 'Exam pattern',
+              built: exam.stages.some((stage) => stage.pattern.status === 'official'),
+            },
+            { slug: 'syllabus', label: 'Syllabus', built: getExamGuide(exam.slug, 'syllabus') !== undefined },
+            {
+              slug: 'previous-year-papers',
+              label: 'Previous papers',
+              built: getExamGuide(exam.slug, 'previous-year-papers') !== undefined,
+            },
+          ].filter((item) => item.built || item.slug === pageSlug).map((item) => {
             const active = item.slug === pageSlug;
             return (
               <Link
