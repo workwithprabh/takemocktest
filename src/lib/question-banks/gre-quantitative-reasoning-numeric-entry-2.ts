@@ -1,0 +1,19 @@
+import type { Question } from '../questions';
+
+const source = {
+  kind: 'original' as const,
+  reference: 'Original GRE Quantitative Reasoning practice questions in the official Numeric Entry format, where the candidate types the answer rather than selecting from choices. Second set, built to the same length as the first.',
+  url: 'https://www.ets.org/gre/test-takers/general-test/prepare/content/quantitative-reasoning.html',
+  checkedOn: '17 September 2026',
+};
+
+export const GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_2: Question[] = [
+  { id: 'gre-quant-numeric-entry-02-001', section: 'Numeric Entry', topic: 'Order of Operations', difficulty: 'easy', question: 'What is the value of 7 times 9 minus 5?', options: [], correctIndex: -1, correctValue: '58', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: 'Multiplication comes before subtraction, so the value is 63 less 5, which is 58.', source },
+  { id: 'gre-quant-numeric-entry-02-002', section: 'Numeric Entry', topic: 'Percentages', difficulty: 'easy', question: 'What is 35 percent of 240?', options: [], correctIndex: -1, correctValue: '84', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: '35 percent of 240 is 0.35 times 240, which is 84.', source },
+  { id: 'gre-quant-numeric-entry-02-003', section: 'Numeric Entry', topic: 'Exponents', difficulty: 'medium', question: 'What is the value of 3 to the power 4 minus 3 to the power 3?', options: [], correctIndex: -1, correctValue: '54', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: 'The value is 81 less 27, which is 54.', source },
+  { id: 'gre-quant-numeric-entry-02-004', section: 'Numeric Entry', topic: 'Geometry', difficulty: 'medium', question: 'In a triangle the three angles are in the ratio 3 to 4 to 5. What is the measure, in degrees, of the largest angle?', options: [], correctIndex: -1, correctValue: '75', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: 'The twelve parts of 180 degrees are 15 degrees each, so the largest angle is 5 times 15, which is 75 degrees.', source },
+  { id: 'gre-quant-numeric-entry-02-005', section: 'Numeric Entry', topic: 'Geometry', difficulty: 'easy', question: 'A rectangle measures 15 units by 9 units. What is its perimeter, in units?', options: [], correctIndex: -1, correctValue: '48', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: 'The perimeter is twice the sum of the sides, that is 2 times 24, which is 48.', source },
+  { id: 'gre-quant-numeric-entry-02-006', section: 'Numeric Entry', topic: 'Right Triangles', difficulty: 'medium', question: 'A right triangle has legs of length 6 and 8. What is the length of its hypotenuse?', options: [], correctIndex: -1, correctValue: '10', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: 'The square of the hypotenuse is 36 plus 64, which is 100, so the hypotenuse is 10.', source },
+  { id: 'gre-quant-numeric-entry-02-007', section: 'Numeric Entry', topic: 'Compound Interest', difficulty: 'hard', question: 'A deposit of 1,250 earns 8 percent interest compounded annually. What is its value, in the same units, after 2 years?', options: [], correctIndex: -1, correctValue: '1458', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: 'The value is 1,250 times 1.08 times 1.08, which is 1,458.', source },
+  { id: 'gre-quant-numeric-entry-02-008', section: 'Numeric Entry', topic: 'Angles', difficulty: 'medium', question: 'Two angles are complementary and one of them measures 18 degrees. What is the measure, in degrees, of the other?', options: [], correctIndex: -1, correctValue: '72', answerType: 'numerical', marks: 1, negativeMarking: 0, explanation: 'Complementary angles add to 90 degrees, so the other angle is 90 less 18, which is 72 degrees.', source },
+];

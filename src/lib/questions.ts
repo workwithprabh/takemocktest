@@ -525,7 +525,9 @@ import { SAT_MATH_ADVANCED_MATH_1 } from './question-banks/sat-math-advanced-mat
 import { SAT_MATH_PROBLEM_SOLVING_AND_DATA_ANALYSIS_1 } from './question-banks/sat-math-problem-solving-and-data-analysis-1';
 import { SAT_MATH_GEOMETRY_AND_TRIGONOMETRY_1 } from './question-banks/sat-math-geometry-and-trigonometry-1';
 import { GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1 } from './question-banks/gre-quantitative-reasoning-quantitative-comparison-1';
+import { GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_2 } from './question-banks/gre-quantitative-reasoning-quantitative-comparison-2';
 import { GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1 } from './question-banks/gre-quantitative-reasoning-numeric-entry-1';
+import { GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_2 } from './question-banks/gre-quantitative-reasoning-numeric-entry-2';
 import { ACT_ENGLISH_USAGE_AND_MECHANICS_1 } from './question-banks/act-english-usage-and-mechanics-1';
 import { ACT_ENGLISH_RHETORICAL_SKILLS_1 } from './question-banks/act-english-rhetorical-skills-1';
 import { ACT_MATH_PRE_ALGEBRA_AND_ELEMENTARY_ALGEBRA_1 } from './question-banks/act-math-pre-algebra-and-elementary-algebra-1';
@@ -544,8 +546,10 @@ import { LSAT_2026_SCORED_SECTIONS_FULL_MOCK_1 } from './question-banks/lsat-202
 import { GMAT_2026_FOCUS_EDITION_FULL_MOCK_1 } from './question-banks/gmat-2026-focus-edition-full-mock-1';
 import { OET_READING_PART_C_1 } from './question-banks/oet-reading-part-c-combined-1';
 import { FRM_PART_1_QUANTITATIVE_ANALYSIS_1 } from './question-banks/frm-part-1-quantitative-analysis-combined-1';
+import { FRM_PART_1_QUANTITATIVE_ANALYSIS_2 } from './question-banks/frm-part-1-quantitative-analysis-combined-2';
 import { NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1 } from './question-banks/nism-series-v-a-mutual-fund-distributors-combined-1';
 import { ACET_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/acet-mathematics-and-statistics-combined-1';
+import { ACET_MATHEMATICS_AND_STATISTICS_2 } from './question-banks/acet-mathematics-and-statistics-combined-2';
 import { CA_FOUNDATION_QUANTITATIVE_APTITUDE_1 } from './question-banks/ca-foundation-quantitative-aptitude-combined-1';
 import { CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/cma-foundation-business-mathematics-and-statistics-combined-1';
 import { NDA_MATHEMATICS_1 } from './question-banks/nda-mathematics-combined-1';
@@ -553,6 +557,7 @@ import { NDA_GENERAL_ABILITY_TEST_ENGLISH_1 } from './question-banks/nda-general
 import { CDS_ELEMENTARY_MATHEMATICS_1 } from './question-banks/cds-elementary-mathematics-combined-1';
 import { CDS_ENGLISH_1 } from './question-banks/cds-english-combined-1';
 import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_1 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-1';
+import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_2 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-2';
 import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1 } from './question-banks/territorial-army-reasoning-and-english-combined-1';
 import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_2 } from './question-banks/territorial-army-reasoning-and-english-combined-2';
 import { INET_ENGLISH_AND_REASONING_NUMERICAL_ABILITY_1 } from './question-banks/inet-english-and-reasoning-numerical-ability-combined-1';
@@ -2129,6 +2134,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'gre/quantitative-reasoning-quantitative-comparison-sectional-1': GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_1,
   'gre/quantitative-reasoning-numeric-entry-sectional-1': GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_1,
+  'gre/quantitative-reasoning-full-mock-2': [
+    ...GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_2,
+    ...GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_2,
+  ],
+  'gre/quantitative-reasoning-quantitative-comparison-sectional-2': GRE_QUANTITATIVE_REASONING_QUANTITATIVE_COMPARISON_2,
+  'gre/quantitative-reasoning-numeric-entry-sectional-2': GRE_QUANTITATIVE_REASONING_NUMERIC_ENTRY_2,
   'act/english-full-mock-1': [
     ...ACT_ENGLISH_USAGE_AND_MECHANICS_1,
     ...ACT_ENGLISH_RHETORICAL_SKILLS_1,
@@ -2173,12 +2184,18 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'frm/part-1-quantitative-analysis-full-mock-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1,
   'frm/part-1-probability-and-distributions-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Probability and Distributions'),
   'frm/part-1-regression-and-estimation-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Regression and Estimation'),
+  'frm/part-1-quantitative-analysis-full-mock-2': FRM_PART_1_QUANTITATIVE_ANALYSIS_2,
+  'frm/part-1-probability-and-distributions-sectional-2': FRM_PART_1_QUANTITATIVE_ANALYSIS_2.filter((question) => question.section === 'Probability and Distributions'),
+  'frm/part-1-regression-and-estimation-sectional-2': FRM_PART_1_QUANTITATIVE_ANALYSIS_2.filter((question) => question.section === 'Regression and Estimation'),
   'nism/series-v-a-mutual-fund-distributors-full-mock-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1,
   'nism/series-v-a-nav-and-returns-calculations-sectional-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1.filter((question) => question.section === 'NAV and Returns Calculations'),
   'nism/series-v-a-sip-and-growth-calculations-sectional-1': NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1.filter((question) => question.section === 'SIP and Growth Calculations'),
   'acet/mathematics-and-statistics-full-mock-1': ACET_MATHEMATICS_AND_STATISTICS_1,
   'acet/mathematics-sectional-1': ACET_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Mathematics'),
   'acet/statistics-sectional-1': ACET_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Statistics'),
+  'acet/mathematics-and-statistics-full-mock-2': ACET_MATHEMATICS_AND_STATISTICS_2,
+  'acet/mathematics-sectional-2': ACET_MATHEMATICS_AND_STATISTICS_2.filter((question) => question.section === 'Mathematics'),
+  'acet/statistics-sectional-2': ACET_MATHEMATICS_AND_STATISTICS_2.filter((question) => question.section === 'Statistics'),
   'ca-foundation/quantitative-aptitude-full-mock-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1,
   'ca-foundation/business-mathematics-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Business Mathematics'),
   'ca-foundation/logical-reasoning-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Logical Reasoning'),
@@ -2204,6 +2221,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'afcat/verbal-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Verbal Ability'),
   'afcat/numerical-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Numerical Ability'),
   'afcat/reasoning-and-military-aptitude-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Reasoning and Military Aptitude'),
+  'afcat/verbal-numerical-and-reasoning-full-mock-2': AFCAT_VERBAL_NUMERICAL_AND_REASONING_2,
+  'afcat/verbal-ability-sectional-2': AFCAT_VERBAL_NUMERICAL_AND_REASONING_2.filter((question) => question.section === 'Verbal Ability'),
+  'afcat/numerical-ability-sectional-2': AFCAT_VERBAL_NUMERICAL_AND_REASONING_2.filter((question) => question.section === 'Numerical Ability'),
+  'afcat/reasoning-and-military-aptitude-sectional-2': AFCAT_VERBAL_NUMERICAL_AND_REASONING_2.filter((question) => question.section === 'Reasoning and Military Aptitude'),
   'territorial-army/reasoning-and-english-full-mock-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1,
   'territorial-army/reasoning-sectional-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1.filter((question) => question.section === 'Reasoning'),
   'territorial-army/english-sectional-1': TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1.filter((question) => question.section === 'English'),
