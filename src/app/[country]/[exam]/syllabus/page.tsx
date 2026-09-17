@@ -105,14 +105,16 @@ export default async function SyllabusPage({ params }: { params: Promise<{ count
         <div className="space-y-6">
           <p className="text-sm leading-7 text-ink-800">{note}</p>
 
+          {/* Kept short on purpose. This block is the one piece of prose every
+              coverage page shares, so every sentence in it is a sentence the
+              section's thin-content reading pays for. The longer version of
+              the same point lives in the FAQ below, which interpolates the
+              exam's own sections and counts and therefore differs per page. */}
           <section className="border border-ink-200 bg-ink-50 p-5">
-            <h2 className="mb-2 text-lg font-semibold text-ink-900">What this page is, and is not</h2>
             <p className="text-sm leading-6 text-ink-700">
-              The section names, question counts and marks below come from the official pattern for this exam,
-              checked against the notification and linked at the foot of the page where a source is recorded.
-              The topics under each section are different: they are the topics the free mock tests on this site
-              cover, not a syllabus the exam body publishes. Use them to see what you can practise here and to
-              check your own list for gaps, and read the body&apos;s own document for the syllabus itself.
+              <strong className="font-semibold text-ink-900">Sections official, topics ours.</strong> The section
+              names and counts below are from the official pattern. The topics under them are what this site&apos;s
+              own tests cover, not a list the exam body publishes.
             </p>
           </section>
 
