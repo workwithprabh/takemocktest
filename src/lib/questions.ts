@@ -515,7 +515,9 @@ import { IELTS_GENERAL_TRAINING_READING_SECTION_3_1 } from './question-banks/iel
 import { TOEFL_READING_READ_IN_DAILY_LIFE_1 } from './question-banks/toefl-reading-read-in-daily-life-1';
 import { TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1 } from './question-banks/toefl-reading-read-an-academic-passage-1';
 import { PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1 } from './question-banks/pte-reading-multiple-choice-single-answer-1';
+import { PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_2 } from './question-banks/pte-reading-multiple-choice-single-answer-2';
 import { PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1 } from './question-banks/pte-reading-multiple-choice-multiple-answers-1';
+import { PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_2 } from './question-banks/pte-reading-multiple-choice-multiple-answers-2';
 import { SAT_READING_AND_WRITING_CRAFT_AND_STRUCTURE_1 } from './question-banks/sat-reading-and-writing-craft-and-structure-1';
 import { SAT_READING_AND_WRITING_INFORMATION_AND_IDEAS_1 } from './question-banks/sat-reading-and-writing-information-and-ideas-1';
 import { SAT_READING_AND_WRITING_STANDARD_ENGLISH_CONVENTIONS_1 } from './question-banks/sat-reading-and-writing-standard-english-conventions-1';
@@ -541,10 +543,13 @@ import { ACT_SCIENCE_DATA_REPRESENTATION_1 } from './question-banks/act-science-
 import { ACT_SCIENCE_RESEARCH_SUMMARIES_1 } from './question-banks/act-science-research-summaries-1';
 import { ACT_SCIENCE_CONFLICTING_VIEWPOINTS_1 } from './question-banks/act-science-conflicting-viewpoints-1';
 import { MCAT_CARS_HUMANITIES_1 } from './question-banks/mcat-cars-humanities-1';
+import { MCAT_CARS_HUMANITIES_2 } from './question-banks/mcat-cars-humanities-2';
 import { MCAT_CARS_SOCIAL_SCIENCES_1 } from './question-banks/mcat-cars-social-sciences-1';
+import { MCAT_CARS_SOCIAL_SCIENCES_2 } from './question-banks/mcat-cars-social-sciences-2';
 import { LSAT_2026_SCORED_SECTIONS_FULL_MOCK_1 } from './question-banks/lsat-2026-scored-sections-full-mock-1';
 import { GMAT_2026_FOCUS_EDITION_FULL_MOCK_1 } from './question-banks/gmat-2026-focus-edition-full-mock-1';
 import { OET_READING_PART_C_1 } from './question-banks/oet-reading-part-c-combined-1';
+import { OET_READING_PART_C_2 } from './question-banks/oet-reading-part-c-combined-2';
 import { FRM_PART_1_QUANTITATIVE_ANALYSIS_1 } from './question-banks/frm-part-1-quantitative-analysis-combined-1';
 import { FRM_PART_1_QUANTITATIVE_ANALYSIS_2 } from './question-banks/frm-part-1-quantitative-analysis-combined-2';
 import { NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1 } from './question-banks/nism-series-v-a-mutual-fund-distributors-combined-1';
@@ -2108,6 +2113,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'pte/reading-multiple-choice-single-answer-sectional-1': PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1,
   'pte/reading-multiple-choice-multiple-answers-sectional-1': PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1,
+  'pte/reading-full-mock-2': [
+    ...PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_2,
+    ...PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_2,
+  ],
+  'pte/reading-multiple-choice-single-answer-sectional-2': PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_2,
+  'pte/reading-multiple-choice-multiple-answers-sectional-2': PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_2,
   'sat/reading-and-writing-full-mock-1': [
     ...SAT_READING_AND_WRITING_CRAFT_AND_STRUCTURE_1,
     ...SAT_READING_AND_WRITING_INFORMATION_AND_IDEAS_1,
@@ -2178,9 +2189,18 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'mcat/critical-analysis-and-reasoning-skills-humanities-sectional-1': MCAT_CARS_HUMANITIES_1,
   'mcat/critical-analysis-and-reasoning-skills-social-sciences-sectional-1': MCAT_CARS_SOCIAL_SCIENCES_1,
+  'mcat/critical-analysis-and-reasoning-skills-full-mock-2': [
+    ...MCAT_CARS_HUMANITIES_2,
+    ...MCAT_CARS_SOCIAL_SCIENCES_2,
+  ],
+  'mcat/critical-analysis-and-reasoning-skills-humanities-sectional-2': MCAT_CARS_HUMANITIES_2,
+  'mcat/critical-analysis-and-reasoning-skills-social-sciences-sectional-2': MCAT_CARS_SOCIAL_SCIENCES_2,
   'oet/reading-part-c-full-mock-1': OET_READING_PART_C_1,
   'oet/reading-part-c-text-1-sectional-1': OET_READING_PART_C_1.filter((question) => question.section === 'Text 1'),
   'oet/reading-part-c-text-2-sectional-1': OET_READING_PART_C_1.filter((question) => question.section === 'Text 2'),
+  'oet/reading-part-c-full-mock-2': OET_READING_PART_C_2,
+  'oet/reading-part-c-text-1-sectional-2': OET_READING_PART_C_2.filter((question) => question.section === 'Text 1'),
+  'oet/reading-part-c-text-2-sectional-2': OET_READING_PART_C_2.filter((question) => question.section === 'Text 2'),
   'frm/part-1-quantitative-analysis-full-mock-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1,
   'frm/part-1-probability-and-distributions-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Probability and Distributions'),
   'frm/part-1-regression-and-estimation-sectional-1': FRM_PART_1_QUANTITATIVE_ANALYSIS_1.filter((question) => question.section === 'Regression and Estimation'),
