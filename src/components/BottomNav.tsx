@@ -34,7 +34,7 @@ export default function BottomNav({ country }: { country: string }) {
   return (
     <nav
       aria-label="Mobile navigation"
-      className="lg:hidden fixed bottom-0 left-0 right-0 bg-ink-900 flex pt-2 z-30"
+      className="bottom-nav"
       style={{ paddingBottom: 'max(0.5rem, env(safe-area-inset-bottom))' }}
     >
       {items.map((item) => {
@@ -49,7 +49,7 @@ export default function BottomNav({ country }: { country: string }) {
             key={item.label}
             href={item.href}
             aria-current={active ? 'page' : undefined}
-            className={`flex min-h-12 flex-1 flex-col items-center gap-1 text-xs font-medium transition ${
+            className={`bottom-nav-item ${
               active ? 'text-ink-50' : 'text-ink-300'
             }`}
           >
@@ -65,7 +65,7 @@ export default function BottomNav({ country }: { country: string }) {
           type="button"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
-          className={`flex min-h-12 w-full flex-col items-center gap-1 text-xs font-medium ${open ? 'text-ink-50' : 'text-ink-300'}`}
+          className={`bottom-nav-button ${open ? 'text-ink-50' : 'text-ink-300'}`}
         >
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <circle cx="5" cy="12" r="1.8" />

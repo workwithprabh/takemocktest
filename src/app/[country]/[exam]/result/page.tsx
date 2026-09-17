@@ -98,7 +98,7 @@ export default async function ResultPage({ params }: { params: Promise<{ country
       />
 
       <header className="max-w-3xl mb-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500 mb-3">Official status · Final result declared</p>
+        <p className="eyebrow mb-3">Official status · Final result declared</p>
         <h1 className="text-3xl sm:text-4xl font-bold text-ink-900 mb-3">SSC CGL Result 2025</h1>
         <p className="text-ink-500 leading-7">
           The Staff Selection Commission declared the CGLE 2025 final result on 14 May 2026. This page tracks the verified result sequence and links only to official SSC records.
@@ -114,7 +114,7 @@ export default async function ResultPage({ params }: { params: Promise<{ country
       </section>
 
       <section aria-labelledby="timeline-heading">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500 mb-2">Newest milestone last</p>
+        <p className="eyebrow mb-2">Newest milestone last</p>
         <h2 id="timeline-heading" className="text-2xl font-bold text-ink-900 mb-5">SSC CGL 2025 result timeline</h2>
         <ol className="border-t border-ink-200">
           {RESULT_TIMELINE.map((item, index) => (

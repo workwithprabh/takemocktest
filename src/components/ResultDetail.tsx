@@ -227,7 +227,7 @@ export default function ResultDetail({ attempt, country, actions }: { attempt: A
         <div className="flex flex-col items-center gap-6 p-6 sm:flex-row sm:items-start sm:p-8">
           <ScoreRing percent={percent} />
           <div className="w-full flex-1">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Performance overview</p>
+            <p className="eyebrow">Performance overview</p>
             <h2 id="result-overview-heading" className="mt-2 flex flex-wrap items-baseline gap-x-1 text-2xl font-bold text-ink-900">
               {attempt.score.toFixed(2)} <span className="text-base font-medium text-ink-500">/ {attempt.maxScore} marks</span>
             </h2>

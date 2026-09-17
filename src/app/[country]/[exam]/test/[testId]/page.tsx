@@ -2311,7 +2311,7 @@ export default async function TestInstructionsPage({
           </div>
 
           <aside className="border-t border-ink-200 bg-ink-50 p-5 sm:p-7 lg:border-t-0" aria-label="Test summary">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Ready to begin?</p>
+            <p className="eyebrow">Ready to begin?</p>
             <dl className="mt-4 grid grid-cols-2 border-l border-t border-ink-200 bg-white">
               {[
                 ['Questions', String(questionCount)],
@@ -2323,7 +2323,7 @@ export default async function TestInstructionsPage({
               ].map(([label, value]) => (
                 <div key={label} className="border-b border-r border-ink-200 p-3.5">
                   <dt className="text-[11px] leading-4 text-ink-500">{label}</dt>
-                  <dd className="mt-1 text-sm font-bold leading-5 text-ink-900">{value}</dd>
+                  <dd className="stat-value">{value}</dd>
                 </div>
               ))}
             </dl>
@@ -2334,7 +2334,7 @@ export default async function TestInstructionsPage({
             {isAvailable ? (
               <Link
                 href={`/${country}/${exam.slug}/test/${testId}/attempt`}
-                className="mt-5 flex min-h-12 items-center justify-center bg-action-700 px-4 text-sm font-semibold text-white transition hover:bg-action-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-action-700"
+                className="mt-5 btn-primary"
               >
                 {test.status === 'checked' ? 'Start test' : 'Try practice demo'} <span className="ml-2" aria-hidden="true">→</span>
               </Link>
@@ -2343,7 +2343,7 @@ export default async function TestInstructionsPage({
                 Test being prepared
               </span>
             )}
-            <Link href={`/${country}/${exam.slug}/mock-test`} className="mt-3 flex min-h-10 items-center justify-center border border-ink-200 bg-white px-4 text-sm font-semibold text-ink-900 transition hover:bg-ink-100">
+            <Link href={`/${country}/${exam.slug}/mock-test`} className="mt-3 btn-secondary">
               Browse all {exam.name} tests
             </Link>
           </aside>
@@ -2353,15 +2353,15 @@ export default async function TestInstructionsPage({
       <section className="mt-8" aria-labelledby="test-instructions">
         <div className="mb-4 flex items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500">Test-day essentials</p>
+            <p className="eyebrow">Test-day essentials</p>
             <h2 id="test-instructions" className="mt-2 text-xl font-bold text-ink-900">Know before you start</h2>
           </div>
           <span className="hidden text-xs text-ink-500 sm:block">4 quick checks</span>
         </div>
         <ol className="grid border-l border-t border-ink-200 bg-white sm:grid-cols-2">
           {BASE_INSTRUCTIONS.map((item, i) => (
-            <li key={item} className="flex gap-3 border-b border-r border-ink-200 p-4 text-sm leading-6 text-ink-700 sm:p-5">
-              <span className="flex h-6 w-6 flex-none items-center justify-center bg-ink-900 text-[11px] font-bold text-white" aria-hidden="true">
+            <li key={item} className="step-item">
+              <span className="step-number" aria-hidden="true">
                 {i + 1}
               </span>
               {item}
@@ -2422,7 +2422,7 @@ export default async function TestInstructionsPage({
               <div className="space-y-3">
                 {fullMockFaqs.map((faq) => (
                   <details key={faq.question} className="border border-ink-200 bg-white p-4">
-                    <summary className="cursor-pointer text-sm font-semibold text-ink-900">{faq.question}</summary>
+                    <summary className="faq-summary">{faq.question}</summary>
                     <p className="mt-2 text-sm leading-6 text-ink-700">{faq.answer}</p>
                   </details>
                 ))}
@@ -2483,7 +2483,7 @@ export default async function TestInstructionsPage({
               <div className="space-y-3">
                 {sectionalFaqs.map((faq) => (
                   <details key={faq.question} className="border border-ink-200 bg-white p-4">
-                    <summary className="cursor-pointer text-sm font-semibold text-ink-900">{faq.question}</summary>
+                    <summary className="faq-summary">{faq.question}</summary>
                     <p className="mt-2 text-sm leading-6 text-ink-700">{faq.answer}</p>
                   </details>
                 ))}

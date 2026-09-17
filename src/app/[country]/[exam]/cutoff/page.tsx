@@ -151,7 +151,7 @@ export default async function CutoffPage({ params }: { params: Promise<{ country
       />
 
       <header className="max-w-3xl mb-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-500 mb-3">Official result · 18 December 2025</p>
+        <p className="eyebrow mb-3">Official result · 18 December 2025</p>
         <h1 className="text-3xl sm:text-4xl font-bold text-ink-900 mb-3">SSC CGL Tier 1 Cutoff 2025</h1>
         <p className="text-ink-500 leading-7">
           Official normalized cutoff marks used to shortlist candidates for Tier 2. SSC published separate lists for JSO, Statistical Investigator Grade II, and all other posts.

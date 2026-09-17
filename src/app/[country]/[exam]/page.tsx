@@ -417,7 +417,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                     <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
                       {faq.links.map((link) => (
                         <li key={link.href}>
-                          <Link href={link.href} className="text-sm font-semibold text-action-700 hover:underline">{link.label}</Link>
+                          <Link href={link.href} className="link-action">{link.label}</Link>
                         </li>
                       ))}
                     </ul>

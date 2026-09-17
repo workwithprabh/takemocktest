@@ -22,7 +22,7 @@ export default function MockTestHeroVisual({ examName }: { examName: string }) {
             {['A', 'B', 'C', 'D'].map((option, index) => (
               <span
                 key={option}
-                className={`flex h-8 w-8 items-center justify-center border text-[10px] font-bold ${
+                className={`hero-bubble ${
                   row.selected === index ? 'border-ink-900 bg-ink-900 text-white' : 'border-ink-300 text-ink-500'
                 }`}
               >
