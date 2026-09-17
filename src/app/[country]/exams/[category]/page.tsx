@@ -90,6 +90,9 @@ export default async function ExamCategoryPage({
               phrase nobody searches. */}
           <h1 className="mb-2 text-3xl font-bold tracking-tight text-ink-900 md:text-4xl">{category.name} Exams</h1>
           <p className="max-w-2xl text-sm leading-6 text-ink-700">{category.description}</p>
+          {category.slug === 'government-jobs' && (
+            <Link href={`/${country}/upcoming-government-exams`} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-action-700 underline underline-offset-4">Check upcoming government exam dates →</Link>
+          )}
         </div>
         <div className="grid grid-cols-2 divide-x divide-ink-200 border-t border-ink-200 pt-4 md:border-l md:border-t-0 md:pl-8 md:pt-0">
           <div className="pr-5">

@@ -223,6 +223,27 @@ export const EXAM_CALENDAR_EVENTS: ExamCalendarEvent[] = [
   },
 ];
 
+const GOVERNMENT_EXAM_SLUGS = new Set([
+  'ssc-selection-post',
+  'ibps-rrb-officer-scale-1',
+  'ibps-rrb-office-assistant',
+  'ibps-po',
+  'ibps-clerk',
+  'ibps-so',
+  'upsc-cse',
+  'upsc-combined-geo-scientist',
+  'upsc-engineering-services',
+  'upsc-capf-ac',
+  'nda',
+  'cds',
+]);
+
+// Public-sector banking recruitment is included because students commonly
+// plan IBPS exams alongside SSC, UPSC and defence recruitment.
+export const GOVERNMENT_EXAM_EVENTS = EXAM_CALENDAR_EVENTS.filter((event) =>
+  GOVERNMENT_EXAM_SLUGS.has(event.examSlug),
+);
+
 export function calendarEventTimestamp(date: string, endOfDay = false): number {
   if (date.includes('T')) return new Date(date).getTime();
   return new Date(`${date}T${endOfDay ? '23:59:59.999' : '00:00:00'}+05:30`).getTime();

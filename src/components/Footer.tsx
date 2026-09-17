@@ -56,6 +56,7 @@ export default function Footer({ country }: { country: string }) {
         <div>
           <h2 className="font-sans font-semibold mb-3 text-ink-50">Resources</h2>
           <ul className="space-y-2 text-ink-300">
+            {hasUpdates && <li><Link href={`/${country}/upcoming-government-exams`} className="hover:text-ink-50 transition">Upcoming government exams</Link></li>}
             {hasUpdates && <li><Link href={`/${country}/exam-calendar`} className="hover:text-ink-50 transition">India exam calendar</Link></li>}
             {hasUpdates && <li><Link href={`/${country}/exam-updates`} className="hover:text-ink-50 transition">Latest exam updates</Link></li>}
             <li><Link href={`/${country}/logical-reasoning`} className="hover:text-ink-50 transition">Logical reasoning practice</Link></li>
