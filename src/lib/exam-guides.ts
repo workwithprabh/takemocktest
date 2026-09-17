@@ -2760,3 +2760,28 @@ export const EXAM_GUIDES: Partial<Record<string, Partial<Record<GuidePageType, E
 export function getExamGuide(examSlug: string, pageType: GuidePageType): ExamGuidePage | undefined {
   return EXAM_GUIDES[examSlug]?.[pageType];
 }
+
+/**
+ * Info pages written for one exam at a time rather than from EXAM_GUIDES:
+ * admit card, answer key, cutoff and result. Every other exam gets a
+ * noindexed placeholder on those routes.
+ *
+ * Each of those four pages used to test `exam.slug === 'ssc-cgl'` inline, so
+ * nothing outside the page knew the page existed and the exam tab bar could
+ * not offer it. All four were indexable with no inbound link anywhere on the
+ * site. The pages and the tab bar now both ask this, for the same reason the
+ * syllabus rule is centralised: a publish condition that is stated twice is a
+ * publish condition that will eventually disagree with itself.
+ */
+export type HandWrittenInfoPage = 'admit-card' | 'answer-key' | 'cutoff' | 'result';
+
+const HAND_WRITTEN_INFO_PAGES: Partial<Record<HandWrittenInfoPage, readonly string[]>> = {
+  'admit-card': ['ssc-cgl'],
+  'answer-key': ['ssc-cgl'],
+  cutoff: ['ssc-cgl'],
+  result: ['ssc-cgl'],
+};
+
+export function hasInfoPage(examSlug: string, page: HandWrittenInfoPage): boolean {
+  return (HAND_WRITTEN_INFO_PAGES[page] ?? []).includes(examSlug);
+}

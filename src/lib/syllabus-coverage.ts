@@ -1,5 +1,7 @@
 import type { ExamConfig, TestStage } from './exams';
 import { displayLabel, getQuestionsForTest } from './questions';
+import { getExamGuide } from './exam-guides';
+import { getSyllabusNote } from './syllabus-notes';
 
 // What this site's own tests cover for an exam, grouped under the exam's
 // official section names.
@@ -196,4 +198,21 @@ export function isPublishableCoverage(covers: SyllabusCoverage[]): boolean {
   const topics = covers.reduce((total, cover) => total + cover.topicCount, 0);
   const sections = covers.reduce((total, cover) => total + cover.sections.length, 0);
   return topics >= MIN_TOPICS_TO_PUBLISH && sections >= 2;
+}
+
+/**
+ * The single answer to "does this exam publish a syllabus page?".
+ *
+ * This condition used to be written out three times: in the syllabus page
+ * itself, in sitemap.ts (whose comment asked whoever changed one to keep the
+ * other in sync) and in the exam tab bar. The tab bar's copy checked only for
+ * a hand-written guide, so the 40 syllabus pages published from coverage were
+ * in the sitemap and reachable by URL but linked from nowhere on the site.
+ * Duplicating a publish rule is how that happens, so the rule lives here now
+ * and the three callers ask it rather than restate it.
+ */
+export function publishesSyllabus(exam: ExamConfig): boolean {
+  if (getExamGuide(exam.slug, 'syllabus')) return true;
+  if (!getSyllabusNote(exam.slug)) return false;
+  return isPublishableCoverage(getSyllabusCoverage(exam));
 }

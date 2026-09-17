@@ -1,4 +1,5 @@
 import { COUNTRIES, getExam } from '@/lib/exams';
+import { hasInfoPage } from '@/lib/exam-guides';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { breadcrumbSchema, jsonLdHtml } from '@/lib/schema';
 import { notFound } from 'next/navigation';
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const exam = getExam(examSlug);
   if (!exam) return {};
 
-  if (exam.slug === 'ssc-cgl') {
+  if (hasInfoPage(exam.slug, 'result')) {
     return pageMetadata({
       title: 'SSC CGL Result 2025: Final Result and Official Timeline',
       description: 'SSC CGL 2025 final result was declared on 14 May 2026. Check the official Tier 1 result, allocation, final-result, answer-key, and marks notices.',
@@ -70,7 +71,7 @@ export default async function ResultPage({ params }: { params: Promise<{ country
   const exam = getExam(examSlug);
   if (!exam) return notFound();
 
-  if (exam.slug !== 'ssc-cgl') {
+  if (!hasInfoPage(exam.slug, 'result')) {
     return (
       <ExamInfoPageContent
         country={country}

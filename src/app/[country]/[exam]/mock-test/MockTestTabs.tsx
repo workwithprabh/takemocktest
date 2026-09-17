@@ -48,12 +48,23 @@ export default function MockTestTabs({
           </button>
         ))}
       </div>
+      {/* Every stage's list is rendered, and the inactive ones are hidden rather
+          than left out. Rendering only the active stage, which is what this did
+          before, meant a multi-stage exam published its later stages' test pages
+          with no link to them anywhere in the HTML: 224 indexable test pages
+          across 27 exams had zero inbound links and were unreachable by crawl,
+          reachable only by a visitor who ran the JavaScript and clicked the tab.
+          They were in the sitemap, which is not a substitute for being linked. */}
       <div className="px-4">
-        {active && active.tests.length > 0 ? (
-          <TestListClient key={active.id} country={country} examSlug={examSlug} tests={active.tests} />
-        ) : (
-          <p className="py-6 text-sm text-ink-500">No reviewed tests are published for this stage yet.</p>
-        )}
+        {stages.map((stage) => (
+          <div key={stage.id} className={stage.id === active?.id ? undefined : 'hidden'}>
+            {stage.tests.length > 0 ? (
+              <TestListClient country={country} examSlug={examSlug} tests={stage.tests} />
+            ) : (
+              <p className="py-6 text-sm text-ink-500">No reviewed tests are published for this stage yet.</p>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );
