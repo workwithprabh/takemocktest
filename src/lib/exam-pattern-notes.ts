@@ -307,6 +307,66 @@ export const EXAM_PATTERN_NOTES: Record<string, string> = {
 
   bitsat:
     'Thirty of these 130 questions are English Proficiency and Logical Reasoning, worth 90 of the 390 marks between them, and a candidate revising PCM alone leaves every one of them untouched. Mathematics is the biggest block at 40 questions and 120 marks. One thing the table does not show: BITSAT offers 12 optional extra questions to candidates who finish early, and they are not part of this variant, so 130 here is the whole of what is built. Three marks for a correct answer against 1 deducted puts break-even at one in four, exactly what four options return to a blind guess.',
+
+  'cusat-cat':
+    'The three subjects step down in size rather than splitting evenly: Mathematics 90 questions, Physics 75, Chemistry 60, worth 360, 300 and 240 marks. That ladder means an even three-way revision plan overweights Chemistry by half and shortchanges Mathematics by the same margin. The syllabus stays inside Plus Two, so difficulty is not the problem; volume is, at 225 questions in 180 minutes. This page covers B.Tech Test Code 101 only, and CUSAT\'s Marine Engineering route and its lateral-entry admission test are separate papers.',
+
+  snap:
+    'The notice publishes no per-section durations, so none are shown above, and that absence is the point rather than a gap. SNAP gives one 60-minute window to all four sections and lets candidates attempt them in any order, which makes the order itself a decision worth settling before the day. Analytical and Logical Reasoning and the Quantitative section take 20 questions each, with General English and Ethics, Morality and Values at 10 apiece. A minute a question, and 0.25 deducted against 1 puts break-even at one in five.',
+
+  nism:
+    'This is a certification examination rather than an entrance, and it behaves accordingly. One hundred questions in 120 minutes is 72 seconds each with nothing deducted for a wrong answer, so there is no guessing calculus to manage and no reason to submit with anything blank. What is built here covers the calculation-heavy part of Series V-A, net asset value and returns alongside systematic investment plans and growth, rather than the whole syllabus, so read a score as a measure of that slice rather than of the certification.',
+
+  'nerist-nee':
+    'Questions and marks do not move together here. Physics and Chemistry take 35 questions for 45 marks each, Mathematics 45 questions for 60, so 115 questions make 150 marks and no section pays a round number per question. Mathematics is the largest block on both counts. Three hours across 115 questions leaves 94 seconds each, roomier than most engineering entrances allow, and a quarter mark comes off for a wrong answer, which puts break-even near one in six.',
+
+  'bits-hd':
+    'The 150 minutes is two windows rather than one. BITS runs Test I as 30 questions in 45 minutes, Core Mathematics together with English Language Skills and Logical Reasoning with free movement between them, and it auto-submits as a group; Computer Science Test II then takes its own 105 minutes with no way back. Seventy of the 100 questions and 210 of the 300 marks sit in that second window, which makes the first 45 minutes a gate rather than the paper. Only the M.E. Computer Science pathway is covered here.',
+
+  atma:
+    'Six locked sections in a fixed order, half an hour each, no carryover anywhere. ATMA splits its three skills into two parts apiece, Analytical Reasoning I and II, Verbal I and II, Quantitative I and II, and runs them in that order with every window closing for good, so a candidate cannot bank time from an easy section against a hard one later. Thirty questions in 30 minutes is a flat minute a question, six times over. With 0.25 deducted against 1, break-even sits at one in five.',
+
+  toefl:
+    'The official Reading section changed on 21 January 2026 and this practice does not reproduce the new shape. Up to 50 scored items can now appear in roughly 27 to 30 minutes, because the section adapts in two stages and draws on three different task types. Complete the Words, where a candidate types missing letters, accounts for about 30 of those items on its own. What is built here is a fixed set of 30 questions in 30 minutes across the two comprehension task types. Use it for the reading itself rather than as a rehearsal of the format.',
+
+  'niper-jee':
+    'Each question is worth half a mark, which is how 200 questions make 100. Section B, mainly the B.Pharm. syllabus, carries 120 of those questions and 60 of the marks, against 80 questions and 40 marks for Section A on general English, aptitude, reasoning and general knowledge. The deduction is 0.125, a quarter of what a correct answer pays, so break-even sits at one in five. One hundred and fifty minutes across 200 questions is 45 seconds each, fast for a postgraduate paper and enough to make recall rather than derivation the thing that pays.',
+
+  'dbt-bet':
+    'The 90 minutes shown is not an official limit. The real paper gives one unrestricted 180-minute window covering both sections, and the figure here is a proportional timer for the Section A half of it. Section B is excluded for a mechanical reason rather than a content one: the official paper displays 150 Section B questions and lets a candidate attempt any 50 of them, and this engine has no attempt cap, so a Section B mock could not enforce the rule that defines it. Section A\'s 50 questions are all compulsory and set at 10+2 level.',
+
+  aibe:
+    'Nineteen subjects, 100 questions, three hours. That is 108 seconds a question, unusually generous, and it reflects a qualifying examination rather than a ranked entrance, sat on paper with an OMR sheet. Nothing is deducted for a wrong answer, so every question should carry one by the end. The spread across nineteen subjects is the real difficulty: no single area carries enough weight to repay deep preparation, and none can be written off entirely either.',
+
+  kcet:
+    'These are three separate papers, not one four-hour sitting. Physics gets 80 minutes and auto-submits, then Chemistry takes its own 80 with no return, then Mathematics. The official schedule spreads them across two exam days with gaps between, which this practice compresses into a single run. Each paper is 60 questions for 60 marks with nothing deducted, so a blank scores what a wrong answer scores and there is no reason to leave one. A question with more than one marked answer earns no credit, which is the only way to shed marks here.',
+
+  'ibps-po':
+    'The Prelims marks are no longer flat across sections. In 2026 Reasoning Ability carries 40 marks from 35 questions, Quantitative Aptitude 30 from 35, and English Language 30 from 30, so a reasoning question pays more than a quantitative one and the three 20-minute windows do not buy equal marks. Mains runs 170 objective questions for 200 marks plus two descriptive tasks for 25, with English Language paying 20 marks from 40 questions, the lowest return in the paper. Every test is separately timed, the descriptive paper included.',
+
+  'lic-aao':
+    'English Language is scored and then set aside. It is a qualifying section only, so its 30 marks never enter the Prelims ranking, and the 70 marks from Reasoning Ability and Quantitative Aptitude decide who advances to Mains between them. That makes the 20 minutes English gets a cost rather than an investment: clear its cut-off and move on. There is no negative marking anywhere in the paper either, so nothing should be left blank in any of the three windows.',
+
+  jest:
+    'Every part pays the same 2.5 marks a question, which is how 40 questions make 100 and why the three parts differ only in how many questions they hold. That uniformity is unusual, since a paper that splits into parts usually changes what a question is worth as well. No deduction is recorded in the source checked for this pattern, and an absence is not a zero, so confirm that figure against your own call letter before planning to attempt everything. The clock is generous enough to derive rather than recall, which is what a doctoral screening test asks for.',
+
+  acet:
+    'Fifty minutes for 20 questions is two and a half minutes each, because this is a short focused set rather than a replica of the full Actuarial Common Entrance Test. Mathematics and Statistics take 10 questions apiece. Nothing is deducted for a wrong answer, so a blank scores exactly what a wrong answer scores. Read a result here as a measure of those two areas rather than as a prediction of the examination itself.',
+
+  'tifr-gs':
+    'The official paper is 45 questions in 180 minutes, and only 30 of them count here. For Computer Science admission TIFR reads Part A and Part B and ignores Part C on Learning, Information and Data Science, so Part C is not built, and the 120 minutes shown is a proportional timer rather than an official sectional limit. The two parts that do count carry 15 questions and 60 marks each. Questions come with five options, the official width for this paper, which puts a blind guess at 20% against a break-even of exactly 20%.',
+
+  'sidbi-grade-a-b':
+    'Half the marks in Phase I come from sections that rank you and half from sections that only qualify you. English Language, Reasoning Aptitude, Quantitative Aptitude and Computer Knowledge are qualifying only; General Awareness, the MSMEs paper and the Stream Specific Test carry the merit, with the Stream Specific Test alone worth 100 of the 200 marks. One composite 120-minute timer covers all seven, so nothing in the format stops you spending the hour where it ranks. Phase II is partly descriptive, and only its objective MSME section is built here.',
+
+  'cuet-ug':
+    'Each question is worth 5 marks, which is how 50 questions make 250. CUET UG is a large multi-subject examination and this page covers two of its papers, the General Aptitude Test and English under subject code 101; a candidate sitting domain papers will find none of that syllabus here. Sixty minutes across 50 questions gives 72 seconds each. With 5 marks up and 1 deducted, break-even sits at one in six, more forgiving than most entrances and enough to make a narrowed guess clearly worth taking.',
+
+  clat:
+    'Quantitative Techniques is 12 questions of 120 and attracts far more worry than its weight deserves. The UG paper runs on reading: Legal Reasoning 30 questions, Current Affairs and General Knowledge 28, Logical Reasoning 26, English Language 24, so 108 of the 120 questions reward comprehension and judgement rather than calculation. The PG paper is a different shape entirely, 120 questions of legal comprehension in a single undivided section. Both run two hours with 0.25 deducted against 1, putting break-even at one in five.',
+
+  pte:
+    'This is a subset rather than the Reading section. PTE Academic runs Reading across 32 to 41 minutes and several task types; what is built here is the multiple-choice part alone, 12 single-answer and 8 multiple-answer questions inside a 25-minute practice window set on this site. Nothing is deducted in this set. The multiple-answer questions repay deliberate practice, because choosing among several correct options is a different task from picking one, and the official scoring rules for that task type are not reproduced here.',
 };
 
 export function getExamPatternNote(slug: string): string | undefined {
