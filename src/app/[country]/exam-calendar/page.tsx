@@ -52,6 +52,7 @@ export default async function ExamCalendarPage({ params }: { params: Promise<{ c
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href="#calendar" className="inline-flex min-h-12 items-center bg-action-600 px-5 text-sm font-semibold text-white transition hover:bg-action-700">Browse dates ↓</a>
             <Link href={`/${country}/exam-updates`} className="inline-flex min-h-12 items-center border border-ink-600 px-5 text-sm font-semibold text-ink-50 transition hover:border-ink-200">Latest exam updates</Link>
+            <Link href={`/${country}/upcoming-government-exams`} className="inline-flex min-h-12 items-center text-sm font-semibold text-ink-200 underline underline-offset-4 hover:text-white">Government exam dates</Link>
           </div>
           <dl className="mt-7 grid max-w-2xl grid-cols-2 border border-ink-700 sm:grid-cols-3">
             <div className="border-b border-r border-ink-700 p-3 sm:border-b-0"><dt className="text-[11px] uppercase tracking-wide text-ink-300">Listed events</dt><dd className="mt-1 text-xl font-bold">{EXAM_CALENDAR_EVENTS.length}</dd></div>
