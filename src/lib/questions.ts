@@ -513,7 +513,9 @@ import { IELTS_GENERAL_TRAINING_READING_SECTION_1_1 } from './question-banks/iel
 import { IELTS_GENERAL_TRAINING_READING_SECTION_2_1 } from './question-banks/ielts-general-training-reading-section-2-1';
 import { IELTS_GENERAL_TRAINING_READING_SECTION_3_1 } from './question-banks/ielts-general-training-reading-section-3-1';
 import { TOEFL_READING_READ_IN_DAILY_LIFE_1 } from './question-banks/toefl-reading-read-in-daily-life-1';
+import { TOEFL_READING_READ_IN_DAILY_LIFE_2 } from './question-banks/toefl-reading-read-in-daily-life-2';
 import { TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1 } from './question-banks/toefl-reading-read-an-academic-passage-1';
+import { TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_2 } from './question-banks/toefl-reading-read-an-academic-passage-2';
 import { PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1 } from './question-banks/pte-reading-multiple-choice-single-answer-1';
 import { PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_2 } from './question-banks/pte-reading-multiple-choice-single-answer-2';
 import { PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1 } from './question-banks/pte-reading-multiple-choice-multiple-answers-1';
@@ -2109,6 +2111,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   ],
   'toefl/reading-read-in-daily-life-sectional-1': TOEFL_READING_READ_IN_DAILY_LIFE_1,
   'toefl/reading-read-an-academic-passage-sectional-1': TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_1,
+  'toefl/reading-full-mock-2': [
+    ...TOEFL_READING_READ_IN_DAILY_LIFE_2,
+    ...TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_2,
+  ],
+  'toefl/reading-read-in-daily-life-sectional-2': TOEFL_READING_READ_IN_DAILY_LIFE_2,
+  'toefl/reading-read-an-academic-passage-sectional-2': TOEFL_READING_READ_AN_ACADEMIC_PASSAGE_2,
   'pte/reading-full-mock-1': [
     ...PTE_READING_MULTIPLE_CHOICE_SINGLE_ANSWER_1,
     ...PTE_READING_MULTIPLE_CHOICE_MULTIPLE_ANSWERS_1,
