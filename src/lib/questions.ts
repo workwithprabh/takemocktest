@@ -558,7 +558,9 @@ import { NISM_SERIES_V_A_MUTUAL_FUND_DISTRIBUTORS_1 } from './question-banks/nis
 import { ACET_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/acet-mathematics-and-statistics-combined-1';
 import { ACET_MATHEMATICS_AND_STATISTICS_2 } from './question-banks/acet-mathematics-and-statistics-combined-2';
 import { CA_FOUNDATION_QUANTITATIVE_APTITUDE_1 } from './question-banks/ca-foundation-quantitative-aptitude-combined-1';
+import { CA_FOUNDATION_QUANTITATIVE_APTITUDE_2 } from './question-banks/ca-foundation-quantitative-aptitude-combined-2';
 import { CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/cma-foundation-business-mathematics-and-statistics-combined-1';
+import { CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_2 } from './question-banks/cma-foundation-business-mathematics-and-statistics-combined-2';
 import { NDA_MATHEMATICS_1 } from './question-banks/nda-mathematics-combined-1';
 import { NDA_MATHEMATICS_2 } from './question-banks/nda-mathematics-combined-2';
 import { NDA_GENERAL_ABILITY_TEST_ENGLISH_1 } from './question-banks/nda-general-ability-test-english-combined-1';
@@ -699,6 +701,7 @@ import { DBT_BET_2026_SECTION_A_FULL_MOCK_1 } from './question-banks/dbt-bet-202
 import { DBT_BET_2026_SECTION_A_FULL_MOCK_2 } from './question-banks/dbt-bet-2026-section-a-full-mock-2';
 import { DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1 } from './question-banks/dnb-pdcet-2026-anaesthesiology-full-mock-1';
 import { TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1 } from './question-banks/tifr-gs-2026-computer-science-full-mock-1';
+import { TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_2 } from './question-banks/tifr-gs-2026-computer-science-full-mock-2';
 import { XAT_2026_PART_1_FULL_MOCK_1 } from './question-banks/xat-2026-part-1-full-mock-1';
 import { IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1 } from './question-banks/ipmat-indore-2026-ipm-aptitude-test-full-mock-1';
 import { INI_CET_2026_MEDICAL_FULL_MOCK_1 } from './question-banks/ini-cet-2026-medical-full-mock-1';
@@ -2235,9 +2238,16 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ca-foundation/business-mathematics-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Business Mathematics'),
   'ca-foundation/logical-reasoning-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Logical Reasoning'),
   'ca-foundation/statistics-sectional-1': CA_FOUNDATION_QUANTITATIVE_APTITUDE_1.filter((question) => question.section === 'Statistics'),
+  'ca-foundation/quantitative-aptitude-full-mock-2': CA_FOUNDATION_QUANTITATIVE_APTITUDE_2,
+  'ca-foundation/business-mathematics-sectional-2': CA_FOUNDATION_QUANTITATIVE_APTITUDE_2.filter((question) => question.section === 'Business Mathematics'),
+  'ca-foundation/logical-reasoning-sectional-2': CA_FOUNDATION_QUANTITATIVE_APTITUDE_2.filter((question) => question.section === 'Logical Reasoning'),
+  'ca-foundation/statistics-sectional-2': CA_FOUNDATION_QUANTITATIVE_APTITUDE_2.filter((question) => question.section === 'Statistics'),
   'cma-foundation/business-mathematics-and-statistics-full-mock-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1,
   'cma-foundation/business-mathematics-sectional-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Business Mathematics'),
   'cma-foundation/statistics-sectional-1': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1.filter((question) => question.section === 'Statistics'),
+  'cma-foundation/business-mathematics-and-statistics-full-mock-2': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_2,
+  'cma-foundation/business-mathematics-sectional-2': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_2.filter((question) => question.section === 'Business Mathematics'),
+  'cma-foundation/statistics-sectional-2': CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_2.filter((question) => question.section === 'Statistics'),
   'nda/mathematics-full-mock-1': NDA_MATHEMATICS_1,
   'nda/algebra-and-trigonometry-sectional-1': NDA_MATHEMATICS_1.filter((question) => question.section === 'Algebra and Trigonometry'),
   'nda/calculus-and-vectors-sectional-1': NDA_MATHEMATICS_1.filter((question) => question.section === 'Calculus and Vectors'),
@@ -3640,6 +3650,9 @@ const TIFR_GS_HANDOFF_TESTS: Record<string, Question[]> = {
   'tifr-gs/computer-science-full-mock-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1,
   'tifr-gs/part-a-common-sectional-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1.filter((question) => question.section === 'Part A Common'),
   'tifr-gs/part-b-computer-science-sectional-1': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1.filter((question) => question.section === 'Part B Computer Science'),
+  'tifr-gs/computer-science-full-mock-2': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_2,
+  'tifr-gs/part-a-common-sectional-2': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_2.filter((question) => question.section === 'Part A Common'),
+  'tifr-gs/part-b-computer-science-sectional-2': TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_2.filter((question) => question.section === 'Part B Computer Science'),
 };
 const TEACHING_RECRUITMENT_2026_TESTS: Record<string, Question[]> = {
 'dsssb-teaching-recruitment/tgt-mathematics-full-mock-1': [DSSSB_TGT_MATHEMATICS_2025_ARITHMETIC_1, DSSSB_TGT_MATHEMATICS_2025_DOMAIN_1, DSSSB_TGT_MATHEMATICS_2025_ENGLISH_1, DSSSB_TGT_MATHEMATICS_2025_GENERAL_AWARENESS_1, DSSSB_TGT_MATHEMATICS_2025_HINDI_1, DSSSB_TGT_MATHEMATICS_2025_REASONING_1].flat(),
@@ -4003,6 +4016,12 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId === 'tifr-gs/part-a-common-sectional-1'
     ? 15
     : testId === 'tifr-gs/part-b-computer-science-sectional-1'
+    ? 15
+    : testId === 'tifr-gs/computer-science-full-mock-2'
+    ? 30
+    : testId === 'tifr-gs/part-a-common-sectional-2'
+    ? 15
+    : testId === 'tifr-gs/part-b-computer-science-sectional-2'
     ? 15
     : testId === 'cuet-ug/gat-full-mock-1'
     ? 50
