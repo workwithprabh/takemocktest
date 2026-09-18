@@ -32,9 +32,24 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
   // src/lib/exam-countries.ts. A country that does not publish it has no such
   // page rather than an empty one.
   if (!countryPublishes(country, 'blog')) notFound();
-  const illustratedPosts = BLOG_POSTS.filter((post) => post.image);
+  // BLOG_POSTS is stored oldest first, so taking the head of it gave the
+  // oldest illustrated post the "Featured guide" slot and put the whole
+  // archive, 59 of 61 posts, into the card grid below it. A grid holding
+  // everything is not a selection, and the page then linked 124 times to 61
+  // posts: every post as a card here and again in the full list further down.
+  //
+  // Both labels also claimed more than the data supports. Nothing on BlogPost
+  // measures popularity, so "Popular preparation guides" was picking an order
+  // out of the air, and "Featured" described no editorial act. Sorting by date
+  // and saying so is the version that is true: the newest illustrated post
+  // leads, the next six follow, and the full list below still links every post
+  // exactly once, so no post loses its inbound link.
+  const CARD_GRID_SIZE = 6;
+  const illustratedPosts = BLOG_POSTS.filter((post) => post.image)
+    .slice()
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
   const featured = illustratedPosts[0];
-  const visualGuides = illustratedPosts.slice(1);
+  const visualGuides = illustratedPosts.slice(1, 1 + CARD_GRID_SIZE);
   const categories = Array.from(new Set(BLOG_POSTS.map((post) => post.category)));
 
   const jsonLd = [
@@ -79,7 +94,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
             />
           </Link>
           <div className="flex flex-col justify-center p-6 text-white md:p-9">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">Featured guide</p>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">Latest guide</p>
             <h2 id="featured-guide-heading" className="font-sans text-2xl font-bold leading-tight md:text-3xl">
               <Link href={`/${country}/blog/${featured.slug}`} className="hover:underline">{featured.title}</Link>
             </h2>
@@ -96,10 +111,10 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ coun
         <section aria-labelledby="visual-guides-heading" className="mb-14">
           <div className="mb-6 flex items-end justify-between gap-4">
             <div>
-              <p className="mb-2 eyebrow">Start here</p>
-              <h2 id="visual-guides-heading" className="font-sans text-2xl font-bold text-ink-900">Popular preparation guides</h2>
+              <p className="mb-2 eyebrow">Recently published</p>
+              <h2 id="visual-guides-heading" className="font-sans text-2xl font-bold text-ink-900">Newest preparation guides</h2>
             </div>
-            <span className="hidden text-xs text-ink-500 sm:block">Original editorial visuals</span>
+            <span className="hidden text-xs text-ink-500 sm:block">Every guide is listed below</span>
           </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {visualGuides.map((post) => {
