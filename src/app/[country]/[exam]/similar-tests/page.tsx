@@ -1,4 +1,4 @@
-import { COUNTRIES, REASONING_SHARE_RECEIVERS, getExam, getSharedTests } from '@/lib/exams';
+import { COUNTRIES, getReasoningShareReceivers, getExam, getSharedTests } from '@/lib/exams';
 import { isExamInCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { breadcrumbSchema, organizationSchema, jsonLdHtml } from '@/lib/schema';
@@ -13,7 +13,7 @@ import Link from 'next/link';
 // the thin/templated-content problem this site avoids elsewhere.
 export function generateStaticParams() {
   return COUNTRIES.flatMap((country) =>
-    REASONING_SHARE_RECEIVERS.filter((exam) => isExamInCountry(exam, country)).map((exam) => ({ country, exam }))
+    getReasoningShareReceivers().filter((exam) => isExamInCountry(exam, country)).map((exam) => ({ country, exam }))
   );
 }
 

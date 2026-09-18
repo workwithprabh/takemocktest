@@ -643,18 +643,43 @@ const IBPS_RRB_MAINS_REASONING_CLUSTER: ReasoningCluster = {
   ],
 };
 
-// Exported for the "Explore Similar Tests" page (generateStaticParams) and
-// documentation purposes. The page's own CTA-visibility check on the main
-// mock-test hub uses `getSharedTests(exam).length > 0` generically instead,
-// so it needs no update as more clusters are added — only this list (used
-// solely for static-path generation) has to stay in sync with the clusters
-// defined above.
-export const REASONING_SHARE_RECEIVERS: ExamSlug[] = [
-  'ibps-po', 'ibps-clerk', 'sbi-po', 'rbi-assistant', 'sbi-clerk', 'niacl-ao',
-  'rrb-ntpc', 'rpf-constable', 'rpf-si', 'rrb-group-d',
-  'ssc-cgl', 'ssc-chsl',
-  'ibps-rrb-office-assistant', 'ibps-rrb-officer-scale-1',
-];
+// The exams that receive shared reasoning tests, for the "Explore Similar
+// Tests" page's generateStaticParams.
+//
+// This was a hand-written list of fourteen slugs with a comment saying it had
+// to stay in sync with the clusters defined above. It is derived now. A
+// receiver is simply an exam that ended up with a shared test, which is
+// already what getSharedTests answers and already what the hub's own
+// CTA-visibility check asks, so adding a cluster member can no longer build a
+// page for an exam that has nothing on it, or miss one that does.
+//
+// A function rather than a const: EXAMS is defined below this point, so an
+// eagerly evaluated array here would read it before initialisation.
+export function getReasoningShareReceivers(): ExamSlug[] {
+  return (Object.keys(EXAMS) as ExamSlug[]).filter((slug) => getSharedTests(EXAMS[slug]).length > 0);
+}
+
+/**
+ * Whether an exam publishes an official pattern, and whether it publishes any
+ * test of its own.
+ *
+ * Both were written out at each call site. hasOfficialPattern was at least
+ * spelled the same way in all three; hasCheckedTests was not. The mock-test
+ * page counted `stage.tests.some(test => test.status === 'checked')` while
+ * sitemap.ts and the exam overview used getCheckedTestCount, which excludes
+ * tests shared from another exam. Since the hub filters those out of its own
+ * list, an exam whose only checked tests were shared would have published an
+ * indexable hub listing nothing, with no sitemap entry. No exam is in that
+ * position today, so this is a latent difference rather than a live bug, but
+ * it is the kind that appears the day a cluster gains a member.
+ */
+export function hasOfficialPattern(exam: ExamConfig): boolean {
+  return exam.stages.some((stage) => stage.pattern.status === 'official');
+}
+
+export function hasPublishedTests(exam: ExamConfig): boolean {
+  return getCheckedTestCount(exam) > 0;
+}
 
 const DSSSB_TGT_2025_NOTIFICATION = 'https://dsssb.delhi.gov.in/';
 const HTET_2025_NOTIFICATION = 'https://bseh.org.in/';

@@ -7619,16 +7619,29 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
 };
 
 /**
- * Whether a test page is indexable. The rule: a full mock always is, a
- * sectional is once it clears the question floor, every other kind is not, an
- * empty bank never is, and a cross-exam shared test never is because it serves
- * another exam's bank verbatim under this exam's name.
+ * Whether a test page is indexable.
  *
- * This lived in two places, the test page's noIndex and sitemap.ts, each
+ * Sectionals earned their way into the index once they had real per-page
+ * content, a topic breakdown, a difficulty mix and FAQs, rather than the
+ * boilerplate "Before you begin" checklist alone. The 10-question floor keeps
+ * the genuinely thin tail out, the 2 to 9 question sectionals, roughly 8% of
+ * them: that few questions does not carry enough topic or difficulty content
+ * to be worth indexing even with the enrichment. Other non-full-mock kinds,
+ * quick, topic, difficulty and practice, have not had the same content work
+ * done, so they stay out until they do.
+ *
+ * Cross-exam shared tests are excluded on top of that. They serve another
+ * exam's question bank verbatim under this exam's name, so five per exam were
+ * competing with each other and with the exam's own sectional for the same
+ * "{exam} {section} mock test" phrase: 79 pages of self-cannibalisation. They
+ * stay in the product, reachable from Explore Similar Tests, which is what
+ * they were built for.
+ *
+ * The rule lived in two places, the test page's noIndex and sitemap.ts, each
  * carrying a comment telling the next person to keep it in sync with the
  * other. That is the same arrangement that left 40 syllabus pages unlinked, so
- * it is one function now, and the sibling-links block below asks it too rather
- * than inventing a third reading of the same rule.
+ * it is one function now, and the sibling-links picker asks it too rather than
+ * inventing a third reading of the same rule.
  */
 export function isTestIndexable(
   examSlug: ExamSlug,

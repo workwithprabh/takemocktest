@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { COUNTRIES, formatMarks, getExam } from '@/lib/exams';
+import { COUNTRIES, formatMarks, getExam, hasOfficialPattern as examHasOfficialPattern } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
-  const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
+  const hasOfficialPattern = examHasOfficialPattern(exam);
   // Lead the description with the numbers people are searching for, when the
   // primary stage actually publishes them, rather than a generic sentence.
   const primary = exam.stages.find((stage) => stage.pattern.status === 'official')?.pattern;
