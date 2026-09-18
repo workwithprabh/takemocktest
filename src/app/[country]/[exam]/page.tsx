@@ -6,7 +6,7 @@ import LiveExamStatus from '@/components/LiveExamStatus';
 import { getExamVisual } from '@/lib/exam-visuals';
 import { getExamCycle, type CycleState } from '@/lib/exam-cycles';
 import { getExamPatternFaqs, getExamFactFaqs } from '@/lib/exam-faqs';
-import { COUNTRIES, getCheckedTestCount, getExam, getExamOverviewCopy } from '@/lib/exams';
+import { COUNTRIES, getCheckedTestCount, getExam, getExamOverviewCopy, hasOfficialPattern as examHasOfficialPattern } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const exam = getExam(examSlug);
   if (!exam) return {};
   const hasCheckedTests = getCheckedTestCount(exam) > 0;
-  const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
+  const hasOfficialPattern = examHasOfficialPattern(exam);
   return pageMetadata({
     title: hasCheckedTests
       ? `${exam.name}: Free Mock Tests & Exam Pattern`

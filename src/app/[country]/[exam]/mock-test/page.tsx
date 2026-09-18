@@ -1,5 +1,5 @@
 import { contentLocale } from '@/lib/hreflang';
-import { COUNTRIES, formatMarks, getExam, getSharedTests } from '@/lib/exams';
+import { COUNTRIES, formatMarks, getExam, getSharedTests, hasPublishedTests } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { getQuestionsForTest } from '@/lib/questions';
 import { getMockTestFaqs } from '@/lib/exam-faqs';
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const { country, exam: examSlug } = await params;
   const exam = getExam(examSlug);
   if (!exam) return {};
-  const hasCheckedTests = exam.stages.some((stage) => stage.tests.some((test) => test.status === 'checked'));
+  const hasCheckedTests = hasPublishedTests(exam);
   return pageMetadata({
     title: getMockTestIntro(examSlug)?.title
       ?? `${exam.shortName ?? exam.name} Mock Test ${YEAR}, Practice Free Test Series`,

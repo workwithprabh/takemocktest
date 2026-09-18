@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { COUNTRIES, getExam, getCheckedTestCount, getSharedTests } from '@/lib/exams';
+import { COUNTRIES, getExam, getSharedTests, hasPublishedTests, hasOfficialPattern as examHasOfficialPattern } from '@/lib/exams';
 import { getExamCatalog } from '@/lib/exam-catalog';
 import { countryPublishes, getExamsForCountry } from '@/lib/exam-countries';
 import { BLOG_POSTS } from '@/lib/blog';
@@ -99,8 +99,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
     for (const exam of getExamsForCountry(country).map((slug) => getExam(slug)!)) {
       const base = `${SITE_URL}/${country}/${exam.slug}`;
-      const hasCheckedTests = getCheckedTestCount(exam) > 0;
-      const hasOfficialPattern = exam.stages.some((stage) => stage.pattern.status === 'official');
+      const hasCheckedTests = hasPublishedTests(exam);
+      const hasOfficialPattern = examHasOfficialPattern(exam);
       if (hasCheckedTests || hasOfficialPattern) {
         entries.push({ url: base, changeFrequency: 'monthly', priority: 0.7 });
       }

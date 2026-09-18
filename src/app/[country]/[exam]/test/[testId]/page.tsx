@@ -116,22 +116,8 @@ export async function generateMetadata({
         ? `Free ${searchName}: ${questionCount} questions with answers and explanations, exam-style timing and instant scoring. No sign-up.`
         : `Review the timing, question count, and negative-marking instructions for ${exam.name} ${testName}.`,
     path: `/${country}/${exam.slug}/test/${testId}`,
-    // Sectional tests earned their way into the index once they had real
-    // per-page content (topic breakdown, difficulty mix, FAQs — see the
-    // isSectional block below) instead of the boilerplate "Before you
-    // begin" checklist alone. A 10-question floor keeps the genuinely thin
-    // tail (2-9 question sectionals, ~8% of them) out — that few questions
-    // doesn't carry enough topic/difficulty content to be worth indexing
-    // even with the enrichment. Other non-full-mock kinds (quick/topic/
-    // difficulty/practice) haven't had the same content work done, so they
-    // stay noindexed until they do.
-    // Cross-exam shared tests are noindexed on top of the rules above. They
-    // serve another exam's question bank verbatim under this exam's name, so
-    // five of them per exam were competing with each other and with the exam's
-    // own sectional for the same "{exam} {section} mock test" phrase: 79 pages
-    // of self-cannibalisation and duplicate content. They stay in the product,
-    // reachable from Explore Similar Tests, which is what they were built for.
-    // Keep in sync with the same exclusion in src/app/sitemap.ts.
+    // isTestIndexable() in lib/questions.ts is the whole rule, and carries the
+    // reasoning behind each part of it.
     noIndex: !configuredTest || !isTestIndexable(exam.slug, configuredTest.test),
   });
 }
