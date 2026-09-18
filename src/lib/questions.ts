@@ -1,4 +1,4 @@
-import { ExamSlug } from './exams';
+import { ExamSlug, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from './exams';
 import { SSC_CGL_TIER1_ENGLISH_1 } from './question-banks/ssc-cgl-tier1-english-1';
 import { SSC_CGL_TIER1_ENGLISH_2 } from './question-banks/ssc-cgl-tier1-english-2';
 import { SSC_CGL_TIER1_ENGLISH_3 } from './question-banks/ssc-cgl-tier1-english-3';
@@ -7617,3 +7617,73 @@ export const QUESTION_BANK: Record<ExamSlug, Question[]> = {
     TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1[15],
   ],
 };
+
+/**
+ * Whether a test page is indexable. The rule: a full mock always is, a
+ * sectional is once it clears the question floor, every other kind is not, an
+ * empty bank never is, and a cross-exam shared test never is because it serves
+ * another exam's bank verbatim under this exam's name.
+ *
+ * This lived in two places, the test page's noIndex and sitemap.ts, each
+ * carrying a comment telling the next person to keep it in sync with the
+ * other. That is the same arrangement that left 40 syllabus pages unlinked, so
+ * it is one function now, and the sibling-links block below asks it too rather
+ * than inventing a third reading of the same rule.
+ */
+export function isTestIndexable(
+  examSlug: ExamSlug,
+  test: { id: string; kind: string; sharedFrom?: string },
+): boolean {
+  if (test.sharedFrom) return false;
+  const questionCount = getQuestionsForTest(examSlug, test.id).length;
+  if (questionCount === 0) return false;
+  if (test.kind === 'full-length') return true;
+  return test.kind === 'sectional' && questionCount >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX;
+}
+
+/**
+ * Sibling tests to link from a test page, nearest first: same stage before
+ * other stages, same kind before other kinds, and the exam's own order within
+ * each group.
+ *
+ * Before this, a test page linked only upwards, to its exam and its hub, so
+ * every one of the 1,198 test pages had exactly one inbound link, from that
+ * hub. Deep pages with a single inbound link from one parent are the pages a
+ * crawler reaches last and revisits least. Indexable siblings come first for
+ * the same reason; a noindexed sibling is still useful to a reader, so the
+ * list falls back to those rather than coming up short.
+ */
+export function getSiblingTests(
+  examSlug: ExamSlug,
+  stages: { id: string; name: string; tests: { id: string; name: string; kind: string; status: string; section?: string; sharedFrom?: string }[] }[],
+  current: { stageId: string; testId: string; kind: string },
+  limit = 6,
+) {
+  const candidates = stages.flatMap((stage) =>
+    stage.tests
+      .filter((test) => test.status === 'checked' && !test.sharedFrom && test.id !== current.testId)
+      .map((test) => ({
+        stageId: stage.id,
+        stageName: stage.name,
+        test,
+        questionCount: getQuestionsForTest(examSlug, test.id).length,
+        indexable: isTestIndexable(examSlug, test),
+      })),
+  ).filter((candidate) => candidate.questionCount > 0);
+
+  const rank = (candidate: (typeof candidates)[number]) =>
+    (candidate.indexable ? 0 : 4)
+    + (candidate.stageId === current.stageId ? 0 : 2)
+    + (candidate.test.kind === current.kind ? 0 : 1);
+
+  const ranked = candidates
+    .map((candidate, order) => ({ candidate, order }))
+    .sort((a, b) => rank(a.candidate) - rank(b.candidate) || a.order - b.order)
+    .map(({ candidate }) => candidate);
+
+  // total is what the exam actually publishes beyond this test, which is not
+  // the same as how many are shown. The block says both, because claiming the
+  // shown count is the total is the kind of stated-count error qa:counts
+  // exists to catch elsewhere on the site.
+  return { items: ranked.slice(0, limit), total: ranked.length };
+}

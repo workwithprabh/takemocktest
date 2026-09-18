@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { COUNTRIES, getExam, getCheckedTestCount, getSharedTests, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
+import { COUNTRIES, getExam, getCheckedTestCount, getSharedTests } from '@/lib/exams';
 import { getExamCatalog } from '@/lib/exam-catalog';
 import { countryPublishes, getExamsForCountry } from '@/lib/exam-countries';
 import { BLOG_POSTS } from '@/lib/blog';
@@ -7,7 +7,7 @@ import { publishesSyllabus } from '@/lib/syllabus-coverage';
 import { EXAM_GUIDES } from '@/lib/exam-guides';
 import { SITE_URL } from '@/lib/schema';
 import { UPDATES } from '@/lib/updates';
-import { getQuestionsForTest } from '@/lib/questions';
+import { isTestIndexable } from '@/lib/questions';
 import { LR_SLUG } from '@/lib/logical-reasoning';
 import { PRACTICE_SLUG, getPublishedTopicSlugs } from '@/lib/practice-topics';
 
@@ -154,13 +154,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.8,
           });
-        } else if (
-          test.kind === 'sectional' &&
-          // Cross-exam shared tests are noindexed (see the test page's own
-          // noIndex rule, which this mirrors), so they must not be submitted.
-          !test.sharedFrom &&
-          getQuestionsForTest(exam.slug, test.id).length >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX
-        ) {
+        } else if (test.kind === 'sectional' && isTestIndexable(exam.slug, test)) {
           entries.push({
             url: `${base}/test/${test.id}`,
             lastModified: toLastModified(test.checkedOn),
