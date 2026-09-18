@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-18",
- "pageCount": 5517,
+ "pageCount": 5537,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10322,7 +10322,7 @@
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,311 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,317 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10337,8 +10337,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "e2007eaa9e8e",
-   "ogHash": "2dd6f6d93f2d",
+   "schemaHash": "9d63181bc295",
+   "ogHash": "5bd837993ff7",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -11816,7 +11816,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "079534fca945",
+   "schemaHash": "b4040fb9a4a2",
    "ogHash": "588a7c782946",
    "sitemap": true,
    "robots": "index, follow"
@@ -11940,6 +11940,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/ca-foundation/test/business-mathematics-sectional-2/attempt": {
+   "title": "CA Foundation Business Mathematics Sectional Test 2",
+   "description": "Attempt the CA Foundation Business Mathematics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "90b2a2384242",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ca-foundation/test/business-mathematics-sectional-2": {
+   "title": "CA Foundation Business Mathematics Mock Test 2",
+   "description": "Free CA Foundation Business Mathematics Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CA Foundation Business Mathematics Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "c5376d5366bc",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "cf182524c708",
+   "ogHash": "20e5931d9f34",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/ca-foundation/test/logical-reasoning-sectional-1/attempt": {
    "title": "CA Foundation Logical Reasoning Sectional Test 1",
    "description": "Attempt the CA Foundation Logical Reasoning Sectional Test 1 and review your result on this device.",
@@ -11971,6 +12005,40 @@
    ],
    "schemaHash": "b7934a07817e",
    "ogHash": "5a26ba0ec293",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ca-foundation/test/logical-reasoning-sectional-2/attempt": {
+   "title": "CA Foundation Logical Reasoning Sectional Test 2",
+   "description": "Attempt the CA Foundation Logical Reasoning Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "66181e5f56c7",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ca-foundation/test/logical-reasoning-sectional-2": {
+   "title": "CA Foundation Logical Reasoning Mock Test 2: Free Practice",
+   "description": "Free CA Foundation Logical Reasoning Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CA Foundation Logical Reasoning Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "8b8bfbac8501",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "b1508d7ed3ee",
+   "ogHash": "01e33faa3c8e",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -12011,6 +12079,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/ca-foundation/test/quantitative-aptitude-full-mock-2/attempt": {
+   "title": "CA Foundation Quantitative Aptitude Full Mock Test 2",
+   "description": "Attempt the CA Foundation Quantitative Aptitude Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "413a37af41a5",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ca-foundation/test/quantitative-aptitude-full-mock-2": {
+   "title": "CA Foundation Quantitative Aptitude Full Mock Test 2 (2026)",
+   "description": "Attempt CA Foundation Quantitative Aptitude Full Mock Test 2: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "CA Foundation Quantitative Aptitude Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "0081c9bf9c20",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "eba899882adb",
+   "ogHash": "0ccda7bf62f6",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/ca-foundation/test/statistics-sectional-1/attempt": {
    "title": "CA Foundation Statistics Sectional Test 1 | TakeMockTest",
    "description": "Attempt the CA Foundation Statistics Sectional Test 1 and review your result on this device.",
@@ -12042,6 +12147,40 @@
    ],
    "schemaHash": "23bc6132e77a",
    "ogHash": "47f863fef765",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ca-foundation/test/statistics-sectional-2/attempt": {
+   "title": "CA Foundation Statistics Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CA Foundation Statistics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "7baf1b76f9cc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ca-foundation/test/statistics-sectional-2": {
+   "title": "CA Foundation Statistics Mock Test 2: Free Practice",
+   "description": "Free CA Foundation Statistics Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CA Foundation Statistics Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "21ad5a5160fd",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "2b64a7308a62",
+   "ogHash": "9d218462bcf3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -16645,7 +16784,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "58401d0d91c4",
+   "schemaHash": "531c6f44648d",
    "ogHash": "012b2e63a94f",
    "sitemap": true,
    "robots": "index, follow"
@@ -16772,6 +16911,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/cma-foundation/test/business-mathematics-and-statistics-full-mock-2/attempt": {
+   "title": "CMA Foundation Business Mathematics and Statistics Full Mock Test 2",
+   "description": "Attempt the CMA Foundation Business Mathematics and Statistics Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a479af54fe7e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cma-foundation/test/business-mathematics-and-statistics-full-mock-2": {
+   "title": "CMA Foundation Business Mathematics and Statistics Full Mock Test 2",
+   "description": "Attempt CMA Foundation Business Mathematics and Statistics Full Mock Test 2: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "CMA Foundation Business Mathematics and Statistics Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "bfe8368aecc4",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "14bea01eaf29",
+   "ogHash": "18bf0c1e791a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cma-foundation/test/business-mathematics-sectional-1/attempt": {
    "title": "CMA Foundation Business Mathematics Sectional Test 1",
    "description": "Attempt the CMA Foundation Business Mathematics Sectional Test 1 and review your result on this device.",
@@ -16806,6 +16982,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/cma-foundation/test/business-mathematics-sectional-2/attempt": {
+   "title": "CMA Foundation Business Mathematics Sectional Test 2",
+   "description": "Attempt the CMA Foundation Business Mathematics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "0d2c66493a95",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cma-foundation/test/business-mathematics-sectional-2": {
+   "title": "CMA Foundation Business Mathematics Mock Test 2",
+   "description": "Free CMA Foundation Business Mathematics Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CMA Foundation Business Mathematics Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "2271d1177134",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "e504e465723f",
+   "ogHash": "92b6deaf9c91",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cma-foundation/test/statistics-sectional-1/attempt": {
    "title": "CMA Foundation Statistics Sectional Test 1 | TakeMockTest",
    "description": "Attempt the CMA Foundation Statistics Sectional Test 1 and review your result on this device.",
@@ -16837,6 +17047,40 @@
    ],
    "schemaHash": "541a3a8d052b",
    "ogHash": "9f5e4740c873",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/cma-foundation/test/statistics-sectional-2/attempt": {
+   "title": "CMA Foundation Statistics Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CMA Foundation Statistics Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "321c66051491",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cma-foundation/test/statistics-sectional-2": {
+   "title": "CMA Foundation Statistics Mock Test 2: Free Practice",
+   "description": "Free CMA Foundation Statistics Mock Test 2: 18 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CMA Foundation Statistics Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "0f51ea5e770a",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "42ab46eb14d5",
+   "ogHash": "9f73d2918708",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58235,7 +58479,7 @@
   },
   "/in/practice/data-sufficiency": {
    "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
-   "description": "165 free data sufficiency questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "166 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
@@ -58251,8 +58495,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8e253cb7e576",
-   "ogHash": "8d790d950b5c",
+   "schemaHash": "c62219aebe94",
+   "ogHash": "35ac1006c754",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58642,7 +58886,7 @@
   },
   "/in/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "220 free percentage questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "222 free percentage questions with answers and explanations, pooled from 47 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -58658,8 +58902,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f6e2c937d594",
-   "ogHash": "a322c0f92605",
+   "schemaHash": "0b9b2f22ccd6",
+   "ogHash": "c5c79056ce6e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58753,7 +58997,7 @@
   },
   "/in/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "198 free profit and loss questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "199 free profit and loss questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -58769,8 +59013,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5438da506000",
-   "ogHash": "f6f946d264fd",
+   "schemaHash": "3ad29c655a77",
+   "ogHash": "94c42c70d814",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58827,7 +59071,7 @@
   },
   "/in/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "223 free ranking and order questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "224 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -58843,8 +59087,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c957fda224da",
-   "ogHash": "bd8876111fa7",
+   "schemaHash": "d2b5e8881784",
+   "ogHash": "899f3229a1b8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58938,7 +59182,7 @@
   },
   "/in/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "79 free seating arrangement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "80 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -58954,8 +59198,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0878550b8da9",
-   "ogHash": "c5a11b8893f2",
+   "schemaHash": "5656db68635b",
+   "ogHash": "ab45a2b0a0a9",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59257,7 +59501,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,311 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,317 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -59273,7 +59517,7 @@
     "Question"
    ],
    "schemaHash": "212e31eec12f",
-   "ogHash": "742ae0bafd76",
+   "ogHash": "764f0defd957",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -86227,7 +86471,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "ece4c2f10e3d",
+   "schemaHash": "ffd25dca5a40",
    "ogHash": "cd75c8a95348",
    "sitemap": true,
    "robots": "index, follow"
@@ -86351,6 +86595,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/tifr-gs/test/computer-science-full-mock-2/attempt": {
+   "title": "TIFR GS Computer Science Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the TIFR GS Computer Science Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e5a483c1a8e7",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/test/computer-science-full-mock-2": {
+   "title": "TIFR GS Computer Science Full Mock Test 2 (2026)",
+   "description": "Attempt TIFR GS Computer Science Full Mock Test 2: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "TIFR GS Computer Science Full Mock Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "fab036882f33",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "ff197663eac5",
+   "ogHash": "d556aaaf47c4",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/tifr-gs/test/part-a-common-sectional-1/attempt": {
    "title": "TIFR GS Part A Common Sectional Test 1 | TakeMockTest",
    "description": "Attempt the TIFR GS Part A Common Sectional Test 1 and review your result on this device.",
@@ -86385,6 +86663,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/tifr-gs/test/part-a-common-sectional-2/attempt": {
+   "title": "TIFR GS Part A Common Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the TIFR GS Part A Common Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b11626b646bc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/test/part-a-common-sectional-2": {
+   "title": "TIFR GS Part A Common Mock Test 2: Free Practice",
+   "description": "Free TIFR GS Part A Common Mock Test 2: 15 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TIFR GS Part A Common Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "b79644038ea3",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "29542c787e8c",
+   "ogHash": "6db7037b3b25",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/tifr-gs/test/part-b-computer-science-sectional-1/attempt": {
    "title": "TIFR GS Part B Computer Science Sectional Test 1",
    "description": "Attempt the TIFR GS Part B Computer Science Sectional Test 1 and review your result on this device.",
@@ -86416,6 +86728,40 @@
    ],
    "schemaHash": "afbe7da5c833",
    "ogHash": "1625fcf9a8b8",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tifr-gs/test/part-b-computer-science-sectional-2/attempt": {
+   "title": "TIFR GS Part B Computer Science Sectional Test 2",
+   "description": "Attempt the TIFR GS Part B Computer Science Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "73167f88069e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tifr-gs/test/part-b-computer-science-sectional-2": {
+   "title": "TIFR GS Part B Computer Science Mock Test 2: Free Practice",
+   "description": "Free TIFR GS Part B Computer Science Mock Test 2: 15 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TIFR GS Part B Computer Science Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "a7f2f86716c9",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "3cf9eb63f227",
+   "ogHash": "eefa668e8e8d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -93545,7 +93891,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "bb73fe22c71c",
+   "schemaHash": "c0bdae31b344",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -95585,7 +95931,7 @@
   },
   "/ng/practice/data-sufficiency": {
    "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
-   "description": "165 free data sufficiency questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "166 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
@@ -95601,8 +95947,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "02bb4a40cca5",
-   "ogHash": "78af46846c6d",
+   "schemaHash": "c956487e04df",
+   "ogHash": "6bacf543e908",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95992,7 +96338,7 @@
   },
   "/ng/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "220 free percentage questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "222 free percentage questions with answers and explanations, pooled from 47 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -96008,8 +96354,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "593af12bd714",
-   "ogHash": "2d7a241e9d8a",
+   "schemaHash": "a434b961e6d4",
+   "ogHash": "93b7910f569a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96103,7 +96449,7 @@
   },
   "/ng/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "198 free profit and loss questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "199 free profit and loss questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -96119,8 +96465,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b947b57a84fd",
-   "ogHash": "21c8649f23e8",
+   "schemaHash": "748b34652920",
+   "ogHash": "54797de2e24f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96177,7 +96523,7 @@
   },
   "/ng/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "223 free ranking and order questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "224 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -96193,8 +96539,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "9bea3bf4c647",
-   "ogHash": "1626f844d118",
+   "schemaHash": "b42c8f5d1718",
+   "ogHash": "952a324585ad",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96288,7 +96634,7 @@
   },
   "/ng/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "79 free seating arrangement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "80 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -96304,8 +96650,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a5eb1c119503",
-   "ogHash": "e32d6d3f4e2d",
+   "schemaHash": "24a64d65cba4",
+   "ogHash": "7d7b58cf8b2d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96607,7 +96953,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,311 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,317 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -96623,7 +96969,7 @@
     "Question"
    ],
    "schemaHash": "22ea6a10b0c2",
-   "ogHash": "0183c4e0e637",
+   "ogHash": "e898ee484d6d",
    "sitemap": true,
    "robots": "index, follow"
   },
