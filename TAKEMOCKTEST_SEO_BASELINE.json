@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-18",
- "pageCount": 5487,
+ "pageCount": 5517,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10322,7 +10322,7 @@
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,294 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,311 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10337,8 +10337,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "beec48299419",
-   "ogHash": "a7c0bc4754ff",
+   "schemaHash": "e2007eaa9e8e",
+   "ogHash": "2dd6f6d93f2d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -13079,7 +13079,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "9de06c73183b",
+   "schemaHash": "e30829ecb7aa",
    "ogHash": "971a86871b27",
    "sitemap": true,
    "robots": "index, follow"
@@ -13203,6 +13203,40 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/cds/test/algebra-and-trigonometry-sectional-2/attempt": {
+   "title": "CDS Algebra and Trigonometry Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CDS Algebra and Trigonometry Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a10fcce3d5ac",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/algebra-and-trigonometry-sectional-2": {
+   "title": "CDS Elementary Mathematics Algebra and Trigonometry Mock Test 2",
+   "description": "Free CDS Elementary Mathematics Algebra and Trigonometry Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CDS Elementary Mathematics Algebra and Trigonometry Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "23b1d097bf7d",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "6d4b17c4540b",
+   "ogHash": "39caba0c327c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
   "/in/cds/test/arithmetic-sectional-1/attempt": {
    "title": "CDS Arithmetic Sectional Test 1 | TakeMockTest",
    "description": "Attempt the CDS Arithmetic Sectional Test 1 and review your result on this device.",
@@ -13234,6 +13268,40 @@
    ],
    "schemaHash": "3b1c3a255c7b",
    "ogHash": "ccc8506c1ae4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/arithmetic-sectional-2/attempt": {
+   "title": "CDS Arithmetic Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CDS Arithmetic Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a05d4cdea7da",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/arithmetic-sectional-2": {
+   "title": "CDS Elementary Mathematics Arithmetic Mock Test 2",
+   "description": "Free CDS Elementary Mathematics Arithmetic Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CDS Elementary Mathematics Arithmetic Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "05c1cea32917",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "9088d8546cbc",
+   "ogHash": "b89fe9a7cd20",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -13274,6 +13342,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/cds/test/elementary-mathematics-full-mock-2/attempt": {
+   "title": "CDS Elementary Mathematics Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the CDS Elementary Mathematics Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "689974347226",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/elementary-mathematics-full-mock-2": {
+   "title": "CDS Elementary Mathematics Full Mock Test 2 (2026)",
+   "description": "Attempt CDS Elementary Mathematics Full Mock Test 2: 18 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "CDS Elementary Mathematics Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "39f46eb39a78",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "bc8b6df74351",
+   "ogHash": "04ffda7f3d97",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cds/test/english-full-mock-1/attempt": {
    "title": "CDS English Full Mock Test 1 | TakeMockTest",
    "description": "Attempt the CDS English Full Mock Test 1 and review your result on this device.",
@@ -13311,6 +13416,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/cds/test/english-full-mock-2/attempt": {
+   "title": "CDS English Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the CDS English Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ef03a03cf976",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/english-full-mock-2": {
+   "title": "CDS English Full Mock Test 2 (2026): Free Online Test",
+   "description": "Attempt CDS English Full Mock Test 2: 12 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "CDS English Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "7c79e6dccf1f",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "cad077901ee0",
+   "ogHash": "1239b1d7b412",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/cds/test/geometry-and-mensuration-sectional-1/attempt": {
    "title": "CDS Geometry and Mensuration Sectional Test 1 | TakeMockTest",
    "description": "Attempt the CDS Geometry and Mensuration Sectional Test 1 and review your result on this device.",
@@ -13342,6 +13484,40 @@
    ],
    "schemaHash": "45e9da49f53f",
    "ogHash": "11f516199df3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/geometry-and-mensuration-sectional-2/attempt": {
+   "title": "CDS Geometry and Mensuration Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CDS Geometry and Mensuration Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "21ac28065032",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/geometry-and-mensuration-sectional-2": {
+   "title": "CDS Elementary Mathematics Geometry and Mensuration Mock Test 2",
+   "description": "Free CDS Elementary Mathematics Geometry and Mensuration Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CDS Elementary Mathematics Geometry and Mensuration Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "d28867b30b2d",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "52a5ae93a873",
+   "ogHash": "dbd02eb8ba3d",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -13379,6 +13555,40 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/cds/test/grammar-and-usage-sectional-2/attempt": {
+   "title": "CDS Grammar and Usage Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the CDS Grammar and Usage Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "93fc97ab5306",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/grammar-and-usage-sectional-2": {
+   "title": "CDS English Grammar and Usage Mock Test 2: Free Practice",
+   "description": "Free CDS English Grammar and Usage Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CDS English Grammar and Usage Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "592843b4e7b0",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "a7a01f9eac48",
+   "ogHash": "b2fafa855bf0",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
   "/in/cds/test/vocabulary-and-comprehension-sectional-1/attempt": {
    "title": "CDS Vocabulary and Comprehension Sectional Test 1",
    "description": "Attempt the CDS Vocabulary and Comprehension Sectional Test 1 and review your result on this device.",
@@ -13410,6 +13620,40 @@
    ],
    "schemaHash": "82ed70b04ca9",
    "ogHash": "e40161ea80a7",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/vocabulary-and-comprehension-sectional-2/attempt": {
+   "title": "CDS Vocabulary and Comprehension Sectional Test 2",
+   "description": "Attempt the CDS Vocabulary and Comprehension Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "65cf2cbb6904",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/cds/test/vocabulary-and-comprehension-sectional-2": {
+   "title": "CDS English Vocabulary and Comprehension Mock Test 2",
+   "description": "Free CDS English Vocabulary and Comprehension Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "CDS English Vocabulary and Comprehension Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "4f8fbfec2f21",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "692d714dddbf",
+   "ogHash": "10b80067e3fe",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -18418,7 +18662,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "68887d83c632",
+   "schemaHash": "506c0ea36b34",
    "ogHash": "f7c8f18154bb",
    "sitemap": true,
    "robots": "index, follow"
@@ -18528,11 +18772,39 @@
    "h1": [
     "CSIR UGC NET Part A General Aptitude Practice Set 1"
    ],
-   "h2Count": 6,
-   "h2Hash": "8fd34f56ead0",
+   "h2Count": 7,
+   "h2Hash": "fc4be330d1b7",
    "schemaTypes": [],
    "schemaHash": "e3b0c44298fc",
    "ogHash": "f39e0b8573cd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/csir-ugc-net/test/part-a-general-aptitude-practice-2/attempt": {
+   "title": "CSIR UGC NET Part A General Aptitude Practice Set 2",
+   "description": "Attempt the CSIR UGC NET Part A General Aptitude Practice Set 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "7aa7d3704e20",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/csir-ugc-net/test/part-a-general-aptitude-practice-2": {
+   "title": "CSIR UGC NET Part A General Aptitude Practice Set 2",
+   "description": "Review the timing, question count, and negative-marking instructions for CSIR UGC NET Part A General Aptitude Practice Set 2.",
+   "h1": [
+    "CSIR UGC NET Part A General Aptitude Practice Set 2"
+   ],
+   "h2Count": 7,
+   "h2Hash": "fc4be330d1b7",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8a6912dd3280",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -21106,7 +21378,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "f495535f54ae",
+   "schemaHash": "7e782d07a8d2",
    "ogHash": "5517f76dcd98",
    "sitemap": true,
    "robots": "index, follow"
@@ -21480,7 +21752,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "9ce0f977220e",
+   "schemaHash": "6b6330fa69be",
    "ogHash": "140b5fab88f0",
    "sitemap": true,
    "robots": "index, follow"
@@ -21568,7 +21840,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "7b649b85ba6f",
+   "schemaHash": "22c4dbb85d6e",
    "ogHash": "7061d5afd601",
    "sitemap": true,
    "robots": "index, follow"
@@ -51386,7 +51658,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "99201d48165c",
+   "schemaHash": "1d4fdd312669",
    "ogHash": "1aec786d1f4a",
    "sitemap": true,
    "robots": "index, follow"
@@ -51510,6 +51782,40 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/nda/test/algebra-and-trigonometry-sectional-2/attempt": {
+   "title": "NDA Algebra and Trigonometry Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the NDA Algebra and Trigonometry Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "c13bb5ac66b0",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/algebra-and-trigonometry-sectional-2": {
+   "title": "NDA Mathematics Algebra and Trigonometry Mock Test 2",
+   "description": "Free NDA Mathematics Algebra and Trigonometry Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "NDA Mathematics Algebra and Trigonometry Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "f84eb43606ec",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "386b2aec3188",
+   "ogHash": "a308105c4bea",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
   "/in/nda/test/calculus-and-vectors-sectional-1/attempt": {
    "title": "NDA Calculus and Vectors Sectional Test 1 | TakeMockTest",
    "description": "Attempt the NDA Calculus and Vectors Sectional Test 1 and review your result on this device.",
@@ -51541,6 +51847,40 @@
    ],
    "schemaHash": "db1f4269696b",
    "ogHash": "f94a16ddb086",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/calculus-and-vectors-sectional-2/attempt": {
+   "title": "NDA Calculus and Vectors Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the NDA Calculus and Vectors Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "22f85cd57570",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/calculus-and-vectors-sectional-2": {
+   "title": "NDA Mathematics Calculus and Vectors Mock Test 2",
+   "description": "Free NDA Mathematics Calculus and Vectors Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "NDA Mathematics Calculus and Vectors Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "94f1a9667ea6",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "48c8676dafda",
+   "ogHash": "09a85a5bb2ad",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -51581,6 +51921,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/nda/test/general-ability-test-english-full-mock-2/attempt": {
+   "title": "NDA General Ability Test: English Full Mock Test 2",
+   "description": "Attempt the NDA General Ability Test: English Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8f213672aa29",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/general-ability-test-english-full-mock-2": {
+   "title": "NDA General Ability Test: English Full Mock Test 2 (2026)",
+   "description": "Attempt NDA General Ability Test: English Full Mock Test 2: 12 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "NDA General Ability Test: English Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "955c91486efa",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "c908060b2f07",
+   "ogHash": "11d2b4e00405",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/nda/test/geometry-statistics-and-probability-sectional-1/attempt": {
    "title": "NDA Geometry, Statistics and Probability Sectional Test 1",
    "description": "Attempt the NDA Geometry, Statistics and Probability Sectional Test 1 and review your result on this device.",
@@ -51615,6 +51992,40 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/nda/test/geometry-statistics-and-probability-sectional-2/attempt": {
+   "title": "NDA Geometry, Statistics and Probability Sectional Test 2",
+   "description": "Attempt the NDA Geometry, Statistics and Probability Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "7671c333a49b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/geometry-statistics-and-probability-sectional-2": {
+   "title": "NDA Mathematics Geometry, Statistics and Probability Mock Test 2",
+   "description": "Free NDA Mathematics Geometry, Statistics and Probability Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "NDA Mathematics Geometry, Statistics and Probability Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "208edc148676",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "6b2cb3479bcd",
+   "ogHash": "ec95bbf8013e",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
   "/in/nda/test/grammar-and-usage-sectional-1/attempt": {
    "title": "NDA Grammar and Usage Sectional Test 1 | TakeMockTest",
    "description": "Attempt the NDA Grammar and Usage Sectional Test 1 and review your result on this device.",
@@ -51646,6 +52057,40 @@
    ],
    "schemaHash": "256636cc3d0c",
    "ogHash": "cdefe285938c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/grammar-and-usage-sectional-2/attempt": {
+   "title": "NDA Grammar and Usage Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the NDA Grammar and Usage Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "04121e4498db",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/grammar-and-usage-sectional-2": {
+   "title": "NDA General Ability Test: English Grammar and Usage Mock Test 2",
+   "description": "Free NDA General Ability Test: English Grammar and Usage Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "NDA General Ability Test: English Grammar and Usage Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "d99364f8e5b5",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "be9163a70fc4",
+   "ogHash": "70208ec5432a",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -51686,6 +52131,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/nda/test/mathematics-full-mock-2/attempt": {
+   "title": "NDA Mathematics Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the NDA Mathematics Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a01636605f4a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/mathematics-full-mock-2": {
+   "title": "NDA Mathematics Full Mock Test 2 (2026): Free Online Test",
+   "description": "Attempt NDA Mathematics Full Mock Test 2: 18 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "NDA Mathematics Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "049594f1aecc",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "97d0cfc46ca8",
+   "ogHash": "5700bc935404",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/nda/test/vocabulary-and-comprehension-sectional-1/attempt": {
    "title": "NDA Vocabulary and Comprehension Sectional Test 1",
    "description": "Attempt the NDA Vocabulary and Comprehension Sectional Test 1 and review your result on this device.",
@@ -51717,6 +52199,40 @@
    ],
    "schemaHash": "0c2cbe0171c0",
    "ogHash": "8253599a682b",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/vocabulary-and-comprehension-sectional-2/attempt": {
+   "title": "NDA Vocabulary and Comprehension Sectional Test 2",
+   "description": "Attempt the NDA Vocabulary and Comprehension Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a73183d65bc0",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/nda/test/vocabulary-and-comprehension-sectional-2": {
+   "title": "NDA General Ability Test: English Vocabulary and Comprehension Mock Test 2",
+   "description": "Free NDA General Ability Test: English Vocabulary and Comprehension Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "NDA General Ability Test: English Vocabulary and Comprehension Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "66fe2676e469",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "5487bee0f2b9",
+   "ogHash": "eca0327388c4",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -57386,7 +57902,7 @@
   },
   "/in/practice/antonyms": {
    "title": "Antonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "280 free antonyms questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "282 free antonyms questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Antonyms Questions with Answers"
    ],
@@ -57402,8 +57918,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f90cfdfb4f2a",
-   "ogHash": "93c8173501b6",
+   "schemaHash": "d71ad4d2f297",
+   "ogHash": "672a5e336000",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -57423,7 +57939,7 @@
   },
   "/in/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "210 free averages questions with answers and explanations, pooled from 61 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "211 free averages questions with answers and explanations, pooled from 62 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -57439,8 +57955,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d2510e030aee",
-   "ogHash": "79be78987ccc",
+   "schemaHash": "eb3854072827",
+   "ogHash": "e7cd9173b8c8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -57645,7 +58161,7 @@
   },
   "/in/practice/compound-interest": {
    "title": "Compound Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "98 free compound interest questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "99 free compound interest questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Compound Interest Questions with Answers"
    ],
@@ -57661,8 +58177,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "69f1a491101f",
-   "ogHash": "19557c2e4073",
+   "schemaHash": "26bc0cabfd38",
+   "ogHash": "8c9563f0322d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -57793,7 +58309,7 @@
   },
   "/in/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "272 free direction sense questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "273 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -57809,8 +58325,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1ae0fe582fbe",
-   "ogHash": "69992cf296ac",
+   "schemaHash": "d46b7ba32282",
+   "ogHash": "a370affcf053",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -57904,7 +58420,7 @@
   },
   "/in/practice/idioms-and-phrases": {
    "title": "Idioms and Phrases Questions with Answers 2026",
-   "description": "247 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "249 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Idioms and Phrases Questions with Answers"
    ],
@@ -57920,8 +58436,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8c588519fb4c",
-   "ogHash": "3815e397df19",
+   "schemaHash": "a34916eb3381",
+   "ogHash": "3088bf570831",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58052,7 +58568,7 @@
   },
   "/in/practice/one-word-substitution": {
    "title": "One-Word Substitution Questions with Answers 2026",
-   "description": "272 free one-word substitution questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "274 free one-word substitution questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "One-Word Substitution Questions with Answers"
    ],
@@ -58068,8 +58584,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "540b19914629",
-   "ogHash": "fd6824a8ab52",
+   "schemaHash": "1ff7879f12bc",
+   "ogHash": "d323797f64a5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58163,7 +58679,7 @@
   },
   "/in/practice/permutations-and-combinations": {
    "title": "Permutations and Combinations Questions with Answers 2026",
-   "description": "130 free permutations and combinations questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "131 free permutations and combinations questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Permutations and Combinations Questions with Answers"
    ],
@@ -58179,8 +58695,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ae5eb00375a3",
-   "ogHash": "fce996b67009",
+   "schemaHash": "ac28a6a0e8b4",
+   "ogHash": "5778eb38398b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58385,7 +58901,7 @@
   },
   "/in/practice/reading-comprehension": {
    "title": "Reading Comprehension Questions with Answers 2026",
-   "description": "392 free reading comprehension questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "394 free reading comprehension questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Reading Comprehension Questions with Answers"
    ],
@@ -58401,8 +58917,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2d17f3440777",
-   "ogHash": "93cc22aa9d43",
+   "schemaHash": "5778b0b92540",
+   "ogHash": "9b068a253649",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58459,7 +58975,7 @@
   },
   "/in/practice/sentence-improvement": {
    "title": "Sentence Improvement Questions with Answers 2026",
-   "description": "180 free sentence improvement questions with answers and explanations, pooled from 24 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "181 free sentence improvement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Sentence Improvement Questions with Answers"
    ],
@@ -58475,8 +58991,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "09f1c8f9f527",
-   "ogHash": "b1dc926d1860",
+   "schemaHash": "c88b322d2dad",
+   "ogHash": "6cba7184a585",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58496,7 +59012,7 @@
   },
   "/in/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "131 free simple interest questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "132 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -58512,8 +59028,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "575ccc1c3d8f",
-   "ogHash": "fbd3c4e145ca",
+   "schemaHash": "581c30aec877",
+   "ogHash": "ae528e5b181b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58533,7 +59049,7 @@
   },
   "/in/practice/simplification": {
    "title": "Simplification Questions with Answers 2026 | TakeMockTest",
-   "description": "148 free simplification questions with answers and explanations, pooled from 23 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "149 free simplification questions with answers and explanations, pooled from 24 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simplification Questions with Answers"
    ],
@@ -58549,8 +59065,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5243f4a6c8a2",
-   "ogHash": "7c8b45738548",
+   "schemaHash": "a81bb675c92a",
+   "ogHash": "761b4d05efbf",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58644,7 +59160,7 @@
   },
   "/in/practice/synonyms": {
    "title": "Synonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "279 free synonyms questions with answers and explanations, pooled from 34 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "281 free synonyms questions with answers and explanations, pooled from 34 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Synonyms Questions with Answers"
    ],
@@ -58660,8 +59176,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a74a98a7a475",
-   "ogHash": "ba309c3a3c3a",
+   "schemaHash": "dadb9d3d7374",
+   "ogHash": "d3bd4eb417ab",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58741,7 +59257,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,294 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,311 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -58757,7 +59273,7 @@
     "Question"
    ],
    "schemaHash": "212e31eec12f",
-   "ogHash": "f1a7a31820a4",
+   "ogHash": "742ae0bafd76",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -93029,7 +93545,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "76bd43f1b6d4",
+   "schemaHash": "bb73fe22c71c",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -94736,7 +95252,7 @@
   },
   "/ng/practice/antonyms": {
    "title": "Antonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "280 free antonyms questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "282 free antonyms questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Antonyms Questions with Answers"
    ],
@@ -94752,8 +95268,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e17bb4271cb8",
-   "ogHash": "210431b06d01",
+   "schemaHash": "3f5e029bba00",
+   "ogHash": "b26a075046bc",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -94773,7 +95289,7 @@
   },
   "/ng/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "210 free averages questions with answers and explanations, pooled from 61 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "211 free averages questions with answers and explanations, pooled from 62 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -94789,8 +95305,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8b3ed80b6d40",
-   "ogHash": "371bc51a0a6f",
+   "schemaHash": "eb6853347c0a",
+   "ogHash": "0954822a56c3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -94995,7 +95511,7 @@
   },
   "/ng/practice/compound-interest": {
    "title": "Compound Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "98 free compound interest questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "99 free compound interest questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Compound Interest Questions with Answers"
    ],
@@ -95011,8 +95527,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "35896beb5fb7",
-   "ogHash": "20c28e5117b9",
+   "schemaHash": "c20f2823b4b0",
+   "ogHash": "5d78f8ab0eb3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95143,7 +95659,7 @@
   },
   "/ng/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "272 free direction sense questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "273 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -95159,8 +95675,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b797733a34b1",
-   "ogHash": "12a42e4a2eb9",
+   "schemaHash": "c4e3945f5e54",
+   "ogHash": "8a4b1b629cfa",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95254,7 +95770,7 @@
   },
   "/ng/practice/idioms-and-phrases": {
    "title": "Idioms and Phrases Questions with Answers 2026",
-   "description": "247 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "249 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Idioms and Phrases Questions with Answers"
    ],
@@ -95270,8 +95786,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "74e5662f95ba",
-   "ogHash": "9d959164703f",
+   "schemaHash": "636058634c1b",
+   "ogHash": "a99a9064273e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95402,7 +95918,7 @@
   },
   "/ng/practice/one-word-substitution": {
    "title": "One-Word Substitution Questions with Answers 2026",
-   "description": "272 free one-word substitution questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "274 free one-word substitution questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "One-Word Substitution Questions with Answers"
    ],
@@ -95418,8 +95934,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "06384cba3ddc",
-   "ogHash": "c8e5a44cb655",
+   "schemaHash": "d68640d4e6da",
+   "ogHash": "b291447e7b10",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95513,7 +96029,7 @@
   },
   "/ng/practice/permutations-and-combinations": {
    "title": "Permutations and Combinations Questions with Answers 2026",
-   "description": "130 free permutations and combinations questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "131 free permutations and combinations questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Permutations and Combinations Questions with Answers"
    ],
@@ -95529,8 +96045,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "76eac936fb18",
-   "ogHash": "abb276f6e7a8",
+   "schemaHash": "458539087451",
+   "ogHash": "d200804c1d7a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95735,7 +96251,7 @@
   },
   "/ng/practice/reading-comprehension": {
    "title": "Reading Comprehension Questions with Answers 2026",
-   "description": "392 free reading comprehension questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "394 free reading comprehension questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Reading Comprehension Questions with Answers"
    ],
@@ -95751,8 +96267,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c520b9518fde",
-   "ogHash": "cc4a85fca22c",
+   "schemaHash": "b823e5252b6f",
+   "ogHash": "12227c8fe718",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95809,7 +96325,7 @@
   },
   "/ng/practice/sentence-improvement": {
    "title": "Sentence Improvement Questions with Answers 2026",
-   "description": "180 free sentence improvement questions with answers and explanations, pooled from 24 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "181 free sentence improvement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Sentence Improvement Questions with Answers"
    ],
@@ -95825,8 +96341,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1c0482b66f17",
-   "ogHash": "9fc35330764f",
+   "schemaHash": "9c1e4f5afd11",
+   "ogHash": "01ad0e9a5b99",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95846,7 +96362,7 @@
   },
   "/ng/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "131 free simple interest questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "132 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -95862,8 +96378,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "81397470ab67",
-   "ogHash": "d23c64e11d54",
+   "schemaHash": "cc29faf0f57f",
+   "ogHash": "270f9e589c17",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95883,7 +96399,7 @@
   },
   "/ng/practice/simplification": {
    "title": "Simplification Questions with Answers 2026 | TakeMockTest",
-   "description": "148 free simplification questions with answers and explanations, pooled from 23 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "149 free simplification questions with answers and explanations, pooled from 24 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simplification Questions with Answers"
    ],
@@ -95899,8 +96415,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e25a06a789c1",
-   "ogHash": "94689c3ef331",
+   "schemaHash": "bef4285d94da",
+   "ogHash": "e9f6f5bb9686",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95994,7 +96510,7 @@
   },
   "/ng/practice/synonyms": {
    "title": "Synonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "279 free synonyms questions with answers and explanations, pooled from 34 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "281 free synonyms questions with answers and explanations, pooled from 34 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Synonyms Questions with Answers"
    ],
@@ -96010,8 +96526,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d679e74e2a66",
-   "ogHash": "4a72e4e911b2",
+   "schemaHash": "c6fb89a87642",
+   "ogHash": "b8c60114e9ef",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96091,7 +96607,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,294 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,311 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -96107,7 +96623,7 @@
     "Question"
    ],
    "schemaHash": "22ea6a10b0c2",
-   "ogHash": "39e06004d37a",
+   "ogHash": "0183c4e0e637",
    "sitemap": true,
    "robots": "index, follow"
   },

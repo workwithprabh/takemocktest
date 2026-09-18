@@ -560,9 +560,13 @@ import { ACET_MATHEMATICS_AND_STATISTICS_2 } from './question-banks/acet-mathema
 import { CA_FOUNDATION_QUANTITATIVE_APTITUDE_1 } from './question-banks/ca-foundation-quantitative-aptitude-combined-1';
 import { CMA_FOUNDATION_BUSINESS_MATHEMATICS_AND_STATISTICS_1 } from './question-banks/cma-foundation-business-mathematics-and-statistics-combined-1';
 import { NDA_MATHEMATICS_1 } from './question-banks/nda-mathematics-combined-1';
+import { NDA_MATHEMATICS_2 } from './question-banks/nda-mathematics-combined-2';
 import { NDA_GENERAL_ABILITY_TEST_ENGLISH_1 } from './question-banks/nda-general-ability-test-english-combined-1';
+import { NDA_GENERAL_ABILITY_TEST_ENGLISH_2 } from './question-banks/nda-general-ability-test-english-combined-2';
 import { CDS_ELEMENTARY_MATHEMATICS_1 } from './question-banks/cds-elementary-mathematics-combined-1';
+import { CDS_ELEMENTARY_MATHEMATICS_2 } from './question-banks/cds-elementary-mathematics-combined-2';
 import { CDS_ENGLISH_1 } from './question-banks/cds-english-combined-1';
+import { CDS_ENGLISH_2 } from './question-banks/cds-english-combined-2';
 import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_1 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-1';
 import { AFCAT_VERBAL_NUMERICAL_AND_REASONING_2 } from './question-banks/afcat-verbal-numerical-and-reasoning-combined-2';
 import { TERRITORIAL_ARMY_REASONING_AND_ENGLISH_1 } from './question-banks/territorial-army-reasoning-and-english-combined-1';
@@ -838,6 +842,7 @@ import { UKPSC_PCS_2025_GENERAL_APTITUDE_ENGLISH_1 } from './question-banks/ukps
 import { UKPSC_PCS_2025_GENERAL_APTITUDE_HINDI_1 } from './question-banks/ukpsc-pcs-2025-general-aptitude-hindi-1';
 import { CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1 } from './question-banks/cgpsc-sse-2025-prelims-paper-2-aptitude-full-1';
 import { CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_1 } from './question-banks/csir-ugc-net-part-a-general-aptitude-practice-1';
+import { CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_2 } from './question-banks/csir-ugc-net-part-a-general-aptitude-practice-2';
 import { HTET_2025_LEVEL_1_PRT_CHILD_DEVELOPMENT_1 } from './question-banks/htet-2025-level-1-prt-child-development-1';
 import { HTET_2025_LEVEL_1_PRT_ENGLISH_1 } from './question-banks/htet-2025-level-1-prt-english-1';
 import { HTET_2025_LEVEL_1_PRT_EVS_1 } from './question-banks/htet-2025-level-1-prt-evs-1';
@@ -2247,6 +2252,20 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'cds/english-full-mock-1': CDS_ENGLISH_1,
   'cds/grammar-and-usage-sectional-1': CDS_ENGLISH_1.filter((question) => question.section === 'Grammar and Usage'),
   'cds/vocabulary-and-comprehension-sectional-1': CDS_ENGLISH_1.filter((question) => question.section === 'Vocabulary and Comprehension'),
+  'nda/mathematics-full-mock-2': NDA_MATHEMATICS_2,
+  'nda/algebra-and-trigonometry-sectional-2': NDA_MATHEMATICS_2.filter((question) => question.section === 'Algebra and Trigonometry'),
+  'nda/calculus-and-vectors-sectional-2': NDA_MATHEMATICS_2.filter((question) => question.section === 'Calculus and Vectors'),
+  'nda/geometry-statistics-and-probability-sectional-2': NDA_MATHEMATICS_2.filter((question) => question.section === 'Geometry, Statistics and Probability'),
+  'nda/general-ability-test-english-full-mock-2': NDA_GENERAL_ABILITY_TEST_ENGLISH_2,
+  'nda/grammar-and-usage-sectional-2': NDA_GENERAL_ABILITY_TEST_ENGLISH_2.filter((question) => question.section === 'Grammar and Usage'),
+  'nda/vocabulary-and-comprehension-sectional-2': NDA_GENERAL_ABILITY_TEST_ENGLISH_2.filter((question) => question.section === 'Vocabulary and Comprehension'),
+  'cds/elementary-mathematics-full-mock-2': CDS_ELEMENTARY_MATHEMATICS_2,
+  'cds/arithmetic-sectional-2': CDS_ELEMENTARY_MATHEMATICS_2.filter((question) => question.section === 'Arithmetic'),
+  'cds/algebra-and-trigonometry-sectional-2': CDS_ELEMENTARY_MATHEMATICS_2.filter((question) => question.section === 'Algebra and Trigonometry'),
+  'cds/geometry-and-mensuration-sectional-2': CDS_ELEMENTARY_MATHEMATICS_2.filter((question) => question.section === 'Geometry and Mensuration'),
+  'cds/english-full-mock-2': CDS_ENGLISH_2,
+  'cds/grammar-and-usage-sectional-2': CDS_ENGLISH_2.filter((question) => question.section === 'Grammar and Usage'),
+  'cds/vocabulary-and-comprehension-sectional-2': CDS_ENGLISH_2.filter((question) => question.section === 'Vocabulary and Comprehension'),
   'afcat/verbal-numerical-and-reasoning-full-mock-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1,
   'afcat/verbal-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Verbal Ability'),
   'afcat/numerical-ability-sectional-1': AFCAT_VERBAL_NUMERICAL_AND_REASONING_1.filter((question) => question.section === 'Numerical Ability'),
@@ -3708,6 +3727,7 @@ const STATE_CIVIL_SERVICES_APTITUDE_2026_TESTS: Record<string, Question[]> = {
   'ukpsc-pcs/prelims-general-aptitude-hindi-sectional-1': UKPSC_PCS_2025_GENERAL_APTITUDE_HINDI_1,
   'cgpsc-state-service/prelims-paper-2-aptitude-full-mock-1': CGPSC_SSE_2025_PRELIMS_PAPER_2_APTITUDE_FULL_1,
   'csir-ugc-net/part-a-general-aptitude-practice-1': CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_1,
+  'csir-ugc-net/part-a-general-aptitude-practice-2': CSIR_UGC_NET_PART_A_GENERAL_APTITUDE_PRACTICE_2,
 };
 const REPAIRED_HANDOFF_2026_TESTS: Record<string, Question[]> = {
 'uptet/paper-1-primary-full-mock-1': [UPTET_2026_PAPER_1_CHILD_DEVELOPMENT_1, UPTET_2026_PAPER_1_ENGLISH_1, UPTET_2026_PAPER_1_EVS_1, UPTET_2026_PAPER_1_HINDI_1, UPTET_2026_PAPER_1_MATHEMATICS_1].flat(),
@@ -3761,6 +3781,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId === 'cgpsc-state-service/prelims-paper-2-aptitude-full-mock-1'
     ? 100
     : testId === 'csir-ugc-net/part-a-general-aptitude-practice-1'
+    ? 15
+    : testId === 'csir-ugc-net/part-a-general-aptitude-practice-2'
     ? 15
     : testId === 'gate/general-aptitude-sectional-1'
     ? 10
