@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-18",
- "pageCount": 5481,
+ "pageCount": 5487,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -86374,7 +86374,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "b3c8d23b3490",
+   "schemaHash": "5957a884e2c5",
    "ogHash": "cf5fbf62657c",
    "sitemap": true,
    "robots": "index, follow"
@@ -86501,6 +86501,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/toefl/test/reading-full-mock-2/attempt": {
+   "title": "TOEFL Reading Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the TOEFL Reading Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "227a8f6e0f25",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/toefl/test/reading-full-mock-2": {
+   "title": "TOEFL Reading Full Mock Test 2 (2026): Free Online Test",
+   "description": "Attempt TOEFL Reading Full Mock Test 2: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "TOEFL Reading Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "a5c973c3d535",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "3629037c82cd",
+   "ogHash": "b11cef4dc98f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/toefl/test/reading-read-an-academic-passage-sectional-1/attempt": {
    "title": "TOEFL Read an Academic Passage Sectional Test 1",
    "description": "Attempt the TOEFL Read an Academic Passage Sectional Test 1 and review your result on this device.",
@@ -86535,6 +86572,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/toefl/test/reading-read-an-academic-passage-sectional-2/attempt": {
+   "title": "TOEFL Read an Academic Passage Sectional Test 2",
+   "description": "Attempt the TOEFL Read an Academic Passage Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "92a3a1855daa",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/toefl/test/reading-read-an-academic-passage-sectional-2": {
+   "title": "TOEFL Read an Academic Passage Mock Test 2: Free Practice",
+   "description": "Free TOEFL Read an Academic Passage Mock Test 2: 15 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TOEFL Read an Academic Passage Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "2baf597a6e86",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "22645a42c44c",
+   "ogHash": "c22e22109618",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/toefl/test/reading-read-in-daily-life-sectional-1/attempt": {
    "title": "TOEFL Read in Daily Life Sectional Test 1 | TakeMockTest",
    "description": "Attempt the TOEFL Read in Daily Life Sectional Test 1 and review your result on this device.",
@@ -86566,6 +86637,40 @@
    ],
    "schemaHash": "e4a64e8f0d8e",
    "ogHash": "0979f8238a6a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/toefl/test/reading-read-in-daily-life-sectional-2/attempt": {
+   "title": "TOEFL Read in Daily Life Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the TOEFL Read in Daily Life Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b2fcd56445bd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/toefl/test/reading-read-in-daily-life-sectional-2": {
+   "title": "TOEFL Read in Daily Life Mock Test 2: Free Practice",
+   "description": "Free TOEFL Read in Daily Life Mock Test 2: 15 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TOEFL Read in Daily Life Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "0254147a721c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "753216d19375",
+   "ogHash": "5613b0c17c6b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -92924,7 +93029,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "413fc577798d",
+   "schemaHash": "76bd43f1b6d4",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
