@@ -3,6 +3,7 @@ import { contentLocale } from '@/lib/hreflang';
 import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
+import ExamSuggestions from '@/components/ExamSuggestions';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { getExamCatalog, getFeaturedExamCatalog } from '@/lib/exam-catalog';
 import { countryPublishes, getExamsForCountry, countryName } from '@/lib/exam-countries';
@@ -18,9 +19,17 @@ import { PRACTICE_SLUG, getPublishedTopicSlugs, getTopicPool, getTopicPools } fr
 // country and wrong the moment a second one listed a different set of exams:
 // the homepage was offering six Indian mock tests and six Indian categories
 // under /ng, none of which exist there.
-const examSuggestionsFor = (country: string) => Array.from(new Map(
-  getExamCatalog(country).flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
-).values());
+// Split by availability, because ExamSuggestions carries the two label strings
+// once between them rather than once per option.
+const examSuggestionsFor = (country: string) => {
+  const exams = Array.from(new Map(
+    getExamCatalog(country).flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
+  ).values());
+  return {
+    available: exams.filter((exam) => exam.liveSlug).map((exam) => exam.name),
+    listed: exams.filter((exam) => !exam.liveSlug).map((exam) => exam.name),
+  };
+};
 // The homepage is the strongest internal link this site can point at an exam,
 // so which exams it points at should be a decision, not a side effect of
 // catalogue order. This used to be `.slice(0, 6)` over EXAM_LIST, which meant
@@ -314,11 +323,11 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                   placeholder="Try SSC CGL, JEE, IELTS..."
                   className="min-h-12 min-w-0 flex-1 border border-ink-300 bg-white px-3 text-base text-ink-900 placeholder:text-ink-500 focus:border-action-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-action-700"
                 />
-                <datalist id="available-exam-suggestions">
-                  {examSuggestions.map((exam) => (
-                    <option key={exam.name} value={exam.name} label={exam.liveSlug ? 'Mock test available' : 'Listed, coming soon'} />
-                  ))}
-                </datalist>
+                <ExamSuggestions
+                  id="available-exam-suggestions"
+                  available={examSuggestions.available}
+                  listed={examSuggestions.listed}
+                />
                 <button type="submit" className="min-h-12 shrink-0 bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900">
                   Find test
                 </button>
