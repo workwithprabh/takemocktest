@@ -602,10 +602,12 @@ import { CMAT_2026_LANGUAGE_COMPREHENSION_1 } from './question-banks/cmat-2026-l
 import { CMAT_2026_GENERAL_AWARENESS_1 } from './question-banks/cmat-2026-general-awareness-1';
 import { CMAT_2026_INNOVATION_ENTREPRENEURSHIP_1 } from './question-banks/cmat-2026-innovation-entrepreneurship-1';
 import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-1';
+import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_2 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-2';
 import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
 import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
+import { MAT_LANGUAGE_REASONING_QUANT_DATA_2 } from './question-banks/mat-language-reasoning-quant-data-combined-2';
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
 import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
 import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-karnataka-language-mathematical-basic-aptitude-combined-1';
@@ -2388,6 +2390,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'nmat/language-skills-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Language Skills'),
   'nmat/logical-reasoning-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Logical Reasoning'),
   'nmat/quantitative-skills-sectional-1': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1.filter((question) => question.section === 'Quantitative Skills'),
+  'nmat/language-logical-reasoning-quantitative-full-mock-2': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_2,
+  'nmat/language-skills-sectional-2': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_2.filter((question) => question.section === 'Language Skills'),
+  'nmat/logical-reasoning-sectional-2': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_2.filter((question) => question.section === 'Logical Reasoning'),
+  'nmat/quantitative-skills-sectional-2': NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_2.filter((question) => question.section === 'Quantitative Skills'),
   'snap/general-english-analytical-logical-reasoning-quantitative-di-ds-full-mock-1': SNAP_ENGLISH_REASONING_QUANT_1,
   'snap/general-english-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'General English'),
   'snap/analytical-and-logical-reasoning-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'Analytical and Logical Reasoning'),
@@ -2409,6 +2415,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'mat/intelligence-critical-reasoning-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Intelligence and Critical Reasoning'),
   'mat/mathematical-skills-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Mathematical Skills'),
   'mat/data-analysis-sufficiency-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Data Analysis and Sufficiency'),
+  'mat/language-comprehension-intelligence-critical-reasoning-mathematical-skills-data-analysis-sufficiency-full-mock-2': MAT_LANGUAGE_REASONING_QUANT_DATA_2,
+  'mat/language-comprehension-sectional-2': MAT_LANGUAGE_REASONING_QUANT_DATA_2.filter((question) => question.section === 'Language Comprehension'),
+  'mat/intelligence-critical-reasoning-sectional-2': MAT_LANGUAGE_REASONING_QUANT_DATA_2.filter((question) => question.section === 'Intelligence and Critical Reasoning'),
+  'mat/mathematical-skills-sectional-2': MAT_LANGUAGE_REASONING_QUANT_DATA_2.filter((question) => question.section === 'Mathematical Skills'),
+  'mat/data-analysis-sufficiency-sectional-2': MAT_LANGUAGE_REASONING_QUANT_DATA_2.filter((question) => question.section === 'Data Analysis and Sufficiency'),
   'micat/verbal-ability-quantitative-ability-and-data-interpretation-divergent-and-convergent-thinking-full-mock-1': MICAT_VA_QADI_DCT_1,
   'micat/verbal-ability-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Verbal Ability'),
   'micat/quantitative-ability-data-interpretation-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
