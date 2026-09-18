@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-18",
- "pageCount": 5537,
+ "pageCount": 5545,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10322,7 +10322,7 @@
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,317 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,324 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10337,8 +10337,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "9d63181bc295",
-   "ogHash": "5bd837993ff7",
+   "schemaHash": "ca55b306d60b",
+   "ogHash": "4b52f20232d1",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58183,7 +58183,7 @@
   },
   "/in/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "211 free averages questions with answers and explanations, pooled from 62 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "212 free averages questions with answers and explanations, pooled from 63 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -58199,8 +58199,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "eb3854072827",
-   "ogHash": "e7cd9173b8c8",
+   "schemaHash": "635d6cb96ece",
+   "ogHash": "62b490f78262",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58220,7 +58220,7 @@
   },
   "/in/practice/blood-relations": {
    "title": "Blood Relations Questions with Answers 2026 | TakeMockTest",
-   "description": "277 free blood relations questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "278 free blood relations questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Blood Relations Questions with Answers"
    ],
@@ -58236,8 +58236,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "03df8a07ded6",
-   "ogHash": "0c8babb79c00",
+   "schemaHash": "f76f32eb1542",
+   "ogHash": "85b2d9efb8e0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58553,7 +58553,7 @@
   },
   "/in/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "273 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "274 free direction sense questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -58569,8 +58569,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d46b7ba32282",
-   "ogHash": "a370affcf053",
+   "schemaHash": "f6ce141abc8d",
+   "ogHash": "437ca818ea86",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59071,7 +59071,7 @@
   },
   "/in/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "224 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free ranking and order questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -59087,8 +59087,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d2b5e8881784",
-   "ogHash": "899f3229a1b8",
+   "schemaHash": "f5909f400b94",
+   "ogHash": "ae942783c443",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59293,7 +59293,7 @@
   },
   "/in/practice/simplification": {
    "title": "Simplification Questions with Answers 2026 | TakeMockTest",
-   "description": "149 free simplification questions with answers and explanations, pooled from 24 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "150 free simplification questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simplification Questions with Answers"
    ],
@@ -59309,8 +59309,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a81bb675c92a",
-   "ogHash": "761b4d05efbf",
+   "schemaHash": "0b5511f3fa59",
+   "ogHash": "bcafa839de66",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59367,7 +59367,7 @@
   },
   "/in/practice/syllogism": {
    "title": "Syllogism Questions with Answers 2026 | TakeMockTest",
-   "description": "300 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "301 free syllogism questions with answers and explanations, pooled from 59 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Syllogism Questions with Answers"
    ],
@@ -59383,8 +59383,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c3f11ca62698",
-   "ogHash": "01385b3c6600",
+   "schemaHash": "ec06c210688e",
+   "ogHash": "4da4c5dd1a84",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59478,7 +59478,7 @@
   },
   "/in/practice/time-speed-and-distance": {
    "title": "Time, Speed and Distance Questions with Answers 2026",
-   "description": "186 free time, speed and distance questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "187 free time, speed and distance questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time, Speed and Distance Questions with Answers"
    ],
@@ -59494,14 +59494,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "11b30c6991f5",
-   "ogHash": "1f621b0c2979",
+   "schemaHash": "4ef3f362a775",
+   "ogHash": "fcc3768b64a4",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,317 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,324 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -59517,7 +59517,7 @@
     "Question"
    ],
    "schemaHash": "212e31eec12f",
-   "ogHash": "764f0defd957",
+   "ogHash": "fd0a547a58a4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -66860,7 +66860,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "ad26754bf1bb",
+   "schemaHash": "ef03bf91cd48",
    "ogHash": "ce5eb3af95db",
    "sitemap": true,
    "robots": "index, follow"
@@ -66984,6 +66984,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/rrb-paramedical/test/cbt-full-mock-2/attempt": {
+   "title": "RRB Paramedical CBT Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt the RRB Paramedical CBT Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "38ae28db7538",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-paramedical/test/cbt-full-mock-2": {
+   "title": "RRB Paramedical CBT Full Mock Test 2 | TakeMockTest",
+   "description": "Attempt RRB Paramedical CBT Full Mock Test 2: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "RRB Paramedical CBT Full Mock Test 2"
+   ],
+   "h2Count": 10,
+   "h2Hash": "2c3b690f33ae",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "8a7ad3544ae7",
+   "ogHash": "ea2874c05697",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/rrb-paramedical/test/cbt-general-arithmetic-reasoning-sectional-1/attempt": {
    "title": "RRB Paramedical General Arithmetic, General Intelligence and Reasoning Sectional Test 1",
    "description": "Attempt the RRB Paramedical General Arithmetic, General Intelligence and Reasoning Sectional Test 1 and review your result on this device.",
@@ -67015,6 +67049,40 @@
    ],
    "schemaHash": "47328f114f72",
    "ogHash": "7dc3e3f9cf82",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/rrb-paramedical/test/cbt-general-arithmetic-reasoning-sectional-2/attempt": {
+   "title": "RRB Paramedical General Arithmetic, General Intelligence and Reasoning Sectional Test 2",
+   "description": "Attempt the RRB Paramedical General Arithmetic, General Intelligence and Reasoning Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a4ccc3d71bf8",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-paramedical/test/cbt-general-arithmetic-reasoning-sectional-2": {
+   "title": "RRB Paramedical General Arithmetic, General Intelligence and Reasoning Mock Test 2",
+   "description": "Free RRB Paramedical General Arithmetic, General Intelligence and Reasoning Mock Test 2: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "RRB Paramedical General Arithmetic, General Intelligence and Reasoning Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "b85474a0b4dd",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "f1fd2bfd8f61",
+   "ogHash": "8360d96005ee",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -67052,6 +67120,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/rrb-paramedical/test/cbt-general-awareness-sectional-2/attempt": {
+   "title": "RRB Paramedical General Awareness Sectional Test 2",
+   "description": "Attempt the RRB Paramedical General Awareness Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d48a84ca48ef",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-paramedical/test/cbt-general-awareness-sectional-2": {
+   "title": "RRB Paramedical General Awareness Mock Test 2: Free Practice",
+   "description": "Free RRB Paramedical General Awareness Mock Test 2: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "RRB Paramedical General Awareness Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "49bdc03fbf17",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "2cb56742be9a",
+   "ogHash": "a31bbb9ff752",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/rrb-paramedical/test/cbt-general-science-sectional-1/attempt": {
    "title": "RRB Paramedical General Science Sectional Test 1",
    "description": "Attempt the RRB Paramedical General Science Sectional Test 1 and review your result on this device.",
@@ -67083,6 +67185,40 @@
    ],
    "schemaHash": "6bc3d28b7655",
    "ogHash": "8c081d59d1c6",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/rrb-paramedical/test/cbt-general-science-sectional-2/attempt": {
+   "title": "RRB Paramedical General Science Sectional Test 2",
+   "description": "Attempt the RRB Paramedical General Science Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ef1839a6b712",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-paramedical/test/cbt-general-science-sectional-2": {
+   "title": "RRB Paramedical General Science Mock Test 2: Free Practice",
+   "description": "Free RRB Paramedical General Science Mock Test 2: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "RRB Paramedical General Science Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "febb3d602f1a",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "75b0170db99e",
+   "ogHash": "716bd0686011",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -93891,7 +94027,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "c0bdae31b344",
+   "schemaHash": "1ba667f80349",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -95635,7 +95771,7 @@
   },
   "/ng/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "211 free averages questions with answers and explanations, pooled from 62 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "212 free averages questions with answers and explanations, pooled from 63 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -95651,8 +95787,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "eb6853347c0a",
-   "ogHash": "0954822a56c3",
+   "schemaHash": "ec206473eced",
+   "ogHash": "4fe9bc930bdd",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -95672,7 +95808,7 @@
   },
   "/ng/practice/blood-relations": {
    "title": "Blood Relations Questions with Answers 2026 | TakeMockTest",
-   "description": "277 free blood relations questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "278 free blood relations questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Blood Relations Questions with Answers"
    ],
@@ -95688,8 +95824,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "62923f559be5",
-   "ogHash": "09cd322d6306",
+   "schemaHash": "6684d6ea8e4a",
+   "ogHash": "6edc5b30cbcc",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96005,7 +96141,7 @@
   },
   "/ng/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "273 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "274 free direction sense questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -96021,8 +96157,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c4e3945f5e54",
-   "ogHash": "8a4b1b629cfa",
+   "schemaHash": "2ce943a5fc4a",
+   "ogHash": "04d64e179a62",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96523,7 +96659,7 @@
   },
   "/ng/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "224 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free ranking and order questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -96539,8 +96675,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b42c8f5d1718",
-   "ogHash": "952a324585ad",
+   "schemaHash": "d8afdcb76bc7",
+   "ogHash": "9d735f152bf2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96745,7 +96881,7 @@
   },
   "/ng/practice/simplification": {
    "title": "Simplification Questions with Answers 2026 | TakeMockTest",
-   "description": "149 free simplification questions with answers and explanations, pooled from 24 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "150 free simplification questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simplification Questions with Answers"
    ],
@@ -96761,8 +96897,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "bef4285d94da",
-   "ogHash": "e9f6f5bb9686",
+   "schemaHash": "06ec35618157",
+   "ogHash": "83d57846c72b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96819,7 +96955,7 @@
   },
   "/ng/practice/syllogism": {
    "title": "Syllogism Questions with Answers 2026 | TakeMockTest",
-   "description": "300 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "301 free syllogism questions with answers and explanations, pooled from 59 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Syllogism Questions with Answers"
    ],
@@ -96835,8 +96971,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0f395f233a1f",
-   "ogHash": "9db83da1be02",
+   "schemaHash": "23102b612cc3",
+   "ogHash": "e98d5938176b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96930,7 +97066,7 @@
   },
   "/ng/practice/time-speed-and-distance": {
    "title": "Time, Speed and Distance Questions with Answers 2026",
-   "description": "186 free time, speed and distance questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "187 free time, speed and distance questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time, Speed and Distance Questions with Answers"
    ],
@@ -96946,14 +97082,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e1dcf7552c39",
-   "ogHash": "f3c7ca03041e",
+   "schemaHash": "767535674572",
+   "ogHash": "3e570ae49d70",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,317 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,324 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -96969,7 +97105,7 @@
     "Question"
    ],
    "schemaHash": "22ea6a10b0c2",
-   "ogHash": "e898ee484d6d",
+   "ogHash": "b081dd52f2df",
    "sitemap": true,
    "robots": "index, follow"
   },

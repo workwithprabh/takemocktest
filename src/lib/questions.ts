@@ -376,6 +376,9 @@ import { RRB_TECHNICIAN_GRADE3_GENERAL_AWARENESS_2 } from './question-banks/rrb-
 import { RRB_PARAMEDICAL_GENERAL_AWARENESS_1 } from './question-banks/rrb-paramedical-general-awareness-1';
 import { RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1 } from './question-banks/rrb-paramedical-general-arithmetic-reasoning-1';
 import { RRB_PARAMEDICAL_GENERAL_SCIENCE_1 } from './question-banks/rrb-paramedical-general-science-1';
+import { RRB_PARAMEDICAL_GENERAL_AWARENESS_2 } from './question-banks/rrb-paramedical-general-awareness-2';
+import { RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_2 } from './question-banks/rrb-paramedical-general-arithmetic-reasoning-2';
+import { RRB_PARAMEDICAL_GENERAL_SCIENCE_2 } from './question-banks/rrb-paramedical-general-science-2';
 import { SSC_SELECTION_POST_MATRICULATION_CBE_1 } from './question-banks/ssc-selection-post-matriculation-cbe-1';
 import { SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1 } from './question-banks/ssc-selection-post-higher-secondary-cbe-1';
 import { SSC_SELECTION_POST_GRADUATION_CBE_1 } from './question-banks/ssc-selection-post-graduation-cbe-1';
@@ -2097,6 +2100,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'rrb-paramedical/cbt-general-awareness-sectional-1': RRB_PARAMEDICAL_GENERAL_AWARENESS_1,
   'rrb-paramedical/cbt-general-arithmetic-reasoning-sectional-1': RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_1,
   'rrb-paramedical/cbt-general-science-sectional-1': RRB_PARAMEDICAL_GENERAL_SCIENCE_1,
+  'rrb-paramedical/cbt-full-mock-2': [
+    ...RRB_PARAMEDICAL_GENERAL_AWARENESS_2,
+    ...RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_2,
+    ...RRB_PARAMEDICAL_GENERAL_SCIENCE_2,
+  ],
+  'rrb-paramedical/cbt-general-awareness-sectional-2': RRB_PARAMEDICAL_GENERAL_AWARENESS_2,
+  'rrb-paramedical/cbt-general-arithmetic-reasoning-sectional-2': RRB_PARAMEDICAL_GENERAL_ARITHMETIC_REASONING_2,
+  'rrb-paramedical/cbt-general-science-sectional-2': RRB_PARAMEDICAL_GENERAL_SCIENCE_2,
   'ielts/academic-reading-full-mock-1': [
     ...IELTS_ACADEMIC_READING_PASSAGE_1_1,
     ...IELTS_ACADEMIC_READING_PASSAGE_2_1,
