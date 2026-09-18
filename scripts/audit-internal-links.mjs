@@ -184,6 +184,85 @@ for (const [rel, targets] of deadBySource) {
 }
 summaries.push(`Whole site: ${sweptLinks} distinct internal links across ${htmlFiles.length} pages all resolve`);
 
+// Resolving is not the same as being linked. Every check above asks whether a
+// link points somewhere real; none of them asks whether a page has any link
+// pointing at it. That gap hid four separate defects at once: the mock-test
+// stage tabs rendered only the first stage, so 224 test pages existed with no
+// link anywhere in the HTML; the exam tab bar tested for a hand-written guide
+// rather than asking whether the syllabus page was published, hiding 40 more;
+// Eligibility, Selection process, Salary, Cutoff, Result, Admit card and
+// Answer key had no tab at all; and seven published exams were missing a
+// liveSlug, so their clusters were islands. 232 indexable pages with zero
+// inbound links, and 378 a crawler starting at the country home could not
+// reach, every one of them in the sitemap and every check passing.
+//
+// A sitemap entry is a discovery hint. A link is what carries weight and what
+// a crawler follows, so an indexable page with none is a page this site is
+// asking search engines to rank while telling them, structurally, that it does
+// not matter. Both numbers are asserted at zero rather than reported, because
+// they were at zero only after someone went looking.
+const indexable = new Map();
+for (const file of htmlFiles) {
+  const html = fs.readFileSync(file, 'utf8');
+  if (/<meta name="robots" content="[^"]*noindex/i.test(html)) continue;
+  const url = '/' + path.relative(out, file).replace(/\\/g, '/').replace(/\.html$/, '');
+  indexable.set(url, html);
+}
+const inboundCount = new Map([...indexable.keys()].map((url) => [url, 0]));
+const linkGraph = new Map();
+for (const file of htmlFiles) {
+  const html = fs.readFileSync(file, 'utf8');
+  const from = '/' + path.relative(out, file).replace(/\\/g, '/').replace(/\.html$/, '');
+  const targets = new Set();
+  for (const match of new Set([...html.matchAll(/href="(\/[^"#?]*)"/g)].map((m) => m[1].replace(/\/$/, '')))) {
+    targets.add(match);
+    if (match !== from && inboundCount.has(match)) inboundCount.set(match, inboundCount.get(match) + 1);
+  }
+  linkGraph.set(from, targets);
+}
+const orphans = [...inboundCount].filter(([, count]) => count === 0).map(([url]) => url);
+if (orphans.length > 0) {
+  errors.push(
+    `${orphans.length} indexable page${orphans.length === 1 ? ' has' : 's have'} no inbound internal link ` +
+      `(${orphans.slice(0, 4).join(', ')}${orphans.length > 4 ? ', ...' : ''}) — being in the sitemap is not being linked`,
+  );
+}
+
+// Reachability from each country home, which is stricter than having one
+// inbound link: a cluster that only links to itself passes the orphan check
+// and is still an island. Each country tree is walked from its own home,
+// because /in does not link to /ng by design and should not.
+const countryHomes = [...new Set([...indexable.keys()].map((url) => '/' + url.split('/')[1]))].filter((home) =>
+  indexable.has(home),
+);
+const reached = new Set();
+for (const home of countryHomes) {
+  const queue = [home];
+  reached.add(home);
+  while (queue.length > 0) {
+    const current = queue.shift();
+    for (const next of linkGraph.get(current) ?? []) {
+      if (!reached.has(next) && linkGraph.has(next)) {
+        reached.add(next);
+        queue.push(next);
+      }
+    }
+  }
+}
+const unreachable = [...indexable.keys()].filter((url) => !reached.has(url));
+if (unreachable.length > 0) {
+  errors.push(
+    `${unreachable.length} indexable page${unreachable.length === 1 ? ' is' : 's are'} unreachable by following links ` +
+      `from ${countryHomes.join(' or ')} (${unreachable.slice(0, 4).join(', ')}${unreachable.length > 4 ? ', ...' : ''})`,
+  );
+}
+const inboundValues = [...inboundCount.values()].sort((a, b) => a - b);
+const median = inboundValues[Math.floor(inboundValues.length / 2)];
+summaries.push(
+  `Reachability: all ${indexable.size} indexable pages have an inbound link and are reachable from ` +
+    `${countryHomes.join(' / ')}; median inbound links per page ${median}`,
+);
+
 if (errors.length > 0) {
   console.error(`Internal-link audit FAILED — ${errors.length} problem${errors.length === 1 ? '' : 's'}:`);
   for (const error of errors) console.error(`  - ${error}`);

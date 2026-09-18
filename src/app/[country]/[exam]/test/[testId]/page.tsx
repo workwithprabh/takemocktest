@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { contentLocale } from '@/lib/hreflang';
-import { COUNTRIES, formatMarks, getExam, getAllTestSlugs, getTestConfig, testIdToName, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from '@/lib/exams';
+import { COUNTRIES, formatMarks, getExam, getAllTestSlugs, getTestConfig, testIdToName } from '@/lib/exams';
 import type { ExamConfig, TestConfig, TestStage } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
-import { getQuestionsForTest, displayLabel } from '@/lib/questions';
+import { getQuestionsForTest, displayLabel, getSiblingTests, isTestIndexable } from '@/lib/questions';
 import { notFound } from 'next/navigation';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, SITE_NAME, SITE_URL, jsonLdHtml } from '@/lib/schema';
@@ -132,8 +132,7 @@ export async function generateMetadata({
     // of self-cannibalisation and duplicate content. They stay in the product,
     // reachable from Explore Similar Tests, which is what they were built for.
     // Keep in sync with the same exclusion in src/app/sitemap.ts.
-    noIndex: questionCount === 0 || Boolean(configuredTest?.test.sharedFrom)
-      || (!isFullMock && !(isSectional && questionCount >= MIN_SECTIONAL_QUESTIONS_FOR_INDEX)),
+    noIndex: !configuredTest || !isTestIndexable(exam.slug, configuredTest.test),
   });
 }
 
@@ -2104,6 +2103,7 @@ export default async function TestInstructionsPage({
   const questionCount = questions.length;
   const coveredSections = [...new Set(questions.map((question) => question.section))];
   const { stage, test } = configuredTest;
+  const siblingTests = getSiblingTests(exam.slug, exam.stages, { stageId: stage.id, testId: test.id, kind: test.kind });
   const isFullMock = test.kind === 'full-length';
   const isSectional = test.kind === 'sectional';
   const isAvailable = questionCount > 0;
@@ -2493,6 +2493,41 @@ export default async function TestInstructionsPage({
         </div>
       )}
 
+      {siblingTests.items.length > 0 && (
+        <div className="mt-14 border-t border-ink-200 pt-10">
+          <section aria-labelledby="more-tests">
+            <h2 id="more-tests" className="mb-3 text-xl font-bold text-ink-900">
+              More {exam.shortName ?? exam.name} practice
+            </h2>
+            <p className="max-w-3xl text-sm leading-7 text-ink-700">
+              {siblingTests.total === 1
+                ? 'One other reviewed test is published for this exam.'
+                : `${siblingTests.total} other reviewed tests are published for this exam${
+                    siblingTests.total > siblingTests.items.length
+                      ? `, and these are the nearest ${siblingTests.items.length}`
+                      : ''
+                  }.`}{' '}
+              The rest of this {stage.name} stage comes first, then the other stages.
+            </p>
+            <ul className="mt-4 grid gap-x-8 gap-y-1 sm:grid-cols-2">
+              {siblingTests.items.map((sibling) => (
+                <li key={sibling.test.id} className="border-b border-ink-100 py-2 text-sm last:border-b-0">
+                  <Link href={`/${country}/${exam.slug}/test/${sibling.test.id}`} className="font-medium text-ink-900 hover:underline">
+                    {sibling.test.name}
+                  </Link>
+                  <span className="text-ink-600">
+                    {' '}&middot; {sibling.questionCount} question{sibling.questionCount === 1 ? '' : 's'}
+                    {sibling.stageId === stage.id ? '' : ` \u00b7 ${sibling.stageName}`}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <Link href={`/${country}/${exam.slug}/mock-test`} className="mt-4 inline-block text-sm font-semibold text-action-700 hover:underline">
+              All {exam.shortName ?? exam.name} mock tests
+            </Link>
+          </section>
+        </div>
+      )}
       {offersReasoningHub && (
         <div className="mt-14 border-t border-ink-200 pt-10">
           <section aria-labelledby="reasoning-hub">
