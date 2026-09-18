@@ -3,9 +3,8 @@ import { contentLocale } from '@/lib/hreflang';
 import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
-import ExamSuggestions from '@/components/ExamSuggestions';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
-import { getExamCatalog, getFeaturedExamCatalog } from '@/lib/exam-catalog';
+import { getFeaturedExamCatalog } from '@/lib/exam-catalog';
 import { countryPublishes, getExamsForCountry, countryName } from '@/lib/exam-countries';
 import { organizationSchema, websiteSchema, faqPageSchema, jsonLdHtml, SITE_NAME } from '@/lib/schema';
 import { UPDATE_CATEGORY_STYLES, formatUpdateDate, getLatestUpdates } from '@/lib/updates';
@@ -14,22 +13,11 @@ import { getCheckedQuestionEntries } from '@/lib/questions';
 import { LR_LADDER, LR_SLUG, LR_TOPIC_TESTS, LR_TOTAL_QUESTIONS, LR_GRADE_LABELS } from '@/lib/logical-reasoning';
 import { PRACTICE_SLUG, getPublishedTopicSlugs, getTopicPool, getTopicPools } from '@/lib/practice-topics';
 
-// Both of these are per country now. They used to be module-level constants
+// The exam grids below are per country. They used to be module-level constants
 // built from the whole catalogue, which was correct while India was the only
 // country and wrong the moment a second one listed a different set of exams:
 // the homepage was offering six Indian mock tests and six Indian categories
 // under /ng, none of which exist there.
-// Split by availability, because ExamSuggestions carries the two label strings
-// once between them rather than once per option.
-const examSuggestionsFor = (country: string) => {
-  const exams = Array.from(new Map(
-    getExamCatalog(country).flatMap((category) => category.groups.flatMap((group) => group.exams)).map((exam) => [exam.name, exam]),
-  ).values());
-  return {
-    available: exams.filter((exam) => exam.liveSlug).map((exam) => exam.name),
-    listed: exams.filter((exam) => !exam.liveSlug).map((exam) => exam.name),
-  };
-};
 // The homepage is the strongest internal link this site can point at an exam,
 // so which exams it points at should be a decision, not a side effect of
 // catalogue order. This used to be `.slice(0, 6)` over EXAM_LIST, which meant
@@ -273,7 +261,6 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
   // skill sections, trust and FAQ. The exam grids, category grid and updates
   // strip are not rendered rather than rendered empty.
   const hasExams = countryPublishes(country, 'exams');
-  const examSuggestions = examSuggestionsFor(country);
   const featuredExams = featuredExamsFor(country);
   const scale = scaleFor(country);
   const featuredCategories = getFeaturedExamCatalog(country);
@@ -318,15 +305,8 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
                   id="homepage-exam-search"
                   name="q"
                   type="search"
-                  list="available-exam-suggestions"
-                  autoComplete="off"
                   placeholder="Try SSC CGL, JEE, IELTS..."
                   className="min-h-12 min-w-0 flex-1 border border-ink-300 bg-white px-3 text-base text-ink-900 placeholder:text-ink-500 focus:border-action-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-action-700"
-                />
-                <ExamSuggestions
-                  id="available-exam-suggestions"
-                  available={examSuggestions.available}
-                  listed={examSuggestions.listed}
                 />
                 <button type="submit" className="min-h-12 shrink-0 bg-ink-900 px-4 text-sm font-semibold text-white transition hover:bg-ink-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900">
                   Find test
