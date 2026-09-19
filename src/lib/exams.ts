@@ -643,6 +643,80 @@ const IBPS_RRB_MAINS_REASONING_CLUSTER: ReasoningCluster = {
   ],
 };
 
+// Four more clusters, from the 19 September 2026 re-scan of every live exam's
+// Reasoning sectional spec. Each pair below shares an identical section name,
+// duration, marks and penalty, and each member's bank was checked against the
+// per-question data rendered on its own attempt page before being wired, not
+// just against its TestConfig defaults.
+//
+// That check is not decoration. IBPS PO and SBI PO compute their Mains marks
+// (`const MARKS = 60 / 40`), so their Reasoning banks carry 1.5 marks and 0.375
+// penalty per question. A source regex over the bank sees no literal numbers at
+// all. Those two exams also matched a shared spec in the same scan and were left
+// out for exactly that reason: their questions would have carried their own
+// scoring into whichever exam received them.
+//
+// KVS and NVS matched too, on General Reasoning at 24 minutes, +3/-1, and were
+// verified clean. They are not wired because each holds a single bank, so the
+// cluster would move one test per exam.
+const SSC_GENERAL_INTELLIGENCE_CLUSTER: ReasoningCluster = {
+  idInfix: 'sscgi-reasoning-shared',
+  clusterLabel: 'SSC General Intelligence',
+  section: 'General Intelligence',
+  duration: 15,
+  marksPerCorrect: 2,
+  negativeMarking: 0.5,
+  members: [
+    { exam: 'ssc-chsl', examName: 'SSC CHSL', bankTestCount: 3, testIdPrefix: 'tier-1' },
+    // Selection Post runs the same 15-minute General Intelligence part at all
+    // three education levels, so all six of its banks are offered. It receives
+    // under the Graduation prefix because a test ID needs one stage to sit in;
+    // the shared tests surface on the exam's Explore Similar Tests page, which
+    // is per exam rather than per stage, so the choice of prefix is not visible
+    // to a candidate.
+    { exam: 'ssc-selection-post', examName: 'SSC Selection Post', bankTestCount: 6, testIdPrefix: 'graduation-cbe' },
+  ],
+};
+
+const RRB_JE_ALP_REASONING_CLUSTER: ReasoningCluster = {
+  idInfix: 'rrbjealp-reasoning-shared',
+  clusterLabel: 'RRB JE and ALP',
+  section: 'General Intelligence and Reasoning',
+  duration: 23,
+  marksPerCorrect: 1,
+  negativeMarking: 0.333,
+  members: [
+    { exam: 'rrb-je', examName: 'RRB Junior Engineer', bankTestCount: 2, testIdPrefix: 'cbt1' },
+    { exam: 'rrb-alp', examName: 'RRB ALP', bankTestCount: 2, testIdPrefix: 'cbt-2' },
+  ],
+};
+
+const SSC_CPO_STENO_REASONING_CLUSTER: ReasoningCluster = {
+  idInfix: 'ssccposteno-reasoning-shared',
+  clusterLabel: 'SSC CPO and Stenographer',
+  section: 'General Intelligence and Reasoning',
+  duration: 30,
+  marksPerCorrect: 1,
+  negativeMarking: 0.25,
+  members: [
+    { exam: 'ssc-cpo', examName: 'SSC CPO', bankTestCount: 2, testIdPrefix: 'paper-1' },
+    { exam: 'ssc-steno', examName: 'SSC Stenographer', bankTestCount: 2, testIdPrefix: 'cbt' },
+  ],
+};
+
+const IBPS_SO_NIACL_AO_REASONING_CLUSTER: ReasoningCluster = {
+  idInfix: 'sonia-reasoning-shared',
+  clusterLabel: 'IBPS SO Prelims and NIACL AO Mains',
+  section: 'Reasoning',
+  duration: 40,
+  marksPerCorrect: 1,
+  negativeMarking: 0.25,
+  members: [
+    { exam: 'ibps-so', examName: 'IBPS SO', bankTestCount: 2, testIdPrefix: 'prelims' },
+    { exam: 'niacl-ao', examName: 'NIACL AO', bankTestCount: 2, testIdPrefix: 'mains' },
+  ],
+};
+
 // The exams that receive shared reasoning tests, for the "Explore Similar
 // Tests" page's generateStaticParams.
 //
@@ -2132,6 +2206,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             scoringNote: 'This sectional draws from a shared Reasoning practice bank also used for SSC CGL: pure logical-reasoning content (number series, coding-decoding, syllogism, and similar) is not tied to one exam\'s specific syllabus the way Quantitative Aptitude, English, or General Awareness are. Marks, timing, and negative marking match SSC CHSL\'s own official Tier 1 pattern exactly.',
             checkedOn: '29 August 2026',
           },
+          ...buildSharedReasoningTests(SSC_GENERAL_INTELLIGENCE_CLUSTER, 'ssc-chsl'),
         ],
       },
       {
@@ -4420,6 +4495,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '22 August 2026',
           },
+          ...buildSharedReasoningTests(RRB_JE_ALP_REASONING_CLUSTER, 'rrb-je'),
         ],
       },
       {
@@ -4963,6 +5039,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '22 August 2026',
           },
+          ...buildSharedReasoningTests(SSC_CPO_STENO_REASONING_CLUSTER, 'ssc-cpo'),
         ],
       },
       {
@@ -5222,6 +5299,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '23 August 2026',
           },
+          ...buildSharedReasoningTests(SSC_CPO_STENO_REASONING_CLUSTER, 'ssc-steno'),
         ],
       },
     ],
@@ -5342,6 +5420,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '22 August 2026',
           },
+          ...buildSharedReasoningTests(IBPS_SO_NIACL_AO_REASONING_CLUSTER, 'ibps-so'),
         ],
       },
       {
@@ -7401,6 +7480,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.25,
             checkedOn: '23 August 2026',
           },
+          ...buildSharedReasoningTests(IBPS_SO_NIACL_AO_REASONING_CLUSTER, 'niacl-ao'),
         ],
       },
     ],
@@ -7652,6 +7732,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             negativeMarking: 0.333,
             checkedOn: '23 August 2026',
           },
+          ...buildSharedReasoningTests(RRB_JE_ALP_REASONING_CLUSTER, 'rrb-alp'),
         ],
       },
     ],
@@ -8292,6 +8373,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         tests: [
           ...selectionPostTests('Graduation Level', 'graduation'),
           ...selectionPostTests('Graduation Level', 'graduation', 2, '23 August 2026'),
+          ...buildSharedReasoningTests(SSC_GENERAL_INTELLIGENCE_CLUSTER, 'ssc-selection-post'),
         ],
       },
     ],

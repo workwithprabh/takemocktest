@@ -2526,6 +2526,33 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibps-rrb-officer-scale-1/prelims-ibpsrrbp-reasoning-shared-ibps-rrb-office-assistant-2': IBPS_RRB_OFFICE_ASSISTANT_PRELIMS_REASONING_2,
   'ibps-rrb-office-assistant/mains-ibpsrrbm-reasoning-shared-ibps-rrb-officer-scale-1-1': IBPS_RRB_OFFICER_SCALE_1_MAINS_REASONING_1,
   'ibps-rrb-officer-scale-1/mains-ibpsrrbm-reasoning-shared-ibps-rrb-office-assistant-1': IBPS_RRB_OFFICE_ASSISTANT_MAINS_REASONING_1,
+  // SSC General Intelligence cluster. Selection Post's General Intelligence
+  // questions are a slice of each level's whole-paper bank, in level order:
+  // Matriculation 1 and 2, Higher Secondary 1 and 2, Graduation 1 and 2.
+  'ssc-chsl/tier-1-sscgi-reasoning-shared-ssc-selection-post-1': selectionPostGeneralIntelligence(SSC_SELECTION_POST_MATRICULATION_CBE_1),
+  'ssc-chsl/tier-1-sscgi-reasoning-shared-ssc-selection-post-2': selectionPostGeneralIntelligence(SSC_SELECTION_POST_MATRICULATION_CBE_2),
+  'ssc-chsl/tier-1-sscgi-reasoning-shared-ssc-selection-post-3': selectionPostGeneralIntelligence(SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_1),
+  'ssc-chsl/tier-1-sscgi-reasoning-shared-ssc-selection-post-4': selectionPostGeneralIntelligence(SSC_SELECTION_POST_HIGHER_SECONDARY_CBE_2),
+  'ssc-chsl/tier-1-sscgi-reasoning-shared-ssc-selection-post-5': selectionPostGeneralIntelligence(SSC_SELECTION_POST_GRADUATION_CBE_1),
+  'ssc-chsl/tier-1-sscgi-reasoning-shared-ssc-selection-post-6': selectionPostGeneralIntelligence(SSC_SELECTION_POST_GRADUATION_CBE_2),
+  'ssc-selection-post/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-1': SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_1,
+  'ssc-selection-post/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-2': SSC_CHSL_TIER1_GENERAL_INTELLIGENCE_2,
+  'ssc-selection-post/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-3': SSC_CGL_TIER1_REASONING_3.map((question) => ({ ...question, section: 'General Intelligence' })),
+  // RRB JE and ALP cluster.
+  'rrb-je/cbt1-rrbjealp-reasoning-shared-rrb-alp-1': RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-je/cbt1-rrbjealp-reasoning-shared-rrb-alp-2': RRB_ALP_CBT2_GENERAL_INTELLIGENCE_REASONING_2,
+  'rrb-alp/cbt-2-rrbjealp-reasoning-shared-rrb-je-1': RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_1,
+  'rrb-alp/cbt-2-rrbjealp-reasoning-shared-rrb-je-2': RRB_JE_CBT1_GENERAL_INTELLIGENCE_REASONING_2,
+  // SSC CPO and Stenographer cluster.
+  'ssc-cpo/paper-1-ssccposteno-reasoning-shared-ssc-steno-1': SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_1,
+  'ssc-cpo/paper-1-ssccposteno-reasoning-shared-ssc-steno-2': SSC_STENO_CBT_GENERAL_INTELLIGENCE_REASONING_2,
+  'ssc-steno/cbt-ssccposteno-reasoning-shared-ssc-cpo-1': SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_1,
+  'ssc-steno/cbt-ssccposteno-reasoning-shared-ssc-cpo-2': SSC_CPO_PAPER_1_GENERAL_INTELLIGENCE_REASONING_2,
+  // IBPS SO Prelims and NIACL AO Mains cluster.
+  'ibps-so/prelims-sonia-reasoning-shared-niacl-ao-1': NIACL_AO_MAINS_REASONING_1,
+  'ibps-so/prelims-sonia-reasoning-shared-niacl-ao-2': NIACL_AO_MAINS_REASONING_2,
+  'niacl-ao/mains-sonia-reasoning-shared-ibps-so-1': IBPS_SO_PRELIMS_REASONING_1,
+  'niacl-ao/mains-sonia-reasoning-shared-ibps-so-2': IBPS_SO_PRELIMS_REASONING_2,
 };
 
 // Practice-family tests (quick / topic / difficulty) are deterministic slices of the
@@ -2735,6 +2762,12 @@ const SSC_CHT_PAPER_1_QUICK_TESTS: Record<string, Question[]> = {
 };
 
 const SSC_SELECTION_POST_SECTIONS = ['General Intelligence', 'General Awareness', 'Quantitative Aptitude', 'English Language'];
+// Selection Post publishes one bank per level, split into sections at use.
+// The SSC General Intelligence cluster shares that slice, so it is named here
+// rather than repeated inline six times.
+function selectionPostGeneralIntelligence(bank: Question[]): Question[] {
+  return bank.filter((question) => question.section === 'General Intelligence');
+}
 function selectionPostLevelBanks(prefix: string, bank: Question[], testNumber = 1): Record<string, Question[]> {
   const sections = Object.fromEntries(SSC_SELECTION_POST_SECTIONS.map((section) => [section, bank.filter((question) => question.section === section)]));
   const mixed = (perSection: number, offset: number) => SSC_SELECTION_POST_SECTIONS.flatMap((section) => sections[section].slice(offset, offset + perSection));
@@ -4160,6 +4193,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 40
     : testId.includes('ibpsrrbm-reasoning-shared')
     ? 40
+    : testId.includes('sscgi-reasoning-shared')
+    ? 25
+    : testId.includes('rrbjealp-reasoning-shared')
+    ? 25
+    : testId.includes('ssccposteno-reasoning-shared')
+    ? 50
+    : testId.includes('sonia-reasoning-shared')
+    ? 50
     : testId.includes('ssc-mts/cbt-full-mock')
     ? 90
     : testId.includes('ssc-mts')
