@@ -590,7 +590,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('jipmat-qa-dilr-varc-combined-') ? 45
     : file.startsWith('cuet-ug-2026-gat-full-mock-1') ? 50
     : file.startsWith('jcece-2026-pcm-full-mock-1') ? 150
-    : file.startsWith('jest-2026-physics-full-mock-1') ? 40
+    : file.startsWith('jest-2026-physics-full-mock-') ? 40
     : file.startsWith('keam-2026-engineering-full-mock-1') ? 150
     : file.startsWith('kerala-mca-2026-mca-full-mock-1') ? 120
     : file.startsWith('jam-2026-mathematics-full-mock-') ? 60
