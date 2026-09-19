@@ -822,6 +822,7 @@ import { ICAR_AIEEA_PG_2026_AGRONOMY_2 } from './question-banks/icar-aieea-pg-20
 import { CUET_UG_2026_GAT_FULL_MOCK_1 } from './question-banks/cuet-ug-2026-gat-full-mock-1';
 import { JCECE_2026_PCM_FULL_MOCK_1 } from './question-banks/jcece-2026-pcm-full-mock-1';
 import { JEST_2026_PHYSICS_FULL_MOCK_1 } from './question-banks/jest-2026-physics-full-mock-1';
+import { JEST_2026_PHYSICS_FULL_MOCK_2 } from './question-banks/jest-2026-physics-full-mock-2';
 import { KEAM_2026_ENGINEERING_FULL_MOCK_1 } from './question-banks/keam-2026-engineering-full-mock-1';
 import { KERALA_MCA_2026_MCA_FULL_MOCK_1 } from './question-banks/kerala-mca-2026-mca-full-mock-1';
 import { KSDAT_2026_KSDAT_FULL_MOCK_1 } from './question-banks/ksdat-2026-ksdat-full-mock-1';
@@ -3349,6 +3350,10 @@ const JEST_HANDOFF_TESTS: Record<string, Question[]> = {
   'jest/part-a-sectional-1': JEST_2026_PHYSICS_FULL_MOCK_1.filter((question) => question.section === "Part A"),
   'jest/part-b-sectional-1': JEST_2026_PHYSICS_FULL_MOCK_1.filter((question) => question.section === "Part B"),
   'jest/part-c-sectional-1': JEST_2026_PHYSICS_FULL_MOCK_1.filter((question) => question.section === "Part C"),
+  'jest/physics-full-mock-2': JEST_2026_PHYSICS_FULL_MOCK_2,
+  'jest/part-a-sectional-2': JEST_2026_PHYSICS_FULL_MOCK_2.filter((question) => question.section === 'Part A'),
+  'jest/part-b-sectional-2': JEST_2026_PHYSICS_FULL_MOCK_2.filter((question) => question.section === 'Part B'),
+  'jest/part-c-sectional-2': JEST_2026_PHYSICS_FULL_MOCK_2.filter((question) => question.section === 'Part C'),
 };
 
 const KEAM_HANDOFF_TESTS: Record<string, Question[]> = {
@@ -4064,6 +4069,14 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId === 'jest/part-b-sectional-1'
     ? 20
     : testId === 'jest/part-c-sectional-1'
+    ? 10
+    : testId === 'jest/physics-full-mock-2'
+    ? 40
+    : testId === 'jest/part-a-sectional-2'
+    ? 10
+    : testId === 'jest/part-b-sectional-2'
+    ? 20
+    : testId === 'jest/part-c-sectional-2'
     ? 10
     : testId === 'keam/engineering-full-mock-1'
     ? 150
