@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-19",
- "pageCount": 5571,
+ "pageCount": 5619,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -30164,8 +30164,8 @@
    "h1": [
     "IBPS SO Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "34e20e9b785d",
+   "h2Count": 9,
+   "h2Hash": "90370b52d8c5",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -30246,6 +30246,24 @@
    "ogHash": "1b8decb93531",
    "sitemap": false,
    "robots": "noindex, follow"
+  },
+  "/in/ibps-so/similar-tests": {
+   "title": "Similar Tests to IBPS SO, Extra Reasoning Practice",
+   "description": "Additional Reasoning Ability practice tests for IBPS SO, drawn from exams that share its scoring pattern and marking scheme.",
+   "h1": [
+    "Similar Tests to IBPS SO"
+   ],
+   "h2Count": 5,
+   "h2Hash": "45af224d4744",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization"
+   ],
+   "schemaHash": "4ab7669ff0e1",
+   "ogHash": "45039a9a1386",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/ibps-so/syllabus": {
    "title": "IBPS SO Syllabus 2026: Section-wise Topics | TakeMockTest",
@@ -31153,6 +31171,74 @@
    "ogHash": "104dfd9cd70b",
    "sitemap": true,
    "robots": "index, follow"
+  },
+  "/in/ibps-so/test/prelims-sonia-reasoning-shared-niacl-ao-1/attempt": {
+   "title": "IBPS SO Reasoning Practice (NIACL AO Bank) 1 | TakeMockTest",
+   "description": "Attempt the IBPS SO Reasoning Practice (NIACL AO Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "03d5fb146d35",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ibps-so/test/prelims-sonia-reasoning-shared-niacl-ao-1": {
+   "title": "IBPS SO Prelims Reasoning Mock Test (NIACL AO Bank) 1",
+   "description": "Free IBPS SO Prelims Reasoning Mock Test (NIACL AO Bank) 1: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "IBPS SO Prelims Reasoning Mock Test (NIACL AO Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "e657329da8e1",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "08c7527137a6",
+   "ogHash": "a08e59e9aa13",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ibps-so/test/prelims-sonia-reasoning-shared-niacl-ao-2/attempt": {
+   "title": "IBPS SO Reasoning Practice (NIACL AO Bank) 2 | TakeMockTest",
+   "description": "Attempt the IBPS SO Reasoning Practice (NIACL AO Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "a77abfa02036",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ibps-so/test/prelims-sonia-reasoning-shared-niacl-ao-2": {
+   "title": "IBPS SO Prelims Reasoning Mock Test (NIACL AO Bank) 2",
+   "description": "Free IBPS SO Prelims Reasoning Mock Test (NIACL AO Bank) 2: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "IBPS SO Prelims Reasoning Mock Test (NIACL AO Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "e657329da8e1",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "f0e45f01584b",
+   "ogHash": "c680c417182f",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ibps-so": {
    "title": "IBPS SO: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
@@ -53940,8 +54026,8 @@
    "h1": [
     "Similar Tests to NIACL AO"
    ],
-   "h2Count": 8,
-   "h2Hash": "a0cee34117de",
+   "h2Count": 9,
+   "h2Hash": "24f2f845c9c2",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -54314,6 +54400,74 @@
    "ogHash": "24e89e928ff1",
    "sitemap": true,
    "robots": "index, follow"
+  },
+  "/in/niacl-ao/test/mains-sonia-reasoning-shared-ibps-so-1/attempt": {
+   "title": "NIACL AO Reasoning Practice (IBPS SO Bank) 1 | TakeMockTest",
+   "description": "Attempt the NIACL AO Reasoning Practice (IBPS SO Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9ea8a41be395",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/niacl-ao/test/mains-sonia-reasoning-shared-ibps-so-1": {
+   "title": "NIACL AO Mains Reasoning Mock Test (IBPS SO Bank) 1",
+   "description": "Free NIACL AO Mains Reasoning Mock Test (IBPS SO Bank) 1: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "NIACL AO Mains Reasoning Mock Test (IBPS SO Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "542401e0d953",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "15324ca12b8c",
+   "ogHash": "3c90e286d6e0",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/niacl-ao/test/mains-sonia-reasoning-shared-ibps-so-2/attempt": {
+   "title": "NIACL AO Reasoning Practice (IBPS SO Bank) 2 | TakeMockTest",
+   "description": "Attempt the NIACL AO Reasoning Practice (IBPS SO Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "7e995756163d",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/niacl-ao/test/mains-sonia-reasoning-shared-ibps-so-2": {
+   "title": "NIACL AO Mains Reasoning Mock Test (IBPS SO Bank) 2",
+   "description": "Free NIACL AO Mains Reasoning Mock Test (IBPS SO Bank) 2: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "NIACL AO Mains Reasoning Mock Test (IBPS SO Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "542401e0d953",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "d8c0f5852d5f",
+   "ogHash": "722ec2744b65",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/niacl-ao/test/prelims-english-language-sectional-1/attempt": {
    "title": "NIACL AO English Language Sectional Test 1 | TakeMockTest",
@@ -58520,7 +58674,7 @@
   },
   "/in/practice/alphanumeric-series": {
    "title": "Alphanumeric Series Questions with Answers 2026",
-   "description": "185 free alphanumeric series questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "185 free alphanumeric series questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Alphanumeric Series Questions with Answers"
    ],
@@ -58536,8 +58690,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "763b5034358d",
-   "ogHash": "e5f9b439487b",
+   "schemaHash": "200387aaa390",
+   "ogHash": "7c5d11b303a4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58557,7 +58711,7 @@
   },
   "/in/practice/analogy": {
    "title": "Analogy Questions with Answers 2026 | TakeMockTest",
-   "description": "198 free analogy questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "198 free analogy questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Analogy Questions with Answers"
    ],
@@ -58573,8 +58727,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1080258f5617",
-   "ogHash": "1e4aba92c2f8",
+   "schemaHash": "a04fd09e3847",
+   "ogHash": "b6bd31cd85b5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58668,7 +58822,7 @@
   },
   "/in/practice/blood-relations": {
    "title": "Blood Relations Questions with Answers 2026 | TakeMockTest",
-   "description": "280 free blood relations questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "280 free blood relations questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Blood Relations Questions with Answers"
    ],
@@ -58684,8 +58838,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "37d019640c62",
-   "ogHash": "f4e9eb5ac3c9",
+   "schemaHash": "9069cc0f8a0c",
+   "ogHash": "6891d900c776",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58705,7 +58859,7 @@
   },
   "/in/practice/classification": {
    "title": "Classification Questions with Answers 2026 | TakeMockTest",
-   "description": "222 free classification questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "222 free classification questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Classification Questions with Answers"
    ],
@@ -58721,8 +58875,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b20e80f700a8",
-   "ogHash": "c2ec5e5cc870",
+   "schemaHash": "49c94310036e",
+   "ogHash": "b2d68793909b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -58816,7 +58970,7 @@
   },
   "/in/practice/coding-and-decoding": {
    "title": "Coding and Decoding Questions with Answers 2026",
-   "description": "320 free coding and decoding questions with answers and explanations, pooled from 49 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "320 free coding and decoding questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Coding and Decoding Questions with Answers"
    ],
@@ -58832,8 +58986,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d376f6b62fc7",
-   "ogHash": "1368f434f27b",
+   "schemaHash": "cd74f6c77d3a",
+   "ogHash": "ece7062037f5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59001,7 +59155,7 @@
   },
   "/in/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "276 free direction sense questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "276 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -59017,8 +59171,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d7ec98893e46",
-   "ogHash": "ad23618f6345",
+   "schemaHash": "26f56d7cf6cc",
+   "ogHash": "289ab4e090a2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59186,7 +59340,7 @@
   },
   "/in/practice/number-series": {
    "title": "Number Series Questions with Answers 2026 | TakeMockTest",
-   "description": "395 free number series questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "395 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number Series Questions with Answers"
    ],
@@ -59202,8 +59356,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7b5122f459ec",
-   "ogHash": "58af99f8100a",
+   "schemaHash": "fd8f701bc385",
+   "ogHash": "637d64ba01c6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59519,7 +59673,7 @@
   },
   "/in/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "225 free ranking and order questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -59535,8 +59689,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f5909f400b94",
-   "ogHash": "ae942783c443",
+   "schemaHash": "a3d2081f90ef",
+   "ogHash": "a6779db48860",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59630,7 +59784,7 @@
   },
   "/in/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "84 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "84 free seating arrangement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -59646,8 +59800,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fe9619ba7958",
-   "ogHash": "f695548b992b",
+   "schemaHash": "24dbf9c5ed8a",
+   "ogHash": "9861237c3c1f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59815,7 +59969,7 @@
   },
   "/in/practice/syllogism": {
    "title": "Syllogism Questions with Answers 2026 | TakeMockTest",
-   "description": "303 free syllogism questions with answers and explanations, pooled from 59 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "303 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Syllogism Questions with Answers"
    ],
@@ -59831,8 +59985,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ffe9c2adb808",
-   "ogHash": "2e0f7d86915c",
+   "schemaHash": "16fd1b4195f4",
+   "ogHash": "87677fb48b90",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -63879,8 +64033,8 @@
    "h1": [
     "RRB ALP Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "2acd8c9ad245",
+   "h2Count": 10,
+   "h2Hash": "9f6794b26561",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -63962,6 +64116,24 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/rrb-alp/similar-tests": {
+   "title": "Similar Tests to RRB ALP, Extra Reasoning Practice",
+   "description": "Additional Reasoning Ability practice tests for RRB ALP, drawn from exams that share its scoring pattern and marking scheme.",
+   "h1": [
+    "Similar Tests to RRB ALP"
+   ],
+   "h2Count": 5,
+   "h2Hash": "6ffe8fc330cf",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization"
+   ],
+   "schemaHash": "c071d8b6c33c",
+   "ogHash": "a28b6c412e34",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/rrb-alp/syllabus": {
    "title": "RRB ALP Syllabus 2026: Sections and Topics | TakeMockTest",
    "description": "RRB ALP official section pattern across 7 sections, with the topics covered by the free mock tests on this site listed under each.",
@@ -63977,7 +64149,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "b098bfe87b24",
+   "schemaHash": "26dcef089408",
    "ogHash": "62b547377a93",
    "sitemap": true,
    "robots": "index, follow"
@@ -64605,6 +64777,74 @@
    "ogHash": "db3e81434039",
    "sitemap": true,
    "robots": "index, follow"
+  },
+  "/in/rrb-alp/test/cbt-2-rrbjealp-reasoning-shared-rrb-je-1/attempt": {
+   "title": "RRB ALP General Intelligence and Reasoning Practice (RRB Junior Engineer Bank) 1",
+   "description": "Attempt the RRB ALP General Intelligence and Reasoning Practice (RRB Junior Engineer Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "1a935679bf84",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-alp/test/cbt-2-rrbjealp-reasoning-shared-rrb-je-1": {
+   "title": "RRB ALP CBT 2 General Intelligence and Reasoning Mock Test (RRB Junior Engineer Bank) 1",
+   "description": "Free RRB ALP CBT 2 General Intelligence and Reasoning Mock Test (RRB Junior Engineer Bank) 1: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "RRB ALP CBT 2 General Intelligence and Reasoning Mock Test (RRB Junior Engineer Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "f7d1cdd58c18",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "34fff5590f49",
+   "ogHash": "48bd756e6eb4",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-alp/test/cbt-2-rrbjealp-reasoning-shared-rrb-je-2/attempt": {
+   "title": "RRB ALP General Intelligence and Reasoning Practice (RRB Junior Engineer Bank) 2",
+   "description": "Attempt the RRB ALP General Intelligence and Reasoning Practice (RRB Junior Engineer Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "32a566b046c9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-alp/test/cbt-2-rrbjealp-reasoning-shared-rrb-je-2": {
+   "title": "RRB ALP CBT 2 General Intelligence and Reasoning Mock Test (RRB Junior Engineer Bank) 2",
+   "description": "Free RRB ALP CBT 2 General Intelligence and Reasoning Mock Test (RRB Junior Engineer Bank) 2: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "RRB ALP CBT 2 General Intelligence and Reasoning Mock Test (RRB Junior Engineer Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "f7d1cdd58c18",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "b96810739009",
+   "ogHash": "367845268409",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/rrb-alp": {
    "title": "RRB ALP: Free Mock Tests &amp; Exam Pattern | TakeMockTest",
@@ -65375,8 +65615,8 @@
    "h1": [
     "RRB JE (Junior Engineer) Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "3cf502fbb1dd",
+   "h2Count": 10,
+   "h2Hash": "39525b3ac037",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -65457,6 +65697,24 @@
    "ogHash": "542c22239908",
    "sitemap": false,
    "robots": "noindex, follow"
+  },
+  "/in/rrb-je/similar-tests": {
+   "title": "Similar Tests to RRB Junior Engineer, Extra Reasoning Practice",
+   "description": "Additional Reasoning Ability practice tests for RRB Junior Engineer, drawn from exams that share its scoring pattern and marking scheme.",
+   "h1": [
+    "Similar Tests to RRB Junior Engineer"
+   ],
+   "h2Count": 5,
+   "h2Hash": "41faa4add19a",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization"
+   ],
+   "schemaHash": "039a86be04d1",
+   "ogHash": "486a696efc1d",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/rrb-je/syllabus": {
    "title": "RRB Junior Engineer Syllabus 2026: Section-wise Topics",
@@ -65820,6 +66078,74 @@
    "ogHash": "a899b33c1020",
    "sitemap": true,
    "robots": "index, follow"
+  },
+  "/in/rrb-je/test/cbt1-rrbjealp-reasoning-shared-rrb-alp-1/attempt": {
+   "title": "RRB Junior Engineer General Intelligence and Reasoning Practice (RRB ALP Bank) 1",
+   "description": "Attempt the RRB Junior Engineer General Intelligence and Reasoning Practice (RRB ALP Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "2a20d9ffa219",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-je/test/cbt1-rrbjealp-reasoning-shared-rrb-alp-1": {
+   "title": "RRB Junior Engineer CBT 1 General Intelligence and Reasoning Mock Test (RRB ALP Bank) 1",
+   "description": "Free RRB Junior Engineer CBT 1 General Intelligence and Reasoning Mock Test (RRB ALP Bank) 1: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "RRB Junior Engineer CBT 1 General Intelligence and Reasoning Mock Test (RRB ALP Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "90e13e465e60",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "e6b8d4d298e1",
+   "ogHash": "5e500da9aaeb",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-je/test/cbt1-rrbjealp-reasoning-shared-rrb-alp-2/attempt": {
+   "title": "RRB Junior Engineer General Intelligence and Reasoning Practice (RRB ALP Bank) 2",
+   "description": "Attempt the RRB Junior Engineer General Intelligence and Reasoning Practice (RRB ALP Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "6b8cf2921302",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/rrb-je/test/cbt1-rrbjealp-reasoning-shared-rrb-alp-2": {
+   "title": "RRB Junior Engineer CBT 1 General Intelligence and Reasoning Mock Test (RRB ALP Bank) 2",
+   "description": "Free RRB Junior Engineer CBT 1 General Intelligence and Reasoning Mock Test (RRB ALP Bank) 2: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "RRB Junior Engineer CBT 1 General Intelligence and Reasoning Mock Test (RRB ALP Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "90e13e465e60",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "94e7fd685951",
+   "ogHash": "45ee6f55763e",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/rrb-je/test/cbt2-computers-sectional-1/attempt": {
    "title": "RRB Junior Engineer Basics of Computers and Applications Sectional Test 1",
@@ -78804,8 +79130,8 @@
    "h1": [
     "Similar Tests to SSC CHSL"
    ],
-   "h2Count": 5,
-   "h2Hash": "f3e1614762e3",
+   "h2Count": 6,
+   "h2Hash": "993bdaf3b082",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -79215,6 +79541,210 @@
    "ogHash": "4f3548179bcc",
    "sitemap": true,
    "robots": "index, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-1/attempt": {
+   "title": "SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 1",
+   "description": "Attempt the SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "0aaab26ee04c",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-1": {
+   "title": "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 1",
+   "description": "Free SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 1: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "47a5020d75d8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "6c32ffd71b3e",
+   "ogHash": "7dd1bd295f97",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-2/attempt": {
+   "title": "SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 2",
+   "description": "Attempt the SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "606be6bfef63",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-2": {
+   "title": "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 2",
+   "description": "Free SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 2: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "47a5020d75d8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "30a55149f4d3",
+   "ogHash": "8d7767f8da57",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-3/attempt": {
+   "title": "SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 3",
+   "description": "Attempt the SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "877d675edffd",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-3": {
+   "title": "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 3",
+   "description": "Free SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 3: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 3"
+   ],
+   "h2Count": 12,
+   "h2Hash": "47a5020d75d8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "6d141772e21d",
+   "ogHash": "1b354126d200",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-4/attempt": {
+   "title": "SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 4",
+   "description": "Attempt the SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 4 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "49dfe90b2c40",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-4": {
+   "title": "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 4",
+   "description": "Free SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 4: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 4"
+   ],
+   "h2Count": 12,
+   "h2Hash": "47a5020d75d8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "f537a4b7c7d0",
+   "ogHash": "6984fbc528d1",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-5/attempt": {
+   "title": "SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 5",
+   "description": "Attempt the SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 5 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "71e5dc0032a2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-5": {
+   "title": "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 5",
+   "description": "Free SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 5: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 5"
+   ],
+   "h2Count": 12,
+   "h2Hash": "47a5020d75d8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "c11b43167914",
+   "ogHash": "fefeef451155",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-6/attempt": {
+   "title": "SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 6",
+   "description": "Attempt the SSC CHSL General Intelligence Practice (SSC Selection Post Bank) 6 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "9642d8760d32",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-chsl/test/tier-1-sscgi-reasoning-shared-ssc-selection-post-6": {
+   "title": "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 6",
+   "description": "Free SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 6: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CHSL Tier 1 General Intelligence Mock Test (SSC Selection Post Bank) 6"
+   ],
+   "h2Count": 12,
+   "h2Hash": "47a5020d75d8",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "a5903879054b",
+   "ogHash": "80313f22f6a4",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ssc-chsl/test/tier-2-computer-knowledge-sectional-1/attempt": {
    "title": "SSC CHSL Computer Knowledge Sectional Test 1 | TakeMockTest",
@@ -80131,8 +80661,8 @@
    "h1": [
     "SSC CPO Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "465bc1c3ad35",
+   "h2Count": 10,
+   "h2Hash": "be371a081a51",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -80214,6 +80744,24 @@
    ],
    "schemaHash": "df87f203ea6e",
    "ogHash": "3eeba39b6f79",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ssc-cpo/similar-tests": {
+   "title": "Similar Tests to SSC CPO, Extra Reasoning Practice",
+   "description": "Additional Reasoning Ability practice tests for SSC CPO, drawn from exams that share its scoring pattern and marking scheme.",
+   "h1": [
+    "Similar Tests to SSC CPO"
+   ],
+   "h2Count": 5,
+   "h2Hash": "c94d73f26360",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization"
+   ],
+   "schemaHash": "04aa084309db",
+   "ogHash": "39cedd693e2b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -80582,6 +81130,74 @@
    "ogHash": "623f5e4db1c4",
    "sitemap": true,
    "robots": "index, follow"
+  },
+  "/in/ssc-cpo/test/paper-1-ssccposteno-reasoning-shared-ssc-steno-1/attempt": {
+   "title": "SSC CPO General Intelligence and Reasoning Practice (SSC Stenographer Bank) 1",
+   "description": "Attempt the SSC CPO General Intelligence and Reasoning Practice (SSC Stenographer Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e992562c69b6",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-cpo/test/paper-1-ssccposteno-reasoning-shared-ssc-steno-1": {
+   "title": "SSC CPO Paper 1 General Intelligence and Reasoning Mock Test (SSC Stenographer Bank) 1",
+   "description": "Free SSC CPO Paper 1 General Intelligence and Reasoning Mock Test (SSC Stenographer Bank) 1: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CPO Paper 1 General Intelligence and Reasoning Mock Test (SSC Stenographer Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "ec6dabb75cbf",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1365a74c4a97",
+   "ogHash": "95233c7ef490",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-cpo/test/paper-1-ssccposteno-reasoning-shared-ssc-steno-2/attempt": {
+   "title": "SSC CPO General Intelligence and Reasoning Practice (SSC Stenographer Bank) 2",
+   "description": "Attempt the SSC CPO General Intelligence and Reasoning Practice (SSC Stenographer Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "3c0b17dd3f95",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-cpo/test/paper-1-ssccposteno-reasoning-shared-ssc-steno-2": {
+   "title": "SSC CPO Paper 1 General Intelligence and Reasoning Mock Test (SSC Stenographer Bank) 2",
+   "description": "Free SSC CPO Paper 1 General Intelligence and Reasoning Mock Test (SSC Stenographer Bank) 2: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC CPO Paper 1 General Intelligence and Reasoning Mock Test (SSC Stenographer Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "ec6dabb75cbf",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1450d8956816",
+   "ogHash": "ca8ebd256277",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ssc-cpo/test/paper-2-english-language-comprehension-sectional-1/attempt": {
    "title": "SSC CPO English Language and Comprehension Sectional Test 1",
@@ -82463,8 +83079,8 @@
    "h1": [
     "SSC Selection Post Phase 14 Mock Test 2026"
    ],
-   "h2Count": 9,
-   "h2Hash": "e0cf98127425",
+   "h2Count": 10,
+   "h2Hash": "22cedeaf1e71",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -82546,6 +83162,24 @@
    "sitemap": false,
    "robots": "noindex, follow"
   },
+  "/in/ssc-selection-post/similar-tests": {
+   "title": "Similar Tests to SSC Selection Post, Extra Reasoning Practice",
+   "description": "Additional Reasoning Ability practice tests for SSC Selection Post, drawn from exams that share its scoring pattern and marking scheme.",
+   "h1": [
+    "Similar Tests to SSC Selection Post"
+   ],
+   "h2Count": 5,
+   "h2Hash": "2ecebe8a700f",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization"
+   ],
+   "schemaHash": "6c34a389018f",
+   "ogHash": "81e3a3c3bc0d",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/ssc-selection-post/syllabus": {
    "title": "SSC Selection Post Syllabus 2026: Sections and Topics",
    "description": "SSC Selection Post official section pattern across 12 sections, with the topics covered by the free mock tests on this site listed under each.",
@@ -82561,7 +83195,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "e9064398d730",
+   "schemaHash": "c1bd688be2ca",
    "ogHash": "ce8075b04af9",
    "sitemap": true,
    "robots": "index, follow"
@@ -82977,6 +83611,108 @@
    ],
    "schemaHash": "d6996c6ade39",
    "ogHash": "871cebe816ee",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-selection-post/test/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-1/attempt": {
+   "title": "SSC Selection Post General Intelligence Practice (SSC CHSL Bank) 1",
+   "description": "Attempt the SSC Selection Post General Intelligence Practice (SSC CHSL Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "58a615ebf0e3",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-selection-post/test/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-1": {
+   "title": "SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 1",
+   "description": "Free SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 1: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "b35fdafdb85c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "116b79cfa0a8",
+   "ogHash": "080e6cdd8587",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-selection-post/test/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-2/attempt": {
+   "title": "SSC Selection Post General Intelligence Practice (SSC CHSL Bank) 2",
+   "description": "Attempt the SSC Selection Post General Intelligence Practice (SSC CHSL Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "8e647bc753c8",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-selection-post/test/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-2": {
+   "title": "SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 2",
+   "description": "Free SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 2: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "b35fdafdb85c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "25ae4518e276",
+   "ogHash": "260dc09f01cc",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-selection-post/test/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-3/attempt": {
+   "title": "SSC Selection Post General Intelligence Practice (SSC CHSL Bank) 3",
+   "description": "Attempt the SSC Selection Post General Intelligence Practice (SSC CHSL Bank) 3 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "909617b71d4a",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-selection-post/test/graduation-cbe-sscgi-reasoning-shared-ssc-chsl-3": {
+   "title": "SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 3",
+   "description": "Free SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 3: 25 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC Selection Post Graduation and Above Level General Intelligence Mock Test (SSC CHSL Bank) 3"
+   ],
+   "h2Count": 12,
+   "h2Hash": "b35fdafdb85c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "a642a43ae154",
+   "ogHash": "524b20992fe8",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -83922,8 +84658,8 @@
    "h1": [
     "SSC Stenographer Grade C & D Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "e9a847344e2a",
+   "h2Count": 9,
+   "h2Hash": "44d0fcbfbe02",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -84004,6 +84740,24 @@
    "ogHash": "f80309150e31",
    "sitemap": false,
    "robots": "noindex, follow"
+  },
+  "/in/ssc-steno/similar-tests": {
+   "title": "Similar Tests to SSC Stenographer, Extra Reasoning Practice",
+   "description": "Additional Reasoning Ability practice tests for SSC Stenographer Grade C &amp; D, drawn from exams that share its scoring pattern and marking scheme.",
+   "h1": [
+    "Similar Tests to SSC Stenographer Grade C & D"
+   ],
+   "h2Count": 5,
+   "h2Hash": "f3553b3ba4b5",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization"
+   ],
+   "schemaHash": "2ae127c13acd",
+   "ogHash": "a362a2c16dc9",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/ssc-steno/syllabus": {
    "title": "SSC Stenographer Grade C &amp; D Syllabus 2026: Section-wise Topics",
@@ -84299,6 +85053,74 @@
    "ogHash": "0c63e4b4c59d",
    "sitemap": true,
    "robots": "index, follow"
+  },
+  "/in/ssc-steno/test/cbt-ssccposteno-reasoning-shared-ssc-cpo-1/attempt": {
+   "title": "SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Practice (SSC CPO Bank) 1",
+   "description": "Attempt the SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Practice (SSC CPO Bank) 1 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d5a6bed49cc2",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-steno/test/cbt-ssccposteno-reasoning-shared-ssc-cpo-1": {
+   "title": "SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Mock Test (SSC CPO Bank) 1",
+   "description": "Free SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Mock Test (SSC CPO Bank) 1: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC Stenographer Grade C & D General Intelligence and Reasoning Mock Test (SSC CPO Bank) 1"
+   ],
+   "h2Count": 12,
+   "h2Hash": "97897127f0d6",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "73892ddafe6d",
+   "ogHash": "98a47f742cab",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-steno/test/cbt-ssccposteno-reasoning-shared-ssc-cpo-2/attempt": {
+   "title": "SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Practice (SSC CPO Bank) 2",
+   "description": "Attempt the SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Practice (SSC CPO Bank) 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "db8f32d6d019",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ssc-steno/test/cbt-ssccposteno-reasoning-shared-ssc-cpo-2": {
+   "title": "SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Mock Test (SSC CPO Bank) 2",
+   "description": "Free SSC Stenographer Grade C &amp; D General Intelligence and Reasoning Mock Test (SSC CPO Bank) 2: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "SSC Stenographer Grade C & D General Intelligence and Reasoning Mock Test (SSC CPO Bank) 2"
+   ],
+   "h2Count": 12,
+   "h2Hash": "97897127f0d6",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "8390f624ebaa",
+   "ogHash": "2e8912d3e6f1",
+   "sitemap": false,
+   "robots": "noindex, follow"
   },
   "/in/ssc-steno": {
    "title": "SSC Stenographer Grade C &amp; D: Free Mock Tests &amp; Exam Pattern",
@@ -96108,7 +96930,7 @@
   },
   "/ng/practice/alphanumeric-series": {
    "title": "Alphanumeric Series Questions with Answers 2026",
-   "description": "185 free alphanumeric series questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "185 free alphanumeric series questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Alphanumeric Series Questions with Answers"
    ],
@@ -96124,8 +96946,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "660dca92f460",
-   "ogHash": "6e86647646e7",
+   "schemaHash": "bb46da390adc",
+   "ogHash": "84872b5cd7cf",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96145,7 +96967,7 @@
   },
   "/ng/practice/analogy": {
    "title": "Analogy Questions with Answers 2026 | TakeMockTest",
-   "description": "198 free analogy questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "198 free analogy questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Analogy Questions with Answers"
    ],
@@ -96161,8 +96983,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "eec1fc54edfa",
-   "ogHash": "a1210e92950f",
+   "schemaHash": "bc9e98746b84",
+   "ogHash": "6c0afc75a832",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96256,7 +97078,7 @@
   },
   "/ng/practice/blood-relations": {
    "title": "Blood Relations Questions with Answers 2026 | TakeMockTest",
-   "description": "280 free blood relations questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "280 free blood relations questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Blood Relations Questions with Answers"
    ],
@@ -96272,8 +97094,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b993381c33bb",
-   "ogHash": "93b9475a0f13",
+   "schemaHash": "8a3b37f48f24",
+   "ogHash": "ac86e4bf7cd3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96293,7 +97115,7 @@
   },
   "/ng/practice/classification": {
    "title": "Classification Questions with Answers 2026 | TakeMockTest",
-   "description": "222 free classification questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "222 free classification questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Classification Questions with Answers"
    ],
@@ -96309,8 +97131,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6f5f9d8da6e6",
-   "ogHash": "654ad60a03a8",
+   "schemaHash": "2189db93dfc3",
+   "ogHash": "b87adb503ce8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96404,7 +97226,7 @@
   },
   "/ng/practice/coding-and-decoding": {
    "title": "Coding and Decoding Questions with Answers 2026",
-   "description": "320 free coding and decoding questions with answers and explanations, pooled from 49 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "320 free coding and decoding questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Coding and Decoding Questions with Answers"
    ],
@@ -96420,8 +97242,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8914b6b0d6d0",
-   "ogHash": "81bd3868bbd4",
+   "schemaHash": "4010362d0e6e",
+   "ogHash": "8bede593a0c6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96589,7 +97411,7 @@
   },
   "/ng/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "276 free direction sense questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "276 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -96605,8 +97427,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "665ef858b4c2",
-   "ogHash": "a5df5eb1b7fd",
+   "schemaHash": "4188e6cbdbc8",
+   "ogHash": "2dcdab37a32b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96774,7 +97596,7 @@
   },
   "/ng/practice/number-series": {
    "title": "Number Series Questions with Answers 2026 | TakeMockTest",
-   "description": "395 free number series questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "395 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number Series Questions with Answers"
    ],
@@ -96790,8 +97612,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d1e8210ef357",
-   "ogHash": "ff3f24c2f0e5",
+   "schemaHash": "8f39774beb8a",
+   "ogHash": "27ec66ed2e65",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -97107,7 +97929,7 @@
   },
   "/ng/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "225 free ranking and order questions with answers and explanations, pooled from 43 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -97123,8 +97945,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d8afdcb76bc7",
-   "ogHash": "9d735f152bf2",
+   "schemaHash": "19b79e75fe40",
+   "ogHash": "f616cee5299b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -97218,7 +98040,7 @@
   },
   "/ng/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "84 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "84 free seating arrangement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -97234,8 +98056,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2c9abdc1e574",
-   "ogHash": "782b07e2d21f",
+   "schemaHash": "cecbb7b35678",
+   "ogHash": "abca456320cc",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -97403,7 +98225,7 @@
   },
   "/ng/practice/syllogism": {
    "title": "Syllogism Questions with Answers 2026 | TakeMockTest",
-   "description": "303 free syllogism questions with answers and explanations, pooled from 59 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "303 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Syllogism Questions with Answers"
    ],
@@ -97419,8 +98241,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6c66149dc35f",
-   "ogHash": "a389c261a548",
+   "schemaHash": "6531f11333dc",
+   "ogHash": "090c5f24ce29",
    "sitemap": true,
    "robots": "index, follow"
   },
