@@ -52,10 +52,21 @@ for (const block of source.split(/\r?\n  \{\r?\n/).slice(1)) {
   const page = str('page');
   const urlPath = str('path');
   if (!page || !urlPath) continue;
-  targets.push({ page, path: urlPath, titleMustContain: list('titleMustContain'), h1MustContain: list('h1MustContain') });
+  targets.push({
+    page,
+    path: urlPath,
+    titleMustContain: list('titleMustContain'),
+    h1MustContain: list('h1MustContain'),
+    // The phrase this class hands to a more specific one. defersTo is prose and
+    // quotes several things, so only a phrase introduced by `owns` counts: the
+    // Full-mock entry quotes "full" as a qualifier it must HAVE, and reading
+    // every quoted string as deferred flagged all 333 test pages. A new entry
+    // that wants this rule must say `<other page> owns "<phrase>"`.
+    defers: [...(str('defersTo') ?? '').matchAll(/owns "([^"]+)"/g)].map((m) => m[1]),
+  });
 }
 
-const gated = targets.filter((target) => target.titleMustContain.length > 0);
+const gated = targets.filter((target) => target.titleMustContain.length > 0 || target.defers.length > 0);
 if (gated.length === 0) {
   console.error('audit-keyword-map: parsed no gated classes out of seo-keywords.ts — the parser and the file have drifted.');
   process.exit(1);
@@ -151,6 +162,30 @@ for (const file of walkHtml(outDir)) {
     if (required.startsWith('{')) continue;
     if (!h1.includes(required.toLowerCase())) {
       errors.push(`${rel} (${page}): h1 is missing the required phrase "${required}" — "${h1}"`);
+    }
+  }
+
+  // Rule of one. The header has described this since the audit was written, but
+  // nothing implemented it, so every exam hub shipped "{exam}: Free Mock Tests
+  // & Exam Pattern" while the map said the hub defers "{exam} mock test" to the
+  // mock-test hub. A contiguous-substring test would not have caught it either:
+  // the title interposes ": Free " and pluralises "Tests". What makes two pages
+  // compete is the deferred phrase's words appearing in order, gaps allowed, so
+  // that is what this checks. {exam} resolves to the page's own H1, which for
+  // these classes is exactly the exam name.
+  for (const deferred of target.defers) {
+    const words = deferred.replace(/\{exam\}/g, h1).toLowerCase().match(/[a-z0-9]+/g) ?? [];
+    if (words.length === 0) continue;
+    let from = 0;
+    const leaks = words.every((word) => {
+      // Match the word as a stem so "tests" counts as "test".
+      const at = title.slice(from).search(new RegExp(`\\b${word}`));
+      if (at < 0) return false;
+      from += at + word.length;
+      return true;
+    });
+    if (leaks) {
+      errors.push(`${rel} (${page}): title claims "${deferred}", which the map defers to a more specific page — "${title}"`);
     }
   }
 }
