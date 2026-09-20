@@ -73,15 +73,20 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const hasCheckedTests = getCheckedTestCount(exam) > 0;
   const hasOfficialPattern = examHasOfficialPattern(exam);
   return pageMetadata({
-    title: hasCheckedTests
-      ? `${exam.name}: Free Mock Tests & Exam Pattern`
-      : hasOfficialPattern
-        ? `${exam.name}: Exam Pattern, Syllabus & Eligibility`
+    // The hub does not claim "{exam} mock test" in its title. src/lib/seo-keywords.ts
+    // gives that phrase to /{country}/{exam}/mock-test and gives this page the bare
+    // "{exam}", informational: it answers "what is this exam". Until September 2026
+    // every hub titled itself "{exam}: Free Mock Tests & Exam Pattern", competing
+    // with its own money page for the one query that page exists to win.
+    title: hasOfficialPattern
+      ? `${exam.name}: Exam Pattern, Syllabus & Eligibility`
+      : hasCheckedTests
+        ? `${exam.name}: Syllabus, Eligibility & Practice`
         : `${exam.name}: Practice Demo & Upcoming Resources`,
-    description: hasCheckedTests
-      ? `Practice checked ${exam.name} mock tests and review the verified exam pattern, timing, marks, and negative marking.`
-      : hasOfficialPattern
-        ? `Review the verified ${exam.name} exam pattern, syllabus, eligibility criteria, and selection process.`
+    description: hasOfficialPattern
+      ? `Verified ${exam.name} exam pattern, timing, marks and negative marking, plus syllabus and eligibility.`
+      : hasCheckedTests
+        ? `${exam.name} syllabus, eligibility and selection process, with free practice for every section.`
         : `Try the ${exam.name} test interface demo. Verified exam resources will be published after official source checks are complete.`,
     path: `/${country}/${exam.slug}`,
     noIndex: !hasCheckedTests && !hasOfficialPattern,
