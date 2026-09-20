@@ -604,6 +604,7 @@ import { CMAT_2026_INNOVATION_ENTREPRENEURSHIP_1 } from './question-banks/cmat-2
 import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_1 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-1';
 import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_2 } from './question-banks/nmat-language-logical-reasoning-quantitative-combined-2';
 import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
+import { SNAP_ENGLISH_REASONING_QUANT_2 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-2';
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
 import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
@@ -2399,6 +2400,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'snap/general-english-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'General English'),
   'snap/analytical-and-logical-reasoning-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'Analytical and Logical Reasoning'),
   'snap/quantitative-di-ds-sectional-1': SNAP_ENGLISH_REASONING_QUANT_1.filter((question) => question.section === 'Quantitative, Data Interpretation and Data Sufficiency'),
+  'snap/general-english-analytical-logical-reasoning-quantitative-di-ds-full-mock-2': SNAP_ENGLISH_REASONING_QUANT_2,
+  'snap/general-english-sectional-2': SNAP_ENGLISH_REASONING_QUANT_2.filter((question) => question.section === 'General English'),
+  'snap/analytical-and-logical-reasoning-sectional-2': SNAP_ENGLISH_REASONING_QUANT_2.filter((question) => question.section === 'Analytical and Logical Reasoning'),
+  'snap/quantitative-di-ds-sectional-2': SNAP_ENGLISH_REASONING_QUANT_2.filter((question) => question.section === 'Quantitative, Data Interpretation and Data Sufficiency'),
   'atma/analytical-reasoning-verbal-quantitative-skills-full-mock-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1,
   'atma/analytical-reasoning-skills-1-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Analytical Reasoning Skills I'),
   'atma/analytical-reasoning-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Analytical Reasoning Skills II'),
