@@ -100,7 +100,7 @@ export default async function UpcomingGovernmentExamsPage({ params }: { params: 
           </div>
         </section>
 
-        <ExamCalendar events={GOVERNMENT_EXAM_EVENTS} country={country} knownExamSlugs={knownExamSlugs} practiceExamSlugs={practiceExamSlugs} asOf={Date.now()} />
+        <ExamCalendar events={GOVERNMENT_EXAM_EVENTS} country={country} knownExamSlugs={knownExamSlugs} practiceExamSlugs={practiceExamSlugs} asOf={Date.now()} calendarName="TakeMockTest upcoming government exams" downloadFileName="takemocktest-upcoming-government-exams.ics" />
 
         <section aria-labelledby="government-exam-faq" className="mt-10">
           <h2 id="government-exam-faq" className="mb-4 text-xl font-bold text-ink-900 md:text-2xl">Government exam calendar questions</h2>

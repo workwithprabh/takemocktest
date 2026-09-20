@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import {
   calendarEventTimestamp,
+  buildIcsCalendar,
   formatCalendarEventDate,
+  googleCalendarUrl,
   type CalendarEventType,
   type ExamCalendarEvent,
 } from '@/lib/exam-calendar';
@@ -19,12 +21,14 @@ const TYPE_STYLES: Record<CalendarEventType, string> = {
   Result: 'bg-live-50 text-live-700',
 };
 
-export default function ExamCalendar({ events, country, knownExamSlugs, practiceExamSlugs, asOf }: {
+export default function ExamCalendar({ events, country, knownExamSlugs, practiceExamSlugs, asOf, calendarName = 'TakeMockTest India exam calendar', downloadFileName = 'takemocktest-india-exam-calendar.ics' }: {
   events: ExamCalendarEvent[];
   country: string;
   knownExamSlugs: string[];
   practiceExamSlugs: string[];
   asOf: number;
+  calendarName?: string;
+  downloadFileName?: string;
 }) {
   const [query, setQuery] = useState('');
   const [goal, setGoal] = useState('all');
@@ -53,10 +57,47 @@ export default function ExamCalendar({ events, country, knownExamSlugs, practice
     return months;
   }, new Map<string, ExamCalendarEvent[]>())];
   const hasFilters = Boolean(query.trim() || goal !== 'all' || type !== 'all');
+  const recentlyChecked = [...events]
+    .sort((a, b) => b.sourceCheckedOn.localeCompare(a.sourceCheckedOn) || a.startsOn.localeCompare(b.startsOn))
+    .slice(0, 4);
   const clearFilters = () => { setQuery(''); setGoal('all'); setType('all'); };
+  const downloadCalendar = () => {
+    const url = URL.createObjectURL(new Blob([buildIcsCalendar(events, calendarName)], { type: 'text/calendar;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = downloadFileName;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 0);
+  };
 
   return (
     <div>
+      <section aria-labelledby="calendar-tools-heading" className="mb-6 border border-ink-200 bg-ink-50 p-4 md:flex md:items-center md:justify-between md:gap-6">
+        <div>
+          <h2 id="calendar-tools-heading" className="text-base font-bold text-ink-900">Keep these dates with you</h2>
+          <p className="mt-1 text-xs leading-5 text-ink-600">Download every listed event, or add one date at a time from its card. Recheck tentative dates before making plans.</p>
+        </div>
+        <button type="button" onClick={downloadCalendar} className="mt-3 inline-flex min-h-11 shrink-0 items-center bg-ink-900 px-4 text-sm font-semibold text-white md:mt-0">Download all dates (.ics)</button>
+      </section>
+
+      <section aria-labelledby="recent-calendar-checks" className="mb-6">
+        <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
+          <h2 id="recent-calendar-checks" className="text-lg font-bold text-ink-900">Recently verified dates</h2>
+          <p className="text-xs text-ink-500">Source checks, not necessarily date changes</p>
+        </div>
+        <div className="grid border border-ink-200 bg-white sm:grid-cols-2 lg:grid-cols-4">
+          {recentlyChecked.map((event) => (
+            <a key={event.id} href={`#${event.id}`} className="border-b border-ink-200 p-3 transition hover:bg-action-50 sm:border-r lg:border-b-0 last:border-b-0 last:border-r-0">
+              <span className="block text-[11px] font-semibold uppercase tracking-wide text-ink-500">Checked {event.sourceCheckedOn.split('-').reverse().join('/')}</span>
+              <span className="mt-1 block text-sm font-bold text-ink-900">{event.examName}</span>
+              <span className="mt-1 block text-xs leading-5 text-ink-600">{event.label}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
       <section aria-labelledby="calendar-filters-heading" className="border border-ink-200 bg-white p-4 shadow-sm md:p-5">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <h2 id="calendar-filters-heading" className="text-lg font-bold text-ink-900">Find an exam date</h2>
@@ -118,6 +159,7 @@ export default function ExamCalendar({ events, country, knownExamSlugs, practice
                     <p className="mt-1 text-sm leading-6 text-ink-700">{event.label}</p>
                     <div className="calendar-meta">
                       <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-xs font-semibold text-action-700 underline underline-offset-4">Official source ↗<span className="sr-only"> for {event.examName}, opens in a new tab</span></a>
+                      <a href={googleCalendarUrl(event)} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-xs font-semibold text-action-700 underline underline-offset-4">Add to Google Calendar ↗<span className="sr-only"> for {event.examName}, opens in a new tab</span></a>
                       {event.updateSlug && <Link href={`/${country}/exam-updates/${event.updateSlug}`} className="inline-flex min-h-11 items-center text-xs font-semibold text-ink-700 underline underline-offset-4">Read update</Link>}
                       <Link href={internalHref} className="ml-auto inline-flex min-h-11 items-center text-xs font-semibold text-ink-900 underline underline-offset-4">{hasPractice ? 'Practice now' : knownExam ? 'Exam overview' : 'Browse exams'} →</Link>
                     </div>

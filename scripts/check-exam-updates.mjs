@@ -52,7 +52,7 @@ const calendarSource = fs.readFileSync('src/lib/exam-calendar.ts', 'utf8');
 const calendarCompiled = ts.transpileModule(calendarSource, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } });
 const calendarApi = {};
 vm.runInNewContext(calendarCompiled.outputText, { exports: calendarApi, Intl, Date });
-const { EXAM_CALENDAR_EVENTS, GOVERNMENT_EXAM_EVENTS, calendarEventTimestamp, formatCalendarEventDate } = calendarApi;
+const { EXAM_CALENDAR_EVENTS, GOVERNMENT_EXAM_EVENTS, buildIcsCalendar, calendarEventTimestamp, formatCalendarEventDate, googleCalendarUrl } = calendarApi;
 const calendarHosts = new Set(['www.ibps.in', 'ibpsreg.ibps.in', 'www.upsc.gov.in', 'ssc.gov.in', 'www.aima.in', 'gate2027.iitm.ac.in', 'clat2027.consortiumofnlus.ac.in', 'xatonline.in']);
 const eventIds = new Set();
 for (const event of EXAM_CALENDAR_EVENTS) {
@@ -71,4 +71,11 @@ assert(GOVERNMENT_EXAM_EVENTS.length > 0 && GOVERNMENT_EXAM_EVENTS.every((event)
 assert(GOVERNMENT_EXAM_EVENTS.some((event) => event.examSlug === 'upsc-engineering-services'));
 assert(!GOVERNMENT_EXAM_EVENTS.some((event) => ['mat', 'gate', 'clat', 'xat'].includes(event.examSlug)));
 assert(calendarEventTimestamp('2026-09-16', true) > calendarEventTimestamp('2026-09-16'));
+const calendarFile = buildIcsCalendar(EXAM_CALENDAR_EVENTS, 'TakeMockTest exam calendar');
+assert(calendarFile.startsWith('BEGIN:VCALENDAR\r\nVERSION:2.0'));
+assert.equal((calendarFile.match(/BEGIN:VEVENT/g) ?? []).length, EXAM_CALENDAR_EVENTS.length);
+assert(calendarFile.includes('DTSTART;VALUE=DATE:20260916\r\nDTEND;VALUE=DATE:20260927'));
+assert(calendarFile.endsWith('END:VCALENDAR\r\n'));
+assert.match(googleCalendarUrl(EXAM_CALENDAR_EVENTS[0]), /^https:\/\/calendar\.google\.com\/calendar\/render\?/);
+assert(googleCalendarUrl(EXAM_CALENDAR_EVENTS[0]).includes('dates=20260916%2F20260927') || googleCalendarUrl(EXAM_CALENDAR_EVENTS[0]).includes('dates=20260916/20260927'));
 console.log(`Exam updates checks passed: ${UPDATES.length} sourced updates, ${EXAM_CALENDAR_EVENTS.length} calendar events and ${GOVERNMENT_EXAM_EVENTS.length} government-exam events verified.`);

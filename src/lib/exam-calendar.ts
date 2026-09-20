@@ -262,3 +262,59 @@ export function formatCalendarEventDate(event: ExamCalendarEvent): string {
   if (event.startsOn.slice(0, 10) === event.endsOn.slice(0, 10)) return `${formatCalendarDate(event.startsOn)} to ${new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kolkata' }).format(new Date(event.endsOn))}`;
   return `${formatCalendarDate(event.startsOn)} to ${formatCalendarDate(event.endsOn)}`;
 }
+
+function compactDate(date: string): string {
+  return date.slice(0, 10).replaceAll('-', '');
+}
+
+function nextDate(date: string): string {
+  const value = new Date(`${date.slice(0, 10)}T00:00:00Z`);
+  value.setUTCDate(value.getUTCDate() + 1);
+  return compactDate(value.toISOString());
+}
+
+function utcCalendarDate(date: string): string {
+  return new Date(date).toISOString().replaceAll('-', '').replaceAll(':', '').replace(/\.\d{3}Z$/, 'Z');
+}
+
+function calendarRange(event: ExamCalendarEvent): string {
+  if (!event.startsOn.includes('T')) {
+    return `${compactDate(event.startsOn)}/${nextDate(event.endsOn ?? event.startsOn)}`;
+  }
+  const start = utcCalendarDate(event.startsOn);
+  const end = event.endsOn?.includes('T')
+    ? utcCalendarDate(event.endsOn)
+    : utcCalendarDate(new Date(new Date(event.startsOn).getTime() + 60 * 60 * 1000).toISOString());
+  return `${start}/${end}`;
+}
+
+function escapeIcs(value: string): string {
+  return value.replaceAll('\\', '\\\\').replaceAll('\n', '\\n').replaceAll(',', '\\,').replaceAll(';', '\\;');
+}
+
+export function googleCalendarUrl(event: ExamCalendarEvent): string {
+  const details = `${event.status} date. Source: ${event.sourceName}. ${event.sourceUrl}`;
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(`${event.examName}: ${event.label}`)}&dates=${calendarRange(event)}&details=${encodeURIComponent(details)}&ctz=Asia%2FKolkata`;
+}
+
+export function buildIcsCalendar(events: ExamCalendarEvent[], name: string): string {
+  const eventLines = events.flatMap((event) => {
+    const timed = event.startsOn.includes('T');
+    const start = timed ? `DTSTART:${utcCalendarDate(event.startsOn)}` : `DTSTART;VALUE=DATE:${compactDate(event.startsOn)}`;
+    const end = timed
+      ? `DTEND:${event.endsOn?.includes('T') ? utcCalendarDate(event.endsOn) : utcCalendarDate(new Date(new Date(event.startsOn).getTime() + 60 * 60 * 1000).toISOString())}`
+      : `DTEND;VALUE=DATE:${nextDate(event.endsOn ?? event.startsOn)}`;
+    return [
+      'BEGIN:VEVENT',
+      `UID:${event.id}@takemocktest.com`,
+      `DTSTAMP:${compactDate(event.sourceCheckedOn)}T000000Z`,
+      start,
+      end,
+      `SUMMARY:${escapeIcs(`${event.examName}: ${event.label}`)}`,
+      `DESCRIPTION:${escapeIcs(`${event.status} date. Source: ${event.sourceName}. ${event.sourceUrl}`)}`,
+      `URL:${event.sourceUrl}`,
+      'END:VEVENT',
+    ];
+  });
+  return ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//TakeMockTest//Exam Calendar//EN', 'CALSCALE:GREGORIAN', `X-WR-CALNAME:${escapeIcs(name)}`, ...eventLines, 'END:VCALENDAR', ''].join('\r\n');
+}
