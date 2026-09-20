@@ -606,6 +606,7 @@ import { NMAT_LANGUAGE_LOGICAL_REASONING_QUANTITATIVE_2 } from './question-banks
 import { SNAP_ENGLISH_REASONING_QUANT_1 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-1';
 import { SNAP_ENGLISH_REASONING_QUANT_2 } from './question-banks/snap-general-english-analytical-logical-reasoning-quantitative-di-ds-combined-2';
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
+import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-2';
 import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_2 } from './question-banks/mat-language-reasoning-quant-data-combined-2';
@@ -2411,6 +2412,13 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'atma/verbal-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Verbal Skills II'),
   'atma/quantitative-skills-1-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Quantitative Skills I'),
   'atma/quantitative-skills-2-sectional-1': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1.filter((question) => question.section === 'Quantitative Skills II'),
+  'atma/analytical-reasoning-verbal-quantitative-skills-full-mock-2': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2,
+  'atma/analytical-reasoning-skills-1-sectional-2': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2.filter((question) => question.section === 'Analytical Reasoning Skills I'),
+  'atma/analytical-reasoning-skills-2-sectional-2': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2.filter((question) => question.section === 'Analytical Reasoning Skills II'),
+  'atma/verbal-skills-1-sectional-2': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2.filter((question) => question.section === 'Verbal Skills I'),
+  'atma/verbal-skills-2-sectional-2': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2.filter((question) => question.section === 'Verbal Skills II'),
+  'atma/quantitative-skills-1-sectional-2': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2.filter((question) => question.section === 'Quantitative Skills I'),
+  'atma/quantitative-skills-2-sectional-2': ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2.filter((question) => question.section === 'Quantitative Skills II'),
   'ibsat/verbal-ability-reading-comprehension-quantitative-aptitude-data-adequacy-and-di-full-mock-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1,
   'ibsat/verbal-ability-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Verbal Ability'),
   'ibsat/reading-comprehension-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Reading Comprehension'),

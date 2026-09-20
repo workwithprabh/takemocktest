@@ -21,6 +21,13 @@ Each check exists because it caught something real:
                      used by frozen handoff banks, because reading only the first
                      reports zero overlap against a handoff bank rather than
                      failing.
+  check_corpus       A full duplicate of a question already in the corpus, which
+                     check_against cannot see because it reads one file. An ATMA
+                     letter series once matched an SSC Steno one exactly and
+                     failed at qa:questions instead of at generation. Uses the
+                     audit's own signature (stem + options + answer), so a
+                     generic stem reused with different options still passes,
+                     which the audit permits on purpose.
   check_numeric      Mirrors the site's own numerical-answer validation
                      (assertValidTest in src/lib/questions.ts) so a value that
                      disagrees with its declared precision fails here instead of
@@ -32,6 +39,7 @@ Typical use, from a generator under the scratchpad:
     from question_bank_helpers import ts, check, check_mcq, header, row_mcq, write
 """
 from collections import Counter
+import os
 import re
 
 # Curly quotes and dashes are banned in authored prose site-wide (qa:dashes).
@@ -120,6 +128,42 @@ def check_against(rows, existing_path):
         assert q.replace("\\'", "'") not in old_q, ('repeats the first test', r['id'])
     shared = sorted(set(old_topics) & set(r['topic'] for r in rows))
     return len(shared), shared
+
+
+def _signature(stem, options, answer):
+    """The duplicate key used by scripts/audit-question-banks.mjs."""
+    return '::'.join([stem.strip().lower(),
+                      '|'.join(o.strip().lower() for o in options),
+                      str(answer)])
+
+
+def check_corpus(rows, bank_dir, skip):
+    """No question may fully duplicate one already in the corpus.
+
+    A full duplicate is stem, options and answer together, matching the audit.
+    `skip` is the basename of the file this generator is about to overwrite.
+    """
+    seen = {}
+    row_re = re.compile(
+        r"question: (?:'((?:[^'\\]|\\.)*)'|\"((?:[^\"\\]|\\.)*)\").*?"
+        r"options: \[([^\]]*)\], correctIndex: (-?\d+)")
+    opt_re = re.compile(r"'((?:[^'\\]|\\.)*)'|\"((?:[^\"\\]|\\.)*)\"")
+    unq = lambda t: t.replace("\\'", "'").replace('\\"', '"')
+    for name in sorted(os.listdir(bank_dir)):
+        if name == skip or not name.endswith('.ts'):
+            continue
+        for m in row_re.finditer(open(os.path.join(bank_dir, name), encoding='utf-8').read()):
+            stem = unq(m.group(1) if m.group(1) is not None else m.group(2))
+            opts = [unq(a if a is not None else b) for a, b in opt_re.findall(m.group(3))]
+            seen.setdefault(_signature(stem, opts, m.group(4)), name)
+    assert len(seen) > 1000, ('corpus scan parsed too little to trust', len(seen))
+    for r in rows:
+        stem = r['question']
+        if stem.startswith("'") and stem.endswith("'"):
+            stem = stem[1:-1]
+        sig = _signature(unq(stem), r.get('options', ()), r['correctIndex'])
+        assert sig not in seen, ('duplicates a question already in the corpus', r['id'], seen[sig])
+    return len(seen)
 
 
 def header(ref, url, checked, extra=''):
