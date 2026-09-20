@@ -608,6 +608,7 @@ import { SNAP_ENGLISH_REASONING_QUANT_2 } from './question-banks/snap-general-en
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_1 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-1';
 import { ATMA_ANALYTICAL_REASONING_VERBAL_QUANTITATIVE_SKILLS_2 } from './question-banks/atma-analytical-reasoning-verbal-quantitative-skills-combined-2';
 import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-1';
+import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_2 } from './question-banks/ibsat-verbal-reading-quantitative-data-adequacy-combined-2';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_2 } from './question-banks/mat-language-reasoning-quant-data-combined-2';
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
@@ -2424,6 +2425,11 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'ibsat/reading-comprehension-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Reading Comprehension'),
   'ibsat/quantitative-aptitude-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Quantitative Aptitude'),
   'ibsat/data-adequacy-and-di-sectional-1': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_1.filter((question) => question.section === 'Data Adequacy and Data Interpretation'),
+  'ibsat/verbal-ability-reading-comprehension-quantitative-aptitude-data-adequacy-and-di-full-mock-2': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_2,
+  'ibsat/verbal-ability-sectional-2': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_2.filter((question) => question.section === 'Verbal Ability'),
+  'ibsat/reading-comprehension-sectional-2': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_2.filter((question) => question.section === 'Reading Comprehension'),
+  'ibsat/quantitative-aptitude-sectional-2': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_2.filter((question) => question.section === 'Quantitative Aptitude'),
+  'ibsat/data-adequacy-and-di-sectional-2': IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_2.filter((question) => question.section === 'Data Adequacy and Data Interpretation'),
   'mat/language-comprehension-intelligence-critical-reasoning-mathematical-skills-data-analysis-sufficiency-full-mock-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1,
   'mat/language-comprehension-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Language Comprehension'),
   'mat/intelligence-critical-reasoning-sectional-1': MAT_LANGUAGE_REASONING_QUANT_DATA_1.filter((question) => question.section === 'Intelligence and Critical Reasoning'),
