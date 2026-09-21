@@ -1,6 +1,6 @@
 {
- "capturedAt": "2026-09-20",
- "pageCount": 5651,
+ "capturedAt": "2026-09-21",
+ "pageCount": 5653,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10847,6 +10847,50 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/sbi-clerk-vs-ibps-clerk-the-shorter-paper-is-faster": {
+   "title": "SBI Clerk vs IBPS Clerk: The Shorter Paper Is Faster",
+   "description": "Identical prelims, then two mains papers worth the same 200 marks. The one with 30 fewer questions gives you less time for each of them.",
+   "h1": [
+    "SBI Clerk vs IBPS Clerk: The Shorter Paper Is Faster"
+   ],
+   "h2Count": 13,
+   "h2Hash": "786f2333c140",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "c705ab1029b0",
+   "ogHash": "0794bd28ff25",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/blog/sbi-po-vs-ibps-po-same-totals-different-maths": {
+   "title": "SBI PO vs IBPS PO: Same Totals, Different Maths",
+   "description": "Both prelims are 100 questions in 60 minutes. Both mains are 170 objective questions for 200 marks. Where those 200 marks sit is where the two exams stop agreeing.",
+   "h1": [
+    "SBI PO vs IBPS PO: Same Totals, Different Maths"
+   ],
+   "h2Count": 14,
+   "h2Hash": "dcb0b52003fa",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "7dad368eb479",
+   "ogHash": "d0c20c261df9",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/sectional-lock-vs-composite-timer": {
    "title": "Sectional Lock vs Composite Timer, Explained | TakeMockTest",
    "description": "Some exams lock you into each section with its own clock. Others give one combined timer for the whole paper, and that changes how you should practice.",
@@ -11206,7 +11250,7 @@
     "Study tips & exam strategy"
    ],
    "h2Count": 7,
-   "h2Hash": "6e44d029c6be",
+   "h2Hash": "10729e55425e",
    "schemaTypes": [
     "Blog",
     "BlogPosting",
@@ -11214,7 +11258,7 @@
     "ListItem",
     "Organization"
    ],
-   "schemaHash": "8cc8774fefeb",
+   "schemaHash": "8a9d0580a4d3",
    "ogHash": "42f7c4c2d3a5",
    "sitemap": true,
    "robots": "index, follow"
