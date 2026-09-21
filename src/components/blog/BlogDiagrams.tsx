@@ -25,7 +25,9 @@ export type BlogDiagramId =
   | 'banking-tier-ladder'
   | 'shared-sections-map'
   | 'corpus-two-cuts'
-  | 'one-skill-many-names';
+  | 'one-skill-many-names'
+  | 'po-mains-marks-per-question'
+  | 'clerk-mains-pace';
 
 function StudyTimetableGrid() {
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -373,6 +375,93 @@ function OneSkillManyNames() {
   );
 }
 
+
+// Both PO Mains papers are 170 objective questions for 200 marks, so the totals
+// say nothing. Where the 200 marks sit does: a Data Interpretation question in
+// SBI PO carries four times the marks of an English one on the same paper.
+function PoMainsMarksPerQuestion() {
+  const scale = 100; // pixels per mark, so the 2.00 bar ends well inside the box
+  const x0 = 232;
+  const papers = [
+    {
+      label: 'SBI PO Mains',
+      y: 26,
+      rows: [
+        { name: 'Data Interpretation', q: 30, marks: 60 },
+        { name: 'Reasoning & Computer', q: 40, marks: 60 },
+        { name: 'Gen/Economy/Banking', q: 60, marks: 60 },
+        { name: 'English Language', q: 40, marks: 20 },
+      ],
+    },
+    {
+      label: 'IBPS PO Mains',
+      y: 132,
+      rows: [
+        { name: 'Reasoning', q: 40, marks: 60 },
+        { name: 'Data Interpretation', q: 40, marks: 60 },
+        { name: 'Awareness', q: 50, marks: 60 },
+        { name: 'English Language', q: 40, marks: 20 },
+      ],
+    },
+  ];
+  return (
+    <svg viewBox="0 0 560 232" width="100%" role="img" aria-label="Marks per question by section in SBI PO Mains and IBPS PO Mains. Both papers total 170 objective questions for 200 marks, but a Data Interpretation question in SBI PO is worth 2 marks while an English question on either paper is worth half a mark.">
+      {papers.map((paper) => (
+        <g key={paper.label}>
+          <text x="10" y={paper.y - 8} fontSize="11" fill={INK[900]} fontWeight="600">{paper.label}</text>
+          <text x="550" y={paper.y - 8} fontSize="9" fill={INK[300]} textAnchor="end">170 questions, 200 marks</text>
+          {paper.rows.map((row, i) => {
+            const perQuestion = row.marks / row.q;
+            const y = paper.y + i * 22;
+            return (
+              <g key={row.name}>
+                <text x={x0 - 8} y={y + 11} fontSize="10" fill={INK[500]} textAnchor="end">{row.name}</text>
+                <rect x={x0} y={y} width={perQuestion * scale} height="14" fill={perQuestion >= 1 ? INK[700] : INK[300]} />
+                <text x={x0 + perQuestion * scale + 6} y={y + 11} fontSize="10" fill={INK[700]}>
+                  {perQuestion.toFixed(2)} per Q
+                </text>
+              </g>
+            );
+          })}
+        </g>
+      ))}
+      <text x="10" y="224" fontSize="9" fill={INK[300]}>Bar length is marks per question. English is the cheapest question on either paper at half a mark.</text>
+    </svg>
+  );
+}
+
+// The shorter paper is the faster one, which is the opposite of what the
+// question counts suggest.
+function ClerkMainsPace() {
+  const x0 = 186;
+  const scale = 6; // pixels per second
+  const rows = [
+    { label: 'SBI Clerk Mains', questions: 190, minutes: 160 },
+    { label: 'IBPS Clerk Mains', questions: 160, minutes: 125 },
+  ];
+  return (
+    <svg viewBox="0 0 560 150" width="100%" role="img" aria-label="Seconds available per question in SBI Clerk Mains and IBPS Clerk Mains. SBI allows 50.5 seconds across 190 questions in 160 minutes; IBPS allows 46.9 seconds across 160 questions in 125 minutes.">
+      {rows.map((row, i) => {
+        const seconds = (row.minutes * 60) / row.questions;
+        const y = 30 + i * 52;
+        return (
+          <g key={row.label}>
+            <text x={x0 - 10} y={y + 12} fontSize="11" fill={INK[900]} textAnchor="end" fontWeight="600">{row.label}</text>
+            <text x={x0 - 10} y={y + 26} fontSize="9" fill={INK[300]} textAnchor="end">
+              {row.questions} questions in {row.minutes} min
+            </text>
+            <rect x={x0} y={y} width={seconds * scale} height="18" fill={i === 0 ? INK[500] : INK[900]} />
+            <text x={x0 + seconds * scale + 8} y={y + 14} fontSize="11" fill={INK[700]}>
+              {seconds.toFixed(1)}s per question
+            </text>
+          </g>
+        );
+      })}
+      <text x="10" y="140" fontSize="9" fill={INK[300]}>IBPS Clerk asks 30 fewer questions and still leaves less time for each one. Totals only: its per-section split is unconfirmed.</text>
+    </svg>
+  );
+}
+
 const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'study-timetable-grid': StudyTimetableGrid,
   'negative-marking-math': NegativeMarkingMath,
@@ -384,6 +473,8 @@ const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'shared-sections-map': SharedSectionsMap,
   'corpus-two-cuts': CorpusTwoCuts,
   'one-skill-many-names': OneSkillManyNames,
+  'po-mains-marks-per-question': PoMainsMarksPerQuestion,
+  'clerk-mains-pace': ClerkMainsPace,
 };
 
 export function BlogDiagram({ id, caption }: { id: BlogDiagramId; caption: string }) {
