@@ -612,6 +612,7 @@ import { IBSAT_VERBAL_READING_QUANTITATIVE_DATA_ADEQUACY_2 } from './question-ba
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_1 } from './question-banks/mat-language-reasoning-quant-data-combined-1';
 import { MAT_LANGUAGE_REASONING_QUANT_DATA_2 } from './question-banks/mat-language-reasoning-quant-data-combined-2';
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
+import { MICAT_VA_QADI_DCT_2 } from './question-banks/micat-va-qadi-dct-combined-2';
 import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
 import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-karnataka-language-mathematical-basic-aptitude-combined-1';
 import { JIPMAT_2026_QUANTITATIVE_APTITUDE_1 } from './question-banks/jipmat-2026-quantitative-aptitude-1';
@@ -2444,6 +2445,10 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'micat/verbal-ability-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Verbal Ability'),
   'micat/quantitative-ability-data-interpretation-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
   'micat/divergent-convergent-thinking-sectional-1': MICAT_VA_QADI_DCT_1.filter((question) => question.section === 'Divergent and Convergent Thinking'),
+  'micat/verbal-ability-quantitative-ability-and-data-interpretation-divergent-and-convergent-thinking-full-mock-2': MICAT_VA_QADI_DCT_2,
+  'micat/verbal-ability-sectional-2': MICAT_VA_QADI_DCT_2.filter((question) => question.section === 'Verbal Ability'),
+  'micat/quantitative-ability-data-interpretation-sectional-2': MICAT_VA_QADI_DCT_2.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
+  'micat/divergent-convergent-thinking-sectional-2': MICAT_VA_QADI_DCT_2.filter((question) => question.section === 'Divergent and Convergent Thinking'),
   'tancet-mba/business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english-full-mock-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1,
   'tancet-mba/business-situations-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Business Situations'),
   'tancet-mba/reading-comprehension-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Reading Comprehension'),
