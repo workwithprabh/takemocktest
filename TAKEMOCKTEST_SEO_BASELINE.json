@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-21",
- "pageCount": 5661,
+ "pageCount": 5673,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10563,7 +10563,7 @@
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,493 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,536 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10578,8 +10578,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "4635f73e66ca",
-   "ogHash": "32f54bc7e203",
+   "schemaHash": "21b7b7a20fb7",
+   "ogHash": "9adf11947bff",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59382,7 +59382,7 @@
   },
   "/in/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "217 free averages questions with answers and explanations, pooled from 63 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "219 free averages questions with answers and explanations, pooled from 63 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -59398,8 +59398,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "62dc9e9c9775",
-   "ogHash": "416080ae426d",
+   "schemaHash": "b30d5da5a1e2",
+   "ogHash": "c4124b106c86",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59604,7 +59604,7 @@
   },
   "/in/practice/compound-interest": {
    "title": "Compound Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "104 free compound interest questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "106 free compound interest questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Compound Interest Questions with Answers"
    ],
@@ -59620,8 +59620,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e4150e6da0d7",
-   "ogHash": "32a4e7494ffa",
+   "schemaHash": "c8672dcf0dc3",
+   "ogHash": "a572cf595511",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59678,7 +59678,7 @@
   },
   "/in/practice/data-sufficiency": {
    "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
-   "description": "180 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "200 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
@@ -59694,8 +59694,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "15954eab5201",
-   "ogHash": "511a7ae67d5a",
+   "schemaHash": "1b9e57407d52",
+   "ogHash": "79723085f26d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59826,7 +59826,7 @@
   },
   "/in/practice/fill-in-the-blanks": {
    "title": "Fill in the Blanks Questions with Answers 2026",
-   "description": "196 free fill in the blanks questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "198 free fill in the blanks questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Fill in the Blanks Questions with Answers"
    ],
@@ -59842,8 +59842,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "89b390145219",
-   "ogHash": "5c849e52e7c7",
+   "schemaHash": "658772867549",
+   "ogHash": "4f50f0c84218",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59863,7 +59863,7 @@
   },
   "/in/practice/idioms-and-phrases": {
    "title": "Idioms and Phrases Questions with Answers 2026",
-   "description": "256 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "258 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Idioms and Phrases Questions with Answers"
    ],
@@ -59879,8 +59879,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e22a6370fc3e",
-   "ogHash": "ae8772170e05",
+   "schemaHash": "845fa1b2f238",
+   "ogHash": "f2c40fbe1d36",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59937,7 +59937,7 @@
   },
   "/in/practice/number-series": {
    "title": "Number Series Questions with Answers 2026 | TakeMockTest",
-   "description": "399 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "400 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number Series Questions with Answers"
    ],
@@ -59953,8 +59953,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "91399f4ace80",
-   "ogHash": "f26df2abbc5e",
+   "schemaHash": "8a47506896ee",
+   "ogHash": "71b45b668aed",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59974,7 +59974,7 @@
   },
   "/in/practice/number-system": {
    "title": "Number System Questions with Answers 2026 | TakeMockTest",
-   "description": "150 free number system questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "151 free number system questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number System Questions with Answers"
    ],
@@ -59990,8 +59990,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "612d0b03e1dd",
-   "ogHash": "5cced1537ce0",
+   "schemaHash": "f2a61e5347d8",
+   "ogHash": "b52210501ace",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60011,7 +60011,7 @@
   },
   "/in/practice/one-word-substitution": {
    "title": "One-Word Substitution Questions with Answers 2026",
-   "description": "283 free one-word substitution questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "286 free one-word substitution questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "One-Word Substitution Questions with Answers"
    ],
@@ -60027,8 +60027,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "83f569b7fd04",
-   "ogHash": "2a5d35648c1b",
+   "schemaHash": "2778014d20b1",
+   "ogHash": "82e3d657c2e6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60085,7 +60085,7 @@
   },
   "/in/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "227 free percentage questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "229 free percentage questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -60101,8 +60101,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "745ae631b2d4",
-   "ogHash": "5ae0f4eb78a4",
+   "schemaHash": "52f46ad1c4e5",
+   "ogHash": "8d15e12f0746",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60196,7 +60196,7 @@
   },
   "/in/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "204 free profit and loss questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "206 free profit and loss questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -60212,8 +60212,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0aea08504fde",
-   "ogHash": "951c5a2df56b",
+   "schemaHash": "dbe7cb6f5d09",
+   "ogHash": "b16704218528",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60307,7 +60307,7 @@
   },
   "/in/practice/ratio-and-proportion": {
    "title": "Ratio and Proportion Questions with Answers 2026",
-   "description": "238 free ratio and proportion questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "239 free ratio and proportion questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ratio and Proportion Questions with Answers"
    ],
@@ -60323,8 +60323,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "20bd4efe3e06",
-   "ogHash": "bdaf3bdcda74",
+   "schemaHash": "f381208a46ea",
+   "ogHash": "403727c52185",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60455,7 +60455,7 @@
   },
   "/in/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "137 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "138 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -60471,8 +60471,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a787bb6722f9",
-   "ogHash": "b649dcd9a577",
+   "schemaHash": "376d4039802f",
+   "ogHash": "bcd2c2e9bfc2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60640,7 +60640,7 @@
   },
   "/in/practice/time-and-work": {
    "title": "Time and Work Questions with Answers 2026 | TakeMockTest",
-   "description": "230 free time and work questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "232 free time and work questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time and Work Questions with Answers"
    ],
@@ -60656,8 +60656,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "feb7492af14f",
-   "ogHash": "2fb5c23a9857",
+   "schemaHash": "6c057cb4fc72",
+   "ogHash": "30f0e8697d7d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60677,7 +60677,7 @@
   },
   "/in/practice/time-speed-and-distance": {
    "title": "Time, Speed and Distance Questions with Answers 2026",
-   "description": "190 free time, speed and distance questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "192 free time, speed and distance questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time, Speed and Distance Questions with Answers"
    ],
@@ -60693,14 +60693,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ea48f299c973",
-   "ogHash": "262c7f69ef96",
+   "schemaHash": "849036f081e7",
+   "ogHash": "926aafa8fa2e",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,493 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,536 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -60716,7 +60716,7 @@
     "Question"
    ],
    "schemaHash": "212e31eec12f",
-   "ogHash": "56f38248224a",
+   "ogHash": "1b7da1f1e5ba",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -86298,7 +86298,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "a64119781eb6",
+   "schemaHash": "7105bfd35d62",
    "ogHash": "710af9db5813",
    "sitemap": true,
    "robots": "index, follow"
@@ -86425,6 +86425,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/tancet-mba/test/business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english-full-mock-2/attempt": {
+   "title": "TANCET MBA Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency and General English Full Mock Test 2",
+   "description": "Attempt the TANCET MBA Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency and General English Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "0114df1913f9",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tancet-mba/test/business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english-full-mock-2": {
+   "title": "TANCET MBA Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency and General English Full Mock Test 2",
+   "description": "Attempt TANCET MBA Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency and General English Full Mock Test 2: 100 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "TANCET MBA Business Situations, Reading Comprehension, Quantitative Aptitude, Data Sufficiency and General English Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "51e09f8ef36d",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "8b254bbfbc99",
+   "ogHash": "4ff5a2ae83e8",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/tancet-mba/test/business-situations-sectional-1/attempt": {
    "title": "TANCET MBA Business Situations Sectional Test 1",
    "description": "Attempt the TANCET MBA Business Situations Sectional Test 1 and review your result on this device.",
@@ -86456,6 +86493,40 @@
    ],
    "schemaHash": "1232aad19e51",
    "ogHash": "ff811d4538d8",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tancet-mba/test/business-situations-sectional-2/attempt": {
+   "title": "TANCET MBA Business Situations Sectional Test 2",
+   "description": "Attempt the TANCET MBA Business Situations Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ecfa88efaf59",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tancet-mba/test/business-situations-sectional-2": {
+   "title": "TANCET MBA Business Situations Mock Test 2: Free Practice",
+   "description": "Free TANCET MBA Business Situations Mock Test 2: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TANCET MBA Business Situations Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "a047f1251342",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0aef3d88aa49",
+   "ogHash": "9ec9964cd5ea",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -86493,6 +86564,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/tancet-mba/test/data-sufficiency-sectional-2/attempt": {
+   "title": "TANCET MBA Data Sufficiency Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the TANCET MBA Data Sufficiency Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "413c0e64ce89",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tancet-mba/test/data-sufficiency-sectional-2": {
+   "title": "TANCET MBA Data Sufficiency Mock Test 2: Free Practice",
+   "description": "Free TANCET MBA Data Sufficiency Mock Test 2: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TANCET MBA Data Sufficiency Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "74bb3cc0827d",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "2daf1009d5d3",
+   "ogHash": "b1e3e86a17cc",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/tancet-mba/test/general-english-sectional-1/attempt": {
    "title": "TANCET MBA General English Sectional Test 1 | TakeMockTest",
    "description": "Attempt the TANCET MBA General English Sectional Test 1 and review your result on this device.",
@@ -86524,6 +86629,40 @@
    ],
    "schemaHash": "ae4092f6d4b9",
    "ogHash": "b1d480121fa4",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tancet-mba/test/general-english-sectional-2/attempt": {
+   "title": "TANCET MBA General English Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the TANCET MBA General English Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "ddf94575c464",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tancet-mba/test/general-english-sectional-2": {
+   "title": "TANCET MBA General English Mock Test 2: Free Practice",
+   "description": "Free TANCET MBA General English Mock Test 2: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TANCET MBA General English Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "12661a254774",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0167082ca29f",
+   "ogHash": "19f964f2e210",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -86561,6 +86700,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/tancet-mba/test/quantitative-aptitude-sectional-2/attempt": {
+   "title": "TANCET MBA Quantitative Aptitude Sectional Test 2",
+   "description": "Attempt the TANCET MBA Quantitative Aptitude Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "27a261cb3d74",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tancet-mba/test/quantitative-aptitude-sectional-2": {
+   "title": "TANCET MBA Quantitative Aptitude Mock Test 2: Free Practice",
+   "description": "Free TANCET MBA Quantitative Aptitude Mock Test 2: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TANCET MBA Quantitative Aptitude Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "27aa5c52aa96",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "0c683ed42e96",
+   "ogHash": "8ec35cf951f5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/tancet-mba/test/reading-comprehension-sectional-1/attempt": {
    "title": "TANCET MBA Reading Comprehension Sectional Test 1",
    "description": "Attempt the TANCET MBA Reading Comprehension Sectional Test 1 and review your result on this device.",
@@ -86592,6 +86765,40 @@
    ],
    "schemaHash": "a5d665b4a3fe",
    "ogHash": "3dbd834a388f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/tancet-mba/test/reading-comprehension-sectional-2/attempt": {
+   "title": "TANCET MBA Reading Comprehension Sectional Test 2",
+   "description": "Attempt the TANCET MBA Reading Comprehension Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "2fa85d6f5027",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/tancet-mba/test/reading-comprehension-sectional-2": {
+   "title": "TANCET MBA Reading Comprehension Mock Test 2: Free Practice",
+   "description": "Free TANCET MBA Reading Comprehension Mock Test 2: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "TANCET MBA Reading Comprehension Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "f92ff6b0fd4c",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "5f67820da92c",
+   "ogHash": "c1bc06ad9883",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96033,7 +96240,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "b5bef3d66832",
+   "schemaHash": "17f614b37388",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -97777,7 +97984,7 @@
   },
   "/ng/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "217 free averages questions with answers and explanations, pooled from 63 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "219 free averages questions with answers and explanations, pooled from 63 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -97793,8 +98000,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7d5c61805689",
-   "ogHash": "dfa69a8e3f4a",
+   "schemaHash": "7038880e6460",
+   "ogHash": "2a8dfa374e01",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -97999,7 +98206,7 @@
   },
   "/ng/practice/compound-interest": {
    "title": "Compound Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "104 free compound interest questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "106 free compound interest questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Compound Interest Questions with Answers"
    ],
@@ -98015,8 +98222,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f102b98d1434",
-   "ogHash": "af94d0d3370e",
+   "schemaHash": "4e96c4b78986",
+   "ogHash": "d4a01f03c9bb",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98073,7 +98280,7 @@
   },
   "/ng/practice/data-sufficiency": {
    "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
-   "description": "180 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "200 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
@@ -98089,8 +98296,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "45e1ffb1bc06",
-   "ogHash": "3bc5bcad96d5",
+   "schemaHash": "2fb7a82d1c71",
+   "ogHash": "4520eed81f36",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98221,7 +98428,7 @@
   },
   "/ng/practice/fill-in-the-blanks": {
    "title": "Fill in the Blanks Questions with Answers 2026",
-   "description": "196 free fill in the blanks questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "198 free fill in the blanks questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Fill in the Blanks Questions with Answers"
    ],
@@ -98237,8 +98444,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "cdb30a529ad4",
-   "ogHash": "6d8ddc77df41",
+   "schemaHash": "b6be2e2651b1",
+   "ogHash": "441fb5e9fb12",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98258,7 +98465,7 @@
   },
   "/ng/practice/idioms-and-phrases": {
    "title": "Idioms and Phrases Questions with Answers 2026",
-   "description": "256 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "258 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Idioms and Phrases Questions with Answers"
    ],
@@ -98274,8 +98481,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "32c881b9ebec",
-   "ogHash": "cf6b01788a03",
+   "schemaHash": "899254f10563",
+   "ogHash": "abc2a697ab40",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98332,7 +98539,7 @@
   },
   "/ng/practice/number-series": {
    "title": "Number Series Questions with Answers 2026 | TakeMockTest",
-   "description": "399 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "400 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number Series Questions with Answers"
    ],
@@ -98348,8 +98555,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e73a790d207e",
-   "ogHash": "363de8a0fa35",
+   "schemaHash": "a028746f823c",
+   "ogHash": "58f10cd635b4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98369,7 +98576,7 @@
   },
   "/ng/practice/number-system": {
    "title": "Number System Questions with Answers 2026 | TakeMockTest",
-   "description": "150 free number system questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "151 free number system questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number System Questions with Answers"
    ],
@@ -98385,8 +98592,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7ba83a1e2f78",
-   "ogHash": "88a03017de1e",
+   "schemaHash": "66e65b754406",
+   "ogHash": "967430028610",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98406,7 +98613,7 @@
   },
   "/ng/practice/one-word-substitution": {
    "title": "One-Word Substitution Questions with Answers 2026",
-   "description": "283 free one-word substitution questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "286 free one-word substitution questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "One-Word Substitution Questions with Answers"
    ],
@@ -98422,8 +98629,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ab1cfd438ec1",
-   "ogHash": "2a617f931326",
+   "schemaHash": "9e0f36967a3e",
+   "ogHash": "1c26c6350a48",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98480,7 +98687,7 @@
   },
   "/ng/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "227 free percentage questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "229 free percentage questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -98496,8 +98703,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c87589a90536",
-   "ogHash": "65ef1c9fc62a",
+   "schemaHash": "098386dba658",
+   "ogHash": "82c000f6ee08",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98591,7 +98798,7 @@
   },
   "/ng/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "204 free profit and loss questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "206 free profit and loss questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -98607,8 +98814,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "dba60eafecd4",
-   "ogHash": "761bd8731fd8",
+   "schemaHash": "e5a0f876710b",
+   "ogHash": "752f404a410f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98702,7 +98909,7 @@
   },
   "/ng/practice/ratio-and-proportion": {
    "title": "Ratio and Proportion Questions with Answers 2026",
-   "description": "238 free ratio and proportion questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "239 free ratio and proportion questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ratio and Proportion Questions with Answers"
    ],
@@ -98718,8 +98925,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "30ed28a3af7c",
-   "ogHash": "b92270be52f1",
+   "schemaHash": "5a83a11192c7",
+   "ogHash": "2186d0d6b926",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98850,7 +99057,7 @@
   },
   "/ng/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "137 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "138 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -98866,8 +99073,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "dff2d4074430",
-   "ogHash": "ddfc9369e9e5",
+   "schemaHash": "1202ab24eadd",
+   "ogHash": "583478b8d690",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99035,7 +99242,7 @@
   },
   "/ng/practice/time-and-work": {
    "title": "Time and Work Questions with Answers 2026 | TakeMockTest",
-   "description": "230 free time and work questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "232 free time and work questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time and Work Questions with Answers"
    ],
@@ -99051,8 +99258,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6fe66e12c7f6",
-   "ogHash": "0c6b85b1e526",
+   "schemaHash": "5f2f9c3b050b",
+   "ogHash": "22fe62fa12d5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99072,7 +99279,7 @@
   },
   "/ng/practice/time-speed-and-distance": {
    "title": "Time, Speed and Distance Questions with Answers 2026",
-   "description": "190 free time, speed and distance questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "192 free time, speed and distance questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time, Speed and Distance Questions with Answers"
    ],
@@ -99088,14 +99295,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7ff334fb8585",
-   "ogHash": "535d30f8e024",
+   "schemaHash": "02254a5a0d98",
+   "ogHash": "6b9b4904d9b5",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,493 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,536 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -99111,7 +99318,7 @@
     "Question"
    ],
    "schemaHash": "22ea6a10b0c2",
-   "ogHash": "69a119080cc9",
+   "ogHash": "871ac1367b72",
    "sitemap": true,
    "robots": "index, follow"
   },
