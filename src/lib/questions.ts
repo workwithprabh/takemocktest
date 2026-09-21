@@ -614,6 +614,7 @@ import { MAT_LANGUAGE_REASONING_QUANT_DATA_2 } from './question-banks/mat-langua
 import { MICAT_VA_QADI_DCT_1 } from './question-banks/micat-va-qadi-dct-combined-1';
 import { MICAT_VA_QADI_DCT_2 } from './question-banks/micat-va-qadi-dct-combined-2';
 import { TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-1';
+import { TANCET_MBA_BS_RC_QA_DS_GE_2 } from './question-banks/tancet-mba-business-situations-rc-quant-ds-english-combined-2';
 import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-karnataka-language-mathematical-basic-aptitude-combined-1';
 import { JIPMAT_2026_QUANTITATIVE_APTITUDE_1 } from './question-banks/jipmat-2026-quantitative-aptitude-1';
 import { JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_1 } from './question-banks/jipmat-2026-data-interpretation-logical-reasoning-1';
@@ -2455,6 +2456,12 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'tancet-mba/quantitative-aptitude-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Quantitative Aptitude'),
   'tancet-mba/data-sufficiency-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'Data Sufficiency'),
   'tancet-mba/general-english-sectional-1': TANCET_MBA_BS_RC_QUANT_DS_ENGLISH_1.filter((question) => question.section === 'General English'),
+  'tancet-mba/business-situations-reading-comprehension-quantitative-aptitude-data-sufficiency-general-english-full-mock-2': TANCET_MBA_BS_RC_QA_DS_GE_2,
+  'tancet-mba/business-situations-sectional-2': TANCET_MBA_BS_RC_QA_DS_GE_2.filter((question) => question.section === 'Business Situations'),
+  'tancet-mba/reading-comprehension-sectional-2': TANCET_MBA_BS_RC_QA_DS_GE_2.filter((question) => question.section === 'Reading Comprehension'),
+  'tancet-mba/quantitative-aptitude-sectional-2': TANCET_MBA_BS_RC_QA_DS_GE_2.filter((question) => question.section === 'Quantitative Aptitude'),
+  'tancet-mba/data-sufficiency-sectional-2': TANCET_MBA_BS_RC_QA_DS_GE_2.filter((question) => question.section === 'Data Sufficiency'),
+  'tancet-mba/general-english-sectional-2': TANCET_MBA_BS_RC_QA_DS_GE_2.filter((question) => question.section === 'General English'),
   'kmat-karnataka/language-comprehension-mathematical-skills-basic-aptitude-full-mock-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1,
   'kmat-karnataka/language-comprehension-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Language Comprehension'),
   'kmat-karnataka/mathematical-skills-sectional-1': KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1.filter((question) => question.section === 'Mathematical Skills'),

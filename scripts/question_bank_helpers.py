@@ -21,6 +21,14 @@ Each check exists because it caught something real:
                      used by frozen handoff banks, because reading only the first
                      reports zero overlap against a handoff bank rather than
                      failing.
+  check_stems        src/lib/questions.ts has a runtime guard that requires every
+                     question's literal stem to be unique WITHIN one test, options
+                     ignored. A full mock concatenates the whole bank, so four
+                     reading passages sharing one follow-up stem ("Which of the
+                     following is most strongly supported by the passage above?")
+                     is a duplicate there even though each passage differs. It
+                     only surfaces at `npm run build`, not at qa:questions, and
+                     it has broken a build in three separate batches.
   check_corpus       A full duplicate of a question already in the corpus, which
                      check_against cannot see because it reads one file. An ATMA
                      letter series once matched an SSC Steno one exactly and
@@ -135,6 +143,24 @@ def _signature(stem, options, answer):
     return '::'.join([stem.strip().lower(),
                       '|'.join(o.strip().lower() for o in options),
                       str(answer)])
+
+
+def check_stems(rows):
+    """No two questions in the bank may share a stem, options ignored.
+
+    Mirrors the runtime guard in src/lib/questions.ts, which fires when the full
+    mock concatenates the bank. Generic follow-up stems are the usual cause, so
+    the message names both offenders rather than only the second one.
+    """
+    seen = {}
+    for r in rows:
+        stem = r['question']
+        if stem.startswith("'") and stem.endswith("'"):
+            stem = stem[1:-1]
+        stem = stem.replace("\\'", "'").strip().lower()
+        assert stem not in seen, ('stem repeats within this bank', seen[stem], r['id'])
+        seen[stem] = r['id']
+    return len(seen)
 
 
 def check_corpus(rows, bank_dir, skip):
