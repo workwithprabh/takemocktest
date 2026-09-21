@@ -52,7 +52,7 @@ const calendarSource = fs.readFileSync('src/lib/exam-calendar.ts', 'utf8');
 const calendarCompiled = ts.transpileModule(calendarSource, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } });
 const calendarApi = {};
 vm.runInNewContext(calendarCompiled.outputText, { exports: calendarApi, Intl, Date });
-const { EXAM_CALENDAR_EVENTS, GOVERNMENT_EXAM_EVENTS, buildIcsCalendar, calendarEventTimestamp, formatCalendarEventDate, googleCalendarUrl } = calendarApi;
+const { EXAM_CALENDAR_EVENTS, GOVERNMENT_EXAM_EVENTS, buildIcsCalendar, calendarEventTimestamp, formatCalendarEventDate, getUpcomingCalendarEvents, googleCalendarUrl } = calendarApi;
 const calendarHosts = new Set(['www.ibps.in', 'ibpsreg.ibps.in', 'www.upsc.gov.in', 'ssc.gov.in', 'www.aima.in', 'gate2027.iitm.ac.in', 'clat2027.consortiumofnlus.ac.in', 'xatonline.in']);
 const eventIds = new Set();
 for (const event of EXAM_CALENDAR_EVENTS) {
@@ -71,6 +71,11 @@ assert(GOVERNMENT_EXAM_EVENTS.length > 0 && GOVERNMENT_EXAM_EVENTS.every((event)
 assert(GOVERNMENT_EXAM_EVENTS.some((event) => event.examSlug === 'upsc-engineering-services'));
 assert(!GOVERNMENT_EXAM_EVENTS.some((event) => ['mat', 'gate', 'clat', 'xat'].includes(event.examSlug)));
 assert(calendarEventTimestamp('2026-09-16', true) > calendarEventTimestamp('2026-09-16'));
+assert.equal(
+  getUpcomingCalendarEvents(EXAM_CALENDAR_EVENTS, Date.parse('2026-09-21T00:00:00+05:30'), 2).map((event) => event.id).join(','),
+  'ssc-selection-post-phase-14-cbe,ibps-rrb-15-application-close',
+);
+assert(getUpcomingCalendarEvents(EXAM_CALENDAR_EVENTS, Date.parse('2026-09-21T00:00:00+05:30'), 3, 'gate').every((event) => event.examSlug === 'gate'));
 const calendarFile = buildIcsCalendar(EXAM_CALENDAR_EVENTS, 'TakeMockTest exam calendar');
 assert(calendarFile.startsWith('BEGIN:VCALENDAR\r\nVERSION:2.0'));
 assert.equal((calendarFile.match(/BEGIN:VEVENT/g) ?? []).length, EXAM_CALENDAR_EVENTS.length);
