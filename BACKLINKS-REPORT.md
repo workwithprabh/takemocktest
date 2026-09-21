@@ -1,6 +1,6 @@
 # Backlinks report — takemocktest.com
 
-Generated 2026-09-14 13:40 UTC by `.github/workflows/backlinks-report.yml`.
+Generated 2026-09-21 13:39 UTC by `.github/workflows/backlinks-report.yml`.
 
 ## Bing Webmaster — connectivity check (verified sites)
 
