@@ -201,6 +201,33 @@ def summarise(rows):
     }
 
 
+def reconcile(site_row, page_rows):
+    """Site-level total against the sum of the page rows, and the gap.
+
+    These two numbers disagree by design and the report used to print both
+    without saying so, which reads as a contradiction and was twice diagnosed
+    here as a bug in this file. Search Console counts a property impression once
+    per search that showed the site, and a page impression once per URL shown.
+    One search that surfaces three of our pages is 1 site impression and 3 page
+    impressions, so the page sum is always the larger of the two and neither
+    figure is wrong. The country and query tables aggregate at site level, which
+    is why they agree with the total and the page table does not.
+
+    Returns None when there is no site row to compare against.
+    """
+    if not site_row:
+        return None
+    site = site_row['impressions']
+    paged = sum(r['impressions'] for r in page_rows)
+    return {
+        'site': site,
+        'paged': paged,
+        'gap': paged - site,
+        # Guarded: a zero-impression window is normal for a new property.
+        'ratio': paged / site if site else 0.0,
+    }
+
+
 def bucket_by_prefix(rows, prefixes):
     """Group page rows by URL path prefix.
 
@@ -284,12 +311,26 @@ def cmd_selftest(args):
     check('panel keeps dates apart', panel['2026-09-09'][0]['impressions'], 7)
     check('panel empty', panel_records([]), {})
 
+    # Site-level against page-level. The gap is the thing this repo twice
+    # mistook for a bug, so it is pinned here rather than left to be
+    # rediscovered: one search showing two of our pages is 1 site impression
+    # and 2 page impressions.
+    site = {'clicks': 2, 'impressions': 69, 'ctr': 0.0, 'position': 25.6}
+    recon = reconcile(site, [row('/a', 1, 100, 5.0), row('/b', 1, 27, 9.0)])
+    check('reconcile site', recon['site'], 69)
+    check('reconcile paged', recon['paged'], 127)
+    check('reconcile gap', recon['gap'], 58)
+    check('reconcile ratio', round(recon['ratio'], 3), 1.841)
+    check('reconcile no site row', reconcile(None, [row('/a', 0, 5, 1.0)]), None)
+    # A property with no impressions yet must not divide by zero.
+    check('reconcile zero window', reconcile({'impressions': 0}, [])['ratio'], 0.0)
+
     if failures:
         print(f'gsc-query selftest FAILED ({len(failures)}):', file=sys.stderr)
         for failure in failures:
             print(f'  - {failure}', file=sys.stderr)
         sys.exit(1)
-    print('gsc-query selftest passed: path normalisation, impression-weighted position, prefix bucketing, and panel grouping.')
+    print('gsc-query selftest passed: path normalisation, impression-weighted position, prefix bucketing, panel grouping, and site-versus-page reconciliation.')
 
 
 def cmd_totals(session, args):
@@ -528,6 +569,17 @@ def cmd_report(session, args):
             '| Clicks | Impressions | CTR | Avg. position |',
             '|---|---|---|---|',
             f"| {r['clicks']} | {r['impressions']} | {r['ctr']:.2%} | {r['position']:.1f} |",
+        ]
+        recon = reconcile(r, all_page_rows)
+        if recon:
+            lines += [
+                '',
+                f"The page table below sums to {recon['paged']} impressions against the "
+                f"{recon['site']} above, a gap of {recon['gap']}. Both are right. Search Console "
+                'counts one impression per search that showed the site, and one per URL shown, '
+                'so a search surfacing several of our pages counts once here and once per page '
+                'there. The country and query tables aggregate at site level and match this '
+                'total; the page and subfolder tables do not and are not meant to.',
         ]
     else:
         lines.append('No search data for this window.')
