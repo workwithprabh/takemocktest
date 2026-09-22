@@ -275,6 +275,16 @@ function pacePerQuestion(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
     multiPaperExams: shifts.size + shiftsSame,
     sameAtEveryPaper: shiftsSame,
     shift: (slug: string) => shifts.get(slug),
+    /**
+     * Just the paces, for the calculator to rank a reader's own paper against.
+     * Labels are deliberately absent. A first cut passed the full list of
+     * {exam, stage, questions, minutes} so the widget could offer a picker,
+     * and rendering 167 option elements put 871 words of exam names into the
+     * post: 39% of the page's text was a name dump burying a 1,360-word
+     * argument. Numbers travel in the flight payload instead of the prose, so
+     * this costs about a kilobyte and pollutes nothing.
+     */
+    paces: all.map((seconds) => Number(seconds.toFixed(3))),
     /** An exam's quickest stage, which is the one a reader is usually asking about. Rows are sorted by pace, so the first match is that stage. */
     fastestStageOf: (slug: string) => rows.find((entry) => entry.slug === slug),
   };

@@ -5,7 +5,15 @@
 // is plain text by design (none of it currently needs a link).
 import { BlogRichText } from '@/components/BlogRichText';
 import { BlogDiagram } from '@/components/blog/BlogDiagrams';
+// Imported directly. next/dynamic was tried here on 22 September 2026 to keep
+// the calculator out of the bundle the other 57 posts load, and did not do
+// that: the module landed in the same route page chunk either way, and the
+// loader machinery added 0.5 KB. The cost as it stands is about 2 KB of shared
+// route JavaScript, measured, and it is not worth a lazy boundary that does
+// not lazy anything.
+import PaceCalculator from '@/components/blog/PaceCalculator';
 import type { BlogBlock } from '@/lib/blog';
+import { CORPUS } from '@/lib/blog-corpus-stats';
 
 export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: string }) {
   return (
@@ -99,6 +107,12 @@ export function BlogBody({ blocks, country }: { blocks: BlogBlock[]; country: st
 
           case 'diagram':
             return <BlogDiagram key={i} id={block.id} caption={block.caption} />;
+
+          // The paces are read here, on the server, and passed down. The
+          // widget is a client component, so importing CORPUS inside it would
+          // pull the exam corpus into the browser bundle.
+          case 'calculator':
+            return <PaceCalculator key={i} paces={CORPUS.pace.paces} heading={block.heading} note={block.note} />;
 
           default:
             return null;
