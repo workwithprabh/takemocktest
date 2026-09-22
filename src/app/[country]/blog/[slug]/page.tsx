@@ -44,7 +44,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
     articleSchema({
       headline: post.title,
       datePublished: post.publishedAt,
-      dateModified: post.publishedAt,
+      dateModified: post.updatedAt ?? post.publishedAt,
       authorName: post.authorName,
       path,
       image: post.image?.src,
@@ -78,6 +78,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ count
           <time dateTime={post.publishedAt}>{new Date(post.publishedAt).toLocaleDateString(contentLocale(country), { year: 'numeric', month: 'short', day: 'numeric' })}</time>
           <span aria-hidden="true">·</span>
           <span>{post.readTimeMin} min read</span>
+          {post.updatedAt ? (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>Updated <time dateTime={post.updatedAt}>{new Date(post.updatedAt).toLocaleDateString(contentLocale(country), { year: 'numeric', month: 'short', day: 'numeric' })}</time></span>
+            </>
+          ) : null}
         </div>
       </header>
 
