@@ -619,6 +619,9 @@ import { KMAT_KARNATAKA_LANGUAGE_MATH_APTITUDE_1 } from './question-banks/kmat-k
 import { JIPMAT_2026_QUANTITATIVE_APTITUDE_1 } from './question-banks/jipmat-2026-quantitative-aptitude-1';
 import { JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_1 } from './question-banks/jipmat-2026-data-interpretation-logical-reasoning-1';
 import { JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_1 } from './question-banks/jipmat-2026-verbal-ability-reading-comprehension-1';
+import { JIPMAT_2026_QUANTITATIVE_APTITUDE_2 } from './question-banks/jipmat-2026-quantitative-aptitude-2';
+import { JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_2 } from './question-banks/jipmat-2026-data-interpretation-logical-reasoning-2';
+import { JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_2 } from './question-banks/jipmat-2026-verbal-ability-reading-comprehension-2';
 import { AMU_BTECH_2026_FULL_MOCK_1 } from './question-banks/amu-btech-2026-full-mock-1';
 import { ASSAM_CEE_2026_MATHEMATICS_1 } from './question-banks/assam-cee-2026-mathematics-1';
 import { ASSAM_CEE_2026_PHYSICS_1 } from './question-banks/assam-cee-2026-physics-1';
@@ -2475,6 +2478,14 @@ const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   'jipmat/quantitative-aptitude-sectional-1': JIPMAT_2026_QUANTITATIVE_APTITUDE_1,
   'jipmat/data-interpretation-logical-reasoning-sectional-1': JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_1,
   'jipmat/verbal-ability-reading-comprehension-sectional-1': JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_1,
+  'jipmat/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-2': [
+    ...JIPMAT_2026_QUANTITATIVE_APTITUDE_2,
+    ...JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_2,
+    ...JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_2,
+  ],
+  'jipmat/quantitative-aptitude-sectional-2': JIPMAT_2026_QUANTITATIVE_APTITUDE_2,
+  'jipmat/data-interpretation-logical-reasoning-sectional-2': JIPMAT_2026_DATA_INTERPRETATION_LOGICAL_REASONING_2,
+  'jipmat/verbal-ability-reading-comprehension-sectional-2': JIPMAT_2026_VERBAL_ABILITY_READING_COMPREHENSION_2,
   // Cross-exam Reasoning-sharing cluster (see sharedReasoningTests in exams.ts):
   // each receiver exam references the same five source banks below, not copies.
   'ibps-po/prelims-reasoning-shared-ibps-clerk-1': IBPS_CLERK_PRELIMS_REASONING_ABILITY_1,
