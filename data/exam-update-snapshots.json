@@ -1,0 +1,3750 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-22T07:39:06.521Z",
+  "sources": {
+    "nta-notice-board": {
+      "fingerprint": "00b91098201d93f3dd116d3615fe199bac4b2cfebe6164dcf65ce5c3ce711b6a",
+      "links": [
+        {
+          "title": "Information Bulletin (ASSAM OLYMPIAD 2021)",
+          "url": "http://ao.nta.ac.in/"
+        },
+        {
+          "title": "PUBLIC NOTICE: ASSAM OLYMPIAD 2021",
+          "url": "http://ao.nta.ac.in/"
+        },
+        {
+          "title": "Registration for observers of NTA is open. All eligible observer are requested to register themselves.",
+          "url": "http://cbtc.nta.ac.in/observer"
+        },
+        {
+          "title": "NOTIFICATION :Recruitment of various posts at National Testing Agency (NTA).",
+          "url": "http://jobs.nta.ac.in/"
+        },
+        {
+          "title": "अधिसूचना नेशनल टेस्टिंग एजेंसी (एनटीए) में विभिन्न पदों पर भर्ती",
+          "url": "http://jobs.nta.ac.in/"
+        },
+        {
+          "title": "Release of Admit Card of UGC-NET June 2019",
+          "url": "http://www.nta.ac.in/AdmitCard"
+        },
+        {
+          "title": "As a Precaution against COVID - 19, our helpdesk is operating with limited resources. For exam related queries text us on the given numbers under the Contact US section. For all other queries, please check the website regularly.",
+          "url": "http://www.nta.ac.in/ContactUs"
+        },
+        {
+          "title": "Registration of Central Universities (CUs) and Others for Common University Entrance Test (CUET) - 2022",
+          "url": "http://www.nta.ac.in/cuetexam"
+        },
+        {
+          "title": "National Essay Writing Competition January 2020 Result",
+          "url": "http://www.nta.ac.in/examresult"
+        },
+        {
+          "title": "JEE(Main) Paper-II January-2019 Results",
+          "url": "http://www.nta.ac.in/ExamResult"
+        },
+        {
+          "title": "National Essay Writing Competition December 2019 Result",
+          "url": "http://www.nta.ac.in/ExamResult"
+        },
+        {
+          "title": "NEET (UG) - 2019 Result",
+          "url": "http://www.nta.ac.in/ExamResult"
+        },
+        {
+          "title": "UGC-NET June 2019 Result",
+          "url": "http://www.nta.ac.in/ExamResult"
+        },
+        {
+          "title": "Call for TPC Registration from Schools & Colleges",
+          "url": "http://www.nta.ac.in/PC"
+        },
+        {
+          "title": "Recruitment (Young Professionals)",
+          "url": "https://cbtc.nta.ac.in/ypro"
+        },
+        {
+          "title": "Registration For Mock Test @TPC",
+          "url": "https://tpcsr.nta.ac.in/"
+        },
+        {
+          "title": "About NTA",
+          "url": "https://www.nta.ac.in/about"
+        },
+        {
+          "title": "Download Test",
+          "url": "https://www.nta.ac.in/Centre/Download/MockTest?f=Home"
+        },
+        {
+          "title": "TPC Logins",
+          "url": "https://www.nta.ac.in/Centre/Login"
+        },
+        {
+          "title": "About Computer Based Test",
+          "url": "https://www.nta.ac.in/Download/AboutCBT.pdf"
+        },
+        {
+          "title": "About Test Practice Centre",
+          "url": "https://www.nta.ac.in/Download/AboutTPC.pdf"
+        },
+        {
+          "title": "NTA Registration and MoA",
+          "url": "https://www.nta.ac.in/Download/NTARegistrationandMOA.pdf"
+        },
+        {
+          "title": "Downloads",
+          "url": "https://www.nta.ac.in/Downloads"
+        },
+        {
+          "title": "FAQs",
+          "url": "https://www.nta.ac.in/FAQ"
+        },
+        {
+          "title": "Functions",
+          "url": "https://www.nta.ac.in/functions"
+        },
+        {
+          "title": "Governing Body",
+          "url": "https://www.nta.ac.in/governing"
+        },
+        {
+          "title": "Content Based Lectures by [IIT PAL]",
+          "url": "https://www.nta.ac.in/LecturesContent"
+        },
+        {
+          "title": "Archive",
+          "url": "https://www.nta.ac.in/NoticeBoardArchive"
+        },
+        {
+          "title": "Empanelment",
+          "url": "https://www.nta.ac.in/NoticeBoardArchive"
+        },
+        {
+          "title": "Exams",
+          "url": "https://www.nta.ac.in/NoticeBoardArchive"
+        },
+        {
+          "title": "Objectives",
+          "url": "https://www.nta.ac.in/object"
+        },
+        {
+          "title": "Mock Test",
+          "url": "https://www.nta.ac.in/Quiz"
+        },
+        {
+          "title": "RTI",
+          "url": "https://www.nta.ac.in/RTI"
+        },
+        {
+          "title": "Information For Students",
+          "url": "https://www.nta.ac.in/Student"
+        },
+        {
+          "title": "Tender",
+          "url": "https://www.nta.ac.in/Tender"
+        },
+        {
+          "title": "Information For School/College/Institute",
+          "url": "https://www.nta.ac.in/TPC"
+        },
+        {
+          "title": "Vision",
+          "url": "https://www.nta.ac.in/Vision"
+        }
+      ]
+    },
+    "aima-mat-dates": {
+      "fingerprint": "44d9ff492219c56adbb17e9f83b33d152b2d637880eef4f873d692613bc82a3d",
+      "links": [
+        {
+          "title": "B-School Notifications",
+          "url": "https://aima.in/mat/b-school-notifications/"
+        },
+        {
+          "title": "FAQ",
+          "url": "https://aima.in/mat/faq/"
+        },
+        {
+          "title": "Registration Process",
+          "url": "https://aima.in/mat/mat-registration-process/"
+        },
+        {
+          "title": "MAT Score & Interpretation",
+          "url": "https://aima.in/mat/mat-score-interpretation/"
+        },
+        {
+          "title": "Test Cities",
+          "url": "https://aima.in/mat/mat-test-cities/"
+        },
+        {
+          "title": "Participating B-Schools",
+          "url": "https://aima.in/mat/participating-b-schools/"
+        },
+        {
+          "title": "Refund Policy",
+          "url": "https://aima.in/mat/refund-policy/"
+        },
+        {
+          "title": "Terms & Conditions",
+          "url": "https://aima.in/mat/terms-conditions/"
+        },
+        {
+          "title": "B-Schools",
+          "url": "https://aima.in/mat/test-dates/"
+        },
+        {
+          "title": "Skip to content",
+          "url": "https://aima.in/mat/test-dates/"
+        },
+        {
+          "title": "Test Dates",
+          "url": "https://aima.in/mat/test-dates/"
+        },
+        {
+          "title": "Testimonials",
+          "url": "https://aima.in/mat/testimonial/"
+        },
+        {
+          "title": "Login",
+          "url": "https://mat.aima.in/"
+        },
+        {
+          "title": "Register",
+          "url": "https://mat.aima.in/"
+        }
+      ]
+    },
+    "ukpsc-home": {
+      "fingerprint": "eaebefd00147ebbd89e89240d1b6d596024f06bdafec4d0424ba66c769fff096",
+      "links": [
+        {
+          "title": "Uttarakhand Govt. Orders",
+          "url": "https://go.uk.gov.in/"
+        },
+        {
+          "title": "Achievements",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Annual Report",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Appointment And Terms",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Ayog Rules / Niyamawali",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Brief Introduction",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Copyright Policy",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "digitalindia.gov.in",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "dot.gov.in",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Downloads",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Email. : ukpschdr@gmail.com",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Expeness",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Functions",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Haridwar (Uttrakhand) 249404",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "india.gov.in",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "indiapost.gov.in",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Library",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Members",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "mygov.in",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Next",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Offices",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Ph. No. : +91 01334 244143",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Previous",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Read More...",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Removal And Suspension Of A",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Reports",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Right To Information",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "RTI",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Skip to navigation",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Tenders",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Terms & Conditions",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Uttarakhand Public Service Commission",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Who's who",
+          "url": "https://psc.uk.gov.in/"
+        },
+        {
+          "title": "Appellate Authority",
+          "url": "https://psc.uk.gov.in/appellate-authority"
+        },
+        {
+          "title": "Appointment and Term of office of Members",
+          "url": "https://psc.uk.gov.in/appointment-and-term-of-office-of-members"
+        },
+        {
+          "title": "Read More...",
+          "url": "https://psc.uk.gov.in/archive/announcements"
+        },
+        {
+          "title": "Brief Introduction",
+          "url": "https://psc.uk.gov.in/brief-introduction"
+        },
+        {
+          "title": "--> 31-08-2026 --> Uttarakhand Combined State Civil Lower Subordinate Services Examination-2024-- Notification Regarding Admit Card for Physical Ability Test (Deputy Jailor & Excise Inspector) ( Admit Card )",
+          "url": "https://psc.uk.gov.in/candidate-corner/admitcards"
+        },
+        {
+          "title": "--> 31-08-2026 --> Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification regarding Admit Card (Subject- Commerce and Geography) and Notification regarding Scribe ( Admit Card )",
+          "url": "https://psc.uk.gov.in/candidate-corner/admitcards"
+        },
+        {
+          "title": "31-07-2026 Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification regarding Exam Date and Admit Card (Subject-Chemistry) and Notification regarding Scribe ( Admit Card )",
+          "url": "https://psc.uk.gov.in/candidate-corner/admitcards"
+        },
+        {
+          "title": "31-08-2026 Uttarakhand Combined State Civil Lower Subordinate Services Examination-2024-- Notification Regarding Admit Card for Physical Ability Test (Deputy Jailor & Excise Inspector) ( Admit Card )",
+          "url": "https://psc.uk.gov.in/candidate-corner/admitcards"
+        },
+        {
+          "title": "31-08-2026 Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification regarding Admit Card (Subject- Commerce and Geography) and Notification regarding Scribe ( Admit Card )",
+          "url": "https://psc.uk.gov.in/candidate-corner/admitcards"
+        },
+        {
+          "title": "Admit Card",
+          "url": "https://psc.uk.gov.in/candidate-corner/admitcards"
+        },
+        {
+          "title": "--> 01-09-2026 --> Asst. Review Officer, Asst. Librarian, Translator & Typist in the Establishment of High Court Uttarakhand, Exam-2025-- Notification regarding Online Objection on Structure of Questions and Options and Instructions ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "--> 09-09-2026 --> Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification, Provisional Answer Key and Online Answer Key Objection (Subject-Hindi) ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "--> 15-09-2026 --> Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification (Subject-History), Provisional Answer Key (History-I), Provisional Answer Key (History-II), Instructions and Online Answer Key Objection ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "--> 27-08-2026 --> Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification regarding Online Objection on Structure of Questions and Options (Subjects-English, Physics, Mathematics, Biology, Civics, History, Agriculture) and Instructions ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "01-09-2026 Asst. Review Officer, Asst. Librarian, Translator & Typist in the Establishment of High Court Uttarakhand, Exam-2025-- Notification regarding Online Objection on Structure of Questions and Options and Instructions ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "09-09-2026 Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification, Provisional Answer Key and Online Answer Key Objection (Subject-Hindi) ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "15-09-2026 Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification (Subject-History), Provisional Answer Key (History-I), Provisional Answer Key (History-II), Instructions and Online Answer Key Objection ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "27-08-2026 Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification regarding Online Objection on Structure of Questions and Options (Subjects-English, Physics, Mathematics, Biology, Civics, History, Agriculture) and Instructions ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "29-07-2026 Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch Exam-2025-- Notification regarding Online Objection on Structure of Questions and Options(Subject-Hindi) ( Answer Key )",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "Answer Key and Online Objection",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "Answer Keys",
+          "url": "https://psc.uk.gov.in/candidate-corner/answerkey"
+        },
+        {
+          "title": "DPC",
+          "url": "https://psc.uk.gov.in/candidate-corner/dpc"
+        },
+        {
+          "title": "Important Recruitment G.Os",
+          "url": "https://psc.uk.gov.in/candidate-corner/importantrecruitment"
+        },
+        {
+          "title": "Recruitment GOs",
+          "url": "https://psc.uk.gov.in/candidate-corner/importantrecruitment"
+        },
+        {
+          "title": "07-08-2026 Uttarakhand Combined State Civil Lower Subordinate Services Examination-2024-- Interview Programme, Disqualified Candidates List, Candidature Cancelled List , Medical Certificate Format , Interview Memo and Notification ( Interview )",
+          "url": "https://psc.uk.gov.in/candidate-corner/interview"
+        },
+        {
+          "title": "Interviews",
+          "url": "https://psc.uk.gov.in/candidate-corner/interview"
+        },
+        {
+          "title": "Old Question Papers",
+          "url": "https://psc.uk.gov.in/candidate-corner/oldquestionpaper"
+        },
+        {
+          "title": "Form / Formats / Proforma to Download",
+          "url": "https://psc.uk.gov.in/candidate-corner/performadownload"
+        },
+        {
+          "title": "--> 09-09-2026 --> Uttarakhand Combined State Civil/Upper Subordinate Services Examination-2026-- Notification, Advertisement and Online Application ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "--> 10-09-2026 --> Chief Fire Officer Exam-2026-- Final Rejection List ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "--> 10-09-2026 --> Uttarakhand Combined State Civil Lower Subordinate Services Examination-2024 --Candidature Cancelled List ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "--> 14-09-2026 --> Additional Private Secretary Exam-2024-- Office Memo ( Representation Disposal) ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "--> 24-08-2026 --> District Sports Officer Exam-2025-- Notification, Rejection List ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "--> 24-08-2026 --> Tax and Revenue Inspector Examination- 2026-- Notification regarding Edit/Correction of Online Application Form, Detailed Notification ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "--> 25-08-2026 --> Veterinary Officers Exam - 2026 -- Notification, Advertisement and Online Application ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "03-08-2026 Directorate of Geology and Mining, Uttarakhand – Assistant Geologist, Mining Officer and Assistant Chemist (Group ‘B’) Examination – 2026-- Notification, Detailed Notification, Checklist and Self Declaration regarding Difference in Name ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "07-08-2026 Tax and Revenue Inspector Examination- 2026- Notification regarding extension of Online Application ( Recruitment Notifications )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "09-09-2026 Uttarakhand Combined State Civil/Upper Subordinate Services Examination-2026-- Notification, Advertisement and Online Application ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "10-09-2026 Chief Fire Officer Exam-2026-- Final Rejection List ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "10-09-2026 Uttarakhand Combined State Civil Lower Subordinate Services Examination-2024 --Candidature Cancelled List ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "14-09-2026 Additional Private Secretary Exam-2024-- Office Memo ( Representation Disposal) ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "18-08-2026 Assistant Conservator of Forest, Logging Officer and Forest Range Officer Combined Examination-2025 -- Notification, Document Verification Programme, Checklist, Self Declaration regarding Difference in Name and Format 02,03,04 ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "24-08-2026 District Sports Officer Exam-2025-- Notification, Rejection List ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "24-08-2026 Tax and Revenue Inspector Examination- 2026-- Notification regarding Edit/Correction of Online Application Form, Detailed Notification ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "25-08-2026 Veterinary Officers Exam - 2026 -- Notification, Advertisement and Online Application ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "29-07-2026 Additional Private Secretary Exam-2024 -- Candidature Cancelled List ( Recruitment Notification )",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "Recruitment Notifications",
+          "url": "https://psc.uk.gov.in/candidate-corner/recruitment"
+        },
+        {
+          "title": "--> 14-09-2026 --> Additional Private Secretary Exam-2024 -- Notification, Selection Result, Cut Off Marks, Final Answer Key (General Studies) and Marks Of Candidates ( Results )",
+          "url": "https://psc.uk.gov.in/candidate-corner/results"
+        },
+        {
+          "title": "03-08-2026 Uttarakhand Special Subordinate Education (Lecturer-Group 'C') Services General/Women Branch-2020-- Notification, Selection Result (PH Backlog) and Cut Off Marks ( Results )",
+          "url": "https://psc.uk.gov.in/candidate-corner/results"
+        },
+        {
+          "title": "14-09-2026 Additional Private Secretary Exam-2024 -- Notification, Selection Result, Cut Off Marks, Final Answer Key (General Studies) and Marks Of Candidates ( Results )",
+          "url": "https://psc.uk.gov.in/candidate-corner/results"
+        },
+        {
+          "title": "17-08-2026 Assistant Conservator of Forest, Logging Officer and Forest Range Officer Combined Examination-2025-- Notification and Mains (Written) Exam Result ( Results )",
+          "url": "https://psc.uk.gov.in/candidate-corner/results"
+        },
+        {
+          "title": "Results",
+          "url": "https://psc.uk.gov.in/candidate-corner/results"
+        },
+        {
+          "title": "--> 31-08-2026 --> Syllabus- Junior Engineer under Uttarakhand Combined Engineering Service Examination ( Syllabus )",
+          "url": "https://psc.uk.gov.in/candidate-corner/syllabus"
+        },
+        {
+          "title": "--> 31-08-2026 --> Syllabus-- Assistant Engineer under Uttarakhand Combined Engineering Service Examination ( Syllabus )",
+          "url": "https://psc.uk.gov.in/candidate-corner/syllabus"
+        },
+        {
+          "title": "31-08-2026 Syllabus- Junior Engineer under Uttarakhand Combined Engineering Service Examination ( Syllabus )",
+          "url": "https://psc.uk.gov.in/candidate-corner/syllabus"
+        },
+        {
+          "title": "31-08-2026 Syllabus-- Assistant Engineer under Uttarakhand Combined Engineering Service Examination ( Syllabus )",
+          "url": "https://psc.uk.gov.in/candidate-corner/syllabus"
+        },
+        {
+          "title": "Syllabus",
+          "url": "https://psc.uk.gov.in/candidate-corner/syllabus"
+        },
+        {
+          "title": "Video",
+          "url": "https://psc.uk.gov.in/candidate-corner/usermanual"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://psc.uk.gov.in/candidate-corner/verifydocs"
+        },
+        {
+          "title": "Chairman's Message",
+          "url": "https://psc.uk.gov.in/chairman-message"
+        },
+        {
+          "title": "Citizen Charter",
+          "url": "https://psc.uk.gov.in/citizen-charter"
+        },
+        {
+          "title": "Annual Report",
+          "url": "https://psc.uk.gov.in/commission/annualreport"
+        },
+        {
+          "title": "Newsletter",
+          "url": "https://psc.uk.gov.in/commission/newsletter"
+        },
+        {
+          "title": "Composition of the Commission",
+          "url": "https://psc.uk.gov.in/commission/presentcommission"
+        },
+        {
+          "title": "Present Commission",
+          "url": "https://psc.uk.gov.in/commission/presentcommission"
+        },
+        {
+          "title": "Press Releases",
+          "url": "https://psc.uk.gov.in/commission/pressrelease"
+        },
+        {
+          "title": "RTI Manuals",
+          "url": "https://psc.uk.gov.in/commission/rtimanuals"
+        },
+        {
+          "title": "Rules of Procedure",
+          "url": "https://psc.uk.gov.in/commission/rulesprocedure"
+        },
+        {
+          "title": "Suggestions",
+          "url": "https://psc.uk.gov.in/commission/suggestions"
+        },
+        {
+          "title": "--> 17-09-2026 --> Office Notice for Taking Quotation Rates (Repairing and Painting Work) ( Tenders )",
+          "url": "https://psc.uk.gov.in/commission/tenders"
+        },
+        {
+          "title": "01-08-2026 Corrigendum regarding proposal for providing services of Jammers on turnkey basis during various exams conducted by UKPSC. ( Tenders )",
+          "url": "https://psc.uk.gov.in/commission/tenders"
+        },
+        {
+          "title": "12-08-2026 Office Notice for Taking Quotation Rates (CCTV Installation) ( Tenders )",
+          "url": "https://psc.uk.gov.in/commission/tenders"
+        },
+        {
+          "title": "17-08-2026 E-Tender For hiring diesel vehicles for Government Work ( Tenders )",
+          "url": "https://psc.uk.gov.in/commission/tenders"
+        },
+        {
+          "title": "17-09-2026 Office Notice for Taking Quotation Rates (Repairing and Painting Work) ( Tenders )",
+          "url": "https://psc.uk.gov.in/commission/tenders"
+        },
+        {
+          "title": "Tenders & Ads",
+          "url": "https://psc.uk.gov.in/commission/tenders"
+        },
+        {
+          "title": "Weeding Document",
+          "url": "https://psc.uk.gov.in/commission/weedingdocument"
+        },
+        {
+          "title": "Committees",
+          "url": "https://psc.uk.gov.in/committees"
+        },
+        {
+          "title": "Constitutional Powers",
+          "url": "https://psc.uk.gov.in/constitutional-powers"
+        },
+        {
+          "title": "Controller Of Examination",
+          "url": "https://psc.uk.gov.in/controller-of-examination"
+        },
+        {
+          "title": "Deputy Secretaries",
+          "url": "https://psc.uk.gov.in/deputy-secretaries"
+        },
+        {
+          "title": "Different Sections",
+          "url": "https://psc.uk.gov.in/different-sections"
+        },
+        {
+          "title": "Downloads & Plugins",
+          "url": "https://psc.uk.gov.in/downloadsplugins"
+        },
+        {
+          "title": "--> 01-09-2026 --> Exam Calendar -2026-27 (Updated) ( Exam Calendar )",
+          "url": "https://psc.uk.gov.in/exam%20calendar"
+        },
+        {
+          "title": "01-09-2026 Exam Calendar -2026-27 (Updated) ( Exam Calendar )",
+          "url": "https://psc.uk.gov.in/exam%20calendar"
+        },
+        {
+          "title": "Exam Calendar",
+          "url": "https://psc.uk.gov.in/exam%20calendar"
+        },
+        {
+          "title": "Expenses",
+          "url": "https://psc.uk.gov.in/expenses"
+        },
+        {
+          "title": "Finance Controller",
+          "url": "https://psc.uk.gov.in/finance%20controller"
+        },
+        {
+          "title": "Former Hon'ble Chairmen",
+          "url": "https://psc.uk.gov.in/former-hon'ble-chairmen"
+        },
+        {
+          "title": "Former Hon'ble Members",
+          "url": "https://psc.uk.gov.in/former-hon'ble-members"
+        },
+        {
+          "title": "Functions",
+          "url": "https://psc.uk.gov.in/function"
+        },
+        {
+          "title": "Functions",
+          "url": "https://psc.uk.gov.in/functions"
+        },
+        {
+          "title": "Hon'ble Chairman",
+          "url": "https://psc.uk.gov.in/hon'ble-chairman"
+        },
+        {
+          "title": "Hon'ble Members",
+          "url": "https://psc.uk.gov.in/hon'ble%20members"
+        },
+        {
+          "title": "How to reach",
+          "url": "https://psc.uk.gov.in/how-to-reach"
+        },
+        {
+          "title": "Important Ones",
+          "url": "https://psc.uk.gov.in/important-ones"
+        },
+        {
+          "title": "Joint Secretaries",
+          "url": "https://psc.uk.gov.in/joint-secretaries"
+        },
+        {
+          "title": "Legal Advisor",
+          "url": "https://psc.uk.gov.in/law%20advisor"
+        },
+        {
+          "title": "Library and Documentation Centre",
+          "url": "https://psc.uk.gov.in/library%20and%20documentation%20centre"
+        },
+        {
+          "title": "हिन्दी में",
+          "url": "https://psc.uk.gov.in/local/lang"
+        },
+        {
+          "title": "mitraprivacypolicy",
+          "url": "https://psc.uk.gov.in/mitraprivacypolicy"
+        },
+        {
+          "title": "Mitraprivacypolicy",
+          "url": "https://psc.uk.gov.in/mitraprivacypolicy"
+        },
+        {
+          "title": "Other Recruitment Bodies",
+          "url": "https://psc.uk.gov.in/other%20recruitment%20bodies"
+        },
+        {
+          "title": "UPSC & Other State PSC",
+          "url": "https://psc.uk.gov.in/otherstatepsc"
+        },
+        {
+          "title": "Power to make Regulations",
+          "url": "https://psc.uk.gov.in/power-to-make-regulations"
+        },
+        {
+          "title": "Prohibition as to the holding of offices",
+          "url": "https://psc.uk.gov.in/prohibition-as-to-the-holding-of-offices"
+        },
+        {
+          "title": "Public Information Officers",
+          "url": "https://psc.uk.gov.in/public-information-officers"
+        },
+        {
+          "title": "Right to Information",
+          "url": "https://psc.uk.gov.in/public-information-officers"
+        },
+        {
+          "title": "Admit Card",
+          "url": "https://psc.uk.gov.in/quicklinks/admit-card"
+        },
+        {
+          "title": "Answer Keys",
+          "url": "https://psc.uk.gov.in/quicklinks/answer-keys"
+        },
+        {
+          "title": "DPC",
+          "url": "https://psc.uk.gov.in/quicklinks/dpc"
+        },
+        {
+          "title": "Interviews",
+          "url": "https://psc.uk.gov.in/quicklinks/interviews"
+        },
+        {
+          "title": "Recruitment Notifications",
+          "url": "https://psc.uk.gov.in/quicklinks/recruitment-notifications"
+        },
+        {
+          "title": "Results",
+          "url": "https://psc.uk.gov.in/quicklinks/results"
+        },
+        {
+          "title": "Removal and suspension of a member",
+          "url": "https://psc.uk.gov.in/removal-and-suspension-of-a-member"
+        },
+        {
+          "title": "Reports",
+          "url": "https://psc.uk.gov.in/reports"
+        },
+        {
+          "title": "Screen Reader Access",
+          "url": "https://psc.uk.gov.in/screen-reader"
+        },
+        {
+          "title": "Secretaries",
+          "url": "https://psc.uk.gov.in/secretaries"
+        },
+        {
+          "title": "Special Ones",
+          "url": "https://psc.uk.gov.in/special-ones"
+        },
+        {
+          "title": "Structure",
+          "url": "https://psc.uk.gov.in/structure"
+        },
+        {
+          "title": "Under Secretaries",
+          "url": "https://psc.uk.gov.in/under-secretaries"
+        },
+        {
+          "title": "Vision & Mission",
+          "url": "https://psc.uk.gov.in/visionandmission"
+        },
+        {
+          "title": "Website Policy",
+          "url": "https://psc.uk.gov.in/websitepolicy"
+        },
+        {
+          "title": "Web Information Manager.",
+          "url": "https://psc.uk.gov.in/wim"
+        },
+        {
+          "title": "Uttarakhand Govt. Portal",
+          "url": "https://uk.gov.in/"
+        }
+      ]
+    },
+    "mppsc-home": {
+      "fingerprint": "23cc78322654c9471c167f7185745bc2021cf3c01439dfbcc7315325e9273790",
+      "links": [
+        {
+          "title": "Government Calendar",
+          "url": "http://diary.mp.gov.in/"
+        },
+        {
+          "title": "Commission Chairman",
+          "url": "http://mppsc.mp.gov.in/Member/Chairman"
+        },
+        {
+          "title": "Commission Members",
+          "url": "http://mppsc.mp.gov.in/Member/Current"
+        },
+        {
+          "title": "Members",
+          "url": "http://mppsc.mp.gov.in/Member/Previous"
+        },
+        {
+          "title": "Chairman",
+          "url": "http://mppsc.mp.gov.in/Member/Previouschairman"
+        },
+        {
+          "title": "Secretary",
+          "url": "http://mppsc.mp.gov.in/Member/Secretary"
+        },
+        {
+          "title": "Calendar",
+          "url": "https://diary.mp.gov.in/"
+        },
+        {
+          "title": "--> -->",
+          "url": "https://mppsc.mp.gov.in/"
+        },
+        {
+          "title": "Skip to Nav Content",
+          "url": "https://mppsc.mp.gov.in/"
+        },
+        {
+          "title": "Admit Cards",
+          "url": "https://mppsc.mp.gov.in/Admitcard"
+        },
+        {
+          "title": "Advertisements",
+          "url": "https://mppsc.mp.gov.in/Advertisement"
+        },
+        {
+          "title": "Recruitment Advertisements",
+          "url": "https://mppsc.mp.gov.in/Advertisement"
+        },
+        {
+          "title": "Annual Property Returns",
+          "url": "https://mppsc.mp.gov.in/annual-property-returns"
+        },
+        {
+          "title": "Annual Reports",
+          "url": "https://mppsc.mp.gov.in/Annualreport"
+        },
+        {
+          "title": "Answer Key",
+          "url": "https://mppsc.mp.gov.in/Answer"
+        },
+        {
+          "title": "Apply Online",
+          "url": "https://mppsc.mp.gov.in/Applyonline"
+        },
+        {
+          "title": "Calendar",
+          "url": "https://mppsc.mp.gov.in/calendar"
+        },
+        {
+          "title": "Exam Calendar",
+          "url": "https://mppsc.mp.gov.in/calendar"
+        },
+        {
+          "title": "Interview Call Letter",
+          "url": "https://mppsc.mp.gov.in/Callletter"
+        },
+        {
+          "title": "Chairman's Message",
+          "url": "https://mppsc.mp.gov.in/chairmans-message"
+        },
+        {
+          "title": "Download Formats",
+          "url": "https://mppsc.mp.gov.in/Downloadformats"
+        },
+        {
+          "title": "E-Newsletter (Samvadiya)",
+          "url": "https://mppsc.mp.gov.in/Enews"
+        },
+        {
+          "title": "Examination Rules",
+          "url": "https://mppsc.mp.gov.in/examination-rules"
+        },
+        {
+          "title": "Hyperlink Policy",
+          "url": "https://mppsc.mp.gov.in/hyperlink-policy"
+        },
+        {
+          "title": "Upcoming Last Dates Alert",
+          "url": "https://mppsc.mp.gov.in/importantlastdate"
+        },
+        {
+          "title": "हिन्दी",
+          "url": "https://mppsc.mp.gov.in/LanguageSwitcher/switchLang/hindi"
+        },
+        {
+          "title": "विषय विशेषज्ञ पोर्टल",
+          "url": "https://mppsc.mp.gov.in/login"
+        },
+        {
+          "title": "Mark Sheet",
+          "url": "https://mppsc.mp.gov.in/Marksheet"
+        },
+        {
+          "title": "Mocktest",
+          "url": "https://mppsc.mp.gov.in/Mocktest"
+        },
+        {
+          "title": "आयोग द्वारा आयोजित परीक्षाओं में वस्‍तुनिष्‍ठ प्रश्न-पत्र के पूर्णांक यथावत रखते हुए प्रश्‍नों पर अभ्‍यर्थियों से आपत्तियां प्राप्‍त करने संबंधित दिशा-निर्देश, दिनांक 27/02/2025 ।",
+          "url": "https://mppsc.mp.gov.in/news-details/nid/V1FCZnF0OFRodFpDVy9vOHZlNlFOQT09"
+        },
+        {
+          "title": "विषय-विशेषज्ञों हेतु ऑनलाइन पोर्टल के संबंध में सूचना, दिनांक 01/01/2025",
+          "url": "https://mppsc.mp.gov.in/news-details/nid/VVpUbm1kSnhSejFZdDN2SnRkMTB4Zz09"
+        },
+        {
+          "title": "View All",
+          "url": "https://mppsc.mp.gov.in/NoticeBoard"
+        },
+        {
+          "title": "Previous Year Question Papers",
+          "url": "https://mppsc.mp.gov.in/Oldquestionpaper"
+        },
+        {
+          "title": "Online Preference",
+          "url": "https://mppsc.mp.gov.in/Onlinepreference"
+        },
+        {
+          "title": "Result",
+          "url": "https://mppsc.mp.gov.in/Results"
+        },
+        {
+          "title": "Results",
+          "url": "https://mppsc.mp.gov.in/Results"
+        },
+        {
+          "title": "RTI",
+          "url": "https://mppsc.mp.gov.in/rti"
+        },
+        {
+          "title": "Sample Question Answer Booklets",
+          "url": "https://mppsc.mp.gov.in/Sampleqa"
+        },
+        {
+          "title": "Screen Reader",
+          "url": "https://mppsc.mp.gov.in/screen-reader"
+        },
+        {
+          "title": "Site Map",
+          "url": "https://mppsc.mp.gov.in/sitemap"
+        },
+        {
+          "title": "Organization Structure",
+          "url": "https://mppsc.mp.gov.in/structure"
+        },
+        {
+          "title": "Syllabus and Scheme",
+          "url": "https://mppsc.mp.gov.in/Syllabus"
+        },
+        {
+          "title": "Tenders",
+          "url": "https://mppsc.mp.gov.in/Tender"
+        },
+        {
+          "title": "Terms of Use",
+          "url": "https://mppsc.mp.gov.in/terms-of-use"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Director, Farmer Welfare and Agriculture Development Department (Field and Extension) 2025 (Advt. No. 35/2025), Dated 31/12/2025",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_AD_Farmer_Welfare_Agri_Dev_Dept_Field_Extension_Exam_2025_Dated_31_12_2025.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Director, Farmers Welfare and Agriculture Development (Statistics) 2026 (Advt. No./09/2026), Dated 10/04/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_AD_Farmers_Welfare_and_Agriculture_Development_Statistics_2026_Dated_10_04_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Director /Veterinary Assistant Surgeon/Veterinary Extension Officer 2026 (Adv No./04/2026), Dated 10/03/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_AD_Veterinary_Assistant_Surgeon_VEO_2026_Dated_10_03_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant District Public Prosecution Officer 2026, Dated 10/03/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_ADPO_Exam_2026_Dated_10_03_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Accounts Officer/Assistant Director Farmer Welfare and Agriculture Development Department (Accounts and Establishment) 2026 (Advt. No. 08/2026), Dated 10/04/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Accounts_Officer_AD_Farmer_Welfare_2026_Dated_10_04_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Director 2026, Department of Higher Education, Government of Madhya Pradesh (Advt. No. 12/2026), Dated 06/07/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_2026_Dated_06_07_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Director Fisheries 2026, Department of Fishermen Welfare and Fisheries Development Government of Madhya Pradesh (Advt. No. 11/2026), Dated 06/07/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_Fisheries_2026_Dated_06_07_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Professor (Botany) Exam 2025 (Higher Education Department - Government of Madhya Pradesh) (Advt. No./25/2025), Dated 30/12/2025",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Professor_Botany_Exam_2025_Dated_30_12_2025.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Professor (Chemistry) Exam 2025 (Higher Education Department - Government of Madhya Pradesh) (Advt. No./24/2025), Dated 30/12/2025",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Professor_Chemistry_Exam_2025_Dated_30_12_2025.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Professor (History) Exam 2025 (Higher Education Department - Government of Madhya Pradesh) (Advt. No./14/2025), Dated 30/12/2025",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Professor_History_Exam_2025_Dated_30_12_2025.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Professor (Mathematics) Exam 2025 (Higher Education Department - Government of Madhya Pradesh) (Advt. No./27/2025), Dated 30/12/2025",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Professor_Mathematics_Exam_2025_Dated_30_12_2025.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Professor (Physics) Exam 2025 (Higher Education Department - Government of Madhya Pradesh) (Advt. No./23/2025), Dated 30/12/2025",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Professor_Physics_Exam_2025_Dated_30_12_2025.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Research Officer Exam 2024 (Advt. No./12/2024) Dated 28/12/2024",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Research_Officer_2024_Dated_28_12_2024.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Assistant Town Planner, 2026 (Urban Development Department - Government of Madhya Pradesh) (Advt. No./02/2026), Dated 02/02/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Town_Planner_Dated_02_02_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Ayurveda Medical Officer Examination 2025 (Advt. No./31/2025), Dated 31/12/2025",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Ayurveda_Medical_Officer_Exam_2025_Dated_31_12_2025.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Inspector of Boiler Grade-2, 2026 (Industrial Policy and Investment Promotion Department - Government of Madhya Pradesh) (Advt. No./01/2026), Dated 21/01/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Inspector_Boiler_Grade_2_2026_Dated_21_01_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Internal Accounts Examiner Officer Exam 2026 (Advt. No./10/2026), Dated 10/04/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Internal_Accounts_Examiner_Officer__2026_Dated_10_04_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Scientific Officer Biology 2026 (Adv No./07/2026), Dated 16/03/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Scientific_Officer_Biology_2026_Dated_16_03_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Scientific Officer Chemistry 2026 (Adv No./06/2026), Dated 16/03/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Scientific_Officer_Chemistry_2026_Dated_16_03_2026.pdf"
+        },
+        {
+          "title": "Recruitment Advertisement for Scientific Officer Physics 2026 (Adv No./05/2026), Dated 16/03/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Scientific_Officer_Physics_2026_Dated_16_03_2026.pdf"
+        },
+        {
+          "title": "Caveat Vigyapti on Selection List of Assistant Professor (Commerce) Exam 2024, Dated 21/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Caveat_Vigyapti_Assistant_Professor_Commerce_Exam_2024_Dated_21_09_2026.pdf"
+        },
+        {
+          "title": "Caveat Vigyapti on Selection List of Assistant Registrar Exam 2025, Dated 15/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Caveat_Vigyapti_Assistant_Registrar_Exam_2025_Dated_15_09_2026.pdf"
+        },
+        {
+          "title": "Caveat Vigyapti on Selection List of Scientific Officer Chemistry 2023, Dated 07/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Caveat_Vigyapti_Scientific_Officer_Chemistry_2023_Dated_07_09_2026.pdf"
+        },
+        {
+          "title": "Caveat Vigyapti on Written Exam Result - Assistant Professor (Economics) Exam 2025, Dated 11/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Caveat_Vigyapti_Written_Exam_Result_Assistant_Professor_Economics_Exam_2025_Dated_11_09_2026.pdf"
+        },
+        {
+          "title": "सहायक जिला लोक अभियोजन अधिकारी (Assistant District Public Prosecution Officer) विज्ञापन 2026 - परीक्षा के आयोजन के संबंध में सूचना, दिनांक 07/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Corrigendum_ADPPO_Exam_2026_Dated_07_09_2026.pdf"
+        },
+        {
+          "title": "सहायक प्राध्‍यापकों के पदों की पूर्ति हेतु विज्ञापन 2025 - ऑनलाइन आवेदन करने की अंतिम तिथि में वृद्धि एवं परीक्षा तिथि में संशोधन की सूचना, दिनांक 07/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Corrigendum_Assistant_Professor_2025_Dated_07_09_2026.pdf"
+        },
+        {
+          "title": "सहायक प्राध्‍यापक वनस्‍पतिशास्‍त्र (Botany) के पदों की पूर्ति हेतु विज्ञापन 2025 - परीक्षा तिथि स्‍थगन के संबंध में सूचना, दिनांक 10.09.2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Corrigendum_Assistant_Professor_Botany_Exam_2025_Dated_10_09_2026.pdf"
+        },
+        {
+          "title": "सहायक प्राध्‍यापक (कम्‍प्‍यूटर विज्ञान) परीक्षा - 2025 के पद हेतु साक्षात्‍कार आयोजन संबंधी सूचना, दिनांक 17/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Computer_Science_Exam_2025_Dated_17_09_2026.pdf"
+        },
+        {
+          "title": "सहायक प्राध्‍यापक (अंग्रेजी) परीक्षा - 2024 के पद हेतु उम्‍मीदवारी निरस्‍त किए आवेदक से प्राप्‍त आपत्ति अभ्‍यावेदन का निराकरण किए जाने की सूचना, दिनांक 11/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_English_Exam_2024_Dated_11_09_2026.pdf"
+        },
+        {
+          "title": "सहायक प्राध्‍यापक (राजनीतिशास्‍त्र) परीक्षा - 2024 के पद हेतु उम्‍मीदवारी निरस्‍त किए आवेदकों से प्राप्‍त आपत्ति अभ्‍यावेदनों का निराकरण किए जाने की सूचना, दिनांक 16/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Political_Science_Exam_2024.pdf"
+        },
+        {
+          "title": "सहायक प्राध्‍यापक (प्राणीशास्‍त्र) परीक्षा - 2024 के पद हेतु उम्‍मीदवारी निरस्‍त किए आवेदकों से प्राप्‍त आपत्ति अभ्‍यावेदनों का निराकरण किए जाने की सूचना, दिनांक 07/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Zoology_Exam_2024_Dated_07_09_2026.pdf"
+        },
+        {
+          "title": "सहायक प्राध्यापक (प्राणीशास्त्र) परीक्षा - 2024 के पद हेतु उम्मीदवारी निरस्त किए आवेदकों से प्राप्त आपत्ति अभ्यावेदनों का निराकरण किए जाने की सूचना, दिनांक 10/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Zoology_Exam_2024_Dated_10_09_2026.pdf"
+        },
+        {
+          "title": "सहायक प्राध्यापक (गणित) परीक्षा - 2024 के पद हेतु माननीय न्यायालय में दायर याचिका खारिज होने से उम्मीदवारी निरस्त किए जाने संबंधी सूचना, दिनांक 10/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Assistant_Professor_Mathematics_Exam_2024_Dated_10_09_20261.pdf"
+        },
+        {
+          "title": "Additional Obtained Mark List - Assistant Manager Exam 2024, Dated 17/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Additional_Obtained_Mark_List_Assistant_Manager_Exam_2024_Dated_17_09_2026.pdf"
+        },
+        {
+          "title": "Additional Selection List - Assistant Manager Exam 2024, Dated 17/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Additional_Selection_List_Assistant_Manager_Exam_2024_Dated_17_09_2026.pdf"
+        },
+        {
+          "title": "Obtained Mark List - Assistant Professor (Commerce) Exam 2024, Dated 21/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Obtained_Mark_List_Assistant_Professor_Commerce_Exam_2024_Dated_21_09_2026.pdf"
+        },
+        {
+          "title": "Obtained Mark List - Assistant Registrar Exam 2025, Dated 15/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Obtained_Mark_List_Assistant_Registrar_Exam_2025_Dated_15_09_2026.pdf"
+        },
+        {
+          "title": "Obtained Mark List - Scientific Officer Chemistry 2023, Dated 07/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Obtained_Mark_List_Scientific_Officer_Chemistry_2023_Dated_07_09_2026.pdf"
+        },
+        {
+          "title": "Provisional Answer Key - Assistant Town Planner Exam 2026, Dated 21/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Provisional_Answer_Key_Assistant_Town_Planner_2026_Dated_21_09_20261.pdf"
+        },
+        {
+          "title": "Provisional Answer Key - Specialist Ayurved Exam 2024, Dated 21/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Provisional_Answer_Key_Specialist_Ayurved_2024_Dated_21_09_2026.pdf"
+        },
+        {
+          "title": "Selection List - Assistant Professor (Commerce) Exam 2024, Dated 21/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Selection_List_Assistant_Professor_Commerce_Exam_2024_Dated_21_09_2026.pdf"
+        },
+        {
+          "title": "Selection List - Assistant Registrar Exam 2025, Dated 15/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Selection_List_Assistant_Registrar_Exam_2025_Dated_15_09_2026.pdf"
+        },
+        {
+          "title": "Selection List - Scientific Officer Chemistry 2023, Dated 07/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Selection_List_Scientific_Officer_Chemistry_2023_Dated_07_09_2026.pdf"
+        },
+        {
+          "title": "Written Exam Result - Assistant Professor (Economics) Exam 2025, Dated 11/09/2026",
+          "url": "https://mppsc.mp.gov.in/uploads/files/Written_Exam_Result_Assistant_Professor_Economics_Exam_2025_Dated_11_09_2026.pdf"
+        },
+        {
+          "title": "View All »",
+          "url": "https://mppsc.mp.gov.in/whats-new"
+        },
+        {
+          "title": "CoE, MPSeDC",
+          "url": "https://mpsedc.mp.gov.in/?page=7vG6I3NGGec1YPQRwT3nWQ%3D%3D"
+        }
+      ]
+    },
+    "cgpsc-home": {
+      "fingerprint": "6f4593fe5128b8584a7382e980f8ef2b8e6ad09ca89b3ac465857c22ddca5f7b",
+      "links": [
+        {
+          "title": "हिन्दी",
+          "url": "https://psc.cg.gov.in/"
+        },
+        {
+          "title": "About CGPSC",
+          "url": "https://psc.cg.gov.in/About_Us.html"
+        },
+        {
+          "title": "Advertisement",
+          "url": "https://psc.cg.gov.in/Advertisement.php"
+        },
+        {
+          "title": "Directory",
+          "url": "https://psc.cg.gov.in/Directory.html"
+        },
+        {
+          "title": "छत्तीसगढ़ लोक सेवा आयोग CHHATTISGARH PUBLIC SERVICE COMMISSION",
+          "url": "https://psc.cg.gov.in/Home_Welcome.php"
+        },
+        {
+          "title": "छत्‍तीसगढ़ लोक सेवा आयोग CHHATTISGARH PUBLIC SERVICE COMMISSION",
+          "url": "https://psc.cg.gov.in/Home_Welcome.php"
+        },
+        {
+          "title": "How To Reach",
+          "url": "https://psc.cg.gov.in/How_To_Reach.html"
+        },
+        {
+          "title": "Our Previous Website",
+          "url": "https://psc.cg.gov.in/index.htm"
+        },
+        {
+          "title": "CGPSC Important Judgements",
+          "url": "https://psc.cg.gov.in/judgements.html"
+        },
+        {
+          "title": "Model Answer",
+          "url": "https://psc.cg.gov.in/Modelanswer.php"
+        },
+        {
+          "title": "Notifications",
+          "url": "https://psc.cg.gov.in/Notifications.php"
+        },
+        {
+          "title": "Those Who Served",
+          "url": "https://psc.cg.gov.in/Reminiscences.html"
+        },
+        {
+          "title": "Result",
+          "url": "https://psc.cg.gov.in/Result.php"
+        },
+        {
+          "title": "CGPSC Rules of Procedure & Viniyam.",
+          "url": "https://psc.cg.gov.in/ROP.html"
+        },
+        {
+          "title": "RTI",
+          "url": "https://psc.cg.gov.in/RTI.html"
+        },
+        {
+          "title": "Tenders",
+          "url": "https://psc.cg.gov.in/tenders.php"
+        },
+        {
+          "title": "Vision and Mission",
+          "url": "https://psc.cg.gov.in/Vision_and_Mission.html"
+        }
+      ]
+    },
+    "ibps-crp-updates": {
+      "fingerprint": "4ef87934a615d40f16334d4500a2b926658469bee3cce4c58bd1c1a13bd30ddb",
+      "links": [
+        {
+          "title": "Academics",
+          "url": "https://www.ibps.in/index.php/academics/"
+        },
+        {
+          "title": "CAREERS",
+          "url": "https://www.ibps.in/index.php/careers"
+        },
+        {
+          "title": "Careers",
+          "url": "https://www.ibps.in/index.php/careers/"
+        },
+        {
+          "title": "Former Chairmen of IBPS",
+          "url": "https://www.ibps.in/index.php/chairmen/"
+        },
+        {
+          "title": "15 Sep 26 Provisional Allotment under Reserve List for CRP-CSA-XV",
+          "url": "https://www.ibps.in/index.php/clerical-cadre-xv/"
+        },
+        {
+          "title": "Clients and Members",
+          "url": "https://www.ibps.in/index.php/clientele/"
+        },
+        {
+          "title": "21 Sep 26 Last Date of application for CRP-RRBs-XV extended to 27th September 2026",
+          "url": "https://www.ibps.in/index.php/crp-updates/"
+        },
+        {
+          "title": "IBPS Social Responsibility",
+          "url": "https://www.ibps.in/index.php/csr/"
+        },
+        {
+          "title": "Director’s Message",
+          "url": "https://www.ibps.in/index.php/directors/"
+        },
+        {
+          "title": "Director’s Message",
+          "url": "https://www.ibps.in/index.php/directorsmessage/"
+        },
+        {
+          "title": "About The Founders",
+          "url": "https://www.ibps.in/index.php/founders/"
+        },
+        {
+          "title": "Gallery",
+          "url": "https://www.ibps.in/index.php/gallery/"
+        },
+        {
+          "title": "Governing Board",
+          "url": "https://www.ibps.in/index.php/governingboardofibps/"
+        },
+        {
+          "title": "Growth",
+          "url": "https://www.ibps.in/index.php/growth/"
+        },
+        {
+          "title": "HOME RECRUITMENT EXAMS",
+          "url": "https://www.ibps.in/index.php/home"
+        },
+        {
+          "title": "Management & Faculty Members",
+          "url": "https://www.ibps.in/index.php/management/"
+        },
+        {
+          "title": "Organisational Divisions",
+          "url": "https://www.ibps.in/index.php/organisational-divisions/"
+        },
+        {
+          "title": "Organisational Structure",
+          "url": "https://www.ibps.in/index.php/organisational-structure/"
+        },
+        {
+          "title": "HIGHLIGHTS",
+          "url": "https://www.ibps.in/index.php/ourhighlights"
+        },
+        {
+          "title": "Highlights",
+          "url": "https://www.ibps.in/index.php/ourhighlights/"
+        },
+        {
+          "title": "OVERVIEW",
+          "url": "https://www.ibps.in/index.php/overviewofibps"
+        },
+        {
+          "title": "Overview",
+          "url": "https://www.ibps.in/index.php/overviewofibps/"
+        },
+        {
+          "title": "Policies",
+          "url": "https://www.ibps.in/index.php/policies-rules-guidelines/"
+        },
+        {
+          "title": "Policies, Rules & Guidelines",
+          "url": "https://www.ibps.in/index.php/policies-rules-guidelines/"
+        },
+        {
+          "title": "CRP - RRBs CRP - CLERKS CRP - PSBs --> CRP - PO/MTs CRP - SPECIALIST OFFICERS OVERVIEW CAREERS TENDERS HIGHLIGHTS ACADEMICS GALLERY SERVICES Personnel Selection Services for Recruitment, Promotion and Placement Assessment Centres Capacity Building Training for Interviewing Skills, Conduct of Group Discussions Nominating Experts CONTACT US Copyright 2026 Institute of banking personnel selection FAQ CRP Clerical cadre CRP PO/MT CRP RRB CRP Specialist Officer HOME",
+          "url": "https://www.ibps.in/index.php/regional-rural-bank"
+        },
+        {
+          "title": "01 Sep 26 Apply Online for Common Recruitment Process under CRP-RRBs-XV",
+          "url": "https://www.ibps.in/index.php/rural-bank-xv/"
+        },
+        {
+          "title": "01 Sep 26 Notification for CRP-RRB-XV",
+          "url": "https://www.ibps.in/index.php/rural-bank-xv/"
+        },
+        {
+          "title": "Services of IBPS",
+          "url": "https://www.ibps.in/index.php/services/"
+        },
+        {
+          "title": "Strengths",
+          "url": "https://www.ibps.in/index.php/strength/"
+        },
+        {
+          "title": "TENDERS",
+          "url": "https://www.ibps.in/index.php/tenders"
+        },
+        {
+          "title": "Tenders",
+          "url": "https://www.ibps.in/index.php/tenders/"
+        },
+        {
+          "title": "Volume of Activities",
+          "url": "https://www.ibps.in/index.php/volumeofactivities/"
+        },
+        {
+          "title": "15 Sep 26 Updated Vacancies as on 15.09.2026 for Common Recruitment Process for CRP-RRBs-XV",
+          "url": "https://www.ibps.in/wp-content/uploads/Annexure-I_updated_15.09.2026.pdf"
+        },
+        {
+          "title": "21 Sep 26 Corrigendum Regarding CRP-RRBs-XV",
+          "url": "https://www.ibps.in/wp-content/uploads/Approved_Corrigendum-for-Extension_CRP-RRBs-XV-002.pdf"
+        },
+        {
+          "title": "04 Nov 24 Corrigendum Regarding CRP-Clerks-XIV",
+          "url": "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-Clerks-XIV-28-10-2024.pdf"
+        },
+        {
+          "title": "15 Nov 25 Corrigendum dated 14.11.2025 in connection with CRP-CSA-XV",
+          "url": "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-CSA-XV_Vacancy_update2_14.11.25.pdf"
+        },
+        {
+          "title": "15 Sep 26 Corrigendum dated 15.09.2026 in connection with CRP-RRBs-XV",
+          "url": "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-RRBs-XV-1.pdf"
+        },
+        {
+          "title": "15 Nov 25 Updated Vacancies as on 14.11.2025 for Common Recruitment Process for CRP-CSA-XV",
+          "url": "https://www.ibps.in/wp-content/uploads/CRP-CSA_XV_BANKWISE_STATEWISE_VACANCY_14.11.2025.pdf"
+        },
+        {
+          "title": "28 Oct 25 Updated Vacancies as on 27.10.2025 for Common Recruitment Process for CRP-CSA-XV",
+          "url": "https://www.ibps.in/wp-content/uploads/CRP-CSA_XV_BANKWISE_STATEWISE_VACANCY_27.10.25.pdf"
+        },
+        {
+          "title": "01 Jul 26 Notification for Common Recruitment Process for CRP- PO/MTs-XVI",
+          "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf"
+        },
+        {
+          "title": "01 Jul 26 Notification for Common Recruitment Process for CRP- SPL-XVI",
+          "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification-CRP-SPL-XVI_Final_V1_30.06.2026.pdf"
+        },
+        {
+          "title": "27 Jan 26 Notification Regarding ISO 9001:2015 Certification",
+          "url": "https://www.ibps.in/wp-content/uploads/Final-ISO-IBPS-Notification-27Jan26.pdf"
+        },
+        {
+          "title": "16 Jan 26 Tentative Calendar of CRP (PSBs & RRBs) Online Examinations",
+          "url": "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf"
+        },
+        {
+          "title": "27 Apr 26 Notification on Fraudulent Websites Resembling IBPS",
+          "url": "https://www.ibps.in/wp-content/uploads/IBPS-Notification-Fraud-Websites-27April26.pdf"
+        },
+        {
+          "title": "14 Oct 25 Trade Mark Caution Notice",
+          "url": "https://www.ibps.in/wp-content/uploads/IBPS-Trademark-Caution-Notice.pdf"
+        },
+        {
+          "title": "17 Nov 25 Normated Standards for Flagged Cases of Non-Genuine scores in IBPS Examinations",
+          "url": "https://www.ibps.in/wp-content/uploads/NORMATED-STANDARDS-FOR-FLAGGED-CASES-OF-NON-GENUINE-SCORES.pdf"
+        },
+        {
+          "title": "28 Oct 25 Caution Notice regarding misuse of IBPS proprietary rights.",
+          "url": "https://www.ibps.in/wp-content/uploads/notice-final-1.pdf"
+        },
+        {
+          "title": "30 Jun 26 Window Notification for CRP-PO/MTs -XVI and SPL-XVI",
+          "url": "https://www.ibps.in/wp-content/uploads/PO_SPL_Combined_Window_CRP-XVI.pdf"
+        },
+        {
+          "title": "15 Jan 26 Notice dated 15.01.2026 in connection with CRP-PO/MT-XIV",
+          "url": "https://www.ibps.in/wp-content/uploads/PO-MT-XIV-Notice-15.1.2026.pdf"
+        },
+        {
+          "title": "03 Feb 26 Notification Regarding Revised Advisory and Standard Operating Procedure (SOP) to handle the cases of PwBD",
+          "url": "https://www.ibps.in/wp-content/uploads/Revised-Advisory-and-Standard-Operating-Procedure-SOP-to-handle-the-cases-of-PwBD-candidates.pdf"
+        },
+        {
+          "title": "15 Jan 26 Notice dated 15.01.2026 in connection with CRP-SPL-XIV",
+          "url": "https://www.ibps.in/wp-content/uploads/SPL-XIV-Notice-15.1.2026.pdf"
+        }
+      ]
+    },
+    "rrb-chandigarh-notices": {
+      "fingerprint": "bc2d50098389c0428928226d42534b737ebf7071f54983b03ed0e3bfd79f891a",
+      "links": [
+        {
+          "title": "Government of India, Ministry of Railways Railway Recruitment Board, Chandigarh",
+          "url": "https://rrb.indianrailways.gov.in/"
+        },
+        {
+          "title": "' + response.title + '",
+          "url": "https://rrb.indianrailways.gov.in/'%20+%20'/-/image/'%20+%20response.docName%20+%20'/'%20+%20response.folderName%20+%20'"
+        },
+        {
+          "title": "'+response.createDate+' '+response.title+'",
+          "url": "https://rrb.indianrailways.gov.in/'%20+%20'/-/image/'%20+%20response.docName%20+%20'/'%20+%20response.folderName%20+%20'"
+        },
+        {
+          "title": "'+response.createDate+' '+response.title+'",
+          "url": "https://rrb.indianrailways.gov.in/'+response.externalLink.trim()+'"
+        },
+        {
+          "title": "'+response.title+'",
+          "url": "https://rrb.indianrailways.gov.in/'+response.externalLink.trim()+'"
+        },
+        {
+          "title": "'+response.title+'",
+          "url": "https://rrb.indianrailways.gov.in/'+response.pageLink+'"
+        },
+        {
+          "title": "' + response.leftLogoImage + '",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "01/2018",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "01/2019",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "01/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "01/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "01/2026",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "02/2018",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "02/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "02/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "02/2026",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "03/2018",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "03/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "03/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "03/2026",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "04/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "04/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "04/2026",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "05/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "05/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "05/2026",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "06/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "06/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "07/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "07/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "08/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "08/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "09/2025",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "Archive (CENs)",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "Brief About RRB",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "OCR Search",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "Recruitment (CENs)",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "RPF 01/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "RPF 02/2024",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "RRC 01/2019",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh"
+        },
+        {
+          "title": "Our Team",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh/aboutus/our-team"
+        },
+        {
+          "title": "RTI",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh/connect/rti"
+        },
+        {
+          "title": "Related Links",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh/footer/relatedlinks"
+        },
+        {
+          "title": "Website Policies",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh/footer/websitepolicies"
+        },
+        {
+          "title": "Knowledge Center",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh/header/knowledgecenter"
+        },
+        {
+          "title": "Overview",
+          "url": "https://rrb.indianrailways.gov.in/chandigarh/header/overview"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=02%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=03%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=04%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=05%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Application (Special Notice)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "(01/2024) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(01/2026) Application (Special Notice) (25-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(02/2024) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Application (Special Notice) (04-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Application (Special Notice) (05-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2026) Application (Special Notice) (10-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=02%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(03/2026) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(04/2026) Application (Special Notice) (15-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=04%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Application (Special Notice) (01-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2026) Application (Special Notice) (15-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=05%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2024) Application (Special Notice) (22-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(07/2024) Application (Special Notice) (23-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(08/2025) Application (Special Notice) (11-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Application (Special Notice) (08-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Application (Special Notice) (09-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(RPF 01/2024) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(RPF 02/2024) Application (Special Notice) (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Application+%28Special+Notice%29&cenum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=03%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "City Intimation (Exam)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) City Intimation (Exam) (18-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) City Intimation (Exam) (02-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) City Intimation (Exam) (22-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) City Intimation (Exam) (06-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) City Intimation (Exam) (13-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) City Intimation (Exam) (20-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) City Intimation (Exam) (30-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) City Intimation (Exam) (07-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) City Intimation (Exam) (27-04-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(08/2025) City Intimation (Exam) (04-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) City Intimation (Exam) (25-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=City+Intimation+%28Exam%29&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Document Verification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(01/2024) Document Verification (02-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(01/2024) Document Verification (07-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2024) Document Verification (02-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2024) Document Verification (07-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Document Verification (02-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Document Verification (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2024) Document Verification (02-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(03/2024) Document Verification (08-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) Document Verification (02-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) Document Verification (20-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Document Verification (27-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2024) Document Verification (18-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(05/2024) Document Verification (22-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2024) Document Verification (03-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2024) Document Verification (08-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2024) Document Verification (18-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(07/2024) Document Verification (02-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Document+Verification&cenum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=01%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=02%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "E-Call Letters",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) E-Call Letters (08-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) E-Call Letters (24-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) E-Call Letters (28-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) E-Call Letters (06-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) E-Call Letters (12-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) E-Call Letters (20-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) E-Call Letters (03-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) E-Call Letters (13-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(08/2025) E-Call Letters (10-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=E-Call+Letters&cenum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Results",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Exam Results (12-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Exam Results (21-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Exam Results (30-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) Exam Results (05-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Exam Results (01-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Exam Results (29-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2024) Exam Results (07-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(05/2024) Exam Results (10-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Exam Results (08-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Exam Results (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2024) Exam Results (24-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Exam Results (11-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Exam Results (12-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Exam Results (27-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Exam Results (24-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Exam Results (26-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(08/2024) Exam Results (01-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Results&cenum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=01%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=02%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=02%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=03%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=04%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Exam Schedule",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Exam Schedule (01-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(01/2026) Exam Schedule (21-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(02/2026) Exam Schedule (10-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=02%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) Exam Schedule (25-02-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2026) Exam Schedule (11-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Exam Schedule (13-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(04/2026) Exam Schedule (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=04%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Exam Schedule (21-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Exam Schedule (12-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Exam Schedule (27-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Exam Schedule (01-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Exam Schedule (13-04-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Exam Schedule (24-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(08/2025) Exam Schedule (29-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Exam Schedule (03-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Exam Schedule (30-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Exam+Schedule&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Indicative Notice",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Indicative+Notice&cennum=01%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Indicative Notice",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Indicative+Notice&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Indicative Notice",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Indicative+Notice&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Indicative Notice",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Indicative+Notice&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Indicative Notice",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Indicative+Notice&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Indicative Notice",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Indicative+Notice&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "Medical Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Medical+Examination&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Medical Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Medical+Examination&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Medical Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Medical+Examination&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(04/2024) Medical Examination (01-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Medical+Examination&cenum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(07/2024) Medical Examination (01-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Medical+Examination&cenum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=01%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Mock Test Link",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Mock Test Link (20-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) Mock Test Link (02-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Mock Test Link (22-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Mock Test Link (12-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Mock Test Link (21-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Mock Test Link (30-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Mock Test Link (07-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Mock Test Link (29-04-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(08/2025) Mock Test Link (04-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Mock Test Link (28-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Mock+Test+Link&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=01%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=02%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=02%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=03%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=04%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=05%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Notification",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Notification (21-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(01/2026) Notification (14-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(02/2026) Notification (30-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=02%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(03/2026) Notification (10-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(03/2026) Notification (15-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(03/2026) Notification (17-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=03%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(04/2026) Notification (13-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=04%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(04/2026) Notification (18-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=04%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Notification (24-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2026) Notification (14-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=05%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Notification (04-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Notification (02-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Notification (25-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Notification&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=02%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=03%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Objection Tracker",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Objection Tracker (05-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Objection Tracker (18-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Objection Tracker (20-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Objection Tracker (18-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Objection Tracker (27-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) Objection Tracker (20-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Objection Tracker (11-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Objection Tracker (26-02-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Objection Tracker (04-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2025) Objection Tracker (10-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Objection Tracker (06-04-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Objection Tracker (15-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Objection Tracker (27-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(08/2025) Objection Tracker (31-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Objection Tracker (07-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Objection+Tracker&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Selection List",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(01/2024) Selection List (01-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(01/2024) Selection List (07-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2024) Selection List (01-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2024) Selection List (25-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Selection List (07-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Selection List (25-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2024) Selection List (07-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(03/2024) Selection List (07-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(03/2025) Selection List (07-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=03%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2024) Selection List (08-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2024) Selection List (11-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(07/2024) Selection List (07-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Selection+List&cenum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=02%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=03%2F2018&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=05%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=RPF+01%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=RPF+02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "Special Notice on Examination",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cennum=RRC+01%2F2019&loc=chandigarh"
+        },
+        {
+          "title": "(01/2025) Special Notice on Examination (03-03-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=01%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(01/2026) Special Notice on Examination (14-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=01%2F2026&loc=chandigarh"
+        },
+        {
+          "title": "(02/2024) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=02%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(02/2025) Special Notice on Examination (01-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=02%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(03/2024) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=03%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(04/2024) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=04%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(04/2025) Special Notice on Examination (29-04-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=04%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(05/2024) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=05%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2024) Special Notice on Examination (12-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2024) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=06%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Special Notice on Examination (02-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(06/2025) Special Notice on Examination (27-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=06%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2024) Special Notice on Examination (22-04-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(07/2024) Special Notice on Examination (29-04-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=07%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Special Notice on Examination (07-05-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(07/2025) Special Notice on Examination (27-08-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=07%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(08/2024) Special Notice on Examination (16-06-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(08/2024) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=08%2F2024&loc=chandigarh"
+        },
+        {
+          "title": "(08/2025) Special Notice on Examination (16-09-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=08%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "(09/2025) Special Notice on Examination (30-07-2026)",
+          "url": "https://rrb.indianrailways.gov.in/getdata?category=Special+Notice+on+Examination&cenum=09%2F2025&loc=chandigarh"
+        },
+        {
+          "title": "View More",
+          "url": "https://rrb.indianrailways.gov.in/whatsnew/whatsnewviewmore"
+        }
+      ]
+    },
+    "upsc-whats-new": {
+      "fingerprint": "d5c6406f22c1ee3b04d6dbfc9c47d76e11a86aca4dbbfe50f46c94d554284828",
+      "links": [
+        {
+          "title": "Examination",
+          "url": "https://www.upsc.gov.in/"
+        },
+        {
+          "title": "HELPDESK : 011-24041001 / 011-40303444",
+          "url": "https://www.upsc.gov.in/"
+        },
+        {
+          "title": "Recruitment",
+          "url": "https://www.upsc.gov.in/"
+        },
+        {
+          "title": "संघ लोक सेवा आयोग UNION PUBLIC SERVICE COMMISSION",
+          "url": "https://www.upsc.gov.in/"
+        },
+        {
+          "title": "Citizen's Charter",
+          "url": "https://www.upsc.gov.in/about-us/citizens-charter"
+        },
+        {
+          "title": "The Commission",
+          "url": "https://www.upsc.gov.in/about-us/commission-"
+        },
+        {
+          "title": "Constitutional Provisions",
+          "url": "https://www.upsc.gov.in/about-us/constitutional-provisions"
+        },
+        {
+          "title": "Directory",
+          "url": "https://www.upsc.gov.in/about-us/directory"
+        },
+        {
+          "title": "Divisions",
+          "url": "https://www.upsc.gov.in/about-us/divisions"
+        },
+        {
+          "title": "EOP for PwD Employees of UPSC",
+          "url": "https://www.upsc.gov.in/about-us/equal-opportunity-policy-pwd-employees-upsc"
+        },
+        {
+          "title": "Functions",
+          "url": "https://www.upsc.gov.in/about-us/functions"
+        },
+        {
+          "title": "Historical Perspective",
+          "url": "https://www.upsc.gov.in/about-us/historical-perspective"
+        },
+        {
+          "title": "Secretariat",
+          "url": "https://www.upsc.gov.in/about-us/secretariat"
+        },
+        {
+          "title": "Annual Reports",
+          "url": "https://www.upsc.gov.in/annual-reports"
+        },
+        {
+          "title": "Apply Online",
+          "url": "https://www.upsc.gov.in/apply-online"
+        },
+        {
+          "title": "Archives",
+          "url": "https://www.upsc.gov.in/archives"
+        },
+        {
+          "title": "Advisory to the recommended-selected candidates of UPSC CSE 2025",
+          "url": "https://www.upsc.gov.in/content/advisory-recommended-selected-candidates-upsc-cse-2025"
+        },
+        {
+          "title": "All candidates appearing in the UPSC Examination will undergo Face Authentication at the venue.",
+          "url": "https://www.upsc.gov.in/content/all-candidates-appearing-upsc-examination-will-undergo-face-authentication-venue"
+        },
+        {
+          "title": "Annual Calendar 2026",
+          "url": "https://www.upsc.gov.in/content/annual-calendar-2026"
+        },
+        {
+          "title": "Annual Calendar 2027",
+          "url": "https://www.upsc.gov.in/content/annual-calendar-2027-0"
+        },
+        {
+          "title": "Clarification for the post of Assistant Public Prosecutor in Delhi, vide Advt. No. 11 - 2026",
+          "url": "https://www.upsc.gov.in/content/clarification-post-assistant-public-prosecutor-delhi-vide-advt-no-11-2026"
+        },
+        {
+          "title": "CMSE-2026 - Application submission window extended till 23.09.2026 6.00 PM. Candidates may access the form through Login - Examinations - Apply for Examinations - CMSE-2026 Update",
+          "url": "https://www.upsc.gov.in/content/cmse-2026-application-submission-window-extended-till-23092026-600-pm-candidates-may-access"
+        },
+        {
+          "title": "Advisers Corner",
+          "url": "https://www.upsc.gov.in/content/updation-adviser-details"
+        },
+        {
+          "title": "Admit Cards",
+          "url": "https://www.upsc.gov.in/e-admit-cards"
+        },
+        {
+          "title": "Employees Corner",
+          "url": "https://www.upsc.gov.in/employees-corner"
+        },
+        {
+          "title": "Common mistakes committed by the candidates in Conventional Papers",
+          "url": "https://www.upsc.gov.in/examination/common-mistakes-committed-candidates-conventional-papers"
+        },
+        {
+          "title": "Specimen Question Cum Answer Booklet (QCAB)",
+          "url": "https://www.upsc.gov.in/examination/model-question-and-answer-booklets"
+        },
+        {
+          "title": "Active Examinations",
+          "url": "https://www.upsc.gov.in/examinations/active-exams"
+        },
+        {
+          "title": "Answer Keys",
+          "url": "https://www.upsc.gov.in/examinations/answer-key"
+        },
+        {
+          "title": "CISF AC(EXE) LDCE-2027",
+          "url": "https://www.upsc.gov.in/examinations/CISF%20AC%28EXE%29%20LDCE-2027"
+        },
+        {
+          "title": "Cut-off Marks",
+          "url": "https://www.upsc.gov.in/examinations/cutoff-marks--"
+        },
+        {
+          "title": "Demo Files",
+          "url": "https://www.upsc.gov.in/examinations/demo-files-computer-based-combined-medical-service-examination"
+        },
+        {
+          "title": "Calendar",
+          "url": "https://www.upsc.gov.in/examinations/exam-calendar"
+        },
+        {
+          "title": "Forthcoming Examinations",
+          "url": "https://www.upsc.gov.in/examinations/forthcoming-exams"
+        },
+        {
+          "title": "View all >>",
+          "url": "https://www.upsc.gov.in/examinations/forthcoming-exams"
+        },
+        {
+          "title": "Marks of Recommended Candidates",
+          "url": "https://www.upsc.gov.in/examinations/marks-recommended-candidates"
+        },
+        {
+          "title": "Marks of Recommended Candidates (Reserve List)",
+          "url": "https://www.upsc.gov.in/examinations/marks-recommended-candidates-reserve-list"
+        },
+        {
+          "title": "National Defence Academy and Naval Academy Examination (I), 2027",
+          "url": "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202027"
+        },
+        {
+          "title": "Previous Question Papers",
+          "url": "https://www.upsc.gov.in/examinations/previous-question-papers"
+        },
+        {
+          "title": "Representation on Question Papers",
+          "url": "https://www.upsc.gov.in/examinations/representation-question-papers"
+        },
+        {
+          "title": "Revised Syllabus and Scheme",
+          "url": "https://www.upsc.gov.in/examinations/revised-syllabus-scheme"
+        },
+        {
+          "title": "Examination Notifications",
+          "url": "https://www.upsc.gov.in/exams-related-info/exam-notification"
+        },
+        {
+          "title": "View All >>",
+          "url": "https://www.upsc.gov.in/external-links"
+        },
+        {
+          "title": "State Public Service Commissions",
+          "url": "https://www.upsc.gov.in/external-links/state-public-service-commissions"
+        },
+        {
+          "title": "FAQs",
+          "url": "https://www.upsc.gov.in/faqs"
+        },
+        {
+          "title": "Final Results",
+          "url": "https://www.upsc.gov.in/final-results"
+        },
+        {
+          "title": "Forms & Downloads",
+          "url": "https://www.upsc.gov.in/forms-downloads"
+        },
+        {
+          "title": "Government Users",
+          "url": "https://www.upsc.gov.in/government-user"
+        },
+        {
+          "title": "Central Government",
+          "url": "https://www.upsc.gov.in/government-user/central-government"
+        },
+        {
+          "title": "Others",
+          "url": "https://www.upsc.gov.in/government-user/others"
+        },
+        {
+          "title": "State Government",
+          "url": "https://www.upsc.gov.in/government-user/state-government"
+        },
+        {
+          "title": "Union Territories Government",
+          "url": "https://www.upsc.gov.in/government-user/state-ut-government"
+        },
+        {
+          "title": "Green Initiatives",
+          "url": "https://www.upsc.gov.in/green-initiatives"
+        },
+        {
+          "title": "Helpline - SC/ST/OBC/EWS/PwBD (1800-118-711)",
+          "url": "https://www.upsc.gov.in/helpline"
+        },
+        {
+          "title": "हिन्दी",
+          "url": "https://www.upsc.gov.in/hi"
+        },
+        {
+          "title": "View all",
+          "url": "https://www.upsc.gov.in/highlight"
+        },
+        {
+          "title": "Hon'ble Chairman's Speech",
+          "url": "https://www.upsc.gov.in/honble-chairmans-speech"
+        },
+        {
+          "title": "Museum",
+          "url": "https://www.upsc.gov.in/inauguration-museum"
+        },
+        {
+          "title": "Interviews",
+          "url": "https://www.upsc.gov.in/interview-schedule-and-esummon-letters"
+        },
+        {
+          "title": "News Letters",
+          "url": "https://www.upsc.gov.in/news-letters"
+        },
+        {
+          "title": "Status of Lateral Recruitment Cases (Advertisement-wise)",
+          "url": "https://www.upsc.gov.in/recruitment/lateral-recruitments"
+        },
+        {
+          "title": "Advertisements",
+          "url": "https://www.upsc.gov.in/recruitment/recruitment-advertisement"
+        },
+        {
+          "title": "Recruitment Advertisements",
+          "url": "https://www.upsc.gov.in/recruitment/recruitment-advertisement"
+        },
+        {
+          "title": "Recruitment cases kept on hold on account of Pending Litigations",
+          "url": "https://www.upsc.gov.in/recruitment/recruitment-cases-kept-hold-account-pending-litigations"
+        },
+        {
+          "title": "Forms for Certificates",
+          "url": "https://www.upsc.gov.in/recruitment/recruitment-performas"
+        },
+        {
+          "title": "Recruitment Requisition",
+          "url": "https://www.upsc.gov.in/recruitment/recruitment-requisition"
+        },
+        {
+          "title": "Recruitment Tests",
+          "url": "https://www.upsc.gov.in/recruitment/recruitment-test"
+        },
+        {
+          "title": "Status of Recruitment Cases (Advertisement-wise)",
+          "url": "https://www.upsc.gov.in/recruitment/status-recruitment-cases-advertisementwise"
+        },
+        {
+          "title": "Representation on Question Papers",
+          "url": "https://www.upsc.gov.in/recruitment/time-frame-representation"
+        },
+        {
+          "title": "RTI",
+          "url": "https://www.upsc.gov.in/right-to-information"
+        },
+        {
+          "title": "Single Window System / e-Appointment",
+          "url": "https://www.upsc.gov.in/single-window-system"
+        },
+        {
+          "title": "Clarification for the post of Assistant Public Prosecutor in Delhi, vide Advt. No. 11 - 2026",
+          "url": "https://www.upsc.gov.in/sites/default/files/AssttPublProseGNCTD-Notice-Engl-170926Rev.pdf"
+        },
+        {
+          "title": "Common mistakes done while filling OMR Sheet/Scannable Attendance List",
+          "url": "https://www.upsc.gov.in/sites/default/files/Common_Mistake_OMR_SAL.pdf"
+        },
+        {
+          "title": "Notice regarding change in recruitment process for six (06) posts advertised vide Advt. No. 13-2025",
+          "url": "https://www.upsc.gov.in/sites/default/files/NoticeCancellation-06-Posts-Advt-13-25-Engl-200826.pdf"
+        },
+        {
+          "title": "swachh bharat",
+          "url": "https://www.upsc.gov.in/swachh-bharat-abhiyan"
+        },
+        {
+          "title": "Tenders",
+          "url": "https://www.upsc.gov.in/tenders"
+        },
+        {
+          "title": "Vacancies in UPSC",
+          "url": "https://www.upsc.gov.in/vacancy-circulars"
+        },
+        {
+          "title": "Web Information Manager",
+          "url": "https://www.upsc.gov.in/web-information-manager"
+        },
+        {
+          "title": "Website Policies",
+          "url": "https://www.upsc.gov.in/website-policy"
+        },
+        {
+          "title": "View all »",
+          "url": "https://www.upsc.gov.in/whats-new"
+        },
+        {
+          "title": "Addendum Notice: 01 post of Assistant Director Grade-I (IEDS) (Metal Finishing) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/01%20post%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Metal%20Finishing)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Notice: 01 Post of Data Processing Assistant, Ministry of Defence",
+          "url": "https://www.upsc.gov.in/whats-new/01%20Post%20of%20Data%20Processing%20Assistant,%20Ministry%20of%20Defence/Notice"
+        },
+        {
+          "title": "Addendum Notice: 02 posts of Assistant Director Grade-I (IEDS) (Chemical) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/02%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Chemical)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Addendum Notice: 02 posts of Assistant Director Grade-I (IEDS) (Hosiery) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/02%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Hosiery)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Final Result: 02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Leather%20&%20Footwear),%20Ministry%20of%20MSME/Final%20Result"
+        },
+        {
+          "title": "Notice: 02 Posts of Senior Scientific Assistant (Electrical), Ministry of Defence",
+          "url": "https://www.upsc.gov.in/whats-new/02%20Posts%20of%20Senior%20Scientific%20Assistant%20(Electrical),%20Ministry%20of%20Defence/Notice"
+        },
+        {
+          "title": "Addendum Notice: 03 posts of Assistant Director Grade-I (IEDS) (Food) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/03%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Food)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Addendum Notice: 03 posts of Assistant Director Grade-I (IEDS) (Leather & Footwear) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/03%20posts%20of%20Assistant%20Director%20Grade-I%20(IEDS)%20(Leather%20&%20Footwear)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Final Result: 03 Posts of Assistant Director Grade-II (IEDS) (Chemical), Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/03%20Posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Chemical),%20Ministry%20of%20MSME/Final%20Result"
+        },
+        {
+          "title": "Addendum Notice: 03 posts of Assistant Director Grade-II (IEDS) (Chemical) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/03%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Chemical)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Addendum Notice: 04 posts of Assistant Director Grade-II (IEDS) (Food) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/04%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Food)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Addendum Notice: 04 posts of Assistant Director Grade-II (IEDS) (Hosiery) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/04%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Hosiery)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Addendum Notice: 04 posts of Assistant Director Grade-II (IEDS) (Leather & Footwear) in Ministry of MSME",
+          "url": "https://www.upsc.gov.in/whats-new/04%20posts%20of%20Assistant%20Director%20Grade-II%20(IEDS)%20(Leather%20&%20Footwear)%20in%20Ministry%20of%20MSME/Addendum%20Notice"
+        },
+        {
+          "title": "Addendum Notice: 06 Posts Deputy Central Intelligence Officer (DCIO) (Technical), Ministry of Home Affairs",
+          "url": "https://www.upsc.gov.in/whats-new/06%20Posts%20Deputy%20Central%20Intelligence%20Officer%20(DCIO)%20(Technical),%20Ministry%20of%20Home%20Affairs/Addendum%20Notice"
+        },
+        {
+          "title": "Addendum Notice: 07 posts of Scientist-B (Atmospheric Sciences) in Ministry of Earth Sciences",
+          "url": "https://www.upsc.gov.in/whats-new/07%20posts%20of%20Scientist-B%20(Atmospheric%20Sciences)%20in%20Ministry%20of%20Earth%20Sciences/Addendum%20Notice"
+        },
+        {
+          "title": "Rectt. Test: 08 Posts of Administrative Officer Grade - I, Ministry of Defence",
+          "url": "https://www.upsc.gov.in/whats-new/08%20Posts%20of%20Administrative%20Officer%20Grade%20-%20I,%20Ministry%20of%20Defence/Rectt.%20Test"
+        },
+        {
+          "title": "Addendum Notice: 09 posts of Scientist-B (Instrumentation) in Ministry of Earth Sciences",
+          "url": "https://www.upsc.gov.in/whats-new/09%20posts%20of%20Scientist-B%20(Instrumentation)%20in%20Ministry%20of%20Earth%20Sciences/Addendum%20Notice"
+        },
+        {
+          "title": "Advertisement No.11 - 2026",
+          "url": "https://www.upsc.gov.in/whats-new/11%20-%202026"
+        },
+        {
+          "title": "Notice: 16 Posts of Senior Veterinary Officer, Andaman and Nicobar Administration",
+          "url": "https://www.upsc.gov.in/whats-new/16%20Posts%20of%20Senior%20Veterinary%20Officer,%20Andaman%20and%20Nicobar%20Administration/Notice"
+        },
+        {
+          "title": "Notice: 18 Posts of Veterinary Assistant Surgeon, Government of Puducherry",
+          "url": "https://www.upsc.gov.in/whats-new/18%20Posts%20of%20Veterinary%20Assistant%20Surgeon,%20Government%20of%20Puducherry/Notice"
+        },
+        {
+          "title": "Rectt. Test: 19 Posts of Manager Grade - I - Section Officer, Ministry of Defence",
+          "url": "https://www.upsc.gov.in/whats-new/19%20Posts%20of%20Manager%20Grade%20-%20I%20-%20Section%20Officer,%20Ministry%20of%20Defence/Rectt.%20Test"
+        },
+        {
+          "title": "Addendum Notice: 30 posts of Scientist-B (General Meteorology) in Ministry of Earth Sciences",
+          "url": "https://www.upsc.gov.in/whats-new/30%20posts%20of%20Scientist-B%20(General%20Meteorology)%20in%20Ministry%20of%20Earth%20Sciences/Addendum%20Notice"
+        },
+        {
+          "title": "Rectt. Test: 32 Posts of Accounts Officer, Administration of Union Territory of Ladakh",
+          "url": "https://www.upsc.gov.in/whats-new/32%20Posts%20of%20Accounts%20Officer,%20Administration%20of%20Union%20Territory%20of%20Ladakh/Rectt.%20Test"
+        },
+        {
+          "title": "Notice: 74 Posts of Assistant Provident Fund Commissioner, EPFO",
+          "url": "https://www.upsc.gov.in/whats-new/74%20Posts%20of%20Assistant%20Provident%20Fund%20Commissioner,%20EPFO/Notice"
+        },
+        {
+          "title": "Marks of Recommended Candidates (Reserve List): Central Armed Police Forces (ACs) Examination, 2024",
+          "url": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202024/Marks%20of%20Recommended%20Candidates%20%28Reserve%20List%29"
+        },
+        {
+          "title": "Written Result: Central Armed Police Forces (ACs) Examination, 2026",
+          "url": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Written%20Result"
+        },
+        {
+          "title": "Written Result (with name): Central Armed Police Forces (ACs) Examination, 2026",
+          "url": "https://www.upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29"
+        },
+        {
+          "title": "Final Result: CISF AC(EXE) LDCE-2026",
+          "url": "https://www.upsc.gov.in/whats-new/CISF%20AC%28EXE%29%20LDCE-2026/Final%20Result"
+        },
+        {
+          "title": "Marks of Recommended Candidates: CISF AC(EXE) LDCE-2026",
+          "url": "https://www.upsc.gov.in/whats-new/CISF%20AC%28EXE%29%20LDCE-2026/Marks%20of%20Recommended%20Candidates"
+        },
+        {
+          "title": "Exam Notification: Combined Geo-Scientist (Preliminary) Examination, 2027",
+          "url": "https://www.upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification"
+        },
+        {
+          "title": "Written Result: Combined Medical Services Examination, 2026",
+          "url": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Written%20Result"
+        },
+        {
+          "title": "Written Result (with name): Combined Medical Services Examination, 2026",
+          "url": "https://www.upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Written%20Result%20%28with%20name%29"
+        },
+        {
+          "title": "Exam Notification: Combined Section Officers (Grade-'B') LDCE - 2026 and Combined Stenographers (Grade - 'B' - Grade - 'I') LDCE - 2022, 2023 and 2024",
+          "url": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%20%28Grade-%27B%27%29%20LDCE%20-%202026%20and%20Combined%20Stenographers%20%28Grade%20-%20%27B%27%20-%20Grade%20-%20%27I%27%29%20LDCE%20-%20%202022%2C%202023%20and%202024/Exam%20Notification"
+        },
+        {
+          "title": "Marks of Recommended Candidates: Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
+          "url": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Marks%20of%20Recommended%20Candidates"
+        },
+        {
+          "title": "Written Result: Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
+          "url": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result"
+        },
+        {
+          "title": "Written Result (with name): Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
+          "url": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result%20%28with%20name%29"
+        },
+        {
+          "title": "Interview Schedule: Engineering Services (Main) Examination, 2026",
+          "url": "https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Main%29%20Examination%2C%202026/Interview%20Schedule"
+        },
+        {
+          "title": "Exam Notification: Engineering Services (Preliminary) Examination, 2027",
+          "url": "https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification"
+        },
+        {
+          "title": "Examination Time Table: Indian Forest Service (Main) Examination, 2026",
+          "url": "https://www.upsc.gov.in/whats-new/Indian%20Forest%20Service%20%28Main%29%20Examination%2C%202026/Examination%20Time%20Table"
+        },
+        {
+          "title": "Written Results",
+          "url": "https://www.upsc.gov.in/written-results-"
+        }
+      ]
+    }
+  }
+}

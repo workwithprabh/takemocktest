@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "ssc-notice-board",
+      "name": "SSC notice board",
+      "authority": "Staff Selection Commission",
+      "url": "https://ssc.gov.in/home/notice-board",
+      "minimumLinks": 5,
+      "enabled": false,
+      "note": "The official host resets automated connections; keep under manual review until it becomes monitorable."
+    },
+    {
+      "id": "upsc-whats-new",
+      "name": "UPSC What's New",
+      "authority": "Union Public Service Commission",
+      "url": "https://upsc.gov.in/",
+      "minimumLinks": 5
+    },
+    {
+      "id": "ibps-crp-updates",
+      "name": "IBPS CRP updates",
+      "authority": "Institute of Banking Personnel Selection",
+      "url": "https://www.ibps.in/index.php/crp-updates/",
+      "minimumLinks": 5
+    },
+    {
+      "id": "nta-notice-board",
+      "name": "NTA notice board",
+      "authority": "National Testing Agency",
+      "url": "https://www.nta.ac.in/NoticeBoardArchive",
+      "minimumLinks": 5
+    },
+    {
+      "id": "rrb-chandigarh-notices",
+      "name": "RRB Chandigarh notice board",
+      "authority": "Railway Recruitment Board Chandigarh",
+      "url": "https://rrbcdg.gov.in/",
+      "minimumLinks": 5
+    },
+    {
+      "id": "gate-2027-notifications",
+      "name": "GATE 2027 notifications",
+      "authority": "IIT Madras, GATE 2027",
+      "url": "https://gate2027.iitm.ac.in/notifications",
+      "minimumLinks": 3,
+      "enabled": false,
+      "note": "The official host currently times out under automation; the calendar freshness check still tracks its known links."
+    },
+    {
+      "id": "aima-mat-dates",
+      "name": "MAT test dates",
+      "authority": "All India Management Association",
+      "url": "https://aima.in/mat/test-dates/",
+      "minimumLinks": 3
+    },
+    {
+      "id": "ukpsc-home",
+      "name": "UKPSC notices",
+      "authority": "Uttarakhand Public Service Commission",
+      "url": "https://psc.uk.gov.in/",
+      "minimumLinks": 3
+    },
+    {
+      "id": "mppsc-home",
+      "name": "MPPSC notices",
+      "authority": "Madhya Pradesh Public Service Commission",
+      "url": "https://mppsc.mp.gov.in/",
+      "minimumLinks": 3
+    },
+    {
+      "id": "cgpsc-home",
+      "name": "CGPSC notices",
+      "authority": "Chhattisgarh Public Service Commission",
+      "url": "https://psc.cg.gov.in/",
+      "minimumLinks": 3
+    }
+  ]
+}

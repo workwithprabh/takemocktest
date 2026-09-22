@@ -1,0 +1,38 @@
+name: Exam update monitor
+
+on:
+  schedule:
+    # 08:15 India time. GitHub schedules use UTC.
+    - cron: '45 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: exam-update-monitor
+  cancel-in-progress: true
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate published updates
+        run: npm run qa:updates
+
+      - name: Check official sources and notify reviewers
+        run: npm run monitor:updates -- --notify
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
