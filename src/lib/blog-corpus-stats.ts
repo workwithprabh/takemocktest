@@ -158,6 +158,128 @@ function markingSpread(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   };
 }
 
+/**
+ * Seconds a paper allows per question, for every stage whose official pattern
+ * states both a question count and a duration. This is the whole arithmetic:
+ * duration divided by questions, which is also what a student can work out for
+ * their own paper in ten seconds once they know to do it.
+ *
+ * Stages with a 'review-pending' pattern are excluded, and so is any stage
+ * missing either number. The site publishes patterns it has not yet confirmed
+ * against a notice, and a pace figure carries more authority than the pattern
+ * it came from, so an unconfirmed one has no business in a table of numbers.
+ */
+function pacePerQuestion(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
+  const rows: { slug: string; exam: string; category: string; stage: string; questions: number; minutes: number; seconds: number }[] = [];
+  for (const exam of exams) {
+    for (const stage of exam.stages) {
+      const pattern = stage.pattern;
+      if (pattern.status !== 'official') continue;
+      if (!pattern.totalQuestions || !pattern.duration) continue;
+      rows.push({
+        slug: exam.slug,
+        exam: exam.name,
+        category: exam.category,
+        stage: stage.name,
+        questions: pattern.totalQuestions,
+        minutes: pattern.duration,
+        seconds: (pattern.duration * 60) / pattern.totalQuestions,
+      });
+    }
+  }
+  rows.sort((a, b) => a.seconds - b.seconds || a.exam.localeCompare(b.exam));
+
+  const median = (values: number[]) => {
+    const sorted = [...values].sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+  };
+  const all = rows.map((row) => row.seconds);
+
+  // Bands for the table and the diagram. The 55 to 65 band exists to be
+  // counted: "about a minute a question" is the advice every forum gives, and
+  // the point of the post is how few papers it describes.
+  const BANDS: { label: string; lo: number; hi: number }[] = [
+    { label: 'Under 45 seconds', lo: 0, hi: 45 },
+    { label: '45 to 54 seconds', lo: 45, hi: 55 },
+    { label: '55 to 65 seconds', lo: 55, hi: 65 },
+    { label: '66 to 90 seconds', lo: 65, hi: 90 },
+    { label: '91 to 150 seconds', lo: 90, hi: 150 },
+    { label: 'Over 150 seconds', lo: 150, hi: Infinity },
+  ];
+  const bands = BANDS.map((band) => ({
+    ...band,
+    stages: rows.filter((row) => row.seconds >= band.lo && row.seconds < band.hi).length,
+  }));
+
+  const categories = [...new Set(rows.map((row) => row.category))]
+    .map((category) => {
+      const inCategory = rows.filter((row) => row.category === category);
+      const seconds = inCategory.map((row) => row.seconds);
+      return {
+        category,
+        stages: inCategory.length,
+        median: median(seconds),
+        fastest: Math.min(...seconds),
+        slowest: Math.max(...seconds),
+      };
+    })
+    .sort((a, b) => a.median - b.median || a.category.localeCompare(b.category));
+
+  // Exams whose own papers run at different paces. Reported first-declared
+  // against last-declared rather than fastest against slowest, because the
+  // direction is the useful part and it is not always the one people expect:
+  // RRB NTPC gives less time per question at CBT 2 than at CBT 1.
+  const shifts = new Map<string, { exam: string; from: string; fromSeconds: number; to: string; toSeconds: number }>();
+  let shiftsSame = 0;
+  for (const exam of exams) {
+    const staged = rows.filter((row) => row.slug === exam.slug);
+    if (staged.length < 2) continue;
+    const declared = exam.stages
+      .map((stage) => staged.find((row) => row.stage === stage.name))
+      .filter((row): row is (typeof rows)[number] => row !== undefined);
+    if (declared.length < 2) continue;
+    const first = declared[0];
+    const last = declared[declared.length - 1];
+    if (Math.abs(last.seconds - first.seconds) < 0.5) {
+      shiftsSame += 1;
+      continue;
+    }
+    shifts.set(exam.slug, {
+      exam: exam.name,
+      from: first.stage,
+      fromSeconds: first.seconds,
+      to: last.stage,
+      toSeconds: last.seconds,
+    });
+  }
+
+  const fastestSeconds = all[0];
+  const atFastest = rows.filter((row) => Math.abs(row.seconds - fastestSeconds) < 0.5);
+
+  return {
+    stages: rows.length,
+    exams: new Set(rows.map((row) => row.slug)).size,
+    median: median(all),
+    fastestSeconds,
+    slowestSeconds: all[all.length - 1],
+    /** Every stage tied at the fastest pace on the site, which is not a one-off. */
+    atFastest: atFastest.length,
+    atFastestExams: [...new Set(atFastest.map((row) => row.exam))],
+    slowest: rows[rows.length - 1],
+    bands,
+    /** The band the "about a minute a question" advice describes. */
+    oneMinuteBand: bands.find((band) => band.label === '55 to 65 seconds')!.stages,
+    categories,
+    categoryMedian: (category: string) => categories.find((entry) => entry.category === category),
+    multiPaperExams: shifts.size + shiftsSame,
+    sameAtEveryPaper: shiftsSame,
+    shift: (slug: string) => shifts.get(slug),
+    /** An exam's quickest stage, which is the one a reader is usually asking about. Rows are sorted by pace, so the first match is that stage. */
+    fastestStageOf: (slug: string) => rows.find((entry) => entry.slug === slug),
+  };
+}
+
 function compute() {
   const exams = Object.values(EXAMS);
 
@@ -200,6 +322,7 @@ function compute() {
   const named = (name: string) => exams.filter((exam) => sectionsOf(exam).some((s) => s.toLowerCase() === name)).length;
 
   const marking = markingSpread(exams);
+  const pace = pacePerQuestion(exams);
 
   const pools = getTopicPools();
   const topicQuestions = [...pools.values()].reduce((total, pool) => total + pool.questions.length, 0);
@@ -226,6 +349,7 @@ function compute() {
     reasoningHeadingsUsedByOne: usedBy(1),
 
     marking,
+    pace,
 
     topics: pools.size,
     topicQuestions,

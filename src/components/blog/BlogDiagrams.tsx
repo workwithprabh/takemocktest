@@ -5,6 +5,8 @@
 // sake, each one visualizes the actual concept the post is explaining. See
 // BlogDiagramId in lib/blog.ts for the id -> component mapping.
 
+import { CORPUS } from '@/lib/blog-corpus-stats';
+
 const INK = {
   50: '#F5F6F9',
   100: '#E7E9F0',
@@ -27,7 +29,8 @@ export type BlogDiagramId =
   | 'corpus-two-cuts'
   | 'one-skill-many-names'
   | 'po-mains-marks-per-question'
-  | 'clerk-mains-pace';
+  | 'clerk-mains-pace'
+  | 'seconds-per-question-spread';
 
 function StudyTimetableGrid() {
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -462,6 +465,41 @@ function ClerkMainsPace() {
   );
 }
 
+/**
+ * How the site's own official patterns distribute across pace bands. Drawn
+ * from CORPUS.pace rather than written in, because the post beside it argues
+ * from the same counts and the two must not drift apart. The 55 to 65 band is
+ * inked darker: it is the band "about a minute a question" describes, and the
+ * shape of the chart is the argument that the advice does not travel.
+ */
+function SecondsPerQuestionSpread() {
+  const bands = CORPUS.pace.bands;
+  const total = CORPUS.pace.stages;
+  const widest = Math.max(...bands.map((band) => band.stages));
+  const x0 = 150;
+  const barMax = 330;
+  return (
+    <svg viewBox="0 0 560 250" width="100%" role="img" aria-label={`Seconds allowed per question across ${total} official exam stage patterns, grouped into six bands. ${bands.map((band) => `${band.label}: ${band.stages} stages`).join('. ')}.`}>
+      {bands.map((band, i) => {
+        const y = 22 + i * 32;
+        const width = (band.stages / widest) * barMax;
+        const isMinute = band.label === '55 to 65 seconds';
+        return (
+          <g key={band.label}>
+            <text x={x0 - 10} y={y + 14} fontSize="11" fill={isMinute ? INK[900] : INK[700]} textAnchor="end" fontWeight={isMinute ? '600' : '400'}>{band.label}</text>
+            <rect x={x0} y={y} width={width} height="20" fill={isMinute ? INK[900] : INK[200]} />
+            <text x={x0 + width + 8} y={y + 15} fontSize="11" fill={INK[700]}>{band.stages}</text>
+          </g>
+        );
+      })}
+      <line x1={x0} y1="14" x2={x0} y2="214" stroke={INK[300]} strokeWidth="1" />
+      <text x={x0} y="232" fontSize="9" fill={INK[300]}>
+        {total} official stage patterns. The dark band is the one &quot;about a minute a question&quot; describes.
+      </text>
+    </svg>
+  );
+}
+
 const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'study-timetable-grid': StudyTimetableGrid,
   'negative-marking-math': NegativeMarkingMath,
@@ -475,6 +513,7 @@ const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'one-skill-many-names': OneSkillManyNames,
   'po-mains-marks-per-question': PoMainsMarksPerQuestion,
   'clerk-mains-pace': ClerkMainsPace,
+  'seconds-per-question-spread': SecondsPerQuestionSpread,
 };
 
 export function BlogDiagram({ id, caption }: { id: BlogDiagramId; caption: string }) {
