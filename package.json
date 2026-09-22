@@ -12,6 +12,7 @@
     "qa:updates": "node scripts/check-exam-updates.mjs",
     "audit:calendar": "node scripts/audit-calendar-freshness.mjs",
     "audit:calendar:links": "node scripts/audit-calendar-freshness.mjs --check-links",
+    "audit:calendar:strict": "node scripts/audit-calendar-freshness.mjs --check-links --strict",
     "qa:onpage-seo": "node scripts/audit-onpage-seo.mjs",
     "qa:links": "node scripts/audit-internal-links.mjs",
     "qa:thin-content": "node scripts/audit-thin-content.mjs",

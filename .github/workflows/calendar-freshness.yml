@@ -1,0 +1,32 @@
+name: Calendar freshness
+
+on:
+  schedule:
+    # 07:45 India time. GitHub schedules use UTC.
+    - cron: '15 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: calendar-freshness
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check calendar freshness and official links
+        run: npm run audit:calendar:strict
