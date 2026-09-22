@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-22",
- "pageCount": 5697,
+ "pageCount": 5698,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10275,6 +10275,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/how-much-time-per-question": {
+   "title": "How Much Time Per Question Do You Actually Get?",
+   "description": "One minute a question is the median across 167 official exam patterns here, and it fits only 34. SSC and banking prelims give you 36 seconds.",
+   "h1": [
+    "How Much Time Per Question Do You Actually Get?"
+   ],
+   "h2Count": 12,
+   "h2Hash": "8d65db451daa",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "2fe817a130da",
+   "ogHash": "2f4241f6ebda",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/how-to-analyze-your-mock-test-performance": {
    "title": "How to Analyze Your Mock Test Performance | TakeMockTest",
    "description": "A score alone tells you almost nothing useful. The section breakdown, the unattempted count and the trend across tests do.",
@@ -11250,7 +11272,7 @@
     "Study tips & exam strategy"
    ],
    "h2Count": 7,
-   "h2Hash": "10729e55425e",
+   "h2Hash": "468a95daf1a7",
    "schemaTypes": [
     "Blog",
     "BlogPosting",
@@ -11258,7 +11280,7 @@
     "ListItem",
     "Organization"
    ],
-   "schemaHash": "8a9d0580a4d3",
+   "schemaHash": "5aa8c0d5866e",
    "ogHash": "42f7c4c2d3a5",
    "sitemap": true,
    "robots": "index, follow"
@@ -38955,8 +38977,8 @@
    "h1": [
     "JEST Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "146e2ff95183",
+   "h2Count": 8,
+   "h2Hash": "fe0b370f5ca3",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
