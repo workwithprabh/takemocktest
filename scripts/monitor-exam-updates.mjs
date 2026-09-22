@@ -67,6 +67,12 @@ function fingerprint(links) {
   return crypto.createHash('sha256').update(JSON.stringify(links)).digest('hex');
 }
 
+function filterRelevantLinks(links, keywords) {
+  if (!keywords?.length) return links;
+  const needles = keywords.map((keyword) => keyword.toLowerCase());
+  return links.filter((link) => needles.some((keyword) => `${link.title} ${link.url}`.toLowerCase().includes(keyword)));
+}
+
 function compareLinks(before = [], after = []) {
   const oldKeys = new Set(before.map((link) => `${link.title}\n${link.url}`));
   const newKeys = new Set(after.map((link) => `${link.title}\n${link.url}`));
@@ -88,8 +94,9 @@ async function fetchSource(source) {
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const html = await response.text();
   if (html.length > 5_000_000) throw new Error('response exceeded 5 MB');
-  const links = extractLinks(html, response.url || source.url);
-  if (links.length < source.minimumLinks) throw new Error(`only ${links.length} relevant links found; expected at least ${source.minimumLinks}`);
+  const extractedLinks = extractLinks(html, response.url || source.url);
+  if (extractedLinks.length < source.minimumLinks) throw new Error(`only ${extractedLinks.length} links found; expected at least ${source.minimumLinks}`);
+  const links = filterRelevantLinks(extractedLinks, source.includeKeywords);
   return { fingerprint: fingerprint(links), links };
 }
 
@@ -188,6 +195,8 @@ function runSelfTest() {
   assert.deepEqual(links, [{ title: 'New notice', url: 'https://example.gov.in/notice.pdf' }]);
   assert.equal(fingerprint(links).length, 64);
   assert.deepEqual(compareLinks([], links).added, links);
+  assert.deepEqual(filterRelevantLinks(links, ['new notice']), links);
+  assert.deepEqual(filterRelevantLinks(links, ['different exam']), []);
   console.log('Exam update monitor self-test passed.');
 }
 
@@ -204,13 +213,18 @@ const ids = new Set();
 for (const source of config.sources) {
   assert(/^[a-z0-9-]+$/.test(source.id) && !ids.has(source.id), `Invalid or duplicate source id: ${source.id}`);
   assert.equal(new URL(source.url).protocol, 'https:', `Source must use HTTPS: ${source.id}`);
+  assert(!source.includeKeywords || source.includeKeywords.every((keyword) => typeof keyword === 'string' && keyword.length > 2), `Invalid keywords: ${source.id}`);
   ids.add(source.id);
 }
 
 const sources = selectedSource
   ? config.sources.filter((source) => source.id === selectedSource)
-  : config.sources.filter((source) => source.enabled !== false);
+  : config.sources.filter((source) => source.enabled !== false && (process.env.GITHUB_ACTIONS !== 'true' || source.githubActionsEnabled !== false));
 assert(sources.length, `Unknown source: ${selectedSource}`);
+if (process.env.GITHUB_ACTIONS === 'true' && !selectedSource) {
+  const localOnly = config.sources.filter((source) => source.enabled !== false && source.githubActionsEnabled === false);
+  console.log(`GitHub runner coverage: ${sources.length} scheduled; ${localOnly.length} manual/local-only (${localOnly.map((source) => source.name).join(', ')}).`);
+}
 const checkedAt = new Date().toISOString();
 const results = await Promise.allSettled(sources.map(async (source) => ({ source, current: await fetchSource(source) })));
 const failures = results.flatMap((result, index) => result.status === 'rejected' ? [{ source: sources[index], error: result.reason }] : []);

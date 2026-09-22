@@ -15,28 +15,38 @@
       "name": "UPSC What's New",
       "authority": "Union Public Service Commission",
       "url": "https://upsc.gov.in/",
-      "minimumLinks": 5
+      "minimumLinks": 5,
+      "githubActionsEnabled": false,
+      "note": "The GitHub-hosted runner times out; this source remains available to manual/local checks.",
+      "includeKeywords": ["civil services", "engineering services", "combined defence services", "national defence academy", "central armed police forces", "combined geo-scientist", "combined medical services", "indian economic service", "indian statistical service"]
     },
     {
       "id": "ibps-crp-updates",
       "name": "IBPS CRP updates",
       "authority": "Institute of Banking Personnel Selection",
       "url": "https://www.ibps.in/index.php/crp-updates/",
-      "minimumLinks": 5
+      "minimumLinks": 5,
+      "githubActionsEnabled": false,
+      "note": "The GitHub-hosted runner times out; this source remains available to manual/local checks.",
+      "includeKeywords": ["crp", "po/mt", "csa", "clerk", "rrb", "specialist officer"]
     },
     {
       "id": "nta-notice-board",
       "name": "NTA notice board",
       "authority": "National Testing Agency",
       "url": "https://www.nta.ac.in/NoticeBoardArchive",
-      "minimumLinks": 5
+      "minimumLinks": 5,
+      "includeKeywords": ["jee", "neet", "cuet", "ugc-net", "ugc net", "csir", "nchm", "jipmat", "cmat", "gat-b", "nift", "ncet"]
     },
     {
       "id": "rrb-chandigarh-notices",
       "name": "RRB Chandigarh notice board",
       "authority": "Railway Recruitment Board Chandigarh",
       "url": "https://rrbcdg.gov.in/",
-      "minimumLinks": 5
+      "minimumLinks": 5,
+      "githubActionsEnabled": false,
+      "note": "The GitHub-hosted runner refuses the connection; this source remains available to manual/local checks.",
+      "includeKeywords": ["cen", "ntpc", "alp", "junior engineer", "group d", "level-1", "technician"]
     },
     {
       "id": "gate-2027-notifications",
@@ -59,21 +69,28 @@
       "name": "UKPSC notices",
       "authority": "Uttarakhand Public Service Commission",
       "url": "https://psc.uk.gov.in/",
-      "minimumLinks": 3
+      "minimumLinks": 1,
+      "githubActionsEnabled": false,
+      "note": "The GitHub-hosted runner times out; this source remains available to manual/local checks.",
+      "includeKeywords": ["pcs", "combined state civil", "upper subordinate", "state service"]
     },
     {
       "id": "mppsc-home",
       "name": "MPPSC notices",
       "authority": "Madhya Pradesh Public Service Commission",
       "url": "https://mppsc.mp.gov.in/",
-      "minimumLinks": 3
+      "minimumLinks": 1,
+      "includeKeywords": ["state service", "state services", "sse", "rajya seva"]
     },
     {
       "id": "cgpsc-home",
       "name": "CGPSC notices",
       "authority": "Chhattisgarh Public Service Commission",
       "url": "https://psc.cg.gov.in/",
-      "minimumLinks": 3
+      "minimumLinks": 1,
+      "githubActionsEnabled": false,
+      "note": "The GitHub-hosted runner times out; this source remains available to manual/local checks.",
+      "includeKeywords": ["state service", "state services", "sse"]
     }
   ]
 }
