@@ -21,7 +21,11 @@ export type BlogBlock =
   | { type: 'list'; heading?: string; ordered?: boolean; items: string[] }
   | { type: 'callout'; text: string }
   | { type: 'table'; heading?: string; headers: string[]; rows: string[][] }
-  | { type: 'diagram'; id: BlogDiagramId; caption: string };
+  | { type: 'diagram'; id: BlogDiagramId; caption: string }
+  // The one interactive block. It carries no data: BlogBody supplies the
+  // published paces from CORPUS, so a post never hardcodes them and the
+  // widget cannot fall out of step with the prose around it.
+  | { type: 'calculator'; heading?: string; note?: string };
 
 export interface BlogFaq {
   q: string;
@@ -3131,6 +3135,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ] },
       { type: 'diagram', id: 'seconds-per-question-spread', caption: `Seconds per question across ${CORPUS.pace.stages} official stage patterns. The band the one-minute rule describes holds ${CORPUS.pace.oneMinuteBand} of them.` },
       { type: 'paragraph', heading: 'Do the division yourself', text: `You need two numbers and both sit on your exam's [exam pattern page](/exams): how many questions the paper asks, and how many minutes it runs. ${CORPUS.pace.fastestStageOf('ssc-cgl')!.exam} ${CORPUS.pace.fastestStageOf('ssc-cgl')!.stage} asks ${CORPUS.pace.fastestStageOf('ssc-cgl')!.questions} questions in ${CORPUS.pace.fastestStageOf('ssc-cgl')!.minutes} minutes, so those ${CORPUS.pace.fastestStageOf('ssc-cgl')!.minutes} minutes hold ${n(CORPUS.pace.fastestStageOf('ssc-cgl')!.minutes * 60)} seconds, and ${n(CORPUS.pace.fastestStageOf('ssc-cgl')!.minutes * 60)} divided by ${CORPUS.pace.fastestStageOf('ssc-cgl')!.questions} questions gives ${Math.round(CORPUS.pace.fastestStageOf('ssc-cgl')!.seconds)} seconds each. Do it once for your own paper and you will never again wonder whether you are reading a question too slowly.` },
+      { type: 'calculator', heading: 'Work out your own pace', note: `Both numbers are on your exam's pattern page. The result is ranked against the ${CORPUS.pace.stages} official patterns published here.` },
       { type: 'table', heading: 'Median seconds per question, by exam family', headers: ['Exam family', 'Median', 'Range', 'Stage patterns'], rows: CORPUS.pace.categories.map((entry) => [
         entry.category,
         `${Math.round(entry.median)}s`,
@@ -3174,6 +3179,8 @@ function blockText(block: BlogBlock): string {
       return `${block.heading ?? ''} ${block.headers.join(' ')} ${block.rows.flat().join(' ')}`;
     case 'diagram':
       return block.caption;
+    case 'calculator':
+      return `${block.heading ?? ''} ${block.note ?? ''}`;
   }
 }
 
