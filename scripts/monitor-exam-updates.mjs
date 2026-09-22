@@ -116,7 +116,8 @@ ${render(change.removed, 10)}
 
 ### Review checklist
 - [ ] Open the official source and verify the notice, date and affected exam.
-- [ ] Add only confirmed information to \`src/lib/updates.ts\`.
+- [ ] Copy \`content-inbox/exam-update-template.json\` to a new draft and fill only confirmed information.
+- [ ] Validate and add the reviewed draft with \`npm run updates:publish -- <draft.json> --source=${source.id}\`.
 - [ ] Run \`npm run qa:updates\`.
 - [ ] Accept this source's new baseline with \`npm run monitor:updates:accept -- --source=${source.id}\` and commit it with the reviewed update.
 - [ ] Close this issue after the reviewed change reaches \`main\`.

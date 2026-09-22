@@ -26,3 +26,13 @@ A correction increments `v{n}`. Never overwrite an existing version's filename �
 3. After a successful integration (technical checks + smoke test + commit), the source files here may be archived (moved to `content-inbox/archive/`) or removed — the `.ts` bank files and exam config entries in the repository are the production source of truth from that point on, not the files in this folder.
 
 Do not leave approved-content or status files loose and untracked in the repository root — either they live here (tracked) or they're uploaded directly to the coding-agent session for that integration.
+
+## Exam-update drafts
+
+`exam-update-template.json` is the reusable exception to the approved-content naming convention. Copy it to a temporary draft, fill only information verified against the official source, then run:
+
+```text
+npm run updates:publish -- <draft.json> --source=<monitor-source-id>
+```
+
+The command validates and inserts the entry, but it does not accept the monitor baseline, commit, deploy, or replace editorial review.

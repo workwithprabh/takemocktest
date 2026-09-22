@@ -10,6 +10,8 @@
     "qa:questions": "node scripts/audit-question-banks.mjs",
     "qa:assets": "node scripts/audit-site.mjs",
     "qa:updates": "node scripts/check-exam-updates.mjs",
+    "updates:publish": "node scripts/publish-exam-update.mjs",
+    "updates:publish:self-test": "node scripts/publish-exam-update.mjs --self-test",
     "monitor:updates": "node --use-system-ca scripts/monitor-exam-updates.mjs",
     "monitor:updates:accept": "node --use-system-ca scripts/monitor-exam-updates.mjs --accept",
     "monitor:updates:self-test": "node --use-system-ca scripts/monitor-exam-updates.mjs --self-test",
