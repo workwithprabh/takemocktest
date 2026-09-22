@@ -249,6 +249,19 @@ export function calendarEventTimestamp(date: string, endOfDay = false): number {
   return new Date(`${date}T${endOfDay ? '23:59:59.999' : '00:00:00'}+05:30`).getTime();
 }
 
+export function getUpcomingCalendarEvents(
+  events: ExamCalendarEvent[],
+  asOf: number,
+  limit = 3,
+  examSlug?: string,
+): ExamCalendarEvent[] {
+  return events
+    .filter((event) => (!examSlug || event.examSlug === examSlug)
+      && calendarEventTimestamp(event.endsOn ?? event.startsOn, true) >= asOf)
+    .sort((a, b) => calendarEventTimestamp(a.startsOn) - calendarEventTimestamp(b.startsOn))
+    .slice(0, limit);
+}
+
 export function formatCalendarDate(date: string): string {
   const options: Intl.DateTimeFormatOptions = date.includes('T')
     ? { day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kolkata' }

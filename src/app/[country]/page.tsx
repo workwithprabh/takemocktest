@@ -3,6 +3,7 @@ import { contentLocale } from '@/lib/hreflang';
 import Link from 'next/link';
 import ExamCard from '@/components/ExamCard';
 import ExamCategoryCard from '@/components/ExamCategoryCard';
+import { EXAM_CALENDAR_EVENTS, formatCalendarEventDate, getUpcomingCalendarEvents } from '@/lib/exam-calendar';
 import { EXAM_LIST, COUNTRIES, getCheckedTestCount } from '@/lib/exams';
 import { getFeaturedExamCatalog } from '@/lib/exam-catalog';
 import { countryPublishes, getExamsForCountry, countryName } from '@/lib/exam-countries';
@@ -267,6 +268,7 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
   const faqs = faqsFor(country, scale);
   const hasUpdates = countryPublishes(country, 'updates');
   const latestUpdates = getLatestUpdates(5);
+  const upcomingCalendarEvents = hasUpdates ? getUpcomingCalendarEvents(EXAM_CALENDAR_EVENTS, Date.now(), 3) : [];
 
   return (
     <div>
@@ -465,14 +467,32 @@ export default async function HomePage({ params }: { params: Promise<{ country: 
         {hasUpdates && latestUpdates.length > 0 && (
           <section aria-labelledby="latest-updates-heading">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
-              <h2 id="latest-updates-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Latest exam updates</h2>
-              <div className="flex flex-wrap items-center gap-4">
-                <Link href={`/${country}/exam-calendar`} className="inline-flex min-h-11 items-center text-sm font-semibold text-action-700 underline-offset-4 hover:underline">Exam calendar</Link>
-                <Link href={`/${country}/exam-updates`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
-                  View all updates <span aria-hidden="true">→</span>
-                </Link>
-              </div>
+              <h2 id="latest-updates-heading" className="text-xl font-bold text-ink-900 md:text-2xl">Dates and exam updates</h2>
+              <Link href={`/${country}/exam-updates`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-action-700 underline-offset-4 hover:underline">
+                View all updates <span aria-hidden="true">→</span>
+              </Link>
             </div>
+            {upcomingCalendarEvents.length > 0 && (
+              <div className="mb-4 border border-attention-100 bg-attention-50/50 p-4">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-attention-800">Next on the calendar</p>
+                    <p className="mt-1 text-sm text-ink-700">Three official-source dates worth checking now.</p>
+                  </div>
+                  <Link href={`/${country}/exam-calendar`} className="shrink-0 text-sm font-semibold text-action-800 hover:underline">Full calendar →</Link>
+                </div>
+                <div className="mt-3 flex snap-x gap-3 overflow-x-auto pb-1 md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
+                  {upcomingCalendarEvents.map((event) => (
+                    <Link key={event.id} href={`/${country}/exam-calendar#${event.id}`} className="group min-w-[220px] snap-start border border-attention-100 bg-white p-3 transition hover:border-attention-600 md:min-w-0">
+                      <span className="text-[10px] font-semibold uppercase tracking-wide text-attention-800">{event.type} · {event.status}</span>
+                      <span className="mt-1 block text-sm font-bold text-ink-900 group-hover:underline">{event.examName}</span>
+                      <span className="mt-1 block text-xs leading-5 text-ink-600">{event.label}</span>
+                      <time dateTime={event.startsOn} className="mt-2 block text-xs font-semibold text-action-800">{formatCalendarEventDate(event)}</time>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
             <div className="divide-y divide-ink-200 border border-ink-200 bg-white">
               {latestUpdates.map((update, index) => (
                 <Link

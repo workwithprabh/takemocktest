@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import LiveExamStatus from '@/components/LiveExamStatus';
 import { getExamVisual } from '@/lib/exam-visuals';
+import { EXAM_CALENDAR_EVENTS, calendarEventTimestamp, formatCalendarEventDate, getUpcomingCalendarEvents } from '@/lib/exam-calendar';
 import { getExamCycle, type CycleState } from '@/lib/exam-cycles';
 import { getExamPatternFaqs, getExamFactFaqs } from '@/lib/exam-faqs';
 import { COUNTRIES, getCheckedTestCount, getExam, getExamOverviewCopy, hasOfficialPattern as examHasOfficialPattern } from '@/lib/exams';
@@ -20,6 +21,8 @@ const CYCLE_STATE_STYLES: Record<CycleState, string> = {
 };
 
 const DATE_STATUS_STYLES: Record<string, string> = {
+  Confirmed: 'bg-live-50 text-live-800',
+  Tentative: 'bg-attention-50 text-attention-800',
   Published: 'bg-live-50 text-live-800',
   Completed: 'bg-live-50 text-live-800',
   Upcoming: 'bg-attention-50 text-attention-800',
@@ -108,7 +111,11 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
   const hasCheckedTests = checkedTestCount > 0;
   const officialStages = exam.stages.filter((stage) => stage.pattern.status === 'official');
   const hasOfficialPattern = officialStages.length > 0;
-  const currentCycle = getExamCycle(exam.slug);
+  const now = Date.now();
+  const listedCycle = getExamCycle(exam.slug);
+  const currentCycle = listedCycle && calendarEventTimestamp(listedCycle.nextEvent.endsAt, true) >= now ? listedCycle : undefined;
+  const upcomingExamDates = getUpcomingCalendarEvents(EXAM_CALENDAR_EVENTS, now, 3, exam.slug);
+  const hasUpcomingDates = Boolean(currentCycle || upcomingExamDates.length);
   const latestExamUpdates = getUpdatesForExam(exam.slug, 3);
   const links = [
     {
@@ -234,7 +241,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
       <main className="mx-auto max-w-6xl px-5 py-8 md:py-12">
         <nav aria-label={`${exam.name} page sections`} className={`sticky top-[60px] z-10 mb-10 overflow-x-auto border-y bg-white shadow-sm ${currentCycle ? 'border-action-100' : 'border-ink-200'}`}>
           <div className="flex min-w-max">
-            {currentCycle && <a href="#dates" className="border-b-2 border-transparent px-4 py-3 text-sm font-semibold text-action-800 transition hover:border-action-600 hover:bg-action-50">Dates</a>}
+            {hasUpcomingDates && <a href="#dates" className="border-b-2 border-transparent px-4 py-3 text-sm font-semibold text-action-800 transition hover:border-action-600 hover:bg-action-50">Dates</a>}
             <a href="#mock-tests" className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>Mock tests</a>
             {hasOfficialPattern && <Link href={`/${country}/${exam.slug}/exam-pattern`} className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>Pattern</Link>}
             {latestExamUpdates.length > 0 && <a href="#updates" className={`border-b-2 border-transparent px-4 py-3 text-sm font-semibold transition ${currentCycle ? 'text-action-800 hover:border-action-600 hover:bg-action-50' : 'text-ink-700 hover:border-ink-900 hover:bg-ink-50'}`}>Updates</a>}
@@ -265,7 +272,7 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
               </ol>
             </section>
 
-            <section id="dates" className="mt-12 scroll-mt-24" aria-labelledby="dates-heading">
+            {upcomingExamDates.length === 0 && <section id="dates" className="mt-12 scroll-mt-24" aria-labelledby="dates-heading">
               <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
                 <div className="flex items-start gap-3">
                   <DashboardIcon name="calendar" tone="attention" />
@@ -288,8 +295,41 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
                   </div>
                 ))}
               </div>
-            </section>
+            </section>}
           </>
+        )}
+
+        {upcomingExamDates.length > 0 && (
+          <section id="dates" className="mt-12 scroll-mt-24" aria-labelledby="dates-heading">
+            <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+              <div className="flex items-start gap-3">
+                <DashboardIcon name="calendar" tone="attention" />
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-attention-700">Official-source calendar</p>
+                  <h2 id="dates-heading" className="mt-1 text-xl font-bold text-ink-900">Upcoming {exam.name} dates</h2>
+                </div>
+              </div>
+              <Link href={`/${country}/exam-calendar`} className="text-sm font-semibold text-action-800 hover:underline">View full exam calendar →</Link>
+            </div>
+            <div className="border border-ink-200 bg-white">
+              {upcomingExamDates.map((event) => (
+                <div key={event.id} className="grid gap-3 border-b border-ink-200 p-4 last:border-b-0 sm:grid-cols-[minmax(0,1fr)_minmax(190px,0.7fr)_130px] sm:items-center">
+                  <div>
+                    <span className="text-[10px] font-semibold uppercase tracking-wide text-attention-800">{event.type}</span>
+                    <div className="mt-1 text-sm font-semibold text-ink-900">{event.label}</div>
+                  </div>
+                  <div>
+                    <time dateTime={event.startsOn} className="text-sm font-semibold text-ink-700">{formatCalendarEventDate(event)}</time>
+                    <div className="mt-1 text-[11px] text-ink-500">Checked {event.sourceCheckedOn.split('-').reverse().join('/')}</div>
+                  </div>
+                  <div className="flex items-center justify-between gap-3 sm:justify-end">
+                    <span className={`px-2 py-1 text-[10px] font-semibold ${DATE_STATUS_STYLES[event.status]}`}>{event.status}</span>
+                    <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-action-700 hover:text-action-800" aria-label={`View official source for ${event.label}`}>↗</a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         )}
 
         <section id="mock-tests" className="mt-12 scroll-mt-24" aria-labelledby="mock-tests-heading">
