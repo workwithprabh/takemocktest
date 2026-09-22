@@ -33,6 +33,97 @@ Government-focused alternative: https://takemocktest.com/in/upcoming-government-
 | Medium | Professor Jayashankar Telangana Agricultural University | https://pjtsau.edu.in/library.html | Its libraries run competitive-exam cells for UPSC, bank and higher-study exams. | Offer the official-source calendar as a digital library reference. | Not contacted |
 | Medium | Sri D.N.R. Government Degree College for Women | https://www.sridnrgdcw.ac.in/support-service-overview.php?service=7 | Its career cell provides competitive-exam guidance and maintains useful links. | Suggest the government calendar for its student support and useful-links section. | Not contacted |
 
+## Resource roundup prospects (search-derived, not opened)
+
+A second channel, added 22 September 2026. The prospects above are college and
+university exam cells: pages that serve students but do not necessarily link out
+to anything. The pages below are roundups whose whole purpose is to list free
+exam-preparation sites, so they already link out to comparable resources and the
+ask is inclusion in a list rather than a new link.
+
+**Read this before using the table.** Every entry below came from search results
+only. This environment's egress proxy blocks these domains, so not one of these
+pages was opened, and the "why it fits" column is inferred from the page title,
+not from its content. Roundup and listicle sites vary enormously in quality, and
+some are content farms whose links are worth little or nothing. Open each page
+and judge it before contacting anyone. The same warning applies with more force
+here than to the college list above, which was researched by opening pages.
+
+| Priority | Site | Page found | Why it may fit | Status |
+| --- | --- | --- | --- | --- |
+| Assess first | BCET Ludhiana | https://www.bcetldh.org/top-books-and-online-resources-for-competitive-exams/ | A college publishing a resources roundup, so it combines the credibility of the college channel with a page that already links out. | Not assessed |
+| Assess first | GrabOn blog | https://blog.grabon.in/competitive-exam-preparation-sites/ | A numbered roundup of exam-preparation sites on an established consumer domain. | Not assessed |
+| Assess | AcademyCheck | https://academycheck.com/blog/the-ultimate-guide-to-free-study-material-websites-in-india | A guide to free study-material sites, which is the category this site sits in. | Not assessed |
+| Assess | AcademyCheck | https://academycheck.com/blog/free-10-best-online-study-video-websites-apps-for-competitive-exams | A second roundup on the same domain; pitch only one of the two. | Not assessed |
+| Assess | eLiveClass | https://www.eliveclass.com/best-free-websites-for-ssc-banking-railway-mock-tests/ | Titled as a roundup of free SSC, banking and railway mock-test sites, which is exactly what this site offers. | Not assessed |
+| Assess | Vrinda International | https://vrinda-international.com/online-study-sites-for-competitive-exams-india/ | A roundup of online study sites for Indian competitive exams. | Not assessed |
+| Assess | SukRaj Classes | https://sukrajclasses.com/competitive-exams-library-study-material/ | A study-material library page for competitive exams. Likely a coaching business, so it may see this site as a competitor. | Not assessed |
+
+## Which asset to pitch to which channel
+
+The calendar is the right pitch for a college cell, whose page exists to help its
+own students plan. It is the wrong pitch for a roundup of mock-test sites, where
+the list is of practice resources and a calendar is off-topic.
+
+- College and university cells: the exam calendar, as the template below already does.
+- Resource roundups: the mock tests themselves. Free, no sign-up, 181 exams, and
+  every pattern carrying the date it was last checked against the official source.
+
+That last point is the differentiator worth leading with. The sites that own
+these search results, Testbook, Adda247, ixamBee, Cracku and similar, all gate
+most of their content behind an account, and at least one site ranking for these
+terms leads specifically on requiring no login. Free and ungated is the claim
+this site can make honestly, and it is the one a roundup editor can verify in
+about ten seconds without signing up for anything.
+
+### Re-derive the exam count before you send anything
+
+The count in the template is a public claim, so it has to be current rather than
+copied. It was 181 on 22 September 2026, counting exams with at least one
+indexable test page, against 1,247 indexable test pages in total. Note that
+`TAKEMOCKTEST_CURRENT_STATUS.md` still says 157 live exams, which was true when
+that line was written and is now well out of date. Re-derive it from a fresh
+build rather than from either document:
+
+```
+npm run build
+python3 - <<'EOF'
+import re, io, glob
+live = {p.split('/')[2] for p in glob.glob('out/in/*/test/*.html')
+        if not re.search(r'<meta name="robots" content="[^"]*noindex',
+                         io.open(p, encoding='utf-8').read())}
+print(len(live), 'exams with at least one indexable test')
+EOF
+```
+
+## Outreach template for a resource roundup
+
+A different ask from the calendar pitch: inclusion in a list that already exists,
+not a new link on a page that has none.
+
+Subject: Suggestion for your free exam-preparation list
+
+Hello [name or team],
+
+Your page [exact page title] lists free preparation resources for Indian
+competitive exams. I would like to suggest one you may not have come across.
+
+TakeMockTest: https://takemocktest.com/in
+
+It publishes full-length and sectional mock tests for 181 exams across SSC,
+banking, railways, engineering, law, management and defence. Everything is free
+and nothing requires an account, so you can open any test and check it without
+signing up. Each exam's pattern page states the marks, timing and negative
+marking together with the date that pattern was last checked against the
+official notification, for example [link to one exam-pattern page relevant to
+their audience].
+
+If you think it earns a place on that list, I would be glad to see it included.
+Either way, thank you for maintaining the page.
+
+TakeMockTest
+info@takemocktest.com
+
 ## Personalized outreach template
 
 Subject: Free official-source exam calendar for your students
