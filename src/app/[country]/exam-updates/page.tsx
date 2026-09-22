@@ -96,6 +96,34 @@ export default async function ExamUpdatesPage({ params }: { params: Promise<{ co
           {latestCheck && <p className="font-semibold text-live-800">Latest source check: <time dateTime={latestCheck}>{formatUpdateDate(latestCheck)}</time></p>}
         </div>
         <UpdateFinder updates={updates} country={country} practiceExamSlugs={practiceExamSlugs} asOf={Date.now()} />
+
+        {/*
+          The finder above is a client component that renders eight updates at
+          a time behind a "show more" button, so only eight of them reach the
+          exported HTML. A crawler does not press the button: on 22 September
+          2026 eleven update pages had a single inbound link, their exam's hub,
+          and no route at all from the index that exists to list them.
+
+          This is the full archive, server-rendered. It is also the thing a
+          reader looking for an older notice actually wants, which is why it
+          is a visible list rather than a noscript block.
+        */}
+        <section className="mt-12 border-t border-ink-200 pt-8" aria-labelledby="all-updates-heading">
+          <h2 id="all-updates-heading" className="font-sans text-xl font-bold text-ink-900">All {updates.length} updates</h2>
+          <p className="mt-1 text-sm text-ink-600">Newest first, every summary published here.</p>
+          <ul className="mt-5 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+            {updates.map((update) => (
+              <li key={update.slug} className="border-b border-ink-100 pb-3">
+                <Link href={`/${country}/exam-updates/${update.slug}`} className="text-sm font-semibold leading-6 text-ink-900 hover:underline">
+                  {update.headline}
+                </Link>
+                <p className="mt-0.5 text-xs text-ink-600">
+                  <time dateTime={update.publishedAt}>{formatUpdateDate(update.publishedAt)}</time>
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </div>
   );
