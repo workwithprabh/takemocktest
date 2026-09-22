@@ -13,7 +13,7 @@
 import type { BlogDiagramId } from '@/components/blog/BlogDiagrams';
 // Figures quoted about this site's own corpus are derived, never typed in.
 // See src/lib/blog-corpus-stats.ts for why, and for the definitions.
-import { CORPUS, capitalise, n, word } from './blog-corpus-stats';
+import { CORPUS, capitalise, fraction, n, word } from './blog-corpus-stats';
 
 export type BlogBlock =
   | { type: 'paragraph'; heading?: string; text: string }
@@ -42,6 +42,12 @@ export interface BlogPost {
   category: string;
   readTimeMin: number;
   publishedAt: string;
+  /**
+   * Set only when a published post has been materially extended or corrected,
+   * so `dateModified` in the article schema stops echoing `datePublished`.
+   * A typo fix is not a modification; a new section or a changed figure is.
+   */
+  updatedAt?: string;
   authorName: string;
   /**
    * The single search phrase this post is written to answer. Declared here
@@ -56,6 +62,32 @@ export interface BlogPost {
   image?: BlogImage;
   body: BlogBlock[];
   faqs?: BlogFaq[];
+}
+
+/**
+ * "+1/-0.333, +3/-1, +2.5/-0.833 and four other ways". The same penalty is
+ * written many ways across Indian notices, so the row names the commonest few
+ * and counts the tail rather than listing it.
+ *
+ * The three shown are picked one per marks-per-correct figure. Ranking on
+ * frequency alone put +1/-0.333 next to +1/-0.33 in the one-third row, which
+ * are two roundings of the same spec as different notices write it: true, but
+ * it reads as a typo in our own table and spends the reader's trust to make a
+ * point the row is not making.
+ */
+function markingSpecSummary(specs: { spec: string; tests: number }[]): string {
+  const shown: string[] = [];
+  const seen = new Set<string>();
+  for (const entry of specs) {
+    const marksPerCorrect = entry.spec.slice(1).split('/')[0];
+    if (seen.has(marksPerCorrect)) continue;
+    seen.add(marksPerCorrect);
+    shown.push(entry.spec);
+    if (shown.length === 3) break;
+  }
+  const rest = specs.length - shown.length;
+  if (rest === 0) return shown.join(', ');
+  return `${shown.join(', ')} and ${rest === 1 ? 'one other way' : `${word(rest)} other ways`}`;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -143,8 +175,9 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Understanding Negative Marking: A Complete Guide',
     excerpt: 'Negative marking changes the optimal strategy for guessing. Once you can rule out one option of four, a guess usually beats leaving it blank.',
     category: 'Exam Strategy',
-    readTimeMin: 4,
+    readTimeMin: 6,
     publishedAt: '2026-01-24',
+    updatedAt: '2026-09-22',
     authorName: 'TakeMockTest Editorial Team',
     primaryKeyword: 'negative marking in competitive exams',
     image: {
@@ -157,27 +190,39 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'paragraph', text: 'Negative marking means an incorrect answer costs you marks, not just a missed opportunity. So the right strategy isn\'t "always attempt everything" or "never guess," it\'s somewhere in between, and the math is simple once you see it.' },
       { type: 'takeaways', items: [
         'Unattempted questions always score zero; only a wrong answer costs you marks.',
+        'The deduction is not the penalty. Divide it by the marks a correct answer earns, because 1 mark off a 4-mark question is the same cost as 0.25 off a 1-mark question.',
+        `Check before you assume there is a penalty at all: ${n(CORPUS.marking.none)} of the ${n(CORPUS.marking.tests)} tests here deduct nothing.`,
         'Once you can eliminate even one of four options, a guess usually has better expected value than leaving it blank.',
         'A pure blind guess with all four options open is usually close to break-even or slightly negative.',
       ] },
       { type: 'diagram', id: 'negative-marking-math', caption: 'Where a correct answer, a wrong answer, and an unattempted question land under a 0.25 negative-marking ratio.' },
-      { type: 'paragraph', heading: 'How it works', text: 'Each exam sets its own deduction, most commonly 0.25 marks off for a wrong answer worth 1 mark, though some exams use 0.5 or a different ratio entirely. Check the exact figure on your exam\'s [exam pattern page](/exams) rather than assuming it matches a different exam you\'ve prepared for. Unattempted questions score zero either way, so the only real risk is answering incorrectly.' },
-      { type: 'table', heading: 'Common negative-marking ratios on this site', headers: ['Deduction per wrong answer', 'Typical example'], rows: [
-        ['0.25 marks (1-mark questions)', 'Most SSC and banking Prelims exams'],
-        ['1/3 mark (1-mark questions)', 'Most RRB exams'],
-        ['0.5 marks', 'A smaller number of exams'],
-        ['None', 'e.g. SSC MTS Session 1, LIC AAO Prelims'],
+      { type: 'paragraph', heading: 'How it works', text: `Two numbers govern the whole decision: what a correct answer earns, and what a wrong one takes away. The second divided by the first is what a wrong answer really costs you, and it is the only figure worth carrying into the exam hall. Across the ${n(CORPUS.marking.tests)} checked tests on this site the commonest answer is ${fraction(4, 0.25)} of a correct answer, on ${n(CORPUS.marking.quarter)} of them. Read both numbers off your exam's [exam pattern page](/exams) rather than assuming they match an exam you have already prepared for. Unattempted questions score zero either way, so the only real risk is answering incorrectly.` },
+      { type: 'table', heading: `How the ${n(CORPUS.marking.tests)} tests on this site actually score`, headers: ['A wrong answer costs', 'Tests here', 'Written on the paper as'], rows: [
+        [`${capitalise(fraction(4, 0.25))} of a correct answer`, n(CORPUS.marking.quarter), markingSpecSummary(CORPUS.marking.quarterSpecs)],
+        [`${capitalise(fraction(3, 1 / 3))} of a correct answer`, n(CORPUS.marking.third), markingSpecSummary(CORPUS.marking.thirdSpecs)],
+        ['Nothing', n(CORPUS.marking.none), 'No deduction is stated'],
+        ['Some other share', n(CORPUS.marking.other), 'Mostly one-eighth and one-fifth schemes'],
       ] },
+      { type: 'paragraph', heading: 'The deduction on its own tells you nothing', text: `"One mark will be deducted for each wrong answer" sounds precise and is not. What a wrong answer costs you depends entirely on what a correct one earns, and that is the number students skip. On the tests published here a stated deduction of 1 mark means three different penalties depending on the paper, and so does a stated deduction of 0.25. Divide the deduction by the marks per correct answer before you decide anything about guessing.` },
+      { type: 'table', heading: 'One deduction figure, more than one penalty', headers: ['Deduction stated', 'A correct answer earns', 'So a wrong answer really costs', 'Tests here'], rows: CORPUS.marking.ambiguousDeductions.flatMap((entry) => entry.readings.map((reading) => [
+        `${entry.deduction} mark${entry.deduction === 1 ? '' : 's'}`,
+        `${reading.marksPerCorrect} mark${reading.marksPerCorrect === 1 ? '' : 's'}`,
+        `${capitalise(fraction(reading.fraction, reading.ratio))} of a correct answer`,
+        n(reading.tests),
+      ])) },
+      { type: 'paragraph', heading: 'Where there is no penalty, a blank is a wasted mark', text: `Not every paper deducts. Of the ${n(CORPUS.marking.tests)} checked tests published here, ${n(CORPUS.marking.none)} take nothing off for a wrong answer, roughly ${Math.round((CORPUS.marking.none / CORPUS.marking.tests) * 100)} in every hundred. On those the guessing question does not arise. A blank scores zero and a wrong answer scores zero, so every question you leave unanswered is a mark you declined to try for, and the disciplined habit that protects you on a penalty paper costs you marks here. That is why neither "attempt everything" nor "never guess" works as a general rule: they are each correct on a different set of papers, and you have to know which one you are sitting.` },
       { type: 'paragraph', heading: 'When a guess is worth it', text: 'If you can confidently eliminate even one of four options, a random guess among the rest has better expected value than leaving it blank, for most standard negative-marking ratios. A pure blind guess with all four options still open is usually close to break-even or slightly negative, so it\'s better left unattempted.' },
       { type: 'paragraph', heading: 'Why this matters more than most students think', text: 'A handful of careless guesses can erase the marks gained from your strongest section without ever showing up as a weak section. Treat "should I guess this?" as a real decision each time, not a reflex, and review your mock test results specifically for wrong answers on questions you weren\'t sure about; [how to analyze your mock test performance](/blog/how-to-analyze-your-mock-test-performance) covers how to separate those from genuine knowledge gaps.' },
       { type: 'callout', text: 'A handful of careless guesses can erase the marks gained from your strongest section without ever showing up as a weak section.' },
       { type: 'paragraph', text: 'This is one of [5 common mistakes in SSC CGL preparation](/blog/common-ssc-cgl-preparation-mistakes) worth checking yourself against directly, since ignoring the exact deduction on your exam is a surprisingly frequent, entirely avoidable one.' },
     ],
     faqs: [
-      { q: 'How much does a wrong answer typically cost in negative marking?', a: 'It varies by exam, but 0.25 marks off for a question worth 1 mark is the most common ratio across SSC and banking exams on this site. Some exams use 0.5, and a few use no negative marking at all, so always check the specific exam\'s pattern page rather than assuming.' },
+      { q: 'How much does a wrong answer typically cost in negative marking?', a: `Ask what fraction of a correct answer it costs, not how many marks come off. Across the ${n(CORPUS.marking.tests)} checked tests on this site, ${n(CORPUS.marking.quarter)} take off ${fraction(4, 0.25)} of a correct answer and ${n(CORPUS.marking.third)} take off ${fraction(3, 1 / 3)}, which between them covers most SSC, banking and railway papers. A further ${n(CORPUS.marking.none)} take off nothing at all. Marks per question vary far more than the fraction does, so check your own exam's pattern page rather than assuming.` },
       { q: 'Should I ever leave a question completely unattempted?', a: 'Yes, when you cannot eliminate any of the options. A pure blind guess across all four choices is usually close to break-even or slightly negative under standard negative-marking ratios, so it is better left blank than guessed at random.' },
       { q: 'Is it worth guessing if I can eliminate one wrong option?', a: 'Generally yes. Once you have ruled out even one of four options, a random guess among the remaining three has better expected value than leaving the question blank, for most standard negative-marking ratios.' },
       { q: 'Do unattempted questions lose marks under negative marking?', a: 'No. Unattempted questions always score zero, the same as they would under any marking scheme. The penalty applies only to answers you get wrong, which is exactly why guessing needs to be a deliberate decision rather than a reflex.' },
+      { q: 'Is a 1-mark deduction worse than a 0.25-mark deduction?', a: `Not necessarily, and on this site it usually is not. What matters is the deduction divided by the marks a correct answer earns. A paper scoring +4 for a correct answer and taking 1 mark off for a wrong one applies exactly the same penalty as a paper scoring +1 and taking off 0.25. Both cost you ${fraction(4, 0.25)} of a correct answer. A deduction of 1 mark is ${fraction(3, 1 / 3)} of a correct answer on a +3 paper and ${fraction(5, 0.2)} on a +5 paper, so the figure on its own is not comparable across exams.` },
+      { q: 'How many exams have no negative marking?', a: `${capitalise(n(CORPUS.marking.none))} of the ${n(CORPUS.marking.tests)} checked tests on this site deduct nothing for a wrong answer, which is about ${Math.round((CORPUS.marking.none / CORPUS.marking.tests) * 100)} percent of them. On a paper with no penalty there is no reason to leave anything blank, since an unanswered question and a wrong one both score zero. Check your own exam's pattern page rather than assuming, because the rule can differ between stages of the same exam.` },
     ],
   },
   {
