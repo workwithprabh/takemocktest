@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-22",
- "pageCount": 5681,
+ "pageCount": 5689,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10563,7 +10563,7 @@
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,565 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,628 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10578,8 +10578,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "1a5c50b4949b",
-   "ogHash": "50b715165270",
+   "schemaHash": "a44f5ef35e10",
+   "ogHash": "f3254e5711a9",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -21863,7 +21863,7 @@
     "ItemList",
     "ListItem"
    ],
-   "schemaHash": "dc1bc39d7552",
+   "schemaHash": "1fb0a7210b2f",
    "ogHash": "992d94f0b48c",
    "sitemap": true,
    "robots": "index, follow"
@@ -39665,7 +39665,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "ba2af27f41cf",
+   "schemaHash": "60a3a64819bb",
    "ogHash": "7db1ae5e9ed7",
    "sitemap": true,
    "robots": "index, follow"
@@ -39789,6 +39789,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/jipmat/test/data-interpretation-logical-reasoning-sectional-2/attempt": {
+   "title": "JIPMAT Data Interpretation and Logical Reasoning Sectional Test 2",
+   "description": "Attempt the JIPMAT Data Interpretation and Logical Reasoning Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "e22b957d5e45",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/jipmat/test/data-interpretation-logical-reasoning-sectional-2": {
+   "title": "JIPMAT Data Interpretation and Logical Reasoning Mock Test 2",
+   "description": "Free JIPMAT Data Interpretation and Logical Reasoning Mock Test 2: 33 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "JIPMAT Data Interpretation and Logical Reasoning Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "ede7f3146c97",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "853b20c6a9cd",
+   "ogHash": "b794b290a6e6",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/jipmat/test/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-1/attempt": {
    "title": "JIPMAT Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 1",
    "description": "Attempt the JIPMAT Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 1 and review your result on this device.",
@@ -39826,6 +39860,43 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/jipmat/test/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-2/attempt": {
+   "title": "JIPMAT Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 2",
+   "description": "Attempt the JIPMAT Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "d4378d60bc05",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/jipmat/test/quantitative-aptitude-data-interpretation-logical-reasoning-verbal-ability-reading-comprehension-full-mock-2": {
+   "title": "JIPMAT Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 2",
+   "description": "Attempt JIPMAT Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 2: 100 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "h1": [
+    "JIPMAT Quantitative Aptitude, Data Interpretation and Logical Reasoning, and Verbal Ability and Reading Comprehension Full Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "13392d16d6bd",
+   "schemaTypes": [
+    "Answer",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1294a5879cb2",
+   "ogHash": "8cc88fe5a7f7",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/jipmat/test/quantitative-aptitude-sectional-1/attempt": {
    "title": "JIPMAT Quantitative Aptitude Sectional Test 1 | TakeMockTest",
    "description": "Attempt the JIPMAT Quantitative Aptitude Sectional Test 1 and review your result on this device.",
@@ -39860,6 +39931,40 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/jipmat/test/quantitative-aptitude-sectional-2/attempt": {
+   "title": "JIPMAT Quantitative Aptitude Sectional Test 2 | TakeMockTest",
+   "description": "Attempt the JIPMAT Quantitative Aptitude Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "b6c2f8385628",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/jipmat/test/quantitative-aptitude-sectional-2": {
+   "title": "JIPMAT Quantitative Aptitude Mock Test 2: Free Practice",
+   "description": "Free JIPMAT Quantitative Aptitude Mock Test 2: 33 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "JIPMAT Quantitative Aptitude Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "e6cad696aa51",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "69b17fb3fd60",
+   "ogHash": "56b294840957",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/jipmat/test/verbal-ability-reading-comprehension-sectional-1/attempt": {
    "title": "JIPMAT Verbal Ability and Reading Comprehension Sectional Test 1",
    "description": "Attempt the JIPMAT Verbal Ability and Reading Comprehension Sectional Test 1 and review your result on this device.",
@@ -39891,6 +39996,40 @@
    ],
    "schemaHash": "37c8bf7d92aa",
    "ogHash": "f8f865847480",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/jipmat/test/verbal-ability-reading-comprehension-sectional-2/attempt": {
+   "title": "JIPMAT Verbal Ability and Reading Comprehension Sectional Test 2",
+   "description": "Attempt the JIPMAT Verbal Ability and Reading Comprehension Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "4e88635c7edf",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/jipmat/test/verbal-ability-reading-comprehension-sectional-2": {
+   "title": "JIPMAT Verbal Ability and Reading Comprehension Mock Test 2",
+   "description": "Free JIPMAT Verbal Ability and Reading Comprehension Mock Test 2: 34 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "JIPMAT Verbal Ability and Reading Comprehension Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "de579fa77085",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1304e6a71973",
+   "ogHash": "a1eff00df989",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59234,7 +59373,7 @@
   },
   "/in/practice/active-and-passive-voice": {
    "title": "Active and Passive Voice Questions with Answers 2026",
-   "description": "110 free active and passive voice questions with answers and explanations, pooled from 19 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "111 free active and passive voice questions with answers and explanations, pooled from 20 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Active and Passive Voice Questions with Answers"
    ],
@@ -59250,8 +59389,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0939f7ea9e3d",
-   "ogHash": "b40dcbe0bd0e",
+   "schemaHash": "f57b3a4865af",
+   "ogHash": "c6b356306fc0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59345,7 +59484,7 @@
   },
   "/in/practice/antonyms": {
    "title": "Antonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "282 free antonyms questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "283 free antonyms questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Antonyms Questions with Answers"
    ],
@@ -59361,8 +59500,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d71ad4d2f297",
-   "ogHash": "672a5e336000",
+   "schemaHash": "f8575f5eddc6",
+   "ogHash": "dea5475abc5a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59382,7 +59521,7 @@
   },
   "/in/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "220 free averages questions with answers and explanations, pooled from 64 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "221 free averages questions with answers and explanations, pooled from 64 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -59398,8 +59537,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "782ab80f8967",
-   "ogHash": "665475f0f48d",
+   "schemaHash": "664fa41bc855",
+   "ogHash": "e0df22b710e4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59604,7 +59743,7 @@
   },
   "/in/practice/compound-interest": {
    "title": "Compound Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "107 free compound interest questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "108 free compound interest questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Compound Interest Questions with Answers"
    ],
@@ -59620,8 +59759,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8b0247e40fa7",
-   "ogHash": "dd72cc69b89f",
+   "schemaHash": "61c76a1d5ab0",
+   "ogHash": "5acc1fdaad65",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59641,7 +59780,7 @@
   },
   "/in/practice/data-interpretation": {
    "title": "Data Interpretation Questions with Answers 2026",
-   "description": "427 free data interpretation questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "444 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
@@ -59657,8 +59796,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a6571b095a12",
-   "ogHash": "fae5ad12c2f2",
+   "schemaHash": "77ee0a1ad06a",
+   "ogHash": "a16031cd5670",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59863,7 +60002,7 @@
   },
   "/in/practice/idioms-and-phrases": {
    "title": "Idioms and Phrases Questions with Answers 2026",
-   "description": "258 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "259 free idioms and phrases questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Idioms and Phrases Questions with Answers"
    ],
@@ -59879,8 +60018,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "845fa1b2f238",
-   "ogHash": "f2c40fbe1d36",
+   "schemaHash": "7cedb4b3bbe6",
+   "ogHash": "fdc381883843",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59900,7 +60039,7 @@
   },
   "/in/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "252 free mensuration questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "256 free mensuration questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
@@ -59916,8 +60055,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1f16ae23099c",
-   "ogHash": "3c18a3c588c9",
+   "schemaHash": "fd08188ac763",
+   "ogHash": "8eab12f566b1",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59974,7 +60113,7 @@
   },
   "/in/practice/number-system": {
    "title": "Number System Questions with Answers 2026 | TakeMockTest",
-   "description": "153 free number system questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "155 free number system questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number System Questions with Answers"
    ],
@@ -59990,8 +60129,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6602e9034986",
-   "ogHash": "cf7de376efcb",
+   "schemaHash": "ea89bf411948",
+   "ogHash": "e183729fddd4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60048,7 +60187,7 @@
   },
   "/in/practice/para-jumbles": {
    "title": "Para Jumbles Questions with Answers 2026 | TakeMockTest",
-   "description": "81 free para jumbles questions with answers and explanations, pooled from 15 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "82 free para jumbles questions with answers and explanations, pooled from 16 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Para Jumbles Questions with Answers"
    ],
@@ -60064,8 +60203,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "bbea0cf6a308",
-   "ogHash": "77fd8664c5d8",
+   "schemaHash": "c2d7c349eecf",
+   "ogHash": "c3329207ff44",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60085,7 +60224,7 @@
   },
   "/in/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "230 free percentage questions with answers and explanations, pooled from 49 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "232 free percentage questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -60101,8 +60240,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e61835a44955",
-   "ogHash": "1df052b9a349",
+   "schemaHash": "580624a60ee2",
+   "ogHash": "be94e992be2c",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60159,7 +60298,7 @@
   },
   "/in/practice/probability": {
    "title": "Probability Questions with Answers 2026 | TakeMockTest",
-   "description": "262 free probability questions with answers and explanations, pooled from 81 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "263 free probability questions with answers and explanations, pooled from 81 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Probability Questions with Answers"
    ],
@@ -60175,8 +60314,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "df0e623b9196",
-   "ogHash": "f79e66e5075d",
+   "schemaHash": "57ea7314d834",
+   "ogHash": "04dfbb1eb6a6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60196,7 +60335,7 @@
   },
   "/in/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "207 free profit and loss questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "208 free profit and loss questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -60212,8 +60351,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6da035c3a2b5",
-   "ogHash": "14706db8a0fe",
+   "schemaHash": "4f711ce656ce",
+   "ogHash": "e0a8cfd7ccab",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60307,7 +60446,7 @@
   },
   "/in/practice/ratio-and-proportion": {
    "title": "Ratio and Proportion Questions with Answers 2026",
-   "description": "241 free ratio and proportion questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "242 free ratio and proportion questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ratio and Proportion Questions with Answers"
    ],
@@ -60323,8 +60462,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "69dca927aa79",
-   "ogHash": "f308bb23582f",
+   "schemaHash": "48f39dd71ed4",
+   "ogHash": "a33f0cc3303d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60344,7 +60483,7 @@
   },
   "/in/practice/reading-comprehension": {
    "title": "Reading Comprehension Questions with Answers 2026",
-   "description": "403 free reading comprehension questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "423 free reading comprehension questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Reading Comprehension Questions with Answers"
    ],
@@ -60360,8 +60499,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d388bf06e9ae",
-   "ogHash": "a03722405930",
+   "schemaHash": "8f156c1890ef",
+   "ogHash": "07c1a4dab799",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60381,7 +60520,7 @@
   },
   "/in/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "84 free seating arrangement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "89 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -60397,8 +60536,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "24dbf9c5ed8a",
-   "ogHash": "9861237c3c1f",
+   "schemaHash": "36ccb6a8c349",
+   "ogHash": "355d102acde3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60455,7 +60594,7 @@
   },
   "/in/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "138 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "139 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -60471,8 +60610,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "376d4039802f",
-   "ogHash": "bcd2c2e9bfc2",
+   "schemaHash": "986660961350",
+   "ogHash": "33877ecd244d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60640,7 +60779,7 @@
   },
   "/in/practice/time-and-work": {
    "title": "Time and Work Questions with Answers 2026 | TakeMockTest",
-   "description": "233 free time and work questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "234 free time and work questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time and Work Questions with Answers"
    ],
@@ -60656,8 +60795,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "80e925f4a377",
-   "ogHash": "486329cbd567",
+   "schemaHash": "a393aee9f265",
+   "ogHash": "0f21ab8cebd6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60677,7 +60816,7 @@
   },
   "/in/practice/time-speed-and-distance": {
    "title": "Time, Speed and Distance Questions with Answers 2026",
-   "description": "194 free time, speed and distance questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "196 free time, speed and distance questions with answers and explanations, pooled from 47 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time, Speed and Distance Questions with Answers"
    ],
@@ -60693,14 +60832,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "97f1bed8da1b",
-   "ogHash": "56c2a2db6502",
+   "schemaHash": "ec32e7aa1638",
+   "ogHash": "c40000b7b067",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,565 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,628 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -60716,7 +60855,7 @@
     "Question"
    ],
    "schemaHash": "212e31eec12f",
-   "ogHash": "c6f4a46ac90b",
+   "ogHash": "ffd3a415f58d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -90937,7 +91076,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "9b7cabfae3d0",
+   "schemaHash": "2b8cedb60c29",
    "ogHash": "3be20748b15a",
    "sitemap": true,
    "robots": "index, follow"
@@ -96376,7 +96515,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "a53c0b3a71b7",
+   "schemaHash": "498af0a37bc2",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -97972,7 +98111,7 @@
   },
   "/ng/practice/active-and-passive-voice": {
    "title": "Active and Passive Voice Questions with Answers 2026",
-   "description": "110 free active and passive voice questions with answers and explanations, pooled from 19 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "111 free active and passive voice questions with answers and explanations, pooled from 20 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Active and Passive Voice Questions with Answers"
    ],
@@ -97988,8 +98127,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "88c191fe71d6",
-   "ogHash": "4119f1673f23",
+   "schemaHash": "8c9d4dfe86a7",
+   "ogHash": "1b4c5e58b5d9",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98083,7 +98222,7 @@
   },
   "/ng/practice/antonyms": {
    "title": "Antonyms Questions with Answers 2026 | TakeMockTest",
-   "description": "282 free antonyms questions with answers and explanations, pooled from 38 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "283 free antonyms questions with answers and explanations, pooled from 39 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Antonyms Questions with Answers"
    ],
@@ -98099,8 +98238,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "3f5e029bba00",
-   "ogHash": "b26a075046bc",
+   "schemaHash": "b611a4f85441",
+   "ogHash": "e4873947cafa",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98120,7 +98259,7 @@
   },
   "/ng/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "220 free averages questions with answers and explanations, pooled from 64 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "221 free averages questions with answers and explanations, pooled from 64 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -98136,8 +98275,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b67f44ca5c17",
-   "ogHash": "124718021008",
+   "schemaHash": "3d22411cef9e",
+   "ogHash": "d38fa60ffdbb",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98342,7 +98481,7 @@
   },
   "/ng/practice/compound-interest": {
    "title": "Compound Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "107 free compound interest questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "108 free compound interest questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Compound Interest Questions with Answers"
    ],
@@ -98358,8 +98497,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e18052d07321",
-   "ogHash": "fd76a09b21f1",
+   "schemaHash": "35bf93a23ead",
+   "ogHash": "2c7b4c19c2fe",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98379,7 +98518,7 @@
   },
   "/ng/practice/data-interpretation": {
    "title": "Data Interpretation Questions with Answers 2026",
-   "description": "427 free data interpretation questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "444 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
@@ -98395,8 +98534,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "521a91ddcdf7",
-   "ogHash": "63576312d15d",
+   "schemaHash": "ebb4a57a4a1d",
+   "ogHash": "e1400e4b08ab",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98601,7 +98740,7 @@
   },
   "/ng/practice/idioms-and-phrases": {
    "title": "Idioms and Phrases Questions with Answers 2026",
-   "description": "258 free idioms and phrases questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "259 free idioms and phrases questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Idioms and Phrases Questions with Answers"
    ],
@@ -98617,8 +98756,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "899254f10563",
-   "ogHash": "abc2a697ab40",
+   "schemaHash": "5f1ee8bcbf40",
+   "ogHash": "6452051fd7d0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98638,7 +98777,7 @@
   },
   "/ng/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "252 free mensuration questions with answers and explanations, pooled from 54 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "256 free mensuration questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
@@ -98654,8 +98793,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "872372f10f77",
-   "ogHash": "986c166d1514",
+   "schemaHash": "129c05449e5b",
+   "ogHash": "616102069297",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98712,7 +98851,7 @@
   },
   "/ng/practice/number-system": {
    "title": "Number System Questions with Answers 2026 | TakeMockTest",
-   "description": "153 free number system questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "155 free number system questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number System Questions with Answers"
    ],
@@ -98728,8 +98867,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "969a337b3ad1",
-   "ogHash": "3ed0db2800f1",
+   "schemaHash": "7378f4ad8e19",
+   "ogHash": "b089b5674a9b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98786,7 +98925,7 @@
   },
   "/ng/practice/para-jumbles": {
    "title": "Para Jumbles Questions with Answers 2026 | TakeMockTest",
-   "description": "81 free para jumbles questions with answers and explanations, pooled from 15 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "82 free para jumbles questions with answers and explanations, pooled from 16 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Para Jumbles Questions with Answers"
    ],
@@ -98802,8 +98941,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "11f8b40981fd",
-   "ogHash": "6f94e330e6f8",
+   "schemaHash": "0e1ffd04be42",
+   "ogHash": "3c4bad903d51",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98823,7 +98962,7 @@
   },
   "/ng/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "230 free percentage questions with answers and explanations, pooled from 49 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "232 free percentage questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -98839,8 +98978,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "68b33f878c11",
-   "ogHash": "c10e73f42733",
+   "schemaHash": "7da7b1ce14de",
+   "ogHash": "2e7c194eb3c2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98897,7 +99036,7 @@
   },
   "/ng/practice/probability": {
    "title": "Probability Questions with Answers 2026 | TakeMockTest",
-   "description": "262 free probability questions with answers and explanations, pooled from 81 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "263 free probability questions with answers and explanations, pooled from 81 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Probability Questions with Answers"
    ],
@@ -98913,8 +99052,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "571114d6990b",
-   "ogHash": "aeefa7b7d76a",
+   "schemaHash": "4ac34ae9de6b",
+   "ogHash": "ac8e1d753367",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98934,7 +99073,7 @@
   },
   "/ng/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "207 free profit and loss questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "208 free profit and loss questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -98950,8 +99089,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "9264b743024e",
-   "ogHash": "8a7ca78d9456",
+   "schemaHash": "f5d5ce581f9d",
+   "ogHash": "06a8e51327e9",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99045,7 +99184,7 @@
   },
   "/ng/practice/ratio-and-proportion": {
    "title": "Ratio and Proportion Questions with Answers 2026",
-   "description": "241 free ratio and proportion questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "242 free ratio and proportion questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ratio and Proportion Questions with Answers"
    ],
@@ -99061,8 +99200,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "299a88def221",
-   "ogHash": "55a34d1ab5f1",
+   "schemaHash": "ef5cccbcf8dd",
+   "ogHash": "301ef95bb8b1",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99082,7 +99221,7 @@
   },
   "/ng/practice/reading-comprehension": {
    "title": "Reading Comprehension Questions with Answers 2026",
-   "description": "403 free reading comprehension questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "423 free reading comprehension questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Reading Comprehension Questions with Answers"
    ],
@@ -99098,8 +99237,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "dad779deae73",
-   "ogHash": "cf10d75abcfa",
+   "schemaHash": "6f5917f17ebb",
+   "ogHash": "fcf01ef4e2cf",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99119,7 +99258,7 @@
   },
   "/ng/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "84 free seating arrangement questions with answers and explanations, pooled from 25 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "89 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -99135,8 +99274,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "cecbb7b35678",
-   "ogHash": "abca456320cc",
+   "schemaHash": "f5a3f6cdaf75",
+   "ogHash": "00f309a8e862",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99193,7 +99332,7 @@
   },
   "/ng/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "138 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "139 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -99209,8 +99348,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1202ab24eadd",
-   "ogHash": "583478b8d690",
+   "schemaHash": "7d9f19d539f1",
+   "ogHash": "ecf65b8a8789",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99378,7 +99517,7 @@
   },
   "/ng/practice/time-and-work": {
    "title": "Time and Work Questions with Answers 2026 | TakeMockTest",
-   "description": "233 free time and work questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "234 free time and work questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time and Work Questions with Answers"
    ],
@@ -99394,8 +99533,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e0c7cd093811",
-   "ogHash": "fca35c904383",
+   "schemaHash": "55859bdbabde",
+   "ogHash": "dc0c960caddc",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99415,7 +99554,7 @@
   },
   "/ng/practice/time-speed-and-distance": {
    "title": "Time, Speed and Distance Questions with Answers 2026",
-   "description": "194 free time, speed and distance questions with answers and explanations, pooled from 46 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "196 free time, speed and distance questions with answers and explanations, pooled from 47 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Time, Speed and Distance Questions with Answers"
    ],
@@ -99431,14 +99570,14 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "547a5cbdbe9e",
-   "ogHash": "48cdc958cfe5",
+   "schemaHash": "594f5319e8b6",
+   "ogHash": "b0dc7b7ac47e",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,565 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,628 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -99454,7 +99593,7 @@
     "Question"
    ],
    "schemaHash": "22ea6a10b0c2",
-   "ogHash": "a5b143213a03",
+   "ogHash": "051562ae6f85",
    "sitemap": true,
    "robots": "index, follow"
   },
