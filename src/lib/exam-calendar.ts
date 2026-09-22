@@ -26,7 +26,6 @@ export interface ExamCalendarEvent {
 
 const UPSC_2027 = 'https://www.upsc.gov.in/sites/default/files/Calendar-Year-2027-Engl-200526_0.pdf';
 const IBPS_2026_27 = 'https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf';
-const IBPS_RRB_APPLICATION = 'https://ibpsreg.ibps.in/rrbxvaug26/index.php?stat=0';
 const GATE_2027 = 'https://gate2027.iitm.ac.in/important_dates';
 const CLAT_2027 = 'https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html';
 const XAT_2027 = 'https://xatonline.in/';
@@ -39,17 +38,6 @@ export const EXAM_CALENDAR_EVENTS: ExamCalendarEvent[] = [
     label: 'Phase XIV computer-based examination window', startsOn: '2026-09-16', endsOn: '2026-09-26', status: 'Confirmed',
     sourceName: 'Staff Selection Commission', sourceUrl: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf', sourceCheckedOn: '2026-09-16',
     updateSlug: 'ssc-selection-post-phase-14-exam-date-2026',
-  },
-  {
-    id: 'mat-september-cbt', examSlug: 'mat', examName: 'MAT', goal: 'Management & Business', type: 'Exam',
-    label: 'September CBT examination', startsOn: '2026-09-20', status: 'Confirmed',
-    sourceName: 'All India Management Association', sourceUrl: 'https://www.aima.in/content/testing-and-assessment/mat/mat', sourceCheckedOn: '2026-09-16',
-    updateSlug: 'mat-september-2026-registration-and-test-dates',
-  },
-  {
-    id: 'ibps-rrb-15-application-close', examSlug: 'ibps-rrb-officer-scale-1', examName: 'IBPS RRB Officer', goal: 'Government Jobs', type: 'Application',
-    label: 'CRP RRBs-XV registration and fee-payment deadline', startsOn: '2026-09-21', status: 'Confirmed',
-    sourceName: 'Institute of Banking Personnel Selection', sourceUrl: IBPS_RRB_APPLICATION, sourceCheckedOn: '2026-09-16',
   },
   {
     id: 'upsc-geo-scientist-2027-application', examSlug: 'upsc-combined-geo-scientist', examName: 'UPSC Combined Geo-Scientist', goal: 'Government Jobs', type: 'Application',

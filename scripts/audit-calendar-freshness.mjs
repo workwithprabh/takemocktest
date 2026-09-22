@@ -28,9 +28,9 @@ for (const event of expired) console.log(`  - ${event.examName}: ${event.label} 
 console.log(`Sources not checked in ${maxAgeDays} days: ${stale.length}`);
 for (const event of stale) console.log(`  - ${event.examName}: checked ${event.sourceCheckedOn} (${event.sourceUrl})`);
 
-if (!process.argv.includes('--check-links')) {
+const checkLinks = process.argv.includes('--check-links');
+if (!checkLinks) {
   console.log('Official-link checks skipped. Run with --check-links to verify them without using AI tokens.');
-  process.exit(0);
 }
 
 async function checkLink(url) {
@@ -56,10 +56,13 @@ async function checkLink(url) {
   return { url, state: 'review' };
 }
 
-const urls = [...new Set(EXAM_CALENDAR_EVENTS.map((event) => event.sourceUrl))];
-const results = await Promise.all(urls.map(checkLink));
-const broken = results.filter((result) => result.state === 'broken');
-const review = results.filter((result) => result.state === 'review');
-console.log(`Official links checked: ${results.length}; broken: ${broken.length}; could not verify: ${review.length}`);
-for (const result of [...broken, ...review]) console.log(`  - ${result.state.toUpperCase()} ${result.status ?? result.error ?? ''} ${result.url}`);
-if (broken.length) process.exitCode = 1;
+let broken = [];
+if (checkLinks) {
+  const urls = [...new Set(EXAM_CALENDAR_EVENTS.map((event) => event.sourceUrl))];
+  const results = await Promise.all(urls.map(checkLink));
+  broken = results.filter((result) => result.state === 'broken');
+  const review = results.filter((result) => result.state === 'review');
+  console.log(`Official links checked: ${results.length}; broken: ${broken.length}; could not verify: ${review.length}`);
+  for (const result of [...broken, ...review]) console.log(`  - ${result.state.toUpperCase()} ${result.status ?? result.error ?? ''} ${result.url}`);
+}
+if (broken.length || (process.argv.includes('--strict') && stale.length)) process.exitCode = 1;

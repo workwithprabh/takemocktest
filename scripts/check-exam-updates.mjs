@@ -53,7 +53,7 @@ const calendarCompiled = ts.transpileModule(calendarSource, { compilerOptions: {
 const calendarApi = {};
 vm.runInNewContext(calendarCompiled.outputText, { exports: calendarApi, Intl, Date });
 const { EXAM_CALENDAR_EVENTS, GOVERNMENT_EXAM_EVENTS, buildIcsCalendar, calendarEventTimestamp, formatCalendarEventDate, getUpcomingCalendarEvents, googleCalendarUrl } = calendarApi;
-const calendarHosts = new Set(['www.ibps.in', 'ibpsreg.ibps.in', 'www.upsc.gov.in', 'ssc.gov.in', 'www.aima.in', 'gate2027.iitm.ac.in', 'clat2027.consortiumofnlus.ac.in', 'xatonline.in']);
+const calendarHosts = new Set(['www.ibps.in', 'www.upsc.gov.in', 'ssc.gov.in', 'gate2027.iitm.ac.in', 'clat2027.consortiumofnlus.ac.in', 'xatonline.in']);
 const eventIds = new Set();
 for (const event of EXAM_CALENDAR_EVENTS) {
   assert(!eventIds.has(event.id), `Duplicate calendar event: ${event.id}`);
@@ -73,7 +73,7 @@ assert(!GOVERNMENT_EXAM_EVENTS.some((event) => ['mat', 'gate', 'clat', 'xat'].in
 assert(calendarEventTimestamp('2026-09-16', true) > calendarEventTimestamp('2026-09-16'));
 assert.equal(
   getUpcomingCalendarEvents(EXAM_CALENDAR_EVENTS, Date.parse('2026-09-21T00:00:00+05:30'), 2).map((event) => event.id).join(','),
-  'ssc-selection-post-phase-14-cbe,ibps-rrb-15-application-close',
+  'ssc-selection-post-phase-14-cbe,upsc-geo-scientist-2027-application',
 );
 assert(getUpcomingCalendarEvents(EXAM_CALENDAR_EVENTS, Date.parse('2026-09-21T00:00:00+05:30'), 3, 'gate').every((event) => event.examSlug === 'gate'));
 const calendarFile = buildIcsCalendar(EXAM_CALENDAR_EVENTS, 'TakeMockTest exam calendar');
