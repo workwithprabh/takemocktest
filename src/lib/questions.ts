@@ -713,6 +713,7 @@ import { DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1 } from './question-banks/dnb
 import { TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_1 } from './question-banks/tifr-gs-2026-computer-science-full-mock-1';
 import { TIFR_GS_2026_COMPUTER_SCIENCE_FULL_MOCK_2 } from './question-banks/tifr-gs-2026-computer-science-full-mock-2';
 import { XAT_2026_PART_1_FULL_MOCK_1 } from './question-banks/xat-2026-part-1-full-mock-1';
+import { XAT_2026_PART_1_FULL_MOCK_2 } from './question-banks/xat-2026-part-1-full-mock-2';
 import { IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1 } from './question-banks/ipmat-indore-2026-ipm-aptitude-test-full-mock-1';
 import { INI_CET_2026_MEDICAL_FULL_MOCK_1 } from './question-banks/ini-cet-2026-medical-full-mock-1';
 import { FMGE_2026_PART_A_FULL_MOCK_1 } from './question-banks/fmge-2026-part-a-full-mock-1';
@@ -3490,6 +3491,10 @@ const XAT_TESTS: Record<string, Question[]> = {
   'xat/part-1-verbal-and-logical-ability-sectional-1': XAT_2026_PART_1_FULL_MOCK_1.filter((question) => question.section === 'Verbal and Logical Ability'),
   'xat/part-1-decision-making-sectional-1': XAT_2026_PART_1_FULL_MOCK_1.filter((question) => question.section === 'Decision Making'),
   'xat/part-1-quantitative-ability-and-data-interpretation-sectional-1': XAT_2026_PART_1_FULL_MOCK_1.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
+  'xat/part-1-full-mock-2': XAT_2026_PART_1_FULL_MOCK_2,
+  'xat/part-1-verbal-and-logical-ability-sectional-2': XAT_2026_PART_1_FULL_MOCK_2.filter((question) => question.section === 'Verbal and Logical Ability'),
+  'xat/part-1-decision-making-sectional-2': XAT_2026_PART_1_FULL_MOCK_2.filter((question) => question.section === 'Decision Making'),
+  'xat/part-1-quantitative-ability-and-data-interpretation-sectional-2': XAT_2026_PART_1_FULL_MOCK_2.filter((question) => question.section === 'Quantitative Ability and Data Interpretation'),
 };
 const IPMAT_INDORE_TESTS: Record<string, Question[]> = {
   'ipmat-indore/ipm-at-full-mock-1': IPMAT_INDORE_2026_IPM_APTITUDE_TEST_FULL_MOCK_1,
@@ -4810,9 +4815,15 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     ? 20
     : testId === 'xat/part-1-verbal-and-logical-ability-sectional-1'
     ? 26
+    : testId === 'xat/part-1-verbal-and-logical-ability-sectional-2'
+    ? 26
     : testId === 'xat/part-1-decision-making-sectional-1'
     ? 21
+    : testId === 'xat/part-1-decision-making-sectional-2'
+    ? 21
     : testId === 'xat/part-1-quantitative-ability-and-data-interpretation-sectional-1'
+    ? 28
+    : testId === 'xat/part-1-quantitative-ability-and-data-interpretation-sectional-2'
     ? 28
     : testId === 'ipmat-indore/ipm-at-verbal-ability-sectional-1'
     ? 45
@@ -4833,6 +4844,8 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId === 'gmat/focus-edition-data-sufficiency-sectional-1'
     ? 12
     : testId === 'xat/part-1-full-mock-1'
+    ? 75
+    : testId === 'xat/part-1-full-mock-2'
     ? 75
     : testId === 'ipmat-indore/ipm-at-full-mock-1'
     ? 90
