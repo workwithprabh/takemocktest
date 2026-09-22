@@ -14,6 +14,7 @@ import type { BlogDiagramId } from '@/components/blog/BlogDiagrams';
 // Figures quoted about this site's own corpus are derived, never typed in.
 // See src/lib/blog-corpus-stats.ts for why, and for the definitions.
 import { CORPUS, capitalise, fraction, n, word } from './blog-corpus-stats';
+import { rotateBy } from './rotate';
 
 export type BlogBlock =
   | { type: 'paragraph'; heading?: string; text: string }
@@ -3162,8 +3163,13 @@ export function getBlogPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
+// Rotated rather than sliced from the front. Taking the first two posts of a
+// category handed every post in that category the same two, so 20 of the 65
+// posts had one inbound link, the blog index, and no route in from any other
+// post. See src/lib/rotate.ts.
 export function getRelatedPosts(post: BlogPost, limit = 2): BlogPost[] {
-  return BLOG_POSTS.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, limit);
+  const inCategory = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.category === post.category);
+  return rotateBy(inCategory, post.slug).slice(0, limit);
 }
 
 function blockText(block: BlogBlock): string {

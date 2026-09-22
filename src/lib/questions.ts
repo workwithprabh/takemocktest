@@ -1,4 +1,5 @@
 import { ExamSlug, MIN_SECTIONAL_QUESTIONS_FOR_INDEX } from './exams';
+import { rotateBy } from './rotate';
 import { SSC_CGL_TIER1_ENGLISH_1 } from './question-banks/ssc-cgl-tier1-english-1';
 import { SSC_CGL_TIER1_ENGLISH_2 } from './question-banks/ssc-cgl-tier1-english-2';
 import { SSC_CGL_TIER1_ENGLISH_3 } from './question-banks/ssc-cgl-tier1-english-3';
@@ -7885,9 +7886,34 @@ export function getSiblingTests(
     .sort((a, b) => rank(a.candidate) - rank(b.candidate) || a.order - b.order)
     .map(({ candidate }) => candidate);
 
+  // Within each rank band, start from a different place on each page.
+  //
+  // Ranking alone put every test page of an exam in front of the same six
+  // siblings, because ties fell back to declaration order and declaration
+  // order is stable. A second round of sectionals is declared after the
+  // first, so it sat outside every page's top six and collected no internal
+  // links at all: on 22 September 2026, 187 indexable test pages had exactly
+  // one inbound link, their exam's mock-test hub, and all 187 were a second
+  // round. Pages Google has only one route to are the ones that sit in
+  // "Discovered, currently not indexed".
+  //
+  // Rotating inside a band keeps the ranking intact, since every candidate in
+  // a band is equally relevant by construction, and spreads the links across
+  // the whole exam. The offset is a stable hash of the current test's id, so
+  // the choice is deterministic and a rebuild does not reshuffle every page.
+  const bands = new Map<number, typeof ranked>();
+  for (const candidate of ranked) {
+    const band = rank(candidate);
+    if (!bands.has(band)) bands.set(band, []);
+    bands.get(band)!.push(candidate);
+  }
+  const rotated = [...bands.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .flatMap(([, group]) => rotateBy(group, current.testId));
+
   // total is what the exam actually publishes beyond this test, which is not
   // the same as how many are shown. The block says both, because claiming the
   // shown count is the total is the kind of stated-count error qa:counts
   // exists to catch elsewhere on the site.
-  return { items: ranked.slice(0, limit), total: ranked.length };
+  return { items: rotated.slice(0, limit), total: rotated.length };
 }

@@ -7,7 +7,7 @@ import { getExamVisual } from '@/lib/exam-visuals';
 import { EXAM_CALENDAR_EVENTS, calendarEventTimestamp, formatCalendarEventDate, getUpcomingCalendarEvents } from '@/lib/exam-calendar';
 import { getExamCycle, type CycleState } from '@/lib/exam-cycles';
 import { getExamPatternFaqs, getExamFactFaqs } from '@/lib/exam-faqs';
-import { COUNTRIES, getCheckedTestCount, getExam, getExamOverviewCopy, hasOfficialPattern as examHasOfficialPattern } from '@/lib/exams';
+import { COUNTRIES, getCheckedTestCount, getExam, getExamOverviewCopy, getSharedTests, hasOfficialPattern as examHasOfficialPattern } from '@/lib/exams';
 import { getExamsForCountry } from '@/lib/exam-countries';
 import { pageMetadata } from '@/lib/metadata';
 import { breadcrumbSchema, faqPageSchema, jsonLdHtml } from '@/lib/schema';
@@ -135,6 +135,13 @@ export default async function ExamOverviewPage({ params }: { params: Promise<{ c
       : []),
     ...(exam.slug === 'ssc-cgl'
       ? [{ href: 'salary', label: 'Salary', desc: 'Official pay levels and basic-pay ranges' }]
+      : []),
+    // The mock-test page was this page's only route in, which left all 20 of
+    // them on a single inbound link. The hub is the index of everything an
+    // exam publishes, so it belongs here, and the condition is the same one
+    // the route itself uses to decide whether the page exists at all.
+    ...(getSharedTests(exam).length > 0
+      ? [{ href: 'similar-tests', label: 'Similar Tests', desc: 'Extra Reasoning practice from exams sharing this scoring pattern' }]
       : []),
   ];
   const faqs = [...getExamPatternFaqs(exam, country), ...getExamFactFaqs(exam)];

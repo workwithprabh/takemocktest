@@ -263,6 +263,40 @@ summaries.push(
     `${countryHomes.join(' / ')}; median inbound links per page ${median}`,
 );
 
+// The thin end of the link graph, gated as a ratchet.
+//
+// Reachability and the orphan check both pass on one inbound link, and one
+// inbound link is not a healthy page: Search Console files those under
+// "Discovered, currently not indexed", which on 22 September 2026 covered 195
+// of 282 sampled URLs. 280 indexable pages were on one or two links that day,
+// and none of the gates above noticed, because every one of them was reachable
+// and every link resolved.
+//
+// The cause was one shape repeated in four places: rank candidates, slice the
+// top N. A stable ranking hands every page of a section the same N, so
+// everything below the cut gets nothing. Rotating inside the ranking (see
+// src/lib/rotate.ts) took the count to 101.
+//
+// The ceiling is a little above that, not a target. What remains is mostly
+// structural: 34 of the starved test pages belong to exams publishing two or
+// fewer indexable tests, so there is no sibling to link them from. Lower this
+// when real work lowers the number; do not raise it to make a build pass.
+const STARVED_CEILING = 110;
+const STARVED_THRESHOLD = 2;
+const starved = [...indexable.keys()].filter((url) => (inboundCount.get(url) ?? 0) <= STARVED_THRESHOLD);
+if (starved.length > STARVED_CEILING) {
+  errors.push(
+    `${starved.length} indexable pages have ${STARVED_THRESHOLD} or fewer inbound internal links, over the ceiling of ` +
+      `${STARVED_CEILING}. Something is picking related items by slicing a ranked list; rotate it instead ` +
+      `(src/lib/rotate.ts). Worst: ${starved.slice(0, 4).join(', ')}${starved.length > 4 ? ', ...' : ''}`,
+  );
+} else {
+  summaries.push(
+    `Link-equity tail: ${starved.length} indexable pages on ${STARVED_THRESHOLD} or fewer inbound links ` +
+      `(ceiling ${STARVED_CEILING}); 10th percentile ${inboundValues[Math.floor(inboundValues.length / 10)]}`,
+  );
+}
+
 if (errors.length > 0) {
   console.error(`Internal-link audit FAILED — ${errors.length} problem${errors.length === 1 ? '' : 's'}:`);
   for (const error of errors) console.error(`  - ${error}`);

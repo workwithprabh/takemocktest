@@ -15,6 +15,7 @@ import {
   type TopicPool,
 } from '@/lib/practice-topics';
 import { pageMetadata } from '@/lib/metadata';
+import { rotateBy } from '@/lib/rotate';
 import { breadcrumbSchema, faqPageSchema, jsonLdHtml, quizWithQuestionsSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
@@ -147,9 +148,15 @@ export default async function TopicPracticePage({
   const linkedExams = availableExams.slice(0, MAX_LINKED_EXAMS);
   const remainingExams = [...availableExams.slice(MAX_LINKED_EXAMS), ...unavailableExams];
   const hasExamDirectory = countryPublishes(country, 'exams');
-  const siblings = getPublishedTopicSlugs()
-    .filter((other) => other !== slug && getTopicPool(other)?.topic.family === family)
-    .slice(0, 6);
+  // Rotated rather than sliced from the front. The three families hold 13 to
+  // 14 topics each and every page showed the same first six of its own, so
+  // the back half of each family collected no sibling links at all: 38 of the
+  // 82 topic pages had one inbound link, the practice index, and nothing else.
+  // See src/lib/rotate.ts.
+  const siblings = rotateBy(
+    getPublishedTopicSlugs().filter((other) => other !== slug && getTopicPool(other)?.topic.family === family),
+    slug,
+  ).slice(0, 6);
 
   const jsonLd = [
     breadcrumbSchema([

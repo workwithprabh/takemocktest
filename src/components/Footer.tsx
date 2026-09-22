@@ -44,7 +44,14 @@ export default function Footer({ country }: { country: string }) {
         <div>
           <h2 className="footer-heading">Explore by goal</h2>
           <ul className="space-y-2 text-ink-300">
-            {categories.slice(0, 7).map((category) => (
+            {/*
+              All of them, not the first seven. The footer renders on every
+              page, so the seven it showed had a sitewide link and the four it
+              cut had exactly one, from /exams. Three of those four sat on a
+              single inbound link as a result. Eleven categories is four more
+              rows in a column that already carries eleven under Resources.
+            */}
+            {categories.map((category) => (
               <li key={category.slug}>
                 <Link href={`/${country}/exams/${category.slug}`} className="hover:text-ink-50 transition">{category.name}</Link>
               </li>
