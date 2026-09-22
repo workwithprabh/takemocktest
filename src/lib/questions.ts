@@ -768,6 +768,9 @@ import { CUET_UG_2026_ENGLISH_1 } from './question-banks/cuet-ug-2026-english-1'
 import { IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_1 } from './question-banks/ipmat-rohtak-2026-quantitative-ability-1';
 import { IPMAT_ROHTAK_2026_LOGICAL_REASONING_1 } from './question-banks/ipmat-rohtak-2026-logical-reasoning-1';
 import { IPMAT_ROHTAK_2026_VERBAL_ABILITY_1 } from './question-banks/ipmat-rohtak-2026-verbal-ability-1';
+import { IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_2 } from './question-banks/ipmat-rohtak-2026-quantitative-ability-2';
+import { IPMAT_ROHTAK_2026_LOGICAL_REASONING_2 } from './question-banks/ipmat-rohtak-2026-logical-reasoning-2';
+import { IPMAT_ROHTAK_2026_VERBAL_ABILITY_2 } from './question-banks/ipmat-rohtak-2026-verbal-ability-2';
 import { NCHM_JEE_2026_NUMERICAL_ANALYTICAL_APTITUDE_1 } from './question-banks/nchm-jee-2026-numerical-analytical-aptitude-1';
 import { NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1 } from './question-banks/nchm-jee-2026-reasoning-logical-deduction-1';
 import { NCHM_JEE_2026_GENERAL_KNOWLEDGE_CURRENT_AFFAIRS_1 } from './question-banks/nchm-jee-2026-general-knowledge-current-affairs-1';
@@ -3226,6 +3229,14 @@ const IPMAT_ROHTAK_TESTS: Record<string, Question[]> = {
   'ipmat-rohtak/quantitative-ability-sectional-1': IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_1,
   'ipmat-rohtak/logical-reasoning-sectional-1': IPMAT_ROHTAK_2026_LOGICAL_REASONING_1,
   'ipmat-rohtak/verbal-ability-sectional-1': IPMAT_ROHTAK_2026_VERBAL_ABILITY_1,
+  'ipmat-rohtak/ipm-at-full-mock-2': [
+    ...IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_2,
+    ...IPMAT_ROHTAK_2026_LOGICAL_REASONING_2,
+    ...IPMAT_ROHTAK_2026_VERBAL_ABILITY_2,
+  ],
+  'ipmat-rohtak/quantitative-ability-sectional-2': IPMAT_ROHTAK_2026_QUANTITATIVE_ABILITY_2,
+  'ipmat-rohtak/logical-reasoning-sectional-2': IPMAT_ROHTAK_2026_LOGICAL_REASONING_2,
+  'ipmat-rohtak/verbal-ability-sectional-2': IPMAT_ROHTAK_2026_VERBAL_ABILITY_2,
 };
 const NCHM_JEE_TESTS: Record<string, Question[]> = {
   'nchm-jee/bsc-hha-full-mock-1': [
