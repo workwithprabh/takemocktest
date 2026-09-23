@@ -496,6 +496,52 @@ function sectionalLocks(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   };
 }
 
+/**
+ * The first and last official stage of an exam, with what each one tests.
+ *
+ * Used by the posts that talk about the gap between a shortlisting paper and
+ * the one that decides. It returns papers, not selection stages: this site's
+ * `stages` array also holds same-day papers, qualification levels and separate
+ * exams that share a slug, so a caller naming a funnel has to know its exam is
+ * one. See the caveat section in most-exams-are-one-paper.
+ *
+ * `addedSections` compares section names literally and is therefore a rough
+ * signal, not a count to quote. IBPS PO Prelims lists "Reasoning Ability" and
+ * its Mains lists "Reasoning", so the diff reports a section as new when the
+ * subject carried over under a shorter name. Use it to find candidates for a
+ * sentence, then name the genuinely new ones by hand.
+ */
+function funnelStages(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
+  const byExam = new Map<string, { first: StageFacts; last: StageFacts; addedSections: string[] }>();
+  for (const exam of exams) {
+    const official = exam.stages.filter((stage) => stage.pattern.status === 'official');
+    if (official.length < 2) continue;
+    const facts = (stage: (typeof official)[number]): StageFacts => ({
+      exam: exam.name,
+      name: stage.name,
+      sections: stage.pattern.sections ?? [],
+      questions: stage.pattern.totalQuestions,
+      minutes: stage.pattern.duration,
+    });
+    const first = facts(official[0]);
+    const last = facts(official[official.length - 1]);
+    byExam.set(exam.slug, {
+      first,
+      last,
+      addedSections: last.sections.filter((section) => !first.sections.includes(section)),
+    });
+  }
+  return (slug: string) => byExam.get(slug);
+}
+
+interface StageFacts {
+  exam: string;
+  name: string;
+  sections: string[];
+  questions?: number;
+  minutes?: number;
+}
+
 function compute() {
   const exams = Object.values(EXAMS);
 
@@ -542,6 +588,7 @@ function compute() {
   const marksPer = marksPerQuestion(exams);
   const sitting = sittingLength(exams);
   const locks = sectionalLocks(exams);
+  const funnel = funnelStages(exams);
 
   const pools = getTopicPools();
   const topicQuestions = [...pools.values()].reduce((total, pool) => total + pool.questions.length, 0);
@@ -572,6 +619,7 @@ function compute() {
     marksPer,
     sitting,
     locks,
+    funnel,
 
     topics: pools.size,
     topicQuestions,

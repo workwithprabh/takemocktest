@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-23",
- "pageCount": 5702,
+ "pageCount": 5704,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10429,6 +10429,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/how-to-use-your-response-sheet": {
+   "title": "Your Response Sheet Is the Most Useful Document You Will Ignore",
+   "description": "The official answer key and your own response sheet let you compute your raw score before the result. Most candidates download both and never open them.",
+   "h1": [
+    "Your Response Sheet Is the Most Useful Document You Will Ignore"
+   ],
+   "h2Count": 12,
+   "h2Hash": "a9b97359ca20",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "00f783497fd8",
+   "ogHash": "d8665e2ece99",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/ibps-clerk-vs-ibps-po-prelims": {
    "title": "IBPS Clerk vs IBPS PO: The Same Prelims, Weighted Differently",
    "description": "Both prelims run 100 questions in 60 minutes across three 20-minute windows with the same penalty. Only one of them pays the same for every question.",
@@ -11243,6 +11265,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/the-second-paper-is-not-more-of-the-first": {
+   "title": "The Second Paper Is Not More of the First | TakeMockTest",
+   "description": "The gap between a prelims and a mains is the cheapest study time you will ever get, and most of it goes on revising the sections you have already cleared.",
+   "h1": [
+    "The Second Paper Is Not More of the First"
+   ],
+   "h2Count": 12,
+   "h2Hash": "9caf433e5598",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "7711f9a06fdf",
+   "ogHash": "402464addcb5",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/time-management-during-the-exam": {
    "title": "Time Management Tips for the Exam Hall | TakeMockTest",
    "description": "The clock is often the real opponent, not the questions. A few simple rules keep you from running out of time on easy marks.",
@@ -11360,7 +11404,7 @@
     "Study tips & exam strategy"
    ],
    "h2Count": 7,
-   "h2Hash": "e65003e494bb",
+   "h2Hash": "8ccabb77620f",
    "schemaTypes": [
     "Blog",
     "BlogPosting",
@@ -11368,7 +11412,7 @@
     "ListItem",
     "Organization"
    ],
-   "schemaHash": "b6c1b69de8a1",
+   "schemaHash": "814e5f505de4",
    "ogHash": "42f7c4c2d3a5",
    "sitemap": true,
    "robots": "index, follow"
