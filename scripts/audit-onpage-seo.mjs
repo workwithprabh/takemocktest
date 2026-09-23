@@ -110,6 +110,37 @@ for (const file of files) {
   // --- JSON-LD presence ---
   const jsonLdCount = (html.match(/<script type="application\/ld\+json">/g) || []).length;
   if (jsonLdCount === 0) warnings.push(`${rel}: no JSON-LD structured data on this page`);
+
+  // --- a page must not contradict its own timing note ---
+  //
+  // Exam-pattern pages print the stage's hand-written timing note and, a few
+  // paragraphs later, a sentence derived from whether the pattern publishes
+  // per-section durations. Those are two different generators and they
+  // disagreed on 23 September 2026: UPSC CSE GS Paper I printed "GS Paper I is
+  // not divided into separately timed sections" and then "All 7 sections are
+  // separately timed, so time saved in one cannot be carried into another",
+  // and answered "Yes" to its own sectional-time-limit FAQ inside FAQPage
+  // schema. CSAT and NMIMS-CET did the same.
+  //
+  // The cause was a denial regex that matched one phrasing out of three, and a
+  // wider regex will rot the same way. This checks the rendered output instead,
+  // so it catches the two generators disagreeing whichever one is wrong.
+  if (rel.endsWith('exam-pattern.html')) {
+    const text = html
+      .replace(/<script[\s\S]*?<\/script>/g, ' ')
+      .replace(/<[^>]+>/g, ' ')
+      .split('<!-- -->').join('')
+      .replace(/\s+/g, ' ');
+    const deniesLock =
+      /not divided into separately timed|no sectional lock|does not establish locked|single unrestricted [\d-]+ ?minute timer/i.test(text);
+    const assertsLock = /sections are separately timed|times its sections separately/i.test(text);
+    if (deniesLock && assertsLock) {
+      errors.push(
+        `${rel}: the page both denies and asserts a sectional lock. Its timing note says the paper is not ` +
+          `sectionally timed while derived copy says it is. See DENIES_SECTIONAL_LOCK in src/lib/exam-pattern-content.ts`,
+      );
+    }
+  }
 }
 
 console.log(`On-page SEO audit: ${files.length} pages scanned.`);
