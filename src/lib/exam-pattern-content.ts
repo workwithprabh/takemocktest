@@ -133,6 +133,34 @@ function numberWord(value: number): string {
   return NUMBER_WORDS[value] ?? String(value);
 }
 
+/**
+ * Timing notes that deny a sectional lock, in the wordings the patterns use.
+ *
+ * This started as /no sectional lock/i, which matched none of the three stages
+ * that actually deny one. On 23 September 2026 UPSC CSE GS Paper I published
+ * seven per-section durations under a note reading "Single 120-minute timer for
+ * the whole paper: GS Paper I is not divided into separately timed sections",
+ * and the page then derived "All 7 sections are separately timed, so time saved
+ * in one cannot be carried into another" and answered "Yes" to its own
+ * sectional-time-limit FAQ, in FAQPage schema. CSAT and NMIMS-CET said the same
+ * thing about themselves and were contradicted the same way.
+ *
+ * The per-section durations on those three are indicative splits published
+ * alongside a single whole-paper clock, which is exactly the case the
+ * sectionDurationSource field was added for. That field is too sparsely
+ * populated to drive this on its own, so the denial is read from the note, and
+ * scripts/audit-onpage-seo.mjs fails the build if a rendered page ever asserts
+ * a lock its own timing note denies. A regex alone would rot; the gate is what
+ * keeps this honest when a new phrasing arrives.
+ */
+export const DENIES_SECTIONAL_LOCK =
+  /\bno sectional lock\b|\bnot divided into separately timed\b|\bdoes not (?:establish|impose|create) locked\b|\b(?:single|one) unrestricted\b|\b(?:single|one)[\w\s-]{0,20}timer for the whole paper\b/i;
+
+/** Whether a stage's timing note denies a sectional lock. The one place that decides. */
+export function deniesSectionalLock(timerNote: string | undefined): boolean {
+  return DENIES_SECTIONAL_LOCK.test(timerNote ?? '');
+}
+
 export function getPatternInsights(pattern: StagePattern): PatternInsights {
   const { totalQuestions: questions, totalMarks: marks, duration } = pattern;
   const negative = parseNegativeMarking(pattern.negativeMarking);
@@ -142,7 +170,7 @@ export function getPatternInsights(pattern: StagePattern): PatternInsights {
   // in September 2026: the table printed a derived pro-rata split of the
   // composite window, so this read it as a lock and the page said "all sections
   // are separately timed" a few lines under "no sectional lock".
-  const deniesLock = /no sectional lock/i.test(pattern.timerNote ?? '');
+  const deniesLock = DENIES_SECTIONAL_LOCK.test(pattern.timerNote ?? '');
   const lockedSections = deniesLock
     ? 0
     : pattern.sectionBreakdown?.filter((section) => section.duration).length ?? 0;

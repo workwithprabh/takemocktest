@@ -1,4 +1,5 @@
 import { EXAMS } from './exams';
+import { deniesSectionalLock } from './exam-pattern-content';
 import { getTopicPools } from './practice-topics';
 
 // Figures the blog quotes about this site's own corpus, computed from the
@@ -439,6 +440,62 @@ function sittingLength(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   };
 }
 
+/**
+ * How many official stages actually lock their sections to separate clocks.
+ *
+ * The post this feeds opened with "roughly nine exams use a sectional lock,
+ * while about twelve use a composite timer", typed by hand in August 2026. The
+ * real figures are more than twice that, which is the decay this whole file
+ * exists to stop.
+ *
+ * A lock is read the way the exam pattern pages read it: the stage publishes
+ * per-section durations and its own timing note does not deny one. The denial
+ * check is imported rather than repeated, because duplicating it is what let
+ * UPSC CSE claim a sectional lock its own note denied.
+ */
+function sectionalLocks(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
+  let stages = 0;
+  let locked = 0;
+  let oneClock = 0;
+  let noBreakdown = 0;
+  const byCategory = new Map<string, { locked: number; stages: number }>();
+
+  for (const exam of exams) {
+    for (const stage of exam.stages) {
+      const pattern = stage.pattern;
+      if (pattern.status !== 'official') continue;
+      stages += 1;
+
+      const timedSections = deniesSectionalLock(pattern.timerNote)
+        ? 0
+        : pattern.sectionBreakdown?.filter((section) => section.duration).length ?? 0;
+      const isLocked = timedSections > 1;
+
+      if (isLocked) locked += 1;
+      else if ((pattern.sectionBreakdown?.length ?? 0) > 1) oneClock += 1;
+      else noBreakdown += 1;
+
+      const entry = byCategory.get(exam.category) ?? { locked: 0, stages: 0 };
+      entry.stages += 1;
+      if (isLocked) entry.locked += 1;
+      byCategory.set(exam.category, entry);
+    }
+  }
+
+  const categories = [...byCategory.entries()]
+    .map(([category, counts]) => ({ category, ...counts }))
+    .sort((a, b) => b.locked - a.locked || a.category.localeCompare(b.category));
+
+  return {
+    stages,
+    locked,
+    oneClock,
+    noBreakdown,
+    withLocks: categories.filter((entry) => entry.locked > 0),
+    forCategory: (category: string) => categories.find((entry) => entry.category === category),
+  };
+}
+
 function compute() {
   const exams = Object.values(EXAMS);
 
@@ -484,6 +541,7 @@ function compute() {
   const pace = pacePerQuestion(exams);
   const marksPer = marksPerQuestion(exams);
   const sitting = sittingLength(exams);
+  const locks = sectionalLocks(exams);
 
   const pools = getTopicPools();
   const topicQuestions = [...pools.values()].reduce((total, pool) => total + pool.questions.length, 0);
@@ -513,6 +571,7 @@ function compute() {
     pace,
     marksPer,
     sitting,
+    locks,
 
     topics: pools.size,
     topicQuestions,

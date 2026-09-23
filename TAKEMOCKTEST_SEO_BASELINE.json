@@ -10985,8 +10985,8 @@
    "h1": [
     "Sectional Lock vs Composite Timer, Explained"
    ],
-   "h2Count": 13,
-   "h2Hash": "84a0bba9a2e6",
+   "h2Count": 16,
+   "h2Hash": "3e05568c2701",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10996,7 +10996,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "5e8566ef69e3",
+   "schemaHash": "1265b8351986",
    "ogHash": "91082e03b3a5",
    "sitemap": true,
    "robots": "index, follow"
@@ -57757,7 +57757,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "28097c748ec9",
+   "schemaHash": "fc846954943e",
    "ogHash": "d4c0f346cdda",
    "sitemap": true,
    "robots": "index, follow"
@@ -57768,8 +57768,8 @@
    "h1": [
     "NMIMS-CET Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "fdac97b79243",
+   "h2Count": 8,
+   "h2Hash": "8ac723e380f3",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -92315,7 +92315,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "d9bafd68f4c2",
+   "schemaHash": "836537889aea",
    "ogHash": "ebfa0adebf35",
    "sitemap": true,
    "robots": "index, follow"
