@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-23",
- "pageCount": 5698,
+ "pageCount": 5700,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10407,6 +10407,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/ibps-clerk-vs-ibps-po-prelims": {
+   "title": "IBPS Clerk vs IBPS PO: The Same Prelims, Weighted Differently",
+   "description": "Both prelims run 100 questions in 60 minutes across three 20-minute windows with the same penalty. Only one of them pays the same for every question.",
+   "h1": [
+    "IBPS Clerk vs IBPS PO: The Same Prelims, Weighted Differently"
+   ],
+   "h2Count": 13,
+   "h2Hash": "1901c26f3dbb",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "a0684cc30e80",
+   "ogHash": "0e648308fc5a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/ibps-po-vs-ssc-cgl-which-exam-suits-you": {
    "title": "IBPS PO vs SSC CGL: Which Is Tougher? | TakeMockTest",
    "description": "At the first stage they are near-twins: 100 questions, 60 minutes, sectional timers, the same 25% penalty. What differs is what gets tested and how you fail.",
@@ -11243,6 +11265,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/what-one-question-is-worth": {
+   "title": "A Score Means Nothing Until You Know What a Question Is Worth",
+   "description": "Across 168 official patterns here a question is worth anywhere from 0.5 to 5 marks. The same raw score can mean 38 right answers or 150.",
+   "h1": [
+    "A Score Means Nothing Until You Know What a Question Is Worth"
+   ],
+   "h2Count": 12,
+   "h2Hash": "69c56d15c139",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "e42393db0801",
+   "ogHash": "a45470bb6938",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/why-this-site-gives-you-two-full-mock-tests": {
    "title": "Why This Site Gives You Two Full Mock Tests | TakeMockTest",
    "description": "Test 1 and Test 2 are separate question banks, not the same paper reordered. Taken back to back, they mostly measure memory of format, not real improvement.",
@@ -11272,7 +11316,7 @@
     "Study tips & exam strategy"
    ],
    "h2Count": 7,
-   "h2Hash": "468a95daf1a7",
+   "h2Hash": "ce6add4b4d6a",
    "schemaTypes": [
     "Blog",
     "BlogPosting",
@@ -11280,7 +11324,7 @@
     "ListItem",
     "Organization"
    ],
-   "schemaHash": "42d93ce7c6c5",
+   "schemaHash": "e4a9366c5bac",
    "ogHash": "42f7c4c2d3a5",
    "sitemap": true,
    "robots": "index, follow"
@@ -20176,8 +20220,8 @@
    "h1": [
     "CUET UG Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "c7a6b45af279",
+   "h2Count": 8,
+   "h2Hash": "36dee3396ba5",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -56550,8 +56594,8 @@
    "h1": [
     "NIPER JEE Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "b33e9912b218",
+   "h2Count": 8,
+   "h2Hash": "3c070ba54fe8",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",

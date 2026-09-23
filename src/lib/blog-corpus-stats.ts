@@ -290,6 +290,73 @@ function pacePerQuestion(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   };
 }
 
+/**
+ * What one question is worth, for every stage whose official pattern states
+ * both a question count and a total. Marks divided by questions, which is the
+ * conversion a raw score is meaningless without.
+ *
+ * Same exclusion rule as pacePerQuestion: 'review-pending' patterns are left
+ * out, because a derived figure reads as more authoritative than the pattern
+ * it came from.
+ *
+ * A caution the prose has to carry rather than the data: a whole-paper average
+ * hides an uneven paper. IBPS PO Mains averages 1.31 marks a question only
+ * because two descriptive questions carry 12.5 each; its English section is
+ * half a mark. `unevenPapers` counts the papers where that is true so the post
+ * can say how common it is instead of implying it is rare.
+ */
+function marksPerQuestion(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
+  const rows: { slug: string; exam: string; stage: string; questions: number; marks: number; perQuestion: number }[] = [];
+  const sectionsByStage = new Map<string, { name: string; questions: number; marks: number; perQuestion: number }[]>();
+  let unevenPapers = 0;
+
+  for (const exam of exams) {
+    for (const stage of exam.stages) {
+      const pattern = stage.pattern;
+      if (pattern.status !== 'official') continue;
+
+      const breakdown = (pattern.sectionBreakdown ?? []).filter((section) => section.questions && section.marks);
+      if (breakdown.length > 1) {
+        const per = breakdown.map((section) => section.marks / section.questions);
+        // A hundredth of a mark apart is rounding in the notice, not a weighting.
+        if (Math.max(...per) - Math.min(...per) >= 0.01) unevenPapers += 1;
+        sectionsByStage.set(`${exam.slug}::${stage.name}`, breakdown.map((section) => ({
+          name: section.name,
+          questions: section.questions,
+          marks: section.marks,
+          perQuestion: section.marks / section.questions,
+        })));
+      }
+
+      if (!pattern.totalQuestions || !pattern.totalMarks) continue;
+      rows.push({
+        slug: exam.slug,
+        exam: exam.name,
+        stage: stage.name,
+        questions: pattern.totalQuestions,
+        marks: pattern.totalMarks,
+        perQuestion: pattern.totalMarks / pattern.totalQuestions,
+      });
+    }
+  }
+
+  rows.sort((a, b) => a.perQuestion - b.perQuestion || a.exam.localeCompare(b.exam));
+  const distinct = new Set(rows.map((row) => Number(row.perQuestion.toFixed(2))));
+
+  return {
+    stages: rows.length,
+    distinctValues: distinct.size,
+    atOneMark: rows.filter((row) => Math.abs(row.perQuestion - 1) < 0.005).length,
+    cheapest: rows[0],
+    dearest: rows[rows.length - 1],
+    unevenPapers,
+    /** A named stage, for the worked examples. Matched on a substring of the stage name. */
+    stage: (slug: string, contains?: string) =>
+      rows.find((row) => row.slug === slug && (contains === undefined || row.stage.includes(contains))),
+    sectionsOf: (slug: string, stageName: string) => sectionsByStage.get(`${slug}::${stageName}`) ?? [],
+  };
+}
+
 function compute() {
   const exams = Object.values(EXAMS);
 
@@ -333,6 +400,7 @@ function compute() {
 
   const marking = markingSpread(exams);
   const pace = pacePerQuestion(exams);
+  const marksPer = marksPerQuestion(exams);
 
   const pools = getTopicPools();
   const topicQuestions = [...pools.values()].reduce((total, pool) => total + pool.questions.length, 0);
@@ -360,6 +428,7 @@ function compute() {
 
     marking,
     pace,
+    marksPer,
 
     topics: pools.size,
     topicQuestions,
