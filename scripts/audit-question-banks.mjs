@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { createRequire } from 'node:module';
 import path from 'node:path';
 import vm from 'node:vm';
 import ts from 'typescript';
@@ -19,6 +20,31 @@ const allBankFiles = fs
   .sort();
 const files = allBankFiles.filter((file) => bankFilePattern.test(file));
 const unrecognisedBankFiles = allBankFiles.filter((file) => !bankFilePattern.test(file));
+
+// Load the two TypeScript config modules with their real local imports so the
+// audit checks composed full mocks and sectionals, not only raw bank files.
+const nodeRequire = createRequire(import.meta.url);
+const moduleCache = new Map();
+function loadTypeScriptModule(filePath) {
+  const resolvedPath = path.resolve(filePath);
+  if (moduleCache.has(resolvedPath)) return moduleCache.get(resolvedPath).exports;
+  const runtimeModule = { exports: {} };
+  moduleCache.set(resolvedPath, runtimeModule);
+  const code = ts.transpileModule(fs.readFileSync(resolvedPath, 'utf8'), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const localRequire = (specifier) => {
+    if (!specifier.startsWith('.')) return nodeRequire(specifier);
+    const target = path.resolve(path.dirname(resolvedPath), specifier);
+    return loadTypeScriptModule(path.extname(target) ? target : `${target}.ts`);
+  };
+  const runModule = vm.runInThisContext(
+    `(function (require, module, exports, __filename, __dirname) { ${code}\n})`,
+    { filename: resolvedPath },
+  );
+  runModule(localRequire, runtimeModule, runtimeModule.exports, resolvedPath, path.dirname(resolvedPath));
+  return runtimeModule.exports;
+}
 
 const banks = files.map((file) => {
   const source = fs.readFileSync(path.join(banksDir, file), 'utf8');
@@ -746,6 +772,33 @@ if (process.argv.includes('--dump')) {
   }
 }
 
+const { EXAM_LIST } = loadTypeScriptModule('src/lib/exams.ts');
+const { getQuestionsForTest } = loadTypeScriptModule('src/lib/questions.ts');
+let optionCheckedStages = 0;
+let optionCheckedTests = 0;
+for (const exam of EXAM_LIST) {
+  for (const stage of exam.stages) {
+    const checkedTests = stage.tests.filter((test) => test.status === 'checked');
+    if (checkedTests.length === 0) continue;
+    optionCheckedStages += 1;
+    const expectedOptionCount = stage.pattern.optionCount ?? 4;
+    for (const test of checkedTests) {
+      optionCheckedTests += 1;
+      const questions = getQuestionsForTest(exam.slug, test.id);
+      const mismatch = questions.find(
+        (question) => question.answerType !== 'numerical'
+          && question.options?.length !== expectedOptionCount,
+      );
+      if (mismatch) {
+        errors.push(
+          `${exam.slug}/${stage.id}/${test.id}: expected ${expectedOptionCount} options from StagePattern, `
+          + `but ${mismatch.id ?? 'an unnamed question'} has ${mismatch.options?.length ?? 0}`,
+        );
+      }
+    }
+  }
+}
+
 if (errors.length) {
   console.error(`Question-bank QA failed with ${errors.length} issue(s):`);
   errors.forEach((error) => console.error(`- ${error}`));
@@ -755,7 +808,8 @@ if (errors.length) {
 const total = banks.reduce((sum, bank) => sum + bank.questions.length, 0);
 console.log(
   `Question-bank structure passed: ${banks.length} of ${allBankFiles.length} bank files audited, `
-  + `${total} questions, no duplicate IDs or text.`,
+  + `${total} questions, no duplicate IDs or text; option counts match ${optionCheckedTests} tests across `
+  + `${optionCheckedStages} live stages.`,
 );
 for (const { file, questions } of banks) {
   const mcqWidths = new Set(
