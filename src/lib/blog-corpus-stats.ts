@@ -390,6 +390,28 @@ export function word(value: number): string {
   return unit === 0 ? tensWord : `${tensWord}-${WORDS[unit]}`;
 }
 
+/**
+ * The accuracy at which a guess stops costing marks. With +m for a correct
+ * answer and -n for a wrong one, that point is n / (m + n), so it depends only
+ * on the penalty as a fraction of a correct answer.
+ *
+ * This is the same arithmetic src/lib/exam-pattern-content.ts states on every
+ * exam pattern page. It is here because until 23 September 2026 the
+ * negative-marking post contradicted those pages: it told readers a blind
+ * four-option guess was "close to break-even or slightly negative" and better
+ * left blank, when under the site's commonest scheme the break-even is 20% and
+ * a blind guess returns 25%. The post was advising students to leave marks
+ * behind on 716 of the 1,439 tests published here.
+ */
+export function breakEvenPercent(ratio: number): number {
+  return Math.round((ratio / (1 + ratio)) * 100);
+}
+
+/** What a blind guess returns on a question with this many options, as a percentage. */
+export function blindGuessPercent(options: number): number {
+  return Math.round(100 / options);
+}
+
 /** "a quarter", "an eighth": unit fractions as the prose says them, with the article attached. */
 const FRACTIONS: Record<number, string> = { 2: 'a half', 3: 'a third', 4: 'a quarter', 5: 'a fifth', 6: 'a sixth', 7: 'a seventh', 8: 'an eighth', 9: 'a ninth', 10: 'a tenth' };
 export function fraction(denominator: number | undefined, ratio: number): string {
