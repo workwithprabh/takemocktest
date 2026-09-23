@@ -357,6 +357,88 @@ function marksPerQuestion(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   };
 }
 
+/**
+ * A stated duration is not always a sitting, and seven of the patterns here
+ * say so in their own notes.
+ *
+ * CMA Final's objective stage reads 540 minutes because this site groups the
+ * Section A blocks of ten separately sat papers under one heading; its note
+ * says outright that "no candidate sits 150 questions in one session". KCET's
+ * 240 minutes is three 80-minute subject papers that auto-submit in turn.
+ * Aggregating those into a "longest exam" table would have produced a
+ * nine-hour paper that does not exist.
+ *
+ * So the aggregates are detected from the wording the patterns already carry
+ * and excluded, leaving stages a candidate really does sit end to end. The
+ * count of what was excluded is returned too, because the exclusion is part of
+ * the finding rather than a tidy-up.
+ */
+const NOT_ONE_SITTING = /not an official combined paper|no candidate sits|not one free|separately timed official|separately sat papers/i;
+
+function sittingLength(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
+  const rows: { exam: string; category: string; stage: string; minutes: number; questions?: number }[] = [];
+  let aggregatesExcluded = 0;
+  let singleStage = 0;
+  let multiStage = 0;
+  const multiStageNames: string[] = [];
+
+  for (const exam of exams) {
+    const official = exam.stages.filter((stage) => stage.pattern.status === 'official');
+    if (official.length === 1) singleStage += 1;
+    else if (official.length > 1) { multiStage += 1; multiStageNames.push(exam.name); }
+
+    for (const stage of official) {
+      const pattern = stage.pattern;
+      if (!pattern.duration) continue;
+      if (NOT_ONE_SITTING.test(`${pattern.note ?? ''} ${pattern.timerNote ?? ''}`)) {
+        aggregatesExcluded += 1;
+        continue;
+      }
+      rows.push({
+        exam: exam.name,
+        category: exam.category,
+        stage: stage.name,
+        minutes: pattern.duration,
+        questions: pattern.totalQuestions,
+      });
+    }
+  }
+
+  rows.sort((a, b) => a.minutes - b.minutes || a.exam.localeCompare(b.exam));
+  const median = (values: number[]) => [...values].sort((a, b) => a - b)[Math.floor(values.length / 2)];
+  const minutes = rows.map((row) => row.minutes);
+
+  const BANDS: { label: string; lo: number; hi: number }[] = [
+    { label: 'Under 60 minutes', lo: 0, hi: 60 },
+    { label: '60 to 90 minutes', lo: 60, hi: 91 },
+    { label: '91 to 120 minutes', lo: 91, hi: 121 },
+    { label: '121 to 180 minutes', lo: 121, hi: 181 },
+    { label: 'Over 180 minutes', lo: 181, hi: Infinity },
+  ];
+
+  const categories = [...new Set(rows.map((row) => row.category))]
+    .map((category) => {
+      const inCategory = rows.filter((row) => row.category === category);
+      return { category, stages: inCategory.length, median: median(inCategory.map((row) => row.minutes)) };
+    })
+    .sort((a, b) => a.median - b.median || a.category.localeCompare(b.category));
+
+  return {
+    stages: rows.length,
+    aggregatesExcluded,
+    median: median(minutes),
+    shortest: rows[0],
+    longest: rows[rows.length - 1],
+    bands: BANDS.map((band) => ({ ...band, stages: rows.filter((row) => row.minutes >= band.lo && row.minutes < band.hi).length })),
+    categories,
+    categoryMedian: (category: string) => categories.find((entry) => entry.category === category),
+    /** Exams whose whole published selection is one official paper. */
+    singleStage,
+    multiStage,
+    multiStageNames,
+  };
+}
+
 function compute() {
   const exams = Object.values(EXAMS);
 
@@ -401,6 +483,7 @@ function compute() {
   const marking = markingSpread(exams);
   const pace = pacePerQuestion(exams);
   const marksPer = marksPerQuestion(exams);
+  const sitting = sittingLength(exams);
 
   const pools = getTopicPools();
   const topicQuestions = [...pools.values()].reduce((total, pool) => total + pool.questions.length, 0);
@@ -429,6 +512,7 @@ function compute() {
     marking,
     pace,
     marksPer,
+    sitting,
 
     topics: pools.size,
     topicQuestions,
