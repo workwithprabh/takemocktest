@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-23",
- "pageCount": 5700,
+ "pageCount": 5702,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10253,6 +10253,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/how-long-you-will-actually-be-sitting-there": {
+   "title": "How Long You Will Actually Be Sitting There | TakeMockTest",
+   "description": "Across 160 official papers here a sitting runs from 25 minutes to 190. Most people train at the length of their first paper, not their deciding one.",
+   "h1": [
+    "How Long You Will Actually Be Sitting There"
+   ],
+   "h2Count": 12,
+   "h2Hash": "15e073f25b8b",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "1515a2ee8a45",
+   "ogHash": "743a7e243186",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/how-many-mock-tests-should-you-take": {
    "title": "How Many Mock Tests Should You Take Before the Exam?",
    "description": "There is no magic number. What matters is whether your section-wise accuracy is still improving between attempts, and whether you review each one properly.",
@@ -10536,6 +10558,28 @@
    ],
    "schemaHash": "11327ab42ea1",
    "ogHash": "1d924be131e8",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/blog/most-exams-are-one-paper": {
+   "title": "Most Exams Are One Paper. The Famous Ones Are Not.",
+   "description": "Of the 141 exams here with a confirmed pattern, 118 are a single paper. The 23 that are not include almost every exam you have heard of.",
+   "h1": [
+    "Most Exams Are One Paper. The Famous Ones Are Not."
+   ],
+   "h2Count": 11,
+   "h2Hash": "73dc462e23d7",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "177057b8caea",
+   "ogHash": "a7dab065b6ab",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -11316,7 +11360,7 @@
     "Study tips & exam strategy"
    ],
    "h2Count": 7,
-   "h2Hash": "ce6add4b4d6a",
+   "h2Hash": "e65003e494bb",
    "schemaTypes": [
     "Blog",
     "BlogPosting",
@@ -11324,7 +11368,7 @@
     "ListItem",
     "Organization"
    ],
-   "schemaHash": "e4a9366c5bac",
+   "schemaHash": "b6c1b69de8a1",
    "ogHash": "42f7c4c2d3a5",
    "sitemap": true,
    "robots": "index, follow"
@@ -16568,8 +16612,8 @@
    "h1": [
     "CMA Final Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "08589df8eac3",
+   "h2Count": 8,
+   "h2Hash": "bb4a0d8b200f",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -40349,8 +40393,8 @@
    "h1": [
     "KCET Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "0abed12b9e02",
+   "h2Count": 8,
+   "h2Hash": "245e7c5d21e5",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -59021,8 +59065,8 @@
    "h1": [
     "OJEE Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "3b2689c7a11c",
+   "h2Count": 8,
+   "h2Hash": "6a1973bc5934",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -92282,8 +92326,8 @@
    "h1": [
     "UPSC CSE Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "32ddec64c000",
+   "h2Count": 8,
+   "h2Hash": "58226e0465c9",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
