@@ -1,6 +1,28 @@
 export const SITE_URL = 'https://takemocktest.com';
 export const SITE_NAME = 'TakeMockTest';
 export const SITE_EMAIL = 'info@takemocktest.com';
+
+/**
+ * Profiles this organisation actually owns, for `sameAs` on the Organization
+ * entity. Order does not matter; Google treats the list as a set.
+ *
+ * Why this exists: takemocktest.com is a generic-word brand. "takemocktest" is
+ * the phrase "take mock test", and a dozen near-identical domains compete for
+ * it (mocktest.in, mocktestt.com, themocktests.com, testmocks.com and the
+ * rest), so a search engine has nothing to distinguish a brand query from a
+ * category query. `sameAs` is the standard way to say "this organisation is
+ * also these accounts", which is what lets an entity resolve. The domain also
+ * carries a previous owner's identity (AATBS, US psychology exam prep, whose
+ * pages were still indexed in September 2026), so there is a competing
+ * association to displace rather than a blank slate to fill.
+ *
+ * The rule for adding one: it must be a profile this organisation controls,
+ * and it should link back to takemocktest.com. A `sameAs` pointing at an
+ * account nobody owns, or one that never mentions the site, is a claim the
+ * markup cannot support. Empty is honest; invented is a false claim in
+ * machine-readable form, which is worse than an omission.
+ */
+export const SITE_PROFILES: string[] = [];
 export const GA_MEASUREMENT_ID = 'G-8D1KVR9GZJ';
 
 // Every JSON-LD block on the site is rendered via
@@ -30,10 +52,12 @@ export function organizationSchema() {
     alternateName: 'Take Mock Test',
     url: SITE_URL,
     email: SITE_EMAIL,
-    // Google reads `logo` for brand presentation. Deliberately no `sameAs`:
-    // this site has no social profiles, and listing invented ones would be a
-    // false claim in machine-readable form, which is worse than an omission.
+    // Google reads `logo` for brand presentation.
     logo: `${SITE_URL}/icon.svg`,
+    // Omitted entirely while SITE_PROFILES is empty, rather than emitted as an
+    // empty array: `"sameAs": []` is a malformed claim that the organisation is
+    // the same as nothing.
+    ...(SITE_PROFILES.length > 0 ? { sameAs: SITE_PROFILES } : {}),
   };
 }
 
