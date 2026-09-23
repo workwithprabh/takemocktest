@@ -231,6 +231,10 @@ export interface TestConfig {
 
 export interface StagePattern {
   status: 'official' | 'review-pending';
+  // Four is the site-wide default. Set this only for a stage whose rendered
+  // choice questions use five options; the question-bank audit enforces it.
+  // Evidence quality still comes from status/note, not from this field.
+  optionCount?: 4 | 5;
   cycle?: string;
   sections: string[];
   totalQuestions?: number;
@@ -9236,6 +9240,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'Focus Edition',
         pattern: {
           status: 'review-pending',
+          optionCount: 5,
           cycle: '2026',
           sections: ['Quantitative Reasoning', 'Verbal Reasoning', 'Data Insights: Data Sufficiency'],
           totalQuestions: 56,
@@ -9272,6 +9277,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'Scored Sections',
         pattern: {
           status: 'review-pending',
+          optionCount: 5,
           cycle: '2026',
           sections: ['Logical Reasoning I', 'Logical Reasoning II', 'Reading Comprehension'],
           totalQuestions: 77,
@@ -11020,6 +11026,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'KEAM 2026 Engineering',
         pattern: {
           status: 'official',
+          optionCount: 5,
           cycle: '2026',
           sections: ['Mathematics', 'Physics', 'Chemistry'],
           totalQuestions: 150,
@@ -11167,6 +11174,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'MAH MBA/MMS CET 2026',
         pattern: {
           status: 'official',
+          optionCount: 5,
           cycle: '2026',
           sections: ['Logical Reasoning', 'Abstract Reasoning', 'Quantitative Aptitude', 'Verbal Ability / Reading Comprehension'],
           totalQuestions: 200,
@@ -11312,6 +11320,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'XAT 2027',
         pattern: {
           status: 'review-pending',
+          optionCount: 5,
           cycle: '2027',
           sections: ['Verbal and Logical Ability', 'Decision Making', 'Quantitative Ability and Data Interpretation', 'General Knowledge'],
           totalQuestions: 95,
@@ -13638,6 +13647,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         name: 'TIFR GS 2026 Computer Science',
         pattern: {
           status: 'official',
+          optionCount: 5,
           cycle: '2026',
           sections: ['Part A Common', 'Part B Computer Science'],
           totalQuestions: 30,

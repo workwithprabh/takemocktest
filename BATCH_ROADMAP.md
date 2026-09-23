@@ -140,11 +140,12 @@ fully objective Part A papers that can be.
    Research Gate in `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §1 and needs an
    unrestricted network — most of the recent ones are blocked because the exam body's own
    domain is refused by the coding-agent sandbox's egress proxy.
-2. **Audit option counts against official patterns.** Nothing checks that a bank's option
-   width matches the width the real exam uses. This is how the XAT four-option defect,
-   found and fixed on 7 September 2026, went unnoticed for a day after shipping. Two exams disclose a four-option
-   rendering as a deliberate platform representation in their pattern notes, SLAT and KLEEE;
-   those are correct as they stand, but nothing enforces that such a note exists.
+2. **Option-count guard implemented.** `StagePattern.optionCount` records five-option stages;
+   four options remain the explicit site-wide default. `npm run qa:questions` now resolves every
+   checked full mock and sectional through the live exam configuration and fails when any choice
+   question differs from its stage width. The first full audit covered 1,539 tests across 219 live
+   stages with no mismatch. This guards implementation drift; `status` and `note` still disclose
+   whether the underlying exam pattern is official or review-pending.
 3. **Four products still have exactly one test** (IPMAT Indore, XAT, GMAT, LSAT), plus the
    three clinical products held at item 6 below. NATA, IIT JAM, DBT BET, GPAT and CSEET were
    taken to two full mocks on 10 September 2026. Per the operating model §10 a one-test product
