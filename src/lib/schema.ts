@@ -22,7 +22,11 @@ export const SITE_EMAIL = 'info@takemocktest.com';
  * markup cannot support. Empty is honest; invented is a false claim in
  * machine-readable form, which is worse than an omission.
  */
-export const SITE_PROFILES: string[] = [];
+export const SITE_PROFILES: string[] = [
+  'https://www.instagram.com/takemocktest/',
+  'https://www.facebook.com/takemocktest/',
+  'https://www.linkedin.com/company/takemocktest',
+];
 export const GA_MEASUREMENT_ID = 'G-8D1KVR9GZJ';
 
 // Every JSON-LD block on the site is rendered via
