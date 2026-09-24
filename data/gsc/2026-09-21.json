@@ -1,0 +1,62 @@
+[
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/acet",
+  "position": 1.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/exam-calendar",
+  "position": 5.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/ibps-clerk",
+  "position": 3.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/rrb-je",
+  "position": 4.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/sbi-clerk",
+  "position": 7.0
+ },
+ {
+  "clicks": 1,
+  "impressions": 1,
+  "page": "/in/sbi-po",
+  "position": 6.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/ssc-chsl",
+  "position": 9.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/ssc-mts",
+  "position": 8.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/terms",
+  "position": 2.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/upcoming-government-exams",
+  "position": 10.0
+ }
+]
