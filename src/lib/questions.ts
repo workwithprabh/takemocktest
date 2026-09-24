@@ -1077,6 +1077,49 @@ export interface Question {
   source?: QuestionSource;
 }
 
+/**
+ * Corpus-wide counts of difficulty and answer position, deduplicated by
+ * question id.
+ *
+ * Deduplication matters: a sectional test reuses the same bank as its
+ * full-length parent, so summing CHECKED_TEST_BANKS directly counts the shared
+ * questions once per test that serves them. scripts/audit-question-banks.mjs
+ * counts per file and reports 36,345 questions; this should agree with it, and
+ * the blog posts quoting these figures are wrong if it does not.
+ *
+ * Answer position is counted only for four-option single-correct questions.
+ * Multi-select, numerical and five-option records have no comparable "which
+ * letter" to tally, and folding them in would quietly distort the split that is
+ * the whole point of the count.
+ */
+export function getCorpusQuestionStats() {
+  const seen = new Set<string>();
+  const difficulty = { easy: 0, medium: 0, hard: 0, unlabelled: 0 };
+  const position = [0, 0, 0, 0];
+  let questions = 0;
+  let fourOption = 0;
+
+  for (const bank of Object.values(CHECKED_TEST_BANKS)) {
+    for (const question of bank) {
+      const key = question.id ?? question.question;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      questions += 1;
+
+      if (question.difficulty) difficulty[question.difficulty] += 1;
+      else difficulty.unlabelled += 1;
+
+      const single = question.answerType === undefined || question.answerType === 'mcq';
+      if (single && question.options.length === 4 && question.correctIndex >= 0 && question.correctIndex < 4) {
+        fourOption += 1;
+        position[question.correctIndex] += 1;
+      }
+    }
+  }
+
+  return { questions, difficulty, fourOption, position };
+}
+
 const CHECKED_TEST_BANKS: Record<string, Question[]> = {
   // JAMB UTME, Nigeria's beachhead exam. The full mock is the science
   // combination (Use of English plus Mathematics, Physics and Chemistry); the

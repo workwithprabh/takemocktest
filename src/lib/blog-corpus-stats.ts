@@ -1,4 +1,5 @@
 import { EXAMS } from './exams';
+import { getCorpusQuestionStats } from './questions';
 import { deniesSectionalLock } from './exam-pattern-content';
 import { getTopicPools } from './practice-topics';
 
@@ -589,6 +590,7 @@ function compute() {
   const sitting = sittingLength(exams);
   const locks = sectionalLocks(exams);
   const funnel = funnelStages(exams);
+  const corpus = getCorpusQuestionStats();
 
   const pools = getTopicPools();
   const topicQuestions = [...pools.values()].reduce((total, pool) => total + pool.questions.length, 0);
@@ -620,6 +622,7 @@ function compute() {
     sitting,
     locks,
     funnel,
+    corpus,
 
     topics: pools.size,
     topicQuestions,
@@ -633,6 +636,16 @@ function compute() {
 }
 
 export const CORPUS = compute();
+
+/** A count as a whole-number percentage of a total, for prose that states both. */
+export function share(count: number, total: number): number {
+  return Math.round((count / total) * 100);
+}
+
+/** One decimal place, for the answer-position split where whole numbers hide the point. */
+export function share1(count: number, total: number): string {
+  return ((count / total) * 100).toFixed(1);
+}
 
 /** 8259 reads as 8,259 in prose. Indian grouping is not used here: the posts were written with thousands separators. */
 export function n(value: number): string {
