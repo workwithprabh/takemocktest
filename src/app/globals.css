@@ -1,10 +1,19 @@
-/* General Sans is loaded via a non-blocking <link rel="stylesheet"> in
-   src/app/layout.tsx's <head> instead of @import here: @import is
-   discovered only after this file downloads and parses, forcing a serial
-   render-blocking waterfall. A <link> in <head> is discovered immediately
-   by the browser's preload scanner and fetched in parallel. JetBrains Mono
-   is self-hosted via next/font/google in layout.tsx (zero external
-   request, no render blocking at all). */
+/* General Sans is loaded through a <link rel="stylesheet"> in
+   src/app/layout.tsx's <head> rather than an @import here. That is the
+   better of the two external options: @import is discovered only after
+   this file downloads and parses, forcing a serial waterfall, while a
+   <link> in <head> is found immediately by the browser's preload scanner.
+   It is not, however, non-blocking, which this comment used to claim. A
+   stylesheet in <head> blocks first paint, and this one blocks it on a
+   third-party origin, so every first view waits on a DNS lookup, a TLS
+   handshake and a CSS round trip to api.fontshare.com before the woff2
+   requests even start. On the 24 September 2026 audit that was the
+   largest single render cost on all 5,708 pages.
+   The fix is to self-host it the way JetBrains Mono already is: that one
+   goes through next/font/google in layout.tsx and costs no external
+   request at all. General Sans is not on Google Fonts, so self-hosting it
+   means committing the woff2 files and switching to next/font/local. See
+   src/app/fonts/README.md for the files that step needs. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
