@@ -4618,33 +4618,33 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('cma-foundation/statistics-sectional')
     ? 18
     : testId.includes('nda/mathematics-full-mock')
-    ? 18
+    ? 36
     : testId.includes('nda/algebra-and-trigonometry-sectional')
-    ? 6
+    ? 12
     : testId.includes('nda/calculus-and-vectors-sectional')
-    ? 6
+    ? 12
     : testId.includes('nda/geometry-statistics-and-probability-sectional')
-    ? 6
+    ? 12
     : testId.includes('nda/general-ability-test-english-full-mock')
-    ? 12
+    ? 24
     : testId.includes('nda/grammar-and-usage-sectional')
-    ? 6
-    : testId.includes('nda/vocabulary-and-comprehension-sectional')
-    ? 6
-    : testId.includes('cds/elementary-mathematics-full-mock')
-    ? 18
-    : testId.includes('cds/arithmetic-sectional')
-    ? 6
-    : testId.includes('cds/algebra-and-trigonometry-sectional')
-    ? 6
-    : testId.includes('cds/geometry-and-mensuration-sectional')
-    ? 6
-    : testId.includes('cds/english-full-mock')
     ? 12
+    : testId.includes('nda/vocabulary-and-comprehension-sectional')
+    ? 12
+    : testId.includes('cds/elementary-mathematics-full-mock')
+    ? 36
+    : testId.includes('cds/arithmetic-sectional')
+    ? 12
+    : testId.includes('cds/algebra-and-trigonometry-sectional')
+    ? 12
+    : testId.includes('cds/geometry-and-mensuration-sectional')
+    ? 12
+    : testId.includes('cds/english-full-mock')
+    ? 24
     : testId.includes('cds/grammar-and-usage-sectional')
-    ? 6
+    ? 12
     : testId.includes('cds/vocabulary-and-comprehension-sectional')
-    ? 6
+    ? 12
     : testId.includes('afcat/verbal-numerical-and-reasoning-full-mock')
     ? 24
     : testId.includes('afcat/verbal-ability-sectional')
@@ -6619,22 +6619,22 @@ const cmaFoundationBusinessMathematicsAndStatisticsLayout = [
   { section: 'Statistics', count: 18 },
 ];
 const ndaMathematicsLayout = [
-  { section: 'Algebra and Trigonometry', count: 6 },
-  { section: 'Calculus and Vectors', count: 6 },
-  { section: 'Geometry, Statistics and Probability', count: 6 },
+  { section: 'Algebra and Trigonometry', count: 12 },
+  { section: 'Calculus and Vectors', count: 12 },
+  { section: 'Geometry, Statistics and Probability', count: 12 },
 ];
 const ndaGeneralAbilityTestEnglishLayout = [
-  { section: 'Grammar and Usage', count: 6 },
-  { section: 'Vocabulary and Comprehension', count: 6 },
+  { section: 'Grammar and Usage', count: 12 },
+  { section: 'Vocabulary and Comprehension', count: 12 },
 ];
 const cdsElementaryMathematicsLayout = [
-  { section: 'Arithmetic', count: 6 },
-  { section: 'Algebra and Trigonometry', count: 6 },
-  { section: 'Geometry and Mensuration', count: 6 },
+  { section: 'Arithmetic', count: 12 },
+  { section: 'Algebra and Trigonometry', count: 12 },
+  { section: 'Geometry and Mensuration', count: 12 },
 ];
 const cdsEnglishLayout = [
-  { section: 'Grammar and Usage', count: 6 },
-  { section: 'Vocabulary and Comprehension', count: 6 },
+  { section: 'Grammar and Usage', count: 12 },
+  { section: 'Vocabulary and Comprehension', count: 12 },
 ];
 const afcatVerbalNumericalAndReasoningLayout = [
   { section: 'Verbal Ability', count: 8 },

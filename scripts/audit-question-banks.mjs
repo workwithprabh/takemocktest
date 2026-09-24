@@ -589,10 +589,10 @@ for (const { file, questions } of banks) {
     : file.startsWith('acet-mathematics-and-statistics-combined-') ? 20
     : file.startsWith('ca-foundation-quantitative-aptitude-combined-') ? 30
     : file.startsWith('cma-foundation-business-mathematics-and-statistics-combined-') ? 30
-    : file.startsWith('nda-mathematics-combined-') ? 18
-    : file.startsWith('nda-general-ability-test-english-combined-') ? 12
-    : file.startsWith('cds-elementary-mathematics-combined-') ? 18
-    : file.startsWith('cds-english-combined-') ? 12
+    : file.startsWith('nda-mathematics-combined-') ? 36
+    : file.startsWith('nda-general-ability-test-english-combined-') ? 24
+    : file.startsWith('cds-elementary-mathematics-combined-') ? 36
+    : file.startsWith('cds-english-combined-') ? 24
     : file.startsWith('afcat-verbal-numerical-and-reasoning-combined-') ? 24
     : file.startsWith('territorial-army-reasoning-and-english-combined-') ? 21
     : file.startsWith('inet-english-and-reasoning-numerical-ability-combined-') ? 24
@@ -794,6 +794,44 @@ for (const exam of EXAM_LIST) {
           `${exam.slug}/${stage.id}/${test.id}: expected ${expectedOptionCount} options from StagePattern, `
           + `but ${mismatch.id ?? 'an unnamed question'} has ${mismatch.options?.length ?? 0}`,
         );
+      }
+
+      // A bank that scores every question the same way must score it the way
+      // the test says it does. Question-level `marks` and `negativeMarking`
+      // override the test config at runtime (TestAttemptClient reads
+      // `q.marks ?? marksPerCorrect`), so a bank written without the penalty
+      // silently turns a penalised paper into a free one. That is what eight
+      // second-mock banks did until 24 September 2026: NDA Mathematics Full
+      // Mock Test 2 carried `marks: 2, negativeMarking: 0` against a config of
+      // 2.5 and 0.83, scored out of 36 while its own note promised 45, and
+      // deducted nothing for a wrong answer on a paper that deducts a third.
+      // CDS, MAT, CA Foundation, RRB Paramedical and CSIR UGC NET Part A had
+      // the same shape. Every first mock was right, which is why nothing
+      // looked wrong from outside.
+      //
+      // The check is the penalty as a fraction of a correct answer, not the
+      // absolute figures, because a paper may legitimately weight its sections
+      // differently: IBPS PO Mains English carries 0.5 marks a question with a
+      // 0.125 deduction against a flat 1/0.25 config, and that is the same
+      // scheme, not a different one. It applies only where the bank is uniform
+      // in both fields. A test that genuinely mixes schemes by question type,
+      // like GATE's numerical-answer questions or CAT's TITA items, has
+      // nothing single to compare and already renders its scoring as "Varies".
+      const markValues = new Set(questions.map((question) => question.marks ?? test.marksPerCorrect));
+      const penaltyValues = new Set(questions.map((question) => question.negativeMarking ?? test.negativeMarking));
+      if (questions.length > 0 && markValues.size === 1 && penaltyValues.size === 1) {
+        const bankMarks = [...markValues][0];
+        const bankPenalty = [...penaltyValues][0];
+        const bankRatio = bankMarks > 0 ? bankPenalty / bankMarks : 0;
+        const configRatio = test.marksPerCorrect > 0 ? test.negativeMarking / test.marksPerCorrect : 0;
+        if (Math.abs(bankRatio - configRatio) > 0.005) {
+          errors.push(
+            `${exam.slug}/${stage.id}/${test.id}: every question scores ${bankMarks}/-${bankPenalty} `
+            + `(a ${bankRatio.toFixed(3)} penalty per mark) but the test declares `
+            + `${test.marksPerCorrect}/-${test.negativeMarking} (${configRatio.toFixed(3)}). `
+            + 'Question-level marks win at runtime, so the bank is what candidates are actually scored on.',
+          );
+        }
       }
     }
   }
