@@ -1,5 +1,6 @@
 import { EXAMS } from './exams';
-import { getCorpusQuestionStats } from './questions';
+import { getCorpusQuestionStats, getQuestionsForTest } from './questions';
+import { getTestCoverage } from './test-coverage';
 import { deniesSectionalLock } from './exam-pattern-content';
 import { getTopicPools } from './practice-topics';
 
@@ -535,6 +536,204 @@ function funnelStages(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   return (slug: string) => byExam.get(slug);
 }
 
+/**
+ * Awareness sections: how much of a paper is the part whose answers expire.
+ *
+ * A general-awareness or current-affairs section is the one part of a paper
+ * that practice material cannot carry for long, because a question about last
+ * month's appointment stops being checkable the moment the fact moves. This
+ * site does not build those sections for exactly that reason, and the
+ * coverage line on every full-length test says so. The figures here let a post
+ * say how much of a paper that leaves unrehearsed without anyone typing a
+ * percentage into prose.
+ *
+ * Only a section that is awareness and nothing else is measured. Four papers
+ * bundle general knowledge with another subject under one heading, and
+ * charging that heading's whole mark count to awareness turned AP LAWCET into
+ * a paper that is half general knowledge when the heading it comes from is
+ * "General Knowledge and Mental Ability". Those four are counted separately
+ * and named rather than folded into the share.
+ *
+ * A paper is dropped whole rather than measured on its clean sections alone.
+ * AP LAWCET also carries a 30-question Current Affairs section, so counting
+ * only that would report its awareness weight as a quarter while a second
+ * section is still asking general knowledge. Neither figure is honest on its
+ * own, so the paper is named in the caveat instead of given a number.
+ */
+const AWARENESS =
+  /general awareness|general knowledge|current affairs|banking awareness|financial awareness|economic and business environment|general studies/i;
+
+/** An awareness heading that also names another subject, so its marks are not all awareness. */
+const AWARENESS_MIXED = /reasoning|english|aptitude|mental ability|mathemat|quantitative|etc\./i;
+
+function awarenessWeight(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
+  const rows: { exam: string; slug: string; category: string; stage: string; questions: number; marks: number; total: number; share: number }[] = [];
+  const mixed: { exam: string; stage: string; section: string }[] = [];
+  const names = new Set<string>();
+  let papers = 0;
+
+  for (const exam of exams) {
+    for (const stage of exam.stages) {
+      const pattern = stage.pattern;
+      if (pattern.status !== 'official') continue;
+      const breakdown = pattern.sectionBreakdown ?? [];
+      if (breakdown.length === 0) continue;
+      papers += 1;
+
+      const totalMarks = breakdown.reduce((sum, section) => sum + (section.marks || 0), 0);
+      if (totalMarks === 0) continue;
+      const awareness = breakdown.filter((section) => AWARENESS.test(section.name));
+      if (awareness.length === 0) continue;
+
+      const impure = awareness.filter((section) => AWARENESS_MIXED.test(section.name));
+      if (impure.length > 0) {
+        for (const section of impure) mixed.push({ exam: exam.name, stage: stage.name, section: section.name });
+        continue;
+      }
+
+      for (const section of awareness) names.add(section.name);
+      const marks = awareness.reduce((sum, section) => sum + (section.marks || 0), 0);
+      rows.push({
+        exam: exam.name,
+        slug: exam.slug,
+        category: exam.category,
+        stage: stage.name,
+        questions: awareness.reduce((sum, section) => sum + (section.questions || 0), 0),
+        marks,
+        total: totalMarks,
+        share: (100 * marks) / totalMarks,
+      });
+    }
+  }
+
+  rows.sort((a, b) => b.share - a.share || a.exam.localeCompare(b.exam));
+  const shares = rows.map((row) => row.share).sort((a, b) => a - b);
+
+  // Full-length tests on this site that stop short of the official paper
+  // because an awareness section is not built. Read from the same function
+  // the test pages print, so the post and the page cannot disagree.
+  let fullLength = 0;
+  const shortExams = new Set<string>();
+  let short = 0;
+  for (const exam of exams) {
+    for (const stage of exam.stages) {
+      for (const test of stage.tests) {
+        if (test.kind !== 'full-length' || test.status !== 'checked') continue;
+        const coverage = getTestCoverage(exam, stage, test, getQuestionsForTest(exam.slug, test.id));
+        if (!coverage) continue;
+        fullLength += 1;
+        if (!coverage.complete && AWARENESS.test(coverage.label)) {
+          short += 1;
+          shortExams.add(exam.name);
+        }
+      }
+    }
+  }
+
+  const byCategory = [...new Set(rows.map((row) => row.category))]
+    .map((category) => ({
+      category,
+      papers: rows.filter((row) => row.category === category).length,
+      total: exams
+        .filter((exam) => exam.category === category)
+        .reduce(
+          (sum, exam) =>
+            sum +
+            exam.stages.filter((stage) => stage.pattern.status === 'official' && (stage.pattern.sectionBreakdown?.length ?? 0) > 0)
+              .length,
+          0,
+        ),
+    }))
+    .sort((a, b) => b.papers - a.papers || a.category.localeCompare(b.category));
+
+  return {
+    /** Official patterns publishing a section breakdown, which is what a share can be taken of. */
+    papers,
+    /** Of those, the ones with a section that is awareness and nothing else. */
+    withAwareness: rows.length,
+    /** Distinct headings those sections go by. */
+    headings: names.size,
+    median: shares[Math.floor(shares.length / 2)],
+    atQuarter: rows.filter((row) => Math.abs(row.share - 25) < 0.01).length,
+    atFifthOrMore: rows.filter((row) => row.share >= 20).length,
+    heaviest: rows.slice(0, 5),
+    lightest: rows[rows.length - 1],
+    byCategory,
+    forCategory: (category: string) => byCategory.find((entry) => entry.category === category),
+    /** Papers that fold awareness into a heading shared with another subject. */
+    mixed,
+    fullLength,
+    /** Full-length tests here that leave an awareness section unbuilt. */
+    short,
+    shortExams: shortExams.size,
+  };
+}
+
+/**
+ * Patterns this site records as revised, and the facts of any stage a post
+ * wants to name.
+ *
+ * `revised` counts the patterns whose own note says the paper changed. It is a
+ * floor and nothing more: it reads prose, so an exam body that changed a paper
+ * without our note saying so is not in it. Quote it as "at least", the way
+ * funnelStages' addedSections is quoted as a signal rather than a count.
+ *
+ * `facts` exists so a post naming a paper takes its current shape from the
+ * pattern rather than repeating it. The figure a post contrasts it against,
+ * what the paper used to be, is a fact about the exam body and not about this
+ * corpus, so it stays in the prose with the note that records it.
+ */
+const PATTERN_REVISED =
+  /\brevis(?:ed|ion)\b|\bup from\b|\bdown from\b|\breduc(?:ed|ing)\b|\bincreased from\b|\bearlier cycles?\b|\bprevious cycles?\b|\bno longer\b|\bremoved from the scored\b|\bdiscontinued\b/i;
+
+/**
+ * A postponed sitting is not a revised paper. CTET's note says "the revised
+ * examination date is to be announced", which is the one phrase above that
+ * matches a note describing no change to the paper at all, so it comes out
+ * before the test runs.
+ */
+const REVISED_DATE_ONLY = /revised (?:examination|exam) date/i;
+
+function patternRevisions(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
+  let stages = 0;
+  let withCycle = 0;
+  let withSource = 0;
+  let revised = 0;
+  let pending = 0;
+  const byStage = new Map<string, { exam: string; slug: string; stage: string; cycle?: string; questions?: number; marks?: number; minutes?: number; options: number }>();
+
+  for (const exam of exams) {
+    for (const stage of exam.stages) {
+      const pattern = stage.pattern;
+      stages += 1;
+      if (pattern.cycle) withCycle += 1;
+      if (pattern.status === 'review-pending') pending += 1;
+      if (pattern.sourceUrl) withSource += 1;
+      if (pattern.note && PATTERN_REVISED.test(pattern.note.replace(REVISED_DATE_ONLY, ''))) revised += 1;
+      byStage.set(`${exam.slug}/${stage.name}`, {
+        exam: exam.name,
+        slug: exam.slug,
+        stage: stage.name,
+        cycle: pattern.cycle,
+        questions: pattern.totalQuestions,
+        marks: pattern.totalMarks,
+        minutes: pattern.duration,
+        options: pattern.optionCount ?? 4,
+      });
+    }
+  }
+
+  return {
+    stages,
+    withCycle,
+    withSource,
+    revised,
+    /** Stages whose pattern is published but still marked for review. */
+    pending,
+    facts: (slug: string, stage: string) => byStage.get(`${slug}/${stage}`),
+  };
+}
+
 interface StageFacts {
   exam: string;
   name: string;
@@ -590,6 +789,8 @@ function compute() {
   const sitting = sittingLength(exams);
   const locks = sectionalLocks(exams);
   const funnel = funnelStages(exams);
+  const awareness = awarenessWeight(exams);
+  const revisions = patternRevisions(exams);
   const corpus = getCorpusQuestionStats();
 
   const pools = getTopicPools();
@@ -622,6 +823,8 @@ function compute() {
     sitting,
     locks,
     funnel,
+    awareness,
+    revisions,
     corpus,
 
     topics: pools.size,
