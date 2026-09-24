@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-24",
- "pageCount": 5706,
+ "pageCount": 5708,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -5805,8 +5805,8 @@
    "h1": [
     "AP LAWCET Mock Test 2026"
    ],
-   "h2Count": 8,
-   "h2Hash": "846a84d532af",
+   "h2Count": 9,
+   "h2Hash": "fa5118e431d2",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -10143,6 +10143,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/do-exam-patterns-change": {
+   "title": "Do Exam Patterns Change? Six Papers That Moved",
+   "description": "Practice material outlives the paper it was written for. Of the 221 stage patterns here, six record a paper that changed shape.",
+   "h1": [
+    "Do Exam Patterns Change? Six Papers That Moved"
+   ],
+   "h2Count": 13,
+   "h2Hash": "1377823b3a59",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "706df6aaaa2c",
+   "ogHash": "6d8b1ce9c96f",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/document-verification-what-to-expect": {
    "title": "Document Verification: What Happens After the Written Exam",
    "description": "Clearing the written exam is not the finish line. Document Verification trips up candidates over paperwork, not knowledge, and it is avoidable with preparation.",
@@ -10228,6 +10250,28 @@
    ],
    "schemaHash": "5cb899f6ab59",
    "ogHash": "8ed8ce6177f9",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/blog/general-awareness-weightage": {
+   "title": "General Awareness Weightage: How Much of the Paper It Really Is",
+   "description": "Of the 146 official patterns published here, 46 carry a general awareness section. The middle one is worth 20% of the marks, and the heaviest is over 41%.",
+   "h1": [
+    "General Awareness Weightage: How Much of the Paper It Really Is"
+   ],
+   "h2Count": 12,
+   "h2Hash": "ed933cdbaec6",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "bcb687a39d0e",
+   "ogHash": "ea6d746f2730",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -11448,7 +11492,7 @@
     "Study tips & exam strategy"
    ],
    "h2Count": 7,
-   "h2Hash": "f8353785ac4e",
+   "h2Hash": "57eabce3e3ec",
    "schemaTypes": [
     "Blog",
     "BlogPosting",
@@ -11456,7 +11500,7 @@
     "ListItem",
     "Organization"
    ],
-   "schemaHash": "ddccc03d886a",
+   "schemaHash": "b142bc86891f",
    "ogHash": "42f7c4c2d3a5",
    "sitemap": true,
    "robots": "index, follow"
@@ -41323,8 +41367,8 @@
    "h1": [
     "Kerala MCA Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "404d39bdeaba",
+   "h2Count": 8,
+   "h2Hash": "9579d69da3c9",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -45727,8 +45771,8 @@
    "h1": [
     "LSAT Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "c38f5047daa8",
+   "h2Count": 8,
+   "h2Hash": "2edf869253d9",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -51144,8 +51188,8 @@
    "h1": [
     "MPPSC State Service Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "d8e497fe32ad",
+   "h2Count": 8,
+   "h2Hash": "57b78af14930",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -54056,8 +54100,8 @@
    "h1": [
     "NEET PG Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "ddbaa0e77086",
+   "h2Count": 8,
+   "h2Hash": "d3bd7f4f219a",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -88583,8 +88627,8 @@
    "h1": [
     "TG LAWCET Mock Test 2026"
    ],
-   "h2Count": 7,
-   "h2Hash": "8ebfe535401d",
+   "h2Count": 8,
+   "h2Hash": "52ef19c6d632",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
