@@ -13,7 +13,7 @@
 import type { BlogDiagramId } from '@/components/blog/BlogDiagrams';
 // Figures quoted about this site's own corpus are derived, never typed in.
 // See src/lib/blog-corpus-stats.ts for why, and for the definitions.
-import { CORPUS, blindGuessPercent, breakEvenPercent, capitalise, fraction, n, word } from './blog-corpus-stats';
+import { CORPUS, blindGuessPercent, breakEvenPercent, capitalise, fraction, n, share, share1, word } from './blog-corpus-stats';
 import { rotateBy } from './rotate';
 
 export type BlogBlock =
@@ -3379,6 +3379,79 @@ export const BLOG_POSTS: BlogPost[] = [
       { q: 'What is the difference between an answer key and a response sheet?', a: 'The answer key is the conducting body\'s list of correct answers for the paper. The response sheet is the record of what you personally marked, question by question. You need both: the key alone tells you nothing about your paper, and the response sheet alone tells you what you chose without telling you whether it was right.' },
       { q: 'Should I challenge a question in the objection window?', a: 'Only with a source. A challenge backed by a textbook, an official document or a standard reference has a chance; a disagreement does not. Most bodies charge a fee for each question challenged, which is often refunded when the challenge succeeds, and the window is short. Read your exam\'s own notice for the fee, the deadline and the format, because these differ by exam and by cycle.' },
       { q: 'Is the score from a provisional key final?', a: 'No. Provisional keys get revised, and questions are sometimes dropped and either credited to every candidate or removed from the total, which changes your score either way. Treat the figure as an estimate until the final key is published, and be especially careful about it if your estimate sits near a cut-off.' },
+    ],
+  },
+  {
+    slug: 'only-one-question-in-seven-is-hard',
+    title: 'Only One Question in Seven Is Hard',
+    excerpt: `Across the ${n(CORPUS.corpus.questions)} questions published here, ${share(CORPUS.corpus.difficulty.hard, CORPUS.corpus.questions)}% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.`,
+    category: 'Mock Tests',
+    readTimeMin: 6,
+    publishedAt: '2026-09-24',
+    authorName: 'TakeMockTest Editorial Team',
+    primaryKeyword: 'how difficult are competitive exam questions',
+    body: [
+      { type: 'paragraph', text: `A mock that felt easy makes people suspicious, as though a good practice paper ought to hurt. Count what is actually in one and the shape is different. Of the ${n(CORPUS.corpus.questions)} questions published on this site, ${n(CORPUS.corpus.difficulty.hard)} are graded hard. That is ${share(CORPUS.corpus.difficulty.hard, CORPUS.corpus.questions)}%, roughly one in seven. The bulk is the middle, and the middle is where the marks are.` },
+      { type: 'takeaways', items: [
+        `${capitalise(word(share(CORPUS.corpus.difficulty.hard, CORPUS.corpus.questions)))} per cent of the ${n(CORPUS.corpus.questions)} questions here are hard, ${share(CORPUS.corpus.difficulty.medium, CORPUS.corpus.questions)}% medium and ${share(CORPUS.corpus.difficulty.easy, CORPUS.corpus.questions)}% easy.`,
+        'A paper is won on the easy and medium bulk, not on the hard tail.',
+        'At the pace most papers set, the hard questions are where a section goes wrong rather than where it is won.',
+        'A mock that feels comfortable is not necessarily too easy. Check your accuracy on the middle band instead.',
+      ] },
+      { type: 'table', heading: `How ${n(CORPUS.corpus.questions)} questions grade out`, headers: ['Difficulty', 'Questions', 'Share'], rows: [
+        ['Easy', n(CORPUS.corpus.difficulty.easy), `${share(CORPUS.corpus.difficulty.easy, CORPUS.corpus.questions)}%`],
+        ['Medium', n(CORPUS.corpus.difficulty.medium), `${share(CORPUS.corpus.difficulty.medium, CORPUS.corpus.questions)}%`],
+        ['Hard', n(CORPUS.corpus.difficulty.hard), `${share(CORPUS.corpus.difficulty.hard, CORPUS.corpus.questions)}%`],
+      ] },
+      { type: 'paragraph', heading: 'Where the marks actually are', text: `Put the split next to the clock. Most papers here give you around a minute a question and the fastest give ${Math.round(CORPUS.pace.fastestSeconds)} seconds, which [how much time per question](/blog/how-much-time-per-question) works through. At that pace the ${share(CORPUS.corpus.difficulty.easy + CORPUS.corpus.difficulty.medium, CORPUS.corpus.questions)}% of questions that are easy or medium are the entire paper as far as your score is concerned. The hard ${share(CORPUS.corpus.difficulty.hard, CORPUS.corpus.questions)}% is not where a good candidate pulls ahead. It is where an average one loses the four minutes that cost them six easier questions later.` },
+      { type: 'callout', text: 'The hard questions are not where a good candidate pulls ahead. They are where an average one loses the four minutes that cost them six easier questions later.' },
+      { type: 'paragraph', heading: 'So stop judging a mock by how it felt', text: `"Too easy" is the most common complaint about a practice paper and it is almost never the useful reading. A paper weighted the way real papers are weighted will feel manageable in stretches, because most of it is meant to be. The question worth asking after a mock is not whether it was hard but what your accuracy was on the middle band, because that band is ${share(CORPUS.corpus.difficulty.medium, CORPUS.corpus.questions)}% of everything and it is where a score moves. [How to analyze your mock test performance](/blog/how-to-analyze-your-mock-test-performance) sets out how to pull that out of a result.` },
+      { type: 'paragraph', heading: 'What the hard band is for', text: 'It is not padding. A paper with no hard questions gives you nothing to practise triage on, and triage is the skill a timed exam actually tests. The point of the hard band is to give you something you should decide to leave, under a clock, often enough that leaving it stops feeling like failure. If you never meet a question you cannot do in practice, the first one you meet will be in the exam hall.' },
+      { type: 'paragraph', heading: 'What these labels are and are not', text: `Worth being plain about this. The grades are this site's own, applied to original questions written against each exam's published syllabus, not to past papers and not by the exam bodies. They say how hard we judged a question to be, which is a useful relative signal across ${n(CORPUS.corpus.questions)} of them and not a claim about any real paper's composition. No exam body publishes a difficulty split, so nobody, including us, can tell you what fraction of your actual paper will be hard.` },
+      { type: 'paragraph', text: `Every test on the site reports its own split when you finish it, so you can see which band your accuracy actually sits in rather than guessing. Start from your exam's page in the [exam directory](/exams).` },
+    ],
+    faqs: [
+      { q: 'How difficult are competitive exam questions?', a: `Most are not hard. Across the ${n(CORPUS.corpus.questions)} questions published on this site, ${share(CORPUS.corpus.difficulty.easy, CORPUS.corpus.questions)}% are graded easy, ${share(CORPUS.corpus.difficulty.medium, CORPUS.corpus.questions)}% medium and ${share(CORPUS.corpus.difficulty.hard, CORPUS.corpus.questions)}% hard. A paper is decided on the easy and medium bulk; the hard band is mostly where time gets lost.` },
+      { q: 'My mock test felt too easy. Is that a bad sign?', a: 'Not by itself. A paper weighted the way real papers are weighted feels manageable in stretches, because most questions are meant to be answerable. The useful check is your accuracy on the medium band rather than how the paper felt, since that band is the majority of any paper and the place a score actually moves.' },
+      { q: 'Should I practise only hard questions?', a: 'No. Drilling only the hard band trains you for about one question in seven and leaves the part that decides your score unpractised. Hard questions are worth meeting under a clock so that deciding to leave one becomes routine, which is a different purpose from getting better at them.' },
+      { q: 'Are these difficulty labels from the exam bodies?', a: 'No. They are this site\'s own grades on original questions written against each exam\'s published syllabus. No exam body publishes a difficulty split for its papers, so the labels are a relative signal across this corpus rather than a prediction of what your real paper will contain.' },
+    ],
+  },
+  {
+    slug: 'is-c-the-most-common-answer',
+    title: 'Is C the Most Common Answer? We Counted 35,052 Questions',
+    excerpt: `The folklore says pick C when stuck. Across ${n(CORPUS.corpus.fourOption)} four-option questions here, C comes third, and all four positions sit within ${share1(Math.max(...CORPUS.corpus.position) - Math.min(...CORPUS.corpus.position), CORPUS.corpus.fourOption)} points.`,
+    category: 'Study Tips',
+    readTimeMin: 5,
+    publishedAt: '2026-09-24',
+    authorName: 'TakeMockTest Editorial Team',
+    primaryKeyword: 'is c the most common answer',
+    body: [
+      { type: 'paragraph', text: `Every exam hall has someone who fills the last ten questions with C because it is supposedly the commonest answer. It is a comforting piece of folklore and there is no evidence behind it. We counted every four-option single-correct question published on this site, ${n(CORPUS.corpus.fourOption)} of them, and C came third.` },
+      { type: 'table', heading: `Correct answer by position, ${n(CORPUS.corpus.fourOption)} questions`, headers: ['Position', 'Times correct', 'Share'], rows: [
+        ['A', n(CORPUS.corpus.position[0]), `${share1(CORPUS.corpus.position[0], CORPUS.corpus.fourOption)}%`],
+        ['B', n(CORPUS.corpus.position[1]), `${share1(CORPUS.corpus.position[1], CORPUS.corpus.fourOption)}%`],
+        ['C', n(CORPUS.corpus.position[2]), `${share1(CORPUS.corpus.position[2], CORPUS.corpus.fourOption)}%`],
+        ['D', n(CORPUS.corpus.position[3]), `${share1(CORPUS.corpus.position[3], CORPUS.corpus.fourOption)}%`],
+      ] },
+      { type: 'takeaways', items: [
+        `C is third of four here, not first. The gap between the commonest and rarest position is ${n(Math.max(...CORPUS.corpus.position) - Math.min(...CORPUS.corpus.position))} questions out of ${n(CORPUS.corpus.fourOption)}.`,
+        'That gap is under a point and a half, which is noise rather than a pattern you could bet on.',
+        'No exam body publishes its answer distribution, so nobody can tell you what your real paper does.',
+        'Eliminating one option beats picking any letter, and the arithmetic says so.',
+      ] },
+      { type: 'paragraph', heading: 'What the numbers say', text: `A is correct ${share1(CORPUS.corpus.position[0], CORPUS.corpus.fourOption)}% of the time, B ${share1(CORPUS.corpus.position[1], CORPUS.corpus.fourOption)}%, C ${share1(CORPUS.corpus.position[2], CORPUS.corpus.fourOption)}% and D ${share1(CORPUS.corpus.position[3], CORPUS.corpus.fourOption)}%. The spread between the commonest and the rarest is ${n(Math.max(...CORPUS.corpus.position) - Math.min(...CORPUS.corpus.position))} questions, or ${share1(Math.max(...CORPUS.corpus.position) - Math.min(...CORPUS.corpus.position), CORPUS.corpus.fourOption)}% of the corpus. If you answered every question with the best-performing letter rather than at random, you would gain ${share1(Math.max(...CORPUS.corpus.position) - CORPUS.corpus.fourOption / 4, CORPUS.corpus.fourOption)}% more correct answers, which is one extra mark in roughly two hundred questions. That is not a strategy. It is a rounding error you would have to sit a hundred papers to notice.` },
+      { type: 'callout', text: 'That is not a strategy. It is a rounding error you would have to sit a hundred papers to notice.' },
+      { type: 'paragraph', heading: 'Why our corpus is balanced, and why that is the point', text: `Being straight about where this number comes from: it is level here partly because we keep it level. Every bank published on this site is checked for answer-position balance before it ships, and a bank whose answers cluster on one letter gets rebuilt. So this is not evidence that real exam papers are balanced. It is evidence that when somebody is deliberately not putting a pattern in, there is no pattern to find. Nobody is deliberately putting one in on your real paper either, and no exam body publishes its distribution, so the folklore has nothing behind it in either direction.` },
+      { type: 'paragraph', heading: 'What to do instead', text: `The question the letter myth is really trying to answer is what to do when you do not know. The arithmetic answers it better. A guess breaks even when your accuracy matches the deduction divided by the marks a correct answer earns, and on the commonest scheme here that line sits at ${breakEvenPercent(0.25)}% while a blind guess between four options returns ${blindGuessPercent(4)}%. You are already past the line before eliminating anything, and ruling out a single option puts you near 33%, clear of every break-even this site publishes. [Understanding negative marking](/blog/understanding-negative-marking) has the full working.` },
+      { type: 'paragraph', heading: 'The habit worth dropping', text: 'Picking a lucky letter feels like doing something, which is why it survives. It also costs you the two or three seconds you could have spent reading the options and ruling one out, and that elimination is worth far more than any letter. If you genuinely cannot eliminate anything and the clock is gone, any letter will do, and it does not matter which one you pick.' },
+      { type: 'paragraph', text: `The answer-position split for every bank on this site is printed by its own quality check, and the marking scheme behind the break-even sits on each exam's page in the [exam directory](/exams).` },
+    ],
+    faqs: [
+      { q: 'Is C the most common answer in multiple choice exams?', a: `Not on this site's questions. Across ${n(CORPUS.corpus.fourOption)} four-option single-correct questions, C is correct ${share1(CORPUS.corpus.position[2], CORPUS.corpus.fourOption)}% of the time, which places it third behind A at ${share1(CORPUS.corpus.position[0], CORPUS.corpus.fourOption)}% and B at ${share1(CORPUS.corpus.position[1], CORPUS.corpus.fourOption)}%. All four sit within ${share1(Math.max(...CORPUS.corpus.position) - Math.min(...CORPUS.corpus.position), CORPUS.corpus.fourOption)} percentage points. No exam body publishes its own distribution, so there is no basis for the claim about real papers either.` },
+      { q: 'Should I pick the same letter for all questions I do not know?', a: `It makes no measurable difference which letter you pick. On this corpus the gap between the best and worst position is ${share1(Math.max(...CORPUS.corpus.position) - Math.min(...CORPUS.corpus.position), CORPUS.corpus.fourOption)}% of questions, so choosing the best-performing letter over a random one gains about one extra mark in two hundred questions. Spend the effort on eliminating an option instead, which is worth far more.` },
+      { q: 'Does eliminating one option actually help?', a: `Substantially. Ruling out one of four options takes you from a 25% chance to about 33%. The harshest penalty published on this site is one-third of a correct answer, whose break-even is ${breakEvenPercent(1 / 3)}%, so 33% clears every break-even here. On the commonest scheme, +1 with a 0.25 deduction, the break-even is ${breakEvenPercent(0.25)}% and even a blind guess is already worth taking.` },
+      { q: 'Why are answer positions balanced on this site?', a: 'Because it is checked. Every question bank is audited for answer-position spread before it is published, and a bank whose correct answers cluster on one letter is rebuilt rather than shipped. That keeps practice papers from teaching a pattern that would not exist in a real exam.' },
     ],
   },
 ];

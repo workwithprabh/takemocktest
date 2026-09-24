@@ -1,6 +1,6 @@
 {
- "capturedAt": "2026-09-23",
- "pageCount": 5704,
+ "capturedAt": "2026-09-24",
+ "pageCount": 5706,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10517,6 +10517,28 @@
    "sitemap": true,
    "robots": "index, follow"
   },
+  "/in/blog/is-c-the-most-common-answer": {
+   "title": "Is C the Most Common Answer? We Counted 35,052 Questions",
+   "description": "The folklore says pick C when stuck. Across 35,052 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
+   "h1": [
+    "Is C the Most Common Answer? We Counted 35,052 Questions"
+   ],
+   "h2Count": 12,
+   "h2Hash": "b94500efb88a",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "faf7ac2f0d82",
+   "ogHash": "63a62b0db544",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
   "/in/blog/jee-main-vs-bitsat-vs-state-cets-engineering-prep": {
    "title": "JEE Main, BITSAT, or a State CET: How Prep Differs",
    "description": "The marking schemes alone range from no penalty to a full mark deducted, and one exam mixes multiple-choice with typed answers you cannot guess at.",
@@ -10668,6 +10690,28 @@
    ],
    "schemaHash": "b10dd9c4eaa5",
    "ogHash": "99de4bad34e9",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/blog/only-one-question-in-seven-is-hard": {
+   "title": "Only One Question in Seven Is Hard | TakeMockTest",
+   "description": "Across the 36,345 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
+   "h1": [
+    "Only One Question in Seven Is Hard"
+   ],
+   "h2Count": 12,
+   "h2Hash": "ae0820acc98b",
+   "schemaTypes": [
+    "Answer",
+    "Article",
+    "BreadcrumbList",
+    "FAQPage",
+    "ListItem",
+    "Organization",
+    "Question"
+   ],
+   "schemaHash": "45e1c3d18e22",
+   "ogHash": "8acafb7c5db1",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -11404,7 +11448,7 @@
     "Study tips & exam strategy"
    ],
    "h2Count": 7,
-   "h2Hash": "8ccabb77620f",
+   "h2Hash": "f8353785ac4e",
    "schemaTypes": [
     "Blog",
     "BlogPosting",
@@ -11412,7 +11456,7 @@
     "ListItem",
     "Organization"
    ],
-   "schemaHash": "814e5f505de4",
+   "schemaHash": "ddccc03d886a",
    "ogHash": "42f7c4c2d3a5",
    "sitemap": true,
    "robots": "index, follow"
