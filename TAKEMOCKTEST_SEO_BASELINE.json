@@ -1,5 +1,5 @@
 {
- "capturedAt": "2026-09-24",
+ "capturedAt": "2026-09-25",
  "pageCount": 5708,
  "pages": {
   "/404": {
@@ -2025,7 +2025,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "de0d864f584f",
+   "schemaHash": "867056be7ee6",
    "ogHash": "2f50e2f0ddd2",
    "sitemap": true,
    "robots": "index, follow"
@@ -2131,7 +2131,7 @@
   },
   "/in/afcat/test/numerical-ability-sectional-1": {
    "title": "AFCAT Numerical Ability Mock Test 1: Free Practice",
-   "description": "Free AFCAT Numerical Ability Mock Test 1: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free AFCAT Numerical Ability Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "AFCAT Numerical Ability Mock Test 1"
    ],
@@ -2144,10 +2144,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "958cc2641406",
-   "ogHash": "364c13bf4baa",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "ed197a635d3a",
+   "ogHash": "f9be4bf5a6ee",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/afcat/test/numerical-ability-sectional-2/attempt": {
    "title": "AFCAT Numerical Ability Sectional Test 2 | TakeMockTest",
@@ -2165,7 +2165,7 @@
   },
   "/in/afcat/test/numerical-ability-sectional-2": {
    "title": "AFCAT Numerical Ability Mock Test 2: Free Practice",
-   "description": "Free AFCAT Numerical Ability Mock Test 2: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free AFCAT Numerical Ability Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "AFCAT Numerical Ability Mock Test 2"
    ],
@@ -2178,10 +2178,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "947e895687fc",
-   "ogHash": "dd76514e72db",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "62e11b4d21af",
+   "ogHash": "c968104bc246",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/afcat/test/reasoning-and-military-aptitude-sectional-1/attempt": {
    "title": "AFCAT Reasoning and Military Aptitude Sectional Test 1",
@@ -2199,7 +2199,7 @@
   },
   "/in/afcat/test/reasoning-and-military-aptitude-sectional-1": {
    "title": "AFCAT Reasoning and Military Aptitude Mock Test 1",
-   "description": "Free AFCAT Reasoning and Military Aptitude Mock Test 1: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free AFCAT Reasoning and Military Aptitude Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "AFCAT Reasoning and Military Aptitude Mock Test 1"
    ],
@@ -2212,10 +2212,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ff07a1eadb8a",
-   "ogHash": "1c3af9a208dd",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "06af269b3f83",
+   "ogHash": "1c01e9cb7c55",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/afcat/test/reasoning-and-military-aptitude-sectional-2/attempt": {
    "title": "AFCAT Reasoning and Military Aptitude Sectional Test 2",
@@ -2233,7 +2233,7 @@
   },
   "/in/afcat/test/reasoning-and-military-aptitude-sectional-2": {
    "title": "AFCAT Reasoning and Military Aptitude Mock Test 2",
-   "description": "Free AFCAT Reasoning and Military Aptitude Mock Test 2: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free AFCAT Reasoning and Military Aptitude Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "AFCAT Reasoning and Military Aptitude Mock Test 2"
    ],
@@ -2246,10 +2246,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5ce2016055de",
-   "ogHash": "67cb6241e5cd",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "0f5e432911b6",
+   "ogHash": "9f0d530d7373",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/afcat/test/verbal-ability-sectional-1/attempt": {
    "title": "AFCAT Verbal Ability Sectional Test 1 | TakeMockTest",
@@ -2267,7 +2267,7 @@
   },
   "/in/afcat/test/verbal-ability-sectional-1": {
    "title": "AFCAT Verbal Ability Mock Test 1: Free Practice",
-   "description": "Free AFCAT Verbal Ability Mock Test 1: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free AFCAT Verbal Ability Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "AFCAT Verbal Ability Mock Test 1"
    ],
@@ -2280,10 +2280,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "46a940f9abdc",
-   "ogHash": "678f9c5b96dc",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "227c7538bcaa",
+   "ogHash": "c2a6cc1c0572",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/afcat/test/verbal-ability-sectional-2/attempt": {
    "title": "AFCAT Verbal Ability Sectional Test 2 | TakeMockTest",
@@ -2301,7 +2301,7 @@
   },
   "/in/afcat/test/verbal-ability-sectional-2": {
    "title": "AFCAT Verbal Ability Mock Test 2: Free Practice",
-   "description": "Free AFCAT Verbal Ability Mock Test 2: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free AFCAT Verbal Ability Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "AFCAT Verbal Ability Mock Test 2"
    ],
@@ -2314,10 +2314,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "4bcdab8db557",
-   "ogHash": "45bada509f22",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "6043f50209d4",
+   "ogHash": "0a073b9a5662",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/afcat/test/verbal-numerical-and-reasoning-full-mock-1/attempt": {
    "title": "AFCAT Verbal, Numerical and Reasoning Full Mock Test 1",
@@ -2335,7 +2335,7 @@
   },
   "/in/afcat/test/verbal-numerical-and-reasoning-full-mock-1": {
    "title": "AFCAT Verbal, Numerical and Reasoning Full Mock Test 1",
-   "description": "Attempt AFCAT Verbal, Numerical and Reasoning Full Mock Test 1: 24 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt AFCAT Verbal, Numerical and Reasoning Full Mock Test 1: 36 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "AFCAT Verbal, Numerical and Reasoning Full Mock Test 1"
    ],
@@ -2351,8 +2351,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "80093e0446af",
-   "ogHash": "61f78c32daa1",
+   "schemaHash": "a5f5b979c7b9",
+   "ogHash": "474411ddc3c1",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -2372,7 +2372,7 @@
   },
   "/in/afcat/test/verbal-numerical-and-reasoning-full-mock-2": {
    "title": "AFCAT Verbal, Numerical and Reasoning Full Mock Test 2",
-   "description": "Attempt AFCAT Verbal, Numerical and Reasoning Full Mock Test 2: 24 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt AFCAT Verbal, Numerical and Reasoning Full Mock Test 2: 36 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "AFCAT Verbal, Numerical and Reasoning Full Mock Test 2"
    ],
@@ -2388,8 +2388,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2c50eea77f46",
-   "ogHash": "c5f922a863c1",
+   "schemaHash": "1ba7998912fa",
+   "ogHash": "be8ad607d6a9",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10563,12 +10563,12 @@
   },
   "/in/blog/is-c-the-most-common-answer": {
    "title": "Is C the Most Common Answer? We Counted 35,052 Questions",
-   "description": "The folklore says pick C when stuck. Across 35,172 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
+   "description": "The folklore says pick C when stuck. Across 35,196 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
    "h1": [
     "Is C the Most Common Answer? We Counted 35,052 Questions"
    ],
    "h2Count": 12,
-   "h2Hash": "1eaf3390e259",
+   "h2Hash": "c56171aaf1c6",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10578,8 +10578,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "9745559aefd8",
-   "ogHash": "13aabc4ab2fd",
+   "schemaHash": "d021885a3107",
+   "ogHash": "15c9ba76c389",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10739,12 +10739,12 @@
   },
   "/in/blog/only-one-question-in-seven-is-hard": {
    "title": "Only One Question in Seven Is Hard | TakeMockTest",
-   "description": "Across the 36,465 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
+   "description": "Across the 36,489 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
    "h1": [
     "Only One Question in Seven Is Hard"
    ],
    "h2Count": 12,
-   "h2Hash": "6e17076fb909",
+   "h2Hash": "490705cc66ee",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10754,14 +10754,14 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "d1c402ea553c",
-   "ogHash": "4cdd03a44940",
+   "schemaHash": "61efb539edd8",
+   "ogHash": "47af7630ea41",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,699 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,701 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10776,8 +10776,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "03ae3a940f49",
-   "ogHash": "0b8ac8c3320e",
+   "schemaHash": "6c78a3687fa7",
+   "ogHash": "673082c5c757",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60417,7 +60417,7 @@
   },
   "/in/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "257 free mensuration questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "258 free mensuration questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
@@ -60433,8 +60433,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "848a5b838127",
-   "ogHash": "6e33bd00457e",
+   "schemaHash": "005fd70cac6d",
+   "ogHash": "9eefa5b10b2f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60491,7 +60491,7 @@
   },
   "/in/practice/number-system": {
    "title": "Number System Questions with Answers 2026 | TakeMockTest",
-   "description": "162 free number system questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "163 free number system questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number System Questions with Answers"
    ],
@@ -60507,8 +60507,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ca1dedb8e68f",
-   "ogHash": "7011b5784ea8",
+   "schemaHash": "bdf537319251",
+   "ogHash": "787a71329b34",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -61217,7 +61217,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,699 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,701 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -61233,7 +61233,7 @@
     "Question"
    ],
    "schemaHash": "7094ac78a26b",
-   "ogHash": "4fc39070b566",
+   "ogHash": "bd29fd8fd506",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96893,7 +96893,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "57f132d81c62",
+   "schemaHash": "d98289f5abef",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -99155,7 +99155,7 @@
   },
   "/ng/practice/mensuration": {
    "title": "Mensuration Questions with Answers 2026 | TakeMockTest",
-   "description": "257 free mensuration questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "258 free mensuration questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Mensuration Questions with Answers"
    ],
@@ -99171,8 +99171,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0c720c8984d3",
-   "ogHash": "9bc3aabedac9",
+   "schemaHash": "70407fde3b8f",
+   "ogHash": "27e5acfcacf7",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99229,7 +99229,7 @@
   },
   "/ng/practice/number-system": {
    "title": "Number System Questions with Answers 2026 | TakeMockTest",
-   "description": "162 free number system questions with answers and explanations, pooled from 41 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "163 free number system questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number System Questions with Answers"
    ],
@@ -99245,8 +99245,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c4252e65e38b",
-   "ogHash": "0c179e81cf29",
+   "schemaHash": "35f3073f3125",
+   "ogHash": "192a6e9d69fe",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99955,7 +99955,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,699 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,701 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -99971,7 +99971,7 @@
     "Question"
    ],
    "schemaHash": "247b1b4780c8",
-   "ogHash": "aa81e38af739",
+   "ogHash": "f5002b7292a4",
    "sitemap": true,
    "robots": "index, follow"
   },
