@@ -593,7 +593,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('nda-general-ability-test-english-combined-') ? 24
     : file.startsWith('cds-elementary-mathematics-combined-') ? 36
     : file.startsWith('cds-english-combined-') ? 24
-    : file.startsWith('afcat-verbal-numerical-and-reasoning-combined-') ? 24
+    : file.startsWith('afcat-verbal-numerical-and-reasoning-combined-') ? 36
     : file.startsWith('territorial-army-reasoning-and-english-combined-') ? 21
     : file.startsWith('inet-english-and-reasoning-numerical-ability-combined-') ? 24
     : file.startsWith('agniveer-vayu-english-and-mathematics-combined-') ? 27

@@ -4646,13 +4646,13 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('cds/vocabulary-and-comprehension-sectional')
     ? 12
     : testId.includes('afcat/verbal-numerical-and-reasoning-full-mock')
-    ? 24
+    ? 36
     : testId.includes('afcat/verbal-ability-sectional')
-    ? 8
+    ? 12
     : testId.includes('afcat/numerical-ability-sectional')
-    ? 8
+    ? 12
     : testId.includes('afcat/reasoning-and-military-aptitude-sectional')
-    ? 8
+    ? 12
     : testId.includes('territorial-army/reasoning-and-english-full-mock')
     ? 21
     : testId.includes('territorial-army/reasoning-sectional')
@@ -6637,9 +6637,9 @@ const cdsEnglishLayout = [
   { section: 'Vocabulary and Comprehension', count: 12 },
 ];
 const afcatVerbalNumericalAndReasoningLayout = [
-  { section: 'Verbal Ability', count: 8 },
-  { section: 'Numerical Ability', count: 8 },
-  { section: 'Reasoning and Military Aptitude', count: 8 },
+  { section: 'Verbal Ability', count: 12 },
+  { section: 'Numerical Ability', count: 12 },
+  { section: 'Reasoning and Military Aptitude', count: 12 },
 ];
 const territorialArmyReasoningAndEnglishLayout = [
   { section: 'Reasoning', count: 12 },
