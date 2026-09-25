@@ -10160,7 +10160,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "706df6aaaa2c",
+   "schemaHash": "6ce4dbae56e0",
    "ogHash": "6d8b1ce9c96f",
    "sitemap": true,
    "robots": "index, follow"
@@ -10255,7 +10255,7 @@
   },
   "/in/blog/general-awareness-weightage": {
    "title": "General Awareness Weightage: How Much of the Paper It Really Is",
-   "description": "Of the 146 official patterns published here, 46 carry a general awareness section. The middle one is worth 20% of the marks, and the heaviest is over 41%.",
+   "description": "Of the 148 official patterns published here, 48 carry a general awareness section. The middle one is worth 20% of the marks, and the heaviest is over 41%.",
    "h1": [
     "General Awareness Weightage: How Much of the Paper It Really Is"
    ],
@@ -10270,8 +10270,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "bcb687a39d0e",
-   "ogHash": "ea6d746f2730",
+   "schemaHash": "10da9de8a20d",
+   "ogHash": "efbd2f3183e4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10299,7 +10299,7 @@
   },
   "/in/blog/how-long-you-will-actually-be-sitting-there": {
    "title": "How Long You Will Actually Be Sitting There | TakeMockTest",
-   "description": "Across 160 official papers here a sitting runs from 25 minutes to 190. Most people train at the length of their first paper, not their deciding one.",
+   "description": "Across 162 official papers here a sitting runs from 25 minutes to 190. Most people train at the length of their first paper, not their deciding one.",
    "h1": [
     "How Long You Will Actually Be Sitting There"
    ],
@@ -10314,8 +10314,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "1515a2ee8a45",
-   "ogHash": "743a7e243186",
+   "schemaHash": "2fe9529f3501",
+   "ogHash": "73a132458882",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10343,7 +10343,7 @@
   },
   "/in/blog/how-much-time-per-question": {
    "title": "How Much Time Per Question Do You Actually Get?",
-   "description": "One minute a question is the median across 167 official exam patterns here, and it fits only 34. SSC and banking prelims give you 36 seconds.",
+   "description": "One minute a question is the median across 169 official exam patterns here, and it fits only 35. SSC and banking prelims give you 36 seconds.",
    "h1": [
     "How Much Time Per Question Do You Actually Get?"
    ],
@@ -10358,8 +10358,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "66bbab965df7",
-   "ogHash": "2f4241f6ebda",
+   "schemaHash": "6e54e3f13aa8",
+   "ogHash": "dee07c4be0a8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10651,7 +10651,7 @@
   },
   "/in/blog/most-exams-are-one-paper": {
    "title": "Most Exams Are One Paper. The Famous Ones Are Not.",
-   "description": "Of the 141 exams here with a confirmed pattern, 118 are a single paper. The 23 that are not include almost every exam you have heard of.",
+   "description": "Of the 142 exams here with a confirmed pattern, 118 are a single paper. The 24 that are not include almost every exam you have heard of.",
    "h1": [
     "Most Exams Are One Paper. The Famous Ones Are Not."
    ],
@@ -10666,8 +10666,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "177057b8caea",
-   "ogHash": "a7dab065b6ab",
+   "schemaHash": "c4a5ee9b1852",
+   "ogHash": "ad316e18af59",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -11443,12 +11443,12 @@
   },
   "/in/blog/what-one-question-is-worth": {
    "title": "A Score Means Nothing Until You Know What a Question Is Worth",
-   "description": "Across 168 official patterns here a question is worth anywhere from 0.5 to 5 marks. The same raw score can mean 38 right answers or 150.",
+   "description": "Across 170 official patterns here a question is worth anywhere from 0.5 to 5 marks. The same raw score can mean 38 right answers or 150.",
    "h1": [
     "A Score Means Nothing Until You Know What a Question Is Worth"
    ],
    "h2Count": 12,
-   "h2Hash": "69c56d15c139",
+   "h2Hash": "ce24f512a982",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -11458,8 +11458,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "e42393db0801",
-   "ogHash": "a45470bb6938",
+   "schemaHash": "3893aa129f4b",
+   "ogHash": "5b3a8dd0e9fc",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -80263,27 +80263,30 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "4c1a7ef28a62",
+   "schemaHash": "72e6aab47a6c",
    "ogHash": "21a6ea2e112a",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/ssc-chsl/exam-pattern": {
    "title": "SSC CHSL Exam Pattern 2026: Marks &amp; Duration | TakeMockTest",
-   "description": "SSC CHSL exam pattern: sections, marks, duration, and negative marking explained.",
+   "description": "SSC CHSL exam pattern: 100 questions, 200 marks, 60 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
    "h1": [
     "SSC CHSL Exam Pattern"
    ],
-   "h2Count": 6,
-   "h2Hash": "ac6275fa402d",
+   "h2Count": 7,
+   "h2Hash": "ac24acf17d1c",
    "schemaTypes": [
+    "Answer",
     "BreadcrumbList",
-    "ListItem"
+    "FAQPage",
+    "ListItem",
+    "Question"
    ],
-   "schemaHash": "676e03dca9e7",
-   "ogHash": "4a021dab10e3",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "31ed7eda3988",
+   "ogHash": "e750fdcd9c42",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/ssc-chsl/mock-test": {
    "title": "SSC CHSL Mock Test 2026, Practice Free Test Series",
@@ -80410,7 +80413,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "2122c8aad794",
+   "schemaHash": "398d29aa5cc2",
    "ogHash": "d09bf86381d8",
    "sitemap": true,
    "robots": "index, follow"
@@ -80498,7 +80501,7 @@
    "robots": "noindex, follow"
   },
   "/in/ssc-chsl/test/tier-1-full-mock-1": {
-   "title": "SSC CHSL Tier 1 Full Mock Test 1 (2025): Free Online Test",
+   "title": "SSC CHSL Tier 1 Full Mock Test 1 (2026): Free Online Test",
    "description": "Attempt SSC CHSL Tier 1 Full Mock Test 1: 100 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "SSC CHSL Tier 1 Full Mock Test 1"
@@ -80515,8 +80518,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "47ea36541420",
-   "ogHash": "ea929315069a",
+   "schemaHash": "1b209d582dab",
+   "ogHash": "9950798831b8",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -80535,7 +80538,7 @@
    "robots": "noindex, follow"
   },
   "/in/ssc-chsl/test/tier-1-full-mock-2": {
-   "title": "SSC CHSL Tier 1 Full Mock Test 2 (2025): Free Online Test",
+   "title": "SSC CHSL Tier 1 Full Mock Test 2 (2026): Free Online Test",
    "description": "Attempt SSC CHSL Tier 1 Full Mock Test 2: 100 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "SSC CHSL Tier 1 Full Mock Test 2"
@@ -80552,8 +80555,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "9f29ad87a040",
-   "ogHash": "6889141f7428",
+   "schemaHash": "2b55d4bec6d8",
+   "ogHash": "c99b47ee5c30",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -81272,8 +81275,8 @@
    "robots": "noindex, follow"
   },
   "/in/ssc-chsl": {
-   "title": "SSC CHSL: Syllabus, Eligibility &amp; Practice | TakeMockTest",
-   "description": "SSC CHSL syllabus, eligibility and selection process, with free practice for every section.",
+   "title": "SSC CHSL: Exam Pattern, Syllabus &amp; Eligibility",
+   "description": "Verified SSC CHSL exam pattern, timing, marks and negative marking, plus syllabus and eligibility.",
    "h1": [
     "SSC CHSL"
    ],
@@ -81286,8 +81289,8 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "c6956ff84ad4",
-   "ogHash": "f4458fa8a4a3",
+   "schemaHash": "2fce9bb822e8",
+   "ogHash": "8d3ba6f79b46",
    "sitemap": true,
    "robots": "index, follow"
   },
