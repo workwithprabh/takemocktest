@@ -135,7 +135,7 @@ fully objective Part A papers that can be.
 
 ## Standing work on exams that are already live
 
-1. **Clear `review-pending` patterns.** 32 products carry at least one review-pending stage,
+1. **Clear `review-pending` patterns.** 49 products carry 51 review-pending stages,
    whose exam-pattern pages are `noindex` and excluded from the sitemap. This is the Hard
    Research Gate in `TAKEMOCKTEST_DEVELOPMENT_OPERATING_MODEL.md` §1 and needs an
    unrestricted network — most of the recent ones are blocked because the exam body's own
