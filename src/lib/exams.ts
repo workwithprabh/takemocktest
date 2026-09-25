@@ -288,7 +288,8 @@ const IBPS_PO_2026_NOTICE =
   'https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf';
 const RRB_NTPC_2026_NOTICE =
   'https://www.rrbchennai.gov.in/downloads/CEN-07-2025-NTPC-UnderGraduate-English.pdf';
-const SSC_CHSL_OFFICIAL_PAGE = 'https://ssc.gov.in/for-candidates/cgl-exam/s40d16nackd16h0';
+const SSC_CHSL_2026_NOTICE =
+  'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2026.pdf';
 const IBPS_CLERK_2026_NOTICE =
   'https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf';
 const RRB_GROUP_D_2025_NOTICE = 'https://www.rrbcdg.gov.in/uploads/2025/09-LVL1/092025-CEN.pdf';
@@ -2073,8 +2074,8 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         id: 'tier-1',
         name: 'Tier 1',
         pattern: {
-          status: 'review-pending',
-          cycle: '2025',
+          status: 'official',
+          cycle: '2026',
           sections: [
             'General Intelligence',
             'General Awareness',
@@ -2085,9 +2086,17 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
           totalMarks: 200,
           duration: 60,
           negativeMarking: 0.5,
-          note: 'Timing behaviour is unresolved and is not asserted here. This record carried a single composite 60-minute window on the 2025 cycle. SSC CGL Tier 1, which is the same shape of paper at 100 questions for 200 marks in 60 minutes with the same four subjects, moved to a 15-minute timer per subject for 2026, and that change is recorded on this site against the CGL 2026 notice. Current secondary reporting says CHSL did the same. This site has not read the CHSL 2026 notice directly, so neither timing model is published as fact until it can.',
-          sourceUrl: SSC_CHSL_OFFICIAL_PAGE,
-          checkedOn: '4 August 2026',
+          timerNote: 'Each subject has its own 15-minute sectional timer. A section closes automatically when its time ends, and unused time does not carry into another subject.',
+          note: 'The official 2026 notice sets four 25-question subjects worth 50 marks each. Tier 1 is objective multiple choice, with 0.50 marks deducted for every wrong answer.',
+          sectionBreakdown: [
+            { name: 'General Intelligence', questions: 25, marks: 50, duration: 15 },
+            { name: 'General Awareness', questions: 25, marks: 50, duration: 15 },
+            { name: 'Quantitative Aptitude', questions: 25, marks: 50, duration: 15 },
+            { name: 'English Language', questions: 25, marks: 50, duration: 15 },
+          ],
+          sectionDurationSource: 'explicit',
+          sourceUrl: SSC_CHSL_2026_NOTICE,
+          checkedOn: '24 September 2026',
         },
         tests: [
           {
@@ -2096,9 +2105,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             kind: 'full-length',
             status: 'checked',
             duration: 60,
+            sectionDuration: 15,
             marksPerCorrect: 2,
             negativeMarking: 0.5,
-            checkedOn: '4 August 2026',
+            checkedOn: '24 September 2026',
           },
           {
             id: 'tier-1-general-intelligence-sectional-1',
@@ -2150,9 +2160,10 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             kind: 'full-length',
             status: 'checked',
             duration: 60,
+            sectionDuration: 15,
             marksPerCorrect: 2,
             negativeMarking: 0.5,
-            checkedOn: '22 August 2026',
+            checkedOn: '24 September 2026',
           },
           {
             id: 'tier-1-general-intelligence-sectional-2',
@@ -2217,15 +2228,15 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         id: 'tier-2',
         name: 'Tier 2',
         pattern: {
-          status: 'review-pending',
+          status: 'official',
           cycle: '2026',
           sections: ['Mathematical Abilities', 'Reasoning and General Intelligence', 'English Language and Comprehension', 'General Awareness', 'Computer Knowledge Test', 'Skill Test/Typing Test'],
           totalQuestions: 135,
           totalMarks: 405,
           duration: 135,
           negativeMarking: 1,
-          timerNote: 'Session 1 runs as three sequential, auto-submitting timed windows on one screen: Section 1 (Mathematical Abilities + Reasoning and General Intelligence) gets 60 minutes with free movement between its two modules, then Section 2 (English Language and Comprehension + General Awareness) gets a separate 60 minutes, then Section 3 Module I (Computer Knowledge Test) gets 15 minutes. There is no way back into a closed window. The Skill Test/Typing Test (Section 3 Module II) is a separate practical component held in Session 2.',
-          note: 'Confirmed via multiple independent current secondary sources (the official SSC portal is not reachable from this environment): Tier 2 runs in two sessions on the same day. Session 1 covers 135 objective MCQs for 405 marks (+3 per correct answer, -1 per wrong answer): Mathematical Abilities (30Q), Reasoning and General Intelligence (30Q), English Language and Comprehension (40Q), General Awareness (20Q), and Computer Knowledge Test (15Q). Session 2 is a practical Skill Test/Typing Test, not multiple-choice. This site\'s Tier 2 content covers Mathematical Abilities, Reasoning and General Intelligence, English Language and Comprehension, and Computer Knowledge Test only (115 of the 135 objective questions); General Awareness needs current, fact-checked content and is not yet built, and the Skill Test/Typing Test cannot be auto-graded as a multiple-choice mock.',
+          timerNote: 'Session 1 uses five sequential sectional timers: 30 minutes for Mathematical Abilities, 30 for Reasoning and General Intelligence, 40 for English Language and Comprehension, 20 for General Awareness, and 15 for Computer Knowledge. Session 2 contains the separate practical Skill Test/Typing Test.',
+          note: 'The official 2026 notice sets 135 objective questions for 405 marks in Session 1, with 3 marks per correct answer and a 1-mark penalty for every wrong answer. This site\'s Tier 2 content covers Mathematical Abilities, Reasoning and General Intelligence, English Language and Comprehension, and Computer Knowledge Test only (115 of the 135 objective questions). General Awareness is not yet built because it needs current, fact-checked content; the practical Skill Test/Typing Test is also excluded because it cannot be auto-graded as a multiple-choice mock.',
           sectionBreakdown: [
             { name: 'Mathematical Abilities', questions: 30, marks: 90, duration: 30 },
             { name: 'Reasoning and General Intelligence', questions: 30, marks: 90, duration: 30 },
@@ -2233,8 +2244,9 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             { name: 'General Awareness', questions: 20, marks: 60, duration: 20 },
             { name: 'Computer Knowledge Test', questions: 15, marks: 45, duration: 15 },
           ],
-          sourceUrl: SSC_CHSL_OFFICIAL_PAGE,
-          checkedOn: '27 August 2026',
+          sectionDurationSource: 'explicit',
+          sourceUrl: SSC_CHSL_2026_NOTICE,
+          checkedOn: '24 September 2026',
         },
         tests: [
           {
@@ -2244,14 +2256,15 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
             status: 'checked',
             duration: 115,
             timingGroups: [
-              { sections: ['Mathematical Abilities', 'Reasoning and General Intelligence'], duration: 60 },
+              { sections: ['Mathematical Abilities'], duration: 30 },
+              { sections: ['Reasoning and General Intelligence'], duration: 30 },
               { sections: ['English Language and Comprehension'], duration: 40 },
               { sections: ['Computer Knowledge Test'], duration: 15 },
             ],
             marksPerCorrect: 3,
             negativeMarking: 1,
-            scoringNote: 'This mock covers Mathematical Abilities, Reasoning and General Intelligence, English Language and Comprehension, and Computer Knowledge Test only (115 of the 135 objective questions). General Awareness (20Q/60 marks) is not included, since it needs current, fact-checked content rather than self-authored practice; the practical Skill Test/Typing Test is also excluded, since it is not an objective, machine-scored format. Section 1 (Mathematical Abilities + Reasoning and General Intelligence) shares the first 60 minutes with free navigation between its two modules and auto-submits as a group; English Language and Comprehension then gets a separate 40 minutes, and Computer Knowledge Test a final 15 minutes, matching the official 1-minute-per-question pace with no return to a closed section.',
-            checkedOn: '27 August 2026',
+            scoringNote: 'This mock covers Mathematical Abilities, Reasoning and General Intelligence, English Language and Comprehension, and Computer Knowledge Test only (115 of the 135 objective questions). General Awareness (20Q/60 marks) is not included, since it needs current, fact-checked content rather than self-authored practice; the practical Skill Test/Typing Test is also excluded, since it is not an objective, machine-scored format. The four included subjects use their official 30, 30, 40, and 15-minute sectional timers in sequence, with no return to a closed section.',
+            checkedOn: '24 September 2026',
           },
           {
             id: 'tier-2-mathematical-abilities-sectional-1',
