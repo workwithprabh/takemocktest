@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
 Query live Search Console data for takemocktest.com via a Google Cloud
-service account — no browser login, no manual CSV export. Requires the
-`google-auth` and `requests` packages (pip install google-auth requests).
+service account — no browser login, no manual CSV export. Needs the
+`google-auth` and `requests` packages, which requirements.txt at the repo
+root declares: pip install -r requirements.txt. A container that has not
+run that fails on the import rather than on the credential, which reads
+like a missing key and is not one.
 
 The credential is never read from a file inside this repo. Supply it one of
 two ways:
