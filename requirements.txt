@@ -1,0 +1,13 @@
+# Third-party packages the scripts/ Python tooling needs. Node's own
+# dependencies come from package.json; nothing installed these, so a fresh
+# container ran scripts/gsc-query.py straight into ModuleNotFoundError even
+# with a credential in place. Install with:
+#
+#   pip install -r requirements.txt
+#
+# google-auth and requests: scripts/gsc-query.py, which signs Search Console
+# API calls with a service-account key.
+google-auth>=2.30
+requests>=2.32
+# openpyxl: scripts/build-batch-pages-xlsx.py, which writes the batch sheets.
+openpyxl>=3.1
