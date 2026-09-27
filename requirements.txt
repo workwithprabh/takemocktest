@@ -9,5 +9,19 @@
 # API calls with a service-account key.
 google-auth>=2.30
 requests>=2.32
+# cffi: not imported by anything here, and needed anyway. google-auth declares
+# cryptography as a hard dependency, the container image already carries the
+# distro cryptography 41.0.7 at /usr/lib/python3/dist-packages, so pip counts
+# that requirement satisfied and never installs a wheel. The distro build loads
+# its Rust bindings through cffi, which the image does not have, so
+# `from google.oauth2 import service_account` dies with
+# `ModuleNotFoundError: No module named '_cffi_backend'` and a pyo3 panic.
+#
+# That import sits above gsc-query.py's credential check, so on a fresh
+# container the panic hides whether a credential is present at all. It is the
+# third distinct failure that looks like a missing Search Console key, after a
+# genuinely absent one and the missing google-auth this file was created for.
+# Found on 27 September 2026 while probing which environment holds the key.
+cffi>=1.16
 # openpyxl: scripts/build-batch-pages-xlsx.py, which writes the batch sheets.
 openpyxl>=3.1
