@@ -20,7 +20,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Formative assessment is embedded during learning and is used to guide improvement.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -44,7 +44,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Diagnostic assessment identifies prior knowledge, strengths and misconceptions before or early in instruction.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -57,9 +57,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "question": "Which classroom practice is most learner-centred?",
     "options": [
       "Having students compare alternative solutions and justify their reasoning",
-      "Delivering the same lecture without interaction",
-      "Giving marks without feedback",
-      "Preventing students from asking questions"
+      "Delivering a polished lecture that covers the syllabus without interruption",
+      "Setting the same practice exercise for every student regardless of need",
+      "Asking students to reproduce the worked example exactly as demonstrated"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -68,7 +68,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Learner-centred teaching actively engages students in reasoning, discussion and explanation.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -80,10 +80,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "Effective feedback is generally most useful when it is:",
     "options": [
-      "delayed indefinitely",
+      "delivered long after the work has been submitted",
       "specific and linked to the learning task",
-      "unrelated to criteria",
-      "limited to a score with no information"
+      "expressed as praise without reference to criteria",
+      "limited to a score with no accompanying information"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -92,7 +92,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Specific task-linked feedback helps learners understand how to improve.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -105,9 +105,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "question": "A course objective says learners should “evaluate competing explanations using evidence.” Which assessment best aligns with that objective?",
     "options": [
       "A task requiring comparison of explanations and justification with evidence",
-      "A list asking students to copy definitions",
-      "An attendance check",
-      "A question asking only for a date"
+      "A multiple-choice test covering the definitions of all the key terms involved",
+      "An assignment asking students to summarise one explanation in detail",
+      "A timed quiz on the dates at which each explanation was proposed"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -116,7 +116,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "The assessment should directly require evaluation and evidence-based justification.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -128,10 +128,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "In hypothesis testing, the null hypothesis usually represents:",
     "options": [
-      "the final proven theory",
-      "the sample mean only",
+      "the conclusion that the researcher hopes ultimately to demonstrate",
+      "the observed sample mean treated as a fixed value",
       "a specified default claim tested against an alternative",
-      "the research budget"
+      "the level of significance chosen before the test"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -140,7 +140,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "The null hypothesis is the formal baseline claim evaluated against an alternative.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -152,7 +152,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "Reliability of a measuring instrument primarily concerns its:",
     "options": [
-      "consistency of measurement",
+      "consistency of measurement on repetition",
       "ability to prove causation",
       "cost of purchase",
       "sample size alone"
@@ -164,7 +164,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Reliability concerns the consistency or repeatability of measurements.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -176,19 +176,19 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "A simple random sample is designed so that each eligible unit has:",
     "options": [
-      "a guaranteed place in the sample",
-      "selection based only on researcher preference",
-      "a known selection mechanism with equal chance under simple random sampling",
-      "selection after outcomes are known"
+      "a guaranteed place in the sample once the frame is drawn up",
+      "a chance of selection proportional to the size of its stratum",
+      "an equal probability of being selected",
+      "a chance of selection decided by the researcher’s judgement"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Simple random sampling uses random selection so eligible units have equal selection probability.",
+    "explanation": "Under simple random sampling every eligible unit in the frame has the same probability of being drawn; proportional and judgement-based selection describe other designs.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -200,10 +200,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "A strong correlation between two variables by itself establishes:",
     "options": [
-      "causation in every case",
+      "that one variable must cause the other",
       "association, not necessarily causation",
-      "that both variables are identical",
-      "that no third variable can matter"
+      "that the two variables measure the same thing",
+      "that no third variable could be involved"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -212,7 +212,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Correlation indicates association; causal inference needs additional design or evidence.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -236,7 +236,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Unattributed appropriation of another author’s wording is plagiarism.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -260,7 +260,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "The passage states that average test scores were similar.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -284,7 +284,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Tool A is described as producing steady weekly progress.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -296,10 +296,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "hard",
     "question": "A research group comparing two teaching tools found that average test scores were similar, but completion patterns differed. Tool A produced steady weekly progress; Tool B produced long periods of inactivity followed by bursts near deadlines. The researchers therefore argued that an outcome measure taken only at the end could miss meaningful differences in how learning unfolds over time. They proposed combining final outcomes with process measures rather than replacing one with the other. What limitation of end-only outcome measures does the passage identify?",
     "options": [
-      "They always lower test scores",
-      "They cannot be computed",
-      "They automatically prove causation",
-      "They can miss differences in the learning process over time"
+      "They always lower the measured test scores of weaker students",
+      "They cannot be computed without weekly data collection",
+      "They automatically establish a causal relationship",
+      "They can miss differences in how learning unfolds over time"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -308,7 +308,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Similar final scores concealed different progress patterns, so end-only measures can miss process differences.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -320,10 +320,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "A research group comparing two teaching tools found that average test scores were similar, but completion patterns differed. Tool A produced steady weekly progress; Tool B produced long periods of inactivity followed by bursts near deadlines. The researchers therefore argued that an outcome measure taken only at the end could miss meaningful differences in how learning unfolds over time. They proposed combining final outcomes with process measures rather than replacing one with the other. What did the researchers propose?",
     "options": [
-      "Discarding all final outcomes",
-      "Using only attendance",
+      "Discarding final outcomes in favour of process data",
+      "Using attendance records as the only outcome measure",
       "Combining final outcomes with process measures",
-      "Removing deadlines from all courses"
+      "Removing deadlines from the courses being compared"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -332,7 +332,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "They proposed combining end outcomes with process measures.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -345,9 +345,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "question": "A research group comparing two teaching tools found that average test scores were similar, but completion patterns differed. Tool A produced steady weekly progress; Tool B produced long periods of inactivity followed by bursts near deadlines. The researchers therefore argued that an outcome measure taken only at the end could miss meaningful differences in how learning unfolds over time. They proposed combining final outcomes with process measures rather than replacing one with the other. Which statement best summarizes the passage?",
     "options": [
       "Similar endpoints can conceal different trajectories",
-      "Final scores are never useful",
-      "Tool B is necessarily superior",
-      "Weekly data make outcomes irrelevant"
+      "Final scores are a more reliable guide than weekly data",
+      "Tool B is superior because its bursts show deeper engagement",
+      "Weekly progress data make final outcomes unnecessary"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -356,7 +356,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "The central point is that identical/similar endpoints may arise from different learning trajectories.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -368,10 +368,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "In a communication model, feedback most directly helps the sender determine:",
     "options": [
-      "the receiver’s salary",
-      "how the message was received or interpreted",
-      "the age of the communication channel",
-      "the physical weight of the message"
+      "which channel carried the message fastest",
+      "how the message was received and interpreted by the receiver",
+      "how much the message cost to transmit",
+      "whether the receiver holds a senior position"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -380,7 +380,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Feedback provides information about reception and interpretation.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -404,7 +404,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Semantic barriers arise from differences in meaning or interpretation of symbols and words.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -428,7 +428,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Facial expression conveys information without words.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -440,10 +440,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "Noise in communication refers broadly to:",
     "options": [
-      "only loud sound",
-      "only deliberate deception",
-      "only a network cable",
-      "anything that interferes with accurate transmission or interpretation"
+      "audible sound present in the physical environment surrounding the receiver",
+      "deliberate distortion introduced by the sender",
+      "a fault in the cable carrying the signal",
+      "anything that interferes with accurate transmission or reception"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -452,7 +452,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Communication noise includes physical, semantic and other interference.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -465,9 +465,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "question": "For a complex policy change that requires discussion and clarification, which channel feature is most valuable?",
     "options": [
       "capacity for timely two-way interaction",
-      "absence of any feedback",
-      "maximum ambiguity",
-      "one-way transmission only"
+      "the widest possible one-way distribution",
+      "a permanent written record and nothing else",
+      "the lowest cost per person reached"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -476,7 +476,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Rich two-way interaction supports questions, clarification and adjustment.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -500,7 +500,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "0.40x=72, so x=180.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -524,7 +524,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Total must be 75; known total=56, hence x=19.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -548,7 +548,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Five parts equal 45, so one part=9 and seven parts=63.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -572,7 +572,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Outcomes 2, 4 and 6 are favourable: 3/6=1/2.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -596,7 +596,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "23×2+1=47.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -620,7 +620,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "The universal rule applies to X.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -644,7 +644,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "By contraposition, failure of a necessary test means the device cannot satisfy the certification condition.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -668,7 +668,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "At least one=28+24−10=42; neither=8.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -692,7 +692,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "West→South→East.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -704,10 +704,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "hard",
     "question": "A study reports that departments with more meetings have higher productivity. Which evidence most weakens a causal interpretation?",
     "options": [
-      "Meetings are recorded on calendars",
-      "Some meetings last an hour",
-      "High-performing departments independently choose to hold more coordination meetings",
-      "Productivity can be measured monthly"
+      "Meetings are routinely recorded on shared departmental calendar systems",
+      "Some meetings in the study lasted longer than one hour",
+      "High-performing departments choose to hold more coordination meetings",
+      "Productivity in the study was measured on a monthly basis"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -716,7 +716,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Reverse selection by already high-performing departments offers an alternative explanation.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -740,7 +740,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "96+72+84+48+60=360.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -752,9 +752,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "A university help desk logged requests in one week: account access 96, network 72, software 84, hardware 48, and other 60. What percentage of all requests concerned account access?",
     "options": [
-      "20%",
-      "24%",
-      "30%",
+      "20.0%",
+      "24.0%",
+      "30.0%",
       "26.7%"
     ],
     "correctIndex": 3,
@@ -764,7 +764,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "96/360=26.666...%, about 26.7%.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -788,7 +788,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Hardware had 48, the smallest count.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -800,10 +800,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "A university help desk logged requests in one week: account access 96, network 72, software 84, hardware 48, and other 60. Network and software requests together formed what fraction of the total?",
     "options": [
-      "2/5",
+      "11/30",
       "13/30",
-      "7/15",
-      "1/2"
+      "17/45",
+      "12/25"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -812,7 +812,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "72+84=156; 156/360=13/30.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -836,7 +836,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Account access becomes 84 and other becomes 72; 84:72 simplifies to 7:6.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -860,7 +860,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "RAM normally loses its contents when power is removed and stores active working data.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -872,9 +872,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "In a web address, HTTPS primarily indicates that HTTP communication is protected using:",
     "options": [
-      "file compression only",
-      "a spreadsheet formula",
-      "an offline printer queue",
+      "compression of the transferred files only",
+      "a digital signature on the page content",
+      "an offline cache held by the browser",
       "transport-layer encryption such as TLS"
     ],
     "correctIndex": 3,
@@ -884,7 +884,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "HTTPS is HTTP carried over TLS, providing encryption and server authentication properties.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -896,10 +896,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "In email, BCC is used when a sender wants to:",
     "options": [
-      "hide specified recipient addresses from other recipients",
-      "increase attachment size",
-      "convert email into a webpage",
-      "disable subject lines"
+      "hide specified recipients from the other recipients",
+      "send the message automatically at a scheduled later time",
+      "request a delivery and read receipt",
+      "attach a copy of the message to a folder"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -908,7 +908,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "BCC recipients are not exposed in the visible recipient list to other recipients.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -920,10 +920,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "A URL is primarily used to:",
     "options": [
-      "measure CPU clock speed",
-      "identify the location/address of a resource on a network such as the web",
-      "encrypt a hard disk by itself",
-      "define a database primary key"
+      "measure the speed of the network connection in use",
+      "identify the location of a resource on a network such as the web",
+      "encrypt the contents of a web page in transit",
+      "store a user’s preferences between visits"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -932,7 +932,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "A Uniform Resource Locator identifies how/where a resource can be accessed.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -944,10 +944,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "Which statement about open-source software is generally correct?",
     "options": [
-      "It must always be free of any licence conditions",
-      "It cannot be sold",
-      "Its source code is permanently secret",
-      "Its source code is made available under a licence permitting specified use, study and modification"
+      "It must always be distributed free of any monetary charge whatsoever to users",
+      "It may not be sold or bundled into a commercial product of any kind",
+      "Its source code is released only to licensees who have paid a fee",
+      "Its source code is available under a licence permitting modification"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -956,7 +956,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Open-source licences make source available and grant specified freedoms subject to licence terms.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -968,10 +968,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "Sustainable development is commonly framed as meeting present needs without compromising:",
     "options": [
-      "all present economic activity",
-      "the existence of technology",
+      "the pace of present economic growth in any single sector",
+      "the continued development of new technologies",
       "the ability of future generations to meet their needs",
-      "the use of any natural resource"
+      "the use of any non-renewable natural resource at all"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -980,7 +980,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "The widely used definition explicitly includes intergenerational capacity.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -992,19 +992,19 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "Which gas is a major long-lived greenhouse gas released by fossil-fuel combustion?",
     "options": [
-      "Argon",
-      "Helium",
-      "Neon",
+      "Nitrogen",
+      "Oxygen",
+      "Water vapour",
       "Carbon dioxide"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Fossil-fuel combustion is a major anthropogenic source of CO2.",
+    "explanation": "Carbon dioxide is the major long-lived greenhouse gas from fossil-fuel combustion; water vapour is a greenhouse gas but is short-lived, while nitrogen and oxygen are not greenhouse gases.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1017,9 +1017,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "question": "A watershed is best described as:",
     "options": [
       "an area of land draining to a common outlet",
-      "only an underground aquifer",
-      "a single rainfall event",
-      "a seawater desalination plant"
+      "an underground layer that stores and yields water",
+      "the boundary line between two river basins",
+      "a structure built to divert water for irrigation"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1028,7 +1028,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "A watershed is the land area from which runoff drains to a shared outlet.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1040,10 +1040,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "Biodiversity includes diversity at which levels?",
     "options": [
-      "only species names",
-      "only minerals",
-      "only climate zones",
-      "genes, species and ecosystems"
+      "species and ecosystems only",
+      "genes and species only",
+      "ecosystems and landscapes only",
+      "genes, species and ecosystems together"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -1052,7 +1052,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Biodiversity is commonly described at genetic, species and ecosystem levels.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1064,10 +1064,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "Environmental impact assessment is primarily intended to:",
     "options": [
-      "identify and evaluate likely environmental effects before major project decisions",
-      "guarantee that every project is approved",
-      "replace all engineering design",
-      "measure only financial profit"
+      "identify and evaluate the likely environmental effects before a decision",
+      "guarantee that a project will ultimately receive regulatory clearance",
+      "replace the detailed engineering design work for the project",
+      "measure the financial return the project is expected to earn"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1076,7 +1076,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "EIA informs decisions by assessing probable environmental consequences in advance.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1088,10 +1088,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "The University Grants Commission in India is principally associated with:",
     "options": [
-      "conducting all school board examinations",
+      "conducting the national eligibility test for school teacher recruitment",
       "coordination and maintenance of standards in university education",
-      "licensing all medical practitioners",
-      "running municipal elections"
+      "regulating the practice of medicine and medical colleges",
+      "accrediting institutions and awarding them a grade"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1100,7 +1100,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "UGC is a statutory higher-education body concerned with coordination and standards in university education.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1112,10 +1112,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "easy",
     "question": "NAAC is primarily known for:",
     "options": [
-      "issuing passports",
-      "regulating stock exchanges",
-      "conducting civil-service recruitment",
-      "assessment and accreditation of higher-education institutions"
+      "planning and the coordinated development of technical education",
+      "disbursing maintenance grants to central universities",
+      "conducting entrance examinations for central universities",
+      "the assessment and accreditation of higher-education institutions"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -1124,7 +1124,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "NAAC conducts assessment and accreditation in higher education.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1136,9 +1136,9 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "SWAYAM is an Indian initiative primarily associated with:",
     "options": [
-      "agricultural crop insurance only",
-      "airport navigation",
-      "judicial appointments",
+      "a national scholarship portal for students",
+      "a digital repository of doctoral theses",
+      "a credit-transfer bank for degree students",
       "online courses and digital learning"
     ],
     "correctIndex": 3,
@@ -1148,7 +1148,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "SWAYAM is a national online-learning/MOOC platform.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1160,10 +1160,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "medium",
     "question": "The Academic Bank of Credits concept is designed to support:",
     "options": [
-      "digital accumulation and transfer of eligible academic credits",
-      "storage of university cash reserves",
-      "automatic award of degrees without study",
-      "replacement of all examinations with attendance"
+      "digital accumulation and transfer of academic credits",
+      "central storage of university financial reserves",
+      "automatic award of a degree on completing attendance",
+      "a common entrance examination for all universities"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1172,7 +1172,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "ABC facilitates accumulation and transfer of eligible academic credits within the regulatory framework.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
@@ -1184,10 +1184,10 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "difficulty": "hard",
     "question": "Which distinction is most accurate?",
     "options": [
-      "Accreditation and ranking are always identical",
-      "Accreditation evaluates institutional/program quality against standards, while ranking orders institutions using a specified methodology",
-      "Ranking is a legal degree-awarding process",
-      "Accreditation simply counts student age"
+      "Accreditation and ranking use the same criteria and produce the same result",
+      "Accreditation judges quality against standards; ranking orders institutions",
+      "Ranking confers the legal authority to award degrees to an institution",
+      "Accreditation applies only to private institutions, ranking only to public"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1196,7 +1196,7 @@ export const UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1: Question[] 
     "explanation": "Accreditation and ranking serve different functions: standards-based quality evaluation versus comparative ordering.",
     "source": {
       "kind": "original",
-      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Computer Science and Applications (087)",
+      "reference": "NTA UGC-NET June 2026 + UGC syllabus, Paper I (Teaching & Research Aptitude), common to all subjects",
       "url": "https://www.ugcnetonline.in/syllabus-new.php",
       "checkedOn": "2026-09-01"
     }
