@@ -10563,12 +10563,12 @@
   },
   "/in/blog/is-c-the-most-common-answer": {
    "title": "Is C the Most Common Answer? We Counted 35,052 Questions",
-   "description": "The folklore says pick C when stuck. Across 35,302 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
+   "description": "The folklore says pick C when stuck. Across 35,394 four-option questions here, C comes third, and all four positions sit within 1.1 points.",
    "h1": [
     "Is C the Most Common Answer? We Counted 35,052 Questions"
    ],
    "h2Count": 12,
-   "h2Hash": "7c2a22eff217",
+   "h2Hash": "29a8e53b6f09",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10578,8 +10578,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "4177bdcca1e4",
-   "ogHash": "d71dd28aedcc",
+   "schemaHash": "64fb216fe01e",
+   "ogHash": "806a5421e538",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10739,12 +10739,12 @@
   },
   "/in/blog/only-one-question-in-seven-is-hard": {
    "title": "Only One Question in Seven Is Hard | TakeMockTest",
-   "description": "Across the 36,595 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
+   "description": "Across the 36,687 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
    "h1": [
     "Only One Question in Seven Is Hard"
    ],
    "h2Count": 12,
-   "h2Hash": "6b07d7a09a5b",
+   "h2Hash": "36d6be7bd5e5",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10754,14 +10754,14 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "19b040dd7a5a",
-   "ogHash": "def744326888",
+   "schemaHash": "0aef6286de7b",
+   "ogHash": "668aa1728be7",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,716 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,741 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10776,8 +10776,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "2df57b25d148",
-   "ogHash": "c16afb7948fe",
+   "schemaHash": "0e59bc0543aa",
+   "ogHash": "e3c3d5e1b42f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -48898,7 +48898,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "8879f3c56568",
+   "schemaHash": "f132d8771336",
    "ogHash": "cfe345e2253f",
    "sitemap": true,
    "robots": "index, follow"
@@ -49004,7 +49004,7 @@
   },
   "/in/mh-cet-law/test/english-language-sectional-1": {
    "title": "MH CET Law English Language Mock Test 1: Free Practice",
-   "description": "Free MH CET Law English Language Mock Test 1: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law English Language Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law English Language Mock Test 1"
    ],
@@ -49017,10 +49017,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a4645e94460b",
-   "ogHash": "f8c97687b177",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "5f04e3d01307",
+   "ogHash": "b2892d6496be",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law/test/english-language-sectional-2/attempt": {
    "title": "MH CET Law English Language Sectional Test 2 | TakeMockTest",
@@ -49038,7 +49038,7 @@
   },
   "/in/mh-cet-law/test/english-language-sectional-2": {
    "title": "MH CET Law English Language Mock Test 2: Free Practice",
-   "description": "Free MH CET Law English Language Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law English Language Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law English Language Mock Test 2"
    ],
@@ -49051,10 +49051,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "affa9e5dac27",
-   "ogHash": "8b6141852882",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "ef61965d9001",
+   "ogHash": "0482eee37d69",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law/test/legal-aptitude-and-legal-reasoning-sectional-1/attempt": {
    "title": "MH CET Law Legal Aptitude and Legal Reasoning Sectional Test 1",
@@ -49072,7 +49072,7 @@
   },
   "/in/mh-cet-law/test/legal-aptitude-and-legal-reasoning-sectional-1": {
    "title": "MH CET Law Legal Aptitude and Legal Reasoning Mock Test 1",
-   "description": "Free MH CET Law Legal Aptitude and Legal Reasoning Mock Test 1: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law Legal Aptitude and Legal Reasoning Mock Test 1: 16 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law Legal Aptitude and Legal Reasoning Mock Test 1"
    ],
@@ -49085,10 +49085,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "7afe0c583fcf",
-   "ogHash": "9859302b6519",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "b341849183dc",
+   "ogHash": "46ee49c39ee9",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law/test/legal-aptitude-and-legal-reasoning-sectional-2/attempt": {
    "title": "MH CET Law Legal Aptitude and Legal Reasoning Sectional Test 2",
@@ -49106,7 +49106,7 @@
   },
   "/in/mh-cet-law/test/legal-aptitude-and-legal-reasoning-sectional-2": {
    "title": "MH CET Law Legal Aptitude and Legal Reasoning Mock Test 2",
-   "description": "Free MH CET Law Legal Aptitude and Legal Reasoning Mock Test 2: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law Legal Aptitude and Legal Reasoning Mock Test 2: 16 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law Legal Aptitude and Legal Reasoning Mock Test 2"
    ],
@@ -49119,10 +49119,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "07188a2e6564",
-   "ogHash": "cdf5b9f124b0",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "0ccfbeccdf7c",
+   "ogHash": "c895fda76c0b",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law/test/legal-logical-english-mathematics-full-mock-1/attempt": {
    "title": "MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 1",
@@ -49140,12 +49140,12 @@
   },
   "/in/mh-cet-law/test/legal-logical-english-mathematics-full-mock-1": {
    "title": "MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 1",
-   "description": "Attempt MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 1: 24 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 1: 48 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 1"
    ],
-   "h2Count": 11,
-   "h2Hash": "aa71532f49d7",
+   "h2Count": 12,
+   "h2Hash": "a0afdbeea3c1",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -49156,8 +49156,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "54c410d460b0",
-   "ogHash": "c15258e4a0b7",
+   "schemaHash": "18a4d28ffb98",
+   "ogHash": "a43951c8526c",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49177,12 +49177,12 @@
   },
   "/in/mh-cet-law/test/legal-logical-english-mathematics-full-mock-2": {
    "title": "MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 2",
-   "description": "Attempt MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 2: 24 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 2: 48 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "MH CET Law Legal Aptitude, Logical Reasoning, English and Mathematics Full Mock Test 2"
    ],
-   "h2Count": 11,
-   "h2Hash": "aa71532f49d7",
+   "h2Count": 12,
+   "h2Hash": "a0afdbeea3c1",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -49193,8 +49193,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fbd302a46a37",
-   "ogHash": "9c32afb6eed2",
+   "schemaHash": "b4de8416b915",
+   "ogHash": "49830202d8ab",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49214,12 +49214,12 @@
   },
   "/in/mh-cet-law/test/logical-and-analytical-reasoning-sectional-1": {
    "title": "MH CET Law Logical and Analytical Reasoning Mock Test 1",
-   "description": "Free MH CET Law Logical and Analytical Reasoning Mock Test 1: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law Logical and Analytical Reasoning Mock Test 1: 16 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law Logical and Analytical Reasoning Mock Test 1"
    ],
-   "h2Count": 11,
-   "h2Hash": "ea91b7a22d14",
+   "h2Count": 12,
+   "h2Hash": "cf61b3ccb53f",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -49227,10 +49227,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "9a5f89a17e23",
-   "ogHash": "f4d016701af0",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "2fecbbfac2c5",
+   "ogHash": "8acdcf61800e",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law/test/logical-and-analytical-reasoning-sectional-2/attempt": {
    "title": "MH CET Law Logical and Analytical Reasoning Sectional Test 2",
@@ -49248,12 +49248,12 @@
   },
   "/in/mh-cet-law/test/logical-and-analytical-reasoning-sectional-2": {
    "title": "MH CET Law Logical and Analytical Reasoning Mock Test 2",
-   "description": "Free MH CET Law Logical and Analytical Reasoning Mock Test 2: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law Logical and Analytical Reasoning Mock Test 2: 16 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law Logical and Analytical Reasoning Mock Test 2"
    ],
-   "h2Count": 11,
-   "h2Hash": "ea91b7a22d14",
+   "h2Count": 12,
+   "h2Hash": "cf61b3ccb53f",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -49261,10 +49261,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "bc3162b756b2",
-   "ogHash": "ff749b21716a",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "e88adc9bf3cd",
+   "ogHash": "15d10620d32d",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law/test/mathematics-aptitude-sectional-1/attempt": {
    "title": "MH CET Law Mathematics Aptitude Sectional Test 1",
@@ -49282,7 +49282,7 @@
   },
   "/in/mh-cet-law/test/mathematics-aptitude-sectional-1": {
    "title": "MH CET Law Mathematics Aptitude Mock Test 1: Free Practice",
-   "description": "Free MH CET Law Mathematics Aptitude Mock Test 1: 2 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law Mathematics Aptitude Mock Test 1: 4 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law Mathematics Aptitude Mock Test 1"
    ],
@@ -49295,8 +49295,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "c4e9de99b393",
-   "ogHash": "4daf20d04153",
+   "schemaHash": "a8b5fe9af671",
+   "ogHash": "f9452a71e77c",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -49316,7 +49316,7 @@
   },
   "/in/mh-cet-law/test/mathematics-aptitude-sectional-2": {
    "title": "MH CET Law Mathematics Aptitude Mock Test 2: Free Practice",
-   "description": "Free MH CET Law Mathematics Aptitude Mock Test 2: 2 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law Mathematics Aptitude Mock Test 2: 4 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law Mathematics Aptitude Mock Test 2"
    ],
@@ -49329,8 +49329,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a20eff2dc0db",
-   "ogHash": "ea23de5a6d8c",
+   "schemaHash": "9c2542145c0e",
+   "ogHash": "22ffff6e2646",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -49438,7 +49438,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "e952a710701e",
+   "schemaHash": "17c92c44586d",
    "ogHash": "1b82ba6ee51c",
    "sitemap": true,
    "robots": "index, follow"
@@ -49544,7 +49544,7 @@
   },
   "/in/mh-cet-law-3-year/test/english-sectional-1": {
    "title": "MH CET Law (3-Year LLB) English Mock Test 1: Free Practice",
-   "description": "Free MH CET Law (3-Year LLB) English Mock Test 1: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law (3-Year LLB) English Mock Test 1: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law (3-Year LLB) English Mock Test 1"
    ],
@@ -49557,8 +49557,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5481d4679476",
-   "ogHash": "6dc236962ce9",
+   "schemaHash": "b8178d3b1e43",
+   "ogHash": "a0c642a1a9d2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49578,7 +49578,7 @@
   },
   "/in/mh-cet-law-3-year/test/english-sectional-2": {
    "title": "MH CET Law (3-Year LLB) English Mock Test 2: Free Practice",
-   "description": "Free MH CET Law (3-Year LLB) English Mock Test 2: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law (3-Year LLB) English Mock Test 2: 20 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law (3-Year LLB) English Mock Test 2"
    ],
@@ -49591,8 +49591,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "4aac7a144641",
-   "ogHash": "4e83c9aff637",
+   "schemaHash": "6c56ea1102ab",
+   "ogHash": "7d7e49e1ae12",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49612,7 +49612,7 @@
   },
   "/in/mh-cet-law-3-year/test/legal-aptitude-and-legal-reasoning-sectional-1": {
    "title": "MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 1",
-   "description": "Free MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 1: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 1"
    ],
@@ -49625,10 +49625,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b6d8dfff3896",
-   "ogHash": "398d8ae2e265",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "dfad57b2770f",
+   "ogHash": "fb8f534a45b8",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law-3-year/test/legal-aptitude-and-legal-reasoning-sectional-2/attempt": {
    "title": "MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Sectional Test 2",
@@ -49646,7 +49646,7 @@
   },
   "/in/mh-cet-law-3-year/test/legal-aptitude-and-legal-reasoning-sectional-2": {
    "title": "MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 2",
-   "description": "Free MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law (3-Year LLB) Legal Aptitude and Legal Reasoning Mock Test 2"
    ],
@@ -49659,10 +49659,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fd7746ce30e4",
-   "ogHash": "1e0249be0119",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "1293815263ab",
+   "ogHash": "05faa660b40c",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law-3-year/test/legal-logical-english-full-mock-1/attempt": {
    "title": "MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 1",
@@ -49680,12 +49680,12 @@
   },
   "/in/mh-cet-law-3-year/test/legal-logical-english-full-mock-1": {
    "title": "MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 1",
-   "description": "Attempt MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 1: 22 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 1: 44 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 1"
    ],
-   "h2Count": 11,
-   "h2Hash": "46d2a76c5410",
+   "h2Count": 12,
+   "h2Hash": "b68dac462a8e",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -49696,8 +49696,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "4cb594a3a092",
-   "ogHash": "7bd8f3c6187d",
+   "schemaHash": "eab6f7a8f333",
+   "ogHash": "b5ca2b03e4f0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49717,12 +49717,12 @@
   },
   "/in/mh-cet-law-3-year/test/legal-logical-english-full-mock-2": {
    "title": "MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 2",
-   "description": "Attempt MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 2: 22 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 2: 44 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "MH CET Law (3-Year LLB) Legal Aptitude, Logical Reasoning and English Full Mock Test 2"
    ],
-   "h2Count": 11,
-   "h2Hash": "46d2a76c5410",
+   "h2Count": 12,
+   "h2Hash": "b68dac462a8e",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -49733,8 +49733,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d0f0154a024e",
-   "ogHash": "ac391fccf949",
+   "schemaHash": "8862173124b7",
+   "ogHash": "4f1472baeecc",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -49754,12 +49754,12 @@
   },
   "/in/mh-cet-law-3-year/test/logical-and-analytical-reasoning-sectional-1": {
    "title": "MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 1",
-   "description": "Free MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 1: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 1"
    ],
-   "h2Count": 11,
-   "h2Hash": "c1f93a04a9e8",
+   "h2Count": 12,
+   "h2Hash": "cb5f2da18061",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -49767,10 +49767,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e9c11cc5dbe9",
-   "ogHash": "227ae98b9603",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "a26e2fe0444d",
+   "ogHash": "057fe08fd2ad",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law-3-year/test/logical-and-analytical-reasoning-sectional-2/attempt": {
    "title": "MH CET Law (3-Year LLB) Logical and Analytical Reasoning Sectional Test 2",
@@ -49788,12 +49788,12 @@
   },
   "/in/mh-cet-law-3-year/test/logical-and-analytical-reasoning-sectional-2": {
    "title": "MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 2",
-   "description": "Free MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "MH CET Law (3-Year LLB) Logical and Analytical Reasoning Mock Test 2"
    ],
-   "h2Count": 11,
-   "h2Hash": "c1f93a04a9e8",
+   "h2Count": 12,
+   "h2Hash": "cb5f2da18061",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -49801,10 +49801,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "80db073fc14f",
-   "ogHash": "b980ab58245f",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "810d00eb605f",
+   "ogHash": "a9662ea64120",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/mh-cet-law-3-year": {
    "title": "MH CET Law (3-Year LLB): Exam Pattern, Syllabus &amp; Eligibility",
@@ -59825,7 +59825,7 @@
   },
   "/in/practice/analogy": {
    "title": "Analogy Questions with Answers 2026 | TakeMockTest",
-   "description": "207 free analogy questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "209 free analogy questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Analogy Questions with Answers"
    ],
@@ -59841,8 +59841,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "fca29e85120b",
-   "ogHash": "8bc3b8bc83e9",
+   "schemaHash": "c2f0965b34e3",
+   "ogHash": "8ce4c0fd49da",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59899,7 +59899,7 @@
   },
   "/in/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "224 free averages questions with answers and explanations, pooled from 65 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free averages questions with answers and explanations, pooled from 65 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -59915,8 +59915,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "561be95e7e7f",
-   "ogHash": "d685ed21c57e",
+   "schemaHash": "b23c613b3813",
+   "ogHash": "6c957fe11de2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -59936,7 +59936,7 @@
   },
   "/in/practice/blood-relations": {
    "title": "Blood Relations Questions with Answers 2026 | TakeMockTest",
-   "description": "284 free blood relations questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "286 free blood relations questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Blood Relations Questions with Answers"
    ],
@@ -59952,8 +59952,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "488c104b9e30",
-   "ogHash": "996b3971b0cd",
+   "schemaHash": "d2207277bba6",
+   "ogHash": "173dc0edb209",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60084,7 +60084,7 @@
   },
   "/in/practice/coding-and-decoding": {
    "title": "Coding and Decoding Questions with Answers 2026",
-   "description": "324 free coding and decoding questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "326 free coding and decoding questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Coding and Decoding Questions with Answers"
    ],
@@ -60100,8 +60100,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5a2228428731",
-   "ogHash": "f1e57a545da6",
+   "schemaHash": "f67e7d9bef40",
+   "ogHash": "12d45cf578ae",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60195,7 +60195,7 @@
   },
   "/in/practice/data-sufficiency": {
    "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
-   "description": "202 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "204 free data sufficiency questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
@@ -60211,8 +60211,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2ec4305b0851",
-   "ogHash": "3e7cd67930b4",
+   "schemaHash": "15be4f05e140",
+   "ogHash": "e66cbef94e3c",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60269,7 +60269,7 @@
   },
   "/in/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "281 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "283 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -60285,8 +60285,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "a4a2cac168a5",
-   "ogHash": "45db3430dc86",
+   "schemaHash": "048fcd04390e",
+   "ogHash": "e06a727460d9",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60454,7 +60454,7 @@
   },
   "/in/practice/number-series": {
    "title": "Number Series Questions with Answers 2026 | TakeMockTest",
-   "description": "401 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "404 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number Series Questions with Answers"
    ],
@@ -60470,8 +60470,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "4f18fe31ae0c",
-   "ogHash": "56fa3eb99b4b",
+   "schemaHash": "4b2c8e76ab19",
+   "ogHash": "8c615e0245b5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60602,7 +60602,7 @@
   },
   "/in/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "235 free percentage questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "236 free percentage questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -60618,8 +60618,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "44359ab5b1c9",
-   "ogHash": "33a0429ff3e0",
+   "schemaHash": "0937b21aed90",
+   "ogHash": "be7cd6f9d417",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60713,7 +60713,7 @@
   },
   "/in/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "210 free profit and loss questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "211 free profit and loss questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -60729,8 +60729,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0d01829d4d80",
-   "ogHash": "0ea6ec468ce3",
+   "schemaHash": "5a483cbd382a",
+   "ogHash": "33ba30776671",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60750,7 +60750,7 @@
   },
   "/in/practice/puzzles": {
    "title": "Puzzles Questions with Answers 2026 | TakeMockTest",
-   "description": "101 free puzzles questions with answers and explanations, pooled from 16 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "102 free puzzles questions with answers and explanations, pooled from 17 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Puzzles Questions with Answers"
    ],
@@ -60766,8 +60766,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5fa38eeab6ed",
-   "ogHash": "5f12061ee4eb",
+   "schemaHash": "f287ad8f5827",
+   "ogHash": "c5df2e1487be",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60787,7 +60787,7 @@
   },
   "/in/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "228 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "230 free ranking and order questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -60803,8 +60803,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "4c7627d936df",
-   "ogHash": "9b3844e1a9b0",
+   "schemaHash": "d040d5411e3d",
+   "ogHash": "d20b056d3875",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60898,7 +60898,7 @@
   },
   "/in/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "91 free seating arrangement questions with answers and explanations, pooled from 27 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "92 free seating arrangement questions with answers and explanations, pooled from 28 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -60914,8 +60914,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f656db946384",
-   "ogHash": "b6ecda7a4947",
+   "schemaHash": "46eb25d1b088",
+   "ogHash": "6eea054089b5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60972,7 +60972,7 @@
   },
   "/in/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "141 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "142 free simple interest questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -60988,8 +60988,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5dabeb31e70b",
-   "ogHash": "5ae6d0bbd4de",
+   "schemaHash": "bae04359fb38",
+   "ogHash": "8c61b92db85a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -61083,7 +61083,7 @@
   },
   "/in/practice/syllogism": {
    "title": "Syllogism Questions with Answers 2026 | TakeMockTest",
-   "description": "309 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "313 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Syllogism Questions with Answers"
    ],
@@ -61099,8 +61099,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "6ccec16b1e76",
-   "ogHash": "182237bc40ae",
+   "schemaHash": "80147b2785b3",
+   "ogHash": "10ec3491026b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -61217,7 +61217,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,716 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,741 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -61233,7 +61233,7 @@
     "Question"
    ],
    "schemaHash": "7094ac78a26b",
-   "ogHash": "ec9abb4c1640",
+   "ogHash": "365443b59c7d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96896,7 +96896,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "8d2d2013c5bc",
+   "schemaHash": "e75c7337cfc8",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -98566,7 +98566,7 @@
   },
   "/ng/practice/analogy": {
    "title": "Analogy Questions with Answers 2026 | TakeMockTest",
-   "description": "207 free analogy questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "209 free analogy questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Analogy Questions with Answers"
    ],
@@ -98582,8 +98582,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "757e74e0b366",
-   "ogHash": "bd3f947d8449",
+   "schemaHash": "852b94438b1d",
+   "ogHash": "8b9ef5b6ab57",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98640,7 +98640,7 @@
   },
   "/ng/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "224 free averages questions with answers and explanations, pooled from 65 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "225 free averages questions with answers and explanations, pooled from 65 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -98656,8 +98656,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "79ec3c0ced65",
-   "ogHash": "cef3527475b1",
+   "schemaHash": "89157783afa2",
+   "ogHash": "3321accc8ace",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98677,7 +98677,7 @@
   },
   "/ng/practice/blood-relations": {
    "title": "Blood Relations Questions with Answers 2026 | TakeMockTest",
-   "description": "284 free blood relations questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "286 free blood relations questions with answers and explanations, pooled from 45 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Blood Relations Questions with Answers"
    ],
@@ -98693,8 +98693,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "94eb65cc8f7a",
-   "ogHash": "2975b18e3480",
+   "schemaHash": "709c7696b209",
+   "ogHash": "d49f21fbc826",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98825,7 +98825,7 @@
   },
   "/ng/practice/coding-and-decoding": {
    "title": "Coding and Decoding Questions with Answers 2026",
-   "description": "324 free coding and decoding questions with answers and explanations, pooled from 48 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "326 free coding and decoding questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Coding and Decoding Questions with Answers"
    ],
@@ -98841,8 +98841,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "039ecaa7803e",
-   "ogHash": "d6baedccab87",
+   "schemaHash": "77ff35572e86",
+   "ogHash": "9f8a0f074c62",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98936,7 +98936,7 @@
   },
   "/ng/practice/data-sufficiency": {
    "title": "Data Sufficiency Questions with Answers 2026 | TakeMockTest",
-   "description": "202 free data sufficiency questions with answers and explanations, pooled from 40 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "204 free data sufficiency questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Sufficiency Questions with Answers"
    ],
@@ -98952,8 +98952,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5f8b07c38ab0",
-   "ogHash": "2ff026678805",
+   "schemaHash": "44f0ad00124d",
+   "ogHash": "ed4a3815765e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99010,7 +99010,7 @@
   },
   "/ng/practice/direction-sense": {
    "title": "Direction Sense Questions with Answers 2026 | TakeMockTest",
-   "description": "281 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "283 free direction sense questions with answers and explanations, pooled from 55 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Direction Sense Questions with Answers"
    ],
@@ -99026,8 +99026,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "0f5b95494fc5",
-   "ogHash": "99e3827c1167",
+   "schemaHash": "75501dc33d4f",
+   "ogHash": "63c927382df4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99195,7 +99195,7 @@
   },
   "/ng/practice/number-series": {
    "title": "Number Series Questions with Answers 2026 | TakeMockTest",
-   "description": "401 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "404 free number series questions with answers and explanations, pooled from 50 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Number Series Questions with Answers"
    ],
@@ -99211,8 +99211,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b72bf9d93928",
-   "ogHash": "f63264a54944",
+   "schemaHash": "dfe7cb65cb9c",
+   "ogHash": "6a28a9bc4b9f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99343,7 +99343,7 @@
   },
   "/ng/practice/percentage": {
    "title": "Percentage Questions with Answers 2026 | TakeMockTest",
-   "description": "235 free percentage questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "236 free percentage questions with answers and explanations, pooled from 51 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Percentage Questions with Answers"
    ],
@@ -99359,8 +99359,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "5d8bd2c228c2",
-   "ogHash": "8cf532ea5fc3",
+   "schemaHash": "1207e86f2eaa",
+   "ogHash": "731a1fb77b27",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99454,7 +99454,7 @@
   },
   "/ng/practice/profit-and-loss": {
    "title": "Profit and Loss Questions with Answers 2026 | TakeMockTest",
-   "description": "210 free profit and loss questions with answers and explanations, pooled from 56 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "211 free profit and loss questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Profit and Loss Questions with Answers"
    ],
@@ -99470,8 +99470,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "87aa0072e231",
-   "ogHash": "19b297101af9",
+   "schemaHash": "307a9b6b13b9",
+   "ogHash": "3c4740d5f0ed",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99491,7 +99491,7 @@
   },
   "/ng/practice/puzzles": {
    "title": "Puzzles Questions with Answers 2026 | TakeMockTest",
-   "description": "101 free puzzles questions with answers and explanations, pooled from 16 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "102 free puzzles questions with answers and explanations, pooled from 17 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Puzzles Questions with Answers"
    ],
@@ -99507,8 +99507,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "be23e7d9931f",
-   "ogHash": "cf7c636c573f",
+   "schemaHash": "d60911896c7d",
+   "ogHash": "6558bc0799c5",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99528,7 +99528,7 @@
   },
   "/ng/practice/ranking-and-order": {
    "title": "Ranking and Order Questions with Answers 2026 | TakeMockTest",
-   "description": "228 free ranking and order questions with answers and explanations, pooled from 42 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "230 free ranking and order questions with answers and explanations, pooled from 44 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Ranking and Order Questions with Answers"
    ],
@@ -99544,8 +99544,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1e0e5d81c90a",
-   "ogHash": "2ffaa563c295",
+   "schemaHash": "2e0c43ad2f45",
+   "ogHash": "94abde8d3ef0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99639,7 +99639,7 @@
   },
   "/ng/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "91 free seating arrangement questions with answers and explanations, pooled from 27 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "92 free seating arrangement questions with answers and explanations, pooled from 28 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -99655,8 +99655,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "92a9e4cffdc7",
-   "ogHash": "c3a8f1c27bde",
+   "schemaHash": "4dec8c060c0e",
+   "ogHash": "fa4a1907b523",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99713,7 +99713,7 @@
   },
   "/ng/practice/simple-interest": {
    "title": "Simple Interest Questions with Answers 2026 | TakeMockTest",
-   "description": "141 free simple interest questions with answers and explanations, pooled from 57 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "142 free simple interest questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Simple Interest Questions with Answers"
    ],
@@ -99729,8 +99729,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "35a03bc128e1",
-   "ogHash": "604c05e33fe7",
+   "schemaHash": "0665c7137aa6",
+   "ogHash": "0a3aff8e4660",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99824,7 +99824,7 @@
   },
   "/ng/practice/syllogism": {
    "title": "Syllogism Questions with Answers 2026 | TakeMockTest",
-   "description": "309 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "313 free syllogism questions with answers and explanations, pooled from 58 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Syllogism Questions with Answers"
    ],
@@ -99840,8 +99840,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "cd8bd22db4fc",
-   "ogHash": "559efd6d7e17",
+   "schemaHash": "bbdf12a6554f",
+   "ogHash": "6151e570e389",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99958,7 +99958,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,716 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,741 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -99974,7 +99974,7 @@
     "Question"
    ],
    "schemaHash": "247b1b4780c8",
-   "ogHash": "afd052c1f934",
+   "ogHash": "94255ef3cd09",
    "sitemap": true,
    "robots": "index, follow"
   },
