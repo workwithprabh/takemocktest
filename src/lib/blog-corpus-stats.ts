@@ -609,6 +609,19 @@ function awarenessWeight(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   rows.sort((a, b) => b.share - a.share || a.exam.localeCompare(b.exam));
   const shares = rows.map((row) => row.share).sort((a, b) => a - b);
 
+  // Awareness questions this site does publish, and the exams they belong to.
+  //
+  // Added 28 September 2026 to correct a published post. It stated flatly
+  // that this site does not build awareness sections, reasoning from the 37
+  // full-length tests that fall short because one is missing. The premise was
+  // wrong: awareness is built for a large minority of exams and left out for
+  // the rest, usually where the questions would turn on current affairs
+  // rather than on settled fact. A count is the only way to keep prose honest
+  // about which of the two an exam is.
+  let built = 0;
+  const builtExams = new Set<string>();
+  const countedQuestions = new Set<string>();
+
   // Full-length tests on this site that stop short of the official paper
   // because an awareness section is not built. Read from the same function
   // the test pages print, so the post and the page cannot disagree.
@@ -618,7 +631,19 @@ function awarenessWeight(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
   for (const exam of exams) {
     for (const stage of exam.stages) {
       for (const test of stage.tests) {
-        if (test.kind !== 'full-length' || test.status !== 'checked') continue;
+        if (test.status !== 'checked') continue;
+        for (const question of getQuestionsForTest(exam.slug, test.id)) {
+          if (!question.section || !AWARENESS.test(question.section)) continue;
+          // Sectionals reuse their parent mock's questions, so dedupe. The id
+          // is optional on the Question type, and the stem is the only other
+          // thing unique per question, so it stands in where an id is absent.
+          const key = question.id ?? question.question;
+          if (countedQuestions.has(key)) continue;
+          countedQuestions.add(key);
+          built += 1;
+          builtExams.add(exam.name);
+        }
+        if (test.kind !== 'full-length') continue;
         const coverage = getTestCoverage(exam, stage, test, getQuestionsForTest(exam.slug, test.id));
         if (!coverage) continue;
         fullLength += 1;
@@ -666,6 +691,9 @@ function awarenessWeight(exams: (typeof EXAMS)[keyof typeof EXAMS][]) {
     /** Full-length tests here that leave an awareness section unbuilt. */
     short,
     shortExams: shortExams.size,
+    /** Awareness questions actually published, and how many exams carry them. */
+    built,
+    builtExams: builtExams.size,
   };
 }
 
