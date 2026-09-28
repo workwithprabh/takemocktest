@@ -4708,23 +4708,23 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('ailet/llm-full-mock')
     ? 100
     : testId.includes('mh-cet-law/legal-logical-english-mathematics-full-mock')
-    ? 24
+    ? 48
     : testId.includes('mh-cet-law/legal-aptitude-and-legal-reasoning-sectional')
-    ? 8
+    ? 16
     : testId.includes('mh-cet-law/logical-and-analytical-reasoning-sectional')
-    ? 8
+    ? 16
     : testId.includes('mh-cet-law/english-language-sectional')
-    ? 6
+    ? 12
     : testId.includes('mh-cet-law/mathematics-aptitude-sectional')
-    ? 2
+    ? 4
     : testId.includes('mh-cet-law-3-year/legal-logical-english-full-mock')
-    ? 22
+    ? 44
     : testId.includes('mh-cet-law-3-year/legal-aptitude-and-legal-reasoning-sectional')
-    ? 6
+    ? 12
     : testId.includes('mh-cet-law-3-year/logical-and-analytical-reasoning-sectional')
-    ? 6
+    ? 12
     : testId.includes('mh-cet-law-3-year/english-sectional')
-    ? 10
+    ? 20
     : testId.includes('cat/varc-dilr-qa-full-mock')
     ? 34
     : testId.includes('cat/verbal-ability-and-reading-comprehension-sectional')
@@ -6698,15 +6698,15 @@ const slatLogicalLegalAnalyticalReadingLayout = [
   { section: 'General Knowledge', count: 12 },
 ];
 const mhCetLawLegalLogicalEnglishMathematicsLayout = [
-  { section: 'Legal Aptitude and Legal Reasoning', count: 8 },
-  { section: 'Logical and Analytical Reasoning', count: 8 },
-  { section: 'English Language', count: 6 },
-  { section: 'Mathematics Aptitude', count: 2 },
+  { section: 'Legal Aptitude and Legal Reasoning', count: 16 },
+  { section: 'Logical and Analytical Reasoning', count: 16 },
+  { section: 'English Language', count: 12 },
+  { section: 'Mathematics Aptitude', count: 4 },
 ];
 const mhCetLaw3YearLegalLogicalEnglishLayout = [
-  { section: 'Legal Aptitude and Legal Reasoning', count: 6 },
-  { section: 'Logical and Analytical Reasoning', count: 6 },
-  { section: 'English', count: 10 },
+  { section: 'Legal Aptitude and Legal Reasoning', count: 12 },
+  { section: 'Logical and Analytical Reasoning', count: 12 },
+  { section: 'English', count: 20 },
 ];
 const catVarcDilrQaLayout = [
   { section: 'Verbal Ability and Reading Comprehension', count: 12 },

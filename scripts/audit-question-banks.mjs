@@ -601,8 +601,8 @@ for (const { file, questions } of banks) {
     : file.startsWith('clat-english-legal-logical-quantitative-combined-') ? 46
     : file.startsWith('ailet-english-and-logical-reasoning-combined-') ? 24
     : file.startsWith('slat-logical-legal-analytical-reading-combined-') ? 24
-    : file.startsWith('mh-cet-law-legal-logical-english-mathematics-combined-') ? 24
-    : file.startsWith('mh-cet-law-3-year-legal-logical-english-combined-') ? 22
+    : file.startsWith('mh-cet-law-legal-logical-english-mathematics-combined-') ? 48
+    : file.startsWith('mh-cet-law-3-year-legal-logical-english-combined-') ? 44
     : file.startsWith('cat-varc-dilr-qa-combined-') ? 34
     : file.startsWith('cmat-qtdi-logical-reasoning-language-comprehension-combined-') ? 60
     : file.startsWith('nmat-language-logical-reasoning-quantitative-combined-') ? 36
