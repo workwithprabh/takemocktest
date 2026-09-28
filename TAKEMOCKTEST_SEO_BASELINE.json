@@ -10563,12 +10563,12 @@
   },
   "/in/blog/is-c-the-most-common-answer": {
    "title": "Is C the Most Common Answer? We Counted 35,052 Questions",
-   "description": "The folklore says pick C when stuck. Across 35,270 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
+   "description": "The folklore says pick C when stuck. Across 35,302 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
    "h1": [
     "Is C the Most Common Answer? We Counted 35,052 Questions"
    ],
    "h2Count": 12,
-   "h2Hash": "e5274292c5af",
+   "h2Hash": "7c2a22eff217",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10578,8 +10578,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "b4cac4a54886",
-   "ogHash": "e2fd3d76968e",
+   "schemaHash": "4177bdcca1e4",
+   "ogHash": "d71dd28aedcc",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10739,12 +10739,12 @@
   },
   "/in/blog/only-one-question-in-seven-is-hard": {
    "title": "Only One Question in Seven Is Hard | TakeMockTest",
-   "description": "Across the 36,563 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
+   "description": "Across the 36,595 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
    "h1": [
     "Only One Question in Seven Is Hard"
    ],
    "h2Count": 12,
-   "h2Hash": "f340662f2f03",
+   "h2Hash": "6b07d7a09a5b",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10754,14 +10754,14 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "f37b1cbdbe13",
-   "ogHash": "728e259424ba",
+   "schemaHash": "19b040dd7a5a",
+   "ogHash": "def744326888",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,714 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,716 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10776,8 +10776,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "ff69198c2d63",
-   "ogHash": "d8b26ded272a",
+   "schemaHash": "2df57b25d148",
+   "ogHash": "c16afb7948fe",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -16160,7 +16160,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "c3a2a8e1eb70",
+   "schemaHash": "a6eea857d65e",
    "ogHash": "ff6bd1248700",
    "sitemap": true,
    "robots": "index, follow"
@@ -16266,7 +16266,7 @@
   },
   "/in/clat/test/english-language-sectional-1": {
    "title": "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 1",
-   "description": "Free CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 1: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 1"
    ],
@@ -16279,10 +16279,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d0aa253ee386",
-   "ogHash": "be16c8ca6508",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "5cece4ea4310",
+   "ogHash": "0171feda7a6d",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/clat/test/english-language-sectional-2/attempt": {
    "title": "CLAT English Language Sectional Test 2 | TakeMockTest",
@@ -16300,7 +16300,7 @@
   },
   "/in/clat/test/english-language-sectional-2": {
    "title": "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 2",
-   "description": "Free CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 2: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques English Language Mock Test 2"
    ],
@@ -16313,10 +16313,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "779fe8966233",
-   "ogHash": "b4b438e47d5c",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "5a82b518f589",
+   "ogHash": "1cbbf26164ac",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/clat/test/english-legal-logical-quantitative-full-mock-1/attempt": {
    "title": "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 1",
@@ -16334,12 +16334,12 @@
   },
   "/in/clat/test/english-legal-logical-quantitative-full-mock-1": {
    "title": "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 1",
-   "description": "Attempt CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 1: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 1: 46 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 1"
    ],
-   "h2Count": 11,
-   "h2Hash": "619ca4f1ea95",
+   "h2Count": 12,
+   "h2Hash": "114e8a295e5c",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -16350,8 +16350,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "edb04df722f6",
-   "ogHash": "a18c290372c7",
+   "schemaHash": "a99193cbba63",
+   "ogHash": "0abd4f1c3dc2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -16371,12 +16371,12 @@
   },
   "/in/clat/test/english-legal-logical-quantitative-full-mock-2": {
    "title": "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 2",
-   "description": "Attempt CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 2: 30 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 2: 46 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "CLAT English, Legal Reasoning, Logical Reasoning and Quantitative Techniques Full Mock Test 2"
    ],
-   "h2Count": 11,
-   "h2Hash": "619ca4f1ea95",
+   "h2Count": 12,
+   "h2Hash": "114e8a295e5c",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -16387,8 +16387,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8c18add5e229",
-   "ogHash": "b9a0c230cabd",
+   "schemaHash": "efbed3ecf865",
+   "ogHash": "8ea840a98ff4",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -16408,7 +16408,7 @@
   },
   "/in/clat/test/legal-reasoning-sectional-1": {
    "title": "CLAT Legal Reasoning Mock Test 1: Free Practice",
-   "description": "Free CLAT Legal Reasoning Mock Test 1: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT Legal Reasoning Mock Test 1: 15 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT Legal Reasoning Mock Test 1"
    ],
@@ -16421,8 +16421,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "809b1aa7b477",
-   "ogHash": "4660406a2b06",
+   "schemaHash": "a1ac788ee9b4",
+   "ogHash": "c89273fa005d",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -16442,7 +16442,7 @@
   },
   "/in/clat/test/legal-reasoning-sectional-2": {
    "title": "CLAT Legal Reasoning Mock Test 2: Free Practice",
-   "description": "Free CLAT Legal Reasoning Mock Test 2: 10 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT Legal Reasoning Mock Test 2: 15 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT Legal Reasoning Mock Test 2"
    ],
@@ -16455,8 +16455,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "484f455370d7",
-   "ogHash": "ac95fc9c9478",
+   "schemaHash": "adc5abab021d",
+   "ogHash": "b56417981036",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -16476,12 +16476,12 @@
   },
   "/in/clat/test/logical-reasoning-sectional-1": {
    "title": "CLAT Logical Reasoning Mock Test 1: Free Practice",
-   "description": "Free CLAT Logical Reasoning Mock Test 1: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT Logical Reasoning Mock Test 1: 13 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT Logical Reasoning Mock Test 1"
    ],
-   "h2Count": 11,
-   "h2Hash": "1f0cd613721b",
+   "h2Count": 12,
+   "h2Hash": "559af76e6388",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -16489,10 +16489,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "1ca7e44c7c20",
-   "ogHash": "fff9e90402eb",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "df602317aa02",
+   "ogHash": "138d992fe752",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/clat/test/logical-reasoning-sectional-2/attempt": {
    "title": "CLAT Logical Reasoning Sectional Test 2 | TakeMockTest",
@@ -16510,12 +16510,12 @@
   },
   "/in/clat/test/logical-reasoning-sectional-2": {
    "title": "CLAT Logical Reasoning Mock Test 2: Free Practice",
-   "description": "Free CLAT Logical Reasoning Mock Test 2: 8 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT Logical Reasoning Mock Test 2: 13 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT Logical Reasoning Mock Test 2"
    ],
-   "h2Count": 11,
-   "h2Hash": "1f0cd613721b",
+   "h2Count": 12,
+   "h2Hash": "559af76e6388",
    "schemaTypes": [
     "BreadcrumbList",
     "ListItem",
@@ -16523,10 +16523,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "2bf3d7b68c6c",
-   "ogHash": "595bfaf28e0d",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "c07e62d11a67",
+   "ogHash": "ffe472f9b8a3",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/clat/test/pg-full-mock-1/attempt": {
    "title": "CLAT Postgraduate (LL.M.) Full Mock Test 1 | TakeMockTest",
@@ -16578,7 +16578,7 @@
   },
   "/in/clat/test/quantitative-techniques-sectional-1": {
    "title": "CLAT Quantitative Techniques Mock Test 1: Free Practice",
-   "description": "Free CLAT Quantitative Techniques Mock Test 1: 4 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT Quantitative Techniques Mock Test 1: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT Quantitative Techniques Mock Test 1"
    ],
@@ -16591,8 +16591,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "d9df1226f724",
-   "ogHash": "a9ce0a01fd28",
+   "schemaHash": "8ca74b3edbf3",
+   "ogHash": "05f33b59f75a",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -16612,7 +16612,7 @@
   },
   "/in/clat/test/quantitative-techniques-sectional-2": {
    "title": "CLAT Quantitative Techniques Mock Test 2: Free Practice",
-   "description": "Free CLAT Quantitative Techniques Mock Test 2: 4 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free CLAT Quantitative Techniques Mock Test 2: 6 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "CLAT Quantitative Techniques Mock Test 2"
    ],
@@ -16625,8 +16625,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "40e85296a444",
-   "ogHash": "c138197dc577",
+   "schemaHash": "e2f6f9a3aedd",
+   "ogHash": "6130f14d398b",
    "sitemap": false,
    "robots": "noindex, follow"
   },
@@ -59899,7 +59899,7 @@
   },
   "/in/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "223 free averages questions with answers and explanations, pooled from 64 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "224 free averages questions with answers and explanations, pooled from 65 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -59915,8 +59915,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "cd71ed1958dc",
-   "ogHash": "5cd55d465f14",
+   "schemaHash": "561be95e7e7f",
+   "ogHash": "d685ed21c57e",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -60158,7 +60158,7 @@
   },
   "/in/practice/data-interpretation": {
    "title": "Data Interpretation Questions with Answers 2026",
-   "description": "449 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "450 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
@@ -60174,8 +60174,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "862912927ece",
-   "ogHash": "21781ccacc3f",
+   "schemaHash": "e59ba23ccde5",
+   "ogHash": "293ee4ad629f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -61217,7 +61217,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,714 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,716 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -61233,7 +61233,7 @@
     "Question"
    ],
    "schemaHash": "7094ac78a26b",
-   "ogHash": "9236a6d10b7b",
+   "ogHash": "ec9abb4c1640",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96896,7 +96896,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "accc896335e2",
+   "schemaHash": "8d2d2013c5bc",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -98640,7 +98640,7 @@
   },
   "/ng/practice/averages": {
    "title": "Averages Questions with Answers 2026 | TakeMockTest",
-   "description": "223 free averages questions with answers and explanations, pooled from 64 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "224 free averages questions with answers and explanations, pooled from 65 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Averages Questions with Answers"
    ],
@@ -98656,8 +98656,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "ce7058098e48",
-   "ogHash": "9fc14db9ef9c",
+   "schemaHash": "79ec3c0ced65",
+   "ogHash": "cef3527475b1",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -98899,7 +98899,7 @@
   },
   "/ng/practice/data-interpretation": {
    "title": "Data Interpretation Questions with Answers 2026",
-   "description": "449 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "450 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
@@ -98915,8 +98915,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "4c30c5a18c4a",
-   "ogHash": "d7d9c751ae3b",
+   "schemaHash": "b7a7831d5fa5",
+   "ogHash": "2593925a3c11",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99958,7 +99958,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,714 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,716 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -99974,7 +99974,7 @@
     "Question"
    ],
    "schemaHash": "247b1b4780c8",
-   "ogHash": "e2884e6e3102",
+   "ogHash": "afd052c1f934",
    "sitemap": true,
    "robots": "index, follow"
   },
