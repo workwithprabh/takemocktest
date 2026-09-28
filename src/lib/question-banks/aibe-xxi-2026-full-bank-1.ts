@@ -10,7 +10,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "arbitrary deprivation without a fair procedure",
       "automatic amendment of the Constitution",
-      "Parliamentary privilege to override courts",
+      "Parliamentary privilege to override the courts entirely",
       "creation of a new fundamental duty"
     ],
     "correctIndex": 0,
@@ -33,8 +33,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A public scholarship excludes applicants solely because they were born in one named district, although residence in that district has no connection with the scholarship’s object. The classification is vulnerable mainly because it lacks",
     "options": [
       "a rational nexus with the scheme’s objective",
-      "a written application form",
-      "a financial appropriation",
+      "a written application form of the prescribed kind",
+      "a financial appropriation made by the legislature",
       "a legislative preamble"
     ],
     "correctIndex": 0,
@@ -56,10 +56,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A municipal order prohibits every peaceful poster on every private wall in the city, including posters displayed with the owner’s consent, without distinguishing traffic, safety or nuisance concerns. The broadest problem is",
     "options": [
-      "lack of a criminal trial before printing",
+      "lack of a criminal trial before any such printing occurs",
       "disproportionate restriction of protected expression",
-      "absence of a constitutional amendment",
-      "failure to create a new municipality"
+      "absence of any constitutional amendment permitting the posters",
+      "failure to create a new municipality for that area first"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -128,10 +128,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A constitutional emergency power is challenged because an authority treats its proclamation as eliminating all judicial scrutiny of whether constitutional conditions existed. Which statement is sound?",
     "options": [
-      "Every emergency proclamation is permanently immune from courts",
+      "Every emergency proclamation is permanently immune from review by any court whatsoever",
       "Emergency powers automatically suspend the Constitution itself",
       "Only private contracts can be reviewed during an emergency",
-      "Constitutional emergency action remains subject to judicial review within constitutional limits"
+      "Constitutional emergency action remains subject to judicial review within limits"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -152,10 +152,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "Which statement best describes the relationship between Directive Principles of State Policy and courts?",
     "options": [
-      "They are criminal offences when not implemented",
+      "They are criminal offences whenever they are not implemented by the State",
       "They automatically repeal conflicting statutes",
-      "They guide governance but are not by themselves directly enforceable like fundamental rights",
-      "They are identical to fundamental rights in enforceability"
+      "They guide governance but are not themselves directly enforceable like rights",
+      "They are entirely identical to the fundamental rights in point of enforceability"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -200,10 +200,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A House of Legislature claims privilege to punish a person for conduct with no rational connection to legislative functioning and insists no court may examine the claim. The safest statement is",
     "options": [
-      "privilege permits any punishment for any private dispute",
-      "legislative privilege is constitutionally recognised but its existence and limits can present justiciable constitutional questions",
-      "privilege applies only to executive officers",
-      "privilege is created solely by private contract"
+      "privilege permits any punishment whatever for any private dispute of any kind at all",
+      "legislative privilege is recognised but its limits can raise justiciable questions",
+      "privilege applies only to the executive officers of the State government and to nobody else",
+      "privilege is created solely by private contract between the parties to the dispute"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -251,7 +251,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
       "every internal record error automatically creates criminal liability",
       "a genuine factual mistake about authorization may prevent proof of the required knowledge",
       "ignorance of the criminal law always excuses the act",
-      "later discovery of the clerical error conclusively proves earlier knowledge"
+      "later discovery of the clerical error conclusively proves earlier knowledge of it"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -275,7 +275,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
       "strict civil liability only",
       "joint liability arising from shared intention and participation",
       "vicarious liability of an employer",
-      "absence of liability because only one struck"
+      "absence of any liability because only one of them actually struck"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -296,10 +296,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "P intentionally encourages Q to burn a warehouse and supplies fuel for that purpose. Before Q acts, police intervene. P’s conduct most clearly raises liability for",
     "options": [
-      "mere presence with no mental element",
+      "mere presence at the scene with no mental element",
       "civil negligence only",
       "abetment by intentional instigation or aid",
-      "defamation"
+      "civil defamation of the warehouse owner concerned"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -321,9 +321,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A person, intending to steal a sealed parcel, breaks the lock and reaches into the box, but the parcel has already been removed. The conduct has moved beyond preparation because the person has",
     "options": [
       "taken a direct step toward commission of the intended offence",
-      "merely imagined an offence",
-      "completed a lawful contract",
-      "abandoned all criminal intent before acting"
+      "merely imagined committing the offence in his own mind and nothing more",
+      "completed an entirely lawful contract of purchase with the owner",
+      "abandoned all criminal intent before acting on it at all in any way"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -345,7 +345,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "During a minor verbal quarrel, D reasonably faces only a light push but responds with a deliberately lethal attack after the danger has ended. The defence of private defence is weakest because",
     "options": [
       "private defence can never protect the body",
-      "verbal quarrels automatically justify lethal force",
+      "verbal quarrels automatically justify the use of lethal force in reply",
       "the force used is grossly disproportionate and continues beyond the threat",
       "private defence applies only to property"
     ],
@@ -368,7 +368,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A person secretly moves another’s bicycle out of a locked courtyard intending to keep it without consent. The core property element is the",
     "options": [
-      "breach of a written promise only",
+      "breach of a written promise to return it and nothing further at all besides",
       "dishonest moving of movable property out of another’s possession without consent",
       "publication of a false statement",
       "entry into a civil partnership"
@@ -392,9 +392,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A cashier is entrusted with ₹50,000 to deposit for an employer but deliberately transfers it to a personal account for private use. The key feature distinguishing this from ordinary theft is",
     "options": [
-      "absence of any property",
+      "the complete absence of any property of any kind at all",
       "lack of a human victim",
-      "mandatory use of physical force",
+      "the mandatory use of physical force upon the victim concerned",
       "entrustment followed by dishonest misappropriation"
     ],
     "correctIndex": 3,
@@ -416,10 +416,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A deliberately poisons V. Before the poison can act, an unrelated lightning strike instantly kills V. For homicide based on the poisoning, the main difficulty is proving",
     "options": [
-      "that poison is a substance",
-      "that A was present in the country",
+      "that the poison used is in fact a noxious substance",
+      "that A was present within the country at the material time",
       "causal connection between A’s act and V’s death",
-      "that V owned property"
+      "that V owned some property of some description at the time of death"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -442,8 +442,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "convict the accused immediately",
       "impose civil damages without trial",
-      "refuse to record it solely because the accused denies it",
-      "register the information and investigate without first obtaining a magistrate’s order to investigate"
+      "refuse to record it solely because the accused denies the allegation",
+      "register the information and investigate without a magistrate’s prior order"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -464,10 +464,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An arrested person asks why they are being detained and requests access to legal assistance. The most accurate principle is that",
     "options": [
-      "police may keep the grounds permanently secret in every case",
+      "the police may keep the grounds permanently secret in every case without any exception",
       "legal assistance begins only after conviction",
       "an arrest automatically proves guilt",
-      "arrest carries procedural safeguards including communication of grounds and access to legal representation subject to law"
+      "arrest carries safeguards including communication of grounds and access to counsel"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -488,9 +488,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "When deciding a regular bail request in a non-bailable offence, a court ordinarily considers factors such as",
     "options": [
-      "whether the accused can guarantee acquittal",
+      "whether the accused is able to guarantee an acquittal at the trial that follows",
       "nature of accusation, risk of flight or interference, and the interests of justice",
-      "whether the police prefer detention for convenience alone",
+      "whether the police would prefer continued detention for their own convenience alone in the case",
       "the accused’s political opinion"
     ],
     "correctIndex": 1,
@@ -512,10 +512,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "Police complete an investigation and conclude that evidence is insufficient to send the accused for trial. Which statement is sound?",
     "options": [
-      "police may issue a final judicial acquittal",
-      "the complainant automatically goes to prison",
-      "The investigating agency must follow the statutory report procedure; its conclusion does not itself amount to a judicial acquittal",
-      "the court loses all jurisdiction permanently"
+      "the police may themselves issue a final judicial acquittal in the whole matter without more",
+      "the complainant automatically goes to prison in the place of the accused instead of him",
+      "The agency must follow the statutory report procedure; that is not a judicial acquittal",
+      "the court loses all of its jurisdiction in the matter permanently thereafter for good"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -539,7 +539,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
       "decide guilt before evidence",
       "replace the need for a trial",
       "give the accused clear notice of the specific accusation to be tried",
-      "determine civil title to property"
+      "determine the civil title to the property in dispute"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -562,7 +562,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "It can never result in imprisonment",
       "Police may ordinarily arrest without warrant subject to statutory conditions",
-      "It must be tried only by the Supreme Court",
+      "It must in every case be tried only by the Supreme Court of India and nowhere else",
       "It is always compoundable"
     ],
     "correctIndex": 1,
@@ -584,10 +584,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "Police seek continued custody of an arrested person beyond the period they may hold without judicial authorisation. Continued detention requires",
     "options": [
-      "oral approval from any private citizen",
+      "oral approval obtained from any private citizen at all who is nearby at the time",
       "authorisation by the competent magistrate under the governing remand provisions",
       "a newspaper notice",
-      "consent of the investigating officer alone"
+      "the consent of the investigating officer acting entirely alone in the whole matter"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -609,9 +609,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A person has been finally tried and acquitted of an offence by a competent court. A second prosecution seeks to try the same person again for the same offence on the same basis. The principal bar is",
     "options": [
       "protection against being tried again for the same offence after final adjudication",
-      "res judicata only in property law with no criminal analogue",
-      "the rule against perpetuities",
-      "parliamentary privilege"
+      "res judicata only in property law, with no criminal analogue of any kind at all in law",
+      "the rule against perpetuities in the law of property and nothing else besides",
+      "parliamentary privilege of the legislature concerned in the whole matter of the trial"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -635,7 +635,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
       "require appearance before the court at the stated time and place",
       "authorise immediate conviction",
       "transfer ownership of property",
-      "create an arbitration agreement"
+      "create a binding arbitration agreement between them"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -657,7 +657,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A trial court relies on a decisive document never disclosed to the accused and gives no opportunity to meet it. The most basic procedural objection is denial of",
     "options": [
       "territorial sovereignty",
-      "legislative competence over taxation",
+      "legislative competence over the taxation of incomes",
       "patent novelty",
       "a fair opportunity to know and answer the case"
     ],
@@ -704,8 +704,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A contract is made and to be performed entirely in City X, and the defendant also resides there. A plaintiff files the ordinary civil suit in unrelated City Y solely for convenience. The first procedural question is whether City Y has",
     "options": [
-      "criminal sentencing power",
-      "patent registration authority",
+      "the criminal sentencing power of that very court in the matter",
+      "the patent registration authority for the whole country",
       "legislative privilege",
       "territorial jurisdiction under the applicable rules"
     ],
@@ -752,10 +752,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "The principal function of pleadings in a civil suit is to state",
     "options": [
-      "material facts forming each party’s case, not the evidence by which every fact will be proved",
-      "only citations to cases with no facts",
-      "the judge’s final findings",
-      "secret evidence withheld from the other side"
+      "material facts forming each party’s case, not the evidence proving every fact",
+      "only citations to decided cases with no statement of facts of any kind at all",
+      "the final findings of the judge in the matter before any trial has begun",
+      "secret evidence deliberately withheld from the other side throughout the suit"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -776,7 +776,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A defendant has never been served with summons and had no knowledge of the suit, yet an ex parte decree is passed. The lack of proper service is relevant because",
     "options": [
-      "service is never required in civil proceedings",
+      "service of summons is never required in civil proceedings at all",
       "an ex parte decree cannot ever be challenged",
       "only the plaintiff needs notice",
       "a defendant is ordinarily entitled to notice and an opportunity to appear"
@@ -801,7 +801,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A first appeal from an original civil decree, where provided by law, generally permits the appellate court to examine",
     "options": [
       "only handwriting style",
-      "only criminal sentencing",
+      "only the criminal sentencing that was imposed below",
       "questions of fact and law within the appeal",
       "no part of the decree"
     ],
@@ -896,9 +896,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A civil court considers whether to award litigation costs after deciding the suit. The sound general principle is that costs are",
     "options": [
-      "always identical to the amount claimed",
-      "a procedural matter governed by the Code and judicial discretion, not automatic punitive damages",
-      "never awardable in civil cases",
+      "always exactly identical to the amount that was claimed in the whole suit as filed",
+      "a procedural matter under the Code and judicial discretion, not punitive damages",
+      "never awardable at all in any civil case whatever the outcome may be at trial",
       "a criminal sentence"
     ],
     "correctIndex": 1,
@@ -1280,8 +1280,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An adoption is challenged because mandatory statutory conditions concerning capacity and eligibility were ignored. The correct approach is that",
     "options": [
-      "validity depends on compliance with the applicable adoption law, not merely private intention",
-      "any private promise automatically creates a valid adoption",
+      "validity depends on compliance with the adoption law, not private intention",
+      "any private promise made automatically creates a wholly valid adoption in law",
       "adoption law never regulates capacity",
       "only the child’s school can decide validity"
     ],
@@ -1304,9 +1304,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A guardian proposes to sell a minor’s valuable property solely to finance the guardian’s personal business. The proposal is objectionable mainly because a guardian must act",
     "options": [
-      "as absolute owner of the minor’s property",
+      "as though he were the absolute owner of the minor’s property in every respect",
       "only on instructions from neighbours",
-      "without any fiduciary responsibility",
+      "without any fiduciary responsibility whatever to the minor at all",
       "for the minor’s welfare and within lawful authority, not for self-dealing"
     ],
     "correctIndex": 3,
@@ -1328,9 +1328,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "Two spouses jointly seek divorce by mutual consent but one spouse withdraws consent before the decree. The essential difficulty is that",
     "options": [
-      "marriage dissolves automatically on filing the first petition",
-      "withdrawal of consent is always a criminal offence",
-      "the court can ignore absence of mutual consent altogether",
+      "the marriage dissolves automatically upon the very filing of the first petition in the court",
+      "withdrawal of consent is always in itself a criminal offence under the general law",
+      "the court may ignore the absence of mutual consent altogether at that stage of the case",
       "mutual consent must continue as required by law at the stage the court grants the decree"
     ],
     "correctIndex": 3,
@@ -1352,10 +1352,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A dispute concerns unpaid dower promised as part of a Muslim marriage. Dower is best understood as",
     "options": [
-      "a legally recognised obligation arising from the marriage, enforceable according to applicable Muslim law",
-      "a criminal fine payable to the State",
+      "a legally recognised obligation arising from the marriage, enforceable in law",
+      "a criminal fine that is payable to the State on conviction",
       "a tax on divorce",
-      "a gift that can never create an obligation"
+      "a gift that can never create any obligation of any kind"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1378,8 +1378,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "only criminal conviction can ever produce protection",
       "private violence is outside all law",
-      "Protective statutes can provide civil protection and residence-related remedies in addition to any criminal process",
-      "a protection order automatically transfers property title"
+      "Protective statutes can give civil protection and residence remedies as well",
+      "a protection order automatically transfers the title to the property concerned outright"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1402,8 +1402,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "eliminate the need for a legal issue",
       "relax traditional standing where genuine public injury affects disadvantaged persons",
-      "permit litigation for private profit only",
-      "bar courts from examining fundamental rights"
+      "permit litigation brought for private profit and nothing else at all besides",
+      "bar the courts from examining any of the fundamental rights of the workers at all"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1472,10 +1472,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "hard",
     "question": "A PIL asks a court to choose among several technically lawful budget policies solely because the petitioner prefers one. Without constitutional or legal violation, the court should be cautious because",
     "options": [
-      "PIL automatically transfers budget power to courts",
+      "PIL automatically transfers the whole of the budget power to the courts of the country",
       "judicial review does not ordinarily substitute courts for policy-makers on merits alone",
-      "courts can never review executive action",
-      "all fiscal decisions are fundamental rights"
+      "the courts can never review any executive action of any kind at all in any circumstances",
+      "all fiscal decisions are themselves fundamental rights of the citizen under the Constitution"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1496,10 +1496,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A licensing authority relies on an adverse inspection report but refuses to show the affected licensee the substance of the case or allow a response. The principle most directly violated is",
     "options": [
-      "res judicata",
-      "caveat emptor",
+      "res judicata between the parties",
+      "caveat emptor in the sale",
       "audi alteram partem — the right to a fair hearing",
-      "strict liability"
+      "strict liability in tort law"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1522,7 +1522,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "use a jury",
       "publish a patent",
-      "conduct a criminal investigation",
+      "conduct a full criminal investigation into the whole matter",
       "give reasons showing application of mind to the issues"
     ],
     "correctIndex": 3,
@@ -1544,10 +1544,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A ministry makes a rule imposing a restriction that the parent statute expressly forbids. The rule is vulnerable because delegated legislation cannot",
     "options": [
-      "ever contain procedural details",
+      "ever contain any procedural details of any kind",
       "be published",
       "travel beyond or contradict the enabling Act",
-      "apply prospectively"
+      "apply prospectively rather than retrospectively"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1568,10 +1568,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An advocate discovers that a factual statement made earlier to the court was materially wrong and that allowing it to stand would mislead the court. Professional duty requires the advocate to",
     "options": [
-      "preserve the error because winning is the only duty",
-      "take appropriate steps to correct the misleading position consistent with duty to court and client",
-      "destroy the contrary document",
-      "contact the judge privately about the merits"
+      "preserve the error, because winning the case is the advocate’s only duty to the client",
+      "take steps to correct the misleading position consistently with duty to court",
+      "destroy the document that contradicts the earlier statement made to the court",
+      "contact the judge privately about the merits of the case without the other side"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1592,7 +1592,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An advocate previously advised Company A confidentially on a transaction and is later asked to act for Company B against A in litigation arising from the same transaction. The central ethical issue is",
     "options": [
-      "territorial jurisdiction of a criminal court",
+      "the territorial jurisdiction of a criminal court in the matter",
       "tax residency of the advocate",
       "conflict of interest and misuse of former-client confidential information",
       "patent novelty"
@@ -1616,7 +1616,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "An advocate pays a non-lawyer agent a commission for bringing accident victims as clients. This practice is objectionable primarily as",
     "options": [
-      "mandatory pro bono service",
+      "mandatory pro bono service given to the accident victims",
       "judicial review",
       "arbitration by consent",
       "improper solicitation/procurement of professional work"
@@ -1640,8 +1640,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A client privately admits a damaging fact while seeking legal advice. Subject to recognised legal exceptions, the advocate should",
     "options": [
-      "post it publicly to avoid conflict",
-      "tell opposing counsel immediately in every case",
+      "post it publicly in order to avoid any conflict of interest later",
+      "tell the opposing counsel immediately in each and every single case without exception",
       "sell the information to the press",
       "preserve professional confidentiality rather than disclose it casually"
     ],
@@ -1664,10 +1664,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A company validly incorporated under company law owns a warehouse. A shareholder who owns 60% of the shares claims the warehouse is automatically the shareholder’s personal property. The claim fails because",
     "options": [
-      "majority shareholders can never vote",
-      "companies cannot own land",
+      "the majority shareholders can never vote on any resolution at all",
+      "companies cannot own any land at all in their own name ever",
       "the company is a separate legal person owning its own assets",
-      "share certificates transfer every company asset directly"
+      "share certificates transfer every company asset directly to the holder"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1688,7 +1688,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A director diverts to a personal firm a business opportunity learned solely through the directorship, without disclosure or approval. The main company-law concern is breach of",
     "options": [
-      "the rule against perpetuities",
+      "the rule against perpetuities in property law generally",
       "fiduciary duty to act loyally and avoid undisclosed conflicts",
       "criminal double jeopardy",
       "parliamentary privilege"
@@ -1712,7 +1712,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A factory’s unlawful discharge contaminates a river and creates measurable remediation costs. The “polluter pays” principle supports requiring the factory to",
     "options": [
-      "receive a reward for cleanup by the State",
+      "receive a reward from the State for having carried out the cleanup of the river",
       "shift every cost to downstream residents",
       "avoid liability if pollution is profitable",
       "bear the cost of preventing and remedying pollution attributable to it"
@@ -1737,9 +1737,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A proposed activity poses a plausible risk of serious environmental harm, but scientific certainty about the exact magnitude is incomplete. The precautionary principle supports",
     "options": [
       "preventive action proportionate to the risk despite incomplete certainty",
-      "waiting for irreversible harm in every case",
+      "waiting for irreversible harm to occur in each and every single case before acting",
       "ignoring all scientific evidence",
-      "automatic approval of every project"
+      "automatic approval of every project regardless of the risk that may be involved"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1760,10 +1760,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A contract is formed through authenticated electronic communications. The fact that the agreement is electronic means it",
     "options": [
-      "can have legal recognition subject to applicable electronic-transactions law and ordinary contract requirements",
-      "is automatically void because no paper exists",
-      "can never be proved in court",
-      "is always a negotiable instrument"
+      "can have legal recognition under electronic-transactions law and contract rules",
+      "is automatically void because no paper document exists anywhere at all in the matter",
+      "can never be proved in a court of law in any circumstances whatever the evidence",
+      "is always a negotiable instrument in the eyes of the law of the land in every case"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1784,10 +1784,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An employee intentionally bypasses access controls to copy a database the employee is not authorised to enter. The central cyber-law issue is",
     "options": [
-      "valid adoption",
+      "a valid adoption in law",
       "unauthorised access to a computer resource and data",
-      "land acquisition compensation",
-      "company dividend declaration"
+      "land acquisition compensation payable",
+      "a company dividend declaration made"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1809,7 +1809,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A worker is dismissed for alleged misconduct after an internal inquiry in which no charge was communicated and no opportunity to respond was given. The strongest labour-law objection is denial of",
     "options": [
       "patent registration",
-      "arbitral seat selection",
+      "the selection of an arbitral seat by prior agreement",
       "fair disciplinary procedure and natural justice",
       "company incorporation"
     ],
@@ -1833,8 +1833,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "An employer labels a termination “retrenchment” but ignores statutory notice/compensation conditions that apply to the termination. The label alone",
     "options": [
       "does not excuse compliance with applicable retrenchment requirements",
-      "automatically validates the termination",
-      "converts the matter into criminal law only",
+      "automatically validates the termination made by the employer",
+      "converts the whole matter into one of criminal law and nothing else",
       "eliminates all employee rights"
     ],
     "correctIndex": 0,
@@ -1856,10 +1856,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "Collective bargaining is best described as",
     "options": [
-      "a criminal trial of an employer",
-      "a patent examination",
-      "negotiation between workers or their representatives and an employer over terms and conditions of employment",
-      "a method of land registration"
+      "a criminal trial of the employer before a competent court of criminal law",
+      "a patent examination carried out by the patent office of that country itself",
+      "negotiation between workers or their representatives and an employer over terms",
+      "a method of registering land titles in the public records of the State concerned"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1881,7 +1881,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A dispute concerns wages and working conditions of a group of employees and their employer. This is characteristically within the field of",
     "options": [
       "constitutional amendment only",
-      "succession to private estates only",
+      "succession to private estates and nothing more",
       "copyright registration",
       "industrial relations and labour dispute resolution"
     ],
@@ -1904,7 +1904,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A pharmacist carelessly places a heavy box on an unstable high shelf; it falls onto a customer who was lawfully standing below. The negligence inquiry focuses on duty, breach, causation and",
     "options": [
-      "parliamentary privilege",
+      "parliamentary privilege of the House",
       "patentability",
       "marital status",
       "legally recognisable damage"
@@ -1976,8 +1976,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A consumer buys a sealed appliance for household use; a manufacturing defect causes it to overheat on normal use. A consumer remedy may arise because the goods are",
     "options": [
-      "immune from all law once sold",
-      "a service rather than goods in every case",
+      "immune from all law once it has been sold to the consumer concerned",
+      "a service rather than goods in each and every single case without exception",
       "protected by parliamentary privilege",
       "defective and fail the legally expected standard of safety/quality"
     ],
@@ -2000,9 +2000,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "In a road-accident compensation claim, evidence that a driver ignored a red signal is most directly relevant to",
     "options": [
-      "copyright ownership",
-      "company incorporation",
-      "arbitral jurisdiction",
+      "the copyright ownership of the road markings at the junction",
+      "the incorporation of the company owning the vehicle in question",
+      "the arbitral jurisdiction over the dispute arising between them",
       "negligent driving and causal responsibility for the collision"
     ],
     "correctIndex": 3,
@@ -2024,7 +2024,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A municipal officer demands a new “tax” that has no authority in any law. The basic constitutional objection is that",
     "options": [
-      "every tax requires a referendum",
+      "every tax requires a referendum of the people",
       "only courts may collect tax",
       "no tax may be levied or collected except by authority of law",
       "tax applies only to companies"
@@ -2048,7 +2048,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "GST on an inter-State supply is designed within a destination-based framework so that tax revenue generally follows the",
     "options": [
-      "place where the seller was born",
+      "the place where the seller of the goods was originally born",
       "location of the nearest court",
       "buyer’s preferred bank",
       "place of consumption/destination under the statutory rules"
@@ -2072,8 +2072,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A taxpayer deliberately conceals taxable receipts by keeping a second set of books. This conduct is best characterised as",
     "options": [
-      "lawful tax planning",
-      "a constitutional amendment",
+      "entirely lawful tax planning within the law itself",
+      "a constitutional amendment of some kind or other",
       "tax evasion through intentional concealment",
       "a civil appeal by itself"
     ],
@@ -2097,9 +2097,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A business claims input tax credit but has not satisfied a statutory condition expressly made necessary for the credit. The safest statement is",
     "options": [
       "input tax credit is a statutory entitlement subject to prescribed conditions",
-      "credit is a fundamental right available without conditions",
-      "every invoice guarantees credit regardless of law",
-      "credit can be created by private agreement against the State"
+      "credit is a fundamental right that is available without any conditions at all",
+      "every invoice guarantees the credit regardless of what the law may say",
+      "credit can be created by private agreement made against the State and its revenue"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2122,7 +2122,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "an unconditional acceptance",
       "a counter-offer rather than an unconditional acceptance",
-      "performance of the original contract",
+      "performance of the original contract as made",
       "a completed gift"
     ],
     "correctIndex": 1,
@@ -2145,7 +2145,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A promises to pay B for work B had already volunteered and completed months earlier, with no earlier request or legal basis for payment. The enforceability question centres on whether there is",
     "options": [
       "a criminal charge",
-      "territorial sovereignty",
+      "the territorial sovereignty of the State that is concerned in the matter",
       "patent novelty",
       "valid consideration or another recognised basis supporting the promise"
     ],
@@ -2169,8 +2169,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A supplier obtains a contract by knowingly making a false statement of a material existing fact that induces the buyer to sign. The buyer’s consent is affected by",
     "options": [
       "res judicata",
-      "novation by performance only",
-      "land acquisition",
+      "novation brought about by performance of the contract and nothing else",
+      "the compulsory acquisition of land by the State for a public purpose of some kind",
       "fraud/misrepresentation depending on the proved state of mind and elements"
     ],
     "correctIndex": 3,
@@ -2192,10 +2192,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A museum contracts with Fabricator F to make custom display cases. Before work begins, the museum, F and Specialist S all sign an agreement that S will perform the supply obligations and that F is released from further performance. If the arrangement is otherwise valid, it is best characterized as",
     "options": [
-      "a mere assignment that leaves F fully liable",
+      "a mere assignment of the contract that leaves F fully liable throughout it",
       "novation by substitution of a new contracting party with consent",
-      "frustration caused by supervening impossibility",
-      "rescission for an already committed breach"
+      "frustration caused by a supervening impossibility of the performance",
+      "rescission for a breach that has already been committed by the museum"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2242,7 +2242,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "options": [
       "the colour of B’s deed",
       "B’s profession",
-      "the weather on transfer day",
+      "the weather on the day of the transfer",
       "notice and the applicable priority/registration rules"
     ],
     "correctIndex": 3,
@@ -2264,7 +2264,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An agreement gives X exclusive possession of a shop for three years in return for monthly rent, while the owner retains only ordinary landlord rights. Despite being titled “licence,” the arrangement may in substance be a",
     "options": [
-      "criminal bail bond",
+      "a criminal bail bond that has been given to the trial court",
       "lease, because substance and exclusive possessory rights matter",
       "gift of movable property",
       "company share"
@@ -2288,8 +2288,8 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A cheque is issued toward a legally enforceable debt and is dishonoured. Before invoking the statutory penal remedy for cheque dishonour, the payee must comply with",
     "options": [
-      "a requirement to arrest the drawer personally",
-      "mandatory arbitration in every case",
+      "a requirement that the drawer of the cheque be arrested in person first",
+      "mandatory arbitration of the dispute in every single case without exception",
       "the prescribed notice and time requirements of the negotiable-instruments law",
       "registration of the cheque as land"
     ],
@@ -2312,10 +2312,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "The State acquires private land for a public project but proposes to pay nothing and follow no statutory acquisition procedure. The central legal problem is failure to comply with",
     "options": [
-      "copyright registration",
+      "the registration of the copyright subsisting in the plans of the whole project",
       "the governing acquisition law’s public-purpose, procedure and compensation safeguards",
-      "criminal bail conditions",
-      "company dividend rules"
+      "the conditions attaching to criminal bail in the matter before the trial court",
+      "the rules governing the declaration of a company dividend to its own shareholders"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2339,7 +2339,7 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
       "rehabilitation and resettlement of affected families",
       "patent examination",
       "maritime salvage",
-      "parliamentary privilege"
+      "parliamentary privilege of the House concerned"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
