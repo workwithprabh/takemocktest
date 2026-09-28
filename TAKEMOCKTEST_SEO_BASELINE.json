@@ -1,5 +1,5 @@
 {
- "capturedAt": "2026-09-25",
+ "capturedAt": "2026-09-28",
  "pageCount": 5708,
  "pages": {
   "/404": {
@@ -10255,7 +10255,7 @@
   },
   "/in/blog/general-awareness-weightage": {
    "title": "General Awareness Weightage: How Much of the Paper It Really Is",
-   "description": "Of the 148 official patterns published here, 48 carry a general awareness section. The middle one is worth 20% of the marks, and the heaviest is over 41%.",
+   "description": "Of the 147 official patterns published here, 48 carry a general awareness section. The middle one is worth 20% of the marks, and the heaviest is over 41%.",
    "h1": [
     "General Awareness Weightage: How Much of the Paper It Really Is"
    ],
@@ -10270,8 +10270,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "10da9de8a20d",
-   "ogHash": "efbd2f3183e4",
+   "schemaHash": "48efd3d36b56",
+   "ogHash": "b10baf172560",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10563,12 +10563,12 @@
   },
   "/in/blog/is-c-the-most-common-answer": {
    "title": "Is C the Most Common Answer? We Counted 35,052 Questions",
-   "description": "The folklore says pick C when stuck. Across 35,196 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
+   "description": "The folklore says pick C when stuck. Across 35,210 four-option questions here, C comes third, and all four positions sit within 1.2 points.",
    "h1": [
     "Is C the Most Common Answer? We Counted 35,052 Questions"
    ],
    "h2Count": 12,
-   "h2Hash": "c56171aaf1c6",
+   "h2Hash": "c6b3e6cb3c35",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10578,8 +10578,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "d021885a3107",
-   "ogHash": "15c9ba76c389",
+   "schemaHash": "4d563ce039e7",
+   "ogHash": "3461b2b5bed3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10739,12 +10739,12 @@
   },
   "/in/blog/only-one-question-in-seven-is-hard": {
    "title": "Only One Question in Seven Is Hard | TakeMockTest",
-   "description": "Across the 36,489 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
+   "description": "Across the 36,503 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
    "h1": [
     "Only One Question in Seven Is Hard"
    ],
    "h2Count": 12,
-   "h2Hash": "490705cc66ee",
+   "h2Hash": "6d77b573ae8d",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10754,14 +10754,14 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "61efb539edd8",
-   "ogHash": "47af7630ea41",
+   "schemaHash": "6653ef3769c5",
+   "ogHash": "ad128592fe31",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,701 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,702 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10776,8 +10776,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "6c78a3687fa7",
-   "ogHash": "673082c5c757",
+   "schemaHash": "5367ff5c6b89",
+   "ogHash": "c460a1c8319a",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -11458,7 +11458,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "3893aa129f4b",
+   "schemaHash": "1acd4795ef6b",
    "ogHash": "5b3a8dd0e9fc",
    "sitemap": true,
    "robots": "index, follow"
@@ -12309,7 +12309,7 @@
   },
   "/in/ca-foundation/exam-pattern": {
    "title": "CA Foundation Exam Pattern 2026: Marks &amp; Duration",
-   "description": "CA Foundation exam pattern: 30 questions, 30 marks, 36 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "CA Foundation exam pattern: 100 questions, 100 marks, 120 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
    "h1": [
     "CA Foundation Exam Pattern"
    ],
@@ -12322,8 +12322,8 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "639010477dc5",
-   "ogHash": "3bd6c4c19f50",
+   "schemaHash": "a7da6d937c97",
+   "ogHash": "a1202d8c164c",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -12343,7 +12343,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "18b5ece189b2",
+   "schemaHash": "b695d857cd03",
    "ogHash": "588a7c782946",
    "sitemap": true,
    "robots": "index, follow"
@@ -12726,7 +12726,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "1ba7a7c95a5b",
+   "schemaHash": "ef2e79644f21",
    "ogHash": "1e3921982b32",
    "sitemap": true,
    "robots": "index, follow"
@@ -17277,7 +17277,7 @@
   },
   "/in/cma-foundation/exam-pattern": {
    "title": "CMA Foundation Exam Pattern 2026: Marks &amp; Duration",
-   "description": "CMA Foundation exam pattern: 30 questions, 30 marks, 36 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
+   "description": "CMA Foundation exam pattern: 50 questions, 100 marks, 60 minutes, section-wise marks, negative marking and time per question, checked against the official notification.",
    "h1": [
     "CMA Foundation Exam Pattern"
    ],
@@ -17290,8 +17290,8 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "0796781bc949",
-   "ogHash": "63266ef7fa87",
+   "schemaHash": "0875f2585a93",
+   "ogHash": "876aa74f99e6",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -17311,7 +17311,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "50b380263a00",
+   "schemaHash": "863382818e3e",
    "ogHash": "012b2e63a94f",
    "sitemap": true,
    "robots": "index, follow"
@@ -17626,7 +17626,7 @@
     "ListItem",
     "Question"
    ],
-   "schemaHash": "aa79d7c187c8",
+   "schemaHash": "8ea657b39ec0",
    "ogHash": "7f79154942ba",
    "sitemap": true,
    "robots": "index, follow"
@@ -60898,7 +60898,7 @@
   },
   "/in/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "89 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "90 free seating arrangement questions with answers and explanations, pooled from 27 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -60914,8 +60914,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "36ccb6a8c349",
-   "ogHash": "355d102acde3",
+   "schemaHash": "f8e3e4e9a7e7",
+   "ogHash": "b835e98073d0",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -61217,7 +61217,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,701 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,702 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -61233,7 +61233,7 @@
     "Question"
    ],
    "schemaHash": "7094ac78a26b",
-   "ogHash": "bd29fd8fd506",
+   "ogHash": "f6bfd874cdee",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -85806,8 +85806,8 @@
    "h1": [
     "SSC Selection Post"
    ],
-   "h2Count": 10,
-   "h2Hash": "776430c3451e",
+   "h2Count": 9,
+   "h2Hash": "decf6f8604d6",
    "schemaTypes": [
     "Answer",
     "BreadcrumbList",
@@ -87460,7 +87460,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "23a1e95c8b2c",
+   "schemaHash": "8769d39d306a",
    "ogHash": "dc4999688e9d",
    "sitemap": true,
    "robots": "index, follow"
@@ -87566,7 +87566,7 @@
   },
   "/in/territorial-army/test/english-sectional-1": {
    "title": "Territorial Army English Mock Test 1: Free Practice",
-   "description": "Free Territorial Army English Mock Test 1: 9 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free Territorial Army English Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "Territorial Army English Mock Test 1"
    ],
@@ -87579,10 +87579,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "12201454a949",
-   "ogHash": "223a5b23f5b4",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "91e2ebdfa984",
+   "ogHash": "08cd0655a418",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/territorial-army/test/english-sectional-2/attempt": {
    "title": "Territorial Army English Sectional Test 2 | TakeMockTest",
@@ -87600,7 +87600,7 @@
   },
   "/in/territorial-army/test/english-sectional-2": {
    "title": "Territorial Army English Mock Test 2: Free Practice",
-   "description": "Free Territorial Army English Mock Test 2: 9 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free Territorial Army English Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "Territorial Army English Mock Test 2"
    ],
@@ -87613,10 +87613,10 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "81b788c28d1c",
-   "ogHash": "31406c0635e5",
-   "sitemap": false,
-   "robots": "noindex, follow"
+   "schemaHash": "fb212454cabf",
+   "ogHash": "07bacdac0e65",
+   "sitemap": true,
+   "robots": "index, follow"
   },
   "/in/territorial-army/test/reasoning-and-english-full-mock-1/attempt": {
    "title": "Territorial Army Reasoning and English Full Mock Test 1",
@@ -87634,7 +87634,7 @@
   },
   "/in/territorial-army/test/reasoning-and-english-full-mock-1": {
    "title": "Territorial Army Reasoning and English Full Mock Test 1",
-   "description": "Attempt Territorial Army Reasoning and English Full Mock Test 1: 21 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt Territorial Army Reasoning and English Full Mock Test 1: 28 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "Territorial Army Reasoning and English Full Mock Test 1"
    ],
@@ -87650,8 +87650,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "aa26673a6efd",
-   "ogHash": "83612db7f35d",
+   "schemaHash": "386230117e84",
+   "ogHash": "60e6169e196b",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -87671,7 +87671,7 @@
   },
   "/in/territorial-army/test/reasoning-and-english-full-mock-2": {
    "title": "Territorial Army Reasoning and English Full Mock Test 2",
-   "description": "Attempt Territorial Army Reasoning and English Full Mock Test 2: 21 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
+   "description": "Attempt Territorial Army Reasoning and English Full Mock Test 2: 28 questions, exam-pattern timing, negative marking, instant results, and topic-wise analysis.",
    "h1": [
     "Territorial Army Reasoning and English Full Mock Test 2"
    ],
@@ -87687,8 +87687,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "216b53fe3ecf",
-   "ogHash": "616b865ed6ff",
+   "schemaHash": "3b750791f9b1",
+   "ogHash": "44a5faa01bfb",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -87708,7 +87708,7 @@
   },
   "/in/territorial-army/test/reasoning-sectional-1": {
    "title": "Territorial Army Reasoning Mock Test 1: Free Practice",
-   "description": "Free Territorial Army Reasoning Mock Test 1: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free Territorial Army Reasoning Mock Test 1: 16 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "Territorial Army Reasoning Mock Test 1"
    ],
@@ -87721,8 +87721,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "8d3d3ee65cda",
-   "ogHash": "db1224b55b43",
+   "schemaHash": "0a874bd7d563",
+   "ogHash": "66a8a393fcac",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -87742,7 +87742,7 @@
   },
   "/in/territorial-army/test/reasoning-sectional-2": {
    "title": "Territorial Army Reasoning Mock Test 2: Free Practice",
-   "description": "Free Territorial Army Reasoning Mock Test 2: 12 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "description": "Free Territorial Army Reasoning Mock Test 2: 16 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
    "h1": [
     "Territorial Army Reasoning Mock Test 2"
    ],
@@ -87755,8 +87755,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "11770929f987",
-   "ogHash": "47a50871ff2c",
+   "schemaHash": "6fb20f51bd16",
+   "ogHash": "e8385a119179",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96896,7 +96896,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "d98289f5abef",
+   "schemaHash": "a98a84236d6d",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -99639,7 +99639,7 @@
   },
   "/ng/practice/seating-arrangement": {
    "title": "Seating Arrangement Questions with Answers 2026",
-   "description": "89 free seating arrangement questions with answers and explanations, pooled from 26 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "90 free seating arrangement questions with answers and explanations, pooled from 27 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Seating Arrangement Questions with Answers"
    ],
@@ -99655,8 +99655,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "f5a3f6cdaf75",
-   "ogHash": "00f309a8e862",
+   "schemaHash": "b7a78d937944",
+   "ogHash": "6cbcff6d0b48",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99958,7 +99958,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,701 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,702 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -99974,7 +99974,7 @@
     "Question"
    ],
    "schemaHash": "247b1b4780c8",
-   "ogHash": "f5002b7292a4",
+   "ogHash": "9681a6c39498",
    "sitemap": true,
    "robots": "index, follow"
   },

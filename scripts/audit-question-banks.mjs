@@ -594,7 +594,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('cds-elementary-mathematics-combined-') ? 36
     : file.startsWith('cds-english-combined-') ? 24
     : file.startsWith('afcat-verbal-numerical-and-reasoning-combined-') ? 36
-    : file.startsWith('territorial-army-reasoning-and-english-combined-') ? 21
+    : file.startsWith('territorial-army-reasoning-and-english-combined-') ? 28
     : file.startsWith('inet-english-and-reasoning-numerical-ability-combined-') ? 24
     : file.startsWith('agniveer-vayu-english-and-mathematics-combined-') ? 27
     : file.startsWith('navy-ssr-english-and-mathematics-combined-') ? 24

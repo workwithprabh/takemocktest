@@ -4654,11 +4654,11 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('afcat/reasoning-and-military-aptitude-sectional')
     ? 12
     : testId.includes('territorial-army/reasoning-and-english-full-mock')
-    ? 21
+    ? 28
     : testId.includes('territorial-army/reasoning-sectional')
-    ? 12
+    ? 16
     : testId.includes('territorial-army/english-sectional')
-    ? 9
+    ? 12
     : testId.includes('inet/english-and-reasoning-numerical-ability-full-mock')
     ? 24
     : testId.includes('inet/english-sectional')
@@ -6642,8 +6642,8 @@ const afcatVerbalNumericalAndReasoningLayout = [
   { section: 'Reasoning and Military Aptitude', count: 12 },
 ];
 const territorialArmyReasoningAndEnglishLayout = [
-  { section: 'Reasoning', count: 12 },
-  { section: 'English', count: 9 },
+  { section: 'Reasoning', count: 16 },
+  { section: 'English', count: 12 },
 ];
 const inetEnglishAndReasoningNumericalAbilityLayout = [
   { section: 'English', count: 12 },
