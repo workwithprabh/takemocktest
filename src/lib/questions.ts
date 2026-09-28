@@ -4604,13 +4604,13 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('acet/statistics-sectional')
     ? 10
     : testId.includes('ca-foundation/quantitative-aptitude-full-mock')
-    ? 30
+    ? 60
     : testId.includes('ca-foundation/business-mathematics-sectional')
-    ? 12
+    ? 24
     : testId.includes('ca-foundation/logical-reasoning-sectional')
-    ? 6
-    : testId.includes('ca-foundation/statistics-sectional')
     ? 12
+    : testId.includes('ca-foundation/statistics-sectional')
+    ? 24
     : testId.includes('cma-foundation/business-mathematics-and-statistics-full-mock')
     ? 30
     : testId.includes('cma-foundation/business-mathematics-sectional')
@@ -6610,9 +6610,9 @@ const acetMathematicsAndStatisticsLayout = [
   { section: 'Statistics', count: 10 },
 ];
 const caFoundationQuantitativeAptitudeLayout = [
-  { section: 'Business Mathematics', count: 12 },
-  { section: 'Logical Reasoning', count: 6 },
-  { section: 'Statistics', count: 12 },
+  { section: 'Business Mathematics', count: 24 },
+  { section: 'Logical Reasoning', count: 12 },
+  { section: 'Statistics', count: 24 },
 ];
 const cmaFoundationBusinessMathematicsAndStatisticsLayout = [
   { section: 'Business Mathematics', count: 12 },
