@@ -587,7 +587,7 @@ for (const { file, questions } of banks) {
     : file.startsWith('frm-part-1-quantitative-analysis-combined-') ? 20
     : file.startsWith('nism-series-v-a-mutual-fund-distributors-combined-') ? 20
     : file.startsWith('acet-mathematics-and-statistics-combined-') ? 20
-    : file.startsWith('ca-foundation-quantitative-aptitude-combined-') ? 30
+    : file.startsWith('ca-foundation-quantitative-aptitude-combined-') ? 60
     : file.startsWith('cma-foundation-business-mathematics-and-statistics-combined-') ? 30
     : file.startsWith('nda-mathematics-combined-') ? 36
     : file.startsWith('nda-general-ability-test-english-combined-') ? 24
