@@ -4678,15 +4678,15 @@ for (const [testId, questions] of Object.entries(CHECKED_TEST_BANKS)) {
     : testId.includes('navy-ssr/mathematics-sectional')
     ? 12
     : testId.includes('clat/english-legal-logical-quantitative-full-mock')
-    ? 30
+    ? 46
     : testId.includes('clat/english-language-sectional')
-    ? 8
+    ? 12
     : testId.includes('clat/legal-reasoning-sectional')
-    ? 10
+    ? 15
     : testId.includes('clat/logical-reasoning-sectional')
-    ? 8
+    ? 13
     : testId.includes('clat/quantitative-techniques-sectional')
-    ? 4
+    ? 6
     : testId.includes('ailet/english-and-logical-reasoning-full-mock')
     ? 24
     : testId.includes('ailet/english-sectional')
@@ -6658,10 +6658,10 @@ const navySsrEnglishAndMathematicsLayout = [
   { section: 'Mathematics', count: 12 },
 ];
 const clatEnglishLegalLogicalQuantitativeLayout = [
-  { section: 'English Language', count: 8 },
-  { section: 'Legal Reasoning', count: 10 },
-  { section: 'Logical Reasoning', count: 8 },
-  { section: 'Quantitative Techniques', count: 4 },
+  { section: 'English Language', count: 12 },
+  { section: 'Legal Reasoning', count: 15 },
+  { section: 'Logical Reasoning', count: 13 },
+  { section: 'Quantitative Techniques', count: 6 },
 ];
 // CUET UG runs more than one full mock (English and the General Aptitude
 // Test), and fullMockLayouts is keyed by exam slug, so the GAT paper needs
