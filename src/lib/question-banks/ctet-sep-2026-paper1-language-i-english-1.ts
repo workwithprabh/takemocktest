@@ -10,7 +10,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "options": [
       "To assign every child the same title",
       "To spark curiosity and guide children toward less-used books",
-      "To test whether children could memorise shelf numbers",
+      "To test whether the children could memorise all the shelf numbers",
       "To prevent children from recommending books"
     ],
     "correctIndex": 1,
@@ -33,9 +33,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nWhich change best shows that children became more independent readers?",
     "options": [
       "The librarian kept the cards",
-      "The garden remained behind the library",
+      "The reading garden remained behind the library building exactly as before",
       "They began adding their own questions and recommending unfamiliar books",
-      "Reading time stayed twenty minutes"
+      "The reading time stayed at twenty minutes each and every week of the year"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -81,9 +81,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nWhat can reasonably be inferred about the librarian’s final decision to stop choosing the questions?",
     "options": [
       "The support had achieved its purpose, so responsibility could shift to the children",
-      "The librarian no longer wanted children to read",
-      "All books had become identical",
-      "The reading garden was about to close"
+      "The librarian no longer wanted any of the children to be reading books at all any more",
+      "All of the books in the library had by then become quite identical to one another in content",
+      "The reading garden was about to be closed down by the school permanently that term"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -105,9 +105,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "question": "Passage: Every Friday, the children of Banyan Primary School spend twenty minutes in a small reading garden behind the library. One week, Mira noticed that the same two shelves were chosen again and again while books on insects, weather and machines were rarely opened. Instead of telling everyone what to read, the librarian placed three mystery cards on a table. Each card gave a curious question—why ants follow trails, how clouds hold water, and why bicycle gears differ in size—and pointed to several books that might help. By the end of the month, children were recommending unfamiliar books to one another and adding their own questions to a notice board. The librarian kept the cards but stopped choosing the questions herself.\n\nWhich title best captures the passage?",
     "options": [
       "Questions That Open New Shelves",
-      "The Lost Library Key",
-      "A Garden Without Books",
-      "How to Repair a Bicycle"
+      "The Key to the Lost Library",
+      "A Garden Without Any Books",
+      "How to Repair an Old Bicycle"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -128,7 +128,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhat did the students do before organising the clean-up?",
     "options": [
-      "They replaced the entire drainage system",
+      "They replaced the entire drainage system of the whole lane at once",
       "They mapped the lane and investigated where water and drains went",
       "They closed the market",
       "They planted a forest in the lane"
@@ -152,9 +152,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "easy",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhat was the purpose of the screens placed over the drains?",
     "options": [
-      "To stop all rain from falling",
+      "To stop all of the rain from falling on the lane at all",
       "To make puddles deeper",
-      "To measure the temperature of water",
+      "To measure the temperature of the water in the drain",
       "To catch larger litter before it entered the drains"
     ],
     "correctIndex": 3,
@@ -177,9 +177,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhy is the final chart important in the passage?",
     "options": [
       "It provided evidence that supported planning a larger repair",
-      "It proved flooding could never occur again",
-      "It replaced the need to observe rainfall",
-      "It showed that every drain should be sealed"
+      "It proved that the flooding could never possibly occur there again",
+      "It replaced any need to observe the rainfall in the lane at all",
+      "It showed that every single drain in the market should be sealed"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -200,10 +200,10 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nWhich statement is most accurate?",
     "options": [
-      "The students solved every cause of flooding permanently",
-      "The students did nothing except discuss litter",
-      "The students improved one cause of the problem but recognised that a larger solution was still needed",
-      "The market committee rejected all evidence"
+      "The students solved every single cause of the flooding permanently and for good",
+      "The students did nothing at all except discuss the litter problem",
+      "The students improved one cause but recognised that a larger solution was needed",
+      "The market committee rejected all of the evidence offered"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -224,7 +224,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "easy",
     "question": "Passage: At the edge of a crowded market stood a narrow lane that flooded after every heavy shower. Shopkeepers usually pushed the water away from their doors, but it soon flowed back. A group of students mapped the lane and found that leaves and plastic wrappers blocked two small drains. They also discovered that one drain ended beside a patch of bare soil where water could soak in. With permission, the group organised a clean-up and placed a simple screen over each drain to catch larger litter. They then recorded how long puddles remained after the next three showers. The flooding did not disappear, but the water drained faster. Their chart led the market committee to plan a larger drainage repair.\n\nIn the passage, “bare soil” is soil that is",
     "options": [
-      "completely underwater",
+      "completely underwater at all times of the year",
       "painted white",
       "inside a building",
       "not covered by paving or dense vegetation"
@@ -368,7 +368,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "In “The children who finished early helped arrange the books,” the clause “who finished early” functions as",
     "options": [
-      "an adverbial clause of time",
+      "an adverbial clause of time within the sentence",
       "an independent sentence",
       "a relative clause modifying “children”",
       "a noun phrase acting as object"
@@ -416,9 +416,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "Choose the sentence in which the pronoun reference is clearest.",
     "options": [
-      "When Anika met Sara, she returned it to her.",
+      "When Anika met Sara, she then returned it straight back to her",
       "She returned it when she met her.",
-      "After meeting, it was returned by her to her.",
+      "After the meeting, it was returned by her to her later on",
       "When Anika met Sara, Anika returned the notebook to her."
     ],
     "correctIndex": 3,
@@ -440,10 +440,10 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "A Class III learner says, “He go to school every day.” What is the most constructive teacher response?",
     "options": [
-      "Mock the learner’s error so it is never repeated",
-      "Acknowledge the meaning, recast the sentence naturally, and give chances to use the pattern again",
-      "Stop the learner from speaking until grammar is perfect",
-      "Treat the error as evidence that the learner has learned nothing"
+      "Mock the learner’s error in front of the class so that it is never repeated again",
+      "Acknowledge the meaning, recast the sentence, and give chances to use the pattern",
+      "Stop the learner from speaking at all until the grammar is entirely perfect every time",
+      "Treat the error as clear evidence that the learner has learned nothing at all"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -464,10 +464,10 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "Which activity best integrates listening and speaking?",
     "options": [
-      "Silent copying of a paragraph",
-      "Individual spelling drill with no oral component",
+      "Silent copying of a long paragraph from the class textbook into a notebook",
+      "An individual spelling drill with no oral component of any kind",
       "Pupils listen to a short set of directions and then explain the route to a partner",
-      "Reading a grammar rule without discussion"
+      "Reading out a grammar rule without any discussion of it at all"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -488,7 +488,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "easy",
     "question": "Why should a primary language teacher use age-appropriate stories with predictable patterns?",
     "options": [
-      "Stories eliminate the need for any interaction",
+      "Stories eliminate the need for any interaction at all in the classroom whatsoever",
       "Repeated meaningful language supports comprehension, participation and emerging fluency",
       "Predictability prevents all vocabulary learning",
       "Only factual lists develop language"
@@ -512,10 +512,10 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "A teacher asks pupils to infer the meaning of an unfamiliar word from the sentence and then confirm it in a dictionary. This develops",
     "options": [
-      "only handwriting speed",
+      "only the handwriting speed of each one of the pupils involved",
       "contextual word-solving combined with reference skills",
       "memorisation without meaning",
-      "avoidance of vocabulary strategies"
+      "the avoidance of all vocabulary strategies of any kind"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -536,10 +536,10 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "hard",
     "question": "Which reading question demands the highest level of inference?",
     "options": [
-      "“What is the character’s name?”",
-      "“On which day did the event occur?”",
-      "“Why might the character hide the letter even though the passage never states the reason directly?”",
-      "“Which word appears in the first line?”"
+      "“What is the name of the character who appears in the first paragraph?”",
+      "“On which day of the week did the event described occur in the passage?”",
+      "“Why might the character hide the letter when the passage never says why?”",
+      "“Which word appears in the very first line of the passage given?”"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -560,10 +560,10 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "A teacher wants pupils to improve paragraph coherence. Which task is most directly aligned?",
     "options": [
-      "Give four relevant sentences in mixed order and ask pupils to arrange and justify a logical sequence",
-      "Copy twenty isolated words",
-      "Circle all capital letters in a page",
-      "Memorise the alphabet backwards"
+      "Give four sentences in mixed order and ask pupils to arrange and justify them",
+      "Copy out twenty isolated words from the textbook page into a notebook",
+      "Circle all of the capital letters on a printed page of the textbook",
+      "Memorise the whole alphabet backwards in the correct order"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -584,7 +584,7 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "Which assessment gives the best evidence of a learner’s ability to participate in a conversation?",
     "options": [
-      "A multiple-choice spelling test only",
+      "A multiple-choice spelling test taken alone and nothing further at all",
       "A short paired interaction scored with clear speaking-and-listening criteria",
       "A handwriting sample only",
       "A silent reading speed score only"
@@ -680,9 +680,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "difficulty": "medium",
     "question": "A multilingual learner knows a concept in the home language but lacks the English term. Which teacher move is most supportive?",
     "options": [
-      "Reject the idea until it is expressed only in English",
-      "Prevent peers from helping with meaning",
-      "Let the learner explain the idea using available language, then supply and practise the English term",
+      "Reject the idea entirely until it can be expressed only in English by the learner",
+      "Prevent the other peers from helping at all with the meaning of the idea at all",
+      "Let the learner explain using available language, then supply the English term",
       "Change the topic immediately"
     ],
     "correctIndex": 2,
@@ -705,9 +705,9 @@ export const CTET_SEP_2026_PAPER1_LANGUAGE_I_ENGLISH_1: Question[] = [
     "question": "During shared reading, a teacher pauses before a repeated phrase and invites children to complete it. The main purpose is to",
     "options": [
       "encourage prediction and active participation in a meaningful text",
-      "test isolated handwriting",
-      "prevent children from using context",
-      "replace comprehension with random guessing"
+      "test the isolated handwriting of each of the children in the whole class",
+      "prevent the children from using any context at all to help them read",
+      "replace all comprehension with entirely random guessing of words instead"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
