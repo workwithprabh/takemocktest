@@ -13362,6 +13362,7 @@ export const EXAMS: Record<ExamSlug, ExamConfig> = {
         tests: [
           { id: 'computer-science-applications-full-mock-1', name: 'Computer Science and Applications Full Mock Test 1', kind: 'full-length', status: 'checked', duration: 180, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '1 September 2026' },
           { id: 'paper-i-teaching-and-research-aptitude-sectional-1', name: 'Paper I (Teaching & Research Aptitude) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Paper I (Teaching & Research Aptitude)', duration: 60, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '1 September 2026' },
+          { id: 'paper-i-teaching-and-research-aptitude-sectional-2', name: 'Paper I (Teaching & Research Aptitude) Sectional Test 2', kind: 'sectional', status: 'checked', section: 'Paper I (Teaching & Research Aptitude)', duration: 60, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '28 September 2026' },
           { id: 'paper-ii-computer-science-and-applications-sectional-1', name: 'Paper II (Computer Science and Applications) Sectional Test 1', kind: 'sectional', status: 'checked', section: 'Paper II (Computer Science and Applications)', duration: 120, marksPerCorrect: 2, negativeMarking: 0, checkedOn: '1 September 2026' },
         ],
       },

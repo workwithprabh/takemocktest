@@ -1,6 +1,6 @@
 {
  "capturedAt": "2026-09-28",
- "pageCount": 5708,
+ "pageCount": 5710,
  "pages": {
   "/404": {
    "title": "Page Not Found | TakeMockTest",
@@ -10563,12 +10563,12 @@
   },
   "/in/blog/is-c-the-most-common-answer": {
    "title": "Is C the Most Common Answer? We Counted 35,052 Questions",
-   "description": "The folklore says pick C when stuck. Across 35,394 four-option questions here, C comes third, and all four positions sit within 1.1 points.",
+   "description": "The folklore says pick C when stuck. Across 35,444 four-option questions here, C comes third, and all four positions sit within 1.1 points.",
    "h1": [
     "Is C the Most Common Answer? We Counted 35,052 Questions"
    ],
    "h2Count": 12,
-   "h2Hash": "29a8e53b6f09",
+   "h2Hash": "2827cfc9f659",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10578,8 +10578,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "64fb216fe01e",
-   "ogHash": "806a5421e538",
+   "schemaHash": "7b7eddd63fe2",
+   "ogHash": "b17e6c17e54f",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -10739,12 +10739,12 @@
   },
   "/in/blog/only-one-question-in-seven-is-hard": {
    "title": "Only One Question in Seven Is Hard | TakeMockTest",
-   "description": "Across the 36,687 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
+   "description": "Across the 36,737 questions published here, 14% are graded hard. A paper that feels mostly difficult is usually a paper you are sitting wrong.",
    "h1": [
     "Only One Question in Seven Is Hard"
    ],
    "h2Count": 12,
-   "h2Hash": "36d6be7bd5e5",
+   "h2Hash": "98ad4bb4a732",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -10754,14 +10754,14 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "0aef6286de7b",
-   "ogHash": "668aa1728be7",
+   "schemaHash": "968c9f3321a1",
+   "ogHash": "4345cbd01d52",
    "sitemap": true,
    "robots": "index, follow"
   },
   "/in/blog/practice-by-topic-instead-of-by-exam": {
    "title": "Practice by Topic Instead of by Exam | TakeMockTest",
-   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,741 questions across 40 topics.",
+   "description": "A full mock scatters a handful of questions per topic across a whole paper. The same corpus cut by topic gives you 8,746 questions across 40 topics.",
    "h1": [
     "Practice by Topic Instead of by Exam"
    ],
@@ -10776,8 +10776,8 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "0e59bc0543aa",
-   "ogHash": "e3c3d5e1b42f",
+   "schemaHash": "8af49778362d",
+   "ogHash": "859fa8fa4e33",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -11426,7 +11426,7 @@
     "Understanding Negative Marking: A Complete Guide"
    ],
    "h2Count": 15,
-   "h2Hash": "e37c19111514",
+   "h2Hash": "3eaca8bb3b93",
    "schemaTypes": [
     "Answer",
     "Article",
@@ -11436,7 +11436,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "437bf94c07bb",
+   "schemaHash": "acc1896b6a7e",
    "ogHash": "8ca23cbdc15b",
    "sitemap": true,
    "robots": "index, follow"
@@ -60158,7 +60158,7 @@
   },
   "/in/practice/data-interpretation": {
    "title": "Data Interpretation Questions with Answers 2026",
-   "description": "450 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "455 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
@@ -60174,8 +60174,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "e59ba23ccde5",
-   "ogHash": "293ee4ad629f",
+   "schemaHash": "b30cce86a760",
+   "ogHash": "95d932c94ec3",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -61217,7 +61217,7 @@
   },
   "/in/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,741 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,746 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -61233,7 +61233,7 @@
     "Question"
    ],
    "schemaHash": "7094ac78a26b",
-   "ogHash": "365443b59c7d",
+   "ogHash": "88cccfb1c903",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -90879,7 +90879,7 @@
     "Organization",
     "Question"
    ],
-   "schemaHash": "d140121f1a18",
+   "schemaHash": "086f910d8c94",
    "ogHash": "f7790afdb2e3",
    "sitemap": true,
    "robots": "index, follow"
@@ -91034,6 +91034,40 @@
    ],
    "schemaHash": "58b0a22ac0e4",
    "ogHash": "2c746aba371a",
+   "sitemap": true,
+   "robots": "index, follow"
+  },
+  "/in/ugc-net/test/paper-i-teaching-and-research-aptitude-sectional-2/attempt": {
+   "title": "UGC NET Paper I (Teaching &amp; Research Aptitude) Sectional Test 2",
+   "description": "Attempt the UGC NET Paper I (Teaching &amp; Research Aptitude) Sectional Test 2 and review your result on this device.",
+   "h1": [
+    "Preparing your test…"
+   ],
+   "h2Count": 4,
+   "h2Hash": "17f4160d2654",
+   "schemaTypes": [],
+   "schemaHash": "e3b0c44298fc",
+   "ogHash": "cb0e2d0dc5db",
+   "sitemap": false,
+   "robots": "noindex, follow"
+  },
+  "/in/ugc-net/test/paper-i-teaching-and-research-aptitude-sectional-2": {
+   "title": "UGC NET Paper I (Teaching &amp; Research Aptitude) Mock Test 2",
+   "description": "Free UGC NET Paper I (Teaching &amp; Research Aptitude) Mock Test 2: 50 questions with answers and explanations, exam-style timing and instant scoring. No sign-up.",
+   "h1": [
+    "UGC NET Paper I (Teaching & Research Aptitude) Mock Test 2"
+   ],
+   "h2Count": 11,
+   "h2Hash": "78cee90f28f3",
+   "schemaTypes": [
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "Quiz",
+    "Thing"
+   ],
+   "schemaHash": "1e4f2cf09c7c",
+   "ogHash": "b401b1b336f2",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -96896,7 +96930,7 @@
     "Question",
     "WebSite"
    ],
-   "schemaHash": "e75c7337cfc8",
+   "schemaHash": "eddf2c2a53d9",
    "ogHash": "274ad4a28c3f",
    "sitemap": true,
    "robots": "index, follow"
@@ -98899,7 +98933,7 @@
   },
   "/ng/practice/data-interpretation": {
    "title": "Data Interpretation Questions with Answers 2026",
-   "description": "450 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
+   "description": "455 free data interpretation questions with answers and explanations, pooled from 52 competitive exams. Timed practice, no negative marking, no sign-up.",
    "h1": [
     "Data Interpretation Questions with Answers"
    ],
@@ -98915,8 +98949,8 @@
     "Quiz",
     "Thing"
    ],
-   "schemaHash": "b7a7831d5fa5",
-   "ogHash": "2593925a3c11",
+   "schemaHash": "abbba79429ee",
+   "ogHash": "8c3c9fa4d6f7",
    "sitemap": true,
    "robots": "index, follow"
   },
@@ -99958,7 +99992,7 @@
   },
   "/ng/practice": {
    "title": "Topic-wise Practice Questions 2026: Free Tests",
-   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,741 questions with explanations, drawn from every exam on the site. No negative marking.",
+   "description": "Free topic-wise practice for 40 quantitative, reasoning and English topics, 8,746 questions with explanations, drawn from every exam on the site. No negative marking.",
    "h1": [
     "Topic-wise Practice Questions 2026"
    ],
@@ -99974,7 +100008,7 @@
     "Question"
    ],
    "schemaHash": "247b1b4780c8",
-   "ogHash": "94255ef3cd09",
+   "ogHash": "8ca73f48ea95",
    "sitemap": true,
    "robots": "index, follow"
   },

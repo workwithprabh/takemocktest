@@ -827,6 +827,7 @@ import { NIPER_JEE_2026_MASTERS_SECTION_B_1 } from './question-banks/niper-jee-2
 import { AIAPGET_2026_HOMOEOPATHY_1 } from './question-banks/aiapget-2026-homoeopathy-1';
 import { AIAPGET_2026_HOMOEOPATHY_2 } from './question-banks/aiapget-2026-homoeopathy-2';
 import { UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1 } from './question-banks/ugc-net-june-2026-paper-1-teaching-research-aptitude-1';
+import { UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_2 } from './question-banks/ugc-net-june-2026-paper-1-teaching-research-aptitude-2';
 import { UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1 } from './question-banks/ugc-net-june-2026-computer-science-applications-1';
 import { CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_1 } from './question-banks/cuet-pg-2026-coqp12-general-management-1';
 import { CUET_PG_2026_COQP12_GENERAL_MANAGEMENT_2 } from './question-banks/cuet-pg-2026-coqp12-general-management-2';
@@ -3431,6 +3432,7 @@ const UGC_NET_TESTS: Record<string, Question[]> = {
     ...UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1,
   ],
   'ugc-net/paper-i-teaching-and-research-aptitude-sectional-1': UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_1,
+  'ugc-net/paper-i-teaching-and-research-aptitude-sectional-2': UGC_NET_JUNE_2026_PAPER_1_TEACHING_RESEARCH_APTITUDE_2,
   'ugc-net/paper-ii-computer-science-and-applications-sectional-1': UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1,
 };
 const CUET_PG_TESTS: Record<string, Question[]> = {
