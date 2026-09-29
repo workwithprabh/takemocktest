@@ -32,9 +32,9 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "easy",
     "question": "An offer becomes a promise when it is:",
     "options": [
-      "communicated to the offeree",
+      "communicated to the offeree concerned in the matter",
       "accepted by the person to whom it is made",
-      "put in writing",
+      "put into writing and signed by both parties",
       "registered with a public authority concerned"
     ],
     "correctIndex": 1,
@@ -58,7 +58,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "a binding offer the shopkeeper cannot withdraw",
       "an invitation to offer",
-      "an accepted contract",
+      "an accepted and binding contract",
       "a counter-offer"
     ],
     "correctIndex": 1,
@@ -81,8 +81,8 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "Under the Indian Contract Act, the communication of an acceptance is complete as against the proposer when it is:",
     "options": [
       "put into a course of transmission so as to be out of the acceptor's power",
-      "actually received by the proposer himself in the due course of the post",
-      "signed by the acceptor in the presence of the proposer or of his agent",
+      "actually received by the proposer himself in the due course of the post in fact",
+      "signed by the acceptor in the presence of the proposer or of his own agent",
       "witnessed by two persons"
     ],
     "correctIndex": 0,
@@ -104,10 +104,10 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A proposal may be revoked at any time before:",
     "options": [
-      "the proposer changes his own mind about the whole matter of the offer",
+      "the proposer changes his own mind about the whole matter of the offer made",
       "the communication of its acceptance is complete as against the proposer",
-      "the goods are delivered to the acceptor by the proposer in due course",
-      "the contract is registered with the proper authority in due course"
+      "the goods are delivered to the acceptor by the proposer in due course of trade",
+      "the contract is registered with the proper authority in due course of law"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -131,7 +131,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "only from the promisee and from nobody else in any case",
       "from the promisee or any other person, at the desire of the promisor",
       "only from a stranger to the consideration and nobody else",
-      "only in the form of money or money’s worth and nothing else"
+      "only in the form of money or money’s worth and nothing else whatever"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -155,7 +155,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "always invalid",
       "valid, since the definition covers an act already done at the promisor's desire",
       "valid only in commercial contracts made between merchants in the course of trade",
-      "valid only if in writing"
+      "valid only if it is put into writing and signed by both of the parties concerned"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -203,7 +203,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "nothing at all",
       "reimbursement from the minor's property, not from the minor personally",
       "the full price from the minor personally in each and every case without exception",
-      "double the price by way of a penalty imposed upon the minor personally"
+      "double the price by way of a penalty imposed upon the minor personally instead"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -224,10 +224,10 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "Consent obtained by undue influence renders the agreement:",
     "options": [
-      "void ab initio and entirely of no effect at all in the law",
+      "void ab initio and entirely of no effect at all in the law whatever",
       "voidable at the option of the party whose consent was so caused",
-      "valid in all respects and fully enforceable against him",
-      "illegal and therefore wholly unenforceable in law in every case"
+      "valid in all respects and fully enforceable against him in every case",
+      "illegal and therefore wholly unenforceable in law in every single case"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -248,9 +248,9 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "Coercion under the Indian Contract Act includes:",
     "options": [
-      "a mere commercial threat to break an existing contract between them",
+      "a mere commercial threat to break an existing contract made between the two parties",
       "committing or threatening an act forbidden by the penal law, or detaining property",
-      "persuasion by a trusted adviser",
+      "persuasion by a trusted adviser of many years’ standing in the family business itself",
       "a false statement of fact"
     ],
     "correctIndex": 1,
@@ -274,8 +274,8 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "the value of the subject matter of the agreement",
       "a matter of fact essential to the agreement",
-      "a foreign law they should have known",
-      "the profitability of the bargain"
+      "a foreign law that they should have known about",
+      "the likely profitability of the bargain struck"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -392,10 +392,10 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A contract to do an act which after formation becomes impossible or unlawful, through no fault of the promisor, becomes:",
     "options": [
-      "voidable at the option of the promisee",
+      "voidable at the option of the promisee in the matter",
       "void when the act becomes impossible or unlawful",
       "enforceable with damages",
-      "binding despite the impossibility"
+      "binding in spite of the supervening impossibility that arose"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -440,10 +440,10 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A person who finds goods belonging to another and takes them into custody is subject to:",
     "options": [
-      "no obligation whatsoever",
+      "no obligation whatsoever towards the owner",
       "the same responsibility as a bailee",
       "the liability of a trespasser and nothing else",
-      "the duties of an agent"
+      "the duties of an agent towards the owner"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -466,8 +466,8 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "only two parties to it and no third party at all involved in the matter",
       "three parties and an existing or contemplated primary liability of the principal debtor",
-      "no consideration at all",
-      "a promise that is limited to insurance risks alone and nothing further besides"
+      "no consideration at all moving from either of the two sides involved in the matter",
+      "a promise that is limited to insurance risks alone and nothing further at all besides that"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -488,10 +488,10 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A bailment involves delivery of goods by one person to another:",
     "options": [
-      "with an outright transfer of the ownership in the goods to the other party",
+      "with an outright transfer of the ownership in the goods to the other party entirely",
       "for a purpose, on the condition that they be returned or disposed of as directed",
-      "as an outright gift made to the other person without any return at all",
-      "in exchange for shares issued by the company concerned in the whole matter"
+      "as an outright gift made to the other person without any return at all whatsoever",
+      "in exchange for shares issued by the company concerned in the whole matter at all"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -512,9 +512,9 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A pledge is a bailment of goods as security for:",
     "options": [
-      "the safe custody of the goods only",
+      "the safe custody of the goods only and nothing more",
       "payment of a debt or performance of a promise",
-      "carriage to another place",
+      "the carriage of them to another place altogether",
       "repair and return"
     ],
     "correctIndex": 1,
@@ -536,10 +536,10 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "An agent's authority to do an act necessarily implies authority to do:",
     "options": [
-      "any act the agent finds convenient",
+      "any act at all that the agent finds convenient",
       "every lawful thing necessary to do that act",
       "acts expressly forbidden by the principal himself",
-      "acts outside the scope of the agency"
+      "acts lying wholly outside the scope of the agency"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -611,7 +611,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "the seller warrants every single quality of the goods that he sells to the buyer",
       "the buyer must satisfy himself as to the goods, subject to statutory exceptions",
       "the buyer may reject the goods for any reason whatever that he likes to give",
-      "the seller bears all risk after delivery"
+      "the seller bears all of the risk in the goods after delivery to the buyer entirely"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -657,9 +657,9 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "Unless otherwise agreed, risk in goods sold passes:",
     "options": [
       "on delivery, regardless of property",
-      "on payment of the price only",
+      "on payment of the price only and nothing more",
       "with the property in the goods",
-      "on despatch of the invoice"
+      "on despatch of the invoice to the buyer"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -704,8 +704,8 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A cheque is best described as:",
     "options": [
-      "a promissory note payable to bearer on demand at sight",
-      "an order to deliver goods",
+      "a promissory note payable to the bearer on demand at sight in any place",
+      "an order to deliver the goods to the bearer on demand at sight anywhere",
       "a bill of exchange drawn on a specified banker and payable on demand",
       "a certificate of deposit"
     ],
@@ -730,8 +730,8 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "makes the cheque payable only through a bank account, not over the counter",
       "makes the cheque wholly non-transferable in each and every case without exception",
-      "increases the amount payable",
-      "converts the cheque into a promissory note"
+      "increases the amount that is payable upon the cheque itself considerably",
+      "converts the cheque into a promissory note by operation of law"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -800,8 +800,8 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A holder in due course enjoys a better title than his transferor because he takes the instrument:",
     "options": [
-      "after maturity and with full notice of the defect in the title of the transferor",
-      "by simply finding it lying somewhere and keeping it for his own use thereafter",
+      "after maturity and with full notice of the defect in the title of the transferor himself",
+      "by simply finding it lying somewhere and keeping it for his own use thereafter alone",
       "as a gift made by the original payee of the instrument concerned in the matter",
       "for consideration, before maturity and in good faith without notice of any defect"
     ],
@@ -825,9 +825,9 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "Under the Companies Act, a company incorporated under the Act is:",
     "options": [
       "a separate legal person distinct from its members",
-      "an association without any legal identity",
-      "the same person as its shareholders",
-      "a partnership by another name"
+      "an association without any separate legal identity at all",
+      "the very same legal person as its shareholders in law",
+      "a partnership firm going by another name entirely"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -849,9 +849,9 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "A private company is distinguished from a public company principally by:",
     "options": [
       "having no share capital",
-      "an unlimited number of its members in each and every case without any exception",
+      "an unlimited number of its members in each and every case without any exception at all",
       "restrictions on transfer of shares and a prohibition on inviting public subscription",
-      "an exemption from filing accounts"
+      "an exemption from filing its annual accounts with the Registrar of Companies each year"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -920,7 +920,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "The articles of association of a company are best described as:",
     "options": [
-      "a contract made with outsiders to the company",
+      "a contract made with the outsiders to the company in every case",
       "the audited accounts",
       "the regulations for the internal management of the company",
       "the prospectus"
@@ -1042,7 +1042,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "the firm and its partners cannot enforce contractual rights by suit",
       "the firm is illegal",
-      "the partners lose the limited liability they otherwise had",
+      "the partners lose the limited liability that they would otherwise have had",
       "the firm cannot open a bank account"
     ],
     "correctIndex": 0,
@@ -1064,7 +1064,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "The distinguishing feature of a Limited Liability Partnership is that:",
     "options": [
-      "every partner is liable for all firm debts without limit",
+      "every partner is liable for all of the firm’s debts without any limit whatever at all",
       "it cannot own property",
       "it is a body corporate whose partners' liability is limited, with perpetual succession",
       "it must convert to a company within five years"
@@ -1088,7 +1088,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "Dissolution of a partnership firm means:",
     "options": [
-      "retirement of one partner while the firm continues",
+      "the retirement of one of the partners while the firm itself continues",
       "admission of a new partner",
       "a change in the profit-sharing ratio",
       "dissolution of the partnership between all the partners of the firm"
@@ -1114,7 +1114,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "buys goods for consideration for personal use, including hire of services",
       "buys goods for resale",
-      "receives goods as a free gift from a stranger",
+      "receives the goods as a free gift from a complete stranger to him entirely",
       "manufactures the goods himself"
     ],
     "correctIndex": 0,
@@ -1162,7 +1162,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "only the retailer",
       "only the transporter",
-      "only the advertising agency",
+      "only the advertising agency that promoted the product concerned in the matter at all",
       "the manufacturer, the service provider or the seller, depending on the defect alleged"
     ],
     "correctIndex": 3,
@@ -1186,7 +1186,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "transactions in electronic form are not denied legal effect merely because of their form",
       "paper documents become invalid",
-      "only government bodies may transact online",
+      "only the government bodies may transact any business at all online in this way at all",
       "electronic contracts require registration"
     ],
     "correctIndex": 0,
@@ -1211,7 +1211,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "publish only their annual accounts",
       "answer only parliamentary questions",
       "provide information to citizens on request, subject to specified exemptions",
-      "disclose all of the information without any exception whatsoever at all"
+      "disclose all of the information without any exception whatsoever at all times"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1281,7 +1281,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "The rule in Foss v Harbottle, as reflected in Indian company law, holds that the proper plaintiff for a wrong done to a company is:",
     "options": [
       "any individual shareholder of the company acting alone",
-      "the Registrar of Companies for the State concerned in it",
+      "the Registrar of Companies for the State concerned in the whole matter here",
       "the company itself, subject to exceptions such as oppression and mismanagement",
       "the auditor appointed by the company itself for the year"
     ],
@@ -1378,7 +1378,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "an invention",
       "a new industrial process",
-      "an original literary work of authorship fixed in writing",
+      "an original literary work of authorship that is fixed in some written form",
       "a mark capable of distinguishing the goods of one undertaking from another’s"
     ],
     "correctIndex": 3,
@@ -1403,7 +1403,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "an express constitutional provision declaring its law binding on all courts",
       "convention alone",
       "the consent of the parties",
-      "the Code of Civil Procedure as it has been enacted by Parliament in force"
+      "the Code of Civil Procedure as it has been enacted by Parliament in force today"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
