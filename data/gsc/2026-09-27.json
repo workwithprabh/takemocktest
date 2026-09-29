@@ -1,0 +1,32 @@
+[
+ {
+  "clicks": 0,
+  "impressions": 2,
+  "page": "/in/sbi-clerk/mock-test",
+  "position": 66.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 2,
+  "page": "/in/ssc-chsl/mock-test",
+  "position": 21.5
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/blog/speed-vs-accuracy-in-timed-tests",
+  "position": 10.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/rrb-je/mock-test",
+  "position": 16.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/ssc-chsl/syllabus",
+  "position": 30.0
+ }
+]

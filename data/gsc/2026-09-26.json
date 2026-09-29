@@ -1,0 +1,32 @@
+[
+ {
+  "clicks": 0,
+  "impressions": 6,
+  "page": "/in/rrb-je/mock-test",
+  "position": 15.67
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/sbi-clerk/mock-test",
+  "position": 58.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/sbi-po/syllabus",
+  "position": 28.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/ssc-cgl/admit-card",
+  "position": 84.0
+ },
+ {
+  "clicks": 0,
+  "impressions": 1,
+  "page": "/in/ssc-chsl/syllabus",
+  "position": 29.0
+ }
+]
