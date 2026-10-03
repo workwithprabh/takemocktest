@@ -56,7 +56,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "In classical homoeopathic case analysis, “totality of symptoms” refers to:",
     "options": [
-      "only the chief complaint",
+      "only the chief complaint of the patient and nothing further at all",
       "the characteristic symptom picture considered as a whole",
       "only laboratory values",
       "only the disease name"
@@ -104,8 +104,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "The principle of the minimum dose aims to use:",
     "options": [
-      "the largest tolerable material dose in every case",
-      "a fixed dose unrelated to the case",
+      "the largest tolerable material dose in each and every single case without exception",
+      "a fixed dose that is quite unrelated to the case before the treating physician",
       "only unprepared crude substances",
       "the least quantity judged sufficient to evoke the desired medicinal response"
     ],
@@ -129,9 +129,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "The “vital force” in Hahnemannian philosophy is described as a:",
     "options": [
       "dynamic principle maintaining the living organism in harmonious function",
-      "specific anatomical nerve",
-      "blood protein",
-      "bacterial species"
+      "a specific anatomical nerve lying within the body of the whole living organism",
+      "a blood protein that circulates in the plasma of the whole organism",
+      "a bacterial species that is found in that organism itself"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -179,7 +179,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
       "blood group only",
       "anatomical height",
       "capacity to react to influences, including medicinal stimuli",
-      "serum sodium concentration alone"
+      "the serum sodium concentration taken entirely alone and by itself"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -200,7 +200,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "A continuing environmental or behavioural factor that perpetuates illness despite otherwise suitable care is classically termed a:",
     "options": [
-      "proving symptom only",
+      "proving symptom only and nothing else",
       "placebo rubric",
       "potency scale",
       "maintaining cause / obstacle to cure"
@@ -224,9 +224,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "Why are modalities such as “better from warmth” or “worse from motion” important in classical individualization?",
     "options": [
-      "They replace the entire case history",
+      "They replace the entire case history altogether in each and every case",
       "They are always laboratory diagnoses",
-      "They determine the patient’s blood group",
+      "They determine the blood group of the patient entirely by themselves in every case",
       "They help characterize how a symptom changes under specific conditions"
     ],
     "correctIndex": 3,
@@ -249,9 +249,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "In case taking, a “concomitant” symptom is one that:",
     "options": [
       "occurs along with another principal symptom",
-      "must occur years earlier",
-      "is always caused by medication",
-      "is identical to a laboratory value"
+      "must have occurred some years earlier in time",
+      "is always caused by the medication given to the patient",
+      "is identical to a laboratory value that is obtained"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -272,9 +272,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Individualization in homoeopathy means selecting a remedy based on:",
     "options": [
-      "the diagnosis name alone in every case",
+      "the diagnosis name alone in each and every single case without any exception at all",
       "age alone",
-      "the distinctive total symptom pattern of the person, not merely the diagnostic label",
+      "the distinctive total symptom pattern of the person, not the diagnostic label",
       "one laboratory value only"
     ],
     "correctIndex": 2,
@@ -298,7 +298,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "options": [
       "ignored in every case",
       "treated as a separate person",
-      "automatically the only prescribing symptom",
+      "automatically the only prescribing symptom that is ever used",
       "considered in relation to the broader symptom totality"
     ],
     "correctIndex": 3,
@@ -344,10 +344,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "hard",
     "question": "Which statement best distinguishes a disease diagnosis from the homoeopathic totality?",
     "options": [
-      "The diagnosis classifies the disorder; the totality organizes the individual characteristic symptoms used for remedy differentiation",
+      "The diagnosis classifies the disorder; the totality organizes individual characteristic symptoms",
       "They are always identical terms",
-      "The totality contains only pathology names",
-      "The diagnosis contains every individual modality by definition"
+      "The totality contains only the pathology names and nothing further whatever at all besides them",
+      "The diagnosis contains every single individual modality by definition alone in each and every case"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -368,10 +368,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "In a proving, an observation is most useful when it is:",
     "options": [
-      "reported without context",
+      "reported without any context of any kind at all whatever being given",
       "carefully recorded with timing, circumstances and characteristic features",
-      "invented after the study",
-      "limited to the remedy name only"
+      "invented afterwards once the whole study is over and is entirely completed",
+      "limited to the remedy name only and nothing else besides it at all whatsoever"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -393,8 +393,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "The term “generals” in classical homoeopathic analysis often refers to features that characterize:",
     "options": [
       "only one finger",
-      "only one imaging slice",
-      "only the drug manufacturer",
+      "only one single imaging slice of the body of the patient concerned",
+      "only the drug manufacturer of the remedy that is concerned in the case",
       "the person as a whole, such as thermal state or broad tendencies"
     ],
     "correctIndex": 3,
@@ -417,7 +417,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "When several remedies cover a diagnostic condition, classical homoeopathic differentiation is most strongly guided by:",
     "options": [
       "characteristic individual symptoms and modalities",
-      "alphabetical order of remedy names",
+      "the alphabetical order of all of the remedy names in the list",
       "package price alone",
       "the shortest remedy name"
     ],
@@ -440,8 +440,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Case taking in classical homoeopathy aims first to obtain:",
     "options": [
-      "a predetermined remedy name",
-      "only a billing code",
+      "a predetermined remedy name that has been chosen in advance of the whole case here",
+      "only a billing code for the consultation that is given to the sick patient",
       "only family surname",
       "a comprehensive and accurate account of the patient’s symptoms and circumstances"
     ],
@@ -465,9 +465,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "The term “remedy reaction” in classical follow-up is assessed by comparing subsequent changes with:",
     "options": [
       "the pre-treatment symptom picture and overall course",
-      "a random unrelated case",
-      "only the colour of the medicine bottle",
-      "the calendar month alone"
+      "a random and entirely unrelated case of another patient",
+      "only the colour of the medicine bottle that is used",
+      "the calendar month alone and nothing else besides"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -851,7 +851,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
       "Hepar sulphuris calcareum",
       "Pulsatilla",
       "Gelsemium",
-      "Natrum muriaticum"
+      "Natrum muriaticum alone only"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1091,7 +1091,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
       "a potency scale",
       "a pharmacy vehicle",
       "a symptom heading under which remedies are listed",
-      "a pathological specimen"
+      "a pathological specimen of the tissue examined in the laboratory"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1112,9 +1112,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Repertorization is the process of:",
     "options": [
-      "manufacturing mother tinctures",
-      "systematically comparing selected symptoms with repertory entries to narrow remedy possibilities",
-      "measuring blood pressure",
+      "manufacturing the mother tinctures in the pharmacy before they are ever dispensed at all",
+      "systematically comparing selected symptoms with repertory entries to narrow the remedies",
+      "measuring the blood pressure of the patient at each and every visit",
       "preparing a surgical field"
     ],
     "correctIndex": 1,
@@ -1161,9 +1161,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Boenninghausen’s Therapeutic Pocket Book is associated with:",
     "options": [
       "Clemens von Boenninghausen",
-      "James Tyler Kent",
-      "William Boericke",
-      "John Henry Clarke"
+      "James Tyler Kent of Chicago",
+      "William Boericke of America",
+      "John Henry Clarke of London"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1185,9 +1185,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "A general symptom differs from a particular symptom because a general symptom characterizes:",
     "options": [
       "only a single joint",
-      "only one laboratory result",
+      "only one laboratory result that is obtained in the case",
       "the patient as a whole rather than one local part",
-      "only the remedy manufacturer"
+      "only the remedy manufacturer that is concerned in the case"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1209,7 +1209,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "A repertory cross-reference primarily directs the reader to:",
     "options": [
       "another related rubric or wording",
-      "a higher potency automatically",
+      "a higher potency used automatically",
       "a pharmacy invoice",
       "a diagnostic imaging protocol"
     ],
@@ -1232,9 +1232,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "The grade assigned to a remedy under a rubric primarily reflects:",
     "options": [
-      "the dose that must be prescribed",
+      "the dose that must be prescribed to the patient in every single case",
       "the patient’s age",
-      "the price of the remedy",
+      "the price of the remedy as charged in the pharmacy at the material time in question",
       "its relative prominence in that rubric according to the repertory’s grading system"
     ],
     "correctIndex": 3,
@@ -1256,10 +1256,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "hard",
     "question": "An elimination rubric is used in repertorial analysis to:",
     "options": [
-      "increase every remedy grade equally",
+      "increase every remedy grade equally throughout the whole rubric that is concerned",
       "exclude remedies that do not satisfy a highly important selected symptom",
-      "convert a rubric into a diagnosis",
-      "determine potency by arithmetic"
+      "convert a rubric into a diagnosis of the disease entirely",
+      "determine the potency by means of a simple arithmetic calculation and nothing more"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1280,9 +1280,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "A modality rubric records:",
     "options": [
-      "only the anatomical diagnosis",
-      "only laboratory reference ranges",
-      "only remedy manufacturing data",
+      "only the anatomical diagnosis that is given in the case",
+      "only the laboratory reference ranges that are used",
+      "only the remedy manufacturing data held on file",
       "conditions that make a symptom better or worse"
     ],
     "correctIndex": 3,
@@ -1307,7 +1307,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
       "a symptom accompanying another principal complaint",
       "a synonym for potency",
       "a dosage instruction",
-      "a type of pharmacy bottle"
+      "a particular type of pharmacy bottle used for it entirely"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1329,9 +1329,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "An aetiology/causation rubric is intended to capture:",
     "options": [
       "the remedy price",
-      "the patient’s address only",
+      "the patient’s address only and nothing else besides it at all",
       "a circumstance or event associated with onset of symptoms",
-      "the repertory page number"
+      "the repertory page number and nothing else besides it at all"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1352,9 +1352,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "Which four descriptors are commonly useful in structuring a complete symptom for repertorial work?",
     "options": [
-      "price, colour, bottle and label",
-      "diagnosis, bill, bed number and date",
-      "height, signature, invoice and code",
+      "price, colour, bottle and the label upon the bottle",
+      "diagnosis, bill, bed number and the date of admission",
+      "height, signature, invoice and the code of the patient",
       "location, sensation, modalities and concomitants"
     ],
     "correctIndex": 3,
@@ -1376,8 +1376,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "The repertory is best viewed as:",
     "options": [
-      "a replacement for all case taking",
-      "a potency calculator only",
+      "a replacement for the whole of the case taking entirely in every single case",
+      "a potency calculator only and nothing else besides it at all whatsoever",
       "an index and analytic aid that must be complemented by materia medica knowledge",
       "a surgical manual"
     ],
@@ -1400,7 +1400,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "hard",
     "question": "A repertorial totality should ideally contain:",
     "options": [
-      "every trivial detail with equal weight",
+      "every trivial detail of the whole case given with an equal weight throughout",
       "selected characteristic symptoms that meaningfully differentiate the case",
       "only the disease name",
       "only one common symptom in every case"
@@ -1424,9 +1424,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "When two rubrics are near-synonyms, the safest repertory practice is to:",
     "options": [
-      "assume all repertories grade them identically",
+      "assume that all of the repertories grade them identically in each and every case",
       "verify wording, cross-references and remedy coverage before choosing the rubric",
-      "add both automatically without checking",
+      "add both of them automatically without any checking at all being done",
       "ignore the patient’s actual wording"
     ],
     "correctIndex": 1,
@@ -1520,10 +1520,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "The LM/Q potency scale is classically associated with an approximate dilution proportion of:",
     "options": [
-      "1:10",
+      "1:10 at every potency step",
       "1:50,000 per potency step",
-      "1:100",
-      "1:1,000"
+      "1:100 at each potency step",
+      "1:1,000 at every step used"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1544,8 +1544,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Succussion refers to:",
     "options": [
-      "dry heat sterilization",
-      "grinding a tablet into powder without vehicle",
+      "dry heat sterilization of all the glassware that is used",
+      "grinding a tablet down into a powder without any vehicle at all",
       "forceful shaking used during preparation of liquid potencies",
       "filtering blood"
     ],
@@ -1569,7 +1569,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Trituration is particularly used for preparing insoluble substances by:",
     "options": [
       "grinding them with lactose in defined proportions",
-      "boiling them in saline only",
+      "boiling them in a saline solution only and nothing else",
       "freezing them without a vehicle",
       "exposing them to light"
     ],
@@ -1593,8 +1593,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Potentization in homoeopathic pharmacy refers broadly to:",
     "options": [
       "serial dilution combined with succussion or trituration according to the scale used",
-      "simple storage at room temperature only",
-      "adding colour to a bottle",
+      "simple storage at the room temperature only and nothing further at all besides that one",
+      "adding some colour to the bottle before dispensing it to the sick patient",
       "repertory indexing"
     ],
     "correctIndex": 0,
@@ -1616,9 +1616,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "Which is commonly used as a vehicle for medicated homoeopathic globules?",
     "options": [
-      "iron filings only",
-      "silica gel packets",
-      "agar plates",
+      "iron filings used only within them",
+      "silica gel packets as the vehicle",
+      "agar plates used as the vehicle only",
       "sucrose/lactose-based globules"
     ],
     "correctIndex": 3,
@@ -1641,9 +1641,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "A pharmacopoeial monograph primarily helps standardize:",
     "options": [
       "the patient’s repertory score",
-      "the clinic’s appointment sequence",
+      "the clinic’s own appointment sequence in practice",
       "the disease prognosis",
-      "identity, preparation and quality requirements for a medicinal substance"
+      "identity, preparation and quality requirements for a substance"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -1667,7 +1667,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
       "pathological products or disease-related biological material under defined preparation methods",
       "only metallic elements",
       "only healthy plant leaves",
-      "only distilled water without source material"
+      "only distilled water without any source material of any kind at all whatsoever in it at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1760,8 +1760,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Gas exchange between air and pulmonary capillary blood occurs principally across the:",
     "options": [
-      "pleural cavity only",
-      "tracheal cartilage",
+      "pleural cavity only and nothing else",
+      "tracheal cartilage and nothing else",
       "diaphragm tendon",
       "alveolar-capillary membrane"
     ],
@@ -1856,10 +1856,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "A granuloma is a pattern most strongly associated with:",
     "options": [
-      "simple edema only",
-      "acute red-cell lysis only",
+      "simple edema only and nothing else besides",
+      "acute red-cell lysis only and nothing more",
       "chronic macrophage-dominant inflammation",
-      "normal epithelial turnover"
+      "normal epithelial turnover and nothing more"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1906,7 +1906,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "options": [
       "malignant invasion by definition",
       "a reversible adaptive replacement of one mature cell type by another mature cell type",
-      "irreversible DNA deletion in every case",
+      "irreversible DNA deletion in every single case without exception",
       "normal cell division only"
     ],
     "correctIndex": 1,
@@ -1928,7 +1928,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Diabetes mellitus is fundamentally characterized by chronic:",
     "options": [
-      "hypocalcaemia only",
+      "hypocalcaemia only and nothing else at all besides it in any way",
       "low uric acid only",
       "hyperglycaemia due to defects in insulin secretion, insulin action, or both",
       "isolated neutropenia"
@@ -2025,9 +2025,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Asthma is characteristically associated with:",
     "options": [
       "fixed bone deformity",
-      "permanent absence of bronchi",
+      "the permanent absence of the bronchi entirely in each and every case",
       "variable airflow obstruction and airway hyperresponsiveness",
-      "isolated renal failure"
+      "isolated renal failure and nothing else besides it at all whatever"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2048,10 +2048,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "COPD is characterized by respiratory symptoms with airflow limitation that is typically:",
     "options": [
-      "completely absent between every breath",
+      "completely absent as between each and every single breath taken",
       "persistent and related to airway/alveolar abnormalities",
-      "caused only by acute appendicitis",
-      "limited to the upper airway by definition"
+      "caused only by an acute appendicitis attack of some kind",
+      "limited to the upper airway by definition in every case"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2145,7 +2145,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Monosodium urate crystals in gout are classically:",
     "options": [
       "needle-shaped and negatively birefringent under polarized light",
-      "rhomboid and positively birefringent",
+      "rhomboid and positively birefringent crystals",
       "cubic and non-birefringent",
       "spherical with no optical property"
     ],
@@ -2169,7 +2169,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "SIADH commonly causes hyponatraemia accompanied by:",
     "options": [
       "marked hypernatraemia",
-      "maximally dilute urine despite high ADH effect",
+      "maximally dilute urine despite the high ADH effect that is present",
       "severe hypercalcaemia as defining feature",
       "inappropriately concentrated urine relative to low serum osmolality"
     ],
@@ -2218,8 +2218,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "options": [
       "symmetric and inflammatory, especially in small peripheral joints",
       "strictly non-inflammatory",
-      "limited to one distal phalanx in every case",
-      "always caused by urate crystals"
+      "limited to one distal phalanx in each and every single case without exception",
+      "always caused by the urate crystals and nothing else at all besides them"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2264,9 +2264,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "Orthopnoea refers to breathlessness that is:",
     "options": [
-      "present only during swallowing",
-      "caused by bright light",
-      "relieved only by lying completely flat",
+      "present only during the act of swallowing food or drink",
+      "caused by exposure to a bright light of any kind at all whatever",
+      "relieved only by lying down completely flat upon the back",
       "worse when lying flat and relieved by sitting or standing"
     ],
     "correctIndex": 3,
@@ -2336,7 +2336,7 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "In the adult Rule of Nines for burn-area estimation, one entire upper limb accounts for approximately:",
     "options": [
-      "4.5%",
+      "4.5% of the total body surface",
       "9% of total body surface area",
       "18%",
       "27%"
@@ -2361,8 +2361,8 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "A reducible hernia is one in which the contents can:",
     "options": [
       "never move at all",
-      "only become gangrenous",
-      "pass through intact bone",
+      "only become gangrenous in the course of some time thereafter entirely",
+      "pass right through the intact bone of the abdominal wall itself entirely",
       "return to the abdominal cavity with appropriate pressure or position"
     ],
     "correctIndex": 3,
