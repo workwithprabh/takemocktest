@@ -8,7 +8,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A state scholarship is open only to students born in District R, although residence, income and academic merit are already assessed separately. Which constitutional objection is strongest?",
     "options": [
-      "Every geographic classification is automatically unconstitutional.",
+      "Every geographic classification whatever is automatically unconstitutional in each and every circumstance.",
       "The birthplace condition creates an arbitrary classification unrelated to the scholarship objective.",
       "A scholarship can never use any residence-related criterion.",
       "The scheme is valid merely because education is a public purpose."
@@ -32,10 +32,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A licensing law distinguishes hazardous chemical warehouses from ordinary stationery shops and imposes stricter inspection on the former. The best equality analysis is:",
     "options": [
-      "The distinction fails because all businesses must be regulated identically.",
+      "The distinction fails because all businesses must be regulated in an identical manner without exception.",
       "The distinction is valid only if both classes pay identical fees.",
-      "The distinction is unconstitutional because safety is not a legislative objective.",
-      "The distinction is likely valid because the classes are intelligible and the risk difference relates to inspection intensity."
+      "The distinction is unconstitutional because public safety is not a legislative objective of any kind at all.",
+      "The distinction is likely valid because the classes are intelligible and risk relates to inspection."
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -57,9 +57,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A public authority publishes a tender rule requiring all bids before noon, but privately accepts one favoured bidder at 3 p.m. without any stated emergency. The clearest public-law defect is:",
     "options": [
       "Arbitrary departure from a self-declared rule in favour of one bidder.",
-      "Lack of legislative competence of Parliament.",
-      "Violation of the rule against retrospective criminal punishment.",
-      "Absence of a constitutional right to carry on any occupation."
+      "Lack of legislative competence on the part of Parliament in the matter.",
+      "Violation of the rule against retrospective criminal punishment of any kind.",
+      "Absence of a constitutional right to carry on any occupation whatsoever."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -81,8 +81,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A city prohibits every form of peaceful leafleting in all public parks for a year to reduce litter, even though littering itself is separately punishable. Which feature most weakens the restriction?",
     "options": [
       "Its use of written rather than oral communication.",
-      "Its application to parks rather than private homes.",
-      "Its one-year duration by itself, irrespective of scope.",
+      "Its application to the public parks rather than to the private homes of the residents.",
+      "Its one-year duration taken by itself, irrespective of the scope of it that is involved.",
       "Its breadth: it suppresses substantially more expression than needed to address litter."
     ],
     "correctIndex": 3,
@@ -105,7 +105,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A university scans the full private message history of every student to identify possible library-book theft. Which proportionality stage is most obviously problematic?",
     "options": [
       "Necessity, because less intrusive means can investigate missing books.",
-      "Legitimate aim, because protecting property can never be legitimate.",
+      "Legitimate aim, because protecting property can never be legitimate at all.",
       "Legality, because universities can never adopt conduct rules.",
       "Remedial jurisdiction, because courts cannot review privacy burdens."
     ],
@@ -129,8 +129,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A health portal proposes publishing named patient diagnoses to help researchers, despite having equally useful anonymised data. The strongest constitutional concern is:",
     "options": [
       "Unnecessary disclosure of sensitive personal information despite a less intrusive alternative.",
-      "Research can never be a legitimate public objective.",
-      "Anonymisation is constitutionally forbidden.",
+      "Research can never amount to a legitimate public objective of any kind whatever in the law at all.",
+      "Anonymisation of the data is constitutionally forbidden in every case without any exception whatsoever.",
       "Privacy applies only inside a person’s home."
     ],
     "correctIndex": 0,
@@ -152,10 +152,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A statutory board cancels a professional licence for alleged fraud without telling the licensee the allegation or permitting any response, although no urgency exists. The primary defect is:",
     "options": [
-      "Absence of a written Constitution.",
-      "Double jeopardy.",
+      "Absence of a written Constitution entirely.",
+      "Double jeopardy within the proceedings taken.",
       "Denial of a fair opportunity to be heard.",
-      "A failure to hold a jury trial."
+      "A failure to hold any jury trial at all here."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -176,10 +176,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A disciplinary appeal is decided by the same officer whose personal complaint initiated the proceeding and whose credibility is disputed. The main concern is:",
     "options": [
-      "Federalism.",
-      "Prospective overruling.",
+      "Federalism as between the units of the whole state.",
+      "Prospective overruling applied by the court in this case.",
       "Apparent bias undermining impartial adjudication.",
-      "Promissory estoppel against legislation."
+      "Promissory estoppel against the legislation itself."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -226,7 +226,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "options": [
       "An order convicting the chair of a crime without trial.",
       "An order transferring legislative power to the applicant.",
-      "An order rewriting the statute to grant the licence automatically.",
+      "An order rewriting the whole statute so as to grant the licence automatically.",
       "An order requiring the authority to perform its statutory duty to decide."
     ],
     "correctIndex": 3,
@@ -248,9 +248,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A statute authorises a ministry to prescribe safety standards. The ministry issues a rule permanently banning an unrelated form of political association. The strongest challenge is:",
     "options": [
-      "Delegated legislation can never be judicially reviewed.",
+      "Delegated legislation can never be judicially reviewed by a court in any case.",
       "The rule is outside the subject and purpose of the delegated power.",
-      "A ministry may exercise unlimited power once any delegation exists.",
+      "A ministry may exercise unlimited power once any delegation at all exists.",
       "The rule is valid solely because it was published."
     ],
     "correctIndex": 1,
@@ -320,10 +320,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A legislature lacks power to impose a particular levy but labels the same levy a “registration charge” while retaining its substance and incidence. Which principle is most relevant?",
     "options": [
-      "Any statutory label conclusively determines competence.",
+      "Any statutory label whatever conclusively determines the legislative competence in question.",
       "The court looks to substance rather than a device used to evade constitutional limits.",
-      "A fee and a tax are constitutionally identical in every setting.",
-      "Courts may never examine the true nature of a levy."
+      "A fee and a tax are constitutionally identical in each and every setting without exception.",
+      "Courts may never examine the true nature of a levy in any circumstances whatsoever."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -344,10 +344,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A constitutional amendment abolishes judicial review of all constitutional amendments and bars every court from examining amendment validity. Under the basic-structure doctrine, the key concern is:",
     "options": [
-      "Whether the amendment damages an essential feature such as judicial review and constitutional supremacy.",
+      "Whether the amendment damages an essential feature such as judicial review.",
       "Whether the amendment was printed in colour.",
       "Whether every ordinary statute has also been amended.",
-      "Whether the amendment concerns a civil dispute rather than a criminal one."
+      "Whether the amendment concerns a civil dispute rather than a criminal one entirely."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -369,7 +369,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A fire-safety rule of general application limits indoor occupancy equally for cinemas, lecture halls and places of worship. A challenge based only on the rule’s incidental effect on worship is weakest when:",
     "options": [
       "The rule secretly targets one faith.",
-      "Officials selectively exempt comparable secular halls.",
+      "Officials selectively exempt the comparable secular halls from the rule.",
       "The stated safety rationale is fabricated.",
       "The rule is neutral, safety-based, proportionate and equally applied."
     ],
@@ -394,8 +394,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "options": [
       "The right to insist on a civil jury.",
       "The ability to make a meaningful representation against detention.",
-      "The right to elect the detaining officer.",
-      "The right to convert detention into a private contract."
+      "The right to elect the detaining officer who detains him.",
+      "The right to convert the detention into a purely private contract instead."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -417,9 +417,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A public employer reserves interview marks for candidates personally recommended by serving officials, with no published criterion. The strongest objection is:",
     "options": [
       "Opaque patronage is inconsistent with equal and non-arbitrary access to public employment.",
-      "Public employment is wholly outside equality norms.",
-      "Recommendations are constitutionally equivalent to competitive examinations.",
-      "Only salary, never recruitment, can raise equality issues."
+      "Public employment is wholly outside the equality norms of the Constitution.",
+      "Recommendations are constitutionally equivalent to competitive examinations in every respect.",
+      "Only salary, never recruitment, can ever raise any equality issues of any kind at all."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -512,8 +512,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "An offeror posts a revocation that reaches the offeree before the offeree dispatches acceptance. What is the ordinary result?",
     "options": [
-      "The revocation is ineffective until a court records it.",
-      "The offeree may accept because every offer is irrevocable for seven days.",
+      "The revocation is ineffective until such time as a court has recorded it formally.",
+      "The offeree may still accept, because every offer is irrevocable for a full seven days.",
       "The offer has been revoked before acceptance and cannot thereafter be accepted.",
       "Revocation is valid only if consideration is paid for it."
     ],
@@ -536,7 +536,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "P promises to give Q a gift next month, and Q gives no return promise, act or requested reliance. Which issue most directly arises in ordinary contract analysis?",
     "options": [
-      "Illegality because all gifts are prohibited.",
+      "Illegality, because all gifts of this kind are prohibited by the law in every case.",
       "Lack of consideration for a bare promise, subject to recognised exceptions.",
       "Impossibility because time has not yet passed.",
       "Mistake because gifts are always mistaken."
@@ -586,8 +586,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "options": [
       "Whether the document used blue ink.",
       "Whether the relationship enabled domination of will and the transaction resulted from undue influence.",
-      "Whether consideration can ever be unequal.",
-      "Whether every caregiver is automatically a trustee."
+      "Whether the consideration given can ever be unequal between the parties in such a case as this.",
+      "Whether every caregiver at all is automatically a trustee in the eyes of the law in each and every case."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -608,10 +608,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A seller innocently but falsely states that a machine was manufactured in 2024, inducing purchase; the seller honestly relied on incorrect records. The statement is most naturally analysed as:",
     "options": [
-      "Fraud necessarily, because every false statement is fraudulent.",
-      "No legal issue because honest error can never affect consent.",
+      "Fraud necessarily, because every false statement whatever is fraudulent in law.",
+      "No legal issue at all, because honest error can never affect the consent in any way.",
       "A misrepresentation that may affect consent even without fraudulent intent.",
-      "A completed novation."
+      "A completed novation of the whole contract between the parties to it entirely."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -656,10 +656,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A contract states that any delay, whether one hour or one year, requires payment of 100 times the contract price. In assessing enforceability of the stipulated sum, the central concern is:",
     "options": [
-      "Whether the clause is typed in capital letters.",
-      "Whether the sum is a genuine/legally permissible pre-estimate or an excessive penal stipulation under applicable law.",
-      "Whether damages can exist only for personal injury.",
-      "Whether delay can never cause contractual loss."
+      "Whether the clause happens to be typed out in capital letters throughout it entirely.",
+      "Whether the sum is a genuine pre-estimate or an excessive penal stipulation in law.",
+      "Whether the damages can exist only for a personal injury that is actually suffered.",
+      "Whether a delay can never cause any contractual loss of any kind at all whatsoever."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -683,7 +683,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
       "Whether A and B may communicate by email.",
       "Whether C must be a minor.",
       "Whether C, as a stranger to the contract, can enforce the promise.",
-      "Whether every third-party benefit is a tort."
+      "Whether every third-party benefit at all amounts to a tort in the law."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -728,9 +728,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A laboratory invites visitors onto a marked public tour but leaves an open, unguarded pit across the only route. The strongest negligence proposition is:",
     "options": [
-      "No duty can arise on private property.",
-      "Only contractual visitors can ever be owed care.",
-      "The laboratory owes lawful visitors reasonable care against foreseeable physical hazards it created or controlled.",
+      "No duty of care can ever arise upon private property of any kind at all whatsoever here.",
+      "Only the contractual visitors can ever be owed any duty of care at all whatsoever in the law.",
+      "The laboratory owes lawful visitors reasonable care against foreseeable hazards it created.",
       "Foreseeability is irrelevant to negligence."
     ],
     "correctIndex": 2,
@@ -752,10 +752,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A bus operator knows a brake-warning light has been flashing for days but continues service without inspection; the brakes then fail. The warning is most relevant to:",
     "options": [
-      "Whether the passenger owned the bus.",
-      "Whether strict liability always replaces negligence.",
+      "Whether the injured passenger happened to own the bus that was in question at the time.",
+      "Whether strict liability always replaces negligence in such a case without exception.",
       "Whether reasonable care required inspection or repair before continued operation.",
-      "Whether damages can never include physical injury."
+      "Whether the damages can never include any physical injury of any kind."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -776,10 +776,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A public university disciplinary panel sends a student the charge and evidence and receives a written reply. After submissions close, the dean privately sends one panel member a note urging expulsion and attaching a new allegation; the note is circulated to the other members and relied on, but never shown to the student. The strongest procedural objection is that:",
     "options": [
-      "the panel lacked subject-matter jurisdiction merely because the dean wrote to it.",
-      "adverse material influencing the decision was used without giving the student a fair opportunity to answer it.",
+      "the panel lacked the subject-matter jurisdiction merely because the dean had written to it.",
+      "adverse material influencing the decision was used without a fair chance to answer it.",
       "every university disciplinary decision must be decided by a civil court.",
-      "the student automatically has a constitutional right to an oral hearing in every case."
+      "the student automatically has a constitutional right to an oral hearing in every single case."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -802,7 +802,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "options": [
       "Whether the defendant had contractual capacity.",
       "Whether the type of harm was reasonably foreseeable for purposes of remoteness.",
-      "Whether all physical consequences are automatically recoverable.",
+      "Whether all of the physical consequences are automatically recoverable at law in full.",
       "Whether negligence requires a written agreement."
     ],
     "correctIndex": 1,
@@ -825,8 +825,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A pedestrian crosses while reading a message despite a visible warning, while a driver is also speeding. If both faults contribute to the collision, the plaintiff’s conduct is most relevant to:",
     "options": [
       "Contributory negligence and possible apportionment of responsibility.",
-      "Automatic extinction of every claim in all jurisdictions.",
-      "The rule against perpetuities.",
+      "Automatic extinction of every claim in each and every jurisdiction alike.",
+      "The rule against perpetuities in the law of property applying here.",
       "Sovereign immunity of the driver."
     ],
     "correctIndex": 0,
@@ -848,9 +848,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A delivery employee negligently injures a pedestrian while making an assigned delivery during working hours. The employer-liability issue is principally:",
     "options": [
-      "Whether the employee owns shares in the employer.",
-      "Whether pedestrians are contractual creditors.",
-      "Whether negligence is a constitutional amendment.",
+      "Whether the employee owns any shares at all in the employer company.",
+      "Whether the pedestrians are contractual creditors of the employer.",
+      "Whether negligence amounts to a constitutional amendment of some kind.",
       "Whether the tort occurred in the course or scope of employment."
     ],
     "correctIndex": 3,
@@ -921,9 +921,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A museum knows a ceiling panel is loose above a visitor queue but neither repairs it nor warns visitors. The panel falls. The strongest negligence issue is:",
     "options": [
       "Failure to take reasonable precautions against a known premises hazard.",
-      "Absence of consideration between museum and visitor.",
-      "A constitutional bar on museum liability.",
-      "Whether falling objects are always acts of God."
+      "Absence of any consideration at all between the museum and the visitor concerned.",
+      "A constitutional bar on any museum liability whatsoever.",
+      "Whether falling objects are always acts of God in every case."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -944,9 +944,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A company accumulates a large quantity of a hazardous substance for a non-natural use; it escapes and damages neighbouring property. The classical strict-liability inquiry focuses on:",
     "options": [
-      "Whether the neighbour signed the company’s employment contract.",
+      "Whether the neighbour had ever signed the company’s own contract of employment at all.",
       "Whether negligence must always be proved in every tort.",
-      "The dangerous accumulation, escape, and applicability of recognised strict-liability principles and exceptions.",
+      "The dangerous accumulation, escape, and applicability of strict-liability principles.",
       "Whether property damage is never compensable."
     ],
     "correctIndex": 2,
@@ -968,9 +968,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "R merely imagines stealing a bicycle but takes no step toward it. Which foundational requirement is missing for ordinary criminal liability for theft?",
     "options": [
-      "A written civil contract.",
+      "A written civil contract made between the parties.",
       "A parliamentary debate.",
-      "A property registration certificate.",
+      "A property registration certificate of some kind.",
       "A prohibited external act or conduct element."
     ],
     "correctIndex": 3,
@@ -993,9 +993,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A statute requires “knowingly” receiving stolen property. D receives a sealed package reasonably believing it contains books, when it actually contains stolen watches. The key issue is:",
     "options": [
       "Whether D had the knowledge required by the offence.",
-      "Whether D owns any property at all.",
-      "Whether every mistake is negligence.",
-      "Whether receiving goods is always strict liability."
+      "Whether D owns any property at all in the whole matter.",
+      "Whether every mistake amounts to negligence in law in every case.",
+      "Whether receiving goods is always a strict liability offence."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1017,9 +1017,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "T, intending to poison V, puts what T believes is poison into V’s drink, but the powder is harmless sugar supplied by mistake. The central attempt issue is:",
     "options": [
       "Whether sugar can be owned.",
-      "Whether V and T had a contract.",
-      "Whether T’s intent plus sufficiently proximate acts constitute attempt despite factual impossibility.",
-      "Whether motive is always a complete defence."
+      "Whether V and T had any contract of any kind between the two of them at all beforehand.",
+      "Whether T’s intent plus proximate acts constitute attempt despite impossibility.",
+      "Whether the motive is always a complete defence in the law to the charge brought."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1040,10 +1040,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A and B agree to rob a shop; during the planned robbery both coordinate to restrain the cashier and take cash. The shared-liability question most directly concerns:",
     "options": [
-      "Strict liability for owning money.",
+      "Strict liability for merely owning the money that is concerned in the matter.",
       "Liability based on participation pursuant to a common intention or shared plan.",
-      "Res judicata between co-accused.",
-      "A civil easement over the shop."
+      "Res judicata as between the several co-accused persons in this whole matter.",
+      "A civil easement over the shop premises concerned in this matter here."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1067,7 +1067,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
       "Proportionate private defence against an imminent unlawful attack.",
       "Retaliation for a completed insult.",
       "A permanent licence to use force later.",
-      "A contractual right to punish strangers."
+      "A contractual right to punish any strangers at all."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1088,8 +1088,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "An officer lawfully authorised to arrest Person X reasonably mistakes X’s identical twin for X after checking matching identifying information. A defence based on the honest factual error would concern:",
     "options": [
-      "Mistake of law that legislation does not exist.",
-      "The rule against hearsay only.",
+      "Mistake of law in supposing that the legislation in question does not exist at all.",
+      "The rule against hearsay evidence only and nothing else besides it at all in the matter.",
       "Corporate personality.",
       "Mistake of fact affecting the required culpability or lawful-justification analysis."
     ],
@@ -1112,10 +1112,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "D stabs V, who receives ordinary competent treatment but dies from the wound. The treatment does not independently overwhelm the original injury. The causal position is:",
     "options": [
-      "Medical treatment automatically breaks causation.",
+      "Medical treatment automatically breaks the chain of causation entirely.",
       "The original wound ordinarily remains an operative cause of death.",
-      "Only the final person to touch V can be liable.",
-      "Causation is irrelevant to result crimes."
+      "Only the final person to touch V can ever be held liable for the harm.",
+      "Causation is wholly irrelevant to the result crimes in the criminal law."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1137,9 +1137,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "Two persons agree to commit an unlawful trafficking offence and begin arranging transport. The offence that centres on the agreement itself is:",
     "options": [
       "Civil nuisance.",
-      "Breach of trust by a court.",
+      "A breach of trust committed by the court itself in the matter.",
       "Criminal conspiracy, subject to the statutory elements.",
-      "Adverse possession."
+      "Adverse possession of the property that is concerned in the matter."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1160,10 +1160,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "M intentionally supplies tools and detailed access information to N for a burglary, knowing and intending that N use them for that offence. M’s conduct most directly raises:",
     "options": [
-      "A defence of infancy for N.",
-      "A land easement.",
+      "A defence of infancy that is available to N.",
+      "A land easement over the property concerned.",
       "Abetment/intentional assistance liability.",
-      "A rule of constitutional severability."
+      "A rule of constitutional severability here."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1187,7 +1187,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
       "Penalising the exercise of a procedural right rather than sentencing on lawful factors.",
       "That every sentence must be identical.",
       "That acquittals always require compensation.",
-      "That criminal courts cannot consider aggravating circumstances."
+      "That the criminal courts cannot consider any aggravating circumstances."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1209,8 +1209,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A transport regulator empowered to set vehicle-safety standards issues a rule fixing restaurant menu prices. The rule is most vulnerable because:",
     "options": [
       "Regulators can never make rules.",
-      "Menu prices are always constitutionally protected speech.",
-      "Every delegated rule requires a referendum.",
+      "Menu prices are always constitutionally protected speech in law.",
+      "Every delegated rule whatever requires a referendum beforehand.",
       "It is beyond the subject matter of the delegated authority."
     ],
     "correctIndex": 3,
@@ -1232,9 +1232,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "For ten years an agency publicly promises consultation before changing a licensing policy and consistently follows that process. It abruptly changes policy without consultation or explanation. The procedural claim most naturally invoked is:",
     "options": [
-      "Adverse possession.",
-      "Double jeopardy.",
-      "Strict tort liability.",
+      "Adverse possession of the premises that are concerned in this whole matter.",
+      "Double jeopardy arising in the proceedings taken against that party here.",
+      "Strict tort liability for the activity concerned in this matter here.",
       "Legitimate expectation of consultation, subject to overriding lawful reasons."
     ],
     "correctIndex": 3,
@@ -1257,7 +1257,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A tribunal rejects a complex statutory appeal with the single statement “application denied,” giving no reasoning despite a duty to give reasons. The main review concern is:",
     "options": [
       "The tribunal used too few pages.",
-      "All adverse decisions are void regardless of reasons.",
+      "All of the adverse decisions are void regardless of the reasons given.",
       "Failure to provide reasons sufficient to show lawful and intelligible decision-making.",
       "Only jury verdicts may be reasoned."
     ],
@@ -1281,9 +1281,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A housing authority must prioritise safety risk, but ranks applicants by whether they donated to an official’s private club. The decision is vulnerable for:",
     "options": [
       "Using any criterion at all.",
-      "Failing to apply criminal procedure.",
+      "Failing to apply the criminal procedure rules here.",
       "Taking an irrelevant consideration into account.",
-      "Being made by a public body."
+      "Being made by a public body of some kind at all whatever."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1305,7 +1305,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A statute requires an authority to consider exceptions in individual hardship cases. The authority adopts an inflexible policy that exceptions will never be considered. The defect is:",
     "options": [
       "Fettering a discretion that the statute requires to remain genuinely exercisable.",
-      "Delegation to Parliament.",
+      "Delegation of the whole function to Parliament itself in the matter before it entirely.",
       "Retrospective criminalisation.",
       "Absence of res judicata."
     ],
@@ -1329,8 +1329,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A regulator responds to a first minor paperwork error by permanently closing a business, although a warning or modest penalty would fully address compliance. The concern is:",
     "options": [
       "Lack of a criminal jury.",
-      "The business has no legal interests.",
-      "Permanent sanctions are always mandatory.",
+      "The business has no legal interests at all here.",
+      "Permanent sanctions are always mandatory in law.",
       "Disproportionate administrative response."
     ],
     "correctIndex": 3,
@@ -1353,9 +1353,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "An agency relies on a secret technical report as the decisive basis for revoking a licence but gives the licensee no meaningful summary or chance to answer it, despite no confidentiality need. The main defect is:",
     "options": [
       "Unfair denial of an opportunity to meet adverse material.",
-      "Failure to hold a public election.",
-      "Absence of a property deed.",
-      "Application of contract privity."
+      "Failure to hold any public election beforehand at all in the matter.",
+      "Absence of a property deed in the matter at all before the court.",
+      "Application of the doctrine of contract privity in this matter."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1376,10 +1376,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A statute permits emergency closure only if a specified contamination threshold is exceeded. The authority closes a plant even though its own accepted tests show the threshold was never reached. The review issue is:",
     "options": [
-      "Whether the plant owner voted in the last election.",
+      "Whether the plant owner voted in the last election at all.",
       "Whether the statutory precondition for power existed.",
-      "Whether closure is a tort in every case.",
-      "Whether all scientific evidence is inadmissible."
+      "Whether the closure amounts to a tort in each and every case.",
+      "Whether all of the scientific evidence is inadmissible."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1400,7 +1400,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "An inspector uses a sanitation power solely to shut a rival’s shop and admits there is no sanitation concern. The strongest ground is:",
     "options": [
-      "Strict adherence to statutory purpose.",
+      "Strict adherence to the statutory purpose throughout the matter.",
       "Res judicata.",
       "Novation.",
       "Bad faith/use of statutory power for an improper purpose."
@@ -1425,8 +1425,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A court reviewing an administrative decision asks whether the authority acted lawfully, fairly and within power, rather than simply substituting its preferred merits outcome. This distinction reflects:",
     "options": [
       "Judicial review of legality rather than a general appeal on merits.",
-      "A rule that courts can never examine facts.",
-      "A requirement that agencies always win.",
+      "A rule that the courts can never examine any of the facts at all whatever.",
+      "A requirement that the agencies must always win in every case.",
       "The abolition of statutory appeals."
     ],
     "correctIndex": 0,
@@ -1521,9 +1521,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A theorist insists that an extreme conflict with fundamental moral reason can undermine a purported rule’s status as law. This is most aligned with:",
     "options": [
       "Natural-law approaches linking law and morality.",
-      "A strict source-based positivist separation.",
-      "The rule against perpetuities.",
-      "Civil procedure joinder."
+      "A strict source-based positivist separation of them.",
+      "The rule against perpetuities in the law of property.",
+      "Civil procedure joinder of the several parties here."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1569,7 +1569,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "If X has a privilege to walk on X’s own path, the correlative position of Y is:",
     "options": [
       "No-right that X refrain from walking there.",
-      "A duty on X to refrain.",
+      "A duty on X to refrain from it.",
       "A claim that X must sell the path.",
       "A power to convict X."
     ],
@@ -1688,8 +1688,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "State A signs a treaty subject to ratification, but its constitution requires ratification before consent to be bound is complete. Before ratification, the best general statement is:",
     "options": [
-      "Every signature always creates full treaty obligations instantly.",
-      "Signature alone does not necessarily complete consent to be bound where the treaty is subject to ratification.",
+      "Every signature at all always creates full treaty obligations instantly in the law of treaties.",
+      "Signature alone does not necessarily complete consent where ratification is required.",
       "Treaties bind only private citizens, never states.",
       "Ratification is relevant only to domestic contracts."
     ],
@@ -1712,10 +1712,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A rule claimed as customary international law generally requires evidence of:",
     "options": [
-      "One academic article and no state practice.",
+      "One academic article alone and no state practice of any kind whatever.",
       "A private company policy.",
       "A sufficiently general and consistent state practice accompanied by opinio juris.",
-      "Only a single treaty between two states."
+      "Only a single treaty concluded between two states and nothing further at all."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1736,9 +1736,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "An organ of State X, acting in its official capacity, breaches an international obligation attributable to X. The basic consequence is:",
     "options": [
-      "Only the individual official can ever bear any consequence.",
-      "State responsibility requires a private contract.",
-      "International obligations cannot bind state organs.",
+      "Only the individual official concerned can ever bear any consequence whatsoever at all.",
+      "State responsibility requires a private contract of some kind between the two parties.",
+      "International obligations cannot bind the state organs of any state at all in any way.",
       "The internationally wrongful act can engage the international responsibility of State X."
     ],
     "correctIndex": 3,
@@ -1784,9 +1784,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "An accredited diplomat is sued in the receiving state in circumstances covered by diplomatic immunity and no exception applies. The central rule concerns:",
     "options": [
-      "Permanent ownership of receiving-state property.",
+      "Permanent ownership of the receiving-state property in every case.",
       "A right to legislate for the receiving state.",
-      "Immunity from the receiving state’s jurisdiction, subject to treaty-defined exceptions and waiver.",
+      "Immunity from the receiving state’s jurisdiction, subject to exceptions and waiver.",
       "Automatic nationality in the receiving state."
     ],
     "correctIndex": 2,
@@ -1859,7 +1859,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
       "Whether the act is ultra vires the organisation’s conferred competence.",
       "Whether the organisation has adverse possession.",
       "Whether every organisation is a sovereign state.",
-      "Whether private-law privity applies to membership votes."
+      "Whether the private-law privity applies to the membership votes that are cast."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1880,10 +1880,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A requested state examines whether conduct satisfies the treaty’s dual-criminality requirement. It is asking whether:",
     "options": [
-      "The accused holds dual citizenship.",
+      "The accused happens to hold the dual citizenship of both of the states concerned in the matter.",
       "Two judges signed the request.",
       "The underlying conduct is criminal under the laws of both relevant states as required by the treaty.",
-      "Two separate trials have already occurred."
+      "Two entirely separate trials have already occurred in the whole matter before this point in time."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1928,10 +1928,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "An agreement grants R exclusive possession of a shop for a fixed term at monthly rent, subject to ordinary landlord rights. The arrangement most strongly indicates:",
     "options": [
-      "A bare licence necessarily because it is written.",
+      "A bare licence necessarily, because it is wholly in writing.",
       "A lease, though substance rather than label controls.",
-      "A mortgage solely because money is paid monthly.",
-      "A gift of absolute ownership."
+      "A mortgage solely because the money is paid each month.",
+      "A gift of the absolute ownership of the shop entirely."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1977,7 +1977,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "An owner knowingly allows another person to appear as owner and a purchaser, after reasonable inquiry, buys in good faith for value. The relevant transfer principle concerns:",
     "options": [
       "Automatic criminal conviction of the true owner.",
-      "A rule that good faith is always irrelevant.",
+      "A rule to the effect that the good faith of a purchaser is always wholly irrelevant in every single case.",
       "Protection potentially available in a transfer by an ostensible owner where statutory conditions are met.",
       "A constitutional amendment by purchase."
     ],
@@ -2049,9 +2049,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "question": "A maintenance regime asks whether a claimant lacks sufficient means and whether the respondent with means has a legally recognised duty to support. These facts go principally to:",
     "options": [
       "Title to public roads.",
-      "Validity of a criminal search warrant.",
+      "Validity of a criminal search warrant that has been issued in this matter here.",
       "Eligibility and quantum for maintenance under the governing family-law framework.",
-      "Corporate insolvency priority only."
+      "Corporate insolvency priority only and nothing else besides it at all in the matter."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2096,9 +2096,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A director secretly diverts to a personally owned business a corporate opportunity learned of solely through the directorship. The strongest company-law concern is:",
     "options": [
-      "A shareholder’s easement.",
-      "Double jeopardy.",
-      "A treaty reservation.",
+      "A shareholder’s easement over the property of the company concerned in the matter.",
+      "Double jeopardy in the proceedings that are brought against the director concerned.",
+      "A treaty reservation entered by the state that is concerned in this whole matter.",
       "Breach of fiduciary duty/conflict and unauthorised appropriation of a corporate opportunity."
     ],
     "correctIndex": 3,
@@ -2122,8 +2122,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "options": [
       "A defence of sovereign immunity.",
       "A criminal-law alibi.",
-      "A public international law reservation.",
-      "Minority-oppression/unfair-prejudice and fiduciary concerns under the governing company law."
+      "A public international law reservation entered in the matter.",
+      "Minority-oppression and fiduciary concerns under the governing company law."
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -2147,7 +2147,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
       "Waiting for absolute certainty in every case.",
       "Treating environmental risk as legally irrelevant.",
       "Preventive measures despite uncertainty where the potential harm is serious or irreversible.",
-      "Assuming every activity must be permanently prohibited."
+      "Assuming that every such activity must be permanently prohibited in every case."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2168,8 +2168,8 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A factory unlawfully contaminates a river and remediation is required. The polluter-pays principle most directly supports:",
     "options": [
-      "Requiring unaffected residents alone to pay.",
-      "Treating pollution costs as constitutionally unrecoverable.",
+      "Requiring the unaffected residents alone to pay for the whole cost of it.",
+      "Treating all of the pollution costs as constitutionally unrecoverable in law.",
       "Automatically imprisoning every shareholder.",
       "Requiring the polluter to bear appropriate costs of prevention and remediation."
     ],
@@ -2216,9 +2216,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "Two authors independently write different stories based on the general idea of a detective trapped on an island. Copyright ordinarily protects:",
     "options": [
-      "Every general plot idea against all later writers.",
-      "Facts as such regardless of expression.",
-      "Only the title of any work and nothing else.",
+      "Every general plot idea against all of the later writers.",
+      "Facts as such regardless of the expression used for them.",
+      "Only the title of any work and nothing else besides.",
       "Original expression, not the abstract idea by itself."
     ],
     "correctIndex": 3,
@@ -2290,7 +2290,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "options": [
       "It is irrelevant because digital evidence can never be used.",
       "It is relevant because it tends to make presence at the warehouse less probable.",
-      "It conclusively proves innocence without any further assessment.",
+      "It conclusively proves the innocence without any further assessment of any kind.",
       "It is a property transfer."
     ],
     "correctIndex": 1,
@@ -2312,9 +2312,9 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "In a criminal prosecution, the prosecution asks the court to convict solely because the accused did not prove innocence, without first establishing the offence. The core problem is:",
     "options": [
-      "An accused always bears the entire burden of proving innocence.",
-      "The prosecution ordinarily bears the legal burden of proving guilt to the required standard, subject to lawful exceptions.",
-      "Burden of proof exists only in civil cases.",
+      "An accused always bears the entire burden of proving his own innocence at the trial itself.",
+      "The prosecution ordinarily bears the burden of proving guilt to the required standard.",
+      "The burden of proof exists only in the civil cases and nowhere else at all whatsoever.",
       "Silence automatically proves every element."
     ],
     "correctIndex": 1,
@@ -2360,10 +2360,10 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "A court receives a suit over which the governing statute expressly gives exclusive original jurisdiction to a different tribunal. The first procedural question is:",
     "options": [
-      "Whether the claimant prefers paper filings.",
-      "Whether the defendant owns land elsewhere.",
+      "Whether the claimant happens to prefer paper filings.",
+      "Whether the defendant happens to own land elsewhere.",
       "Whether the court has subject-matter jurisdiction.",
-      "Whether damages are always discretionary."
+      "Whether the damages are always discretionary in law."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2384,7 +2384,7 @@ export const AILET_2026_LLM_LAW_1: Question[] = [
     "difficulty": "medium",
     "question": "Two companies have a valid arbitration agreement covering “all disputes arising from this supply contract.” A payment dispute under the contract arises. The clause primarily supports:",
     "options": [
-      "Automatic criminal conviction of the non-paying company.",
+      "Automatic criminal conviction of the non-paying company concerned in the matter.",
       "Transfer of company shares to the arbitrator.",
       "A constitutional amendment.",
       "Referral of the covered dispute to arbitration, subject to the governing arbitration law."
