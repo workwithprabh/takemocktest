@@ -1640,9 +1640,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "A pharmacopoeial monograph primarily helps standardize:",
     "options": [
-      "the patient’s repertory score",
-      "the clinic’s own appointment sequence in practice",
-      "the disease prognosis",
+      "the repertory score of the patient",
+      "the sequence in which the clinic arranges its own appointments each day in practice",
+      "the prognosis of the disease",
       "identity, preparation and quality requirements for a substance"
     ],
     "correctIndex": 3,
@@ -1904,10 +1904,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "hard",
     "question": "Metaplasia is:",
     "options": [
-      "malignant invasion by definition",
+      "a malignant invasion by definition",
       "a reversible adaptive replacement of one mature cell type by another mature cell type",
-      "irreversible DNA deletion in every single case without exception",
-      "normal cell division only"
+      "an irreversible deletion of DNA occurring in every single case of the change, without any exception at all",
+      "normal cell division and nothing else"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2145,9 +2145,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Monosodium urate crystals in gout are classically:",
     "options": [
       "needle-shaped and negatively birefringent under polarized light",
-      "rhomboid and positively birefringent crystals",
-      "cubic and non-birefringent",
-      "spherical with no optical property"
+      "rhomboid in shape and positively birefringent under the polarized light microscope",
+      "cubic in shape and non-birefringent",
+      "spherical with no optical property at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2384,10 +2384,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "An incarcerated hernia is one that is:",
     "options": [
-      "always freely reducible",
+      "always freely reducible on any clinical examination at all",
       "not reducible but not necessarily strangulated",
-      "defined only by skin colour",
-      "a type of fracture"
+      "defined only by the colour of the skin",
+      "a particular type of fracture"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2408,10 +2408,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "Aseptic technique is intended primarily to:",
     "options": [
-      "increase wound contamination",
-      "replace all hand hygiene",
+      "increase the contamination of the wound during the whole course of the procedure itself",
+      "replace the need for all hand hygiene",
       "minimize contamination by pathogenic microorganisms during procedures",
-      "cause tissue necrosis"
+      "cause necrosis of the tissue"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2457,9 +2457,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Varicose veins of the lower limb commonly reflect failure of:",
     "options": [
       "venous valves with superficial venous reflux",
-      "arterial valves in the aorta only",
-      "bronchial cartilage",
-      "lymphocyte production"
+      "failure of the arterial valves within the aorta itself alone",
+      "the bronchial cartilage",
+      "the production of lymphocytes"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2480,10 +2480,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "hard",
     "question": "Tension pneumothorax produces haemodynamic compromise mainly because rising intrathoracic pressure:",
     "options": [
-      "increases venous return indefinitely",
+      "increases the venous return indefinitely",
       "causes isolated renal stones",
       "impairs venous return and compresses cardiopulmonary structures",
-      "improves lung expansion on the affected side"
+      "improves the expansion of the whole lung on the side that happens to be affected"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2649,9 +2649,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Preeclampsia is defined by new-onset hypertension after 20 weeks of gestation accompanied by proteinuria or:",
     "options": [
       "specified maternal organ dysfunction / severe features",
-      "mandatory fever in every case",
-      "isolated hyperglycaemia only",
-      "anaemia alone"
+      "the presence of a mandatory fever in every single case without exception",
+      "an isolated hyperglycaemia alone",
+      "anaemia on its own"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2720,9 +2720,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "Anti-D immunoglobulin is used to reduce maternal sensitization in an appropriate:",
     "options": [
-      "Rh-positive man with hypertension",
-      "AB-positive child with asthma",
-      "O-positive non-pregnant patient with iron deficiency",
+      "an Rh-positive man with hypertension",
+      "an AB-positive child with asthma",
+      "an O-positive non-pregnant patient who happens to have an iron deficiency anaemia",
       "Rh-negative pregnant woman exposed to Rh-positive fetal red cells"
     ],
     "correctIndex": 3,
@@ -2744,10 +2744,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "medium",
     "question": "The Apgar score is routinely assessed shortly after birth to summarize the newborn’s:",
     "options": [
-      "maternal blood group only",
+      "the blood group of the mother only",
       "immediate clinical adaptation using five observed signs",
-      "placental weight only",
-      "gestational ultrasound dating only"
+      "the weight of the placenta only",
+      "the dating of the gestation by ultrasound examination and nothing else"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2768,10 +2768,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Incidence measures the occurrence of:",
     "options": [
-      "all existing cases at one instant only",
-      "only deaths from unrelated causes",
+      "all of the cases that happen to exist at one single instant in time only",
+      "only the deaths from unrelated causes",
       "new cases arising in a population over a specified period",
-      "hospital beds"
+      "the number of hospital beds"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2792,10 +2792,10 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "difficulty": "easy",
     "question": "Prevalence measures:",
     "options": [
-      "only new cases",
+      "only the new cases that arise within the population over the whole of the period studied",
       "all existing cases in a population at a specified time or over a period",
-      "only recovered cases",
-      "only births"
+      "only the cases that have recovered",
+      "only the births recorded"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2865,9 +2865,9 @@ export const AIAPGET_2026_HOMOEOPATHY_1: Question[] = [
     "question": "Herd immunity refers to indirect protection that can occur when:",
     "options": [
       "every person is necessarily infected",
-      "pathogens become larger",
+      "the pathogens become larger",
       "a sufficiently large proportion of a population is immune, reducing transmission opportunities",
-      "diagnostic tests have zero specificity"
+      "the diagnostic tests in use happen to have a specificity of exactly zero throughout the whole population studied"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
