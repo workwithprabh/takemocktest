@@ -128,10 +128,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "easy",
     "question": "A hard gelatin capsule shell is primarily used to",
     "options": [
-      "sterilise its contents by heat",
-      "provide intravenous infusion",
+      "sterilise the contents of the shell by the application of dry heat alone",
+      "provide a route for intravenous infusion",
       "contain a measured solid or semisolid fill for oral delivery",
-      "measure blood pressure"
+      "measure the blood pressure of the patient"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -176,10 +176,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "An autoclave sterilises mainly through",
     "options": [
-      "pressure alone without heat",
+      "pressure applied on its own, without any heat being supplied at all",
       "saturated steam under pressure delivering moist heat",
-      "ultraviolet radiation through sealed metal",
-      "dry nitrogen displacement"
+      "ultraviolet radiation passed through sealed metal",
+      "displacement of air by dry nitrogen"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -272,10 +272,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "easy",
     "question": "A surfactant lowers interfacial tension primarily because its molecules",
     "options": [
-      "convert all liquids into solids",
-      "raise the vapour pressure to infinity",
+      "convert all of the liquid present in the system into a solid phase of entirely uniform composition throughout",
+      "raise the vapour pressure of the system to infinity",
       "adsorb at interfaces with hydrophilic and lipophilic regions oriented toward compatible phases",
-      "remove every dissolved ion"
+      "remove every dissolved ion from the solution"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -320,8 +320,8 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "A matrix tablet designed for extended release should generally avoid a mechanism that causes",
     "options": [
-      "controlled diffusion through a hydrated matrix",
-      "gradual matrix erosion",
+      "controlled diffusion of the drug through a fully hydrated matrix layer",
+      "gradual erosion of the matrix",
       "immediate complete drug release upon contact with fluid",
       "swelling that lengthens the diffusion path"
     ],
@@ -345,9 +345,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "A drug is a poor candidate for passive transdermal delivery if it requires a very large daily dose mainly because",
     "options": [
       "skin permeability and patch area limit deliverable flux",
-      "patches cannot contact skin",
+      "a patch cannot be made to contact the surface of the skin at all well",
       "the stratum corneum contains only water",
-      "transdermal systems always destroy drugs"
+      "transdermal systems always destroy the drug"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -440,9 +440,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "Wet granulation can improve tablet manufacture by increasing",
     "options": [
-      "drug molecular weight",
-      "radioactivity",
-      "intrinsic pKa",
+      "the apparent molecular weight of the drug substance within the blend being processed",
+      "the radioactivity of the powder",
+      "the intrinsic pKa of the drug",
       "particle size and flow/compressibility of a cohesive powder blend"
     ],
     "correctIndex": 3,
@@ -464,10 +464,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "A preformulation study finds a drug degrades rapidly only when moisture is present. Which packaging control is most directly relevant?",
     "options": [
-      "Increase light exposure",
+      "Increase the exposure of the finished product to light throughout the whole storage period itself",
       "Use a moisture-barrier package, potentially with a desiccant where appropriate",
-      "Use a permeable paper wrap",
-      "Add water during storage"
+      "Use a permeable paper wrap for the pack",
+      "Add water to the pack during storage"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -512,9 +512,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "At equal molal concentration and ideal behaviour, which solution has the greatest freezing-point depression?",
     "options": [
-      "A non-electrolyte producing one particle",
-      "A solute producing two particles",
-      "Pure solvent",
+      "A non-electrolyte that produces only one particle in the solution formed",
+      "A solute that produces two particles",
+      "The pure solvent on its own",
       "A solute producing three dissolved particles per formula unit"
     ],
     "correctIndex": 3,
@@ -848,9 +848,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "If a drug is freely filtered and neither secreted nor reabsorbed, its renal clearance is approximately related to",
     "options": [
-      "hepatic blood flow only",
-      "gastric emptying rate",
-      "skin permeability",
+      "the total hepatic blood flow of the patient and nothing whatever besides this",
+      "the rate of gastric emptying",
+      "the permeability of the skin",
       "glomerular filtration rate multiplied by its unbound fraction"
     ],
     "correctIndex": 3,
@@ -896,10 +896,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "Immediately after a rapid IV bolus, a two-compartment model can show a steep early fall in plasma concentration partly because of",
     "options": [
-      "oral absorption",
-      "tablet disintegration",
+      "the absorption of the drug from the whole gastrointestinal tract",
+      "disintegration of the tablet",
       "distribution from central to peripheral tissues",
-      "gastric degradation"
+      "degradation of the drug in the stomach"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -993,9 +993,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "In the presence of a full agonist, a partial agonist can reduce overall response because it",
     "options": [
       "occupies receptors but has lower intrinsic efficacy",
-      "has no receptor affinity",
-      "always increases receptor number instantly",
-      "acts only as an enzyme substrate"
+      "it has no measurable affinity for the receptor in question at all",
+      "it always increases receptor number instantly",
+      "it acts only as a substrate for an enzyme"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1017,9 +1017,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "A wider therapeutic index generally indicates",
     "options": [
       "a larger separation between effective and toxic doses",
-      "greater toxicity at every dose",
-      "no pharmacologic effect",
-      "mandatory intravenous use"
+      "a greater degree of toxicity at every one of the doses given clinically",
+      "no pharmacologic effect at all",
+      "a mandatory intravenous route"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1161,9 +1161,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "Benzodiazepines enhance GABA_A receptor function primarily by increasing the",
     "options": [
       "frequency of chloride-channel opening in response to GABA",
-      "duration of sodium-channel opening",
-      "release of glutamate",
-      "synthesis of dopamine irreversibly"
+      "the duration for which the sodium channel of the neurone remains fully open",
+      "release of glutamate at the synapse",
+      "irreversible synthesis of dopamine"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1425,9 +1425,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "Beta-lactam antibiotics inhibit bacterial cell-wall synthesis by binding",
     "options": [
       "penicillin-binding proteins involved in peptidoglycan cross-linking",
-      "DNA gyrase only",
-      "30S ribosomal RNA only",
-      "folate reductase only"
+      "DNA gyrase alone and no other bacterial enzyme involved in DNA replication at all",
+      "the 30S ribosomal subunit and nothing else",
+      "folate reductase and nothing else"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1544,10 +1544,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "A serious unexpected adverse event temporally associated with a medicine should generally be",
     "options": [
-      "automatically declared proof of causation",
+      "automatically declared to be proof that the medicine itself caused the event concerned in full",
       "documented and evaluated for causality rather than assumed causal or ignored",
-      "deleted if rare",
-      "reported only if the patient requests it"
+      "deleted from the record if it is rare",
+      "reported only if the patient asks for it"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1568,9 +1568,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "easy",
     "question": "Beer–Lambert behaviour predicts absorbance is proportional to concentration when",
     "options": [
-      "all wavelengths are identical",
+      "all of the wavelengths present in the beam are identical to one another right through the whole measurement",
       "the sample is infinitely concentrated",
-      "stray light dominates",
+      "stray light dominates the signal",
       "path length and molar absorptivity are constant and the system is within the linear regime"
     ],
     "correctIndex": 3,
@@ -1640,10 +1640,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "easy",
     "question": "In thin-layer chromatography, Rf is calculated as",
     "options": [
-      "solvent-front distance divided by solute distance",
+      "the distance travelled by the solvent front divided by the distance travelled by the solute",
       "distance travelled by solute divided by distance travelled by solvent front",
-      "spot area divided by plate area",
-      "retention time divided by flow rate"
+      "the area of the spot divided by the area of the plate",
+      "the retention time divided by the flow rate"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1737,9 +1737,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "A strong absorption associated with a carbonyl group commonly appears because the C=O bond undergoes",
     "options": [
       "vibrational stretching that changes dipole moment",
-      "nuclear fission",
-      "electron spin inversion only",
-      "crystal melting in the beam"
+      "nuclear fission occurring within the sample in the beam itself",
+      "inversion of electron spin alone",
+      "melting of the crystal in the beam"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1760,10 +1760,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "Tetramethylsilane is commonly used as a reference in proton NMR because its signal is",
     "options": [
-      "fixed at 100 ppm",
-      "chemically identical to all analytes",
+      "fixed by convention at exactly 100 ppm on the chemical shift scale",
+      "chemically identical to all of the analytes",
       "assigned near 0 ppm and is usually well separated",
-      "strongly paramagnetic"
+      "strongly paramagnetic in solution"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1808,10 +1808,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "Method accuracy is best represented by",
     "options": [
-      "spread among replicate results only",
+      "the spread among the replicate results alone and nothing more than that",
       "closeness of measured value to an accepted reference value",
-      "instrument start-up time",
-      "number of chromatographic peaks"
+      "the start-up time of the instrument",
+      "the number of chromatographic peaks"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1832,9 +1832,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "A calibration curve with a nonzero intercept can still be usable if",
     "options": [
-      "the intercept is simply ignored",
-      "all standards are discarded",
-      "the slope is forced to one without evidence",
+      "the intercept is simply ignored in all of the subsequent calculations of concentration made later",
+      "all of the standards are discarded",
+      "the slope is forced to one without any evidence",
       "the model is justified, validated over the range, and residuals are acceptable"
     ],
     "correctIndex": 3,
@@ -1881,9 +1881,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "Gravimetric analysis determines analyte amount from a carefully formed and weighed",
     "options": [
       "compound of known composition related stoichiometrically to the analyte",
-      "gas bubble of unknown composition",
-      "colour change alone",
-      "electrical current only"
+      "a gas bubble of entirely unknown composition collected over the reaction solution itself",
+      "a colour change and nothing else",
+      "an electrical current and nothing else"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1904,10 +1904,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "A pH glass electrode responds primarily to differences in",
     "options": [
-      "sodium mass only",
+      "the mass of the sodium present and nothing else at all besides",
       "hydrogen-ion activity across the glass membrane",
-      "oxygen pressure only",
-      "light intensity"
+      "the partial pressure of oxygen alone",
+      "the intensity of the incident light"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1952,9 +1952,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "Introducing a permanently charged quaternary ammonium group generally tends to",
     "options": [
-      "increase passive CNS penetration greatly",
-      "remove all water solubility",
-      "make the molecule nonionic",
+      "greatly increase passive penetration into the whole central nervous system",
+      "remove all of the water solubility",
+      "render the molecule entirely nonionic",
       "reduce passive penetration across the blood–brain barrier"
     ],
     "correctIndex": 3,
@@ -1976,10 +1976,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "Two enantiomers have identical connectivity but differ in",
     "options": [
-      "molecular formula",
-      "number of atoms",
+      "the molecular formula of each of them, when written out in full for comparison alone",
+      "the total number of atoms present",
       "three-dimensional configuration as non-superimposable mirror images",
-      "sequence of covalent bonds"
+      "the sequence of the covalent bonds"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2001,7 +2001,7 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "question": "A prodrug is designed to",
     "options": [
       "undergo conversion in the body to yield the active drug or active species",
-      "remain permanently inactive without conversion",
+      "remain permanently inactive in the body without any conversion taking place at all",
       "serve only as a packaging material",
       "eliminate all variability by definition"
     ],
@@ -2024,10 +2024,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "In a structure–activity study, removing a hydrogen-bond donor causes a large potency loss while other properties change little. This observation suggests the donor may",
     "options": [
-      "be irrelevant to interaction",
+      "be entirely irrelevant to the binding interaction",
       "contribute importantly to target binding",
       "guarantee oral bioavailability",
-      "determine tablet hardness"
+      "determine the tablet hardness"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2072,9 +2072,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "For passive diffusion across a lipid membrane, the unionised form of a weak electrolyte is often more permeable because it is",
     "options": [
-      "always larger in molecular size",
-      "covalently attached to membrane",
-      "unable to dissolve in any phase",
+      "always larger in molecular size than the ionised form is",
+      "covalently attached to the membrane",
+      "unable to dissolve in either phase",
       "less charged and generally more lipid-soluble"
     ],
     "correctIndex": 3,
@@ -2096,9 +2096,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "easy",
     "question": "A system-suitability test in chromatography is performed primarily to confirm that",
     "options": [
-      "the drug is clinically effective",
-      "the factory has enough staff",
-      "all impurities are harmless",
+      "the drug being tested is clinically effective in the patients who receive it in practice too",
+      "the factory has enough staff on duty",
+      "all of the impurities are harmless",
       "the analytical system is performing adequately before/while analysing samples"
     ],
     "correctIndex": 3,
@@ -2120,10 +2120,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "A working standard is commonly qualified against",
     "options": [
-      "an arbitrary unlabeled powder",
+      "an arbitrary unlabelled powder of entirely unknown origin",
       "an appropriate higher-order reference standard",
-      "the previous sample result only",
-      "a random solvent blank"
+      "the result of the previous sample only",
+      "a randomly chosen solvent blank"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2144,10 +2144,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "An original instrument record should be retained so that reported results remain",
     "options": [
-      "dependent only on memory",
-      "editable without audit trail",
+      "dependent only upon the memory of the analyst concerned",
+      "editable with no audit trail",
       "traceable to contemporaneous source data",
-      "unverifiable after release"
+      "unverifiable once released"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2168,10 +2168,10 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "easy",
     "question": "Alkaloids are commonly characterised as natural products that contain",
     "options": [
-      "only triglycerides",
-      "no heteroatoms",
+      "only triglycerides and a wide range of related lipids",
+      "no heteroatoms of any kind",
       "nitrogen and often show basic properties",
-      "only inorganic salts"
+      "only inorganic salts of metals"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2240,9 +2240,9 @@ export const NIPER_JEE_2026_MASTERS_SECTION_B_1: Question[] = [
     "difficulty": "medium",
     "question": "A chromatographic fingerprint of a botanical extract is useful mainly for",
     "options": [
-      "proving every constituent is pharmacologically active",
+      "proving that every single constituent present is pharmacologically active in the body",
       "comparing its overall chemical profile with a reference pattern",
-      "replacing botanical identification entirely",
+      "replacing botanical identification altogether",
       "measuring tablet hardness only"
     ],
     "correctIndex": 1,
