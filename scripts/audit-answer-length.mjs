@@ -116,16 +116,27 @@ for (const file of fs.readdirSync(banksDir).filter((name) => name.endsWith('.ts'
   measured.push({ file, n: rows.length, actual, control, width });
   seen.add(file);
   const recorded = baseline[file];
+  // The check is two-sided. A bank where the key is never the longest option
+  // carries the same tell inverted: "eliminate the longest" turns four options
+  // into three. Over-correcting a bank is therefore a failure, not a pass.
+  const floor = control - slack;
   const report = `picking the longest option scores ${(100 * actual).toFixed(0)}% across ${rows.length} prose `
-    + `questions, against ${(100 * control).toFixed(0)}% when the key is shuffled (limit ${(100 * limit).toFixed(0)}%)`;
-  if (actual <= limit) {
+    + `questions, against ${(100 * control).toFixed(0)}% when the key is shuffled `
+    + `(allowed ${(100 * floor).toFixed(0)}% to ${(100 * limit).toFixed(0)}%)`;
+  if (actual >= floor && actual <= limit) {
     if (recorded !== undefined) {
       resolved.push(`${file}: ${report} — remove its baseline entry`);
     }
     continue;
   }
   if (writeBaseline) { baseline[file] = Math.round(actual * 10000) / 10000; continue; }
-  if (recorded === undefined) {
+  if (actual < floor) {
+    failures.push(
+      `${file}: ${report}. The key is too rarely the longest option, which is the same tell inverted: `
+      + 'a candidate who eliminates the longest option turns four choices into three. Let the key be the '
+      + 'longest in a fair share of questions.',
+    );
+  } else if (recorded === undefined) {
     failures.push(
       `${file}: ${report}. Give the key a length clearly below the longest option in more questions, `
       + 'by making thin distractors fully specified rather than by trimming the key.',

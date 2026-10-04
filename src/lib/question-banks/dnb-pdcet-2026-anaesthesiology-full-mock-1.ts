@@ -111,9 +111,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "The main purpose of effective preoxygenation before induction of general anaesthesia is to",
     "options": [
       "replace alveolar nitrogen with oxygen and increase the oxygen reservoir",
-      "increase carbon dioxide production",
-      "eliminate all physiologic shunt",
-      "increase haemoglobin concentration"
+      "increase the production of carbon dioxide in the tissues before the induction is begun",
+      "eliminate the whole of the physiologic shunt in the lungs",
+      "increase the haemoglobin concentration of the arterial blood"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -158,10 +158,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which finding most directly increases the risk of pulmonary aspiration during induction?",
     "options": [
-      "A healed forearm fracture",
-      "Myopia corrected with spectacles",
+      "A forearm fracture that healed uneventfully several years ago",
+      "Myopia fully corrected with spectacles",
       "A full stomach with delayed gastric emptying",
-      "A normal fasting glucose"
+      "A fasting blood glucose in the normal range"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -182,9 +182,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Why does severe obesity often shorten the safe apnoea time after induction?",
     "options": [
-      "Closing capacity becomes zero",
-      "Haemoglobin loses all affinity for oxygen",
-      "Pulmonary blood flow stops during apnoea",
+      "Closing capacity falls to zero",
+      "Haemoglobin loses all of its affinity for oxygen",
+      "Pulmonary blood flow ceases altogether during apnoea",
       "Functional residual capacity is reduced while oxygen consumption is increased"
     ],
     "correctIndex": 3,
@@ -206,10 +206,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "A bougie is primarily used during tracheal intubation to",
     "options": [
-      "measure cuff pressure continuously",
-      "deliver volatile anaesthetic",
+      "measure the tracheal cuff pressure continuously throughout the whole of the operation",
+      "deliver volatile anaesthetic directly to the trachea",
       "serve as an introducer over which a tracheal tube can be advanced",
-      "replace a breathing-system expiratory valve"
+      "replace the expiratory valve of the breathing system"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -230,10 +230,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Before extubating a patient after a difficult intubation, the most important strategic consideration is",
     "options": [
-      "whether the last volatile agent used was isoflurane",
+      "whether the volatile agent used last in the case happened to be isoflurane or sevoflurane",
       "whether reintubation would be feasible if airway obstruction occurs",
-      "whether the patient prefers a nasal cannula",
-      "whether the IV cannula is in the dominant hand"
+      "whether the patient would prefer a nasal cannula afterwards",
+      "whether the intravenous cannula is in the dominant hand"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -303,9 +303,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Nitrous oxide is avoided when a clinically important closed gas space is present because it can",
     "options": [
       "diffuse into the space faster than nitrogen leaves and enlarge it",
-      "irreversibly bind haemoglobin",
-      "precipitate sodium bicarbonate",
-      "abolish hypoxic pulmonary vasoconstriction completely"
+      "bind irreversibly to the haemoglobin held within the circulating red blood cells",
+      "precipitate sodium bicarbonate in the breathing circuit",
+      "abolish hypoxic pulmonary vasoconstriction altogether"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -375,8 +375,8 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "A common immediate haemodynamic effect of an induction dose of propofol is",
     "options": [
       "marked systemic hypertension",
-      "fixed bradycardia with no change in vascular tone",
-      "selective pulmonary vasoconstriction",
+      "a fixed bradycardia with no change in vascular tone",
+      "selective vasoconstriction of the pulmonary circulation",
       "a fall in arterial blood pressure from vasodilation and reduced sympathetic tone"
     ],
     "correctIndex": 3,
@@ -399,9 +399,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Which feature is most characteristic of ketamine compared with propofol?",
     "options": [
       "It has bronchodilating and sympathomimetic effects",
-      "It reliably suppresses sympathetic tone",
-      "It is a potent neuromuscular blocker",
-      "It has no analgesic effect"
+      "It reliably suppresses sympathetic tone at the time of induction",
+      "It acts as a potent neuromuscular blocker",
+      "It has no analgesic effect at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -567,9 +567,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Why can morphine have prolonged effects in severe renal failure?",
     "options": [
       "Its active metabolite morphine-6-glucuronide can accumulate",
-      "It is converted entirely to nitrous oxide",
-      "Its elimination depends only on exhalation",
-      "It irreversibly binds albumin"
+      "It is converted entirely into nitrous oxide within the liver before excretion",
+      "Its elimination depends only on exhalation from the lungs",
+      "It binds irreversibly to plasma albumin"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -662,9 +662,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Rocuronium is best classified as a",
     "options": [
-      "depolarizing ultrashort blocker",
-      "benzylisoquinolinium local anaesthetic",
-      "cholinesterase inhibitor",
+      "a depolarizing neuromuscular blocker of very short duration",
+      "a benzylisoquinolinium local anaesthetic agent",
+      "an inhibitor of plasma cholinesterase",
       "nondepolarizing aminosteroid neuromuscular blocker"
     ],
     "correctIndex": 3,
@@ -711,9 +711,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "A train-of-four ratio of at least 0.9 at the adductor pollicis is used as an objective target because it indicates",
     "options": [
       "adequate recovery from nondepolarizing neuromuscular block",
-      "complete absence of neuromuscular transmission",
-      "a phase-I succinylcholine block",
-      "deep block requiring immediate intubation"
+      "the complete absence of neuromuscular transmission at the adductor pollicis",
+      "a phase-I block produced by succinylcholine",
+      "a deep block that requires immediate reintubation"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -734,10 +734,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Neostigmine is commonly paired with an antimuscarinic drug during reversal to reduce",
     "options": [
-      "nondepolarizing receptor occupancy",
-      "local anaesthetic systemic toxicity",
+      "the continuing occupancy of the receptors by the nondepolarizing drug itself",
+      "the risk of local anaesthetic systemic toxicity",
       "muscarinic adverse effects such as bradycardia and secretions",
-      "volatile anaesthetic uptake"
+      "the uptake of the volatile anaesthetic agent"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -758,9 +758,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Markedly prolonged paralysis after a standard dose of succinylcholine in an otherwise stable patient should raise suspicion of",
     "options": [
-      "glucose-6-phosphate dehydrogenase excess",
-      "factor VIII deficiency",
-      "hyperthyroidism alone",
+      "an excess of glucose-6-phosphate dehydrogenase activity in the red cells",
+      "a deficiency of factor VIII",
+      "hyperthyroidism on its own",
       "plasma pseudocholinesterase deficiency or inhibition"
     ],
     "correctIndex": 3,
@@ -806,10 +806,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which combination contains two classic triggers of malignant hyperthermia?",
     "options": [
-      "Propofol and nitrous oxide",
+      "Propofol given together with nitrous oxide in oxygen delivered by mask",
       "A volatile halogenated anaesthetic and succinylcholine",
-      "Midazolam and fentanyl",
-      "Local anaesthetic and dexmedetomidine"
+      "Midazolam together with fentanyl",
+      "A local anaesthetic with dexmedetomidine"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -854,10 +854,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Why is local anaesthetic often less effective in infected, acidic tissue?",
     "options": [
-      "The sodium channel disappears from the axon",
+      "The sodium channel disappears altogether from the membrane of the axon in acidic conditions",
       "More drug remains ionized outside the nerve and crosses the membrane poorly",
-      "All local anaesthetic is immediately metabolized by bacteria",
-      "Acidosis makes every local anaesthetic permanently unionized"
+      "All of the local anaesthetic is immediately metabolized by the bacteria present",
+      "Acidosis renders every local anaesthetic permanently unionized"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -902,10 +902,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Intravenous lipid emulsion is an important specific rescue therapy for severe",
     "options": [
-      "benzodiazepine withdrawal",
+      "withdrawal from long-term benzodiazepine use",
       "local anaesthetic systemic toxicity",
-      "carbon monoxide exposure",
-      "organophosphate poisoning"
+      "exposure to carbon monoxide",
+      "poisoning with an organophosphate"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -926,10 +926,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most important mechanism of hypotension after a typical spinal anaesthetic is",
     "options": [
-      "increased catecholamine release",
+      "an increase in the release of circulating catecholamines from the adrenals",
       "sympathetic blockade causing arterial and venous vasodilation",
-      "isolated vagal denervation",
-      "acute haemoconcentration"
+      "isolated denervation of the vagus nerve",
+      "acute haemoconcentration of the blood"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1022,10 +1022,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which finding is a major reason to avoid elective neuraxial needle placement until corrected or appropriately assessed?",
     "options": [
-      "Controlled myopia",
-      "Healed appendectomy scar",
+      "Myopia that has been controlled with spectacles for many years",
+      "A well-healed appendectomy scar",
       "A clinically significant coagulation abnormality",
-      "Mild seasonal rhinitis"
+      "Mild seasonal allergic rhinitis"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1094,10 +1094,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The pin-index safety system on anaesthetic gas cylinders is designed primarily to",
     "options": [
-      "measure inspired oxygen continuously",
+      "to measure the inspired oxygen concentration continuously at the common gas outlet",
       "prevent attachment of the wrong gas cylinder to a yoke",
-      "prevent all pipeline cross-connections",
-      "regulate vaporizer temperature"
+      "to prevent every pipeline cross-connection",
+      "to regulate the temperature of the vaporizer"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1118,10 +1118,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "On a traditional anaesthesia machine with several flowmeters, the oxygen flowmeter is positioned downstream nearest the common gas outlet mainly to",
     "options": [
-      "increase nitrous oxide solubility",
+      "increase the solubility of nitrous oxide in blood",
       "make oxygen the first gas to enter the machine",
       "reduce the chance that an upstream leak delivers a hypoxic mixture",
-      "eliminate the need for an oxygen analyser"
+      "remove the need for an oxygen analyser in the circuit"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1142,10 +1142,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A conventional variable-bypass vaporizer controls anaesthetic concentration mainly by",
     "options": [
-      "injecting liquid anaesthetic directly into the trachea",
-      "absorbing carbon dioxide chemically",
+      "injecting liquid anaesthetic into the trachea",
+      "absorbing carbon dioxide by a chemical reaction",
       "splitting fresh gas between a bypass chamber and a vaporizing chamber",
-      "compressing oxygen to a liquid state"
+      "compressing the oxygen supply to a liquid state"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1168,8 +1168,8 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "options": [
       "Its boiling point is near room temperature and its saturated vapour pressure is high",
       "It is a nonvolatile solid at room temperature",
-      "It reacts explosively with oxygen in ordinary vaporizers",
-      "It has no measurable vapour pressure"
+      "It reacts explosively with oxygen inside an ordinary vaporizer",
+      "It has no measurable vapour pressure at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1215,8 +1215,8 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Unidirectional valves in a circle system primarily ensure that",
     "options": [
       "all exhaled gas is vented without recirculation",
-      "oxygen bypasses the patient during inspiration",
-      "the reservoir bag cannot fill",
+      "oxygen bypasses the patient entirely during inspiration",
+      "the reservoir bag is unable to fill at all",
       "gas flows around the circuit in one direction and limits rebreathing of CO2 after absorption"
     ],
     "correctIndex": 3,
@@ -1311,9 +1311,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Pulse oximetry estimates arterial oxygen saturation primarily by comparing pulsatile light absorption at",
     "options": [
       "a single wavelength absorbed only by plasma",
-      "gamma-ray wavelengths",
+      "gamma-ray wavelengths passed through the tissue",
       "two wavelengths where oxyhaemoglobin and deoxyhaemoglobin absorb differently",
-      "ultrasound frequencies"
+      "ultrasound frequencies reflected from the artery"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1622,9 +1622,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Adding positive end-expiratory pressure (PEEP) can improve oxygenation mainly by",
     "options": [
-      "eliminating carbon dioxide production",
-      "increasing haemoglobin concentration",
-      "abolishing all pulmonary shunt regardless of cause",
+      "eliminating the production of carbon dioxide in the tissues",
+      "increasing the haemoglobin concentration of the blood",
+      "abolishing all pulmonary shunt whatever its cause",
       "recruiting or stabilizing alveoli and increasing end-expiratory lung volume"
     ],
     "correctIndex": 3,
@@ -1670,10 +1670,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "During one-lung ventilation, oxygen saturation suddenly falls after patient repositioning. What should be checked early because it is a common reversible cause?",
     "options": [
-      "Serum amylase",
+      "The serum amylase concentration measured on a venous sample at once",
       "Position of the lung-isolation device or tracheal tube",
-      "Pupillary size",
-      "Urinary ketones"
+      "The size of the pupils on both sides",
+      "The presence of ketones in the urine"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1743,9 +1743,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "A patient with metabolic acidosis hyperventilates. This respiratory response primarily serves to",
     "options": [
       "lower PaCO2 and partially compensate the fall in pH",
-      "raise PaCO2 to normalize bicarbonate",
-      "increase fixed-acid production",
-      "eliminate renal bicarbonate excretion"
+      "raise the PaCO2 so as to normalize the plasma bicarbonate concentration",
+      "increase the production of fixed acid",
+      "eliminate the renal excretion of bicarbonate"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1910,9 +1910,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "In an anaesthetized patient in a position where venous air embolism is possible, a sudden unexplained fall in end-tidal CO2 can reflect",
     "options": [
-      "increased CO2 production from fever only",
-      "complete airway humidification",
-      "acute increase in cardiac output",
+      "an increase in carbon dioxide production caused by an accompanying fever alone",
+      "complete humidification of the inspired airway gases",
+      "an acute increase in the cardiac output",
       "an abrupt reduction in pulmonary perfusion from entrained air"
     ],
     "correctIndex": 3,
@@ -2078,8 +2078,8 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which finding favors transfusion-associated circulatory overload over TRALI?",
     "options": [
-      "Normal filling pressures with hypotension",
-      "Isolated urticaria without dyspnoea",
+      "Normal cardiac filling pressures together with hypotension and a clear chest on examination",
+      "Isolated urticaria with no dyspnoea at all",
       "A positive direct antiglobulin test with haemoglobinuria",
       "Elevated jugular venous pressure with hypertension and volume overload"
     ],
@@ -2102,9 +2102,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Perioperative hypothermia can worsen surgical bleeding partly because it",
     "options": [
-      "increases fibrinogen synthesis instantly",
-      "eliminates fibrinolysis",
-      "raises platelet count several-fold",
+      "increases the synthesis of fibrinogen in the liver almost immediately",
+      "eliminates fibrinolysis altogether",
+      "raises the platelet count several-fold",
       "impairs platelet function and coagulation-enzyme activity"
     ],
     "correctIndex": 3,
@@ -2128,8 +2128,8 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "options": [
       "assesses the evolving viscoelastic properties of whole-blood clot formation and breakdown",
       "measures only the platelet count",
-      "directly images coronary arteries",
-      "replaces blood typing"
+      "directly images the coronary arteries",
+      "replaces the need for blood typing"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2153,7 +2153,7 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
       "It helps prevent the hypothermia component of the trauma/coagulopathy cycle",
       "It prevents all transfusion reactions",
       "It converts citrate directly into fibrinogen",
-      "It guarantees normocalcaemia"
+      "It guarantees normocalcaemia throughout"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2222,10 +2222,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Uteroplacental perfusion is particularly vulnerable to maternal hypotension because uterine blood flow is",
     "options": [
-      "independent of maternal arterial pressure",
-      "maintained by a separate fetal heart pump",
+      "entirely independent of the maternal arterial pressure",
+      "maintained by a separate pump within the fetal heart",
       "strongly dependent on maternal perfusion pressure and has limited autoregulatory reserve",
-      "determined only by maternal PaCO2"
+      "determined only by the maternal PaCO2"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2319,9 +2319,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Why can significant bradycardia rapidly reduce cardiac output in an infant?",
     "options": [
       "Stroke volume is relatively constrained, so cardiac output is strongly heart-rate dependent",
-      "Infants have no sympathetic nervous system",
-      "Systemic vascular resistance is always zero",
-      "The ductus arteriosus must remain open for all cardiac output"
+      "Infants have no functioning sympathetic nervous system",
+      "Systemic vascular resistance is always zero in infancy",
+      "The ductus arteriosus must stay open for any cardiac output"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2390,9 +2390,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Because infants have a larger extracellular-water fraction than adults, dehydration can produce clinically important",
     "options": [
-      "permanent hypervolaemia",
-      "inability to lose sodium",
-      "zero change in perfusion",
+      "a permanent state of hypervolaemia rather than depletion of volume",
+      "an inability to excrete any sodium",
+      "no change at all in tissue perfusion",
       "intravascular volume depletion relatively quickly"
     ],
     "correctIndex": 3,
@@ -2439,9 +2439,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Compared with a healthy young adult, an elderly patient often requires a smaller induction dose of propofol because of",
     "options": [
       "increased pharmacodynamic sensitivity and altered distribution/clearance",
-      "complete resistance to hypnotics",
-      "obligatory enzyme induction",
-      "increased lean body mass in every patient"
+      "complete resistance to all hypnotic agents",
+      "obligatory induction of hepatic enzymes",
+      "an increase in lean body mass in every patient"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2486,9 +2486,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "During a long prone spinal procedure, preventing direct external pressure on the eyes is important because pressure can contribute to",
     "options": [
-      "improved retinal perfusion",
-      "mydriasis without injury",
-      "increased tear production only",
+      "improved perfusion of the retina throughout the surgery",
+      "mydriasis without any injury",
+      "an increase in tear production only",
       "ocular injury and postoperative visual loss"
     ],
     "correctIndex": 3,
@@ -2558,8 +2558,8 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Classic TURP syndrome during monopolar resection with absorption of hypotonic irrigation fluid is associated with",
     "options": [
-      "hypernatraemia from water loss",
-      "isolated hypercalcaemia",
+      "hypernatraemia caused by the loss of free water into the bladder",
+      "an isolated hypercalcaemia",
       "dilutional hyponatraemia and neurologic symptoms",
       "metabolic alkalosis from gastric suction"
     ],
@@ -2582,10 +2582,10 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "In preoperative preparation for pheochromocytoma, alpha-adrenergic blockade is established before beta-blockade primarily to avoid",
     "options": [
-      "irreversible vagal blockade",
+      "an irreversible blockade of the vagus nerve during the surgery itself",
       "unopposed alpha vasoconstriction and hypertensive crisis",
-      "acute local anaesthetic toxicity",
-      "abolition of cortisol synthesis"
+      "acute local anaesthetic systemic toxicity",
+      "abolition of the synthesis of cortisol"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2655,9 +2655,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "The classic operating-room fire triad consists of an ignition source, fuel, and",
     "options": [
       "an oxidizer such as oxygen or nitrous oxide",
-      "carbon dioxide absorber",
-      "intravenous crystalloid",
-      "neuromuscular monitor"
+      "a carbon dioxide absorber within the breathing circuit",
+      "an intravenous crystalloid infusion",
+      "a neuromuscular function monitor"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2703,9 +2703,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "In an obtunded patient immediately after general anaesthesia, a common cause of upper-airway obstruction is",
     "options": [
       "posterior displacement of relaxed tongue and pharyngeal soft tissue",
-      "acute aortic dissection",
-      "hyperthyroidism",
-      "renal tubular acidosis"
+      "an acute dissection of the thoracic aorta presenting at this point in the recovery",
+      "newly diagnosed hyperthyroidism",
+      "a renal tubular acidosis"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2727,9 +2727,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "question": "Residual nondepolarizing neuromuscular block after extubation increases the risk of",
     "options": [
       "upper-airway weakness and postoperative pulmonary complications",
-      "sustained hyperreflexia",
-      "irreversible hypertension",
-      "increased diaphragmatic strength"
+      "a sustained hyperreflexia affecting all four of the limbs after the extubation",
+      "an irreversible hypertension",
+      "an increase in diaphragmatic strength"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2750,8 +2750,8 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A clinically important consequence of intense postoperative shivering is",
     "options": [
-      "decreased metabolic rate",
-      "complete analgesia",
+      "a decrease in the metabolic rate of the body as a whole afterwards in recovery",
+      "complete analgesia without any drug",
       "increased oxygen consumption and carbon dioxide production",
       "reduced catecholamine release in all patients"
     ],
@@ -2798,9 +2798,9 @@ export const DNB_PDCET_2026_ANAESTHESIOLOGY_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "The main rationale for multimodal postoperative analgesia is to",
     "options": [
-      "guarantee zero pain in every patient",
-      "avoid all non-opioid analgesics",
-      "replace monitoring of respiratory depression",
+      "guarantee that no patient experiences any pain at all",
+      "avoid the use of all non-opioid analgesics",
+      "replace the monitoring of respiratory depression",
       "use drugs or techniques with different mechanisms to improve analgesia while reducing reliance on any single agent"
     ],
     "correctIndex": 3,
