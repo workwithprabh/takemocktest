@@ -416,10 +416,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "hard",
     "question": "A shoots at a tree intending to frighten B, but the bullet ricochets and kills C, a passer-by whom A did not see. In assessing A's liability, the court will focus mainly on:",
     "options": [
-      "whether A had a valid licence for the firearm he used",
+      "whether A held a valid licence for the firearm that he happened to be using at the time",
       "whether A knew his act was so imminently dangerous that death was likely",
-      "whether C was related to B",
-      "whether the tree belonged to A"
+      "whether C was related to B by blood or by marriage",
+      "whether the tree stood on land belonging to A"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -512,10 +512,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "Anticipatory bail differs from ordinary bail in that anticipatory bail is:",
     "options": [
-      "granted after arrest by the trial court only",
+      "granted after arrest, and by the trial court alone",
       "a direction that, in the event of arrest, the applicant shall be released on bail",
-      "available only after the charge sheet has been filed in the court",
-      "available only in civil proceedings"
+      "available only once the charge sheet has been filed in the court having jurisdiction over the offence",
+      "available only in proceedings of a civil nature"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -632,10 +632,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "The recording of a confession by a Magistrate requires the Magistrate to first:",
     "options": [
-      "obtain the consent of the investigating officer",
+      "obtain the consent of the officer investigating the case",
       "explain that he need not confess and that any confession may be used against him",
-      "administer an oath to the accused",
-      "record the confession in the presence of the complainant in person"
+      "administer an oath to the accused before recording",
+      "record the confession in the presence of the complainant and the investigating officer in person"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -896,9 +896,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "The object of a decree for specific restitution under the doctrine of restitution is to:",
     "options": [
-      "punish the successful party",
-      "reopen findings on the merits",
-      "increase the costs payable",
+      "punish the party that succeeded in the appeal for having obtained and executed the earlier erroneous decree against the other in the first place",
+      "reopen the findings on the merits of the original dispute",
+      "increase the costs payable by the unsuccessful party",
       "place the party in the position it would have occupied but for the erroneous decree that was later varied or reversed"
     ],
     "correctIndex": 3,
@@ -944,9 +944,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "easy",
     "question": "The general rule places the burden of proving a fact on:",
     "options": [
-      "the party who denies it",
-      "the witness who first mentions it",
-      "the court itself",
+      "the party who denies the fact, since a denial must always be made good by evidence",
+      "the witness who first mentions the fact in his testimony",
+      "the court itself, acting on its own inquiry",
       "the party who asserts it and would fail if no evidence were given"
     ],
     "correctIndex": 3,
@@ -992,9 +992,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "A statement made by a person as to the cause of his death is admissible in evidence because:",
     "options": [
-      "the maker is available for cross-examination",
-      "it is a confession",
-      "it is always corroborated by other witnesses",
+      "the maker is available to be cross-examined",
+      "it amounts in law to a confession",
+      "it is corroborated in every case by the testimony of at least one other independent witness",
       "the law recognises it as relevant even though the maker cannot be examined"
     ],
     "correctIndex": 3,
@@ -1016,10 +1016,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "An admission differs from a confession principally in that a confession:",
     "options": [
-      "is always made in a civil case",
-      "can never be proved",
+      "is always made in the course of a civil case rather than in the criminal prosecution of the person making it at all",
+      "can never be proved against its maker",
       "is an acknowledgement by an accused of the offence or of facts substantially constituting it",
-      "must be made to a police officer"
+      "must have been made to a police officer"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1040,9 +1040,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "Where a document is required by law to be attested, it may be used as evidence only if:",
     "options": [
-      "it is registered in every case",
-      "the opposite party consents",
-      "it is typed on stamp paper",
+      "it has been registered with the appropriate authority in every case, whatever the law may require of it",
+      "the opposite party consents to its use",
+      "it is typed upon stamped paper",
       "at least the required attesting witness is called, unless the law dispenses with it"
     ],
     "correctIndex": 3,
@@ -1064,10 +1064,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "Estoppel operates to prevent a person from:",
     "options": [
-      "giving any evidence at all",
-      "filing an appeal",
+      "giving any evidence at all upon the matter to which the representation he made related in any way",
+      "filing an appeal against the decree",
       "denying the truth of a representation on which another has acted to his detriment",
-      "engaging an advocate"
+      "engaging an advocate to appear for him"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1136,9 +1136,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "The doctrine of separability in arbitration means that the arbitration clause:",
     "options": [
-      "falls with the main contract in every case",
-      "applies only to international disputes",
-      "must be signed separately by each party",
+      "falls with the main contract in every case, so that a contract held to be void leaves no agreement to arbitrate anything at all between the parties concerned",
+      "applies only to disputes of an international character",
+      "must be signed separately by each of the parties",
       "is treated as an agreement independent of the other terms, so that invalidity of the main contract does not by itself render it void"
     ],
     "correctIndex": 3,
@@ -1161,9 +1161,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "question": "Conciliation differs from arbitration principally because the conciliator:",
     "options": [
       "assists the parties to reach their own settlement and does not impose a decision",
-      "delivers a binding award",
-      "must be a retired judge",
-      "conducts a trial with witnesses"
+      "delivers an award that binds both of the parties whether they happen to agree with it or not at all",
+      "must be a retired judge of a High Court",
+      "conducts a trial with witnesses on oath"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1208,9 +1208,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "easy",
     "question": "Under Hindu law, a marriage is void if the parties are:",
     "options": [
-      "of different castes",
-      "living in different States",
-      "of different professions",
+      "of different castes, unless the custom of their community happens to permit it at all",
+      "living in different States of the country",
+      "of different professions or callings",
       "within the prohibited degrees of relationship unless custom permits"
     ],
     "correctIndex": 3,
@@ -1233,8 +1233,8 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "question": "Judicial separation differs from divorce in that after a decree of judicial separation:",
     "options": [
       "the marriage subsists though the parties are not bound to cohabit",
-      "the marriage stands dissolved",
-      "neither party may ever apply for divorce",
+      "the marriage stands dissolved at once",
+      "neither of the parties may ever apply for a decree of divorce at any time afterwards",
       "the marriage is void from the beginning"
     ],
     "correctIndex": 0,
@@ -1521,9 +1521,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "question": "An authority exercising a statutory discretion acts unlawfully where it:",
     "options": [
       "acts under the dictation of another body instead of applying its own mind",
-      "considers all of the relevant material before deciding",
-      "gives reasons for its decision",
-      "follows the statutory procedure"
+      "considers all of the relevant material placed before it before it reaches any decision at all",
+      "gives reasons for the decision it reaches",
+      "follows the procedure the statute lays down"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1832,10 +1832,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "Retrenchment, in labour law, refers to termination of the service of a workman:",
     "options": [
-      "as a punishment imposed by way of disciplinary action against him",
-      "on attaining superannuation only",
+      "as a punishment imposed by way of disciplinary action taken against him following a domestic inquiry",
+      "on his attaining the age of superannuation alone",
       "for any reason other than punishment by disciplinary action, with stated exceptions",
-      "on the workman's own resignation only"
+      "on the resignation of the workman alone"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2048,10 +2048,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "Input tax credit under GST is designed to:",
     "options": [
-      "exempt the supplier from tax altogether",
-      "refund the entire tax that was paid by the consumer at the end",
+      "exempt the supplier from the tax altogether",
+      "refund to the final consumer the whole of the tax that was paid at each of the earlier stages of supply",
       "avoid tax on tax by allowing credit of tax paid on inputs against output liability",
-      "tax the same supply twice"
+      "tax the same supply twice over"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2144,9 +2144,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "A contract entered into under coercion is:",
     "options": [
-      "void from the beginning",
-      "enforceable only by the party exercising the coercion",
-      "valid in every respect",
+      "void from the very beginning",
+      "enforceable only by the party who exercised the coercion upon the other party to it",
+      "valid in every respect at law",
       "voidable at the option of the party whose consent was so caused"
     ],
     "correctIndex": 3,
@@ -2264,10 +2264,10 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "medium",
     "question": "A holder in due course of a negotiable instrument is one who takes the instrument:",
     "options": [
-      "after maturity with notice of a defect in the title of the transferor",
-      "as a gift with knowledge of dishonour",
+      "after maturity and with notice of some defect in the title of the person who transferred it to him at all",
+      "as a gift and with knowledge of a dishonour",
       "for consideration, before maturity, in good faith and without notice of any defect",
-      "by finding it and retaining it"
+      "by finding it and simply retaining it"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2360,9 +2360,9 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "difficulty": "easy",
     "question": "Copyright protects:",
     "options": [
-      "ideas as such in the abstract",
-      "the name of a business concern",
-      "trade secrets and nothing else",
+      "ideas as such, when considered entirely in the abstract",
+      "the name under which a business trades",
+      "trade secrets and nothing besides",
       "the expression of an idea in a material form"
     ],
     "correctIndex": 3,
@@ -2385,8 +2385,8 @@ export const AIBE_XXI_2026_FULL_BANK_2: Question[] = [
     "question": "For an invention to be patentable it must, among other requirements, be:",
     "options": [
       "novel, involve an inventive step and be capable of industrial application",
-      "merely a discovery of a scientific principle",
-      "a method of agriculture",
+      "merely the discovery of a scientific principle that already exists in nature itself anyway",
+      "a method of agriculture or horticulture",
       "a mathematical method as such"
     ],
     "correctIndex": 0,
