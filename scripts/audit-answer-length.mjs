@@ -1,64 +1,90 @@
 // Guards against the answer-length tell: a bank where the correct option is
-// reliably the longest one can be scored without reading the question.
+// reliably the longest can be scored without reading the question.
 //
-// Two measurement mistakes are worth recording, because both read as "fine":
+// Three measurement mistakes are recorded here, because each one reads as
+// "fine" while the defect is still there:
 //
 //  1. Averaging over all questions. Banks whose options are numbers or
-//     one-word labels cannot leak anything through length, and they dilute the
-//     figure badly. Only questions whose longest option reaches PROSE_MIN
-//     characters are counted here.
+//     one-word labels cannot leak anything through length and they dilute the
+//     figure badly, so only questions whose longest option reaches PROSE_MIN
+//     characters are counted.
 //  2. Asking "is the key the longest option". A bank where the key is always
 //     SECOND longest is just as gameable: the candidate picks between the two
-//     longest and has halved the field without reading a word. What has to
-//     look like chance is the key's length RANK among its own options, so rank
-//     is what this measures.
+//     longest and has halved the field without reading a word.
+//  3. Counting the key's length rank. Rank treats a two-character win as a
+//     full tell -- an FMGE question running 26/25/28/21 scores as "key is
+//     longest" though no one can see that gap -- and it also passes a bank
+//     whose key was merely nudged a few characters below the top while
+//     staying in the longest-looking cluster.
 //
-// Banks that are already skewed are listed in answer-length-baseline.json with
-// the share measured when they were recorded. A listed bank may not get worse,
-// and once it comes down to chance the script requires the entry to be removed,
-// so the list can only shrink.
+// So what is measured is the advantage the heuristic actually confers. Options
+// within a tolerance of the longest are indistinguishable by eye and form a
+// set of leaders; a candidate who picks the longest guesses among them, scoring
+// 1/leaders when the key is in that set and nothing when it is not.
+//
+// The comparison is against each bank's own control: the same options with the
+// key reassigned by a seeded shuffle, so length carries no information. A bank
+// whose options vary in length for innocent reasons has a high control, and is
+// not charged for it.
 import fs from 'node:fs';
 import path from 'node:path';
 import ts from 'typescript';
 
 const PROSE_MIN = 25;
 const MIN_QUESTIONS = 12;
+const CONTROL_RUNS = 200;
 const banksDir = path.join(process.cwd(), 'src', 'lib', 'question-banks');
 const baselinePath = path.join(process.cwd(), 'scripts', 'answer-length-baseline.json');
+
+const tolerance = (max) => Math.max(6, 0.15 * max);
 
 function loadBank(filePath) {
   const code = ts.transpileModule(fs.readFileSync(filePath, 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
   }).outputText;
   const runtimeModule = { exports: {} };
-  // Bank files import only the Question type, which transpiles away; anything
-  // else would be a structural change the bank audit catches first.
   new Function('exports', 'module', 'require', code)(runtimeModule.exports, runtimeModule, () => ({}));
   return Object.values(runtimeModule.exports).find(
     (value) => Array.isArray(value) && value.length && value[0] && Array.isArray(value[0].options),
   );
 }
 
-function measure(questions) {
-  const ranks = [0, 0, 0, 0];
-  let prose = 0;
+// Deterministic generator, so the control and therefore the gate is reproducible.
+function makeRandom(seed) {
+  let state = seed >>> 0;
+  return () => {
+    state = (state * 1664525 + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
+
+function prose(questions) {
+  const rows = [];
   let width = 4;
   for (const question of questions) {
     if (!Array.isArray(question.options) || question.options.length < 2) continue;
     if (question.answerType && question.answerType !== 'mcq') continue;
     const lengths = question.options.map((option) => String(option).length);
-    if (Math.max(...lengths) < PROSE_MIN) continue;
+    const max = Math.max(...lengths);
+    if (max < PROSE_MIN) continue;
     width = Math.max(width, lengths.length);
-    const sorted = [...lengths].sort((a, b) => b - a);
-    ranks[Math.min(sorted.indexOf(lengths[question.correctIndex]), 3)] += 1;
-    prose += 1;
+    const cut = max - tolerance(max);
+    rows.push({ lengths, cut, leaders: lengths.filter((l) => l >= cut).length, key: question.correctIndex });
   }
-  return { ranks, prose, width };
+  return { rows, width };
 }
 
+const score = (rows, keyOf) => rows.reduce(
+  (sum, row) => sum + (row.lengths[keyOf(row)] >= row.cut ? 1 / row.leaders : 0), 0,
+) / rows.length;
+
+// `--write-baseline` records the current measurement for every failing bank.
+// It is how the list is seeded and re-seeded, never a way to clear a failure:
+// a bank that regresses has to be fixed, not re-recorded.
+const writeBaseline = process.argv.includes('--write-baseline');
 const failures = [];
 const resolved = [];
-const rows = [];
+const measured = [];
 const baseline = JSON.parse(fs.readFileSync(baselinePath, 'utf8'));
 const seen = new Set();
 
@@ -74,55 +100,69 @@ for (const file of fs.readdirSync(banksDir).filter((name) => name.endsWith('.ts'
     failures.push(`${file}: no question array found, so nothing was measured`);
     continue;
   }
-  const { ranks, prose, width } = measure(questions);
-  if (prose < MIN_QUESTIONS) continue;
-  // Chance share for the top half. The fourth bucket absorbs ranks 4 and up,
-  // so a five-option bank sits at 2/5 rather than 1/2.
-  const chance = Math.min(2, Math.floor(width / 2)) / width;
-  const topHalf = (ranks[0] + ranks[1]) / prose;
-  // Three standard errors, floored so that a 12-question bank is not failed
-  // for a swing that a fair coin would produce often.
-  const slack = Math.max(0.12, 3 * Math.sqrt((chance * (1 - chance)) / prose));
-  const limit = chance + slack;
-  rows.push({ file, ranks, prose, width, topHalf });
+  const { rows, width } = prose(questions);
+  if (rows.length < MIN_QUESTIONS) continue;
+  const actual = score(rows, (row) => row.key);
+  const random = makeRandom(1_234_567);
+  let control = 0;
+  for (let run = 0; run < CONTROL_RUNS; run += 1) {
+    control += score(rows, (row) => Math.floor(random() * row.lengths.length));
+  }
+  control /= CONTROL_RUNS;
+  // Three standard errors of the per-question score, floored so a short bank
+  // is not failed for a swing a fair shuffle would produce often.
+  const slack = Math.max(0.12, 3 * Math.sqrt((control * (1 - control)) / rows.length));
+  const limit = control + slack;
+  measured.push({ file, n: rows.length, actual, control, width });
   seen.add(file);
   const recorded = baseline[file];
-  if (topHalf <= limit) {
+  const report = `picking the longest option scores ${(100 * actual).toFixed(0)}% across ${rows.length} prose `
+    + `questions, against ${(100 * control).toFixed(0)}% when the key is shuffled (limit ${(100 * limit).toFixed(0)}%)`;
+  if (actual <= limit) {
     if (recorded !== undefined) {
-      resolved.push(`${file}: now at ${(100 * topHalf).toFixed(0)}% against a limit of ${(100 * limit).toFixed(0)}% — remove its baseline entry`);
+      resolved.push(`${file}: ${report} — remove its baseline entry`);
     }
     continue;
   }
+  if (writeBaseline) { baseline[file] = Math.round(actual * 10000) / 10000; continue; }
   if (recorded === undefined) {
     failures.push(
-      `${file}: the correct answer is in the longer half of its options ${(100 * topHalf).toFixed(0)}% of the time `
-      + `across ${prose} prose questions (ranks ${ranks.join('/')}, chance ${(100 * chance).toFixed(0)}%, limit ${(100 * limit).toFixed(0)}%). `
-      + 'Lengthen distractors with real, wrong detail rather than trimming the key.',
+      `${file}: ${report}. Give the key a length clearly below the longest option in more questions, `
+      + 'by making thin distractors fully specified rather than by trimming the key.',
     );
-  } else if (topHalf > recorded + 0.005) {
+  } else if (actual > recorded + 0.005) {
     failures.push(
-      `${file}: answer-length skew got worse, ${(100 * recorded).toFixed(0)}% at baseline to ${(100 * topHalf).toFixed(0)}% now `
-      + `(ranks ${ranks.join('/')}). Baselined banks may improve but not regress.`,
+      `${file}: answer-length edge got worse, ${(100 * recorded).toFixed(0)}% at baseline to `
+      + `${(100 * actual).toFixed(0)}% now. Baselined banks may improve but not regress.`,
     );
   }
+}
+
+if (writeBaseline) {
+  for (const file of Object.keys(baseline)) if (!seen.has(file)) delete baseline[file];
+  const sorted = Object.fromEntries(Object.keys(baseline).sort().map((key) => [key, baseline[key]]));
+  fs.writeFileSync(baselinePath, `${JSON.stringify(sorted, null, 2)}\n`);
+  const carried = measured.filter((row) => sorted[row.file] !== undefined);
+  console.log(`Baseline written: ${carried.length} bank(s), ${carried.reduce((sum, row) => sum + row.n, 0)} question(s).`);
+  process.exit(0);
 }
 
 for (const file of Object.keys(baseline)) {
   if (!seen.has(file)) failures.push(`${file}: has a baseline entry but is no longer measured — remove the entry`);
 }
 
-const outstanding = rows.filter((row) => baseline[row.file] !== undefined);
 if (failures.length) {
   console.error('Answer-length audit failed:\n');
   for (const failure of failures) console.error(`  - ${failure}`);
   console.error(`\n${failures.length} problem(s).`);
   process.exit(1);
 }
-const total = rows.reduce((sum, row) => sum + row.prose, 0);
-const skewed = outstanding.reduce((sum, row) => sum + row.prose, 0);
+const outstanding = measured.filter((row) => baseline[row.file] !== undefined);
+const total = measured.reduce((sum, row) => sum + row.n, 0);
+const carried = outstanding.reduce((sum, row) => sum + row.n, 0);
 console.log(
-  `Answer-length audit passed: ${rows.length} banks measured, ${total} prose questions. `
-  + `${outstanding.length} bank(s) carrying ${skewed} question(s) are still on the baseline and may only improve.`,
+  `Answer-length audit passed: ${measured.length} banks measured, ${total} prose questions. `
+  + `${outstanding.length} bank(s) carrying ${carried} question(s) are still on the baseline and may only improve.`,
 );
 if (resolved.length) {
   console.error('\nBanks that no longer need a baseline entry:\n');
