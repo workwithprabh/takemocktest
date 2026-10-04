@@ -1857,7 +1857,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A state constitution provides that a treaty becomes part of domestic law only when a statute gives effect to it. Which characterisation fits?",
     "options": [
       "A dualist approach, treating international and domestic law as separate systems requiring transformation",
-      "A monist approach, treating international law as automatically part of domestic law",
+      "A monist approach, treating international law as automatically part of domestic law without any further act of transformation",
       "A rejection of the binding force of treaties in international law",
       "A reservation to the treaty limiting its international effect"
     ],
@@ -1880,7 +1880,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "difficulty": "hard",
     "question": "State A funds and arms an organised armed group operating inside State B with the aim of overthrowing its government, but sends no troops of its own. Which analysis is strongest?",
     "options": [
-      "There is no breach, since no armed forces of State A entered State B",
+      "There is no breach of any kind, since no armed forces of State A ever crossed the frontier into the territory of State B at any point during the whole operation itself",
       "This breaches the prohibition on intervention in the internal affairs of another state, and may engage the prohibition on the use of force",
       "There is no breach, provided State A does not direct the group operations",
       "This is lawful if State A believes the government of State B is unpopular"
@@ -1905,7 +1905,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A dispute turns on a treaty term whose ordinary meaning is clear when read in context and in the light of the treaty object and purpose. One party urges reliance on the negotiating record, which points the other way. Which approach is correct?",
     "options": [
       "The treaty must be interpreted strictly against the party that drafted it",
-      "The negotiating record always prevails, since it shows what the parties intended",
+      "The negotiating record always prevails over the text of the treaty, since it alone shows what the parties actually intended to agree between themselves at the time of signature",
       "The ordinary meaning in context and in light of object and purpose governs, with the negotiating record available only as a supplementary means",
       "The tribunal should choose whichever reading favours the weaker party"
     ],
@@ -1929,7 +1929,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A buyer takes possession of land under a written agreement to sell, pays most of the price and improves the property, but the sale deed is never executed. The seller sues to evict him. Which analysis is strongest?",
     "options": [
       "The buyer becomes the owner automatically once he pays most of the price",
-      "The buyer must vacate, since no sale deed was executed and no title passed to him",
+      "The buyer must vacate the land, since no sale deed was ever executed in his favour and no title in the property therefore passed to him at any stage of the whole transaction whatever",
       "The buyer may resist eviction by the seller, having taken possession and performed his part under a written contract, even though title has not passed",
       "The buyer may resist eviction only if the agreement was registered"
     ],
@@ -1952,7 +1952,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "difficulty": "medium",
     "question": "A will gives B a house belonging to C, and in the same instrument gives C a sum of money. C wishes to keep his house and also take the money. Which analysis is correct?",
     "options": [
-      "C may keep both, since the testator could not dispose of property he did not own",
+      "C may keep both the house and the money, since the testator had no power to dispose of property that did not belong to him in the first place at all ever",
       "C must elect: he cannot both retain his own property and accept a benefit under the same instrument that purports to give it away",
       "C must surrender the house, since a will overrides existing ownership",
       "The will is void in its entirety for purporting to give away another property"
@@ -1977,7 +1977,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A mortgage deed provides that if the mortgagor does not repay within five years, the mortgagee shall become the absolute owner and the right to redeem shall be extinguished for ever. Which analysis is strongest?",
     "options": [
       "The clause is valid only if the mortgagor was independently advised",
-      "The clause is valid, since parties are free to agree the terms of their security",
+      "The clause is valid, since the parties are entirely free to agree whatever terms they wish for the security they create between themselves",
       "The clause is valid if the five-year period is reasonable",
       "The clause is bad, because a provision preventing redemption on repayment is a clog on the equity of redemption"
     ],
@@ -2003,7 +2003,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
       "The transfer is bad, because vesting is postponed beyond the life of the last living person plus the minority of the unborn person",
       "The transfer is valid, since an unborn person may always be given property",
       "The transfer is valid, since thirty is a reasonable age",
-      "The transfer is bad, because property can never be given to an unborn person"
+      "The transfer is bad, because property can never be given to a person who is not yet born at the date of the transfer, whatever the terms of the instrument"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2026,7 +2026,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "options": [
       "The use is fair only if the review is unfavourable",
       "Any reproduction without a licence infringes copyright",
-      "The use is fair only if the reviewer paid for a copy of the novel",
+      "The use is fair only if the reviewer paid for his own copy of the novel and says so expressly somewhere in the body of the published review itself as well",
       "The use is likely to be fair dealing for the purpose of criticism or review, given the limited extent and the acknowledgement"
     ],
     "correctIndex": 3,
@@ -2074,7 +2074,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "options": [
       "None, since only registered marks are protected",
       "Passing off, resting on the goodwill he has built, the misrepresentation and the damage likely to follow",
-      "Infringement of a registered trade mark, since goodwill amounts to registration",
+      "Infringement of a registered trade mark, since goodwill in a get-up amounts in law to registration of that get-up itself as a mark",
       "Breach of contract, since traders in a town impliedly agree not to imitate"
     ],
     "correctIndex": 1,
@@ -2097,7 +2097,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A project promises significant employment but will consume a scarce aquifer at a rate that leaves nothing for later users. The regulator must decide. Which principle most directly frames the decision?",
     "options": [
       "Sustainable development, which requires reconciling present economic needs with the ability of future users to meet theirs",
-      "The polluter pays principle, which allocates the cost of pollution already caused",
+      "The polluter pays principle, which allocates to the polluter the whole of the cost of the pollution that has already been caused by the activity",
       "Absolute liability, which fixes responsibility for harm from hazardous activity",
       "The public trust doctrine, which bars any use of a natural resource"
     ],
@@ -2121,7 +2121,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A developer begins construction of a project requiring prior environmental clearance, obtains no clearance, and applies afterwards once the structure is largely complete. Which analysis is strongest?",
     "options": [
       "The developer need only pay a penalty, after which the project is regularised as of right",
-      "The clearance may be granted freely, since the project can still be assessed on its merits",
+      "The clearance may be granted freely even at this stage, since the project can still be assessed on its own merits by the regulatory authority in exactly the same way as it would have been before the work began",
       "The clearance is unnecessary once construction is complete",
       "A clearance granted after the activity has begun defeats the purpose of prior appraisal, since the assessment can no longer influence the decision it was meant to inform"
     ],
@@ -2145,7 +2145,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A state grants a fifty-year licence to extract a non-renewable mineral at a rate that will exhaust the deposit within twenty years, with no provision for later generations. Which principle is most directly engaged?",
     "options": [
       "Intergenerational equity, which treats the present generation as holding natural resources in trust for those who follow",
-      "The precautionary principle, which addresses action under scientific uncertainty",
+      "The precautionary principle, which requires protective action to be taken in advance of full scientific certainty about the harm that may follow",
       "The polluter pays principle, which internalises the cost of pollution",
       "Strict liability, which fixes responsibility for escapes from land"
     ],
@@ -2169,7 +2169,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A person subject to a court order restraining him from carrying on a particular trade forms a company with nominee shareholders and carries on exactly that trade through it. Which analysis is strongest?",
     "options": [
       "The order is discharged once a company is interposed",
-      "The company is a separate person, so the order cannot reach its business",
+      "The company is a separate legal person, so the order made against the individual cannot reach its business",
       "A court may look behind the corporate form where it is used to evade a legal obligation",
       "The nominee shareholders alone are liable for the breach"
     ],
@@ -2192,7 +2192,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "difficulty": "medium",
     "question": "An outsider contracts with a company through an officer whose appointment was defective in a way recorded nowhere publicly, the transaction being of a kind such an officer would ordinarily have authority to make. Is the company bound?",
     "options": [
-      "No, because the appointment was defective and authority therefore absent",
+      "No, because the appointment of the officer was defective from the outset and his authority to bind the company was therefore absent throughout the dealing",
       "Yes, because an outsider dealing in good faith may assume that the internal procedures of the company have been complied with",
       "Yes, but only if the outsider inspected the public filings first",
       "No, unless the company later ratifies the transaction"
@@ -2217,7 +2217,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "Promoters enter into a contract in the name of a company that has not yet been incorporated. After incorporation the company wishes to enforce it. Which analysis is correct?",
     "options": [
       "The contract is void and cannot be given effect in any circumstances",
-      "The company may enforce it automatically, since it was made for its benefit",
+      "The company may enforce the contract automatically upon its incorporation, since the arrangement was entered into entirely for its own benefit by the promoters acting on its behalf",
       "The company was not in existence and so was not a party, and it can take the benefit only where the arrangement is adopted in a manner the law permits",
       "The promoters remain the only parties for ever, whatever the company does"
     ],
@@ -2240,7 +2240,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "difficulty": "easy",
     "question": "In a civil suit a party states in a letter that he received the goods. In a criminal case an accused states to a magistrate that he committed the offence. How are these classified?",
     "options": [
-      "Both are confessions, since each is a statement against interest",
+      "Both of the statements are confessions, since each of them is a statement made against the interest of the person who happened to make it at the time",
       "The first is an admission and the second a confession, a confession being an acknowledgement of guilt of the offence charged",
       "Both are admissions, since each was made voluntarily",
       "The first is a confession and the second an admission"
@@ -2266,7 +2266,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "options": [
       "The statement is admissible only if it was recorded by a magistrate",
       "The statement is admissible as a dying declaration regardless of recovery",
-      "The statement is inadmissible for every purpose because the maker recovered",
+      "The statement is inadmissible for every purpose whatever, because the maker of it recovered from his injuries and is no longer in any danger of death at all",
       "The statement is not a dying declaration in the strict sense, since the maker is alive and can be examined as an ordinary witness"
     ],
     "correctIndex": 3,
@@ -2289,7 +2289,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A dispute arises over the custody of a young child between two parents, each with an equal legal claim. Which consideration governs the decision?",
     "options": [
       "The welfare of the child, which is the paramount consideration and may outweigh the claims of either parent",
-      "The superior legal right of the father as natural guardian, which settles the matter",
+      "The superior legal right of the father as natural guardian, which settles the matter whatever the circumstances of the child may be",
       "The financial position of each parent, which is decisive",
       "The wishes of the child, which are binding at every age"
     ],
@@ -2314,7 +2314,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "options": [
       "Both treat the marriage as never having existed",
       "A nullity decree treats the marriage as defective from the outset, while divorce dissolves a valid marriage on grounds arising later",
-      "Both dissolve a valid marriage, differing only in procedure",
+      "Both decrees dissolve a marriage that was perfectly valid when it was entered into, and they differ from one another only in the procedure by which they are obtained",
       "A nullity decree operates only where the parties agree"
     ],
     "correctIndex": 1,
@@ -2337,7 +2337,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A plaintiff seeks an order restraining the defendant from felling trees on disputed land until the suit is decided. Which considerations govern the grant?",
     "options": [
       "Only whether the plaintiff has deposited security in court",
-      "Only whether the plaintiff is likely to succeed at trial",
+      "Only whether the plaintiff is likely in the end to succeed when the suit finally comes on for trial on the merits",
       "Only whether the defendant consents to the order",
       "A prima facie case, the balance of convenience, and irreparable injury not compensable in money"
     ],
@@ -2361,7 +2361,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
     "question": "A plaint discloses facts which, even if entirely proved, would not entitle the plaintiff to any relief against the defendant. The defendant applies to have it thrown out at the threshold. Which analysis is correct?",
     "options": [
       "The plaint may be rejected only if the defendant files a written statement first",
-      "The suit must proceed to trial, since the plaintiff is entitled to lead evidence",
+      "The suit must proceed to trial in any event, since the plaintiff is entitled to lead all of his evidence before any decision is taken against him",
       "The plaint may be rejected for disclosing no cause of action, the court reading the plaint as it stands without evidence",
       "The plaint may be rejected only if the plaintiff admits the defect"
     ],
@@ -2387,7 +2387,7 @@ export const AILET_2026_LLM_LAW_2: Question[] = [
       "Both are non-adjudicatory, the first being conciliation with an evaluative role and the second mediation in its facilitative form",
       "Both are arbitration, since a neutral third party is involved in each",
       "The first is arbitration and the second conciliation",
-      "The first is adjudication and the second negotiation without a neutral"
+      "The first is adjudication and the second is a negotiation conducted directly between the parties themselves without any neutral third party taking part at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
