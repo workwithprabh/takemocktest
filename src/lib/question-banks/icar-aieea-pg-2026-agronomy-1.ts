@@ -104,8 +104,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Commercial sugarcane is commonly established vegetatively using:",
     "options": [
-      "True seed only",
-      "Leaf cuttings without buds",
+      "Botanical true seed collected from flowering tassels",
+      "Detached leaf blades struck in a rooting medium",
       "Stem setts containing viable buds",
       "Detached roots only"
     ],
@@ -128,10 +128,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Groundnut is described as geocarpic because:",
     "options": [
-      "flowers open only below ground.",
-      "seeds germinate on the parent plant.",
+      "its flowers open underground and are never visible above the soil surface.",
+      "its seeds germinate while still attached to the parent plant above ground.",
       "fertilized pegs enter the soil and pods develop below ground.",
-      "roots form pods before flowering."
+      "pods are formed directly on the root system before any flowering occurs."
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -296,7 +296,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "The light reactions of photosynthesis occur primarily in the:",
     "options": [
-      "mitochondrial matrix",
+      "inner mitochondrial matrix adjacent to the cristae",
       "nuclear envelope",
       "thylakoid membranes of chloroplasts",
       "vacuolar sap"
@@ -488,9 +488,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "The primary agronomic purpose of tillage is best described as:",
     "options": [
-      "sterilising all soil organisms",
+      "sterilising every organism living in the soil so that no biological activity remains",
       "eliminating the need for seed",
-      "increasing soil erosion intentionally",
+      "deliberately increasing the rate of soil erosion across the cultivated field surface",
       "creating a favourable seedbed and managing soil/weed conditions for crop establishment"
     ],
     "correctIndex": 3,
@@ -512,10 +512,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Zero tillage means the crop is established:",
     "options": [
-      "after repeated mouldboard ploughing.",
+      "only after the field has been broken repeatedly with a mouldboard plough and harrowed.",
       "without prior conventional soil tillage, using minimal soil disturbance for seeding.",
-      "only after puddling.",
-      "without placing seed in soil."
+      "only after the field has been thoroughly puddled and levelled under standing water.",
+      "by broadcasting seed on the surface without ever placing it in contact with the soil."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -584,7 +584,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Harvest index is commonly calculated as:",
     "options": [
-      "biological yield divided by economic yield",
+      "total biological yield divided by the economic yield of the crop",
       "economic yield divided by total biological yield",
       "root length divided by plant height",
       "seed rate divided by plant population"
@@ -680,9 +680,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "An integrated farming system is characterised by:",
     "options": [
-      "growing one crop with no other enterprise",
+      "growing a single arable crop with no livestock, fishery or other enterprise alongside",
       "prohibiting recycling of residues",
-      "separating livestock and crop nutrient flows completely",
+      "keeping livestock and crop nutrient flows entirely separate so neither supports the other",
       "linking complementary farm enterprises so outputs/by-products of one can support another"
     ],
     "correctIndex": 3,
@@ -704,10 +704,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Why is randomisation used in a field experiment?",
     "options": [
-      "To guarantee every treatment gives the same yield",
+      "To guarantee that every treatment in the trial produces exactly the same yield per plot",
       "To reduce systematic allocation bias and support valid error estimation",
-      "To remove all natural field variability",
-      "To increase treatment means automatically"
+      "To remove every source of natural field variability from the experimental area completely",
+      "To raise the mean of each treatment automatically regardless of how the crop performs"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -729,7 +729,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "The main statistical benefit of replication in field trials is that it:",
     "options": [
       "provides an estimate of experimental error and improves precision.",
-      "removes the need for randomisation.",
+      "it removes the need for randomisation when treatments are allocated to plots.",
       "makes blocking impossible.",
       "guarantees significance."
     ],
@@ -752,9 +752,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "In a randomized block design, blocks are formed mainly to:",
     "options": [
-      "ensure every plot receives every treatment simultaneously",
+      "ensure that every plot in the experiment receives every treatment under test simultaneously",
       "group relatively homogeneous experimental units and control known spatial variation",
-      "avoid replication",
+      "avoid any need for replication of the treatments anywhere in the experimental layout used",
       "replace all randomisation."
     ],
     "correctIndex": 1,
@@ -801,9 +801,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "Relative humidity compares the actual water-vapour content/pressure of air with:",
     "options": [
       "the saturation value at the same temperature",
-      "soil bulk density",
-      "wind speed at sea level only",
-      "solar constant"
+      "the bulk density of the surface soil measured at the same site",
+      "the wind speed recorded at mean sea level over the same period",
+      "the value of the solar constant at the top of the atmosphere"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -848,7 +848,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "The natural greenhouse effect warms the lower atmosphere because certain gases:",
     "options": [
-      "block all incoming sunlight",
+      "block all incoming shortwave sunlight before it reaches the ground",
       "convert nitrogen directly to oxygen",
       "absorb and re-emit outgoing terrestrial infrared radiation",
       "stop convection completely."
@@ -872,8 +872,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A geographic information system is especially useful for:",
     "options": [
-      "measuring seed germination by itself without data",
-      "replacing all field sampling",
+      "measuring seed germination percentage on its own without any spatial data at all",
+      "replacing the need for any field sampling or ground verification whatsoever",
       "fixing atmospheric nitrogen.",
       "storing, analysing and mapping spatially referenced agricultural data"
     ],
@@ -969,9 +969,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "For transplanted rice, seedlings are moved from a nursery to:",
     "options": [
       "a prepared main field where they establish as the crop stand",
-      "dry storage until maturity",
-      "a laboratory growth chamber permanently",
-      "the threshing floor."
+      "dry storage sheds where they are held in bundles until the crop matures",
+      "a laboratory growth chamber in which they are kept permanently under lights",
+      "the threshing floor, where they remain until the grain is separated."
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1040,7 +1040,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Compared with many water-demanding crops, sorghum is valued in dry regions partly for its:",
     "options": [
-      "requirement for continuous flooding",
+      "requirement for continuous flooding throughout the whole growing season",
       "inability to tolerate heat",
       "obligate aquatic growth.",
       "relatively strong drought adaptation"
@@ -1064,8 +1064,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Pearl millet is especially associated with production in:",
     "options": [
-      "permanently flooded deepwater only",
-      "cool humid alpine valleys only",
+      "permanently flooded deepwater conditions and nowhere else in the country",
+      "cool humid alpine valleys at high elevation and nowhere warmer than that",
       "hot, dry environments and relatively low-rainfall regions",
       "saline ocean water."
     ],
@@ -1112,10 +1112,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "One agronomic advantage of mungbean in intensive systems is its:",
     "options": [
-      "need for several years to mature",
-      "obligate flooding",
+      "requirement for several years in the field before it reaches maturity",
+      "obligate requirement for standing water throughout the whole season",
       "short duration, allowing fit into multiple-cropping windows",
-      "complete inability to fix nitrogen."
+      "complete inability to fix any atmospheric nitrogen in root nodules"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1209,8 +1209,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "The commercial fibre of cotton is derived from:",
     "options": [
       "epidermal hairs on the seed coat",
-      "stem bark bast fibres only",
-      "root cortex",
+      "bast fibres stripped from the bark of the stem",
+      "the cortical tissue of the main taproot",
       "leaf veins."
     ],
     "correctIndex": 0,
@@ -1256,7 +1256,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A ratoon sugarcane crop develops from:",
     "options": [
-      "new true seed sown after every harvest only",
+      "new true seed that is sown afresh in the field after every harvest",
       "detached leaves placed on soil",
       "roots of an unrelated crop.",
       "buds on the stubble left after harvesting the plant crop"
@@ -1304,10 +1304,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Lucerne (alfalfa) is valued as a:",
     "options": [
-      "annual oilseed only",
-      "aquatic cereal",
+      "an annual oilseed grown for its pressed oil",
+      "an aquatic cereal grown in standing water",
       "perennial leguminous forage",
-      "root spice."
+      "a root spice harvested for its rhizome"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1329,8 +1329,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "In agronomic forage production, oats are commonly used as:",
     "options": [
       "a cool-season cereal fodder",
-      "a tropical tree crop",
-      "a pulse oilseed",
+      "a tropical tree crop grown for timber",
+      "a pulse grown mainly for edible oil",
       "a fibre shrub."
     ],
     "correctIndex": 0,
@@ -1376,7 +1376,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Lemongrass is cultivated chiefly for:",
     "options": [
-      "edible tubers",
+      "edible tubers used as a starchy vegetable",
       "bast fibre",
       "grain starch.",
       "aromatic essential oil rich in citral"
@@ -1424,10 +1424,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Which planting material is conventionally used for potato multiplication in the field?",
     "options": [
-      "mature leaves without buds",
+      "mature leaves detached from the haulm without any buds",
       "Seed tubers or tuber pieces with viable eyes",
-      "flowers only",
-      "bare roots without buds."
+      "the flowers alone, collected from the crop at full bloom",
+      "bare roots lifted without any attached buds or eyes"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1473,8 +1473,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "The “critical period of weed competition” is the crop-growth interval during which:",
     "options": [
       "weed control is especially important to prevent unacceptable yield loss",
-      "all weeds must be allowed to seed",
-      "herbicides can never be used",
+      "every weed present must be allowed to flower and set seed without interference",
+      "no herbicide may be used at any stage in the management of the crop concerned",
       "the crop is already mature."
     ],
     "correctIndex": 0,
@@ -1496,7 +1496,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Allelopathy refers to:",
     "options": [
-      "competition only for mechanical space with no chemicals",
+      "competition for mechanical space alone, with no chemical substances involved at all",
       "biochemical effects of one plant on another through released compounds",
       "insect feeding on roots",
       "soil erosion by wind."
@@ -1520,7 +1520,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A pre-emergence herbicide is applied:",
     "options": [
-      "only after harvest of the mature crop",
+      "only after the mature crop has been harvested and the field has been cleared of residue",
       "only to seeds in storage",
       "after every weed has set seed.",
       "after sowing but before emergence of the crop/weeds as specified on the label"
@@ -1544,8 +1544,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A post-emergence herbicide is applied when:",
     "options": [
-      "no plants have emerged",
-      "only before sowing",
+      "no plants of any kind have yet emerged above the soil surface in the field",
+      "the field has been prepared but the crop has not yet been sown at all",
       "only during seed storage.",
       "target weeds have emerged and are actively exposed to treatment"
     ],
@@ -1592,7 +1592,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A systemic herbicide differs from a contact herbicide because it:",
     "options": [
-      "acts only where droplets touch and never moves",
+      "acts only at the point where spray droplets touch and never moves within the plant",
       "has no site of action",
       "must always be applied to soil.",
       "can be translocated from the treated site to other plant tissues"
@@ -1665,7 +1665,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "Which practice best reduces herbicide-resistance selection pressure?",
     "options": [
       "Integrating non-chemical tactics and rotating effective modes of action",
-      "using the same mode of action every season exclusively",
+      "using the same herbicide mode of action every season and nothing else alongside it",
       "allowing resistant survivors to set seed",
       "applying below-label doses routinely."
     ],
@@ -1712,9 +1712,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Striga is best known as a:",
     "options": [
-      "floating aquatic fern",
-      "non-parasitic cereal crop",
-      "nitrogen-fixing bacterium.",
+      "a floating aquatic fern that spreads rapidly over still water surfaces",
+      "a cereal crop that grows without parasitising any other plant",
+      "a free-living nitrogen-fixing bacterium found in the soil of cereal fields",
       "parasitic weed associated with roots of susceptible hosts"
     ],
     "correctIndex": 3,
@@ -1736,9 +1736,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Water hyacinth is problematic primarily as a:",
     "options": [
-      "deep-rooted desert annual",
+      "a deep-rooted desert annual of arid plains",
       "free-floating aquatic weed",
-      "parasitic vine only",
+      "a parasitic vine that twines on woody hosts",
       "temperate cereal."
     ],
     "correctIndex": 1,
@@ -2289,9 +2289,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "Site-specific nutrient management adjusts fertilizer rates according to:",
     "options": [
       "spatial/temporal variation in soil supply and crop demand",
-      "a single blanket rate regardless of field variation",
-      "only the colour of machinery",
-      "national average yield alone."
+      "a single blanket rate applied regardless of how the field varies",
+      "the colour of the machinery that is used to spread the fertiliser",
+      "the national average yield of the crop and nothing else at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2312,7 +2312,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "The purpose of a slow- or controlled-release fertilizer is to:",
     "options": [
-      "make all nutrients immediately unavailable forever",
+      "make every nutrient in the material permanently unavailable to the crop for the whole season",
       "release nutrients over time so supply better matches crop demand and losses may be reduced",
       "increase volatilisation intentionally",
       "replace irrigation."
@@ -2360,9 +2360,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Meteorological drought refers primarily to:",
     "options": [
-      "root-zone water deficit only regardless of rainfall",
+      "a root-zone water deficit alone, whatever the rainfall record of the area shows",
       "a prolonged precipitation deficit relative to the normal climate of an area",
-      "low market price of grain",
+      "a sustained fall in the market price of grain over the whole of the trading season",
       "excess groundwater."
     ],
     "correctIndex": 1,
@@ -2384,8 +2384,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Agricultural drought is most directly indicated when:",
     "options": [
-      "rainfall is exactly average and crops have ample moisture",
-      "reservoir prices rise",
+      "rainfall is exactly at its long-term average and the crop has ample moisture all season",
+      "the price paid for water stored in the district reservoir begins to rise very sharply",
       "soil moisture becomes inadequate to meet crop water needs during the growing season",
       "wind speed falls below normal."
     ],
@@ -2433,8 +2433,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "Surface residue mulch helps dryland crops chiefly by:",
     "options": [
       "reducing evaporation and moderating soil temperature while protecting the surface",
-      "increasing bare-soil evaporation",
-      "preventing all infiltration",
+      "increasing evaporation from the bare soil surface during the hottest part of the day",
+      "preventing any infiltration of rainfall into the soil lying beneath the residue layer",
       "removing organic matter."
     ],
     "correctIndex": 0,
@@ -2528,8 +2528,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A watershed approach manages soil and water most logically according to:",
     "options": [
-      "political boundaries only with no regard to runoff",
-      "individual leaves rather than land units",
+      "political boundaries alone, with no regard to where runoff actually moves on the land",
+      "individual leaves on the crop rather than the land units that actually generate runoff",
       "the hydrologic drainage unit, coordinating upstream and downstream interventions",
       "a single field without any water-flow context."
     ],
@@ -2555,7 +2555,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
       "provide drainage and leach soluble salts below the root zone with suitable-quality water",
       "add sodium salts intentionally",
       "prevent any drainage",
-      "apply gypsum only without removing soluble salts."
+      "apply gypsum on its own without removing any of the soluble salts from the root zone at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2576,9 +2576,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Gypsum is commonly used in reclamation of sodic soils because it supplies:",
     "options": [
-      "additional exchangeable sodium",
-      "chloride as the only active ion",
-      "organic carbon only.",
+      "additional exchangeable sodium to the soil exchange complex",
+      "chloride as the only ion of any agronomic consequence here",
+      "organic carbon alone, with no cation of any kind supplied",
       "soluble calcium that can replace exchangeable sodium"
     ],
     "correctIndex": 3,
@@ -2600,9 +2600,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Liming an acid soil primarily aims to:",
     "options": [
-      "increase exchangeable acidity deliberately",
-      "add sodium to create sodicity",
-      "prevent calcium supply.",
+      "increase the exchangeable acidity of the soil deliberately still further",
+      "add sodium to the soil so that sodicity develops over several seasons",
+      "prevent any supply of calcium from reaching the crop root zone",
       "raise soil pH and reduce harmful acidity/aluminium effects"
     ],
     "correctIndex": 3,
@@ -2624,10 +2624,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A crop root zone remains saturated for long periods. The most immediate plant-growth problem is often:",
     "options": [
-      "excess oxygen in the soil",
+      "an excess of oxygen reaching the root surface continuously",
       "poor aeration and oxygen deficiency for roots",
-      "complete loss of all soil water",
-      "instant phosphorus volatilisation."
+      "the complete loss of all water held in the soil profile",
+      "the instant volatilisation of soil phosphorus into the air"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2648,9 +2648,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "High soil salinity can reduce seed germination primarily by:",
     "options": [
-      "raising water potential so uptake is unlimited",
+      "raising the soil-water potential so that uptake by the seed is unlimited",
       "lowering soil-water potential and making water uptake more difficult",
-      "eliminating all ions from soil",
+      "removing every dissolved ion from the soil solution surrounding the seed",
       "increasing oxygen diffusion."
     ],
     "correctIndex": 1,
@@ -2696,10 +2696,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "During early reclamation of a salt-affected field, using a relatively salt-tolerant crop is useful because it:",
     "options": [
-      "removes the need for any reclamation practice",
-      "guarantees all salts disappear instantly",
+      "removes the need for any reclamation practice at all on the affected land",
+      "guarantees that every trace of salt disappears from the profile instantly",
       "can maintain production while soil conditions are still stressful",
-      "increases sodicity by definition."
+      "increases the sodicity of the soil by definition whatever else is done"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2747,7 +2747,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
       "be impossible to measure",
       "change randomly regardless of management",
       "reflect changes in resource condition or system performance over time and be measurable",
-      "represent only one harvest price in all contexts."
+      "represent the price obtained at a single harvest and be applied unchanged in every context"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2768,10 +2768,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Agroforestry deliberately combines:",
     "options": [
-      "only annual cereals with no trees",
+      "only annual cereals grown in sequence with no woody perennial component at all",
       "woody perennials with crops and/or livestock on the same land-management unit",
       "only urban buildings",
-      "fish culture without any land component by definition."
+      "fish culture on its own, with no land-based component of any kind involved in it"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2816,9 +2816,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "On severely erosion-prone sloping land unsuitable for frequent tillage, a perennial tree–grass system can be considered an alternate land use because it:",
     "options": [
-      "requires more frequent bare-soil tillage",
-      "eliminates all vegetation",
-      "ignores erosion risk.",
+      "requires more frequent tillage of bare soil on the slope than annual cropping",
+      "eliminates all vegetative cover from the sloping land permanently",
+      "ignores the risk of erosion on the slope altogether in every season",
       "matches land capability better than repeated annual cultivation"
     ],
     "correctIndex": 3,
@@ -2840,7 +2840,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A defining feature of shifting cultivation is:",
     "options": [
-      "permanent intensive cultivation of the same irrigated field only",
+      "permanent intensive cultivation of the same irrigated field year after year without a break",
       "temporary cultivation of a plot followed by movement/fallow and use of another plot",
       "hydroponics in a greenhouse",
       "no vegetation clearing in any form."
@@ -2864,10 +2864,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Establishing hardy vegetation, controlling erosion and rebuilding soil organic matter on degraded land are measures aimed at:",
     "options": [
-      "accelerating land degradation",
-      "maintaining bare soil permanently",
+      "accelerating the degradation of the land still further each season",
+      "keeping the soil surface permanently bare of any vegetation",
       "wasteland remediation and productive rehabilitation",
-      "increasing runoff deliberately."
+      "deliberately increasing the volume of runoff leaving the land"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
