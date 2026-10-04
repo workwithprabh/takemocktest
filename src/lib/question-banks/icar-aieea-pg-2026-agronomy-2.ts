@@ -1112,9 +1112,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "Mungbean fits well as a catch crop between two main crops mainly because it:",
     "options": [
-      "takes more than 150 days to mature",
-      "cannot be grown in summer",
-      "needs continuous flooding",
+      "takes more than 150 days in the field to reach maturity",
+      "cannot be grown in the summer season",
+      "needs continuous flooding throughout",
       "matures in about 60-70 days and adds nitrogen"
     ],
     "correctIndex": 3,
@@ -1209,9 +1209,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "question": "Mepiquat chloride is applied in cotton primarily to:",
     "options": [
       "restrict excessive vegetative growth and improve boll retention",
-      "stimulate maximum vegetative growth",
-      "kill broadleaf weeds",
-      "delay boll opening indefinitely"
+      "stimulate the maximum possible vegetative growth of the crop canopy in the field",
+      "kill broadleaf weeds within the standing crop",
+      "delay the opening of the bolls indefinitely"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1304,8 +1304,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "Compared with berseem, lucerne is better suited to a farm needing fodder over several years because lucerne is:",
     "options": [
-      "an annual that is harvested only once in its life",
-      "a kharif cereal",
+      "an annual crop that can be harvested only once in the course of its whole life",
+      "a kharif cereal sown with the monsoon",
       "a deep-rooted perennial that can be cut for two to three years",
       "a short-duration pulse crop of the kharif season"
     ],
@@ -1616,7 +1616,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "Weed index expresses:",
     "options": [
-      "the number of weed species present in a field",
+      "the number of different weed species that are present in the field at harvest",
       "the germination percentage of the weed seed",
       "the weight of the weeds removed by hand weeding",
       "yield loss in a treatment relative to the weed-free plot"
@@ -2192,9 +2192,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "Nitrogen is usually applied in split doses to cereals because nitrogen:",
     "options": [
-      "is entirely immobile within the soil profile at all times",
+      "is entirely immobile within the soil profile at all times during the growing season itself",
       "reduces the tiller number when it is split into doses",
-      "cannot be absorbed at all after tillering has begun",
+      "cannot be absorbed at all once tillering has begun",
       "is easily lost by leaching and volatilisation if all is applied at sowing"
     ],
     "correctIndex": 3,
@@ -2313,9 +2313,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "question": "The leaf colour chart is used in rice to decide:",
     "options": [
       "when a top dressing of nitrogen is needed",
-      "the seed rate to be used at sowing",
-      "the depth of puddling required",
-      "the date of the final harvest"
+      "the seed rate that should be used at the time of sowing",
+      "the depth of puddling that is required",
+      "the date on which to take the harvest"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2408,7 +2408,7 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "Sowing on ridges with furrows in a dryland field helps mainly by:",
     "options": [
-      "preventing all weed growth in the field entirely thereafter",
+      "preventing every kind of weed growth in the field entirely thereafter for the whole season",
       "raising the soil pH of the field markedly over the season",
       "harvesting rainfall in the furrows and improving drainage in wet spells",
       "reducing the seed rate that is needed for the crop"
@@ -2432,9 +2432,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "A life-saving irrigation in a dryland crop refers to:",
     "options": [
-      "full irrigation at every critical stage",
-      "pre-sowing irrigation of the entire command",
-      "irrigation applied only after harvest",
+      "a full irrigation applied at every one of the critical stages of crop growth in the season itself",
+      "a pre-sowing irrigation of the entire command area",
+      "an irrigation applied only after the harvest",
       "one light irrigation given during a prolonged dry spell to keep the crop alive"
     ],
     "correctIndex": 3,
@@ -2457,9 +2457,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "question": "A farm pond in a rainfed watershed serves primarily to:",
     "options": [
       "store runoff for supplemental irrigation and recharge",
-      "dispose of excess runoff away from the farm",
+      "dispose of the excess runoff away from the farm land altogether",
       "provide drinking water for the village only",
-      "act as a permanent fish hatchery"
+      "act as a permanent hatchery for fish"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2480,8 +2480,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "Contour bunding on sloping land is effective mainly because the bunds:",
     "options": [
-      "run straight down the slope to drain water quickly",
-      "are built only on flat land",
+      "run straight down the slope so as to drain the water away from the field quickly enough",
+      "are built only on level land",
       "run along the contour, reducing the length and speed of overland flow",
       "replace the need for any vegetative cover"
     ],
@@ -2529,8 +2529,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "question": "When the onset of the monsoon is delayed by three weeks, the recommended contingency is usually to:",
     "options": [
       "switch to a shorter-duration crop or variety suited to the shortened season",
-      "sow the same long-duration variety as planned",
-      "leave the land fallow for the whole year",
+      "sow the same long-duration variety exactly as it was originally planned for the whole season",
+      "leave the land fallow for the whole of the year",
       "double the seed rate of the original crop"
     ],
     "correctIndex": 0,
@@ -2600,8 +2600,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "The leaching requirement of an irrigated saline soil is the fraction of applied water that must:",
     "options": [
-      "evaporate from the surface",
-      "run off the field surface",
+      "evaporate from the surface of the soil during the course of the dry season itself",
+      "run off the surface of the field",
       "be stored in the root zone permanently",
       "pass below the root zone to keep root-zone salinity within limits"
     ],
@@ -2649,8 +2649,8 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "question": "Raised-bed planting helps in a waterlogging-prone field because it:",
     "options": [
       "keeps the root zone above the saturated layer while furrows carry excess water",
-      "increases the depth of standing water around the plant",
-      "prevents any infiltration",
+      "increases the depth of the standing water around each plant in the field during the season itself",
+      "prevents any infiltration at all",
       "eliminates the need for drainage entirely"
     ],
     "correctIndex": 0,
@@ -2696,10 +2696,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "In strongly acid soils, poor root growth is often caused directly by:",
     "options": [
-      "excess calcium in solution",
-      "high nitrate concentration",
+      "an excess of calcium held within the soil solution itself",
+      "a high concentration of nitrate",
       "soluble aluminium becoming toxic to root tips",
-      "excess molybdenum"
+      "an excess of molybdenum"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2720,9 +2720,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "difficulty": "medium",
     "question": "Diversifying a rice-wheat system with pulses and oilseeds is advocated mainly because it:",
     "options": [
-      "guarantees a higher price for every crop",
-      "shortens the crop year to one season",
-      "removes the need for fertilizer",
+      "guarantees a higher market price for every one of the crops that are grown there",
+      "shortens the crop year to a single season",
+      "removes the need for any fertilizer",
       "reduces pressure on groundwater and breaks pest and weed cycles"
     ],
     "correctIndex": 3,
@@ -2745,9 +2745,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_2: Question[] = [
     "question": "The economic threshold level in integrated pest management is the pest density at which:",
     "options": [
       "control action should be taken to prevent the pest reaching the economic injury level",
-      "the crop is already destroyed",
-      "pesticides must be stopped permanently",
-      "natural enemies disappear"
+      "the crop has already been completely destroyed by the pest in the field and nothing further can be done",
+      "the use of pesticides must be stopped permanently",
+      "the natural enemies of the pest disappear"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
