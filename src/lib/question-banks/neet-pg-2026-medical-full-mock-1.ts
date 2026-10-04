@@ -1064,10 +1064,10 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Nephrotic syndrome is defined by heavy proteinuria together with:",
     "options": [
-      "haematuria and hypertension together",
-      "oliguria and red cell casts",
+      "haematuria together with hypertension and red cell casts",
+      "oliguria with red cell casts in the urine",
       "hypoalbuminaemia, oedema and hyperlipidaemia",
-      "normal serum albumin"
+      "a normal serum albumin level"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1208,9 +1208,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which antihypertensive class is contraindicated in pregnancy because of fetal renal toxicity?",
     "options": [
-      "Methyldopa given in the pregnancy",
-      "Nifedipine given in the pregnancy",
-      "Labetalol given in the pregnancy",
+      "Methyldopa given throughout the whole of the pregnancy itself",
+      "Nifedipine given in the later pregnancy",
+      "Labetalol given during the pregnancy",
       "ACE inhibitors and angiotensin receptor blockers"
     ],
     "correctIndex": 3,
@@ -1808,9 +1808,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Painless progressive jaundice with a palpable gall bladder suggests, by Courvoisier's law, that the cause is:",
     "options": [
-      "gallstones lodged in the common bile duct at the ampulla",
-      "haemolysis",
-      "viral hepatitis",
+      "gallstones lodged within the common bile duct at the level of the ampulla of Vater",
+      "haemolysis of the red cells",
+      "acute viral hepatitis",
       "malignant obstruction such as carcinoma of the head of the pancreas"
     ],
     "correctIndex": 3,
@@ -1833,9 +1833,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Which finding is most suggestive of decompensated chronic liver disease?",
     "options": [
       "Ascites with hypoalbuminaemia and prolonged prothrombin time",
-      "Isolated raised alkaline phosphatase",
-      "Mild transaminase elevation alone",
-      "Isolated hyperbilirubinaemia in a well patient"
+      "An isolated rise in alkaline phosphatase",
+      "A mild elevation of transaminases alone",
+      "An isolated hyperbilirubinaemia in an otherwise entirely well young patient"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2024,10 +2024,10 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most appropriate first investigation in a patient with fever returning from a malaria-endemic area is:",
     "options": [
-      "blood culture only",
-      "chest radiograph",
+      "blood culture alone, taken before any other investigation is done at all",
+      "a plain chest radiograph",
       "peripheral blood smear or rapid diagnostic test for malaria",
-      "lumbar puncture"
+      "a lumbar puncture"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2096,10 +2096,10 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The immediate treatment of anaphylaxis in an adult is:",
     "options": [
-      "intravenous hydrocortisone first",
-      "oral antihistamine",
+      "intravenous hydrocortisone given first, before any other treatment",
+      "an oral antihistamine",
       "intramuscular adrenaline into the anterolateral thigh",
-      "nebulised salbutamol alone"
+      "nebulised salbutamol on its own"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2192,10 +2192,10 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Physiological jaundice of the newborn characteristically:",
     "options": [
-      "appears within the first 24 hours of life",
-      "is always conjugated",
+      "appears within the first 24 hours of the life of the newborn infant",
+      "is always a conjugated hyperbilirubinaemia",
       "appears after 24 hours and peaks around days 3 to 5",
-      "requires exchange transfusion routinely"
+      "requires exchange transfusion as a routine"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2265,9 +2265,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "A child with a barking cough, inspiratory stridor and hoarseness following a coryzal illness most likely has:",
     "options": [
       "viral croup (laryngotracheobronchitis)",
-      "acute epiglottitis",
-      "foreign body aspiration",
-      "bronchiolitis"
+      "acute epiglottitis with drooling and a quiet voice",
+      "aspiration of a foreign body",
+      "acute bronchiolitis"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2288,10 +2288,10 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Kwashiorkor is distinguished from marasmus chiefly by the presence of:",
     "options": [
-      "severe wasting without oedema",
-      "normal serum albumin",
+      "severe wasting of the body tissues without any oedema at all",
+      "a normal serum albumin level",
       "oedema with relatively preserved subcutaneous fat",
-      "an absence of skin changes"
+      "an absence of any skin changes"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2384,9 +2384,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Extensive epidermal detachment involving more than 30% of the body surface after a drug exposure describes:",
     "options": [
-      "fixed drug eruption",
+      "a fixed drug eruption of the trunk",
       "erythema nodosum",
-      "urticaria",
+      "acute urticaria",
       "toxic epidermal necrolysis"
     ],
     "correctIndex": 3,
@@ -2409,9 +2409,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "The minimum duration of symptoms required for a diagnosis of schizophrenia under commonly used criteria is:",
     "options": [
       "1 month of active symptoms with 6 months of total disturbance",
-      "1 week",
-      "2 years",
-      "24 hours"
+      "1 week of active symptoms, with no requirement for any longer disturbance at all",
+      "2 years of continuous disturbance",
+      "24 hours of active symptoms"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2505,9 +2505,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "The most reliable early clinical sign of hypovolaemic shock in a young adult is:",
     "options": [
       "tachycardia with a narrowed pulse pressure",
-      "a fall in systolic blood pressure",
+      "an early fall in the systolic blood pressure reading",
       "loss of consciousness",
-      "bradycardia"
+      "bradycardia with sweating"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2552,8 +2552,8 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Free gas under the diaphragm on an erect chest radiograph indicates:",
     "options": [
-      "intestinal obstruction",
-      "mesenteric ischaemia",
+      "intestinal obstruction without perforation",
+      "acute mesenteric ischaemia",
       "acute pancreatitis",
       "perforation of a hollow viscus"
     ],
@@ -2649,9 +2649,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "The commonest histological type of breast carcinoma is:",
     "options": [
       "invasive ductal carcinoma of no special type",
-      "lobular carcinoma",
-      "medullary carcinoma",
-      "mucinous carcinoma"
+      "invasive lobular carcinoma arising within the breast tissue",
+      "medullary carcinoma of the breast",
+      "mucinous carcinoma of the breast"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2672,10 +2672,10 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Peau d'orange appearance of the breast skin is caused by:",
     "options": [
-      "superficial infection",
-      "fat necrosis",
+      "a superficial infection involving the overlying skin",
+      "fat necrosis of the breast",
       "dermal lymphatic obstruction by tumour",
-      "duct ectasia"
+      "duct ectasia of the breast"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2793,9 +2793,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "The classic presentation of acute limb ischaemia includes pain, pallor, pulselessness, paraesthesia, paralysis and:",
     "options": [
       "perishing cold (poikilothermia)",
-      "polyuria and thirst",
-      "petechiae on the skin",
-      "pyrexia with chills"
+      "polyuria together with an excessive thirst",
+      "petechiae over the skin",
+      "pyrexia with rigors"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2912,9 +2912,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Cardiac output in normal pregnancy characteristically:",
     "options": [
-      "falls by about 20%",
-      "rises only during the labour and not before",
-      "remains entirely unchanged throughout pregnancy",
+      "falls by about 20% overall",
+      "rises only during the labour and not before it",
+      "remains entirely unchanged right through the whole of the pregnancy itself",
       "rises by about 30 to 50%, peaking in the second trimester"
     ],
     "correctIndex": 3,
@@ -3297,9 +3297,9 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Incidence of a disease differs from prevalence in that incidence measures:",
     "options": [
       "new cases arising in a population over a defined period",
-      "all of the existing cases at a point in time",
-      "deaths from the disease",
-      "the proportion who recover"
+      "all of the existing cases that are present at a single point in time",
+      "deaths arising from the disease",
+      "the proportion who recover fully"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3968,10 +3968,10 @@ export const NEET_PG_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most important modifiable factor in preventing progression of diabetic retinopathy is:",
     "options": [
-      "frequent change of the spectacles",
-      "vitamin supplementation",
+      "frequent changes of the spectacle prescription worn",
+      "supplementation with vitamins",
       "good glycaemic and blood pressure control",
-      "avoiding reading"
+      "avoiding all reading"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
