@@ -513,9 +513,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "question": "Recursive function calls normally require each active call to preserve its own:",
     "options": [
       "activation record / stack frame",
-      "global file system",
-      "cache coherence protocol",
-      "DNS record"
+      "the global symbol table of the whole program",
+      "the cache coherence protocol state",
+      "the page table base register"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -537,9 +537,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "question": "Encapsulation in object-oriented programming primarily combines data with:",
     "options": [
       "operations that control or use that data",
-      "unrelated network packets",
+      "the inheritance hierarchy of the unrelated classes",
       "a compulsory global variable",
-      "machine instructions only"
+      "the machine instructions alone"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -656,10 +656,10 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "Homogeneous coordinates are useful in computer graphics because they allow translation to be represented using:",
     "options": [
-      "only scalar division",
-      "sorting networks",
+      "division of each of the coordinates by a scalar factor alone each time",
+      "sorting of the vertex list",
       "matrix multiplication in an augmented coordinate system",
-      "regular expressions"
+      "evaluation of regular expressions"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -680,9 +680,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "hard",
     "question": "In a statically typed language, type checking performed at compile time primarily aims to detect:",
     "options": [
-      "all possible runtime logic errors",
-      "network congestion",
-      "disk fragmentation",
+      "all of the possible runtime logic errors in the whole program",
+      "exhaustion of heap memory",
+      "fragmentation of the disk",
       "type-inconsistent operations before execution"
     ],
     "correctIndex": 3,
@@ -849,9 +849,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "question": "The relational algebra selection operator filters:",
     "options": [
       "rows (tuples) satisfying a predicate",
-      "columns only",
-      "database schemas only",
-      "index pages only"
+      "the columns of the given relation and nothing else",
+      "the schemas of the database only",
+      "the index pages only"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -896,9 +896,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "hard",
     "question": "A decomposition of relation R into R1 and R2 is lossless if joining the decomposed relations always:",
     "options": [
-      "removes all keys",
+      "removes all of the keys",
       "creates at least one spurious tuple",
-      "requires no common attributes under every schema",
+      "requires that the two resulting schemas share no common attribute whatever at all",
       "reconstructs exactly the original relation without spurious tuples"
     ],
     "correctIndex": 3,
@@ -920,9 +920,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "Two-phase locking requires a transaction to have a growing phase for acquiring locks followed by:",
     "options": [
-      "another growing phase after every release",
-      "a phase with no locks ever",
-      "only checkpoint creation",
+      "a further growing phase immediately after every single release of a lock has been made at all",
+      "a phase in which no locks are ever held",
+      "the creation of checkpoints only",
       "a shrinking phase in which locks are released and no new locks are acquired"
     ],
     "correctIndex": 3,
@@ -1040,10 +1040,10 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "A page fault occurs when a referenced virtual page is:",
     "options": [
-      "already in a CPU register",
-      "always present in cache",
+      "already resident in one of the general-purpose CPU registers of the machine",
+      "always present in the cache",
       "not currently resident in the required physical memory mapping",
-      "a syntax error"
+      "marked read-only in the page table"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1064,10 +1064,10 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "A semaphore is used primarily for:",
     "options": [
-      "data compression",
+      "compression of data",
       "synchronization and coordination of concurrent activities",
-      "IP address translation only",
-      "compiler parsing only"
+      "the translation of network addresses between two separate domains only",
+      "parsing by the compiler only"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1089,9 +1089,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "question": "A context switch involves saving and restoring:",
     "options": [
       "execution state of processes or threads",
-      "only source-code comments",
-      "DNS names",
-      "database schemas"
+      "only the comments that are present in the source code",
+      "the resolved domain names",
+      "the schemas of the database"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1136,10 +1136,10 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "A linker primarily combines object modules and resolves:",
     "options": [
-      "page faults",
+      "the page faults raised during loading",
       "external symbol references",
-      "TCP handshakes",
-      "pixel colours"
+      "the TCP handshake sequence",
+      "the colour depth of pixels"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1304,9 +1304,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "Black-box testing designs tests mainly from:",
     "options": [
-      "source-code branch structure only",
-      "CPU microcode",
-      "database storage pages only",
+      "the branch structure of the source code under test and nothing else at all besides that",
+      "the microcode of the processor",
+      "the storage pages of the database only",
       "specified external behaviour without relying on internal implementation"
     ],
     "correctIndex": 3,
@@ -1329,9 +1329,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "question": "Regression testing checks whether:",
     "options": [
       "previously working behaviour has been broken by changes",
-      "all requirements are new",
-      "the source repository is empty",
-      "no defect ever existed"
+      "whether all of the stated requirements happen to be new ones this time",
+      "whether the source repository is empty",
+      "whether any defect ever existed at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1353,9 +1353,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "question": "A use-case diagram in UML primarily represents:",
     "options": [
       "interactions between actors and system use cases",
-      "database page layout",
-      "machine instruction timing",
-      "packet checksum bits"
+      "the page layout that is used internally by the database engine",
+      "the timing of machine instructions",
+      "the checksum bits of a packet"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1424,10 +1424,10 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "Version control is primarily used to:",
     "options": [
-      "replace all testing",
-      "guarantee bug-free code",
+      "replacing all testing",
+      "guaranteeing bug-free code",
       "track and coordinate changes to artifacts over time",
-      "execute database queries only"
+      "executing the queries against the database and nothing more at all"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1736,9 +1736,9 @@ export const UGC_NET_JUNE_2026_COMPUTER_SCIENCE_APPLICATIONS_1: Question[] = [
     "difficulty": "medium",
     "question": "The pumping lemma for regular languages is commonly used to:",
     "options": [
-      "construct every minimal DFA directly",
-      "prove every language decidable",
-      "eliminate all grammar ambiguity",
+      "construct every minimal DFA for a given language directly",
+      "prove that every language is decidable",
+      "eliminate all ambiguity in a grammar",
       "show that certain languages are not regular"
     ],
     "correctIndex": 3,
