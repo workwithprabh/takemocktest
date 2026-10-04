@@ -1737,9 +1737,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "question": "The most reliable bedside test to confirm correct endotracheal tube placement is:",
     "options": [
       "waveform capnography showing sustained end-tidal carbon dioxide",
-      "auscultation alone",
-      "chest movement alone",
-      "misting of the tube"
+      "auscultation of both axillae and the epigastrium immediately after intubation",
+      "symmetrical chest wall movement observed during manual ventilation",
+      "misting of the tube lumen with each delivered breath"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1784,9 +1784,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The commonest cause of neonatal sepsis presenting within the first 72 hours in India is:",
     "options": [
-      "late-onset hospital-acquired infection",
-      "fungal infection",
-      "viral infection",
+      "late-onset infection acquired from the hospital environment after the first week",
+      "candidal infection acquired during a prolonged nursery stay",
+      "a viral infection transmitted after discharge home",
       "organisms acquired from the maternal genital tract"
     ],
     "correctIndex": 3,
@@ -1832,10 +1832,10 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Measles-containing vaccine is given under the national schedule at:",
     "options": [
-      "birth",
-      "5 years only",
+      "at birth, together with the BCG and hepatitis B doses",
+      "a single dose at 5 years of age only, with no earlier dose given",
       "9 to 12 months with a second dose at 16 to 24 months",
-      "10 years"
+      "at 10 years, alongside the tetanus-diphtheria booster"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1928,9 +1928,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A simple febrile seizure in a child is characteristically:",
     "options": [
-      "focal and prolonged beyond 15 minutes",
-      "an indication for long-term antiepileptic therapy",
-      "always followed by epilepsy",
+      "focal in onset, prolonged well beyond 15 minutes and followed by a transient postictal hemiparesis",
+      "an indication for long-term antiepileptic therapy after the first episode",
+      "always followed by epilepsy in later childhood",
       "generalised, lasting under 15 minutes and not recurring within the same illness"
     ],
     "correctIndex": 3,
@@ -1976,10 +1976,10 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "In an adult burn, the Parkland formula estimates fluid requirement in the first 24 hours as:",
     "options": [
-      "2 mL per kg per percentage burn",
-      "10 mL per kg total",
+      "2 mL per kg per percentage burn, with the whole volume in the first 8 hours",
+      "10 mL per kg in total, repeated every 8 hours regardless of burn size",
       "4 mL per kg per percentage burn, half in the first 8 hours",
-      "a fixed 2 litres regardless of burn size"
+      "a fixed 2 litres in the first 24 hours regardless of burn size"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2000,9 +2000,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most appropriate initial investigation in a haemodynamically unstable blunt abdominal trauma patient is:",
     "options": [
-      "CT abdomen with contrast",
-      "MRI abdomen",
-      "diagnostic laparoscopy",
+      "CT abdomen with intravenous contrast once the patient has been resuscitated",
+      "MRI abdomen performed in the radiology department",
+      "diagnostic laparoscopy under general anaesthesia",
       "focused assessment with sonography for trauma at the bedside"
     ],
     "correctIndex": 3,
@@ -2072,9 +2072,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Triple assessment of a breast lump comprises clinical examination, imaging and:",
     "options": [
-      "serum tumour markers",
-      "mammography alone",
-      "bone scan",
+      "serum tumour markers measured before imaging",
+      "mammography repeated after an interval",
+      "an isotope bone scan of the whole skeleton",
       "needle biopsy for pathology"
     ],
     "correctIndex": 3,
@@ -2097,9 +2097,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "question": "The most useful initial investigation in a solitary thyroid nodule is:",
     "options": [
       "fine needle aspiration cytology with ultrasound",
-      "radioiodine scan",
-      "thyroid function tests alone",
-      "CT neck"
+      "a radioiodine uptake scan of the whole of the thyroid gland",
+      "thyroid function tests alone, repeated after six weeks",
+      "CT of the neck with intravenous contrast"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2120,10 +2120,10 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Testicular torsion is distinguished from epididymo-orchitis by:",
     "options": [
-      "gradual onset over days with fever",
-      "relief of pain on elevation of the testis",
+      "a gradual onset over several days accompanied by fever, dysuria and a purulent urethral discharge",
+      "relief of the pain on elevation of the affected testis",
       "sudden severe pain with a high-riding testis and absent cremasteric reflex",
-      "the presence of dysuria"
+      "the presence of dysuria with pyuria on urinalysis"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2144,9 +2144,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A venous ulcer is typically located:",
     "options": [
-      "over the dorsum of the foot",
-      "on the anterior shin only",
-      "over the tips of the toes",
+      "over the dorsum of the foot, with a sharply punched-out margin",
+      "on the anterior shin only, overlying the tibial crest",
+      "over the tips of the toes, with surrounding pallor",
       "in the gaiter area around the medial malleolus"
     ],
     "correctIndex": 3,
@@ -2169,9 +2169,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "question": "Which patient factor most increases the risk of postoperative wound infection?",
     "options": [
       "Poorly controlled diabetes mellitus",
-      "Young age",
-      "Female sex",
-      "Short operating time"
+      "Young age at the time of the planned operation",
+      "Female sex rather than male sex",
+      "A short total operating time"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2192,10 +2192,10 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Bilious vomiting in a neonate should be regarded as:",
     "options": [
-      "a normal feeding variant",
-      "always due to reflux",
+      "a normal variant of neonatal feeding that calls for no further investigation of any kind at all",
+      "always due to gastro-oesophageal reflux in the newborn",
       "a surgical emergency until intestinal malrotation with volvulus is excluded",
-      "an indication for reassurance"
+      "an indication for reassurance and continued observation at home"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2216,9 +2216,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Hyperacute rejection of a transplanted organ is mediated by:",
     "options": [
-      "T lymphocytes over weeks",
-      "neutrophils over months",
-      "chronic fibrosis over years",
+      "T lymphocytes infiltrating the graft over the course of the first several weeks",
+      "neutrophils recruited into the graft over several months",
+      "progressive interstitial fibrosis developing over years",
       "pre-formed recipient antibodies acting within minutes to hours"
     ],
     "correctIndex": 3,
@@ -2241,9 +2241,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "question": "The recommended minimum number of antenatal visits under current Indian national guidance is:",
     "options": [
       "at least four, with additional visits as indicated",
-      "one",
-      "eight for all women",
-      "two"
+      "one visit only, in the third trimester",
+      "eight scheduled contacts for every woman, irrespective of risk",
+      "two visits, one in each half of the pregnancy"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2264,10 +2264,10 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Physiological anaemia of pregnancy results chiefly from:",
     "options": [
-      "reduced iron absorption",
-      "chronic blood loss",
+      "a marked reduction in the absorption of dietary iron from the small intestine",
+      "chronic occult blood loss from the gastrointestinal tract",
       "plasma volume expanding proportionally more than red cell mass",
-      "haemolysis"
+      "haemolysis of red cells within the placental circulation"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2288,9 +2288,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Gestational diabetes screening in India is commonly performed using:",
     "options": [
-      "a fasting sample only",
-      "random glucose at every visit",
-      "urine sugar testing alone",
+      "a fasting plasma glucose sample taken at the booking visit and at no other time",
+      "a random plasma glucose measured at every antenatal visit",
+      "urine sugar testing alone at each antenatal visit",
       "a 75 g oral glucose load with a 2-hour plasma glucose measurement"
     ],
     "correctIndex": 3,
@@ -2576,9 +2576,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Rh anti-D immunoglobulin is given to an Rh-negative unsensitised mother after delivery of an Rh-positive baby in order to:",
     "options": [
-      "treat the maternal antibodies that have already been formed",
-      "treat the jaundice already present in the newborn infant",
-      "raise the mother’s haemoglobin concentration afterwards",
+      "treat the maternal antibodies that have already been formed against the fetal red blood cells",
+      "treat the jaundice already present in the newborn infant at delivery",
+      "raise the haemoglobin concentration of the mother afterwards",
       "prevent maternal sensitisation and haemolytic disease in a later pregnancy"
     ],
     "correctIndex": 3,
@@ -3224,9 +3224,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Corneal transparency is maintained chiefly by:",
     "options": [
-      "a rich network of capillaries within the stroma",
-      "dense pigment deposited in the stroma of the cornea",
-      "the constant evaporation of the tear film from it",
+      "a rich network of blood capillaries running throughout the corneal stroma itself",
+      "dense pigment deposited evenly through the corneal stroma",
+      "constant evaporation of the tear film from the surface",
       "regular collagen arrangement with active endothelial dehydration"
     ],
     "correctIndex": 3,
@@ -3393,9 +3393,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "question": "Scabies characteristically causes itching that is:",
     "options": [
       "worse at night, with burrows in finger webs and affecting close contacts",
-      "worst in the morning",
-      "confined to the face",
-      "unaccompanied by any rash"
+      "worst in the early morning hours and relieved completely by taking a hot shower each day",
+      "confined to the face and sparing the trunk and limbs",
+      "unaccompanied by any rash or visible skin change"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3416,10 +3416,10 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Atopic dermatitis in an infant typically involves the:",
     "options": [
-      "flexures only",
-      "palms and soles exclusively",
+      "the flexures at the elbows and behind the knees only, from the time of birth onwards",
+      "the palms and the soles exclusively, sparing the face",
       "face and extensor surfaces, moving to flexures in older children",
-      "scalp alone"
+      "the scalp alone, with no involvement elsewhere"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3465,9 +3465,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "question": "Which is a negative symptom of schizophrenia?",
     "options": [
       "Affective flattening and avolition",
-      "Auditory hallucinations",
-      "Delusions of persecution",
-      "Thought insertion"
+      "Auditory hallucinations of a running commentary",
+      "Delusions of persecution by neighbours",
+      "Thought insertion experienced as alien"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3488,10 +3488,10 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The ASA physical status classification grades:",
     "options": [
-      "the difficulty of intubation",
-      "the complexity of surgery",
+      "the anticipated difficulty of intubating the trachea at induction",
+      "the technical complexity of the planned surgery",
       "the patient's preoperative systemic physical status",
-      "postoperative pain"
+      "the severity of pain expected after surgery"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3512,9 +3512,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The earliest features of local anaesthetic systemic toxicity are usually:",
     "options": [
-      "cardiac arrest",
-      "hypertension",
-      "rash",
+      "cardiac arrest resulting from a refractory ventricular arrhythmia",
+      "hypertension with an accompanying bradycardia",
+      "a widespread urticarial rash over the trunk",
       "circumoral tingling, tinnitus and light-headedness"
     ],
     "correctIndex": 3,
@@ -3584,9 +3584,9 @@ export const FMGE_2026_PART_B_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The guiding principle for radiation protection in diagnostic imaging is:",
     "options": [
-      "as much imaging as possible",
-      "using the highest dose for best images",
-      "avoiding all imaging",
+      "obtaining as much imaging as the department is able to provide for every patient who is referred to it",
+      "using the highest dose available so that the images are of the best possible quality",
+      "avoiding all imaging that involves any ionising radiation at all",
       "keeping doses as low as reasonably achievable while answering the clinical question"
     ],
     "correctIndex": 3,
