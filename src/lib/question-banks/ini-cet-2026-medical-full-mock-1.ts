@@ -3776,10 +3776,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Under the Factories Act, notifiable occupational diseases require:",
     "options": [
-      "no reporting",
-      "reporting only if fatal",
+      "no reporting to any authority at any stage, whatever the nature of the disease involved",
+      "reporting only where the disease proves fatal",
       "notification by the medical practitioner to the prescribed authority",
-      "reporting by the worker alone"
+      "reporting by the affected worker alone"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3800,9 +3800,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The principal aim of universal health coverage is that people receive needed health services:",
     "options": [
-      "free of charge in all cases",
-      "only for communicable disease",
-      "only in public hospitals",
+      "entirely free of charge in every case, whoever the patient happens to be",
+      "only for the communicable diseases",
+      "only in public sector hospitals",
       "without suffering financial hardship in paying for them"
     ],
     "correctIndex": 3,
@@ -3825,9 +3825,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Biomedical waste in the red category, comprising contaminated recyclable plastic waste, is disposed of by:",
     "options": [
       "autoclaving or microwaving followed by shredding and recycling",
-      "deep burial",
-      "incineration only",
-      "ordinary municipal disposal"
+      "deep burial at a site approved for the purpose by the local authority itself",
+      "incineration in a common facility only",
+      "disposal with ordinary municipal waste"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3848,10 +3848,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Cadaveric spasm differs from rigor mortis in that cadaveric spasm:",
     "options": [
-      "appears several hours after death",
-      "affects the whole body",
+      "appears only several hours after death and then spreads gradually through the whole of the body itself",
+      "affects the whole of the body at once",
       "occurs instantaneously at the moment of death and affects a group of muscles in use",
-      "can be broken easily"
+      "can be broken easily by the examiner"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3872,9 +3872,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "A fracture of the hyoid bone at autopsy most strongly supports:",
     "options": [
-      "hanging in a young person",
-      "electrocution",
-      "drowning",
+      "hanging in a young person who used a soft and broad ligature material",
+      "electrocution through the neck",
+      "drowning in fresh water",
       "manual strangulation, particularly in older individuals"
     ],
     "correctIndex": 3,
@@ -3897,8 +3897,8 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Contrecoup brain injury is classically seen:",
     "options": [
       "on the side opposite the impact, typically after a fall on the occiput",
-      "directly beneath the site of impact",
-      "in the brainstem only",
+      "directly beneath the site of the impact on the vault of the skull, in every single case",
+      "in the brainstem alone",
       "only in penetrating trauma"
     ],
     "correctIndex": 0,
@@ -3920,10 +3920,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "An entry wound of a firearm is distinguished from an exit wound by the presence of:",
     "options": [
-      "everted margins",
-      "a larger size in all cases",
+      "everted wound margins with no abrasion collar present",
+      "a larger size in every case",
       "inverted margins with an abrasion collar",
-      "absence of bleeding"
+      "the absence of any bleeding"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3969,9 +3969,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Under the doctrine of res ipsa loquitur applied to medical negligence, the burden effectively shifts because:",
     "options": [
       "the occurrence itself is such that it would not ordinarily happen without negligence",
-      "the patient waives all rights",
-      "no expert evidence is ever needed",
-      "the doctor admits fault"
+      "the patient has waived all of his rights against the hospital and its staff in advance of the treatment",
+      "no expert evidence is ever required",
+      "the doctor admits fault openly"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3992,10 +3992,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Under the Transplantation of Human Organs Act, brain-stem death certification requires a panel including:",
     "options": [
-      "the transplant surgeon",
-      "any two relatives",
+      "the transplant surgeon who is going to carry out the retrieval of the organ, acting together with the treating physician of the patient concerned",
+      "any two relatives of the patient",
       "an independent registered medical practitioner nominated by the appropriate authority alongside the treating doctor",
-      "a police officer"
+      "a police officer of the district"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4016,9 +4016,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most common site of origin of a cholesteatoma is the:",
     "options": [
-      "mesotympanum",
-      "mastoid antrum primarily",
-      "eustachian tube",
+      "the mesotympanum",
+      "the mastoid antrum as the primary site of origin",
+      "the eustachian tube",
       "pars flaccida of the attic region"
     ],
     "correctIndex": 3,
@@ -4041,9 +4041,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Sudden sensorineural hearing loss is regarded as an otological emergency because:",
     "options": [
       "early corticosteroid treatment improves the chance of recovery",
-      "it always resolves untreated",
-      "it never recovers",
-      "it indicates a middle ear infection"
+      "it always resolves without treatment",
+      "it never recovers at all",
+      "it indicates an infection of the middle ear that requires antibiotic treatment"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -4064,10 +4064,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "A young male with recurrent profuse epistaxis and a nasopharyngeal mass should be evaluated for:",
     "options": [
-      "antrochoanal polyp",
-      "inverted papilloma",
+      "an antrochoanal polyp arising in the maxillary antrum",
+      "an inverted papilloma of the lateral wall",
       "juvenile nasopharyngeal angiofibroma",
-      "nasal foreign body"
+      "a retained nasal foreign body"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4089,9 +4089,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Bilateral abductor palsy of the vocal cords causes:",
     "options": [
       "a normal voice with stridor and a compromised airway",
-      "complete aphonia with a wide airway",
-      "no symptoms",
-      "dysphagia only"
+      "complete aphonia together with a widely patent and safe airway at all times",
+      "no symptoms at all",
+      "dysphagia alone"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -4113,7 +4113,7 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "The commonest salivary gland tumour overall is:",
     "options": [
       "Warthin tumour",
-      "mucoepidermoid carcinoma",
+      "mucoepidermoid carcinoma of the parotid gland",
       "adenoid cystic carcinoma",
       "pleomorphic adenoma of the parotid"
     ],
@@ -4137,9 +4137,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Otoacoustic emissions are used in newborn hearing screening because they assess the:",
     "options": [
       "function of the cochlear outer hair cells",
-      "auditory cortex",
-      "middle ear ossicles",
-      "eighth nerve directly"
+      "the function of the primary auditory cortex directly",
+      "the mobility of the middle ear ossicles",
+      "the eighth cranial nerve directly"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -4160,10 +4160,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most reliable structural indicator of glaucomatous optic nerve damage is:",
     "options": [
-      "disc haemorrhage alone",
-      "disc pallor alone",
+      "a disc haemorrhage on its own, with no other structural change present at the disc",
+      "pallor of the disc on its own",
       "increasing vertical cup-to-disc ratio with neuroretinal rim thinning",
-      "peripapillary atrophy alone"
+      "peripapillary atrophy on its own"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4184,9 +4184,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Proliferative diabetic retinopathy is defined by the presence of:",
     "options": [
-      "microaneurysms only",
-      "cotton wool spots alone",
-      "hard exudates",
+      "microaneurysms alone",
+      "cotton wool spots on their own, with no other sign present",
+      "hard exudates alone",
       "neovascularisation of the disc or elsewhere"
     ],
     "correctIndex": 3,
@@ -4233,9 +4233,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Keratoconus is characterised by:",
     "options": [
       "corneal flattening with hypermetropia",
-      "corneal oedema from endothelial failure",
+      "corneal oedema arising from progressive failure of the endothelial pump of the cornea itself",
       "progressive corneal thinning with conical ectasia and irregular astigmatism",
-      "a dense central scar from birth"
+      "a dense central scar present from birth"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4281,9 +4281,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Bitemporal hemianopia results from a lesion at the:",
     "options": [
       "optic chiasma, classically a pituitary adenoma",
-      "optic nerve",
-      "optic tract",
-      "occipital cortex"
+      "the optic nerve of one side, immediately behind the globe",
+      "the optic tract behind the chiasma",
+      "the occipital cortex on one side"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -4304,8 +4304,8 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The Gustilo-Anderson classification is used to grade:",
     "options": [
-      "intra-articular fractures",
-      "spinal fractures",
+      "intra-articular fractures according to the degree of displacement",
+      "spinal fractures by level",
       "open fractures by wound size and soft tissue injury",
       "paediatric physeal injuries"
     ],
@@ -4353,9 +4353,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Avascular necrosis of the femoral head is most reliably detected in its earliest stage by:",
     "options": [
       "magnetic resonance imaging",
-      "plain radiography",
-      "ultrasound",
-      "bone densitometry"
+      "plain radiography of the pelvis and hip",
+      "ultrasound of the hip joint",
+      "bone densitometry scanning"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -4400,9 +4400,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Chronic osteomyelitis with a sequestrum requires:",
     "options": [
-      "antibiotics alone",
-      "no treatment",
-      "immobilisation only",
+      "antibiotic therapy alone, continued for several weeks without any surgical treatment",
+      "no treatment at all",
+      "immobilisation in a cast only",
       "surgical debridement with removal of dead bone alongside antibiotics"
     ],
     "correctIndex": 3,
@@ -4425,9 +4425,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Pemphigus vulgaris differs from bullous pemphigoid in that pemphigus shows:",
     "options": [
       "intraepidermal acantholytic blisters with flaccid bullae and mucosal involvement",
-      "subepidermal blisters with tense bullae",
-      "no autoantibodies",
-      "involvement of nails only"
+      "subepidermal blisters with tense bullae and no acantholysis at all on the histology of the lesion",
+      "no autoantibodies at all",
+      "involvement of the nails only"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -4448,10 +4448,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The Koebner phenomenon in psoriasis refers to:",
     "options": [
-      "clearance of lesions in sunlight",
-      "central clearing of plaques",
+      "clearance of the lesions on exposure to natural sunlight",
+      "central clearing of the plaques",
       "appearance of new lesions at sites of trauma",
-      "nail pitting"
+      "pitting of the nail plate"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4472,9 +4472,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "A type 2 lepra reaction, erythema nodosum leprosum, is best managed with:",
     "options": [
-      "stopping multidrug therapy",
-      "surgery",
-      "antihistamines alone",
+      "stopping the multidrug therapy immediately and permanently thereafter in every single case",
+      "surgical excision of the nodules",
+      "antihistamines on their own",
       "continuing multidrug therapy and adding corticosteroids or thalidomide"
     ],
     "correctIndex": 3,
@@ -4520,10 +4520,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Clozapine is reserved for treatment-resistant schizophrenia and requires monitoring for:",
     "options": [
-      "hepatic failure primarily",
-      "renal failure",
+      "hepatic failure, with liver function testing done every month",
+      "renal failure, with creatinine checks",
       "agranulocytosis with regular white cell counts",
-      "pulmonary fibrosis"
+      "pulmonary fibrosis on imaging"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4569,9 +4569,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Wernicke encephalopathy presents classically with:",
     "options": [
       "ataxia, confusion and ophthalmoplegia",
-      "seizures, fever and rash",
-      "chorea and dementia",
-      "hallucinations alone"
+      "seizures with fever and a widespread skin rash",
+      "chorea with progressive dementia",
+      "hallucinations in isolation"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -4593,8 +4593,8 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Under the Mental Healthcare Act 2017, an advance directive allows a person to:",
     "options": [
       "state in advance how they wish to be treated for mental illness and nominate a representative",
-      "refuse all future treatment irrevocably without review",
-      "transfer property",
+      "refuse all of their future treatment irrevocably, with no provision at all for any later review of the decision",
+      "transfer their property",
       "avoid all admission"
     ],
     "correctIndex": 0,
@@ -4665,8 +4665,8 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "question": "Total spinal anaesthesia following an epidural injection presents with:",
     "options": [
       "rapid ascending block with hypotension, bradycardia, apnoea and loss of consciousness",
-      "isolated leg weakness",
-      "hypertension and tachycardia",
+      "isolated weakness of both of the legs, with no change at all in the blood pressure or in the breathing",
+      "hypertension with a tachycardia",
       "a purely sensory block"
     ],
     "correctIndex": 0,
@@ -4688,10 +4688,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Aortocaval compression in late pregnancy is prevented during surgery by:",
     "options": [
-      "placing the patient supine",
-      "the Trendelenburg position alone",
+      "placing the patient fully supine",
+      "the Trendelenburg position on its own, without any lateral tilt",
       "left lateral tilt or manual uterine displacement",
-      "prone positioning"
+      "prone positioning of the patient"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4712,9 +4712,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The imaging modality of choice within the first hours of suspected acute stroke, before thrombolysis, is:",
     "options": [
-      "MRI with contrast",
-      "plain skull radiograph",
-      "carotid Doppler",
+      "MRI of the whole brain with intravenous contrast enhancement first",
+      "a plain radiograph of the skull",
+      "carotid Doppler ultrasound",
       "non-contrast CT of the head to exclude haemorrhage"
     ],
     "correctIndex": 3,
@@ -4760,10 +4760,10 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The imaging investigation of choice for suspected acute appendicitis in a pregnant woman is:",
     "options": [
-      "CT abdomen",
-      "plain radiograph",
+      "CT of the whole abdomen with intravenous contrast first",
+      "a plain abdominal radiograph",
       "ultrasound first, with MRI if inconclusive",
-      "barium enema"
+      "a barium enema study"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -4784,9 +4784,9 @@ export const INI_CET_2026_MEDICAL_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Transjugular intrahepatic portosystemic shunting is used chiefly to treat:",
     "options": [
-      "biliary obstruction",
-      "gallstones",
-      "hepatic abscess",
+      "biliary obstruction caused by a stone impacted within the common bile duct itself",
+      "gallstones in the gallbladder",
+      "a pyogenic hepatic abscess",
       "refractory variceal bleeding or ascites from portal hypertension"
     ],
     "correctIndex": 3,
