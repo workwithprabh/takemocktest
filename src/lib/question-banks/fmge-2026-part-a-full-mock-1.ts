@@ -1568,10 +1568,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Hepatic encephalopathy in cirrhosis is commonly precipitated by:",
     "options": [
-      "a persistently low-protein diet over a long time",
-      "the regular use of lactulose as treatment for it",
+      "a persistently low-protein diet maintained over many months without any supplementation",
+      "the regular use of lactulose as treatment for the condition",
       "gastrointestinal bleeding, infection, constipation or electrolyte upset",
-      "complete abstinence from alcohol thereafter for good"
+      "complete abstinence from alcohol maintained thereafter for good"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2505,9 +2505,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "Pelvic inflammatory disease most commonly results from ascending infection with:",
     "options": [
       "Neisseria gonorrhoeae and Chlamydia trachomatis with anaerobes",
-      "Escherichia coli acting entirely alone in the tract",
-      "Candida albicans of the genital tract on its own",
-      "Gardnerella vaginalis acting alone in the vagina"
+      "Escherichia coli ascending on its own from the lower urinary tract without other organisms",
+      "Candida albicans of the genital tract acting on its own",
+      "Gardnerella vaginalis acting alone within the vagina"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2624,9 +2624,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Primordial prevention is directed at:",
     "options": [
-      "the early diagnosis of already established disease in individuals",
-      "the screening of high-risk individuals for disease in a population",
-      "rehabilitation after disability has already developed",
+      "the early diagnosis of disease that has already become established in individual patients attending a clinic",
+      "the screening of high-risk individuals for disease within a population",
+      "rehabilitation after a disability has already developed",
       "preventing risk factors from emerging in populations where they are not yet common"
     ],
     "correctIndex": 3,
@@ -2745,9 +2745,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "Under India's tuberculosis programme, the mainstay of case finding is:",
     "options": [
       "sputum-based diagnosis of symptomatic persons and contact tracing",
-      "mass radiography of the population",
-      "tuberculin testing of all adults",
-      "serological screening"
+      "mass miniature radiography of the whole adult population at regular yearly intervals",
+      "tuberculin testing of all adults on registration",
+      "serological screening of blood samples"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2768,10 +2768,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A vaccine vial monitor is used to indicate:",
     "options": [
-      "the expiry date",
-      "the number of doses left",
+      "the expiry date printed on the manufacturer label",
+      "the number of doses remaining",
       "cumulative heat exposure of the vial",
-      "the batch number"
+      "the batch number of the vial"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2817,9 +2817,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "Fortification of salt in India addresses deficiency of:",
     "options": [
       "iodine, and increasingly iron in double fortified salt",
-      "iron only",
-      "vitamin A",
-      "zinc"
+      "iron alone, with no other micronutrient being added to the salt at all",
+      "vitamin A, added during the refining process",
+      "zinc, added at the point of packaging"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2840,10 +2840,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The chief health hazard of high fluoride concentration in drinking water is:",
     "options": [
-      "goitre",
-      "methaemoglobinaemia",
+      "endemic goitre with associated cretinism",
+      "methaemoglobinaemia in infants",
       "dental and skeletal fluorosis",
-      "anaemia"
+      "iron deficiency anaemia"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2889,9 +2889,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "The demographic transition describes the movement of populations from:",
     "options": [
       "high birth and death rates through falling death rates to low birth and death rates",
-      "low birth and death rates to high rates",
-      "stable population to extinction",
-      "urban to rural settlement"
+      "low birth and low death rates through to consistently high birth and high death rates again",
+      "a stable population through to eventual extinction",
+      "urban settlement back to rural settlement"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2912,10 +2912,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most reliable method of establishing personal identity from skeletal remains is:",
     "options": [
-      "clothing found with the body",
-      "estimated height alone",
+      "the clothing that was found alongside the body at the recovery scene",
+      "the height estimated from the long bones",
       "DNA profiling with comparison to a known reference",
-      "hair colour"
+      "the colour of the hair recovered"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2984,10 +2984,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Ligature mark in a case of hanging characteristically is:",
     "options": [
-      "horizontal and continuous around the neck",
-      "always below the thyroid cartilage",
+      "horizontal and continuous right around the whole circumference of the neck",
+      "always situated below the thyroid cartilage",
       "oblique, non-continuous and situated high on the neck",
-      "absent in all cases"
+      "absent in every case of hanging"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3008,9 +3008,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "In the medico-legal examination of a survivor of sexual assault, the primary duty of the doctor is to:",
     "options": [
-      "decide whether the offence occurred",
-      "refuse examination without a police request",
-      "inform the media",
+      "to decide whether the alleged offence actually occurred and to record that conclusion in the report",
+      "to refuse the examination unless a police request is produced",
+      "to inform the media of the findings",
       "provide medical care and consent-based documentation and evidence collection"
     ],
     "correctIndex": 3,
@@ -3033,9 +3033,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "Arsenic poisoning classically causes:",
     "options": [
       "rain-drop pigmentation with hyperkeratosis of palms and soles and Mees lines on nails",
-      "blue line on the gums",
-      "burton line only",
-      "cherry-red skin"
+      "a blue line along the gum margins, together with wrist drop and basophilic stippling of the red blood cells",
+      "a Burton line on the gums and nothing else",
+      "cherry-red discolouration of the skin"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3056,10 +3056,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Privileged communication in medical practice means disclosure:",
     "options": [
-      "is never permitted under any circumstance",
-      "to the press is protected",
+      "is never permitted under any circumstance whatever, not even when a court of law has specifically ordered it to be made",
+      "to the press is protected by law",
       "made in good faith to a competent authority in the interest of the public or a third party",
-      "to relatives is always mandatory"
+      "to relatives of the patient is always mandatory"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3080,9 +3080,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Chronic suppurative otitis media of the unsafe type is characterised by:",
     "options": [
-      "a central perforation with mucoid discharge",
-      "serous fluid without perforation",
-      "an intact drum",
+      "a central perforation of the tympanic membrane with a mucoid and non-foul discharge from the ear",
+      "serous fluid behind an intact drum without perforation",
+      "an intact tympanic membrane with normal hearing",
       "an attic or marginal perforation with cholesteatoma and scanty foul discharge"
     ],
     "correctIndex": 3,
@@ -3128,10 +3128,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Allergic rhinitis is best distinguished from infective rhinitis by:",
     "options": [
-      "purulent discharge and fever",
-      "unilateral symptoms",
+      "purulent nasal discharge with fever, generalised body aches and tender cervical nodes on examination of the neck",
+      "strictly unilateral symptoms with no seasonal variation",
       "sneezing, itching, watery discharge and pale boggy turbinates with a seasonal pattern",
-      "loss of vision"
+      "progressive loss of vision in the affected eye"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3177,9 +3177,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "Hoarseness of voice persisting beyond three weeks in an adult smoker requires:",
     "options": [
       "laryngoscopic examination to exclude malignancy",
-      "reassurance and voice rest only",
-      "antibiotics alone",
-      "antihistamines"
+      "reassurance with complete voice rest for a further three weeks",
+      "a course of broad-spectrum antibiotics alone",
+      "oral antihistamines with a nasal spray"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3200,10 +3200,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most appropriate first step in a patient with severe epistaxis that has not stopped with pressure is:",
     "options": [
-      "immediate arterial ligation",
-      "blood transfusion first",
+      "immediate ligation of the sphenopalatine artery under general anaesthesia in the operating theatre",
+      "blood transfusion before any attempt to control the bleeding",
       "anterior nasal packing after attempting cautery of a visible bleeding point",
-      "posterior packing in all cases"
+      "posterior nasal packing in every case of epistaxis"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3224,9 +3224,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Presbyopia occurs because of:",
     "options": [
-      "increasing axial length",
-      "vitreous degeneration",
-      "corneal scarring",
+      "a progressive increase in the axial length of the whole eyeball with age",
+      "degeneration of the vitreous body with age",
+      "scarring of the central cornea",
       "loss of lens elasticity and accommodative power with age"
     ],
     "correctIndex": 3,
@@ -3272,10 +3272,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The commonest complication of untreated hypermature cataract is:",
     "options": [
-      "retinal detachment",
-      "optic atrophy",
+      "rhegmatogenous detachment of the whole retina",
+      "atrophy of the optic nerve",
       "lens-induced glaucoma and uveitis",
-      "corneal ulcer"
+      "ulceration of the cornea"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3296,9 +3296,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Anterior uveitis typically presents with:",
     "options": [
-      "painless blurring with a white eye",
-      "sudden total blindness",
-      "purulent discharge",
+      "gradual and painless blurring of vision in an otherwise entirely white and comfortable eye",
+      "sudden total blindness in the affected eye",
+      "a purulent discharge with matted lashes",
       "pain, photophobia, circumcorneal congestion and a small irregular pupil"
     ],
     "correctIndex": 3,
@@ -3344,10 +3344,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most important principle in managing an open fracture is:",
     "options": [
-      "immediate internal fixation in all cases",
-      "delayed debridement after 48 hours",
+      "immediate internal fixation in every case, whatever the degree of wound contamination present",
+      "delayed debridement only after the first 48 hours",
       "early antibiotics, tetanus prophylaxis, thorough debridement and stabilisation",
-      "closure of the wound immediately in every case"
+      "immediate closure of the wound in every case"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3393,9 +3393,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "Cauda equina syndrome is suggested by back pain with:",
     "options": [
       "saddle anaesthesia, bladder or bowel dysfunction and bilateral leg symptoms",
-      "unilateral calf pain alone",
-      "isolated morning stiffness",
-      "pain relieved by rest only"
+      "unilateral calf pain alone, with entirely normal power, reflexes and sensation in both of the legs",
+      "isolated morning stiffness easing through the day",
+      "pain relieved by rest and worsened by walking"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3416,10 +3416,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Rickets in a child results from:",
     "options": [
-      "excess vitamin D",
-      "excess calcium intake",
+      "an excessive intake of vitamin D sustained over a long period during early childhood growth itself",
+      "an excessive intake of dietary calcium in infancy",
       "deficient mineralisation of growing bone, most often from vitamin D deficiency",
-      "increased parathyroid destruction"
+      "progressive destruction of the parathyroid glands"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -3440,9 +3440,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Tinea corporis is best confirmed by:",
     "options": [
-      "Tzanck smear",
-      "patch testing",
-      "Gram stain",
+      "a Tzanck smear taken from the floor of a freshly opened vesicle on the lesion",
+      "patch testing with the standard allergen series",
+      "a Gram stain of material from the lesion",
       "potassium hydroxide mount of skin scrapings showing hyphae"
     ],
     "correctIndex": 3,
@@ -3465,9 +3465,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "question": "Multibacillary leprosy under current programme classification is defined by:",
     "options": [
       "more than five skin lesions or nerve involvement, or a positive slit-skin smear",
-      "a single lesion only",
-      "absence of nerve thickening",
-      "negative bacteriological index only"
+      "a single skin lesion with no nerve involvement at all and a negative slit-skin smear result on testing",
+      "the absence of any thickening of the peripheral nerves",
+      "a negative bacteriological index on its own"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -3512,9 +3512,9 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The most effective single intervention for opioid dependence in maintaining abstinence and reducing harm is:",
     "options": [
-      "short detoxification alone",
-      "punitive measures",
-      "brief counselling only",
+      "a short inpatient course of detoxification and nothing further afterwards",
+      "punitive measures imposed by the family",
+      "brief counselling at a single session",
       "opioid substitution therapy with psychosocial support"
     ],
     "correctIndex": 3,
@@ -3560,10 +3560,10 @@ export const FMGE_2026_PART_A_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The commonest cause of airway obstruction in an unconscious patient recovering from anaesthesia is:",
     "options": [
-      "laryngospasm always",
-      "bronchospasm",
+      "laryngospasm, which occurs in every such patient without any exception at all",
+      "bronchospasm triggered by the anaesthetic agent",
       "the tongue falling back against the posterior pharyngeal wall",
-      "a foreign body"
+      "a foreign body left in the upper airway"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
