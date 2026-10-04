@@ -105,9 +105,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "Parliament and a State Legislature validly legislate on a Concurrent List matter, but the provisions directly conflict. Subject to constitutional exceptions, which rule generally applies?",
     "options": [
       "The parliamentary law prevails to the extent of repugnancy",
-      "The State law always prevails because it is later",
-      "Both laws become automatically void in full",
-      "The Governor chooses one law case by case"
+      "The State law always prevails, since it was enacted later in time than the parliamentary law",
+      "Both laws become automatically void in their entirety",
+      "The Governor chooses which law is to apply in each case"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -536,10 +536,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "The purpose of framing a criminal charge is primarily to",
     "options": [
-      "decide guilt before evidence",
-      "replace the need for a trial",
+      "to decide the guilt of the accused before any evidence at all has been led at the trial",
+      "to replace the need for a trial on the merits altogether",
       "give the accused clear notice of the specific accusation to be tried",
-      "determine the civil title to the property in dispute"
+      "to determine the civil title to the property in dispute"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -633,9 +633,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "The purpose of a summons issued to an accused is primarily to",
     "options": [
       "require appearance before the court at the stated time and place",
-      "authorise immediate conviction",
-      "transfer ownership of property",
-      "create a binding arbitration agreement between them"
+      "to authorise the immediate conviction of the accused without any hearing at all",
+      "to transfer the ownership of the property in question",
+      "to create a binding arbitration agreement between the parties"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -920,10 +920,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A fact may be logically interesting yet excluded from proof because the law of evidence asks first whether it is",
     "options": [
-      "popular on social media",
-      "written in blue ink",
+      "a fact that both of the parties have agreed to place before the court in their pleadings",
+      "a fact recorded in a document that has been formally proved and exhibited at the trial",
       "legally relevant to a fact in issue or otherwise made relevant",
-      "older than the judge"
+      "a fact that the court is able to verify for itself from its own records"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -944,9 +944,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "In a civil claim, P asserts a payment was made in cash and relies on that payment to discharge a debt. As a starting evidentiary rule, the burden of proving the asserted payment lies on",
     "options": [
-      "the judge personally",
-      "an unrelated witness",
-      "the opposing party in every circumstance",
+      "the party who denies the payment, since a negative cannot be proved by the one asserting it",
+      "whichever party is in possession of the account books for the relevant period",
+      "the opposing party in every circumstance, once the claim has been pleaded",
       "the party who asserts the payment and relies on it"
     ],
     "correctIndex": 3,
@@ -968,9 +968,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A party’s statement acknowledging a fact harmful to its own case can be relevant as an admission, but the statement",
     "options": [
-      "always binds every stranger",
-      "can never be explained",
-      "is identical to a judicial decree",
+      "binds every person who was a stranger to the proceedings in which the statement came to be made",
+      "cannot be explained or qualified by the party who made it once it is proved",
+      "has the same effect between the parties as a judgment of a competent court",
       "is evidence to be weighed and is not automatically conclusive in every case"
     ],
     "correctIndex": 3,
@@ -992,10 +992,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "hard",
     "question": "A confession is obtained by a threat from a person in authority that gives the accused reasonable grounds to expect an advantage in the proceeding. The main evidentiary concern is",
     "options": [
-      "whether the paper is stapled",
+      "whether the confession was later repeated before a magistrate in the course of the committal proceedings",
       "voluntariness and the statutory rules excluding improperly induced confessions",
-      "whether the accused owns land",
-      "whether the police station has a clock"
+      "whether the facts stated in the confession turned out on investigation to be substantially true",
+      "whether the accused was represented by counsel at the moment the statement was recorded"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1040,10 +1040,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A handwriting expert gives an opinion that two signatures were made by the same person. The court should treat the opinion as",
     "options": [
-      "automatically conclusive proof",
+      "automatically conclusive proof of the authorship of both of the disputed signatures",
       "relevant expert evidence to be evaluated with the rest of the evidence",
-      "inadmissible because experts can never testify",
-      "a substitute for judicial reasoning"
+      "inadmissible unless the expert also produces the original specimen used for comparison",
+      "a substitute for the reasoning the court must itself apply to the question"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1065,9 +1065,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A person who later dies describes the circumstances of the fatal assault while expecting medical help. The statement may be relevant primarily because evidence law recognises",
     "options": [
       "statements by a deceased person about the cause or circumstances of the death in issue",
-      "all hearsay from any deceased person on any topic",
-      "only notarised wills",
-      "only statements made in a courtroom"
+      "all hearsay statements made by any deceased person upon any topic whatever, without any restriction at all",
+      "only statements that were reduced to writing and attested before a notary",
+      "only statements made on oath in the presence of a judicial officer of the court"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1088,10 +1088,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A party relies on a digital record. The evidentiary inquiry should include whether the record satisfies",
     "options": [
-      "a requirement that every digital record be handwritten",
+      "a requirement that every digital record be accompanied by a handwritten transcript of its contents certified as accurate",
       "the statutory conditions governing proof and authenticity of electronic/digital records",
-      "a rule that electronic material is never evidence",
-      "a requirement that the device be owned by the judge"
+      "a rule that electronic material is never evidence unless the author appears in person",
+      "a requirement that the device on which the record was made be produced in court itself"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1113,9 +1113,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "Two companies want future contractual disputes decided privately by arbitration rather than ordinary civil trial. The foundational requirement is",
     "options": [
       "an arbitration agreement reflecting consent to arbitrate covered disputes",
-      "a criminal FIR",
-      "a land-acquisition notification",
-      "a unilateral secret note never accepted by the other party"
+      "a clause in the standard terms of one party that the other has never seen or accepted at all",
+      "a memorandum of understanding that expressly leaves the dispute mechanism open",
+      "a unilateral secret note never accepted by the other party to the contract"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1160,10 +1160,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "Before the final award, a party fears that disputed goods will be dissipated. An interim measure is aimed mainly at",
     "options": [
-      "finally deciding criminal guilt",
-      "amending the arbitration statute",
+      "finally determining the merits of the whole dispute in advance of the award itself being made",
+      "altering the terms of the arbitration agreement between the parties",
       "preserving property or protecting the effectiveness of the arbitral process",
-      "creating a new company"
+      "substituting the tribunal with a court of ordinary civil jurisdiction"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1185,9 +1185,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A conciliator’s role differs from an arbitrator’s because the conciliator primarily",
     "options": [
       "assists parties in reaching a negotiated settlement rather than imposing an adjudicated award",
-      "sentences offenders",
-      "registers patents",
-      "conducts elections"
+      "imposes a binding award upon the parties after hearing the whole of their evidence and argument on the dispute",
+      "decides the dispute according to the strict legal rights of the parties alone",
+      "records the agreement of the parties without any power to propose terms to them"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1233,9 +1233,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A spouse with substantial earning capacity refuses all support to a dependent spouse who lacks sufficient means. In maintenance adjudication, a court typically considers",
     "options": [
       "needs of the claimant and means/obligations of the respondent under the applicable law",
-      "only the claimant’s surname",
-      "only the wedding venue",
-      "whether either party owns a vehicle"
+      "the conduct of the claimant during the marriage and nothing else besides that",
+      "the standard of living that the parties enjoyed before the marriage was solemnised and nothing more at all",
+      "whether the respondent has remarried since the parties began to live apart"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1256,10 +1256,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "Under Hindu marriage law, a person who has a living spouse from a subsisting valid marriage generally cannot validly contract",
     "options": [
-      "a tenancy agreement",
-      "a will",
+      "a contract for the sale of immovable property that belongs to them alone",
+      "a deed of adoption of a child in accordance with law",
       "another Hindu marriage during the subsistence of the first",
-      "an employment contract"
+      "a contract of employment with a new employer on any terms"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1353,9 +1353,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "A dispute concerns unpaid dower promised as part of a Muslim marriage. Dower is best understood as",
     "options": [
       "a legally recognised obligation arising from the marriage, enforceable in law",
-      "a criminal fine that is payable to the State on conviction",
-      "a tax on divorce",
-      "a gift that can never create any obligation of any kind"
+      "a criminal fine that becomes payable to the State upon a conviction being recorded against him",
+      "a tax levied on the dissolution of the marriage",
+      "a gift that can never give rise to any obligation at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1496,10 +1496,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A licensing authority relies on an adverse inspection report but refuses to show the affected licensee the substance of the case or allow a response. The principle most directly violated is",
     "options": [
-      "res judicata between the parties",
-      "caveat emptor in the sale",
+      "res judicata, which bars the relitigation of an issue already decided",
+      "caveat emptor, which places the risk on the buyer",
       "audi alteram partem — the right to a fair hearing",
-      "strict liability in tort law"
+      "strict liability, which attaches without proof of fault"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1592,10 +1592,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An advocate previously advised Company A confidentially on a transaction and is later asked to act for Company B against A in litigation arising from the same transaction. The central ethical issue is",
     "options": [
-      "the territorial jurisdiction of a criminal court in the matter",
-      "tax residency of the advocate",
+      "the territorial jurisdiction of the criminal court before which this matter happens to be pending",
+      "the duty to disclose the fee arrangement to the opposing party",
       "conflict of interest and misuse of former-client confidential information",
-      "patent novelty"
+      "the advocate obligation to appear when briefed by any client"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1784,10 +1784,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "An employee intentionally bypasses access controls to copy a database the employee is not authorised to enter. The central cyber-law issue is",
     "options": [
-      "a valid adoption in law",
+      "a breach of the contract of employment alone, and nothing more than that",
       "unauthorised access to a computer resource and data",
-      "land acquisition compensation payable",
-      "a company dividend declaration made"
+      "a civil claim for conversion of the employer property",
+      "an infringement of the copyright in the database alone"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2024,10 +2024,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A municipal officer demands a new “tax” that has no authority in any law. The basic constitutional objection is that",
     "options": [
-      "every tax requires a referendum of the people",
-      "only courts may collect tax",
+      "every tax requires the prior approval of the people of the State in a referendum",
+      "only the courts may lawfully collect any tax",
       "no tax may be levied or collected except by authority of law",
-      "tax applies only to companies"
+      "taxation applies only to incorporated companies"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2120,10 +2120,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "easy",
     "question": "A buyer sends an offer to purchase 100 units at a stated price. The seller replies, “I accept only if the price is 10% higher.” The reply is best treated as",
     "options": [
-      "an unconditional acceptance",
+      "an unconditional acceptance of the offer exactly as it was originally made",
       "a counter-offer rather than an unconditional acceptance",
-      "performance of the original contract as made",
-      "a completed gift"
+      "performance of the original contract as it was made",
+      "a completed gift of the goods to the buyer"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2240,9 +2240,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "Owner O transfers land to B, but B knows that an earlier unregistered equitable claim may affect the property. Whether B can ignore that claim may depend significantly on",
     "options": [
-      "the colour of B’s deed",
-      "B’s profession",
-      "the weather on the day of the transfer",
+      "the order in which the two separate deeds happened to be physically executed",
+      "whether B paid a fair market price for the land",
+      "whether the earlier interest was created for value",
       "notice and the applicable priority/registration rules"
     ],
     "correctIndex": 3,
@@ -2361,9 +2361,9 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "question": "Two authors independently write different novels based on the same general idea of a lawyer solving a village mystery. Copyright primarily protects",
     "options": [
       "the original expression of an idea, not the bare idea itself",
-      "every abstract idea as private property",
-      "facts regardless of expression",
-      "all titles forever without conditions"
+      "every abstract idea, as the private property of whoever first happened to have it",
+      "facts themselves, regardless of how they are expressed",
+      "titles of works for ever and without any condition"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2384,10 +2384,10 @@ export const AIBE_XXI_2026_FULL_BANK_1: Question[] = [
     "difficulty": "medium",
     "question": "A new seller uses packaging so similar to a well-known brand’s mark that ordinary buyers are likely to believe the goods come from that brand. The core trade-mark concern is",
     "options": [
-      "criminal double jeopardy",
-      "land acquisition compensation",
+      "whether the two sellers happen to trade in the same State of the country",
+      "whether the later seller registered its own packaging design",
       "likelihood of confusion as to trade source or association",
-      "marital consent"
+      "whether the earlier brand has been advertised on television"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
