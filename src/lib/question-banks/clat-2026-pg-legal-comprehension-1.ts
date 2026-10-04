@@ -1064,10 +1064,10 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "medium",
     "question": "Newly authored passage — Museum Stairway: A museum knows that one stair on a dimly lit emergency route has a loose edge. Staff place no warning sign and continue directing visitors down the stair. A visitor walking normally trips on the loose edge, falls and breaks a wrist. The passage states that negligence ordinarily asks whether the defendant owed a duty of reasonable care, breached the applicable standard, factually caused the injury, and caused damage sufficiently connected to the risk that made the conduct negligent. A defendant is not an insurer against every accident. If the claimant's own unreasonable conduct contributes to the harm, damages may be reduced under principles of contributory responsibility rather than automatically eliminating the defendant's breach.\n\nQuestion: Which element concerns whether the wrist injury falls within the kind of risk created by the loose stair?",
     "options": [
-      "Contractual consideration given",
+      "Contractual consideration actually given for it",
       "Scope/remoteness of the negligent risk",
-      "Legislative competence",
-      "Treaty formation"
+      "Legislative competence of the State",
+      "Formation of a treaty"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1833,9 +1833,9 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "question": "Newly authored passage — Workshop Lease or Licence: A document labelled “licence” gives Maker M exclusive possession of a workshop for three years, requires monthly payments, limits use to furniture production, and permits the owner to enter only on reasonable notice for inspection. The owner argues that the label alone prevents any tenancy. The passage states that legal character depends on substance, not merely the heading chosen by parties. Exclusive possession for a term at rent is a strong indicator of a lease, although surrounding circumstances and genuine service arrangements may matter. A sham reservation of unrestricted access cannot defeat the substance of exclusive possession, while a real arrangement in which the occupier receives services incompatible with exclusive possession may point toward a licence.\n\nQuestion: How much weight does the document’s label receive?",
     "options": [
       "It is relevant context but not conclusive of legal character",
-      "It conclusively determines the whole relationship",
-      "It is criminal evidence only",
-      "It automatically overrides possession facts"
+      "It conclusively determines the whole of the relationship between the parties",
+      "It is evidence in criminal matters only",
+      "It automatically overrides the facts of possession"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2288,10 +2288,10 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "easy",
     "question": "Newly authored passage — Consular Parcel and State Responsibility: Officials of State A, acting in their official capacity, unlawfully seize protected diplomatic material belonging to State B. State A later argues that its domestic law did not authorise the seizure and therefore the conduct cannot be attributed to the State internationally. The passage states that international responsibility generally asks, first, whether conduct is attributable to the State under international law and, second, whether that conduct breaches an international obligation binding on the State. Conduct of State organs is ordinarily attributable even when officials exceed domestic authority, provided they act in an official capacity. Domestic law cannot by itself excuse failure to perform an international obligation.\n\nQuestion: What are the two basic inquiries stated for international responsibility?",
     "options": [
-      "Offer and acceptance",
-      "Duty and consideration",
+      "Offer and acceptance of terms",
+      "Duty of care and consideration",
       "Attribution and breach of an international obligation",
-      "Tax incidence and the valuation of it"
+      "Tax incidence and the valuation of the parcel that was sent abroad"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2433,8 +2433,8 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "question": "Newly authored passage — Charging Rule and Exemption: A State tax statute imposes a levy on specified digital entertainment transactions and separately authorises the government to exempt narrowly defined classes by notification. A tax officer seeks to tax an educational data-storage service even though it does not fall within the charging description, arguing that exemptions should be construed strictly and therefore all uncertain services should be taxed. The passage states that a tax must have clear authority in the charging provision: an exemption can remove liability that would otherwise arise, but it cannot expand the scope of the charge. Interpretive rules concerning exemptions do not substitute for the threshold question whether the taxable event, person or transaction falls within the charging language at all.\n\nQuestion: Can a narrow reading of exemptions expand the charge itself?",
     "options": [
       "No, exemption interpretation cannot create liability outside the charge",
-      "Yes, every non-exempt service is automatically taxable",
-      "Yes, because revenue statutes have no boundaries",
+      "Yes, since every service that is not expressly exempted becomes automatically taxable at once",
+      "Yes, because revenue statutes have no boundaries at all",
       "No, because exemptions are always unconstitutional"
     ],
     "correctIndex": 0,
@@ -2481,9 +2481,9 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "question": "Newly authored passage — Charging Rule and Exemption: A State tax statute imposes a levy on specified digital entertainment transactions and separately authorises the government to exempt narrowly defined classes by notification. A tax officer seeks to tax an educational data-storage service even though it does not fall within the charging description, arguing that exemptions should be construed strictly and therefore all uncertain services should be taxed. The passage states that a tax must have clear authority in the charging provision: an exemption can remove liability that would otherwise arise, but it cannot expand the scope of the charge. Interpretive rules concerning exemptions do not substitute for the threshold question whether the taxable event, person or transaction falls within the charging language at all.\n\nQuestion: What is the “taxable event” inquiry concerned with?",
     "options": [
       "Whether the facts trigger the event or transaction described by the charging law",
-      "Whether the taxpayer is popular",
-      "Whether the government needs revenue",
-      "Whether the service provider is incorporated"
+      "Whether the taxpayer is a popular one",
+      "Whether the government is in need of revenue",
+      "Whether the provider of the service happens to be an incorporated company or a partnership firm instead"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2506,8 +2506,8 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "options": [
       "Uncertainty about an exemption is enough by itself to establish the tax charge",
       "The charging language must first cover the transaction",
-      "An exemption presupposes potential liability",
-      "A tax officer needs statutory authority for the levy"
+      "An exemption presupposes a potential liability",
+      "A tax officer needs express statutory authority before making any levy on the transaction at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2528,9 +2528,9 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "easy",
     "question": "Newly authored passage — Hill Reservoir Clearance: A proposed hill reservoir promises irrigation benefits but may affect an endemic amphibian whose breeding habitat has not been fully mapped. The project authority says scientific uncertainty means no protective condition should be imposed until actual population collapse is proven. The passage explains that environmental decision-making may apply the precautionary principle when there is a plausible threat of serious or irreversible harm despite incomplete scientific certainty. Precaution does not command automatic prohibition of every project; it calls for reasoned risk assessment and proportionate preventive measures. The polluter-pays principle concerns allocation of environmental costs to the actor responsible for pollution, while intergenerational equity asks decision-makers to consider long-term interests of future generations.\n\nQuestion: How does the passage treat scientific uncertainty?",
     "options": [
-      "It always requires project approval",
-      "It makes environmental law inapplicable",
-      "It proves the species is unaffected",
+      "It always requires approval of the project",
+      "It makes the whole of environmental law inapplicable to the project from that point onwards at all",
+      "It proves the species is unaffected by it",
       "It can justify precautionary assessment rather than waiting for irreversible proof"
     ],
     "correctIndex": 3,
@@ -2600,10 +2600,10 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "hard",
     "question": "Newly authored passage — Hill Reservoir Clearance: A proposed hill reservoir promises irrigation benefits but may affect an endemic amphibian whose breeding habitat has not been fully mapped. The project authority says scientific uncertainty means no protective condition should be imposed until actual population collapse is proven. The passage explains that environmental decision-making may apply the precautionary principle when there is a plausible threat of serious or irreversible harm despite incomplete scientific certainty. Precaution does not command automatic prohibition of every project; it calls for reasoned risk assessment and proportionate preventive measures. The polluter-pays principle concerns allocation of environmental costs to the actor responsible for pollution, while intergenerational equity asks decision-makers to consider long-term interests of future generations.\n\nQuestion: Which consideration reflects intergenerational equity?",
     "options": [
-      "Only this year’s construction budget",
-      "Only current shareholders’ returns",
+      "Only the construction budget that is allotted for this year",
+      "Only the returns of the current shareholders",
       "Effects of present choices on future generations",
-      "The nationality of project engineers"
+      "The nationality of the project engineers"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2648,8 +2648,8 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "easy",
     "question": "Newly authored passage — Factory Disciplinary Inquiry: A factory’s certified disciplinary procedure requires that a worker accused of serious misconduct receive the charge, the material evidence, a reasonable chance to respond and a decision by an officer who did not personally investigate the accusation. Worker W is dismissed after the investigating supervisor also acts as final decision-maker and relies on CCTV footage never shown to W. The employer argues that W could later sue for wages, so the internal process need not be fair. The passage states that workplace discipline carrying serious consequences should follow the applicable standing orders or service rules and basic procedural fairness. A later remedy does not automatically cure denial of a fair disciplinary opportunity at the stage where the decision is made.\n\nQuestion: What are the two clearest defects in W’s inquiry?",
     "options": [
-      "The factory used CCTV and had supervisors",
-      "The worker was employed at a factory",
+      "The factory had installed CCTV cameras and employed supervisors throughout the shop floor itself",
+      "The worker was employed at the factory",
       "The allegation concerned misconduct",
       "Non-disclosure of material evidence and lack of an independent decision-maker"
     ],
@@ -2672,10 +2672,10 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "medium",
     "question": "Newly authored passage — Factory Disciplinary Inquiry: A factory’s certified disciplinary procedure requires that a worker accused of serious misconduct receive the charge, the material evidence, a reasonable chance to respond and a decision by an officer who did not personally investigate the accusation. Worker W is dismissed after the investigating supervisor also acts as final decision-maker and relies on CCTV footage never shown to W. The employer argues that W could later sue for wages, so the internal process need not be fair. The passage states that workplace discipline carrying serious consequences should follow the applicable standing orders or service rules and basic procedural fairness. A later remedy does not automatically cure denial of a fair disciplinary opportunity at the stage where the decision is made.\n\nQuestion: Why is a later wage suit not a complete answer?",
     "options": [
-      "Workers can never sue employers",
+      "Workers can never sue their employers",
       "Wage claims are criminal proceedings",
       "A later remedy does not automatically cure the unfair original process",
-      "Internal discipline is exempt from fairness"
+      "Internal discipline is exempt from the requirements of fairness altogether here"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2747,7 +2747,7 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
       "Serious disciplinary consequences strengthen the need for a fair opportunity to answer",
       "Dismissal can never occur for misconduct",
       "An employer must accept every defence offered",
-      "Evidence is unnecessary if management is confident"
+      "Evidence becomes unnecessary whenever the management happens to be confident of its own conclusion already"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2768,9 +2768,9 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "easy",
     "question": "Newly authored passage — Collective Retrenchment Criteria: A manufacturing unit must reduce a category of positions because a product line has permanently closed. Its applicable labour rules require objective selection criteria, notice and statutory compensation before retrenchment becomes effective. Management secretly selects only workers who joined a lawful union, despite their seniority and performance being comparable to non-members. The passage distinguishes a genuine economic restructuring from discriminatory victimisation. An employer may reorganise for bona fide operational reasons, but cannot use restructuring as a device to punish protected collective activity. Compliance with notice and compensation does not by itself validate a selection criterion that is independently unlawful.\n\nQuestion: What fact most strongly suggests victimisation rather than neutral restructuring?",
     "options": [
-      "A product line closed permanently",
-      "Positions became redundant",
-      "The employer must pay compensation",
+      "A product line was closed permanently",
+      "The positions became redundant",
+      "The employer is required to pay compensation to the workers concerned",
       "Selection is secretly based on lawful union membership"
     ],
     "correctIndex": 3,
@@ -2793,7 +2793,7 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "question": "Newly authored passage — Collective Retrenchment Criteria: A manufacturing unit must reduce a category of positions because a product line has permanently closed. Its applicable labour rules require objective selection criteria, notice and statutory compensation before retrenchment becomes effective. Management secretly selects only workers who joined a lawful union, despite their seniority and performance being comparable to non-members. The passage distinguishes a genuine economic restructuring from discriminatory victimisation. An employer may reorganise for bona fide operational reasons, but cannot use restructuring as a device to punish protected collective activity. Compliance with notice and compensation does not by itself validate a selection criterion that is independently unlawful.\n\nQuestion: Does payment of compensation automatically validate the selection method?",
     "options": [
       "Yes, compensation cures every labour-law defect",
-      "Yes, if the employer calls the decision restructuring",
+      "Yes, provided that the employer chooses to call the whole decision a restructuring of the unit concerned",
       "No, because compensation is never relevant",
       "No, procedural payment cannot cure an independently unlawful discriminatory criterion"
     ],
@@ -2818,7 +2818,7 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "options": [
       "Retaliation for collective activity",
       "Secret personal hostility",
-      "A rule excluding all union members",
+      "A rule that excludes every one of the union members from being retained in post at all",
       "Bona fide operational reasons applied through lawful objective criteria"
     ],
     "correctIndex": 3,
@@ -2840,10 +2840,10 @@ export const CLAT_2026_PG_LEGAL_COMPREHENSION_1: Question[] = [
     "difficulty": "hard",
     "question": "Newly authored passage — Collective Retrenchment Criteria: A manufacturing unit must reduce a category of positions because a product line has permanently closed. Its applicable labour rules require objective selection criteria, notice and statutory compensation before retrenchment becomes effective. Management secretly selects only workers who joined a lawful union, despite their seniority and performance being comparable to non-members. The passage distinguishes a genuine economic restructuring from discriminatory victimisation. An employer may reorganise for bona fide operational reasons, but cannot use restructuring as a device to punish protected collective activity. Compliance with notice and compensation does not by itself validate a selection criterion that is independently unlawful.\n\nQuestion: Which distinction is central?",
     "options": [
-      "Lease versus licence",
-      "Custom versus treaty",
+      "Lease as against licence",
+      "Custom as against treaty",
       "Economic redundancy versus discriminatory victimisation",
-      "Negligence versus strict liability"
+      "Negligence as against strict liability in the law of tort altogether"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
