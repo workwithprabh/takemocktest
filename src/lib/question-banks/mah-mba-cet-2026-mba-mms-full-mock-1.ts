@@ -208,11 +208,11 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A sensor alarm sounds if and only if both pressure P and temperature T exceed their thresholds. The alarm is silent. Which conclusion is justified?",
       "options": [
-        "Both P and T are below threshold.",
-        "Exactly one of P and T is below threshold.",
-        "The sensor has failed.",
+        "Both P and T are below their respective threshold values at the time.",
+        "Exactly one of P and T is below its threshold.",
+        "The sensor has failed entirely.",
         "At least one of P or T does not exceed its threshold.",
-        "Neither threshold is defined."
+        "Neither threshold has been defined."
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -285,7 +285,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "options": [
         "Coolant flow is below 4 L/min.",
         "Pressure exceeds 9 bar.",
-        "Exactly one threshold is violated.",
+        "Exactly one of the two thresholds happens to be violated at the time of the reading itself.",
         "Both readings equal zero.",
         "Coolant flow is at least 4 L/min and chamber pressure is at most 9 bar."
       ],
@@ -361,8 +361,8 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "No economist is on the committee.",
         "Exactly one member is an economist.",
         "At least one committee member is not an economist.",
-        "Most members are economists.",
-        "Every non-economist is a lawyer."
+        "Most of the members are economists.",
+        "Every non-economist on the committee is also a lawyer by training."
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -1133,11 +1133,11 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "What is x? Statement I: x+y=14. Statement II: x−y=4.",
       "options": [
-        "Statement I alone is sufficient.",
-        "Statement II alone is sufficient.",
-        "Both statements together are sufficient; neither alone is sufficient.",
-        "Either statement alone is sufficient.",
-        "Even both together are insufficient."
+        "Statement I alone is sufficient, but statement II alone is not sufficient.",
+        "Statement II alone is sufficient, but statement I alone is not sufficient.",
+        "Both statements together are sufficient, but neither alone is sufficient.",
+        "Each statement alone is sufficient to answer the question.",
+        "Statements I and II together are not sufficient to answer the question."
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -1183,11 +1183,11 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "What is the area of a rectangle? I: its length is 12 cm. II: its perimeter is 40 cm.",
       "options": [
-        "I alone",
-        "Both statements together are sufficient; neither alone is sufficient.",
-        "II alone",
-        "Either alone",
-        "Both still insufficient"
+        "Statement I alone is sufficient, but statement II alone is not sufficient.",
+        "Both statements together are sufficient, but neither alone is sufficient.",
+        "Statement II alone is sufficient, but statement I alone is not sufficient.",
+        "Each statement alone is sufficient to answer the question.",
+        "Statements I and II together are not sufficient to answer the question."
       ],
       "correctIndex": 1,
       "answerType": "mcq",
@@ -1233,11 +1233,11 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "What is the value of a+b? I: a=5. II: b=7.",
       "options": [
-        "I alone",
-        "II alone",
-        "Either alone",
-        "Both statements together are sufficient; neither alone is sufficient.",
-        "Both insufficient"
+        "Statement I alone is sufficient, but statement II alone is not sufficient.",
+        "Statement II alone is sufficient, but statement I alone is not sufficient.",
+        "Each statement alone is sufficient to answer the question.",
+        "Both statements together are sufficient, but neither alone is sufficient.",
+        "Statements I and II together are not sufficient to answer the question."
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -1510,7 +1510,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "options": [
         "A survey finds many non-visitors cite the current Sunday closing time as the main barrier.",
         "The library repainted its reading room last year.",
-        "Weekday visits rose after a new catalogue was installed.",
+        "Weekday visits rose sharply after a new online catalogue had been installed in the library during the last year.",
         "Some residents prefer digital books.",
         "The library owns more history books than science books."
       ],
@@ -1535,7 +1535,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "options": [
         "A major festival promotion began on the same day as the redesign.",
         "The shelves are slightly wider.",
-        "The store sells many product categories.",
+        "The store sells many different product categories across all of its aisles today.",
         "Employees prefer the new layout.",
         "The redesign took two nights to install."
       ],
@@ -1560,7 +1560,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "options": [
         "All workers own expensive phones.",
         "Paper can never be accurate.",
-        "The app will eliminate every type of error.",
+        "The app will eliminate every single type of error that the paper checklist currently allows to occur at all.",
         "Most transcription errors arise when handwritten entries are later re-entered digitally.",
         "The checklist contains no numerical fields."
       ],
@@ -1586,7 +1586,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "Meal demand collapsed.",
         "The cafeteria reduced its menu to one item.",
         "Every customer used pre-ordering.",
-        "Queue length is unrelated to ordering method.",
+        "Queue length is entirely unrelated to the method by which the orders are placed at all here.",
         "Some customers shifted from waiting in the ordering queue to pre-ordering."
       ],
       "correctIndex": 4,
@@ -1612,7 +1612,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "The unit price was unchanged.",
         "Workers wore new uniforms.",
         "The factory shipped fewer boxes.",
-        "The accounting month had the same number of days."
+        "The accounting month contained the same number of working days as the previous one."
       ],
       "correctIndex": 0,
       "answerType": "mcq",
@@ -1637,7 +1637,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "Bicycles require no maintenance.",
         "Car parking will be abolished.",
         "A meaningful number of people would cycle if secure parking were available.",
-        "Cycling is faster than driving in every condition."
+        "Cycling is faster than driving in every possible condition of weather and of traffic alike."
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -1658,8 +1658,8 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A subscription service believes a simpler cancellation page will reduce support calls. Which observation most strengthens this belief?",
       "options": [
-        "The company changed its logo.",
-        "Most users pay monthly.",
+        "The company changed its logo and its brand colours last quarter as well",
+        "Most of the users pay monthly.",
         "A large share of support calls currently ask how to cancel.",
         "Support agents work in shifts.",
         "The service has competitors."
@@ -1683,7 +1683,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A school concludes that a new study room improved exam scores because students using the room scored higher than non-users. Which fact most weakens the conclusion?",
       "options": [
-        "The room has bright lighting.",
+        "The study room has unusually bright lighting throughout the whole of the day and evening.",
         "Students who chose the room already had substantially higher prior grades.",
         "Exam scores are numerical.",
         "Some non-users studied at home.",
@@ -1710,7 +1710,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "options": [
         "Every long route is late.",
         "Short routes are never late.",
-        "Route length is the sole cause of lateness.",
+        "Route length is the sole cause of lateness on every single route run.",
         "Long routes are overrepresented among late deliveries.",
         "Exactly 80% of long routes are late."
       ],
@@ -1737,7 +1737,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "Users received the same internet speed.",
         "The company hired more developers.",
         "The redesign put more content on each page, so users spent longer on fewer pages.",
-        "All users visited exactly one page before and after."
+        "All of the users visited exactly one page each both before and after the redesign took place at all."
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -1762,7 +1762,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "Texts are free for the clinic.",
         "At least some missed appointments are due to patients forgetting the time.",
         "No patient ever changes a number.",
-        "Missed appointments are caused only by forgetting."
+        "Missed appointments are caused only by patients forgetting the time of the appointment itself."
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -1784,7 +1784,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "question": "A warehouse wants to mark floor lanes more clearly to reduce near-collisions between carts. Which evidence most strengthens the proposal?",
       "options": [
         "Incident reports frequently mention carts drifting across poorly visible lane boundaries.",
-        "The warehouse ceiling was repaired.",
+        "The ceiling of the whole warehouse was repaired at some point during the course of the previous trading year.",
         "Cart batteries last eight hours.",
         "Some workers prefer blue uniforms.",
         "The building has two entrances."
@@ -1808,7 +1808,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A café credits a new menu board for higher morning revenue. Which fact most weakens that claim?",
       "options": [
-        "The board uses larger fonts.",
+        "The new menu board uses noticeably larger fonts than the board it replaced on the wall behind the counter itself.",
         "The café opens at 7 a.m.",
         "Tea remains on the menu.",
         "Coffee prices were raised 15% at the same time, while the number of transactions stayed flat.",
@@ -1833,7 +1833,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A team reduced meeting length from 60 to 30 minutes, and the number of agenda items completed per meeting stayed the same. Which statement is supported?",
       "options": [
-        "The team completed twice as many agenda items.",
+        "The team completed twice as many agenda items as it had done before the change was made.",
         "Every meeting ended early before the change.",
         "All agenda items became easier.",
         "Meeting length has no effect on work.",
@@ -3760,7 +3760,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "options": [
         "The initiative achieved only its originally predicted benefit.",
         "The micro-warehouse model brought service benefits but also offsetting operating costs.",
-        "The passage argues that every organisation should adopt the same model.",
+        "The passage argues that every organisation of this kind ought to adopt exactly the same model as this one.",
         "The initiative failed because one limitation remained.",
         "The passage focuses mainly on a legal dispute."
       ],
@@ -3809,7 +3809,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "question": "Passage: A grocery cooperative replaced one large suburban storeroom with three small neighbourhood micro-warehouses. The change did not reduce the total amount of inventory held, but it shortened the final delivery leg for many orders. Managers initially expected transport costs to fall sharply; instead, the savings were modest because the smaller sites required separate staffing and replenishment. Even so, customer complaints about late evening deliveries declined, and the cooperative decided to keep the model while testing shared night-shift staff across two sites.\n\nWhich inference is most reasonable?",
       "options": [
         "Any intervention with a limitation is worthless.",
-        "The organisation had perfect information before the experiment.",
+        "The organisation had perfect information about every one of the outcomes before the experiment was begun at all itself.",
         "Every outcome described was predicted in advance.",
         "A shorter delivery leg can improve punctuality even when total operating cost savings are limited.",
         "Users prefer the same experience in all circumstances."
@@ -3909,7 +3909,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "question": "Passage: A city museum experimented with shorter object labels in one gallery. Curators worried that removing detail would make the exhibition feel superficial, yet visitor interviews suggested a different effect: many people read more labels when each was concise, then used optional QR links for deeper context on the objects that interested them most. The museum therefore concluded that brevity and depth need not be opposites when information is layered rather than forced into a single block of text.\n\nWhich inference is most reasonable?",
       "options": [
         "Any intervention with a limitation is worthless.",
-        "The organisation had perfect information before the experiment.",
+        "The organisation had perfect information about each of the outcomes before the experiment began.",
         "Giving readers a choice of depth can increase engagement with basic information.",
         "Every outcome described was predicted in advance.",
         "Users prefer the same experience in all circumstances."
@@ -3959,7 +3959,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "question": "Passage: Several apartment complexes installed shallow rain gardens beside their parking areas. During ordinary showers, runoff that once moved quickly into street drains now pooled briefly among grasses and soil before soaking away. The gardens did not eliminate flooding during an exceptional cloudburst, but maintenance teams observed less standing water after moderate storms. Residents also reported more birds near the planted areas, an outcome that had not been part of the original drainage plan.\n\nWhat is the main idea?",
       "options": [
         "The initiative achieved only its originally predicted benefit.",
-        "The passage argues that every organisation should adopt the same model.",
+        "The passage argues that every organisation of this kind ought to adopt exactly the same model as this one does.",
         "The initiative failed because one limitation remained.",
         "The passage focuses mainly on a legal dispute.",
         "Rain gardens improved ordinary runoff handling and produced an unexpected ecological benefit."
@@ -3984,7 +3984,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "question": "Passage: Several apartment complexes installed shallow rain gardens beside their parking areas. During ordinary showers, runoff that once moved quickly into street drains now pooled briefly among grasses and soil before soaking away. The gardens did not eliminate flooding during an exceptional cloudburst, but maintenance teams observed less standing water after moderate storms. Residents also reported more birds near the planted areas, an outcome that had not been part of the original drainage plan.\n\nWhich statement is supported by the passage?",
       "options": [
         "The initiative eliminated every problem mentioned.",
-        "The organisation abandoned the experiment immediately.",
+        "The organisation abandoned the whole experiment almost immediately afterwards anyway.",
         "The passage states that costs fell to zero.",
         "The gardens did not prevent flooding during an exceptional cloudburst.",
         "All users reacted in exactly the same way."
