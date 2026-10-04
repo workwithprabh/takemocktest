@@ -135,8 +135,8 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "A bedbound patient is at high risk for pressure injury. Which nursing action is most appropriate?",
     "options": [
       "Regular repositioning plus skin inspection and pressure redistribution",
-      "Massage persistently reddened bony prominences",
-      "Use donut rings under every bony prominence",
+      "Massage the persistently reddened bony prominences at each turn of the patient itself",
+      "Place donut rings under every bony prominence",
       "Keep the skin continuously moist"
     ],
     "correctIndex": 0,
@@ -158,9 +158,9 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which position most reduces aspiration risk during enteral feeding in a patient without contraindication?",
     "options": [
-      "Trendelenburg",
-      "Flat supine",
-      "Prone with head down",
+      "Trendelenburg position",
+      "Flat supine position",
+      "Prone with the head of the bed lowered throughout feeding",
       "Head of bed elevated about 30–45 degrees"
     ],
     "correctIndex": 3,
@@ -255,7 +255,7 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "Which finding best indicates effective use of an incentive spirometer after abdominal surgery?",
     "options": [
       "Breath-holding before inhalation only",
-      "Continuous coughing into the mouthpiece",
+      "Continuous coughing into the mouthpiece of the device throughout use",
       "Sustained slow inspiration with progressive volume goal",
       "Rapid shallow exhalations into the device"
     ],
@@ -326,7 +326,7 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "A patient with COPD receives excess oxygen and becomes drowsier with rising PaCO2. Which principle is most relevant?",
     "options": [
-      "All COPD patients depend solely on hypoxic drive",
+      "All patients with COPD depend solely on their hypoxic drive to breathe at all times of the day and night",
       "Oxygen should be titrated to a prescribed target while ventilation is reassessed",
       "Oxygen must always be stopped completely",
       "Pulse oximetry alone proves ventilation is adequate"
@@ -374,9 +374,9 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A patient with hypoglycemia is conscious and able to swallow. What is an appropriate initial action?",
     "options": [
-      "Withhold all carbohydrate",
-      "Start fluid restriction",
-      "Give long-acting insulin",
+      "Withhold all carbohydrate until the next scheduled meal is due",
+      "Start a fluid restriction",
+      "Give a long-acting insulin",
       "Give a measured fast-acting carbohydrate source"
     ],
     "correctIndex": 3,
@@ -590,10 +590,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "A chest tube for pneumothorax shows continuous bubbling in the water-seal chamber. What should the nurse suspect?",
     "options": [
-      "Tube obstruction by definition",
+      "Obstruction of the tube by definition",
       "An air leak somewhere in the system or from the patient",
-      "Excessive pleural fluid only",
-      "Normal finding in every breath indefinitely"
+      "Excessive pleural fluid alone",
+      "A normal finding on every breath, which continues indefinitely thereafter"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -662,9 +662,9 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "A patient after thyroidectomy develops perioral tingling and carpopedal spasm. Which complication should be suspected?",
     "options": [
-      "Hypermagnesemia",
-      "Hypernatremia",
-      "Hyperkalemia",
+      "Hypermagnesemia developing soon after the operation",
+      "Hypernatremia after surgery",
+      "Hyperkalemia after surgery",
       "Hypocalcemia from parathyroid dysfunction"
     ],
     "correctIndex": 3,
@@ -686,10 +686,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which finding is most concerning for compartment syndrome in a limb cast?",
     "options": [
-      "Comfort improved by elevation",
+      "Comfort that is improved by elevation",
       "Severe pain out of proportion, especially with passive stretch",
-      "Mild itching under the cast",
-      "Warm toes with brisk capillary refill"
+      "Mild itching beneath the cast",
+      "Warm toes with a brisk capillary refill observed at the nail bed each time"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -734,8 +734,8 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which instruction is appropriate for a patient with a new arteriovenous fistula for hemodialysis?",
     "options": [
-      "Report a palpable thrill as abnormal",
-      "Allow routine IV insertion into the fistula arm",
+      "Report any palpable thrill as abnormal",
+      "Allow the routine insertion of an intravenous cannula into the fistula arm itself",
       "Avoid blood pressure measurement and venipuncture in that arm",
       "Sleep with tight compression over the fistula"
     ],
@@ -758,9 +758,9 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "Which laboratory value most directly reflects hemoglobin concentration?",
     "options": [
-      "Serum amylase",
-      "Troponin only",
-      "TSH only",
+      "The serum amylase concentration taken from the panel",
+      "The troponin level alone",
+      "The TSH value alone",
       "Complete blood count hemoglobin value"
     ],
     "correctIndex": 3,
@@ -782,7 +782,7 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A postpartum uterus is boggy with increased vaginal bleeding. What is the first nursing action while summoning help and following protocol?",
     "options": [
-      "Apply ice to the forehead only",
+      "Apply ice to the forehead of the patient and then wait",
       "Place the patient prone and wait",
       "Massage the uterine fundus and assess tone",
       "Encourage ambulation immediately"
@@ -854,10 +854,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "During oxytocin infusion, contractions become excessively frequent and fetal heart rate shows recurrent late decelerations. What is an immediate nursing response?",
     "options": [
-      "Place the patient supine and leave unattended",
+      "Place the patient fully supine and leave her unattended in the room for the time being at least",
       "Stop oxytocin and initiate intrauterine resuscitative measures per protocol",
       "Encourage pushing regardless of dilation",
-      "Increase the oxytocin rate"
+      "Increase the rate of the oxytocin"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -878,10 +878,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "What does a positive fetal movement count generally reassure about?",
     "options": [
-      "Exact fetal weight",
-      "Placental location",
+      "The exact fetal weight",
+      "The placental location",
       "Current fetal activity, while not replacing other indicated assessment",
-      "Guaranteed absence of all fetal compromise"
+      "A guaranteed absence of any fetal compromise of any kind at all thereafter in the labour"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1095,7 +1095,7 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "A child with suspected epiglottitis is sitting forward, drooling and distressed. Which action should be avoided outside a controlled airway setting?",
     "options": [
       "Providing oxygen as tolerated",
-      "Calling for experienced airway support",
+      "Calling for experienced airway support without any delay at all",
       "Keeping the child calm",
       "Forcing throat examination with a tongue depressor"
     ],
@@ -1118,10 +1118,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which sign is a useful indicator of increased work of breathing in an infant?",
     "options": [
-      "Slow hair growth",
-      "Warm hands alone",
+      "Slow growth of the hair",
+      "Warm hands and feet on their own, with no other sign",
       "Nasal flaring and intercostal retractions",
-      "Mild hiccups"
+      "Mild hiccups only"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1167,7 +1167,7 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "A child with fever has a brief generalized seizure lasting 2 minutes and then rapidly recovers. What is the immediate nursing priority during the seizure?",
     "options": [
       "Protect airway and prevent injury without restraining the child",
-      "Place an object in the mouth",
+      "Place a solid object between the teeth of the child without any delay at all",
       "Hold the child down firmly",
       "Give food during the seizure"
     ],
@@ -1287,9 +1287,9 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "In an outbreak, attack rate is best described as what?",
     "options": [
       "Proportion of an at-risk exposed population that becomes ill during the outbreak",
-      "Prevalence at birth only",
-      "Number of hospital beds per district",
-      "Annual deaths divided by total population only"
+      "The prevalence recorded at birth only",
+      "The number of hospital beds per district",
+      "The annual number of deaths divided by the total population, taken over the whole year in question"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1310,9 +1310,9 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which action most directly interrupts fecal-oral transmission in a community?",
     "options": [
-      "Routine bed rest",
-      "Reducing daylight exposure",
-      "Increasing ambient noise",
+      "Routine bed rest for every person affected in the area",
+      "Reducing exposure to daylight",
+      "Increasing the ambient noise",
       "Safe water, sanitation and hand hygiene"
     ],
     "correctIndex": 3,
@@ -1335,9 +1335,9 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "What is the main purpose of contact tracing in a communicable disease outbreak?",
     "options": [
       "Identify exposed people for assessment, testing or preventive action",
-      "Determine hospital electricity use",
-      "Measure population height",
-      "Replace laboratory diagnosis"
+      "Determining the electricity consumption of the whole hospital building each month",
+      "Measuring the height of the population",
+      "Replacing the laboratory diagnosis"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1622,10 +1622,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A patient with mania is constantly moving and will not sit for meals. Which nutrition approach is practical?",
     "options": [
-      "Insist on a three-hour seated meal",
+      "Insist on a seated meal lasting three full hours at a fixed table at every single mealtime",
       "Offer high-calorie finger foods and fluids that can be taken while moving",
       "Provide only low-calorie clear liquids",
-      "Restrict all fluids"
+      "Restrict all of the fluids"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1719,8 +1719,8 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "Which intervention is appropriate when a patient reports hearing threatening voices but is not imminently dangerous?",
     "options": [
       "Demand that the patient stop hearing them",
-      "Mock the experience",
-      "Agree that the voices are definitely external",
+      "Mock the experience the patient describes",
+      "Agree with the patient that the voices are definitely external and entirely real too",
       "Acknowledge the distress without validating the hallucination as real"
     ],
     "correctIndex": 3,
@@ -2103,7 +2103,7 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "question": "After a needlestick from a used hollow-bore needle, what is the appropriate first response?",
     "options": [
       "Apply caustic bleach to the skin",
-      "Squeeze the wound aggressively for 30 minutes",
+      "Squeeze the wound aggressively for thirty minutes beneath running water first",
       "Wash the site and report immediately for exposure assessment",
       "Hide the injury if the source seems healthy"
     ],
@@ -2126,10 +2126,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Which finding most suggests central-line associated bloodstream infection rather than simple local irritation?",
     "options": [
-      "Mild tape itch only",
-      "Stable temperature and negative cultures",
+      "Mild itching under the tape only",
+      "A stable temperature with negative blood cultures taken from two separate peripheral sites on the same day",
       "Fever with positive blood cultures and no better source in a patient with a central line",
-      "Dry intact dressing"
+      "A dry and intact dressing"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2174,10 +2174,10 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Which cleaning principle is most appropriate for visible blood contamination on a surface?",
     "options": [
-      "Ignore small spills",
-      "Dry dust only",
+      "Ignore the smaller spills",
+      "Dry dusting only",
       "Use appropriate PPE and a disinfectant effective for bloodborne pathogens after removing organic material",
-      "Use plain water only and leave residue"
+      "Use plain water only and leave the residue in place on the surface afterwards, without applying any disinfectant to it at all"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2342,7 +2342,7 @@ export const AIIMS_NORCET_10_STAGE_1_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "A patient with an arterial line has a damped waveform and difficulty aspirating blood. What should be checked first?",
     "options": [
-      "Ignore the waveform if the monitor is powered on",
+      "Ignore the waveform entirely for as long as the monitor remains powered on and running",
       "Tubing for kinks, clots, stopcock position and pressure-bag function",
       "Give oral fluids immediately",
       "Remove the patient identification band"
