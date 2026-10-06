@@ -1130,6 +1130,15 @@ function seededRandom(seed: number): () => number {
   };
 }
 
+/**
+ * Two question formats whose whole answer set is fixed, which makes them
+ * detectable from the options. Both wordings are standardised across the banks
+ * precisely so a reader meets one phrasing rather than eighty, and that is what
+ * makes counting them possible.
+ */
+const DATA_SUFFICIENCY = /\balone is sufficient\b/i;
+const SYLLOGISM = /\bconclusion (?:I|II) follows\b/i;
+
 /** The one non-Latin script the papers here carry, used to spot a bilingual question. */
 const DEVANAGARI = /[\u0900-\u097F]/;
 
@@ -1164,11 +1173,27 @@ export function getCorpusQuestionStats() {
   // declared on the question, because nothing declares it and a flag nobody
   // sets would read as zero.
   const bilingual = { questions: 0, options: 0 };
-  const bilingualExams = new Set<string>();
 
-  const numericalExams = new Set<string>();
-  const multiExams = new Set<string>();
-  const fiveOptionExams = new Set<string>();
+  const formats = { dataSufficiency: 0, syllogism: 0 };
+
+  // exam -> the distinct questions of that kind published for it. Counting
+  // questions rather than tests matters: a bank served by both a sectional and
+  // its full-length parent is one set of questions and two entries below.
+  const perExam = new Map<string, Map<string, Set<string>>>();
+  const tally = (kind: string, exam: string, key: string) => {
+    let kinds = perExam.get(kind);
+    if (!kinds) perExam.set(kind, (kinds = new Map()));
+    let questions = kinds.get(exam);
+    if (!questions) kinds.set(exam, (questions = new Set()));
+    questions.add(key);
+  };
+  // Exam names, heaviest user first, so prose naming a few names the few that
+  // matter and keeps naming the right ones as the corpus grows.
+  const ranked = (kind: string) =>
+    [...(perExam.get(kind) ?? new Map<string, Set<string>>()).entries()]
+      .sort((a, b) => b[1].size - a[1].size || a[0].localeCompare(b[0]))
+      .map(([exam]) => exam);
+
 
   // One row per prose question: the option lengths, the length a distractor has
   // to reach to look like a leader, how many options reach it, and which one is
@@ -1178,10 +1203,13 @@ export function getCorpusQuestionStats() {
   for (const [test, bank] of Object.entries(CHECKED_TEST_BANKS)) {
     const exam = test.split('/')[0];
     for (const question of bank) {
-      if (DEVANAGARI.test(question.question)) bilingualExams.add(exam);
-      if (question.answerType === 'numerical') numericalExams.add(exam);
-      else if (question.answerType === 'multi-select') multiExams.add(exam);
-      else if (question.options.length === 5) fiveOptionExams.add(exam);
+      const id = question.id ?? question.question;
+      if (DEVANAGARI.test(question.question)) tally('bilingual', exam, id);
+      if (question.options.some((option) => DATA_SUFFICIENCY.test(option))) tally('dataSufficiency', exam, id);
+      if (question.options.some((option) => SYLLOGISM.test(option))) tally('syllogism', exam, id);
+      if (question.answerType === 'numerical') tally('numerical', exam, id);
+      else if (question.answerType === 'multi-select') tally('multi', exam, id);
+      else if (question.options.length === 5) tally('fiveOption', exam, id);
 
       const key = question.id ?? question.question;
       if (seen.has(key)) continue;
@@ -1196,6 +1224,9 @@ export function getCorpusQuestionStats() {
         fourOption += 1;
         position[question.correctIndex] += 1;
       }
+
+      if (question.options.some((option) => DATA_SUFFICIENCY.test(option))) formats.dataSufficiency += 1;
+      if (question.options.some((option) => SYLLOGISM.test(option))) formats.syllogism += 1;
 
       if (DEVANAGARI.test(question.question)) {
         bilingual.questions += 1;
@@ -1266,12 +1297,17 @@ export function getCorpusQuestionStats() {
     difficulty,
     fourOption,
     position,
-    bilingual: { ...bilingual, exams: [...bilingualExams] },
+    bilingual: { ...bilingual, exams: ranked('bilingual') },
+    formats: {
+      ...formats,
+      dataSufficiencyExams: ranked('dataSufficiency'),
+      syllogismExams: ranked('syllogism'),
+    },
     answerTypes: {
       ...answerTypes,
-      numericalExams: [...numericalExams],
-      multiExams: [...multiExams],
-      fiveOptionExams: [...fiveOptionExams],
+      numericalExams: ranked('numerical'),
+      multiExams: ranked('multi'),
+      fiveOptionExams: ranked('fiveOption'),
     },
     lengthTell: {
       prose: rows.length,

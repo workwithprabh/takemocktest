@@ -827,7 +827,10 @@ function compute() {
 
   // A corpus figure lists exam slugs; prose wants the names the site shows.
   const examName = (slug: string) => EXAMS[slug as keyof typeof EXAMS]?.name ?? slug;
-  const examNames = (slugs: string[]) => slugs.map(examName).sort((a, b) => a.localeCompare(b));
+  // The corpus returns these already ordered, heaviest user first. Mapping
+  // preserves that order on purpose: prose naming three or four of them should
+  // name the exams that actually set the format.
+  const examNames = (slugs: string[]) => slugs.map(examName);
 
   return {
     exams: exams.length,
@@ -848,6 +851,12 @@ function compute() {
     reasoningHeadingsUsedByTwo: usedBy(2),
     reasoningSectionsUnderTwo: usedBy(2) * 2,
     reasoningHeadingsUsedByOne: usedBy(1),
+
+    /** Exams setting a fixed-answer-set format, by the name the site shows. */
+    formatExams: {
+      dataSufficiency: examNames(corpus.formats.dataSufficiencyExams),
+      syllogism: examNames(corpus.formats.syllogismExams),
+    },
 
     /** Exams whose papers here carry a Hindi half alongside the English. */
     bilingualExams: examNames(corpus.bilingual.exams),
