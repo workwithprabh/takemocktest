@@ -825,6 +825,10 @@ function compute() {
   const topicQuestions = [...pools.values()].reduce((total, pool) => total + pool.questions.length, 0);
   const pool = (slug: string) => pools.get(slug);
 
+  // A corpus figure lists exam slugs; prose wants the names the site shows.
+  const examName = (slug: string) => EXAMS[slug as keyof typeof EXAMS]?.name ?? slug;
+  const examNames = (slugs: string[]) => slugs.map(examName).sort((a, b) => a.localeCompare(b));
+
   return {
     exams: exams.length,
     sectionNames: sectionNames.size,
@@ -844,6 +848,13 @@ function compute() {
     reasoningHeadingsUsedByTwo: usedBy(2),
     reasoningSectionsUnderTwo: usedBy(2) * 2,
     reasoningHeadingsUsedByOne: usedBy(1),
+
+    /** The exams behind each answer type, by the name the site shows. */
+    answerTypeExams: {
+      numerical: examNames(corpus.answerTypes.numericalExams),
+      multi: examNames(corpus.answerTypes.multiExams),
+      fiveOption: examNames(corpus.answerTypes.fiveOptionExams),
+    },
 
     marking,
     pace,

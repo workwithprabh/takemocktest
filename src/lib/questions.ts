@@ -1140,13 +1140,38 @@ export function getCorpusQuestionStats() {
   let questions = 0;
   let fourOption = 0;
 
+  // How a question is answered, which decides what a guess on it is worth.
+  // Exams are collected before the deduplication below rather than after: a
+  // bank serving both a sectional and its full-length parent is one set of
+  // questions and still two tests, and the question "which exams set these?"
+  // is about the tests.
+  const answerTypes = {
+    fiveOption: 0,
+    otherOption: {} as Record<number, number>,
+    numerical: 0,
+    numericalDecimals: {} as Record<string, number>,
+    multi: 0,
+    multiPartial: 0,
+    multiProportional: 0,
+    /** Correct options per multi-select question, keyed by how many there are. */
+    multiCorrect: {} as Record<number, number>,
+  };
+  const numericalExams = new Set<string>();
+  const multiExams = new Set<string>();
+  const fiveOptionExams = new Set<string>();
+
   // One row per prose question: the option lengths, the length a distractor has
   // to reach to look like a leader, how many options reach it, and which one is
   // actually correct.
   const rows: { lengths: number[]; cut: number; leaders: number; key: number }[] = [];
 
-  for (const bank of Object.values(CHECKED_TEST_BANKS)) {
+  for (const [test, bank] of Object.entries(CHECKED_TEST_BANKS)) {
+    const exam = test.split('/')[0];
     for (const question of bank) {
+      if (question.answerType === 'numerical') numericalExams.add(exam);
+      else if (question.answerType === 'multi-select') multiExams.add(exam);
+      else if (question.options.length === 5) fiveOptionExams.add(exam);
+
       const key = question.id ?? question.question;
       if (seen.has(key)) continue;
       seen.add(key);
@@ -1159,6 +1184,22 @@ export function getCorpusQuestionStats() {
       if (single && question.options.length === 4 && question.correctIndex >= 0 && question.correctIndex < 4) {
         fourOption += 1;
         position[question.correctIndex] += 1;
+      }
+
+      if (question.answerType === 'numerical') {
+        answerTypes.numerical += 1;
+        const places = question.maxDecimalPlaces === undefined ? 'unstated' : String(question.maxDecimalPlaces);
+        answerTypes.numericalDecimals[places] = (answerTypes.numericalDecimals[places] ?? 0) + 1;
+      } else if (question.answerType === 'multi-select') {
+        answerTypes.multi += 1;
+        if (question.partialMarking) answerTypes.multiPartial += 1;
+        if (question.partialCreditMode === 'proportional') answerTypes.multiProportional += 1;
+        const correct = question.correctIndices?.length ?? 0;
+        answerTypes.multiCorrect[correct] = (answerTypes.multiCorrect[correct] ?? 0) + 1;
+      } else if (question.options.length === 5) {
+        answerTypes.fiveOption += 1;
+      } else if (question.options.length !== 4) {
+        answerTypes.otherOption[question.options.length] = (answerTypes.otherOption[question.options.length] ?? 0) + 1;
       }
 
       if (!single || question.options.length < 2) continue;
@@ -1209,6 +1250,12 @@ export function getCorpusQuestionStats() {
     difficulty,
     fourOption,
     position,
+    answerTypes: {
+      ...answerTypes,
+      numericalExams: [...numericalExams],
+      multiExams: [...multiExams],
+      fiveOptionExams: [...fiveOptionExams],
+    },
     lengthTell: {
       prose: rows.length,
       /** What a length-only reader scores, 0 to 1. */
