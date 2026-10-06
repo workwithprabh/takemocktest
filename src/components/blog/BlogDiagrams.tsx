@@ -31,7 +31,8 @@ export type BlogDiagramId =
   | 'po-mains-marks-per-question'
   | 'clerk-mains-pace'
   | 'seconds-per-question-spread'
-  | 'length-tell-vs-chance';
+  | 'length-tell-vs-chance'
+  | 'some-a-are-b-two-worlds';
 
 function StudyTimetableGrid() {
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -537,6 +538,42 @@ function LengthTellVsChance() {
   );
 }
 
+// "Some A are B" is satisfied by two arrangements, and the one people picture
+// is the one that makes the wrong conclusion look valid. Two panels, no data:
+// this is the logical form itself, which is what the post is explaining.
+function SomeAAreBTwoWorlds() {
+  const panel = (x: number, label: string, nested: boolean) => (
+    <g key={label}>
+      <rect x={x} y="18" width="230" height="140" fill="none" stroke={INK[100]} strokeWidth="1" />
+      {nested ? (
+        <>
+          <circle cx={x + 115} cy="88" r="58" fill="none" stroke={INK[300]} strokeWidth="1.5" />
+          <circle cx={x + 115} cy="100" r="30" fill="none" stroke={INK[900]} strokeWidth="1.5" />
+          <text x={x + 115} y="104" fontSize="12" fill={INK[900]} textAnchor="middle" fontWeight="600">A</text>
+          <text x={x + 115} y="48" fontSize="12" fill={INK[500]} textAnchor="middle">B</text>
+        </>
+      ) : (
+        <>
+          <circle cx={x + 88} cy="88" r="46" fill="none" stroke={INK[900]} strokeWidth="1.5" />
+          <circle cx={x + 142} cy="88" r="46" fill="none" stroke={INK[300]} strokeWidth="1.5" />
+          <text x={x + 62} y="92" fontSize="12" fill={INK[900]} textAnchor="middle" fontWeight="600">A</text>
+          <text x={x + 168} y="92" fontSize="12" fill={INK[500]} textAnchor="middle">B</text>
+        </>
+      )}
+      <text x={x + 115} y="176" fontSize="11" fill={INK[700]} textAnchor="middle">{label}</text>
+    </g>
+  );
+  return (
+    <svg viewBox="0 0 500 220" width="100%" role="img" aria-label="Two arrangements both satisfying the statement Some A are B. On the left, circles A and B overlap partly, so some A are outside B. On the right, circle A sits entirely inside circle B, so no A is outside B. Because the right-hand arrangement is permitted, the conclusion Some A are not B does not follow.">
+      {panel(10, 'Some A are B, and some are not', false)}
+      {panel(258, 'Some A are B, and all of them are', true)}
+      <text x="10" y="206" fontSize="9" fill={INK[300]}>
+        Both arrangements satisfy &quot;Some A are B&quot;, so anything true in only one of them does not follow.
+      </text>
+    </svg>
+  );
+}
+
 const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'study-timetable-grid': StudyTimetableGrid,
   'negative-marking-math': NegativeMarkingMath,
@@ -552,6 +589,7 @@ const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'clerk-mains-pace': ClerkMainsPace,
   'seconds-per-question-spread': SecondsPerQuestionSpread,
   'length-tell-vs-chance': LengthTellVsChance,
+  'some-a-are-b-two-worlds': SomeAAreBTwoWorlds,
 };
 
 export function BlogDiagram({ id, caption }: { id: BlogDiagramId; caption: string }) {
