@@ -416,10 +416,10 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "Interrupt-initiated I/O differs from programmed polling because the CPU",
     "options": [
-      "must continuously test the device status",
+      "must continuously test the status of the device in a tight loop itself",
       "can do other work until the device requests attention",
-      "transfers every byte through DMA only",
-      "cannot execute instructions during I/O"
+      "transfers every byte through the DMA controller only",
+      "cannot execute any instructions during I/O"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -512,10 +512,10 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "easy",
     "question": "Inside a C loop, the continue statement causes control to",
     "options": [
-      "restart the program from main",
+      "restart execution of the whole program from main again",
       "skip the rest of the current iteration",
-      "exit the loop permanently",
-      "terminate the entire program"
+      "exit the loop permanently at once",
+      "terminate the entire program at once"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -849,8 +849,8 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "Operator overloading in C++ can",
     "options": [
       "create completely new operator symbols",
-      "change operator precedence",
-      "change the number of operands an operator takes",
+      "change the precedence of an operator",
+      "change the number of operands that a given operator takes in an expression",
       "define how an existing operator works for user-defined types"
     ],
     "correctIndex": 3,
@@ -920,10 +920,10 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "A friend function of a C++ class may",
     "options": [
-      "become a member function automatically",
-      "change operator precedence",
+      "become a member function of that class automatically on declaration there",
+      "change the precedence of an operator",
       "access the class's private members if declared as a friend",
-      "inherit the class"
+      "inherit from the class itself"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1040,9 +1040,9 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "hard",
     "question": "Relation R(A,B,C) has composite key (A,B) and functional dependency A -> C. Assuming atomic attributes, R violates 2NF because",
     "options": [
-      "all dependencies are transitive",
-      "the relation has three attributes",
-      "A and B form a key",
+      "all of the dependencies in the relation are transitive ones",
+      "the relation has exactly three attributes",
+      "A and B together form a key",
       "C depends on only part of the composite key"
     ],
     "correctIndex": 3,
@@ -1184,10 +1184,10 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "A database trigger is code that",
     "options": [
-      "must be started manually by every SELECT",
+      "must be started manually by every single SELECT statement issued to it",
       "runs automatically in response to specified database events",
-      "can never access table data",
-      "replaces all constraints"
+      "can never access any table data",
+      "replaces all of the constraints"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1208,10 +1208,10 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "easy",
     "question": "During startup, BIOS/firmware primarily helps by",
     "options": [
-      "serving web pages",
-      "formatting every storage device",
+      "serving web pages to clients",
+      "formatting every storage device that is attached to the machine first",
       "initializing hardware and starting the boot process",
-      "deleting the operating system"
+      "deleting the operating system entirely"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1449,9 +1449,9 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "A system call provides a controlled interface between",
     "options": [
       "a user program and the operating-system kernel",
-      "two unrelated keyboards",
-      "a compiler and a printer cable only",
-      "two web browsers only"
+      "two unrelated keyboards only",
+      "a compiler and the cable attached to a printer only at all",
+      "two separate web browsers only"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1545,9 +1545,9 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "A counting semaphore is especially useful for controlling access to",
     "options": [
       "a pool containing multiple identical resource instances",
-      "a read-only comment",
-      "the CPU instruction set",
-      "a constant string literal"
+      "a single read-only comment held in the source code of the program itself",
+      "the instruction set of the CPU",
+      "a single constant string literal"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1664,10 +1664,10 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "easy",
     "question": "A tree-structured directory allows",
     "options": [
-      "only one file in the entire system",
+      "only one single file in the entire file system at any one time at all",
       "hierarchical organization of files and subdirectories",
-      "no directories inside directories",
-      "no path names"
+      "no directories inside other directories",
+      "no path names of any kind"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1713,8 +1713,8 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "A Java variable declared final",
     "options": [
       "must always be public",
-      "is automatically a thread",
-      "must be an array",
+      "is automatically made into a thread of its own at once",
+      "must be an array type",
       "cannot be reassigned after initialization"
     ],
     "correctIndex": 3,
@@ -2384,8 +2384,8 @@ export const TG_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "A server-side session is useful because it can",
     "options": [
-      "replace all HTML tags",
-      "make HTTP inherently connectionless disappear",
+      "replace all of the HTML tags",
+      "make the inherently connectionless nature of HTTP disappear at once",
       "assign physical RAM addresses to browsers",
       "maintain user-specific state across multiple HTTP requests"
     ],
