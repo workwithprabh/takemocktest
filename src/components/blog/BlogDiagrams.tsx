@@ -30,7 +30,8 @@ export type BlogDiagramId =
   | 'one-skill-many-names'
   | 'po-mains-marks-per-question'
   | 'clerk-mains-pace'
-  | 'seconds-per-question-spread';
+  | 'seconds-per-question-spread'
+  | 'length-tell-vs-chance';
 
 function StudyTimetableGrid() {
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -500,6 +501,42 @@ function SecondsPerQuestionSpread() {
   );
 }
 
+function LengthTellVsChance() {
+  const tell = CORPUS.corpus.lengthTell;
+  const rows = [
+    { label: 'Reading option lengths', value: tell.score, dark: true },
+    { label: 'The same answers, shuffled', value: tell.control, dark: false },
+  ];
+  const x0 = 190;
+  const barMax = 300;
+  const scale = 0.8;
+  return (
+    <svg viewBox="0 0 560 190" width="100%" role="img" aria-label={`Across ${tell.prose.toLocaleString('en-US')} prose questions on this site, a candidate who reads only option lengths scores ${(tell.score * 100).toFixed(1)} percent. With the same options and the correct answers reassigned at random, the same method scores ${(tell.control * 100).toFixed(1)} percent.`}>
+      {rows.map((row, i) => {
+        const y = 30 + i * 46;
+        const width = (row.value / scale) * barMax;
+        return (
+          <g key={row.label}>
+            <text x={x0 - 10} y={y + 15} fontSize="11" fill={row.dark ? INK[900] : INK[700]} textAnchor="end" fontWeight={row.dark ? '600' : '400'}>{row.label}</text>
+            <rect x={x0} y={y} width={width} height="22" fill={row.dark ? INK[900] : INK[200]} />
+            <text x={x0 + width + 8} y={y + 16} fontSize="11" fill={INK[700]} fontWeight={row.dark ? '600' : '400'}>{(row.value * 100).toFixed(1)}%</text>
+          </g>
+        );
+      })}
+      <line x1={x0} y1="22" x2={x0} y2="130" stroke={INK[300]} strokeWidth="1" />
+      {/* The shuffled bar is the only honest zero line: it is what this method
+          is worth on these same options once length carries no information. */}
+      <line x1={x0 + (rows[1].value / scale) * barMax} y1="22" x2={x0 + (rows[1].value / scale) * barMax} y2="130" stroke={INK[500]} strokeDasharray="3 3" strokeWidth="1" />
+      <text x={x0 + (rows[0].value / scale) * barMax} y="150" fontSize="10" fill={INK[500]} textAnchor="end">
+        {((tell.score - tell.control) * 100).toFixed(1)} points above chance
+      </text>
+      <text x={x0} y="172" fontSize="9" fill={INK[300]}>
+        {tell.prose.toLocaleString('en-US')} questions whose longest option reaches {tell.proseMin} characters. Dashed line: the shuffled control.
+      </text>
+    </svg>
+  );
+}
+
 const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'study-timetable-grid': StudyTimetableGrid,
   'negative-marking-math': NegativeMarkingMath,
@@ -514,6 +551,7 @@ const DIAGRAMS: Record<BlogDiagramId, () => React.JSX.Element> = {
   'po-mains-marks-per-question': PoMainsMarksPerQuestion,
   'clerk-mains-pace': ClerkMainsPace,
   'seconds-per-question-spread': SecondsPerQuestionSpread,
+  'length-tell-vs-chance': LengthTellVsChance,
 };
 
 export function BlogDiagram({ id, caption }: { id: BlogDiagramId; caption: string }) {

@@ -878,6 +878,21 @@ export function share1(count: number, total: number): string {
   return ((count / total) * 100).toFixed(1);
 }
 
+/**
+ * A ratio that is already a proportion, rendered as a percentage. Separate from
+ * `share1` because the length-tell score is a mean of per-question payouts
+ * rather than a count over a total, and passing it through a count-and-total
+ * helper would invite someone to "fix" it by multiplying by the question count.
+ */
+export function percent1(ratio: number): string {
+  return (ratio * 100).toFixed(1);
+}
+
+/** The same, to the nearest whole percent, for prose that does not want a decimal. */
+export function percent(ratio: number): number {
+  return Math.round(ratio * 100);
+}
+
 /** 8259 reads as 8,259 in prose. Indian grouping is not used here: the posts were written with thousands separators. */
 export function n(value: number): string {
   return value.toLocaleString('en-US');
