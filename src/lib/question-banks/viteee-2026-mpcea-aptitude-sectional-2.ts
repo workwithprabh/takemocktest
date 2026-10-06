@@ -56,10 +56,10 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_2: Question[] = [
     "difficulty": "easy",
     "question": "Question: Is x positive? Statement 1: x^2 = 9. Statement 2: x^3 = 27. Which is sufficient?",
     "options": [
-      "Statement 2 alone is sufficient, but Statement 1 alone is not",
-      "Statement 1 alone is sufficient, but Statement 2 alone is not",
-      "Either statement alone is sufficient",
-      "Neither statement is sufficient"
+      "Statement 2 alone is sufficient, but statement 1 alone is not sufficient",
+      "Statement 1 alone is sufficient, but statement 2 alone is not sufficient",
+      "Each statement alone is sufficient to answer the question by itself",
+      "Statements 1 and 2 together are not sufficient to answer the question"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -80,10 +80,10 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_2: Question[] = [
     "difficulty": "medium",
     "question": "Question: What is the value of y? Statement 1: 2y + 3 = 11. Statement 2: y^2 = 16. Which is sufficient?",
     "options": [
-      "Statement 2 alone is sufficient, but Statement 1 alone is not",
-      "Both statements together are needed",
-      "Statement 1 alone is sufficient, but Statement 2 alone is not",
-      "Neither statement is sufficient"
+      "Statement 2 alone is sufficient, but statement 1 alone is not sufficient",
+      "Both statements together are sufficient, but neither alone is sufficient",
+      "Statement 1 alone is sufficient, but statement 2 alone is not sufficient",
+      "Statements 1 and 2 together are not sufficient to answer the question"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -128,10 +128,10 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_2: Question[] = [
     "difficulty": "hard",
     "question": "Statements: All squares are rectangles. No rectangle is a triangle. Some quadrilaterals are squares. Which conclusions follow? I. No square is a triangle. II. Some quadrilaterals are not triangles.",
     "options": [
-      "Only I follows",
-      "Only II follows",
-      "Both I and II follow",
-      "Neither follows"
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion follows"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

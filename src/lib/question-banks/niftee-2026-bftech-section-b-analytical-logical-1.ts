@@ -320,10 +320,10 @@ export const NIFTEE_2026_BFTECH_SECTION_B_ANALYTICAL_LOGICAL_1: Question[] = [
     "difficulty": "hard",
     "question": "Question: Is n even? I: n is divisible by 6. II: n is divisible by 3. Which is correct?",
     "options": [
-      "Both together are needed.",
-      "Neither statement is sufficient even together.",
-      "Statement II alone is sufficient.",
-      "Statement I alone is sufficient; Statement II alone is not."
+      "Both statements together are sufficient, but neither alone is sufficient.",
+      "Statements I and II together are not sufficient to answer the question.",
+      "Statement II alone is sufficient, but statement I alone is not sufficient.",
+      "Statement I alone is sufficient, but statement II alone is not sufficient."
     ],
     "correctIndex": 3,
     "answerType": "mcq",

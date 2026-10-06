@@ -8,10 +8,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A guest reports that a room is noisy and is visibly tired. What should the front-desk associate do first?",
     "options": [
-      "Explain that noise is unavoidable before listening",
-      "Promise a free suite without checking availability",
-      "Ask the guest to post the complaint online",
-      "Acknowledge the concern, clarify the immediate need, and check realistic remedies"
+      "Apologise at length and describe the building’s soundproofing limitations",
+      "Offer a complimentary suite straight away in order to close the conversation",
+      "Log the complaint for the duty manager to review first thing in the morning",
+      "Acknowledge the concern, clarify the need and check what can be offered"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -32,10 +32,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "hard",
     "question": "A diner says they have a severe nut allergy and asks whether a dessert is safe. The server is unsure. What is the best response?",
     "options": [
-      "Guess based on the dessert name",
-      "Pause the order and verify ingredients/cross-contact risk with the responsible kitchen team",
-      "Say it is probably safe because nuts are not visible",
-      "Remove visible nuts and serve it"
+      "Check the printed allergen column on the menu and answer the guest on that basis",
+      "Pause the order and verify ingredients and cross-contact risk with the kitchen",
+      "Suggest a different dessert on the menu that seems unlikely to contain any nuts",
+      "Ask the guest how severe their reaction usually is before deciding what to say"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -56,10 +56,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A check-in queue suddenly doubles after a delayed coach arrives. What is the best immediate response?",
     "options": [
-      "Triage simple needs, open available capacity, and keep waiting guests informed",
-      "Stop acknowledging guests until the queue shrinks",
-      "Process only VIPs and ignore everyone else",
-      "Ask all guests to return the next day"
+      "Triage simple needs, open available capacity and keep guests informed",
+      "Work through the queue strictly in order without further comment",
+      "Prioritise guests holding premium rates to clear high-value check-ins",
+      "Apologise to the queue and ask arrivals to return in an hour"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -80,10 +80,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A restaurant serves the wrong main course. The guest has limited time. What is the best first action?",
     "options": [
-      "Argue that the guest may have ordered incorrectly",
-      "Hide the plate and wait",
-      "Offer dessert before addressing the main course",
-      "Apologize, confirm the correct order and offer the fastest safe replacement option"
+      "Check the order docket first to establish exactly where the mistake was made",
+      "Offer to remove the dish from the bill and let the guest reorder it later on",
+      "Send the correct dish to the kitchen as a priority without saying anything further",
+      "Apologise, confirm the correct order and offer the fastest safe replacement"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -104,10 +104,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "hard",
     "question": "A caller asks for the room number of a named guest. The hotel cannot verify the caller’s identity or consent. What should staff do?",
     "options": [
-      "Give the room number because the caller knows the guest’s name",
-      "Confirm whether the guest is alone",
-      "Do not disclose the room number; offer a privacy-preserving way to contact the guest if policy allows",
-      "Read out the guest’s booking details"
+      "Give the room number, since the caller already knows the guest by name",
+      "Take a message and confirm to the caller whether the guest is currently in the hotel",
+      "Do not disclose the room number; offer a policy-permitted way to reach the guest",
+      "Offer to read back the booking dates so that the caller can confirm the guest"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -129,9 +129,9 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "question": "A wheelchair user finds that a temporary display narrows the accessible route. The most appropriate response is to",
     "options": [
       "remove or reposition the obstruction promptly and confirm a clear route",
-      "ask the guest to use a staff-only staircase",
-      "explain that the display is temporary and leave it",
-      "offer a discount instead of restoring access"
+      "offer to escort the guest by an alternative route through the service corridor",
+      "report the display to facilities and leave it until they respond",
+      "apologise and offer assistance from a staff member whenever the guest passes"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -152,9 +152,9 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A wallet is found in a lounge. What should an employee do?",
     "options": [
-      "Keep it at the reception desk unlogged",
-      "Post a photo of its contents on social media",
-      "Take cash out to identify the owner",
+      "Hand it to the lounge supervisor without recording anything",
+      "Announce the find in the lounge to locate the owner quickly",
+      "Open it to find identification and contact the owner directly",
       "Follow the property log and secure handover procedure"
     ],
     "correctIndex": 3,
@@ -176,10 +176,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "easy",
     "question": "Which upselling approach is most appropriate?",
     "options": [
-      "Hide the lower-priced option",
-      "State that an upgrade is mandatory when it is not",
+      "Present only the upgraded option so that the guest considers that one first",
+      "Mention the upgrade only once the booking has already been confirmed and paid for",
       "Offer a relevant upgrade transparently and accept a refusal without pressure",
-      "Repeat the offer until the guest agrees"
+      "Describe the upgrade as almost sold out so as to encourage a quick decision"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -200,9 +200,9 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A guest’s dietary practice is unfamiliar to a server. The best response is to",
     "options": [
-      "make jokes about the practice",
-      "assume it is identical to another diet",
-      "promise compliance without checking",
+      "apologise and say the kitchen cannot accommodate unfamiliar requirements",
+      "offer the vegetarian menu, which usually satisfies most such requirements",
+      "assure the guest that the chef will handle it and take the order",
       "ask respectful clarifying questions and verify suitable options"
     ],
     "correctIndex": 3,
@@ -224,10 +224,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "Housekeeping discovers a maintenance leak before room release. What is the best action?",
     "options": [
-      "Block or flag the room through the proper channel and alert maintenance/front desk",
-      "Mark the room clean and hope the leak stops",
-      "Tell only the next shift verbally with no record",
-      "Place a towel over the leak and release the room"
+      "Block or flag the room through the proper channel and alert maintenance",
+      "Clean around the leak and release the room with a note on the file",
+      "Tell the incoming housekeeping shift at handover so that they can watch it",
+      "Report it to maintenance and release the room once the floor has dried out"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -248,10 +248,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A guest asks whether a quoted rate includes taxes. The employee should",
     "options": [
-      "avoid answering until payment",
+      "give the all-inclusive figure only, to keep the quote simple",
       "state clearly what is included and what will be added",
-      "quote only the base rate even if taxes are mandatory",
-      "say all fees are optional"
+      "quote the base rate, since tax rates can change before arrival",
+      "refer the guest to the terms and conditions on the website"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -272,10 +272,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "hard",
     "question": "A guest collapses in the lobby. What is the best immediate service response?",
     "options": [
-      "Move the guest to a private room before calling anyone",
-      "Offer food first without assessment",
-      "Ask bystanders to diagnose the condition",
-      "Activate the property’s emergency/medical protocol and summon trained help"
+      "Move the guest somewhere private and comfortable before calling for help",
+      "Check whether the guest is breathing and then decide whether to call",
+      "Ask whether any guest present has medical training before acting",
+      "Activate the property’s emergency protocol and summon trained help"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -296,10 +296,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "easy",
     "question": "When transferring a caller, good practice is to",
     "options": [
-      "transfer silently to any department",
+      "transfer promptly so that the caller is not kept waiting on the line",
       "explain the transfer and confirm the destination when possible",
-      "keep the caller on hold indefinitely",
-      "disconnect if the requested person is busy"
+      "take a message instead, since transfers are often dropped",
+      "put the caller on hold without comment until the department answers"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -320,10 +320,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A room will be ready 30 minutes later than promised. What is the best approach?",
     "options": [
-      "Inform the guest proactively, give a realistic update and offer appropriate waiting support",
-      "Wait for the guest to complain",
-      "give an unrealistically early time",
-      "avoid recording the delay"
+      "Inform the guest proactively, give a realistic time and offer support",
+      "Wait until the guest returns to the desk and then explain the reason for it",
+      "Quote the guest the original time and hope the room is released early",
+      "Offer a complimentary drink and avoid mentioning the revised time at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -344,10 +344,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "easy",
     "question": "Which behaviour best demonstrates professional grooming in a guest-facing role?",
     "options": [
-      "using strong fragrance to ensure guests notice staff",
-      "Following the property’s clean, safe and role-appropriate grooming standard",
-      "ignoring hygiene if the uniform is correct",
-      "wearing unsafe accessories near food equipment"
+      "Wearing a noticeable fragrance so that guests find the interaction pleasant",
+      "Following the property’s clean, safe and role-appropriate standard",
+      "Keeping the uniform pressed and allowing personal grooming to vary",
+      "Choosing accessories that reflect personal style within the uniform"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -368,10 +368,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "Two guests are arguing loudly in a common area. A staff member should first",
     "options": [
-      "shout louder than both guests",
-      "record the argument for entertainment",
-      "approach calmly, set respectful boundaries and seek to separate the immediate dispute if safe",
-      "take sides before hearing anything"
+      "ask both of the guests to lower their voices and continue the discussion elsewhere",
+      "call security immediately before speaking to either guest",
+      "approach calmly, set respectful boundaries and separate them if safe",
+      "listen to whichever guest speaks first and then resolve the point at issue"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -392,9 +392,9 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "easy",
     "question": "A guest corrects the spelling of their name on a booking. Staff should",
     "options": [
-      "keep the old spelling to avoid work",
-      "create a second duplicate booking",
-      "write the correction on scrap paper only",
+      "note the correction on the arrival list for the shift to follow",
+      "create a new booking with the correct spelling and cancel the old",
+      "correct it at check-out, when the folio is produced for signature",
       "update the authorized record and verify the corrected spelling"
     ],
     "correctIndex": 3,
@@ -416,10 +416,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A returning guest’s profile notes a preference for a quiet room, subject to availability. The best use of this information is to",
     "options": [
-      "announce the preference publicly",
-      "consider the preference when assigning the room without guaranteeing what is unavailable",
-      "treat the preference as a medical requirement",
-      "ignore all stored preferences"
+      "confirm a quiet room to the guest before checking what is actually free",
+      "consider it when assigning rooms without guaranteeing what is unavailable",
+      "treat the noted preference as a firm requirement recorded in the contract",
+      "assign the quietest room on the property regardless of the rate paid"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -440,10 +440,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "hard",
     "question": "A cleaner sees an unlabeled liquid in a bottle near cleaning supplies. The safest action is to",
     "options": [
-      "smell it closely to identify it",
-      "mix it with another cleaner",
-      "isolate it and follow chemical-identification/safety procedure before use",
-      "use a small amount on a guest-room surface"
+      "pour it away and rinse the bottle out before returning it to the store",
+      "label it as unknown and leave it with the other cleaning supplies",
+      "isolate it and follow the chemical-identification procedure before use",
+      "test a small amount on a surface in an unoccupied room"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -464,10 +464,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A hot buffet item has been outside the property’s safe holding standard for an unknown time. Staff should",
     "options": [
-      "reheat it briefly and return it without checking",
-      "mix it into a fresh batch",
-      "serve it quickly before it cools",
-      "remove it from service and follow food-safety disposal/verification procedure"
+      "reheat it to the required temperature and then return it to the counter",
+      "move it to a fresh tray and place it at the back of the counter",
+      "serve what remains quickly and replace the item with a fresh batch",
+      "remove it from service and follow the food-safety disposal procedure"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
@@ -488,10 +488,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A guest tells a bell attendant about a billing error that belongs to front office. The attendant should",
     "options": [
-      "say “not my department” and walk away",
-      "ask the guest to repeat the story to several departments",
-      "take ownership of connecting the guest to the right colleague and pass on the context",
-      "promise to change the bill personally without authority"
+      "direct the guest to the front office desk and continue with their duties",
+      "offer to fetch a front office colleague and leave the guest waiting there",
+      "take ownership of connecting the guest to the right colleague with the context",
+      "note the billing error and promise that it will be corrected before departure"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -512,10 +512,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "Guests repeatedly ask where breakfast is served. The best long-term improvement is to",
     "options": [
-      "tell staff to answer faster but change nothing",
-      "remove breakfast information entirely",
-      "fix the information gap in pre-arrival/check-in/signage channels and monitor whether questions fall",
-      "ask guests to search online themselves"
+      "brief the staff to answer the question more quickly and consistently",
+      "put a single sign at the restaurant entrance and review it next season",
+      "close the information gap at pre-arrival, check-in and signage",
+      "add the detail to the website and assume guests will find it there"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -536,10 +536,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "easy",
     "question": "A negative review identifies a specific, verifiable housekeeping issue. The best internal response is to",
     "options": [
-      "investigate the process failure and correct it rather than focusing only on the rating",
-      "delete all internal records of the stay",
-      "reward staff for disputing the guest",
-      "assume every online complaint is false"
+      "investigate the process failure and correct it rather than the rating alone",
+      "respond publicly to the review and offer the guest a future discount",
+      "identify the staff member responsible and address the matter with them directly",
+      "check whether the reviewer actually stayed before taking any action"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -560,10 +560,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "hard",
     "question": "The property is oversold and cannot honor one confirmed booking. What is the most ethical response?",
     "options": [
-      "pretend the reservation never existed",
-      "Follow the approved relocation/service-recovery policy transparently and minimize guest harm",
-      "blame the guest for arriving",
-      "hide the oversell until all nearby hotels close"
+      "Offer the guest a full refund and let them arrange alternative accommodation",
+      "Follow the approved relocation policy transparently and minimise guest harm",
+      "Allocate the room to whichever guest arrives at the desk first",
+      "Delay telling the guest until a nearby property confirms availability"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -584,10 +584,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A guest asks for a 6:00 a.m. wake-up call. The best operational practice is to",
     "options": [
-      "record it in the authorized system, confirm the time and follow the property’s execution/check process",
-      "rely on memory only",
-      "set it for 6:00 p.m. without confirming",
-      "write it on an unshared personal note"
+      "record it in the authorised system and confirm the time with the guest",
+      "note it in the shift diary so that the night team can action it later",
+      "set the call and confirm the time back to the guest at check-out",
+      "pass it verbally to the night auditor at the start of the shift"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -608,10 +608,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A cashier’s till is short at closing. What should happen?",
     "options": [
-      "Follow reconciliation and reporting procedure; do not conceal or privately replace the discrepancy without authorization",
-      "alter a receipt to force the balance",
-      "hide the shortage from the supervisor",
-      "borrow cash from a guest wallet"
+      "Follow the reconciliation and reporting procedure without concealing it",
+      "Make up the difference personally and report it at the end of the week",
+      "Recount the till and, if it is still short, adjust the closing figure",
+      "Note the shortage on the till roll and hand over to the next cashier"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -632,10 +632,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A guest communicates slowly because of a speech disability. The best response is to",
     "options": [
-      "finish every sentence for the guest",
-      "allow time, listen respectfully and ask the guest’s preferred communication method if needed",
-      "speak only to the guest’s companion",
-      "pretend to understand unclear details"
+      "anticipate the likely request and offer it to save the guest effort",
+      "allow time, listen respectfully and ask their preferred way to communicate",
+      "confirm the details with the guest’s companion so as to avoid misunderstanding",
+      "offer a written form so the guest does not need to speak at all"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -656,10 +656,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "easy",
     "question": "Which action best supports waste reduction without reducing guest choice?",
     "options": [
-      "remove all drinking water",
-      "Offer clearly labeled refill/reuse options and make participation easy",
-      "hide waste bins",
-      "reuse single-use hygiene items between guests"
+      "Replace bottled water with a single dispenser located at reception",
+      "Offer clearly labelled refill options and make participation easy",
+      "Remove bins from guest rooms so waste is centralised",
+      "Switch to compostable single-use items throughout the property"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -681,9 +681,9 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "question": "A hotel wants to reduce check-in waiting time. Which measure is most directly useful?",
     "options": [
       "Time from joining the queue to completion of check-in",
-      "number of lobby plants",
-      "average room size",
-      "staff shoe size"
+      "Number of guests checked in during each shift of the day",
+      "Proportion of guests who rate the arrival experience highly",
+      "Average number of staff rostered on the front desk at arrival"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -704,10 +704,10 @@ export const NCHM_JEE_2026_SERVICE_SECTOR_APTITUDE_1: Question[] = [
     "difficulty": "medium",
     "question": "A guest offers an employee a valuable personal gift in return for bypassing a policy. The employee should",
     "options": [
-      "accept and keep the arrangement secret",
-      "change the policy for that guest only",
-      "decline the improper exchange and follow the property’s ethics/escalation policy",
-      "ask for a more expensive gift"
+      "accept the gift politely and then declare it to the supervisor afterwards",
+      "decline the gift but make the exception on this one occasion",
+      "decline the improper exchange and follow the property’s escalation policy",
+      "refer the guest to a manager who has authority to vary the policy"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

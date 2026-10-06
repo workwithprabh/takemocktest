@@ -57,7 +57,7 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "A potted plant kept near a window bends toward the light over several days. The response is best described as",
     "options": [
       "seed dispersal",
-      "germination without growth",
+      "germination taking place without any growth",
       "growth toward a light stimulus",
       "water condensation"
     ],
@@ -80,9 +80,9 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "easy",
     "question": "Why do many birds have hollow or air-filled spaces in parts of their skeleton?",
     "options": [
-      "They make the bird unable to breathe",
+      "They make the bird entirely unable to breathe properly at all",
       "They store liquid food",
-      "They prevent feathers from growing",
+      "They prevent the feathers from growing on the body of the bird",
       "They can reduce body mass while retaining structural support"
     ],
     "correctIndex": 3,
@@ -104,10 +104,10 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "medium",
     "question": "A child’s grandparents speak a different home language and tell local stories. In EVS, this is best used as",
     "options": [
-      "a reason to exclude family knowledge",
-      "proof that only written textbooks contain knowledge",
+      "a reason to exclude all family knowledge from the classroom entirely",
+      "proof that only written textbooks can contain any real knowledge at all",
       "a resource for understanding cultural and linguistic diversity",
-      "an activity unrelated to the curriculum"
+      "an activity quite unrelated to the school curriculum being taught"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -129,9 +129,9 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "Why are houses in very rainy regions often built with sloping roofs?",
     "options": [
       "Sloping roofs collect more indoor dust",
-      "They stop all wind from moving",
+      "They stop all of the wind from moving",
       "Sloping roofs help rainwater run off quickly",
-      "They make walls unnecessary"
+      "They make the walls quite unnecessary"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -176,7 +176,7 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "medium",
     "question": "Which action best illustrates reuse rather than recycling?",
     "options": [
-      "Melting glass to manufacture a new bottle",
+      "Melting glass down to manufacture a new bottle",
       "Throwing the jar into mixed waste",
       "Burning the jar label with leaves",
       "Using a clean glass jar again to store spices"
@@ -200,10 +200,10 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "easy",
     "question": "Which observation is the best evidence that moving air can exert force?",
     "options": [
-      "A stone remains on the ground",
+      "A stone simply remains lying on the ground",
       "A pinwheel begins to rotate when blown",
       "Ice melts in sunlight",
-      "Sugar dissolves in water"
+      "Sugar dissolves slowly in a glass of water"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -296,10 +296,10 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "medium",
     "question": "Why does washing hands with soap before eating help prevent many infections?",
     "options": [
-      "It permanently sterilises the body",
+      "It permanently sterilises the whole of the body surface for good afterwards",
       "It removes or inactivates many microbes that may be transferred to the mouth",
-      "It increases body temperature enough to kill all pathogens",
-      "It replaces the need for safe food and water"
+      "It increases the body temperature enough to kill off all of the pathogens",
+      "It replaces the need for safe food and clean drinking water entirely"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -393,7 +393,7 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "A pond loses most of its aquatic plants after repeated pollution. Which effect is plausible?",
     "options": [
       "Every pond animal will automatically increase",
-      "Water will no longer contain any dissolved substance",
+      "The water will no longer contain any dissolved substance whatsoever",
       "Food and shelter available to several pond organisms may decline",
       "Pollution will create a new food web with no producers"
     ],
@@ -417,8 +417,8 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "During an earthquake drill at school, the purpose of practising safe actions is primarily to",
     "options": [
       "build a familiar response that can reduce confusion during an emergency",
-      "predict the exact time of the next earthquake",
-      "prevent earthquakes from occurring",
+      "predict the exact time at which the next earthquake will come to strike",
+      "prevent any earthquakes at all from occurring in the region in future",
       "replace building safety measures"
     ],
     "correctIndex": 0,
@@ -440,10 +440,10 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "medium",
     "question": "A teacher takes children to observe three kinds of leaves in the schoolyard before discussing leaf diversity. This approach is valuable because it",
     "options": [
-      "ensures all leaves are identical",
+      "ensures that all of the leaves collected turn out to be identical to one another",
       "links direct observation with later classification and discussion",
-      "makes recording unnecessary",
-      "replaces every form of conceptual explanation"
+      "makes any recording of the observations quite unnecessary afterwards",
+      "replaces every possible form of conceptual explanation given later"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -465,9 +465,9 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "Children give different explanations for why a metal spoon feels colder than a wooden spoon in the same room. What should the teacher do first?",
     "options": [
       "Invite them to state predictions and design a simple comparison to test ideas",
-      "Announce that questions are not allowed",
-      "Ask them to copy the correct sentence ten times",
-      "Grade the explanations without discussion"
+      "Announce that such questions are simply not allowed here",
+      "Ask them to copy out the correct sentence ten times over in a notebook",
+      "Grade the explanations without any discussion at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -489,7 +489,7 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "Which class action most directly reduces single-use waste during a picnic?",
     "options": [
       "Ask pupils to bring reusable water bottles and lunch boxes",
-      "Use a new disposable cup for every drink",
+      "Use a brand new disposable cup for every single drink that is taken",
       "Wrap each item in extra plastic",
       "Discard reusable containers after one use"
     ],
@@ -512,8 +512,8 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "medium",
     "question": "A city bus carries 45 people using one vehicle. Compared with 45 separate cars carrying one person each, a likely advantage is",
     "options": [
-      "zero energy use",
-      "no need for roads",
+      "an energy use of exactly zero across the whole of the journey made",
+      "no need for any roads to be built or maintained at all thereafter",
       "less road space and fuel use per passenger in many conditions",
       "complete elimination of air pollution"
     ],
@@ -536,9 +536,9 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "easy",
     "question": "In much of India, day length and temperature change over the year mainly because",
     "options": [
-      "the Sun circles Earth once each day",
-      "Earth stops rotating in winter",
-      "clouds permanently change Earth’s orbit",
+      "the Sun travels in a great circle around the Earth once during each and every day of the year",
+      "the Earth stops rotating altogether during the winter months of each and every year",
+      "clouds permanently change the shape of the Earth’s orbit around the Sun each year",
       "Earth’s tilted axis and revolution change the angle and duration of sunlight received"
     ],
     "correctIndex": 3,
@@ -584,10 +584,10 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "difficulty": "medium",
     "question": "A neighbourhood well is being overused. Which classroom project best integrates EVS inquiry and civic learning?",
     "options": [
-      "Memorise the spelling of “well” only",
-      "Measure household water-use patterns, discuss causes, and propose feasible conservation steps",
-      "Assume the cause without collecting any information",
-      "Ban discussion of community decisions"
+      "Memorise only the spelling of the word “well” itself and nothing more",
+      "Measure household water use, discuss causes, and propose feasible conservation steps",
+      "Assume the cause without collecting any information of any kind",
+      "Ban all discussion of any community decisions in the class entirely"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -658,7 +658,7 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "options": [
       "The walk evidence must be ignored",
       "Use multiple forms of evidence before concluding what the pupil understands",
-      "Written matching is the only valid form of EVS assessment",
+      "Written matching is the only valid form of EVS assessment that there can ever be",
       "The pupil certainly knows nothing about trees"
     ],
     "correctIndex": 1,
@@ -681,8 +681,8 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "Why should a teacher ask children to draw a route map from classroom to playground before introducing formal map symbols?",
     "options": [
       "It reveals how children represent space and creates a need for shared symbols",
-      "It proves every child already uses conventional scale",
-      "It makes direction words unnecessary",
+      "It proves that every single child already uses a conventional scale on their maps",
+      "It makes the use of any direction words quite unnecessary later on in the lesson",
       "It prevents discussion of landmarks"
     ],
     "correctIndex": 0,
@@ -705,9 +705,9 @@ export const CTET_SEP_2026_PAPER1_ENVIRONMENTAL_STUDIES_1: Question[] = [
     "question": "Two neighbourhoods face the same heat wave, but one has much less shade and safe drinking water. An EVS discussion can use this to show that",
     "options": [
       "environmental risks can affect communities unequally because access to resources differs",
-      "temperature is unrelated to human settlements",
-      "all communities always experience identical impacts",
-      "shade has no relation to heat exposure"
+      "the temperature of a place is entirely unrelated to any of the human settlement patterns there",
+      "all communities will always experience entirely identical impacts from such events",
+      "the presence of shade has no relation at all to the heat exposure experienced by people there"
     ],
     "correctIndex": 0,
     "answerType": "mcq",

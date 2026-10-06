@@ -632,9 +632,9 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "question": "The phrase \"on the contrary\" is most appropriately used to",
     "options": [
       "introduce a direct contradiction",
-      "summarize a list",
-      "state a cause",
-      "add a supporting example"
+      "summarize a list of the points made earlier",
+      "state a cause of the effect",
+      "add a supporting example to it"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -968,9 +968,9 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "question": "If a language L is decidable, then",
     "options": [
       "both L and its complement are recursively enumerable",
-      "L must be finite",
-      "its complement is undecidable",
-      "L cannot be regular"
+      "L must be a finite language",
+      "its complement is undecidable even though L itself is not at all",
+      "L cannot be a regular language"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1135,10 +1135,10 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Using union by rank together with path compression, a sequence of m disjoint-set operations on n elements takes",
     "options": [
-      "Theta(m log^2 n)",
+      "Theta(m log^2 n) always",
       "almost linear time, O(m alpha(n))",
-      "Theta(mn)",
-      "Theta(n^2) regardless of m"
+      "Theta(mn) in every case",
+      "Theta(n^2) regardless of the value of m at all"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1327,8 +1327,8 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Matrix-chain multiplication is typically solved by dynamic programming because",
     "options": [
-      "every parenthesization has equal cost",
-      "the matrices must be square",
+      "every possible parenthesization has exactly the same total cost here",
+      "the matrices must all be square",
       "matrix multiplication is commutative",
       "different parenthesizations share subchain subproblems"
     ],
@@ -1353,7 +1353,7 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "options": [
       "every problem in NP has a polynomial-time deterministic algorithm",
       "all undecidable problems become decidable",
-      "exponential-time algorithms become impossible",
+      "exponential-time algorithms would become impossible to write down at all any more",
       "NP-complete problems disappear from NP"
     ],
     "correctIndex": 0,
@@ -1424,9 +1424,9 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "question": "A JK flip-flop with J=K=1 will",
     "options": [
       "toggle on the active clock edge",
-      "reset only",
-      "hold its state",
-      "set only"
+      "reset on the active clock edge and nothing more",
+      "hold its previous state",
+      "set on the clock edge only"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1471,10 +1471,10 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "An 8-to-3 encoder produces",
     "options": [
-      "eight output lines from three inputs",
-      "a binary sum of eight inputs",
+      "eight separate output lines driven from three input lines only",
+      "a binary sum of the eight inputs",
       "a 3-bit code identifying one of 8 active inputs",
-      "a clock signal"
+      "a clock signal for the circuit"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1567,9 +1567,9 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A process moves from running to ready state when",
     "options": [
-      "it requests blocking I/O",
-      "it is created",
-      "it terminates",
+      "it requests a blocking I/O operation itself",
+      "it is first created",
+      "it terminates normally",
       "it is preempted by the scheduler"
     ],
     "correctIndex": 3,
@@ -1639,10 +1639,10 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Thrashing is characterized by",
     "options": [
-      "zero page faults",
-      "only CPU-bound processes",
+      "zero page faults at all",
+      "only CPU-bound processes being present in the whole system at once",
       "very high paging activity with little useful CPU work",
-      "all pages pinned in memory"
+      "all of the pages pinned in memory"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1687,9 +1687,9 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Copy-on-write after fork allows parent and child initially to",
     "options": [
-      "avoid virtual memory",
-      "share CPU registers permanently",
-      "share one process identifier",
+      "avoid virtual memory entirely",
+      "share exactly the same CPU registers permanently too",
+      "share a single process identifier",
       "share physical pages until a write occurs"
     ],
     "correctIndex": 3,
@@ -1711,10 +1711,10 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A context switch between two processes must save and restore at least",
     "options": [
-      "all page contents",
+      "the contents of every one of the pages currently held in memory at the time",
       "CPU execution state such as registers and program counter",
-      "source code files",
-      "the entire disk"
+      "the source code files of the program",
+      "the entire contents of the disk"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1783,9 +1783,9 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "DMA is useful because it allows",
     "options": [
-      "the ALU to perform I/O addressing only",
-      "the cache to eliminate main memory",
-      "every instruction to execute twice",
+      "the ALU to perform all of the I/O addressing entirely on its own without any help at all here",
+      "the cache to eliminate main memory entirely",
+      "every instruction to be executed twice",
       "a device to transfer blocks to or from memory with limited CPU intervention"
     ],
     "correctIndex": 3,
@@ -1856,9 +1856,9 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "question": "A write-back cache writes modified data to lower memory",
     "options": [
       "when the dirty cache block is evicted",
-      "only at program termination",
-      "after every store",
-      "before every load"
+      "only at the point when the program finally terminates",
+      "immediately after every store instruction",
+      "immediately before every load instruction"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1927,10 +1927,10 @@ export const BITS_HD_2026_ME_CS_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "DNS is primarily used to",
     "options": [
-      "schedule CPU processes",
-      "assign MAC addresses",
+      "schedule the processes running on the CPU of the host machine itself",
+      "assign the MAC addresses of devices",
       "map domain names to information such as IP addresses",
-      "encrypt every packet"
+      "encrypt every packet on the wire"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

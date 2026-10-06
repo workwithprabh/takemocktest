@@ -1092,13 +1092,58 @@ export interface Question {
  * Multi-select, numerical and five-option records have no comparable "which
  * letter" to tally, and folding them in would quietly distort the split that is
  * the whole point of the count.
+ *
+ * `lengthTell` measures how much a candidate who reads nothing but option
+ * lengths would score on this corpus. The definitions below are the ones
+ * scripts/audit-answer-length.mjs gates every bank against, kept identical on
+ * purpose: if the two ever disagree, one of them is wrong and the figures
+ * quoted in the blog are the ones a reader can check.
  */
+
+/**
+ * A question counts as prose only once its longest option reaches this many
+ * characters. Below it the options are numbers, letters or single words, where
+ * a length difference is an artefact of notation rather than something a reader
+ * could act on.
+ */
+const PROSE_MIN = 25;
+
+/**
+ * How close to the longest option still looks like the longest option. Six
+ * characters, or 15% of the longest where that is more, because the eye reads
+ * relative bulk rather than counting characters: a 4-character gap on a
+ * 20-word option is invisible, the same gap on a 6-word option is not.
+ */
+function lengthTolerance(longest: number): number {
+  return Math.max(6, 0.15 * longest);
+}
+
+/**
+ * A multiplicative congruential generator, so the control below is the same on
+ * every build and the published figure does not move when nothing has changed.
+ */
+function seededRandom(seed: number): () => number {
+  let state = seed >>> 0;
+  return () => {
+    state = (state * 1664525 + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
+
+/** How many shuffled-key passes the control average is taken over. */
+const CONTROL_RUNS = 200;
+
 export function getCorpusQuestionStats() {
   const seen = new Set<string>();
   const difficulty = { easy: 0, medium: 0, hard: 0, unlabelled: 0 };
   const position = [0, 0, 0, 0];
   let questions = 0;
   let fourOption = 0;
+
+  // One row per prose question: the option lengths, the length a distractor has
+  // to reach to look like a leader, how many options reach it, and which one is
+  // actually correct.
+  const rows: { lengths: number[]; cut: number; leaders: number; key: number }[] = [];
 
   for (const bank of Object.values(CHECKED_TEST_BANKS)) {
     for (const question of bank) {
@@ -1115,10 +1160,67 @@ export function getCorpusQuestionStats() {
         fourOption += 1;
         position[question.correctIndex] += 1;
       }
+
+      if (!single || question.options.length < 2) continue;
+      if (question.correctIndex < 0 || question.correctIndex >= question.options.length) continue;
+      const lengths = question.options.map((option) => option.length);
+      const longest = Math.max(...lengths);
+      if (longest < PROSE_MIN) continue;
+      const cut = longest - lengthTolerance(longest);
+      rows.push({
+        lengths,
+        cut,
+        leaders: lengths.filter((length) => length >= cut).length,
+        key: question.correctIndex,
+      });
     }
   }
 
-  return { questions, difficulty, fourOption, position };
+  // What picking the longest-looking option pays. A question with one visible
+  // leader pays 1 when that leader is the answer; a question with three
+  // indistinguishable leaders pays a third, since a reader going on length
+  // alone has no way to choose between them.
+  const payout = (keyOf: (row: (typeof rows)[number]) => number) =>
+    rows.reduce((total, row) => total + (row.lengths[keyOf(row)] >= row.cut ? 1 / row.leaders : 0), 0) / rows.length;
+
+  const random = seededRandom(20260101);
+  let control = 0;
+  for (let run = 0; run < CONTROL_RUNS; run += 1) {
+    control += payout((row) => Math.floor(random() * row.lengths.length));
+  }
+  control /= CONTROL_RUNS;
+
+  // Two plainer readings of the same rows, for prose that should not have to
+  // explain the payout rule before it can quote a number.
+  let soloLeader = 0;
+  let soloLeaderCorrect = 0;
+  let inLongerHalf = 0;
+  for (const row of rows) {
+    if (row.leaders === 1) {
+      soloLeader += 1;
+      if (row.lengths[row.key] >= row.cut) soloLeaderCorrect += 1;
+    }
+    const sorted = [...row.lengths].sort((a, b) => a - b);
+    if (row.lengths[row.key] >= sorted[Math.floor(sorted.length / 2)]) inLongerHalf += 1;
+  }
+
+  return {
+    questions,
+    difficulty,
+    fourOption,
+    position,
+    lengthTell: {
+      prose: rows.length,
+      /** What a length-only reader scores, 0 to 1. */
+      score: payout((row) => row.key),
+      /** What the same reader scores once the answers are shuffled at random. */
+      control,
+      soloLeader,
+      soloLeaderCorrect,
+      inLongerHalf,
+      proseMin: PROSE_MIN,
+    },
+  };
 }
 
 const CHECKED_TEST_BANKS: Record<string, Question[]> = {

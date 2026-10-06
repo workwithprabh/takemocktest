@@ -57,9 +57,9 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_1: Question[] = [
     "question": "Question: Is triangle ABC right-angled at A? Statement 1: AB = 3 cm and AC = 4 cm. Statement 2: BC = 5 cm. Which option is correct?",
     "options": [
       "Both statements together are sufficient, but neither alone is sufficient",
-      "Statement 1 alone is sufficient",
-      "Statement 2 alone is sufficient",
-      "Either statement alone is sufficient"
+      "Statement 1 alone is sufficient, but statement 2 alone is not sufficient",
+      "Statement 2 alone is sufficient, but statement 1 alone is not sufficient",
+      "Each statement alone is sufficient to answer the question by itself"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -80,9 +80,9 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_1: Question[] = [
     "difficulty": "hard",
     "question": "Determine whether the two statements are sufficient to identify the positive integer n. (1) n^2 < 30. (2) n is a multiple of 4.",
     "options": [
-      "Statement 1 alone is sufficient",
-      "Statement 2 alone is sufficient",
-      "Either statement alone is sufficient",
+      "Statement 1 alone is sufficient, but statement 2 alone is not sufficient",
+      "Statement 2 alone is sufficient, but statement 1 alone is not sufficient",
+      "Each statement alone is sufficient to answer the question by itself",
       "Both statements together are sufficient, but neither alone is sufficient"
     ],
     "correctIndex": 3,
@@ -128,10 +128,10 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_1: Question[] = [
     "difficulty": "medium",
     "question": "Statements: All metals are conductors. Some conductors are flexible. Conclusions: I. Some metals are flexible. II. Some flexible things are conductors. Which follows?",
     "options": [
-      "Only I follows",
-      "Both I and II follow",
-      "Neither follows",
-      "Only II follows"
+      "Only conclusion I follows",
+      "Both conclusions follow",
+      "Neither conclusion follows",
+      "Only conclusion II follows"
     ],
     "correctIndex": 3,
     "answerType": "mcq",

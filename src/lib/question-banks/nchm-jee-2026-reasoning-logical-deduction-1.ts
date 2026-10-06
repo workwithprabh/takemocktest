@@ -272,10 +272,10 @@ export const NCHM_JEE_2026_REASONING_LOGICAL_DEDUCTION_1: Question[] = [
     "difficulty": "hard",
     "question": "What is the value of x? Statement I: x+y=14. Statement II: x−y=4.",
     "options": [
-      "Statement I alone is sufficient",
-      "Statement II alone is sufficient",
-      "Both statements together are sufficient, neither alone is sufficient",
-      "Even both together are insufficient"
+      "Statement I alone is sufficient, but statement II alone is not sufficient",
+      "Statement II alone is sufficient, but statement I alone is not sufficient",
+      "Both statements together are sufficient, but neither alone is sufficient",
+      "Statements I and II together are not sufficient to answer the question"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

@@ -10,7 +10,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "the technical difficulty of digitising archives",
         "how the design of a search tool shapes what scholarship gets produced",
-        "the growth in the total number of people using the archive",
+        "the growth in the total number of people making use of the archive in each year since",
         "the decline of traditional historical method",
         "the cost of maintaining digital collections"
       ],
@@ -34,7 +34,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A city archive digitised its holdings and made them freely searchable. Historians expected the volume of published research drawing on the archive to rise, and it did. What surprised them was the narrowing: the same few collections, those ranking highest in the default search, were cited far more often than before, while material that had previously been found by browsing the shelves went almost untouched. Access had increased and attention had concentrated. The archivists concluded that a finding aid is never neutral, since whatever it makes easy becomes what gets studied. Which finding would most weaken the archivists' conclusion?",
       "options": [
         "Researchers reported that the digital interface was easy to use",
-        "Funding for historical research rose slightly over the same period",
+        "Funding for historical research rose slightly over the same period right across the whole of the sector concerned",
         "Citation concentration rose by the same amount at comparable archives that were not digitised",
         "The digitised collections were larger than the undigitised ones",
         "Some historians continued to visit the reading room"
@@ -84,7 +84,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "A city archive digitised its holdings and made them freely searchable. Historians expected the volume of published research drawing on the archive to rise, and it did. What surprised them was the narrowing: the same few collections, those ranking highest in the default search, were cited far more often than before, while material that had previously been found by browsing the shelves went almost untouched. Access had increased and attention had concentrated. The archivists concluded that a finding aid is never neutral, since whatever it makes easy becomes what gets studied. Which assumption is necessary to the archivists' conclusion?",
       "options": [
         "Browsing is a superior research method to searching",
-        "Digitisation increased the number of visitors to the archive",
+        "Digitisation increased the number of visitors coming to the archive in person each year since",
         "Digitisation is more expensive than shelving",
         "Historians choose what to study partly on the basis of what is easiest to find",
         "All archives rank their collections identically"
@@ -158,7 +158,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "There is a habit of thought that treats a measure and the thing measured as interchangeable. A hospital judged by waiting times will shorten waiting times, and this is counted a success until someone notices that the shortening was achieved by seeing the easiest patients first. The measure did not lie; it simply reported what it was built to report. The error was in believing that because the quantity was precise it was also complete. Which situation is most closely analogous to the one described?",
       "options": [
-        "A school raises its average examination score by coaching every student equally",
+        "A school raises its average examination score by coaching every single one of its students equally hard for the paper",
         "A call centre improves its average handling time by transferring difficult calls to another queue",
         "A hospital reduces readmissions by following up with patients after discharge",
         "A factory reduces defects by improving its production process",
@@ -258,7 +258,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "Summarise: 'Cities are often described as growing outward, but much of their growth is downward and inward: new pipes threaded beside old ones, cables laid in ducts built for other cables, basements dug beneath buildings that were never designed for them. This accumulation is invisible until something fails, at which point the city discovers what it is made of.'",
       "options": [
-        "Cities expand mainly at their edges into surrounding countryside.",
+        "Cities expand mainly at their outer edges, spreading into the surrounding countryside around them.",
         "Basements are the most important part of a modern city.",
         "Old infrastructure should be replaced before it fails.",
         "Cities grow in ways their residents deliberately conceal.",
@@ -283,7 +283,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A manufacturer notes that since introducing a longer warranty, returns have fallen. It concludes the warranty improved product quality. The reasoning is weakest because it:",
       "options": [
-        "assumes that customers read the warranty before purchase",
+        "assumes that every customer reads the whole of the warranty document carefully before deciding to make any purchase at all from the firm concerned",
         "overlooks that a longer warranty may lead customers to keep a faulty item and claim repair later instead of returning it",
         "assumes returns are the only measure of quality",
         "relies on a sample that is too small",
@@ -312,7 +312,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "assuming that a rule with no exceptions must be a law of nature",
         "assuming that because all successful candidates studied a book, the book caused their success, when only diligent candidates chose to study it",
         "treating an average as if it described every individual",
-        "assuming that because two events always occur together, one must have caused the other"
+        "assuming that because two events always occur together, one of them must have caused the other, when in fact a third factor may well have produced both of them at the same time"
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -336,7 +336,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "Output per week rose while headcount, equipment and demand were unchanged",
         "Absenteeism fell in the months following the change",
         "The change was widely reported in the press",
-        "The firm's competitors also changed their schedules",
+        "The competitors of the firm also changed their own working schedules at around the same time",
         "Employees reported enjoying the change"
       ],
       "correctIndex": 0,
@@ -362,7 +362,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "Only policies with unsound aims raise costs",
         "Progressive policies never raise costs for anyone",
         "A policy that raises costs for the poorest is not progressive even if its aims are sound",
-        "Any policy that leaves the poorest unaffected is progressive"
+        "Any policy that leaves the poorest households entirely unaffected must therefore be progressive in its aims"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -386,7 +386,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "students prefer libraries to other study spaces",
         "extending hours costs nothing",
         "the library has sufficient staff",
-        "no other library in the area is open at those times",
+        "no other library anywhere in the area happens to be open at any of those particular times of the day or night at all",
         "the times at which the library is currently closed are times when students could otherwise study"
       ],
       "correctIndex": 4,
@@ -412,7 +412,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "carefully researched",
         "unusually lengthy",
         "harshly critical",
-        "written by a committee rather than by one author"
+        "written by a whole committee rather than by any one single author alone"
       ],
       "correctIndex": 0,
       "answerType": "mcq",
@@ -660,7 +660,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "Ask the senior designer whether they mind their name being used this way",
         "Decline to misrepresent who will do the work, and offer instead a staffing plan showing the senior designer's actual supervisory role",
-        "Add the name and privately instruct the senior designer to sign off on the final files",
+        "Add the name and privately instruct the senior designer to sign off on all of the final files, so that the record of the work appears consistent throughout afterwards",
         "Add the name as asked, since the client has authorised it and jobs depend on it",
         "Withdraw from the pitch without discussion"
       ],
@@ -684,8 +684,8 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "Meera runs a 40-person design studio. A long-standing client asks her to add a senior designer's name to a proposal, purely to strengthen the pitch, on the understanding that a junior team will do the actual work. The client says every agency does this and that the fee depends on it. The studio needs the contract to avoid layoffs. Which consideration is most relevant to Meera's decision?",
       "options": [
         "Whether competitors engage in the same practice",
-        "Whether the fee is above the studio's usual rate",
-        "Whether the studio has agreed to a similar arrangement before",
+        "Whether the fee is above the usual rate of the studio",
+        "Whether the studio has ever agreed to a similar arrangement with any other client at some point before now at all here",
         "Whether the junior team is technically capable",
         "Whether the people relying on the proposal would make a different decision if they knew the truth"
       ],
@@ -710,7 +710,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "accept the layoffs as inevitable",
         "report the client to an industry body immediately",
-        "Raise the studio fees on other work to recover the lost revenue",
+        "Raise the studio fees charged on all of the other work in order to recover the whole of the revenue that has now been lost on this one client alone",
         "document the reason for the loss and use the studio's staffing transparency as a positioning argument with other clients",
         "offer the same arrangement to a different client"
       ],
@@ -733,10 +733,10 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A hospital's procurement head, Anil, discovers that a supplier the hospital has used for eight years has been quietly substituting a cheaper component in surgical kits. No patient harm has been recorded, and the substitution is within the technical specification, but it was never disclosed and the price was never reduced. The supplier is the only vendor able to deliver at the hospital's volumes on short notice. What is the central issue Anil must address?",
       "options": [
-        "The technical adequacy of the substituted component",
+        "The technical adequacy of the component that was substituted in place of the one originally agreed upon in the contract itself here",
         "The eight-year length of the supplier relationship",
         "A supplier's undisclosed change to agreed terms and the resulting overpayment, alongside continuity of supply",
-        "The hospital's failure to inspect deliveries",
+        "The failure of the hospital to inspect deliveries",
         "Whether other hospitals use the same supplier"
       ],
       "correctIndex": 2,
@@ -785,9 +785,9 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "The eight-year length of the relationship",
         "The age of the contract document",
-        "The size of the overpayment accumulated so far",
+        "The size of the overpayment that has accumulated so far under this contract alone",
         "The absence of any alternative supplier at the hospital's volumes",
-        "The supplier's profitability"
+        "The profitability of the supplier"
       ],
       "correctIndex": 3,
       "answerType": "mcq",
@@ -833,7 +833,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Priya manages a factory where a night-shift supervisor has been falsifying attendance to pay a worker who cares for a sick parent and has exhausted her leave. The amounts are small and the worker is unaware. The supervisor has an otherwise exemplary record and says he was preventing a family from losing its income. The strongest argument against allowing the arrangement to continue is that:",
       "options": [
-        "the supervisor's record will no longer be exemplary",
+        "the record of the supervisor will no longer be an exemplary one in the personnel files that the factory keeps any more at all",
         "the amounts will eventually become large",
         "the worker might tell colleagues",
         "the supervisor may ask for a promotion",
@@ -908,7 +908,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A software firm's engineering lead, Kabir, finds a defect two days before a major release. It affects roughly one per cent of users, corrupting saved work with no warning. Fixing it properly needs three weeks. A partial fix in two days would prevent corruption but would silently disable a headline feature for those users. Marketing has already announced the date. Which additional information would most change Kabir's decision?",
       "options": [
-        "Whether the marketing campaign can be rescheduled cheaply",
+        "Whether the marketing campaign can be rescheduled cheaply and at fairly short notice now",
         "How many engineers are available next quarter",
         "Whether the same defect exists in the previous release",
         "Whether affected users can be identified and warned before they lose work",
@@ -936,7 +936,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
         "say nothing until the full fix ships",
         "refer vaguely to performance improvements",
         "notify the affected users privately and say nothing publicly",
-        "publish the full defect analysis to all users",
+        "publish the full technical defect analysis to every single one of the users of the product at once, without exception at all",
         "describe the affected scenario and the interim behaviour in plain terms, with a timeline for the fix"
       ],
       "correctIndex": 4,
@@ -960,7 +960,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "The roof repairs, because they restore weeks of lost teaching for a far larger number of children",
         "An equal split between the two",
-        "The laboratory, because the recognised school would use it more intensively",
+        "The laboratory, because the recognised school would make far more intensive use of it over the year than the other would",
         "The laboratory, because visibility may attract more funding later",
         "Deferring the decision until more funds arrive"
       ],
@@ -983,7 +983,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A district education officer, Latha, must allocate a limited grant either to repair roofs at twelve rural schools or to fund a science laboratory at one high-performing school that has won state recognition. The recognition brings visibility and possible further funding. The roofs leak during the monsoon, closing those schools for several weeks each year. Which criterion should carry most weight in this decision?",
       "options": [
-        "The prestige attaching to the recognised school",
+        "The prestige that attaches to the recognised school within the district itself",
         "The cost per school of each option",
         "The number of children whose access to schooling is affected",
         "The preference of the most vocal parents",
@@ -1059,7 +1059,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "question": "Rohit chairs a housing society. A resident has installed a ramp at his own cost for his wheelchair-using daughter, without prior approval. It narrows a shared corridor slightly but does not block the fire exit. Several residents have complained about the process; two have complained about the ramp itself. The complaints about process are best answered by:",
       "options": [
         "dismissing them as unimportant",
-        "referring every future alteration to a general meeting",
+        "referring every single future alteration of any kind at all to a general meeting of the whole society beforehand",
         "penalising the resident to satisfy the complainants",
         "acknowledging the lapse and publishing a clear route for accessibility requests in future",
         "compensating the residents who complained"
@@ -1085,7 +1085,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "the store manager may be promoted undeservedly",
         "misclassification hides a real wastage problem, so the chain cannot diagnose or fix it anywhere",
-        "the logistics team's damage figures will be overstated",
+        "the damage figures that the logistics team reports will be overstated as a direct result of it all in the end too",
         "transit damage claims may annoy the logistics team",
         "the target was set too low"
       ],
@@ -1110,7 +1110,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "verify the pattern against transit records, then address it with the manager and correct the reported figures",
         "announce the problem at the regional meeting",
-        "ask the manager for an explanation before looking at any records",
+        "ask the manager for a full explanation of all of the figures before looking at any of the transit records of the chain at all first",
         "promote the manager and address reporting later",
         "change the shrinkage target"
       ],
@@ -1135,7 +1135,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "options": [
         "Measuring wastage and transit damage separately and reviewing both, so neither can absorb the other",
         "Rotating store managers annually",
-        "Requiring photographic evidence for every transit damage claim",
+        "Requiring photographic evidence for every single transit damage claim that any store in the whole region submits at all",
         "Removing all targets",
         "Raising the shrinkage target further"
       ],
@@ -1158,7 +1158,7 @@ export const XAT_2026_PART_1_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "A retail chain's regional manager, Sanjay, learns that a store manager has been meeting the chain's shrinkage target by recording unsold perishables as damaged in transit rather than as wastage. The store's reported figures look excellent, and the manager is a candidate for promotion. If the store manager argues that the target was unachievable honestly, the most appropriate response is to:",
       "options": [
-        "lower the shrinkage target for all stores to whatever is achievable",
+        "lower the shrinkage target for every single store in the whole chain to whatever each of them happens to find achievable in practice at all",
         "treat the target's realism as a separate question to be examined on evidence, while still correcting the misreporting",
         "accept the argument and close the matter",
         "raise the target to remove the excuse",
