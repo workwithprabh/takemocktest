@@ -1130,6 +1130,9 @@ function seededRandom(seed: number): () => number {
   };
 }
 
+/** The one non-Latin script the papers here carry, used to spot a bilingual question. */
+const DEVANAGARI = /[\u0900-\u097F]/;
+
 /** How many shuffled-key passes the control average is taken over. */
 const CONTROL_RUNS = 200;
 
@@ -1156,6 +1159,13 @@ export function getCorpusQuestionStats() {
     /** Correct options per multi-select question, keyed by how many there are. */
     multiCorrect: {} as Record<number, number>,
   };
+  // Questions carrying a second language alongside the English, which on the
+  // papers here is always Devanagari. Detected from the text rather than
+  // declared on the question, because nothing declares it and a flag nobody
+  // sets would read as zero.
+  const bilingual = { questions: 0, options: 0 };
+  const bilingualExams = new Set<string>();
+
   const numericalExams = new Set<string>();
   const multiExams = new Set<string>();
   const fiveOptionExams = new Set<string>();
@@ -1168,6 +1178,7 @@ export function getCorpusQuestionStats() {
   for (const [test, bank] of Object.entries(CHECKED_TEST_BANKS)) {
     const exam = test.split('/')[0];
     for (const question of bank) {
+      if (DEVANAGARI.test(question.question)) bilingualExams.add(exam);
       if (question.answerType === 'numerical') numericalExams.add(exam);
       else if (question.answerType === 'multi-select') multiExams.add(exam);
       else if (question.options.length === 5) fiveOptionExams.add(exam);
@@ -1184,6 +1195,11 @@ export function getCorpusQuestionStats() {
       if (single && question.options.length === 4 && question.correctIndex >= 0 && question.correctIndex < 4) {
         fourOption += 1;
         position[question.correctIndex] += 1;
+      }
+
+      if (DEVANAGARI.test(question.question)) {
+        bilingual.questions += 1;
+        if (question.options.some((option) => DEVANAGARI.test(option))) bilingual.options += 1;
       }
 
       if (question.answerType === 'numerical') {
@@ -1250,6 +1266,7 @@ export function getCorpusQuestionStats() {
     difficulty,
     fourOption,
     position,
+    bilingual: { ...bilingual, exams: [...bilingualExams] },
     answerTypes: {
       ...answerTypes,
       numericalExams: [...numericalExams],

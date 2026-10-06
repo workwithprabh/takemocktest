@@ -849,6 +849,9 @@ function compute() {
     reasoningSectionsUnderTwo: usedBy(2) * 2,
     reasoningHeadingsUsedByOne: usedBy(1),
 
+    /** Exams whose papers here carry a Hindi half alongside the English. */
+    bilingualExams: examNames(corpus.bilingual.exams),
+
     /** The exams behind each answer type, by the name the site shows. */
     answerTypeExams: {
       numerical: examNames(corpus.answerTypes.numericalExams),
