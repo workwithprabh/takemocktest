@@ -128,10 +128,10 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_2: Question[] = [
     "difficulty": "hard",
     "question": "Statements: All squares are rectangles. No rectangle is a triangle. Some quadrilaterals are squares. Which conclusions follow? I. No square is a triangle. II. Some quadrilaterals are not triangles.",
     "options": [
-      "Only I follows",
-      "Only II follows",
-      "Both I and II follow",
-      "Neither follows"
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither conclusion follows"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

@@ -128,10 +128,10 @@ export const VITEEE_2026_MPCEA_APTITUDE_SECTIONAL_1: Question[] = [
     "difficulty": "medium",
     "question": "Statements: All metals are conductors. Some conductors are flexible. Conclusions: I. Some metals are flexible. II. Some flexible things are conductors. Which follows?",
     "options": [
-      "Only I follows",
-      "Both I and II follow",
-      "Neither follows",
-      "Only II follows"
+      "Only conclusion I follows",
+      "Both conclusions follow",
+      "Neither conclusion follows",
+      "Only conclusion II follows"
     ],
     "correctIndex": 3,
     "answerType": "mcq",

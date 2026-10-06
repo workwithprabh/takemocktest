@@ -2888,10 +2888,10 @@ export const VITEEE_2026_MPCEA_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Statements: All A are B. No B are C. Some D are A. Which conclusions follow? I. Some D are not C. II. No A are C.",
     "options": [
-      "Both I and II follow",
-      "Only I follows",
-      "Only II follows",
-      "Neither follows"
+      "Both conclusions follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Neither conclusion follows"
     ],
     "correctIndex": 0,
     "answerType": "mcq",

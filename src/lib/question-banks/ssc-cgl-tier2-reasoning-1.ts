@@ -102,7 +102,7 @@ export const SSC_CGL_TIER2_REASONING_1: Question[] = [
     topic: 'Syllogism',
     difficulty: 'medium',
     question: 'Statements: All roses are flowers. Some flowers are red. Conclusions: I. All roses are flowers. II. Some roses are red. Which conclusion follows?',
-    options: ['Only I follows', 'Only II follows', 'Both follow', 'Neither follows'],
+    options: ['Only conclusion I follows', 'Only conclusion II follows', 'Both conclusions follow', 'Neither conclusion follows'],
     correctIndex: 0,
     explanation: 'Conclusion I directly repeats the first statement. The red flowers are not necessarily roses, so conclusion II does not follow.',
     source,

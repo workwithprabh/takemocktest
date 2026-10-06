@@ -2888,10 +2888,10 @@ export const VITEEE_2026_MPCEA_FULL_MOCK_2: Question[] = [
     "difficulty": "hard",
     "question": "Statements: All roses are flowers. Some flowers fade quickly. No rose fades quickly. Which conclusions follow? I. Some flowers are roses. II. Some flowers that fade quickly are not roses.",
     "options": [
-      "Both I and II follow",
-      "Only I follows",
-      "Only II follows",
-      "Neither follows"
+      "Both conclusions follow",
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Neither conclusion follows"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
