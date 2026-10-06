@@ -201,8 +201,8 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "Which statement best describes a good Software Requirements Specification (SRS)?",
     "options": [
       "It should be unambiguous, verifiable and internally consistent",
-      "It should be changed only after coding is complete",
-      "It should contain source code for every module",
+      "It should be changed only after all of the coding work is complete and tested",
+      "It should contain the source code for every module",
       "It should avoid all measurable acceptance criteria"
     ],
     "correctIndex": 0,
@@ -416,9 +416,9 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "DMA is useful because it allows",
     "options": [
-      "memory to operate without addresses",
+      "memory to operate without any addresses",
       "an I/O device to transfer blocks to or from memory with limited CPU intervention",
-      "the CPU to execute only arithmetic instructions",
+      "the CPU to execute nothing but arithmetic instructions for as long as the transfer proceeds at all",
       "all interrupts to be permanently disabled"
     ],
     "correctIndex": 1,
@@ -560,7 +560,7 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "In a singly linked list, inserting a new node immediately after a known node p requires the essential pointer updates",
     "options": [
-      "p->next = NULL only",
+      "new->next = p; p->next = new; p = new->next",
       "new->next = p; p = NULL",
       "p = new; new = p->next",
       "new->next = p->next; p->next = new"
@@ -800,10 +800,10 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "Which statement correctly distinguishes TCP from UDP?",
     "options": [
-      "UDP requires a connection setup handshake",
+      "UDP requires a three-way connection setup handshake before any datagram at all can be sent to a remote host first",
       "TCP is connection-oriented and provides reliable ordered delivery; UDP does not guarantee this",
       "UDP always retransmits lost segments",
-      "TCP has no headers"
+      "TCP has no headers of its own"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -920,10 +920,10 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "A binary semaphore initialized to 1 is commonly used to",
     "options": [
-      "compress executable files",
-      "translate virtual addresses",
+      "compress the pages of an executable file held in memory at run time",
+      "translate virtual addresses into physical ones",
       "provide mutual exclusion to a critical section",
-      "increase disk capacity"
+      "increase the capacity of the disk"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1088,10 +1088,10 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "Thrashing is most closely associated with",
     "options": [
-      "a CPU executing too many arithmetic operations",
+      "a CPU executing a great many more arithmetic operations than it usually does at all",
       "excessive paging caused by too few frames for active working sets",
-      "a disk having no file names",
-      "a compiler removing comments"
+      "a disk with no file names on it",
+      "a compiler removing the comments"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1232,9 +1232,9 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "hard",
     "question": "A PL/SQL cursor is most useful when a query returns",
     "options": [
-      "a single arithmetic operator",
-      "no SQL statement at all",
-      "only a compile-time constant",
+      "a single arithmetic operator and nothing more than that at all",
+      "no SQL statement at all of any kind",
+      "only a constant known at compile time",
       "multiple rows that must be processed one at a time"
     ],
     "correctIndex": 3,
@@ -1353,9 +1353,9 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "Method overriding occurs when a subclass",
     "options": [
       "provides a new implementation with the same method signature as an inherited method",
-      "declares two constructors",
-      "changes only a local variable name",
-      "uses a different method name"
+      "declares two constructors of its own",
+      "changes only the name of a local variable inside the body of the method that it inherits here",
+      "uses a different method name entirely"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1449,9 +1449,9 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "What does a catch block do?",
     "options": [
       "handles an exception thrown from the associated try block",
-      "starts the garbage collector permanently",
-      "creates a new package",
-      "forces every statement to run twice"
+      "starts the garbage collector permanently for the rest of the program run",
+      "creates a new package at run time",
+      "forces every statement in it to run twice"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1472,10 +1472,10 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "hard",
     "question": "Two Java threads both execute a synchronized instance method on the same object. What is guaranteed?",
     "options": [
-      "both always execute simultaneously",
+      "both of them always execute simultaneously",
       "only one of those threads can execute that synchronized method on the object at a time",
-      "the JVM creates two copies of every field",
-      "deadlock is guaranteed"
+      "the JVM creates two separate copies of every field in the object, one for each of the threads involved",
+      "a deadlock is guaranteed to occur"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1592,8 +1592,8 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "What is the main purpose of a DTD used with XML?",
     "options": [
-      "to style the document with CSS colors",
-      "to store relational rows in SQL",
+      "to style every element of the whole document with CSS colours and font rules alike",
+      "to store the relational rows in SQL",
       "to define the permitted structure and elements of the XML document",
       "to execute JavaScript in the browser"
     ],
@@ -1641,9 +1641,9 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "AJAX is useful because it allows a web page to",
     "options": [
       "exchange data with a server without reloading the entire page",
-      "disable all network communication",
-      "replace HTML with a database file",
-      "compile Java bytecode in the browser only"
+      "disable all of its network communication",
+      "replace its HTML with a database file",
+      "compile Java bytecode inside the browser window itself and nowhere else at all"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1688,8 +1688,8 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "Which statement about PHP is correct?",
     "options": [
-      "PHP cannot read form data",
-      "PHP can run only inside an Android Activity",
+      "PHP cannot read any form data",
+      "PHP can only ever run inside an Android Activity that is running on a mobile device of some kind at all",
       "PHP code is commonly executed on the server to generate a response sent to the browser",
       "PHP is only a CSS selector language"
     ],
@@ -1808,9 +1808,9 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "In the MapReduce model, the Reduce phase primarily",
     "options": [
-      "allocates Android activities",
-      "formats HTML tags",
-      "captures keyboard input",
+      "allocates the Android activities belonging to the application itself too",
+      "formats the HTML tags of the output page",
+      "captures the keyboard input of the user",
       "aggregates or combines intermediate values grouped by key"
     ],
     "correctIndex": 3,
@@ -1833,9 +1833,9 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "question": "A hypervisor in a cloud platform primarily enables",
     "options": [
       "multiple virtual machines to share the same physical host",
-      "all databases to become relational",
-      "HTML tags to be parsed by a browser",
-      "network packets to avoid addressing"
+      "all of the databases held on the host to become relational ones at once",
+      "HTML tags to be parsed by the browser",
+      "network packets to avoid any addressing"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1856,10 +1856,10 @@ export const AP_ECET_2026_COMPUTER_SCIENCE_ENGINEERING_1: Question[] = [
     "difficulty": "medium",
     "question": "Cloud elasticity means a system can",
     "options": [
-      "use only one fixed server forever",
+      "use only one fixed server for ever afterwards at all here",
       "scale resources up or down as demand changes",
-      "avoid all network connections",
-      "guarantee zero software bugs"
+      "avoid all of its network connections",
+      "guarantee that there are zero software bugs"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
