@@ -2816,10 +2816,10 @@ export const VITEEE_2026_MPCEA_FULL_MOCK_2: Question[] = [
     "difficulty": "easy",
     "question": "Question: Is n divisible by 3? Statement 1: n is divisible by 9. Statement 2: n is divisible by 5. Which is sufficient?",
     "options": [
-      "Statement 2 alone is sufficient, but Statement 1 alone is not",
-      "Statement 1 alone is sufficient, but Statement 2 alone is not",
-      "Either statement alone is sufficient",
-      "Both statements together are necessary"
+      "Statement 2 alone is sufficient, but statement 1 alone is not sufficient",
+      "Statement 1 alone is sufficient, but statement 2 alone is not sufficient",
+      "Each statement alone is sufficient to answer the question by itself",
+      "Both statements together are sufficient, but neither alone is sufficient"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2840,10 +2840,10 @@ export const VITEEE_2026_MPCEA_FULL_MOCK_2: Question[] = [
     "difficulty": "medium",
     "question": "Question: What is the perimeter of a rectangle? Statement 1: Its length is 8. Statement 2: Its area is 40. Which is sufficient?",
     "options": [
-      "Statement 1 alone is sufficient",
-      "Statement 2 alone is sufficient",
+      "Statement 1 alone is sufficient, but statement 2 alone is not sufficient",
+      "Statement 2 alone is sufficient, but statement 1 alone is not sufficient",
       "Both statements together are sufficient, but neither alone is sufficient",
-      "Even both statements together are not sufficient"
+      "Statements 1 and 2 together are not sufficient to answer the question"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

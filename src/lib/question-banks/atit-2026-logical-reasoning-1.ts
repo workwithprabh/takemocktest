@@ -297,9 +297,9 @@ export const ATIT_2026_LOGICAL_REASONING_1: Question[] = [
     "question": "What is the value of x? Statement I: x+y=10. Statement II: x\u2212y=4.",
     "options": [
       "Both statements together are sufficient, but neither alone is sufficient.",
-      "Statement II alone is sufficient.",
-      "Each statement alone is sufficient.",
-      "Statement I alone is sufficient."
+      "Statement II alone is sufficient, but statement I alone is not sufficient.",
+      "Each statement alone is sufficient to answer the question by itself.",
+      "Statement I alone is sufficient, but statement II alone is not sufficient."
     ],
     "correctIndex": 0,
     "answerType": "mcq",

@@ -1136,9 +1136,9 @@ export const VITEEE_2026_MPCEA_MIXED_QUICK_PRACTICE_60M_1: Question[] = [
     "difficulty": "medium",
     "question": "Question: What is the area of a rectangle? Statement 1: Its length is 8 cm. Statement 2: Its perimeter is 28 cm. Which is correct?",
     "options": [
-      "Statement 1 alone is sufficient",
-      "Statement 2 alone is sufficient",
-      "Either statement alone is sufficient",
+      "Statement 1 alone is sufficient, but statement 2 alone is not sufficient",
+      "Statement 2 alone is sufficient, but statement 1 alone is not sufficient",
+      "Each statement alone is sufficient to answer the question by itself",
       "Both statements together are sufficient, but neither alone is sufficient"
     ],
     "correctIndex": 3,

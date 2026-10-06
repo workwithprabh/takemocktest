@@ -1108,11 +1108,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "easy",
       "question": "What is the value of x?\n\n(1) 3x + 6 = 18\n(2) x^2 = 16",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 0,
       "answerType": "mcq",
@@ -1133,11 +1133,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "If k is an integer, what is the value of k?\n\n(1) k is a multiple of 6 and 20 < k < 40\n(2) k is a multiple of 8",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -1158,11 +1158,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A company sold 200 units of a product last month. What was its total revenue from those units?\n\n(1) The average price per unit was more than $50\n(2) Every unit sold for $62",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 1,
       "answerType": "mcq",
@@ -1233,11 +1233,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "A list contains five different integers. What is the median of the list?\n\n(1) The three smallest integers in the list are 2, 5 and 9\n(2) The two largest integers in the list sum to 30",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 0,
       "answerType": "mcq",
@@ -1258,11 +1258,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "hard",
       "question": "If n is a positive integer, is n divisible by 12?\n\n(1) n is divisible by 4\n(2) n is divisible by 6",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -1283,11 +1283,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "By what percentage did the company profit increase from 2024 to 2025?\n\n(1) Profit in 2025 was $4.2 million\n(2) Profit in 2025 was 1.4 times profit in 2024",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 1,
       "answerType": "mcq",
@@ -1333,11 +1333,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "What is the value of the two-digit integer m?\n\n(1) m is a multiple of 10 and the sum of its digits is 4\n(2) m is less than 50",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 0,
       "answerType": "mcq",
@@ -1358,11 +1358,11 @@ export const GMAT_2026_FOCUS_EDITION_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "How many employees work in the department?\n\n(1) If four more employees joined the department, the number of employees would be a multiple of 9\n(2) The department has more than 20 and fewer than 30 employees",
       "options": [
-        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient",
-        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient",
-        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
-        "EACH statement ALONE is sufficient",
-        "Statements (1) and (2) TOGETHER are NOT sufficient"
+        "Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "Both statements together are sufficient, but neither alone is sufficient",
+        "Each statement alone is sufficient to answer the question by itself",
+        "Statements (1) and (2) together are not sufficient to answer the question"
       ],
       "correctIndex": 2,
       "answerType": "mcq",

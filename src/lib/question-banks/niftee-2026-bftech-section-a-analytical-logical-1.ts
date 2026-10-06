@@ -296,9 +296,9 @@ export const NIFTEE_2026_BFTECH_SECTION_A_ANALYTICAL_LOGICAL_1: Question[] = [
     "difficulty": "hard",
     "question": "Question: What is the value of x? Statement I: x+y=14. Statement II: x\u2212y=4. Which option is correct?",
     "options": [
-      "Statement I alone is sufficient.",
-      "Statement II alone is sufficient.",
-      "Even both statements together are insufficient.",
+      "Statement I alone is sufficient, but statement II alone is not sufficient.",
+      "Statement II alone is sufficient, but statement I alone is not sufficient.",
+      "Statements I and II together are not sufficient to answer the question.",
       "Both statements together are sufficient, but neither alone is sufficient."
     ],
     "correctIndex": 3,

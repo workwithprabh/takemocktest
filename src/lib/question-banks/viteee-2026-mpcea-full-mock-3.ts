@@ -2897,10 +2897,10 @@ export const VITEEE_2026_MPCEA_FULL_MOCK_3: Question[] = [
     "difficulty": "hard",
     "question": "Positive integer n is sought. I: n is a multiple of 6. II: 20<n<30 and n is not a multiple of 5. Which assessment is correct?",
     "options": [
-      "I alone is sufficient",
-      "II alone is sufficient",
-      "Both together are sufficient, neither alone",
-      "Even together they are insufficient"
+      "Statement I alone is sufficient, but statement II alone is not sufficient",
+      "Statement II alone is sufficient, but statement I alone is not sufficient",
+      "Both statements together are sufficient, but neither alone is sufficient",
+      "Statements I and II together are not sufficient to answer the question"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

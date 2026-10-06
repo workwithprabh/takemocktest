@@ -1136,7 +1136,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "Statement I alone is sufficient, but statement II alone is not sufficient.",
         "Statement II alone is sufficient, but statement I alone is not sufficient.",
         "Both statements together are sufficient, but neither alone is sufficient.",
-        "Each statement alone is sufficient to answer the question.",
+        "Each statement alone is sufficient to answer the question by itself.",
         "Statements I and II together are not sufficient to answer the question."
       ],
       "correctIndex": 2,
@@ -1158,11 +1158,11 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Is integer n even? I: n is divisible by 6. II: n is divisible by 3.",
       "options": [
-        "Statement II alone is sufficient.",
-        "Both together are needed.",
-        "Statement I alone is sufficient.",
-        "Either alone is sufficient.",
-        "Even both are insufficient."
+        "Statement II alone is sufficient, but statement I alone is not sufficient.",
+        "Both statements together are sufficient, but neither alone is sufficient.",
+        "Statement I alone is sufficient, but statement II alone is not sufficient.",
+        "Each statement alone is sufficient to answer the question by itself.",
+        "Statements I and II together are not sufficient to answer the question."
       ],
       "correctIndex": 2,
       "answerType": "mcq",
@@ -1186,7 +1186,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
         "Statement I alone is sufficient, but statement II alone is not sufficient.",
         "Both statements together are sufficient, but neither alone is sufficient.",
         "Statement II alone is sufficient, but statement I alone is not sufficient.",
-        "Each statement alone is sufficient to answer the question.",
+        "Each statement alone is sufficient to answer the question by itself.",
         "Statements I and II together are not sufficient to answer the question."
       ],
       "correctIndex": 1,
@@ -1208,11 +1208,11 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "difficulty": "medium",
       "question": "Is p>0? I: p²=16. II: p+4=8.",
       "options": [
-        "Statement I alone is sufficient.",
-        "Statement II alone is sufficient.",
-        "Both together are required.",
-        "Either alone is sufficient.",
-        "Neither statement helps."
+        "Statement I alone is sufficient, but statement II alone is not sufficient.",
+        "Statement II alone is sufficient, but statement I alone is not sufficient.",
+        "Both statements together are sufficient, but neither alone is sufficient.",
+        "Each statement alone is sufficient to answer the question by itself.",
+        "Statements I and II together are not sufficient to answer the question."
       ],
       "correctIndex": 1,
       "answerType": "mcq",
@@ -1235,7 +1235,7 @@ export const MAH_MBA_CET_2026_MBA_MMS_FULL_MOCK_1: Question[] = [
       "options": [
         "Statement I alone is sufficient, but statement II alone is not sufficient.",
         "Statement II alone is sufficient, but statement I alone is not sufficient.",
-        "Each statement alone is sufficient to answer the question.",
+        "Each statement alone is sufficient to answer the question by itself.",
         "Both statements together are sufficient, but neither alone is sufficient.",
         "Statements I and II together are not sufficient to answer the question."
       ],
