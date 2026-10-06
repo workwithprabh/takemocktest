@@ -104,14 +104,22 @@ for (const file of fs.readdirSync(banksDir).filter((name) => name.endsWith('.ts'
   if (rows.length < MIN_QUESTIONS) continue;
   const actual = score(rows, (row) => row.key);
   const random = makeRandom(1_234_567);
-  let control = 0;
+  const controls = [];
   for (let run = 0; run < CONTROL_RUNS; run += 1) {
-    control += score(rows, (row) => Math.floor(random() * row.lengths.length));
+    controls.push(score(rows, (row) => Math.floor(random() * row.lengths.length)));
   }
-  control /= CONTROL_RUNS;
-  // Three standard errors of the per-question score, floored so a short bank
-  // is not failed for a swing a fair shuffle would produce often.
-  const slack = Math.max(0.12, 3 * Math.sqrt((control * (1 - control)) / rows.length));
+  const control = controls.reduce((sum, value) => sum + value, 0) / controls.length;
+  // The slack comes from how much the shuffled score actually moves for this
+  // bank, not from a formula. Treating the per-question score as Bernoulli
+  // overstates its variance -- the score is a mix of 0, 1/4, 1/3, 1/2 and 1,
+  // not a coin flip -- and at thirteen questions that put the limit at 61%,
+  // wide enough to pass a bank where the heuristic scored 60% against a
+  // control of 25%. Measured, the spread at that size is about nine points,
+  // so three of them is twenty-seven and such a bank fails as it should.
+  const spread = Math.sqrt(
+    controls.reduce((sum, value) => sum + (value - control) ** 2, 0) / controls.length,
+  );
+  const slack = Math.max(0.05, 3 * spread);
   const limit = control + slack;
   measured.push({ file, n: rows.length, actual, control, width });
   seen.add(file);
