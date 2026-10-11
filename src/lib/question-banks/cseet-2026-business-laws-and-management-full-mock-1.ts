@@ -130,7 +130,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "only from the promisee and from nobody else in any case",
       "from the promisee or any other person, at the desire of the promisor",
-      "only from a stranger to the consideration and nobody else",
+      "only from a stranger to the consideration and from nobody else",
       "only in the form of money or money’s worth and nothing else whatever"
     ],
     "correctIndex": 1,
@@ -1043,7 +1043,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "the firm and its partners cannot enforce contractual rights by suit",
       "the firm is illegal",
       "the partners lose the limited liability that they would otherwise have had",
-      "the firm cannot open a bank account"
+      "the firm is not permitted to open a bank account in its own name"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1067,7 +1067,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "every partner is liable for all of the firm’s debts without any limit whatever at all",
       "it cannot own property",
       "it is a body corporate whose partners' liability is limited, with perpetual succession",
-      "it must convert to a company within five years"
+      "it is required to convert itself into a company within five years of formation"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1090,7 +1090,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "options": [
       "the retirement of one of the partners while the firm itself continues",
       "admission of a new partner",
-      "a change in the profit-sharing ratio",
+      "a change in the profit-sharing ratio agreed among the partners",
       "dissolution of the partnership between all the partners of the firm"
     ],
     "correctIndex": 3,
@@ -1283,7 +1283,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "any individual shareholder of the company acting alone",
       "the Registrar of Companies for the State concerned in the whole matter here",
       "the company itself, subject to exceptions such as oppression and mismanagement",
-      "the auditor appointed by the company itself for the year"
+      "the auditor who has been appointed by the company itself for that year"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1497,7 +1497,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "Top-level management is chiefly concerned with:",
     "options": [
       "the day-to-day supervision of the workers",
-      "recording attendance",
+      "recording the attendance of the workforce daily",
       "setting overall objectives, strategy and policy",
       "operating machinery"
     ],
@@ -1571,7 +1571,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "report to several superiors for flexibility",
       "have no supervisor at all",
       "receive orders from one superior only",
-      "supervise at least two subordinates"
+      "supervise at least two of the subordinates"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1617,15 +1617,15 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "Max Weber's ideal bureaucracy is characterised by:",
     "options": [
       "a clear hierarchy, written rules and impersonal application of them",
-      "decisions based on personal loyalty",
-      "an absence of any division of labour at all within it",
-      "informal appointment of officials"
+      "appointment and promotion on the basis of personal loyalty",
+      "an absence of any formal division of labour within the organisation",
+      "informal appointment of officials at the discretion of the leader"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Weber's model stresses rational-legal authority, formal rules, technical qualification and impersonality as safeguards against arbitrariness.",
+    "explanation": "Weber's model stresses rational-legal authority, formal rules, technical qualification and impersonality as safeguards against arbitrariness. Personal loyalty as the basis of appointment and informal selection by a leader describe the traditional and charismatic types he contrasted it with.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -1808,7 +1808,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "In delegation, what can never be transferred to a subordinate is:",
     "options": [
-      "the authority that goes along with the task concerned entirely",
+      "the authority that goes along with the task concerned in its entirety",
       "the task itself, which passes to the subordinate completely",
       "responsibility for the final outcome, which the delegating manager retains",
       "the resources needed to carry out the work in question properly and fully"
@@ -1832,16 +1832,16 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "Decentralisation of authority in an organisation generally results in:",
     "options": [
-      "slower decisions at the operating level",
-      "elimination of the need for policies",
-      "the complete loss of all top management control",
+      "slower decisions at the operating level of the organisation",
+      "elimination of the need for any organisation-wide policies",
+      "the complete loss of top management control over outcomes",
       "faster local decisions and greater development of subordinates"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Pushing decisions closer to the point of action speeds response and builds managerial capability, while policy and control systems keep it coherent.",
+    "explanation": "Pushing decisions closer to the point of action speeds response and builds managerial capability, while policy and control systems keep it coherent. Decentralisation neither slows local decisions, nor dispenses with policy, nor removes top management control.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -1929,15 +1929,15 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "The staffing function of management is chiefly concerned with:",
     "options": [
       "manpower planning, recruitment, selection, training and development",
-      "allocating the capital between the projects of the firm",
-      "designing the product",
-      "negotiating with suppliers"
+      "allocating capital between the competing projects of the firm",
+      "designing the product range and setting its specifications",
+      "negotiating with the suppliers over prices and delivery terms"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Staffing fills and keeps filled the positions created by organising, and it continues through appraisal and development.",
+    "explanation": "Staffing fills and keeps filled the positions created by organising, and it continues through appraisal and development. Capital allocation, product design and supplier negotiation each belong to a different function of the business.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -1955,7 +1955,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "a negative process that eliminates unsuitable candidates",
       "conducted only internally",
       "a positive process of attracting a pool of applicants",
-      "the final appointment decision"
+      "the final decision on which candidate is appointed"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2025,15 +2025,15 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "Directing as a management function includes:",
     "options": [
       "supervision, motivation, leadership and communication",
-      "preparing the balance sheet of the firm",
-      "purchasing raw material",
-      "auditing statutory records"
+      "preparing the annual balance sheet of the firm",
+      "purchasing raw material and stores for the factory",
+      "auditing the statutory records kept by the company"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Directing is the interpersonal function that sets subordinates in motion towards the plan.",
+    "explanation": "Directing is the interpersonal function that sets subordinates in motion towards the plan. Preparing accounts, purchasing and auditing are activities carried out under other functions.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -2051,7 +2051,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
       "Physiological needs of the body",
       "Safety needs",
       "Social or belongingness needs",
-      "Self-actualisation needs"
+      "Needs for self-actualisation"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2144,16 +2144,16 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "A laissez-faire leader is one who:",
     "options": [
-      "decides everything personally",
-      "consults the group and then decides himself in the end",
+      "decides everything personally and then issues the instructions",
+      "consults the group and then takes the decision himself in the end",
       "gives the group substantial freedom to set its own goals and methods",
-      "uses only monetary rewards"
+      "relies only on monetary rewards in order to secure compliance"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "The free-rein style suits highly skilled, self-motivated professionals but risks drift where direction is needed.",
+    "explanation": "The free-rein style suits highly skilled, self-motivated professionals but risks drift where direction is needed. Deciding alone is autocratic and consulting before deciding alone is consultative; neither is laissez-faire.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -2241,7 +2241,7 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "The grapevine in an organisation refers to:",
     "options": [
       "the formal downward communication channel used",
-      "written standing orders",
+      "the written standing orders issued by management",
       "the annual report",
       "the informal communication network among employees"
     ],
@@ -2265,15 +2265,15 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "Controlling as a management function involves:",
     "options": [
       "measuring actual performance against standards and correcting deviations",
-      "setting objectives for the first time",
-      "recruiting employees",
-      "designing the organisation chart"
+      "setting out the objectives of the organisation for the first time",
+      "recruiting and then selecting the employees for the vacant posts",
+      "designing the organisation chart and all of the reporting lines"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Control closes the management loop by comparing results with plans and triggering corrective action.",
+    "explanation": "Control closes the management loop by comparing results with plans and triggering corrective action. Setting objectives is planning, staffing fills the posts, and drawing the chart is organising.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -2288,16 +2288,16 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "The first step in the control process is:",
     "options": [
-      "taking corrective action",
-      "measuring actual performance",
+      "taking the corrective action required",
+      "measuring the actual performance achieved",
       "establishing standards of performance",
-      "analysing deviations"
+      "analysing the deviations that are found"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Without a standard there is nothing to measure against, so standard setting necessarily comes first.",
+    "explanation": "Without a standard there is nothing to measure against, so standard setting necessarily comes first. Measuring, analysing and correcting are the steps that follow it, in that order.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -2312,16 +2312,16 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "hard",
     "question": "Feedforward control differs from feedback control in that feedforward control:",
     "options": [
-      "acts only after the deviation has occurred",
-      "requires no standards",
-      "is used only in accounting",
+      "acts only once the deviation has already occurred in output",
+      "requires no standards of performance to be established at all",
+      "is used only in accounting and in financial reporting work",
       "anticipates problems and acts on inputs before the deviation occurs"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Feedforward monitors inputs to prevent problems, concurrent control acts during the process, and feedback control corrects after the fact.",
+    "explanation": "Feedforward monitors inputs to prevent problems, concurrent control acts during the process, and feedback control corrects after the fact. Acting after the deviation is feedback control, and both kinds need standards.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -2337,15 +2337,15 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "question": "The principle of management by exception suggests that managers should:",
     "options": [
       "focus attention on significant deviations from the standard",
-      "examine every routine transaction personally",
-      "avoid setting standards",
-      "delegate nothing"
+      "examine every routine transaction of the firm personally",
+      "avoid setting any standards that are difficult to meet",
+      "delegate nothing at all that affects the results achieved"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Concentrating on material exceptions conserves managerial attention for the deviations that actually matter.",
+    "explanation": "Concentrating on material exceptions conserves managerial attention for the deviations that actually matter. Reviewing every transaction, lowering the standards and refusing to delegate each defeat that purpose.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -2360,16 +2360,16 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "medium",
     "question": "Corporate social responsibility, as understood in management, refers to a company's obligation to:",
     "options": [
-      "maximise short-term profit alone",
-      "avoid all taxation",
+      "maximise short-term profit for the benefit of the shareholders alone",
+      "comply with the law and do no more than what the law actually requires",
       "act in ways that also serve the interests of society and its wider stakeholders",
-      "disclose nothing to the public"
+      "spend a fixed share of the profit on charitable donations every year"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "CSR treats the enterprise as accountable to stakeholders beyond shareholders, covering social, environmental and ethical impacts.",
+    "explanation": "CSR treats the enterprise as accountable to stakeholders beyond shareholders, covering social, environmental and ethical impacts. Shareholder primacy and bare legal compliance are the narrower views it is contrasted with, and charitable giving is one possible expression of it rather than the concept itself.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",
@@ -2384,16 +2384,16 @@ export const CSEET_2026_BUSINESS_LAWS_AND_MANAGEMENT_1: Question[] = [
     "difficulty": "hard",
     "question": "Corporate governance is best described as the system by which companies are:",
     "options": [
-      "financed exclusively through equity",
-      "audited by internal staff alone",
-      "marketed to consumers",
+      "financed through an appropriate mix of equity and borrowing decided by the board of directors",
+      "audited and reported upon by the internal audit function of the company rather than outside",
+      "managed from day to day by the senior executives who have been appointed for that purpose",
       "directed and controlled, balancing the interests of stakeholders through accountability and transparency"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 1,
     "negativeMarking": 0,
-    "explanation": "Governance concerns the structure of rights and responsibilities among the board, management and stakeholders, and the mechanisms that hold them to account.",
+    "explanation": "Governance concerns the structure of rights and responsibilities among the board, management and stakeholders, and the mechanisms that hold them to account. Day-to-day running by executives is management rather than governance, and the capital structure and the audit arrangements are each one part of a wider system.",
     "source": {
       "kind": "original",
       "reference": "ICSI CSEET syllabus and examination pattern restructured with effect from the June 2026 session",

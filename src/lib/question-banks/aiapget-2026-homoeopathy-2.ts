@@ -104,10 +104,10 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "easy",
     "question": "A miasm, in Hahnemann's chronic disease theory, is best described as:",
     "options": [
-      "a mechanical injury",
+      "an acute and self-limiting infectious process",
       "an underlying dynamic disposition to chronic disease",
-      "a laboratory reagent",
-      "a class of surgical instrument used"
+      "a mother tincture that is used for potentisation",
+      "a named group of the constitutional remedies"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -225,9 +225,9 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "question": "Hering's observations on the direction of cure suggest that symptoms disappear:",
     "options": [
       "from below upward and from within outward, in the reverse order of their appearance",
-      "from above downward and from without inward in every case",
-      "randomly, with no discernible order",
-      "only after all medicines are stopped"
+      "from above downward and from without inward, in every case without exception",
+      "in a random order, with the symptoms clearing in no particular sequence at all",
+      "from the most recent complaint to the oldest, whatever the organs involved"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -320,10 +320,10 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "medium",
     "question": "The concept of the totality of symptoms means that the prescription is based on:",
     "options": [
-      "the single most painful symptom taken alone and nothing else",
+      "the single most painful symptom taken alone, without the rest of the case",
       "the complete picture of characteristic mental, general and particular symptoms",
-      "the laboratory diagnosis alone",
-      "the patient's age and sex only"
+      "the pathological diagnosis together with the results of investigations",
+      "the common symptoms of the disease that every such patient would report"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -464,10 +464,10 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "hard",
     "question": "New symptoms unrelated to the patient's original picture appearing soon after a prescription most likely indicate:",
     "options": [
-      "a curative direction of cure",
+      "a curative movement in the direction of a cure",
       "a proving of the medicine in an oversensitive patient",
-      "the need to raise the potency immediately now",
-      "complete cure of the underlying miasm"
+      "the need to raise the potency without any delay",
+      "the complete cure of the underlying chronic miasm"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1184,10 +1184,10 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "easy",
     "question": "A cross-reference in a repertory serves to:",
     "options": [
-      "give the price of the remedy",
+      "give the degree of each of the remedies appearing in that rubric",
       "direct the user to a related rubric where the symptom may also be found",
-      "list the provers by name",
-      "state the miasm of the remedy concerned in the rubric"
+      "list the provers from whose records that rubric was constructed",
+      "state the miasm of each remedy that is listed under the rubric"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1280,9 +1280,9 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "medium",
     "question": "Elimination as a method of repertorisation means:",
     "options": [
-      "removing the patient’s least troublesome symptom from consideration",
-      "excluding polychrests from consideration",
-      "deleting all mental symptoms",
+      "removing the least troublesome of the patient's symptoms from consideration first",
+      "excluding the polychrests so that the smaller remedies may be considered first",
+      "setting aside the mental symptoms and repertorising on the physicals alone",
       "using one or two strongly characteristic rubrics to reduce the field of remedies first"
     ],
     "correctIndex": 3,
@@ -1329,7 +1329,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "question": "The chief limitation of relying solely on a repertory for the final prescription is that a repertory:",
     "options": [
       "contains no remedies at all within it anywhere whatsoever in any of the chapters",
-      "gives the potency but not the remedy that is to be used in the whole case",
+      "gives the potency but not the remedy that is to be used across the whole case",
       "is written only in Latin",
       "indicates a group of probable remedies but does not replace study of the materia medica"
     ],
@@ -1642,7 +1642,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "options": [
       "evaporation of the alcohol used",
       "loss of labels",
-      "breakage of glassware",
+      "breakage of the glassware used",
       "cross-contamination between medicines"
     ],
     "correctIndex": 3,
@@ -1856,10 +1856,10 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "medium",
     "question": "A granuloma is characteristically composed of:",
     "options": [
-      "neutrophils and fibrin only in the lesion and nothing else",
-      "erythrocytes and platelets",
+      "neutrophils and fibrin alone within the lesion, with nothing else present",
+      "erythrocytes and platelets held within a mesh of fibrin strands",
       "epithelioid macrophages, often with giant cells and a lymphocyte cuff",
-      "adipocytes"
+      "adipocytes that are separated from one another by thin fibrous septa"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2002,7 +2002,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "options": [
       "acute myocardial ischaemia",
       "an acute appendicitis",
-      "renal colic",
+      "renal colic on that side",
       "migraine"
     ],
     "correctIndex": 0,
@@ -2050,7 +2050,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "options": [
       "right-sided cardiac failure",
       "iron deficiency anaemia instead",
-      "hyperthyroidism",
+      "hyperthyroidism in the adult",
       "peptic ulcer"
     ],
     "correctIndex": 0,
@@ -2122,7 +2122,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "options": [
       "Exaggerated reflexes with spasticity in the upper motor neurone lesion",
       "Marked muscle wasting with fasciculation in the upper motor neurone lesion",
-      "Absent reflexes in the upper motor neurone lesion",
+      "Absent reflexes throughout, in an upper motor neurone lesion",
       "Normal tone in both"
     ],
     "correctIndex": 0,
@@ -2240,10 +2240,10 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "medium",
     "question": "A patient with a known chronic illness develops signs indicating an emergency beyond outpatient management. The correct professional response is to:",
     "options": [
-      "continue the outpatient treatment unchanged as before",
-      "discontinue all record keeping",
+      "continue the outpatient treatment unchanged and review at the next visit",
+      "repeat the indicated remedy in a higher potency and observe the response",
       "stabilise as far as possible and refer promptly to the appropriate facility",
-      "advise the patient to wait for a month"
+      "advise the patient to return if the condition has not settled in a month"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2408,9 +2408,9 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "medium",
     "question": "Board-like rigidity of the abdomen with absent bowel sounds and severe pain most strongly suggests:",
     "options": [
-      "gastro-oesophageal reflux",
-      "simple constipation",
-      "an uncomplicated inguinal hernia present",
+      "acute gastroenteritis with colicky abdominal pain",
+      "simple constipation with marked abdominal distension",
+      "an incarcerated inguinal hernia without strangulation",
       "generalised peritonitis, often from a perforated viscus"
     ],
     "correctIndex": 3,
@@ -2552,7 +2552,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "easy",
     "question": "Naegele's rule calculates the expected date of delivery by adding to the first day of the last menstrual period:",
     "options": [
-      "one month exactly",
+      "exactly one month from the date",
       "fourteen days and then adding six months",
       "seven days and subtracting three months",
       "one hundred days"
@@ -2648,7 +2648,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "medium",
     "question": "Antenatal iron and folic acid supplementation is recommended primarily to:",
     "options": [
-      "shorten the duration of labour",
+      "shorten the overall duration of labour itself",
       "increase the birth weight above the normal range considerably",
       "prevent maternal anaemia and reduce the risk of neural tube defects",
       "prevent all infections"
@@ -2770,7 +2770,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "options": [
       "after the disease has already become quite chronic",
       "only during an epidemic",
-      "to rehabilitate the disabled",
+      "to rehabilitate those already disabled",
       "before the disease occurs, to prevent its onset"
     ],
     "correctIndex": 3,
@@ -2795,7 +2795,7 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
       "all of the existing cases of it at a given point of time in a population",
       "deaths from all causes",
       "new cases arising in a defined population over a specified period",
-      "the number of the hospital beds that are occupied at the time"
+      "the number of the hospital beds that are occupied at any given time"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2840,10 +2840,10 @@ export const AIAPGET_2026_HOMOEOPATHY_2: Question[] = [
     "difficulty": "medium",
     "question": "A cold chain in an immunisation programme is maintained in order to:",
     "options": [
-      "reduce the overall cost of the vaccines",
-      "sterilise the syringes",
+      "reduce the overall cost of procuring and storing vaccines",
+      "keep the syringes and needles sterile until they are used",
       "preserve vaccine potency from manufacture to administration",
-      "record the details of the beneficiary"
+      "record the details of each beneficiary at the session"
     ],
     "correctIndex": 2,
     "answerType": "mcq",

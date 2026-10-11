@@ -560,10 +560,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Leaf area index is the ratio of:",
     "options": [
-      "root dry weight to leaf dry weight",
-      "grain yield to straw yield",
+      "root dry weight to total leaf dry weight of the plant",
+      "grain yield to the total straw yield at harvest time",
       "one-sided leaf area to ground area occupied by the crop",
-      "plant height to row spacing"
+      "plant height to the spacing between the crop rows"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -632,10 +632,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Which practice is most consistent with organic-farming principles?",
     "options": [
-      "routine dependence on any synthetic pesticide regardless of standards",
-      "eliminating all nutrient additions",
+      "routine dependence on synthetic pesticides whenever a pest appears, regardless of the certification standard",
+      "withholding all nutrient additions and relying entirely on whatever the soil already supplies each season",
       "Building fertility through rotations, organic manures and biological processes while avoiding prohibited synthetic inputs",
-      "growing only one crop continuously by definition"
+      "growing a single crop continuously, on the basis that rotation is not part of what certification requires"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -776,10 +776,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Which statement correctly distinguishes weather from climate?",
     "options": [
-      "Weather and climate are exact synonyms.",
+      "Weather and climate describe the same thing measured at two different scales of observation.",
       "Weather describes short-term atmospheric conditions; climate describes long-term statistical patterns.",
-      "Climate refers only to rainfall on a single day.",
-      "Weather is the 30-year average only."
+      "Climate describes the rainfall of a region and weather describes its temperature at the time.",
+      "Weather is the thirty-year average and climate is the condition observed on a given day."
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1137,9 +1137,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "The peg of groundnut is technically a:",
     "options": [
       "gynophore that elongates after fertilisation and carries the ovary into soil",
-      "taproot that becomes a seed",
-      "leaf petiole that photosynthesises underground",
-      "fungal hypha."
+      "taproot that thickens below the ground and later comes to bear the seed",
+      "leaf petiole that continues to photosynthesise once it is below the soil",
+      "modified stem that puts out roots at the node once it reaches the soil"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1568,10 +1568,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A selective herbicide is one that:",
     "options": [
-      "kills every plant equally at any dose",
-      "has no biological activity",
+      "kills every plant it contacts to the same extent whatever the dose applied",
+      "has no biological activity at all until it is taken up by the growing weed",
       "controls certain weeds at labelled rates while the crop tolerates the treatment",
-      "works only in bare soil."
+      "acts only on bare soil and has no effect once a crop canopy has formed"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1616,10 +1616,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A spray adjuvant is added mainly to:",
     "options": [
-      "supply all crop nitrogen",
-      "replace the active ingredient entirely",
+      "supply the whole of the nitrogen requirement of the crop within the same spray pass",
+      "replace part of the active ingredient so that less of it needs to be applied",
       "modify spray properties and improve performance such as wetting, spreading or retention",
-      "increase weed seed production."
+      "increase the volume of water required so that the spray covers a larger area"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1688,10 +1688,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Integrated weed management means:",
     "options": [
-      "using herbicide alone regardless of field conditions",
+      "applying a herbicide on a fixed calendar schedule whatever the field conditions happen to be",
       "combining compatible preventive, cultural, mechanical, biological and chemical tactics as appropriate",
-      "never monitoring weed flora",
-      "relying only on hand weeding in every system."
+      "choosing one tactic that has worked before and applying it without monitoring the weed flora",
+      "relying on hand weeding alone, since mechanical and chemical tactics cannot be combined with it"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1784,10 +1784,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Field capacity is the soil-water content after:",
     "options": [
-      "all water has been removed by oven drying",
+      "all of the water has been removed from the sample by oven drying to constant weight",
       "excess gravitational water has largely drained and downward movement has slowed",
-      "the soil has reached permanent wilting point",
-      "complete saturation is maintained indefinitely."
+      "the soil has dried to the permanent wilting point of the crop being grown",
+      "complete saturation has been maintained so that every pore remains water filled"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2000,9 +2000,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "High salinity in irrigation water primarily creates risk of:",
     "options": [
-      "eliminating all soil ions",
-      "increasing rainfall automatically",
-      "stopping evaporation.",
+      "the leaching of all the ions out of the soil profile",
+      "an increase in the infiltration rate of the soil",
+      "the complete suppression of evaporation from the surface",
       "osmotic stress and salt accumulation in the root zone"
     ],
     "correctIndex": 3,
@@ -2048,9 +2048,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "The main agronomic purpose of subsurface drainage in a waterlogged field is to:",
     "options": [
-      "raise the water table to the surface",
-      "increase salt accumulation deliberately",
-      "prevent all infiltration.",
+      "raise the water table closer to the soil surface",
+      "increase the accumulation of salts in the root zone",
+      "prevent rainfall from infiltrating the surface",
       "lower the water table and improve root-zone aeration"
     ],
     "correctIndex": 3,
@@ -2072,10 +2072,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "A mineral element is considered essential to a plant when, among other criteria:",
     "options": [
-      "it is present in soil at high concentration",
+      "it is present in the soil at a high enough concentration for the crop to be able to take it up readily",
       "the plant cannot complete its life cycle normally without it and its role cannot be fully replaced by another element",
-      "it always increases yield at any dose",
-      "it is found only in fertiliser bags."
+      "the application of it raises the yield of the crop, whatever the dose that happens to be applied to it",
+      "it can be detected in the tissue of the plant whenever that tissue is analysed after the harvest is in"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2217,9 +2217,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "Band placement of phosphorus near the seed row can improve early P availability mainly because phosphorus:",
     "options": [
       "is relatively immobile in many soils and can become fixed away from roots",
-      "moves freely through all soils like nitrate",
-      "is a gas at field temperature",
-      "cannot be absorbed by roots."
+      "moves freely through the soil solution in the way that nitrate does",
+      "is readily lost to the atmosphere as a gas at field temperatures",
+      "cannot be absorbed by the roots at all unless it is first chelated"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2264,10 +2264,10 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Integrated nutrient management seeks to:",
     "options": [
-      "eliminate all nutrient inputs regardless of crop removal",
+      "withhold all nutrient inputs, whatever the quantity of nutrients that the crop removes from the soil",
       "combine mineral fertilizers with organic and biological nutrient sources to sustain productivity and soil health",
-      "use only one fertilizer forever",
-      "apply nutrients without considering soil or crop demand."
+      "apply a single compound fertilizer at the same rate every season regardless of the crop being grown",
+      "apply nutrients on a fixed schedule without any reference to soil testing or the demand of the crop"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -2481,9 +2481,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "question": "A rainfed crop population becomes very low after an early drought. Which is a mid-season correction rather than a pre-season plan?",
     "options": [
       "Thinning/alternate-row use or shifting resources to a suitable surviving crop based on current stand and rainfall outlook",
-      "choosing the district’s crop calendar before sowing",
-      "purchasing seed months before the season",
-      "building a new dam after harvest only."
+      "following the crop calendar that is published for the district, since that was settled before the season began",
+      "purchasing the seed for a complete resowing several months before the season, so that it is already on hand",
+      "constructing additional water storage after the harvest is in, so that the same shortfall does not recur"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2672,9 +2672,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "After reclaiming a salt-affected field, which measurements are most directly useful for tracking salinity/sodicity change?",
     "options": [
-      "leaf area alone",
-      "tractor fuel use only",
-      "grain colour only.",
+      "the leaf area index of the crop, measured at the peak of its vegetative growth each season",
+      "the yield of the first crop grown after reclamation, compared with the district average",
+      "the organic carbon content of the surface soil, sampled at the end of each cropping season",
       "Soil electrical conductivity together with exchangeable sodium-related indices and pH as appropriate"
     ],
     "correctIndex": 3,
@@ -2720,9 +2720,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Which combination best represents the core principles of conservation agriculture?",
     "options": [
-      "Repeated intensive inversion tillage, bare soil, and monoculture",
-      "Permanent flooding, no residues, and no rotation",
-      "Burning all residues and deep ploughing after every rain.",
+      "Repeated intensive inversion tillage, bare soil between crops, and continuous monoculture",
+      "Permanent flooding of the field, removal of all residues, and a single crop each year",
+      "Burning all of the residues and deep ploughing the field after every rainfall event",
       "Minimum soil disturbance, permanent soil cover, and diversified crop rotations/associations"
     ],
     "correctIndex": 3,
@@ -2792,9 +2792,9 @@ export const ICAR_AIEEA_PG_2026_AGRONOMY_1: Question[] = [
     "difficulty": "medium",
     "question": "Before applying an agri-industrial organic waste to cropland, the safest agronomic principle is to:",
     "options": [
-      "apply unlimited quantities without analysis",
-      "assume every waste is harmless",
-      "dispose directly into irrigation canals.",
+      "apply it at whatever rate is convenient, since organic wastes improve soil in any quantity",
+      "assume that any waste of agricultural origin is safe to apply without being analysed first",
+      "route it into the irrigation channels so that it is distributed evenly over the whole field",
       "characterise and treat/manage it so contaminants, salinity and nutrient loading are within safe limits"
     ],
     "correctIndex": 3,

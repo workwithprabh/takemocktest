@@ -320,10 +320,10 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "A notice states: “The workshop is open to all registered students, but seats are allocated in order of completed payment.” Which student is guaranteed a seat from this statement alone?",
     "options": [
-      "Every registered student",
+      "Every student whose registration is complete",
       "None; registration alone does not guarantee a seat",
-      "Every student who intends to pay later on",
-      "Only first-year students"
+      "Every student who applies before the closing date",
+      "Only the students in their first year of study"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1040,10 +1040,10 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Environmental Impact Assessment is carried out mainly to:",
     "options": [
-      "replace all environmental laws",
+      "replace the environmental clearance that the regulator would otherwise grant",
       "identify and evaluate likely environmental effects before major project decisions",
-      "measure only the project profit after its completion",
-      "guarantee that a project has zero impact"
+      "measure the environmental damage actually caused once the project is complete",
+      "guarantee that the project will cause no adverse environmental impact at all"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
@@ -1832,16 +1832,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "A perfectly competitive firm is a price taker because:",
     "options": [
-      "it legally sets the market price for itself entirely",
-      "its product is always unique",
-      "entry is permanently prohibited",
+      "it faces a downward-sloping demand curve for its output",
+      "its product is differentiated from those of its rivals",
+      "entry into the industry is restricted over the long run",
       "its individual output is too small to influence the market price"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "With many firms selling a homogeneous product, an individual firm accepts the market-determined price.",
+    "explanation": "With many firms selling a homogeneous product, an individual firm accepts the market-determined price. A downward-sloping firm demand curve, a differentiated product and restricted entry each describe some other market structure.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -1880,16 +1880,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Real GDP differs from nominal GDP because real GDP:",
     "options": [
-      "includes only imports",
-      "excludes all services",
-      "is always larger than nominal GDP",
+      "measures output at the prices ruling in the current year",
+      "excludes the output of the government sector altogether",
+      "is always larger than nominal GDP whatever the base year",
       "values output using constant prices to remove price-level changes"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Real GDP uses base-period or chain-adjusted prices to measure changes in quantities rather than current prices.",
+    "explanation": "Real GDP uses base-period or chain-adjusted prices to measure changes in quantities rather than current prices. Measuring output at current-year prices is the definition of nominal GDP, and real GDP is not necessarily the larger of the two.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -2000,16 +2000,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The weighted average cost of capital combines required returns on sources of finance using weights based on:",
     "options": [
-      "number of employees",
-      "physical office area",
-      "inventory units only",
+      "the book value of the firm's fixed assets",
+      "the order in which the funds were raised",
+      "the maturity of each source of finance",
       "their proportions in the capital structure"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "WACC is a weighted average of component costs such as debt and equity according to financing proportions.",
+    "explanation": "WACC is a weighted average of component costs such as debt and equity according to financing proportions. The weights are market or target proportions of the capital structure, not book values, the order of issue or the maturity of each source.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -2072,16 +2072,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A residual dividend policy suggests dividends are paid after funding:",
     "options": [
-      "all expenses regardless of investment",
-      "only debt repayments",
+      "all of the operating expenses and the interest due for the period",
+      "the scheduled repayments of principal on all of the long-term debt",
       "acceptable investment opportunities under the target capital structure",
-      "management salaries first and nothing else"
+      "a fixed payout ratio that was announced at the start of the year"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Residual policy treats investment financing needs as prior and distributes residual earnings as dividends.",
+    "explanation": "Residual policy treats investment financing needs as prior and distributes residual earnings as dividends. Operating costs and debt service come before that calculation altogether, and a pre-announced payout ratio is the opposite policy.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -2096,9 +2096,9 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "Working capital in the net sense equals:",
     "options": [
-      "fixed assets minus equity",
-      "sales minus depreciation",
-      "cash plus long-term debt",
+      "current assets minus fixed liabilities",
+      "current assets plus current liabilities",
+      "inventory plus receivables less cash",
       "current assets minus current liabilities"
     ],
     "correctIndex": 3,
@@ -2120,16 +2120,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "In CAPM, a security with beta greater than 1 is expected to have:",
     "options": [
-      "zero market-related risk",
+      "no sensitivity at all to market-wide movements",
       "greater systematic risk sensitivity than the market",
-      "lower sensitivity than the market",
-      "no relationship to market movements"
+      "lower sensitivity to market movements than average",
+      "greater total risk but the same systematic risk"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Beta measures sensitivity to market returns; beta above 1 indicates greater systematic responsiveness.",
+    "explanation": "Beta measures sensitivity to market returns; beta above 1 indicates greater systematic responsiveness. Total risk is a different measure: a security can carry more total risk than the market while having the same beta.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -2192,16 +2192,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The coefficient of variation is useful for comparing:",
     "options": [
-      "only absolute totals",
-      "sample sizes alone",
-      "category names",
+      "the absolute spread of two series in the same units",
+      "the central tendency of two entirely unrelated series",
+      "the degree of skewness of a distribution about its mean",
       "relative dispersion of series with different means or units"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "CV expresses standard deviation relative to the mean, enabling scale-free dispersion comparisons.",
+    "explanation": "CV expresses standard deviation relative to the mean, enabling scale-free dispersion comparisons. Absolute spread serves where the units already match, and neither central tendency nor skewness is what the measure compares.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -2408,16 +2408,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "Planning in management primarily involves:",
     "options": [
-      "recording only the past transactions",
-      "replacing all control systems",
+      "recording and reporting what has already happened",
+      "measuring performance against the set standards",
       "deciding objectives and courses of action in advance",
-      "avoiding choices"
+      "assigning authority and grouping the activities"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Planning specifies desired ends and future actions before execution.",
+    "explanation": "Planning specifies desired ends and future actions before execution. Recording what has happened, measuring against standards and grouping activities are the accounting, control and organising functions.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -2552,16 +2552,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Training-needs analysis should begin by identifying:",
     "options": [
-      "only the training vendors that are available",
+      "the training vendors available and the fees they charge",
       "performance gaps and capabilities required to meet objectives",
-      "only employee age",
-      "office furniture requirements"
+      "the employees who are willing to attend the programme",
+      "the budget that the organisation can allocate to training"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Needs analysis links organisational and job requirements with actual performance/capability gaps.",
+    "explanation": "Needs analysis links organisational and job requirements with actual performance/capability gaps. Vendors, willing participants and the available budget are all inputs to the later design decision rather than the starting point.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -2865,15 +2865,15 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "question": "A development financial institution differs from a typical commercial bank mainly through a stronger emphasis on:",
     "options": [
       "longer-term development-oriented financing and policy objectives",
-      "daily retail deposits only and nothing more",
-      "consumer cash withdrawals only",
-      "currency printing"
+      "accepting demand deposits as its principal source of funds",
+      "operating a wide branch network for retail payment services",
+      "acting as banker to the government and issuing currency"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "DFIs traditionally focus on long-term financing of sectors/projects important for economic development, often with policy mandates.",
+    "explanation": "DFIs traditionally focus on long-term financing of sectors/projects important for economic development, often with policy mandates. Demand deposits, a retail branch network and currency issue describe a commercial bank and a central bank instead.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -3272,16 +3272,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A cheque is best classified as:",
     "options": [
-      "a promissory note payable after ten years only here",
+      "a promissory note made by the drawer in favour of the payee",
       "a bill of exchange drawn on a specified banker and payable on demand",
-      "a share certificate",
-      "a warehouse receipt"
+      "a negotiable instrument that is payable only to a named holder",
+      "a document of title which transfers the ownership of the goods"
     ],
     "correctIndex": 1,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Under negotiable-instruments law, a cheque is a bill of exchange drawn on a banker and payable on demand.",
+    "explanation": "Under negotiable-instruments law, a cheque is a bill of exchange drawn on a banker and payable on demand. A promissory note is made rather than drawn, and neither restricted negotiability nor a document of title fits the instrument.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -3489,15 +3489,15 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "question": "Tax planning differs from tax evasion because tax planning:",
     "options": [
       "uses lawful choices within tax rules, whereas evasion involves unlawful concealment or misstatement",
-      "always requires falsifying accounts",
-      "is identical to evasion",
-      "can ignore statutory anti-avoidance rules"
+      "defers the liability to a later year without disclosing that deferral to the department",
+      "produces the same outcome as evasion but is harder for the department to detect in practice",
+      "is permitted even where it plainly defeats the purpose of the provision being relied upon"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Legitimate planning arranges affairs within law; evasion unlawfully hides or misrepresents taxable facts.",
+    "explanation": "Legitimate planning arranges affairs within law; evasion unlawfully hides or misrepresents taxable facts. Undisclosed deferral, difficulty of detection and defeating the purpose of a provision all point away from lawful planning.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -3512,16 +3512,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Depreciation under income-tax rules generally provides a deduction reflecting:",
     "options": [
-      "market appreciation of land in every case",
-      "distribution of dividends",
+      "the fall in the market value of the asset each year",
+      "the amount charged as depreciation in the accounts",
       "statutory allowance for use of qualifying capital assets",
-      "repayment of share capital"
+      "the cost of repairs incurred on the capital asset"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Tax depreciation is a statutory deduction related to qualifying depreciable assets and prescribed blocks/rates, not market revaluation.",
+    "explanation": "Tax depreciation is a statutory deduction related to qualifying depreciable assets and prescribed blocks/rates, not market revaluation. The charge in the accounts is computed separately and is not the deduction, and repairs are dealt with under their own provision.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -3537,15 +3537,15 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "question": "Capital gains generally arise on:",
     "options": [
       "transfer of a capital asset, subject to statutory definitions and exemptions",
-      "mere ownership without transfer in every case",
-      "receipt of salary",
-      "purchase of inventory only"
+      "any increase in the value of a capital asset during the year of holding",
+      "the receipt of rent or of interest from a capital asset that is held",
+      "the purchase of a capital asset, whatever happens to its value later"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Capital-gains charging provisions generally require a transfer of a capital asset and computation under statutory rules.",
+    "explanation": "Capital-gains charging provisions generally require a transfer of a capital asset and computation under statutory rules. An unrealised increase in value, income yielded by the asset, and its acquisition are each outside the charge.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
@@ -3560,16 +3560,16 @@ export const STATE_SET_2026_MAHARASHTRA_COMMERCE_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Clubbing provisions are designed primarily to:",
     "options": [
-      "combine all family bank accounts physically",
-      "merge companies automatically",
-      "eliminate separate assessment of every person",
+      "treat all of the members of a family as one single assessable unit for the whole year",
+      "aggregate the incomes of all of the persons who happen to be related to one another",
+      "deny an exemption in every case where income has been transferred to another person",
       "include specified income of another person in the taxpayer’s total income in defined situations"
     ],
     "correctIndex": 3,
     "answerType": "mcq",
     "marks": 2,
     "negativeMarking": 0,
-    "explanation": "Clubbing rules counter specified income-shifting arrangements by attributing certain income to another taxpayer as the statute directs.",
+    "explanation": "Clubbing rules counter specified income-shifting arrangements by attributing certain income to another taxpayer as the statute directs. They do not make the family a single assessable unit, aggregate the income of relatives generally, or operate as a blanket denial of exemption.",
     "source": {
       "kind": "original",
       "reference": "Savitribai Phule Pune University M-SET 2026 current Examination Scheme and Commerce syllabus",
