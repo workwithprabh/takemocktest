@@ -345,9 +345,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "question": "Which release profile is generally the ideal target for a controlled-release dosage form?",
     "options": [
       "Zero order, giving a constant release rate independent of the amount remaining",
-      "First order, with the rate falling as the drug depletes over time",
-      "An immediate burst followed by no further release",
-      "Random, irreproducible release"
+      "First order, with the release rate falling as the drug depletes over time",
+      "An immediate burst release followed by no further release of the drug",
+      "A random and irreproducible release that varies between dosage units"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -872,9 +872,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "A prodrug is best defined as a compound that:",
     "options": [
-      "is active as administered and requires no conversion in the body",
-      "is an inactive excipient",
-      "is a toxic metabolite of a drug",
+      "is fully active as administered and requires no further conversion within the body",
+      "is an inactive excipient that is added to improve the stability of the product",
+      "is a toxic metabolite that is formed from the parent drug once it has been absorbed",
       "is inactive or less active as administered and is converted in the body to the active drug"
     ],
     "correctIndex": 3,
@@ -993,9 +993,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "question": "Pyridine is best described as:",
     "options": [
       "a six-membered aromatic ring containing one nitrogen atom",
-      "a five-membered ring containing one oxygen atom",
-      "a saturated six-membered carbocycle",
-      "a fused bicyclic system with two nitrogens"
+      "a five-membered aromatic ring containing one oxygen atom",
+      "a saturated six-membered ring containing only carbon",
+      "a fused bicyclic system containing two nitrogen atoms"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -1184,9 +1184,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "The basic carbon skeleton common to all steroids is the:",
     "options": [
-      "the indole nucleus found in it",
-      "flavone nucleus",
-      "tropane nucleus",
+      "the indole nucleus with its fused benzene ring",
+      "the flavone nucleus of the plant pigments",
+      "the bridged bicyclic tropane ring system",
       "cyclopentanoperhydrophenanthrene ring system"
     ],
     "correctIndex": 3,
@@ -1304,10 +1304,10 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Ester drugs in aqueous solution most commonly degrade by:",
     "options": [
-      "photolysis only",
-      "oxidation to a peroxide",
+      "photolysis on exposure to visible light",
+      "oxidation to the corresponding peroxide",
       "hydrolysis, often catalysed by acid or base",
-      "racemisation only"
+      "racemisation at the adjacent chiral centre"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1424,10 +1424,10 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "hard",
     "question": "Two polymorphs of the same drug substance differ in:",
     "options": [
-      "molecular formula",
-      "elemental composition",
+      "their molecular formula, and therefore also in their elemental analysis",
+      "the covalent connectivity of the atoms within each of the molecules",
       "crystal lattice arrangement, and therefore in solubility and dissolution rate",
-      "chemical reactivity of the isolated molecule in solution"
+      "the chemical reactivity of the isolated molecule once it is in solution"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -1448,9 +1448,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "easy",
     "question": "Which route of drug administration completely avoids first-pass hepatic metabolism?",
     "options": [
-      "Oral",
-      "Intravenous",
-      "Rectal (upper rectum)",
+      "Oral administration alone",
+      "Intravenous injection only",
+      "Rectal, via the upper rectum",
       "Sublingual and intravenous both"
     ],
     "correctIndex": 3,
@@ -1784,9 +1784,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Spironolactone spares potassium because it acts as:",
     "options": [
-      "a carbonic anhydrase inhibitor in the tubule",
-      "a thiazide-type inhibitor",
-      "an osmotic diuretic",
+      "a carbonic anhydrase inhibitor acting in the proximal tubule",
+      "a thiazide-type inhibitor of sodium chloride reabsorption",
+      "an osmotic diuretic acting along the whole nephron",
       "an aldosterone receptor antagonist in the collecting duct"
     ],
     "correctIndex": 3,
@@ -2360,10 +2360,10 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Which alkaloid class does morphine belong to?",
     "options": [
-      "Tropane alkaloids",
-      "Indole alkaloids",
+      "Tropane (bicyclic) alkaloids",
+      "Indole (indolic) alkaloids",
       "Isoquinoline (phenanthrene)",
-      "Purine alkaloids"
+      "Purine (xanthine) alkaloids"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2504,10 +2504,10 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "Determination of total ash value of a crude drug primarily indicates:",
     "options": [
-      "the moisture content of the crude drug sample",
-      "the alkaloid content",
+      "the moisture content remaining in the crude drug sample",
+      "the total alkaloid content present in the crude drug sample",
       "the total inorganic residue, including adhering earthy matter",
-      "the volatile oil content"
+      "the volatile oil content recovered on steam distillation"
     ],
     "correctIndex": 2,
     "answerType": "mcq",
@@ -2673,9 +2673,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "question": "Deficiency of vitamin B12 characteristically causes:",
     "options": [
       "megaloblastic anaemia with neurological features",
-      "scurvy with bleeding gums",
-      "rickets in the growing child",
-      "night blindness in the dark"
+      "scurvy with bleeding gums and poor wound healing",
+      "rickets with bone deformity in the growing child",
+      "night blindness with conjunctival dryness"
     ],
     "correctIndex": 0,
     "answerType": "mcq",
@@ -2816,9 +2816,9 @@ export const GPAT_2026_PHARMACY_FULL_MOCK_1: Question[] = [
     "difficulty": "medium",
     "question": "In the disc diffusion method, a larger zone of inhibition around a disc generally indicates:",
     "options": [
-      "greater resistance of the organism tested",
-      "an expired antibiotic disc",
-      "contamination of the plate",
+      "greater resistance of the organism being tested",
+      "an antibiotic disc that has passed its expiry",
+      "contamination of the agar plate during setting",
       "greater susceptibility of the organism to that agent"
     ],
     "correctIndex": 3,
