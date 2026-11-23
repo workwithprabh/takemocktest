@@ -1,16 +1,16 @@
 # Search Console report — takemocktest.com
 
-Generated 2026-11-16 14:56 UTC by `scripts/gsc-query.py report` (see `.github/workflows/gsc-report.yml`).
-Window: last 90 days (2026-08-18 to 2026-11-16). Search Analytics data lags 2-3 days, so the
+Generated 2026-11-23 17:29 UTC by `scripts/gsc-query.py report` (see `.github/workflows/gsc-report.yml`).
+Window: last 90 days (2026-08-25 to 2026-11-23). Search Analytics data lags 2-3 days, so the
 most recent few days are typically undercounted or missing.
 
 ## Totals
 
 | Clicks | Impressions | CTR | Avg. position |
 |---|---|---|---|
-| 3 | 130 | 2.31% | 29.1 |
+| 3 | 117 | 2.56% | 31.5 |
 
-The page table below sums to 331 impressions against the 130 above, a gap of 201. Both are right. Search Console counts one impression per search that showed the site, and one per URL shown, so a search surfacing several of our pages counts once here and once per page there. The country and query tables aggregate at site level and match this total; the page and subfolder tables do not and are not meant to.
+The page table below sums to 318 impressions against the 117 above, a gap of 201. Both are right. Search Console counts one impression per search that showed the site, and one per URL shown, so a search surfacing several of our pages counts once here and once per page there. The country and query tables aggregate at site level and match this total; the page and subfolder tables do not and are not meant to.
 
 ## Top 25 queries by impressions
 
@@ -46,14 +46,14 @@ The page table below sums to 331 impressions against the 130 above, a gap of 201
 
 | Country | Clicks | Impressions | Share | Avg. position |
 |---|---|---|---|---|
-| IND | 3 | 102 | 78.5% | 34.6 |
-| USA | 0 | 21 | 16.2% | 2.0 |
-| BRA | 0 | 2 | 1.5% | 5.5 |
-| ARE | 0 | 1 | 0.8% | 7.0 |
-| BGD | 0 | 1 | 0.8% | 52.0 |
-| JOR | 0 | 1 | 0.8% | 11.0 |
-| PHL | 0 | 1 | 0.8% | 92.0 |
-| SGP | 0 | 1 | 0.8% | 39.0 |
+| IND | 3 | 89 | 76.1% | 38.6 |
+| USA | 0 | 21 | 17.9% | 2.0 |
+| BRA | 0 | 2 | 1.7% | 5.5 |
+| BGD | 0 | 1 | 0.9% | 52.0 |
+| JOR | 0 | 1 | 0.9% | 11.0 |
+| PAK | 0 | 1 | 0.9% | 9.0 |
+| PHL | 0 | 1 | 0.9% | 92.0 |
+| SGP | 0 | 1 | 0.9% | 39.0 |
 
 ## By subfolder
 
@@ -66,7 +66,7 @@ so the rows sum to the total rather than double-counting.
 | `/ng/practice` | 0 | 0 | 0 | n/a |
 | `/in/logical-reasoning` | 0 | 0 | 0 | n/a |
 | `/ng/logical-reasoning` | 0 | 0 | 0 | n/a |
-| `/in` | 89 | 3 | 331 | 20.1 |
+| `/in` | 89 | 3 | 318 | 20.6 |
 | `/ng` | 0 | 0 | 0 | n/a |
 | `other` | 0 | 0 | 0 | n/a |
 
@@ -86,18 +86,18 @@ earns visibility, and it is what PHASE_4_DECISION.md judges.
 | Page | Clicks | Impressions | Avg. position |
 |---|---|---|---|
 | https://takemocktest.com/in/ibps-clerk/selection-process | 0 | 23 | 80.1 |
-| https://takemocktest.com/in/blog/ibps-po-vs-ssc-cgl-which-exam-suits-you | 0 | 13 | 13.3 |
 | https://takemocktest.com/in/ibps-clerk/eligibility | 0 | 11 | 5.6 |
 | https://takemocktest.com/in/ibps-clerk | 0 | 10 | 2.4 |
+| https://takemocktest.com/in/blog/ca-foundation-vs-cma-foundation-which-to-start-with | 0 | 9 | 13.1 |
 | https://takemocktest.com/in/ibps-po/eligibility | 0 | 9 | 8.0 |
-| https://takemocktest.com/in | 0 | 8 | 2.1 |
-| https://takemocktest.com/in/blog/ca-foundation-vs-cma-foundation-which-to-start-with | 0 | 8 | 13.4 |
 | https://takemocktest.com/in/oet/mock-test | 0 | 8 | 5.5 |
 | https://takemocktest.com/in/acet | 0 | 6 | 3.7 |
 | https://takemocktest.com/in/blog/how-many-mock-tests-should-you-take | 0 | 6 | 10.3 |
+| https://takemocktest.com/in | 0 | 5 | 1.0 |
 | https://takemocktest.com/in/blog/time-management-during-the-exam | 2 | 4 | 13.8 |
 | https://takemocktest.com/in/sbi-po | 1 | 4 | 7.0 |
 | https://takemocktest.com/in/bitsat/mock-test | 0 | 4 | 10.0 |
+| https://takemocktest.com/in/blog/ibps-po-vs-ssc-cgl-which-exam-suits-you | 0 | 4 | 25.8 |
 | https://takemocktest.com/in/blog/rbi-grade-b-vs-nabard-vs-sebi-vs-sidbi | 0 | 4 | 18.2 |
 | https://takemocktest.com/in/rrb-je | 0 | 4 | 27.8 |
 | https://takemocktest.com/in/blog/sectional-lock-vs-composite-timer | 0 | 3 | 17.7 |
@@ -110,7 +110,6 @@ earns visibility, and it is what PHASE_4_DECISION.md judges.
 | https://takemocktest.com/in/ibps-po/selection-process | 0 | 3 | 12.3 |
 | https://takemocktest.com/in/ibps-po/syllabus | 0 | 3 | 8.7 |
 | https://takemocktest.com/in/blog/age-limit-and-attempts-explained | 0 | 2 | 26.0 |
-| https://takemocktest.com/in/blog/common-ssc-cgl-preparation-mistakes | 0 | 2 | 6.0 |
 | https://takemocktest.com/in/blog/speed-vs-accuracy-in-timed-tests | 0 | 2 | 31.0 |
 | https://takemocktest.com/in/blog/ssc-cpo-paper-1-vs-paper-2-same-marks-different-shape | 0 | 2 | 35.0 |
 | https://takemocktest.com/in/blog/understanding-cutoffs-and-percentile | 0 | 2 | 26.5 |
@@ -119,6 +118,8 @@ earns visibility, and it is what PHASE_4_DECISION.md judges.
 | https://takemocktest.com/in/blog/beginners-guide-to-banking-exams-in-india | 0 | 1 | 54.0 |
 | https://takemocktest.com/in/blog/cat-vs-mat-vs-cmat-choosing-your-mba-entrance | 0 | 1 | 59.0 |
 | https://takemocktest.com/in/blog/clat-vs-ailet-vs-state-law-cets-first-timers-guide | 0 | 1 | 63.0 |
+| https://takemocktest.com/in/blog/coaching-vs-self-study | 0 | 1 | 9.0 |
+| https://takemocktest.com/in/blog/common-ssc-cgl-preparation-mistakes | 0 | 1 | 4.0 |
 | https://takemocktest.com/in/blog/document-verification-what-to-expect | 0 | 1 | 47.0 |
 | https://takemocktest.com/in/blog/exam-day-checklist-what-to-carry | 0 | 1 | 53.0 |
 | https://takemocktest.com/in/blog/how-to-analyze-your-mock-test-performance | 0 | 1 | 55.0 |
@@ -129,7 +130,6 @@ earns visibility, and it is what PHASE_4_DECISION.md judges.
 | https://takemocktest.com/in/blog/nda-vs-cds-vs-afcat-choosing-your-defence-entry | 0 | 1 | 61.0 |
 | https://takemocktest.com/in/blog/qualifying-vs-merit-sections-banking-exams | 0 | 1 | 51.0 |
 | https://takemocktest.com/in/blog/ssc-vs-banking-vs-railways-choosing-your-path | 0 | 1 | 56.0 |
-| https://takemocktest.com/in/blog/understanding-negative-marking | 0 | 1 | 10.0 |
 | https://takemocktest.com/in/exam-updates/ibps-clerk-csa-15-main-result-chandigarh-2026 | 0 | 1 | 8.0 |
 | https://takemocktest.com/in/exam-updates/ibps-clerk-csa-16-notification-2026 | 0 | 1 | 2.0 |
 | https://takemocktest.com/in/exam-updates/rrb-je-cbt-2-tentative-exam-schedule-2026 | 0 | 1 | 6.0 |
